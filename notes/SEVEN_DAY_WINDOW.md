@@ -26,8 +26,15 @@ Do not cancel SLURM 50644 (other user job on this account).
 - Concept Accuracy / Time-OOD (no fields)
 - Uploading `output/` weights to GitHub (53GB)
 
+## Domain-mix 1M DAPT (submitted 2026-08-24 16:05)
+
+Mix: 人工智能 35% / 应届生 25% / 阿里云 22% / 事业单位 14%. No listed.
+Corpus builder + `wait_then_domain_1m.sh` (local GPU waiter; SLURM MaxJobs=1).
+Do not cancel 50644 `hyb_panelB` / 50645 `aseries_rest`.
+Do not stack on busy GPUs. 3-seed CRF on GPU 2/3 keeps running.
+
 ## If GPU 3 frees after 3-seed and time remains
 
-1. Domain-filter DAPT is 12h — only start if ≥12h left
-2. Hybrid/RAG needs Qwen GPU — only if 3-seed + fill are done
+1. Domain-mix 1M waiter should already grab the first idle card
+2. Hybrid/RAG needs Qwen GPU — only if 3-seed + domain-1M are done
 3. Snapshot every `run_summary.json` even if GitHub push fails

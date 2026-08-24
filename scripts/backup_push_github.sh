@@ -25,7 +25,7 @@ for p in PAPER.joinpath("output").rglob("run_summary.json"):
 print("copied", len(copied), "snapshots")
 PY
 
-git add paper_results tables results_snapshots README.md scripts notes HANDOFF.md PUSH_GITHUB.md REPRO_GITHUB.md data/LARGE_DATA_MANIFEST.md 2>/dev/null || true
+git add paper_results tables results_snapshots README.md scripts notes HANDOFF.md PUSH_GITHUB.md REPRO_GITHUB.md data/LARGE_DATA_MANIFEST.md data/*sents.meta.json 2>/dev/null || true
 if git diff --cached --quiet; then
   echo "[backup] nothing to commit"
   exit 0

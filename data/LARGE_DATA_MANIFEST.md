@@ -22,6 +22,7 @@ GitHub 单文件上限 100MB；本仓库只备份**代码 + 协议 + 可复现�
 | `data/jobbert_1m_sents.jsonl` | 139 MB | 1M DAPT 句 |
 | `data/jobbert_3m_sents.jsonl` | 446 MB | 3.2M DAPT 句 |
 | `data/jobbert_listed_mix_1m_sents.jsonl` | 166 MB | 上市公司混合 1M 句 |
+| `data/jobbert_domain_mix_1m_sents.jsonl` | ~150 MB | 域混合 1M（AI/应届生/阿里云/事业单位） |
 | `output/` | ~53 GB | MLM/CRF 权重与预测 |
 | `chinese_skillspan_preprocessing/` | ~862 MB | Doccano / 银标流水线（父仓库） |
 | `Baseline_Models_Collection/chinese-roberta-wwm-ext/` | ~400 MB | 初始 encoder |
@@ -40,6 +41,10 @@ python3 scripts/prepare_jobbert_1m_corpus.py --n 1000000 \
 # 3. 上市公司混合 1M（40/35/25）
 python3 scripts/prepare_jobbert_listed_mix_corpus.py --n 1000000 \
   --out data/jobbert_listed_mix_1m_sents.jsonl
+
+# 4. 域混合 1M（人工智能 35% / 应届生 25% / 阿里云 22% / 事业单位 14%；无上市公司）
+python3 scripts/prepare_jobbert_domain_mix_corpus.py --n 1000000 \
+  --out data/jobbert_domain_mix_1m_sents.jsonl
 ```
 
 原始 CSV 来源：马克数据网（见 `chineseskillspan-jobert-pretrain/` 内参考文献 PDF）。

@@ -1,0 +1,94 @@
+{
+  "out": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/jobbert_domain_mix_1m_sents.jsonl",
+  "n": 1000000,
+  "target_n": 1000000,
+  "mix_policy": "domain_mix_ai35_yj25_aliyun22_shiye14_no_listed",
+  "remainder_fill": "人工智能 then 应届生",
+  "target_frac": {
+    "人工智能招聘": 0.35,
+    "应届生招聘": 0.25,
+    "阿里云公开数据集": 0.22,
+    "事业单位招聘": 0.14
+  },
+  "target_n_by_source": {
+    "人工智能招聘": 350000,
+    "应届生招聘": 250000,
+    "阿里云公开数据集": 220000,
+    "事业单位招聘": 140000
+  },
+  "actual": {
+    "阿里云公开数据集": 220000,
+    "应届生招聘": 290000,
+    "事业单位招聘": 121997,
+    "人工智能招聘": 368003
+  },
+  "actual_frac": {
+    "阿里云公开数据集": 0.22,
+    "应届生招聘": 0.29,
+    "事业单位招聘": 0.122,
+    "人工智能招聘": 0.368
+  },
+  "blocked_train_dev_test_gold": 25457,
+  "sy_doc_needles": 688,
+  "aliyun_scan": {
+    "rows": 33333,
+    "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/chineseskillspan-jobert-pretrain/aliyun_天池公开数据集/only_yun_wei-预处理-James-0928.xlsx",
+    "raw_sents": 354020,
+    "blocked_exact": 310,
+    "dup": 133037,
+    "unique_pool": 220673,
+    "kept": 220000,
+    "hit_cap": true
+  },
+  "shiye_scan": {
+    "rows": 6368,
+    "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/chineseskillspan-jobert-pretrain/0930-事业单位-LLM-软硬技能-提取-结果汇总编码文档-James.xlsx",
+    "sheet": "all-result-0925-6k",
+    "docs_dropped_gold_overlap": 1050,
+    "docs_kept": 5318,
+    "raw_sents_from_kept_docs": 218286,
+    "blocked_exact": 0,
+    "blocked_sy_span": 0,
+    "dropped_boiler": 40326,
+    "dup": 55963,
+    "skillish_pool": 40585,
+    "other_nonskill_pool": 81412,
+    "unique_pool": 121997,
+    "kept": 121997,
+    "kept_skillish": 40585,
+    "hit_cap": false
+  },
+  "ai_scan": {
+    "rows_scanned": 38564,
+    "empty_jd": 1,
+    "hit_cap": true,
+    "years": {
+      "2019": 64806,
+      "2022": 16589,
+      "2023": 24174,
+      "2018": 122308,
+      "2020": 66125,
+      "2021": 61586,
+      "2024": 12415
+    }
+  },
+  "yj_scan": {
+    "rows_scanned": 35225,
+    "empty_jd": 0,
+    "hit_cap": true,
+    "years": {
+      "2020": 25810,
+      "2018": 128127,
+      "2023": 9402,
+      "2019": 28621,
+      "2021": 76200,
+      "2022": 14860,
+      "2024": 6980
+    }
+  },
+  "align_gold": true,
+  "align_note": "Raises 事业单位 (encoder failure mode ~0.015) and 阿里云 share. Drops listed mix (1M lost to 0.1224). 事业单位: drop gold-overlapping announcements; drop exam boiler; prefer skill-bearing sentences. Aliyun: exact sentence blocklist only.",
+  "overwrote_train": false,
+  "touched_gold_v2": false,
+  "used_llm_skill_columns": false
+}

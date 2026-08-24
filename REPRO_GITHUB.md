@@ -57,6 +57,16 @@ python3 scripts/prepare_jobbert_listed_mix_corpus.py --n 1000000 \
 sbatch scripts/jobbert_zh_listed_1m.sbatch   # MaxWall 12h
 ```
 
+## 5b. 域混合 DAPT 1M（阿里云 + 事业单位；无上市公司）
+
+```bash
+python3 scripts/prepare_jobbert_domain_mix_corpus.py --n 1000000 \
+  --out data/jobbert_domain_mix_1m_sents.jsonl
+# SLURM MaxJobs=1 时常被其它作业挡住；本地等待空闲卡：
+bash scripts/wait_then_domain_1m.sh
+# 或: sbatch scripts/jobbert_zh_domain_1m.sbatch
+```
+
 ## 6. 论文数字来源
 
 - 只允许写入 `notes/confirmed-results.md` 或用户 PDF 中的数。
