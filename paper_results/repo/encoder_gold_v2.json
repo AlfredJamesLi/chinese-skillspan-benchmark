@@ -90,6 +90,16 @@
     "snapshot": "results_snapshots/cn_roberta_wwm_v3__seed2026.json"
   },
   {
+    "run": "encoder_3seed/cn_roberta_wwm_v3/seed_2026",
+    "status": "complete",
+    "test_typed_f1": 0.125360660630783,
+    "test_collapsed_f1": 0.13729977116704806,
+    "dev_typed_f1": 0.319236346060899,
+    "precision": 0.18399532710280375,
+    "recall": 0.09506564056133997,
+    "snapshot": "results_snapshots/encoder_3seed__cn_roberta_wwm_v3__seed_2026.json"
+  },
+  {
     "run": "encoder_3seed/jobbert_zh_3m_ckpt65000/seed_2026",
     "status": "complete",
     "test_typed_f1": 0.1246262178065014,
@@ -228,6 +238,16 @@
     "precision": 0.15694950546590317,
     "recall": 0.09099139882299682,
     "snapshot": "results_snapshots/jobbert_zh_demo__crf_v3_seed42.json"
+  },
+  {
+    "run": "jobbert_zh_1m/crf_lskt_v4_silver_seed42",
+    "status": "complete",
+    "test_typed_f1": 0.10792778649921507,
+    "test_collapsed_f1": 0.11872056514913656,
+    "dev_typed_f1": 0.35365410253302637,
+    "precision": 0.15427769985974754,
+    "recall": 0.0829938131884714,
+    "snapshot": "results_snapshots/jobbert_zh_1m__crf_lskt_v4_silver_seed42.json"
   },
   {
     "run": "cn_roberta_wwm_crf/smoke_goldstyle_v2_seed42",
