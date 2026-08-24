@@ -11,3 +11,5 @@
 Codex test: 50 `codex_sample50` + 2551 `codex_batches51`. Alignment OK. 51-batch merge: 1766/2551 changed vs rule, 1176 empty, 0 align errors, 0 id problems.
 
 The 0.3170 was train/test same rule. After Codex rewrote the test labels (more empty, shorter/split spans), the same pred falls to ~0.12, close to Gold v2. Encoder was not retrained.
+
+Full model table (GPT-4o / DeepSeek / Qwen / JobBERT / RoBERTa, Gold v2 vs Codex silver): `CODEX_TEST_EVAL.md`.
