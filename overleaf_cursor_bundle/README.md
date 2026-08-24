@@ -11,7 +11,8 @@ $src = "从服务器下载后的 overleaf_cursor_bundle 路径"
 $dst = "本机 Overleaf 仓库根路径"
 Copy-Item "$src\HANDOVER_OVERLEAF.md" "$dst\HANDOVER_OVERLEAF.md" -Force
 Copy-Item "$src\AGENTS.md" "$dst\AGENTS.md" -Force
-Copy-Item "$src\.cursor" "$dst\.cursor" -Recurse -Force
+Copy-Item "$src\CODEX_PROMPT.md" "$dst\CODEX_PROMPT.md" -Force
+Copy-Item "$src\tables" "$dst\tables" -Recurse -Force
 ```
 
 服务器路径：
@@ -32,6 +33,8 @@ File → Open Folder → 本机 Overleaf 克隆（不要开 `access_paper/overle
 |---|---|
 | `HANDOVER_OVERLEAF.md` | 完整交接（先读） |
 | `AGENTS.md` | 窗口身份 |
+| `CODEX_PROMPT.md` | 给 Codex 的改表提示词（整段粘贴） |
 | `.cursor/skills/cnss-overleaf/confirmed-results.md` | 已确认数字 |
 | `.cursor/skills/cnss-overleaf/not-for-paper.md` | 禁写清单 |
+| `tables/` | Overleaf 用 CSV（Gold v2 / encoder / 分域） |
 | 服务器 `Chinese_skill_benchmark_Paper/HANDOFF.md` | 服务器窗口用；本机改 tex 以本包交接为准 |

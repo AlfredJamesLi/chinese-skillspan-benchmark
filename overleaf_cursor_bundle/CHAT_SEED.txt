@@ -1,6 +1,6 @@
-先读 @HANDOVER_OVERLEAF.md，读完再改任何 tex。
+先读 @HANDOVER_OVERLEAF.md 和 @.cursor/skills/cnss-overleaf/confirmed-results.md，读完再改任何 tex。
 
-当前是本机 Overleaf 编辑窗口，论文是 Chinese-SkillSpan / Chinese Skill Benchmark，不是 IEEE Access / SRICL。按该交接文档区分：已确认可写入；尚未验证不得写成结论；须交回服务器的问题。
+当前是本机 Overleaf 编辑窗口，论文是 Chinese-SkillSpan / Chinese Skill Benchmark，不是 IEEE Access / SRICL。已确认数字在 confirmed-results.md；禁写清单在 not-for-paper.md。完整改表指令见 @CODEX_PROMPT.md。
 
 然后执行 git status、git pull --ff-only origin main，确认分支与路径为本 Overleaf 仓库、工作区无来源不明修改。
 
