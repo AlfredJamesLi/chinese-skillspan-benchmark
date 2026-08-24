@@ -1,7 +1,12 @@
-# 推送到 GitHub 私有仓库（一次性设置）
+# GitHub 私有仓库备份
 
-本地已准备好 git 仓库（`main` 分支，commit `6cf424d`）。
-**尚未推送到 GitHub**——需要你在本机完成登录（约 2 分钟）。
+**状态：已推送**（2026-08-24）
+
+- 仓库：https://github.com/AlfredJamesLi/chinese-skillspan-benchmark （private）
+- 分支：`main`（与本地同步）
+- 账号：`AlfredJamesLi`（`gh auth` 已登录）
+
+本地 git 根目录：`Chinese_skill_benchmark_Paper/`（`main` 分支）。
 
 ## 已包含内容（约 16MB 压缩包 / 57MB 工作区）
 

@@ -6,6 +6,8 @@
 `/home/guojingli3/SCESC-LLM-skill-extraction`  
 论文材料只写在：`Chinese_skill_benchmark_Paper/`
 
+**GitHub 私有备份（2026-08-24）：** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark — 见 `PUSH_GITHUB.md`、`REPRO_GITHUB.md`。
+
 **姐妹文（禁止混写）：** IEEE Access 方法文 SRICL，arXiv `2604.21525`，目录 `access_paper/`。
 
 状态标记：

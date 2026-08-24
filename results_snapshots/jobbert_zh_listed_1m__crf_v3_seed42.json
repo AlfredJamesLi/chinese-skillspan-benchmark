@@ -1,0 +1,62 @@
+{
+  "seed": 42,
+  "model_dir": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/jobbert_zh_listed_1m/mlm/encoder",
+  "best_dev_typed_f1": 0.3256590719312895,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 26.032396999470915,
+      "dev_typed_f1": 0.24336134453781513
+    },
+    {
+      "epoch": 2,
+      "train_loss": 15.880263803206084,
+      "dev_typed_f1": 0.30793420416061923
+    },
+    {
+      "epoch": 3,
+      "train_loss": 13.394767244220217,
+      "dev_typed_f1": 0.3107653001974219
+    },
+    {
+      "epoch": 4,
+      "train_loss": 11.40659119052328,
+      "dev_typed_f1": 0.3256590719312895
+    },
+    {
+      "epoch": 5,
+      "train_loss": 9.895342928585988,
+      "dev_typed_f1": 0.3157407407407407
+    },
+    {
+      "epoch": 6,
+      "train_loss": 8.876808139867398,
+      "dev_typed_f1": 0.31841952353282976
+    }
+  ],
+  "pred_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/jobbert_zh_listed_1m/crf_v3_seed42/test_pred.jsonl",
+  "alignment_ok": true,
+  "typed_exact": {
+    "precision": 0.17275559331634097,
+    "recall": 0.09204768371812283,
+    "f1": 0.12010238235873201,
+    "tp": 610,
+    "fp": 2921,
+    "fn": 6017,
+    "pred": 3531,
+    "gold": 6627
+  },
+  "collapsed_exact": {
+    "precision": 0.19286321155480035,
+    "recall": 0.10276143051154368,
+    "f1": 0.13408151210868283,
+    "tp": 681,
+    "fp": 2850,
+    "fn": 5946,
+    "pred": 3531,
+    "gold": 6627
+  },
+  "gold_sha256": "7a26e32b89d4e501175cb96443e35e171cea08d91501d2a32779b96ee8504ff6",
+  "pred_sha256": "c58feaeed5c3c5cf091f61471f85d262c2547c18d2797c74b90c4c9d222c04f0",
+  "scorer_version": "cnss-lskt-1.2.0"
+}
