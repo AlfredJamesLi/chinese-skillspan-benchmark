@@ -31,8 +31,8 @@ Overleaf project: https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4
 - Claude/Kimi Gold v2 rows are **incomplete** (missing 98 / 293 IDs). Mark them; do not present as complete main-table results.
 - Qwen paper 0.2130 is unreproducible under Gold v2 (typed 0.0791). Do not tune text to defend 0.2130 as Gold v2.
 - Encoder JobBERT-zh CRF is a **weak baseline** (~0.12 typed F1). Never claim it beats ChatGPT (0.6365 typed).
-- listed-mix 1M DAPT **lost** (0.1201 vs baseline 0.1224). Do not add a listed-3M result. Do not write domain-mix 1M F1 (experiment running, no score yet).
-- Do **not** invent 3-seed means (seeds 123/2026 still running; only seed 42 is confirmed).
+- listed-mix 1M DAPT **lost** (0.1201 vs baseline 0.1224). Do not add a listed-3M result. Domain-mix 1M seed 42 is 0.1234 (+0.0010 vs 1M); 3-seed mean 0.1269 is **below** JobBERT 1M 0.1288. Do not claim domain-mix wins or fixes 事业单位 (0.0287 vs ChatGPT 0.7032).
+- Encoder 3-seed means are confirmed for JobBERT 1M (0.1288), domain-mix 1M (0.1269), and 3M ckpt65000 (0.1258). Do **not** invent a RoBERTa-wwm v3 3-seed mean (seed 123 still running).
 - **Delete or rewrite** Concept Accuracy, Time-OOD, and ESCO concept-ID linking claims. Allowed wording: “ESCO-derived LSKT span extraction”. Per-domain table is an **Industry-OOD proxy** (source_domain on Gold v2), not a true held-out industry/time split. No `year` field.
 - Do not cite `*.eval_ner.json` or English JobBERT ~0.46.
 
@@ -66,13 +66,25 @@ Overleaf project: https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4
 | JobBERT 3M ckpt65000 | 0.1323 | 0.1259 | 0.0150 |
 | JobBERT 1M | 0.1287 | 0.1332 | 0.0181 |
 | listed mix 1M | 0.1282 | 0.1240 | 0.0153 |
+| domain-mix 1M (seed 42) | 0.1276 | 0.1372 | 0.0287 |
 | RoBERTa-wwm v3 | 0.1242 | 0.1191 | 0.0115 |
 
-One sentence in the discussion: encoder collapse on 事业单位 (~0.015) vs ChatGPT 0.7032 on that domain.
+One sentence in the discussion: encoder collapse on 事业单位 (~0.015–0.029; domain-mix seed 42 is 0.0287) vs ChatGPT 0.7032 on that domain.
 
 **F. Add encoder ranking table** (Gold v2 typed exact, seed 42)
 
-Best: JobBERT 3M ckpt65000 **0.1233**; JobBERT 1M baseline **0.1224**; listed mix 1M **0.1201** (Δ −0.0023, do not scale listed to 3M); RoBERTa-wwm v3 **0.1156**.
+Best seed 42: domain-mix 1M **0.1234**; JobBERT 3M ckpt65000 **0.1233**; JobBERT 1M baseline **0.1224**; listed mix 1M **0.1201** (Δ −0.0023, do not scale listed to 3M); RoBERTa-wwm v3 **0.1156**.
+
+**G. Add encoder 3-seed table** (typed exact; sample std)
+
+| Run | seed 42 | seed 123 | seed 2026 | mean | std |
+|---|---:|---:|---:|---:|---:|
+| JobBERT 1M | 0.1224 | 0.1292 | 0.1348 | **0.1288** | 0.0062 |
+| domain-mix 1M | 0.1234 | 0.1280 | 0.1294 | 0.1269 | 0.0031 |
+| JobBERT 3M ckpt65000 | 0.1233 | 0.1295 | 0.1246 | 0.1258 | 0.0033 |
+| RoBERTa-wwm v3 | 0.1156 | — | — | — | — |
+
+Leave RoBERTa mean as `---`. Do not claim domain-mix beats 1M on the 3-seed mean.
 
 CSV copies for `\input` / booktabs conversion are in `tables/` of this repo.
 
@@ -83,6 +95,6 @@ Patch only if they currently claim Concept Accuracy, Time-OOD, encoder SOTA, or 
 Stop and report tex vs confirmed-results vs PDF. Do not average them.
 
 ### After edits
-List: files touched, conflict table, full diff, remaining TODOs (3-seed, domain-mix F1, Claude/Kimi fill). No commit.
+List: files touched, conflict table, full diff, remaining TODOs (RoBERTa 3-seed mean, Claude/Kimi fill). No commit.
 
 ## End prompt

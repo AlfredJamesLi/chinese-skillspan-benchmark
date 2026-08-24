@@ -64,4 +64,4 @@ git branch --show-current
 
 **P0：** 对照 Overleaf tex 与 confirmed-results 做冲突表，再补表。  
 **P1：** 版式、图题、参考文献（数字不动）。  
-**P2：** 缺 3-seed 均值、domain-mix F1、Claude/Kimi 完整 dump → 交回服务器窗口。
+**P2：** 缺 RoBERTa-wwm v3 3-seed 均值、Claude/Kimi 完整 dump → 交回服务器窗口。

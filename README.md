@@ -2,7 +2,7 @@
 
 **Chinese-SkillSpan / Chinese Skill Benchmark** — DASFAA 2026 数据集与评测备份（私有仓库）。
 
-评分器：`cnss-lskt-1.2.0` · Gold 评测集：`data/gold_canonical_v2.jsonl` · 更新：2026-08-24 15:40
+评分器：`cnss-lskt-1.2.0` · Gold 评测集：`data/gold_canonical_v2.jsonl` · 更新：2026-08-24 20:20
 
 ---
 
@@ -42,17 +42,19 @@ Gold v2 域：人工智能招聘 1407 / 事业单位招聘 737 / 阿里云公开
 | DeepSeek | 0.1392 | 0.1293 | 0.0805 |
 | Qwen | 0.0887 | 0.0646 | 0.0207 |
 | JobBERT 3M ckpt65000 | **0.1323** | 0.1259 | 0.0150 |
-| JobBERT 1M | 0.1287 | **0.1332** | 0.0181 |
+| JobBERT 1M | 0.1287 | 0.1332 | 0.0181 |
 | listed mix 1M | 0.1282 | 0.1240 | 0.0153 |
+| domain-mix 1M (seed 42) | 0.1276 | **0.1372** | 0.0287 |
 | RoBERTa-wwm v3 | 0.1242 | 0.1191 | 0.0115 |
 
-Encoder 在**事业单位**上接近失败（~0.015），ChatGPT 在该域最强。CSV：[`tables/per_domain_gold_v2.csv`](tables/per_domain_gold_v2.csv)
+Encoder 在**事业单位**上接近失败（~0.015–0.029；domain-mix seed 42 = 0.0287），ChatGPT 在该域最强。CSV：[`tables/per_domain_gold_v2.csv`](tables/per_domain_gold_v2.csv)
 
 ## Encoder 实验榜（Gold v2，typed exact micro F1）
 
 | Run | test F1 | dev F1 | vs baseline 0.1224 |
 |---|---:|---:|---|
-| JobBERT 3M ckpt65000 | **0.1233** | 0.3205 | +0.0009 |
+| domain-mix 1M (seed 42) | **0.1234** | 0.3190 | +0.0010 |
+| JobBERT 3M ckpt65000 | 0.1233 | 0.3205 | +0.0009 |
 | JobBERT 1M + v3 | **0.1224** | 0.3185 | baseline |
 | human380 + v3 merge | 0.1207 | 0.3163 | −0.0017 |
 | listed mix 1M | 0.1201 | 0.3257 | −0.0023 |
@@ -61,7 +63,8 @@ Encoder 在**事业单位**上接近失败（~0.015），ChatGPT 在该域最强
 | JobBERT demo 80k | 0.1152 | 0.3231 | −0.0072 |
 | RoBERTa-wwm smoke v3 | 0.1156 | 0.3210 | −0.0068 |
 
-完整 JSON/CSV → [`paper_results/repo/encoder_gold_v2.csv`](paper_results/repo/encoder_gold_v2.csv)
+完整 JSON/CSV → [`paper_results/repo/encoder_gold_v2.csv`](paper_results/repo/encoder_gold_v2.csv)  
+3-seed 均值 → [`tables/encoder_3seed_gold_v2.csv`](tables/encoder_3seed_gold_v2.csv)（1M **0.1288** / domain-mix 0.1269 / 3M ckpt65000 0.1258）
 
 ## 语料规模（PDF Table 1）
 
@@ -79,13 +82,13 @@ Encoder 在**事业单位**上接近失败（~0.015），ChatGPT 在该域最强
 | 分域 / Industry-OOD 代理 | **已出表**（见上；事业单位是 encoder 短板） |
 | Concept Accuracy / ESCO concept-ID | 无 concept ID，不做 |
 | Time-OOD | 无 year 字段，不做 |
-| Encoder 3-seed（ckpt65000 / 1M / vanilla） | **进行中**（GPU3；seed 42 已有，补 123/2026） |
+| Encoder 3-seed（ckpt65000 / 1M / domain-mix） | **已出表**（1M mean 0.1288；RoBERTa seed 123 仍在跑） |
 | Claude / Kimi dump 补全 | **受阻**（`api.claude-Plus.top` 返回 HTML；不伪造 Claude/Kimi 标签） |
-| BERT-CRF 已有 vanilla 对照 | RoBERTa-wwm v3 seed42 = 0.1156；3-seed 待填 |
+| BERT-CRF 已有 vanilla 对照 | RoBERTa-wwm v3 seed42 = 0.1156；3-seed 均值待填 |
 | XLM-R / ESCO lexicon / span baseline | 待填（本地无 XLM-R 权重） |
 | human IAA-300 | 待填 |
 | listed mix **3M** DAPT | 已跳过 |
-| domain-mix DAPT 1M（AI 36.8% / 应届生 29.0% / 阿里云 22.0% / 事业单位 12.2%） | **已提交**（语料 100 万句；SLURM 50649 排队 + 本地 GPU waiter；**尚无 F1**） |
+| domain-mix DAPT 1M | **已出表**（seed 42 = 0.1234；3-seed mean 0.1269 < 1M 0.1288；事业单位 0.0287） |
 | Hybrid / RAG | 待填 |
 
 详情 → [`paper_results/pending/placeholders.json`](paper_results/pending/placeholders.json)

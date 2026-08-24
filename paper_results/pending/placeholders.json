@@ -62,13 +62,14 @@
     },
     {
       "id": "table3_3seed_average",
-      "description": "3-seed averaged encoder CRF (ckpt65000 / 1M / vanilla v3)",
-      "status": "running",
+      "description": "3-seed averaged encoder CRF (ckpt65000 / 1M / domain-mix / vanilla v3)",
+      "status": "partial",
       "metrics": {
-        "seed42_ckpt65000": 0.1233,
-        "seed42_1m": 0.1224,
-        "seed42_vanilla": 0.1156,
-        "seeds_123_2026": null
+        "jobbert_1m_mean": 0.1288,
+        "domain_mix_1m_mean": 0.1269,
+        "ckpt65000_mean": 0.1258,
+        "roberta_wwm_v3_mean": null,
+        "note": "RoBERTa seed 123 running; seed 2026 not started"
       }
     },
     {
@@ -106,6 +107,17 @@
       "status": "skipped",
       "reason": "listed-1M F1=0.1201 < baseline 0.1224; submit_3m=false",
       "metrics": null
+    },
+    {
+      "id": "jobbert_zh_domain_1m",
+      "description": "Domain-mix DAPT 1M + CRF",
+      "status": "complete",
+      "metrics": {
+        "seed42": 0.1234,
+        "mean_3seed": 0.1269,
+        "shiye_seed42": 0.0287,
+        "note": "3-seed mean below JobBERT 1M 0.1288; do not scale to 3M"
+      }
     },
     {
       "id": "jobbert_listed_domain_filter",

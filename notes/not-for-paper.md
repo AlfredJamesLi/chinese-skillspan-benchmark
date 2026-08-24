@@ -13,8 +13,9 @@
 - Any F1 not in `confirmed-results.md` and not on the user-uploaded PDF
 - Internal encoder summaries that were not scored with this paper’s official script
 - Numbers from the *other* processed copy of `chinese_skillspan` if the two trees differ
-- Encoder 3-seed **mean** (seeds 123/2026 still running; only seed 42 confirmed)
-- Domain-mix 1M JobBERT F1 (corpus ready, not scored)
+- RoBERTa-wwm v3 3-seed **mean** (seed 123 running; seed 2026 not started)
+- Claiming domain-mix 1M beats JobBERT 1M on the 3-seed mean (0.1269 < 0.1288)
+- Claiming domain-mix fixes 事业单位 (seed 42 typed F1 0.0287 vs ChatGPT 0.7032)
 - Claude/Kimi Gold v2 rows as complete (missing 98 / 293 IDs)
 - listed-company mix **3M** DAPT (1M already lost: 0.1201 < 0.1224)
 - Concept Accuracy / ESCO concept-ID eval (no concept IDs in Gold)

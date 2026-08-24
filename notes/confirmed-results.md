@@ -79,11 +79,12 @@ No `year` field → **do not claim Time-OOD**. CSV: `tables/per_domain_gold_v2.c
 | DeepSeek | 0.1392 | 0.1293 | 0.0805 |
 | Qwen | 0.0887 | 0.0646 | 0.0207 |
 | JobBERT 3M ckpt65000 | **0.1323** | 0.1259 | 0.0150 |
-| JobBERT 1M | 0.1287 | **0.1332** | 0.0181 |
+| JobBERT 1M | 0.1287 | 0.1332 | 0.0181 |
 | listed mix 1M | 0.1282 | 0.1240 | 0.0153 |
+| domain-mix 1M (seed 42) | 0.1276 | **0.1372** | 0.0287 |
 | RoBERTa-wwm v3 | 0.1242 | 0.1191 | 0.0115 |
 
-Encoder fails on 事业单位 (~0.015) vs ~0.13 on 人工智能/阿里云. ChatGPT is strongest on 事业单位 (0.7032).
+Encoder fails on 事业单位 (~0.015–0.029) vs ~0.13 on 人工智能/阿里云. ChatGPT is strongest on 事业单位 (0.7032). Domain-mix seed 42 raises 事业单位 to 0.0287; still a failure mode.
 
 ## Encoder CRF ranking (Gold v2 typed exact; seed 42)
 
@@ -91,7 +92,8 @@ CSV: `tables/encoder_gold_v2.csv`. Encoder is a **weak baseline**, not competiti
 
 | Run | test F1 | dev F1 | vs 0.1224 |
 |---|---:|---:|---|
-| JobBERT 3M ckpt65000 | **0.1233** | 0.3205 | +0.0009 |
+| domain-mix 1M (seed 42) | **0.1234** | 0.3190 | +0.0010 |
+| JobBERT 3M ckpt65000 | 0.1233 | 0.3205 | +0.0009 |
 | JobBERT 1M + goldstyle v3 | **0.1224** | 0.3185 | baseline |
 | human380 + v3 merge | 0.1207 | 0.3163 | −0.0017 |
 | listed mix 1M | 0.1201 | 0.3257 | −0.0023 |
@@ -100,14 +102,26 @@ CSV: `tables/encoder_gold_v2.csv`. Encoder is a **weak baseline**, not competiti
 | JobBERT demo 80k | 0.1152 | 0.3231 | −0.0072 |
 | RoBERTa-wwm goldstyle v3 | 0.1156 | 0.3210 | −0.0068 |
 
-listed mix 1M **lost**; do **not** add listed-3M. Domain-mix 1M (AI 36.8% / 应届生 29.0% / 阿里云 22.0% / 事业单位 12.2%) is **running, no F1 yet**.
+listed mix 1M **lost**; do **not** add listed-3M. Domain-mix seed 42 is +0.0010 vs 1M; it does **not** beat ChatGPT.
+
+## Encoder 3-seed typed exact (Gold v2; `cnss-lskt-1.2.0`)
+
+CSV: `tables/encoder_3seed_gold_v2.csv`. Sample std over three seeds. RoBERTa-wwm v3 seed 123 still running → no vanilla mean.
+
+| Run | seed 42 | seed 123 | seed 2026 | mean | std |
+|---|---:|---:|---:|---:|---:|
+| JobBERT 1M | 0.1224 | 0.1292 | 0.1348 | **0.1288** | 0.0062 |
+| domain-mix 1M | 0.1234 | 0.1280 | 0.1294 | 0.1269 | 0.0031 |
+| JobBERT 3M ckpt65000 | 0.1233 | 0.1295 | 0.1246 | 0.1258 | 0.0033 |
+| RoBERTa-wwm v3 | 0.1156 | — | — | — | — |
+
+3-seed mean: domain-mix 0.1269 **below** JobBERT 1M 0.1288. Do not scale domain-mix to 3M. Encoder remains a weak baseline (~0.13 vs ChatGPT 0.6365 typed).
 
 ## Still missing / blocked (paper claims)
 
 - Concept Accuracy / ESCO concept-ID eval — **blocked**, no concept IDs; delete the claim
 - Time-OOD — **blocked**, no `year` field; delete the claim
-- Encoder 3-seed **mean** — seeds 123/2026 still running; only seed 42 is confirmed
+- RoBERTa-wwm v3 3-seed mean — seed 123 running; seed 2026 not started
 - BERT-CRF span-based, XLM-R zero-shot, ESCO lexicon rows
 - SelfCheck + reflection as a frozen “our method” recipe
 - Public data card / 200-item Gold analysis set as a named file
-- Domain-mix 1M JobBERT F1 — corpus ready, **not scored**
