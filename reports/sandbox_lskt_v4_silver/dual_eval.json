@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Gold v2 (frozen official)",
+    "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/gold_canonical_v2.jsonl",
+    "alignment_ok": true,
+    "n_gold": 2601,
+    "n_missing": 0,
+    "typed_p": 0.15427769985974754,
+    "typed_r": 0.0829938131884714,
+    "typed_f1": 0.10792778649921507,
+    "collapsed_f1": 0.11872056514913656,
+    "error": null
+  },
+  {
+    "name": "LSKT v4 silver on Gold-v2 IDs",
+    "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_silver_g2ids.jsonl",
+    "alignment_ok": true,
+    "n_gold": 2601,
+    "n_missing": 0,
+    "typed_p": 0.34417952314165495,
+    "typed_r": 0.2937514962892028,
+    "typed_f1": 0.3169723585636786,
+    "collapsed_f1": 0.34177215189873417,
+    "error": null
+  }
+]

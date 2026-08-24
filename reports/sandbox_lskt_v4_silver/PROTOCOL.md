@@ -28,3 +28,5 @@ Corpus 银标 BIO → `scripts/rewrite_train_lskt_v4.py`（empty lock + 切短�
 
 1. **旧 Gold v2**（主对照，官方协议）
 2. **新 SOP 银标** `data/test_lskt_v4_silver_g2ids.jsonl`（同一批 Gold v2 句子 ID，标签换成 v4 银标）
+
+数字见 `DUAL_EVAL.md`（sandbox，不进论文）。2026-08-24 seed42：Gold v2 typed **0.1079**（低于同编码器 goldstyle v3 的 0.1224）；v4 silver typed **0.3170**（与训练同 SOP，非人工 Gold）。
