@@ -80,6 +80,16 @@
     "snapshot": "results_snapshots/jobbert_zh_domain_1m__crf_v3_seed123.json"
   },
   {
+    "run": "cn_roberta_wwm_v3/seed2026",
+    "status": "complete",
+    "test_typed_f1": 0.125360660630783,
+    "test_collapsed_f1": 0.13729977116704806,
+    "dev_typed_f1": 0.319236346060899,
+    "precision": 0.18399532710280375,
+    "recall": 0.09506564056133997,
+    "snapshot": "results_snapshots/cn_roberta_wwm_v3__seed2026.json"
+  },
+  {
     "run": "encoder_3seed/jobbert_zh_3m_ckpt65000/seed_2026",
     "status": "complete",
     "test_typed_f1": 0.1246262178065014,
@@ -168,6 +178,16 @@
     "precision": 0.16383430695698353,
     "recall": 0.09310396861324884,
     "snapshot": "results_snapshots/cn_roberta_wwm_v3__seed123.json"
+  },
+  {
+    "run": "encoder_3seed/cn_roberta_wwm_v3/seed_123",
+    "status": "complete",
+    "test_typed_f1": 0.11873376310978544,
+    "test_collapsed_f1": 0.12970268449918215,
+    "dev_typed_f1": 0.3207790684031444,
+    "precision": 0.16383430695698353,
+    "recall": 0.09310396861324884,
+    "snapshot": "results_snapshots/encoder_3seed__cn_roberta_wwm_v3__seed_123.json"
   },
   {
     "run": "jobbert_zh_3m/crf_v3_seed42",
