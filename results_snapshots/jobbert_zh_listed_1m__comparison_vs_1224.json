@@ -1,0 +1,41 @@
+{
+  "job_id": 50640,
+  "model": "jobbert_zh_listed_1m",
+  "baseline_f1": 0.1224,
+  "listed_1m": {
+    "test_typed_f1": 0.12010238235873201,
+    "precision": 0.17275559331634097,
+    "recall": 0.09204768371812283,
+    "dev_f1": 0.3256590719312895,
+    "tp": 610,
+    "pred": 3531,
+    "gold": 6627,
+    "collapsed_f1": 0.13408151210868283
+  },
+  "delta_vs_baseline": -0.002297617641267985,
+  "beats_baseline_0_1224": false,
+  "strong_lift_ge_0_002": false,
+  "verdict": "BELOW/FLAT (-0.0023)",
+  "reference_top5": [
+    {
+      "name": "jobbert_zh_3m/crf_ckpt65000_ep1",
+      "f1": 0.12328089442960326
+    },
+    {
+      "name": "jobbert_zh_3m_ckpt_sweep/crf_ckpt65000",
+      "f1": 0.12328089442960326
+    },
+    {
+      "name": "jobbert_zh_1m/crf_v3_seed42",
+      "f1": 0.12244098344597903
+    },
+    {
+      "name": "jobbert_1m_human380_v3merge_seed42",
+      "f1": 0.1207287050713934
+    },
+    {
+      "name": "jobbert_zh_3m/crf_v3_seed42",
+      "f1": 0.11703718472734523
+    }
+  ]
+}
