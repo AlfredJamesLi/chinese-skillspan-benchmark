@@ -1,0 +1,322 @@
+{
+  "gold_v2_untouched": true,
+  "codex_test_untouched": true,
+  "source": "kimi_k2.6_test52",
+  "model": "kimi-k2.6",
+  "n_expected": 2601,
+  "n_raw": 2601,
+  "missing_ids": [],
+  "n_empty": 1137,
+  "n_align_error_sents": 205,
+  "n_dropped_spans": 285,
+  "n_kept_spans": 5260,
+  "n_over_cap8": 199,
+  "type_counts": {
+    "S": 2780,
+    "K": 1667,
+    "T": 784,
+    "L": 29
+  },
+  "align_errors_head": [
+    {
+      "id": "1801-s0004",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:技术设计"
+      ]
+    },
+    {
+      "id": "1802-s0007",
+      "n_errs": 3,
+      "errs": [
+        "not_in_sentence:VMware ESX服务器",
+        "not_in_sentence:Bash Shell",
+        "not_in_sentence:Jenkins"
+      ]
+    },
+    {
+      "id": "1803-s0007",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:数据挖掘"
+      ]
+    },
+    {
+      "id": "1804-s0001",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:解决业务挑战"
+      ]
+    },
+    {
+      "id": "1804-s0005",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:产品生命周期管理"
+      ]
+    },
+    {
+      "id": "1804-s0006",
+      "n_errs": 2,
+      "errs": [
+        "not_in_sentence:解决方案设计",
+        "not_in_sentence:理论支持"
+      ]
+    },
+    {
+      "id": "1804-s0007",
+      "n_errs": 2,
+      "errs": [
+        "not_in_sentence:海量数据处理",
+        "not_in_sentence:挖掘信息"
+      ]
+    },
+    {
+      "id": "1805-s0007",
+      "n_errs": 3,
+      "errs": [
+        "not_in_sentence:沟通能力",
+        "not_in_sentence:应变能力",
+        "not_in_sentence:协调能力"
+      ]
+    },
+    {
+      "id": "1807-s0003",
+      "n_errs": 1,
+      "errs": [
+        "overlap:数据挖掘"
+      ]
+    },
+    {
+      "id": "1808-s0004",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:CSS动画"
+      ]
+    },
+    {
+      "id": "1809-s0005",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:技术理解能力"
+      ]
+    },
+    {
+      "id": "1811-s0007",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:抗压能力"
+      ]
+    },
+    {
+      "id": "1812-s0003",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:外围设备驱动开发调试"
+      ]
+    },
+    {
+      "id": "1812-s0004",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:软件模块化"
+      ]
+    },
+    {
+      "id": "1813-s0001",
+      "n_errs": 4,
+      "errs": [
+        "not_in_sentence:数据监督管控",
+        "not_in_sentence:数据挖掘",
+        "not_in_sentence:数据整理",
+        "overlap:数据分析"
+      ]
+    },
+    {
+      "id": "1813-s0002",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:本科以上学历"
+      ]
+    },
+    {
+      "id": "1814-s0005",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:承接转产工作"
+      ]
+    },
+    {
+      "id": "1815-s0008",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:研发软件"
+      ]
+    },
+    {
+      "id": "1817-s0001",
+      "n_errs": 1,
+      "errs": [
+        "overlap:Storm"
+      ]
+    },
+    {
+      "id": "1817-s0005",
+      "n_errs": 2,
+      "errs": [
+        "not_in_sentence:技术攻关",
+        "not_in_sentence:技术选型"
+      ]
+    },
+    {
+      "id": "1818-s0004",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:Python"
+      ]
+    },
+    {
+      "id": "1818-s0005",
+      "n_errs": 2,
+      "errs": [
+        "not_in_sentence:MySQL",
+        "not_in_sentence:MongoDB"
+      ]
+    },
+    {
+      "id": "1818-s0006",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:Python Web框架"
+      ]
+    },
+    {
+      "id": "1819-s0002",
+      "n_errs": 2,
+      "errs": [
+        "not_in_sentence:协调资源",
+        "not_in_sentence:进度管控"
+      ]
+    },
+    {
+      "id": "1819-s0003",
+      "n_errs": 2,
+      "errs": [
+        "not_in_sentence:数据分析",
+        "not_in_sentence:用户反馈分析"
+      ]
+    },
+    {
+      "id": "1819-s0005",
+      "n_errs": 2,
+      "errs": [
+        "overlap:iOS",
+        "overlap:H5"
+      ]
+    },
+    {
+      "id": "1819-s0006",
+      "n_errs": 2,
+      "errs": [
+        "not_in_sentence:需求分析",
+        "not_in_sentence:需求梳理"
+      ]
+    },
+    {
+      "id": "1819-s0008",
+      "n_errs": 1,
+      "errs": [
+        "overlap:XMind"
+      ]
+    },
+    {
+      "id": "1820-s0003",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:口头表达能力"
+      ]
+    },
+    {
+      "id": "1822-s0007",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:抗压能力"
+      ]
+    },
+    {
+      "id": "1827-s0006",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:中文"
+      ]
+    },
+    {
+      "id": "1829-s0003",
+      "n_errs": 2,
+      "errs": [
+        "not_in_sentence:客户回访",
+        "not_in_sentence:客户反馈"
+      ]
+    },
+    {
+      "id": "1831-s0000",
+      "n_errs": 2,
+      "errs": [
+        "not_in_sentence:产品体系构建",
+        "not_in_sentence:团队管理"
+      ]
+    },
+    {
+      "id": "1831-s0001",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:流程优化"
+      ]
+    },
+    {
+      "id": "1831-s0003",
+      "n_errs": 2,
+      "errs": [
+        "not_in_sentence:业务流程优化",
+        "not_in_sentence:团队效率提升"
+      ]
+    },
+    {
+      "id": "1831-s0004",
+      "n_errs": 2,
+      "errs": [
+        "not_in_sentence:技术项目决策",
+        "not_in_sentence:技术方案审核"
+      ]
+    },
+    {
+      "id": "1833-s0003",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:模型复现"
+      ]
+    },
+    {
+      "id": "1834-s0000",
+      "n_errs": 1,
+      "errs": [
+        "overlap:系统集成"
+      ]
+    },
+    {
+      "id": "1834-s0001",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:Photoshop"
+      ]
+    },
+    {
+      "id": "1834-s0007",
+      "n_errs": 1,
+      "errs": [
+        "not_in_sentence:监控系统"
+      ]
+    }
+  ],
+  "output": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_kimi_g2ids.jsonl"
+}

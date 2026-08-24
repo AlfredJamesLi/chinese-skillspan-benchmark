@@ -17,11 +17,11 @@ CODEX = PAPER / "data/test_lskt_v4_silver_g2ids.jsonl"
 DOUBAO = PAPER / "data/test_lskt_v4_doubao_g2ids.jsonl"
 DOUBAO_RAW = PACK / "outputs_doubao/lskt_all_results.json"
 KIMI_CANDIDATES = [
-    PACK / "outputs_kimi/lskt_all_results.json",
     PAPER / "data/test_lskt_v4_kimi_g2ids.jsonl",
+    PACK / "outputs_kimi/lskt_all_results.json",
 ]
 OUT_DIR = PACK / "conflict_v1"
-SOURCE = "sandbox v4 · Codex 2601 + Doubao 2601 · Kimi pending · 2026-08-25"
+SOURCE = "sandbox v4 · Codex 2601 + Doubao 2601 + Kimi k2.6 2601 · 2026-08-25"
 
 
 def load_jsonl(path: Path) -> list[dict]:
@@ -147,6 +147,14 @@ def main() -> int:
             "n_codex": len(csp),
             "n_doubao": len(dsp),
         }
+        if ksp is not None:
+            ks, cs, ds = tuple(sorted(ksp)), tuple(sorted(csp)), tuple(sorted(dsp))
+            if ks == cs:
+                status_n["kimi_codex"] += 1
+            if ks == ds:
+                status_n["kimi_doubao"] += 1
+            if ks == cs == ds:
+                status_n["three_agree"] += 1
         rows.append(rec)
         status_n[st] += 1
 
@@ -204,14 +212,16 @@ def main() -> int:
     md = [
         "# LSKT v4 冲突表初版（sandbox）",
         "",
-        "Gold v2 未改。Kimi 尚未入库，第三列全部 `pending`。Kimi 到齐后用同一脚本重跑即可。",
+        "Gold v2 未改。Kimi 列为官方 `kimi-k2.6`（思考关闭）test 52 批。",
         "",
         f"- 句子: **{len(rows)}**（Gold v2 ID）",
         f"- Codex ↔ 豆包 一致: **{summary['n_agree']}**（空句一致 {status_n['agree_empty']}，有跨度一致 {status_n['agree_spans']}）",
-        f"- 不一致（建议人工先看）: **{summary['n_disagree']}**",
+        f"- 不一致（建议人工先看 Codex↔豆包）: **{summary['n_disagree']}**",
         f"  - 跨度边界不同: {status_n['span_mismatch']}",
         f"  - 一边空一边非空: {status_n['empty_mismatch']}",
         f"  - 边界相同类型不同: {status_n['type_only']}",
+        f"- 三家跨度+类型完全一致: **{status_n['three_agree']}**",
+        f"- Kimi↔Codex 一致: {status_n['kimi_codex']}；Kimi↔豆包 一致: {status_n['kimi_doubao']}",
         f"- 豆包有跨度对不上原文被丢掉: {summary['n_doubao_any_drop']} 句",
         f"- Kimi: {summary['kimi_n']}/2601",
         "",

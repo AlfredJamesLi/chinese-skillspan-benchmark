@@ -12,7 +12,7 @@
 
 - 代码：`scripts/`、`scorer/`
 - 复现文档：`REPRO_GITHUB.md`、`HANDOFF.md`、`notes/`
-- 核心数据：Gold v2、goldstyle train/dev、corpus_splits（train/dev/test）
+- 核心数据：Gold v2、goldstyle train/dev、LSKT v4 SOP train/dev + `test_lskt_v4_rule_g2ids.jsonl`、corpus_splits（train/dev/test）
 - 结果快照：`results_snapshots/`（各次 run_summary）
 - 大文件清单：`data/LARGE_DATA_MANIFEST.md`
 

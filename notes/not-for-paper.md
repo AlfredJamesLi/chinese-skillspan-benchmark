@@ -22,6 +22,7 @@
 - Time-OOD (no `year` field)
 - English JobBERT ~0.46 or `*.eval_ner.json`
 - Claiming JobBERT-zh CRF (~0.12) beats ChatGPT
+- LSKT v4 SOP sandbox F1 (rule-silver typed exact ~0.3170 / IoU≥0.5 ~0.5663; 1M CRF). Not Gold v2. Not Table 3.
 
 ## Abandoned / mix-ups
 

@@ -10,6 +10,11 @@ GitHub 单文件上限 100MB；本仓库只备份**代码 + 协议 + 可复现�
 | `data/gold_canonical_v2.jsonl` | 5 MB | 官方 Gold test（2601 ID） |
 | `data/train_goldstyle_v3.jsonl` | 14 MB | CRF 训练银标 v3 |
 | `data/dev_goldstyle_v3.jsonl` | 1.8 MB | CRF dev |
+| `data/train_lskt_v4_silver.jsonl` | ~14 MB | LSKT v4 训练银标（SOP；非 Gold） |
+| `data/dev_lskt_v4_silver.jsonl` | ~2 MB | LSKT v4 dev 银标 |
+| `data/test_lskt_v4_rule_g2ids.jsonl` | ~2 MB | **新 SOP 测试金标**（2601 ID；非官方 Gold） |
+| `data/test_lskt_v4_simhuman980.jsonl` | <1 MB | 980 句 SOP 模拟人工 |
+| `data/test_lskt_v4_silver_g2ids.jsonl` | ~2 MB | Codex 测试银标（对照） |
 | `data/corpus_splits/{train,dev,test}.json` | ~87 MB | Table 1 语料切分（若已复制） |
 | `data/jobbert_*_sents.meta.json` | KB | DAPT 语料配方与统计 |
 | `results_snapshots/` | KB | 各次 `run_summary.json` 快照 |

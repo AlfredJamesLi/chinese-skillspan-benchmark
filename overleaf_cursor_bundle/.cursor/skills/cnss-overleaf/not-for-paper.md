@@ -14,3 +14,4 @@
 - Claude/Kimi Gold v2 rows as complete (missing 98 / 293 IDs)
 - English JobBERT ~0.46 or `*.eval_ner.json`
 - Claiming JobBERT-zh CRF (~0.12) beats ChatGPT
+- LSKT v4 SOP sandbox encoder F1 (~0.3170 exact / ~0.5663 IoU≥0.5 on rule silver). Not Gold v2. Not Table 3.

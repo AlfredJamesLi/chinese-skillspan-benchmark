@@ -1,11 +1,14 @@
 {
   "gold_v2_untouched": true,
   "n": 2601,
-  "kimi_n": 0,
-  "kimi_path": null,
+  "kimi_n": 2601,
+  "kimi_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_kimi_g2ids.jsonl",
   "status_counts": {
+    "kimi_codex": 1012,
     "span_mismatch": 939,
     "agree_spans": 94,
+    "kimi_doubao": 1386,
+    "three_agree": 939,
     "agree_empty": 1007,
     "empty_mismatch": 547,
     "type_only": 14
@@ -13,7 +16,7 @@
   "n_agree": 1101,
   "n_disagree": 1500,
   "n_doubao_any_drop": 928,
-  "source": "sandbox v4 · Codex 2601 + Doubao 2601 · Kimi pending · 2026-08-25",
+  "source": "sandbox v4 · Codex 2601 + Doubao 2601 + Kimi k2.6 2601 · 2026-08-25",
   "files": {
     "jsonl": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/codex_pack/conflict_v1/conflict_table.jsonl",
     "csv": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/codex_pack/conflict_v1/conflict_table.csv",

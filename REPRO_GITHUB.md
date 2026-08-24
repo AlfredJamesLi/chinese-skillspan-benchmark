@@ -35,6 +35,22 @@ python3 scorer/score_lskt.py \
 
 主指标：**typed exact micro F1**（`cnss-lskt-1.2.0`）。
 
+## 3b. LSKT v4 SOP 银标（sandbox；非官方 Gold）
+
+测试金标：`data/test_lskt_v4_rule_g2ids.jsonl`（与 train/dev 同 SOP）。说明：`reports/sandbox_lskt_v4_silver/SOP_TEST_GOLD.md`。
+
+```bash
+# 1M 已训：output/jobbert_zh_1m/crf_lskt_v4_silver_seed42/  — 不要覆盖
+# 3M 另开目录：
+bash scripts/run_jobbert_zh_3m_lskt_v4.sh
+
+python3 scripts/score_sop_v4_pred.py \
+  --pred output/jobbert_zh_3m/crf_lskt_v4_silver_seed42/test_pred.jsonl \
+  --out output/jobbert_zh_3m/crf_lskt_v4_silver_seed42/sop_eval.json
+```
+
+这些 F1 **不得**写入 `notes/confirmed-results.md` 或 PDF Table 3。
+
 ## 4. JobBERT-Zh 1M（已确认内部数字）
 
 ```bash

@@ -1,0 +1,264 @@
+{
+  "gold_v2_untouched": true,
+  "codex_test_untouched": true,
+  "train_untouched": true,
+  "n_980": 980,
+  "n_empty_980": 7,
+  "source_980": {
+    "rule_v4": 963,
+    "rescue_llm_agree2": 10,
+    "rule_empty": 5,
+    "empty_process": 1,
+    "empty_shiye_process": 1
+  },
+  "note": "Simulated SOP labels, not human Gold. 980 are test IDs; not used for CRF train.",
+  "paths": {
+    "simhuman980": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_simhuman980.jsonl",
+    "patched2601": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_simhuman_patched_g2ids.jsonl",
+    "rule2601": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_rule_g2ids.jsonl"
+  },
+  "scores": [
+    {
+      "name": "Gold v2 (frozen official)",
+      "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/gold_canonical_v2.jsonl",
+      "alignment_ok": true,
+      "n_gold": 2601,
+      "n_missing": 0,
+      "typed_p": 0.15427769985974754,
+      "typed_r": 0.0829938131884714,
+      "typed_f1": 0.10792778649921507,
+      "collapsed_f1": 0.11872056514913656,
+      "error": null
+    },
+    {
+      "name": "Codex test silver (current g2ids)",
+      "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_silver_g2ids.jsonl",
+      "alignment_ok": true,
+      "n_gold": 2601,
+      "n_missing": 0,
+      "typed_p": 0.1256661991584853,
+      "typed_r": 0.12358620689655173,
+      "typed_f1": 0.12461752433936023,
+      "collapsed_f1": 0.13657858136300416,
+      "error": null
+    },
+    {
+      "name": "rule_v4 recomputed on 2601",
+      "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_rule_g2ids.jsonl",
+      "alignment_ok": true,
+      "n_gold": 2601,
+      "n_missing": 0,
+      "typed_p": 0.34417952314165495,
+      "typed_r": 0.2937514962892028,
+      "typed_f1": 0.3169723585636786,
+      "collapsed_f1": 0.34177215189873417,
+      "error": null
+    },
+    {
+      "name": "patched 2601 (980 simhuman, rest Codex)",
+      "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_simhuman_patched_g2ids.jsonl",
+      "alignment_ok": true,
+      "n_gold": 2601,
+      "n_missing": 0,
+      "typed_p": 0.27685834502103784,
+      "typed_r": 0.24936836786255684,
+      "typed_f1": 0.2623953210155523,
+      "collapsed_f1": 0.28366343214143297,
+      "error": null
+    },
+    {
+      "name": "simhuman 980 only",
+      "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_simhuman980.jsonl",
+      "alignment_ok": true,
+      "n_gold": 980,
+      "n_missing": 0,
+      "typed_p": 0.35093555093555096,
+      "typed_r": 0.2989727240524265,
+      "typed_f1": 0.32287681713848504,
+      "collapsed_f1": 0.3481254781943382,
+      "error": null
+    }
+  ],
+  "examples20": [
+    {
+      "id": "1801-s0004",
+      "source": "simhuman_rule_v4",
+      "sentence": "（4）负责参与公司无人机飞控系统技术项目开发策划、总体方案论证、技术设...",
+      "simhuman": "技术项目开发策划/S | 论证/S | 技术设../S",
+      "codex": "无人机飞控系统/K | 项目开发策划/S | 总体方案论证/S",
+      "doubao": "无人机飞控系统/S | 开发策划/S | 总体方案论证/S",
+      "kimi": "技术项目开发策划/S | 总体方案论证/S"
+    },
+    {
+      "id": "1802-s0000",
+      "source": "simhuman_rule_v4",
+      "sentence": "工作职责：1、监控和管理当前服务器、存储和备份基础设施的性能和容量。",
+      "simhuman": "监控和管理当前服/S | 存储和备/K",
+      "codex": "监控/S | 管理/S | 服务器/K | 存储/K | 备份基础设施/K",
+      "doubao": "监控/S | 管理/S | 服务器/K | 存储/K | 备份/S",
+      "kimi": "服务器/S | 存储/S | 备份/S"
+    },
+    {
+      "id": "1802-s0005",
+      "source": "simhuman_rule_v4",
+      "sentence": "6、培训其他方法、工具和技术支持多个应用。",
+      "simhuman": "培训其/S | 方法/S | 工具和技术/S",
+      "codex": "培训/S | 技术支持/S",
+      "doubao": "培训/S | 方法/K | 工具/S | 技术/K",
+      "kimi": "培训/S | 方法/S | 工具/S | 技术支持/S"
+    },
+    {
+      "id": "1802-s0006",
+      "source": "simhuman_rule_v4",
+      "sentence": "7、监督生产系统的改进计划和发展。",
+      "simhuman": "生产系统的改进计/K",
+      "codex": "监督/S | 生产系统/K | 改进计划/S",
+      "doubao": "监督/S | 生产系统/K | 改进/S",
+      "kimi": "监督/S | 改进计划/S | 发展/S"
+    },
+    {
+      "id": "1802-s0007",
+      "source": "simhuman_rule_v4",
+      "sentence": "岗位要求Musthava1、5年以上在一个环境下的高级系统管理的强大的技术背景2、虚拟化经验，较强的技术背景（VMwareESX服务器/OpenVZ、KVM）3、用脚本语言经验（BashShell或Python）4、Web服务器（Apache，Tomcat）经验5、经验与监测（Zabbix）6、基础设施自动化经验（chef，Jekins）。",
+      "simhuman": "系统管理的强/S | 技术背景2/K | 虚拟化经验/K | VMwareESX服务器/OpenVZ、KVM/K | 脚本语言经验/S | Web服务器（Apache，Tomcat/K | 验与监测（Zabbix）6/S | 基础设施自动化经/K",
+      "codex": "系统管理/S | 虚拟化/K | VMwareESX/S | OpenVZ/S | KVM/S | 脚本语言/K | BashShell/S | Python/S | Web服务器/K | Apache/S | Tomcat/S | 监测/S | Zabbix/S | 基础设施自动化/S | chef/S | Jekins/S",
+      "doubao": "系统管理/S | 虚拟化/K | VMwareESX服务器/S | OpenVZ/S | KVM/S | BashShell/S | Python/S | Apache/S | Tomcat/S | Zabbix/S | 基础设施自动化/S | chef/S | Jekins/S",
+      "kimi": "系统管理/S | 技术背景/K | 虚拟化/S | 技术背景/K | OpenVZ/S | KVM/S | 脚本语言/S | Python/S | Web服务器/S | Apache/S | Tomcat/S | 监测/S | Zabbix/S | 基础设施自动化/S | chef/S"
+    },
+    {
+      "id": "1802-s0008",
+      "source": "simhuman_rule_v4",
+      "sentence": "nicetohave1、有网络管理或网络工程工作经验者优先2、与AWS工作经验者优先3、有组织性和主动性4、良好的英文读写能力5、优秀的沟通能力和团队合作精神项目简介:我们公司作为跨国企业InternetBrands中国唯一的离岸研发中心，已经合作了5年多，目前团队技术人员40人，随着合作的深入，计划今年新招20人。",
+      "simhuman": "网络管理或网络工/K | AWS工作/K | 组织性和主动性4/T | 的英文读写能力5/L | 沟通能力和团队合/T",
+      "codex": "网络管理/S | 网络工程/K | AWS/S | 组织性/T | 主动性/T | 英文读写能力/L | 沟通能力/T | 团队合作精神/T",
+      "doubao": "网络管理/S | 网络工程/K | AWS/S | 组织性/T | 主动性/T | 英文/L | 沟通能力/T | 团队合作精神/T",
+      "kimi": "网络管理/S | 网络工程/S | AWS/S | 组织性/T | 主动性/T | 英文读写能力/L | 沟通能力/T | 团队合作精神/T"
+    },
+    {
+      "id": "1802-s0017",
+      "source": "simhuman_rule_v4",
+      "sentence": "公司致力于大数据和云计算的研究与服务，向全球客户提供离岸研发、智能硬件检测与认证、移动通讯终端的测试和评估等专业服务。",
+      "simhuman": "大数据和云计算的/K | 离岸研发/S | 智能硬/S",
+      "codex": "大数据/K | 云计算/K | 离岸研发/S | 智能硬件检测/S | 认证/S | 移动通讯终端/K | 测试/S | 评估/S",
+      "doubao": "[]",
+      "kimi": "大数据/K | 云计算/K | 离岸研发/S | 智能硬件检测与认证/S | 移动通讯终端的测试和评估/S"
+    },
+    {
+      "id": "1803-s0000",
+      "source": "simhuman_rule_v4",
+      "sentence": "岗位职责：1、负责策划亚马逊PPC广告策略并实施推进，结合公司产品制定并优化投放方案；",
+      "simhuman": "策划亚/S | 实施推/S | 制定并优化投/S",
+      "codex": "亚马逊PPC广告策略/S | 实施推进/S | 制定/S | 优化/S | 投放方案/S",
+      "doubao": "策划/S | 亚马逊PPC广告/K | 实施/S | 优化/S | 投放方案/K",
+      "kimi": "亚马逊PPC广告/S | 投放方案/S"
+    },
+    {
+      "id": "1803-s0001",
+      "source": "simhuman_rule_v4",
+      "sentence": "2、投放PPC广告并监控分析广告效果，提升广告有效性以达到投资回报最大化；",
+      "simhuman": "投放PPC/S | 监控分/S | 提升广/S | 到投资回报最大化/S",
+      "codex": "投放PPC广告/S | 监控/S | 分析/S",
+      "doubao": "投放/S | PPC广告/K | 监控/S | 分析/S",
+      "kimi": "PPC广告/S | 监控分析/S | 广告效果/S | 投资回报最大化/S"
+    },
+    {
+      "id": "1803-s0002",
+      "source": "simhuman_rule_v4",
+      "sentence": "3、独立操作竞价，如扩展长尾关键字，调整价格，优化曝光与转化率，并协助完成Listing优化；",
+      "simhuman": "操作竞价/S | 扩展长尾关键字/S | Listing优化/S",
+      "codex": "操作竞价/S | 扩展长尾关键字/S | 调整价格/S | 优化曝光/S | 转化率/K | Listing优化/S",
+      "doubao": "操作竞价/S | 长尾关键字/K | 调整价格/S | 优化/S | Listing优化/S",
+      "kimi": "竞价/S | 长尾关键字/S | 调整价格/S | 优化曝光/S | 转化率/S | Listing优化/S"
+    },
+    {
+      "id": "1803-s0003",
+      "source": "simhuman_rule_v4",
+      "sentence": "4、结合公司品牌销售战略，有效管理推广预算，高效配合其他站内Deals促销、站内展示广告、以及其他站外推广活动；",
+      "simhuman": "管理推广预算/S | 配合其/T",
+      "codex": "品牌销售战略/K | 管理推广预算/S | Deals促销/S | 站内展示广告/S | 站外推广活动/S",
+      "doubao": "管理推广预算/S",
+      "kimi": "推广预算/S | Deals促销/S | 展示广告/S | 推广活动/S"
+    },
+    {
+      "id": "1803-s0004",
+      "source": "simhuman_rule_v4",
+      "sentence": "5、从各个维度对广告数据进行全面分析，根据分析结果给出优化建议，并不断优化广告投放效果。",
+      "simhuman": "广告数据进行全面/S | 分析结果给/K | 优化建议/S | 优化广告投放效果/S",
+      "codex": "广告数据/K | 全面分析/S | 优化建议/S | 优化广告投放效果/S",
+      "doubao": "优化建议/S | 优化广告投放效果/S",
+      "kimi": "广告数据/S | 全面分析/S | 优化建议/S | 广告投放效果/S"
+    },
+    {
+      "id": "1803-s0006",
+      "source": "simhuman_rule_v4",
+      "sentence": "2、一年以上亚马逊PPC广告工作经验，有Google,Yahoo,Bing等英文SEM工作经验者优先；",
+      "simhuman": "亚马逊PPC广告工作/K | Bing等英文/L",
+      "codex": "亚马逊PPC广告/S | Google/S | Yahoo/S | Bing/S | 英文/L | SEM/S",
+      "doubao": "亚马逊PPC广告/K | Google/S | Yahoo/S | Bing/S | 英文/L | SEM/K",
+      "kimi": "亚马逊PPC广告/S | Google/S | Yahoo/S | Bing/S | 英文SEM/S"
+    },
+    {
+      "id": "1803-s0007",
+      "source": "simhuman_rule_v4",
+      "sentence": "3、对数据变化敏感，较强的数据分析和挖掘经验，熟悉使用Word，Excel，PPT等办公软件；",
+      "simhuman": "数据分析和挖掘经/S | 使用Word/S | Excel，PPT等办公软件/S",
+      "codex": "数据变化敏感/T | 数据分析/S | 挖掘/S | Word/S | Excel/S | PPT/S",
+      "doubao": "数据分析/S | Word/S | Excel/S | PPT/S",
+      "kimi": "数据分析/S | Word/S | Excel/S | PPT/S | 办公软件/S"
+    },
+    {
+      "id": "1803-s0008",
+      "source": "simhuman_rule_v4",
+      "sentence": "4、思维敏捷有较强抗压能力，强烈的责任心和学习能力，优秀的语言沟通能力；",
+      "simhuman": "思维敏捷有较强抗/T",
+      "codex": "思维敏捷/T | 抗压能力/T | 责任心/T | 学习能力/T | 语言沟通能力/T",
+      "doubao": "抗压能力/T | 责任心/T | 学习能力/T | 沟通能力/T",
+      "kimi": "思维敏捷/T | 抗压能力/T | 责任心/T | 学习能力/T | 沟通能力/T"
+    },
+    {
+      "id": "1804-s0001",
+      "source": "simhuman_rule_v4",
+      "sentence": "我们希望您以坚实的技术功底和对研发的热忱，与我们一起解决京东业务上的挑战。",
+      "simhuman": "技术功底和对/K | 研发的热/K | 解决京/S",
+      "codex": "技术功底/K | 热忱/T",
+      "doubao": "[]",
+      "kimi": "技术功底/K | 研发/S"
+    },
+    {
+      "id": "1804-s0003",
+      "source": "simhuman_rule_v4",
+      "sentence": "通过基于大数据的数据分析，我们将收益管理中的定价与选品、促销优化、用户行为分析、物流库存优化、客户服务水平等电商领域内的实际业务问题，转化为计算机可识别的统计优化模型来解决。",
+      "simhuman": "数据分析/S | 收益管理中/K | 定价与选品/K | 促销/K | 统计优化模型来解/K",
+      "codex": "大数据/K | 数据分析/S | 收益管理/K | 定价/S | 选品/S | 促销优化/S | 用户行为分析/S | 物流库存优化/S | 电商领域/K | 统计优化模型/K",
+      "doubao": "数据分析/S | 收益管理/K | 定价与选品/K | 促销优化/S | 用户行为分析/S | 物流库存优化/S | 统计优化模型/K",
+      "kimi": "数据分析/S | 收益管理/K | 定价/S | 选品/S | 促销优化/S | 用户行为分析/S | 物流库存优化/S | 客户服务水平/S | 统计优化模型/K"
+    },
+    {
+      "id": "1804-s0004",
+      "source": "simhuman_rule_v4",
+      "sentence": "我们团队在美国硅谷拥有实验室，并且与斯坦福大学OR方向的著名教授及团队有深入合作。",
+      "simhuman": "斯坦福大学OR/K",
+      "codex": "OR方向/K",
+      "doubao": "[]",
+      "kimi": "OR/K"
+    },
+    {
+      "id": "1804-s0005",
+      "source": "simhuman_rule_v4",
+      "sentence": " 我们团队解决的问题包括动态定价、预测及促销决策、营销效果评估、 用户行为分析/选择模型，产品生命周期与管理等，我们的另一个重要的工作则是供应链基础运算平台的建设，包括常用优化算法与仿真算法的研究与应用。",
+      "simhuman": "动态定价/S | 预测及/S | 用户行为分析/选/S | 供应链基础运算平/S | 常用优化算法与仿/S",
+      "codex": "动态定价/S | 预测/S | 促销决策/S | 营销效果评估/S | 用户行为分析/S | 选择模型/K | 产品生命周期/K | 管理/S | 基础运算平台/S | 优化算法/K | 仿真算法/K",
+      "doubao": "动态定价/S | 预测/S | 促销决策/S | 营销效果评估/S | 用户行为分析/S | 选择模型/K | 产品生命周期与管理/K | 供应链基础运算平台/S | 优化算法/K | 仿真算法/K",
+      "kimi": "动态定价/S | 预测/S | 促销决策/S | 营销效果评估/S | 用户行为分析/S | 选择模型/K | 供应链基础运算平台/S | 优化算法/K | 仿真算法/K"
+    },
+    {
+      "id": "1804-s0006",
+      "source": "simhuman_rule_v4",
+      "sentence": " 工作职责： 1. 参与JD新一代动态定价模型搭建和具体问题解决方案的设计工作，和业务团队及产品经理合作了解业务背景及需求，并为其提供理论与技术支持。",
+      "simhuman": "动态定价模型搭建/S | 合作了/T | 供理论与技术支持/K",
+      "codex": "动态定价模型搭建/S | 解决方案/S | 设计/S | 技术支持/S",
+      "doubao": "动态定价模型/S | 理论与技术支持/S",
+      "kimi": "动态定价模型搭建/S | 业务背景及需求/K | 技术支持/S"
+    }
+  ]
+}
