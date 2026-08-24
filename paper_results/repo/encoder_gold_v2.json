@@ -1,5 +1,15 @@
 [
   {
+    "run": "jobbert_zh_1m/seed123",
+    "status": "complete",
+    "test_typed_f1": 0.12918987589172287,
+    "test_collapsed_f1": 0.14580279487931203,
+    "dev_typed_f1": 0.326361810232778,
+    "precision": 0.18330560177481975,
+    "recall": 0.09974347366832655,
+    "snapshot": "results_snapshots/jobbert_zh_1m__seed123.json"
+  },
+  {
     "run": "jobbert_zh_3m/crf_ckpt65000_ep1",
     "status": "complete",
     "test_typed_f1": 0.12328089442960326,
