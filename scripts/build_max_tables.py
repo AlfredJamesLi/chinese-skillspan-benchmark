@@ -161,7 +161,7 @@ def main() -> int:
         if not path.is_file():
             continue
         preds = load_records(str(path))
-        p_by = index_by_id(preds, "first")
+        p_by, _ = index_by_id(preds, "first")
         for d in domains:
             sub = score_subset(gold, p_by, by_dom[d])
             domain_rows.append(

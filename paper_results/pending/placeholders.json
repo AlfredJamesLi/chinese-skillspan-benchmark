@@ -4,26 +4,36 @@
   "items": [
     {
       "id": "table3_relaxed_f1",
-      "description": "Relaxed F1 (IoU≥0.5) official table",
-      "status": "pending",
-      "metrics": null
+      "description": "Relaxed F1 (IoU≥0.5) on Gold v2",
+      "status": "complete",
+      "metrics": {
+        "ChatGPT_typed_relaxed_f1": 0.7221,
+        "DeepSeek_typed_relaxed_f1": 0.1798,
+        "Qwen_typed_relaxed_f1": 0.1272,
+        "file": "paper_results/repo/relaxed_f1_gold_v2.json"
+      }
     },
     {
       "id": "table3_concept_accuracy",
       "description": "ESCO concept-ID / Concept Accuracy eval",
-      "status": "pending",
+      "status": "blocked",
+      "reason": "no ESCO concept IDs in data; freeze says delete this claim",
       "metrics": null
     },
     {
       "id": "table3_ood_industry",
-      "description": "Industry-OOD split eval",
-      "status": "pending",
-      "metrics": null
+      "description": "Industry-OOD proxy via source_domain on Gold v2",
+      "status": "complete",
+      "metrics": {
+        "file": "paper_results/repo/per_domain_gold_v2.csv",
+        "note": "Encoder ~0.015 on 事业单位 vs ~0.13 on 人工智能/阿里云"
+      }
     },
     {
       "id": "table3_ood_time",
       "description": "Time-OOD split eval (needs year field)",
-      "status": "pending",
+      "status": "blocked",
+      "reason": "no year field on corpus/gold",
       "metrics": null
     },
     {
@@ -52,9 +62,14 @@
     },
     {
       "id": "table3_3seed_average",
-      "description": "3-seed averaged encoder/LLM runs",
-      "status": "pending",
-      "metrics": null
+      "description": "3-seed averaged encoder CRF (ckpt65000 / 1M / vanilla v3)",
+      "status": "running",
+      "metrics": {
+        "seed42_ckpt65000": 0.1233,
+        "seed42_1m": 0.1224,
+        "seed42_vanilla": 0.1156,
+        "seeds_123_2026": null
+      }
     },
     {
       "id": "table3_selfcheck_reflection",

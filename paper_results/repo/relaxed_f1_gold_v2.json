@@ -1,0 +1,82 @@
+{
+  "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/gold_canonical_v2.jsonl",
+  "gold_n": 2601,
+  "domains": {
+    "人工智能招聘": 1407,
+    "阿里云公开数据集": 457,
+    "事业单位招聘": 737
+  },
+  "rows": [
+    {
+      "model": "ChatGPT",
+      "status": "complete",
+      "n_missing": 0,
+      "typed_exact_f1": 0.6364783609234652,
+      "typed_relaxed_f1": 0.7221438645980254,
+      "collapsed_exact_f1": 0.6403385049365303,
+      "typed_exact_p": 0.6263880771478667,
+      "typed_exact_r": 0.6468990493435944
+    },
+    {
+      "model": "Claude",
+      "status": "incomplete",
+      "n_missing": 98,
+      "typed_exact_f1": 0.25282993289500444,
+      "typed_relaxed_f1": 0.37890598522334445,
+      "collapsed_exact_f1": 0.29038161729817663,
+      "typed_exact_p": 0.229510214127492,
+      "typed_exact_r": 0.2814244756299985
+    },
+    {
+      "model": "Kimi",
+      "status": "incomplete",
+      "n_missing": 293,
+      "typed_exact_f1": 0.15218466611706516,
+      "typed_relaxed_f1": 0.21302555647155813,
+      "collapsed_exact_f1": 0.3086562242374279,
+      "typed_exact_p": 0.16772669453025624,
+      "typed_exact_r": 0.13927870831447112
+    },
+    {
+      "model": "DeepSeek",
+      "status": "complete",
+      "n_missing": 0,
+      "typed_exact_f1": 0.13265225933202357,
+      "typed_relaxed_f1": 0.179803536345776,
+      "collapsed_exact_f1": 0.35693516699410605,
+      "typed_exact_p": 0.13840603476549687,
+      "typed_exact_r": 0.1273577787837634
+    },
+    {
+      "model": "Qwen",
+      "status": "complete",
+      "n_missing": 0,
+      "typed_exact_f1": 0.07905138339920947,
+      "typed_relaxed_f1": 0.12722332015810275,
+      "collapsed_exact_f1": 0.10746047430830041,
+      "typed_exact_p": 0.21783526208304968,
+      "typed_exact_r": 0.04828730949147427
+    },
+    {
+      "model": "JobBERT-skill",
+      "status": "complete",
+      "n_missing": 0,
+      "typed_exact_f1": 0.003743234356821285,
+      "typed_relaxed_f1": 0.003743234356821285,
+      "collapsed_exact_f1": 0.008194648186554706,
+      "typed_exact_p": 0.002815401004413331,
+      "typed_exact_r": 0.005583220159951712
+    },
+    {
+      "model": "JobBERT-knowledge",
+      "status": "complete",
+      "n_missing": 0,
+      "typed_exact_f1": 0.00440948038282307,
+      "typed_relaxed_f1": 0.00440948038282307,
+      "collapsed_exact_f1": 0.008117452522924286,
+      "typed_exact_p": 0.0033008252063015755,
+      "typed_exact_r": 0.006639505055077713
+    }
+  ],
+  "note": "Typed relaxed = IoU≥0.5 on Gold v2 unique IDs. Incomplete dumps still scored (missing IDs = empty pred)."
+}

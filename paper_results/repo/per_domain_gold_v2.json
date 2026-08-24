@@ -1,0 +1,399 @@
+{
+  "domains": {
+    "人工智能招聘": 1407,
+    "阿里云公开数据集": 457,
+    "事业单位招聘": 737
+  },
+  "rows": [
+    {
+      "system": "ChatGPT",
+      "family": "llm_dump",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.703205791106515,
+      "typed_relaxed_f1": 0.7735263702171664,
+      "collapsed_exact_f1": 0.7073422957600827
+    },
+    {
+      "system": "ChatGPT",
+      "family": "llm_dump",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 0,
+      "typed_exact_f1": 0.6489221738690416,
+      "typed_relaxed_f1": 0.7296832304422629,
+      "collapsed_exact_f1": 0.6533751644570387
+    },
+    {
+      "system": "ChatGPT",
+      "family": "llm_dump",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 0,
+      "typed_exact_f1": 0.5650019062142584,
+      "typed_relaxed_f1": 0.6747998475028593,
+      "collapsed_exact_f1": 0.5665268776210446
+    },
+    {
+      "system": "Claude",
+      "family": "llm_dump",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.1240808823529412,
+      "typed_relaxed_f1": 0.18841911764705882,
+      "collapsed_exact_f1": 0.15073529411764708
+    },
+    {
+      "system": "Claude",
+      "family": "llm_dump",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 98,
+      "typed_exact_f1": 0.2830517153097798,
+      "typed_relaxed_f1": 0.4204813108038914,
+      "collapsed_exact_f1": 0.32565284178187404
+    },
+    {
+      "system": "Claude",
+      "family": "llm_dump",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 0,
+      "typed_exact_f1": 0.24751066856330012,
+      "typed_relaxed_f1": 0.38193456614509247,
+      "collapsed_exact_f1": 0.2759601706970128
+    },
+    {
+      "system": "Kimi",
+      "family": "llm_dump",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.10251630941286113,
+      "typed_relaxed_f1": 0.14538676607642126,
+      "collapsed_exact_f1": 0.2348555452003728
+    },
+    {
+      "system": "Kimi",
+      "family": "llm_dump",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 246,
+      "typed_exact_f1": 0.1512449334105385,
+      "typed_relaxed_f1": 0.21100173711638678,
+      "collapsed_exact_f1": 0.3228720324261726
+    },
+    {
+      "system": "Kimi",
+      "family": "llm_dump",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 47,
+      "typed_exact_f1": 0.17753922378199835,
+      "typed_relaxed_f1": 0.250206440957886,
+      "collapsed_exact_f1": 0.2906688687035508
+    },
+    {
+      "system": "DeepSeek",
+      "family": "llm_dump",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.08048289738430583,
+      "typed_relaxed_f1": 0.1187122736418511,
+      "collapsed_exact_f1": 0.22535211267605634
+    },
+    {
+      "system": "DeepSeek",
+      "family": "llm_dump",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 0,
+      "typed_exact_f1": 0.13918699186991873,
+      "typed_relaxed_f1": 0.18840108401084013,
+      "collapsed_exact_f1": 0.37463414634146347
+    },
+    {
+      "system": "DeepSeek",
+      "family": "llm_dump",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 0,
+      "typed_exact_f1": 0.12928970470869913,
+      "typed_relaxed_f1": 0.17238627294493217,
+      "collapsed_exact_f1": 0.34397446129289705
+    },
+    {
+      "system": "Qwen",
+      "family": "llm_dump",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.020689655172413796,
+      "typed_relaxed_f1": 0.020689655172413796,
+      "collapsed_exact_f1": 0.034482758620689655
+    },
+    {
+      "system": "Qwen",
+      "family": "llm_dump",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 0,
+      "typed_exact_f1": 0.08873835732430145,
+      "typed_relaxed_f1": 0.1398814563928874,
+      "collapsed_exact_f1": 0.12091447925486876
+    },
+    {
+      "system": "Qwen",
+      "family": "llm_dump",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 0,
+      "typed_exact_f1": 0.06455617628801986,
+      "typed_relaxed_f1": 0.1191806331471136,
+      "collapsed_exact_f1": 0.08441961514587214
+    },
+    {
+      "system": "JobBERT-skill",
+      "family": "llm_dump",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.0010554089709762533,
+      "typed_relaxed_f1": 0.0010554089709762533,
+      "collapsed_exact_f1": 0.0031662269129287593
+    },
+    {
+      "system": "JobBERT-skill",
+      "family": "llm_dump",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 0,
+      "typed_exact_f1": 0.005502508496520473,
+      "typed_relaxed_f1": 0.005502508496520473,
+      "collapsed_exact_f1": 0.009548470626314936
+    },
+    {
+      "system": "JobBERT-skill",
+      "family": "llm_dump",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 0,
+      "typed_exact_f1": 0.000552333609500138,
+      "typed_relaxed_f1": 0.000552333609500138,
+      "collapsed_exact_f1": 0.008837337752002208
+    },
+    {
+      "system": "JobBERT-knowledge",
+      "family": "llm_dump",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.0,
+      "typed_relaxed_f1": 0.0,
+      "collapsed_exact_f1": 0.000986679822397632
+    },
+    {
+      "system": "JobBERT-knowledge",
+      "family": "llm_dump",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 0,
+      "typed_exact_f1": 0.006955115244642135,
+      "typed_relaxed_f1": 0.006955115244642135,
+      "collapsed_exact_f1": 0.010837040032349372
+    },
+    {
+      "system": "JobBERT-knowledge",
+      "family": "llm_dump",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 0,
+      "typed_exact_f1": 0.0005652911249293387,
+      "typed_relaxed_f1": 0.0005652911249293387,
+      "collapsed_exact_f1": 0.006783493499152064
+    },
+    {
+      "system": "jobbert_zh_3m/crf_ckpt65000_ep1",
+      "family": "encoder_crf",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.01497005988023952,
+      "typed_relaxed_f1": 0.056886227544910184,
+      "collapsed_exact_f1": 0.01497005988023952
+    },
+    {
+      "system": "jobbert_zh_3m/crf_ckpt65000_ep1",
+      "family": "encoder_crf",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 0,
+      "typed_exact_f1": 0.13234100135317997,
+      "typed_relaxed_f1": 0.33450608930987824,
+      "collapsed_exact_f1": 0.14641407307171853
+    },
+    {
+      "system": "jobbert_zh_3m/crf_ckpt65000_ep1",
+      "family": "encoder_crf",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 0,
+      "typed_exact_f1": 0.1259150805270864,
+      "typed_relaxed_f1": 0.32601268911664233,
+      "collapsed_exact_f1": 0.13469985358711564
+    },
+    {
+      "system": "jobbert_zh_1m/crf_v3_seed42",
+      "family": "encoder_crf",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.01809954751131222,
+      "typed_relaxed_f1": 0.04524886877828054,
+      "collapsed_exact_f1": 0.01809954751131222
+    },
+    {
+      "system": "jobbert_zh_1m/crf_v3_seed42",
+      "family": "encoder_crf",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 0,
+      "typed_exact_f1": 0.12870357956830675,
+      "typed_relaxed_f1": 0.339455691111409,
+      "collapsed_exact_f1": 0.14211020244000536
+    },
+    {
+      "system": "jobbert_zh_1m/crf_v3_seed42",
+      "family": "encoder_crf",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 0,
+      "typed_exact_f1": 0.13320555821753713,
+      "typed_relaxed_f1": 0.32582654528030663,
+      "collapsed_exact_f1": 0.14758025874460948
+    },
+    {
+      "system": "jobbert_1m_human380_v3merge_seed42",
+      "family": "encoder_crf",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.01809954751131222,
+      "typed_relaxed_f1": 0.054298642533936646,
+      "collapsed_exact_f1": 0.01809954751131222
+    },
+    {
+      "system": "jobbert_1m_human380_v3merge_seed42",
+      "family": "encoder_crf",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 0,
+      "typed_exact_f1": 0.12921499865120042,
+      "typed_relaxed_f1": 0.33881845157809554,
+      "collapsed_exact_f1": 0.14324251416239547
+    },
+    {
+      "system": "jobbert_1m_human380_v3merge_seed42",
+      "family": "encoder_crf",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 0,
+      "typed_exact_f1": 0.12319538017324351,
+      "typed_relaxed_f1": 0.3195380173243504,
+      "collapsed_exact_f1": 0.13282001924927817
+    },
+    {
+      "system": "jobbert_zh_listed_1m/crf_v3_seed42",
+      "family": "encoder_crf",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.015313935681470138,
+      "typed_relaxed_f1": 0.045941807044410414,
+      "collapsed_exact_f1": 0.015313935681470138
+    },
+    {
+      "system": "jobbert_zh_listed_1m/crf_v3_seed42",
+      "family": "encoder_crf",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 0,
+      "typed_exact_f1": 0.12821548821548823,
+      "typed_relaxed_f1": 0.33858585858585855,
+      "collapsed_exact_f1": 0.14383838383838382
+    },
+    {
+      "system": "jobbert_zh_listed_1m/crf_v3_seed42",
+      "family": "encoder_crf",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 0,
+      "typed_exact_f1": 0.12403846153846154,
+      "typed_relaxed_f1": 0.32403846153846155,
+      "collapsed_exact_f1": 0.13653846153846153
+    },
+    {
+      "system": "cn_roberta_wwm_crf/smoke_goldstyle_v3_seed42",
+      "family": "encoder_crf",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.011477761836441893,
+      "typed_relaxed_f1": 0.04878048780487805,
+      "collapsed_exact_f1": 0.011477761836441893
+    },
+    {
+      "system": "cn_roberta_wwm_crf/smoke_goldstyle_v3_seed42",
+      "family": "encoder_crf",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 0,
+      "typed_exact_f1": 0.12420550847457627,
+      "typed_relaxed_f1": 0.32812499999999994,
+      "collapsed_exact_f1": 0.13930084745762714
+    },
+    {
+      "system": "cn_roberta_wwm_crf/smoke_goldstyle_v3_seed42",
+      "family": "encoder_crf",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 0,
+      "typed_exact_f1": 0.1191043353978085,
+      "typed_relaxed_f1": 0.3182467841829443,
+      "collapsed_exact_f1": 0.13149118627918052
+    },
+    {
+      "system": "jobbert_zh_demo/crf_v3_seed42",
+      "family": "encoder_crf",
+      "domain": "事业单位招聘",
+      "n": 737,
+      "n_missing": 0,
+      "typed_exact_f1": 0.011782032400589101,
+      "typed_relaxed_f1": 0.047128129602356406,
+      "collapsed_exact_f1": 0.011782032400589101
+    },
+    {
+      "system": "jobbert_zh_demo/crf_v3_seed42",
+      "family": "encoder_crf",
+      "domain": "人工智能招聘",
+      "n": 1407,
+      "n_missing": 0,
+      "typed_exact_f1": 0.12411810817873006,
+      "typed_relaxed_f1": 0.33498824144238304,
+      "collapsed_exact_f1": 0.13953488372093023
+    },
+    {
+      "system": "jobbert_zh_demo/crf_v3_seed42",
+      "family": "encoder_crf",
+      "domain": "阿里云公开数据集",
+      "n": 457,
+      "n_missing": 0,
+      "typed_exact_f1": 0.11610486891385767,
+      "typed_relaxed_f1": 0.34269662921348315,
+      "collapsed_exact_f1": 0.12827715355805244
+    }
+  ]
+}
