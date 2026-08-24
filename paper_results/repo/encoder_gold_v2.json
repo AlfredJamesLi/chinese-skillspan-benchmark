@@ -1,5 +1,25 @@
 [
   {
+    "run": "jobbert_zh_3m_ckpt65000/seed123",
+    "status": "complete",
+    "test_typed_f1": 0.1295427901524033,
+    "test_collapsed_f1": 0.14361078546307152,
+    "dev_typed_f1": 0.32564162938544855,
+    "precision": 0.18370739817123857,
+    "recall": 0.10004526935264826,
+    "snapshot": "results_snapshots/jobbert_zh_3m_ckpt65000__seed123.json"
+  },
+  {
+    "run": "encoder_3seed/jobbert_zh_1m/seed_123",
+    "status": "complete",
+    "test_typed_f1": 0.12918987589172287,
+    "test_collapsed_f1": 0.14580279487931203,
+    "dev_typed_f1": 0.326361810232778,
+    "precision": 0.18330560177481975,
+    "recall": 0.09974347366832655,
+    "snapshot": "results_snapshots/encoder_3seed__jobbert_zh_1m__seed_123.json"
+  },
+  {
     "run": "jobbert_zh_1m/seed123",
     "status": "complete",
     "test_typed_f1": 0.12918987589172287,
