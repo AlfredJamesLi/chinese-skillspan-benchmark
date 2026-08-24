@@ -1,0 +1,33 @@
+{
+  "source": "DASFAA 2026 PDF Table 1",
+  "status": "complete",
+  "rows": {
+    "train": {
+      "n_sent": 17460,
+      "avg_len": 37.41,
+      "avg_4d": 2.354,
+      "avg_L": 0.019,
+      "avg_K": 0.639,
+      "avg_S": 1.183,
+      "avg_T": 0.513
+    },
+    "dev": {
+      "n_sent": 2143,
+      "avg_len": 40.37,
+      "avg_4d": 3.607,
+      "avg_L": 0.016,
+      "avg_K": 1.276,
+      "avg_S": 1.81,
+      "avg_T": 0.504
+    },
+    "test": {
+      "n_sent": 3237,
+      "avg_len": 43.85,
+      "avg_4d": 2.306,
+      "avg_L": 0.01,
+      "avg_K": 0.822,
+      "avg_S": 1.141,
+      "avg_T": 0.332
+    }
+  }
+}

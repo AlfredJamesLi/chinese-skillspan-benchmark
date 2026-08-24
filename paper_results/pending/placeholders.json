@@ -1,0 +1,119 @@
+{
+  "updated": "2026-08-24",
+  "note": "Slots reserved for experiments not yet complete. Metrics are null until filled.",
+  "items": [
+    {
+      "id": "table3_relaxed_f1",
+      "description": "Relaxed F1 (IoU≥0.5) official table",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "table3_concept_accuracy",
+      "description": "ESCO concept-ID / Concept Accuracy eval",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "table3_ood_industry",
+      "description": "Industry-OOD split eval",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "table3_ood_time",
+      "description": "Time-OOD split eval (needs year field)",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "table3_bert_crf",
+      "description": "BERT-CRF baseline row",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "table3_span_based",
+      "description": "Span-based baseline row",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "table3_xlmr_zeroshot",
+      "description": "XLM-R zero-shot row",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "table3_esco_lexicon",
+      "description": "ESCO lexicon baseline row",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "table3_3seed_average",
+      "description": "3-seed averaged encoder/LLM runs",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "table3_selfcheck_reflection",
+      "description": "SelfCheck + reflection recipe",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "claude_kimi_dump_fill",
+      "description": "Complete Claude/Kimi Gold v2 dumps (98/293 missing IDs)",
+      "status": "partial",
+      "metrics": {
+        "Claude_typed_f1": 0.257,
+        "Kimi_typed_f1": 0.1651,
+        "complete_rerun": null
+      }
+    },
+    {
+      "id": "iaa_human_300",
+      "description": "Human dual annotation IAA on 300-item train pack",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "gold_eval_v3_human",
+      "description": "Human adjudication on Gold eval v3 pilot-300",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "jobbert_zh_listed_3m",
+      "description": "Listed-company mix 3M DAPT + CRF",
+      "status": "skipped",
+      "reason": "listed-1M F1=0.1201 < baseline 0.1224; submit_3m=false",
+      "metrics": null
+    },
+    {
+      "id": "jobbert_listed_domain_filter",
+      "description": "Listed DAPT with domain filter tweak",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "hybrid_jobbert_qwen",
+      "description": "Hybrid JobBERT encoder + Qwen LLM",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "llm_knn_5shot",
+      "description": "KNN / 5-shot ICL on Qwen path",
+      "status": "pending",
+      "metrics": null
+    },
+    {
+      "id": "llm_rag",
+      "description": "RAG retrieval ablation on LLM path",
+      "status": "pending",
+      "metrics": null
+    }
+  ]
+}

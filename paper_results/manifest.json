@@ -1,0 +1,52 @@
+{
+  "updated": "2026-08-24",
+  "github_repo": "https://github.com/AlfredJamesLi/chinese-skillspan-benchmark",
+  "scorer": "cnss-lskt-1.2.0",
+  "gold_eval_primary": "data/gold_canonical_v2.jsonl",
+  "sections": {
+    "paper_pdf_tables": {
+      "table1": {
+        "file": "paper/table1_corpus.json",
+        "status": "complete"
+      },
+      "table2": {
+        "file": "paper/table2_iaa.json",
+        "status": "complete_paper_only"
+      },
+      "table3": {
+        "file": "paper/table3_strict_sf1.json",
+        "status": "complete"
+      }
+    },
+    "repo_rescores": {
+      "table1_recompute": {
+        "file": "repo/table1_recompute.json",
+        "status": "complete"
+      },
+      "table3_gold_v2_summary": {
+        "file": "repo/table3_gold_v2_summary.json",
+        "status": "complete"
+      },
+      "table3_gold_v2_csv": {
+        "file": "repo/table3_gold_v2_unique_view.csv",
+        "status": "complete"
+      },
+      "encoder_gold_v2": {
+        "file": "repo/encoder_gold_v2.json",
+        "status": "complete"
+      }
+    },
+    "pending": {
+      "file": "pending/placeholders.json",
+      "status": "open"
+    },
+    "raw_snapshots": {
+      "dir": "../results_snapshots/",
+      "status": "complete"
+    },
+    "detailed_reports": {
+      "dir": "../reports/",
+      "status": "complete"
+    }
+  }
+}

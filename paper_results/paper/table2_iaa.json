@@ -1,0 +1,23 @@
+{
+  "source": "DASFAA 2026 PDF Table 2 (n=100 human IAA)",
+  "status": "complete_paper_only",
+  "note": "No IAA script or 100-sample subset in repo.",
+  "rows": [
+    {
+      "metric": "strict_exact_span",
+      "precision": 0.707,
+      "recall": 0.426,
+      "f1": 0.532
+    },
+    {
+      "metric": "relaxed_overlap",
+      "precision": 0.829,
+      "recall": 0.5,
+      "f1": 0.624
+    },
+    {
+      "metric": "token_cohens_kappa",
+      "kappa": 0.554
+    }
+  ]
+}

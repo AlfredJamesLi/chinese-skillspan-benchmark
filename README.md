@@ -12,7 +12,7 @@
 | `pdf/` | **把最新稿 PDF 放到这里**（文件名建议带日期，如 `draft_2026-08-22.pdf`） |
 | `notes/` | 从 PDF / 实验里抽出的主张、待填数字、冲突表 |
 | `tex/` | 服务器上的草稿 `.tex`（尚未从 Overleaf 同步时用） |
-| `tables/` | 表源（`.tex` / `.csv`） |
+| `tables/` | 表源（`.tex` / `.csv`）；汇总见 `paper_results/` |
 | `figs/` | 图 |
 | `HANDOFF.md` | 本窗口完整交接（先读这个） |
 | `overleaf_cursor_bundle/` | 拷到本机 Overleaf 仓库的规则 / skill / 交接 |
@@ -27,6 +27,7 @@
 
 本目录已初始化为独立 git 仓库（代码 + 复现文档 + 核心数据，不含 40GB+ 预训练原始文件）。
 
+- 结果总表：`paper_results/`（PDF 表 + Gold v2 重打分 + encoder 榜；未完成实验见 `pending/placeholders.json`）
 - 复现说明：`REPRO_GITHUB.md`
 - 大文件清单：`data/LARGE_DATA_MANIFEST.md`
 - **推送到 GitHub（需一次性登录）：`PUSH_GITHUB.md`**
