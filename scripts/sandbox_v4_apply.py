@@ -48,9 +48,7 @@ def bio_from_token_spans(n: int, spans: list[list]) -> list[str]:
     tags = ["O"] * n
     for sp in spans:
         a, b, typ = int(sp[0]), int(sp[1]), str(sp[2]).upper()[:1]
-        typ = TWO_WAY.get(typ, typ)
-        if typ not in {"K", "S"}:
-            typ = "S"
+        typ = typ if typ in {"L", "K", "S", "T"} else "S"
         if a < 0 or b > n or a >= b:
             continue
         tags[a] = f"B-{typ}"
@@ -92,8 +90,7 @@ def to_doccano(rec: dict, tags: list[str]) -> dict:
                 j += 1
             cs, _ = char_of[i]
             _, ce = char_of[j - 1]
-            name = "KNOWLEDGE" if lab == "K" else "SKILL"
-            labels.append([cs, ce, name])
+            labels.append([cs, ce, lab if lab in {"L", "K", "S", "T"} else "S"])
             i = j
         else:
             i += 1
@@ -104,7 +101,7 @@ def to_doccano(rec: dict, tags: list[str]) -> dict:
             "id": rec["id"],
             "global_id": rec.get("global_id"),
             "source_domain": rec.get("source_domain"),
-            "sandbox": "v4_2way",
+            "sandbox": "v4_lskt",
         },
     }
 
@@ -132,6 +129,17 @@ def export_unlabeled(v2: dict[str, dict], ids: list[str]) -> list[dict]:
     return rows
 
 
+def norm_lskt(typ: str) -> str:
+    u = str(typ or "S").strip().upper()
+    if u in {"L", "LANGUAGE"}:
+        return "L"
+    if u in {"K", "KNOWLEDGE"}:
+        return "K"
+    if u in {"T", "TRAIT", "TRANSVERSAL"}:
+        return "T"
+    return "S"
+
+
 def apply_llm(llm_path: Path, unlabeled: list[dict]) -> tuple[list[dict], dict]:
     items = {r["id"]: r for r in unlabeled}
     raw = json.loads(llm_path.read_text(encoding="utf-8"))
@@ -149,11 +157,7 @@ def apply_llm(llm_path: Path, unlabeled: list[dict]) -> tuple[list[dict], dict]:
         aligned = []
         for sp in rec.get("spans") or []:
             text = sp.get("text") if isinstance(sp, dict) else ""
-            typ = str((sp.get("type") if isinstance(sp, dict) else "S") or "S").upper()
-            if typ in {"KNOWLEDGE", "K", "L"}:
-                typ = "K"
-            else:
-                typ = "S"
+            typ = norm_lskt(sp.get("type") if isinstance(sp, dict) else "S")
             hit = find_span(toks, str(text or ""))
             if hit is None:
                 n_miss += 1
@@ -223,6 +227,11 @@ def cmd_export() -> None:
         docc.append(to_doccano(row, tags))
     write_jsonl(OUT / "seed_from_v3_2way.jsonl", seed)
     write_jsonl(OUT / "doccano_seed_v3_2way.jsonl", docc)
+    lskt_docc = []
+    for r in v3_rows:
+        tags = list(r.get("list_of_selection_bio4") or [])
+        lskt_docc.append(to_doccano(r, tags))
+    write_jsonl(OUT / "doccano_seed_v3_lskt.jsonl", lskt_docc)
 
     v2_300 = [v2[i] for i in ids]
     write_jsonl(OUT / "gold_v2_pilot300_subset.jsonl", v2_300)
