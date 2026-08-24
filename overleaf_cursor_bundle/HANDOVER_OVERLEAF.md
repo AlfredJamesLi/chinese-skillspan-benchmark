@@ -3,7 +3,7 @@
 本文件是本机 Overleaf 编辑窗口的背景。先读完再改 tex。  
 日期：2026-08-24。数字以 `.cursor/skills/cnss-overleaf/confirmed-results.md` 为准（已从服务器同步）。
 
-**本窗口：** 本机 Overleaf Git（路径由用户填入后锁定）
+**本窗口：** 本机 Overleaf Git（项目 https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4 ；`git.overleaf.com/68fe17a53e53a7f800e4f2b4`）
 
 **服务器论文窗口（本窗口不代替实验）：**  
 `/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/`  

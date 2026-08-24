@@ -1,14 +1,20 @@
-# Codex prompt — Chinese-SkillSpan Overleaf (2026-08-24)
+# Codex / local Cursor prompt — Chinese-SkillSpan Overleaf (2026-08-24)
 
-Paste the block below into Codex in the **Overleaf Git clone** of the Chinese-SkillSpan paper (not IEEE Access / SRICL).
+**Overleaf project (cannot be edited from the GPU server; no Overleaf login here):**  
+https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4  
+Git: `https://git.overleaf.com/68fe17a53e53a7f800e4f2b4`
 
-Copy the sibling files from `overleaf_cursor_bundle/` into the Overleaf repo root first (`HANDOVER_OVERLEAF.md`, `AGENTS.md`, `.cursor/`, `tables/`, this prompt).
+Paste the block below into **Codex** or a **local Cursor** chat whose workspace is the Overleaf Git clone (not IEEE Access / SRICL).
+
+First copy sibling files from `overleaf_cursor_bundle/` into the Overleaf repo **root** (`HANDOVER_OVERLEAF.md`, `AGENTS.md`, `.cursor/`, `tables/`, this prompt).
 
 ---
 
 ## PROMPT (copy from here)
 
 You are editing the **Chinese-SkillSpan / Chinese Skill Benchmark** Overleaf paper (DASFAA 2026 dataset paper; LSKT span extraction on Chinese job ads). This is **not** the IEEE Access / SRICL method paper (arXiv 2604.21525). Do not import SkillSpan/Kompetencer/Green/FIJO/Sayfullina/Gnehm tables, SRICL, B8, or A1–A4.
+
+Overleaf project: https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4
 
 ### Start
 1. `git status`; `git pull --ff-only`; confirm this is the Chinese-SkillSpan Overleaf clone.
@@ -67,6 +73,8 @@ One sentence in the discussion: encoder collapse on 事业单位 (~0.015) vs Cha
 **F. Add encoder ranking table** (Gold v2 typed exact, seed 42)
 
 Best: JobBERT 3M ckpt65000 **0.1233**; JobBERT 1M baseline **0.1224**; listed mix 1M **0.1201** (Δ −0.0023, do not scale listed to 3M); RoBERTa-wwm v3 **0.1156**.
+
+CSV copies for `\input` / booktabs conversion are in `tables/` of this repo.
 
 ### Abstract / intro / conclusion
 Patch only if they currently claim Concept Accuracy, Time-OOD, encoder SOTA, or ESCO ID linking. Keep ChatGPT as the strongest complete LLM under Gold v2. Keep encoder as a Chinese DAPT+CRF baseline.

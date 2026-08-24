@@ -85,7 +85,8 @@ Encoder 在**事业单位**上接近失败（~0.015），ChatGPT 在该域最强
 | XLM-R / ESCO lexicon / span baseline | 待填（本地无 XLM-R 权重） |
 | human IAA-300 | 待填 |
 | listed mix **3M** DAPT | 已跳过 |
-| domain-filter DAPT / Hybrid / RAG | 待填 |
+| domain-mix DAPT 1M（AI 36.8% / 应届生 29.0% / 阿里云 22.0% / 事业单位 12.2%） | **已提交**（语料 100 万句；SLURM 50649 排队 + 本地 GPU waiter；**尚无 F1**） |
+| Hybrid / RAG | 待填 |
 
 详情 → [`paper_results/pending/placeholders.json`](paper_results/pending/placeholders.json)
 

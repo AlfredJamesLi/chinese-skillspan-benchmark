@@ -13,6 +13,8 @@ Copy-Item "$src\HANDOVER_OVERLEAF.md" "$dst\HANDOVER_OVERLEAF.md" -Force
 Copy-Item "$src\AGENTS.md" "$dst\AGENTS.md" -Force
 Copy-Item "$src\CODEX_PROMPT.md" "$dst\CODEX_PROMPT.md" -Force
 Copy-Item "$src\tables" "$dst\tables" -Recurse -Force
+Copy-Item "$src\.cursor" "$dst\.cursor" -Recurse -Force
+Copy-Item "$src\CHAT_SEED.txt" "$dst\CHAT_SEED.txt" -Force
 ```
 
 服务器路径：
