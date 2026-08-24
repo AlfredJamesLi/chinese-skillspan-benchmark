@@ -40,6 +40,16 @@
     "snapshot": "results_snapshots/jobbert_zh_3m_ckpt65000__seed123.json"
   },
   {
+    "run": "jobbert_zh_domain_1m/crf_v3_seed2026",
+    "status": "complete",
+    "test_typed_f1": 0.12940372792036692,
+    "test_collapsed_f1": 0.1424807260661657,
+    "dev_typed_f1": 0.31538281432919685,
+    "precision": 0.18314917127071823,
+    "recall": 0.10004526935264826,
+    "snapshot": "results_snapshots/jobbert_zh_domain_1m__crf_v3_seed2026.json"
+  },
+  {
     "run": "encoder_3seed/jobbert_zh_1m/seed_123",
     "status": "complete",
     "test_typed_f1": 0.12918987589172287,
@@ -68,6 +78,16 @@
     "precision": 0.18742724097788127,
     "recall": 0.09717821035159198,
     "snapshot": "results_snapshots/jobbert_zh_domain_1m__crf_v3_seed123.json"
+  },
+  {
+    "run": "encoder_3seed/jobbert_zh_3m_ckpt65000/seed_2026",
+    "status": "complete",
+    "test_typed_f1": 0.1246262178065014,
+    "test_collapsed_f1": 0.13562264878942798,
+    "dev_typed_f1": 0.32293111419325016,
+    "precision": 0.17272727272727273,
+    "recall": 0.09748000603591368,
+    "snapshot": "results_snapshots/encoder_3seed__jobbert_zh_3m_ckpt65000__seed_2026.json"
   },
   {
     "run": "jobbert_zh_3m_ckpt65000/seed2026",
