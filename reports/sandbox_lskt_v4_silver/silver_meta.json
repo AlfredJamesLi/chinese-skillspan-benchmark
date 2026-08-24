@@ -1,0 +1,163 @@
+{
+  "hard_cap_tokens": 8,
+  "gold_v2_untouched": true,
+  "train_json_untouched": true,
+  "label_scheme": "LSKT",
+  "how": "rule_v4 on corpus silver BIO (empty lock + cap 8). Not human Gold. Not Codex dump.",
+  "train": {
+    "skipped_existing": true,
+    "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/train_lskt_v4_silver.jsonl"
+  },
+  "dev": {
+    "skipped_existing": true,
+    "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/dev_lskt_v4_silver.jsonl"
+  },
+  "test": {
+    "n": 3237,
+    "n_empty": 1469,
+    "n_with_span": 1768,
+    "n_forced_empty": 485,
+    "source": {
+      "rule_v4": 2752,
+      "empty_welfare": 29,
+      "empty_process": 405,
+      "empty_shiye_process": 51
+    },
+    "type_counts": {
+      "T": 714,
+      "S": 2128,
+      "K": 1451,
+      "L": 33
+    },
+    "span_len": {
+      "n": 4326,
+      "mean": 5.390429958391123,
+      "median": 5.0,
+      "p10": 3.0,
+      "p25": 3.0,
+      "p50": 5.0,
+      "p75": 8.0,
+      "p90": 8.0,
+      "p95": 8.0,
+      "min": 2,
+      "max": 8,
+      "share_4_12": 0.7309292649098474,
+      "share_gt14": 0.0
+    }
+  },
+  "test_g2ids": {
+    "n": 2601,
+    "n_gold_v2": 2601
+  },
+  "train_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/train_lskt_v4_silver.jsonl",
+  "dev_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/dev_lskt_v4_silver.jsonl",
+  "test_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_silver.jsonl",
+  "test_g2ids_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_silver_g2ids.jsonl",
+  "examples": [
+    {
+      "id": "1801-s0000",
+      "type": "T",
+      "len": 2,
+      "text": "沟通",
+      "src": null
+    },
+    {
+      "id": "1801-s0000",
+      "type": "T",
+      "len": 3,
+      "text": "研发以",
+      "src": null
+    },
+    {
+      "id": "1801-s0000",
+      "type": "S",
+      "len": 8,
+      "text": "技术抓总等相关工",
+      "src": null
+    },
+    {
+      "id": "1801-s0001",
+      "type": "S",
+      "len": 8,
+      "text": "无人机自动控制系",
+      "src": null
+    },
+    {
+      "id": "1801-s0002",
+      "type": "K",
+      "len": 5,
+      "text": "自动驾驶仪",
+      "src": null
+    },
+    {
+      "id": "1801-s0002",
+      "type": "K",
+      "len": 2,
+      "text": "飞控",
+      "src": null
+    },
+    {
+      "id": "1801-s0002",
+      "type": "S",
+      "len": 5,
+      "text": "测试与联调",
+      "src": null
+    },
+    {
+      "id": "1801-s0003",
+      "type": "K",
+      "len": 5,
+      "text": "无人机航电",
+      "src": null
+    },
+    {
+      "id": "1801-s0003",
+      "type": "K",
+      "len": 2,
+      "text": "载荷",
+      "src": null
+    },
+    {
+      "id": "1801-s0004",
+      "type": "S",
+      "len": 8,
+      "text": "技术项目开发策划",
+      "src": null
+    },
+    {
+      "id": "1801-s0004",
+      "type": "S",
+      "len": 2,
+      "text": "论证",
+      "src": null
+    },
+    {
+      "id": "1801-s0004",
+      "type": "S",
+      "len": 5,
+      "text": "技术设..",
+      "src": null
+    },
+    {
+      "id": "1802-s0000",
+      "type": "S",
+      "len": 8,
+      "text": "监控和管理当前服",
+      "src": null
+    },
+    {
+      "id": "1802-s0000",
+      "type": "K",
+      "len": 4,
+      "text": "存储和备",
+      "src": null
+    },
+    {
+      "id": "1802-s0001",
+      "type": "S",
+      "len": 8,
+      "text": "分析和解决与服务",
+      "src": null
+    }
+  ]
+}
