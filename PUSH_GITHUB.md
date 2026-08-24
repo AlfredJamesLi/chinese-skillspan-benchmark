@@ -1,0 +1,78 @@
+# 推送到 GitHub 私有仓库（一次性设置）
+
+本地已准备好 git 仓库（`main` 分支，commit `6cf424d`）。
+**尚未推送到 GitHub**——需要你在本机完成登录（约 2 分钟）。
+
+## 已包含内容（约 16MB 压缩包 / 57MB 工作区）
+
+- 代码：`scripts/`、`scorer/`
+- 复现文档：`REPRO_GITHUB.md`、`HANDOFF.md`、`notes/`
+- 核心数据：Gold v2、goldstyle train/dev、corpus_splits（train/dev/test）
+- 结果快照：`results_snapshots/`（各次 run_summary）
+- 大文件清单：`data/LARGE_DATA_MANIFEST.md`
+
+## 未包含（太大，见 LARGE_DATA_MANIFEST.md）
+
+- `output/` 模型权重（53GB）
+- `chineseskillspan-jobert-pretrain/` 原始 CSV/RAR（40GB）
+- `jobbert_*_sents.jsonl` DAPT 语料（可用脚本重建）
+
+## 步骤 1：登录 GitHub CLI
+
+在**实验室服务器**或**本机**（若已 clone）执行：
+
+```bash
+export PATH="$HOME/.local/bin:$PATH"   # gh 已装在此路径
+gh auth login
+# 选：GitHub.com → HTTPS → Login with a web browser
+```
+
+## 步骤 2：创建私有仓库并推送
+
+```bash
+cd /home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper
+
+gh repo create chinese-skillspan-benchmark \
+  --private \
+  --source=. \
+  --remote=origin \
+  --description "Chinese-SkillSpan benchmark: code, repro docs, core data (private backup)" \
+  --push
+```
+
+若仓库名已被占用，改成例如 `chinese-skillspan-benchmark-private`。
+
+## 步骤 3：验证
+
+```bash
+gh repo view --web
+git remote -v
+git log -1 --oneline
+```
+
+## 离线备份包（无需 GitHub 也可用）
+
+已生成单文件 bundle，可拷到 U 盘 / 网盘：
+
+```bash
+# 文件位置
+Chinese_skill_benchmark_Paper/chinese-skillspan-backup-main.bundle   # ~16MB
+
+# 在另一台机器恢复
+git clone chinese-skillspan-backup-main.bundle chinese-skillspan-benchmark
+```
+
+## 安全提醒
+
+- 父仓库的 `api_key.py` **未**纳入本备份（已在 `.gitignore` 排除）。
+- 推送前可再确认：`git log --stat | head` 与 `git grep -i sk-`（应无输出）。
+
+## 后续更新
+
+```bash
+cd Chinese_skill_benchmark_Paper
+git add -A
+git status   # 确认无 output/ 大文件
+git commit -m "Update backup"
+git push origin main
+```

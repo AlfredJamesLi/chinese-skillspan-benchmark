@@ -23,6 +23,15 @@
 2. 让助手对照 PDF 填写 `notes/confirmed-results.md` 和 `overleaf_cursor_bundle/.cursor/skills/cnss-overleaf/confirmed-results.md`。
 3. 再改 `tex/` 或准备 Overleaf 同步包。未写入「已确认」的数字不要写进论文。
 
+## GitHub 私有备份
+
+本目录已初始化为独立 git 仓库（代码 + 复现文档 + 核心数据，不含 40GB+ 预训练原始文件）。
+
+- 复现说明：`REPRO_GITHUB.md`
+- 大文件清单：`data/LARGE_DATA_MANIFEST.md`
+- **推送到 GitHub（需一次性登录）：`PUSH_GITHUB.md`**
+- 离线包：`chinese-skillspan-backup-main.bundle`（~16MB）
+
 实验数据与流水线仍在父仓库（只读备查，不要当成本目录的一部分去改 Access 文稿）：
 
 - 数据：`chinese_skillspan_preprocessing/`
