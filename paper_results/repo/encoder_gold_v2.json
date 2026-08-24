@@ -60,6 +60,16 @@
     "snapshot": "results_snapshots/jobbert_zh_1m__seed123.json"
   },
   {
+    "run": "jobbert_zh_domain_1m/crf_v3_seed123",
+    "status": "complete",
+    "test_typed_f1": 0.1279936400675743,
+    "test_collapsed_f1": 0.14190599224883235,
+    "dev_typed_f1": 0.322234156820623,
+    "precision": 0.18742724097788127,
+    "recall": 0.09717821035159198,
+    "snapshot": "results_snapshots/jobbert_zh_domain_1m__crf_v3_seed123.json"
+  },
+  {
     "run": "jobbert_zh_domain_1m/crf_v3_seed42",
     "status": "complete",
     "test_typed_f1": 0.12340510366826155,
