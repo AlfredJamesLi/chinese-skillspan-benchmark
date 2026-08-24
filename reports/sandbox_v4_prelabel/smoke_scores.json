@@ -1,0 +1,35 @@
+[
+  {
+    "name": "JobBERT-zh_1M_s2026 vs Gold-v2 300-subset",
+    "alignment_ok": true,
+    "n_gold": 300,
+    "n_missing": 0,
+    "typed_p": 0.21283783783783783,
+    "typed_r": 0.09319526627218935,
+    "typed_f1": 0.12962962962962965,
+    "collapsed_f1": 0.13580246913580246,
+    "error": null
+  },
+  {
+    "name": "JobBERT-zh_1M_s2026 vs eval-v3 LLM-adjudicated 300",
+    "alignment_ok": true,
+    "n_gold": 300,
+    "n_missing": 0,
+    "typed_p": 0.12162162162162163,
+    "typed_r": 0.07302231237322515,
+    "typed_f1": 0.09125475285171103,
+    "collapsed_f1": 0.14448669201520914,
+    "error": null
+  },
+  {
+    "name": "JobBERT-zh_1M_s2026 vs v3\u21922way seed 300",
+    "alignment_ok": true,
+    "n_gold": 300,
+    "n_missing": 0,
+    "typed_p": 0.09121621621621621,
+    "typed_r": 0.08490566037735849,
+    "typed_f1": 0.08794788273615635,
+    "collapsed_f1": 0.1726384364820847,
+    "error": null
+  }
+]
