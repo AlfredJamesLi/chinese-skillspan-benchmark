@@ -14,9 +14,20 @@
 | Codex 银标（对照，不是 SOP 金标） | `data/test_lskt_v4_silver_g2ids.jsonl` | 切法更空/更碎 |
 | 豆包 / Kimi 银标 | `data/test_lskt_v4_doubao_g2ids.jsonl`、`data/test_lskt_v4_kimi_g2ids.jsonl` | 分歧分析，多数决不当 Gold |
 
-JobBERT-zh **1M** CRF：`output/jobbert_zh_1m/crf_lskt_v4_silver_seed42/`（不要覆盖）。对规则测试金标 sandbox typed exact **0.3170**、typed IoU≥0.5 **0.5663**。
+JobBERT-zh **1M** CRF：`output/jobbert_zh_1m/crf_lskt_v4_silver_seed42/`（不要覆盖）。同一份预测、换测试金标（typed exact / IoU≥0.5 / 差距）：
 
-3M+v4 CRF 另开目录：`output/jobbert_zh_3m/crf_lskt_v4_silver_seed42/`。
+| 测试金标 | exact | partial | 差距 |
+|---|---:|---:|---:|
+| 规则 v4 全量 2601（train/test 同 SOP） | 0.3170 | 0.5663 | +0.249 |
+| 模拟人工 980 | 0.3229 | 0.5811 | +0.258 |
+| 补丁 2601（980 换 SOP，其余仍 Codex） | 0.2624 | 0.4902 | +0.228 |
+| Codex 银标 2601 | 0.1246 | 0.2837 | +0.159 |
+
+现成 3M goldstyle CRF（**未**用 v4 训练）对规则 v4 2601：exact **0.2178** / partial **0.5010**。对照：`existing_encoder_on_sop/`。
+
+3M+v4 CRF 另开目录：`output/jobbert_zh_3m/crf_lskt_v4_silver_seed42/`（训完才有同协议数字）。
+
+**GitHub 备份 ≠ 论文主表。** 上表可进私有仓库；人工 SOP 金标完成并重打分后，才能考虑写入 `notes/confirmed-results.md`。0.32 是规则银标自洽，不是人工 Gold。
 
 ## SHA256（推送时）
 

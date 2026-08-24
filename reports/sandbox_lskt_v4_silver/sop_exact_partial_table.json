@@ -1,0 +1,35 @@
+{
+  "not_for_confirmed_results": true,
+  "gold_v2_untouched": true,
+  "pred": "output/jobbert_zh_1m/crf_lskt_v4_silver_seed42/test_pred.jsonl",
+  "metric": "typed micro F1; partial = IoU>=0.5",
+  "note": "Sandbox. Same CRF pred. Becomes a paper-table candidate only after human SOP gold replaces these test files and is re-scored.",
+  "rows": [
+    {
+      "name": "sop_rule_v4_2601",
+      "typed_exact_f1": 0.3169723585636786,
+      "typed_relaxed_f1": 0.5662619478171015
+    },
+    {
+      "name": "simhuman_980",
+      "typed_exact_f1": 0.32287681713848504,
+      "typed_relaxed_f1": 0.5811017597551644
+    },
+    {
+      "name": "patched_2601_980_sop_rest_codex",
+      "gold": "data/test_lskt_v4_simhuman_patched_g2ids.jsonl",
+      "typed_exact_f1": 0.2623953210155523,
+      "typed_relaxed_f1": 0.4902299614515486
+    },
+    {
+      "name": "codex_2601",
+      "typed_exact_f1": 0.12461752433936023,
+      "typed_relaxed_f1": 0.28372739916550765
+    },
+    {
+      "name": "gold_v2_official",
+      "typed_exact_f1": 0.10792778649921507,
+      "typed_relaxed_f1": 0.33202511773940346
+    }
+  ]
+}

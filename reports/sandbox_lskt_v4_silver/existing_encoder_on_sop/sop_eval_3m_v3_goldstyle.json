@@ -1,0 +1,59 @@
+{
+  "pred": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/jobbert_zh_3m/crf_v3_seed42/test_pred.jsonl",
+  "gold_v2_untouched": true,
+  "not_for_confirmed_results": true,
+  "scores": [
+    {
+      "name": "sop_rule_v4_2601",
+      "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_rule_g2ids.jsonl",
+      "alignment_ok": true,
+      "n_gold": 2601,
+      "typed_exact_f1": 0.2163302994327925,
+      "typed_relaxed_f1": 0.49940641076375136,
+      "gap_relaxed_minus_exact": 0.2830761113309589,
+      "typed_exact_p": 0.2408930669800235,
+      "typed_exact_r": 0.19631314340435718,
+      "collapsed_exact_f1": 0.23057644110275688,
+      "collapsed_relaxed_f1": 0.5519060809919536
+    },
+    {
+      "name": "simhuman_980",
+      "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_simhuman980.jsonl",
+      "alignment_ok": true,
+      "n_gold": 980,
+      "typed_exact_f1": 0.21746741879011866,
+      "typed_relaxed_f1": 0.5135187706671853,
+      "gap_relaxed_minus_exact": 0.29605135187706666,
+      "typed_exact_p": 0.24115616911130286,
+      "typed_exact_r": 0.19801629472192703,
+      "collapsed_exact_f1": 0.23263956428710367,
+      "collapsed_relaxed_f1": 0.57187317642482
+    },
+    {
+      "name": "codex_2601",
+      "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_silver_g2ids.jsonl",
+      "alignment_ok": true,
+      "n_gold": 2601,
+      "typed_exact_f1": 0.12861004410300184,
+      "typed_relaxed_f1": 0.2381562099871959,
+      "gap_relaxed_minus_exact": 0.10954616588419405,
+      "typed_exact_p": 0.13278495887191538,
+      "typed_exact_r": 0.12468965517241379,
+      "collapsed_exact_f1": 0.14425949637217242,
+      "collapsed_relaxed_f1": 0.2785602503912363
+    },
+    {
+      "name": "gold_v2_official",
+      "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/gold_canonical_v2.jsonl",
+      "alignment_ok": true,
+      "n_gold": 2601,
+      "typed_exact_f1": 0.11703718472734523,
+      "typed_relaxed_f1": 0.30405742199182534,
+      "gap_relaxed_minus_exact": 0.1870202372644801,
+      "typed_exact_p": 0.17244418331374853,
+      "typed_exact_r": 0.08857703334842312,
+      "collapsed_exact_f1": 0.12939886352307844,
+      "collapsed_relaxed_f1": 0.35111155418203566
+    }
+  ]
+}
