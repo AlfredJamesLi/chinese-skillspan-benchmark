@@ -1,0 +1,5192 @@
+[
+  {
+    "id": "1004-s0009",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 4、掌握图像滤波、轮廓提取、边缘检测、形态学处理、图像分割等各类图像处理理论；",
+    "spans": [
+      {
+        "text": "掌握图像滤波、轮廓提取、边缘检测、形态学处理、图像分割等各类图像处理理论",
+        "type": "K"
+      }
+    ],
+    "comment": "图像处理理论属于领域知识",
+    "status": "locked"
+  },
+  {
+    "id": "1014-s0083",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "比如很多新产品开发与推广，直销产品等，前期根���就赚不了钱。",
+    "spans": [],
+    "comment": "业务情况描述，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "1019-s0004",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 岗位要求： 1. 本科及以上学历，计算机或相关专业，JAVA基础扎实，熟悉io、多线程、集合等基础框架，熟悉分布式、缓存、消息等机制；",
+    "spans": [
+      {
+        "text": "本科及以上学历",
+        "type": "K"
+      },
+      {
+        "text": "计算机或相关专业",
+        "type": "K"
+      },
+      {
+        "text": "JAVA基础扎实",
+        "type": "K"
+      },
+      {
+        "text": "熟悉io、多线程、集合等基础框架",
+        "type": "S"
+      },
+      {
+        "text": "熟悉分布式、缓存、消息等机制",
+        "type": "S"
+      }
+    ],
+    "comment": "学历专业属于K，框架机制熟悉属于实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1042-s0005",
+    "role": "lock80",
+    "decision": "edit",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2、2年以上市场营销经验，能够熟练编写投标书等商务文案，热爱文案编写工作，有虚拟仿真、虚拟现实、游戏动画、新媒体等相关领域工作经验者优先。",
+    "spans": [
+      {
+        "text": "市场营销经验",
+        "type": "S"
+      },
+      {
+        "text": "能够熟练编写投标书等商务文案",
+        "type": "S"
+      },
+      {
+        "text": "热爱文案编写工作",
+        "type": "T"
+      },
+      {
+        "text": "有虚拟仿真、虚拟现实、游戏动画、新媒体等相关领域工作经验",
+        "type": "S"
+      }
+    ],
+    "comment": "年限套话去掉，只留市场营销经验",
+    "status": "locked"
+  },
+  {
+    "id": "1060-s0013",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "7、具有较强的架构能力，具有分布式计算、实时计算、数据仓库、数据挖掘系统的架构经历优先；",
+    "spans": [
+      {
+        "text": "具有较强的架构能力",
+        "type": "S"
+      },
+      {
+        "text": "具有分布式计算、实时计算、数据仓库、数据挖掘系统的架构经历",
+        "type": "S"
+      }
+    ],
+    "comment": "架构能力、架构经历属于可执行技能工作经验S",
+    "status": "locked"
+  },
+  {
+    "id": "1102-s0000",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "1.从项目启动到最终发布，为开发团队提供架构设计指导2.与业务用于和跨职能团队合作，了解敏捷环境中的要求和协作解决方案3.为团队成员提供技术指导，包括技术设计咨询，代码审查和质量保证4.确保代码可维护，可扩展，易于使用，并在设备和浏览器之间实现最佳性能5.负责项目生命周期中的高水平技术设计;",
+    "spans": [
+      {
+        "text": "为开发团队提供架构设计指导",
+        "type": "S"
+      },
+      {
+        "text": "与业务用于和跨职能团队合作，了解敏捷环境中的要求和协作解决方案",
+        "type": "S"
+      },
+      {
+        "text": "为团队成员提供技术指导，包括技术设计咨询，代码审查和质量保证",
+        "type": "S"
+      },
+      {
+        "text": "确保代码可维护，可扩展，易于使用，并在设备和浏览器之间实现最佳性能",
+        "type": "S"
+      },
+      {
+        "text": "负责项目生命周期中的高水平技术设计",
+        "type": "S"
+      }
+    ],
+    "comment": "均为岗位需要执行的技术工作技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1153-s0013",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "5.对外提供产品文档及必要的培训。",
+    "spans": [
+      {
+        "text": "对外提供产品文档及必要的培训",
+        "type": "S"
+      }
+    ],
+    "comment": "输出文档、开展培训属于执行技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1153-s0022",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "【任职要求】1.数学、统计或计算机或相关专业，本科以上学历。",
+    "spans": [
+      {
+        "text": "数学、统计或计算机或相关专业",
+        "type": "K"
+      },
+      {
+        "text": "本科以上学历",
+        "type": "K"
+      }
+    ],
+    "comment": "专业、学历属于知识学历K",
+    "status": "locked"
+  },
+  {
+    "id": "1153-s0025",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "3.熟悉Spring、SpringMVC、MyBatis、Dubbo等框架或者ASP.NET MVC、Surging微服务等框架；",
+    "spans": [
+      {
+        "text": "熟悉Spring、SpringMVC、MyBatis、Dubbo等框架或者ASP.NET MVC、Surging微服务等框架",
+        "type": "S"
+      }
+    ],
+    "comment": "熟悉技术框架属于实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1192-s0005",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "公司位于南京河西新城，依托于虚拟地理环境教育部重点实验室，属于新城科技园深孵企业。",
+    "spans": [],
+    "comment": "企业背景介绍，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "1251-s0005",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": ", , 6、拟制产品电子设计方案。",
+    "spans": [
+      {
+        "text": "拟制产品电子设计方案",
+        "type": "S"
+      }
+    ],
+    "comment": "拟制设计方案属于执行技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1266-s0003",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 4、管理及优化相关的、精准的关键词列表，并进行合乎逻辑的分组；",
+    "spans": [
+      {
+        "text": "管理及优化相关的、精准的关键词列表，并进行合乎逻辑的分组",
+        "type": "S"
+      }
+    ],
+    "comment": "关键词管理优化分组属于实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1292-s0002",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2、对信用评级，征信理论和体系、风险控制、贷前授信、贷中监控、贷后催缴等有独立认识。",
+    "spans": [
+      {
+        "text": "对信用评级，征信理论和体系、风险控制、贷前授信、贷中监控、贷后催缴等有独立认识",
+        "type": "K"
+      }
+    ],
+    "comment": "业务领域理论认知属于领域知识K",
+    "status": "locked"
+  },
+  {
+    "id": "1293-s0000",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "[工作职责： 1. 对接台湾研发团队，负责汽车辅助驾驶类AI产品的需求收集、开发管理工作；",
+    "spans": [
+      {
+        "text": "对接台湾研发团队，负责汽车辅助驾驶类AI产品的需求收集、开发管理工作",
+        "type": "S"
+      }
+    ],
+    "comment": "需求收集、开发管理属于岗位执行技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1305-s0008",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "掌握NodeJS/Python/Ruby等动态语言者优先;",
+    "spans": [
+      {
+        "text": "掌握NodeJS/Python/Ruby等动态语言",
+        "type": "S"
+      }
+    ],
+    "comment": "掌握编程语言属于实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1328-s0014",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "公司成长迅速，晋升空间大。",
+    "spans": [],
+    "comment": "公司发展情况描述，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "1336-s0028",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "（我们更加看重你的能力！",
+    "spans": [],
+    "comment": "招聘宣传话术，无具体能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "1338-s0012",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 四、其他福利 股票期权（员工持股计划） 晋升空间（不定期选拔优秀人才） （1）纵向发展：普通员工--优秀员工--MO --主管→经理→总监 （2）横向发展：客户经理、产品培训师、运营/商务/产品等方向。",
+    "spans": [],
+    "comment": "福利晋升通道说明，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "1354-s0004",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 4.有效的和业务方，产品经理沟通策略方案，根据各方反馈迭代策略设计；",
+    "spans": [
+      {
+        "text": "有效的和业务方，产品经理沟通策略方案，根据各方反馈迭代策略设计",
+        "type": "S"
+      }
+    ],
+    "comment": "沟通方案、迭代策略设计属于执行技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1355-s0000",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责：1、负责产品的运营规划、运营数据分析；",
+    "spans": [
+      {
+        "text": "负责产品的运营规划、运营数据分析",
+        "type": "S"
+      }
+    ],
+    "comment": "运营规划、数据分析属于实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1358-s0004",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "特征提取，算法验证4.&nbsp;",
+    "spans": [
+      {
+        "text": "特征提取，算法验证",
+        "type": "S"
+      }
+    ],
+    "comment": "特征提取、算法验证属于技术实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1360-s0004",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "5.撰写、跟进和落实公司会议、专题研讨会议等公司会议纪要；",
+    "spans": [
+      {
+        "text": "撰写、跟进和落实公司会议、专题研讨会议等公司会议纪要",
+        "type": "S"
+      }
+    ],
+    "comment": "撰写落实会议纪要属于执行技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1382-s0002",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "3、拓展专项申报客户、挖掘潜在客户；",
+    "spans": [
+      {
+        "text": "拓展专项申报客户、挖掘潜在客户",
+        "type": "S"
+      }
+    ],
+    "comment": "客户拓展挖掘属于业务实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1457-s0011",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 3.根据反馈的问题持续进行算法优化。",
+    "spans": [
+      {
+        "text": "根据反馈的问题持续进行算法优化",
+        "type": "S"
+      }
+    ],
+    "comment": "算法优化属于技术实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1457-s0012",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 地点：洪山区野芷湖西路创意天地5号办公楼 4层 工作时间：周一至周五 朝九晚六, 高薪诚聘",
+    "spans": [],
+    "comment": "地点工时薪资信息，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "1486-s0005",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 6. 为公司业务活动提供研究领域内的专业支持，协助各业务部门完成数据整理、分析与利用；",
+    "spans": [
+      {
+        "text": "为公司业务活动提供研究领域内的专业支持，协助各业务部门完成数据整理、分析与利用",
+        "type": "S"
+      }
+    ],
+    "comment": "专业支持、数据整理分析利用属于执行技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1489-s0000",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责: 1、负责事业部内云计算实施项目的管理工作，包括项目计划的编排、进度推进、上线验收和交付运维；",
+    "spans": [
+      {
+        "text": "负责事业部内云计算实施项目的管理工作，包括项目计划的编排、进度推进、上线验收和交付运维",
+        "type": "S"
+      }
+    ],
+    "comment": "云计算项目全流程管理属于实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1494-s0003",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "3）负责移动端产品后台，接口的开发和维护4）根据功能需求和设计方案进行开发，完成代码的编写和调试工作；",
+    "spans": [
+      {
+        "text": "负责移动端产品后台，接口的开发和维护",
+        "type": "S"
+      },
+      {
+        "text": "根据功能需求和设计方案进行开发，完成代码的编写和调试工作",
+        "type": "S"
+      }
+    ],
+    "comment": "后台接口开发维护、编码调试属于技术实操S",
+    "status": "locked"
+  },
+  {
+    "id": "1498-s0000",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "职责：1、负责数据仓库ETL脚本的开发，以及数据监控的相关脚本开发；",
+    "spans": [
+      {
+        "text": "负责数据仓库ETL脚本的开发，以及数据监控的相关脚本开发",
+        "type": "S"
+      }
+    ],
+    "comment": "脚本开发属于技术实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1513-s0171",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "lt;",
+    "spans": [],
+    "comment": "乱码片段，无能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "1513-s0204",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "编程, &amp;",
+    "spans": [],
+    "comment": "乱码片段，无完整能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "1518-s0002",
+    "role": "lock80",
+    "decision": "edit",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 工作地点：北京、天津、珠海 基本要求： 1. 有扎实的编程功底，熟练使用C/C++和ASM编程，有良好规范的编程习惯，具备软件调试、优化经验。",
+    "spans": [
+      {
+        "text": "有扎实的编程功底",
+        "type": "S"
+      },
+      {
+        "text": "熟练使用C/C++和ASM编程",
+        "type": "S"
+      },
+      {
+        "text": "有良好规范的编程习惯",
+        "type": "T"
+      },
+      {
+        "text": "具备软件调试、优化经验",
+        "type": "S"
+      }
+    ],
+    "comment": "编程功底改为S，与语言使用并列",
+    "status": "locked"
+  },
+  {
+    "id": "1519-s0003",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "团队成员也多数来自BAT、小米、华为、乐视等国内顶尖公司，技术实力雄厚。",
+    "spans": [],
+    "comment": "团队背景介绍，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "1521-s0009",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 4. 熟练使用C++或C#编程语言，熟悉面向对象编程思想，具有良好的编程基础；",
+    "spans": [
+      {
+        "text": "熟练使用C++或C#编程语言",
+        "type": "S"
+      },
+      {
+        "text": "熟悉面向对象编程思想",
+        "type": "K"
+      },
+      {
+        "text": "具有良好的编程基础",
+        "type": "K"
+      }
+    ],
+    "comment": "语言使用为S，编程思想、编程基础属于知识K",
+    "status": "locked"
+  },
+  {
+    "id": "1526-s0003",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2、能独立完成产品电子电路、软件设计；",
+    "spans": [
+      {
+        "text": "能独立完成产品电子电路、软件设计",
+        "type": "S"
+      }
+    ],
+    "comment": "电路软件设计属于实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1556-s0007",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4.具备良好的沟通能力、团队协作能力，有用户增长/用户运营相关的算法经验优先。",
+    "spans": [
+      {
+        "text": "具备良好的沟通能力、团队协作能力",
+        "type": "T"
+      },
+      {
+        "text": "有用户增长/用户运营相关的算法经验",
+        "type": "S"
+      }
+    ],
+    "comment": "沟通协作为软技能T，算法经验属于S",
+    "status": "locked"
+  },
+  {
+    "id": "1558-s0002",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 3、大数据新技术研究和应用，并推动适合技术应用于生产；",
+    "spans": [
+      {
+        "text": "大数据新技术研究和应用，并推动适合技术应用于生产",
+        "type": "S"
+      }
+    ],
+    "comment": "技术研究落地推动属于执行技能S",
+    "status": "locked"
+  },
+  {
+    "id": "1581-s0012",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": ", 3.完善的福利体系：公司为员工购买五险一金，保障基本福利，并提供员工餐、节日及生日福利等；",
+    "spans": [],
+    "comment": "福利说明，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "1589-s0012",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 在创始初期，观数科技即获得多家著名VC的重量级投资。",
+    "spans": [],
+    "comment": "企业融资背景，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "983-s0016",
+    "role": "lock80",
+    "decision": "edit",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "9.深入理解并熟练掌握MVC框架模式；",
+    "spans": [
+      {
+        "text": "深入理解并熟练掌握MVC框架模式",
+        "type": "S"
+      }
+    ],
+    "comment": "框架掌握与Spring等一致标S",
+    "status": "locked"
+  },
+  {
+    "id": "130-s0003",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 4. 社群营销，运用有效手段提升用户的活跃度和关注度，并收集反馈分析用户需求。",
+    "spans": [
+      {
+        "text": "社群营销，运用有效手段提升用户的活跃度和关注度，并收集反馈分析用户需求",
+        "type": "S"
+      }
+    ],
+    "comment": "社群营销相关操作属于实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "162-s0008",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "6、完成领导及时交付的工作及其它事项，并配合其它部门达到公司的目标任务。",
+    "spans": [],
+    "comment": "通用事务工作交代，不属于岗位能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "176-s0000",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责：1、负责分店日常顾客接待、商品销售等工作；",
+    "spans": [
+      {
+        "text": "负责分店日常顾客接待、商品销售等工作",
+        "type": "S"
+      }
+    ],
+    "comment": "顾客接待商品销售属于岗位执行技能S",
+    "status": "locked"
+  },
+  {
+    "id": "181-s0012",
+    "role": "lock80",
+    "decision": "edit",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "5、其他专业要求会python或通过证券、基金从业资格考试两科及以上，且持有C1驾照；",
+    "spans": [
+      {
+        "text": "会python",
+        "type": "S"
+      },
+      {
+        "text": "通过证券、基金从业资格考试两科及以上",
+        "type": "K"
+      }
+    ],
+    "comment": "删掉C1驾照",
+    "status": "locked"
+  },
+  {
+    "id": "212-s0008",
+    "role": "lock80",
+    "decision": "edit",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3、形象好，气质佳，具备良好的服务意识。",
+    "spans": [
+      {
+        "text": "良好的服务意识",
+        "type": "T"
+      }
+    ],
+    "comment": "形象外貌不标，只留服务意识",
+    "status": "locked"
+  },
+  {
+    "id": "217-s0014",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 5、过节费（春节、端午、中秋等）、生日礼券、春节利是、等多项福利；",
+    "spans": [],
+    "comment": "福利介绍，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "267-s0007",
+    "role": "lock80",
+    "decision": "edit",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "5、自学能力强，身体健康、性格开朗，具有团队合作意识、团队精神；",
+    "spans": [
+      {
+        "text": "自学能力强",
+        "type": "T"
+      },
+      {
+        "text": "性格开朗，具有团队合作意识、团队精神",
+        "type": "T"
+      }
+    ],
+    "comment": "去掉身体健康",
+    "status": "locked"
+  },
+  {
+    "id": "288-s0000",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责：1、重点工作：洗车;",
+    "spans": [
+      {
+        "text": "洗车",
+        "type": "S"
+      }
+    ],
+    "comment": "洗车为岗位实操工作技能S",
+    "status": "locked"
+  },
+  {
+    "id": "290-s0005",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " - 负责协助销售团队处理销售事务，确保销售合同的履行和销售目标的实现。",
+    "spans": [
+      {
+        "text": "协助销售团队处理销售事务，确保销售合同的履行和销售目标的实现",
+        "type": "S"
+      }
+    ],
+    "comment": "销售事务处理属于业务实操S",
+    "status": "locked"
+  },
+  {
+    "id": "305-s0000",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "工作职责岗位职责：1.完成行程线路的设计、行程编写、报价的计算工作；",
+    "spans": [
+      {
+        "text": "完成行程线路的设计、行程编写、报价的计算工作",
+        "type": "S"
+      }
+    ],
+    "comment": "线路设计、编写、报价计算属于执行技能S",
+    "status": "locked"
+  },
+  {
+    "id": "34-s0000",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "欢迎应届毕业生！",
+    "spans": [],
+    "comment": "招聘欢迎语，无能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "382-s0011",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、传统法定节假日，按照国家规定带薪假期;",
+    "spans": [],
+    "comment": "假期福利说明，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "383-s0013",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "4、培训：定期开展入职培训、在职培训及员工外部培训拓展活动;",
+    "spans": [],
+    "comment": "公司培训制度，属于单位安排，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "393-s0019",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "迈出坚实的一步，就会实现不平凡人生的开始。",
+    "spans": [],
+    "comment": "励志宣传话术，无能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "397-s0010",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "薪资待遇：1、底薪1600元—2000元，提成20%—30%，平均月薪3000元—10000元；",
+    "spans": [],
+    "comment": "薪资说明，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "413-s0000",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "接受优秀应届生岗位职责：1、负责公司国内阿里巴巴诚信通平台的操作管理；",
+    "spans": [
+      {
+        "text": "负责公司国内阿里巴巴诚信通平台的操作管理",
+        "type": "S"
+      }
+    ],
+    "comment": "平台操作管理属于实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "42-s0010",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "5、能够在压力下自我管理与驱动，具备很强的团队精神；",
+    "spans": [
+      {
+        "text": "能够在压力下自我管理与驱动，具备很强的团队精神",
+        "type": "T"
+      }
+    ],
+    "comment": "压力下自我驱动、团队精神属于特质态度T",
+    "status": "locked"
+  },
+  {
+    "id": "425-s0003",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3.独立完成订单，收集潜在客户资料，能协助团队完成销售任务；",
+    "spans": [
+      {
+        "text": "独立完成订单，收集潜在客户资料，能协助团队完成销售任务",
+        "type": "S"
+      }
+    ],
+    "comment": "订单处理客户资料收集销售协助属于业务技能S",
+    "status": "locked"
+  },
+  {
+    "id": "460-s0008",
+    "role": "lock80",
+    "decision": "edit",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "熟悉Web2.0；",
+    "spans": [
+      {
+        "text": "熟悉Web2.0",
+        "type": "S"
+      }
+    ],
+    "comment": "熟悉技术栈标S",
+    "status": "locked"
+  },
+  {
+    "id": "469-s0001",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 2、商务洽谈及合同签订，跟进合同执行，回收货款；",
+    "spans": [
+      {
+        "text": "商务洽谈及合同签订，跟进合同执行，回收货款",
+        "type": "S"
+      }
+    ],
+    "comment": "商务洽谈签单回款属于业务实操技能S",
+    "status": "locked"
+  },
+  {
+    "id": "490-s0006",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": "加班费规格按《劳动法》规定进行实行（注：部分站区由于客流量不同例外）大白班（上午7:00——下午5：00，每上2小时之间均休息0.5小时）小白班（上午9:30——下午5：00，每上2小时之间均休息0.5小时）小夜班（下午5:00——晚上9：30，每上2小时之间均休息0.5小时）【工作班次：轮休倒班制，每班平均8小时左右（不加班不会超过8小时】四、薪资待遇：实习期1-2个月（工作表现好可提前转正）试用：底薪【2500】+加班费+奖金+早晚高峰补助——月综合收入：【3500~4500】不等。",
+    "spans": [],
+    "comment": "班次薪资加班费制度，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "553-s0035",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "我们的福利是不断完善更新哒，接下来将计划上线丰富的体育俱乐部、豪华年度旅游…….敬请期待！",
+    "spans": [],
+    "comment": "未来福利预告，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "571-s0003",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "不要看底薪，要凭自己的实力拿高提成；",
+    "spans": [],
+    "comment": "招聘鼓动话术，无明确能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "578-s0007",
+    "role": "lock80",
+    "decision": "edit",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、大学本科以上学历，英语较好，有国外留学经验者优先，优秀应届毕业生可接受；",
+    "spans": [
+      {
+        "text": "大学本科以上学历",
+        "type": "K"
+      },
+      {
+        "text": "英语较好",
+        "type": "L"
+      }
+    ],
+    "comment": "删掉留学经验",
+    "status": "locked"
+  },
+  {
+    "id": "602-s0013",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 岗位要求： 1、普通高校全日制本科及以上学历市场营销、工商管理、计算机等相关专业优先；",
+    "spans": [
+      {
+        "text": "普通高校全日制本科及以上学历",
+        "type": "K"
+      },
+      {
+        "text": "市场营销、工商管理、计算机等相关专业",
+        "type": "K"
+      }
+    ],
+    "comment": "学历专业属于知识学历K",
+    "status": "locked"
+  },
+  {
+    "id": "606-s0000",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "在线留下姓名+专业+学历+年龄+联系电话——————即可获得本公司人事部电话面试邀约！",
+    "spans": [],
+    "comment": "投递报名指引，属于报名流程，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "67-s0018",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "工作时间：8：30-12：00;",
+    "spans": [],
+    "comment": "工作时间说明，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "741-s0001",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "四平集团通过完善的培训体系和晋升机制，为每一位走进四平的优秀毕业生提供了一个良好的职业发展平台及创业机会。",
+    "spans": [],
+    "comment": "公司发展平台宣传，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "747-s0012",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " &nbsp;",
+    "spans": [],
+    "comment": "空文本，无能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "749-s0000",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "岗位描述 1.负责公司平台本地医生的开发工作，快速找到意向客户，再通过电话或者微信面访约见客户，为客户解决疑难问题，达成合作意愿。",
+    "spans": [
+      {
+        "text": "负责公司平台本地医生的开发工作，快速找到意向客户，再通过电话或者微信面访约见客户，为客户解决疑难问题，达成合作意愿",
+        "type": "S"
+      }
+    ],
+    "comment": "客户开发、约见、问题处理促成合作属于业务实操S",
+    "status": "locked"
+  },
+  {
+    "id": "822-s0004",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 5、与公司各部门保持良好的沟通，保证工作的顺利进行；",
+    "spans": [
+      {
+        "text": "与公司各部门保持良好的沟通，保证工作的顺利进行",
+        "type": "T"
+      }
+    ],
+    "comment": "跨部门沟通属于软技能T",
+    "status": "locked"
+  },
+  {
+    "id": "822-s0009",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 2、熟悉办公室行政管理知识及工作流程，熟练运用OFFICE等办公软件；",
+    "spans": [
+      {
+        "text": "熟悉办公室行政管理知识及工作流程",
+        "type": "K"
+      },
+      {
+        "text": "熟练运用OFFICE等办公软件",
+        "type": "S"
+      }
+    ],
+    "comment": "行政知识流程为K，办公软件使用属于S",
+    "status": "locked"
+  },
+  {
+    "id": "827-s0007",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 3、公司每月一次员工专属生日趴，水果蛋糕和节日礼物；",
+    "spans": [],
+    "comment": "员工福利描述，无候选人能力要求",
+    "status": "locked"
+  },
+  {
+    "id": "829-s0000",
+    "role": "lock80",
+    "decision": "edit",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责1负责客户的接待、咨询工作,为顾客提供优秀的置业咨询服务2了解客户需求,提供合适房源,进行商务谈判3陪同客户看房,促成房屋买卖业务成交4与客户建立良好的联系，熟悉及挖掘客户需求5负责公司房源开发与积累,并与业主建立良好的业务协作关系任职资格1懂计算机操作，普通话标准，热爱销售和房地产行业，具有良好的团队合作精神，勇于挑战高薪，有无经验均可，公司提供全方位的专业培训。",
+    "spans": [
+      {
+        "text": "负责客户的接待、咨询工作,为顾客提供优秀的置业咨询服务",
+        "type": "S"
+      },
+      {
+        "text": "了解客户需求,提供合适房源,进行商务谈判",
+        "type": "S"
+      },
+      {
+        "text": "陪同客户看房,促成房屋买卖业务成交",
+        "type": "S"
+      },
+      {
+        "text": "与客户建立良好的联系，熟悉及挖掘客户需求",
+        "type": "S"
+      },
+      {
+        "text": "负责公司房源开发与积累,并与业主建立良好的业务协作关系",
+        "type": "S"
+      },
+      {
+        "text": "懂计算机操作",
+        "type": "S"
+      },
+      {
+        "text": "普通话标准",
+        "type": "L"
+      },
+      {
+        "text": "热爱销售和房地产行业",
+        "type": "T"
+      },
+      {
+        "text": "具有良好的团队合作精神",
+        "type": "T"
+      }
+    ],
+    "comment": "删掉勇于挑战高薪",
+    "status": "locked"
+  },
+  {
+    "id": "877-s0006",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "（5%） -对客户整体满意度，工具和流程提供一直的反馈。",
+    "spans": [
+      {
+        "text": "对客户整体满意度，工具和流程提供一直的反馈",
+        "type": "S"
+      }
+    ],
+    "comment": "收集输出客户反馈属于执行技能S",
+    "status": "locked"
+  },
+  {
+    "id": "90-s0012",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "5、性格开朗，为人正直，工作积极主动，对外协调、沟通能力强，能承受一定工作压力；",
+    "spans": [
+      {
+        "text": "性格开朗，为人正直，工作积极主动，对外协调、沟通能力强，能承受一定工作压力",
+        "type": "T"
+      }
+    ],
+    "comment": "性格、主动性、沟通抗压属于软技能特质T",
+    "status": "locked"
+  },
+  {
+    "id": "905-s0002",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": " 3、责任心强，爱岗敬业，有团队精神 4、18-30岁，超龄勿扰 福利待遇： 1.转正薪资4000以上+绩效+餐费补贴+双休年底分红 2、五险一金 3、入职后签订劳动就业合同，五险一金+双休法定假日,有良好的 晋升空间 4、全体员工除享受以上福利待遇外还将享受带薪年假、病假、婚假、丧假、产假等国 家法定节假日。",
+    "spans": [
+      {
+        "text": "责任心强，爱岗敬业，有团队精神",
+        "type": "T"
+      }
+    ],
+    "comment": "责任心、敬业、团队精神属于态度特质T",
+    "status": "locked"
+  },
+  {
+    "id": "934-s0007",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3、普通话流利、口齿清晰、性格外向、反应敏捷、表达能力强，具有较强的沟通能力及交际",
+    "spans": [
+      {
+        "text": "普通话流利、口齿清晰",
+        "type": "L"
+      },
+      {
+        "text": "性格外向、反应敏捷、表达能力强，具有较强的沟通能力及交际",
+        "type": "T"
+      }
+    ],
+    "comment": "普通话为语种L，性格反应沟通交际属于软技能T",
+    "status": "locked"
+  },
+  {
+    "id": "956-s0005",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 6、下发会议通知，布置会议室；",
+    "spans": [
+      {
+        "text": "下发会议通知，布置会议室",
+        "type": "S"
+      }
+    ],
+    "comment": "会务操作属于执行技能S",
+    "status": "locked"
+  },
+  {
+    "id": "96-s0001",
+    "role": "lock80",
+    "decision": "accept",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、采购类工作为采购资质文书工作，要求基础电脑办公，细心耐心；",
+    "spans": [
+      {
+        "text": "基础电脑办公",
+        "type": "S"
+      },
+      {
+        "text": "细心耐心",
+        "type": "T"
+      }
+    ],
+    "comment": "电脑办公属于实操S，细心耐心属于特质态度T",
+    "status": "locked"
+  },
+  {
+    "id": "182-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 4、熟悉电脑操作及办公软件（word excel等）；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "1519-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "想掌控云计算的未来吗？",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "526-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "晋升空间业绩突出并具有管理能力者可升为组长、销售主管、平台经理等；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "229-s0012",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": " 福利待遇 股票期权,年终分红,交通补助,午餐补助,带薪年假,绩效奖金,弹性工作,扁平管理",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "9-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2.本科以上，机械电子专业或外语专业；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "92-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "二、福利方面：1、本公司订单充足无淡旺季之分生产常年稳定2、全员享有带薪法定假日及年休假、社保福利和劳动合同权利3、工资每月15日准时以银行卡方式发放自建厂以来从未拖欠工资4、时制为:办公人员五天半、生产人员六天制两种加班比例均按法定计算5、常有公开的内聘机会、提拔机制及技能培训为你提供广阔的个人发展空间6、炎热季节均免费提供五花凉茶或降温解暑糖水特殊岗位享有高温补贴7、公司设有篮球场、羽毛球等娱乐场地每年都有大型联欢晚会及抽奖活动8、满一年双职工公司免费提供配齐电器及餐桌椅的带厨卫的单套房，但水电费自理9、宿舍分为两房两厅带厨卫，一房一厅带厨卫，单套房带厨卫，单人间两人间，四人间及八人间，每一间宿舍均配有:空调、彩电、电热水器等电器三、应聘须知：1、为了优先收到您的邮件，主题请填写：应聘职位：XXX求职者：XXX2、应聘时间：本公司招聘时间，上午9:0011:00下午2:004:003、详细资料请进入本公司网址了解情况",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 9
+  },
+  {
+    "id": "1295-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "3.熟悉C/C++开发，有较强的算法实现能力，具有良好的代码质量和风格；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "983-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "3.具有强烈的求知欲，工作态度积极主动；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1417-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "任职要求：1.熟练使用PHP/Python/Golang/Java/C++等一种或者以上语言。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "215-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 岗位要求 1、负责货物装卸和搬运工作;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1086-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "3、完成领导交办的其他工作。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1014-s0092",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "很多开淘宝店的卖家，还不如做淘宝客赚钱；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "130-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 4、会应用各种视频剪辑软件者优先考虑；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1471-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4、意志坚定，刚正不阿。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "92-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": "2、工作仔细认真、责任心强福利待遇：五天半工作制，购买五险一金，包住；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1455-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4、解决方案：负责输出数据产品的业务解决方案，并推动解决方案的落地应用；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "234-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "7、协助展会准备工作。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "16-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": "4.上班时间：上午9:00-12:30.下午14:00-19:00(单双休)欢迎应届毕业生同样享有公司正式员工晋升机会；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1328-s0021",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": "6.极具竞争力的薪水，福利待遇好，出国工作、学习和交流机会多。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "980-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "赛舵科技是一家提供人工智能技术服务的初创企业，目前专注于全球市场的智能语音语义业务。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1264-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "熟悉ISO20000、ISO27001、ISO9001、COBIT、等级保护等相关标准；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "1155-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 6、负责各项目、部门和技术领域的合作协调。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1553-s0024",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 伙伴与文化 北京财务伙伴多来自不同的大型互联网或500强企业，公司重视员工的个人成长，不仅为员工设计专业和管理的双通道职业发展路径，也让每个人的成长贡献能够通过职级体系得到及时明确的体现。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "1491-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4、管理维护客户关系以及客户间的长期战略合作计划。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "78-s0011",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 公司网址：http://www.gzredian.com 来自：马 克 团 队",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "698-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "职位描述：面对南京所有大中小企业；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "67-s0015",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "注：以上特征如果你确实都具备，或者你能够对不足的地方做出调整，那么请尽快联系我们，我们随时欢迎你的加入。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "820-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 岗位职责： 1、推广公司产品，协助客户完成POS机激活。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "757-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3、完成招聘数据日常的更新、维护；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "213-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "崇福甜豆豆艺术培训中心诚招早教老师 本机构致力于2-16岁孩子的艺术教育.现诚聘早教教师1名（女），兼职教师1名.要求如下： ●能力要求： 有亲和力，有与1到3岁幼儿沟通的能力.善于早教教学. ●岗位职责： 能够把握好课堂的进度及氛围，课前做好上课计划，课后做好和家长的沟通交流。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 6
+  },
+  {
+    "id": "763-s0029",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "705；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "495-s0019",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "公司以房地产三级市场买卖、租赁、贷款、评估等中介业务及一手楼盘代理为主营业务。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "700-s0013",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "具备处理问题、安排进展、跟进进程、沟通及疑难问题服务的意识跟能力；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "585-s0011",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "4、在职期间表现优秀，且工龄满2年可晋升为公司合伙人并享有公司分红、股份。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1139-s0047",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "我们不做平庸的公司，也不要平庸的员工。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1431-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "注：投递时请附上作品集。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "562-s0031",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "7、节日礼品+户外拓展+公司聚餐+旅游",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1121-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 职位要求：计算机、通信、软件工程、网络安全、信息系统、自动化、电子信息、控制工程、模式识别、数学等相关、相近专业。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 10
+  },
+  {
+    "id": "633-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 4) 负责为理事提供送药服务；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "342-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "6、能够利用多种技术形式提升网站人气。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "730-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "6、收集相关报表核对差异，确保账单准确无误。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "148-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 2. 根据公司现行渠道开发客户与房源；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "530-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2.负责公司工商登记、变更、年检相关手续办理，公司各类资质的办理、年审等；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "988-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 具备良好的沟通与表达能力，具有良好的文档写作能力；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1223-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "2、熟悉数据分析工具，具有较强的数据敏感度，能够熟练运用定性、定量研究方法，擅长数据分析及挖掘。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "316-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 网咖员工职业发展规划:员工——训练员——值班经理——店长——区域经理岗位要求：热爱你从事的行业、对工作严谨认真、性格乐观、开朗、热情、上进心并勇于挑战。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 7
+  },
+  {
+    "id": "966-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "4、公平透明的晋升渠道，任人唯贤；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "301-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、具有亲和力，良好的语言表达与沟通能力;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1101-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "如果你喜欢娱乐，请联系我们，每月团队集体活动，聚餐K歌踏踏青，生活越活越年轻。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "202-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 3、品德端正、敬业、责任心强且具有良好的职业操守；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1101-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "如果你喜欢旅游，请联系我们，每年每季度公司免费国内国外旅游方案给你提供。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "604-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "作为在大数据科研方面的领先应用企业，我们立志成为中国的FICO（美国最大的征信公司，服务了美国前100家金融机构的90家，为美国的金融发展作出了极大贡献），并希望能带动全产业链的企业，从而奠定在金融领域大数据应用方面的龙头地位。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "21-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "岗位要求:1.年龄18~40岁，男女不限，中专及以上学历（优秀可放宽学历要求），可接受应届生，专业不限，保险学、金融学、经济学类或财经院校营销专业尤佳;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "1537-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "–熟悉常用工程工具：Jenkins,Maven/Git/SVN；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "649-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、专科以上学历，设计风格时尚，色彩搭配好，出色的美感，具有高度的审美及创作能力；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "1349-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 关注公众号马 克 数 据 网",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1580-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 6、良好的需求理解能力与沟通能力，热爱测试工作，踏实稳重，工作积极主动，具有良好的团队协作精神 微信公众号马克数据网",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "756-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3、实时监控客户操作情况，对相关风险客户着重监控并进行记录，筛选风险客户并进行跟踪确定其风险性。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "1012-s0033",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "在企业平均寿命只有2.5年的当代，伊的家正走向第9个年头；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1324-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 3. 熟悉weblogic、tomcat、websphere等应用服务器， 4. 熟练使用OracleMYSQLSQLServerDB2等主流数据库者；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "618-s0035",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 4.强大的供应链后盾，日发20000单，保证产品品质、发货效率，让运营无忧推广。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "318-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3熟练掌握专业系统软件和各种办公软件的使用技能；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1504-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "任职要求：1、我们的产品线涉及到移动互联网，O2O平台，云计算系统，所以你要有很强的学习能力。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "726-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责：1、负责项目的技术支持、资源协调统筹工作;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "551-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": "转正：底薪2700+加班费（大白120元、小白90元、小夜50元）+奖金（检测出危险物品公安机关奖励500~1500）+早晚高峰补助——月综合收入：4500~5500不等。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1425-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 7.有行政机关工作经验者优先。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "516-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责：1.家庭智能化方案的设计；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "525-s0015",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2.对公司资金高度负责，严格执行安全控制.3.以持续稳定盈利为最高目标，称为业内精英人才。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "187-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "5、制订公司内部财务、会计制度和工作程序，经批准后组织实施并监督执行；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "1145-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "岗位要求：1.大专以上学历，统计、数学、经济、信息技术等相关专业；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "143-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3、具有良好的沟通能力、协调、合作团队能力；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1048-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "5、协助区域负责人管理项目工作。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "420-s0048",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3.有1年以上Ebay经验的：第一个月试用期3400元+全勤奖300元，第二个月3400元+全勤奖300元+表现奖200元。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1008-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "7、负责IOS平台上的技术攻关确保开发质量；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1474-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 5. 较强的数据敏感度，逻辑分析能力和文档写作能力。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1301-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 3．大数据挖掘、建模及应用领域领军性人才，前沿技术视野开阔；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1267-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "熟练掌握Linux/Unix操作系统基本操作命令，熟悉vi的使用；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "70-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "职位描述 职位描述：1、根据金融机构提供的客户名单及联系方式，与客户短信、电话联系，让客户及时还款。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1446-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 4.定期跟进社交媒体营销发展趋势，分析整理竞争对手社会媒体营销情况，进行数据分析、挖掘，传播方案优化；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 6
+  },
+  {
+    "id": "580-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 您选择的不仅仅是一份工作，更是您个人锦绣前程的未来，合肥易臣贸易有限公司诚邀有志之士一起共创辉煌，一起发展！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1464-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 6、有创业精神，对虚拟现实行业有浓厚兴趣，关注虚拟现实领域的技术和产品动态。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "439-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "学习影视后期，剪辑栏包，影视特效，在家接单挣钱，月薪亦可过万！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1469-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " （博士生1年，研究生2年以上，本科生5年以上） 3.从事过汽车线控转向系统、线控制动系统设计工作优先；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "549-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "需勤快好学富有激情，积极向上可承受心理压力。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1217-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 8.负责公司私有云平台资源的监控、分配、部署工作，确保服务的可持续性 任职要求： 1、统招大学大专及以上学历，计算机、软件、互联网相关专业；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 9
+  },
+  {
+    "id": "40-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "武汉勤奋环保科技有限公司前来应聘！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "941-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "有意者请发送简历至邮箱hfyhgdzp126com我们会尽快跟您联系！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1320-s0012",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "6、根据研发、销售、市场和生产的时间进度及时发布新品。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "287-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "你有没有因为所学专业不够精通不感兴趣，而想换个行业发展？",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "751-s0021",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "4、年终奖：每年1月发放年终奖4500;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1454-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4.JAVA基础扎实，理解IO、多线程、集合等基础框架，对JVM原理有一定的了解；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 6
+  },
+  {
+    "id": "1076-s0018",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": " 福利待遇 免费班车,成长空间,年度旅游,岗位晋升,内部转岗机会,管理规范,美女多,帅哥多,影响亿万用户,五险一金,领先技术,新鲜空气,大平台,弹性工作",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "777-s0015",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "</div>",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "290-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " - 具备良好的沟通能力和团队合作意识，善于与不同部门进行沟通和合作；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "555-s0011",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": " 4节日福利:端午、中秋等传统节日为全体员工发放节日物资或补贴；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "770-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "培训部门为你量身定制人才成长计划，并提供最专业的指导和培训，让你以最短的时间实现最快的成长 好好赚钱吧！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "176-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "职责要求：1、销售技能、服务技能、沟通技巧和团队协调能力。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "1457-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 4.熟悉跨平台（windows\\linux）编程及多进程处理流程；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "817-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "如果你想来一场想走就走的带薪旅行；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1513-s0060",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "gt;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "170-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "6、有较强的服务意识和沟通能力，服从公司领导安排，遵守公司的各项规章制度。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1377-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2、拥有2年相关工作经验，熟悉活动策划的整体流程，有负责或参与策划过成功活动案例者优先；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1461-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 3、能够在团队中完成code review的任务，确保相关代码的有效性和正确性，协同团队作a战;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "620-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "7、优越齐全的白领办公生活环境：员工休闲娱乐活动室、员工宿舍和食堂、休息区，科学、人性化的职场布置，系统高端的作业设备（电脑、话机），无纸化办公等；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1018-s0013",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " -具有细心、认真、负责的工作态度；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "673-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 6、之前有从事过电动汽车相关的行业,具有混合动力汽车或者纯电动汽车电控开发的相关经验者优先，了解CANopen协议者优先考虑。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "593-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "健康快车立足中国有机健康食品领域，自成立伊始，便与北大荒强强联手，着力打造世界一流食品品牌，形成产品、服务多元化的实体经营企业。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "811-s0018",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "10、每年举办忘年会，慰问员工。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "548-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 加入铂达，你能收获的不仅仅是高薪，还有技能、知识和家人!",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "217-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 4.协助渠道处理日常工作 。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1241-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "（当看到半杯水的时候会觉得自己拥有了半杯水，而不是只有这半杯水，更多关注杯子的外侧，通过了解未知的未知保持空杯心态） 2）善于思考与创新，愿意持续学习新知识，内驱力强，喜欢“跳出已有框架”思考问题，不为自己设限 【项目背景】 你将与我们建立承揽合作关系，负责领导和推动集团整体及各母/子公司的财务战略规划和管理。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 10
+  },
+  {
+    "id": "313-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "5. 平时要做好化验仪器的检查和维护工作。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1118-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责： 1、负责智能家居产品销售；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "404-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "4、本岗位接受应届生，实习生，愿意培养人才，储备人才。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "384-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3、专业素质要求：① 良好的英语听说读写能力，能够快速熟练地书写商务英文信函，并且能够熟练地与客户在即时通讯工具上交流，口语良好（非专业英语六级，专业四级以上）。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "103-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "4、负责公司员工的劳动合同变更、续签、终止等;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1019-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2. 使用JAVA进行web开发的经验；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "902-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "【岗位职责】1．负责房源的开发和接待，根据业主的售房要求制定销售计划。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "781-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "1、完成公司下达的销售任务，确定销售目标，制定销售计划；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "315-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": ", , , , 2、熟练操作OFFICE办公软件，有SAP使用经验优先。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "553-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "熟悉税务预警及风控关键指标4、良好的沟通表达能力和组织协调能力、文书撰写能力。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "1279-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "职位要求：1.具备强悍的编码能力2.有扎实的数据结构和算法功底3.熟练掌握自然语言处理领域的基础理论和方法，并有一定的相关项目经验4.熟悉linux开发环境，精通python语言的优先5.熟悉文本数据挖掘的常用方法，有一定的相项目经验者为佳6.优秀的分析问题和解决问题的能力，对解决具有挑战性问题充满激情7.对搜索引擎、机器学习相关技术有经验者优先",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 12
+  },
+  {
+    "id": "1200-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2、管理客户信息，通过规范的信息录入确保客户数据实时在系统中得到更新。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "768-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 3、有英文演讲比赛、KET、PET等剑桥考试指导相关经验；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "1101-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责:1.负责客户咨询并引导客户提供专业的咨询解答；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1040-s0017",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "熟悉Memcahcet和mongo等；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "524-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 2、一年以上电梯维保工作经验，持电梯操作证优先考虑；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1014-s0068",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "也就是说，在这个区域内的客户人数是有限的。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1513-s0332",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "工作认真，较好的文字表达，对项目研发有整体的认知，能快速理解研发任务且按时按质完成；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "855-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责：1、针对国内各省区域经销商、门店的活动需求进行评估，活动方案的编写；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1079-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "精通jquery的优先 2、熟悉使用PHPMySQL，进行WEB开发，面向对象编程；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "840-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "本次招聘属富士康名企人事总部月薪4500以上急聘男女不限免费包进（龙华，观澜厂区自由选择）工作环境一流，坐着上班，工作轻松；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "893-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3、维护老客户的服务，挖掘客户的最大潜力；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "336-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 2.、良好的PC能力(Word,Excel,Photoshop,PPT)；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "391-s0018",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "晋升空间：管理方向：班长助理--班长--助理--经理；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1513-s0260",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "gt;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1232-s0017",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "empty_process",
+    "sentence": " 3、每年免费健康体检+带薪年假+旅游激励+六险一金。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "202-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 7、良好的组织、协调、沟通能力和团队协作精神，能承受较大工作压力。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "502-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "利用参考、素材等资源高效地完成修图。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "946-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "要求：会cdr.psd等基础设计软件，早8:00晚6:00，月休2天！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "787-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2.包括扩展供应商，询价，比价，制定采购合同，提交付款证明，跟踪物流，到货清点，发票登记等；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 8
+  },
+  {
+    "id": "1531-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2、了解、熟悉云计算技术、网络技术；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "783-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 5、具有良好的职业道德和服务意识，有较强的语言表达能力和沟通能力。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "937-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、对各项工艺生产制度的执行情况进行监督、检查。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "1550-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4、熟悉常用数字图像处理、计算机视觉和模式识别算法，有良好的数学功底；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "149-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "我们将为你开启助飞模式！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1516-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "2、根据业务、产品和项目相关需求，负责数据验证、数据管理、数据服务接口、数据分析等功能的开发维护工作；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "1210-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "岗位要求：1.对自然语言处理、信息检索、中文分词、语义分词，数据挖掘等方面算法有深刻的了解；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 6
+  },
+  {
+    "id": "156-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "一、工作职责： 1、主要负责石材产品的国际市场的开发；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "743-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 2、普通话标准。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "215-s0012",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "5、公司免费提供食宿;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "245-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "舒适的办公环境，融洽、激情的工作氛围等你来。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1154-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "2、负责数据仓库建模、数据预处理系统的设计和开发。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "884-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、定期电话回访，与客户保持沟通并建立良好的关系，指导客户操作及挖掘客户需求3、针对老客户进行二次营销，让客户接受更为广泛的公司推广产品，达到最好的营销效果 4、不断接受公司的各项业务和技能提升培训。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 9
+  },
+  {
+    "id": "1462-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 6、具备良好的组织协调能力，沟通表达能力，问题分析能力，文档撰写能力；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "454-s0016",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "员工生日福利；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1310-s0011",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "7、认真负责、积极主动、敬业严谨、能够承受较大的工作压力与工作时间特殊性。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "523-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "4、教育训练：产品技术培训（新人、分公司、终端客户）;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "1108-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4.完成领导交付的其他任务。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1018-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 任职资格： 1.学历要求： -毕业于211或985院校、统招本科及以上学历。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "821-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "empty_process",
+    "sentence": "职位描述 - 工作地点：远程办公- 工作时间：可根据项目任务灵活安排。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "766-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " in English and -on supplementary basis- other languages (for non-Chinese nationals) 有优秀的中英文写作和口语交流能力 4. Strong time management skills－able to work under pressure and meet deadlines 时间观念强，能够在高压环境下高效工作 5. High degree of interest and alertness in current business issues and industry trends 对社会时事与行业动向具有高度的兴趣与敏感度 6. Persuasive, self-confident, assertive personality 沟通能力强，自信，果断...",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1485-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2、具备JAVA开发能力；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1308-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2. 需求 &amp;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "817-s0012",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责：1、利用各种交友软件等进行公司产品的销售及包装；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1125-s0012",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 5.能够组织和指导市场调研，具备先进的营销理念、较强的市场分析能力和应变能力;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "964-s0020",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "位置:区域就近分配，实现出门就是公司，下班就能到家成长晋升机会：经纪人-店经理-MVP俱乐部成员-商圈经理-营销总监-城市分公司总经理直销经纪人-直销经理-直销总监-事业部总经理唐经理：15261666369",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 10
+  },
+  {
+    "id": "1501-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "6、 具有IT记者背景者优先考虑。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1513-s0310",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "mso-bidi-font-size:10.5pt;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "411-s0022",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": "2、精品菜厨师（50名领导的工作餐）试用期底薪9500元，转正底薪10000元 全勤 奖金 绩效,综合12000.缴纳五险一金 。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "547-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "6，员工职业发展：公司不定期会有内部招聘，对于符合条件的员工可应聘到技术岗位，给员工提供了多方向发展的道路。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "923-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 5、尊重人才、培养人才、善用人才！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1153-s0011",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "3.负责产品界面原型的设计，有良好的产品交互的体验；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1513-s0341",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "color:#333333;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1014-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "为什么你对目前工作和收入不满意？",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "898-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 2、负责制定药品（重点是新药）的学术推广计划和方案；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1165-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 4、英语4级以上，本科及以上学历。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1065-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 4、根据工作要求学习新知识与技术；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1541-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "br&gt;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "634-s0018",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 2、不定期举行户外拓展活动；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "795-s0014",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " （来自 马克数据网）",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "793-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 6、员工活动丰富（周活动、月活动、节日活动等）；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "403-s0015",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 5、以上信息符合，即可报名，一经录当天过来即可分配宿舍；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1490-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "擅长免费流量优先。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "901-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": " 三，薪资待遇： 1.基本工资+岗位津贴福利，综合工资：4000-9000，节假日三倍工资缴纳国家规定的五险一金。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "104-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、善于交流沟通，执行力好;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "42-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "任职要求：1、硕士及以上学历，电气自动化、自动化控制、机电一体化等相关专业；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1549-s0017",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 3、广阔的职业提升空间；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "94-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "“多层次培训，全方位发展”的培训体系 4.工作时间：早8:30—晚6:00。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1539-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4、了解大数据技术，熟悉一种大数据平台相关工具；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "633-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 6) 负责药品质量把关及药品盘库工作；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1462-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 3、熟悉Java/J2EE开发，了解Spring,Hibernate,ibatis等常用的框架技术；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "602-s0015",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "219-s0013",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "任职要求：年龄35-45岁。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1017-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "岗位要求1.本科以上学历，硕士优先。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1566-s0018",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "----------------------校妆网-欢迎您的加入！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1238-s0014",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "月度聚餐及周边游；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1047-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2.对市场运营有一定了解，会从市场运营的角度看产品；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "58-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "在仓库里配货(蔬菜、水果)，计件，上班时间：下午6点一一凌晨3点左右。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1581-s0011",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": ", 2.规范的休假制度：员工享受国家法定节假日、年假、婚假等假期；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1125-s0021",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "empty_welfare",
+    "sentence": " 福利待遇： 1、完善的福利制度：为员工购买社会保险和住房公积金；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1480-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 5、具备良好的数据和商业敏感度、优秀的逻辑思维能力，乐于从纷繁的数据中寻找业务规律，较好的商业洞察力。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "244-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 3. 按照各阶段催收策略，利用电话、短信等手段进行催收；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1141-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "3、推进业务相关的前后台系统的研发；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "129-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "这个是不需要不去销售和谈业务的工作轻松.上手快任职资格:1.年龄: 18以上，男女不限2.学历:学历代表过去，能力决定未来3.经验:不限，应届毕业生均可薪资待遇：福利:国外旅游、节假日福利，员工聚餐，带薪培训1.综合薪资: 7000+绩效，综合薪资在8K- 10K以上。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1059-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "empty_process",
+    "sentence": "职位描述 工厂直招---不收任何费用-----欢迎监督------------------- 急聘普工-小时工-正式工—包吃住-不体检-不查纹身-可借支-长白班/两班倒。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "49-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3、对计算机感兴趣,想要尝试或热爱该行业。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1521-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4. 编写视觉系统软件使用说明书，对客户和操作人员进行培训；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "699-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2：有金属材料及热处理分析的基础；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1543-s0019",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1108-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "3.进行定制化数据分析；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1013-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 7.与合作伙伴进行技术交流与合作。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1387-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 任职要求： 1、计算机、软件工程相关或数学专业硕士研究及以上学历；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "195-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "请主动联系丁经理咨询----------------公司优势———————《1》：当天面试，当天安排住宿。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "635-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责：1.负责国产终端、服务器、存储、操作系统和数据库等软硬件环境搭建和部署;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 7
+  },
+  {
+    "id": "1289-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "工作职责:1、参与数仓模型设计及数据治理的开发工作；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "166-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 2、对工作认真负责，团队意识强；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1158-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责： 1、负责软件开发相关技术文档编写；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1342-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 6、5年以上相关Java技术开发和设计工作经验；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1225-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2、以高起点、高规格评估客户的信息安全现状及面临的问题，及时发现客户在信息安全层面面临的威胁和自身存在的脆弱性，并结合长远规划做出整体安全解决方案；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1024-s0015",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 6. 良好的沟通能力和组织能力，能够跨部门沟通和协调工作；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "179-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 7、有无工作经验均可，公司提供带薪培训。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1040-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "对高并发、高流量Web架构有一定了解；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1220-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 1、openwrt系统移植、开发；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "302-s0011",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "7.活泼开朗，举止得体，有很强的社交热情，有良好的团队合作精神及高的抗压能力。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "878-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "989-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "NetAPPNAS存储管理；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1582-s0015",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "2、 专科学历以上无责任底薪4000元加1000元绩效，底薪5000元，提成35%起。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1282-s0011",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 该数据由<马克数据网>整理",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "236-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、接待顾客应主动、热情、礼貌、耐心、周到，使顾客有宾至如归之感；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "712-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "薪资待遇：工作时间：早九晚六点半；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "267-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "6、具有较强的逻辑思维能力和动手能力。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1356-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "基础数据的收集和归类整理；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "553-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "任职要求：1、财务、会计类相关专业，本科及以上学历，注会或注税资格优先，五年以上相关工作经验；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1053-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " （一）现场学习，知名企业专家一对一服务,理论结合实际工作经验,边学习边累积实战经验. （二）主修软件：c++、3DMAX、Direct3D、Bodypaint3d、UVLayout、Maya、PS、Fusion、Premiere、Zbrush等等 四、学好可选那些岗位？",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 15
+  },
+  {
+    "id": "1365-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "职位描述：1、在离线数据环境进行数据库数据的查询并制作汇总统计表；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "580-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 2、收集和维护客户资料；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "850-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 4.善于跨部门沟通、主播沟通，认真负责处理主播相关事宜;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1061-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 6. 收集、积累、统计分析客户反馈产品与服务存在的问题，推进、督导产品与服务全生命周期各环节客户关注点的品质；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "1008-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4、根据开发过程中的用户体验提出改进建议；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1548-s0007",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 4、具备抗压能力，适应高强度出差工作；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1367-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "岗位名称：前端开发工程师职责描述：1、根据前端代码规范和设计文档，高效、高质地完成代码实现；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1570-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " * 制定核算推广费用，有效监控调配相应投放，提高投入产出比，实施各种互联网推广手段提升公众号下载量，增加用户数；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "1151-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "同时，作为云计算与大数据领域的连续创业者，我们在成立之初就已获得机构的投资。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1489-s0017",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 马 克 数 据 网",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "21-s0011",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "6.拥有勇于挑战高薪的野心，服从管理，晋升主管、经理很容易！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "907-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "岗位职责：负责北美（AG）组内约170人2/3在深圳，1/3在苏州，外包员工约50-60人，主要为银行/航空公司大型机（服务器）提供7*24小时的监控服务，上报监控信息，分析及日常英语电话汇报相关监控情况。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "1273-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 6、应用系统技术审核、上线测试相关技术文档、升级审验测试、注册登记、运行维护管理制度实施情况。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 5
+  },
+  {
+    "id": "1297-s0041",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 4. 电子商务、市场营销、广告传媒等相关专业和具有相关经验者优先考虑。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "963-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2.年龄18岁-35岁之间，男女不限。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1273-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": ", 公司地址: 北京市海淀区上地五街高立二千大厦 关注公众号马克数据网",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "825-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 四、薪资待遇： 1、薪资：5000左右+丰厚的提成。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1575-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "良好的办公环境，每月员工活动，团队气氛好；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "488-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "行政专员 1、有新闻传媒、法律、计算机专业背景及工作经验者优先;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1365-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "43",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1046-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 任职条件： 1、数据分析相关专业，本科及以上学历，硕士及以上学历优先；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1075-s0006",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "百度搜索马 克 数 据 网",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1529-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "7、有网络数据抓取开发经验者优先。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "376-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、具备一定的英语口语能力，有相关工作经验者优先考虑；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1513-s0146",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "lt;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1292-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 3、了解FICO等评分模型，了解评级算法，如违约概率模型；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "1353-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "职位描述:（工作内容和工作职责） 1、负责公司容器产品的需求调研、规划设计工作；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1471-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "能做到对违规行为不姑息、对疑难案件不放弃；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "922-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "[岗位职责：负责监测数据问题排查负责数据问题后期各部门的跟进及沟通协调工作临时的数据需求各维度指标报表数据准备任职资格：本科及以上应届毕业生或1-2年工作经验熟悉SQL系统踏实稳定，逻辑性强，需要较强的沟通协调能力有广告行业相关经验者优先]",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 7
+  },
+  {
+    "id": "110-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、熟悉压力容器设计、制造和检验；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1560-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 岗位要求： 1、本科及以上学历，计算机、GIS、遥感、测绘等相关专业优先;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "1076-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4.支持业务团队进行售前工作，并配合相关的售中/售后等相关业务工作；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 4
+  },
+  {
+    "id": "1467-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "工作职责：1.移动直播平台音效算法开发和调试；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "955-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "【应届，非应届，实习生皆可！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1513-s0089",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "span style=&quot;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "393-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、对销售工作有较高的热情；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1226-s0011",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 4、每年一次员工旅游，销售精英将有机会赴国外优秀厂家参观学习。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "715-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 3、工作积极主动、心态良好、服从上级领导安排；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "389-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " 4、有一年以上销售经验或有建材、涂料销售经验优先，优秀应届生即可培养；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1283-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "6、熟悉Linux环境以及操作，熟悉SVN、Git的使用，熟悉Tomcat，Apache，Nginx等开源的服务器的配置和调优；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 9
+  },
+  {
+    "id": "1566-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "郑重承诺：1、工作期间一切交通住宿费用公司全额承担，个人不需要付任何费用。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "960-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "喂鱼，销售导购招聘要求：1、学历要求初中以下2、经验要求不限3、年龄要求18-39岁抚顺开发区玖度摄影馆招聘10名营业员，薪资100元/天，工作地点：抚顺市望花区高阳路3号皇家海洋乐园内皇家海洋乐园-游客服务中心",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "424-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2.不限经验，欢迎应届毕业生，实习生；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1230-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 5 与客户建立长久客情关系，确保客户服务的延续性。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1568-s0010",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "5、有B类客户分析运营经验、数据类产品类规划经验优先。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "960-s0000",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "彩绘等！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "375-s0009",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "2、 熟悉环保行业先进技术发展及趋势，具备丰富的研发经验；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1059-s0020",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 欢迎各位前来我司报名~！",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "507-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3）懂基本电脑操作，善于表达，能有效、耐心的与客户沟通。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "115-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "特别在品质工作不饱和情况下，服从上级主管新工作的安排，并认真执行。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1171-s0003",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4、搭建及维护算法服务，相关工具及软件的安装维护岗位要求：1、熟悉大数据分析、机器学习、数据挖掘等相关技术；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 6
+  },
+  {
+    "id": "1256-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2、熟练掌握数据库Oracle、Sybase、SQLServer、Mysql中至少一种，能够熟练进行编程，拥有优秀的数据库设计能力；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 6
+  },
+  {
+    "id": "1586-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "5.协助产品经理、运营经理，推进数据标签知识图谱建设，挖掘标签最大价值；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1069-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 5、有良好的客户服务观念，工作责任心强，注重团队合作；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1350-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": " 2、根据市场动态、客户需求等，制定调整产品运营策略，通过用户反馈和数据挖掘，优化运营效率；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 3
+  },
+  {
+    "id": "1551-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "6、有高并发系统、推荐和检索相关项目经验者优先；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "129-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "5. 多元化培训课程：带薪岗前培训，在职个人提升计划;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1513-s0076",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "lt;",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1126-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "有独立的DSP平台开发和负责经验；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 1
+  },
+  {
+    "id": "1519-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "作为第一家基于Docker的云平台公司，云雀科技致力于提供简单快捷的云平台和服务，帮助客户提高开发部署效率，降低客户IT成本，并使客户可以专注于核心业务。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "high",
+    "n_silver_spans": 7
+  },
+  {
+    "id": "1539-s0004",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "4、负责新成员技术指导和新技术应用指导；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "1095-s0001",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "一端聚集工程师等产业人群，推动学习成长与技术交流。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "628-s0002",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": "3.试验后原始数据记录，试验报告做成；",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "low",
+    "n_silver_spans": 2
+  },
+  {
+    "id": "514-s0005",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "应届生招聘",
+    "empty_hint": "",
+    "sentence": " * 完善的培训,帮助更快提升。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  },
+  {
+    "id": "1517-s0008",
+    "role": "train300",
+    "decision": "",
+    "source_domain": "人工智能招聘",
+    "empty_hint": "",
+    "sentence": "就像那句话说的，生活不止眼前的苟且，还有诗和远方的田野。",
+    "spans": [],
+    "comment": "",
+    "status": "todo",
+    "bucket_silver": "empty",
+    "n_silver_spans": 0
+  }
+]

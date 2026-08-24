@@ -1,0 +1,105 @@
+{
+  "train": {
+    "split": "train",
+    "n_rows": 17460,
+    "n_unique_ids": 17460,
+    "avg_chars": 37.41277205040092,
+    "n_spans_total": 37911,
+    "avg_4d": 2.1713058419243985,
+    "L": 317,
+    "K": 10121,
+    "S": 18987,
+    "T": 8486,
+    "avg_L": 0.018155784650630013,
+    "avg_K": 0.579667812142039,
+    "avg_S": 1.0874570446735394,
+    "avg_T": 0.48602520045819014,
+    "frac_no_skill": 0.3808132875143184,
+    "mean_span_tokens": 5.160270106301601,
+    "source_domain": {
+      "应届生招聘": 10312,
+      "人工智能招聘": 7148
+    },
+    "has_year_field": false,
+    "unique_esco_concepts": 0
+  },
+  "dev": {
+    "split": "dev",
+    "n_rows": 2143,
+    "n_unique_ids": 2143,
+    "avg_chars": 40.36957536164256,
+    "n_spans_total": 7043,
+    "avg_4d": 3.2865142323845076,
+    "L": 33,
+    "K": 2492,
+    "S": 3489,
+    "T": 1029,
+    "avg_L": 0.015398973401773215,
+    "avg_K": 1.1628558096126924,
+    "avg_S": 1.6280914605692953,
+    "avg_T": 0.4801679888007466,
+    "frac_no_skill": 0.18618758749416706,
+    "mean_span_tokens": 4.908703677410195,
+    "source_domain": {
+      "人工智能招聘": 2143
+    },
+    "has_year_field": false,
+    "unique_esco_concepts": 0
+  },
+  "test": {
+    "split": "test",
+    "n_rows": 3237,
+    "n_unique_ids": 3237,
+    "avg_chars": 43.85356811862836,
+    "n_spans_total": 6864,
+    "avg_4d": 2.1204819277108435,
+    "L": 32,
+    "K": 2382,
+    "S": 3419,
+    "T": 1031,
+    "avg_L": 0.009885696632684585,
+    "avg_K": 0.7358665430954587,
+    "avg_S": 1.0562248995983936,
+    "avg_T": 0.31850478838430646,
+    "frac_no_skill": 0.42601173926475133,
+    "mean_span_tokens": 5.288607226107226,
+    "source_domain": {
+      "人工智能招聘": 1423,
+      "阿里云公开数据集": 473,
+      "事业单位招聘": 1341
+    },
+    "has_year_field": false,
+    "unique_esco_concepts": 0
+  },
+  "gold2676": {
+    "split": "gold2676",
+    "n_rows": 2676,
+    "n_unique_ids": 2601,
+    "avg_chars": 43.22122571001495,
+    "n_spans_total": 6681,
+    "avg_4d": 2.4966367713004485,
+    "L": 31,
+    "K": 2238,
+    "S": 3401,
+    "T": 1011,
+    "avg_L": 0.011584454409566517,
+    "avg_K": 0.8363228699551569,
+    "avg_S": 1.2709267563527653,
+    "avg_T": 0.3778026905829596,
+    "frac_no_skill": 0.3598654708520179,
+    "mean_span_tokens": 4.899416255051639,
+    "source_domain": {
+      "人工智能招聘": 1407,
+      "阿里云公开数据集": 457,
+      "事业单位招聘": 812
+    },
+    "has_year_field": false,
+    "unique_esco_concepts": 0
+  },
+  "_meta": {
+    "created_utc": "2026-08-22T09:26:53.486725+00:00",
+    "note": "Avg 4D uses list_of_selection_bio4 via unified scorer. Paper Table 1 test Avg 4D 2.306 is not reproduced.",
+    "n_cross_split_near_exact_dups": 62,
+    "n_within_or_cross_dups": 962
+  }
+}

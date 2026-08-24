@@ -1,0 +1,39 @@
+{
+  "mode": "tight_v2",
+  "tight_max_tokens": 16,
+  "train_out": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/train_goldstyle_v2.jsonl",
+  "dev_out": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/dev_goldstyle_v2.jsonl",
+  "overwrote_corpus_train": false,
+  "touched_gold_v2": false,
+  "human80_locked": 80,
+  "human80_unaligned_spans": 0,
+  "train": {
+    "n": 17460,
+    "n_empty": 5160,
+    "n_with_span": 12300,
+    "source": {
+      "rule_v2_tight": 17380,
+      "human80": 80
+    },
+    "rule_vs_human80_exact": {
+      "n": 80,
+      "exact": 16
+    }
+  },
+  "dev": {
+    "n": 2143,
+    "n_empty": 328,
+    "n_with_span": 1815,
+    "source": {
+      "rule_v2_tight": 2143
+    },
+    "rule_vs_human80_exact": {
+      "n": 0,
+      "exact": 0
+    }
+  },
+  "span_token_len_goldstyle_mean": 11.374410124410124,
+  "span_token_len_silver_mean": 5.160270106301601,
+  "n_goldstyle_spans": 27972,
+  "n_silver_spans": 37911
+}

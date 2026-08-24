@@ -1,0 +1,34 @@
+{
+  "out": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/jobbert_demo_sents.jsonl",
+  "n": 80000,
+  "blocked_test_gold": 2584,
+  "sources": {
+    "应届生招聘大数据2014.csv": {
+      "n": 67,
+      "bytes": 7808
+    },
+    "应届生招聘大数据2015.csv": {
+      "n": 214,
+      "bytes": 24866
+    },
+    "应届生招聘大数据2016.csv": {
+      "n": 35000,
+      "bytes": 1685995450
+    },
+    "应届生招聘大数据2017.csv": {
+      "n": 12000,
+      "bytes": 189825024
+    },
+    "应届生招聘大数据2019.csv": {
+      "n": 35000,
+      "bytes": 645681943
+    },
+    "人工智能招聘大数据2025年.xlsx": {
+      "n": 8000,
+      "bytes": 5347303
+    }
+  },
+  "overwrote_train": false,
+  "touched_gold_v2": false,
+  "note": "Demo subsample only. Not Zhang-scale 3.2M."
+}

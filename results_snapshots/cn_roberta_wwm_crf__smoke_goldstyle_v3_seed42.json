@@ -1,0 +1,62 @@
+{
+  "seed": 42,
+  "model_dir": "/home/guojingli3/SCESC-LLM-skill-extraction/Baseline_Models_Collection/chinese-roberta-wwm-ext",
+  "best_dev_typed_f1": 0.3210310486233158,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 24.510039624713716,
+      "dev_typed_f1": 0.26624482842540764
+    },
+    {
+      "epoch": 2,
+      "train_loss": 16.14303103165749,
+      "dev_typed_f1": 0.29719252907318217
+    },
+    {
+      "epoch": 3,
+      "train_loss": 13.621843343689328,
+      "dev_typed_f1": 0.31481703659268145
+    },
+    {
+      "epoch": 4,
+      "train_loss": 11.557835294868482,
+      "dev_typed_f1": 0.3135498320268757
+    },
+    {
+      "epoch": 5,
+      "train_loss": 9.971759416899838,
+      "dev_typed_f1": 0.31699269384869194
+    },
+    {
+      "epoch": 6,
+      "train_loss": 8.891698524410472,
+      "dev_typed_f1": 0.3210310486233158
+    }
+  ],
+  "pred_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/cn_roberta_wwm_crf/smoke_goldstyle_v3_seed42/test_pred.jsonl",
+  "alignment_ok": true,
+  "typed_exact": {
+    "precision": 0.16070948669712443,
+    "recall": 0.09023690961219255,
+    "f1": 0.11557788944723618,
+    "tp": 598,
+    "fp": 3123,
+    "fn": 6029,
+    "pred": 3721,
+    "gold": 6627
+  },
+  "collapsed_exact": {
+    "precision": 0.17952163396936308,
+    "recall": 0.10079975856345254,
+    "f1": 0.12910707383069192,
+    "tp": 668,
+    "fp": 3053,
+    "fn": 5959,
+    "pred": 3721,
+    "gold": 6627
+  },
+  "gold_sha256": "7a26e32b89d4e501175cb96443e35e171cea08d91501d2a32779b96ee8504ff6",
+  "pred_sha256": "dbc36c08ebcec6af62731b0aa46e874c4f9a6c13f0320ad74967bc0f6ccf01c0",
+  "scorer_version": "cnss-lskt-1.2.0"
+}

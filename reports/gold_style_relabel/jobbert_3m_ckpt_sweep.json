@@ -1,0 +1,48 @@
+{
+  "n": 3,
+  "paper_numbers": false,
+  "ref_1m_typed_f1": 0.12244098344597903,
+  "rows": [
+    {
+      "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/jobbert_zh_3m_ckpt_sweep/crf_ckpt65000/run_summary.json",
+      "step": 65000,
+      "epoch": 1.3,
+      "best_dev": 0.32050821047584804,
+      "typed_f1": 0.12328089442960326,
+      "p": 0.17902298850574713,
+      "r": 0.09400935566621398,
+      "tp": 623,
+      "pred": 3480,
+      "gold": 6627,
+      "model_dir": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/jobbert_zh_3m/mlm/encoder_ckpt65000"
+    },
+    {
+      "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/jobbert_zh_3m_ckpt_sweep/crf_ckpt100000/run_summary.json",
+      "step": 100000,
+      "epoch": 2.0,
+      "best_dev": 0.3206933911159264,
+      "typed_f1": 0.11665004985044865,
+      "p": 0.17190714075815458,
+      "r": 0.0882752376641014,
+      "tp": 585,
+      "pred": 3403,
+      "gold": 6627,
+      "model_dir": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/jobbert_zh_3m/mlm/encoder_ckpt100000"
+    },
+    {
+      "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/jobbert_zh_3m/crf_v3_seed42/run_summary.json",
+      "step": null,
+      "epoch": null,
+      "best_dev": 0.3208569021542906,
+      "typed_f1": 0.11703718472734523,
+      "p": 0.17244418331374853,
+      "r": 0.08857703334842312,
+      "tp": 587,
+      "pred": 3404,
+      "gold": 6627,
+      "model_dir": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/jobbert_zh_3m/mlm/encoder",
+      "label": "final_encoder"
+    }
+  ],
+  "note": "Gold v2 typed exact micro F1. Internal sweep only."
+}

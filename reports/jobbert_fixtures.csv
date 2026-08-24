@@ -1,0 +1,13 @@
+i,note,legal_tp,legal_fp,legal_fn,repair_tp,seqdef_tp,ok
+1,exact match,1,0,0,1,1,1
+2,miss entire span,0,0,1,0,0,1
+3,false span,0,1,0,0,0,1
+4,right boundary short,0,1,1,0,0,1
+5,type mismatch; collapsed still matches if both SKILL,0,1,1,0,0,1
+6,illegal I-after-O,0,0,1,1,1,1
+7,long span,1,0,0,1,1,1
+8,merge two gold spans,0,1,2,0,0,1
+9,both empty,0,0,0,0,0,1
+10,pred longer; gold n used after align in scorer,1,0,0,1,1,1
+11,typed SKILL vs K,0,1,1,0,0,1
+12,illegal I-after-O covering the gold span,0,0,1,1,1,1

@@ -1,0 +1,115 @@
+{
+  "out": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/jobbert_listed_mix_1m_sents.jsonl",
+  "n": 1000000,
+  "target_n": 1000000,
+  "mix_policy": "gold_aligned_listed_40_ai_35_yj_25",
+  "target_frac": {
+    "上市公司招聘": 0.4,
+    "人工智能招聘": 0.35,
+    "应届生招聘": 0.25
+  },
+  "target_n_by_source": {
+    "上市公司招聘": 400000,
+    "人工智能招聘": 350000,
+    "应届生招聘": 250000
+  },
+  "actual": {
+    "人工智能招聘": 350000,
+    "应届生招聘": 250000,
+    "上市公司招聘": 400000
+  },
+  "actual_frac": {
+    "人工智能招聘": 0.35,
+    "应届生招聘": 0.25,
+    "上市公司招聘": 0.4
+  },
+  "listed_strata_actual": {
+    "it_hardware": 80000,
+    "it_software": 80000,
+    "cloud_ops": 20000,
+    "public_state": 60000,
+    "other": 60000,
+    "mfg_engineering": 100000
+  },
+  "listed_strata_target": {
+    "it_software": 80000,
+    "it_hardware": 80000,
+    "public_state": 60000,
+    "cloud_ops": 20000,
+    "mfg_engineering": 100000,
+    "other": 60000
+  },
+  "blocked_train_dev_test_gold": 20603,
+  "years_listed": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "listed_scan": {
+    "rows_scanned": 1289036,
+    "empty_jd": 2797,
+    "short_jd": 18749,
+    "company_jd_capped": 847,
+    "blocked_hits": 7052,
+    "dup_hits": 234303,
+    "files": [
+      {
+        "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/chineseskillspan-jobert-pretrain/上市公司招聘大数据2014-2026.3/分年份保存数据/上市公司招聘数据2025.csv",
+        "rows_scanned": 643828
+      },
+      {
+        "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/chineseskillspan-jobert-pretrain/上市公司招聘大数据2014-2026.3/分年份保存数据/上市公司招聘数据2021.csv",
+        "rows_scanned": 645208
+      }
+    ],
+    "strata_kept": {
+      "other": 60000,
+      "mfg_engineering": 100000,
+      "public_state": 60000,
+      "cloud_ops": 20000,
+      "it_hardware": 80000,
+      "it_software": 80000
+    },
+    "years_kept": {
+      "2025": 387994,
+      "2021": 12006
+    },
+    "remaining_unfilled": {}
+  },
+  "ai_scan": {
+    "rows_scanned": 36432,
+    "empty_jd": 1,
+    "hit_cap": true,
+    "years": {
+      "2019": 61862,
+      "2022": 15810,
+      "2023": 22756,
+      "2018": 116292,
+      "2020": 63322,
+      "2021": 58229,
+      "2024": 11729
+    }
+  },
+  "yj_scan": {
+    "rows_scanned": 30289,
+    "empty_jd": 0,
+    "hit_cap": true,
+    "years": {
+      "2020": 22360,
+      "2018": 111002,
+      "2023": 8293,
+      "2019": 24626,
+      "2021": 65154,
+      "2022": 12683,
+      "2024": 5882
+    }
+  },
+  "align_gold": true,
+  "align_note": "Listed yearly CSVs add 事业单位/制造业/IT diversity missing from AI+应届生 only. Still block exact Gold/train/dev/test sentences.",
+  "overwrote_train": false,
+  "touched_gold_v2": false
+}

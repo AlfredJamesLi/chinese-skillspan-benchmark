@@ -1,0 +1,12 @@
+---
+description: Chinese-SkillSpan tex — only confirmed numbers, no Access mix-in
+globs: "**/*.{tex,bib,csv}"
+alwaysApply: false
+---
+
+# Tex edits
+
+- Write only claims listed as confirmed in `.cursor/skills/cnss-overleaf/confirmed-results.md`.
+- If tex, confirmed-results, and the user PDF disagree, stop and report all three values.
+- Do not import Access table files (`tab_main_strict`, `tab_ablation_strict`, `tab_a_series`) or SRICL figure names.
+- Keep LKST dimension names consistent with the PDF (do not rename L/K/S/T ad hoc).

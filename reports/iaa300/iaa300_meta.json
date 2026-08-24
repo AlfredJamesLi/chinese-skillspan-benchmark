@@ -1,0 +1,24 @@
+{
+  "seed": 20260823,
+  "n": 300,
+  "excluded_human80": 80,
+  "quota": {
+    "人工智能招聘|empty": 50,
+    "人工智能招聘|low": 50,
+    "人工智能招聘|high": 50,
+    "应届生招聘|empty": 50,
+    "应届生招聘|low": 50,
+    "应届生招聘|high": 50
+  },
+  "actual": {
+    "应届生招聘|high": 50,
+    "人工智能招聘|empty": 50,
+    "应届生招聘|low": 50,
+    "人工智能招聘|high": 50,
+    "人工智能招聘|low": 50,
+    "应届生招聘|empty": 50
+  },
+  "overwrote_train": false,
+  "touched_gold_v2": false,
+    "note": "TRAIN human Gold-style 300 (excludes lock80). Not the eval Gold v3 pilot. Dual annotation not started."
+}

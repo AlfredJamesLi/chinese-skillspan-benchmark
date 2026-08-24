@@ -1,0 +1,53 @@
+# --- secrets (never commit) ---
+**/api_key.py
+**/.env
+**/.env.*
+**/*credentials*
+**/*secret*
+
+# --- model weights & checkpoints ---
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+**/mlm/checkpoint-*/
+**/checkpoint-*/
+
+# --- large training outputs (keep results_snapshots/ instead) ---
+output/
+**/test_pred.jsonl
+**/score_official.json
+**/history.json
+**/slurm_*.out
+**/slurm_*.err
+**/run.log
+**/run.pid
+**/monitor*.log
+**/monitor*.sh
+**/monitor*.nohup.out
+**/corpus_prep*.log
+**/corpus_prep*.nohup.out
+**/corpus_prep.pid
+
+# --- DAPT raw corpora & pretrain archives (see data/LARGE_DATA_MANIFEST.md) ---
+chineseskillspan-jobert-pretrain/
+data/jobbert_*_sents.jsonl
+data/jobbert_demo_sents.jsonl
+
+# --- stray large CSV dumps in paper root ---
+应届生招聘大数据*.csv
+人工智能招聘大数据*.xlsx
+
+# --- python / OS ---
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+
+# --- extracted temp ---
+**/_extract_sample/
+**/*.rar
+**/*.dta

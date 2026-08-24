@@ -1,0 +1,225 @@
+{
+  "created_utc": "2026-08-22T14:31:32.611225+00:00",
+  "source": "doubao_draft_plus_human_review",
+  "human_confirmed": true,
+  "overrides": {
+    "1987-s0045": "empty_not_试讲答辩",
+    "1988-s0113": "empty_not_学历_tiebreak",
+    "1991-s0042": "keep_医学专业_K_only"
+  },
+  "decisions": {
+    "1987-s0045": [],
+    "1987-s0059": [],
+    "1988-s0026": [
+      [
+        37,
+        54,
+        "K"
+      ]
+    ],
+    "1988-s0027": [],
+    "1988-s0063": [],
+    "1988-s0085": [],
+    "1988-s0107": [
+      [
+        38,
+        42,
+        "K"
+      ],
+      [
+        43,
+        47,
+        "T"
+      ],
+      [
+        48,
+        52,
+        "T"
+      ],
+      [
+        53,
+        57,
+        "T"
+      ],
+      [
+        58,
+        64,
+        "T"
+      ],
+      [
+        66,
+        70,
+        "T"
+      ]
+    ],
+    "1988-s0113": [],
+    "1988-s0154": [],
+    "1988-s0161": [],
+    "1989-s0001": [],
+    "1989-s0023": [],
+    "1991-s0006": [
+      [
+        4,
+        14,
+        "T"
+      ]
+    ],
+    "1991-s0033": [],
+    "1991-s0042": [
+      [
+        12,
+        16,
+        "K"
+      ]
+    ],
+    "1995-s0036": [],
+    "1995-s0037": [],
+    "1999-s0072": []
+  },
+  "rows": [
+    {
+      "id": "1987-s0045",
+      "n_raw": 2,
+      "kept_raw_line": 2077,
+      "dropped_raw_lines": "2086",
+      "spans": "[]",
+      "human_override": "empty_not_试讲答辩"
+    },
+    {
+      "id": "1987-s0059",
+      "n_raw": 2,
+      "kept_raw_line": 2091,
+      "dropped_raw_lines": "2094",
+      "spans": "[]",
+      "human_override": ""
+    },
+    {
+      "id": "1988-s0026",
+      "n_raw": 2,
+      "kept_raw_line": 2137,
+      "dropped_raw_lines": "2139",
+      "spans": "[[37, 54, \"K\"]]",
+      "human_override": ""
+    },
+    {
+      "id": "1988-s0027",
+      "n_raw": 2,
+      "kept_raw_line": 2140,
+      "dropped_raw_lines": "2141",
+      "spans": "[]",
+      "human_override": ""
+    },
+    {
+      "id": "1988-s0063",
+      "n_raw": 2,
+      "kept_raw_line": 2182,
+      "dropped_raw_lines": "2183",
+      "spans": "[]",
+      "human_override": ""
+    },
+    {
+      "id": "1988-s0085",
+      "n_raw": 2,
+      "kept_raw_line": 2205,
+      "dropped_raw_lines": "2206",
+      "spans": "[]",
+      "human_override": ""
+    },
+    {
+      "id": "1988-s0107",
+      "n_raw": 2,
+      "kept_raw_line": 2230,
+      "dropped_raw_lines": "2231",
+      "spans": "[[38, 42, \"K\"], [43, 47, \"T\"], [48, 52, \"T\"], [53, 57, \"T\"], [58, 64, \"T\"], [66, 70, \"T\"]]",
+      "human_override": ""
+    },
+    {
+      "id": "1988-s0113",
+      "n_raw": 2,
+      "kept_raw_line": 2237,
+      "dropped_raw_lines": "2238",
+      "spans": "[]",
+      "human_override": "empty_not_学历_tiebreak"
+    },
+    {
+      "id": "1988-s0154",
+      "n_raw": 2,
+      "kept_raw_line": 2278,
+      "dropped_raw_lines": "2282",
+      "spans": "[]",
+      "human_override": ""
+    },
+    {
+      "id": "1988-s0161",
+      "n_raw": 2,
+      "kept_raw_line": 2292,
+      "dropped_raw_lines": "2294",
+      "spans": "[]",
+      "human_override": ""
+    },
+    {
+      "id": "1989-s0001",
+      "n_raw": 3,
+      "kept_raw_line": 2293,
+      "dropped_raw_lines": "2299|2300",
+      "spans": "[]",
+      "human_override": ""
+    },
+    {
+      "id": "1989-s0023",
+      "n_raw": 2,
+      "kept_raw_line": 2327,
+      "dropped_raw_lines": "2332",
+      "spans": "[]",
+      "human_override": ""
+    },
+    {
+      "id": "1991-s0006",
+      "n_raw": 2,
+      "kept_raw_line": 2372,
+      "dropped_raw_lines": "2379",
+      "spans": "[[4, 14, \"T\"]]",
+      "human_override": ""
+    },
+    {
+      "id": "1991-s0033",
+      "n_raw": 2,
+      "kept_raw_line": 2407,
+      "dropped_raw_lines": "2408",
+      "spans": "[]",
+      "human_override": ""
+    },
+    {
+      "id": "1991-s0042",
+      "n_raw": 2,
+      "kept_raw_line": 2419,
+      "dropped_raw_lines": "2420",
+      "spans": "[[12, 16, \"K\"]]",
+      "human_override": "keep_医学专业_K_only"
+    },
+    {
+      "id": "1995-s0036",
+      "n_raw": 2,
+      "kept_raw_line": 2504,
+      "dropped_raw_lines": "2505",
+      "spans": "[]",
+      "human_override": ""
+    },
+    {
+      "id": "1995-s0037",
+      "n_raw": 2,
+      "kept_raw_line": 2506,
+      "dropped_raw_lines": "2510",
+      "spans": "[]",
+      "human_override": ""
+    },
+    {
+      "id": "1999-s0072",
+      "n_raw": 2,
+      "kept_raw_line": 2668,
+      "dropped_raw_lines": "2669",
+      "spans": "[]",
+      "human_override": ""
+    }
+  ]
+}

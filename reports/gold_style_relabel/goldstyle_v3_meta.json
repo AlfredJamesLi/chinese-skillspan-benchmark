@@ -1,0 +1,334 @@
+{
+  "mode": "gold_length_v3",
+  "hard_cap_tokens": 13,
+  "train_out": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/train_goldstyle_v3.jsonl",
+  "dev_out": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/dev_goldstyle_v3.jsonl",
+  "overwrote_corpus_train": false,
+  "touched_gold_v2": false,
+  "rewrote_sample80_final": false,
+  "human80_locked": 80,
+  "human80_unaligned_spans": 0,
+  "train": {
+    "n": 17460,
+    "n_empty": 6558,
+    "n_with_span": 10902,
+    "source": {
+      "rule_v3": 17380,
+      "human80": 80
+    },
+    "rule_vs_human80_exact": {
+      "n": 80,
+      "exact": 20
+    }
+  },
+  "dev": {
+    "n": 2143,
+    "n_empty": 400,
+    "n_with_span": 1743,
+    "source": {
+      "rule_v3": 2143
+    },
+    "rule_vs_human80_exact": {
+      "n": 0,
+      "exact": 0
+    }
+  },
+  "span_token_len": {
+    "gold_v2": {
+      "n": 6627,
+      "mean": 4.897087671646296,
+      "median": 4,
+      "p10": 2.0,
+      "p25": 2.0,
+      "p50": 4.0,
+      "p75": 6.0,
+      "p90": 9.0,
+      "p95": 11.0,
+      "min": 1,
+      "max": 42,
+      "share_4_12": 0.6405613399728384,
+      "share_gt14": 0.021578391429002565
+    },
+    "human80": {
+      "n": 89,
+      "mean": 17.89887640449438,
+      "median": 16,
+      "p10": 6.0,
+      "p25": 10.0,
+      "p50": 16.0,
+      "p75": 26.0,
+      "p90": 31.400000000000006,
+      "p95": 36.599999999999994,
+      "min": 2,
+      "max": 57,
+      "share_4_12": 0.3258426966292135,
+      "share_gt14": 0.550561797752809
+    },
+    "silver_train": {
+      "n": 37911,
+      "mean": 5.160270106301601,
+      "median": 5,
+      "p10": 3.0,
+      "p25": 3.0,
+      "p50": 5.0,
+      "p75": 6.0,
+      "p90": 8.0,
+      "p95": 10.0,
+      "min": 1,
+      "max": 34,
+      "share_4_12": 0.6377040964363905,
+      "share_gt14": 0.009205771411991243
+    },
+    "v3": {
+      "n": 25401,
+      "mean": 6.7106019448053225,
+      "median": 5,
+      "p10": 3.0,
+      "p25": 3.0,
+      "p50": 5.0,
+      "p75": 11.0,
+      "p90": 13.0,
+      "p95": 13.0,
+      "min": 1,
+      "max": 57,
+      "share_4_12": 0.5661588126451714,
+      "share_gt14": 0.001929057911105862
+    },
+    "v1": {
+      "n": 12588,
+      "mean": 34.755640292341916,
+      "median": 27.0,
+      "p25": 19.0,
+      "p50": 27.0,
+      "p75": 39.0,
+      "p90": 59.0,
+      "share_4_12": 0.08198284080076262,
+      "share_gt14": 0.8740069907848745,
+      "note": "from goldstyle_v1_meta + audit; not regenerated this round"
+    },
+    "v2": {
+      "n": 27972,
+      "mean": 11.374410124410124,
+      "median": 11.0,
+      "p25": 8.0,
+      "p50": 11.0,
+      "p75": 15.0,
+      "p90": 16.0,
+      "share_4_12": 0.5786500786500787,
+      "share_gt14": 0.2907907907907908,
+      "note": "from goldstyle_v2_meta + audit; not regenerated this round"
+    }
+  },
+  "human80_systematically_longer_than_gold": true,
+  "mean_closer_to_gold_than_v2": true,
+  "gpu_smoke_ready": true,
+  "examples": {
+    "gold_v2": [
+      {
+        "id": "1802-s0007",
+        "type": "S",
+        "len": 12,
+        "text": "高级系统管理的强大的技术"
+      },
+      {
+        "id": "1802-s0007",
+        "type": "S",
+        "len": 5,
+        "text": "虚拟化经验"
+      },
+      {
+        "id": "1802-s0008",
+        "type": "S",
+        "len": 7,
+        "text": "AWS工作经验"
+      },
+      {
+        "id": "1802-s0008",
+        "type": "T",
+        "len": 3,
+        "text": "组织性"
+      },
+      {
+        "id": "1802-s0008",
+        "type": "T",
+        "len": 3,
+        "text": "主动性"
+      },
+      {
+        "id": "1802-s0008",
+        "type": "L",
+        "len": 6,
+        "text": "英文读写能力"
+      },
+      {
+        "id": "1802-s0008",
+        "type": "T",
+        "len": 4,
+        "text": "沟通能力"
+      },
+      {
+        "id": "1802-s0008",
+        "type": "T",
+        "len": 6,
+        "text": "团队合作精神"
+      }
+    ],
+    "human80": [
+      {
+        "id": "1004-s0009",
+        "type": "K",
+        "len": 36,
+        "text": "掌握图像滤波、轮廓提取、边缘检测、形态学处理、图像分割等各类图像处理理论"
+      },
+      {
+        "id": "1019-s0004",
+        "type": "K",
+        "len": 7,
+        "text": "本科及以上学历"
+      },
+      {
+        "id": "1019-s0004",
+        "type": "K",
+        "len": 8,
+        "text": "计算机或相关专业"
+      },
+      {
+        "id": "1019-s0004",
+        "type": "K",
+        "len": 5,
+        "text": "JAVA基础扎实"
+      },
+      {
+        "id": "1019-s0004",
+        "type": "S",
+        "len": 15,
+        "text": "熟悉io、多线程、集合等基础框架"
+      },
+      {
+        "id": "1019-s0004",
+        "type": "S",
+        "len": 14,
+        "text": "熟悉分布式、缓存、消息等机制"
+      },
+      {
+        "id": "1042-s0005",
+        "type": "S",
+        "len": 6,
+        "text": "市场营销经验"
+      },
+      {
+        "id": "1042-s0005",
+        "type": "S",
+        "len": 14,
+        "text": "能够熟练编写投标书等商务文案"
+      }
+    ],
+    "v3": [
+      {
+        "id": "1-s0000",
+        "type": "S",
+        "len": 4,
+        "text": "教练签约",
+        "src": "rule_v3"
+      },
+      {
+        "id": "1-s0011",
+        "type": "T",
+        "len": 3,
+        "text": "责任感",
+        "src": "rule_v3"
+      },
+      {
+        "id": "1-s0011",
+        "type": "T",
+        "len": 4,
+        "text": "勤奋好学",
+        "src": "rule_v3"
+      },
+      {
+        "id": "1-s0014",
+        "type": "T",
+        "len": 13,
+        "text": "从事健身行业并取得长远发展",
+        "src": "rule_v3"
+      },
+      {
+        "id": "1-s0020",
+        "type": "K",
+        "len": 5,
+        "text": "体系和晋升",
+        "src": "rule_v3"
+      },
+      {
+        "id": "1-s0020",
+        "type": "K",
+        "len": 3,
+        "text": "机制.",
+        "src": "rule_v3"
+      },
+      {
+        "id": "1-s0020",
+        "type": "S",
+        "len": 7,
+        "text": "求回当地工作的",
+        "src": "rule_v3"
+      },
+      {
+        "id": "1-s0020",
+        "type": "S",
+        "len": 4,
+        "text": "调回当地",
+        "src": "rule_v3"
+      },
+      {
+        "id": "1-s0020",
+        "type": "K",
+        "len": 7,
+        "text": "健身俱乐部工作",
+        "src": "rule_v3"
+      },
+      {
+        "id": "2-s0000",
+        "type": "S",
+        "len": 2,
+        "text": "接待",
+        "src": "rule_v3"
+      }
+    ],
+    "v3_cleaner": [
+      {
+        "id": "340-s0002",
+        "type": "T",
+        "len": 3,
+        "text": "主动性"
+      },
+      {
+        "id": "245-s0013",
+        "type": "T",
+        "len": 6,
+        "text": "团队协作能力"
+      },
+      {
+        "id": "444-s0000",
+        "type": "L",
+        "len": 8,
+        "text": "德语读写能力良好"
+      },
+      {
+        "id": "1241-s0003",
+        "type": "S",
+        "len": 4,
+        "text": "统筹规划"
+      },
+      {
+        "id": "1152-s0016",
+        "type": "K",
+        "len": 2,
+        "text": "金融"
+      }
+    ]
+  },
+  "n_goldstyle_spans": 25401,
+  "n_silver_spans": 37911,
+  "did_not_start_gpu": true
+}

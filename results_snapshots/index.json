@@ -1,0 +1,57 @@
+[
+  {
+    "path": "cn_roberta_wwm_crf/smoke_goldstyle_seed42",
+    "f1": 0.0,
+    "dev": 0.656926406926407
+  },
+  {
+    "path": "cn_roberta_wwm_crf/smoke_goldstyle_v2_seed42",
+    "f1": 0.023807292154841127,
+    "dev": 0.559161826671222
+  },
+  {
+    "path": "cn_roberta_wwm_crf/smoke_goldstyle_v3_seed42",
+    "f1": 0.11557788944723618,
+    "dev": 0.3210310486233158
+  },
+  {
+    "path": "cn_roberta_wwm_crf/smoke_seed42_gpu1",
+    "f1": 0.012034070485269987,
+    "dev": 0.5714285714285714
+  },
+  {
+    "path": "jobbert_1m_human380_v3merge_seed42",
+    "f1": 0.1207287050713934,
+    "dev": 0.3163144146283543
+  },
+  {
+    "path": "jobbert_zh_1m/crf_v3_seed42",
+    "f1": 0.12244098344597903,
+    "dev": 0.3184878913171884
+  },
+  {
+    "path": "jobbert_zh_3m/crf_ckpt65000_ep1",
+    "f1": 0.12328089442960326,
+    "dev": 0.32050821047584804
+  },
+  {
+    "path": "jobbert_zh_3m/crf_v3_seed42",
+    "f1": 0.11703718472734523,
+    "dev": 0.3208569021542906
+  },
+  {
+    "path": "jobbert_zh_3m_ckpt_sweep/crf_ckpt100000",
+    "f1": 0.11665004985044865,
+    "dev": 0.3206933911159264
+  },
+  {
+    "path": "jobbert_zh_3m_ckpt_sweep/crf_ckpt65000",
+    "f1": 0.12328089442960326,
+    "dev": 0.32050821047584804
+  },
+  {
+    "path": "jobbert_zh_demo/crf_v3_seed42",
+    "f1": 0.1151972490209189,
+    "dev": 0.32313906520484703
+  }
+]

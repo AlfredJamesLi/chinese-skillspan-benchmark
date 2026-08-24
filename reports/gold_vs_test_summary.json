@@ -1,0 +1,16 @@
+{
+  "test_rows": 3237,
+  "test_unique_ids": 3237,
+  "gold_rows": 2676,
+  "gold_unique_ids": 2601,
+  "gold_duplicate_ids": 74,
+  "gold_subset_of_test": true,
+  "n_test_not_in_gold": 636,
+  "n_gold_not_in_test": 0,
+  "test_not_in_gold_by_domain": {
+    "事业单位招聘": 604,
+    "人工智能招聘": 16,
+    "阿里云公开数据集": 16
+  },
+  "verdict": "2676 is a row count, not 2676 unique sentences. Unique Gold IDs = 2601, all contained in the 3237-sentence test. 636 test IDs have no Gold row. Gold also repeats 75 extra rows (duplicate IDs). Do not merge the two sets."
+}

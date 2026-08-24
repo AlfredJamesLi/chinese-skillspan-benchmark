@@ -1,0 +1,7 @@
+先读 @HANDOVER_OVERLEAF.md，读完再改任何 tex。
+
+当前是本机 Overleaf 编辑窗口，论文是 Chinese-SkillSpan / Chinese Skill Benchmark，不是 IEEE Access / SRICL。按该交接文档区分：已确认可写入；尚未验证不得写成结论；须交回服务器的问题。
+
+然后执行 git status、git pull --ff-only origin main，确认分支与路径为本 Overleaf 仓库、工作区无来源不明修改。
+
+未确认前不要 commit / push / 删除文件。先做 P0 一致性检查并给出冲突表。

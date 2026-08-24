@@ -1,0 +1,63 @@
+{
+  "out": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/jobbert_1m_sents.jsonl",
+  "n": 1000000,
+  "target_n": 1000000,
+  "mix_policy": "corpus_train_59_41",
+  "target": {
+    "应届生招聘": 590600,
+    "人工智能招聘": 409400
+  },
+  "actual": {
+    "应届生招聘": 590600,
+    "人工智能招聘": 409400
+  },
+  "actual_frac": {
+    "应届生招聘": 0.5906,
+    "人工智能招聘": 0.4094
+  },
+  "blocked_train_dev_test_gold": 20603,
+  "files": {
+    "人工智能": {
+      "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/chineseskillspan-jobert-pretrain/人工智能招聘大数据2014-2025.3/人工智能招聘大数据.csv",
+      "bytes": 2278936463,
+      "scan": {
+        "rows_scanned": 42819,
+        "empty_jd": 1,
+        "hit_cap": true,
+        "years": {
+          "2019": 72186,
+          "2022": 17989,
+          "2023": 26813,
+          "2018": 135787,
+          "2020": 74159,
+          "2021": 68641,
+          "2024": 13825
+        }
+      },
+      "kept": 409400
+    },
+    "应届生": {
+      "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/chineseskillspan-jobert-pretrain/应届生招聘大数据（2014-2025.6）/应届生招聘大数据（2014-2025.6）.csv",
+      "bytes": 7549747200,
+      "scan": {
+        "rows_scanned": 76087,
+        "empty_jd": 0,
+        "hit_cap": true,
+        "years": {
+          "2020": 51846,
+          "2018": 256208,
+          "2023": 19700,
+          "2019": 58454,
+          "2021": 157334,
+          "2022": 31757,
+          "2024": 15301
+        }
+      },
+      "kept": 590600
+    }
+  },
+  "align_gold": false,
+  "align_note": "Gold/test are 人工智能+阿里云+事业单位 (no 应届生). These two CSVs cannot match Gold. Mid-rung follows train 59:41. 事业单位/阿里云 DAPT is a later corpus-construction step.",
+  "overwrote_train": false,
+  "touched_gold_v2": false
+}

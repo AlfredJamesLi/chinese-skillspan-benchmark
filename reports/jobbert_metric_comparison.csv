@@ -1,0 +1,13 @@
+scheme,f1,precision,recall,tp,fp,fn,notes
+official_1.2_raw_dump_collapsed_exact,0.004518845640340967,0.0034211958634631835,0.00665356116739755,44,12817,6569,original dump; alignment_ok=False; duplicate predictions for 56 gold IDs
+official_1.2_unique_view_typed_exact,0.0,0.0,0.0,0,13022,6618,pred_tags are SKILL not L/K/S/T so typed exact is ~0
+official_1.2_unique_view_collapsed_exact,0.004480651731160896,0.0033788972508063276,0.006648534300392868,44,12978,6574,alignment_ok=True; BIO-legal B/I; I-after-O dropped; unique-first view
+official_1.2_unique_view_collapsed_relaxed,0.07250509164969449,0.054676700967593306,0.10758537322453914,712,12310,5906,token IoU>=0.5
+strict_BIO_legal_collapsed,0.004480651731160896,0.0033788972508063276,0.006648534300392868,44,12978,6574,same decode as scorer tags_to_spans
+repair_I_to_B_collapsed,0.006462322878994485,0.004019766927275409,0.016470232698700515,109,27007,6509,I after O or type-break becomes B
+seqeval_default_I_starts_entity,0.006462322878994485,0.004019766927275409,0.016470232698700515,109,27007,6509,I-without-B starts a span
+seqeval_strict_drop_illegal_I,0.004480651731160896,0.0033788972508063276,0.006648534300392868,44,12978,6574,I-without-B dropped (IOB2-like)
+seqeval_python_package,0.006462322878994485,0.004019766927275409,0.016470232698700515,,,,"{""default_f1"": 0.006462322878994485, ""default_p"": 0.004019766927275409, ""default_r"": 0.016470232698700515, ""strict_iob2_f1"": 0.004480651731160896, ""strict_iob2_p"": 0.0033788972508063276, ""strict_iob2_r"": 0.006648534300392868}"
+paper_table3_jobbert_skill,0.0045,0.0025,0.0213,,,,published S-F1; do not replace with 0.46
+v1.1_global_set_bug_collapsed,0.46,,,,,,"INVALID: v1.0-1.1 global set of (start,end,type) without sentence id"
+official_1.2_jobbert_knowledge_unique_collapsed,0.003734733017058645,0.002803879963625341,0.005590812934421275,37,13159,6581,alignment_ok=True; paper 0.0038

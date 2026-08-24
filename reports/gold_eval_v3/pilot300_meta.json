@@ -1,0 +1,33 @@
+{
+  "seed": 20260823,
+  "n": 300,
+  "gold_v2": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/gold_canonical_v2.jsonl",
+  "gold_v2_sha256": "7a26e32b89d4e501175cb96443e35e171cea08d91501d2a32779b96ee8504ff6",
+  "quota": {
+    "人工智能招聘|empty": 33,
+    "人工智能招聘|low": 33,
+    "人工智能招聘|high": 33,
+    "阿里云公开数据集|empty": 33,
+    "阿里云公开数据集|low": 33,
+    "阿里云公开数据集|high": 33,
+    "事业单位招聘|empty": 36,
+    "事业单位招聘|low": 33,
+    "事业单位招聘|high": 33
+  },
+  "actual": {
+    "阿里云公开数据集|low": 33,
+    "事业单位招聘|low": 33,
+    "事业单位招聘|high": 33,
+    "人工智能招聘|empty": 33,
+    "阿里云公开数据集|empty": 33,
+    "阿里云公开数据集|high": 33,
+    "事业单位招聘|empty": 36,
+    "人工智能招聘|high": 33,
+    "人工智能招聘|low": 33
+  },
+  "short_cells": [],
+  "empty_hint_n": 71,
+  "overwrote_gold_v2": false,
+  "overwrote_train": false,
+  "note": "Worksheet only. Dual IAA not started. v2 spans are in pilot300_v2_reference.json for adjudication only."
+}

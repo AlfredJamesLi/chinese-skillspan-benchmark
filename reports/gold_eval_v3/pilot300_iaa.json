@@ -1,0 +1,27 @@
+{
+  "n": 300,
+  "missing_a": [],
+  "missing_b": [],
+  "exact_sentence_agree": 213,
+  "exact_sentence_agree_frac": 0.71,
+  "typed_span_micro": {
+    "tp": 231,
+    "pred": 380,
+    "gold": 296,
+    "p": 0.6078947368421053,
+    "r": 0.7804054054054054,
+    "f1": 0.6834319526627218
+  },
+  "empty_lock_applied": 39,
+  "unaligned_spans": 0,
+  "how": {
+    "intersection": 37,
+    "exact_agree": 213,
+    "take_a_b_empty": 39,
+    "adjudicate_prefer_a": 11
+  },
+  "overwrote_gold_v2": false,
+  "note": "LLM dual pass + empty-lock + heuristic adjudicate. Not human IAA. Not official Gold.",
+  "paper_numbers": false,
+  "out_jsonl": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/gold_eval_v3_pilot300.jsonl"
+}

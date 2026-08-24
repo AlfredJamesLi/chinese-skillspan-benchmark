@@ -1,0 +1,16 @@
+---
+description: Local Overleaf editor for the Chinese-SkillSpan paper — git safety, no experiments
+alwaysApply: true
+---
+
+# Overleaf window (Chinese-SkillSpan)
+
+This repo is the local Overleaf clone for **Chinese-SkillSpan**, not the GPU server and not IEEE Access / SRICL.
+
+Read `HANDOVER_OVERLEAF.md` before any tex edit. Compact checklists live under `.cursor/skills/cnss-overleaf/`; if they disagree with the handover, stop and report.
+
+On start, run: `git status`; `git pull --ff-only origin main`; `git branch --show-current`. Stop if pull is not fast-forward or the working tree has unexplained changes.
+
+Never train, run sbatch, activate conda experiment envs, rescore dumps, or guess missing F1. Do not write SRICL / Access English six-dataset tables into this paper.
+
+After edits, show the full diff and a check report. Do not commit, push, delete files, or force-push until the user confirms.

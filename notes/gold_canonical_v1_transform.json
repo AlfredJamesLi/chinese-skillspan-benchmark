@@ -1,0 +1,312 @@
+{
+  "created_utc": "2026-08-22T11:30:15.835484+00:00",
+  "raw_path": "/home/guojingli3/SCESC-LLM-skill-extraction/chinese_skillspan_preprocessing/data/doccano_to_baseline_file/admin_Baseline_test.jsonl",
+  "raw_sha256": "103e400c79eb3954d0857e7000b4388773622fda6a333e72be7720bf27f5e172",
+  "raw_rows": 2676,
+  "raw_unique_ids": 2601,
+  "raw_extra_rows": 75,
+  "raw_dup_ids": 74,
+  "triple_or_more_ids": [
+    "1989-s0001"
+  ],
+  "occurrence_freq": {
+    "1": 2527,
+    "2": 73,
+    "3": 1
+  },
+  "classification": {
+    "exact_duplicate": 56,
+    "annotation_conflict": 18
+  },
+  "canonical_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/gold_canonical_v1.jsonl",
+  "canonical_rows": 2583,
+  "canonical_unique_ids": 2583,
+  "n_dropped_exact": 56,
+  "n_conflicts_held_out": 37,
+  "n_collision_remaps": 0,
+  "frozen": false,
+  "freeze_blocked_reason": "18 IDs have annotation conflicts and were held out",
+  "dropped_exact": [
+    {
+      "id": "1987-s0016",
+      "raw_line": 2047,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1987-s0022",
+      "raw_line": 2054,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1987-s0038",
+      "raw_line": 2078,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1987-s0066",
+      "raw_line": 2107,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0005",
+      "raw_line": 2114,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0006",
+      "raw_line": 2118,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0010",
+      "raw_line": 2122,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0035",
+      "raw_line": 2153,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0038",
+      "raw_line": 2157,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0049",
+      "raw_line": 2166,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0054",
+      "raw_line": 2172,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0056",
+      "raw_line": 2176,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0091",
+      "raw_line": 2213,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0101",
+      "raw_line": 2224,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0126",
+      "raw_line": 2252,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0145",
+      "raw_line": 2273,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0156",
+      "raw_line": 2285,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0157",
+      "raw_line": 2291,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1988-s0159",
+      "raw_line": 2289,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1989-s0000",
+      "raw_line": 2298,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1989-s0006",
+      "raw_line": 2306,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1989-s0007",
+      "raw_line": 2308,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1989-s0013",
+      "raw_line": 2316,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1989-s0021",
+      "raw_line": 2324,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1989-s0022",
+      "raw_line": 2326,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1989-s0024",
+      "raw_line": 2333,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1989-s0025",
+      "raw_line": 2330,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1989-s0026",
+      "raw_line": 2335,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1989-s0029",
+      "raw_line": 2338,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1990-s0013",
+      "raw_line": 2354,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1990-s0017",
+      "raw_line": 2360,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1990-s0018",
+      "raw_line": 2362,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1991-s0003",
+      "raw_line": 2375,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1991-s0008",
+      "raw_line": 2380,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1991-s0010",
+      "raw_line": 2383,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1991-s0011",
+      "raw_line": 2385,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1991-s0036",
+      "raw_line": 2412,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1991-s0035",
+      "raw_line": 2411,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1991-s0037",
+      "raw_line": 2423,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1991-s0038",
+      "raw_line": 2415,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1991-s0045",
+      "raw_line": 2427,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1993-s0009",
+      "raw_line": 2453,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1995-s0001",
+      "raw_line": 2470,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1995-s0013",
+      "raw_line": 2487,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1995-s0019",
+      "raw_line": 2486,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1995-s0020",
+      "raw_line": 2492,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1995-s0030",
+      "raw_line": 2507,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1995-s0052",
+      "raw_line": 2524,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1995-s0053",
+      "raw_line": 2528,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1995-s0087",
+      "raw_line": 2559,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1996-s0006",
+      "raw_line": 2569,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1999-s0019",
+      "raw_line": 2609,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1999-s0012",
+      "raw_line": 2638,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1999-s0018",
+      "raw_line": 2634,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1999-s0043",
+      "raw_line": 2640,
+      "reason": "exact_duplicate"
+    },
+    {
+      "id": "1999-s0074",
+      "raw_line": 2672,
+      "reason": "exact_duplicate"
+    }
+  ],
+  "id_map": []
+}
