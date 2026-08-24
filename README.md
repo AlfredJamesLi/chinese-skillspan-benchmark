@@ -80,7 +80,7 @@ Encoder 在**事业单位**上接近失败（~0.015），ChatGPT 在该域最强
 | Concept Accuracy / ESCO concept-ID | 无 concept ID，不做 |
 | Time-OOD | 无 year 字段，不做 |
 | Encoder 3-seed（ckpt65000 / 1M / vanilla） | **进行中**（GPU3；seed 42 已有，补 123/2026） |
-| Claude / Kimi dump 补全 | **进行中**（API 补 98+293 ID） |
+| Claude / Kimi dump 补全 | **受阻**（`api.claude-Plus.top` 返回 HTML；不伪造 Claude/Kimi 标签） |
 | BERT-CRF 已有 vanilla 对照 | RoBERTa-wwm v3 seed42 = 0.1156；3-seed 待填 |
 | XLM-R / ESCO lexicon / span baseline | 待填（本地无 XLM-R 权重） |
 | human IAA-300 | 待填 |

@@ -80,7 +80,8 @@
     {
       "id": "claude_kimi_dump_fill",
       "description": "Complete Claude/Kimi Gold v2 dumps (98/293 missing IDs)",
-      "status": "partial",
+      "status": "blocked",
+      "reason": "api.claude-Plus.top returns HTML 200; do not use as Claude/Kimi labels. Local Qwen fill deferred until GPU3 3-seed finishes.",
       "metrics": {
         "Claude_typed_f1": 0.257,
         "Kimi_typed_f1": 0.1651,
