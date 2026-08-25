@@ -58,6 +58,16 @@ MODELS = [
     ("JobBERT_1M_cws_retrain", PAPER / "output/jobbert_zh_1m/crf_lskt_v4_cws_seed42/test_pred.jsonl", "encoder"),
 ]
 
+# Used when `output/` is not cloned. Raw jsonl is jieba-snapped at eval time.
+FROZEN = PAPER / "data/frozen_preds"
+FROZEN_FALLBACK = {
+    "JobBERT_1M_v4": (FROZEN / "jobbert_1m_v4.jsonl", "encoder_v4_needs_cws"),
+    "JobBERT_3M_v4": (FROZEN / "jobbert_3m_v4.jsonl", "encoder_v4_needs_cws"),
+    "JobBERT_1M_v4_raw": (FROZEN / "jobbert_1m_v4.jsonl", "encoder_v4_needs_cws"),
+    "JobBERT_3M_v4_raw": (FROZEN / "jobbert_3m_v4.jsonl", "encoder_v4_needs_cws"),
+    "JobBERT_1M_cws_retrain": (FROZEN / "jobbert_1m_v4_cws_retrain.jsonl", "encoder"),
+}
+
 
 def empty_pred(gold: dict) -> dict:
     toks = [str(t) for t in (gold.get("tokens") or list(gold.get("sentence") or ""))]
@@ -163,6 +173,8 @@ def main() -> int:
 
     rows = []
     for name, path, kind in MODELS:
+        if not path.is_file() and name in FROZEN_FALLBACK:
+            path, kind = FROZEN_FALLBACK[name]
         if not path.is_file():
             rows.append({"model": name, "kind": kind, "missing_file": str(path)})
             print(f"MISSING {name} {path}")

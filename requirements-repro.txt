@@ -1,0 +1,9 @@
+# Scoring-only extras (no GPU)
+
+The official scorer is stdlib. Jieba is required for SOP CWS snap / hybrid eval.
+
+```
+jieba>=0.42.1
+```
+
+Encoder training (MLM + CRF) needs the parent repo `requirements.txt` (torch, transformers, seqeval) and `pytorch-crf` on `PYTHONPATH`.

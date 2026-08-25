@@ -35,7 +35,8 @@ File → Open Folder → 本机 Overleaf 克隆（不要开 `access_paper/overle
 |---|---|
 | `HANDOVER_OVERLEAF.md` | 完整交接（先读） |
 | `AGENTS.md` | 窗口身份 |
-| `CODEX_PROMPT.md` | 给 Codex 的改表提示词（整段粘贴） |
+| `CODEX_PROMPT_ALL.md` | 给 Codex 的合并改稿提示词（整段粘贴） |
+| `CODEX_PROMPT_PROTOCOL_CONSULT.md` | 先咨询新旧协议表结构（不改 tex） |
 | `.cursor/skills/cnss-overleaf/confirmed-results.md` | 已确认数字 |
 | `.cursor/skills/cnss-overleaf/not-for-paper.md` | 禁写清单 |
 | `tables/` | Overleaf 用 CSV（Gold v2 / encoder / 分域） |

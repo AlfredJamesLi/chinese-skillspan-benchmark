@@ -1,0 +1,207 @@
+{
+  "protocol": "jieba_bilateral_old_llm_dumps",
+  "api_calls": 0,
+  "test_gold_full": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_cws_simhuman980_hybrid.jsonl",
+  "test_gold_980": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_simhuman980_cws.jsonl",
+  "note": "Frozen @@span## dumps, jieba-snapped. Missing IDs empty-filled. Not Gold v2. Not a new API run.",
+  "scorer": "cnss-lskt-1.2.0",
+  "coverage": [
+    {
+      "model": "ChatGPT",
+      "dump": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/views/ChatGPT_unique_first_v2.jsonl",
+      "n_dump_ids": 2639,
+      "n_missing_vs_hybrid2601": 0,
+      "n_missing_in_simhuman980": 0,
+      "complete": true
+    },
+    {
+      "model": "Claude",
+      "dump": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/views/Claude_unique_first_v2.jsonl",
+      "n_dump_ids": 2536,
+      "n_missing_vs_hybrid2601": 98,
+      "n_missing_in_simhuman980": 45,
+      "complete": false
+    },
+    {
+      "model": "Kimi",
+      "dump": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/views/Kimi_unique_first_v2.jsonl",
+      "n_dump_ids": 2341,
+      "n_missing_vs_hybrid2601": 293,
+      "n_missing_in_simhuman980": 160,
+      "complete": false
+    },
+    {
+      "model": "DeepSeek",
+      "dump": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/views/DeepSeek_unique_first_v2.jsonl",
+      "n_dump_ids": 2639,
+      "n_missing_vs_hybrid2601": 0,
+      "n_missing_in_simhuman980": 0,
+      "complete": true
+    },
+    {
+      "model": "Qwen",
+      "dump": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/views/Qwen_unique_first_v2.jsonl",
+      "n_dump_ids": 3237,
+      "n_missing_vs_hybrid2601": 0,
+      "n_missing_in_simhuman980": 0,
+      "complete": true
+    }
+  ],
+  "rows": [
+    {
+      "model": "ChatGPT",
+      "n_dump_ids": 2639,
+      "n_missing": 0,
+      "n_missing_in_simhuman980": 0,
+      "status": "complete",
+      "full2601": {
+        "alignment_ok": true,
+        "n_gold": 2601,
+        "n_matched": 2601,
+        "n_missing": 0,
+        "typed_exact_p": 0.2370580808080808,
+        "typed_exact_r": 0.3583870198043426,
+        "typed_exact_f1": 0.2853614515056522,
+        "typed_relaxed_f1": 0.6248693834900731,
+        "collapsed_exact_f1": 0.2973306735062221,
+        "collapsed_relaxed_f1": 0.6556473829201102
+      },
+      "simhuman980": {
+        "alignment_ok": true,
+        "n_gold": 980,
+        "n_matched": 980,
+        "n_missing": 0,
+        "typed_exact_p": 0.23660502607871028,
+        "typed_exact_r": 0.35377525700106344,
+        "typed_exact_f1": 0.28356300610882224,
+        "typed_relaxed_f1": 0.6446938485580338,
+        "collapsed_exact_f1": 0.29691717573518966,
+        "collapsed_relaxed_f1": 0.679926125870152
+      }
+    },
+    {
+      "model": "Claude",
+      "n_dump_ids": 2536,
+      "n_missing": 98,
+      "n_missing_in_simhuman980": 45,
+      "status": "incomplete_empty_fill_98",
+      "full2601": {
+        "alignment_ok": true,
+        "n_gold": 2601,
+        "n_matched": 2601,
+        "n_missing": 0,
+        "typed_exact_p": 0.11491538764266036,
+        "typed_exact_r": 0.20901932712956334,
+        "typed_exact_f1": 0.1482986287455561,
+        "typed_relaxed_f1": 0.334856949382089,
+        "collapsed_exact_f1": 0.17436939224648723,
+        "collapsed_relaxed_f1": 0.4215337734890807
+      },
+      "simhuman980": {
+        "alignment_ok": true,
+        "n_gold": 980,
+        "n_matched": 980,
+        "n_missing": 0,
+        "typed_exact_p": 0.15263983272347098,
+        "typed_exact_r": 0.20701878766394896,
+        "typed_exact_f1": 0.17571836918910788,
+        "typed_relaxed_f1": 0.4061982849405747,
+        "collapsed_exact_f1": 0.20881600722130284,
+        "collapsed_relaxed_f1": 0.5157213780652927
+      }
+    },
+    {
+      "model": "Kimi",
+      "n_dump_ids": 2341,
+      "n_missing": 293,
+      "n_missing_in_simhuman980": 160,
+      "status": "incomplete_empty_fill_293",
+      "full2601": {
+        "alignment_ok": true,
+        "n_gold": 2601,
+        "n_matched": 2601,
+        "n_missing": 0,
+        "typed_exact_p": 0.08623611372622858,
+        "typed_exact_r": 0.1092817943211644,
+        "typed_exact_f1": 0.09640075773521363,
+        "typed_relaxed_f1": 0.19974742159545358,
+        "collapsed_exact_f1": 0.1932224794780046,
+        "collapsed_relaxed_f1": 0.44032835192591036
+      },
+      "simhuman980": {
+        "alignment_ok": true,
+        "n_gold": 980,
+        "n_matched": 980,
+        "n_missing": 0,
+        "typed_exact_p": 0.0939209726443769,
+        "typed_exact_r": 0.10953562566465792,
+        "typed_exact_f1": 0.10112911143838978,
+        "typed_relaxed_f1": 0.21829487808869252,
+        "collapsed_exact_f1": 0.2016036655211913,
+        "collapsed_relaxed_f1": 0.4791359842906235
+      }
+    },
+    {
+      "model": "DeepSeek",
+      "n_dump_ids": 2639,
+      "n_missing": 0,
+      "n_missing_in_simhuman980": 0,
+      "status": "complete",
+      "full2601": {
+        "alignment_ok": true,
+        "n_gold": 2601,
+        "n_matched": 2601,
+        "n_missing": 0,
+        "typed_exact_p": 0.06819321410663547,
+        "typed_exact_r": 0.09735146743020759,
+        "typed_exact_f1": 0.08020444269707097,
+        "typed_relaxed_f1": 0.15765677216434046,
+        "collapsed_exact_f1": 0.22626302339296245,
+        "collapsed_relaxed_f1": 0.47709848633772367
+      },
+      "simhuman980": {
+        "alignment_ok": true,
+        "n_gold": 980,
+        "n_matched": 980,
+        "n_missing": 0,
+        "typed_exact_p": 0.06352459016393443,
+        "typed_exact_r": 0.08791208791208792,
+        "typed_exact_f1": 0.07375464684014871,
+        "typed_relaxed_f1": 0.15732342007434946,
+        "collapsed_exact_f1": 0.23137546468401485,
+        "collapsed_relaxed_f1": 0.5109293680297398
+      }
+    },
+    {
+      "model": "Qwen",
+      "n_dump_ids": 3237,
+      "n_missing": 0,
+      "n_missing_in_simhuman980": 0,
+      "status": "complete",
+      "full2601": {
+        "alignment_ok": true,
+        "n_gold": 2601,
+        "n_matched": 2601,
+        "n_missing": 0,
+        "typed_exact_p": 0.09985734664764621,
+        "typed_exact_r": 0.03340491529467907,
+        "typed_exact_f1": 0.050062578222778466,
+        "typed_relaxed_f1": 0.14089039871267656,
+        "collapsed_exact_f1": 0.07545145717861612,
+        "collapsed_relaxed_f1": 0.21491149651349903
+      },
+      "simhuman980": {
+        "alignment_ok": true,
+        "n_gold": 980,
+        "n_matched": 980,
+        "n_missing": 0,
+        "typed_exact_p": 0.10253456221198157,
+        "typed_exact_r": 0.031549096065225095,
+        "typed_exact_f1": 0.04825155868799132,
+        "typed_relaxed_f1": 0.13608023854703172,
+        "collapsed_exact_f1": 0.07264841420439143,
+        "collapsed_relaxed_f1": 0.21469232854432094
+      }
+    }
+  ]
+}

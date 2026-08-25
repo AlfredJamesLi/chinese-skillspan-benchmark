@@ -123,13 +123,14 @@ SOP v4 训练在官方 Gold v2 上低于 goldstyle v3（0.1079 vs 0.1224）。0.
 | Concept Accuracy / ESCO concept-ID | 无 concept ID，不做 |
 | Time-OOD | 无 year 字段，不做 |
 | Encoder 3-seed（ckpt65000 / 1M / domain-mix） | **已出表**（1M mean 0.1288；RoBERTa seed 123 仍在跑） |
-| Claude / Kimi dump 补全 | **受阻**（`api.claude-Plus.top` 返回 HTML；不伪造 Claude/Kimi 标签） |
+| Claude / Kimi dump 补全 | 原 dump 仍缺 98 / 293；filled 视图为混型号（sonnet-4-6 / k2.6），不覆盖原文件 |
 | BERT-CRF 已有 vanilla 对照 | RoBERTa-wwm v3 seed42 = 0.1156；3-seed 均值待填 |
 | XLM-R / ESCO lexicon / span baseline | 待填（本地无 XLM-R 权重） |
 | human IAA-300 | 待填 |
 | listed mix **3M** DAPT | 已跳过 |
 | domain-mix DAPT 1M | **已出表**（seed 42 = 0.1234；3-seed mean 0.1269 < 1M 0.1288；事业单位 0.0287） |
-| Hybrid / RAG | 待填 |
+| 匹配协议 hybrid（SOP-CWS+SimHuman980） | **已出表**（见上；不是 Gold v2） |
+| Hybrid / RAG（Qwen） | 不做（本窗口） |
 
 详情 → [`paper_results/pending/placeholders.json`](paper_results/pending/placeholders.json)
 

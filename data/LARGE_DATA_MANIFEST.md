@@ -17,6 +17,8 @@ GitHub 单文件上限 100MB；本仓库只备份**代码 + 协议 + 可复现�
 | `data/test_lskt_v4_cws_g2ids.jsonl` | ~2.6 MB | SOP 测试银标 + jieba（2601 ID；非官方 Gold） |
 | `data/test_lskt_v4_rule_g2ids.jsonl` | ~2 MB | **新 SOP 测试金标**（2601 ID；非官方 Gold） |
 | `data/test_lskt_v4_simhuman980.jsonl` | <1 MB | 980 句 SOP 模拟人工 |
+| `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` | ~3 MB | P2 测试金标（980 SimHuman + 1621 SOP-CWS） |
+| `data/frozen_preds/jobbert_*_v4.jsonl` | ~9 MB | 1M/3M v4 与 CWS 重训的冻结预测（核表用，非权重） |
 | `data/test_lskt_v4_silver_g2ids.jsonl` | ~2 MB | Codex 测试银标（对照） |
 | `data/corpus_splits/{train,dev,test}.json` | ~87 MB | Table 1 语料切分（若已复制） |
 | `data/jobbert_*_sents.meta.json` | KB | DAPT 语料配方与统计 |

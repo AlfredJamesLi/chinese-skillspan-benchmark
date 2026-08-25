@@ -1,7 +1,6 @@
 # Codex / local Cursor prompt — matched-protocol hybrid table
 
-**Overleaf:** https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4  
-Paste **after** Gold v2 tables (`CODEX_PROMPT.md`), SOP methods (`CODEX_PROMPT_SOP_V4.md`), and the diagnostic encoder table (`CODEX_PROMPT_DIAGNOSTIC_SOP.md`). Server cannot log into Overleaf.
+**Superseded.** Paste [`CODEX_PROMPT_ALL.md`](CODEX_PROMPT_ALL.md) instead. This file is kept for history.
 
 Copy into the Overleaf repo: this file, `.cursor/skills/cnss-overleaf/confirmed-results.md`, `.cursor/skills/cnss-overleaf/not-for-paper.md`, and `tables/hybrid_cws_simhuman980_all_models.csv`.
 

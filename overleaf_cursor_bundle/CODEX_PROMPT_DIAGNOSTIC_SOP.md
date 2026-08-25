@@ -1,7 +1,6 @@
 # Codex / local Cursor prompt — SOP v4 / jieba diagnostic table
 
-**Overleaf:** https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4  
-Paste after Gold v2 tables (`CODEX_PROMPT.md`) and SOP methods (`CODEX_PROMPT_SOP_V4.md`). Server cannot log into Overleaf.
+**Superseded.** Paste [`CODEX_PROMPT_ALL.md`](CODEX_PROMPT_ALL.md) instead. This file is kept for history.
 
 CSV: `tables/sop_v4_cws_diagnostic.csv` (copy from this bundle). Numbers: `.cursor/skills/cnss-overleaf/confirmed-results.md` section “Diagnostic — LSKT v4 SOP / jieba CWS”.
 

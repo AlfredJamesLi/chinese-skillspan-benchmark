@@ -6,8 +6,8 @@
 `/home/guojingli3/SCESC-LLM-skill-extraction`  
 论文材料只写在：`Chinese_skill_benchmark_Paper/`
 
-**GitHub 私有备份（2026-08-24）：** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark — 见 `PUSH_GITHUB.md`、`REPRO_GITHUB.md`。  
-**Overleaf（本机改 tex；此服务器无法登录）：** https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4 — 提示词 `overleaf_cursor_bundle/CODEX_PROMPT.md`。  
+**GitHub 私有备份（2026-08-26）：** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark — 见 `PUSH_GITHUB.md`、`REPRO_GITHUB.md`。  
+**Overleaf（本机改 tex；此服务器无法登录）：** https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4 — 先贴 `overleaf_cursor_bundle/CODEX_PROMPT_PROTOCOL_CONSULT.md` 定表结构，再贴 `CODEX_PROMPT_ALL.md` 改稿。  
 **7 天窗口：** `notes/SEVEN_DAY_WINDOW.md`。每次实验结束后 `bash scripts/backup_push_github.sh`。
 
 **姐妹文（禁止混写）：** IEEE Access 方法文 SRICL，arXiv `2604.21525`，目录 `access_paper/`。

@@ -153,16 +153,15 @@ CSV: `tables/hybrid_cws_simhuman980_all_models.csv`. Caption must name train sil
 | JobBERT 3M ckpt65000 (3-seed mean) | 0.2961 | 0.5278 | — | — |
 | JobBERT demo 80k | 0.2931 | 0.5321 | — | — |
 | RoBERTa-wwm v3 (3-seed mean) | 0.2875 | 0.5206 | — | — |
-| ChatGPT | 0.2854 | **0.6249** | 0.2836 | **0.6447** |
-| Claude filled (haiku+sonnet-4-6) | 0.1519 | 0.3416 | 0.1778 | 0.4101 |
-| Kimi filled | 0.1093 | 0.2321 | 0.1116 | 0.2514 |
-| Kimi (293 empty-filled) | 0.0964 | 0.1997 | 0.1011 | 0.2183 |
-| DeepSeek | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
-| Qwen | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
+| ChatGPT (old dump, complete) | 0.2854 | **0.6249** | 0.2836 | **0.6447** |
+| Claude (old dump, 98 empty) | 0.1483 | 0.3349 | 0.1757 | 0.4062 |
+| Kimi (old dump, 293 empty) | 0.0964 | 0.1997 | 0.1011 | 0.2183 |
+| DeepSeek (old dump, complete) | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
+| Qwen (old dump, complete) | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
 | JobBERT-skill EN head | 0.0096 | 0.0676 | 0.0124 | 0.0919 |
 | JobBERT-knowledge EN head | 0.0088 | 0.0644 | 0.0122 | 0.0862 |
 
-JobBERT-zh 1M/3M v4 lead typed exact on this gold; ChatGPT leads relaxed. Not comparable to ChatGPT 0.6365 on Gold v2.
+JobBERT-zh 1M/3M v4 lead typed exact on this gold; ChatGPT leads relaxed. Not comparable to ChatGPT 0.6365 on Gold v2. LLM CSV: `tables/hybrid_cws_llm_old_dumps.csv`. Claude miss 98; Kimi miss 293. Incomplete rows are empty-filled, not complete main-table rows.
 
 ## SOP extract re-call pilots (not main tables)
 

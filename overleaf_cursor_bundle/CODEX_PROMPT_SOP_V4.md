@@ -1,7 +1,6 @@
 # Codex / local Cursor prompt — add LSKT v4 SOP (methods only)
 
-**Overleaf:** https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4  
-Paste the block below **after** the Gold v2 table prompt in `CODEX_PROMPT.md` has been applied, or in a follow-up Overleaf chat. Server cannot log into Overleaf.
+**Superseded.** Paste [`CODEX_PROMPT_ALL.md`](CODEX_PROMPT_ALL.md) instead. This file is kept for history.
 
 GitHub copy of the SOP test files: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark  
 Canonical SOP test gold: `data/test_lskt_v4_rule_g2ids.jsonl` (2601 Gold-v2 IDs). Official Gold remains `gold_canonical_v2.jsonl`.
