@@ -16,6 +16,7 @@ GOLDS = [
     ("simhuman_980", PAPER / "data/test_lskt_v4_simhuman980.jsonl"),
     ("codex_2601", PAPER / "data/test_lskt_v4_silver_g2ids.jsonl"),
     ("gold_v2_official", PAPER / "data/gold_canonical_v2.jsonl"),
+    ("sop_cws_2601", PAPER / "data/test_lskt_v4_cws_g2ids.jsonl"),
 ]
 
 

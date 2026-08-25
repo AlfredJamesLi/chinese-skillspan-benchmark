@@ -2,7 +2,7 @@
 
 **Chinese-SkillSpan / Chinese Skill Benchmark** — DASFAA 2026 数据集与评测备份（私有仓库）。
 
-评分器：`cnss-lskt-1.2.0` · Gold 评测集：`data/gold_canonical_v2.jsonl` · 更新：2026-08-24 20:20
+评分器：`cnss-lskt-1.2.0` · Gold 评测集：`data/gold_canonical_v2.jsonl` · 更新：2026-08-25
 
 ---
 
@@ -65,6 +65,24 @@ Encoder 在**事业单位**上接近失败（~0.015–0.029；domain-mix seed 42
 
 完整 JSON/CSV → [`paper_results/repo/encoder_gold_v2.csv`](paper_results/repo/encoder_gold_v2.csv)  
 3-seed 均值 → [`tables/encoder_3seed_gold_v2.csv`](tables/encoder_3seed_gold_v2.csv)（1M **0.1288** / domain-mix 0.1269 / 3M ckpt65000 0.1258）
+
+## SOP v4 / jieba 诊断表（附录，不是 Table 3）
+
+官方主指标仍是 Gold v2 typed exact。下表必须自带 **train silver / decode / test gold**，不得写入 PDF Table 3、Gold v2 LLM 主表或摘要 SOTA。CSV：[`tables/sop_v4_cws_diagnostic.csv`](tables/sop_v4_cws_diagnostic.csv)。
+
+| Pred | Train | Decode | Test gold | typed exact | IoU≥0.5 |
+|---|---|---|---|---:|---:|
+| JobBERT 1M | goldstyle v3 | raw | Gold v2 | 0.1224 | — |
+| JobBERT 1M | SOP v4 | raw | Gold v2 | 0.1079 | 0.3320 |
+| JobBERT 3M | SOP v4 | raw | Gold v2 | 0.1104 | 0.3404 |
+| JobBERT 1M | SOP v4 | jieba post-hoc | Gold v2 | 0.1454 | 0.3411 |
+| JobBERT 3M | SOP v4 | jieba post-hoc | Gold v2 | 0.1479 | 0.3470 |
+| JobBERT 1M | SOP v4 | raw | SOP rule silver | 0.3170 | 0.5663 |
+| JobBERT 3M | SOP v4 | raw | SOP rule silver | 0.3229 | 0.5624 |
+| JobBERT 1M | SOP v4 | jieba post-hoc | SOP-CWS silver | 0.4278 | 0.5960 |
+| JobBERT 3M | SOP v4 | jieba post-hoc | SOP-CWS silver | 0.4341 | 0.5884 |
+
+SOP v4 训练在官方 Gold v2 上低于 goldstyle v3（0.1079 vs 0.1224）。0.3170 / ~0.43 是与 SOP 银标的一致性，不是人类 Gold。
 
 ## 语料规模（PDF Table 1）
 

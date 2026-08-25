@@ -1,6 +1,6 @@
 # Confirmed results (Overleaf compact copy)
 
-Synced from server `Chinese_skill_benchmark_Paper/` on **2026-08-24**.
+Synced from server `Chinese_skill_benchmark_Paper/` on **2026-08-25**.
 Scorer: `cnss-lskt-1.2.0`. Do not invent cells. Round to **4 decimals** in tex.
 
 **Two protocols — do not mix them in one table without a caption:**
@@ -117,6 +117,26 @@ Encoder is a **weak baseline** (~0.12), not competitive with ChatGPT (0.6365 typ
 | RoBERTa-wwm v3 | 0.1156 | — | — | — | — |
 
 3-seed mean: domain-mix 0.1269 **below** JobBERT 1M 0.1288. Do not scale domain-mix to 3M.
+
+## Diagnostic — LSKT v4 SOP / jieba CWS (appendix; not Table 3)
+
+Authorized 2026-08-25. CSV: `tables/sop_v4_cws_diagnostic.csv`.  
+**Do not** mix these rows into PDF Table 3, the Gold v2 unique-first LLM table, the encoder 3-seed ranking, or the abstract SOTA sentence. Caption must name train silver, decode, and test gold.
+
+| Pred | Train silver | Decode | Test gold | typed exact | IoU≥0.5 |
+|---|---|---|---|---:|---:|
+| JobBERT 1M | goldstyle v3 | raw | Gold v2 | 0.1224 | — |
+| JobBERT 1M | SOP v4 | raw | Gold v2 | 0.1079 | 0.3320 |
+| JobBERT 3M | SOP v4 | raw | Gold v2 | 0.1104 | 0.3404 |
+| JobBERT 1M | SOP v4 | jieba post-hoc | Gold v2 | 0.1454 | 0.3411 |
+| JobBERT 3M | SOP v4 | jieba post-hoc | Gold v2 | 0.1479 | 0.3470 |
+| JobBERT 1M | SOP v4 | raw | SOP rule silver | 0.3170 | 0.5663 |
+| JobBERT 3M | SOP v4 | raw | SOP rule silver | 0.3229 | 0.5624 |
+| JobBERT 1M | SOP v4 | jieba post-hoc | SOP rule silver | 0.2609 | 0.5835 |
+| JobBERT 1M | SOP v4 | jieba post-hoc | SOP-CWS silver | 0.4278 | 0.5960 |
+| JobBERT 3M | SOP v4 | jieba post-hoc | SOP-CWS silver | 0.4341 | 0.5884 |
+
+Allowed: SOP v4 train **lowers** Gold v2 vs goldstyle v3 (0.1079/0.1104 vs 0.1224). Jieba post-hoc **raises** Gold v2 exact of the same v4 preds (0.1454/0.1479). 0.3170 and ~0.43 are SOP-silver agreement, not human Gold v2. CWS retrain still running — no finished F1.
 
 ## Running / not yet a paper number
 

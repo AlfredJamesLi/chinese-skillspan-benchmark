@@ -21,8 +21,8 @@
 - Concept Accuracy / ESCO concept-ID eval (no concept IDs in Gold)
 - Time-OOD (no `year` field)
 - English JobBERT ~0.46 or `*.eval_ner.json`
-- Claiming JobBERT-zh CRF (~0.12) beats ChatGPT
-- LSKT v4 SOP sandbox F1 (rule-silver typed exact ~0.3170 / IoU≥0.5 ~0.5663; 1M CRF). Not Gold v2. Not Table 3.
+- Claiming JobBERT-zh CRF (~0.12, or SOP-silver 0.3170, or CWS post-hoc 0.1454) beats ChatGPT
+- Putting SOP-silver 0.3170 / 0.5663, both-sides CWS ~0.43, or jieba post-hoc 0.1454/0.1479 into PDF Table 3, the Gold v2 unique-first LLM table, or the abstract SOTA sentence (those rows belong only in the labeled diagnostic table in `confirmed-results.md`)
 
 ## Abandoned / mix-ups
 

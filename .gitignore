@@ -16,6 +16,7 @@
 # --- large training outputs (keep results_snapshots/ instead) ---
 output/
 **/test_pred.jsonl
+**/cws_snap/engine_preds/
 **/score_official.json
 **/history.json
 **/slurm_*.out
@@ -42,6 +43,7 @@ data/jobbert_demo_sents.jsonl
 __pycache__/
 *.py[cod]
 .venv/
+.cache/
 .DS_Store
 Thumbs.db
 *.swp

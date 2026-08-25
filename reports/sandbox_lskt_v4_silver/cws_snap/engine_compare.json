@@ -1,0 +1,624 @@
+{
+  "not_for_confirmed_results": true,
+  "gold_v2_untouched": true,
+  "jieba_baseline_untouched": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/jobbert_zh_1m/crf_lskt_v4_silver_seed42/test_pred_cws.jsonl",
+  "hanlp": "HanLP 2.1.3 tok downloaded but unusable: transformers removed encode_plus",
+  "note": "Boundary snap only. Types copied from CRF. Empty stays empty.",
+  "engines": [
+    {
+      "engine": "jieba",
+      "pred": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/cws_snap/engine_preds/test_pred_jieba.jsonl",
+      "stats": {
+        "n": 3237,
+        "empty_sent_rate": 0.48316342292245906,
+        "n_spans": 3638,
+        "mean_len": 5.155305112699286,
+        "n_incomplete_spans": 968,
+        "pct_incomplete_spans": 0.26608026388125344,
+        "pct_sents_with_incomplete": 0.23540315106580167,
+        "n_midword_spans": 13,
+        "pct_midword_spans": 0.0035733919736118747,
+        "pct_sents_with_midword": 0.0037071362372567192,
+        "n_sents_changed": 1114,
+        "pct_sents_changed": 0.3441458140253321,
+        "type_counts": {
+          "T": 596,
+          "S": 1964,
+          "K": 1050,
+          "L": 28
+        }
+      },
+      "gold_v2": {
+        "typed_exact_f1": 0.145393568751233,
+        "typed_relaxed_f1": 0.3410929177352535,
+        "typed_exact_p": 0.2099117060666477,
+        "typed_exact_r": 0.11121170967255169,
+        "alignment_ok": true
+      },
+      "sop_rule_v4": {
+        "typed_exact_f1": 0.2609261186264308,
+        "typed_relaxed_f1": 0.583506763787721,
+        "typed_exact_p": 0.28567359726573627,
+        "typed_exact_r": 0.24012449126167107,
+        "alignment_ok": true
+      },
+      "sentence_agree_with_jieba": null,
+      "examples": [
+        {
+          "id": "1802-s0005",
+          "needle": "培训其",
+          "before": [
+            "培训其",
+            "工具和技术支"
+          ],
+          "after": [
+            "培训其他",
+            "工具和技术支持"
+          ]
+        },
+        {
+          "id": "1802-s0000",
+          "needle": "当前服",
+          "before": [
+            "监控和管理当",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ],
+          "after": [
+            "监控和管理当前",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ]
+        },
+        {
+          "id": "1804-s0000",
+          "needle": "机器学",
+          "before": [
+            "量化分析领域",
+            "统计学习",
+            "机器学"
+          ],
+          "after": [
+            "量化分析领域",
+            "统计学习",
+            "机器学习"
+          ]
+        },
+        {
+          "id": "1802-s0004",
+          "needle": "维护和支持服",
+          "before": [
+            "维护和支持服"
+          ],
+          "after": [
+            "维护和支持服务"
+          ]
+        },
+        {
+          "id": "1802-s0000",
+          "needle": "存储和备",
+          "before": [
+            "监控和管理当",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ],
+          "after": [
+            "监控和管理当前",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ]
+        },
+        {
+          "id": "1804-s0000",
+          "needle": "量化分析领",
+          "before": [
+            "量化分析领域",
+            "统计学习",
+            "机器学"
+          ],
+          "after": [
+            "量化分析领域",
+            "统计学习",
+            "机器学习"
+          ]
+        }
+      ]
+    },
+    {
+      "engine": "pkuseg_mixed",
+      "pred": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/cws_snap/engine_preds/test_pred_pkuseg_mixed.jsonl",
+      "stats": {
+        "n": 3237,
+        "empty_sent_rate": 0.48285449490268767,
+        "n_spans": 3647,
+        "mean_len": 5.1406635590896625,
+        "n_incomplete_spans": 964,
+        "pct_incomplete_spans": 0.26432684398135453,
+        "pct_sents_with_incomplete": 0.2338585109669447,
+        "n_midword_spans": 15,
+        "pct_midword_spans": 0.004112969564025226,
+        "pct_sents_with_midword": 0.004324992276799506,
+        "n_sents_changed": 1095,
+        "pct_sents_changed": 0.3382761816496756,
+        "type_counts": {
+          "T": 596,
+          "S": 1970,
+          "K": 1053,
+          "L": 28
+        }
+      },
+      "gold_v2": {
+        "typed_exact_f1": 0.14408199467823002,
+        "typed_relaxed_f1": 0.3411845865773135,
+        "typed_exact_p": 0.20767045454545455,
+        "typed_exact_r": 0.11030632261958653,
+        "alignment_ok": true
+      },
+      "sop_rule_v4": {
+        "typed_exact_f1": 0.26295959464726515,
+        "typed_relaxed_f1": 0.5815252695855528,
+        "typed_exact_p": 0.2875,
+        "typed_exact_r": 0.2422791477136701,
+        "alignment_ok": true
+      },
+      "sentence_agree_with_jieba": 0.9270929873339512,
+      "examples": [
+        {
+          "id": "1802-s0005",
+          "needle": "培训其",
+          "before": [
+            "培训其",
+            "工具和技术支"
+          ],
+          "after": [
+            "培训其他",
+            "工具和技术支持"
+          ]
+        },
+        {
+          "id": "1802-s0000",
+          "needle": "当前服",
+          "before": [
+            "监控和管理当",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ],
+          "after": [
+            "监控和管理当前",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ]
+        },
+        {
+          "id": "1804-s0000",
+          "needle": "机器学",
+          "before": [
+            "量化分析领域",
+            "统计学习",
+            "机器学"
+          ],
+          "after": [
+            "量化分析领域",
+            "统计学习",
+            "机器学习"
+          ]
+        },
+        {
+          "id": "1802-s0004",
+          "needle": "维护和支持服",
+          "before": [
+            "维护和支持服"
+          ],
+          "after": [
+            "维护和支持服务"
+          ]
+        },
+        {
+          "id": "1802-s0000",
+          "needle": "存储和备",
+          "before": [
+            "监控和管理当",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ],
+          "after": [
+            "监控和管理当前",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ]
+        },
+        {
+          "id": "1804-s0000",
+          "needle": "量化分析领",
+          "before": [
+            "量化分析领域",
+            "统计学习",
+            "机器学"
+          ],
+          "after": [
+            "量化分析领域",
+            "统计学习",
+            "机器学习"
+          ]
+        }
+      ]
+    },
+    {
+      "engine": "pkuseg_news",
+      "pred": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/cws_snap/engine_preds/test_pred_pkuseg_news.jsonl",
+      "stats": {
+        "n": 3237,
+        "empty_sent_rate": 0.48316342292245906,
+        "n_spans": 3641,
+        "mean_len": 5.148860203240868,
+        "n_incomplete_spans": 956,
+        "pct_incomplete_spans": 0.26256522933260096,
+        "pct_sents_with_incomplete": 0.2347852950262589,
+        "n_midword_spans": 20,
+        "pct_midword_spans": 0.005492996429552321,
+        "pct_sents_with_midword": 0.005869632375656472,
+        "n_sents_changed": 1089,
+        "pct_sents_changed": 0.33642261353104724,
+        "type_counts": {
+          "T": 595,
+          "S": 1967,
+          "K": 1051,
+          "L": 28
+        }
+      },
+      "gold_v2": {
+        "typed_exact_f1": 0.1423922690070013,
+        "typed_relaxed_f1": 0.34178088945863333,
+        "typed_exact_p": 0.20546385885031304,
+        "typed_exact_r": 0.10894824204013882,
+        "alignment_ok": true
+      },
+      "sop_rule_v4": {
+        "typed_exact_f1": 0.26394487062800676,
+        "typed_relaxed_f1": 0.5817188922116759,
+        "typed_exact_p": 0.28884462151394424,
+        "typed_exact_r": 0.24299736653100312,
+        "alignment_ok": true
+      },
+      "sentence_agree_with_jieba": 0.9314179796107507,
+      "examples": [
+        {
+          "id": "1802-s0005",
+          "needle": "培训其",
+          "before": [
+            "培训其",
+            "工具和技术支"
+          ],
+          "after": [
+            "培训其他",
+            "工具和技术支持"
+          ]
+        },
+        {
+          "id": "1802-s0000",
+          "needle": "当前服",
+          "before": [
+            "监控和管理当",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ],
+          "after": [
+            "监控和管理当前",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ]
+        },
+        {
+          "id": "1804-s0000",
+          "needle": "机器学",
+          "before": [
+            "量化分析领域",
+            "统计学习",
+            "机器学"
+          ],
+          "after": [
+            "量化分析领域",
+            "统计学习",
+            "机器学习"
+          ]
+        },
+        {
+          "id": "1802-s0004",
+          "needle": "维护和支持服",
+          "before": [
+            "维护和支持服"
+          ],
+          "after": [
+            "维护和支持服务"
+          ]
+        },
+        {
+          "id": "1802-s0000",
+          "needle": "存储和备",
+          "before": [
+            "监控和管理当",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ],
+          "after": [
+            "监控和管理当前",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ]
+        },
+        {
+          "id": "1804-s0000",
+          "needle": "量化分析领",
+          "before": [
+            "量化分析领域",
+            "统计学习",
+            "机器学"
+          ],
+          "after": [
+            "量化分析领域",
+            "统计学习",
+            "机器学习"
+          ]
+        }
+      ]
+    },
+    {
+      "engine": "pkuseg_web",
+      "pred": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/cws_snap/engine_preds/test_pred_pkuseg_web.jsonl",
+      "stats": {
+        "n": 3237,
+        "empty_sent_rate": 0.48285449490268767,
+        "n_spans": 3644,
+        "mean_len": 5.1454445664105375,
+        "n_incomplete_spans": 976,
+        "pct_incomplete_spans": 0.2678375411635565,
+        "pct_sents_with_incomplete": 0.23663886314488725,
+        "n_midword_spans": 16,
+        "pct_midword_spans": 0.0043907793633369925,
+        "pct_sents_with_midword": 0.004633920296570899,
+        "n_sents_changed": 1099,
+        "pct_sents_changed": 0.33951189372876117,
+        "type_counts": {
+          "T": 596,
+          "S": 1969,
+          "K": 1051,
+          "L": 28
+        }
+      },
+      "gold_v2": {
+        "typed_exact_f1": 0.14373028391167195,
+        "typed_relaxed_f1": 0.3414826498422713,
+        "typed_exact_p": 0.20727893090702304,
+        "typed_exact_r": 0.11000452693526483,
+        "alignment_ok": true
+      },
+      "sop_rule_v4": {
+        "typed_exact_f1": 0.26202235508188204,
+        "typed_relaxed_f1": 0.5814920717442162,
+        "typed_exact_p": 0.28660790446403184,
+        "typed_exact_r": 0.24132152262389275,
+        "alignment_ok": true
+      },
+      "sentence_agree_with_jieba": 0.9218412109978376,
+      "examples": [
+        {
+          "id": "1802-s0005",
+          "needle": "培训其",
+          "before": [
+            "培训其",
+            "工具和技术支"
+          ],
+          "after": [
+            "培训其他",
+            "工具和技术支持"
+          ]
+        },
+        {
+          "id": "1802-s0000",
+          "needle": "当前服",
+          "before": [
+            "监控和管理当",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ],
+          "after": [
+            "监控和管理当前",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ]
+        },
+        {
+          "id": "1804-s0000",
+          "needle": "机器学",
+          "before": [
+            "量化分析领域",
+            "统计学习",
+            "机器学"
+          ],
+          "after": [
+            "量化分析领域",
+            "统计学习",
+            "机器学习"
+          ]
+        },
+        {
+          "id": "1802-s0004",
+          "needle": "维护和支持服",
+          "before": [
+            "维护和支持服"
+          ],
+          "after": [
+            "维护和支持服务"
+          ]
+        },
+        {
+          "id": "1802-s0000",
+          "needle": "存储和备",
+          "before": [
+            "监控和管理当",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ],
+          "after": [
+            "监控和管理当前",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ]
+        },
+        {
+          "id": "1804-s0000",
+          "needle": "量化分析领",
+          "before": [
+            "量化分析领域",
+            "统计学习",
+            "机器学"
+          ],
+          "after": [
+            "量化分析领域",
+            "统计学习",
+            "机器学习"
+          ]
+        }
+      ]
+    },
+    {
+      "engine": "pkuseg_news_nodict",
+      "pred": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/cws_snap/engine_preds/test_pred_pkuseg_news_nodict.jsonl",
+      "stats": {
+        "n": 3237,
+        "empty_sent_rate": 0.48347235094223046,
+        "n_spans": 3638,
+        "mean_len": 5.152006597031336,
+        "n_incomplete_spans": 953,
+        "pct_incomplete_spans": 0.26195711929631665,
+        "pct_sents_with_incomplete": 0.23571207908557307,
+        "n_midword_spans": 20,
+        "pct_midword_spans": 0.005497526113249038,
+        "pct_sents_with_midword": 0.005869632375656472,
+        "n_sents_changed": 1088,
+        "pct_sents_changed": 0.33611368551127585,
+        "type_counts": {
+          "T": 594,
+          "S": 1966,
+          "K": 1050,
+          "L": 28
+        }
+      },
+      "gold_v2": {
+        "typed_exact_f1": 0.14085618465180508,
+        "typed_relaxed_f1": 0.3408956401657132,
+        "typed_exact_p": 0.20336086585018515,
+        "typed_exact_r": 0.10774105930285197,
+        "alignment_ok": true
+      },
+      "sop_rule_v4": {
+        "typed_exact_f1": 0.2645681581685744,
+        "typed_relaxed_f1": 0.5806451612903226,
+        "typed_exact_p": 0.28966106522358304,
+        "typed_exact_r": 0.24347617907589178,
+        "alignment_ok": true
+      },
+      "sentence_agree_with_jieba": 0.9199876428792091,
+      "examples": [
+        {
+          "id": "1802-s0005",
+          "needle": "培训其",
+          "before": [
+            "培训其",
+            "工具和技术支"
+          ],
+          "after": [
+            "培训其他",
+            "工具和技术支持"
+          ]
+        },
+        {
+          "id": "1802-s0000",
+          "needle": "当前服",
+          "before": [
+            "监控和管理当",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ],
+          "after": [
+            "监控和管理当前",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ]
+        },
+        {
+          "id": "1804-s0000",
+          "needle": "机器学",
+          "before": [
+            "量化分析领域",
+            "统计学习",
+            "机器学"
+          ],
+          "after": [
+            "招量化分析领域",
+            "统计学习",
+            "机器学习"
+          ]
+        },
+        {
+          "id": "1802-s0004",
+          "needle": "维护和支持服",
+          "before": [
+            "维护和支持服"
+          ],
+          "after": [
+            "维护和支持服务"
+          ]
+        },
+        {
+          "id": "1802-s0000",
+          "needle": "存储和备",
+          "before": [
+            "监控和管理当",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ],
+          "after": [
+            "监控和管理当前",
+            "服务器",
+            "存储和备份",
+            "性能和容量"
+          ]
+        },
+        {
+          "id": "1804-s0000",
+          "needle": "量化分析领",
+          "before": [
+            "量化分析领域",
+            "统计学习",
+            "机器学"
+          ],
+          "after": [
+            "招量化分析领域",
+            "统计学习",
+            "机器学习"
+          ]
+        }
+      ]
+    }
+  ]
+}

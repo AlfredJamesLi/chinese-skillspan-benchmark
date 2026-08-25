@@ -17,6 +17,7 @@ GitHub 私有备份：https://github.com/AlfredJamesLi/chinese-skillspan-benchma
 禁写：`.cursor/skills/cnss-overleaf/not-for-paper.md`  
 Codex 提示词：`CODEX_PROMPT.md`（Gold v2 表）  
 SOP v4 方法段（无 F1）：`CODEX_PROMPT_SOP_V4.md`  
+SOP / jieba **诊断表**（附录，非 Table 3）：`CODEX_PROMPT_DIAGNOSTIC_SOP.md`  
 表 CSV：`tables/`
 
 冲突时以**本文 + 已确认表**为准并报告。

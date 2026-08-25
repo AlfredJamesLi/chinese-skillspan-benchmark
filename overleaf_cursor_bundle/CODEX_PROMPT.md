@@ -8,7 +8,8 @@ Paste the block below into **Codex** or a **local Cursor** chat whose workspace 
 
 First copy sibling files from `overleaf_cursor_bundle/` into the Overleaf repo **root** (`HANDOVER_OVERLEAF.md`, `AGENTS.md`, `.cursor/`, `tables/`, this prompt).
 
-**Follow-up (methods SOP only, no new F1):** after this prompt, paste `CODEX_PROMPT_SOP_V4.md`. Do **not** put sandbox JobBERT 0.3170 / 0.5663 in Table 3.
+**Follow-up 1 (methods SOP, no F1 in Table 3):** paste `CODEX_PROMPT_SOP_V4.md`.  
+**Follow-up 2 (diagnostic encoder table):** paste `CODEX_PROMPT_DIAGNOSTIC_SOP.md`. Do **not** put 0.3170 / 0.1454 / ~0.43 in Table 3 or next to ChatGPT 0.6365.
 
 ---
 

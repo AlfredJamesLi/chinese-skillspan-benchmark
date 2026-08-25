@@ -18,7 +18,7 @@ You are editing the **Chinese-SkillSpan** Overleaf paper. Not IEEE Access / SRIC
 3. Patch **methods / annotation** only for LSKT v4 operational SOP. Show full `git diff`. **Do not commit.**
 
 ### Hard rules
-- **Do not** put these sandbox encoder numbers in Table 3, the abstract, or the Gold v2 unique-first table: JobBERT-zh 1M vs SOP-v4 silver typed exact 0.3170 / IoU≥0.5 0.5663; vs Gold v2 0.1079. They are **待验证**, not in `confirmed-results.md`.
+- SOP / jieba encoder F1 (0.1079, 0.1454, 0.3170, ~0.43, …) now live in `confirmed-results.md` as a **diagnostic** table. Do **not** put them in Table 3, the abstract, or the Gold v2 unique-first LLM table. After this methods patch, paste `CODEX_PROMPT_DIAGNOSTIC_SOP.md` to add that table.
 - **Do not** replace Gold v2 (2601) with SOP silver. Wording: official test gold is still human/Doccano Gold v2; SOP v4 is a **training-label and diagnostic test-silver** protocol.
 - **Do not** claim JobBERT-zh beats ChatGPT. **Do not** invent F1. **Do not** write majority-vote (Codex/Doubao/Kimi) as Gold.
 - Keep PDF Table 3 paper S-F1 cells unchanged.
@@ -35,7 +35,7 @@ Add a short operationalization subsection (or tighten the existing LSKT span par
 
 One sentence: encoder CRF experiments may train on SOP-rewritten silver (`train_lskt_v4_silver`) and, as a **consistency check only**, score against SOP-rewritten test silver on the same 2601 Gold v2 IDs; the reported main-table metric remains typed exact F1 on Gold v2.
 
-If the draft currently says encoder F1 is only ~0.12, keep that as the **Gold v2** number. Do not add 0.32 unless `confirmed-results.md` later lists it.
+If the draft currently says encoder F1 is only ~0.12, keep that as the **Gold v2 goldstyle** number. SOP/CWS F1 go only in the diagnostic table (`CODEX_PROMPT_DIAGNOSTIC_SOP.md`).
 
 ### After edits
 List files touched, diff, and confirm Table 3 / Gold v2 F1 tables were not changed.

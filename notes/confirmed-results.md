@@ -117,6 +117,30 @@ CSV: `tables/encoder_3seed_gold_v2.csv`. Sample std over three seeds. RoBERTa-ww
 
 3-seed mean: domain-mix 0.1269 **below** JobBERT 1M 0.1288. Do not scale domain-mix to 3M. Encoder remains a weak baseline (~0.13 vs ChatGPT 0.6365 typed).
 
+## Diagnostic — LSKT v4 SOP / jieba CWS (Overleaf appendix; not Table 3)
+
+Authorized 2026-08-25 for a **separate** diagnostic table. CSV: `tables/sop_v4_cws_diagnostic.csv`.  
+These numbers are scored and reproducible. They are **not** interchangeable with ChatGPT 0.6365 or PDF Table 3 S-F1.
+
+Do **not** put any row below into PDF Table 3, the Gold v2 unique-first LLM table, the abstract SOTA sentence, or the encoder 3-seed ranking. Caption must name train silver, decode, and test gold.
+
+| Pred | Train silver | Decode | Test gold | typed exact | IoU≥0.5 | Paper role |
+|---|---|---|---|---:|---:|---|
+| JobBERT 1M CRF | goldstyle v3 | raw | Gold v2 | 0.1224 | — | official encoder baseline (already in encoder table) |
+| JobBERT 1M CRF | SOP v4 silver | raw | Gold v2 | 0.1079 | 0.3320 | ablation: SOP train vs official gold |
+| JobBERT 3M CRF | SOP v4 silver | raw | Gold v2 | 0.1104 | 0.3404 | same ablation |
+| JobBERT 1M CRF | SOP v4 silver | jieba post-hoc | Gold v2 | 0.1454 | 0.3411 | decode-time CWS snap, not a new trained model |
+| JobBERT 3M CRF | SOP v4 silver | jieba post-hoc | Gold v2 | 0.1479 | 0.3470 | same decode ablation |
+| JobBERT 1M CRF | SOP v4 silver | raw | SOP rule silver (2601) | 0.3170 | 0.5663 | train≈test same-rule **consistency**; not official gold |
+| JobBERT 3M CRF | SOP v4 silver | raw | SOP rule silver (2601) | 0.3229 | 0.5624 | same consistency check |
+| JobBERT 1M CRF | SOP v4 silver | jieba post-hoc | SOP rule silver (2601) | 0.2609 | 0.5835 | snap hurts exact when SOP gold still has 半词 |
+| JobBERT 1M CRF | SOP v4 silver | jieba post-hoc | SOP-CWS silver (2601) | 0.4278 | 0.5960 | both sides snapped; same-rule inflation |
+| JobBERT 3M CRF | SOP v4 silver | jieba post-hoc | SOP-CWS silver (2601) | 0.4341 | 0.5884 | same-rule inflation |
+
+Allowed claim: SOP v4 silver training **lowers** Gold v2 typed exact vs goldstyle v3 (0.1079/0.1104 vs 0.1224). Jieba post-hoc snap **raises** Gold v2 exact of the same v4 preds (0.1454/0.1479) but does not replace the goldstyle encoder ranking. 0.3170 and ~0.43 measure agreement with SOP silver, not human Gold v2.
+
+CWS **retrain** (`crf_lskt_v4_cws_seed42`) is still running — no Gold v2 number yet.
+
 ## Still missing / blocked (paper claims)
 
 - Concept Accuracy / ESCO concept-ID eval — **blocked**, no concept IDs; delete the claim

@@ -13,5 +13,5 @@
 - Claiming domain-mix fixes 事业单位 (0.0287 vs ChatGPT 0.7032)
 - Claude/Kimi Gold v2 rows as complete (missing 98 / 293 IDs)
 - English JobBERT ~0.46 or `*.eval_ner.json`
-- Claiming JobBERT-zh CRF (~0.12) beats ChatGPT
-- LSKT v4 SOP sandbox encoder F1 (~0.3170 exact / ~0.5663 IoU≥0.5 on rule silver). Not Gold v2. Not Table 3.
+- Claiming JobBERT-zh CRF (~0.12, SOP-silver 0.3170, or CWS post-hoc 0.1454) beats ChatGPT
+- Putting SOP-silver 0.3170 / 0.5663, both-sides CWS ~0.43, or jieba post-hoc 0.1454/0.1479 into PDF Table 3, the Gold v2 unique-first LLM table, or the abstract SOTA sentence (diagnostic table only; see confirmed-results.md)

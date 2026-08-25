@@ -10,5 +10,6 @@ Round to **4 decimals** in tex. Do not invent cells.
 | `relaxed_f1_gold_v2.csv` | Typed relaxed F1, IoU≥0.5 |
 | `per_domain_gold_v2.csv` | Industry-OOD **proxy** (source_domain) |
 | `encoder_gold_v2.csv` | JobBERT-zh CRF ranking, seed 42 |
+| `sop_v4_cws_diagnostic.csv` | SOP v4 / jieba **appendix** (not Table 3; caption must name train / decode / test gold) |
 
 Authoritative rounding and captions: `.cursor/skills/cnss-overleaf/confirmed-results.md`.
