@@ -1,0 +1,36 @@
+{
+  "run": "qwen25_14b_instruct_sopv4_p2_2601",
+  "model_path": "/home/guojingli3/SCESC-LLM-skill-extraction/LLaMA-Factory/Qwen2.5-14B-Instruct",
+  "alt_model_path_same_weights": "/home/guojingli3/SCESC-LLM-skill-extraction/Qwen2.5-14B-Instruct",
+  "hf_repo": "Qwen/Qwen2.5-14B-Instruct",
+  "torch_dtype": "bfloat16",
+  "quantization": "none",
+  "lora": "none (base Instruct, not sft_CN_skillspan_*)",
+  "tokenizer_json_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "safetensors_index_sha256": "46627f7a9e851d9cede6a7a4c49999082148ced9c22d2b9cfaaa5ba8b65dc68f",
+  "prompt_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/gpt4o_sop_extract_pilot100/PROMPT_gpt4o_sop_extract.txt",
+  "prompt_sha256": "6ec0ce8e789a305863527db1999d969a8e777bc99d0dd6e8bfbb2005e8463af9",
+  "input_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/predictions/qwen25_14b_instruct_sopv4_p2_2601.input.jsonl",
+  "input_sha256": "5af6436bd9ab6bae1a9df2d41c1c1f31ab908acb815aa9a7d33397aa5708614c",
+  "p2_sha256": "2ad6342d8b762cf1abb289295315e2521bec0c540f4320113409fceab0818d99",
+  "p1_sha256": "7a26e32b89d4e501175cb96443e35e171cea08d91501d2a32779b96ee8504ff6",
+  "p980_sha256": "057651616a27ac09cf46c9428c365725857e68d2feddf0b79315adbcadec1580",
+  "p980_note": "SimHuman SOP-v4 overlay, not human-validated Gold",
+  "scorer_version": "cnss-lskt-1.2.0",
+  "parser_version": "sop_extract_json_array_v1",
+  "jieba_userdict_sha256": "9beb51844d646e16a76c973c3c0c2b05e8a15abff718f0c5934896036b17d5dd",
+  "cws_snap_sha256": "b7155c610f59275e9189ec1c331ccc09cb58da53ecb12286562f38f2e8746beb",
+  "generation": {
+    "do_sample": false,
+    "max_new_tokens": 2048,
+    "torch_dtype": "bfloat16",
+    "quantization": "none",
+    "device_map": "auto"
+  },
+  "git_head": "70bec064097edd29007c32ecbf8a64d8a57a8ca7",
+  "input_fields": [
+    "id",
+    "sentence"
+  ],
+  "gold_not_in_prompt": true
+}

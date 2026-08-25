@@ -13,7 +13,7 @@ This is the **Chinese-SkillSpan / Chinese Skill Benchmark** dataset paper, not I
 You are a senior NLP dataset + evaluation reviewer (skill extraction / NER from job ads). I need a **decision memo**, not a rewrite of our paper.
 
 ### Who we are
-We built **Chinese-SkillSpan**: span-level competency extraction from **Chinese job ads** using a flat 4-way scheme **LSKT** (L language / K knowledge / S skill / T trait), derived from ESCO-style competency types but **not** ESCO concept-ID linking. Venue target: dataset paper (DASFAA 2026 filename; also considering PeerJ CS).
+We built **Chinese-SkillSpan**: span-level competency extraction from **Chinese job ads** using a flat 4-way scheme **LSKT** (L language / K knowledge / S skill / T trait), derived from ESCO-style competency types but **not** ESCO concept-ID linking. Venue target: **PeerJ Computer Science** (dataset paper). An older draft PDF filename still says DASFAA; ignore that as the target.
 
 We are **not** asking you to import English six-corpus SRICL method results. Related work you **should** look up: Mike Zhang et al. **SkillSpan** (NAACL 2022), **JobBERT / JobBERTa** domain-adaptive MLM on job ads, Kompetencer, Green, FIJO, Sayfullina, Gnehm, Chinese resume/JD NER (e.g. character-level BIO, CLUENER-style), nested NER, and recent LLM-as-annotator papers (silver labels, model-in-the-loop gold).
 

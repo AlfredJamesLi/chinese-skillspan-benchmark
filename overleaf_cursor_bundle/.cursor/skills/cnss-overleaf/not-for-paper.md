@@ -1,6 +1,6 @@
 # Do not write into the Chinese-SkillSpan Overleaf paper
 
-- IEEE Access / SRICL (arXiv `2604.21525`) method, tables, or `B8`/`A1`–`A4` as this paper’s system
+- Writing DASFAA 2026 (or any DASFAA track) as this paper’s submission venue; target is **PeerJ Computer Science**
 - English six-dataset main table (SkillSpan / Kompetencer / Green / FIJO / Sayfullina / Gnehm)
 - Any F1 not on the uploaded PDF and not in `confirmed-results.md`
 - RAG-2 as ESCO ID linking
@@ -15,5 +15,8 @@
 - English JobBERT ~0.46 or `*.eval_ner.json`
 - Claiming JobBERT-zh CRF (~0.12, SOP-silver 0.3170, or CWS post-hoc 0.1454) beats ChatGPT
 - Putting SOP-silver 0.3170 / 0.5663, both-sides CWS ~0.43, or jieba post-hoc 0.1454/0.1479 into PDF Table 3, the Gold v2 unique-first LLM table, or the abstract SOTA sentence (diagnostic table only; see confirmed-results.md)
-- Putting gpt-5.4 SOP-extract 0.2338 or deepseek-v4-pro n=46 0.2353 into Table 3, Gold v2 unique-first, or the matched-protocol 2601 LLM column
+- Putting gpt-5.4 SOP-extract 0.2338 (n=100) or 0.2132 (n=2601), kimi-k2.6 0.1979, claude-sonnet-4-5 0.1972, Qwen Instruct SOP 0.1724, or deepseek-v4-pro n=46 0.2353 into Table 3, Gold v2 unique-first, or the matched-protocol **main** 2601 frozen-dump table
+- Mixing n=100 gpt-5.4 0.2338 with n=2601 0.2132, or claiming Qwen SOP Gold-v2 diagnostic 0.2134 reproduces paper Qwen 0.2130
+- Replacing Table 3 dump ids with gpt-5.4 / sonnet-4-5 / kimi-k2.6
+- Incomplete SOP runs (Llama 98/2601, sonnet-4-6 128/2601, deepseek-v4-pro 700/2601) as paper F1
 - Claiming JobBERT-zh 0.4272/0.4331 on matched-protocol gold beats ChatGPT 0.6365 on Gold v2

@@ -1,0 +1,24 @@
+{
+  "run": "sopv4_api_p2_2601_claude-sonnet-4-6",
+  "model": "claude-sonnet-4-6",
+  "base": "https://claudeed.ysaikeji.cn",
+  "prompt_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/gpt4o_sop_extract_pilot100/PROMPT_gpt4o_sop_extract.txt",
+  "prompt_sha256": "6ec0ce8e789a305863527db1999d969a8e777bc99d0dd6e8bfbb2005e8463af9",
+  "p2_sha256": "2ad6342d8b762cf1abb289295315e2521bec0c540f4320113409fceab0818d99",
+  "p1_sha256": "7a26e32b89d4e501175cb96443e35e171cea08d91501d2a32779b96ee8504ff6",
+  "p980_sha256": "057651616a27ac09cf46c9428c365725857e68d2feddf0b79315adbcadec1580",
+  "p980_note": "SimHuman SOP-v4 overlay, not human-validated Gold",
+  "scorer_version": "cnss-lskt-1.2.0",
+  "jieba_userdict_sha256": "9beb51844d646e16a76c973c3c0c2b05e8a15abff718f0c5934896036b17d5dd",
+  "cws_snap_sha256": "b7155c610f59275e9189ec1c331ccc09cb58da53ecb12286562f38f2e8746beb",
+  "input_fields": [
+    "id",
+    "sentence",
+    "domain"
+  ],
+  "gold_not_in_prompt": true,
+  "silver_not_in_prompt": true,
+  "not_sonnet46_human980_silver_correct": true,
+  "not_for_confirmed_results_until_coverage": true,
+  "do_not_overwrite_frozen_dumps": true
+}

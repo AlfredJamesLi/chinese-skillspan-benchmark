@@ -1,6 +1,6 @@
 # Chinese-SkillSpan — GitHub 私有备份复现指南
 
-本目录为 **Chinese Skill Benchmark / Chinese-SkillSpan**（DASFAA 2026 数据集文）工作区备份。  
+本目录为 **Chinese Skill Benchmark / Chinese-SkillSpan**（**PeerJ Computer Science** 数据集文）工作区备份。  
 完整父仓库还含 Access/SRICL；**不要把 SRICL / 六语料英文主表写进本文**。
 
 两套测试金标不要混成一句 SOTA：

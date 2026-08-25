@@ -1,6 +1,6 @@
 # Data and scoring protocol (PeerJ CS) — Gold uniqueified (v2)
 
-Date: 2026-08-22. Gold-v2 file hashes were frozen for PeerJ CS notes. **This window’s dataset paper is DASFAA 2026** (Chinese-SkillSpan). Gold v2 sha and official human gold do **not** change with venue.  
+Date: 2026-08-22. Gold-v2 file hashes are frozen. **Submission venue: PeerJ Computer Science** (Chinese-SkillSpan dataset paper). Do not write DASFAA 2026 as the target venue. Gold v2 sha and official human gold do **not** change with venue.  
 18 Gold conflicts are adjudicated. **Do not change PDF Table 3 paper S-F1 cells.** Do not overwrite original LLM dumps. Claude/Kimi fills live in `reports/views/*_filled_v2.jsonl` only.
 
 Scorer: `cnss-lskt-1.2.0`. Git: `NO_GIT_HEAD`.

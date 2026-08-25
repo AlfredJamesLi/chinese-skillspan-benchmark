@@ -54,3 +54,9 @@ Thumbs.db
 **/*.rar
 **/*.dta
 **/*.bundle
+
+# --- huge regenerable eval copies (keep summaries + jieba jsonl instead) ---
+reports/sandbox_lskt_v4_silver/hybrid_cws_eval/preds_cws/
+reports/sandbox_lskt_v4_silver/sop_extract_p2_2601/**/raw_*/
+reports/sandbox_lskt_v4_silver/sop_extract_p2_2601/**/gold_p2_*.jsonl
+reports/sandbox_lskt_v4_silver/codex_pack/outputs_kimi/

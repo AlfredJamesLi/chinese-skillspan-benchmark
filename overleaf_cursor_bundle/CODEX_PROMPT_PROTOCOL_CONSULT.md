@@ -9,7 +9,9 @@ Copy `overleaf_cursor_bundle/` into the Overleaf repo root if not already there.
 
 ## PROMPT (copy from here)
 
-You are advising on **table architecture** for the Chinese-SkillSpan / Chinese Skill Benchmark DASFAA 2026 dataset paper. This is **not** the IEEE Access / SRICL method paper. Do not invent F1. Use only numbers in `confirmed-results.md`.
+You are advising on **table architecture** for the Chinese-SkillSpan / Chinese Skill Benchmark paper submitted to **PeerJ Computer Science**. This is **not** the IEEE Access / SRICL method paper. Do not invent F1. Use only numbers in `confirmed-results.md`.
+
+**Venue:** PeerJ CS, not DASFAA. Do not recommend DASFAA page-limit tactics as if we were still a conference dataset track.
 
 **This chat is consult-only.** `git pull --ff-only`, read `main.tex` and current Tables 1–3, then recommend. **Do not edit tex, do not commit, do not push.**
 
@@ -38,7 +40,7 @@ Authors currently lean toward either:
 1. **Best-numbers-as-main-table:** put the most flattering scores in the main results table (P2 encoder exact + P1 ChatGPT, or P2 relaxed ChatGPT, etc.).
 2. **One wide main table:** keep old and new together by adding a **column** (same models, two protocols) or a **row** (new systems inserted into the old ranking).
 
-Please **critique 1 and 2**, then pick among the options below (or a hybrid). Say what a DASFAA dataset-paper reviewer would attack.
+Please **critique 1 and 2**, then pick among the options below (or a hybrid). Say what a **PeerJ Computer Science** dataset-paper reviewer would attack.
 
 ### Options to rank
 
@@ -66,7 +68,7 @@ We currently **reject** this: P2 is SOP+SimHuman+jieba, not human Doccano Gold. 
 - Dataset-paper identity: human gold + IAA (Table 2) must remain a first-class result, not an appendix casualty of the encoder story.
 - Encoder story is real but **protocol-bound**: v4 silver + jieba helps when test gold uses the same SOP/CWS; it does **not** beat ChatGPT on Gold v2.
 - P2 LLM column is **old prompt + new gold**, so encoder vs LLM on P2 is only partly matched. Caption must say that. A fully matched LLM would need a 2601 SOP-extract re-call; we are not doing that this pass.
-- Page budget: DASFAA dataset papers are tight. Prefer two compact tables over four.
+- Page budget: PeerJ CS allows more space than a conference track. Still prefer two clear tables over a collage; extra protocol detail can go in Methods or Supplemental Information.
 - Claude/Kimi incomplete or mixed-model fills: mark in caption, do not let them look like complete original-model rows.
 
 ### Deliverable (markdown in the chat)

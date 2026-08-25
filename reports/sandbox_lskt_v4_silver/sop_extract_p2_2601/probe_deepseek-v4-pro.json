@@ -1,0 +1,30 @@
+[
+  {
+    "mode": "low_thinking",
+    "ok": true,
+    "elapsed_s": 9.95,
+    "upstream": "deepseek-v4-pro",
+    "preview": "[{\"id\": \"smoke-1\", \"spans\": [{\"text\": \"Python\", \"type\": \"S\"}, {\"text\": \"英语六级\", \"type\": \"K\"}, {\"text\": \"沟通能力\", \"type\": \"T\"}]}]",
+    "usage": {
+      "completion_tokens": 583,
+      "prompt_tokens": 817,
+      "total_tokens": 1400,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 527,
+        "rejected_prediction_tokens": null,
+        "text_tokens": null
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cache_write_tokens": null,
+        "cached_tokens": 0,
+        "image_tokens": null,
+        "text_tokens": null
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 817
+    }
+  }
+]

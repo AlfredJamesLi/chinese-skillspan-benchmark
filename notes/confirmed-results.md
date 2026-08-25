@@ -4,7 +4,7 @@ Extracted from uploaded PDF:
 
 `Chinese_skill_benchmark_Paper/2026_New_DASFAA_Chinese_SkillSpan__A_Span_Level_Dataset_for_ESCO_Aligned_Competency_Extraction_from_Chinese_Job_Ads.pdf`
 
-Venue on filename: DASFAA 2026 (new). Task: Chinese JobSkillNER, ESCO-1.20, flat **LSKT** (L/K/S/T).  
+Venue: **PeerJ Computer Science** (submission target). The extracted PDF filename still contains DASFAA 2026; treat that as a draft filename only. Task: Chinese JobSkillNER, ESCO-1.20, flat **LSKT** (L/K/S/T).  
 Metrics in paper: Exact-span F1 (S-F1), Relaxed F1 (IoU≥0.5), Concept Accuracy.
 
 ## Table 1 — corpus (paper)
@@ -28,6 +28,20 @@ Repo **preprocessing** `test.json` is 2639 and **unlabeled** — do not use as t
 
 No IAA script or 100-sample subset found in the repo (**missing**).
 
+## Model IDs (dump `model` field; do not invent dates)
+
+CSV: `tables/model_ids.csv`. Use these strings in every results table. Counted on unique-first views.
+
+| Paper name | Dump model id | Coverage |
+|---|---|---|
+| ChatGPT | `gpt-4o` | 2639/2639 |
+| Claude | `claude-3-5-haiku-20241022` | 2536; miss 98. Filled view adds 98× `claude-sonnet-4-6` |
+| Kimi | `kimi-k2-0711-preview` | 2341; miss 293. Filled view uses `kimi-k2.6` |
+| DeepSeek | `deepseek-r1` | 2639/2639 |
+| Qwen | `Qwen2.5-14B-Instruct` | 3237/3237 |
+| JobBERT-zh | `chinese-roberta-wwm-ext` + JD MLM + CRF | 1M/3M = DAPT size |
+| RoBERTa-wwm | `chinese-roberta-wwm-ext` | vanilla CRF |
+
 ## Table 3 — strict S-F1 (paper vs this repo, 2026-08-22 rescore)
 
 Gold for rescore: `chinese_skillspan_preprocessing/data/doccano_to_baseline_file/admin_Baseline_test.jsonl` (2676).  
@@ -35,11 +49,11 @@ Span metric: exact (start, end, type) or collapsed to SKILL.
 
 | Model | Paper S-F1 | Repo typed F1 | Repo collapsed F1 | Pred dump n | Verdict |
 |---|---:|---:|---:|---:|---|
-| ChatGPT | 0.6700 | 0.6836 | **0.6703** | 3237 | **Match** (collapsed) |
-| Claude | 0.6300 | 0.5712 | 0.6062 | 2536 | Close; dump incomplete |
-| Kimi | 0.5700 | 0.5310 | 0.5618 | 2341 | Close; dump incomplete |
-| DeepSeek | 0.5130 | **0.5149** | 0.5479 | 2639 | **Match** (typed) |
-| Qwen | 0.2130 | 0.3442 | 0.3949 | 3237 / 2601 aligned | **Gap** |
+| ChatGPT (`gpt-4o`) | 0.6700 | 0.6836 | **0.6703** | 3237 | **Match** (collapsed) |
+| Claude (`claude-3-5-haiku-20241022`) | 0.6300 | 0.5712 | 0.6062 | 2536 | Close; dump incomplete |
+| Kimi (`kimi-k2-0711-preview`) | 0.5700 | 0.5310 | 0.5618 | 2341 | Close; dump incomplete |
+| DeepSeek (`deepseek-r1`) | 0.5130 | **0.5149** | 0.5479 | 2639 | **Match** (typed) |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.2130 | 0.3442 | 0.3949 | 3237 / 2601 aligned | **Gap** |
 | JobBERT-skill | 0.0045 | — | **0.0045** | metrics file | **Match** |
 | JobBERT-knowledge | 0.0038 | — | **0.0038** | metrics file | **Match** |
 
@@ -58,13 +72,13 @@ CSV: `tables/table3_gold_v2_unique_view.csv`, `tables/relaxed_f1_gold_v2.csv`.
 
 | Model | Paper S-F1 | typed exact | collapsed exact | typed relaxed | Align |
 |---|---:|---:|---:|---:|---|
-| ChatGPT | 0.6700 | 0.6365 | 0.6403 | **0.7221** | OK |
-| DeepSeek | 0.5130 | 0.1327 | 0.3569 | 0.1798 | OK |
-| Qwen | 0.2130 | 0.0791 | 0.1075 | 0.1272 | OK |
+| ChatGPT (`gpt-4o`) | 0.6700 | 0.6365 | 0.6403 | **0.7221** | OK |
+| DeepSeek (`deepseek-r1`) | 0.5130 | 0.1327 | 0.3569 | 0.1798 | OK |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.2130 | 0.0791 | 0.1075 | 0.1272 | OK |
 | JobBERT-skill | 0.0045 | 0.0000 | 0.0045 | 0.0000 | OK |
 | JobBERT-knowledge | 0.0038 | 0.0000 | 0.0037 | 0.0000 | OK |
-| Claude | 0.6300 | **0.2583** | 0.2970 | 0.3861 | OK (98 IDs filled with sonnet-4-6; dump is haiku+sonnet mix) |
-| Kimi | 0.5700 | 0.1651 | 0.3349 | 0.2130* | Missing 293 IDs |
+| Claude (`claude-3-5-haiku-20241022` + 98× `claude-sonnet-4-6`) | 0.6300 | **0.2583** | 0.2970 | 0.3861 | OK (haiku dump + 98 sonnet fills) |
+| Kimi (`kimi-k2-0711-preview`) | 0.5700 | 0.1651 | 0.3349 | 0.2130* | Missing 293 IDs |
 
 Claude Gold v2 is complete at 2601/2601 via `reports/views/Claude_filled_v2.jsonl` (original haiku dump + 98 sonnet-4-6 fills). Original `merged_test_cluade.jsonl` untouched. Incomplete unique-first view is still 0.2570 typed (matched-only). Kimi original dump still misses 293 IDs; use `Kimi_filled_v2.jsonl` for the filled row.
 
@@ -75,9 +89,9 @@ No `year` field → **do not claim Time-OOD**. CSV: `tables/per_domain_gold_v2.c
 
 | System | 人工智能 | 阿里云 | 事业单位 |
 |---|---:|---:|---|
-| ChatGPT | 0.6489 | 0.5650 | **0.7032** |
-| DeepSeek | 0.1392 | 0.1293 | 0.0805 |
-| Qwen | 0.0887 | 0.0646 | 0.0207 |
+| ChatGPT (`gpt-4o`) | 0.6489 | 0.5650 | **0.7032** |
+| DeepSeek (`deepseek-r1`) | 0.1392 | 0.1293 | 0.0805 |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.0887 | 0.0646 | 0.0207 |
 | JobBERT 3M ckpt65000 | **0.1323** | 0.1259 | 0.0150 |
 | JobBERT 1M | 0.1287 | 0.1332 | 0.0181 |
 | listed mix 1M | 0.1282 | 0.1240 | 0.0153 |
@@ -160,11 +174,11 @@ Encoder CSV: `tables/hybrid_cws_simhuman980_all_models.csv`.
 | JobBERT 3M ckpt65000 (3-seed mean) | 0.2961 | 0.5278 | — | — |
 | JobBERT demo 80k | 0.2931 | 0.5321 | — | — |
 | RoBERTa-wwm v3 (3-seed mean) | 0.2875 | 0.5206 | — | — |
-| ChatGPT (old dump, complete) | 0.2854 | **0.6249** | 0.2836 | **0.6447** |
-| Claude (old dump, 98 empty) | 0.1483 | 0.3349 | 0.1757 | 0.4062 |
-| Kimi (old dump, 293 empty) | 0.0964 | 0.1997 | 0.1011 | 0.2183 |
-| DeepSeek (old dump, complete) | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
-| Qwen (old dump, complete) | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
+| ChatGPT (`gpt-4o`, old dump, complete) | 0.2854 | **0.6249** | 0.2836 | **0.6447** |
+| Claude (`claude-3-5-haiku-20241022`, 98 empty) | 0.1483 | 0.3349 | 0.1757 | 0.4062 |
+| Kimi (`kimi-k2-0711-preview`, 293 empty) | 0.0964 | 0.1997 | 0.1011 | 0.2183 |
+| DeepSeek (`deepseek-r1`, old dump, complete) | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
+| Qwen (`Qwen2.5-14B-Instruct`, old dump, complete) | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
 | JobBERT-skill EN head | 0.0096 | 0.0676 | 0.0124 | 0.0919 |
 | JobBERT-knowledge EN head | 0.0088 | 0.0644 | 0.0122 | 0.0862 |
 
@@ -174,9 +188,9 @@ LLM coverage on hybrid 2601 (old dumps, **no API this pass**): ChatGPT / DeepSee
 
 Optional later (do not use as this pass): Claude filled haiku+sonnet 0.1519 / 0.3416; Kimi filled 0.1093 / 0.2321.
 
-## SOP extract re-call pilots (2026-08-25/26; not main tables)
+## SOP extract re-call pilots (2026-08-25; subset IDs; not main tables)
 
-Scored with `cnss-lskt-1.2.0`. Prompt = SOP extract v4 (sentence only, no rule_v4 silver). **Do not** put these rows in PDF Table 3, Gold v2 unique-first, the abstract SOTA sentence, or the matched-protocol 2601 table. They answer: does a new SOP prompt lift LLM exact F1 on hybrid vs the frozen `@@span##` dumps? **No.**
+Scored with `cnss-lskt-1.2.0`. Prompt = SOP extract v4 (sentence only, no rule_v4 silver). **Do not** put these rows in PDF Table 3, Gold v2 unique-first, the abstract SOTA sentence, or the matched-protocol 2601 table.
 
 Same 100 hybrid IDs (seed `20260825`; 38 SimHuman + 62 SOP-CWS). Model `gpt-5.4` via `https://claudeed.ysaikeji.cn`. JSON: `reports/sandbox_lskt_v4_silver/gpt4o_sop_extract_pilot100/summary_gpt-5.4.json`.
 
@@ -192,7 +206,28 @@ Partial `deepseek-v4-pro` (official API, `reasoning_effort=high` + thinking; **4
 | deepseek-v4-pro SOP extract | 0.2353 | 0.5000 | 0.3678 | 0.4943 |
 | ChatGPT old dump (same 46 IDs) | 0.3648 | 0.6667 | 0.6701 | 0.8223 |
 
-Allowed claim: SOP extract re-calls of gpt-5.4 and DeepSeek V4 Pro **did not** raise hybrid typed exact above the frozen ChatGPT dump on the same IDs. Do not expand these two models to 2601 for the matched-protocol LLM column. Official `gpt-4o` + same SOP prompt is still the missing fair LLM re-call.
+Allowed claim: on these **subset** IDs, SOP extract did **not** beat the frozen ChatGPT dump. The n=100 gpt-5.4 cell **0.2338 is not** the full-n number (full-n is 0.2132 below). Do not mix n=100 with n=2601.
+
+## SOP extract full P2-2601 (2026-08-26; diagnostic LLM table, not P2 main)
+
+Authorized 2026-08-26. Same SOP extract v4 prompt, jieba snap, scorer `cnss-lskt-1.2.0`, gold `test_lskt_v4_cws_simhuman980_hybrid.jsonl`. Coverage 2601/2601, `alignment_ok`. CSV: `tables/sop_extract_p2_2601.csv`.
+
+**Do not** put these rows into PDF Table 3, Gold v2 unique-first, the abstract SOTA sentence, or the matched-protocol **main** 2601 table (that table stays **frozen `@@span##` dumps** + jieba). These are **new models / new prompt**, not replacements for `gpt-4o` / `claude-3-5-haiku-20241022` / `kimi-k2-0711-preview` / `deepseek-r1`.
+
+| System | n=2601 exact | n=2601 relaxed | n=980 exact | n=980 relaxed | Source |
+|---|---:|---:|---:|---:|---|
+| gpt-5.4 SOP extract | **0.2132** | **0.4199** | 0.2063 | 0.4207 | `sop_extract_p2_2601/gpt-5.4/summary_gpt-5.4.json` |
+| kimi-k2.6 SOP extract | 0.1979 | 0.4032 | 0.1912 | 0.4108 | `sop_extract_p2_2601/kimi-k2.6/summary_kimi-k2.6.json` |
+| claude-sonnet-4-5 SOP extract | 0.1972 | 0.3987 | 0.1861 | 0.3945 | `sop_extract_p2_2601/claude-sonnet-4-5/summary_claude-sonnet-4-5.json` |
+| Qwen2.5-14B-Instruct SOP extract (local, no LoRA) | 0.1724 | 0.3279 | 0.1711 | 0.3390 | `reports/qwen25_14b_instruct_sopv4_p2_2601_scores.csv` |
+| ChatGPT (`gpt-4o`, frozen dump + jieba) | 0.2854 | **0.6249** | 0.2836 | 0.6447 | P2 main table (not a SOP re-call) |
+| JobBERT 3M v4 + jieba | **0.4331** | 0.5873 | 0.4401 | 0.6032 | P2 main table |
+
+Qwen SOP extract vs the **same model’s frozen dump** on P2: 0.1724 vs 0.0501 (prompt lift). Qwen SOP preds scored **raw** on Gold v2 (diagnostic only): typed exact **0.2134** / relaxed 0.2999. That is **not** a reproduction of paper Qwen S-F1 0.2130 (different gold and prompt). Do not put 0.2134 into Gold v2 unique-first (frozen Qwen dump there is 0.0791).
+
+Allowed claim: full-n SOP extract re-calls **did not** beat frozen ChatGPT P2 exact **0.2854** or relaxed **0.6249**, and **did not** beat JobBERT 3M v4 exact **0.4331**. Official `gpt-4o` + the same SOP prompt is still missing.
+
+**Not yet scored (do not invent F1):** Llama-3-8B-Instruct SOP 98/2601; claude-sonnet-4-6 SOP 128/2601; deepseek-v4-pro SOP 700/2601 (uniform decode, not the n=46 high-thinking pilot); Qwen LoRA SFT on SOP extract (train in progress). Job 50649 `jbzh_domain1m` remains `JobHeldUser` and is redundant given the 3-seed domain-mix already in the encoder table.
 
 ## Still missing / blocked (paper claims)
 

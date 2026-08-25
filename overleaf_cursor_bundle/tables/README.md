@@ -5,6 +5,7 @@ Round to **4 decimals** in tex. Do not invent cells.
 
 | File | Use |
 |---|---|
+| `model_ids.csv` | Dump `model` field for every LLM / encoder row label |
 | `table3_paper_strict_sf1.json` | Keep PDF Table 3 paper S-F1 (Gold 2676) |
 | `table3_gold_v2_unique_view.csv` | New Gold v2 unique-first typed/collapsed (2601 IDs) |
 | `relaxed_f1_gold_v2.csv` | Typed relaxed F1, IoU≥0.5 |

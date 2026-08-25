@@ -11,7 +11,8 @@ $src = "从服务器下载后的 overleaf_cursor_bundle 路径"
 $dst = "本机 Overleaf 仓库根路径"
 Copy-Item "$src\HANDOVER_OVERLEAF.md" "$dst\HANDOVER_OVERLEAF.md" -Force
 Copy-Item "$src\AGENTS.md" "$dst\AGENTS.md" -Force
-Copy-Item "$src\CODEX_PROMPT.md" "$dst\CODEX_PROMPT.md" -Force
+Copy-Item "$src\CODEX_PROMPT_ALL.md" "$dst\CODEX_PROMPT_ALL.md" -Force
+Copy-Item "$src\CODEX_PROMPT_PROTOCOL_CONSULT.md" "$dst\CODEX_PROMPT_PROTOCOL_CONSULT.md" -Force
 Copy-Item "$src\tables" "$dst\tables" -Recurse -Force
 Copy-Item "$src\.cursor" "$dst\.cursor" -Recurse -Force
 Copy-Item "$src\CHAT_SEED.txt" "$dst\CHAT_SEED.txt" -Force

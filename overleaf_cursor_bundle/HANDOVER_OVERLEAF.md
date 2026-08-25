@@ -1,7 +1,7 @@
 # Overleaf 窗口交接（Chinese-SkillSpan Benchmark）
 
 本文件是本机 Overleaf 编辑窗口的背景。先读完再改 tex。  
-日期：2026-08-24。数字以 `.cursor/skills/cnss-overleaf/confirmed-results.md` 为准（已从服务器同步）。
+日期：2026-08-26。投稿期刊：**PeerJ Computer Science**（不是 DASFAA）。数字以 `.cursor/skills/cnss-overleaf/confirmed-results.md` 为准（已从服务器同步）。
 
 **本窗口：** 本机 Overleaf Git（项目 https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4 ；`git.overleaf.com/68fe17a53e53a7f800e4f2b4`）
 
@@ -15,9 +15,8 @@ GitHub 私有备份：https://github.com/AlfredJamesLi/chinese-skillspan-benchma
 
 压缩表：`.cursor/skills/cnss-overleaf/confirmed-results.md`  
 禁写：`.cursor/skills/cnss-overleaf/not-for-paper.md`  
-Codex 提示词：`CODEX_PROMPT.md`（Gold v2 表）  
-SOP v4 方法段（无 F1）：`CODEX_PROMPT_SOP_V4.md`  
-SOP / jieba **诊断表**（附录，非 Table 3）：`CODEX_PROMPT_DIAGNOSTIC_SOP.md`  
+Codex 先咨询表结构：`CODEX_PROMPT_PROTOCOL_CONSULT.md`  
+Codex 改稿（合并一份）：`CODEX_PROMPT_ALL.md`  
 表 CSV：`tables/`
 
 冲突时以**本文 + 已确认表**为准并报告。

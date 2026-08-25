@@ -1,6 +1,6 @@
 # Paper results index
 
-Consolidated results for **Chinese-SkillSpan / DASFAA 2026**. Numbers in `paper/` come from the uploaded PDF (plus 2026-08-22 legacy rescore notes). Numbers in `repo/` use **Gold v2** (`gold_canonical_v2.jsonl`) and scorer `cnss-lskt-1.2.0`.
+Consolidated results for **Chinese-SkillSpan / PeerJ Computer Science**. Numbers in `paper/` come from the uploaded PDF (filename still contains DASFAA; venue is PeerJ CS). Numbers in `repo/` use **Gold v2** (`gold_canonical_v2.jsonl`) and scorer `cnss-lskt-1.2.0`.
 
 ## Layout
 

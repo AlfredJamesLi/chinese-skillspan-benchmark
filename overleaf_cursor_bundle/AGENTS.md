@@ -1,6 +1,6 @@
 # Chinese-SkillSpan — Overleaf editor
 
-This workspace is the **local Overleaf Git clone** for the Chinese-SkillSpan benchmark paper, not the GPU experiment server and not the IEEE Access / SRICL paper.
+This workspace is the **local Overleaf Git clone** for the Chinese-SkillSpan benchmark paper (**PeerJ Computer Science**), not the GPU experiment server and not the IEEE Access / SRICL paper. Do not write DASFAA 2026 as the venue.
 
 **Read first:** `HANDOVER_OVERLEAF.md`
 

@@ -1,6 +1,6 @@
 # Chinese-SkillSpan 论文 — 服务器窗口交接
 
-日期：2026-08-22。本窗口准备 **Chinese Skill Benchmark / Chinese-SkillSpan** 文，不是 IEEE Access / SRICL。
+日期：2026-08-22。本窗口准备 **Chinese Skill Benchmark / Chinese-SkillSpan** 文，投稿 **PeerJ Computer Science**，不是 DASFAA，也不是 IEEE Access / SRICL。
 
 **本窗口：** 服务器  
 `/home/guojingli3/SCESC-LLM-skill-extraction`  

@@ -1,0 +1,40 @@
+{
+  "n": 2601,
+  "n_simhuman": 980,
+  "n_sop_cws": 1621,
+  "n_unaligned_sents": 17,
+  "n_spans": 5846,
+  "n_empty": 965,
+  "model": "gpt-5.4",
+  "base": "https://claudeed.ysaikeji.cn",
+  "prompt": "SOP extract v4 (no silver); not frozen @@span## dump; not sonnet46 silver-correct",
+  "gold_v2_untouched": true,
+  "frozen_dumps_untouched": true,
+  "not_for_confirmed_results": true,
+  "hybrid_cws": {
+    "p2_2601": {
+      "alignment_ok": true,
+      "n_gold": 2601,
+      "n_matched": 2601,
+      "n_missing": 0,
+      "typed_exact_p": 0.19357351509250242,
+      "typed_exact_r": 0.23717489859222143,
+      "typed_exact_f1": 0.2131674887411538,
+      "typed_relaxed_f1": 0.4199013510615484,
+      "collapsed_exact_f1": 0.25305597254986056,
+      "collapsed_relaxed_f1": 0.5050396740295946
+    },
+    "p2_980": {
+      "alignment_ok": true,
+      "n_gold": 980,
+      "n_matched": 980,
+      "n_missing": 0,
+      "typed_exact_p": 0.184460592509782,
+      "typed_exact_r": 0.23395958879829848,
+      "typed_exact_f1": 0.2062822315986873,
+      "typed_relaxed_f1": 0.42069073292701986,
+      "collapsed_exact_f1": 0.2509767151117362,
+      "collapsed_relaxed_f1": 0.516643225503985
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "n": 2601,
+  "n_simhuman": 980,
+  "n_sop_cws": 1621,
+  "n_unaligned_sents": 39,
+  "n_spans": 5738,
+  "n_empty": 1026,
+  "model": "kimi-k2.6",
+  "base": "https://api.moonshot.cn",
+  "prompt": "SOP extract v4 (no silver); not frozen @@span## dump; not sonnet46 silver-correct",
+  "gold_v2_untouched": true,
+  "frozen_dumps_untouched": true,
+  "not_for_confirmed_results": true,
+  "hybrid_cws": {
+    "p2_2601": {
+      "alignment_ok": true,
+      "n_gold": 2601,
+      "n_matched": 2601,
+      "n_missing": 0,
+      "typed_exact_p": 0.18327908868999188,
+      "typed_exact_r": 0.21498449057504176,
+      "typed_exact_f1": 0.19786977050620402,
+      "typed_relaxed_f1": 0.403206324805095,
+      "collapsed_exact_f1": 0.24838036675085098,
+      "collapsed_relaxed_f1": 0.5051059624464698
+    },
+    "p2_980": {
+      "alignment_ok": true,
+      "n_gold": 980,
+      "n_matched": 980,
+      "n_missing": 0,
+      "typed_exact_p": 0.17387518142235123,
+      "typed_exact_r": 0.21233605104572847,
+      "typed_exact_f1": 0.1911905521864028,
+      "typed_relaxed_f1": 0.4107883817427386,
+      "collapsed_exact_f1": 0.24800510692626876,
+      "collapsed_relaxed_f1": 0.5269709543568465
+    }
+  }
+}

@@ -12,7 +12,9 @@ First copy `overleaf_cursor_bundle/` into the Overleaf repo **root** (`HANDOVER_
 
 ## PROMPT (copy from here)
 
-You are editing the **Chinese-SkillSpan / Chinese Skill Benchmark** Overleaf paper (DASFAA 2026 dataset paper; LSKT span extraction on Chinese job ads). This is **not** the IEEE Access / SRICL method paper (arXiv 2604.21525). Do not import SkillSpan/Kompetencer/Green/FIJO/Sayfullina/Gnehm tables, SRICL, B8, or A1–A4.
+You are editing the **Chinese-SkillSpan / Chinese Skill Benchmark** Overleaf paper for **PeerJ Computer Science** (dataset paper; LSKT span extraction on Chinese job ads). This is **not** the IEEE Access / SRICL method paper (arXiv 2604.21525). Do not import SkillSpan/Kompetencer/Green/FIJO/Sayfullina/Gnehm tables, SRICL, B8, or A1–A4.
+
+**Venue (hard rule):** submission target is **PeerJ Computer Science**. Do **not** write DASFAA 2026 (or any DASFAA track) as the target venue in title, running header, footnotes, acknowledgements, or cover letter text. An older draft PDF filename still contains “DASFAA”; that is a file name only — retitle the tex to PeerJ CS. If the current document class is a conference template, report it and switch only if a PeerJ template is already in this Overleaf project; otherwise keep the class and change venue wording.
 
 Overleaf: https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4
 
@@ -24,6 +26,8 @@ Overleaf: https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4
 5. Then patch methods + tables in **one pass**. Show the full `git diff`. **Do not commit or push.**
 
 ### Hard rules
+- **Venue: PeerJ Computer Science.** Do not write DASFAA 2026 as the submission target.
+- **LLM row labels must include dump model ids** (`tables/model_ids.csv`): ChatGPT=`gpt-4o`, Claude=`claude-3-5-haiku-20241022`, Kimi=`kimi-k2-0711-preview`, DeepSeek=`deepseek-r1`, Qwen=`Qwen2.5-14B-Instruct`. Do not use brand-only names in results tables.
 - Write **only** numbers in `confirmed-results.md`. Round to 4 decimals. Do not invent F1.
 - **Two test golds, never mixed in one SOTA sentence:**
   - **Official human Gold v2:** `gold_canonical_v2.jsonl`, 2601 IDs, scorer `cnss-lskt-1.2.0`, primary metric typed exact micro F1. ChatGPT **0.6365** typed / **0.7221** relaxed.
@@ -75,17 +79,27 @@ Add a short subsection (English, same register as the paper) that distinguishes 
 
 **B. Keep Table 2 IAA** (n=100): strict F1 0.532; relaxed 0.624; κ 0.554.
 
-**C. Keep PDF Table 3 paper S-F1** unchanged (old protocol Gold 2676).
+**C. Keep PDF Table 3 paper S-F1** unchanged (old protocol Gold 2676). Relabel rows with dump ids; do not change paper S-F1 cells.
+
+| Model | Paper S-F1 |
+|---|---:|
+| ChatGPT (`gpt-4o`) | 0.6700 |
+| Claude (`claude-3-5-haiku-20241022`) | 0.6300 |
+| Kimi (`kimi-k2-0711-preview`) | 0.5700 |
+| DeepSeek (`deepseek-r1`) | 0.5130 |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.2130 |
+| JobBERT-skill | 0.0045 |
+| JobBERT-knowledge | 0.0038 |
 
 **D. Add Gold v2 unique-first** (official human gold; caption: Gold v2, unique-first, typed exact micro F1, `cnss-lskt-1.2.0`)
 
 | Model | typed exact | collapsed exact | typed relaxed | note |
 |---|---:|---:|---:|---|
-| ChatGPT | 0.6365 | 0.6403 | 0.7221 | complete |
-| Claude filled | 0.2583 | 0.2970 | 0.3861 | haiku dump + 98 sonnet-4-6 fills; original dump untouched |
-| Kimi | 0.1651 | 0.3349 | 0.2130 | original dump missing 293 IDs |
-| DeepSeek | 0.1327 | 0.3569 | 0.1798 | complete |
-| Qwen | 0.0791 | 0.1075 | 0.1272 | complete; gap vs paper 0.2130 |
+| ChatGPT (`gpt-4o`) | 0.6365 | 0.6403 | 0.7221 | complete |
+| Claude (`claude-3-5-haiku-20241022` + 98× `claude-sonnet-4-6`) | 0.2583 | 0.2970 | 0.3861 | haiku dump + 98 sonnet fills; original dump untouched |
+| Kimi (`kimi-k2-0711-preview`) | 0.1651 | 0.3349 | 0.2130 | original dump missing 293 IDs |
+| DeepSeek (`deepseek-r1`) | 0.1327 | 0.3569 | 0.1798 | complete |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.0791 | 0.1075 | 0.1272 | complete; gap vs paper 0.2130 |
 | JobBERT-skill | 0.0000 | 0.0045 | 0.0000 | EN head |
 | JobBERT-knowledge | 0.0000 | 0.0037 | 0.0000 | EN head |
 
@@ -95,9 +109,9 @@ Keep ChatGPT as the strongest **complete** LLM under Gold v2. Encoder ~0.13 is a
 
 | System | 人工智能招聘 | 阿里云 | 事业单位招聘 |
 |---|---:|---:|---:|
-| ChatGPT | 0.6489 | 0.5650 | 0.7032 |
-| DeepSeek | 0.1392 | 0.1293 | 0.0805 |
-| Qwen | 0.0887 | 0.0646 | 0.0207 |
+| ChatGPT (`gpt-4o`) | 0.6489 | 0.5650 | 0.7032 |
+| DeepSeek (`deepseek-r1`) | 0.1392 | 0.1293 | 0.0805 |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.0887 | 0.0646 | 0.0207 |
 | JobBERT 3M ckpt65000 | 0.1323 | 0.1259 | 0.0150 |
 | JobBERT 1M | 0.1287 | 0.1332 | 0.0181 |
 | listed mix 1M | 0.1282 | 0.1240 | 0.0153 |
@@ -148,11 +162,11 @@ Discussion (two sentences): SOP v4 training **lowers** Gold v2 exact vs goldstyl
 | JobBERT 3M ckpt65000 (3-seed mean) | 0.2961 | 0.5278 | — | — |
 | JobBERT demo 80k | 0.2931 | 0.5321 | — | — |
 | RoBERTa-wwm v3 (3-seed mean) | 0.2875 | 0.5206 | — | — |
-| ChatGPT (frozen dump + jieba, complete) | 0.2854 | 0.6249 | 0.2836 | 0.6447 |
-| Claude (frozen dump + jieba, 98 empty) | 0.1483 | 0.3349 | 0.1757 | 0.4062 |
-| Kimi (frozen dump + jieba, 293 empty) | 0.0964 | 0.1997 | 0.1011 | 0.2183 |
-| DeepSeek (frozen dump + jieba, complete) | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
-| Qwen (frozen dump + jieba, complete) | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
+| ChatGPT (`gpt-4o`, frozen dump + jieba, complete) | 0.2854 | 0.6249 | 0.2836 | 0.6447 |
+| Claude (`claude-3-5-haiku-20241022`, frozen dump + jieba, 98 empty) | 0.1483 | 0.3349 | 0.1757 | 0.4062 |
+| Kimi (`kimi-k2-0711-preview`, frozen dump + jieba, 293 empty) | 0.0964 | 0.1997 | 0.1011 | 0.2183 |
+| DeepSeek (`deepseek-r1`, frozen dump + jieba, complete) | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
+| Qwen (`Qwen2.5-14B-Instruct`, frozen dump + jieba, complete) | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
 | JobBERT-skill EN head | 0.0096 | 0.0676 | 0.0124 | 0.0919 |
 | JobBERT-knowledge EN head | 0.0088 | 0.0644 | 0.0122 | 0.0862 |
 
@@ -160,7 +174,7 @@ Allowed sentence: under this matched gold, JobBERT-zh 1M/3M v4 lead typed exact 
 
 Optional footnote: SOP extract re-call gpt-5.4 n=100 hybrid exact 0.2338 vs old dump 0.3356 on the same IDs; DeepSeek V4 Pro n=46 hybrid exact 0.2353 vs old dump 0.3648. Not expanded to 2601.
 
-CSV copies: `tables/table3_gold_v2_unique_view.csv`, `tables/per_domain_gold_v2.csv`, `tables/encoder_gold_v2.csv`, `tables/encoder_3seed_gold_v2.csv`, `tables/sop_v4_cws_diagnostic.csv`, `tables/hybrid_cws_simhuman980_all_models.csv`, `tables/hybrid_cws_llm_old_dumps.csv`.
+CSV copies: `tables/model_ids.csv`, `tables/table3_gold_v2_unique_view.csv`, `tables/per_domain_gold_v2.csv`, `tables/encoder_gold_v2.csv`, `tables/encoder_3seed_gold_v2.csv`, `tables/sop_v4_cws_diagnostic.csv`, `tables/hybrid_cws_simhuman980_all_models.csv`, `tables/hybrid_cws_llm_old_dumps.csv`.
 
 Mark Claude / Kimi as incomplete (empty-fill). Do not treat 0.1483 / 0.0964 as complete LLM rows. Do not use the later haiku+sonnet / Kimi_filled numbers in this table.
 

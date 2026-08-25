@@ -1,0 +1,47 @@
+[
+  {
+    "model": "claude-sonnet-4-5",
+    "ok": true,
+    "status": 200,
+    "elapsed_s": 3.41,
+    "upstream": "claude-sonnet-4-5-20250929",
+    "err": null,
+    "preview": "[{\"id\":\"smoke-1\",\"spans\":[{\"text\":\"Python\",\"type\":\"S\"},{\"text\":\"英语六级\",\"type\":\"K\"},{\"text\":\"沟通能力\",\"type\":\"T\"}]}]"
+  },
+  {
+    "model": "claude-sonnet-4-5-20250929",
+    "ok": true,
+    "status": 200,
+    "elapsed_s": 13.54,
+    "upstream": "claude-sonnet-4-5-20250929",
+    "err": null,
+    "preview": "[{\"id\":\"smoke-1\",\"spans\":[{\"text\":\"Python\",\"type\":\"S\"},{\"text\":\"英语六级\",\"type\":\"K\"},{\"text\":\"沟通能力\",\"type\":\"T\"}],\"comment\":\"能力要求\"}]"
+  },
+  {
+    "model": "claude-4-sonnet",
+    "ok": false,
+    "status": 503,
+    "elapsed_s": 0.49,
+    "upstream": null,
+    "err": "{\"error\":{\"code\":\"model_not_found\",\"message\":\"No available channel for model claude-4-sonnet under group default (distributor) (request id: 202608252115033539130118268d9d6GbprRqYS)\",\"type\":\"new_api_error\"}}",
+    "preview": ""
+  },
+  {
+    "model": "claude-sonnet-4-5-20251001",
+    "ok": false,
+    "status": 503,
+    "elapsed_s": 0.5,
+    "upstream": null,
+    "err": "{\"error\":{\"code\":\"model_not_found\",\"message\":\"No available channel for model claude-sonnet-4-5-20251001 under group default (distributor) (request id: 202608252115038587755028268d9d60UQXxJNw)\",\"type\":\"new_api_error\"}}",
+    "preview": ""
+  },
+  {
+    "model": "anthropic/claude-sonnet-4-5",
+    "ok": false,
+    "status": 503,
+    "elapsed_s": 0.51,
+    "upstream": null,
+    "err": "{\"error\":{\"code\":\"model_not_found\",\"message\":\"No available channel for model anthropic/claude-sonnet-4-5 under group default (distributor) (request id: 202608252115043667534568268d9d6bMf7OGKD)\",\"type\":\"new_api_error\"}}",
+    "preview": ""
+  }
+]

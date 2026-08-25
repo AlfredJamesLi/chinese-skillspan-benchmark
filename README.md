@@ -1,8 +1,9 @@
 # Chinese-SkillSpan Benchmark
 
-**Chinese-SkillSpan / Chinese Skill Benchmark** — DASFAA 2026 数据集与评测备份（私有仓库）。
+**Chinese-SkillSpan / Chinese Skill Benchmark** — PeerJ Computer Science 数据集与评测备份（私有仓库）。
 
-评分器：`cnss-lskt-1.2.0` · Gold 评测集：`data/gold_canonical_v2.jsonl` · 更新：2026-08-25
+评分器：`cnss-lskt-1.2.0` · Gold 评测集：`data/gold_canonical_v2.jsonl` · 更新：2026-08-26  
+LLM dump 型号对照：[`tables/model_ids.csv`](tables/model_ids.csv)（`gpt-4o` / `claude-3-5-haiku-20241022` / `kimi-k2-0711-preview` / `deepseek-r1` / `Qwen2.5-14B-Instruct`）
 
 ---
 
@@ -10,11 +11,11 @@
 
 | Model | Paper S-F1 | Repo typed F1 | Repo collapsed F1 | 状态 |
 |---|---:|---:|---:|---|
-| ChatGPT | 0.6700 | 0.6836 | **0.6703** | 已确认 |
-| Claude | 0.6300 | 0.5712 | 0.6062 | dump 不完整 |
-| Kimi | 0.5700 | 0.5310 | 0.5618 | dump 不完整 |
-| DeepSeek | 0.5130 | **0.5149** | 0.5479 | 已确认 |
-| Qwen | 0.2130 | 0.3442 | 0.3949 | 与论文有 gap |
+| ChatGPT (`gpt-4o`) | 0.6700 | 0.6836 | **0.6703** | 已确认 |
+| Claude (`claude-3-5-haiku-20241022`) | 0.6300 | 0.5712 | 0.6062 | dump 不完整 |
+| Kimi (`kimi-k2-0711-preview`) | 0.5700 | 0.5310 | 0.5618 | dump 不完整 |
+| DeepSeek (`deepseek-r1`) | 0.5130 | **0.5149** | 0.5479 | 已确认 |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.2130 | 0.3442 | 0.3949 | 与论文有 gap |
 | JobBERT-skill | 0.0045 | — | **0.0045** | 已确认 |
 | JobBERT-knowledge | 0.0038 | — | **0.0038** | 已确认 |
 
@@ -22,13 +23,13 @@
 
 | Model | Paper S-F1 | typed F1 | collapsed F1 | typed relaxed (IoU≥0.5) | align |
 |---|---:|---:|---:|---:|---|
-| ChatGPT | 0.6700 | 0.6365 | 0.6403 | **0.7221** | OK |
-| DeepSeek | 0.5130 | 0.1327 | 0.3569 | 0.1798 | OK |
-| Qwen | 0.2130 | 0.0791 | 0.1075 | 0.1272 | OK |
+| ChatGPT (`gpt-4o`) | 0.6700 | 0.6365 | 0.6403 | **0.7221** | OK |
+| DeepSeek (`deepseek-r1`) | 0.5130 | 0.1327 | 0.3569 | 0.1798 | OK |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.2130 | 0.0791 | 0.1075 | 0.1272 | OK |
 | JobBERT-skill | 0.0045 | 0.0000 | 0.0045 | 0.0000 | OK |
 | JobBERT-knowledge | 0.0038 | 0.0000 | 0.0037 | 0.0000 | OK |
-| Claude | 0.6300 | **0.2583** | 0.2970 | **0.3861** | OK（补 98 条 sonnet-4-6） |
-| Kimi | 0.5700 | 0.1651 | 0.3349 | 0.2130* | 缺 293 ID |
+| Claude (`claude-3-5-haiku-20241022` + 98× `claude-sonnet-4-6`) | 0.6300 | **0.2583** | 0.2970 | **0.3861** | OK（补 98 条 sonnet-4-6） |
+| Kimi (`kimi-k2-0711-preview`) | 0.5700 | 0.1651 | 0.3349 | 0.2130* | 缺 293 ID |
 
 \* Claude/Kimi relaxed 按缺失 ID=空预测计算（`paper_results/repo/relaxed_f1_gold_v2.json`）。unique-first 官方对齐见上表 typed/collapsed。
 
@@ -38,9 +39,9 @@ Gold v2 域：人工智能招聘 1407 / 事业单位招聘 737 / 阿里云公开
 
 | System | 人工智能 | 阿里云 | 事业单位 |
 |---|---:|---:|---:|
-| ChatGPT | 0.6489 | 0.5650 | **0.7032** |
-| DeepSeek | 0.1392 | 0.1293 | 0.0805 |
-| Qwen | 0.0887 | 0.0646 | 0.0207 |
+| ChatGPT (`gpt-4o`) | 0.6489 | 0.5650 | **0.7032** |
+| DeepSeek (`deepseek-r1`) | 0.1392 | 0.1293 | 0.0805 |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.0887 | 0.0646 | 0.0207 |
 | JobBERT 3M ckpt65000 | **0.1323** | 0.1259 | 0.0150 |
 | JobBERT 1M | 0.1287 | 0.1332 | 0.0181 |
 | listed mix 1M | 0.1282 | 0.1240 | 0.0153 |
@@ -97,11 +98,11 @@ SOP v4 训练在官方 Gold v2 上低于 goldstyle v3（0.1079 vs 0.1224）。0.
 | domain-mix 1M (3-seed) | 0.3037 | 0.5278 | — | — |
 | JobBERT 1M v3 (3-seed) | 0.3032 | 0.5332 | — | — |
 | RoBERTa-wwm v3 (3-seed) | 0.2875 | 0.5206 | — | — |
-| ChatGPT | 0.2854 | **0.6249** | 0.2836 | **0.6447** |
-| Claude filled (haiku+sonnet) | 0.1519 | 0.3416 | 0.1778 | 0.4101 |
-| Kimi filled | 0.1093 | 0.2321 | 0.1116 | 0.2514 |
-| DeepSeek | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
-| Qwen | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
+| ChatGPT (`gpt-4o`) | 0.2854 | **0.6249** | 0.2836 | **0.6447** |
+| Claude filled (`claude-3-5-haiku-20241022` + 98× `claude-sonnet-4-6`) | 0.1519 | 0.3416 | 0.1778 | 0.4101 |
+| Kimi filled (`kimi-k2-0711-preview` + `kimi-k2.6`) | 0.1093 | 0.2321 | 0.1116 | 0.2514 |
+| DeepSeek (`deepseek-r1`) | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
 | JobBERT-skill EN | 0.0096 | 0.0676 | 0.0124 | 0.0919 |
 
 此协议下 JobBERT-zh v4 领先 typed exact；ChatGPT 领先 relaxed。不可与 Gold v2 上 ChatGPT 0.6365 直接比。

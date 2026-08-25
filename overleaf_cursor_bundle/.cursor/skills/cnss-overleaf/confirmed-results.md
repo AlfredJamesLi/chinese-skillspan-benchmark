@@ -1,6 +1,6 @@
 # Confirmed results (Overleaf compact copy)
 
-Synced from server `Chinese_skill_benchmark_Paper/` on **2026-08-25**.
+Synced from server `Chinese_skill_benchmark_Paper/` on **2026-08-26**.
 Scorer: `cnss-lskt-1.2.0`. Do not invent cells. Round to **4 decimals** in tex.
 
 **Two protocols — do not mix them in one table without a caption:**
@@ -17,9 +17,10 @@ CSV copies live in `tables/` of this bundle (and server `Chinese_skill_benchmark
 ## Identity
 
 - Paper: Chinese-SkillSpan / Chinese Skill Benchmark
-- Filename venue: DASFAA 2026; protocol note also targets PeerJ CS
+- Filename of the extracted PDF still contains “DASFAA”; **submission venue is PeerJ Computer Science**. Do not write DASFAA as the target.
 - Task: Chinese JobSkillNER, ESCO-1.20 **LSKT** (L/K/S/T) **span** extraction
 - Wording: “ESCO-derived LSKT span extraction”, **not** ESCO concept-ID linking
+- LLM table labels **must** include dump model ids (`tables/model_ids.csv`): ChatGPT=`gpt-4o`, Claude=`claude-3-5-haiku-20241022`, Kimi=`kimi-k2-0711-preview`, DeepSeek=`deepseek-r1`, Qwen=`Qwen2.5-14B-Instruct`. Do not leave brand-only names.
 
 ## Table 1 — corpus (PDF; keep)
 
@@ -43,11 +44,11 @@ Distinguish: corpus test **3237**; raw Gold rows **2676**; canonical unique Gold
 
 | Model | Paper S-F1 | Repo typed (2676) | Repo collapsed (2676) | Status |
 |---|---:|---:|---:|---|
-| ChatGPT | 0.6700 | 0.6836 | **0.6703** | Match (collapsed) |
-| Claude | 0.6300 | 0.5712 | 0.6062 | Dump incomplete |
-| Kimi | 0.5700 | 0.5310 | 0.5618 | Dump incomplete |
-| DeepSeek | 0.5130 | **0.5149** | 0.5479 | Match (typed) |
-| Qwen | 0.2130 | 0.3442 | 0.3949 | Gap vs paper |
+| ChatGPT (`gpt-4o`) | 0.6700 | 0.6836 | **0.6703** | Match (collapsed) |
+| Claude (`claude-3-5-haiku-20241022`) | 0.6300 | 0.5712 | 0.6062 | Dump incomplete |
+| Kimi (`kimi-k2-0711-preview`) | 0.5700 | 0.5310 | 0.5618 | Dump incomplete |
+| DeepSeek (`deepseek-r1`) | 0.5130 | **0.5149** | 0.5479 | Match (typed) |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.2130 | 0.3442 | 0.3949 | Gap vs paper |
 | JobBERT-skill | 0.0045 | — | **0.0045** | Match |
 | JobBERT-knowledge | 0.0038 | — | **0.0038** | Match |
 
@@ -61,13 +62,13 @@ Primary metric: **typed exact micro F1**. Relaxed: IoU≥0.5.
 
 | Model | Paper S-F1 | typed exact | collapsed exact | typed relaxed | Align |
 |---|---:|---:|---:|---:|---|
-| ChatGPT | 0.6700 | 0.6365 | 0.6403 | **0.7221** | OK |
-| DeepSeek | 0.5130 | 0.1327 | 0.3569 | 0.1798 | OK |
-| Qwen | 0.2130 | 0.0791 | 0.1075 | 0.1272 | OK |
+| ChatGPT (`gpt-4o`) | 0.6700 | 0.6365 | 0.6403 | **0.7221** | OK |
+| DeepSeek (`deepseek-r1`) | 0.5130 | 0.1327 | 0.3569 | 0.1798 | OK |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.2130 | 0.0791 | 0.1075 | 0.1272 | OK |
 | JobBERT-skill | 0.0045 | 0.0000 | 0.0045 | 0.0000 | OK |
 | JobBERT-knowledge | 0.0038 | 0.0000 | 0.0037 | 0.0000 | OK |
-| Claude | 0.6300 | **0.2583** | 0.2970 | 0.3861 | OK (98 IDs filled sonnet-4-6; haiku+sonnet mix) |
-| Kimi | 0.5700 | 0.1651 | 0.3349 | 0.2130* | Missing 293 IDs |
+| Claude (`claude-3-5-haiku-20241022` + 98× `claude-sonnet-4-6`) | 0.6300 | **0.2583** | 0.2970 | 0.3861 | OK (haiku dump + 98 sonnet fills) |
+| Kimi (`kimi-k2-0711-preview`) | 0.5700 | 0.1651 | 0.3349 | 0.2130* | Missing 293 IDs |
 
 \* Claude/Kimi relaxed treats missing Gold IDs as empty predictions. **Not eligible** for a complete main-table row until dumps are filled.
 
@@ -80,9 +81,9 @@ Gold v2 domains: 人工智能招聘 1407 / 事业单位招聘 737 / 阿里云公
 
 | System | 人工智能 | 阿里云 | 事业单位 |
 |---|---:|---:|---:|
-| ChatGPT | 0.6489 | 0.5650 | **0.7032** |
-| DeepSeek | 0.1392 | 0.1293 | 0.0805 |
-| Qwen | 0.0887 | 0.0646 | 0.0207 |
+| ChatGPT (`gpt-4o`) | 0.6489 | 0.5650 | **0.7032** |
+| DeepSeek (`deepseek-r1`) | 0.1392 | 0.1293 | 0.0805 |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.0887 | 0.0646 | 0.0207 |
 | JobBERT 3M ckpt65000 | **0.1323** | 0.1259 | 0.0150 |
 | JobBERT 1M | 0.1287 | 0.1332 | 0.0181 |
 | listed mix 1M | 0.1282 | 0.1240 | 0.0153 |
@@ -153,19 +154,19 @@ CSV: `tables/hybrid_cws_simhuman980_all_models.csv`. Caption must name train sil
 | JobBERT 3M ckpt65000 (3-seed mean) | 0.2961 | 0.5278 | — | — |
 | JobBERT demo 80k | 0.2931 | 0.5321 | — | — |
 | RoBERTa-wwm v3 (3-seed mean) | 0.2875 | 0.5206 | — | — |
-| ChatGPT (old dump, complete) | 0.2854 | **0.6249** | 0.2836 | **0.6447** |
-| Claude (old dump, 98 empty) | 0.1483 | 0.3349 | 0.1757 | 0.4062 |
-| Kimi (old dump, 293 empty) | 0.0964 | 0.1997 | 0.1011 | 0.2183 |
-| DeepSeek (old dump, complete) | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
-| Qwen (old dump, complete) | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
+| ChatGPT (`gpt-4o`, old dump, complete) | 0.2854 | **0.6249** | 0.2836 | **0.6447** |
+| Claude (`claude-3-5-haiku-20241022`, 98 empty) | 0.1483 | 0.3349 | 0.1757 | 0.4062 |
+| Kimi (`kimi-k2-0711-preview`, 293 empty) | 0.0964 | 0.1997 | 0.1011 | 0.2183 |
+| DeepSeek (`deepseek-r1`, old dump, complete) | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
+| Qwen (`Qwen2.5-14B-Instruct`, old dump, complete) | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
 | JobBERT-skill EN head | 0.0096 | 0.0676 | 0.0124 | 0.0919 |
 | JobBERT-knowledge EN head | 0.0088 | 0.0644 | 0.0122 | 0.0862 |
 
 JobBERT-zh 1M/3M v4 lead typed exact on this gold; ChatGPT leads relaxed. Not comparable to ChatGPT 0.6365 on Gold v2. LLM CSV: `tables/hybrid_cws_llm_old_dumps.csv`. Claude miss 98; Kimi miss 293. Incomplete rows are empty-filled, not complete main-table rows.
 
-## SOP extract re-call pilots (not main tables)
+## SOP extract re-call pilots (subset IDs; not main tables)
 
-Do **not** put these in Table 3, Gold v2 unique-first, abstract SOTA, or the matched-protocol 2601 table.
+Do **not** put these in Table 3, Gold v2 unique-first, abstract SOTA, or the matched-protocol 2601 main table.
 
 | System | n | hybrid jieba exact | hybrid jieba relaxed | Gold v2 raw exact | Gold v2 raw relaxed |
 |---|---:|---:|---:|---:|---:|
@@ -174,13 +175,32 @@ Do **not** put these in Table 3, Gold v2 unique-first, abstract SOTA, or the mat
 | deepseek-v4-pro SOP extract | 46 | 0.2353 | 0.5000 | 0.3678 | 0.4943 |
 | ChatGPT old dump (same 46) | 46 | 0.3648 | 0.6667 | 0.6701 | 0.8223 |
 
-SOP extract re-calls did not raise hybrid exact vs the frozen ChatGPT dump. Do not expand gpt-5.4 / DeepSeek V4 Pro to 2601 for the LLM column.
+n=100 gpt-5.4 **0.2338 is not** the full-n number.
+
+## SOP extract full P2-2601 (diagnostic LLM table; 2026-08-26)
+
+Same SOP extract v4 prompt + jieba + `cnss-lskt-1.2.0`. **Not** the P2 main frozen-dump table. CSV: `tables/sop_extract_p2_2601.csv`.
+
+| System | n=2601 exact | n=2601 relaxed | n=980 exact | n=980 relaxed |
+|---|---:|---:|---:|---:|
+| gpt-5.4 SOP extract | **0.2132** | **0.4199** | 0.2063 | 0.4207 |
+| kimi-k2.6 SOP extract | 0.1979 | 0.4032 | 0.1912 | 0.4108 |
+| claude-sonnet-4-5 SOP extract | 0.1972 | 0.3987 | 0.1861 | 0.3945 |
+| Qwen2.5-14B-Instruct SOP extract (local, no LoRA) | 0.1724 | 0.3279 | 0.1711 | 0.3390 |
+| ChatGPT (`gpt-4o`, frozen dump + jieba) | 0.2854 | **0.6249** | 0.2836 | 0.6447 |
+| JobBERT 3M v4 + jieba | **0.4331** | 0.5873 | 0.4401 | 0.6032 |
+
+None of the SOP re-calls beat frozen ChatGPT P2 exact 0.2854 / relaxed 0.6249, or JobBERT 3M v4 exact 0.4331. Qwen SOP 0.1724 > frozen Qwen dump 0.0501 (prompt lift only). Qwen SOP raw-on-Gold-v2 0.2134 is **not** paper Qwen 0.2130. Official `gpt-4o` SOP extract still missing.
 
 ## Running / not yet a paper number
 
 | Item | Status |
 |---|---|
-| RoBERTa-wwm v3 3-seed mean | seed 123 running; seed 2026 not started |
+| RoBERTa-wwm v3 3-seed mean | seeds exist on disk; mean not copied into the Gold v2 encoder table |
+| Llama-3-8B SOP extract | 98/2601 incomplete |
+| claude-sonnet-4-6 SOP extract | 128/2601 incomplete |
+| deepseek-v4-pro SOP extract (uniform decode) | 700/2601 incomplete |
+| Qwen SOP-extract LoRA | training; no test F1 |
 | Concept Accuracy | **Blocked** — no ESCO concept IDs; delete the claim |
 | Time-OOD | **Blocked** — no year field; delete the claim |
 | Claude/Kimi dump fill | **Blocked** (API HTML); do not fake labels |

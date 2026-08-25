@@ -1,0 +1,40 @@
+{
+  "n": 2601,
+  "n_simhuman": 980,
+  "n_sop_cws": 1621,
+  "n_unaligned_sents": 18,
+  "n_spans": 4422,
+  "n_empty": 1102,
+  "model": "claude-sonnet-4-5",
+  "base": "https://claudeed.ysaikeji.cn",
+  "prompt": "SOP extract v4 (no silver); not frozen @@span## dump; not sonnet46 silver-correct",
+  "gold_v2_untouched": true,
+  "frozen_dumps_untouched": true,
+  "not_for_confirmed_results": true,
+  "hybrid_cws": {
+    "p2_2601": {
+      "alignment_ok": true,
+      "n_gold": 2601,
+      "n_matched": 2601,
+      "n_missing": 0,
+      "typed_exact_p": 0.2079915321513628,
+      "typed_exact_r": 0.1875447387258411,
+      "typed_exact_f1": 0.1972396486825596,
+      "typed_relaxed_f1": 0.3987452948557089,
+      "collapsed_exact_f1": 0.2409033877038896,
+      "collapsed_relaxed_f1": 0.4838143036386449
+    },
+    "p2_980": {
+      "alignment_ok": true,
+      "n_gold": 980,
+      "n_matched": 980,
+      "n_missing": 0,
+      "typed_exact_p": 0.19284899201217193,
+      "typed_exact_r": 0.17972350230414746,
+      "typed_exact_f1": 0.18605504587155963,
+      "typed_relaxed_f1": 0.3944954128440368,
+      "collapsed_exact_f1": 0.236697247706422,
+      "collapsed_relaxed_f1": 0.49431192660550455
+    }
+  }
+}

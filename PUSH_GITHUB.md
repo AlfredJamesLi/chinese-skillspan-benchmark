@@ -1,6 +1,6 @@
 # GitHub 私有仓库备份
 
-**状态：已推送**（跟踪 `main`；投稿向复现文档与冻结预测见 2026-08-26 备份）
+**状态：已推送**（跟踪 `main`；SOP extract P2-2601 诊断分与 Qwen Instruct 基线见 2026-08-26 备份）
 
 - 仓库：https://github.com/AlfredJamesLi/chinese-skillspan-benchmark （private）
 - 分支：`main`（与本地同步）

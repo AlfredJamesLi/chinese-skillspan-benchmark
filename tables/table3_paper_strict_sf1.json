@@ -10,7 +10,8 @@
       "repo_typed_f1": 0.6836,
       "repo_collapsed_f1": 0.6703,
       "pred_n": 3237,
-      "verdict": "match_collapsed"
+      "verdict": "match_collapsed",
+      "dump_model_id": "gpt-4o"
     },
     {
       "model": "Claude",
@@ -18,7 +19,8 @@
       "repo_typed_f1": 0.5712,
       "repo_collapsed_f1": 0.6062,
       "pred_n": 2536,
-      "verdict": "close_incomplete_dump"
+      "verdict": "close_incomplete_dump",
+      "dump_model_id": "claude-3-5-haiku-20241022"
     },
     {
       "model": "Kimi",
@@ -26,7 +28,8 @@
       "repo_typed_f1": 0.531,
       "repo_collapsed_f1": 0.5618,
       "pred_n": 2341,
-      "verdict": "close_incomplete_dump"
+      "verdict": "close_incomplete_dump",
+      "dump_model_id": "kimi-k2-0711-preview"
     },
     {
       "model": "DeepSeek",
@@ -34,7 +37,8 @@
       "repo_typed_f1": 0.5149,
       "repo_collapsed_f1": 0.5479,
       "pred_n": 2639,
-      "verdict": "match_typed"
+      "verdict": "match_typed",
+      "dump_model_id": "deepseek-r1"
     },
     {
       "model": "Qwen",
@@ -42,7 +46,8 @@
       "repo_typed_f1": 0.3442,
       "repo_collapsed_f1": 0.3949,
       "pred_n": 3237,
-      "verdict": "gap"
+      "verdict": "gap",
+      "dump_model_id": "Qwen2.5-14B-Instruct"
     },
     {
       "model": "JobBERT-skill",
@@ -50,7 +55,8 @@
       "repo_typed_f1": null,
       "repo_collapsed_f1": 0.0045,
       "pred_n": null,
-      "verdict": "match"
+      "verdict": "match",
+      "dump_model_id": "JobBERT-skill EN head"
     },
     {
       "model": "JobBERT-knowledge",
@@ -58,7 +64,8 @@
       "repo_typed_f1": null,
       "repo_collapsed_f1": 0.0038,
       "pred_n": null,
-      "verdict": "match"
+      "verdict": "match",
+      "dump_model_id": "JobBERT-knowledge EN head"
     }
   ]
 }
