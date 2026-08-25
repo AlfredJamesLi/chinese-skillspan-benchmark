@@ -63,10 +63,10 @@ CSV: `tables/table3_gold_v2_unique_view.csv`, `tables/relaxed_f1_gold_v2.csv`.
 | Qwen | 0.2130 | 0.0791 | 0.1075 | 0.1272 | OK |
 | JobBERT-skill | 0.0045 | 0.0000 | 0.0045 | 0.0000 | OK |
 | JobBERT-knowledge | 0.0038 | 0.0000 | 0.0037 | 0.0000 | OK |
-| Claude | 0.6300 | 0.2570 | 0.2952 | 0.3789* | Missing 98 IDs |
+| Claude | 0.6300 | **0.2583** | 0.2970 | 0.3861 | OK (98 IDs filled with sonnet-4-6; dump is haiku+sonnet mix) |
 | Kimi | 0.5700 | 0.1651 | 0.3349 | 0.2130* | Missing 293 IDs |
 
-\* Claude/Kimi relaxed treats missing Gold IDs as empty predictions. **Not** complete main-table rows.
+Claude Gold v2 is complete at 2601/2601 via `reports/views/Claude_filled_v2.jsonl` (original haiku dump + 98 sonnet-4-6 fills). Original `merged_test_cluade.jsonl` untouched. Incomplete unique-first view is still 0.2570 typed (matched-only). Kimi original dump still misses 293 IDs; use `Kimi_filled_v2.jsonl` for the filled row.
 
 ## Per-domain typed exact F1 (Industry-OOD proxy; Gold v2)
 
@@ -139,13 +139,62 @@ Do **not** put any row below into PDF Table 3, the Gold v2 unique-first LLM tabl
 
 Allowed claim: SOP v4 silver training **lowers** Gold v2 typed exact vs goldstyle v3 (0.1079/0.1104 vs 0.1224). Jieba post-hoc snap **raises** Gold v2 exact of the same v4 preds (0.1454/0.1479) but does not replace the goldstyle encoder ranking. 0.3170 and ~0.43 measure agreement with SOP silver, not human Gold v2.
 
-CWS **retrain** (`crf_lskt_v4_cws_seed42`) is still running — no Gold v2 number yet.
+## Matched-protocol test gold — SOP-CWS + SimHuman 980, jieba bilateral (authorized 2026-08-25)
+
+User-requested reproducible benchmark eval for submission. **Does not overwrite Gold v2.** Not PDF Table 3 S-F1. Not comparable to ChatGPT 0.6365 on Gold v2.
+
+Gold: `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` (2601 = 980 SimHuman rule_v4 jieba-snapped + 1621 SOP-CWS; sha256 `2ad6342d…818d99`).  
+980 subset: `data/test_lskt_v4_simhuman980_cws.jsonl` (sha256 `05765161…adec1580`).  
+Preds jieba-snapped with the same `cws_snap.rewrite_record`. Missing Gold IDs filled empty. Scorer `cnss-lskt-1.2.0`.  
+Script: `scripts/eval_hybrid_cws_simhuman.py`. CSV: `tables/hybrid_cws_simhuman980_all_models.csv`. Write-up: `reports/sandbox_lskt_v4_silver/hybrid_cws_eval/RESULTS.md`.
+
+| Model | n=2601 exact | n=2601 relaxed | n=980 exact | n=980 relaxed |
+|---|---:|---:|---:|---:|
+| JobBERT 3M v4 + jieba | **0.4331** | 0.5873 | **0.4401** | 0.6032 |
+| JobBERT 1M v4 + jieba | **0.4272** | **0.5952** | **0.4333** | **0.6110** |
+| JobBERT 1M CWS retrain + jieba | 0.4049 | 0.5904 | 0.4020 | 0.6084 |
+| domain-mix 1M (3-seed mean) | 0.3037 | 0.5278 | — | — |
+| JobBERT 1M goldstyle v3 (3-seed mean) | 0.3032 | 0.5332 | — | — |
+| listed-mix 1M | 0.2964 | 0.5267 | — | — |
+| JobBERT 3M ckpt65000 (3-seed mean) | 0.2961 | 0.5278 | — | — |
+| JobBERT demo 80k | 0.2931 | 0.5321 | — | — |
+| RoBERTa-wwm v3 (3-seed mean) | 0.2875 | 0.5206 | — | — |
+| ChatGPT | 0.2854 | **0.6249** | 0.2836 | **0.6447** |
+| Claude filled (haiku+sonnet-4-6) | 0.1519 | 0.3416 | 0.1778 | 0.4101 |
+| Kimi filled | 0.1093 | 0.2321 | 0.1116 | 0.2514 |
+| Kimi (293 empty-filled) | 0.0964 | 0.1997 | 0.1011 | 0.2183 |
+| DeepSeek | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
+| Qwen | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
+| JobBERT-skill EN head | 0.0096 | 0.0676 | 0.0124 | 0.0919 |
+| JobBERT-knowledge EN head | 0.0088 | 0.0644 | 0.0122 | 0.0862 |
+
+Allowed claim: under this matched SOP+jieba test gold, JobBERT-zh 1M/3M v4 lead typed exact (**0.4272 / 0.4331**); ChatGPT leads typed relaxed (**0.6249**). 980 SimHuman is consistent with full 2601 (Δ exact <0.01 for 1M/3M v4). Do not write these as beating ChatGPT on Gold v2.
+
+## SOP extract re-call pilots (2026-08-25/26; not main tables)
+
+Scored with `cnss-lskt-1.2.0`. Prompt = SOP extract v4 (sentence only, no rule_v4 silver). **Do not** put these rows in PDF Table 3, Gold v2 unique-first, the abstract SOTA sentence, or the matched-protocol 2601 table. They answer: does a new SOP prompt lift LLM exact F1 on hybrid vs the frozen `@@span##` dumps? **No.**
+
+Same 100 hybrid IDs (seed `20260825`; 38 SimHuman + 62 SOP-CWS). Model `gpt-5.4` via `https://claudeed.ysaikeji.cn`. JSON: `reports/sandbox_lskt_v4_silver/gpt4o_sop_extract_pilot100/summary_gpt-5.4.json`.
+
+| System (n=100) | hybrid jieba exact | hybrid jieba relaxed | Gold v2 raw exact | Gold v2 raw relaxed |
+|---|---:|---:|---:|---:|
+| gpt-5.4 SOP extract | 0.2338 | 0.4623 | 0.4016 | 0.5236 |
+| ChatGPT old dump (same 100 IDs) | 0.3356 | 0.6299 | 0.7016 | 0.8065 |
+
+Partial `deepseek-v4-pro` (official API, `reasoning_effort=high` + thinking; **46/100**, stopped). JSON: `summary_deepseek-v4-pro_n46.json`. Same 46 IDs vs old dump.
+
+| System (n=46) | hybrid jieba exact | hybrid jieba relaxed | Gold v2 raw exact | Gold v2 raw relaxed |
+|---|---:|---:|---:|---:|
+| deepseek-v4-pro SOP extract | 0.2353 | 0.5000 | 0.3678 | 0.4943 |
+| ChatGPT old dump (same 46 IDs) | 0.3648 | 0.6667 | 0.6701 | 0.8223 |
+
+Allowed claim: SOP extract re-calls of gpt-5.4 and DeepSeek V4 Pro **did not** raise hybrid typed exact above the frozen ChatGPT dump on the same IDs. Do not expand these two models to 2601 for the matched-protocol LLM column. Official `gpt-4o` + same SOP prompt is still the missing fair LLM re-call.
 
 ## Still missing / blocked (paper claims)
 
 - Concept Accuracy / ESCO concept-ID eval — **blocked**, no concept IDs; delete the claim
 - Time-OOD — **blocked**, no `year` field; delete the claim
-- RoBERTa-wwm v3 3-seed mean — seed 123 running; seed 2026 not started
+- RoBERTa-wwm v3 3-seed mean **on Gold v2** — seeds exist on disk; mean not yet copied into the Gold v2 encoder table above
 - BERT-CRF span-based, XLM-R zero-shot, ESCO lexicon rows
 - SelfCheck + reflection as a frozen “our method” recipe
 - Public data card / 200-item Gold analysis set as a named file

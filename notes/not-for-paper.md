@@ -16,13 +16,16 @@
 - RoBERTa-wwm v3 3-seed **mean** (seed 123 running; seed 2026 not started)
 - Claiming domain-mix 1M beats JobBERT 1M on the 3-seed mean (0.1269 < 0.1288)
 - Claiming domain-mix fixes 事业单位 (seed 42 typed F1 0.0287 vs ChatGPT 0.7032)
-- Claude/Kimi Gold v2 rows as complete (missing 98 / 293 IDs)
+- Presenting the original Claude unique-first dump (missing 98) as a complete Gold v2 row; use `Claude_filled_v2.jsonl` (haiku+sonnet-4-6 mix)
+- Presenting the original Kimi unique-first dump (missing 293) as complete; use `Kimi_filled_v2.jsonl`
 - listed-company mix **3M** DAPT (1M already lost: 0.1201 < 0.1224)
 - Concept Accuracy / ESCO concept-ID eval (no concept IDs in Gold)
 - Time-OOD (no `year` field)
 - English JobBERT ~0.46 or `*.eval_ner.json`
 - Claiming JobBERT-zh CRF (~0.12, or SOP-silver 0.3170, or CWS post-hoc 0.1454) beats ChatGPT
-- Putting SOP-silver 0.3170 / 0.5663, both-sides CWS ~0.43, or jieba post-hoc 0.1454/0.1479 into PDF Table 3, the Gold v2 unique-first LLM table, or the abstract SOTA sentence (those rows belong only in the labeled diagnostic table in `confirmed-results.md`)
+- Putting SOP-silver 0.3170 / 0.5663, both-sides CWS ~0.43, or jieba post-hoc 0.1454/0.1479 into PDF Table 3, the Gold v2 unique-first LLM table, or the abstract SOTA sentence (those rows belong only in the labeled diagnostic / matched-protocol tables in `confirmed-results.md`)
+- Claiming JobBERT-zh 0.4272/0.4331 on SOP-CWS+SimHuman980 jieba bilateral beats ChatGPT 0.6365 on Gold v2 (different test golds)
+- Putting gpt-5.4 SOP-extract 0.2338 or deepseek-v4-pro n=46 0.2353 into PDF Table 3, Gold v2 unique-first, or the matched-protocol 2601 LLM column (pilots only; old ChatGPT dump still higher on the same IDs)
 
 ## Abandoned / mix-ups
 

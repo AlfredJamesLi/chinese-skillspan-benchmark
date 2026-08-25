@@ -11,5 +11,6 @@ Round to **4 decimals** in tex. Do not invent cells.
 | `per_domain_gold_v2.csv` | Industry-OOD **proxy** (source_domain) |
 | `encoder_gold_v2.csv` | JobBERT-zh CRF ranking, seed 42 |
 | `sop_v4_cws_diagnostic.csv` | SOP v4 / jieba **appendix** (not Table 3; caption must name train / decode / test gold) |
+| `hybrid_cws_simhuman980_all_models.csv` | Matched SOP-CWS + SimHuman980, jieba bilateral, all systems (not Gold v2; not PDF Table 3) |
 
 Authoritative rounding and captions: `.cursor/skills/cnss-overleaf/confirmed-results.md`.

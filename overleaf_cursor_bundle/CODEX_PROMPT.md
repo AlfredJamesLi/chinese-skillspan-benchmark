@@ -9,7 +9,8 @@ Paste the block below into **Codex** or a **local Cursor** chat whose workspace 
 First copy sibling files from `overleaf_cursor_bundle/` into the Overleaf repo **root** (`HANDOVER_OVERLEAF.md`, `AGENTS.md`, `.cursor/`, `tables/`, this prompt).
 
 **Follow-up 1 (methods SOP, no F1 in Table 3):** paste `CODEX_PROMPT_SOP_V4.md`.  
-**Follow-up 2 (diagnostic encoder table):** paste `CODEX_PROMPT_DIAGNOSTIC_SOP.md`. Do **not** put 0.3170 / 0.1454 / ~0.43 in Table 3 or next to ChatGPT 0.6365.
+**Follow-up 2 (diagnostic encoder table):** paste `CODEX_PROMPT_DIAGNOSTIC_SOP.md`. Do **not** put 0.3170 / 0.1454 / ~0.43 in Table 3 or next to ChatGPT 0.6365.  
+**Follow-up 3 (matched-protocol hybrid 2601 table):** paste `CODEX_PROMPT_MATCHED_PROTOCOL.md`. Do **not** put gpt-5.4 0.2338 or DeepSeek V4 Pro n=46 into that table.
 
 ---
 

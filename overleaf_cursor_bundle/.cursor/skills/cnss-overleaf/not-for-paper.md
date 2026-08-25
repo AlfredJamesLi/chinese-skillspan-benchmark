@@ -15,3 +15,5 @@
 - English JobBERT ~0.46 or `*.eval_ner.json`
 - Claiming JobBERT-zh CRF (~0.12, SOP-silver 0.3170, or CWS post-hoc 0.1454) beats ChatGPT
 - Putting SOP-silver 0.3170 / 0.5663, both-sides CWS ~0.43, or jieba post-hoc 0.1454/0.1479 into PDF Table 3, the Gold v2 unique-first LLM table, or the abstract SOTA sentence (diagnostic table only; see confirmed-results.md)
+- Putting gpt-5.4 SOP-extract 0.2338 or deepseek-v4-pro n=46 0.2353 into Table 3, Gold v2 unique-first, or the matched-protocol 2601 LLM column
+- Claiming JobBERT-zh 0.4272/0.4331 on matched-protocol gold beats ChatGPT 0.6365 on Gold v2

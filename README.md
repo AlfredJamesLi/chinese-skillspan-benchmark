@@ -27,7 +27,7 @@
 | Qwen | 0.2130 | 0.0791 | 0.1075 | 0.1272 | OK |
 | JobBERT-skill | 0.0045 | 0.0000 | 0.0045 | 0.0000 | OK |
 | JobBERT-knowledge | 0.0038 | 0.0000 | 0.0037 | 0.0000 | OK |
-| Claude | 0.6300 | 0.2570 | 0.2952 | 0.3789* | 缺 98 ID |
+| Claude | 0.6300 | **0.2583** | 0.2970 | **0.3861** | OK（补 98 条 sonnet-4-6） |
 | Kimi | 0.5700 | 0.1651 | 0.3349 | 0.2130* | 缺 293 ID |
 
 \* Claude/Kimi relaxed 按缺失 ID=空预测计算（`paper_results/repo/relaxed_f1_gold_v2.json`）。unique-first 官方对齐见上表 typed/collapsed。
@@ -83,6 +83,28 @@ Encoder 在**事业单位**上接近失败（~0.015–0.029；domain-mix seed 42
 | JobBERT 3M | SOP v4 | jieba post-hoc | SOP-CWS silver | 0.4341 | 0.5884 |
 
 SOP v4 训练在官方 Gold v2 上低于 goldstyle v3（0.1079 vs 0.1224）。0.3170 / ~0.43 是与 SOP 银标的一致性，不是人类 Gold。
+
+## 匹配协议全量测试（SOP-CWS + SimHuman 980，jieba 双边）
+
+测试金标：980 SimHuman rule_v4 + 1621 SOP-CWS，预测与金标都 jieba snap。n=2601。**不是 Gold v2，不是 PDF Table 3。**  
+复现：`python scripts/eval_hybrid_cws_simhuman.py` · CSV：[`tables/hybrid_cws_simhuman980_all_models.csv`](tables/hybrid_cws_simhuman980_all_models.csv)
+
+| Model | 2601 exact | 2601 relaxed | 980 exact | 980 relaxed |
+|---|---:|---:|---:|---:|
+| JobBERT 3M v4 + jieba | **0.4331** | 0.5873 | **0.4401** | 0.6032 |
+| JobBERT 1M v4 + jieba | **0.4272** | **0.5952** | **0.4333** | **0.6110** |
+| JobBERT 1M CWS retrain | 0.4049 | 0.5904 | 0.4020 | 0.6084 |
+| domain-mix 1M (3-seed) | 0.3037 | 0.5278 | — | — |
+| JobBERT 1M v3 (3-seed) | 0.3032 | 0.5332 | — | — |
+| RoBERTa-wwm v3 (3-seed) | 0.2875 | 0.5206 | — | — |
+| ChatGPT | 0.2854 | **0.6249** | 0.2836 | **0.6447** |
+| Claude filled (haiku+sonnet) | 0.1519 | 0.3416 | 0.1778 | 0.4101 |
+| Kimi filled | 0.1093 | 0.2321 | 0.1116 | 0.2514 |
+| DeepSeek | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
+| Qwen | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
+| JobBERT-skill EN | 0.0096 | 0.0676 | 0.0124 | 0.0919 |
+
+此协议下 JobBERT-zh v4 领先 typed exact；ChatGPT 领先 relaxed。不可与 Gold v2 上 ChatGPT 0.6365 直接比。
 
 ## 语料规模（PDF Table 1）
 

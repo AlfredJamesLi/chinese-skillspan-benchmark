@@ -1,0 +1,66 @@
+{
+  "n": 100,
+  "n_simhuman": 38,
+  "n_sop_cws": 62,
+  "n_unaligned_sents": 0,
+  "n_spans": 237,
+  "n_empty": 37,
+  "model": "gpt-5.4",
+  "base": "https://claudeed.ysaikeji.cn",
+  "prompt": "SOP extract v4 (no silver); not the frozen @@span## dump prompt",
+  "gold_v2_untouched": true,
+  "chatgpt_dump_untouched": true,
+  "not_for_table3": true,
+  "hybrid_cws": {
+    "sop_extract_jieba": {
+      "alignment_ok": true,
+      "n_gold": 100,
+      "n_matched": 100,
+      "n_missing": 0,
+      "typed_exact_p": 0.20361990950226244,
+      "typed_exact_r": 0.27439024390243905,
+      "typed_exact_f1": 0.23376623376623376,
+      "typed_relaxed_f1": 0.4623376623376623,
+      "collapsed_exact_f1": 0.2857142857142857,
+      "collapsed_relaxed_f1": 0.5558441558441559
+    },
+    "chatgpt_olddump_jieba": {
+      "alignment_ok": true,
+      "n_gold": 100,
+      "n_matched": 100,
+      "n_missing": 0,
+      "typed_exact_p": 0.2693726937269373,
+      "typed_exact_r": 0.4451219512195122,
+      "typed_exact_f1": 0.33563218390804594,
+      "typed_relaxed_f1": 0.6298850574712643,
+      "collapsed_exact_f1": 0.3540229885057471,
+      "collapsed_relaxed_f1": 0.6528735632183909
+    }
+  },
+  "gold_v2": {
+    "sop_extract_raw": {
+      "alignment_ok": true,
+      "n_gold": 100,
+      "n_matched": 100,
+      "n_missing": 0,
+      "typed_exact_p": 0.4322033898305085,
+      "typed_exact_r": 0.375,
+      "typed_exact_f1": 0.40157480314960636,
+      "typed_relaxed_f1": 0.5236220472440946,
+      "collapsed_exact_f1": 0.43700787401574803,
+      "collapsed_relaxed_f1": 0.594488188976378
+    },
+    "chatgpt_olddump_raw": {
+      "alignment_ok": true,
+      "n_gold": 100,
+      "n_matched": 100,
+      "n_missing": 0,
+      "typed_exact_p": 0.6903914590747331,
+      "typed_exact_r": 0.7132352941176471,
+      "typed_exact_f1": 0.7016274864376131,
+      "typed_relaxed_f1": 0.8065099457504521,
+      "collapsed_exact_f1": 0.7016274864376131,
+      "collapsed_relaxed_f1": 0.8245931283905967
+    }
+  }
+}

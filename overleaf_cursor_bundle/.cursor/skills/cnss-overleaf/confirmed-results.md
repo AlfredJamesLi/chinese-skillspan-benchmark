@@ -66,7 +66,7 @@ Primary metric: **typed exact micro F1**. Relaxed: IoU≥0.5.
 | Qwen | 0.2130 | 0.0791 | 0.1075 | 0.1272 | OK |
 | JobBERT-skill | 0.0045 | 0.0000 | 0.0045 | 0.0000 | OK |
 | JobBERT-knowledge | 0.0038 | 0.0000 | 0.0037 | 0.0000 | OK |
-| Claude | 0.6300 | 0.2570 | 0.2952 | 0.3789* | Missing 98 IDs |
+| Claude | 0.6300 | **0.2583** | 0.2970 | 0.3861 | OK (98 IDs filled sonnet-4-6; haiku+sonnet mix) |
 | Kimi | 0.5700 | 0.1651 | 0.3349 | 0.2130* | Missing 293 IDs |
 
 \* Claude/Kimi relaxed treats missing Gold IDs as empty predictions. **Not eligible** for a complete main-table row until dumps are filled.
@@ -136,7 +136,46 @@ Authorized 2026-08-25. CSV: `tables/sop_v4_cws_diagnostic.csv`.
 | JobBERT 1M | SOP v4 | jieba post-hoc | SOP-CWS silver | 0.4278 | 0.5960 |
 | JobBERT 3M | SOP v4 | jieba post-hoc | SOP-CWS silver | 0.4341 | 0.5884 |
 
-Allowed: SOP v4 train **lowers** Gold v2 vs goldstyle v3 (0.1079/0.1104 vs 0.1224). Jieba post-hoc **raises** Gold v2 exact of the same v4 preds (0.1454/0.1479). 0.3170 and ~0.43 are SOP-silver agreement, not human Gold v2. CWS retrain still running — no finished F1.
+Allowed: SOP v4 train **lowers** Gold v2 vs goldstyle v3 (0.1079/0.1104 vs 0.1224). Jieba post-hoc **raises** Gold v2 exact of the same v4 preds (0.1454/0.1479). 0.3170 and ~0.43 are SOP-silver agreement, not human Gold v2.
+
+## Matched-protocol — SOP-CWS + SimHuman 980, jieba bilateral (not Gold v2)
+
+CSV: `tables/hybrid_cws_simhuman980_all_models.csv`. Caption must name train silver, jieba decode, and this test gold. Do not mix into PDF Table 3 or Gold v2 LLM cells.
+
+| Model | n=2601 exact | n=2601 relaxed | n=980 exact | n=980 relaxed |
+|---|---:|---:|---:|---:|
+| JobBERT 3M v4 + jieba | **0.4331** | 0.5873 | **0.4401** | 0.6032 |
+| JobBERT 1M v4 + jieba | **0.4272** | **0.5952** | **0.4333** | **0.6110** |
+| JobBERT 1M CWS retrain + jieba | 0.4049 | 0.5904 | 0.4020 | 0.6084 |
+| domain-mix 1M (3-seed mean) | 0.3037 | 0.5278 | — | — |
+| JobBERT 1M goldstyle v3 (3-seed mean) | 0.3032 | 0.5332 | — | — |
+| listed-mix 1M | 0.2964 | 0.5267 | — | — |
+| JobBERT 3M ckpt65000 (3-seed mean) | 0.2961 | 0.5278 | — | — |
+| JobBERT demo 80k | 0.2931 | 0.5321 | — | — |
+| RoBERTa-wwm v3 (3-seed mean) | 0.2875 | 0.5206 | — | — |
+| ChatGPT | 0.2854 | **0.6249** | 0.2836 | **0.6447** |
+| Claude filled (haiku+sonnet-4-6) | 0.1519 | 0.3416 | 0.1778 | 0.4101 |
+| Kimi filled | 0.1093 | 0.2321 | 0.1116 | 0.2514 |
+| Kimi (293 empty-filled) | 0.0964 | 0.1997 | 0.1011 | 0.2183 |
+| DeepSeek | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
+| Qwen | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
+| JobBERT-skill EN head | 0.0096 | 0.0676 | 0.0124 | 0.0919 |
+| JobBERT-knowledge EN head | 0.0088 | 0.0644 | 0.0122 | 0.0862 |
+
+JobBERT-zh 1M/3M v4 lead typed exact on this gold; ChatGPT leads relaxed. Not comparable to ChatGPT 0.6365 on Gold v2.
+
+## SOP extract re-call pilots (not main tables)
+
+Do **not** put these in Table 3, Gold v2 unique-first, abstract SOTA, or the matched-protocol 2601 table.
+
+| System | n | hybrid jieba exact | hybrid jieba relaxed | Gold v2 raw exact | Gold v2 raw relaxed |
+|---|---:|---:|---:|---:|---:|
+| gpt-5.4 SOP extract | 100 | 0.2338 | 0.4623 | 0.4016 | 0.5236 |
+| ChatGPT old dump (same 100) | 100 | 0.3356 | 0.6299 | 0.7016 | 0.8065 |
+| deepseek-v4-pro SOP extract | 46 | 0.2353 | 0.5000 | 0.3678 | 0.4943 |
+| ChatGPT old dump (same 46) | 46 | 0.3648 | 0.6667 | 0.6701 | 0.8223 |
+
+SOP extract re-calls did not raise hybrid exact vs the frozen ChatGPT dump. Do not expand gpt-5.4 / DeepSeek V4 Pro to 2601 for the LLM column.
 
 ## Running / not yet a paper number
 
