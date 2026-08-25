@@ -25,7 +25,7 @@ JobBERT-zh **1M** CRF：`output/jobbert_zh_1m/crf_lskt_v4_silver_seed42/`（不�
 
 现成 3M goldstyle CRF（**未**用 v4 训练）对规则 v4 2601：exact **0.2178** / partial **0.5010**。对照：`existing_encoder_on_sop/`。
 
-3M+v4 CRF 另开目录：`output/jobbert_zh_3m/crf_lskt_v4_silver_seed42/`（训完才有同协议数字）。
+3M+v4 CRF（2026-08-25 05:09 完成）：`output/jobbert_zh_3m/crf_lskt_v4_silver_seed42/`。对规则 v4 2601：exact **0.3229** / partial **0.5624**；Gold v2 exact **0.1104**。快照：`results_snapshots/jobbert_zh_3m__crf_lskt_v4_silver_seed42.json`、`existing_encoder_on_sop/sop_eval_3m_v4.json`。
 
 **GitHub 备份 ≠ 论文主表。** 上表可进私有仓库；人工 SOP 金标完成并重打分后，才能考虑写入 `notes/confirmed-results.md`。0.32 是规则银标自洽，不是人工 Gold。
 

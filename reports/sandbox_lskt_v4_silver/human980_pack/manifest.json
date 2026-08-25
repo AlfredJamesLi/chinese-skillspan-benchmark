@@ -1,0 +1,26 @@
+{
+  "n": 980,
+  "n_batches": 20,
+  "batch_size": 50,
+  "prelabel": "rule_v4",
+  "n_empty_rule_v4": 17,
+  "conflict_kind": {
+    "span_mismatch": 702,
+    "empty_mismatch": 270,
+    "type_only": 8
+  },
+  "domain": {
+    "人工智能招聘": 741,
+    "阿里云公开数据集": 205,
+    "事业单位招聘": 34
+  },
+  "gold_v2_untouched": true,
+  "do_not_train": true,
+  "not_for_confirmed_results": true,
+  "ids_in_gold_v2": 980,
+  "ids_in_codex": 980,
+  "ids_in_doubao": 980,
+  "ids_in_kimi": 980,
+  "start_with": "batches/batch_01.jsonl",
+  "guidelines": "reports/sandbox_lskt_v4_silver/GUIDELINES.md"
+}
