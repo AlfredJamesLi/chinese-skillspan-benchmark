@@ -1,0 +1,40 @@
+{
+  "n": 2601,
+  "n_simhuman": 980,
+  "n_sop_cws": 1621,
+  "n_unaligned_sents": 15,
+  "n_spans": 5097,
+  "n_empty": 1165,
+  "model": "deepseek-v4-pro",
+  "base": "https://api.deepseek.com",
+  "prompt": "SOP extract v4 (no silver); not frozen @@span## dump; not sonnet46 silver-correct",
+  "gold_v2_untouched": true,
+  "frozen_dumps_untouched": true,
+  "not_for_confirmed_results": true,
+  "hybrid_cws": {
+    "p2_2601": {
+      "alignment_ok": true,
+      "n_gold": 2601,
+      "n_matched": 2601,
+      "n_missing": 0,
+      "typed_exact_p": 0.19464944649446494,
+      "typed_exact_r": 0.20138391791935098,
+      "typed_exact_f1": 0.1979594230092647,
+      "typed_relaxed_f1": 0.393104257065791,
+      "collapsed_exact_f1": 0.23478362847425824,
+      "collapsed_relaxed_f1": 0.47425823853641375
+    },
+    "p2_980": {
+      "alignment_ok": true,
+      "n_gold": 980,
+      "n_matched": 980,
+      "n_missing": 0,
+      "typed_exact_p": 0.1751987281399046,
+      "typed_exact_r": 0.19532080822403403,
+      "typed_exact_f1": 0.18471337579617836,
+      "typed_relaxed_f1": 0.3972510895072075,
+      "collapsed_exact_f1": 0.22762319812269527,
+      "collapsed_relaxed_f1": 0.49178679182031515
+    }
+  }
+}

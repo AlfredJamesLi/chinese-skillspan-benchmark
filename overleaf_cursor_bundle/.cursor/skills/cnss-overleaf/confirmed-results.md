@@ -185,22 +185,22 @@ Same SOP extract v4 prompt + jieba + `cnss-lskt-1.2.0`. **Not** the P2 main froz
 |---|---:|---:|---:|---:|
 | gpt-5.4 SOP extract | **0.2132** | **0.4199** | 0.2063 | 0.4207 |
 | kimi-k2.6 SOP extract | 0.1979 | 0.4032 | 0.1912 | 0.4108 |
+| deepseek-v4-pro SOP extract | 0.1980 | 0.3931 | 0.1847 | 0.3973 |
 | claude-sonnet-4-5 SOP extract | 0.1972 | 0.3987 | 0.1861 | 0.3945 |
 | Qwen2.5-14B-Instruct SOP extract (local, no LoRA) | 0.1724 | 0.3279 | 0.1711 | 0.3390 |
+| Llama-3-8B-Instruct SOP extract (local, no LoRA) | 0.0582 | 0.1178 | 0.0544 | 0.1140 |
 | ChatGPT (`gpt-4o`, frozen dump + jieba) | 0.2854 | **0.6249** | 0.2836 | 0.6447 |
 | JobBERT 3M v4 + jieba | **0.4331** | 0.5873 | 0.4401 | 0.6032 |
 
-None of the SOP re-calls beat frozen ChatGPT P2 exact 0.2854 / relaxed 0.6249, or JobBERT 3M v4 exact 0.4331. Qwen SOP 0.1724 > frozen Qwen dump 0.0501 (prompt lift only). Qwen SOP raw-on-Gold-v2 0.2134 is **not** paper Qwen 0.2130. Official `gpt-4o` SOP extract still missing.
+None of the SOP re-calls beat frozen ChatGPT P2 exact 0.2854 / relaxed 0.6249, or JobBERT 3M v4 exact 0.4331. Qwen SOP 0.1724 > frozen Qwen dump 0.0501 (prompt lift only). Qwen SOP raw-on-Gold-v2 0.2134 is **not** paper Qwen 0.2130. Llama SOP raw-on-Gold-v2 diagnostic 0.0641 / 0.0952. Official `gpt-4o` SOP extract still missing.
 
 ## Running / not yet a paper number
 
 | Item | Status |
 |---|---|
 | RoBERTa-wwm v3 3-seed mean | seeds exist on disk; mean not copied into the Gold v2 encoder table |
-| Llama-3-8B SOP extract | 98/2601 incomplete |
-| claude-sonnet-4-6 SOP extract | 128/2601 incomplete |
-| deepseek-v4-pro SOP extract (uniform decode) | 700/2601 incomplete |
-| Qwen SOP-extract LoRA | training; no test F1 |
+| claude-sonnet-4-6 SOP extract | paused 460/2601 (user stop; 4.5 already scored) |
+| Qwen SOP-extract LoRA | died ~step 980/4365; only checkpoint-500; **no test F1** |
 | Concept Accuracy | **Blocked** — no ESCO concept IDs; delete the claim |
 | Time-OOD | **Blocked** — no year field; delete the claim |
 | Claude/Kimi dump fill | **Blocked** (API HTML); do not fake labels |

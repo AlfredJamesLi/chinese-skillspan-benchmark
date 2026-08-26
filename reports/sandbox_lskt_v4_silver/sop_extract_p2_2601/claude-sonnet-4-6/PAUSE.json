@@ -1,0 +1,9 @@
+{
+  "paused": true,
+  "when": "2026-08-26T07:40:50+08:00",
+  "reason": "user pause; resume later if needed",
+  "done_unique": 460,
+  "remaining": 2141,
+  "records": "records_claude-sonnet-4-6.jsonl",
+  "resume": "cd Chinese_skill_benchmark_Paper && CUDA_VISIBLE_DEVICES= PYTHONUNBUFFERED=1 /opt/anaconda3/envs/adasparse/bin/python -u scripts/run_sopv4_api_p2_2601.py --model claude-sonnet-4-6 --base https://claudeed.ysaikeji.cn --batch 4 --workers 2 --min-interval 0.5 >> reports/sandbox_lskt_v4_silver/sop_extract_p2_2601/run_claude-sonnet-4-6.log 2>&1"
+}

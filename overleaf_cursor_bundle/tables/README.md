@@ -14,5 +14,6 @@ Round to **4 decimals** in tex. Do not invent cells.
 | `sop_v4_cws_diagnostic.csv` | SOP v4 / jieba **appendix** (not Table 3; caption must name train / decode / test gold) |
 | `hybrid_cws_simhuman980_all_models.csv` | Matched SOP-CWS + SimHuman980, jieba bilateral, all systems (not Gold v2; not PDF Table 3) |
 | `hybrid_cws_llm_old_dumps.csv` | Same gold; frozen LLM dumps only (Claude miss 98, Kimi miss 293) |
+| `sop_extract_p2_2601.csv` | SOP extract v4 re-calls on P2 2601 (**appendix**; not Table 3 / not P2 main frozen dumps) |
 
 Authoritative rounding and captions: `.cursor/skills/cnss-overleaf/confirmed-results.md`.

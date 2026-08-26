@@ -1,0 +1,71 @@
+{
+  "run": "llama3_8b_instruct_sopv4_p2_2601",
+  "files": {
+    "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/predictions/llama3_8b_instruct_sopv4_p2_2601.input.jsonl": "5af6436bd9ab6bae1a9df2d41c1c1f31ab908acb815aa9a7d33397aa5708614c",
+    "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/predictions/llama3_8b_instruct_sopv4_p2_2601.raw.jsonl": "293fb06c081f834baa1691a32ac32be910eec9fe0df7b381b4b4352f0a03fbcb",
+    "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/predictions/llama3_8b_instruct_sopv4_p2_2601.parsed.jsonl": "a6205ec88234c0c2ebf4d6d96f90ea89b76c6f74187bb588d9f3f47b38f3c953",
+    "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/predictions/llama3_8b_instruct_sopv4_p2_2601.jieba.jsonl": "ee0096b5109ead8846332c71ea730cec01f6cb15a75c691b7e2930e17eaa9a5c",
+    "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/llama3_8b_instruct_sopv4_p2_2601_freeze.json": "a303dcaaab5114016636d575a3790f15d3fc970e1fc4687b0b8eb1270cb7d96f"
+  },
+  "coverage": {
+    "n_rows": 2601,
+    "n_unique": 2601,
+    "n_missing": 0,
+    "n_extra": 0,
+    "n_duplicate": 0,
+    "bad_label": 0,
+    "bad_span_not_in_sentence": 0,
+    "pass": true
+  },
+  "scores": {
+    "p2_2601": {
+      "run": "llama3_8b_instruct_sopv4_p2_2601",
+      "split": "P2_hybrid_2601",
+      "n": 2601,
+      "alignment_ok": true,
+      "n_missing": 0,
+      "typed_exact_p": 0.09045226130653267,
+      "typed_exact_r": 0.04294917680744453,
+      "typed_exact_f1": 0.05824300275036402,
+      "collapsed_exact_f1": 0.10936741627568355,
+      "typed_relaxed_f1": 0.11778029445073611,
+      "note": "main P2 result; not comparable to ChatGPT 0.6365 on Gold v2"
+    },
+    "p2_980": {
+      "run": "llama3_8b_instruct_sopv4_p2_2601",
+      "split": "P2_simhuman980",
+      "n": 980,
+      "alignment_ok": true,
+      "n_missing": 0,
+      "typed_exact_p": 0.10125361620057859,
+      "typed_exact_r": 0.03722084367245657,
+      "typed_exact_f1": 0.054432348367029544,
+      "collapsed_exact_f1": 0.09901503369621566,
+      "typed_relaxed_f1": 0.11404872991187143,
+      "note": "SimHuman SOP overlay, not human-validated Gold"
+    },
+    "p1_diag": {
+      "run": "llama3_8b_instruct_sopv4_p2_2601",
+      "split": "P1_gold_v2_diagnostic",
+      "n": 2601,
+      "alignment_ok": true,
+      "n_missing": 0,
+      "typed_exact_p": 0.13869346733668342,
+      "typed_exact_r": 0.04164780443639656,
+      "typed_exact_f1": 0.06405941743066032,
+      "collapsed_exact_f1": 0.1304398282464895,
+      "typed_relaxed_f1": 0.09516072879192293,
+      "note": "span-convention diagnostic only"
+    }
+  },
+  "errors": {
+    "boundary_only_errors": 285,
+    "false_positives_other": 725,
+    "type_errors": 512,
+    "missed_entities": 3248,
+    "empty_sentence_false_positives": 249,
+    "invalid_or_truncated_word_fragments": 60,
+    "overlong_spans": 15,
+    "parser_failures": 324
+  }
+}

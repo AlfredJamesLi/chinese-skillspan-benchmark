@@ -42,8 +42,23 @@ INPUT_PATH = PRED_DIR / f"{RUN}.input.jsonl"
 FAIL_CSV = REPORT_DIR / f"{RUN}_failures.csv"
 FREEZE = REPORT_DIR / f"{RUN}_freeze.json"
 SMOKE_REP = REPORT_DIR / f"{RUN}_smoke_format.json"
+ADAPTER_PATH: str | None = None
 TYPES = {"L", "K", "S", "T"}
 PARSER_VERSION = "sop_extract_json_array_v1"
+
+
+def apply_run_name(name: str) -> None:
+    global RUN, RAW_PATH, PARSED_PATH, JIEBA_PATH, INPUT_PATH, FAIL_CSV, FREEZE, SMOKE_REP
+    RUN = name
+    RAW_PATH = PRED_DIR / f"{RUN}.raw.jsonl"
+    PARSED_PATH = PRED_DIR / f"{RUN}.parsed.jsonl"
+    JIEBA_PATH = PRED_DIR / f"{RUN}.jieba.jsonl"
+    INPUT_PATH = PRED_DIR / f"{RUN}.input.jsonl"
+    FAIL_CSV = REPORT_DIR / f"{RUN}_failures.csv"
+    FREEZE = REPORT_DIR / f"{RUN}_freeze.json"
+    SMOKE_REP = REPORT_DIR / f"{RUN}_smoke_format.json"
+
+
 USER_PREFIX = (
     "请从下面这一批句子抽出 LSKT 跨度。只输出 JSON 数组，不要 markdown。"
     "id 必须与输入完全一致、顺序一致、不增不删。"
@@ -196,7 +211,7 @@ def freeze_now(p2_rows: list[dict]) -> dict:
         "hf_repo": "Qwen/Qwen2.5-14B-Instruct",
         "torch_dtype": "bfloat16",
         "quantization": "none",
-        "lora": "none (base Instruct, not sft_CN_skillspan_*)",
+        "lora": ADAPTER_PATH or "none (base Instruct, not sft_CN_skillspan_*)",
         "tokenizer_json_sha256": sha256_file(tok_json) if tok_json.is_file() else None,
         "safetensors_index_sha256": sha256_file(MODEL_PATH / "model.safetensors.index.json"),
         "prompt_path": str(PROMPT_PATH),
@@ -477,7 +492,14 @@ def main() -> int:
     ap.add_argument("--smoke-only", action="store_true")
     ap.add_argument("--score-only", action="store_true")
     ap.add_argument("--skip-smoke-continue", action="store_true", help="skip 100-id smoke and run 2601")
+    ap.add_argument("--adapter", default=None, help="optional PEFT adapter dir; writes a separate RUN")
+    ap.add_argument("--run-name", default=None, help="override RUN so LoRA preds do not overwrite Instruct")
     args = ap.parse_args()
+    global ADAPTER_PATH
+    if args.run_name:
+        apply_run_name(args.run_name)
+    if args.adapter:
+        ADAPTER_PATH = args.adapter
 
     p2_rows = cws.load_jsonl(P2)
     gold_map = {rec_id(r): r for r in p2_rows}
@@ -501,8 +523,13 @@ def main() -> int:
     prompt = PROMPT_PATH.read_text(encoding="utf-8")
     tok = model = None
     if not args.score_only:
-        print(json.dumps({"load_model": str(MODEL_PATH)}, ensure_ascii=False), flush=True)
+        print(json.dumps({"load_model": str(MODEL_PATH), "adapter": ADAPTER_PATH}, ensure_ascii=False), flush=True)
         tok, model = load_local(str(MODEL_PATH))
+        if ADAPTER_PATH:
+            from peft import PeftModel
+
+            model = PeftModel.from_pretrained(model, ADAPTER_PATH)
+            model.eval()
         if not args.skip_smoke_continue:
             infer_ids(smoke_ids, gold_map, tok, model, prompt, fail_rows)
             smoke = smoke_format(smoke_ids, gold_map)
@@ -528,7 +555,7 @@ def main() -> int:
     scores = score_all(jieba_rows)
     err = error_summary(p2_rows, jieba_rows)
     err["parser_failures"] = sum(1 for r in fail_rows if r.get("stage") == "parse")
-    md = REPORT_DIR / "qwen25_14b_instruct_sopv4_error_summary.md"
+    md = REPORT_DIR / f"{RUN}_error_summary.md"
     lines = ["# Qwen2.5-14B-Instruct SOP-v4 P2 error summary", "", f"Run `{RUN}`.", "", "| Kind | Count |", "|---|---:|"]
     for k, v in sorted(err.items()):
         lines.append(f"| {k} | {v} |")

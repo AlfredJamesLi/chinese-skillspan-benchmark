@@ -218,16 +218,18 @@ Authorized 2026-08-26. Same SOP extract v4 prompt, jieba snap, scorer `cnss-lskt
 |---|---:|---:|---:|---:|---|
 | gpt-5.4 SOP extract | **0.2132** | **0.4199** | 0.2063 | 0.4207 | `sop_extract_p2_2601/gpt-5.4/summary_gpt-5.4.json` |
 | kimi-k2.6 SOP extract | 0.1979 | 0.4032 | 0.1912 | 0.4108 | `sop_extract_p2_2601/kimi-k2.6/summary_kimi-k2.6.json` |
+| deepseek-v4-pro SOP extract | 0.1980 | 0.3931 | 0.1847 | 0.3973 | `sop_extract_p2_2601/deepseek-v4-pro/summary_deepseek-v4-pro.json` |
 | claude-sonnet-4-5 SOP extract | 0.1972 | 0.3987 | 0.1861 | 0.3945 | `sop_extract_p2_2601/claude-sonnet-4-5/summary_claude-sonnet-4-5.json` |
 | Qwen2.5-14B-Instruct SOP extract (local, no LoRA) | 0.1724 | 0.3279 | 0.1711 | 0.3390 | `reports/qwen25_14b_instruct_sopv4_p2_2601_scores.csv` |
+| Llama-3-8B-Instruct SOP extract (local, no LoRA) | 0.0582 | 0.1178 | 0.0544 | 0.1140 | `reports/llama3_8b_instruct_sopv4_p2_2601_scores.csv` |
 | ChatGPT (`gpt-4o`, frozen dump + jieba) | 0.2854 | **0.6249** | 0.2836 | 0.6447 | P2 main table (not a SOP re-call) |
 | JobBERT 3M v4 + jieba | **0.4331** | 0.5873 | 0.4401 | 0.6032 | P2 main table |
 
-Qwen SOP extract vs the **same model’s frozen dump** on P2: 0.1724 vs 0.0501 (prompt lift). Qwen SOP preds scored **raw** on Gold v2 (diagnostic only): typed exact **0.2134** / relaxed 0.2999. That is **not** a reproduction of paper Qwen S-F1 0.2130 (different gold and prompt). Do not put 0.2134 into Gold v2 unique-first (frozen Qwen dump there is 0.0791).
+Qwen SOP extract vs the **same model’s frozen dump** on P2: 0.1724 vs 0.0501 (prompt lift). Qwen SOP preds scored **raw** on Gold v2 (diagnostic only): typed exact **0.2134** / relaxed 0.2999. That is **not** a reproduction of paper Qwen S-F1 0.2130 (different gold and prompt). Do not put 0.2134 into Gold v2 unique-first (frozen Qwen dump there is 0.0791). Llama SOP raw-on-Gold-v2 diagnostic: typed exact **0.0641** / relaxed 0.0952 (parser failures 324/2601); do not put into Gold v2 unique-first.
 
 Allowed claim: full-n SOP extract re-calls **did not** beat frozen ChatGPT P2 exact **0.2854** or relaxed **0.6249**, and **did not** beat JobBERT 3M v4 exact **0.4331**. Official `gpt-4o` + the same SOP prompt is still missing.
 
-**Not yet scored (do not invent F1):** Llama-3-8B-Instruct SOP 98/2601; claude-sonnet-4-6 SOP 128/2601; deepseek-v4-pro SOP 700/2601 (uniform decode, not the n=46 high-thinking pilot); Qwen LoRA SFT on SOP extract (train in progress). Job 50649 `jbzh_domain1m` remains `JobHeldUser` and is redundant given the 3-seed domain-mix already in the encoder table.
+**Not yet scored (do not invent F1):** claude-sonnet-4-6 SOP extract paused at **460/2601** (user stop; 4.5 already covers the same prompt); Qwen LoRA SFT on SOP extract (died ~step 980/4365; only `checkpoint-500` on disk; **no test F1**). Job 50649 `jbzh_domain1m` remains `JobHeldUser` and is redundant given the 3-seed domain-mix already in the encoder table.
 
 ## Still missing / blocked (paper claims)
 

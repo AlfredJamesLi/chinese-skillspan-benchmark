@@ -2,7 +2,7 @@
 
 Zero-shot Instruct P2-2601 (already scored): typed exact **0.1724**, relaxed **0.3279**. This is the LLM baseline for the SOP extract prompt.
 
-Paired SFT (in progress): LoRA on `train_lskt_v4_silver.jsonl` (17460; **0 overlap** with P2 2601), same SOP extract prompt. Not Gold v2. Not the old `sft_CN_skillspan_ner_*` (those used `@@span##` / RAG NER).
+Paired SFT: LoRA on `train_lskt_v4_silver.jsonl` (17460; **0 overlap** with P2 2601), same SOP extract prompt. Not Gold v2. Not the old `sft_CN_skillspan_ner_*`. Resumed from `checkpoint-500` at 2026-08-26 07:49; process gone again ~08:15 at **step 980/4365**. Only `checkpoint-500` on disk (`save_steps=500`). **No P2 test F1.** Do not invent a LoRA score. Waiter aborted (expected 4365). To continue: resume again from `checkpoint-500` with `overwrite_output_dir: false`.
 
 Train log: `reports/sft_lskt_v4_sop_extract.train.log`  
 Adapter out: `LLaMA-Factory/saves/qwen2_5_14b/lora/sft_lskt_v4_sop_extract`

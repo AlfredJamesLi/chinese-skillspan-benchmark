@@ -1,6 +1,6 @@
 # GitHub 私有仓库备份
 
-**状态：已推送**（跟踪 `main`；SOP extract P2-2601 诊断分与 Qwen Instruct 基线见 2026-08-26 备份）
+**状态：本 commit 备份 DeepSeek v4-pro + Llama-3-8B SOP extract 2601；Qwen LoRA 仍无测试 F1**
 
 - 仓库：https://github.com/AlfredJamesLi/chinese-skillspan-benchmark （private）
 - 分支：`main`（与本地同步）

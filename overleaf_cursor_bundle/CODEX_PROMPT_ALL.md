@@ -69,7 +69,7 @@ Add a short subsection (English, same register as the paper) that distinguishes 
 
 **D. What stays official**
 - Human Doccano Gold v2 remains the official gold. Matched-protocol numbers are a **separate** table / appendix.
-- LLM SOP-extract re-calls (gpt-5.4 n=100; DeepSeek V4 Pro n=46) used the new extract prompt **without** silver. They did **not** beat the frozen ChatGPT dump on the same IDs. Do not expand them to 2601. Fair GPT-4o re-call is still pending.
+- LLM SOP-extract **pilots** (gpt-5.4 n=100 hybrid exact 0.2338; DeepSeek V4 Pro n=46 hybrid exact 0.2353) stay a footnote only. Full-n SOP extract scores exist as **Table J** (diagnostic). They did **not** beat frozen ChatGPT P2 exact 0.2854 or JobBERT 3M v4 exact 0.4331. Official `gpt-4o` + the same SOP prompt is still missing.
 
 ---
 
@@ -172,9 +172,24 @@ Discussion (two sentences): SOP v4 training **lowers** Gold v2 exact vs goldstyl
 
 Allowed sentence: under this matched gold, JobBERT-zh 1M/3M v4 lead typed exact (0.4272 / 0.4331); ChatGPT leads relaxed (0.6249). 980 vs 2601 Δ exact < 0.01 for 1M/3M v4. **Forbidden:** “beats ChatGPT 0.6365”.
 
-Optional footnote: SOP extract re-call gpt-5.4 n=100 hybrid exact 0.2338 vs old dump 0.3356 on the same IDs; DeepSeek V4 Pro n=46 hybrid exact 0.2353 vs old dump 0.3648. Not expanded to 2601.
+Optional footnote: SOP extract **pilot** gpt-5.4 n=100 hybrid exact 0.2338 vs old dump 0.3356 on the same IDs; DeepSeek V4 Pro n=46 hybrid exact 0.2353 vs old dump 0.3648. The n=100 cell **0.2338 is not** the full-n number (full-n gpt-5.4 is **0.2132** in Table J).
 
-CSV copies: `tables/model_ids.csv`, `tables/table3_gold_v2_unique_view.csv`, `tables/per_domain_gold_v2.csv`, `tables/encoder_gold_v2.csv`, `tables/encoder_3seed_gold_v2.csv`, `tables/sop_v4_cws_diagnostic.csv`, `tables/hybrid_cws_simhuman980_all_models.csv`, `tables/hybrid_cws_llm_old_dumps.csv`.
+**J. Add SOP extract diagnostic table** (appendix; **not** P2 main, **not** Table 3, **not** Gold v2 unique-first). Caption: same SOP extract v4 prompt, jieba snap, gold = matched-protocol hybrid 2601, scorer `cnss-lskt-1.2.0`. New models / new prompt. Do **not** replace `gpt-4o` / `deepseek-r1` dump rows.
+
+| System | n=2601 exact | n=2601 relaxed | n=980 exact | n=980 relaxed |
+|---|---:|---:|---:|---:|
+| gpt-5.4 SOP extract | 0.2132 | 0.4199 | 0.2063 | 0.4207 |
+| kimi-k2.6 SOP extract | 0.1979 | 0.4032 | 0.1912 | 0.4108 |
+| deepseek-v4-pro SOP extract | 0.1980 | 0.3931 | 0.1847 | 0.3973 |
+| claude-sonnet-4-5 SOP extract | 0.1972 | 0.3987 | 0.1861 | 0.3945 |
+| Qwen2.5-14B-Instruct SOP extract (local, no LoRA) | 0.1724 | 0.3279 | 0.1711 | 0.3390 |
+| Llama-3-8B-Instruct SOP extract (local, no LoRA) | 0.0582 | 0.1178 | 0.0544 | 0.1140 |
+| ChatGPT (`gpt-4o`, frozen dump + jieba) | 0.2854 | 0.6249 | 0.2836 | 0.6447 |
+| JobBERT 3M v4 + jieba | 0.4331 | 0.5873 | 0.4401 | 0.6032 |
+
+Allowed sentence: SOP extract re-calls did not beat frozen ChatGPT P2 exact 0.2854 / relaxed 0.6249, and did not beat JobBERT 3M v4 exact 0.4331. Qwen SOP 0.1724 vs frozen Qwen dump 0.0501 is a **prompt** lift, not SFT. Do not write Qwen SOP-on-Gold-v2 0.2134 as paper Qwen 0.2130. Do not add Qwen LoRA (no test F1) or Claude Sonnet 4.6 (paused 460/2601).
+
+CSV copies: `tables/model_ids.csv`, `tables/table3_gold_v2_unique_view.csv`, `tables/per_domain_gold_v2.csv`, `tables/encoder_gold_v2.csv`, `tables/encoder_3seed_gold_v2.csv`, `tables/sop_v4_cws_diagnostic.csv`, `tables/hybrid_cws_simhuman980_all_models.csv`, `tables/hybrid_cws_llm_old_dumps.csv`, `tables/sop_extract_p2_2601.csv`.
 
 Mark Claude / Kimi as incomplete (empty-fill). Do not treat 0.1483 / 0.0964 as complete LLM rows. Do not use the later haiku+sonnet / Kimi_filled numbers in this table.
 
