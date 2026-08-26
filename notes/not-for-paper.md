@@ -15,7 +15,7 @@
 - Internal encoder summaries that were not scored with this paper’s official script
 - Numbers from the *other* processed copy of `chinese_skillspan` if the two trees differ
 - RoBERTa-wwm v3 3-seed **mean is 0.1199** (0.1156 / 0.1187 / 0.1254); do not leave `---`
-- JobBERT 1M goldstyle **5-seed mean** before seeds 7 and 13 finish
+- Replacing the 4-encoder **3-seed** ranking (JobBERT 1M **0.1288**) with the JobBERT 1M **5-seed** mean **0.1257**; 5-seed is 1M-only and slightly lower because seed 13 is 0.1192
 - Claiming domain-mix 1M beats JobBERT 1M on the 3-seed mean (0.1269 < 0.1288)
 - Claiming domain-mix fixes 事业单位 (seed 42 typed F1 0.0287 vs ChatGPT 0.7032)
 - Presenting the original Claude unique-first dump (missing 98) as a complete Gold v2 row; use `Claude_filled_v2.jsonl` (haiku+sonnet-4-6 mix)

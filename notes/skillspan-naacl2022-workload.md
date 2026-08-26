@@ -100,7 +100,7 @@ Do these from **existing preds** first; only then extra GPU.
 ## Done 2026-08-26 (appendix pack from existing preds)
 
 Script: `scripts/build_skillspan_style_appendix.py`. Numbers in `notes/confirmed-results.md`.  
-JobBERT 1M goldstyle extra seeds **7 and 13** launched on GPU 0; 5-seed mean **not** yet a paper number.
+JobBERT 1M goldstyle 5-seed mean **0.1257±0.0062** (0.1224 / 0.1292 / 0.1348 / 0.1227 / 0.1192). Four-encoder ranking stays 3-seed **0.1288**. Seed 13 resumed after GPU preemption.
 
 Do **not** start SpanBERT-from-scratch. Do **not** STL/MTL 4×2 grid.
 

@@ -117,7 +117,11 @@ Encoder is a **weak baseline** (~0.12), not competitive with ChatGPT (0.6365 typ
 | JobBERT 3M ckpt65000 | 0.1233 | 0.1295 | 0.1246 | 0.1258 | 0.0033 |
 | RoBERTa-wwm v3 | 0.1156 | 0.1187 | 0.1254 | 0.1199 | 0.0050 |
 
-3-seed mean: domain-mix 0.1269 **below** JobBERT 1M 0.1288. RoBERTa-wwm v3 **0.1199**. Do not scale domain-mix to 3M. Do **not** write a JobBERT 1M 5-seed mean until seeds 7 and 13 finish.
+3-seed mean: domain-mix 0.1269 **below** JobBERT 1M 0.1288. RoBERTa-wwm v3 **0.1199**. Do not scale domain-mix to 3M. Keep the 3-seed table as the four-encoder ranking.
+
+## NEW — Encoder 5-seed typed exact (JobBERT 1M goldstyle v3 only)
+
+CSV: `tables/encoder_5seed_gold_v2.csv`. Seeds 42 / 123 / 2026 / 7 / 13 = 0.1224 / 0.1292 / 0.1348 / 0.1227 / 0.1192. Mean **0.1257** ± 0.0062. P/R **0.1790±0.0148** / **0.0969±0.0033**. Seed 13 resumed after GPU preemption. Do **not** replace the 4-encoder 3-seed ranking. Still a weak baseline vs ChatGPT 0.6365.
 
 ## Diagnostic — LSKT v4 SOP / jieba CWS (appendix; not Table 3)
 
@@ -209,6 +213,7 @@ CSV: `tables/appendix_pr_gold_v2.csv`. Encoder = 3-seed mean ± sample std. Kimi
 | ChatGPT (`gpt-4o`) | 0.6264 | 0.6469 | **0.6365** |
 | Claude filled (haiku+98 sonnet-4-6) | 0.2300 | 0.2947 | 0.2583 |
 | JobBERT 1M (3-seed) | 0.1864±0.0137 | 0.0984±0.0037 | 0.1288±0.0062 |
+| JobBERT 1M (5-seed) | 0.1790±0.0148 | 0.0969±0.0033 | 0.1257±0.0062 |
 | domain-mix 1M (3-seed) | 0.1841±0.0029 | 0.0969±0.0033 | 0.1269±0.0031 |
 | JobBERT 3M (3-seed) | 0.1785±0.0055 | 0.0972±0.0030 | 0.1258±0.0033 |
 | RoBERTa-wwm v3 (3-seed) | 0.1695±0.0126 | 0.0928±0.0024 | 0.1199±0.0050 |
@@ -257,7 +262,7 @@ Full buckets: `tables/appendix_span_length_f1_gold_v2.csv`.
 
 | Item | Status |
 |---|---|
-| JobBERT 1M goldstyle 5-seed mean | seeds 7 and 13 launched 2026-08-26; do not invent F1 |
+| JobBERT 1M goldstyle 5-seed mean | **0.1257±0.0062** (do not swap into the 4-encoder 3-seed ranking) |
 | claude-sonnet-4-6 SOP extract | paused 460/2601 (user stop; 4.5 already scored) |
 | Qwen SOP-extract LoRA | died ~step 980/4365; only checkpoint-500; **no test F1** |
 | Concept Accuracy | **Blocked** — no ESCO concept IDs; delete the claim |

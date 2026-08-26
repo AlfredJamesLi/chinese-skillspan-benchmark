@@ -129,7 +129,19 @@ CSV: `tables/encoder_3seed_gold_v2.csv`. Sample std over three seeds.
 | JobBERT 3M ckpt65000 | 0.1233 | 0.1295 | 0.1246 | 0.1258 | 0.0033 |
 | RoBERTa-wwm v3 | 0.1156 | 0.1187 | 0.1254 | 0.1199 | 0.0050 |
 
-3-seed mean: domain-mix 0.1269 **below** JobBERT 1M 0.1288. RoBERTa-wwm v3 **0.1199** is the weakest of the four. Do not scale domain-mix to 3M. Encoder remains a weak baseline (~0.13 vs ChatGPT 0.6365 typed). JobBERT 1M goldstyle **5-seed** (add seeds 7 and 13) is running; do **not** write a 5-seed mean until those two `run_summary.json` files exist.
+3-seed mean: domain-mix 0.1269 **below** JobBERT 1M 0.1288. RoBERTa-wwm v3 **0.1199** is the weakest of the four. Do not scale domain-mix to 3M. Encoder remains a weak baseline (~0.13 vs ChatGPT 0.6365 typed). Keep this 3-seed table as the **four-encoder ranking** (same seed count for every model).
+
+## Encoder 5-seed typed exact (JobBERT 1M goldstyle v3 only; Gold v2; `cnss-lskt-1.2.0`)
+
+CSV: `tables/encoder_5seed_gold_v2.csv`, P/R `tables/appendix_pr_jobbert_1m_5seed.csv`. Same CRF recipe as the 3-seed 1M run (freeze 1M MLM encoder; goldstyle v3 train/dev; 6 epochs; patience 2; batch 16; max_len 256; lr 2e-5). Sample std over five seeds. Seed 13 resumed from the epoch-2 checkpoint after GPU preemption; not a bit-identical uninterrupted run.
+
+| Run | 42 | 123 | 2026 | 7 | 13 | mean | std |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| JobBERT 1M goldstyle v3 | 0.1224 | 0.1292 | 0.1348 | 0.1227 | 0.1192 | **0.1257** | 0.0062 |
+
+Typed P/R 5-seed mean: **0.1790±0.0148** / **0.0969±0.0033** / **0.1257±0.0062**.
+
+Allowed: 5-seed is SkillSpan’s seed count on the **main encoder baseline only**. It is **below** the 3-seed mean (0.1257 vs 0.1288) because seed 13 is 0.1192. Do **not** replace the 4-encoder 3-seed ranking with this row. Do **not** write 0.1257 next to ChatGPT 0.6365 as a SOTA comparison. Still a weak Gold v2 baseline.
 
 ## Diagnostic — LSKT v4 SOP / jieba CWS (Overleaf appendix; not Table 3)
 
@@ -235,7 +247,7 @@ Allowed claim: full-n SOP extract re-calls **did not** beat frozen ChatGPT P2 ex
 
 CSV: `tables/appendix_workload_vs_skillspan.csv`. Source for SkillSpan counts: Zhang et al. NAACL 2022 (391 English JPs, 14.5K sentences). Do **not** write SkillSpan English span-F1 next to our Gold v2 0.1288 as the same task.
 
-Allowed main-text sentence: relative to SkillSpan, this resource is larger (17,460 training sentences vs 14.5K annotated sentences in total), uses a four-type LSKT schema rather than two nested labels, reports two evaluation protocols, includes Chinese DAPT at 1M and 3M plus encoder ablations with three seeds, and evaluates frozen and re-prompted LLMs that SkillSpan did not study. We do **not** clone SpanBERT-from-scratch or their 4×STL/MTL grid.
+Allowed main-text sentence: relative to SkillSpan, this resource is larger (17,460 training sentences vs 14.5K annotated sentences in total), uses a four-type LSKT schema rather than two nested labels, reports two evaluation protocols, includes Chinese DAPT at 1M and 3M plus encoder ablations with three seeds, a five-seed JobBERT 1M goldstyle run (0.1257±0.0062), and evaluates frozen and re-prompted LLMs that SkillSpan did not study. We do **not** clone SpanBERT-from-scratch or their 4×STL/MTL grid. The four-encoder ranking stays 3-seed (JobBERT 1M **0.1288**).
 
 ## Appendix — typed P/R (Gold v2; SkillSpan Table 6 analogue)
 
@@ -246,6 +258,7 @@ CSV: `tables/appendix_pr_gold_v2.csv`. Encoder cells = 3-seed mean ± sample std
 | ChatGPT (`gpt-4o`) | 0.6264 | 0.6469 | **0.6365** |
 | Claude filled (haiku+98 sonnet-4-6) | 0.2300 | 0.2947 | 0.2583 |
 | JobBERT 1M goldstyle v3 (3-seed) | 0.1864±0.0137 | 0.0984±0.0037 | 0.1288±0.0062 |
+| JobBERT 1M goldstyle v3 (5-seed) | 0.1790±0.0148 | 0.0969±0.0033 | 0.1257±0.0062 |
 | domain-mix 1M (3-seed) | 0.1841±0.0029 | 0.0969±0.0033 | 0.1269±0.0031 |
 | JobBERT 3M ckpt65000 (3-seed) | 0.1785±0.0055 | 0.0972±0.0030 | 0.1258±0.0033 |
 | RoBERTa-wwm v3 (3-seed) | 0.1695±0.0126 | 0.0928±0.0024 | 0.1199±0.0050 |
@@ -316,7 +329,7 @@ Allowed: on P2, JobBERT v4 leads **both** P and exact F1; ChatGPT still leads re
 
 - Concept Accuracy / ESCO concept-ID eval — **blocked**, no concept IDs; delete the claim
 - Time-OOD — **blocked**, no `year` field; delete the claim
-- JobBERT 1M goldstyle **5-seed mean** (seeds 7 and 13 launched 2026-08-26; 42/123/2026 already scored)
+- JobBERT 1M goldstyle **5-seed mean is 0.1257±0.0062** (do not swap it into the 4-encoder 3-seed ranking; do not treat as Gold v2 SOTA)
 - BERT-CRF span-based, XLM-R zero-shot, ESCO lexicon rows
 - SelfCheck + reflection as a frozen “our method” recipe
 - Public data card / 200-item Gold analysis set as a named file

@@ -1,6 +1,6 @@
 # GitHub 私有仓库备份
 
-**状态：本 commit 备份 SkillSpan 风格附录表、RoBERTa-wwm Gold v2 3-seed 均值 0.1199、JobBERT 1M 5-seed 启动脚本；5-seed 均值尚未写出**
+**状态：本 commit 备份 JobBERT 1M goldstyle 5-seed Gold v2 均值 0.1257±0.0062（seeds 42/123/2026/7/13）；四模型对比仍用 3-seed 0.1288**
 
 - 仓库：https://github.com/AlfredJamesLi/chinese-skillspan-benchmark （private）
 - 分支：`main`（与本地同步）

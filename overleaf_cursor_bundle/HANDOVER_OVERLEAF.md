@@ -65,4 +65,4 @@ git branch --show-current
 
 **P0：** 对照 Overleaf tex 与 confirmed-results 做冲突表，再补表。  
 **P1：** 版式、图题、参考文献（数字不动）。  
-**P2：** 缺 Claude/Kimi 完整 dump 的 P2 主表行、JobBERT 1M goldstyle 5-seed 均值（seeds 7/13 已在服务器启动）→ 交回服务器窗口。 RoBERTa-wwm v3 Gold v2 3-seed 均值 **0.1199** 已写入。
+**P2：** 缺 Claude/Kimi 完整 dump 的 P2 主表行 → 交回服务器窗口。 JobBERT 1M goldstyle 5-seed Gold v2 均值 **0.1257±0.0062** 已写入（四模型对比仍用 3-seed **0.1288**）。 RoBERTa-wwm v3 Gold v2 3-seed 均值 **0.1199** 已写入。
