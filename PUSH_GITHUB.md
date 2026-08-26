@@ -1,6 +1,6 @@
 # GitHub 私有仓库备份
 
-**状态：本 commit 备份 DeepSeek v4-pro + Llama-3-8B SOP extract 2601；Qwen LoRA 仍无测试 F1**
+**状态：本 commit 备份 SkillSpan 风格附录表、RoBERTa-wwm Gold v2 3-seed 均值 0.1199、JobBERT 1M 5-seed 启动脚本；5-seed 均值尚未写出**
 
 - 仓库：https://github.com/AlfredJamesLi/chinese-skillspan-benchmark （private）
 - 分支：`main`（与本地同步）

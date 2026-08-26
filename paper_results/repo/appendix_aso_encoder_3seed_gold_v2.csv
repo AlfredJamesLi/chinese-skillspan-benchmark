@@ -1,0 +1,17 @@
+row,col,p_row_gt_col,row_dominates,n_seeds,note
+JobBERT 1M goldstyle v3,JobBERT 1M goldstyle v3,1.0,,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+JobBERT 1M goldstyle v3,domain-mix 1M,0.5555555555555556,true,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+JobBERT 1M goldstyle v3,JobBERT 3M ckpt65000,0.5555555555555556,true,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+JobBERT 1M goldstyle v3,RoBERTa-wwm v3,0.8888888888888888,true,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+domain-mix 1M,JobBERT 1M goldstyle v3,0.4444444444444444,false,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+domain-mix 1M,domain-mix 1M,1.0,,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+domain-mix 1M,JobBERT 3M ckpt65000,0.5555555555555556,true,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+domain-mix 1M,RoBERTa-wwm v3,0.8888888888888888,true,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+JobBERT 3M ckpt65000,JobBERT 1M goldstyle v3,0.4444444444444444,false,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+JobBERT 3M ckpt65000,domain-mix 1M,0.4444444444444444,false,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+JobBERT 3M ckpt65000,JobBERT 3M ckpt65000,1.0,,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+JobBERT 3M ckpt65000,RoBERTa-wwm v3,0.7777777777777778,true,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+RoBERTa-wwm v3,JobBERT 1M goldstyle v3,0.1111111111111111,false,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+RoBERTa-wwm v3,domain-mix 1M,0.1111111111111111,false,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+RoBERTa-wwm v3,JobBERT 3M ckpt65000,0.2222222222222222,false,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO
+RoBERTa-wwm v3,RoBERTa-wwm v3,1.0,,3,pairwise seed F1 win-rate; n=3 under-powered vs SkillSpan n=5 ASO

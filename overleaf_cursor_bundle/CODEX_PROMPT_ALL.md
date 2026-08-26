@@ -38,7 +38,7 @@ Overleaf: https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4
 - Do **not** claim JobBERT-zh beats ChatGPT on Gold v2. Encoder on Gold v2 is a **weak baseline** (~0.13 typed).
 - Delete or rewrite Concept Accuracy, Time-OOD, ESCO concept-ID linking. Allowed: “ESCO-derived LSKT span extraction”. Per-domain table is an Industry-OOD **proxy**.
 - Qwen paper 0.2130 is unreproducible as Gold v2 typed 0.0791. Do not defend 0.2130 as Gold v2.
-- listed-mix 1M lost (0.1201 vs 0.1224). Domain-mix 3-seed mean 0.1269 is **below** JobBERT 1M 0.1288. No listed-3M. No RoBERTa 3-seed mean (leave `---`).
+- listed-mix 1M lost (0.1201 vs 0.1224). Domain-mix 3-seed mean 0.1269 is **below** JobBERT 1M 0.1288. No listed-3M. RoBERTa-wwm v3 3-seed mean **0.1199** (0.1156 / 0.1187 / 0.1254). Do **not** write a JobBERT 1M **5-seed** mean until seeds 7 and 13 are scored.
 - If tex, confirmed-results, and PDF disagree, stop and report. Do not average.
 
 ---
@@ -56,7 +56,7 @@ Add a short subsection (English, same register as the paper) that distinguishes 
 
 **B. New training (encoder fine-tune, not LLM SFT)**
 1. Start from existing Chinese JobBERT-zh (RoBERTa-wwm-ext + JD MLM) + CRF.
-2. **Official encoder track (already in the Gold v2 encoder table):** train silver = goldstyle v3 (rewrite toward Gold-length NPs). Best 3-seed typed exact on Gold v2: JobBERT 1M **0.1288**.
+2. **Official encoder track (already in the Gold v2 encoder table):** train silver = goldstyle v3 (rewrite toward Gold-length NPs). Best 3-seed typed exact on Gold v2: JobBERT 1M **0.1288**. Vanilla RoBERTa-wwm v3 3-seed mean **0.1199**.
 3. **New SOP track:** rewrite train silver with LSKT v4 SOP → `train_lskt_v4_silver`; fine-tune the same CRF on that silver (1M and 3M DAPT checkpoints). This is a **training-label change**, not a new architecture.
 4. **Decode:** optional jieba word-boundary snap (`cws_snap.rewrite_record`, userdict, cap=8) at test time. A separate **CWS-retrain** run trains CRF on already-snapped silver; finished F1 is in the matched-protocol table (1M CWS retrain 0.4049 exact), **below** post-hoc jieba on v4 preds (0.4272).
 
@@ -130,7 +130,7 @@ Best: domain-mix 1M **0.1234**; JobBERT 3M ckpt65000 **0.1233**; JobBERT 1M gold
 | JobBERT 1M | 0.1224 | 0.1292 | 0.1348 | **0.1288** | 0.0062 |
 | domain-mix 1M | 0.1234 | 0.1280 | 0.1294 | 0.1269 | 0.0031 |
 | JobBERT 3M ckpt65000 | 0.1233 | 0.1295 | 0.1246 | 0.1258 | 0.0033 |
-| RoBERTa-wwm v3 | 0.1156 | — | — | — | — |
+| RoBERTa-wwm v3 | 0.1156 | 0.1187 | 0.1254 | 0.1199 | 0.0050 |
 
 **H. Add diagnostic SOP/jieba table** (appendix). Caption must name train silver, decode, and test gold. Official gold remains Gold v2.
 
@@ -189,12 +189,80 @@ Optional footnote: SOP extract **pilot** gpt-5.4 n=100 hybrid exact 0.2338 vs ol
 
 Allowed sentence: SOP extract re-calls did not beat frozen ChatGPT P2 exact 0.2854 / relaxed 0.6249, and did not beat JobBERT 3M v4 exact 0.4331. Qwen SOP 0.1724 vs frozen Qwen dump 0.0501 is a **prompt** lift, not SFT. Do not write Qwen SOP-on-Gold-v2 0.2134 as paper Qwen 0.2130. Do not add Qwen LoRA (no test F1) or Claude Sonnet 4.6 (paused 460/2601).
 
-CSV copies: `tables/model_ids.csv`, `tables/table3_gold_v2_unique_view.csv`, `tables/per_domain_gold_v2.csv`, `tables/encoder_gold_v2.csv`, `tables/encoder_3seed_gold_v2.csv`, `tables/sop_v4_cws_diagnostic.csv`, `tables/hybrid_cws_simhuman980_all_models.csv`, `tables/hybrid_cws_llm_old_dumps.csv`, `tables/sop_extract_p2_2601.csv`.
+**K. Add a main-text workload comparison vs SkillSpan (Zhang et al., NAACL 2022)** — intro or contributions, **and** a compact recap in the conclusion. Counts only; do **not** write SkillSpan English span-F1 next to our Gold v2 0.1288. CSV: `tables/appendix_workload_vs_skillspan.csv`. Also add that CSV as an appendix inventory table.
 
-Mark Claude / Kimi as incomplete (empty-fill). Do not treat 0.1483 / 0.0964 as complete LLM rows. Do not use the later haiku+sonnet / Kimi_filled numbers in this table.
+Write this claim (English, same register; tighten if needed, keep the contrast):
+
+Relative to SkillSpan (Zhang et al., 2022), which annotated 391 English job postings (14.5K sentences) with two nested labels and evaluated encoder-only baselines, Chinese-SkillSpan is a larger and broader resource: 17,460 training sentences, a four-type LSKT schema, two evaluation protocols (human Gold v2 and a matched SOP+jieba test gold), Chinese domain-adaptive pre-training at 1M and 3M sentences plus encoder ablations with three random seeds, and a suite of frozen and re-prompted LLMs that SkillSpan did not evaluate. We do not clone SpanBERT-from-scratch or SkillSpan’s four-encoder STL/MTL grid; our encoder family is RoBERTa-wwm, JobBERT-zh (1M/3M), domain-mix, and listed-mix.
+
+**L. Add appendix typed P/R (Gold v2; analogue of SkillSpan Table 6).** Caption: Gold v2, `cnss-lskt-1.2.0`, encoder = 3-seed mean ± sample std. Kimi empty-fill F1 0.1522 is **not** the unique-first 0.1651.
+
+| System | P | R | F1 |
+|---|---:|---:|---:|
+| ChatGPT (`gpt-4o`) | 0.6264 | 0.6469 | 0.6365 |
+| Claude filled (haiku+98 sonnet-4-6) | 0.2300 | 0.2947 | 0.2583 |
+| JobBERT 1M goldstyle v3 (3-seed) | 0.1864±0.0137 | 0.0984±0.0037 | 0.1288±0.0062 |
+| domain-mix 1M (3-seed) | 0.1841±0.0029 | 0.0969±0.0033 | 0.1269±0.0031 |
+| JobBERT 3M ckpt65000 (3-seed) | 0.1785±0.0055 | 0.0972±0.0030 | 0.1258±0.0033 |
+| RoBERTa-wwm v3 (3-seed) | 0.1695±0.0126 | 0.0928±0.0024 | 0.1199±0.0050 |
+| DeepSeek (`deepseek-r1`) | 0.1384 | 0.1274 | 0.1327 |
+| Kimi empty-fill (293 missing) | 0.1677 | 0.1393 | 0.1522 |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.2178 | 0.0483 | 0.0791 |
+
+One sentence: encoders sit at ~0.17–0.19 P / ~0.09–0.10 R; Qwen dump is high-P low-R; ChatGPT is the only balanced high-P/R system.
+
+**M. Add appendix domain × 3-seed F1** (do **not** replace the seed-42 per-domain table). n=1407 / 457 / 737.
+
+| System | 人工智能 | 阿里云 | 事业单位 |
+|---|---:|---:|---:|
+| ChatGPT (`gpt-4o`) | 0.6489 | 0.5650 | 0.7032 |
+| JobBERT 1M (3-seed) | 0.1365±0.0081 | 0.1354±0.0039 | 0.0213±0.0034 |
+| domain-mix 1M (3-seed) | 0.1334±0.0052 | 0.1352±0.0021 | 0.0234±0.0071 |
+| JobBERT 3M (3-seed) | 0.1344±0.0021 | 0.1315±0.0078 | 0.0147±0.0007 |
+| RoBERTa-wwm v3 (3-seed) | 0.1301±0.0072 | 0.1186±0.0025 | 0.0126±0.0014 |
+
+One sentence: 3-seed std does not rescue 事业单位 (0.0126–0.0234 vs ChatGPT 0.7032).
+
+**N. Add appendix span-length F1** (token length = end−start). Mean gold length 4.90.
+
+| System | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10+ | mean pred |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| ChatGPT (`gpt-4o`) | 0.0357 | 0.7265 | 0.5643 | 0.7292 | 0.5095 | 0.6702 | 0.5066 | 0.5962 | 0.5183 | 0.5054 | 4.19 |
+| JobBERT 1M seed 42 | 0.0000 | 0.1229 | 0.1347 | 0.1923 | 0.0758 | 0.1570 | 0.0669 | 0.0858 | 0.0743 | 0.0357 | 5.94 |
+| RoBERTa-wwm v3 seed 42 | 0.0000 | 0.1105 | 0.1146 | 0.1882 | 0.0924 | 0.1357 | 0.0629 | 0.0851 | 0.0890 | 0.0372 | 5.98 |
+
+One sentence: ChatGPT is weak on length-1 but strong on 2 and 4; encoders over-predict span length (5.94 vs gold 4.90) and fail on length 1 and 10+.
+
+**O. Add appendix encoder seed win-rate** (ASO-style; n=3). Caption: P(row seed F1 > col seed F1) over 3×3 pairs; **not** SkillSpan 5-seed ASO+Bonferroni; under-powered.
+
+| row \ col | JobBERT 1M | domain-mix | JobBERT 3M | RoBERTa-wwm |
+|---|---:|---:|---:|---:|
+| JobBERT 1M | — | 0.5556 | 0.5556 | 0.8889 |
+| domain-mix | 0.4444 | — | 0.5556 | 0.8889 |
+| JobBERT 3M | 0.4444 | 0.4444 | — | 0.7778 |
+| RoBERTa-wwm | 0.1111 | 0.1111 | 0.2222 | — |
+
+One sentence: 1M / domain-mix / 3M are not separable at n=3; all three beat RoBERTa-wwm more often than not.
+
+**P. Add appendix matched-protocol P/R** (P2; not Gold v2).
+
+| System | P | R | F1 |
+|---|---:|---:|---:|
+| JobBERT 3M v4 + jieba | 0.4730 | 0.3994 | 0.4331 |
+| JobBERT 1M v4 + jieba | 0.4685 | 0.3925 | 0.4272 |
+| JobBERT 1M CWS retrain + jieba | 0.4537 | 0.3655 | 0.4049 |
+| ChatGPT (`gpt-4o`, frozen + jieba) | 0.2371 | 0.3584 | 0.2854 |
+
+Forbidden: mixing these with Gold v2 ChatGPT 0.6365.
+
+CSV copies: `tables/model_ids.csv`, `tables/table3_gold_v2_unique_view.csv`, `tables/per_domain_gold_v2.csv`, `tables/encoder_gold_v2.csv`, `tables/encoder_3seed_gold_v2.csv`, `tables/sop_v4_cws_diagnostic.csv`, `tables/hybrid_cws_simhuman980_all_models.csv`, `tables/hybrid_cws_llm_old_dumps.csv`, `tables/sop_extract_p2_2601.csv`, `tables/appendix_workload_vs_skillspan.csv`, `tables/appendix_pr_gold_v2.csv`, `tables/appendix_domain_mean_gold_v2.csv`, `tables/appendix_span_length_f1_gold_v2.csv`, `tables/appendix_span_length_mean_gold_v2.csv`, `tables/appendix_aso_encoder_3seed_gold_v2.csv`, `tables/appendix_pr_p2_matched.csv`.
+
+Mark Claude / Kimi as incomplete (empty-fill). Do not treat 0.1483 / 0.0964 as complete LLM rows. Do not use the later haiku+sonnet / Kimi_filled numbers in Table I.
 
 ### Abstract / intro / conclusion
 Patch only if they claim Concept Accuracy, Time-OOD, encoder SOTA on Gold v2, or ESCO ID linking. If you mention the new protocol, say it is a **matched SOP+jieba test gold**, not a replacement of human Gold v2.
+
+**Required:** intro (or contributions) **and** conclusion must tell the reader that the experimental scope already exceeds SkillSpan 2022 (larger training set, 4-type LSKT, two golds, 1M/3M DAPT, 3-seed encoders, LLM suite). Use table **K** wording. Do not claim a 5-seed JobBERT 1M mean yet.
 
 ### After edits
 List files touched, conflict table, full diff. Confirm Table 3 paper S-F1 and Gold v2 ChatGPT 0.6365 were not changed. No commit.

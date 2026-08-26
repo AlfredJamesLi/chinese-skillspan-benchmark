@@ -11,9 +11,16 @@ Round to **4 decimals** in tex. Do not invent cells.
 | `relaxed_f1_gold_v2.csv` | Typed relaxed F1, IoU≥0.5 |
 | `per_domain_gold_v2.csv` | Industry-OOD **proxy** (source_domain) |
 | `encoder_gold_v2.csv` | JobBERT-zh CRF ranking, seed 42 |
+| `encoder_3seed_gold_v2.csv` | 3-seed Gold v2 typed exact (RoBERTa mean 0.1199) |
 | `sop_v4_cws_diagnostic.csv` | SOP v4 / jieba **appendix** (not Table 3; caption must name train / decode / test gold) |
 | `hybrid_cws_simhuman980_all_models.csv` | Matched SOP-CWS + SimHuman980, jieba bilateral, all systems (not Gold v2; not PDF Table 3) |
 | `hybrid_cws_llm_old_dumps.csv` | Same gold; frozen LLM dumps only (Claude miss 98, Kimi miss 293) |
 | `sop_extract_p2_2601.csv` | SOP extract v4 re-calls on P2 2601 (**appendix**; not Table 3 / not P2 main frozen dumps) |
+| `appendix_workload_vs_skillspan.csv` | Counts vs SkillSpan 2022 (main-text / appendix inventory) |
+| `appendix_pr_gold_v2.csv` | Gold v2 typed P/R (SkillSpan Table 6 analogue) |
+| `appendix_domain_mean_gold_v2.csv` | Domain × 3-seed mean±std |
+| `appendix_span_length_f1_gold_v2.csv` | F1 by gold/pred span token length |
+| `appendix_aso_encoder_3seed_gold_v2.csv` | Encoder seed win-rate (n=3; not full ASO) |
+| `appendix_pr_p2_matched.csv` | Matched-protocol P/R (not Gold v2) |
 
 Authoritative rounding and captions: `.cursor/skills/cnss-overleaf/confirmed-results.md`.

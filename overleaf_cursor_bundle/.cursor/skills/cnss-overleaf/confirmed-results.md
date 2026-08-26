@@ -115,9 +115,9 @@ Encoder is a **weak baseline** (~0.12), not competitive with ChatGPT (0.6365 typ
 | JobBERT 1M | 0.1224 | 0.1292 | 0.1348 | **0.1288** | 0.0062 |
 | domain-mix 1M | 0.1234 | 0.1280 | 0.1294 | 0.1269 | 0.0031 |
 | JobBERT 3M ckpt65000 | 0.1233 | 0.1295 | 0.1246 | 0.1258 | 0.0033 |
-| RoBERTa-wwm v3 | 0.1156 | — | — | — | — |
+| RoBERTa-wwm v3 | 0.1156 | 0.1187 | 0.1254 | 0.1199 | 0.0050 |
 
-3-seed mean: domain-mix 0.1269 **below** JobBERT 1M 0.1288. Do not scale domain-mix to 3M.
+3-seed mean: domain-mix 0.1269 **below** JobBERT 1M 0.1288. RoBERTa-wwm v3 **0.1199**. Do not scale domain-mix to 3M. Do **not** write a JobBERT 1M 5-seed mean until seeds 7 and 13 finish.
 
 ## Diagnostic — LSKT v4 SOP / jieba CWS (appendix; not Table 3)
 
@@ -194,11 +194,70 @@ Same SOP extract v4 prompt + jieba + `cnss-lskt-1.2.0`. **Not** the P2 main froz
 
 None of the SOP re-calls beat frozen ChatGPT P2 exact 0.2854 / relaxed 0.6249, or JobBERT 3M v4 exact 0.4331. Qwen SOP 0.1724 > frozen Qwen dump 0.0501 (prompt lift only). Qwen SOP raw-on-Gold-v2 0.2134 is **not** paper Qwen 0.2130. Llama SOP raw-on-Gold-v2 diagnostic 0.0641 / 0.0952. Official `gpt-4o` SOP extract still missing.
 
+## Workload vs SkillSpan 2022 (write in intro + conclusion)
+
+CSV: `tables/appendix_workload_vs_skillspan.csv`. Counts only. Do not write SkillSpan English F1 next to Gold v2 0.1288.
+
+Required sentence: Chinese-SkillSpan is larger and broader than SkillSpan (Zhang et al., 2022): 17,460 training sentences vs 14.5K annotated sentences total, four-type LSKT vs two nested labels, two evaluation protocols, Chinese DAPT at 1M and 3M, 3-seed encoder ablations, and an LLM suite SkillSpan did not evaluate. Do not clone SpanBERT-from-scratch.
+
+## Appendix P/R Gold v2 (SkillSpan Table 6 analogue)
+
+CSV: `tables/appendix_pr_gold_v2.csv`. Encoder = 3-seed mean ± sample std. Kimi empty-fill 0.1522 ≠ unique-first 0.1651.
+
+| System | P | R | F1 |
+|---|---:|---:|---:|
+| ChatGPT (`gpt-4o`) | 0.6264 | 0.6469 | **0.6365** |
+| Claude filled (haiku+98 sonnet-4-6) | 0.2300 | 0.2947 | 0.2583 |
+| JobBERT 1M (3-seed) | 0.1864±0.0137 | 0.0984±0.0037 | 0.1288±0.0062 |
+| domain-mix 1M (3-seed) | 0.1841±0.0029 | 0.0969±0.0033 | 0.1269±0.0031 |
+| JobBERT 3M (3-seed) | 0.1785±0.0055 | 0.0972±0.0030 | 0.1258±0.0033 |
+| RoBERTa-wwm v3 (3-seed) | 0.1695±0.0126 | 0.0928±0.0024 | 0.1199±0.0050 |
+| DeepSeek (`deepseek-r1`) | 0.1384 | 0.1274 | 0.1327 |
+| Kimi empty-fill (293 missing) | 0.1677 | 0.1393 | 0.1522 |
+| Qwen (`Qwen2.5-14B-Instruct`) | 0.2178 | 0.0483 | 0.0791 |
+
+## Appendix domain × 3-seed (do not replace seed-42 per-domain table)
+
+| System | 人工智能 | 阿里云 | 事业单位 |
+|---|---:|---:|---:|
+| ChatGPT (`gpt-4o`) | 0.6489 | 0.5650 | **0.7032** |
+| JobBERT 1M (3-seed) | 0.1365±0.0081 | 0.1354±0.0039 | 0.0213±0.0034 |
+| domain-mix 1M (3-seed) | 0.1334±0.0052 | 0.1352±0.0021 | 0.0234±0.0071 |
+| JobBERT 3M (3-seed) | 0.1344±0.0021 | 0.1315±0.0078 | 0.0147±0.0007 |
+| RoBERTa-wwm v3 (3-seed) | 0.1301±0.0072 | 0.1186±0.0025 | 0.0126±0.0014 |
+
+## Appendix span-length F1 (token length; gold mean 4.90)
+
+| System | 1 | 2 | 4 | 10+ | mean pred |
+|---|---:|---:|---:|---:|---:|
+| ChatGPT (`gpt-4o`) | 0.0357 | 0.7265 | 0.7292 | 0.5054 | 4.19 |
+| JobBERT 1M seed 42 | 0.0000 | 0.1229 | 0.1923 | 0.0357 | 5.94 |
+| RoBERTa-wwm v3 seed 42 | 0.0000 | 0.1105 | 0.1882 | 0.0372 | 5.98 |
+
+Full buckets: `tables/appendix_span_length_f1_gold_v2.csv`.
+
+## Appendix encoder seed win-rate (n=3; not full ASO)
+
+| row \ col | 1M | domain-mix | 3M | RoBERTa |
+|---|---:|---:|---:|---:|
+| JobBERT 1M | — | 0.5556 | 0.5556 | 0.8889 |
+| domain-mix | 0.4444 | — | 0.5556 | 0.8889 |
+| JobBERT 3M | 0.4444 | 0.4444 | — | 0.7778 |
+| RoBERTa-wwm | 0.1111 | 0.1111 | 0.2222 | — |
+
+## Appendix P2 P/R (not Gold v2)
+
+| System | P | R | F1 |
+|---|---:|---:|---:|
+| JobBERT 3M v4 + jieba | 0.4730 | 0.3994 | **0.4331** |
+| JobBERT 1M v4 + jieba | 0.4685 | 0.3925 | 0.4272 |
+| ChatGPT (`gpt-4o`, frozen + jieba) | 0.2371 | 0.3584 | 0.2854 |
+
 ## Running / not yet a paper number
 
 | Item | Status |
 |---|---|
-| RoBERTa-wwm v3 3-seed mean | seeds exist on disk; mean not copied into the Gold v2 encoder table |
+| JobBERT 1M goldstyle 5-seed mean | seeds 7 and 13 launched 2026-08-26; do not invent F1 |
 | claude-sonnet-4-6 SOP extract | paused 460/2601 (user stop; 4.5 already scored) |
 | Qwen SOP-extract LoRA | died ~step 980/4365; only checkpoint-500; **no test F1** |
 | Concept Accuracy | **Blocked** — no ESCO concept IDs; delete the claim |

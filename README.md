@@ -65,7 +65,7 @@ Encoder 在**事业单位**上接近失败（~0.015–0.029；domain-mix seed 42
 | RoBERTa-wwm smoke v3 | 0.1156 | 0.3210 | −0.0068 |
 
 完整 JSON/CSV → [`paper_results/repo/encoder_gold_v2.csv`](paper_results/repo/encoder_gold_v2.csv)  
-3-seed 均值 → [`tables/encoder_3seed_gold_v2.csv`](tables/encoder_3seed_gold_v2.csv)（1M **0.1288** / domain-mix 0.1269 / 3M ckpt65000 0.1258）
+3-seed 均值 → [`tables/encoder_3seed_gold_v2.csv`](tables/encoder_3seed_gold_v2.csv)（1M **0.1288** / domain-mix 0.1269 / 3M ckpt65000 0.1258 / RoBERTa-wwm **0.1199**）
 
 ## SOP v4 / jieba 诊断表（附录，不是 Table 3）
 

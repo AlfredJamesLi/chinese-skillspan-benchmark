@@ -9,7 +9,8 @@
 - Time-OOD (no `year` field)
 - listed-company mix **3M** DAPT (1M already lost: 0.1201 &lt; 0.1224)
 - Claiming domain-mix 1M beats JobBERT 1M on the 3-seed mean (0.1269 &lt; 0.1288)
-- RoBERTa-wwm v3 3-seed **mean** (seed 123 running; seed 2026 not started)
+- RoBERTa-wwm v3 3-seed **mean is 0.1199** (0.1156 / 0.1187 / 0.1254); do not leave `---`
+- JobBERT 1M goldstyle **5-seed mean** before seeds 7 and 13 finish
 - Claiming domain-mix fixes 事业单位 (0.0287 vs ChatGPT 0.7032)
 - Claude/Kimi Gold v2 rows as complete (missing 98 / 293 IDs)
 - English JobBERT ~0.46 or `*.eval_ner.json`
