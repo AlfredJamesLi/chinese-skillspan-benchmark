@@ -5,10 +5,13 @@ Scorer: `cnss-lskt-1.2.0`. Do not invent cells. Round to **4 decimals** in tex.
 
 **Two protocols — do not mix them in one table without a caption:**
 
-| Protocol | Gold | n | Use in Overleaf |
-|---|---|---:|---|
-| **PDF Table 3** (keep) | `admin_Baseline_test.jsonl` | 2676 | Existing main table paper S-F1; do **not** overwrite these cells |
-| **Gold v2 unique-first** (add) | `gold_canonical_v2.jsonl` | 2601 unique IDs | New tables: typed exact / collapsed / relaxed / per-domain / encoder |
+| Protocol | Gold | n | Handbook | Use in Overleaf |
+|---|---|---:|---|---|
+| **PDF Table 3** (keep) | `admin_Baseline_test.jsonl` | 2676 | (old paper) | Existing main table paper S-F1; do **not** overwrite these cells |
+| **P1 Gold v2 unique-first** (add) | `gold_canonical_v2.jsonl` | 2601 unique IDs | **A** (`handbooks/handbook_A_gold_v2.en.md`) | typed exact / collapsed / relaxed / per-domain / encoder. ChatGPT **0.6365** |
+| **P2 matched SOP+jieba** (add, separate table) | hybrid SimHuman980 + SOP-CWS | 2601 | **B** (`handbooks/handbook_B_sop_v4.en.md`) | JobBERT 3M v4 exact **0.4331**. **Not** rankable vs 0.6365 |
+
+Do **not** merge Handbook A and B. Do **not** overwrite Gold v2. The 980 overlay is SimHuman rule_v4, not full human SOP gold. Methods consult: `CODEX_PROMPT_HANDBOOK.md`.
 
 CSV copies live in `tables/` of this bundle (and server `Chinese_skill_benchmark_Paper/tables/`).
 

@@ -1,8 +1,10 @@
 # Codex / Overleaf prompt index
 
-**Do not paste this file.** Paste **one** merged prompt:
+**Do not paste this file.** Order:
 
-[`CODEX_PROMPT_ALL.md`](CODEX_PROMPT_ALL.md)
+1. Consult Methods (handbooks): [`CODEX_PROMPT_HANDBOOK.md`](CODEX_PROMPT_HANDBOOK.md) — no tex edits.
+2. Optional consult tables: [`CODEX_PROMPT_PROTOCOL_CONSULT.md`](CODEX_PROMPT_PROTOCOL_CONSULT.md) — no tex edits.
+3. Edit pass: [`CODEX_PROMPT_ALL.md`](CODEX_PROMPT_ALL.md)
 
 Four older files were a staged split (Gold v2 tables → SOP wording → diagnostic F1 → hybrid 2601). They are history only:
 

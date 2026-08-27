@@ -21,3 +21,5 @@
 - Replacing Table 3 dump ids with gpt-5.4 / sonnet-4-5 / kimi-k2.6
 - Incomplete SOP runs (Llama 98/2601, sonnet-4-6 128/2601, deepseek-v4-pro 700/2601) as paper F1
 - Claiming JobBERT-zh 0.4272/0.4331 on matched-protocol gold beats ChatGPT 0.6365 on Gold v2
+- Merging Handbook A (Gold-length P1) and Handbook B (short SOP P2) into one guideline, overwriting Gold v2, or calling the 980 SimHuman overlay a full human SOP gold
+- Claiming Handbook A reprints the original `prompt_template_rag.py` silver API (certificates were L there; Gold-style puts CET-6 in K)

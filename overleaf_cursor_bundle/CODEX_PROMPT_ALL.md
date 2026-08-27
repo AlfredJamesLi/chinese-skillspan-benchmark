@@ -4,9 +4,11 @@
 **Git:** `https://git.overleaf.com/68fe17a53e53a7f800e4f2b4`  
 **GitHub numbers:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark  
 
-Do **not** paste the four older files (`CODEX_PROMPT.md`, `CODEX_PROMPT_SOP_V4.md`, `CODEX_PROMPT_DIAGNOSTIC_SOP.md`, `CODEX_PROMPT_MATCHED_PROTOCOL.md`). Those were split only to keep early chats short. This file is the single paste.
+Do **not** paste the four older files (`CODEX_PROMPT.md`, `CODEX_PROMPT_SOP_V4.md`, `CODEX_PROMPT_DIAGNOSTIC_SOP.md`, `CODEX_PROMPT_MATCHED_PROTOCOL.md`). Those were split only to keep early chats short. This file is the **edit** paste.
 
-First copy `overleaf_cursor_bundle/` into the Overleaf repo **root** (`HANDOVER_OVERLEAF.md`, `AGENTS.md`, `.cursor/`, `tables/`, this prompt).
+**If Methods still treats Gold as one guideline:** paste `CODEX_PROMPT_HANDBOOK.md` first (consult only), then this file.
+
+First copy `overleaf_cursor_bundle/` into the Overleaf repo **root** (`HANDOVER_OVERLEAF.md`, `AGENTS.md`, `.cursor/`, `tables/`, `handbooks/`, this prompt).
 
 ---
 
@@ -20,7 +22,7 @@ Overleaf: https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4
 
 ### Start
 1. `git status`; `git pull --ff-only`; confirm this is the Chinese-SkillSpan Overleaf clone.
-2. Read `HANDOVER_OVERLEAF.md`, `.cursor/skills/cnss-overleaf/confirmed-results.md`, `.cursor/skills/cnss-overleaf/not-for-paper.md` in full.
+2. Read `HANDOVER_OVERLEAF.md`, `handbooks/README.md`, `handbooks/handbook_A_gold_v2.en.md`, `handbooks/handbook_B_sop_v4.en.md`, `.cursor/skills/cnss-overleaf/confirmed-results.md`, `.cursor/skills/cnss-overleaf/not-for-paper.md` in full.
 3. Locate `main.tex` (or equivalent) and current Tables 1/2/3.
 4. Produce a **conflict table** first: file / current tex / confirmed value / action (`keep` / `add` / `patch wording` / `delete claim`).
 5. Then patch methods + tables in **one pass**. Show the full `git diff`. **Do not commit or push.**
@@ -45,9 +47,16 @@ Overleaf: https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4
 
 ### Pipeline to write in Methods (this is the missing story — write it)
 
-Add a short subsection (English, same register as the paper) that distinguishes **official Gold v2** from the **matched SOP+jieba protocol**. Do not replace Gold v2 as the official human gold.
+Add a short subsection (English, same register as the paper) that distinguishes **official Gold v2 (Handbook A)** from the **matched SOP+jieba protocol (Handbook B)**. Source of truth: `handbooks/handbook_A_gold_v2.en.md` and `handbooks/handbook_B_sop_v4.en.md`. Do **not** merge them into one guideline. Do **not** claim Handbook A is the original silver API (`prompt_template_rag.py` → `chinese_skillspan`); that API used *minimal sufficient span* and put language certificates in **L**. Gold-style / Handbook A put CET-6 in **K**. Do not replace Gold v2 as the official human gold. The 980 SimHuman overlay is rule_v4, not a full human pass under Handbook B.
 
-**A. Operational SOP (LSKT v4), used for silver rewrite and for the new test gold**
+**A0. Official Gold v2 (Handbook A)**
+- Gold was LLM silver (`prompt_template_rag.py` → `chinese_skillspan`) then light Doccano check. Do not rewrite that history.
+- Spans are Gold-length complete NPs (typical 4–12 tokens; median 4, mean ≈4.9). No mid-word cuts. Do not tag a whole duty clause as one S.
+- L = language **word**; K = degree / major / **certificate** / domain (CET-6 → **K**); S = tool / method / actionable skill; T = trait. Footnote: the original silver API put language certificates in **L**.
+- 报名 / 体检 / 公示 / 福利 → empty. Encoder train silver `train_goldstyle_v3.jsonl` follows Handbook A; it does **not** change Gold v2.
+- Headline on this gold: ChatGPT typed **0.6365**; JobBERT 1M 3-seed **0.1288** (weak baseline).
+
+**A. Operational SOP (LSKT v4 / Handbook B), used for silver rewrite and for the new test gold**
 - Labels stay L / K / S / T (flat, non-overlapping). Optional eval projection L+K→KNOWLEDGE, S+T→SKILL.
 - Span = contiguous original substring; complete mention (no 半词 such as 支持服); prefer 2–8 tokens; do not tag a whole 岗位职责 clause as one S.
 - 熟悉 / 掌握 / 精通 / 了解 mark **the object only**.

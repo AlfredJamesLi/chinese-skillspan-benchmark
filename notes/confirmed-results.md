@@ -7,6 +7,19 @@ Extracted from uploaded PDF:
 Venue: **PeerJ Computer Science** (submission target). The extracted PDF filename still contains DASFAA 2026; treat that as a draft filename only. Task: Chinese JobSkillNER, ESCO-1.20, flat **LSKT** (L/K/S/T).  
 Metrics in paper: Exact-span F1 (S-F1), Relaxed F1 (IoU≥0.5), Concept Accuracy.
 
+## Dual handbook (Methods source; not a new F1 table)
+
+Do not merge. Do not overwrite `data/gold_canonical_v2.jsonl`.
+
+| | Handbook A (P1) | Handbook B (P2) |
+|---|---|---|
+| Pages | `notes/handbooks/handbook_A_gold_v2.md` (+ `.en.md`) | `notes/handbooks/handbook_B_sop_v4.md` (+ `.en.md`) |
+| Test gold | `gold_canonical_v2.jsonl` (2601) | hybrid 2601 = 980 SimHuman rule_v4 + 1621 SOP-CWS |
+| Span | Gold-length NP (~4–12; median 4) | short 2–8, 禁半词, jieba both sides |
+| Headline | ChatGPT typed **0.6365**; encoder 3-seed **0.1288** | JobBERT 3M v4 exact **0.4331**; ChatGPT dump+jieba exact **0.2854** |
+
+Handbook A is the Gold / goldstyle operationalization, **not** a reprint of `prompt_template_rag.py`. The 980 overlay is **not** full human SOP gold. Codex consult: `overleaf_cursor_bundle/CODEX_PROMPT_HANDBOOK.md`.
+
 ## Table 1 — corpus (paper)
 
 | Split | #Sent | Avg Len | Avg 4D | Avg L | Avg K | Avg S | Avg T |

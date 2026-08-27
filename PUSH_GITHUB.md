@@ -1,6 +1,6 @@
 # GitHub 私有仓库备份
 
-**状态：本 commit 备份 JobBERT 1M goldstyle 5-seed Gold v2 均值 0.1257±0.0062（seeds 42/123/2026/7/13）；四模型对比仍用 3-seed 0.1288**
+**状态：本 commit 备份手册 A/B 各一页 + Codex Methods 咨询稿 `CODEX_PROMPT_HANDBOOK.md`（不改 Overleaf tex）**
 
 - 仓库：https://github.com/AlfredJamesLi/chinese-skillspan-benchmark （private）
 - 分支：`main`（与本地同步）

@@ -6,6 +6,8 @@ This workspace is the **local Overleaf Git clone** for the Chinese-SkillSpan ben
 
 - Compact tables: `.cursor/skills/cnss-overleaf/confirmed-results.md`
 - Do not write: `.cursor/skills/cnss-overleaf/not-for-paper.md`
+- Dual handbooks (do not merge): `handbooks/`
+- Consult Methods first: `CODEX_PROMPT_HANDBOOK.md` (no tex edits in that chat)
 
 Do not train, rescore, invent F1, or commit/push until the user confirms the diff.
 If compact tables disagree with `HANDOVER_OVERLEAF.md`, stop and report; use the handover.

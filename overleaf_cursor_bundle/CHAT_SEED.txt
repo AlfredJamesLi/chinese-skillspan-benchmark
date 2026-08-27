@@ -1,6 +1,6 @@
 先读 @HANDOVER_OVERLEAF.md 和 @.cursor/skills/cnss-overleaf/confirmed-results.md，读完再改任何 tex。
 
-当前是本机 Overleaf 编辑窗口（项目 https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4），论文是 Chinese-SkillSpan / Chinese Skill Benchmark，投稿 **PeerJ Computer Science**，不是 DASFAA，也不是 IEEE Access / SRICL。已确认数字在 confirmed-results.md；禁写清单在 not-for-paper.md。完整改表指令见 @CODEX_PROMPT_ALL.md。
+当前是本机 Overleaf 编辑窗口（项目 https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4），论文是 Chinese-SkillSpan / Chinese Skill Benchmark，投稿 **PeerJ Computer Science**，不是 DASFAA，也不是 IEEE Access / SRICL。已确认数字在 confirmed-results.md；禁写清单在 not-for-paper.md。手册 A/B 在 @handbooks/。先咨询 Methods 见 @CODEX_PROMPT_HANDBOOK.md（不改 tex）；完整改表指令见 @CODEX_PROMPT_ALL.md。禁止把 JobBERT 0.4331 与 ChatGPT 0.6365 写进同一句 SOTA。
 
 然后执行 git status、git pull --ff-only origin master（或 Overleaf 默认分支），确认分支与路径为本 Overleaf 仓库、工作区无来源不明修改。
 

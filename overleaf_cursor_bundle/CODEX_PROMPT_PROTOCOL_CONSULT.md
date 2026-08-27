@@ -3,7 +3,7 @@
 **Overleaf:** https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4  
 Paste **this file only**. Do **not** patch `main.tex` in this chat. Return a layout recommendation + a mock caption/table skeleton. Wait for a second prompt before editing.
 
-Copy `overleaf_cursor_bundle/` into the Overleaf repo root if not already there. Numbers: `.cursor/skills/cnss-overleaf/confirmed-results.md`. Ban list: `not-for-paper.md`.
+Copy `overleaf_cursor_bundle/` into the Overleaf repo root if not already there. Numbers: `.cursor/skills/cnss-overleaf/confirmed-results.md`. Ban list: `not-for-paper.md`. Handbooks: `handbooks/` (A = Gold v2, B = SOP v4; do not merge). If Methods still lacks the dual-handbook split, paste `CODEX_PROMPT_HANDBOOK.md` **before** this file.
 
 ---
 

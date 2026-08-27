@@ -15,7 +15,9 @@ GitHub 私有备份：https://github.com/AlfredJamesLi/chinese-skillspan-benchma
 
 压缩表：`.cursor/skills/cnss-overleaf/confirmed-results.md`  
 禁写：`.cursor/skills/cnss-overleaf/not-for-paper.md`  
-Codex 先咨询表结构：`CODEX_PROMPT_PROTOCOL_CONSULT.md`  
+手册 A/B（各一页，不要合成）：`handbooks/`  
+Codex 先咨询 Methods 手册插入：`CODEX_PROMPT_HANDBOOK.md`  
+Codex 咨询表结构：`CODEX_PROMPT_PROTOCOL_CONSULT.md`  
 Codex 改稿（合并一份）：`CODEX_PROMPT_ALL.md`  
 表 CSV：`tables/`
 
@@ -57,6 +59,7 @@ git branch --show-current
 - PDF Table 3 **保留**（Gold 2676 paper S-F1）。
 - **新增** Gold v2 unique-first 表、Relaxed F1、分域表、encoder 榜。
 - 不要用 Gold v2 的 0.6365 去覆盖 PDF 的 ChatGPT 0.6700。
+- Methods 用手册 A（P1 Gold-length）与手册 B（P2 短跨度 SOP）分节写；不要合成一本，不要覆盖 Gold v2。
 - 删除 Concept Accuracy / Time-OOD；分域表只作为 Industry-OOD **代理**。
 
 ---
@@ -64,5 +67,5 @@ git branch --show-current
 ## 3. 下一阶段
 
 **P0：** 对照 Overleaf tex 与 confirmed-results 做冲突表，再补表。  
-**P1：** 版式、图题、参考文献（数字不动）。  
+**P1：** 版式、图题、参考文献（数字不动）。 Methods 插入手册 A/B 前，先在本机 Overleaf 贴 `CODEX_PROMPT_HANDBOOK.md`（只咨询，不改 tex）。  
 **P2：** 缺 Claude/Kimi 完整 dump 的 P2 主表行 → 交回服务器窗口。 JobBERT 1M goldstyle 5-seed Gold v2 均值 **0.1257±0.0062** 已写入（四模型对比仍用 3-seed **0.1288**）。 RoBERTa-wwm v3 Gold v2 3-seed 均值 **0.1199** 已写入。
