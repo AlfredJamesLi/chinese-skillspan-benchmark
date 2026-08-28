@@ -1,0 +1,59 @@
+[
+  {
+    "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/gold_canonical_v2.jsonl",
+    "n_rows": 2601,
+    "n_unique_ids": 2601,
+    "n_duplicate_ids": 0,
+    "n_empty_sentence": 914,
+    "label_counts": {
+      "S": 3384,
+      "T": 1001,
+      "L": 31,
+      "K": 2211
+    },
+    "n_bad_offsets": 0,
+    "n_illegal_labels": 0,
+    "n_duplicate_spans": 0,
+    "overlap": {},
+    "overlap_pairs": {},
+    "sha256": "7a26e32b89d4e501175cb96443e35e171cea08d91501d2a32779b96ee8504ff6"
+  },
+  {
+    "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_cws_simhuman980_hybrid.jsonl",
+    "n_rows": 2601,
+    "n_unique_ids": 2601,
+    "n_duplicate_ids": 0,
+    "n_empty_sentence": 896,
+    "label_counts": {
+      "S": 2092,
+      "K": 1371,
+      "T": 698,
+      "L": 33
+    },
+    "n_bad_offsets": 0,
+    "n_illegal_labels": 0,
+    "n_duplicate_spans": 0,
+    "overlap": {},
+    "overlap_pairs": {},
+    "sha256": "2ad6342d8b762cf1abb289295315e2521bec0c540f4320113409fceab0818d99"
+  },
+  {
+    "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/human980_doccano/doccano/human980.jsonl",
+    "n_rows": 980,
+    "n_unique_ids": 980,
+    "n_duplicate_ids": 0,
+    "n_empty_sentence": 30,
+    "label_counts": {
+      "S": 1462,
+      "K": 853,
+      "T": 406,
+      "L": 18
+    },
+    "n_bad_offsets": 0,
+    "n_illegal_labels": 0,
+    "n_duplicate_spans": 0,
+    "overlap": {},
+    "overlap_pairs": {},
+    "sha256": "3bebcb78c453d77bfeb56bf626e9e686343e1e9c62130b1292c07e451eedd636"
+  }
+]

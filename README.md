@@ -146,6 +146,10 @@ SOP v4 训练在官方 Gold v2 上低于 goldstyle v3（0.1079 vs 0.1224）。0.
 | `results_snapshots/` | 各次 run_summary 快照 |
 | `reports/` | 完整审计、打分 dump、IAA 工作表 |
 | `notes/confirmed-results.md` | 论文已确认数字（勿编造） |
+| `notes/handbooks/` | 手册 A（Gold v2 沿革）/ B（SOP v4.1 主协议）/ C（人标） |
+| `prompts/LSKT_V4_ANNOTATION_PROMPT.txt` | 与手册 B v4.1 同步的 LLM/人工提示词 |
+| `reports/human980_doccano/` | 980 分歧句 Doccano 草稿包（非终版 Gold） |
+| `reports/annotation_v4/` | 重叠裁决日志（空表）与 IAA 占位 |
 | `pdf/` | 最新稿 PDF |
 | `HANDOFF.md` | 服务器窗口交接 |
 | `REPRO_GITHUB.md` | 复现说明 |

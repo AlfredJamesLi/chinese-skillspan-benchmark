@@ -1,0 +1,22 @@
+{
+  "n": 980,
+  "n_empty_prelabel": 30,
+  "align": {
+    "ellipsis_truncation": 1,
+    "exact": 954,
+    "gold_substring_of_sim": 1,
+    "id_text_mismatch": 24
+  },
+  "n_id_text_mismatch": 24,
+  "span_types": {
+    "S": 1462,
+    "K": 853,
+    "T": 406,
+    "L": 18
+  },
+  "gold_sha256": "7a26e32b89d4e501175cb96443e35e171cea08d91501d2a32779b96ee8504ff6",
+  "queue_csv": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/codex_pack/conflict_v1/human_must_review.csv",
+  "text_source": "gold_canonical_v2.jsonl sentence (full, not truncated)",
+  "protocol": "one-pass prelabel correction; not dual-blind",
+  "split_deferred": true
+}
