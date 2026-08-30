@@ -1,7 +1,8 @@
-# Handbook A — Official human Gold v2 (P1), one page
+# Handbook A — Gold v2 provenance (P1), one page
 
-**Use:** span convention for Doccano Gold v2. File: `gold_canonical_v2.jsonl` (2601 IDs; scorer `cnss-lskt-1.2.0`).  
-**Do not use** for the matched SOP+jieba protocol (Handbook B).
+**Use:** span convention of the Doccano Gold v2 **source** file: `gold_canonical_v2.jsonl` (2601 IDs; frozen, do not overwrite).  
+V4 operational sources: `handbook_B_citations.md`. Handbook A’s longer NPs are closer to [Z22] long skill spans. **Do not** rewrite this file with B’s short-span rule.  
+**Paper (2026-08-27):** construction history + appendix F1. **Main evaluation is Handbook B / V4** (derived spans on the same 2601 IDs).
 
 **How Gold was made:** LLM silver from `prompt_template_rag.py` (`chinese_skillspan`; in-sentence `@@span##[L|K|S|T]`; *minimal sufficient span*) → light human check in Doccano. Do not rewrite this history or overwrite the Gold file.
 
@@ -14,7 +15,7 @@
 | S | actionable skill, method, tool, experience | Python, 网络管理 |
 | T | soft skill / trait | 沟通能力, 责任心 |
 
-*Footnote:* the original silver API put language **certificates** in **L**. Gold-style and current Gold practice put them in **K**. Do not relabel Gold v2.
+*Footnote:* the original silver API put language **certificates** in **L**. Gold-style and Gold v2 practice put them in **K**. Handbook B v4.2 restores language examinations to **L** (ESCO *Language skills and knowledge*). **Do not relabel Gold v2.**
 
 ## Spans (Gold-length NPs)
 

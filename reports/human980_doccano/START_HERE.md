@@ -8,17 +8,18 @@
 
 ## 本轮怎么标
 
-1. 读同目录 `GUIDELINES.md`（手册 B：短跨度、禁半词、平面 L/K/S/T）。  
+1. 读同目录 `GUIDELINES.md`（手册 B：短跨度、禁半词、平面 L/K/S/T）。每条规则后的方括号是文献出处；完整对照见 `doccano/handbook_B_citations.md`。  
 2. Doccano 建 **一个** Sequence Labeling 项目（一过预标复核，**不是**双盲）。关闭重叠/嵌套。  
 3. 先导入 `doccano/labels.json`，再导入 `doccano/batches/batch_01.jsonl`（50 句）。  
-4. 预标是 SimHuman rule_v4 **草稿**，用来改错，不是答案。Codex / 豆包 / Kimi 只在 Comment / `meta` 里对照，**不要多数决**。大学英语六级仍标 **K**。潜在重叠写入 `reports/annotation_v4/adjudication_log.csv`，不要在主层给同一区间两个标签。  
+4. 预标是 SimHuman rule_v4 **草稿**，用来改错，不是答案。Codex / 豆包 / Kimi 只在 Comment / `meta` 里对照，**不要多数决**。大学英语六级 / CET-6 / 日语N2 标 **L**（不是 K）；若预标写成 K，改成 L。ISO / OCJP 仍为 K。潜在重叠写入 `reports/annotation_v4/adjudication_log.csv`，不要在主层给同一区间两个标签。  
 5. 没有 Doccano：填 `worksheets/human980.csv` 的 `human_spans`（格式 `原文/类型|原文/类型`；空句留空）。
 
 ## 文件
 
 | 文件 | 用途 |
 |---|---|
-| `GUIDELINES.md` | 标注规则 |
+| `GUIDELINES.md` | 标注规则（含文献键与条目） |
+| `doccano/handbook_B_citations.md` | 操作化定义 ↔ 文献对照 |
 | `doccano/IMPORT.md` | Doccano 导入步骤 |
 | `doccano/labels.json` | L / K / S / T |
 | `doccano/batches/batch_01.jsonl` … `batch_20.jsonl` | 每批 50 句（末批 30） |

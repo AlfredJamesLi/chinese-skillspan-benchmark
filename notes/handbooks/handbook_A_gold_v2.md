@@ -1,7 +1,8 @@
-# 手册 A — 官方人工 Gold v2（P1）· 一页
+# 手册 A — Gold v2 沿革（P1）· 一页
 
-**用途：** 解释 Doccano 人标 / Gold v2 怎么切跨度。绑定文件：`data/gold_canonical_v2.jsonl`（2601 ID，`cnss-lskt-1.2.0`）。  
-**不用于：** P2 匹配协议、SOP 银标训练、jieba 双边评测。
+**用途：** 解释 Doccano 人标 / Gold v2 **源跨度**怎么切。绑定：`data/gold_canonical_v2.jsonl`（2601 ID，冻结不改）。  
+**论文位置（2026-08-27）：** Methods 沿革 + 附录 F1。**主评测改用手册 B / V4**（同一批 2601 ID 上的派生跨度）。  
+V4 操作化出处见 `handbook_B_citations.md`。手册 A 的较长 NP 更接近 [Z22] 的长 skill span；**不要**用 A 的边界去改 B，也**不要**用 B 的短跨度回改本文件。
 
 **流水线（已发生，不要改写历史）：** 招聘句 → LLM 银标（`prompt_template_rag.py` → `chinese_skillspan`，`@@片段##[L\|K\|S\|T]`，最小充分片段）→ Doccano 人工一致性检查 → Gold。人改动轻（银标与 Gold 约 85.7% 句相同）。
 
@@ -14,7 +15,7 @@
 | S | 可执行技能、方法、工具、经验活动 | 网络管理、Python、飞控计算机 |
 | T | 软技能、特质 | 沟通能力、责任心 |
 
-历史差异（脚注即可）：银标 API 曾把语言**证书**归 **L**（few-shot：`CET-6`→L）。Gold-style 与当前 Gold 操作义把证书归 **K**。不要用新规则去改 Gold 文件。
+历史差异（脚注即可）：银标 API 把语言**证书**归 **L**（few-shot：`CET-6`→L）。Gold-style 与 Gold v2 操作义把证书归 **K**。手册 B v4.2 已把语言考试改回 **L**（ESCO 独立语言支）。**不要用新规则去改 Gold 文件。**
 
 ## 跨度（Gold-length）
 

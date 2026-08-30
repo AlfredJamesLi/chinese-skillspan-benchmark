@@ -9,13 +9,16 @@
 | 协议 | P1 Gold-length（Doccano 源跨度） | **P2** 匹配 SOP+jieba |
 | 中文一页 | `handbook_A_gold_v2.md` | `handbook_B_sop_v4.md` |
 | 英文一页 | `handbook_A_gold_v2.en.md` | `handbook_B_sop_v4.en.md` |
+| 文献出处 | （沿革） | `handbook_B_citations.md` |
 | 文件 | `data/gold_canonical_v2.jsonl`（冻结，不改） | `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` |
 | 论文位置 | Methods 沿革 + **附录** F1 | **摘要 / 主结果表** |
 | 数字 | ChatGPT typed **0.6365**；编码器 3-seed **0.1288** | JobBERT 3M v4 exact **0.4331**；ChatGPT dump+jieba exact **0.2854** / relaxed **0.6249** |
 
 980 句是 SimHuman **rule_v4** 叠加，不是按手册 B 做完的全量人标。Table 2 IAA（n=100）测的是 Doccano 源跨度，**不是** V4 hybrid。
 
-**v4.1：** 重叠裁决 `../notes/handbooks/handbook_B_overlap_adjudication.md`（仓库路径）。证书仍为 **K**。禁止把未完成人标写成 Gold。
+**v4.2：** 语言考试/证书（CET-6 / 英语六级）归 **L**（恢复原银标；ESCO 独立语言支）。ISO / OCJP 仍为 **K**。Gold v2 沿革仍为 K，不改该文件。禁止把未完成人标写成 Gold。
+
+**2026-08-30：** 操作化定义补文献键（`handbook_B_citations.md`）。规则与数字未改。短跨度 2–8 字标 **[本协议]**，不要写成 Zhang et al. (2022) 的规定。
 
 禁止：覆盖 Gold v2；把 **0.4331** 与 **0.6365** 写进同一句 SOTA。
 
