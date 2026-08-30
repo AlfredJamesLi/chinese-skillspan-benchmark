@@ -3,7 +3,7 @@
 **Does not replace** `handbook_B_sop_v4.md`. Labels, CET-6→**L**, short spans, and empty-sentence rules stay there.  
 **Does not create** a nested-NER task. The scored Gold layer remains **flat and non-overlapping** [TKS02] [本协议]. Nested phenomena are audit-only [FM09] [Yu20] [Z22].
 
-Version: `B.sop_v4.2`. 2026-08-30: literature keys only. Sources: `handbook_B_citations.md`. Log: `LSKT_V4_RULE_CHANGELOG.md`. Empty log: `reports/annotation_v4/adjudication_log.csv`.
+Version: `B.sop_v4.2.1`. 2026-08-31: Python/SQL full-NP K examples. Sources: `handbook_B_citations.md`. Log: `LSKT_V4_RULE_CHANGELOG.md`. Empty log: `reports/annotation_v4/adjudication_log.csv`.
 
 ## What is not overlap
 
@@ -29,7 +29,7 @@ Use all six: **L/K, L/S, L/T, K/S, K/T, S/T**. Pairwise tests, not a global rank
 | L/K | 英语 vs 大学英语六级 vs ISO | language name / level / exam **L** (keep the complete exam span; do not nest 英语 inside 六级); technical or occupational certification **K** [ESCO-L] | the leftover language word, or K if someone tagged CET-6 as domain knowledge |
 | L/S | 英语教学 vs 英语 | the licensed complete mention [Z22] | the leftover word |
 | L/T | rare; language vs trait | whichever the predicate licenses | the other |
-| K/S | SQL / ISO / Python-as-course vs tool use | SQL job-use **S**; SQL principles **K**; ISO 27001 **K**; Python job-use **S** [ESCO14] [本协议] | the other type |
+| K/S | SQL / ISO / Python-as-course vs tool use | Job-use bare `Python`/`SQL` **S**; course/principles → full NP **K** (`Python语言原理`, `SQL原理`); ISO 27001 **K** [ESCO14] [本协议] | the other type |
 | K/T | 责任心 vs 专业知识 | T vs K by meaning [ESCO14] | the other |
 | S/T | 沟通 vs 沟通工具 | trait **T**; named tool **S** [ESCO14] [Z22] | the other |
 

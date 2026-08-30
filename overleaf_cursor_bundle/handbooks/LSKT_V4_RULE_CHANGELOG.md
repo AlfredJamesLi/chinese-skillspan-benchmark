@@ -1,12 +1,22 @@
 # LSKT v4 rule changelog
 
-**Handbook version:** `B.sop_v4.2` (2026-08-28; 2026-08-30 literature keys only)  
+**Handbook version:** `B.sop_v4.2.1` (2026-08-31; Python/SQL S-vs-K examples)  
 Canonical one-pagers: `notes/handbooks/handbook_B_sop_v4.md` (+ `.en.md`).  
 Overlap/adjudication: `notes/handbooks/handbook_B_overlap_adjudication.md`.  
 Literature keys: `notes/handbooks/handbook_B_citations.md`.  
 LLM prompt: `prompts/LSKT_V4_ANNOTATION_PROMPT.txt`.
 
 This log records **rule text** changes. It does **not** freeze a new human Gold and does **not** authorize rewriting paper F1 tables.
+
+## 2026-08-31 — v4.2.1 (Python/SQL S vs K examples)
+
+Clarifies the existing SQL line. **Does not** adopt nested Long_S or change paper F1.
+
+| Rule | v4.2 | v4.2.1 | Status |
+|---|---|---|---|
+| Job-use `Python` / `R` / `C` (掌握…如…) | Tools → S; no classic sentence | Bare names **S**; do not flip 如-examples to K; do not mark 掌握 | **examples added** |
+| Course / principle / basics / syntax | SQL principles → K only | Mark the **full knowledge NP** (`Python语言原理`, `Python基础知识`, `Python语法`); do **not** mark bare `Python` as K when a longer object is licensed | **examples added** |
+| Nested Long_S = S(V+K)+K2+K3 | Forbidden on main layer | Still forbidden | **kept** |
 
 ## 2026-08-30 — literature keys (no rule change)
 

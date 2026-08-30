@@ -31,7 +31,7 @@
 | **L** = 语种、水平、语言考试/证书；不并进 K 或 S | [ESCO-L] [本协议] | ESCO 技能柱有独立语言支（语种名≈knowledge concept，听说读写/CEFR≈skill）。语言考试整段归 L 是本协议（对齐原银标 API）。Gold v2 / 手册 A 曾把六级标 K，**不回改该文件**。 |
 | 评测 L+K→KNOWLEDGE、S+T→SKILL | [Z22] [本协议] | 只为和 SkillSpan 二类表对齐。**不是** ESCO 把 L 并进 Knowledge。 |
 | 编程语言 / 办公软件 / 框架，岗位可执行使用 → **S** | [ESCO14] [Z22] [本协议] | ESCO 可将 Python 等列为 knowledge；SkillSpan 允许其作 K 或嵌在 S 内。本协议：**岗位里当工具用 → S**；只有明确原理/课程才 K（见 SQL 条）。 |
-| SQL：岗位使用 → S；明确原理/理论 → K | [ESCO14] [本协议] | 同一表面、两种许可（apply vs know-that）。上下文不够勿猜，写入裁决日志。 |
+| SQL / Python：岗位使用 → 光杆名 S；课程/原理/基础/语法 → 整段知识 NP 为 K | [ESCO14] [本协议] | 同一表面、两种许可（apply vs know-that）。`掌握…如 R, Python, C` 全是 S。「了解 Python 语言原理」圈 `Python语言原理` K，不要只圈三个字。上下文不够勿猜，写入裁决日志。 |
 
 ---
 

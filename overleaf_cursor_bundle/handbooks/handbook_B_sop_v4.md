@@ -1,6 +1,6 @@
 # 手册 B — LSKT v4 SOP（论文主协议）· 一页
 
-**手册版本：** `B.sop_v4.2`（2026-08-28）。2026-08-30 只补文献键，规则未改。重叠裁决见 `handbook_B_overlap_adjudication.md`；出处对照 `handbook_B_citations.md`；规则日志 `LSKT_V4_RULE_CHANGELOG.md`。新 LLM 提示词：`prompts/LSKT_V4_ANNOTATION_PROMPT.txt`。  
+**手册版本：** `B.sop_v4.2.1`（2026-08-31）。在 v4.2 上补 Python/SQL 的 S vs K 整段例句，不改四类定义、不改数字。重叠裁决见 `handbook_B_overlap_adjudication.md`；出处对照 `handbook_B_citations.md`；规则日志 `LSKT_V4_RULE_CHANGELOG.md`。新 LLM 提示词：`prompts/LSKT_V4_ANNOTATION_PROMPT.txt`。  
 **文献键：** [ESCO14] [ESCO-L] [Z22] [AP08] [TKS02] [FM09] [Yu20] [UD20] [D18]。`[本协议]` = 中文招聘句上的操作化，不是被某篇论文强制的金标准。
 
 **用途：** 论文 **主评测** 的操作性定义（短跨度、禁半词、jieba 词边界）。绑定：训练银标 `train_lskt_v4_silver`；测试金标 `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl`（2601 = **980 SimHuman rule_v4** + **1621 SOP-CWS**，与 Gold v2 **同一批 ID**，预测与金标都 jieba snap）。  
@@ -30,8 +30,22 @@ L 对齐 ESCO skills pillar 的独立支 **Language skills and knowledge**（门
 7. 报名、体检、公示、资格审查、福利、五险一金、班次、地点、鸡汤 → **空句** `spans: []`。[Z22] [本协议]  
 8. 不标：形象外貌、身体健康、年限数字（只留能力本身）、非司机岗驾照。[Z22] [本协议]  
 9. 平坦不重叠。一条跨度一个类型。[TKS02] [本协议] 本轮不做 nested NER [FM09] [Yu20]。L–K–S–T 只是口诀，**不是**优先级；禁止 `L > S > K > T`。[本协议] [AP08]  
-10. `SQL`：岗位里可执行使用 → **S**；明确要求原理/理论 → **K**。[ESCO14] [本协议]  
+10. `SQL` / `Python` 等同表面词：岗位里当工具用 → **S**（只圈光杆名）；句里当课/原理/基础/语法 → **K**，且圈**完整知识短语**，不要只圈三个字。[ESCO14] [本协议] 见下节。  
 11. 人工字符偏移是权威（`sentence[start:end] == span`）。jieba 只做校验或派生视图，不是标注员，也不自动生成 Gold。[AP08] [D18] [本协议] 潜在同界/嵌套/交叉写入裁决日志，**不要**写进主层 Gold。[FM09] [Z22] 详见 `handbook_B_overlap_adjudication.md`。
+
+## 工具名 S vs 知识短语 K（Python / SQL）
+
+口令：岗位里**能用来做事** → 光杆名 **S**。句里**知不知道这门东西**（课程/原理/基础/语法）→ **整段知识 NP** **K**。「如」后面的举例与前面同一类型，不是自动改 K。禁止外层 S 再叠内层 K。
+
+| 句 | 应标 | 不要 |
+|---|---|---|
+| 掌握常用算法编程语言，如R, Python, C等 | `R` **S**；`Python` **S**；`C` **S**。不标「掌握」；「常用算法编程语言」可不标 | 后面改成 K；整段长 S 再叠 K |
+| 熟悉使用 Word，Excel，PPT | `Word` S；`Excel` S；`PPT` S | 标「熟悉使用」 |
+| 计算机专业课程包括 Python、数据结构 | `计算机专业` **K**；`Python` **K**；`数据结构` **K** | Python 标 S |
+| 了解 Python 语言原理 / 解释器实现 | `Python语言原理` **K**；`解释器实现` **K** | 只圈光杆 `Python` |
+| 具备 Python 基础知识（后文不再要求开发） | `Python基础知识` **K** | 只圈 `Python`；标「具备」 |
+| 教材：Python 语法与标准库 | `Python语法` **K**；`标准库` **K**（或一条 `Python语法与标准库` **K**） | 只圈光杆 `Python` |
+| 了解 SQL 原理 / 用 SQL 查库 | 原理 → `SQL原理` **K**；查库 → `SQL` **S** | 两种许可混成一个跨度 |
 
 ## 对照例
 
@@ -41,5 +55,7 @@ L 对齐 ESCO skills pillar 的独立支 **Language skills and knowledge**（门
 | 本科及以上学历，大学英语6级 | 学历 **K**；六级 **L** | 六级标 K（那是 Gold v2 / 手册 A） | [ESCO-L] [本协议] |
 | 维护和支持服务 | `维护` S + `支持服务` S（或完整词边界） | `支持服` | [本协议] |
 | 五险一金，带薪年假 | `[]` | 硬标福利 | [Z22] [本协议] |
+| 掌握…如 R, Python, C | `R`/`Python`/`C` 各 **S** | 举例改 K；或只标长类别 | [本协议] |
+| 了解 Python 语言原理 | `Python语言原理` **K** | 只标 `Python` | [ESCO14] [本协议] |
 
 **主结果（仅 P2）：** JobBERT 3M v4+jieba typed exact **0.4331**；冻结 ChatGPT dump+jieba exact **0.2854** / relaxed **0.6249**。禁止写成「超过 Gold v2 上的 ChatGPT 0.6365」。

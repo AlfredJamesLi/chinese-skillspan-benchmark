@@ -20,6 +20,8 @@
 
 **2026-08-30：** 操作化定义补文献键（`handbook_B_citations.md`）。规则与数字未改。短跨度 2–8 字标 **[本协议]**，不要写成 Zhang et al. (2022) 的规定。
 
+**v4.2.1（2026-08-31）：** Python/SQL：岗位光杆名 **S**；原理/课程整段 **K**。不引入嵌套 Long_S。不改论文数字。
+
 禁止：覆盖 Gold v2；把 **0.4331** 与 **0.6365** 写进同一句 SOTA。
 
 Overleaf 咨询稿：服务器 `overleaf_cursor_bundle/CODEX_PROMPT_HANDBOOK.md`；拷进 Overleaf 根后为 `CODEX_PROMPT_HANDBOOK.md`。
