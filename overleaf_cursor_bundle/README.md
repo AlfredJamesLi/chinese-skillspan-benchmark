@@ -38,10 +38,10 @@ File → Open Folder → 本机 Overleaf 克隆（不要开 `access_paper/overle
 |---|---|
 | `HANDOVER_OVERLEAF.md` | 完整交接（先读） |
 | `AGENTS.md` | 窗口身份 |
-| `CODEX_PROMPT_HANDBOOK.md` | 先咨询手册 A/B 如何写入 Methods（不改 tex） |
+| `CODEX_PROMPT_HANDBOOK.md` | 咨询：V4 作主表、Gold v2 作沿革（不改 tex） |
 | `CODEX_PROMPT_ALL.md` | 给 Codex 的合并改稿提示词（整段粘贴） |
-| `CODEX_PROMPT_PROTOCOL_CONSULT.md` | 咨询新旧协议表结构（不改 tex） |
-| `handbooks/` | 手册 A（Gold v2）/ 手册 B（SOP v4）各一页，中英 |
+| `CODEX_PROMPT_PROTOCOL_CONSULT.md` | 咨询表结构（不改 tex）；主表已定为 V4 |
+| `handbooks/` | 手册 B = 论文主协议；手册 A = Gold v2 沿革 |
 | `.cursor/skills/cnss-overleaf/confirmed-results.md` | 已确认数字 |
 | `.cursor/skills/cnss-overleaf/not-for-paper.md` | 禁写清单 |
 | `tables/` | Overleaf 用 CSV（Gold v2 / encoder / 分域） |

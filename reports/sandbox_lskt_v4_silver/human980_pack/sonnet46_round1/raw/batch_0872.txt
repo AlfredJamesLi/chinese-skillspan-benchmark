@@ -1,0 +1,12 @@
+```json
+[
+  {"id": "1967-s0003", "spans": [{"text": "技术文档", "type": "K"}, {"text": "编写", "type": "S"}], "comment": "文档前加技术；拆开并列动词"},
+  {"id": "1967-s0007", "spans": [{"text": "Tomcat", "type": "S"}, {"text": "Weblogic", "type": "S"}, {"text": "Jetty", "type": "S"}, {"text": "安装", "type": "S"}, {"text": "web应用部署", "type": "S"}], "comment": "工具是S；拆并列；补全半词"},
+  {"id": "1967-s0008", "spans": [{"text": "HTML", "type": "S"}, {"text": "HTML5", "type": "S"}, {"text": "CSS", "type": "S"}, {"text": "CSS3", "type": "S"}, {"text": "Bootstrap", "type": "S"}, {"text": "JS", "type": "S"}, {"text": "jQuery", "type": "S"}], "comment": "前端技术工具为S"},
+  {"id": "1967-s0010", "spans": [{"text": "Oracle", "type": "S"}, {"text": "MySQL", "type": "S"}, {"text": "数据库表设计", "type": "S"}, {"text": "SQL", "type": "S"}, {"text": "SQL性能调优", "type": "S"}], "comment": "数据库和SQL是工具S；修正半词"},
+  {"id": "1967-s0011", "spans": [{"text": "Maven", "type": "S"}, {"text": "SVN", "type": "S"}], "comment": "工具S；拆并列；补全"},
+  {"id": "1967-s0012", "spans": [{"text": "程序编写", "type": "S"}], "comment": "补全半词"},
+  {"id": "1967-s0013", "spans": [{"text": "思路清晰", "type": "T"}, {"text": "善于思考", "type": "T"}, {"text": "独立分析", "type": "T"}, {"text": "解决问题", "type": "T"}], "comment": "补全；拆并列软技能"},
+  {"id": "1967-s0014", "spans": [{"text": "分布式", "type": "K"}, {"text": "集群", "type": "K"}, {"text": "JAVA性能调优", "type": "S"}], "comment": "领域知识K；工具方法S；补全"}
+]
+```

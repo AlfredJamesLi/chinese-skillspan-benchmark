@@ -1,0 +1,10 @@
+[
+  {"id": "1818-s0003", "spans": [{"text": "计算机相关专业", "type": "K"}, {"text": "本科及以上学历", "type": "K"}, {"text": "后端开发", "type": "S"}], "comment": "补全学历；后端开发是技能；运营商项目经验删掉（年限相关）"},
+  {"id": "1818-s0004", "spans": [{"text": "python", "type": "S"}, {"text": "服务端开发", "type": "S"}, {"text": "算法", "type": "K"}, {"text": "数据结构", "type": "K"}], "comment": "python是工具S；算法和数据结构是知识K；修正半词"},
+  {"id": "1818-s0005", "spans": [{"text": "数据库开发", "type": "S"}, {"text": "Mysql", "type": "S"}, {"text": "Oracle", "type": "S"}, {"text": "MongoDb", "type": "S"}], "comment": "并列拆开；修正半词数据"},
+  {"id": "1818-s0006", "spans": [{"text": "Django", "type": "S"}, {"text": "Flask", "type": "S"}, {"text": "编码规范", "type": "K"}, {"text": "文档编写", "type": "S"}], "comment": "框架是S；修正半词代码能、文档编写能；编码规范是知识K"},
+  {"id": "1819-s0002", "spans": [], "comment": "整段是岗位职责描述不标"},
+  {"id": "1819-s0004", "spans": [{"text": "本科及以上学历", "type": "K"}, {"text": "工业设计", "type": "K"}, {"text": "人机交互", "type": "K"}, {"text": "计算机", "type": "K"}], "comment": "补全学历和专业；修正半词人机交"},
+  {"id": "1819-s0006", "spans": [{"text": "业务逻辑分析能力", "type": "S"}, {"text": "需求分析", "type": "S"}], "comment": "业务分析和需求分析是可执行技能S；梳理过于通用删除"},
+  {"id": "1819-s0007", "spans": [{"text": "文档撰写能力", "type": "S"}], "comment": "文档撰写是技能S；编写清是半词删除；产品文档不单独标"}
+]

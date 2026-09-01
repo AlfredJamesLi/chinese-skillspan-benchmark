@@ -1,0 +1,10 @@
+[
+  {"id": "1960-s0000", "spans": [{"text": "协助", "type": "S"}, {"text": "系统集成", "type": "S"}, {"text": "售前", "type": "S"}, {"text": "售中", "type": "S"}, {"text": "项目洽谈", "type": "S"}, {"text": "技术需求方案编写", "type": "S"}], "comment": "补全半词；拆分并列技能；岗位职责句按细粒度标具体可执行动作"}, 
+  {"id": "1960-s0002", "spans": [{"text": "协助", "type": "S"}, {"text": "售前", "type": "S"}, {"text": "售中", "type": "S"}, {"text": "技术方案", "type": "S"}, {"text": "施工", "type": "S"}, {"text": "验收文件编写", "type": "S"}], "comment": "售前售中是可执行技能归S；技术方案、施工、验收文件编写都是具体工作技能归S"}, 
+  {"id": "1960-s0003", "spans": [{"text": "协助", "type": "S"}, {"text": "商务谈判", "type": "S"}, {"text": "项目落地", "type": "S"}], "comment": "推进、落地前期工作等太泛，保留核心可执行技能"}, 
+  {"id": "1960-s0004", "spans": [{"text": "计算机", "type": "K"}, {"text": "本科以上学历", "type": "K"}], "comment": "专业单字不独立标；学历完整标出"}, 
+  {"id": "1960-s0005", "spans": [{"text": "计算机网络原理", "type": "K"}, {"text": "路由器", "type": "S"}, {"text": "交换机", "type": "S"}, {"text": "防火墙", "type": "S"}], "comment": "网络原理是领域知识归K；具体设备是工具归S；删掉懂、熟悉动词"}, 
+  {"id": "1960-s0006", "spans": [{"text": "系统集成", "type": "K"}, {"text": "工程规划", "type": "K"}, {"text": "施工", "type": "S"}, {"text": "验收流程", "type": "K"}], "comment": "系统集成是领域知识归K；施工是可执行技能归S；规划和流程是知识归K"}, 
+  {"id": "1960-s0009", "spans": [{"text": "沟通能力", "type": "T"}, {"text": "学习能力", "type": "T"}, {"text": "主动性", "type": "T"}, {"text": "责任心", "type": "T"}, {"text": "服务意识", "type": "T"}], "comment": "补全半词；删掉强、者等修饰"}, 
+  {"id": "1960-s0011", "spans": [{"text": "CCNA", "type": "K"}, {"text": "HCNA", "type": "K"}, {"text": "MCSE", "type": "K"}, {"text": "电工", "type": "K"}], "comment": "证书归K"}
+]

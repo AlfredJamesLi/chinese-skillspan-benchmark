@@ -1,0 +1,10 @@
+[
+  {"id": "1822-s0000", "spans": [{"text": "设计", "type": "S"}, {"text": "人工智能", "type": "K"}, {"text": "探索", "type": "S"}, {"text": "商务洽谈", "type": "S"}, {"text": "方案", "type": "S"}, {"text": "产品设计", "type": "S"}], "comment": "修正半词，拆分并列，删除半词"},
+  {"id": "1822-s0001", "spans": [{"text": "数据展示", "type": "S"}, {"text": "产品设计", "type": "S"}], "comment": "修正半词，设计是S不是K"},
+  {"id": "1822-s0002", "spans": [{"text": "人工智能算法", "type": "K"}, {"text": "可视化", "type": "S"}, {"text": "产品设计", "type": "S"}], "comment": "修正半词，算法是领域知识K，可视化和产品设计是S"},
+  {"id": "1822-s0003", "spans": [{"text": "团队合作", "type": "T"}, {"text": "开发", "type": "S"}, {"text": "技术研发", "type": "S"}, {"text": "创新", "type": "T"}], "comment": "修正半词，团队合作是软技能T"},
+  {"id": "1822-s0005", "spans": [{"text": "设计", "type": "S"}, {"text": "产品", "type": "S"}, {"text": "B端产品", "type": "K"}, {"text": "用户体验", "type": "K"}], "comment": "修正半词，拆分并列，B端和用户体验是领域知识"},
+  {"id": "1822-s0006", "spans": [{"text": "人工智能", "type": "K"}, {"text": "算法", "type": "K"}, {"text": "可视化", "type": "S"}, {"text": "交互式产品设计", "type": "S"}], "comment": "修正半词，拆分能力项"},
+  {"id": "1822-s0010", "spans": [{"text": "逻辑思维能力", "type": "T"}, {"text": "合作态度", "type": "T"}, {"text": "团队精神", "type": "T"}], "comment": "修正半词，拆分并列软技能"},
+  {"id": "1823-s0000", "spans": [{"text": "UI界面设计", "type": "S"}], "comment": "修正半词"}
+]

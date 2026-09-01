@@ -1,0 +1,28 @@
+{
+  "id": "1802-s0004",
+  "sentence": "5、负责多平台或关键应用程序的维护和支持服务。",
+  "model": "claude-3-5-haiku-20241022",
+  "prompt": "frozen @@span## Table-3 (same as dump)",
+  "calls": {
+    "https://claudeed.ysaikeji.cn": {
+      "status": 401,
+      "ok": false,
+      "elapsed_s": 0.61,
+      "upstream": null,
+      "usage": null,
+      "preview": "",
+      "err": "{\"error\":{\"code\":\"\",\"message\":\"Invalid token (request id: 202608251904291149887818268d9d6bRJPUZhv)\",\"type\":\"new_api_error\"}}"
+    },
+    "https://claudeplus.ysaikeji.cn": {
+      "status": 503,
+      "ok": false,
+      "elapsed_s": 1.68,
+      "upstream": null,
+      "usage": null,
+      "preview": "",
+      "err": "{\"error\":{\"message\":\"No available channel for model claude-3-5-haiku-20241022 under group default (distributor) (request id: 202608251904307962735498268d9d6MsPA08uG)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"model_not_found\"}}"
+    }
+  },
+  "chosen_base": null,
+  "ok": false
+}

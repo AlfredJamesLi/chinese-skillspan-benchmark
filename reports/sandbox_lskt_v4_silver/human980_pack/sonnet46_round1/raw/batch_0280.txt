@@ -1,0 +1,10 @@
+[
+  {"id": "1855-s0003", "spans": [{"text": "大数据挖掘算法", "type": "S"}], "comment": "去掉助词的"},
+  {"id": "1855-s0004", "spans": [{"text": "硕士及以上学历", "type": "K"}, {"text": "计算机软件", "type": "K"}, {"text": "数学及应用相关专业", "type": "K"}], "comment": "补全学历，拆开并列专业"},
+  {"id": "1855-s0006", "spans": [{"text": "机器学习", "type": "K"}, {"text": "理论研究", "type": "K"}], "comment": "修正半词，各种算法太泛删除"},
+  {"id": "1855-s0008", "spans": [{"text": "大数据", "type": "K"}, {"text": "人工智能", "type": "K"}, {"text": "研究", "type": "S"}, {"text": "软件编程", "type": "S"}, {"text": "C", "type": "S"}, {"text": "C++", "type": "S"}, {"text": "软件系统设计能力", "type": "S"}, {"text": "定义协议", "type": "S"}], "comment": "拆开并列能力，C/C++分开标，去掉熟练使用等动词"},
+  {"id": "1855-s0009", "spans": [{"text": "数据预处理", "type": "S"}, {"text": "分类", "type": "S"}, {"text": "预测", "type": "S"}], "comment": "拆开并列技能，去掉的字"},
+  {"id": "1855-s0010", "spans": [{"text": "Python", "type": "S"}, {"text": "C", "type": "S"}, {"text": "C++", "type": "S"}, {"text": "Matlab", "type": "S"}], "comment": "拆开并列编程语言，C/C++分开"},
+  {"id": "1855-s0012", "spans": [{"text": "识别", "type": "S"}, {"text": "语音识别算法", "type": "S"}, {"text": "统计分类", "type": "S"}, {"text": "模式识别", "type": "S"}, {"text": "神经网络", "type": "K"}], "comment": "修正半词，拆开并列算法，神经网络是理论知识标K"},
+  {"id": "1855-s0013", "spans": [{"text": "数据库", "type": "S"}, {"text": "Web技术", "type": "S"}], "comment": "去掉等字，拆开并列"}
+]

@@ -1,0 +1,12 @@
+```json
+[
+  {"id": "1806-s0005", "spans": [{"text": "面向对象", "type": "K"}, {"text": "设计模式", "type": "K"}, {"text": "多线程", "type": "S"}, {"text": "跨平台编程", "type": "S"}], "comment": "设计模式是知识理论归K；补全跨平台编程"},
+  {"id": "1807-s0001", "spans": [], "comment": "整句是岗位职责描述，不是对候选人的能力要求"},
+  {"id": "1807-s0003", "spans": [{"text": "数据挖掘", "type": "S"}], "comment": "其他是职责描述；采集和分析产、提出改、推进实施都是半词或职责"},
+  {"id": "1808-s0000", "spans": [], "comment": "整句是岗位职责描述，不是能力要求"},
+  {"id": "1808-s0001", "spans": [], "comment": "整句是岗位职责描述，不是能力要求"},
+  {"id": "1808-s0002", "spans": [{"text": "研究", "type": "S"}, {"text": "学习新技术", "type": "S"}], "comment": "拆分并列；其他是职责描述"},
+  {"id": "1808-s0003", "spans": [{"text": "HighCharts", "type": "S"}, {"text": "DataTable", "type": "S"}, {"text": "ECharts", "type": "S"}, {"text": "D3.js", "type": "S"}], "comment": "可视化库是具体工具归S；拆开并列；删除经验年限"},
+  {"id": "1808-s0006", "spans": [{"text": "模块化", "type": "K"}, {"text": "前端编译", "type": "K"}, {"text": "构建工具", "type": "K"}, {"text": "webpack", "type": "S"}, {"text": "gulp", "type": "S"}], "comment": "理论知识归K；具体工具归S；拆开并列"}
+]
+```

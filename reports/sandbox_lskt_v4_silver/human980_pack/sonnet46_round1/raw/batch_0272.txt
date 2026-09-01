@@ -1,0 +1,12 @@
+```json
+[
+  {"id": "1853-s0000", "spans": [{"text": "产品创新", "type": "S"}, {"text": "界面视觉引导", "type": "S"}, {"text": "原型设计", "type": "S"}, {"text": "推动设计实现", "type": "S"}, {"text": "独立工作", "type": "T"}, {"text": "团队成员合作", "type": "T"}, {"text": "交流", "type": "T"}], "comment": "修正半词，拆分并列能力，去掉序号干扰"},
+  {"id": "1853-s0003", "spans": [{"text": "设计", "type": "K"}, {"text": "人机交互", "type": "K"}, {"text": "可用性", "type": "K"}, {"text": "交互设计理论", "type": "K"}], "comment": "专业与理论知识归K，去除重复和半词"},
+  {"id": "1853-s0004", "spans": [{"text": "创造图形元素", "type": "S"}], "comment": "去掉出字，保持连续"},
+  {"id": "1853-s0005", "spans": [{"text": "交流技巧", "type": "T"}], "comment": "书写和口头是对交流技巧的说明，不单独标注"},
+  {"id": "1854-s0000", "spans": [{"text": "售前咨询", "type": "S"}, {"text": "项目实施", "type": "S"}, {"text": "项目管理", "type": "S"}, {"text": "IT规划咨询服务", "type": "S"}, {"text": "云计算", "type": "K"}, {"text": "AI", "type": "K"}, {"text": "云原生", "type": "K"}, {"text": "云原生架构转型", "type": "S"}, {"text": "工业互联网", "type": "K"}, {"text": "数字化营销", "type": "K"}, {"text": "金融科技", "type": "K"}, {"text": "智慧政务", "type": "K"}, {"text": "本科及以上学历", "type": "K"}, {"text": "理工科专业", "type": "K"}], "comment": "修正半词，拆分并列领域知识，去除高价值等口号，补充学历专业"},
+  {"id": "1854-s0001", "spans": [{"text": "IT规划", "type": "K"}, {"text": "售前咨询", "type": "S"}, {"text": "行业解决方案实施", "type": "S"}, {"text": "信息化", "type": "K"}, {"text": "项目实施", "type": "S"}, {"text": "云计算", "type": "K"}, {"text": "容器", "type": "S"}, {"text": "微服务架构", "type": "K"}, {"text": "项目管理", "type": "S"}], "comment": "修正半词，拆分并列，去除年限数字"},
+  {"id": "1854-s0002", "spans": [{"text": "敏捷", "type": "K"}, {"text": "DevOps", "type": "K"}, {"text": "项目管理", "type": "S"}, {"text": "PMP证书", "type": "K"}, {"text": "行业分析能力", "type": "S"}, {"text": "商业敏感性", "type": "T"}, {"text": "洞察力", "type": "T"}, {"text": "语言表达能力", "type": "T"}, {"text": "逻辑能力", "type": "T"}, {"text": "学习能力", "type": "T"}, {"text": "创新能力", "type": "T"}, {"text": "工作主动性", "type": "T"}, {"text": "自我驱动力", "type": "T"}, {"text": "抗压能力", "type": "T"}, {"text": "团队工作意识", "type": "T"}], "comment": "修正半词，拆分所有并列能力，方法论归K，去除出差安排"},
+  {"id": "1855-s0002", "spans": [{"text": "人工智能", "type": "K"}, {"text": "制造业", "type": "K"}, {"text": "物流", "type": "K"}], "comment": "研究和应用是职责动词不标，只标领域知识"}
+]
+```

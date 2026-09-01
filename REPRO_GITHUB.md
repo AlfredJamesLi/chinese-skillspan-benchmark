@@ -3,12 +3,12 @@
 本目录为 **Chinese Skill Benchmark / Chinese-SkillSpan**（**PeerJ Computer Science** 数据集文）工作区备份。  
 完整父仓库还含 Access/SRICL；**不要把 SRICL / 六语料英文主表写进本文**。
 
-两套测试金标不要混成一句 SOTA：
+两套测试金标不要混成一句 SOTA。**论文主协议 = P2 / V4**（2026-08-27）：
 
-| 协议 | 金标 | 主指标 | 已确认数字 |
+| 协议 | 金标 | 论文位置 | 已确认数字 |
 |---|---|---|---|
-| **P1 官方人类 Gold** | `data/gold_canonical_v2.jsonl`（2601 ID，sha `7a26e32b…`） | typed exact micro F1 | ChatGPT **0.6365**；JobBERT-zh 1M 3-seed **0.1288** |
-| **P2 匹配 SOP+jieba** | `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl`（sha `2ad6342d…`） | 同上 scorer | JobBERT 1M/3M v4 **0.4272 / 0.4331** exact；ChatGPT exact **0.2854** / relaxed **0.6249** |
+| **P2 匹配 SOP+jieba（主）** | `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl`（sha `2ad6342d…`） | 摘要 / 主表 | JobBERT 1M/3M v4 **0.4272 / 0.4331** exact；ChatGPT exact **0.2854** / relaxed **0.6249** |
+| **P1 Gold v2（沿革）** | `data/gold_canonical_v2.jsonl`（2601 ID，sha `7a26e32b…`） | 附录；文件冻结不覆盖 | ChatGPT **0.6365**；JobBERT-zh 1M 3-seed **0.1288** |
 
 数字只允许来自 `notes/confirmed-results.md` 或用户 PDF。禁止旧 scorer 全局 set bug（~0.46）。协议：`notes/DATA_PROTOCOL_FREEZE.md`。
 
@@ -36,19 +36,9 @@ export PYTHONPATH="/path/to/SCESC-LLM-skill-extraction/Baseline_Models_Collectio
 
 JobBERT DAPT 语料与权重见 `data/LARGE_DATA_MANIFEST.md`。表内编码器行可用 `data/frozen_preds/` 的 jsonl，不必下 53GB `output/`。
 
-## 3. 官方评测（P1 Gold v2）
+## 3. 论文主评测（P2 / V4 hybrid）
 
-```bash
-python3 scorer/test_regression.py
-python3 scorer/score_lskt.py \
-  --gold data/gold_canonical_v2.jsonl \
-  --pred reports/views/ChatGPT_unique_first_v2.jsonl \
-  --align-mode official
-```
-
-主指标：**typed exact micro F1**（`cnss-lskt-1.2.0`）。
-
-## 3b. 匹配协议评测（P2；不是 Gold v2，不是 PDF Table 3）
+主指标：**typed exact micro F1**（`cnss-lskt-1.2.0`）。金标：`data/test_lskt_v4_cws_simhuman980_hybrid.jsonl`。预测需 jieba snap。
 
 LLM 旧 dump（无 API）：
 
@@ -74,6 +64,16 @@ python3 scripts/eval_hybrid_cws_simhuman.py
 | `data/frozen_preds/jobbert_1m_v4_cws_retrain.jsonl` | 1M CWS 重训（0.4049） |
 
 LLM 预测：`reports/views/*_unique_first_v2.jsonl`（Claude/Kimi 原 dump 不完整；filled 视图是混型号，不能写成原 Table 3 模型）。
+
+## 3b. 附录评测（P1 Gold v2；不是摘要 SOTA，不是 PDF Table 3）
+
+```bash
+python3 scorer/test_regression.py
+python3 scorer/score_lskt.py \
+  --gold data/gold_canonical_v2.jsonl \
+  --pred reports/views/ChatGPT_unique_first_v2.jsonl \
+  --align-mode official
+```
 
 ## 3c. SOP v4 银标训练（可选重跑）
 

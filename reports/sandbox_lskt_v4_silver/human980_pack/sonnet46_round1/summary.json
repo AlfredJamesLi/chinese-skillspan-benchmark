@@ -1,0 +1,20 @@
+{
+  "n": 980,
+  "n_empty": 87,
+  "n_with_unaligned": 57,
+  "n_spans": 3434,
+  "types": {
+    "S": 2061,
+    "K": 867,
+    "T": 491,
+    "L": 15
+  },
+  "model": "claude-sonnet-4-6",
+  "base": "https://claudeplus.ysaikeji.cn",
+  "prompt": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/human980_pack/PROMPT_sonnet46.txt",
+  "doccano": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/human980_pack/sonnet46_round1/doccano_sonnet46.jsonl",
+  "start_human": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/human980_pack/sonnet46_round1/batches/batch_01.jsonl",
+  "gold_v2_untouched": true,
+  "do_not_train": true,
+  "not_for_confirmed_results": true
+}

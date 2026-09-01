@@ -1,0 +1,10 @@
+[
+  {"id": "1902-s0002", "spans": [{"text": "模拟", "type": "S"}, {"text": "数字电路设计", "type": "S"}, {"text": "芯片", "type": "K"}], "comment": "补全半词，拆开并列"},
+  {"id": "1902-s0003", "spans": [{"text": "电路原理分析", "type": "S"}, {"text": "硬件调试", "type": "S"}], "comment": "电路原理分析是可执行技能应为S；去掉产品等修饰词"},
+  {"id": "1902-s0004", "spans": [{"text": "pads", "type": "S"}, {"text": "cad", "type": "S"}, {"text": "多层线路板设计", "type": "S"}], "comment": "补全半词，工具软件各自独立"},
+  {"id": "1902-s0005", "spans": [], "comment": "工作经验不是能力要求"},
+  {"id": "1902-s0006", "spans": [{"text": "pcb设计", "type": "S"}, {"text": "技术文件", "type": "S"}, {"text": "样品制作", "type": "S"}, {"text": "调试", "type": "S"}], "comment": "去掉序号和半词，拆分职责为独立技能"},
+  {"id": "1903-s0000", "spans": [{"text": "交通", "type": "K"}, {"text": "大数据", "type": "K"}, {"text": "分析", "type": "S"}, {"text": "处理", "type": "S"}, {"text": "存储", "type": "S"}, {"text": "计算", "type": "S"}, {"text": "检索", "type": "S"}, {"text": "MR", "type": "S"}, {"text": "storm", "type": "S"}, {"text": "Spark", "type": "S"}, {"text": "flink", "type": "S"}, {"text": "数据分析", "type": "S"}, {"text": "job", "type": "S"}, {"text": "开发", "type": "S"}, {"text": "数据统计系统", "type": "S"}, {"text": "数据可视化系统", "type": "S"}], "comment": "拆开所有并列技能，框架为S不是K"},
+  {"id": "1903-s0001", "spans": [{"text": "计算机", "type": "K"}, {"text": "数学", "type": "K"}, {"text": "统计学", "type": "K"}, {"text": "本科以上学历", "type": "K"}], "comment": "补全半词，拆开专业，加学历"},
+  {"id": "1903-s0002", "spans": [{"text": "数据", "type": "K"}, {"text": "开发", "type": "S"}, {"text": "hadoop", "type": "S"}, {"text": "ETL", "type": "S"}, {"text": "实时计算", "type": "K"}, {"text": "storm", "type": "S"}, {"text": "spark", "type": "S"}, {"text": "flink", "type": "S"}], "comment": "去年限，补全半词，框架工具为S"}
+]

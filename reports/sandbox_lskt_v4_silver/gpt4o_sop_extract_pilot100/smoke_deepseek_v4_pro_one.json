@@ -1,0 +1,31 @@
+{
+  "base": "https://api.deepseek.com",
+  "model": "deepseek-v4-pro",
+  "id": "1802-s0004",
+  "sentence": "5、负责多平台或关键应用程序的维护和支持服务。",
+  "results": [
+    {
+      "status": 200,
+      "ok": true,
+      "elapsed_s": 34.33,
+      "upstream": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 190,
+        "completion_tokens": 2086,
+        "total_tokens": 2276,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2054
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 190
+      },
+      "finish": "stop",
+      "content": "{\"id\":\"1802-s0004\",\"spans\":[{\"text\":\"多平台或关键应用程序的维护和支持服务\",\"type\":\"S\"}]}",
+      "reasoning": "我们需要回答用户。要求标注中文招聘广告的 LSKT 跨度标注员。只输出 JSON：{\"id\":\"...\",\"spans\":[{\"text\":\"...\",\"type\":\"S\"}]}。类型只能是 L/K/S/T。text 必须是原句子串。无技能则 spans=[]。不要 markdown。\n\n输入：{\"id\": \"1802-s0004\", \"sentence\": \"5、负责多平台或关键应用程序的维护和",
+      "label": "official_thinking_high"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "base": "https://claudeed.ysaikeji.cn",
+  "model": "gpt-5.4",
+  "id": "1802-s0004",
+  "sentence": "5、负责多平台或关键应用程序的维护和支持服务。",
+  "n_models": 98,
+  "has_gpt54": true,
+  "results": [
+    {
+      "status": 200,
+      "ok": true,
+      "elapsed_s": 2.55,
+      "upstream": "gpt-5.4",
+      "usage": {
+        "prompt_tokens": 121,
+        "completion_tokens": 48,
+        "total_tokens": 169,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "input_tokens": 121,
+        "output_tokens": 48,
+        "input_tokens_details": null,
+        "claude_cache_creation_5_m_tokens": 0,
+        "claude_cache_creation_1_h_tokens": 0
+      },
+      "finish": "stop",
+      "content": "{\"id\":\"1802-s0004\",\"spans\":[{\"text\":\"多平台\",\"type\":\"K\"},{\"text\":\"关键应用程序\",\"type\":\"K\"},{\"text\":\"维护和支持服务\",\"type\":\"T\"}]}",
+      "label": "chat_max_tokens_temp0"
+    }
+  ]
+}

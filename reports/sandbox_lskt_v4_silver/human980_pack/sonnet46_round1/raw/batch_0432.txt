@@ -1,0 +1,10 @@
+[
+  {"id": "1884-s0004", "spans": [{"text": "自动化测试", "type": "S"}], "comment": "配合测是半词，删除；保留自动化测试"},
+  {"id": "1884-s0005", "spans": [{"text": "沟通协作意识", "type": "T"}, {"text": "问题解决能力", "type": "T"}], "comment": "补全沟通协作意识和问题解决能力"},
+  {"id": "1884-s0007", "spans": [{"text": "编程习惯", "type": "T"}, {"text": "数据结构", "type": "K"}, {"text": "面向对象程序设计", "type": "K"}], "comment": "编程习惯是软技能T；数据结构和面向对象程序设计是领域知识K，拆开标注；不标精通"},
+  {"id": "1884-s0008", "spans": [{"text": "Android平台", "type": "S"}, {"text": "框架原理", "type": "K"}, {"text": "设计", "type": "S"}, {"text": "开发", "type": "S"}], "comment": "Android平台是工具S，框架原理是领域知识K，设计和开发是可执行技能S，拆开"},
+  {"id": "1884-s0009", "spans": [{"text": "Android自定义UI", "type": "S"}], "comment": "Android自定义UI是工具技能S，不标实现动词"},
+  {"id": "1884-s0010", "spans": [{"text": "AndroidApp", "type": "S"}, {"text": "性能优化", "type": "S"}], "comment": "AndroidApp是工具，性能优化是可执行技能，拆开"},
+  {"id": "1884-s0012", "spans": [{"text": "hybirdapp", "type": "S"}, {"text": "html", "type": "S"}, {"text": "ja ***", "type": "S"}], "comment": "hybirdapp、html、ja***都是工具S，不是K；保留原文错拼"},
+  {"id": "1885-s0000", "spans": [{"text": "大数据产品规划", "type": "S"}, {"text": "设计", "type": "S"}], "comment": "大数据产品规划和设计是可执行技能S，不标负责动词，不要半词"}
+]

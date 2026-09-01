@@ -1,0 +1,10 @@
+[
+  {"id": "1908-s0004", "spans": [{"text": "J2EE", "type": "S"}, {"text": "开发", "type": "S"}, {"text": "运维", "type": "S"}, {"text": "微服务架构", "type": "K"}], "comment": "拆开并列；运维项目改为运维"},
+  {"id": "1908-s0005", "spans": [{"text": "Linux", "type": "S"}, {"text": "Mysql", "type": "S"}, {"text": "Redis", "type": "S"}, {"text": "Nginx", "type": "S"}, {"text": "Kafka", "type": "S"}, {"text": "Docker", "type": "S"}], "comment": "删除半词和动词；工具归S；设备类归S或删除年限"},
+  {"id": "1908-s0006", "spans": [{"text": "云计算", "type": "K"}, {"text": "华为云", "type": "S"}, {"text": "阿里云", "type": "S"}], "comment": "补全半词；具体平台是工具归S"},
+  {"id": "1908-s0007", "spans": [{"text": "运维", "type": "S"}, {"text": "自动化运维", "type": "S"}], "comment": "补全半词；流程经验改为技能本身"},
+  {"id": "1908-s0009", "spans": [{"text": "英文", "type": "L"}], "comment": "语种归L；能力强是修饰不标；沟通撰写是应用场景不单标"},
+  {"id": "1908-s0010", "spans": [{"text": "大学本科或以上学历", "type": "K"}], "comment": "学历归K"},
+  {"id": "1909-s0002", "spans": [{"text": "Hadoop", "type": "S"}, {"text": "Storm", "type": "S"}, {"text": "HBase", "type": "S"}, {"text": "Hive", "type": "S"}], "comment": "框架是工具归S；拆开并列"},
+  {"id": "1909-s0003", "spans": [{"text": "团队意识", "type": "T"}, {"text": "创新思维", "type": "T"}, {"text": "自我激励能力", "type": "T"}], "comment": "删除半词；拆开并列软技能；与人合作是团队意识的表现不重复标"}
+]

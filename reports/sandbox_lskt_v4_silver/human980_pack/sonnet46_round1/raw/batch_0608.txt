@@ -1,0 +1,12 @@
+```json
+[
+  {"id": "1920-s0000", "spans": [{"text": "电路板焊接", "type": "S"}, {"text": "调试", "type": "S"}, {"text": "测试", "type": "S"}], "comment": "补充测试"},
+  {"id": "1920-s0001", "spans": [{"text": "测试", "type": "S"}], "comment": "仪器设备是工作条件不是能力要求，测试是技能"},
+  {"id": "1920-s0002", "spans": [], "comment": "学习公司产品是职责描述，不是入职要求"},
+  {"id": "1920-s0003", "spans": [{"text": "制作BOM表", "type": "S"}, {"text": "规格书", "type": "S"}, {"text": "物料替代", "type": "S"}], "comment": "删除半词，保留完整技能"},
+  {"id": "1920-s0005", "spans": [{"text": "看懂电路原理图", "type": "S"}, {"text": "焊接", "type": "S"}], "comment": "补全半词，拆分独立技能"},
+  {"id": "1920-s0006", "spans": [{"text": "PADS", "type": "S"}, {"text": "AD", "type": "S"}, {"text": "英文", "type": "L"}], "comment": "工具归S，英文是语种L，删除年限和半词"},
+  {"id": "1920-s0007", "spans": [{"text": "积极主动", "type": "T"}, {"text": "责任感强", "type": "T"}, {"text": "吃苦耐劳", "type": "T"}], "comment": "补全软技能"},
+  {"id": "1920-s0009", "spans": [{"text": "电子产品设计", "type": "S"}, {"text": "测试", "type": "S"}, {"text": "电子维修", "type": "S"}], "comment": "拆分并列技能"}
+]
+```

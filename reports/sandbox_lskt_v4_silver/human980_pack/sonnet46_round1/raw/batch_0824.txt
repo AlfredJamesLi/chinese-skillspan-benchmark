@@ -1,0 +1,10 @@
+[
+  {"id": "1957-s0003", "spans": [{"text": "排查", "type": "S"}], "comment": "补全半词；服务故障、系统故障、网络故障是工作对象不是能力要求"},
+  {"id": "1957-s0004", "spans": [{"text": "nginx", "type": "S"}, {"text": "tomcat", "type": "S"}, {"text": "MySQL", "type": "S"}, {"text": "php", "type": "S"}, {"text": "部署", "type": "S"}, {"text": "管理", "type": "S"}, {"text": "维护", "type": "S"}, {"text": "docker", "type": "S"}], "comment": "删除年限；拆分并列工具；删除半词和泛指"},
+  {"id": "1957-s0005", "spans": [{"text": "kubernetes", "type": "S"}, {"text": "部署", "type": "S"}, {"text": "维护", "type": "S"}, {"text": "调优", "type": "S"}, {"text": "网络安全", "type": "K"}], "comment": "补全半词；删除泛指；拆分技能"},
+  {"id": "1958-s0000", "spans": [{"text": "大专", "type": "K"}, {"text": "计算机专业", "type": "K"}, {"text": "ERP", "type": "S"}, {"text": "互联网运维", "type": "S"}, {"text": "程式开发", "type": "S"}], "comment": "补全学历；补全半词；拆分并列"},
+  {"id": "1959-s0000", "spans": [{"text": "智慧水务", "type": "K"}, {"text": "设计", "type": "S"}, {"text": "开发", "type": "S"}, {"text": "撰写", "type": "S"}, {"text": "技术文档", "type": "K"}], "comment": "补全半词；拆分技能"},
+  {"id": "1959-s0005", "spans": [{"text": "自动化", "type": "K"}], "comment": "装备改造方案是工作对象；只保留领域知识"},
+  {"id": "1959-s0008", "spans": [{"text": "智慧城市", "type": "K"}, {"text": "智慧水务", "type": "K"}], "comment": "删除年限；补全半词"},
+  {"id": "1959-s0009", "spans": [{"text": "流域治理", "type": "K"}, {"text": "运营管理", "type": "K"}, {"text": "智慧水务", "type": "K"}, {"text": "测试工具", "type": "S"}, {"text": "测试方法", "type": "K"}], "comment": "补全半词；拆分领域知识与技能"}
+]

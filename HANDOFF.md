@@ -7,7 +7,7 @@
 论文材料只写在：`Chinese_skill_benchmark_Paper/`
 
 **GitHub 私有备份（2026-08-26）：** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark — 见 `PUSH_GITHUB.md`、`REPRO_GITHUB.md`。  
-**Overleaf（本机改 tex；此服务器无法登录）：** https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4 — 手册 A/B 一页：`notes/handbooks/`（Overleaf 包内 `overleaf_cursor_bundle/handbooks/`）。先贴 `CODEX_PROMPT_HANDBOOK.md` 定 Methods 写法，需要时再贴 `CODEX_PROMPT_PROTOCOL_CONSULT.md` 定表结构，最后贴 `CODEX_PROMPT_ALL.md` 改稿。禁止把 0.4331 与 0.6365 写进同一句 SOTA。  
+**Overleaf（本机改 tex；此服务器无法登录）：** https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4 — **2026-08-27：论文主评测只用 V4**（手册 B；与 Gold v2 同一批 2601 ID）。Gold v2 文件不覆盖，F1 进附录。手册：`notes/handbooks/`。SkillSpan 体例图：`figures/` + `tex/skillspan_style_*.tex`；本机贴 `CODEX_PROMPT_FIGURES.md` 插入。禁止把 0.4331 与 0.6365 写进同一句 SOTA。禁止把 V4 hybrid 写成人工 Doccano Gold。  
 **7 天窗口：** `notes/SEVEN_DAY_WINDOW.md`。每次实验结束后 `bash scripts/backup_push_github.sh`。
 
 **姐妹文（禁止混写）：** IEEE Access 方法文 SRICL，arXiv `2604.21525`，目录 `access_paper/`。
@@ -58,7 +58,7 @@
 
 1. 把最新 PDF 放到 `pdf/`。
 2. 告知文件名后，抽出摘要/贡献/数据规模/主表，写入 `notes/confirmed-results.md`。
-3. 手册 A/B 已写在 `notes/handbooks/`。本机 Overleaf 先贴 `CODEX_PROMPT_HANDBOOK.md` 咨询 Methods，再贴 `CODEX_PROMPT_ALL.md`。
+3. 论文主协议已定为 **V4 only**。本机 Overleaf 先贴 `CODEX_PROMPT_HANDBOOK.md`（咨询如何把 V4 写成主表、Gold v2 写成沿革），再贴 `CODEX_PROMPT_ALL.md`。
 4. 若有 Overleaf 工程，把 `overleaf_cursor_bundle/` 拷到本机 Overleaf Git 根目录，另开窗口写作。
 
 ---
@@ -67,4 +67,5 @@
 
 **P0：** 等 PDF → 填 confirmed-results → 冲突表（PDF vs 仓库笔记）。  
 **P1：** 在 `tex/` 或 Overleaf 包里改稿，数字不动则只动版式。  
-**P2：** 需要新实验时交回本仓库实验脚本，不要在论文目录里重跑训练。
+**P2：** 需要新实验时交回本仓库实验脚本，不要在论文目录里重跑训练。  
+**Vanilla large vs base（待验证，未入摘要）：** seed 42 已从服务器 B 拷回。`notes/vanilla_large_v4.md`、`notes/vanilla_wwm_v4_methods.md`。表稿 `tex/skillspan_style_vanilla_wwm_v4.tex`。Overleaf 咨询：`overleaf_cursor_bundle/CODEX_PROMPT_VANILLA_WWM.md`。摘要仍用 JobBERT 3M **0.4331**。50782 已取消。

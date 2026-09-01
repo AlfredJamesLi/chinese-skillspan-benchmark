@@ -2,9 +2,11 @@
 
 **Do not paste this file.** Order:
 
-1. Consult Methods (handbooks): [`CODEX_PROMPT_HANDBOOK.md`](CODEX_PROMPT_HANDBOOK.md) — no tex edits.
+1. Consult Methods (V4 = paper main gold): [`CODEX_PROMPT_HANDBOOK.md`](CODEX_PROMPT_HANDBOOK.md) — no tex edits.
 2. Optional consult tables: [`CODEX_PROMPT_PROTOCOL_CONSULT.md`](CODEX_PROMPT_PROTOCOL_CONSULT.md) — no tex edits.
 3. Edit pass: [`CODEX_PROMPT_ALL.md`](CODEX_PROMPT_ALL.md)
+4. Insert SkillSpan-style figures: [`CODEX_PROMPT_FIGURES.md`](CODEX_PROMPT_FIGURES.md)
+5. **After night job 50733 (2026-08-28):** appendix-only source-stratified split — [`CODEX_PROMPT_REPARTITION_V1.md`](CODEX_PROMPT_REPARTITION_V1.md). Do **not** replace V4 hybrid 0.4331.
 
 Four older files were a staged split (Gold v2 tables → SOP wording → diagnostic F1 → hybrid 2601). They are history only:
 

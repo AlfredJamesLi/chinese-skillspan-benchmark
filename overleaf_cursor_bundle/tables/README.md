@@ -22,5 +22,8 @@ Round to **4 decimals** in tex. Do not invent cells.
 | `appendix_span_length_f1_gold_v2.csv` | F1 by gold/pred span token length |
 | `appendix_aso_encoder_3seed_gold_v2.csv` | Encoder seed win-rate (n=3; not full ASO) |
 | `appendix_pr_p2_matched.csv` | Matched-protocol P/R (not Gold v2) |
+| `skillspan_style/` | Zhang-style dataset stats / top-5 / V4 bar CSV (figures in `../figures/`) |
+| `repartition_v1_night.csv` | Source-stratified split night run (**appendix only**; v4 silver draft gold, not human) |
+| `repartition_v1_stl.csv` | Same split; STL vs joint 1M seed 42 (**appendix only**) |
 
 Authoritative rounding and captions: `.cursor/skills/cnss-overleaf/confirmed-results.md`.

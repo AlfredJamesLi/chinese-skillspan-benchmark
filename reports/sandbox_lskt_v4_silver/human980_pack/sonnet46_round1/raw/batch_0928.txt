@@ -1,0 +1,10 @@
+[
+  {"id": "1977-s0001", "spans": [{"text": "网络监控态势感知", "type": "S"}], "comment": "保持"},
+  {"id": "1977-s0002", "spans": [{"text": "IDC产品设计", "type": "S"}], "comment": "去掉半词公司"},
+  {"id": "1977-s0004", "spans": [{"text": "规划", "type": "S"}], "comment": "规划是可执行技能，去掉半词"},
+  {"id": "1977-s0005", "spans": [{"text": "Cisco", "type": "S"}, {"text": "路由", "type": "S"}, {"text": "交换", "type": "S"}, {"text": "安全", "type": "S"}, {"text": "语音", "type": "S"}], "comment": "Cisco是具体产品改S，路由交换安全语音是具体技术改S"},
+  {"id": "1977-s0006", "spans": [{"text": "H3C", "type": "S"}, {"text": "Huawei", "type": "S"}, {"text": "Juniper", "type": "S"}], "comment": "具体网络产品拆分为S"},
+  {"id": "1977-s0008", "spans": [{"text": "L2TP", "type": "S"}, {"text": "GRE", "type": "S"}, {"text": "IPSEC", "type": "S"}, {"text": "MPLS", "type": "S"}, {"text": "MPLS-VPN", "type": "S"}, {"text": "RR", "type": "S"}, {"text": "IPLC", "type": "S"}, {"text": "IEPL", "type": "S"}, {"text": "SD-Wan", "type": "S"}], "comment": "具体技术协议都是S，拆分并列项，去掉半词"},
+  {"id": "1977-s0010", "spans": [{"text": "ADSL", "type": "S"}, {"text": "PON", "type": "S"}, {"text": "DDN", "type": "S"}, {"text": "SDH", "type": "S"}, {"text": "MSTP", "type": "S"}, {"text": "波分设备安装调试", "type": "S"}], "comment": "具体接入方式是工具技术改S并拆分，去掉经验描述"},
+  {"id": "1978-s0000", "spans": [{"text": "PaaS", "type": "S"}, {"text": "Devops", "type": "S"}, {"text": "自动化运维", "type": "S"}, {"text": "计算机", "type": "K"}, {"text": "数学", "type": "K"}], "comment": "去掉所有半词和职责描述，只保留技能本身，专业是K"}
+]

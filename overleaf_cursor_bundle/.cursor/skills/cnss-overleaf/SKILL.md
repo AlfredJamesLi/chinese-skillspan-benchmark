@@ -16,7 +16,7 @@ description: >-
 3. `git pull --ff-only origin main` (or the branch the user names).
 4. Use [confirmed-results.md](confirmed-results.md) as the compact checklist; if it disagrees with the handover, stop and report.
 5. Keep [not-for-paper.md](not-for-paper.md) out of the PDF.
-6. Span conventions: [handbooks/](../../../handbooks/) — Handbook A (Gold v2) vs Handbook B (SOP v4). Do not merge. Consult `CODEX_PROMPT_HANDBOOK.md` before rewriting Methods.
+6. Span conventions: [handbooks/](../../../handbooks/) — **Handbook B (V4) is the paper main protocol**; Handbook A (Gold v2) is provenance on the same 2601 IDs. Do not overwrite Gold v2. Consult `CODEX_PROMPT_HANDBOOK.md` before rewriting Methods.
 
 ## P0
 

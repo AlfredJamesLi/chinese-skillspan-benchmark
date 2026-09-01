@@ -1,0 +1,10 @@
+[
+  {"id": "1870-s0004", "spans": [{"text": "本科以上学历", "type": "K"}, {"text": "互联网产品运维", "type": "S"}, {"text": "开发", "type": "S"}, {"text": "架构设计", "type": "S"}], "comment": "补全半词，拆开并列，删年限"},
+  {"id": "1870-s0006", "spans": [{"text": "负载均衡", "type": "S"}, {"text": "VPN网关", "type": "S"}, {"text": "IPsec", "type": "S"}, {"text": "SSL", "type": "S"}, {"text": "路由器", "type": "S"}], "comment": "网络产品、协议是工具，归S；删括号碎片"},
+  {"id": "1870-s0007", "spans": [{"text": "管理", "type": "S"}, {"text": "配置", "type": "S"}, {"text": "关系型数据库", "type": "K"}, {"text": "mysql", "type": "S"}, {"text": "sqlserver", "type": "S"}, {"text": "非关系型数据库", "type": "K"}, {"text": "Redis", "type": "S"}, {"text": "MongoDB", "type": "S"}], "comment": "拆管理配置；数据库类型是领域知识K，具体产品是工具S；补全半词"},
+  {"id": "1870-s0008", "spans": [{"text": "管理", "type": "S"}, {"text": "配置", "type": "S"}, {"text": "云服务体系", "type": "K"}, {"text": "Iaas", "type": "K"}, {"text": "Paas", "type": "K"}, {"text": "Saas", "type": "K"}, {"text": "开发", "type": "S"}, {"text": "运维", "type": "S"}, {"text": "问题解决能力", "type": "T"}], "comment": "拆并列；删半词寻找创新方法来达；删经验年限词"},
+  {"id": "1870-s0009", "spans": [{"text": "客户服务意识", "type": "T"}, {"text": "工作态度", "type": "T"}, {"text": "责任心", "type": "T"}], "comment": "补全工作态度和强"},
+  {"id": "1870-s0011", "spans": [{"text": "技术体系", "type": "K"}, {"text": "技术架构", "type": "K"}], "comment": "删半词了解知；领域产品经验不标"},
+  {"id": "1870-s0012", "spans": [{"text": "沟通能力", "type": "T"}], "comment": "删的字；技巧与能力同义不重复标"},
+  {"id": "1871-s0000", "spans": [{"text": "本科及以上", "type": "K"}, {"text": "NLP", "type": "K"}, {"text": "智能对话", "type": "K"}, {"text": "深度学习", "type": "K"}, {"text": "机器学习", "type": "K"}, {"text": "语音识别", "type": "S"}, {"text": "语音合成", "type": "S"}, {"text": "语音角色分离", "type": "S"}, {"text": "智能投顾", "type": "K"}, {"text": "搜索引擎", "type": "K"}, {"text": "风控", "type": "K"}, {"text": "推荐系统", "type": "K"}, {"text": "行为分析系统", "type": "K"}, {"text": "用户画像", "type": "K"}], "comment": "岗位职责不标；删年限与经验词；算法类型是领域知识K；具体应用技术归类到K或S；删半词碎片"}
+]

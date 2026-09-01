@@ -1,0 +1,87 @@
+[
+  {
+    "id": "1848-s0007",
+    "spans": [
+      {"text": "数据分析能力", "type": "S"},
+      {"text": "理解业务", "type": "T"},
+      {"text": "设计", "type": "S"},
+      {"text": "数据模型", "type": "K"}
+    ],
+    "comment": "修正半词，拆分能力"
+  },
+  {
+    "id": "1848-s0008",
+    "spans": [
+      {"text": "SQL", "type": "S"},
+      {"text": "SPSS", "type": "S"},
+      {"text": "SAS", "type": "S"},
+      {"text": "Weka", "type": "S"},
+      {"text": "R", "type": "S"}
+    ],
+    "comment": "拆分工具，不标动词"
+  },
+  {
+    "id": "1848-s0009",
+    "spans": [
+      {"text": "数据库内分析", "type": "S"},
+      {"text": "Hadoop", "type": "S"},
+      {"text": "Mahout", "type": "S"}
+    ],
+    "comment": "修正半词，拆分工具"
+  },
+  {
+    "id": "1848-s0010",
+    "spans": [
+      {"text": "用户行为研究", "type": "S"},
+      {"text": "数据挖掘", "type": "S"}
+    ],
+    "comment": "删除背景和行业，保留可执行技能"
+  },
+  {
+    "id": "1848-s0011",
+    "spans": [
+      {"text": "责任心", "type": "T"},
+      {"text": "团队精神", "type": "T"},
+      {"text": "学习能力", "type": "T"},
+      {"text": "沟通能力", "type": "T"}
+    ],
+    "comment": "修正半词，拆分软技能"
+  },
+  {
+    "id": "1849-s0001",
+    "spans": [],
+    "comment": "公司简介"
+  },
+  {
+    "id": "1849-s0004",
+    "spans": [
+      {"text": "语言表达能力", "type": "T"}
+    ],
+    "comment": "删除福利和流程，保留能力要求"
+  },
+  {
+    "id": "1850-s0000",
+    "spans": [
+      {"text": "产品设计", "type": "S"},
+      {"text": "数据调研", "type": "S"},
+      {"text": "用户行为分析", "type": "S"},
+      {"text": "数据分析", "type": "S"},
+      {"text": "数据挖掘", "type": "S"},
+      {"text": "沟通", "type": "T"},
+      {"text": "协调", "type": "T"},
+      {"text": "本科及以上学历", "type": "K"},
+      {"text": "互联网", "type": "K"},
+      {"text": "电商", "type": "K"},
+      {"text": "产品设计工具", "type": "S"},
+      {"text": "交互设计", "type": "S"},
+      {"text": "原型设计", "type": "S"},
+      {"text": "B2B", "type": "K"},
+      {"text": "逻辑", "type": "T"},
+      {"text": "学习能力", "type": "T"},
+      {"text": "语言文字表达能力", "type": "T"},
+      {"text": "组织协调能力", "type": "T"},
+      {"text": "市场洞察力", "type": "T"}
+    ],
+    "comment": "删除福利，修正半词和重复，短而独立"
+  }
+]

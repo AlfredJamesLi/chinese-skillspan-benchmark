@@ -1,0 +1,10 @@
+[
+  {"id": "1903-s0003", "spans": [{"text": "海量数据开发", "type": "S"}, {"text": "元数据管理", "type": "K"}], "comment": "补全半词；数据开发是执行技能S，元数据管理是领域知识K"},
+  {"id": "1903-s0004", "spans": [{"text": "数据模型", "type": "K"}, {"text": "数据架构", "type": "K"}], "comment": "补全半词并拆开并列"},
+  {"id": "1903-s0006", "spans": [{"text": "unix", "type": "S"}, {"text": "linux", "type": "S"}, {"text": "编程能力", "type": "T"}, {"text": "java", "type": "S"}, {"text": "scala", "type": "S"}, {"text": "MR", "type": "S"}, {"text": "storm", "type": "S"}, {"text": "spark", "type": "S"}, {"text": "flink", "type": "S"}], "comment": "补全半词；拆开并列；编程能力是软技能T；删除熟悉熟练等动词；具体语言框架是S"},
+  {"id": "1904-s0000", "spans": [{"text": "计算机相关专业", "type": "K"}, {"text": "大专以上学历", "type": "K"}], "comment": "学历是K"},
+  {"id": "1904-s0001", "spans": [{"text": "项目施工流程", "type": "K"}, {"text": "系统集成项目实施", "type": "S"}, {"text": "管理", "type": "S"}, {"text": "IT领域技术支持", "type": "S"}], "comment": "补全半词；拆开并列"},
+  {"id": "1905-s0000", "spans": [{"text": "数据分析", "type": "S"}], "comment": "岗位职责整句不标；只标核心能力"},
+  {"id": "1905-s0001", "spans": [{"text": "监控", "type": "S"}, {"text": "数据分析", "type": "S"}], "comment": "补全半词；只标可执行技能"},
+  {"id": "1905-s0002", "spans": [{"text": "数据分析", "type": "S"}, {"text": "网站设计", "type": "K"}, {"text": "用户体验", "type": "K"}, {"text": "市场营销", "type": "K"}, {"text": "客户画像", "type": "K"}, {"text": "客户需求", "type": "K"}, {"text": "流失分析", "type": "S"}], "comment": "补全半词；拆开并列；设计营销体验是领域知识K"}
+]

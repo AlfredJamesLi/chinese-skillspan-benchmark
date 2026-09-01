@@ -1,7 +1,7 @@
-# Codex consult — Handbook A vs B (no tex edits yet)
+# Codex consult — V4 as paper main protocol (no tex edits yet)
 
 **Overleaf:** https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4  
-Paste **this file only**. Do **not** patch `main.tex` in this chat. Return a Methods insertion plan. Wait for `CODEX_PROMPT_ALL.md` before editing.
+Paste **this file only**. Do **not** patch `main.tex` in this chat. Return a Methods + table-layout plan. Wait for `CODEX_PROMPT_ALL.md` before editing.
 
 Copy `overleaf_cursor_bundle/` into the Overleaf repo root if not already there. Read:
 
@@ -16,72 +16,59 @@ Numbers only from `confirmed-results.md`. Ban list: `not-for-paper.md`.
 
 ## PROMPT (copy from here)
 
-You are advising on **Methods wording** for the Chinese-SkillSpan / Chinese Skill Benchmark paper submitted to **PeerJ Computer Science**. This is **not** the IEEE Access / SRICL method paper. Do not invent F1.
+You are advising on **Methods and table layout** for the Chinese-SkillSpan / Chinese Skill Benchmark paper submitted to **PeerJ Computer Science**. This is **not** the IEEE Access / SRICL method paper. Do not invent F1.
 
-**This chat is consult-only.** `git pull --ff-only`, read `main.tex` (annotation / gold / encoder / evaluation subsections) and the two one-page handbooks. **Do not edit tex, do not commit, do not push.**
+**This chat is consult-only.** `git pull --ff-only`, read `main.tex` and the two one-page handbooks. **Do not edit tex, do not commit, do not push.**
 
-### Two handbooks (never merge)
+### Decision already taken (2026-08-27) — do not reopen it
 
-| | Handbook A | Handbook B |
+Authors will **report only the V4 protocol** as the paper’s main evaluation. Reason: the V4 test gold is **derived from the same 2601 Gold v2 IDs** (not a new sample). Handbook B is the reported span convention. Gold v2 (`gold_canonical_v2.jsonl`) stays on disk as **provenance**; its F1 goes to the **appendix**, not the abstract SOTA.
+
+| | Provenance (Handbook A) | **Paper main (Handbook B)** |
 |---|---|---|
-| Protocol | **P1** official human Gold v2 | **P2** matched SOP+jieba |
-| File | `handbooks/handbook_A_gold_v2.en.md` | `handbooks/handbook_B_sop_v4.en.md` |
-| Test gold | `gold_canonical_v2.jsonl` (2601) | hybrid 2601 = 980 SimHuman rule_v4 + 1621 SOP-CWS, jieba both sides |
-| Span | Gold-length complete NP (~4–12 tokens; median 4, mean ≈4.9) | short 2–8, no mid-word cuts, mark object of 熟悉 only |
+| File | `gold_canonical_v2.jsonl` (frozen; do not overwrite) | `test_lskt_v4_cws_simhuman980_hybrid.jsonl` |
+| Spans | Doccano Gold-length NPs | SOP v4 short spans + jieba, both sides |
+| Makeup | human-checked Gold | 980 SimHuman **rule_v4** + 1621 SOP-CWS |
 | Headline | ChatGPT typed **0.6365**; JobBERT 1M 3-seed **0.1288** | JobBERT 3M v4 exact **0.4331**; frozen ChatGPT dump+jieba exact **0.2854** / relaxed **0.6249** |
 
-**How Gold was actually made (do not rewrite history):** LLM silver from `prompt_template_rag.py` → `chinese_skillspan` (`@@span##[L|K|S|T]`, *minimal sufficient span*) → light Doccano check → Gold v2. Handbook A describes the **Gold / goldstyle operationalization**, not a word-for-word reprint of that silver API. The original silver API put language **certificates** in **L**; Gold-style / current Gold practice put CET-6 in **K**. Do **not** claim Handbook A = the original silver prompt.
+**Still true — write this honestly or reviewers will attack:**
 
-**Handbook B** matches LSKT v4 SOP (`GUIDELINES.md` + SOP extract prompt). The 980 SimHuman overlay is **rule_v4**, not a full human pass under Handbook B. Do **not** overwrite `gold_canonical_v2.jsonl`. Do **not** replace Gold v2 as the official gold.
-
-P2 LLM rows are **frozen old dumps** + jieba (old prompt, new gold). ChatGPT’s drop 0.6365 → 0.2854 is a **span-convention** effect, not a new `gpt-4o` run.
-
-**Forbidden:** one SOTA sentence that compares JobBERT **0.4331** (P2) with ChatGPT **0.6365** (P1). Future Gold v3 would be a **new file** + dual IAA under Handbook B; it does not exist yet.
-
-P0 PDF Table 3 (ChatGPT 0.6700 … Qwen 0.2130) stays frozen.
+- V4 hybrid is **not** human Doccano Gold. Do not call 980 a full human SOP pass.
+- Table 2 IAA (n=100, strict F1 0.532) measures **Gold-era** spans, not V4 hybrid spans. Do not invent a V4 IAA.
+- P2 LLM rows are **frozen old dumps** + jieba (old prompt, new gold). ChatGPT 0.6365 → 0.2854 is a **span-convention** drop, not a new `gpt-4o` run.
+- **Forbidden:** one SOTA sentence ranking JobBERT **0.4331** against ChatGPT **0.6365**.
+- PDF Table 3 (ChatGPT 0.6700 … Qwen 0.2130) stays frozen (old published protocol, Gold 2676).
+- Allowed on V4: JobBERT leads typed exact (0.4331); ChatGPT leads relaxed (0.6249). Caption must say frozen dumps + jieba.
 
 ### Question
 
-Where should Handbook A and Handbook B appear in a PeerJ CS dataset paper, and what must stay out of Methods so reviewers do not treat P2 as a rewrite of official Gold?
+Given that V4 is the **only** main protocol, how should a PeerJ CS dataset paper present: (i) the Doccano origin of the 2601 IDs, (ii) Handbook B as the reported SOP, (iii) Gold v2 F1 as appendix — without pretending V4 is a second human gold?
 
-Authors currently lean toward: **two short Methods subsections** (A then B) plus **two result tables**, with the English one-pagers also available as Supplemental Information. Critique that, then rank the options.
+### Options to rank (layout only; V4-main is fixed)
 
-### Options to rank
+**A. Main results = V4 table; Gold v2 unique-first + goldstyle encoder 3/5-seed = appendix; Methods = short provenance paragraph + Handbook B SOP.**
 
-**A. Two Methods subsections + two result tables (prior)**  
-- Methods: “Official Gold v2 (Handbook A)” then “Matched SOP+jieba protocol (Handbook B)”.  
-- Results: Gold v2 table vs matched-protocol table. Abstract: two sentences, one per protocol.  
-- English one-pagers: Supplemental Information (or a compact table of contrast examples in Methods).
+**B. Main results = V4 table; Gold v2 0.6365 stays in the main text as a second results subsection.** (Authors currently **do not** want this. Attack or defend.)
 
-**B. One merged “annotation guideline” subsection**  
-Rewrite A and B as a single evolving SOP. **This erases the Gold history.** Say so if you agree it is misleading.
+**C. Drop Gold v2 numbers entirely, keep only a citation to Doccano.** Risk: IAA Table 2 becomes unanchored.
 
-**C. Handbook B only, Gold v2 as a legacy footnote**  
-Treat P2 as the new official gold. **Authors reject this.** Confirm or dissent in one sentence.
-
-**D. Handbooks appendix-only; Methods stays at the old silver-prompt story**  
-Reviewers never see why encoder F1 jumps 0.13 → 0.43. Say whether that is acceptable for PeerJ CS.
-
-**E. Paste the Chinese one-pagers into the English PDF**  
-Venue is English. Flag this if it is the wrong register.
+**D. One main table with Gold v2 and V4 columns.** Authors reject cross-column ranking. Say if this is still a trap.
 
 ### Constraints
 
-- Dataset-paper identity: human Gold + IAA remain first-class. Handbook A must not look like a post-hoc rewrite of Doccano.
-- Encoder 0.43 is protocol-bound (Handbook B + jieba). Weak baseline ~0.13 stays on Handbook A gold.
-- Caption: 980 is SimHuman rule overlay, not full human SOP gold.
-- CET-6: Gold-style / both handbooks → **K**; original silver API → **L** (footnote only).
-- Do not invent a dual-IAA number for Handbook B; Table 2 IAA (n=100, strict F1 0.532) is Gold-era only.
-- Page budget: PeerJ CS can take two short subsections. Prefer contrast examples over dumping both full Chinese pages into the PDF.
+- Dataset-paper identity: say the **IDs** are human-adjudicated Gold v2; the **spans used for scoring** are V4 SOP+jieba.
+- Encoder 0.43 is protocol-matched (Handbook B train silver + jieba). Encoder ~0.13 on Gold v2 is appendix, a weak baseline on the source convention.
+- CET-6 → **L** in Handbook B (v4.2; restores original silver API). Gold v2 / Handbook A kept CET-6 as **K** (provenance only; do not relabel that file). ISO / OCJP stay **K**. Footnote ESCO *Language skills and knowledge*: language is both knowledge and skill, so L is its own branch.
+- Page budget: PeerJ CS can take one main table + appendix. Prefer one contrast-example table (2–3 rows) over pasting both Chinese pages.
 
 ### Deliverable (markdown in the chat)
 
-1. **Verdict:** rank A–E. Recommended default for camera-ready Methods.
-2. **Insertion map:** current tex section titles → proposed subsection titles. Quote 1–2 existing sentences that must be patched (old silver-prompt-only story).
-3. **Mock Methods skeleton:** headings + 4–8 English sentences per handbook (you may tighten the `.en.md` one-pagers; do not add new F1). Include **one contrast-example table** (2–3 rows).
-4. **What goes to Supplemental Information** vs main text.
-5. **Caption sentences** that stop (i) treating 980 as human SOP gold, (ii) ranking 0.4331 against 0.6365.
-6. **What not to write:** Handbook A = original `chinese_skillspan` silver API; Gold v3 already done; mixed SOTA.
+1. **Verdict:** rank A–D. Default for camera-ready given V4-only.
+2. **Abstract skeleton:** ≤3 sentences. Lead with V4 numbers only. No 0.6365.
+3. **Methods skeleton:** headings + 6–10 English sentences (tighten `handbook_B_sop_v4.en.md`; 2–3 sentences of Handbook A as provenance). One contrast-example table.
+4. **Table mock:** main V4 caption + appendix Gold v2 caption. Mark Claude/Kimi incomplete on V4 (98 / 293 empty).
+5. **IAA caption sentence** that stops readers from treating Table 2 as V4 IAA.
+6. **What not to write:** V4 = human gold; 980 fully human; mixed SOTA 0.4331 vs 0.6365; Handbook A = original silver API.
 7. Stop. Do not edit files.
 
 End prompt.

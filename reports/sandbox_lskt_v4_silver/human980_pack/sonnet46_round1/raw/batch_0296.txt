@@ -1,0 +1,10 @@
+[
+  {"id": "1859-s0000", "spans": [{"text": "SQL SERVER", "type": "S"}, {"text": "SQL编写", "type": "S"}, {"text": "数据清洗", "type": "S"}, {"text": "ETL", "type": "S"}, {"text": "数据业务建模", "type": "S"}, {"text": "OLAP", "type": "S"}, {"text": "DATA MINING", "type": "S"}], "comment": "补全半词；SQL SERVER是工具S；OLAP和DATA MINING是工具方法S不是理论K；删除服务器实操（太泛）"},
+  {"id": "1859-s0001", "spans": [{"text": "BI", "type": "S"}, {"text": "医疗大数据分析", "type": "S"}], "comment": "删除年限；补全半词；BI是工具S；医疗大数据分析是可执行技能S"},
+  {"id": "1860-s0000", "spans": [{"text": "三维建模", "type": "S"}], "comment": "只标能力要求；岗位职责整句不标"},
+  {"id": "1860-s0003", "spans": [{"text": "校对", "type": "S"}, {"text": "工艺", "type": "K"}], "comment": "职责句；只标图纸校对能力和工艺知识"},
+  {"id": "1860-s0006", "spans": [{"text": "非标设备", "type": "K"}, {"text": "自动化设备", "type": "K"}, {"text": "项目管理", "type": "S"}], "comment": "拆开并列；设备是领域知识K；项目管理是方法S"},
+  {"id": "1860-s0007", "spans": [{"text": "机械加工工艺", "type": "K"}], "comment": "补全半词；工艺知识是K"},
+  {"id": "1860-s0010", "spans": [{"text": "三维制图软件", "type": "S"}, {"text": "二维制图软件", "type": "S"}], "comment": "补全半词；拆开并列；软件是工具S"},
+  {"id": "1860-s0011", "spans": [{"text": "优化机械设计", "type": "S"}], "comment": "补全半词；优化设计是可执行技能S"}
+]

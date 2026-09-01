@@ -1,0 +1,265 @@
+{
+  "protocol": "JobBERT-zh 1M STL L/K/S/T vs joint CRF; V4 hybrid jieba bilateral",
+  "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/test_lskt_v4_cws_simhuman980_hybrid.jsonl",
+  "scorer": "cnss-lskt-1.2.0",
+  "seed": 42,
+  "paper_role": "appendix_backup",
+  "do_not_overwrite": [
+    "data/gold_canonical_v2.jsonl",
+    "output/jobbert_zh_1m/crf_lskt_v4_silver_seed42"
+  ],
+  "joint_1m_v4": {
+    "alignment_ok": true,
+    "typed_exact_p": 0.46852748504699515,
+    "typed_exact_r": 0.3925077547124791,
+    "typed_exact_f1": 0.4271617761620358,
+    "typed_relaxed_f1": 0.595170085692028,
+    "per_type_exact": {
+      "L": {
+        "precision": 0.5714285714285714,
+        "recall": 0.48484848484848486,
+        "f1": 0.5245901639344263,
+        "gold": 33,
+        "pred": 28,
+        "tp": 16
+      },
+      "K": {
+        "precision": 0.4767676767676768,
+        "recall": 0.3445255474452555,
+        "f1": 0.4,
+        "gold": 1370,
+        "pred": 990,
+        "tp": 472
+      },
+      "S": {
+        "precision": 0.447286012526096,
+        "recall": 0.41004784688995216,
+        "f1": 0.42785821268097846,
+        "gold": 2090,
+        "pred": 1916,
+        "tp": 857
+      },
+      "T": {
+        "precision": 0.5199306759098787,
+        "recall": 0.4297994269340974,
+        "f1": 0.4705882352941176,
+        "gold": 698,
+        "pred": 577,
+        "tp": 300
+      }
+    }
+  },
+  "stl": {
+    "L": {
+      "alignment_ok": true,
+      "typed_exact_p": 0.5172413793103449,
+      "typed_exact_r": 0.0035790980672870437,
+      "typed_exact_f1": 0.0071090047393364926,
+      "typed_relaxed_f1": 0.010900473933649289,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.5172413793103449,
+          "recall": 0.45454545454545453,
+          "f1": 0.4838709677419355,
+          "gold": 33,
+          "pred": 29,
+          "tp": 15
+        },
+        "K": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 1370,
+          "pred": 0,
+          "tp": 0
+        },
+        "S": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 2090,
+          "pred": 0,
+          "tp": 0
+        },
+        "T": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 698,
+          "pred": 0,
+          "tp": 0
+        }
+      }
+    },
+    "K": {
+      "alignment_ok": true,
+      "typed_exact_p": 0.49829351535836175,
+      "typed_exact_r": 0.10450966356478167,
+      "typed_exact_f1": 0.1727810650887574,
+      "typed_relaxed_f1": 0.2272189349112426,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 33,
+          "pred": 0,
+          "tp": 0
+        },
+        "K": {
+          "precision": 0.49829351535836175,
+          "recall": 0.3197080291970803,
+          "f1": 0.3895064473099155,
+          "gold": 1370,
+          "pred": 879,
+          "tp": 438
+        },
+        "S": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 2090,
+          "pred": 0,
+          "tp": 0
+        },
+        "T": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 698,
+          "pred": 0,
+          "tp": 0
+        }
+      }
+    },
+    "S": {
+      "alignment_ok": true,
+      "typed_exact_p": 0.43697945585785675,
+      "typed_exact_r": 0.18778334526366022,
+      "typed_exact_f1": 0.2626835781041389,
+      "typed_relaxed_f1": 0.37983978638184246,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 33,
+          "pred": 0,
+          "tp": 0
+        },
+        "K": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 1370,
+          "pred": 0,
+          "tp": 0
+        },
+        "S": {
+          "precision": 0.43697945585785675,
+          "recall": 0.376555023923445,
+          "f1": 0.40452325880236445,
+          "gold": 2090,
+          "pred": 1801,
+          "tp": 787
+        },
+        "T": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 698,
+          "pred": 0,
+          "tp": 0
+        }
+      }
+    },
+    "T": {
+      "alignment_ok": true,
+      "typed_exact_p": 0.5103092783505154,
+      "typed_exact_r": 0.07086614173228346,
+      "typed_exact_f1": 0.1244500314267756,
+      "typed_relaxed_f1": 0.16760946993505133,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 33,
+          "pred": 0,
+          "tp": 0
+        },
+        "K": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 1370,
+          "pred": 0,
+          "tp": 0
+        },
+        "S": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "gold": 2090,
+          "pred": 0,
+          "tp": 0
+        },
+        "T": {
+          "precision": 0.5103092783505154,
+          "recall": 0.42550143266475643,
+          "f1": 0.4640625,
+          "gold": 698,
+          "pred": 582,
+          "tp": 297
+        }
+      }
+    }
+  },
+  "combined": {
+    "alignment_ok": true,
+    "typed_exact_p": 0.4723086496577474,
+    "typed_exact_r": 0.36220472440944884,
+    "typed_exact_f1": 0.4099932478055368,
+    "typed_relaxed_f1": 0.5698852126941256,
+    "per_type_exact": {
+      "L": {
+        "precision": 0.5,
+        "recall": 0.42424242424242425,
+        "f1": 0.4590163934426229,
+        "gold": 33,
+        "pred": 28,
+        "tp": 14
+      },
+      "K": {
+        "precision": 0.5102286401925391,
+        "recall": 0.3094890510948905,
+        "f1": 0.3852794184461608,
+        "gold": 1370,
+        "pred": 831,
+        "tp": 424
+      },
+      "S": {
+        "precision": 0.43896976483762595,
+        "recall": 0.3751196172248804,
+        "f1": 0.40454076367389064,
+        "gold": 2090,
+        "pred": 1786,
+        "tp": 784
+      },
+      "T": {
+        "precision": 0.5202108963093146,
+        "recall": 0.42406876790830944,
+        "f1": 0.46724546172059983,
+        "gold": 698,
+        "pred": 569,
+        "tp": 296
+      }
+    }
+  },
+  "merge": {
+    "n_ids": 2601,
+    "n_overlap_dropped": 77,
+    "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/reports/sandbox_lskt_v4_silver/stl_v4/preds_cws/stl_combined.jsonl"
+  },
+  "move_to_main_if": "combined typed exact > joint 0.4272, or a type F1 clearly beats joint on that type without collapsing micro"
+}

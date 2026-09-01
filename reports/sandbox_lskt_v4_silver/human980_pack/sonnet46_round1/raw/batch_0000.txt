@@ -1,0 +1,10 @@
+[
+  {"id": "1801-s0004", "spans": [{"text": "开发", "type": "S"}, {"text": "策划", "type": "S"}, {"text": "论证", "type": "S"}], "comment": "拆分并列，删除半词"},
+  {"id": "1802-s0000", "spans": [{"text": "监控", "type": "S"}, {"text": "管理", "type": "S"}], "comment": "拆分并列，删除半词"},
+  {"id": "1802-s0005", "spans": [{"text": "培训", "type": "S"}, {"text": "技术支持", "type": "S"}], "comment": "删除半词，保留完整技能"},
+  {"id": "1802-s0006", "spans": [], "comment": "职责描述，非能力要求"},
+  {"id": "1802-s0007", "spans": [{"text": "系统管理", "type": "S"}, {"text": "虚拟化", "type": "K"}, {"text": "VMwareESX", "type": "S"}, {"text": "OpenVZ", "type": "S"}, {"text": "KVM", "type": "S"}, {"text": "BashShell", "type": "S"}, {"text": "Python", "type": "S"}, {"text": "Apache", "type": "S"}, {"text": "Tomcat", "type": "S"}, {"text": "Zabbix", "type": "S"}, {"text": "chef", "type": "S"}, {"text": "Jekins", "type": "S"}], "comment": "拆分并列，工具归S，删除半词和数字"},
+  {"id": "1802-s0008", "spans": [{"text": "网络管理", "type": "S"}, {"text": "网络工程", "type": "K"}, {"text": "AWS", "type": "S"}, {"text": "组织性", "type": "T"}, {"text": "主动性", "type": "T"}, {"text": "英文", "type": "L"}, {"text": "沟通能力", "type": "T"}, {"text": "团队合作精神", "type": "T"}], "comment": "拆分并列，删除半词和数字，英文归L"},
+  {"id": "1802-s0017", "spans": [], "comment": "公司简介"},
+  {"id": "1803-s0000", "spans": [{"text": "策划", "type": "S"}, {"text": "制定", "type": "S"}, {"text": "优化", "type": "S"}], "comment": "删除半词，拆分并列"}
+]

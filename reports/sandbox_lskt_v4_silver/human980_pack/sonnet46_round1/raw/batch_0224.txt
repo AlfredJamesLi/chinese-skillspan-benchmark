@@ -1,0 +1,10 @@
+[
+  {"id": "1843-s0002", "spans": [{"text": "数据管理", "type": "S"}, {"text": "研发规范", "type": "K"}, {"text": "质量规范", "type": "K"}], "comment": "补全半词质量规；数据平台相关是修饰语不标；数据管理工作拆为数据管理S"},
+  {"id": "1843-s0003", "spans": [{"text": "用户画像", "type": "K"}, {"text": "研发", "type": "S"}], "comment": "补全用户画像；业务团队数是半词且非技能删除；研发支撑保留研发S"},
+  {"id": "1843-s0004", "spans": [{"text": "Linux", "type": "S"}, {"text": "SQL", "type": "S"}, {"text": "ETL", "type": "S"}], "comment": "拆开具体工具；开发技术是动词短语不标"},
+  {"id": "1843-s0005", "spans": [{"text": "Hadoop", "type": "S"}, {"text": "Hive", "type": "S"}, {"text": "Spark", "type": "S"}, {"text": "HiveSQL", "type": "S"}, {"text": "Shell", "type": "S"}, {"text": "Python", "type": "S"}, {"text": "Perl", "type": "S"}], "comment": "并列拆开所有工具；性能调优经验删除；熟练使用删除"},
+  {"id": "1843-s0006", "spans": [{"text": "数据仓库", "type": "K"}], "comment": "数据仓库是领域知识K；建设基本思路和建设项目是描述不标"},
+  {"id": "1843-s0007", "spans": [{"text": "数据开发", "type": "S"}], "comment": "保留数据开发S；经验年限不标"},
+  {"id": "1843-s0008", "spans": [{"text": "团队合作精神", "type": "T"}, {"text": "分析能力", "type": "T"}, {"text": "沟通能力", "type": "T"}], "comment": "补全半词；拆开并列的分析及沟通"},
+  {"id": "1844-s0002", "spans": [], "comment": "整句是岗位职责描述，无具体技能要求"}
+]

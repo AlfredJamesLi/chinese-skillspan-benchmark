@@ -1,0 +1,10 @@
+[
+  {"id": "1928-s0000", "spans": [{"text": "方案设计", "type": "S"}, {"text": "开发", "type": "S"}], "comment": "拆开并列的技能"},
+  {"id": "1928-s0001", "spans": [], "comment": "岗位职责描述，不标"},
+  {"id": "1928-s0008", "spans": [{"text": "SQL", "type": "S"}, {"text": "excel", "type": "S"}, {"text": "算法模型", "type": "K"}], "comment": "拆开工具；动手能力强太泛；有效组织是职责描述"},
+  {"id": "1928-s0010", "spans": [{"text": "金融", "type": "K"}, {"text": "资产管理", "type": "K"}], "comment": "补全半词，拆开领域知识"},
+  {"id": "1929-s0003", "spans": [{"text": "流程机器人开发", "type": "S"}, {"text": "UiPath", "type": "S"}, {"text": "UiBot", "type": "S"}, {"text": "python-rpa", "type": "S"}], "comment": "拆开工具，去掉优先等修饰词"},
+  {"id": "1929-s0005", "spans": [{"text": "Java", "type": "S"}, {"text": "C#", "type": "S"}, {"text": "Python", "type": "S"}], "comment": "只标编程语言，流程方法太泛"},
+  {"id": "1929-s0010", "spans": [{"text": "Python框架", "type": "S"}, {"text": "pandas", "type": "S"}, {"text": "Mysql", "type": "S"}, {"text": "Mongodb", "type": "S"}, {"text": "Redis", "type": "S"}], "comment": "拆开各工具，去掉修饰词"},
+  {"id": "1929-s0011", "spans": [{"text": "程序开发", "type": "S"}, {"text": "文档撰写", "type": "S"}], "comment": "补全半词并拆开"}
+]

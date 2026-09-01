@@ -1,0 +1,10 @@
+[
+  {"id": "1879-s0001", "spans": [{"text": "hadoop", "type": "S"}, {"text": "hive", "type": "S"}, {"text": "storm", "type": "S"}, {"text": "python", "type": "S"}, {"text": "C++", "type": "S"}, {"text": "scala", "type": "S"}], "comment": "拆分并列工具和编程语言，删掉等常用修饰词和编程语言上位词"},
+  {"id": "1879-s0003", "spans": [{"text": "沟通能力", "type": "T"}, {"text": "团队协作能力", "type": "T"}], "comment": "补全半词团队协作能力；岗位职责句不标"},
+  {"id": "1879-s0004", "spans": [{"text": "建模", "type": "S"}, {"text": "召回算法", "type": "S"}, {"text": "排序算法", "type": "S"}], "comment": "只标可执行技能，特征用户Item样本模型等是职责对象不是能力要求"},
+  {"id": "1879-s0005", "spans": [], "comment": "岗位职责描述，无具体能力要求"},
+  {"id": "1880-s0000", "spans": [{"text": "3D视觉算法", "type": "S"}, {"text": "激光点云算法", "type": "S"}, {"text": "融合感知算法", "type": "S"}], "comment": "岗位职责句，但包含具体算法技能；补全激光点云算法"},
+  {"id": "1880-s0001", "spans": [], "comment": "岗位职责描述，无具体能力要求"},
+  {"id": "1880-s0002", "spans": [{"text": "架构设计", "type": "S"}, {"text": "算法框架预研", "type": "S"}, {"text": "代码开发", "type": "S"}], "comment": "拆分并列技能"},
+  {"id": "1880-s0003", "spans": [{"text": "硕士及以上学历", "type": "K"}, {"text": "机器人", "type": "K"}, {"text": "计算机", "type": "K"}, {"text": "自动化", "type": "K"}], "comment": "补全学历和自动化专业，拆分并列专业"}
+]

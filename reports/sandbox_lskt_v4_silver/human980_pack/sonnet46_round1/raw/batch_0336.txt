@@ -1,0 +1,10 @@
+[
+  {"id": "1866-s0008", "spans": [{"text": "Excel", "type": "S"}, {"text": "PPT", "type": "S"}, {"text": "SQL", "type": "S"}, {"text": "tableau", "type": "S"}, {"text": "hive", "type": "S"}, {"text": "编写商业数据分析报告", "type": "S"}, {"text": "python", "type": "S"}, {"text": "R", "type": "S"}], "comment": "拆开并列工具，补全跨度，移除者优先等修饰词"},
+  {"id": "1866-s0009", "spans": [{"text": "沟通能力", "type": "T"}, {"text": "获取", "type": "S"}, {"text": "整合", "type": "S"}, {"text": "分析", "type": "S"}, {"text": "清洗", "type": "S"}, {"text": "建模", "type": "S"}, {"text": "抗压能力", "type": "T"}], "comment": "补充清洗和建模，修正抗压能力跨度"},
+  {"id": "1867-s0000", "spans": [{"text": "大学本科及以上学历", "type": "K"}, {"text": "计算机相关专业", "type": "K"}], "comment": "学历和专业是K"},
+  {"id": "1867-s0002", "spans": [{"text": "Windows", "type": "S"}, {"text": "Linux", "type": "S"}, {"text": "服务器系统日常管理", "type": "S"}, {"text": "WindowsADDNSDHCP", "type": "S"}], "comment": "修正半词和串连问题，拆分系统名称"},
+  {"id": "1867-s0004", "spans": [{"text": "语言表达能力", "type": "T"}, {"text": "书写能力", "type": "T"}, {"text": "英文", "type": "L"}], "comment": "补全能力词，语种为L，阅读能力是语种应用不单独标"},
+  {"id": "1867-s0005", "spans": [{"text": "MCSE", "type": "K"}], "comment": "证书为K，移除括号和修饰词"},
+  {"id": "1868-s0004", "spans": [{"text": "本科及以上学历", "type": "K"}, {"text": "数据分析", "type": "S"}, {"text": "商业分析", "type": "S"}, {"text": "业务运营", "type": "S"}], "comment": "补全学历，修正半词，战略或分析部门是工作经历不是能力要求"},
+  {"id": "1868-s0005", "spans": [{"text": "数据获取", "type": "S"}, {"text": "提炼", "type": "S"}, {"text": "商业分析", "type": "S"}, {"text": "商业敏感度", "type": "T"}, {"text": "数据敏感度", "type": "T"}, {"text": "全局分析", "type": "T"}, {"text": "细节处理", "type": "T"}, {"text": "剖析商业问题", "type": "S"}], "comment": "拆分并列能力，敏感度是软技能T，分析视角和处理是特质"}
+]

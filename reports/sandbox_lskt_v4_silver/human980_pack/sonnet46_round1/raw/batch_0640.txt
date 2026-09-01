@@ -1,0 +1,10 @@
+[
+  {"id": "1924-s0009", "spans": [{"text": "沟通协调", "type": "T"}, {"text": "推动项目", "type": "T"}, {"text": "运营规划", "type": "K"}], "comment": "修正半词，拆分并列能力"},
+  {"id": "1924-s0010", "spans": [{"text": "认真细致", "type": "T"}, {"text": "逻辑清晰", "type": "T"}, {"text": "执行力", "type": "T"}], "comment": "修正半词，拆分并列特质"},
+  {"id": "1925-s0000", "spans": [{"text": "数据采集", "type": "S"}, {"text": "深度分析", "type": "S"}, {"text": "挖掘", "type": "S"}, {"text": "建模", "type": "S"}], "comment": "修正半词，拆分并列技能，不标领域词"},
+  {"id": "1925-s0001", "spans": [{"text": "分析", "type": "S"}, {"text": "挖掘", "type": "S"}, {"text": "建立数据分析体系", "type": "S"}, {"text": "撰写分析报告", "type": "S"}], "comment": "修正半词，拆分并列技能，只标技能不标对象"},
+  {"id": "1925-s0002", "spans": [{"text": "数据支持", "type": "S"}], "comment": "删除半词和领域词，保留技能"},
+  {"id": "1925-s0005", "spans": [{"text": "本科学历", "type": "K"}, {"text": "统计学", "type": "K"}, {"text": "数学", "type": "K"}, {"text": "计算机语言", "type": "K"}, {"text": "英语4级", "type": "K"}], "comment": "修正半词，拆分专业，英语等级证书归K"},
+  {"id": "1925-s0006", "spans": [{"text": "沟通能力", "type": "T"}, {"text": "抽取数据", "type": "S"}, {"text": "制作图表", "type": "S"}, {"text": "数字展示", "type": "S"}, {"text": "适应能力", "type": "T"}, {"text": "学习能力", "type": "T"}], "comment": "修正半词，拆分并列技能和特质，不标熟练等动词"},
+  {"id": "1925-s0008", "spans": [{"text": "数据分析", "type": "K"}, {"text": "数据挖掘理论", "type": "K"}, {"text": "数据库", "type": "S"}, {"text": "SQL", "type": "S"}, {"text": "统计", "type": "K"}, {"text": "数据挖掘软件", "type": "S"}], "comment": "修正半词，理论归K，工具归S，拆分并列项，不标熟悉使用等动词"}
+]

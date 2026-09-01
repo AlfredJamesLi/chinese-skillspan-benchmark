@@ -1,0 +1,51 @@
+% Previous source-imbalanced split (SkillSpan Table 2 analogue; appendix only).
+% Train/dev = old LSKT v4 silver; Test-V4 = hybrid 2601 (SOP-CWS + 980 SimHuman, jieba).
+% Do not present these counts as the current corpus table.
+\definecolor{totcyan}{RGB}{210,235,242}
+\begin{table}[t]
+\centering
+\caption{Original source-imbalanced split (appendix).
+Graduate recruitment occurs only in training; Cloud and public-sector posts are absent from training.
+These counts are provenance for the V4 hybrid evaluation gold (2{,}601 IDs), not the source-stratified \texttt{repartition\_v1} table.}
+\label{tab:dataset-stats-old}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{ll rrrr | r}
+\toprule
+\multicolumn{2}{l}{\textbf{Statistics} $\downarrow$ / src. $\rightarrow$} & \textbf{AI} & \textbf{Cloud} & \textbf{Public} & \textbf{Grad} & \cellcolor{totcyan}{\textbf{Total}} \\
+\midrule
+\multirow{10}{*}{\rotatebox{90}{\textbf{Train (v4 silver)}}} & # Posts & 630 & --- & --- & 970 & \cellcolor{totcyan}{1,600} \\
+ & # Sentences & 7,148 & --- & --- & 10,312 & \cellcolor{totcyan}{17,460} \\
+ & # Tokens & 261,788 & --- & --- & 351,163 & \cellcolor{totcyan}{612,951} \\
+ & # Skill spans (S+T) & 9,780 & --- & --- & 8,864 & \cellcolor{totcyan}{18,644} \\
+ & # Knowledge spans (L+K) & 4,047 & --- & --- & 2,562 & \cellcolor{totcyan}{6,609} \\
+ & # L & 77 & --- & --- & 262 & \cellcolor{totcyan}{339} \\
+ & # K & 3,970 & --- & --- & 2,300 & \cellcolor{totcyan}{6,270} \\
+ & # S & 7,357 & --- & --- & 5,058 & \cellcolor{totcyan}{12,415} \\
+ & # T & 2,423 & --- & --- & 3,806 & \cellcolor{totcyan}{6,229} \\
+ & # Sentences with overlap & 0 & --- & --- & 0 & \cellcolor{totcyan}{0} \\
+\midrule
+\multirow{10}{*}{\rotatebox{90}{\textbf{Dev (v4 silver)}}} & # Posts & 200 & --- & --- & --- & \cellcolor{totcyan}{200} \\
+ & # Sentences & 2,143 & --- & --- & --- & \cellcolor{totcyan}{2,143} \\
+ & # Tokens & 79,783 & --- & --- & --- & \cellcolor{totcyan}{79,783} \\
+ & # Skill spans (S+T) & 2,967 & --- & --- & --- & \cellcolor{totcyan}{2,967} \\
+ & # Knowledge spans (L+K) & 1,411 & --- & --- & --- & \cellcolor{totcyan}{1,411} \\
+ & # L & 32 & --- & --- & --- & \cellcolor{totcyan}{32} \\
+ & # K & 1,379 & --- & --- & --- & \cellcolor{totcyan}{1,379} \\
+ & # S & 2,244 & --- & --- & --- & \cellcolor{totcyan}{2,244} \\
+ & # T & 723 & --- & --- & --- & \cellcolor{totcyan}{723} \\
+ & # Sentences with overlap & 0 & --- & --- & --- & \cellcolor{totcyan}{0} \\
+\midrule
+\multirow{10}{*}{\rotatebox{90}{\textbf{Test-V4 (paper gold)}}} & # Posts & 140 & 40 & 20 & --- & \cellcolor{totcyan}{200} \\
+ & # Sentences & 1,407 & 457 & 737 & --- & \cellcolor{totcyan}{2,601} \\
+ & # Tokens & 56,725 & 16,712 & 34,050 & --- & \cellcolor{totcyan}{107,487} \\
+ & # Skill spans (S+T) & 2,051 & 563 & 174 & --- & \cellcolor{totcyan}{2,788} \\
+ & # Knowledge spans (L+K) & 973 & 257 & 173 & --- & \cellcolor{totcyan}{1,403} \\
+ & # L & 22 & 10 & 1 & --- & \cellcolor{totcyan}{33} \\
+ & # K & 951 & 247 & 172 & --- & \cellcolor{totcyan}{1,370} \\
+ & # S & 1,535 & 425 & 130 & --- & \cellcolor{totcyan}{2,090} \\
+ & # T & 516 & 138 & 44 & --- & \cellcolor{totcyan}{698} \\
+ & # Sentences with overlap & 0 & 0 & 0 & --- & \cellcolor{totcyan}{0} \\
+\bottomrule
+\end{tabular}
+\end{table}

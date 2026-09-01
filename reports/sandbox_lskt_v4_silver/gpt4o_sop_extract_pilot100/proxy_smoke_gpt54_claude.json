@@ -1,0 +1,69 @@
+{
+  "prompt": "SOP extract v4, 1 sentence, no gold",
+  "n_ok": 4,
+  "usable": [
+    {
+      "base": "https://claudeed.ysaikeji.cn",
+      "model": "gpt-5.4",
+      "upstream": "gpt-5.4"
+    },
+    {
+      "base": "https://claudeed.ysaikeji.cn",
+      "model": "claude-haiku-4-5",
+      "upstream": "claude-haiku-4-5-20251001"
+    },
+    {
+      "base": "https://claudeed.ysaikeji.cn",
+      "model": "claude-3-5-haiku-20241022",
+      "upstream": "claude-haiku-4-5-20251001"
+    },
+    {
+      "base": "https://claudeed.ysaikeji.cn",
+      "model": "claude-sonnet-4-6",
+      "upstream": "claude-sonnet-4-6"
+    }
+  ],
+  "calls": [
+    {
+      "base": "https://claudeed.ysaikeji.cn",
+      "model": "gpt-5.4",
+      "ok": true,
+      "status": 200,
+      "elapsed_s": 3.41,
+      "upstream": "gpt-5.4",
+      "preview": "[\n  {\n    \"id\": \"smoke-1\",\n    \"spans\": [\n      {\n        \"text\": \"Python\",\n        \"type\": \"S\"\n      },\n      {\n        \"text\": \"英语六级\",\n        \"type\": \"K\"\n      },\n      {\n        \"text\": \"沟通能力\",\n        \"type\": \"T\"\n      }\n    ],\n    \"comment\": \"并列拆分，去掉程度词\"\n  }\n]",
+      "err": null
+    },
+    {
+      "base": "https://claudeed.ysaikeji.cn",
+      "model": "claude-haiku-4-5",
+      "ok": true,
+      "status": 200,
+      "elapsed_s": 4.92,
+      "upstream": "claude-haiku-4-5-20251001",
+      "preview": "Acknowledged. I am Claude Code, Anthropic's official CLI for Claude, powered by Haiku 4.5 (claude-haiku-4-5-20251001). I will now follow the LSKT span annotation guidelines for Chinese job advertisements.\n\n[{\"id\": \"smoke-1\", \"spans\": [{\"text\": \"Python\", \"type\": \"S\"}, {\"text\": \"英语六级\", \"type\": \"K\"}, {\"text\": \"沟通能力\", \"type\": \"T\"}], \"comment\": \"Python为编程语言S；英语六级为证书K；沟通能力为软技能T\"}]",
+      "err": null
+    },
+    {
+      "base": "https://claudeed.ysaikeji.cn",
+      "model": "claude-3-5-haiku-20241022",
+      "ok": true,
+      "status": 200,
+      "elapsed_s": 3.77,
+      "upstream": "claude-haiku-4-5-20251001",
+      "preview": "I'll complete the requested task.\n\n```json\n[{\"id\": \"smoke-1\", \"spans\": [{\"text\": \"Python\", \"type\": \"S\"}, {\"text\": \"英语六级\", \"type\": \"K\"}, {\"text\": \"沟通能力\", \"type\": \"T\"}], \"comment\": \"编程语言S，英语等级证书K，软技能T\"}]\n```",
+      "err": null
+    },
+    {
+      "base": "https://claudeed.ysaikeji.cn",
+      "model": "claude-sonnet-4-6",
+      "ok": true,
+      "status": 200,
+      "elapsed_s": 7.4,
+      "upstream": "claude-sonnet-4-6",
+      "preview": "[{\"id\": \"smoke-1\", \"spans\": [{\"text\": \"Python\", \"type\": \"S\"}, {\"text\": \"英语六级\", \"type\": \"K\"}, {\"text\": \"沟通能力\", \"type\": \"T\"}], \"comment\": \"熟悉后跟对象，英语六级为等级证书归K，沟通能力为软技能\"}]",
+      "err": null
+    }
+  ],
+  "note": "Connectivity smoke only. Not a 2601 run. Do not overwrite frozen dumps."
+}

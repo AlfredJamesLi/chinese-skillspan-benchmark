@@ -1,0 +1,7 @@
+system,typed_exact_f1,typed_relaxed_f1,L_f1,K_f1,S_f1,T_f1,note
+Joint CRF JobBERT 1M v4,0.427162,0.595170,0.524590,0.400000,0.427858,0.470588,existing main-protocol row 0.4272
+STL-L,0.007109,0.010900,0.483871,0.000000,0.000000,0.000000,head trained on L only; other-type F1 near 0 is expected
+STL-K,0.172781,0.227219,0.000000,0.389506,0.000000,0.000000,head trained on K only; other-type F1 near 0 is expected
+STL-S,0.262684,0.379840,0.000000,0.000000,0.404523,0.000000,head trained on S only; other-type F1 near 0 is expected
+STL-T,0.124450,0.167609,0.000000,0.000000,0.000000,0.464062,head trained on T only; other-type F1 near 0 is expected
+STL combined,0.409993,0.569885,0.459016,0.385279,0.404541,0.467245,greedy non-overlap; dropped 77 overlapping spans

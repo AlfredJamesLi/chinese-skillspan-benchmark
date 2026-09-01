@@ -1,0 +1,10 @@
+[
+  {"id": "1827-s0006", "spans": [{"text": "中英文分词", "type": "S"}, {"text": "词性标注", "type": "S"}, {"text": "实体识别", "type": "S"}, {"text": "句法分析", "type": "S"}, {"text": "自动文本分类", "type": "S"}, {"text": "关键值提取", "type": "S"}, {"text": "语义分析方法", "type": "K"}, {"text": "相似度计算", "type": "K"}, {"text": "本体理论", "type": "K"}, {"text": "语义推理", "type": "K"}], "comment": "中英文分词等NLP技术是可执行技能S；语义分析方法、本体理论等是领域知识K；补全半词"},
+  {"id": "1827-s0010", "spans": [{"text": "研发", "type": "S"}], "comment": "研发是可执行技能，不标经验年限"},
+  {"id": "1827-s0011", "spans": [], "comment": "只有年限和学历要求，年限不标"},
+  {"id": "1828-s0000", "spans": [{"text": "C\\C++", "type": "S"}, {"text": "python", "type": "S"}, {"text": "算法", "type": "K"}, {"text": "数据结构", "type": "K"}], "comment": "补全半词python语言；算法和数据结构是计算机基础知识K"},
+  {"id": "1828-s0001", "spans": [{"text": "Linux", "type": "S"}, {"text": "makefile", "type": "S"}, {"text": "gcc", "type": "S"}, {"text": "g++", "type": "S"}, {"text": "ARM平台编程", "type": "S"}], "comment": "工具和平台编程都是S；拆开并列；补全半词"},
+  {"id": "1828-s0002", "spans": [{"text": "Tensorflow", "type": "S"}, {"text": "Pytorch", "type": "S"}, {"text": "Caffe", "type": "S"}], "comment": "深度学习框架是具体工具S；标注框架名称而非描述性短语"},
+  {"id": "1829-s0000", "spans": [{"text": "营销开发", "type": "S"}, {"text": "销售", "type": "S"}], "comment": "这是职责描述句；国家地名、网络电话微信等通用通讯方式不标；只标核心职业技能"},
+  {"id": "1829-s0001", "spans": [{"text": "理解客户需求", "type": "T"}], "comment": "理解客户需求是软技能T；记录是职责动作不标"}
+]

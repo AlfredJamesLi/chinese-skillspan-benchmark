@@ -1,16 +1,23 @@
 # Unified LSKT scorer (`cnss-lskt-1.2.0`)
 
-Official human Gold is **canonical** `data/gold_canonical_v2.jsonl` (2601 unique IDs, sha256 `7a26e32b…504ff6`).  
-Do not score against `gold_canonical_v1.jsonl` for paper tables. Do not overwrite Gold v2.
+**Paper main gold (2026-08-27):** `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` (V4 SOP+jieba; 2601 IDs derived from Gold v2). Same `--align-mode official`. Do **not** call this human Doccano Gold.
 
-Matched SOP+jieba test gold (not human Gold): `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl`. Same scorer, same `--align-mode official`.
+**Provenance file (do not overwrite):** `data/gold_canonical_v2.jsonl` (2601 unique IDs, sha256 `7a26e32b…504ff6`). Use for appendix / construction-history scores only. Do not score paper main tables against `gold_canonical_v1.jsonl`.
 
 ```bash
+# paper main
+python score_lskt.py \
+  --gold ../data/test_lskt_v4_cws_simhuman980_hybrid.jsonl \
+  --pred PRED_jieba_snapped.jsonl \
+  --align-mode official \
+  --out report.json
+
+# appendix (Gold v2)
 python score_lskt.py \
   --gold ../data/gold_canonical_v2.jsonl \
   --pred PRED.jsonl \
   --align-mode official \
-  --out report.json
+  --out report_g2.json
 
 python test_regression.py
 ```

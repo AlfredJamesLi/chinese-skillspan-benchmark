@@ -1,0 +1,10 @@
+[
+  {"id": "1872-s0000", "spans": [], "comment": "地点和职责描述"},
+  {"id": "1872-s0003", "spans": [{"text": "计算机网络", "type": "K"}, {"text": "网络原理", "type": "K"}, {"text": "服务器", "type": "S"}, {"text": "存储", "type": "S"}], "comment": "修正半词，工具归S"},
+  {"id": "1872-s0004", "spans": [{"text": "路由器", "type": "S"}, {"text": "交换机", "type": "S"}, {"text": "防火墙", "type": "S"}, {"text": "入侵检测", "type": "S"}, {"text": "数据库审计", "type": "S"}, {"text": "局域网组网技术", "type": "K"}, {"text": "局域网", "type": "K"}, {"text": "广域网", "type": "K"}], "comment": "修正半词，设备归S，理论归K"},
+  {"id": "1872-s0005", "spans": [], "comment": "值班、应急属于工作安排而非能力要求"},
+  {"id": "1872-s0006", "spans": [{"text": "大专以上学历", "type": "K"}, {"text": "计算机相关专业", "type": "K"}], "comment": "补充学历"},
+  {"id": "1872-s0007", "spans": [{"text": "机房建设", "type": "S"}, {"text": "服务器部署", "type": "S"}, {"text": "网络通信", "type": "K"}, {"text": "系统安全", "type": "K"}, {"text": "windowsserver", "type": "S"}, {"text": "linux", "type": "S"}, {"text": "linux命令", "type": "S"}, {"text": "交换机", "type": "S"}, {"text": "路由器", "type": "S"}, {"text": "防火墙", "type": "S"}, {"text": "门禁", "type": "S"}, {"text": "监控", "type": "S"}, {"text": "TCP/IP", "type": "K"}, {"text": "HTTP", "type": "K"}, {"text": "VRRP", "type": "K"}], "comment": "修正半词和串号，操作系统、设备归S，协议归K"},
+  {"id": "1872-s0008", "spans": [{"text": "管理", "type": "S"}, {"text": "配置", "type": "S"}, {"text": "排错", "type": "S"}, {"text": "维护", "type": "S"}], "comment": "补充维护"},
+  {"id": "1872-s0012", "spans": [{"text": "PMP", "type": "K"}, {"text": "软考项目经理", "type": "K"}], "comment": "证书归K，网络安全太泛化删除"}
+]

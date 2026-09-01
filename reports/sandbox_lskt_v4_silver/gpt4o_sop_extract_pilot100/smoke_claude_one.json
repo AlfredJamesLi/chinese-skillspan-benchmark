@@ -1,0 +1,63 @@
+{
+  "base": "https://claudeplus.ysaikeji.cn",
+  "id": "1802-s0004",
+  "sentence": "5、负责多平台或关键应用程序的维护和支持服务。",
+  "calls": {
+    "claude-sonnet-4-6": {
+      "status": 200,
+      "ok": true,
+      "elapsed_s": 5.66,
+      "upstream": "claude-sonnet-4-6",
+      "usage": {
+        "prompt_tokens": 4346,
+        "completion_tokens": 43,
+        "total_tokens": 4389,
+        "usage_semantic": "openai",
+        "usage_source": "anthropic",
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cached_creation_tokens": 2420,
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "input_tokens": 4346,
+        "output_tokens": 0,
+        "input_tokens_details": null,
+        "claude_cache_creation_5_m_tokens": 2420,
+        "claude_cache_creation_1_h_tokens": 0
+      },
+      "preview": "{\"id\":\"1802-s0004\",\"spans\":[{\"text\":\"多平台或关键应用程序的维护和支持\",\"type\":\"S\"}]}"
+    },
+    "claude-opus-4-7": {
+      "status": null,
+      "ok": false,
+      "elapsed_s": 90.28,
+      "err": "TimeoutError: The read operation timed out"
+    },
+    "claude-sonnet-4-5": {
+      "status": 503,
+      "ok": false,
+      "elapsed_s": 5.13,
+      "err": "{\"error\":{\"message\":\"No available channel for model claude-sonnet-4-5 under group default (distributor) (request id: 20260825152113617711038268d9d6zm5VouGR)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"model_not_found\"}}"
+    },
+    "claude-haiku-4-5": {
+      "status": 503,
+      "ok": false,
+      "elapsed_s": 0.87,
+      "err": "{\"error\":{\"message\":\"No available channel for model claude-haiku-4-5 under group default (distributor) (request id: 202608251521145205291448268d9d6TjW08qOP)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"model_not_found\"}}"
+    },
+    "claude-3-5-haiku-20241022": {
+      "status": 403,
+      "ok": false,
+      "elapsed_s": 1.1,
+      "err": "{\"error\":{\"message\":\"无权访问 claudevip 分组 (request id: 202608251521157981272248268d9d62X18WvQA)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"\"}}"
+    }
+  }
+}

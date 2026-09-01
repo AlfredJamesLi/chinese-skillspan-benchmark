@@ -1,0 +1,10 @@
+[
+  {"id": "1961-s0003", "spans": [{"text": "普通话", "type": "L"}, {"text": "思维", "type": "T"}, {"text": "语言表达", "type": "T"}], "comment": "补全半词；思维和语言表达拆开为软技能"},
+  {"id": "1961-s0004", "spans": [{"text": "office办公软件", "type": "S"}], "comment": "去掉动词操作"},
+  {"id": "1963-s0000", "spans": [{"text": "自动化部署", "type": "S"}, {"text": "监控", "type": "S"}], "comment": "运维平台的研发是岗位职责不标；在线服务可是半词删除"},
+  {"id": "1963-s0001", "spans": [{"text": "Kubernetes", "type": "S"}], "comment": "与开发工作是半词删除；只标工具本身"},
+  {"id": "1963-s0002", "spans": [], "comment": "云平台资源和账单是岗位职责描述不标"},
+  {"id": "1963-s0003", "spans": [{"text": "运维自动化", "type": "K"}], "comment": "补全半词；领域知识归K"},
+  {"id": "1963-s0004", "spans": [{"text": "Linux", "type": "S"}, {"text": "LVS", "type": "S"}, {"text": "Nginx", "type": "S"}, {"text": "Tomcat", "type": "S"}, {"text": "PHP", "type": "S"}, {"text": "Python", "type": "S"}, {"text": "配置调优", "type": "S"}], "comment": "去掉年限和半词；拆开并列工具；补全配置调优"},
+  {"id": "1963-s0005", "spans": [{"text": "Puppet", "type": "S"}, {"text": "SaltStack", "type": "S"}, {"text": "Ansible", "type": "S"}, {"text": "Jenkins", "type": "S"}], "comment": "拆开并列工具；只标工具名"}
+]

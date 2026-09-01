@@ -1,6 +1,6 @@
 # GitHub 私有仓库备份
 
-**状态：本 commit 备份手册 A/B 各一页 + Codex Methods 咨询稿 `CODEX_PROMPT_HANDBOOK.md`（不改 Overleaf tex）**
+**状态：本工作区已把论文主评测定为 V4 only（Gold v2 文件不覆盖，F1 进附录）。尚未 push 本决定。**
 
 - 仓库：https://github.com/AlfredJamesLi/chinese-skillspan-benchmark （private）
 - 分支：`main`（与本地同步）

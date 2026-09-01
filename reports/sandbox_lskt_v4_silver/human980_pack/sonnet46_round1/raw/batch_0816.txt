@@ -1,0 +1,10 @@
+[
+  {"id": "1956-s0003", "spans": [{"text": "IT资源的运营管理", "type": "S"}, {"text": "IT运维", "type": "S"}], "comment": "拆分并列能力"},
+  {"id": "1956-s0004", "spans": [{"text": "桌面系统维护", "type": "S"}, {"text": "桌面基础网络支持", "type": "S"}, {"text": "桌面终端的硬件维护", "type": "S"}], "comment": "补全半词并拆分并列"},
+  {"id": "1956-s0005", "spans": [{"text": "视频会议", "type": "S"}, {"text": "电话会议运维", "type": "S"}, {"text": "维护", "type": "S"}], "comment": "补全半词并拆分"},
+  {"id": "1956-s0008", "spans": [{"text": "安装", "type": "S"}, {"text": "配置", "type": "S"}, {"text": "调试", "type": "S"}, {"text": "故障处理", "type": "S"}], "comment": "补全半词,拆分并列技能"},
+  {"id": "1956-s0009", "spans": [{"text": "网络基础", "type": "K"}, {"text": "诊断", "type": "S"}, {"text": "处理", "type": "S"}], "comment": "补全半词并拆分"},
+  {"id": "1956-s0010", "spans": [{"text": "责任心", "type": "T"}, {"text": "分析和解决问题的能力", "type": "T"}, {"text": "沟通能力", "type": "T"}, {"text": "协作精神", "type": "T"}], "comment": "补全半词并拆分并列特质"},
+  {"id": "1957-s0000", "spans": [{"text": "系统升级", "type": "S"}, {"text": "扩容", "type": "S"}, {"text": "测试", "type": "S"}, {"text": "调整", "type": "S"}, {"text": "网络设置", "type": "S"}, {"text": "维护", "type": "S"}, {"text": "优化", "type": "S"}, {"text": "安全监控", "type": "S"}, {"text": "系统性能管理", "type": "S"}], "comment": "补全半词,拆分所有并列技能,删除开发需求"},
+  {"id": "1957-s0001", "spans": [{"text": "Linux", "type": "S"}, {"text": "Unix", "type": "S"}, {"text": "zabbix", "type": "S"}, {"text": "nagios", "type": "S"}, {"text": "ELK", "type": "S"}], "comment": "操作系统和工具归S,补全半词并拆分"}
+]

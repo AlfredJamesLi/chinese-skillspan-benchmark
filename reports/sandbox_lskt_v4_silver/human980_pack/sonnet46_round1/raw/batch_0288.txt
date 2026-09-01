@@ -1,0 +1,10 @@
+[
+  {"id": "1856-s0000", "spans": [{"text": "全日制大专及以上学历", "type": "K"}], "comment": "删除半词、福利句、宣传语；保留学历要求"},
+  {"id": "1857-s0000", "spans": [{"text": "机器学习", "type": "K"}, {"text": "规则推理", "type": "S"}, {"text": "图论挖掘", "type": "S"}], "comment": "删除半词和整句职责描述；保留独立技能对象"},
+  {"id": "1857-s0001", "spans": [{"text": "计算机", "type": "K"}, {"text": "数学", "type": "K"}, {"text": "电子类", "type": "K"}, {"text": "研究生以上学历", "type": "K"}, {"text": "机器学习", "type": "K"}, {"text": "数据挖掘", "type": "K"}, {"text": "自然语言处理", "type": "K"}, {"text": "linux", "type": "S"}, {"text": "Java", "type": "S"}, {"text": "C++", "type": "S"}, {"text": "Hadoop", "type": "S"}, {"text": "Spark", "type": "S"}, {"text": "Hive", "type": "S"}], "comment": "补全半词；拆开并列专业；框架归S；领域理论归K"},
+  {"id": "1858-s0002", "spans": [], "comment": "整句职责描述，无独立技能"},
+  {"id": "1858-s0005", "spans": [{"text": "售前支持", "type": "S"}, {"text": "产品讲解", "type": "S"}, {"text": "演示", "type": "S"}], "comment": "补全半词；拆开独立技能"},
+  {"id": "1858-s0008", "spans": [{"text": "计算机网络", "type": "K"}, {"text": "云计算", "type": "K"}], "comment": "补全半词；保留领域知识"},
+  {"id": "1858-s0009", "spans": [], "comment": "兴趣和意愿是口号，不标"},
+  {"id": "1858-s0010", "spans": [{"text": "沟通能力", "type": "T"}, {"text": "培训演讲能力", "type": "T"}, {"text": "信息收集", "type": "T"}, {"text": "分析能力", "type": "T"}, {"text": "文档撰写能力", "type": "T"}], "comment": "补全半词；拆开并列软技能"}
+]

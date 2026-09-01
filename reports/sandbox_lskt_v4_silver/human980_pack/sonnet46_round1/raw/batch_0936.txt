@@ -1,0 +1,10 @@
+[
+  {"id": "1978-s0001", "spans": [{"text": "系统分析", "type": "S"}, {"text": "架构设计", "type": "S"}, {"text": "多线程", "type": "K"}, {"text": "高并发", "type": "K"}, {"text": "高可用性", "type": "K"}, {"text": "高扩展性", "type": "K"}], "comment": "补全半词；拆开并列；系统架构设计类归S"},
+  {"id": "1978-s0004", "spans": [{"text": "DDD领域建模", "type": "K"}, {"text": "scrum敏捷开发", "type": "S"}], "comment": "补全半词；DDD领域建模是理论归K，敏捷开发是方法归S"},
+  {"id": "1978-s0005", "spans": [{"text": "SaaS构架", "type": "K"}, {"text": "开发SaaS服务系统", "type": "S"}], "comment": "补全半词；理解SaaS构架是领域知识归K，不标理解动词"},
+  {"id": "1979-s0000", "spans": [{"text": "保障", "type": "S"}], "comment": "补全半词删除无关部分；保障是可执行技能归S；驻厂设备是职责上下文不标"},
+  {"id": "1979-s0001", "spans": [{"text": "协同", "type": "T"}, {"text": "积极响应", "type": "T"}], "comment": "拆开并列；协同和响应都是软技能"},
+  {"id": "1979-s0004", "spans": [{"text": "生物", "type": "K"}, {"text": "化工", "type": "K"}, {"text": "专科及以上学历", "type": "K"}], "comment": "补全专业名；拆开并列专业；添加学历"},
+  {"id": "1979-s0006", "spans": [{"text": "动手能力", "type": "T"}, {"text": "英语", "type": "L"}, {"text": "交流能力", "type": "T"}], "comment": "动手能力是特质归T；英语是语种归L；文献阅读能力和交流能力并列，交流能力归T"},
+  {"id": "1979-s0007", "spans": [{"text": "细致", "type": "T"}, {"text": "严谨", "type": "T"}, {"text": "责任感", "type": "T"}], "comment": "拆开并列；都是软技能特质"}
+]

@@ -7,18 +7,18 @@ Extracted from uploaded PDF:
 Venue: **PeerJ Computer Science** (submission target). The extracted PDF filename still contains DASFAA 2026; treat that as a draft filename only. Task: Chinese JobSkillNER, ESCO-1.20, flat **LSKT** (L/K/S/T).  
 Metrics in paper: Exact-span F1 (S-F1), Relaxed F1 (IoU≥0.5), Concept Accuracy.
 
-## Dual handbook (Methods source; not a new F1 table)
+## Dual handbook (V4 is the paper main protocol; 2026-08-27)
 
-Do not merge. Do not overwrite `data/gold_canonical_v2.jsonl`.
+V4 hybrid is **derived from the same 2601 Gold v2 IDs**. Do not overwrite `data/gold_canonical_v2.jsonl`. Do not call the hybrid human Doccano Gold. 980 = SimHuman rule_v4, not a full human SOP pass.
 
-| | Handbook A (P1) | Handbook B (P2) |
+| | Handbook A (provenance) | Handbook B (**paper main**) |
 |---|---|---|
 | Pages | `notes/handbooks/handbook_A_gold_v2.md` (+ `.en.md`) | `notes/handbooks/handbook_B_sop_v4.md` (+ `.en.md`) |
-| Test gold | `gold_canonical_v2.jsonl` (2601) | hybrid 2601 = 980 SimHuman rule_v4 + 1621 SOP-CWS |
-| Span | Gold-length NP (~4–12; median 4) | short 2–8, 禁半词, jieba both sides |
-| Headline | ChatGPT typed **0.6365**; encoder 3-seed **0.1288** | JobBERT 3M v4 exact **0.4331**; ChatGPT dump+jieba exact **0.2854** |
+| Test gold | `gold_canonical_v2.jsonl` (2601, frozen) | hybrid 2601 = 980 SimHuman rule_v4 + 1621 SOP-CWS |
+| Paper slot | Methods history + **appendix** F1 | **abstract / main results** |
+| Headline | ChatGPT typed **0.6365**; encoder 3-seed **0.1288** | JobBERT 3M v4 exact **0.4331**; ChatGPT dump+jieba exact **0.2854** / relaxed **0.6249** |
 
-Handbook A is the Gold / goldstyle operationalization, **not** a reprint of `prompt_template_rag.py`. The 980 overlay is **not** full human SOP gold. Codex consult: `overleaf_cursor_bundle/CODEX_PROMPT_HANDBOOK.md`.
+Forbidden: one SOTA sentence that ranks **0.4331** against **0.6365**. Table 2 IAA is Gold-era, not V4 spans. Codex: `overleaf_cursor_bundle/CODEX_PROMPT_HANDBOOK.md`.
 
 ## Table 1 — corpus (paper)
 
@@ -260,7 +260,7 @@ Allowed claim: full-n SOP extract re-calls **did not** beat frozen ChatGPT P2 ex
 
 CSV: `tables/appendix_workload_vs_skillspan.csv`. Source for SkillSpan counts: Zhang et al. NAACL 2022 (391 English JPs, 14.5K sentences). Do **not** write SkillSpan English span-F1 next to our Gold v2 0.1288 as the same task.
 
-Allowed main-text sentence: relative to SkillSpan, this resource is larger (17,460 training sentences vs 14.5K annotated sentences in total), uses a four-type LSKT schema rather than two nested labels, reports two evaluation protocols, includes Chinese DAPT at 1M and 3M plus encoder ablations with three seeds, a five-seed JobBERT 1M goldstyle run (0.1257±0.0062), and evaluates frozen and re-prompted LLMs that SkillSpan did not study. We do **not** clone SpanBERT-from-scratch or their 4×STL/MTL grid. The four-encoder ranking stays 3-seed (JobBERT 1M **0.1288**).
+Allowed main-text sentence: relative to SkillSpan, this resource is larger (17,460 training sentences vs 14.5K annotated sentences in total), uses a four-type LSKT schema rather than two nested labels, reports a V4 SOP+jieba evaluation gold derived from the same 2601 Gold v2 IDs, includes Chinese DAPT at 1M and 3M plus encoder ablations with three seeds, a five-seed JobBERT 1M goldstyle run (0.1257±0.0062, **Gold v2 appendix**), and evaluates frozen and re-prompted LLMs that SkillSpan did not study. We do **not** clone SpanBERT-from-scratch or their 4×STL/MTL grid. Abstract SOTA uses V4: JobBERT 3M exact **0.4331**, ChatGPT relaxed **0.6249**. Do not write Gold v2 ChatGPT **0.6365** as the main SOTA.
 
 ## Appendix — typed P/R (Gold v2; SkillSpan Table 6 analogue)
 
@@ -337,6 +337,95 @@ CSV: `tables/appendix_pr_p2_matched.csv` (from `hybrid_cws_simhuman980_all_model
 | Qwen (`Qwen2.5-14B-Instruct`, frozen + jieba) | 0.0999 | 0.0334 | 0.0501 |
 
 Allowed: on P2, JobBERT v4 leads **both** P and exact F1; ChatGPT still leads relaxed (0.6249 in the P2 main table).
+
+## SkillSpan-style figures (layout only; 2026-08-27)
+
+Script: `scripts/build_skillspan_style_figures.py`. PDF/PNG: `figures/`. Tex: `tex/skillspan_style_*.tex`. Do **not** copy SkillSpan English F1. Joint-CRF bar figure stays as-is (STL did not beat joint micro).
+
+## Appendix — STL L/K/S/T vs joint CRF (V4 hybrid, 2026-08-27)
+
+CSV: `tables/appendix_stl_v4.csv`. Tex: `tex/skillspan_style_stl_v4.tex`. Protocol: `reports/sandbox_lskt_v4_silver/stl_v4/PROTOCOL.md`. Slurm **50717** COMPLETED 22:02–23:33, ExitCode 0. Scorer `cnss-lskt-1.2.0`. Encoder: frozen JobBERT-zh 1M. Train: LSKT v4 silver. Seed 42.
+
+**Stay in appendix.** Combined typed exact **0.4100** does **not** beat joint 1M v4 **0.4272**. No type F1 beats the joint head. Do **not** put this row in the abstract or main V4 table unless the user moves it. Not SkillSpan nested SKILL/KNOWLEDGE STL/MTL.
+
+| System | L | K | S | T | typed exact | typed relaxed |
+|---|---|---|---|---|---|---|
+| Joint CRF 1M v4 | 0.525 | 0.400 | 0.428 | 0.471 | **0.4272** | 0.5952 |
+| STL-L only | 0.484 | — | — | — | 0.0071 | 0.0109 |
+| STL-K only | — | 0.390 | — | — | 0.1728 | 0.2272 |
+| STL-S only | — | — | 0.405 | — | 0.2627 | 0.3798 |
+| STL-T only | — | — | — | 0.464 | 0.1245 | 0.1676 |
+| STL combined | 0.459 | 0.385 | 0.405 | 0.467 | 0.4100 | 0.5699 |
+
+Combined = greedy non-overlap union (longer first, then S≻K≻T≻L); dropped 77 overlapping spans. Combined type F1 can be slightly below the single-head type F1 because of that drop (L 0.484→0.459). Trainer Gold-v2 micro on an STL head is **not** a paper number.
+
+Silver-dev typed F1 (target type only; not paper): S 0.3237, K 0.3200, T 0.4168, L 0.5000.
+
+Corpus **counts** (source-stratified `repartition_v1`, seed 7; counted from `data/repartition_v1/*.jsonl` with the same BIO/token method as `dataset_stats_v4.csv`): train **16350** / **1427** posts; dev **2268** / **194**; evaluation **4222** / **379**. Every source (AI/Cloud/Public/Grad) appears in every labelled split. Labels are **v4 silver drafts**, not human Gold. Overlap **0**. DAPT unlabeled **1M** and **3.2M** unchanged (`jobbert_*_sents.meta.json`). Full grid: `tables/skillspan_style/dataset_stats_repartition_v1.csv`. LaTeX: `tex/skillspan_style_dataset.tex`.
+
+The previous source-imbalanced counts (train **17460**, dev **2143**, Test-V4 **2601**) stay in `tables/skillspan_style/dataset_stats_v4.csv` and `tex/skillspan_style_dataset_old_split.tex` (appendix provenance for the V4 hybrid F1 table).
+
+V4 performance figure uses already-confirmed F1 (JobBERT 3M exact **0.4331**, ChatGPT relaxed **0.6249**). Win-rate / pred-length / F1-by-length figures use Gold v2 appendix CSVs (n=3 win-rate is **not** ASO).
+
+## Dataset table — source-stratified repartition_v1 (counts confirmed; labels 待验证)
+
+Replaces the SkillSpan-style corpus Table 2 analogue in the paper body. Evaluation is **pre-release silver**, not human Gold. Do **not** swap main-results F1 to this split.
+
+| Split | Statistic | AI | Cloud | Public | Grad | Total |
+|---|---|---:|---:|---:|---:|---:|
+| Train (draft) | # Posts | 707 | 28 | 12 | 680 | 1427 |
+| | # Sentences | 7863 | 318 | 846 | 7323 | 16350 |
+| | # Tokens | 289444 | 11178 | 38555 | 250441 | 589618 |
+| | # Skill spans (S+T) | 10307 | 285 | 101 | 6334 | 17027 |
+| | # Knowledge spans (L+K) | 4756 | 170 | 232 | 1806 | 6964 |
+| | # L | 100 | 2 | 2 | 183 | 287 |
+| | # K | 4656 | 168 | 230 | 1623 | 6677 |
+| | # S | 7801 | 216 | 63 | 3639 | 11719 |
+| | # T | 2506 | 69 | 38 | 2695 | 5308 |
+| | # Sentences with overlap | 0 | 0 | 0 | 0 | 0 |
+| Dev (draft) | # Posts | 91 | 4 | 4 | 95 | 194 |
+| | # Sentences | 943 | 32 | 230 | 1063 | 2268 |
+| | # Tokens | 34872 | 1308 | 9940 | 35632 | 81752 |
+| | # Skill spans (S+T) | 1461 | 21 | 23 | 901 | 2406 |
+| | # Knowledge spans (L+K) | 555 | 15 | 57 | 299 | 926 |
+| | # L | 13 | 1 | 0 | 44 | 58 |
+| | # K | 542 | 14 | 57 | 255 | 868 |
+| | # S | 1103 | 19 | 22 | 499 | 1643 |
+| | # T | 358 | 2 | 1 | 402 | 763 |
+| | # Sentences with overlap | 0 | 0 | 0 | 0 | 0 |
+| Evaluation (pre-release) | # Posts | 172 | 8 | 4 | 195 | 379 |
+| | # Sentences | 1908 | 123 | 265 | 1926 | 4222 |
+| | # Tokens | 74113 | 4284 | 11770 | 65090 | 155257 |
+| | # Skill spans (S+T) | 2643 | 81 | 32 | 1629 | 4385 |
+| | # Knowledge spans (L+K) | 1135 | 65 | 40 | 457 | 1697 |
+| | # L | 17 | 5 | 1 | 35 | 58 |
+| | # K | 1118 | 60 | 39 | 422 | 1639 |
+| | # S | 1978 | 54 | 25 | 920 | 2977 |
+| | # T | 665 | 27 | 7 | 709 | 1408 |
+| | # Sentences with overlap | 0 | 0 | 0 | 0 | 0 |
+| Unlabeled DAPT | # Sentences | 409400 | n/a | n/a | 590600 | 1000000 |
+| | # Sentences (3.2M mix) | 1310080 | n/a | n/a | 1889920 | 3200000 |
+
+Codex: `overleaf_cursor_bundle/CODEX_PROMPT_DATASET_TABLE.md`.
+
+## Appendix — source-stratified repartition_v1 (待验证; 2026-08-28)
+
+Slurm **50733** COMPLETED 03:34:58–07:42:27, ExitCode 0. Scorer `cnss-lskt-1.2.0`. Gold = `data/repartition_v1/test.jsonl` (4222; sha256 `fdbcf681…19969fa92`). Labels are **LSKT v4 character silver drafts**, including 应届生招聘. **Not** human Doccano Gold. Split seed **7**, frozen **before** any model F1. CSV: `tables/repartition_v1_night.csv`, `tables/repartition_v1_stl.csv`.
+
+**Stay in appendix.** Do **not** replace V4 hybrid JobBERT 3M **0.4331** or ChatGPT dump+jieba **0.2854 / 0.6249**. Do **not** rank 0.3115 against 0.4331 or Gold v2 ChatGPT 0.6365. Human SOP on the original 980 disagreement sentences is **not finished**.
+
+Split (sentences / posts): train 16350 / 1427; dev 2268 / 194; test 4222 / 379. Old 2601 hybrid remains the paper main gold until human labels exist.
+
+| System | seed 42 | 123 | 2026 | 3-seed mean exact | 3-seed mean relaxed |
+|---|---:|---:|---:|---:|---:|
+| JobBERT 1M joint CRF | 0.2985 | 0.2989 | 0.2996 | 0.2990 | 0.5324 |
+| JobBERT 3M joint CRF | 0.2921 | 0.2868 | 0.2886 | 0.2892 | 0.5280 |
+| RoBERTa-wwm joint CRF | 0.3060 | 0.3035 | 0.3115 | **0.3070** | 0.5309 |
+| Qwen2.5-14B-Instruct SOP extract | — | — | — | 0.1473 (n=4222) | 0.3308 |
+
+STL JobBERT 1M seed 42 combined typed exact **0.2905** / relaxed **0.5155** (does not beat joint 1M seed 42 **0.2985**). Per-source Public exact is ~0.04 on this silver draft; do not write a Time-OOD claim.
+
+Not in this job (not 漏跑): ChatGPT/Claude/Kimi/DeepSeek on the new test; Qwen LoRA; Llama-8B; MLM re-DAPT.
 
 ## Still missing / blocked (paper claims)
 

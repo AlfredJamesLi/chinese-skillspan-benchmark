@@ -1,0 +1,49 @@
+# Source-stratified post-level split. Frozen BEFORE any candidate is scored
+# by a model. Do not add F1, encoder names, or LLM names to the objective.
+# Official project seeds (encoder 3-seed + 5-seed extras). No invented seeds.
+
+name: repartition_v1
+created: "2026-08-28"
+span_convention: lskt_v4_character  # Handbook B rule_v4 BIO; not Gold v2; not jieba-hybrid
+old_benchmark_role: appendix_cross_source_transfer_diagnostic
+
+official_seeds:
+  encoder_3seed: [42, 123, 2026]
+  encoder_5seed_extra: [7, 13]
+  split_candidates: [42, 123, 2026, 7, 13]
+
+target_ratios:
+  train: 0.70
+  dev: 0.10
+  test: 0.20
+
+post_quotas:
+  Public: {train: 12, dev: 4, test: 4}
+  Cloud: {train: 28, dev: 4, test: 8}
+  AI: {ratio: [0.70, 0.10, 0.20]}
+  Grad: {ratio: [0.70, 0.10, 0.20]}
+
+source_map:
+  人工智能招聘: AI
+  应届生招聘: Grad
+  阿里云公开数据集: Cloud
+  事业单位招聘: Public
+
+# Weighted cost. Lower is better. No model metric.
+objective_weights:
+  js_label_train_test: 2.0
+  js_label_train_dev: 1.0
+  abs_empty_train_test: 1.0
+  abs_len_train_test: 0.5
+  missing_L_in_split: 3.0
+  missing_source_in_split: 100.0
+  post_quota_l1: 1.0
+
+hard_constraints:
+  shared_post_id_across_splits: 0
+  shared_near_dup_group_across_splits: 0
+  duplicate_sentence_id: 0
+  normalized_text_leakage_across_splits: 0
+  every_source_in_train_dev_test: true
+  valid_offsets: true
+  no_model_f1_in_objective: true

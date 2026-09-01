@@ -1,0 +1,10 @@
+[
+  {"id": "1874-s0003", "spans": [{"text": "建立模型", "type": "S"}], "comment": "补全半词"},
+  {"id": "1874-s0004", "spans": [{"text": "计算机", "type": "K"}, {"text": "统计学", "type": "K"}, {"text": "数学", "type": "K"}, {"text": "信息技术", "type": "K"}], "comment": "补齐并列专业"},
+  {"id": "1874-s0005", "spans": [{"text": "数据挖掘", "type": "S"}, {"text": "分析", "type": "S"}, {"text": "SQL", "type": "S"}, {"text": "Python", "type": "S"}, {"text": "R", "type": "S"}, {"text": "Hadoop", "type": "S"}, {"text": "Hive", "type": "S"}], "comment": "修正半词、拆分并列工具、删除年限、大数据是描述不是独立技能"},
+  {"id": "1874-s0006", "spans": [{"text": "逻辑思维能力", "type": "T"}, {"text": "自学能力", "type": "T"}, {"text": "解决问题的能力", "type": "T"}], "comment": "补全半词、拆分并列软技能"},
+  {"id": "1875-s0000", "spans": [{"text": "维护", "type": "S"}, {"text": "站内优化", "type": "S"}], "comment": "修正半词、拆分、删除年限经验"},
+  {"id": "1875-s0001", "spans": [{"text": "B2B", "type": "S"}, {"text": "维护", "type": "S"}, {"text": "运营", "type": "S"}], "comment": "B2B是工具/平台归S、拆分并列技能、删除年限"},
+  {"id": "1875-s0002", "spans": [{"text": "网络平台运营", "type": "S"}, {"text": "外贸网络运营", "type": "S"}, {"text": "英语", "type": "L"}], "comment": "删除年限、英语读写能力简化为英语语种"},
+  {"id": "1875-s0003", "spans": [{"text": "SEO", "type": "S"}, {"text": "SEM", "type": "S"}, {"text": "数据挖掘", "type": "S"}, {"text": "数据分析", "type": "S"}], "comment": "SEO/SEM是工具方法归S、修正半词、拆分并列、删除年限"}
+]

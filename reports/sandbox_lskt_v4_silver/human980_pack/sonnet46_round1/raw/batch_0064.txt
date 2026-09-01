@@ -1,0 +1,10 @@
+[
+  {"id": "1814-s0006", "spans": [{"text": "工艺标准", "type": "K"}, {"text": "品质控制", "type": "K"}], "comment": "删除半词和动词，拆分并列概念"},
+  {"id": "1814-s0007", "spans": [{"text": "工艺改善", "type": "S"}, {"text": "优化", "type": "S"}], "comment": "补全半词，删除口号性表述"},
+  {"id": "1814-s0010", "spans": [{"text": "3D打印", "type": "K"}, {"text": "制造", "type": "S"}, {"text": "工艺", "type": "K"}], "comment": "补全半词，工艺是领域知识归K"},
+  {"id": "1814-s0011", "spans": [{"text": "office", "type": "S"}, {"text": "word", "type": "S"}, {"text": "excel", "type": "S"}, {"text": "PPT", "type": "S"}, {"text": "CAD", "type": "S"}], "comment": "删除动词，拆分并列工具，CAD是工具归S"},
+  {"id": "1815-s0000", "spans": [], "comment": "整句是岗位职责描述，不是对候选人的能力要求"},
+  {"id": "1815-s0001", "spans": [], "comment": "整句是岗位职责描述，不是对候选人的能力要求"},
+  {"id": "1815-s0002", "spans": [{"text": "招聘", "type": "S"}, {"text": "物联网", "type": "K"}, {"text": "安防", "type": "K"}], "comment": "删除年限，拆分行业领域知识"},
+  {"id": "1815-s0003", "spans": [{"text": "人力资源规划", "type": "K"}, {"text": "配置", "type": "S"}, {"text": "职位分析", "type": "K"}, {"text": "招聘面试", "type": "S"}], "comment": "拆分并列能力，规划是知识归K，配置和面试是技能归S"}
+]

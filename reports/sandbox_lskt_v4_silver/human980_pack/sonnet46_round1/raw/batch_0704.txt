@@ -1,0 +1,10 @@
+[
+  {"id": "1935-s0002", "spans": [{"text": "本科（学士）以上学历", "type": "K"}, {"text": "计算机软件相关专业", "type": "K"}], "comment": "补全半词；学历与专业分开"},
+  {"id": "1935-s0003", "spans": [{"text": "Python", "type": "S"}, {"text": "linux", "type": "S"}, {"text": "shell", "type": "S"}], "comment": "删年限；拆开并列；编程语言和工具为S"},
+  {"id": "1935-s0004", "spans": [{"text": "Django", "type": "S"}, {"text": "软件技术文档编写", "type": "S"}], "comment": "框架是S；补全半词；删常用开发框架等冗余"},
+  {"id": "1935-s0006", "spans": [{"text": "nginx", "type": "S"}, {"text": "apache", "type": "S"}, {"text": "WEB服务器的配置", "type": "S"}, {"text": "优化", "type": "S"}], "comment": "工具是S不是K；拆开并列；配置与优化分开"},
+  {"id": "1935-s0008", "spans": [], "comment": "自我要求口号不标"},
+  {"id": "1935-s0009", "spans": [{"text": "大数据", "type": "K"}, {"text": "高并发系统开发", "type": "S"}], "comment": "补全半词；大数据是领域知识K；系统开发是S"},
+  {"id": "1936-s0001", "spans": [{"text": "硕士或以上学历", "type": "K"}, {"text": "计算机", "type": "K"}, {"text": "数学", "type": "K"}], "comment": "学历；补全专业半词；拆开并列"},
+  {"id": "1936-s0002", "spans": [{"text": "强化学习", "type": "K"}, {"text": "LSTM", "type": "K"}, {"text": "Neural Networks", "type": "K"}, {"text": "CNN", "type": "K"}, {"text": "RNN", "type": "K"}], "comment": "拆开并列；机器学习算法和模型是领域知识K"}
+]

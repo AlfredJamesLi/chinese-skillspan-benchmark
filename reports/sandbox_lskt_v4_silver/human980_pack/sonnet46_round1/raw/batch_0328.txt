@@ -1,0 +1,10 @@
+[
+  {"id": "1866-s0000", "spans": [{"text": "调查", "type": "S"}, {"text": "诊断", "type": "S"}, {"text": "分析", "type": "S"}, {"text": "评估", "type": "S"}, {"text": "建模", "type": "S"}], "comment": "删除半词和描述性修饰，保留核心技能动词"},
+  {"id": "1866-s0001", "spans": [{"text": "数据管理", "type": "S"}, {"text": "分析", "type": "S"}], "comment": "统一是重复概念，预警是结果不是技能"},
+  {"id": "1866-s0002", "spans": [{"text": "数据", "type": "K"}, {"text": "梳理", "type": "S"}, {"text": "运营指标", "type": "K"}, {"text": "量化", "type": "S"}], "comment": "补全半词，业务数据中数据是领域知识"},
+  {"id": "1866-s0003", "spans": [{"text": "数据捕获", "type": "S"}, {"text": "数据链路", "type": "K"}, {"text": "数据框架", "type": "K"}, {"text": "数据服务", "type": "S"}], "comment": "删除半词和动词前缀，保留技能对象"},
+  {"id": "1866-s0004", "spans": [{"text": "搭建", "type": "S"}, {"text": "数据看板", "type": "S"}, {"text": "优化", "type": "S"}, {"text": "精细化运营", "type": "S"}], "comment": "删除半词，产能优化等是业务目标不是技能"},
+  {"id": "1866-s0005", "spans": [{"text": "横向合作", "type": "T"}], "comment": "销售产品运营是岗位名不是技能，其他是描述性表述"},
+  {"id": "1866-s0006", "spans": [{"text": "本科及以上学历", "type": "K"}, {"text": "数据分析", "type": "S"}, {"text": "运营", "type": "S"}, {"text": "应用数学", "type": "K"}, {"text": "统计学", "type": "K"}, {"text": "机器学习", "type": "K"}, {"text": "计算机", "type": "K"}], "comment": "补全学历，补充遗漏的专业"},
+  {"id": "1866-s0007", "spans": [{"text": "分析逻辑", "type": "T"}, {"text": "业务洞察能力", "type": "T"}, {"text": "发现问题", "type": "S"}, {"text": "拆解问题", "type": "S"}, {"text": "数据敏感度", "type": "T"}, {"text": "数据挖掘", "type": "S"}, {"text": "信息采集", "type": "S"}], "comment": "补全半词，拆分并列技能"}
+]

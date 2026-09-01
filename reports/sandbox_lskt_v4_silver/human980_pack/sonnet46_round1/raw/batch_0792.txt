@@ -1,0 +1,10 @@
+[
+  {"id": "1951-s0008", "spans": [{"text": "docker", "type": "S"}, {"text": "k8s", "type": "S"}], "comment": "容器docker是半词，拆出docker；k8s技术去掉技术二字"},
+  {"id": "1951-s0011", "spans": [{"text": "抗压能力", "type": "T"}, {"text": "应急处理", "type": "S"}], "comment": "抗压能力强去掉强字；应急处理突、快速恢复业都是半词，删除"},
+  {"id": "1951-s0012", "spans": [{"text": "解决问题", "type": "S"}], "comment": "事件根本原因深度探究、能力都是半词或泛化词，删除；保留解决问题"},
+  {"id": "1952-s0000", "spans": [{"text": "安装", "type": "S"}, {"text": "维护", "type": "S"}, {"text": "故障处理", "type": "S"}], "comment": "服务器、存储、网是半词删除；故障补全为故障处理"},
+  {"id": "1952-s0001", "spans": [{"text": "Windows", "type": "S"}, {"text": "Linux", "type": "S"}, {"text": "系统安装", "type": "S"}, {"text": "应用安装", "type": "S"}], "comment": "IDC机房是领域背景非技能；服务器的系统安装是半词，拆出系统安装；应用安装等去掉等字；拆出Windows和Linux"},
+  {"id": "1952-s0004", "spans": [{"text": "监控", "type": "S"}, {"text": "分析", "type": "S"}], "comment": "监控和分析拆开"},
+  {"id": "1952-s0006", "spans": [{"text": "计算机相关专业", "type": "K"}, {"text": "Windows", "type": "S"}, {"text": "Linux", "type": "S"}, {"text": "安装", "type": "S"}, {"text": "维护", "type": "S"}, {"text": "思科", "type": "S"}, {"text": "华为", "type": "S"}, {"text": "交换机", "type": "S"}, {"text": "故障排查", "type": "S"}, {"text": "吃苦耐劳", "type": "T"}], "comment": "相关专业补全为计算机相关专业；熟知Windows等半词拆出具体技术；服务器操作系统的等半词删除；的基本配置等半词删除；的故障排查补全；热爱网等打算今从事网等培训体都是半词删除；吃苦耐劳保留"},
+  {"id": "1953-s0000", "spans": [{"text": "网络设置", "type": "S"}, {"text": "维护", "type": "S"}, {"text": "优化", "type": "S"}, {"text": "网络安全监控", "type": "S"}, {"text": "系统性能管理", "type": "S"}, {"text": "网络性能管理", "type": "S"}, {"text": "设计", "type": "S"}, {"text": "部署", "type": "S"}, {"text": "监控预警", "type": "S"}], "comment": "维护和是半词改为维护；系统性能管理和优、网络性能管理和优都是半词，分别拆出管理部分；设计和部署生是半词拆开；大数据生产环境是背景删除；监控预警和持续优是半词改为监控预警"}
+]

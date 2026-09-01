@@ -1,0 +1,10 @@
+[
+  {"id": "1953-s0001", "spans": [{"text": "应用安全", "type": "K"}, {"text": "数据安全", "type": "K"}, {"text": "网络安全", "type": "K"}, {"text": "故障", "type": "K"}, {"text": "问题排查处理", "type": "S"}, {"text": "编制汇总", "type": "S"}], "comment": "补全半词，拆分并列，删掉持续运作能力（职责描述），删掉定期提交（包含职责动词）"},
+  {"id": "1953-s0002", "spans": [{"text": "桌面运维", "type": "S"}, {"text": "固定资产维护", "type": "S"}, {"text": "监控", "type": "S"}], "comment": "补全半词，拆分并列，删掉IT（非技能实体）"},
+  {"id": "1953-s0004", "spans": [{"text": "网络系统集成", "type": "K"}, {"text": "技术支撑", "type": "S"}, {"text": "维护", "type": "S"}], "comment": "补全半词，拆分并列"},
+  {"id": "1953-s0007", "spans": [{"text": "网络故障", "type": "K"}, {"text": "分析", "type": "S"}, {"text": "判断", "type": "S"}, {"text": "解决能力", "type": "T"}], "comment": "补全半词，拆分并列，解决能力是软技能"},
+  {"id": "1953-s0009", "spans": [{"text": "CCNP", "type": "K"}, {"text": "CCIE", "type": "K"}], "comment": "拆分并列证书，只标证书名称"},
+  {"id": "1954-s0000", "spans": [{"text": "中专以上学历", "type": "K"}, {"text": "通信", "type": "K"}, {"text": "电子工程", "type": "K"}, {"text": "自动化", "type": "K"}, {"text": "计算机", "type": "K"}], "comment": "拆分并列专业，补充学历"},
+  {"id": "1954-s0001", "spans": [{"text": "项目技术管理", "type": "S"}, {"text": "项目协调", "type": "T"}, {"text": "安装", "type": "S"}], "comment": "补全半词，项目协调是软技能，安装是可执行技能"},
+  {"id": "1954-s0002", "spans": [{"text": "电工证", "type": "K"}, {"text": "UPS安装调试", "type": "S"}, {"text": "电气知识", "type": "K"}, {"text": "看懂线路图纸", "type": "S"}], "comment": "补全半词，拆分并列，电工证是证书归K"}
+]

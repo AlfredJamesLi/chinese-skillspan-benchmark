@@ -1,0 +1,127 @@
+{
+  "gold_v2_untouched": true,
+  "not_for_confirmed_results": true,
+  "note": "Test gold = Sonnet 4.6 SOP round-1 on 980 (not human-final, not Gold v2). Same frozen CRF preds, no retrain.",
+  "sonnet_gold_spans_approx": 3324,
+  "sonnet_unaligned_dropped": 110,
+  "models": [
+    {
+      "name": "jobbert_1m_v4",
+      "pred": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/jobbert_zh_1m/crf_lskt_v4_silver_seed42/test_pred.jsonl",
+      "pred_run": "jobbert_zh_1m / crf_lskt_v4_silver_seed42",
+      "scores": [
+        {
+          "gold": "sonnet46_980",
+          "alignment_ok": true,
+          "n_gold": 980,
+          "n_matched": 980,
+          "n_missing": 0,
+          "typed_exact_p": 0.13347193347193348,
+          "typed_exact_r": 0.09657039711191336,
+          "typed_exact_f1": 0.11206144178739746,
+          "typed_relaxed_f1": 0.34037353813929133,
+          "collapsed_exact_f1": 0.12288357479490311,
+          "collapsed_relaxed_f1": 0.3895967882702043
+        },
+        {
+          "gold": "simhuman_rule_v4_980",
+          "alignment_ok": true,
+          "n_gold": 980,
+          "n_matched": 980,
+          "n_missing": 0,
+          "typed_exact_p": 0.35093555093555096,
+          "typed_exact_r": 0.2989727240524265,
+          "typed_exact_f1": 0.32287681713848504,
+          "typed_relaxed_f1": 0.5811017597551644,
+          "collapsed_exact_f1": 0.3481254781943382,
+          "collapsed_relaxed_f1": 0.6400153022188217
+        },
+        {
+          "gold": "gold_v2_same980_ids",
+          "alignment_ok": true,
+          "n_gold": 980,
+          "n_matched": 980,
+          "n_missing": 0,
+          "typed_exact_p": 0.1496881496881497,
+          "typed_exact_r": 0.08044692737430167,
+          "typed_exact_f1": 0.10465116279069768,
+          "typed_relaxed_f1": 0.3357558139534884,
+          "collapsed_exact_f1": 0.11540697674418607,
+          "collapsed_relaxed_f1": 0.39505813953488367
+        },
+        {
+          "gold": "gold_v2_full2601",
+          "alignment_ok": true,
+          "n_gold": 2601,
+          "n_matched": 2601,
+          "n_missing": 0,
+          "typed_exact_p": 0.15427769985974754,
+          "typed_exact_r": 0.0829938131884714,
+          "typed_exact_f1": 0.10792778649921507,
+          "typed_relaxed_f1": 0.33202511773940346,
+          "collapsed_exact_f1": 0.11872056514913656,
+          "collapsed_relaxed_f1": 0.38618524332810056
+        }
+      ]
+    },
+    {
+      "name": "jobbert_3m_v4",
+      "pred": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/jobbert_zh_3m/crf_lskt_v4_silver_seed42/test_pred.jsonl",
+      "pred_run": "jobbert_zh_3m / crf_lskt_v4_silver_seed42",
+      "scores": [
+        {
+          "gold": "sonnet46_980",
+          "alignment_ok": true,
+          "n_gold": 980,
+          "n_matched": 980,
+          "n_missing": 0,
+          "typed_exact_p": 0.13412633305988514,
+          "typed_exact_r": 0.0983754512635379,
+          "typed_exact_f1": 0.11350225616105518,
+          "typed_relaxed_f1": 0.3429364803887539,
+          "collapsed_exact_f1": 0.12842762929538357,
+          "collapsed_relaxed_f1": 0.39569593891010063
+        },
+        {
+          "gold": "simhuman_rule_v4_980",
+          "alignment_ok": true,
+          "n_gold": 980,
+          "n_matched": 980,
+          "n_missing": 0,
+          "typed_exact_p": 0.3494667760459393,
+          "typed_exact_r": 0.3018065887353879,
+          "typed_exact_f1": 0.32389279604637905,
+          "typed_relaxed_f1": 0.5755559779509599,
+          "collapsed_exact_f1": 0.35164417411138565,
+          "collapsed_relaxed_f1": 0.6382816954951529
+        },
+        {
+          "gold": "gold_v2_same980_ids",
+          "alignment_ok": true,
+          "n_gold": 980,
+          "n_matched": 980,
+          "n_missing": 0,
+          "typed_exact_p": 0.14930270713699753,
+          "typed_exact_r": 0.08134078212290503,
+          "typed_exact_f1": 0.10530883842036742,
+          "typed_relaxed_f1": 0.34427889483581653,
+          "collapsed_exact_f1": 0.11803847822942283,
+          "collapsed_relaxed_f1": 0.4044553739331694
+        },
+        {
+          "gold": "gold_v2_full2601",
+          "alignment_ok": true,
+          "n_gold": 2601,
+          "n_matched": 2601,
+          "n_missing": 0,
+          "typed_exact_p": 0.15710306406685237,
+          "typed_exact_r": 0.0851063829787234,
+          "typed_exact_f1": 0.11040422824703924,
+          "typed_relaxed_f1": 0.3404130370950376,
+          "collapsed_exact_f1": 0.12175785455613193,
+          "collapsed_relaxed_f1": 0.3934618772633846
+        }
+      ]
+    }
+  ]
+}

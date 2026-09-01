@@ -1,0 +1,24 @@
+{
+  "models_list_gptish": [],
+  "n_models": 47,
+  "calls": {
+    "gpt-5-pro-2025-10-06": {
+      "status": 503,
+      "ok": false,
+      "err": "{\"error\":{\"code\":\"model_not_found\",\"message\":\"No available channel for model gpt-5-pro-2025-10-06 under group Claude官转(3倍消耗) (distributor) (request id: 202608251511515123185078268d9d6Ot3Ydz0e)\",\"type\":\"new_api_error\"}}",
+      "s": 1.29
+    },
+    "gpt-5-pro": {
+      "status": 503,
+      "ok": false,
+      "err": "{\"error\":{\"code\":\"model_not_found\",\"message\":\"No available channel for model gpt-5-pro under group Claude官转(3倍消耗) (distributor) (request id: 202608251511522332430378268d9d64yLguwsv)\",\"type\":\"new_api_error\"}}",
+      "s": 0.68
+    },
+    "gpt-5": {
+      "status": 503,
+      "ok": false,
+      "err": "{\"error\":{\"code\":\"model_not_found\",\"message\":\"No available channel for model gpt-5 under group Claude官转(3倍消耗) (distributor) (request id: 202608251511532228064528268d9d628CxN9cS)\",\"type\":\"new_api_error\"}}",
+      "s": 3.55
+    }
+  }
+}

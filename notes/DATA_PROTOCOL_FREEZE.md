@@ -1,7 +1,9 @@
 # Data and scoring protocol (PeerJ CS) — Gold uniqueified (v2)
 
-Date: 2026-08-22. Gold-v2 file hashes are frozen. **Submission venue: PeerJ Computer Science** (Chinese-SkillSpan dataset paper). Do not write DASFAA 2026 as the target venue. Gold v2 sha and official human gold do **not** change with venue.  
+Date: 2026-08-22. Gold-v2 file hashes are frozen. **Submission venue: PeerJ Computer Science** (Chinese-SkillSpan dataset paper). Do not write DASFAA 2026 as the target venue. Gold v2 sha does **not** change with venue.  
 18 Gold conflicts are adjudicated. **Do not change PDF Table 3 paper S-F1 cells.** Do not overwrite original LLM dumps. Claude/Kimi fills live in `reports/views/*_filled_v2.jsonl` only.
+
+**Paper main gold (amended 2026-08-27):** authors chose **V4-only** as the reported evaluation protocol. The V4 hybrid uses the **same 2601 IDs** as Gold v2 (derived spans, not a new sample). Do **not** overwrite `gold_canonical_v2.jsonl`. Do **not** call the hybrid “human Doccano Gold”. Main scoring file: `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` (sha256 `2ad6342d…818d99`). Gold v2 typed F1 (ChatGPT 0.6365, encoder 0.1288) is **appendix / construction history** only.
 
 Scorer: `cnss-lskt-1.2.0`. Git: `NO_GIT_HEAD`.
 
@@ -32,7 +34,7 @@ Distinguish: corpus test **3237**; raw Gold rows **2676**; canonical unique Gold
 | Canonical Gold v1 | `Chinese_skill_benchmark_Paper/data/gold_canonical_v1.jsonl` | **2583** | **2583** | `458c91478079c7702a82befc15c58f4be7cc77b2cf820b0ed33efb791657e5df` |
 | **Canonical Gold v2** | `Chinese_skill_benchmark_Paper/data/gold_canonical_v2.jsonl` | **2601** | **2601** | `7a26e32b89d4e501175cb96443e35e171cea08d91501d2a32779b96ee8504ff6` |
 
-Official scoring still uses **Gold v2 only**. A future eval Gold (`reports/gold_eval_v3/`, 300-item IAA pilot) must not overwrite this file. Do not put v3-pilot F1 into the PDF or `confirmed-results.md`.
+**Paper main scoring (2026-08-27):** V4 hybrid `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl`. Gold v2 remains the frozen **provenance** file and the IAA source; a future eval Gold (`reports/gold_eval_v3/`, 300-item IAA pilot) must not overwrite either file. Do not put v3-pilot F1 into the PDF or `confirmed-results.md`.
 
 Label field: `list_of_selection_bio4` (L/K/S/T). No ESCO concept IDs.
 
@@ -41,6 +43,17 @@ Banned: preprocessing `test.json` (2639, empty labels); `*.eval_ner.json`.
 ---
 
 ## Official scoring
+
+**Paper main table (V4):**
+
+```bash
+python Chinese_skill_benchmark_Paper/scorer/score_lskt.py \
+  --gold Chinese_skill_benchmark_Paper/data/test_lskt_v4_cws_simhuman980_hybrid.jsonl \
+  --pred <jieba-snapped dump.jsonl> \
+  --align-mode official --out report.json
+```
+
+**Appendix / provenance (Gold v2; do not use for abstract SOTA):**
 
 ```bash
 python Chinese_skill_benchmark_Paper/scorer/score_lskt.py \

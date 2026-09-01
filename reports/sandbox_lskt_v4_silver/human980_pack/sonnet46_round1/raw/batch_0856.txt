@@ -1,0 +1,12 @@
+```json
+[
+  {"id": "1965-s0001", "spans": [{"text": "软件系统bug问题定位解决", "type": "S"}, {"text": "协调配合", "type": "T"}], "comment": "补全半词；协调配合是软技能；无法解决的问题是描述状态非能力要求"},
+  {"id": "1965-s0003", "spans": [{"text": "开发", "type": "S"}, {"text": "客户需求实现", "type": "S"}, {"text": "技术交流", "type": "T"}, {"text": "沟通", "type": "T"}, {"text": "编写解决方案", "type": "S"}], "comment": "拆开并列能力；补全半词"},
+  {"id": "1965-s0004", "spans": [{"text": "相关技术知识", "type": "K"}, {"text": "各行业核心业务流程", "type": "K"}, {"text": "调整优化技术方案", "type": "S"}], "comment": "深入学习了解是动词不标；补全半词；应用系统是职责描述"},
+  {"id": "1965-s0006", "spans": [{"text": "收集", "type": "S"}, {"text": "形成改进方案", "type": "S"}, {"text": "反馈", "type": "S"}], "comment": "拆分职责中的具体技能；补全半词"},
+  {"id": "1965-s0008", "spans": [{"text": "软件行业", "type": "K"}, {"text": "技术支持", "type": "S"}], "comment": "拆开领域知识和技能；年限不标"},
+  {"id": "1965-s0009", "spans": [{"text": "沟通协调能力", "type": "T"}, {"text": "分析问题", "type": "S"}, {"text": "处理问题", "type": "S"}, {"text": "文档编写能力", "type": "S"}], "comment": "补全半词；拆开并列能力"},
+  {"id": "1965-s0011", "spans": [{"text": "数据库", "type": "K"}, {"text": "中间件", "type": "K"}, {"text": "操作系统", "type": "K"}, {"text": "Windows", "type": "S"}, {"text": "linux", "type": "S"}, {"text": "基本操作维护", "type": "S"}, {"text": "硬件", "type": "K"}], "comment": "拆分并列；操作系统是理论知识K，具体系统是工具S；补全半词"},
+  {"id": "1965-s0012", "spans": [{"text": "java", "type": "S"}, {"text": ".net", "type": "S"}], "comment": "编程语言是S；补全半词；拆开并列"}
+]
+```

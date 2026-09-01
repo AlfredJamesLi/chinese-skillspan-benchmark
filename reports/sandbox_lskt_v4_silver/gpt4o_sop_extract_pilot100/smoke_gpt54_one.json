@@ -1,0 +1,20 @@
+{
+  "base": "https://claudeplus.ysaikeji.cn",
+  "model": "gpt-5.4",
+  "id": "1802-s0004",
+  "sentence": "5、负责多平台或关键应用程序的维护和支持服务。",
+  "results": [
+    {
+      "status": 503,
+      "ok": false,
+      "elapsed_s": 3.73,
+      "error": {
+        "code": "model_not_found",
+        "message": "No available channel for model gpt-5.4 under group Claude官转(3倍消耗) (distributor) (request id: 202608251520242492120198268d9d6tKZHycip)",
+        "type": "new_api_error"
+      },
+      "raw": "{\"error\":{\"code\":\"model_not_found\",\"message\":\"No available channel for model gpt-5.4 under group Claude官转(3倍消耗) (distributor) (request id: 202608251520242492120198268d9d6tKZHycip)\",\"type\":\"new_api_error\"}}",
+      "label": "chat_max_tokens_temp0"
+    }
+  ]
+}

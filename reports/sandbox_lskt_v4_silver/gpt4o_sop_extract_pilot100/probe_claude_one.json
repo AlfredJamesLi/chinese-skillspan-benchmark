@@ -1,0 +1,134 @@
+{
+  "base": "https://claudeplus.ysaikeji.cn",
+  "sentence": "熟悉 Python 和英语六级，沟通能力强。",
+  "models": {
+    "claude-sonnet-4-6": {
+      "status": 200,
+      "ok": true,
+      "elapsed_s": 5.61,
+      "upstream": "claude-sonnet-4-6",
+      "usage": {
+        "prompt_tokens": 4218,
+        "completion_tokens": 18,
+        "total_tokens": 4236,
+        "usage_semantic": "openai",
+        "usage_source": "anthropic",
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cached_creation_tokens": 2109,
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "input_tokens": 4218,
+        "output_tokens": 0,
+        "input_tokens_details": null,
+        "claude_cache_creation_5_m_tokens": 2109,
+        "claude_cache_creation_1_h_tokens": 0
+      },
+      "preview": "```json\n{\n  \"ok\": true,\n  \"echo\": \"python\"\n}\n```"
+    },
+    "claude-opus-4-7": {
+      "status": 200,
+      "ok": true,
+      "elapsed_s": 49.21,
+      "upstream": "claude-opus-4-7",
+      "usage": {
+        "prompt_tokens": 87,
+        "completion_tokens": 17,
+        "total_tokens": 104,
+        "usage_semantic": "openai",
+        "usage_source": "anthropic",
+        "prompt_tokens_details": {
+          "cached_tokens": 56,
+          "cached_creation_tokens": 2,
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "input_tokens": 87,
+        "output_tokens": 0,
+        "input_tokens_details": null,
+        "claude_cache_creation_5_m_tokens": 2,
+        "claude_cache_creation_1_h_tokens": 0
+      },
+      "preview": "```json\n{\"ok\": true, \"echo\": \"python\"}\n```"
+    },
+    "claude-sonnet-4-5": {
+      "status": 503,
+      "ok": false,
+      "elapsed_s": 2.0,
+      "err": "{\"error\":{\"message\":\"No available channel for model claude-sonnet-4-5 under group default (distributor) (request id: 202608251518065627153788268d9d6oBMdpzVi)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"model_not_found\"}}"
+    },
+    "claude-3-5-haiku-20241022": {
+      "status": 403,
+      "ok": false,
+      "elapsed_s": 2.74,
+      "err": "{\"error\":{\"message\":\"无权访问 claudevip 分组 (request id: 202608251518097469582898268d9d69h8q4295)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"\"}}"
+    },
+    "claude-3-5-sonnet-20241022": {
+      "status": 403,
+      "ok": false,
+      "elapsed_s": 1.26,
+      "err": "{\"error\":{\"message\":\"无权访问 claudevip 分组 (request id: 202608251518113966224688268d9d6Mm6BpXEf)\",\"type\":\"new_api_error\",\"param\":\"\",\"code\":\"\"}}"
+    },
+    "claude-opus-4-5": {
+      "status": 200,
+      "ok": true,
+      "elapsed_s": 9.32,
+      "upstream": "claude-opus-4-5",
+      "usage": {
+        "prompt_tokens": 38,
+        "completion_tokens": 12,
+        "total_tokens": 50,
+        "usage_semantic": "openai",
+        "usage_source": "anthropic",
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0
+        },
+        "completion_tokens_details": {
+          "text_tokens": 0,
+          "audio_tokens": 0,
+          "image_tokens": 0,
+          "reasoning_tokens": 0
+        },
+        "input_tokens": 38,
+        "output_tokens": 0,
+        "input_tokens_details": null,
+        "claude_cache_creation_5_m_tokens": 0,
+        "claude_cache_creation_1_h_tokens": 0
+      },
+      "preview": "{\"ok\": true, \"echo\": \"python\"}"
+    },
+    "kimi-k2.6": {
+      "status": 200,
+      "ok": true,
+      "elapsed_s": 6.74,
+      "upstream": "kimi-k2.6",
+      "usage": {
+        "prompt_tokens": 36,
+        "completion_tokens": 128,
+        "total_tokens": 164,
+        "completion_tokens_details": {
+          "reasoning_tokens": 127
+        }
+      },
+      "preview": ""
+    }
+  }
+}

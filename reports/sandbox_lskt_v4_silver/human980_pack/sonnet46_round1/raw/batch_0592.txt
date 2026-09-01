@@ -1,0 +1,10 @@
+[
+  {"id": "1916-s0003", "spans": [{"text": "算法", "type": "S"}, {"text": "模型", "type": "S"}], "comment": "补全半词，拆开并列，验证是动词不标"},
+  {"id": "1916-s0005", "spans": [{"text": "数据开发", "type": "S"}, {"text": "应用开发", "type": "S"}, {"text": "产品开发", "type": "S"}, {"text": "联调", "type": "S"}, {"text": "模型上线", "type": "S"}, {"text": "运维", "type": "S"}, {"text": "跟踪", "type": "S"}, {"text": "优化模型", "type": "S"}], "comment": "补全半词，拆开并列和动宾结构"},
+  {"id": "1916-s0006", "spans": [{"text": "计算机", "type": "K"}, {"text": "本科及以上学历", "type": "K"}], "comment": "学历和专业归K，年限不标"},
+  {"id": "1916-s0008", "spans": [{"text": "协同过滤", "type": "S"}, {"text": "矩阵分解", "type": "S"}, {"text": "关联算法", "type": "S"}], "comment": "补全半词，熟练使用不标，只标工具方法"},
+  {"id": "1917-s0000", "spans": [{"text": "对接", "type": "S"}, {"text": "制定销售策略", "type": "S"}, {"text": "规划", "type": "S"}], "comment": "补全半词，拆开并列"},
+  {"id": "1917-s0001", "spans": [{"text": "数据监控", "type": "S"}, {"text": "营销数据", "type": "K"}, {"text": "商品管理", "type": "S"}, {"text": "顾客管理", "type": "S"}, {"text": "销售数据", "type": "K"}, {"text": "统计", "type": "S"}, {"text": "分析", "type": "S"}], "comment": "补全半词，拆开能力项，数据类知识归K管理和统计分析归S"},
+  {"id": "1917-s0002", "spans": [{"text": "制订", "type": "S"}, {"text": "线上产品规划", "type": "S"}, {"text": "策略", "type": "S"}, {"text": "制定应对措施", "type": "S"}], "comment": "补全半词，拆开并列"},
+  {"id": "1917-s0004", "spans": [{"text": "本科以上学历", "type": "K"}, {"text": "京东平台运营", "type": "S"}, {"text": "天猫平台运营", "type": "S"}, {"text": "品牌销售", "type": "S"}], "comment": "补全半词，学历归K平台运营归S年限不标"}
+]

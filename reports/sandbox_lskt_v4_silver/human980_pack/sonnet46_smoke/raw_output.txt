@@ -1,0 +1,9 @@
+```json
+[
+  {"id": "1801-s0004", "spans": [{"text": "开发", "type": "S"}, {"text": "策划", "type": "S"}, {"text": "论证", "type": "S"}], "comment": "拆分并列；删除半词"技术设..""},
+  {"id": "1802-s0000", "spans": [{"text": "监控", "type": "S"}, {"text": "管理", "type": "S"}], "comment": "补全半词；存储和备是半词删除"},
+  {"id": "1802-s0005", "spans": [{"text": "培训", "type": "S"}, {"text": "技术支持", "type": "S"}], "comment": "补全半词；方法、工具过于泛化删除"},
+  {"id": "1802-s0006", "spans": [], "comment": "整句职责描述，无具体能力要求"},
+  {"id": "1801-s0007", "spans": [{"text": "系统管理", "type": "S"}, {"text": "虚拟化", "type": "K"}, {"text": "VMware ESX", "type": "S"}, {"text": "OpenVZ", "type": "S"}, {"text": "KVM", "type": "S"}, {"text": "Bash Shell", "type": "S"}, {"text": "Python", "type": "S"}, {"text": "Apache", "type": "S"}, {"text": "Tomcat", "type": "S"}, {"text": "Zabbix", "type": "S"}, {"text": "chef", "type": "S"}, {"text": "Jenkins", "type": "S"}], "comment": "修正半词和序号；虚拟化技术为K，具体工具为S；拆分并列"}
+]
+```

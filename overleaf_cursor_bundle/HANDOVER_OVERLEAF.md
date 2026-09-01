@@ -1,7 +1,7 @@
 # Overleaf 窗口交接（Chinese-SkillSpan Benchmark）
 
 本文件是本机 Overleaf 编辑窗口的背景。先读完再改 tex。  
-日期：2026-08-26。投稿期刊：**PeerJ Computer Science**（不是 DASFAA）。数字以 `.cursor/skills/cnss-overleaf/confirmed-results.md` 为准（已从服务器同步）。
+日期：2026-08-27。投稿期刊：**PeerJ Computer Science**（不是 DASFAA）。数字以 `.cursor/skills/cnss-overleaf/confirmed-results.md` 为准（已从服务器同步）。
 
 **本窗口：** 本机 Overleaf Git（项目 https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4 ；`git.overleaf.com/68fe17a53e53a7f800e4f2b4`）
 
@@ -15,11 +15,11 @@ GitHub 私有备份：https://github.com/AlfredJamesLi/chinese-skillspan-benchma
 
 压缩表：`.cursor/skills/cnss-overleaf/confirmed-results.md`  
 禁写：`.cursor/skills/cnss-overleaf/not-for-paper.md`  
-手册 A/B（各一页，不要合成）：`handbooks/`  
-Codex 先咨询 Methods 手册插入：`CODEX_PROMPT_HANDBOOK.md`  
-Codex 咨询表结构：`CODEX_PROMPT_PROTOCOL_CONSULT.md`  
-Codex 改稿（合并一份）：`CODEX_PROMPT_ALL.md`  
-表 CSV：`tables/`
+手册：**主协议 = B / V4**；A 只作 Gold v2 沿革：`handbooks/`  
+Codex 先咨询 V4 主表 Methods：`CODEX_PROMPT_HANDBOOK.md`  
+Codex 改稿：`CODEX_PROMPT_ALL.md`  
+表 CSV：`tables/`  
+SkillSpan 体例图：`figures/`（插入稿 `CODEX_PROMPT_FIGURES.md`）
 
 冲突时以**本文 + 已确认表**为准并报告。
 
@@ -46,7 +46,7 @@ git branch --show-current
 
 ## 1. 研究问题
 
-中文招聘文本上的技能相关跨度抽取（flat LSKT：L/K/S/T）。Gold v2 = 2601 unique IDs。主指标 typed exact micro F1（`cnss-lskt-1.2.0`）。
+中文招聘文本上的技能相关跨度抽取（flat LSKT：L/K/S/T）。**论文主金标 = V4 hybrid**（与 Gold v2 同一批 2601 ID）。主指标 typed exact micro F1（`cnss-lskt-1.2.0`）。Gold v2 文件冻结，F1 只进附录。
 
 ---
 
@@ -57,9 +57,9 @@ git branch --show-current
 要点：
 
 - PDF Table 3 **保留**（Gold 2676 paper S-F1）。
-- **新增** Gold v2 unique-first 表、Relaxed F1、分域表、encoder 榜。
-- 不要用 Gold v2 的 0.6365 去覆盖 PDF 的 ChatGPT 0.6700。
-- Methods 用手册 A（P1 Gold-length）与手册 B（P2 短跨度 SOP）分节写；不要合成一本，不要覆盖 Gold v2。
+- **主结果表 = V4**（JobBERT 3M exact **0.4331**；ChatGPT dump+jieba exact **0.2854** / relaxed **0.6249**）。
+- Gold v2 unique-first（ChatGPT **0.6365**、编码器 ~0.13）改为 **附录**。不要用 0.6365 覆盖 PDF 0.6700，也不要写进摘要 SOTA。
+- Methods：手册 B 为报告协议；手册 A 只写「同一批 ID 的源跨度」。不要覆盖 Gold v2，不要把 980 写成全量人标。
 - 删除 Concept Accuracy / Time-OOD；分域表只作为 Industry-OOD **代理**。
 
 ---
@@ -67,5 +67,5 @@ git branch --show-current
 ## 3. 下一阶段
 
 **P0：** 对照 Overleaf tex 与 confirmed-results 做冲突表，再补表。  
-**P1：** 版式、图题、参考文献（数字不动）。 Methods 插入手册 A/B 前，先在本机 Overleaf 贴 `CODEX_PROMPT_HANDBOOK.md`（只咨询，不改 tex）。  
+**P1：** 版式、图题、参考文献（数字不动）。 Methods 写成 **V4 主协议** 前，先贴 `CODEX_PROMPT_HANDBOOK.md`（只咨询，不改 tex）。  
 **P2：** 缺 Claude/Kimi 完整 dump 的 P2 主表行 → 交回服务器窗口。 JobBERT 1M goldstyle 5-seed Gold v2 均值 **0.1257±0.0062** 已写入（四模型对比仍用 3-seed **0.1288**）。 RoBERTa-wwm v3 Gold v2 3-seed 均值 **0.1199** 已写入。

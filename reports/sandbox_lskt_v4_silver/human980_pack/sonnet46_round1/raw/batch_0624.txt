@@ -1,0 +1,10 @@
+[
+  {"id": "1921-s0010", "spans": [{"text": "公有云平台", "type": "K"}], "comment": "补全半词，运营商名称不单独标"},
+  {"id": "1922-s0001", "spans": [{"text": "大数据分析", "type": "K"}, {"text": "人工智能", "type": "K"}], "comment": "拆开并列，补全半词"},
+  {"id": "1922-s0003", "spans": [{"text": "c++", "type": "S"}, {"text": "stl", "type": "S"}], "comment": "只标具体工具和库，不标半词和抽象描述"},
+  {"id": "1922-s0004", "spans": [{"text": "测试", "type": "K"}, {"text": "自测", "type": "S"}], "comment": "测试概念是领域知识K，自测是可执行技能S"},
+  {"id": "1922-s0007", "spans": [{"text": "分析", "type": "S"}, {"text": "识别", "type": "S"}, {"text": "网络协议", "type": "K"}], "comment": "拆开并列，补全半词"},
+  {"id": "1922-s0008", "spans": [{"text": "ntopng", "type": "S"}, {"text": "操作系统原理", "type": "K"}, {"text": "操作系统api", "type": "S"}], "comment": "源码工具是S，原理是K，API是S"},
+  {"id": "1923-s0000", "spans": [{"text": "硕士及以上学历", "type": "K"}, {"text": "计算机", "type": "K"}, {"text": "统计学", "type": "K"}, {"text": "数据分析", "type": "S"}, {"text": "数据挖掘", "type": "S"}, {"text": "策略", "type": "S"}, {"text": "挖掘算法", "type": "K"}, {"text": "编程语言", "type": "S"}, {"text": "算法", "type": "K"}, {"text": "数据结构", "type": "K"}, {"text": "SQL", "type": "S"}, {"text": "python", "type": "S"}, {"text": "分析能力", "type": "T"}, {"text": "结构化分析", "type": "S"}, {"text": "自驱", "type": "T"}, {"text": "主动思考", "type": "T"}, {"text": "项目推动", "type": "T"}, {"text": "解决问题", "type": "T"}, {"text": "分析问题", "type": "T"}, {"text": "沟通", "type": "T"}, {"text": "jubyter", "type": "S"}], "comment": "短而独立，拆开并列，动词只标对象"},
+  {"id": "1924-s0000", "spans": [{"text": "运营管理", "type": "S"}, {"text": "分析", "type": "S"}, {"text": "制定", "type": "S"}], "comment": "只标能力要求，职责描述精简"}
+]

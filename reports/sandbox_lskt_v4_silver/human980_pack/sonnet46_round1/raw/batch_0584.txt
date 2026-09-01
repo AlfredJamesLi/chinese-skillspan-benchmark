@@ -1,0 +1,10 @@
+[
+  {"id": "1915-s0000", "spans": [{"text": "产品后台服务端开发", "type": "S"}, {"text": "高并发", "type": "S"}, {"text": "高压力服务端性能调优", "type": "S"}], "comment": "补全半词；高并发是技能不是知识"},
+  {"id": "1915-s0002", "spans": [{"text": "本科以上学历", "type": "K"}, {"text": "计算机及其相关专业", "type": "K"}, {"text": "JAVA", "type": "S"}, {"text": "开发", "type": "S"}], "comment": "补全半词；加学历专业；JAVA是工具S不是K"},
+  {"id": "1915-s0003", "spans": [{"text": "Spring", "type": "S"}, {"text": "Mybatis", "type": "S"}, {"text": "Struts", "type": "S"}], "comment": "框架是S；拆分并列；独立完成是职责描述不标"},
+  {"id": "1915-s0004", "spans": [{"text": "MySQL", "type": "S"}, {"text": "mongodb", "type": "S"}, {"text": "redis", "type": "S"}, {"text": "NOSQL", "type": "K"}, {"text": "高并发", "type": "S"}, {"text": "高压力处理", "type": "S"}], "comment": "拆分并列；数据库工具S；NOSQL概念K；删半词"},
+  {"id": "1915-s0006", "spans": [{"text": "学习", "type": "T"}, {"text": "逻辑思维", "type": "T"}, {"text": "分析问题", "type": "T"}, {"text": "解决问题", "type": "T"}, {"text": "表达", "type": "T"}, {"text": "沟通能力", "type": "T"}, {"text": "团队合作精神", "type": "T"}], "comment": "拆分并列软技能；补全半词；分析解决是软技能T"},
+  {"id": "1916-s0000", "spans": [], "comment": "公司简介宣传，不标"},
+  {"id": "1916-s0001", "spans": [{"text": "算法规划", "type": "S"}, {"text": "数据挖掘", "type": "S"}, {"text": "模型设计", "type": "S"}, {"text": "深度学习", "type": "K"}, {"text": "人工智能", "type": "K"}, {"text": "文本处理", "type": "S"}], "comment": "补全半词；深度学习人工智能是领域知识K；文本处理是方法S"},
+  {"id": "1916-s0002", "spans": [{"text": "理解行业需求", "type": "T"}], "comment": "理解需求是软技能；痛点不是能力要求"}
+]

@@ -1,0 +1,10 @@
+[
+  {"id": "1946-s0001", "spans": [{"text": "充换电柜设备", "type": "S"}], "comment": "设备操作属于可执行技能S，补全半词"},
+  {"id": "1947-s0000", "spans": [{"text": "安装", "type": "S"}, {"text": "测试", "type": "S"}, {"text": "网络维护", "type": "S"}], "comment": "拆开并列技能，删掉半词"},
+  {"id": "1947-s0001", "spans": [{"text": "ERP", "type": "S"}, {"text": "数据库管理", "type": "S"}, {"text": "数据备份", "type": "S"}], "comment": "ERP是工具S，拆开技能"},
+  {"id": "1947-s0003", "spans": [{"text": "网络", "type": "S"}, {"text": "数据安全管理", "type": "S"}], "comment": "补全半词，拆开并列"},
+  {"id": "1947-s0004", "spans": [{"text": "监控系统", "type": "S"}, {"text": "运行", "type": "S"}, {"text": "维护管理", "type": "S"}], "comment": "监控系统是工具S，温湿度是设备参数不是能力要求"},
+  {"id": "1947-s0006", "spans": [{"text": "检查", "type": "S"}, {"text": "监督", "type": "S"}], "comment": "拆开并列技能"},
+  {"id": "1947-s0007", "spans": [{"text": "人员进出管理", "type": "S"}, {"text": "设备管理", "type": "S"}, {"text": "安全管理", "type": "S"}, {"text": "卫生管理", "type": "S"}], "comment": "补全半词，拆开并列管理职能"},
+  {"id": "1947-s0011", "spans": [{"text": "ERP软件", "type": "S"}, {"text": "服务器", "type": "S"}, {"text": "安全设备", "type": "S"}, {"text": "安装", "type": "S"}, {"text": "调试", "type": "S"}, {"text": "运维", "type": "S"}], "comment": "ERP软件、服务器是工具S不是K，删掉半词基本安装调"}
+]

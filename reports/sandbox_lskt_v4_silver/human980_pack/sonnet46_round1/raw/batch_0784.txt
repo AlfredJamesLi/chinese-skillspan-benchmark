@@ -1,0 +1,10 @@
+[
+  {"id": "1950-s0001", "spans": [{"text": "微软相关系统及应用", "type": "K"}, {"text": "域控", "type": "S"}, {"text": "Exchange", "type": "S"}, {"text": "O365", "type": "S"}, {"text": "应用", "type": "S"}, {"text": "部署", "type": "S"}], "comment": "补全半词；域控/Exchange/O365是具体工具或系统，归S；应用和部署是可执行技能"},
+  {"id": "1950-s0002", "spans": [{"text": "云服务", "type": "K"}, {"text": "实施", "type": "S"}], "comment": "删除了解等动词；云服务是领域知识归K；实施是技能归S；删除经验优先的口号词"},
+  {"id": "1950-s0003", "spans": [{"text": "IT技术", "type": "K"}, {"text": "信息安全", "type": "K"}, {"text": "云服务", "type": "K"}], "comment": "补全半词；当前流行是修饰词不标；IT技术、信息安全、云服务都是领域知识"},
+  {"id": "1951-s0000", "spans": [{"text": "中间件", "type": "K"}, {"text": "运维", "type": "S"}, {"text": "配置参数", "type": "K"}, {"text": "监控阈值", "type": "K"}], "comment": "补全半词；中间件是领域知识；运维是技能；配置参数和监控阈值是知识"},
+  {"id": "1951-s0002", "spans": [{"text": "中间件", "type": "K"}, {"text": "故障定位", "type": "S"}, {"text": "故障处理", "type": "S"}], "comment": "补全半词并拆分；中间件是知识；故障定位和处理是技能"},
+  {"id": "1951-s0003", "spans": [{"text": "中间件", "type": "K"}, {"text": "性能容量数据分析", "type": "S"}, {"text": "评估", "type": "S"}, {"text": "优化", "type": "S"}], "comment": "中间件是知识；分析、评估、优化是技能"},
+  {"id": "1951-s0005", "spans": [{"text": "全日制本科", "type": "K"}, {"text": "计算机软件", "type": "K"}, {"text": "计算机相关专业", "type": "K"}], "comment": "补全半词并拆分；学历和专业都是K"},
+  {"id": "1951-s0007", "spans": [{"text": "Linux操作系统", "type": "S"}, {"text": "系统性能调优", "type": "S"}, {"text": "排障", "type": "S"}], "comment": "补全半词；Linux是工具归S；调优和排障是技能"}
+]

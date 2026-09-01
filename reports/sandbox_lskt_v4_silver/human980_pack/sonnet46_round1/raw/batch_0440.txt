@@ -1,0 +1,10 @@
+[
+  {"id": "1885-s0001", "spans": [{"text": "设计", "type": "S"}, {"text": "系统研发", "type": "S"}, {"text": "业务管理", "type": "S"}, {"text": "整理", "type": "S"}, {"text": "完善", "type": "S"}], "comment": "补全半词，拆分并列，职责动词标为S"},
+  {"id": "1885-s0004", "spans": [{"text": "产品设计", "type": "S"}, {"text": "规划", "type": "S"}, {"text": "管理", "type": "S"}], "comment": "拆分并列"},
+  {"id": "1885-s0005", "spans": [], "comment": "前后台产品经验、B端产品经验是经验描述不是具体技能"},
+  {"id": "1885-s0006", "spans": [{"text": "产品分析能力", "type": "S"}, {"text": "逻辑思维能力", "type": "T"}, {"text": "总结", "type": "S"}, {"text": "归纳", "type": "S"}], "comment": "体验度模型太宽泛删除，拆分并列"},
+  {"id": "1885-s0008", "spans": [{"text": "踏实", "type": "T"}, {"text": "积极", "type": "T"}, {"text": "承受压力", "type": "T"}], "comment": "补全半词，拆分并列"},
+  {"id": "1885-s0011", "spans": [{"text": "承受压力", "type": "T"}, {"text": "执行力", "type": "T"}, {"text": "解决问题能力", "type": "T"}], "comment": "补全，拆分独立特质"},
+  {"id": "1885-s0012", "spans": [], "comment": "产品工作经验是经验描述不是技能"},
+  {"id": "1886-s0000", "spans": [{"text": "计算机", "type": "K"}, {"text": "本科以上学历", "type": "K"}, {"text": "机器学习", "type": "K"}, {"text": "C", "type": "S"}, {"text": "C++", "type": "S"}, {"text": "Python", "type": "S"}, {"text": "Java", "type": "S"}, {"text": "SVM", "type": "K"}, {"text": "LR", "type": "K"}, {"text": "RF", "type": "K"}, {"text": "Boosting", "type": "K"}, {"text": "自主学习能力", "type": "T"}, {"text": "英语沟通能力", "type": "T"}], "comment": "补全C/C+为完整工具名，拆分并列，算法为领域知识K"}
+]

@@ -6,7 +6,7 @@
 
 Do **not** paste the four older files (`CODEX_PROMPT.md`, `CODEX_PROMPT_SOP_V4.md`, `CODEX_PROMPT_DIAGNOSTIC_SOP.md`, `CODEX_PROMPT_MATCHED_PROTOCOL.md`). Those were split only to keep early chats short. This file is the **edit** paste.
 
-**If Methods still treats Gold as one guideline:** paste `CODEX_PROMPT_HANDBOOK.md` first (consult only), then this file.
+**If Methods still treats Gold v2 as the reported gold:** paste `CODEX_PROMPT_HANDBOOK.md` first (consult only; V4 is now the paper main protocol), then this file.
 
 First copy `overleaf_cursor_bundle/` into the Overleaf repo **root** (`HANDOVER_OVERLEAF.md`, `AGENTS.md`, `.cursor/`, `tables/`, `handbooks/`, this prompt).
 
@@ -31,13 +31,12 @@ Overleaf: https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4
 - **Venue: PeerJ Computer Science.** Do not write DASFAA 2026 as the submission target.
 - **LLM row labels must include dump model ids** (`tables/model_ids.csv`): ChatGPT=`gpt-4o`, Claude=`claude-3-5-haiku-20241022`, Kimi=`kimi-k2-0711-preview`, DeepSeek=`deepseek-r1`, Qwen=`Qwen2.5-14B-Instruct`. Do not use brand-only names in results tables.
 - Write **only** numbers in `confirmed-results.md`. Round to 4 decimals. Do not invent F1.
-- **Two test golds, never mixed in one SOTA sentence:**
-  - **Official human Gold v2:** `gold_canonical_v2.jsonl`, 2601 IDs, scorer `cnss-lskt-1.2.0`, primary metric typed exact micro F1. ChatGPT **0.6365** typed / **0.7221** relaxed.
-  - **Matched-protocol test gold (new benchmark for the SOP+jieba encoder story):** `test_lskt_v4_cws_simhuman980_hybrid.jsonl`, 2601 = 980 SimHuman rule_v4 jieba-snapped + 1621 SOP-CWS. Predictions jieba-snapped with the same snapper. JobBERT 1M/3M v4 **0.4272 / 0.4331** exact. **Not** comparable to ChatGPT 0.6365 on Gold v2.
+- **Paper main gold is V4 only** (decision 2026-08-27): `test_lskt_v4_cws_simhuman980_hybrid.jsonl`, 2601 IDs **derived from** Gold v2 (same IDs; SOP v4 + jieba; 980 SimHuman rule_v4 + 1621 SOP-CWS). Scorer `cnss-lskt-1.2.0`. Primary metric typed exact micro F1. Abstract / main table: JobBERT 1M/3M v4 **0.4272 / 0.4331** exact; frozen ChatGPT dump+jieba exact **0.2854** / relaxed **0.6249**. Do **not** call this human Doccano Gold. Do **not** overwrite `gold_canonical_v2.jsonl`.
+- **Gold v2 is provenance + appendix only:** ChatGPT typed **0.6365** / relaxed **0.7221**; JobBERT 1M 3-seed **0.1288**. Never mix 0.4331 and 0.6365 in one SOTA sentence.
 - **Keep PDF Table 3 paper S-F1 cells unchanged** (ChatGPT 0.6700, Claude 0.6300, Kimi 0.5700, DeepSeek 0.5130, Qwen 0.2130, JobBERT-skill 0.0045, JobBERT-knowledge 0.0038). That table is the old published protocol (Gold 2676).
-- Do **not** put diagnostic SOP-silver 0.3170 / both-sides ~0.43 / jieba-on-Gold-v2 0.1454 into Table 3, Gold v2 unique-first, or the abstract SOTA sentence.
+- Do **not** put diagnostic SOP-silver 0.3170 / both-sides ~0.43 / jieba-on-Gold-v2 0.1454 into Table 3 or the abstract SOTA sentence.
 - Do **not** add gpt-5.4 0.2338 or deepseek-v4-pro n=46 0.2353 to any 2601 table. Optional footnote only.
-- Do **not** claim JobBERT-zh beats ChatGPT on Gold v2. Encoder on Gold v2 is a **weak baseline** (~0.13 typed).
+- Allowed on **V4**: JobBERT leads typed exact; ChatGPT leads relaxed. Do **not** claim JobBERT-zh beats ChatGPT **on Gold v2** (encoder there is a weak baseline ~0.13).
 - Delete or rewrite Concept Accuracy, Time-OOD, ESCO concept-ID linking. Allowed: “ESCO-derived LSKT span extraction”. Per-domain table is an Industry-OOD **proxy**.
 - Qwen paper 0.2130 is unreproducible as Gold v2 typed 0.0791. Do not defend 0.2130 as Gold v2.
 - listed-mix 1M lost (0.1201 vs 0.1224). Domain-mix 3-seed mean 0.1269 is **below** JobBERT 1M 0.1288. No listed-3M. RoBERTa-wwm v3 3-seed mean **0.1199** (0.1156 / 0.1187 / 0.1254). JobBERT 1M goldstyle **5-seed** mean **0.1257±0.0062** (0.1224 / 0.1292 / 0.1348 / 0.1227 / 0.1192). Keep the 4-encoder ranking at 3-seed; do **not** swap 0.1257 into that table.
@@ -47,21 +46,21 @@ Overleaf: https://www.overleaf.com/project/68fe17a53e53a7f800e4f2b4
 
 ### Pipeline to write in Methods (this is the missing story — write it)
 
-Add a short subsection (English, same register as the paper) that distinguishes **official Gold v2 (Handbook A)** from the **matched SOP+jieba protocol (Handbook B)**. Source of truth: `handbooks/handbook_A_gold_v2.en.md` and `handbooks/handbook_B_sop_v4.en.md`. Do **not** merge them into one guideline. Do **not** claim Handbook A is the original silver API (`prompt_template_rag.py` → `chinese_skillspan`); that API used *minimal sufficient span* and put language certificates in **L**. Gold-style / Handbook A put CET-6 in **K**. Do not replace Gold v2 as the official human gold. The 980 SimHuman overlay is rule_v4, not a full human pass under Handbook B.
+Add a short subsection (English, same register as the paper) that reports **Handbook B / V4 as the evaluation protocol** and treats **Gold v2 (Handbook A) as provenance** (same 2601 IDs; Doccano source spans). Source of truth: `handbooks/handbook_B_sop_v4.en.md` (main) and `handbooks/handbook_A_gold_v2.en.md` (history). Do **not** merge them into one guideline. Do **not** claim Handbook A is the original silver API (`prompt_template_rag.py` → `chinese_skillspan`); that API used *minimal sufficient span* and put language certificates in **L**. Gold-style / Handbook A put CET-6 in **K**. Do **not** overwrite Gold v2. Do **not** call the V4 hybrid human Doccano Gold. The 980 SimHuman overlay is rule_v4, not a full human pass under Handbook B.
 
-**A0. Official Gold v2 (Handbook A)**
+**A0. Gold v2 provenance (Handbook A; not the reported gold)**
 - Gold was LLM silver (`prompt_template_rag.py` → `chinese_skillspan`) then light Doccano check. Do not rewrite that history.
 - Spans are Gold-length complete NPs (typical 4–12 tokens; median 4, mean ≈4.9). No mid-word cuts. Do not tag a whole duty clause as one S.
-- L = language **word**; K = degree / major / **certificate** / domain (CET-6 → **K**); S = tool / method / actionable skill; T = trait. Footnote: the original silver API put language certificates in **L**.
+- L = language **word**; K = degree / major / **certificate** / domain (**Gold v2 / Handbook A only:** CET-6 → **K**); S = tool / method / actionable skill; T = trait. Footnote: the original silver API put language certificates in **L**. Handbook B v4.2 restores CET-6 to **L**.
 - 报名 / 体检 / 公示 / 福利 → empty. Encoder train silver `train_goldstyle_v3.jsonl` follows Handbook A; it does **not** change Gold v2.
-- Headline on this gold: ChatGPT typed **0.6365**; JobBERT 1M 3-seed **0.1288** (weak baseline).
+- Headline on this gold (**appendix only**): ChatGPT typed **0.6365**; JobBERT 1M 3-seed **0.1288** (weak baseline on the source convention).
 
 **A. Operational SOP (LSKT v4 / Handbook B), used for silver rewrite and for the new test gold**
 - Labels stay L / K / S / T (flat, non-overlapping). Optional eval projection L+K→KNOWLEDGE, S+T→SKILL.
 - Span = contiguous original substring; complete mention (no 半词 such as 支持服); prefer 2–8 tokens; do not tag a whole 岗位职责 clause as one S.
 - 熟悉 / 掌握 / 精通 / 了解 mark **the object only**.
 - 报名 / 体检 / 公示 / 福利 / 鸡汤 → empty sentence.
-- English certificates such as 大学英语6级 → **K**; bare 英语/英文 → **L**. Programming languages and tools → **S**.
+- English certificates such as 大学英语6级 / CET-6 / 日语N2 → **L**; bare 英语/英文 → **L**. Technical or occupational certifications (ISO 27001, OCJP) → **K**. Programming languages and tools → **S**. L is ESCO’s separate *Language skills and knowledge* branch (both knowledge and skill); do not merge L into K. Gold v2 / Handbook A put CET-6 in **K** — that is provenance only.
 
 **B. New training (encoder fine-tune, not LLM SFT)**
 1. Start from existing Chinese JobBERT-zh (RoBERTa-wwm-ext + JD MLM) + CRF.
@@ -76,8 +75,8 @@ Add a short subsection (English, same register as the paper) that distinguishes 
 4. Score with `cnss-lskt-1.2.0`, official align, typed exact and typed relaxed (IoU≥0.5).
 5. Frozen LLM dumps (ChatGPT/Claude/Kimi/DeepSeek/Qwen) are **not re-called** for this table; they are jieba-snapped after the fact. ChatGPT / DeepSeek / Qwen are complete. Claude misses 98 IDs and Kimi misses 293; those IDs are empty-filled until later. ChatGPT hybrid exact 0.2854 is a **span-convention** drop vs Gold v2 0.6365, not a new GPT-4o run.
 
-**D. What stays official**
-- Human Doccano Gold v2 remains the official gold. Matched-protocol numbers are a **separate** table / appendix.
+**D. What the paper reports**
+- **Main gold = V4 hybrid.** Gold v2 remains the frozen provenance file (same IDs) and the IAA source. Gold v2 F1 is appendix only.
 - LLM SOP-extract **pilots** (gpt-5.4 n=100 hybrid exact 0.2338; DeepSeek V4 Pro n=46 hybrid exact 0.2353) stay a footnote only. Full-n SOP extract scores exist as **Table J** (diagnostic). They did **not** beat frozen ChatGPT P2 exact 0.2854 or JobBERT 3M v4 exact 0.4331. Official `gpt-4o` + the same SOP prompt is still missing.
 
 ---
@@ -86,7 +85,7 @@ Add a short subsection (English, same register as the paper) that distinguishes 
 
 **A. Keep Table 1** — train 17460 / dev 2143 / test 3237. Footnote optional: raw Gold 2676 rows vs canonical unique Gold 2601.
 
-**B. Keep Table 2 IAA** (n=100): strict F1 0.532; relaxed 0.624; κ 0.554.
+**B. Keep Table 2 IAA** (n=100): strict F1 0.532; relaxed 0.624; κ 0.554. Caption: Gold-era Doccano spans (source of the 2601 IDs). **Not** an IAA on V4 hybrid spans.
 
 **C. Keep PDF Table 3 paper S-F1** unchanged (old protocol Gold 2676). Relabel rows with dump ids; do not change paper S-F1 cells.
 
@@ -100,7 +99,7 @@ Add a short subsection (English, same register as the paper) that distinguishes 
 | JobBERT-skill | 0.0045 |
 | JobBERT-knowledge | 0.0038 |
 
-**D. Add Gold v2 unique-first** (official human gold; caption: Gold v2, unique-first, typed exact micro F1, `cnss-lskt-1.2.0`)
+**D. Add Gold v2 unique-first as appendix** (provenance gold; not abstract SOTA). Caption: Gold v2, unique-first, typed exact micro F1, `cnss-lskt-1.2.0`; same 2601 IDs as the V4 main table, different span convention.
 
 | Model | typed exact | collapsed exact | typed relaxed | note |
 |---|---:|---:|---:|---|
@@ -112,7 +111,7 @@ Add a short subsection (English, same register as the paper) that distinguishes 
 | JobBERT-skill | 0.0000 | 0.0045 | 0.0000 | EN head |
 | JobBERT-knowledge | 0.0000 | 0.0037 | 0.0000 | EN head |
 
-Keep ChatGPT as the strongest **complete** LLM under Gold v2. Encoder ~0.13 is a weak baseline on this gold.
+Keep ChatGPT as the strongest **complete** LLM under Gold v2 (**appendix**). Encoder ~0.13 is a weak baseline on this source convention, not the paper main result.
 
 **E. Add per-domain typed exact** (Gold v2; n=1407 / 457 / 737). Industry-OOD proxy, not Time-OOD.
 
@@ -129,10 +128,10 @@ Keep ChatGPT as the strongest **complete** LLM under Gold v2. Encoder ~0.13 is a
 
 One sentence: encoder collapse on 事业单位 (~0.015–0.029) vs ChatGPT 0.7032.
 
-**F. Add encoder ranking (Gold v2 typed exact, seed 42)**  
+**F. Add encoder ranking (Gold v2 typed exact, seed 42, appendix)**  
 Best: domain-mix 1M **0.1234**; JobBERT 3M ckpt65000 **0.1233**; JobBERT 1M goldstyle **0.1224**; listed mix **0.1201**; RoBERTa-wwm v3 **0.1156**.
 
-**G. Add encoder 3-seed (Gold v2 typed exact)**
+**G. Add encoder 3-seed (Gold v2 typed exact, appendix)**
 
 | Run | 42 | 123 | 2026 | mean | std |
 |---|---:|---:|---:|---:|---:|
@@ -143,7 +142,7 @@ Best: domain-mix 1M **0.1234**; JobBERT 3M ckpt65000 **0.1233**; JobBERT 1M gold
 
 Keep **G** as the four-encoder ranking (same seed count). Do not replace JobBERT 1M **0.1288** with the 5-seed mean.
 
-**G2. Add JobBERT 1M goldstyle 5-seed** (Gold v2 typed exact; SkillSpan seed count on the main encoder only). CSV: `tables/encoder_5seed_gold_v2.csv`. Seed 13 resumed from the epoch-2 checkpoint after GPU preemption.
+**G2. Add JobBERT 1M goldstyle 5-seed** (Gold v2 typed exact, appendix; SkillSpan seed count on the main encoder only). CSV: `tables/encoder_5seed_gold_v2.csv`. Seed 13 resumed from the epoch-2 checkpoint after GPU preemption.
 
 | Run | 42 | 123 | 2026 | 7 | 13 | mean | std |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -151,7 +150,7 @@ Keep **G** as the four-encoder ranking (same seed count). Do not replace JobBERT
 
 P/R 5-seed: **0.1790±0.0148** / **0.0969±0.0033** / **0.1257±0.0062**. Caption: 5-seed is 1M-only; it is below the 3-seed mean because seed 13 is 0.1192; still a weak baseline vs ChatGPT 0.6365.
 
-**H. Add diagnostic SOP/jieba table** (appendix). Caption must name train silver, decode, and test gold. Official gold remains Gold v2.
+**H. Add diagnostic SOP/jieba table** (appendix). Caption must name train silver, decode, and test gold. Paper main gold is the V4 hybrid, not Gold v2.
 
 | Pred | Train silver | Decode | Test gold | typed exact | IoU≥0.5 |
 |---|---|---|---|---:|---:|
@@ -166,9 +165,9 @@ P/R 5-seed: **0.1790±0.0148** / **0.0969±0.0033** / **0.1257±0.0062**. Captio
 | JobBERT 1M | SOP v4 | jieba post-hoc | SOP-CWS silver | 0.4278 | 0.5960 |
 | JobBERT 3M | SOP v4 | jieba post-hoc | SOP-CWS silver | 0.4341 | 0.5884 |
 
-Discussion (two sentences): SOP v4 training **lowers** Gold v2 exact vs goldstyle (0.1079/0.1104 vs 0.1224). 0.3170 and ~0.43 are same-rule consistency, not official gold.
+Discussion (two sentences): SOP v4 training **lowers** Gold v2 exact vs goldstyle (0.1079/0.1104 vs 0.1224). 0.3170 and ~0.43 are same-rule consistency, not the V4 hybrid main gold.
 
-**I. Add matched-protocol table** (new benchmark results; results or appendix). Caption: SOP-CWS + 980 SimHuman, jieba on gold **and** pred, `cnss-lskt-1.2.0`. Not Doccano Gold v2. LLM rows = frozen dumps + jieba.
+**I. Main results table = V4 matched protocol** (results, not appendix). Caption: SOP-CWS + 980 SimHuman, jieba on gold **and** pred, `cnss-lskt-1.2.0`. Derived from Gold v2 IDs; **not** Doccano Gold spans. LLM rows = frozen dumps + jieba.
 
 | Model | n=2601 exact | n=2601 relaxed | n=980 exact | n=980 relaxed |
 |---|---:|---:|---:|---:|
@@ -212,7 +211,7 @@ Allowed sentence: SOP extract re-calls did not beat frozen ChatGPT P2 exact 0.28
 
 Write this claim (English, same register; tighten if needed, keep the contrast):
 
-Relative to SkillSpan (Zhang et al., 2022), which annotated 391 English job postings (14.5K sentences) with two nested labels and evaluated encoder-only baselines, Chinese-SkillSpan is a larger and broader resource: 17,460 training sentences, a four-type LSKT schema, two evaluation protocols (human Gold v2 and a matched SOP+jieba test gold), Chinese domain-adaptive pre-training at 1M and 3M sentences plus encoder ablations with three random seeds, a five-seed JobBERT 1M goldstyle run (typed exact **0.1257±0.0062**), and a suite of frozen and re-prompted LLMs that SkillSpan did not evaluate. We do not clone SpanBERT-from-scratch or SkillSpan’s four-encoder STL/MTL grid; our encoder family is RoBERTa-wwm, JobBERT-zh (1M/3M), domain-mix, and listed-mix. The four-encoder ranking stays 3-seed.
+Relative to SkillSpan (Zhang et al., 2022), which annotated 391 English job postings (14.5K sentences) with two nested labels and evaluated encoder-only baselines, Chinese-SkillSpan is a larger and broader resource: 17,460 training sentences, a four-type LSKT schema, a V4 SOP+jieba evaluation gold derived from the same 2601 Gold v2 IDs, Chinese domain-adaptive pre-training at 1M and 3M sentences plus encoder ablations with three random seeds, a five-seed JobBERT 1M goldstyle run on Gold v2 (typed exact **0.1257±0.0062**, appendix), and a suite of frozen and re-prompted LLMs that SkillSpan did not evaluate. We do not clone SpanBERT-from-scratch or SkillSpan’s four-encoder STL/MTL grid; our encoder family is RoBERTa-wwm, JobBERT-zh (1M/3M), domain-mix, and listed-mix. The four-encoder ranking on Gold v2 stays 3-seed (appendix). Abstract SOTA is V4: JobBERT 3M exact **0.4331**, ChatGPT relaxed **0.6249**.
 
 **L. Add appendix typed P/R (Gold v2; analogue of SkillSpan Table 6).** Caption: Gold v2, `cnss-lskt-1.2.0`, encoder = 3-seed mean ± sample std except JobBERT 1M which also has a 5-seed row. Kimi empty-fill F1 0.1522 is **not** the unique-first 0.1651.
 
@@ -280,11 +279,13 @@ CSV copies: `tables/model_ids.csv`, `tables/table3_gold_v2_unique_view.csv`, `ta
 Mark Claude / Kimi as incomplete (empty-fill). Do not treat 0.1483 / 0.0964 as complete LLM rows. Do not use the later haiku+sonnet / Kimi_filled numbers in Table I.
 
 ### Abstract / intro / conclusion
-Patch only if they claim Concept Accuracy, Time-OOD, encoder SOTA on Gold v2, or ESCO ID linking. If you mention the new protocol, say it is a **matched SOP+jieba test gold**, not a replacement of human Gold v2.
+Patch abstract to **lead with V4**: JobBERT 3M typed exact **0.4331**; ChatGPT frozen dump+jieba relaxed **0.6249**. Do not put Gold v2 ChatGPT **0.6365** in the abstract SOTA sentence. Say the 2601 IDs come from Doccano Gold v2; the scored spans follow Handbook B (SOP+jieba). Do not call the hybrid human Gold.
 
-**Required:** intro (or contributions) **and** conclusion must tell the reader that the experimental scope already exceeds SkillSpan 2022 (larger training set, 4-type LSKT, two golds, 1M/3M DAPT, 3-seed encoder ranking, 5-seed JobBERT 1M goldstyle, LLM suite). Use table **K** wording. JobBERT 1M 5-seed mean is **0.1257±0.0062**; do not swap it into the 4-encoder 3-seed ranking.
+If they claim Concept Accuracy, Time-OOD, encoder SOTA **on Gold v2**, or ESCO ID linking: delete or rewrite.
+
+**Required:** intro (or contributions) **and** conclusion must tell the reader that the experimental scope already exceeds SkillSpan 2022. Use table **K** wording. Gold v2 encoder 3-seed / 5-seed stay appendix. JobBERT 1M 5-seed mean is **0.1257±0.0062**; do not swap it into the 4-encoder 3-seed ranking.
 
 ### After edits
-List files touched, conflict table, full diff. Confirm Table 3 paper S-F1 and Gold v2 ChatGPT 0.6365 were not changed. No commit.
+List files touched, conflict table, full diff. Confirm Table 3 paper S-F1 was not changed, Gold v2 ChatGPT 0.6365 was not used as abstract SOTA, and V4 0.4331 was not ranked against 0.6365. No commit.
 
 ## End prompt

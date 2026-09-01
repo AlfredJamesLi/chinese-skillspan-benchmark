@@ -1,0 +1,12 @@
+```json
+[
+  {"id": "1963-s0006", "spans": [{"text": "TCP/IP协议", "type": "K"}, {"text": "抓包工具", "type": "S"}, {"text": "分析", "type": "S"}, {"text": "定位", "type": "S"}], "comment": "补全TCP；拆分工具与技能动词"},
+  {"id": "1963-s0007", "spans": [{"text": "Kubernetes", "type": "S"}, {"text": "Docker", "type": "S"}, {"text": "文件系统", "type": "K"}, {"text": "网络", "type": "K"}, {"text": "cgroups", "type": "K"}], "comment": "工具归S，删年限；补cgroups"},
+  {"id": "1963-s0008", "spans": [{"text": "研发", "type": "S"}, {"text": "软件开发", "type": "S"}, {"text": "系统架构", "type": "K"}, {"text": "C", "type": "S"}, {"text": "Golang", "type": "S"}, {"text": "Python", "type": "S"}], "comment": "补全半词；拆并列语言；社区贡献是加分项删除"},
+  {"id": "1963-s0009", "spans": [{"text": "自我驱动", "type": "T"}, {"text": "学习能力", "type": "T"}, {"text": "沟通能力", "type": "T"}], "comment": "拆并列软技能；外语是L但此处指能力属T；海外经验删除"},
+  {"id": "1964-s0000", "spans": [{"text": "打印机", "type": "S"}, {"text": "电脑", "type": "S"}, {"text": "维修", "type": "S"}, {"text": "维护", "type": "S"}, {"text": "判断", "type": "S"}], "comment": "补全词；拆并列设备与技能"},
+  {"id": "1964-s0001", "spans": [{"text": "网络故障", "type": "K"}, {"text": "处理", "type": "S"}], "comment": "拆分知识与技能"},
+  {"id": "1964-s0002", "spans": [{"text": "监控", "type": "S"}, {"text": "安装", "type": "S"}, {"text": "调试", "type": "S"}, {"text": "故障分析", "type": "S"}], "comment": "拆分技能动词"},
+  {"id": "1965-s0000", "spans": [{"text": "技术支持", "type": "S"}, {"text": "定位问题", "type": "S"}], "comment": "驻场是地点删除；软件产品是工作对象删除"}
+]
+```

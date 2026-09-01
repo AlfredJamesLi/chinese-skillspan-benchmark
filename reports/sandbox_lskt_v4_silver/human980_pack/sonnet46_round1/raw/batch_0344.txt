@@ -1,0 +1,10 @@
+[
+  {"id": "1869-s0000", "spans": [{"text": "行业分析", "type": "S"}, {"text": "信息搜集", "type": "S"}, {"text": "大数据分析", "type": "S"}, {"text": "调研", "type": "S"}, {"text": "撰写", "type": "S"}], "comment": "修正半词，拆分并列能力，去掉整段描述"},
+  {"id": "1869-s0001", "spans": [{"text": "科技行业", "type": "K"}], "comment": "删掉半词和口号性表述"},
+  {"id": "1869-s0002", "spans": [{"text": "OTT电视领域", "type": "K"}], "comment": "修正半词，删除工具类使用习惯"},
+  {"id": "1869-s0005", "spans": [], "comment": "从业经验属于年限类，不标"},
+  {"id": "1870-s0000", "spans": [{"text": "研发", "type": "S"}, {"text": "运营", "type": "S"}, {"text": "网络", "type": "K"}, {"text": "计算", "type": "K"}, {"text": "存储", "type": "K"}, {"text": "分析", "type": "S"}], "comment": "修正半词，拆分并列领域知识，删除整句职责描述"},
+  {"id": "1870-s0001", "spans": [{"text": "方案", "type": "S"}, {"text": "应用迁移", "type": "S"}, {"text": "数据迁移", "type": "S"}], "comment": "删除整段职责描述，保留核心可执行技能"},
+  {"id": "1870-s0002", "spans": [{"text": "系统搭建", "type": "S"}, {"text": "PoC测试", "type": "S"}, {"text": "迁移", "type": "S"}], "comment": "修正半词，拆分并列技能"},
+  {"id": "1870-s0003", "spans": [{"text": "技术方案", "type": "S"}], "comment": "删除半词和非技能描述"}
+]

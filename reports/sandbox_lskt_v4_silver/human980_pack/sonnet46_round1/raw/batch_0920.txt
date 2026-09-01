@@ -1,0 +1,12 @@
+```json
+[
+  {"id": "1975-s0006", "spans": [{"text": "责任心", "type": "T"}, {"text": "团队合作精神", "type": "T"}], "comment": "补全半词，加责任心"},
+  {"id": "1976-s0003", "spans": [{"text": "收集", "type": "S"}, {"text": "需求实施", "type": "S"}], "comment": "补全半词，删掉运维标准规范做好（职责描述）"},
+  {"id": "1976-s0007", "spans": [{"text": "计算机相关专业", "type": "K"}, {"text": "项目开发", "type": "S"}], "comment": "补全半词，删经验年限词"},
+  {"id": "1976-s0010", "spans": [{"text": "配置", "type": "S"}], "comment": "补全半词，删具体设备列举"},
+  {"id": "1976-s0011", "spans": [{"text": "数据库", "type": "K"}, {"text": "mysql", "type": "S"}, {"text": "sqlserver", "type": "S"}], "comment": "拆并列，工具归S"},
+  {"id": "1976-s0013", "spans": [{"text": "客户服务意识", "type": "T"}, {"text": "责任心", "type": "T"}, {"text": "团队协作精神", "type": "T"}, {"text": "人际关系处理能力", "type": "T"}, {"text": "表达", "type": "T"}, {"text": "应变能力", "type": "T"}], "comment": "补全半词，拆并列"},
+  {"id": "1976-s0014", "spans": [{"text": "学习能力", "type": "T"}], "comment": "删接受新知识、共享（不是具体技能）"},
+  {"id": "1977-s0000", "spans": [{"text": "技术支持", "type": "S"}, {"text": "沟通", "type": "T"}, {"text": "售前咨询", "type": "S"}], "comment": "补全半词，删引导客户需求（职责）"}
+]
+```

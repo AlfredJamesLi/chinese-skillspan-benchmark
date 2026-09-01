@@ -1,0 +1,48 @@
+% Include after copying overleaf_cursor_bundle/figures/ into the Overleaf repo.
+% Packages: graphicx, booktabs. Do not put SkillSpan English F1 in these captions.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.98\linewidth]{figures/fig_violin_span_length.pdf}
+\caption{Span-length distributions (SkillSpan Fig.~2 analogue) on the source-stratified \texttt{repartition\_v1} split.
+Train/dev/evaluation all contain AI, Cloud, Public, and Grad.
+Spans are LSKT v4 character silver drafts, not human Gold.
+Skill $=S{+}T$, Knowledge $=L{+}K$.}
+\label{fig:violin-spans}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.98\linewidth]{figures/fig_v4_performance.pdf}
+\caption{Performance on the V4 matched protocol (SkillSpan Fig.~3 analogue; 2{,}601 IDs; jieba on gold and pred; scorer \texttt{cnss-lskt-1.2.0}).
+Typed exact vs typed relaxed (IoU$\ge$0.5). Error bars are sample std over three seeds where available; v4 JobBERT and frozen LLM dumps are single runs.
+JobBERT-zh 3M leads typed exact (0.4331); frozen ChatGPT (\texttt{gpt-4o}) leads relaxed (0.6249).
+Do not rank 0.4331 against Gold v2 ChatGPT 0.6365. We do not train SpanBERT-from-scratch or an STL/MTL encoder grid.}
+\label{fig:v4-perf}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.72\linewidth]{figures/fig_encoder_seed_winrate.pdf}
+\caption{Gold v2 encoder pairwise seed win-rate (SkillSpan Fig.~4 analogue).
+Cell $=P(\text{row seed F1}>\text{col seed F1})$ over $3\times3$ pairs.
+This is \textbf{not} Almost Stochastic Order with Bonferroni (Zhang et al.\ used five seeds). $n{=}3$ is under-powered; 1M / domain-mix / 3M are not separable.}
+\label{fig:seed-winrate}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\linewidth]{figures/fig_pred_span_length.pdf}
+\caption{Mean span length on Gold v2 (SkillSpan Fig.~5 analogue).
+Encoders over-predict length ($\sim$5.9--6.1 tokens) relative to gold ($\sim$4.5--5.9 by domain). ChatGPT dump is closer to gold length.}
+\label{fig:pred-len}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.98\linewidth]{figures/fig_f1_by_span_length.pdf}
+\caption{Gold v2 typed exact F1 by gold span length (SkillSpan Fig.~6 analogue).
+Support counts (vertical) are gold $n$ in each bucket.
+ChatGPT is weak on length-1 but strong on 2 and 4; encoders stay below 0.20 on every bucket.}
+\label{fig:f1-by-len}
+\end{figure}

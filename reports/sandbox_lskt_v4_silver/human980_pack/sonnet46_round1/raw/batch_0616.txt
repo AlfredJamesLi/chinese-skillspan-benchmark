@@ -1,0 +1,10 @@
+[
+  {"id": "1921-s0000", "spans": [{"text": "需求分析", "type": "S"}, {"text": "设计", "type": "S"}, {"text": "开发", "type": "S"}, {"text": "调试", "type": "S"}, {"text": "维护", "type": "S"}], "comment": "补全半词，拆开并列技能"},
+  {"id": "1921-s0001", "spans": [{"text": "DevOps", "type": "S"}, {"text": "日志监控", "type": "S"}, {"text": "研发", "type": "S"}, {"text": "运维", "type": "S"}], "comment": "补全半词，删除方法流程规范落地等非独立技能"},
+  {"id": "1921-s0002", "spans": [{"text": "设计文档编写", "type": "S"}, {"text": "自动化测试工具编写", "type": "S"}, {"text": "代码审查", "type": "S"}, {"text": "维护", "type": "S"}, {"text": "升级", "type": "S"}], "comment": "补全半词，拆开并列，删除学历年限"},
+  {"id": "1921-s0003", "spans": [{"text": "C", "type": "S"}, {"text": "Golang", "type": "S"}], "comment": "CCGolang应为C和Golang两个语言"},
+  {"id": "1921-s0004", "spans": [{"text": "后端系统的基础架构设计", "type": "K"}, {"text": "Beego", "type": "S"}], "comment": "补全架构设计，框架Beego归S不标使用经验"},
+  {"id": "1921-s0006", "spans": [{"text": "网络编程", "type": "S"}, {"text": "TCP", "type": "K"}, {"text": "UDP", "type": "K"}, {"text": "HTTP", "type": "K"}], "comment": "协议是知识归K，拆开并列"},
+  {"id": "1921-s0007", "spans": [{"text": "数据结构", "type": "K"}, {"text": "逻辑思维清晰", "type": "T"}], "comment": "补全完整词"},
+  {"id": "1921-s0008", "spans": [{"text": "责任感", "type": "T"}, {"text": "积极主动", "type": "T"}, {"text": "学习能力", "type": "T"}, {"text": "善于总结", "type": "T"}, {"text": "文档编写能力", "type": "S"}], "comment": "补全学习能力"}
+]

@@ -1,0 +1,12 @@
+```json
+[
+  {"id": "1836-s0010", "spans": [{"text": "Java EE相关技术", "type": "S"}, {"text": "Spring boot", "type": "S"}, {"text": "Spring cloud框架", "type": "S"}], "comment": "修正半词；拆分并列；删年限和熟悉动词；专业技术基础太泛不标；项目经验太泛不标"},
+  {"id": "1836-s0011", "spans": [{"text": "bootstrap", "type": "S"}, {"text": "jquery", "type": "S"}, {"text": "Ext", "type": "S"}, {"text": "EasyUI", "type": "S"}], "comment": "前端框架是工具归S；拆开并列；前台框架太泛不标"},
+  {"id": "1836-s0012", "spans": [{"text": "网络应用架构", "type": "K"}, {"text": "系统架构", "type": "K"}, {"text": "分布式缓存", "type": "K"}, {"text": "消息队列", "type": "K"}, {"text": "大数据处理", "type": "K"}, {"text": "远程调用", "type": "K"}, {"text": "HDFS", "type": "S"}, {"text": "Mangodb", "type": "S"}, {"text": "Redis", "type": "S"}, {"text": "Memcached", "type": "S"}, {"text": "Kafka", "type": "S"}, {"text": "Dubbo", "type": "S"}], "comment": "修正半词；拆开并列；具体工具归S；架构理论归K；删年限和优先；原理优缺点太泛不标；实战经验太泛不标"},
+  {"id": "1836-s0013", "spans": [{"text": "Maven", "type": "S"}], "comment": "构建工具是具体工具归S；删熟悉掌握动词"},
+  {"id": "1836-s0015", "spans": [{"text": "MySql", "type": "S"}, {"text": "Oracle", "type": "S"}, {"text": "SqlServer", "type": "S"}, {"text": "备份", "type": "S"}, {"text": "集群", "type": "S"}], "comment": "修正半词；数据库和操作都是工具归S；拆开并列；删使用动词"},
+  {"id": "1836-s0019", "spans": [{"text": "php", "type": "S"}, {"text": "python", "type": "S"}, {"text": "go", "type": "S"}, {"text": "能源", "type": "K"}, {"text": "电力行业", "type": "K"}], "comment": "修正半词；编程语言归S；行业领域归K；拆开并列；删项目经验和优先"},
+  {"id": "1837-s0022", "spans": [], "comment": "公司简介宣传句不标"},
+  {"id": "1838-s0001", "spans": [{"text": "账户运营", "type": "S"}, {"text": "优化", "type": "S"}, {"text": "广告投放", "type": "S"}], "comment": "修正半词；具体操作归S；拆开并列；删指导动词；广告资源组合太泛不标"}
+]
+```

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Chinese RoBERTa-wwm-ext + CRF token classifier on Chinese-SkillSpan.
+"""Chinese RoBERTa-wwm-ext / JobBERT-zh + CRF token classifier.
 
-Trains on corpus train.json, early-stops on corpus dev bio4, writes test
-predictions. Scores against canonical Gold v2 with cnss-lskt official mode.
-Does not overwrite old dumps. Does not modify raw Gold.
+Joint (default): 9 BIO tags. STL (`--keep_type L|K|S|T`): 3-tag CRF, other
+types mapped to O. Trainer `--gold` score is a side diagnostic; V4 paper
+scoring is `scripts/eval_stl_v4.py`. Does not overwrite old dumps or Gold v2.
 """
 from __future__ import annotations
 
@@ -26,9 +26,16 @@ sys.path.insert(0, str(PAPER / "scorer"))
 sys.path.insert(0, str(ROOT / "Baseline_Models_Collection/pytorch-crf"))
 from score_lskt import GOLD_FIELDS, extract_spans, match_exact, score  # noqa: E402
 
-LABELS = ["O", "B-L", "I-L", "B-K", "I-K", "B-S", "I-S", "B-T", "I-T"]
-LABEL2ID = {l: i for i, l in enumerate(LABELS)}
-ID2LABEL = {i: l for l, i in LABEL2ID.items()}
+JOINT_LABELS = ["O", "B-L", "I-L", "B-K", "I-K", "B-S", "I-S", "B-T", "I-T"]
+KEEP_TYPES = ("L", "K", "S", "T")
+
+
+def label_maps(keep_type: str | None) -> tuple[list[str], dict[str, int], dict[int, str]]:
+    """Joint = 9 BIO tags. STL = O/B-X/I-X for one type (unused types never trained)."""
+    t = (keep_type or "").strip().upper()
+    labels = ["O", f"B-{t}", f"I-{t}"] if t in KEEP_TYPES else list(JOINT_LABELS)
+    l2i = {l: i for i, l in enumerate(labels)}
+    return labels, l2i, {i: l for l, i in l2i.items()}
 
 
 def set_seed(seed: int) -> None:
@@ -45,29 +52,36 @@ def load_split(path: Path) -> list[dict]:
     return [json.loads(l) for l in raw.splitlines() if l.strip()]
 
 
-def gold_tags(rec: dict) -> list[str]:
+def gold_tags(rec: dict, keep_type: str | None = None) -> list[str]:
     tags = rec.get("list_of_selection_bio4") or rec.get("list_of_selection") or []
     out = []
     for t in tags:
         t = ("" if t is None else str(t)).strip() or "O"
         u = t.upper()
-        if u in LABEL2ID:
-            out.append(u)
+        if u in JOINT_LABELS:
+            lab = u
         elif u in {"B", "I"}:
-            out.append(f"{u}-S")
+            lab = f"{u}-S"
         elif u.startswith("B-") or u.startswith("I-"):
-            lab = u.split("-", 1)[1]
-            out.append(u if lab in {"L", "K", "S", "T"} else f"{u[0]}-S")
+            typ = u.split("-", 1)[1]
+            lab = u if typ in KEEP_TYPES else f"{u[0]}-S"
         else:
-            out.append("O")
+            lab = "O"
+        out.append(lab)
+    kt = (keep_type or "").strip().upper()
+    if kt in KEEP_TYPES:
+        keep = {f"B-{kt}", f"I-{kt}"}
+        out = [x if x in keep else "O" for x in out]
     return out
 
 
 class SentDS(Dataset):
-    def __init__(self, rows: list[dict], tokenizer, max_len: int):
+    def __init__(self, rows: list[dict], tokenizer, max_len: int, label2id: dict[str, int], keep_type: str | None = None):
         self.rows = rows
         self.tok = tokenizer
         self.max_len = max_len
+        self.label2id = label2id
+        self.keep_type = keep_type
 
     def __len__(self) -> int:
         return len(self.rows)
@@ -75,7 +89,7 @@ class SentDS(Dataset):
     def __getitem__(self, i: int) -> dict:
         rec = self.rows[i]
         tokens = [str(t) for t in (rec.get("tokens") or list(rec.get("sentence") or ""))]
-        tags = gold_tags(rec)
+        tags = gold_tags(rec, self.keep_type)
         if len(tags) < len(tokens):
             tags = tags + ["O"] * (len(tokens) - len(tags))
         tags = tags[: len(tokens)]
@@ -94,7 +108,7 @@ class SentDS(Dataset):
             if wid is None or wid == prev:
                 lab.append(0)
             else:
-                lab.append(LABEL2ID.get(tags[wid], 0))
+                lab.append(self.label2id.get(tags[wid], 0))
             prev = wid
         item = {k: v.squeeze(0) for k, v in enc.items()}
         # pytorch-crf requires mask[:, 0] all True. CLS is always position 0,
@@ -110,13 +124,13 @@ class SentDS(Dataset):
 
 
 class BertCRF(nn.Module):
-    def __init__(self, model_dir: str, dropout: float = 0.1):
+    def __init__(self, model_dir: str, n_labels: int, dropout: float = 0.1):
         super().__init__()
         self.encoder = AutoModel.from_pretrained(model_dir, local_files_only=True)
         h = self.encoder.config.hidden_size
         self.dropout = nn.Dropout(dropout)
-        self.emissions = nn.Linear(h, len(LABELS))
-        self.crf = CRF(len(LABELS), batch_first=True)
+        self.emissions = nn.Linear(h, n_labels)
+        self.crf = CRF(n_labels, batch_first=True)
 
     def forward(self, input_ids, attention_mask, token_type_ids=None, labels=None, crf_mask=None):
         kwargs = {"input_ids": input_ids, "attention_mask": attention_mask}
@@ -137,7 +151,7 @@ class BertCRF(nn.Module):
         return self.crf.decode(emissions, mask=mask)
 
 
-def apply_decode(word_ids, decoded: list[int], n_words: int) -> list[str]:
+def apply_decode(word_ids, decoded: list[int], n_words: int, id2label: dict[int, str]) -> list[str]:
     """Map CRF tags (one per non-pad tokenizer position, incl. CLS/SEP) onto words.
 
     First subword keeps its tag; CLS/SEP and continuation subwords are ignored.
@@ -152,15 +166,15 @@ def apply_decode(word_ids, decoded: list[int], n_words: int) -> list[str]:
                 prev = wid
             continue
         if wid < n_words:
-            out[wid] = ID2LABEL.get(decoded[i], "O")
+            out[wid] = id2label.get(decoded[i], "O")
         prev = wid
     return out
 
 
 @torch.no_grad()
-def predict_tags(model, tokenizer, rows, max_len, device, bsz: int = 16) -> list[list[str]]:
+def predict_tags(model, tokenizer, rows, max_len, device, bsz: int, label2id, id2label, keep_type: str | None) -> list[list[str]]:
     model.eval()
-    ds = SentDS(rows, tokenizer, max_len)
+    ds = SentDS(rows, tokenizer, max_len, label2id, keep_type)
     loader = DataLoader(ds, batch_size=bsz, shuffle=False)
     all_tags: list[list[str] | None] = [None] * len(rows)
     for batch in loader:
@@ -179,14 +193,14 @@ def predict_tags(model, tokenizer, rows, max_len, device, bsz: int = 16) -> list
         decoded = model.decode(em, mask)
         for i, idx in enumerate(idxs):
             wids = [None if int(w) < 0 else int(w) for w in word_ids[i].tolist()]
-            all_tags[idx] = apply_decode(wids, decoded[i], int(n_words[i]))
+            all_tags[idx] = apply_decode(wids, decoded[i], int(n_words[i]), id2label)
     return [t or ["O"] * len(r.get("tokens") or []) for t, r in zip(all_tags, rows)]
 
 
-def typed_f1(rows: list[dict], pred_tags: list[list[str]]) -> float:
+def typed_f1(rows: list[dict], pred_tags: list[list[str]], keep_type: str | None = None) -> float:
     tp = fp = fn = 0
     for rec, pt in zip(rows, pred_tags):
-        gold = gold_tags(rec)
+        gold = gold_tags(rec, keep_type)
         n = len(rec.get("tokens") or gold)
         gold = (gold + ["O"] * n)[:n]
         pt = (pt + ["O"] * n)[:n]
@@ -218,13 +232,17 @@ def write_pred_jsonl(rows: list[dict], pred_tags: list[list[str]], path: Path) -
 
 def train_one(args) -> dict:
     set_seed(args.seed)
+    keep_type = (args.keep_type or "").strip().upper() or None
+    if keep_type and keep_type not in KEEP_TYPES:
+        raise ValueError(f"keep_type must be one of {KEEP_TYPES} or empty, got {args.keep_type!r}")
+    _, label2id, id2label = label_maps(keep_type)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     tok = AutoTokenizer.from_pretrained(args.model_dir, local_files_only=True)
-    model = BertCRF(args.model_dir).to(device)
+    model = BertCRF(args.model_dir, n_labels=len(label2id)).to(device)
     train_rows = load_split(Path(args.train))
     dev_rows = load_split(Path(args.dev))
     test_rows = load_split(Path(args.test))
-    train_ds = SentDS(train_rows, tok, args.max_len)
+    train_ds = SentDS(train_rows, tok, args.max_len, label2id, keep_type)
     loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True)
     opt = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.01)
     total = max(1, len(loader) * args.epochs)
@@ -268,10 +286,12 @@ def train_one(args) -> dict:
             losses.append(float(loss.item()))
             if step % 200 == 0:
                 print(json.dumps({"epoch": epoch, "step": step, "loss": float(loss.item())}), flush=True)
-        dev_pred = predict_tags(model, tok, dev_rows, args.max_len, device, args.batch_size)
+        dev_pred = predict_tags(
+            model, tok, dev_rows, args.max_len, device, args.batch_size, label2id, id2label, keep_type
+        )
         if device.type == "cuda":
             torch.cuda.empty_cache()
-        dev_f1 = typed_f1(dev_rows, dev_pred)
+        dev_f1 = typed_f1(dev_rows, dev_pred, keep_type)
         row = {"epoch": epoch, "train_loss": sum(losses) / len(losses), "dev_typed_f1": dev_f1}
         history.append(row)
         print(json.dumps(row), flush=True)
@@ -299,7 +319,9 @@ def train_one(args) -> dict:
     best_path = out_dir / "best.pt"
     if best_path.is_file():
         model.load_state_dict(torch.load(best_path, map_location=device))
-    test_pred = predict_tags(model, tok, test_rows, args.max_len, device, args.batch_size)
+    test_pred = predict_tags(
+        model, tok, test_rows, args.max_len, device, args.batch_size, label2id, id2label, keep_type
+    )
     pred_path = out_dir / "test_pred.jsonl"
     write_pred_jsonl(test_rows, test_pred, pred_path)
     report = score(
@@ -314,6 +336,8 @@ def train_one(args) -> dict:
     meta = {
         "seed": args.seed,
         "model_dir": args.model_dir,
+        "keep_type": keep_type,
+        "n_labels": len(label2id),
         "best_dev_typed_f1": best_f1,
         "history": history,
         "pred_path": str(pred_path),
@@ -325,7 +349,7 @@ def train_one(args) -> dict:
         "scorer_version": report.get("scorer_version"),
     }
     (out_dir / "run_summary.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps({"seed": args.seed, "best_dev": best_f1, "test_typed": (report.get("typed_exact") or {}).get("f1"), "test_collapsed": (report.get("collapsed_exact") or {}).get("f1"), "align": report.get("alignment_ok")}, ensure_ascii=False), flush=True)
+    print(json.dumps({"seed": args.seed, "keep_type": keep_type, "best_dev": best_f1, "test_typed": (report.get("typed_exact") or {}).get("f1"), "test_collapsed": (report.get("collapsed_exact") or {}).get("f1"), "align": report.get("alignment_ok")}, ensure_ascii=False), flush=True)
     return meta
 
 
@@ -344,6 +368,11 @@ def main() -> int:
     ap.add_argument("--max_len", type=int, default=256)
     ap.add_argument("--lr", type=float, default=2e-5)
     ap.add_argument("--resume", action="store_true")
+    ap.add_argument(
+        "--keep_type",
+        default="",
+        help="STL: keep only L, K, S, or T (other BIO → O; 3-tag CRF). Empty = joint 9-tag LSKT.",
+    )
     args = ap.parse_args()
     train_one(args)
     return 0

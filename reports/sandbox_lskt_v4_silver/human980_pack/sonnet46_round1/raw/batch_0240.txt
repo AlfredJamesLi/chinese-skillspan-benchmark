@@ -1,0 +1,12 @@
+```json
+[
+  {"id": "1846-s0005", "spans": [{"text": "本科以上学历", "type": "K"}, {"text": "数学", "type": "K"}, {"text": "计算机相关专业", "type": "K"}, {"text": "数学", "type": "K"}, {"text": "机器学习", "type": "K"}, {"text": "数据挖掘", "type": "K"}, {"text": "C/C++", "type": "S"}, {"text": "JAVA", "type": "S"}, {"text": "python", "type": "S"}, {"text": "matlab", "type": "S"}, {"text": "数据挖掘", "type": "K"}, {"text": "机器学习", "type": "K"}, {"text": "分布式计算", "type": "K"}, {"text": "机器学习", "type": "K"}], "comment": "补全半词，拆分并列，移除职责和福利内容"},
+  {"id": "1846-s0010", "spans": [], "comment": "产品介绍句，不标技能"},
+  {"id": "1846-s0011", "spans": [], "comment": "产品能力描述，不标技能"},
+  {"id": "1847-s0000", "spans": [{"text": "Spark", "type": "S"}], "comment": "职责句，只标工具本身"},
+  {"id": "1847-s0001", "spans": [{"text": "设计", "type": "S"}], "comment": "职责句，保留设计技能"},
+  {"id": "1847-s0002", "spans": [{"text": "计算机相关专业", "type": "K"}, {"text": "本科学历以上", "type": "K"}], "comment": "补全专业，加学历"},
+  {"id": "1847-s0003", "spans": [{"text": "Spark Streaming", "type": "S"}, {"text": "Spark", "type": "S"}], "comment": "拆分工具"},
+  {"id": "1847-s0006", "spans": [{"text": "复杂事件处理", "type": "K"}, {"text": "系统设计", "type": "S"}, {"text": "开发", "type": "S"}], "comment": "补全CEP，拆分设计与开发"}
+]
+```

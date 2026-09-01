@@ -1,0 +1,10 @@
+[
+  {"id": "1955-s0000", "spans": [], "comment": "岗位职责句，不标"},
+  {"id": "1955-s0001", "spans": [], "comment": "岗位职责句，不标"},
+  {"id": "1955-s0004", "spans": [{"text": "技术咨询", "type": "S"}, {"text": "会议支持", "type": "S"}], "comment": "拆分并列的服务技能"},
+  {"id": "1955-s0006", "spans": [{"text": "计算机相关专业", "type": "K"}, {"text": "本科", "type": "K"}, {"text": "IT运维", "type": "S"}, {"text": "团队管理", "type": "S"}], "comment": "专业和学历分开；IT运维是技能；团队管理是可执行技能"},
+  {"id": "1955-s0007", "spans": [{"text": "Linux", "type": "S"}, {"text": "开源软件安装部署", "type": "S"}, {"text": "运维", "type": "S"}], "comment": "Linux是工具；拆分技能"},
+  {"id": "1955-s0009", "spans": [{"text": "独立思考", "type": "T"}, {"text": "逻辑清晰", "type": "T"}, {"text": "沟通能力", "type": "T"}], "comment": "软技能拆分"},
+  {"id": "1956-s0001", "spans": [{"text": "测试", "type": "S"}, {"text": "维护", "type": "S"}], "comment": "只标技能动作"},
+  {"id": "1956-s0002", "spans": [{"text": "监控系统", "type": "S"}, {"text": "备份", "type": "S"}, {"text": "状态监控", "type": "S"}, {"text": "数据监控", "type": "S"}, {"text": "故障处理", "type": "S"}], "comment": "拆分并列技能"}
+]

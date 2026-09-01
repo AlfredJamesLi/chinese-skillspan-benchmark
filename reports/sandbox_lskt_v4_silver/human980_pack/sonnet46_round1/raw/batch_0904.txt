@@ -1,0 +1,10 @@
+[
+  {"id": "1972-s0001", "spans": [{"text": "系统日常维护", "type": "S"}, {"text": "变更", "type": "S"}, {"text": "优化", "type": "S"}], "comment": "补全半词，拆开并列"},
+  {"id": "1972-s0002", "spans": [{"text": "运维自动化平台的建设", "type": "S"}], "comment": "补全半词"},
+  {"id": "1972-s0004", "spans": [{"text": "Linux", "type": "S"}, {"text": "Shell", "type": "S"}, {"text": "Python", "type": "S"}], "comment": "操作系统是工具S，不标熟悉使用，脚本语言太泛不标"},
+  {"id": "1972-s0005", "spans": [{"text": "负载均衡", "type": "S"}, {"text": "HAProxy", "type": "S"}, {"text": "Nginx", "type": "S"}], "comment": "负载均衡是可执行技能S，拆开并列工具"},
+  {"id": "1972-s0006", "spans": [{"text": "RabbitMQ", "type": "S"}, {"text": "Redis", "type": "S"}], "comment": "补全半词，具体工具S，消息队列太泛不标"},
+  {"id": "1972-s0007", "spans": [{"text": "MySQL", "type": "S"}, {"text": "MongoDB", "type": "S"}], "comment": "具体数据库S，应用场景等泛化知识不标"},
+  {"id": "1972-s0008", "spans": [{"text": "沟通", "type": "T"}, {"text": "文档写作能力", "type": "T"}, {"text": "跨团队沟通能力", "type": "T"}, {"text": "表达能力", "type": "T"}, {"text": "团队合作能力", "type": "T"}], "comment": "补全软技能并列项"},
+  {"id": "1973-s0006", "spans": [{"text": "服务意识", "type": "T"}, {"text": "沟通", "type": "T"}, {"text": "协调", "type": "T"}], "comment": "会聊天是口语化表述不标，去重沟通能力"}
+]

@@ -1,0 +1,10 @@
+[
+  {"id": "1824-s0004", "spans": [{"text": "本科及以上学历", "type": "K"}, {"text": "计算机及相关专业", "type": "K"}], "comment": "学历和专业都是K，删除年限"},
+  {"id": "1824-s0005", "spans": [{"text": "云计算", "type": "K"}, {"text": "架构设计", "type": "S"}, {"text": "运维", "type": "S"}], "comment": "补全半词，云计算是领域知识K，架构设计和运维是S"},
+  {"id": "1824-s0007", "spans": [{"text": "Linux内核", "type": "S"}, {"text": "docker", "type": "S"}, {"text": "部署", "type": "S"}, {"text": "配置", "type": "S"}, {"text": "排错", "type": "S"}], "comment": "Linux内核和docker是工具S，并列的技能拆开"},
+  {"id": "1824-s0008", "spans": [{"text": "Python", "type": "S"}, {"text": "Perl", "type": "S"}, {"text": "shell", "type": "S"}, {"text": "SQL", "type": "S"}], "comment": "编程语言都是S，并列拆开，删除等"},
+  {"id": "1824-s0009", "spans": [{"text": "自我驱动", "type": "T"}, {"text": "主动思考", "type": "T"}, {"text": "技术敏感度", "type": "T"}, {"text": "风险识别能力", "type": "T"}, {"text": "全局意识", "type": "T"}], "comment": "软技能T，补全半词，拆分并列"},
+  {"id": "1825-s0000", "spans": [{"text": "深度学习", "type": "K"}, {"text": "测试", "type": "S"}, {"text": "质量保证", "type": "S"}], "comment": "深度学习是领域知识K，测试和质量保证是技能S，补全半词，不标职责整段"},
+  {"id": "1825-s0003", "spans": [{"text": "本科及以上学历", "type": "K"}, {"text": "系统软件测试", "type": "S"}], "comment": "学历K，测试技能S，删除年限和经验"},
+  {"id": "1825-s0004", "spans": [{"text": "编码", "type": "S"}, {"text": "bash", "type": "S"}, {"text": "python", "type": "S"}, {"text": "Go语言", "type": "S"}], "comment": "编码能力和语言都是S，并列拆开，补全半词"}
+]
