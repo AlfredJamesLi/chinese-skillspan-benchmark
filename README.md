@@ -3,6 +3,7 @@
 **Chinese-SkillSpan / Chinese Skill Benchmark** — PeerJ Computer Science 数据集与评测备份（私有仓库）。
 
 评分器：`cnss-lskt-1.2.0` · Gold 评测集：`data/gold_canonical_v2.jsonl` · 更新：2026-08-26  
+换机模型清单（类型 + HF/百度渠道）：[`MODELS_HF.md`](MODELS_HF.md) · [`REPRO_FROM_BAIDU.md`](REPRO_FROM_BAIDU.md)  
 LLM dump 型号对照：[`tables/model_ids.csv`](tables/model_ids.csv)（`gpt-4o` / `claude-3-5-haiku-20241022` / `kimi-k2-0711-preview` / `deepseek-r1` / `Qwen2.5-14B-Instruct`）
 
 ---

@@ -9,6 +9,11 @@
 
 本机对照账号：`DS209213:/home/guojingli3`。`bypy` 远端路径均相对 `/apps/bypy`。
 
+**模型类型与下载渠道总表**（HF 可下、百度不上的必须看这张表）：  
+`MODELS_CATALOG.md`（各项目仓根目录；百度 `/账号交接_20260901/MODELS_CATALOG.md`）。
+
+GitHub 上同名文件：`SCESC-LLM-skill-extraction/REPRO_FROM_BAIDU.md`、`chinese-skillspan-benchmark/REPRO_FROM_BAIDU.md`。百度同步后见 `/账号交接_20260901/ACCOUNT_REPRO_FROM_BAIDU.md`。
+
 ---
 
 ## 0. 体积策略
@@ -16,7 +21,7 @@
 | 决策 | 规则 |
 |---|---|
 | 上传百度 | 自训权重、实验 `output/`、Job Reco 处理后数据；以及 **≤ ~4 GB** 的 encoder（RoBERTa / JobBERT / GLiNER / mDeBERTa / DaJobBERT / ESCO-XLM-R **基座**） |
-| 不上传、改 HF 下载 | **Qwen2.5-14B-Instruct（~28 GB）**、**Llama-3-8B-Instruct（~16–30 GB）**、**BAAI/bge-large-zh-v1.5**（Job Reco 本地目录几乎只有 tokenizer，权重本就应从 HF 拉） |
+| 不上传、改 HF 下载 | **Qwen2.5-14B**、**Llama-3-8B**、**E5**（`intfloat/multilingual-e5-large-instruct`）、**CrossEncoder**、**BGE**（Job Reco 本地几乎只有 tokenizer） |
 | 不上传 | `optimizer.pt`、TensorFlow `*.h5` 副本、CUDA/Spark 安装包、三份重复的 `autodl-tmp/data_bj` 只保留一份 |
 
 ---
@@ -106,6 +111,26 @@ huggingface-cli download meta-llama/Meta-Llama-3-8B-Instruct \
 
 Llama 需在 https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct 接受许可并 `huggingface-cli login`。
 
+### SkillAnchor RAG（复现文档原先未写清，换机必须下）
+
+`demo_retrieval.py`、`utils/rag_local.py`、Access RAG 脚本依赖下列 **Hugging Face** 模型，**不要指望百度里有权重**：
+
+```bash
+huggingface-cli download intfloat/multilingual-e5-large-instruct
+huggingface-cli download cross-encoder/mmarco-mMiniLMv2-L12-H384-v1
+# 旧脚本 rag_prompt.py 才需要：
+huggingface-cli download sentence-transformers/all-MiniLM-L6-v2
+```
+
+Kompetencer JobBERT 臂另需：
+
+```bash
+huggingface-cli download jjzha/dajobbert-base-uncased \
+  --local-dir $ROOT/SCESC-LLM-skill-extraction/Baseline_Models_Collection/dajobbert-base-uncased
+```
+
+（也可从百度 `baseline_encoders/dajobbert-base-uncased` 离线还原。）
+
 ### SkillAnchor encoder 基线（也可用百度 `baseline_encoders/` 离线包）
 
 ```bash
@@ -163,11 +188,11 @@ Spark 3.4.2、CUDA、JDK 均从官网装，不要从网盘还原安装包。
 
 ## 5. 项目要点
 
-**Chinese-SkillSpan**：conda 环境曾用 `LGJ_LLM_SE_Baseline`。CRF 脚本见 `Chinese_skill_benchmark_Paper/scripts/`。DAPT 句可从 jsonl 直接用，或用 `data/LARGE_DATA_MANIFEST.md` 从 CSV 重建。
+**Chinese-SkillSpan**：conda 环境曾用 `LGJ_LLM_SE_Baseline`。CRF 脚本见 `Chinese_skill_benchmark_Paper/scripts/`。重训 JobBERT 须 HF `hfl/chinese-roberta-wwm-ext`（或百度 `baseline_encoders/`）。LLM 臂须 Qwen/Llama（仅 HF）。清单：`MODELS_HF.md`。DAPT 句可从 jsonl 直接用，或用 `data/LARGE_DATA_MANIFEST.md` 从 CSV 重建。
 
-**SkillAnchor**：生成器 = `Qwen/Qwen2.5-14B-Instruct` + `lora_finals/sft_*`。评测 `evaluate_src.py`。六语料 processed 在 `SCESC_data/annotated`。
+**SkillAnchor**：生成器 = `Qwen/Qwen2.5-14B-Instruct` + HF private LoRA。重新 decode / RAG 还须 **E5 + CrossEncoder**（第 3 节）。只复现 Table II–III 分数用 GitHub dumps 即可。六语料 processed 在 `SCESC_data/annotated`。项目内清单：`MODELS_HF.md`。
 
-**Job Reco**：代码在 `lab-code-misc-backup` 的 `Job_Reco_BJ/SH/SZ`。数据：`data_bj` + `sparksteps` + `utils`。BGE 必须按第 3 节下载。
+**Job Reco**：代码在 `lab-code-misc-backup` 的 `Job_Reco_BJ/SH/SZ`。数据：`data_bj` + `sparksteps` + `utils`。BGE 必须按第 3 节从 HF 下载（实验室 `local_bge_model` 几乎无权重）。清单：`job/MODELS_HF.md`。
 
 ---
 

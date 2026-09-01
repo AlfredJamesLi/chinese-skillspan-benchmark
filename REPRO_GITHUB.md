@@ -19,7 +19,9 @@ conda activate adasparse   # 或自建 env：torch, transformers, seqeval, jieba
 export PYTHONPATH="/path/to/SCESC-LLM-skill-extraction/Baseline_Models_Collection/pytorch-crf:${PYTHONPATH}"
 ```
 
-本仓评分与 jieba 对齐：`requirements-repro.txt`。Encoder 训练另需父仓库 `requirements.txt` 与 `Baseline_Models_Collection/chinese-roberta-wwm-ext`。
+本仓评分与 jieba 对齐：`requirements-repro.txt`。Encoder 训练另需父仓库 `requirements.txt`。
+
+**Hugging Face 公有模型（本仓 Git 不含权重，百度也不传 14B）**：见 [`MODELS_HF.md`](MODELS_HF.md) 与总表 `MODELS_CATALOG.md`。重训 JobBERT-zh 必须先下 `hfl/chinese-roberta-wwm-ext`；vanilla-large 用 `hfl/chinese-roberta-wwm-ext-large`（或百度 `baseline_encoders/` 离线包）。SOP/LLM 臂另需 `Qwen/Qwen2.5-14B-Instruct`（仅 HF）。论文主数字可用 `data/frozen_preds/`，不必先下 14B。
 
 ## 2. 数据准备
 
