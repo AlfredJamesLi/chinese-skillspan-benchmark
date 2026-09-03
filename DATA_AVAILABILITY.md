@@ -1,0 +1,122 @@
+# Data availability — Chinese-SkillSpan
+
+This note separates **what this repository contains**, **what can reasonably be archived**, and **what must not be described as openly licensed** until the authors confirm rights. It does not create a public upload.
+
+---
+
+## 1. What can be publicly redistributed (pending author confirmation)
+
+The following are *candidates* for a public GitHub + Zenodo + Hugging Face release. **Job-advertisement prose is not openly licensed until confirmed** (Section 7).
+
+| Material | In this tree | Public redistribution |
+|---|---|---|
+| Annotation guidelines (Handbook B v4.2.1 and English one-pager) | `notes/handbooks/` | Yes, if authors own the text (laboratory-authored) |
+| Official scorer and evaluation scripts | `scorer/`, `scripts/` | Yes, after a code licence is chosen and laboratory paths are stripped |
+| Predefined Table 1 split *indices* / `id` lists | Embedded in `data/corpus_splits/` and gold files | IDs and split membership: yes |
+| BIO annotations (`list_of_selection_bio4`) aligned to `id` | Gold, silver, and hybrid files | Derived labels: intended for release |
+| Frozen encoder predictions (tags only + sentence text) | `data/frozen_preds/` | Predictions: yes; accompanying sentence text: same restriction as the corpus |
+| Committed score CSVs and this documentation | `tables/`, `docs/`, `release/` | Yes |
+| Chinese JobBERT weights | **Not in Git** | `[TODO: publish on Hugging Face after licence compatibility is checked]` |
+| Raw recruitment CSV / XLSX | Present in the **working** tree (`应届生招聘大数据*.csv`, `人工智能招聘大数据2025年.xlsx`) | **Do not upload** until platform terms and copyright are confirmed |
+| Continued-pretraining sentence dumps | `data/jobbert_*_sents.jsonl` | Same restriction as raw ads |
+| `output/` checkpoints, caches, virtualenvs | Local only | Do not archive |
+
+---
+
+## 2. Annotations, IDs, splits, statistics, and derived data
+
+Included in the candidate public dataset:
+
+- Sentence `id` (e.g. `1802-s0004`) and optional `global_id` / `sentence_order`
+- Character-level `tokens` and `list_of_selection_bio4` (tags `O`, `B-L`, `I-L`, `B-K`, `I-K`, `B-S`, `I-S`, `B-T`, `I-T`)
+- Auxiliary fields present on Gold v2: `skill_spans`, `tags_skill`, `list_of_selection` (untyped B/I), `source_domain`, `title`, `_canon`
+- Split membership: train / dev / test for the 22,840-sentence Table 1 corpus
+- V4 hybrid metadata (`hybrid_source`: `simhuman980_cws` or `sop_cws`)
+- Silver train/dev for V4 CRF
+- Frozen prediction tag sequences for Chinese JobBERT 1M/3M v4
+- Score tables with SHA-256-backed gold
+
+**Not included:** ESCO concept IDs, applicant CVs, annotator identities beyond Doccano display names already in internal packs, API keys.
+
+**Statistics that must be stated together, not collapsed:**
+
+| Quantity | Value | Source |
+|---|---:|---|
+| Corpus sentences (Table 1) | 22,840 = 17,460 + 2,143 + 3,237 | `data/corpus_splits/` |
+| Same *N*, other assignment | 16,350 + 2,268 + 4,222 | `data/repartition_v1` (not main gold) |
+| Evaluation unique IDs | 2,601 | Gold v2 and V4 hybrid |
+| Raw Doccano Gold rows | 2,676 | Freeze protocol |
+| Human overlay (page 1) | 200 | `data/human_gold_page1_200.jsonl` |
+
+Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云公开数据集`, `事业单位招聘`.
+
+---
+
+## 3. Where the code will be hosted
+
+- **Public GitHub:** `[TODO: public GitHub URL]`
+- **Current private working backup (not the PeerJ archive):** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
+- **Versioned GitHub Release tag:** `[TODO: git tag, e.g. vX.Y.Z]`
+
+---
+
+## 4. Where the archived dataset version will be hosted
+
+- **Zenodo (primary permanent archive, DOI):** `[TODO: Zenodo DOI]`
+- **Hugging Face dataset mirror:** `[TODO: Hugging Face dataset URL]`
+- **Legacy Google Sites page:** https://sites.google.com/view/cn-skillspan-resources — may remain a **homepage**, must **not** be presented as the primary archive.
+
+---
+
+## 5. Where the model will be hosted
+
+- **Hugging Face model (Chinese JobBERT):** `[TODO: Hugging Face model URL]`
+- Weights are absent from Git (`MODELS_HF.md` / `MODELS_CATALOG.md` record laboratory-only checkpoints).
+- Base initialisation: `hfl/chinese-roberta-wwm-ext` (architecture used in training scripts). Licence compatibility is **unverified** in this tree.
+
+---
+
+## 6. Manuscript preprint versus data/code/model
+
+The manuscript has an arXiv preprint. **That URL is not the dataset, code, or model repository.**
+
+`[TODO: this paper's arXiv identifier and URL]`
+
+Do **not** use sister-paper identifiers `2604.21525` or `2604.23009` as this paper’s preprint.
+
+---
+
+## 7. Copyright, platform terms, privacy, and redistribution of advertisement text
+
+> **[TODO: authors must confirm redistribution rights for original job-advertisement text before any public upload.]**
+
+This working tree contains:
+
+- Full sentence strings and job `title` fields (often including employer names) inside gold, silver, corpus splits, frozen predictions, and human overlay files
+- Original bulk exports (`应届生招聘大数据*.csv`, `人工智能招聘大数据2025年.xlsx`)
+
+No licence file, terms-of-use waiver, or written permission from the four recruitment platforms is present in the repository. Therefore:
+
+- **Do not claim** that the full raw advertisement text is openly licensed (CC-BY or otherwise).
+- **Do not upload** the CSV / XLSX source dumps with the public archive until counsel or the corresponding author confirms platform terms.
+- A possible restricted release (IDs + BIO tags + hashes, text on request) is **not** implemented; it is listed here only as an option for the authors if full-text rights fail.
+
+Privacy: advertisements may include workplace locations and organisational names. They are not a curated personal-data corpus, but they are not demonstrably free of personal data either. `[TODO: complete a personal-data review before PeerJ submission]`.
+
+---
+
+## 8. Proposed PeerJ Data Availability Statement
+
+Use this wording in the PeerJ form only after the bracketed links exist. Until then, keep the placeholders.
+
+> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at [DATASET DOI OR PERMANENT URL]. The source code, preprocessing scripts, and evaluation tools are available at [GITHUB URL]. The pretrained Chinese JobBERT model, tokenizer, configuration files, and model card are available at [HUGGING FACE MODEL URL].
+
+Longer form (optional methods paragraph):
+
+> Chinese-SkillSpan (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol) and the official scorer `cnss-lskt-1.2.0` are archived at [TODO: Zenodo DOI]. A development copy of the code is at [TODO: public GitHub URL]. Chinese JobBERT is distributed at [TODO: Hugging Face model URL]. A project homepage is maintained at https://sites.google.com/view/cn-skillspan-resources; the Zenodo record, not that page, is the version of record. Redistribution of original job-advertisement wording remains subject to [TODO: confirmed licence / platform terms]. This work was supported by the National Social Science Fund of China, Grant No. 21BGL142.
+
+---
+
+## 9. Funding
+
+National Social Science Fund of China, Grant No. **21BGL142**.

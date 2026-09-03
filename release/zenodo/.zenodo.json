@@ -1,0 +1,60 @@
+{
+  "title": "Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements",
+  "upload_type": "dataset",
+  "description": "<p>Chinese-SkillSpan is a benchmark for competency span extraction from Chinese job advertisements (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol). Chinese JobBERT is the associated domain-adapted encoder baseline.</p><p>This record is intended to archive annotation guidelines (Handbook B, B.sop_v4.2.1), predefined Table 1 splits, BIO annotations, the official scorer cnss-lskt-1.2.0, evaluation scripts, frozen encoder predictions, and documentation.</p><p><strong>Job-advertisement prose is not declared openly licensed until the authors confirm redistribution rights.</strong> The legacy project page https://sites.google.com/view/cn-skillspan-resources is a homepage only and is not the version of record.</p><p>Funding: National Social Science Fund of China, Grant No. 21BGL142.</p><p>[TODO: replace this description with the camera-ready abstract once links exist.]</p><p>[TODO: public GitHub URL]</p><p>[TODO: Hugging Face dataset URL]</p><p>[TODO: Hugging Face model URL]</p><p>[TODO: this paper's arXiv identifier — do not use 2604.21525 or 2604.23009]</p>",
+  "creators": [
+    {"name": "Li, Guojing"},
+    {"name": "Fu, Zichuan"},
+    {"name": "Li, Junyi"},
+    {"name": "Zhang, Wenlin"},
+    {"name": "Guo, Kaifeng"},
+    {"name": "Yang, Jinning"},
+    {"name": "Gao, Jingtong"},
+    {"name": "Zhao, Xiangyu"}
+  ],
+  "keywords": [
+    "Chinese-SkillSpan",
+    "Chinese JobBERT",
+    "competency span extraction",
+    "job advertisements",
+    "named entity recognition",
+    "LSKT",
+    "Chinese"
+  ],
+  "access_right": "open",
+  "license": "other-closed",
+  "notes": "[TODO: replace license other-closed after a public data/code licence is chosen. Do not deposit raw recruitment CSV/XLSX. Corresponding author: Xiangyu Zhao. Affiliations: TODO. Grant No. 21BGL142. Version: TODO. Concept DOI: TODO.]",
+  "version": "[TODO: release version]",
+  "related_identifiers": [
+    {
+      "identifier": "https://sites.google.com/view/cn-skillspan-resources",
+      "relation": "isDocumentedBy",
+      "resource_type": "other",
+      "scheme": "url"
+    },
+    {
+      "identifier": "[TODO: public GitHub URL]",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "[TODO: Hugging Face dataset URL]",
+      "relation": "isIdenticalTo",
+      "resource_type": "dataset",
+      "scheme": "url"
+    },
+    {
+      "identifier": "[TODO: Hugging Face model URL]",
+      "relation": "isSupplementTo",
+      "resource_type": "software",
+      "scheme": "url"
+    },
+    {
+      "identifier": "[TODO: this paper's arXiv id, e.g. arXiv:YYYY.NNNNN — not 2604.21525 or 2604.23009]",
+      "relation": "isSupplementTo",
+      "resource_type": "publication",
+      "scheme": "arxiv"
+    }
+  ]
+}

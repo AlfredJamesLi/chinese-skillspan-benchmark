@@ -1,163 +1,267 @@
-# Chinese-SkillSpan Benchmark
+# Chinese-SkillSpan
 
-**Chinese-SkillSpan / Chinese Skill Benchmark** — PeerJ Computer Science 数据集与评测备份（私有仓库）。
+**Chinese-SkillSpan** is a benchmark for **competency span extraction** from Chinese job advertisements. The associated encoder, **Chinese JobBERT**, is a Chinese job-domain language model used as a reproducible span-extraction baseline.
 
-评分器：`cnss-lskt-1.2.0` · Gold 评测集：`data/gold_canonical_v2.jsonl` · 更新：2026-08-26  
-换机模型清单（类型 + HF/百度渠道）：[`MODELS_HF.md`](MODELS_HF.md) · [`REPRO_FROM_BAIDU.md`](REPRO_FROM_BAIDU.md)  
-LLM dump 型号对照：[`tables/model_ids.csv`](tables/model_ids.csv)（`gpt-4o` / `claude-3-5-haiku-20241022` / `kimi-k2-0711-preview` / `deepseek-r1` / `Qwen2.5-14B-Instruct`）
+This repository contains annotation guidelines, predefined splits, preprocessing and training code, evaluation scripts, frozen prediction files for the principal encoder rows, and documentation for a public PeerJ Computer Science release.
 
----
+> The working copy of this project is currently private. Public GitHub, Zenodo, and Hugging Face URLs are placeholders until the authors publish them. A legacy project page exists at [https://sites.google.com/view/cn-skillspan-resources](https://sites.google.com/view/cn-skillspan-resources); it may be kept as a homepage, but it is **not** the primary permanent archive.
 
-## 论文主表（PDF Table 3，2676 Gold 重打分）
+**Manuscript title:** Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements.
 
-| Model | Paper S-F1 | Repo typed F1 | Repo collapsed F1 | 状态 |
-|---|---:|---:|---:|---|
-| ChatGPT (`gpt-4o`) | 0.6700 | 0.6836 | **0.6703** | 已确认 |
-| Claude (`claude-3-5-haiku-20241022`) | 0.6300 | 0.5712 | 0.6062 | dump 不完整 |
-| Kimi (`kimi-k2-0711-preview`) | 0.5700 | 0.5310 | 0.5618 | dump 不完整 |
-| DeepSeek (`deepseek-r1`) | 0.5130 | **0.5149** | 0.5479 | 已确认 |
-| Qwen (`Qwen2.5-14B-Instruct`) | 0.2130 | 0.3442 | 0.3949 | 与论文有 gap |
-| JobBERT-skill | 0.0045 | — | **0.0045** | 已确认 |
-| JobBERT-knowledge | 0.0038 | — | **0.0038** | 已确认 |
-
-## Gold v2 重打分（canonical，unique-first view）
-
-| Model | Paper S-F1 | typed F1 | collapsed F1 | typed relaxed (IoU≥0.5) | align |
-|---|---:|---:|---:|---:|---|
-| ChatGPT (`gpt-4o`) | 0.6700 | 0.6365 | 0.6403 | **0.7221** | OK |
-| DeepSeek (`deepseek-r1`) | 0.5130 | 0.1327 | 0.3569 | 0.1798 | OK |
-| Qwen (`Qwen2.5-14B-Instruct`) | 0.2130 | 0.0791 | 0.1075 | 0.1272 | OK |
-| JobBERT-skill | 0.0045 | 0.0000 | 0.0045 | 0.0000 | OK |
-| JobBERT-knowledge | 0.0038 | 0.0000 | 0.0037 | 0.0000 | OK |
-| Claude (`claude-3-5-haiku-20241022` + 98× `claude-sonnet-4-6`) | 0.6300 | **0.2583** | 0.2970 | **0.3861** | OK（补 98 条 sonnet-4-6） |
-| Kimi (`kimi-k2-0711-preview`) | 0.5700 | 0.1651 | 0.3349 | 0.2130* | 缺 293 ID |
-
-\* Claude/Kimi relaxed 按缺失 ID=空预测计算（`paper_results/repo/relaxed_f1_gold_v2.json`）。unique-first 官方对齐见上表 typed/collapsed。
-
-## 分域 typed F1（Gold v2；Industry-OOD 代理）
-
-Gold v2 域：人工智能招聘 1407 / 事业单位招聘 737 / 阿里云公开数据集 457。无 `year` 字段，Time-OOD **做不了**。
-
-| System | 人工智能 | 阿里云 | 事业单位 |
-|---|---:|---:|---:|
-| ChatGPT (`gpt-4o`) | 0.6489 | 0.5650 | **0.7032** |
-| DeepSeek (`deepseek-r1`) | 0.1392 | 0.1293 | 0.0805 |
-| Qwen (`Qwen2.5-14B-Instruct`) | 0.0887 | 0.0646 | 0.0207 |
-| JobBERT 3M ckpt65000 | **0.1323** | 0.1259 | 0.0150 |
-| JobBERT 1M | 0.1287 | 0.1332 | 0.0181 |
-| listed mix 1M | 0.1282 | 0.1240 | 0.0153 |
-| domain-mix 1M (seed 42) | 0.1276 | **0.1372** | 0.0287 |
-| RoBERTa-wwm v3 | 0.1242 | 0.1191 | 0.0115 |
-
-Encoder 在**事业单位**上接近失败（~0.015–0.029；domain-mix seed 42 = 0.0287），ChatGPT 在该域最强。CSV：[`tables/per_domain_gold_v2.csv`](tables/per_domain_gold_v2.csv)
-
-## Encoder 实验榜（Gold v2，typed exact micro F1）
-
-| Run | test F1 | dev F1 | vs baseline 0.1224 |
-|---|---:|---:|---|
-| domain-mix 1M (seed 42) | **0.1234** | 0.3190 | +0.0010 |
-| JobBERT 3M ckpt65000 | 0.1233 | 0.3205 | +0.0009 |
-| JobBERT 1M + v3 | **0.1224** | 0.3185 | baseline |
-| human380 + v3 merge | 0.1207 | 0.3163 | −0.0017 |
-| listed mix 1M | 0.1201 | 0.3257 | −0.0023 |
-| JobBERT 3M final encoder | 0.1170 | 0.3209 | −0.0054 |
-| JobBERT 3M ckpt100k | 0.1167 | 0.3207 | −0.0057 |
-| JobBERT demo 80k | 0.1152 | 0.3231 | −0.0072 |
-| RoBERTa-wwm smoke v3 | 0.1156 | 0.3210 | −0.0068 |
-
-完整 JSON/CSV → [`paper_results/repo/encoder_gold_v2.csv`](paper_results/repo/encoder_gold_v2.csv)  
-3-seed 均值 → [`tables/encoder_3seed_gold_v2.csv`](tables/encoder_3seed_gold_v2.csv)（1M **0.1288** / domain-mix 0.1269 / 3M ckpt65000 0.1258 / RoBERTa-wwm **0.1199**）
-
-## SOP v4 / jieba 诊断表（附录，不是 Table 3）
-
-官方主指标仍是 Gold v2 typed exact。下表必须自带 **train silver / decode / test gold**，不得写入 PDF Table 3、Gold v2 LLM 主表或摘要 SOTA。CSV：[`tables/sop_v4_cws_diagnostic.csv`](tables/sop_v4_cws_diagnostic.csv)。
-
-| Pred | Train | Decode | Test gold | typed exact | IoU≥0.5 |
-|---|---|---|---|---:|---:|
-| JobBERT 1M | goldstyle v3 | raw | Gold v2 | 0.1224 | — |
-| JobBERT 1M | SOP v4 | raw | Gold v2 | 0.1079 | 0.3320 |
-| JobBERT 3M | SOP v4 | raw | Gold v2 | 0.1104 | 0.3404 |
-| JobBERT 1M | SOP v4 | jieba post-hoc | Gold v2 | 0.1454 | 0.3411 |
-| JobBERT 3M | SOP v4 | jieba post-hoc | Gold v2 | 0.1479 | 0.3470 |
-| JobBERT 1M | SOP v4 | raw | SOP rule silver | 0.3170 | 0.5663 |
-| JobBERT 3M | SOP v4 | raw | SOP rule silver | 0.3229 | 0.5624 |
-| JobBERT 1M | SOP v4 | jieba post-hoc | SOP-CWS silver | 0.4278 | 0.5960 |
-| JobBERT 3M | SOP v4 | jieba post-hoc | SOP-CWS silver | 0.4341 | 0.5884 |
-
-SOP v4 训练在官方 Gold v2 上低于 goldstyle v3（0.1079 vs 0.1224）。0.3170 / ~0.43 是与 SOP 银标的一致性，不是人类 Gold。
-
-## 匹配协议全量测试（SOP-CWS + SimHuman 980，jieba 双边）
-
-测试金标：980 SimHuman rule_v4 + 1621 SOP-CWS，预测与金标都 jieba snap。n=2601。**不是 Gold v2，不是 PDF Table 3。**  
-复现：`python scripts/eval_hybrid_cws_simhuman.py` · CSV：[`tables/hybrid_cws_simhuman980_all_models.csv`](tables/hybrid_cws_simhuman980_all_models.csv)
-
-| Model | 2601 exact | 2601 relaxed | 980 exact | 980 relaxed |
-|---|---:|---:|---:|---:|
-| JobBERT 3M v4 + jieba | **0.4331** | 0.5873 | **0.4401** | 0.6032 |
-| JobBERT 1M v4 + jieba | **0.4272** | **0.5952** | **0.4333** | **0.6110** |
-| JobBERT 1M CWS retrain | 0.4049 | 0.5904 | 0.4020 | 0.6084 |
-| domain-mix 1M (3-seed) | 0.3037 | 0.5278 | — | — |
-| JobBERT 1M v3 (3-seed) | 0.3032 | 0.5332 | — | — |
-| RoBERTa-wwm v3 (3-seed) | 0.2875 | 0.5206 | — | — |
-| ChatGPT (`gpt-4o`) | 0.2854 | **0.6249** | 0.2836 | **0.6447** |
-| Claude filled (`claude-3-5-haiku-20241022` + 98× `claude-sonnet-4-6`) | 0.1519 | 0.3416 | 0.1778 | 0.4101 |
-| Kimi filled (`kimi-k2-0711-preview` + `kimi-k2.6`) | 0.1093 | 0.2321 | 0.1116 | 0.2514 |
-| DeepSeek (`deepseek-r1`) | 0.0802 | 0.1577 | 0.0738 | 0.1573 |
-| Qwen (`Qwen2.5-14B-Instruct`) | 0.0501 | 0.1409 | 0.0483 | 0.1361 |
-| JobBERT-skill EN | 0.0096 | 0.0676 | 0.0124 | 0.0919 |
-
-此协议下 JobBERT-zh v4 领先 typed exact；ChatGPT 领先 relaxed。不可与 Gold v2 上 ChatGPT 0.6365 直接比。
-
-## 语料规模（PDF Table 1）
-
-| Split | #Sent | Avg Len | Avg 4D |
-|---|---:|---:|---:|
-| train | 17460 | 37.41 | 2.354 |
-| dev | 2143 | 40.37 | 3.607 |
-| test | 3237 | 43.85 | 2.306 |
-
-## 待完成 / 留空
-
-| 实验 | 状态 |
-|---|---|
-| Relaxed F1 (IoU≥0.5) Gold v2 | **已出表**（ChatGPT 0.7221；Claude/Kimi dump 不完整） |
-| 分域 / Industry-OOD 代理 | **已出表**（见上；事业单位是 encoder 短板） |
-| Concept Accuracy / ESCO concept-ID | 无 concept ID，不做 |
-| Time-OOD | 无 year 字段，不做 |
-| Encoder 3-seed（ckpt65000 / 1M / domain-mix） | **已出表**（1M mean 0.1288；RoBERTa seed 123 仍在跑） |
-| Claude / Kimi dump 补全 | 原 dump 仍缺 98 / 293；filled 视图为混型号（sonnet-4-6 / k2.6），不覆盖原文件 |
-| BERT-CRF 已有 vanilla 对照 | RoBERTa-wwm v3 seed42 = 0.1156；3-seed 均值待填 |
-| XLM-R / ESCO lexicon / span baseline | 待填（本地无 XLM-R 权重） |
-| human IAA-300 | 待填 |
-| listed mix **3M** DAPT | 已跳过 |
-| domain-mix DAPT 1M | **已出表**（seed 42 = 0.1234；3-seed mean 0.1269 < 1M 0.1288；事业单位 0.0287） |
-| 匹配协议 hybrid（SOP-CWS+SimHuman980） | **已出表**（见上；不是 Gold v2） |
-| Hybrid / RAG（Qwen） | 不做（本窗口） |
-
-详情 → [`paper_results/pending/placeholders.json`](paper_results/pending/placeholders.json)
+On-disk draft PDFs in this tree still use an older filename that mentions DASFAA and “ESCO-Aligned” extraction. Treat those filenames as drafts. The submission venue recorded in this repository is **PeerJ Computer Science**.
 
 ---
 
-## 目录
+## Chinese-SkillSpan and Chinese JobBERT
 
-| 路径 | 用途 |
+| Resource | Role |
 |---|---|
-| **`paper_results/`** | **结果总表**（manifest + paper/ + repo/ + pending/） |
-| `tables/` | Overleaf 表源（CSV/JSON） |
-| `results_snapshots/` | 各次 run_summary 快照 |
-| `reports/` | 完整审计、打分 dump、IAA 工作表 |
-| `notes/confirmed-results.md` | 论文已确认数字（勿编造） |
-| `notes/handbooks/` | 手册 A（Gold v2 沿革）/ B（SOP v4.1 主协议）/ C（人标） |
-| `prompts/LSKT_V4_ANNOTATION_PROMPT.txt` | 与手册 B v4.1 同步的 LLM/人工提示词 |
-| `reports/human980_doccano/` | 980 分歧句 Doccano 草稿包（非终版 Gold） |
-| `reports/annotation_v4/` | 重叠裁决日志（空表）与 IAA 占位 |
-| `pdf/` | 最新稿 PDF |
-| `HANDOFF.md` | 服务器窗口交接 |
-| `REPRO_GITHUB.md` | 复现说明 |
-| `data/` | Gold v2、train/dev goldstyle、corpus_splits |
+| **Chinese-SkillSpan** | Annotated corpus and evaluation protocol for flat LSKT span extraction (Language / Knowledge / Skill / Trait) from Chinese job-advertisement sentences. |
+| **Chinese JobBERT** | Domain-adapted encoder (continued masked language modelling on Chinese job text, initialised from `hfl/chinese-roberta-wwm-ext`) plus a CRF token classifier. Repository scripts also call it JobBERT-zh. |
 
-## 备份说明
+The dataset defines the task and the gold files. Chinese JobBERT is a baseline trained on that resource. Weights are **not** stored in Git; principal encoder numbers can be reproduced from `data/frozen_preds/` plus the official scorer after the documented jieba alignment step.
 
-- GitHub 私有仓库：https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
-- 大文件未纳入（见 `data/LARGE_DATA_MANIFEST.md`）：`output/` 权重、预训练 RAR、DAPT jsonl
-- 父仓库实验脚本只读备查；**不要改** `access_paper/`
+---
+
+## Main contributions
+
+1. A Chinese job-advertisement span corpus of **22,840 sentences** drawn from **four Chinese recruitment sources**, with character-level BIO labels in four types (L, K, S, T).
+2. Written annotation guidelines (Handbook B, SOP v4.2.1) and predefined train / development / test splits.
+3. An official span scorer (`cnss-lskt-1.2.0`) with typed exact and relaxed (IoU ≥ 0.5) micro-F1.
+4. Reproducible encoder and frozen-prediction baselines, including **Chinese JobBERT**.
+5. Release documentation for GitHub, Hugging Face, Zenodo, and the PeerJ data-availability statement.
+
+---
+
+## Evaluation protocol (do not mix)
+
+Two test-label files share the **same 2,601 sentence IDs** and must not be ranked against each other in one sentence.
+
+| Protocol | File | Role in the paper | Verified headline (typed exact micro-F1) |
+|---|---|---|---|
+| **V4 / Handbook B (paper main)** | `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` | Abstract and main results | Chinese JobBERT 3M: **0.4331**. Frozen ChatGPT dump + jieba: **0.2854** exact / **0.6249** relaxed. |
+| **Gold v2 / Handbook A (provenance)** | `data/gold_canonical_v2.jsonl` | Construction history and appendix | ChatGPT: **0.6365**. Encoder 3-seed mean: **0.1288**. |
+
+The V4 hybrid is **derived** (980 SimHuman rule_v4 spans + 1,621 SOP-CWS spans). It is **not** human Doccano Gold. Do not overwrite `gold_canonical_v2.jsonl`.
+
+**Inconsistencies recorded (not silently resolved):**
+
+- **22,840** is the sum of the Table 1 corpus split (`17,460` / `2,143` / `3,237`) **and** of a later `repartition_v1` draft (`16,350` / `2,268` / `4,222`). Same *N*, different assignment. `repartition_v1` is **not** the main gold.
+- Corpus **test** has **3,237** sentences; raw Doccano Gold has **2,676** rows / **2,601** unique IDs; both V4 hybrid and Gold v2 evaluate **2,601** unique IDs.
+- A first-page human overlay of **200** sentences exists (`data/human_gold_page1_200.jsonl`) and is **not** the abstract gold.
+- A vanilla-WWM seed-42 figure of **0.4341 / 0.4289** is marked **unverified** in the laboratory notes and must not be stated as a result.
+
+---
+
+## Repository structure
+
+```
+Chinese_skill_benchmark_Paper/
+├── README.md                      # this file
+├── REPRODUCIBILITY.md
+├── DATA_AVAILABILITY.md
+├── CITATION.cff
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── requirements-repro.txt         # scoring / jieba only
+├── scorer/                        # official scorer cnss-lskt-1.2.0
+├── scripts/                       # train, eval, preprocessing
+├── data/
+│   ├── corpus_splits/             # train.json / dev.json / test.json (22,840)
+│   ├── gold_canonical_v2.jsonl    # Gold v2 (appendix)
+│   ├── test_lskt_v4_cws_simhuman980_hybrid.jsonl   # paper-main gold
+│   ├── train_lskt_v4_silver.jsonl
+│   ├── dev_lskt_v4_silver.jsonl
+│   ├── frozen_preds/              # encoder dumps for the main table
+│   └── human_gold_page1_200.jsonl # 200-sentence human overlay (not main gold)
+├── notes/handbooks/               # Handbook B (paper SOP) and related
+├── tables/                        # committed CSV results
+├── release/                       # Hugging Face and Zenodo templates
+└── docs/                          # release checklist; internal notes
+```
+
+Internal laboratory notes (Chinese working README, Baidu restore guides, private GitHub push scripts) remain in this tree for authors. They are not the public-facing documentation.
+
+---
+
+## Installation
+
+Scoring and jieba alignment need only the extra listed in `requirements-repro.txt`:
+
+```bash
+python3 -m pip install -r requirements-repro.txt
+```
+
+That file pins **`jieba>=0.42.1`**. The official scorer itself is standard-library Python.
+
+Encoder training (Chinese JobBERT MLM + CRF) additionally needs the **parent** laboratory `requirements.txt` (verified pins include `torch==2.1.2`, `transformers==4.37.1`, `seqeval==1.2.2`, `numpy==1.26.3`) and `pytorch-crf` on `PYTHONPATH`. A local laboratory environment named `adasparse` has been used for development; that name is not required.
+
+**Known gap before a public clone will run the `.py` / `.sh` trainers as-is:** several scripts hard-code a laboratory absolute path. Those paths must be edited or wrapped before a third party can train. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) and `[TODO: remove laboratory absolute paths from public scripts]`.
+
+---
+
+## Data preparation
+
+Files needed for the **paper-main** evaluation (no retraining):
+
+- `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` (SHA-256 `2ad6342d8b762cf1abb289295315e2521bec0c540f4320113409fceab0818d99`)
+- `data/frozen_preds/jobbert_3m_v4.jsonl` (and `jobbert_1m_v4.jsonl` if the 1M row is needed)
+- Frozen LLM views under `reports/views/` for the ChatGPT / other LLM rows
+- `scorer/score_lskt.py`, `scripts/cws_snap.py`, `scripts/eval_hybrid_cws_simhuman.py`
+
+Files needed to **retrain** the V4 CRF head (weights not in Git):
+
+- `data/train_lskt_v4_silver.jsonl`, `data/dev_lskt_v4_silver.jsonl`
+- A local Chinese JobBERT encoder directory (continued MLM from `hfl/chinese-roberta-wwm-ext`)
+- `[TODO: public Hugging Face model URL for Chinese JobBERT]`
+
+**Do not** add the raw recruitment CSV / XLSX files that sit in this working tree to a public release until redistribution rights are confirmed. See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md).
+
+---
+
+## Training, evaluation, and inference
+
+Commands below exist in this repository. Do not treat a command as reproducing a published number unless that pairing is stated.
+
+### Official scorer
+
+```bash
+python3 scorer/score_lskt.py \
+  --gold data/test_lskt_v4_cws_simhuman980_hybrid.jsonl \
+  --pred path/to/predictions.jsonl \
+  --align-mode official
+```
+
+Predictions must use the same sentence `id`s as gold. Label fields accepted by the scorer include `pred_tags` and `list_of_selection_bio4`.
+
+Scoring `data/frozen_preds/jobbert_3m_v4.jsonl` **directly** against the V4 hybrid (no jieba snap) was verified in this workspace to yield typed exact F1 **0.2552**. That is **not** the paper headline.
+
+### Paper-main encoder + LLM table (jieba-aligned)
+
+```bash
+python3 scripts/eval_hybrid_cws_simhuman.py
+```
+
+This script applies bilateral jieba snapping, fills missing gold IDs with empty predictions, and writes `tables/hybrid_cws_simhuman980_all_models.csv`. When `output/` checkpoints are absent it falls back to `data/frozen_preds/` for the Chinese JobBERT v4 rows. It currently hard-codes a laboratory root path.
+
+### Frozen LLM dumps (no API calls)
+
+```bash
+python3 scripts/eval_hybrid_llm_old_dumps.py
+```
+
+Writes `tables/hybrid_cws_llm_old_dumps.csv`. Claude and Kimi source dumps are incomplete (98 and 293 gold IDs missing, respectively, before fill).
+
+### CRF training (exists; does not by itself write the 0.4331 CSV)
+
+```bash
+python3 scripts/train_cn_roberta_crf.py \
+  --seed 42 \
+  --model_dir /path/to/chinese-jobbert-encoder \
+  --train data/train_lskt_v4_silver.jsonl \
+  --dev data/dev_lskt_v4_silver.jsonl \
+  --test data/corpus_splits/test.json \
+  --gold data/gold_canonical_v2.jsonl \
+  --out_dir /path/to/crf_run \
+  --epochs 6 --patience 2 --batch_size 16 --max_len 256 --lr 2e-5
+```
+
+The wrapper `scripts/run_jobbert_zh_3m_lskt_v4.sh` calls the same trainer but is bound to laboratory absolute paths and a local `output/jobbert_zh_3m/mlm/encoder_ckpt65000` checkpoint that is **not** in Git.
+
+Trainer outputs: `test_pred.jsonl`, `best.pt`, `run_summary.json`, `score_official.json`. Paper-main F1 still requires jieba snap via `eval_hybrid_cws_simhuman.py` (or an equivalent `cws_snap` rewrite) against the V4 hybrid.
+
+### Inference
+
+There is no published `pipeline("token-classification")` entry point. Inference is the `predict_tags` path inside `scripts/train_cn_roberta_crf.py` (Hugging Face `AutoTokenizer` + a custom BERT+CRF module). See `release/huggingface-model/README.md`.
+
+### Appendix / Gold v2 (not abstract SOTA)
+
+```bash
+python3 scorer/test_regression.py
+python3 scorer/score_lskt.py \
+  --gold data/gold_canonical_v2.jsonl \
+  --pred reports/views/ChatGPT_unique_first_v2.jsonl \
+  --align-mode official
+```
+
+### Scorer self-test
+
+```bash
+python3 scorer/test_regression.py
+```
+
+---
+
+## Reproducing the principal results
+
+| Claim | How it is reproduced here | Required files |
+|---|---|---|
+| Chinese JobBERT 3M typed exact **0.4331** on V4 hybrid | `python3 scripts/eval_hybrid_cws_simhuman.py` (jieba snap + frozen or local preds). The committed CSV cell is `JobBERT_3M_v4` → `full2601_typed_exact_f1` = `0.433118`. | Hybrid gold, `data/frozen_preds/jobbert_3m_v4.jsonl` or `output/.../test_pred.jsonl`, jieba |
+| ChatGPT exact **0.2854** / relaxed **0.6249** | Same script, row `ChatGPT`. | `reports/views/ChatGPT_unique_first_v2.jsonl` |
+| ChatGPT Gold v2 typed **0.6365** | Official scorer on `gold_canonical_v2.jsonl` (appendix only). | Gold v2 + ChatGPT unique-first view |
+
+**Inputs.** JSONL records with `id`, `sentence` and/or `tokens`, and BIO tags in `list_of_selection_bio4` (gold) or `pred_tags` (predictions).
+
+**Outputs.** JSON score reports from `score_lskt.py`; CSV tables under `tables/`; trainer dumps `test_pred.jsonl`.
+
+---
+
+## Links
+
+| Resource | URL |
+|---|---|
+| Public GitHub repository | `[TODO: public GitHub URL]` |
+| Zenodo archived release (DOI) | `[TODO: Zenodo DOI]` |
+| Hugging Face dataset | `[TODO: Hugging Face dataset URL]` |
+| Hugging Face model (Chinese JobBERT) | `[TODO: Hugging Face model URL]` |
+| arXiv preprint (this paper only) | `[TODO: this paper's arXiv URL and identifier — do not use 2604.21525 or 2604.23009]` |
+| PeerJ Computer Science article | `[TODO: PeerJ article URL]` |
+| Legacy project homepage (not the archive) | https://sites.google.com/view/cn-skillspan-resources |
+
+A private working backup currently exists at `https://github.com/AlfredJamesLi/chinese-skillspan-benchmark`. That URL is **not** the PeerJ archival location.
+
+---
+
+## Citation
+
+```bibtex
+@article{li_chineseskillspan_TODO,
+  title   = {Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements},
+  author  = {Li, Guojing and Fu, Zichuan and Li, Junyi and Zhang, Wenlin and Guo, Kaifeng and Yang, Jinning and Gao, Jingtong and Zhao, Xiangyu},
+  year    = {[TODO: publication year]},
+  journal = {[TODO: PeerJ Computer Science or preprint venue]},
+  doi     = {[TODO: Zenodo or article DOI]},
+  url     = {[TODO: public GitHub or article URL]}
+}
+```
+
+Machine-readable metadata: [`CITATION.cff`](CITATION.cff). Corresponding author: Xiangyu Zhao. `[TODO: corresponding-author email and affiliations]`.
+
+---
+
+## Licence summary
+
+- **Code licence:** `[TODO: confirm SPDX licence for scripts and scorer; do not publish as MIT/Apache-2.0 until chosen]`.
+- **Dataset licence:** `[TODO: confirm a data licence after redistribution rights for job-advertisement text are verified]`. **Do not treat the full raw advertisement text as openly licensed.**
+- **Chinese JobBERT licence:** `[TODO: must be compatible with the base model hfl/chinese-roberta-wwm-ext and with training-data rights]`. A local snapshot of that base model in the laboratory tree has **no** `LICENSE` file; the Hugging Face card licence was not re-fetched for this documentation pass.
+
+See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md).
+
+---
+
+## Limitations and responsible use
+
+- Labels are **flat, non-overlapping** spans. Nested or crossing spans are out of scope.
+- The paper-main V4 test file is a **derived** hybrid, not a fully human gold set. A 200-sentence human overlay is documented separately and is incomplete relative to the 980-sentence disagreement queue.
+- Job advertisements can contain employer names, locations, and other workplace information. Do not scrape, republish, or re-identify individuals from the text.
+- English JobBERT skill/knowledge heads transferred to this Chinese task score near zero on the V4 hybrid (committed CSV: 0.0096 / 0.0088 typed exact) and are not a substitute for Chinese JobBERT.
+- Domain shift across the four sources is large; public-institution sentences are particularly difficult for encoders under Gold v2.
+- Do not use the resource to profile job applicants, to infer protected attributes, or to claim ESCO concept-ID accuracy. This release does **not** include ESCO concept IDs. Concept Accuracy and Time-OOD claims are not supported by the frozen files.
+
+---
+
+## Acknowledgements
+
+This work was supported by the National Social Science Fund of China, Grant No. **21BGL142**.
+
+The previous Chinese working README is preserved at [`docs/INTERNAL_RESULTS_README.md`](docs/INTERNAL_RESULTS_README.md).
