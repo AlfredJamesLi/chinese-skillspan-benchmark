@@ -72,6 +72,4 @@ git branch --show-current
 
 **Human page-1 200（2026-09-03）：** 贴 **一份** `CODEX_PROMPT_HUMAN200_OVERLEAF.md`（含 n=200 分析表 + 2601 叠回诊断表）。摘要仍用 V4 JobBERT 3M **0.4331**。不要用 overlay **0.3884** 替换主表。
 
-**Data Availability 链接（2026-09-04）：** 只贴 `CODEX_PROMPT_DATA_AVAILABILITY.md`。对外写 GitHub + Hugging Face + Zenodo 版本 DOI `10.5281/zenodo.22288338`（Concept `10.5281/zenodo.22288337`）。不要写 Google Sites / Drive。数字一律不动。
-
-**题名 / 作者单位 / 摘要 / 关键词 / 通讯邮箱（2026-09-04）：** 只贴 `CODEX_PROMPT_METADATA.md`。通讯作者 Xiangyu Zhao，`xianzhao@cityu.edu.hk`，CityU。共同一作：Guojing Li（人大+CityU）、Zichuan Fu（CityU）。其余作者仅 CityU。作者摘要为 provisional，不要往新摘要里塞 F1。
+**公开元数据 + Data Availability（2026-09-04，只贴一份）：** `CODEX_PROMPT_OVERLEAF_PUBLIC.md`。含题名、八位作者/单位/共同一作、通讯邮箱、作者摘要（provisional，无 F1）、关键词、Zenodo 版本 DOI `10.5281/zenodo.22288338`。不要同时再贴 `CODEX_PROMPT_METADATA.md` 或 `CODEX_PROMPT_DATA_AVAILABILITY.md`。不要写 Google Sites / Drive。数字表一律不动。
