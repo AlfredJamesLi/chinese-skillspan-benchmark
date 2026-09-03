@@ -1,0 +1,801 @@
+{
+  "gold": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/human_gold_page1_200.jsonl",
+  "gold_sha256": "fcecb522fbdf6571caaaa02c592b6ba4a552c4a9cfa52a0ed1f36b0fe9617490",
+  "scorer": "cnss-lskt-1.2.0",
+  "n": 200,
+  "note": "n=200 analysis only; do not replace V4 hybrid 0.4331 or Gold v2 0.6365",
+  "rows": [
+    {
+      "system": "JobBERT 3M v4 (frozen)",
+      "n_gold": 200,
+      "n_matched": 200,
+      "n_missing": 0,
+      "alignment_ok": true,
+      "typed_exact_p": 0.1586,
+      "typed_exact_r": 0.106,
+      "typed_exact_f1": 0.1271,
+      "typed_relaxed_f1": 0.3498,
+      "collapsed_exact_f1": 0.139
+    },
+    {
+      "system": "JobBERT 1M v4 (frozen)",
+      "n_gold": 200,
+      "n_matched": 200,
+      "n_missing": 0,
+      "alignment_ok": true,
+      "typed_exact_p": 0.1391,
+      "typed_exact_r": 0.0935,
+      "typed_exact_f1": 0.1119,
+      "typed_relaxed_f1": 0.3729,
+      "collapsed_exact_f1": 0.1253
+    },
+    {
+      "system": "JobBERT 1M CWS retrain (frozen)",
+      "n_gold": 200,
+      "n_matched": 200,
+      "n_missing": 0,
+      "alignment_ok": true,
+      "typed_exact_p": 0.1961,
+      "typed_exact_r": 0.1247,
+      "typed_exact_f1": 0.1524,
+      "typed_relaxed_f1": 0.3689,
+      "collapsed_exact_f1": 0.1707
+    },
+    {
+      "system": "ChatGPT gpt-4o dump",
+      "n_gold": 200,
+      "n_matched": 200,
+      "n_missing": 0,
+      "alignment_ok": true,
+      "typed_exact_p": 0.2381,
+      "typed_exact_r": 0.3317,
+      "typed_exact_f1": 0.2772,
+      "typed_relaxed_f1": 0.4013,
+      "collapsed_exact_f1": 0.3189
+    },
+    {
+      "system": "DeepSeek deepseek-r1 dump",
+      "n_gold": 200,
+      "n_matched": 200,
+      "n_missing": 0,
+      "alignment_ok": true,
+      "typed_exact_p": 0.0964,
+      "typed_exact_r": 0.106,
+      "typed_exact_f1": 0.101,
+      "typed_relaxed_f1": 0.152,
+      "collapsed_exact_f1": 0.3325
+    },
+    {
+      "system": "Qwen Qwen2.5-14B-Instruct dump",
+      "n_gold": 200,
+      "n_matched": 200,
+      "n_missing": 0,
+      "alignment_ok": true,
+      "typed_exact_p": 0.1854,
+      "typed_exact_r": 0.0474,
+      "typed_exact_f1": 0.0755,
+      "typed_relaxed_f1": 0.1271,
+      "collapsed_exact_f1": 0.1291
+    },
+    {
+      "system": "Claude haiku dump",
+      "n_gold": 200,
+      "n_matched": 155,
+      "n_missing": 45,
+      "alignment_ok": false,
+      "typed_exact_p": 0.2267,
+      "typed_exact_r": 0.2553,
+      "typed_exact_f1": 0.2402,
+      "typed_relaxed_f1": 0.3874,
+      "collapsed_exact_f1": 0.2888
+    },
+    {
+      "system": "Kimi k2 dump",
+      "n_gold": 200,
+      "n_matched": 200,
+      "n_missing": 0,
+      "alignment_ok": true,
+      "typed_exact_p": 0.1652,
+      "typed_exact_r": 0.1908,
+      "typed_exact_f1": 0.1771,
+      "typed_relaxed_f1": 0.228,
+      "collapsed_exact_f1": 0.2951
+    },
+    {
+      "system": "Gold v2 (agreement, not a system)",
+      "n_gold": 200,
+      "n_matched": 200,
+      "n_missing": 0,
+      "alignment_ok": true,
+      "typed_exact_p": 0.3582,
+      "typed_exact_r": 0.4426,
+      "typed_exact_f1": 0.396,
+      "typed_relaxed_f1": 0.5086,
+      "collapsed_exact_f1": 0.4663
+    },
+    {
+      "system": "V4 hybrid (agreement, not a system)",
+      "n_gold": 200,
+      "n_matched": 200,
+      "n_missing": 0,
+      "alignment_ok": true,
+      "typed_exact_p": 0.1814,
+      "typed_exact_r": 0.1459,
+      "typed_exact_f1": 0.1617,
+      "typed_relaxed_f1": 0.4147,
+      "collapsed_exact_f1": 0.1797
+    }
+  ],
+  "reports": {
+    "JobBERT 3M v4 (frozen)": {
+      "typed_exact": {
+        "precision": 0.15858208955223882,
+        "recall": 0.1059850374064838,
+        "f1": 0.12705530642750373,
+        "tp": 85,
+        "fp": 451,
+        "fn": 717,
+        "pred": 536,
+        "gold": 802
+      },
+      "typed_relaxed": {
+        "precision": 0.43656716417910446,
+        "recall": 0.29177057356608477,
+        "f1": 0.3497757847533632,
+        "tp": 234,
+        "fp": 302,
+        "fn": 568,
+        "pred": 536,
+        "gold": 802
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 1,
+          "pred": 3,
+          "gold": 1
+        },
+        "K": {
+          "precision": 0.21052631578947367,
+          "recall": 0.1414141414141414,
+          "f1": 0.16918429003021146,
+          "tp": 28,
+          "fp": 105,
+          "fn": 170,
+          "pred": 133,
+          "gold": 198
+        },
+        "S": {
+          "precision": 0.12269938650306748,
+          "recall": 0.08080808080808081,
+          "f1": 0.097442143727162,
+          "tp": 40,
+          "fp": 286,
+          "fn": 455,
+          "pred": 326,
+          "gold": 495
+        },
+        "T": {
+          "precision": 0.22972972972972974,
+          "recall": 0.1574074074074074,
+          "f1": 0.18681318681318682,
+          "tp": 17,
+          "fp": 57,
+          "fn": 91,
+          "pred": 74,
+          "gold": 108
+        }
+      },
+      "alignment_ok": true,
+      "n_missing": 0,
+      "n_matched": 200
+    },
+    "JobBERT 1M v4 (frozen)": {
+      "typed_exact": {
+        "precision": 0.1391465677179963,
+        "recall": 0.09351620947630923,
+        "f1": 0.11185682326621924,
+        "tp": 75,
+        "fp": 464,
+        "fn": 727,
+        "pred": 539,
+        "gold": 802
+      },
+      "typed_relaxed": {
+        "precision": 0.46382189239332094,
+        "recall": 0.3117206982543641,
+        "f1": 0.37285607755406414,
+        "tp": 250,
+        "fp": 289,
+        "fn": 552,
+        "pred": 539,
+        "gold": 802
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 4,
+          "fn": 1,
+          "pred": 4,
+          "gold": 1
+        },
+        "K": {
+          "precision": 0.17518248175182483,
+          "recall": 0.12121212121212122,
+          "f1": 0.14328358208955222,
+          "tp": 24,
+          "fp": 113,
+          "fn": 174,
+          "pred": 137,
+          "gold": 198
+        },
+        "S": {
+          "precision": 0.11692307692307692,
+          "recall": 0.07676767676767676,
+          "f1": 0.09268292682926829,
+          "tp": 38,
+          "fp": 287,
+          "fn": 457,
+          "pred": 325,
+          "gold": 495
+        },
+        "T": {
+          "precision": 0.1780821917808219,
+          "recall": 0.12037037037037036,
+          "f1": 0.143646408839779,
+          "tp": 13,
+          "fp": 60,
+          "fn": 95,
+          "pred": 73,
+          "gold": 108
+        }
+      },
+      "alignment_ok": true,
+      "n_missing": 0,
+      "n_matched": 200
+    },
+    "JobBERT 1M CWS retrain (frozen)": {
+      "typed_exact": {
+        "precision": 0.19607843137254902,
+        "recall": 0.12468827930174564,
+        "f1": 0.1524390243902439,
+        "tp": 100,
+        "fp": 410,
+        "fn": 702,
+        "pred": 510,
+        "gold": 802
+      },
+      "typed_relaxed": {
+        "precision": 0.4745098039215686,
+        "recall": 0.30174563591022446,
+        "f1": 0.36890243902439024,
+        "tp": 242,
+        "fp": 268,
+        "fn": 560,
+        "pred": 510,
+        "gold": 802
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 3,
+          "fn": 1,
+          "pred": 3,
+          "gold": 1
+        },
+        "K": {
+          "precision": 0.24242424242424243,
+          "recall": 0.16161616161616163,
+          "f1": 0.19393939393939394,
+          "tp": 32,
+          "fp": 100,
+          "fn": 166,
+          "pred": 132,
+          "gold": 198
+        },
+        "S": {
+          "precision": 0.16279069767441862,
+          "recall": 0.09898989898989899,
+          "f1": 0.12311557788944723,
+          "tp": 49,
+          "fp": 252,
+          "fn": 446,
+          "pred": 301,
+          "gold": 495
+        },
+        "T": {
+          "precision": 0.25675675675675674,
+          "recall": 0.17592592592592593,
+          "f1": 0.2087912087912088,
+          "tp": 19,
+          "fp": 55,
+          "fn": 89,
+          "pred": 74,
+          "gold": 108
+        }
+      },
+      "alignment_ok": true,
+      "n_missing": 0,
+      "n_matched": 200
+    },
+    "ChatGPT gpt-4o dump": {
+      "typed_exact": {
+        "precision": 0.23813786929274844,
+        "recall": 0.3316708229426434,
+        "f1": 0.27722772277227725,
+        "tp": 266,
+        "fp": 851,
+        "fn": 536,
+        "pred": 1117,
+        "gold": 802
+      },
+      "typed_relaxed": {
+        "precision": 0.3446732318710833,
+        "recall": 0.4800498753117207,
+        "f1": 0.4012506513809275,
+        "tp": 385,
+        "fp": 732,
+        "fn": 417,
+        "pred": 1117,
+        "gold": 802
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "pred": 2,
+          "gold": 1
+        },
+        "K": {
+          "precision": 0.21303258145363407,
+          "recall": 0.4292929292929293,
+          "f1": 0.28475711892797323,
+          "tp": 85,
+          "fp": 314,
+          "fn": 113,
+          "pred": 399,
+          "gold": 198
+        },
+        "S": {
+          "precision": 0.21934369602763384,
+          "recall": 0.25656565656565655,
+          "f1": 0.23649906890130354,
+          "tp": 127,
+          "fp": 452,
+          "fn": 368,
+          "pred": 579,
+          "gold": 495
+        },
+        "T": {
+          "precision": 0.39416058394160586,
+          "recall": 0.5,
+          "f1": 0.44081632653061226,
+          "tp": 54,
+          "fp": 83,
+          "fn": 54,
+          "pred": 137,
+          "gold": 108
+        }
+      },
+      "alignment_ok": true,
+      "n_missing": 0,
+      "n_matched": 200
+    },
+    "DeepSeek deepseek-r1 dump": {
+      "typed_exact": {
+        "precision": 0.0963718820861678,
+        "recall": 0.1059850374064838,
+        "f1": 0.1009501187648456,
+        "tp": 85,
+        "fp": 797,
+        "fn": 717,
+        "pred": 882,
+        "gold": 802
+      },
+      "typed_relaxed": {
+        "precision": 0.14512471655328799,
+        "recall": 0.1596009975062344,
+        "f1": 0.1520190023752969,
+        "tp": 128,
+        "fp": 754,
+        "fn": 674,
+        "pred": 882,
+        "gold": 802
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 1,
+          "pred": 0,
+          "gold": 1
+        },
+        "K": {
+          "precision": 0.3516483516483517,
+          "recall": 0.16161616161616163,
+          "f1": 0.22145328719723187,
+          "tp": 32,
+          "fp": 59,
+          "fn": 166,
+          "pred": 91,
+          "gold": 198
+        },
+        "S": {
+          "precision": 0.22285714285714286,
+          "recall": 0.07878787878787878,
+          "f1": 0.11641791044776119,
+          "tp": 39,
+          "fp": 136,
+          "fn": 456,
+          "pred": 175,
+          "gold": 495
+        },
+        "T": {
+          "precision": 0.4827586206896552,
+          "recall": 0.12962962962962962,
+          "f1": 0.20437956204379562,
+          "tp": 14,
+          "fp": 15,
+          "fn": 94,
+          "pred": 29,
+          "gold": 108
+        }
+      },
+      "alignment_ok": true,
+      "n_missing": 0,
+      "n_matched": 200
+    },
+    "Qwen Qwen2.5-14B-Instruct dump": {
+      "typed_exact": {
+        "precision": 0.18536585365853658,
+        "recall": 0.04738154613466334,
+        "f1": 0.07547169811320754,
+        "tp": 38,
+        "fp": 167,
+        "fn": 764,
+        "pred": 205,
+        "gold": 802
+      },
+      "typed_relaxed": {
+        "precision": 0.3121951219512195,
+        "recall": 0.0798004987531172,
+        "f1": 0.12711022840119166,
+        "tp": 64,
+        "fp": 141,
+        "fn": 738,
+        "pred": 205,
+        "gold": 802
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "pred": 1,
+          "gold": 1
+        },
+        "K": {
+          "precision": 0.21951219512195122,
+          "recall": 0.045454545454545456,
+          "f1": 0.07531380753138076,
+          "tp": 9,
+          "fp": 32,
+          "fn": 189,
+          "pred": 41,
+          "gold": 198
+        },
+        "S": {
+          "precision": 0.25882352941176473,
+          "recall": 0.044444444444444446,
+          "f1": 0.07586206896551724,
+          "tp": 22,
+          "fp": 63,
+          "fn": 473,
+          "pred": 85,
+          "gold": 495
+        },
+        "T": {
+          "precision": 0.28,
+          "recall": 0.06481481481481481,
+          "f1": 0.10526315789473684,
+          "tp": 7,
+          "fp": 18,
+          "fn": 101,
+          "pred": 25,
+          "gold": 108
+        }
+      },
+      "alignment_ok": true,
+      "n_missing": 0,
+      "n_matched": 200
+    },
+    "Claude haiku dump": {
+      "typed_exact": {
+        "precision": 0.22672064777327935,
+        "recall": 0.2553191489361702,
+        "f1": 0.24017155110793423,
+        "tp": 168,
+        "fp": 573,
+        "fn": 490,
+        "pred": 741,
+        "gold": 658
+      },
+      "typed_relaxed": {
+        "precision": 0.3657219973009447,
+        "recall": 0.41185410334346506,
+        "f1": 0.38741958541815585,
+        "tp": 271,
+        "fp": 470,
+        "fn": 387,
+        "pred": 741,
+        "gold": 658
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 0,
+          "pred": 0,
+          "gold": 0
+        },
+        "K": {
+          "precision": 0.20477815699658702,
+          "recall": 0.3821656050955414,
+          "f1": 0.26666666666666666,
+          "tp": 60,
+          "fp": 233,
+          "fn": 97,
+          "pred": 293,
+          "gold": 157
+        },
+        "S": {
+          "precision": 0.22492401215805471,
+          "recall": 0.18271604938271604,
+          "f1": 0.2016348773841962,
+          "tp": 74,
+          "fp": 255,
+          "fn": 331,
+          "pred": 329,
+          "gold": 405
+        },
+        "T": {
+          "precision": 0.3063063063063063,
+          "recall": 0.3541666666666667,
+          "f1": 0.32850241545893716,
+          "tp": 34,
+          "fp": 77,
+          "fn": 62,
+          "pred": 111,
+          "gold": 96
+        }
+      },
+      "alignment_ok": false,
+      "n_missing": 45,
+      "n_matched": 155
+    },
+    "Kimi k2 dump": {
+      "typed_exact": {
+        "precision": 0.1652267818574514,
+        "recall": 0.19077306733167082,
+        "f1": 0.17708333333333334,
+        "tp": 153,
+        "fp": 773,
+        "fn": 649,
+        "pred": 926,
+        "gold": 802
+      },
+      "typed_relaxed": {
+        "precision": 0.21274298056155508,
+        "recall": 0.2456359102244389,
+        "f1": 0.22800925925925927,
+        "tp": 197,
+        "fp": 729,
+        "fn": 605,
+        "pred": 926,
+        "gold": 802
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "pred": 1,
+          "gold": 1
+        },
+        "K": {
+          "precision": 0.2613065326633166,
+          "recall": 0.26262626262626265,
+          "f1": 0.26196473551637284,
+          "tp": 52,
+          "fp": 147,
+          "fn": 146,
+          "pred": 199,
+          "gold": 198
+        },
+        "S": {
+          "precision": 0.2798507462686567,
+          "recall": 0.15151515151515152,
+          "f1": 0.1965923984272608,
+          "tp": 75,
+          "fp": 193,
+          "fn": 420,
+          "pred": 268,
+          "gold": 495
+        },
+        "T": {
+          "precision": 0.5777777777777777,
+          "recall": 0.24074074074074073,
+          "f1": 0.3398692810457516,
+          "tp": 26,
+          "fp": 19,
+          "fn": 82,
+          "pred": 45,
+          "gold": 108
+        }
+      },
+      "alignment_ok": true,
+      "n_missing": 0,
+      "n_matched": 200
+    },
+    "Gold v2 (agreement, not a system)": {
+      "typed_exact": {
+        "precision": 0.35822401614530774,
+        "recall": 0.442643391521197,
+        "f1": 0.39598438371444505,
+        "tp": 355,
+        "fp": 636,
+        "fn": 447,
+        "pred": 991,
+        "gold": 802
+      },
+      "typed_relaxed": {
+        "precision": 0.4601412714429869,
+        "recall": 0.5685785536159601,
+        "f1": 0.5086447295036252,
+        "tp": 456,
+        "fp": 535,
+        "fn": 346,
+        "pred": 991,
+        "gold": 802
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "pred": 2,
+          "gold": 1
+        },
+        "K": {
+          "precision": 0.321656050955414,
+          "recall": 0.51010101010101,
+          "f1": 0.39453125,
+          "tp": 101,
+          "fp": 213,
+          "fn": 97,
+          "pred": 314,
+          "gold": 198
+        },
+        "S": {
+          "precision": 0.35940409683426444,
+          "recall": 0.3898989898989899,
+          "f1": 0.374031007751938,
+          "tp": 193,
+          "fp": 344,
+          "fn": 302,
+          "pred": 537,
+          "gold": 495
+        },
+        "T": {
+          "precision": 0.4420289855072464,
+          "recall": 0.5648148148148148,
+          "f1": 0.4959349593495935,
+          "tp": 61,
+          "fp": 77,
+          "fn": 47,
+          "pred": 138,
+          "gold": 108
+        }
+      },
+      "alignment_ok": true,
+      "n_missing": 0,
+      "n_matched": 200
+    },
+    "V4 hybrid (agreement, not a system)": {
+      "typed_exact": {
+        "precision": 0.1813953488372093,
+        "recall": 0.14588528678304238,
+        "f1": 0.16171389080856946,
+        "tp": 117,
+        "fp": 528,
+        "fn": 685,
+        "pred": 645,
+        "gold": 802
+      },
+      "typed_relaxed": {
+        "precision": 0.46511627906976744,
+        "recall": 0.3740648379052369,
+        "f1": 0.414651002073255,
+        "tp": 300,
+        "fp": 345,
+        "fn": 502,
+        "pred": 645,
+        "gold": 802
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 4,
+          "fn": 1,
+          "pred": 4,
+          "gold": 1
+        },
+        "K": {
+          "precision": 0.1848341232227488,
+          "recall": 0.19696969696969696,
+          "f1": 0.19070904645476772,
+          "tp": 39,
+          "fp": 172,
+          "fn": 159,
+          "pred": 211,
+          "gold": 198
+        },
+        "S": {
+          "precision": 0.16279069767441862,
+          "recall": 0.11313131313131314,
+          "f1": 0.133492252681764,
+          "tp": 56,
+          "fp": 288,
+          "fn": 439,
+          "pred": 344,
+          "gold": 495
+        },
+        "T": {
+          "precision": 0.2558139534883721,
+          "recall": 0.2037037037037037,
+          "f1": 0.2268041237113402,
+          "tp": 22,
+          "fp": 64,
+          "fn": 86,
+          "pred": 86,
+          "gold": 108
+        }
+      },
+      "alignment_ok": true,
+      "n_missing": 0,
+      "n_matched": 200
+    }
+  }
+}

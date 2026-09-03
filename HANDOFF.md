@@ -69,3 +69,5 @@
 **P1：** 在 `tex/` 或 Overleaf 包里改稿，数字不动则只动版式。  
 **P2：** 需要新实验时交回本仓库实验脚本，不要在论文目录里重跑训练。  
 **Vanilla large vs base（待验证，未入摘要）：** seed 42 已从服务器 B 拷回。`notes/vanilla_large_v4.md`、`notes/vanilla_wwm_v4_methods.md`。表稿 `tex/skillspan_style_vanilla_wwm_v4.tex`。Overleaf 咨询：`overleaf_cursor_bundle/CODEX_PROMPT_VANILLA_WWM.md`。摘要仍用 JobBERT 3M **0.4331**。50782 已取消。
+
+**Human page-1 200（2026-09-03）：** 980 分歧队列前 200 句人标已入库 `data/human_gold_page1_200.jsonl`。附录/补充表数字在 `notes/confirmed-results.md`（ChatGPT exact **0.2772**）。**不覆盖** Gold v2，**不替换** V4 hybrid 2601，摘要仍用 **0.4331**。Overleaf：`overleaf_cursor_bundle/CODEX_PROMPT_HUMAN200.md`。其余 780 句投出后每天 +100，见 `reports/human980_doccano/RELEASE_PLAN_100_PER_DAY.md`。

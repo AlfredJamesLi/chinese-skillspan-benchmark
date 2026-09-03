@@ -69,3 +69,5 @@ git branch --show-current
 **P0：** 对照 Overleaf tex 与 confirmed-results 做冲突表，再补表。  
 **P1：** 版式、图题、参考文献（数字不动）。 Methods 写成 **V4 主协议** 前，先贴 `CODEX_PROMPT_HANDBOOK.md`（只咨询，不改 tex）。  
 **P2：** 缺 Claude/Kimi 完整 dump 的 P2 主表行 → 交回服务器窗口。 JobBERT 1M goldstyle 5-seed Gold v2 均值 **0.1257±0.0062** 已写入（四模型对比仍用 3-seed **0.1288**）。 RoBERTa-wwm v3 Gold v2 3-seed 均值 **0.1199** 已写入。
+
+**Human page-1 200（2026-09-03）：** 贴 `CODEX_PROMPT_HUMAN200.md`，只加附录/补充表。摘要仍用 V4 JobBERT 3M **0.4331**。不要用人标 200 替换 2601 hybrid。

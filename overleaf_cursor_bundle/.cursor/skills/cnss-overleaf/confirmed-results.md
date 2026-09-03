@@ -427,6 +427,33 @@ STL JobBERT 1M seed 42 combined typed exact **0.2905** / relaxed **0.5155** (doe
 
 Not in this job (not 漏跑): ChatGPT/Claude/Kimi/DeepSeek on the new test; Qwen LoRA; Llama-8B; MLM re-DAPT.
 
+## Human page-1 200 (980-queue first tranche; 2026-09-03)
+
+Source upload: `gold_page1_200.compact.jsonl` (sha256 `901c368a5d8fda2903ebb555f9b354af991ca2348f3a214e12dda6fab13cd46c`).  
+Scoring gold: `data/human_gold_page1_200.jsonl` (200 unique IDs; sha256 `fcecb522fbdf6571caaaa02c592b6ba4a552c4a9cfa52a0ed1f36b0fe9617490`).  
+Scorer `cnss-lskt-1.2.0`. CSV: `tables/human200_page1_scores.csv`. QA: `reports/human980_doccano/page1_200_QA.md`.
+
+These 200 are the **first 200 lines** of `reports/human980_doccano/doccano/human980.jsonl` (all **人工智能招聘**). IDs are a subset of Gold v2 / V4 hybrid 2601. **Do not overwrite** `gold_canonical_v2.jsonl`. **Do not replace** the V4 hybrid 2601 main gold. 175/200 differ from the SimHuman prelabel; 28 match Gold v2 spans; 10 match V4 hybrid spans. Mixed annotators (Maple / admin / James1); 71 sentences have more than one annotator on spans — **not** dual-blind IAA. 57/200 sentences have QA flags (mid-jieba token, swallowed digits, span >14, ability verb). 780 queue sentences remain (100/day after submission).
+
+**Stay in appendix / supplement.** Do **not** put any row below into the abstract or as a replacement for V4 hybrid JobBERT 3M **0.4331** or Gold v2 ChatGPT **0.6365**.
+
+| System | n | typed exact P | R | F1 | typed relaxed F1 |
+|---|---:|---:|---:|---:|---:|
+| ChatGPT (`gpt-4o`, frozen dump) | 200 | 0.2381 | 0.3317 | **0.2772** | **0.4013** |
+| Claude (`claude-3-5-haiku-20241022`, matched-only) | 155 | 0.2267 | 0.2553 | 0.2402 | 0.3874 |
+| Kimi (`kimi-k2-0711-preview`) | 200 | 0.1652 | 0.1908 | 0.1771 | 0.2280 |
+| JobBERT 1M CWS retrain (frozen) | 200 | 0.1961 | 0.1247 | 0.1524 | 0.3689 |
+| JobBERT 3M v4 (frozen) | 200 | 0.1586 | 0.1060 | 0.1271 | 0.3498 |
+| JobBERT 1M v4 (frozen) | 200 | 0.1391 | 0.0935 | 0.1119 | 0.3729 |
+| DeepSeek (`deepseek-r1`) | 200 | 0.0964 | 0.1060 | 0.1010 | 0.1520 |
+| Qwen (`Qwen2.5-14B-Instruct`) | 200 | 0.1854 | 0.0474 | 0.0755 | 0.1271 |
+| Gold v2 agreement (not a system) | 200 | 0.3582 | 0.4426 | 0.3960 | 0.5086 |
+| V4 hybrid agreement (not a system) | 200 | 0.1814 | 0.1459 | 0.1617 | 0.4147 |
+
+Allowed claim: on this 200-sentence human tranche, frozen ChatGPT leads typed exact **0.2772** / relaxed **0.4013**; the same labels agree with Gold v2 at exact **0.3960** and with V4 hybrid at exact **0.1617**. Claude 0.2402 is matched-only (45 missing). Do not write JobBERT 0.1271 as beating or losing to main-table 0.4331.
+
+Codex: `overleaf_cursor_bundle/CODEX_PROMPT_HUMAN200.md`.
+
 ## Still missing / blocked (paper claims)
 
 - Concept Accuracy / ESCO concept-ID eval — **blocked**, no concept IDs; delete the claim
@@ -434,4 +461,6 @@ Not in this job (not 漏跑): ChatGPT/Claude/Kimi/DeepSeek on the new test; Qwen
 - JobBERT 1M goldstyle **5-seed mean is 0.1257±0.0062** (do not swap it into the 4-encoder 3-seed ranking; do not treat as Gold v2 SOTA)
 - BERT-CRF span-based, XLM-R zero-shot, ESCO lexicon rows
 - SelfCheck + reflection as a frozen “our method” recipe
-- Public data card / 200-item Gold analysis set as a named file
+- Public / Zenodo data card with DOI (GitHub still private)
+- Remaining **780** of the 980 human queue (page-1 200 is in `data/human_gold_page1_200.jsonl`)
+- Dual-blind V4 A/B IAA files — still missing

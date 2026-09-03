@@ -1,0 +1,3103 @@
+{
+  "n": 200,
+  "src_sha256": "901c368a5d8fda2903ebb555f9b354af991ca2348f3a214e12dda6fab13cd46c",
+  "gold_sha256": "fcecb522fbdf6571caaaa02c592b6ba4a552c4a9cfa52a0ed1f36b0fe9617490",
+  "n_empty": 10,
+  "n_spans": 806,
+  "types": {
+    "S": 497,
+    "K": 200,
+    "T": 108,
+    "L": 1
+  },
+  "domains": {
+    "人工智能招聘": 200
+  },
+  "same_as_980_prelabel": 25,
+  "same_as_gold_v2": 28,
+  "same_as_v4_hybrid": 10,
+  "n_sentences_with_qa_flag": 57,
+  "flag_kinds": {
+    "mid_jieba_token": 51,
+    "swallowed_digit": 5,
+    "long_gt14": 37,
+    "includes_ability_verb": 17
+  },
+  "annotator_sentences": {
+    "admin": 26,
+    "EMPTY": 10,
+    "Maple+admin": 40,
+    "Maple": 79,
+    "James1": 14,
+    "James1+admin": 2,
+    "James1+Maple": 21,
+    "James1+Maple+admin": 8
+  },
+  "rows": [
+    {
+      "id": "1801-s0004",
+      "page": 1,
+      "n_spans": 3,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1802-s0000",
+      "page": 2,
+      "n_spans": 2,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 2,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "监控和管理当前服",
+          "start": 7,
+          "end": 15,
+          "jieba_word": "服务器"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "存储和备",
+          "start": 18,
+          "end": 22,
+          "jieba_word": "备份"
+        }
+      ]
+    },
+    {
+      "id": "1802-s0005",
+      "page": 3,
+      "n_spans": 3,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 2,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "培训其",
+          "start": 2,
+          "end": 5,
+          "jieba_word": "其他"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "工具和技术",
+          "start": 9,
+          "end": 14,
+          "jieba_word": "技术支持"
+        }
+      ]
+    },
+    {
+      "id": "1802-s0006",
+      "page": 4,
+      "n_spans": 1,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "生产系统的改进计",
+          "start": 4,
+          "end": 12,
+          "jieba_word": "计划"
+        }
+      ]
+    },
+    {
+      "id": "1802-s0007",
+      "page": 5,
+      "n_spans": 8,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 6,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "系统管理的强",
+          "start": 27,
+          "end": 33,
+          "jieba_word": "强大"
+        },
+        {
+          "kind": "swallowed_digit",
+          "span": "技术背景2",
+          "start": 35,
+          "end": 40
+        },
+        {
+          "kind": "long_gt14",
+          "span": "VMwareESX服务器/OpenVZ、KVM",
+          "start": 55,
+          "end": 78,
+          "n": 23
+        },
+        {
+          "kind": "long_gt14",
+          "span": "Web服务器（Apache，Tomcat",
+          "start": 108,
+          "end": 128,
+          "n": 20
+        },
+        {
+          "kind": "swallowed_digit",
+          "span": "验与监测（Zabbix）6",
+          "start": 134,
+          "end": 147,
+          "jieba_word": "经验"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "基础设施自动化经",
+          "start": 148,
+          "end": 156,
+          "jieba_word": "经验"
+        }
+      ]
+    },
+    {
+      "id": "1802-s0008",
+      "page": 6,
+      "n_spans": 5,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 4,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "网络管理或网络工",
+          "start": 13,
+          "end": 21,
+          "jieba_word": "网络工程"
+        },
+        {
+          "kind": "swallowed_digit",
+          "span": "组织性和主动性4",
+          "start": 45,
+          "end": 53
+        },
+        {
+          "kind": "swallowed_digit",
+          "span": "的英文读写能力5",
+          "start": 56,
+          "end": 64
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "沟通能力和团队合",
+          "start": 68,
+          "end": 76,
+          "jieba_word": "合作"
+        }
+      ]
+    },
+    {
+      "id": "1802-s0017",
+      "page": 7,
+      "n_spans": 0,
+      "annotators": [],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1803-s0000",
+      "page": 8,
+      "n_spans": 2,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "策划亚马逊PPC广告策略并实施推进",
+          "start": 9,
+          "end": 26,
+          "n": 17
+        }
+      ]
+    },
+    {
+      "id": "1803-s0001",
+      "page": 9,
+      "n_spans": 2,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "投放PPC广告并监控分析广告效果",
+          "start": 2,
+          "end": 18,
+          "n": 16
+        }
+      ]
+    },
+    {
+      "id": "1803-s0002",
+      "page": 10,
+      "n_spans": 5,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1803-s0003",
+      "page": 11,
+      "n_spans": 2,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "配合其他站内Deals促销、站内展示广告、以及其他站外推广活动",
+          "start": 24,
+          "end": 55,
+          "n": 31
+        }
+      ]
+    },
+    {
+      "id": "1803-s0004",
+      "page": 12,
+      "n_spans": 3,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1803-s0006",
+      "page": 13,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "Google,Yahoo,Bing等英文SEM",
+          "start": 20,
+          "end": 43,
+          "n": 23
+        }
+      ]
+    },
+    {
+      "id": "1803-s0007",
+      "page": 14,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "使用Word，Excel，PPT",
+          "start": 25,
+          "end": 41,
+          "n": 16
+        }
+      ]
+    },
+    {
+      "id": "1803-s0008",
+      "page": 15,
+      "n_spans": 5,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1804-s0001",
+      "page": 16,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1804-s0003",
+      "page": 17,
+      "n_spans": 8,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1804-s0004",
+      "page": 18,
+      "n_spans": 0,
+      "annotators": [],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1804-s0005",
+      "page": 19,
+      "n_spans": 0,
+      "annotators": [],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1804-s0006",
+      "page": 20,
+      "n_spans": 4,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "includes_ability_verb",
+          "span": "了解业务背景及需求",
+          "start": 52,
+          "end": 61
+        }
+      ]
+    },
+    {
+      "id": "1804-s0007",
+      "page": 21,
+      "n_spans": 6,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1804-s0008",
+      "page": 22,
+      "n_spans": 4,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1804-s0010",
+      "page": 23,
+      "n_spans": 5,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1804-s0011",
+      "page": 24,
+      "n_spans": 5,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1804-s0015",
+      "page": 25,
+      "n_spans": 2,
+      "annotators": [
+        "James1",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1804-s0017",
+      "page": 26,
+      "n_spans": 3,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 2,
+      "flags": [
+        {
+          "kind": "includes_ability_verb",
+          "span": " 熟悉统计语言",
+          "start": 3,
+          "end": 10
+        },
+        {
+          "kind": "includes_ability_verb",
+          "span": "熟悉数据库及SQL",
+          "start": 21,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "id": "1804-s0019",
+      "page": 27,
+      "n_spans": 4,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1804-s0020",
+      "page": 28,
+      "n_spans": 1,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "处理大规模实时数据及应用机器学习模型",
+          "start": 8,
+          "end": 26,
+          "n": 18
+        }
+      ]
+    },
+    {
+      "id": "1805-s0001",
+      "page": 29,
+      "n_spans": 1,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1805-s0002",
+      "page": 30,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1805-s0004",
+      "page": 31,
+      "n_spans": 4,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "反馈并协助处理客户使用中的技术问题",
+          "start": 14,
+          "end": 31,
+          "n": 17
+        }
+      ]
+    },
+    {
+      "id": "1806-s0003",
+      "page": 32,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1806-s0005",
+      "page": 33,
+      "n_spans": 4,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "理解面向对象",
+          "start": 5,
+          "end": 11,
+          "jieba_word": "深刻理解"
+        }
+      ]
+    },
+    {
+      "id": "1807-s0001",
+      "page": 34,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1807-s0003",
+      "page": 35,
+      "n_spans": 6,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1808-s0000",
+      "page": 36,
+      "n_spans": 5,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1808-s0001",
+      "page": 37,
+      "n_spans": 4,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "数据平台各",
+          "start": 5,
+          "end": 10,
+          "jieba_word": "各类"
+        }
+      ]
+    },
+    {
+      "id": "1808-s0002",
+      "page": 38,
+      "n_spans": 3,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 2,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "尝试各种前沿可视",
+          "start": 3,
+          "end": 11,
+          "jieba_word": "可视化"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "将新技术合理的应",
+          "start": 45,
+          "end": 53,
+          "jieba_word": "应用"
+        }
+      ]
+    },
+    {
+      "id": "1808-s0003",
+      "page": 39,
+      "n_spans": 3,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "HighCharts/DataTable/ECharts/D3.",
+          "start": 19,
+          "end": 51,
+          "n": 32
+        }
+      ]
+    },
+    {
+      "id": "1808-s0006",
+      "page": 40,
+      "n_spans": 4,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "如 webpack／gulp等",
+          "start": 28,
+          "end": 43,
+          "n": 15
+        }
+      ]
+    },
+    {
+      "id": "1809-s0000",
+      "page": 41,
+      "n_spans": 2,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "商业需求转化为技",
+          "start": 29,
+          "end": 37,
+          "jieba_word": "技术"
+        }
+      ]
+    },
+    {
+      "id": "1809-s0002",
+      "page": 42,
+      "n_spans": 5,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 3,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "产品能",
+          "start": 12,
+          "end": 15,
+          "jieba_word": "能力"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "客户需求与公",
+          "start": 45,
+          "end": 51,
+          "jieba_word": "公司"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "数据能力的结",
+          "start": 52,
+          "end": 58,
+          "jieba_word": "结合点"
+        }
+      ]
+    },
+    {
+      "id": "1809-s0003",
+      "page": 43,
+      "n_spans": 2,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1809-s0004",
+      "page": 44,
+      "n_spans": 2,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 2,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "技术类商业产品售",
+          "start": 24,
+          "end": 32,
+          "jieba_word": "售前"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "计算机相关专业背",
+          "start": 39,
+          "end": 47,
+          "jieba_word": "背景"
+        }
+      ]
+    },
+    {
+      "id": "1809-s0006",
+      "page": 45,
+      "n_spans": 2,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "客户沟通界",
+          "start": 19,
+          "end": 24,
+          "jieba_word": "界面"
+        }
+      ]
+    },
+    {
+      "id": "1810-s0000",
+      "page": 46,
+      "n_spans": 18,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 7,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "用户画",
+          "start": 34,
+          "end": 37,
+          "jieba_word": "画像"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "投放能",
+          "start": 64,
+          "end": 67,
+          "jieba_word": "能力"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "python等语言编程，数",
+          "start": 140,
+          "end": 153,
+          "jieba_word": "数据结构"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "挑战性问题充",
+          "start": 167,
+          "end": 173,
+          "jieba_word": "充满热情"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "解决问题和分析问",
+          "start": 179,
+          "end": 187,
+          "jieba_word": "问题"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "沟通能力和学习能",
+          "start": 202,
+          "end": 210,
+          "jieba_word": "能力"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "推荐系",
+          "start": 250,
+          "end": 253,
+          "jieba_word": "系统"
+        }
+      ]
+    },
+    {
+      "id": "1811-s0001",
+      "page": 47,
+      "n_spans": 7,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 3,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "推动内",
+          "start": 21,
+          "end": 24,
+          "jieba_word": "内部"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "落地并负责优",
+          "start": 29,
+          "end": 35,
+          "jieba_word": "优化"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "更新迭",
+          "start": 36,
+          "end": 39,
+          "jieba_word": "迭代"
+        }
+      ]
+    },
+    {
+      "id": "1811-s0002",
+      "page": 48,
+      "n_spans": 2,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "管理项",
+          "start": 6,
+          "end": 9,
+          "jieba_word": "项目"
+        }
+      ]
+    },
+    {
+      "id": "1811-s0003",
+      "page": 49,
+      "n_spans": 3,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 3,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "制定合理的数据衡",
+          "start": 2,
+          "end": 10,
+          "jieba_word": "衡量"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "进行数据分析并产",
+          "start": 16,
+          "end": 24,
+          "jieba_word": "产出"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "统筹协调产品、市",
+          "start": 36,
+          "end": 44,
+          "jieba_word": "市场"
+        }
+      ]
+    },
+    {
+      "id": "1811-s0004",
+      "page": 50,
+      "n_spans": 2,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "内容型产品经验优",
+          "start": 25,
+          "end": 33,
+          "jieba_word": "优先"
+        }
+      ]
+    },
+    {
+      "id": "1811-s0005",
+      "page": 51,
+      "n_spans": 4,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1811-s0006",
+      "page": 52,
+      "n_spans": 4,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1811-s0007",
+      "page": 53,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1812-s0000",
+      "page": 54,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1812-s0001",
+      "page": 55,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1812-s0002",
+      "page": 56,
+      "n_spans": 9,
+      "annotators": [
+        "James1",
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 3,
+      "flags": [
+        {
+          "kind": "includes_ability_verb",
+          "span": "精通C/C++",
+          "start": 37,
+          "end": 44
+        },
+        {
+          "kind": "includes_ability_verb",
+          "span": "熟悉至少一种嵌入式操作系统",
+          "start": 45,
+          "end": 58
+        },
+        {
+          "kind": "long_gt14",
+          "span": "Linux/Android嵌入式系统开发经验",
+          "start": 60,
+          "end": 82,
+          "n": 22
+        }
+      ]
+    },
+    {
+      "id": "1812-s0003",
+      "page": 57,
+      "n_spans": 3,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "ARM,DSP或者mips等CPU",
+          "start": 4,
+          "end": 21,
+          "n": 17
+        }
+      ]
+    },
+    {
+      "id": "1812-s0004",
+      "page": 58,
+      "n_spans": 6,
+      "annotators": [
+        "James1",
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1812-s0005",
+      "page": 59,
+      "n_spans": 13,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1813-s0001",
+      "page": 60,
+      "n_spans": 10,
+      "annotators": [
+        "James1",
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1813-s0002",
+      "page": 61,
+      "n_spans": 6,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "使用sqlserver或mysql数据库",
+          "start": 8,
+          "end": 28,
+          "n": 20
+        }
+      ]
+    },
+    {
+      "id": "1814-s0003",
+      "page": 62,
+      "n_spans": 8,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1814-s0004",
+      "page": 63,
+      "n_spans": 2,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1814-s0005",
+      "page": 64,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 2,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "构建新产品/新工艺转生产阶段转产流程",
+          "start": 5,
+          "end": 23,
+          "n": 18
+        },
+        {
+          "kind": "long_gt14",
+          "span": "承接公司新产品/新工艺的转产工作",
+          "start": 35,
+          "end": 51,
+          "n": 16
+        }
+      ]
+    },
+    {
+      "id": "1814-s0006",
+      "page": 65,
+      "n_spans": 1,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "建立各产品线工艺标准和品质控制点",
+          "start": 5,
+          "end": 21,
+          "n": 16
+        }
+      ]
+    },
+    {
+      "id": "1814-s0007",
+      "page": 66,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1814-s0010",
+      "page": 67,
+      "n_spans": 1,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1814-s0011",
+      "page": 68,
+      "n_spans": 1,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "使用office（word、excel、PPT）、CAD绘图等软件",
+          "start": 5,
+          "end": 38,
+          "n": 33
+        }
+      ]
+    },
+    {
+      "id": "1815-s0000",
+      "page": 69,
+      "n_spans": 7,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1815-s0001",
+      "page": 70,
+      "n_spans": 7,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1815-s0002",
+      "page": 71,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1815-s0003",
+      "page": 72,
+      "n_spans": 4,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1815-s0008",
+      "page": 73,
+      "n_spans": 0,
+      "annotators": [],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1816-s0000",
+      "page": 74,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1816-s0002",
+      "page": 75,
+      "n_spans": 4,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1816-s0003",
+      "page": 76,
+      "n_spans": 4,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1816-s0005",
+      "page": 77,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1816-s0006",
+      "page": 78,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1816-s0011",
+      "page": 79,
+      "n_spans": 0,
+      "annotators": [],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1816-s0012",
+      "page": 80,
+      "n_spans": 0,
+      "annotators": [],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1817-s0000",
+      "page": 81,
+      "n_spans": 4,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1817-s0001",
+      "page": 82,
+      "n_spans": 3,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "Spark StreamingStorm流式处理框架",
+          "start": 7,
+          "end": 33,
+          "n": 26
+        }
+      ]
+    },
+    {
+      "id": "1817-s0002",
+      "page": 83,
+      "n_spans": 3,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "流式处理框架开发离线ETL开发",
+          "start": 5,
+          "end": 20,
+          "n": 15
+        }
+      ]
+    },
+    {
+      "id": "1817-s0003",
+      "page": 84,
+      "n_spans": 1,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1817-s0004",
+      "page": 85,
+      "n_spans": 9,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1817-s0006",
+      "page": 86,
+      "n_spans": 4,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1817-s0009",
+      "page": 87,
+      "n_spans": 2,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1818-s0002",
+      "page": 88,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1818-s0003",
+      "page": 89,
+      "n_spans": 3,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1818-s0004",
+      "page": 90,
+      "n_spans": 3,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1818-s0005",
+      "page": 91,
+      "n_spans": 2,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "Mysql、Oracle、MongoDb数据库应用开发",
+          "start": 12,
+          "end": 39,
+          "n": 27
+        }
+      ]
+    },
+    {
+      "id": "1818-s0006",
+      "page": 92,
+      "n_spans": 4,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "Python Wed框架（Django/Flask...）",
+          "start": 4,
+          "end": 33,
+          "n": 29
+        }
+      ]
+    },
+    {
+      "id": "1819-s0002",
+      "page": 93,
+      "n_spans": 8,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1819-s0004",
+      "page": 94,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1819-s0006",
+      "page": 95,
+      "n_spans": 2,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "对业务部门的需求进行充分分析和梳理",
+          "start": 18,
+          "end": 35,
+          "n": 17
+        }
+      ]
+    },
+    {
+      "id": "1819-s0007",
+      "page": 96,
+      "n_spans": 2,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1819-s0008",
+      "page": 97,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 3,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "掌握Axure、墨刀",
+          "start": 5,
+          "end": 15,
+          "jieba_word": "熟练掌握"
+        },
+        {
+          "kind": "includes_ability_verb",
+          "span": "掌握Axure、墨刀",
+          "start": 5,
+          "end": 15
+        },
+        {
+          "kind": "long_gt14",
+          "span": "MindManagerXMind",
+          "start": 31,
+          "end": 47,
+          "n": 16
+        }
+      ]
+    },
+    {
+      "id": "1819-s0009",
+      "page": 98,
+      "n_spans": 3,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1820-s0002",
+      "page": 99,
+      "n_spans": 1,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1820-s0003",
+      "page": 100,
+      "n_spans": 5,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1820-s0005",
+      "page": 101,
+      "n_spans": 6,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1820-s0006",
+      "page": 102,
+      "n_spans": 1,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1820-s0007",
+      "page": 103,
+      "n_spans": 2,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1821-s0000",
+      "page": 104,
+      "n_spans": 69,
+      "annotators": [
+        "James1",
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 16,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "将AI能力应用到实际客户应用中",
+          "start": 40,
+          "end": 55,
+          "n": 15
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "计算机",
+          "start": 217,
+          "end": 220,
+          "jieba_word": "计算机相关"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "项目工程开发",
+          "start": 246,
+          "end": 252,
+          "jieba_word": "大型项目"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "掌握SpirngCloud",
+          "start": 309,
+          "end": 322,
+          "jieba_word": "熟练掌握"
+        },
+        {
+          "kind": "includes_ability_verb",
+          "span": "掌握SpirngCloud",
+          "start": 309,
+          "end": 322
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "Docker/Kubernetes相关生态并有实践",
+          "start": 388,
+          "end": 413,
+          "jieba_word": "实践经验"
+        },
+        {
+          "kind": "long_gt14",
+          "span": "Docker/Kubernetes相关生态并有实践",
+          "start": 388,
+          "end": 413,
+          "n": 25
+        },
+        {
+          "kind": "includes_ability_verb",
+          "span": "熟悉Hadoop/Spark",
+          "start": 561,
+          "end": 575
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "分布式协调服务Zookeeper",
+          "start": 583,
+          "end": 599,
+          "jieba_word": "Zookeeper9"
+        },
+        {
+          "kind": "long_gt14",
+          "span": "分布式协调服务Zookeeper",
+          "start": 583,
+          "end": 599,
+          "n": 16
+        },
+        {
+          "kind": "includes_ability_verb",
+          "span": "熟悉Linux系统原理",
+          "start": 652,
+          "end": 663
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "悉Linux系统原理",
+          "start": 653,
+          "end": 663,
+          "jieba_word": "熟悉"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "熟练运用Linux命",
+          "start": 664,
+          "end": 674,
+          "jieba_word": "命令"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "Linux命",
+          "start": 668,
+          "end": 674,
+          "jieba_word": "命令"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "Linux命",
+          "start": 668,
+          "end": 674,
+          "jieba_word": "命令"
+        },
+        {
+          "kind": "mid_jieba_token",
+          "span": "实践",
+          "start": 691,
+          "end": 693,
+          "jieba_word": "实践经验"
+        }
+      ]
+    },
+    {
+      "id": "1822-s0000",
+      "page": 105,
+      "n_spans": 8,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "设计下一代的人工智能开发和应用平台",
+          "start": 9,
+          "end": 26,
+          "n": 17
+        }
+      ]
+    },
+    {
+      "id": "1822-s0001",
+      "page": 106,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1822-s0002",
+      "page": 107,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1822-s0003",
+      "page": 108,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1822-s0005",
+      "page": 109,
+      "n_spans": 2,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1822-s0006",
+      "page": 110,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1822-s0010",
+      "page": 111,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1823-s0000",
+      "page": 112,
+      "n_spans": 1,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1823-s0003",
+      "page": 113,
+      "n_spans": 6,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1823-s0004",
+      "page": 114,
+      "n_spans": 2,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1823-s0006",
+      "page": 115,
+      "n_spans": 3,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1823-s0007",
+      "page": 116,
+      "n_spans": 4,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1823-s0008",
+      "page": 117,
+      "n_spans": 2,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1823-s0009",
+      "page": 118,
+      "n_spans": 4,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1824-s0000",
+      "page": 119,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "分析",
+          "start": 24,
+          "end": 26,
+          "jieba_word": "深入分析"
+        }
+      ]
+    },
+    {
+      "id": "1824-s0001",
+      "page": 120,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1824-s0004",
+      "page": 121,
+      "n_spans": 2,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1824-s0005",
+      "page": 122,
+      "n_spans": 3,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "云计算",
+          "start": 3,
+          "end": 6,
+          "jieba_word": "有云"
+        }
+      ]
+    },
+    {
+      "id": "1824-s0007",
+      "page": 123,
+      "n_spans": 5,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1824-s0008",
+      "page": 124,
+      "n_spans": 4,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1824-s0009",
+      "page": 125,
+      "n_spans": 8,
+      "annotators": [
+        "James1",
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1825-s0000",
+      "page": 126,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1825-s0003",
+      "page": 127,
+      "n_spans": 2,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1825-s0004",
+      "page": 128,
+      "n_spans": 4,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1825-s0005",
+      "page": 129,
+      "n_spans": 6,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1825-s0006",
+      "page": 130,
+      "n_spans": 5,
+      "annotators": [
+        "James1",
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "白盒测试",
+          "start": 38,
+          "end": 42,
+          "jieba_word": "如白盒"
+        }
+      ]
+    },
+    {
+      "id": "1825-s0007",
+      "page": 131,
+      "n_spans": 4,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1825-s0008",
+      "page": 132,
+      "n_spans": 3,
+      "annotators": [
+        "James1",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1825-s0009",
+      "page": 133,
+      "n_spans": 7,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1826-s0000",
+      "page": 134,
+      "n_spans": 20,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 2,
+      "flags": [
+        {
+          "kind": "includes_ability_verb",
+          "span": "了解相关领域前沿论文及成果",
+          "start": 104,
+          "end": 117
+        },
+        {
+          "kind": "long_gt14",
+          "span": "熟练C/C++/Java/Python",
+          "start": 139,
+          "end": 158,
+          "n": 19
+        }
+      ]
+    },
+    {
+      "id": "1827-s0000",
+      "page": 135,
+      "n_spans": 1,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1827-s0004",
+      "page": 136,
+      "n_spans": 1,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1827-s0006",
+      "page": 137,
+      "n_spans": 10,
+      "annotators": [
+        "James1",
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1827-s0010",
+      "page": 138,
+      "n_spans": 1,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1827-s0011",
+      "page": 139,
+      "n_spans": 1,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1828-s0000",
+      "page": 140,
+      "n_spans": 3,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1828-s0001",
+      "page": 141,
+      "n_spans": 5,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1828-s0002",
+      "page": 142,
+      "n_spans": 4,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1829-s0000",
+      "page": 143,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1829-s0001",
+      "page": 144,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1829-s0002",
+      "page": 145,
+      "n_spans": 5,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1829-s0014",
+      "page": 146,
+      "n_spans": 3,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1830-s0000",
+      "page": 147,
+      "n_spans": 5,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 3,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "计算机及相关专业",
+          "start": 47,
+          "end": 55,
+          "jieba_word": "专业本科"
+        },
+        {
+          "kind": "includes_ability_verb",
+          "span": "熟悉Javascript、css、HTML、DOM、ajax、jquery",
+          "start": 74,
+          "end": 111
+        },
+        {
+          "kind": "long_gt14",
+          "span": "熟悉Javascript、css、HTML、DOM、ajax、jquery",
+          "start": 74,
+          "end": 111,
+          "n": 37
+        }
+      ]
+    },
+    {
+      "id": "1830-s0001",
+      "page": 148,
+      "n_spans": 4,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 4,
+      "flags": [
+        {
+          "kind": "swallowed_digit",
+          "span": "熟悉W3C、ECMAScript、es6",
+          "start": 1,
+          "end": 21
+        },
+        {
+          "kind": "includes_ability_verb",
+          "span": "熟悉W3C、ECMAScript、es6",
+          "start": 1,
+          "end": 21
+        },
+        {
+          "kind": "long_gt14",
+          "span": "熟悉W3C、ECMAScript、es6",
+          "start": 1,
+          "end": 21,
+          "n": 20
+        },
+        {
+          "kind": "includes_ability_verb",
+          "span": "熟悉ReactHooks",
+          "start": 49,
+          "end": 61
+        }
+      ]
+    },
+    {
+      "id": "1831-s0000",
+      "page": 149,
+      "n_spans": 4,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1831-s0001",
+      "page": 150,
+      "n_spans": 6,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "建立和完善公司研发和产品体系、技术支持体系",
+          "start": 19,
+          "end": 40,
+          "n": 21
+        }
+      ]
+    },
+    {
+      "id": "1831-s0002",
+      "page": 151,
+      "n_spans": 2,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1831-s0005",
+      "page": 152,
+      "n_spans": 5,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1831-s0009",
+      "page": 153,
+      "n_spans": 5,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1831-s0010",
+      "page": 154,
+      "n_spans": 9,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1832-s0001",
+      "page": 155,
+      "n_spans": 2,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1832-s0002",
+      "page": 156,
+      "n_spans": 1,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1832-s0005",
+      "page": 157,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1832-s0006",
+      "page": 158,
+      "n_spans": 4,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1833-s0001",
+      "page": 159,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1833-s0002",
+      "page": 160,
+      "n_spans": 8,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1833-s0003",
+      "page": 161,
+      "n_spans": 5,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1833-s0004",
+      "page": 162,
+      "n_spans": 4,
+      "annotators": [
+        "James1",
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1834-s0000",
+      "page": 163,
+      "n_spans": 4,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 2,
+      "flags": [
+        {
+          "kind": "includes_ability_verb",
+          "span": "了解客户的需求",
+          "start": 10,
+          "end": 17
+        },
+        {
+          "kind": "long_gt14",
+          "span": "设计编制华为智能家居系统集成解决方案",
+          "start": 27,
+          "end": 45,
+          "n": 18
+        }
+      ]
+    },
+    {
+      "id": "1834-s0002",
+      "page": 164,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1834-s0004",
+      "page": 165,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "跟进和推动解决方案的实施和落地",
+          "start": 22,
+          "end": 37,
+          "n": 15
+        }
+      ]
+    },
+    {
+      "id": "1834-s0005",
+      "page": 166,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "includes_ability_verb",
+          "span": "了解最新行业资讯",
+          "start": 2,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "1834-s0006",
+      "page": 167,
+      "n_spans": 3,
+      "annotators": [
+        "James1"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1834-s0007",
+      "page": 168,
+      "n_spans": 4,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1834-s0008",
+      "page": 169,
+      "n_spans": 6,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1834-s0009",
+      "page": 170,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1834-s0010",
+      "page": 171,
+      "n_spans": 5,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1834-s0011",
+      "page": 172,
+      "n_spans": 10,
+      "annotators": [
+        "James1",
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1835-s0001",
+      "page": 173,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1835-s0003",
+      "page": 174,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1835-s0004",
+      "page": 175,
+      "n_spans": 2,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1835-s0007",
+      "page": 176,
+      "n_spans": 1,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1836-s0000",
+      "page": 177,
+      "n_spans": 4,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "mid_jieba_token",
+          "span": "研发管理",
+          "start": 38,
+          "end": 42,
+          "jieba_word": "管理工作"
+        }
+      ]
+    },
+    {
+      "id": "1836-s0001",
+      "page": 178,
+      "n_spans": 2,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1836-s0002",
+      "page": 179,
+      "n_spans": 1,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1836-s0003",
+      "page": 180,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1836-s0004",
+      "page": 181,
+      "n_spans": 1,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1836-s0006",
+      "page": 182,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1836-s0007",
+      "page": 183,
+      "n_spans": 2,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1836-s0009",
+      "page": 184,
+      "n_spans": 4,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 2,
+      "flags": [
+        {
+          "kind": "includes_ability_verb",
+          "span": "精通OO、AOP、OOP及设计模式",
+          "start": 27,
+          "end": 44
+        },
+        {
+          "kind": "long_gt14",
+          "span": "精通OO、AOP、OOP及设计模式",
+          "start": 27,
+          "end": 44,
+          "n": 17
+        }
+      ]
+    },
+    {
+      "id": "1836-s0010",
+      "page": 185,
+      "n_spans": 5,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "微服务框架Spring boot",
+          "start": 32,
+          "end": 48,
+          "n": 16
+        }
+      ]
+    },
+    {
+      "id": "1836-s0011",
+      "page": 186,
+      "n_spans": 5,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1836-s0012",
+      "page": 187,
+      "n_spans": 15,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "includes_ability_verb",
+          "span": "了解其原理",
+          "start": 105,
+          "end": 110
+        }
+      ]
+    },
+    {
+      "id": "1836-s0013",
+      "page": 188,
+      "n_spans": 1,
+      "annotators": [
+        "admin"
+      ],
+      "same_as_980_prelabel": true,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1836-s0015",
+      "page": 189,
+      "n_spans": 1,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 1,
+      "flags": [
+        {
+          "kind": "long_gt14",
+          "span": "使用常用数据库MySql、Oracle、SqlServer",
+          "start": 6,
+          "end": 35,
+          "n": 29
+        }
+      ]
+    },
+    {
+      "id": "1836-s0019",
+      "page": 190,
+      "n_spans": 7,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1837-s0022",
+      "page": 191,
+      "n_spans": 0,
+      "annotators": [],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1838-s0001",
+      "page": 192,
+      "n_spans": 0,
+      "annotators": [],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1838-s0002",
+      "page": 193,
+      "n_spans": 0,
+      "annotators": [],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1838-s0004",
+      "page": 194,
+      "n_spans": 0,
+      "annotators": [],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1838-s0005",
+      "page": 195,
+      "n_spans": 5,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1838-s0007",
+      "page": 196,
+      "n_spans": 7,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1838-s0008",
+      "page": 197,
+      "n_spans": 3,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1838-s0009",
+      "page": 198,
+      "n_spans": 7,
+      "annotators": [
+        "Maple"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1838-s0011",
+      "page": 199,
+      "n_spans": 4,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    },
+    {
+      "id": "1838-s0012",
+      "page": 200,
+      "n_spans": 8,
+      "annotators": [
+        "Maple",
+        "admin"
+      ],
+      "same_as_980_prelabel": false,
+      "n_flags": 0,
+      "flags": []
+    }
+  ]
+}

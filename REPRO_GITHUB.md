@@ -36,6 +36,8 @@ export PYTHONPATH="/path/to/SCESC-LLM-skill-extraction/Baseline_Models_Collectio
 
 **P2 测试金标：** `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl`（2601 = 980 SimHuman + 1621 SOP-CWS）
 
+**Human page-1 200（附录/补充，非主金标）：** `data/human_gold_page1_200.jsonl`（980 分歧队列前 200 句；sha256 `fcecb522…617490`）。打分：`python3 scripts/build_and_eval_human200_page1.py`。表：`tables/human200_page1_scores.csv`。不要覆盖 Gold v2，不要替换 V4 hybrid。
+
 JobBERT DAPT 语料与权重见 `data/LARGE_DATA_MANIFEST.md`。表内编码器行可用 `data/frozen_preds/` 的 jsonl，不必下 53GB `output/`。
 
 ## 3. 论文主评测（P2 / V4 hybrid）

@@ -37,3 +37,15 @@
 - 24 句 SimHuman 正文和 Gold ID 对不上：预标已清空，三模型建议也作废。名单见 `worksheets/flagged_nonexact.csv`。
 
 导出 JSONL 放到 `exports/`（自建）。不要改 `text`，保留 `meta.id`。标完把路径发回来，再谈划分。
+
+## 已完成：page-1 200（2026-09-03）
+
+前 200 句人标已映射并打分，**不覆盖** Gold v2 / V4 hybrid：
+
+- 评分金标：`data/human_gold_page1_200.jsonl`
+- 紧凑带 ID：`data/human_gold_page1_200.compact.jsonl`
+- 表：`tables/human200_page1_scores.csv`
+- QA：`page1_200_QA.md`
+- 其余 780：`RELEASE_PLAN_100_PER_DAY.md`（投出后每天 +100）
+
+下一批评审从 `batch_05.jsonl`（980 第 201 句）开始。

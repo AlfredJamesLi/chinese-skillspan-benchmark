@@ -1,0 +1,26 @@
+% Supplemental / appendix table only. Do not put in the abstract.
+% Scorer: cnss-lskt-1.2.0. Gold: data/human_gold_page1_200.jsonl (n=200).
+% Do not rank these F1 values against V4 hybrid 0.4331 or Gold v2 ChatGPT 0.6365.
+\begin{table}[t]
+\centering
+\small
+\caption{Human analysis set, first 200 sentences of the 980 disagreement queue (人工智能招聘 only). Typed micro F1. Claude is matched-only (45 missing dump IDs). Gold v2 and V4 hybrid rows are \emph{agreement with the new labels}, not systems. Main-paper gold remains the V4 hybrid ($n{=}2601$).}
+\label{tab:human200-page1}
+\begin{tabular}{lccccc}
+\toprule
+System & $n$ & P & R & Exact F1 & Relaxed F1 \\
+\midrule
+ChatGPT (\texttt{gpt-4o}) & 200 & 0.2381 & 0.3317 & 0.2772 & 0.4013 \\
+Claude (haiku, matched) & 155 & 0.2267 & 0.2553 & 0.2402 & 0.3874 \\
+Kimi (\texttt{kimi-k2-0711-preview}) & 200 & 0.1652 & 0.1908 & 0.1771 & 0.2280 \\
+JobBERT 1M CWS retrain & 200 & 0.1961 & 0.1247 & 0.1524 & 0.3689 \\
+JobBERT 3M v4 & 200 & 0.1586 & 0.1060 & 0.1271 & 0.3498 \\
+JobBERT 1M v4 & 200 & 0.1391 & 0.0935 & 0.1119 & 0.3729 \\
+DeepSeek (\texttt{deepseek-r1}) & 200 & 0.0964 & 0.1060 & 0.1010 & 0.1520 \\
+Qwen (14B Instruct) & 200 & 0.1854 & 0.0474 & 0.0755 & 0.1271 \\
+\midrule
+Gold v2 agreement & 200 & 0.3582 & 0.4426 & 0.3960 & 0.5086 \\
+V4 hybrid agreement & 200 & 0.1814 & 0.1459 & 0.1617 & 0.4147 \\
+\bottomrule
+\end{tabular}
+\end{table}
