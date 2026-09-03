@@ -16,7 +16,7 @@ The following are *candidates* for a public GitHub + Zenodo + Hugging Face relea
 | BIO annotations (`list_of_selection_bio4`) aligned to `id` | Gold, silver, and hybrid files | Derived labels: intended for release |
 | Frozen encoder predictions (tags only + sentence text) | `data/frozen_preds/` | Predictions: yes; accompanying sentence text: same restriction as the corpus |
 | Committed score CSVs and this documentation | `tables/`, `docs/`, `release/` | Yes |
-| Chinese JobBERT weights | **Not in Git** | `[TODO: publish on Hugging Face after licence compatibility is checked]` |
+| JobBERT-zh weights | https://huggingface.co/AlfredJames/jobbert-zh | Public model + card; licence still `other` pending text-rights confirmation |
 | Raw recruitment CSV / XLSX | Present in the **working** tree (`应届生招聘大数据*.csv`, `人工智能招聘大数据2025年.xlsx`) | **Do not upload** until platform terms and copyright are confirmed |
 | Continued-pretraining sentence dumps | `data/jobbert_*_sents.jsonl` | Same restriction as raw ads |
 | `output/` checkpoints, caches, virtualenvs | Local only | Do not archive |
@@ -54,8 +54,7 @@ Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云�
 
 ## 3. Where the code will be hosted
 
-- **Public GitHub:** `[TODO: public GitHub URL]`
-- **Current private working backup (not the PeerJ archive):** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
+- **Public GitHub:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (visibility **public**, verified 2026-09-04)
 - **Versioned GitHub Release tag:** `[TODO: git tag, e.g. vX.Y.Z]`
 
 ---
@@ -70,9 +69,9 @@ Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云�
 
 ## 5. Where the model will be hosted
 
-- **Hugging Face model (Chinese JobBERT):** `[TODO: Hugging Face model URL]`
-- Weights are absent from Git (`MODELS_HF.md` / `MODELS_CATALOG.md` record laboratory-only checkpoints).
-- Base initialisation: `hfl/chinese-roberta-wwm-ext` (architecture used in training scripts). Licence compatibility is **unverified** in this tree.
+- **Hugging Face model (JobBERT-zh):** https://huggingface.co/AlfredJames/jobbert-zh (**public**, verified 2026-09-04)
+- Encoder (`model.safetensors`) and V4 CRF (`crf/best.pt`) are in that repository. Git still does not store weights.
+- Base initialisation: `hfl/chinese-roberta-wwm-ext` (Hugging Face card metadata: Apache-2.0). JobBERT-zh remains `other` until job-ad text rights are confirmed.
 
 ---
 
@@ -109,11 +108,11 @@ Privacy: advertisements may include workplace locations and organisational names
 
 Use this wording in the PeerJ form only after the bracketed links exist. Until then, keep the placeholders.
 
-> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at [DATASET DOI OR PERMANENT URL]. The source code, preprocessing scripts, and evaluation tools are available at [GITHUB URL]. The pretrained Chinese JobBERT model, tokenizer, configuration files, and model card are available at [HUGGING FACE MODEL URL].
+> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at [DATASET DOI OR PERMANENT URL]. The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The pretrained JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh.
 
 Longer form (optional methods paragraph):
 
-> Chinese-SkillSpan (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol) and the official scorer `cnss-lskt-1.2.0` are archived at [TODO: Zenodo DOI]. A development copy of the code is at [TODO: public GitHub URL]. Chinese JobBERT is distributed at [TODO: Hugging Face model URL]. A project homepage is maintained at https://sites.google.com/view/cn-skillspan-resources; the Zenodo record, not that page, is the version of record. Redistribution of original job-advertisement wording remains subject to [TODO: confirmed licence / platform terms]. This work was supported by the National Social Science Fund of China, Grant No. 21BGL142.
+> Chinese-SkillSpan (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol) and the official scorer `cnss-lskt-1.2.0` are archived at [TODO: Zenodo DOI]. The source code is at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. Chinese JobBERT (JobBERT-zh) is distributed at https://huggingface.co/AlfredJames/jobbert-zh. A project homepage is maintained at https://sites.google.com/view/cn-skillspan-resources; the Zenodo record, not that page, is the version of record. Redistribution of original job-advertisement wording remains subject to [TODO: confirmed licence / platform terms]. This work was supported by the National Social Science Fund of China, Grant No. 21BGL142.
 
 ---
 

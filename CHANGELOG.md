@@ -6,15 +6,12 @@ Dates and version numbers that are not verified in this repository are left as `
 
 ## `[TODO: public release version]` — not yet published
 
-**Status:** local documentation and laboratory files only. No public GitHub release, Zenodo DOI, or Hugging Face repository has been created from this pass.
+**Status (2026-09-04):** GitHub repository and JobBERT-zh model are **public**. There is still no versioned GitHub Release tag and no Zenodo DOI.
 
-Intended contents of the first public bundle (after licence review):
-
-- Chinese-SkillSpan dataset files listed in `release/zenodo/RELEASE_MANIFEST.md`
-- Code: scorer `cnss-lskt-1.2.0`, evaluation and training scripts
-- Guidelines: Handbook B `B.sop_v4.2.1` (2026-08-31)
-- Documentation: README, reproducibility, data availability, model card, dataset card
-- Chinese JobBERT weights: `[TODO: only if licence-compatible weights are published]`
+- Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
+- Model: https://huggingface.co/AlfredJames/jobbert-zh
+- Dataset HF / Zenodo DOI: `[TODO]`
+- JobBERT-zh licence remains `other` pending job-ad text-rights confirmation
 
 ---
 

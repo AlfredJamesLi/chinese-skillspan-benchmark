@@ -4,7 +4,7 @@
 
 This repository contains annotation guidelines, predefined splits, preprocessing and training code, evaluation scripts, frozen prediction files for the principal encoder rows, and documentation for a public PeerJ Computer Science release.
 
-> The working copy of this project is currently private. Public GitHub, Zenodo, and Hugging Face URLs are placeholders until the authors publish them. A legacy project page exists at [https://sites.google.com/view/cn-skillspan-resources](https://sites.google.com/view/cn-skillspan-resources); it may be kept as a homepage, but it is **not** the primary permanent archive.
+> Code: [https://github.com/AlfredJamesLi/chinese-skillspan-benchmark](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark) (public). Model: [https://huggingface.co/AlfredJames/jobbert-zh](https://huggingface.co/AlfredJames/jobbert-zh) (public). A Zenodo DOI is still required for PeerJ. A legacy project page exists at [https://sites.google.com/view/cn-skillspan-resources](https://sites.google.com/view/cn-skillspan-resources); it may be kept as a homepage, but it is **not** the primary permanent archive.
 
 **Manuscript title:** Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements.
 
@@ -113,7 +113,7 @@ Files needed to **retrain** the V4 CRF head (weights not in Git):
 
 - `data/train_lskt_v4_silver.jsonl`, `data/dev_lskt_v4_silver.jsonl`
 - A local Chinese JobBERT encoder directory (continued MLM from `hfl/chinese-roberta-wwm-ext`)
-- `[TODO: public Hugging Face model URL for Chinese JobBERT]`
+- https://huggingface.co/AlfredJames/jobbert-zh (public; JobBERT-zh encoder + V4 CRF)
 
 **Do not** add the raw recruitment CSV / XLSX files that sit in this working tree to a public release until redistribution rights are confirmed. See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md).
 
@@ -210,15 +210,15 @@ python3 scorer/test_regression.py
 
 | Resource | URL |
 |---|---|
-| Public GitHub repository | `[TODO: public GitHub URL]` |
+| Public GitHub repository | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
 | Zenodo archived release (DOI) | `[TODO: Zenodo DOI]` |
 | Hugging Face dataset | `[TODO: Hugging Face dataset URL]` |
-| Hugging Face model (Chinese JobBERT) | `[TODO: Hugging Face model URL]` |
+| Hugging Face model (JobBERT-zh) | https://huggingface.co/AlfredJames/jobbert-zh |
 | arXiv preprint (this paper only) | `[TODO: this paper's arXiv URL and identifier — do not use 2604.21525 or 2604.23009]` |
 | PeerJ Computer Science article | `[TODO: PeerJ article URL]` |
 | Legacy project homepage (not the archive) | https://sites.google.com/view/cn-skillspan-resources |
 
-A private working backup currently exists at `https://github.com/AlfredJamesLi/chinese-skillspan-benchmark`. That URL is **not** the PeerJ archival location.
+The public code repository is https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (visibility **public**, verified 2026-09-04). PeerJ still requires a Zenodo DOI of a versioned release; the GitHub URL alone is not the archival record.
 
 ---
 
@@ -231,7 +231,7 @@ A private working backup currently exists at `https://github.com/AlfredJamesLi/c
   year    = {[TODO: publication year]},
   journal = {[TODO: PeerJ Computer Science or preprint venue]},
   doi     = {[TODO: Zenodo or article DOI]},
-  url     = {[TODO: public GitHub or article URL]}
+  url     = {https://github.com/AlfredJamesLi/chinese-skillspan-benchmark}
 }
 ```
 

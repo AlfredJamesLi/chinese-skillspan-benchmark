@@ -1,7 +1,7 @@
 {
   "title": "Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements",
   "upload_type": "dataset",
-  "description": "<p>Chinese-SkillSpan is a benchmark for competency span extraction from Chinese job advertisements (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol). Chinese JobBERT is the associated domain-adapted encoder baseline.</p><p>This record is intended to archive annotation guidelines (Handbook B, B.sop_v4.2.1), predefined Table 1 splits, BIO annotations, the official scorer cnss-lskt-1.2.0, evaluation scripts, frozen encoder predictions, and documentation.</p><p><strong>Job-advertisement prose is not declared openly licensed until the authors confirm redistribution rights.</strong> The legacy project page https://sites.google.com/view/cn-skillspan-resources is a homepage only and is not the version of record.</p><p>Funding: National Social Science Fund of China, Grant No. 21BGL142.</p><p>[TODO: replace this description with the camera-ready abstract once links exist.]</p><p>[TODO: public GitHub URL]</p><p>[TODO: Hugging Face dataset URL]</p><p>[TODO: Hugging Face model URL]</p><p>[TODO: this paper's arXiv identifier — do not use 2604.21525 or 2604.23009]</p>",
+  "description": "<p>Chinese-SkillSpan is a benchmark for competency span extraction from Chinese job advertisements (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol). Chinese JobBERT is the associated domain-adapted encoder baseline.</p><p>This record is intended to archive annotation guidelines (Handbook B, B.sop_v4.2.1), predefined Table 1 splits, BIO annotations, the official scorer cnss-lskt-1.2.0, evaluation scripts, frozen encoder predictions, and documentation.</p><p><strong>Job-advertisement prose is not declared openly licensed until the authors confirm redistribution rights.</strong> The legacy project page https://sites.google.com/view/cn-skillspan-resources is a homepage only and is not the version of record.</p><p>Funding: National Social Science Fund of China, Grant No. 21BGL142.</p><p>[TODO: replace this description with the camera-ready abstract once links exist.]</p><p>Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark</p><p>[TODO: Hugging Face dataset URL]</p><p>JobBERT-zh model: https://huggingface.co/AlfredJames/jobbert-zh</p><p>[TODO: this paper's arXiv identifier — do not use 2604.21525 or 2604.23009]</p>",
   "creators": [
     {"name": "Li, Guojing"},
     {"name": "Fu, Zichuan"},
@@ -33,7 +33,7 @@
       "scheme": "url"
     },
     {
-      "identifier": "[TODO: public GitHub URL]",
+      "identifier": "https://github.com/AlfredJamesLi/chinese-skillspan-benchmark",
       "relation": "isSupplementTo",
       "resource_type": "software",
       "scheme": "url"
@@ -45,7 +45,7 @@
       "scheme": "url"
     },
     {
-      "identifier": "[TODO: Hugging Face model URL]",
+      "identifier": "https://huggingface.co/AlfredJames/jobbert-zh",
       "relation": "isSupplementTo",
       "resource_type": "software",
       "scheme": "url"

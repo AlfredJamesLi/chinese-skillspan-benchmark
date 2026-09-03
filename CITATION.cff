@@ -47,9 +47,12 @@ preferred-citation:
   year: 2026
   journal: "[TODO: PeerJ Computer Science if accepted; otherwise preprint venue]"
   notes: "[TODO: volume, pages, article number, and this paper's arXiv identifier]"
-repository-code: "[TODO: public GitHub URL]"
+repository-code: "https://github.com/AlfredJamesLi/chinese-skillspan-benchmark"
 url: "https://sites.google.com/view/cn-skillspan-resources"
 identifiers:
+  - type: url
+    value: "https://huggingface.co/AlfredJames/jobbert-zh"
+    description: Public JobBERT-zh model (encoder and V4 CRF)
   - type: url
     value: "https://sites.google.com/view/cn-skillspan-resources"
     description: Legacy project homepage; not the primary permanent archive

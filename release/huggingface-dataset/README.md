@@ -23,7 +23,7 @@ license: other
 
 **Chinese-SkillSpan** is a Chinese job-advertisement corpus for **competency span extraction**. Models such as **Chinese JobBERT** are evaluated on this resource.
 
-`[TODO: Hugging Face dataset URL]` · `[TODO: Zenodo DOI]` · Code: `[TODO: public GitHub URL]`
+`[TODO: Hugging Face dataset URL]` · `[TODO: Zenodo DOI]` · Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
 
 ---
 
@@ -272,8 +272,8 @@ license: other
 
 | Resource | URL |
 |---|---|
-| GitHub | `[TODO: public GitHub URL]` |
+| GitHub | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
 | Zenodo | `[TODO: Zenodo DOI]` |
-| Chinese JobBERT | `[TODO: Hugging Face model URL]` |
+| JobBERT-zh | https://huggingface.co/AlfredJames/jobbert-zh |
 | Paper | `[TODO: this paper's arXiv / PeerJ URL]` |
 | Legacy project page (not the archive) | https://sites.google.com/view/cn-skillspan-resources |

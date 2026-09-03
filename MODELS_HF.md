@@ -10,6 +10,6 @@
 | Vanilla-large V4 CRF | 中文 RoBERTa large | `hfl/chinese-roberta-wwm-ext-large` | 已有脚本 `scripts/download_cn_roberta_wwm_ext_large.py` |
 | SOP/LLM 抽取臂（非主表 encoder） | 14B Instruct | `Qwen/Qwen2.5-14B-Instruct` | 放到父目录 `../Qwen2.5-14B-Instruct` |
 | 同上 Llama 臂 | 8B Instruct | `meta-llama/Meta-Llama-3-8B-Instruct` | 需 Meta 许可；`huggingface-cli login` |
-| 自训 JobBERT-zh / CRF | checkpoint | **无 HF 公仓** | 百度 `$REMOTE/CNSS_output` |
+| 自训 JobBERT-zh / CRF | checkpoint | [`AlfredJames/jobbert-zh`](https://huggingface.co/AlfredJames/jobbert-zh)（已公开；encoder + `crf/best.pt`） | 百度 `$REMOTE/CNSS_output` 仍为实验室备份 |
 
 论文主数字可用仓内 `data/frozen_preds/`，不必先下 14B。重训 JobBERT 必须有 `hfl/chinese-roberta-wwm-ext`（或百度 `baseline_encoders/` 离线包）。

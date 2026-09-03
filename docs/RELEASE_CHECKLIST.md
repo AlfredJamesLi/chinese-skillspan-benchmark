@@ -4,7 +4,7 @@ Complete every item before a public upload. This document does **not** authorise
 
 Proposed PeerJ wording (keep placeholders until the links exist):
 
-> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at [DATASET DOI OR PERMANENT URL]. The source code, preprocessing scripts, and evaluation tools are available at [GITHUB URL]. The pretrained Chinese JobBERT model, tokenizer, configuration files, and model card are available at [HUGGING FACE MODEL URL].
+> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at [DATASET DOI OR PERMANENT URL]. The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The pretrained JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh.
 
 ---
 

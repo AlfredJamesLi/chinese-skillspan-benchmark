@@ -49,6 +49,9 @@ Thumbs.db
 *.swp
 .idea/
 
+# --- local Hugging Face staging (weights copied from output/; do not commit) ---
+release/huggingface-model/staging/
+
 # --- extracted temp ---
 **/_extract_sample/
 **/*.rar

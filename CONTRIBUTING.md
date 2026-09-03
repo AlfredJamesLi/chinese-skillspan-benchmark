@@ -1,6 +1,6 @@
 # Contributing to Chinese-SkillSpan
 
-Thank you for helping improve **Chinese-SkillSpan** and **Chinese JobBERT**. This repository will be opened for issues after the public GitHub URL is created (`[TODO: public GitHub URL]`). Until then, contact the corresponding author, Xiangyu Zhao (`[TODO: corresponding-author email]`).
+Thank you for helping improve **Chinese-SkillSpan** and **JobBERT-zh**. Please open an issue at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/issues. For matters that should not be public, contact the corresponding author, Xiangyu Zhao (`[TODO: corresponding-author email]`).
 
 Please do **not** open a pull request that uploads new job-advertisement text.
 
