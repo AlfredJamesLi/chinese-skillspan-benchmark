@@ -1,7 +1,0 @@
-system,L_f1,K_f1,S_f1,T_f1,typed_exact,typed_relaxed,note
-Joint CRF JobBERT 1M seed 42,0.4628,0.3032,0.2655,0.3536,0.2985,0.5331,same encoder as STL
-STL combined,0.5043,0.2668,0.2604,0.3660,0.2905,0.5155,greedy non-overlap union; dropped 119 overlapping spans
-STL-L only,0.5172,,,,0.0098,0.0153,micro vs all gold types; type L only in pred
-STL-K only,,0.2666,,,0.1076,0.1951,micro vs all gold types; type K only in pred
-STL-S only,,,0.2605,,0.1651,0.3151,micro vs all gold types; type S only in pred
-STL-T only,,,,0.3664,0.1356,0.2140,micro vs all gold types; type T only in pred

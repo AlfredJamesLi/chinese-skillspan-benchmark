@@ -1,9 +1,0 @@
-axis,skillspan_2022,this_work
-Annotated sentences,14.5K total (391 English JPs; train 200 / dev 90 / test 101 posts),17460 train + 2143 dev + 3237 corpus test (Gold v2 unique 2601)
-Split granularity,job-posting splits (train 200 / dev 90 / test 101 JPs),sentence splits (train 17460 / dev 2143 / test 3237)
-Label schema,SKILL + KNOWLEDGE (nested allowed),"flat LSKT (L/K/S/T, 4 types)"
-Human test golds,1 majority-vote gold,2 protocols: Doccano Gold v2 and matched SOP+jieba P2
-Unlabeled DAPT,3.2M English JP sentences (one JobBERT),Chinese JD MLM 1M and 3M + domain-mix / listed-mix ablations
-Encoder family (not cloned SpanBERT-from-scratch),"BERT, SpanBERT, JobBERT, JobSpanBERT × STL/MTL × 5 seeds","RoBERTa-wwm, JobBERT-zh 1M/3M, domain-mix, listed-mix, goldstyle vs SOP, CWS; 3-seed ranking plus JobBERT 1M goldstyle 5-seed (typed F1 0.1257±0.0062)"
-LLM systems scored,none,5 frozen dumps + 6 SOP-extract re-calls on P2-2601
-Significance / analysis tables,"5-seed ±std, P/R, ASO, span-length F1","3-seed ±std, P/R, domain×seed, span-length F1, pairwise seed win-rate (n=3); JobBERT 1M goldstyle also 5-seed ±std"

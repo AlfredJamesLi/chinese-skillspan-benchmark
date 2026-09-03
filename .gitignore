@@ -52,6 +52,25 @@ Thumbs.db
 # --- local Hugging Face staging (weights copied from output/; do not commit) ---
 release/huggingface-model/staging/
 
+# --- local editor / agent workflow (keep on disk; do not publish) ---
+.cursor/
+AGENTS.md
+HANDOFF.md
+overleaf_cursor_bundle/
+notes/PROMPT_NEW_WINDOW.md
+notes/PROMPT_NEW_WINDOW_STEP2.md
+notes/PROMPT_NEW_WINDOW_STEP3.md
+notes/PROMPT_consult_lskt_redesign.md
+reports/sandbox_lskt_v4_silver/CODEX_TEST_EVAL.json
+reports/sandbox_lskt_v4_silver/CODEX_TEST_EVAL.md
+reports/sandbox_lskt_v4_silver/PROMPT_codex.md
+reports/sandbox_lskt_v4_silver/codex_pack/
+reports/sandbox_lskt_v4_silver/lskt_v4_codex_pack.zip
+vanilla_wwm_v4_codex_pack_20260830.tgz
+reports/sandbox_lskt_v4_silver/lskt_batches_51_corrected_codex.zip
+reports/sandbox_lskt_v4_silver/lskt_v4_codex_batches_51.zip
+reports/sandbox_lskt_v4_silver/gpt4o_sop_extract_pilot100/smoke_gpt53_codex_xhigh_one.json
+
 # --- extracted temp ---
 **/_extract_sample/
 **/*.rar

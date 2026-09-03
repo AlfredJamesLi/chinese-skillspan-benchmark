@@ -152,7 +152,6 @@ SOP v4 训练在官方 Gold v2 上低于 goldstyle v3（0.1079 vs 0.1224）。0.
 | `reports/human980_doccano/` | 980 分歧句 Doccano 草稿包（非终版 Gold） |
 | `reports/annotation_v4/` | 重叠裁决日志（空表）与 IAA 占位 |
 | `pdf/` | 最新稿 PDF |
-| `HANDOFF.md` | 服务器窗口交接 |
 | `REPRO_GITHUB.md` | 复现说明 |
 | `data/` | Gold v2、train/dev goldstyle、corpus_splits |
 
