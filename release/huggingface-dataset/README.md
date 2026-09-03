@@ -273,6 +273,6 @@ license: other
 | Resource | URL |
 |---|---|
 | GitHub | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
-| Zenodo | `[TODO: Zenodo DOI]` |
+| Zenodo (`v0.1.1`) | https://doi.org/10.5281/zenodo.22288338 |
 | JobBERT-zh | https://huggingface.co/AlfredJames/jobbert-zh |
 | Paper | `[TODO: this paper's arXiv / PeerJ URL]` |

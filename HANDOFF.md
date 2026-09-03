@@ -43,6 +43,7 @@
 ## 1. 已知事实（可写进笔记，未对照 PDF 前不要当论文终稿）
 
 - 项目名：Chinese-SkillSpan / Chinese Skill Benchmark。
+- Zenodo `v0.1.1`（已确认，2026-09-04）：版本 DOI `10.5281/zenodo.22288338`；Concept DOI `10.5281/zenodo.22288337`。记录页 https://zenodo.org/records/22288338 。`v0.1.0` 钩子失败，不要重发。
 - 通讯作者（作者提供，2026-09-04）：Xiangyu Zhao，`xianzhao@cityu.edu.hk`，City University of Hong Kong。
 - 单位：Guojing Li = Renmin University of China + City University of Hong Kong；其余七位均为 City University of Hong Kong。共同一作：Guojing Li、Zichuan Fu。
 - Access 交接里记过姐妹文 arXiv `2604.23009`（以用户上传 PDF 与投稿系统为准）。

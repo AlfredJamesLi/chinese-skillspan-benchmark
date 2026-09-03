@@ -1,10 +1,13 @@
 # Zenodo archive — Chinese-SkillSpan
 
-This folder is a **template** for a future Zenodo deposit. Nothing has been uploaded.
+This folder holds metadata for the Zenodo deposit created from GitHub Release `v0.1.1`.
+
+**Version DOI:** https://doi.org/10.5281/zenodo.22288338 (`v0.1.1`, record https://zenodo.org/records/22288338)  
+**Concept DOI:** https://doi.org/10.5281/zenodo.22288337
 
 ## Purpose
 
-Zenodo should be the **primary permanent archive** (DOI) for the version of Chinese-SkillSpan that PeerJ reviewers download without requesting access. Public access otherwise goes through GitHub and Hugging Face. Do not list a Google Sites or Drive page in the PeerJ form.
+Zenodo is the **primary permanent archive** (DOI) for the version of Chinese-SkillSpan that PeerJ reviewers download without requesting access. Public access otherwise goes through GitHub and Hugging Face. Do not list a Google Sites or Drive page in the PeerJ form.
 
 ## Record metadata
 

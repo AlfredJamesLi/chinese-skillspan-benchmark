@@ -4,7 +4,7 @@
 
 This repository contains annotation guidelines, predefined splits, preprocessing and training code, evaluation scripts, frozen prediction files for the principal encoder rows, and documentation for a public PeerJ Computer Science release.
 
-> Code: [https://github.com/AlfredJamesLi/chinese-skillspan-benchmark](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark) (public). Model: [https://huggingface.co/AlfredJames/jobbert-zh](https://huggingface.co/AlfredJames/jobbert-zh) (public). A Zenodo DOI is still required for PeerJ. Do not send reviewers through a Google Sites or Drive page.
+> Code: [https://github.com/AlfredJamesLi/chinese-skillspan-benchmark](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark) (public). Model: [https://huggingface.co/AlfredJames/jobbert-zh](https://huggingface.co/AlfredJames/jobbert-zh) (public). Archive: [https://doi.org/10.5281/zenodo.22288338](https://doi.org/10.5281/zenodo.22288338) (`v0.1.1`). Do not send reviewers through a Google Sites or Drive page.
 
 **Manuscript title:** Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements.
 
@@ -211,13 +211,14 @@ python3 scorer/test_regression.py
 | Resource | URL |
 |---|---|
 | Public GitHub repository | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
-| Zenodo archived release (DOI) | `[TODO: Zenodo DOI]` |
+| Zenodo version DOI (`v0.1.1`) | https://doi.org/10.5281/zenodo.22288338 |
+| Zenodo concept DOI (all versions) | https://doi.org/10.5281/zenodo.22288337 |
 | Hugging Face dataset | `[TODO: Hugging Face dataset URL]` |
 | Hugging Face model (JobBERT-zh) | https://huggingface.co/AlfredJames/jobbert-zh |
 | arXiv preprint (this paper only) | `[TODO: this paper's arXiv URL and identifier — do not use 2604.21525 or 2604.23009]` |
 | PeerJ Computer Science article | `[TODO: PeerJ article URL]` |
 
-The public code repository is https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (visibility **public**, verified 2026-09-04). PeerJ still requires a Zenodo DOI of a versioned release; the GitHub URL alone is not the archival record.
+The public code repository is https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (visibility **public**, verified 2026-09-04). The PeerJ archival record is https://doi.org/10.5281/zenodo.22288338 (Zenodo `v0.1.1`; concept DOI https://doi.org/10.5281/zenodo.22288337).
 
 ---
 
@@ -229,7 +230,7 @@ The public code repository is https://github.com/AlfredJamesLi/chinese-skillspan
   author  = {Li, Guojing and Fu, Zichuan and Li, Junyi and Zhang, Wenlin and Guo, Kaifeng and Yang, Jinning and Gao, Jingtong and Zhao, Xiangyu},
   year    = {[TODO: publication year]},
   journal = {[TODO: PeerJ Computer Science or preprint venue]},
-  doi     = {[TODO: Zenodo or article DOI]},
+  doi     = {10.5281/zenodo.22288338},
   url     = {https://github.com/AlfredJamesLi/chinese-skillspan-benchmark}
 }
 ```

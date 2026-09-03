@@ -183,4 +183,4 @@ The backbone `hfl/chinese-roberta-wwm-ext` is listed as **Apache-2.0** on Huggin
 | Code | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
 | Dataset (HF) | `[TODO: Hugging Face dataset URL]` |
 | Paper | `[TODO: this paper's arXiv / PeerJ URL]` |
-| Zenodo DOI | `[TODO: Zenodo DOI]` |
+| Zenodo DOI (`v0.1.1`) | https://doi.org/10.5281/zenodo.22288338 |

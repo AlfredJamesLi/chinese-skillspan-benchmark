@@ -1,6 +1,6 @@
 # Data availability — Chinese-SkillSpan
 
-This note separates **what this repository contains**, **what can reasonably be archived**, and **what must not be described as openly licensed** until the authors confirm rights. It does not create a public upload.
+This note separates **what this repository contains**, **what is already archived**, and **what must not be described as openly licensed** until the authors confirm rights. GitHub Release `v0.1.1` is archived at https://doi.org/10.5281/zenodo.22288338.
 
 ---
 
@@ -61,7 +61,8 @@ Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云�
 
 ## 4. Where the archived dataset version will be hosted
 
-- **Zenodo (primary permanent archive, DOI):** `[TODO: Zenodo DOI]`
+- **Zenodo version DOI (`v0.1.1`, this snapshot):** https://doi.org/10.5281/zenodo.22288338 (record https://zenodo.org/records/22288338)
+- **Zenodo concept DOI (all versions):** https://doi.org/10.5281/zenodo.22288337
 - **Hugging Face dataset mirror:** `[TODO: Hugging Face dataset URL]` (optional; not required if the versioned GitHub release plus Zenodo DOI already carry the files)
 - Reviewers should use **GitHub**, **Hugging Face**, and (when minted) **Zenodo** only. Do not list a Google Sites or Drive page in the PeerJ form.
 
@@ -106,13 +107,13 @@ Privacy: advertisements may include workplace locations and organisational names
 
 ## 8. Proposed PeerJ Data Availability Statement
 
-Use this wording in the PeerJ form only after the bracketed links exist. Until then, keep the placeholders.
+Use this wording in the PeerJ form. Cite the **version** DOI for this snapshot.
 
-> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at [DATASET DOI OR PERMANENT URL]. The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The pretrained JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh.
+> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22288338 (version v0.1.1; concept DOI https://doi.org/10.5281/zenodo.22288337). The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The pretrained JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh.
 
 Longer form (optional methods paragraph):
 
-> Chinese-SkillSpan (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol) and the official scorer `cnss-lskt-1.2.0` are archived at [TODO: Zenodo DOI]. The source code is at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. Chinese JobBERT (JobBERT-zh) is distributed at https://huggingface.co/AlfredJames/jobbert-zh. Redistribution of original job-advertisement wording remains subject to [TODO: confirmed licence / platform terms]. This work was supported by the National Social Science Fund of China, Grant No. 21BGL142.
+> Chinese-SkillSpan (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol) and the official scorer `cnss-lskt-1.2.0` are archived at https://doi.org/10.5281/zenodo.22288338. The source code is at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. Chinese JobBERT (JobBERT-zh) is distributed at https://huggingface.co/AlfredJames/jobbert-zh. Redistribution of original job-advertisement wording remains subject to the source platforms’ terms. This work was supported by the National Social Science Fund of China, Grant No. 21BGL142.
 
 ---
 

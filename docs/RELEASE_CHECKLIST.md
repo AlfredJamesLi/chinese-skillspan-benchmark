@@ -117,7 +117,7 @@ Use the **same** GitHub URL, the **same** Zenodo DOI, and the **same** Hugging F
 
 ## Do not use Google Sites or Drive
 
-- [ ] PeerJ and the manuscript list only GitHub, Hugging Face, and (when minted) Zenodo.
+- [ ] PeerJ and the manuscript list GitHub, Hugging Face, and Zenodo version DOI `10.5281/zenodo.22288338` (concept `10.5281/zenodo.22288337`).
 - [ ] Do **not** put https://sites.google.com/view/cn-skillspan-resources or any Drive / Sites URL in the Data Availability Statement.
 
 ## Reviewer download test

@@ -6,12 +6,12 @@ Dates and version numbers that are not verified in this repository are left as `
 
 ## `[TODO: public release version]` — not yet published
 
-**Status (2026-09-04):** GitHub repository and JobBERT-zh model are **public**. GitHub Release `v0.1.0` exists but its Zenodo hook failed (`Citation metadata load failed`). `v0.1.1` retries archival with a Zenodo-safe `CITATION.cff`. Public links are GitHub and Hugging Face only.
+**Status (2026-09-04):** GitHub, JobBERT-zh, and Zenodo `v0.1.1` are **public**. Version DOI https://doi.org/10.5281/zenodo.22288338 ; concept DOI https://doi.org/10.5281/zenodo.22288337. `v0.1.0` Zenodo ingest failed and was superseded. Public links are GitHub, Hugging Face, and Zenodo only.
 
 - Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
 - Model: https://huggingface.co/AlfredJames/jobbert-zh
-- Dataset HF / Zenodo DOI: `[TODO]`
-- JobBERT-zh licence remains `other` pending job-ad text-rights confirmation
+- Archive: https://doi.org/10.5281/zenodo.22288338
+- JobBERT-zh licence remains `other` pending job-ad text-rights confirmation. The Zenodo GitHub hook labelled the record `cc-by-4.0`; that is the platform default, not an author licence decision.
 
 ---
 
