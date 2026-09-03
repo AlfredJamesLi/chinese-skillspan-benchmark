@@ -37,6 +37,7 @@
 - Promoting **repartition_v1** silver-draft F1 (RoBERTa-wwm 3-seed mean **0.3070**, best seed **0.3115**, Qwen SOP **0.1473**, STL combined **0.2905**) into the abstract or as a replacement for V4 hybrid JobBERT 3M **0.4331**. New test gold is LSKT v4 character silver, not human Doccano Gold. Do not rank 0.3115 against 0.4331 or 0.6365.
 - Putting server-B vanilla WWM v4 seed-42 exact **0.4341** (base) / **0.4289** (large) into the abstract or as a replacement for JobBERT 3M **0.4331**, or claiming vanilla “beats JobBERT” (Δ ~0.001, 待验证). Factory large did not help (B−A = −0.0052). Do not start large 3-seed or large DAPT from the auto-appended “discuss 1M DAPT” clause.
 - Putting human page-1 **n=200** F1 (ChatGPT exact **0.2772**, JobBERT 3M v4 **0.1271**, Gold v2 agreement **0.3960**, V4 hybrid agreement **0.1617**) into the abstract or as a replacement for V4 hybrid 2601 JobBERT 3M **0.4331**. Do not rank 0.1271 against 0.4331 or 0.6365. Do not call the 200 “clean Handbook B Gold” or V4 dual-blind IAA (57/200 QA-flagged; mixed annotators). Claude **0.2402** is matched-only (n=155). Do not overwrite `gold_canonical_v2.jsonl` or the V4 hybrid 2601 file with this tranche.
+- Replacing the paper main V4 hybrid JobBERT 3M **0.4331** with the human-200 overlay 2601 exact **0.3884** (or ChatGPT overlay **0.2929**). That gold is 200 human + 780 SimHuman + 1621 SOP-CWS. Do not overwrite `test_lskt_v4_cws_simhuman980_hybrid.jsonl`. Do not retrain CRF on the 980 test IDs.
 
 ## Abandoned / mix-ups
 

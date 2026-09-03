@@ -464,3 +464,26 @@ Codex: `overleaf_cursor_bundle/CODEX_PROMPT_HUMAN200.md`.
 - Public / Zenodo data card with DOI (GitHub still private)
 - Remaining **780** of the 980 human queue (page-1 200 is in `data/human_gold_page1_200.jsonl`)
 - Dual-blind V4 A/B IAA files — still missing
+
+## Human-200 overlay on V4 hybrid 2601 (diagnostic; 2026-09-03)
+
+Replace the **200** SimHuman IDs inside the frozen V4 hybrid with page-1 human labels, then jieba-snap those 200 (same bilateral protocol as the main table). File: `data/test_lskt_v4_hybrid_human200_cws.jsonl` (sha256 `4d4a9e98…45ef03`). Original hybrid **untouched** (`2ad6342d…818d99`). Gold v2 untouched. Scorer `cnss-lskt-1.2.0`. CSV: `tables/hybrid_human200_overlay_scores.csv`. Codex: `overleaf_cursor_bundle/CODEX_PROMPT_HUMAN200_OVERLAY.md`.
+
+The 200 IDs were all `hybrid_source=simhuman980_cws`. Remaining 780 of the 980 stay SimHuman; 1621 stay SOP-CWS. **Not** a new main gold. **Do not** replace abstract JobBERT 3M **0.4331**.
+
+| System | orig 2601 exact | overlay-cws 2601 exact | overlay-cws 2601 relaxed | orig 980 exact | overlay-cws 980 exact |
+|---|---:|---:|---:|---:|---:|
+| JobBERT 3M v4 | **0.4331** | 0.3884 | 0.5469 | 0.4401 | 0.3743 |
+| JobBERT 1M v4 | 0.4272 | 0.3811 | 0.5560 | 0.4333 | 0.3654 |
+| JobBERT 1M CWS retrain | 0.4049 | 0.3688 | 0.5501 | 0.4020 | 0.3491 |
+| ChatGPT (`gpt-4o`) | 0.2854 | 0.2929 | 0.5902 | 0.2836 | 0.2947 |
+| Claude (98 empty-fill) | 0.1483 | 0.1586 | 0.3346 | 0.1757 | 0.1932 |
+| Kimi (293 empty-fill) | 0.0964 | 0.1094 | 0.1984 | 0.1011 | 0.1210 |
+| DeepSeek | 0.0802 | 0.0860 | 0.1594 | 0.0738 | 0.0826 |
+| Qwen | 0.0501 | 0.0546 | 0.1385 | 0.0483 | 0.0552 |
+
+Overlay-cws 2601 P/R: JobBERT 3M **0.4326 / 0.3524 / 0.3884**; ChatGPT **0.2468 / 0.3600 / 0.2929**. Raw (no jieba on the 200) is within ~0.004 of cws (3M 0.3847).
+
+Allowed claim: swapping 200/2601 IDs to this human tranche **lowers** JobBERT v4 exact (~−0.045) and **slightly raises** frozen ChatGPT exact (~+0.008). Ranking on this mixed gold is still JobBERT-led exact, ChatGPT-led relaxed. Do not treat 0.3884 as the new abstract number.
+
+Retrain: **not now**. The 980 queue is test-only (`do_not_train`). Overlay changes the **test gold**, so rescoring is enough. After all 980 are human-labeled, **must rescore** 2601; **re-finetune only if** train silver is also switched to the same span convention. CRF trained on v4 short silver will keep looking worse against Gold-length human test labels. Do not mix the 980 test labels into train.
