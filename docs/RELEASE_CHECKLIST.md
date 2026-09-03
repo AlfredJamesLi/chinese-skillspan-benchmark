@@ -115,15 +115,15 @@ Replace every `[TODO: … URL]` / DOI in:
 
 Use the **same** GitHub URL, the **same** Zenodo DOI, and the **same** Hugging Face dataset/model URLs everywhere. Do not paste the arXiv abstract URL into the dataset or model fields.
 
-## Legacy Google Sites page
+## Do not use Google Sites or Drive
 
-- [ ] https://sites.google.com/view/cn-skillspan-resources either points to the DOI / GitHub / Hugging Face trio or is clearly labelled “homepage, not archive”.
-- [ ] PeerJ form does **not** list that Sites URL as the dataset DOI.
+- [ ] PeerJ and the manuscript list only GitHub, Hugging Face, and (when minted) Zenodo.
+- [ ] Do **not** put https://sites.google.com/view/cn-skillspan-resources or any Drive / Sites URL in the Data Availability Statement.
 
 ## Reviewer download test
 
 - [ ] An incognito browser can download dataset, code, and model card **without** requesting access.
-- [ ] GitHub is public (the current working backup is private).
+- [ ] GitHub is public (verified 2026-09-04).
 - [ ] Hugging Face repos are public (or have a documented gated-but-automatic licence click that PeerJ accepts).
 - [ ] Zenodo files match the manifest checksums.
 
@@ -131,7 +131,8 @@ Use the **same** GitHub URL, the **same** Zenodo DOI, and the **same** Hugging F
 
 - [ ] Title string is exactly: `Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements`.
 - [ ] Author order is exactly: Guojing Li, Zichuan Fu, Junyi Li, Wenlin Zhang, Kaifeng Guo, Jinning Yang, Jingtong Gao, Xiangyu Zhao.
-- [ ] Corresponding author: Xiangyu Zhao.
+- [ ] Corresponding author: Xiangyu Zhao (`xianzhao@cityu.edu.hk`), City University of Hong Kong.
+- [ ] Affiliations: Guojing Li = Renmin University of China + City University of Hong Kong; all others = City University of Hong Kong. Equal contribution: Guojing Li and Zichuan Fu.
 - [ ] Dataset name **Chinese-SkillSpan**; model name **Chinese JobBERT**.
 - [ ] Funding: National Social Science Fund of China, Grant No. **21BGL142**.
 - [ ] Inconsistencies (22,840 vs. two splits; 3,237 vs. 2,601; V4 vs. Gold v2; draft PDF filenames) remain **reported**, not silently “fixed”.
@@ -143,7 +144,7 @@ Use the **same** GitHub URL, the **same** Zenodo DOI, and the **same** Hugging F
 3. Create a **versioned GitHub Release**.
 4. Archive that release in **Zenodo** and obtain a DOI.
 5. Publish the Hugging Face **dataset** and **model** repositories.
-6. Update every link listed above (including the Sites homepage).
-7. Enter the permanent links in the **PeerJ** form.
+6. Update every GitHub / Hugging Face / Zenodo link listed above.
+7. Enter those permanent links in the **PeerJ** form.
 
-Do not invert steps 4–7 (PeerJ must not receive a private GitHub URL or a Sites page as the archive).
+Do not invert steps 4–7 (PeerJ must not receive a private GitHub URL or a Google Sites / Drive page as the archive).

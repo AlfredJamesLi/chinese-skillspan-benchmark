@@ -43,6 +43,8 @@
 ## 1. 已知事实（可写进笔记，未对照 PDF 前不要当论文终稿）
 
 - 项目名：Chinese-SkillSpan / Chinese Skill Benchmark。
+- 通讯作者（作者提供，2026-09-04）：Xiangyu Zhao，`xianzhao@cityu.edu.hk`，City University of Hong Kong。
+- 单位：Guojing Li = Renmin University of China + City University of Hong Kong；其余七位均为 City University of Hong Kong。共同一作：Guojing Li、Zichuan Fu。
 - Access 交接里记过姐妹文 arXiv `2604.23009`（以用户上传 PDF 与投稿系统为准）。
 - 标注体系含 LKST（L / K / S / T 等维度）；Gold 来自 Doccano。
 - 数据主体：`chinese_skillspan_preprocessing/`（约 862MB）。

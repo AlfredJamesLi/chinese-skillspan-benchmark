@@ -276,4 +276,3 @@ license: other
 | Zenodo | `[TODO: Zenodo DOI]` |
 | JobBERT-zh | https://huggingface.co/AlfredJames/jobbert-zh |
 | Paper | `[TODO: this paper's arXiv / PeerJ URL]` |
-| Legacy project page (not the archive) | https://sites.google.com/view/cn-skillspan-resources |

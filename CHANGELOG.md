@@ -6,7 +6,7 @@ Dates and version numbers that are not verified in this repository are left as `
 
 ## `[TODO: public release version]` — not yet published
 
-**Status (2026-09-04):** GitHub repository and JobBERT-zh model are **public**. There is still no versioned GitHub Release tag and no Zenodo DOI.
+**Status (2026-09-04):** GitHub repository and JobBERT-zh model are **public**. GitHub Release `v0.1.0` exists but its Zenodo hook failed (`Citation metadata load failed`). `v0.1.1` retries archival with a Zenodo-safe `CITATION.cff`. Public links are GitHub and Hugging Face only.
 
 - Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
 - Model: https://huggingface.co/AlfredJames/jobbert-zh

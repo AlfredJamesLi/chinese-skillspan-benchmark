@@ -1,79 +1,64 @@
 cff-version: 1.2.0
 message: If you use Chinese-SkillSpan or Chinese JobBERT, please cite this work.
 title: "Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements"
+version: 0.1.1
 type: dataset
 abstract: >-
-  Chinese-SkillSpan is a benchmark for competency span extraction from Chinese
-  job advertisements. Chinese JobBERT is the associated domain-adapted encoder
-  baseline. Evaluation uses flat LSKT spans (Language, Knowledge, Skill, Trait).
+  Online job advertisements can reveal changing skill demand only when
+  competency mentions are recoverable as auditable text spans. Chinese lacks a
+  large resource that combines explicit span-boundary rules with coverage of
+  different recruitment genres. We present Chinese-SkillSpan, a corpus of 22,840
+  sentences from four Chinese recruitment sources. It uses a flat, ESCO-derived
+  inventory of language skills and knowledge, knowledge, skills, and transversal
+  skills and competences (LSKT), with Chinese-specific rules for
+  minimal-complete, non-overlapping spans. Language models propose annotation
+  drafts, but human reviewers retain authority over accepted offsets and types
+  under a shared handbook. The benchmark uses identifier-strict scoring, exact
+  and overlap-tolerant metrics, and source- and length-based analyses. Its
+  evaluation reference is undergoing final human adjudication, so the current
+  results are provisional estimates. The baseline study shows why the resource
+  is challenging: exact extraction changes with Chinese boundary conventions,
+  and accuracy varies across recruitment sources. Taken together,
+  Chinese-SkillSpan contributes a multi-source span resource, a Chinese-specific
+  annotation and evaluation protocol, and a reproducible baseline and diagnostic
+  suite that exposes category, source, and boundary effects. Internal artifact
+  names are confined to the supplementary reproducibility record. Project
+  materials are maintained at
+  https://github.com/AlfredJamesLi/chinese-skillspan-benchmark.
+  The pretrained JobBERT-zh model is available at
+  https://huggingface.co/AlfredJames/jobbert-zh.
 authors:
-  - family-names: Li
-    given-names: Guojing
-  - family-names: Fu
-    given-names: Zichuan
-  - family-names: Li
-    given-names: Junyi
-  - family-names: Zhang
-    given-names: Wenlin
-  - family-names: Guo
-    given-names: Kaifeng
-  - family-names: Yang
-    given-names: Jinning
-  - family-names: Gao
-    given-names: Jingtong
-  - family-names: Zhao
-    given-names: Xiangyu
-    email: "[TODO: corresponding-author email]"
-preferred-citation:
-  type: article
-  title: "Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements"
-  authors:
-    - family-names: Li
-      given-names: Guojing
-    - family-names: Fu
-      given-names: Zichuan
-    - family-names: Li
-      given-names: Junyi
-    - family-names: Zhang
-      given-names: Wenlin
-    - family-names: Guo
-      given-names: Kaifeng
-    - family-names: Yang
-      given-names: Jinning
-    - family-names: Gao
-      given-names: Jingtong
-    - family-names: Zhao
-      given-names: Xiangyu
-  year: 2026
-  journal: "[TODO: PeerJ Computer Science if accepted; otherwise preprint venue]"
-  notes: "[TODO: volume, pages, article number, and this paper's arXiv identifier]"
-repository-code: "https://github.com/AlfredJamesLi/chinese-skillspan-benchmark"
-url: "https://sites.google.com/view/cn-skillspan-resources"
-identifiers:
-  - type: url
-    value: "https://huggingface.co/AlfredJames/jobbert-zh"
-    description: Public JobBERT-zh model (encoder and V4 CRF)
-  - type: url
-    value: "https://sites.google.com/view/cn-skillspan-resources"
-    description: Legacy project homepage; not the primary permanent archive
-license: "[TODO: SPDX licence after code and data licences are chosen]"
-version: "[TODO: release version]"
-# [TODO: ISO release date — add date-released when the public tag exists]
-# [TODO: Zenodo DOI — add an identifiers entry of type doi after minting]
-# [TODO: this paper's arXiv identifier — do not use 2604.21525 or 2604.23009]
+  - given-names: Guojing
+    family-names: Li
+    affiliation: "Renmin University of China; City University of Hong Kong"
+  - given-names: Zichuan
+    family-names: Fu
+    affiliation: "City University of Hong Kong"
+  - given-names: Junyi
+    family-names: Li
+    affiliation: "City University of Hong Kong"
+  - given-names: Wenlin
+    family-names: Zhang
+    affiliation: "City University of Hong Kong"
+  - given-names: Kaifeng
+    family-names: Guo
+    affiliation: "City University of Hong Kong"
+  - given-names: Jinning
+    family-names: Yang
+    affiliation: "City University of Hong Kong"
+  - given-names: Jingtong
+    family-names: Gao
+    affiliation: "City University of Hong Kong"
+  - given-names: Xiangyu
+    family-names: Zhao
+    affiliation: "City University of Hong Kong"
 keywords:
-  - Chinese-SkillSpan
-  - Chinese JobBERT
+  - Chinese JobSkillNER
   - competency span extraction
-  - job advertisements
-  - named entity recognition
-  - LSKT
-references:
-  - type: generic
-    title: National Social Science Fund of China, Grant No. 21BGL142
-notes: >-
-  Corresponding author: Xiangyu Zhao.
-  Author affiliations are not recorded in this repository
-  ([TODO: affiliations]).
-  date-released is omitted until a public tag exists ([TODO: ISO release date]).
-  Do not treat the legacy Google Sites URL as the archival DOI.
+  - skill extraction
+  - Chinese job advertisements
+  - benchmark dataset
+  - span-level annotation
+  - domain-adaptive pretraining
+  - large language models
+  - ESCO-informed taxonomy

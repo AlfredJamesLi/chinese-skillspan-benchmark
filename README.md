@@ -4,7 +4,7 @@
 
 This repository contains annotation guidelines, predefined splits, preprocessing and training code, evaluation scripts, frozen prediction files for the principal encoder rows, and documentation for a public PeerJ Computer Science release.
 
-> Code: [https://github.com/AlfredJamesLi/chinese-skillspan-benchmark](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark) (public). Model: [https://huggingface.co/AlfredJames/jobbert-zh](https://huggingface.co/AlfredJames/jobbert-zh) (public). A Zenodo DOI is still required for PeerJ. A legacy project page exists at [https://sites.google.com/view/cn-skillspan-resources](https://sites.google.com/view/cn-skillspan-resources); it may be kept as a homepage, but it is **not** the primary permanent archive.
+> Code: [https://github.com/AlfredJamesLi/chinese-skillspan-benchmark](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark) (public). Model: [https://huggingface.co/AlfredJames/jobbert-zh](https://huggingface.co/AlfredJames/jobbert-zh) (public). A Zenodo DOI is still required for PeerJ. Do not send reviewers through a Google Sites or Drive page.
 
 **Manuscript title:** Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements.
 
@@ -216,7 +216,6 @@ python3 scorer/test_regression.py
 | Hugging Face model (JobBERT-zh) | https://huggingface.co/AlfredJames/jobbert-zh |
 | arXiv preprint (this paper only) | `[TODO: this paper's arXiv URL and identifier — do not use 2604.21525 or 2604.23009]` |
 | PeerJ Computer Science article | `[TODO: PeerJ article URL]` |
-| Legacy project homepage (not the archive) | https://sites.google.com/view/cn-skillspan-resources |
 
 The public code repository is https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (visibility **public**, verified 2026-09-04). PeerJ still requires a Zenodo DOI of a versioned release; the GitHub URL alone is not the archival record.
 
@@ -235,7 +234,15 @@ The public code repository is https://github.com/AlfredJamesLi/chinese-skillspan
 }
 ```
 
-Machine-readable metadata: [`CITATION.cff`](CITATION.cff). Corresponding author: Xiangyu Zhao. `[TODO: corresponding-author email and affiliations]`.
+Machine-readable metadata: [`CITATION.cff`](CITATION.cff).
+
+**Authors (order fixed).** Guojing Li<sup>1,2,†</sup>, Zichuan Fu<sup>2,†</sup>, Junyi Li<sup>2</sup>, Wenlin Zhang<sup>2</sup>, Kaifeng Guo<sup>2</sup>, Jinning Yang<sup>2</sup>, Jingtong Gao<sup>2</sup>, Xiangyu Zhao<sup>2</sup>.
+
+1. Renmin University of China  
+2. City University of Hong Kong  
+† Equal contribution.
+
+Corresponding author: Xiangyu Zhao (`xianzhao@cityu.edu.hk`).
 
 ---
 

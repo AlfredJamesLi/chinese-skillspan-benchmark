@@ -184,4 +184,3 @@ The backbone `hfl/chinese-roberta-wwm-ext` is listed as **Apache-2.0** on Huggin
 | Dataset (HF) | `[TODO: Hugging Face dataset URL]` |
 | Paper | `[TODO: this paper's arXiv / PeerJ URL]` |
 | Zenodo DOI | `[TODO: Zenodo DOI]` |
-| Legacy homepage (not the archive) | https://sites.google.com/view/cn-skillspan-resources |

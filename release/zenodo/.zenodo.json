@@ -1,37 +1,33 @@
 {
   "title": "Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements",
   "upload_type": "dataset",
-  "description": "<p>Chinese-SkillSpan is a benchmark for competency span extraction from Chinese job advertisements (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol). Chinese JobBERT is the associated domain-adapted encoder baseline.</p><p>This record is intended to archive annotation guidelines (Handbook B, B.sop_v4.2.1), predefined Table 1 splits, BIO annotations, the official scorer cnss-lskt-1.2.0, evaluation scripts, frozen encoder predictions, and documentation.</p><p><strong>Job-advertisement prose is not declared openly licensed until the authors confirm redistribution rights.</strong> The legacy project page https://sites.google.com/view/cn-skillspan-resources is a homepage only and is not the version of record.</p><p>Funding: National Social Science Fund of China, Grant No. 21BGL142.</p><p>[TODO: replace this description with the camera-ready abstract once links exist.]</p><p>Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark</p><p>[TODO: Hugging Face dataset URL]</p><p>JobBERT-zh model: https://huggingface.co/AlfredJames/jobbert-zh</p><p>[TODO: this paper's arXiv identifier — do not use 2604.21525 or 2604.23009]</p>",
+  "description": "<p>Online job advertisements can reveal changing skill demand only when competency mentions are recoverable as auditable text spans. Chinese lacks a large resource that combines explicit span-boundary rules with coverage of different recruitment genres. We present Chinese-SkillSpan, a corpus of 22,840 sentences from four Chinese recruitment sources. It uses a flat, ESCO-derived inventory of language skills and knowledge, knowledge, skills, and transversal skills and competences (LSKT), with Chinese-specific rules for minimal-complete, non-overlapping spans. Language models propose annotation drafts, but human reviewers retain authority over accepted offsets and types under a shared handbook. The benchmark uses identifier-strict scoring, exact and overlap-tolerant metrics, and source- and length-based analyses. Its evaluation reference is undergoing final human adjudication, so the current results are provisional estimates. The baseline study shows why the resource is challenging: exact extraction changes with Chinese boundary conventions, and accuracy varies across recruitment sources. Taken together, Chinese-SkillSpan contributes a multi-source span resource, a Chinese-specific annotation and evaluation protocol, and a reproducible baseline and diagnostic suite that exposes category, source, and boundary effects. Internal artifact names are confined to the supplementary reproducibility record.</p><p>Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark</p><p>JobBERT-zh model: https://huggingface.co/AlfredJames/jobbert-zh</p><p>Guojing Li and Zichuan Fu contributed equally. Corresponding author: Xiangyu Zhao (xianzhao@cityu.edu.hk), City University of Hong Kong. Guojing Li is also with Renmin University of China. Funding: National Social Science Fund of China, Grant No. 21BGL142.</p>",
   "creators": [
-    {"name": "Li, Guojing"},
-    {"name": "Fu, Zichuan"},
-    {"name": "Li, Junyi"},
-    {"name": "Zhang, Wenlin"},
-    {"name": "Guo, Kaifeng"},
-    {"name": "Yang, Jinning"},
-    {"name": "Gao, Jingtong"},
-    {"name": "Zhao, Xiangyu"}
+    {"name": "Li, Guojing", "affiliation": "Renmin University of China; City University of Hong Kong"},
+    {"name": "Fu, Zichuan", "affiliation": "City University of Hong Kong"},
+    {"name": "Li, Junyi", "affiliation": "City University of Hong Kong"},
+    {"name": "Zhang, Wenlin", "affiliation": "City University of Hong Kong"},
+    {"name": "Guo, Kaifeng", "affiliation": "City University of Hong Kong"},
+    {"name": "Yang, Jinning", "affiliation": "City University of Hong Kong"},
+    {"name": "Gao, Jingtong", "affiliation": "City University of Hong Kong"},
+    {"name": "Zhao, Xiangyu", "affiliation": "City University of Hong Kong"}
   ],
   "keywords": [
-    "Chinese-SkillSpan",
-    "Chinese JobBERT",
+    "Chinese JobSkillNER",
     "competency span extraction",
-    "job advertisements",
-    "named entity recognition",
-    "LSKT",
-    "Chinese"
+    "skill extraction",
+    "Chinese job advertisements",
+    "benchmark dataset",
+    "span-level annotation",
+    "domain-adaptive pretraining",
+    "large language models",
+    "ESCO-informed taxonomy"
   ],
   "access_right": "open",
   "license": "other-closed",
-  "notes": "[TODO: replace license other-closed after a public data/code licence is chosen. Do not deposit raw recruitment CSV/XLSX. Corresponding author: Xiangyu Zhao. Affiliations: TODO. Grant No. 21BGL142. Version: TODO. Concept DOI: TODO.]",
-  "version": "[TODO: release version]",
+  "notes": "[TODO: replace license other-closed after a public data/code licence is chosen. Do not deposit raw recruitment CSV/XLSX. Corresponding author: Xiangyu Zhao, xianzhao@cityu.edu.hk, City University of Hong Kong. Equal contribution: Guojing Li and Zichuan Fu. Grant No. 21BGL142. Version: 0.1.0. Concept DOI: TODO.]",
+  "version": "0.1.0",
   "related_identifiers": [
-    {
-      "identifier": "https://sites.google.com/view/cn-skillspan-resources",
-      "relation": "isDocumentedBy",
-      "resource_type": "other",
-      "scheme": "url"
-    },
     {
       "identifier": "https://github.com/AlfredJamesLi/chinese-skillspan-benchmark",
       "relation": "isSupplementTo",

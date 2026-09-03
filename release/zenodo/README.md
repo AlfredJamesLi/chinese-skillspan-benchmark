@@ -4,7 +4,7 @@ This folder is a **template** for a future Zenodo deposit. Nothing has been uplo
 
 ## Purpose
 
-Zenodo should be the **primary permanent archive** (DOI) for the version of Chinese-SkillSpan that PeerJ reviewers download without requesting access. The legacy Google Sites page may stay online as a homepage; it must not be the archival URL in the PeerJ form.
+Zenodo should be the **primary permanent archive** (DOI) for the version of Chinese-SkillSpan that PeerJ reviewers download without requesting access. Public access otherwise goes through GitHub and Hugging Face. Do not list a Google Sites or Drive page in the PeerJ form.
 
 ## Record metadata
 
@@ -18,7 +18,7 @@ Verified fields already filled:
 - Keywords
 - Upload type: `dataset`
 - Grant mentioned in the description: National Social Science Fund of China, **21BGL142**
-- Related identifier that exists today: the legacy homepage URL
+- Related identifiers that exist today: the public GitHub repository and the JobBERT-zh Hugging Face model
 
 Placeholders remain for DOI, version, licences, GitHub, Hugging Face, arXiv, affiliations, and communities. **No Zenodo community id is set**, because none is confirmed.
 
