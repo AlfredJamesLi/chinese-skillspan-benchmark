@@ -1,6 +1,6 @@
 # Contributing to Chinese-SkillSpan
 
-Thank you for helping improve **Chinese-SkillSpan** and **JobBERT-zh**. Please open an issue at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/issues. For matters that should not be public, contact the corresponding author, Xiangyu Zhao (`[TODO: corresponding-author email]`).
+Thank you for helping improve **Chinese-SkillSpan** and **JobBERT-zh**. Please open an issue at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/issues. For matters that should not be public, contact the corresponding author, Xiangyu Zhao (`xianzhao@cityu.edu.hk`).
 
 Please do **not** open a pull request that uploads new job-advertisement text.
 
@@ -57,10 +57,10 @@ If you need to illustrate a sentence, invent a short synthetic example or use a 
 - Public-facing prose is English. Laboratory notes may remain Chinese.
 - Do not overwrite `data/gold_canonical_v2.jsonl` or the frozen V4 hybrid with a rebuilt file unless the SHA-256 is unchanged.
 - Do not add Concept Accuracy, Time-OOD, or English six-dataset SRICL tables to this project.
-- Code of conduct: `[TODO: add a CODE_OF_CONDUCT.md if the public repository requires one]`.
+- A public code of conduct has not been added yet.
 
 ---
 
 ## Licence of contributions
 
-`[TODO: state the contributor licence (e.g. same as the chosen code licence) after SPDX is chosen]`.
+No SPDX licence has been chosen for this repository. Do not upload new advertisement text. Patches to scorer, scripts, and documentation are welcome.

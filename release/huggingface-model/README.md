@@ -4,6 +4,10 @@ language:
 pretty_name: JobBERT-zh
 library_name: transformers
 pipeline_tag: token-classification
+inference: false
+widget:
+  - text: "任职要求：熟练掌握Python和SQL，英语CET-6，具备良好的沟通与团队合作能力。"
+    example_title: "Chinese job advertisement"
 tags:
   - jobbert-zh
   - chinese-skillspan
@@ -19,13 +23,13 @@ base_model: hfl/chinese-roberta-wwm-ext
 
 **JobBERT-zh** is a Chinese job-domain encoder and CRF span head for **Chinese-SkillSpan** (competency span extraction from Chinese job advertisements). It follows the JobBERT / DaJobBERT domain-adaptive pre-training setup of Zhang et al., using a Chinese RoBERTa-wwm backbone.
 
-- Repository: [https://huggingface.co/AlfredJames/jobbert-zh](https://huggingface.co/AlfredJames/jobbert-zh) (public)
-- This is **not** English [`jjzha/jobbert-base-cased`](https://huggingface.co/jjzha/jobbert-base-cased)
-- This is **not** TechWolf [`JobBERT-v3`](https://huggingface.co/TechWolf/JobBERT-v3) (job-title embeddings)
+- Model: [https://huggingface.co/AlfredJames/jobbert-zh](https://huggingface.co/AlfredJames/jobbert-zh)
+- Code and data: [https://github.com/AlfredJamesLi/chinese-skillspan-benchmark](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark)
+- Archive (`v0.1.1`): [https://doi.org/10.5281/zenodo.22288338](https://doi.org/10.5281/zenodo.22288338)
 
-The Hugging Face model tree may show a single “finetuned from `hfl/chinese-roberta-wwm-ext`” hop. Training actually has **two stages** (see below).
+This is **not** English [`jjzha/jobbert-base-cased`](https://huggingface.co/jjzha/jobbert-base-cased) and **not** TechWolf [`JobBERT-v3`](https://huggingface.co/TechWolf/JobBERT-v3).
 
-There is no `AutoModelForTokenClassification` export and no hosted Inference Provider. Token-classification in the sidebar does not mean one-click NER.
+The Hub tree may show a single “finetuned from `hfl/chinese-roberta-wwm-ext`” hop. Training actually has **two stages** (below). There is no `AutoModelForTokenClassification` export and no hosted Inference Provider. The sidebar widget is disabled on purpose.
 
 ---
 
@@ -57,7 +61,7 @@ Paper-main typed exact F1 **0.4331** uses stage 2 + stage 3 **and** jieba span s
 - Nested or overlapping NER
 - Treating V4 hybrid scores as fully human gold
 - Production HR systems without human review
-- The Hub “Token Classification” widget / Inference Providers
+- Hub Inference Providers / the default token-classification widget
 
 ---
 
@@ -69,14 +73,14 @@ Head: linear emissions + linear-chain CRF (`torchcrf`, `batch_first=True`), 9 BI
 Default fine-tune recipe (`scripts/train_cn_roberta_crf.py`): seed 42, 6 epochs, patience 2, batch size 16, max length 256, learning rate `2e-5`.  
 Tokenizer: `AutoTokenizer` with `is_split_into_words=True` on **character** tokens.
 
-Hardware used for the 0.4331 run: `[TODO: GPU / CUDA / wall-clock]`.
+Hardware used for the 0.4331 run is not recorded in the public release notes.
 
 ---
 
 ## Training data
 
 - **Backbone:** [`hfl/chinese-roberta-wwm-ext`](https://huggingface.co/hfl/chinese-roberta-wwm-ext). Hugging Face card metadata lists **Apache-2.0** for that checkpoint.
-- **MLM:** Chinese job-advertisement sentences. Sentence dumps are **not** published with this model. `[TODO: confirm sampling counts and redistribution rights]`
+- **MLM:** Chinese job-advertisement sentences. Sentence dumps are **not** published with this model.
 - **CRF:** `train_lskt_v4_silver.jsonl` / `dev_lskt_v4_silver.jsonl` (SOP v4 silver, **not** human Doccano Gold)
 
 This repository’s licence remains `other` until job-advertisement text rights are confirmed. Compatibility with Apache-2.0 of the backbone is required before any more permissive SPDX id is chosen.
@@ -132,9 +136,9 @@ python3 scripts/train_cn_roberta_crf.py \
 
 ## Evaluation
 
-- Task: typed LSKT span extraction  
-- Scorer: `cnss-lskt-1.2.0`, official alignment  
-- Paper-main gold: 2,601 IDs, V4 hybrid (derived; not human Doccano Gold)  
+- Task: typed LSKT span extraction
+- Scorer: `cnss-lskt-1.2.0`, official alignment
+- Paper-main gold: 2,601 IDs, V4 hybrid (derived; not human Doccano Gold)
 - Verified jieba-aligned scores (`tables/hybrid_cws_simhuman980_all_models.csv`):
 
 | System | Typed exact F1 | Typed relaxed F1 |
@@ -148,7 +152,7 @@ Do not rank these figures against Gold v2 ChatGPT **0.6365** in one sentence.
 
 ## Limitations
 
-Silver CRF labels are not fully human-adjudicated. Jieba snap changes exact-match F1 substantially (0.2552 without snap vs 0.4331 with snap on the frozen 3M dump). Public-institution ads are difficult under Gold v2 notes. `[TODO: measured demographic or firm-size bias, if analysed.]`
+Silver CRF labels are not fully human-adjudicated. Jieba snap changes exact-match F1 substantially (0.2552 without snap vs 0.4331 with snap on the frozen 3M dump). Public-institution ads are difficult under Gold v2 notes.
 
 ---
 
@@ -162,8 +166,7 @@ Funding: National Social Science Fund of China, Grant No. **21BGL142**.
 
 ## Authors
 
-Guojing Li, Zichuan Fu, Junyi Li, Wenlin Zhang, Kaifeng Guo, Jinning Yang, Jingtong Gao, Xiangyu Zhao (corresponding).  
-`[TODO: affiliations and contact email]`
+Guojing Li (Renmin University of China; City University of Hong Kong) and Zichuan Fu (City University of Hong Kong) contributed equally. Junyi Li, Wenlin Zhang, Kaifeng Guo, Jinning Yang, Jingtong Gao, and Xiangyu Zhao are with City University of Hong Kong. Corresponding author: Xiangyu Zhao (`xianzhao@cityu.edu.hk`).
 
 ---
 
@@ -180,7 +183,6 @@ The backbone `hfl/chinese-roberta-wwm-ext` is listed as **Apache-2.0** on Huggin
 | Resource | URL |
 |---|---|
 | This model | https://huggingface.co/AlfredJames/jobbert-zh |
-| Code | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
-| Dataset (HF) | `[TODO: Hugging Face dataset URL]` |
-| Paper | `[TODO: this paper's arXiv / PeerJ URL]` |
-| Zenodo DOI (`v0.1.1`) | https://doi.org/10.5281/zenodo.22288338 |
+| Code and data | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
+| Zenodo version DOI (`v0.1.1`) | https://doi.org/10.5281/zenodo.22288338 |
+| Zenodo concept DOI | https://doi.org/10.5281/zenodo.22288337 |

@@ -63,8 +63,8 @@ Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云�
 
 - **Zenodo version DOI (`v0.1.1`, this snapshot):** https://doi.org/10.5281/zenodo.22288338 (record https://zenodo.org/records/22288338)
 - **Zenodo concept DOI (all versions):** https://doi.org/10.5281/zenodo.22288337
-- **Hugging Face dataset mirror:** `[TODO: Hugging Face dataset URL]` (optional; not required if the versioned GitHub release plus Zenodo DOI already carry the files)
-- Reviewers should use **GitHub**, **Hugging Face**, and (when minted) **Zenodo** only. Do not list a Google Sites or Drive page in the PeerJ form.
+- **Hugging Face dataset mirror:** not published. Reviewers should use GitHub Release `v0.1.1` or the Zenodo record above.
+- Reviewers should use **GitHub**, **Hugging Face (model)**, and **Zenodo** only. Do not list a Google Sites or Drive page in the PeerJ form.
 
 ---
 
@@ -78,9 +78,7 @@ Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云�
 
 ## 6. Manuscript preprint versus data/code/model
 
-The manuscript has an arXiv preprint. **That URL is not the dataset, code, or model repository.**
-
-`[TODO: this paper's arXiv identifier and URL]`
+This paper does not yet have a public preprint identifier. **An arXiv URL is not a substitute for the dataset, code, or model repository.**
 
 Do **not** use sister-paper identifiers `2604.21525` or `2604.23009` as this paper’s preprint.
 

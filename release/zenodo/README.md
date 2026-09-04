@@ -23,9 +23,9 @@ Verified fields already filled:
 - Grant mentioned in the description: National Social Science Fund of China, **21BGL142**
 - Related identifiers that exist today: the public GitHub repository and the JobBERT-zh Hugging Face model
 
-Placeholders remain for DOI, version, licences, GitHub, Hugging Face, arXiv, affiliations, and communities. **No Zenodo community id is set**, because none is confirmed.
+The GitHub-minted record already carries version DOI `10.5281/zenodo.22288338` and concept DOI `10.5281/zenodo.22288337`. **No Zenodo community id is set.**
 
-The JSON `license` value is `other-closed` as a conservative stand-in so that an accidental upload would not advertise CC-BY. `[TODO: replace after legal review]`.
+The JSON `license` value is `other-closed` as a conservative stand-in. The live GitHub-hook record was labelled `cc-by-4.0` by platform default; that is not an author licence decision.
 
 ## What to upload (see RELEASE_MANIFEST.md)
 
@@ -43,8 +43,8 @@ Exclude:
 
 ## How this DOI should be cited
 
-After minting: add the DOI to `CITATION.cff`, `README.md`, both Hugging Face cards, the manuscript Data Availability statement, and the PeerJ form. Then create a GitHub Release whose assets match this manifest.
+The minted DOI is already in `README.md`, `DATA_AVAILABILITY.md`, and the Hugging Face model-card template. The Overleaf Data Availability paragraph still needs the same wording.
 
 ## Reviewer access
 
-Zenodo records used for PeerJ must be **open** (or a reviewer link that does not require a request). `[TODO: confirm the record is publicly downloadable before submission]`.
+The Zenodo record https://zenodo.org/records/22288338 is the open archive for PeerJ. Confirm in an incognito window that files download without a request.

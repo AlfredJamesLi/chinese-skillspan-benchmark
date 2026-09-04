@@ -2,9 +2,9 @@
 
 Complete every item before a public upload. This document does **not** authorise GitHub, Hugging Face, Zenodo, or PeerJ publication. No remote action has been taken.
 
-Proposed PeerJ wording (keep placeholders until the links exist):
+Proposed PeerJ wording (use the minted version DOI):
 
-> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at [DATASET DOI OR PERMANENT URL]. The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The pretrained JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh.
+> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22288338 (version v0.1.1; concept DOI https://doi.org/10.5281/zenodo.22288337). The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The pretrained JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh.
 
 ---
 
@@ -90,35 +90,35 @@ Proposed PeerJ wording (keep placeholders until the links exist):
 
 ## DOI creation
 
-- [ ] GitHub repository exists and is **public**.
-- [ ] Zenodo–GitHub integration or a manual deposit creates a version DOI.
-- [ ] Concept DOI (if any) recorded separately from the version DOI.
+- [x] GitHub repository exists and is **public** (2026-09-04).
+- [x] Zenodo–GitHub integration minted version DOI `10.5281/zenodo.22288338` from Release `v0.1.1`.
+- [x] Concept DOI `10.5281/zenodo.22288337` recorded separately.
 
 ## GitHub release tag
 
-- [ ] `[TODO: tag name]`.
+- [x] Tag `v0.1.1` (do not re-issue failed `v0.1.0`).
 - [ ] Release assets match `release/zenodo/RELEASE_MANIFEST.md`.
-- [ ] Private backup `https://github.com/AlfredJamesLi/chinese-skillspan-benchmark` is not presented as the archival URL.
+- [x] The same GitHub URL is now the public code repository; the archival URL is the Zenodo version DOI.
 
 ## Synchronise URLs
 
 Replace every `[TODO: … URL]` / DOI in:
 
-- [ ] Manuscript Data Availability paragraph
+- [ ] Manuscript Data Availability paragraph (Overleaf; local prompt `overleaf_cursor_bundle/CODEX_PROMPT_PEERJ_DAS.md`)
 - [ ] PeerJ submission form
-- [ ] `README.md`
-- [ ] `CITATION.cff`
-- [ ] `DATA_AVAILABILITY.md`
-- [ ] `release/huggingface-model/README.md`
-- [ ] `release/huggingface-dataset/README.md`
-- [ ] `release/zenodo/.zenodo.json`
+- [x] `README.md` (Zenodo `v0.1.1` + GitHub + JobBERT-zh)
+- [x] `CITATION.cff` (Zenodo-safe; version `0.1.1`)
+- [x] `DATA_AVAILABILITY.md`
+- [x] `release/huggingface-model/README.md` (local template; Hub card must match)
+- [x] `release/huggingface-dataset/README.md` (template only; no Hub dataset repo)
+- [x] `release/zenodo/.zenodo.json` (no placeholder related identifiers)
 
 Use the **same** GitHub URL, the **same** Zenodo DOI, and the **same** Hugging Face dataset/model URLs everywhere. Do not paste the arXiv abstract URL into the dataset or model fields.
 
 ## Do not use Google Sites or Drive
 
-- [ ] PeerJ and the manuscript list GitHub, Hugging Face, and Zenodo version DOI `10.5281/zenodo.22288338` (concept `10.5281/zenodo.22288337`).
-- [ ] Do **not** put https://sites.google.com/view/cn-skillspan-resources or any Drive / Sites URL in the Data Availability Statement.
+- [x] Public docs list GitHub, Hugging Face, and Zenodo version DOI `10.5281/zenodo.22288338` (concept `10.5281/zenodo.22288337`).
+- [ ] Overleaf / PeerJ form must use the same three URLs. Do **not** put https://sites.google.com/view/cn-skillspan-resources or any Drive / Sites URL in the Data Availability Statement.
 
 ## Reviewer download test
 

@@ -2,7 +2,7 @@
 
 This document states only what this repository can actually re-run. Placeholders mark facts that are not verified in the tree.
 
-Companion files: [README.md](README.md), [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md), `notes/DATA_PROTOCOL_FREEZE.md`, `REPRO_GITHUB.md` (Chinese laboratory notes; not replaced).
+Companion files: [README.md](README.md), [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md), `notes/DATA_PROTOCOL_FREEZE.md`. SHA-256 values belong in this file, not in the manuscript Data Availability paragraph.
 
 ---
 
@@ -13,11 +13,11 @@ Companion files: [README.md](README.md), [DATA_AVAILABILITY.md](DATA_AVAILABILIT
 | Official scorer | Python 3, standard library; version string `cnss-lskt-1.2.0` in `scorer/score_lskt.py` | No GPU |
 | Jieba alignment | `requirements-repro.txt` → `jieba>=0.42.1` | Required for the paper-main table |
 | Encoder training pins | Parent `requirements.txt`: `torch==2.1.2`, `transformers==4.37.1`, `seqeval==1.2.2`, `numpy==1.26.3`, `datasets==2.16.1` | Plus `pytorch-crf` on `PYTHONPATH` |
-| Laboratory conda env name | `adasparse` appears in wrapper scripts | Not required; path is machine-specific |
-| OS / Python patch / CUDA / GPU model | `[TODO: record OS, Python, CUDA, and GPU used for the 0.4331 run]` | Not in the frozen notes |
-| Approximate wall-clock | `[TODO: record runtime for MLM, CRF, and eval]` | Not verified |
+| Laboratory conda env name | Wrapper scripts may name a local environment | Not required; path is machine-specific |
+| OS / Python patch / CUDA / GPU model | Not recorded in the frozen notes | — |
+| Approximate wall-clock | Not verified for MLM / CRF / eval | — |
 
-Scripts under `scripts/` and several evaluators still contain a laboratory absolute root. A clean public clone will not execute those files until that root is parameterised. `[TODO: remove laboratory absolute paths from public scripts]`.
+Scripts under `scripts/` and several evaluators still contain a laboratory absolute root. A clean public clone will not execute those trainers until that root is parameterised.
 
 ---
 
@@ -64,7 +64,7 @@ SHA-256 values below were computed from the files in this workspace.
 | `notes/handbooks/handbook_B_sop_v4.md` | Handbook B (Chinese) | 7,186 | `e9e7677b248d75ede523c2d53c6a55fe641aed4e3eb004bd59b8c16a7875751b` |
 | `notes/handbooks/handbook_B_sop_v4.en.md` | Handbook B (English) | 4,446 | `aee5c4137b858e4e801548796c18a6516134fb64e3ec9dc5620319d2fceaa9ce` |
 
-Release version string: `[TODO: dataset / code release version]`.
+Release version string: GitHub / Zenodo **`v0.1.1`**.
 
 `scripts/eval_hybrid_cws_simhuman.py` can **rewrite** the hybrid gold from SOP-CWS + SimHuman sources. After any such run, re-check the SHA-256 above before treating the file as the frozen paper gold.
 
@@ -76,7 +76,7 @@ Verified in `scripts/train_cn_roberta_crf.py` and the 3M V4 wrapper:
 
 - Default / paper CRF recipe: **seed 42**, 6 epochs, patience 2, batch size 16, max length 256, learning rate `2e-5`.
 - Three-seed encoder appendix runs use **42, 123, 2026**.
-- Five-seed 1M notes mention additional seeds **7** and **13**. `[TODO: confirm 5-seed list if those rows are published]`.
+- Five-seed 1M notes mention additional seeds **7** and **13**. Those rows are not paper-main results.
 
 `set_seed` sets `random`, `numpy`, `torch`, and `torch.cuda.manual_seed_all`. Full bitwise GPU determinism is **not** claimed.
 

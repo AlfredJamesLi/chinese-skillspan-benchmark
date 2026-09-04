@@ -15,15 +15,13 @@ tags:
   - span-extraction
   - lskt
 license: other
-# [TODO: dataset licence after redistribution rights for advertisement text are confirmed]
-# [TODO: Hugging Face dataset repo id]
 ---
 
 # Dataset card: Chinese-SkillSpan
 
-**Chinese-SkillSpan** is a Chinese job-advertisement corpus for **competency span extraction**. Models such as **Chinese JobBERT** are evaluated on this resource.
+**Chinese-SkillSpan** is a Chinese job-advertisement corpus for **competency span extraction**. Models such as **JobBERT-zh** are evaluated on this resource.
 
-`[TODO: Hugging Face dataset URL]` · `[TODO: Zenodo DOI]` · Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
+This file is a **template**. There is no public Hugging Face dataset repository. Use GitHub Release `v0.1.1` or https://doi.org/10.5281/zenodo.22288338. Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
 
 ---
 
@@ -120,8 +118,8 @@ Records are JSON Lines (gold / hybrid / silver) or a JSON array (corpus splits).
 ```python
 from datasets import load_dataset
 
-# After the public repository exists:
-# ds = load_dataset("[TODO: Hugging Face dataset id]")
+# No Hub dataset repo. Load local files from GitHub / Zenodo:
+# ds = load_dataset("json", data_files="data/test_lskt_v4_cws_simhuman980_hybrid.jsonl")
 
 # Local files from this paper repository:
 gold = load_dataset(
@@ -196,7 +194,7 @@ There is **no** `esco_id` field.
 - Human page-1 200: first 200 of a 980-sentence queue; annotator display names appear in internal packs; **not** dual-blind IAA.
 - Official annotator SOP: Handbook B only. Handbook A is provenance.
 
-`[TODO: publish the exact IAA design for any future full-human V4 gold.]`
+A full-human V4 gold IAA design has not been published.
 
 ---
 
@@ -218,7 +216,7 @@ Verified paper-main cells: Chinese JobBERT 3M typed exact **0.4331**; ChatGPT du
 - Cloud and public-institution sentences occur in test only.
 - Gold v2 notes record much lower encoder F1 on 事业单位招聘 than on 人工智能招聘. Treat source as a shift variable, not as a balanced stratum.
 
-Length statistics for publication: `[TODO: add a verified token-length table from corpus_splits if required by PeerJ]`.
+Token-length statistics for publication should be computed from `data/corpus_splits/` if PeerJ requests them.
 
 ---
 
@@ -234,8 +232,8 @@ Length statistics for publication: `[TODO: add a verified token-length table fro
 
 ## Personal-data and copyright assessment
 
-- **Copyright / platform terms:** **unverified**. Original advertisements come from four recruitment sources. This card does **not** claim that the full raw text is openly licensed. `[TODO: author confirmation of redistribution rights]`.
-- **Personal data:** not a dedicated PII corpus; workplace and organisation names appear. `[TODO: formal personal-data review]`.
+- **Copyright / platform terms:** **unverified**. Original advertisements come from four recruitment sources. This card does **not** claim that the full raw text is openly licensed.
+- **Personal data:** not a dedicated PII corpus; workplace and organisation names appear.
 - Raw CSV / XLSX source dumps that exist in the laboratory tree are **out of scope** for the public Hugging Face dataset until cleared.
 
 ---
@@ -250,7 +248,7 @@ Length statistics for publication: `[TODO: add a verified token-length table fro
 
 ## Citation
 
-Guojing Li, Zichuan Fu, Junyi Li, Wenlin Zhang, Kaifeng Guo, Jinning Yang, Jingtong Gao, Xiangyu Zhao. *Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements*. `[TODO: year, PeerJ / arXiv]`.
+Guojing Li, Zichuan Fu, Junyi Li, Wenlin Zhang, Kaifeng Guo, Jinning Yang, Jingtong Gao, Xiangyu Zhao. *Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements*. 2026. https://doi.org/10.5281/zenodo.22288338.
 
 Funding: National Social Science Fund of China, Grant No. **21BGL142**.
 
@@ -264,7 +262,7 @@ See [`CITATION.cff`](../../CITATION.cff).
 license: other
 ```
 
-`[TODO: assign a data licence (or a dual licence for annotations vs. text) only after Section 7 of DATA_AVAILABILITY.md is resolved.]`
+No data licence has been assigned. See Section 7 of `DATA_AVAILABILITY.md`.
 
 ---
 
@@ -275,4 +273,4 @@ license: other
 | GitHub | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
 | Zenodo (`v0.1.1`) | https://doi.org/10.5281/zenodo.22288338 |
 | JobBERT-zh | https://huggingface.co/AlfredJames/jobbert-zh |
-| Paper | `[TODO: this paper's arXiv / PeerJ URL]` |
+| Zenodo concept DOI | https://doi.org/10.5281/zenodo.22288337 |
