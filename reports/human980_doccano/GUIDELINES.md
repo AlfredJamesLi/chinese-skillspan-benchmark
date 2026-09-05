@@ -77,16 +77,24 @@ L 既是知识也是能力，故单独列支（对齐 ESCO *Language skills and 
 | 分析推广效果，保证流量/用户增长 | `分析推广效果` S | `保证流量/用户增长` 标 S | [本协议] |
 | 计算机专业课程包括 Python、数据结构 | `计算机专业` K；`Python` K；`数据结构` K | Python 标 S | [本协议] |
 
-## 文献条目（与 `handbook_B_citations.md` 一致）
+## 参考文献（与手册 B 文末一致）
 
-1. **[ESCO14]** le Vrang, M., et al. 2014. ESCO: Boosting job matching in Europe with semantic interoperability. *Computer* 47(10):57–64.  
-2. **[ESCO-L]** ESCO *Language skills and knowledge*：[skill_main](https://esco.ec.europa.eu/en/classification/skill_main)；[Skills pillar](https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/skills-pillar)。  
-3. **[Z22]** Zhang, M., Jensen, K. N., Sonniks, S., and Plank, B. 2022. SkillSpan. *NAACL-HLT*, 4962–4984. https://aclanthology.org/2022.naacl-main.366/  
-4. **[AP08]** Artstein, R., and Poesio, M. 2008. Inter-Coder Agreement for Computational Linguistics. *CL* 34(4):555–596. https://aclanthology.org/J08-4004/  
-5. **[TKS02]** Tjong Kim Sang, E. F. 2002. Introduction to the CoNLL-2002 Shared Task. https://aclanthology.org/W02-2024/  
-6. **[FM09]** Finkel, J. R., and Manning, C. D. 2009. Nested Named Entity Recognition. *EMNLP*, 141–150. https://aclanthology.org/D09-1015/  
-7. **[Yu20]** Yu, J., Bohnet, B., and Poesio, M. 2020. Named Entity Recognition as Dependency Parsing. *ACL*, 6470–6476. https://aclanthology.org/2020.acl-main.577/  
-8. **[UD20]** Nivre, J., et al. 2020. Universal Dependencies v2. *LREC*, 4034–4043. 中文省略：https://universaldependencies.org/zh/dep/orphan.html  
-9. **[D18]** Nakayama, H., et al. 2018. doccano. https://github.com/doccano/doccano  
+1. **[ESCO14]** le Vrang, M., Papantoniou, A., Pauwels, E., Fannes, P., Vandensteen, D., and De Smedt, J. 2014. ESCO: Boosting job matching in Europe with semantic interoperability. *Computer* 47(10):57–64. DOI: 10.1109/MC.2014.283.
+2. **[EQF]** European Union. 2017. Council Recommendation of 22 May 2017 on the European Qualifications Framework for lifelong learning (2017/C 189/03). *OJ C* 189:15–28.
+3. **[ESCO-L]** European Commission. ESCO *Language skills and knowledge*. https://esco.ec.europa.eu/en/classification/skill_main
+4. **[ESCO-T]** European Commission / Cedefop. 2022. *Towards a structured and consistent terminology on transversal skills and competences.* https://esco.ec.europa.eu/en/about-esco/publications/publication/towards-structured-and-consistent-terminology-transversal
+5. **[ESCO-Q]** European Commission. ESCO *Qualifications* pillar. https://esco.ec.europa.eu/en/classification/qualifications
+6. **[Z22]** Zhang, M., Jensen, K. N., Sonniks, S., and Plank, B. 2022. SkillSpan: Hard and Soft Skill Extraction from English Job Postings. In *NAACL-HLT*, 4962–4984. https://aclanthology.org/2022.naacl-main.366/
+7. **[Say18]** Sayfullina, L., Malmi, E., and Kannala, J. 2018. Learning Representations for Soft Skill Matching. In *AIST 2018*, LNCS 11179, 141–152. https://doi.org/10.1007/978-3-030-11027-7_15
+8. **[AP08]** Artstein, R., and Poesio, M. 2008. Inter-Coder Agreement for Computational Linguistics. *Computational Linguistics* 34(4):555–596. https://aclanthology.org/J08-4004/
+9. **[Kr95]** Krippendorff, K. 1995. On the reliability of unitizing contiguous data. *Sociological Methodology* 25:47–76.
+10. **[TKS02]** Tjong Kim Sang, E. F. 2002. Introduction to the CoNLL-2002 Shared Task. In *CoNLL*. https://aclanthology.org/W02-2024/
+11. **[FM09]** Finkel, J. R., and Manning, C. D. 2009. Nested Named Entity Recognition. In *EMNLP*, 141–150. https://aclanthology.org/D09-1015/
+12. **[Yu20]** Yu, J., Bohnet, B., and Poesio, M. 2020. Named Entity Recognition as Dependency Parsing. In *ACL*, 6470–6476. https://aclanthology.org/2020.acl-main.577/
+13. **[UD20]** Nivre, J., et al. 2020. Universal Dependencies v2. In *LREC*, 4034–4043. https://aclanthology.org/2020.lrec-1.497/
+14. **[D18]** Nakayama, H., et al. 2018. doccano. https://github.com/doccano/doccano
+15. **[ONET]** Peterson, N. G., et al. 2001. Understanding Work Using the Occupational Information Network (O*NET). *Personnel Psychology* 54(2):451–477.
+16. **[Nav09]** Navigli, R. 2009. Word Sense Disambiguation: A Survey. *ACM Computing Surveys* 41(2):1–69.
+17. **[PB05]** Palmer, M., Gildea, D., and Kingsbury, P. 2005. The Proposition Bank: An Annotated Corpus of Semantic Roles. *Computational Linguistics* 31(1):71–106.
 
-不要把「标长技能后 exact F1 会更好」或 `L > S > K > T` 写成上述文献的规定。学历名 = K、沟通/汇报 = T 见 v4.2.4。
+不要把「标长技能后 exact F1 会更好」或 `L > S > K > T` 写成上述文献的规定。学历名 = K、沟通/汇报 = T 见手册 B。

@@ -1,7 +1,7 @@
 # 手册 B — LSKT v4 SOP（论文主协议）· 一页
 
 **手册版本：** `B.sop_v4.2.9`（2026-09-05）。四类定义以 ESCO 为权威。**唯一切段：语义不变则尽量短**。工具名按谓语分流。嵌套 Long_S 留给下一篇。经验默认剥：「大项目售前」是行内话，不留「经验」。重叠裁决与 Gold 准入见 `handbook_B_overlap_adjudication.md`；出处对照 `handbook_B_citations.md`；规则日志 `LSKT_V4_RULE_CHANGELOG.md`。  
-**文献键：** [ESCO14] [EQF] [ESCO-L] [ESCO-T] [ESCO-Q] [Z22] [Say18] [AP08] [Kr95] [TKS02] [FM09] [Yu20] [UD20] [D18]。`[本协议]` = 中文招聘句上的操作化，不是被某篇论文强制的金标准。
+**文献键：** [ESCO14] [EQF] [ESCO-L] [ESCO-T] [ESCO-Q] [Z22] [Say18] [AP08] [Kr95] [TKS02] [FM09] [Yu20] [UD20] [D18] [ONET] [Nav09] [PB05]。`[本协议]` = 中文招聘句上的操作化，不是被某篇论文强制的金标准。完整条目见文末。
 
 **用途：** 论文 **主评测** 的操作性定义（短跨度、禁半词、jieba 词边界）。绑定：训练银标 `train_lskt_v4_silver`；测试金标 `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl`（2601 = **980 SimHuman rule_v4** + **1621 SOP-CWS**，与 Gold v2 **同一批 ID**，预测与金标都 jieba snap）。  
 **不是** 人工 Doccano Gold，**不要覆盖** `gold_canonical_v2.jsonl`。980 句是规则叠加，不是按本手册做完的全量人标。
@@ -172,3 +172,43 @@ SkillSpan 没有 T，把 communication / customer service 标成 SKILL（态度�
 | 拿不准且成对检验仍分不开 | 标 **S**，写裁决日志 | 套用 `L＞S＞K＞T` | [Z22] [AP08] |
 
 **主结果（仅 P2）：** JobBERT 3M v4+jieba typed exact **0.4331**；冻结 ChatGPT dump+jieba exact **0.2854** / relaxed **0.6249**。禁止写成「超过 Gold v2 上的 ChatGPT 0.6365」。
+
+## 参考文献
+
+正文方括号键与下列条目一一对应。`[本协议]` 不是文献，是中文招聘句上的操作化。更细的「文献覆盖到哪」见 `handbook_B_citations.md`。
+
+1. **[ESCO14]** le Vrang, M., Papantoniou, A., Pauwels, E., Fannes, P., Vandensteen, D., and De Smedt, J. 2014. ESCO: Boosting job matching in Europe with semantic interoperability. *Computer* 47(10):57–64. DOI: 10.1109/MC.2014.283. 门户：[skill_main](https://esco.ec.europa.eu/en/classification/skill_main)；[Skills pillar](https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/skills-pillar)；[Knowledge](https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/knowledge)；[Skill](https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/skill)。
+
+2. **[EQF]** European Union. 2017. Council Recommendation of 22 May 2017 on the European Qualifications Framework for lifelong learning (2017/C 189/03). *OJ C* 189:15–28. ESCO 采用同一套 knowledge / skill 定义。
+
+3. **[ESCO-L]** European Commission. ESCO skills pillar, class *Language skills and knowledge* (hierarchy letter L). https://esco.ec.europa.eu/en/classification/skill_main ；https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/skills-pillar
+
+4. **[ESCO-T]** European Commission / Cedefop. 2022. *Towards a structured and consistent terminology on transversal skills and competences.* ESCO/EQF expert group final report. https://esco.ec.europa.eu/en/about-esco/publications/publication/towards-structured-and-consistent-terminology-transversal ；概念 `report facts`：http://data.europa.eu/esco/skill/be6ab363-3de1-427f-a8ef-85d5b0250822
+
+5. **[ESCO-Q]** European Commission. ESCO *Qualifications* pillar. https://esco.ec.europa.eu/en/classification/qualifications （资格 = 评估后的正式结果；本协议无 Q 标签，资格名映射 K。）
+
+6. **[Z22]** Zhang, M., Jensen, K. N., Sonniks, S., and Plank, B. 2022. SkillSpan: Hard and Soft Skill Extraction from English Job Postings. In *NAACL-HLT*, 4962–4984. https://aclanthology.org/2022.naacl-main.366/ （操作细则见 Appendix B。）
+
+7. **[Say18]** Sayfullina, L., Malmi, E., and Kannala, J. 2018. Learning Representations for Soft Skill Matching. In *Analysis of Images, Social Networks and Texts* (AIST 2018), LNCS 11179, 141–152. https://doi.org/10.1007/978-3-030-11027-7_15 ；arXiv:1807.07741.
+
+8. **[AP08]** Artstein, R., and Poesio, M. 2008. Inter-Coder Agreement for Computational Linguistics. *Computational Linguistics* 34(4):555–596. https://aclanthology.org/J08-4004/
+
+9. **[Kr95]** Krippendorff, K. 1995. On the reliability of unitizing contiguous data. *Sociological Methodology* 25:47–76.
+
+10. **[TKS02]** Tjong Kim Sang, E. F. 2002. Introduction to the CoNLL-2002 Shared Task: Language-Independent Named Entity Recognition. In *CoNLL*. https://aclanthology.org/W02-2024/
+
+11. **[FM09]** Finkel, J. R., and Manning, C. D. 2009. Nested Named Entity Recognition. In *EMNLP*, 141–150. https://aclanthology.org/D09-1015/
+
+12. **[Yu20]** Yu, J., Bohnet, B., and Poesio, M. 2020. Named Entity Recognition as Dependency Parsing. In *ACL*, 6470–6476. https://aclanthology.org/2020.acl-main.577/
+
+13. **[UD20]** Nivre, J., de Marneffe, M.-C., Ginter, F., Hajič, J., Manning, C. D., Pyysalo, S., Schuster, S., Tyers, F., and Zeman, D. 2020. Universal Dependencies v2: An Evergrowing Multilingual Treebank Collection. In *LREC*, 4034–4043. https://aclanthology.org/2020.lrec-1.497/ ；中文省略：https://universaldependencies.org/zh/dep/orphan.html
+
+14. **[D18]** Nakayama, H., Kubo, T., Kamura, J., Taniguchi, Y., and Liang, X. 2018. doccano. https://github.com/doccano/doccano
+
+15. **[ONET]** Peterson, N. G., Mumford, M. D., Borman, W. C., Jeanneret, P. R., Fleishman, E. A., Levin, K. Y., Campion, M. A., Mayfield, M. S., Morgeson, F. P., Pearlman, K., Gowing, M. K., Lancaster, A. R., Silver, M. B., and Dye, D. M. 2001. Understanding Work Using the Occupational Information Network (O*NET). *Personnel Psychology* 54(2):451–477.
+
+16. **[Nav09]** Navigli, R. 2009. Word Sense Disambiguation: A Survey. *ACM Computing Surveys* 41(2):1–69.
+
+17. **[PB05]** Palmer, M., Gildea, D., and Kingsbury, P. 2005. The Proposition Bank: An Annotated Corpus of Semantic Roles. *Computational Linguistics* 31(1):71–106.
+
+Gold 准入里「一致 ≠ 正确」另见 **[LK77]** Landis, J. R., and Koch, G. G. 1977. The Measurement of Observer Agreement for Categorical Data. *Biometrics* 33(1):159–174（重叠附录使用，本页未再引用）。

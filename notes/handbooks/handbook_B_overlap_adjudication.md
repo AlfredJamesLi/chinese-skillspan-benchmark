@@ -52,3 +52,9 @@ Maple∩James exact match is a **candidate**, not automatic Gold. Agreement ≠ 
 5. Do **not** rewrite project 22 in bulk until a small batch (IAA-50 / p25) has been checked against these tests.
 
 Unadjudicated alternatives stay in the log. They must not enter the authoritative Gold span list.
+
+## References
+
+Full bibliographic entries: `handbook_B_sop_v4.md` §参考文献. Keys used here: [AP08] [Z22] [TKS02] [FM09] [Yu20] [UD20] [ESCO14] [ESCO-L] [ESCO-T] [ESCO-Q] [Say18] [LK77] [本协议].
+
+**[LK77]** Landis, J. R., and Koch, G. G. 1977. The Measurement of Observer Agreement for Categorical Data. *Biometrics* 33(1):159–174. (agreement ≠ correctness)
