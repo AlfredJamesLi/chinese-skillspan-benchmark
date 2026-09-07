@@ -1,12 +1,24 @@
 # LSKT v4 rule changelog
 
-**Handbook version:** `B.sop_v4.2.10` (2026-09-07; correction-round operational rules)  
+**Handbook version:** `B.sop_v4.2.11` (2026-09-07; Silver-plus prompt review)  
 Canonical one-pagers: `notes/handbooks/handbook_B_sop_v4.md` (+ `.en.md`).  
 Overlap/adjudication: `notes/handbooks/handbook_B_overlap_adjudication.md`.  
 Literature keys: `notes/handbooks/handbook_B_citations.md`.  
 LLM prompt: `prompts/LSKT_V4_ANNOTATION_PROMPT.txt`.
 
 This log records **rule text** changes. It does **not** freeze a new human Gold and does **not** authorize rewriting paper F1 tables.
+
+## 2026-09-07 — v4.2.11 (user-confirmed Silver-plus prompt review)
+
+Prior handbook commit: `8e5f120c13cb9ced745c560ce4bdc4040f093de3`. Chinese and English R08–R13 are aligned; matching prompt: `PROMPT_silver_plus_v4211.txt` in this directory.
+
+- Retain original 工艺经验 / 机器人竞赛经验 as S when removing 经验 changes an explicit practice-experience requirement; never invent suffixes. This is a project mapping, not an ESCO experience tag.
+- Generic 解决问题 / 分析问题 → T; explicitly occupational objects require contextual S testing. 熟练 is not an absolute use/type switch.
+- Record supplementary cases and their status. 能力提升 needs context and remains scope-pending when evidence is insufficient; not a fixed empty negative.
+- Restrict provisional S to type uncertainty after scope/boundary checks. Scope-pending empty lists are not confirmed negatives. Quarantine unresolved records before training import.
+- Separate model self-report from actual execution metadata; unknown stays unknown. Add Unicode code-point offsets, immutable input-field checks and prompt/input/output hashes.
+- Preserve v4.2.10 and earlier batch provenance. No Gold, IAA, training datasets, labels or manuscript results changed. Word mirrors remain at their prior version; full repository parity is not claimed.
+- The v4.2.11 prompt derives from the user-reviewed local `silver_plus_v4210_rev1`; version strings are updated without rewriting the v4.2.10 original or input batch protocol fields.
 
 ## 2026-09-07 — v4.2.10 (human correction-round synthesis)
 

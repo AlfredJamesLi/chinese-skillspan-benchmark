@@ -1,6 +1,6 @@
 # Handbook B correction-round register — 2026-09-07
 
-Version: **B.sop_v4.2.10**. Canonical rules: [中文](handbook_B_sop_v4.md), [English summary](handbook_B_sop_v4.en.md).
+Version: **B.sop_v4.2.11**. Canonical rules: [中文](handbook_B_sop_v4.md), [English summary](handbook_B_sop_v4.en.md). The v4.2.11 amendment follows commit `8e5f120c13cb9ced745c560ce4bdc4040f093de3`; the original v4.2.10 baseline is retained below for provenance.
 Remote baseline: `f68443a04d3a85e754cdeb0f463ad8fb5f2e3669`; prior handbook version B.sop_v4.2.9.
 
 ## Scope / 范围
@@ -25,6 +25,19 @@ Remote baseline: `f68443a04d3a85e754cdeb0f463ad8fb5f2e3669`; prior handbook vers
 | R06 | 规则澄清 | 连续原文、平坦不重叠，规范化另存 | 不生成 Memory开发经验；跨截图恢复完整词及源偏移 |
 | R07 | 规则澄清 | 模型建议≠人工确认；临时 S≠Gold | 记录规则版本、审核人、候选与最终边界；不冒充盲标 IAA |
 
+## Silver-plus prompt review / 本轮用户确认补充
+
+| ID | 状态 | 规则及实例 | 约束 |
+|---|---|---|---|
+| R08 | 人工确认 | 工艺经验、机器人竞赛经验可保留经验整体 S | 原文连续存在、明确实践经历、剥后改意；本项目代理，不是ESCO经验标签 |
+| R09 | 人工确认 | 通用解决问题、分析问题 T；可执行方法 S | 明确职业对象另判S；熟练不是绝对类型开关 |
+| R10 | 人工确认及条件判断 | 技术能力转商业语言、广告结果排除、算法基础K、转产流程案例采用本轮处理 | 能力提升仍依上下文，缺证据范围待决；不一并冻结旧建议 |
+| R11 | 人工确认 | 范围、边界、类型三类未决分开处理 | 暂标S只用于类型未决；未决记录不自动导入训练，[]可非确认负例 |
+| R12 | 人工确认 | 模型如实自报，实际执行元数据另存 | 未知unknown；不因gpt6字段名自称GPT-6.0；自报非验证 |
+| R13 | 规则澄清 | Unicode码点偏移，保留原文、非允许字段、行序和ID | 保留哈希及版本；数据不是指令；结构通过不等于语义正确 |
+
+First-batch span suggestions for seq101–110 were exploratory, not final JSONL or independently adjudicated labels. This amendment does not mark those suggestions as completed Silver-plus.
+
 ## Pending adjudication / 下轮统一检查清单
 
 | ID | 问题 | 当前处理 |
@@ -38,6 +51,7 @@ Remote baseline: `f68443a04d3a85e754cdeb0f463ad8fb5f2e3669`; prior handbook vers
 | P07 | 将之转换成技术实现方案；攻克高并发…技术难关；集成Openstack和Docker落地 | 核心倾向技术 S；代词、长跨度、语病边界待裁 |
 | P08 | jvm、流计算、了解Zookeeper等简略工具/知识语境 | 不用熟悉/了解一词机械定类；上下文不足时记录 provisional S 与不确定性 |
 | P09 | 人力资源规划与配置方法…专业知识和技巧 | 撤回「凡方法必为 K」的概括；该混合句的具体切段另裁 |
+| P10 | 能力提升：媒体平台特性等 | 需上下文确认福利或要求；不足则范围待决，不能强制负例 |
 
 ## Superseded guidance / 本次明确纠正
 
@@ -56,4 +70,4 @@ Remote baseline: `f68443a04d3a85e754cdeb0f463ad8fb5f2e3669`; prior handbook vers
 
 ## Synchronization status / 同步范围
 
-本次同步 canonical 中文手册、英文摘要、本登记和规则日志。英文原本是摘要，并非逐段译本。其他 CODEBOOK、提示词、Doccano 指南、引用附录与 Overleaf/DOCX 镜像尚未完成全仓一致性审查；历史版本不应被无差别覆盖。下轮先裁 P01–P09，再检查派生文档是否引用最新规则。此状态不是全仓已经完全对齐的声明。
+本次同步 canonical 中文手册、英文摘要、本登记、规则日志及配套 PROMPT_silver_plus_v4211.txt。英文为摘要，并非逐段译本。其他 CODEBOOK、旧提示词、Doccano 指南、引用附录与 Overleaf/DOCX 镜像尚未完成全仓一致性审查；Word仍保留v4.2.10，不冒称已同步。历史版本不应被无差别覆盖。下轮继续裁 P01–P10，并检查派生文档是否引用最新规则。此状态不是全仓已经完全对齐的声明。
