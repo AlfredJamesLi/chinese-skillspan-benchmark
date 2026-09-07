@@ -56,6 +56,8 @@ The V4 hybrid is **derived** (980 SimHuman rule_v4 spans + 1,621 SOP-CWS spans).
 
 A first-page human overlay of **200** sentences is at `data/human_gold_page1_200.jsonl`. It is not the abstract gold. Checksums live in [REPRODUCIBILITY.md](REPRODUCIBILITY.md), not in running prose.
 
+A later Handbook-B human diagnostic (project-26 first **85** official spans + frozen **IAA-50**, plus span-length bins) is in [`reports/human_gold85_iaa50/`](reports/human_gold85_iaa50/README.md). On that gold, typed exact scales with instruction-model size (JobBERT-zh CRF **0.13** / Qwen2.5-14B SOP+jieba **0.26** / Kimi on IAA-50 **0.62**). **Not** a replacement for V4 hybrid JobBERT 3M **0.4331**.
+
 ---
 
 ## Quick start

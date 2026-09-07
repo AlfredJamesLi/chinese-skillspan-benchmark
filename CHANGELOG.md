@@ -4,6 +4,12 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-07)
+
+- Appendix diagnostic only: `reports/human_gold85_iaa50/` (Gold85 + IAA-50 typed exact, Qwen2.5-14B SOP, span character-length bins). Does **not** change V4 hybrid JobBERT 3M **0.4331**.
+
+---
+
 ## 0.1.1 — 2026-09-04 (public snapshot)
 
 GitHub, JobBERT-zh, and Zenodo `v0.1.1` are **public**.
