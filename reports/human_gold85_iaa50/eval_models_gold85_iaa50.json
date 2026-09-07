@@ -1,0 +1,794 @@
+{
+  "note": "Gold85=项目26 seq1-85 当前官方四类。Gold50=iaa50_gold_locked.jsonl。GPT-6.0/建议层=Doccano对照层；Kimi/豆包/Codex=原文片段对齐。JobBERT-Zh=冻结 3M v4 CRF BIO，typed exact，未做 jieba snap。Qwen2.5-14B SOP=冻结 SOP extract 解析跨度；SOP+jieba=同一跑次 cws_snap。不是 V4 hybrid 主评测，不能和论文 0.4331 / Qwen SOP 0.1724 直接比。",
+  "gold85": {
+    "n_sentences": 85,
+    "n_sentences_with_annotator_official": 42,
+    "n_gold_spans": 376,
+    "n_jobbert_matched": 85,
+    "n_qwen_matched": 85,
+    "jobbert_pred_path": "C:\\Users\\sdsc\\tmp_jobbert\\jobbert_3m_v4.jsonl",
+    "qwen_parsed_path": "C:\\Users\\sdsc\\chinese-skillspan-benchmark\\predictions\\qwen25_14b_instruct_sopv4_p2_2601.parsed.jsonl",
+    "qwen_jieba_path": "C:\\Users\\sdsc\\chinese-skillspan-benchmark\\predictions\\qwen25_14b_instruct_sopv4_p2_2601.jieba.jsonl"
+  },
+  "page1_first85": [
+    {
+      "tp": 271,
+      "fp": 73,
+      "fn": 105,
+      "n_pred": 344,
+      "n_gold": 376,
+      "precision": 0.7878,
+      "recall": 0.7207,
+      "f1": 0.7528,
+      "n_sentences": 85,
+      "n_both_empty": 7,
+      "per_type": {
+        "S": {
+          "tp": 189,
+          "fp": 51,
+          "fn": 63,
+          "n_pred": 240,
+          "n_gold": 252,
+          "precision": 0.7875,
+          "recall": 0.75,
+          "f1": 0.7683
+        },
+        "K": {
+          "tp": 51,
+          "fp": 16,
+          "fn": 36,
+          "n_pred": 67,
+          "n_gold": 87,
+          "precision": 0.7612,
+          "recall": 0.5862,
+          "f1": 0.6623
+        },
+        "T": {
+          "tp": 30,
+          "fp": 6,
+          "fn": 6,
+          "n_pred": 36,
+          "n_gold": 36,
+          "precision": 0.8333,
+          "recall": 0.8333,
+          "f1": 0.8333
+        },
+        "L": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "n_pred": 1,
+          "n_gold": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "model": "GPT-6.0"
+    },
+    {
+      "tp": 223,
+      "fp": 240,
+      "fn": 153,
+      "n_pred": 463,
+      "n_gold": 376,
+      "precision": 0.4816,
+      "recall": 0.5931,
+      "f1": 0.5316,
+      "n_sentences": 85,
+      "n_both_empty": 0,
+      "per_type": {
+        "S": {
+          "tp": 152,
+          "fp": 144,
+          "fn": 100,
+          "n_pred": 296,
+          "n_gold": 252,
+          "precision": 0.5135,
+          "recall": 0.6032,
+          "f1": 0.5547
+        },
+        "K": {
+          "tp": 45,
+          "fp": 83,
+          "fn": 42,
+          "n_pred": 128,
+          "n_gold": 87,
+          "precision": 0.3516,
+          "recall": 0.5172,
+          "f1": 0.4186
+        },
+        "T": {
+          "tp": 25,
+          "fp": 12,
+          "fn": 11,
+          "n_pred": 37,
+          "n_gold": 36,
+          "precision": 0.6757,
+          "recall": 0.6944,
+          "f1": 0.6849
+        },
+        "L": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "n_pred": 2,
+          "n_gold": 1,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6667
+        }
+      },
+      "model": "建议层(三模型共识)"
+    },
+    {
+      "tp": 170,
+      "fp": 203,
+      "fn": 206,
+      "n_pred": 373,
+      "n_gold": 376,
+      "precision": 0.4558,
+      "recall": 0.4521,
+      "f1": 0.4539,
+      "n_sentences": 85,
+      "n_both_empty": 0,
+      "per_type": {
+        "S": {
+          "tp": 114,
+          "fp": 124,
+          "fn": 138,
+          "n_pred": 238,
+          "n_gold": 252,
+          "precision": 0.479,
+          "recall": 0.4524,
+          "f1": 0.4653
+        },
+        "K": {
+          "tp": 32,
+          "fp": 63,
+          "fn": 55,
+          "n_pred": 95,
+          "n_gold": 87,
+          "precision": 0.3368,
+          "recall": 0.3678,
+          "f1": 0.3516
+        },
+        "T": {
+          "tp": 23,
+          "fp": 16,
+          "fn": 13,
+          "n_pred": 39,
+          "n_gold": 36,
+          "precision": 0.5897,
+          "recall": 0.6389,
+          "f1": 0.6133
+        },
+        "L": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0,
+          "n_pred": 1,
+          "n_gold": 1,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "model": "Kimi"
+    },
+    {
+      "tp": 161,
+      "fp": 161,
+      "fn": 215,
+      "n_pred": 322,
+      "n_gold": 376,
+      "precision": 0.5,
+      "recall": 0.4282,
+      "f1": 0.4613,
+      "n_sentences": 85,
+      "n_both_empty": 5,
+      "per_type": {
+        "S": {
+          "tp": 102,
+          "fp": 86,
+          "fn": 150,
+          "n_pred": 188,
+          "n_gold": 252,
+          "precision": 0.5426,
+          "recall": 0.4048,
+          "f1": 0.4636
+        },
+        "K": {
+          "tp": 41,
+          "fp": 71,
+          "fn": 46,
+          "n_pred": 112,
+          "n_gold": 87,
+          "precision": 0.3661,
+          "recall": 0.4713,
+          "f1": 0.4121
+        },
+        "T": {
+          "tp": 18,
+          "fp": 2,
+          "fn": 18,
+          "n_pred": 20,
+          "n_gold": 36,
+          "precision": 0.9,
+          "recall": 0.5,
+          "f1": 0.6429
+        },
+        "L": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "n_pred": 2,
+          "n_gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "model": "豆包"
+    },
+    {
+      "tp": 147,
+      "fp": 208,
+      "fn": 229,
+      "n_pred": 355,
+      "n_gold": 376,
+      "precision": 0.4141,
+      "recall": 0.391,
+      "f1": 0.4022,
+      "n_sentences": 85,
+      "n_both_empty": 0,
+      "per_type": {
+        "S": {
+          "tp": 96,
+          "fp": 130,
+          "fn": 156,
+          "n_pred": 226,
+          "n_gold": 252,
+          "precision": 0.4248,
+          "recall": 0.381,
+          "f1": 0.4017
+        },
+        "K": {
+          "tp": 34,
+          "fp": 72,
+          "fn": 53,
+          "n_pred": 106,
+          "n_gold": 87,
+          "precision": 0.3208,
+          "recall": 0.3908,
+          "f1": 0.3523
+        },
+        "T": {
+          "tp": 16,
+          "fp": 5,
+          "fn": 20,
+          "n_pred": 21,
+          "n_gold": 36,
+          "precision": 0.7619,
+          "recall": 0.4444,
+          "f1": 0.5614
+        },
+        "L": {
+          "tp": 1,
+          "fp": 1,
+          "fn": 0,
+          "n_pred": 2,
+          "n_gold": 1,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6667
+        }
+      },
+      "model": "Codex"
+    },
+    {
+      "tp": 39,
+      "fp": 201,
+      "fn": 337,
+      "n_pred": 240,
+      "n_gold": 376,
+      "precision": 0.1625,
+      "recall": 0.1037,
+      "f1": 0.1266,
+      "n_sentences": 85,
+      "n_both_empty": 0,
+      "per_type": {
+        "S": {
+          "tp": 19,
+          "fp": 132,
+          "fn": 233,
+          "n_pred": 151,
+          "n_gold": 252,
+          "precision": 0.1258,
+          "recall": 0.0754,
+          "f1": 0.0943
+        },
+        "K": {
+          "tp": 15,
+          "fp": 48,
+          "fn": 72,
+          "n_pred": 63,
+          "n_gold": 87,
+          "precision": 0.2381,
+          "recall": 0.1724,
+          "f1": 0.2
+        },
+        "T": {
+          "tp": 5,
+          "fp": 19,
+          "fn": 31,
+          "n_pred": 24,
+          "n_gold": 36,
+          "precision": 0.2083,
+          "recall": 0.1389,
+          "f1": 0.1667
+        },
+        "L": {
+          "tp": 0,
+          "fp": 2,
+          "fn": 1,
+          "n_pred": 2,
+          "n_gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "model": "JobBERT-Zh"
+    },
+    {
+      "tp": 76,
+      "fp": 175,
+      "fn": 300,
+      "n_pred": 251,
+      "n_gold": 376,
+      "precision": 0.3028,
+      "recall": 0.2021,
+      "f1": 0.2424,
+      "n_sentences": 85,
+      "n_both_empty": 2,
+      "per_type": {
+        "S": {
+          "tp": 48,
+          "fp": 101,
+          "fn": 204,
+          "n_pred": 149,
+          "n_gold": 252,
+          "precision": 0.3221,
+          "recall": 0.1905,
+          "f1": 0.2394
+        },
+        "K": {
+          "tp": 18,
+          "fp": 53,
+          "fn": 69,
+          "n_pred": 71,
+          "n_gold": 87,
+          "precision": 0.2535,
+          "recall": 0.2069,
+          "f1": 0.2278
+        },
+        "T": {
+          "tp": 10,
+          "fp": 17,
+          "fn": 26,
+          "n_pred": 27,
+          "n_gold": 36,
+          "precision": 0.3704,
+          "recall": 0.2778,
+          "f1": 0.3175
+        },
+        "L": {
+          "tp": 0,
+          "fp": 4,
+          "fn": 1,
+          "n_pred": 4,
+          "n_gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "model": "Qwen2.5-14B SOP"
+    },
+    {
+      "tp": 75,
+      "fp": 137,
+      "fn": 301,
+      "n_pred": 212,
+      "n_gold": 376,
+      "precision": 0.3538,
+      "recall": 0.1995,
+      "f1": 0.2551,
+      "n_sentences": 85,
+      "n_both_empty": 2,
+      "per_type": {
+        "S": {
+          "tp": 47,
+          "fp": 67,
+          "fn": 205,
+          "n_pred": 114,
+          "n_gold": 252,
+          "precision": 0.4123,
+          "recall": 0.1865,
+          "f1": 0.2568
+        },
+        "K": {
+          "tp": 18,
+          "fp": 52,
+          "fn": 69,
+          "n_pred": 70,
+          "n_gold": 87,
+          "precision": 0.2571,
+          "recall": 0.2069,
+          "f1": 0.2293
+        },
+        "T": {
+          "tp": 10,
+          "fp": 17,
+          "fn": 26,
+          "n_pred": 27,
+          "n_gold": 36,
+          "precision": 0.3704,
+          "recall": 0.2778,
+          "f1": 0.3175
+        },
+        "L": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 1,
+          "n_pred": 1,
+          "n_gold": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "model": "Qwen2.5-14B SOP+jieba"
+    }
+  ],
+  "iaa50": {
+    "n_sentences": 50,
+    "n_matched_980_suggestions": 50,
+    "n_jobbert_matched": 50,
+    "n_qwen_matched": 49,
+    "n_gold_spans": 248,
+    "models": [
+      {
+        "tp": 139,
+        "fp": 59,
+        "fn": 109,
+        "n_pred": 198,
+        "n_gold": 248,
+        "precision": 0.702,
+        "recall": 0.5605,
+        "f1": 0.6233,
+        "n_sentences": 50,
+        "n_both_empty": 1,
+        "per_type": {
+          "S": {
+            "tp": 88,
+            "fp": 30,
+            "fn": 70,
+            "n_pred": 118,
+            "n_gold": 158,
+            "precision": 0.7458,
+            "recall": 0.557,
+            "f1": 0.6377
+          },
+          "K": {
+            "tp": 26,
+            "fp": 21,
+            "fn": 16,
+            "n_pred": 47,
+            "n_gold": 42,
+            "precision": 0.5532,
+            "recall": 0.619,
+            "f1": 0.5843
+          },
+          "T": {
+            "tp": 24,
+            "fp": 7,
+            "fn": 23,
+            "n_pred": 31,
+            "n_gold": 47,
+            "precision": 0.7742,
+            "recall": 0.5106,
+            "f1": 0.6154
+          },
+          "L": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0,
+            "n_pred": 2,
+            "n_gold": 1,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6667
+          }
+        },
+        "model": "Kimi"
+      },
+      {
+        "tp": 105,
+        "fp": 55,
+        "fn": 143,
+        "n_pred": 160,
+        "n_gold": 248,
+        "precision": 0.6562,
+        "recall": 0.4234,
+        "f1": 0.5147,
+        "n_sentences": 50,
+        "n_both_empty": 1,
+        "per_type": {
+          "S": {
+            "tp": 57,
+            "fp": 22,
+            "fn": 101,
+            "n_pred": 79,
+            "n_gold": 158,
+            "precision": 0.7215,
+            "recall": 0.3608,
+            "f1": 0.481
+          },
+          "K": {
+            "tp": 24,
+            "fp": 24,
+            "fn": 18,
+            "n_pred": 48,
+            "n_gold": 42,
+            "precision": 0.5,
+            "recall": 0.5714,
+            "f1": 0.5333
+          },
+          "T": {
+            "tp": 24,
+            "fp": 7,
+            "fn": 23,
+            "n_pred": 31,
+            "n_gold": 47,
+            "precision": 0.7742,
+            "recall": 0.5106,
+            "f1": 0.6154
+          },
+          "L": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 1,
+            "n_pred": 2,
+            "n_gold": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "model": "豆包"
+      },
+      {
+        "tp": 54,
+        "fp": 71,
+        "fn": 194,
+        "n_pred": 125,
+        "n_gold": 248,
+        "precision": 0.432,
+        "recall": 0.2177,
+        "f1": 0.2895,
+        "n_sentences": 50,
+        "n_both_empty": 1,
+        "per_type": {
+          "S": {
+            "tp": 32,
+            "fp": 25,
+            "fn": 126,
+            "n_pred": 57,
+            "n_gold": 158,
+            "precision": 0.5614,
+            "recall": 0.2025,
+            "f1": 0.2977
+          },
+          "K": {
+            "tp": 12,
+            "fp": 34,
+            "fn": 30,
+            "n_pred": 46,
+            "n_gold": 42,
+            "precision": 0.2609,
+            "recall": 0.2857,
+            "f1": 0.2727
+          },
+          "T": {
+            "tp": 10,
+            "fp": 10,
+            "fn": 37,
+            "n_pred": 20,
+            "n_gold": 47,
+            "precision": 0.5,
+            "recall": 0.2128,
+            "f1": 0.2985
+          },
+          "L": {
+            "tp": 0,
+            "fp": 2,
+            "fn": 1,
+            "n_pred": 2,
+            "n_gold": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "model": "Codex"
+      },
+      {
+        "tp": 29,
+        "fp": 104,
+        "fn": 219,
+        "n_pred": 133,
+        "n_gold": 248,
+        "precision": 0.218,
+        "recall": 0.1169,
+        "f1": 0.1522,
+        "n_sentences": 50,
+        "n_both_empty": 1,
+        "per_type": {
+          "S": {
+            "tp": 16,
+            "fp": 63,
+            "fn": 142,
+            "n_pred": 79,
+            "n_gold": 158,
+            "precision": 0.2025,
+            "recall": 0.1013,
+            "f1": 0.135
+          },
+          "K": {
+            "tp": 2,
+            "fp": 25,
+            "fn": 40,
+            "n_pred": 27,
+            "n_gold": 42,
+            "precision": 0.0741,
+            "recall": 0.0476,
+            "f1": 0.058
+          },
+          "T": {
+            "tp": 10,
+            "fp": 15,
+            "fn": 37,
+            "n_pred": 25,
+            "n_gold": 47,
+            "precision": 0.4,
+            "recall": 0.2128,
+            "f1": 0.2778
+          },
+          "L": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0,
+            "n_pred": 2,
+            "n_gold": 1,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6667
+          }
+        },
+        "model": "JobBERT-Zh"
+      },
+      {
+        "tp": 49,
+        "fp": 94,
+        "fn": 199,
+        "n_pred": 143,
+        "n_gold": 248,
+        "precision": 0.3427,
+        "recall": 0.1976,
+        "f1": 0.2506,
+        "n_sentences": 50,
+        "n_both_empty": 1,
+        "per_type": {
+          "S": {
+            "tp": 17,
+            "fp": 58,
+            "fn": 141,
+            "n_pred": 75,
+            "n_gold": 158,
+            "precision": 0.2267,
+            "recall": 0.1076,
+            "f1": 0.1459
+          },
+          "K": {
+            "tp": 6,
+            "fp": 23,
+            "fn": 36,
+            "n_pred": 29,
+            "n_gold": 42,
+            "precision": 0.2069,
+            "recall": 0.1429,
+            "f1": 0.169
+          },
+          "T": {
+            "tp": 25,
+            "fp": 12,
+            "fn": 22,
+            "n_pred": 37,
+            "n_gold": 47,
+            "precision": 0.6757,
+            "recall": 0.5319,
+            "f1": 0.5952
+          },
+          "L": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0,
+            "n_pred": 2,
+            "n_gold": 1,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6667
+          }
+        },
+        "model": "Qwen2.5-14B SOP"
+      },
+      {
+        "tp": 49,
+        "fp": 69,
+        "fn": 199,
+        "n_pred": 118,
+        "n_gold": 248,
+        "precision": 0.4153,
+        "recall": 0.1976,
+        "f1": 0.2678,
+        "n_sentences": 50,
+        "n_both_empty": 1,
+        "per_type": {
+          "S": {
+            "tp": 17,
+            "fp": 39,
+            "fn": 141,
+            "n_pred": 56,
+            "n_gold": 158,
+            "precision": 0.3036,
+            "recall": 0.1076,
+            "f1": 0.1589
+          },
+          "K": {
+            "tp": 6,
+            "fp": 17,
+            "fn": 36,
+            "n_pred": 23,
+            "n_gold": 42,
+            "precision": 0.2609,
+            "recall": 0.1429,
+            "f1": 0.1846
+          },
+          "T": {
+            "tp": 25,
+            "fp": 12,
+            "fn": 22,
+            "n_pred": 37,
+            "n_gold": 47,
+            "precision": 0.6757,
+            "recall": 0.5319,
+            "f1": 0.5952
+          },
+          "L": {
+            "tp": 1,
+            "fp": 1,
+            "fn": 0,
+            "n_pred": 2,
+            "n_gold": 1,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6667
+          }
+        },
+        "model": "Qwen2.5-14B SOP+jieba"
+      }
+    ]
+  }
+}
