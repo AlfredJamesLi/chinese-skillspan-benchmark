@@ -487,3 +487,33 @@ Overlay-cws 2601 P/R: JobBERT 3M **0.4326 / 0.3524 / 0.3884**; ChatGPT **0.2468 
 Allowed claim: swapping 200/2601 IDs to this human tranche **lowers** JobBERT v4 exact (~−0.045) and **slightly raises** frozen ChatGPT exact (~+0.008). Ranking on this mixed gold is still JobBERT-led exact, ChatGPT-led relaxed. Do not treat 0.3884 as the new abstract number.
 
 Retrain: **not now**. The 980 queue is test-only (`do_not_train`). Overlay changes the **test gold**, so rescoring is enough. After all 980 are human-labeled, **must rescore** 2601; **re-finetune only if** train silver is also switched to the same span convention. CRF trained on v4 short silver will keep looking worse against Gold-length human test labels. Do not mix the 980 test labels into train.
+
+## Handbook-B human gold85 + IAA-50 (diagnostic; 2026-09-07)
+
+Live official LSKT on project-26 seq 1–85 (376 spans) and frozen `iaa50_gold_locked.jsonl` (248). Typed exact, no gold jieba. Write-up: `reports/human_gold85_iaa50/README.md`.
+
+**Stay in appendix / supplement.** Do **not** replace V4 hybrid JobBERT 3M **0.4331**. GPT-6.0 Gold85 **0.7528** is overlay-visible (not a blind test).
+
+| System | protocol | Gold85 P / R / F1 | IAA-50 P / R / F1 |
+|---|---|---:|---:|
+| GPT-6.0 | Doccano overlay | 0.7878 / 0.7207 / **0.7528** | — |
+| 建议层 | 3-model consensus overlay | 0.4816 / 0.5931 / 0.5316 | — |
+| Kimi | fragment align | 0.4558 / 0.4521 / 0.4539 | 0.7020 / 0.5605 / **0.6233** |
+| 豆包 | fragment align | 0.5000 / 0.4282 / 0.4613 | 0.6562 / 0.4234 / 0.5147 |
+| Codex | fragment align | 0.4141 / 0.3910 / 0.4022 | 0.4320 / 0.2177 / 0.2895 |
+| Qwen2.5-14B SOP+jieba | frozen SOP extract | 0.3538 / 0.1995 / 0.2551 | 0.4153 / 0.1976 / 0.2678 |
+| Qwen2.5-14B SOP | parsed, no snap | 0.3028 / 0.2021 / 0.2424 | 0.3427 / 0.1976 / 0.2506 |
+| JobBERT-zh 3M v4 | frozen CRF BIO, no jieba | 0.1625 / 0.1037 / 0.1266 | 0.2180 / 0.1169 / 0.1522 |
+
+Allowed claim: on Handbook B **human** gold, exact F1 scales with instruction size — CRF ~0.13 / 14B SOP ~0.26 / frontier LLM 0.45–0.62 (IAA-50). Chinese SkillSpan human spans need more than a 100M encoder. Do not write this as beating or replacing 0.4331.
+
+Gold85 span-length typed exact F1 (gold n: 51 / 127 / 140 / 48 / 10):
+
+| System | 1–2 | 3–4 | 5–8 | 9–14 | 15+ |
+|---|---:|---:|---:|---:|---:|
+| GPT-6.0 | 0.7021 | 0.7787 | 0.7663 | 0.7500 | 0.4706 |
+| Kimi | 0.4228 | 0.5374 | 0.4274 | 0.2899 | 0.2667 |
+| Qwen2.5-14B SOP+jieba | 0.3488 | 0.3267 | 0.2000 | 0.1429 | 0.0000 |
+| JobBERT-zh | 0.1348 | 0.1194 | 0.1609 | 0.0000 | 0.0000 |
+
+IAA-50 (gold n: 54 / 109 / 78 / 7 / 0): Kimi 0.6593 / 0.6387 / 0.5960 / 0.4615; Qwen SOP+jieba 0.2667 / 0.3506 / 0.1667 / 0.2353; JobBERT 0.1818 / 0.1611 / 0.1408 / 0.0000. Encoder and 14B miss almost all 9+ character gold spans.
