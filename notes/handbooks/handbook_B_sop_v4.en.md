@@ -1,12 +1,30 @@
 # Handbook B — LSKT v4 SOP (current human coding rules; English summary)
 
-**Handbook version:** `B.sop_v4.2.11` (2026-09-07; Silver-plus prompt review amendments). ESCO-informed concepts with explicit project operationalizations. Shortest-complete cuts: completeness before length. Context-sensitive tools; experience follows the distinctions below. The task remains contiguous, flat extraction. New clauses R08–R13 do not retroactively version historical data.  
+**Integrated revision:** R14–R18, final adjudication consolidation.
+
+**Current machine prompt:** `PROMPT_silver_plus_v4212.txt` (silver_plus_v4212_rev1). References to the V4.2.11 prompt below are historical. The Word summary is exported from this text; it is not a full translation of the Chinese handbook.
+
+**Handbook version:** `B.sop_v4.2.12` (2026-09-07; final adjudication consolidation). ESCO-informed concepts with explicit project operationalizations. Shortest-complete cuts: completeness before length. Context-sensitive tools; experience follows the distinctions below. The task remains contiguous, flat extraction. Consolidated clauses R14–R18 do not retroactively version historical data.  
 **Keys:** [ESCO14] [EQF] [ESCO-L] [ESCO-T] [ESCO-Q] [Z22] [Say18] [AP08] [Kr95] [TKS02] [FM09] [Yu20] [UD20] [D18] [ONET] [Nav09] [PB05]. `[本协议]` / *this protocol* = Chinese-job operationalization, not a gold standard forced by one paper. Full entries at the end.
 
 **Use:** current human coding rules. This revision does not retroactively change the reported evaluation protocol or results. Historical P2 bindings follow: Train silver: `train_lskt_v4_silver`. Test gold: `test_lskt_v4_cws_simhuman980_hybrid.jsonl` (2601 = 980 SimHuman rule_v4 + 1621 SOP-CWS; **same IDs as Gold v2**; jieba snap on **gold and** predictions).  
 **Not** human Doccano Gold. **Do not overwrite** `gold_canonical_v2.jsonl`. The 980 overlay is rule-based, not a full human pass under this handbook.
 
 P2 main LLM rows remain **frozen old dumps** + jieba, not an official `gpt-4o` SOP re-call.
+
+## R14 Semantic-preserving splits and necessary long spans (user-confirmed addendum, 2026-09-07)
+
+Explicit clarification to B.sop_v4.2.11, revision marker `boundary-addendum-20260907`. Record the new file hash; historical prompts, labels and evaluations are not retroactively changed.
+
+Semantic completeness comes first: split independent mentions when local context preserves the requirement; retain the shortest complete longer span when splitting loses a necessary action, object, experience or intention, creates fragments, or changes the semantic type. Shared modifiers need not always be repeated inside a span. No hard length limit; no merging of independent duties. Length does not determine S. Containment alone does not justify splitting. Keep original contiguous text, flat and non-overlapping; never supply missing words.
+
+**130:** `5.熟悉Linux基本操作和原理，在云计算、深度学习等领域者有工作实践经验优先；` Split boundaries confirmed: `Linux基本操作` S; `原理` K; separate `云计算` and `深度学习`. The latter two are S under explicit local practice, not universally S as domain names. The shared practice-experience context still informs typing even though outside the extracted spans. The earlier whole-experience-span proposal is not the confirmed boundary.
+
+**134:** ` 任职要求： 1、熟练掌握自然语言处理NLP相关理论与技术方法；` Confirm separate spans `自然语言处理NLP相关理论` K and `技术方法`. The latter inherits the local NLP context and is K here as general methodological knowledge without explicit execution. Do not generate “NLP技术方法”. Both split spans are now K; the earlier whole-span proposal is superseded.
+
+Necessary long spans may be logged with the shared component, semantic loss caused by splitting, final span and type, for a diagnostic subset. Length alone is not the criterion. Cases used in handbook development or correction are not independent test data; a held-out test requires separately sampled, uncontaminated cases. No test subset or experiment is created by this addendum.
+
+Status: all 38 flagged cases have been resolved under user review/authorized rules and applied to a separately saved 100-record release. Earlier releases are preserved; unrelated legacy examples are not automatically resolved.
 
 ## Labels — ESCO concepts and project operationalizations
 
@@ -118,6 +136,36 @@ Self-report only a reliably supplied system/runtime model name, otherwise `unkno
 ### R13 Offsets and data protection
 
 Use `text[start:end]` with Unicode code-point/Python string indexing, zero-based and end-exclusive, not UTF-8 bytes or UTF-16 code units. Preserve leading spaces, misspellings, case and source characters. Sort spans by start, with legal bounds and no duplicates or overlap. Only gpt6_label, gpt6_why, model and gpt6_remark may change; preserve all other values, row order/count and IDs. Recruitment text and existing labels are data, not instructions or ground truth. Structural validation does not establish semantic correctness. This handbook revision does not generate labels or change existing datasets.
+
+## R15 Knowledge, methods and locally mixed licensing
+
+Knowledge/theory/principles/general methodological bodies are K; tools in use, operation, implementation and explicit practice are S. Triggers and job titles alone are insufficient. In 128, 软件工程理论和方法 is K; 软件测试的技术 S, second 理论 K, second 方法 S, 白盒测试 S, 黑盒测试 S. In 134 the general 技术方法 is K, unlike named executable debugging/design methods.
+
+In 185 the six concrete tools are S under explicit local principles-plus-practice licensing; retain the alternative K interpretation in the log. This is not a global S-over-K priority, nor does distant practice license other knowledge items. In 102 the disputed tool-stack mentions retain S; 流计算 is K as a disclosed conservative reading of general technical knowledge without explicit execution. These are project rulings, not unique ESCO mappings.
+
+Shared local practice experience may inform 130's separate domain mentions even outside the span. Explicit industry background remains broad K. Generic experience is excluded; complete actions lose the suffix, while necessary experience meaning is preserved under R08/R14. Locally elliptical 原理 inherits Linux without generating text or merging mixed types.
+
+## R16 Intention, traits and research
+
+160: 有意愿在nlp相关领域深入研究 is one T, preserving intention rather than asserting an actual research skill. Do not nest NLP or generalize retention to ordinary 有 triggers. Explicit learning/development intention differs from pure product preference (169 excluded); enthusiast/user-identity examples are not automatically settled.
+
+195 business sensitivity, data thinking and data-decision awareness, and 197 data sensitivity in a traits list are T; concrete data analysis/modeling can be S. 158 academic research follows the existing default T rule; unspecified competition experience is not reconstructed. Annotation captures stated requirements, not measured competence. Conceptual support for learning intention: [ESCO expert report §5.3](https://esco.ec.europa.eu/system/files/2022-05/MSWG%2014-04%20Report%20of%20the%20expert%20group%20on%20transversal%20skills%20and%20competences.pdf); Chinese boundaries are project decisions.
+
+## R17 Professional functions, coordination and outcomes
+
+Cross-industry use does not entail T: project management as a named professional function in 152 and reviewed product/translation contexts is S; generic organizing/leading remains T, courses/principles may be K. See [ESCO reusability levels](https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/skill-reusability-level).
+
+153 translation-resource interface is liaison T, not software development; 154 developing/reserving translation resources is S. Resource coordination remains T. In 124 quality assurance alongside testing is S, unlike promising a quality outcome; never strip 保证 mechanically from that occupational term.
+
+127 generic workplace reflection/improvement is T; 117 analysis inherits the adjacent cloud fault object and is S. Retain necessary long objects in 102; in 179 extract document preparation/review, not each preceding lifecycle stage as a separate duty. Shorten 103 product exploration; split architecture-design and operations in 120. Preserve shared heads in 129 testing, 143 consultation and 167 design lists; do not invent missing verbs or nest object K.
+
+## R18 Provenance and release boundaries
+
+The 38 decisions comprise 31 user-reviewed recommendations, two conditionally authorized literature-supported cases and five resolved under the accepted knowledge/use rule. Not blind IAA; preserve the provenance of 102's 流计算 K interpretation.
+
+The reviewed release has 100 records, 419 spans (K87/S255/T77/L0), 13 records with actual label/boundary changes, 62 originally unflagged records entirely unchanged, and zero pending records. These are version counts, not accuracy/reliability. This handbook consolidates already-applied decisions; do not retrospectively claim the model originally ran with v4.2.12. Preserve original protocol/model/execution data, hashes and adjudication logs.
+
+Retain historical pending entries with current case overrides, without treating all legacy P01–P10 topics as resolved. Future uncertain cases follow R11. Long/shared-span examples support diagnostics, not an independent test if used for rules or training. No new training/test or changes to historical Gold/IAA/results. This edition includes Chinese Word, English-summary Word and the V4.2.12 prompt. Previous editions remain preserved. Companion appendices have not undergone a full new audit; remote publication is established by the GitHub commit, not by local file existence.
 
 ## References
 

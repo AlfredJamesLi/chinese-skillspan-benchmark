@@ -1,5 +1,21 @@
 # Handbook B correction-round register — 2026-09-07
 
+## Current status: B.sop_v4.2.12
+
+本版先读此状态覆盖说明：本轮Silver-plus的38条待决样本均已按用户审核/授权规则完成处理并回写到另存100条版本；旧版记录保留作审计，不应将下文历史待决状态当作当前38条状态。并非所有旧截图或P01–P10主题均已解决。下文Version v4.2.11与同步说明均为历史记录。
+
+| 当前规则 | 确认内容 |
+|---|---|
+| R14 | 语义无损则拆；必要长跨度保留；130拆分且云计算/深度学习为实践S；134拆分且两项K |
+| R15 | 知识K、工具/运行/明确实践S；128方法对照；185局部双重许可S；102流计算K解释保留 |
+| R16 | 160完整研究意愿T；数据思维/意识类T；纯偏好不自动标 |
+| R17 | 项目管理职能S与通用组织T；资源接口消歧；质量保证活动S与结果承诺区别 |
+| R18 | 版本/审核来源、非盲标、诊断集限制与已回写状态 |
+
+P01/P08中的102及185实例、P03中的本轮项目管理实例、P07的102长跨度均已有本轮裁决；其他未对应的词例仍保留逐例复核。P02仅160学习/发展意愿及169产品偏好有本轮处理，不宣称所有用户身份案例已解决。P04/P05/P06等可参照R14，但不自动给未裁截图造最终标签。P09/P10仍须具体语境。
+
+本版Word与PROMPT_silver_plus_v4212同步发布；引用与重叠附录未在本轮全面复核；GitHub发布以提交记录为准。100条回写版419实体（K87/S255/T77/L0），不是准确率或信效度；历史Gold/IAA不变。
+
 Version: **B.sop_v4.2.11**. Canonical rules: [中文](handbook_B_sop_v4.md), [English summary](handbook_B_sop_v4.en.md). The v4.2.11 amendment follows commit `8e5f120c13cb9ced745c560ce4bdc4040f093de3`; the original v4.2.10 baseline is retained below for provenance.
 Remote baseline: `f68443a04d3a85e754cdeb0f463ad8fb5f2e3669`; prior handbook version B.sop_v4.2.9.
 

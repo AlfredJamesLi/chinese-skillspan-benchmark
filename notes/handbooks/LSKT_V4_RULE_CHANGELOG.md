@@ -1,14 +1,37 @@
 # LSKT v4 rule changelog
 
-**Handbook version:** `B.sop_v4.2.11` (2026-09-07; Silver-plus prompt review)  
+**Handbook version:** `B.sop_v4.2.12` (2026-09-07; final adjudication consolidation)  
 Canonical one-pagers: `notes/handbooks/handbook_B_sop_v4.md` (+ `.en.md`).  
 Overlap/adjudication: `notes/handbooks/handbook_B_overlap_adjudication.md`.  
 Literature keys: `notes/handbooks/handbook_B_citations.md`.  
-LLM prompt: `prompts/LSKT_V4_ANNOTATION_PROMPT.txt`.
+Current Silver-plus prompt: `notes/handbooks/PROMPT_silver_plus_v4212.txt` (silver_plus_v4212_rev1). The legacy `prompts/LSKT_V4_ANNOTATION_PROMPT.txt` is not synchronized by this release.
 
 This log records **rule text** changes. It does **not** freeze a new human Gold and does **not** authorize rewriting paper F1 tables.
 
+## 2026-09-07 — v4.2.12 (final adjudication consolidation)
+
+- R14: semantic-preserving splits and necessary long spans; final 130/134 types replace provisional states.
+- R15: knowledge/use distinction, theory-method contrast in 128/134, narrowly scoped mixed licensing in 185, disclosed 流计算 K interpretation in 102, local shared practice in 130.
+- R16: complete learning/research intention T; data-thinking/awareness traits T; pure preference is not automatically eligible. No general retention of all 有 triggers.
+- R17: professional project management versus generic organizing; translation resource-interface disambiguation; occupational quality assurance versus result promises; local object scope and necessary shared heads.
+- R18: all 38 flagged cases resolved and applied in the separately saved 100-record release (419 spans, K87/S255/T77/L0); not independent blind IAA or Gold. Preserve historical model/protocol metadata rather than retroactively calling the run v4.2.12.
+- Chinese/English current sections and current register override are aligned. Historical log entries remain explicitly historical. Unrelated legacy cases remain reviewable; no automatic global P01–P10 closure.
+- Publication package now includes Chinese Word, English-summary Word and PROMPT_silver_plus_v4212.txt; earlier editions remain unchanged. Companion appendices have not received a full new audit. Remote publication is established separately by the GitHub commit. No new training, testing or historical metrics changed.
+
 ## 2026-09-07 — v4.2.11 (user-confirmed Silver-plus prompt review)
+ 
+Historical entry below; current release is v4.2.12. The earlier 33-confirmed/5-pending status is superseded by final rulings, not erased from history.
+ 
+### Later clarification: boundary-addendum-20260907 (R14)
+
+- User confirmed semantic completeness before splitting: split independently interpretable mentions when meaning is preserved in local context; retain necessary long spans otherwise. Containment alone is insufficient, length does not determine type, and no missing words may be generated.
+- 130: separate Linux基本操作 S / 原理 K / 云计算 / 深度学习; the latter two remain K/S pending.
+- 134: separate 自然语言处理NLP相关理论 K / 技术方法; the latter remains K/S pending.
+- Earlier whole-span proposals for these two are not final rulings. Boundary confirmation is not whole-record confirmation. Remaining pending records: 102, 128, 130, 134, 185. Prior confirmed records total 33.
+- Chinese and English Markdown receive the same clarification and explicit revision marker. Log updated; historical prompts, Word mirrors, production labels, Gold and metrics unchanged. Store new hashes rather than treating amended and original v4.2.11 as byte-identical.
+- Long/shared-span cases may be logged for diagnostic evaluation; no independent test set or test execution is created by this change.
+
+### Original v4.2.11 release
 
 Prior handbook commit: `8e5f120c13cb9ced745c560ce4bdc4040f093de3`. Chinese and English R08–R13 are aligned; matching prompt: `PROMPT_silver_plus_v4211.txt` in this directory.
 
