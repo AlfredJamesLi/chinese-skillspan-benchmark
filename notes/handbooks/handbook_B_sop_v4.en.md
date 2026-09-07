@@ -1,21 +1,21 @@
-# Handbook B — LSKT v4 SOP (paper main protocol), one page
+# Handbook B — LSKT v4 SOP (current human coding rules; English summary)
 
-**Handbook version:** `B.sop_v4.2.9` (2026-09-05). ESCO-authoritative types. Shortest-complete cuts. Tools by predicate. Peel 经验 by default (`大项目售前经验` → `大项目售前` S). Nested Long_S is the next paper.  
+**Handbook version:** `B.sop_v4.2.10` (2026-09-07). ESCO-informed concepts with explicit project operationalizations. Shortest-complete cuts: completeness before length. Context-sensitive tools; experience follows the distinctions below. The task remains contiguous, flat extraction.  
 **Keys:** [ESCO14] [EQF] [ESCO-L] [ESCO-T] [ESCO-Q] [Z22] [Say18] [AP08] [Kr95] [TKS02] [FM09] [Yu20] [UD20] [D18] [ONET] [Nav09] [PB05]. `[本协议]` / *this protocol* = Chinese-job operationalization, not a gold standard forced by one paper. Full entries at the end.
 
-**Use:** the **reported** evaluation operationalization. Train silver: `train_lskt_v4_silver`. Test gold: `test_lskt_v4_cws_simhuman980_hybrid.jsonl` (2601 = 980 SimHuman rule_v4 + 1621 SOP-CWS; **same IDs as Gold v2**; jieba snap on **gold and** predictions).  
+**Use:** current human coding rules. This revision does not retroactively change the reported evaluation protocol or results. Historical P2 bindings follow: Train silver: `train_lskt_v4_silver`. Test gold: `test_lskt_v4_cws_simhuman980_hybrid.jsonl` (2601 = 980 SimHuman rule_v4 + 1621 SOP-CWS; **same IDs as Gold v2**; jieba snap on **gold and** predictions).  
 **Not** human Doccano Gold. **Do not overwrite** `gold_canonical_v2.jsonl`. The 980 overlay is rule-based, not a full human pass under this handbook.
 
 P2 main LLM rows remain **frozen old dumps** + jieba, not an official `gpt-4o` SOP re-call.
 
-## Labels — ESCO is the authority (Zhang projection is eval-only)
+## Labels — ESCO concepts and project operationalizations
 
-**Authority:** type meanings follow the four ESCO skills-pillar classes (Knowledge / Language skills and knowledge / Skills / Transversal). ESCO uses the EQF wording for knowledge and skill [ESCO14] [EQF]. **Do not** redefine S/K/T/L from SkillSpan or from `L＞S＞K＞T`. [Z22] is span unitization + the optional L+K→KNOWLEDGE, S+T→SKILL projection only.
+**Conceptual reference:** the four ESCO skills-pillar classes (Knowledge / Language skills and knowledge / Skills / Transversal). ESCO uses the EQF wording for knowledge and skill [ESCO14] [EQF]. **Do not** redefine S/K/T/L from SkillSpan or from `L＞S＞K＞T`. [Z22] supplies span and knowledge/skill examples and the optional L+K→KNOWLEDGE, S+T→SKILL comparison. Degree-to-K, industry-experience-to-broad-K and contextual tool-to-S mappings are project operationalizations, not literal ESCO concept labels.
 
 | Tag | ESCO class | Authoritative wording (ESCO / EQF) | This protocol | Examples | → Zhang |
 |---|---|---|---|---|---|
-| **K** | Knowledge | *“Knowledge means the outcome of the assimilation of information through learning. Knowledge is the body of facts, principles, theories and practices that is related to a field of work or study.”* Knowledge terms do not use action verbs. | Domain facts/principles; **names** of degrees and non-language certificates (no Q label → map to K) | 本科及以上学历, ISO 27001, PMP | KNOWLEDGE |
-| **S** | Skills | *“Skill means the ability to apply knowledge and use know-how to complete tasks and solve problems.”* | Applying knowledge: tools, methods, executable job actions | 维护, 测试, 对接, shell | SKILL |
+| **K** | Knowledge | *“Knowledge means the outcome of the assimilation of information through learning. Knowledge is the body of facts, principles, theories and practices that is related to a field of work or study.”* Knowledge terms do not use action verbs. | Domain facts/principles; core industry names in explicit industry-background/experience requirements (project broad K); **names** of degrees and non-language certificates (no Q label → map to K) | 本科及以上学历, ISO 27001, PMP | KNOWLEDGE |
+| **S** | Skills | *“Skill means the ability to apply knowledge and use know-how to complete tasks and solve problems.”* | Applying knowledge: tools, methods, executable job actions | 维护, 测试, 接口对接, job-use shell | SKILL |
 | **T** | Transversal skills | *“TSCs are learned and proven abilities … valuable for effective action in virtually any kind of work, learning or life activity … not exclusively related to any particular context (job, occupation…).”* T4.1 includes `report facts`. | Cross-occupation soft skills. A duty wrapper does not change reusability. | 沟通管理, 客户汇报, 责任心 | SKILL |
 | **L** | Language skills and knowledge | A **sibling** class (hierarchy letter L), not inside K or S. Language names ≈ knowledge concepts; CEFR use ≈ skill. | Language name, level, or language exam/certificate as one L span | 英语, CET-6, 英文阅读能力 | KNOWLEDGE |
 
@@ -25,7 +25,7 @@ Portals: [skill_main](https://esco.ec.europa.eu/en/classification/skill_main); [
 
 ESCO’s four sub-classifications are siblings; there is **no** `L＞S＞K＞T` [ESCO14] [ESCO-L] [ESCO-T]. SkillSpan App. B.3: if in doubt mark **skill**; prefer skill over knowledge/attitude — that fallback assumes **nested two-column** BIO, not a four-type rank [Z22]. Unitization ≠ typing [AP08] [Kr95]. Flat main layer: one label per token [TKS02]; nesting is another task [FM09] [Yu20].
 
-**Do:** pairwise tests (overlap addendum) → shortest complete independent spans → if type still unresolved, mark **S** and log `adjudication_required` [Z22] [AP08]. **Do not** attribute `L＞S＞K＞T` to ESCO or SkillSpan.
+**Do:** pairwise tests (overlap addendum) → shortest complete independent spans → if type still unresolved, provisionally mark **S** and log `adjudication_required` (not automatic Gold admission) [Z22] [AP08]. **Do not** attribute `L＞S＞K＞T` to ESCO or SkillSpan.
 
 ## Degrees / qualification names → K
 
@@ -33,7 +33,7 @@ ESCO’s four sub-classifications are siblings; there is **no** `L＞S＞K＞T` 
 
 ## Communication / reporting → T even in duties
 
-`沟通能力` / `沟通管理` / `客户汇报` / `英语沟通` → **T** [ESCO-T] [Z22] [Say18]. ESCO `report facts` sits under T4.1 communicating (reusability: transversal) [ESCO-T]. SkillSpan/Sayfullina put communication in SKILL (no T); we keep T and project to SKILL [Z22] [本协议]. A duty wrapper (`负责…工作`) does **not** change transversal reusability [ESCO-T]. Occupation-specific actions stay S (`对接`, object-bearing `处理问题`) [Z22] [本协议].
+`沟通能力` / `沟通管理` / `客户汇报` / `英语沟通` → **T** [ESCO-T] [Z22] [Say18]. ESCO `report facts` sits under T4.1 communicating (reusability: transversal) [ESCO-T]. SkillSpan/Sayfullina put communication in SKILL (no T); we keep T and project to SKILL [Z22] [本协议]. A duty wrapper (`负责…工作`) does **not** change transversal reusability [ESCO-T]. Occupation-specific technical actions stay S (`接口对接`, object-bearing `处理问题`); human liaison is not automatically S. Keep the complete `协调外部资源` as T [Z22] [本协议].
 
 ## Key distinction
 
@@ -50,9 +50,34 @@ If 会 is the competency itself, **keep 会**: `会聊天` / `会说话` / `会�
 
 ## Spans (short, complete, original)
 
-Contiguous original substring; **no mid-word cuts** [Z22] [D18] [AP08] [本协议]. **Only cut: shortest span that keeps the meaning** (prefer 2–8) [本协议]. Split independent coordinated skills [Z22]. Keep one span only if splitting would change type (e.g. `优化曝光与转化率`). **Do not** apply “one verb = one long S”. Nested Long_S is the next paper. Mark only the **object** of 熟悉/掌握/精通/了解 [Z22]. Same tool name is **S or K by predicate**: apply/job-use → bare **S**; know-that/course/principles → full NP **K**; unclear → **S** + log [EQF] [本协议] (ESCO inventory / SkillSpan B.2 default bare Python=K; this flat layer does not follow one-type-per-concept). Language names/levels/exams → **L** [ESCO-L]. ISO / OCJP / degree names → **K** [ESCO-Q] [Z22]. 报名/体检/公示/福利 → empty [Z22] (B.3.12: only competences the employee must have). Flat, non-overlapping [TKS02]; not nested NER [FM09] [Yu20]. **No** `L > S > K > T` [ESCO14] [Z22] [AP08]. Human offsets are Gold; jieba is a validator [AP08] [D18].
+Contiguous original substring; **no mid-word cuts** [Z22] [D18] [AP08] [本协议]. **Only cut: shortest span that keeps the meaning** (no hard length cap; the old 2–8 preference never licenses truncation) [本协议]. Split independent coordinated skills [Z22]. Keep one span when splitting would lose necessary shared material, cut a word, or change type (e.g. `优化曝光与转化率`). **Do not** apply “one verb = one long S”. Generated or nested labels are outside this task. Mark only the **object** of 熟悉/掌握/精通/了解 [Z22]. Same tool name is **S or K by predicate**: apply/job-use → bare **S**; know-that/course/principles → full NP **K**; unclear → **S** + log [EQF] [本协议] (ESCO inventory / SkillSpan B.2 default bare Python=K; this flat layer does not follow one-type-per-concept). Language names/levels/exams → **L** [ESCO-L]. ISO / OCJP / degree names → **K** [ESCO-Q] [Z22]. Applicant administration (报名/体检/公示) and benefits themselves are excluded; a sentence is empty only if it contains no eligible requirement. Recruitment, interviewing and background checks performed by a recruiter are occupational activities, not excluded applicant administration [Z22] (B.3.12: only competences the employee must have). Flat, non-overlapping [TKS02]; not nested NER [FM09] [Yu20]. **No** `L > S > K > T` [ESCO14] [Z22] [AP08]. Human offsets are Gold; jieba is a validator [AP08] [D18].
 
 **Headline numbers (P2 only):** JobBERT 3M v4+jieba typed exact **0.4331**; frozen ChatGPT dump+jieba exact **0.2854** / relaxed **0.6249**. Never claim these beat ChatGPT **0.6365** on Gold v2.
+
+## 2026-09-07 correction-round rules
+
+This is a rule-level synthesis of the user's approximately 100 correction cases, not a deduplicated 100-record adjudicated Gold release. See the [decision register](handbook_B_review_20260907.md) for unresolved cases. This English file summarizes the Chinese handbook; it is not a second, competing protocol.
+
+### R01 — Experience and background
+
+- Generic 工作经验 / 项目经验 / 丰富经验 without a specific field or activity: exclude.
+- Explicit industry background/work experience: mark each core industry name **K**, excluding years, experience/background wrappers and preference conditions. `有银行、咨询、服务行业工作经验优先考虑` → `银行` K, `咨询` K, `服务行业` K. Keep 行业 when needed to disambiguate 服务.
+- This is a **project broad-K proxy**, not an assertion that ESCO defines experience as knowledge. Company publicity, recruitment-target roles and incidental market modifiers do not qualify.
+- Specific occupational activities: strip 经验 when meaning remains complete, e.g. `大项目售前`, `数据分析`, `大数据开发`, `大数据项目实施`, `BI项目实施` → S.
+- Specific function/product-type experience: retain 经验 when removing it leaves only a category and changes meaning: `产品经验`, `内容型产品经验` → S. Do not generalize this to every noun + 经验.
+- Exclude experience duration and 者优先. Degree qualifiers such as 及以上 remain inside the complete qualification name, e.g. `本科及以上学历` K. Generic 相关专业 is not a separate knowledge mention.
+
+### R02–R07 — Scope, boundaries and types
+
+1. Scope first, then boundary and type. Technical nouns in company publicity or learning benefits are not automatically requirements. 网络课程 in training reimbursement does not license an inner 网络 K; company encouragement is not automatically a personal T. Assess mixed clauses separately.
+2. Executable technical methods can be S: `Linux内核调试方法` S. Theory/principles/standards can be K: `Linux系统原理`, `编码规范` K. Do not classify all 方法 as K. Preserve 方法 when necessary.
+3. T can retain its object: `协调外部资源` T. Keep discriminating modifiers in `严谨的工作态度` T. A system's 稳定性 is a system property, not a person's T. Do not nest 产品文档 K inside a writing activity S.
+4. Split independent tools. Preserve necessary shared material in `口头、书面表达能力` T or `KVM的开发和实施` S. Neither conjunctions nor one common verb mechanically determine splitting. Complex elliptical lists remain subject to adjudication.
+5. Extract only original continuous text. Do not synthesize Memory开发经验 from a non-contiguous list. Preserve spelling, case and spaces; join screenshots against the actual sentence before assigning offsets to 缓存 or RocketMQ. Normalization is a separate field.
+6. Category nouns such as framework/database/design tool do not automatically add K. Test whether they independently express a knowledge requirement. 熟悉 or 了解 alone is not a universal type switch: examine use versus explicit knowledge/principles in the full clause; unresolved cases remain logged.
+7. Screenshot skills/knowledge/建议/GPT6/不一致 are annotation candidates and comparison metadata, not authority. Provisional S with adjudication_required is not final Gold. Record source, candidate/final spans, type, reason, rule ID, reviewer and version. Corrections after viewing model suggestions are not independent blind IAA.
+
+The R IDs are defined in the shared decision register. Historical P2, Gold and IAA remain unchanged. Pending examples are not newly frozen rules.
 
 ## References
 

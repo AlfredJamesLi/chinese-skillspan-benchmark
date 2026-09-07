@@ -1,12 +1,25 @@
 # LSKT v4 rule changelog
 
-**Handbook version:** `B.sop_v4.2.9` (2026-09-05; peel 经验 on jargon like 售前)  
+**Handbook version:** `B.sop_v4.2.10` (2026-09-07; correction-round operational rules)  
 Canonical one-pagers: `notes/handbooks/handbook_B_sop_v4.md` (+ `.en.md`).  
 Overlap/adjudication: `notes/handbooks/handbook_B_overlap_adjudication.md`.  
 Literature keys: `notes/handbooks/handbook_B_citations.md`.  
 LLM prompt: `prompts/LSKT_V4_ANNOTATION_PROMPT.txt`.
 
 This log records **rule text** changes. It does **not** freeze a new human Gold and does **not** authorize rewriting paper F1 tables.
+
+## 2026-09-07 — v4.2.10 (human correction-round synthesis)
+
+Baseline: `f68443a04d3a85e754cdeb0f463ad8fb5f2e3669`. Updates the Chinese canonical handbook and English summary; adds [decision register](handbook_B_review_20260907.md).
+
+- Confirmed: explicit industry-background/experience core names → project broad K; specific 产品经验 / 内容型产品经验 retain 经验 as S; 协调外部资源 remains a complete T.
+- Clarified: scope before type; executable methods vs principles; necessary objects/modifiers; source-contiguous flat spans; no hard length cap; human/model decision provenance.
+- Corrected overclaims: local operationalizations are not literal ESCO labels; 对接 is not universally S; administrative recruitment exclusions do not exclude a recruiter's work.
+- Pending P01–P09 are **not frozen decisions**, including category nouns, interest/user identity, complex shared ellipsis and ambiguous technical boundaries.
+- The user's “100” refers to the correction process, not a verified 100-ID Gold release.
+- No changes to Gold, silver, predictions, historical IAA, F1 or manuscript results. Full repository/mirror/prompt parity remains a follow-up audit.
+
+Older entries below are historical, not competing current instructions. Earlier “not done” statements describe their original snapshot and must not be used as a current status check.
 
 ## 2026-09-05 — v4.2.9 (peel 经验 on industry jargon)
 
