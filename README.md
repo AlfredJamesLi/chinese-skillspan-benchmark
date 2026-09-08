@@ -60,6 +60,12 @@ A later Handbook-B human diagnostic (project-26 first **85** official spans + fr
 
 ---
 
+## Silver-plus / Gold150 (manuscript body)
+
+Methods and Gold150 numbers intended for the PeerJ **main text** — including the JobBERT-zh CRF (no prompt) versus Qwen2.5-14B JSON-offset LoRA (fixed prompt, no demonstrations) — are in [`docs/paper_body_silver_plus.md`](docs/paper_body_silver_plus.md).
+
+That section does **not** replace V4 hybrid JobBERT 3M **0.4331**. Tentative Gold150 main cell: JobBERT-zh 3M, v6a, B2 typed exact **0.5536±0.0054** (n=3 sample SD). Qwen JSON-offset is a supplement (**0.1215±0.0092** on the extension list) and is **not** official SOP extract **0.1724**.
+
 ## Quick start
 
 ```bash
@@ -105,6 +111,7 @@ data/
   dev_lskt_v4_silver.jsonl
   frozen_preds/
   human_gold_page1_200.jsonl
+docs/                   # manuscript-body drafts
 notes/handbooks/        # Handbook B (paper SOP)
 tables/
 release/                # Hugging Face and Zenodo templates

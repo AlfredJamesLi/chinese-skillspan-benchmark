@@ -4,6 +4,10 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-09)
+
+- Manuscript-body draft for Silver-plus methods and Gold150 results: `docs/paper_body_silver_plus.md`. States the JobBERT CRF (no prompt) vs Qwen2.5-14B JSON-offset LoRA (fixed prompt) split. kNN / longer SOP prompts are discussed as **unrun** future conditions, not official rows. Does **not** change V4 hybrid JobBERT 3M **0.4331**.
+
 ## Unreleased notes (2026-09-08)
 
 - Silver-plus laboratory extensions on Gold150: Qwen2.5-14B JSON-offset SFT (B2 only) and JobBERT-zh 3M H/E/M equal-n CRF. Archive: `notes/silver_plus_extensions_20260908/`. JobBERT-zh 1M was skipped. Does **not** change V4 hybrid JobBERT 3M **0.4331**, official Qwen SOP extract **0.1724**, or the existing Gold150 JobBERT v6a B2 main cell.
