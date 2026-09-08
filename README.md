@@ -2,7 +2,7 @@
 
 **Chinese-SkillSpan** is a benchmark for competency span extraction from Chinese job advertisements. **JobBERT-zh** is the accompanying Chinese job-domain encoder used as a reproducible baseline.
 
-Manuscript under review at **PeerJ Computer Science** (single-anonymized review: reviewers see author names). A current local preview is [`Chinese-SkillSpan-local-preview-optimized.pdf`](Chinese-SkillSpan-local-preview-optimized.pdf). Do not treat older venue-tagged filenames as the submission copy.
+Manuscript under review at **PeerJ Computer Science** (single-anonymized review: reviewers see author names). The source manuscript is maintained on Overleaf; this repository does not host a draft PDF.
 
 | Resource | URL |
 |---|---|
