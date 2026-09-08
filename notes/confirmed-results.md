@@ -1,10 +1,8 @@
 # Confirmed results (Chinese-SkillSpan)
 
-Extracted from uploaded PDF:
+Extracted from an earlier DASFAA-formatted draft (that PDF is no longer in the public repository).
 
-`Chinese_skill_benchmark_Paper/2026_New_DASFAA_Chinese_SkillSpan__A_Span_Level_Dataset_for_ESCO_Aligned_Competency_Extraction_from_Chinese_Job_Ads.pdf`
-
-Venue: **PeerJ Computer Science** (submission target). The extracted PDF filename still contains DASFAA 2026; treat that as a draft filename only. Task: Chinese JobSkillNER, ESCO-1.20, flat **LSKT** (L/K/S/T).  
+Venue: **PeerJ Computer Science** (submission target). Task: Chinese JobSkillNER, ESCO-1.20, flat **LSKT** (L/K/S/T).  
 Metrics in paper: Exact-span F1 (S-F1), Relaxed F1 (IoU≥0.5), Concept Accuracy.
 
 ## Dual handbook (V4 is the paper main protocol; 2026-08-27)

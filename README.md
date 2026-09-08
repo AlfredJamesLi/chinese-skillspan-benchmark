@@ -2,7 +2,7 @@
 
 **Chinese-SkillSpan** is a benchmark for competency span extraction from Chinese job advertisements. **JobBERT-zh** is the accompanying Chinese job-domain encoder used as a reproducible baseline.
 
-Venue recorded here: **PeerJ Computer Science**. Draft PDF filenames that still mention DASFAA or “ESCO-Aligned” are local drafts only.
+Manuscript under review at **PeerJ Computer Science** (single-anonymized review: reviewers see author names). A current local preview is [`Chinese-SkillSpan-local-preview-optimized.pdf`](Chinese-SkillSpan-local-preview-optimized.pdf). Do not treat older venue-tagged filenames as the submission copy.
 
 | Resource | URL |
 |---|---|
@@ -131,6 +131,8 @@ release/                # Hugging Face and Zenodo templates
   url          = {https://github.com/AlfredJamesLi/chinese-skillspan-benchmark}
 }
 ```
+
+Related English dataset (cite, do not host the PDF here): Zhang et al., 2022, *SkillSpan: Hard and Soft Skill Extraction from English Job Postings*, NAACL-HLT, https://aclanthology.org/2022.naacl-main.366/.
 
 Machine-readable metadata: [`CITATION.cff`](CITATION.cff).
 

@@ -1,7 +1,6 @@
 # SkillSpan NAACL 2022 vs Chinese-SkillSpan — workload
 
-Source PDF: `Sota-参考文献-2022.naacl-main.366.pdf`  
-Zhang, Jensen, Sonniks, Plank. *SkillSpan: Hard and Soft Skill Extraction from English Job Postings.* NAACL 2022. Pages 4962–4984 (23 pp., long appendix).
+Source: Zhang, Jensen, Sonniks, Plank. *SkillSpan: Hard and Soft Skill Extraction from English Job Postings.* NAACL 2022. Pages 4962–4984. https://aclanthology.org/2022.naacl-main.366/
 
 This note is for **PeerJ Chinese-SkillSpan** only. Do not copy SkillSpan English F1 into our tables. Do not mix Gold v2 with P2.
 
