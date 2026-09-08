@@ -1,0 +1,192 @@
+{
+  "coverage": {
+    "n_pred": 150,
+    "missing_ids": [],
+    "extra_ids": [],
+    "complete_150": true
+  },
+  "gold150": {
+    "typed_exact_p": 0.49909584086799275,
+    "typed_exact_r": 0.416289592760181,
+    "typed_exact_f1": 0.45394736842105265,
+    "typed_relaxed_p": 0.6763110307414105,
+    "typed_relaxed_r": 0.5641025641025641,
+    "typed_relaxed_f1": 0.6151315789473684,
+    "per_type_exact": {
+      "L": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "pred": 0,
+        "gold": 2
+      },
+      "K": {
+        "precision": 0.5,
+        "recall": 0.288,
+        "f1": 0.365482233502538,
+        "tp": 36,
+        "fp": 36,
+        "fn": 89,
+        "pred": 72,
+        "gold": 125
+      },
+      "S": {
+        "precision": 0.47794117647058826,
+        "recall": 0.43526785714285715,
+        "f1": 0.45560747663551404,
+        "tp": 195,
+        "fp": 213,
+        "fn": 253,
+        "pred": 408,
+        "gold": 448
+      },
+      "T": {
+        "precision": 0.6164383561643836,
+        "recall": 0.5113636363636364,
+        "f1": 0.5590062111801242,
+        "tp": 45,
+        "fp": 28,
+        "fn": 43,
+        "pred": 73,
+        "gold": 88
+      }
+    },
+    "alignment_ok": true,
+    "scorer_version": "cnss-lskt-1.2.0",
+    "n_matched": 150,
+    "n_missing": 0
+  },
+  "challenge100": {
+    "typed_exact_p": 0.47075208913649025,
+    "typed_exact_r": 0.4072289156626506,
+    "typed_exact_f1": 0.43669250645994834,
+    "typed_relaxed_p": 0.649025069637883,
+    "typed_relaxed_r": 0.5614457831325301,
+    "typed_relaxed_f1": 0.6020671834625323,
+    "per_type_exact": {
+      "L": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "pred": 0,
+        "gold": 1
+      },
+      "K": {
+        "precision": 0.5333333333333333,
+        "recall": 0.2891566265060241,
+        "f1": 0.375,
+        "tp": 24,
+        "fp": 21,
+        "fn": 59,
+        "pred": 45,
+        "gold": 83
+      },
+      "S": {
+        "precision": 0.4412811387900356,
+        "recall": 0.42758620689655175,
+        "f1": 0.4343257443082311,
+        "tp": 124,
+        "fp": 157,
+        "fn": 166,
+        "pred": 281,
+        "gold": 290
+      },
+      "T": {
+        "precision": 0.6363636363636364,
+        "recall": 0.5121951219512195,
+        "f1": 0.5675675675675675,
+        "tp": 21,
+        "fp": 12,
+        "fn": 20,
+        "pred": 33,
+        "gold": 41
+      }
+    },
+    "alignment_ok": true,
+    "scorer_version": "cnss-lskt-1.2.0",
+    "n_matched": 100,
+    "n_missing": 0
+  },
+  "audit50": {
+    "typed_exact_p": 0.5515463917525774,
+    "typed_exact_r": 0.4314516129032258,
+    "typed_exact_f1": 0.48416289592760187,
+    "typed_relaxed_p": 0.7268041237113402,
+    "typed_relaxed_r": 0.5685483870967742,
+    "typed_relaxed_f1": 0.6380090497737557,
+    "per_type_exact": {
+      "L": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "pred": 0,
+        "gold": 1
+      },
+      "K": {
+        "precision": 0.4444444444444444,
+        "recall": 0.2857142857142857,
+        "f1": 0.34782608695652173,
+        "tp": 12,
+        "fp": 15,
+        "fn": 30,
+        "pred": 27,
+        "gold": 42
+      },
+      "S": {
+        "precision": 0.5590551181102362,
+        "recall": 0.44936708860759494,
+        "f1": 0.49824561403508766,
+        "tp": 71,
+        "fp": 56,
+        "fn": 87,
+        "pred": 127,
+        "gold": 158
+      },
+      "T": {
+        "precision": 0.6,
+        "recall": 0.5106382978723404,
+        "f1": 0.5517241379310344,
+        "tp": 24,
+        "fp": 16,
+        "fn": 23,
+        "pred": 40,
+        "gold": 47
+      }
+    },
+    "alignment_ok": true,
+    "scorer_version": "cnss-lskt-1.2.0",
+    "n_matched": 50,
+    "n_missing": 0
+  },
+  "empty_label": {
+    "n_empty_gold": 8,
+    "empty_label_fp": 0
+  },
+  "parse": {
+    "n_ok": 0,
+    "n_partial": 0,
+    "n_fail": 150,
+    "statuses": {
+      "": 150
+    }
+  },
+  "not_comparable_to_0.4331": true,
+  "not_comparable_to_0.1724": true,
+  "not_independent_b2_vs_b1_claim": true,
+  "sample_sd_is_not_test_ci": true,
+  "cost": {
+    "mean_seconds": 0.0,
+    "sum_seconds": 0,
+    "mean_input_tokens": 0.0,
+    "mean_output_tokens": 0.0
+  }
+}

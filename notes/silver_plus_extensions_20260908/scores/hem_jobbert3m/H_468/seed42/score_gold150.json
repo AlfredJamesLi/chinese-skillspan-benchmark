@@ -1,0 +1,192 @@
+{
+  "coverage": {
+    "n_pred": 150,
+    "missing_ids": [],
+    "extra_ids": [],
+    "complete_150": true
+  },
+  "gold150": {
+    "typed_exact_p": 0.5205992509363296,
+    "typed_exact_r": 0.4193061840120664,
+    "typed_exact_f1": 0.46449456975772774,
+    "typed_relaxed_p": 0.6722846441947565,
+    "typed_relaxed_r": 0.5414781297134238,
+    "typed_relaxed_f1": 0.5998329156223893,
+    "per_type_exact": {
+      "L": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2,
+        "pred": 0,
+        "gold": 2
+      },
+      "K": {
+        "precision": 0.5892857142857143,
+        "recall": 0.264,
+        "f1": 0.36464088397790057,
+        "tp": 33,
+        "fp": 23,
+        "fn": 92,
+        "pred": 56,
+        "gold": 125
+      },
+      "S": {
+        "precision": 0.48184019370460046,
+        "recall": 0.44419642857142855,
+        "f1": 0.462253193960511,
+        "tp": 199,
+        "fp": 214,
+        "fn": 249,
+        "pred": 413,
+        "gold": 448
+      },
+      "T": {
+        "precision": 0.7076923076923077,
+        "recall": 0.5227272727272727,
+        "f1": 0.6013071895424837,
+        "tp": 46,
+        "fp": 19,
+        "fn": 42,
+        "pred": 65,
+        "gold": 88
+      }
+    },
+    "alignment_ok": true,
+    "scorer_version": "cnss-lskt-1.2.0",
+    "n_matched": 150,
+    "n_missing": 0
+  },
+  "challenge100": {
+    "typed_exact_p": 0.514792899408284,
+    "typed_exact_r": 0.41927710843373495,
+    "typed_exact_f1": 0.46215139442231074,
+    "typed_relaxed_p": 0.6538461538461539,
+    "typed_relaxed_r": 0.5325301204819277,
+    "typed_relaxed_f1": 0.5869853917662683,
+    "per_type_exact": {
+      "L": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "pred": 0,
+        "gold": 1
+      },
+      "K": {
+        "precision": 0.5897435897435898,
+        "recall": 0.27710843373493976,
+        "f1": 0.3770491803278688,
+        "tp": 23,
+        "fp": 16,
+        "fn": 60,
+        "pred": 39,
+        "gold": 83
+      },
+      "S": {
+        "precision": 0.4777777777777778,
+        "recall": 0.44482758620689655,
+        "f1": 0.46071428571428574,
+        "tp": 129,
+        "fp": 141,
+        "fn": 161,
+        "pred": 270,
+        "gold": 290
+      },
+      "T": {
+        "precision": 0.7586206896551724,
+        "recall": 0.5365853658536586,
+        "f1": 0.6285714285714286,
+        "tp": 22,
+        "fp": 7,
+        "fn": 19,
+        "pred": 29,
+        "gold": 41
+      }
+    },
+    "alignment_ok": true,
+    "scorer_version": "cnss-lskt-1.2.0",
+    "n_matched": 100,
+    "n_missing": 0
+  },
+  "audit50": {
+    "typed_exact_p": 0.5306122448979592,
+    "typed_exact_r": 0.41935483870967744,
+    "typed_exact_f1": 0.46846846846846857,
+    "typed_relaxed_p": 0.7040816326530612,
+    "typed_relaxed_r": 0.5564516129032258,
+    "typed_relaxed_f1": 0.6216216216216216,
+    "per_type_exact": {
+      "L": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "pred": 0,
+        "gold": 1
+      },
+      "K": {
+        "precision": 0.5882352941176471,
+        "recall": 0.23809523809523808,
+        "f1": 0.33898305084745767,
+        "tp": 10,
+        "fp": 7,
+        "fn": 32,
+        "pred": 17,
+        "gold": 42
+      },
+      "S": {
+        "precision": 0.48951048951048953,
+        "recall": 0.4430379746835443,
+        "f1": 0.46511627906976744,
+        "tp": 70,
+        "fp": 73,
+        "fn": 88,
+        "pred": 143,
+        "gold": 158
+      },
+      "T": {
+        "precision": 0.6666666666666666,
+        "recall": 0.5106382978723404,
+        "f1": 0.5783132530120482,
+        "tp": 24,
+        "fp": 12,
+        "fn": 23,
+        "pred": 36,
+        "gold": 47
+      }
+    },
+    "alignment_ok": true,
+    "scorer_version": "cnss-lskt-1.2.0",
+    "n_matched": 50,
+    "n_missing": 0
+  },
+  "empty_label": {
+    "n_empty_gold": 8,
+    "empty_label_fp": 0
+  },
+  "parse": {
+    "n_ok": 0,
+    "n_partial": 0,
+    "n_fail": 150,
+    "statuses": {
+      "": 150
+    }
+  },
+  "not_comparable_to_0.4331": true,
+  "not_comparable_to_0.1724": true,
+  "not_independent_b2_vs_b1_claim": true,
+  "sample_sd_is_not_test_ci": true,
+  "cost": {
+    "mean_seconds": 0.0,
+    "sum_seconds": 0,
+    "mean_input_tokens": 0.0,
+    "mean_output_tokens": 0.0
+  }
+}

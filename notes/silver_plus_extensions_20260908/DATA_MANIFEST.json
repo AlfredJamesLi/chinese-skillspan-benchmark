@@ -1,0 +1,98 @@
+{
+  "created_utc": "2026-09-08T05:20:00Z",
+  "isolation_wording": "句级隔离扩展版；不得改称文档隔离",
+  "parent_v6a": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_v6a_drop44_train_20260908",
+  "v6a_files_unmodified": true,
+  "v6a_n_train": 2156,
+  "v6a_n_dev": 169,
+  "v6a_unique_nfc_train": 1911,
+  "v6a_dup_extra_records": 245,
+  "v6a_dup_weight_mean": 1.1282,
+  "v6a_cohort_train_records": {
+    "A100": 96,
+    "H730": 637,
+    "E1621": 1423
+  },
+  "v6a_empty_span_train": 875,
+  "reported_paper_counts_verified": {
+    "train_2156": true,
+    "dev_169": true
+  },
+  "gold150_path": "/home/guojingli3/Chinese-Skillspan-Benchmark/Gold150_locked_complete_20260908/gold150_test.jsonl",
+  "gold150_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+  "gold150_eval_sha256": "9a7ac3be89bd62a442e5a73d4e55469b09c9fad96bef2a08b03fa82c4c0409be",
+  "gold150_uses": {
+    "train": false,
+    "retrieval_index": false,
+    "knn_index_leftover_not_official": true,
+    "early_stop": false,
+    "prompt_debug": false,
+    "param_choice": false,
+    "final_eval_only_after_freeze": true
+  },
+  "hold82_in_train": 0,
+  "pending_labels_not_converted_to_empty_negatives": true,
+  "unreleased_82_not_appended": true,
+  "gold_exact_nfc_in_train_or_dev": 0,
+  "three_boilerplate_cross_split": [
+    {
+      "nfc_text": "']",
+      "surface_note": "整句仅为这两个字符，不是公共片段截取",
+      "kind": "whole_sentence_exact_nfc",
+      "also_punctuation_fragment": true,
+      "punctuation_not_automatic_leak": true,
+      "whole_sentence_must_not_cross": true,
+      "still_in_v6a": true,
+      "train_ids": ["1945-s0010", "1950-s0004", "1959-s0011", "1960-s0025"],
+      "dev_ids": ["1954-s0007"]
+    },
+    {
+      "nfc_text": "。",
+      "surface_note": "整句仅为句号",
+      "kind": "whole_sentence_exact_nfc",
+      "also_punctuation_fragment": true,
+      "punctuation_not_automatic_leak": true,
+      "whole_sentence_must_not_cross": true,
+      "still_in_v6a": true,
+      "train_ids": ["1898-s0015"],
+      "dev_ids": ["1843-s0009"]
+    },
+    {
+      "nfc_text": "关注公众号马克数据网",
+      "surface_note": "NFC 折叠空白后与开发句整句相同；原文含空格「关注公众号马 克 数 据 网」",
+      "kind": "whole_sentence_exact_nfc",
+      "also_template_boilerplate": true,
+      "public_skill_or_degree_template": false,
+      "whole_sentence_must_not_cross": true,
+      "still_in_v6a": true,
+      "train_ids": ["1873-s0012"],
+      "dev_ids": ["1843-s0010"]
+    }
+  ],
+  "extension_list": {
+    "name": "v6a_nocross_20260908",
+    "dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908",
+    "reason": "整句 NFC 重复不得跨 train/dev；另建版本，不改 v6a 原文件",
+    "dropped_from_train_only": [
+      "1873-s0012",
+      "1898-s0015",
+      "1945-s0010",
+      "1950-s0004",
+      "1959-s0011",
+      "1960-s0025"
+    ],
+    "ext_n_train": 2150,
+    "ext_n_dev": 169,
+    "ext_dev_identical_to_v6a_dev": true,
+    "ext_unique_nfc_train": 1908,
+    "diff_vs_v6a": "train 2156→2150 (−6 条与冻结开发集整句 NFC 相同的训练记录）；开发 169 不变"
+  },
+  "hashes": {
+    "gold150_test": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "gold150_eval": "9a7ac3be89bd62a442e5a73d4e55469b09c9fad96bef2a08b03fa82c4c0409be",
+    "ext_train_b2": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+    "ext_dev_b2": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+    "v6a_train_b2": "90796587b87291ebf79a7404be9aac2141ac154eb47abb3f10ac0d7e7e1d1d93",
+    "v6a_dev_b2": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef"
+  }
+}

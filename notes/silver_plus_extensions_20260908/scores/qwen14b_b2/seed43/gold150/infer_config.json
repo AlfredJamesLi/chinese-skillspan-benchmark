@@ -1,0 +1,10 @@
+{
+  "model_dir": "/home/guojingli3/IEEE_Access_project/models/Qwen2.5-14B-Instruct",
+  "adapter_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/qwen14b_b2/seed43/adapter",
+  "queries": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/gold150_eval.jsonl",
+  "max_new_tokens": 256,
+  "do_sample": false,
+  "demos": false,
+  "official_condition": "SFT",
+  "knn_random_not_run": true
+}

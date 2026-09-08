@@ -1,0 +1,225 @@
+{
+  "n_cases": 13,
+  "n_pass": 13,
+  "n_fail": 0,
+  "cases": [
+    {
+      "name": "leading_space",
+      "ok": true,
+      "got": {
+        "spans": [
+          [
+            0,
+            2,
+            "S"
+          ]
+        ],
+        "status": "ok",
+        "failures": []
+      },
+      "notes": []
+    },
+    {
+      "name": "chinese",
+      "ok": true,
+      "got": {
+        "spans": [
+          [
+            2,
+            4,
+            "S"
+          ],
+          [
+            4,
+            8,
+            "K"
+          ]
+        ],
+        "status": "ok",
+        "failures": []
+      },
+      "notes": []
+    },
+    {
+      "name": "english_tool",
+      "ok": true,
+      "got": {
+        "spans": [
+          [
+            3,
+            9,
+            "K"
+          ],
+          [
+            12,
+            15,
+            "K"
+          ]
+        ],
+        "status": "ok",
+        "failures": []
+      },
+      "notes": []
+    },
+    {
+      "name": "repeat_offsets",
+      "ok": true,
+      "got": {
+        "spans": [
+          [
+            0,
+            2,
+            "T"
+          ],
+          [
+            3,
+            5,
+            "T"
+          ]
+        ],
+        "status": "ok",
+        "failures": []
+      },
+      "notes": []
+    },
+    {
+      "name": "repeat_surface_ltr",
+      "ok": true,
+      "got": {
+        "spans": [
+          [
+            0,
+            2,
+            "T"
+          ],
+          [
+            3,
+            5,
+            "T"
+          ]
+        ],
+        "status": "ok",
+        "failures": []
+      },
+      "notes": []
+    },
+    {
+      "name": "empty_ok",
+      "ok": true,
+      "got": {
+        "spans": [],
+        "status": "ok",
+        "failures": []
+      },
+      "notes": []
+    },
+    {
+      "name": "punct_multi",
+      "ok": true,
+      "got": {
+        "spans": [
+          [
+            2,
+            4,
+            "T"
+          ],
+          [
+            5,
+            9,
+            "T"
+          ]
+        ],
+        "status": "ok",
+        "failures": []
+      },
+      "notes": []
+    },
+    {
+      "name": "long_span",
+      "ok": true,
+      "got": {
+        "spans": [
+          [
+            2,
+            42,
+            "S"
+          ]
+        ],
+        "status": "ok",
+        "failures": []
+      },
+      "notes": []
+    },
+    {
+      "name": "trunc_no_json",
+      "ok": true,
+      "got": {
+        "spans": [],
+        "status": "no_json",
+        "failures": [
+          "no_json_array"
+        ]
+      },
+      "notes": []
+    },
+    {
+      "name": "oob",
+      "ok": true,
+      "got": {
+        "spans": [],
+        "status": "oob",
+        "failures": [
+          "item_0_offset_oob"
+        ]
+      },
+      "notes": []
+    },
+    {
+      "name": "keep_offset_not_rewrite",
+      "ok": true,
+      "got": {
+        "spans": [
+          [
+            2,
+            9,
+            "K"
+          ]
+        ],
+        "status": "ok",
+        "failures": [],
+        "raw": "[{\"start\": 2, \"end\": 9, \"type\": \"K\", \"text\": \"WRONG\"}]",
+        "report": {
+          "parse_status": "ok",
+          "n_raw_items": 1,
+          "n_kept": 1,
+          "n_dropped_invalid": 0,
+          "n_surface_resolved": 0,
+          "n_unresolvable": 0,
+          "failures": []
+        }
+      },
+      "notes": []
+    },
+    {
+      "name": "dev_roundtrip_targets",
+      "ok": true,
+      "got": {
+        "n": 169,
+        "roundtrip_ok": 169,
+        "n_empty": 82,
+        "n_multi": 59
+      },
+      "notes": []
+    },
+    {
+      "name": "prompt_keeps_sentence",
+      "ok": true,
+      "got": {
+        "in": true
+      },
+      "notes": []
+    }
+  ],
+  "gold150_not_used": true,
+  "offset_convention": "unicode_codepoint_0_based_half_open"
+}
