@@ -146,41 +146,18 @@ JobBERT-zh 1M × Silver-plus was **not** run (different DAPT recipe; no CRF sele
 
 ## 6. Would a longer prompt or kNN help Qwen?
 
-**Not in the official numbers.** A kNN / random-demo matrix was drafted and then **withdrawn**. `knn_index/` on disk was never used for Gold scoring, checkpoint choice, or the prompt. There is **no** official kNN F1 to report.
+**Official Table C is unchanged:** P0 JSON-offset SFT, Gold150 exact **0.1215±0.0092**. A withdrawn `knn_index/` on disk has **no** official F1.
 
-### What the error pattern actually says
+A **design candidate** now exists and is **not trained**:
 
-Exact 0.12 versus relaxed 0.45, with only 4–5 parse failures in 150, means the model usually emits legal JSON and roughly the right phrase, but the **offsets or boundaries** are wrong. A longer natural-language handbook does not automatically fix character indices. Copying a neighbour’s spans (kNN) can just as easily copy a **wrong** boundary.
+- P1 prompt (scope / type / boundary from `v4212_rev2`, not SOP 0.1724): [`docs/qwen_lskt_sft_v1_proposal_20260909.md`](qwen_lskt_sft_v1_proposal_20260909.md), model text [`docs/qwen_lskt_sft_v1_prompt.txt`](qwen_lskt_sft_v1_prompt.txt)
+- Optional kNN / random k=3 on a **single** P1-SFT checkpoint: [`docs/qwen_sft_knn_optional_plan_20260909.md`](qwen_sft_knn_optional_plan_20260909.md)
 
-### Longer or richer prompts
+P1 uses a real `system` role and JSON-encodes the sentence. Official P1-SFT would use **USER_K0** (no empty examples array). kNN is inference-only in phase 1; retrieval-aware SFT would be a new adapter and needs a separate approval.
 
-| Change | Possible effect | Why it is not a free upgrade |
-|---|---|---|
-| Paste Handbook B / SOP extract v4 | May move the student toward the **0.1724 protocol** | Different method; cannot be sold as the same JSON-offset row |
-| Add L/K/S/T definitions and negative examples | May reduce type errors | New prompt; must be frozen on **dev**, never tuned on Gold150 |
-| Ask for `{start,end,type,text}` | May let a checker reject offset/text mismatches | Post-hoc rule; not run; still a protocol change |
-| Static 3-shot demos at inference only | May remind the format | Train/infer mismatch: SFT had **zero** demos |
-
-Gold150 has already been scored for this student family. Editing the prompt after seeing Gold150 is **not** a new blind test.
-
-### kNN or random in-context examples
-
-The withdrawn draft retrieved \(k=3\) Silver-plus neighbours (embedding similarity, skip same ID / same NFC text) or length-bucket random controls. That design is closer to retrieval-augmented ICL than to the official SFT.
-
-Reasons it might help: a nearby labelled sentence shows concrete offsets.  
-Reasons it often will not: SFT already saw ~2k labelled targets; retrieved BIO/JSON can be the wrong type; `max_new_tokens=256` is tight once three demos are prepended; sentence embedding similarity is not span-boundary similarity.
-
-If demos appear **only at inference**, the condition is not the official SFT. If demos are added **in training and inference**, that is a **new method** (the SpanAnchor-style module this project declined), not an add-on to 0.1215.
-
-### What would be a cleaner next step (only if a new frozen protocol is authorised)
-
-1. Keep the current JSON-offset SFT row as the official Qwen supplement.  
-2. Any prompt / kNN / schema change is a **new** condition, selected on frozen dev typed exact only, Gold150 scored **once**.  
-3. Higher-leverage ideas for exact≪relaxed, still unrun: constrained JSON decoding; emit surface text and accept a span only if `sentence[start:end]==text`; slightly larger `max_new_tokens` if truncation appears in the failure log.  
-4. Do not put a kNN number into Table C unless that run exists under a frozen protocol.
+Do not tune P1 or k on Gold150. Do not put a kNN number into Table C unless that run exists under a frozen protocol. Do not mix an output-schema ablation (`text+occurrence`) with the prompt / kNN contrast.
 
 ---
-
 ## 7. Limitations that stay in the main text
 
 - Gold150 is not a freshly blinded test after several laboratory rounds.  

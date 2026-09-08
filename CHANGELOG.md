@@ -4,6 +4,10 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-09b)
+
+- Design-only Qwen P1 prompt and optional kNN plan: `docs/qwen_lskt_sft_v1_proposal_20260909.md`, `docs/qwen_sft_knn_optional_plan_20260909.md`. Not trained. Does **not** replace official P0 Gold150 **0.1215±0.0092** or V4 hybrid JobBERT 3M **0.4331**.
+
 ## Unreleased notes (2026-09-09)
 
 - Manuscript-body draft for Silver-plus methods and Gold150 results: `docs/paper_body_silver_plus.md`. States the JobBERT CRF (no prompt) vs Qwen2.5-14B JSON-offset LoRA (fixed prompt) split. kNN / longer SOP prompts are discussed as **unrun** future conditions, not official rows. Does **not** change V4 hybrid JobBERT 3M **0.4331**.
