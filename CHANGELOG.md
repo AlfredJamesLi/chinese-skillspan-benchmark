@@ -10,6 +10,7 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ## Unreleased notes (2026-09-09)
 
+- Removed leftover root PDFs: the rejected DASFAA draft, an outdated 0828 PeerJ-named draft, the SkillSpan NAACL 2022 reprint, the unverified `Chinese-SkillSpan-local-preview-optimized.pdf`, and the sister-paper IEEE Access PDF. Cite SkillSpan from the ACL Anthology. Do not host a manuscript PDF until it can be checked against Overleaf.
 - Manuscript-body draft for Silver-plus methods and Gold150 results: `docs/paper_body_silver_plus.md`. States the JobBERT CRF (no prompt) vs Qwen2.5-14B JSON-offset LoRA (fixed prompt) split. kNN / longer SOP prompts are discussed as **unrun** future conditions, not official rows. Does **not** change V4 hybrid JobBERT 3M **0.4331**.
 
 ## Unreleased notes (2026-09-08)
@@ -39,7 +40,7 @@ GitHub, JobBERT-zh, and Zenodo `v0.1.1` are **public**.
 
 ## PeerJ Computer Science submission
 
-- Venue recorded in this repository: **PeerJ Computer Science** (not DASFAA).
+- Target venue: **PeerJ Computer Science** (single-anonymized review). Rejected DASFAA drafts are not kept in the public tree.
 - Proposed Data Availability wording is in `DATA_AVAILABILITY.md` (Zenodo version DOI + GitHub + JobBERT-zh).
 - Submission date and Overleaf revision are not recorded here.
 
@@ -82,4 +83,4 @@ No model weights are versioned in Git.
 
 ## arXiv / preprint versions
 
-This paper does not yet have an arXiv identifier. Do not use sister-paper ids `2604.21525` or `2604.23009`. Draft PDFs in the working tree may still carry DASFAA / “ESCO-Aligned” filenames; those names are not preprint versions.
+This paper does not yet have an arXiv identifier. Do not use sister-paper ids `2604.21525` or `2604.23009`. This repository does not host a manuscript PDF.

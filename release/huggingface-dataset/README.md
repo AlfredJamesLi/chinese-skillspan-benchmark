@@ -33,7 +33,7 @@ The manuscript title used for this release is:
 
 > Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements
 
-Draft PDFs in the laboratory tree still use an older “ESCO-Aligned” / DASFAA filename. That filename is not the dataset name.
+The public dataset name is **Chinese-SkillSpan**. Do not use older working titles that mentioned “ESCO-Aligned” or DASFAA.
 
 ---
 
