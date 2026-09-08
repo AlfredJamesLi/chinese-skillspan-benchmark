@@ -1,0 +1,24 @@
+{
+  "data": "v6a_nocross_20260908 from v6a without editing v6a",
+  "gold150_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+  "scripts": [
+    "scripts/qwen_ext_protocol.py",
+    "scripts/test_qwen_ext_parser.py",
+    "scripts/train_qwen_ext_sft.py",
+    "scripts/infer_qwen_ext_sft.py",
+    "scripts/eval_gold150_ext.py",
+    "scripts/sample_hem_ext.py",
+    "scripts/train_jobbert_ext.py",
+    "scripts/run_extension_chain.sh",
+    "scripts/extension_chain.sbatch"
+  ],
+  "superseded_not_official": [
+    "scripts/infer_qwen_ext_abc.py",
+    "scripts/build_qwen_knn_index.py",
+    "knn_index/"
+  ],
+  "max_official_trains_this_round": 12,
+  "gpu_cap": 2,
+  "jobbert1m": "skipped",
+  "slurm_job_id": "7360"
+}

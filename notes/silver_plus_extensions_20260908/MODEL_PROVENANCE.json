@@ -1,0 +1,75 @@
+{
+  "qwen": {
+    "identity_pass": true,
+    "name": "Qwen2.5-14B-Instruct",
+    "not_15b": true,
+    "path": "/home/guojingli3/IEEE_Access_project/models/Qwen2.5-14B-Instruct",
+    "realpath_equals_path": true,
+    "config": {
+      "model_type": "qwen2",
+      "architectures": ["Qwen2ForCausalLM"],
+      "num_hidden_layers": 48,
+      "hidden_size": 5120,
+      "num_attention_heads": 40,
+      "num_key_value_heads": 8,
+      "torch_dtype": "bfloat16",
+      "vocab_size": 152064
+    },
+    "readme_parameters": "14.7B",
+    "shards": 8,
+    "adapter_in_base_dir": false,
+    "read_only_base": true,
+    "new_adapters_only_under": "Chinese_skill_benchmark_Paper/output/silver_plus_extensions/",
+    "do_not_load_ieee_access_adapters": true,
+    "config_sha256": "0f2085dbbe2ee251bd6a6a0797d84a6ce34436044d629aa3cba793b43d311a9e",
+    "index_sha256": "46627f7a9e851d9cede6a7a4c49999082148ced9c22d2b9cfaaa5ba8b65dc68f"
+  },
+  "jobbert_3m": {
+    "hub": "AlfredJames/jobbert-zh",
+    "not_english_jjzha": true,
+    "encoder_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh",
+    "encoder_sha256": "ed2130f680d0aa9691d081a516963da252449746ef7e78818050e3039b6ccf3b",
+    "released_crf": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh/crf/best.pt",
+    "released_crf_sha256": "d98814cb954036f885e1247c2c50c66adbc5a280750f0228bfc3df077f2fc98c",
+    "crf_readme": "V4 silver CRF on encoder_ckpt65000",
+    "original_crf_history_json": null,
+    "original_selection_manifest": null,
+    "independence_of_released_crf_proven": false,
+    "new_runs_inherit_released_crf": false,
+    "new_runs_use": "DAPT encoder + randomly initialized task head/CRF"
+  },
+  "jobbert_1m": {
+    "hub": "AlfredJames/jobbert-zh-1m",
+    "encoder_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh-1m",
+    "encoder_sha256": "7fd83053d61a4b5e5e9dc964e2ca2e9bb6eada05c21fbae5edf343b15e5bed57",
+    "encoder_hash_matches_readme": true,
+    "released_crf_sha256": "380969306d50cd94a888592a2bbd2933dcca0f3a01ab7f52510bfa930edbe0b6",
+    "crf_history_json": null,
+    "dapt_recipe": "1e6 job-ad sentences, 3 MLM epochs, BertForMaskedLM dump",
+    "three_m_dapt_recipe": "3e6-scale ckpt65000 BertModel extract",
+    "comparable_pretrain_stage_to_3m": false,
+    "official_1m_block_executed": false,
+    "skip_reason": "Different DAPT schedule than 3M; both released CRFs lack selection history; cannot claim a pure pretrain-scale ablation"
+  },
+  "retrieval_encoder": {
+    "status": "leftover_from_superseded_knn_plan",
+    "used_for_official_qwen_this_round": false
+  },
+  "spananchor_ieee_access": {
+    "project_root": "/home/guojingli3/IEEE_Access_project",
+    "method_name_in_project": "Span-anchoring stack",
+    "old_local_draft_name": "SRICL",
+    "git_commit": null,
+    "cited_files": [
+      "output/access_rerun/strict_contribution_experiments_20260829/scripts/strict_rag_lib.py",
+      "b_next/10_revision_decode.py",
+      "postprocess.py",
+      "yamls/skillspan_a2marked_s42.yaml"
+    ],
+    "knn_is_example_retrieval": true,
+    "knn_is_prob_fusion": false,
+    "sft_surfaces": ["A1 token BIO", "A2 GPT-NER @@span##"],
+    "original_eval_typically_untyped_bio": true,
+    "this_experiment_is_full_reproduction": false
+  }
+}

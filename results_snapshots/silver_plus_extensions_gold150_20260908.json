@@ -1,0 +1,986 @@
+{
+  "rows": [
+    {
+      "family": "qwen14b",
+      "condition": "SFT",
+      "seed": 42,
+      "selected_epoch": 6,
+      "gold150_exact_f1": 0.13129496402877697,
+      "gold150_relaxed_f1": 0.47302158273381295,
+      "challenge100_exact_f1": 0.1339031339031339,
+      "audit50_exact_f1": 0.12682926829268293,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5,
+          "tp": 1,
+          "fp": 1,
+          "fn": 1,
+          "pred": 2,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.16417910447761194,
+          "recall": 0.088,
+          "f1": 0.11458333333333333,
+          "tp": 11,
+          "fp": 56,
+          "fn": 114,
+          "pred": 67,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.13141025641025642,
+          "recall": 0.09151785714285714,
+          "f1": 0.10789473684210527,
+          "tp": 41,
+          "fp": 271,
+          "fn": 407,
+          "pred": 312,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.29411764705882354,
+          "recall": 0.22727272727272727,
+          "f1": 0.25641025641025644,
+          "tp": 20,
+          "fp": 48,
+          "fn": 68,
+          "pred": 68,
+          "gold": 88
+        }
+      },
+      "empty_label_fp": 2,
+      "parse_fail": 5,
+      "complete_150": true,
+      "mean_input_tokens": 167.09333333333333,
+      "mean_output_tokens": 69.83333333333333,
+      "mean_seconds": 2.1841833225886025,
+      "resource": {
+        "train_seconds": 2600.6940774917603,
+        "train_device": "0",
+        "selected_epoch": 6,
+        "dev_typed_exact_f1": 0.15331010452961674,
+        "infer_resource": {
+          "job_id": "7360",
+          "hostname": "DS210039",
+          "cuda_visible_devices": "2",
+          "start_iso": null,
+          "end_iso": "2026-09-08T15:25:54+0800",
+          "seconds": 333.1059720516205,
+          "peak_allocated_gib": 27.883410453796387,
+          "gpu_hours": 0.09252943681346046,
+          "n_pred": 150,
+          "condition": "SFT",
+          "retrieval_used": false
+        }
+      },
+      "score_file": "score.json"
+    },
+    {
+      "family": "qwen14b",
+      "condition": "SFT",
+      "seed": 43,
+      "selected_epoch": 6,
+      "gold150_exact_f1": 0.12025901942645698,
+      "gold150_relaxed_f1": 0.42923219241443106,
+      "challenge100_exact_f1": 0.12,
+      "audit50_exact_f1": 0.12073490813648297,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1": 0.4,
+          "tp": 1,
+          "fp": 2,
+          "fn": 1,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.2,
+          "recall": 0.096,
+          "f1": 0.12972972972972974,
+          "tp": 12,
+          "fp": 48,
+          "fn": 113,
+          "pred": 60,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.12195121951219512,
+          "recall": 0.078125,
+          "f1": 0.09523809523809523,
+          "tp": 35,
+          "fp": 252,
+          "fn": 413,
+          "pred": 287,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.25,
+          "recall": 0.19318181818181818,
+          "f1": 0.21794871794871795,
+          "tp": 17,
+          "fp": 51,
+          "fn": 71,
+          "pred": 68,
+          "gold": 88
+        }
+      },
+      "empty_label_fp": 1,
+      "parse_fail": 4,
+      "complete_150": true,
+      "mean_input_tokens": 167.09333333333333,
+      "mean_output_tokens": 66.65333333333334,
+      "mean_seconds": 2.08783895333608,
+      "resource": {
+        "train_seconds": 2577.8360226154327,
+        "train_device": "0",
+        "selected_epoch": 6,
+        "dev_typed_exact_f1": 0.147008547008547,
+        "infer_resource": {
+          "job_id": "7360",
+          "hostname": "DS210039",
+          "cuda_visible_devices": "3",
+          "start_iso": null,
+          "end_iso": "2026-09-08T15:25:40+0800",
+          "seconds": 318.87405610084534,
+          "peak_allocated_gib": 27.883410453796387,
+          "gpu_hours": 0.08857612682713403,
+          "n_pred": 150,
+          "condition": "SFT",
+          "retrieval_used": false
+        }
+      },
+      "score_file": "score.json"
+    },
+    {
+      "family": "qwen14b",
+      "condition": "SFT",
+      "seed": 44,
+      "selected_epoch": 6,
+      "gold150_exact_f1": 0.11293260473588343,
+      "gold150_relaxed_f1": 0.43533697632058294,
+      "challenge100_exact_f1": 0.11331444759206799,
+      "audit50_exact_f1": 0.11224489795918367,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 4,
+          "fn": 2,
+          "pred": 4,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.13846153846153847,
+          "recall": 0.072,
+          "f1": 0.09473684210526315,
+          "tp": 9,
+          "fp": 56,
+          "fn": 116,
+          "pred": 65,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.1254125412541254,
+          "recall": 0.08482142857142858,
+          "f1": 0.10119840213049268,
+          "tp": 38,
+          "fp": 265,
+          "fn": 410,
+          "pred": 303,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.23809523809523808,
+          "recall": 0.17045454545454544,
+          "f1": 0.19867549668874168,
+          "tp": 15,
+          "fp": 48,
+          "fn": 73,
+          "pred": 63,
+          "gold": 88
+        }
+      },
+      "empty_label_fp": 1,
+      "parse_fail": 4,
+      "complete_150": true,
+      "mean_input_tokens": 167.09333333333333,
+      "mean_output_tokens": 69.45333333333333,
+      "mean_seconds": 2.173258916536967,
+      "resource": {
+        "train_seconds": 2577.5467042922974,
+        "train_device": "0",
+        "selected_epoch": 6,
+        "dev_typed_exact_f1": 0.16376306620209058,
+        "infer_resource": {
+          "job_id": "7360",
+          "hostname": "DS210039",
+          "cuda_visible_devices": "2",
+          "start_iso": null,
+          "end_iso": "2026-09-08T15:31:31+0800",
+          "seconds": 331.741094827652,
+          "peak_allocated_gib": 27.883410453796387,
+          "gpu_hours": 0.09215030425124698,
+          "n_pred": 150,
+          "condition": "SFT",
+          "retrieval_used": false
+        }
+      },
+      "score_file": "score.json"
+    },
+    {
+      "family": "jobbert3m_reinit_crf",
+      "condition": "H_468",
+      "seed": 42,
+      "gold150_exact_f1": 0.46449456975772774,
+      "gold150_relaxed_f1": 0.5998329156223893,
+      "challenge100_exact_f1": 0.46215139442231074,
+      "audit50_exact_f1": 0.46846846846846857,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "pred": 0,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.5892857142857143,
+          "recall": 0.264,
+          "f1": 0.36464088397790057,
+          "tp": 33,
+          "fp": 23,
+          "fn": 92,
+          "pred": 56,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.48184019370460046,
+          "recall": 0.44419642857142855,
+          "f1": 0.462253193960511,
+          "tp": 199,
+          "fp": 214,
+          "fn": 249,
+          "pred": 413,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.7076923076923077,
+          "recall": 0.5227272727272727,
+          "f1": 0.6013071895424837,
+          "tp": 46,
+          "fp": 19,
+          "fn": 42,
+          "pred": 65,
+          "gold": 88
+        }
+      },
+      "complete_150": true,
+      "resource": {
+        "model_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh",
+        "train": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_data/train_B2_A96_H_468.jsonl",
+        "dev": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/dev_b2.jsonl",
+        "out_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_jobbert3m/H_468/seed42",
+        "seed": 42,
+        "epochs": 6,
+        "patience": 2,
+        "batch_size": 16,
+        "max_len": 256,
+        "lr": 2e-05,
+        "init_pt": "",
+        "best_dev_typed_f1": 0.5007541478129713,
+        "steps": 216,
+        "init": "reinit_crf",
+        "released_crf_not_loaded": true,
+        "seconds": 39.44095706939697,
+        "peak_allocated_gib": 4.025824069976807,
+        "job_id": "7360",
+        "hostname": "DS210039",
+        "cuda_visible_devices": "2",
+        "start_iso": "2026-09-08T15:31:36+0800",
+        "end_iso": "2026-09-08T15:32:15+0800",
+        "gpu_hours": 0.010955821408165825
+      }
+    },
+    {
+      "family": "jobbert3m_reinit_crf",
+      "condition": "H_468",
+      "seed": 43,
+      "gold150_exact_f1": 0.4438943894389439,
+      "gold150_relaxed_f1": 0.5973597359735974,
+      "challenge100_exact_f1": 0.43870967741935485,
+      "audit50_exact_f1": 0.45308924485125857,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "pred": 0,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.47692307692307695,
+          "recall": 0.248,
+          "f1": 0.32631578947368417,
+          "tp": 31,
+          "fp": 34,
+          "fn": 94,
+          "pred": 65,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.4692874692874693,
+          "recall": 0.4263392857142857,
+          "f1": 0.44678362573099417,
+          "tp": 191,
+          "fp": 216,
+          "fn": 257,
+          "pred": 407,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6103896103896104,
+          "recall": 0.5340909090909091,
+          "f1": 0.5696969696969697,
+          "tp": 47,
+          "fp": 30,
+          "fn": 41,
+          "pred": 77,
+          "gold": 88
+        }
+      },
+      "complete_150": true,
+      "resource": {
+        "model_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh",
+        "train": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_data/train_B2_A96_H_468.jsonl",
+        "dev": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/dev_b2.jsonl",
+        "out_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_jobbert3m/H_468/seed43",
+        "seed": 43,
+        "epochs": 6,
+        "patience": 2,
+        "batch_size": 16,
+        "max_len": 256,
+        "lr": 2e-05,
+        "init_pt": "",
+        "best_dev_typed_f1": 0.5246913580246914,
+        "steps": 216,
+        "init": "reinit_crf",
+        "released_crf_not_loaded": true,
+        "seconds": 38.44500398635864,
+        "peak_allocated_gib": 4.025824069976807,
+        "job_id": "7360",
+        "hostname": "DS210039",
+        "cuda_visible_devices": "3",
+        "start_iso": "2026-09-08T15:31:36+0800",
+        "end_iso": "2026-09-08T15:32:14+0800",
+        "gpu_hours": 0.010679167773988512
+      }
+    },
+    {
+      "family": "jobbert3m_reinit_crf",
+      "condition": "H_468",
+      "seed": 44,
+      "gold150_exact_f1": 0.45394736842105265,
+      "gold150_relaxed_f1": 0.6151315789473684,
+      "challenge100_exact_f1": 0.43669250645994834,
+      "audit50_exact_f1": 0.48416289592760187,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "pred": 0,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.5,
+          "recall": 0.288,
+          "f1": 0.365482233502538,
+          "tp": 36,
+          "fp": 36,
+          "fn": 89,
+          "pred": 72,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.47794117647058826,
+          "recall": 0.43526785714285715,
+          "f1": 0.45560747663551404,
+          "tp": 195,
+          "fp": 213,
+          "fn": 253,
+          "pred": 408,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6164383561643836,
+          "recall": 0.5113636363636364,
+          "f1": 0.5590062111801242,
+          "tp": 45,
+          "fp": 28,
+          "fn": 43,
+          "pred": 73,
+          "gold": 88
+        }
+      },
+      "complete_150": true,
+      "resource": {
+        "model_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh",
+        "train": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_data/train_B2_A96_H_468.jsonl",
+        "dev": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/dev_b2.jsonl",
+        "out_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_jobbert3m/H_468/seed44",
+        "seed": 44,
+        "epochs": 6,
+        "patience": 2,
+        "batch_size": 16,
+        "max_len": 256,
+        "lr": 2e-05,
+        "init_pt": "",
+        "best_dev_typed_f1": 0.5219941348973607,
+        "steps": 216,
+        "init": "reinit_crf",
+        "released_crf_not_loaded": true,
+        "seconds": 38.378227949142456,
+        "peak_allocated_gib": 4.025824069976807,
+        "job_id": "7360",
+        "hostname": "DS210039",
+        "cuda_visible_devices": "2",
+        "start_iso": "2026-09-08T15:32:25+0800",
+        "end_iso": "2026-09-08T15:33:04+0800",
+        "gpu_hours": 0.010660618874761793
+      }
+    },
+    {
+      "family": "jobbert3m_reinit_crf",
+      "condition": "E_468",
+      "seed": 42,
+      "gold150_exact_f1": 0.4319327731092437,
+      "gold150_relaxed_f1": 0.5596638655462185,
+      "challenge100_exact_f1": 0.44973544973544977,
+      "audit50_exact_f1": 0.4009216589861751,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "pred": 0,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.5079365079365079,
+          "recall": 0.256,
+          "f1": 0.3404255319148936,
+          "tp": 32,
+          "fp": 31,
+          "fn": 93,
+          "pred": 63,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.45202020202020204,
+          "recall": 0.39955357142857145,
+          "f1": 0.42417061611374407,
+          "tp": 179,
+          "fp": 217,
+          "fn": 269,
+          "pred": 396,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6764705882352942,
+          "recall": 0.5227272727272727,
+          "f1": 0.5897435897435898,
+          "tp": 46,
+          "fp": 22,
+          "fn": 42,
+          "pred": 68,
+          "gold": 88
+        }
+      },
+      "complete_150": true,
+      "resource": {
+        "model_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh",
+        "train": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_data/train_B2_A96_E_468.jsonl",
+        "dev": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/dev_b2.jsonl",
+        "out_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_jobbert3m/E_468/seed42",
+        "seed": 42,
+        "epochs": 6,
+        "patience": 2,
+        "batch_size": 16,
+        "max_len": 256,
+        "lr": 2e-05,
+        "init_pt": "",
+        "best_dev_typed_f1": 0.47425897035881437,
+        "steps": 216,
+        "init": "reinit_crf",
+        "released_crf_not_loaded": true,
+        "seconds": 40.25545120239258,
+        "peak_allocated_gib": 4.025824069976807,
+        "job_id": "7360",
+        "hostname": "DS210039",
+        "cuda_visible_devices": "3",
+        "start_iso": "2026-09-08T15:32:25+0800",
+        "end_iso": "2026-09-08T15:33:06+0800",
+        "gpu_hours": 0.011182069778442383
+      }
+    },
+    {
+      "family": "jobbert3m_reinit_crf",
+      "condition": "E_468",
+      "seed": 43,
+      "gold150_exact_f1": 0.4591246903385632,
+      "gold150_relaxed_f1": 0.6044591246903386,
+      "challenge100_exact_f1": 0.46997389033942555,
+      "audit50_exact_f1": 0.4404494382022472,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "pred": 0,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.46835443037974683,
+          "recall": 0.296,
+          "f1": 0.3627450980392157,
+          "tp": 37,
+          "fp": 42,
+          "fn": 88,
+          "pred": 79,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.4936061381074169,
+          "recall": 0.43080357142857145,
+          "f1": 0.46007151370679383,
+          "tp": 193,
+          "fp": 198,
+          "fn": 255,
+          "pred": 391,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6153846153846154,
+          "recall": 0.5454545454545454,
+          "f1": 0.5783132530120482,
+          "tp": 48,
+          "fp": 30,
+          "fn": 40,
+          "pred": 78,
+          "gold": 88
+        }
+      },
+      "complete_150": true,
+      "resource": {
+        "model_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh",
+        "train": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_data/train_B2_A96_E_468.jsonl",
+        "dev": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/dev_b2.jsonl",
+        "out_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_jobbert3m/E_468/seed43",
+        "seed": 43,
+        "epochs": 6,
+        "patience": 2,
+        "batch_size": 16,
+        "max_len": 256,
+        "lr": 2e-05,
+        "init_pt": "",
+        "best_dev_typed_f1": 0.49386503067484666,
+        "steps": 216,
+        "init": "reinit_crf",
+        "released_crf_not_loaded": true,
+        "seconds": 39.454206705093384,
+        "peak_allocated_gib": 4.025824069976807,
+        "job_id": "7360",
+        "hostname": "DS210039",
+        "cuda_visible_devices": "2",
+        "start_iso": "2026-09-08T15:33:16+0800",
+        "end_iso": "2026-09-08T15:33:55+0800",
+        "gpu_hours": 0.01095950186252594
+      }
+    },
+    {
+      "family": "jobbert3m_reinit_crf",
+      "condition": "E_468",
+      "seed": 44,
+      "gold150_exact_f1": 0.41230257689110555,
+      "gold150_relaxed_f1": 0.5685785536159601,
+      "challenge100_exact_f1": 0.4046997389033942,
+      "audit50_exact_f1": 0.42562929061784893,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "pred": 0,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.4883720930232558,
+          "recall": 0.336,
+          "f1": 0.3981042654028436,
+          "tp": 42,
+          "fp": 44,
+          "fn": 83,
+          "pred": 86,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.4244791666666667,
+          "recall": 0.3638392857142857,
+          "f1": 0.3918269230769231,
+          "tp": 163,
+          "fp": 221,
+          "fn": 285,
+          "pred": 384,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6142857142857143,
+          "recall": 0.48863636363636365,
+          "f1": 0.5443037974683544,
+          "tp": 43,
+          "fp": 27,
+          "fn": 45,
+          "pred": 70,
+          "gold": 88
+        }
+      },
+      "complete_150": true,
+      "resource": {
+        "model_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh",
+        "train": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_data/train_B2_A96_E_468.jsonl",
+        "dev": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/dev_b2.jsonl",
+        "out_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_jobbert3m/E_468/seed44",
+        "seed": 44,
+        "epochs": 6,
+        "patience": 2,
+        "batch_size": 16,
+        "max_len": 256,
+        "lr": 2e-05,
+        "init_pt": "",
+        "best_dev_typed_f1": 0.5007496251874063,
+        "steps": 216,
+        "init": "reinit_crf",
+        "released_crf_not_loaded": true,
+        "seconds": 37.49793839454651,
+        "peak_allocated_gib": 4.025824069976807,
+        "job_id": "7360",
+        "hostname": "DS210039",
+        "cuda_visible_devices": "3",
+        "start_iso": "2026-09-08T15:33:16+0800",
+        "end_iso": "2026-09-08T15:33:54+0800",
+        "gpu_hours": 0.010416093998485141
+      }
+    },
+    {
+      "family": "jobbert3m_reinit_crf",
+      "condition": "M_468",
+      "seed": 42,
+      "gold150_exact_f1": 0.4564315352697096,
+      "gold150_relaxed_f1": 0.5892116182572614,
+      "challenge100_exact_f1": 0.4775725593667547,
+      "audit50_exact_f1": 0.42058165548098436,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "pred": 0,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.5070422535211268,
+          "recall": 0.288,
+          "f1": 0.36734693877551017,
+          "tp": 36,
+          "fp": 35,
+          "fn": 89,
+          "pred": 71,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.48,
+          "recall": 0.42857142857142855,
+          "f1": 0.4528301886792452,
+          "tp": 192,
+          "fp": 208,
+          "fn": 256,
+          "pred": 400,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6619718309859155,
+          "recall": 0.5340909090909091,
+          "f1": 0.5911949685534591,
+          "tp": 47,
+          "fp": 24,
+          "fn": 41,
+          "pred": 71,
+          "gold": 88
+        }
+      },
+      "complete_150": true,
+      "resource": {
+        "model_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh",
+        "train": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_data/train_B2_A96_M_468.jsonl",
+        "dev": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/dev_b2.jsonl",
+        "out_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_jobbert3m/M_468/seed42",
+        "seed": 42,
+        "epochs": 6,
+        "patience": 2,
+        "batch_size": 16,
+        "max_len": 256,
+        "lr": 2e-05,
+        "init_pt": "",
+        "best_dev_typed_f1": 0.5209580838323353,
+        "steps": 216,
+        "init": "reinit_crf",
+        "released_crf_not_loaded": true,
+        "seconds": 38.89722681045532,
+        "peak_allocated_gib": 4.025824069976807,
+        "job_id": "7360",
+        "hostname": "DS210039",
+        "cuda_visible_devices": "2",
+        "start_iso": "2026-09-08T15:34:06+0800",
+        "end_iso": "2026-09-08T15:34:44+0800",
+        "gpu_hours": 0.010804785225126479
+      }
+    },
+    {
+      "family": "jobbert3m_reinit_crf",
+      "condition": "M_468",
+      "seed": 43,
+      "gold150_exact_f1": 0.4796084828711256,
+      "gold150_relaxed_f1": 0.6411092985318109,
+      "challenge100_exact_f1": 0.4871134020618557,
+      "audit50_exact_f1": 0.46666666666666673,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "pred": 0,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.5,
+          "recall": 0.296,
+          "f1": 0.371859296482412,
+          "tp": 37,
+          "fp": 37,
+          "fn": 88,
+          "pred": 74,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5072463768115942,
+          "recall": 0.46875,
+          "f1": 0.48723897911832953,
+          "tp": 210,
+          "fp": 204,
+          "fn": 238,
+          "pred": 414,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6266666666666667,
+          "recall": 0.5340909090909091,
+          "f1": 0.5766871165644173,
+          "tp": 47,
+          "fp": 28,
+          "fn": 41,
+          "pred": 75,
+          "gold": 88
+        }
+      },
+      "complete_150": true,
+      "resource": {
+        "model_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh",
+        "train": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_data/train_B2_A96_M_468.jsonl",
+        "dev": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/dev_b2.jsonl",
+        "out_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_jobbert3m/M_468/seed43",
+        "seed": 43,
+        "epochs": 6,
+        "patience": 2,
+        "batch_size": 16,
+        "max_len": 256,
+        "lr": 2e-05,
+        "init_pt": "",
+        "best_dev_typed_f1": 0.5256797583081572,
+        "steps": 216,
+        "init": "reinit_crf",
+        "released_crf_not_loaded": true,
+        "seconds": 38.56614089012146,
+        "peak_allocated_gib": 4.025824069976807,
+        "job_id": "7360",
+        "hostname": "DS210039",
+        "cuda_visible_devices": "3",
+        "start_iso": "2026-09-08T15:34:06+0800",
+        "end_iso": "2026-09-08T15:34:44+0800",
+        "gpu_hours": 0.010712816913922629
+      }
+    },
+    {
+      "family": "jobbert3m_reinit_crf",
+      "condition": "M_468",
+      "seed": 44,
+      "gold150_exact_f1": 0.43243243243243246,
+      "gold150_relaxed_f1": 0.5962837837837838,
+      "challenge100_exact_f1": 0.43315508021390375,
+      "audit50_exact_f1": 0.43119266055045874,
+      "per_type_exact": {
+        "L": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "fn": 2,
+          "pred": 0,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.5063291139240507,
+          "recall": 0.32,
+          "f1": 0.392156862745098,
+          "tp": 40,
+          "fp": 39,
+          "fn": 85,
+          "pred": 79,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.4712328767123288,
+          "recall": 0.38392857142857145,
+          "f1": 0.42312423124231247,
+          "tp": 172,
+          "fp": 193,
+          "fn": 276,
+          "pred": 365,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.5714285714285714,
+          "recall": 0.5,
+          "f1": 0.5333333333333333,
+          "tp": 44,
+          "fp": 33,
+          "fn": 44,
+          "pred": 77,
+          "gold": 88
+        }
+      },
+      "complete_150": true,
+      "resource": {
+        "model_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh",
+        "train": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_data/train_B2_A96_M_468.jsonl",
+        "dev": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/dev_b2.jsonl",
+        "out_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_jobbert3m/M_468/seed44",
+        "seed": 44,
+        "epochs": 6,
+        "patience": 2,
+        "batch_size": 16,
+        "max_len": 256,
+        "lr": 2e-05,
+        "init_pt": "",
+        "best_dev_typed_f1": 0.5015015015015015,
+        "steps": 216,
+        "init": "reinit_crf",
+        "released_crf_not_loaded": true,
+        "seconds": 37.75778675079346,
+        "peak_allocated_gib": 4.025824069976807,
+        "job_id": "7360",
+        "hostname": "DS210039",
+        "cuda_visible_devices": "2",
+        "start_iso": "2026-09-08T15:34:55+0800",
+        "end_iso": "2026-09-08T15:35:33+0800",
+        "gpu_hours": 0.010488274097442627
+      }
+    }
+  ],
+  "summary": {
+    "qwen14b|SFT": {
+      "n_seeds": 3,
+      "gold150_exact_mean": 0.12149552939703913,
+      "gold150_exact_sample_sd": 0.009243418057236198,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "sample_sd_is_not_test_ci": true
+    },
+    "jobbert3m_reinit_crf|H_468": {
+      "n_seeds": 3,
+      "gold150_exact_mean": 0.4541121092059081,
+      "gold150_exact_sample_sd": 0.010301078192900418,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "sample_sd_is_not_test_ci": true
+    },
+    "jobbert3m_reinit_crf|E_468": {
+      "n_seeds": 3,
+      "gold150_exact_mean": 0.4344533467796375,
+      "gold150_exact_sample_sd": 0.02351260397409355,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "sample_sd_is_not_test_ci": true
+    },
+    "jobbert3m_reinit_crf|M_468": {
+      "n_seeds": 3,
+      "gold150_exact_mean": 0.45615748352442254,
+      "gold150_exact_sample_sd": 0.023589219190508437,
+      "seeds": [
+        42,
+        43,
+        44
+      ],
+      "sample_sd_is_not_test_ci": true
+    }
+  },
+  "jobbert1m": "skipped_not_comparable_pretrain_stage",
+  "official_qwen_condition": "SFT",
+  "knn_random_abc_not_official": true,
+  "not_compared_to_0.4331": true,
+  "not_compared_to_0.1724": true,
+  "qwen_b2_only_not_b2_vs_b1_validation": true,
+  "old_json_offset_v3_retained_separately": true,
+  "vs_v3_not_all_attributed_to_data_volume": true,
+  "slurm_job_id": "7360"
+}

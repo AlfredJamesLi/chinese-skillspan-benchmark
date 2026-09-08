@@ -1,0 +1,19 @@
+{
+  "model_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Baseline_Models_Collection/jobbert-zh",
+  "train": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_data/train_B2_A96_E_468.jsonl",
+  "dev": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/dev_b2.jsonl",
+  "out_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/hem_jobbert3m/E_468/seed44",
+  "seed": 44,
+  "epochs": 6,
+  "patience": 2,
+  "batch_size": 16,
+  "max_len": 256,
+  "lr": 2e-05,
+  "init_pt": "",
+  "best_dev_typed_f1": 0.5007496251874063,
+  "steps": 216,
+  "init": "reinit_crf",
+  "released_crf_not_loaded": true,
+  "seconds": 37.49793839454651,
+  "peak_allocated_gib": 4.025824069976807
+}

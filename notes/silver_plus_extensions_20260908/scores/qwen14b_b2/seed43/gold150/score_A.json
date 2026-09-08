@@ -1,0 +1,193 @@
+{
+  "coverage": {
+    "n_pred": 150,
+    "missing_ids": [],
+    "extra_ids": [],
+    "complete_150": true
+  },
+  "gold150": {
+    "typed_exact_p": 0.15550239234449761,
+    "typed_exact_r": 0.09803921568627451,
+    "typed_exact_f1": 0.12025901942645698,
+    "typed_relaxed_p": 0.5550239234449761,
+    "typed_relaxed_r": 0.34992458521870284,
+    "typed_relaxed_f1": 0.42923219241443106,
+    "per_type_exact": {
+      "L": {
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "f1": 0.4,
+        "tp": 1,
+        "fp": 2,
+        "fn": 1,
+        "pred": 3,
+        "gold": 2
+      },
+      "K": {
+        "precision": 0.2,
+        "recall": 0.096,
+        "f1": 0.12972972972972974,
+        "tp": 12,
+        "fp": 48,
+        "fn": 113,
+        "pred": 60,
+        "gold": 125
+      },
+      "S": {
+        "precision": 0.12195121951219512,
+        "recall": 0.078125,
+        "f1": 0.09523809523809523,
+        "tp": 35,
+        "fp": 252,
+        "fn": 413,
+        "pred": 287,
+        "gold": 448
+      },
+      "T": {
+        "precision": 0.25,
+        "recall": 0.19318181818181818,
+        "f1": 0.21794871794871795,
+        "tp": 17,
+        "fp": 51,
+        "fn": 71,
+        "pred": 68,
+        "gold": 88
+      }
+    },
+    "alignment_ok": true,
+    "scorer_version": "cnss-lskt-1.2.0",
+    "n_matched": 150,
+    "n_missing": 0
+  },
+  "challenge100": {
+    "typed_exact_p": 0.14736842105263157,
+    "typed_exact_r": 0.10120481927710843,
+    "typed_exact_f1": 0.12,
+    "typed_relaxed_p": 0.5403508771929825,
+    "typed_relaxed_r": 0.3710843373493976,
+    "typed_relaxed_f1": 0.44000000000000006,
+    "per_type_exact": {
+      "L": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "pred": 1,
+        "gold": 1
+      },
+      "K": {
+        "precision": 0.275,
+        "recall": 0.13253012048192772,
+        "f1": 0.1788617886178862,
+        "tp": 11,
+        "fp": 29,
+        "fn": 72,
+        "pred": 40,
+        "gold": 83
+      },
+      "S": {
+        "precision": 0.11848341232227488,
+        "recall": 0.08620689655172414,
+        "f1": 0.09980039920159682,
+        "tp": 25,
+        "fp": 186,
+        "fn": 265,
+        "pred": 211,
+        "gold": 290
+      },
+      "T": {
+        "precision": 0.18181818181818182,
+        "recall": 0.14634146341463414,
+        "f1": 0.16216216216216217,
+        "tp": 6,
+        "fp": 27,
+        "fn": 35,
+        "pred": 33,
+        "gold": 41
+      }
+    },
+    "alignment_ok": true,
+    "scorer_version": "cnss-lskt-1.2.0",
+    "n_matched": 100,
+    "n_missing": 0
+  },
+  "audit50": {
+    "typed_exact_p": 0.17293233082706766,
+    "typed_exact_r": 0.09274193548387097,
+    "typed_exact_f1": 0.12073490813648297,
+    "typed_relaxed_p": 0.5864661654135338,
+    "typed_relaxed_r": 0.31451612903225806,
+    "typed_relaxed_f1": 0.4094488188976378,
+    "per_type_exact": {
+      "L": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6666666666666666,
+        "tp": 1,
+        "fp": 1,
+        "fn": 0,
+        "pred": 2,
+        "gold": 1
+      },
+      "K": {
+        "precision": 0.05,
+        "recall": 0.023809523809523808,
+        "f1": 0.03225806451612903,
+        "tp": 1,
+        "fp": 19,
+        "fn": 41,
+        "pred": 20,
+        "gold": 42
+      },
+      "S": {
+        "precision": 0.13157894736842105,
+        "recall": 0.06329113924050633,
+        "f1": 0.08547008547008547,
+        "tp": 10,
+        "fp": 66,
+        "fn": 148,
+        "pred": 76,
+        "gold": 158
+      },
+      "T": {
+        "precision": 0.3142857142857143,
+        "recall": 0.23404255319148937,
+        "f1": 0.2682926829268293,
+        "tp": 11,
+        "fp": 24,
+        "fn": 36,
+        "pred": 35,
+        "gold": 47
+      }
+    },
+    "alignment_ok": true,
+    "scorer_version": "cnss-lskt-1.2.0",
+    "n_matched": 50,
+    "n_missing": 0
+  },
+  "empty_label": {
+    "n_empty_gold": 8,
+    "empty_label_fp": 1
+  },
+  "parse": {
+    "n_ok": 146,
+    "n_partial": 0,
+    "n_fail": 4,
+    "statuses": {
+      "ok": 146,
+      "no_json": 4
+    }
+  },
+  "not_comparable_to_0.4331": true,
+  "not_comparable_to_0.1724": true,
+  "not_independent_b2_vs_b1_claim": true,
+  "sample_sd_is_not_test_ci": true,
+  "cost": {
+    "mean_seconds": 2.08783895333608,
+    "sum_seconds": 313.175843000412,
+    "mean_input_tokens": 167.09333333333333,
+    "mean_output_tokens": 66.65333333333334
+  }
+}

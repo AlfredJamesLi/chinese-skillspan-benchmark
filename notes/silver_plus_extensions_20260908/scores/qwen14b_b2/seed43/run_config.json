@@ -1,0 +1,14 @@
+{
+  "model_dir": "/home/guojingli3/IEEE_Access_project/models/Qwen2.5-14B-Instruct",
+  "train": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/train_b2.jsonl",
+  "dev": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/data/v6a_nocross_20260908/dev_b2.jsonl",
+  "out_dir": "/home/guojingli3/Chinese-Skillspan-Benchmark/Chinese_skill_benchmark_Paper/output/silver_plus_extensions/qwen14b_b2/seed43",
+  "seed": 43,
+  "epochs": 6,
+  "lr": 0.0001,
+  "batch_size": 1,
+  "grad_accum": 16,
+  "max_new_tokens": 256,
+  "seconds": 2577.8360226154327,
+  "device": "0"
+}

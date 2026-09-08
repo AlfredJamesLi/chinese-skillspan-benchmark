@@ -4,6 +4,10 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-08)
+
+- Silver-plus laboratory extensions on Gold150: Qwen2.5-14B JSON-offset SFT (B2 only) and JobBERT-zh 3M H/E/M equal-n CRF. Archive: `notes/silver_plus_extensions_20260908/`. JobBERT-zh 1M was skipped. Does **not** change V4 hybrid JobBERT 3M **0.4331**, official Qwen SOP extract **0.1724**, or the existing Gold150 JobBERT v6a B2 main cell.
+
 ## Unreleased notes (2026-09-07)
 
 - Appendix diagnostic only: `reports/human_gold85_iaa50/` (Gold85 + IAA-50 typed exact, Qwen2.5-14B SOP, span character-length bins). Does **not** change V4 hybrid JobBERT 3M **0.4331**.
