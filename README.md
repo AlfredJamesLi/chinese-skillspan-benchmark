@@ -64,7 +64,7 @@ A later Handbook-B human diagnostic (project-26 first **85** official spans + fr
 
 Methods and Gold150 numbers intended for the PeerJ **main text** — including the JobBERT-zh CRF (no prompt) versus Qwen2.5-14B JSON-offset LoRA (fixed prompt, no demonstrations) — are in [`docs/paper_body_silver_plus.md`](docs/paper_body_silver_plus.md).
 
- That section does **not** replace V4 hybrid JobBERT 3M **0.4331**. Official Qwen P0 remains **0.1215±0.0092**. A later P1 / SOP-on-Gold150 / watermark-peel contrast is archived in [`notes/gold150_followups_20260909/`](notes/gold150_followups_20260909/README.md) and does **not** replace Tables A–D. Tentative Gold150 main cell: JobBERT-zh 3M, v6a, B2 typed exact **0.5536±0.0054** (n=3 sample SD). Qwen JSON-offset is a supplement and is **not** official SOP extract **0.1724**.
+ That section does **not** replace V4 hybrid JobBERT 3M **0.4331**. Official Qwen P0 remains **0.1215±0.0092**. A later P1 / SOP-on-Gold150 / watermark-peel contrast is archived in [`notes/gold150_followups_20260909/`](notes/gold150_followups_20260909/README.md) and the Overleaf E/F/G pack [`notes/silver_plus_followups_20260909/`](notes/silver_plus_followups_20260909/README.md) and does **not** replace Tables A–D. Tentative Gold150 main cell: JobBERT-zh 3M, v6a, B2 typed exact **0.5536±0.0054** (n=3 sample SD). Qwen JSON-offset is a supplement and is **not** official SOP extract **0.1724**.
 
 ## Quick start
 

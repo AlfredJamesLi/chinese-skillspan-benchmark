@@ -146,7 +146,7 @@ JobBERT-zh 1M × Silver-plus was **not** run (different DAPT recipe; no CRF sele
 
 ## 6. Appendix-only follow-ups (do not rewrite Tables A–D)
 
-Official Table C remains P0 JSON-offset SFT, Gold150 exact **0.1215±0.0092**. Scores live in [`notes/gold150_followups_20260909/`](../notes/gold150_followups_20260909/README.md). Paste-ready TeX: [`notes/gold150_followups_20260909/overleaf/tables_EFG_appendix.tex`](../notes/gold150_followups_20260909/overleaf/tables_EFG_appendix.tex).
+Official Table C remains P0 JSON-offset SFT, Gold150 exact **0.1215±0.0092**. Scores live in [`notes/gold150_followups_20260909/`](../notes/gold150_followups_20260909/README.md). Overleaf-synced TeX: [`notes/silver_plus_followups_20260909/tables_EFG_appendix.tex`](../notes/silver_plus_followups_20260909/tables_EFG_appendix.tex).
 
 ### Table E — P1 prompt contrast (does not replace P0)
 
@@ -156,8 +156,8 @@ Same `v6a_nocross` 2150/169, same LoRA budget, seeds 42/43/44. Only the instruct
 |---|---:|---:|
 | Official P0 (reused, not retrained) | **0.1215±0.0092** | 0.4459±0.0237 |
 | P1 $k=0$ | 0.1455±0.0196 | 0.4905±0.0109 |
-| P1 random $k=3$ | 0.0452±0.0067 | 0.3507 |
-| P1 $k$NN $k=3$ | 0.0315±0.0047 | 0.3491 |
+| P1 random $k=3$ | 0.0452±0.0067 | 0.3507±0.0085 |
+| P1 $k$NN $k=3$ | 0.0315±0.0047 | 0.3491±0.0122 |
 
 P1 $k=0$ seeds: 0.1293 / 0.1399 / 0.1673. Mean +0.024 versus P0, but the n=3 sample SDs overlap (seed 42 is slightly below that seed’s P0 0.1313). Adding three demonstrations collapses exact F1; exact ≪ relaxed remains a boundary / localisation gap. Do **not** put 0.1455 into Table C.
 

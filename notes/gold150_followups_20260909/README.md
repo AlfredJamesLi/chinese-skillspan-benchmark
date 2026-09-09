@@ -22,8 +22,8 @@ Same `v6a_nocross` 2150/169, same LoRA budget, seeds 42/43/44. Only the instruct
 |---|---:|---:|
 | Official P0 (reused) | **0.1215±0.0092** | 0.4459±0.0237 |
 | P1 $k=0$ | 0.1455±0.0196 | 0.4905±0.0109 |
-| P1 random $k=3$ | 0.0452±0.0067 | ~0.351 |
-| P1 $k$NN $k=3$ | 0.0315±0.0047 | ~0.349 |
+| P1 random $k=3$ | 0.0452±0.0067 | 0.3507±0.0085 |
+| P1 $k$NN $k=3$ | 0.0315±0.0047 | 0.3491±0.0122 |
 
 P1 $k=0$ seeds: 0.1293 / 0.1399 / 0.1673. Mean +0.024 vs P0, but sample SDs overlap. Demonstrations collapse exact F1.
 
@@ -52,9 +52,12 @@ About 1% of Silver-plus train sentences carry `macrodatas.cn` / 马克数据网.
 | Qwen P0 | 0.1215±0.0092 | 0.1071±0.0102 |
 | HEM-E | 0.4345±0.0235 | 0.4355±0.0250 |
 
+Overleaf-synced appendix TeX and numeric provenance: [`../silver_plus_followups_20260909/`](../silver_plus_followups_20260909/README.md).
+
 ## Files
 
-- `P1_CONTRAST_REPORT.md`, `P1_summary.json`
-- `sop_gold150_SUMMARY.json`
+- `P1_CONTRAST_REPORT.md`, `P1_summary.json`, `P1_CONTRAST_RESULTS.public.json`
+- `sop_gold150_SUMMARY.json`, `sop_gold150_DIAGNOSTIC.md`
 - `PEEL_RERUN_REPORT.md`, `PEEL_RERUN_RESULTS.json`
-- `overleaf/` — paste-ready TeX and English snippets for PeerJ
+- `peel_manifest/` — ID lists for the unofficial 2138/168 peel set (no job-ad text)
+- `overleaf/` — paste-ready TeX; `tables_EFG_appendix.tex` matches the Overleaf appendix
