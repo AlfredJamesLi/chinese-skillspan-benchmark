@@ -4,6 +4,10 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-09d)
+
+- Additional public model **JobBERT-zh v6a** (`AlfredJames/jobbert-zh-v6a`): Gold150 B2 typed exact **0.5536±0.0054** (seeds 42/43/44). Does **not** overwrite `AlfredJames/jobbert-zh` (V4 hybrid **0.4331**). Packaging: `release/huggingface-model-v6a/`. Gold150 remains outside Zenodo `v0.1.1`.
+
 ## Unreleased notes (2026-09-09c)
 
 - Overleaf appendix Studies E/F/G (P1 contrast, frozen SOP-on-Gold150, watermark peel) archived in `notes/silver_plus_followups_20260909/` with numeric provenance. Scores also in `notes/gold150_followups_20260909/`. Does **not** replace official P0 **0.1215±0.0092**, JobBERT v6a B2 **0.5536±0.0054**, or V4 hybrid JobBERT 3M **0.4331**. Gold150 remains outside Zenodo v0.1.1.
