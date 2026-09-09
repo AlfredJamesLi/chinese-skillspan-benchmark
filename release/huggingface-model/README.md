@@ -178,11 +178,18 @@ The backbone `hfl/chinese-roberta-wwm-ext` is listed as **Apache-2.0** on Huggin
 
 ---
 
+## Related checkpoint (do not replace this repo)
+
+Gold150 Silver-plus continuation (v6a B2, **0.5536±0.0054**, n=3 sample SD) is a **separate** Hub repository: [`AlfredJames/jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a). It keeps this encoder and continues the CRF. This repository remains the V4 hybrid 2601 row (**0.4331**). Do not swap the two numbers.
+
+---
+
 ## Links
 
 | Resource | URL |
 |---|---|
-| This model | https://huggingface.co/AlfredJames/jobbert-zh |
+| This model (V4, 0.4331) | https://huggingface.co/AlfredJames/jobbert-zh |
+| Gold150 v6a (0.5536±0.0054) | https://huggingface.co/AlfredJames/jobbert-zh-v6a |
 | Code and data | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
 | Zenodo version DOI (`v0.1.1`) | https://doi.org/10.5281/zenodo.22288338 |
 | Zenodo concept DOI | https://doi.org/10.5281/zenodo.22288337 |

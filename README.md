@@ -9,9 +9,10 @@ Manuscript under review at **PeerJ Computer Science** (single-anonymized review:
 | Code and data | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
 | Versioned archive (`v0.1.1`) | https://doi.org/10.5281/zenodo.22288338 |
 | Concept DOI | https://doi.org/10.5281/zenodo.22288337 |
-| JobBERT-zh | https://huggingface.co/AlfredJames/jobbert-zh |
+| JobBERT-zh (V4; hybrid 2601 exact **0.4331**) | https://huggingface.co/AlfredJames/jobbert-zh |
+| JobBERT-zh v6a (Gold150 B2 exact **0.5536±0.0054**) | https://huggingface.co/AlfredJames/jobbert-zh-v6a |
 
-Do not send reviewers through a Google Sites or Drive page. There is no separate Hugging Face dataset repository; use GitHub Release `v0.1.1` or the Zenodo record.
+Do not send reviewers through a Google Sites or Drive page. There is no separate Hugging Face dataset repository; use GitHub Release `v0.1.1` or the Zenodo record. Zenodo `v0.1.1` does **not** contain Gold150. Do not rank 0.5536 against 0.4331 in one table.
 
 ---
 
@@ -87,7 +88,7 @@ python3 scripts/eval_hybrid_cws_simhuman.py
 
 That script writes `tables/hybrid_cws_simhuman980_all_models.csv`. When `output/` is absent it falls back to `data/frozen_preds/` for the JobBERT-zh v4 rows. Several trainers still contain a laboratory root path; see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) before retraining.
 
-Weights are not stored in Git. Encoder + V4 CRF: https://huggingface.co/AlfredJames/jobbert-zh.
+Weights are not stored in Git. Encoder + V4 CRF (0.4331): https://huggingface.co/AlfredJames/jobbert-zh. Gold150 v6a B2 continuation (0.5536±0.0054): https://huggingface.co/AlfredJames/jobbert-zh-v6a.
 
 ---
 

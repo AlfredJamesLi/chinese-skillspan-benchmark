@@ -54,6 +54,8 @@ About 1% of Silver-plus train sentences carry `macrodatas.cn` / 马克数据网.
 
 Overleaf-synced appendix TeX and numeric provenance: [`../silver_plus_followups_20260909/`](../silver_plus_followups_20260909/README.md).
 
+Weights (do **not** overwrite V4): [`AlfredJames/jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a). Encoder is the same 3M dump as [`AlfredJames/jobbert-zh`](https://huggingface.co/AlfredJames/jobbert-zh).
+
 ## Files
 
 - `P1_CONTRAST_REPORT.md`, `P1_summary.json`, `P1_CONTRAST_RESULTS.public.json`
