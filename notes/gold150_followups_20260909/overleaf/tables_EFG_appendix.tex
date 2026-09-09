@@ -1,0 +1,87 @@
+% E/F/G are study identifiers; printed table numbers follow the manuscript counter.
+% Source: author-supplied Cursor handoff, 2026-09-09. Raw JSON paths are in the provenance paragraph.
+\section{Additional Prompt and Data Sensitivity Analyses}
+\label{sec:efg-followup}
+
+The following completed analyses retain the frozen Gold150 reference and \texttt{cnss-lskt-1.2.0}. They extend the sentence-level isolation study without replacing its designated results. Where repeated training is reported, values are means and sample standard deviations across seeds 42, 43, and 44, not test-set confidence intervals. Gold150 has already informed earlier analyses; these follow-ups are not a new blind evaluation.
+
+\subsection{E: Instruction and Demonstration Sensitivity}
+\label{sec:p1-contrast}
+
+The P1 experiment uses the same 2,150/169 \texttt{v6a\_nocross} manifest and LoRA training budget as the designated P0 experiment. It changes the instruction presentation to a system-role instruction with a JSON-wrapped input sentence. P0 is reused rather than retrained. For each P1 seed, one checkpoint is selected using frozen-development typed exact F1 without demonstrations ($k=0$), then shared by the no-demonstration, random-demonstration, and nearest-neighbor-demonstration conditions. Gold150 is excluded from gradient updates, the retrieval index, and checkpoint selection. Here, $k=0$ denotes inference without demonstrations after SFT, not a zero-shot, unfine-tuned model.
+
+\begin{table}[htbp]
+\caption{Study E: Qwen instruction and demonstration sensitivity on Gold150. P0 is the unchanged designated SFT result; all P1 inference conditions share the development-selected checkpoint within each seed. Values are typed micro-F1 (mean $\pm$ sample SD, three seeds).}
+\label{tab:appendix-e-p1}
+\centering
+\small
+\begin{tabularx}{\linewidth}{@{}Lcc@{}}
+\toprule
+Condition & Exact F1 & Relaxed F1 \\
+\midrule
+P0, reused & $0.1215\pm0.0092$ & $0.4459\pm0.0237$ \\
+P1, no demonstrations ($k=0$) & $0.1455\pm0.0196$ & $0.4905\pm0.0109$ \\
+P1, random demonstrations ($k=3$) & $0.0452\pm0.0067$ & $0.3507\pm0.0085$ \\
+P1, nearest-neighbor demonstrations ($k=3$) & $0.0315\pm0.0047$ & $0.3491\pm0.0122$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The P1 no-demonstration mean is numerically higher than P0, but the direction is not uniform across seeds. P1 exact F1 is 0.1293, 0.1399, and 0.1673 for seeds 42, 43, and 44, respectively; seed 42 is slightly below its P0 value of 0.1313. The three-seed summaries do not establish a statistically reliable improvement. Both demonstration conditions have substantially lower exact F1 in this setup, while retaining appreciable relaxed-match scores. This pattern is consistent with boundary/localization sensitivity, but aggregate F1 alone cannot isolate parser errors, type errors, boundary shifts, or demonstration-induced distribution changes. The contrast does not establish the general effectiveness or ineffectiveness of retrieval augmentation, and P1 does not replace the designated P0 result.
+
+\FloatBarrier
+\subsection{F: Frozen SOP Outputs Rescored Against Gold150}
+\label{sec:sop-gold-rescore}
+
+This analysis selects the 150 Gold150 identifiers from previously frozen outputs on the 2,601-record historical reference and scores those outputs against the human reference, retaining complete identifier coverage. It makes no new API calls and does not apply P1 to the archived language models. Table~\ref{tab:appendix-f-sop} uses raw SOP-extract-v4 outputs without additional Jieba boundary alignment; the Qwen row uses the archived parsed SOP output. The reference changes, not the model predictions. These are retrospective cross-reference diagnostics rather than an independent model ranking alongside the fine-tuned students.
+
+\begin{table}[htbp]
+\caption{Study F: archived SOP-extract-v4 outputs rescored on Gold150, without additional Jieba alignment. Each row covers all 150 identifiers and is a single frozen-output result, not a three-seed training mean or a new API evaluation.}
+\label{tab:appendix-f-sop}
+\centering
+\small
+\begin{tabularx}{\linewidth}{@{}Lcc@{}}
+\toprule
+Archived system & Exact F1 & Relaxed F1 \\
+\midrule
+Claude Sonnet 4.5 SOP & 0.3153 & 0.4287 \\
+GPT-5.4 SOP & 0.3103 & 0.4471 \\
+Kimi k2.6 SOP & 0.3070 & 0.4244 \\
+DeepSeek v4-pro SOP & 0.2951 & 0.4131 \\
+Qwen2.5-14B SOP, parsed & 0.2498 & 0.3475 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The older ChatGPT dump used a different \texttt{@@span\#\#} prompt rather than SOP extract v4. Rescoring that dump yields Gold150 exact F1 of 0.2614 without Jieba alignment and 0.2721 with it. These scores are distinct from the archived 2,601-record, Jieba-aligned value of 0.2854. No official \texttt{gpt-4o} SOP-extract-v4 run was performed, so no such row is inferred from this dump.
+
+\FloatBarrier
+\subsection{G: Crawler-Tail Cleaning Sensitivity}
+\label{sec:peel-sensitivity}
+
+The tail audit found the targeted crawler watermark in 23 of 2,150 training records (approximately 1.07\%) and two of 169 development records in the designated \texttt{v6a\_nocross} manifest; no Gold150 record contained it. Tail stripping, removal of emptied records, and exclusion of five additional punctuation-related NFC cross-set matches produced a separate 2,138/168 manifest. The original 2,156/169 v6a and 2,150/169 \texttt{v6a\_nocross} manifests, H/E/M inputs, and Gold150 were not overwritten. The separate H/E/M-E cleaning run retains 564 training records and modifies only record \texttt{1882-s0000}.
+
+\begin{table}[htbp]
+\caption{Study G: Gold150 typed exact micro-F1 before and after the separate tail-cleaning reruns (mean $\pm$ sample SD, three seeds). Designated results remain unchanged. The full-pool cleaning runs use the new 2,138/168 manifest; the H/E/M-E rerun retains its 564-record training size.}
+\label{tab:appendix-g-peel}
+\centering
+\small
+\begin{tabularx}{\linewidth}{@{}Lcc@{}}
+\toprule
+Condition & Designated result & Cleaning rerun \\
+\midrule
+JobBERT B2 & $0.5536\pm0.0054$ & $0.5509\pm0.0054$ \\
+JobBERT B1 & $0.1422\pm0.0138$ & $0.1507\pm0.0062$ \\
+Qwen P0 & $0.1215\pm0.0092$ & $0.1071\pm0.0102$ \\
+H/E/M-E & $0.4345\pm0.0235$ & $0.4355\pm0.0250$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Cleaning does not increase the designated B2 JobBERT or P0 Qwen mean. The JobBERT B2 estimate changes little numerically, whereas the Qwen P0 mean is lower; B1 and H/E/M-E move slightly upward. These descriptive changes do not establish equivalence or a general benefit of removing advertisement text. The full-pool reruns also change training/development membership and duplicate handling, so they are not a pure watermark ablation.
+
+\FloatBarrier
+\paragraph{Follow-up result provenance.}
+\begin{sloppypar}
+The experiment records are \path{P1_CONTRAST_RESULTS.json} under \path{silver_plus_p1_contrast_20260909/}, \path{SUMMARY.json} under \path{gold150_v4_subset_score_20260909/}, and \path{PEEL_RERUN_RESULTS.json} under \path{silver_plus_peel_rerun_20260909/}. Paths are relative to the experiment output root. These records refer to the same frozen Gold150 checksum identified in \nameref{sec:extension-provenance}; a named experiment artifact is not a claim that it has already been included in the cited Zenodo release.
+\end{sloppypar}

@@ -1,0 +1,81 @@
+% Paste into Overleaf. Scorer: cnss-lskt-1.2.0.
+% SD = n=3 sample SD, not a test CI.
+% Do not put Table A and Tables B--D in one ranking.
+
+% ----- Table A : V4 hybrid 2601 (abstract / main) -----
+\begin{table}[t]
+\caption{Typed span F1 on the V4 hybrid test (2,601 unique IDs; jieba snap for dump/encoder rows). Not Gold150.}
+\label{tab:hybrid2601}
+\centering
+\begin{tabular}{lcc}
+\hline
+System & Exact & Relaxed \\
+\hline
+JobBERT-zh 3M v4 + jieba & \textbf{0.4331} & 0.5873 \\
+JobBERT-zh 1M v4 + jieba & 0.4272 & 0.5952 \\
+ChatGPT (\texttt{gpt-4o}) dump + jieba & 0.2854 & \textbf{0.6249} \\
+Qwen2.5-14B official SOP extract (no LoRA) & 0.1724 & 0.3279 \\
+\hline
+\end{tabular}
+\end{table}
+
+% ----- Table B : Gold150 JobBERT -----
+\begin{table}[t]
+\caption{Gold150 typed exact F1 for JobBERT-zh 3M continued from the released CRF. Isolation is sentence-level (extended) from v4. v6a is the additional-experiment main cell. SD is the sample SD over seeds 42/43/44.}
+\label{tab:gold150-jobbert}
+\centering
+\begin{tabular}{lccc}
+\hline
+Version & train/dev & B1 exact & B2 exact \\
+\hline
+v3 & 1382/169 & $0.1390\pm0.0112$ & $0.5299\pm0.0105$ \\
+v4 & 1913/169 & $0.1398\pm0.0033$ & $0.5436\pm0.0031$ \\
+v5 & 2200/169 & $0.1365\pm0.0077$ & $0.5540\pm0.0041$ \\
+\textbf{v6a} & \textbf{2156/169} & $0.1422\pm0.0138$ & $\mathbf{0.5536\pm0.0054}$ \\
+v6b & 2200/132 & $0.1332\pm0.0052$ & $0.5540\pm0.0041$ \\
+\hline
+\end{tabular}
+
+\vspace{0.4em}
+{\small v6a B2 relaxed $0.6890\pm0.0085$; Challenge-100 $0.5803\pm0.0036$; Audit-50 $0.5071\pm0.0092$.
+Type exact $\approx$ L/K/S/T $=0.867/0.491/0.555/0.616$.
+v6b B2 weights equal v5 B2; not new evidence.
+Do not rank against Table~\ref{tab:hybrid2601}.}
+\end{table}
+
+% ----- Table C : Gold150 Qwen JSON-offset (supplement) -----
+\begin{table}[t]
+\caption{Gold150 Qwen2.5-14B JSON-offset LoRA (not official SOP extract 0.1724). Official cell is P0 SFT, no demonstrations.}
+\label{tab:gold150-qwen}
+\centering
+\begin{tabular}{llcc}
+\hline
+Data / selection & Condition & Exact & Relaxed \\
+\hline
+v3 1382, last epoch & B1 & $0.0162\pm0.0056$ & $0.2513\pm0.0120$ \\
+v3 1382, last epoch & B2 & $0.0788\pm0.0108$ & $0.4166\pm0.0056$ \\
+v6a\_nocross 2150, dev select & B2 only & $\mathbf{0.1215\pm0.0092}$ & $0.4459\pm0.0237$ \\
+\hline
+\end{tabular}
+
+\vspace{0.4em}
+{\small Seeds 42/43/44 exact: 0.1313 / 0.1203 / 0.1129.
+Parse failures 4--5/150.
+A later P1 / $k$NN contrast and a watermark-peel retrain are in Tables~\ref{tab:p1-contrast}--\ref{tab:peel-rerun}; they do \textbf{not} replace this row.}
+\end{table}
+
+% ----- Table D : HEM (supplement) -----
+\begin{table}[t]
+\caption{Equal-$n$ HEM JobBERT (DAPT encoder + reinitialised CRF; 564 sentences each). Does not replace v6a 0.5536.}
+\label{tab:hem}
+\centering
+\begin{tabular}{lcc}
+\hline
+Condition & Exact & Relaxed \\
+\hline
+H\_468 & $0.4541\pm0.0103$ & $0.6041\pm0.0096$ \\
+E\_468 & $0.4345\pm0.0235$ & $0.5776\pm0.0237$ \\
+M\_468 & $0.4562\pm0.0236$ & $0.6089\pm0.0281$ \\
+\hline
+\end{tabular}
+\end{table}
