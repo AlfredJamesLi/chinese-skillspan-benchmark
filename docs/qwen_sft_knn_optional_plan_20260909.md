@@ -1,8 +1,7 @@
 # Qwen2.5-14B-Instruct：P1-SFT 与可选检索示例（备选实验）
 
-日期：2026-09-09。**仅设计**。没有启动训练、改标签、推送权重或修改历史论文结果。  
-正式 Qwen 行仍是 P0 JSON-offset SFT：Gold150 typed exact **0.1215±0.0092**，relaxed **0.4459±0.0237**（`notes/silver_plus_extensions_20260908/`）。  
-提示词加长和 KNN **都不保证**提高 F1。exact≪relaxed 提示应检查边界/定位，不能仅据此断言偏移是唯一主因。
+日期：2026-09-09。设计已按该协议跑完附录对照（同 checkpoint：$k=0$ / 随机 $k=3$ / $k$NN $k=3$）。正式 Qwen 行仍是 P0：**0.1215±0.0092**。分数见 [`notes/gold150_followups_20260909/`](../notes/gold150_followups_20260909/README.md)。未改标签、未推送权重、未改写 Table C。  
+提示词加长的零样本均值略高但样本 SD 咬住；加 3 条 demo 伤害 exact F1。exact≪relaxed 仍是边界/定位。
 
 ## 提示词编号
 

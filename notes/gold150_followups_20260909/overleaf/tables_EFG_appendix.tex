@@ -1,0 +1,71 @@
+% Appendix tables. Paste after Tables A--D.
+% Do not promote these into the main ranking. Scorer: cnss-lskt-1.2.0.
+% SD = n=3 sample SD, not a test CI.
+
+% ----- Table E : P1 prompt contrast (does not replace Table C) -----
+\begin{table}[t]
+\caption{Gold150 Qwen2.5-14B P1 prompt contrast on the same LoRA budget as official P0. Official Table~\ref{tab:gold150-qwen} remains $0.1215\pm0.0092$. Same checkpoint; three inferences. Gold150 was not used for training, retrieval, or selection.}
+\label{tab:p1-contrast}
+\centering
+\begin{tabular}{lcc}
+\hline
+Condition & Exact & Relaxed \\
+\hline
+Official P0 (reused, not retrained) & $\mathbf{0.1215\pm0.0092}$ & $0.4459\pm0.0237$ \\
+P1, $k{=}0$ & $0.1455\pm0.0196$ & $0.4905\pm0.0109$ \\
+P1, random $k{=}3$ & $0.0452\pm0.0067$ & $0.3507$ \\
+P1, $k$NN $k{=}3$ & $0.0315\pm0.0047$ & $0.3491$ \\
+\hline
+\end{tabular}
+
+\vspace{0.4em}
+{\small P1 $k{=}0$ seeds 42/43/44: 0.1293 / 0.1399 / 0.1673.
+Selected on frozen-dev $k{=}0$ (epochs 5/6/6).
+Parse failures $\approx$4/150.
+Do not replace Table~\ref{tab:gold150-qwen}.}
+\end{table}
+
+% ----- Table F : frozen V4/SOP preds on Gold150 -----
+\begin{table}[t]
+\caption{Frozen SOP-extract v4 predictions scored on Gold150 human gold (same 150 IDs, new gold; not a new API call). Not Table~\ref{tab:hybrid2601} and not Table~\ref{tab:gold150-jobbert}. Raw spans, no jieba.}
+\label{tab:gold150-sop-subset}
+\centering
+\begin{tabular}{lcc}
+\hline
+System (SOP extract v4) & Exact & Relaxed \\
+\hline
+Claude Sonnet 4.5 & 0.3153 & 0.4287 \\
+GPT-5.4 & 0.3103 & 0.4471 \\
+Kimi k2.6 & 0.3070 & 0.4244 \\
+DeepSeek v4-pro & 0.2951 & 0.4131 \\
+Qwen2.5-14B (local, parsed) & 0.2498 & 0.3475 \\
+\hline
+\end{tabular}
+
+\vspace{0.4em}
+{\small Official \texttt{gpt-4o}+SOP was never run.
+The older ChatGPT \texttt{@@span\#\#} dump is a different prompt (Gold150 exact 0.2614 raw / 0.2721 jieba).
+Do not rank against 0.5536.}
+\end{table}
+
+% ----- Table G : watermark peel retrain -----
+\begin{table}[t]
+\caption{Retrain after stripping \emph{macrodatas.cn} / 马克数据网 watermarks (new list 2138/168). Official v6a 2156/169 and v6a\_nocross 2150/169 are unchanged. No lift on the main cells.}
+\label{tab:peel-rerun}
+\centering
+\begin{tabular}{lcc}
+\hline
+Condition & Official & After peel \\
+\hline
+JobBERT B2 & $0.5536\pm0.0054$ & $0.5509\pm0.0054$ \\
+JobBERT B1 & $0.1422\pm0.0138$ & $0.1507\pm0.0062$ \\
+Qwen P0 & $0.1215\pm0.0092$ & $0.1071\pm0.0102$ \\
+HEM-E & $0.4345\pm0.0235$ & $0.4355\pm0.0250$ \\
+\hline
+\end{tabular}
+
+\vspace{0.4em}
+{\small Gold150 has 0 watermark sentences.
+Train hits were 23/2150 ($\approx$1\%).
+Do not rewrite Tables~\ref{tab:gold150-jobbert}--\ref{tab:hem}.}
+\end{table}

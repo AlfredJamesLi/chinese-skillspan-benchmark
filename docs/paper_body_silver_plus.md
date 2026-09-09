@@ -144,18 +144,49 @@ JobBERT-zh 1M × Silver-plus was **not** run (different DAPT recipe; no CRF sele
 
 ---
 
-## 6. Would a longer prompt or kNN help Qwen?
+## 6. Appendix-only follow-ups (do not rewrite Tables A–D)
 
-**Official Table C is unchanged:** P0 JSON-offset SFT, Gold150 exact **0.1215±0.0092**. A withdrawn `knn_index/` on disk has **no** official F1.
+Official Table C remains P0 JSON-offset SFT, Gold150 exact **0.1215±0.0092**. Scores live in [`notes/gold150_followups_20260909/`](../notes/gold150_followups_20260909/README.md). Paste-ready TeX: [`notes/gold150_followups_20260909/overleaf/tables_EFG_appendix.tex`](../notes/gold150_followups_20260909/overleaf/tables_EFG_appendix.tex).
 
-A **design candidate** now exists and is **not trained**:
+### Table E — P1 prompt contrast (does not replace P0)
 
-- P1 prompt (scope / type / boundary from `v4212_rev2`, not SOP 0.1724): [`docs/qwen_lskt_sft_v1_proposal_20260909.md`](qwen_lskt_sft_v1_proposal_20260909.md), model text [`docs/qwen_lskt_sft_v1_prompt.txt`](qwen_lskt_sft_v1_prompt.txt)
-- Optional kNN / random k=3 on a **single** P1-SFT checkpoint: [`docs/qwen_sft_knn_optional_plan_20260909.md`](qwen_sft_knn_optional_plan_20260909.md)
+Same `v6a_nocross` 2150/169, same LoRA budget, seeds 42/43/44. Only the instruction changes (system role + JSON-wrapped sentence; design in [`docs/qwen_lskt_sft_v1_proposal_20260909.md`](qwen_lskt_sft_v1_proposal_20260909.md)). Select on frozen-dev $k=0$. Same checkpoint decoded at $k=0$, random $k=3$, and $k$NN $k=3$. Gold150 was not used for gradients, neighbours, or selection.
 
-P1 uses a real `system` role and JSON-encodes the sentence. Official P1-SFT would use **USER_K0** (no empty examples array). kNN is inference-only in phase 1; retrieval-aware SFT would be a new adapter and needs a separate approval.
+| Condition | Gold150 exact | Gold150 relaxed |
+|---|---:|---:|
+| Official P0 (reused, not retrained) | **0.1215±0.0092** | 0.4459±0.0237 |
+| P1 $k=0$ | 0.1455±0.0196 | 0.4905±0.0109 |
+| P1 random $k=3$ | 0.0452±0.0067 | 0.3507 |
+| P1 $k$NN $k=3$ | 0.0315±0.0047 | 0.3491 |
 
-Do not tune P1 or k on Gold150. Do not put a kNN number into Table C unless that run exists under a frozen protocol. Do not mix an output-schema ablation (`text+occurrence`) with the prompt / kNN contrast.
+P1 $k=0$ seeds: 0.1293 / 0.1399 / 0.1673. Mean +0.024 versus P0, but the n=3 sample SDs overlap (seed 42 is slightly below that seed’s P0 0.1313). Adding three demonstrations collapses exact F1; exact ≪ relaxed remains a boundary / localisation gap. Do **not** put 0.1455 into Table C.
+
+### Table F — frozen V4/SOP predictions on Gold150 (not a new API)
+
+The 150 Gold IDs sit inside hybrid 2601. Same frozen SOP-extract v4 predictions, new human gold, raw spans, no jieba. Official `gpt-4o`+SOP was never run. Do not rank against JobBERT student 0.5536 or mix with the older ChatGPT `@@span##` dump.
+
+| System (SOP extract v4) | exact | relaxed |
+|---|---:|---:|
+| Claude Sonnet 4.5 | 0.3153 | 0.4287 |
+| GPT-5.4 | 0.3103 | 0.4471 |
+| Kimi k2.6 | 0.3070 | 0.4244 |
+| DeepSeek v4-pro | 0.2951 | 0.4131 |
+| Qwen2.5-14B (local, parsed) | 0.2498 | 0.3475 |
+
+Older ChatGPT `@@span##` dump on the same gold: 0.2614 raw / 0.2721 jieba. That is a different prompt, not Table A’s 0.2854 (hybrid 2601 + jieba).
+
+### Table G — watermark peel + retrain (no lift)
+
+About 1% of Silver-plus train sentences carry `macrodatas.cn` / 马克数据网. Gold150 has **0**. A **new** 2138/168 list was stripped and retrained; official v6a 2156/169 and `v6a_nocross` 2150/169 were not overwritten. The cleaned list also dropped empty-ad rows and five punctuation NFC collisions, so this is not a pure watermark ablation.
+
+| Condition | Official | After peel |
+|---|---:|---:|
+| JobBERT B2 | 0.5536±0.0054 | 0.5509±0.0054 |
+| JobBERT B1 | 0.1422±0.0138 | 0.1507±0.0062 |
+| Qwen P0 | 0.1215±0.0092 | 0.1071±0.0102 |
+| HEM-E | 0.4345±0.0235 | 0.4355±0.0250 |
+
+Do **not** write that peel-cleaning improved the main cells, and do not rewrite Tables B–D from this row.
 
 ---
 ## 7. Limitations that stay in the main text
@@ -165,7 +196,9 @@ Do not tune P1 or k on Gold150. Do not put a kNN number into Table C unless that
 - v3–v6a JobBERT inherit the released CRF; independence is unproven.  
 - HEM is one sample of H/E/M; it does not estimate sampling uncertainty.  
 - Extension Qwen is B2-only.  
-- JobBERT-zh 1M Silver-plus was skipped.
+- JobBERT-zh 1M Silver-plus was skipped.  
+- P1 $k=0$ is a mean lift of +0.024 with overlapping sample SDs; demonstrations hurt exact F1. It does not replace Table C.  
+- A crawler watermark is present in about 1% of Silver-plus train sentences; stripping it and retraining did not raise the official cells.
 
-Score archives (no weights): [`notes/silver_plus_extensions_20260908/`](../notes/silver_plus_extensions_20260908/README.md).  
+Score archives (no weights): [`notes/silver_plus_extensions_20260908/`](../notes/silver_plus_extensions_20260908/README.md), [`notes/gold150_followups_20260909/`](../notes/gold150_followups_20260909/README.md).  
 Scripts: `scripts/train_jobbert_phase1.py`, `scripts/train_qwen_ext_sft.py`, `scripts/qwen_ext_protocol.py`.
