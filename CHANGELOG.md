@@ -4,11 +4,12 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
-## Unreleased notes (2026-09-11)
+## 0.1.3 — 2026-09-11 (Gold150 on the versioned Git tree)
 
-- GitHub `main` now includes Gold150 (`data/gold150_test.jsonl`, sha `ca8db0bc…`) and Silver-plus B2 `v6a_nocross` train/dev. These files are **not** in Zenodo `v0.1.1` or `v0.1.2`. No new Zenodo version has been minted.
-- DAS, `CITATION.cff`, and `REPRODUCIBILITY.md` checksums synced to archive **`v0.1.2`** (DOI `10.5281/zenodo.22685143`) plus Handbook B **v4.2.14**.
-- README uses a draft workflow figure (`figures/fig_pipeline_overview.jpg`).
+- GitHub tag **`v0.1.3`**: includes `data/gold150_test.jsonl` and Silver-plus B2 `v6a_nocross` train/dev, Handbook B v4.2.14, and the draft workflow figure.
+- Does **not** overwrite `v0.1.1` (DOI `10.5281/zenodo.22288338`) or `v0.1.2` (DOI `10.5281/zenodo.22685143`).
+- Zenodo version DOI is minted by the existing GitHub–Zenodo release hook after this tag; fill it into `DATA_AVAILABILITY.md` once the record exists.
+- Paper-main gold remains V4 hybrid 2,601. Qwen LoRA is still not in the archive.
 
 ## Unreleased notes (2026-09-09d)
 
