@@ -109,7 +109,9 @@ Replace every `[TODO: … URL]` / DOI in:
 - [x] `README.md` (Zenodo `v0.1.1` + GitHub + JobBERT-zh)
 - [x] `CITATION.cff` (Zenodo-safe; version `0.1.1`)
 - [x] `DATA_AVAILABILITY.md`
-- [x] `release/huggingface-model/README.md` (local template; Hub card must match)
+- [x] `docs/TERMINOLOGY_CROSSWALK.md` (reader names; does not rename artifacts)
+- [ ] `release/huggingface-model/README.md` (local template; **Hub sync pending** for reader wording)
+- [ ] `release/huggingface-model-v6a/README.md` (local template; **Hub sync pending**)
 - [x] `release/huggingface-dataset/README.md` (template only; no Hub dataset repo)
 - [x] `release/zenodo/.zenodo.json` (no placeholder related identifiers)
 

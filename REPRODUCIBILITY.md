@@ -2,7 +2,7 @@
 
 This document states only what this repository can actually re-run. Placeholders mark facts that are not verified in the tree.
 
-Companion files: [README.md](README.md), [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md), `notes/DATA_PROTOCOL_FREEZE.md`. SHA-256 values belong in this file, not in the manuscript Data Availability paragraph.
+Companion files: [README.md](README.md), [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md), `notes/DATA_PROTOCOL_FREEZE.md`, reader names in [`docs/TERMINOLOGY_CROSSWALK.md`](docs/TERMINOLOGY_CROSSWALK.md). SHA-256 values belong in this file, not in the manuscript Data Availability paragraph.
 
 ---
 
@@ -66,6 +66,8 @@ SHA-256 values below were computed from the files in this workspace.
 
 Release version string: GitHub / Zenodo **`v0.1.1`**.
 
+Documented SHA-256 of the 150-sentence human-annotated reference set (`gold150_test.jsonl`, artifact Gold150): `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`. **That file is not in this Git clone.** Do not claim an in-tree verification of those bytes. `scripts/eval_gold150_ext.py` still expects `Gold150_locked_complete_20260908/gold150_test.jsonl` (path and split keys `gold100_page1` / `iaa50` unchanged).
+
 `scripts/eval_hybrid_cws_simhuman.py` can **rewrite** the hybrid gold from SOP-CWS + SimHuman sources. After any such run, re-check the SHA-256 above before treating the file as the frozen paper gold.
 
 ---
@@ -85,9 +87,10 @@ Verified in `scripts/train_cn_roberta_crf.py` and the 3M V4 wrapper:
 ## 5. Preprocessing pipeline
 
 1. Job-advertisement sentences are stored as JSON / JSONL with character-level `tokens` and BIO field `list_of_selection_bio4`.
-2. V4 silver train/dev are SOP-derived labels, not human Gold.
+2. V4 silver train/dev are SOP-derived labels, not human Gold. Later **Silver-plus** lists are a separate teacher-generated release layer (automated validation and sampled human review). Do not treat them as the V4 silver files above.
 3. Paper-main test labels: start from SOP-CWS on the Gold v2 ID set, overlay 980 SimHuman `rule_v4` sentences, jieba-snap gold **and** predictions (`scripts/cws_snap.py`).
 4. Official alignment: one prediction per gold `id`; extra predicted IDs are counted but not scored (`--align-mode official`).
+5. The human reference set is scoring-only. It is not used for training, early stopping, or prompt choice.
 
 Character offsets in human annotation are authoritative; jieba is a validator / derived view (Handbook B).
 

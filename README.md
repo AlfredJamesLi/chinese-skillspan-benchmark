@@ -57,15 +57,34 @@ The V4 hybrid is **derived** (980 SimHuman rule_v4 spans + 1,621 SOP-CWS spans).
 
 A first-page human overlay of **200** sentences is at `data/human_gold_page1_200.jsonl`. It is not the abstract gold. Checksums live in [REPRODUCIBILITY.md](REPRODUCIBILITY.md), not in running prose.
 
-A later Handbook-B human diagnostic (project-26 first **85** official spans + frozen **IAA-50**, plus span-length bins) is in [`reports/human_gold85_iaa50/`](reports/human_gold85_iaa50/README.md). On that gold, typed exact scales with instruction-model size (JobBERT-zh CRF **0.13** / Qwen2.5-14B SOP+jieba **0.26** / Kimi on IAA-50 **0.62**). **Not** a replacement for V4 hybrid JobBERT 3M **0.4331**.
+A later Handbook-B human diagnostic (project-26 first **85** official spans + the frozen **50-sentence calibration cohort**, artifact **IAA-50**, plus span-length bins) is in [`reports/human_gold85_iaa50/`](reports/human_gold85_iaa50/README.md). Independent-coding evidence on that report is for the **initial independent-coding study**, not for the full 150-sentence human reference set. On that gold, typed exact scales with instruction-model size (JobBERT-zh CRF **0.13** / Qwen2.5-14B SOP+jieba **0.26** / Kimi on IAA-50 **0.62**). **Not** a replacement for V4 hybrid JobBERT 3M **0.4331**.
+
+Reader names for Gold150, Silver-plus, B1/B2, and H/E/M: [`docs/TERMINOLOGY_CROSSWALK.md`](docs/TERMINOLOGY_CROSSWALK.md).
 
 ---
 
-## Silver-plus / Gold150 (manuscript body)
+## Silver-plus and the human reference set (manuscript body)
 
-Methods and Gold150 numbers intended for the PeerJ **main text** — including the JobBERT-zh CRF (no prompt) versus Qwen2.5-14B JSON-offset LoRA (fixed prompt, no demonstrations) — are in [`docs/paper_body_silver_plus.md`](docs/paper_body_silver_plus.md).
+**Silver-plus** is the resource **release-layer** name for teacher-generated silver annotations (LLM-annotated silver data with automated validation and sampled human review). Plus is not a recognised quality grade. The layer is not item-by-item human verified and is not near-Gold. Review status and adjudication status are recorded separately.
 
- That section does **not** replace V4 hybrid JobBERT 3M **0.4331**. Official Qwen P0 remains **0.1215±0.0092**. A later P1 / SOP-on-Gold150 / watermark-peel contrast is archived in [`notes/gold150_followups_20260909/`](notes/gold150_followups_20260909/README.md) and the Overleaf E/F/G pack [`notes/silver_plus_followups_20260909/`](notes/silver_plus_followups_20260909/README.md) and does **not** replace Tables A–D. Tentative Gold150 main cell: JobBERT-zh 3M, v6a, B2 typed exact **0.5536±0.0054** (n=3 sample SD). Qwen JSON-offset is a supplement and is **not** official SOP extract **0.1724**.
+A **150-sentence human-annotated reference set** (artifact **Gold150**; file `gold150_test.jsonl`, not renamed) is used for **scoring only**. After this mention, this README calls it **the human reference set**. It is not independent dual-blind coding of all 150 sentences. It comprises a **100-sentence challenge cohort** (split `gold100_page1`) and a **50-sentence calibration cohort** (split `iaa50`). Isolation wording remains **sentence-level isolation (extended)**; do not call it document isolation after v4.
+
+Methods and Gold150 numbers intended for the PeerJ **main text** — including the JobBERT-zh CRF (no prompt) versus Qwen2.5-14B JSON-offset LoRA (fixed prompt, no demonstrations) — are in [`docs/paper_body_silver_plus.md`](docs/paper_body_silver_plus.md). B1/B2 keep those condition codes and compare **earlier** versus **revised** supervision (handbook + teacher + adjudication). H/E/M are conflict-origin / non-conflict-origin / mixed training conditions, not an objective difficulty taxonomy.
+
+That section does **not** replace V4 hybrid JobBERT 3M **0.4331**. Official Qwen P0 remains **0.1215±0.0092**. A later P1 / SOP-on-Gold150 / watermark-peel contrast is archived in [`notes/gold150_followups_20260909/`](notes/gold150_followups_20260909/README.md) and the Overleaf E/F/G pack [`notes/silver_plus_followups_20260909/`](notes/silver_plus_followups_20260909/README.md) and does **not** replace Tables A–D. Tentative Gold150 main cell: JobBERT-zh 3M, v6a, B2 typed exact **0.5536±0.0054** (n=3 sample SD). Qwen JSON-offset is a supplement and is **not** official SOP extract **0.1724**.
+
+### Figure 1 (workflow)
+
+The manuscript overview figure is archived as `notes/manuscript_display_archive_20260910/displays/figure_01.tex`. Read it as:
+
+1. Multi-source Chinese corpus → human-led specification and the human reference set.
+2. Frozen specification / prompts + candidate text → teacher-generated Silver-plus.
+3. Eligible silver supervision → JobBERT-zh + CRF and Qwen2.5-14B-Instruct + LoRA.
+4. The human reference set enters scoring only.
+5. Domain-adaptive pre-training is the JobBERT branch.
+6. LLM inference baselines and teacher annotation are different roles.
+
+The figure does **not** mean that every system shares one protocol, or that later rows are a fresh independent blind test.
 
 ## Quick start
 
@@ -112,7 +131,7 @@ data/
   dev_lskt_v4_silver.jsonl
   frozen_preds/
   human_gold_page1_200.jsonl
-docs/                   # manuscript-body drafts
+docs/                   # manuscript-body drafts; reader terminology in TERMINOLOGY_CROSSWALK.md
 notes/handbooks/        # Handbook B (paper SOP)
 tables/
 release/                # Hugging Face and Zenodo templates
@@ -157,6 +176,7 @@ Code and dataset licences are **not yet assigned**. Do not treat the raw adverti
 
 - Labels are flat and non-overlapping. Nested or crossing spans are out of scope.
 - The paper-main V4 test file is derived, not a completed human gold.
+- The 150-sentence human reference set is not a freshly blinded re-test of every protocol; handbook-development exposure and sentence-level isolation remain in force.
 - Job advertisements can contain employer names and workplace locations. Do not scrape, republish, or re-identify individuals.
 - Domain shift across the four sources is large.
 - Do not use the resource to profile applicants, infer protected attributes, or claim ESCO concept-ID accuracy.

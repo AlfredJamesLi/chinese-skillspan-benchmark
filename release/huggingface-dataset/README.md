@@ -46,6 +46,8 @@ The public dataset name is **Chinese-SkillSpan**. Do not use older working title
 
 Paper-main test labels are the **V4 hybrid** (derived). Gold v2 is a separately frozen human/Doccano-derived file on the **same 2,601 IDs**. Do not mix the two protocols when reporting a single SOTA number.
 
+A later **150-sentence human-annotated reference set** (artifact Gold150; `gold150_test.jsonl`) is scoring-only and is **not** in Zenodo `v0.1.1`. **Silver-plus** is the release-layer name for teacher-generated silver annotations, not a quality grade. Names: [`docs/TERMINOLOGY_CROSSWALK.md`](../../docs/TERMINOLOGY_CROSSWALK.md).
+
 ---
 
 ## Dataset size and source composition
@@ -193,6 +195,7 @@ There is **no** `esco_id` field.
 - V4 hybrid: **not** a second full human pass. 980 IDs are SimHuman `rule_v4`; 1,621 are SOP-CWS; both are jieba-snapped.
 - Human page-1 200: first 200 of a 980-sentence queue; annotator display names appear in internal packs; **not** dual-blind IAA.
 - Official annotator SOP: Handbook B only. Handbook A is provenance.
+- A 50-sentence calibration cohort (artifact IAA-50) is the historical **initial independent-coding study**. That evidence does not apply to the full 150-sentence human reference set.
 
 A full-human V4 gold IAA design has not been published.
 

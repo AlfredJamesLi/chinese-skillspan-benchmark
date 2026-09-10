@@ -1,6 +1,6 @@
 # JobBERT-zh v6a CRF heads (Gold150)
 
-These `best.pt` files are `BertCRF` state dicts continued from the released V4 head on Silver-plus v6a B2. They are **not** `AutoModelForTokenClassification` dumps.
+These `best.pt` files are `BertCRF` state dicts continued from the released V4 head on Silver-plus v6a B2 (revised supervision). They are **not** `AutoModelForTokenClassification` dumps. They are scored on the 150-sentence human-annotated reference set (artifact Gold150).
 
 | Path | Seed | Gold150 typed exact |
 |---|---:|---:|

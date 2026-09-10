@@ -59,6 +59,7 @@ else:
 
     for rel in (
         "release/huggingface-model/README.md",
+        "release/huggingface-model-v6a/README.md",
         "release/huggingface-dataset/README.md",
     ):
         raw = (PAPER / rel).read_text()
@@ -81,7 +82,10 @@ md_files = [
     "CHANGELOG.md",
     "CONTRIBUTING.md",
     "docs/RELEASE_CHECKLIST.md",
+    "docs/TERMINOLOGY_CROSSWALK.md",
+    "docs/paper_body_silver_plus.md",
     "release/huggingface-model/README.md",
+    "release/huggingface-model-v6a/README.md",
     "release/huggingface-dataset/README.md",
     "release/zenodo/README.md",
     "release/zenodo/RELEASE_MANIFEST.md",

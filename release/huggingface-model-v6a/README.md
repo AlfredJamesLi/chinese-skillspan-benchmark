@@ -22,14 +22,16 @@ base_model: AlfredJames/jobbert-zh
 
 # JobBERT-zh v6a (Gold150)
 
-This repository is the **Gold150 continuation** of JobBERT-zh. It is an **additional version**, not a replacement of the V4 hybrid 2601 encoder row.
+This repository continues JobBERT-zh on **Silver-plus** v6a **B2** (**revised** supervision) and is scored on a **150-sentence human-annotated reference set** (artifact **Gold150**; file `gold150_test.jsonl`, not renamed). It is an **additional version**, not a replacement of the V4 hybrid 2601 encoder row. Silver-plus is a release-layer name (teacher-generated silver annotations with automated validation and sampled human review), not a recognised quality grade.
+
+Reader names: [`docs/TERMINOLOGY_CROSSWALK.md`](../../docs/TERMINOLOGY_CROSSWALK.md).
 
 | Checkpoint | Hub | Test | Typed exact F1 |
 |---|---|---|---|
 | V4 (paper-main encoder) | [`AlfredJames/jobbert-zh`](https://huggingface.co/AlfredJames/jobbert-zh) | V4 hybrid 2601 + jieba | **0.4331** |
 | **v6a B2 (this repo)** | [`AlfredJames/jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a) | Gold150 | **0.5536±0.0054** (n=3 sample SD) |
 
-Do **not** rank 0.5536 against 0.4331, official Qwen SOP extract 0.1724, or Gold v2 ChatGPT 0.6365 in one table. SD is a **three-seed sample SD**, not a test-set confidence interval. Gold150 is **not** in Zenodo `v0.1.1`.
+Do **not** rank 0.5536 against 0.4331, official Qwen SOP extract 0.1724, or Gold v2 ChatGPT 0.6365 in one table. SD is a **three-seed sample SD**, not a test-set confidence interval. The human reference set is **not** in Zenodo `v0.1.1`. It is scoring-only and is not independent dual-blind coding of all 150 sentences.
 
 - Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
 - V4 weights (unchanged): https://huggingface.co/AlfredJames/jobbert-zh
@@ -39,7 +41,7 @@ Do **not** rank 0.5536 against 0.4331, official Qwen SOP extract 0.1724, or Gold
 
 ## What this repository contains
 
-Same 3M DAPT encoder as `AlfredJames/jobbert-zh`. Only the CRF head is continued from the released V4 `crf/best.pt` on Silver-plus **v6a B2** (2,156 train / 169 frozen dev).
+Same 3M DAPT encoder as `AlfredJames/jobbert-zh`. Only the CRF head is continued from the released V4 `crf/best.pt` on Silver-plus **v6a B2** (revised supervision; 2,156 train / 169 frozen dev).
 
 | Path | Role |
 |---|---|
@@ -67,8 +69,8 @@ Init CRF (not in this repo): V4 `AlfredJames/jobbert-zh` `crf/best.pt`, SHA-256 
 - Encoder frozen as the released 3M JobBERT-zh (`ckpt65000`).
 - CRF continued with AdamW \(2\times10^{-5}\), weight decay 0.01, batch 16, at most 6 epochs, patience 2, 10% warmup.
 - Checkpoint = argmax frozen-dev typed exact.
-- Labels: Silver-plus teacher **B2** (not B1). Isolation: sentence-level (extended).
-- Scorer: `cnss-lskt-1.2.0`. Gold150 SHA-256 `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`.
+- Labels: Silver-plus teacher **B2** (revised supervision, not B1). Isolation: sentence-level (extended).
+- Scorer: `cnss-lskt-1.2.0`. Human reference set SHA-256 `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`.
 - No jieba snap on this Gold150 cell (character CRF vs human overlay).
 
 There is no `AutoModelForTokenClassification` export.
@@ -109,7 +111,8 @@ The paper class is `BertCRF` in `scripts/train_cn_roberta_crf.py`.
 
 - Replacing `AlfredJames/jobbert-zh` (0.4331 on V4 hybrid 2601)
 - Applicant screening or ESCO concept-ID prediction
-- Treating 0.5536 as a test CI, or as an independent re-test of the same systems on 2,601 IDs (Gold150 IDs sit inside hybrid 2601)
+- Treating 0.5536 as a test CI, or as an independent re-test of the same systems on 2,601 IDs (human-reference IDs sit inside hybrid 2601)
+- Calling Silver-plus a quality grade, or the full 150-sentence set an independent dual-blind coding
 - Peel-rerun heads (0.5509); those did not beat 0.5536 and are not this dump
 
 ---
