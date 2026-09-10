@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\caption{Pairwise seed win rates, computed as $P(F1_{\mathrm{row}}>F1_{\mathrm{column}})$ over $3\times3$ seed pairs. This under-powered descriptive matrix is not the five-seed ASO test used by SkillSpan; it is descriptive rather than a significance test.}
+\label{tab:seed-win}
+\centering
+\scriptsize
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Row $\backslash$ column} & \textbf{JB 1M} & \textbf{Domain} & \textbf{JB 3M} & \textbf{RoBERTa} \\
+\midrule
+JobBERT-zh 1M & --- & 0.5556 & 0.5556 & 0.8889 \\
+Domain-mix & 0.4444 & --- & 0.5556 & 0.8889 \\
+JobBERT-zh 3M & 0.4444 & 0.4444 & --- & 0.7778 \\
+RoBERTa-wwm & 0.1111 & 0.1111 & 0.2222 & --- \\
+\bottomrule
+\end{tabular}
+\end{table}

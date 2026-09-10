@@ -1,0 +1,22 @@
+\begin{table*}[htbp]
+\caption{Internal SOP-v4 and CWS diagnostics by encoder checkpoint, training annotation source, decoding rule, and test reference. Gold v2, SOP-rule Silver, and SOP--CWS Silver are distinct references and are not interchangeable.}
+\label{tab:sop-diagnostic}
+\centering
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}P{0.15\textwidth}P{0.12\textwidth}P{0.13\textwidth}Lcc@{}}
+\toprule
+\textbf{Prediction} & \textbf{Training labels} & \textbf{Decode} & \textbf{Test reference} & \textbf{Typed exact} & \textbf{Typed relaxed} \\
+\midrule
+JobBERT 1M & Gold-style v3 & Raw & Gold v2 & 0.1224 & --- \\
+JobBERT 1M & SOP v4 & Raw & Gold v2 & 0.1079 & 0.3320 \\
+JobBERT 3M & SOP v4 & Raw & Gold v2 & 0.1104 & 0.3404 \\
+JobBERT 1M & SOP v4 & Jieba post-hoc & Gold v2 & 0.1454 & 0.3411 \\
+JobBERT 3M & SOP v4 & Jieba post-hoc & Gold v2 & 0.1479 & 0.3470 \\
+JobBERT 1M & SOP v4 & Raw & SOP rule Silver & 0.3170 & 0.5663 \\
+JobBERT 3M & SOP v4 & Raw & SOP rule Silver & 0.3229 & 0.5624 \\
+JobBERT 1M & SOP v4 & Jieba post-hoc & SOP rule Silver & 0.2609 & 0.5835 \\
+JobBERT 1M & SOP v4 & Jieba post-hoc & SOP--CWS Silver & 0.4278 & 0.5960 \\
+JobBERT 3M & SOP v4 & Jieba post-hoc & SOP--CWS Silver & 0.4341 & 0.5884 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

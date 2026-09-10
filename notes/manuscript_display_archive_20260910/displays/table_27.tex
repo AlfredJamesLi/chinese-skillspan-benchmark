@@ -1,0 +1,16 @@
+\begin{table*}[htbp]
+\centering
+\small
+\caption{Single-seed factory-encoder ablation on the standardized reference ($n{=}2601$). The factory Chinese-RoBERTa-wwm-ext checkpoints use no job-domain adaptive pretraining; the JobBERT-zh rows use the confirmed 1M and 3M DAPT checkpoints. All predictions use the same deterministic boundary alignment and \texttt{cnss-lskt-1.2.0} scorer. The factory rows remain pending validation and are reported descriptively rather than as a model ranking.}
+\label{tab:vanilla-wwm-v4}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{System} & \textbf{P} & \textbf{R} & \textbf{Typed exact} & \textbf{Typed relaxed} \\
+\midrule
+JobBERT-zh 3M v4 (confirmed) & 0.4730 & 0.3994 & 0.4331 & 0.5873 \\
+JobBERT-zh 1M v4 (confirmed) & 0.4685 & 0.3925 & 0.4272 & 0.5952 \\
+Factory base, no DAPT (seed 42) & 0.4878 & 0.3911 & 0.4341 & 0.5888 \\
+Factory large, no DAPT (seed 42) & 0.4589 & 0.4025 & 0.4289 & 0.5766 \\
+\bottomrule
+\end{tabular}
+\end{table*}

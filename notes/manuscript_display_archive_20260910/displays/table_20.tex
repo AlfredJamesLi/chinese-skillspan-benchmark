@@ -1,0 +1,26 @@
+\begin{table*}[htbp]
+\caption{Legacy Gold v2 unique-first results on 2,601 identifiers using \texttt{cnss-lskt-1.2.0}. Columns report typed exact micro-F1, collapsed exact micro-F1, and typed relaxed micro-F1 at $\mathrm{IoU}\geq0.5$.}
+\label{tab:gold-v2}
+\centering
+\footnotesize
+\begingroup
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{@{}P{0.28\textwidth}cccL@{}}
+\toprule
+\textbf{System} & \textbf{Typed exact} & \textbf{Collapsed exact} & \textbf{Typed relaxed} & \textbf{Coverage/status} \\
+\midrule
+ChatGPT & \textbf{0.6365} & \textbf{0.6403} & \textbf{0.7221} & Complete \\
+Claude$^{\ddagger}$ & 0.2583 & 0.2970 & 0.3861 & Complete \\
+Kimi$^{\dagger}$ & 0.1651 & 0.3349 & 0.2130 & Incomplete \\
+DeepSeek & 0.1327 & 0.3569 & 0.1798 & Complete \\
+Qwen2.5-14B & 0.0791 & 0.1075 & 0.1272 & Complete \\
+JobBERT-skill & 0.0000 & 0.0045 & 0.0000 & English head \\
+JobBERT-knowledge & 0.0000 & 0.0037 & 0.0000 & English head \\
+\bottomrule
+\end{tabularx}
+\endgroup
+
+\vspace{0.3em}
+\raggedright\footnotesize $^{\dagger}$The incomplete Kimi row is diagnostic and is not ranked against complete systems. $^{\ddagger}$The Claude row supplements missing predictions; endpoint-level provenance is recorded in Table~\ref{tab:repro-inventory}.
+\end{table*}

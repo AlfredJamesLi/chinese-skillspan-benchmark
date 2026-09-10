@@ -1,0 +1,17 @@
+model,n2601_exact,n2601_relaxed,n980_exact,n980_relaxed
+JobBERT 3M v4 + jieba,0.4331,0.5873,0.4401,0.6032
+JobBERT 1M v4 + jieba,0.4272,0.5952,0.4333,0.6110
+JobBERT 1M CWS retrain + jieba,0.4049,0.5904,0.4020,0.6084
+domain-mix 1M 3-seed mean,0.3037,0.5278,,
+JobBERT 1M goldstyle v3 3-seed mean,0.3032,0.5332,,
+listed-mix 1M,0.2964,0.5267,,
+JobBERT 3M ckpt65000 3-seed mean,0.2961,0.5278,,
+JobBERT demo 80k,0.2931,0.5321,,
+RoBERTa-wwm v3 3-seed mean,0.2875,0.5206,,
+ChatGPT frozen + jieba,0.2854,0.6249,0.2836,0.6447
+Claude mixed completion view (Haiku + Sonnet fills),0.1519,0.3416,0.1778,0.4101
+Kimi mixed completion view (K2-0711 + K2.6 fills),0.1093,0.2321,0.1116,0.2514
+DeepSeek frozen + jieba,0.0802,0.1577,0.0738,0.1573
+Qwen frozen + jieba,0.0501,0.1409,0.0483,0.1361
+JobBERT-skill English head,0.0096,0.0676,0.0124,0.0919
+JobBERT-knowledge English head,0.0088,0.0644,0.0122,0.0862

@@ -1,0 +1,15 @@
+\begin{table*}[htbp]
+\caption{Single-task versus joint prediction on the same source-stratified silver-draft test reference. Both rows use JobBERT-zh 1M with seed 42. The single-task (STL) result forms a greedy non-overlapping union of the four label-specific outputs, dropping 119 overlaps. Its combined typed exact score (0.2905) does not exceed the joint CRF score (0.2985).}
+\label{tab:repartition-stl}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{@{}P{0.28\textwidth}*{6}{>{\centering\arraybackslash}X}@{}}
+\toprule
+\textbf{System} & \textbf{L} & \textbf{K} & \textbf{S} & \textbf{T} & \textbf{Typed exact} & \textbf{Typed relaxed} \\
+\midrule
+Joint CRF, 1M, seed 42 & 0.4628 & 0.3032 & 0.2655 & 0.3536 & \textbf{0.2985} & \textbf{0.5331} \\
+STL greedy union & \textbf{0.5043} & 0.2668 & 0.2604 & \textbf{0.3660} & 0.2905 & 0.5155 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

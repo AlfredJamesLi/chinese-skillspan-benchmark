@@ -1,0 +1,9 @@
+system,model_id,n,reference,typed_exact_f1,typed_relaxed_f1,n_980_exact,n_980_relaxed,role
+JobBERT-zh 3M v4 + Jieba,chinese-roberta-wwm-ext + JD MLM + CRF,2601,matched SOP-CWS,0.4331,0.5873,0.4401,0.6032,encoder reference
+gpt-4o frozen old-prompt dump,gpt-4o,2601,matched SOP-CWS,0.2854,0.6249,0.2836,0.6447,frozen dump reference
+gpt-5.4 SOP extract,gpt-5.4,2601,matched SOP-CWS,0.2132,0.4199,0.2063,0.4207,full same-prompt diagnostic
+kimi-k2.6 SOP extract,kimi-k2.6,2601,matched SOP-CWS,0.1979,0.4032,0.1912,0.4108,full same-prompt diagnostic
+deepseek-v4-pro SOP extract,deepseek-v4-pro,2601,matched SOP-CWS,0.1980,0.3931,0.1847,0.3973,full same-prompt diagnostic
+claude-sonnet-4-5 SOP extract,claude-sonnet-4-5,2601,matched SOP-CWS,0.1972,0.3987,0.1861,0.3945,full same-prompt diagnostic
+Qwen2.5-14B-Instruct SOP extract,Qwen2.5-14B-Instruct,2601,matched SOP-CWS,0.1724,0.3279,0.1711,0.3390,local no-LoRA full same-prompt diagnostic
+Llama-3-8B-Instruct SOP extract,Llama-3-8B-Instruct,2601,matched SOP-CWS,0.0582,0.1178,0.0544,0.1140,local no-LoRA full same-prompt diagnostic

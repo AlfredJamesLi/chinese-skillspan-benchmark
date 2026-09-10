@@ -1,0 +1,12 @@
+figure_usage,source_artifact,original_issue,verified_action
+"A1 G3","author-supplied A1 PDF","Example began with the truncated fragment 统的问题##[S]","Restore the complete span @@解决网络和操作系统的问题##[S]"
+"A1 G9-G10","author-supplied A1 PDF","Arrows implied rewriting a source mention into a canonical form","Preserve the exact surface span and store normalization separately"
+"A1 G13","author-supplied A1 PDF","Global L>S>K>T fallback conflicted with contextual SOP-v4 adjudication","Use context first and adjudicate unresolved cases"
+"A1 G10; A2 L/K; A3 L-K","author-supplied A1-A3 PDFs plus frozen V4 decision","Language examinations and technical certifications were not separated consistently","Assign @@英语六级##[L], @@CET-6##[L], and @@日语N2##[L]; assign @@ISO 27001##[K] and @@OCJP-Java认证##[K]"
+"A1 G11; A2 K/S","frozen V4 decision","Programming languages, software, and tools could be confused with conceptual knowledge","Assign job-use mentions such as @@Python##[S] and @@Excel##[S]; reserve K for explicit theory or principles"
+"A1 G12; A3 K-S; A6 E2-E3","frozen V4 decision","SQL was assigned without using its predicate and referent context","Assign @@SQL##[S] in 使用SQL进行报表制作 and @@SQL原理##[K] in 掌握SQL原理"
+"A4 4.6-4.7","author-supplied A4 PDF","Version and abbreviation examples mixed extraction with normalization","Separate surface extraction from normalization"
+"A4 4.7; A5 Stage 4","frozen V4 decision","CWS segmentation could be read as permission to rewrite human spans","Keep character offsets authoritative; use frozen Jieba only as validation or a named derived evaluation view"
+"A5 Historical metrics","author-supplied A5 PDF plus confirmed-results.md","Gold-era agreement could be misread as V4 agreement","Report n=100 strict 0.5320, relaxed 0.6240, and kappa 0.5540 only as historical Gold-era values"
+"A5 V4 IAA plan","frozen V4 decision","No independent V4 agreement estimate has yet been reported","Pre-specify 300 stratified records, two blind independent annotators, pre-adjudication typed exact/relaxed F1, character-level kappa, and per-label scores"
+"A6 E4","author-supplied A6 PDF","通信协议规范 did not occur verbatim in 制定通信协议与视觉流程","Use the source-faithful span @@制定通信协议##[S]"

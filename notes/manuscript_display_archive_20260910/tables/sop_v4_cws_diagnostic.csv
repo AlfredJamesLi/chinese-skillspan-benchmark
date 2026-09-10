@@ -1,0 +1,11 @@
+prediction,train_silver,decode,test_reference,typed_exact,typed_relaxed_iou05
+JobBERT 1M,goldstyle v3,raw,Gold v2,0.1224,
+JobBERT 1M,SOP v4,raw,Gold v2,0.1079,0.3320
+JobBERT 3M,SOP v4,raw,Gold v2,0.1104,0.3404
+JobBERT 1M,SOP v4,jieba post-hoc,Gold v2,0.1454,0.3411
+JobBERT 3M,SOP v4,jieba post-hoc,Gold v2,0.1479,0.3470
+JobBERT 1M,SOP v4,raw,SOP rule silver,0.3170,0.5663
+JobBERT 3M,SOP v4,raw,SOP rule silver,0.3229,0.5624
+JobBERT 1M,SOP v4,jieba post-hoc,SOP rule silver,0.2609,0.5835
+JobBERT 1M,SOP v4,jieba post-hoc,SOP-CWS silver,0.4278,0.5960
+JobBERT 3M,SOP v4,jieba post-hoc,SOP-CWS silver,0.4341,0.5884

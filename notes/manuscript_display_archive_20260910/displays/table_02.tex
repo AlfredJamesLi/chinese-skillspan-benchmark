@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\caption{Annotation lineage and intended use. Gold150 and Silver-plus partition the 2,601-record lineage. QA100 is sampled from Silver-plus; Dual15 is a subset of QA100, not an additional reference cohort. Training admission is determined by version-specific manifests.}
+\label{tab:annotation-lineage}
+\centering\small
+\begin{tabularx}{\linewidth}{@{}lrlL@{}}
+\toprule
+Layer & Sentences & Composition & Role \\
+\midrule
+Original corpus & 22,840 & Four sources & Corpus-scale annotations \\
+Gold150 & 150 & Audit-50 + Challenge-100 & Frozen human reference \\
+Silver-plus & 2,451 & A100 + H730 + E1621 & Teacher supervision; eligibility checked \\
+QA100 & 100 & Silver-plus review sample & Post-generation review, not added Gold \\
+Dual15 & 15 & Subset of QA100 & Pre-review consistency check \\
+\bottomrule
+\end{tabularx}
+\end{table}

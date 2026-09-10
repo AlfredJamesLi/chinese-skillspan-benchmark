@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Shared-guideline inference on Gold150, 10 September 2026, 09:50 UTC+8: \textbf{preliminary / pending verification} ($\dagger$). Only configurations with complete $n=150$ coverage are tabulated, ordered by reported typed exact F1. P and R are typed exact precision and recall. These are single-run scores, not three-seed means.}
+\label{tab:gold150-shared-r7}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}lrrrrr@{}}
+\toprule
+System & $n$ & P & R & Exact F1 & Relaxed F1 \\
+\midrule
+DeepSeek V4 Pro, nothink & 150 & $0.6514^{\dagger}$ & $0.6425^{\dagger}$ & $0.6469^{\dagger}$ & $0.7608^{\dagger}$ \\
+Claude Sonnet 4.5 & 150 & $0.5982^{\dagger}$ & $0.5973^{\dagger}$ & $0.5977^{\dagger}$ & $0.7094^{\dagger}$ \\
+DeepSeek V4 Pro, think8192 & 150 & $0.7128^{\dagger}$ & $0.5053^{\dagger}$ & $0.5914^{\dagger}$ & $0.6708^{\dagger}$ \\
+Kimi k2.6 & 150 & $0.5810^{\dagger}$ & $0.5626^{\dagger}$ & $0.5716^{\dagger}$ & $0.7142^{\dagger}$ \\
+Qwen2.5-14B-Instruct & 150 & $0.5068^{\dagger}$ & $0.2805^{\dagger}$ & $0.3612^{\dagger}$ & $0.4699^{\dagger}$ \\
+\bottomrule
+\end{tabular*}
+\end{table}

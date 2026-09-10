@@ -1,0 +1,17 @@
+\begin{table*}[htbp]
+\caption{Gold v2 typed exact F1 by gold token length, where length is $\textit{end}-\textit{start}$; the final column reports mean predicted span length.}
+\label{tab:span-length}
+\centering
+\scriptsize
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccccc}
+\toprule
+\textbf{System} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10+} & \textbf{Mean pred.} \\
+\midrule
+ChatGPT (\texttt{gpt-4o}) & 0.0357 & 0.7265 & 0.5643 & 0.7292 & 0.5095 & 0.6702 & 0.5066 & 0.5962 & 0.5183 & 0.5054 & 4.19 \\
+JobBERT-zh 1M (seed 42) & 0.0000 & 0.1229 & 0.1347 & 0.1923 & 0.0758 & 0.1570 & 0.0669 & 0.0858 & 0.0743 & 0.0357 & 5.94 \\
+RoBERTa-wwm v3 (seed 42) & 0.0000 & 0.1105 & 0.1146 & 0.1882 & 0.0924 & 0.1357 & 0.0629 & 0.0851 & 0.0890 & 0.0372 & 5.98 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

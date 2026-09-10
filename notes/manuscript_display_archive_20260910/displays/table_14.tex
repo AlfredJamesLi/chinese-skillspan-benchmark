@@ -1,0 +1,20 @@
+\begin{table*}[htbp]
+\caption{Scope comparison with SkillSpan \citep{zhang2022skillspan}. Counts describe resources and evaluation dimensions, not a common performance leaderboard.}
+\label{tab:workload-skillspan}
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}P{0.22\textwidth}P{0.30\textwidth}L@{}}
+\toprule
+\textbf{Dimension} & \textbf{SkillSpan} & \textbf{Chinese-SkillSpan} \\
+\midrule
+Annotated resource & 391 English job postings; 14.5K sentences & 22,840 Chinese sentences; 17,460/2,143/3,237 train/dev/test \\
+Label inventory & Two nested labels: skill and knowledge & Four flat, non-overlapping labels: L/K/S/T \\
+Unlabeled adaptation corpus & 3.2M job-ad sentences & 1M and 3M Chinese job-ad DAPT conditions \\
+Encoder scope & BERT, SpanBERT, JobBERT, JobSpanBERT; STL/MTL & RoBERTa-wwm, JobBERT-zh 1M/3M, domain-mix, listed-mix; CRF \\
+Repeated runs & Five seeds with ASO significance tests & Three seeds with mean and sample standard deviation \\
+Additional systems & Longformer negative result & Frozen LLM suite and six same-prompt LLM diagnostics \\
+Error analysis & Source, P/R, prediction length, span length & Source, P/R, span length, protocol and boundary-snap diagnostics \\
+Evaluation references & One expert-annotated test reference & Completed Gold150 (Challenge-100 + Audit-50); separate archived diagnostics \\
+\bottomrule
+\end{tabularx}
+\end{table*}

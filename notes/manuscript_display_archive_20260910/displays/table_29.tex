@@ -1,0 +1,28 @@
+\begin{table*}[htbp]
+\caption{Frozen-output diagnostic on the internal P2 matched SOP--CWS snapshot. The snapshot comprises 980 disagreement-queue records and 1,621 SOP--CWS records. Later review does not retrospectively update this earlier scored file; these are not Gold150 results.}
+\label{tab:legacy-frozen-outputs}
+\centering
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}P{0.40\textwidth}ccL@{}}
+\toprule
+\textbf{System} & \textbf{Typed exact} & \textbf{Typed relaxed} & \textbf{Coverage/status} \\
+\midrule
+JobBERT 3M v4 + Jieba & \textbf{0.4331} & 0.5873 & Complete \\
+JobBERT 1M v4 + Jieba & 0.4272 & 0.5952 & Complete \\
+JobBERT 1M CWS retrain + Jieba & 0.4049 & 0.5904 & Complete \\
+Domain-mix 1M (three-seed mean) & 0.3037 & 0.5278 & Complete \\
+JobBERT 1M Gold-style v3 (three-seed mean) & 0.3032 & 0.5332 & Complete \\
+Listed-mix 1M & 0.2964 & 0.5267 & Complete \\
+JobBERT 3M checkpoint 65000 (three-seed mean) & 0.2961 & 0.5278 & Complete \\
+JobBERT demo 80k & 0.2931 & 0.5321 & Complete \\
+RoBERTa-wwm v3 (three-seed mean) & 0.2875 & 0.5206 & Complete \\
+\texttt{gpt-4o} (frozen + Jieba) & 0.2854 & \textbf{0.6249} & Complete; earlier prompt \\
+\texttt{claude-3-5-haiku-20241022} & 0.1483 & 0.3349 & 98 IDs missing \\
+\texttt{kimi-k2-0711-preview} & 0.0964 & 0.1997 & 293 IDs missing \\
+\texttt{deepseek-r1} (frozen + Jieba) & 0.0802 & 0.1577 & Complete; earlier prompt \\
+\texttt{Qwen2.5-14B-Instruct} (frozen + Jieba) & 0.0501 & 0.1409 & Complete; earlier prompt \\
+JobBERT-skill English head & 0.0096 & 0.0676 & Complete \\
+JobBERT-knowledge English head & 0.0088 & 0.0644 & Complete \\
+\bottomrule
+\end{tabularx}
+\end{table*}

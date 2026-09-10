@@ -1,0 +1,46 @@
+\begin{table*}[!h]
+\caption{Locked IAA-50 results on 50 sentences under \texttt{B.sop\_v4.2.9}. The upper block measures pre-adjudication reliability between frozen annotator files; the lower block measures each coder against the subsequently locked 248-span Gold reference. Reliability is not validity, and neither block evaluates the 2,601-record V4 hybrid test reference.}
+\label{tab:iaa50}
+\centering
+\footnotesize
+\begingroup
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.04}
+\noindent\textbf{Pre-adjudication reliability: Coder A versus Coder B}\par\vspace{1pt}
+\begin{tabularx}{\textwidth}{@{}P{0.35\textwidth}P{0.14\textwidth}P{0.19\textwidth}L@{}}
+\toprule
+\textbf{Metric} & \textbf{Value} & \textbf{Support} & \textbf{Interpretation} \\
+\midrule
+Character-level $\kappa$, four classes + O & 0.57 & 50 sentences & Moderate agreement \\
+Character-level $\kappa$, two classes + O & 0.59 & 50 sentences & Evaluation projection \\
+Exact typed span P/R/F1 & 0.46/0.43/\textbf{0.44} & 98 exact matches & Joint boundary and type agreement \\
+Overlap F1, type ignored ($\mathrm{IoU}\geq0.5$) & 0.79 & 50 sentences & Same-region agreement \\
+Number of spans & Coder A 211; Coder B 230 & Frozen files & Count before adjudication \\
+\bottomrule
+\end{tabularx}
+
+\vspace{3pt}
+\noindent\textbf{Post-adjudication agreement: each coder file versus locked Gold}\par\vspace{1pt}
+\begin{tabularx}{\textwidth}{@{}P{0.36\textwidth}P{0.19\textwidth}P{0.19\textwidth}L@{}}
+\toprule
+\textbf{Metric} & \textbf{Coder B} & \textbf{Coder A} & \textbf{Scope} \\
+\midrule
+Exact typed span P/R/F1 & 0.665/0.617/\textbf{0.640} & 0.659/0.561/\textbf{0.606} & 248 Gold spans \\
+SkillSpan two-class exact F1 & 0.657 & 0.649 & Evaluation projection \\
+Boundary F1, type ignored & 0.766 & 0.684 & Against locked Gold \\
+Whole-sentence exact match & 7/50 & 8/50 & All spans and types exact \\
+Per-type exact F1 (L/K/S/T) & \makecell[l]{0.000/0.510/\\0.641/0.783} & \makecell[l]{0.000/0.414/\\0.639/0.621} & L support is one Gold span \\
+\bottomrule
+\end{tabularx}
+\endgroup
+
+\vspace{2pt}
+\begin{minipage}{\textwidth}
+\footnotesize
+\textit{Notes.}
+(1) The sample was drawn from the 980-record conflict-review queue with seed \texttt{20260902}. It is distinct from the historical 200-record mixed-annotator analysis. Its locked \texttt{iaa50} reference subsequently contributes Audit-50 to Gold150; the prior calibration role is not erased by that reuse.
+(2) Coder A and Coder B independently saw raw text only in Doccano 1.8.4; no silver labels or model drafts, spans from the other coder, or earlier Gold were displayed, and both files were frozen before adjudication.
+(3) Pairwise precision treats Coder A's 211 spans as candidates and Coder B's 230 spans as the comparison set; F1 is symmetric. Doccano's internal label strings map to the official L/K/S/T types, and the two-class column is an evaluation projection that does not redefine the ESCO branches.
+(4) Adjudicator's official four-class spans governed overlapping regions (180 spans); 68 non-overlapping exact Coder A--Coder B matches remained default candidates rather than automatic Gold, yielding 248 spans, while deliberately empty regions remained empty. The only Gold L span was \zh{英文阅读能力}; both coders missed it, so L F1 should not be generalized.
+\end{minipage}
+\end{table*}

@@ -1,0 +1,24 @@
+\begin{table*}[htbp]
+\caption{Historical first human-analysis release ($n=200$, AI recruitment only), scored with \texttt{cnss-lskt-1.2.0}. This is neither Gold150 nor the archived 2,601-record reference. The Claude row is matched-only on the 155 available reference identifiers.}
+\label{tab:human-page1-systems}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2pt}
+\begin{tabularx}{\textwidth}{@{}P{0.36\textwidth}c*{4}{>{\centering\arraybackslash}X}@{}}
+\toprule
+\textbf{System} & \textbf{$n$} & \textbf{Exact P} & \textbf{Exact R} & \textbf{Exact F1} & \textbf{Relaxed F1} \\
+\midrule
+ChatGPT (\texttt{gpt-4o}, frozen dump) & 200 & 0.2381 & 0.3317 & \textbf{0.2772} & \textbf{0.4013} \\
+Claude (\texttt{claude-3-5-haiku-20241022})$^{\dagger}$ & 155/200 & 0.2267 & 0.2553 & 0.2402 & 0.3874 \\
+Kimi (\texttt{kimi-k2-0711-preview}) & 200 & 0.1652 & 0.1908 & 0.1771 & 0.2280 \\
+JobBERT 1M CWS retrain + frozen & 200 & 0.1961 & 0.1247 & 0.1524 & 0.3689 \\
+JobBERT 3M v4 frozen & 200 & 0.1586 & 0.1060 & 0.1271 & 0.3498 \\
+JobBERT 1M v4 frozen & 200 & 0.1391 & 0.0935 & 0.1119 & 0.3729 \\
+DeepSeek (\texttt{deepseek-r1}) & 200 & 0.0964 & 0.1060 & 0.1010 & 0.1520 \\
+Qwen (\texttt{Qwen2.5-14B-Instruct}) & 200 & 0.1854 & 0.0474 & 0.0755 & 0.1271 \\
+\bottomrule
+\end{tabularx}
+\vspace{0.3em}
+
+\raggedright\footnotesize $^{\dagger}$Matched-only evaluation: 45 gold identifiers are absent from the frozen Haiku dump. The row excludes those identifiers rather than empty-filling them and therefore does not claim complete 200-record coverage. Bold identifies the largest descriptive value in a column within this table only; these values are not ranked against the archived V4 or historical Gold v2 results.
+\end{table*}

@@ -1,0 +1,9 @@
+dimension,SkillSpan_2022,Chinese-SkillSpan
+annotated_resource,"391 English job postings; 14.5K sentences","22840 Chinese sentences; 16350/2268/4222 source-stratified train/dev/evaluation"
+label_inventory,"2 nested labels: skill and knowledge","4 flat labels: L/K/S/T"
+unlabeled_adaptation,"3.2M job-ad sentences","1M and 3M Chinese job-ad DAPT"
+encoder_scope,"BERT; SpanBERT; JobBERT; JobSpanBERT; STL/MTL","RoBERTa-wwm; JobBERT-zh 1M/3M; domain-mix; listed-mix; CRF"
+repeated_runs,"5 seeds; ASO significance","3 seeds; mean and sample std"
+additional_systems,"Longformer negative result","frozen LLM suite; 6 same-prompt LLM diagnostics"
+error_analysis,"source; P/R; prediction length; span length","source; P/R; span length; protocol; boundary snap"
+evaluation_references,"one expert-annotated reference","human Gold v2; separate mixed-provenance matched reference"

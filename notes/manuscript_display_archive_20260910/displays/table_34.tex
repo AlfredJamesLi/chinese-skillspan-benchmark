@@ -1,0 +1,21 @@
+\begin{table*}[!htbp]
+\caption{Historical-protocol diagnostic results on the 2,601-record SOP+jieba reference. All systems use the same identifiers and typed exact/relaxed micro-F1. Encoders use protocol-aligned supervision; language models use the shared zero-shot prompt. These scores are separate from the Gold150 study.}
+\label{tab:standardized-benchmark}
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}P{0.30\textwidth}Lcc@{}}
+\toprule
+\textbf{System} & \textbf{Evaluation setting} & \textbf{Typed exact} & \textbf{Typed relaxed} \\
+\midrule
+JobBERT-zh, 3M DAPT & \multirow{2}{*}{\makecell[l]{Protocol-aligned supervised\\encoder}} & \textbf{0.4331} & 0.5873 \\
+JobBERT-zh, 1M DAPT & & 0.4272 & \textbf{0.5952} \\
+\midrule
+\texttt{gpt-5.4} & \multirow{6}{*}{Standardized zero-shot prompt} & 0.2132 & 0.4199 \\
+\texttt{deepseek-v4-pro} & & 0.1980 & 0.3931 \\
+\texttt{kimi-k2.6} & & 0.1979 & 0.4032 \\
+\texttt{claude-sonnet-4-5} & & 0.1972 & 0.3987 \\
+\texttt{Qwen2.5-14B-Instruct} & & 0.1724 & 0.3279 \\
+\texttt{Llama-3-8B-Instruct} & & 0.0582 & 0.1178 \\
+\bottomrule
+\end{tabularx}
+\end{table*}

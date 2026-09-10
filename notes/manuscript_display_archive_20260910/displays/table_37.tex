@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\caption{Study E: Qwen instruction and demonstration sensitivity on Gold150. P0 is the unchanged designated SFT result; all P1 inference conditions share the development-selected checkpoint within each seed. Values are typed micro-F1 (mean $\pm$ sample SD, three seeds).}
+\label{tab:appendix-e-p1}
+\centering
+\small
+\begin{tabularx}{\linewidth}{@{}Lcc@{}}
+\toprule
+Condition & Exact F1 & Relaxed F1 \\
+\midrule
+P0, reused & $0.1215\pm0.0092$ & $0.4459\pm0.0237$ \\
+P1, no demonstrations ($k=0$) & $0.1455\pm0.0196$ & $0.4905\pm0.0109$ \\
+P1, random demonstrations ($k=3$) & $0.0452\pm0.0067$ & $0.3507\pm0.0085$ \\
+P1, nearest-neighbor demonstrations ($k=3$) & $0.0315\pm0.0047$ & $0.3491\pm0.0122$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
