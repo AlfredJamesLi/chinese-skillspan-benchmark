@@ -4,15 +4,20 @@
 
 Manuscript under review at **PeerJ Computer Science** (single-anonymized review: reviewers see author names). The source manuscript is maintained on Overleaf; this repository does not host a draft PDF.
 
+![Chinese-SkillSpan workflow](figures/fig_pipeline_overview.jpg)
+
+Draft overview: (a) corpus construction and annotation; (b) domain pretraining, student fine-tuning, and scoring. This figure is a working sketch, not a camera-ready plate.
+
 | Resource | URL |
 |---|---|
 | Code and data | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
-| Versioned archive (`v0.1.1`) | https://doi.org/10.5281/zenodo.22288338 |
+| Current archive (`v0.1.2`) | https://doi.org/10.5281/zenodo.22685143 |
+| First snapshot (`v0.1.1`) | https://doi.org/10.5281/zenodo.22288338 |
 | Concept DOI | https://doi.org/10.5281/zenodo.22288337 |
 | JobBERT-zh (V4; hybrid 2601 exact **0.4331**) | https://huggingface.co/AlfredJames/jobbert-zh |
 | JobBERT-zh v6a (Gold150 B2 exact **0.5536±0.0054**) | https://huggingface.co/AlfredJames/jobbert-zh-v6a |
 
-Do not send reviewers through a Google Sites or Drive page. There is no separate Hugging Face dataset repository; use GitHub Release `v0.1.1` or the Zenodo record. Zenodo `v0.1.1` does **not** contain Gold150. Do not rank 0.5536 against 0.4331 in one table.
+Do not send reviewers through a Google Sites or Drive page. There is no separate Hugging Face dataset repository. Zenodo `v0.1.1` / `v0.1.2` do **not** contain Gold150; use GitHub `main` for `data/gold150_test.jsonl`. Do not rank 0.5536 against 0.4331 in one table.
 
 ---
 
@@ -58,6 +63,8 @@ The V4 hybrid is **derived** (980 SimHuman rule_v4 spans + 1,621 SOP-CWS spans).
 A first-page human overlay of **200** sentences is at `data/human_gold_page1_200.jsonl`. It is not the abstract gold. Checksums live in [REPRODUCIBILITY.md](REPRODUCIBILITY.md), not in running prose.
 
 A later Handbook-B human diagnostic (project-26 first **85** official spans + frozen **IAA-50**, plus span-length bins) is in [`reports/human_gold85_iaa50/`](reports/human_gold85_iaa50/README.md). On that gold, typed exact scales with instruction-model size (JobBERT-zh CRF **0.13** / Qwen2.5-14B SOP+jieba **0.26** / Kimi on IAA-50 **0.62**). **Not** a replacement for V4 hybrid JobBERT 3M **0.4331**.
+
+Gold150 (`data/gold150_test.jsonl`, 150 sentences = Challenge-100 + Audit-50) and Silver-plus B2 teacher files (`data/silver_plus_v6a_nocross/`, 2,150 / 169) are on GitHub `main`. They are a later protocol, not the abstract gold, and they are not in Zenodo `v0.1.1` or `v0.1.2`. See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md) and [notes/SILVER_PLUS_EXTENSION_PROVENANCE.md](notes/SILVER_PLUS_EXTENSION_PROVENANCE.md).
 
 ---
 
@@ -112,8 +119,11 @@ data/
   dev_lskt_v4_silver.jsonl
   frozen_preds/
   human_gold_page1_200.jsonl
+  gold150_test.jsonl    # later protocol; not in Zenodo v0.1.2
+  silver_plus_v6a_nocross/
 docs/                   # manuscript-body drafts
-notes/handbooks/        # Handbook B (paper SOP)
+notes/handbooks/        # Handbook B (paper SOP; v4.2.14)
+figures/fig_pipeline_overview.jpg
 tables/
 release/                # Hugging Face and Zenodo templates
 ```

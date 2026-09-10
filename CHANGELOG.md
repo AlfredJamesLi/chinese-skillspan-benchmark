@@ -4,6 +4,12 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-11)
+
+- GitHub `main` now includes Gold150 (`data/gold150_test.jsonl`, sha `ca8db0bc…`) and Silver-plus B2 `v6a_nocross` train/dev. These files are **not** in Zenodo `v0.1.1` or `v0.1.2`. No new Zenodo version has been minted.
+- DAS, `CITATION.cff`, and `REPRODUCIBILITY.md` checksums synced to archive **`v0.1.2`** (DOI `10.5281/zenodo.22685143`) plus Handbook B **v4.2.14**.
+- README uses a draft workflow figure (`figures/fig_pipeline_overview.jpg`).
+
 ## Unreleased notes (2026-09-09d)
 
 - Additional public model **JobBERT-zh v6a** (`AlfredJames/jobbert-zh-v6a`): Gold150 B2 typed exact **0.5536±0.0054** (seeds 42/43/44). Does **not** overwrite `AlfredJames/jobbert-zh` (V4 hybrid **0.4331**). Packaging: `release/huggingface-model-v6a/`. Gold150 remains outside Zenodo `v0.1.1`.
@@ -30,6 +36,13 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 - Appendix diagnostic only: `reports/human_gold85_iaa50/` (Gold85 + IAA-50 typed exact, Qwen2.5-14B SOP, span character-length bins). Does **not** change V4 hybrid JobBERT 3M **0.4331**.
 
 ---
+
+## 0.1.2 — 2026-09-10 (later GitHub snapshot)
+
+- GitHub Release `v0.1.2` archived at https://doi.org/10.5281/zenodo.22685143
+- Concept DOI unchanged: https://doi.org/10.5281/zenodo.22288337
+- Does **not** contain Gold150 or Silver-plus B2
+- JobBERT-zh v6a packaging notes may be in this Git tree; weights remain on Hugging Face
 
 ## 0.1.1 — 2026-09-04 (public snapshot)
 
@@ -61,10 +74,12 @@ GitHub, JobBERT-zh, and Zenodo `v0.1.1` are **public**.
 | Corpus Table 1 split | 22,840 sentences (`17,460` / `2,143` / `3,237`) | — | SHA-256 in `REPRODUCIBILITY.md` |
 | Gold v2 | 2,601 unique IDs; sha `7a26e32b…504ff6` | Frozen 2026-08-22 | Appendix / provenance; do not overwrite |
 | V4 hybrid (paper main) | Same 2,601 IDs; sha `2ad6342d…818d99` | Protocol amended 2026-08-27 | 980 SimHuman + 1,621 SOP-CWS; not human Doccano Gold |
-| Handbook B | `B.sop_v4.2.1` | 2026-08-31 | Paper SOP |
+| Handbook B | `B.sop_v4.2.14` | 2026-09-09 | Paper SOP on GitHub `main`; v4.2.1 remains in older tags |
 | Human page-1 overlay | 200 sentences; sha `fcecb522…617490` | 2026-09-03 | Supplement; path `data/human_gold_page1_200.jsonl` |
 | `repartition_v1` | Same 22,840, other split (`16,350` / `2,268` / `4,222`) | — | Draft; not main gold |
-| Public archive | GitHub / Zenodo `v0.1.1` | 2026-09-04 | No separate Hugging Face dataset repo |
+| Public archive | GitHub / Zenodo `v0.1.2` | 2026-09-10 | Current minted archive; Gold150 not included |
+| Gold150 | 150 sentences; sha `ca8db0bc…0310fd0` | On GitHub `main` 2026-09-11 | Not in Zenodo v0.1.1 / v0.1.2 |
+| Silver-plus B2 `v6a_nocross` | train 2,150 / dev 169 | On GitHub `main` 2026-09-11 | Teacher labels, not extra Gold |
 
 ---
 

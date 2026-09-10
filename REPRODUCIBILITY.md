@@ -61,10 +61,13 @@ SHA-256 values below were computed from the files in this workspace.
 | `data/human_gold_page1_200.jsonl` | Human overlay, first 200 of 980 (not main gold) | 328,087 | `fcecb522fbdf6571caaaa02c592b6ba4a552c4a9cfa52a0ed1f36b0fe9617490` |
 | `tables/hybrid_cws_simhuman980_all_models.csv` | Committed paper-main score table | 4,058 | `448c1281c0027d9ec0a83b0d5c51c5f1d412ccf9fb64e4321a583c4a4b534c1e` |
 | `scorer/score_lskt.py` | Official scorer | 16,513 | `90624fa545434ebe0442c3243709f5e64ef2f95f4ccbacdb5f5d0696b65d69a7` |
-| `notes/handbooks/handbook_B_sop_v4.md` | Handbook B (Chinese) | 7,186 | `e9e7677b248d75ede523c2d53c6a55fe641aed4e3eb004bd59b8c16a7875751b` |
-| `notes/handbooks/handbook_B_sop_v4.en.md` | Handbook B (English) | 4,446 | `aee5c4137b858e4e801548796c18a6516134fb64e3ec9dc5620319d2fceaa9ce` |
+| `notes/handbooks/handbook_B_sop_v4.md` | Handbook B (Chinese, `B.sop_v4.2.14`) | 50,533 | `5a4883d9350d7fb3756e46fac68624e929a2dfbdc1e3014c5f7d222a39757d19` |
+| `notes/handbooks/handbook_B_sop_v4.en.md` | Handbook B (English summary) | 29,556 | `d05ba55991f5e03522fbd3d0f010ad29a8bd7033b260bed749801e2c4b66da3f` |
+| `data/gold150_test.jsonl` | Gold150 test freeze (Challenge-100 + Audit-50) | 67,116 | `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0` |
+| `data/silver_plus_v6a_nocross/train_b2.jsonl` | Silver-plus B2 teacher train (`v6a_nocross`) | 1,757,307 | `8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e` |
+| `data/silver_plus_v6a_nocross/dev_b2.jsonl` | Silver-plus B2 teacher development | 151,873 | `e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef` |
 
-Release version string: GitHub / Zenodo **`v0.1.1`**.
+Last minted archive: GitHub / Zenodo **`v0.1.2`** (DOI `10.5281/zenodo.22685143`). First snapshot: **`v0.1.1`**. Gold150, Silver-plus B2, and Handbook B v4.2.14 are on GitHub `main` and are **not** in those Zenodo tarballs.
 
 `scripts/eval_hybrid_cws_simhuman.py` can **rewrite** the hybrid gold from SOP-CWS + SimHuman sources. After any such run, re-check the SHA-256 above before treating the file as the frozen paper gold.
 
@@ -144,7 +147,7 @@ Wrappers that exist but are laboratory-bound:
 
 MLM continued pre-training scripts exist (`prepare_jobbert_*`, `jobbert_zh_*.sbatch`). The 1M / 3M sentence corpora (`data/jobbert_*_sents.jsonl`) are large reconstructed job texts and must not be published until rights are confirmed.
 
-Chinese JobBERT **weights are not in Git**. `[TODO: publish encoder + CRF on Hugging Face after licence checks]`.
+Chinese JobBERT **weights are not in Git**. Paper-main encoder + V4 CRF: https://huggingface.co/AlfredJames/jobbert-zh. Contrast 1M: https://huggingface.co/AlfredJames/jobbert-zh-1m. Gold150 v6a: https://huggingface.co/AlfredJames/jobbert-zh-v6a. Qwen LoRA is not published.
 
 ---
 
@@ -244,7 +247,7 @@ Gold v2 appendix (from `notes/confirmed-results.md` / freeze notes; do not rank 
 | Paper-main model comparison | Re-run `eval_hybrid_cws_simhuman.py`; compare to `tables/hybrid_cws_simhuman980_all_models.csv` |
 | LLM-only hybrid rows | `eval_hybrid_llm_old_dumps.py` |
 | Gold v2 appendix | `scorer/score_lskt.py` on `gold_canonical_v2.jsonl` |
-| Handbook / span rules | `notes/handbooks/handbook_B_sop_v4.en.md` (version `B.sop_v4.2.1`) |
+| Handbook / span rules | `notes/handbooks/handbook_B_sop_v4.md` (version `B.sop_v4.2.14`) |
 | SkillSpan-style figures | `scripts/build_skillspan_style_figures.py` plus `figures/` / `tex/skillspan_style_*.tex` — `[TODO: confirm which figure PDFs are final]` |
 | Human-200 supplement | `scripts/build_and_eval_human200_page1.py` (not abstract) |
 

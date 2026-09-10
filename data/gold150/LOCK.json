@@ -1,0 +1,44 @@
+{
+  "frozen_at_utc": "2026-09-07T08:17:41.886761+00:00",
+  "handbook": "B.sop_v4.2.10",
+  "operating_handbook": "B.sop_v4.2.11",
+  "operating_handbook_commit": "101dad2672025150b80c94e51433323251a26ac0",
+  "operating_handbook_repo": "https://github.com/AlfredJamesLi/chinese-skillspan-benchmark",
+  "experiment": "silver_plus_v4211",
+  "test_gold": {
+    "n": 150,
+    "gold100": 100,
+    "iaa50": 50,
+    "n_empty_in_gold100": 7,
+    "n_spans_gold100": 415,
+    "n_spans_iaa50": 248,
+    "id_overlap_gold100_iaa50": [],
+    "paper_wording": "codebook-revised page-1 100 + locked IAA-50; not IAA n=150; not main P2 Gold"
+  },
+  "files": {
+    "gold100_locked.jsonl": "37f2ab648499d73d214c0a65880eb38fbc66cbfdb746b2bc9859c0d3ab39f051",
+    "gold150_test.jsonl": "1ee795d27f6320c736570712e572f49ea614f5a2e5d9d95e03d9a0f4197a111a",
+    "iaa50_source": "iaa50_gold_locked.copied.jsonl",
+    "iaa50_sha256": "68b47bdbad1622ca39d89a2dceaf8117ee44a2227272e901a7673bc676531686"
+  },
+  "do_not_write": [
+    "data/gold_canonical_v2.jsonl",
+    "data/test_lskt_v4_cws_simhuman980_hybrid.jsonl",
+    "data/train_lskt_v4_silver.jsonl",
+    "doccano_import/iaa50/iaa50_gold_locked.jsonl",
+    "project 23"
+  ],
+  "eval_protocol": {
+    "train": "Silver_plus under B.sop_v4.2.11 / PROMPT_silver_plus_v4211.txt (not train_lskt_v4_silver)",
+    "test": "gold150_test.jsonl (150 human Gold)",
+    "models": [
+      "JobBERT-zh",
+      "Qwen2.5-14B"
+    ],
+    "do_not_compare_to": 0.4331,
+    "metric": "typed exact (start, end, type)"
+  },
+  "live_not_gold": {
+    "p26_seq101_200_live_official.jsonl": "official layer snapshot at 2026-09-07 18:25 +0800; Maple/Wendy edited seq 101-102; not Gold; nested allowed"
+  }
+}

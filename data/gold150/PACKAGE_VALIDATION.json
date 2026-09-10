@@ -1,0 +1,50 @@
+{
+  "packed_at_utc": "2026-09-08T00:22:04.651855+00:00",
+  "n_gold150": 150,
+  "n_unique_ids_gold150": 150,
+  "split_counts": {
+    "gold100_page1": 100,
+    "iaa50": 50
+  },
+  "n_gold100_file": 100,
+  "n_iaa50_file": 50,
+  "n_spans_gold150": 663,
+  "n_spans_gold100_file": 415,
+  "n_spans_iaa50_file": 248,
+  "n_empty_gold150": 8,
+  "type_counts_gold150": {
+    "knowledge": 125,
+    "skills": 448,
+    "Tranversial SKills": 88,
+    "Language_Skills&Knowledge": 2
+  },
+  "id_overlap_gold100_iaa50_in_gold150": [],
+  "gold100_file_ids_match_gold150_gold100_split": true,
+  "gold100_text_label_vs_gold150_diffs": [],
+  "hashes": {
+    "gold150_test.jsonl": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "gold100_locked.jsonl": "a9fe43b79f58631876f00515f6a60649d8d2ceb57ebee111fe471cc70766864c",
+    "iaa50_gold_locked.copied.jsonl": "68b47bdbad1622ca39d89a2dceaf8117ee44a2227272e901a7673bc676531686",
+    "iaa50_gold_locked.source_copy.jsonl": "68b47bdbad1622ca39d89a2dceaf8117ee44a2227272e901a7673bc676531686"
+  },
+  "hash_vs_LOCK_json": {
+    "gold150_test.jsonl": {
+      "lock": "1ee795d27f6320c736570712e572f49ea614f5a2e5d9d95e03d9a0f4197a111a",
+      "current": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "match": false
+    },
+    "gold100_locked.jsonl": {
+      "lock": "37f2ab648499d73d214c0a65880eb38fbc66cbfdb746b2bc9859c0d3ab39f051",
+      "current": "a9fe43b79f58631876f00515f6a60649d8d2ceb57ebee111fe471cc70766864c",
+      "match": false
+    },
+    "iaa50": {
+      "lock": "68b47bdbad1622ca39d89a2dceaf8117ee44a2227272e901a7673bc676531686",
+      "current_copied": "68b47bdbad1622ca39d89a2dceaf8117ee44a2227272e901a7673bc676531686",
+      "match": true
+    }
+  },
+  "iaa50_copied_equals_workspace_source": true,
+  "source_bytes_unchanged": true,
+  "note": "This package copies the current sync-repo gold files. LOCK.json hashes for gold100/gold150 may be stale if they do not match current files. IAA-50 source jsonl was copied only; project 23 was not edited."
+}
