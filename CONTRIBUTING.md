@@ -13,7 +13,7 @@ Use a short, reproducible description. Include file paths relative to this repos
 ### Annotation issues
 
 - Disagreement with Handbook B (`B.sop_v4.2.1`): span boundary, type (L / K / S / T), empty-span cases.
-- State whether you used Gold v2, the V4 hybrid, or the 200-sentence human overlay. Do not mix protocols in one ticket.
+- State whether you used Gold v2, the V4 hybrid, the 200-sentence human overlay, or the 150-sentence human reference set (Gold150). Do not mix protocols in one ticket. Reader names: [`docs/TERMINOLOGY_CROSSWALK.md`](docs/TERMINOLOGY_CROSSWALK.md).
 - Quote only the **minimum** span needed to discuss the label. Prefer `id` + token offsets over pasting a full advertisement.
 
 ### Data-processing bugs
@@ -34,7 +34,7 @@ Use a short, reproducible description. Include file paths relative to this repos
 
 ### Model-card corrections
 
-- Errors in `release/huggingface-model/README.md` (architecture, licence, intended use).
+- Errors in `release/huggingface-model/README.md` or `release/huggingface-model-v6a/README.md` (architecture, licence, intended use).
 - Do not change the licence field to a concrete SPDX id until the base-model licence and training-data rights are confirmed.
 
 ---

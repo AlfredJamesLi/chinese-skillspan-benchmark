@@ -2,6 +2,8 @@
 
 This note separates **what this repository contains**, **what is already archived**, and **what must not be described as openly licensed** until the authors confirm rights. GitHub Release `v0.1.1` is archived at https://doi.org/10.5281/zenodo.22288338.
 
+Reader names for the 150-sentence human-annotated reference set (artifact Gold150), the Silver-plus release layer, and related cohorts: [`docs/TERMINOLOGY_CROSSWALK.md`](docs/TERMINOLOGY_CROSSWALK.md). Zenodo `v0.1.1` does **not** contain that human reference set or the Silver-plus v6a lists.
+
 ---
 
 ## 1. What can be publicly redistributed (pending author confirmation)
@@ -32,9 +34,11 @@ Included in the candidate public dataset:
 - Auxiliary fields present on Gold v2: `skill_spans`, `tags_skill`, `list_of_selection` (untyped B/I), `source_domain`, `title`, `_canon`
 - Split membership: train / dev / test for the 22,840-sentence Table 1 corpus
 - V4 hybrid metadata (`hybrid_source`: `simhuman980_cws` or `sop_cws`)
-- Silver train/dev for V4 CRF
+- Silver train/dev for V4 CRF (SOP silver; not the later Silver-plus v6a lists)
 - Frozen prediction tag sequences for Chinese JobBERT 1M/3M v4
 - Score tables with SHA-256-backed gold
+
+The 150-sentence human-annotated reference set (`gold150_test.jsonl`) and Silver-plus teacher-generated lists used for the additional experiments are **not** in Zenodo `v0.1.1`. They remain a later supplemental package. Do not describe Silver-plus as item-by-item human verified or as near-Gold.
 
 **Not included:** ESCO concept IDs, applicant CVs, annotator identities beyond Doccano display names already in internal packs, API keys.
 
@@ -72,6 +76,7 @@ Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云�
 
 - **Hugging Face model (JobBERT-zh):** https://huggingface.co/AlfredJames/jobbert-zh (**public**, verified 2026-09-04)
 - Encoder (`model.safetensors`) and V4 CRF (`crf/best.pt`) are in that repository. Git still does not store weights.
+- Additional checkpoint scored on the human reference set: https://huggingface.co/AlfredJames/jobbert-zh-v6a (Silver-plus v6a **B2** / revised supervision). Local card source: `release/huggingface-model-v6a/README.md`. Do not upload a new Hub version in this documentation pass.
 - Base initialisation: `hfl/chinese-roberta-wwm-ext` (Hugging Face card metadata: Apache-2.0). JobBERT-zh remains `other` until job-ad text rights are confirmed.
 
 ---

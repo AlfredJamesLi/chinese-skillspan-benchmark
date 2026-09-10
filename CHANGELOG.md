@@ -4,6 +4,10 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-11)
+
+- Reader-facing terminology aligned with the PeerJ manuscript: [`docs/TERMINOLOGY_CROSSWALK.md`](docs/TERMINOLOGY_CROSSWALK.md). Artifact identifiers (Gold150, IAA-50, `gold150_test.jsonl`, B1/B2, H/E/M) are unchanged. Historical snapshots and `v0.1.1` notes keep their original wording.
+
 ## Unreleased notes (2026-09-09d)
 
 - Additional public model **JobBERT-zh v6a** (`AlfredJames/jobbert-zh-v6a`): Gold150 B2 typed exact **0.5536±0.0054** (seeds 42/43/44). Does **not** overwrite `AlfredJames/jobbert-zh` (V4 hybrid **0.4331**). Packaging: `release/huggingface-model-v6a/`. Gold150 remains outside Zenodo `v0.1.1`.

@@ -2,9 +2,13 @@
 
 English draft for the PeerJ Computer Science **main text** (not the laboratory Chinese notes).  
 Scorer: `cnss-lskt-1.2.0`. Standard deviations are **n=3 sample SD**, not test-set confidence intervals.  
-Gold150 SHA-256: `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`.
+Human reference set (artifact **Gold150**) SHA-256: `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`. File `gold150_test.jsonl` is not renamed.
 
-These numbers **must not** be subtracted from, or ranked in the same main table as, V4 hybrid 2601 JobBERT-zh 3M **0.4331** or official zero-shot Qwen SOP extract **0.1724**. Gold150 IDs sit inside hybrid 2601; scoring the same student again on full 2601 is not an independent test.
+**Silver-plus** is the resource release-layer name for teacher-generated silver annotations (automated validation and sampled human review). Plus is not a recognised quality grade; the layer is not item-by-item human verified and is not near-Gold.
+
+A **150-sentence human-annotated reference set** is defined here once. Later short form: **the human reference set**. It is not independent dual-blind coding of all 150 sentences. Independent-coding evidence applies to the corresponding 50-sentence **initial independent-coding study**. Reader names: [`TERMINOLOGY_CROSSWALK.md`](TERMINOLOGY_CROSSWALK.md).
+
+These numbers **must not** be subtracted from, or ranked in the same main table as, V4 hybrid 2601 JobBERT-zh 3M **0.4331** or official zero-shot Qwen SOP extract **0.1724**. Human-reference IDs sit inside hybrid 2601; scoring the same student again on full 2601 is not an independent test.
 
 Isolation wording: **sentence-level isolation (extended)**. Do not call it document isolation after v4.
 
@@ -21,9 +25,9 @@ JobBERT-zh and Qwen2.5-14B-Instruct are **not** the same fine-tuning recipe. The
 | Prompt | **None.** The model never sees an instruction. | **Yes.** One fixed extraction instruction; **no** in-context examples |
 | Inference | CRF Viterbi, then first-subword → character | Greedy generation (`do_sample=false`), then JSON parse |
 | Official SOP extract 0.1724 | Not this protocol | **Not this protocol** (0.1724 is zero-shot SOP, no LoRA) |
-| B1 vs B2 | Same characters, different BIO | Same instruction, different target JSON |
+| B1 vs B2 | Same characters, different BIO (earlier vs revised supervision) | Same instruction, different target JSON |
 
-B1/B2 is a **label-scheme** contrast on identical sentences (old SOP-style vs teacher Silver-plus), not two prompts and not a teacher-architecture ablation. Gains should be read as the package “handbook + teacher + adjudication”.
+B1 and B2 are condition codes for **earlier** versus **revised** supervision on identical sentences. The comparison is the package “handbook + teacher + adjudication”, not two prompts and not a teacher-architecture ablation.
 
 ---
 
@@ -39,7 +43,7 @@ B1/B2 is a **label-scheme** contrast on identical sentences (old SOP-style vs te
 
 v6a B2 seed 42 ran 810 steps; selected dev typed exact was about 0.65. That is a development figure, not a paper test number.
 
-**HEM (supplement only).** Same 3M DAPT encoder, **freshly initialised** CRF (released `best.pt` refused). Equal-\(n\) source contrast, 564 unique sentences per condition. It does **not** replace the full v6a main cell.
+**HEM (supplement only).** Same 3M DAPT encoder, **freshly initialised** CRF (released `best.pt` refused). Equal-\(n\) **conflict-origin / non-conflict-origin / mixed** source contrast (`H_468` / `E_468` / `M_468`), 564 unique sentences per condition. The **initial teacher-label review cohort** (artifact **A100**) is the shared Silver-plus base; it is not promoted to Gold. HEM does **not** replace the full v6a main cell and must not be mixed with generation pools H730 / E1621.
 
 ---
 
@@ -76,6 +80,8 @@ The move from 0.0788 to 0.1215 changed **both** data and selection. Do not attri
 
 ## 4. Silver-plus data versions
 
+Silver-plus remains the release-layer name. Counts below are list versions of teacher-generated silver annotations, not a claim that every row was human-verified.
+
 | Version | train / dev | Role |
 |---|---|---|
 | v3 | 1382 / 169 | Strict document isolation. JobBERT B1/B2 and Qwen JSON-offset. |
@@ -85,7 +91,7 @@ The move from 0.0788 to 0.1215 changed **both** data and selection. Do not attri
 | v6b | 2200 / 132 | Cleaner dev; B2 weights equal v5. No new B2 evidence. |
 | Extension list | 2150 / 169 | `v6a_nocross`: drop 6 train IDs after 3 whole-sentence NFC collisions. Does not edit v6a files. |
 
-Gold150 ∩ train/dev IDs = 0. Hold-82 stayed out of training ([PR #1](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/pull/1)). Gold150 = Challenge-100 (`gold100_page1`) + Audit-50 (`iaa50`).
+Gold150 ∩ train/dev IDs = 0. Hold-82 stayed out of training ([PR #1](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/pull/1)). The human reference set = 100-sentence challenge cohort (`gold100_page1`) + 50-sentence calibration cohort (`iaa50`). Artifact aliases Challenge-100 / Audit-50 / IAA-50 remain valid identifiers; do not mix the calibration split with later audits, and do not treat the full 150 as an independent dual-blind study.
 
 ---
 
@@ -110,7 +116,7 @@ Keep in the **existing** V4 hybrid 2601 table. Do not add Gold150 rows here.
 | **v6a 2156/169** | 0.1422±0.0138 | **0.5536±0.0054** |
 | v6b 2200/132 | 0.1332±0.0052 | 0.5540±0.0041 (= v5 B2) |
 
-v6a B2 Gold150 relaxed **0.6890±0.0085**. Challenge-100 **0.5803±0.0036**. Audit-50 **0.5071±0.0092**. Type exact ≈ L/K/S/T = 0.867 / 0.491 / 0.555 / 0.616.
+v6a B2 Gold150 relaxed **0.6890±0.0085**. Challenge cohort (`gold100_page1`) **0.5803±0.0036**. Calibration cohort (`iaa50`) **0.5071±0.0092**. Type exact ≈ L/K/S/T = 0.867 / 0.491 / 0.555 / 0.616.
 
 On v3, B2−B1 ≈ **+0.391**. From v3 to v6a, B2 volume ≈ **+0.024**. Allowed wording: the observed B2-vs-B1 gap is larger than the volume gap in this expansion. Do **not** write “label quality far exceeds data size”.
 
@@ -124,7 +130,7 @@ Released CRF without Silver-plus continuation (B0) is Gold150 exact **0.1745** a
 | v3 1382, last epoch | B2 | 0.0788±0.0108 | 0.4166±0.0056 |
 | v6a_nocross 2150, dev select | B2 only | **0.1215±0.0092** | **0.4459±0.0237** |
 
-Extension seeds 42/43/44 exact: 0.1313 / 0.1203 / 0.1129. Challenge-100 0.1224±0.0105; Audit-50 0.1199±0.0073. Parse failures 4–5/150. Empty-label false positives 1–2. exact ≪ relaxed is a **boundary / localisation** gap, not parse collapse. Type exact means ≈ T 0.22, K 0.11, S 0.10; L has only two gold spans.
+Extension seeds 42/43/44 exact: 0.1313 / 0.1203 / 0.1129. Challenge cohort 0.1224±0.0105; calibration cohort 0.1199±0.0073. Parse failures 4–5/150. Empty-label false positives 1–2. exact ≪ relaxed is a **boundary / localisation** gap, not parse collapse. Type exact means ≈ T 0.22, K 0.11, S 0.10; L has only two gold spans.
 
 Do not write that Qwen caught up with JobBERT, that this round independently proves B2>B1, or that 0.12 is comparable to SOP **0.1724**.
 
@@ -138,7 +144,7 @@ DAPT encoder + reinit CRF; 564 sentences; sample seed 20260908.
 | E_468 | 0.4345±0.0235 | 0.5776±0.0237 |
 | M_468 | 0.4562±0.0236 | 0.6089±0.0281 |
 
-H−E ≈ 0.020, smaller than E’s sample SD 0.024. Conclusion: equal-\(n\) source contrast only. Not difficulty truth, not a replacement for 0.5536, not continued training of the released CRF.
+H−E ≈ 0.020, smaller than E’s sample SD 0.024. Conclusion: equal-\(n\) **conflict-origin vs non-conflict-origin** contrast only. Not difficulty truth, not a replacement for 0.5536, not continued training of the released CRF, and not a restatement of pools H730 / E1621.
 
 JobBERT-zh 1M × Silver-plus was **not** run (different DAPT recipe; no CRF selection history).
 
@@ -191,10 +197,10 @@ Do **not** write that peel-cleaning improved the main cells, and do not rewrite 
 ---
 ## 7. Limitations that stay in the main text
 
-- Gold150 is not a freshly blinded test after several laboratory rounds.  
+- The human reference set is not a freshly blinded test after several laboratory rounds, and the full 150 sentences are not an independent dual-blind coding.  
 - JSON-offset LoRA ≠ official SOP extract 0.1724.  
 - v3–v6a JobBERT inherit the released CRF; independence is unproven.  
-- HEM is one sample of H/E/M; it does not estimate sampling uncertainty.  
+- HEM is one sample of conflict-origin / non-conflict-origin / mixed conditions; it does not estimate sampling uncertainty.  
 - Extension Qwen is B2-only.  
 - JobBERT-zh 1M Silver-plus was skipped.  
 - P1 $k=0$ is a mean lift of +0.024 with overlapping sample SDs; demonstrations hurt exact F1. It does not replace Table C.  
