@@ -7,8 +7,8 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 ## 0.1.3 — 2026-09-11 (Gold150 on the versioned Git tree)
 
 - GitHub tag **`v0.1.3`**: includes `data/gold150_test.jsonl` and Silver-plus B2 `v6a_nocross` train/dev, Handbook B v4.2.14, and the draft workflow figure.
+- Version DOI: https://doi.org/10.5281/zenodo.22698504 (record https://zenodo.org/records/22698504).
 - Does **not** overwrite `v0.1.1` (DOI `10.5281/zenodo.22288338`) or `v0.1.2` (DOI `10.5281/zenodo.22685143`).
-- Zenodo version DOI is minted by the existing GitHub–Zenodo release hook after this tag; fill it into `DATA_AVAILABILITY.md` once the record exists.
 - Paper-main gold remains V4 hybrid 2,601. Qwen LoRA is still not in the archive.
 
 ## Unreleased notes (2026-09-09d)
@@ -78,9 +78,9 @@ GitHub, JobBERT-zh, and Zenodo `v0.1.1` are **public**.
 | Handbook B | `B.sop_v4.2.14` | 2026-09-09 | Paper SOP on GitHub `main`; v4.2.1 remains in older tags |
 | Human page-1 overlay | 200 sentences; sha `fcecb522…617490` | 2026-09-03 | Supplement; path `data/human_gold_page1_200.jsonl` |
 | `repartition_v1` | Same 22,840, other split (`16,350` / `2,268` / `4,222`) | — | Draft; not main gold |
-| Public archive | GitHub / Zenodo `v0.1.2` | 2026-09-10 | Current minted archive; Gold150 not included |
-| Gold150 | 150 sentences; sha `ca8db0bc…0310fd0` | On GitHub `main` 2026-09-11 | Not in Zenodo v0.1.1 / v0.1.2 |
-| Silver-plus B2 `v6a_nocross` | train 2,150 / dev 169 | On GitHub `main` 2026-09-11 | Teacher labels, not extra Gold |
+| Public archive | GitHub / Zenodo `v0.1.3` | 2026-09-11 | Current minted archive; includes Gold150; DOI `10.5281/zenodo.22698504` |
+| Gold150 | 150 sentences; sha `ca8db0bc…0310fd0` | Zenodo `v0.1.3` | Not in `v0.1.1` / `v0.1.2` |
+| Silver-plus B2 `v6a_nocross` | train 2,150 / dev 169 | Zenodo `v0.1.3` | Teacher labels, not extra Gold |
 
 ---
 
@@ -90,7 +90,7 @@ GitHub, JobBERT-zh, and Zenodo `v0.1.1` are **public**.
 |---|---|---|
 | Scorer `cnss-lskt-1.2.0` | Official typed / relaxed micro-F1 | Present in `scorer/score_lskt.py` |
 | Public GitHub | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark | Public as of 2026-09-04 |
-| GitHub Release | `v0.1.1` | 2026-09-04 |
+| GitHub Release | `v0.1.3` | 2026-09-11 |
 
 ---
 

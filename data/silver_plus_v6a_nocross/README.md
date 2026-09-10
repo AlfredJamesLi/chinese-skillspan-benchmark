@@ -9,4 +9,4 @@ Teacher supervision for Gold150 student runs. **Not** additional Gold test label
 
 Isolation: sentence-level extended (`句级隔离扩展版`). Gold150 IDs are not in these train/dev lists. Do not call this document isolation.
 
-On GitHub `main`. Not in Zenodo `v0.1.1` or `v0.1.2`. Test gold: [`../gold150_test.jsonl`](../gold150_test.jsonl).
+On GitHub Release / Zenodo **`v0.1.3`**. Not in Zenodo `v0.1.1` or `v0.1.2`. Test gold: [`../gold150_test.jsonl`](../gold150_test.jsonl).

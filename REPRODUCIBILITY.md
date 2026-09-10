@@ -67,7 +67,7 @@ SHA-256 values below were computed from the files in this workspace.
 | `data/silver_plus_v6a_nocross/train_b2.jsonl` | Silver-plus B2 teacher train (`v6a_nocross`) | 1,757,307 | `8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e` |
 | `data/silver_plus_v6a_nocross/dev_b2.jsonl` | Silver-plus B2 teacher development | 151,873 | `e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef` |
 
-Last minted archive: GitHub / Zenodo **`v0.1.2`** (DOI `10.5281/zenodo.22685143`). First snapshot: **`v0.1.1`**. Gold150, Silver-plus B2, and Handbook B v4.2.14 are on GitHub `main` and are **not** in those Zenodo tarballs.
+Last minted archive: GitHub / Zenodo **`v0.1.3`** (DOI `10.5281/zenodo.22698504`; includes Gold150). Earlier snapshots: **`v0.1.2`** (`10.5281/zenodo.22685143`) and **`v0.1.1`** (`10.5281/zenodo.22288338`). Gold150, Silver-plus B2, and Handbook B v4.2.14 are **not** in the `v0.1.1` or `v0.1.2` tarballs.
 
 `scripts/eval_hybrid_cws_simhuman.py` can **rewrite** the hybrid gold from SOP-CWS + SimHuman sources. After any such run, re-check the SHA-256 above before treating the file as the frozen paper gold.
 

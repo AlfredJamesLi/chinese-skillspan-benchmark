@@ -1,6 +1,6 @@
 # Silver-plus extension provenance
 
-Status: **on GitHub `main` (2026-09-11)**. Not in Zenodo `v0.1.1` or `v0.1.2`. Not paper-main gold. Silver-plus rows are teacher supervision, not extra Gold150 test labels.
+Status: **in GitHub tag / Zenodo `v0.1.3`** (DOI `10.5281/zenodo.22698504`). Not in Zenodo `v0.1.1` or `v0.1.2`. Not paper-main gold. Silver-plus rows are teacher supervision, not extra Gold150 test labels.
 
 Do not call this document isolation. Isolation wording: **句级隔离扩展版** (sentence-level isolation, extended).
 
@@ -25,7 +25,7 @@ Do not call this document isolation. Isolation wording: **句级隔离扩展版*
 | `data/silver_plus_v6a_nocross/train_b2.jsonl` | 2,150 | 1,757,307 | `8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e` |
 | `data/silver_plus_v6a_nocross/dev_b2.jsonl` | 169 | 151,873 | `e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef` |
 
-Gold150 IDs are not in the B2 train/dev lists. A new Zenodo version under concept `10.5281/zenodo.22288337` has **not** been minted for these files. Do not silently replace record `22288338` or `22685143`.
+Gold150 IDs are not in the B2 train/dev lists. Archived under concept `10.5281/zenodo.22288337` as version `v0.1.3` (`10.5281/zenodo.22698504`). Do not silently replace record `22288338` or `22685143`.
 
 ---
 

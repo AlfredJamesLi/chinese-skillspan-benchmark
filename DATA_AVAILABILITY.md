@@ -2,10 +2,11 @@
 
 This note separates **what this repository contains**, **what is already archived**, and **what must not be described as openly licensed** until the authors confirm rights.
 
-- **Current Zenodo snapshot (`v0.1.2`):** https://doi.org/10.5281/zenodo.22685143
+- **Current Zenodo snapshot (`v0.1.3`, includes Gold150):** https://doi.org/10.5281/zenodo.22698504
+- **Previous snapshot (`v0.1.2`):** https://doi.org/10.5281/zenodo.22685143
 - **First archival snapshot (`v0.1.1`, PDF-cited, immutable):** https://doi.org/10.5281/zenodo.22288338
 - **Concept DOI (all versions):** https://doi.org/10.5281/zenodo.22288337
-- **GitHub `main`:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark — now includes Gold150 and Silver-plus B2, which are **not** in either Zenodo version above.
+- **GitHub:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark — tag `v0.1.3` matches this Zenodo version.
 
 ---
 
@@ -20,8 +21,8 @@ The following are *candidates* for a public GitHub + Zenodo + Hugging Face relea
 | Predefined Table 1 split *indices* / `id` lists | Embedded in `data/corpus_splits/` and gold files | IDs and split membership: yes |
 | BIO annotations (`list_of_selection_bio4`) aligned to `id` | Gold, silver, and hybrid files | Derived labels: intended for release |
 | Frozen encoder predictions (tags only + sentence text) | `data/frozen_preds/` | Predictions: yes; accompanying sentence text: same restriction as the corpus |
-| Gold150 test freeze | `data/gold150_test.jsonl` | On GitHub `main`; not in Zenodo `v0.1.1` or `v0.1.2` |
-| Silver-plus B2 `v6a_nocross` train/dev | `data/silver_plus_v6a_nocross/` | Teacher labels only; same GitHub/`Zenodo` split as Gold150 |
+| Gold150 test freeze | `data/gold150_test.jsonl` | In GitHub tag / Zenodo `v0.1.3`; not in `v0.1.1` or `v0.1.2` |
+| Silver-plus B2 `v6a_nocross` train/dev | `data/silver_plus_v6a_nocross/` | Teacher labels only; same `v0.1.3` archive |
 | Committed score CSVs and this documentation | `tables/`, `docs/`, `release/` | Yes |
 | JobBERT-zh weights (paper-main 3M V4) | https://huggingface.co/AlfredJames/jobbert-zh | Public model + card; licence still `other` pending text-rights confirmation |
 | JobBERT-zh 1M weights (different DAPT; not a replacement) | https://huggingface.co/AlfredJames/jobbert-zh-1m | Public contrast checkpoint; not in Zenodo `v0.1.1` |
@@ -57,8 +58,8 @@ Included in the candidate public dataset:
 | Evaluation unique IDs (paper main) | 2,601 | Gold v2 and V4 hybrid |
 | Raw Doccano Gold rows | 2,676 | Freeze protocol |
 | Human overlay (page 1) | 200 | `data/human_gold_page1_200.jsonl` |
-| Gold150 | 150 = Challenge-100 + Audit-50 | `data/gold150_test.jsonl` (GitHub `main` only) |
-| Silver-plus B2 `v6a_nocross` | 2,150 / 169 | `data/silver_plus_v6a_nocross/` (teacher; GitHub `main` only) |
+| Gold150 | 150 = Challenge-100 + Audit-50 | `data/gold150_test.jsonl` (Zenodo `v0.1.3`) |
+| Silver-plus B2 `v6a_nocross` | 2,150 / 169 | `data/silver_plus_v6a_nocross/` (teacher; Zenodo `v0.1.3`) |
 
 Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云公开数据集`, `事业单位招聘`.
 
@@ -67,18 +68,19 @@ Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云�
 ## 3. Where the code will be hosted
 
 - **Public GitHub:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (visibility **public**, verified 2026-09-04)
-- **Versioned GitHub Release tag:** `v0.1.0` (first public snapshot); `v0.1.1` (Zenodo citation-metadata fix); `v0.1.2` (2026-09-10 GitHub snapshot archived on Zenodo). GitHub `main` after 2026-09-11 also has Handbook B v4.2.14, Gold150, and Silver-plus B2.
+- **Versioned GitHub Release tag:** `v0.1.0` (first public snapshot); `v0.1.1` (Zenodo citation-metadata fix); `v0.1.2` (2026-09-10 snapshot); `v0.1.3` (2026-09-11; Gold150 + Silver-plus B2).
 
 ---
 
 ## 4. Where the archived dataset version will be hosted
 
-- **Zenodo version DOI (`v0.1.2`, last minted archive):** https://doi.org/10.5281/zenodo.22685143 (record https://zenodo.org/records/22685143). Related identifier: `…/tree/v0.1.2`. Does **not** contain Gold150 or Silver-plus B2.
+- **Zenodo version DOI (`v0.1.3`, current archive; includes Gold150):** https://doi.org/10.5281/zenodo.22698504 (record https://zenodo.org/records/22698504). Related identifier: `…/tree/v0.1.3`.
+- **Zenodo version DOI (`v0.1.2`):** https://doi.org/10.5281/zenodo.22685143 (record https://zenodo.org/records/22685143). Does **not** contain Gold150.
 - **Zenodo version DOI (`v0.1.1`, first archival snapshot; PDF-cited):** https://doi.org/10.5281/zenodo.22288338 (record https://zenodo.org/records/22288338). This DOI is **immutable** and will always show `…/tree/v0.1.1`.
 - **Zenodo concept DOI (all versions / latest):** https://doi.org/10.5281/zenodo.22288337
-- **Hugging Face dataset mirror:** not published. Reviewers who want Gold150 should clone GitHub `main`, not only the `v0.1.2` tarball.
+- **Hugging Face dataset mirror:** not published. Reviewers who want Gold150 should use GitHub Release `v0.1.3` or DOI `10.5281/zenodo.22698504`, not only `v0.1.1` / `v0.1.2`.
 - Reviewers should use **GitHub**, **Hugging Face (model)**, and **Zenodo** only. Do not list a Google Sites or Drive page in the PeerJ form.
-- A later Zenodo version for Gold150 has **not** been minted. Do not describe Gold150 as part of DOI `10.5281/zenodo.22288338` or `10.5281/zenodo.22685143`. See `notes/SILVER_PLUS_EXTENSION_PROVENANCE.md`.
+- Do not describe Gold150 as part of DOI `10.5281/zenodo.22288338` or `10.5281/zenodo.22685143`. See `notes/SILVER_PLUS_EXTENSION_PROVENANCE.md`.
 
 ---
 
@@ -124,13 +126,13 @@ Privacy: advertisements may include workplace locations and organisational names
 
 ## 8. Proposed PeerJ Data Availability Statement
 
-Use this wording in the PeerJ form. The clickable “available at” should be **`v0.1.2`** plus the concept DOI. Keep **`v0.1.1`** as the first archival snapshot (do not delete it). Do **not** put SHA-256 values in the running paragraph; they live in `REPRODUCIBILITY.md`.
+Use this wording in the PeerJ form. The clickable “available at” should be **`v0.1.3`** plus the concept DOI. Keep **`v0.1.1`** as the first archival snapshot (do not delete it). Do **not** put SHA-256 values in the running paragraph; they live in `REPRODUCIBILITY.md`.
 
-> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22685143 (version v0.1.2; concept DOI https://doi.org/10.5281/zenodo.22288337). The first archival snapshot is https://doi.org/10.5281/zenodo.22288338 (version v0.1.1). The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The paper-main JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh. Two later public model repositories are available at https://huggingface.co/AlfredJames/jobbert-zh-1m (1M DAPT contrast) and https://huggingface.co/AlfredJames/jobbert-zh-v6a (Gold150 B2 continuation); they do not replace the paper-main encoder. Gold150 (`data/gold150_test.jsonl`) and Silver-plus B2 train/development files (`data/silver_plus_v6a_nocross/`) are on the GitHub repository and are not included in Zenodo v0.1.1 or v0.1.2.
+> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22698504 (version v0.1.3; concept DOI https://doi.org/10.5281/zenodo.22288337). Earlier snapshots are https://doi.org/10.5281/zenodo.22685143 (version v0.1.2) and https://doi.org/10.5281/zenodo.22288338 (version v0.1.1). The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The paper-main JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh. Two later public model repositories are available at https://huggingface.co/AlfredJames/jobbert-zh-1m (1M DAPT contrast) and https://huggingface.co/AlfredJames/jobbert-zh-v6a (Gold150 B2 continuation); they do not replace the paper-main encoder. Gold150 (`data/gold150_test.jsonl`) and Silver-plus B2 train/development files (`data/silver_plus_v6a_nocross/`) are included in v0.1.3 and are not in Zenodo v0.1.1 or v0.1.2.
 
 Longer form (optional methods paragraph):
 
-> Chinese-SkillSpan (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol) and the official scorer `cnss-lskt-1.2.0` are archived at https://doi.org/10.5281/zenodo.22685143 (v0.1.2) and, as the first snapshot, https://doi.org/10.5281/zenodo.22288338 (v0.1.1). The source code is at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The paper-main Chinese JobBERT (JobBERT-zh) is distributed at https://huggingface.co/AlfredJames/jobbert-zh. Later public checkpoints are at https://huggingface.co/AlfredJames/jobbert-zh-1m and https://huggingface.co/AlfredJames/jobbert-zh-v6a; they are not substitutes for the paper-main encoder. A later Gold150 reference (`data/gold150_test.jsonl`) and Silver-plus B2 teacher files are on GitHub and are distinct from the cited Zenodo snapshots. Redistribution of original job-advertisement wording remains subject to the source platforms’ terms. This work was supported by the National Social Science Fund of China, Grant No. 21BGL142.
+> Chinese-SkillSpan (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol) and the official scorer `cnss-lskt-1.2.0` are archived at https://doi.org/10.5281/zenodo.22698504 (v0.1.3). Earlier snapshots are https://doi.org/10.5281/zenodo.22685143 (v0.1.2) and https://doi.org/10.5281/zenodo.22288338 (v0.1.1). The source code is at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The paper-main Chinese JobBERT (JobBERT-zh) is distributed at https://huggingface.co/AlfredJames/jobbert-zh. Later public checkpoints are at https://huggingface.co/AlfredJames/jobbert-zh-1m and https://huggingface.co/AlfredJames/jobbert-zh-v6a; they are not substitutes for the paper-main encoder. Redistribution of original job-advertisement wording remains subject to the source platforms’ terms. This work was supported by the National Social Science Fund of China, Grant No. 21BGL142.
 
 Optional Gold150 sentence (still **no** SHA-256 in the running paragraph). Use `\url` in TeX:
 

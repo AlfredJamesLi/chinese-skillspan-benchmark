@@ -10,4 +10,4 @@ Canonical scoring path: [`../gold150_test.jsonl`](../gold150_test.jsonl) (same b
 
 Gold150 = Challenge-100 (`split=gold100_page1`) + Audit-50 (`split=iaa50`). Fields use `source_id` and Doccano `label` triples; it is **not** V4 hybrid 2,601 and **not** Gold v2. Do not overwrite `gold_canonical_v2.jsonl` or `test_lskt_v4_cws_simhuman980_hybrid.jsonl`.
 
-These files are on GitHub `main`. They are **not** in Zenodo `v0.1.1` or `v0.1.2`. Teacher Silver-plus B2: [`../silver_plus_v6a_nocross/`](../silver_plus_v6a_nocross/).
+These files are in GitHub Release / Zenodo **`v0.1.3`** (DOI `10.5281/zenodo.22698504`). They are **not** in Zenodo `v0.1.1` or `v0.1.2`. Teacher Silver-plus B2: [`../silver_plus_v6a_nocross/`](../silver_plus_v6a_nocross/).
