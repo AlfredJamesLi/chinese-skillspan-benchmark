@@ -1,10 +1,10 @@
 # Handbook B — LSKT v4 SOP (current human coding rules; English summary)
 
-**Integrated revision:** R14–R18, final adjudication consolidation.
+**Integrated revision:** Chinese canonical is `B.sop_v4.2.14` (2026-09-09). R19–R22 retained; R23 adds the user-confirmed James1 split for case 194. This English file remains a summary, not a full translation.
 
-**Current machine prompt:** `PROMPT_silver_plus_v4212.txt` (silver_plus_v4212_rev1). References to the V4.2.11 prompt below are historical. The Word summary is exported from this text; it is not a full translation of the Chinese handbook.
+**Current machine prompt file:** `PROMPT_silver_plus_v4212.txt`. The executed 2351-row batch used user-confirmed `silver_plus_v4212_rev2`; this handbook revision does not claim generation used v4.2.14.
 
-**Handbook version:** `B.sop_v4.2.12` (2026-09-07; final adjudication consolidation). ESCO-informed concepts with explicit project operationalizations. Shortest-complete cuts: completeness before length. Context-sensitive tools; experience follows the distinctions below. The task remains contiguous, flat extraction. Consolidated clauses R14–R18 do not retroactively version historical data.  
+**Handbook version:** `B.sop_v4.2.14` (2026-09-09). ESCO-informed concepts with explicit project operationalizations. Shortest-complete cuts: completeness before length. Context-sensitive tools; experience follows the distinctions below. The task remains contiguous, flat extraction. R23 does not retroactively rewrite the saved 100-record / 419-span statistics.  
 **Keys:** [ESCO14] [EQF] [ESCO-L] [ESCO-T] [ESCO-Q] [Z22] [Say18] [AP08] [Kr95] [TKS02] [FM09] [Yu20] [UD20] [D18] [ONET] [Nav09] [PB05]. `[本协议]` / *this protocol* = Chinese-job operationalization, not a gold standard forced by one paper. Full entries at the end.
 
 **Use:** current human coding rules. This revision does not retroactively change the reported evaluation protocol or results. Historical P2 bindings follow: Train silver: `train_lskt_v4_silver`. Test gold: `test_lskt_v4_cws_simhuman980_hybrid.jsonl` (2601 = 980 SimHuman rule_v4 + 1621 SOP-CWS; **same IDs as Gold v2**; jieba snap on **gold and** predictions).  
@@ -166,6 +166,14 @@ The 38 decisions comprise 31 user-reviewed recommendations, two conditionally au
 The reviewed release has 100 records, 419 spans (K87/S255/T77/L0), 13 records with actual label/boundary changes, 62 originally unflagged records entirely unchanged, and zero pending records. These are version counts, not accuracy/reliability. This handbook consolidates already-applied decisions; do not retrospectively claim the model originally ran with v4.2.12. Preserve original protocol/model/execution data, hashes and adjudication logs.
 
 Retain historical pending entries with current case overrides, without treating all legacy P01–P10 topics as resolved. Future uncertain cases follow R11. Long/shared-span examples support diagnostics, not an independent test if used for rules or training. No new training/test or changes to historical Gold/IAA/results. This edition includes Chinese Word, English-summary Word and the V4.2.12 prompt. Previous editions remain preserved. Companion appendices have not undergone a full new audit; remote publication is established by the GitHub commit, not by local file existence.
+
+## R19–R22 (Chinese canonical; English pointer)
+
+See the Chinese handbook for full text. R19 separates `confirmed_empty` from `difficult_or_undetermined`. R20 allows authorized machine adjudication as Silver, not human Gold. R21 requires verified source context. R22 records inventory counts without changing historical F1.
+
+## R23 Shared-experience coordinated splits (user-confirmed, 2026-09-09)
+
+James1 ruling for case 194 (`1838-s0008`). When 或/和/及 conjoin independently identifiable practice objects and a local shared「相关工作经验」scopes them, mark each as its own contiguous span. Keep the shared experience phrase in the interpretive context; do not retag practice as knowledge merely because the phrase is outside the span. Confirmed S spans: `互联网公司经营`, `BI`, `互联网公司广告运营分析`. Do not rewrite the frozen 100-record / 419-span statistics in this release.
 
 ## References
 

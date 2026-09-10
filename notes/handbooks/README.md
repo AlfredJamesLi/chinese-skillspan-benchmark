@@ -15,7 +15,9 @@
 
 980 句是 SimHuman **rule_v4** 叠加，不是按手册 B/C 做完的全量人标。Table 2 IAA（n=100）测的是 Doccano 源跨度，**不是** V4 hybrid，也不是本轮双盲 100 句。
 
-**v4.2（2026-08-28）：** 手册 B 仍是权威 SOP。语言考试/证书（CET-6 / 英语六级 / 日语N2）归 **L**（恢复原银标 API；对齐 ESCO *Language skills and knowledge*：语言既是知识也是能力，故单独列支）。ISO / OCJP 等非语言认证仍为 **K**。Gold v2 / 手册 A 沿革仍把六级记为 K，**不改 Gold 文件**。重叠裁决附录 `handbook_B_overlap_adjudication.md`；规则日志 `LSKT_V4_RULE_CHANGELOG.md`。新提示词：`prompts/LSKT_V4_ANNOTATION_PROMPT.txt`。人标队列：`reports/human980_doccano/`（草稿）。标准化协议双盲 IAA 与裁决后 Gold **尚未存在**。
+**v4.2.14（2026-09-09）：** 现行中文手册。在 V4.2.13 上增加 R23（194 号 / `1838-s0008`，James1 并列拆分）；R19–R22 保留。不回写旧 100 条标签，不改论文数字。Word：`Chinese_SkillSpan_中文版编码簿_v4.2.14.docx`。提示词文件仍为已冻结的 `PROMPT_silver_plus_v4212.txt`（生成批次为 rev2，不声称按 v4.2.14 重跑）。
+
+**v4.2.12（2026-09-07）：** 手册 B 仍是权威 SOP 的上一冻结 Word。语言考试/证书（CET-6 / 英语六级 / 日语N2）归 **L**（恢复原银标 API；对齐 ESCO *Language skills and knowledge*：语言既是知识也是能力，故单独列支）。ISO / OCJP 等非语言认证仍为 **K**。Gold v2 / 手册 A 沿革仍把六级记为 K，**不改 Gold 文件**。重叠裁决附录 `handbook_B_overlap_adjudication.md`；规则日志 `LSKT_V4_RULE_CHANGELOG.md`。新提示词：`prompts/LSKT_V4_ANNOTATION_PROMPT.txt`。人标队列：`reports/human980_doccano/`（草稿）。标准化协议双盲 IAA 与裁决后 Gold **尚未存在**。
 
 **2026-08-30：** 为 B/C 操作化定义补文献键（`handbook_B_citations.md`）。规则与数字未改。短跨度 2–8 字标 **[本协议]**，不要写成 Zhang et al. (2022) 的规定。
 

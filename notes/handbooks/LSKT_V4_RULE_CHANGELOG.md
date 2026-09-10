@@ -1,12 +1,23 @@
 # LSKT v4 rule changelog
 
-**Handbook version:** `B.sop_v4.2.12` (2026-09-07; final adjudication consolidation)  
-Canonical one-pagers: `notes/handbooks/handbook_B_sop_v4.md` (+ `.en.md`).  
+**Handbook version:** `B.sop_v4.2.14` (2026-09-09; R23 on shared-experience splits)  
+Canonical one-pagers: `notes/handbooks/handbook_B_sop_v4.md` (+ `.en.md`; English is a summary, Chinese is authoritative).  
 Overlap/adjudication: `notes/handbooks/handbook_B_overlap_adjudication.md`.  
 Literature keys: `notes/handbooks/handbook_B_citations.md`.  
-Current Silver-plus prompt: `notes/handbooks/PROMPT_silver_plus_v4212.txt` (silver_plus_v4212_rev1). The legacy `prompts/LSKT_V4_ANNOTATION_PROMPT.txt` is not synchronized by this release.
+Current Silver-plus prompt file: `notes/handbooks/PROMPT_silver_plus_v4212.txt` (executed 2351-row batch used user-confirmed `silver_plus_v4212_rev2`; this release does **not** claim generation used v4.2.14). The legacy `prompts/LSKT_V4_ANNOTATION_PROMPT.txt` is not synchronized by this release.
 
 This log records **rule text** changes. It does **not** freeze a new human Gold and does **not** authorize rewriting paper F1 tables.
+
+## 2026-09-09 — v4.2.14 (R23 shared-experience split; James1 on case 194)
+
+Chinese Word source: `Chinese_SkillSpan_Zh_v4.2.14.docx` (SHA-256 `348ada00010d5d540b9a940db765b9e1cafc5f90eba5076c205447ea815ae17c`), archived as `notes/handbooks/Chinese_SkillSpan_中文版编码簿_v4.2.14.docx`. v4.2.12 Word remains for history.
+
+- R19: distinguish `confirmed_empty` from `difficult_or_undetermined`; empty is a record state, not a fifth entity type. Sentence-level empty cases: `1928-s0005`, `1996-s0012`, `1996-s0013`. Pure cross-reference is empty; missing activity is not.
+- R20: authorized machine adjudication may form Silver, not human Gold; unresolved records stay quarantined. No new blind IAA from teacher self-review.
+- R21: scope evidence must be verified source text, not JSONL neighbors or ID prefixes.
+- R22: inventory counts (2451 retained; 29 leftover = 3 empty + 26 undetermined; 1424 conservative training-candidate pool) are version records, not accuracy/IAA. No training and no historical F1 changes.
+- R23: user-confirmed James1 split for case 194 (`1838-s0008`): three S spans `互联网公司经营` / `BI` / `互联网公司广告运营分析`. Shared「相关工作经验」is context, not a repeated span. Does not rewrite the saved 100-record / 419-span statistics.
+- Prompt files are not re-run. English summary is updated only as a pointer plus R23; Chinese Markdown is canonical.
 
 ## 2026-09-07 — v4.2.12 (final adjudication consolidation)
 
