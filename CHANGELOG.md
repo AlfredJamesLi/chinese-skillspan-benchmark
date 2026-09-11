@@ -6,8 +6,8 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ## Unreleased notes (2026-09-11 shared-guidelines GPT n=150)
 
-- Appendix shared-guidelines scores (not the current JobBERT evaluation): [`tables/gold150_shared_guidelines_rev2_patch1.csv`](tables/gold150_shared_guidelines_rev2_patch1.csv) and Qwen B2 LoRA [`tables/gold150_shared_guidelines_qwen_sft.csv`](tables/gold150_shared_guidelines_qwen_sft.csv). Paper name **gpt-5.6-terra** (HTTP `response.model`; request id `gpt-5.4`) typed exact **0.6667** on all 150 IDs after filling `1908-s0003` on 2026-09-11. Qwen SFT remains **0.5403±0.0354**. Do **not** rank these cells against V4 JobBERT **0.4331** or JobBERT-zh v6a **0.5536**.
-- Does **not** retag `v0.1.3`. Does **not** mint `v0.1.4` (freeze hashes unchanged). Does **not** ship API raw dumps or LoRA adapters. Appendix table name is **gpt-5.6-terra** (not request id `gpt-5.4`).
+- Appendix shared-guidelines scores (not the current JobBERT evaluation): [`tables/gold150_shared_guidelines_rev2_patch1.csv`](tables/gold150_shared_guidelines_rev2_patch1.csv) and Qwen B2 LoRA [`tables/gold150_shared_guidelines_qwen_sft.csv`](tables/gold150_shared_guidelines_qwen_sft.csv). **gpt-5.6-terra** typed exact **0.6667** on all 150 IDs after filling `1908-s0003` on 2026-09-11 (Gold150 HTTP 200: 152/152 returned that id). Qwen SFT remains **0.5403±0.0354**. Do **not** rank these cells against V4 JobBERT **0.4331** or JobBERT-zh v6a **0.5536**. Do **not** rename SOP extract **0.2132**.
+- Does **not** retag `v0.1.3`. Does **not** mint `v0.1.4` (freeze hashes unchanged). Does **not** ship API raw dumps or LoRA adapters. Appendix table name is **gpt-5.6-terra**.
 
 ## Unreleased notes (2026-09-11 current eval = human reference + v6a 0.5536)
 
