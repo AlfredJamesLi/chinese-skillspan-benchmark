@@ -109,7 +109,7 @@ python3 scorer/score_lskt.py \
   --align-mode official
 ```
 
-Do not overwrite `data/gold150_test.jsonl`. Qwen LoRA adapters are not in this release. CRF training uses `requirements-train.txt` and Hub `AlfredJames/jobbert-zh` (see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) §7). `--smoke` checks that the trainer loads; it is not the abstract F1.
+Do not overwrite `data/gold150_test.jsonl`. Qwen LoRA adapters are not in this release. CRF training uses `requirements-train.txt` and Hub `AlfredJames/jobbert-zh` (see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) §7). `--smoke` checks that the trainer loads; it is not the abstract F1. A second host (DS210039, `09897d9`, jieba 0.42.1) matched the P0 paper-main cells and left both freeze SHA-256 values unchanged.
 
 Weights are not stored in Git. Encoder + V4 CRF (0.4331): https://huggingface.co/AlfredJames/jobbert-zh. Gold150 v6a B2 continuation (0.5536±0.0054): https://huggingface.co/AlfredJames/jobbert-zh-v6a.
 

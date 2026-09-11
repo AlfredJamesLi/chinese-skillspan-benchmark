@@ -11,8 +11,9 @@ Companion files: [README.md](README.md), [DATA_AVAILABILITY.md](DATA_AVAILABILIT
 | Item | Verified in this repository | Notes |
 |---|---|---|
 | Official scorer | Python 3, standard library; version string `cnss-lskt-1.2.0` in `scorer/score_lskt.py` | No GPU |
-| Jieba alignment | `requirements-repro.txt` → `jieba>=0.42.1` | Required for the paper-main table |
-| Encoder + CRF training pins | `requirements-train.txt`: `torch==2.1.2`, `transformers==4.37.1`, `numpy==1.26.3`, `pytorch-crf==0.7.2`, `jieba>=0.42.1` | CUDA torch wheel from pytorch.org if needed. Bitwise match to 0.4331 is **not** claimed. |
+| Jieba alignment | `requirements-repro.txt` → `jieba>=0.42.1` | Required for the paper-main table. Second host DS210039 used 0.42.1 (2026-09-11). |
+| Encoder + CRF training pins | `requirements-train.txt`: `torch==2.1.2`, `transformers==4.37.1`, `numpy==1.26.3`, `pytorch-crf==0.7.2`, `jieba>=0.42.1` | CUDA torch wheel from pytorch.org if needed. Bitwise match to 0.4331 is **not** claimed. DS210039 `--smoke` used an already-installed torch 2.10.0+cu130 and laboratory `pytorch-crf`; it did not install this pin file. |
+| Second-host public entry | DS210039, 2026-09-11, git `09897d9` | P0 JobBERT 3M **0.433118** / ChatGPT **0.285361** / relaxed **0.624869**; P2 parser 13/13; P1 smoke not a paper F1. Receipt: `notes/public_repro_receipt_B_20260911.md`. |
 | Laboratory conda env name | Wrapper scripts may name a local environment | Not required; path is machine-specific |
 | OS / Python patch / CUDA / GPU model | Not recorded in the frozen notes | — |
 | Approximate wall-clock | Not verified for MLM / CRF / eval | — |
@@ -268,7 +269,8 @@ Gold v2 appendix (from `notes/confirmed-results.md` / freeze notes; do not rank 
 | `alignment_ok` false | Duplicate or missing gold IDs in the prediction file |
 | Claude / Kimi far below ChatGPT | Incomplete dumps (98 / 293 IDs); empty-filled in the hybrid eval |
 | `local_files_only=True` tokenizer error | Encoder directory missing; weights are not in Git |
-| `eval_gold150_ext.py` cannot find `/home/guojingli3/Chinese-Skillspan-Benchmark/...` | Pre-P2 laboratory root; current script uses `data/gold150_test.jsonl` |
+| Hybrid SHA-256 changed after eval | `eval_hybrid_cws_simhuman.py` rewrote the gold; restore the frozen file |
+| Paper directory has no `.git` | Laboratory copy; clone the GitHub repo and run from that clone (server B used worktree `_verify_origin_main`) |
 | JSON-offset Qwen F1 mixed with 0.5403 | Two Gold150 Qwen protocols; pass `--protocol json_offset` or `shared_prompt` and do not share a checkpoint path |
 
 ---

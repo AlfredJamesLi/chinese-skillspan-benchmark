@@ -4,14 +4,16 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
-## Unreleased notes (2026-09-11 P2)
+## Unreleased notes (2026-09-11 P2 + B check)
 
 - Gold150 scoring is clone-relative (`scripts/eval_gold150_ext.py`). Doccano freeze maps to BIO in memory or via `convert_gold150_to_bio.py`; the freeze SHA is not rewritten. JSON-offset Qwen (`qwen_ext_protocol.py`, Table C **0.1215±0.0092**) is a different protocol from shared-handbook SFT (**0.5403±0.0354**); `train_qwen_ext_sft.py` / `infer_qwen_ext_sft.py` require `--protocol json_offset`. Qwen LoRA adapters are still not published.
+- Second host **DS210039** independently re-ran P0 / P2 and optional P1 `--smoke` at `09897d9` (jieba 0.42.1). Receipt: `notes/public_repro_receipt_B_20260911.md`. Smoke `dev_typed_f1=0.0` is not a paper F1.
 - Does **not** retag `v0.1.3`. Does **not** change V4 hybrid JobBERT 3M **0.4331**. Does **not** rank 0.1215 / 0.5403 / 0.5536 against 0.4331.
 
 ## Unreleased notes (2026-09-11 P1)
 
 - CRF fine-tune no longer points at a parent-lab `../requirements.txt`. Pins live in `requirements-train.txt`. Default encoder is Hub `AlfredJames/jobbert-zh`. `--smoke` / `--init_crf hub` are connectivity checks, not a new abstract F1. `--smoke` writes under `--out_dir` and skips optimizer `last.ckpt`.
+- Does **not** retag `v0.1.3`. Does **not** change V4 hybrid JobBERT 3M **0.4331**.
 - Does **not** retag `v0.1.3`. Does **not** change V4 hybrid JobBERT 3M **0.4331**.
 
 ## Unreleased notes (2026-09-11 P0)
