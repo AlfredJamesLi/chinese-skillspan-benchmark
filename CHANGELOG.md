@@ -4,6 +4,11 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-11 P0 = encoder 0.4331 only)
+
+- Public README P0 (`--paper-main-only --use-frozen`) guarantees JobBERT 3M **0.4331** only. The 0911 SOP LLM table is the committed file `tables/sop_extract_p2_2601.csv` (no API recall). Frozen `gpt-4o` dump **0.2854 / 0.6249** remains in the hybrid CSV and is not that SOP table.
+- Does **not** retag `v0.1.3`. Does **not** change V4 hybrid JobBERT 3M **0.4331**.
+
 ## Unreleased notes (2026-09-11 LICENSE + laboratory notes)
 
 - Proposed root [`LICENSE`](LICENSE): Apache-2.0 for software; job-advertisement wording is **not** CC-BY. Corresponding author still to confirm. Hub cards stay `license: other`.

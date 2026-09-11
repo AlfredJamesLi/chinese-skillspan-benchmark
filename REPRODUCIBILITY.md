@@ -13,7 +13,7 @@ Companion files: [README.md](README.md), [DATA_AVAILABILITY.md](DATA_AVAILABILIT
 | Official scorer | Python 3, standard library; version string `cnss-lskt-1.2.0` in `scorer/score_lskt.py` | No GPU |
 | Jieba alignment | `requirements-repro.txt` → `jieba>=0.42.1` | Required for the paper-main table. Second host DS210039 used 0.42.1 (2026-09-11). |
 | Encoder + CRF training pins | `requirements-train.txt`: `torch==2.1.2`, `transformers==4.37.1`, `numpy==1.26.3`, `pytorch-crf==0.7.2`, `jieba>=0.42.1` | CUDA torch wheel from pytorch.org if needed. Bitwise match to 0.4331 is **not** claimed. DS210039 `--smoke` used an already-installed torch 2.10.0+cu130 and laboratory `pytorch-crf`; it did not install this pin file. |
-| Second-host public entry | DS210039, 2026-09-11, git `09897d9` | P0 JobBERT 3M **0.433118** / ChatGPT **0.285361** / relaxed **0.624869**; P2 parser 13/13; P1 smoke not a paper F1. Laboratory receipt is not in the public clone. |
+| Second-host public entry | DS210039, 2026-09-11, git `09897d9` | P0 JobBERT 3M **0.433118**. The same host also scored the frozen `gpt-4o` dump (**0.285361** / **0.624869**); that dump is not the 0911 SOP LLM table. P2 parser 13/13; P1 smoke not a paper F1. Laboratory receipt is not in the public clone. |
 | Laboratory conda env name | Wrapper scripts may name a local environment | Not required; path is machine-specific |
 | OS / Python patch / CUDA / GPU model | Not recorded in the frozen notes | — |
 | Approximate wall-clock | Not verified for MLM / CRF / eval | — |
@@ -169,13 +169,30 @@ Chinese JobBERT **weights are not in Git**. Paper-main encoder + V4 CRF: https:/
 
 ## 8. Evaluation commands
 
-### Paper-main table (V4 hybrid, jieba-aligned)
+### Paper-main encoder (V4 hybrid, jieba-aligned)
+
+`--paper-main-only` scores **JobBERT_3M_v4 only**. Guaranteed cell: typed exact **0.433118** (paper **0.4331**). It does **not** print the 0911 SOP LLM table.
 
 ```bash
 python3 scripts/eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen
 ```
 
 Writes an eval JSON under `--out-dir` (default `reports/sandbox_lskt_v4_silver/hybrid_cws_eval`). Does **not** rewrite hybrid gold. `--write-committed-csv` is lab-only.
+
+### SOP LLM table (0911; committed CSV, no API recall)
+
+```bash
+python3 -c "
+import csv
+from pathlib import Path
+with Path('tables/sop_extract_p2_2601.csv').open(encoding='utf-8', newline='') as f:
+    for row in csv.DictReader(f):
+        if row['split'] == 'P2_hybrid_2601' and 'SOP extract' in row['system']:
+            print(row['system'], row['typed_exact_f1'], row['typed_relaxed_f1'])
+"
+```
+
+Headline 2,601-ID cells: gpt-5.4 **0.2132** / **0.4199**; Qwen2.5-14B Instruct SOP **0.1724** / **0.3279**. Do not rank them against JobBERT **0.4331** in one SOTA sentence. This clone does not re-call those APIs.
 
 ### Official scorer API
 
@@ -242,10 +259,12 @@ From `tables/hybrid_cws_simhuman980_all_models.csv` (`full2601_typed_exact_f1` u
 
 | System | Typed exact | Typed relaxed (IoU ≥ 0.5) |
 |---|---:|---:|
-| JobBERT_3M_v4 (Chinese JobBERT 3M, V4 + jieba) | 0.433118 | 0.587322 |
+| JobBERT_3M_v4 (paper-main encoder, V4 + jieba) | 0.433118 | 0.587322 |
 | JobBERT_1M_v4 | 0.427162 | 0.595170 |
-| ChatGPT (`gpt-4o`, frozen dump + jieba) | 0.285361 | 0.624869 |
+| ChatGPT (`gpt-4o`, frozen dump + jieba; **not** the 0911 SOP table) | 0.285361 | 0.624869 |
 | JobBERT_1M_cws_retrain | 0.404863 | 0.590381 |
+
+0911 SOP LLM table (`tables/sop_extract_p2_2601.csv`, `split=P2_hybrid_2601`): gpt-5.4 **0.2132** / **0.4199**; Qwen2.5-14B Instruct SOP **0.1724** / **0.3279**; Llama-3-8B **0.0582** / **0.1178**. Frozen `gpt-4o` dump **0.2854** is a different protocol.
 
 Gold v2 appendix (from `notes/DATA_PROTOCOL_FREEZE.md` and this file; do not rank against the V4 column): ChatGPT typed **0.6365**; encoder 3-seed mean **0.1288**.
 

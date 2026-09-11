@@ -5,8 +5,9 @@ Default path is **read-only**: it loads the frozen hybrid gold and does not
 rewrite `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl`. Lab-only rebuild:
 `--rebuild-gold`.
 
-Repro (paper-main rows, frozen JobBERT dumps):
+Repro (paper-main encoder only, frozen JobBERT dump):
   python scripts/eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen
+# Guarantees JobBERT_3M_v4 typed exact 0.433118. Not the 0911 SOP LLM table.
 """
 from __future__ import annotations
 
@@ -34,7 +35,7 @@ SOP_CWS = PAPER / "data/test_lskt_v4_cws_g2ids.jsonl"
 SIM = PAPER / "data/test_lskt_v4_simhuman980.jsonl"
 CSV_COMMITTED = PAPER / "tables/hybrid_cws_simhuman980_all_models.csv"
 
-PAPER_MAIN_MODELS = ("ChatGPT", "JobBERT_3M_v4")
+PAPER_MAIN_MODELS = ("JobBERT_3M_v4",)
 
 MODELS = [
     ("ChatGPT", PAPER / "reports/views/ChatGPT_unique_first_v2.jsonl", "llm"),
@@ -260,7 +261,7 @@ def main() -> int:
     ap.add_argument(
         "--paper-main-only",
         action="store_true",
-        help="Score only ChatGPT + JobBERT_3M_v4 (headline rows).",
+        help="Score only JobBERT_3M_v4 (paper-main encoder 0.4331). Not the SOP LLM table.",
     )
     ap.add_argument(
         "--use-frozen",

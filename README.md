@@ -57,8 +57,11 @@ The evaluation reference uses **2,601** unique test IDs (not all 3,237 test sent
 
 | Protocol | File | Role | Headline typed exact F1 |
 |---|---|---|---|
-| **V4 / Handbook B (paper main)** | `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` | Abstract and main results | JobBERT-zh 3M **0.4331**; frozen ChatGPT dump + jieba **0.2854** exact / **0.6249** relaxed |
-| **Gold v2 / Handbook A** | `data/gold_canonical_v2.jsonl` | Construction history / appendix | ChatGPT **0.6365** |
+| **V4 / Handbook B (paper-main encoder)** | `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` | Abstract encoder row | JobBERT-zh 3M **0.4331** (relaxed **0.5873**) |
+| **SOP extract (0911 LLM table)** | [`tables/sop_extract_p2_2601.csv`](tables/sop_extract_p2_2601.csv) | Standardized zero-shot / Instruct SOP on the same 2,601 IDs | gpt-5.4 **0.2132**; Qwen2.5-14B **0.1724**; Llama-3-8B **0.0582** |
+| **Gold v2 / Handbook A** | `data/gold_canonical_v2.jsonl` | Construction history / appendix | ChatGPT (`gpt-4o` dump) **0.6365** |
+
+A frozen `gpt-4o` dump scored with jieba on the V4 hybrid is **0.2854** exact / **0.6249** relaxed (`tables/hybrid_cws_simhuman980_all_models.csv`). That dump is **not** the 0911 SOP LLM table and is **not** the P0 guarantee.
 
 The V4 hybrid is **derived** (980 SimHuman rule_v4 spans + 1,621 SOP-CWS spans). It is not a fully human Doccano gold. Do not overwrite `gold_canonical_v2.jsonl`.
 
@@ -89,13 +92,30 @@ python3 scorer/score_lskt.py \
 
 Predictions must use the same sentence `id`s as gold. Scoring `data/frozen_preds/jobbert_3m_v4.jsonl` **without** jieba snap yields typed exact F1 **0.2552** and is **not** the paper headline.
 
-Paper-main encoder and LLM rows (jieba-aligned). The eval script is **read-only** on the hybrid gold (SHA-256 `2ad6342d…`); it does not rewrite that file:
+**P0 (guaranteed):** paper-main encoder only. The eval script is **read-only** on the hybrid gold (SHA-256 `2ad6342d…`); it does not rewrite that file. Expect JobBERT_3M_v4 typed exact **0.433118** (paper **0.4331**):
 
 ```bash
 python3 scripts/eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen
 ```
 
-When `output/` is absent, or with `--use-frozen`, JobBERT-zh v4 rows come from `data/frozen_preds/`. The human-reference freeze uses `source_id` and Doccano type names; convert before scoring. JSON-offset Qwen (**0.1215±0.0092**) is not shared-handbook SFT (**0.5403±0.0354**) and is not V4 hybrid **0.4331**:
+When `output/` is absent, or with `--use-frozen`, that row comes from `data/frozen_preds/jobbert_3m_v4.jsonl`. This command does **not** reproduce the 0911 SOP LLM table.
+
+**SOP LLM table (committed cells; no API recall).** Print the 2,601-ID rows from [`tables/sop_extract_p2_2601.csv`](tables/sop_extract_p2_2601.csv):
+
+```bash
+python3 -c "
+import csv
+from pathlib import Path
+with Path('tables/sop_extract_p2_2601.csv').open(encoding='utf-8', newline='') as f:
+    for row in csv.DictReader(f):
+        if row['split'] == 'P2_hybrid_2601' and 'SOP extract' in row['system']:
+            print(row['system'], row['typed_exact_f1'], row['typed_relaxed_f1'])
+"
+```
+
+Those cells include gpt-5.4 **0.2132** / **0.4199** and Qwen2.5-14B Instruct SOP **0.1724** / **0.3279**. This clone does not re-call those APIs. The CSV also stores the frozen `gpt-4o` dump and JobBERT encoder as reference rows; the command above prints only `SOP extract` systems. Omit the `SOP extract` filter (keep `P2_hybrid_2601`) to see every 2,601-ID row, including the dump.
+
+The human-reference freeze uses `source_id` and Doccano type names; convert before scoring. JSON-offset Qwen (**0.1215±0.0092**) is not shared-handbook SFT (**0.5403±0.0354**), is not SOP extract **0.1724**, and is not V4 hybrid **0.4331**:
 
 ```bash
 python3 scripts/convert_gold150_to_bio.py
@@ -108,7 +128,7 @@ python3 scripts/eval_gold150_ext.py \
 # data/gold150_test.bio.jsonl (gitignored; not in the clone).
 ```
 
-Do not overwrite `data/gold150_test.jsonl`. Qwen LoRA adapters are not in this release. CRF training uses `requirements-train.txt` and Hub `AlfredJames/jobbert-zh` (see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) §7). `--smoke` checks that the trainer loads; it is not the abstract F1. An independent second-host check (2026-09-11, git `09897d9`, jieba 0.42.1) matched the P0 paper-main cells and left both freeze SHA-256 values unchanged.
+Do not overwrite `data/gold150_test.jsonl`. Qwen LoRA adapters are not in this release. CRF training uses `requirements-train.txt` and Hub `AlfredJames/jobbert-zh` (see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) §7). `--smoke` checks that the trainer loads; it is not the abstract F1. An independent second-host check (2026-09-11, git `09897d9`, jieba 0.42.1) matched JobBERT 3M **0.433118** and left both freeze SHA-256 values unchanged. That host also scored the frozen `gpt-4o` dump (**0.285361** / **0.624869**); those dump cells are not the 0911 SOP table.
 
 Weights are not stored in Git. Encoder + V4 CRF (0.4331): https://huggingface.co/AlfredJames/jobbert-zh. Human-reference v6a B2 continuation (0.5536±0.0054): https://huggingface.co/AlfredJames/jobbert-zh-v6a.
 
@@ -141,7 +161,7 @@ data/
 docs/                   # manuscript-body drafts
 notes/handbooks/        # Handbook B (paper SOP; v4.2.14)
 figures/fig_pipeline_overview.jpg
-tables/
+tables/                 # includes sop_extract_p2_2601.csv (0911 LLM table)
 release/                # Hugging Face and Zenodo templates
 ```
 

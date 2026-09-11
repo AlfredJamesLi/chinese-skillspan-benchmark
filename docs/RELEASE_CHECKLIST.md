@@ -24,7 +24,8 @@ Proposed PeerJ wording (use the minted version DOI):
 
 ## End-to-end reproduction test
 
-- [ ] `python3 scripts/eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen` reproduces `tables/hybrid_cws_simhuman980_all_models.csv` cells for Chinese JobBERT 3M (**0.433118** typed exact) and ChatGPT (**0.285361** / **0.624869**).
+- [ ] `python3 scripts/eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen` reproduces Chinese JobBERT 3M typed exact **0.433118**. It does **not** need to print ChatGPT **0.285361**.
+- [ ] `tables/sop_extract_p2_2601.csv` still lists gpt-5.4 **0.2132** and Qwen SOP **0.1724** on `P2_hybrid_2601` (committed cells; no API recall).
 - [ ] Direct `score_lskt.py` on `data/frozen_preds/jobbert_3m_v4.jsonl` **without** jieba snap is documented as **not** the paper headline (workspace check: 0.2552).
 - [ ] Gold v2 appendix command still yields ChatGPT typed **0.6365** and is not written into the abstract.
 
