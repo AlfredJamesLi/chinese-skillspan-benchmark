@@ -41,7 +41,7 @@ The Hub tree may show a single “finetuned from `hfl/chinese-roberta-wwm-ext`�
 | 2. Domain-adaptive MLM | **Pretrained JobBERT-zh encoder** (3M job-ad run, step 65000) | `config.json`, `model.safetensors`, `tokenizer.json`, `tokenizer_config.json` |
 | 3. Task CRF | **Fine-tuned span head** on V4 silver LSKT | `crf/best.pt` |
 
-Paper-main typed exact F1 **0.4331** uses stage 2 + stage 3 **and** jieba span snap. Loading only `model.safetensors` is not enough to reproduce that number.
+Historical 2,601 typed exact F1 **0.4331** uses stage 2 + stage 3 **and** jieba span snap. Loading only `model.safetensors` is not enough to reproduce that number. The 0911 current evaluation is Hub [`AlfredJames/jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a) on the human reference set (**0.5536±0.0054**). Do not rank the two cells in one SOTA sentence.
 
 `config.json` reports `BertModel`, hidden size 768, 12 layers, vocabulary 21,128.
 
@@ -51,7 +51,7 @@ Paper-main typed exact F1 **0.4331** uses stage 2 + stage 3 **and** jieba span s
 
 - Research on Chinese competency / skill-span extraction
 - Fine-tuning or evaluation on Chinese-SkillSpan (LSKT)
-- Reproducing the paper-main encoder row after jieba alignment
+- Reproducing the historical V4 hybrid 2,601 encoder row after jieba alignment
 
 ## Out-of-scope uses
 
@@ -138,7 +138,7 @@ python3 scripts/train_cn_roberta_crf.py \
 
 - Task: typed LSKT span extraction
 - Scorer: `cnss-lskt-1.2.0`, official alignment
-- Paper-main gold: 2,601 IDs, V4 hybrid (derived; not human Doccano Gold)
+- Historical gold: 2,601 IDs, V4 hybrid (derived; not the human reference freeze)
 - Verified jieba-aligned scores (`tables/hybrid_cws_simhuman980_all_models.csv`):
 
 | System | Typed exact F1 | Typed relaxed F1 |
@@ -180,7 +180,7 @@ The backbone `hfl/chinese-roberta-wwm-ext` is listed as **Apache-2.0** on Huggin
 
 ## Related checkpoint (do not replace this repo)
 
-A later human-reference continuation (v6a B2) is a **separate** Hub repository: [`AlfredJames/jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a). It keeps this encoder and continues the CRF. This repository remains the V4 hybrid 2601 paper-main encoder. Do not rank the two protocols in one table.
+The 0911 current student (v6a B2) is a **separate** Hub repository: [`AlfredJames/jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a). It keeps this encoder and continues the CRF. This repository remains the 3M DAPT encoder plus the **historical** V4 hybrid 2,601 CRF. Do not rank **0.4331** against **0.5536** in one table.
 
 ---
 
@@ -188,8 +188,8 @@ A later human-reference continuation (v6a B2) is a **separate** Hub repository: 
 
 | Resource | URL |
 |---|---|
-| This model (paper-main V4) | https://huggingface.co/AlfredJames/jobbert-zh |
-| Human-reference v6a continuation | https://huggingface.co/AlfredJames/jobbert-zh-v6a |
+| This model (3M DAPT + historical V4 CRF) | https://huggingface.co/AlfredJames/jobbert-zh |
+| Current student (v6a; human reference) | https://huggingface.co/AlfredJames/jobbert-zh-v6a |
 | Contrast 1M DAPT | https://huggingface.co/AlfredJames/jobbert-zh-1m |
 | Code and data | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
 | Zenodo version DOI (`v0.1.3`) | https://doi.org/10.5281/zenodo.22698504 |

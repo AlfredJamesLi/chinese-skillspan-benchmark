@@ -21,17 +21,17 @@ base_model: hfl/chinese-roberta-wwm-ext
 
 # JobBERT-zh 1M (DAPT contrast)
 
-This repository is a **smaller domain-adaptive pre-training contrast** of JobBERT-zh. It is **not** the paper-main encoder.
+This repository is a **smaller domain-adaptive pre-training contrast** of JobBERT-zh. It is **not** the current human-reference student and **not** a replacement of the 3M encoder.
 
 | Checkpoint | Hub | Test | Typed exact F1 | Typed relaxed F1 |
 |---|---|---|---:|---:|
-| **3M + V4 CRF (paper-main)** | [`AlfredJames/jobbert-zh`](https://huggingface.co/AlfredJames/jobbert-zh) | V4 hybrid 2601 + jieba | **0.433118** | 0.587322 |
+| **3M + V4 CRF (historical 2,601)** | [`AlfredJames/jobbert-zh`](https://huggingface.co/AlfredJames/jobbert-zh) | V4 hybrid 2601 + jieba | **0.433118** | 0.587322 |
 | **1M + V4 CRF (this repo)** | [`AlfredJames/jobbert-zh-1m`](https://huggingface.co/AlfredJames/jobbert-zh-1m) | V4 hybrid 2601 + jieba | **0.427162** | 0.595170 |
 
 Cells are from `tables/hybrid_cws_simhuman980_all_models.csv`. Do **not** rank 0.4272 against V4 hybrid **0.4331**, human-reference v6a **0.5536±0.0054**, or Gold v2 ChatGPT **0.6365** in one table.
 
-- Paper-main encoder: https://huggingface.co/AlfredJames/jobbert-zh
-- Human-reference continuation: https://huggingface.co/AlfredJames/jobbert-zh-v6a
+- Current student (v6a): https://huggingface.co/AlfredJames/jobbert-zh-v6a
+- 3M encoder + historical V4 CRF: https://huggingface.co/AlfredJames/jobbert-zh
 - Code and data: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
 - Archive (`v0.1.3`): https://doi.org/10.5281/zenodo.22698504
 
@@ -41,9 +41,9 @@ This is **not** English [`jjzha/jobbert-base-cased`](https://huggingface.co/jjzh
 
 ## What this repository contains
 
-Same three-file layout as the 3M paper-main repo: MLM encoder (`config.json`, `model.safetensors`, tokenizer) plus a V4 silver CRF head (`crf/best.pt`). The 1M encoder is a **different DAPT run**, not a truncated 3M checkpoint.
+Same three-file layout as the 3M historical-V4 repo: MLM encoder (`config.json`, `model.safetensors`, tokenizer) plus a V4 silver CRF head (`crf/best.pt`). The 1M encoder is a **different DAPT run**, not a truncated 3M checkpoint.
 
-Paper-main typed exact **0.4331** uses **`AlfredJames/jobbert-zh`**, not these weights.
+Historical 2,601 typed exact **0.4331** uses **`AlfredJames/jobbert-zh`**, not these weights. Current human-reference JobBERT uses **`AlfredJames/jobbert-zh-v6a`**.
 
 ---
 
@@ -54,7 +54,7 @@ Paper-main typed exact **0.4331** uses **`AlfredJames/jobbert-zh`**, not these w
 
 ## Out-of-scope uses
 
-- Replacing `AlfredJames/jobbert-zh` as the paper-main encoder
+- Replacing `AlfredJames/jobbert-zh` as the 3M encoder, or `AlfredJames/jobbert-zh-v6a` as the current student
 - Applicant screening, hiring automation, or ESCO concept-ID prediction
 - Hub Inference Providers / the default token-classification widget
 - Treating V4 hybrid scores as fully human gold

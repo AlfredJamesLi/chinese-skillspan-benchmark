@@ -22,12 +22,12 @@ base_model: AlfredJames/jobbert-zh
 
 # JobBERT-zh v6a (human reference set)
 
-This repository is the **human-reference continuation** of JobBERT-zh (artifact Gold150). It is an **additional version**, not a replacement of the V4 hybrid 2601 encoder row.
+This repository is the **current JobBERT student** for the 0911 human-reference evaluation (artifact Gold150). The 3M DAPT encoder in [`AlfredJames/jobbert-zh`](https://huggingface.co/AlfredJames/jobbert-zh) is unchanged; that Hub also keeps the **historical** V4 CRF (2,601 + jieba **0.4331**).
 
 | Checkpoint | Hub | Test | Typed exact F1 |
 |---|---|---|---|
-| V4 (paper-main encoder) | [`AlfredJames/jobbert-zh`](https://huggingface.co/AlfredJames/jobbert-zh) | V4 hybrid 2601 + jieba | **0.4331** |
-| **v6a B2 (this repo)** | [`AlfredJames/jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a) | Human reference set | **0.5536±0.0054** (n=3 sample SD) |
+| **v6a B2 (this repo; current eval)** | [`AlfredJames/jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a) | Human reference set | **0.5536±0.0054** (n=3 sample SD) |
+| V4 (historical / derived protocol) | [`AlfredJames/jobbert-zh`](https://huggingface.co/AlfredJames/jobbert-zh) | V4 hybrid 2601 + jieba | **0.4331** |
 
 Do **not** rank 0.5536 against 0.4331, official Qwen SOP extract 0.1724, or Gold v2 ChatGPT 0.6365 in one table. SD is a **three-seed sample SD**, not a test-set confidence interval. The human reference freeze is **not** in Zenodo `v0.1.1`.
 

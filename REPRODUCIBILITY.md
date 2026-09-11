@@ -11,14 +11,14 @@ Companion files: [README.md](README.md), [DATA_AVAILABILITY.md](DATA_AVAILABILIT
 | Item | Verified in this repository | Notes |
 |---|---|---|
 | Official scorer | Python 3, standard library; version string `cnss-lskt-1.2.0` in `scorer/score_lskt.py` | No GPU |
-| Jieba alignment | `requirements-repro.txt` → `jieba>=0.42.1` | Required for the paper-main table. Second host DS210039 used 0.42.1 (2026-09-11). |
+| Jieba alignment | `requirements-repro.txt` → `jieba>=0.42.1` | Required for the **historical** V4 hybrid 2,601 table. Human-reference JobBERT v6a is character-level (no jieba). Second host DS210039 used 0.42.1 (2026-09-11). |
 | Encoder + CRF training pins | `requirements-train.txt`: `torch==2.1.2`, `transformers==4.37.1`, `numpy==1.26.3`, `pytorch-crf==0.7.2`, `jieba>=0.42.1` | CUDA torch wheel from pytorch.org if needed. Bitwise match to 0.4331 is **not** claimed. DS210039 `--smoke` used an already-installed torch 2.10.0+cu130 and laboratory `pytorch-crf`; it did not install this pin file. |
 | Second-host public entry | DS210039, 2026-09-11, git `09897d9` | P0 JobBERT 3M **0.433118**. The same host also scored the frozen `gpt-4o` dump (**0.285361** / **0.624869**); that dump is not the 0911 SOP LLM table. P2 parser 13/13; P1 smoke not a paper F1. Laboratory receipt is not in the public clone. |
 | Laboratory conda env name | Wrapper scripts may name a local environment | Not required; path is machine-specific |
 | OS / Python patch / CUDA / GPU model | Not recorded in the frozen notes | — |
 | Approximate wall-clock | Not verified for MLM / CRF / eval | — |
 
-Paper-main scoring entry points resolve the tree from `Path(__file__)` or `$CNSS_PAPER_ROOT` (`scripts/cnss_paths.py`). Other scripts under `scripts/` may still contain a laboratory absolute root.
+Clone-relative scoring entry points resolve the tree from `Path(__file__)` or `$CNSS_PAPER_ROOT` (`scripts/cnss_paths.py`). Other scripts under `scripts/` may still contain a laboratory absolute root.
 
 ---
 
@@ -38,7 +38,7 @@ python3 scripts/train_cn_roberta_crf.py --smoke --out_dir output/p1_crf_smoke
 bash scripts/run_crf_v4_from_hub.sh
 ```
 
-`--smoke` is a Hub connectivity check (16/8/8 rows, 1 epoch). Write `--out_dir` under this clone (`output/` is gitignored); do not use a full root `/tmp`. Smoke skips the optimizer `last.ckpt`. It is **not** a paper F1. The frozen headline remains JobBERT 3M typed exact **0.4331** after jieba. Do not install a parent-lab `../requirements.txt`.
+`--smoke` is a Hub connectivity check (16/8/8 rows, 1 epoch). Write `--out_dir` under this clone (`output/` is gitignored); do not use a full root `/tmp`. Smoke skips the optimizer `last.ckpt`. It is **not** a paper F1. Historical 2,601 JobBERT 3M typed exact remains **0.4331** after jieba. Current human-reference JobBERT v6a is **0.5536±0.0054** (no jieba). Do not install a parent-lab `../requirements.txt`.
 
 ---
 
@@ -163,15 +163,30 @@ Wrappers that exist but are laboratory-bound:
 
 MLM continued pre-training scripts exist (`prepare_jobbert_*`, `jobbert_zh_*.sbatch`). The 1M / 3M sentence corpora (`data/jobbert_*_sents.jsonl`) are large reconstructed job texts and must not be published until rights are confirmed.
 
-Chinese JobBERT **weights are not in Git**. Paper-main encoder + V4 CRF: https://huggingface.co/AlfredJames/jobbert-zh. Contrast 1M: https://huggingface.co/AlfredJames/jobbert-zh-1m. Human-reference v6a: https://huggingface.co/AlfredJames/jobbert-zh-v6a. Qwen LoRA is not published.
+Chinese JobBERT **weights are not in Git**. Current human-reference student (v6a B2): https://huggingface.co/AlfredJames/jobbert-zh-v6a. Historical V4 CRF (2,601 + jieba): https://huggingface.co/AlfredJames/jobbert-zh. Contrast 1M: https://huggingface.co/AlfredJames/jobbert-zh-1m. Qwen LoRA is not published.
 
 ---
 
 ## 8. Evaluation commands
 
-### Paper-main encoder (V4 hybrid, jieba-aligned)
+### Current evaluation (human reference set)
 
-`--paper-main-only` scores **JobBERT_3M_v4 only**. Guaranteed cell: typed exact **0.433118** (paper **0.4331**). It does **not** print the 0911 SOP LLM table.
+JSON-offset Qwen LoRA is Table C **0.1215±0.0092**. Shared-handbook SFT is **0.5403±0.0354**. JobBERT-zh v6a B2 is **0.5536±0.0054**. Do not rank those cells against V4 hybrid **0.4331**. Qwen adapters are not published; `train_qwen_ext_sft.py` is laboratory JSON-offset only (`--protocol json_offset`). Paper names: human reference / challenge cohort / calibration cohort; files keep the Gold150 paths.
+
+```bash
+python3 scripts/convert_gold150_to_bio.py
+python3 scripts/test_qwen_ext_parser.py --out output/p2_qwen_parser_test.json
+python3 scripts/eval_gold150_ext.py \
+  --protocol json_offset \
+  --pred path/to/gold150_predictions.jsonl \
+  --out output/gold150_score.json
+```
+
+`--gold_eval` defaults to derived BIO or converts the freeze in memory. It does **not** rewrite `data/gold150_test.jsonl` (SHA-256 `ca8db0bc…`). JobBERT v6a scoring uses character BIO (`score_lskt.py` on the derived file); there is no jieba snap on this freeze.
+
+### Derived / historical encoder (V4 hybrid 2,601, jieba-aligned)
+
+`--paper-main-only` is the **historical 2,601 encoder** command (flag name kept). It scores **JobBERT_3M_v4 only**. Guaranteed cell: typed exact **0.433118** (paper **0.4331**). It does **not** print the 0911 SOP LLM table and does **not** score the human reference set.
 
 ```bash
 python3 scripts/eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen
@@ -192,7 +207,7 @@ with Path('tables/sop_extract_p2_2601.csv').open(encoding='utf-8', newline='') a
 "
 ```
 
-Headline 2,601-ID cells: gpt-5.4 **0.2132** / **0.4199**; Qwen2.5-14B Instruct SOP **0.1724** / **0.3279**. Do not rank them against JobBERT **0.4331** in one SOTA sentence. This clone does not re-call those APIs.
+Headline 2,601-ID cells: gpt-5.4 **0.2132** / **0.4199**; Qwen2.5-14B Instruct SOP **0.1724** / **0.3279**. Do not rank them against historical JobBERT **0.4331** or human-reference v6a **0.5536** in one SOTA sentence. This clone does not re-call those APIs.
 
 ### Official scorer API
 
@@ -219,24 +234,9 @@ python3 scorer/score_lskt.py \
   --align-mode official
 ```
 
-### Direct frozen dump without jieba (verified, not the paper headline)
+### Direct frozen dump without jieba (verified, not the 2,601 headline)
 
-Scoring `data/frozen_preds/jobbert_3m_v4.jsonl` on the V4 hybrid with `--align-mode official` and **no** CWS snap yields typed exact F1 **0.2552** (this workspace). Do not report that figure as the abstract result.
-
-### Human reference set (later protocol; not the abstract table)
-
-JSON-offset Qwen LoRA is Table C **0.1215±0.0092**. Shared-handbook SFT is **0.5403±0.0354**. JobBERT-zh v6a B2 is **0.5536±0.0054**. Do not rank those cells against V4 hybrid **0.4331**. Qwen adapters are not published; `train_qwen_ext_sft.py` is laboratory JSON-offset only (`--protocol json_offset`). Paper names: human reference / challenge cohort / calibration cohort; files keep the Gold150 paths.
-
-```bash
-python3 scripts/convert_gold150_to_bio.py
-python3 scripts/test_qwen_ext_parser.py --out output/p2_qwen_parser_test.json
-python3 scripts/eval_gold150_ext.py \
-  --protocol json_offset \
-  --pred path/to/gold150_predictions.jsonl \
-  --out output/gold150_score.json
-```
-
-`--gold_eval` defaults to derived BIO or converts the freeze in memory. It does **not** rewrite `data/gold150_test.jsonl` (SHA-256 `ca8db0bc…`).
+Scoring `data/frozen_preds/jobbert_3m_v4.jsonl` on the V4 hybrid with `--align-mode official` and **no** CWS snap yields typed exact F1 **0.2552** (this workspace). Do not report that figure as the 2,601 headline or as the human-reference cell.
 
 ---
 
@@ -255,18 +255,20 @@ python3 scripts/eval_gold150_ext.py \
 
 ## 10. Expected benchmark results (verified from repository outputs)
 
-From `tables/hybrid_cws_simhuman980_all_models.csv` (`full2601_typed_exact_f1` unless noted):
+**Current evaluation (human reference set).** JobBERT-zh v6a B2 typed exact **0.5536±0.0054** (relaxed **0.6890±0.0085**; n=3 sample SD). JSON-offset Qwen **0.1215±0.0092**. These cells are not in the hybrid CSV below.
+
+**Derived / historical 2,601** (`tables/hybrid_cws_simhuman980_all_models.csv`, `full2601_typed_exact_f1` unless noted):
 
 | System | Typed exact | Typed relaxed (IoU ≥ 0.5) |
 |---|---:|---:|
-| JobBERT_3M_v4 (paper-main encoder, V4 + jieba) | 0.433118 | 0.587322 |
+| JobBERT_3M_v4 (historical V4 + jieba) | 0.433118 | 0.587322 |
 | JobBERT_1M_v4 | 0.427162 | 0.595170 |
 | ChatGPT (`gpt-4o`, frozen dump + jieba; **not** the 0911 SOP table) | 0.285361 | 0.624869 |
 | JobBERT_1M_cws_retrain | 0.404863 | 0.590381 |
 
 0911 SOP LLM table (`tables/sop_extract_p2_2601.csv`, `split=P2_hybrid_2601`): gpt-5.4 **0.2132** / **0.4199**; Qwen2.5-14B Instruct SOP **0.1724** / **0.3279**; Llama-3-8B **0.0582** / **0.1178**. Frozen `gpt-4o` dump **0.2854** is a different protocol.
 
-Gold v2 appendix (from `notes/DATA_PROTOCOL_FREEZE.md` and this file; do not rank against the V4 column): ChatGPT typed **0.6365**; encoder 3-seed mean **0.1288**.
+Gold v2 appendix (from `notes/DATA_PROTOCOL_FREEZE.md` and this file; do not rank against the V4 column or the human-reference column): ChatGPT typed **0.6365**; encoder 3-seed mean **0.1288**.
 
 **Not verified as paper results:** vanilla-WWM seed-42 **0.4341 / 0.4289**; human-200-only F1; overlay 0.3884 as a replacement abstract number.
 
@@ -298,7 +300,8 @@ Gold v2 appendix (from `notes/DATA_PROTOCOL_FREEZE.md` and this file; do not ran
 
 | Artifact | Source |
 |---|---|
-| Paper-main model comparison | Re-run `eval_hybrid_cws_simhuman.py`; compare to `tables/hybrid_cws_simhuman980_all_models.csv` |
+| Current human-reference JobBERT | Hub `AlfredJames/jobbert-zh-v6a`; score character BIO on `gold150_test.jsonl` (no jieba) |
+| Historical 2,601 encoder row | Re-run `eval_hybrid_cws_simhuman.py`; compare to `tables/hybrid_cws_simhuman980_all_models.csv` |
 | LLM-only hybrid rows | `eval_hybrid_llm_old_dumps.py` |
 | Gold v2 appendix | `scorer/score_lskt.py` on `gold_canonical_v2.jsonl` |
 | Handbook / span rules | `notes/handbooks/handbook_B_sop_v4.md` (version `B.sop_v4.2.14`) |

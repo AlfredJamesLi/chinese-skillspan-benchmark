@@ -6,7 +6,7 @@ This note separates **what this repository contains**, **what is already archive
 - **Previous snapshot (`v0.1.2`):** https://doi.org/10.5281/zenodo.22685143
 - **First archival snapshot (`v0.1.1`, PDF-cited, immutable):** https://doi.org/10.5281/zenodo.22288338
 - **Concept DOI (all versions):** https://doi.org/10.5281/zenodo.22288337
-- **GitHub:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark — tag `v0.1.3` matches this Zenodo **data** snapshot. Clone the **default branch** (`main`, commit `6da1366` or later) for portable paper-main scoring and the paper-name map; do not retag `v0.1.3`.
+- **GitHub:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark — tag `v0.1.3` matches this Zenodo **data** snapshot. Clone the **default branch** (`main`) for portable scoring and the paper-name map; do not retag `v0.1.3`.
 
 ---
 
@@ -24,9 +24,9 @@ The following are *candidates* for a public GitHub + Zenodo + Hugging Face relea
 | Human reference freeze (artifact Gold150) | `data/gold150_test.jsonl` | In GitHub tag / Zenodo `v0.1.3`; not in `v0.1.1` or `v0.1.2` |
 | Silver-plus B2 `v6a_nocross` train/dev | `data/silver_plus_v6a_nocross/` | Teacher labels only; same `v0.1.3` archive |
 | Committed score CSVs and this documentation | `tables/`, `docs/`, `release/` | Yes |
-| JobBERT-zh weights (paper-main 3M V4) | https://huggingface.co/AlfredJames/jobbert-zh | Public model + card; licence still `other` pending text-rights confirmation |
+| JobBERT-zh weights (3M DAPT + historical V4 CRF) | https://huggingface.co/AlfredJames/jobbert-zh | Public model + card; licence still `other` pending text-rights confirmation |
 | JobBERT-zh 1M weights (different DAPT; not a replacement) | https://huggingface.co/AlfredJames/jobbert-zh-1m | Public contrast checkpoint; not in Zenodo `v0.1.1` |
-| JobBERT-zh v6a weights (human-reference B2 CRF continuation) | https://huggingface.co/AlfredJames/jobbert-zh-v6a | Public later checkpoint; do not rank against the paper-main encoder |
+| JobBERT-zh v6a weights (current student; human-reference B2) | https://huggingface.co/AlfredJames/jobbert-zh-v6a | Public current checkpoint; do not rank 0.5536 against 0.4331 |
 | Raw recruitment CSV / XLSX | Present in the **working** tree (`应届生招聘大数据*.csv`, `人工智能招聘大数据2025年.xlsx`) | **Do not upload** until platform terms and copyright are confirmed |
 | Continued-pretraining sentence dumps | `data/jobbert_*_sents.jsonl` | Same restriction as raw ads |
 | `output/` checkpoints, caches, virtualenvs | Local only | Do not archive |
@@ -55,10 +55,10 @@ Included in the candidate public dataset:
 |---|---:|---|
 | Corpus sentences (Table 1) | 22,840 = 17,460 + 2,143 + 3,237 | `data/corpus_splits/` |
 | Same *N*, other assignment | 16,350 + 2,268 + 4,222 | `data/repartition_v1` (not main gold) |
-| Evaluation unique IDs (paper main) | 2,601 | Gold v2 and V4 hybrid |
+| Evaluation unique IDs (historical V4 hybrid / Gold v2) | 2,601 | derived / historical protocol |
 | Raw Doccano Gold rows | 2,676 | Freeze protocol |
 | Human overlay (page 1) | 200 | `data/human_gold_page1_200.jsonl` |
-| Human reference set | 150 = challenge cohort + calibration cohort | `data/gold150_test.jsonl` (Zenodo `v0.1.3`) |
+| Human reference set (current eval) | 150 = challenge cohort + calibration cohort | `data/gold150_test.jsonl` (Zenodo `v0.1.3`) |
 | Silver-plus B2 `v6a_nocross` | 2,150 / 169 | `data/silver_plus_v6a_nocross/` (teacher; Zenodo `v0.1.3`) |
 
 Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云公开数据集`, `事业单位招聘`.
@@ -67,7 +67,7 @@ Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云�
 
 ## 3. Where the code will be hosted
 
-- **Public GitHub:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (visibility **public**, verified 2026-09-11). Reviewers who need clone-relative scoring (`scripts/cnss_paths.py`, `eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen`, human-reference `--protocol json_offset`) should clone **default branch `main`**, not only Release `v0.1.3`.
+- **Public GitHub:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (visibility **public**, verified 2026-09-11). Reviewers who need clone-relative scoring (`scripts/cnss_paths.py`, human-reference `convert_gold150_to_bio.py`, historical `eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen`) should clone **default branch `main`**, not only Release `v0.1.3`.
 - **Versioned GitHub Release tag:** `v0.1.0` (first public snapshot); `v0.1.1` (Zenodo citation-metadata fix); `v0.1.2` (2026-09-10 snapshot); `v0.1.3` (2026-09-11; human reference freeze + Silver-plus B2; commit `4e200bf`). Tag `v0.1.3` does **not** contain the later portable P0–P2 scripts, `LICENSE`, or the stripped laboratory-notes tree. Do **not** retag it. Mint **`v0.1.4`** when PeerJ must reproduce from a frozen zip that includes those scripts (checklist: `docs/V0.1.4_CHECKLIST.md`).
 
 ---

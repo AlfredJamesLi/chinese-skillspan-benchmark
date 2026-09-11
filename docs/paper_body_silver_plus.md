@@ -4,7 +4,7 @@ English draft for the PeerJ Computer Science **main text** (not the laboratory C
 Scorer: `cnss-lskt-1.2.0`. Standard deviations are **n=3 sample SD**, not test-set confidence intervals.  
 Human reference freeze (artifact Gold150) SHA-256: `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`.
 
-**Names (0911 PDF).** Write **human reference set**, **challenge cohort**, and **calibration cohort** in manuscript body. Keep file `gold150_test.jsonl` and Appendix D aliases Gold150 / Challenge-100 / Audit-50.
+**Names (0911 PDF).** Write **human reference set**, **challenge cohort**, and **calibration cohort** in manuscript body. Keep file `gold150_test.jsonl` and Appendix D aliases Gold150 / Challenge-100 / Audit-50. Current JobBERT evaluation on this freeze is v6a B2 **0.5536±0.0054**. V4 hybrid 2601 JobBERT-zh 3M **0.4331** is a derived / historical protocol.
 
 These numbers **must not** be subtracted from, or ranked in the same main table as, V4 hybrid 2601 JobBERT-zh 3M **0.4331** or official zero-shot Qwen SOP extract **0.1724**. Human-reference IDs sit inside hybrid 2601; scoring the same student again on full 2601 is not an independent test.
 

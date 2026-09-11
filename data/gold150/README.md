@@ -12,7 +12,7 @@ Canonical scoring path: [`../gold150_test.jsonl`](../gold150_test.jsonl) (same b
 | Challenge cohort | 100 | `gold100_locked.jsonl` | `a9fe43b79f58631876f00515f6a60649d8d2ceb57ebee111fe471cc70766864c` | Challenge-100 (`split=gold100_page1`) |
 | Calibration cohort | 50 | `iaa50_gold_locked.copied.jsonl` | `68b47bdbad1622ca39d89a2dceaf8117ee44a2227272e901a7673bc676531686` | Audit-50 / IAA-50 (`split=iaa50`) |
 
-Fields use `source_id` and Doccano `label` triples. This freeze is **not** V4 hybrid 2,601 and **not** Gold v2. It is also **not** the historical 200-sentence analysis (`data/human_gold_page1_200.jsonl`). Do not overwrite `gold_canonical_v2.jsonl` or `test_lskt_v4_cws_simhuman980_hybrid.jsonl`.
+Fields use `source_id` and Doccano `label` triples. This freeze is the **current manuscript evaluation**. It is **not** V4 hybrid 2,601 and **not** Gold v2. It is also **not** the historical 200-sentence analysis (`data/human_gold_page1_200.jsonl`). Do not overwrite `gold_canonical_v2.jsonl` or `test_lskt_v4_cws_simhuman980_hybrid.jsonl`.
 
 Convert Doccano types to scorer BIO without rewriting the freeze:
 
@@ -26,4 +26,4 @@ python3 scripts/eval_gold150_ext.py \
 
 JSON from `eval_gold150_ext.py` keeps the old keys (`gold150`, `challenge100`, `audit50`) and adds paper-name aliases (`human_reference`, `challenge_cohort`, `calibration_cohort`).
 
-These files are in GitHub Release / Zenodo **`v0.1.3`** (DOI `10.5281/zenodo.22698504`). They are **not** in Zenodo `v0.1.1` or `v0.1.2`. Teacher Silver-plus B2: [`../silver_plus_v6a_nocross/`](../silver_plus_v6a_nocross/).
+These files are the **current manuscript evaluation freeze** (0911 PeerJ draft). They are in GitHub Release / Zenodo **`v0.1.3`** (DOI `10.5281/zenodo.22698504`). They are **not** in Zenodo `v0.1.1` or `v0.1.2`. Teacher Silver-plus B2: [`../silver_plus_v6a_nocross/`](../silver_plus_v6a_nocross/). JobBERT-zh v6a B2 typed exact on this freeze is **0.5536±0.0054**. Do not rank that cell against V4 hybrid 2,601 JobBERT **0.4331**.

@@ -4,6 +4,11 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-11 current eval = human reference + v6a 0.5536)
+
+- Public README: current evaluation is the 150-sentence human reference set + JobBERT-zh v6a B2 **0.5536±0.0054**. V4 hybrid 2,601 JobBERT **0.4331** is a derived / historical protocol. Do not rank the two in one SOTA sentence. `--paper-main-only` still scores the historical 2,601 encoder (flag name kept).
+- Does **not** retag `v0.1.3`. Does **not** mint `v0.1.4`. Hub live cards are **not** re-uploaded in this note.
+
 ## Unreleased notes (2026-09-11 P0 = encoder 0.4331 only)
 
 - Public README P0 (`--paper-main-only --use-frozen`) guarantees JobBERT 3M **0.4331** only. The 0911 SOP LLM table is the committed file `tables/sop_extract_p2_2601.csv` (no API recall). Frozen `gpt-4o` dump **0.2854 / 0.6249** remains in the hybrid CSV and is not that SOP table.
