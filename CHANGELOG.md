@@ -14,7 +14,6 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 - CRF fine-tune no longer points at a parent-lab `../requirements.txt`. Pins live in `requirements-train.txt`. Default encoder is Hub `AlfredJames/jobbert-zh`. `--smoke` / `--init_crf hub` are connectivity checks, not a new abstract F1. `--smoke` writes under `--out_dir` and skips optimizer `last.ckpt`.
 - Does **not** retag `v0.1.3`. Does **not** change V4 hybrid JobBERT 3M **0.4331**.
-- Does **not** retag `v0.1.3`. Does **not** change V4 hybrid JobBERT 3M **0.4331**.
 
 ## Unreleased notes (2026-09-11 P0)
 
