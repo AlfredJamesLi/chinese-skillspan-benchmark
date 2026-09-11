@@ -12,7 +12,7 @@ Companion files: [README.md](README.md), [DATA_AVAILABILITY.md](DATA_AVAILABILIT
 |---|---|---|
 | Official scorer | Python 3, standard library; version string `cnss-lskt-1.2.0` in `scorer/score_lskt.py` | No GPU |
 | Jieba alignment | `requirements-repro.txt` → `jieba>=0.42.1` | Required for the paper-main table |
-| Encoder training pins | Parent `requirements.txt`: `torch==2.1.2`, `transformers==4.37.1`, `seqeval==1.2.2`, `numpy==1.26.3`, `datasets==2.16.1` | Plus `pytorch-crf` on `PYTHONPATH` |
+| Encoder + CRF training pins | `requirements-train.txt`: `torch==2.1.2`, `transformers==4.37.1`, `numpy==1.26.3`, `pytorch-crf==0.7.2`, `jieba>=0.42.1` | CUDA torch wheel from pytorch.org if needed. Bitwise match to 0.4331 is **not** claimed. |
 | Laboratory conda env name | Wrapper scripts may name a local environment | Not required; path is machine-specific |
 | OS / Python patch / CUDA / GPU model | Not recorded in the frozen notes | — |
 | Approximate wall-clock | Not verified for MLM / CRF / eval | — |
@@ -29,14 +29,15 @@ Paper-main scoring entry points resolve the tree from `Path(__file__)` or `$CNSS
 python3 -m pip install -r requirements-repro.txt
 ```
 
-**Training Chinese JobBERT + CRF** (after obtaining encoder weights):
+**Training Chinese JobBERT + CRF** (after obtaining encoder weights from the Hub):
 
 ```bash
-python3 -m pip install -r ../requirements.txt   # parent laboratory pins
-# add pytorch-crf to PYTHONPATH, or install an equivalent CRF package
+python3 -m pip install -r requirements-train.txt
+python3 scripts/train_cn_roberta_crf.py --smoke --out_dir /tmp/cnss_crf_smoke
+bash scripts/run_crf_v4_from_hub.sh
 ```
 
-Do not invent additional pip packages. LLM *generation* is not required to reproduce the frozen ChatGPT row.
+`--smoke` is a Hub connectivity check (16/8/8 rows, 1 epoch). It is **not** a paper F1. The frozen headline remains JobBERT 3M typed exact **0.4331** after jieba. Do not install a parent-lab `../requirements.txt`.
 
 ---
 
@@ -127,16 +128,30 @@ Draft split `16,350` / `2,268` / `4,222`. **Not** the paper-main gold. Do not su
 These files exist. They do **not** by themselves emit the 0.4331 CSV.
 
 ```bash
-# CRF on V4 silver (edit --model_dir to a local Chinese JobBERT encoder)
+# CRF on V4 silver from Hub JobBERT-zh (does not overwrite frozen_preds/)
+python3 -m pip install -r requirements-train.txt
 python3 scripts/train_cn_roberta_crf.py \
   --seed 42 \
-  --model_dir /path/to/chinese-jobbert-encoder \
+  --model_dir AlfredJames/jobbert-zh \
   --train data/train_lskt_v4_silver.jsonl \
   --dev data/dev_lskt_v4_silver.jsonl \
   --test data/corpus_splits/test.json \
   --gold data/gold_canonical_v2.jsonl \
-  --out_dir /path/to/crf_run \
+  --out_dir output/crf_v4_from_hub_seed42 \
   --epochs 6 --patience 2 --batch_size 16 --max_len 256 --lr 2e-5
+# equivalent:
+bash scripts/run_crf_v4_from_hub.sh
+```
+
+`--gold` is a Gold v2 side diagnostic. Paper-main typed exact **0.4331** still requires jieba snap against `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` (`scripts/eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen`). A new CRF run is not automatically the abstract cell.
+
+To reload the published CRF head without retraining (`AlfredJames/jobbert-zh` `crf/best.pt`):
+
+```bash
+python3 scripts/train_cn_roberta_crf.py \
+  --model_dir AlfredJames/jobbert-zh \
+  --init_crf hub --predict_only --skip_score \
+  --out_dir /tmp/cnss_crf_hub_predict
 ```
 
 Wrappers that exist but are laboratory-bound:
@@ -156,10 +171,10 @@ Chinese JobBERT **weights are not in Git**. Paper-main encoder + V4 CRF: https:/
 ### Paper-main table (V4 hybrid, jieba-aligned)
 
 ```bash
-python3 scripts/eval_hybrid_cws_simhuman.py
+python3 scripts/eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen
 ```
 
-Writes `tables/hybrid_cws_simhuman980_all_models.csv`. Uses `data/frozen_preds/` when `output/` is missing for the v4 encoder rows.
+Writes an eval JSON under `--out-dir` (default `reports/sandbox_lskt_v4_silver/hybrid_cws_eval`). Does **not** rewrite hybrid gold. `--write-committed-csv` is lab-only.
 
 ### Official scorer API
 

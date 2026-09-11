@@ -2,8 +2,12 @@
 """Chinese RoBERTa-wwm-ext / JobBERT-zh + CRF token classifier.
 
 Joint (default): 9 BIO tags. STL (`--keep_type L|K|S|T`): 3-tag CRF, other
-types mapped to O. Trainer `--gold` score is a side diagnostic; V4 paper
-scoring is `scripts/eval_stl_v4.py`. Does not overwrite old dumps or Gold v2.
+types mapped to O. Trainer `--gold` is a side diagnostic (Gold v2). Paper-main
+scoring is jieba + `scripts/eval_hybrid_cws_simhuman.py` on the V4 hybrid.
+Does not overwrite frozen dumps, Gold v2, or hybrid gold.
+
+Install: pip install -r requirements-train.txt
+Default encoder: Hugging Face `AlfredJames/jobbert-zh`.
 """
 from __future__ import annotations
 
@@ -50,6 +54,24 @@ def load_split(path: Path) -> list[dict]:
     if raw.lstrip().startswith("["):
         return json.loads(raw)
     return [json.loads(l) for l in raw.splitlines() if l.strip()]
+
+
+def cap_rows(rows: list[dict], n: int) -> list[dict]:
+    return rows if n is None or n <= 0 else rows[:n]
+
+
+def resolve_crf_pt(model_dir: str, init_crf: str, local_files_only: bool) -> Path | None:
+    flag = (init_crf or "").strip()
+    if not flag:
+        return None
+    if flag.lower() == "hub":
+        from huggingface_hub import hf_hub_download
+
+        return Path(hf_hub_download(model_dir, filename="crf/best.pt", local_files_only=local_files_only))
+    p = Path(flag).expanduser()
+    if not p.is_file():
+        raise SystemExit(f"--init_crf file not found: {p}")
+    return p
 
 
 def gold_tags(rec: dict, keep_type: str | None = None) -> list[str]:
@@ -241,9 +263,17 @@ def train_one(args) -> dict:
     model = BertCRF(
         args.model_dir, n_labels=len(label2id), local_files_only=args.local_files_only
     ).to(device)
-    train_rows = load_split(Path(args.train))
-    dev_rows = load_split(Path(args.dev))
-    test_rows = load_split(Path(args.test))
+    crf_pt = resolve_crf_pt(args.model_dir, getattr(args, "init_crf", "") or "", args.local_files_only)
+    if crf_pt is not None:
+        state = torch.load(crf_pt, map_location="cpu")
+        model.load_state_dict(state)
+        print(json.dumps({"init_crf": str(crf_pt)}), flush=True)
+    train_rows = cap_rows(load_split(Path(args.train)), int(getattr(args, "max_train", 0) or 0))
+    dev_rows = cap_rows(load_split(Path(args.dev)), int(getattr(args, "max_dev", 0) or 0))
+    test_rows = cap_rows(load_split(Path(args.test)), int(getattr(args, "max_test", 0) or 0))
+    if bool(getattr(args, "predict_only", False)):
+        train_rows = []
+    print(json.dumps({"n_train": len(train_rows), "n_dev": len(dev_rows), "n_test": len(test_rows)}), flush=True)
     train_ds = SentDS(train_rows, tok, args.max_len, label2id, keep_type)
     loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True)
     opt = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.01)
@@ -263,7 +293,12 @@ def train_one(args) -> dict:
         patience = int(ckpt.get("patience", 0))
         history = list(ckpt.get("history") or [])
         print(json.dumps({"resume_from": str(ckpt_path), "next_epoch": start_epoch, "best_f1": best_f1}), flush=True)
+    predict_only = bool(getattr(args, "predict_only", False))
+    if predict_only:
+        print(json.dumps({"predict_only": True}), flush=True)
     for epoch in range(start_epoch, args.epochs + 1):
+        if predict_only:
+            break
         model.train()
         losses = []
         for step, batch in enumerate(loader, start=1):
@@ -303,18 +338,19 @@ def train_one(args) -> dict:
             torch.save(model.state_dict(), out_dir / "best.pt")
         else:
             patience += 1
-        torch.save(
-            {
-                "model": model.state_dict(),
-                "opt": opt.state_dict(),
-                "sched": sched.state_dict(),
-                "epoch": epoch,
-                "best_f1": best_f1,
-                "patience": patience,
-                "history": history,
-            },
-            ckpt_path,
-        )
+        if not bool(getattr(args, "smoke", False)):
+            torch.save(
+                {
+                    "model": model.state_dict(),
+                    "opt": opt.state_dict(),
+                    "sched": sched.state_dict(),
+                    "epoch": epoch,
+                    "best_f1": best_f1,
+                    "patience": patience,
+                    "history": history,
+                },
+                ckpt_path,
+            )
         if patience >= args.patience:
             print(f"early stop at epoch {epoch}", flush=True)
             break
@@ -326,14 +362,19 @@ def train_one(args) -> dict:
     )
     pred_path = out_dir / "test_pred.jsonl"
     write_pred_jsonl(test_rows, test_pred, pred_path)
-    report = score(
-        args.gold,
-        str(pred_path),
-        align_mode="official",
-        pred_fields=("pred_tags", "list_of_selection_bio4"),
-        n_boot=0,
-    )
-    (out_dir / "score_official.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    skip_score = bool(getattr(args, "skip_score", False))
+    report: dict = {}
+    if not skip_score:
+        report = score(
+            args.gold,
+            str(pred_path),
+            align_mode="official",
+            pred_fields=("pred_tags", "list_of_selection_bio4"),
+            n_boot=0,
+        )
+        (out_dir / "score_official.json").write_text(
+            json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
     (out_dir / "history.json").write_text(json.dumps(history, indent=2), encoding="utf-8")
     meta = {
         "seed": args.seed,
@@ -380,7 +421,32 @@ def main() -> int:
         default="",
         help="STL: keep only L, K, S, or T (other BIO → O; 3-tag CRF). Empty = joint 9-tag LSKT.",
     )
+    ap.add_argument("--max_train", type=int, default=0, help="Cap train rows (0 = all).")
+    ap.add_argument("--max_dev", type=int, default=0, help="Cap dev rows (0 = all).")
+    ap.add_argument("--max_test", type=int, default=0, help="Cap test rows (0 = all).")
+    ap.add_argument(
+        "--init_crf",
+        default="",
+        help="Load a BertCRF state_dict. Path, or 'hub' for <model_dir>/crf/best.pt.",
+    )
+    ap.add_argument("--predict_only", action="store_true", help="Skip the training loop; write test_pred.jsonl.")
+    ap.add_argument("--skip_score", action="store_true", help="Do not call the official scorer (smoke / partial test).")
+    ap.add_argument(
+        "--smoke",
+        action="store_true",
+        help="Hub connectivity check: 16/8/8 rows, 1 epoch, skip scorer. Not a paper F1.",
+    )
     args = ap.parse_args()
+    if args.smoke:
+        args.max_train = args.max_train or 16
+        args.max_dev = args.max_dev or 8
+        args.max_test = args.max_test or 8
+        args.epochs = 1
+        args.patience = 1
+        args.batch_size = min(int(args.batch_size), 4)
+        args.skip_score = True
+    if args.predict_only and not (args.init_crf or args.resume):
+        raise SystemExit("--predict_only needs --init_crf or --resume")
     train_one(args)
     return 0
 

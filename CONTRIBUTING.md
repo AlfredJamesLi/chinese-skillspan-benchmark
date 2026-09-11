@@ -24,7 +24,7 @@ Use a short, reproducible description. Include file paths relative to this repos
 ### Code bugs
 
 - Scorer alignment, CRF trainer, evaluation scripts.
-- Laboratory absolute paths that break a clean clone are already a known issue; a patch that parameterises `PAPER` / `ROOT` is welcome.
+- Paper-main scoring and CRF train entry points are clone-relative (`scripts/cnss_paths.py`). Other files under `scripts/` may still contain a laboratory absolute root.
 
 ### Reproducibility failures
 

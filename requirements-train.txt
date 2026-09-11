@@ -1,0 +1,12 @@
+# CRF fine-tune (GPU). Scoring-only reviewers should use requirements-repro.txt.
+
+# Pins match the laboratory recipe recorded for the paper encoder + CRF runs
+# (parent-repo requirements.txt). A newer CUDA torch / transformers may still
+# run the trainer; bitwise match to frozen JobBERT 3M 0.4331 is not claimed.
+# Install a CUDA wheel from https://pytorch.org if the default CPU torch is too slow.
+
+numpy==1.26.3
+torch==2.1.2
+transformers==4.37.1
+pytorch-crf==0.7.2
+jieba>=0.42.1

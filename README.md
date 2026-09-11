@@ -104,7 +104,7 @@ python3 scorer/score_lskt.py \
   --align-mode official
 ```
 
-Do not overwrite `data/gold150_test.jsonl`. CRF training defaults to Hub `AlfredJames/jobbert-zh`; see [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
+Do not overwrite `data/gold150_test.jsonl`. CRF training uses `requirements-train.txt` and Hub `AlfredJames/jobbert-zh` (see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) §7). `--smoke` checks that the trainer loads; it is not the abstract F1.
 
 Weights are not stored in Git. Encoder + V4 CRF (0.4331): https://huggingface.co/AlfredJames/jobbert-zh. Gold150 v6a B2 continuation (0.5536±0.0054): https://huggingface.co/AlfredJames/jobbert-zh-v6a.
 
@@ -120,6 +120,7 @@ CITATION.cff
 CHANGELOG.md
 CONTRIBUTING.md
 requirements-repro.txt
+requirements-train.txt
 scorer/                 # cnss-lskt-1.2.0
 scripts/
 data/
