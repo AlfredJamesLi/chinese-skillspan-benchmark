@@ -65,13 +65,13 @@ SHA-256 values below were computed from the files in this workspace.
 | `scorer/score_lskt.py` | Official scorer | 16,513 | `90624fa545434ebe0442c3243709f5e64ef2f95f4ccbacdb5f5d0696b65d69a7` |
 | `notes/handbooks/handbook_B_sop_v4.md` | Handbook B (Chinese, `B.sop_v4.2.14`) | 50,533 | `5a4883d9350d7fb3756e46fac68624e929a2dfbdc1e3014c5f7d222a39757d19` |
 | `notes/handbooks/handbook_B_sop_v4.en.md` | Handbook B (English summary) | 29,556 | `d05ba55991f5e03522fbd3d0f010ad29a8bd7033b260bed749801e2c4b66da3f` |
-| `data/gold150_test.jsonl` | Gold150 test freeze (Challenge-100 + Audit-50) | 67,116 | `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0` |
+| `data/gold150_test.jsonl` | Human reference set (artifact Gold150: challenge + calibration cohorts) | 67,116 | `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0` |
 | `data/silver_plus_v6a_nocross/train_b2.jsonl` | Silver-plus B2 teacher train (`v6a_nocross`) | 1,757,307 | `8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e` |
 | `data/silver_plus_v6a_nocross/dev_b2.jsonl` | Silver-plus B2 teacher development | 151,873 | `e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef` |
 
-Last minted archive: GitHub / Zenodo **`v0.1.3`** (DOI `10.5281/zenodo.22698504`; includes Gold150). Earlier snapshots: **`v0.1.2`** (`10.5281/zenodo.22685143`) and **`v0.1.1`** (`10.5281/zenodo.22288338`). Gold150, Silver-plus B2, and Handbook B v4.2.14 are **not** in the `v0.1.1` or `v0.1.2` tarballs.
+Last minted archive: GitHub / Zenodo **`v0.1.3`** (DOI `10.5281/zenodo.22698504`; includes the human reference set). Earlier snapshots: **`v0.1.2`** (`10.5281/zenodo.22685143`) and **`v0.1.1`** (`10.5281/zenodo.22288338`). The human reference freeze, Silver-plus B2, and Handbook B v4.2.14 are **not** in the `v0.1.1` or `v0.1.2` tarballs.
 
-`scripts/eval_hybrid_cws_simhuman.py` **loads** the frozen hybrid gold and does not rewrite it. Lab-only `--rebuild-gold` would change the SHA-256; do not use that flag for paper-main scoring. Gold150 freeze (`data/gold150_test.jsonl`) is converted with `scripts/convert_gold150_to_bio.py` to a derived BIO file; the freeze bytes must stay `ca8db0bc…`.
+`scripts/eval_hybrid_cws_simhuman.py` **loads** the frozen hybrid gold and does not rewrite it. Lab-only `--rebuild-gold` would change the SHA-256; do not use that flag for paper-main scoring. The human-reference freeze (`data/gold150_test.jsonl`) is converted with `scripts/convert_gold150_to_bio.py` to a derived BIO file; the freeze bytes must stay `ca8db0bc…`.
 
 ---
 
@@ -163,7 +163,7 @@ Wrappers that exist but are laboratory-bound:
 
 MLM continued pre-training scripts exist (`prepare_jobbert_*`, `jobbert_zh_*.sbatch`). The 1M / 3M sentence corpora (`data/jobbert_*_sents.jsonl`) are large reconstructed job texts and must not be published until rights are confirmed.
 
-Chinese JobBERT **weights are not in Git**. Paper-main encoder + V4 CRF: https://huggingface.co/AlfredJames/jobbert-zh. Contrast 1M: https://huggingface.co/AlfredJames/jobbert-zh-1m. Gold150 v6a: https://huggingface.co/AlfredJames/jobbert-zh-v6a. Qwen LoRA is not published.
+Chinese JobBERT **weights are not in Git**. Paper-main encoder + V4 CRF: https://huggingface.co/AlfredJames/jobbert-zh. Contrast 1M: https://huggingface.co/AlfredJames/jobbert-zh-1m. Human-reference v6a: https://huggingface.co/AlfredJames/jobbert-zh-v6a. Qwen LoRA is not published.
 
 ---
 
@@ -206,9 +206,9 @@ python3 scorer/score_lskt.py \
 
 Scoring `data/frozen_preds/jobbert_3m_v4.jsonl` on the V4 hybrid with `--align-mode official` and **no** CWS snap yields typed exact F1 **0.2552** (this workspace). Do not report that figure as the abstract result.
 
-### Gold150 (later protocol; not the abstract table)
+### Human reference set (later protocol; not the abstract table)
 
-JSON-offset Qwen LoRA is Table C **0.1215±0.0092**. Shared-handbook SFT is **0.5403±0.0354**. JobBERT-zh v6a B2 is **0.5536±0.0054**. Do not rank those cells against V4 hybrid **0.4331**. Qwen adapters are not published; `train_qwen_ext_sft.py` is laboratory JSON-offset only (`--protocol json_offset`).
+JSON-offset Qwen LoRA is Table C **0.1215±0.0092**. Shared-handbook SFT is **0.5403±0.0354**. JobBERT-zh v6a B2 is **0.5536±0.0054**. Do not rank those cells against V4 hybrid **0.4331**. Qwen adapters are not published; `train_qwen_ext_sft.py` is laboratory JSON-offset only (`--protocol json_offset`). Paper names: human reference / challenge cohort / calibration cohort; files keep the Gold150 paths.
 
 ```bash
 python3 scripts/convert_gold150_to_bio.py
@@ -232,7 +232,7 @@ python3 scripts/eval_gold150_ext.py \
 | `test_pred.jsonl`, `best.pt`, `run_summary.json`, `score_official.json` | `train_cn_roberta_crf.py` |
 | JSON object on stdout / `--out` | `scorer/score_lskt.py` |
 | `data/gold150_test.bio.jsonl` (derived; gitignored) | `convert_gold150_to_bio.py` |
-| Gold150 split JSON (`--out`) | `eval_gold150_ext.py` |
+| Human-reference split JSON (`--out`) | `eval_gold150_ext.py` |
 
 ---
 
@@ -271,7 +271,7 @@ Gold v2 appendix (from `notes/confirmed-results.md` / freeze notes; do not rank 
 | `local_files_only=True` tokenizer error | Encoder directory missing; weights are not in Git |
 | Hybrid SHA-256 changed after eval | `eval_hybrid_cws_simhuman.py` rewrote the gold; restore the frozen file |
 | Paper directory has no `.git` | Laboratory copy; clone the GitHub repo and run from that clone (server B used worktree `_verify_origin_main`) |
-| JSON-offset Qwen F1 mixed with 0.5403 | Two Gold150 Qwen protocols; pass `--protocol json_offset` or `shared_prompt` and do not share a checkpoint path |
+| JSON-offset Qwen F1 mixed with 0.5403 | Two human-reference Qwen protocols; pass `--protocol json_offset` or `shared_prompt` and do not share a checkpoint path |
 
 ---
 

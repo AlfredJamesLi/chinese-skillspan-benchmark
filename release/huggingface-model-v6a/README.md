@@ -1,7 +1,7 @@
 ---
 language:
   - zh
-pretty_name: JobBERT-zh v6a (Gold150)
+pretty_name: JobBERT-zh v6a (human reference)
 library_name: transformers
 pipeline_tag: token-classification
 inference: false
@@ -20,20 +20,20 @@ license: other
 base_model: AlfredJames/jobbert-zh
 ---
 
-# JobBERT-zh v6a (Gold150)
+# JobBERT-zh v6a (human reference set)
 
-This repository is the **Gold150 continuation** of JobBERT-zh. It is an **additional version**, not a replacement of the V4 hybrid 2601 encoder row.
+This repository is the **human-reference continuation** of JobBERT-zh (artifact Gold150). It is an **additional version**, not a replacement of the V4 hybrid 2601 encoder row.
 
 | Checkpoint | Hub | Test | Typed exact F1 |
 |---|---|---|---|
 | V4 (paper-main encoder) | [`AlfredJames/jobbert-zh`](https://huggingface.co/AlfredJames/jobbert-zh) | V4 hybrid 2601 + jieba | **0.4331** |
-| **v6a B2 (this repo)** | [`AlfredJames/jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a) | Gold150 | **0.5536±0.0054** (n=3 sample SD) |
+| **v6a B2 (this repo)** | [`AlfredJames/jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a) | Human reference set | **0.5536±0.0054** (n=3 sample SD) |
 
-Do **not** rank 0.5536 against 0.4331, official Qwen SOP extract 0.1724, or Gold v2 ChatGPT 0.6365 in one table. SD is a **three-seed sample SD**, not a test-set confidence interval. Gold150 is **not** in Zenodo `v0.1.1`.
+Do **not** rank 0.5536 against 0.4331, official Qwen SOP extract 0.1724, or Gold v2 ChatGPT 0.6365 in one table. SD is a **three-seed sample SD**, not a test-set confidence interval. The human reference freeze is **not** in Zenodo `v0.1.1`.
 
 - Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
 - V4 weights (unchanged): https://huggingface.co/AlfredJames/jobbert-zh
-- Gold150 notes: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/notes/gold150_followups_20260909
+- Human-reference notes: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/data/gold150/README.md
 
 ---
 

@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-"""Score Gold150 / Audit-50 / Challenge-100. Keep all 150 rows. No history subtraction.
+"""Score the human reference set (artifact Gold150). Keep all 150 rows. No history subtraction.
 
 Clone-relative. Defaults to `data/gold150_test.jsonl` (freeze) plus a derived BIO
 file; never overwrites the freeze.
 
-Two Qwen Gold150 protocols are not interchangeable and must not share a default
+Paper names: human reference set, challenge cohort, calibration cohort.
+JSON keeps laboratory keys (`gold150`, `challenge100`, `audit50`) and adds
+aliases (`human_reference`, `challenge_cohort`, `calibration_cohort`).
+
+Two Qwen human-reference protocols are not interchangeable and must not share a default
 checkpoint path:
 
 - json_offset — this repo's `qwen_ext_protocol.py` / `train_qwen_ext_sft.py`
@@ -33,9 +37,9 @@ GOLD_TEST = PAPER / "data/gold150_test.jsonl"
 GOLD_EVAL_DEFAULT = PAPER / "data/gold150_test.bio.jsonl"
 
 PROTOCOLS = {
-    "json_offset": "Gold150 Qwen JSON-offset LoRA (0.1215±0.0092). Not shared-prompt 0.5403.",
-    "shared_prompt": "Gold150 shared-handbook SFT (job 50981, 0.5403±0.0354). Not JSON-offset 0.1215.",
-    "jobbert_v6a": "Gold150 JobBERT-zh v6a B2 CRF (0.5536±0.0054).",
+    "json_offset": "Human-reference Qwen JSON-offset LoRA (0.1215±0.0092). Not shared-prompt 0.5403.",
+    "shared_prompt": "Human-reference shared-handbook SFT (job 50981, 0.5403±0.0354). Not JSON-offset 0.1215.",
+    "jobbert_v6a": "Human-reference JobBERT-zh v6a B2 CRF (0.5536±0.0054).",
     "unspecified": "Protocol not declared; do not treat this F1 as a paper cell.",
 }
 
@@ -124,7 +128,9 @@ def empty_fp(gold_rows, pred_rows) -> dict:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Score Gold150 from freeze or derived BIO. Does not rewrite the freeze.")
+    ap = argparse.ArgumentParser(
+        description="Score the human reference set (artifact Gold150) from freeze or derived BIO. Does not rewrite the freeze."
+    )
     ap.add_argument("--gold_eval", default="", help="BIO gold, or Doccano freeze (converted in memory). Default: derived BIO or freeze.")
     ap.add_argument("--pred", required=True)
     ap.add_argument("--gold_test", default=str(GOLD_TEST), help="Freeze with source_id + split (challenge/audit).")
@@ -139,7 +145,7 @@ def main() -> int:
 
     gold_test_path = Path(args.gold_test)
     if not gold_test_path.is_file():
-        raise SystemExit(f"missing Gold150 freeze: {gold_test_path}")
+        raise SystemExit(f"missing human-reference freeze (gold150_test.jsonl): {gold_test_path}")
     gold_test = load(gold_test_path)
 
     if args.gold_eval:
@@ -204,6 +210,17 @@ def main() -> int:
         "not_independent_b2_vs_b1_claim": True,
         "sample_sd_is_not_test_ci": True,
         "freeze_not_rewritten": True,
+    }
+    out["human_reference"] = out["gold150"]
+    out["challenge_cohort"] = out["challenge100"]
+    out["calibration_cohort"] = out["audit50"]
+    out["terminology"] = {
+        "paper": {
+            "human_reference": "gold150",
+            "challenge_cohort": "challenge100",
+            "calibration_cohort": "audit50",
+        },
+        "note": "0911 PDF names; laboratory keys gold150/challenge100/audit50 are unchanged.",
     }
     for p in preds:
         st = p.get("parse_status") or ""

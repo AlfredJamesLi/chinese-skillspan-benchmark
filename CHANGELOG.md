@@ -4,6 +4,11 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-11 paper names)
+
+- Align public docs with the 0911 PeerJ draft: the frozen 150-sentence evaluation is the **human reference set** (challenge cohort + calibration cohort). Laboratory identifier Gold150 and files `data/gold150_test.jsonl`, `scripts/convert_gold150_to_bio.py`, `scripts/eval_gold150_ext.py` are unchanged. Score JSON keeps `gold150` / `challenge100` / `audit50` and adds paper-name aliases. Map: `data/gold150/README.md`.
+- Does **not** retag `v0.1.3`. Does **not** change V4 hybrid JobBERT 3M **0.4331**. Does **not** rank 0.1215 / 0.5403 / 0.5536 against 0.4331.
+
 ## Unreleased notes (2026-09-11 P2 + B check)
 
 - Gold150 scoring is clone-relative (`scripts/eval_gold150_ext.py`). Doccano freeze maps to BIO in memory or via `convert_gold150_to_bio.py`; the freeze SHA is not rewritten. JSON-offset Qwen (`qwen_ext_protocol.py`, Table C **0.1215±0.0092**) is a different protocol from shared-handbook SFT (**0.5403±0.0354**); `train_qwen_ext_sft.py` / `infer_qwen_ext_sft.py` require `--protocol json_offset`. Qwen LoRA adapters are still not published.
@@ -94,9 +99,9 @@ GitHub, JobBERT-zh, and Zenodo `v0.1.1` are **public**.
 | Handbook B | `B.sop_v4.2.14` | 2026-09-09 | Paper SOP on GitHub `main`; v4.2.1 remains in older tags |
 | Human page-1 overlay | 200 sentences; sha `fcecb522…617490` | 2026-09-03 | Supplement; path `data/human_gold_page1_200.jsonl` |
 | `repartition_v1` | Same 22,840, other split (`16,350` / `2,268` / `4,222`) | — | Draft; not main gold |
-| Public archive | GitHub / Zenodo `v0.1.3` | 2026-09-11 | Current minted archive; includes Gold150; DOI `10.5281/zenodo.22698504` |
-| Gold150 | 150 sentences; sha `ca8db0bc…0310fd0` | Zenodo `v0.1.3` | Not in `v0.1.1` / `v0.1.2` |
-| Silver-plus B2 `v6a_nocross` | train 2,150 / dev 169 | Zenodo `v0.1.3` | Teacher labels, not extra Gold |
+| Public archive | GitHub / Zenodo `v0.1.3` | 2026-09-11 | Current minted archive; includes human reference freeze; DOI `10.5281/zenodo.22698504` |
+| Human reference set | 150 sentences; sha `ca8db0bc…0310fd0` | Zenodo `v0.1.3` | Artifact Gold150; not in `v0.1.1` / `v0.1.2` |
+| Silver-plus B2 `v6a_nocross` | train 2,150 / dev 169 | Zenodo `v0.1.3` | Teacher labels, not extra human-reference gold |
 
 ---
 

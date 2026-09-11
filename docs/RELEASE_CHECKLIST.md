@@ -4,7 +4,7 @@ Complete every item before a public upload. This document does **not** authorise
 
 Proposed PeerJ wording (use the minted version DOI):
 
-> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22698504 (version v0.1.3; concept DOI https://doi.org/10.5281/zenodo.22288337). Earlier snapshots are https://doi.org/10.5281/zenodo.22685143 (version v0.1.2) and https://doi.org/10.5281/zenodo.22288338 (version v0.1.1). The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The pretrained JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh. Gold150 and Silver-plus B2 train/development files are included in v0.1.3 and are not in Zenodo v0.1.1 or v0.1.2.
+> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22698504 (version v0.1.3; concept DOI https://doi.org/10.5281/zenodo.22288337). Earlier snapshots are https://doi.org/10.5281/zenodo.22685143 (version v0.1.2) and https://doi.org/10.5281/zenodo.22288338 (version v0.1.1). The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The pretrained JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh. The 150-sentence human reference set (`data/gold150_test.jsonl`) and Silver-plus B2 train/development files are included in v0.1.3 and are not in Zenodo v0.1.1 or v0.1.2.
 
 ---
 

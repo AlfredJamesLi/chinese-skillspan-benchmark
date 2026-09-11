@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Convert frozen Gold150 Doccano jsonl to scorer BIO jsonl.
+"""Convert frozen human-reference (artifact Gold150) Doccano jsonl to scorer BIO jsonl.
 
 The freeze (`data/gold150_test.jsonl`) uses `source_id` and Doccano type
 strings, including the misspelling `Tranversial SKills`. This script maps
 those at read time and writes a **derived** file. It never overwrites the freeze.
+
+Paper names: human reference set = challenge cohort + calibration cohort.
+Do not rename this file or the freeze.
 
 Offsets are Unicode code points, half-open [start, end), on `list(text)`.
 """

@@ -11,14 +11,14 @@ Draft overview: (a) corpus construction and annotation; (b) domain pretraining, 
 | Resource | URL |
 |---|---|
 | Code and data | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
-| Current archive (`v0.1.3`, includes Gold150) | https://doi.org/10.5281/zenodo.22698504 |
+| Current archive (`v0.1.3`, includes the human reference set) | https://doi.org/10.5281/zenodo.22698504 |
 | Previous snapshot (`v0.1.2`) | https://doi.org/10.5281/zenodo.22685143 |
 | First snapshot (`v0.1.1`) | https://doi.org/10.5281/zenodo.22288338 |
 | Concept DOI | https://doi.org/10.5281/zenodo.22288337 |
 | JobBERT-zh (V4; hybrid 2601 exact **0.4331**) | https://huggingface.co/AlfredJames/jobbert-zh |
-| JobBERT-zh v6a (Gold150 B2 exact **0.5536±0.0054**) | https://huggingface.co/AlfredJames/jobbert-zh-v6a |
+| JobBERT-zh v6a (human-reference B2 exact **0.5536±0.0054**) | https://huggingface.co/AlfredJames/jobbert-zh-v6a |
 
-Do not send reviewers through a Google Sites or Drive page. There is no separate Hugging Face dataset repository. Gold150 is in GitHub Release / Zenodo **`v0.1.3`**, not in `v0.1.1` or `v0.1.2`. Do not rank 0.5536 against 0.4331 in one table.
+Do not send reviewers through a Google Sites or Drive page. There is no separate Hugging Face dataset repository. The 150-sentence **human reference set** (`data/gold150_test.jsonl`) is in GitHub Release / Zenodo **`v0.1.3`**, not in `v0.1.1` or `v0.1.2`. Do not rank 0.5536 against 0.4331 in one table.
 
 ---
 
@@ -65,15 +65,15 @@ A first-page human overlay of **200** sentences is at `data/human_gold_page1_200
 
 A later Handbook-B human diagnostic (project-26 first **85** official spans + frozen **IAA-50**, plus span-length bins) is in [`reports/human_gold85_iaa50/`](reports/human_gold85_iaa50/README.md). On that gold, typed exact scales with instruction-model size (JobBERT-zh CRF **0.13** / Qwen2.5-14B SOP+jieba **0.26** / Kimi on IAA-50 **0.62**). **Not** a replacement for V4 hybrid JobBERT 3M **0.4331**.
 
-Gold150 (`data/gold150_test.jsonl`, 150 sentences = Challenge-100 + Audit-50) and Silver-plus B2 teacher files (`data/silver_plus_v6a_nocross/`, 2,150 / 169) are in GitHub Release / Zenodo **`v0.1.3`**. They are a later protocol, not the abstract gold, and they are not in Zenodo `v0.1.1` or `v0.1.2`. See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md) and [notes/SILVER_PLUS_EXTENSION_PROVENANCE.md](notes/SILVER_PLUS_EXTENSION_PROVENANCE.md).
+The **human reference set** (`data/gold150_test.jsonl`: 150 sentences = challenge cohort + calibration cohort) and Silver-plus B2 teacher files (`data/silver_plus_v6a_nocross/`, 2,150 / 169) are in GitHub Release / Zenodo **`v0.1.3`**. They are a later protocol, not the abstract gold, and they are not in Zenodo `v0.1.1` or `v0.1.2`. Paper names and repository identifiers: [`data/gold150/README.md`](data/gold150/README.md). See also [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md) and [notes/SILVER_PLUS_EXTENSION_PROVENANCE.md](notes/SILVER_PLUS_EXTENSION_PROVENANCE.md).
 
 ---
 
-## Silver-plus / Gold150 (manuscript body)
+## Human reference set and Silver-plus (manuscript body)
 
-Methods and Gold150 numbers intended for the PeerJ **main text** — including the JobBERT-zh CRF (no prompt) versus Qwen2.5-14B JSON-offset LoRA (fixed prompt, no demonstrations) — are in [`docs/paper_body_silver_plus.md`](docs/paper_body_silver_plus.md).
+The 0911 PeerJ draft names the frozen 150-sentence evaluation **human reference set** (challenge cohort + calibration cohort). Laboratory identifier **Gold150** and filename `gold150_test.jsonl` stay in Appendix D / this repository. Methods and human-reference numbers intended for the PeerJ **main text** — including the JobBERT-zh CRF (no prompt) versus Qwen2.5-14B JSON-offset LoRA (fixed prompt, no demonstrations) — are in [`docs/paper_body_silver_plus.md`](docs/paper_body_silver_plus.md).
 
- That section does **not** replace V4 hybrid JobBERT 3M **0.4331**. Official Qwen P0 remains **0.1215±0.0092**. A later P1 / SOP-on-Gold150 / watermark-peel contrast is archived in [`notes/gold150_followups_20260909/`](notes/gold150_followups_20260909/README.md) and the Overleaf E/F/G pack [`notes/silver_plus_followups_20260909/`](notes/silver_plus_followups_20260909/README.md) and does **not** replace Tables A–D. Tentative Gold150 main cell: JobBERT-zh 3M, v6a, B2 typed exact **0.5536±0.0054** (n=3 sample SD). Qwen JSON-offset is a supplement and is **not** official SOP extract **0.1724**.
+That section does **not** replace V4 hybrid JobBERT 3M **0.4331**. Official Qwen P0 remains **0.1215±0.0092**. A later P1 / SOP-on-human-reference / watermark-peel contrast is archived in [`notes/gold150_followups_20260909/`](notes/gold150_followups_20260909/README.md) and the Overleaf E/F/G pack [`notes/silver_plus_followups_20260909/`](notes/silver_plus_followups_20260909/README.md) and does **not** replace Tables A–D. Tentative human-reference main cell: JobBERT-zh 3M, v6a, B2 typed exact **0.5536±0.0054** (n=3 sample SD). Qwen JSON-offset is a supplement and is **not** official SOP extract **0.1724**.
 
 ## Quick start
 
@@ -94,7 +94,7 @@ Paper-main encoder and LLM rows (jieba-aligned). The eval script is **read-only*
 python3 scripts/eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen
 ```
 
-When `output/` is absent, or with `--use-frozen`, JobBERT-zh v4 rows come from `data/frozen_preds/`. Gold150 freeze uses `source_id` and Doccano type names; convert before scoring. JSON-offset Qwen (**0.1215±0.0092**) is not shared-handbook SFT (**0.5403±0.0354**) and is not V4 hybrid **0.4331**:
+When `output/` is absent, or with `--use-frozen`, JobBERT-zh v4 rows come from `data/frozen_preds/`. The human-reference freeze uses `source_id` and Doccano type names; convert before scoring. JSON-offset Qwen (**0.1215±0.0092**) is not shared-handbook SFT (**0.5403±0.0354**) and is not V4 hybrid **0.4331**:
 
 ```bash
 python3 scripts/convert_gold150_to_bio.py
@@ -111,7 +111,7 @@ python3 scorer/score_lskt.py \
 
 Do not overwrite `data/gold150_test.jsonl`. Qwen LoRA adapters are not in this release. CRF training uses `requirements-train.txt` and Hub `AlfredJames/jobbert-zh` (see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) §7). `--smoke` checks that the trainer loads; it is not the abstract F1. A second host (DS210039, `09897d9`, jieba 0.42.1) matched the P0 paper-main cells and left both freeze SHA-256 values unchanged.
 
-Weights are not stored in Git. Encoder + V4 CRF (0.4331): https://huggingface.co/AlfredJames/jobbert-zh. Gold150 v6a B2 continuation (0.5536±0.0054): https://huggingface.co/AlfredJames/jobbert-zh-v6a.
+Weights are not stored in Git. Encoder + V4 CRF (0.4331): https://huggingface.co/AlfredJames/jobbert-zh. Human-reference v6a B2 continuation (0.5536±0.0054): https://huggingface.co/AlfredJames/jobbert-zh-v6a.
 
 ---
 
@@ -136,7 +136,7 @@ data/
   dev_lskt_v4_silver.jsonl
   frozen_preds/
   human_gold_page1_200.jsonl
-  gold150_test.jsonl    # later protocol; in Zenodo v0.1.3, not v0.1.1/v0.1.2
+  gold150_test.jsonl    # human reference set (artifact Gold150); Zenodo v0.1.3
   silver_plus_v6a_nocross/
 docs/                   # manuscript-body drafts
 notes/handbooks/        # Handbook B (paper SOP; v4.2.14)

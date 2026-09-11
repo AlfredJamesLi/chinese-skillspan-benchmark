@@ -2,9 +2,11 @@
 
 English draft for the PeerJ Computer Science **main text** (not the laboratory Chinese notes).  
 Scorer: `cnss-lskt-1.2.0`. Standard deviations are **n=3 sample SD**, not test-set confidence intervals.  
-Gold150 SHA-256: `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`.
+Human reference freeze (artifact Gold150) SHA-256: `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`.
 
-These numbers **must not** be subtracted from, or ranked in the same main table as, V4 hybrid 2601 JobBERT-zh 3M **0.4331** or official zero-shot Qwen SOP extract **0.1724**. Gold150 IDs sit inside hybrid 2601; scoring the same student again on full 2601 is not an independent test.
+**Names (0911 PDF).** Write **human reference set**, **challenge cohort**, and **calibration cohort** in manuscript body. Keep file `gold150_test.jsonl` and Appendix D aliases Gold150 / Challenge-100 / Audit-50.
+
+These numbers **must not** be subtracted from, or ranked in the same main table as, V4 hybrid 2601 JobBERT-zh 3M **0.4331** or official zero-shot Qwen SOP extract **0.1724**. Human-reference IDs sit inside hybrid 2601; scoring the same student again on full 2601 is not an independent test.
 
 Isolation wording: **sentence-level isolation (extended)**. Do not call it document isolation after v4.
 
@@ -14,7 +16,7 @@ Isolation wording: **sentence-level isolation (extended)**. Do not call it docum
 
 JobBERT-zh and Qwen2.5-14B-Instruct are **not** the same fine-tuning recipe. They do not share a prompt, a loss, or a decoder.
 
-| | JobBERT-zh 3M (paper Gold150 main) | Qwen2.5-14B-Instruct (Gold150 supplement) |
+| | JobBERT-zh 3M (paper human-reference main) | Qwen2.5-14B-Instruct (human-reference supplement) |
 |---|---|---|
 | What is adapted | Full Bert+CRF (encoder + emission + CRF) | LoRA adapters only |
 | Supervision | Character BIO tags (`O`, `B/I-L/K/S/T`) | Assistant JSON `[{"start","end","type"}]` |
@@ -35,7 +37,7 @@ B1/B2 is a **label-scheme** contrast on identical sentences (old SOP-style vs te
 
 **Objective.** Negative log-likelihood of the CRF. Decode with Viterbi; continuation subwords and CLS/SEP are ignored when mapping back to characters.
 
-**Optimiser (all v3–v6a JobBERT runs).** AdamW, learning rate \(2\times10^{-5}\), weight decay 0.01, batch size 16, at most 6 epochs, patience 2, 10% linear warmup, gradient clip 1.0. Seeds 42 / 43 / 44. Checkpoint = argmax **frozen-dev typed exact F1** (tie: keep the earlier epoch if \(\Delta\le10^{-4}\)). Gold150 is not used for training, early stopping, or prompt choice (there is no prompt).
+**Optimiser (all v3–v6a JobBERT runs).** AdamW, learning rate \(2\times10^{-5}\), weight decay 0.01, batch size 16, at most 6 epochs, patience 2, 10% linear warmup, gradient clip 1.0. Seeds 42 / 43 / 44. Checkpoint = argmax **frozen-dev typed exact F1** (tie: keep the earlier epoch if \(\Delta\le10^{-4}\)). The human reference set is not used for training, early stopping, or prompt choice (there is no prompt).
 
 v6a B2 seed 42 ran 810 steps; selected dev typed exact was about 0.65. That is a development figure, not a paper test number.
 
