@@ -1,6 +1,6 @@
 # LSKT v4 新 SOP 测试金标（sandbox）
 
-**不是官方 Gold。** 官方评测仍只用 `data/gold_canonical_v2.jsonl`。本文件中的 F1 不进 `notes/confirmed-results.md`、不进 PDF Table 3。
+**不是官方 Gold。** 官方评测仍只用 `data/gold_canonical_v2.jsonl`。本文件中的 F1 不进论文主表、不进 PDF Table 3。
 
 操作性定义：`GUIDELINES.md`（L/K/S/T；2–8 token；熟悉/掌握只标对象；流程/福利空句）。规则改写：`scripts/rewrite_train_lskt_v4.py`。
 
@@ -27,7 +27,7 @@ JobBERT-zh **1M** CRF：`output/jobbert_zh_1m/crf_lskt_v4_silver_seed42/`（不�
 
 3M+v4 CRF（2026-08-25 05:09 完成）：`output/jobbert_zh_3m/crf_lskt_v4_silver_seed42/`。对规则 v4 2601：exact **0.3229** / partial **0.5624**；Gold v2 exact **0.1104**。快照：`results_snapshots/jobbert_zh_3m__crf_lskt_v4_silver_seed42.json`、`existing_encoder_on_sop/sop_eval_3m_v4.json`。
 
-**GitHub 备份 ≠ 论文主表。** 上表可进私有仓库；人工 SOP 金标完成并重打分后，才能考虑写入 `notes/confirmed-results.md`。0.32 是规则银标自洽，不是人工 Gold。
+**GitHub 备份 ≠ 论文主表。** 上表可进仓库备份；人工 SOP 金标完成并重打分后，才能考虑写入论文附录。0.32 是规则银标自洽，不是人工 Gold。
 
 ## SHA256（推送时）
 

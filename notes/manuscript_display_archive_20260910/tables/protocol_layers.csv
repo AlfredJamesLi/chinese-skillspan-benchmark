@@ -1,5 +1,0 @@
-layer,reference_annotations,span_convention,encoder_training,evaluation_role
-P0,original paper Gold 2676 rows,original paper convention,English JobBERT heads,historical paper-reported S-F1
-P1,human Doccano Gold v2 2601 unique IDs,human-reviewed spans,goldstyle v3 Silver,appendix provenance and protocol-sensitivity reference
-P2,standardized reference: 980 under human verification plus 1621 Silver-derived,LSKT-v4 plus named frozen Jieba-derived view,SOP-v4 Silver plus the same derived view,provisional main benchmark pending human adjudication
-repartition_v1,source-stratified 4222-record evaluation partition with character-offset Silver drafts,LSKT-v4 character offsets,newly trained split-specific encoders only,main corpus statistics plus appendix-only model diagnostics

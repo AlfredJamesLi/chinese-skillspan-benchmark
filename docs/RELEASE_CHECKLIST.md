@@ -52,13 +52,13 @@ Proposed PeerJ wording (use the minted version DOI):
 
 ## Code licence confirmation
 
-- [ ] `[TODO: choose SPDX for scorer and scripts]`.
-- [ ] Add a root `LICENSE` file (none is present today).
+- [x] Proposed root `LICENSE`: Apache-2.0 for scorer / advertised scripts / original docs (2026-09-11 draft).
+- [ ] Corresponding author confirms that grant before treating it as final.
 
 ## Data licence confirmation
 
-- [ ] `[TODO: choose a data licence or a split licence (annotations vs. text)]`.
-- [ ] Do not advertise CC-BY until rights are clear.
+- [x] `LICENSE` §2: job-advertisement wording is **not** CC-BY; Zenodo default `cc-by-4.0` is not this grant.
+- [ ] `[TODO: written confirmation]` of platform terms (`DATA_AVAILABILITY.md` §7).
 
 ## Base-model licence compatibility
 

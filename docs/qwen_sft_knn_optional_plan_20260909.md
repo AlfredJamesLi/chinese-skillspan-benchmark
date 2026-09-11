@@ -1,6 +1,6 @@
 # Qwen2.5-14B-Instruct：P1-SFT 与可选检索示例（备选实验）
 
-日期：2026-09-09。设计已按该协议跑完附录对照（同 checkpoint：$k=0$ / 随机 $k=3$ / $k$NN $k=3$）。正式 Qwen 行仍是 P0：**0.1215±0.0092**。分数见 [`notes/gold150_followups_20260909/`](../notes/gold150_followups_20260909/README.md)。未改标签、未推送权重、未改写 Table C。  
+日期：2026-09-09。设计已按该协议跑完附录对照（同 checkpoint：$k=0$ / 随机 $k=3$ / $k$NN $k=3$）。正式 Qwen 行仍是 P0：**0.1215±0.0092**。分数见 [`paper_body_silver_plus.md`](paper_body_silver_plus.md) §6。未改标签、未推送权重、未改写 Table C。  
 提示词加长的零样本均值略高但样本 SD 咬住；加 3 条 demo 伤害 exact F1。exact≪relaxed 仍是边界/定位。
 
 ## 提示词编号

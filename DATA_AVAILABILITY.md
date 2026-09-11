@@ -17,7 +17,7 @@ The following are *candidates* for a public GitHub + Zenodo + Hugging Face relea
 | Material | In this tree | Public redistribution |
 |---|---|---|
 | Annotation guidelines (Handbook B v4.2.14 and English summary) | `notes/handbooks/` | Yes, if authors own the text (laboratory-authored) |
-| Official scorer and evaluation scripts | `scorer/`, `scripts/` | Yes, after a code licence is chosen and laboratory paths are stripped |
+| Official scorer and evaluation scripts | `scorer/`, `scripts/` | Proposed Apache-2.0 in `LICENSE` (corresponding author to confirm). Advertised P0–P2 entry points are clone-relative; other `scripts/` may still contain laboratory paths |
 | Predefined Table 1 split *indices* / `id` lists | Embedded in `data/corpus_splits/` and gold files | IDs and split membership: yes |
 | BIO annotations (`list_of_selection_bio4`) aligned to `id` | Gold, silver, and hybrid files | Derived labels: intended for release |
 | Frozen encoder predictions (tags only + sentence text) | `data/frozen_preds/` | Predictions: yes; accompanying sentence text: same restriction as the corpus |
@@ -68,7 +68,7 @@ Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云�
 ## 3. Where the code will be hosted
 
 - **Public GitHub:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (visibility **public**, verified 2026-09-11). Reviewers who need clone-relative scoring (`scripts/cnss_paths.py`, `eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen`, human-reference `--protocol json_offset`) should clone **default branch `main`**, not only Release `v0.1.3`.
-- **Versioned GitHub Release tag:** `v0.1.0` (first public snapshot); `v0.1.1` (Zenodo citation-metadata fix); `v0.1.2` (2026-09-10 snapshot); `v0.1.3` (2026-09-11; human reference freeze + Silver-plus B2; commit `4e200bf`). Tag `v0.1.3` does **not** contain the later portable P0–P2 scripts. Do not retag it. A new `v0.1.4` would be required only if PeerJ must reproduce from a frozen zip that includes those scripts.
+- **Versioned GitHub Release tag:** `v0.1.0` (first public snapshot); `v0.1.1` (Zenodo citation-metadata fix); `v0.1.2` (2026-09-10 snapshot); `v0.1.3` (2026-09-11; human reference freeze + Silver-plus B2; commit `4e200bf`). Tag `v0.1.3` does **not** contain the later portable P0–P2 scripts, `LICENSE`, or the stripped laboratory-notes tree. Do **not** retag it. Mint **`v0.1.4`** when PeerJ must reproduce from a frozen zip that includes those scripts (checklist: `docs/V0.1.4_CHECKLIST.md`).
 
 ---
 
@@ -114,7 +114,7 @@ This working tree contains:
 - Full sentence strings and job `title` fields (often including employer names) inside gold, silver, corpus splits, frozen predictions, human overlay, the human reference freeze, and Silver-plus files
 - Original bulk exports (`应届生招聘大数据*.csv`, `人工智能招聘大数据2025年.xlsx`)
 
-No licence file, terms-of-use waiver, or written permission from the four recruitment platforms is present in the repository. Therefore:
+A proposed repository notice is in `LICENSE` (Apache-2.0 for software; job-advertisement wording is **not** CC-BY). No terms-of-use waiver or written permission from the four recruitment platforms is present. Therefore:
 
 - **Do not claim** that the full raw advertisement text is openly licensed (CC-BY or otherwise).
 - **Do not upload** the CSV / XLSX source dumps with the public archive until counsel or the corresponding author confirms platform terms.

@@ -71,6 +71,12 @@ notes/PROMPT_NEW_WINDOW.md
 notes/PROMPT_NEW_WINDOW_STEP2.md
 notes/PROMPT_NEW_WINDOW_STEP3.md
 notes/PROMPT_consult_lskt_redesign.md
+notes/PROMPT_BACKUP_CROSS_SERVER.md
+notes/_local_backup_before_pull_20260910/
+notes/_pack_to_B_20260910/
+notes/_from_A_20260910/
+notes/_backup_from_B_20260910/
+notes/_backup_receipt_B_20260910.md
 reports/sandbox_lskt_v4_silver/CODEX_TEST_EVAL.json
 reports/sandbox_lskt_v4_silver/CODEX_TEST_EVAL.md
 reports/sandbox_lskt_v4_silver/PROMPT_codex.md
@@ -98,3 +104,10 @@ reports/sandbox_lskt_v4_silver/codex_pack/outputs_kimi/
 
 # --- local Codex/Cursor transfer zips ---
 GITHUB_*_PREPARATION*.zip
+
+# --- laboratory notes (kept on disk; not in the public clone) ---
+# Public remainder: handbooks (paper SOP) + two freeze/provenance files.
+/notes/*
+!/notes/handbooks/
+!/notes/SILVER_PLUS_EXTENSION_PROVENANCE.md
+!/notes/DATA_PROTOCOL_FREEZE.md

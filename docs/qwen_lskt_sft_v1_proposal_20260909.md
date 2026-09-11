@@ -1,6 +1,6 @@
 # Qwen LSKT SFT v1 prompt (design candidate)
 
-Status: **trained as an appendix contrast (2026-09-09)**. Official Table C is still P0 **0.1215±0.0092**. Scores: [`notes/gold150_followups_20260909/`](../notes/gold150_followups_20260909/README.md). Do **not** replace P0 with P1 $k=0$ 0.1455±0.0196.
+Status: **trained as an appendix contrast (2026-09-09)**. Official Table C is still P0 **0.1215±0.0092**. Scores: [`paper_body_silver_plus.md`](paper_body_silver_plus.md) §6. Do **not** replace P0 with P1 $k=0$ 0.1455±0.0196.
 
 Full prompt text (Chinese, model-facing): [`PROMPT_QWEN_LSKT_SFT_v1.txt`](qwen_lskt_sft_v1_prompt.txt).  
 Optional kNN plan: [`qwen_sft_knn_optional_plan_20260909.md`](qwen_sft_knn_optional_plan_20260909.md).

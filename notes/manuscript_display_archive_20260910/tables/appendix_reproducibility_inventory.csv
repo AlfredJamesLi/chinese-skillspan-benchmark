@@ -1,9 +1,0 @@
-component,frozen_artifact,coverage,permitted_role
-Historical P0 reference,admin_Baseline_test.jsonl,2676 rows,Original paper reproduction only
-Legacy P1 reference (Gold v2),gold_canonical_v2.jsonl,2601 unique-first IDs,Appendix provenance and sensitivity analyses only
-Standardized P2 reference,test_lskt_v4_cws_simhuman980_hybrid.jsonl,Same 2601 IDs; 980-record audit in progress,Current main benchmark; provisional until human adjudication
-Protocol-aligned training labels (SOP-v4),train_lskt_v4_silver,Training split only,Encoder supervision; never used as test Gold
-Official scorer,cnss-lskt-1.2.0,ID-strict alignment,Typed exact micro-F1; relaxed IoU at least 0.5 as a secondary metric
-Model inventory,tables/model_ids.csv,Frozen model names and coverage status,Links each result row to its evaluated model endpoint or checkpoint
-Source-stratified corpus split,tables/skillspan_style/dataset_stats_repartition_v1.csv,16350/2268/4222 sentences,Main corpus statistics; evaluation labels are silver drafts not human Gold
-Source-stratified model diagnostics,tables/repartition_v1_night.csv; tables/repartition_v1_stl.csv,4222 silver-draft evaluation records,Appendix-only F1 diagnostics; not a replacement for the 2601-record reference

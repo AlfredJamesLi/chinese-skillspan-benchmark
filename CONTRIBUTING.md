@@ -35,7 +35,7 @@ Use a short, reproducible description. Include file paths relative to this repos
 ### Model-card corrections
 
 - Errors in `release/huggingface-model/README.md` (architecture, licence, intended use).
-- Do not change the licence field to a concrete SPDX id until the base-model licence and training-data rights are confirmed.
+- Hub model cards stay `license: other` until job-advertisement text rights are confirmed (see `LICENSE`).
 
 ---
 
@@ -63,4 +63,4 @@ If you need to illustrate a sentence, invent a short synthetic example or use a 
 
 ## Licence of contributions
 
-No SPDX licence has been chosen for this repository. Do not upload new advertisement text. Patches to scorer, scripts, and documentation are welcome.
+Proposed software licence: **Apache-2.0** (`LICENSE`). Patches to the scorer, advertised scripts, and documentation are contributions under that grant once the corresponding author confirms it. Do not upload new advertisement text. Dataset wording is **not** CC-BY.

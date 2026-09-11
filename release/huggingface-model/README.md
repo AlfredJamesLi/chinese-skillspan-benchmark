@@ -83,7 +83,7 @@ Hardware used for the 0.4331 run is not recorded in the public release notes.
 - **MLM:** Chinese job-advertisement sentences. Sentence dumps are **not** published with this model.
 - **CRF:** `train_lskt_v4_silver.jsonl` / `dev_lskt_v4_silver.jsonl` (SOP v4 silver, **not** human Doccano Gold)
 
-This repository’s licence remains `other` until job-advertisement text rights are confirmed. Compatibility with Apache-2.0 of the backbone is required before any more permissive SPDX id is chosen.
+This repository’s Hub field remains `license: other` until job-advertisement text rights are confirmed. The GitHub paper repository proposes Apache-2.0 for **software** only (`LICENSE`); that grant does not re-licence these weights. Compatibility with Apache-2.0 of the backbone is required before any more permissive SPDX id is chosen.
 
 ---
 

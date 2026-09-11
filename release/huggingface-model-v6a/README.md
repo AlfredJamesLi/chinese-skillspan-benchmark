@@ -116,4 +116,4 @@ The paper class is `BertCRF` in `scripts/train_cn_roberta_crf.py`.
 
 ## Licence
 
-`license: other` until job-advertisement text rights are confirmed. Same authors and funding (NSSFC 21BGL142) as JobBERT-zh.
+`license: other` until job-advertisement text rights are confirmed. GitHub `LICENSE` Apache-2.0 is for repository software, not these weights. Same authors and funding (NSSFC 21BGL142) as JobBERT-zh.

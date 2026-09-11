@@ -148,7 +148,7 @@ JobBERT-zh 1M × Silver-plus was **not** run (different DAPT recipe; no CRF sele
 
 ## 6. Appendix-only follow-ups (do not rewrite Tables A–D)
 
-Official Table C remains P0 JSON-offset SFT, Gold150 exact **0.1215±0.0092**. Scores live in [`notes/gold150_followups_20260909/`](../notes/gold150_followups_20260909/README.md). Overleaf-synced TeX: [`notes/silver_plus_followups_20260909/tables_EFG_appendix.tex`](../notes/silver_plus_followups_20260909/tables_EFG_appendix.tex).
+Official Table C remains P0 JSON-offset SFT, Gold150 exact **0.1215±0.0092**. Numeric cells for E/F/G are in this draft. Frozen identifiers: [`notes/SILVER_PLUS_EXTENSION_PROVENANCE.md`](../notes/SILVER_PLUS_EXTENSION_PROVENANCE.md). Laboratory score archives are not in the public clone.
 
 ### Table E — P1 prompt contrast (does not replace P0)
 
@@ -202,5 +202,5 @@ Do **not** write that peel-cleaning improved the main cells, and do not rewrite 
 - P1 $k=0$ is a mean lift of +0.024 with overlapping sample SDs; demonstrations hurt exact F1. It does not replace Table C.  
 - A crawler watermark is present in about 1% of Silver-plus train sentences; stripping it and retraining did not raise the official cells.
 
-Score archives (no weights): [`notes/silver_plus_extensions_20260908/`](../notes/silver_plus_extensions_20260908/README.md), [`notes/gold150_followups_20260909/`](../notes/gold150_followups_20260909/README.md).  
+Frozen identifiers: [`notes/SILVER_PLUS_EXTENSION_PROVENANCE.md`](../notes/SILVER_PLUS_EXTENSION_PROVENANCE.md). Laboratory score archives are not in the public clone.  
 Scripts: `scripts/train_jobbert_phase1.py`, `scripts/train_qwen_ext_sft.py`, `scripts/qwen_ext_protocol.py`.

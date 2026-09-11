@@ -74,7 +74,7 @@ The **human reference set** (`data/gold150_test.jsonl`: 150 sentences = challeng
 
 The manuscript names the frozen 150-sentence evaluation **human reference set** (challenge cohort + calibration cohort). Laboratory identifier **Gold150** and filename `gold150_test.jsonl` stay in Appendix D / this repository (`data/gold150/README.md`). Methods and human-reference numbers intended for the PeerJ **main text** — including the JobBERT-zh CRF (no prompt) versus Qwen2.5-14B JSON-offset LoRA (fixed prompt, no demonstrations) — are in [`docs/paper_body_silver_plus.md`](docs/paper_body_silver_plus.md).
 
-That section does **not** replace V4 hybrid JobBERT 3M **0.4331**. Official Qwen P0 remains **0.1215±0.0092**. A later P1 / SOP-on-human-reference / watermark-peel contrast is archived in [`notes/gold150_followups_20260909/`](notes/gold150_followups_20260909/README.md) and the Overleaf E/F/G pack [`notes/silver_plus_followups_20260909/`](notes/silver_plus_followups_20260909/README.md) and does **not** replace Tables A–D. Tentative human-reference main cell: JobBERT-zh 3M, v6a, B2 typed exact **0.5536±0.0054** (n=3 sample SD). Qwen JSON-offset is a supplement and is **not** official SOP extract **0.1724**.
+That section does **not** replace V4 hybrid JobBERT 3M **0.4331**. Official Qwen P0 remains **0.1215±0.0092**. Appendix P1 / SOP-on-human-reference / watermark-peel cells are summarised in the same draft and in [`notes/SILVER_PLUS_EXTENSION_PROVENANCE.md`](notes/SILVER_PLUS_EXTENSION_PROVENANCE.md); they do **not** replace Tables A–D. Tentative human-reference main cell: JobBERT-zh 3M, v6a, B2 typed exact **0.5536±0.0054** (n=3 sample SD). Qwen JSON-offset is a supplement and is **not** official SOP extract **0.1724**.
 
 ## Quick start
 
@@ -120,6 +120,7 @@ Weights are not stored in Git. Encoder + V4 CRF (0.4331): https://huggingface.co
 README.md
 REPRODUCIBILITY.md
 DATA_AVAILABILITY.md
+LICENSE                   # proposed: Apache-2.0 (software) + data notice
 CITATION.cff
 CHANGELOG.md
 CONTRIBUTING.md
@@ -175,7 +176,7 @@ Corresponding author: Xiangyu Zhao (`xianzhao@cityu.edu.hk`).
 
 ## Licence
 
-Code and dataset licences are **not yet assigned**. Do not treat the raw advertisement wording as CC-BY or any other open licence. JobBERT-zh is `other` on Hugging Face until job-ad text rights are confirmed. The Zenodo GitHub hook labelled the `v0.1.1` record `cc-by-4.0` by platform default; that is not an author licence decision. See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md).
+A proposed split notice is in [`LICENSE`](LICENSE): **Apache-2.0** for the official scorer, clone-relative scripts, and original documentation; **not CC-BY** for job-advertisement wording. Corresponding author confirmation is still required. JobBERT-zh remains `other` on Hugging Face until text rights are confirmed. A Zenodo GitHub hook may label a record `cc-by-4.0` by platform default; that is not this grant. See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md).
 
 ---
 

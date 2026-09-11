@@ -25,7 +25,7 @@ On these **human** golds, typed exact rises with instruction-model scale:
 **Allowed claim:** Chinese SkillSpan *human* spans (short, typed, Handbook B) are hard for a 100M CRF; a 14B SOP extract already doubles exact F1, and larger instruction models go further.  
 **Forbidden:** using this to retire abstract 0.4331; ranking GPT-6.0 **0.7528** against JobBERT 0.4331; calling Gold85 a clean blind test (GPT-6 overlay was visible while humans edited official types). IAA-50 is the cleaner LLM-vs-encoder contrast (Kimi **0.6233** vs Qwen SOP+jieba **0.2678** vs JobBERT **0.1522**).
 
-JobBERT drop vs 0.4331 is protocol, not a crashed checkpoint: same CRF dump is 0.4331 after bilateral jieba on V4 hybrid, 0.2552 without jieba on that hybrid, and ~0.11–0.15 against human gold (see `notes/confirmed-results.md`).
+JobBERT drop vs 0.4331 is protocol, not a crashed checkpoint: same CRF dump is 0.4331 after bilateral jieba on V4 hybrid, 0.2552 without jieba on that hybrid, and ~0.11–0.15 against human gold (this diagnostic; not the abstract cell).
 
 ## Overall typed exact
 

@@ -1,6 +1,6 @@
 # Jieba CWS snap (sandbox)
 
-Diagnostic numbers are now in `notes/confirmed-results.md` (appendix only). Still do **not** copy them into PDF Table 3 or the Gold v2 LLM unique-first table.
+Diagnostic numbers belong in the appendix protocol notes (`notes/DATA_PROTOCOL_FREEZE.md`), not PDF Table 3 or the Gold v2 LLM unique-first table.
 
 JobBERT/RoBERTa mid-word cuts (`培训其`, `机器学`, `当前服`) come from **token-CRF + incomplete silver**, not from 1M vs 3M DAPT. SOP already forbids 半词; `looks_complete` in rule v4 does not enforce jieba word bounds (~40% of v4 train spans start or end inside a jieba word).
 

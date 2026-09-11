@@ -22,7 +22,7 @@
 1. 原文必须能对上 `human980.jsonl` 的 `id`；对不上先停。  
 2. 不覆盖 `gold_canonical_v2.jsonl`，不自动覆盖 V4 hybrid 2601。  
 3. 用 `scripts/build_and_eval_human200_page1.py` 的同类流程写评分金标 + QA + `cnss-lskt-1.2.0`。  
-4. 新 F1 只进 `notes/confirmed-results.md` 的 **n=200/300/… 分析表**，不得改摘要 JobBERT 3M **0.4331**。  
+4. 新 F1 只进内部 n=200/300/… 分析表，不得改摘要 JobBERT 3M **0.4331**。  
 5. `bash scripts/backup_push_github.sh "human gold pageN +100"`。
 
 980 全部标完并裁决之前，**禁止**把人标写成论文主 Gold。

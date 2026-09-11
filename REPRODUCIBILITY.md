@@ -13,7 +13,7 @@ Companion files: [README.md](README.md), [DATA_AVAILABILITY.md](DATA_AVAILABILIT
 | Official scorer | Python 3, standard library; version string `cnss-lskt-1.2.0` in `scorer/score_lskt.py` | No GPU |
 | Jieba alignment | `requirements-repro.txt` → `jieba>=0.42.1` | Required for the paper-main table. Second host DS210039 used 0.42.1 (2026-09-11). |
 | Encoder + CRF training pins | `requirements-train.txt`: `torch==2.1.2`, `transformers==4.37.1`, `numpy==1.26.3`, `pytorch-crf==0.7.2`, `jieba>=0.42.1` | CUDA torch wheel from pytorch.org if needed. Bitwise match to 0.4331 is **not** claimed. DS210039 `--smoke` used an already-installed torch 2.10.0+cu130 and laboratory `pytorch-crf`; it did not install this pin file. |
-| Second-host public entry | DS210039, 2026-09-11, git `09897d9` | P0 JobBERT 3M **0.433118** / ChatGPT **0.285361** / relaxed **0.624869**; P2 parser 13/13; P1 smoke not a paper F1. Receipt: `notes/public_repro_receipt_B_20260911.md`. |
+| Second-host public entry | DS210039, 2026-09-11, git `09897d9` | P0 JobBERT 3M **0.433118** / ChatGPT **0.285361** / relaxed **0.624869**; P2 parser 13/13; P1 smoke not a paper F1. Laboratory receipt is not in the public clone. |
 | Laboratory conda env name | Wrapper scripts may name a local environment | Not required; path is machine-specific |
 | OS / Python patch / CUDA / GPU model | Not recorded in the frozen notes | — |
 | Approximate wall-clock | Not verified for MLM / CRF / eval | — |
@@ -247,7 +247,7 @@ From `tables/hybrid_cws_simhuman980_all_models.csv` (`full2601_typed_exact_f1` u
 | ChatGPT (`gpt-4o`, frozen dump + jieba) | 0.285361 | 0.624869 |
 | JobBERT_1M_cws_retrain | 0.404863 | 0.590381 |
 
-Gold v2 appendix (from `notes/confirmed-results.md` / freeze notes; do not rank against the V4 column): ChatGPT typed **0.6365**; encoder 3-seed mean **0.1288**.
+Gold v2 appendix (from `notes/DATA_PROTOCOL_FREEZE.md` and this file; do not rank against the V4 column): ChatGPT typed **0.6365**; encoder 3-seed mean **0.1288**.
 
 **Not verified as paper results:** vanilla-WWM seed-42 **0.4341 / 0.4289**; human-200-only F1; overlay 0.3884 as a replacement abstract number.
 

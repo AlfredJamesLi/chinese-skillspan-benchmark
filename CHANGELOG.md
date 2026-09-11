@@ -4,10 +4,16 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-11 LICENSE + laboratory notes)
+
+- Proposed root [`LICENSE`](LICENSE): Apache-2.0 for software; job-advertisement wording is **not** CC-BY. Corresponding author still to confirm. Hub cards stay `license: other`.
+- Laboratory notes removed from the git index (files remain on disk). Public remainder under `notes/`: `handbooks/`, `SILVER_PLUS_EXTENSION_PROVENANCE.md`, `DATA_PROTOCOL_FREEZE.md`.
+- Does **not** retag `v0.1.3`. Does **not** mint `v0.1.4`. Checklist: `docs/V0.1.4_CHECKLIST.md`. Does **not** strip laboratory paths from the rest of `scripts/`.
+
 ## Unreleased notes (2026-09-11 reviewer-facing docs)
 
 - Landing docs: resource table no longer co-ranks 0.4331 and 0.5536; CITATION.cff no longer says the evaluation gold is still being adjudicated; Handbook B in CONTRIBUTING is `v4.2.14`; Hub templates cite Zenodo `v0.1.3` and Silver-plus **2,150/169**. Files `gold150_*.jsonl` unchanged.
-- Does **not** add a LICENSE (author decision). Does **not** retag `v0.1.3`. Does **not** strip laboratory paths from the rest of `scripts/`.
+- Does **not** retag `v0.1.3`. Does **not** strip laboratory paths from the rest of `scripts/`.
 
 ## Unreleased notes (2026-09-11 paper names)
 
@@ -17,7 +23,7 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 ## Unreleased notes (2026-09-11 P2 + B check)
 
 - Gold150 scoring is clone-relative (`scripts/eval_gold150_ext.py`). Doccano freeze maps to BIO in memory or via `convert_gold150_to_bio.py`; the freeze SHA is not rewritten. JSON-offset Qwen (`qwen_ext_protocol.py`, Table C **0.1215±0.0092**) is a different protocol from shared-handbook SFT (**0.5403±0.0354**); `train_qwen_ext_sft.py` / `infer_qwen_ext_sft.py` require `--protocol json_offset`. Qwen LoRA adapters are still not published.
-- Second host **DS210039** independently re-ran P0 / P2 and optional P1 `--smoke` at `09897d9` (jieba 0.42.1). Receipt: `notes/public_repro_receipt_B_20260911.md`. Smoke `dev_typed_f1=0.0` is not a paper F1.
+- Second host **DS210039** independently re-ran P0 / P2 and optional P1 `--smoke` at `09897d9` (jieba 0.42.1). Laboratory receipt is not in the public clone. Smoke `dev_typed_f1=0.0` is not a paper F1.
 - Does **not** retag `v0.1.3`. Does **not** change V4 hybrid JobBERT 3M **0.4331**. Does **not** rank 0.1215 / 0.5403 / 0.5536 against 0.4331.
 
 ## Unreleased notes (2026-09-11 P1)
@@ -43,7 +49,7 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ## Unreleased notes (2026-09-09c)
 
-- Overleaf appendix Studies E/F/G (P1 contrast, frozen SOP-on-Gold150, watermark peel) archived in `notes/silver_plus_followups_20260909/` with numeric provenance. Scores also in `notes/gold150_followups_20260909/`. Does **not** replace official P0 **0.1215±0.0092**, JobBERT v6a B2 **0.5536±0.0054**, or V4 hybrid JobBERT 3M **0.4331**. Gold150 remains outside Zenodo v0.1.1.
+- Overleaf appendix Studies E/F/G (P1 contrast, frozen SOP-on-Gold150, watermark peel) summarised in `docs/paper_body_silver_plus.md`. Does **not** replace official P0 **0.1215±0.0092**, JobBERT v6a B2 **0.5536±0.0054**, or V4 hybrid JobBERT 3M **0.4331**. Gold150 remains outside Zenodo v0.1.1.
 
 ## Unreleased notes (2026-09-09b)
 
@@ -56,7 +62,7 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ## Unreleased notes (2026-09-08)
 
-- Silver-plus laboratory extensions on Gold150: Qwen2.5-14B JSON-offset SFT (B2 only) and JobBERT-zh 3M H/E/M equal-n CRF. Archive: `notes/silver_plus_extensions_20260908/`. JobBERT-zh 1M was skipped. Does **not** change V4 hybrid JobBERT 3M **0.4331**, official Qwen SOP extract **0.1724**, or the existing Gold150 JobBERT v6a B2 main cell.
+- Silver-plus laboratory extensions on Gold150: Qwen2.5-14B JSON-offset SFT (B2 only) and JobBERT-zh 3M H/E/M equal-n CRF. Provenance: `notes/SILVER_PLUS_EXTENSION_PROVENANCE.md`. JobBERT-zh 1M was skipped. Does **not** change V4 hybrid JobBERT 3M **0.4331**, official Qwen SOP extract **0.1724**, or the existing Gold150 JobBERT v6a B2 main cell.
 
 ## Unreleased notes (2026-09-07)
 
