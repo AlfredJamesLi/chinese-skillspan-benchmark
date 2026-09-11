@@ -14,11 +14,12 @@ abstract: >-
   minimal-complete, non-overlapping spans. Language models propose annotation
   drafts, but human reviewers retain authority over accepted offsets and types
   under a shared handbook. The benchmark uses identifier-strict scoring, exact
-  and overlap-tolerant metrics, and source- and length-based analyses. Its
-  evaluation reference is undergoing final human adjudication, so the current
-  results are provisional estimates. The baseline study shows why the resource
-  is challenging: exact extraction changes with Chinese boundary conventions,
-  and accuracy varies across recruitment sources. Taken together,
+  and overlap-tolerant metrics, and source- and length-based analyses. The
+  paper-main evaluation file is a frozen V4 hybrid of 2,601 identifier-aligned
+  records (derived SimHuman and SOP–CWS labels, not a completed human gold).
+  A later 150-sentence human reference set is archived separately and must not
+  be ranked against the paper-main encoder row. Exact extraction changes with
+  Chinese boundary conventions, and accuracy varies across recruitment sources.
   Chinese-SkillSpan contributes a multi-source span resource, a Chinese-specific
   annotation and evaluation protocol, and a reproducible baseline and diagnostic
   suite that exposes category, source, and boundary effects. Internal artifact
@@ -53,7 +54,7 @@ authors:
     family-names: Zhao
     affiliation: "City University of Hong Kong"
 keywords:
-  - Chinese JobSkillNER
+  - Chinese-SkillSpan
   - competency span extraction
   - skill extraction
   - Chinese job advertisements

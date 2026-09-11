@@ -4,6 +4,11 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-11 reviewer-facing docs)
+
+- Landing docs: resource table no longer co-ranks 0.4331 and 0.5536; CITATION.cff no longer says the evaluation gold is still being adjudicated; Handbook B in CONTRIBUTING is `v4.2.14`; Hub templates cite Zenodo `v0.1.3` and Silver-plus **2,150/169**. Files `gold150_*.jsonl` unchanged.
+- Does **not** add a LICENSE (author decision). Does **not** retag `v0.1.3`. Does **not** strip laboratory paths from the rest of `scripts/`.
+
 ## Unreleased notes (2026-09-11 paper names)
 
 - Align public docs with the 0911 PeerJ draft: the frozen 150-sentence evaluation is the **human reference set** (challenge cohort + calibration cohort). Laboratory identifier Gold150 and files `data/gold150_test.jsonl`, `scripts/convert_gold150_to_bio.py`, `scripts/eval_gold150_ext.py` are unchanged. Score JSON keeps `gold150` / `challenge100` / `audit50` and adds paper-name aliases. Map: `data/gold150/README.md`.

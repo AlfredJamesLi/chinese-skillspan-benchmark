@@ -39,15 +39,15 @@ Do **not** rank 0.5536 against 0.4331, official Qwen SOP extract 0.1724, or Gold
 
 ## What this repository contains
 
-Same 3M DAPT encoder as `AlfredJames/jobbert-zh`. Only the CRF head is continued from the released V4 `crf/best.pt` on Silver-plus **v6a B2** (2,156 train / 169 frozen dev).
+Same 3M DAPT encoder as `AlfredJames/jobbert-zh`. Only the CRF head is continued from the released V4 `crf/best.pt` on Silver-plus **v6a B2**. The published teacher files are `v6a_nocross` (**2,150** train / **169** frozen dev). A 2,156-row train list is an earlier v6a count before the nocross dedupe; do not treat 2,156 as the released file.
 
 | Path | Role |
 |---|---|
 | `config.json`, `model.safetensors`, `tokenizer.json`, `tokenizer_config.json` | Encoder (identical SHA to `AlfredJames/jobbert-zh`) |
-| `crf/best.pt` | Default load path = **seed 42** (Gold150 exact 0.5544; closest to the 3-seed mean) |
-| `crf/seed42/best.pt` | Seed 42 — Gold150 exact **0.5544** / relaxed 0.6917 |
-| `crf/seed43/best.pt` | Seed 43 — Gold150 exact **0.5479** / relaxed 0.6794 |
-| `crf/seed44/best.pt` | Seed 44 — Gold150 exact **0.5587** / relaxed 0.6959 |
+| `crf/best.pt` | Default load path = **seed 42** (human-reference exact 0.5544; closest to the 3-seed mean) |
+| `crf/seed42/best.pt` | Seed 42 — human-reference exact **0.5544** / relaxed 0.6917 |
+| `crf/seed43/best.pt` | Seed 43 — human-reference exact **0.5479** / relaxed 0.6794 |
+| `crf/seed44/best.pt` | Seed 44 — human-reference exact **0.5587** / relaxed 0.6959 |
 
 Paper cell **0.5536±0.0054** / relaxed **0.6890±0.0085** is the mean ± sample SD of those three seeds. Loading only seed 42 is **not** the published mean.
 
@@ -68,8 +68,8 @@ Init CRF (not in this repo): V4 `AlfredJames/jobbert-zh` `crf/best.pt`, SHA-256 
 - CRF continued with AdamW \(2\times10^{-5}\), weight decay 0.01, batch 16, at most 6 epochs, patience 2, 10% warmup.
 - Checkpoint = argmax frozen-dev typed exact.
 - Labels: Silver-plus teacher **B2** (not B1). Isolation: sentence-level (extended).
-- Scorer: `cnss-lskt-1.2.0`. Gold150 SHA-256 `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`.
-- No jieba snap on this Gold150 cell (character CRF vs human overlay).
+- Scorer: `cnss-lskt-1.2.0`. Human-reference freeze SHA-256 `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0` (`data/gold150_test.jsonl`).
+- No jieba snap on this human-reference cell (character CRF vs human overlay).
 
 There is no `AutoModelForTokenClassification` export.
 
@@ -109,7 +109,7 @@ The paper class is `BertCRF` in `scripts/train_cn_roberta_crf.py`.
 
 - Replacing `AlfredJames/jobbert-zh` (0.4331 on V4 hybrid 2601)
 - Applicant screening or ESCO concept-ID prediction
-- Treating 0.5536 as a test CI, or as an independent re-test of the same systems on 2,601 IDs (Gold150 IDs sit inside hybrid 2601)
+- Treating 0.5536 as a test CI, or as an independent re-test of the same systems on 2,601 IDs (human-reference IDs sit inside hybrid 2601)
 - Peel-rerun heads (0.5509); those did not beat 0.5536 and are not this dump
 
 ---

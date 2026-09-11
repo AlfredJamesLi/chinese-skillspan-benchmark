@@ -12,8 +12,8 @@ Use a short, reproducible description. Include file paths relative to this repos
 
 ### Annotation issues
 
-- Disagreement with Handbook B (`B.sop_v4.2.1`): span boundary, type (L / K / S / T), empty-span cases.
-- State whether you used Gold v2, the V4 hybrid, or the 200-sentence human overlay. Do not mix protocols in one ticket.
+- Disagreement with Handbook B (`B.sop_v4.2.14`): span boundary, type (L / K / S / T), empty-span cases.
+- State whether you used Gold v2, the V4 hybrid, the 200-sentence human overlay, or the 150-sentence human reference set. Do not mix protocols in one ticket.
 - Quote only the **minimum** span needed to discuss the label. Prefer `id` + token offsets over pasting a full advertisement.
 
 ### Data-processing bugs

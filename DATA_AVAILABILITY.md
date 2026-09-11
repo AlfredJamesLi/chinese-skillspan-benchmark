@@ -6,7 +6,7 @@ This note separates **what this repository contains**, **what is already archive
 - **Previous snapshot (`v0.1.2`):** https://doi.org/10.5281/zenodo.22685143
 - **First archival snapshot (`v0.1.1`, PDF-cited, immutable):** https://doi.org/10.5281/zenodo.22288338
 - **Concept DOI (all versions):** https://doi.org/10.5281/zenodo.22288337
-- **GitHub:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark — tag `v0.1.3` matches this Zenodo **data** snapshot. Clone the **default branch** (`main`, commit `1f5e598` or later) for portable paper-main scoring; do not retag `v0.1.3`.
+- **GitHub:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark — tag `v0.1.3` matches this Zenodo **data** snapshot. Clone the **default branch** (`main`, commit `6da1366` or later) for portable paper-main scoring and the paper-name map; do not retag `v0.1.3`.
 
 ---
 

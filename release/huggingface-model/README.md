@@ -25,7 +25,7 @@ base_model: hfl/chinese-roberta-wwm-ext
 
 - Model: [https://huggingface.co/AlfredJames/jobbert-zh](https://huggingface.co/AlfredJames/jobbert-zh)
 - Code and data: [https://github.com/AlfredJamesLi/chinese-skillspan-benchmark](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark)
-- Archive (`v0.1.1`): [https://doi.org/10.5281/zenodo.22288338](https://doi.org/10.5281/zenodo.22288338)
+- Archive (`v0.1.3`): [https://doi.org/10.5281/zenodo.22698504](https://doi.org/10.5281/zenodo.22698504)
 
 This is **not** English [`jjzha/jobbert-base-cased`](https://huggingface.co/jjzha/jobbert-base-cased) and **not** TechWolf [`JobBERT-v3`](https://huggingface.co/TechWolf/JobBERT-v3).
 
@@ -180,7 +180,7 @@ The backbone `hfl/chinese-roberta-wwm-ext` is listed as **Apache-2.0** on Huggin
 
 ## Related checkpoint (do not replace this repo)
 
-Gold150 Silver-plus continuation (v6a B2, **0.5536±0.0054**, n=3 sample SD) is a **separate** Hub repository: [`AlfredJames/jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a). It keeps this encoder and continues the CRF. This repository remains the V4 hybrid 2601 row (**0.4331**). Do not swap the two numbers.
+A later human-reference continuation (v6a B2) is a **separate** Hub repository: [`AlfredJames/jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a). It keeps this encoder and continues the CRF. This repository remains the V4 hybrid 2601 paper-main encoder. Do not rank the two protocols in one table.
 
 ---
 
@@ -188,8 +188,9 @@ Gold150 Silver-plus continuation (v6a B2, **0.5536±0.0054**, n=3 sample SD) is 
 
 | Resource | URL |
 |---|---|
-| This model (V4, 0.4331) | https://huggingface.co/AlfredJames/jobbert-zh |
-| Gold150 v6a (0.5536±0.0054) | https://huggingface.co/AlfredJames/jobbert-zh-v6a |
+| This model (paper-main V4) | https://huggingface.co/AlfredJames/jobbert-zh |
+| Human-reference v6a continuation | https://huggingface.co/AlfredJames/jobbert-zh-v6a |
+| Contrast 1M DAPT | https://huggingface.co/AlfredJames/jobbert-zh-1m |
 | Code and data | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark |
-| Zenodo version DOI (`v0.1.1`) | https://doi.org/10.5281/zenodo.22288338 |
+| Zenodo version DOI (`v0.1.3`) | https://doi.org/10.5281/zenodo.22698504 |
 | Zenodo concept DOI | https://doi.org/10.5281/zenodo.22288337 |

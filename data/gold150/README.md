@@ -1,6 +1,6 @@
 # Human reference set (artifact Gold150)
 
-Manuscript name (PeerJ 0911 draft, after Related Work): **human reference set** — 150 frozen evaluation sentences (challenge cohort + calibration cohort).
+Manuscript name (PeerJ CS under review, after Related Work): **human reference set** — 150 frozen evaluation sentences (challenge cohort + calibration cohort).
 
 Repository identifier **Gold150** and filename `gold150_test.jsonl` are unchanged. Do not rename these files. Appendix D of the manuscript maps the two vocabularies.
 

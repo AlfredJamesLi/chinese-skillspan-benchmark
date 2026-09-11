@@ -20,11 +20,11 @@ Proposed PeerJ wording (use the minted version DOI):
 
 - [ ] Fresh environment: `python3 -m pip install -r requirements-repro.txt`.
 - [ ] `python3 scorer/test_regression.py` exits 0.
-- [ ] Training extra deps documented only from the parent `requirements.txt` pins.
+- [ ] Training extra deps documented only from `requirements-train.txt`.
 
 ## End-to-end reproduction test
 
-- [ ] `python3 scripts/eval_hybrid_cws_simhuman.py` reproduces `tables/hybrid_cws_simhuman980_all_models.csv` cells for Chinese JobBERT 3M (**0.433118** typed exact) and ChatGPT (**0.285361** / **0.624869**).
+- [ ] `python3 scripts/eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen` reproduces `tables/hybrid_cws_simhuman980_all_models.csv` cells for Chinese JobBERT 3M (**0.433118** typed exact) and ChatGPT (**0.285361** / **0.624869**).
 - [ ] Direct `score_lskt.py` on `data/frozen_preds/jobbert_3m_v4.jsonl` **without** jieba snap is documented as **not** the paper headline (workspace check: 0.2552).
 - [ ] Gold v2 appendix command still yields ChatGPT typed **0.6365** and is not written into the abstract.
 
@@ -106,8 +106,8 @@ Replace every `[TODO: … URL]` / DOI in:
 
 - [ ] Manuscript Data Availability paragraph (Overleaf; local prompt `overleaf_cursor_bundle/CODEX_PROMPT_PEERJ_DAS.md`)
 - [ ] PeerJ submission form
-- [x] `README.md` (Zenodo `v0.1.1` + GitHub + JobBERT-zh)
-- [x] `CITATION.cff` (Zenodo-safe; version `0.1.1`)
+- [x] `README.md` (Zenodo `v0.1.3` + GitHub + three JobBERT-zh Hub repos)
+- [x] `CITATION.cff` (version `0.1.3`; V4 hybrid frozen, not “undergoing adjudication”)
 - [x] `DATA_AVAILABILITY.md`
 - [x] `release/huggingface-model/README.md` (local template; Hub card must match)
 - [x] `release/huggingface-dataset/README.md` (template only; no Hub dataset repo)
