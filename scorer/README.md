@@ -22,6 +22,8 @@ python score_lskt.py \
 python test_regression.py
 ```
 
+`test_regression.py` uses the paper tree next to `scorer/` (or `$CNSS_PAPER_ROOT`). Parent-repo ChatGPT / JobBERT dumps are skipped when those files are absent.
+
 `--require-exact-id-set` only when the dump is supposed to contain Gold IDs and nothing else.
 
 ## Official alignment

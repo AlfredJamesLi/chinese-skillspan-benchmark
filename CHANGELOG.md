@@ -4,6 +4,11 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-11 P0)
+
+- Paper-main scoring entry points no longer hard-code a laboratory `/home/guojingli3/...` root (`scripts/cnss_paths.py`). `eval_hybrid_cws_simhuman.py` is **read-only** on V4 hybrid gold. `scripts/convert_gold150_to_bio.py` maps Gold150 `source_id` / Doccano types to scorer BIO without overwriting the freeze.
+- Does **not** retag `v0.1.3`. Does **not** change V4 hybrid JobBERT 3M **0.4331**.
+
 ## 0.1.3 — 2026-09-11 (Gold150 on the versioned Git tree)
 
 - GitHub tag **`v0.1.3`**: includes `data/gold150_test.jsonl` and Silver-plus B2 `v6a_nocross` train/dev, Handbook B v4.2.14, and the draft workflow figure.

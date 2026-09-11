@@ -88,13 +88,23 @@ python3 scorer/score_lskt.py \
 
 Predictions must use the same sentence `id`s as gold. Scoring `data/frozen_preds/jobbert_3m_v4.jsonl` **without** jieba snap yields typed exact F1 **0.2552** and is **not** the paper headline.
 
-Paper-main encoder and LLM rows (jieba-aligned):
+Paper-main encoder and LLM rows (jieba-aligned). The eval script is **read-only** on the hybrid gold (SHA-256 `2ad6342d…`); it does not rewrite that file:
 
 ```bash
-python3 scripts/eval_hybrid_cws_simhuman.py
+python3 scripts/eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen
 ```
 
-That script writes `tables/hybrid_cws_simhuman980_all_models.csv`. When `output/` is absent it falls back to `data/frozen_preds/` for the JobBERT-zh v4 rows. Several trainers still contain a laboratory root path; see [REPRODUCIBILITY.md](REPRODUCIBILITY.md) before retraining.
+When `output/` is absent, or with `--use-frozen`, JobBERT-zh v4 rows come from `data/frozen_preds/`. Gold150 freeze uses `source_id` and Doccano type names; convert before scoring:
+
+```bash
+python3 scripts/convert_gold150_to_bio.py
+python3 scorer/score_lskt.py \
+  --gold data/gold150_test.bio.jsonl \
+  --pred path/to/gold150_predictions.jsonl \
+  --align-mode official
+```
+
+Do not overwrite `data/gold150_test.jsonl`. CRF training defaults to Hub `AlfredJames/jobbert-zh`; see [REPRODUCIBILITY.md](REPRODUCIBILITY.md).
 
 Weights are not stored in Git. Encoder + V4 CRF (0.4331): https://huggingface.co/AlfredJames/jobbert-zh. Gold150 v6a B2 continuation (0.5536±0.0054): https://huggingface.co/AlfredJames/jobbert-zh-v6a.
 

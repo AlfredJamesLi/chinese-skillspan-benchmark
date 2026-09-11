@@ -1,29 +1,40 @@
 #!/usr/bin/env python3
 """Jieba-bilateral eval on SOP-CWS 2601 with 980 SimHuman overlay.
 
-Does not overwrite Gold v2, v4 silver, or original pred dumps.
-Repro: python scripts/eval_hybrid_cws_simhuman.py
+Default path is **read-only**: it loads the frozen hybrid gold and does not
+rewrite `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl`. Lab-only rebuild:
+`--rebuild-gold`.
+
+Repro (paper-main rows, frozen JobBERT dumps):
+  python scripts/eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen
 """
 from __future__ import annotations
 
+import argparse
 import csv
+import hashlib
 import json
 import sys
 from pathlib import Path
 
-PAPER = Path("/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper")
+from cnss_paths import paper_root  # noqa: E402
+
+PAPER = paper_root()
 sys.path.insert(0, str(PAPER / "scripts"))
 sys.path.insert(0, str(PAPER / "scorer"))
 import cws_snap as cws  # noqa: E402
 from score_lskt import rec_id, score  # noqa: E402
 
+HYBRID_SHA256 = "2ad6342d8b762cf1abb289295315e2521bec0c540f4320113409fceab0818d99"
 OUT = PAPER / "reports/sandbox_lskt_v4_silver/hybrid_cws_eval"
 PRED_CWS_DIR = OUT / "preds_cws"
 GOLD_HYBRID = PAPER / "data/test_lskt_v4_cws_simhuman980_hybrid.jsonl"
 GOLD_980 = PAPER / "data/test_lskt_v4_simhuman980_cws.jsonl"
 SOP_CWS = PAPER / "data/test_lskt_v4_cws_g2ids.jsonl"
 SIM = PAPER / "data/test_lskt_v4_simhuman980.jsonl"
-CSV_OUT = PAPER / "tables/hybrid_cws_simhuman980_all_models.csv"
+CSV_COMMITTED = PAPER / "tables/hybrid_cws_simhuman980_all_models.csv"
+
+PAPER_MAIN_MODELS = ("ChatGPT", "JobBERT_3M_v4")
 
 MODELS = [
     ("ChatGPT", PAPER / "reports/views/ChatGPT_unique_first_v2.jsonl", "llm"),
@@ -81,7 +92,39 @@ def empty_pred(gold: dict) -> dict:
     }
 
 
-def build_golds() -> tuple[list[dict], list[dict], dict]:
+def sha256_file(path: Path) -> str:
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def load_frozen_golds() -> tuple[list[dict], list[dict] | None, dict]:
+    if not GOLD_HYBRID.is_file():
+        raise SystemExit(f"missing frozen hybrid gold: {GOLD_HYBRID}")
+    digest = sha256_file(GOLD_HYBRID)
+    if digest != HYBRID_SHA256:
+        raise SystemExit(
+            f"hybrid gold SHA-256 is {digest}, expected {HYBRID_SHA256}. "
+            "Refusing to score against a rewritten file."
+        )
+    hybrid = cws.load_jsonl(GOLD_HYBRID)
+    sim_cws = cws.load_jsonl(GOLD_980) if GOLD_980.is_file() else None
+    n_overlay = sum(1 for r in hybrid if r.get("hybrid_source") == "simhuman980_cws")
+    meta = {
+        "n_hybrid": len(hybrid),
+        "n_simhuman_overlay": n_overlay,
+        "n_sop_rest": len(hybrid) - n_overlay,
+        "loaded_existing": True,
+        "gold_980_present": sim_cws is not None,
+        "hybrid_sha256": digest,
+    }
+    return hybrid, sim_cws, meta
+
+
+def build_golds_lab_only() -> tuple[list[dict], list[dict], dict]:
+    """Rebuild hybrid from SOP-CWS + SimHuman. Lab-only; changes SHA-256."""
     sop = {rec_id(r): r for r in cws.load_jsonl(SOP_CWS)}
     sim_raw = cws.load_jsonl(SIM)
     sim_cws = [cws.rewrite_record(r, tag_field="list_of_selection_bio4") for r in sim_raw]
@@ -104,6 +147,8 @@ def build_golds() -> tuple[list[dict], list[dict], dict]:
         "n_simhuman_overlay": n_overlay,
         "n_sop_rest": len(hybrid) - n_overlay,
         "simhuman_ids_not_in_sop_cws": missing,
+        "loaded_existing": False,
+        "wrote_gold": True,
     }
     cws.write_jsonl(GOLD_980, sim_cws)
     cws.write_jsonl(GOLD_HYBRID, hybrid)
@@ -164,16 +209,96 @@ def mean_std(xs: list[float]) -> tuple[float, float]:
     return m, var ** 0.5
 
 
+def write_csv(path: Path, rows: list[dict]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(
+            [
+                "model",
+                "kind",
+                "n_filled_empty",
+                "full2601_typed_exact_p",
+                "full2601_typed_exact_r",
+                "full2601_typed_exact_f1",
+                "full2601_typed_relaxed_f1",
+                "full2601_collapsed_exact_f1",
+                "simhuman980_typed_exact_f1",
+                "simhuman980_typed_relaxed_f1",
+                "alignment_ok_2601",
+            ]
+        )
+        for r in rows:
+            if "full2601" not in r:
+                w.writerow([r.get("model"), r.get("kind"), "", "", "", "", "", "", "", "", ""])
+                continue
+            a, b = r["full2601"], r.get("simhuman980") or {}
+            w.writerow(
+                [
+                    r["model"],
+                    r["kind"],
+                    r["n_filled_empty"],
+                    f"{a['typed_exact_p']:.6f}",
+                    f"{a['typed_exact_r']:.6f}",
+                    f"{a['typed_exact_f1']:.6f}",
+                    f"{a['typed_relaxed_f1']:.6f}",
+                    f"{a['collapsed_exact_f1']:.6f}",
+                    f"{b.get('typed_exact_f1', 0):.6f}" if b else "",
+                    f"{b.get('typed_relaxed_f1', 0):.6f}" if b else "",
+                    int(a["alignment_ok"]),
+                ]
+            )
+
+
 def main() -> int:
-    OUT.mkdir(parents=True, exist_ok=True)
-    PRED_CWS_DIR.mkdir(parents=True, exist_ok=True)
-    hybrid, sim_cws, gmeta = build_golds()
+    ap = argparse.ArgumentParser(description="Score models against frozen V4 hybrid gold (read-only by default).")
+    ap.add_argument(
+        "--rebuild-gold",
+        action="store_true",
+        help="Lab only: rebuild hybrid gold from SOP-CWS + SimHuman (changes SHA-256).",
+    )
+    ap.add_argument(
+        "--paper-main-only",
+        action="store_true",
+        help="Score only ChatGPT + JobBERT_3M_v4 (headline rows).",
+    )
+    ap.add_argument(
+        "--use-frozen",
+        action="store_true",
+        help="Prefer data/frozen_preds/ even when output/ CRF dumps exist.",
+    )
+    ap.add_argument(
+        "--write-committed-csv",
+        action="store_true",
+        help="Overwrite tables/hybrid_cws_simhuman980_all_models.csv (lab).",
+    )
+    ap.add_argument("--out-dir", default=str(OUT), help="Snapped preds and eval.json (not gold).")
+    args = ap.parse_args()
+
+    out_dir = Path(args.out_dir)
+    pred_dir = out_dir / "preds_cws"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    pred_dir.mkdir(parents=True, exist_ok=True)
+    global PRED_CWS_DIR
+    PRED_CWS_DIR = pred_dir
+
+    if args.rebuild_gold:
+        hybrid, sim_cws, gmeta = build_golds_lab_only()
+        print("WARNING: rebuilt hybrid gold; SHA-256 no longer matches the paper freeze", flush=True)
+    else:
+        hybrid, sim_cws, gmeta = load_frozen_golds()
     gold_map = {rec_id(r): r for r in hybrid}
     print(json.dumps(gmeta, ensure_ascii=False))
 
+    models = MODELS
+    if args.paper_main_only:
+        models = [m for m in MODELS if m[0] in PAPER_MAIN_MODELS]
+
     rows = []
-    for name, path, kind in MODELS:
-        if not path.is_file() and name in FROZEN_FALLBACK:
+    for name, path, kind in models:
+        if args.use_frozen and name in FROZEN_FALLBACK:
+            path, kind = FROZEN_FALLBACK[name]
+        elif not path.is_file() and name in FROZEN_FALLBACK:
             path, kind = FROZEN_FALLBACK[name]
         if not path.is_file():
             rows.append({"model": name, "kind": kind, "missing_file": str(path)})
@@ -182,7 +307,7 @@ def main() -> int:
         already = kind == "encoder_v4_cws_ready"
         pred_cws, n_fill, n_raw = snap_and_fill(name, path, already, gold_map)
         s2601 = slim(GOLD_HYBRID, pred_cws)
-        s980 = slim(GOLD_980, pred_cws)
+        s980 = slim(GOLD_980, pred_cws) if sim_cws is not None and GOLD_980.is_file() else None
         rec = {
             "model": name,
             "kind": kind,
@@ -194,10 +319,10 @@ def main() -> int:
             "simhuman980": s980,
         }
         rows.append(rec)
+        rel980 = f" | 980 exact={s980['typed_exact_f1']:.4f} rel={s980['typed_relaxed_f1']:.4f}" if s980 else ""
         print(
-            f"{name:28s} 2601 exact={s2601['typed_exact_f1']:.4f} rel={s2601['typed_relaxed_f1']:.4f}"
-            f" | 980 exact={s980['typed_exact_f1']:.4f} rel={s980['typed_relaxed_f1']:.4f}"
-            f" fill={n_fill} ok={s2601['alignment_ok']}"
+            f"{name:28s} 2601 exact={s2601['typed_exact_f1']:.6f} rel={s2601['typed_relaxed_f1']:.6f}"
+            f"{rel980} fill={n_fill} ok={s2601['alignment_ok']}"
         )
 
     def group_mean(prefix: str, keys: list[str], metric: str = "typed_exact_f1") -> dict:
@@ -230,56 +355,28 @@ def main() -> int:
     report = {
         "protocol": "jieba_bilateral",
         "test_gold_full": str(GOLD_HYBRID),
-        "test_gold_980": str(GOLD_980),
+        "test_gold_980": str(GOLD_980) if sim_cws is not None else None,
         "gold_note": "2601 IDs = 980 SimHuman rule_v4 jieba-snapped + remaining SOP-CWS. Not Gold v2. Not human-final.",
         "gold_v2_untouched": True,
+        "hybrid_read_only": not args.rebuild_gold,
+        "hybrid_sha256": sha256_file(GOLD_HYBRID),
         "scorer": "cnss-lskt-1.2.0",
         "n_boot": 0,
         "gold_meta": gmeta,
         "summaries": summaries,
         "rows": rows,
     }
-    (OUT / "eval.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-
-    with CSV_OUT.open("w", encoding="utf-8", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(
-            [
-                "model",
-                "kind",
-                "n_filled_empty",
-                "full2601_typed_exact_p",
-                "full2601_typed_exact_r",
-                "full2601_typed_exact_f1",
-                "full2601_typed_relaxed_f1",
-                "full2601_collapsed_exact_f1",
-                "simhuman980_typed_exact_f1",
-                "simhuman980_typed_relaxed_f1",
-                "alignment_ok_2601",
-            ]
-        )
-        for r in rows:
-            if "full2601" not in r:
-                w.writerow([r.get("model"), r.get("kind"), "", "", "", "", "", "", "", "", ""])
-                continue
-            a, b = r["full2601"], r["simhuman980"]
-            w.writerow(
-                [
-                    r["model"],
-                    r["kind"],
-                    r["n_filled_empty"],
-                    f"{a['typed_exact_p']:.6f}",
-                    f"{a['typed_exact_r']:.6f}",
-                    f"{a['typed_exact_f1']:.6f}",
-                    f"{a['typed_relaxed_f1']:.6f}",
-                    f"{a['collapsed_exact_f1']:.6f}",
-                    f"{b['typed_exact_f1']:.6f}",
-                    f"{b['typed_relaxed_f1']:.6f}",
-                    int(a["alignment_ok"]),
-                ]
-            )
-    print("wrote", CSV_OUT)
+    (out_dir / "eval.json").write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    csv_out = out_dir / "paper_main.csv"
+    write_csv(csv_out, rows)
+    print("wrote", csv_out)
+    if args.write_committed_csv:
+        write_csv(CSV_COMMITTED, rows)
+        print("wrote committed", CSV_COMMITTED)
     print("summaries", json.dumps(summaries, indent=2))
+    after = sha256_file(GOLD_HYBRID)
+    if after != HYBRID_SHA256 and not args.rebuild_gold:
+        raise SystemExit(f"hybrid gold SHA-256 changed during eval: {after}")
     return 0
 
 

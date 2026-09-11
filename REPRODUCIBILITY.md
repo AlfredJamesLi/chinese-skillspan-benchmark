@@ -17,7 +17,7 @@ Companion files: [README.md](README.md), [DATA_AVAILABILITY.md](DATA_AVAILABILIT
 | OS / Python patch / CUDA / GPU model | Not recorded in the frozen notes | — |
 | Approximate wall-clock | Not verified for MLM / CRF / eval | — |
 
-Scripts under `scripts/` and several evaluators still contain a laboratory absolute root. A clean public clone will not execute those trainers until that root is parameterised.
+Paper-main scoring entry points resolve the tree from `Path(__file__)` or `$CNSS_PAPER_ROOT` (`scripts/cnss_paths.py`). Other scripts under `scripts/` may still contain a laboratory absolute root.
 
 ---
 
@@ -69,7 +69,7 @@ SHA-256 values below were computed from the files in this workspace.
 
 Last minted archive: GitHub / Zenodo **`v0.1.3`** (DOI `10.5281/zenodo.22698504`; includes Gold150). Earlier snapshots: **`v0.1.2`** (`10.5281/zenodo.22685143`) and **`v0.1.1`** (`10.5281/zenodo.22288338`). Gold150, Silver-plus B2, and Handbook B v4.2.14 are **not** in the `v0.1.1` or `v0.1.2` tarballs.
 
-`scripts/eval_hybrid_cws_simhuman.py` can **rewrite** the hybrid gold from SOP-CWS + SimHuman sources. After any such run, re-check the SHA-256 above before treating the file as the frozen paper gold.
+`scripts/eval_hybrid_cws_simhuman.py` **loads** the frozen hybrid gold and does not rewrite it. Lab-only `--rebuild-gold` would change the SHA-256; do not use that flag for paper-main scoring. Gold150 freeze (`data/gold150_test.jsonl`) is converted with `scripts/convert_gold150_to_bio.py` to a derived BIO file; the freeze bytes must stay `ca8db0bc…`.
 
 ---
 

@@ -2,7 +2,9 @@
 """Scorer unit tests + canonical Gold checks. Does not overwrite dumps."""
 from __future__ import annotations
 
+import hashlib
 import json
+import os
 import sys
 import tempfile
 from pathlib import Path
@@ -18,9 +20,14 @@ from score_lskt import (  # noqa: E402
     tags_to_spans,
 )
 
-ROOT = Path("/home/guojingli3/SCESC-LLM-skill-extraction")
-PAPER = ROOT / "Chinese_skill_benchmark_Paper"
+PAPER = Path(os.environ["CNSS_PAPER_ROOT"]).resolve() if os.environ.get("CNSS_PAPER_ROOT") else Path(__file__).resolve().parents[1]
+ROOT = PAPER.parent
 CANON = PAPER / "data/gold_canonical_v2.jsonl"
+HYBRID = PAPER / "data/test_lskt_v4_cws_simhuman980_hybrid.jsonl"
+HYBRID_SHA256 = "2ad6342d8b762cf1abb289295315e2521bec0c540f4320113409fceab0818d99"
+GOLD150 = PAPER / "data/gold150_test.jsonl"
+GOLD150_SHA256 = "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0"
+# Parent-repo dumps: skip when absent (clean clone / GitHub tarball).
 RAW = ROOT / "chinese_skillspan_preprocessing/data/doccano_to_baseline_file/admin_Baseline_test.jsonl"
 CHATGPT = ROOT / "chinese_skillspan_preprocessing/output/dir/test-gpt/silver_gpt4o_sent_ner_test_1005_last_test.jsonl"
 JOBBERT = ROOT / "Baseline_Models_Collection/out_jobbert_skill_chinese_encoder_aligned.jsonl"
@@ -97,9 +104,29 @@ def test_canonical_gold_ids_unique() -> None:
     rows = load_records(str(CANON))
     ids = [rec_id(r) for r in rows]
     assert len(ids) == len(set(ids)) == 2601
+    if not RAW.is_file():
+        print("SKIP raw Doccano dump (not in public clone)")
+        return
     raw = load_records(str(RAW))
     assert len(raw) == 2676
     assert len({rec_id(r) for r in raw}) == 2601
+
+
+def test_hybrid_gold_sha256_and_ids() -> None:
+    digest = hashlib.sha256(HYBRID.read_bytes()).hexdigest()
+    assert digest == HYBRID_SHA256, digest
+    rows = load_records(str(HYBRID))
+    ids = [rec_id(r) for r in rows]
+    assert len(ids) == len(set(ids)) == 2601
+
+
+def test_gold150_freeze_untouched() -> None:
+    digest = hashlib.sha256(GOLD150.read_bytes()).hexdigest()
+    assert digest == GOLD150_SHA256, digest
+    rows = load_records(str(GOLD150))
+    assert len(rows) == 150
+    assert all(r.get("source_id") for r in rows)
+    # Freeze uses source_id, not scorer `id`. Converter must not overwrite this file.
 
 
 def test_all_o_bio4_falls_through_to_untyped() -> None:
@@ -129,6 +156,9 @@ def test_bio_legal_drops_i_after_o() -> None:
 
 def test_chatgpt_not_labeled_as_paper_reproduction() -> None:
     """Report exact delta vs 0.6700; do not treat 0.665 as a match."""
+    if not CHATGPT.is_file():
+        print("SKIP ChatGPT parent dump (not in public clone)")
+        return
     r = score(str(CANON), str(CHATGPT), align_mode="official", n_boot=0)
     assert not r["alignment_ok"], "ChatGPT dump still has duplicate Gold IDs"
     f1 = r["typed_exact"]["f1"]
@@ -141,6 +171,9 @@ def test_chatgpt_not_labeled_as_paper_reproduction() -> None:
 
 
 def test_jobbert_micro_is_not_0_46() -> None:
+    if not JOBBERT.is_file():
+        print("SKIP JobBERT-skill parent dump (not in public clone)")
+        return
     r = score(str(CANON), str(JOBBERT), align_mode="official", pred_fields=("pred_tags",), n_boot=0)
     f1 = r["collapsed_exact"]["f1"]
     print(f"JobBERT-skill canonical collapsed_exact={f1:.6f} official_ok={r['alignment_ok']}")
@@ -153,6 +186,8 @@ def main() -> int:
         test_micro_does_not_collapse_cross_sentence_offsets,
         test_official_missing_and_dup_fail_extras_ok,
         test_canonical_gold_ids_unique,
+        test_hybrid_gold_sha256_and_ids,
+        test_gold150_freeze_untouched,
         test_bio_legal_drops_i_after_o,
         test_all_o_bio4_falls_through_to_untyped,
         test_chatgpt_not_labeled_as_paper_reproduction,

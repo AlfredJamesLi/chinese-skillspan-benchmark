@@ -16,7 +16,9 @@ from pathlib import Path
 
 import jieba
 
-PAPER = Path("/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper")
+from cnss_paths import paper_root  # noqa: E402
+
+PAPER = paper_root()
 sys.path.insert(0, str(PAPER / "scripts"))
 import rewrite_train_goldstyle_v3 as g  # noqa: E402
 
@@ -392,7 +394,9 @@ def main() -> int:
         PAPER / "data/train_lskt_v4_silver.jsonl",
         PAPER / "data/dev_lskt_v4_silver.jsonl",
         PAPER / "data/test_lskt_v4_rule_g2ids.jsonl",
-        Path("/home/guojingli3/SCESC-LLM-skill-extraction/data/annotated/processed/chinese_skillspan/train.json"),
+        PAPER / "data/test_lskt_v4_cws_simhuman980_hybrid.jsonl",
+        PAPER / "data/gold150_test.jsonl",
+        PAPER / "data/corpus_splits/train.json",
     }
     if dst.resolve() in {p.resolve() for p in forbidden}:
         print("refusing to overwrite", dst)

@@ -20,10 +20,10 @@ from torch.utils.data import DataLoader, Dataset
 from torchcrf import CRF
 from transformers import AutoModel, AutoTokenizer, get_linear_schedule_with_warmup
 
-ROOT = Path("/home/guojingli3/SCESC-LLM-skill-extraction")
-PAPER = ROOT / "Chinese_skill_benchmark_Paper"
+from cnss_paths import paper_root  # noqa: E402
+
+PAPER = paper_root()
 sys.path.insert(0, str(PAPER / "scorer"))
-sys.path.insert(0, str(ROOT / "Baseline_Models_Collection/pytorch-crf"))
 from score_lskt import GOLD_FIELDS, extract_spans, match_exact, score  # noqa: E402
 
 JOINT_LABELS = ["O", "B-L", "I-L", "B-K", "I-K", "B-S", "I-S", "B-T", "I-T"]
@@ -124,9 +124,9 @@ class SentDS(Dataset):
 
 
 class BertCRF(nn.Module):
-    def __init__(self, model_dir: str, n_labels: int, dropout: float = 0.1):
+    def __init__(self, model_dir: str, n_labels: int, dropout: float = 0.1, local_files_only: bool = False):
         super().__init__()
-        self.encoder = AutoModel.from_pretrained(model_dir, local_files_only=True)
+        self.encoder = AutoModel.from_pretrained(model_dir, local_files_only=local_files_only)
         h = self.encoder.config.hidden_size
         self.dropout = nn.Dropout(dropout)
         self.emissions = nn.Linear(h, n_labels)
@@ -237,8 +237,10 @@ def train_one(args) -> dict:
         raise ValueError(f"keep_type must be one of {KEEP_TYPES} or empty, got {args.keep_type!r}")
     _, label2id, id2label = label_maps(keep_type)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    tok = AutoTokenizer.from_pretrained(args.model_dir, local_files_only=True)
-    model = BertCRF(args.model_dir, n_labels=len(label2id)).to(device)
+    tok = AutoTokenizer.from_pretrained(args.model_dir, local_files_only=args.local_files_only)
+    model = BertCRF(
+        args.model_dir, n_labels=len(label2id), local_files_only=args.local_files_only
+    ).to(device)
     train_rows = load_split(Path(args.train))
     dev_rows = load_split(Path(args.dev))
     test_rows = load_split(Path(args.test))
@@ -355,10 +357,10 @@ def train_one(args) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--model_dir", default=str(ROOT / "Baseline_Models_Collection/chinese-roberta-wwm-ext"))
-    ap.add_argument("--train", default=str(ROOT / "data/annotated/processed/chinese_skillspan/train.json"))
-    ap.add_argument("--dev", default=str(ROOT / "data/annotated/processed/chinese_skillspan/dev.json"))
-    ap.add_argument("--test", default=str(ROOT / "data/annotated/processed/chinese_skillspan/test.json"))
+    ap.add_argument("--model_dir", default="AlfredJames/jobbert-zh")
+    ap.add_argument("--train", default=str(PAPER / "data/train_lskt_v4_silver.jsonl"))
+    ap.add_argument("--dev", default=str(PAPER / "data/dev_lskt_v4_silver.jsonl"))
+    ap.add_argument("--test", default=str(PAPER / "data/corpus_splits/test.json"))
     ap.add_argument("--gold", default=str(PAPER / "data/gold_canonical_v2.jsonl"))
     ap.add_argument("--out_dir", required=True)
     ap.add_argument("--seed", type=int, default=42)
@@ -368,6 +370,11 @@ def main() -> int:
     ap.add_argument("--max_len", type=int, default=256)
     ap.add_argument("--lr", type=float, default=2e-5)
     ap.add_argument("--resume", action="store_true")
+    ap.add_argument(
+        "--local_files_only",
+        action="store_true",
+        help="Do not download from the Hub (laboratory cache / offline).",
+    )
     ap.add_argument(
         "--keep_type",
         default="",
