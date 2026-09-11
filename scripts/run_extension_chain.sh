@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-# One chain, at most two GPUs. Respect CUDA_VISIBLE_DEVICES. Do not kill other jobs.
+# Laboratory JSON-offset Gold150 chain (Table C 0.1215±0.0092).
+# Not a public entry point. Not shared-prompt 0.5403. Not V4 hybrid 0.4331.
+# Hard-coded IEEE Access / server-B roots stay laboratory-only.
 set -euo pipefail
 WORK=/home/guojingli3/Chinese-Skillspan-Benchmark
 PAPER="$WORK/Chinese_skill_benchmark_Paper"
@@ -41,6 +43,7 @@ run_qwen_seed() {
   fi
   log_event "qwen_train_start" "seed=${seed} gpu=${gpu}"
   CUDA_VISIBLE_DEVICES="$gpu" "$PYTHON" "$PAPER/scripts/train_qwen_ext_sft.py" \
+    --protocol json_offset \
     --model_dir "$QWEN" \
     --train "$DATA/train_b2.jsonl" \
     --dev "$DATA/dev_b2.jsonl" \
@@ -61,12 +64,14 @@ eval_qwen_seed() {
   fi
   log_event "qwen_gold_start" "seed=${seed}"
   CUDA_VISIBLE_DEVICES="$gpu" "$PYTHON" "$PAPER/scripts/infer_qwen_ext_sft.py" \
+    --protocol json_offset \
     --model_dir "$QWEN" \
     --adapter_dir "$out/adapter" \
     --queries "$DATA/gold150_eval.jsonl" \
     --out_dir "$gout" \
     > "$gout/infer.log" 2>&1
   CUDA_VISIBLE_DEVICES="$gpu" "$PYTHON" "$PAPER/scripts/eval_gold150_ext.py" \
+    --protocol json_offset \
     --gold_eval "$DATA/gold150_eval.jsonl" \
     --pred "$gout/pred.jsonl" \
     --out "$gout/score.json"

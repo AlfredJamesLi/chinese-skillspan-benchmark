@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Official this-round Qwen Gold inference: SFT only, no retrieval / random demos."""
+"""Official this-round Qwen Gold inference: JSON-offset SFT only (0.1215±0.0092).
+
+Not shared-prompt 0.5403. Not V4 hybrid 0.4331. Adapters are not published.
+Requires `--protocol json_offset`. No IEEE Access default weights.
+"""
 from __future__ import annotations
 
 import argparse
@@ -14,10 +18,11 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 import sys
 
-ROOT = Path("/home/guojingli3/Chinese-Skillspan-Benchmark")
-PAPER = ROOT / "Chinese_skill_benchmark_Paper"
+from cnss_paths import paper_root
+
+PAPER = paper_root()
 sys.path.insert(0, str(PAPER / "scripts"))
-from qwen_ext_protocol import MAX_NEW_TOKENS, build_user_prompt, parse_model_output, pred_row  # noqa: E402
+from qwen_ext_protocol import MAX_NEW_TOKENS, PROTOCOL_ID, build_user_prompt, parse_model_output, pred_row  # noqa: E402
 
 
 def load_jsonl(p: Path) -> list[dict]:
@@ -59,17 +64,24 @@ def generate_one(model, tok, sentence, max_new_tokens):
     return parsed, cost
 
 
-def run_sft_infer(model_dir: str, adapter_dir: str, queries_path: str, out_dir: str, max_new_tokens: int = MAX_NEW_TOKENS) -> Path:
+def run_sft_infer(
+    model_dir: str,
+    adapter_dir: str,
+    queries_path: str,
+    out_dir: str,
+    max_new_tokens: int = MAX_NEW_TOKENS,
+    local_files_only: bool = True,
+) -> Path:
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     t0 = time.time()
     if torch.cuda.is_available():
         torch.cuda.reset_peak_memory_stats()
     queries = load_jsonl(Path(queries_path))
-    tok = AutoTokenizer.from_pretrained(model_dir, local_files_only=True, trust_remote_code=True)
+    tok = AutoTokenizer.from_pretrained(model_dir, local_files_only=local_files_only, trust_remote_code=True)
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
-    model = AutoModelForCausalLM.from_pretrained(model_dir, local_files_only=True, torch_dtype=torch.bfloat16)
+    model = AutoModelForCausalLM.from_pretrained(model_dir, local_files_only=local_files_only, torch_dtype=torch.bfloat16)
     model = PeftModel.from_pretrained(model, adapter_dir)
     model.cuda()
     model.eval()
@@ -110,6 +122,10 @@ def run_sft_infer(model_dir: str, adapter_dir: str, queries_path: str, out_dir: 
                 "do_sample": False,
                 "demos": False,
                 "official_condition": "SFT",
+                "protocol": "json_offset",
+                "protocol_id": PROTOCOL_ID,
+                "not_shared_prompt_0.5403": True,
+                "not_comparable_to_0.4331": True,
                 "knn_random_not_run": True,
             },
             indent=2,
@@ -128,8 +144,22 @@ def main() -> int:
     ap.add_argument("--queries", required=True)
     ap.add_argument("--out_dir", required=True)
     ap.add_argument("--max_new_tokens", type=int, default=MAX_NEW_TOKENS)
+    ap.add_argument(
+        "--protocol",
+        required=True,
+        choices=["json_offset"],
+        help="Must be json_offset. This inferencer is not shared-prompt 0.5403.",
+    )
+    ap.add_argument("--local_files_only", action="store_true", default=True)
     args = ap.parse_args()
-    run_sft_infer(args.model_dir, args.adapter_dir, args.queries, args.out_dir, args.max_new_tokens)
+    run_sft_infer(
+        args.model_dir,
+        args.adapter_dir,
+        args.queries,
+        args.out_dir,
+        args.max_new_tokens,
+        local_files_only=args.local_files_only,
+    )
     return 0
 
 

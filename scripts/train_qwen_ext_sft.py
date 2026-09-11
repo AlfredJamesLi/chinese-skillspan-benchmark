@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Qwen LoRA SFT without demos. Save each epoch. Select on frozen-dev condition A only."""
+"""Qwen LoRA SFT, JSON-offset protocol only (Gold150 Table C 0.1215±0.0092).
+
+Laboratory trainer: adapters are not a public release. Requires `--protocol
+json_offset`. This is not shared-handbook SFT (0.5403±0.0354) and not V4
+hybrid JobBERT 3M 0.4331. No IEEE Access default weights.
+"""
 from __future__ import annotations
 
 import argparse
@@ -14,10 +19,18 @@ from peft import LoraConfig, get_peft_model
 from torch.utils.data import Dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer, Trainer, TrainerCallback, TrainingArguments
 
-ROOT = Path("/home/guojingli3/Chinese-Skillspan-Benchmark")
-PAPER = ROOT / "Chinese_skill_benchmark_Paper"
+from cnss_paths import paper_root
+
+PAPER = paper_root()
 sys.path.insert(0, str(PAPER / "scripts"))
-from qwen_ext_protocol import MAX_NEW_TOKENS, build_user_prompt, format_target, parse_model_output, pred_row  # noqa: E402
+from qwen_ext_protocol import (  # noqa: E402
+    MAX_NEW_TOKENS,
+    PROTOCOL_ID,
+    build_user_prompt,
+    format_target,
+    parse_model_output,
+    pred_row,
+)
 
 
 def load_jsonl(p: Path) -> list[dict]:
@@ -116,18 +129,27 @@ def main() -> int:
     ap.add_argument("--batch_size", type=int, default=1)
     ap.add_argument("--grad_accum", type=int, default=16)
     ap.add_argument("--max_new_tokens", type=int, default=MAX_NEW_TOKENS)
+    ap.add_argument(
+        "--protocol",
+        required=True,
+        choices=["json_offset"],
+        help="Must be json_offset. This trainer is not shared-prompt 0.5403.",
+    )
+    ap.add_argument("--local_files_only", action="store_true", default=True)
     args = ap.parse_args()
     out = Path(args.out_dir)
     out.mkdir(parents=True, exist_ok=True)
     t0 = time.time()
-    tok = AutoTokenizer.from_pretrained(args.model_dir, local_files_only=True, trust_remote_code=True)
+    tok = AutoTokenizer.from_pretrained(
+        args.model_dir, local_files_only=args.local_files_only, trust_remote_code=True
+    )
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
     tok.padding_side = "right"
     train_rows = load_jsonl(Path(args.train))
     dev_rows = load_jsonl(Path(args.dev))
     model = AutoModelForCausalLM.from_pretrained(
-        args.model_dir, local_files_only=True, torch_dtype=torch.bfloat16
+        args.model_dir, local_files_only=args.local_files_only, torch_dtype=torch.bfloat16
     )
     model.cuda()
     lora = LoraConfig(
@@ -204,6 +226,10 @@ def main() -> int:
                 "tie_rule": "earlier_epoch_if_delta_le_1e-4",
                 "gold150_not_used": True,
                 "sft_contains_demos": False,
+                "protocol": args.protocol,
+                "protocol_id": PROTOCOL_ID,
+                "not_shared_prompt_0.5403": True,
+                "not_comparable_to_0.4331": True,
                 "history": history,
             },
             ensure_ascii=False,

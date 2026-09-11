@@ -24,7 +24,7 @@ Use a short, reproducible description. Include file paths relative to this repos
 ### Code bugs
 
 - Scorer alignment, CRF trainer, evaluation scripts.
-- Paper-main scoring and CRF train entry points are clone-relative (`scripts/cnss_paths.py`). Other files under `scripts/` may still contain a laboratory absolute root.
+- Paper-main scoring, CRF train, and Gold150 eval entry points are clone-relative (`scripts/cnss_paths.py`). Other files under `scripts/` may still contain a laboratory absolute root. Gold150 JSON-offset Qwen is not the shared-handbook SFT protocol.
 
 ### Reproducibility failures
 

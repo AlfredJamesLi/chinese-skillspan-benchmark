@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Shared Qwen extension protocol: JSON-offset LSKT, not a full SpanAnchor reproduction."""
+"""Gold150 Qwen JSON-offset protocol (Table C 0.1215±0.0092).
+
+This is **not** the shared-handbook SFT protocol (job 50981, 0.5403±0.0354)
+and **not** V4 hybrid JobBERT 3M 0.4331. Do not reuse this parser or prompt
+as a default for those other rows.
+"""
 from __future__ import annotations
 
 import hashlib
@@ -17,6 +22,11 @@ SYS = (
     "同一短语多次出现时必须给出该次出现的确定偏移。没有跨度则输出 []。"
 )
 PROTOCOL_ID = "qwen_lskt_spananchor_inspired_json_offset_v1"
+# Implemented only here. Shared-handbook Gold150 SFT is a different entry point.
+NOT_THIS_PROTOCOL = {
+    "shared_prompt": "gold150_shared_handbook_sft_job50981",
+    "v4_hybrid": "jobbert_3m_v4_typed_exact_0.4331",
+}
 K_DEMOS = 3
 MAX_NEW_TOKENS = 256
 

@@ -87,6 +87,9 @@ reports/sandbox_lskt_v4_silver/gpt4o_sop_extract_pilot100/smoke_gpt53_codex_xhig
 **/*.dta
 **/*.bundle
 
+# derived Gold150 BIO (converter output; freeze stays data/gold150_test.jsonl)
+data/gold150_test.bio.jsonl
+
 # --- huge regenerable eval copies (keep summaries + jieba jsonl instead) ---
 reports/sandbox_lskt_v4_silver/hybrid_cws_eval/preds_cws/
 reports/sandbox_lskt_v4_silver/sop_extract_p2_2601/**/raw_*/

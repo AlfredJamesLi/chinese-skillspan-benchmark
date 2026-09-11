@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
-"""Synthetic + frozen-dev parser diagnostics. No Gold150. No model weights."""
+"""Synthetic + frozen-dev parser diagnostics. JSON-offset only. No Gold150. No weights."""
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from pathlib import Path
 
-ROOT = Path("/home/guojingli3/Chinese-Skillspan-Benchmark")
-PAPER = ROOT / "Chinese_skill_benchmark_Paper"
-sys.path.insert(0, str(PAPER / "scripts"))
-from qwen_ext_protocol import build_user_prompt, format_target, parse_model_output, to_bio  # noqa: E402
+from cnss_paths import paper_root
 
-EXT = PAPER / "output/silver_plus_extensions"
-DEV = EXT / "data/v6a_nocross_20260908/dev_b2.jsonl"
+PAPER = paper_root()
+sys.path.insert(0, str(PAPER / "scripts"))
+from qwen_ext_protocol import PROTOCOL_ID, build_user_prompt, format_target, parse_model_output, to_bio  # noqa: E402
+
+DEV_DEFAULT = PAPER / "data/silver_plus_v6a_nocross/dev_b2.jsonl"
 
 
 def load(p: Path) -> list[dict]:
@@ -33,6 +34,11 @@ def check(name: str, raw: str, sent: str, expect_spans=None, expect_status=None)
 
 
 def main() -> int:
+    ap = argparse.ArgumentParser(description="JSON-offset parser tests. No Gold150. No model weights.")
+    ap.add_argument("--dev", default=str(DEV_DEFAULT))
+    ap.add_argument("--out", default=str(PAPER / "output/p2_qwen_parser_test.json"))
+    args = ap.parse_args()
+    DEV = Path(args.dev)
     cases = []
     # leading space in generation
     cases.append(check("leading_space", '  [{"start":0,"end":2,"type":"S"}]', "沟通能力", [[0, 2, "S"]], "ok"))
@@ -121,9 +127,13 @@ def main() -> int:
         "n_fail": sum(1 for c in cases if not c["ok"]),
         "cases": cases,
         "gold150_not_used": True,
+        "protocol": "json_offset",
+        "protocol_id": PROTOCOL_ID,
+        "not_shared_prompt_0.5403": True,
         "offset_convention": "unicode_codepoint_0_based_half_open",
     }
-    out = EXT / "PARSER_TEST_REPORT.json"
+    out = Path(args.out)
+    out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"pass": report["n_pass"], "fail": report["n_fail"], "out": str(out)}, ensure_ascii=False))
     return 0 if report["n_fail"] == 0 else 1

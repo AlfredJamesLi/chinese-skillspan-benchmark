@@ -151,7 +151,7 @@ To reload the published CRF head without retraining (`AlfredJames/jobbert-zh` `c
 python3 scripts/train_cn_roberta_crf.py \
   --model_dir AlfredJames/jobbert-zh \
   --init_crf hub --predict_only --skip_score \
-  --out_dir /tmp/cnss_crf_hub_predict
+  --out_dir output/cnss_crf_hub_predict
 ```
 
 Wrappers that exist but are laboratory-bound:
@@ -205,6 +205,21 @@ python3 scorer/score_lskt.py \
 
 Scoring `data/frozen_preds/jobbert_3m_v4.jsonl` on the V4 hybrid with `--align-mode official` and **no** CWS snap yields typed exact F1 **0.2552** (this workspace). Do not report that figure as the abstract result.
 
+### Gold150 (later protocol; not the abstract table)
+
+JSON-offset Qwen LoRA is Table C **0.1215±0.0092**. Shared-handbook SFT is **0.5403±0.0354**. JobBERT-zh v6a B2 is **0.5536±0.0054**. Do not rank those cells against V4 hybrid **0.4331**. Qwen adapters are not published; `train_qwen_ext_sft.py` is laboratory JSON-offset only (`--protocol json_offset`).
+
+```bash
+python3 scripts/convert_gold150_to_bio.py
+python3 scripts/test_qwen_ext_parser.py --out output/p2_qwen_parser_test.json
+python3 scripts/eval_gold150_ext.py \
+  --protocol json_offset \
+  --pred path/to/gold150_predictions.jsonl \
+  --out output/gold150_score.json
+```
+
+`--gold_eval` defaults to derived BIO or converts the freeze in memory. It does **not** rewrite `data/gold150_test.jsonl` (SHA-256 `ca8db0bc…`).
+
 ---
 
 ## 9. Expected output files
@@ -215,6 +230,8 @@ Scoring `data/frozen_preds/jobbert_3m_v4.jsonl` on the V4 hybrid with `--align-m
 | `tables/hybrid_cws_llm_old_dumps.csv` | `eval_hybrid_llm_old_dumps.py` |
 | `test_pred.jsonl`, `best.pt`, `run_summary.json`, `score_official.json` | `train_cn_roberta_crf.py` |
 | JSON object on stdout / `--out` | `scorer/score_lskt.py` |
+| `data/gold150_test.bio.jsonl` (derived; gitignored) | `convert_gold150_to_bio.py` |
+| Gold150 split JSON (`--out`) | `eval_gold150_ext.py` |
 
 ---
 
@@ -251,7 +268,8 @@ Gold v2 appendix (from `notes/confirmed-results.md` / freeze notes; do not rank 
 | `alignment_ok` false | Duplicate or missing gold IDs in the prediction file |
 | Claude / Kimi far below ChatGPT | Incomplete dumps (98 / 293 IDs); empty-filled in the hybrid eval |
 | `local_files_only=True` tokenizer error | Encoder directory missing; weights are not in Git |
-| Hybrid SHA-256 changed after eval | `eval_hybrid_cws_simhuman.py` rewrote the gold; restore the frozen file |
+| `eval_gold150_ext.py` cannot find `/home/guojingli3/Chinese-Skillspan-Benchmark/...` | Pre-P2 laboratory root; current script uses `data/gold150_test.jsonl` |
+| JSON-offset Qwen F1 mixed with 0.5403 | Two Gold150 Qwen protocols; pass `--protocol json_offset` or `shared_prompt` and do not share a checkpoint path |
 
 ---
 
