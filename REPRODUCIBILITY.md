@@ -33,11 +33,11 @@ python3 -m pip install -r requirements-repro.txt
 
 ```bash
 python3 -m pip install -r requirements-train.txt
-python3 scripts/train_cn_roberta_crf.py --smoke --out_dir /tmp/cnss_crf_smoke
+python3 scripts/train_cn_roberta_crf.py --smoke --out_dir output/p1_crf_smoke
 bash scripts/run_crf_v4_from_hub.sh
 ```
 
-`--smoke` is a Hub connectivity check (16/8/8 rows, 1 epoch). It is **not** a paper F1. The frozen headline remains JobBERT 3M typed exact **0.4331** after jieba. Do not install a parent-lab `../requirements.txt`.
+`--smoke` is a Hub connectivity check (16/8/8 rows, 1 epoch). Write `--out_dir` under this clone (`output/` is gitignored); do not use a full root `/tmp`. Smoke skips the optimizer `last.ckpt`. It is **not** a paper F1. The frozen headline remains JobBERT 3M typed exact **0.4331** after jieba. Do not install a parent-lab `../requirements.txt`.
 
 ---
 
