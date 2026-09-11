@@ -1,0 +1,5 @@
+seed,selected_epoch,dev169_exact_f1_selection_only,n,typed_exact_p,typed_exact_r,typed_exact_f1,typed_relaxed_f1,challenge100_exact_f1,calibration50_exact_f1,source,note
+42,2,0.7407407407407408,150,0.5877551020408164,0.4343891402714932,0.4995663486556808,0.6244579358196011,0.5109289617486339,0.4798099762470309,output/qwen_shared_guidelines_sft_20260910/runs/seed42/gold150/SCORE.json,B2 LoRA; not JSON-offset P0; do not put 169-dev in the test table
+43,2,0.7752161383285301,150,0.6339622641509434,0.5067873303167421,0.5632858340318525,0.685666387259011,0.5714285714285714,0.5491990846681921,output/qwen_shared_guidelines_sft_20260910/runs/seed43/gold150/SCORE.json,B2 only; no B1 pair
+44,1,0.7392550143266478,150,0.6328871892925431,0.49924585218702866,0.5581787521079258,0.6762225969645868,0.5668449197860962,0.5433789954337899,output/qwen_shared_guidelines_sft_20260910/runs/seed44/gold150/SCORE.json,patience 2
+mean_sample_sd,,,150,,,,0.5403436449318196±0.03540637640508322,,,output/qwen_shared_guidelines_sft_20260910/GOLD150_SFT_SCORE_SUMMARY.json,paper 0.5403±0.0354; same protocol as no-adapter 0.3612

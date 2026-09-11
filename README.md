@@ -64,10 +64,11 @@ Evaluation uses **versioned layers**. Pick the layer that matches the research q
 | **Human reference set (current eval)** | `data/gold150_test.jsonl` (150 = challenge + calibration) | Frozen human scoring labels | JobBERT-zh v6a B2 **0.5536±0.0054** (n=3 sample SD); relaxed **0.6890±0.0085** |
 | **Silver-plus B2 (teacher)** | `data/silver_plus_v6a_nocross/` | Student training, not extra human-reference gold | released **2,150 / 169** (PDF v6a row also cites an earlier **2,156** count) |
 | **V4 hybrid 2,601 (derived / historical)** | `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` | SOP-CWS + SimHuman on the same ID pool; not the human freeze | JobBERT-zh 3M + jieba **0.4331** (relaxed **0.5873**) |
+| **Shared-guidelines LLM (appendix)** | [`tables/gold150_shared_guidelines_rev2_patch1.csv`](tables/gold150_shared_guidelines_rev2_patch1.csv) | Frozen shared guidelines on the human reference set; not V4 main | GPT (requested `gpt-5.4`) **0.6667**; DeepSeek nothink **0.6469**; Qwen SFT **0.5403±0.0354** ([`tables/gold150_shared_guidelines_qwen_sft.csv`](tables/gold150_shared_guidelines_qwen_sft.csv)) |
 | **SOP extract on 2,601** | [`tables/sop_extract_p2_2601.csv`](tables/sop_extract_p2_2601.csv) | Standardized zero-shot / Instruct SOP | gpt-5.4 **0.2132**; Qwen2.5-14B **0.1724**; Llama-3-8B **0.0582** |
 | **Gold v2 / Handbook A** | `data/gold_canonical_v2.jsonl` | Construction history / appendix | ChatGPT (`gpt-4o` dump) **0.6365** |
 
-Human-reference IDs sit inside the 2,601 pool; the **label files differ**. A frozen `gpt-4o` dump + jieba on the V4 hybrid is **0.2854** exact / **0.6249** relaxed — not the SOP table and not the human-reference cell.
+Human-reference IDs sit inside the 2,601 pool; the **label files differ**. A frozen `gpt-4o` dump + jieba on the V4 hybrid is **0.2854** exact / **0.6249** relaxed — not the SOP table and not the human-reference cell. Do **not** rank shared-guidelines GPT **0.6667** (or Qwen SFT **0.5403**) against v6a **0.5536** or V4 **0.4331**.
 
 The V4 hybrid is **derived** (980 SimHuman rule_v4 + 1,621 SOP-CWS). Do not overwrite `gold_canonical_v2.jsonl` or the hybrid freeze.
 
