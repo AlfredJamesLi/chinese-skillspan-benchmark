@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\caption{Development-based checkpoint selection, in seed order 42, 43, 44. JobBERT uses condition-specific B1 or B2 labels on the same 169 texts; shared-guideline Qwen uses B2 development labels. These are selection scores, not human-reference test F1.}
+\label{tab:selection-v6a-r41}
+\centering\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Supervision & Selected epochs & Development typed exact F1 \\
+\midrule
+Earlier (B1) & 1 / 3 / 2 & 0.1937 / 0.1890 / 0.2043 \\
+Revised (B2) & 6 / 6 / 5 & 0.6486 / 0.6514 / 0.6566 \\
+\midrule
+Qwen shared-guideline B2 & 2 / 2 / 1 & 0.7407 / 0.7752 / 0.7393 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,99 @@
+\subsection{JobBERT Training-Pool Diagnostics}
+\label{sec:jobbert-pool-stage2}
+The v3/v4 extensions and primary v6a configuration retain their original results below. The extensions jointly change sample size, source composition, document isolation, and duplicate weighting; they are not a controlled sample-size ablation. Each B1/B2 pair also changes training and development labels from a shared inherited encoder and CRF checkpoint.
+\begin{table}[H]
+\caption{JobBERT-zh 3M supervision-and-selection comparison on the human reference set. Values are typed exact micro-F1 (mean $\pm$ sample SD, three seeds). B1/B2 share training and development texts within each row but use condition-specific labels for both supervision and selection. The primary row is v6a; all rows inherit the published CRF and its unresolved historical selection provenance.}
+\label{tab:jobbert-pool-stage2}
+\centering
+\small
+\begin{tabular}{@{}lrrcc@{}}
+\toprule
+Configuration & Train & Dev & Earlier (B1) & Revised (B2) \\
+\midrule
+v3: document isolation & 1,382 & 169 & $0.1390\pm0.0112$ & $0.5299\pm0.0105$ \\
+v4: sentence extension & 1,913 & 169 & $0.1398\pm0.0033$ & $0.5436\pm0.0031$ \\
+v6a: primary & 2,156 & 169 & $0.1422\pm0.0138$ & $\mathbf{0.5536\pm0.0054}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+The primary B2 run has relaxed F1 $0.6890\pm0.0085$, challenge exact F1 $0.5803\pm0.0036$, and calibration exact F1 $0.5071\pm0.0092$. These cohort summaries describe the frozen combined reference, not an independently sampled population. The inherited checkpoint's original selection history remains unresolved.
+
+\subsection{Earlier student protocol and source composition}
+\label{sec:qwen-sft}
+Qwen JSON-offset SFT uses B2 labels on the 2,150/169 \texttt{v6a\_nocross} manifest, with LoRA rank 16, scaling 32, attention q/k/v/o targets, BF16, and assistant-only loss. Development typed exact F1 selects epoch six for all three seeds. Output uses zero-based, end-exclusive Unicode offsets without retrieval or repair retries. Training contains 1,910 distinct NFC texts and development 169; there is no identifier or complete NFC-text overlap between train, development, and the human reference set. The manifest retains repeated training records and is not document-isolated. Development contains no L spans, limiting type-specific selection evidence.
+\begin{table}[htbp]
+\caption{Earlier Qwen2.5-14B-Instruct JSON-offset results on the human reference set (mean $\pm$ sample SD, three seeds). The v6a nocross condition is B2-only and uses development-selected checkpoints; the v3 runs used the final epoch. This is distinct from the shared-guideline occurrence-based study. A dash denotes an unreported archived statistic.}
+\label{tab:qwen-supplement}
+\centering
+\small
+\begin{tabular}{@{}llrcc@{}}
+\toprule
+Manifest & Labels/selection & Train & Exact F1 & Relaxed F1 \\
+\midrule
+v3 & B1 / final epoch & 1,382 & $0.0162\pm0.0056$ & --- \\
+v3 & B2 / final epoch & 1,382 & $0.0788\pm0.0108$ & $0.4166\pm0.0056$ \\
+v6a nocross & B2 / development & 2,150 & $0.1215\pm0.0092$ & $0.4459\pm0.0237$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+Table~\ref{tab:qwen-supplement} reports the archived JSON-offset configurations, not a pure data-volume effect: training data and checkpoint selection both changed. Challenge- and calibration-cohort exact F1 are $0.1224\pm0.0105$ and $0.1199\pm0.0073$, respectively. Parsing fails for five, four, and four sentences across the seeds; all 150 sentences remain in scoring. The exact--relaxed gap alone does not identify the dominant error mechanism. This B2-only extension cannot independently establish B2 superiority over B1 or be substituted for the SOP baseline.
+
+\label{sec:hem}
+The equal-count training-source comparison starts from the 3M DAPT encoder with a newly initialized task head and CRF. Each condition has 96 common records from the initial teacher-label review cohort plus 468 H, E, or equally mixed records, sampled from a 1,908-unique-text pool (sampling seed 20260908; model seeds 42/43/44). H/E denote historical conflict/non-conflict origin, not objective difficulty; three unsupported strata were not filled from development.
+\begin{table}[htbp]
+\caption{Equal-count source comparison on the human reference set using the 3M DAPT encoder and a newly initialized CRF. Each condition includes the same 96-record reviewed base plus 468 selected records. Values are typed micro-F1 (mean $\pm$ sample SD, three model seeds for one fixed sample).}
+\label{tab:hem-supplement}
+\centering
+\small
+\begin{tabular}{@{}llcc@{}}
+\toprule
+Condition & Added records & Exact F1 & Relaxed F1 \\
+\midrule
+H\_468 & 468 conflict-origin & $0.4541\pm0.0103$ & $0.6041\pm0.0096$ \\
+E\_468 & 468 non-conflict-origin & $0.4345\pm0.0235$ & $0.5776\pm0.0237$ \\
+M\_468 & 234 H + 234 E & $0.4562\pm0.0236$ & $0.6089\pm0.0281$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+\FloatBarrier
+The H and M means exceed E descriptively in this fixed sample. Three model seeds do not measure sampling uncertainty or establish significance. Smaller pools and fresh task-head initialization also preclude interpreting the difference from the primary JobBERT result as a source-composition effect alone.
+
+\subsection{Instruction and cleaning sensitivity}
+\label{sec:efg-followup}
+\label{sec:p1-contrast}
+P1 keeps the P0 JSON-offset training manifest and LoRA budget but changes instruction presentation. Each seed selects one checkpoint using development exact F1 at $k=0$, then shares it across no-demonstration, random, and nearest-neighbor conditions. Demonstrations come from training, not development or the human reference set. P0 is reused. Here $k=0$ means no demonstrations after SFT, not an unfine-tuned model. The P1 mean rises, but one seed declines relative to P0; three-seed summaries do not establish a reliable improvement. Demonstrations lower exact F1 in this setup without proving that retrieval generally fails.
+
+\label{sec:peel-sensitivity}
+The cleaning study found the targeted crawler tail in 23/2,150 training and 2/169 development records, but none in the human reference set. Tail removal, removal of emptied records, and further cross-set checks produced a separate 2,138/168 manifest. Non-conflict-origin (E) retains 564 training records with one text changed. Table~\ref{tab:appendix-g-peel} retains both favorable and unfavorable changes: B2 JobBERT changes little numerically and Qwen P0 declines. Changed membership and duplicate handling prevent a pure watermark-effect interpretation. Neither sensitivity analysis replaces the designated results.
+\begin{table}[htbp]
+\caption{Supplementary sensitivities on the human reference set (mean $\pm$ sample SD, three seeds). Upper block: P1 conditions share a development-selected checkpoint within each seed. Lower block: separate cleaning reruns; the full-pool manifest changes to 2,138/168.}
+\label{tab:appendix-e-p1}
+\label{tab:appendix-g-peel}
+\centering\small
+\textbf{Instruction and demonstration conditions}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Lcc@{}}
+\toprule
+Condition & Exact F1 & Relaxed F1 \\
+\midrule
+P0, reused & $0.1215\pm0.0092$ & $0.4459\pm0.0237$ \\
+P1, no demonstrations ($k=0$) & $0.1455\pm0.0196$ & $0.4905\pm0.0109$ \\
+P1, random demonstrations ($k=3$) & $0.0452\pm0.0067$ & $0.3507\pm0.0085$ \\
+P1, nearest-neighbor demonstrations ($k=3$) & $0.0315\pm0.0047$ & $0.3491\pm0.0122$ \\
+\bottomrule
+\end{tabularx}
+\par\medskip\textbf{Cleaning reruns: typed exact F1}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Lcc@{}}
+\toprule
+Condition & Designated result & Cleaning rerun \\
+\midrule
+JobBERT B2 & $0.5536\pm0.0054$ & $0.5509\pm0.0054$ \\
+JobBERT B1 & $0.1422\pm0.0138$ & $0.1507\pm0.0062$ \\
+Qwen P0 & $0.1215\pm0.0092$ & $0.1071\pm0.0102$ \\
+Non-conflict-origin (E) & $0.4345\pm0.0235$ & $0.4355\pm0.0250$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\FloatBarrier
+
+\FloatBarrier

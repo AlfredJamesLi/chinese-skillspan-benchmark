@@ -1,0 +1,40 @@
+\begin{table}[H]
+\centering\footnotesize
+\caption{Descriptive diagnostics of frozen Qwen predictions. TP/FP/FN and P/R/F1 use typed exact matching. Length rows report gold-span recall. Empty-reference rows count accepted false positives; none of these eight sentences has a format failure or all-spans-rejected outcome in these four runs. L has only two gold spans and is reported as counts.}
+\label{tab:qwen-diagnostics-r2}
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+Run & Type & TP & FP & FN & P & R & F1 \\
+\midrule
+No adapter & K & 31 & 49 & 94 & 0.3875 & 0.2480 & 0.3024 \\
+No adapter & S & 129 & 108 & 319 & 0.5443 & 0.2879 & 0.3766 \\
+No adapter & T & 26 & 23 & 62 & 0.5306 & 0.2955 & 0.3796 \\
+LoRA 42 & K & 44 & 31 & 81 & 0.5867 & 0.3520 & 0.4400 \\
+LoRA 42 & S & 186 & 141 & 262 & 0.5688 & 0.4152 & 0.4800 \\
+LoRA 42 & T & 56 & 29 & 32 & 0.6588 & 0.6364 & 0.6474 \\
+LoRA 43 & K & 57 & 24 & 68 & 0.7037 & 0.4560 & 0.5534 \\
+LoRA 43 & S & 222 & 142 & 226 & 0.6099 & 0.4955 & 0.5468 \\
+LoRA 43 & T & 55 & 27 & 33 & 0.6707 & 0.6250 & 0.6471 \\
+LoRA 44 & K & 56 & 25 & 69 & 0.6914 & 0.4480 & 0.5437 \\
+LoRA 44 & S & 222 & 140 & 226 & 0.6133 & 0.4955 & 0.5481 \\
+LoRA 44 & T & 51 & 26 & 37 & 0.6623 & 0.5795 & 0.6182 \\
+\bottomrule
+\end{tabular}
+\par\medskip
+\begin{tabularx}{\linewidth}{@{}Lrrrr@{}}
+\toprule
+Diagnostic & No adapter & LoRA 42 & LoRA 43 & LoRA 44 \\
+\midrule
+Recall, gold length $\leq4$ (346 spans) & 0.2659 & 0.3844 & 0.4566 & 0.4538 \\
+Recall, gold length 5--8 (243 spans) & 0.2963 & 0.4527 & 0.5350 & 0.5309 \\
+Recall, gold length $\geq9$ (74 spans) & 0.2973 & 0.6081 & 0.6486 & 0.6081 \\
+Empty-reference sentences with FP & 2/8 & 2/8 & 1/8 & 0/8 \\
+Total FP spans on empty-reference sentences & 19 & 6 & 4 & 0 \\
+Legal empty outputs on those eight sentences & 6/8 & 6/8 & 7/8 & 8/8 \\
+L hits / gold spans & 0/2 & 2/2 & 2/2 & 2/2 \\
+Extra L predictions & 1 & 1 & 1 & 1 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight
+The baseline has 168 rejected candidates: 167 occurrence errors and one overlap conflict. Of the 167, 155 are unique literal strings with a nonzero occurrence index and 12 are absent from the source; none is a repeated-string out-of-range case. These observations do not establish a one-based counting mechanism. Rejected candidates remain rejected. Accepted-span errors and output rejection are different failure categories; exact--relaxed differences are not a pure boundary-error rate.
+\end{table}

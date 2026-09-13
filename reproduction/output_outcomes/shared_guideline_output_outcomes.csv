@@ -1,0 +1,10 @@
+model,configuration,seed,output_cap_tokens,reference_sentences,valid_nonempty,empty,partial,all_spans_rejected,format_failure,missing
+DeepSeek-V4-Pro,non-thinking,,2048,150,142,6,2,0,0,0
+Claude Sonnet 4.5,recorded configuration,,,150,145,4,1,0,0,0
+DeepSeek-V4-Pro,thinking,,8192,150,124,8,0,0,18,0
+Kimi k2.6,recorded configuration,,,150,142,6,2,0,0,0
+Qwen2.5-14B-Instruct,no project adapter,,2048,150,69,11,69,1,0,0
+gpt-5.6-terra,recorded configuration,,,150,141,7,2,0,0,0
+Qwen2.5-14B-Instruct,LoRA,42,2048,150,139,8,2,1,0,0
+Qwen2.5-14B-Instruct,LoRA,43,2048,150,136,9,4,1,0,0
+Qwen2.5-14B-Instruct,LoRA,44,2048,150,138,10,1,1,0,0

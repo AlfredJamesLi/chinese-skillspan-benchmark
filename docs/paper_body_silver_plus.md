@@ -1,3 +1,5 @@
+**Historical 0911 manuscript-body draft.** This file is retained for provenance and is superseded for current wording, table locations and protocols by [the Round 2 paper index](../reproduction/PAPER_INDEX.md), [current results](../reproduction/current_results/README.md) and [naming guide](../PAPER_NAMES.md). Do not copy this historical JSON-offset description into the current matched Qwen study.
+
 # Manuscript body — Silver-plus methods and results
 
 English draft for the PeerJ Computer Science **main text** (not the laboratory Chinese notes).  
@@ -204,3 +206,4 @@ Do **not** write that peel-cleaning improved the main cells, and do not rewrite 
 
 Frozen identifiers: [`notes/SILVER_PLUS_EXTENSION_PROVENANCE.md`](../notes/SILVER_PLUS_EXTENSION_PROVENANCE.md). Laboratory score archives are not in the public clone.  
 Scripts: `scripts/train_jobbert_phase1.py`, `scripts/train_qwen_ext_sft.py`, `scripts/qwen_ext_protocol.py`.
+

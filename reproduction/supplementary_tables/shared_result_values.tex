@@ -1,0 +1,17 @@
+% [Stage2] Display values generated from frozen R42 full-precision CSV/summary, without rescoring.
+\newcommand{\SharedResultRows}{%
+\SharedResultRow{\texttt{gpt-5.6-terra}}{0.6760}{0.6576}{0.6667}{0.7661}{0.6538}{0.6891}%
+\SharedResultRow{\makecell[l]{DeepSeek-V4-Pro\\(non-thinking)}}{0.6514}{0.6425}{0.6469}{0.7608}{0.6429}{0.6540}%
+\SharedResultRow{Claude Sonnet 4.5}{0.5982}{0.5973}{0.5977}{0.7094}{0.5889}{0.6144}%
+\SharedResultRow{\makecell[l]{DeepSeek-V4-Pro\\(thinking)}}{0.7128}{0.5053}{0.5914}{0.6708}{0.5722}{0.6230}%
+\SharedResultRow{Kimi k2.6}{0.5810}{0.5626}{0.5716}{0.7142}{0.5570}{0.5991}%
+\SharedResultRow{Qwen2.5-14B-Instruct}{0.5068}{0.2805}{0.3612}{0.4699}{0.3449}{0.3902}%
+}
+\newcommand{\QwenResultRows}{%
+\QwenResultRow{No adapter}{0.5068}{0.2805}{0.3612}{0.4699}{0.3449}{0.3902}%
+\QwenResultRow{LoRA, seed 42}{0.5878}{0.4344}{0.4996}{0.6245}{0.5109}{0.4798}%
+\QwenResultRow{LoRA, seed 43}{0.6340}{0.5068}{0.5633}{0.6857}{0.5714}{0.5492}%
+\QwenResultRow{LoRA, seed 44}{0.6329}{0.4992}{0.5582}{0.6762}{0.5668}{0.5434}%
+}
+\newcommand{\QwenBaselineExact}{0.3612}
+\newcommand{\QwenLoraExact}{0.5403\pm0.0354}

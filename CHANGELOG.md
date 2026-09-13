@@ -1,3 +1,7 @@
+# 2026-09-13 — Round 2 companion alignment
+
+Added the complete table/figure/prose relocation index, naming guide, seven supplementary tables, output outcomes, Qwen diagnostic counts, agreement calculation and file-bound evaluation directions. Updated the current README and reproduction entry; preserved their 0911 versions as historical records. Frozen experimental files and original result CSVs are unchanged. No new model run or immutable archive release.
+
 # Changelog — Chinese-SkillSpan / Chinese JobBERT
 
 This file distinguishes preprint, dataset, code, model, and PeerJ submission lines. It does not invent a PeerJ article URL or an arXiv id.
@@ -155,3 +159,4 @@ No model weights are versioned in Git.
 ## arXiv / preprint versions
 
 This paper does not yet have an arXiv identifier. Do not use sister-paper ids `2604.21525` or `2604.23009`. This repository does not host a manuscript PDF.
+

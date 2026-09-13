@@ -1,0 +1,25 @@
+% Archival source only; excluded from the manuscript compilation.
+\begin{table}[htbp]
+\centering\footnotesize
+\caption{Mutually exclusive final output outcomes, with 150 sentences in every row. Empty denotes a legal empty span list, not a correct negative; partial denotes both accepted and rejected candidates. All-spans-rejected denotes a nonempty candidate list with none accepted; format failure denotes an invalid whole response. Missing denotes no response record. Partial responses retain accepted spans; fully rejected and malformed responses count as empty predictions. The lower block reports the three Qwen LoRA runs under the same parser.}
+\label{tab:shared-output-quality-r15}
+\begin{tabularx}{\linewidth}{@{}Lrrrrrr@{}}
+\toprule
+Recorded configuration & \makecell{Valid\\nonempty} & Empty & Partial & \makecell{All spans\\rejected} & \makecell{Format\\failure} & Missing \\
+\midrule
+\makecell[l]{DeepSeek-V4-Pro\\(non-thinking)} & 142 & 6 & 2 & 0 & 0 & 0 \\
+Claude & 145 & 4 & 1 & 0 & 0 & 0 \\
+\makecell[l]{DeepSeek-V4-Pro\\(thinking)} & 124 & 8 & 0 & 0 & 18 & 0 \\
+Kimi & 142 & 6 & 2 & 0 & 0 & 0 \\
+Qwen Instruct & 69 & 11 & 69 & 1 & 0 & 0 \\
+\texttt{gpt-5.6-terra} & 141 & 7 & 2 & 0 & 0 & 0 \\
+\midrule
+Qwen LoRA, seed 42 & 139 & 8 & 2 & 1 & 0 & 0 \\
+Qwen LoRA, seed 43 & 136 & 9 & 4 & 1 & 0 & 0 \\
+Qwen LoRA, seed 44 & 138 & 10 & 1 & 1 & 0 & 0 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+DeepSeek mode and output-cap settings follow Table~\ref{tab:gold150-shared-r7}.
+
+\end{table}

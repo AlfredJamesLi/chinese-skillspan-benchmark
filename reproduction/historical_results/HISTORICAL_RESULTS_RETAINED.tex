@@ -1,0 +1,81 @@
+% [R16-C] Organize by question, not execution date. Original sections remain unmodified.
+\section{Appendix C. Supplementary Evaluation}
+\subsection{Historical reference and protocol sensitivity}
+\label{sec:relocated-historical-displays}
+\label{sec:historical-setup-r12}
+Table~\ref{tab:standardized-benchmark} preserves the archived 2,601-record SOP+jieba reference. Encoders use protocol-aligned supervision; language models use the historical extraction prompt. These are separate conditions from the human reference set and the new shared-guideline study. The separate factory-encoder diagnostic, cross-protocol score matrix, and length-conditioned plots remain in the versioned display archive (\nameref{sec:display-archive-r14}), rather than being presented as evidence that a newer reference is more correct. The factory results remain pending validation.
+\begin{table*}[!htbp]
+\caption{Historical-protocol diagnostic results on the 2,601-record SOP+jieba reference. All systems use the same identifiers and typed exact/relaxed micro-F1. Encoders use protocol-aligned supervision; language models use the shared zero-shot prompt. These scores are separate from the human-reference study.}
+\label{tab:standardized-benchmark}
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}P{0.30\textwidth}Lcc@{}}
+\toprule
+\textbf{System} & \textbf{Evaluation setting} & \textbf{Typed exact} & \textbf{Typed relaxed} \\
+\midrule
+JobBERT-zh, 3M DAPT & \multirow{2}{*}{\makecell[l]{Protocol-aligned supervised\\encoder}} & \textbf{0.4331} & 0.5873 \\
+JobBERT-zh, 1M DAPT & & 0.4272 & \textbf{0.5952} \\
+\midrule
+\texttt{gpt-5.4} & \multirow{6}{*}{Standardized zero-shot prompt} & 0.2132 & 0.4199 \\
+\texttt{deepseek-v4-pro} & & 0.1980 & 0.3931 \\
+\texttt{kimi-k2.6} & & 0.1979 & 0.4032 \\
+\texttt{claude-sonnet-4-5} & & 0.1972 & 0.3987 \\
+\texttt{Qwen2.5-14B-Instruct} & & 0.1724 & 0.3279 \\
+\texttt{Llama-3-8B-Instruct} & & 0.0582 & 0.1178 \\
+\bottomrule
+\end{tabularx}
+\end{table*}
+% [R38-REPRO] Two historical diagnostics restored from public score records; no existing table values changed.
+\begin{table}[htbp]
+\caption{Additional archived diagnostics under distinct references. The first row is a three-seed mean on Gold v2. The second scores a derived 2,601-record reference in which 200 hybrid records are replaced by human labels and jieba-aligned; it is not a score on the 200 sentences alone. Neither row uses the 150-sentence human reference set or replaces the designated V4 hybrid result.}
+\label{tab:archived-reference-checks-r38}
+\centering\small
+\begin{tabularx}{\linewidth}{@{}P{0.28\linewidth}Lr@{}}
+\toprule
+System & Reference and summary & Typed exact F1 \\
+\midrule
+JobBERT-zh, 1M DAPT & Gold v2, 2,601 records; three-seed mean & 0.1288 \\
+JobBERT-zh, 3M V4 & Human-label overlay on 2,601 records; frozen predictions & 0.3884 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% [R42-MOVE] Former main-text RQ1: preserved with its original numbers and caveats.
+\input{tex/gold150_benchmark_main}
+\FloatBarrier
+
+% [R1-M04] Verbatim result block moved from appendix F; only heading/caption prefix changed.
+% Source: gold150_v4_subset_score_20260909/SUMMARY.json, frozen in 5a8b0be.
+% [R4-RQ1] Existing retrospective rescore, not a missing or newly run benchmark.
+% [R42-MOVE] Historical rescore now included only in Appendix C; scores unchanged.
+\subsection{Rescoring Historical Predictions against the Human Reference}
+\label{sec:sop-gold-rescore}
+
+This analysis selects the 150 identifiers in the human reference set from previously frozen outputs on the 2,601-record historical reference and scores those outputs against the human reference, retaining complete identifier coverage. It makes no new API calls and does not apply P1 to the archived language models. Table~\ref{tab:appendix-f-sop} uses raw SOP-extract-v4 outputs without additional Jieba boundary alignment; the Qwen row uses the archived parsed SOP output. The reference changes, not the model predictions. These are retrospective cross-reference diagnostics rather than an independent model ranking alongside the fine-tuned students.
+
+\begin{table}[htbp]
+% [R15-M1] ID coverage is not input equivalence; retain historical numbers without promotion.
+\caption{Historical SOP-extract-v4 outputs rescored against the human reference set, without additional Jieba alignment. All 150 identifiers are matched, but two archived input texts differ from the frozen human reference. These single-run scores are cross-reference diagnostics, not an input-identical benchmark or a new API evaluation.}
+\label{tab:appendix-f-sop}
+\centering
+\small
+\begin{tabularx}{\linewidth}{@{}Lcc@{}}
+\toprule
+Archived system & Exact F1 & Relaxed F1 \\
+\midrule
+Claude Sonnet 4.5 SOP & 0.3153 & 0.4287 \\
+GPT-5.4 SOP & 0.3103 & 0.4471 \\
+Kimi k2.6 SOP & 0.3070 & 0.4244 \\
+DeepSeek v4-pro SOP & 0.2951 & 0.4131 \\
+Qwen2.5-14B SOP, parsed & 0.2498 & 0.3475 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% [R7-SHARED-20260910] Add a bounded pointer; preserve all historical scores.
+% [R10-SNAPSHOT] Coverage refreshed; historical table and abstract unchanged.
+Two archived input texts differ from the frozen human reference; these results therefore do not constitute an input-matched comparison.
+
+% [R20] Three-sentence pointer only; historical table and abstract unchanged.
+A separate completed inference study uses the frozen sentences and shared guidelines with five fixed schematic examples (\nameref{sec:gold150-shared-r7}). Its GPT row uses the returned identifier; this does not retrospectively establish the identity of the archived SOP outputs. Changes to the prompt, output schema, and request granularity prevent interpreting the two studies as a controlled prompt-only comparison.
+

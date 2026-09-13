@@ -1,3 +1,5 @@
+**Current 13 September mapping:** [paper names](../../PAPER_NAMES.md), [evaluation entry](../../reproduction/EVALUATION_ENTRY.md), and [current paper index](../../reproduction/PAPER_INDEX.md). The command below illustrates the historical JSON-offset path; the current shared-prompt and JobBERT paths are distinguished in the evaluation entry. Canonical files are unchanged.
+
 # Human reference set (artifact Gold150)
 
 Manuscript name (PeerJ CS under review, after Related Work): **human reference set** — 150 frozen evaluation sentences (challenge cohort + calibration cohort).
@@ -29,3 +31,4 @@ JSON from `eval_gold150_ext.py` keeps the old keys (`gold150`, `challenge100`, `
 These files are the **current manuscript evaluation freeze** (0911 PeerJ draft). They are in GitHub Release / Zenodo **`v0.1.3`** (DOI `10.5281/zenodo.22698504`). They are **not** in Zenodo `v0.1.1` or `v0.1.2`. Teacher Silver-plus B2: [`../silver_plus_v6a_nocross/`](../silver_plus_v6a_nocross/). JobBERT-zh v6a B2 typed exact on this freeze is **0.5536±0.0054**. Do not rank that cell against V4 hybrid 2,601 JobBERT **0.4331**.
 
 Appendix shared-guidelines LLM scores on this freeze (not the JobBERT current-eval cell): [`../../tables/gold150_shared_guidelines_rev2_patch1.csv`](../../tables/gold150_shared_guidelines_rev2_patch1.csv) and Qwen B2 LoRA [`../../tables/gold150_shared_guidelines_qwen_sft.csv`](../../tables/gold150_shared_guidelines_qwen_sft.csv). **gpt-5.6-terra** typed exact **0.6667** (n=150). Do not rank those cells against **0.5536** or **0.4331**. Do not rename SOP extract 0.2132.
+

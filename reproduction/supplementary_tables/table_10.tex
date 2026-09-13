@@ -1,0 +1,17 @@
+\begin{table}[!htbp]
+\centering
+\caption{Handbook and execution versions have different roles. Later documentation revisions do not retrospectively relabel frozen results.}
+\label{tab:handbook-versions}
+\begin{tabularx}{\linewidth}{@{}P{0.20\linewidth}P{0.27\linewidth}L@{}}
+\toprule
+Artifact or stage & Version & Interpretation \\
+\midrule
+Historical IAA panels & B.sop\_v4.2.9 & Preserved historical guidance and original IAA binding. \\
+Human reference set & B.sop\_v4.2.10 metadata & Reference identity; later handbook revisions do not change these labels. \\
+Initial teacher-label review & v4210\_rev1 prompt; V4.2.11 adjudication lineage & Initial generation and subsequent review retain separate provenance; This cohort was not regenerated using a later prompt. \\
+Subsequent Silver-plus & V4.2.12; v4212\_rev2 prompt & Frozen execution prompt for 2,351 records: 730 conflict-origin and 1,621 non-conflict-origin records. \\
+Shared-guideline evaluation & rev2 patch1; occurrence parser v1.1 & Five fixed examples; source-text offsets scored with \texttt{cnss-lskt-1.2.0}. Separate from the teacher-generation prompt. \\
+Later human revisions & V4.2.13 / V4.2.14 & R19--R22 clarify record states and admission; R23 clarifies shared-experience splitting. Not a retrospective generation version. \\
+\bottomrule
+\end{tabularx}
+\end{table}

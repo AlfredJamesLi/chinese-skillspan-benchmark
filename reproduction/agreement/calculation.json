@@ -1,0 +1,81 @@
+{
+  "source_hashes": {
+    "Coder_B_later_export": "ff2b44d1de1b03146a631b52240158767ca31a5df4eae448f60331546ee3f9e1",
+    "Coder_A_later_export": "8c8a3f126189cfe9c97455b346a513da7ad959593732446d944d904c39806637"
+  },
+  "n_sentences": 50,
+  "typed": {
+    "n_codepoints": 2571,
+    "p_o": 0.7709062621548036,
+    "p_e": 0.4705642521733224,
+    "kappa": 0.5672869865972949,
+    "confusion": {
+      "K|K": 45,
+      "K|O": 78,
+      "K|S": 110,
+      "O|K": 12,
+      "O|O": 1440,
+      "O|S": 119,
+      "O|T": 5,
+      "S|K": 12,
+      "S|O": 154,
+      "S|S": 388,
+      "S|T": 24,
+      "T|O": 34,
+      "T|S": 41,
+      "T|T": 109
+    },
+    "marginal_Coder_B": {
+      "O": 1576,
+      "S": 578,
+      "T": 184,
+      "K": 233
+    },
+    "marginal_Coder_A": {
+      "O": 1706,
+      "T": 138,
+      "S": 658,
+      "K": 69
+    },
+    "confusion_order": "Coder_B | Coder_A"
+  },
+  "collapsed": {
+    "n_codepoints": 2571,
+    "p_o": 0.7961882535978219,
+    "p_e": 0.5009477248325691,
+    "kappa": 0.5916024101206637,
+    "confusion": {
+      "KNOWLEDGE|KNOWLEDGE": 45,
+      "KNOWLEDGE|O": 78,
+      "KNOWLEDGE|SKILL": 110,
+      "O|KNOWLEDGE": 12,
+      "O|O": 1440,
+      "O|SKILL": 124,
+      "SKILL|KNOWLEDGE": 12,
+      "SKILL|O": 188,
+      "SKILL|SKILL": 562
+    },
+    "marginal_Coder_B": {
+      "O": 1576,
+      "SKILL": 762,
+      "KNOWLEDGE": 233
+    },
+    "marginal_Coder_A": {
+      "O": 1706,
+      "SKILL": 796,
+      "KNOWLEDGE": 69
+    },
+    "confusion_order": "Coder_B | Coder_A"
+  },
+  "span_counts": {
+    "exact_matches": 98,
+    "F1": 0.4444444444444444,
+    "Coder_B": 230,
+    "Coder_A": 211
+  },
+  "provenance": "Available live exports; byte identity with original pre-adjudication freeze not established.",
+  "paper_coder_mapping": {
+    "Coder A": "Coder_A (211 spans)",
+    "Coder B": "Coder_B (230 spans)"
+  }
+}

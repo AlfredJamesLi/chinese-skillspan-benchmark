@@ -1,0 +1,545 @@
+[
+  {
+    "role": "accepted prediction: claude-sonnet-4-5",
+    "sha256": "ba15cb0eb79ce3987707252955c811c712ea93718642ca9cc0b50413f75ec721",
+    "records": 150,
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/preds/claude-sonnet-4-5/pred_for_score.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction: deepseek-v4-pro-nothink",
+    "sha256": "29a0bfb0ca9c382d5a3973da00a8f491347e818fdc560083c829149366dc51a7",
+    "records": 150,
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/preds/deepseek-v4-pro-nothink/pred_for_score.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction: deepseek-v4-pro-think8192",
+    "sha256": "c37436b95c0fe2709431d1b719f7328c2f2cc19472173a9f70516a9af10ce7eb",
+    "records": 150,
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/preds/deepseek-v4-pro-think8192/pred_for_score.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction: gpt-5.6-terra",
+    "sha256": "babf76cac978404da458306c0051b6fbc47d3a2c237cea77a103a6e5784c8625",
+    "records": 150,
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/preds/gpt-5.6-terra/pred_for_score.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction: kimi-k2.6",
+    "sha256": "17a0900848ab9d432be08d220b979d444dbae3b786068f2003f53e8d39a5eccc",
+    "records": 150,
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/preds/kimi-k2.6/pred_for_score.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction: qwen25-14b-instruct",
+    "sha256": "85cfc0ff493cbb97c52c62c6306ad3fc141b9bc9710c667fafe4418f8a8763ea",
+    "records": 150,
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/preds/qwen25-14b-instruct/pred_for_score.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "inference settings",
+    "sha256": "a6185279c46723c20f9157a2846dbb5ab0466818d315724cfa5029b561f279b1",
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/configs/claude-sonnet-4-5/CONFIG_FINGERPRINT.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "inference settings",
+    "sha256": "2ebd8602164306b4bdafdf8d6ea9c3c30f5a2dee18cd8bf4fc37e491d991a782",
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/configs/deepseek-v4-pro-nothink/CONFIG_FINGERPRINT.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "inference settings",
+    "sha256": "5f5d533d104509ad239aff75455b10866cbf24fa2195a6b4c813468215f08d48",
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/configs/deepseek-v4-pro-think8192/CONFIG_FINGERPRINT.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "inference settings",
+    "sha256": "3046fd3c30d739ed080fd6cf32bfa5c8e8718ce320866ec28351e8233bcbca93",
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/configs/gpt-5.6-terra/CONFIG_FINGERPRINT.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "inference settings",
+    "sha256": "50449056895e1131964fe22b3176bb604ae5911410ff69553aa5adfb1b398a31",
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/configs/kimi-k2.6/CONFIG_FINGERPRINT.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "inference settings",
+    "sha256": "c5f872beeedaa8e9df76529f5b0b11c7c6966cd65a17262c7578a06530d9dd5f",
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/configs/qwen25-14b-instruct/worker0.CONFIG_FINGERPRINT.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "inference settings",
+    "sha256": "9ed5c44e92af1818cf96cbe31206b1ba7f81ef86b9d934c330364c326383ab80",
+    "original_table": "4",
+    "current_table": "5",
+    "artifact_key": "01_shared_prompt/configs/qwen25-14b-instruct/worker1.CONFIG_FINGERPRINT.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen training/inference settings",
+    "sha256": "29630e625859ea6d2b7cb635e6884361a977f1153178f5903d2310715286ad0f",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/configs/BASELINE_COMPATIBILITY.md",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen training/inference settings",
+    "sha256": "28db210b08123a370ca6a006cd7e405befc993acd4c69dac184542d16caa9ce9",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/configs/DATA_MANIFEST.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen training/inference settings",
+    "sha256": "3a3efddf61259f2f0e1f21100959b86cb797d3dafec55606efd92c8598609189",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/configs/LOSS_MASK_AND_LENGTH_REPORT.md",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen training/inference settings",
+    "sha256": "95f378faf9004f8e878c5606d69160931e1a0ba3d2fe29008835230a786b75f0",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/configs/MODEL_PROVENANCE.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen training/inference settings",
+    "sha256": "f2c2275bb68df775924af1cc0caf351e8d90ead749b04683db63eede2af188e6",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/configs/PROMPT_MANIFEST.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen training/inference settings",
+    "sha256": "0f54bc7fc30853d813fb46c67da8eb533ecc967ee7755dec41180a387c943000",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/configs/TRAIN_CONFIG.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen training/inference settings",
+    "sha256": "5eb38d39cd7cc6dfbd432332e73021a7bbd674fe4f8dc100b8305af01e2f3fbb",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/configs/TRAIN_DEV_CONVERSION_REPORT.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction seed 42",
+    "sha256": "22033c2f102143f786d29c09ccb1f99d91da6ec0f97eb977e228444869be6a24",
+    "records": 150,
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/infer/seed42/pred_for_score.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen selection",
+    "sha256": "c4697eca6da0b4d78b21bc7e10d59504c6091784686e5918f318cd88b8f0783b",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/selection/seed42/epoch_history.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen selection",
+    "sha256": "c620bec9fcbb54e3cebec20bbb1c4653ca4289282cfccf7160e4f983bd413cdf",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/selection/seed42/run_config.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen selection",
+    "sha256": "dc7a16f551e4c0157dffba4eaf39e5ffbf3539164b3777f8be8bf482a7c9c633",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/selection/seed42/selected_checkpoint.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction b142",
+    "sha256": "1ad09ae7efb4bf01f0be4cfc9c3b4c262bfc1da310738242a403f4d35244498c",
+    "records": 150,
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b1/seed42/gold150_pred.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT run_config.json",
+    "sha256": "d30f54ab7b0edb4ccdc519679b3c7e6ca5f4ab4c34e4c92a73f80679c59b7a4b",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b1/seed42/run_config.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT history.json",
+    "sha256": "9366108bc03f076ddb1ca7775d751785dd587d20b899e33c96fab624c6c4ed21",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b1/seed42/history.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT gold150_score.json",
+    "sha256": "83147fbce43868d35f047b3834df36038401e7ddfe4a67bb7aee157ef822bef5",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b1/seed42/gold150_score.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction b242",
+    "sha256": "93fe35f03eb5ff9118975598581c5ba51a5024a34e22aadbf809e278bac9eed9",
+    "records": 150,
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b2/seed42/gold150_pred.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT run_config.json",
+    "sha256": "079d3a498918e64d059b4d1d3e4425c33da39d2999c46cc80405689da6687451",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b2/seed42/run_config.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT history.json",
+    "sha256": "22b907efacaf638b9a568cbc74d8889d258071946ae54a50b706c97a2cb8c578",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b2/seed42/history.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT gold150_score.json",
+    "sha256": "e6bfd05e4e2f22341cea44df003c6fd49ffead5d7365857e668cfcb19f10dd7b",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b2/seed42/gold150_score.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction seed 43",
+    "sha256": "c14f34e0a23e463500cbca1e9747be28fec74ac58495f3a2de338d4bd6dbe564",
+    "records": 150,
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/infer/seed43/pred_for_score.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen selection",
+    "sha256": "1e1fc20a38331caf8ba385a4737d9fb78d268b98317f638436f727b69a8b915d",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/selection/seed43/epoch_history.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen selection",
+    "sha256": "beb845e0d68fdd3b43e38f398d2d6b88b3d6e831a066ba3c79e6fb45ca957f19",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/selection/seed43/run_config.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen selection",
+    "sha256": "cf9bb287be0955b05956bd790653ae4480db88b20a8aace16966660dfb8f6011",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/selection/seed43/selected_checkpoint.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction b143",
+    "sha256": "058bfffa38f2423e0399c50f32230a7f96c98586742a978ede5070d4b0da58cf",
+    "records": 150,
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b1/seed43/gold150_pred.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT run_config.json",
+    "sha256": "e0e1a25618c3d8caa90501b561b8fbcac5ac3150b17391ef5c20e39adcc8568c",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b1/seed43/run_config.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT history.json",
+    "sha256": "b01100ffd4c6d7c57256a0c5af7608df4cf72023e462d1eb6328b477845610aa",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b1/seed43/history.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT gold150_score.json",
+    "sha256": "d383fe363ac03602e4d804c71efbac7bca9c8eb21f5c87cfb18138ad9d57988c",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b1/seed43/gold150_score.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction b243",
+    "sha256": "7f99f67772292b3d8397d37f9553304bddd3fea331e0def6cb86345bf66a2945",
+    "records": 150,
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b2/seed43/gold150_pred.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT run_config.json",
+    "sha256": "801782c2143a23ee7ffa33eed7d3c674163d158ab1676c03b2fb596806406b04",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b2/seed43/run_config.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT history.json",
+    "sha256": "13c47ea0bd0cb7c99f238d6bc73cd3ded9f256e70810791a5f5707f88960d0a8",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b2/seed43/history.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT gold150_score.json",
+    "sha256": "f385d75ff77f550005316f14092d83455b662babd4a6b83fad76d76510a9c4a5",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b2/seed43/gold150_score.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction seed 44",
+    "sha256": "a90efd6a2704d9ecfb9d7b3fa95534851358db402c6dcbe24bc78d6bc25b9953",
+    "records": 150,
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/infer/seed44/pred_for_score.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen selection",
+    "sha256": "73fac2600532d3003958c7c44fcc94111cb179076734aa12cecc12d5a9e40548",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/selection/seed44/epoch_history.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen selection",
+    "sha256": "a8e81f25737525e74c00524fe2db9f5bfb83f4d722b1ec2c301daa4a312c983c",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/selection/seed44/run_config.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen selection",
+    "sha256": "d314c9c11e4e7f76518ec68eee0b14f071d0bb113baa26ba4ddb07125b18cc73",
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "02_sft/selection/seed44/selected_checkpoint.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction b144",
+    "sha256": "ec2cc5524b42e2df022ff0059613d671788c0925fffc2aa898cc83df8b08f658",
+    "records": 150,
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b1/seed44/gold150_pred.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT run_config.json",
+    "sha256": "c1105694bd848675b444a8f737fc5c907f40e2ab33361b1efaa03aa3833ecbce",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b1/seed44/run_config.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT history.json",
+    "sha256": "fda40415addaaaaae05d6b70d1f0dfafe083a496789d0914b33c7458833f1cfc",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b1/seed44/history.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT gold150_score.json",
+    "sha256": "47290a818e45fe986542009436736440e38a7414c9a1f94440e6d71b4861757d",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b1/seed44/gold150_score.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "accepted prediction b244",
+    "sha256": "07773102f50213e45b7e3d867ed84ff9ed93ebd8d1896b9b0d62e8f77b1fce51",
+    "records": 150,
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b2/seed44/gold150_pred.jsonl",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT run_config.json",
+    "sha256": "88a3ee171b3bbd9e86017f439c8d7ec3ad995ed41ceac06bb552bc42a01aac9e",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b2/seed44/run_config.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT history.json",
+    "sha256": "e7907233c258b1ac2eccfa6e4e867a49186b5bdf8389299ca44dec101774ba99",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b2/seed44/history.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "JobBERT gold150_score.json",
+    "sha256": "019725da0b59a1507e6d9985d3da91f6918da89f17ab24beea633e4b6c22c319",
+    "original_table": "5B",
+    "current_table": "6B",
+    "artifact_key": "jobbert3m/b2/seed44/gold150_score.json",
+    "repository_paths": [],
+    "availability": "local evidence; not included in this synchronization"
+  },
+  {
+    "role": "Qwen manifest qwen_train",
+    "sha256": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+    "records": 2150,
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "Gold150_shared_prompt_eval_for_Overleaf_20260910/05_sft_b2_not_yet_gold150/labels_b2/train_b2.jsonl",
+    "repository_paths": [
+      "data/silver_plus_v6a_nocross/train_b2.jsonl"
+    ],
+    "availability": "matching repository bytes"
+  },
+  {
+    "role": "Qwen manifest qwen_dev",
+    "sha256": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+    "records": 169,
+    "original_table": "5A",
+    "current_table": "6A",
+    "artifact_key": "Gold150_shared_prompt_eval_for_Overleaf_20260910/05_sft_b2_not_yet_gold150/labels_b2/dev_b2.jsonl",
+    "repository_paths": [
+      "data/silver_plus_v6a_nocross/dev_b2.jsonl"
+    ],
+    "availability": "matching repository bytes"
+  }
+]
