@@ -9,7 +9,7 @@ This index includes the initial second-review revision and the author's subseque
 | R2-03 JobBERT implementation | Saved configs/selection evidence recovered; shared initialization and 256-token setting documented | Historical training/export code, tokenizer revision, character projection and long-input behavior remain unbound |
 | R2-04 Literature | Cao Chinese skill/specialty precedent added; SkillSpan labels and Kompetencer layers corrected | No new literature claim introduced by this sync |
 | R2-05 Figures | Author-selected illustrated Figures 1/2 restored; boundary examples updated; final names aligned | Superseded minimalist redraws are not the final figures |
-| R2-06 Diagnostics | Existing accepted predictions summarized by type, length and empty-reference errors; final Figure 5 uses mixed chart types | No inference or test-guided prediction repair |
+| R2-06 Diagnostics | Existing accepted predictions summarized by type, length and empty-reference errors; final Figure 5 restores the previous bar-chart design at the author's request | No inference or test-guided prediction repair |
 | R2-07 Numbers and referents | Current exact-F1 means use full precision; character kappa 0.5673 added beside span F1 0.4444 | Later coder exports are not proven byte-identical to the initial freeze; historical Coder A recall discrepancy remains documented |
 | R2-08 Public handoff | Tables, notes, naming, inventories and reproduction directions now have one repository index | A documentation commit is not release of Qwen adapters, all run predictions, historical implementation, or a new immutable archive |
 

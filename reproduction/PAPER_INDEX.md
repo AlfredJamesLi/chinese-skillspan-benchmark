@@ -1,6 +1,6 @@
 # Current paper and companion-material index
 
-Aligned to the 22-page manuscript prepared on 2026-09-13. PDF SHA-256: `e047f07b38e60da634d7ccd7cb9262647d2ca42b61f8e3e8dadc4c14fbf25c74`. The source manuscript remains on Overleaf; no draft paper PDF is uploaded by this synchronization. PDF page references below identify this exact local revision, not an older screenshot. Stable topic names and LaTeX labels should be preferred if pagination changes.
+Aligned to the 22-page manuscript prepared on 2026-09-13. PDF SHA-256: `6a8a45d8b025f707351957a67e1c1f141462275e5c8d0030aae10e4ad815b182`. The source manuscript remains on Overleaf; no draft paper PDF is uploaded by this synchronization. PDF page references below identify this exact local revision, not an older screenshot. Stable topic names and LaTeX labels should be preferred if pagination changes.
 
 ## Current paper
 

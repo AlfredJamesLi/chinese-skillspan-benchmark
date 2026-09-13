@@ -1,3 +1,7 @@
+# 2026-09-13 — Restore Figure 5 bar charts
+
+At the author's request, restore the previous four-panel grouped/horizontal bar-chart design and align the figure notes and current PDF hash. All statistics and other manuscript revisions are retained.
+
 # 2026-09-13 — Round 2 companion alignment
 
 Added the complete table/figure/prose relocation index, naming guide, seven supplementary tables, output outcomes, Qwen diagnostic counts, agreement calculation and file-bound evaluation directions. Updated the current README and reproduction entry; preserved their 0911 versions as historical records. Frozen experimental files and original result CSVs are unchanged. No new model run or immutable archive release.

@@ -8,4 +8,4 @@
 | Figure 4: boundary/context examples | [examples.svg](examples.svg) | 8 |
 | Figure 5: Qwen diagnostics | [qwen_diagnostics.svg](qwen_diagnostics.svg) and [data](../../reproduction/qwen_diagnostics/) | 19 |
 
-Figure 1 retains the author-selected illustrated design, the regular-script 文 character and visible arrow shafts. Figure 2 retains its illustrated layout with readable review names. Superseded schematic redraws are not the final manuscript figures. Figure 5 uses dots, ordered-bin lines, unit dots and lollipops; its statistics are unchanged.
+Figure 1 retains the author-selected illustrated design, the regular-script 文 character and visible arrow shafts. Figure 2 retains its illustrated layout with readable review names. Superseded schematic redraws are not the final manuscript figures. Figure 5 restores the previous grouped/horizontal bar-chart design at the author's request; its statistics are unchanged.

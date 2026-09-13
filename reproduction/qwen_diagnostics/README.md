@@ -4,6 +4,6 @@ The manuscript's former Table 12 is displayed as a four-panel statistical figure
 
 K, S and T gold support is 125, 448 and 88; L has only two spans and remains count-based. Length groups contain 346, 243 and 74 spans and may share sentences. Empty-reference sentence errors and span errors are distinct quantities. The four plotted runs are no adapter, LoRA seed 42, seed 43, seed 44. The [paper index](../PAPER_INDEX.md) identifies the final figure and its current page.
 
-## Figure presentation update (2026-09-13)
+ ## Figure presentation update (2026-09-13, restored)
 
-The figure now combines (a) categorical dot plots, (b) connected points across ordered span-length bins, (c) an eight-unit dot display of false-positive sentence counts, and (d) a lollipop plot of false-positive span counts. Length bins are equally spaced categories, not continuous distances; lines are visual guides, not fitted models. Unit-dot columns count outcomes and do not identify matched sentences across runs. Original full-precision data and archived table are unchanged. No density estimates, confidence intervals or significance tests were added.
+At the author's request, Figure 5 returns to the previous four-panel bar-chart design: grouped bars for type F1 and length-bin recall, horizontal bars for affected empty-reference sentences and false-positive spans. Grey/blue/green/orange colours and patterns identify the same four runs. The temporary dot/line/unit-dot/lollipop design is superseded. All underlying counts, full-precision values and the archived table are unchanged.
