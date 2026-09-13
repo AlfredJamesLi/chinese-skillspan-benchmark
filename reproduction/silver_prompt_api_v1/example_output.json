@@ -1,0 +1,25 @@
+{
+  "records": [
+    {
+      "id": "format-01",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "数据分析",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取职业活动，排除要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "format-02",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅描述福利待遇。",
+      "issues": []
+    }
+  ]
+}

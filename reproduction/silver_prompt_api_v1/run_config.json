@@ -1,0 +1,15 @@
+{
+  "status": "proposed_not_executed",
+  "prompt_version": "silver_public_api_v1.0",
+  "model_requested": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "endpoint_family": "responses",
+  "connection_mode": "not_selected",
+  "base_url": "https://api.openai.com/v1",
+  "batch_size": 10,
+  "max_output_tokens": 16384,
+  "store": false,
+  "history": "none",
+  "tools": [],
+  "retry_policy": "at most 2 transport retries; no automatic semantic retries; log every attempt"
+}

@@ -1,0 +1,107 @@
+{
+  "type": "object",
+  "properties": {
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "spans": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "start": {
+                  "type": "integer"
+                },
+                "end": {
+                  "type": "integer"
+                },
+                "text": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string",
+                  "enum": [
+                    "L",
+                    "K",
+                    "S",
+                    "T"
+                  ]
+                }
+              },
+              "required": [
+                "start",
+                "end",
+                "text",
+                "label"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "candidate_complete",
+              "confirmed_empty",
+              "adjudication_required"
+            ]
+          },
+          "note": {
+            "type": "string"
+          },
+          "issues": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "scope",
+                    "boundary",
+                    "type"
+                  ]
+                },
+                "text": {
+                  "type": "string"
+                },
+                "alternatives": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "reason": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "kind",
+                "text",
+                "alternatives",
+                "reason"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "spans",
+          "status",
+          "note",
+          "issues"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "records"
+  ],
+  "additionalProperties": false
+}

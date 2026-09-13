@@ -13,6 +13,7 @@ Original labels, predictions, manifests, parsers, and scorers are unchanged by t
 
 ## Start here
 
+- [Silver annotation API prompt package](silver_prompt_api_v1/README.md): public system prompt, structured output schema, configuration, API/proxy guidance and historical originals; [complete ZIP](silver_prompt_api_v1.zip). No new annotations or tested API runner are included.
 - [Paper index and table relocation map](PAPER_INDEX.md)
 - [Evaluation entry and verified file bindings](EVALUATION_ENTRY.md)
 - [Round 2 changes and open items](ROUND2_CHANGES.md)

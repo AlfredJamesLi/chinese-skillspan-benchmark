@@ -33,6 +33,7 @@ Recover flat character spans with types L (language), K (knowledge), S (occupati
 
 - [Human reference and names](data/gold150/README.md)
 - [Released Qwen supervision](data/silver_plus_v6a_nocross/README.md)
+- [Silver annotation API prompt and configuration](reproduction/silver_prompt_api_v1/README.md) | [Download ZIP](reproduction/silver_prompt_api_v1.zip): new public protocol with original prompt archives; API/proxy execution has not yet been tested.
 - [Current Chinese handbook](notes/handbooks/handbook_B_sop_v4.md)
 - [Seven transferred supplementary tables](reproduction/supplementary_tables/README.md)
 - [Detailed output outcomes](reproduction/output_outcomes/README.md)
