@@ -1,0 +1,314 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 61.873,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5004,
+    "completion_tokens": 1975,
+    "total_tokens": 6979,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 854
+    },
+    "input_tokens": 5004,
+    "output_tokens": 1975,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00451\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"MySQL\",\"label\":\"S\"},{\"start\":8,\"end\":14,\"text\":\"Oracle\",\"label\":\"S\"},{\"start\":15,\"end\":22,\"text\":\"数据库应用开发\",\"label\":\"S\"},{\"start\":27,\"end\":32,\"text\":\"SQL语句\",\"label\":\"S\"},{\"start\":35,\"end\":44,\"text\":\"常用数据库优化技术\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"数据库工具受应用开发语境限定；优化技术为可执行技术。SQL语句的知识与运用含义待裁决。\",\"issues\":[{\"kind\":\"type\",\"text\":\"SQL语句\",\"alternatives\":[\"K\",\"S\"],\"reason\":\"可指SQL语法知识，也可指开发中编写和运用查询语句；局部表述未明确区分，暂标S。\"}]},{\"id\":\"sp10k-00452\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"电脑知识\",\"label\":\"K\"},{\"start\":11,\"end\":21,\"text\":\"开关类产品的技术经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"电脑知识为知识要求；产品技术经历保留经验以维持实践要求的完整意义。\",\"issues\":[]},{\"id\":\"sp10k-00453\",\"spans\":[{\"start\":2,\"end\":19,\"text\":\"IDC网络设备及安全设备的应急响应\",\"label\":\"S\"},{\"start\":20,\"end\":22,\"text\":\"配置\",\"label\":\"S\"},{\"start\":23,\"end\":25,\"text\":\"调试\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取设备应急响应、配置和调试职责，后两项对象由局部并列语境限定。\",\"issues\":[]},{\"id\":\"sp10k-00454\",\"spans\":[{\"start\":12,\"end\":19,\"text\":\"大专及以上学历\",\"label\":\"K\"},{\"start\":21,\"end\":25,\"text\":\"教育教学\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格名；教育教学为完整职业活动，去除经验后意义仍完整；年龄不标。\",\"issues\":[]},{\"id\":\"sp10k-00455\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"软件项目开发过程\",\"label\":\"K\"},{\"start\":13,\"end\":16,\"text\":\"B/S\",\"label\":\"K\"},{\"start\":17,\"end\":22,\"text\":\"C/S架构\",\"label\":\"K\"},{\"start\":25,\"end\":30,\"text\":\"数据库设计\",\"label\":\"S\"},{\"start\":33,\"end\":41,\"text\":\"软件系统设计能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"开发过程与架构为知识要求；数据库设计和系统设计能力为领域绑定的职业技能。\",\"issues\":[]},{\"id\":\"sp10k-00456\",\"spans\":[{\"start\":9,\"end\":17,\"text\":\"礼品行业运营模式\",\"label\":\"K\"}],\"status\":\"adjudication_required\",\"note\":\"行业运营模式属于领域知识；持有客户资源是否纳入能力资格范围待决。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"有礼品客户资源\",\"alternatives\":[\"不标：已有客户资源不属于能力、知识或资格\",\"纳入：视为岗位要求的资源条件\"],\"reason\":\"原文只要求拥有资源，未描述资源开发或客户维护能力；现有规则未明确此类资源条件的范围。\"}]},{\"id\":\"sp10k-00457\",\"spans\":[{\"start\":22,\"end\":29,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":34,\"end\":40,\"text\":\"学校财务管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"提取完整学历资格与明确财务管理活动；学校招聘背景和岗位名称不标。\",\"issues\":[]},{\"id\":\"sp10k-00458\",\"spans\":[{\"start\":2,\"end\":33,\"text\":\"服务器、网络、计算机软硬件、办公设备、打印机、监控等设备的运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"多个设备对象共享运维动作，保留连续完整的职业活动，不将设备对象单独当作技能。\",\"issues\":[]},{\"id\":\"sp10k-00459\",\"spans\":[{\"start\":1,\"end\":10,\"text\":\"医院HIS系统运维\",\"label\":\"S\"},{\"start\":13,\"end\":21,\"text\":\".NET软件开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"两项均为明确职业活动，去除经验及优先考虑等修饰。\",\"issues\":[]},{\"id\":\"sp10k-00460\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"积极主动\",\"label\":\"T\"},{\"start\":7,\"end\":11,\"text\":\"认真负责\",\"label\":\"T\"},{\"start\":12,\"end\":15,\"text\":\"责任心\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"并列提取通用工作特质，去除程度修饰。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00451",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "MySQL",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "Oracle",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "text": "数据库应用开发",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 32,
+            "text": "SQL语句",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 44,
+            "text": "常用数据库优化技术",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "数据库工具受应用开发语境限定；优化技术为可执行技术。SQL语句的知识与运用含义待裁决。",
+        "issues": [
+          {
+            "kind": "type",
+            "text": "SQL语句",
+            "alternatives": [
+              "K",
+              "S"
+            ],
+            "reason": "可指SQL语法知识，也可指开发中编写和运用查询语句；局部表述未明确区分，暂标S。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00452",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "电脑知识",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 21,
+            "text": "开关类产品的技术经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "电脑知识为知识要求；产品技术经历保留经验以维持实践要求的完整意义。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00453",
+        "spans": [
+          {
+            "start": 2,
+            "end": 19,
+            "text": "IDC网络设备及安全设备的应急响应",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "配置",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "调试",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取设备应急响应、配置和调试职责，后两项对象由局部并列语境限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00454",
+        "spans": [
+          {
+            "start": 12,
+            "end": 19,
+            "text": "大专及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "教育教学",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格名；教育教学为完整职业活动，去除经验后意义仍完整；年龄不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00455",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "软件项目开发过程",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "text": "B/S",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "text": "C/S架构",
+            "label": "K"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "text": "数据库设计",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 41,
+            "text": "软件系统设计能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "开发过程与架构为知识要求；数据库设计和系统设计能力为领域绑定的职业技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00456",
+        "spans": [
+          {
+            "start": 9,
+            "end": 17,
+            "text": "礼品行业运营模式",
+            "label": "K"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "行业运营模式属于领域知识；持有客户资源是否纳入能力资格范围待决。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "有礼品客户资源",
+            "alternatives": [
+              "不标：已有客户资源不属于能力、知识或资格",
+              "纳入：视为岗位要求的资源条件"
+            ],
+            "reason": "原文只要求拥有资源，未描述资源开发或客户维护能力；现有规则未明确此类资源条件的范围。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00457",
+        "spans": [
+          {
+            "start": 22,
+            "end": 29,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "text": "学校财务管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "提取完整学历资格与明确财务管理活动；学校招聘背景和岗位名称不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00458",
+        "spans": [
+          {
+            "start": 2,
+            "end": 33,
+            "text": "服务器、网络、计算机软硬件、办公设备、打印机、监控等设备的运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "多个设备对象共享运维动作，保留连续完整的职业活动，不将设备对象单独当作技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00459",
+        "spans": [
+          {
+            "start": 1,
+            "end": 10,
+            "text": "医院HIS系统运维",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 21,
+            "text": ".NET软件开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项均为明确职业活动，去除经验及优先考虑等修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00460",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "积极主动",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "认真负责",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "text": "责任心",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列提取通用工作特质，去除程度修饰。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 46,
+  "ids": [
+    "sp10k-00451",
+    "sp10k-00452",
+    "sp10k-00453",
+    "sp10k-00454",
+    "sp10k-00455",
+    "sp10k-00456",
+    "sp10k-00457",
+    "sp10k-00458",
+    "sp10k-00459",
+    "sp10k-00460"
+  ],
+  "at": "2026-09-13T14:28:24.488999+00:00"
+}

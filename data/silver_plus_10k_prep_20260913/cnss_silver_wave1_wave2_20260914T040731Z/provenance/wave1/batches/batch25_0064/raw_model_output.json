@@ -1,0 +1,622 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03454",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "tcp/ip",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "路由",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "交换理论",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 30,
+          "text": "对网络设备进行基础配置",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络理论按K，设备配置动作按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03455",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考资格初审及结果反馈流程，不是候选人职责要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03456",
+      "spans": [
+        {
+          "start": 0,
+          "end": 8,
+          "text": "热爱客户服务工作",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "耐心",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "细致",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "客户服务意识",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 34,
+          "text": "分析解决问题的能力",
+          "label": "T"
+        },
+        {
+          "start": 39,
+          "end": 45,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 46,
+          "end": 52,
+          "text": "团队合作意识",
+          "label": "T"
+        },
+        {
+          "start": 53,
+          "end": 57,
+          "text": "管理能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "职业热情、服务意识及通用能力按T；保留共享问题对象的完整能力短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03457",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "虚拟化云平台日常运维",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 24,
+          "text": "虚拟化日常巡检",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "text": "虚拟机管理",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "text": "故障响应处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "平台运维及具体运维活动分别标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03458",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "喜欢接受挑战",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学习能力与接受挑战的意愿按T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03459",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "Windows",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 19,
+          "text": "Linux操作系统",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "相关操作",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 48,
+          "text": "WindowsServer2012及2016",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "前段明确操作语境按S；后段服务器系统的理解要求暂以S占位，类型待裁决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "WindowsServer2012及2016",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "深刻了解可能指系统知识，也可能承接前段的操作运用；缺少明确知识内容或实际使用说明。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03460",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "诚实",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "勤奋",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "负责",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "乐观",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为个人特质；此处负责表示责任特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03461",
+      "spans": [
+        {
+          "start": 7,
+          "end": 17,
+          "text": "营业部信息系统的建设",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "运维",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "安全防范",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 28,
+          "text": "管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列职能共享信息系统对象，分别按S；安全运行属于结果承诺。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03462",
+      "spans": [
+        {
+          "start": 5,
+          "end": 14,
+          "text": "分析和解决问题能力",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "团队协作能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用能力按T；分析与解决共享问题对象，保留完整短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03463",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "直播系统的架构优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "架构优化为职业动作；功能及性能提升仅为系统效果。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03464",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格复审提交材料的应聘流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03465",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "项目开发",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "需求分析",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "架构设计",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "系统实现",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 31,
+          "text": "集成",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 34,
+          "text": "测试",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 37,
+          "text": "部署",
+          "label": "S"
+        },
+        {
+          "start": 49,
+          "end": 66,
+          "text": "对技术活动和技术说明进行指导和协调",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确参与开发各阶段，分别提取职业活动；技术指导协调保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03466",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 16,
+          "text": "大专及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业核心名与完整学历要求按K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03467",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考试纪律及取消测试资格的行政规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03468",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考试时间、地点及岗位专业列表，未表达候选人能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03469",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "取得证书期限及取消聘用的流程规定，未给出具体学历或资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03470",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "活跃社群内氛围",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "定制相关话题",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 35,
+          "text": "分层精细化运营用户",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 44,
+          "text": "挖掘用户真实需求",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取具体社群运营动作；提高互动性及互动率为结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03471",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "适应能力",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 28,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 32,
+          "text": "主动性",
+          "label": "T"
+        },
+        {
+          "start": 35,
+          "end": 41,
+          "text": "自我驱动成长",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用能力、责任特质与自我发展驱动力按T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03472",
+      "spans": [
+        {
+          "start": 8,
+          "end": 15,
+          "text": "故障响应、处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留共享故障对象的响应处理活动；排除值守时间。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03473",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "理解能力",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 23,
+          "text": "分析、解决问题能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用能力；分析与解决共享问题对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03474",
+      "spans": [
+        {
+          "start": 7,
+          "end": 33,
+          "text": "物联网传感设备、会议视频系统、网络安全设备等产品经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "产品类别共享经验要求，拆分会丢失实践含义，保留整体按经验代理规则标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03475",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "广告",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格及专业核心名按K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03476",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘考试成绩处理与入围规则，不是候选人的职业职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03477",
+      "spans": [
+        {
+          "start": 2,
+          "end": 26,
+          "text": "Windows、Linux等操作系统的安装和配置",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 44,
+          "text": "Oracle数据库的安装和配置",
+          "label": "S"
+        },
+        {
+          "start": 50,
+          "end": 55,
+          "text": "计算机硬件",
+          "label": "K"
+        },
+        {
+          "start": 59,
+          "end": 63,
+          "text": "网络知识",
+          "label": "K"
+        },
+        {
+          "start": 68,
+          "end": 74,
+          "text": "Oracle",
+          "label": "S"
+        },
+        {
+          "start": 75,
+          "end": 80,
+          "text": "MySQL",
+          "label": "S"
+        },
+        {
+          "start": 81,
+          "end": 90,
+          "text": "SQLServer",
+          "label": "S"
+        },
+        {
+          "start": 103,
+          "end": 113,
+          "text": "编写常用的SQL语句",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装配置保留共享对象；硬件网络知识按K，数据库运用及SQL编写按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03478",
+      "spans": [
+        {
+          "start": 6,
+          "end": 17,
+          "text": "软件系统的日常操作维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取具有明确软件系统对象的日常操作维护活动。",
+      "issues": []
+    }
+  ]
+}

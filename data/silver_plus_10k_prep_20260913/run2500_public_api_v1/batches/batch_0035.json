@@ -1,0 +1,242 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 44.571,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5068,
+    "completion_tokens": 1398,
+    "total_tokens": 6466,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 510
+    },
+    "input_tokens": 5068,
+    "output_tokens": 1398,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00341\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"docker\",\"label\":\"S\"},{\"start\":9,\"end\":19,\"text\":\"Kubernetes\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"具体容器工具按岗位工具标S，优先条件不入跨度，类别说明不另标。\",\"issues\":[]},{\"id\":\"sp10k-00342\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为招聘公告背景、派遣安排及待遇管理说明，未列出具体任职要求。\",\"issues\":[]},{\"id\":\"sp10k-00343\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格名；招生及学位取得条件不另拆为技能提及。\",\"issues\":[]},{\"id\":\"sp10k-00344\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"计算机硬件\",\"label\":\"K\"},{\"start\":8,\"end\":12,\"text\":\"网络知识\",\"label\":\"K\"},{\"start\":15,\"end\":23,\"text\":\"处理简单网络问题\",\"label\":\"S\"},{\"start\":28,\"end\":35,\"text\":\"windows\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"硬件与网络为知识要求，处理网络问题为具体技术活动，windows为现用工具。\",\"issues\":[]},{\"id\":\"sp10k-00345\",\"spans\":[{\"start\":4,\"end\":25,\"text\":\"服务器设备及中心机房网络设备的日常运维服务\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"保留明确的设备日常运维职责；正常运转为结果要求，不标。采购的句法作用待确认。\",\"issues\":[{\"kind\":\"boundary\",\"text\":\"采购服务器设备及中心机房网络设备的日常运维服务工作\",\"alternatives\":[\"服务器设备及中心机房网络设备的日常运维服务\",\"采购服务器设备；中心机房网络设备的日常运维服务\"],\"reason\":\"采购可能是独立采购动作，也可能限定后续运维设备；原句缺少明确分隔，保守保留明确运维对象与活动。\"}]},{\"id\":\"sp10k-00346\",\"spans\":[{\"start\":4,\"end\":13,\"text\":\"angularjs\",\"label\":\"S\"},{\"start\":14,\"end\":19,\"text\":\"react\",\"label\":\"S\"},{\"start\":20,\"end\":23,\"text\":\"vue\",\"label\":\"S\"},{\"start\":36,\"end\":48,\"text\":\"JavaScript框架\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"用户界面构建语境中的具体框架及框架类别按岗位工具标S，保留原文拼写。\",\"issues\":[]},{\"id\":\"sp10k-00347\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"报名信息真实性及取消资格的行政流程说明，不属于职业能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00348\",\"spans\":[{\"start\":6,\"end\":13,\"text\":\"施工/设计规范\",\"label\":\"K\"},{\"start\":14,\"end\":18,\"text\":\"法律法规\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"规范和法律法规为知识要求，施工与设计共享规范中心词，保留连续完整提及。\",\"issues\":[]},{\"id\":\"sp10k-00349\",\"spans\":[{\"start\":2,\"end\":22,\"text\":\"海外项目的安装、调试、运维等的全过程管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确专业项目全过程管理职责；各阶段共享管理中心，保留完整活动。\",\"issues\":[]},{\"id\":\"sp10k-00350\",\"spans\":[{\"start\":7,\"end\":14,\"text\":\"心血管内科方向\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"局部专业限定明确，抽取专业方向；不将专业代码单独作为技能提及。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00341",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "docker",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 19,
+            "text": "Kubernetes",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "具体容器工具按岗位工具标S，优先条件不入跨度，类别说明不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00342",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为招聘公告背景、派遣安排及待遇管理说明，未列出具体任职要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00343",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格名；招生及学位取得条件不另拆为技能提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00344",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "计算机硬件",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "网络知识",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "text": "处理简单网络问题",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "text": "windows",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "硬件与网络为知识要求，处理网络问题为具体技术活动，windows为现用工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00345",
+        "spans": [
+          {
+            "start": 4,
+            "end": 25,
+            "text": "服务器设备及中心机房网络设备的日常运维服务",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "保留明确的设备日常运维职责；正常运转为结果要求，不标。采购的句法作用待确认。",
+        "issues": [
+          {
+            "kind": "boundary",
+            "text": "采购服务器设备及中心机房网络设备的日常运维服务工作",
+            "alternatives": [
+              "服务器设备及中心机房网络设备的日常运维服务",
+              "采购服务器设备；中心机房网络设备的日常运维服务"
+            ],
+            "reason": "采购可能是独立采购动作，也可能限定后续运维设备；原句缺少明确分隔，保守保留明确运维对象与活动。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00346",
+        "spans": [
+          {
+            "start": 4,
+            "end": 13,
+            "text": "angularjs",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "text": "react",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 23,
+            "text": "vue",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 48,
+            "text": "JavaScript框架",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "用户界面构建语境中的具体框架及框架类别按岗位工具标S，保留原文拼写。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00347",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "报名信息真实性及取消资格的行政流程说明，不属于职业能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00348",
+        "spans": [
+          {
+            "start": 6,
+            "end": 13,
+            "text": "施工/设计规范",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "法律法规",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "规范和法律法规为知识要求，施工与设计共享规范中心词，保留连续完整提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00349",
+        "spans": [
+          {
+            "start": 2,
+            "end": 22,
+            "text": "海外项目的安装、调试、运维等的全过程管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确专业项目全过程管理职责；各阶段共享管理中心，保留完整活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00350",
+        "spans": [
+          {
+            "start": 7,
+            "end": 14,
+            "text": "心血管内科方向",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "局部专业限定明确，抽取专业方向；不将专业代码单独作为技能提及。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 35,
+  "ids": [
+    "sp10k-00341",
+    "sp10k-00342",
+    "sp10k-00343",
+    "sp10k-00344",
+    "sp10k-00345",
+    "sp10k-00346",
+    "sp10k-00347",
+    "sp10k-00348",
+    "sp10k-00349",
+    "sp10k-00350"
+  ],
+  "at": "2026-09-13T14:20:09.650013+00:00"
+}

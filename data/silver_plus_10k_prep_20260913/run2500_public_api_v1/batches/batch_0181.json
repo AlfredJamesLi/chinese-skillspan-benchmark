@@ -1,0 +1,205 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 40.73,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5073,
+    "completion_tokens": 953,
+    "total_tokens": 6026,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 297
+    },
+    "input_tokens": 5073,
+    "output_tokens": 953,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01918\",\"spans\":[{\"start\":6,\"end\":12,\"text\":\"Office\",\"label\":\"S\"},{\"start\":25,\"end\":34,\"text\":\"Photoshop\",\"label\":\"S\"},{\"start\":35,\"end\":44,\"text\":\"CorelDraw\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取岗位使用的具体办公及设计软件名；熟练使用等触发词不入跨度。\",\"issues\":[]},{\"id\":\"sp10k-01921\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"执业药师资格证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"非语言职业资格按K标注，去除优先等修饰。\",\"issues\":[]},{\"id\":\"sp10k-01923\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报名材料提交要求，证件名称不构成独立的候选人资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01927\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅含招聘范围与资格条件标题，没有具体能力或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01928\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"描述招聘选聘的管理原则，不是候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01931\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":7,\"end\":11,\"text\":\"待人热情\",\"label\":\"T\"},{\"start\":12,\"end\":16,\"text\":\"踏实肯干\",\"label\":\"T\"},{\"start\":21,\"end\":28,\"text\":\"计算机基本操作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"责任心、待人态度及做事特质为T，计算机操作为可执行技能S。\",\"issues\":[]},{\"id\":\"sp10k-01933\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅描述录取名额空缺时的递补程序。\",\"issues\":[]},{\"id\":\"sp10k-01934\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅描述笔试成绩排序及资格复审人员确定程序。\",\"issues\":[]},{\"id\":\"sp10k-01936\",\"spans\":[{\"start\":4,\"end\":6,\"text\":\"收银\",\"label\":\"S\"},{\"start\":7,\"end\":11,\"text\":\"整理货物\",\"label\":\"S\"},{\"start\":12,\"end\":18,\"text\":\"打扫超市卫生\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"将明确执行的三项职业活动分别标为S。\",\"issues\":[]},{\"id\":\"sp10k-01937\",\"spans\":[{\"start\":3,\"end\":5,\"text\":\"博士\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"招聘博士明确限定部分岗位的学历资格；其余内容为考试组织及招聘计划调整程序，不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01918",
+        "spans": [
+          {
+            "start": 6,
+            "end": 12,
+            "text": "Office",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 34,
+            "text": "Photoshop",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 44,
+            "text": "CorelDraw",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取岗位使用的具体办公及设计软件名；熟练使用等触发词不入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01921",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "执业药师资格证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "非语言职业资格按K标注，去除优先等修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01923",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报名材料提交要求，证件名称不构成独立的候选人资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01927",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅含招聘范围与资格条件标题，没有具体能力或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01928",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "描述招聘选聘的管理原则，不是候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01931",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "待人热情",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "踏实肯干",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 28,
+            "text": "计算机基本操作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "责任心、待人态度及做事特质为T，计算机操作为可执行技能S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01933",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅描述录取名额空缺时的递补程序。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01934",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅描述笔试成绩排序及资格复审人员确定程序。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01936",
+        "spans": [
+          {
+            "start": 4,
+            "end": 6,
+            "text": "收银",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "整理货物",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "text": "打扫超市卫生",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "将明确执行的三项职业活动分别标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01937",
+        "spans": [
+          {
+            "start": 3,
+            "end": 5,
+            "text": "博士",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "招聘博士明确限定部分岗位的学历资格；其余内容为考试组织及招聘计划调整程序，不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 181,
+  "ids": [
+    "sp10k-01918",
+    "sp10k-01921",
+    "sp10k-01923",
+    "sp10k-01927",
+    "sp10k-01928",
+    "sp10k-01931",
+    "sp10k-01933",
+    "sp10k-01934",
+    "sp10k-01936",
+    "sp10k-01937"
+  ],
+  "at": "2026-09-13T16:37:51.726446+00:00"
+}

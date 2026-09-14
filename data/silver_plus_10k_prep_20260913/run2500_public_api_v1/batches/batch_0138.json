@@ -1,0 +1,560 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 94.587,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5067,
+    "completion_tokens": 2413,
+    "total_tokens": 7480,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1288
+    },
+    "input_tokens": 5067,
+    "output_tokens": 2413,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01372",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            18
+          ],
+          "to": [
+            3,
+            21
+          ],
+          "text": "消防行业特有工种职业资格证书（中级）"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01373",
+      "repairs": [
+        {
+          "i": 8,
+          "action": "snapped",
+          "from": [
+            64,
+            68
+          ],
+          "to": [
+            62,
+            66
+          ],
+          "text": "安装配置"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01376",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "密切合作"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            24
+          ],
+          "to": [
+            15,
+            26
+          ],
+          "text": "找出系统之间的依赖关系"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01378",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            6
+          ],
+          "to": [
+            2,
+            7
+          ],
+          "text": "数据库设计"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            12
+          ],
+          "to": [
+            8,
+            13
+          ],
+          "text": "mysql"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            13,
+            19
+          ],
+          "to": [
+            14,
+            20
+          ],
+          "text": "Oracle"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            30,
+            35
+          ],
+          "to": [
+            29,
+            34
+          ],
+          "text": "SQL编写"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            36,
+            40
+          ],
+          "to": [
+            35,
+            39
+          ],
+          "text": "优化能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01379",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            45,
+            53
+          ],
+          "to": [
+            32,
+            39
+          ],
+          "text": "学历、学位证书"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            64,
+            68
+          ],
+          "to": [
+            49,
+            53
+          ],
+          "text": "翻译资料"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            103,
+            107
+          ],
+          "to": [
+            79,
+            83
+          ],
+          "text": "认证报告"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01380",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            31,
+            40
+          ],
+          "to": [
+            17,
+            25
+          ],
+          "text": "运维相关工作经验"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01371\",\"spans\":[{\"start\":4,\"end\":9,\"text\":\"教师资格证\",\"label\":\"K\"},{\"start\":10,\"end\":13,\"text\":\"毕业证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"教师资格证和毕业证属于资格或学历证书。\",\"issues\":[]},{\"id\":\"sp10k-01372\",\"spans\":[{\"start\":0,\"end\":18,\"text\":\"消防行业特有工种职业资格证书（中级）\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"消防行业特有工种职业资格证书属于非语言职业资格。\",\"issues\":[]},{\"id\":\"sp10k-01373\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"nginx\",\"label\":\"S\"},{\"start\":8,\"end\":14,\"text\":\"tomcat\",\"label\":\"S\"},{\"start\":15,\"end\":20,\"text\":\"mysql\",\"label\":\"S\"},{\"start\":21,\"end\":25,\"text\":\"java\",\"label\":\"S\"},{\"start\":26,\"end\":34,\"text\":\"activemq\",\"label\":\"S\"},{\"start\":35,\"end\":44,\"text\":\"zookeeper\",\"label\":\"S\"},{\"start\":45,\"end\":50,\"text\":\"kafka\",\"label\":\"S\"},{\"start\":51,\"end\":58,\"text\":\"MongoDB\",\"label\":\"S\"},{\"start\":64,\"end\":68,\"text\":\"安装配置\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"服务安装配置语境中的各项岗位工具及可执行安装配置活动。\",\"issues\":[]},{\"id\":\"sp10k-01374\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"工作积极主动\",\"label\":\"T\"},{\"start\":8,\"end\":11,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":12,\"end\":16,\"text\":\"耐心细致\",\"label\":\"T\"},{\"start\":17,\"end\":28,\"text\":\"能够承受一定的工作压力\",\"label\":\"T\"},{\"start\":33,\"end\":37,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":42,\"end\":46,\"text\":\"团队精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为候选人的通用能力、工作特质或软技能。\",\"issues\":[]},{\"id\":\"sp10k-01375\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"协调能力\",\"label\":\"T\"},{\"start\":19,\"end\":24,\"text\":\"工作主动性\",\"label\":\"T\"},{\"start\":25,\"end\":29,\"text\":\"服务意识\",\"label\":\"T\"},{\"start\":30,\"end\":34,\"text\":\"吃苦耐劳\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为通用沟通协调能力或工作特质。\",\"issues\":[]},{\"id\":\"sp10k-01376\",\"spans\":[{\"start\":9,\"end\":13,\"text\":\"密切合作\",\"label\":\"T\"},{\"start\":14,\"end\":24,\"text\":\"找出系统之间的依赖关系\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"密切合作属于协作能力；找出系统依赖关系是明确技术分析活动。发布稳定和交付质量属于结果要求，未标注。\",\"issues\":[]},{\"id\":\"sp10k-01377\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"Oracal\",\"label\":\"S\"},{\"start\":12,\"end\":18,\"text\":\"SQL数据库\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库应用语境中的工具或技术对象。\",\"issues\":[]},{\"id\":\"sp10k-01378\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"数据库设计\",\"label\":\"S\"},{\"start\":7,\"end\":12,\"text\":\"mysql\",\"label\":\"S\"},{\"start\":13,\"end\":19,\"text\":\"Oracle\",\"label\":\"S\"},{\"start\":30,\"end\":35,\"text\":\"SQL编写\",\"label\":\"S\"},{\"start\":36,\"end\":40,\"text\":\"优化能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库设计、数据库工具使用以及SQL编写和优化均为可执行技术活动或方法能力。\",\"issues\":[]},{\"id\":\"sp10k-01379\",\"spans\":[{\"start\":45,\"end\":53,\"text\":\"学历、学位证书\",\"label\":\"K\"},{\"start\":64,\"end\":68,\"text\":\"翻译资料\",\"label\":\"K\"},{\"start\":103,\"end\":107,\"text\":\"认证报告\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"条件性材料要求中的学历学位证书、翻译资料和认证报告属于资格或证明材料。\",\"issues\":[]},{\"id\":\"sp10k-01380\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"大专以上学历\",\"label\":\"K\"},{\"start\":31,\"end\":40,\"text\":\"运维相关工作经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"大专以上学历是学历资格；运维相关工作经验指向明确的职业活动实践。计算机相关专业未单独标注。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01371",
+        "spans": [
+          {
+            "start": 4,
+            "end": 9,
+            "text": "教师资格证",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "text": "毕业证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "教师资格证和毕业证属于资格或学历证书。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01372",
+        "spans": [
+          {
+            "start": 3,
+            "end": 21,
+            "text": "消防行业特有工种职业资格证书（中级）",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "消防行业特有工种职业资格证书属于非语言职业资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01373",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "nginx",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "tomcat",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "text": "mysql",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "java",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 34,
+            "text": "activemq",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 44,
+            "text": "zookeeper",
+            "label": "S"
+          },
+          {
+            "start": 45,
+            "end": 50,
+            "text": "kafka",
+            "label": "S"
+          },
+          {
+            "start": 51,
+            "end": 58,
+            "text": "MongoDB",
+            "label": "S"
+          },
+          {
+            "start": 62,
+            "end": 66,
+            "text": "安装配置",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "服务安装配置语境中的各项岗位工具及可执行安装配置活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01374",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "工作积极主动",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "耐心细致",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 28,
+            "text": "能够承受一定的工作压力",
+            "label": "T"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 42,
+            "end": 46,
+            "text": "团队精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为候选人的通用能力、工作特质或软技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01375",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "协调能力",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 24,
+            "text": "工作主动性",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "服务意识",
+            "label": "T"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "吃苦耐劳",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为通用沟通协调能力或工作特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01376",
+        "spans": [
+          {
+            "start": 10,
+            "end": 14,
+            "text": "密切合作",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 26,
+            "text": "找出系统之间的依赖关系",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "密切合作属于协作能力；找出系统依赖关系是明确技术分析活动。发布稳定和交付质量属于结果要求，未标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01377",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "Oracal",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "text": "SQL数据库",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库应用语境中的工具或技术对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01378",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "数据库设计",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "text": "mysql",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "Oracle",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 34,
+            "text": "SQL编写",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 39,
+            "text": "优化能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库设计、数据库工具使用以及SQL编写和优化均为可执行技术活动或方法能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01379",
+        "spans": [
+          {
+            "start": 32,
+            "end": 39,
+            "text": "学历、学位证书",
+            "label": "K"
+          },
+          {
+            "start": 49,
+            "end": 53,
+            "text": "翻译资料",
+            "label": "K"
+          },
+          {
+            "start": 79,
+            "end": 83,
+            "text": "认证报告",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "条件性材料要求中的学历学位证书、翻译资料和认证报告属于资格或证明材料。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01380",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "大专以上学历",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 25,
+            "text": "运维相关工作经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "大专以上学历是学历资格；运维相关工作经验指向明确的职业活动实践。计算机相关专业未单独标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 138,
+  "ids": [
+    "sp10k-01371",
+    "sp10k-01372",
+    "sp10k-01373",
+    "sp10k-01374",
+    "sp10k-01375",
+    "sp10k-01376",
+    "sp10k-01377",
+    "sp10k-01378",
+    "sp10k-01379",
+    "sp10k-01380"
+  ],
+  "at": "2026-09-13T15:54:32.288835+00:00"
+}

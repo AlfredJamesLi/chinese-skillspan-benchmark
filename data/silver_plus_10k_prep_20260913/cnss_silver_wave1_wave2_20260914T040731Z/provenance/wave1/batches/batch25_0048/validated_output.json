@@ -1,0 +1,532 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03042",
+      "spans": [
+        {
+          "start": 5,
+          "end": 27,
+          "text": "关闭所有计算机、服务器及网络设备、电源、空调",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 37,
+          "text": "关闭实验室所有门窗",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 44,
+          "text": "开启安防设施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确的设备关闭与实验室安全操作职责；保留共享动作的完整对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03043",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "项目上线部署",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "现场测试",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "客户对接",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "部署、测试为职业活动；客户对接为人员联络。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03044",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅介绍招聘计划、岗位名称及条件标题，未列具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03045",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅含招聘公告、岗位名称和人数，未明确知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03046",
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "SVN",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "CVS",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求使用版本控制工具；类别说明不重复标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03047",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告指引查阅职位表，未提供具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03048",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于应聘资格复审流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03049",
+      "spans": [
+        {
+          "start": 21,
+          "end": 23,
+          "text": "财会",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 26,
+          "text": "审计",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "工程经济",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "卫生经济",
+          "label": "K"
+        },
+        {
+          "start": 44,
+          "end": 53,
+          "text": "大学本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "专业背景与学历明确标K；年龄不标，政治身份的范围待裁决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "中国共产党党员",
+          "alternatives": [
+            "纳入非语言资格要求",
+            "排除政治身份条件"
+          ],
+          "reason": "协议未明确政治身份是否属于所指非语言资格，不能仅由招聘条件身份确定标注范围。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03050",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "专科以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历要求；性别与年龄不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03051",
+      "spans": [
+        {
+          "start": 3,
+          "end": 11,
+          "text": "面向对象设计能力",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 19,
+          "text": "高可用",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "text": "高复用",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 43,
+          "text": "承受较大的工作压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设计能力为S；系统特性的理解为K，非结果承诺；承压要求为T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03052",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "Mysql",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 20,
+          "text": "Postgresql",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "text": "Nginx",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 32,
+          "text": "Redis",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 40,
+          "text": "服务部署与优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体工具受部署与优化实践限定；动作保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03053",
+      "spans": [
+        {
+          "start": 16,
+          "end": 26,
+          "text": "云平台及备份相关维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取维护职责，保留共享维护动作，去除机构地点和泛化工作后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03054",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "客户接待",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "拜访客户",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "text": "挖掘客户潜在需求",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "接待、拜访与需求挖掘是明确的客户业务活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03055",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "视频监控系统",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 18,
+          "text": "UPS供电系统",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "无线AP系统",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "系统要求的范围与边界明确；知识熟悉或设备运用未区分，S仅为类型待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "视频监控系统",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅要求熟悉设备，未说明系统知识还是实际操作维护。"
+        },
+        {
+          "kind": "type",
+          "text": "UPS供电系统",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅要求熟悉设备，缺少原理知识或岗位运用的明确限定。"
+        },
+        {
+          "kind": "type",
+          "text": "无线AP系统",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅要求熟悉设备，不能确定属于知识理解还是工具运用。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03056",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于资格条件认定及学历材料使用规则，未列具体学历要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03057",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "Linux系统",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "Suse系统",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "Ubuntu",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "text": "CentOS",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "前两项由系统理解语境限定为K；后两项明确要求使用，标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03058",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "介绍劳动合同、工作安排和考核管理制度，无具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03059",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明资格初审结果的公布时间和渠道。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03060",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列应聘证明材料，未明确职业活动或专业资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03061",
+      "spans": [
+        {
+          "start": 0,
+          "end": 8,
+          "text": "全日制本科及以上",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留原文完整学历要求，不补写学历；放宽条件不构成独立提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03062",
+      "spans": [
+        {
+          "start": 49,
+          "end": 54,
+          "text": "大专及以上",
+          "label": "K"
+        },
+        {
+          "start": 54,
+          "end": 58,
+          "text": "口腔医学",
+          "label": "K"
+        },
+        {
+          "start": 58,
+          "end": 65,
+          "text": "执业医师及以上",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "按岗位表字段抽取学历、专业及非语言资格；岗位名称、人数和年龄不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03063",
+      "spans": [
+        {
+          "start": 1,
+          "end": 5,
+          "text": "金融科技",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "证券",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "期货",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 26,
+          "text": "基金公司业务模式",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "行业背景抽取领域核心名；并列业务知识共享公司业务模式语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03064",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Linux操作系统",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "监控软件",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "监控软件明确有使用要求；Linux操作系统的S为类型待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "Linux操作系统",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "熟悉操作系统未区分知识理解与实际运用，监控软件的使用不能直接证明操作系统要求的类型。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03065",
+      "spans": [
+        {
+          "start": 0,
+          "end": 12,
+          "text": "解决日常网络及计算机故障",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 23,
+          "text": "系统性故障的查修",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项均有明确技术故障对象，分别抽取处理与查修活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03066",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "思路清晰",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "学习能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "思维特质与学习能力为T；泛化知识储备无具体知识提及，值班适应属于班次条件。",
+      "issues": []
+    }
+  ]
+}

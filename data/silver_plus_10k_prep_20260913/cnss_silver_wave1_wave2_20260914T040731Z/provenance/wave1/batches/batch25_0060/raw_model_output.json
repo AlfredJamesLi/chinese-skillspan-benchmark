@@ -1,0 +1,570 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03351",
+      "spans": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "网络规划及设计",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "text": "撰写方案建议书",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取网络规划设计与方案撰写活动，保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03352",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明资格材料查验及复印件要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03353",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于招聘公告解释权说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03354",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于资格复审材料清单，未独立陈述具体资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03355",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘依据与招聘安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03356",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "abap开发",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "SAP报表",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 26,
+          "text": "ALV",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 32,
+          "text": "WRITE",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 38,
+          "text": "Query",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "text": "表单打印",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 55,
+          "text": "Smartforms",
+          "label": "S"
+        },
+        {
+          "start": 57,
+          "end": 62,
+          "text": "批处理程序",
+          "label": "S"
+        },
+        {
+          "start": 63,
+          "end": 67,
+          "text": "LSMW",
+          "label": "S"
+        },
+        {
+          "start": 68,
+          "end": 71,
+          "text": "BDC",
+          "label": "S"
+        },
+        {
+          "start": 73,
+          "end": 81,
+          "text": "屏幕会话程序开发",
+          "label": "S"
+        },
+        {
+          "start": 82,
+          "end": 91,
+          "text": "用户出口和增强开发",
+          "label": "S"
+        },
+        {
+          "start": 92,
+          "end": 96,
+          "text": "接口开发",
+          "label": "S"
+        },
+        {
+          "start": 97,
+          "end": 101,
+          "text": "IDOC",
+          "label": "S"
+        },
+        {
+          "start": 102,
+          "end": 105,
+          "text": "RFC",
+          "label": "S"
+        },
+        {
+          "start": 106,
+          "end": 110,
+          "text": "BAPI",
+          "label": "S"
+        },
+        {
+          "start": 111,
+          "end": 121,
+          "text": "WebService",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发实践及其工具按S抽取；去除年限和经验后缀，保留必要共享开发成分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03357",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "Shell",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "Perl",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "Python",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "脚本语言",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "脚本语言及具体语言名称属于岗位工具要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03358",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明生活保障证明的办理材料。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03359",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求提供证明材料，未指明具体资格或职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03360",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格及专业核心名；泛化经验不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03361",
+      "spans": [
+        {
+          "start": 0,
+          "end": 17,
+          "text": "电话网络、监控软件机房的管理和维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "技术设施管理维护为职业活动，保留共享对象与动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03362",
+      "spans": [
+        {
+          "start": 12,
+          "end": 16,
+          "text": "兼任课程",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 35,
+          "text": "掌握各年级各学科各阶段的教学情况",
+          "label": "S"
+        },
+        {
+          "start": 47,
+          "end": 49,
+          "text": "听课",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 59,
+          "text": "与教师交换意见",
+          "label": "T"
+        },
+        {
+          "start": 65,
+          "end": 67,
+          "text": "听课",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取教学及教学管理职责；此处掌握教学情况为持续了解教学运行的职责动作，教师意见交流为T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03363",
+      "spans": [
+        {
+          "start": 78,
+          "end": 85,
+          "text": "本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "招聘对象中明确嵌有学历要求；泛称资格条件与报名身份不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03364",
+      "spans": [
+        {
+          "start": 2,
+          "end": 54,
+          "text": "桌面计算机软硬件设备（计算机、打印机、扫描仪、视频会议系统、投影器材等）安装、配置、升级、运行维护与管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备操作维护共享前置对象，保留完整连续跨度；正常运行等结果要求不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03365",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明应聘信息填报要求，诚信在此属于报名流程要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03366",
+      "spans": [
+        {
+          "start": 8,
+          "end": 20,
+          "text": "自动化运维、配置管理工具",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "ansible",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "text": "Puppet",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "Chef",
+          "label": "S"
+        },
+        {
+          "start": 42,
+          "end": 51,
+          "text": "saltstack",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位工具类别及具体工具名按S；类别保留共享中心词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03367",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘测试分数线及流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03368",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "操作系统",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 16,
+          "text": "计算机办公软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求使用的系统与办公软件按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03369",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "抗压能力",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "狼性",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抗压能力与口语性格特质均为T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03370",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘专业目录的参考文件。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03371",
+      "spans": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "团队协作能力",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "text": "分析解决问题能力",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 44,
+          "text": "解决工作中出现的各种故障",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "通用沟通协作和问题分析能力为T；故障解决的职业对象不明确，S仅为类型待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "解决工作中出现的各种故障",
+          "alternatives": [
+            "S",
+            "T"
+          ],
+          "reason": "故障可能指具体技术故障，也可能泛指工作问题；缺少故障对象及岗位活动信息，无法确定是否为专业故障处理。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03372",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "服从工作安排",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "认真负责",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 30,
+          "text": "承受一定的工作压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取工作态度与抗压特质；值夜班属于班次要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03373",
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "虚拟化",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "text": "分布式文件系统",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "脚本语言",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 39,
+          "text": "Shell",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "text": "Perl",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 51,
+          "text": "Python",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "虚拟化与分布式文件系统受局部实施经验限定，按S；脚本语言为岗位工具要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03374",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "自动化",
+          "label": "K"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "text": "自动控制",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "软件工程",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列专业核心名和完整学历资格均为K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03375",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明资格复审逾期处理与递补程序。",
+      "issues": []
+    }
+  ]
+}

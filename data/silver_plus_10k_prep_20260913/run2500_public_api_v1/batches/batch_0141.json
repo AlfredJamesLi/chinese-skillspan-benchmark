@@ -1,0 +1,275 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 52.677,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4964,
+    "completion_tokens": 1649,
+    "total_tokens": 6613,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 765
+    },
+    "input_tokens": 4964,
+    "output_tokens": 1649,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01401\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"项目服务器的正常运行\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"服务器运行作为明确负责的职业活动标S。\",\"issues\":[]},{\"id\":\"sp10k-01402\",\"spans\":[{\"start\":7,\"end\":9,\"text\":\"C#\",\"label\":\"K\"},{\"start\":10,\"end\":11,\"text\":\"C\",\"label\":\"K\"},{\"start\":12,\"end\":15,\"text\":\"C++\",\"label\":\"K\"},{\"start\":16,\"end\":18,\"text\":\"VB\",\"label\":\"K\"},{\"start\":19,\"end\":23,\"text\":\"JAVA\",\"label\":\"K\"},{\"start\":32,\"end\":44,\"text\":\"SQLServer数据库\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"局部明确列为专业知识，开发语言与数据库按知识要求标K；并列名称分别抽取。\",\"issues\":[]},{\"id\":\"sp10k-01403\",\"spans\":[{\"start\":0,\"end\":9,\"text\":\"教育学（师范）专业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"明确专业名标K，保留师范方向限定。\",\"issues\":[]},{\"id\":\"sp10k-01404\",\"spans\":[{\"start\":2,\"end\":17,\"text\":\"路由器、三层交换机基本工作原理\",\"label\":\"K\"},{\"start\":18,\"end\":20,\"text\":\"配置\",\"label\":\"S\"},{\"start\":21,\"end\":25,\"text\":\"使用方法\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"工作原理标K，保留共享知识中心；配置和使用方法为明确可执行活动与方法，标S。\",\"issues\":[]},{\"id\":\"sp10k-01405\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"软件系统培训\",\"label\":\"S\"},{\"start\":13,\"end\":15,\"text\":\"运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"培训与运维为独立职业活动，去除职责触发词及时间修饰。\",\"issues\":[]},{\"id\":\"sp10k-01406\",\"spans\":[{\"start\":8,\"end\":12,\"text\":\"技术培训\",\"label\":\"S\"},{\"start\":15,\"end\":24,\"text\":\"解答客户的技术问题\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"客户技术培训及技术问题解答分别标S。\",\"issues\":[]},{\"id\":\"sp10k-01407\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":20,\"end\":25,\"text\":\"EXCEL\",\"label\":\"S\"},{\"start\":26,\"end\":29,\"text\":\"PPT\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"完整学历资格标K，岗位办公工具标S；接受应届生实习生不标。\",\"issues\":[]},{\"id\":\"sp10k-01408\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"MySQL数据库\",\"label\":\"S\"},{\"start\":13,\"end\":25,\"text\":\"oracle数据库的安装\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"性能优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库处于岗位运用及安装优化语境，工具和独立技术活动标S。\",\"issues\":[]},{\"id\":\"sp10k-01409\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报考时提交工作经验证明的行政流程，无具体能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01410\",\"spans\":[{\"start\":13,\"end\":22,\"text\":\"纵向、横向课题申请\",\"label\":\"S\"},{\"start\":28,\"end\":37,\"text\":\"各项事务的协调安排\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"课题申请为职业活动，保留共享中心；泛化事务协调安排为通用组织协调能力。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01401",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "项目服务器的正常运行",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "服务器运行作为明确负责的职业活动标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01402",
+        "spans": [
+          {
+            "start": 7,
+            "end": 9,
+            "text": "C#",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 11,
+            "text": "C",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "text": "C++",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 18,
+            "text": "VB",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "JAVA",
+            "label": "K"
+          },
+          {
+            "start": 32,
+            "end": 44,
+            "text": "SQLServer数据库",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "局部明确列为专业知识，开发语言与数据库按知识要求标K；并列名称分别抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01403",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "教育学（师范）专业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确专业名标K，保留师范方向限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01404",
+        "spans": [
+          {
+            "start": 2,
+            "end": 17,
+            "text": "路由器、三层交换机基本工作原理",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 20,
+            "text": "配置",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "使用方法",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "工作原理标K，保留共享知识中心；配置和使用方法为明确可执行活动与方法，标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01405",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "软件系统培训",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "text": "运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "培训与运维为独立职业活动，去除职责触发词及时间修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01406",
+        "spans": [
+          {
+            "start": 8,
+            "end": 12,
+            "text": "技术培训",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "text": "解答客户的技术问题",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "客户技术培训及技术问题解答分别标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01407",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "text": "EXCEL",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 29,
+            "text": "PPT",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "完整学历资格标K，岗位办公工具标S；接受应届生实习生不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01408",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "MySQL数据库",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 25,
+            "text": "oracle数据库的安装",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "性能优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库处于岗位运用及安装优化语境，工具和独立技术活动标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01409",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报考时提交工作经验证明的行政流程，无具体能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01410",
+        "spans": [
+          {
+            "start": 13,
+            "end": 22,
+            "text": "纵向、横向课题申请",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 37,
+            "text": "各项事务的协调安排",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "课题申请为职业活动，保留共享中心；泛化事务协调安排为通用组织协调能力。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 141,
+  "ids": [
+    "sp10k-01401",
+    "sp10k-01402",
+    "sp10k-01403",
+    "sp10k-01404",
+    "sp10k-01405",
+    "sp10k-01406",
+    "sp10k-01407",
+    "sp10k-01408",
+    "sp10k-01409",
+    "sp10k-01410"
+  ],
+  "at": "2026-09-13T15:57:49.197037+00:00"
+}

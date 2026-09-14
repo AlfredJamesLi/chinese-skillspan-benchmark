@@ -1,0 +1,260 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 53.969,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5108,
+    "completion_tokens": 1638,
+    "total_tokens": 6746,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 764
+    },
+    "input_tokens": 5108,
+    "output_tokens": 1638,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01111\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"数据安全规划\",\"label\":\"S\"},{\"start\":15,\"end\":23,\"text\":\"数据的备份与容灾\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确职业活动；备份与容灾保留共享的数据对象。\",\"issues\":[]},{\"id\":\"sp10k-01112\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"理解能力\",\"label\":\"T\"},{\"start\":15,\"end\":19,\"text\":\"协作精神\",\"label\":\"T\"},{\"start\":21,\"end\":30,\"text\":\"独立解决问题的能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为跨行业通用能力或特质；解决问题未限定具体技术或业务对象。\",\"issues\":[]},{\"id\":\"sp10k-01113\",\"spans\":[{\"start\":0,\"end\":3,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":5,\"end\":12,\"text\":\"大专及以上学历\",\"label\":\"K\"},{\"start\":18,\"end\":22,\"text\":\"系统运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取专业、完整学历资格和运维活动；排除经验年限及非核心修饰。\",\"issues\":[]},{\"id\":\"sp10k-01114\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明招聘考试成绩构成与权重，不构成具体能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01115\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名资格材料提交及核验流程，未列明具体学历或资格名称。\",\"issues\":[]},{\"id\":\"sp10k-01116\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"为服务平台业务介绍，未嵌入候选人要求或岗位执行职责。\",\"issues\":[]},{\"id\":\"sp10k-01117\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅界定在校社会实践不计入工作经历，不是候选人学历或能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01118\",\"spans\":[{\"start\":34,\"end\":38,\"text\":\"语言表达\",\"label\":\"T\"},{\"start\":39,\"end\":43,\"text\":\"文字功底\",\"label\":\"T\"},{\"start\":48,\"end\":52,\"text\":\"Word\",\"label\":\"S\"},{\"start\":53,\"end\":58,\"text\":\"Excel\",\"label\":\"S\"},{\"start\":59,\"end\":62,\"text\":\"PPT\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"表达与文字功底为通用能力，办公工具按岗位使用标S；泛指学历资格及全面履职不作为具体提及。\",\"issues\":[]},{\"id\":\"sp10k-01119\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"Javascript\",\"label\":\"S\"},{\"start\":20,\"end\":26,\"text\":\"主流JS框架\",\"label\":\"K\"},{\"start\":28,\"end\":31,\"text\":\"vue\",\"label\":\"K\"},{\"start\":32,\"end\":39,\"text\":\"angular\",\"label\":\"K\"},{\"start\":41,\"end\":45,\"text\":\"实现原理\",\"label\":\"K\"},{\"start\":46,\"end\":52,\"text\":\"主要技术特征\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"前端开发语言按工具标S；框架及其示例受明确实现原理和技术特征知识语境限定，标K。\",\"issues\":[]},{\"id\":\"sp10k-01120\",\"spans\":[{\"start\":6,\"end\":16,\"text\":\"计算机或市政工程管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"按具有年限要求的专业管理实践抽取；保留并列对象共享的管理成分，排除年限与优先修饰。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01111",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "数据安全规划",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "text": "数据的备份与容灾",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确职业活动；备份与容灾保留共享的数据对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01112",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "理解能力",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "协作精神",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 30,
+            "text": "独立解决问题的能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为跨行业通用能力或特质；解决问题未限定具体技术或业务对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01113",
+        "spans": [
+          {
+            "start": 0,
+            "end": 3,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 5,
+            "end": 12,
+            "text": "大专及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "系统运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取专业、完整学历资格和运维活动；排除经验年限及非核心修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01114",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明招聘考试成绩构成与权重，不构成具体能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01115",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名资格材料提交及核验流程，未列明具体学历或资格名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01116",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "为服务平台业务介绍，未嵌入候选人要求或岗位执行职责。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01117",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅界定在校社会实践不计入工作经历，不是候选人学历或能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01118",
+        "spans": [
+          {
+            "start": 34,
+            "end": 38,
+            "text": "语言表达",
+            "label": "T"
+          },
+          {
+            "start": 39,
+            "end": 43,
+            "text": "文字功底",
+            "label": "T"
+          },
+          {
+            "start": 48,
+            "end": 52,
+            "text": "Word",
+            "label": "S"
+          },
+          {
+            "start": 53,
+            "end": 58,
+            "text": "Excel",
+            "label": "S"
+          },
+          {
+            "start": 59,
+            "end": 62,
+            "text": "PPT",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "表达与文字功底为通用能力，办公工具按岗位使用标S；泛指学历资格及全面履职不作为具体提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01119",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "Javascript",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "主流JS框架",
+            "label": "K"
+          },
+          {
+            "start": 28,
+            "end": 31,
+            "text": "vue",
+            "label": "K"
+          },
+          {
+            "start": 32,
+            "end": 39,
+            "text": "angular",
+            "label": "K"
+          },
+          {
+            "start": 41,
+            "end": 45,
+            "text": "实现原理",
+            "label": "K"
+          },
+          {
+            "start": 46,
+            "end": 52,
+            "text": "主要技术特征",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "前端开发语言按工具标S；框架及其示例受明确实现原理和技术特征知识语境限定，标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01120",
+        "spans": [
+          {
+            "start": 6,
+            "end": 16,
+            "text": "计算机或市政工程管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "按具有年限要求的专业管理实践抽取；保留并列对象共享的管理成分，排除年限与优先修饰。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 112,
+  "ids": [
+    "sp10k-01111",
+    "sp10k-01112",
+    "sp10k-01113",
+    "sp10k-01114",
+    "sp10k-01115",
+    "sp10k-01116",
+    "sp10k-01117",
+    "sp10k-01118",
+    "sp10k-01119",
+    "sp10k-01120"
+  ],
+  "at": "2026-09-13T15:24:38.794695+00:00"
+}

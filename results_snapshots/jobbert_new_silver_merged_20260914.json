@@ -1,0 +1,45 @@
+{
+  "not_paper_main": true,
+  "not_comparable_to_0.5536": true,
+  "n_train": 7117,
+  "n_dev": 559,
+  "gold150": {
+    "rows": [
+      {
+        "seed": 42,
+        "typed_exact_f1": 0.23672758920800696
+      },
+      {
+        "seed": 43,
+        "typed_exact_f1": 0.2382608695652174
+      },
+      {
+        "seed": 44,
+        "typed_exact_f1": 0.235191637630662
+      }
+    ],
+    "mean": 0.23672669880129546,
+    "sd": 0.001534616161012821,
+    "reference_v6a_mean": 0.5536
+  },
+  "silver_dev_teacher": {
+    "rows": [
+      {
+        "seed": 42,
+        "typed_exact_f1": 0.258833546189868
+      },
+      {
+        "seed": 43,
+        "typed_exact_f1": 0.2595744680851064
+      },
+      {
+        "seed": 44,
+        "typed_exact_f1": 0.2580919931856899
+      }
+    ],
+    "mean": 0.25883333582022144,
+    "sd": 0.0007412374720975252,
+    "note": "Held-out new Silver teacher labels, not human gold."
+  },
+  "note": "Merged public-API Silver student (2500+wave1/2+wave3, drop adjudication). Do not write into confirmed-results.md."
+}

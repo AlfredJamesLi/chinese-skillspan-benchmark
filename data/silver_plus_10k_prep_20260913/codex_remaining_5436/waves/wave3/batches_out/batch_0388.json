@@ -1,0 +1,234 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06371",
+      "spans": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "大专及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历资格要求标注为K；专业优先不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06372",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "基建装修项目预结算工作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确的项目预结算职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06373",
+      "spans": [
+        {
+          "start": 7,
+          "end": 18,
+          "text": "控制和改善产品的合格率",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 35,
+          "text": "新工艺、新产品、新工装的引入",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别标注合格率控制改善和新工艺、新产品、新工装引入等职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06374",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "电子制造业",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 12,
+          "text": "提拉料流程",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "电子制造业为行业领域知识，提拉料流程为岗位流程实践。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06375",
+      "spans": [
+        {
+          "start": 10,
+          "end": 22,
+          "text": "各项材料、档案的统筹管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确的材料和档案统筹管理职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06376",
+      "spans": [
+        {
+          "start": 7,
+          "end": 11,
+          "text": "模组工艺",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "新工艺开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "模组工艺为领域专业名，新工艺开发为明确职业活动；能力提升在此处不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06377",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "储能产品的工作原理",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "技术规范",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 29,
+          "text": "设计产品解决方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工作原理和技术规范属于知识要求，独立设计产品解决方案属于职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06378",
+      "spans": [
+        {
+          "start": 15,
+          "end": 19,
+          "text": "合同履行",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "成本控制",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "人员配备",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "资源整合",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "关系协调",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注项目实施中的具体管理活动；关系协调属于跨行业通用协调能力。报告质量作为结果责任不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06379",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "问题解决能力",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 33,
+          "text": "分析和解决订单处理过程中出现的问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "泛化问题解决能力标注为T；限定于订单处理问题的分析和解决属于职业活动S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06380",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "海运市场调研",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 17,
+          "text": "实时掌握航线舱位",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 25,
+          "text": "运价动态及走势",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "对接询价需求",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "高效完成报价",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 48,
+          "text": "动态优化报价体系",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注市场调研、航线舱位及运价信息掌握、询价对接、报价和报价体系优化等职业活动；保障结果表述不标注。",
+      "issues": []
+    }
+  ]
+}

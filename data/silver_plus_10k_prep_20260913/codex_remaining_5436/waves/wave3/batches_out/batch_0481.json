@@ -1,0 +1,232 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07301",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "办公室行政事务工作流程与规范",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "保密意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工作流程与规范为岗位知识，保密意识为通用职业特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07302",
+      "spans": [
+        {
+          "start": 6,
+          "end": 13,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "市场营销",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "建筑工程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格及具体专业名，排除优先等修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07303",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "租金定价模型",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 16,
+          "text": "IRR回报测算",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "定价模型按领域知识标注，回报测算为具体职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07304",
+      "spans": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "协调资源",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "text": "安排每班生产任务",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "资源协调为通用能力，生产任务安排为职业活动；后段完成计划及满足订单要求为结果承诺。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07305",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "施工组织设计、施工方案的编制",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 26,
+          "text": "技术方案的分析评定",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 46,
+          "text": "关键部位施工方案及关键工序施工工艺把关",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "按编制、分析评定和把关拆分职责；共享动作的并列对象保留完整跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07306",
+      "spans": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 26,
+          "text": "机械设计制造及其自动化",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 32,
+          "text": "机电一体化",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历及具体专业名，不标年龄条件。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07307",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "与相关部门人员对接",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "收集项目资料",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "人员对接与资料收集可独立拆分，分别为通用联络能力和职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07308",
+      "spans": [
+        {
+          "start": 2,
+          "end": 36,
+          "text": "ISO9001/IATF16949等管理体系的建立，维护，监控和改进",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求执行管理体系建设维护等活动；并列动作共享必要对象，保留完整跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07309",
+      "spans": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "text": "汉语言文学",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "新闻传播",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 27,
+          "text": "政治学",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "学历及专业要求明确；政治身份要求是否属于本项目资格范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "中共党员",
+          "alternatives": [
+            "纳入资格要求，标K",
+            "政治身份不属于能力、知识或专业资格，不标"
+          ],
+          "reason": "规则未明确政治身份是否属于资格提及，局部文本仅表明其为任职条件，尚缺范围裁决。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-07310",
+      "spans": [
+        {
+          "start": 2,
+          "end": 40,
+          "text": "海外项目冰热水系统、CDA系统、真空系统、暖通系统、洁净系统的建设及后期运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "多个系统共享建设及运维动作，拆开会丢失职业活动含义，保留完整连续提及。",
+      "issues": []
+    }
+  ]
+}

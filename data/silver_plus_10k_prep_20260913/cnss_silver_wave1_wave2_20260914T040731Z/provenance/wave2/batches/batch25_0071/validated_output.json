@@ -1,0 +1,603 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05527",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "网络软硬件配置",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 27,
+          "text": "windows各版本操作系统",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "配置活动及同句操作系统运用要求标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05528",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "外事工作规则",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "国际外联事务",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工作规则标K，外联职能按人员联络标T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05529",
+      "spans": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "自动化部署工具",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 23,
+          "text": "cfengine",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "puppet",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 38,
+          "text": "ansible",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 48,
+          "text": "saltstack",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求使用的工具类别及具体工具标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05530",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为应聘笔试纪律及参加程序要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05531",
+      "spans": [
+        {
+          "start": 3,
+          "end": 14,
+          "text": "执行项目计划落地的推动",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "风险识别能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "项目计划执行推动及其风险识别属于职业能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05532",
+      "spans": [
+        {
+          "start": 2,
+          "end": 20,
+          "text": "X86或RS6000服务器的日常巡检",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "容量规划",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "日常维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分巡检、规划及维护活动，后两项对象由局部语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05533",
+      "spans": [
+        {
+          "start": 6,
+          "end": 9,
+          "text": "数据库",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 15,
+          "text": "中间件技术",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "text": "Nginx",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "Haproxy",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 35,
+          "text": "mysql",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 41,
+          "text": "redis",
+          "label": "S"
+        },
+        {
+          "start": 42,
+          "end": 47,
+          "text": "kafka",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 54,
+          "text": "Hadoop",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "数据库及具体工具按工具栈标S；中间件技术的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "中间件技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指中间件知识体系，也可指工具应用技术；局部未说明原理学习或具体实施活动。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05534",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 14,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "项目开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业领域及完整学历标K，项目开发去除经验后活动含义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05535",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘岗位计划表标题，无具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05536",
+      "spans": [
+        {
+          "start": 6,
+          "end": 12,
+          "text": "工作方法改进",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "泛化工作方法改进标T，团队效率和产出提升为结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05537",
+      "spans": [
+        {
+          "start": 23,
+          "end": 27,
+          "text": "政策理论",
+          "label": "K"
+        },
+        {
+          "start": 30,
+          "end": 42,
+          "text": "分析和解决实际问题的能力",
+          "label": "T"
+        },
+        {
+          "start": 43,
+          "end": 49,
+          "text": "文字表达能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确考查的知识与通用能力；分析和解决共享问题对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05538",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "方案写作能力",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 36,
+          "text": "项目方案、报告文档和内容运营文案的编写",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "职业文案写作标S，并列文档对象保留共享编写动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05539",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为面试资格确认的材料提交程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05540",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅解释职位条件字段，未给出具体专业或学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05541",
+      "spans": [
+        {
+          "start": 23,
+          "end": 27,
+          "text": "本科学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留报考条件中的具体学历资格，年龄不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05543",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅指引查看附件，未陈述具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05544",
+      "spans": [
+        {
+          "start": 8,
+          "end": 17,
+          "text": "设计并完成软件实现",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 37,
+          "text": "开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设计与实现保留共享软件对象；后段开发由同句软件语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05545",
+      "spans": [
+        {
+          "start": 12,
+          "end": 17,
+          "text": "数据初始化",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "业务实施",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "操作培训",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "系统上线",
+          "label": "S"
+        },
+        {
+          "start": 49,
+          "end": 56,
+          "text": "系统的迭代更新",
+          "label": "S"
+        },
+        {
+          "start": 59,
+          "end": 66,
+          "text": "现场系统的验证",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "独立实施、培训、上线、更新及验证职责分别标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05546",
+      "spans": [
+        {
+          "start": 4,
+          "end": 23,
+          "text": "策划、制作和传播优质且具有传播性的内容",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列动作共享内容对象，保留完整跨度；关注度和品牌影响力为结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05547",
+      "spans": [
+        {
+          "start": 3,
+          "end": 8,
+          "text": "EXCEL",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "WORD",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "办公软件",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "问题分析能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确使用的软件标S，无具体业务对象的问题分析能力标T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05548",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "踏实",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "严谨",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "探索精神",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "求知精神",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "独立思考问题",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "解决问题",
+          "label": "T"
+        },
+        {
+          "start": 37,
+          "end": 43,
+          "text": "逻辑思维能力",
+          "label": "T"
+        },
+        {
+          "start": 44,
+          "end": 50,
+          "text": "语言表达能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用特质及思考、表达能力标T；泛化交办任务不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05549",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "数据仓库",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "数据分析",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "数据挖掘方法",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "统计分析工具",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "分析、挖掘方法及工具使用标S；数据仓库的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "数据仓库",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "熟悉数据仓库可指概念架构知识或建设使用能力；后续分析与工具要求未明确其具体语境。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05550",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "选定和推广使用合适的数据统计技术",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 43,
+          "text": "控制和验证物业管理服务全过程能力及其特性",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "共享技术对象保留完整动作；确保之后仍有具体控制与验证活动，去除结果触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05551",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "MYSQL知识",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "命令运用",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确知识与实际命令运用分标，MYSQL由局部语境共享。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05552",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "国家财税相关法律法规",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "财务系统",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 32,
+          "text": "OFFICE办公软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "财税法律法规标K，明确使用的系统和软件标S。",
+      "issues": []
+    }
+  ]
+}

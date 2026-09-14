@@ -1,0 +1,254 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 42.66,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5164,
+    "completion_tokens": 1519,
+    "total_tokens": 6683,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 792
+    },
+    "input_tokens": 5164,
+    "output_tokens": 1519,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00552",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            12,
+            20
+          ],
+          "text": "信息技术管理工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00556",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            10
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "中共党员"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00551\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为聘用手续、报到及资格处理规定，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00552\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"信息技术管理工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行信息技术管理职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00553\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"MySQL\",\"label\":\"S\"},{\"start\":11,\"end\":21,\"text\":\"MySQL数据库部署\",\"label\":\"S\"},{\"start\":22,\"end\":24,\"text\":\"运维\",\"label\":\"S\"},{\"start\":25,\"end\":27,\"text\":\"备份\",\"label\":\"S\"},{\"start\":28,\"end\":30,\"text\":\"调优\",\"label\":\"S\"},{\"start\":35,\"end\":42,\"text\":\"mongodb\",\"label\":\"S\"},{\"start\":43,\"end\":51,\"text\":\"NoSQL数据库\",\"label\":\"S\"},{\"start\":54,\"end\":62,\"text\":\"hadoop平台\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库及平台名称处于熟练、部署、运维、备份、调优或了解使用语境，按岗位工具和可执行实践标注。\",\"issues\":[]},{\"id\":\"sp10k-00554\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为面试资格复审所需材料和办理要求，未形成候选人能力、知识或资格本身的招聘要求。\",\"issues\":[]},{\"id\":\"sp10k-00555\",\"spans\":[{\"start\":17,\"end\":26,\"text\":\"MS-OFFICE\",\"label\":\"S\"},{\"start\":27,\"end\":35,\"text\":\"其它常用应用软件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求熟练使用办公软件及其他常用应用软件；专业名称不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00556\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"中共党员\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"中共党员属于明确的非语言资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00557\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"centos\",\"label\":\"S\"},{\"start\":9,\"end\":19,\"text\":\"Redhat操作系统\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"操作系统名称处于精通要求语境，标注为岗位工具或系统运用能力。\",\"issues\":[]},{\"id\":\"sp10k-00558\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明招聘考察和资格复审事项，未明确提出候选人须具备的能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-00559\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为基本条件标题及引导语，没有具体能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00560\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名照片格式和拍摄要求，不属于候选人能力、知识或资格要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00551",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为聘用手续、报到及资格处理规定，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00552",
+        "spans": [
+          {
+            "start": 12,
+            "end": 20,
+            "text": "信息技术管理工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行信息技术管理职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00553",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "MySQL",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 21,
+            "text": "MySQL数据库部署",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "text": "运维",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 27,
+            "text": "备份",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 30,
+            "text": "调优",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 42,
+            "text": "mongodb",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 51,
+            "text": "NoSQL数据库",
+            "label": "S"
+          },
+          {
+            "start": 54,
+            "end": 62,
+            "text": "hadoop平台",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库及平台名称处于熟练、部署、运维、备份、调优或了解使用语境，按岗位工具和可执行实践标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00554",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为面试资格复审所需材料和办理要求，未形成候选人能力、知识或资格本身的招聘要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00555",
+        "spans": [
+          {
+            "start": 17,
+            "end": 26,
+            "text": "MS-OFFICE",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 35,
+            "text": "其它常用应用软件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求熟练使用办公软件及其他常用应用软件；专业名称不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00556",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "中共党员",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "中共党员属于明确的非语言资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00557",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "centos",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 19,
+            "text": "Redhat操作系统",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "操作系统名称处于精通要求语境，标注为岗位工具或系统运用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00558",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明招聘考察和资格复审事项，未明确提出候选人须具备的能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00559",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为基本条件标题及引导语，没有具体能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00560",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名照片格式和拍摄要求，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 56,
+  "ids": [
+    "sp10k-00551",
+    "sp10k-00552",
+    "sp10k-00553",
+    "sp10k-00554",
+    "sp10k-00555",
+    "sp10k-00556",
+    "sp10k-00557",
+    "sp10k-00558",
+    "sp10k-00559",
+    "sp10k-00560"
+  ],
+  "at": "2026-09-13T14:37:48.532413+00:00"
+}

@@ -1,0 +1,582 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 33.613,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5085,
+    "completion_tokens": 1371,
+    "total_tokens": 6456,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 419
+    },
+    "input_tokens": 5085,
+    "output_tokens": 1371,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00471",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            11,
+            17
+          ],
+          "to": [
+            13,
+            22
+          ],
+          "text": "最高学历及学位证书"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            18,
+            38
+          ],
+          "to": [
+            23,
+            40
+          ],
+          "text": "有效的《毕业生双向选择就业推荐表》"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            39,
+            57
+          ],
+          "to": [
+            41,
+            55
+          ],
+          "text": "未签订的《毕业生就业协议书》"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            58,
+            69
+          ],
+          "to": [
+            56,
+            68
+          ],
+          "text": "国（境）外的学历学位证书"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            73,
+            88
+          ],
+          "to": [
+            71,
+            85
+          ],
+          "text": "教育部留学服务中心的认证证明"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00475",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            16,
+            20
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "地产行业"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            24,
+            36
+          ],
+          "to": [
+            18,
+            30
+          ],
+          "text": "融资和资金管理岗工作经验"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00476",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            3,
+            7
+          ],
+          "text": "IT风险"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            16
+          ],
+          "to": [
+            8,
+            10
+          ],
+          "text": "识别"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            19
+          ],
+          "to": [
+            11,
+            13
+          ],
+          "text": "管理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            22,
+            27
+          ],
+          "to": [
+            18,
+            22
+          ],
+          "text": "改进工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00477",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            10,
+            14
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "学习能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            21
+          ],
+          "to": [
+            10,
+            16
+          ],
+          "text": "文档编写能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00478",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            9
+          ],
+          "to": [
+            4,
+            6
+          ],
+          "text": "沟通"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            14
+          ],
+          "to": [
+            7,
+            11
+          ],
+          "text": "语言表达"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            19
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "团队能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00479",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            10
+          ],
+          "to": [
+            4,
+            8
+          ],
+          "text": "办公软件"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            21
+          ],
+          "to": [
+            13,
+            19
+          ],
+          "text": "文字书写能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00480",
+      "repairs": [
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            17,
+            24
+          ],
+          "to": [
+            16,
+            23
+          ],
+          "text": "LogData"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            24,
+            30
+          ],
+          "to": [
+            23,
+            28
+          ],
+          "text": "储存与管理"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00471\",\"spans\":[{\"start\":11,\"end\":17,\"text\":\"最高学历及学位证书\",\"label\":\"K\"},{\"start\":18,\"end\":38,\"text\":\"有效的《毕业生双向选择就业推荐表》\",\"label\":\"K\"},{\"start\":39,\"end\":57,\"text\":\"未签订的《毕业生就业协议书》\",\"label\":\"K\"},{\"start\":58,\"end\":69,\"text\":\"国（境）外的学历学位证书\",\"label\":\"K\"},{\"start\":73,\"end\":88,\"text\":\"教育部留学服务中心的认证证明\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取应届毕业生须提供或取得的学历、就业及认证材料资格。\",\"issues\":[]},{\"id\":\"sp10k-00472\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为考察标准、结果要求及用人导向，未明确提出候选人须具备的能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-00473\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"项目管理\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"协调能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"项目管理为职业活动，协调能力为跨行业通用能力。\",\"issues\":[]},{\"id\":\"sp10k-00474\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为选聘单位对证明材料和报考信息的调查、复审及资格处理流程，不是候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00475\",\"spans\":[{\"start\":16,\"end\":20,\"text\":\"地产行业\",\"label\":\"K\"},{\"start\":24,\"end\":36,\"text\":\"融资和资金管理岗工作经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"地产行业为明确行业背景；融资和资金管理岗工作经验为具体职能实践经验。\",\"issues\":[]},{\"id\":\"sp10k-00476\",\"spans\":[{\"start\":9,\"end\":13,\"text\":\"IT风险\",\"label\":\"K\"},{\"start\":14,\"end\":16,\"text\":\"识别\",\"label\":\"S\"},{\"start\":17,\"end\":19,\"text\":\"管理\",\"label\":\"S\"},{\"start\":22,\"end\":27,\"text\":\"改进工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取IT风险领域知识及风险识别、管理和改进等职业动作；抗风险能力为结果性表述。\",\"issues\":[]},{\"id\":\"sp10k-00477\",\"spans\":[{\"start\":10,\"end\":14,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":15,\"end\":21,\"text\":\"文档编写能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学习能力为通用能力，文档编写为可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00478\",\"spans\":[{\"start\":7,\"end\":9,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"语言表达\",\"label\":\"T\"},{\"start\":15,\"end\":19,\"text\":\"团队能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为跨行业通用沟通、表达或团队协作能力。\",\"issues\":[]},{\"id\":\"sp10k-00479\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"办公软件\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"文字书写能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"办公软件为岗位现用工具，文字书写能力为通用能力。\",\"issues\":[]},{\"id\":\"sp10k-00480\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"Zabbix\",\"label\":\"S\"},{\"start\":8,\"end\":12,\"text\":\"安装设定\",\"label\":\"S\"},{\"start\":13,\"end\":15,\"text\":\"除错\",\"label\":\"S\"},{\"start\":17,\"end\":24,\"text\":\"LogData\",\"label\":\"S\"},{\"start\":24,\"end\":30,\"text\":\"储存与管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取Zabbix、LogData工具及其安装、除错、储存与管理操作。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00471",
+        "spans": [
+          {
+            "start": 13,
+            "end": 22,
+            "text": "最高学历及学位证书",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 40,
+            "text": "有效的《毕业生双向选择就业推荐表》",
+            "label": "K"
+          },
+          {
+            "start": 41,
+            "end": 55,
+            "text": "未签订的《毕业生就业协议书》",
+            "label": "K"
+          },
+          {
+            "start": 56,
+            "end": 68,
+            "text": "国（境）外的学历学位证书",
+            "label": "K"
+          },
+          {
+            "start": 71,
+            "end": 85,
+            "text": "教育部留学服务中心的认证证明",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取应届毕业生须提供或取得的学历、就业及认证材料资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00472",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为考察标准、结果要求及用人导向，未明确提出候选人须具备的能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00473",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "项目管理",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "协调能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "项目管理为职业活动，协调能力为跨行业通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00474",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为选聘单位对证明材料和报考信息的调查、复审及资格处理流程，不是候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00475",
+        "spans": [
+          {
+            "start": 12,
+            "end": 16,
+            "text": "地产行业",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 30,
+            "text": "融资和资金管理岗工作经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "地产行业为明确行业背景；融资和资金管理岗工作经验为具体职能实践经验。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00476",
+        "spans": [
+          {
+            "start": 3,
+            "end": 7,
+            "text": "IT风险",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "识别",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 13,
+            "text": "管理",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "改进工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取IT风险领域知识及风险识别、管理和改进等职业动作；抗风险能力为结果性表述。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00477",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "文档编写能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学习能力为通用能力，文档编写为可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00478",
+        "spans": [
+          {
+            "start": 4,
+            "end": 6,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "语言表达",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "团队能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为跨行业通用沟通、表达或团队协作能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00479",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "办公软件",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "文字书写能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "办公软件为岗位现用工具，文字书写能力为通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00480",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "Zabbix",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "安装设定",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "text": "除错",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "text": "LogData",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "text": "储存与管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取Zabbix、LogData工具及其安装、除错、储存与管理操作。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 48,
+  "ids": [
+    "sp10k-00471",
+    "sp10k-00472",
+    "sp10k-00473",
+    "sp10k-00474",
+    "sp10k-00475",
+    "sp10k-00476",
+    "sp10k-00477",
+    "sp10k-00478",
+    "sp10k-00479",
+    "sp10k-00480"
+  ],
+  "at": "2026-09-13T14:29:56.885868+00:00"
+}

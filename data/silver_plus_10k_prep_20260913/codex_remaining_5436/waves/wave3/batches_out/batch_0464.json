@@ -1,0 +1,252 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07131",
+      "spans": [
+        {
+          "start": 4,
+          "end": 13,
+          "text": "建筑电气设计类软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设计类软件处于岗位工具掌握语境，标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07132",
+      "spans": [
+        {
+          "start": 10,
+          "end": 15,
+          "text": "供配电维修",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "巡检",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "维保",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分独立职业活动；巡检、维保的对象由局部供配电语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07133",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "临场应变能力",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "text": "紧急事件处置能力",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 35,
+          "text": "211及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "未限定专业对象的通用能力标T；学历要求按原文保留，不修正其表述。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07134",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "敏捷开发的项目管理技能",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 24,
+          "text": "跨部门协同能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "敏捷开发语境下的项目管理为职业技能；跨部门协同为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07135",
+      "spans": [
+        {
+          "start": 15,
+          "end": 21,
+          "text": "解决方案设计",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "技术支持",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "项目踏勘",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "项目投标",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "独立职责逐项拆分，共享的储能项目对象由局部上下文限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07136",
+      "spans": [
+        {
+          "start": 7,
+          "end": 17,
+          "text": "弱电系统相关工作经验",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "弱电施工流程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "弱电系统实践要求保留经验以免退化为领域类别；施工流程为专业流程知识，年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07137",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "能源计量行业",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "市场开拓",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "行业背景与职业活动分别抽取；市场开拓去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07138",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "Python",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "AI框架",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "数据清洗",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "模型训练",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "部署上线",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "编程语言及框架处于实际技术流程运用语境；各流程活动独立抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07139",
+      "spans": [
+        {
+          "start": 5,
+          "end": 19,
+          "text": "系统设备技术改造项目需求分析",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "text": "技术方案编制审核",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "text": "现场施工管理",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 42,
+          "text": "项目交付验收",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取独立职业职责；保留需求分析的具体对象及编制审核的共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07140",
+      "spans": [
+        {
+          "start": 6,
+          "end": 13,
+          "text": "大专及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格标K；年龄及优先修饰不标。",
+      "issues": []
+    }
+  ]
+}

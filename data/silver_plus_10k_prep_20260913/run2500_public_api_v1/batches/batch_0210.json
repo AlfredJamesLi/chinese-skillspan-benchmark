@@ -1,0 +1,306 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 52.168,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4994,
+    "completion_tokens": 1663,
+    "total_tokens": 6657,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 672
+    },
+    "input_tokens": 4994,
+    "output_tokens": 1663,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05896\",\"spans\":[{\"start\":6,\"end\":12,\"text\":\"建筑结构知识\",\"label\":\"K\"},{\"start\":13,\"end\":19,\"text\":\"房屋维修技能\",\"label\":\"S\"},{\"start\":22,\"end\":35,\"text\":\"独立完成房屋的部分维修工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"结构知识为K；房屋维修技能及独立维修活动为S。\",\"issues\":[]},{\"id\":\"sp10k-05897\",\"spans\":[{\"start\":9,\"end\":20,\"text\":\"制定设计进度计划并实施\",\"label\":\"S\"},{\"start\":23,\"end\":35,\"text\":\"对设计质量进行监督、控制\",\"label\":\"S\"},{\"start\":36,\"end\":42,\"text\":\"解决设计问题\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取具体设计管理活动；共享动作对象的短语保留完整。\",\"issues\":[]},{\"id\":\"sp10k-05898\",\"spans\":[{\"start\":5,\"end\":8,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":9,\"end\":15,\"text\":\"团队合作精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"责任心和团队合作精神均为通用特质。\",\"issues\":[]},{\"id\":\"sp10k-05899\",\"spans\":[{\"start\":3,\"end\":9,\"text\":\"厨师资格证书\",\"label\":\"K\"},{\"start\":15,\"end\":18,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":19,\"end\":25,\"text\":\"沟通协调能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"非语言职业资格为K，责任心及沟通协调能力为T。\",\"issues\":[]},{\"id\":\"sp10k-05900\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":11,\"text\":\"自动化\",\"label\":\"K\"},{\"start\":12,\"end\":17,\"text\":\"计算机科学\",\"label\":\"K\"},{\"start\":25,\"end\":30,\"text\":\"嵌入式系统\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历保留完整资格边界；专业及专业方向核心名为K。\",\"issues\":[]},{\"id\":\"sp10k-05901\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"MES相关业务需求分析\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确业务对象的需求分析为职业活动。\",\"issues\":[]},{\"id\":\"sp10k-05902\",\"spans\":[{\"start\":7,\"end\":14,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":15,\"end\":19,\"text\":\"统招本科\",\"label\":\"K\"},{\"start\":20,\"end\":24,\"text\":\"电气工程\",\"label\":\"K\"},{\"start\":25,\"end\":28,\"text\":\"给排水\",\"label\":\"K\"},{\"start\":29,\"end\":31,\"text\":\"暖通\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格及各具体专业，泛化相关专业不另标。\",\"issues\":[]},{\"id\":\"sp10k-05903\",\"spans\":[{\"start\":6,\"end\":17,\"text\":\"策划执行过各类主题活动\",\"label\":\"S\"},{\"start\":18,\"end\":24,\"text\":\"对接策展资源\",\"label\":\"T\"},{\"start\":25,\"end\":33,\"text\":\"制定品牌推广策略\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"活动策划执行和推广策略制定为S；资源对接属联络协调，为T。经验后缀不影响各活动完整意义，未纳入跨度。\",\"issues\":[]},{\"id\":\"sp10k-05904\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"采暖热泵和工业蒸汽热泵的销售\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"两个产品对象共享销售职能，保留连续完整短语。\",\"issues\":[]},{\"id\":\"sp10k-05905\",\"spans\":[{\"start\":1,\"end\":5,\"text\":\"敬业精神\",\"label\":\"T\"},{\"start\":8,\"end\":10,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":11,\"end\":18,\"text\":\"大专及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"敬业精神及沟通为通用素质，学历为K；去除要求触发词。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05896",
+        "spans": [
+          {
+            "start": 6,
+            "end": 12,
+            "text": "建筑结构知识",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "房屋维修技能",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 35,
+            "text": "独立完成房屋的部分维修工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "结构知识为K；房屋维修技能及独立维修活动为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05897",
+        "spans": [
+          {
+            "start": 9,
+            "end": 20,
+            "text": "制定设计进度计划并实施",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 35,
+            "text": "对设计质量进行监督、控制",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 42,
+            "text": "解决设计问题",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取具体设计管理活动；共享动作对象的短语保留完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05898",
+        "spans": [
+          {
+            "start": 5,
+            "end": 8,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "团队合作精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "责任心和团队合作精神均为通用特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05899",
+        "spans": [
+          {
+            "start": 3,
+            "end": 9,
+            "text": "厨师资格证书",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 18,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "沟通协调能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "非语言职业资格为K，责任心及沟通协调能力为T。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05900",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "text": "自动化",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "text": "计算机科学",
+            "label": "K"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "text": "嵌入式系统",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历保留完整资格边界；专业及专业方向核心名为K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05901",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "MES相关业务需求分析",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确业务对象的需求分析为职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05902",
+        "spans": [
+          {
+            "start": 7,
+            "end": 14,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "统招本科",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "电气工程",
+            "label": "K"
+          },
+          {
+            "start": 25,
+            "end": 28,
+            "text": "给排水",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 31,
+            "text": "暖通",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格及各具体专业，泛化相关专业不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05903",
+        "spans": [
+          {
+            "start": 6,
+            "end": 17,
+            "text": "策划执行过各类主题活动",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "text": "对接策展资源",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 33,
+            "text": "制定品牌推广策略",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "活动策划执行和推广策略制定为S；资源对接属联络协调，为T。经验后缀不影响各活动完整意义，未纳入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05904",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "采暖热泵和工业蒸汽热泵的销售",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两个产品对象共享销售职能，保留连续完整短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05905",
+        "spans": [
+          {
+            "start": 1,
+            "end": 5,
+            "text": "敬业精神",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "text": "大专及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "敬业精神及沟通为通用素质，学历为K；去除要求触发词。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 210,
+  "ids": [
+    "sp10k-05896",
+    "sp10k-05897",
+    "sp10k-05898",
+    "sp10k-05899",
+    "sp10k-05900",
+    "sp10k-05901",
+    "sp10k-05902",
+    "sp10k-05903",
+    "sp10k-05904",
+    "sp10k-05905"
+  ],
+  "at": "2026-09-13T17:08:01.306097+00:00"
+}

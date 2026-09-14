@@ -1,0 +1,953 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 47.827,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5058,
+    "completion_tokens": 1687,
+    "total_tokens": 6745,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 423
+    },
+    "input_tokens": 5058,
+    "output_tokens": 1687,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-04468",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            8,
+            12
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "数据统计"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            14,
+            16
+          ],
+          "to": [
+            15,
+            17
+          ],
+          "text": "分析"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            17,
+            24
+          ],
+          "to": [
+            18,
+            26
+          ],
+          "text": "各类报表方案制作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04504",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            10,
+            16
+          ],
+          "to": [
+            9,
+            15
+          ],
+          "text": "Office"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            21,
+            24
+          ],
+          "to": [
+            20,
+            23
+          ],
+          "text": "CAD"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            35,
+            38
+          ],
+          "to": [
+            36,
+            39
+          ],
+          "text": "BIM"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            65,
+            73
+          ],
+          "to": [
+            62,
+            70
+          ],
+          "text": "相关专业资格证书"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            81,
+            84
+          ],
+          "to": [
+            77,
+            80
+          ],
+          "text": "电工证"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            86,
+            92
+          ],
+          "to": [
+            81,
+            89
+          ],
+          "text": "高压、低压电工证"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            101,
+            108
+          ],
+          "to": [
+            101,
+            107
+          ],
+          "text": "电梯管理员证"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04512",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            8
+          ],
+          "to": [
+            0,
+            9
+          ],
+          "text": "大学本科及以上学历"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "安全工程"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04518",
+      "repairs": [
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            24,
+            32
+          ],
+          "to": [
+            24,
+            30
+          ],
+          "text": "人力资源管理"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            33,
+            36
+          ],
+          "to": [
+            31,
+            34
+          ],
+          "text": "管理学"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04520",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            4,
+            9
+          ],
+          "text": "工厂化学品"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            12
+          ],
+          "to": [
+            9,
+            11
+          ],
+          "text": "购买"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            13,
+            15
+          ],
+          "to": [
+            12,
+            14
+          ],
+          "text": "储存"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            16,
+            18
+          ],
+          "to": [
+            15,
+            17
+          ],
+          "text": "使用"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            19,
+            21
+          ],
+          "to": [
+            18,
+            20
+          ],
+          "text": "废弃"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            22,
+            26
+          ],
+          "to": [
+            20,
+            26
+          ],
+          "text": "合规安全管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04531",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            11
+          ],
+          "to": [
+            6,
+            10
+          ],
+          "text": "沟通能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            12,
+            15
+          ],
+          "to": [
+            11,
+            14
+          ],
+          "text": "亲和力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            22
+          ],
+          "to": [
+            16,
+            20
+          ],
+          "text": "会议接待"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            25,
+            29
+          ],
+          "to": [
+            21,
+            27
+          ],
+          "text": "相关工作经验"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04662",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            6
+          ],
+          "to": [
+            2,
+            4
+          ],
+          "text": "销售"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            9
+          ],
+          "to": [
+            5,
+            7
+          ],
+          "text": "推广"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            23
+          ],
+          "to": [
+            15,
+            24
+          ],
+          "text": "建立良好的业务关系"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            24,
+            30
+          ],
+          "to": [
+            25,
+            31
+          ],
+          "text": "了解客户需求"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            31,
+            35
+          ],
+          "to": [
+            32,
+            38
+          ],
+          "text": "达成销售目标"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04668",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            11
+          ],
+          "to": [
+            6,
+            8
+          ],
+          "text": "审核"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            19
+          ],
+          "to": [
+            24,
+            26
+          ],
+          "text": "审核"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04705",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            14
+          ],
+          "to": [
+            4,
+            12
+          ],
+          "text": "电子电路设计工具"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04717",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            11
+          ],
+          "to": [
+            3,
+            9
+          ],
+          "text": "office"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            21,
+            25
+          ],
+          "to": [
+            17,
+            21
+          ],
+          "text": "数据分析"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            26,
+            32
+          ],
+          "to": [
+            27,
+            29
+          ],
+          "text": "组织"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            33,
+            35
+          ],
+          "to": [
+            30,
+            32
+          ],
+          "text": "协调"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            36,
+            38
+          ],
+          "to": [
+            33,
+            35
+          ],
+          "text": "沟通"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            39,
+            41
+          ],
+          "to": [
+            36,
+            40
+          ],
+          "text": "执行能力"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-04468\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":12,\"text\":\"数据统计\",\"label\":\"S\"},{\"start\":14,\"end\":16,\"text\":\"分析\",\"label\":\"S\"},{\"start\":17,\"end\":24,\"text\":\"各类报表方案制作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格名；数据统计、分析及报表方案制作是可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-04504\",\"spans\":[{\"start\":10,\"end\":16,\"text\":\"Office\",\"label\":\"S\"},{\"start\":21,\"end\":24,\"text\":\"CAD\",\"label\":\"S\"},{\"start\":35,\"end\":38,\"text\":\"BIM\",\"label\":\"S\"},{\"start\":42,\"end\":50,\"text\":\"智能楼宇管理平台\",\"label\":\"S\"},{\"start\":65,\"end\":73,\"text\":\"相关专业资格证书\",\"label\":\"K\"},{\"start\":81,\"end\":84,\"text\":\"电工证\",\"label\":\"K\"},{\"start\":86,\"end\":92,\"text\":\"高压、低压电工证\",\"label\":\"K\"},{\"start\":101,\"end\":108,\"text\":\"电梯管理员证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"办公、绘图及管理平台为岗位工具；专业资格证书、电工证和电梯管理员证为资格要求。\",\"issues\":[]},{\"id\":\"sp10k-04512\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"大学本科及以上学历\",\"label\":\"K\"},{\"start\":9,\"end\":13,\"text\":\"安全工程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格名，安全工程为领域专业名。\",\"issues\":[]},{\"id\":\"sp10k-04518\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":12,\"text\":\"行政管理\",\"label\":\"K\"},{\"start\":13,\"end\":17,\"text\":\"文学语言\",\"label\":\"K\"},{\"start\":18,\"end\":20,\"text\":\"法律\",\"label\":\"K\"},{\"start\":21,\"end\":23,\"text\":\"设计\",\"label\":\"K\"},{\"start\":24,\"end\":32,\"text\":\"人力资源管理\",\"label\":\"K\"},{\"start\":33,\"end\":36,\"text\":\"管理学\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历及相关专业名称属于资格或领域知识要求。\",\"issues\":[]},{\"id\":\"sp10k-04520\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"工厂化学品\",\"label\":\"K\"},{\"start\":10,\"end\":12,\"text\":\"购买\",\"label\":\"S\"},{\"start\":13,\"end\":15,\"text\":\"储存\",\"label\":\"S\"},{\"start\":16,\"end\":18,\"text\":\"使用\",\"label\":\"S\"},{\"start\":19,\"end\":21,\"text\":\"废弃\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"合规安全管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"化学品是领域对象；购买、储存、使用、废弃及合规安全管理为职业活动。\",\"issues\":[]},{\"id\":\"sp10k-04531\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":12,\"end\":15,\"text\":\"亲和力\",\"label\":\"T\"},{\"start\":16,\"end\":22,\"text\":\"会议接待\",\"label\":\"S\"},{\"start\":25,\"end\":29,\"text\":\"相关工作经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"沟通能力和亲和力为通用特质；会议接待及明确的相关工作经验属于职业活动经历。\",\"issues\":[]},{\"id\":\"sp10k-04662\",\"spans\":[{\"start\":4,\"end\":6,\"text\":\"销售\",\"label\":\"S\"},{\"start\":7,\"end\":9,\"text\":\"推广\",\"label\":\"S\"},{\"start\":17,\"end\":23,\"text\":\"建立良好的业务关系\",\"label\":\"T\"},{\"start\":24,\"end\":30,\"text\":\"了解客户需求\",\"label\":\"S\"},{\"start\":31,\"end\":35,\"text\":\"达成销售目标\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"销售、推广、客户需求了解和销售目标达成为职业动作；建立业务关系为客户关系能力。\",\"issues\":[]},{\"id\":\"sp10k-04668\",\"spans\":[{\"start\":9,\"end\":11,\"text\":\"审核\",\"label\":\"S\"},{\"start\":17,\"end\":19,\"text\":\"审核\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"审核是明确的职业活动；方审核中的方别及审核主体不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-04705\",\"spans\":[{\"start\":6,\"end\":14,\"text\":\"电子电路设计工具\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"电子电路设计工具是岗位现用工具名。\",\"issues\":[]},{\"id\":\"sp10k-04717\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"office\",\"label\":\"S\"},{\"start\":21,\"end\":25,\"text\":\"数据分析\",\"label\":\"S\"},{\"start\":26,\"end\":32,\"text\":\"组织\",\"label\":\"T\"},{\"start\":33,\"end\":35,\"text\":\"协调\",\"label\":\"T\"},{\"start\":36,\"end\":38,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":39,\"end\":41,\"text\":\"执行能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"office为岗位工具；数据分析为职业动作；组织、协调、沟通和执行能力为通用能力。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-04468",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "数据统计",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "分析",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "text": "各类报表方案制作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格名；数据统计、分析及报表方案制作是可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04504",
+        "spans": [
+          {
+            "start": 9,
+            "end": 15,
+            "text": "Office",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 23,
+            "text": "CAD",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 39,
+            "text": "BIM",
+            "label": "S"
+          },
+          {
+            "start": 42,
+            "end": 50,
+            "text": "智能楼宇管理平台",
+            "label": "S"
+          },
+          {
+            "start": 62,
+            "end": 70,
+            "text": "相关专业资格证书",
+            "label": "K"
+          },
+          {
+            "start": 77,
+            "end": 80,
+            "text": "电工证",
+            "label": "K"
+          },
+          {
+            "start": 81,
+            "end": 89,
+            "text": "高压、低压电工证",
+            "label": "K"
+          },
+          {
+            "start": 101,
+            "end": 107,
+            "text": "电梯管理员证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "办公、绘图及管理平台为岗位工具；专业资格证书、电工证和电梯管理员证为资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04512",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "大学本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "安全工程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格名，安全工程为领域专业名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04518",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "行政管理",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "文学语言",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 20,
+            "text": "法律",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 23,
+            "text": "设计",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "人力资源管理",
+            "label": "K"
+          },
+          {
+            "start": 31,
+            "end": 34,
+            "text": "管理学",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历及相关专业名称属于资格或领域知识要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04520",
+        "spans": [
+          {
+            "start": 4,
+            "end": 9,
+            "text": "工厂化学品",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "购买",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "储存",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "使用",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 20,
+            "text": "废弃",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "合规安全管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "化学品是领域对象；购买、储存、使用、废弃及合规安全管理为职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04531",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "text": "亲和力",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "会议接待",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "text": "相关工作经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通能力和亲和力为通用特质；会议接待及明确的相关工作经验属于职业活动经历。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04662",
+        "spans": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "销售",
+            "label": "S"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "text": "推广",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "text": "建立良好的业务关系",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "text": "了解客户需求",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "text": "达成销售目标",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "销售、推广、客户需求了解和销售目标达成为职业动作；建立业务关系为客户关系能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04668",
+        "spans": [
+          {
+            "start": 6,
+            "end": 8,
+            "text": "审核",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "text": "审核",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "审核是明确的职业活动；方审核中的方别及审核主体不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04705",
+        "spans": [
+          {
+            "start": 4,
+            "end": 12,
+            "text": "电子电路设计工具",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "电子电路设计工具是岗位现用工具名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04717",
+        "spans": [
+          {
+            "start": 3,
+            "end": 9,
+            "text": "office",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "数据分析",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "text": "组织",
+            "label": "T"
+          },
+          {
+            "start": 30,
+            "end": 32,
+            "text": "协调",
+            "label": "T"
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "text": "执行能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "office为岗位工具；数据分析为职业动作；组织、协调、沟通和执行能力为通用能力。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 193,
+  "ids": [
+    "sp10k-04468",
+    "sp10k-04504",
+    "sp10k-04512",
+    "sp10k-04518",
+    "sp10k-04520",
+    "sp10k-04531",
+    "sp10k-04662",
+    "sp10k-04668",
+    "sp10k-04705",
+    "sp10k-04717"
+  ],
+  "at": "2026-09-13T16:50:29.529056+00:00"
+}

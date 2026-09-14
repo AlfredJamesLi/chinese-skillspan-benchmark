@@ -1,0 +1,495 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05004",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "统招本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "信息管理",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "网络工程",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 29,
+          "text": "医学信息类",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格及并列专业名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05005",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报考条件确认及咨询流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05006",
+      "spans": [
+        {
+          "start": 3,
+          "end": 6,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "财务知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业背景及明确知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05007",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为专业目录名称，未提出候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05008",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为资格核查及违规处理说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05009",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘职位表文件名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05010",
+      "spans": [
+        {
+          "start": 4,
+          "end": 14,
+          "text": "通信和计算机技能证书",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "text": "执行力",
+          "label": "T"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "思维清晰",
+          "label": "T"
+        },
+        {
+          "start": 43,
+          "end": 55,
+          "text": "电力及计算机网络安全意识",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "证书保留共享资格中心；安全意识的S仅为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "电力及计算机网络安全意识",
+          "alternatives": [
+            "K",
+            "T"
+          ],
+          "reason": "明确属于要求，但未说明是领域安全知识掌握，还是风险防范意识特质，局部语境不足以消除类型歧义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05011",
+      "spans": [
+        {
+          "start": 6,
+          "end": 12,
+          "text": "python",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 20,
+          "text": "shell脚本",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "按岗位工具与脚本技能抽取，保留原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05012",
+      "spans": [
+        {
+          "start": 122,
+          "end": 128,
+          "text": "生物医学工程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取职位表中的专业条件；机构介绍、表头和岗位名称不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05013",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "智慧城市平台架构",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取平台架构职能；稳定性、成本及体验责任为结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05014",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "OA",
+          "label": "S"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "ERP",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "文档维护",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "使用培训和辅导",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取岗位系统工具及维护、培训活动；培训和辅导保留共享使用限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05015",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "思想端正",
+          "label": "T"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "思想特质明确；驾驶资格因缺少岗位性质暂不入主层。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "C1及以上驾驶资格",
+          "alternatives": [
+            "司机岗位资格要求，纳入K",
+            "非司机岗位驾照，排除"
+          ],
+          "reason": "记录未说明是否为司机岗位，无法判断驾驶资格是否满足本项目范围条件。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05016",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明面试方式及分值安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05017",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为应聘材料上传流程，所列证件不作为独立资格要求抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05018",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求提供学历学位证明材料，未指定具体资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05019",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "运维工具",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 23,
+          "text": "互联网基础软件的配置和使用",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 40,
+          "text": "网络安全性问题的预防措施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "配置使用语境限定工具技能；预防措施为可执行技术方法。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05020",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "桌面运维",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "网络管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分两项独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05021",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名、材料提交及文件命名说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05022",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为资格条件标题，无具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05023",
+      "spans": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "大专或以上",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": "计算机",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历要求及专业核心名，不补写学历二字。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05024",
+      "spans": [
+        {
+          "start": 0,
+          "end": 12,
+          "text": "统筹并规范公司的技术标准",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 34,
+          "text": "优化技术策略、架构规划",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留共享动作或对象的完整职责；对技术结果负责不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05025",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘专业条件的审核依据及认定流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05026",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "晋升平台及知识培训均为公司提供的福利支持。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05027",
+      "spans": [
+        {
+          "start": 12,
+          "end": 17,
+          "text": "教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 44,
+          "end": 47,
+          "text": "研究生",
+          "label": "K"
+        },
+        {
+          "start": 47,
+          "end": 49,
+          "text": "硕士",
+          "label": "K"
+        },
+        {
+          "start": 51,
+          "end": 57,
+          "text": "课程与教学论",
+          "label": "K"
+        },
+        {
+          "start": 58,
+          "end": 62,
+          "text": "教育硕士",
+          "label": "K"
+        },
+        {
+          "start": 63,
+          "end": 68,
+          "text": "教育学原理",
+          "label": "K"
+        },
+        {
+          "start": 80,
+          "end": 85,
+          "text": "教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 111,
+          "end": 114,
+          "text": "研究生",
+          "label": "K"
+        },
+        {
+          "start": 114,
+          "end": 116,
+          "text": "硕士",
+          "label": "K"
+        },
+        {
+          "start": 118,
+          "end": 123,
+          "text": "教育技术学",
+          "label": "K"
+        },
+        {
+          "start": 124,
+          "end": 131,
+          "text": "职业技术教育学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确证书、学历学位及专业条件；聘后限期取证仍是资格要求，试教科目和招聘对象说明不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05028",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "团队协作意识",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 29,
+          "text": "自主学历能力",
+          "label": "T"
+        },
+        {
+          "start": 30,
+          "end": 40,
+          "text": "热爱自己的专业及工作",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用能力、特质及职业态度；自主学历能力保留原文错字。",
+      "issues": []
+    }
+  ]
+}

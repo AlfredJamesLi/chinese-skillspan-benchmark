@@ -1,0 +1,740 @@
+{
+  "records": [
+    {
+      "id": "sp10k-01785",
+      "spans": [
+        {
+          "start": 10,
+          "end": 12,
+          "text": "组织",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "记录",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "活动会议组织为通用组织能力，记录为明确事务工作；对象由前文共享。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01787",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "JAVA开发",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 33,
+          "text": "SpringCloud微服务开发",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 42,
+          "text": "数据结构",
+          "label": "K"
+        },
+        {
+          "start": 43,
+          "end": 45,
+          "text": "算法",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发活动去经验后完整；数据结构和算法为知识要求，年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01788",
+      "spans": [
+        {
+          "start": 1,
+          "end": 5,
+          "text": "智能家居",
+          "label": "S"
+        },
+        {
+          "start": 6,
+          "end": 10,
+          "text": "视频监控",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "安防报警",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "门禁控制",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "综合布线",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 33,
+          "text": "计算机系统集成",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "小区对讲",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 46,
+          "text": "智能/小区楼宇",
+          "label": "S"
+        },
+        {
+          "start": 47,
+          "end": 54,
+          "text": "强弱电方案设计",
+          "label": "S"
+        },
+        {
+          "start": 55,
+          "end": 59,
+          "text": "项目实施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "前列项目由明确方案设计与实施经历限定为实践对象；共享经验不补入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01789",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "运维护基础",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "text": "磁带库备份",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "基础为知识，备份为操作活动；运维护按原文保留。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01790",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "生产追溯系统、网络、桌面等运维",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "规范操作流程",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维保留共享动作；规范流程为活动，提高效率为泛化结果不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01791",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "OpenStack",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "Docker",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 30,
+          "text": "OpenVswitch",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 34,
+          "text": "KVM",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "Ceph",
+          "label": "S"
+        },
+        {
+          "start": 62,
+          "end": 70,
+          "text": "业务中台服务运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具名技术有明确使用经历，另标中台服务运维；概括类别不重复抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01792",
+      "spans": [
+        {
+          "start": 13,
+          "end": 17,
+          "text": "执行能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体任务未说明，抽取明确执行能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01795",
+      "spans": [
+        {
+          "start": 0,
+          "end": 10,
+          "text": "全日制本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "能源",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "机械类",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格和两个专业领域；相关专业不单独标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01797",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "带领团队",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 29,
+          "text": "阿里巴巴1688诚信通/实力商家店铺整体规划",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "产品上架",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "店铺运营",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 42,
+          "text": "推广",
+          "label": "S"
+        },
+        {
+          "start": 43,
+          "end": 45,
+          "text": "销售",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "领导团队为通用能力，各项电商经营职责独立抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01798",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Linux系统管理",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "网络维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项明确管理维护活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01800",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "系统的日常运维",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "应急故障维修",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取运维和维修；保障运行仅为结果承诺。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01804",
+      "spans": [
+        {
+          "start": 3,
+          "end": 10,
+          "text": "水处理资格证书",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 25,
+          "text": "锂电池生产工艺废水处理流程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "非语言资格与明确工艺流程知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01805",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "资源整合能力",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "全局观",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "数据分析能力",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "人际交流",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "沟通能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据分析为职业技能，其他为通用能力；共享能力后缀不补写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01807",
+      "spans": [
+        {
+          "start": 4,
+          "end": 13,
+          "text": "信息系统的操作培训",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "信息系统操作培训是明确职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01809",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "性格开朗",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "态度积极",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "诚实守信",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用特质与学习能力，程度词不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01811",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "网络协议",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "操作能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络协议为知识，操作能力承接网络对象为岗位技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01812",
+      "spans": [
+        {
+          "start": 3,
+          "end": 8,
+          "text": "收银软硬件",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "办公系统",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "text": "商业地产的运作",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位系统工具与行业运作知识分开。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01813",
+      "spans": [
+        {
+          "start": 6,
+          "end": 12,
+          "text": "信息管理方法",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 25,
+          "text": "行业技术发展趋势",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "业务发展动向",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "概括管理方法和行业动态为知识；未指明的关键技术暂不入主层。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "关键技术",
+          "alternatives": [
+            "指特定岗位技术知识，纳入",
+            "泛化能力评价，缺少具体提及"
+          ],
+          "reason": "独到见解的技术对象未说明，无法确定独立可标注内容。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01814",
+      "spans": [
+        {
+          "start": 9,
+          "end": 11,
+          "text": "安装",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "操作",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "配置",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "故障处理",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "text": "EXCHANGE",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列操作共享邮件系统对象；EXCHANGE为具名岗位系统。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01815",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "PC硬件",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "防火墙",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "防病毒",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "text": "电话交换机",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "网络基础知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "整组共享基础知识要求，未提供实际操作语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01817",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "认真负责",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "乐观勤奋",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "恪守诚信",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 22,
+          "text": "承受力",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 26,
+          "text": "忍耐力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "独立通用特质和承压能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01818",
+      "spans": [
+        {
+          "start": 4,
+          "end": 16,
+          "text": "互联网产品/网络软件开发",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "测试",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "项目管理",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 39,
+          "text": "运营成功的产品案例",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发测试项目管理为实践；产品案例保留运营经历的完整要求，不截成产品类别。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01820",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "认真负责",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "任劳任怨",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工作特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01821",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Linux操作系统",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 23,
+          "text": "Windows操作系统",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "常用命令",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 42,
+          "text": "编写常用的shell脚本",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作系统及命令属岗位运用，脚本编写是独立活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01822",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "计算机软硬件",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "范围与边界明确，但孤立熟悉要求未区分知识或实际运用，S仅占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "计算机软硬件",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "缺少基础原理或安装维护等局部语境，熟悉不能单独决定类型。"
+        }
+      ]
+    }
+  ]
+}

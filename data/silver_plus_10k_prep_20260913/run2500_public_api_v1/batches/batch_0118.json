@@ -1,0 +1,295 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 48.999,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5044,
+    "completion_tokens": 1546,
+    "total_tokens": 6590,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5044,
+    "output_tokens": 1546,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01171\",\"spans\":[{\"start\":0,\"end\":19,\"text\":\"在仿真软件图形界面中增添和实现相关功能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确的软件功能实现职责，保留动作所需的界面及功能对象。\",\"issues\":[]},{\"id\":\"sp10k-01172\",\"spans\":[{\"start\":5,\"end\":19,\"text\":\"计算机软硬件安装、配置、调试\",\"label\":\"S\"},{\"start\":29,\"end\":36,\"text\":\"分析、解决能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"安装、配置、调试共享软硬件对象；分析、解决能力明确承接技术故障问题，标S。\",\"issues\":[]},{\"id\":\"sp10k-01173\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"管理能力\",\"label\":\"T\"},{\"start\":8,\"end\":12,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":13,\"end\":17,\"text\":\"开拓能力\",\"label\":\"T\"},{\"start\":20,\"end\":24,\"text\":\"合作沟通\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为通用管理、人际沟通或个人能力，去除程度及触发词。\",\"issues\":[]},{\"id\":\"sp10k-01174\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"Linux操作系统\",\"label\":\"S\"},{\"start\":14,\"end\":16,\"text\":\"进程\",\"label\":\"K\"},{\"start\":17,\"end\":19,\"text\":\"线程\",\"label\":\"K\"},{\"start\":20,\"end\":26,\"text\":\"Cgroup\",\"label\":\"K\"},{\"start\":27,\"end\":36,\"text\":\"namespace\",\"label\":\"K\"}],\"status\":\"adjudication_required\",\"note\":\"后段为操作系统概念知识；Linux操作系统缺乏实际操作或原理语境，暂作类型待决。\",\"issues\":[{\"kind\":\"type\",\"text\":\"Linux操作系统\",\"alternatives\":[\"S\",\"K\"],\"reason\":\"仅有“熟悉”要求，无法确定是系统工具运用还是操作系统知识；暂标S占位。\"}]},{\"id\":\"sp10k-01175\",\"spans\":[{\"start\":1,\"end\":16,\"text\":\"维护服务器、终端、网络综合布线\",\"label\":\"S\"},{\"start\":31,\"end\":33,\"text\":\"规划\",\"label\":\"S\"},{\"start\":34,\"end\":38,\"text\":\"动态管理\",\"label\":\"S\"},{\"start\":39,\"end\":45,\"text\":\"远程调试维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"维护活动保留共享动作及对象；后三项由局部网络对象限定，均为职业技能。\",\"issues\":[]},{\"id\":\"sp10k-01176\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"爱岗敬业\",\"label\":\"T\"},{\"start\":5,\"end\":9,\"text\":\"吃苦耐劳\",\"label\":\"T\"},{\"start\":12,\"end\":15,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":17,\"end\":21,\"text\":\"认真细致\",\"label\":\"T\"},{\"start\":22,\"end\":28,\"text\":\"逻辑思维能力\",\"label\":\"T\"},{\"start\":30,\"end\":38,\"text\":\"服从科室工作安排\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取职业态度、通用思维能力及服从工作安排的特质要求，不保留程度词。\",\"issues\":[]},{\"id\":\"sp10k-01177\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明招聘计划及报名系统要求的查询方式，未提供具体能力或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01178\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"全部为薪酬福利，证书补贴不构成候选人资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01179\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"制订运维项目维保工作计划\",\"label\":\"S\"},{\"start\":20,\"end\":24,\"text\":\"目标考核\",\"label\":\"S\"},{\"start\":25,\"end\":29,\"text\":\"成本控制\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"运维项目管理语境中的计划制订、考核和成本控制属于独立职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01180\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅泛指专业对口及岗位所需学历、学位、资格和技能，未给出具体专业、完整资格名或能力内容。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01171",
+        "spans": [
+          {
+            "start": 0,
+            "end": 19,
+            "text": "在仿真软件图形界面中增添和实现相关功能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确的软件功能实现职责，保留动作所需的界面及功能对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01172",
+        "spans": [
+          {
+            "start": 5,
+            "end": 19,
+            "text": "计算机软硬件安装、配置、调试",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 36,
+            "text": "分析、解决能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "安装、配置、调试共享软硬件对象；分析、解决能力明确承接技术故障问题，标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01173",
+        "spans": [
+          {
+            "start": 3,
+            "end": 7,
+            "text": "管理能力",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "开拓能力",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "合作沟通",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为通用管理、人际沟通或个人能力，去除程度及触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01174",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "Linux操作系统",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 16,
+            "text": "进程",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 19,
+            "text": "线程",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "Cgroup",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 36,
+            "text": "namespace",
+            "label": "K"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "后段为操作系统概念知识；Linux操作系统缺乏实际操作或原理语境，暂作类型待决。",
+        "issues": [
+          {
+            "kind": "type",
+            "text": "Linux操作系统",
+            "alternatives": [
+              "S",
+              "K"
+            ],
+            "reason": "仅有“熟悉”要求，无法确定是系统工具运用还是操作系统知识；暂标S占位。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-01175",
+        "spans": [
+          {
+            "start": 1,
+            "end": 16,
+            "text": "维护服务器、终端、网络综合布线",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 33,
+            "text": "规划",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "text": "动态管理",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 45,
+            "text": "远程调试维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "维护活动保留共享动作及对象；后三项由局部网络对象限定，均为职业技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01176",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "爱岗敬业",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "吃苦耐劳",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "认真细致",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "逻辑思维能力",
+            "label": "T"
+          },
+          {
+            "start": 30,
+            "end": 38,
+            "text": "服从科室工作安排",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取职业态度、通用思维能力及服从工作安排的特质要求，不保留程度词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01177",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明招聘计划及报名系统要求的查询方式，未提供具体能力或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01178",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "全部为薪酬福利，证书补贴不构成候选人资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01179",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "制订运维项目维保工作计划",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "目标考核",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "成本控制",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "运维项目管理语境中的计划制订、考核和成本控制属于独立职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01180",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅泛指专业对口及岗位所需学历、学位、资格和技能，未给出具体专业、完整资格名或能力内容。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 118,
+  "ids": [
+    "sp10k-01171",
+    "sp10k-01172",
+    "sp10k-01173",
+    "sp10k-01174",
+    "sp10k-01175",
+    "sp10k-01176",
+    "sp10k-01177",
+    "sp10k-01178",
+    "sp10k-01179",
+    "sp10k-01180"
+  ],
+  "at": "2026-09-13T15:32:28.629743+00:00"
+}

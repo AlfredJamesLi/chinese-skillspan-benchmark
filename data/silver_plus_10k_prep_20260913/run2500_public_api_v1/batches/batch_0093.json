@@ -1,0 +1,318 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 43.161,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5006,
+    "completion_tokens": 1549,
+    "total_tokens": 6555,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 812
+    },
+    "input_tokens": 5006,
+    "output_tokens": 1549,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00925",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            10
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "沟通协调"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "耐心细致"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            20
+          ],
+          "to": [
+            16,
+            19
+          ],
+          "text": "大局观"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            26,
+            32
+          ],
+          "to": [
+            25,
+            31
+          ],
+          "text": "团队合作精神"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00928",
+      "repairs": [
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            27,
+            36
+          ],
+          "to": [
+            27,
+            35
+          ],
+          "text": "服务技术方案拟定"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00930",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            12
+          ],
+          "to": [
+            0,
+            13
+          ],
+          "text": "计算机专业统招专科以上学历"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00921\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为泛化的其他资格条件，未明确具体能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-00922\",\"spans\":[{\"start\":5,\"end\":13,\"text\":\"项目文档编制能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行项目文档编制这一职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00923\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于应聘资格审查、作弊处理及聘用关系处置条款，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00924\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"SQL语言\",\"label\":\"S\"},{\"start\":9,\"end\":15,\"text\":\"Oracle\",\"label\":\"S\"},{\"start\":16,\"end\":25,\"text\":\"SQLServer\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"SQL语言及Oracle、SQLServer均置于开发经验语境中，按岗位工具或技术运用标注。\",\"issues\":[]},{\"id\":\"sp10k-00925\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"沟通协调\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"耐心细致\",\"label\":\"T\"},{\"start\":17,\"end\":20,\"text\":\"大局观\",\"label\":\"T\"},{\"start\":26,\"end\":32,\"text\":\"团队合作精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为跨行业通用能力或个人特质。\",\"issues\":[]},{\"id\":\"sp10k-00926\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于考察对象审查工作的考察内容，不是候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00927\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"文件系统、数据库的维护清理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求对文件系统和数据库执行维护清理职业活动，保留必要对象与动作。\",\"issues\":[]},{\"id\":\"sp10k-00928\",\"spans\":[{\"start\":3,\"end\":8,\"text\":\"IDC机房\",\"label\":\"K\"},{\"start\":12,\"end\":16,\"text\":\"故障处理\",\"label\":\"S\"},{\"start\":17,\"end\":21,\"text\":\"问题跟踪\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"例行巡检\",\"label\":\"S\"},{\"start\":27,\"end\":36,\"text\":\"服务技术方案拟定\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"IDC机房为明确领域背景；故障处理、问题跟踪、例行巡检和服务技术方案拟定为岗位职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00929\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于事项解释和公告管理条款，不是候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-00930\",\"spans\":[{\"start\":0,\"end\":12,\"text\":\"计算机专业统招专科以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"为完整学历资格名。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00921",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为泛化的其他资格条件，未明确具体能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00922",
+        "spans": [
+          {
+            "start": 5,
+            "end": 13,
+            "text": "项目文档编制能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行项目文档编制这一职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00923",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于应聘资格审查、作弊处理及聘用关系处置条款，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00924",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "SQL语言",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "Oracle",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "text": "SQLServer",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "SQL语言及Oracle、SQLServer均置于开发经验语境中，按岗位工具或技术运用标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00925",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "沟通协调",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "耐心细致",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "text": "大局观",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "text": "团队合作精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为跨行业通用能力或个人特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00926",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于考察对象审查工作的考察内容，不是候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00927",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "文件系统、数据库的维护清理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求对文件系统和数据库执行维护清理职业活动，保留必要对象与动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00928",
+        "spans": [
+          {
+            "start": 3,
+            "end": 8,
+            "text": "IDC机房",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "故障处理",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "问题跟踪",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "例行巡检",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 35,
+            "text": "服务技术方案拟定",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "IDC机房为明确领域背景；故障处理、问题跟踪、例行巡检和服务技术方案拟定为岗位职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00929",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于事项解释和公告管理条款，不是候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00930",
+        "spans": [
+          {
+            "start": 0,
+            "end": 13,
+            "text": "计算机专业统招专科以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "为完整学历资格名。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 93,
+  "ids": [
+    "sp10k-00921",
+    "sp10k-00922",
+    "sp10k-00923",
+    "sp10k-00924",
+    "sp10k-00925",
+    "sp10k-00926",
+    "sp10k-00927",
+    "sp10k-00928",
+    "sp10k-00929",
+    "sp10k-00930"
+  ],
+  "at": "2026-09-13T15:08:13.021645+00:00"
+}

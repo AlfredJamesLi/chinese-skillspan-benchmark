@@ -1,0 +1,466 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02628",
+      "spans": [
+        {
+          "start": 6,
+          "end": 12,
+          "text": "配置检测工具",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 23,
+          "text": "对产品系统进行安全检测",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 29,
+          "text": "配置防火墙",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 37,
+          "text": "防攻击设置",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取检测工具与具体安全操作，拆分独立活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02629",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "TOMCAT安装及配置管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装与配置管理共享工具对象，保留完整活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02630",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "网络安全设备",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 26,
+          "text": "维护各类防火墙、网络准入系统",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 30,
+          "text": "深信服",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备处于明确维护运用语境；并列维护对象保留共享动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02631",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "Ceph架构",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 21,
+          "text": "Ceph存储运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "架构知识与运维实践分标，活动去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02632",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "电力系统维护",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "程序优化",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "软件开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "三项独立职业活动分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02634",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘岗位及人数，无具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02635",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格初审异议申辩时间属于报考行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02636",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "英语读写",
+          "label": "L"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "商务口语沟通",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "读写与商务口语均为英语应用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02637",
+      "spans": [
+        {
+          "start": 2,
+          "end": 30,
+          "text": "window、Linux以及Unix服务器系统的日常运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列系统共享日常运维活动，保留完整跨度及原文拼写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02638",
+      "spans": [
+        {
+          "start": 24,
+          "end": 30,
+          "text": "专业技术资格",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "执业资格",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求取得的非语言资格，期限及解聘后果不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02639",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "逻辑推理能力",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "团队协作能力",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 35,
+          "text": "责任心",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用认知、协作、沟通能力及责任特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02640",
+      "spans": [
+        {
+          "start": 3,
+          "end": 14,
+          "text": "国家承认的大专以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格及认可限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02641",
+      "spans": [
+        {
+          "start": 14,
+          "end": 23,
+          "text": "国家四级或以上水平",
+          "label": "L"
+        },
+        {
+          "start": 31,
+          "end": 42,
+          "text": "考试成绩在425分以上",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "英语语境限定等级及考试分数要求；学习成绩评价不单独抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02642",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "附件命名示例中的学历、专业和岗位不是候选人资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02643",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "描述任职后的晋升机会，未提出具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02644",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "软件工程",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 14,
+          "text": "电子信息科学类",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 23,
+          "text": "计算机科学与技术",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业列表逐项抽取，排除列表残留符号。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02645",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公司经销身份与产品服务宣传，无候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02646",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘对象范围，未列具体知识、能力或资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02647",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "计算机网络",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "防火墙",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "路由配置",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 29,
+          "text": "搭建中小型局域网",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络领域知识与设备、配置、搭建实践分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02648",
+      "spans": [
+        {
+          "start": 0,
+          "end": 14,
+          "text": "遵守国家法律、法规的相关规定",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "职业道德",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "认真负责",
+          "label": "T"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "积极进取",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "守法行为、职业道德及工作态度属于通用行为素质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02649",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "证书专业名称与代码匹配属于报考材料条件，未指明具体资格或专业。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02650",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列提交的证件扫描材料。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02651",
+      "spans": [
+        {
+          "start": 26,
+          "end": 30,
+          "text": "语言表达",
+          "label": "T"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "解决问题",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确测试候选人的通用能力；面试方式及泛化专业表述不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02652",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "表达沟通能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取两项通用能力，保留表达沟通的完整能力短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02653",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "诚信",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "积极主动",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "逐项抽取服务、沟通与工作品格，去除程度及引导词。",
+      "issues": []
+    }
+  ]
+}

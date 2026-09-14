@@ -1,0 +1,564 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 49.426,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5056,
+    "completion_tokens": 1550,
+    "total_tokens": 6606,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 576
+    },
+    "input_tokens": 5056,
+    "output_tokens": 1550,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01501",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            1,
+            15
+          ],
+          "to": [
+            2,
+            16
+          ],
+          "text": "负责接听技术支持报修热线电话"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            31
+          ],
+          "to": [
+            17,
+            27
+          ],
+          "text": "回复技术支持报修邮件"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            32,
+            38
+          ],
+          "to": [
+            28,
+            34
+          ],
+          "text": "能够快速诊断"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            39,
+            55
+          ],
+          "to": [
+            35,
+            51
+          ],
+          "text": "修复桌面端设备的各种软、硬件故障"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            56,
+            66
+          ],
+          "to": [
+            58,
+            66
+          ],
+          "text": "办公软件常见故障"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            67,
+            77
+          ],
+          "to": [
+            67,
+            75
+          ],
+          "text": "邮件系统常见故障"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            78,
+            84
+          ],
+          "to": [
+            76,
+            82
+          ],
+          "text": "基础网络设置"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            85,
+            96
+          ],
+          "to": [
+            84,
+            96
+          ],
+          "text": "AD域控的基础帐户知识面"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01502",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            14
+          ],
+          "to": [
+            4,
+            13
+          ],
+          "text": "新技术的研究与发展"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            16,
+            19
+          ],
+          "text": "自动化"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            23,
+            27
+          ],
+          "to": [
+            20,
+            25
+          ],
+          "text": "智能化运维"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            30,
+            34
+          ],
+          "to": [
+            26,
+            30
+          ],
+          "text": "落地实施"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01504",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            10,
+            18
+          ],
+          "to": [
+            14,
+            20
+          ],
+          "text": "现场运维工作"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            34
+          ],
+          "to": [
+            21,
+            39
+          ],
+          "text": "协调现场团队与公司之间的相关工作事宜"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01505",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            10,
+            14
+          ],
+          "to": [
+            10,
+            13
+          ],
+          "text": "自动化"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            15,
+            18
+          ],
+          "to": [
+            14,
+            17
+          ],
+          "text": "计算机"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            19,
+            26
+          ],
+          "to": [
+            18,
+            26
+          ],
+          "text": "相关专科以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01510",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            22,
+            26
+          ],
+          "to": [
+            20,
+            24
+          ],
+          "text": "安装配置"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            28,
+            32
+          ],
+          "to": [
+            25,
+            29
+          ],
+          "text": "后期运维"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01501\",\"spans\":[{\"start\":1,\"end\":15,\"text\":\"负责接听技术支持报修热线电话\",\"label\":\"S\"},{\"start\":17,\"end\":31,\"text\":\"回复技术支持报修邮件\",\"label\":\"S\"},{\"start\":32,\"end\":38,\"text\":\"能够快速诊断\",\"label\":\"S\"},{\"start\":39,\"end\":55,\"text\":\"修复桌面端设备的各种软、硬件故障\",\"label\":\"S\"},{\"start\":56,\"end\":66,\"text\":\"办公软件常见故障\",\"label\":\"K\"},{\"start\":67,\"end\":77,\"text\":\"邮件系统常见故障\",\"label\":\"K\"},{\"start\":78,\"end\":84,\"text\":\"基础网络设置\",\"label\":\"S\"},{\"start\":85,\"end\":96,\"text\":\"AD域控的基础帐户知识面\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确要求执行的技术支持、故障诊断修复、网络设置及账户知识。\",\"issues\":[]},{\"id\":\"sp10k-01502\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"新技术的研究与发展\",\"label\":\"S\"},{\"start\":18,\"end\":22,\"text\":\"自动化\",\"label\":\"S\"},{\"start\":23,\"end\":27,\"text\":\"智能化运维\",\"label\":\"S\"},{\"start\":30,\"end\":34,\"text\":\"落地实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取运维技术研究发展及自动化、智能化运维实施要求。\",\"issues\":[]},{\"id\":\"sp10k-01503\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"年龄条件及出生日期属于人口条件，不属于能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01504\",\"spans\":[{\"start\":10,\"end\":18,\"text\":\"现场运维工作\",\"label\":\"S\"},{\"start\":19,\"end\":34,\"text\":\"协调现场团队与公司之间的相关工作事宜\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取现场运维职业活动及团队与公司间的协调能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01505\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"通信\",\"label\":\"K\"},{\"start\":3,\"end\":9,\"text\":\"电子电气设备\",\"label\":\"K\"},{\"start\":10,\"end\":14,\"text\":\"自动化\",\"label\":\"K\"},{\"start\":15,\"end\":18,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":19,\"end\":26,\"text\":\"相关专科以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取相关领域知识及专科以上学历资格。\",\"issues\":[]},{\"id\":\"sp10k-01506\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"弄虚作假及取消资格属于资格审查和纪律性条件，不是候选人能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01507\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"CD经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"CD经验是明确的实践经验要求，按项目经验规则标为S。\",\"issues\":[]},{\"id\":\"sp10k-01508\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"大专以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":12,\"text\":\"网络维护\",\"label\":\"S\"},{\"start\":13,\"end\":17,\"text\":\"硬件维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历资格及网络、硬件维护职业活动；泛化工作经验后缀不纳入跨度。\",\"issues\":[]},{\"id\":\"sp10k-01509\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"学历证书提交、复印及认证材料属于报名材料要求，不是候选人学历资格本身。\",\"issues\":[]},{\"id\":\"sp10k-01510\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"SPD系统硬件选型\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"安装配置\",\"label\":\"S\"},{\"start\":28,\"end\":32,\"text\":\"后期运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取SPD系统硬件选型、安装配置及后期运维等明确职业活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01501",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "负责接听技术支持报修热线电话",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 27,
+            "text": "回复技术支持报修邮件",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "text": "能够快速诊断",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 51,
+            "text": "修复桌面端设备的各种软、硬件故障",
+            "label": "S"
+          },
+          {
+            "start": 58,
+            "end": 66,
+            "text": "办公软件常见故障",
+            "label": "K"
+          },
+          {
+            "start": 67,
+            "end": 75,
+            "text": "邮件系统常见故障",
+            "label": "K"
+          },
+          {
+            "start": 76,
+            "end": 82,
+            "text": "基础网络设置",
+            "label": "S"
+          },
+          {
+            "start": 84,
+            "end": 96,
+            "text": "AD域控的基础帐户知识面",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确要求执行的技术支持、故障诊断修复、网络设置及账户知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01502",
+        "spans": [
+          {
+            "start": 4,
+            "end": 13,
+            "text": "新技术的研究与发展",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "text": "自动化",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "text": "智能化运维",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "落地实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取运维技术研究发展及自动化、智能化运维实施要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01503",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "年龄条件及出生日期属于人口条件，不属于能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01504",
+        "spans": [
+          {
+            "start": 14,
+            "end": 20,
+            "text": "现场运维工作",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 39,
+            "text": "协调现场团队与公司之间的相关工作事宜",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取现场运维职业活动及团队与公司间的协调能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01505",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "通信",
+            "label": "K"
+          },
+          {
+            "start": 3,
+            "end": 9,
+            "text": "电子电气设备",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "text": "自动化",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 17,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "text": "相关专科以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取相关领域知识及专科以上学历资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01506",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "弄虚作假及取消资格属于资格审查和纪律性条件，不是候选人能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01507",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "CD经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "CD经验是明确的实践经验要求，按项目经验规则标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01508",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "大专以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "网络维护",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "硬件维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历资格及网络、硬件维护职业活动；泛化工作经验后缀不纳入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01509",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "学历证书提交、复印及认证材料属于报名材料要求，不是候选人学历资格本身。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01510",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "SPD系统硬件选型",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "安装配置",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "后期运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取SPD系统硬件选型、安装配置及后期运维等明确职业活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 151,
+  "ids": [
+    "sp10k-01501",
+    "sp10k-01502",
+    "sp10k-01503",
+    "sp10k-01504",
+    "sp10k-01505",
+    "sp10k-01506",
+    "sp10k-01507",
+    "sp10k-01508",
+    "sp10k-01509",
+    "sp10k-01510"
+  ],
+  "at": "2026-09-13T16:09:07.065050+00:00"
+}

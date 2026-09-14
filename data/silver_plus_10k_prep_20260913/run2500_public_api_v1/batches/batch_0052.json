@@ -1,0 +1,275 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 54.945,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5014,
+    "completion_tokens": 1686,
+    "total_tokens": 6700,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 756
+    },
+    "input_tokens": 5014,
+    "output_tokens": 1686,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00511\",\"spans\":[{\"start\":23,\"end\":27,\"text\":\"研究能力\",\"label\":\"T\"},{\"start\":28,\"end\":32,\"text\":\"创新能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"研究能力和创新能力为通用能力；文章或预印本在此作为能力佐证材料，不另标为执行职责。\",\"issues\":[]},{\"id\":\"sp10k-00512\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"信息应用系统的运维与优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确系统运维和优化职责，保留共享职业对象。\",\"issues\":[]},{\"id\":\"sp10k-00513\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"沟通表达能力\",\"label\":\"T\"},{\"start\":30,\"end\":32,\"text\":\"沟通\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"沟通表达及与研发人员、用户沟通均为人际通用能力。\",\"issues\":[]},{\"id\":\"sp10k-00514\",\"spans\":[{\"start\":6,\"end\":15,\"text\":\"软件或网站技术运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"技术运维为完整职业活动，去除年限、经验及优先修饰，保留共享动作。\",\"issues\":[]},{\"id\":\"sp10k-00515\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明证书取得和录用手续的行政期限及后果，未给出具体学历资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00516\",\"spans\":[{\"start\":2,\"end\":28,\"text\":\"项目建设中合同、施工安全、质量、技术、进场材料等管理\",\"label\":\"S\"},{\"start\":29,\"end\":35,\"text\":\"记录工程日志\",\"label\":\"S\"},{\"start\":36,\"end\":42,\"text\":\"收集工程资料\",\"label\":\"S\"},{\"start\":43,\"end\":49,\"text\":\"组织工程验收\",\"label\":\"S\"},{\"start\":50,\"end\":56,\"text\":\"编写工程总结\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"逐项抽取工程职业活动；首项并列对象共享管理中心，保留完整短语。\",\"issues\":[]},{\"id\":\"sp10k-00517\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"系统的日常巡检\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"配置管理\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"发布维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"系统巡检、配置管理和发布维护为独立完整职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00518\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"windows\",\"label\":\"S\"},{\"start\":10,\"end\":15,\"text\":\"linux\",\"label\":\"S\"},{\"start\":24,\"end\":30,\"text\":\"操作系统维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"操作系统名称受同句明确维护实践限定，按现用工具标S；维护活动去除经验后仍完整。\",\"issues\":[]},{\"id\":\"sp10k-00519\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"特种作业操作证\",\"label\":\"K\"},{\"start\":12,\"end\":20,\"text\":\"相应系统的资格证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求持有非语言资格证书；第二项保留原文系统限定，不补写具体证书名。\",\"issues\":[]},{\"id\":\"sp10k-00520\",\"spans\":[{\"start\":4,\"end\":14,\"text\":\"分布式数据库存储策略\",\"label\":\"K\"},{\"start\":17,\"end\":22,\"text\":\"MySql\",\"label\":\"S\"},{\"start\":23,\"end\":28,\"text\":\"Redis\",\"label\":\"S\"},{\"start\":29,\"end\":36,\"text\":\"MyBatis\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"存储策略为领域知识；具体数据库及框架按工具栈标S，概括类别不重复抽取。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00511",
+        "spans": [
+          {
+            "start": 23,
+            "end": 27,
+            "text": "研究能力",
+            "label": "T"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "创新能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "研究能力和创新能力为通用能力；文章或预印本在此作为能力佐证材料，不另标为执行职责。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00512",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "信息应用系统的运维与优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确系统运维和优化职责，保留共享职业对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00513",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "沟通表达能力",
+            "label": "T"
+          },
+          {
+            "start": 30,
+            "end": 32,
+            "text": "沟通",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通表达及与研发人员、用户沟通均为人际通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00514",
+        "spans": [
+          {
+            "start": 6,
+            "end": 15,
+            "text": "软件或网站技术运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "技术运维为完整职业活动，去除年限、经验及优先修饰，保留共享动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00515",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明证书取得和录用手续的行政期限及后果，未给出具体学历资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00516",
+        "spans": [
+          {
+            "start": 2,
+            "end": 28,
+            "text": "项目建设中合同、施工安全、质量、技术、进场材料等管理",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "记录工程日志",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 42,
+            "text": "收集工程资料",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 49,
+            "text": "组织工程验收",
+            "label": "S"
+          },
+          {
+            "start": 50,
+            "end": 56,
+            "text": "编写工程总结",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "逐项抽取工程职业活动；首项并列对象共享管理中心，保留完整短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00517",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "系统的日常巡检",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "配置管理",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "发布维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统巡检、配置管理和发布维护为独立完整职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00518",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "windows",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 15,
+            "text": "linux",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "操作系统维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "操作系统名称受同句明确维护实践限定，按现用工具标S；维护活动去除经验后仍完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00519",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "特种作业操作证",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "text": "相应系统的资格证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求持有非语言资格证书；第二项保留原文系统限定，不补写具体证书名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00520",
+        "spans": [
+          {
+            "start": 4,
+            "end": 14,
+            "text": "分布式数据库存储策略",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "text": "MySql",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "text": "Redis",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 36,
+            "text": "MyBatis",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "存储策略为领域知识；具体数据库及框架按工具栈标S，概括类别不重复抽取。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 52,
+  "ids": [
+    "sp10k-00511",
+    "sp10k-00512",
+    "sp10k-00513",
+    "sp10k-00514",
+    "sp10k-00515",
+    "sp10k-00516",
+    "sp10k-00517",
+    "sp10k-00518",
+    "sp10k-00519",
+    "sp10k-00520"
+  ],
+  "at": "2026-09-13T14:34:17.669753+00:00"
+}

@@ -1,0 +1,463 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 31.318,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5079,
+    "completion_tokens": 1344,
+    "total_tokens": 6423,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 431
+    },
+    "input_tokens": 5079,
+    "output_tokens": 1344,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00222",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            9
+          ],
+          "to": [
+            5,
+            11
+          ],
+          "text": "计划实施能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            14
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "沟通能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00225",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            6
+          ],
+          "to": [
+            2,
+            5
+          ],
+          "text": "云计算"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            10,
+            15
+          ],
+          "text": "虚拟服务器"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00228",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            9
+          ],
+          "to": [
+            4,
+            8
+          ],
+          "text": "沟通能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            16
+          ],
+          "to": [
+            9,
+            15
+          ],
+          "text": "文档编写能力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            21
+          ],
+          "to": [
+            16,
+            20
+          ],
+          "text": "自学能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            22,
+            28
+          ],
+          "to": [
+            21,
+            27
+          ],
+          "text": "安全保密意识"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            32,
+            37
+          ],
+          "to": [
+            35,
+            39
+          ],
+          "text": "加班工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00229",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            9
+          ],
+          "to": [
+            5,
+            11
+          ],
+          "text": "市场分析能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            14
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "营销策划"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            19
+          ],
+          "to": [
+            17,
+            23
+          ],
+          "text": "店铺规划能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            29,
+            33
+          ],
+          "to": [
+            36,
+            40
+          ],
+          "text": "团队精神"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00221\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"J2EE开发原理\",\"label\":\"K\"},{\"start\":15,\"end\":38,\"text\":\"SpringMVC/SpringCloud技术\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"J2EE开发原理为领域知识，SpringMVC/SpringCloud技术为岗位工具和技术运用。\",\"issues\":[]},{\"id\":\"sp10k-00222\",\"spans\":[{\"start\":3,\"end\":9,\"text\":\"计划实施能力\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"沟通能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"计划实施能力和沟通能力均为跨行业通用能力。\",\"issues\":[]},{\"id\":\"sp10k-00223\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"建立系统运维管理体系\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"建立系统运维管理体系是明确的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00224\",\"spans\":[{\"start\":4,\"end\":7,\"text\":\"vue\",\"label\":\"S\"},{\"start\":8,\"end\":13,\"text\":\"react\",\"label\":\"S\"},{\"start\":14,\"end\":19,\"text\":\"nginx\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"vue、react、nginx为岗位使用的技术工具。\",\"issues\":[]},{\"id\":\"sp10k-00225\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"云计算\",\"label\":\"K\"},{\"start\":11,\"end\":15,\"text\":\"虚拟服务器\",\"label\":\"K\"},{\"start\":16,\"end\":20,\"text\":\"业务系统\",\"label\":\"K\"},{\"start\":22,\"end\":24,\"text\":\"安全\",\"label\":\"K\"},{\"start\":27,\"end\":31,\"text\":\"漏洞修复\",\"label\":\"S\"},{\"start\":32,\"end\":38,\"text\":\"安全规则维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"云计算、虚拟服务器、业务系统和安全为领域知识或对象；漏洞修复、安全规则维护为明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00226\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为咨询时间、文件名称、招聘单位及群组信息，不含候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00227\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为递补公告、资格复审和报名流程说明，不含候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00228\",\"spans\":[{\"start\":3,\"end\":9,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":10,\"end\":16,\"text\":\"文档编写能力\",\"label\":\"S\"},{\"start\":17,\"end\":21,\"text\":\"自学能力\",\"label\":\"T\"},{\"start\":22,\"end\":28,\"text\":\"安全保密意识\",\"label\":\"T\"},{\"start\":32,\"end\":37,\"text\":\"加班工作\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"沟通、自学、安全保密和适应加班体现通用能力或特质；文档编写能力为明确职业活动能力。\",\"issues\":[]},{\"id\":\"sp10k-00229\",\"spans\":[{\"start\":3,\"end\":9,\"text\":\"市场分析能力\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"营销策划\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"店铺规划能力\",\"label\":\"S\"},{\"start\":29,\"end\":33,\"text\":\"团队精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"市场分析、营销策划和店铺规划为领域绑定的职业活动；团队精神为通用特质。业绩压力为工作条件，不标。\",\"issues\":[]},{\"id\":\"sp10k-00230\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报考回避关系限制，属于招聘资格审查规定，不是候选人所需能力、知识或资格提及。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00221",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "J2EE开发原理",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 38,
+            "text": "SpringMVC/SpringCloud技术",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "J2EE开发原理为领域知识，SpringMVC/SpringCloud技术为岗位工具和技术运用。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00222",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "计划实施能力",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "沟通能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "计划实施能力和沟通能力均为跨行业通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00223",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "建立系统运维管理体系",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "建立系统运维管理体系是明确的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00224",
+        "spans": [
+          {
+            "start": 4,
+            "end": 7,
+            "text": "vue",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "text": "react",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "text": "nginx",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "vue、react、nginx为岗位使用的技术工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00225",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "云计算",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 15,
+            "text": "虚拟服务器",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "业务系统",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "text": "安全",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "漏洞修复",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "text": "安全规则维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "云计算、虚拟服务器、业务系统和安全为领域知识或对象；漏洞修复、安全规则维护为明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00226",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为咨询时间、文件名称、招聘单位及群组信息，不含候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00227",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为递补公告、资格复审和报名流程说明，不含候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00228",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "文档编写能力",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "自学能力",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "text": "安全保密意识",
+            "label": "T"
+          },
+          {
+            "start": 35,
+            "end": 39,
+            "text": "加班工作",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通、自学、安全保密和适应加班体现通用能力或特质；文档编写能力为明确职业活动能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00229",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "市场分析能力",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "营销策划",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "店铺规划能力",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "text": "团队精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "市场分析、营销策划和店铺规划为领域绑定的职业活动；团队精神为通用特质。业绩压力为工作条件，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00230",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报考回避关系限制，属于招聘资格审查规定，不是候选人所需能力、知识或资格提及。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 23,
+  "ids": [
+    "sp10k-00221",
+    "sp10k-00222",
+    "sp10k-00223",
+    "sp10k-00224",
+    "sp10k-00225",
+    "sp10k-00226",
+    "sp10k-00227",
+    "sp10k-00228",
+    "sp10k-00229",
+    "sp10k-00230"
+  ],
+  "at": "2026-09-13T14:10:13.307652+00:00"
+}

@@ -1,0 +1,324 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 56.459,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4996,
+    "completion_tokens": 1806,
+    "total_tokens": 6802,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 758
+    },
+    "input_tokens": 4996,
+    "output_tokens": 1806,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-02193\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"封装相关新材料的评估\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"量产导入\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取材料评估和量产导入两项职业活动，排除职责触发词。\",\"issues\":[]},{\"id\":\"sp10k-02236\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"设备巡视\",\"label\":\"S\"},{\"start\":7,\"end\":12,\"text\":\"工作票办理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"两项独立职业活动分别标注。\",\"issues\":[]},{\"id\":\"sp10k-02311\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"元器件选型\",\"label\":\"S\"},{\"start\":8,\"end\":12,\"text\":\"成本核算\",\"label\":\"S\"},{\"start\":13,\"end\":17,\"text\":\"方案设计\",\"label\":\"S\"},{\"start\":25,\"end\":34,\"text\":\"行业新技术发展趋势\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"选型、核算及设计为职业技能，行业技术发展趋势为知识要求。\",\"issues\":[]},{\"id\":\"sp10k-02318\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"抗压能力\",\"label\":\"T\"},{\"start\":7,\"end\":24,\"text\":\"在高强度、多任务环境下保持高效执行\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抗压及特定压力环境下的高效执行均为通用能力，保留执行能力的必要情境。\",\"issues\":[]},{\"id\":\"sp10k-02319\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"ORACLE\",\"label\":\"S\"},{\"start\":9,\"end\":12,\"text\":\"SAP\",\"label\":\"S\"},{\"start\":13,\"end\":16,\"text\":\"ERP\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"局部语境将具体软件及ERP类别作为岗位工具要求。\",\"issues\":[]},{\"id\":\"sp10k-02320\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"英语四级\",\"label\":\"L\"},{\"start\":8,\"end\":14,\"text\":\"英语读写能力\",\"label\":\"L\"},{\"start\":18,\"end\":24,\"text\":\"沟通表达能力\",\"label\":\"T\"},{\"start\":25,\"end\":28,\"text\":\"执行力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"语言等级和读写能力标L，沟通表达及执行力标T，去除程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-02321\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"中专及以上学历\",\"label\":\"K\"},{\"start\":10,\"end\":17,\"text\":\"低压电工操作证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留完整学历资格与非语言职业证书名称。\",\"issues\":[]},{\"id\":\"sp10k-02360\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"国家法律\",\"label\":\"K\"},{\"start\":7,\"end\":9,\"text\":\"法规\",\"label\":\"K\"},{\"start\":12,\"end\":16,\"text\":\"规章规定\",\"label\":\"K\"},{\"start\":26,\"end\":33,\"text\":\"法律服务与支持\",\"label\":\"S\"},{\"start\":40,\"end\":56,\"text\":\"合同及法律文件的谈判、起草和审阅\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"履职依据中的法律规范标K；法律服务及文件处理标S，后者保留并列动作共享的必要对象。\",\"issues\":[]},{\"id\":\"sp10k-02380\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"行政接待\",\"label\":\"S\"},{\"start\":7,\"end\":13,\"text\":\"快递收发管理\",\"label\":\"S\"},{\"start\":14,\"end\":21,\"text\":\"票务或酒店预订\",\"label\":\"S\"},{\"start\":22,\"end\":27,\"text\":\"会议室管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"行政职业活动分别抽取，票务与酒店保留共享的预订动作。\",\"issues\":[]},{\"id\":\"sp10k-02400\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"机械设计原理\",\"label\":\"K\"},{\"start\":11,\"end\":17,\"text\":\"图纸设计规范\",\"label\":\"K\"},{\"start\":22,\"end\":27,\"text\":\"标准件选型\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"原理与规范属于知识，标准件选型为可执行职业技能。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-02193",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "封装相关新材料的评估",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "量产导入",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取材料评估和量产导入两项职业活动，排除职责触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02236",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "设备巡视",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 12,
+            "text": "工作票办理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项独立职业活动分别标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02311",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "元器件选型",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "成本核算",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "方案设计",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 34,
+            "text": "行业新技术发展趋势",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "选型、核算及设计为职业技能，行业技术发展趋势为知识要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02318",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "抗压能力",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 24,
+            "text": "在高强度、多任务环境下保持高效执行",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抗压及特定压力环境下的高效执行均为通用能力，保留执行能力的必要情境。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02319",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "ORACLE",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "text": "SAP",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "text": "ERP",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "局部语境将具体软件及ERP类别作为岗位工具要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02320",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "英语四级",
+            "label": "L"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "英语读写能力",
+            "label": "L"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "text": "沟通表达能力",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 28,
+            "text": "执行力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "语言等级和读写能力标L，沟通表达及执行力标T，去除程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02321",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "中专及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "text": "低压电工操作证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留完整学历资格与非语言职业证书名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02360",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "国家法律",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "text": "法规",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "规章规定",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "text": "法律服务与支持",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 56,
+            "text": "合同及法律文件的谈判、起草和审阅",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "履职依据中的法律规范标K；法律服务及文件处理标S，后者保留并列动作共享的必要对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02380",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "行政接待",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "text": "快递收发管理",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "text": "票务或酒店预订",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "text": "会议室管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "行政职业活动分别抽取，票务与酒店保留共享的预订动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02400",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "机械设计原理",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "图纸设计规范",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "text": "标准件选型",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "原理与规范属于知识，标准件选型为可执行职业技能。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 184,
+  "ids": [
+    "sp10k-02193",
+    "sp10k-02236",
+    "sp10k-02311",
+    "sp10k-02318",
+    "sp10k-02319",
+    "sp10k-02320",
+    "sp10k-02321",
+    "sp10k-02360",
+    "sp10k-02380",
+    "sp10k-02400"
+  ],
+  "at": "2026-09-13T16:40:32.624634+00:00"
+}

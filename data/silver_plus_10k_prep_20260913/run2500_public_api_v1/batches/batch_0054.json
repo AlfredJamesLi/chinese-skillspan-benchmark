@@ -1,0 +1,323 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 72.551,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5154,
+    "completion_tokens": 2078,
+    "total_tokens": 7232,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1231
+    },
+    "input_tokens": 5154,
+    "output_tokens": 2078,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00532",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            27,
+            31
+          ],
+          "to": [
+            26,
+            30
+          ],
+          "text": "相应证书"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            60,
+            76
+          ],
+          "to": [
+            59,
+            75
+          ],
+          "text": "教育部留学服务中心出具的学历认证"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00534",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            18
+          ],
+          "to": [
+            0,
+            17
+          ],
+          "text": "计算机、电子及相关专业大专上科学历"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            20,
+            26
+          ],
+          "to": [
+            19,
+            25
+          ],
+          "text": "交通项目经验"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00531\",\"spans\":[{\"start\":10,\"end\":14,\"text\":\"积极进取\",\"label\":\"T\"},{\"start\":15,\"end\":19,\"text\":\"吃苦耐劳\",\"label\":\"T\"},{\"start\":20,\"end\":26,\"text\":\"热爱临床工作\",\"label\":\"T\"},{\"start\":27,\"end\":32,\"text\":\"综合素质好\",\"label\":\"T\"},{\"start\":33,\"end\":38,\"text\":\"思想觉悟高\",\"label\":\"T\"},{\"start\":39,\"end\":44,\"text\":\"沟通能力强\",\"label\":\"T\"},{\"start\":50,\"end\":54,\"text\":\"团队合作\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用能力、职业意愿和个人特质；身体健康不属于本项目标注范围。\",\"issues\":[]},{\"id\":\"sp10k-00532\",\"spans\":[{\"start\":6,\"end\":13,\"text\":\"国家认可的学历\",\"label\":\"K\"},{\"start\":27,\"end\":31,\"text\":\"相应证书\",\"label\":\"K\"},{\"start\":60,\"end\":76,\"text\":\"教育部留学服务中心出具的学历认证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取招聘资格中的学历、证书和学历认证要求。\",\"issues\":[]},{\"id\":\"sp10k-00533\",\"spans\":[{\"start\":0,\"end\":5,\"text\":\"学习能力强\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"沟通能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学习能力和沟通这一跨行业通用能力。\",\"issues\":[]},{\"id\":\"sp10k-00534\",\"spans\":[{\"start\":0,\"end\":18,\"text\":\"计算机、电子及相关专业大专上科学历\",\"label\":\"K\"},{\"start\":20,\"end\":26,\"text\":\"交通项目经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历为资格知识类提及；交通项目经验对应明确项目实践活动。\",\"issues\":[]},{\"id\":\"sp10k-00535\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"hadoop\",\"label\":\"S\"},{\"start\":9,\"end\":13,\"text\":\"hive\",\"label\":\"S\"},{\"start\":14,\"end\":19,\"text\":\"hbase\",\"label\":\"S\"},{\"start\":20,\"end\":25,\"text\":\"spark\",\"label\":\"S\"},{\"start\":26,\"end\":31,\"text\":\"kylin\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"大数据技术工具名按岗位运用语境标为S。\",\"issues\":[]},{\"id\":\"sp10k-00536\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为资格初审时间和查询安排，属于报名流程信息。\",\"issues\":[]},{\"id\":\"sp10k-00537\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"全日制本科起点\",\"label\":\"K\"},{\"start\":8,\"end\":18,\"text\":\"全日制硕士研究生学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格名称。\",\"issues\":[]},{\"id\":\"sp10k-00538\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报名方式、材料提交和邮件命名要求，不属于候选人能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00539\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅要求符合岗位资格并保证报名材料真实准确，未给出可抽取的具体能力、知识或资格名称。\",\"issues\":[]},{\"id\":\"sp10k-00540\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于在读研究生报考资格限制和报名条件说明，不含可抽取的具体能力、知识或资格名称。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00531",
+        "spans": [
+          {
+            "start": 10,
+            "end": 14,
+            "text": "积极进取",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "吃苦耐劳",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "热爱临床工作",
+            "label": "T"
+          },
+          {
+            "start": 27,
+            "end": 32,
+            "text": "综合素质好",
+            "label": "T"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "text": "思想觉悟高",
+            "label": "T"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "text": "沟通能力强",
+            "label": "T"
+          },
+          {
+            "start": 50,
+            "end": 54,
+            "text": "团队合作",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用能力、职业意愿和个人特质；身体健康不属于本项目标注范围。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00532",
+        "spans": [
+          {
+            "start": 6,
+            "end": 13,
+            "text": "国家认可的学历",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "相应证书",
+            "label": "K"
+          },
+          {
+            "start": 59,
+            "end": 75,
+            "text": "教育部留学服务中心出具的学历认证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取招聘资格中的学历、证书和学历认证要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00533",
+        "spans": [
+          {
+            "start": 0,
+            "end": 5,
+            "text": "学习能力强",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "沟通能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学习能力和沟通这一跨行业通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00534",
+        "spans": [
+          {
+            "start": 0,
+            "end": 17,
+            "text": "计算机、电子及相关专业大专上科学历",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "交通项目经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为资格知识类提及；交通项目经验对应明确项目实践活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00535",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "hadoop",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "hive",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "text": "hbase",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "text": "spark",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 31,
+            "text": "kylin",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "大数据技术工具名按岗位运用语境标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00536",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为资格初审时间和查询安排，属于报名流程信息。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00537",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "全日制本科起点",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 18,
+            "text": "全日制硕士研究生学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00538",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报名方式、材料提交和邮件命名要求，不属于候选人能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00539",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅要求符合岗位资格并保证报名材料真实准确，未给出可抽取的具体能力、知识或资格名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00540",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于在读研究生报考资格限制和报名条件说明，不含可抽取的具体能力、知识或资格名称。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 54,
+  "ids": [
+    "sp10k-00531",
+    "sp10k-00532",
+    "sp10k-00533",
+    "sp10k-00534",
+    "sp10k-00535",
+    "sp10k-00536",
+    "sp10k-00537",
+    "sp10k-00538",
+    "sp10k-00539",
+    "sp10k-00540"
+  ],
+  "at": "2026-09-13T14:36:19.938927+00:00"
+}

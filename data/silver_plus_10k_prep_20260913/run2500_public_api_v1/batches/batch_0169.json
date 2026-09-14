@@ -1,0 +1,526 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 43.625,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4989,
+    "completion_tokens": 1401,
+    "total_tokens": 6390,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 4989,
+    "output_tokens": 1401,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01681",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            10
+          ],
+          "to": [
+            0,
+            9
+          ],
+          "text": "大学本科及以上学历"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            36,
+            42
+          ],
+          "to": [
+            38,
+            44
+          ],
+          "text": "研发项目管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01684",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            11
+          ],
+          "to": [
+            9,
+            13
+          ],
+          "text": "物业管理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            13,
+            17
+          ],
+          "text": "日常运营"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01685",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            16
+          ],
+          "to": [
+            10,
+            18
+          ],
+          "text": "医学专业能力测验"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            23
+          ],
+          "to": [
+            19,
+            25
+          ],
+          "text": "公共基础知识"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01686",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            14
+          ],
+          "to": [
+            2,
+            23
+          ],
+          "text": "医院系统（HIS、LIS、PACS等系统）"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            19
+          ],
+          "to": [
+            23,
+            25
+          ],
+          "text": "实施"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01687",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            12,
+            14
+          ],
+          "text": "钻研"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            20,
+            24
+          ],
+          "text": "学习能力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            23,
+            27
+          ],
+          "to": [
+            25,
+            29
+          ],
+          "text": "沟通技能"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            28,
+            34
+          ],
+          "to": [
+            30,
+            36
+          ],
+          "text": "团队协作能力"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            36,
+            42
+          ],
+          "to": [
+            38,
+            44
+          ],
+          "text": "保险业务知识"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            43,
+            49
+          ],
+          "to": [
+            45,
+            49
+          ],
+          "text": "项目管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01688",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            13
+          ],
+          "to": [
+            2,
+            12
+          ],
+          "text": "实施技术问题研究突破"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01689",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            14
+          ],
+          "to": [
+            11,
+            15
+          ],
+          "text": "实践技能"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01681\",\"spans\":[{\"start\":0,\"end\":10,\"text\":\"大学本科及以上学历\",\"label\":\"K\"},{\"start\":36,\"end\":42,\"text\":\"研发项目管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注完整学历资格和明确的研发项目管理活动；相关专业及泛化工作经验不标。\",\"issues\":[]},{\"id\":\"sp10k-01682\",\"spans\":[{\"start\":7,\"end\":9,\"text\":\"开发\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"单元测试\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注软件模块开发和单元测试两个职业动作。\",\"issues\":[]},{\"id\":\"sp10k-01683\",\"spans\":[{\"start\":11,\"end\":13,\"text\":\"学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注候选人学历资格；认证材料属于资格证明材料，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01684\",\"spans\":[{\"start\":7,\"end\":11,\"text\":\"物业管理\",\"label\":\"K\"},{\"start\":11,\"end\":15,\"text\":\"日常运营\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"物业管理为明确行业领域，日常运营为岗位执行活动；正常秩序和安全属于结果要求，不标。\",\"issues\":[]},{\"id\":\"sp10k-01685\",\"spans\":[{\"start\":8,\"end\":16,\"text\":\"医学专业能力测验\",\"label\":\"K\"},{\"start\":17,\"end\":23,\"text\":\"公共基础知识\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"考试内容中的医学专业知识与公共基础知识属于资格相关知识。\",\"issues\":[]},{\"id\":\"sp10k-01686\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"医院系统（HIS、LIS、PACS等系统）\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"医院系统及其实施工作经验构成明确的系统实施活动，保留必要对象和动作。\",\"issues\":[]},{\"id\":\"sp10k-01687\",\"spans\":[{\"start\":9,\"end\":13,\"text\":\"钻研\",\"label\":\"T\"},{\"start\":18,\"end\":22,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":23,\"end\":27,\"text\":\"沟通技能\",\"label\":\"T\"},{\"start\":28,\"end\":34,\"text\":\"团队协作能力\",\"label\":\"T\"},{\"start\":36,\"end\":42,\"text\":\"保险业务知识\",\"label\":\"K\"},{\"start\":43,\"end\":49,\"text\":\"项目管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注兴趣和通用能力、保险业务知识及明确项目管理活动；技术兴趣本身不单独标。\",\"issues\":[]},{\"id\":\"sp10k-01688\",\"spans\":[{\"start\":3,\"end\":13,\"text\":\"实施技术问题研究突破\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"整体为负责执行的技术问题研究与突破活动，保留实施及必要对象。\",\"issues\":[]},{\"id\":\"sp10k-01689\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"网络基础理论\",\"label\":\"K\"},{\"start\":10,\"end\":14,\"text\":\"实践技能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"网络基础理论属于知识，实践技能属于可执行技能。\",\"issues\":[]},{\"id\":\"sp10k-01690\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"Office\",\"label\":\"S\"},{\"start\":11,\"end\":16,\"text\":\"Visio\",\"label\":\"S\"},{\"start\":17,\"end\":22,\"text\":\"Axure\",\"label\":\"S\"},{\"start\":23,\"end\":28,\"text\":\"Xmind\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注明确要求熟练使用的岗位工具名。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01681",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "大学本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "text": "研发项目管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注完整学历资格和明确的研发项目管理活动；相关专业及泛化工作经验不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01682",
+        "spans": [
+          {
+            "start": 7,
+            "end": 9,
+            "text": "开发",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "单元测试",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注软件模块开发和单元测试两个职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01683",
+        "spans": [
+          {
+            "start": 11,
+            "end": 13,
+            "text": "学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注候选人学历资格；认证材料属于资格证明材料，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01684",
+        "spans": [
+          {
+            "start": 9,
+            "end": 13,
+            "text": "物业管理",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "日常运营",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "物业管理为明确行业领域，日常运营为岗位执行活动；正常秩序和安全属于结果要求，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01685",
+        "spans": [
+          {
+            "start": 10,
+            "end": 18,
+            "text": "医学专业能力测验",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "公共基础知识",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "考试内容中的医学专业知识与公共基础知识属于资格相关知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01686",
+        "spans": [
+          {
+            "start": 2,
+            "end": 23,
+            "text": "医院系统（HIS、LIS、PACS等系统）",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "医院系统及其实施工作经验构成明确的系统实施活动，保留必要对象和动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01687",
+        "spans": [
+          {
+            "start": 12,
+            "end": 14,
+            "text": "钻研",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "沟通技能",
+            "label": "T"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "text": "团队协作能力",
+            "label": "T"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "text": "保险业务知识",
+            "label": "K"
+          },
+          {
+            "start": 45,
+            "end": 49,
+            "text": "项目管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注兴趣和通用能力、保险业务知识及明确项目管理活动；技术兴趣本身不单独标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01688",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "实施技术问题研究突破",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "整体为负责执行的技术问题研究与突破活动，保留实施及必要对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01689",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "网络基础理论",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "实践技能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "网络基础理论属于知识，实践技能属于可执行技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01690",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "Office",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "text": "Visio",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "text": "Axure",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "text": "Xmind",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注明确要求熟练使用的岗位工具名。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 169,
+  "ids": [
+    "sp10k-01681",
+    "sp10k-01682",
+    "sp10k-01683",
+    "sp10k-01684",
+    "sp10k-01685",
+    "sp10k-01686",
+    "sp10k-01687",
+    "sp10k-01688",
+    "sp10k-01689",
+    "sp10k-01690"
+  ],
+  "at": "2026-09-13T16:29:57.610684+00:00"
+}

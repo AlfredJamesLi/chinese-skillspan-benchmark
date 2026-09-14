@@ -1,0 +1,200 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03686",
+      "spans": [
+        {
+          "start": 2,
+          "end": 35,
+          "text": "实验室洁净空调、压缩气体、氮气发生器、纯水仪等公用设施的运行及记录",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设施对象由运行及记录共享，保留完整职业活动跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03687",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘背景、政策依据及招聘计划，不构成候选人的知识或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03688",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "利用智能化、信息化技术",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 22,
+          "text": "分析工作流程问题",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "提出改进方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "技术运用、具体工作流程分析及其改进方案为职业活动，分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03689",
+      "spans": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "计算机软件",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "text": "通信",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "自动化",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "text": "大专及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取专业名称及完整学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03690",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "解决各类复杂和困难的仪器问题",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 30,
+          "text": "指导工程师的日常工作",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "仪器问题解决为技术活动；日常人员指导为通用管理能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03691",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "大学专科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格；后段证书泛称说明学历取得要求，不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03692",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "研究生学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "text": "硕士及以上学位",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "任教",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "text": "教学管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历学位为K，任教及教学管理为明确职业活动；年限与现职状态不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03693",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅泛指其他条件，未提供可抽取的具体能力、知识或资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03694",
+      "spans": [
+        {
+          "start": 12,
+          "end": 21,
+          "text": "编写技术文档，方案",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "文档与方案共享编写动作；前段现场执行的职责含义待确认。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "现场执行技术中心完成",
+          "alternatives": [
+            "现场执行是另一个应抽取的职业活动",
+            "仅为残缺的场景或组织描述，不另抽取"
+          ],
+          "reason": "前段句法残缺，现场执行的对象及其与技术中心的关系不明确，需要完整职责语境。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03695",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "沟通表达能力",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "团队协作精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通表达与团队协作为通用软技能，去除要求及程度修饰。",
+      "issues": []
+    }
+  ]
+}

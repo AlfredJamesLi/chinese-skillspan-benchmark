@@ -1,0 +1,600 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03827",
+      "spans": [
+        {
+          "start": 20,
+          "end": 24,
+          "text": "专业知识",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "应变能力",
+          "label": "T"
+        },
+        {
+          "start": 30,
+          "end": 35,
+          "text": "课堂控制力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取测评明确要求的知识与能力；试讲流程不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03828",
+      "spans": [
+        {
+          "start": 4,
+          "end": 34,
+          "text": "WEB安全漏洞（SQL注入、XSS、CSRF等）的分析与防范",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分析与防范共享漏洞对象，保留完整职业活动，不嵌套漏洞名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03829",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明应聘技能测试流程，没有具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03830",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "Bash",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 13,
+          "text": "Python",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "text": "自动化运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "脚本工具受局部自动化运维实践语境限定；活动去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03831",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "职责表述含混，缺乏可确定的职业活动或协作对象。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "配合办处理相关事情",
+          "alternatives": [
+            "纳入协作或事务处理能力要求",
+            "作为泛化职责描述不纳入"
+          ],
+          "reason": "“配合办”含义不明，相关事情未具体说明，无法确定完整的能力提及。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03832",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "Oracle",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 16,
+          "text": "Mysql",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 27,
+          "text": "Sql-Server",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 35,
+          "text": "数据库的安装部署",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 38,
+          "text": "配置",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 43,
+          "text": "故障处理",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 57,
+          "text": "服务器软件的安装与维护",
+          "label": "S"
+        },
+        {
+          "start": 58,
+          "end": 64,
+          "text": "tomcat",
+          "label": "S"
+        },
+        {
+          "start": 65,
+          "end": 70,
+          "text": "redis",
+          "label": "S"
+        },
+        {
+          "start": 73,
+          "end": 81,
+          "text": "网络基础知识应用",
+          "label": "S"
+        },
+        {
+          "start": 82,
+          "end": 94,
+          "text": "Linux系统安装及维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工具均有明确操作语境；拆分独立运维活动，共享对象由局部上下文限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03834",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "环境工程",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "海洋化学",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "生物学",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 22,
+          "text": "水产学",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "渔业发展",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "逐项抽取明确专业名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03835",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "专研精神",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "独立分析问题",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "迅速解决问题",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用能力或特质；保留原文“专研”写法，问题无专业对象限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03836",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "微信公众号，微信支付等接口编程",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列对象共享接口编程活动，保留连续完整短语，去除经验。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03837",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅介绍学校现有师资构成，不是候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03838",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅有附件名称、发布单位和日期。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03839",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "客户服务意识",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "text": "适应经常出差",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取沟通、服务与合作特质，以及明确提出的出差适应要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03840",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "IT新项目的实施与推广",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "实施与推广共享明确项目对象，保留完整活动短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03841",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "泛指待提交证书和材料，未给出具体资格名称或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03842",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "团队意识",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "协调能力",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "团队管理能力",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 29,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "text": "承受工作压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用能力与特质，去除程度和要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03843",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 32,
+          "text": "WMS/ERP/MES实施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历保留完整资格名；专业取核心名；并列系统共享实施活动，去除经验。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03844",
+      "spans": [
+        {
+          "start": 13,
+          "end": 15,
+          "text": "医学",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 26,
+          "text": "硕士研究生及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "面试方式说明中明确嵌有专业与学历资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03845",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅指向外部岗位需求表，当前文本未列具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03846",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "数据库技术",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "oracle",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "mysql",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 36,
+          "text": "MongoDB",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 42,
+          "text": "Redis",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "提及范围与边界明确，但缺少知识或实际运用语境；S均为类型待决占位，分类说明不另标。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "数据库技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指概括性技术知识，也可指数据库运用技能；仅有“熟悉”及工具举例不能消除歧义。"
+        },
+        {
+          "kind": "type",
+          "text": "oracle",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "处于数据库技术举例中，未明确要求产品知识还是工具操作。"
+        },
+        {
+          "kind": "type",
+          "text": "mysql",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "处于数据库技术举例中，未明确要求产品知识还是工具操作。"
+        },
+        {
+          "kind": "type",
+          "text": "MongoDB",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "处于数据库技术举例中，未明确要求产品知识还是工具操作。"
+        },
+        {
+          "kind": "type",
+          "text": "Redis",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "处于数据库技术举例中，未明确要求产品知识还是工具操作。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03847",
+      "spans": [
+        {
+          "start": 18,
+          "end": 22,
+          "text": "政治素质",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "政策理论",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "政治素质为明确要求的个人特质，政策理论为知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03848",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "socket开发",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "网络通讯编程",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项均为明确可执行的开发活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03849",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明测试地点，校名中的语种不构成语言要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03850",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "windows服务器的运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确服务器运维活动，去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03851",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明专业认定参照目录，未提出具体专业或知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03852",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "网络维护",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "text": "局域网设置",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 24,
+          "text": "电脑软硬件设置维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分三项独立技术职责，保留各自必要对象。",
+      "issues": []
+    }
+  ]
+}

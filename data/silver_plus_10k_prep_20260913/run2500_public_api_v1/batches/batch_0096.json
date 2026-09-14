@@ -1,0 +1,335 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 56.164,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4951,
+    "completion_tokens": 1786,
+    "total_tokens": 6737,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 710
+    },
+    "input_tokens": 4951,
+    "output_tokens": 1786,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00951\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"监控系统\",\"label\":\"S\"},{\"start\":9,\"end\":13,\"text\":\"安全系统\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"Zabbix\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"系统类别及具体工具处于岗位工具要求语境，标S；去除要求触发词及泛化修饰。\",\"issues\":[]},{\"id\":\"sp10k-00952\",\"spans\":[{\"start\":3,\"end\":5,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":6,\"end\":10,\"text\":\"协调能力\",\"label\":\"T\"},{\"start\":11,\"end\":17,\"text\":\"团队管理能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"沟通、协调及团队管理均为通用能力，可独立拆分。\",\"issues\":[]},{\"id\":\"sp10k-00953\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":11,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":13,\"end\":15,\"text\":\"电子\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留完整学历资格，分别抽取明确专业领域；泛化的相关专业不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00954\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"社区智能化设备的日常运维\",\"label\":\"S\"},{\"start\":15,\"end\":17,\"text\":\"配置\",\"label\":\"S\"},{\"start\":17,\"end\":19,\"text\":\"维修\",\"label\":\"S\"},{\"start\":19,\"end\":21,\"text\":\"调试\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确设备运维职责标S；配置、维修、调试共享前述设备对象，分别抽取。\",\"issues\":[]},{\"id\":\"sp10k-00955\",\"spans\":[{\"start\":3,\"end\":9,\"text\":\"组织协调能力\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":15,\"end\":21,\"text\":\"团队合作精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"组织协调、沟通和团队合作均为跨行业通用能力或特质。\",\"issues\":[]},{\"id\":\"sp10k-00956\",\"spans\":[{\"start\":7,\"end\":13,\"text\":\"基础护肤知识\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确要求的领域知识；热爱护肤属于兴趣偏好，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00957\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"MySQL数据库\",\"label\":\"S\"},{\"start\":11,\"end\":20,\"text\":\"oracle数据库\",\"label\":\"S\"},{\"start\":20,\"end\":24,\"text\":\"日常维护\",\"label\":\"S\"},{\"start\":25,\"end\":29,\"text\":\"数据备份\",\"label\":\"S\"},{\"start\":30,\"end\":34,\"text\":\"日志处置\",\"label\":\"S\"},{\"start\":35,\"end\":41,\"text\":\"特殊故障排查\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库由局部维护活动明确限定为工具运用；维护、备份、日志处置及故障排查分别标S。\",\"issues\":[]},{\"id\":\"sp10k-00958\",\"spans\":[{\"start\":0,\"end\":5,\"text\":\"工作主动性\",\"label\":\"T\"},{\"start\":7,\"end\":9,\"text\":\"耐心\",\"label\":\"T\"},{\"start\":9,\"end\":11,\"text\":\"细致\",\"label\":\"T\"},{\"start\":13,\"end\":16,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":19,\"end\":23,\"text\":\"团队合作\",\"label\":\"T\"},{\"start\":24,\"end\":28,\"text\":\"服务意识\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取主动性、工作特质及合作服务意识，去除程度词和要求触发词。\",\"issues\":[]},{\"id\":\"sp10k-00959\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"SAPBusinessOne\",\"label\":\"S\"},{\"start\":17,\"end\":26,\"text\":\"WINDCHILL\",\"label\":\"S\"},{\"start\":29,\"end\":33,\"text\":\"日常管理\",\"label\":\"S\"},{\"start\":33,\"end\":35,\"text\":\"运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"系统工具及其管理、运维职责分别抽取；管理对象明确为业务系统，标S。\",\"issues\":[]},{\"id\":\"sp10k-00960\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为执业资格考试工作计划标题，不构成候选人资格要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00951",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "监控系统",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "安全系统",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "Zabbix",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统类别及具体工具处于岗位工具要求语境，标S；去除要求触发词及泛化修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00952",
+        "spans": [
+          {
+            "start": 3,
+            "end": 5,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "text": "协调能力",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "团队管理能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通、协调及团队管理均为通用能力，可独立拆分。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00953",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "text": "电子",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留完整学历资格，分别抽取明确专业领域；泛化的相关专业不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00954",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "社区智能化设备的日常运维",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "配置",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 19,
+            "text": "维修",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 21,
+            "text": "调试",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确设备运维职责标S；配置、维修、调试共享前述设备对象，分别抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00955",
+        "spans": [
+          {
+            "start": 3,
+            "end": 9,
+            "text": "组织协调能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "团队合作精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "组织协调、沟通和团队合作均为跨行业通用能力或特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00956",
+        "spans": [
+          {
+            "start": 7,
+            "end": 13,
+            "text": "基础护肤知识",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确要求的领域知识；热爱护肤属于兴趣偏好，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00957",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "MySQL数据库",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 20,
+            "text": "oracle数据库",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "日常维护",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "数据备份",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "日志处置",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 41,
+            "text": "特殊故障排查",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库由局部维护活动明确限定为工具运用；维护、备份、日志处置及故障排查分别标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00958",
+        "spans": [
+          {
+            "start": 0,
+            "end": 5,
+            "text": "工作主动性",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "text": "耐心",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "细致",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "团队合作",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "服务意识",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取主动性、工作特质及合作服务意识，去除程度词和要求触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00959",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "SAPBusinessOne",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 26,
+            "text": "WINDCHILL",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "日常管理",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "text": "运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统工具及其管理、运维职责分别抽取；管理对象明确为业务系统，标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00960",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为执业资格考试工作计划标题，不构成候选人资格要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 96,
+  "ids": [
+    "sp10k-00951",
+    "sp10k-00952",
+    "sp10k-00953",
+    "sp10k-00954",
+    "sp10k-00955",
+    "sp10k-00956",
+    "sp10k-00957",
+    "sp10k-00958",
+    "sp10k-00959",
+    "sp10k-00960"
+  ],
+  "at": "2026-09-13T15:10:44.241761+00:00"
+}

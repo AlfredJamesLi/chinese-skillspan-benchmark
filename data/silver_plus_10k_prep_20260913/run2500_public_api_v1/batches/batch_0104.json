@@ -1,0 +1,213 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 45.027,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5061,
+    "completion_tokens": 1427,
+    "total_tokens": 6488,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 621
+    },
+    "input_tokens": 5061,
+    "output_tokens": 1427,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01031\",\"spans\":[{\"start\":2,\"end\":25,\"text\":\"编写项目使用手册，运维手册，验收报告等项目文档\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"文档编写为职业活动；并列文档共享编写动作，保留完整提及。\",\"issues\":[]},{\"id\":\"sp10k-01032\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"制定并完善公司运维管理制度\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"制定与完善共享制度对象，整体标为职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01033\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明资格复审及面试递补流程，不含候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01034\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"服务意识\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":17,\"end\":46,\"text\":\"网络通信、信息安全、桌面终端、视频会议、信息机房等相关运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"服务意识和沟通能力为通用素质；并列运维对象共享职业动作，保留完整运维短语。\",\"issues\":[]},{\"id\":\"sp10k-01035\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"安全意识\",\"label\":\"T\"},{\"start\":10,\"end\":22,\"text\":\"突发应急事件快速处理能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"安全意识及未限定具体技术或业务对象的应急处理能力按通用素质标注。\",\"issues\":[]},{\"id\":\"sp10k-01036\",\"spans\":[{\"start\":9,\"end\":12,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":13,\"end\":17,\"text\":\"通信网络\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确专业名；泛化工作经验、年限及相关专业修饰不标。\",\"issues\":[]},{\"id\":\"sp10k-01037\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"Linux环境\",\"label\":\"S\"},{\"start\":11,\"end\":13,\"text\":\"运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"Linux环境在局部运维要求中按岗位工具环境标注；运维为完整职业活动，去除经验后缀。\",\"issues\":[]},{\"id\":\"sp10k-01038\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名人员查询资格初审结果的行政流程。\",\"issues\":[]},{\"id\":\"sp10k-01039\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"描述招聘单位对报考人员的资格审核流程，并非候选人的职业职责。\",\"issues\":[]},{\"id\":\"sp10k-01040\",\"spans\":[{\"start\":2,\"end\":59,\"text\":\"楼层配电箱到室内配电箱及室内配电箱至终端使用点的配电图，包括电位图，插座布置及室内配线连线图，电气系统图等图纸设计\",\"label\":\"S\"},{\"start\":62,\"end\":70,\"text\":\"开关电箱选型布置\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"图纸类型及配电范围共享设计职能，保留必要完整跨度；开关电箱选型布置为独立职业活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01031",
+        "spans": [
+          {
+            "start": 2,
+            "end": 25,
+            "text": "编写项目使用手册，运维手册，验收报告等项目文档",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文档编写为职业活动；并列文档共享编写动作，保留完整提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01032",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "制定并完善公司运维管理制度",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "制定与完善共享制度对象，整体标为职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01033",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明资格复审及面试递补流程，不含候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01034",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "服务意识",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 46,
+            "text": "网络通信、信息安全、桌面终端、视频会议、信息机房等相关运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "服务意识和沟通能力为通用素质；并列运维对象共享职业动作，保留完整运维短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01035",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "安全意识",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 22,
+            "text": "突发应急事件快速处理能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "安全意识及未限定具体技术或业务对象的应急处理能力按通用素质标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01036",
+        "spans": [
+          {
+            "start": 9,
+            "end": 12,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "通信网络",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确专业名；泛化工作经验、年限及相关专业修饰不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01037",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "Linux环境",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 13,
+            "text": "运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Linux环境在局部运维要求中按岗位工具环境标注；运维为完整职业活动，去除经验后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01038",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名人员查询资格初审结果的行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01039",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "描述招聘单位对报考人员的资格审核流程，并非候选人的职业职责。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01040",
+        "spans": [
+          {
+            "start": 2,
+            "end": 59,
+            "text": "楼层配电箱到室内配电箱及室内配电箱至终端使用点的配电图，包括电位图，插座布置及室内配线连线图，电气系统图等图纸设计",
+            "label": "S"
+          },
+          {
+            "start": 62,
+            "end": 70,
+            "text": "开关电箱选型布置",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "图纸类型及配电范围共享设计职能，保留必要完整跨度；开关电箱选型布置为独立职业活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 104,
+  "ids": [
+    "sp10k-01031",
+    "sp10k-01032",
+    "sp10k-01033",
+    "sp10k-01034",
+    "sp10k-01035",
+    "sp10k-01036",
+    "sp10k-01037",
+    "sp10k-01038",
+    "sp10k-01039",
+    "sp10k-01040"
+  ],
+  "at": "2026-09-13T15:17:36.290730+00:00"
+}

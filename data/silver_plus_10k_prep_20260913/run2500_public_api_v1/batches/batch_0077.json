@@ -1,0 +1,200 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 37.383,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5092,
+    "completion_tokens": 1145,
+    "total_tokens": 6237,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 434
+    },
+    "input_tokens": 5092,
+    "output_tokens": 1145,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00761\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"Mysql数据库\",\"label\":\"S\"},{\"start\":12,\"end\":17,\"text\":\"OCM证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"数据库按岗位工具标S；非语言资格证书标K，优先等修饰不纳入。\",\"issues\":[]},{\"id\":\"sp10k-00762\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"CDN技术体系\",\"label\":\"K\"},{\"start\":18,\"end\":23,\"text\":\"CDN服务\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"技术体系及常见服务为领域知识要求，未描述工具操作或实施活动。\",\"issues\":[]},{\"id\":\"sp10k-00763\",\"spans\":[{\"start\":2,\"end\":18,\"text\":\"SQL语言的增、删、改、查等编写\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求SQL编写实践；并列操作共享语言对象和编写动作，保留完整跨度。\",\"issues\":[]},{\"id\":\"sp10k-00764\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明境外毕业人员证书取得日期和报名学历认证期限，未提出具体学历资格或职业能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00765\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅要求完成年度销售任务，属于结果目标；括号内为所负责产品线的范围，不独立构成知识或技能要求。\",\"issues\":[]},{\"id\":\"sp10k-00766\",\"spans\":[{\"start\":17,\"end\":22,\"text\":\"自动化运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"自动化运维是明确职业活动；硬件环境和软件环境仅说明实施对象背景。\",\"issues\":[]},{\"id\":\"sp10k-00767\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅涉及招聘对象身份、报名资格核验及证明材料，不含能力、知识或职业资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00768\",\"spans\":[{\"start\":1,\"end\":3,\"text\":\"教学\",\"label\":\"S\"},{\"start\":8,\"end\":12,\"text\":\"课件制作\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"办公软件应用\",\"label\":\"S\"},{\"start\":25,\"end\":30,\"text\":\"班主任工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"教学去除经验后仍为完整职业活动；其余为明确岗位实践要求。身体条件及泛化有能力不标。\",\"issues\":[]},{\"id\":\"sp10k-00769\",\"spans\":[{\"start\":2,\"end\":23,\"text\":\"施工现场弱电工程的质量、进度等的监督与控制\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确工程监督控制职责；质量和进度共享对象及动作，保留必要完整跨度。\",\"issues\":[]},{\"id\":\"sp10k-00770\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明资格复审中自愿放弃面试的行政申请流程。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00761",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "Mysql数据库",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "text": "OCM证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库按岗位工具标S；非语言资格证书标K，优先等修饰不纳入。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00762",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "CDN技术体系",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 23,
+            "text": "CDN服务",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "技术体系及常见服务为领域知识要求，未描述工具操作或实施活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00763",
+        "spans": [
+          {
+            "start": 2,
+            "end": 18,
+            "text": "SQL语言的增、删、改、查等编写",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求SQL编写实践；并列操作共享语言对象和编写动作，保留完整跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00764",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明境外毕业人员证书取得日期和报名学历认证期限，未提出具体学历资格或职业能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00765",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅要求完成年度销售任务，属于结果目标；括号内为所负责产品线的范围，不独立构成知识或技能要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00766",
+        "spans": [
+          {
+            "start": 17,
+            "end": 22,
+            "text": "自动化运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "自动化运维是明确职业活动；硬件环境和软件环境仅说明实施对象背景。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00767",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅涉及招聘对象身份、报名资格核验及证明材料，不含能力、知识或职业资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00768",
+        "spans": [
+          {
+            "start": 1,
+            "end": 3,
+            "text": "教学",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "课件制作",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "办公软件应用",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "text": "班主任工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "教学去除经验后仍为完整职业活动；其余为明确岗位实践要求。身体条件及泛化有能力不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00769",
+        "spans": [
+          {
+            "start": 2,
+            "end": 23,
+            "text": "施工现场弱电工程的质量、进度等的监督与控制",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确工程监督控制职责；质量和进度共享对象及动作，保留必要完整跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00770",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明资格复审中自愿放弃面试的行政申请流程。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 77,
+  "ids": [
+    "sp10k-00761",
+    "sp10k-00762",
+    "sp10k-00763",
+    "sp10k-00764",
+    "sp10k-00765",
+    "sp10k-00766",
+    "sp10k-00767",
+    "sp10k-00768",
+    "sp10k-00769",
+    "sp10k-00770"
+  ],
+  "at": "2026-09-13T14:53:58.330706+00:00"
+}

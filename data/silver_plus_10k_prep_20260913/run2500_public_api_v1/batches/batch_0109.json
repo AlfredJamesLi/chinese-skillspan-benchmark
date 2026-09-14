@@ -1,0 +1,274 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 47.145,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5031,
+    "completion_tokens": 1481,
+    "total_tokens": 6512,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 569
+    },
+    "input_tokens": 5031,
+    "output_tokens": 1481,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01081\",\"spans\":[{\"start\":3,\"end\":6,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":7,\"end\":11,\"text\":\"沟通能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用特质与沟通能力，去除程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-01082\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"纯化水系统制备\",\"label\":\"S\"},{\"start\":10,\"end\":12,\"text\":\"维护\",\"label\":\"S\"},{\"start\":13,\"end\":15,\"text\":\"检测\",\"label\":\"S\"},{\"start\":16,\"end\":18,\"text\":\"运行\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"并列职业活动分别标注，后续活动的纯化水系统对象由局部语境限定。\",\"issues\":[]},{\"id\":\"sp10k-01083\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅解释订单定向毕业生的招聘人员范围，未提出独立能力、知识或学历资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01084\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"相关故障、疑难问题排查处理\",\"label\":\"S\"},{\"start\":16,\"end\":23,\"text\":\"汇总故障、问题\",\"label\":\"S\"},{\"start\":26,\"end\":32,\"text\":\"提交汇总报告\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取故障处理、问题汇总及报告提交活动；共享排查处理动作的对象保留完整。\",\"issues\":[]},{\"id\":\"sp10k-01085\",\"spans\":[{\"start\":5,\"end\":10,\"text\":\"软硬件运维\",\"label\":\"S\"},{\"start\":11,\"end\":15,\"text\":\"客诉处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取运维与客诉处理职责，排除公司归属修饰。\",\"issues\":[]},{\"id\":\"sp10k-01086\",\"spans\":[{\"start\":1,\"end\":7,\"text\":\"软件实施运维\",\"label\":\"S\"},{\"start\":8,\"end\":10,\"text\":\"培训\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"经历要求中的职业活动去除经历及年限后仍完整，分别标为S。\",\"issues\":[]},{\"id\":\"sp10k-01087\",\"spans\":[{\"start\":17,\"end\":21,\"text\":\"品行良好\",\"label\":\"T\"},{\"start\":23,\"end\":26,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":27,\"end\":30,\"text\":\"上进心\",\"label\":\"T\"},{\"start\":31,\"end\":35,\"text\":\"稳定踏实\",\"label\":\"T\"},{\"start\":36,\"end\":40,\"text\":\"努力肯干\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确要求的品行及工作特质；证券公司总部为工作场景，相貌要求不标。\",\"issues\":[]},{\"id\":\"sp10k-01088\",\"spans\":[{\"start\":2,\"end\":30,\"text\":\"WINDOWS08R2LINUXCENTOS安装操作维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"安装、操作、维护共享连续书写的系统对象，保留完整实践活动及原文拼写。\",\"issues\":[]},{\"id\":\"sp10k-01089\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明笔试后的职位调剂及资格复审行政流程，不含候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01090\",\"spans\":[{\"start\":5,\"end\":8,\"text\":\"事业心\",\"label\":\"T\"},{\"start\":12,\"end\":15,\"text\":\"责任感\",\"label\":\"T\"},{\"start\":19,\"end\":25,\"text\":\"人际交往能力\",\"label\":\"T\"},{\"start\":26,\"end\":32,\"text\":\"团队协作精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用职业特质、人际能力及协作精神，去除程度修饰。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01081",
+        "spans": [
+          {
+            "start": 3,
+            "end": 6,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "沟通能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用特质与沟通能力，去除程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01082",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "纯化水系统制备",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "维护",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "text": "检测",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 18,
+            "text": "运行",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列职业活动分别标注，后续活动的纯化水系统对象由局部语境限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01083",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅解释订单定向毕业生的招聘人员范围，未提出独立能力、知识或学历资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01084",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "相关故障、疑难问题排查处理",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "text": "汇总故障、问题",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "text": "提交汇总报告",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取故障处理、问题汇总及报告提交活动；共享排查处理动作的对象保留完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01085",
+        "spans": [
+          {
+            "start": 5,
+            "end": 10,
+            "text": "软硬件运维",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "客诉处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取运维与客诉处理职责，排除公司归属修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01086",
+        "spans": [
+          {
+            "start": 1,
+            "end": 7,
+            "text": "软件实施运维",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "培训",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "经历要求中的职业活动去除经历及年限后仍完整，分别标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01087",
+        "spans": [
+          {
+            "start": 17,
+            "end": 21,
+            "text": "品行良好",
+            "label": "T"
+          },
+          {
+            "start": 23,
+            "end": 26,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "text": "上进心",
+            "label": "T"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "text": "稳定踏实",
+            "label": "T"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "text": "努力肯干",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确要求的品行及工作特质；证券公司总部为工作场景，相貌要求不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01088",
+        "spans": [
+          {
+            "start": 2,
+            "end": 30,
+            "text": "WINDOWS08R2LINUXCENTOS安装操作维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "安装、操作、维护共享连续书写的系统对象，保留完整实践活动及原文拼写。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01089",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明笔试后的职位调剂及资格复审行政流程，不含候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01090",
+        "spans": [
+          {
+            "start": 5,
+            "end": 8,
+            "text": "事业心",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "text": "责任感",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "人际交往能力",
+            "label": "T"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "text": "团队协作精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用职业特质、人际能力及协作精神，去除程度修饰。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 109,
+  "ids": [
+    "sp10k-01081",
+    "sp10k-01082",
+    "sp10k-01083",
+    "sp10k-01084",
+    "sp10k-01085",
+    "sp10k-01086",
+    "sp10k-01087",
+    "sp10k-01088",
+    "sp10k-01089",
+    "sp10k-01090"
+  ],
+  "at": "2026-09-13T15:22:02.473625+00:00"
+}

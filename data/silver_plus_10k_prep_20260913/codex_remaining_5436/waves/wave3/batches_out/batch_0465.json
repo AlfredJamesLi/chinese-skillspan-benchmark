@@ -1,0 +1,328 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07141",
+      "spans": [
+        {
+          "start": 8,
+          "end": 12,
+          "text": "招采工作",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "外聘单位管理",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "招采需求",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "招采方案",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "供方寻源",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "合同履约",
+          "label": "S"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "text": "供方评价",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "招采及单位管理均为明确职业职能；并列工作项分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07142",
+      "spans": [
+        {
+          "start": 14,
+          "end": 18,
+          "text": "财务管理",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "政府项目审计",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 34,
+          "text": "投资效益审核",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 40,
+          "text": "投资后评估",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取财务管理及其明确列举的审计、审核和评估活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07143",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "责任心",
+          "label": "T"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "沟通能力和责任心为通用能力与特质；退伍身份是否属于资格范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "退伍军人",
+          "alternatives": [
+            "作为候选人资格纳入K",
+            "作为身份偏好不纳入标注范围"
+          ],
+          "reason": "文本明确优先考虑该身份，但规则未明确退伍身份是否属于非语言资格，缺少具体职业资格或能力要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-07144",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "国际贸易",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "英文",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "物流类",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "大专以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列项均处于专业要求语境，英文在此为专业名而非语言水平；学历保留完整资格表述。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07145",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "text": "安全生产相关法规",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 27,
+          "text": "专业风险评估工具",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通能力为通用能力，法规为专业知识，风险评估工具为岗位使用工具。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07146",
+      "spans": [
+        {
+          "start": 6,
+          "end": 9,
+          "text": "CAD",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "OFFICE",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 27,
+          "text": "BIM技术",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件及BIM技术均有明确使用语境，按职业工具或技术应用标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07147",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "初中及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 16,
+          "text": "26个英文字母",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历为完整资格要求；掌握英文字母属于基础语言要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07148",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "项目管理",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "执行能力",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 26,
+          "text": "高情商",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "text": "智慧",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "项目管理为职业职能，其余为可迁移能力或个人特质；并列提及分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07149",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "Oracle",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 18,
+          "text": "SQLServer",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "text": "数据库设计",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "text": "调优",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 37,
+          "text": "存储过程的编写",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库工具与设计、调优、编写活动处于同一实践要求语境；调优对象由局部上下文限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07150",
+      "spans": [
+        {
+          "start": 10,
+          "end": 15,
+          "text": "可靠性测试",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "功能测试",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "性能测试",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "text": "兼容性测试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确承担的各项测试活动；产品开发过程仅为测试职责的阶段限定。",
+      "issues": []
+    }
+  ]
+}

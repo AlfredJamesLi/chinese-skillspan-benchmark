@@ -1,0 +1,506 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04796",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "电脑操作",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "text": "Excel",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "PPT",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取电脑操作及岗位使用的软件名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04797",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "组织协调",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "理解判断",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "分析解决问题",
+          "label": "T"
+        },
+        {
+          "start": 28,
+          "end": 34,
+          "text": "果断作出决策",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用能力；分析与解决共享问题对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04798",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "严谨的服务态度",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 33,
+          "text": "推进并执行业务的开展",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "服务态度为通用特质，业务推进执行为职业活动；结果负责表述不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04799",
+      "spans": [
+        {
+          "start": 5,
+          "end": 13,
+          "text": "综合文字写作能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "未限定专业对象的综合文字写作能力按通用能力标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04800",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "引进资格核查及取消资格的行政规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04801",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "学历信息显示情况说明，未提出具体资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04802",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "联系方式及招聘附件文件名，不含具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04803",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "海洋工程系实验课程教学与辅助",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "教学与辅助共享专业课程对象，保留完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04804",
+      "spans": [
+        {
+          "start": 4,
+          "end": 15,
+          "text": "视频监控系统的各项操作",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 25,
+          "text": "各种情况的处理方法",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 47,
+          "text": "报告",
+          "label": "S"
+        },
+        {
+          "start": 50,
+          "end": 52,
+          "text": "记录",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取监控操作、可执行处理方法及可疑情况报告记录；报告记录对象由局部语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04805",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "运维相关平台设计和开发",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "运维体系建设",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "平台设计与开发共享对象；体系建设为独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04806",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘资格复审流程标题。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04807",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "配网自动化主站系统",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 21,
+          "text": "OPEN3200",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 27,
+          "text": "D5200",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 40,
+          "text": "配网自动化终端设备",
+          "label": "S"
+        },
+        {
+          "start": 43,
+          "end": 46,
+          "text": "FTU",
+          "label": "S"
+        },
+        {
+          "start": 47,
+          "end": 50,
+          "text": "DTU",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 54,
+          "text": "TTU",
+          "label": "S"
+        },
+        {
+          "start": 55,
+          "end": 60,
+          "text": "故障指示器",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "系统及设备属于明确要求，但知识了解与工具运用未区分；所列S均为类型待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "配网自动化主站系统，如OPEN3200,D5200",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "系统类别及两个具体系统均可能指系统知识或操作运用；熟悉本身不足以区分，缺少原理或实际使用语境。"
+        },
+        {
+          "kind": "type",
+          "text": "配网自动化终端设备，包括FTU,DTU,TTU,故障指示器",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "设备类别及四项设备均可能指设备知识或岗位工具运用；了解本身不足以区分，未说明操作、配置或维护要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04808",
+      "spans": [
+        {
+          "start": 6,
+          "end": 16,
+          "text": "服务器安全及性能优化",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "提供改善方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留服务器对象及共享优化动作；改善方案承接具体技术对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04809",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅规定资格取得时间及年限计算，未给出具体资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04810",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "安卓APP安全测试方法",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "接口测试",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 32,
+          "text": "android组件测试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体安全测试方法及测试活动按可执行技术方法标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04811",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应聘材料真实性及资格审核行政规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04812",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "条件详见附件；学历仅界定不要求外语等级的适用人群，未独立提出资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04813",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "基础网络监控",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "异常发现",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "应急预案制定",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "三个独立职业活动；异常发现承接网络语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04814",
+      "spans": [
+        {
+          "start": 16,
+          "end": 28,
+          "text": "全日制本科及以上学历学位",
+          "label": "K"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "临床医学",
+          "label": "K"
+        },
+        {
+          "start": 33,
+          "end": 36,
+          "text": "营养学",
+          "label": "K"
+        },
+        {
+          "start": 43,
+          "end": 55,
+          "text": "临床或公卫医师执业资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历学位、专业名及执业资格；证书并列项共享资格中心语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04816",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "PLC联网改造",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留联网改造动作及PLC对象，不嵌套工具名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04817",
+      "spans": [
+        {
+          "start": 33,
+          "end": 39,
+          "text": "语言表达能力",
+          "label": "T"
+        },
+        {
+          "start": 40,
+          "end": 47,
+          "text": "反应与应变能力",
+          "label": "T"
+        },
+        {
+          "start": 48,
+          "end": 54,
+          "text": "情绪管控能力",
+          "label": "T"
+        },
+        {
+          "start": 55,
+          "end": 61,
+          "text": "人际交往能力",
+          "label": "T"
+        },
+        {
+          "start": 62,
+          "end": 68,
+          "text": "综合分析能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "面试明确考察的通用能力属于候选人要求；流程、分数及仪态不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04818",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "设备为负责对象，但未说明所需操作或其他职业活动，争议片段暂不入主层。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "负责公司设备，包括电话，传真机，复印机，指纹机",
+          "alternatives": [
+            "属于岗位工具运用要求，抽取设备名",
+            "仅列职责涉及的设备对象，不抽取"
+          ],
+          "reason": "未说明使用、维护或管理设备的具体要求，无法确认设备名是否构成候选人所需工具能力。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04819",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考岗位数量限制，属于招聘行政规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04820",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "统筹调配内外部资源",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 27,
+          "text": "解决应急服务保障及项目重点难点问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "资源统筹为通用协调能力；问题解决具有明确业务对象；后段结果责任不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04821",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "产品文档资料库体系建立与维护",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 38,
+          "text": "输出对内、对外的产品宣介资料及技术文档",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取资料库体系建设维护及文档输出；保留必要共享对象和动作。",
+      "issues": []
+    }
+  ]
+}

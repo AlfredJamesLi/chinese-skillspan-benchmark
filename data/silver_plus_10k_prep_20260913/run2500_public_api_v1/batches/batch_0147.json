@@ -1,0 +1,405 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 43.361,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5048,
+    "completion_tokens": 1238,
+    "total_tokens": 6286,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 437
+    },
+    "input_tokens": 5048,
+    "output_tokens": 1238,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01461",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            12
+          ],
+          "to": [
+            2,
+            10
+          ],
+          "text": "道路交通运输安全"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            21
+          ],
+          "to": [
+            11,
+            19
+          ],
+          "text": "道路交通安全管理"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            24
+          ],
+          "to": [
+            20,
+            22
+          ],
+          "text": "汽车"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            25,
+            27
+          ],
+          "to": [
+            23,
+            25
+          ],
+          "text": "通信"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            28,
+            32
+          ],
+          "to": [
+            26,
+            29
+          ],
+          "text": "互联网"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01463",
+      "repairs": [
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            34,
+            41
+          ],
+          "to": [
+            37,
+            42
+          ],
+          "text": "sql优化"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01468",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            8,
+            14
+          ],
+          "text": "zabbix"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            21
+          ],
+          "to": [
+            15,
+            25
+          ],
+          "text": "Prometheus"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            28,
+            30
+          ],
+          "to": [
+            38,
+            40
+          ],
+          "text": "原理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            31,
+            42
+          ],
+          "to": [
+            42,
+            54
+          ],
+          "text": "对线上服务和资源进行监控"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01470",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            12,
+            28
+          ],
+          "to": [
+            9,
+            21
+          ],
+          "text": "预算系统基础资料管理维护"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01461\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"道路交通运输安全\",\"label\":\"K\"},{\"start\":13,\"end\":21,\"text\":\"道路交通安全管理\",\"label\":\"K\"},{\"start\":22,\"end\":24,\"text\":\"汽车\",\"label\":\"K\"},{\"start\":25,\"end\":27,\"text\":\"通信\",\"label\":\"K\"},{\"start\":28,\"end\":32,\"text\":\"互联网\",\"label\":\"K\"},{\"start\":39,\"end\":43,\"text\":\"项目管理\",\"label\":\"S\"},{\"start\":44,\"end\":48,\"text\":\"项目运作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确行业工作经验中的领域名标为K；项目管理和项目运作为明确职业活动，标为S。\",\"issues\":[]},{\"id\":\"sp10k-01462\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"学历学位证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历学位证书属于资格要求，标为K；取得期限及取消资格条件不标。\",\"issues\":[]},{\"id\":\"sp10k-01463\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"MySQL\",\"label\":\"S\"},{\"start\":8,\"end\":14,\"text\":\"Oracle\",\"label\":\"S\"},{\"start\":15,\"end\":22,\"text\":\"MongoDB\",\"label\":\"S\"},{\"start\":23,\"end\":28,\"text\":\"redis\",\"label\":\"S\"},{\"start\":34,\"end\":41,\"text\":\"sql优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库名称属于岗位现用工具，SQL优化属于可执行技术动作，均标为S。\",\"issues\":[]},{\"id\":\"sp10k-01464\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"“确保公司重要系统稳定运行”表达结果保证和系统属性，未形成独立候选人能力提及。\",\"issues\":[]},{\"id\":\"sp10k-01465\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明专业目录依据，未提出具体专业知识、技能或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01466\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于资格初审代办流程及材料要求，不是候选人能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01467\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于笔试成绩查询和资格复审流程，不是候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-01468\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"zabbix\",\"label\":\"S\"},{\"start\":11,\"end\":21,\"text\":\"Prometheus\",\"label\":\"S\"},{\"start\":28,\"end\":30,\"text\":\"原理\",\"label\":\"K\"},{\"start\":31,\"end\":42,\"text\":\"对线上服务和资源进行监控\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"监控软件名称及线上监控属于工具运用和职业动作，标为S；其原理属于知识，标为K。\",\"issues\":[]},{\"id\":\"sp10k-01469\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于试用期聘用条件和取消聘用规定，未提出候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01470\",\"spans\":[{\"start\":12,\"end\":28,\"text\":\"预算系统基础资料管理维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行预算系统基础资料的管理维护，作为完整职业动作标为S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01461",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "道路交通运输安全",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 19,
+            "text": "道路交通安全管理",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "汽车",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "通信",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 29,
+            "text": "互联网",
+            "label": "K"
+          },
+          {
+            "start": 39,
+            "end": 43,
+            "text": "项目管理",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 48,
+            "text": "项目运作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确行业工作经验中的领域名标为K；项目管理和项目运作为明确职业活动，标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01462",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "学历学位证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历学位证书属于资格要求，标为K；取得期限及取消资格条件不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01463",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "MySQL",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "Oracle",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "text": "MongoDB",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "text": "redis",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 42,
+            "text": "sql优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库名称属于岗位现用工具，SQL优化属于可执行技术动作，均标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01464",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "“确保公司重要系统稳定运行”表达结果保证和系统属性，未形成独立候选人能力提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01465",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明专业目录依据，未提出具体专业知识、技能或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01466",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于资格初审代办流程及材料要求，不是候选人能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01467",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于笔试成绩查询和资格复审流程，不是候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01468",
+        "spans": [
+          {
+            "start": 8,
+            "end": 14,
+            "text": "zabbix",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 25,
+            "text": "Prometheus",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 40,
+            "text": "原理",
+            "label": "K"
+          },
+          {
+            "start": 42,
+            "end": 54,
+            "text": "对线上服务和资源进行监控",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "监控软件名称及线上监控属于工具运用和职业动作，标为S；其原理属于知识，标为K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01469",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于试用期聘用条件和取消聘用规定，未提出候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01470",
+        "spans": [
+          {
+            "start": 9,
+            "end": 21,
+            "text": "预算系统基础资料管理维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行预算系统基础资料的管理维护，作为完整职业动作标为S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 147,
+  "ids": [
+    "sp10k-01461",
+    "sp10k-01462",
+    "sp10k-01463",
+    "sp10k-01464",
+    "sp10k-01465",
+    "sp10k-01466",
+    "sp10k-01467",
+    "sp10k-01468",
+    "sp10k-01469",
+    "sp10k-01470"
+  ],
+  "at": "2026-09-13T16:04:02.760698+00:00"
+}

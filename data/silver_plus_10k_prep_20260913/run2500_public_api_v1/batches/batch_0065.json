@@ -1,0 +1,236 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 42.389,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5102,
+    "completion_tokens": 1304,
+    "total_tokens": 6406,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5102,
+    "output_tokens": 1304,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00641\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明招聘岗位和计划数量，未列出具体能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00642\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为年龄条件的时间界定，不属于能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00643\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于招聘考察程序说明，法规名称不是候选人的知识要求。\",\"issues\":[]},{\"id\":\"sp10k-00644\",\"spans\":[{\"start\":7,\"end\":16,\"text\":\"建设自动化运维体系\",\"label\":\"S\"},{\"start\":18,\"end\":28,\"text\":\"可持续交付平台的搭建\",\"label\":\"S\"},{\"start\":29,\"end\":36,\"text\":\"线上服务的变更\",\"label\":\"S\"},{\"start\":37,\"end\":43,\"text\":\"服务状态监控\",\"label\":\"S\"},{\"start\":44,\"end\":48,\"text\":\"服务容灾\",\"label\":\"S\"},{\"start\":49,\"end\":53,\"text\":\"数据备份\",\"label\":\"S\"},{\"start\":57,\"end\":66,\"text\":\"对服务进行例行排查\",\"label\":\"S\"},{\"start\":67,\"end\":73,\"text\":\"故障应急处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确运维职业活动，独立活动分别标注。\",\"issues\":[]},{\"id\":\"sp10k-00645\",\"spans\":[{\"start\":1,\"end\":9,\"text\":\"TCP/IP原理\",\"label\":\"K\"},{\"start\":17,\"end\":23,\"text\":\"UNIX原理\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"两项均为明确原理知识要求。\",\"issues\":[]},{\"id\":\"sp10k-00646\",\"spans\":[{\"start\":4,\"end\":25,\"text\":\"对客户端疑难售后技术问题进行快速分析、攻关\",\"label\":\"S\"},{\"start\":26,\"end\":37,\"text\":\"给出有效的技术解决方案\",\"label\":\"S\"},{\"start\":39,\"end\":47,\"text\":\"出具技术分析报告\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"技术问题分析与攻关保留共享对象；方案输出和报告编制分别标注。推动产品改善为未说明方法的目标，不标。\",\"issues\":[]},{\"id\":\"sp10k-00647\",\"spans\":[{\"start\":18,\"end\":25,\"text\":\"中专及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格，日期及泛化岗位条件不标。\",\"issues\":[]},{\"id\":\"sp10k-00648\",\"spans\":[{\"start\":4,\"end\":15,\"text\":\"医院信息管理系统的应用\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求系统应用技能。\",\"issues\":[]},{\"id\":\"sp10k-00649\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅列学历学位证明材料，属于应聘材料要求，未给出具体学历或学位资格。\",\"issues\":[]},{\"id\":\"sp10k-00650\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"Delphi软件开发\",\"label\":\"S\"},{\"start\":22,\"end\":30,\"text\":\"医疗行业软件开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"两项经验均对应完整软件开发活动，去除年限及经验后缀；行业限定保留在活动中。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00641",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明招聘岗位和计划数量，未列出具体能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00642",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为年龄条件的时间界定，不属于能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00643",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于招聘考察程序说明，法规名称不是候选人的知识要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00644",
+        "spans": [
+          {
+            "start": 7,
+            "end": 16,
+            "text": "建设自动化运维体系",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 28,
+            "text": "可持续交付平台的搭建",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 36,
+            "text": "线上服务的变更",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 43,
+            "text": "服务状态监控",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 48,
+            "text": "服务容灾",
+            "label": "S"
+          },
+          {
+            "start": 49,
+            "end": 53,
+            "text": "数据备份",
+            "label": "S"
+          },
+          {
+            "start": 57,
+            "end": 66,
+            "text": "对服务进行例行排查",
+            "label": "S"
+          },
+          {
+            "start": 67,
+            "end": 73,
+            "text": "故障应急处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确运维职业活动，独立活动分别标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00645",
+        "spans": [
+          {
+            "start": 1,
+            "end": 9,
+            "text": "TCP/IP原理",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "UNIX原理",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项均为明确原理知识要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00646",
+        "spans": [
+          {
+            "start": 4,
+            "end": 25,
+            "text": "对客户端疑难售后技术问题进行快速分析、攻关",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 37,
+            "text": "给出有效的技术解决方案",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 47,
+            "text": "出具技术分析报告",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "技术问题分析与攻关保留共享对象；方案输出和报告编制分别标注。推动产品改善为未说明方法的目标，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00647",
+        "spans": [
+          {
+            "start": 18,
+            "end": 25,
+            "text": "中专及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格，日期及泛化岗位条件不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00648",
+        "spans": [
+          {
+            "start": 4,
+            "end": 15,
+            "text": "医院信息管理系统的应用",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求系统应用技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00649",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅列学历学位证明材料，属于应聘材料要求，未给出具体学历或学位资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00650",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "Delphi软件开发",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "text": "医疗行业软件开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项经验均对应完整软件开发活动，去除年限及经验后缀；行业限定保留在活动中。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 65,
+  "ids": [
+    "sp10k-00641",
+    "sp10k-00642",
+    "sp10k-00643",
+    "sp10k-00644",
+    "sp10k-00645",
+    "sp10k-00646",
+    "sp10k-00647",
+    "sp10k-00648",
+    "sp10k-00649",
+    "sp10k-00650"
+  ],
+  "at": "2026-09-13T14:44:03.376800+00:00"
+}

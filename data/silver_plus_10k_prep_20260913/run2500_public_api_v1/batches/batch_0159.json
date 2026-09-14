@@ -1,0 +1,417 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 60.299,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5048,
+    "completion_tokens": 1676,
+    "total_tokens": 6724,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 844
+    },
+    "input_tokens": 5048,
+    "output_tokens": 1676,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01581",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            30,
+            40
+          ],
+          "to": [
+            32,
+            41
+          ],
+          "text": "大学专科及以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01582",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            24
+          ],
+          "to": [
+            10,
+            23
+          ],
+          "text": "为人正值、阳光、积极、向上"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            25,
+            35
+          ],
+          "to": [
+            25,
+            34
+          ],
+          "text": "敏锐的需求洞察能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01585",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            20,
+            25
+          ],
+          "to": [
+            20,
+            24
+          ],
+          "text": "电气工程"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            26,
+            32
+          ],
+          "to": [
+            25,
+            30
+          ],
+          "text": "机电一体化"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01587",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            11
+          ],
+          "to": [
+            9,
+            12
+          ],
+          "text": "计算机"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            12,
+            14
+          ],
+          "to": [
+            13,
+            15
+          ],
+          "text": "电子"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01588",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            6,
+            12
+          ],
+          "to": [
+            5,
+            12
+          ],
+          "text": "重构和优化软件"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            30,
+            36
+          ],
+          "to": [
+            25,
+            31
+          ],
+          "text": "提升用户体验"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01590",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            14
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "测绘类专业硕士学位"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            20,
+            28
+          ],
+          "to": [
+            12,
+            20
+          ],
+          "text": "从事测绘业务工作"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01581\",\"spans\":[{\"start\":30,\"end\":40,\"text\":\"大学专科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历要求属于资格提及；常住户口和性别限制不标。\",\"issues\":[]},{\"id\":\"sp10k-01582\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"良好的职业道德\",\"label\":\"T\"},{\"start\":11,\"end\":24,\"text\":\"为人正值、阳光、积极、向上\",\"label\":\"T\"},{\"start\":25,\"end\":35,\"text\":\"敏锐的需求洞察能力\",\"label\":\"T\"},{\"start\":35,\"end\":41,\"text\":\"善于表达沟通\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"职业道德、个人特质、需求洞察及表达沟通均属于通用能力或特质；出差要求不标。\",\"issues\":[]},{\"id\":\"sp10k-01583\",\"spans\":[{\"start\":6,\"end\":19,\"text\":\"相应学段及以上的教师资格证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"教师资格证属于非语言职业资格。\",\"issues\":[]},{\"id\":\"sp10k-01584\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容是报名材料填写规范，不构成候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01585\",\"spans\":[{\"start\":5,\"end\":12,\"text\":\"大专及以上学历\",\"label\":\"K\"},{\"start\":13,\"end\":19,\"text\":\"光伏发电技术\",\"label\":\"K\"},{\"start\":20,\"end\":25,\"text\":\"电气工程\",\"label\":\"K\"},{\"start\":26,\"end\":32,\"text\":\"机电一体化\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历和具体专业属于资格或领域知识提及。\",\"issues\":[]},{\"id\":\"sp10k-01586\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容仅为专业测试的时间安排，不是候选人资格或能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01587\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"统招大专以上学历\",\"label\":\"K\"},{\"start\":9,\"end\":11,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":12,\"end\":14,\"text\":\"电子\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"统招学历属于资格要求，相关专业名属于领域知识或专业资格范围。\",\"issues\":[]},{\"id\":\"sp10k-01588\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"维护软件\",\"label\":\"S\"},{\"start\":6,\"end\":12,\"text\":\"重构和优化软件\",\"label\":\"S\"},{\"start\":30,\"end\":36,\"text\":\"提升用户体验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"维护、重构优化及提升用户体验均表达候选人需执行的职业活动；软件高可用性和高稳定性属于结果或属性。\",\"issues\":[]},{\"id\":\"sp10k-01589\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容仅为考试科目和时间安排，不构成候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01590\",\"spans\":[{\"start\":4,\"end\":14,\"text\":\"测绘类专业硕士学位\",\"label\":\"K\"},{\"start\":20,\"end\":28,\"text\":\"从事测绘业务工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"测绘类专业硕士学位属于学历资格，从事测绘业务工作属于明确职业活动；工作年限不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01581",
+        "spans": [
+          {
+            "start": 32,
+            "end": 41,
+            "text": "大学专科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历要求属于资格提及；常住户口和性别限制不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01582",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "良好的职业道德",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 23,
+            "text": "为人正值、阳光、积极、向上",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 34,
+            "text": "敏锐的需求洞察能力",
+            "label": "T"
+          },
+          {
+            "start": 35,
+            "end": 41,
+            "text": "善于表达沟通",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "职业道德、个人特质、需求洞察及表达沟通均属于通用能力或特质；出差要求不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01583",
+        "spans": [
+          {
+            "start": 6,
+            "end": 19,
+            "text": "相应学段及以上的教师资格证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "教师资格证属于非语言职业资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01584",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容是报名材料填写规范，不构成候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01585",
+        "spans": [
+          {
+            "start": 5,
+            "end": 12,
+            "text": "大专及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "光伏发电技术",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "电气工程",
+            "label": "K"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "text": "机电一体化",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历和具体专业属于资格或领域知识提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01586",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容仅为专业测试的时间安排，不是候选人资格或能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01587",
+        "spans": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "统招大专以上学历",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "text": "电子",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "统招学历属于资格要求，相关专业名属于领域知识或专业资格范围。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01588",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "维护软件",
+            "label": "S"
+          },
+          {
+            "start": 5,
+            "end": 12,
+            "text": "重构和优化软件",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "text": "提升用户体验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "维护、重构优化及提升用户体验均表达候选人需执行的职业活动；软件高可用性和高稳定性属于结果或属性。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01589",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容仅为考试科目和时间安排，不构成候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01590",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "测绘类专业硕士学位",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "text": "从事测绘业务工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "测绘类专业硕士学位属于学历资格，从事测绘业务工作属于明确职业活动；工作年限不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 159,
+  "ids": [
+    "sp10k-01581",
+    "sp10k-01582",
+    "sp10k-01583",
+    "sp10k-01584",
+    "sp10k-01585",
+    "sp10k-01586",
+    "sp10k-01587",
+    "sp10k-01588",
+    "sp10k-01589",
+    "sp10k-01590"
+  ],
+  "at": "2026-09-13T16:17:47.407236+00:00"
+}

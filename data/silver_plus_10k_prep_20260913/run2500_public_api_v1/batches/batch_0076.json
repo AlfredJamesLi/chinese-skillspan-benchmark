@@ -1,0 +1,374 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 42.457,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4981,
+    "completion_tokens": 1191,
+    "total_tokens": 6172,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 4981,
+    "output_tokens": 1191,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00751",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            13
+          ],
+          "to": [
+            3,
+            12
+          ],
+          "text": "语言、文字表述能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            21
+          ],
+          "to": [
+            13,
+            20
+          ],
+          "text": "善于同客户沟通"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00754",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            9
+          ],
+          "to": [
+            6,
+            10
+          ],
+          "text": "日常管理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            14
+          ],
+          "to": [
+            11,
+            15
+          ],
+          "text": "人员培训"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00757",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            9
+          ],
+          "to": [
+            8,
+            13
+          ],
+          "text": "管理和督导"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00759",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            9
+          ],
+          "to": [
+            4,
+            8
+          ],
+          "text": "系统运维"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            25,
+            32
+          ],
+          "to": [
+            17,
+            34
+          ],
+          "text": "Windows、Linux系统管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00760",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            13,
+            19
+          ],
+          "to": [
+            9,
+            15
+          ],
+          "text": "Python"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            20,
+            26
+          ],
+          "to": [
+            16,
+            22
+          ],
+          "text": "GoLang"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            27,
+            31
+          ],
+          "to": [
+            23,
+            27
+          ],
+          "text": "Java"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00751\",\"spans\":[{\"start\":4,\"end\":13,\"text\":\"语言、文字表述能力\",\"label\":\"T\"},{\"start\":14,\"end\":21,\"text\":\"善于同客户沟通\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"提取语言文字表达和客户沟通等通用能力。\",\"issues\":[]},{\"id\":\"sp10k-00752\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于考试诚信承诺及报考流程要求，不属于候选人职业能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00753\",\"spans\":[{\"start\":7,\"end\":10,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":11,\"end\":17,\"text\":\"团队协作精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"提取责任心和团队协作等通用特质。\",\"issues\":[]},{\"id\":\"sp10k-00754\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"日常管理\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"人员培训\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"实验室日常管理和人员培训是明确的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00755\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于资格复审和面试安排等招聘流程要求。\",\"issues\":[]},{\"id\":\"sp10k-00756\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为泛化的工作能力和任职经历要求，未指明具体能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-00757\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"管理和督导\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"对直接下属的管理和督导属于人员管理类通用能力。\",\"issues\":[]},{\"id\":\"sp10k-00758\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于面谈到场及自动放弃等招聘流程要求。\",\"issues\":[]},{\"id\":\"sp10k-00759\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"系统运维\",\"label\":\"S\"},{\"start\":25,\"end\":32,\"text\":\"Windows、Linux系统管理\",\"label\":\"S\"},{\"start\":37,\"end\":40,\"text\":\"ERP\",\"label\":\"S\"},{\"start\":41,\"end\":43,\"text\":\"OA\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"提取系统运维活动、Windows/Linux系统管理及ERP、OA工具运用要求。\",\"issues\":[]},{\"id\":\"sp10k-00760\",\"spans\":[{\"start\":13,\"end\":19,\"text\":\"Python\",\"label\":\"S\"},{\"start\":20,\"end\":26,\"text\":\"GoLang\",\"label\":\"S\"},{\"start\":27,\"end\":31,\"text\":\"Java\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"提取要求掌握并应用的编程语言工具名。\",\"issues\":[]}] }",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00751",
+        "spans": [
+          {
+            "start": 3,
+            "end": 12,
+            "text": "语言、文字表述能力",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 20,
+            "text": "善于同客户沟通",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "提取语言文字表达和客户沟通等通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00752",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于考试诚信承诺及报考流程要求，不属于候选人职业能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00753",
+        "spans": [
+          {
+            "start": 7,
+            "end": 10,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "团队协作精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "提取责任心和团队协作等通用特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00754",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "日常管理",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "人员培训",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "实验室日常管理和人员培训是明确的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00755",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于资格复审和面试安排等招聘流程要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00756",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为泛化的工作能力和任职经历要求，未指明具体能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00757",
+        "spans": [
+          {
+            "start": 8,
+            "end": 13,
+            "text": "管理和督导",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "对直接下属的管理和督导属于人员管理类通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00758",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于面谈到场及自动放弃等招聘流程要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00759",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "系统运维",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 34,
+            "text": "Windows、Linux系统管理",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 40,
+            "text": "ERP",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 43,
+            "text": "OA",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "提取系统运维活动、Windows/Linux系统管理及ERP、OA工具运用要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00760",
+        "spans": [
+          {
+            "start": 9,
+            "end": 15,
+            "text": "Python",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "GoLang",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "Java",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "提取要求掌握并应用的编程语言工具名。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 76,
+  "ids": [
+    "sp10k-00751",
+    "sp10k-00752",
+    "sp10k-00753",
+    "sp10k-00754",
+    "sp10k-00755",
+    "sp10k-00756",
+    "sp10k-00757",
+    "sp10k-00758",
+    "sp10k-00759",
+    "sp10k-00760"
+  ],
+  "at": "2026-09-13T14:53:20.488381+00:00"
+}

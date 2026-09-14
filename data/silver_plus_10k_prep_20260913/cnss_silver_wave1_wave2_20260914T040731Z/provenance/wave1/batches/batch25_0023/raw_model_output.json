@@ -1,0 +1,577 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02390",
+      "spans": [
+        {
+          "start": 2,
+          "end": 41,
+          "text": "对公司所有网络设备，如防火墙、路由器、交换机、UPS等设备的状态进行监控及维护",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 55,
+          "text": "对相关设备进行优化处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取设备监控维护和优化职责；共享设备对象保留在连续活动短语中。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02391",
+      "spans": [
+        {
+          "start": 4,
+          "end": 23,
+          "text": "社会化媒体（微博、微信、网站）运营推广",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "内容编辑",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 33,
+          "text": "发布",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 36,
+          "text": "维护",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 39,
+          "text": "管理",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 42,
+          "text": "互动",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取媒体运营及内容活动，并列动作由局部语境限定；影响力和关注度为结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02392",
+      "spans": [
+        {
+          "start": 12,
+          "end": 18,
+          "text": "系统安全检查",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统安全检查为明确执行的职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02393",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为资格初审名单公示安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02394",
+      "spans": [
+        {
+          "start": 0,
+          "end": 10,
+          "text": "热作病虫害研究与防治",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "植物保护",
+          "label": "K"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "text": "植物病理学",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 37,
+          "text": "农药学",
+          "label": "K"
+        },
+        {
+          "start": 38,
+          "end": 47,
+          "text": "农业昆虫与害虫防治",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位名称明确研究防治活动；专业列表按专业名称标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02395",
+      "spans": [
+        {
+          "start": 4,
+          "end": 24,
+          "text": "中间件及数据库安装、配置、优化及故障处理",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 31,
+          "text": "nginx",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "text": "tomcat",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 44,
+          "text": "redis",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 50,
+          "text": "kafka",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 56,
+          "text": "mysql",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "共享中间件与数据库对象的运维活动保留整体；列举工具有明确操作语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02396",
+      "spans": [
+        {
+          "start": 2,
+          "end": 23,
+          "text": "处理、解决技术客服QQ、电话的相关工作问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "问题处理受技术客服工作对象限定，保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02397",
+      "spans": [
+        {
+          "start": 0,
+          "end": 11,
+          "text": "定制项目组生产加工软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件定制为职业活动；提升生产效率为结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02398",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "客户回访",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "掌握客户需要",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "了解客户状态",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 33,
+          "text": "收集客户使用系统情况",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取客户回访与客户信息获取职责；此处掌握、了解表达工作动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02399",
+      "spans": [
+        {
+          "start": 4,
+          "end": 13,
+          "text": "宏观及微观分析能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分析能力由本句数据对象限定，保留共享分析能力成分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02401",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "管理学",
+          "label": "K"
+        },
+        {
+          "start": 4,
+          "end": 7,
+          "text": "中医学",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "法学",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 18,
+          "text": "计算机科学技术",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 22,
+          "text": "新闻学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "各项为独立专业名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02402",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "策划能力",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "文案能力",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "组织能力",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "沟通能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "策划与文案为职业能力；组织与沟通为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02403",
+      "spans": [
+        {
+          "start": 67,
+          "end": 69,
+          "text": "博士",
+          "label": "K"
+        },
+        {
+          "start": 72,
+          "end": 78,
+          "text": "博士学历学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确招生资格；流动站、导师、研究方向和科室为岗位介绍。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02404",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 18,
+          "text": "全日制本科或以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业核心名及完整学历资格，排除泛化相关专业修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02405",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报考取消后的退费流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02406",
+      "spans": [
+        {
+          "start": 4,
+          "end": 19,
+          "text": "门禁、广播、打印机等设备的维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列设备共享维护动作，保留完整维护活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02407",
+      "spans": [
+        {
+          "start": 6,
+          "end": 14,
+          "text": "业务、技术的培训",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "绩效考核",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "培训与绩效考核为明确执行的职业职能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02408",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "现网服务器规划与维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "规划和维护共享现网服务器对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02409",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "商业相关设备设施的操作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求设备设施操作；末尾异常标点不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02410",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "文档书写能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通和服务意识为通用素质；文档书写为职业活动能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02411",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "产品售后技术问题的处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "问题处理具有明确产品售后技术对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02412",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅介绍招聘依据、招聘单位、岗位及人数，无具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02413",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "IT运维技术方面的知识",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "流程优化过程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "前项明确知识要求，后项要求熟悉优化过程，按过程知识处理。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02414",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "HTML",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 19,
+          "text": "JavaScript",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "text": "CSS",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "美工基础",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "技术名称受明确使用动作限定；美工基础为知识基础。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02415",
+      "spans": [
+        {
+          "start": 1,
+          "end": 4,
+          "text": "KVM",
+          "label": "S"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "Ceph",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "SDN",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "三项要求的范围与边界明确，但知识掌握与实际运用语境未区分；S仅为类型待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "KVM",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅称掌握关联技术，未明确要求技术知识还是工具实践。"
+        },
+        {
+          "kind": "type",
+          "text": "Ceph",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅称掌握关联技术，缺少原理知识或实际部署使用的限定。"
+        },
+        {
+          "kind": "type",
+          "text": "SDN",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指网络技术知识或可执行技术实践，当前句未提供区分依据。"
+        }
+      ]
+    }
+  ]
+}

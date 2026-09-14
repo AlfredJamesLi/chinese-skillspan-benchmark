@@ -1,0 +1,532 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 70.96,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5152,
+    "completion_tokens": 2138,
+    "total_tokens": 7290,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1183
+    },
+    "input_tokens": 5152,
+    "output_tokens": 2138,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00771",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            16
+          ],
+          "to": [
+            15,
+            17
+          ],
+          "text": "检测"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            19
+          ],
+          "to": [
+            18,
+            20
+          ],
+          "text": "整定"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            20,
+            22
+          ],
+          "to": [
+            21,
+            23
+          ],
+          "text": "测试"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            23,
+            27
+          ],
+          "to": [
+            24,
+            28
+          ],
+          "text": "故障定位"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            28,
+            30
+          ],
+          "to": [
+            29,
+            31
+          ],
+          "text": "变更"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            31,
+            37
+          ],
+          "to": [
+            32,
+            38
+          ],
+          "text": "改造方案制定"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            38,
+            40
+          ],
+          "to": [
+            39,
+            41
+          ],
+          "text": "审核"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00773",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            11,
+            16
+          ],
+          "to": [
+            10,
+            15
+          ],
+          "text": "MySQL"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            22
+          ],
+          "to": [
+            16,
+            22
+          ],
+          "text": "Oracle"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00775",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            11
+          ],
+          "to": [
+            3,
+            10
+          ],
+          "text": "本科及以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00776",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            68,
+            78
+          ],
+          "to": [
+            68,
+            79
+          ],
+          "text": "普通话水平测试合格证书"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00779",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            5,
+            11
+          ],
+          "text": "沟通协调能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            17
+          ],
+          "to": [
+            12,
+            18
+          ],
+          "text": "工作认真负责"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            18,
+            29
+          ],
+          "to": [
+            21,
+            30
+          ],
+          "text": "承受较强的工作压力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00780",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            25
+          ],
+          "to": [
+            16,
+            20
+          ],
+          "text": "基本理论"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            26,
+            32
+          ],
+          "to": [
+            22,
+            28
+          ],
+          "text": "内部实现机制"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            42,
+            46
+          ],
+          "to": [
+            37,
+            41
+          ],
+          "text": "性能优化"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00771\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"高低压配电设备一二次系统\",\"label\":\"K\"},{\"start\":14,\"end\":16,\"text\":\"检测\",\"label\":\"S\"},{\"start\":17,\"end\":19,\"text\":\"整定\",\"label\":\"S\"},{\"start\":20,\"end\":22,\"text\":\"测试\",\"label\":\"S\"},{\"start\":23,\"end\":27,\"text\":\"故障定位\",\"label\":\"S\"},{\"start\":28,\"end\":30,\"text\":\"变更\",\"label\":\"S\"},{\"start\":31,\"end\":37,\"text\":\"改造方案制定\",\"label\":\"S\"},{\"start\":38,\"end\":40,\"text\":\"审核\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取配电系统领域知识及明确的检测、整定、测试、故障定位、变更、方案制定和审核活动。\",\"issues\":[]},{\"id\":\"sp10k-00772\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报名期间对相近专业的认定和公布，属于招聘行政流程，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00773\",\"spans\":[{\"start\":11,\"end\":16,\"text\":\"MySQL\",\"label\":\"S\"},{\"start\":17,\"end\":22,\"text\":\"Oracle\",\"label\":\"S\"},{\"start\":31,\"end\":35,\"text\":\"Hive\",\"label\":\"S\"},{\"start\":36,\"end\":41,\"text\":\"Hbase\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库名称处于熟悉或优先掌握的岗位工具语境，标为S。\",\"issues\":[]},{\"id\":\"sp10k-00774\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报名材料、学历验证和社保记录提交要求，属于报名行政流程及证明材料，不抽取为候选人资格能力。\",\"issues\":[]},{\"id\":\"sp10k-00775\",\"spans\":[{\"start\":3,\"end\":11,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格名；计算机、电子等相关专业为泛化专业表述，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00776\",\"spans\":[{\"start\":62,\"end\":67,\"text\":\"教师资格证\",\"label\":\"K\"},{\"start\":68,\"end\":78,\"text\":\"普通话水平测试合格证书\",\"label\":\"L\"}],\"status\":\"candidate_complete\",\"note\":\"报名材料中明确要求提供教师资格证和普通话水平测试合格证书，分别按非语言资格和语言证书标注。\",\"issues\":[]},{\"id\":\"sp10k-00777\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"车辆的充电\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"车辆充电是明确的职业操作；“车辆故障问题”未形成明确可执行能力提及。\",\"issues\":[]},{\"id\":\"sp10k-00778\",\"spans\":[{\"start\":8,\"end\":12,\"text\":\"监控值班\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"监控值班是明确的岗位职业活动，时长及班次限定不进入跨度。\",\"issues\":[]},{\"id\":\"sp10k-00779\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"沟通协调能力\",\"label\":\"T\"},{\"start\":11,\"end\":17,\"text\":\"工作认真负责\",\"label\":\"T\"},{\"start\":18,\"end\":29,\"text\":\"承受较强的工作压力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取沟通协调、认真负责和压力承受等通用能力及特质。\",\"issues\":[]},{\"id\":\"sp10k-00780\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"MySQL\",\"label\":\"S\"},{\"start\":17,\"end\":25,\"text\":\"基本理论\",\"label\":\"K\"},{\"start\":26,\"end\":32,\"text\":\"内部实现机制\",\"label\":\"K\"},{\"start\":42,\"end\":46,\"text\":\"性能优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"MySQL处于数据库运用语境；基本理论和内部实现机制为知识；性能优化为明确技术活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00771",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "高低压配电设备一二次系统",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "检测",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 20,
+            "text": "整定",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 23,
+            "text": "测试",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "故障定位",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 31,
+            "text": "变更",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "text": "改造方案制定",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 41,
+            "text": "审核",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取配电系统领域知识及明确的检测、整定、测试、故障定位、变更、方案制定和审核活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00772",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报名期间对相近专业的认定和公布，属于招聘行政流程，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00773",
+        "spans": [
+          {
+            "start": 10,
+            "end": 15,
+            "text": "MySQL",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "Oracle",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "text": "Hive",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "text": "Hbase",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库名称处于熟悉或优先掌握的岗位工具语境，标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00774",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报名材料、学历验证和社保记录提交要求，属于报名行政流程及证明材料，不抽取为候选人资格能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00775",
+        "spans": [
+          {
+            "start": 3,
+            "end": 10,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格名；计算机、电子等相关专业为泛化专业表述，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00776",
+        "spans": [
+          {
+            "start": 62,
+            "end": 67,
+            "text": "教师资格证",
+            "label": "K"
+          },
+          {
+            "start": 68,
+            "end": 79,
+            "text": "普通话水平测试合格证书",
+            "label": "L"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "报名材料中明确要求提供教师资格证和普通话水平测试合格证书，分别按非语言资格和语言证书标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00777",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "车辆的充电",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "车辆充电是明确的职业操作；“车辆故障问题”未形成明确可执行能力提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00778",
+        "spans": [
+          {
+            "start": 8,
+            "end": 12,
+            "text": "监控值班",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "监控值班是明确的岗位职业活动，时长及班次限定不进入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00779",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "沟通协调能力",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "text": "工作认真负责",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 30,
+            "text": "承受较强的工作压力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取沟通协调、认真负责和压力承受等通用能力及特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00780",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "MySQL",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "基本理论",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "内部实现机制",
+            "label": "K"
+          },
+          {
+            "start": 37,
+            "end": 41,
+            "text": "性能优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "MySQL处于数据库运用语境；基本理论和内部实现机制为知识；性能优化为明确技术活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 78,
+  "ids": [
+    "sp10k-00771",
+    "sp10k-00772",
+    "sp10k-00773",
+    "sp10k-00774",
+    "sp10k-00775",
+    "sp10k-00776",
+    "sp10k-00777",
+    "sp10k-00778",
+    "sp10k-00779",
+    "sp10k-00780"
+  ],
+  "at": "2026-09-13T14:55:09.746686+00:00"
+}

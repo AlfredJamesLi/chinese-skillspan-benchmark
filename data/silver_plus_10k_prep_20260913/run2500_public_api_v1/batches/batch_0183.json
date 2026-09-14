@@ -1,0 +1,324 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 59.75,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5002,
+    "completion_tokens": 1878,
+    "total_tokens": 6880,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 787
+    },
+    "input_tokens": 5002,
+    "output_tokens": 1878,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-02026\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"公文写作\",\"label\":\"S\"},{\"start\":12,\"end\":14,\"text\":\"OA\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"OFFICE\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"公文写作是职业活动，OA、OFFICE为岗位使用工具；要求触发词不纳入。\",\"issues\":[]},{\"id\":\"sp10k-02054\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"本科以上学历\",\"label\":\"K\"},{\"start\":11,\"end\":25,\"text\":\"智能穿戴或手机产品的硬件测试\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历按完整资格提及标注；硬件测试保留共享产品对象，去除年限及经验后缀。\",\"issues\":[]},{\"id\":\"sp10k-02064\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"机床的维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"维护机床为明确职业活动；确保正常生产为结果承诺，不标。\",\"issues\":[]},{\"id\":\"sp10k-02103\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"文字功底\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"沟通能力和文字功底均为通用能力，去除程度和要求触发词。\",\"issues\":[]},{\"id\":\"sp10k-02110\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"商写营运期相关工程管理\",\"label\":\"S\"},{\"start\":16,\"end\":24,\"text\":\"管理物业相关职能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"工程管理及物业职能管理为明确专业职责，分别标注。\",\"issues\":[]},{\"id\":\"sp10k-02132\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"本科以上学历\",\"label\":\"K\"},{\"start\":7,\"end\":9,\"text\":\"电子\",\"label\":\"K\"},{\"start\":10,\"end\":12,\"text\":\"机械\",\"label\":\"K\"},{\"start\":13,\"end\":16,\"text\":\"自动化\",\"label\":\"K\"},{\"start\":25,\"end\":27,\"text\":\"镀膜\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历与并列专业名标K；镀膜在实践经验要求中表示可执行工艺活动，标S。\",\"issues\":[]},{\"id\":\"sp10k-02133\",\"spans\":[{\"start\":5,\"end\":7,\"text\":\"医药\",\"label\":\"K\"},{\"start\":14,\"end\":21,\"text\":\"执业药师资格证\",\"label\":\"K\"},{\"start\":23,\"end\":25,\"text\":\"质管\",\"label\":\"S\"},{\"start\":26,\"end\":28,\"text\":\"稽核\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"医药为专业领域，执业药师资格证为非语言资格；质管与稽核为经验要求中的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-02156\",\"spans\":[{\"start\":6,\"end\":13,\"text\":\"全周期税务管理\",\"label\":\"S\"},{\"start\":14,\"end\":25,\"text\":\"关注公司各节点涉税实务\",\"label\":\"S\"},{\"start\":26,\"end\":37,\"text\":\"为公司决策提供财务支持\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"分别标注税务管理、涉税实务关注及决策财务支持职责，保留必要对象和限定。\",\"issues\":[]},{\"id\":\"sp10k-02158\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"项目售后团队的管理\",\"label\":\"T\"},{\"start\":16,\"end\":22,\"text\":\"团队绩效管理\",\"label\":\"S\"},{\"start\":23,\"end\":29,\"text\":\"组织专项培训\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"团队管理按通用组织管理标T；绩效管理与组织培训为具体职业职能，标S。\",\"issues\":[]},{\"id\":\"sp10k-02180\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"配套储罐系统\",\"label\":\"K\"},{\"start\":7,\"end\":11,\"text\":\"分析系统\",\"label\":\"K\"},{\"start\":12,\"end\":19,\"text\":\"全自动灭火系统\",\"label\":\"K\"},{\"start\":33,\"end\":35,\"text\":\"配置\",\"label\":\"S\"},{\"start\":36,\"end\":38,\"text\":\"选型\",\"label\":\"S\"},{\"start\":41,\"end\":47,\"text\":\"国内外各品牌\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"系统理解及相关品牌熟悉度属于领域知识；配置、选型是共享前述系统对象的可执行活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-02026",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "公文写作",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "OA",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "OFFICE",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "公文写作是职业活动，OA、OFFICE为岗位使用工具；要求触发词不纳入。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02054",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "本科以上学历",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 25,
+            "text": "智能穿戴或手机产品的硬件测试",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历按完整资格提及标注；硬件测试保留共享产品对象，去除年限及经验后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02064",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "机床的维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "维护机床为明确职业活动；确保正常生产为结果承诺，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02103",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "文字功底",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通能力和文字功底均为通用能力，去除程度和要求触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02110",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "商写营运期相关工程管理",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "text": "管理物业相关职能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "工程管理及物业职能管理为明确专业职责，分别标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02132",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "本科以上学历",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "text": "电子",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "机械",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "text": "自动化",
+            "label": "K"
+          },
+          {
+            "start": 25,
+            "end": 27,
+            "text": "镀膜",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历与并列专业名标K；镀膜在实践经验要求中表示可执行工艺活动，标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02133",
+        "spans": [
+          {
+            "start": 5,
+            "end": 7,
+            "text": "医药",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "text": "执业药师资格证",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "质管",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "text": "稽核",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "医药为专业领域，执业药师资格证为非语言资格；质管与稽核为经验要求中的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02156",
+        "spans": [
+          {
+            "start": 6,
+            "end": 13,
+            "text": "全周期税务管理",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 25,
+            "text": "关注公司各节点涉税实务",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 37,
+            "text": "为公司决策提供财务支持",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别标注税务管理、涉税实务关注及决策财务支持职责，保留必要对象和限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02158",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "项目售后团队的管理",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "团队绩效管理",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "text": "组织专项培训",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "团队管理按通用组织管理标T；绩效管理与组织培训为具体职业职能，标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02180",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "配套储罐系统",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "分析系统",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "text": "全自动灭火系统",
+            "label": "K"
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "text": "配置",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 38,
+            "text": "选型",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 47,
+            "text": "国内外各品牌",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统理解及相关品牌熟悉度属于领域知识；配置、选型是共享前述系统对象的可执行活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 183,
+  "ids": [
+    "sp10k-02026",
+    "sp10k-02054",
+    "sp10k-02064",
+    "sp10k-02103",
+    "sp10k-02110",
+    "sp10k-02132",
+    "sp10k-02133",
+    "sp10k-02156",
+    "sp10k-02158",
+    "sp10k-02180"
+  ],
+  "at": "2026-09-13T16:39:35.674986+00:00"
+}

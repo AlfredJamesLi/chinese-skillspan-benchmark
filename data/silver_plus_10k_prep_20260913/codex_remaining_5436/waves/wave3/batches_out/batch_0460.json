@@ -1,0 +1,252 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07091",
+      "spans": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "抗压能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用特质；属地化办公及出差要求属于工作安排，其中项目实施仅为场景限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07092",
+      "spans": [
+        {
+          "start": 6,
+          "end": 13,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "人力资源管理",
+          "label": "K"
+        },
+        {
+          "start": 33,
+          "end": 43,
+          "text": "薪酬体系设计理论基础",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历、明确专业名及理论知识要求；泛化相关专业不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07093",
+      "spans": [
+        {
+          "start": 6,
+          "end": 9,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "服务意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "责任心和服务意识为通用特质；适应倒班制度属于班次安排要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07094",
+      "spans": [
+        {
+          "start": 9,
+          "end": 21,
+          "text": "客人入住、退房手续的办理",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "信息登记",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确职业活动；入住与退房共享手续办理成分，保留完整连续跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07095",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "质量相关知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确知识要求按K标注，去除要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07096",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "制作加工指示书和发货清单",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 28,
+          "text": "与物流部门沟通协调运输计划",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 39,
+          "text": "跟进订单的交付及回款",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 50,
+          "text": "管理订单执行相关档案",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 57,
+          "text": "维护顾客档案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "独立职责分别抽取；制作及跟进的并列对象保留共享动作，与物流部门的沟通协调按人际协作标T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07097",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "text": "自动化",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 25,
+          "text": "电气工程及其自动化",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历及两个专业名；泛化相关专业不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07098",
+      "spans": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "注册土木工程师",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "text": "注册结构师",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "text": "注册建筑师",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 32,
+          "text": "注册建造师",
+          "label": "K"
+        },
+        {
+          "start": 33,
+          "end": 46,
+          "text": "工程相关专业中级工程师职称",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取非语言注册资格及带专业限定的完整职称要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07099",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "工作责任心",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "团队协作能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取责任特质与团队协作能力，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07100",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "电站电气一次、二次系统",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "电站电气运行",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "检修",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统知识按K标注，共享系统中心词保留；运行与检修为明确职业实践，检修对象由局部语境限定，年限不标。",
+      "issues": []
+    }
+  ]
+}

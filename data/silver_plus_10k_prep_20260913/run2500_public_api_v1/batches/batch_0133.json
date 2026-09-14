@@ -1,0 +1,430 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 45.554,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5022,
+    "completion_tokens": 1323,
+    "total_tokens": 6345,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 495
+    },
+    "input_tokens": 5022,
+    "output_tokens": 1323,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01321",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            8
+          ],
+          "to": [
+            0,
+            9
+          ],
+          "text": "大专及以上统招学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01322",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            20
+          ],
+          "to": [
+            4,
+            20
+          ],
+          "text": "ERP系统故障知识库的建立及维护"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01324",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            8
+          ],
+          "to": [
+            2,
+            7
+          ],
+          "text": "后端技术栈"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            18,
+            37
+          ],
+          "to": [
+            12,
+            25
+          ],
+          "text": "移动端、前端等相关技术领域"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01325",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            12,
+            23
+          ],
+          "to": [
+            12,
+            26
+          ],
+          "text": "WORD/EXCEL/PPT"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            30,
+            36
+          ],
+          "to": [
+            32,
+            36
+          ],
+          "text": "文档编写"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01327",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            1,
+            9
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "平台网营销规则"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            19
+          ],
+          "to": [
+            11,
+            18
+          ],
+          "text": "会员的购物习惯"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            19,
+            25
+          ],
+          "to": [
+            19,
+            23
+          ],
+          "text": "购物心理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            25,
+            34
+          ],
+          "to": [
+            23,
+            33
+          ],
+          "text": "对数据和用户心理敏感"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01328",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            14,
+            18
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "部门协调"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01330",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            27
+          ],
+          "to": [
+            12,
+            26
+          ],
+          "text": "SoapUI,PostMan"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01321\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"大专及以上统招学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历资格按完整资格名标注；相关专业为泛化专业要求，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01322\",\"spans\":[{\"start\":3,\"end\":20,\"text\":\"ERP系统故障知识库的建立及维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求建立及维护故障知识库，属于可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01323\",\"spans\":[{\"start\":1,\"end\":7,\"text\":\"生产运作模式\",\"label\":\"K\"},{\"start\":8,\"end\":12,\"text\":\"生产工艺\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"生产运作模式和生产工艺属于领域知识。\",\"issues\":[]},{\"id\":\"sp10k-01324\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"后端技术栈\",\"label\":\"S\"},{\"start\":18,\"end\":37,\"text\":\"移动端、前端等相关技术领域\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"后端技术栈在技术实践要求中作为可运用技术；移动端、前端等技术领域为领域性知识范围。\",\"issues\":[]},{\"id\":\"sp10k-01325\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"AutoCAD\",\"label\":\"S\"},{\"start\":12,\"end\":23,\"text\":\"WORD/EXCEL/PPT\",\"label\":\"S\"},{\"start\":30,\"end\":36,\"text\":\"文档编写\",\"label\":\"S\"},{\"start\":44,\"end\":50,\"text\":\"图纸和系统图\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"软件名称及文档编写属于可执行工作技能；图纸和系统图属于需要理解的专业对象。\",\"issues\":[]},{\"id\":\"sp10k-01326\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容是考察组对报考人员进行资格复查的流程说明，不是候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01327\",\"spans\":[{\"start\":1,\"end\":9,\"text\":\"平台网营销规则\",\"label\":\"K\"},{\"start\":9,\"end\":19,\"text\":\"会员的购物习惯\",\"label\":\"K\"},{\"start\":19,\"end\":25,\"text\":\"购物心理\",\"label\":\"K\"},{\"start\":25,\"end\":34,\"text\":\"对数据和用户心理敏感\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"营销规则、购物习惯和购物心理属于领域知识；对数据和用户心理敏感属于通用特质。\",\"issues\":[]},{\"id\":\"sp10k-01328\",\"spans\":[{\"start\":14,\"end\":18,\"text\":\"部门协调\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"部门间协调属于跨行业通用协作能力；“处理”未形成独立明确技能提及。\",\"issues\":[]},{\"id\":\"sp10k-01329\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"年龄及职称、学历对应的年龄条件属于年龄限制，不在能力、知识或资格提及范围内。\",\"issues\":[]},{\"id\":\"sp10k-01330\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"接口工具使用能力\",\"label\":\"S\"},{\"start\":15,\"end\":27,\"text\":\"SoapUI,PostMan\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"接口工具使用能力及列举的接口工具均属于岗位工具运用要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01321",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "大专及以上统招学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历资格按完整资格名标注；相关专业为泛化专业要求，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01322",
+        "spans": [
+          {
+            "start": 4,
+            "end": 20,
+            "text": "ERP系统故障知识库的建立及维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求建立及维护故障知识库，属于可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01323",
+        "spans": [
+          {
+            "start": 1,
+            "end": 7,
+            "text": "生产运作模式",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "生产工艺",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "生产运作模式和生产工艺属于领域知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01324",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "后端技术栈",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 25,
+            "text": "移动端、前端等相关技术领域",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "后端技术栈在技术实践要求中作为可运用技术；移动端、前端等技术领域为领域性知识范围。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01325",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "AutoCAD",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 26,
+            "text": "WORD/EXCEL/PPT",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "text": "文档编写",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 50,
+            "text": "图纸和系统图",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "软件名称及文档编写属于可执行工作技能；图纸和系统图属于需要理解的专业对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01326",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容是考察组对报考人员进行资格复查的流程说明，不是候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01327",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "平台网营销规则",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "text": "会员的购物习惯",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "购物心理",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 33,
+            "text": "对数据和用户心理敏感",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "营销规则、购物习惯和购物心理属于领域知识；对数据和用户心理敏感属于通用特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01328",
+        "spans": [
+          {
+            "start": 10,
+            "end": 14,
+            "text": "部门协调",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "部门间协调属于跨行业通用协作能力；“处理”未形成独立明确技能提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01329",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "年龄及职称、学历对应的年龄条件属于年龄限制，不在能力、知识或资格提及范围内。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01330",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "接口工具使用能力",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 26,
+            "text": "SoapUI,PostMan",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "接口工具使用能力及列举的接口工具均属于岗位工具运用要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 133,
+  "ids": [
+    "sp10k-01321",
+    "sp10k-01322",
+    "sp10k-01323",
+    "sp10k-01324",
+    "sp10k-01325",
+    "sp10k-01326",
+    "sp10k-01327",
+    "sp10k-01328",
+    "sp10k-01329",
+    "sp10k-01330"
+  ],
+  "at": "2026-09-13T15:45:53.471711+00:00"
+}

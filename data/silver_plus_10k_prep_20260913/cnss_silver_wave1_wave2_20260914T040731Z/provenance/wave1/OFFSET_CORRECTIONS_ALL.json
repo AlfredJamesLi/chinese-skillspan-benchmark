@@ -1,0 +1,102 @@
+[
+  {
+    "batch": "batch25_0037",
+    "id": "sp10k-02763",
+    "text": "脚本",
+    "old": [
+      7,
+      9
+    ],
+    "new": [
+      6,
+      8
+    ],
+    "reason": "Unique exact codepoint span; no semantic/text/label change."
+  },
+  {
+    "batch": "batch25_0037",
+    "id": "sp10k-02769",
+    "text": "后台数据的维护",
+    "old": [
+      7,
+      13
+    ],
+    "new": [
+      7,
+      14
+    ],
+    "reason": "Unique exact codepoint span; no semantic/text/label change."
+  },
+  {
+    "batch": "batch25_0041",
+    "id": "sp10k-02864",
+    "text": "弹唱",
+    "old": [
+      13,
+      15
+    ],
+    "new": [
+      14,
+      16
+    ],
+    "method": "explicit_model_position_review",
+    "reason": "原文“技能考核为弹唱和舞蹈”中的弹唱位于[14,16)。模型第三个跨度已正确标出后文“弹唱为指定曲目”的[20,22)，因此第一跨度应对应考核列表，不能再次选后文位置。由父模型读取整条原文明确定位，并非程序默认首次匹配。"
+  },
+  {
+    "batch": "batch25_0041",
+    "id": "sp10k-02864",
+    "text": "舞蹈",
+    "old": [
+      16,
+      18
+    ],
+    "new": [
+      17,
+      19
+    ],
+    "method": "explicit_model_position_review",
+    "reason": "原文考核列表“弹唱和舞蹈”的舞蹈位于[17,19)。模型第四个跨度已正确标出后文“舞蹈自备曲目”的[28,30)，第二跨度对应前面的考核列表。明确按原文和四个跨度次序定位，不采用首次匹配回退。"
+  },
+  {
+    "batch": "batch25_0053",
+    "id": "sp10k-03179",
+    "text": "大规模服务器的监控部署",
+    "old": [
+      2,
+      12
+    ],
+    "new": [
+      2,
+      13
+    ],
+    "reason": "Unique exact codepoint span; no semantic/text/label change."
+  },
+  {
+    "batch": "batch25_0064",
+    "id": "sp10k-03465",
+    "text": "对技术活动和技术说明进行指导和协调",
+    "old": [
+      49,
+      66
+    ],
+    "new": [
+      50,
+      67
+    ],
+    "reason": "Unique exact codepoint span; no semantic/text/label change."
+  },
+  {
+    "batch": "batch25_0066",
+    "id": "sp10k-03508",
+    "text": "Oracle",
+    "old": [
+      21,
+      27
+    ],
+    "new": [
+      22,
+      28
+    ],
+    "reason": "Unique exact codepoint span; no semantic/text/label change."
+  }
+]

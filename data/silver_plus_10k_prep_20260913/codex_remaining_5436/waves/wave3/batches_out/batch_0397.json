@@ -1,0 +1,294 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06461",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "业务经营分析",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 32,
+          "text": "战略规划材料、项目报告的统筹撰写与优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确要求执行的业务经营分析，以及对战略规划材料和项目报告进行统筹撰写与优化的职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06462",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "规范",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "独立提量",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 25,
+          "text": "基本深化设计能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取规范知识、独立提量职业动作及深化设计能力；熟悉、掌握、可以等要求触发词不纳入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06463",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 22,
+          "text": "大型商业综合体招商",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 43,
+          "text": "5万平方及以上商业项目招商",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历为完整资格名，商业综合体招商和商业项目招商为候选人需参与的明确职业活动；年限、参与触发词不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06464",
+      "spans": [
+        {
+          "start": 1,
+          "end": 12,
+          "text": "汽车电子产品的电子开发",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "模拟电路",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "数字电路",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "电路分析",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 37,
+          "text": "信号与系统",
+          "label": "K"
+        },
+        {
+          "start": 38,
+          "end": 44,
+          "text": "数字信号分析",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "电子开发是明确的职业活动；后续列举的电路、信号与系统及分析内容属于领域知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06465",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "团队协作精神",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "数据分析能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取沟通能力、团队协作精神等通用能力，以及明确的数据分析职业能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06466",
+      "spans": [
+        {
+          "start": 11,
+          "end": 14,
+          "text": "商水险",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "理赔指引",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "理赔服务流程",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "理赔服务标准",
+          "label": "K"
+        },
+        {
+          "start": 35,
+          "end": 43,
+          "text": "反馈工作中的问题",
+          "label": "T"
+        },
+        {
+          "start": 44,
+          "end": 52,
+          "text": "提出建设性的意见",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取保险理赔领域及其指引、流程、标准等知识要求，并标注问题反馈和意见提出等通用沟通能力；“贯彻落实”作为职责触发语不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06467",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "供应链融资业务逻辑",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "产品",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "营销推动能力",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 35,
+          "text": "市场敏锐度",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "供应链融资业务逻辑和产品属于业务领域知识；营销推动能力是明确的职业活动能力；市场敏锐度属于通用特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06468",
+      "spans": [
+        {
+          "start": 15,
+          "end": 19,
+          "text": "需求分析",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "架构设计",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "编码实现",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "调试优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求执行固件程序相关的需求分析、架构设计、编码实现和调试优化，均为可执行职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06469",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "公司内部的ESD稽核工作",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 26,
+          "text": "应对客户专业ESD审核",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 37,
+          "text": "第三方ESD外审",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确要求候选人执行的内部稽核、应对客户审核及第三方外审活动；“主导”不进入跨度，“需通过审核”为结果要求，不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06470",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "中专及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格名按 K 标注；相关专业优先为泛化专业要求，不单独标注。",
+      "issues": []
+    }
+  ]
+}

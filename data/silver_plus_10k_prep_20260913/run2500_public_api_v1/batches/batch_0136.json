@@ -1,0 +1,556 @@
+{
+  "attempt": 3,
+  "http_status": 200,
+  "elapsed_s": 53.376,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5167,
+    "completion_tokens": 1636,
+    "total_tokens": 6803,
+    "prompt_tokens_details": {
+      "cached_tokens": 4864,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 684
+    },
+    "input_tokens": 5167,
+    "output_tokens": 1636,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01353",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            19,
+            23
+          ],
+          "to": [
+            20,
+            24
+          ],
+          "text": "协调资源"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            23,
+            27
+          ],
+          "to": [
+            24,
+            28
+          ],
+          "text": "跟进处理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01354",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            16
+          ],
+          "to": [
+            10,
+            18
+          ],
+          "text": "全日制本科及以上"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01355",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            8
+          ],
+          "to": [
+            4,
+            10
+          ],
+          "text": "SCCM系统"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            8,
+            12
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "日常运维"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            13,
+            15
+          ],
+          "to": [
+            15,
+            17
+          ],
+          "text": "监控"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            21,
+            29
+          ],
+          "to": [
+            24,
+            32
+          ],
+          "text": "按照流程进行处理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01357",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            17
+          ],
+          "to": [
+            7,
+            15
+          ],
+          "text": "妇女儿童事业发展"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            18,
+            25
+          ],
+          "to": [
+            16,
+            23
+          ],
+          "text": "妇女/性别研究"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            29,
+            41
+          ],
+          "to": [
+            28,
+            39
+          ],
+          "text": "政策、法律的研究和制定"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            54,
+            74
+          ],
+          "to": [
+            53,
+            67
+          ],
+          "text": "起草的《山东省学前教育条例》"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            103,
+            129
+          ],
+          "to": [
+            101,
+            123
+          ],
+          "text": "《山东教育现代化2035》学前教育部分的起草"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01358",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            25,
+            29
+          ],
+          "to": [
+            29,
+            33
+          ],
+          "text": "平凉户籍"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            57,
+            62
+          ],
+          "text": "灵台县生源"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            64,
+            69
+          ],
+          "to": [
+            73,
+            78
+          ],
+          "text": "灵台县户籍"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01360",
+      "repairs": [
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            19,
+            22
+          ],
+          "to": [
+            18,
+            21
+          ],
+          "text": "植物学"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            23,
+            26
+          ],
+          "to": [
+            22,
+            25
+          ],
+          "text": "园艺学"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            30,
+            36
+          ],
+          "to": [
+            26,
+            34
+          ],
+          "text": "相关专业博士学位"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01351\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":6,\"end\":8,\"text\":\"网络\",\"label\":\"K\"},{\"start\":9,\"end\":13,\"text\":\"安全实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求计算机、网络相关知识及安全实施实践经验。\",\"issues\":[]},{\"id\":\"sp10k-01352\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"公告政策解释内容，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01353\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"接听电话\",\"label\":\"S\"},{\"start\":8,\"end\":18,\"text\":\"电话内容进行详细记录\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"协调资源\",\"label\":\"T\"},{\"start\":23,\"end\":27,\"text\":\"跟进处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取接听、记录、资源协调及后续处理等岗位活动。\",\"issues\":[]},{\"id\":\"sp10k-01354\",\"spans\":[{\"start\":8,\"end\":16,\"text\":\"全日制本科及以上\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"年龄限制不标；全日制本科及以上为学历资格。\",\"issues\":[]},{\"id\":\"sp10k-01355\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"SCCM系统\",\"label\":\"S\"},{\"start\":8,\"end\":12,\"text\":\"日常运维\",\"label\":\"S\"},{\"start\":13,\"end\":15,\"text\":\"监控\",\"label\":\"S\"},{\"start\":21,\"end\":29,\"text\":\"按照流程进行处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取系统运维、监控及问题处理等职业活动和岗位工具。\",\"issues\":[]},{\"id\":\"sp10k-01356\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"报名材料打印、张贴照片等应聘行政流程，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01357\",\"spans\":[{\"start\":9,\"end\":17,\"text\":\"妇女儿童事业发展\",\"label\":\"K\"},{\"start\":18,\"end\":25,\"text\":\"妇女/性别研究\",\"label\":\"S\"},{\"start\":29,\"end\":41,\"text\":\"政策、法律的研究和制定\",\"label\":\"S\"},{\"start\":54,\"end\":74,\"text\":\"起草的《山东省学前教育条例》\",\"label\":\"S\"},{\"start\":103,\"end\":129,\"text\":\"《山东教育现代化2035》学前教育部分的起草\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确承担的事业领域知识及研究、制定、起草等职业活动；荣誉宣传性内容未单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01358\",\"spans\":[{\"start\":25,\"end\":29,\"text\":\"平凉户籍\",\"label\":\"K\"},{\"start\":47,\"end\":51,\"text\":\"灵台县生源\",\"label\":\"K\"},{\"start\":64,\"end\":69,\"text\":\"灵台县户籍\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取岗位要求的户籍或生源资格。\",\"issues\":[]},{\"id\":\"sp10k-01359\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明资格条件咨询方式，不直接提出候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01360\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"分子生物学\",\"label\":\"K\"},{\"start\":8,\"end\":11,\"text\":\"遗传学\",\"label\":\"K\"},{\"start\":12,\"end\":17,\"text\":\"细胞生物学\",\"label\":\"K\"},{\"start\":19,\"end\":22,\"text\":\"植物学\",\"label\":\"K\"},{\"start\":23,\"end\":26,\"text\":\"园艺学\",\"label\":\"K\"},{\"start\":30,\"end\":36,\"text\":\"相关专业博士学位\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取相关专业领域知识及博士学位资格；年限和年龄限制不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01351",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "text": "网络",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "安全实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求计算机、网络相关知识及安全实施实践经验。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01352",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "公告政策解释内容，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01353",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "接听电话",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 18,
+            "text": "电话内容进行详细记录",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "协调资源",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "跟进处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取接听、记录、资源协调及后续处理等岗位活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01354",
+        "spans": [
+          {
+            "start": 10,
+            "end": 18,
+            "text": "全日制本科及以上",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "年龄限制不标；全日制本科及以上为学历资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01355",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "SCCM系统",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "日常运维",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "监控",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "text": "按照流程进行处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取系统运维、监控及问题处理等职业活动和岗位工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01356",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "报名材料打印、张贴照片等应聘行政流程，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01357",
+        "spans": [
+          {
+            "start": 7,
+            "end": 15,
+            "text": "妇女儿童事业发展",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "text": "妇女/性别研究",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 39,
+            "text": "政策、法律的研究和制定",
+            "label": "S"
+          },
+          {
+            "start": 53,
+            "end": 67,
+            "text": "起草的《山东省学前教育条例》",
+            "label": "S"
+          },
+          {
+            "start": 101,
+            "end": 123,
+            "text": "《山东教育现代化2035》学前教育部分的起草",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确承担的事业领域知识及研究、制定、起草等职业活动；荣誉宣传性内容未单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01358",
+        "spans": [
+          {
+            "start": 29,
+            "end": 33,
+            "text": "平凉户籍",
+            "label": "K"
+          },
+          {
+            "start": 57,
+            "end": 62,
+            "text": "灵台县生源",
+            "label": "K"
+          },
+          {
+            "start": 73,
+            "end": 78,
+            "text": "灵台县户籍",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取岗位要求的户籍或生源资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01359",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明资格条件咨询方式，不直接提出候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01360",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "分子生物学",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "text": "遗传学",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "text": "细胞生物学",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 21,
+            "text": "植物学",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "text": "园艺学",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 34,
+            "text": "相关专业博士学位",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取相关专业领域知识及博士学位资格；年限和年龄限制不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 136,
+  "ids": [
+    "sp10k-01351",
+    "sp10k-01352",
+    "sp10k-01353",
+    "sp10k-01354",
+    "sp10k-01355",
+    "sp10k-01356",
+    "sp10k-01357",
+    "sp10k-01358",
+    "sp10k-01359",
+    "sp10k-01360"
+  ],
+  "at": "2026-09-13T15:51:54.359916+00:00"
+}

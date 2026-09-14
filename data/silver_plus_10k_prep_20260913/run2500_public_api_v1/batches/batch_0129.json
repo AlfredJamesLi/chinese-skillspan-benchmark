@@ -1,0 +1,734 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 51.247,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5097,
+    "completion_tokens": 1552,
+    "total_tokens": 6649,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5097,
+    "output_tokens": 1552,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01281",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            1,
+            25
+          ],
+          "to": [
+            0,
+            21
+          ],
+          "text": "在军队服役5年（含）以上高校毕业生退役军人"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01282",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            16,
+            20
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "功能设计"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            21,
+            23
+          ],
+          "to": [
+            15,
+            17
+          ],
+          "text": "开发"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            24,
+            26
+          ],
+          "to": [
+            18,
+            20
+          ],
+          "text": "实现"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01283",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            9
+          ],
+          "to": [
+            2,
+            7
+          ],
+          "text": "与客户沟通"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            21
+          ],
+          "to": [
+            10,
+            18
+          ],
+          "text": "突发情况应急处理"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            26
+          ],
+          "to": [
+            19,
+            23
+          ],
+          "text": "及时响应"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01284",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            16
+          ],
+          "to": [
+            8,
+            14
+          ],
+          "text": "教师资格证书"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            23
+          ],
+          "to": [
+            15,
+            20
+          ],
+          "text": "普通话证书"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01285",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            13
+          ],
+          "to": [
+            5,
+            11
+          ],
+          "text": "文档编写能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01286",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            14
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "供应商基础信息收集"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            21
+          ],
+          "to": [
+            12,
+            17
+          ],
+          "text": "供应商调查"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            23,
+            29
+          ],
+          "to": [
+            22,
+            27
+          ],
+          "text": "供应商管理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            30,
+            34
+          ],
+          "to": [
+            28,
+            30
+          ],
+          "text": "维护"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            39,
+            45
+          ],
+          "to": [
+            33,
+            40
+          ],
+          "text": "供应商渠道拓展"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01287",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "机房的运营监控"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            13
+          ],
+          "to": [
+            10,
+            12
+          ],
+          "text": "维护"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            14,
+            20
+          ],
+          "to": [
+            13,
+            17
+          ],
+          "text": "处理故障"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            21,
+            29
+          ],
+          "to": [
+            18,
+            26
+          ],
+          "text": "维护网络系统安全"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            30,
+            38
+          ],
+          "to": [
+            28,
+            34
+          ],
+          "text": "硬件维护更新"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01288",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            12
+          ],
+          "to": [
+            6,
+            12
+          ],
+          "text": "售后技术服务"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            24,
+            43
+          ],
+          "to": [
+            20,
+            36
+          ],
+          "text": "解决客户在产品应用上的疑惑和问题"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01290",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            12,
+            18
+          ],
+          "to": [
+            2,
+            8
+          ],
+          "text": "生产环境部署"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            21
+          ],
+          "to": [
+            9,
+            11
+          ],
+          "text": "升级"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            26
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "服务调试"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            27,
+            31
+          ],
+          "to": [
+            17,
+            21
+          ],
+          "text": "数据迁移"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            32,
+            36
+          ],
+          "to": [
+            22,
+            26
+          ],
+          "text": "数据备份"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            37,
+            41
+          ],
+          "to": [
+            27,
+            31
+          ],
+          "text": "环境迁移"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            50,
+            58
+          ],
+          "to": [
+            37,
+            47
+          ],
+          "text": "技术文档的编写和整理"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01281\",\"spans\":[{\"start\":1,\"end\":25,\"text\":\"在军队服役5年（含）以上高校毕业生退役军人\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注岗位资格条件中的退役军人及服役年限要求；证件提交和报考流程不标。\",\"issues\":[]},{\"id\":\"sp10k-01282\",\"spans\":[{\"start\":16,\"end\":20,\"text\":\"功能设计\",\"label\":\"S\"},{\"start\":21,\"end\":23,\"text\":\"开发\",\"label\":\"S\"},{\"start\":24,\"end\":26,\"text\":\"实现\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注候选人负责执行的功能设计、开发和实现活动。\",\"issues\":[]},{\"id\":\"sp10k-01283\",\"spans\":[{\"start\":4,\"end\":9,\"text\":\"与客户沟通\",\"label\":\"T\"},{\"start\":13,\"end\":21,\"text\":\"突发情况应急处理\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"及时响应\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"客户沟通属于通用沟通能力；应急处理和响应属于可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01284\",\"spans\":[{\"start\":9,\"end\":16,\"text\":\"教师资格证书\",\"label\":\"K\"},{\"start\":17,\"end\":23,\"text\":\"普通话证书\",\"label\":\"L\"}],\"status\":\"candidate_complete\",\"note\":\"教师资格证书为非语言资格，普通话证书为语言资格。\",\"issues\":[]},{\"id\":\"sp10k-01285\",\"spans\":[{\"start\":6,\"end\":13,\"text\":\"文档编写能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"文档编写是候选人需执行的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01286\",\"spans\":[{\"start\":4,\"end\":14,\"text\":\"供应商基础信息收集\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"供应商调查\",\"label\":\"S\"},{\"start\":23,\"end\":29,\"text\":\"供应商管理\",\"label\":\"S\"},{\"start\":30,\"end\":34,\"text\":\"维护\",\"label\":\"S\"},{\"start\":39,\"end\":45,\"text\":\"供应商渠道拓展\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"分别标注供应商信息收集、调查、管理、维护和渠道拓展等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01287\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"机房的运营监控\",\"label\":\"S\"},{\"start\":11,\"end\":13,\"text\":\"维护\",\"label\":\"S\"},{\"start\":14,\"end\":20,\"text\":\"处理故障\",\"label\":\"S\"},{\"start\":21,\"end\":29,\"text\":\"维护网络系统安全\",\"label\":\"S\"},{\"start\":30,\"end\":38,\"text\":\"硬件维护更新\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注机房、网络安全和硬件相关的运营监控、维护、故障处理及更新活动。\",\"issues\":[]},{\"id\":\"sp10k-01288\",\"spans\":[{\"start\":4,\"end\":12,\"text\":\"售后技术服务\",\"label\":\"S\"},{\"start\":24,\"end\":43,\"text\":\"解决客户在产品应用上的疑惑和问题\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"售后技术服务及解决产品应用问题均为可执行职业活动；远程或现场为方式限定。\",\"issues\":[]},{\"id\":\"sp10k-01289\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容属于面试设备及监考安排，不是候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01290\",\"spans\":[{\"start\":12,\"end\":18,\"text\":\"生产环境部署\",\"label\":\"S\"},{\"start\":19,\"end\":21,\"text\":\"升级\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"服务调试\",\"label\":\"S\"},{\"start\":27,\"end\":31,\"text\":\"数据迁移\",\"label\":\"S\"},{\"start\":32,\"end\":36,\"text\":\"数据备份\",\"label\":\"S\"},{\"start\":37,\"end\":41,\"text\":\"环境迁移\",\"label\":\"S\"},{\"start\":50,\"end\":58,\"text\":\"技术文档的编写和整理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注生产环境部署、升级、调试、数据及环境迁移备份，以及技术文档编写整理等职业活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01281",
+        "spans": [
+          {
+            "start": 0,
+            "end": 21,
+            "text": "在军队服役5年（含）以上高校毕业生退役军人",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注岗位资格条件中的退役军人及服役年限要求；证件提交和报考流程不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01282",
+        "spans": [
+          {
+            "start": 10,
+            "end": 14,
+            "text": "功能设计",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "开发",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 20,
+            "text": "实现",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注候选人负责执行的功能设计、开发和实现活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01283",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "与客户沟通",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "text": "突发情况应急处理",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "及时响应",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "客户沟通属于通用沟通能力；应急处理和响应属于可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01284",
+        "spans": [
+          {
+            "start": 8,
+            "end": 14,
+            "text": "教师资格证书",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "text": "普通话证书",
+            "label": "L"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "教师资格证书为非语言资格，普通话证书为语言资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01285",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "文档编写能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文档编写是候选人需执行的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01286",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "供应商基础信息收集",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "text": "供应商调查",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "text": "供应商管理",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 30,
+            "text": "维护",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "text": "供应商渠道拓展",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别标注供应商信息收集、调查、管理、维护和渠道拓展等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01287",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "机房的运营监控",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "维护",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "处理故障",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "text": "维护网络系统安全",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "text": "硬件维护更新",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注机房、网络安全和硬件相关的运营监控、维护、故障处理及更新活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01288",
+        "spans": [
+          {
+            "start": 6,
+            "end": 12,
+            "text": "售后技术服务",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 36,
+            "text": "解决客户在产品应用上的疑惑和问题",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "售后技术服务及解决产品应用问题均为可执行职业活动；远程或现场为方式限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01289",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容属于面试设备及监考安排，不是候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01290",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "生产环境部署",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "升级",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "服务调试",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "数据迁移",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "数据备份",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "环境迁移",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 47,
+            "text": "技术文档的编写和整理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注生产环境部署、升级、调试、数据及环境迁移备份，以及技术文档编写整理等职业活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 129,
+  "ids": [
+    "sp10k-01281",
+    "sp10k-01282",
+    "sp10k-01283",
+    "sp10k-01284",
+    "sp10k-01285",
+    "sp10k-01286",
+    "sp10k-01287",
+    "sp10k-01288",
+    "sp10k-01289",
+    "sp10k-01290"
+  ],
+  "at": "2026-09-13T15:42:07.333371+00:00"
+}

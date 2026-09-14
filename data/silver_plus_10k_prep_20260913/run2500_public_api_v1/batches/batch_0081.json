@@ -1,0 +1,322 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 65.176,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5074,
+    "completion_tokens": 1981,
+    "total_tokens": 7055,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 920
+    },
+    "input_tokens": 5074,
+    "output_tokens": 1981,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00801\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"客户沟通能力\",\"label\":\"T\"},{\"start\":15,\"end\":21,\"text\":\"客户服务礼仪\",\"label\":\"K\"},{\"start\":25,\"end\":28,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":29,\"end\":31,\"text\":\"软件\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"沟通能力为通用能力，服务礼仪为规范知识；明确行业工作经历提取领域核心名，不保留工作经历修饰。\",\"issues\":[]},{\"id\":\"sp10k-00802\",\"spans\":[{\"start\":8,\"end\":28,\"text\":\"防火墙、路由器、交换机网络设备的调试安装\",\"label\":\"S\"},{\"start\":31,\"end\":37,\"text\":\"华为HCIE\",\"label\":\"K\"},{\"start\":38,\"end\":46,\"text\":\"思科CCIE证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"设备共享调试安装动作，保留完整活动跨度；厂商认证为非语言资格。\",\"issues\":[]},{\"id\":\"sp10k-00803\",\"spans\":[{\"start\":5,\"end\":10,\"text\":\"数据敏感度\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"细心严谨\",\"label\":\"T\"},{\"start\":24,\"end\":30,\"text\":\"捕捉数据异常\",\"label\":\"S\"},{\"start\":35,\"end\":40,\"text\":\"Excel\",\"label\":\"S\"},{\"start\":41,\"end\":48,\"text\":\"VLOOKUP\",\"label\":\"S\"},{\"start\":49,\"end\":54,\"text\":\"数据透视表\",\"label\":\"S\"},{\"start\":55,\"end\":59,\"text\":\"函数公式\",\"label\":\"S\"},{\"start\":63,\"end\":70,\"text\":\"数据统计与分析\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"特质与具体数据处理活动分别标注；Excel及括号内功能处于明确使用语境，标S。\",\"issues\":[]},{\"id\":\"sp10k-00804\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"英语4级或以上\",\"label\":\"L\"},{\"start\":13,\"end\":25,\"text\":\"中英文文字和口头表达能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"语言等级标L；文字和口头表达共享能力中心及语言限定，整体标T。\",\"issues\":[]},{\"id\":\"sp10k-00805\",\"spans\":[{\"start\":0,\"end\":18,\"text\":\"新产品和彩膜相关问题原理性解析和改善\",\"label\":\"S\"},{\"start\":21,\"end\":28,\"text\":\"DOE实验验证\",\"label\":\"S\"},{\"start\":29,\"end\":33,\"text\":\"报告总结\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"技术问题解析和改善保留共享对象；实验验证与报告总结为独立职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00806\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明招聘简章的解释责任机构，不含候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00807\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"临床医学\",\"label\":\"K\"},{\"start\":10,\"end\":13,\"text\":\"外科学\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求的专业名称分别标K。\",\"issues\":[]},{\"id\":\"sp10k-00808\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"执行能力\",\"label\":\"T\"},{\"start\":10,\"end\":16,\"text\":\"综合协调能力\",\"label\":\"T\"},{\"start\":17,\"end\":23,\"text\":\"团队协作能力\",\"label\":\"T\"},{\"start\":24,\"end\":28,\"text\":\"大局意识\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"各项均为跨行业通用能力或意识，去除程度及要求触发词。\",\"issues\":[]},{\"id\":\"sp10k-00809\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报考材料真实性及违规处理规定，属于应聘行政流程。\",\"issues\":[]},{\"id\":\"sp10k-00810\",\"spans\":[{\"start\":5,\"end\":13,\"text\":\"服务器的运维能力\",\"label\":\"S\"},{\"start\":20,\"end\":33,\"text\":\"WindowsServer\",\"label\":\"S\"},{\"start\":34,\"end\":39,\"text\":\"Linux\",\"label\":\"S\"},{\"start\":40,\"end\":44,\"text\":\"Unix\",\"label\":\"S\"},{\"start\":49,\"end\":62,\"text\":\"服务器操作系统的配置、管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"运维能力绑定服务器领域；操作系统处于明确配置管理语境，工具及职业活动标S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00801",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "客户沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "客户服务礼仪",
+            "label": "K"
+          },
+          {
+            "start": 25,
+            "end": 28,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 31,
+            "text": "软件",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通能力为通用能力，服务礼仪为规范知识；明确行业工作经历提取领域核心名，不保留工作经历修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00802",
+        "spans": [
+          {
+            "start": 8,
+            "end": 28,
+            "text": "防火墙、路由器、交换机网络设备的调试安装",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "text": "华为HCIE",
+            "label": "K"
+          },
+          {
+            "start": 38,
+            "end": 46,
+            "text": "思科CCIE证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设备共享调试安装动作，保留完整活动跨度；厂商认证为非语言资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00803",
+        "spans": [
+          {
+            "start": 5,
+            "end": 10,
+            "text": "数据敏感度",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "细心严谨",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "捕捉数据异常",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 40,
+            "text": "Excel",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 48,
+            "text": "VLOOKUP",
+            "label": "S"
+          },
+          {
+            "start": 49,
+            "end": 54,
+            "text": "数据透视表",
+            "label": "S"
+          },
+          {
+            "start": 55,
+            "end": 59,
+            "text": "函数公式",
+            "label": "S"
+          },
+          {
+            "start": 63,
+            "end": 70,
+            "text": "数据统计与分析",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "特质与具体数据处理活动分别标注；Excel及括号内功能处于明确使用语境，标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00804",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "英语4级或以上",
+            "label": "L"
+          },
+          {
+            "start": 13,
+            "end": 25,
+            "text": "中英文文字和口头表达能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "语言等级标L；文字和口头表达共享能力中心及语言限定，整体标T。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00805",
+        "spans": [
+          {
+            "start": 0,
+            "end": 18,
+            "text": "新产品和彩膜相关问题原理性解析和改善",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 28,
+            "text": "DOE实验验证",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "报告总结",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "技术问题解析和改善保留共享对象；实验验证与报告总结为独立职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00806",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明招聘简章的解释责任机构，不含候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00807",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "临床医学",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "text": "外科学",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求的专业名称分别标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00808",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "执行能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "综合协调能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "团队协作能力",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "大局意识",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "各项均为跨行业通用能力或意识，去除程度及要求触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00809",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报考材料真实性及违规处理规定，属于应聘行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00810",
+        "spans": [
+          {
+            "start": 5,
+            "end": 13,
+            "text": "服务器的运维能力",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 33,
+            "text": "WindowsServer",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 39,
+            "text": "Linux",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 44,
+            "text": "Unix",
+            "label": "S"
+          },
+          {
+            "start": 49,
+            "end": 62,
+            "text": "服务器操作系统的配置、管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "运维能力绑定服务器领域；操作系统处于明确配置管理语境，工具及职业活动标S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 81,
+  "ids": [
+    "sp10k-00801",
+    "sp10k-00802",
+    "sp10k-00803",
+    "sp10k-00804",
+    "sp10k-00805",
+    "sp10k-00806",
+    "sp10k-00807",
+    "sp10k-00808",
+    "sp10k-00809",
+    "sp10k-00810"
+  ],
+  "at": "2026-09-13T14:58:23.944348+00:00"
+}

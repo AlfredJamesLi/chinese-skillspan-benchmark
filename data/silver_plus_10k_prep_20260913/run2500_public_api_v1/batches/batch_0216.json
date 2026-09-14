@@ -1,0 +1,282 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 44.502,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4973,
+    "completion_tokens": 1404,
+    "total_tokens": 6377,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 4973,
+    "output_tokens": 1404,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-05965",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            11
+          ],
+          "to": [
+            6,
+            10
+          ],
+          "text": "项目营销"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05956\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"财务软件\",\"label\":\"S\"},{\"start\":11,\"end\":15,\"text\":\"数据敏感\",\"label\":\"T\"},{\"start\":20,\"end\":24,\"text\":\"数据分析\",\"label\":\"S\"},{\"start\":25,\"end\":31,\"text\":\"逻辑思维能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"财务软件为岗位使用工具；数据分析为专业技能，数据敏感及逻辑思维能力为通用特质与能力。\",\"issues\":[]},{\"id\":\"sp10k-05957\",\"spans\":[{\"start\":3,\"end\":11,\"text\":\"西北地区市场情况\",\"label\":\"K\"},{\"start\":16,\"end\":19,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":20,\"end\":24,\"text\":\"抗压能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"地区市场情况为知识要求；责任心和抗压能力为通用特质。\",\"issues\":[]},{\"id\":\"sp10k-05958\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为岗位职责标题，未提供具体能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-05959\",\"spans\":[{\"start\":6,\"end\":14,\"text\":\"电气工程及自动化\",\"label\":\"K\"},{\"start\":15,\"end\":18,\"text\":\"自动化\",\"label\":\"K\"},{\"start\":19,\"end\":27,\"text\":\"新能源科学与工程\",\"label\":\"K\"},{\"start\":28,\"end\":37,\"text\":\"机械设计及其自动化\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取明确要求的专业名称；泛化相关专业及整理说明不标。\",\"issues\":[]},{\"id\":\"sp10k-05960\",\"spans\":[{\"start\":1,\"end\":8,\"text\":\"污水处理资格证\",\"label\":\"K\"},{\"start\":9,\"end\":15,\"text\":\"危化品操作证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"两项均为非语言职业资格，去除持证触发词及优先修饰。\",\"issues\":[]},{\"id\":\"sp10k-05961\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"管理监测用仪器\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取仪器管理职责；保证仪器正常使用为结果承诺，不另标。\",\"issues\":[]},{\"id\":\"sp10k-05962\",\"spans\":[{\"start\":3,\"end\":9,\"text\":\"机械设计原理\",\"label\":\"K\"},{\"start\":15,\"end\":20,\"text\":\"空间想象力\",\"label\":\"T\"},{\"start\":21,\"end\":25,\"text\":\"绘图能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"机械设计原理为知识，空间想象力为通用能力，绘图能力为领域绑定技能。\",\"issues\":[]},{\"id\":\"sp10k-05963\",\"spans\":[{\"start\":2,\"end\":18,\"text\":\"标准系统设备的委外维保内容与要求\",\"label\":\"S\"},{\"start\":19,\"end\":33,\"text\":\"监督与跟进维保单位的维保工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取委外维保管理及监督跟进职责；后项保留共享的维保工作对象。\",\"issues\":[]},{\"id\":\"sp10k-05964\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"西门子plc\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"按编程工具技能语境抽取，保留原文大小写，不另标概括类别词。\",\"issues\":[]},{\"id\":\"sp10k-05965\",\"spans\":[{\"start\":7,\"end\":11,\"text\":\"项目营销\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"项目营销为完整职业活动，去除年限及经验后缀。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05956",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "财务软件",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "数据敏感",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "数据分析",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "text": "逻辑思维能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "财务软件为岗位使用工具；数据分析为专业技能，数据敏感及逻辑思维能力为通用特质与能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05957",
+        "spans": [
+          {
+            "start": 3,
+            "end": 11,
+            "text": "西北地区市场情况",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "抗压能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "地区市场情况为知识要求；责任心和抗压能力为通用特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05958",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为岗位职责标题，未提供具体能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05959",
+        "spans": [
+          {
+            "start": 6,
+            "end": 14,
+            "text": "电气工程及自动化",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 18,
+            "text": "自动化",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 27,
+            "text": "新能源科学与工程",
+            "label": "K"
+          },
+          {
+            "start": 28,
+            "end": 37,
+            "text": "机械设计及其自动化",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取明确要求的专业名称；泛化相关专业及整理说明不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05960",
+        "spans": [
+          {
+            "start": 1,
+            "end": 8,
+            "text": "污水处理资格证",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "危化品操作证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项均为非语言职业资格，去除持证触发词及优先修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05961",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "管理监测用仪器",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取仪器管理职责；保证仪器正常使用为结果承诺，不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05962",
+        "spans": [
+          {
+            "start": 3,
+            "end": 9,
+            "text": "机械设计原理",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "text": "空间想象力",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "绘图能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "机械设计原理为知识，空间想象力为通用能力，绘图能力为领域绑定技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05963",
+        "spans": [
+          {
+            "start": 2,
+            "end": 18,
+            "text": "标准系统设备的委外维保内容与要求",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 33,
+            "text": "监督与跟进维保单位的维保工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取委外维保管理及监督跟进职责；后项保留共享的维保工作对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05964",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "西门子plc",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "按编程工具技能语境抽取，保留原文大小写，不另标概括类别词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05965",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "项目营销",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "项目营销为完整职业活动，去除年限及经验后缀。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 216,
+  "ids": [
+    "sp10k-05956",
+    "sp10k-05957",
+    "sp10k-05958",
+    "sp10k-05959",
+    "sp10k-05960",
+    "sp10k-05961",
+    "sp10k-05962",
+    "sp10k-05963",
+    "sp10k-05964",
+    "sp10k-05965"
+  ],
+  "at": "2026-09-13T17:14:09.119627+00:00"
+}

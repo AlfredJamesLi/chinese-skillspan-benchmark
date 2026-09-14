@@ -1,0 +1,215 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07361",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "测试机台",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 19,
+          "text": "机台的功能",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "测试机台为岗位使用工具；机台功能为明确要求理解的知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07362",
+      "spans": [
+        {
+          "start": 13,
+          "end": 15,
+          "text": "诚信",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "友善",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "光明",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "进取",
+          "label": "T"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "text": "组织协调能力",
+          "label": "T"
+        },
+        {
+          "start": 37,
+          "end": 43,
+          "text": "创新思维能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确列出的个人特质和通用能力；认同公司文化及价值观不作为独立能力提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07363",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为项目现场工作条件和出差安排的接受要求，不含独立的职业技能、知识或资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07364",
+      "spans": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "本科及以上",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "text": "机械",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "text": "机电一体化",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "自动化",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历及具体专业分别标K，保留原文学历表述，不补写“学历”。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07365",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "思维敏捷",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "逻辑清晰",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "沟通表达能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用思维特质或表达能力，排除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07366",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "模具报价评估",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确的职业评估活动，去除职责触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07367",
+      "spans": [
+        {
+          "start": 2,
+          "end": 24,
+          "text": "编制作业指导书、操作规程、试验大纲等技术文件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列文件共享编制动作，保留完整动作及其对象，避免拆成文件名称而丢失执行含义。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07368",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "ASPICEV模型开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发为明确职业活动，且有局部实践经历支持；保留原文拼写，泛化项目实践经历不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07369",
+      "spans": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "团队培训",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "绩效考核",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "团队培训和绩效考核为可独立执行的职业职能，分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07370",
+      "spans": [
+        {
+          "start": 5,
+          "end": 10,
+          "text": "结构化思维",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "逻辑分析能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "无具体技术或业务对象限定，均为通用思维能力。",
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02885",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "JAVA",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "C++",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "Python",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "text": "PHP",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "JS",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 32,
+          "text": "前后端技术",
+          "label": "K"
+        },
+        {
+          "start": 35,
+          "end": 40,
+          "text": "服务器运维",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "text": "网络安全技术",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "编程工具与运维活动标S；概括性技术知识标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02886",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "开考比例调整规则，不含具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02887",
+      "spans": [
+        {
+          "start": 0,
+          "end": 8,
+          "text": "影像医学与核医学",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "医学影像技术",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整专业名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02888",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考试成绩排序与入围规则。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02889",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考身份限制，不含具体能力知识或学历资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02890",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "经历年限计算截止时间，泛化经历不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02891",
+      "spans": [
+        {
+          "start": 1,
+          "end": 6,
+          "text": "虚拟化技术",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 19,
+          "text": "vShpere",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "虚拟化领域知识标K，岗位运维平台名标S并保留原拼写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02892",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅工作地点及岗位职责标题，无具体职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02893",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "认真",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "负责",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "细致",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "吃苦耐劳精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工作态度与通用特质分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02894",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "医院现有人才与团队介绍，不是候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02895",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名履历填写说明，其中学历词不构成资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02896",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "统招本科",
+          "label": "K"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "text": "财税",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "会计",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "金融",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "市场营销",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "广告",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "新闻传播",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "公共关系",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历资格与并列专业名称标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02897",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "组建公司信息系统平台",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体职业活动去除经验修饰后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02898",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告解释权说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02899",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘考试机构的材料归档安排，非候选人职责要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02900",
+      "spans": [
+        {
+          "start": 8,
+          "end": 17,
+          "text": "IT设备管理及维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备管理与维护共享必要对象，保留连续完整活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02901",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "面试形式说明，未列出具体技能要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02902",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格初审责任单位说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02903",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考专业名称一致性要求，未给出具体专业或资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02904",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "积极主动",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "耐心",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "细致",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "吃苦耐劳",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "适应能力",
+          "label": "T"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "text": "抗压能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "独立通用能力与特质分别标T，去除要求和程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02905",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "运维服务",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维服务为完整职业活动，去除工作经验及优先修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02906",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "性能分析",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "运维",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "text": "Linux",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "text": "MySQL",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 46,
+          "text": "找到性能瓶颈及缺陷",
+          "label": "S"
+        },
+        {
+          "start": 47,
+          "end": 53,
+          "text": "提出优化方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体运维活动、实际技术工具及承接服务器性能问题的分析优化职责标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02907",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "大专以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "广告学",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "市场营销",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "市场策划",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历与专业标K，具体策划活动去除年限和经验修饰后标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02908",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "专业考试收费说明，不是候选人知识或专业要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02909",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "系统开发",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "大专以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统开发活动标S，完整学历资格标K；年限和经验修饰不标。",
+      "issues": []
+    }
+  ]
+}

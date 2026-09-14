@@ -1,0 +1,613 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02469",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明面试形式和考查流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02470",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "大专以上学历",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "text": "内部信息化维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业、完整学历资格和具体维护活动，去除经验后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02471",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "MAWMS运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统运维为明确职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02472",
+      "spans": [
+        {
+          "start": 2,
+          "end": 27,
+          "text": "LINUX、WindowsServer等系统的操作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留并列系统与共享操作中心，整体为系统操作技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02473",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "OA、HR系统实施、推广",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 22,
+          "text": "权限及用户分配",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 35,
+          "text": "运维及日常操作的技术支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分独立职责，保留各项必要的共享对象及技术支持中心。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02474",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "信息化管理维护",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "OA系统",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "text": "ERP系统",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "邮件系统",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "虚拟主机",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "域名管理",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "text": "ICP备案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "管理维护职责中的现用系统及具体管理、备案活动标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02475",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "施工图纸",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 13,
+          "text": "现场施工情况",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "设计要求",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "质量要求",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "具体实施方法",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 49,
+          "text": "监督班组严格按图施工",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "图纸、现场情况和要求为领域知识；具体施工实施方法及施工监督为职业技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02476",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "nginx",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 13,
+          "text": "mysql",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 19,
+          "text": "redis",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "docker",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 32,
+          "text": "kafka",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 35,
+          "text": "mq",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 47,
+          "text": "springcloud",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 52,
+          "text": "集群部署",
+          "label": "S"
+        },
+        {
+          "start": 53,
+          "end": 55,
+          "text": "调优",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "部署调优语境明确工具实际运用，工具与可独立理解的活动分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02477",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "IT类合同档案整理",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "text": "跟进合同付款进度",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "合同档案整理与付款进度跟进为独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02478",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Oracle数据库",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "text": "Weblogic",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "安装部署",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "性能调优",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工具受安装部署及调优实践语境限定，分别抽取工具和活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02479",
+      "spans": [
+        {
+          "start": 4,
+          "end": 12,
+          "text": "平台的发布和配置",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 22,
+          "text": "监测平台组件和资源",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 31,
+          "text": "平台生命周期管理",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "平台定期升级",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 43,
+          "text": "补丁",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 48,
+          "text": "紧急修复",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分平台运维职责；补丁由升级、修复并列语境限定为维护活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02480",
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "团队意识",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "大局意识",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "勤奋",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "text": "敬业",
+          "label": "T"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "抗压能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取通用意识、特质与抗压能力，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02482",
+      "spans": [
+        {
+          "start": 9,
+          "end": 13,
+          "text": "专业技能",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "心理素质",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位专业技能标S，心理素质标T；身体条件不在范围内。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02483",
+      "spans": [
+        {
+          "start": 0,
+          "end": 12,
+          "text": "统招全日制本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格；泛化工作经验及年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02484",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "日志技术",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "日志技术的知识或实践属性未明；Log缺少足够上下文，暂不进入主层。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "日志技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅有熟悉要求，无法区分日志知识体系与实际日志处理技术；S为待裁决占位。"
+        },
+        {
+          "kind": "scope",
+          "text": "Log",
+          "alternatives": [
+            "作为具体工具或技术提及纳入",
+            "作为截断且无法识别的示例不纳入"
+          ],
+          "reason": "示例止于Log，无法确认是否为完整工具名或有效技术提及，需要完整上下文。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02485",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅涉及放弃资格及递补程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02486",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "网络平台框架的布局和设置",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "布局和设置共享网络平台框架对象，保留完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02487",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "终端设备维修、保养",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "耗材更换",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "维修和保养保留共享设备对象，耗材更换独立抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02488",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明面试方式及泛化考查目标，未列出具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02489",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅有招聘期限、职位名称、部门和栏目标题。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02490",
+      "spans": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "工作执行力",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "快速学习能力",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "理解能力",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "解决问题能力",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 40,
+          "text": "积极的工作态度",
+          "label": "T"
+        },
+        {
+          "start": 44,
+          "end": 47,
+          "text": "责任心",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用能力与工作特质；解决问题未限定具体技术或业务对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02491",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "网络基础",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络基础属于领域基础知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02493",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅有发布单位、日期及招聘附件目录。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02494",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "大专（含）以上学历",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "行政管理",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "交通运输",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格，分别抽取专业名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02495",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为应聘报名表填写要求，属于招聘行政流程。",
+      "issues": []
+    }
+  ]
+}

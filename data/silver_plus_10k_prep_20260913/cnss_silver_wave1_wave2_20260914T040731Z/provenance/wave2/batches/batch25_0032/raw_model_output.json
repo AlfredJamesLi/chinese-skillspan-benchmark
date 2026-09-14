@@ -1,0 +1,554 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04508",
+      "spans": [
+        {
+          "start": 7,
+          "end": 13,
+          "text": "大专以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注学历资格；年龄和外貌不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04509",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "关注优秀竞品的动向",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "收集竞品情报",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 38,
+          "text": "制定更好的规划和调整方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取竞品跟踪、情报收集和方案制定；业绩提升属于结果。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04510",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "机电设备管理",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "管理能力",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "组织协调能力",
+          "label": "T"
+        },
+        {
+          "start": 40,
+          "end": 63,
+          "text": "参加相关行业方面的交流、互联网、新科技产品交流",
+          "label": "T"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "设备管理为职业活动，管理协调与交流为通用能力；资源条件范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "社会资源丰富",
+          "alternatives": [
+            "不标：既有资源条件",
+            "纳入：人际资源相关能力要求"
+          ],
+          "reason": "仅说明资源存量，未明确是否要求资源开发或维护能力。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04511",
+      "spans": [
+        {
+          "start": 8,
+          "end": 17,
+          "text": "创新创业理念、能力",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 30,
+          "text": "市场预测和把控能力",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "保留共享限定的完整短语；创新创业提及的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "创新创业理念、能力",
+          "alternatives": [
+            "K",
+            "S",
+            "T"
+          ],
+          "reason": "理念可能指创业知识，能力可能指创业实践或通用创新素质；局部语境未明确具体内容。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04513",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "服务态度认真",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通、团队合作和认真服务态度均为通用素质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04514",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "编程语言",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "C#",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "Java",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 22,
+          "text": "C语言",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "text": "代码编写能力",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "单元测试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "代码编写语境支持编程工具运用；单元测试去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04515",
+      "spans": [
+        {
+          "start": 3,
+          "end": 11,
+          "text": "企业网络架构规划",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "组织方案实施",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 25,
+          "text": "配置路由器",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 31,
+          "text": "三层交换机",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 35,
+          "text": "服务器",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 44,
+          "text": "VPN",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 49,
+          "text": "VLAN",
+          "label": "S"
+        },
+        {
+          "start": 57,
+          "end": 63,
+          "text": "视频会议系统",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "明确规划、实施和设备配置为S；后段技术与系统提及暂标S待裁决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "VPN、VLAN等网络技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "未明确要求技术知识还是配置实施，前段设备配置不足以确定这两项的具体要求。"
+        },
+        {
+          "kind": "type",
+          "text": "视频会议系统",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅要求了解系统，未说明系统知识还是操作维护能力。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04516",
+      "spans": [
+        {
+          "start": 18,
+          "end": 23,
+          "text": "对接与协调",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "部门间业务联络与协调属于通用人际协作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04517",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "办公软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "办公软件作为岗位使用工具标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04519",
+      "spans": [
+        {
+          "start": 17,
+          "end": 21,
+          "text": "日常监控",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "报警",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "日常处理",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 48,
+          "text": "判断及解决实际的网络及系统故障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "监控、报警和处理共享前述运行对象；故障判断与解决保留共同对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04521",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于报考学历等效与报名资格政策说明，并非具体岗位的独立能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04522",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明资格复审材料提交程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04523",
+      "spans": [
+        {
+          "start": 12,
+          "end": 43,
+          "text": "大型分布式、高并发、高性能、高可用、大规模数据处理系统架构设计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列系统限定共享架构设计，保留完整职业活动；泛化技术背景不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04524",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "MYSQL",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "Oracle",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 32,
+          "text": "sql语句编写及优化",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "text": "多表查询能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库处于明确查询与编写实践语境；编写及优化保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04525",
+      "spans": [
+        {
+          "start": 15,
+          "end": 21,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 38,
+          "text": "解决方案、技术方案的编写能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "人员沟通为T；两类方案共享编写能力，整体保留。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04526",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "研究各大资产网拍网站、链接的形态",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 29,
+          "text": "发现它们的特点和规律",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确网站与链接对象的形态研究和规律识别属于职业分析活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04527",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报考证明材料、审核表和盖章要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04528",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于应聘违规行为说明，不是候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04529",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "整段为报名材料及扫描发送流程，证书列举不作为独立资格要求抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04530",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "ORACLE",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 18,
+          "text": "SqlServer",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "数据库名称边界确定；S仅为知识与运用类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "ORACLE、SqlServer等数据库技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "只有熟练及数据库技术表述，缺少操作、开发或原理要求，无法确定知识与工具运用语境。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04532",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "客户意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "客户意识为通用素质；长期出差属于工作安排条件。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04533",
+      "spans": [
+        {
+          "start": 13,
+          "end": 17,
+          "text": "网络管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络管理为明确职业职能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04534",
+      "spans": [
+        {
+          "start": 3,
+          "end": 6,
+          "text": "护理学",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "护士执业资格",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "临床护理",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 35,
+          "text": "服务台工作经历",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业和执业资格为K；临床护理为活动，服务台经历保留实践要求；健康不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04535",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为递补资格复审公告及时间安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04536",
+      "spans": [
+        {
+          "start": 2,
+          "end": 39,
+          "text": "超高分辨率300kV场发射液体电镜设备、液体样品杆的运行管理工作和日常维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备与样品杆共享运行管理和维护职责，保留必要对象与动作组成的完整跨度。",
+      "issues": []
+    }
+  ]
+}

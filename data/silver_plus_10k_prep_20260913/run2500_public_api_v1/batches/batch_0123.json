@@ -1,0 +1,347 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 36.645,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5223,
+    "completion_tokens": 1437,
+    "total_tokens": 6660,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 683
+    },
+    "input_tokens": 5223,
+    "output_tokens": 1437,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01221",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            37,
+            39
+          ],
+          "to": [
+            38,
+            40
+          ],
+          "text": "处理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            42,
+            46
+          ],
+          "to": [
+            43,
+            47
+          ],
+          "text": "排除故障"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01222",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            6
+          ],
+          "to": [
+            0,
+            7
+          ],
+          "text": "专科及以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01225",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            7
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "Linux环境"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            8,
+            10
+          ],
+          "to": [
+            10,
+            12
+          ],
+          "text": "命令"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            13,
+            24
+          ],
+          "to": [
+            14,
+            23
+          ],
+          "text": "编写shell脚本"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01229",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            18,
+            28
+          ],
+          "to": [
+            14,
+            23
+          ],
+          "text": "商业应用系统的优化"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01230",
+      "repairs": [
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            22,
+            26
+          ],
+          "to": [
+            23,
+            27
+          ],
+          "text": "团队精神"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01221\",\"spans\":[{\"start\":25,\"end\":27,\"text\":\"排查\",\"label\":\"S\"},{\"start\":28,\"end\":30,\"text\":\"分析\",\"label\":\"S\"},{\"start\":37,\"end\":39,\"text\":\"处理\",\"label\":\"S\"},{\"start\":42,\"end\":46,\"text\":\"排除故障\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"对系统及设备进行排查、原因分析、异常处理和故障排除，均为明确职业动作；结果性表述不标。\",\"issues\":[]},{\"id\":\"sp10k-01222\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"专科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格要求；相关专业表述按规则不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01223\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容是面试现场确认时携带材料的行政流程，不构成候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01224\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为面试形式、成绩合格线和通知安排，不构成候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01225\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"Linux环境\",\"label\":\"S\"},{\"start\":8,\"end\":10,\"text\":\"命令\",\"label\":\"S\"},{\"start\":13,\"end\":24,\"text\":\"编写shell脚本\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"Linux环境及命令属于岗位工具运用，编写shell脚本为明确职业技术动作。\",\"issues\":[]},{\"id\":\"sp10k-01226\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容是职业能力测验的考试科目说明，不是招聘要求中的候选人能力提及。\",\"issues\":[]},{\"id\":\"sp10k-01227\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为调剂、推荐和聘用流程说明，不构成候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01228\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为面试期间的纪律和行为管理要求，不构成岗位能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01229\",\"spans\":[{\"start\":18,\"end\":28,\"text\":\"商业应用系统的优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"优化商业应用系统是明确的职业技术动作；协助及岗位名称不进入跨度。\",\"issues\":[]},{\"id\":\"sp10k-01230\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"工作认真\",\"label\":\"T\"},{\"start\":5,\"end\":7,\"text\":\"踏实\",\"label\":\"T\"},{\"start\":8,\"end\":12,\"text\":\"责任感强\",\"label\":\"T\"},{\"start\":16,\"end\":20,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":22,\"end\":26,\"text\":\"团队精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"工作态度、责任感、沟通能力和团队精神均为跨行业通用特质或软技能；出差属于工作安排适应性，不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01221",
+        "spans": [
+          {
+            "start": 25,
+            "end": 27,
+            "text": "排查",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 30,
+            "text": "分析",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 40,
+            "text": "处理",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 47,
+            "text": "排除故障",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "对系统及设备进行排查、原因分析、异常处理和故障排除，均为明确职业动作；结果性表述不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01222",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "专科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格要求；相关专业表述按规则不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01223",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容是面试现场确认时携带材料的行政流程，不构成候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01224",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为面试形式、成绩合格线和通知安排，不构成候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01225",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "Linux环境",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "命令",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 23,
+            "text": "编写shell脚本",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Linux环境及命令属于岗位工具运用，编写shell脚本为明确职业技术动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01226",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容是职业能力测验的考试科目说明，不是招聘要求中的候选人能力提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01227",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为调剂、推荐和聘用流程说明，不构成候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01228",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为面试期间的纪律和行为管理要求，不构成岗位能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01229",
+        "spans": [
+          {
+            "start": 14,
+            "end": 23,
+            "text": "商业应用系统的优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "优化商业应用系统是明确的职业技术动作；协助及岗位名称不进入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01230",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "工作认真",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "text": "踏实",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "责任感强",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "团队精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "工作态度、责任感、沟通能力和团队精神均为跨行业通用特质或软技能；出差属于工作安排适应性，不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 123,
+  "ids": [
+    "sp10k-01221",
+    "sp10k-01222",
+    "sp10k-01223",
+    "sp10k-01224",
+    "sp10k-01225",
+    "sp10k-01226",
+    "sp10k-01227",
+    "sp10k-01228",
+    "sp10k-01229",
+    "sp10k-01230"
+  ],
+  "at": "2026-09-13T15:36:21.897505+00:00"
+}

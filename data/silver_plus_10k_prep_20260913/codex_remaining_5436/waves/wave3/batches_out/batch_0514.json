@@ -1,0 +1,299 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07631",
+      "spans": [
+        {
+          "start": 11,
+          "end": 17,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "共情能力",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 29,
+          "text": "问题解决能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取沟通协调、共情和问题解决等通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07632",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "工作严谨细致",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "组织协调能力",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "文字表述能力",
+          "label": "T"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "text": "团队合作精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取严谨细致、责任心、组织协调、文字表述、学习、服务和团队合作等通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07633",
+      "spans": [
+        {
+          "start": 1,
+          "end": 7,
+          "text": "根据库存情况",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 16,
+          "text": "提交备件采购申购表",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "text": "备件之验收",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 32,
+          "text": "急购备件之提交",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取备件采购申购、验收和急购备件提交等职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07634",
+      "spans": [
+        {
+          "start": 0,
+          "end": 18,
+          "text": "负责法律合规相关要求在公司的落地执行",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "整体表示在公司落地执行法律合规要求的职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07635",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "保险",
+          "label": "K"
+        },
+        {
+          "start": 3,
+          "end": 5,
+          "text": "金融",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "text": "法律",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "管理",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "汽车",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "机械",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取相关专业中的领域知识名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07636",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "协作机器人实操",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "示教编程",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "运动控制调试",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 37,
+          "text": "主流协作机器人控制系统",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 42,
+          "text": "开发逻辑",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取协作机器人操作、编程、运动控制调试、控制系统运用及开发逻辑知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07637",
+      "spans": [
+        {
+          "start": 9,
+          "end": 13,
+          "text": "销售跟单",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "录单",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "跟单",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "发货",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "text": "对账",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 30,
+          "text": "回款",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取销售跟单、录单、发货、对账和回款等职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07638",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "成本控制意识",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "竞品分析能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "成本控制意识属于通用特质，竞品分析属于明确业务分析活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07639",
+      "spans": [
+        {
+          "start": 0,
+          "end": 10,
+          "text": "全日制本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "电池行业",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格及明确行业背景；专业名称泛化且年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07640",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "驾驶记录及交通违法记录属于驾驶行为记录要求，且非司机岗位驾照或驾驶相关条件不属于本项目标注范围。",
+      "issues": []
+    }
+  ]
+}

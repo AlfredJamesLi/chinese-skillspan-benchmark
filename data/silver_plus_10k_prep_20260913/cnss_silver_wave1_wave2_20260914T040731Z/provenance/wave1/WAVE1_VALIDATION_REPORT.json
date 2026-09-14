@@ -1,0 +1,53 @@
+{
+  "state": "complete",
+  "wave": "wave1",
+  "actual_commit": "e09f608964f3510d5de4a62e5f6d96472904556c",
+  "prompt_sha256": "b6223e9a2e9b02afa19cba79ba908766d9240acb233723fbe6f53b40e6b04fd6",
+  "schema_sha256": "b3e7745a4579f7652135b9295bbafeb2f4934df3896e98034ab4f476dba8b8ec",
+  "batch_count": 73,
+  "records": 1810,
+  "unique_ids": 1810,
+  "status_counts": {
+    "candidate_complete": 1224,
+    "adjudication_required": 103,
+    "confirmed_empty": 483
+  },
+  "label_counts": {
+    "T": 718,
+    "K": 1029,
+    "S": 2175,
+    "L": 25
+  },
+  "span_count": 3947,
+  "adjudication_issue_count": 117,
+  "original_batches_fully_covered": 181,
+  "held_id_overlap": 0,
+  "source_hashes_unchanged": true,
+  "derived_inputs_unchanged": true,
+  "source_git_status": "",
+  "cli_calls_serial": true,
+  "cli_validated_batches": 61,
+  "cli_wall_seconds_sum": 10239.672914699942,
+  "cli_seconds_per_record": 6.781240340860889,
+  "codex_cli_reported_usage_sum": {
+    "input_tokens": 1452736,
+    "cached_input_tokens": 270464,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 318731,
+    "reasoning_output_tokens": 187264
+  },
+  "usage_caveat": "Real CLI event counts, not API billing; shared quota change is not exact task attribution.",
+  "mechanical_offset_corrections": 5,
+  "human_accuracy": "not_evaluated",
+  "formal_human_sample_drawn": false,
+  "silver_merged": false,
+  "training_started": false,
+  "github_commit_or_push": false,
+  "audited_utc": "2026-09-13T18:56:39.476718+00:00",
+  "total_cli_offset_corrections": 7,
+  "explicit_model_position_corrections": 2,
+  "continuation_recording_start_utc": "2026-09-13T15:50:27.751676+00:00",
+  "end_utc": "2026-09-13T18:56:39.476718+00:00",
+  "continuation_elapsed_seconds": 11171.725042,
+  "first_25_reused": true
+}

@@ -1,0 +1,70 @@
+{
+  "batch": 41,
+  "records": 25,
+  "start_utc": "2026-09-13T17:23:29.762443+00:00",
+  "method": "Serial Codex CLI using existing ChatGPT authentication",
+  "model_requested": "gpt-6-astra",
+  "reasoning_effort_requested": "high",
+  "provider": "openai",
+  "forced_login_method": "chatgpt",
+  "independent_api_key_used": false,
+  "input_sha256": "08280e0da45985ec9b35ea3157d7f9e9d5e815066270fa09a4aeca6d4973e196",
+  "prompt_sha256": "b6223e9a2e9b02afa19cba79ba908766d9240acb233723fbe6f53b40e6b04fd6",
+  "command_args_without_prompt": [
+    "C:\\Users\\James Lee\\AppData\\Local\\OpenAI\\Codex\\bin\\bffc5354119c8421\\codex.exe",
+    "exec",
+    "--ignore-user-config",
+    "--skip-git-repo-check",
+    "--ephemeral",
+    "--sandbox",
+    "read-only",
+    "--model",
+    "gpt-6-astra",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "-c",
+    "model_provider=\"openai\"",
+    "-c",
+    "forced_login_method=\"chatgpt\"",
+    "-c",
+    "web_search=\"disabled\"",
+    "--disable",
+    "shell_tool",
+    "--disable",
+    "multi_agent",
+    "--output-schema",
+    "C:\\Users\\James Lee\\Documents\\Codex\\2026-09-13\\chinese-skillspan-silver-https-github-com\\outputs\\prepared_25\\support\\output_schema.json",
+    "--output-last-message",
+    "C:\\Users\\James Lee\\Documents\\Codex\\2026-09-13\\chinese-skillspan-silver-https-github-com\\outputs\\wave1_codex_astra\\batches\\batch25_0041\\cli_attempt_01\\raw_model_output.json",
+    "--json",
+    "--cd",
+    "C:\\Users\\James Lee\\Documents\\Codex\\2026-09-13\\chinese-skillspan-silver-https-github-com\\work\\codex_batch_context",
+    "-"
+  ],
+  "attempt": 1,
+  "end_utc": "2026-09-13T17:26:40.632292+00:00",
+  "elapsed_seconds": 190.8698374000087,
+  "exit_code": 0,
+  "status": "validated",
+  "recovery": "Parent model explicitly reviewed ambiguous repeated-span positions; overrides and original output retained; no model rerun.",
+  "offset_corrections": 2,
+  "codex_usage_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 23579,
+        "cached_input_tokens": 13952,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6012,
+        "reasoning_output_tokens": 3371
+      }
+    }
+  ],
+  "codex_thread_events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a09bcb-a87a-79f2-a65e-29887de68d19"
+    }
+  ],
+  "previous_validation_error": "('sp10k-02864', '弹唱', [14, 20])"
+}

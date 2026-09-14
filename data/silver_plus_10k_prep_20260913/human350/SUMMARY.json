@@ -1,0 +1,11 @@
+{
+  "n_ids": 350,
+  "n_nfc": 350,
+  "n_gold150": 150,
+  "n_a100": 100,
+  "n_qa100": 100,
+  "definition": "Gold150 + A100 + QA100 = 350 human-coded or checked sentences",
+  "new_150_must_not_overlap": true,
+  "after_new_150_human_cover_sentences": 500,
+  "status": "new_150_pending_ai_labels_and_human_check"
+}

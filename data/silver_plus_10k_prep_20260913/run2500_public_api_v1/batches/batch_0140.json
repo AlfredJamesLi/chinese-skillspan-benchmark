@@ -1,0 +1,643 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 76.561,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5123,
+    "completion_tokens": 2211,
+    "total_tokens": 7334,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 918
+    },
+    "input_tokens": 5123,
+    "output_tokens": 2211,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01391",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            25,
+            31
+          ],
+          "to": [
+            22,
+            28
+          ],
+          "text": "综合分析能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            32,
+            38
+          ],
+          "to": [
+            29,
+            37
+          ],
+          "text": "计划组织协调能力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            39,
+            45
+          ],
+          "to": [
+            38,
+            44
+          ],
+          "text": "人际沟通能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            46,
+            52
+          ],
+          "to": [
+            45,
+            51
+          ],
+          "text": "临场应变能力"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            53,
+            59
+          ],
+          "to": [
+            52,
+            58
+          ],
+          "text": "语言表达能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01394",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            16,
+            20
+          ],
+          "to": [
+            18,
+            22
+          ],
+          "text": "遵纪守法"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            21,
+            25
+          ],
+          "to": [
+            23,
+            27
+          ],
+          "text": "品行端正"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            26,
+            30
+          ],
+          "to": [
+            28,
+            32
+          ],
+          "text": "作风正派"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            31,
+            37
+          ],
+          "to": [
+            33,
+            39
+          ],
+          "text": "热爱教育事业"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            38,
+            59
+          ],
+          "to": [
+            40,
+            64
+          ],
+          "text": "符合新时代中小学、幼儿园教师职业行为十项准则要求"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            60,
+            72
+          ],
+          "to": [
+            65,
+            88
+          ],
+          "text": "符合《教师法》、《教师资格条例》等法律法规规定"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            72,
+            80
+          ],
+          "to": [
+            88,
+            97
+          ],
+          "text": "身体条件和心理条件"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            87,
+            94
+          ],
+          "to": [
+            103,
+            111
+          ],
+          "text": "志愿从事教育工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01395",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            23
+          ],
+          "to": [
+            8,
+            20
+          ],
+          "text": "PLC（西门子）、变频器"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            24,
+            54
+          ],
+          "to": [
+            20,
+            46
+          ],
+          "text": "（西门子G120,S120系列变频器或SEW变频器）"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            55,
+            60
+          ],
+          "to": [
+            47,
+            52
+          ],
+          "text": "伺服控制器"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            61,
+            64
+          ],
+          "to": [
+            53,
+            56
+          ],
+          "text": "传感器"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            65,
+            67
+          ],
+          "to": [
+            57,
+            59
+          ],
+          "text": "应用"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01398",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            32,
+            34
+          ],
+          "to": [
+            31,
+            33
+          ],
+          "text": "配置"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            35,
+            37
+          ],
+          "to": [
+            34,
+            36
+          ],
+          "text": "管理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            38,
+            40
+          ],
+          "to": [
+            37,
+            39
+          ],
+          "text": "监控"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01391\",\"spans\":[{\"start\":25,\"end\":31,\"text\":\"综合分析能力\",\"label\":\"T\"},{\"start\":32,\"end\":38,\"text\":\"计划组织协调能力\",\"label\":\"T\"},{\"start\":39,\"end\":45,\"text\":\"人际沟通能力\",\"label\":\"T\"},{\"start\":46,\"end\":52,\"text\":\"临场应变能力\",\"label\":\"T\"},{\"start\":53,\"end\":59,\"text\":\"语言表达能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"结构化面试明确测评候选人的通用能力，按独立能力提及拆分标注。\",\"issues\":[]},{\"id\":\"sp10k-01392\",\"spans\":[{\"start\":1,\"end\":10,\"text\":\"PMP项目认证资格\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"PMP项目认证资格属于非语言职业资格。\",\"issues\":[]},{\"id\":\"sp10k-01393\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明工作时长及项目单位时间安排，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01394\",\"spans\":[{\"start\":16,\"end\":20,\"text\":\"遵纪守法\",\"label\":\"T\"},{\"start\":21,\"end\":25,\"text\":\"品行端正\",\"label\":\"T\"},{\"start\":26,\"end\":30,\"text\":\"作风正派\",\"label\":\"T\"},{\"start\":31,\"end\":37,\"text\":\"热爱教育事业\",\"label\":\"T\"},{\"start\":38,\"end\":59,\"text\":\"符合新时代中小学、幼儿园教师职业行为十项准则要求\",\"label\":\"K\"},{\"start\":60,\"end\":72,\"text\":\"符合《教师法》、《教师资格条例》等法律法规规定\",\"label\":\"K\"},{\"start\":72,\"end\":80,\"text\":\"身体条件和心理条件\",\"label\":\"K\"},{\"start\":87,\"end\":94,\"text\":\"志愿从事教育工作\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"提及职业品行、教育职业规范及法规资格条件，并明确从教意愿。\",\"issues\":[]},{\"id\":\"sp10k-01395\",\"spans\":[{\"start\":8,\"end\":23,\"text\":\"PLC（西门子）、变频器\",\"label\":\"S\"},{\"start\":24,\"end\":54,\"text\":\"（西门子G120,S120系列变频器或SEW变频器）\",\"label\":\"S\"},{\"start\":55,\"end\":60,\"text\":\"伺服控制器\",\"label\":\"S\"},{\"start\":61,\"end\":64,\"text\":\"传感器\",\"label\":\"S\"},{\"start\":65,\"end\":67,\"text\":\"应用\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"电气设备应用及参数理解属于能力要求，但PLC与变频器的共享边界存在歧义，保留保守候选并登记边界待裁决。\",\"issues\":[{\"kind\":\"boundary\",\"text\":\"PLC（西门子）、变频器（西门子G120,S120系列变频器或SEW变频器）\",\"alternatives\":[\"PLC（西门子）、变频器\",\"PLC（西门子）\",\"变频器（西门子G120,S120系列变频器或SEW变频器）\"],\"reason\":\"括号及并列结构导致PLC与变频器的完整设备边界需人工确认。\"}]},{\"id\":\"sp10k-01396\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"应用日常上线\",\"label\":\"S\"},{\"start\":9,\"end\":14,\"text\":\"自动化部署\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"监控健康巡检\",\"label\":\"S\"},{\"start\":22,\"end\":28,\"text\":\"撰写技术文档\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"职责明确要求执行上线、部署、巡检和技术文档撰写等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01397\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"Docker\",\"label\":\"S\"},{\"start\":9,\"end\":12,\"text\":\"K8S\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"工具明确与实际使用经验关联，按岗位现用工具标注。\",\"issues\":[]},{\"id\":\"sp10k-01398\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"主流网络设备\",\"label\":\"S\"},{\"start\":32,\"end\":34,\"text\":\"配置\",\"label\":\"S\"},{\"start\":35,\"end\":37,\"text\":\"管理\",\"label\":\"S\"},{\"start\":38,\"end\":40,\"text\":\"监控\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"要求使用和管理网络设备，并执行配置、管理及监控。\",\"issues\":[]},{\"id\":\"sp10k-01399\",\"spans\":[],\"status\":\"adjudication_required\",\"note\":\"文本存在明显错漏字，语言/平台范围及“设计和开发”的完整边界无法仅凭局部文本可靠确定。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"以下?少?种语?/平台的设计和开发\",\"alternatives\":[\"若干种语言/平台的设计和开发\",\"若干种语言/平台\"],\"reason\":\"原文含问号替代或缺失字符，无法确认数量限定及能力范围。\"}]},{\"id\":\"sp10k-01400\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"用户培训\",\"label\":\"S\"},{\"start\":7,\"end\":13,\"text\":\"操作手册编写\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"客户答疑\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"用户培训和操作手册编写是职业活动，客户答疑属于客户沟通类通用能力。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01391",
+        "spans": [
+          {
+            "start": 22,
+            "end": 28,
+            "text": "综合分析能力",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 37,
+            "text": "计划组织协调能力",
+            "label": "T"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "text": "人际沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 45,
+            "end": 51,
+            "text": "临场应变能力",
+            "label": "T"
+          },
+          {
+            "start": 52,
+            "end": 58,
+            "text": "语言表达能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "结构化面试明确测评候选人的通用能力，按独立能力提及拆分标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01392",
+        "spans": [
+          {
+            "start": 1,
+            "end": 10,
+            "text": "PMP项目认证资格",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "PMP项目认证资格属于非语言职业资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01393",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明工作时长及项目单位时间安排，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01394",
+        "spans": [
+          {
+            "start": 18,
+            "end": 22,
+            "text": "遵纪守法",
+            "label": "T"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "品行端正",
+            "label": "T"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "作风正派",
+            "label": "T"
+          },
+          {
+            "start": 33,
+            "end": 39,
+            "text": "热爱教育事业",
+            "label": "T"
+          },
+          {
+            "start": 40,
+            "end": 64,
+            "text": "符合新时代中小学、幼儿园教师职业行为十项准则要求",
+            "label": "K"
+          },
+          {
+            "start": 65,
+            "end": 88,
+            "text": "符合《教师法》、《教师资格条例》等法律法规规定",
+            "label": "K"
+          },
+          {
+            "start": 88,
+            "end": 97,
+            "text": "身体条件和心理条件",
+            "label": "K"
+          },
+          {
+            "start": 103,
+            "end": 111,
+            "text": "志愿从事教育工作",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "提及职业品行、教育职业规范及法规资格条件，并明确从教意愿。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01395",
+        "spans": [
+          {
+            "start": 8,
+            "end": 20,
+            "text": "PLC（西门子）、变频器",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 46,
+            "text": "（西门子G120,S120系列变频器或SEW变频器）",
+            "label": "S"
+          },
+          {
+            "start": 47,
+            "end": 52,
+            "text": "伺服控制器",
+            "label": "S"
+          },
+          {
+            "start": 53,
+            "end": 56,
+            "text": "传感器",
+            "label": "S"
+          },
+          {
+            "start": 57,
+            "end": 59,
+            "text": "应用",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "电气设备应用及参数理解属于能力要求，但PLC与变频器的共享边界存在歧义，保留保守候选并登记边界待裁决。",
+        "issues": [
+          {
+            "kind": "boundary",
+            "text": "PLC（西门子）、变频器（西门子G120,S120系列变频器或SEW变频器）",
+            "alternatives": [
+              "PLC（西门子）、变频器",
+              "PLC（西门子）",
+              "变频器（西门子G120,S120系列变频器或SEW变频器）"
+            ],
+            "reason": "括号及并列结构导致PLC与变频器的完整设备边界需人工确认。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-01396",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "应用日常上线",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 14,
+            "text": "自动化部署",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "监控健康巡检",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "撰写技术文档",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "职责明确要求执行上线、部署、巡检和技术文档撰写等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01397",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "Docker",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "text": "K8S",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "工具明确与实际使用经验关联，按岗位现用工具标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01398",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "主流网络设备",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 33,
+            "text": "配置",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 36,
+            "text": "管理",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 39,
+            "text": "监控",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "要求使用和管理网络设备，并执行配置、管理及监控。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01399",
+        "spans": [],
+        "status": "adjudication_required",
+        "note": "文本存在明显错漏字，语言/平台范围及“设计和开发”的完整边界无法仅凭局部文本可靠确定。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "以下?少?种语?/平台的设计和开发",
+            "alternatives": [
+              "若干种语言/平台的设计和开发",
+              "若干种语言/平台"
+            ],
+            "reason": "原文含问号替代或缺失字符，无法确认数量限定及能力范围。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-01400",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "用户培训",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "text": "操作手册编写",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "客户答疑",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "用户培训和操作手册编写是职业活动，客户答疑属于客户沟通类通用能力。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 140,
+  "ids": [
+    "sp10k-01391",
+    "sp10k-01392",
+    "sp10k-01393",
+    "sp10k-01394",
+    "sp10k-01395",
+    "sp10k-01396",
+    "sp10k-01397",
+    "sp10k-01398",
+    "sp10k-01399",
+    "sp10k-01400"
+  ],
+  "at": "2026-09-13T15:56:56.043518+00:00"
+}

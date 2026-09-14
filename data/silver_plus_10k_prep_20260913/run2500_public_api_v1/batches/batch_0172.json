@@ -1,0 +1,261 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 43.585,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4999,
+    "completion_tokens": 1352,
+    "total_tokens": 6351,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 514
+    },
+    "input_tokens": 4999,
+    "output_tokens": 1352,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01711\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"政审及录用递补流程，不含能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01712\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"整理客户的反馈建议或者意见\",\"label\":\"S\"},{\"start\":16,\"end\":23,\"text\":\"提交相关负责人\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取客户反馈整理及提交职责；提交的对象由前文限定，末尾服务目标不标。\",\"issues\":[]},{\"id\":\"sp10k-01713\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明年龄、教龄及任职时间的计算截止日期。\",\"issues\":[]},{\"id\":\"sp10k-01714\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"链接及应聘证明材料提交流程，不属于职业能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01715\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"积极主动\",\"label\":\"T\"},{\"start\":7,\"end\":11,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":13,\"end\":17,\"text\":\"沟通能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用工作特质、学习及沟通能力，程度修饰不入跨度。\",\"issues\":[]},{\"id\":\"sp10k-01716\",\"spans\":[{\"start\":2,\"end\":18,\"text\":\"原创话题和内容的策划、发布和维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"策划、发布及维护共享话题和内容对象，保留完整职责跨度；活跃度和品牌信任感为结果目标。\",\"issues\":[]},{\"id\":\"sp10k-01717\",\"spans\":[{\"start\":3,\"end\":12,\"text\":\"计算机方面专业培训\",\"label\":\"K\"},{\"start\":14,\"end\":16,\"text\":\"A+\",\"label\":\"K\"},{\"start\":17,\"end\":21,\"text\":\"MCSE\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"专业培训背景及非语言系统认证作为资格要求抽取。\",\"issues\":[]},{\"id\":\"sp10k-01718\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"Linux\",\"label\":\"S\"},{\"start\":8,\"end\":14,\"text\":\"Esxi系统\",\"label\":\"S\"},{\"start\":17,\"end\":21,\"text\":\"系统管理\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"故障处理\",\"label\":\"S\"},{\"start\":27,\"end\":31,\"text\":\"性能调优\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"系统由局部管理、故障处理及调优实践限定，按岗位工具标S；各职业活动去除经验后意义完整。\",\"issues\":[]},{\"id\":\"sp10k-01719\",\"spans\":[{\"start\":5,\"end\":13,\"text\":\"MES实施和运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"实施与运维共享MES对象，保留完整职业活动跨度。\",\"issues\":[]},{\"id\":\"sp10k-01720\",\"spans\":[{\"start\":4,\"end\":7,\"text\":\"Git\",\"label\":\"S\"},{\"start\":8,\"end\":14,\"text\":\"gitLab\",\"label\":\"S\"},{\"start\":15,\"end\":22,\"text\":\"Ansible\",\"label\":\"S\"},{\"start\":23,\"end\":27,\"text\":\"salt\",\"label\":\"S\"},{\"start\":28,\"end\":35,\"text\":\"Jenkins\",\"label\":\"S\"},{\"start\":36,\"end\":41,\"text\":\"Maven\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确岗位工具要求，逐项抽取并保留原文大小写。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01711",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "政审及录用递补流程，不含能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01712",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "整理客户的反馈建议或者意见",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "text": "提交相关负责人",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取客户反馈整理及提交职责；提交的对象由前文限定，末尾服务目标不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01713",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明年龄、教龄及任职时间的计算截止日期。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01714",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "链接及应聘证明材料提交流程，不属于职业能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01715",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "积极主动",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "沟通能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用工作特质、学习及沟通能力，程度修饰不入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01716",
+        "spans": [
+          {
+            "start": 2,
+            "end": 18,
+            "text": "原创话题和内容的策划、发布和维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "策划、发布及维护共享话题和内容对象，保留完整职责跨度；活跃度和品牌信任感为结果目标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01717",
+        "spans": [
+          {
+            "start": 3,
+            "end": 12,
+            "text": "计算机方面专业培训",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 16,
+            "text": "A+",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "MCSE",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业培训背景及非语言系统认证作为资格要求抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01718",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "Linux",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "Esxi系统",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "系统管理",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "故障处理",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "性能调优",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统由局部管理、故障处理及调优实践限定，按岗位工具标S；各职业活动去除经验后意义完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01719",
+        "spans": [
+          {
+            "start": 5,
+            "end": 13,
+            "text": "MES实施和运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "实施与运维共享MES对象，保留完整职业活动跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01720",
+        "spans": [
+          {
+            "start": 4,
+            "end": 7,
+            "text": "Git",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "gitLab",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "text": "Ansible",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "salt",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "text": "Jenkins",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "text": "Maven",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确岗位工具要求，逐项抽取并保留原文大小写。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 172,
+  "ids": [
+    "sp10k-01711",
+    "sp10k-01712",
+    "sp10k-01713",
+    "sp10k-01714",
+    "sp10k-01715",
+    "sp10k-01716",
+    "sp10k-01717",
+    "sp10k-01718",
+    "sp10k-01719",
+    "sp10k-01720"
+  ],
+  "at": "2026-09-13T16:32:17.941929+00:00"
+}

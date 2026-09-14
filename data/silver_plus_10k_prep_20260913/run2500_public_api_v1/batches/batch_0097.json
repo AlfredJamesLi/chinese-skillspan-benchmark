@@ -1,0 +1,304 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 48.533,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4982,
+    "completion_tokens": 1487,
+    "total_tokens": 6469,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 4982,
+    "output_tokens": 1487,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00961\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"组织进行信息安全管理的培训\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确培训职责，保留培训对象与组织动作。\",\"issues\":[]},{\"id\":\"sp10k-00962\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"设计文档的输出\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"设计文档输出为职业活动，去除要求触发词及非核心修饰。\",\"issues\":[]},{\"id\":\"sp10k-00963\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"场区网络架构的规划和设计\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"规划和设计共享必要对象，保留完整活动；建设支撑为目的说明。\",\"issues\":[]},{\"id\":\"sp10k-00964\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"linux\",\"label\":\"S\"},{\"start\":8,\"end\":19,\"text\":\"windows操作系统\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"操作系统按岗位工具提及标注，保留原文大小写与共享语境。\",\"issues\":[]},{\"id\":\"sp10k-00965\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明应聘人员按政策文件执行的行政安排，未明确具体能力或资格名。\",\"issues\":[]},{\"id\":\"sp10k-00966\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"说明相关专业的现场考核形式，未提出候选人专业或技能要求。\",\"issues\":[]},{\"id\":\"sp10k-00967\",\"spans\":[{\"start\":1,\"end\":4,\"text\":\"水轮机\",\"label\":\"K\"},{\"start\":5,\"end\":8,\"text\":\"发电机\",\"label\":\"K\"},{\"start\":9,\"end\":13,\"text\":\"电气设备\",\"label\":\"K\"},{\"start\":14,\"end\":20,\"text\":\"并网控制系统\",\"label\":\"K\"},{\"start\":36,\"end\":43,\"text\":\"水电站相关运行\",\"label\":\"S\"},{\"start\":44,\"end\":48,\"text\":\"生产管理\",\"label\":\"S\"},{\"start\":55,\"end\":61,\"text\":\"电力安全规程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"设备与系统受专业知识语境限定标K；运行及生产管理为具体职业活动，去除经验和年限；安全规程标K。\",\"issues\":[]},{\"id\":\"sp10k-00968\",\"spans\":[{\"start\":0,\"end\":5,\"text\":\"nginx\",\"label\":\"S\"},{\"start\":6,\"end\":9,\"text\":\"ftp\",\"label\":\"S\"},{\"start\":10,\"end\":13,\"text\":\"dns\",\"label\":\"S\"},{\"start\":14,\"end\":19,\"text\":\"redis\",\"label\":\"S\"},{\"start\":20,\"end\":25,\"text\":\"mysql\",\"label\":\"S\"},{\"start\":26,\"end\":33,\"text\":\"MongoDB\",\"label\":\"S\"},{\"start\":34,\"end\":39,\"text\":\"Kafka\",\"label\":\"S\"},{\"start\":40,\"end\":49,\"text\":\"Zookeeper\",\"label\":\"S\"},{\"start\":54,\"end\":56,\"text\":\"安装\",\"label\":\"S\"},{\"start\":57,\"end\":59,\"text\":\"配置\",\"label\":\"S\"},{\"start\":60,\"end\":62,\"text\":\"维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"软件名称受明确安装、配置、维护实践语境限定标S；并列动作的对象由局部上下文共享。\",\"issues\":[]},{\"id\":\"sp10k-00969\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"企业区块链相关软件开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取具有明确领域对象的软件开发职责。\",\"issues\":[]},{\"id\":\"sp10k-00970\",\"spans\":[{\"start\":3,\"end\":5,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":6,\"end\":10,\"text\":\"协调能力\",\"label\":\"T\"},{\"start\":15,\"end\":21,\"text\":\"客户服务意识\",\"label\":\"T\"},{\"start\":22,\"end\":28,\"text\":\"团队合作精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"沟通、协调、服务意识和团队合作均为通用能力或特质，去除程度修饰。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00961",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "组织进行信息安全管理的培训",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确培训职责，保留培训对象与组织动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00962",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "设计文档的输出",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设计文档输出为职业活动，去除要求触发词及非核心修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00963",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "场区网络架构的规划和设计",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "规划和设计共享必要对象，保留完整活动；建设支撑为目的说明。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00964",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "linux",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 19,
+            "text": "windows操作系统",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "操作系统按岗位工具提及标注，保留原文大小写与共享语境。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00965",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明应聘人员按政策文件执行的行政安排，未明确具体能力或资格名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00966",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "说明相关专业的现场考核形式，未提出候选人专业或技能要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00967",
+        "spans": [
+          {
+            "start": 1,
+            "end": 4,
+            "text": "水轮机",
+            "label": "K"
+          },
+          {
+            "start": 5,
+            "end": 8,
+            "text": "发电机",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "电气设备",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "并网控制系统",
+            "label": "K"
+          },
+          {
+            "start": 36,
+            "end": 43,
+            "text": "水电站相关运行",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 48,
+            "text": "生产管理",
+            "label": "S"
+          },
+          {
+            "start": 55,
+            "end": 61,
+            "text": "电力安全规程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设备与系统受专业知识语境限定标K；运行及生产管理为具体职业活动，去除经验和年限；安全规程标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00968",
+        "spans": [
+          {
+            "start": 0,
+            "end": 5,
+            "text": "nginx",
+            "label": "S"
+          },
+          {
+            "start": 6,
+            "end": 9,
+            "text": "ftp",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "text": "dns",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "text": "redis",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "text": "mysql",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "text": "MongoDB",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 39,
+            "text": "Kafka",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 49,
+            "text": "Zookeeper",
+            "label": "S"
+          },
+          {
+            "start": 54,
+            "end": 56,
+            "text": "安装",
+            "label": "S"
+          },
+          {
+            "start": 57,
+            "end": 59,
+            "text": "配置",
+            "label": "S"
+          },
+          {
+            "start": 60,
+            "end": 62,
+            "text": "维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "软件名称受明确安装、配置、维护实践语境限定标S；并列动作的对象由局部上下文共享。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00969",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "企业区块链相关软件开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取具有明确领域对象的软件开发职责。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00970",
+        "spans": [
+          {
+            "start": 3,
+            "end": 5,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "text": "协调能力",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "客户服务意识",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "团队合作精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通、协调、服务意识和团队合作均为通用能力或特质，去除程度修饰。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 97,
+  "ids": [
+    "sp10k-00961",
+    "sp10k-00962",
+    "sp10k-00963",
+    "sp10k-00964",
+    "sp10k-00965",
+    "sp10k-00966",
+    "sp10k-00967",
+    "sp10k-00968",
+    "sp10k-00969",
+    "sp10k-00970"
+  ],
+  "at": "2026-09-13T15:11:33.241055+00:00"
+}

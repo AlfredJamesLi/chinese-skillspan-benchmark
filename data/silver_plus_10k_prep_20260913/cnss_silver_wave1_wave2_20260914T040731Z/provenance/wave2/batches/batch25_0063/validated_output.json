@@ -1,0 +1,519 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05316",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "产品的上线发布",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "质量跟进",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 34,
+          "text": "完善系统监控、报警、自动部署等内部工具",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取发布、质量跟进和工具完善职责；末项保留共享动作与对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05317",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格复审材料提交说明，不含能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05319",
+      "spans": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "应用服务器搭建",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "AD",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 19,
+          "text": "DNS",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "text": "FTP文件服务器",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 47,
+          "text": "linux基础运维管理命令",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "服务器搭建、相关工具及运维命令处于明确操作语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05320",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "毕业生报名身份及材料要求，属于应聘行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05321",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "机械",
+          "label": "K"
+        },
+        {
+          "start": 3,
+          "end": 5,
+          "text": "电气",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业名；泛化工作经验及年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05322",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "认真",
+          "label": "T"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "text": "细致",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "text": "责任感",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 19,
+          "text": "执行力",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "乐观",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "外向",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "独立抽取通用工作特质，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05323",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "岗位、面试测试形式及待遇标题，未陈述具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05324",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "MySQL",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 13,
+          "text": "Redis",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 28,
+          "text": "数据库集群的部署，监控，优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库工具有明确操作语境；并列操作保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05325",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明资格复审组织机构。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05326",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "答辩时间及到场安排；专业名用于区分行政安排对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05327",
+      "spans": [
+        {
+          "start": 9,
+          "end": 17,
+          "text": "网络系统故障处理",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 29,
+          "text": "定位并解决各种异常",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "故障处理及异常定位解决均有明确网络系统对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05328",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "笔试科目和测评目的说明，不抽取考试标题或泛化测评对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05329",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "行政解释权说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05330",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "博士研究生学历学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取年龄放宽条件中的完整学历学位资格；年龄不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05331",
+      "spans": [
+        {
+          "start": 6,
+          "end": 24,
+          "text": "ERP/MES系统项目导入实施、落地",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "日常会议安排",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "进度把控",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统项目实施及其具体管理活动按职业职能标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05332",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "计算机网络基础知识",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "外设",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "视频监控系统",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "综合布线",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "基础知识明确为K；其余提及范围和边界确定，但知识与实际运用语境未明，S为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "外设",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指外设知识或设备使用能力；与基础知识并列但没有具体操作或原理说明。"
+        },
+        {
+          "kind": "type",
+          "text": "视频监控系统",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指系统知识或岗位工具运用；了解这一触发词不足以区分。"
+        },
+        {
+          "kind": "type",
+          "text": "综合布线",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指布线知识体系或可执行布线方法，未明确原理学习或实施语境。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05333",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格条件的时间计算规则，不含具体能力或资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05334",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "编制暖通系统维护保养计划",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 31,
+          "text": "跟踪暖通系统维保合约的履行和落实",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "制定节能举措",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取计划编制、合约跟踪及措施制定；落实节能指标和提高能源效率属于结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05335",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "服务基层人员报考证明、表格下载及审核盖章流程，不含职业能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05336",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "笔试入围比例、面试及资格复审流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05337",
+      "spans": [
+        {
+          "start": 6,
+          "end": 12,
+          "text": "关系型数据库",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "主流技术",
+          "label": "K"
+        },
+        {
+          "start": 29,
+          "end": 40,
+          "text": "平台架构的整体架构构建",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "系统设计",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 51,
+          "text": "微服务",
+          "label": "K"
+        },
+        {
+          "start": 54,
+          "end": 56,
+          "text": "前端",
+          "label": "K"
+        },
+        {
+          "start": 57,
+          "end": 61,
+          "text": "后台技术",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "架构构建和系统设计为S，概括性技术领域为K；数据库的知识或运用含义待裁决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "关系型数据库",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "精通至少一种数据库可指知识掌握或实际使用；本项未给出操作或原理限定，邻项架构职责不足以消除歧义，S为占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05338",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "微信公众号及小程序开发",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 25,
+          "text": "官方站群等软件开发业务",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 49,
+          "text": "对客户的网站架构、交互体验等行为进行深度分析",
+          "label": "S"
+        },
+        {
+          "start": 57,
+          "end": 61,
+          "text": "完成提案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取软件开发、具体业务分析和提案活动；保留必要共享开发成分及分析对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05339",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "毕业证、学位证扫描材料说明，属于应聘材料流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05340",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "管理公司的机房",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 24,
+          "text": "办公设备的安装、维护及采购",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "机房管理为具体职业活动；设备操作列表保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05341",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "市场营销",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "电子商务",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格及两个专业名。",
+      "issues": []
+    }
+  ]
+}

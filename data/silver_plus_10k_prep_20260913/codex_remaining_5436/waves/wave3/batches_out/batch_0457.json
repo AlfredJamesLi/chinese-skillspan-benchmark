@@ -1,0 +1,240 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07061",
+      "spans": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历资格要求，标注为K；对口经验为泛化经验，不标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07062",
+      "spans": [
+        {
+          "start": 6,
+          "end": 12,
+          "text": "工艺开发管理",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "研发开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求的工艺开发管理和研发开发活动，标注为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07063",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "商务思维",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "变通能力",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 24,
+          "text": "执行力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用能力或个人特质，标注为T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07064",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "机械维修知识",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "食品饮料行业",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 26,
+          "text": "利乐线机械检修",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "维护保养",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "机械维修知识和行业背景为K；机械检修、维护保养为明确职业活动，标注为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07065",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "环保行业",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "项目管理",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 43,
+          "text": "将技术方案转化为成功工程案例",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "环保行业为领域背景K；项目管理及将技术方案转化为工程案例为职业活动S。年限及泛化技术经验不标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07066",
+      "spans": [
+        {
+          "start": 8,
+          "end": 10,
+          "text": "配送",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "跟进",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "药品配送和跟进是职责中明确要求执行的职业活动；按时送达为结果要求，不标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07067",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "气表产品相关测试设备的应用范围",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 35,
+          "text": "气表产品相关的各类测试设备",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "测试设备应用范围属于设备相关知识；熟练使用测试设备属于工具运用，标注为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07068",
+      "spans": [
+        {
+          "start": 7,
+          "end": 11,
+          "text": "安全巡查",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "环境维护",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "校园管理规范",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安全巡查和环境维护为职业活动S；校园管理规范为明确规范知识K。符合要求属于结果约束，不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07069",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "《注册安全工程师》资格证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确的非语言职业资格证书，标注为K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07070",
+      "spans": [
+        {
+          "start": 1,
+          "end": 6,
+          "text": "CPA证书",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 13,
+          "text": "会计师事务所",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "国有企业",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 34,
+          "text": "合并报表系统信息化经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "CPA证书为资格K；会计师事务所和国有企业为工作背景领域K；合并报表系统信息化经验对应明确实践活动，标注为S。",
+      "issues": []
+    }
+  ]
+}

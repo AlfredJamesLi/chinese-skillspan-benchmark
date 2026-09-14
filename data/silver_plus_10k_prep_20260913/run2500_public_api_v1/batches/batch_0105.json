@@ -1,0 +1,265 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 51.204,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5010,
+    "completion_tokens": 1605,
+    "total_tokens": 6615,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 658
+    },
+    "input_tokens": 5010,
+    "output_tokens": 1605,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01041\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅泛指岗位所需条件，未提及具体专业、资格或技能。\",\"issues\":[]},{\"id\":\"sp10k-01042\",\"spans\":[{\"start\":4,\"end\":7,\"text\":\"制造业\",\"label\":\"K\"},{\"start\":7,\"end\":11,\"text\":\"质量管理\",\"label\":\"S\"},{\"start\":40,\"end\":45,\"text\":\"团队的管理\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"行业背景标K，质量管理职能标S，通用团队管理标T；年限、人数及任职头衔不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01043\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"实战性强\",\"label\":\"T\"},{\"start\":8,\"end\":12,\"text\":\"文字功底\",\"label\":\"T\"},{\"start\":13,\"end\":17,\"text\":\"思维活跃\",\"label\":\"T\"},{\"start\":18,\"end\":22,\"text\":\"创新能力\",\"label\":\"T\"},{\"start\":26,\"end\":33,\"text\":\"多元化内容编辑\",\"label\":\"S\"},{\"start\":34,\"end\":41,\"text\":\"多维度观察视角\",\"label\":\"T\"},{\"start\":42,\"end\":46,\"text\":\"执行能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"内容编辑为职业活动；文字功底、思维、创新、观察视角和执行能力等为通用能力或特质。\",\"issues\":[]},{\"id\":\"sp10k-01044\",\"spans\":[{\"start\":4,\"end\":35,\"text\":\"操作系统（如Window,Linux等系统）的安装、配置和维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"安装、配置和维护共享操作系统对象，保留完整连续活动短语，不嵌套标注工具示例。\",\"issues\":[]},{\"id\":\"sp10k-01045\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于专业目录适用范围说明，未列出具体专业或能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01046\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"数据库系统操作\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"网站维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"两项均为明确职业活动，去除经验及优先等修饰后意义完整。\",\"issues\":[]},{\"id\":\"sp10k-01047\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"科研项目（团队）审批手续办理\",\"label\":\"S\"},{\"start\":17,\"end\":21,\"text\":\"文件管理\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"成果管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分三项独立职业职责，审批手续办理保留其具体对象。\",\"issues\":[]},{\"id\":\"sp10k-01048\",\"spans\":[{\"start\":5,\"end\":7,\"text\":\"酒店\",\"label\":\"K\"},{\"start\":8,\"end\":13,\"text\":\"高端服务业\",\"label\":\"K\"}],\"status\":\"adjudication_required\",\"note\":\"酒店及高端服务业为明确行业背景；精品机构所指背景不够明确，暂不进入主层。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"精品机构经验\",\"alternatives\":[\"属于具体行业或机构类型背景要求，纳入标注\",\"仅为泛化机构工作经历，不纳入标注\"],\"reason\":\"未说明精品机构的行业、业务或具体实践内容，无法确定是否为可标注的具体背景要求。\"}]},{\"id\":\"sp10k-01049\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅泛称专业技术条件、任职资格及技能要求，没有具体资格名或能力提及。\",\"issues\":[]},{\"id\":\"sp10k-01050\",\"spans\":[{\"start\":6,\"end\":8,\"text\":\"暖通\",\"label\":\"K\"},{\"start\":19,\"end\":23,\"text\":\"团队管理\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"暖通为专业领域背景，团队管理为通用管理能力；不标年限与泛化经验后缀。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01041",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅泛指岗位所需条件，未提及具体专业、资格或技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01042",
+        "spans": [
+          {
+            "start": 4,
+            "end": 7,
+            "text": "制造业",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "质量管理",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 45,
+            "text": "团队的管理",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "行业背景标K，质量管理职能标S，通用团队管理标T；年限、人数及任职头衔不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01043",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "实战性强",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "文字功底",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "思维活跃",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "创新能力",
+            "label": "T"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "text": "多元化内容编辑",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 41,
+            "text": "多维度观察视角",
+            "label": "T"
+          },
+          {
+            "start": 42,
+            "end": 46,
+            "text": "执行能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "内容编辑为职业活动；文字功底、思维、创新、观察视角和执行能力等为通用能力或特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01044",
+        "spans": [
+          {
+            "start": 4,
+            "end": 35,
+            "text": "操作系统（如Window,Linux等系统）的安装、配置和维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "安装、配置和维护共享操作系统对象，保留完整连续活动短语，不嵌套标注工具示例。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01045",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于专业目录适用范围说明，未列出具体专业或能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01046",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "数据库系统操作",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "网站维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项均为明确职业活动，去除经验及优先等修饰后意义完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01047",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "科研项目（团队）审批手续办理",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "文件管理",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "成果管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分三项独立职业职责，审批手续办理保留其具体对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01048",
+        "spans": [
+          {
+            "start": 5,
+            "end": 7,
+            "text": "酒店",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "text": "高端服务业",
+            "label": "K"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "酒店及高端服务业为明确行业背景；精品机构所指背景不够明确，暂不进入主层。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "精品机构经验",
+            "alternatives": [
+              "属于具体行业或机构类型背景要求，纳入标注",
+              "仅为泛化机构工作经历，不纳入标注"
+            ],
+            "reason": "未说明精品机构的行业、业务或具体实践内容，无法确定是否为可标注的具体背景要求。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-01049",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅泛称专业技术条件、任职资格及技能要求，没有具体资格名或能力提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01050",
+        "spans": [
+          {
+            "start": 6,
+            "end": 8,
+            "text": "暖通",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "团队管理",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "暖通为专业领域背景，团队管理为通用管理能力；不标年限与泛化经验后缀。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 105,
+  "ids": [
+    "sp10k-01041",
+    "sp10k-01042",
+    "sp10k-01043",
+    "sp10k-01044",
+    "sp10k-01045",
+    "sp10k-01046",
+    "sp10k-01047",
+    "sp10k-01048",
+    "sp10k-01049",
+    "sp10k-01050"
+  ],
+  "at": "2026-09-13T15:18:28.020467+00:00"
+}

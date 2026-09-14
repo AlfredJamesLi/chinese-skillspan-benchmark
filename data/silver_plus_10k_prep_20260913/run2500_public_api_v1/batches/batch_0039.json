@@ -1,0 +1,374 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 38.278,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4981,
+    "completion_tokens": 1177,
+    "total_tokens": 6158,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 415
+    },
+    "input_tokens": 4981,
+    "output_tokens": 1177,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00383",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            19,
+            27
+          ],
+          "to": [
+            15,
+            23
+          ],
+          "text": "医学专业基础知识"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            28,
+            34
+          ],
+          "to": [
+            24,
+            30
+          ],
+          "text": "公共基础知识"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00385",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "拜访部门的重要客户"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            32
+          ],
+          "to": [
+            15,
+            31
+          ],
+          "text": "检查客户经理对客户的定期访问情况"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            34,
+            38
+          ],
+          "to": [
+            32,
+            36
+          ],
+          "text": "跟进情况"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            39,
+            46
+          ],
+          "to": [
+            37,
+            45
+          ],
+          "text": "随时了解客户要求"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00386",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            9
+          ],
+          "to": [
+            2,
+            8
+          ],
+          "text": "电脑操作系统"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            25,
+            31
+          ],
+          "to": [
+            20,
+            29
+          ],
+          "text": "台式电脑要求会拆装"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00390",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            21
+          ],
+          "to": [
+            14,
+            19
+          ],
+          "text": "SQL语言"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00381\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"java\",\"label\":\"S\"},{\"start\":7,\"end\":17,\"text\":\"Javascript\",\"label\":\"S\"},{\"start\":20,\"end\":26,\"text\":\"python\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"编程语言作为岗位技能要求，按可执行技术工具标注为S。\",\"issues\":[]},{\"id\":\"sp10k-00382\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明专业或技能条件的泛化资格要求，未给出具体专业、知识或技能提及。\",\"issues\":[]},{\"id\":\"sp10k-00383\",\"spans\":[{\"start\":19,\"end\":27,\"text\":\"医学专业基础知识\",\"label\":\"K\"},{\"start\":28,\"end\":34,\"text\":\"公共基础知识\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"笔试内容中的具体知识领域按K标注。\",\"issues\":[]},{\"id\":\"sp10k-00384\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为考试时间、地点公布安排，属于报名或考试流程信息。\",\"issues\":[]},{\"id\":\"sp10k-00385\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"拜访部门的重要客户\",\"label\":\"S\"},{\"start\":12,\"end\":14,\"text\":\"监督\",\"label\":\"S\"},{\"start\":15,\"end\":32,\"text\":\"检查客户经理对客户的定期访问情况\",\"label\":\"S\"},{\"start\":34,\"end\":38,\"text\":\"跟进情况\",\"label\":\"S\"},{\"start\":39,\"end\":46,\"text\":\"随时了解客户要求\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取职责中明确要求执行的客户拜访、监督检查、跟进和了解客户要求等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00386\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"电脑操作系统\",\"label\":\"K\"},{\"start\":10,\"end\":12,\"text\":\"硬件\",\"label\":\"K\"},{\"start\":25,\"end\":31,\"text\":\"台式电脑要求会拆装\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"电脑操作系统和硬件为知识对象；台式电脑拆装为明确可执行技术活动。\",\"issues\":[]},{\"id\":\"sp10k-00387\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"电工证\",\"label\":\"K\"},{\"start\":7,\"end\":10,\"text\":\"焊工证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"电工证和焊工证属于非语言职业资格。\",\"issues\":[]},{\"id\":\"sp10k-00388\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅讨论资格条件的计算截止时间，未提出具体能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-00389\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅列出考试科目及题型，属于考试安排或选拔流程信息。\",\"issues\":[]},{\"id\":\"sp10k-00390\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"数据库管理技术\",\"label\":\"K\"},{\"start\":13,\"end\":21,\"text\":\"SQL语言\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库管理技术为领域知识；熟练使用SQL语言体现工具和技术运用，标注为S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00381",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "java",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 17,
+            "text": "Javascript",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "python",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "编程语言作为岗位技能要求，按可执行技术工具标注为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00382",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明专业或技能条件的泛化资格要求，未给出具体专业、知识或技能提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00383",
+        "spans": [
+          {
+            "start": 15,
+            "end": 23,
+            "text": "医学专业基础知识",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "公共基础知识",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "笔试内容中的具体知识领域按K标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00384",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为考试时间、地点公布安排，属于报名或考试流程信息。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00385",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "拜访部门的重要客户",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "监督",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 31,
+            "text": "检查客户经理对客户的定期访问情况",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "text": "跟进情况",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 45,
+            "text": "随时了解客户要求",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取职责中明确要求执行的客户拜访、监督检查、跟进和了解客户要求等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00386",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "电脑操作系统",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "硬件",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 29,
+            "text": "台式电脑要求会拆装",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "电脑操作系统和硬件为知识对象；台式电脑拆装为明确可执行技术活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00387",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "电工证",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "text": "焊工证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "电工证和焊工证属于非语言职业资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00388",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅讨论资格条件的计算截止时间，未提出具体能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00389",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅列出考试科目及题型，属于考试安排或选拔流程信息。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00390",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "数据库管理技术",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "text": "SQL语言",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库管理技术为领域知识；熟练使用SQL语言体现工具和技术运用，标注为S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 39,
+  "ids": [
+    "sp10k-00381",
+    "sp10k-00382",
+    "sp10k-00383",
+    "sp10k-00384",
+    "sp10k-00385",
+    "sp10k-00386",
+    "sp10k-00387",
+    "sp10k-00388",
+    "sp10k-00389",
+    "sp10k-00390"
+  ],
+  "at": "2026-09-13T14:22:48.188322+00:00"
+}

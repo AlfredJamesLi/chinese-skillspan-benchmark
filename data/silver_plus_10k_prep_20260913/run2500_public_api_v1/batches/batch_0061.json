@@ -1,0 +1,676 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 21.291,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5075,
+    "completion_tokens": 968,
+    "total_tokens": 6043,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 0
+    },
+    "input_tokens": 5075,
+    "output_tokens": 968,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00601",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            14
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "本科生教育教学"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            22,
+            26
+          ],
+          "to": [
+            18,
+            22
+          ],
+          "text": "课程建设"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            27,
+            31
+          ],
+          "to": [
+            23,
+            27
+          ],
+          "text": "教学运行"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            32,
+            36
+          ],
+          "to": [
+            28,
+            32
+          ],
+          "text": "学籍管理"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            37,
+            41
+          ],
+          "to": [
+            33,
+            37
+          ],
+          "text": "教学研究"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            42,
+            46
+          ],
+          "to": [
+            38,
+            42
+          ],
+          "text": "质量管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00602",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            17
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "shell脚本编程"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            24,
+            30
+          ],
+          "to": [
+            18,
+            28
+          ],
+          "text": "开发语言python"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            31,
+            35
+          ],
+          "to": [
+            29,
+            32
+          ],
+          "text": "php"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            36,
+            40
+          ],
+          "to": [
+            33,
+            37
+          ],
+          "text": "java"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00603",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "运维团队的建设"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "日常管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00604",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            8
+          ],
+          "text": "面向对象思想"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            21
+          ],
+          "to": [
+            18,
+            22
+          ],
+          "text": "逻辑思维"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00605",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            8
+          ],
+          "to": [
+            4,
+            7
+          ],
+          "text": "IDC"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            8,
+            11
+          ],
+          "text": "阿里云"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            13,
+            17
+          ],
+          "to": [
+            11,
+            14
+          ],
+          "text": "服务器"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00607",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "视频项目的售前沟通"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            19
+          ],
+          "to": [
+            12,
+            19
+          ],
+          "text": "招投标方案编写"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00608",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "网络系统"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            16
+          ],
+          "to": [
+            10,
+            12
+          ],
+          "text": "安全"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            19
+          ],
+          "to": [
+            13,
+            15
+          ],
+          "text": "管理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            20,
+            22
+          ],
+          "to": [
+            16,
+            18
+          ],
+          "text": "维护"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00610",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            11
+          ],
+          "to": [
+            0,
+            10
+          ],
+          "text": "全日制本科及以上学历"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00601\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"本科生教育教学\",\"label\":\"K\"},{\"start\":22,\"end\":26,\"text\":\"课程建设\",\"label\":\"S\"},{\"start\":27,\"end\":31,\"text\":\"教学运行\",\"label\":\"S\"},{\"start\":32,\"end\":36,\"text\":\"学籍管理\",\"label\":\"S\"},{\"start\":37,\"end\":41,\"text\":\"教学研究\",\"label\":\"S\"},{\"start\":42,\"end\":46,\"text\":\"质量管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取教育教学事务中的领域知识及明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00602\",\"spans\":[{\"start\":2,\"end\":17,\"text\":\"shell脚本编程\",\"label\":\"S\"},{\"start\":24,\"end\":30,\"text\":\"开发语言python\",\"label\":\"S\"},{\"start\":31,\"end\":35,\"text\":\"php\",\"label\":\"S\"},{\"start\":36,\"end\":40,\"text\":\"java\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"脚本编程及开发语言属于可执行技术能力。\",\"issues\":[]},{\"id\":\"sp10k-00603\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"运维团队的建设\",\"label\":\"S\"},{\"start\":11,\"end\":15,\"text\":\"日常管理\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取团队建设职业活动和通用管理能力。\",\"issues\":[]},{\"id\":\"sp10k-00604\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"面向对象思想\",\"label\":\"K\"},{\"start\":17,\"end\":21,\"text\":\"逻辑思维\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"面向对象思想为专业知识，逻辑思维为通用能力。\",\"issues\":[]},{\"id\":\"sp10k-00605\",\"spans\":[{\"start\":5,\"end\":8,\"text\":\"IDC\",\"label\":\"S\"},{\"start\":9,\"end\":13,\"text\":\"阿里云\",\"label\":\"S\"},{\"start\":13,\"end\":17,\"text\":\"服务器\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"维护对象及云服务平台属于岗位现用技术或工具语境。\",\"issues\":[]},{\"id\":\"sp10k-00606\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"全文为购房补贴及资格条件说明，属于福利待遇和公示信息，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00607\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"视频项目的售前沟通\",\"label\":\"S\"},{\"start\":11,\"end\":19,\"text\":\"招投标方案编写\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的售前沟通和方案编写职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00608\",\"spans\":[{\"start\":9,\"end\":13,\"text\":\"网络系统\",\"label\":\"K\"},{\"start\":14,\"end\":16,\"text\":\"安全\",\"label\":\"S\"},{\"start\":17,\"end\":19,\"text\":\"管理\",\"label\":\"S\"},{\"start\":20,\"end\":22,\"text\":\"维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"网络系统为领域对象，安全、管理和维护为明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00609\",\"spans\":[{\"start\":4,\"end\":9,\"text\":\"Axure\",\"label\":\"S\"},{\"start\":10,\"end\":17,\"text\":\"MindJet\",\"label\":\"S\"},{\"start\":18,\"end\":21,\"text\":\"PPT\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"Word\",\"label\":\"S\"},{\"start\":27,\"end\":32,\"text\":\"Excel\",\"label\":\"S\"},{\"start\":33,\"end\":40,\"text\":\"Project\",\"label\":\"S\"},{\"start\":41,\"end\":46,\"text\":\"Visio\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"均为明确要求使用的岗位软件工具。\",\"issues\":[]},{\"id\":\"sp10k-00610\",\"spans\":[{\"start\":0,\"end\":11,\"text\":\"全日制本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格名；专业类别为泛化相关专业，不单独标注。\",\"issues\":[]}]}\n",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00601",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "本科生教育教学",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "课程建设",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "教学运行",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "学籍管理",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "text": "教学研究",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "text": "质量管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取教育教学事务中的领域知识及明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00602",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "shell脚本编程",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 28,
+            "text": "开发语言python",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 32,
+            "text": "php",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "text": "java",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "脚本编程及开发语言属于可执行技术能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00603",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "运维团队的建设",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "日常管理",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取团队建设职业活动和通用管理能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00604",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "面向对象思想",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "逻辑思维",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "面向对象思想为专业知识，逻辑思维为通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00605",
+        "spans": [
+          {
+            "start": 4,
+            "end": 7,
+            "text": "IDC",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "text": "阿里云",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "text": "服务器",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "维护对象及云服务平台属于岗位现用技术或工具语境。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00606",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "全文为购房补贴及资格条件说明，属于福利待遇和公示信息，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00607",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "视频项目的售前沟通",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "text": "招投标方案编写",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的售前沟通和方案编写职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00608",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "网络系统",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "安全",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "text": "管理",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 18,
+            "text": "维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "网络系统为领域对象，安全、管理和维护为明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00609",
+        "spans": [
+          {
+            "start": 4,
+            "end": 9,
+            "text": "Axure",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "text": "MindJet",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 21,
+            "text": "PPT",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "Word",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 32,
+            "text": "Excel",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "text": "Project",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 46,
+            "text": "Visio",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为明确要求使用的岗位软件工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00610",
+        "spans": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "全日制本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格名；专业类别为泛化相关专业，不单独标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 61,
+  "ids": [
+    "sp10k-00601",
+    "sp10k-00602",
+    "sp10k-00603",
+    "sp10k-00604",
+    "sp10k-00605",
+    "sp10k-00606",
+    "sp10k-00607",
+    "sp10k-00608",
+    "sp10k-00609",
+    "sp10k-00610"
+  ],
+  "at": "2026-09-13T14:40:57.955820+00:00"
+}

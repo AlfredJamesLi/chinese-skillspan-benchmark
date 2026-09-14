@@ -1,0 +1,283 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 62.639,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5012,
+    "completion_tokens": 1760,
+    "total_tokens": 6772,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 787
+    },
+    "input_tokens": 5012,
+    "output_tokens": 1760,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00991\",\"spans\":[{\"start\":4,\"end\":6,\"text\":\"Go\",\"label\":\"S\"},{\"start\":7,\"end\":11,\"text\":\"Java\",\"label\":\"S\"},{\"start\":12,\"end\":18,\"text\":\"Python\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"编程语言处于明确使用语境，按岗位工具标S；不标熟练程度和数量要求。\",\"issues\":[]},{\"id\":\"sp10k-00992\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"设计相关软件\",\"label\":\"S\"},{\"start\":11,\"end\":18,\"text\":\"AutoCAD\",\"label\":\"S\"},{\"start\":19,\"end\":27,\"text\":\"SketchUp\",\"label\":\"S\"},{\"start\":28,\"end\":34,\"text\":\"3DSMax\",\"label\":\"S\"},{\"start\":37,\"end\":41,\"text\":\"办公软件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"软件类别及列举的具体软件均为岗位工具要求，分别标S。\",\"issues\":[]},{\"id\":\"sp10k-00993\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报考资格条件标题，未提供具体能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00994\",\"spans\":[],\"status\":\"adjudication_required\",\"note\":\"句子陈述学历对应的聘用岗位等级，尚不能确认是否同时限定候选人学历。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"大学本科毕业生\",\"alternatives\":[\"作为候选人学历要求纳入标注\",\"作为聘用定级政策的适用对象，不标\"],\"reason\":\"缺少招聘条件或聘用定级条款上下文，无法确认其是否构成候选人资格门槛。\"}]},{\"id\":\"sp10k-00995\",\"spans\":[{\"start\":2,\"end\":35,\"text\":\"制定机房环境及各类设施设备的安全运行、资源配置等技术标准和管理规范\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"制定标准与规范为明确职业活动；保留共享动作及必要对象，不将被制定的标准嵌套标K。\",\"issues\":[]},{\"id\":\"sp10k-00996\",\"spans\":[{\"start\":47,\"end\":55,\"text\":\"硕士研究生及以上\",\"label\":\"K\"},{\"start\":58,\"end\":63,\"text\":\"外科学专业\",\"label\":\"K\"},{\"start\":80,\"end\":82,\"text\":\"专硕\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历及专业资格；岗位名称、岗位等级、人数和应届身份不作为技能知识提及。\",\"issues\":[]},{\"id\":\"sp10k-00997\",\"spans\":[{\"start\":4,\"end\":7,\"text\":\"PHP\",\"label\":\"S\"},{\"start\":8,\"end\":12,\"text\":\"JAVA\",\"label\":\"S\"},{\"start\":13,\"end\":14,\"text\":\"C\",\"label\":\"S\"},{\"start\":15,\"end\":17,\"text\":\"安卓\",\"label\":\"S\"},{\"start\":28,\"end\":32,\"text\":\"软件维护\",\"label\":\"S\"},{\"start\":33,\"end\":39,\"text\":\"软件二次开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"按原文保留技术名称；使用工具、软件维护及二次开发均属职业技能。\",\"issues\":[]},{\"id\":\"sp10k-00998\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"数据库中表结构梳理\",\"label\":\"S\"},{\"start\":12,\"end\":18,\"text\":\"数据加工转换\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"将表结构梳理和数据加工转换拆为两项完整职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00999\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明面试成绩并列时的录用排序流程，不抽取考试流程中的能力测试名称。\",\"issues\":[]},{\"id\":\"sp10k-01000\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"数据库的维护\",\"label\":\"S\"},{\"start\":9,\"end\":13,\"text\":\"数据备份\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"数据安全\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"三项并列内容均由负责相关工作限定，按实际职业职能标S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00991",
+        "spans": [
+          {
+            "start": 4,
+            "end": 6,
+            "text": "Go",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "Java",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "text": "Python",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "编程语言处于明确使用语境，按岗位工具标S；不标熟练程度和数量要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00992",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "设计相关软件",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "text": "AutoCAD",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 27,
+            "text": "SketchUp",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "text": "3DSMax",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 41,
+            "text": "办公软件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "软件类别及列举的具体软件均为岗位工具要求，分别标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00993",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报考资格条件标题，未提供具体能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00994",
+        "spans": [],
+        "status": "adjudication_required",
+        "note": "句子陈述学历对应的聘用岗位等级，尚不能确认是否同时限定候选人学历。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "大学本科毕业生",
+            "alternatives": [
+              "作为候选人学历要求纳入标注",
+              "作为聘用定级政策的适用对象，不标"
+            ],
+            "reason": "缺少招聘条件或聘用定级条款上下文，无法确认其是否构成候选人资格门槛。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00995",
+        "spans": [
+          {
+            "start": 2,
+            "end": 35,
+            "text": "制定机房环境及各类设施设备的安全运行、资源配置等技术标准和管理规范",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "制定标准与规范为明确职业活动；保留共享动作及必要对象，不将被制定的标准嵌套标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00996",
+        "spans": [
+          {
+            "start": 47,
+            "end": 55,
+            "text": "硕士研究生及以上",
+            "label": "K"
+          },
+          {
+            "start": 58,
+            "end": 63,
+            "text": "外科学专业",
+            "label": "K"
+          },
+          {
+            "start": 80,
+            "end": 82,
+            "text": "专硕",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历及专业资格；岗位名称、岗位等级、人数和应届身份不作为技能知识提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00997",
+        "spans": [
+          {
+            "start": 4,
+            "end": 7,
+            "text": "PHP",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "JAVA",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 14,
+            "text": "C",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "安卓",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "软件维护",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 39,
+            "text": "软件二次开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "按原文保留技术名称；使用工具、软件维护及二次开发均属职业技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00998",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "数据库中表结构梳理",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "text": "数据加工转换",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "将表结构梳理和数据加工转换拆为两项完整职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00999",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明面试成绩并列时的录用排序流程，不抽取考试流程中的能力测试名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01000",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "数据库的维护",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "数据备份",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "数据安全",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "三项并列内容均由负责相关工作限定，按实际职业职能标S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 100,
+  "ids": [
+    "sp10k-00991",
+    "sp10k-00992",
+    "sp10k-00993",
+    "sp10k-00994",
+    "sp10k-00995",
+    "sp10k-00996",
+    "sp10k-00997",
+    "sp10k-00998",
+    "sp10k-00999",
+    "sp10k-01000"
+  ],
+  "at": "2026-09-13T15:14:25.161033+00:00"
+}

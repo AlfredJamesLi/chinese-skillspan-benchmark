@@ -1,0 +1,243 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 41.196,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5030,
+    "completion_tokens": 1204,
+    "total_tokens": 6234,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 434
+    },
+    "input_tokens": 5030,
+    "output_tokens": 1204,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01057",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            21,
+            28
+          ],
+          "to": [
+            22,
+            28
+          ],
+          "text": "基础IT设备"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01051\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"应聘材料真实性及违规处理规定，不属于能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01052\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"后台业务绩效系统的自动化测试\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确测试职责，保留测试对象，去除职责触发词和泛化工作后缀。\",\"issues\":[]},{\"id\":\"sp10k-01053\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"学校及学位培养体系介绍，不是候选人的学历要求。\",\"issues\":[]},{\"id\":\"sp10k-01054\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"资格初审结果通知流程，不属于候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01055\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"客户现场问题的处理和协调\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确客户现场问题处置职责，处理和协调共享职业对象，保留完整跨度。\",\"issues\":[]},{\"id\":\"sp10k-01056\",\"spans\":[{\"start\":10,\"end\":15,\"text\":\"普通话标准\",\"label\":\"L\"}],\"status\":\"candidate_complete\",\"note\":\"普通话及水平要求标L；身体、外貌要求排除，专业对口未指明具体专业。\",\"issues\":[]},{\"id\":\"sp10k-01057\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"局域网架构\",\"label\":\"K\"},{\"start\":13,\"end\":17,\"text\":\"网络产品\",\"label\":\"K\"},{\"start\":21,\"end\":28,\"text\":\"基础IT设备\",\"label\":\"K\"},{\"start\":31,\"end\":34,\"text\":\"服务器\",\"label\":\"K\"},{\"start\":35,\"end\":37,\"text\":\"存储\",\"label\":\"K\"},{\"start\":38,\"end\":41,\"text\":\"路由器\",\"label\":\"K\"},{\"start\":42,\"end\":45,\"text\":\"防火墙\",\"label\":\"K\"},{\"start\":55,\"end\":68,\"text\":\"路由器和交换机的常规的配置\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"前段要求了解网络架构、产品和设备，按知识标K；后段明确设备配置操作，标S并保留共享配置动作。\",\"issues\":[]},{\"id\":\"sp10k-01058\",\"spans\":[{\"start\":2,\"end\":19,\"text\":\"网络安全防护体系和运维工作整体规划\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确专业规划职责，两个对象共享整体规划，保留完整动作跨度。\",\"issues\":[]},{\"id\":\"sp10k-01059\",\"spans\":[{\"start\":4,\"end\":15,\"text\":\"空气托管运营的市场行情\",\"label\":\"K\"},{\"start\":18,\"end\":24,\"text\":\"装修施工结算\",\"label\":\"S\"},{\"start\":25,\"end\":27,\"text\":\"预算\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"市场行情为领域知识；结算和预算为专业职业活动，预算的装修施工限定由局部语境承接。\",\"issues\":[]},{\"id\":\"sp10k-01060\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅包含泛化交付结果要求和长期合约条件，没有具体能力或职业方法提及。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01051",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "应聘材料真实性及违规处理规定，不属于能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01052",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "后台业务绩效系统的自动化测试",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确测试职责，保留测试对象，去除职责触发词和泛化工作后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01053",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "学校及学位培养体系介绍，不是候选人的学历要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01054",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "资格初审结果通知流程，不属于候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01055",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "客户现场问题的处理和协调",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确客户现场问题处置职责，处理和协调共享职业对象，保留完整跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01056",
+        "spans": [
+          {
+            "start": 10,
+            "end": 15,
+            "text": "普通话标准",
+            "label": "L"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "普通话及水平要求标L；身体、外貌要求排除，专业对口未指明具体专业。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01057",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "局域网架构",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "网络产品",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "基础IT设备",
+            "label": "K"
+          },
+          {
+            "start": 31,
+            "end": 34,
+            "text": "服务器",
+            "label": "K"
+          },
+          {
+            "start": 35,
+            "end": 37,
+            "text": "存储",
+            "label": "K"
+          },
+          {
+            "start": 38,
+            "end": 41,
+            "text": "路由器",
+            "label": "K"
+          },
+          {
+            "start": 42,
+            "end": 45,
+            "text": "防火墙",
+            "label": "K"
+          },
+          {
+            "start": 55,
+            "end": 68,
+            "text": "路由器和交换机的常规的配置",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "前段要求了解网络架构、产品和设备，按知识标K；后段明确设备配置操作，标S并保留共享配置动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01058",
+        "spans": [
+          {
+            "start": 2,
+            "end": 19,
+            "text": "网络安全防护体系和运维工作整体规划",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确专业规划职责，两个对象共享整体规划，保留完整动作跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01059",
+        "spans": [
+          {
+            "start": 4,
+            "end": 15,
+            "text": "空气托管运营的市场行情",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "text": "装修施工结算",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 27,
+            "text": "预算",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "市场行情为领域知识；结算和预算为专业职业活动，预算的装修施工限定由局部语境承接。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01060",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅包含泛化交付结果要求和长期合约条件，没有具体能力或职业方法提及。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 106,
+  "ids": [
+    "sp10k-01051",
+    "sp10k-01052",
+    "sp10k-01053",
+    "sp10k-01054",
+    "sp10k-01055",
+    "sp10k-01056",
+    "sp10k-01057",
+    "sp10k-01058",
+    "sp10k-01059",
+    "sp10k-01060"
+  ],
+  "at": "2026-09-13T15:19:09.682019+00:00"
+}

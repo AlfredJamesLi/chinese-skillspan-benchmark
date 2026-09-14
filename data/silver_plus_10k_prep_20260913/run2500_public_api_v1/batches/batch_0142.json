@@ -1,0 +1,258 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 51.813,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5111,
+    "completion_tokens": 1527,
+    "total_tokens": 6638,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 633
+    },
+    "input_tokens": 5111,
+    "output_tokens": 1527,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01411\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为考试科目与收费说明，不构成候选人能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01412\",\"spans\":[{\"start\":11,\"end\":15,\"text\":\"电气电力\",\"label\":\"K\"},{\"start\":16,\"end\":21,\"text\":\"机电一体化\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取具体专业名；泛化工作经验、年限及“相关专业”不标。\",\"issues\":[]},{\"id\":\"sp10k-01413\",\"spans\":[{\"start\":27,\"end\":46,\"text\":\"中等职业学校或高中及以上层次教师资格证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留包含学校层次限定的完整教师资格要求；报考岗位学科名称不另作能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01414\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅描述拟引进对象确定及签订就业协议的行政流程。\",\"issues\":[]},{\"id\":\"sp10k-01415\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明考核成绩占比，未提出具体能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01416\",\"spans\":[{\"start\":0,\"end\":5,\"text\":\"计算机网络\",\"label\":\"K\"},{\"start\":6,\"end\":9,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":14,\"end\":20,\"text\":\"专科以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取专业名称和完整学历资格。\",\"issues\":[]},{\"id\":\"sp10k-01417\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"档案管理\",\"label\":\"S\"},{\"start\":7,\"end\":15,\"text\":\"设施设备资料建档\",\"label\":\"S\"},{\"start\":18,\"end\":39,\"text\":\"设施设备技术资料及记录资料的档案管理及完善\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"档案管理为明确职业职能；建档与后续管理完善分别抽取，后项保留共享资料对象。\",\"issues\":[]},{\"id\":\"sp10k-01418\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅列举招聘考察事项，未明确提出具体能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01419\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"独当一面\",\"label\":\"T\"},{\"start\":9,\"end\":15,\"text\":\"独立思考能力\",\"label\":\"T\"},{\"start\":18,\"end\":22,\"text\":\"认真负责\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取独立承担事务、思考及工作态度方面的通用能力与特质。\",\"issues\":[]},{\"id\":\"sp10k-01420\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"网络设备\",\"label\":\"S\"},{\"start\":7,\"end\":11,\"text\":\"网络知识\",\"label\":\"K\"},{\"start\":14,\"end\":20,\"text\":\"TCP/IP\",\"label\":\"K\"},{\"start\":22,\"end\":29,\"text\":\"服务器硬件知识\",\"label\":\"K\"},{\"start\":33,\"end\":41,\"text\":\"设备核心参数概念\",\"label\":\"K\"},{\"start\":51,\"end\":55,\"text\":\"硬件型号\",\"label\":\"K\"},{\"start\":56,\"end\":60,\"text\":\"应用场景\",\"label\":\"K\"}],\"status\":\"adjudication_required\",\"note\":\"明确知识、协议及概念提及标K；网络设备缺少实际运用或知识学习的明确限定，暂标S并登记类型待决。\",\"issues\":[{\"kind\":\"type\",\"text\":\"网络设备\",\"alternatives\":[\"K\",\"S\"],\"reason\":\"“熟悉网络设备”既可能要求设备相关知识，也可能要求岗位工具运用能力；局部未说明操作或原理语境，无法确定类型。\"}]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01411",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为考试科目与收费说明，不构成候选人能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01412",
+        "spans": [
+          {
+            "start": 11,
+            "end": 15,
+            "text": "电气电力",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "text": "机电一体化",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取具体专业名；泛化工作经验、年限及“相关专业”不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01413",
+        "spans": [
+          {
+            "start": 27,
+            "end": 46,
+            "text": "中等职业学校或高中及以上层次教师资格证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留包含学校层次限定的完整教师资格要求；报考岗位学科名称不另作能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01414",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅描述拟引进对象确定及签订就业协议的行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01415",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明考核成绩占比，未提出具体能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01416",
+        "spans": [
+          {
+            "start": 0,
+            "end": 5,
+            "text": "计算机网络",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 9,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "专科以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取专业名称和完整学历资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01417",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "档案管理",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 15,
+            "text": "设施设备资料建档",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 39,
+            "text": "设施设备技术资料及记录资料的档案管理及完善",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "档案管理为明确职业职能；建档与后续管理完善分别抽取，后项保留共享资料对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01418",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅列举招聘考察事项，未明确提出具体能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01419",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "独当一面",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "独立思考能力",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "认真负责",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取独立承担事务、思考及工作态度方面的通用能力与特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01420",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "网络设备",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "网络知识",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "TCP/IP",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 29,
+            "text": "服务器硬件知识",
+            "label": "K"
+          },
+          {
+            "start": 33,
+            "end": 41,
+            "text": "设备核心参数概念",
+            "label": "K"
+          },
+          {
+            "start": 51,
+            "end": 55,
+            "text": "硬件型号",
+            "label": "K"
+          },
+          {
+            "start": 56,
+            "end": 60,
+            "text": "应用场景",
+            "label": "K"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "明确知识、协议及概念提及标K；网络设备缺少实际运用或知识学习的明确限定，暂标S并登记类型待决。",
+        "issues": [
+          {
+            "kind": "type",
+            "text": "网络设备",
+            "alternatives": [
+              "K",
+              "S"
+            ],
+            "reason": "“熟悉网络设备”既可能要求设备相关知识，也可能要求岗位工具运用能力；局部未说明操作或原理语境，无法确定类型。"
+          }
+        ]
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 142,
+  "ids": [
+    "sp10k-01411",
+    "sp10k-01412",
+    "sp10k-01413",
+    "sp10k-01414",
+    "sp10k-01415",
+    "sp10k-01416",
+    "sp10k-01417",
+    "sp10k-01418",
+    "sp10k-01419",
+    "sp10k-01420"
+  ],
+  "at": "2026-09-13T15:58:41.547836+00:00"
+}

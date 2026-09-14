@@ -1,0 +1,293 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 53.623,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5038,
+    "completion_tokens": 1568,
+    "total_tokens": 6606,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 807
+    },
+    "input_tokens": 5038,
+    "output_tokens": 1568,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00582",
+      "repairs": [
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            28,
+            34
+          ],
+          "to": [
+            33,
+            39
+          ],
+          "text": "资源整合能力"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            35,
+            41
+          ],
+          "to": [
+            40,
+            46
+          ],
+          "text": "业务推进能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00587",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            22
+          ],
+          "to": [
+            16,
+            24
+          ],
+          "text": "Java研发经验"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00589",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            6,
+            11
+          ],
+          "text": "计算机语言"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00581\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"资格初审异议陈述申辩的时间安排，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00582\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"敏感市场意识\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"思维活跃\",\"label\":\"T\"},{\"start\":16,\"end\":18,\"text\":\"策划\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"解决问题\",\"label\":\"T\"},{\"start\":28,\"end\":34,\"text\":\"资源整合能力\",\"label\":\"T\"},{\"start\":35,\"end\":41,\"text\":\"业务推进能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用特质、通用问题解决能力，以及明确的职业策划、资源整合和业务推进能力。\",\"issues\":[]},{\"id\":\"sp10k-00583\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"分析客户消费数据\",\"label\":\"S\"},{\"start\":15,\"end\":23,\"text\":\"提出相应解决方案\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"两项均为职责中明确要求执行的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00584\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为招聘资格和基本条件的标题性表述，未给出具体资格或能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00585\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"SQL数据库\",\"label\":\"S\"},{\"start\":9,\"end\":20,\"text\":\"Delphi等开发语言\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"语境要求熟悉数据库及开发语言，按岗位工具和开发语言运用标注为S。\",\"issues\":[]},{\"id\":\"sp10k-00586\",\"spans\":[{\"start\":4,\"end\":16,\"text\":\"业务语音、短信平台的维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确的职业平台维护活动。\",\"issues\":[]},{\"id\":\"sp10k-00587\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"Java基础\",\"label\":\"K\"},{\"start\":14,\"end\":22,\"text\":\"Java研发经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"Java基础属于知识要求；Java研发经验保留完整实践经历并按S标注。\",\"issues\":[]},{\"id\":\"sp10k-00588\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"报名信息填写、资格取消及相关处理属于报考行政流程和管理说明，不属于候选人能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00589\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"计算机语言\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"要求精通计算机语言，属于可执行技术语言能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00590\",\"spans\":[{\"start\":2,\"end\":26,\"text\":\"河北南网智能电网D5000平台的维护、升级、消缺\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"整体为针对特定平台的连续维护、升级和故障消缺职责，保留必要对象与共享动作语义。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00581",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "资格初审异议陈述申辩的时间安排，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00582",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "敏感市场意识",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "思维活跃",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 18,
+            "text": "策划",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "解决问题",
+            "label": "T"
+          },
+          {
+            "start": 33,
+            "end": 39,
+            "text": "资源整合能力",
+            "label": "T"
+          },
+          {
+            "start": 40,
+            "end": 46,
+            "text": "业务推进能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用特质、通用问题解决能力，以及明确的职业策划、资源整合和业务推进能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00583",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "分析客户消费数据",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "text": "提出相应解决方案",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项均为职责中明确要求执行的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00584",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为招聘资格和基本条件的标题性表述，未给出具体资格或能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00585",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "SQL数据库",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 20,
+            "text": "Delphi等开发语言",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "语境要求熟悉数据库及开发语言，按岗位工具和开发语言运用标注为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00586",
+        "spans": [
+          {
+            "start": 4,
+            "end": 16,
+            "text": "业务语音、短信平台的维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确的职业平台维护活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00587",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "Java基础",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "text": "Java研发经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Java基础属于知识要求；Java研发经验保留完整实践经历并按S标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00588",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "报名信息填写、资格取消及相关处理属于报考行政流程和管理说明，不属于候选人能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00589",
+        "spans": [
+          {
+            "start": 6,
+            "end": 11,
+            "text": "计算机语言",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "要求精通计算机语言，属于可执行技术语言能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00590",
+        "spans": [
+          {
+            "start": 2,
+            "end": 26,
+            "text": "河北南网智能电网D5000平台的维护、升级、消缺",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "整体为针对特定平台的连续维护、升级和故障消缺职责，保留必要对象与共享动作语义。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 59,
+  "ids": [
+    "sp10k-00581",
+    "sp10k-00582",
+    "sp10k-00583",
+    "sp10k-00584",
+    "sp10k-00585",
+    "sp10k-00586",
+    "sp10k-00587",
+    "sp10k-00588",
+    "sp10k-00589",
+    "sp10k-00590"
+  ],
+  "at": "2026-09-13T14:40:14.858626+00:00"
+}

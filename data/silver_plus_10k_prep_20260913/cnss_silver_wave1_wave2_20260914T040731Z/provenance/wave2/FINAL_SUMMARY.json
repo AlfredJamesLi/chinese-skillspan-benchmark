@@ -1,0 +1,41 @@
+{
+  "wave": "wave2",
+  "state": "complete",
+  "batches": 73,
+  "records": 1810,
+  "remaining_records": 0,
+  "spans": 3861,
+  "label_counts": {
+    "S": 2108,
+    "K": 995,
+    "T": 738,
+    "L": 20
+  },
+  "status_counts": {
+    "candidate_complete": 1159,
+    "adjudication_required": 110,
+    "confirmed_empty": 541
+  },
+  "issue_count": 137,
+  "issue_kind_counts": {
+    "scope": 47,
+    "type": 83,
+    "boundary": 7
+  },
+  "offset_corrections": 6,
+  "cli_elapsed_seconds_sum": 12991.150647100061,
+  "cli_usage_totals": {
+    "input_tokens": 1749825,
+    "cached_input_tokens": 590336,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 384738,
+    "reasoning_output_tokens": 225762
+  },
+  "usage_note": "Actual successful CLI turn.completed events, not API billing; shared-account quota is not precisely attributable.",
+  "validation": "All completed batch artifacts rechecked: schema, IDs and order, Unicode codepoint half-open exact slices, nonoverlap, status/issues, mappings, hashes.",
+  "human_accuracy": "not_evaluated",
+  "candidate_silver_only": true,
+  "start_utc": "2026-09-13T17:34:55.751369+00:00",
+  "end_utc": "2026-09-13T21:11:34.897063+00:00",
+  "aggregate_sha256": "4b5a218af4d5d6d616b856789b2bc0cdb07e3e4fd54dfba76b9ce064fa9b8496"
+}

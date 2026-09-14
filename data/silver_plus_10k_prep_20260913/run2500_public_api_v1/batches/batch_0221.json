@@ -1,0 +1,288 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 58.052,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5005,
+    "completion_tokens": 1867,
+    "total_tokens": 6872,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 898
+    },
+    "input_tokens": 5005,
+    "output_tokens": 1867,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06006\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"政治理论\",\"label\":\"K\"},{\"start\":12,\"end\":16,\"text\":\"党性修养\",\"label\":\"T\"},{\"start\":17,\"end\":21,\"text\":\"政治觉悟\",\"label\":\"T\"},{\"start\":25,\"end\":31,\"text\":\"党务业务知识\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"政治理论及党务知识为知识要求；党性修养、政治觉悟按个人特质标注。\",\"issues\":[]},{\"id\":\"sp10k-06007\",\"spans\":[{\"start\":7,\"end\":16,\"text\":\"工程质量控制与检查\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"控制与检查共享工程质量对象，保留完整职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06008\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"人才团队建设\",\"label\":\"T\"},{\"start\":15,\"end\":21,\"text\":\"人才团队组建\",\"label\":\"T\"},{\"start\":24,\"end\":35,\"text\":\"人才团队优化配置及培养\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"团队建设、组建及配置培养按通用组织管理能力标注；末项保留共享对象。\",\"issues\":[]},{\"id\":\"sp10k-06009\",\"spans\":[{\"start\":5,\"end\":12,\"text\":\"本科或以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留完整学历资格；放宽条件不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-06010\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"思维清晰\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"沟通能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取思维特质和通用沟通能力。\",\"issues\":[]},{\"id\":\"sp10k-06011\",\"spans\":[{\"start\":3,\"end\":9,\"text\":\"品牌内容创作\",\"label\":\"S\"},{\"start\":10,\"end\":28,\"text\":\"将幕墙专业内容转化为易传播的品牌素材\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"内容创作与专业内容转化为两项职业活动；转化活动保留完整对象与目标。\",\"issues\":[]},{\"id\":\"sp10k-06012\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":20,\"text\":\"机械设计制造及自动化专业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取完整学历资格和专业名称。\",\"issues\":[]},{\"id\":\"sp10k-06013\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"电气原理图\",\"label\":\"K\"},{\"start\":8,\"end\":15,\"text\":\"元器件布局要求\",\"label\":\"K\"},{\"start\":16,\"end\":20,\"text\":\"技术协议\",\"label\":\"K\"},{\"start\":21,\"end\":25,\"text\":\"行业标准\",\"label\":\"K\"},{\"start\":28,\"end\":58,\"text\":\"柜体的整体布局，散热，接地，防护等级(IP)及安装维护性设计\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"设计依据按知识与规范标注；多个设计对象共享柜体限定及设计动作，保留连续完整活动。\",\"issues\":[]},{\"id\":\"sp10k-06014\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"性格外向\",\"label\":\"T\"},{\"start\":9,\"end\":15,\"text\":\"学习适应能力\",\"label\":\"T\"},{\"start\":16,\"end\":19,\"text\":\"责任心\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取性格、学习适应能力及责任心，排除程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-06015\",\"spans\":[{\"start\":0,\"end\":14,\"text\":\"执行项目部下达的各项生产计划\",\"label\":\"S\"},{\"start\":19,\"end\":31,\"text\":\"化学运行的生产技术和管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"生产计划执行及化学运行生产技术管理为职业活动；保证系统安全、经济和可靠运行仅为结果要求，不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06006",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "政治理论",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "党性修养",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "政治觉悟",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "text": "党务业务知识",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "政治理论及党务知识为知识要求；党性修养、政治觉悟按个人特质标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06007",
+        "spans": [
+          {
+            "start": 7,
+            "end": 16,
+            "text": "工程质量控制与检查",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "控制与检查共享工程质量对象，保留完整职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06008",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "人才团队建设",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "人才团队组建",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 35,
+            "text": "人才团队优化配置及培养",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "团队建设、组建及配置培养按通用组织管理能力标注；末项保留共享对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06009",
+        "spans": [
+          {
+            "start": 5,
+            "end": 12,
+            "text": "本科或以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留完整学历资格；放宽条件不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06010",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "思维清晰",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "沟通能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取思维特质和通用沟通能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06011",
+        "spans": [
+          {
+            "start": 3,
+            "end": 9,
+            "text": "品牌内容创作",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 28,
+            "text": "将幕墙专业内容转化为易传播的品牌素材",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "内容创作与专业内容转化为两项职业活动；转化活动保留完整对象与目标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06012",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 20,
+            "text": "机械设计制造及自动化专业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取完整学历资格和专业名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06013",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "电气原理图",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 15,
+            "text": "元器件布局要求",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "技术协议",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "行业标准",
+            "label": "K"
+          },
+          {
+            "start": 28,
+            "end": 58,
+            "text": "柜体的整体布局，散热，接地，防护等级(IP)及安装维护性设计",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设计依据按知识与规范标注；多个设计对象共享柜体限定及设计动作，保留连续完整活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06014",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "性格外向",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "学习适应能力",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "text": "责任心",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取性格、学习适应能力及责任心，排除程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06015",
+        "spans": [
+          {
+            "start": 0,
+            "end": 14,
+            "text": "执行项目部下达的各项生产计划",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 31,
+            "text": "化学运行的生产技术和管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "生产计划执行及化学运行生产技术管理为职业活动；保证系统安全、经济和可靠运行仅为结果要求，不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 221,
+  "ids": [
+    "sp10k-06006",
+    "sp10k-06007",
+    "sp10k-06008",
+    "sp10k-06009",
+    "sp10k-06010",
+    "sp10k-06011",
+    "sp10k-06012",
+    "sp10k-06013",
+    "sp10k-06014",
+    "sp10k-06015"
+  ],
+  "at": "2026-09-13T17:22:13.089937+00:00"
+}

@@ -1,0 +1,96 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 13.76,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4676,
+    "completion_tokens": 326,
+    "total_tokens": 5002,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 105
+    },
+    "input_tokens": 4676,
+    "output_tokens": 326,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00041\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"责任担当\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"执行能力\",\"label\":\"T\"},{\"start\":14,\"end\":18,\"text\":\"专业能力\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":24,\"end\":30,\"text\":\"沟通表达能力\",\"label\":\"T\"}],\"status\":\"adjudication_required\",\"note\":\"去除要求触发及程度修饰，分别抽取各项能力；专业能力缺少具体领域限定，类型待裁决，其余为通用能力或特质。\",\"issues\":[{\"kind\":\"type\",\"text\":\"专业能力\",\"alternatives\":[\"S\",\"T\"],\"reason\":\"明确属于候选人能力要求，但未说明专业领域或具体活动，无法确定是领域绑定的职业能力还是泛指通用素质，暂标S。\"}]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00041",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "责任担当",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "执行能力",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "专业能力",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "沟通表达能力",
+            "label": "T"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "去除要求触发及程度修饰，分别抽取各项能力；专业能力缺少具体领域限定，类型待裁决，其余为通用能力或特质。",
+        "issues": [
+          {
+            "kind": "type",
+            "text": "专业能力",
+            "alternatives": [
+              "S",
+              "T"
+            ],
+            "reason": "明确属于候选人能力要求，但未说明专业领域或具体活动，无法确定是领域绑定的职业能力还是泛指通用素质，暂标S。"
+          }
+        ]
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 1,
+  "ids": [
+    "sp10k-00041"
+  ],
+  "at": "2026-09-13T13:35:02.925953+00:00"
+}

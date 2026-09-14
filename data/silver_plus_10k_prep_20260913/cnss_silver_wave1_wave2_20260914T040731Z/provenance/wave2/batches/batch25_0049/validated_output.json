@@ -1,0 +1,645 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04950",
+      "spans": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "IT软硬件知识",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "服务器",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "网络",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 25,
+          "text": "计算机设备",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "操作系统",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "机房设施",
+          "label": "K"
+        },
+        {
+          "start": 36,
+          "end": 39,
+          "text": "数据库",
+          "label": "K"
+        },
+        {
+          "start": 46,
+          "end": 50,
+          "text": "网络管理",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 56,
+          "text": "服务器管理",
+          "label": "S"
+        },
+        {
+          "start": 57,
+          "end": 63,
+          "text": "机房维护管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "知识列表按K；管理维护活动去除经验及年限后按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04951",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格；年龄及放宽条件不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04952",
+      "spans": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "PS",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "AI",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "协调设计",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "切图",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "设计工具和切图为S；协调设计的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "协调设计",
+          "alternatives": [
+            "T",
+            "S"
+          ],
+          "reason": "设计可能指设计人员，也可能指设计活动；人员协调与专业设计统筹的解释均成立。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04953",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为考试通知及名单公布渠道。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04954",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为资格复审通知及信息查询安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04955",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "Linux原理",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "系统",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "应用知识",
+          "label": "K"
+        },
+        {
+          "start": 39,
+          "end": 44,
+          "text": "redis",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 50,
+          "text": "nginx",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 54,
+          "text": "LVS",
+          "label": "S"
+        },
+        {
+          "start": 55,
+          "end": 58,
+          "text": "MFS",
+          "label": "S"
+        },
+        {
+          "start": 61,
+          "end": 63,
+          "text": "架构",
+          "label": "K"
+        },
+        {
+          "start": 64,
+          "end": 66,
+          "text": "配置",
+          "label": "S"
+        },
+        {
+          "start": 67,
+          "end": 69,
+          "text": "优化",
+          "label": "S"
+        },
+        {
+          "start": 75,
+          "end": 79,
+          "text": "方案策划",
+          "label": "S"
+        },
+        {
+          "start": 80,
+          "end": 82,
+          "text": "部署",
+          "label": "S"
+        },
+        {
+          "start": 83,
+          "end": 85,
+          "text": "实施",
+          "label": "S"
+        },
+        {
+          "start": 86,
+          "end": 88,
+          "text": "应用",
+          "label": "S"
+        },
+        {
+          "start": 92,
+          "end": 96,
+          "text": "二次开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "原理、系统知识及架构按K；工具兼有知识解释，但同一局部明确配置、部署及应用实践，平坦投影按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04957",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "text": "踏实",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "认真",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "吃苦耐劳",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学习能力及独立通用特质按T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04958",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 11,
+          "text": "沟通表达能力",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "情绪管理",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "责任、表达及情绪管理均为通用能力或特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04959",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "综合布线",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 25,
+          "text": "交换机、路由器等网络设备的配置与维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "布线为职业技术活动；配置与维护保留共享设备对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04960",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为应聘面试纪律及资格取消规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04961",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报考信息修改规则。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04962",
+      "spans": [
+        {
+          "start": 4,
+          "end": 20,
+          "text": "ERP系统（NC）的相关模块维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统模块维护保留明确工具对象，去除职责触发词和工作后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04963",
+      "spans": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "组织性",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "纪律性",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "团队精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "组织纪律特质和团队精神按T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04964",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "身体条件不在范围；泛指其他岗位条件未给出具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04965",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "答疑",
+          "label": "S"
+        },
+        {
+          "start": 3,
+          "end": 16,
+          "text": "帮助团队的中英文文档工程师",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 36,
+          "text": "写出更好的阿里云文档",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "产品文档答疑和写作为职业活动，帮助同事为T；中英文修饰协作对象，不直接构成候选人的语言要求。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "深刻理解产品",
+          "alternatives": [
+            "候选人自身的产品知识要求，纳入范围",
+            "帮助文档工程师达到的理解结果，不独立标注"
+          ],
+          "reason": "逗号及省略主语使理解产品的主体不明确，需确认是候选人还是受帮助的文档工程师。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04966",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "VLAN",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "NAT",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 28,
+          "text": "路由协议（静态、OSPF、RIP)",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 36,
+          "text": "配置",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 47,
+          "text": "IP地址子网划分",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 54,
+          "text": "IP地址规划",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络技术受明确配置要求限定，按S；路由协议保留含省略项静态的完整列举。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04967",
+      "spans": [
+        {
+          "start": 6,
+          "end": 13,
+          "text": "本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历资格；岗位名称及泛化相关工作经验不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04968",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报考条件的咨询方式，未陈述具体资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04969",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "软件系统巡检",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "文档编写",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "巡检和文档编写为可独立拆分的职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04970",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为面试资格空缺递补及成绩排序规则。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04971",
+      "spans": [
+        {
+          "start": 2,
+          "end": 25,
+          "text": "Windows、Linux操作系统的一般性安装",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "故障排除",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 38,
+          "text": "维护性技术工作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装保留操作系统对象；排障和维护由同句承接该技术对象，分别按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04972",
+      "spans": [
+        {
+          "start": 7,
+          "end": 12,
+          "text": "mysql",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "oracle",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 31,
+          "text": "navicat",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 37,
+          "text": "plsql",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 44,
+          "text": "sqlyog",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 57,
+          "text": "sql语句编写能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库及客户端处于SQL编写的岗位工具语境；领域绑定的编写能力按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04973",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为面试资格放弃后的人员安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04974",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "存储扩展",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 13,
+          "text": "灾备冗余技术",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 26,
+          "text": "存储数据复制技术",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "三项均属明确要求，边界可确定；缺少知识或实施语境，S均为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "存储扩展",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指存储扩展知识，也可指实际扩容活动；熟悉不足以区分。"
+        },
+        {
+          "kind": "type",
+          "text": "灾备冗余技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可能要求技术原理知识或可执行灾备冗余方法，未明确实践或知识层次。"
+        },
+        {
+          "kind": "type",
+          "text": "存储数据复制技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "未说明是数据复制技术知识还是实际配置、实施方法，局部语境不足以定类。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04975",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘结果通知及录用文件发放流程。",
+      "issues": []
+    }
+  ]
+}

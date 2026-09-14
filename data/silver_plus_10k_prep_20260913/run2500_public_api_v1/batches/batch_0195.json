@@ -1,0 +1,378 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 70.255,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5061,
+    "completion_tokens": 2263,
+    "total_tokens": 7324,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1031
+    },
+    "input_tokens": 5061,
+    "output_tokens": 2263,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-04982\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"数据分析能力\",\"label\":\"S\"},{\"start\":10,\"end\":27,\"text\":\"对发卡量、库存等数据进行分析与预测\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取领域绑定能力及具体数据分析活动；后项保留共享的数据对象。\",\"issues\":[]},{\"id\":\"sp10k-04988\",\"spans\":[{\"start\":3,\"end\":6,\"text\":\"执行力\",\"label\":\"T\"},{\"start\":7,\"end\":10,\"text\":\"计划性\",\"label\":\"T\"},{\"start\":16,\"end\":22,\"text\":\"沟通表达能力\",\"label\":\"T\"},{\"start\":23,\"end\":27,\"text\":\"谈判能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用能力和特质；已有业界人际资源不属于能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-04989\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"逻辑清晰\",\"label\":\"T\"},{\"start\":5,\"end\":9,\"text\":\"表达流畅\",\"label\":\"T\"},{\"start\":12,\"end\":19,\"text\":\"定制化解决方案\",\"label\":\"S\"},{\"start\":24,\"end\":28,\"text\":\"商务谈判\",\"label\":\"T\"},{\"start\":29,\"end\":37,\"text\":\"大型项目签约能力\",\"label\":\"S\"},{\"start\":41,\"end\":48,\"text\":\"对接客户决策人\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"方案与项目签约为职业能力；表达、谈判及客户人员联络为通用能力。\",\"issues\":[]},{\"id\":\"sp10k-05040\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"报表工具\",\"label\":\"S\"},{\"start\":9,\"end\":11,\"text\":\"帆软\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"使用语境明确，工具类别及具体工具均标S。\",\"issues\":[]},{\"id\":\"sp10k-05094\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"库存管理\",\"label\":\"S\"},{\"start\":9,\"end\":21,\"text\":\"处理设备进出库、报废流程\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"资产盘查\",\"label\":\"S\"},{\"start\":31,\"end\":35,\"text\":\"审计合规\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确执行的库存、设备流程及资产审计职能；设备流程保留共享动作与对象。\",\"issues\":[]},{\"id\":\"sp10k-05116\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"外贸结算\",\"label\":\"K\"},{\"start\":7,\"end\":11,\"text\":\"物流流程\",\"label\":\"K\"},{\"start\":14,\"end\":20,\"text\":\"订单数据统计\",\"label\":\"S\"},{\"start\":21,\"end\":27,\"text\":\"客户档案管理\",\"label\":\"S\"},{\"start\":30,\"end\":36,\"text\":\"复盘业务数据\",\"label\":\"S\"},{\"start\":37,\"end\":43,\"text\":\"优化服务方案\",\"label\":\"S\"},{\"start\":44,\"end\":48,\"text\":\"协同团队\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"前段为业务流程知识，后段为明确职业动作及团队协作；业绩目标本身不标。\",\"issues\":[]},{\"id\":\"sp10k-05120\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":10,\"text\":\"金融\",\"label\":\"K\"},{\"start\":11,\"end\":13,\"text\":\"保险\",\"label\":\"K\"},{\"start\":14,\"end\":16,\"text\":\"法律\",\"label\":\"K\"},{\"start\":17,\"end\":19,\"text\":\"医学\",\"label\":\"K\"},{\"start\":20,\"end\":23,\"text\":\"统计学\",\"label\":\"K\"},{\"start\":24,\"end\":26,\"text\":\"数学\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留完整学历资格，各具体专业名分别标K。\",\"issues\":[]},{\"id\":\"sp10k-05124\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"仪器操作与维护\",\"label\":\"S\"},{\"start\":10,\"end\":23,\"text\":\"理化检测相关仪器的日常操作\",\"label\":\"S\"},{\"start\":24,\"end\":26,\"text\":\"校准\",\"label\":\"S\"},{\"start\":27,\"end\":29,\"text\":\"维护\",\"label\":\"S\"},{\"start\":30,\"end\":32,\"text\":\"保养\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标题与正文均明确职业活动；并列动作可由局部语境回指仪器，纯状态保证不标。\",\"issues\":[]},{\"id\":\"sp10k-05149\",\"spans\":[{\"start\":8,\"end\":14,\"text\":\"项目整体策划\",\"label\":\"S\"},{\"start\":17,\"end\":30,\"text\":\"搭建项目组织架构与执行方案\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取项目策划和搭建职责，后一项保留共享动作与项目限定。\",\"issues\":[]},{\"id\":\"sp10k-05170\",\"spans\":[{\"start\":2,\"end\":18,\"text\":\"制定本地标准化和非标准化作业规则\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"制定作业规则为明确职业活动；并列限定共享动作和中心对象，保留完整跨度。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-04982",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "数据分析能力",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 27,
+            "text": "对发卡量、库存等数据进行分析与预测",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取领域绑定能力及具体数据分析活动；后项保留共享的数据对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04988",
+        "spans": [
+          {
+            "start": 3,
+            "end": 6,
+            "text": "执行力",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "text": "计划性",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "沟通表达能力",
+            "label": "T"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "谈判能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用能力和特质；已有业界人际资源不属于能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04989",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "逻辑清晰",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "表达流畅",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "text": "定制化解决方案",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "商务谈判",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 37,
+            "text": "大型项目签约能力",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 48,
+            "text": "对接客户决策人",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "方案与项目签约为职业能力；表达、谈判及客户人员联络为通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05040",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "报表工具",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "帆软",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "使用语境明确，工具类别及具体工具均标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05094",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "库存管理",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 21,
+            "text": "处理设备进出库、报废流程",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "资产盘查",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "text": "审计合规",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确执行的库存、设备流程及资产审计职能；设备流程保留共享动作与对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05116",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "外贸结算",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "物流流程",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "订单数据统计",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "text": "客户档案管理",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "text": "复盘业务数据",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 43,
+            "text": "优化服务方案",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 48,
+            "text": "协同团队",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "前段为业务流程知识，后段为明确职业动作及团队协作；业绩目标本身不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05120",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "金融",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 13,
+            "text": "保险",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 16,
+            "text": "法律",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 19,
+            "text": "医学",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 23,
+            "text": "统计学",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "text": "数学",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留完整学历资格，各具体专业名分别标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05124",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "仪器操作与维护",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 23,
+            "text": "理化检测相关仪器的日常操作",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "text": "校准",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "text": "维护",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 32,
+            "text": "保养",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标题与正文均明确职业活动；并列动作可由局部语境回指仪器，纯状态保证不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05149",
+        "spans": [
+          {
+            "start": 8,
+            "end": 14,
+            "text": "项目整体策划",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 30,
+            "text": "搭建项目组织架构与执行方案",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取项目策划和搭建职责，后一项保留共享动作与项目限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05170",
+        "spans": [
+          {
+            "start": 2,
+            "end": 18,
+            "text": "制定本地标准化和非标准化作业规则",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "制定作业规则为明确职业活动；并列限定共享动作和中心对象，保留完整跨度。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 195,
+  "ids": [
+    "sp10k-04982",
+    "sp10k-04988",
+    "sp10k-04989",
+    "sp10k-05040",
+    "sp10k-05094",
+    "sp10k-05116",
+    "sp10k-05120",
+    "sp10k-05124",
+    "sp10k-05149",
+    "sp10k-05170"
+  ],
+  "at": "2026-09-13T16:52:39.130362+00:00"
+}

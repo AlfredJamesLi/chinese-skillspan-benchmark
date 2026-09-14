@@ -1,0 +1,351 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 65.358,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5086,
+    "completion_tokens": 2080,
+    "total_tokens": 7166,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 882
+    },
+    "input_tokens": 5086,
+    "output_tokens": 2080,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01211\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"硕士及以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":11,\"text\":\"GIS\",\"label\":\"K\"},{\"start\":12,\"end\":14,\"text\":\"遥感\",\"label\":\"K\"},{\"start\":15,\"end\":17,\"text\":\"测绘\",\"label\":\"K\"},{\"start\":18,\"end\":21,\"text\":\"计算机\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格及并列专业名，排除泛化的相关专业修饰。\",\"issues\":[]},{\"id\":\"sp10k-01212\",\"spans\":[{\"start\":15,\"end\":29,\"text\":\"公司产品（IT运维服务）销售\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"销售为明确职业活动，保留产品对象；地域和落实销售指标的结果要求不标。\",\"issues\":[]},{\"id\":\"sp10k-01213\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"渗透测试能力\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"安全软件\",\"label\":\"S\"},{\"start\":20,\"end\":22,\"text\":\"工具\",\"label\":\"S\"},{\"start\":35,\"end\":50,\"text\":\"配置路由器、核心交换机和防火墙\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取领域能力、明确运用的工具及设备配置活动；配置动作由多个设备共享，保留完整短语。岗位称谓不另标。\",\"issues\":[]},{\"id\":\"sp10k-01214\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"linux\",\"label\":\"S\"},{\"start\":8,\"end\":18,\"text\":\"windows服务器\",\"label\":\"S\"},{\"start\":21,\"end\":27,\"text\":\"基本网络知识\",\"label\":\"K\"},{\"start\":30,\"end\":34,\"text\":\"脚本语言\",\"label\":\"S\"},{\"start\":35,\"end\":40,\"text\":\"shell\",\"label\":\"S\"},{\"start\":41,\"end\":44,\"text\":\"bat\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"服务器和脚本语言按岗位工具要求标S；明确网络知识标K。\",\"issues\":[]},{\"id\":\"sp10k-01215\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"全句为招聘亲属关系回避规定，不属于候选人的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01216\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"Oracle\",\"label\":\"K\"},{\"start\":12,\"end\":21,\"text\":\"SQLSERVER\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"两个数据库名称均受相关知识语境限定，按K拆分；不另标数据库类别词。\",\"issues\":[]},{\"id\":\"sp10k-01217\",\"spans\":[{\"start\":27,\"end\":32,\"text\":\"医学影像学\",\"label\":\"K\"},{\"start\":41,\"end\":46,\"text\":\"本科及以上\",\"label\":\"K\"},{\"start\":46,\"end\":51,\"text\":\"学士及以上\",\"label\":\"K\"},{\"start\":51,\"end\":53,\"text\":\"四级\",\"label\":\"S\"},{\"start\":53,\"end\":58,\"text\":\"医师及以上\",\"label\":\"K\"}],\"status\":\"adjudication_required\",\"note\":\"抽取专业、学历、学位及职称资格；岗位名称与人事代理信息不标。四级资格缺少类别说明，暂作类型待决。\",\"issues\":[{\"kind\":\"type\",\"text\":\"四级\",\"alternatives\":[\"L\",\"K\"],\"reason\":\"表格式文本缺少列名，无法确认四级指语言考试等级还是非语言资格等级；范围及边界明确，暂标S。\"}]},{\"id\":\"sp10k-01218\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"团队管理\",\"label\":\"T\"},{\"start\":13,\"end\":19,\"text\":\"语言表达能力\",\"label\":\"T\"},{\"start\":20,\"end\":26,\"text\":\"组织协调能力\",\"label\":\"T\"},{\"start\":29,\"end\":39,\"text\":\"互联网行业的各个环节\",\"label\":\"K\"},{\"start\":42,\"end\":49,\"text\":\"各环节工作流程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"团队管理及表达协调为通用能力；行业环节与工作流程为知识要求，去除经验和程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-01219\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"团队意识\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"敬业精神\",\"label\":\"T\"},{\"start\":15,\"end\":19,\"text\":\"吃苦耐劳\",\"label\":\"T\"},{\"start\":20,\"end\":27,\"text\":\"学习及动手能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为通用意识、特质或能力；学习与动手共享能力中心词，保留连续完整提及。\",\"issues\":[]},{\"id\":\"sp10k-01220\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"监控后台信息的日常更新\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"台账登记\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"将后台信息更新与台账登记拆为两项独立职业活动，保留更新对象。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01211",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "硕士及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "text": "GIS",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "遥感",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "测绘",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 21,
+            "text": "计算机",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格及并列专业名，排除泛化的相关专业修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01212",
+        "spans": [
+          {
+            "start": 15,
+            "end": 29,
+            "text": "公司产品（IT运维服务）销售",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "销售为明确职业活动，保留产品对象；地域和落实销售指标的结果要求不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01213",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "渗透测试能力",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "安全软件",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "工具",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 50,
+            "text": "配置路由器、核心交换机和防火墙",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取领域能力、明确运用的工具及设备配置活动；配置动作由多个设备共享，保留完整短语。岗位称谓不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01214",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "linux",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 18,
+            "text": "windows服务器",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "text": "基本网络知识",
+            "label": "K"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "脚本语言",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 40,
+            "text": "shell",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 44,
+            "text": "bat",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "服务器和脚本语言按岗位工具要求标S；明确网络知识标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01215",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "全句为招聘亲属关系回避规定，不属于候选人的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01216",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "Oracle",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 21,
+            "text": "SQLSERVER",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两个数据库名称均受相关知识语境限定，按K拆分；不另标数据库类别词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01217",
+        "spans": [
+          {
+            "start": 27,
+            "end": 32,
+            "text": "医学影像学",
+            "label": "K"
+          },
+          {
+            "start": 41,
+            "end": 46,
+            "text": "本科及以上",
+            "label": "K"
+          },
+          {
+            "start": 46,
+            "end": 51,
+            "text": "学士及以上",
+            "label": "K"
+          },
+          {
+            "start": 51,
+            "end": 53,
+            "text": "四级",
+            "label": "S"
+          },
+          {
+            "start": 53,
+            "end": 58,
+            "text": "医师及以上",
+            "label": "K"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "抽取专业、学历、学位及职称资格；岗位名称与人事代理信息不标。四级资格缺少类别说明，暂作类型待决。",
+        "issues": [
+          {
+            "kind": "type",
+            "text": "四级",
+            "alternatives": [
+              "L",
+              "K"
+            ],
+            "reason": "表格式文本缺少列名，无法确认四级指语言考试等级还是非语言资格等级；范围及边界明确，暂标S。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-01218",
+        "spans": [
+          {
+            "start": 3,
+            "end": 7,
+            "text": "团队管理",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "语言表达能力",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "组织协调能力",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 39,
+            "text": "互联网行业的各个环节",
+            "label": "K"
+          },
+          {
+            "start": 42,
+            "end": 49,
+            "text": "各环节工作流程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "团队管理及表达协调为通用能力；行业环节与工作流程为知识要求，去除经验和程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01219",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "团队意识",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "敬业精神",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "吃苦耐劳",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 27,
+            "text": "学习及动手能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为通用意识、特质或能力；学习与动手共享能力中心词，保留连续完整提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01220",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "监控后台信息的日常更新",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "台账登记",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "将后台信息更新与台账登记拆为两项独立职业活动，保留更新对象。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 122,
+  "ids": [
+    "sp10k-01211",
+    "sp10k-01212",
+    "sp10k-01213",
+    "sp10k-01214",
+    "sp10k-01215",
+    "sp10k-01216",
+    "sp10k-01217",
+    "sp10k-01218",
+    "sp10k-01219",
+    "sp10k-01220"
+  ],
+  "at": "2026-09-13T15:35:44.774654+00:00"
+}

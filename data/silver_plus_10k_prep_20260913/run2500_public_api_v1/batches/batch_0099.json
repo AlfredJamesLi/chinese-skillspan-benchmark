@@ -1,0 +1,218 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 33.889,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5085,
+    "completion_tokens": 1036,
+    "total_tokens": 6121,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 307
+    },
+    "input_tokens": 5085,
+    "output_tokens": 1036,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00981\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"电气选型\",\"label\":\"S\"},{\"start\":11,\"end\":15,\"text\":\"安装调试\",\"label\":\"S\"},{\"start\":16,\"end\":18,\"text\":\"验收\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确电气项目职责，去除职责触发词及泛化的工作后缀。\",\"issues\":[]},{\"id\":\"sp10k-00982\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"暖通\",\"label\":\"K\"},{\"start\":3,\"end\":5,\"text\":\"制冷\",\"label\":\"K\"},{\"start\":6,\"end\":9,\"text\":\"给排水\",\"label\":\"K\"},{\"start\":10,\"end\":14,\"text\":\"电气工程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"教育背景要求中的具体专业分别标K；后续理工科类为并列专业的概括。\",\"issues\":[]},{\"id\":\"sp10k-00983\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"规划\",\"label\":\"K\"},{\"start\":3,\"end\":5,\"text\":\"建筑\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"专业要求中的并列专业名标K，不含优先修饰。\",\"issues\":[]},{\"id\":\"sp10k-00984\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"提供专业规划意见\",\"label\":\"S\"},{\"start\":11,\"end\":24,\"text\":\"与校园网总体规划的协调工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"两项独立规划职责分别抽取；后项是与校园网总体规划衔接的专业活动，而非泛化人际协调。\",\"issues\":[]},{\"id\":\"sp10k-00985\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅介绍招聘岗位、人数及条件标题，没有具体能力或资格要求；岗位名称本身不作资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00986\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"说明招聘考试专业目录的参考来源，未提出具体专业或知识要求。\",\"issues\":[]},{\"id\":\"sp10k-00987\",\"spans\":[{\"start\":8,\"end\":14,\"text\":\"思想政治素质\",\"label\":\"T\"},{\"start\":15,\"end\":19,\"text\":\"道德品质\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"虽包含考察认定说明，仍明确提及候选人须满足的素质与品质要求。\",\"issues\":[]},{\"id\":\"sp10k-00988\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于应聘手续及低保材料提交要求，不是职业能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00989\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于参会单位展位使用规定，不是候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-00990\",\"spans\":[{\"start\":5,\"end\":15,\"text\":\"软硬一体设计架构能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确绑定软硬一体设计架构的专业能力，整体标S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00981",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "电气选型",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "安装调试",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 18,
+            "text": "验收",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确电气项目职责，去除职责触发词及泛化的工作后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00982",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "暖通",
+            "label": "K"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "text": "制冷",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 9,
+            "text": "给排水",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "电气工程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "教育背景要求中的具体专业分别标K；后续理工科类为并列专业的概括。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00983",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "规划",
+            "label": "K"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "text": "建筑",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业要求中的并列专业名标K，不含优先修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00984",
+        "spans": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "提供专业规划意见",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 24,
+            "text": "与校园网总体规划的协调工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项独立规划职责分别抽取；后项是与校园网总体规划衔接的专业活动，而非泛化人际协调。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00985",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅介绍招聘岗位、人数及条件标题，没有具体能力或资格要求；岗位名称本身不作资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00986",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "说明招聘考试专业目录的参考来源，未提出具体专业或知识要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00987",
+        "spans": [
+          {
+            "start": 8,
+            "end": 14,
+            "text": "思想政治素质",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "道德品质",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "虽包含考察认定说明，仍明确提及候选人须满足的素质与品质要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00988",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于应聘手续及低保材料提交要求，不是职业能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00989",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于参会单位展位使用规定，不是候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00990",
+        "spans": [
+          {
+            "start": 5,
+            "end": 15,
+            "text": "软硬一体设计架构能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确绑定软硬一体设计架构的专业能力，整体标S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 99,
+  "ids": [
+    "sp10k-00981",
+    "sp10k-00982",
+    "sp10k-00983",
+    "sp10k-00984",
+    "sp10k-00985",
+    "sp10k-00986",
+    "sp10k-00987",
+    "sp10k-00988",
+    "sp10k-00989",
+    "sp10k-00990"
+  ],
+  "at": "2026-09-13T15:13:22.059629+00:00"
+}

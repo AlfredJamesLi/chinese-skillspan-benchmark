@@ -1,0 +1,243 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 40.724,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5148,
+    "completion_tokens": 1280,
+    "total_tokens": 6428,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5148,
+    "output_tokens": 1280,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00822",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            21,
+            27
+          ],
+          "to": [
+            19,
+            25
+          ],
+          "text": "网络故障排除"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00821\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明招聘面试资格复审的人选确定流程，不属于候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00822\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"网络原理\",\"label\":\"K\"},{\"start\":7,\"end\":11,\"text\":\"常见协议\",\"label\":\"K\"},{\"start\":21,\"end\":27,\"text\":\"网络故障排除\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"网络原理及协议为知识要求；网络故障排除为明确技术活动，去除要求触发词和程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-00823\",\"spans\":[{\"start\":40,\"end\":44,\"text\":\"辅助教学\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"合同及到岗安排不标；其中明确要求履行的辅助教学任务属于职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00824\",\"spans\":[{\"start\":2,\"end\":18,\"text\":\"数据中心运行、维修、维护以及改造\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"运行、维修、维护和改造共享数据中心这一职业对象，保留完整活动短语；后续设备清单为工作对象，不另列独立技能。\",\"issues\":[]},{\"id\":\"sp10k-00825\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"客户服务意识\",\"label\":\"T\"},{\"start\":13,\"end\":19,\"text\":\"软件售后维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"客户服务意识为通用职业素质，软件售后维护明确描述岗位职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00826\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明毕业生学历学位材料取得期限及录用程序，未给出具体学历或资格名称要求。\",\"issues\":[]},{\"id\":\"sp10k-00827\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明学历学位取得时间的行政截止要求。\",\"issues\":[]},{\"id\":\"sp10k-00828\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅含年龄及出生日期限制，不属于能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00829\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"通信\",\"label\":\"K\"},{\"start\":3,\"end\":6,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":7,\"end\":10,\"text\":\"自动化\",\"label\":\"K\"},{\"start\":11,\"end\":16,\"text\":\"机电一体化\",\"label\":\"K\"},{\"start\":21,\"end\":28,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取明确专业名及完整学历要求，不标泛化的相关专业修饰。\",\"issues\":[]},{\"id\":\"sp10k-00830\",\"spans\":[{\"start\":10,\"end\":13,\"text\":\"中医学\",\"label\":\"K\"},{\"start\":24,\"end\":29,\"text\":\"博士研究生\",\"label\":\"K\"},{\"start\":34,\"end\":38,\"text\":\"医师资格\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取专业、学历及非语言职业资格；消化内科为科室信息，人数和投递方式不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00821",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明招聘面试资格复审的人选确定流程，不属于候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00822",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "网络原理",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "常见协议",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "网络故障排除",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "网络原理及协议为知识要求；网络故障排除为明确技术活动，去除要求触发词和程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00823",
+        "spans": [
+          {
+            "start": 40,
+            "end": 44,
+            "text": "辅助教学",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "合同及到岗安排不标；其中明确要求履行的辅助教学任务属于职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00824",
+        "spans": [
+          {
+            "start": 2,
+            "end": 18,
+            "text": "数据中心运行、维修、维护以及改造",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "运行、维修、维护和改造共享数据中心这一职业对象，保留完整活动短语；后续设备清单为工作对象，不另列独立技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00825",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "客户服务意识",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "软件售后维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "客户服务意识为通用职业素质，软件售后维护明确描述岗位职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00826",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明毕业生学历学位材料取得期限及录用程序，未给出具体学历或资格名称要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00827",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明学历学位取得时间的行政截止要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00828",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅含年龄及出生日期限制，不属于能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00829",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "通信",
+            "label": "K"
+          },
+          {
+            "start": 3,
+            "end": 6,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "text": "自动化",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "text": "机电一体化",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 28,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取明确专业名及完整学历要求，不标泛化的相关专业修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00830",
+        "spans": [
+          {
+            "start": 10,
+            "end": 13,
+            "text": "中医学",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 29,
+            "text": "博士研究生",
+            "label": "K"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "text": "医师资格",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取专业、学历及非语言职业资格；消化内科为科室信息，人数和投递方式不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 83,
+  "ids": [
+    "sp10k-00821",
+    "sp10k-00822",
+    "sp10k-00823",
+    "sp10k-00824",
+    "sp10k-00825",
+    "sp10k-00826",
+    "sp10k-00827",
+    "sp10k-00828",
+    "sp10k-00829",
+    "sp10k-00830"
+  ],
+  "at": "2026-09-13T15:00:18.001350+00:00"
+}

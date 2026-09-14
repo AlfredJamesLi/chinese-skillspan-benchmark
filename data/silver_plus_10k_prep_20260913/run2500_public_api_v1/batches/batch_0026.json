@@ -1,0 +1,323 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 61.202,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5187,
+    "completion_tokens": 1917,
+    "total_tokens": 7104,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 739
+    },
+    "input_tokens": 5187,
+    "output_tokens": 1917,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00251\",\"spans\":[{\"start\":8,\"end\":12,\"text\":\"售后支持\",\"label\":\"S\"},{\"start\":13,\"end\":15,\"text\":\"验收\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"售后支持与设备验收为明确职业活动，对象由局部上下文限定。\",\"issues\":[]},{\"id\":\"sp10k-00252\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"信息规划能力\",\"label\":\"S\"},{\"start\":12,\"end\":19,\"text\":\"提出合理化建议\",\"label\":\"T\"},{\"start\":22,\"end\":39,\"text\":\"信息化项目方面的设计、执行和决策者\",\"label\":\"S\"},{\"start\":40,\"end\":54,\"text\":\"对信息技术发展有一定的敏锐度\",\"label\":\"S\"},{\"start\":55,\"end\":73,\"text\":\"对公司信息化技术发展提供决策性的建议\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"信息规划及信息化决策支持为领域绑定能力；项目角色表述保留连续候选，具体活动边界待核。\",\"issues\":[{\"kind\":\"boundary\",\"text\":\"信息化项目方面的设计、执行和决策者\",\"alternatives\":[\"信息化项目方面的设计、执行和决策者\",\"信息化项目方面的设计；执行；决策者\"],\"reason\":\"并列活动共享项目限定及角色后缀，拆分能否完整保留职业活动含义需要裁决。\"}]},{\"id\":\"sp10k-00253\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为招聘附件名称、机构名称与发布日期，不构成候选人资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00254\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为成绩公布、资格复审名单及时间安排，属于应聘行政流程。\",\"issues\":[]},{\"id\":\"sp10k-00255\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"WEB网站程序或服务开发\",\"label\":\"S\"},{\"start\":17,\"end\":24,\"text\":\"项目木块的开发\",\"label\":\"S\"},{\"start\":25,\"end\":27,\"text\":\"调试\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"抽取明确开发和调试活动，保留原文“木块”写法；不擅自将“单元本事”更正为测试术语。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"单元本事工作\",\"alternatives\":[\"属于职业技术活动，纳入标注\",\"无法确认具体职业活动，不纳入标注\"],\"reason\":\"疑似错字，但现有原文无法确定其所指活动，需原文核实；争议片段暂不入主层。\"}]},{\"id\":\"sp10k-00256\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"泛微OA系统流程权限搭建\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"组织结构调整\",\"label\":\"S\"},{\"start\":22,\"end\":28,\"text\":\"系统功能优化\",\"label\":\"S\"},{\"start\":29,\"end\":33,\"text\":\"权限管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"按OA系统运维配置语境抽取独立职业活动，系统工具不嵌套标注。\",\"issues\":[]},{\"id\":\"sp10k-00257\",\"spans\":[{\"start\":0,\"end\":3,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":4,\"end\":6,\"text\":\"网络\",\"label\":\"K\"},{\"start\":10,\"end\":17,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"专业领域与完整学历资格分别标K，泛化的“相关专业”不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00258\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名材料真实性及资格取消规定，不是职业能力或特质要求。\",\"issues\":[]},{\"id\":\"sp10k-00259\",\"spans\":[{\"start\":2,\"end\":4,\"text\":\"积极\",\"label\":\"T\"},{\"start\":5,\"end\":7,\"text\":\"进取\",\"label\":\"T\"},{\"start\":12,\"end\":16,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":16,\"end\":19,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":21,\"end\":23,\"text\":\"耐心\",\"label\":\"T\"},{\"start\":24,\"end\":29,\"text\":\"工作有条理\",\"label\":\"T\"},{\"start\":30,\"end\":34,\"text\":\"思路清晰\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为通用工作特质或可迁移能力，去除程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-00260\",\"spans\":[{\"start\":11,\"end\":15,\"text\":\"现场安装\",\"label\":\"S\"},{\"start\":15,\"end\":17,\"text\":\"调试\",\"label\":\"S\"},{\"start\":18,\"end\":20,\"text\":\"验收\",\"label\":\"S\"},{\"start\":20,\"end\":22,\"text\":\"培训\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分现场实施中的独立职业活动；后半句为项目和产品运行结果承诺，不标注。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00251",
+        "spans": [
+          {
+            "start": 8,
+            "end": 12,
+            "text": "售后支持",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "text": "验收",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "售后支持与设备验收为明确职业活动，对象由局部上下文限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00252",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "信息规划能力",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "text": "提出合理化建议",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 39,
+            "text": "信息化项目方面的设计、执行和决策者",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 54,
+            "text": "对信息技术发展有一定的敏锐度",
+            "label": "S"
+          },
+          {
+            "start": 55,
+            "end": 73,
+            "text": "对公司信息化技术发展提供决策性的建议",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "信息规划及信息化决策支持为领域绑定能力；项目角色表述保留连续候选，具体活动边界待核。",
+        "issues": [
+          {
+            "kind": "boundary",
+            "text": "信息化项目方面的设计、执行和决策者",
+            "alternatives": [
+              "信息化项目方面的设计、执行和决策者",
+              "信息化项目方面的设计；执行；决策者"
+            ],
+            "reason": "并列活动共享项目限定及角色后缀，拆分能否完整保留职业活动含义需要裁决。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00253",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为招聘附件名称、机构名称与发布日期，不构成候选人资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00254",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为成绩公布、资格复审名单及时间安排，属于应聘行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00255",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "WEB网站程序或服务开发",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "text": "项目木块的开发",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 27,
+            "text": "调试",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "抽取明确开发和调试活动，保留原文“木块”写法；不擅自将“单元本事”更正为测试术语。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "单元本事工作",
+            "alternatives": [
+              "属于职业技术活动，纳入标注",
+              "无法确认具体职业活动，不纳入标注"
+            ],
+            "reason": "疑似错字，但现有原文无法确定其所指活动，需原文核实；争议片段暂不入主层。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00256",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "泛微OA系统流程权限搭建",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "组织结构调整",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "系统功能优化",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "权限管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "按OA系统运维配置语境抽取独立职业活动，系统工具不嵌套标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00257",
+        "spans": [
+          {
+            "start": 0,
+            "end": 3,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "text": "网络",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业领域与完整学历资格分别标K，泛化的“相关专业”不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00258",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名材料真实性及资格取消规定，不是职业能力或特质要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00259",
+        "spans": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "积极",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "text": "进取",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 23,
+            "text": "耐心",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 29,
+            "text": "工作有条理",
+            "label": "T"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "思路清晰",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为通用工作特质或可迁移能力，去除程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00260",
+        "spans": [
+          {
+            "start": 11,
+            "end": 15,
+            "text": "现场安装",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "调试",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 20,
+            "text": "验收",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "培训",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分现场实施中的独立职业活动；后半句为项目和产品运行结果承诺，不标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 26,
+  "ids": [
+    "sp10k-00251",
+    "sp10k-00252",
+    "sp10k-00253",
+    "sp10k-00254",
+    "sp10k-00255",
+    "sp10k-00256",
+    "sp10k-00257",
+    "sp10k-00258",
+    "sp10k-00259",
+    "sp10k-00260"
+  ],
+  "at": "2026-09-13T14:12:50.645501+00:00"
+}

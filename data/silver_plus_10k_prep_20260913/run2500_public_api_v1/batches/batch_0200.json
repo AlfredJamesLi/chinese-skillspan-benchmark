@@ -1,0 +1,282 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 54.019,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4996,
+    "completion_tokens": 1680,
+    "total_tokens": 6676,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 709
+    },
+    "input_tokens": 4996,
+    "output_tokens": 1680,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05796\",\"spans\":[{\"start\":2,\"end\":23,\"text\":\"知识产权（专利、软件著作权、论文等）的撰写\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"撰写为明确职业活动；括号内容限定共同撰写对象，保留连续完整跨度。\",\"issues\":[]},{\"id\":\"sp10k-05797\",\"spans\":[{\"start\":9,\"end\":24,\"text\":\"轻金属铸造模具的日常维护与检修\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"维护与检修共享专业对象，整体保留；确保设备正常运行是结果要求，不标。\",\"issues\":[]},{\"id\":\"sp10k-05798\",\"spans\":[{\"start\":2,\"end\":20,\"text\":\"集成工艺段新产品前期工艺路线风险评估\",\"label\":\"S\"},{\"start\":21,\"end\":28,\"text\":\"新产品工艺调试\",\"label\":\"S\"},{\"start\":29,\"end\":33,\"text\":\"试做推进\",\"label\":\"S\"},{\"start\":34,\"end\":41,\"text\":\"Issue改善\",\"label\":\"S\"},{\"start\":42,\"end\":46,\"text\":\"试做总结\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分可独立执行的工艺评估、调试、推进、改善及总结活动。\",\"issues\":[]},{\"id\":\"sp10k-05799\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"沟通协调能力\",\"label\":\"T\"},{\"start\":12,\"end\":16,\"text\":\"抗压能力\",\"label\":\"T\"},{\"start\":17,\"end\":20,\"text\":\"执行力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为跨行业通用能力，排除程度及要求触发词。\",\"issues\":[]},{\"id\":\"sp10k-05800\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"诉讼案件的上报、应诉和调节\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"诉讼处理活动共享案件对象，保留完整短语；原文“调节”不改写。\",\"issues\":[]},{\"id\":\"sp10k-05801\",\"spans\":[{\"start\":11,\"end\":18,\"text\":\"对设备进行巡查\",\"label\":\"S\"},{\"start\":28,\"end\":32,\"text\":\"发现异常\",\"label\":\"S\"},{\"start\":35,\"end\":42,\"text\":\"汇报主值和值长\",\"label\":\"T\"},{\"start\":43,\"end\":47,\"text\":\"协助处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"巡查、异常发现与处理为设备运行语境下的职业活动；向人员汇报为通用沟通活动。班次、时效及掌握运行情况的结果描述不另标。\",\"issues\":[]},{\"id\":\"sp10k-05802\",\"spans\":[{\"start\":9,\"end\":21,\"text\":\"管理物业区域内的日常运营\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"物业运营管理为明确职业职能；设施设备正常运作为结果要求，不标。\",\"issues\":[]},{\"id\":\"sp10k-05803\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"工程造价\",\"label\":\"K\"},{\"start\":5,\"end\":9,\"text\":\"工程管理\",\"label\":\"K\"},{\"start\":10,\"end\":14,\"text\":\"土建工程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"专业要求中的三个具体专业名称分别标K，泛化相关专业不标。\",\"issues\":[]},{\"id\":\"sp10k-05804\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"特殊室内维修技能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确绑定室内维修职业活动的技能标S，排除有及优先。\",\"issues\":[]},{\"id\":\"sp10k-05805\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"机械设计\",\"label\":\"K\"},{\"start\":5,\"end\":7,\"text\":\"电气\",\"label\":\"K\"},{\"start\":8,\"end\":10,\"text\":\"电子\",\"label\":\"K\"},{\"start\":16,\"end\":23,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"具体专业名称及完整学历资格标K。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05796",
+        "spans": [
+          {
+            "start": 2,
+            "end": 23,
+            "text": "知识产权（专利、软件著作权、论文等）的撰写",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "撰写为明确职业活动；括号内容限定共同撰写对象，保留连续完整跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05797",
+        "spans": [
+          {
+            "start": 9,
+            "end": 24,
+            "text": "轻金属铸造模具的日常维护与检修",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "维护与检修共享专业对象，整体保留；确保设备正常运行是结果要求，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05798",
+        "spans": [
+          {
+            "start": 2,
+            "end": 20,
+            "text": "集成工艺段新产品前期工艺路线风险评估",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 28,
+            "text": "新产品工艺调试",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "试做推进",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 41,
+            "text": "Issue改善",
+            "label": "S"
+          },
+          {
+            "start": 42,
+            "end": 46,
+            "text": "试做总结",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分可独立执行的工艺评估、调试、推进、改善及总结活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05799",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "沟通协调能力",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "抗压能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 20,
+            "text": "执行力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为跨行业通用能力，排除程度及要求触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05800",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "诉讼案件的上报、应诉和调节",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "诉讼处理活动共享案件对象，保留完整短语；原文“调节”不改写。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05801",
+        "spans": [
+          {
+            "start": 11,
+            "end": 18,
+            "text": "对设备进行巡查",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "发现异常",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 42,
+            "text": "汇报主值和值长",
+            "label": "T"
+          },
+          {
+            "start": 43,
+            "end": 47,
+            "text": "协助处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "巡查、异常发现与处理为设备运行语境下的职业活动；向人员汇报为通用沟通活动。班次、时效及掌握运行情况的结果描述不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05802",
+        "spans": [
+          {
+            "start": 9,
+            "end": 21,
+            "text": "管理物业区域内的日常运营",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "物业运营管理为明确职业职能；设施设备正常运作为结果要求，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05803",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "工程造价",
+            "label": "K"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "工程管理",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "土建工程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业要求中的三个具体专业名称分别标K，泛化相关专业不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05804",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "特殊室内维修技能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确绑定室内维修职业活动的技能标S，排除有及优先。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05805",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "机械设计",
+            "label": "K"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "text": "电气",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "电子",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "具体专业名称及完整学历资格标K。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 200,
+  "ids": [
+    "sp10k-05796",
+    "sp10k-05797",
+    "sp10k-05798",
+    "sp10k-05799",
+    "sp10k-05800",
+    "sp10k-05801",
+    "sp10k-05802",
+    "sp10k-05803",
+    "sp10k-05804",
+    "sp10k-05805"
+  ],
+  "at": "2026-09-13T16:57:21.904594+00:00"
+}

@@ -1,0 +1,69 @@
+{
+  "batch": 38,
+  "records": 25,
+  "start_utc": "2026-09-13T19:23:45.711623+00:00",
+  "method": "Serial Codex CLI using existing ChatGPT authentication",
+  "model_requested": "gpt-6-astra",
+  "reasoning_effort_requested": "high",
+  "provider": "openai",
+  "forced_login_method": "chatgpt",
+  "independent_api_key_used": false,
+  "input_sha256": "5a19b0f3b835d78c324c675fb22bc51356de4f2299a89f21e526bc44ce2d0e7d",
+  "prompt_sha256": "b6223e9a2e9b02afa19cba79ba908766d9240acb233723fbe6f53b40e6b04fd6",
+  "command_args_without_prompt": [
+    "C:\\Users\\James Lee\\AppData\\Local\\OpenAI\\Codex\\bin\\bffc5354119c8421\\codex.exe",
+    "exec",
+    "--ignore-user-config",
+    "--skip-git-repo-check",
+    "--ephemeral",
+    "--sandbox",
+    "read-only",
+    "--model",
+    "gpt-6-astra",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "-c",
+    "model_provider=\"openai\"",
+    "-c",
+    "forced_login_method=\"chatgpt\"",
+    "-c",
+    "web_search=\"disabled\"",
+    "--disable",
+    "shell_tool",
+    "--disable",
+    "multi_agent",
+    "--output-schema",
+    "C:\\Users\\James Lee\\Documents\\Codex\\2026-09-14\\chinese-skillspan-wave2-astra\\outputs\\prepared_25\\support\\output_schema.json",
+    "--output-last-message",
+    "C:\\Users\\James Lee\\Documents\\Codex\\2026-09-14\\chinese-skillspan-wave2-astra\\outputs\\wave2_codex_astra\\batches\\batch25_0038\\cli_attempt_01\\raw_model_output.json",
+    "--json",
+    "--cd",
+    "C:\\Users\\James Lee\\Documents\\Codex\\2026-09-14\\chinese-skillspan-wave2-astra\\work\\codex_batch_context",
+    "-"
+  ],
+  "attempt": 1,
+  "end_utc": "2026-09-13T19:26:28.490728+00:00",
+  "elapsed_seconds": 162.7791256000055,
+  "exit_code": 0,
+  "codex_usage_events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 23608,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5100,
+        "reasoning_output_tokens": 3239
+      }
+    }
+  ],
+  "codex_thread_events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a09c39-c354-7ef1-b284-ec3ecce3e670"
+    }
+  ],
+  "usage_note": "Real Codex CLI event usage, when returned; not independent API billing, shared account quota cannot be attributed precisely.",
+  "status": "validated",
+  "offset_corrections": 0
+}

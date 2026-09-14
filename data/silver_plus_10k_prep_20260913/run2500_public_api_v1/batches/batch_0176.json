@@ -1,0 +1,189 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 32.166,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5097,
+    "completion_tokens": 918,
+    "total_tokens": 6015,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 226
+    },
+    "input_tokens": 5097,
+    "output_tokens": 918,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01766\",\"spans\":[{\"start\":3,\"end\":12,\"text\":\"大专及以上文化程度\",\"label\":\"K\"},{\"start\":15,\"end\":21,\"text\":\"电脑办公软件\",\"label\":\"S\"},{\"start\":27,\"end\":36,\"text\":\"语言、文字表达能力\",\"label\":\"T\"},{\"start\":37,\"end\":43,\"text\":\"沟通协调能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"学历要求标K，办公工具标S；表达能力保留共享中心语，通用沟通协调能力标T。\",\"issues\":[]},{\"id\":\"sp10k-01767\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报名方式及材料提交流程，所列证件是行政材料，未明确具体资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01774\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于招聘公告解释权说明，不含候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01775\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"执行能力\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"目标导向\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"执行能力和目标导向均为通用能力或特质，排除程度修饰语。\",\"issues\":[]},{\"id\":\"sp10k-01777\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明笔试确认流程及未确认的后果。\",\"issues\":[]},{\"id\":\"sp10k-01779\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为条件列表引导语，未提供具体能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01782\",\"spans\":[],\"status\":\"adjudication_required\",\"note\":\"仅见在聘人员及专业匹配描述，具体专业和资格不明，人员类别是否承载行业背景要求待决。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"卫生专业技术人员、管理人员\",\"alternatives\":[\"仅为招聘对象或人员类别，不标\",\"承载明确卫生行业背景要求，抽取领域核心名\"],\"reason\":\"缺少招聘对象及任职条件上下文，无法确定人员类别是否构成候选人须具备的具体行业背景要求。\"}]},{\"id\":\"sp10k-01783\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明遴选比例、资格复审及缺额调剂流程。\",\"issues\":[]},{\"id\":\"sp10k-01784\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"执业医师资格证\",\"label\":\"K\"},{\"start\":10,\"end\":13,\"text\":\"规培证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"两项均为明确要求的非语言资格证件，分别标K。\",\"issues\":[]},{\"id\":\"sp10k-01786\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅泛指岗位专业或技能条件并说明专业认定目录，未给出具体专业、技能或资格提及。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01766",
+        "spans": [
+          {
+            "start": 3,
+            "end": 12,
+            "text": "大专及以上文化程度",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "电脑办公软件",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 36,
+            "text": "语言、文字表达能力",
+            "label": "T"
+          },
+          {
+            "start": 37,
+            "end": 43,
+            "text": "沟通协调能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历要求标K，办公工具标S；表达能力保留共享中心语，通用沟通协调能力标T。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01767",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报名方式及材料提交流程，所列证件是行政材料，未明确具体资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01774",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于招聘公告解释权说明，不含候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01775",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "执行能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "目标导向",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "执行能力和目标导向均为通用能力或特质，排除程度修饰语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01777",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明笔试确认流程及未确认的后果。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01779",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为条件列表引导语，未提供具体能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01782",
+        "spans": [],
+        "status": "adjudication_required",
+        "note": "仅见在聘人员及专业匹配描述，具体专业和资格不明，人员类别是否承载行业背景要求待决。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "卫生专业技术人员、管理人员",
+            "alternatives": [
+              "仅为招聘对象或人员类别，不标",
+              "承载明确卫生行业背景要求，抽取领域核心名"
+            ],
+            "reason": "缺少招聘对象及任职条件上下文，无法确定人员类别是否构成候选人须具备的具体行业背景要求。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-01783",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明遴选比例、资格复审及缺额调剂流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01784",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "执业医师资格证",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "text": "规培证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项均为明确要求的非语言资格证件，分别标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01786",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅泛指岗位专业或技能条件并说明专业认定目录，未给出具体专业、技能或资格提及。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 176,
+  "ids": [
+    "sp10k-01766",
+    "sp10k-01767",
+    "sp10k-01774",
+    "sp10k-01775",
+    "sp10k-01777",
+    "sp10k-01779",
+    "sp10k-01782",
+    "sp10k-01783",
+    "sp10k-01784",
+    "sp10k-01786"
+  ],
+  "at": "2026-09-13T16:34:46.507291+00:00"
+}

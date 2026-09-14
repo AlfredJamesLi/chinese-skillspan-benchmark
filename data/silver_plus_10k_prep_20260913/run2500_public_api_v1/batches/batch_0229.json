@@ -1,0 +1,526 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 50.477,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4993,
+    "completion_tokens": 1934,
+    "total_tokens": 6927,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1034
+    },
+    "input_tokens": 4993,
+    "output_tokens": 1934,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06088",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            10
+          ],
+          "to": [
+            4,
+            12
+          ],
+          "text": "auto-cad"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            13
+          ],
+          "to": [
+            13,
+            15
+          ],
+          "text": "AI"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06089",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            1,
+            8
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "半导体封装流程"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "封装工艺"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            33
+          ],
+          "to": [
+            16,
+            36
+          ],
+          "text": "存储/SiP/FCBGA类型产品工艺经验"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06091",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            10
+          ],
+          "to": [
+            7,
+            11
+          ],
+          "text": "财务总结"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "分析工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06092",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            10
+          ],
+          "to": [
+            5,
+            11
+          ],
+          "text": "文字撰写能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            17
+          ],
+          "to": [
+            12,
+            18
+          ],
+          "text": "组织协调能力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            18,
+            24
+          ],
+          "to": [
+            19,
+            25
+          ],
+          "text": "口头表达能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            38,
+            46
+          ],
+          "to": [
+            39,
+            47
+          ],
+          "text": "驾驭各种文书材料"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06093",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            23
+          ],
+          "to": [
+            17,
+            21
+          ],
+          "text": "吃苦耐劳"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            24,
+            28
+          ],
+          "to": [
+            22,
+            26
+          ],
+          "text": "认真负责"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06094",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            10
+          ],
+          "to": [
+            8,
+            11
+          ],
+          "text": "CAD"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06095",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            13,
+            19
+          ],
+          "to": [
+            13,
+            17
+          ],
+          "text": "法规要求"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            23,
+            31
+          ],
+          "to": [
+            20,
+            29
+          ],
+          "text": "关注供应商交付风险"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06086\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历资格要求，标为K。\",\"issues\":[]},{\"id\":\"sp10k-06087\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"适应施工现场环境\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"工程管理\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"施工现场环境适应属于通用特质，工程管理为专业领域名。\",\"issues\":[]},{\"id\":\"sp10k-06088\",\"spans\":[{\"start\":3,\"end\":10,\"text\":\"auto-cad\",\"label\":\"S\"},{\"start\":11,\"end\":13,\"text\":\"AI\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"绘图软件工具运用要求，工具名标为S。\",\"issues\":[]},{\"id\":\"sp10k-06089\",\"spans\":[{\"start\":1,\"end\":8,\"text\":\"半导体封装流程\",\"label\":\"K\"},{\"start\":9,\"end\":13,\"text\":\"封装工艺\",\"label\":\"K\"},{\"start\":15,\"end\":33,\"text\":\"存储/SiP/FCBGA类型产品工艺经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"封装流程和工艺为领域知识；具体产品工艺实践经历整体标为S。\",\"issues\":[]},{\"id\":\"sp10k-06090\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"设备老化评估\",\"label\":\"S\"},{\"start\":9,\"end\":25,\"text\":\"secondsource评价推进\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"设备评估及评价推进均为明确职业动作。\",\"issues\":[]},{\"id\":\"sp10k-06091\",\"spans\":[{\"start\":7,\"end\":10,\"text\":\"财务总结\",\"label\":\"S\"},{\"start\":11,\"end\":15,\"text\":\"分析工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"财务总结和分析均为岗位执行活动。\",\"issues\":[]},{\"id\":\"sp10k-06092\",\"spans\":[{\"start\":5,\"end\":10,\"text\":\"文字撰写能力\",\"label\":\"T\"},{\"start\":11,\"end\":17,\"text\":\"组织协调能力\",\"label\":\"T\"},{\"start\":18,\"end\":24,\"text\":\"口头表达能力\",\"label\":\"T\"},{\"start\":38,\"end\":46,\"text\":\"驾驭各种文书材料\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"文字撰写、组织协调和口头表达为通用能力；驾驭文书材料为可执行职业动作。\",\"issues\":[]},{\"id\":\"sp10k-06093\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"初中及以上学历\",\"label\":\"K\"},{\"start\":19,\"end\":23,\"text\":\"吃苦耐劳\",\"label\":\"T\"},{\"start\":24,\"end\":28,\"text\":\"认真负责\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"学历为资格要求，吃苦耐劳和认真负责为通用特质；纹身及嗜好不标。\",\"issues\":[]},{\"id\":\"sp10k-06094\",\"spans\":[{\"start\":7,\"end\":10,\"text\":\"CAD\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"CAD为制图软件工具，标为S；“相关专业”过于泛化不标。\",\"issues\":[]},{\"id\":\"sp10k-06095\",\"spans\":[{\"start\":2,\"end\":4,\"text\":\"环保\",\"label\":\"K\"},{\"start\":5,\"end\":9,\"text\":\"安全生产\",\"label\":\"K\"},{\"start\":13,\"end\":19,\"text\":\"法规要求\",\"label\":\"K\"},{\"start\":23,\"end\":31,\"text\":\"关注供应商交付风险\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"环保、安全生产及法规要求属于规范知识；关注供应商交付风险为通用风险意识能力。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06086",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历资格要求，标为K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06087",
+        "spans": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "适应施工现场环境",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "工程管理",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "施工现场环境适应属于通用特质，工程管理为专业领域名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06088",
+        "spans": [
+          {
+            "start": 4,
+            "end": 12,
+            "text": "auto-cad",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "text": "AI",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "绘图软件工具运用要求，工具名标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06089",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "半导体封装流程",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "封装工艺",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 36,
+            "text": "存储/SiP/FCBGA类型产品工艺经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "封装流程和工艺为领域知识；具体产品工艺实践经历整体标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06090",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "设备老化评估",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 25,
+            "text": "secondsource评价推进",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设备评估及评价推进均为明确职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06091",
+        "spans": [
+          {
+            "start": 7,
+            "end": 11,
+            "text": "财务总结",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "分析工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "财务总结和分析均为岗位执行活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06092",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "文字撰写能力",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "text": "组织协调能力",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "口头表达能力",
+            "label": "T"
+          },
+          {
+            "start": 39,
+            "end": 47,
+            "text": "驾驭各种文书材料",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文字撰写、组织协调和口头表达为通用能力；驾驭文书材料为可执行职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06093",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "初中及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "吃苦耐劳",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "认真负责",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为资格要求，吃苦耐劳和认真负责为通用特质；纹身及嗜好不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06094",
+        "spans": [
+          {
+            "start": 8,
+            "end": 11,
+            "text": "CAD",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "CAD为制图软件工具，标为S；“相关专业”过于泛化不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06095",
+        "spans": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "环保",
+            "label": "K"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "安全生产",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "法规要求",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 29,
+            "text": "关注供应商交付风险",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "环保、安全生产及法规要求属于规范知识；关注供应商交付风险为通用风险意识能力。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 229,
+  "ids": [
+    "sp10k-06086",
+    "sp10k-06087",
+    "sp10k-06088",
+    "sp10k-06089",
+    "sp10k-06090",
+    "sp10k-06091",
+    "sp10k-06092",
+    "sp10k-06093",
+    "sp10k-06094",
+    "sp10k-06095"
+  ],
+  "at": "2026-09-13T17:29:19.343389+00:00"
+}

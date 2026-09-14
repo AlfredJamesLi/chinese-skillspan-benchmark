@@ -1,0 +1,524 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05421",
+      "spans": [
+        {
+          "start": 4,
+          "end": 18,
+          "text": "软件产品Web端的研发及优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "研发与优化共享软件产品Web端这一对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05422",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "网络技术基础",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 26,
+          "text": "交换机、路由器、防火墙配置",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "基础知识标K；设备列表共享配置动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05423",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "设备调试",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "故障维修",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "巡检",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分三项独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05424",
+      "spans": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "软件调试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留调试活动，排除项目周期修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05425",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明报名材料真实性及录用资格处理。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05426",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明相近专业的报考条件，未给出具体学历资格或专业名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05427",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "制订传感器维护考核指标",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "实施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "制订与实施为职业活动；实施对象由前文考核指标限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05428",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为弄虚作假的资格处理规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05429",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "html",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 18,
+          "text": "javascript",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 22,
+          "text": "css",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "编程语言",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "脚本理解及编程语言掌握属于技术技能；编程语言不属于自然语言L。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05431",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "机房布线",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 22,
+          "text": "弱电和基础线路的架构布局和扩展",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 34,
+          "text": "物理排错能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "架构布局与扩展保留共享对象；物理排错为领域绑定能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05432",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "监控平台",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "监控系统",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "text": "大屏项目调试基础",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "调试基础明确为知识；前两项的S仅为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "监控平台",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可能要求平台知识，也可能要求岗位工具运用；未说明实际操作，且末项基础是否共享限定不明确。"
+        },
+        {
+          "kind": "type",
+          "text": "监控系统",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可能要求系统知识，也可能要求系统操作技能；现有局部语境不足以消除两种解释。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05433",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明特定报考人员的证书核验及报考流程，未提出岗位学历要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05434",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明聘用方式、试用期及考核处理。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05435",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅介绍招聘面试的组织依据与考试形式。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05436",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "java或Python开发环境",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发环境为岗位工具语境，保留两项共享的中心词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05437",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "Mysql",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 13,
+          "text": "Redis",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 23,
+          "text": "Memcached",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 29,
+          "text": "Nginx",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确产品和工具语境，逐项标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05438",
+      "spans": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "针炙推拿学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "提取专业名称并保留原文写法；岗位数与人数不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05439",
+      "spans": [
+        {
+          "start": 10,
+          "end": 17,
+          "text": "全日制大学专科",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "优先录用条件包含明确学历；急需专业未指明具体专业。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05440",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "专科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "通信",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "电子信息",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格及具体专业名称分别标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05441",
+      "spans": [
+        {
+          "start": 3,
+          "end": 12,
+          "text": "操作Linux系统",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 27,
+          "text": "应用系统的故障响应及处理",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 38,
+          "text": "TCP/IP协议",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统操作与故障处理为S，协议知识为K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05442",
+      "spans": [
+        {
+          "start": 18,
+          "end": 23,
+          "text": "putty",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "xshell",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 39,
+          "text": "Linux服务",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 47,
+          "text": "服务器配置安装",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 51,
+          "text": "ftp",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "text": "http",
+          "label": "S"
+        },
+        {
+          "start": 57,
+          "end": 60,
+          "text": "nfs",
+          "label": "S"
+        },
+        {
+          "start": 61,
+          "end": 64,
+          "text": "dns",
+          "label": "S"
+        },
+        {
+          "start": 65,
+          "end": 70,
+          "text": "samba",
+          "label": "S"
+        },
+        {
+          "start": 71,
+          "end": 75,
+          "text": "DHCP",
+          "label": "S"
+        },
+        {
+          "start": 76,
+          "end": 80,
+          "text": "mail",
+          "label": "S"
+        },
+        {
+          "start": 84,
+          "end": 89,
+          "text": "防火墙技术",
+          "label": "S"
+        },
+        {
+          "start": 90,
+          "end": 98,
+          "text": "iptables",
+          "label": "S"
+        },
+        {
+          "start": 99,
+          "end": 104,
+          "text": "ipset",
+          "label": "S"
+        },
+        {
+          "start": 105,
+          "end": 114,
+          "text": "firewalld",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "远程登录工具及配置安装语境中的服务标S；防火墙技术的S为待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "防火墙技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指概括性技术知识，也可指所列工具对应的可执行方法；缺少原理或具体操作限定。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05443",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明报名及复审材料不予退还。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05444",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明按测试成绩确定面试人选的程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05445",
+      "spans": [
+        {
+          "start": 2,
+          "end": 23,
+          "text": "SQLServer或MySql的管理和使用",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 33,
+          "text": "存储过程的使用",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确管理和使用语境；数据库名称共享动作，保留完整短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05446",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘背景、政策依据和岗位人数公告，未明确候选人能力要求。",
+      "issues": []
+    }
+  ]
+}

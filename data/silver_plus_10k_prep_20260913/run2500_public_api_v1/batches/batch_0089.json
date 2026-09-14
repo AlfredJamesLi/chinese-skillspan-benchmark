@@ -1,0 +1,375 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 57.468,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5133,
+    "completion_tokens": 1787,
+    "total_tokens": 6920,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 989
+    },
+    "input_tokens": 5133,
+    "output_tokens": 1787,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00884",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            10
+          ],
+          "to": [
+            0,
+            9
+          ],
+          "text": "大学本科及以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00885",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            18
+          ],
+          "to": [
+            4,
+            18
+          ],
+          "text": "持续集成和持续部署的平台开发"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00886",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "国（境）外学历学位"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            37,
+            49
+          ],
+          "to": [
+            44,
+            55
+          ],
+          "text": "《国外学历学位认证书》"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00887",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            8
+          ],
+          "to": [
+            8,
+            12
+          ],
+          "text": "Word"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            14
+          ],
+          "to": [
+            13,
+            18
+          ],
+          "text": "Excel"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            25
+          ],
+          "to": [
+            19,
+            29
+          ],
+          "text": "PowerPoint"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            26,
+            31
+          ],
+          "to": [
+            30,
+            35
+          ],
+          "text": "Visio"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            32,
+            39
+          ],
+          "to": [
+            36,
+            43
+          ],
+          "text": "Project"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00881\",\"spans\":[{\"start\":6,\"end\":12,\"text\":\"具象雕塑研究\",\"label\":\"S\"},{\"start\":13,\"end\":19,\"text\":\"基础雕塑教学\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"雕塑基础\",\"label\":\"K\"},{\"start\":34,\"end\":42,\"text\":\"具象雕塑教学经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取具象雕塑研究、雕塑教学等职业活动，以及雕塑基础这一领域知识；明确教学经验要求保留必要经历表述。\",\"issues\":[]},{\"id\":\"sp10k-00882\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报考专业界定及考试制度引用，未直接提出候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00883\",\"spans\":[{\"start\":2,\"end\":23,\"text\":\"开发维护公司的网站管理系统、内部信息化系统\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求开发维护网站管理系统和内部信息化系统。\",\"issues\":[]},{\"id\":\"sp10k-00884\",\"spans\":[{\"start\":0,\"end\":10,\"text\":\"大学本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格名；相关专业及专业并列名称属于泛化专业要求，未单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00885\",\"spans\":[{\"start\":2,\"end\":18,\"text\":\"持续集成和持续部署的平台开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求开展持续集成、持续部署平台的开发工作。\",\"issues\":[]},{\"id\":\"sp10k-00886\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"国（境）外学历学位\",\"label\":\"K\"},{\"start\":37,\"end\":49,\"text\":\"《国外学历学位认证书》\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取境外学历学位及其认证书这两项资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00887\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"Word\",\"label\":\"S\"},{\"start\":9,\"end\":14,\"text\":\"Excel\",\"label\":\"S\"},{\"start\":15,\"end\":25,\"text\":\"PowerPoint\",\"label\":\"S\"},{\"start\":26,\"end\":31,\"text\":\"Visio\",\"label\":\"S\"},{\"start\":32,\"end\":39,\"text\":\"Project\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"办公软件名称处于明确使用语境，分别标注为岗位工具。\",\"issues\":[]},{\"id\":\"sp10k-00888\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容主要是应聘材料下载、填报及证书提交流程，未形成直接的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00889\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为考试成绩计算方式和考试流程信息，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00890\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"Windows系统\",\"label\":\"S\"},{\"start\":14,\"end\":20,\"text\":\"各种应用软件\",\"label\":\"S\"},{\"start\":24,\"end\":32,\"text\":\"解决电脑系统问题\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取系统及应用软件使用和电脑系统问题解决等明确技术活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00881",
+        "spans": [
+          {
+            "start": 6,
+            "end": 12,
+            "text": "具象雕塑研究",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "基础雕塑教学",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "雕塑基础",
+            "label": "K"
+          },
+          {
+            "start": 34,
+            "end": 42,
+            "text": "具象雕塑教学经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取具象雕塑研究、雕塑教学等职业活动，以及雕塑基础这一领域知识；明确教学经验要求保留必要经历表述。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00882",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报考专业界定及考试制度引用，未直接提出候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00883",
+        "spans": [
+          {
+            "start": 2,
+            "end": 23,
+            "text": "开发维护公司的网站管理系统、内部信息化系统",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求开发维护网站管理系统和内部信息化系统。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00884",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "大学本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格名；相关专业及专业并列名称属于泛化专业要求，未单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00885",
+        "spans": [
+          {
+            "start": 4,
+            "end": 18,
+            "text": "持续集成和持续部署的平台开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求开展持续集成、持续部署平台的开发工作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00886",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "国（境）外学历学位",
+            "label": "K"
+          },
+          {
+            "start": 44,
+            "end": 55,
+            "text": "《国外学历学位认证书》",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取境外学历学位及其认证书这两项资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00887",
+        "spans": [
+          {
+            "start": 8,
+            "end": 12,
+            "text": "Word",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 18,
+            "text": "Excel",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 29,
+            "text": "PowerPoint",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 35,
+            "text": "Visio",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 43,
+            "text": "Project",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "办公软件名称处于明确使用语境，分别标注为岗位工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00888",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容主要是应聘材料下载、填报及证书提交流程，未形成直接的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00889",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为考试成绩计算方式和考试流程信息，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00890",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "Windows系统",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "各种应用软件",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "text": "解决电脑系统问题",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取系统及应用软件使用和电脑系统问题解决等明确技术活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 89,
+  "ids": [
+    "sp10k-00881",
+    "sp10k-00882",
+    "sp10k-00883",
+    "sp10k-00884",
+    "sp10k-00885",
+    "sp10k-00886",
+    "sp10k-00887",
+    "sp10k-00888",
+    "sp10k-00889",
+    "sp10k-00890"
+  ],
+  "at": "2026-09-13T15:04:46.290342+00:00"
+}

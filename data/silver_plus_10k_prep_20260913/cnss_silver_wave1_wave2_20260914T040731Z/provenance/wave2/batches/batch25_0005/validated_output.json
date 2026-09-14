@@ -1,0 +1,539 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03801",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "协调各类资源",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 31,
+          "text": "物业设施设备管理各项法规政策",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "行业规范",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "资源协调为通用能力；法规政策和行业规范为领域知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03802",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "软件架构设计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整职业活动，去除年限和经验后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03803",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘考试加分及报名证明材料规定，不是岗位能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03804",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应聘材料真实性及资格审核流程说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03806",
+      "spans": [
+        {
+          "start": 6,
+          "end": 18,
+          "text": "业务系统服务器监控与维护",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 33,
+          "text": "监控系统的维护与支持保障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项运维职责分别抽取，各项保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03807",
+      "spans": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "运维",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "职业素养",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "思路清晰",
+          "label": "T"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "积极主动",
+          "label": "T"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "text": "乐于助人",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维为职业活动，其余为通用能力和特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03808",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "工作耐心",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "认真",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取沟通协调、耐心和认真特质；泛化工作安排不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03809",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "基层服务及退役人员招聘考试加分政策。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03810",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "提取项目需求",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 17,
+          "text": "完成项目需求报告",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "原型设计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "需求提取、报告完成和原型设计为独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03811",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "策划、实施品牌推广活动及执行",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列动作共享品牌推广活动对象，保留连续完整提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03812",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "信息管理",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 21,
+          "text": "计算机技术与应用",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "软件工程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格及具体专业名分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03813",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "cad",
+          "label": "S"
+        },
+        {
+          "start": 6,
+          "end": 10,
+          "text": "cass",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "ARCGIS",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "oracle",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位软件工具名按S抽取，保留原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03814",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "毕业生报考身份界定，未提出具体学历层级或专业资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03815",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考专业匹配及目录执行规定，未列具体专业或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03816",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "计算机基础",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "网管工作经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "计算机基础为知识；网管工作经验保留职能实践经历含义。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03817",
+      "spans": [
+        {
+          "start": 3,
+          "end": 8,
+          "text": "逻辑分析力",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "文字表达能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项均为可迁移的通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03818",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "人力产品运维手册管理",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "text": "培训工作的开展",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 37,
+          "text": "对处理过的问题进行整理总结",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 43,
+          "text": "形成知识库",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取手册管理、开展培训、运维问题整理和知识库建设职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03819",
+      "spans": [
+        {
+          "start": 1,
+          "end": 4,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "软件工程",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "信息工程",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "本科学历",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "英语四级",
+          "label": "L"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "IT管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业、学历、语言等级及IT管理活动分别抽取，年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03820",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘回避制度合规条件，不属于能力、知识或专业资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03821",
+      "spans": [
+        {
+          "start": 11,
+          "end": 19,
+          "text": "open3000",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "text": "open3200",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 37,
+          "text": "open5200",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体主站系统工具受局部经验要求限定，按S抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03822",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "测试环境的搭建及维护",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "部署应用上线",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "环境搭建维护保留共享对象，应用部署另列。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03823",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘岗位取消、核减及开考比例公告。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03824",
+      "spans": [
+        {
+          "start": 4,
+          "end": 15,
+          "text": "在线交易系统设计、规划",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "系统运维",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "Java",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "text": "Golang",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设计与规划共享系统对象；运维及编程工具独立抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03825",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "亿级海量数据处理",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 22,
+          "text": "亿级分布式系统架构设计",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 30,
+          "text": "线上调优、优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确技术实践，保留规模限定及线上共享语境，去除经验后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03826",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "沟通表达能力",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "团队精神",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "服务意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通表达、团队精神及服务意识均为通用能力或特质。",
+      "issues": []
+    }
+  ]
+}

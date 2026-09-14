@@ -1,0 +1,499 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04482",
+      "spans": [
+        {
+          "start": 2,
+          "end": 43,
+          "text": "网络安全设备如交换机、防火墙、抗DDOS设备、IDS/IPS、WAF、堡垒机等维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备列表共享维护动作，保留完整活动短语，去除经验及优先修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04483",
+      "spans": [
+        {
+          "start": 0,
+          "end": 8,
+          "text": "热爱软件实施工作",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "逻辑表达能力",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "应变能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位工作热情及通用素质标T，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04484",
+      "spans": [
+        {
+          "start": 9,
+          "end": 24,
+          "text": "小学及以上相应学科的教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "农村任教",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 51,
+          "text": "村小工作经历",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "教师资格标K；任教活动标S，村小实践要求保留工作经历。年限和证明手续不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04485",
+      "spans": [
+        {
+          "start": 4,
+          "end": 27,
+          "text": "Linux下主流开源软件安装、配置、优化及排障",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "text": "Docker",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 47,
+          "text": "SaltStack",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 55,
+          "text": "Ansible",
+          "label": "S"
+        },
+        {
+          "start": 56,
+          "end": 65,
+          "text": "OpenStack",
+          "label": "S"
+        },
+        {
+          "start": 66,
+          "end": 72,
+          "text": "Zabbix",
+          "label": "S"
+        },
+        {
+          "start": 73,
+          "end": 76,
+          "text": "LVS",
+          "label": "S"
+        },
+        {
+          "start": 77,
+          "end": 82,
+          "text": "Squid",
+          "label": "S"
+        },
+        {
+          "start": 83,
+          "end": 90,
+          "text": "Varnish",
+          "label": "S"
+        },
+        {
+          "start": 91,
+          "end": 95,
+          "text": "Bind",
+          "label": "S"
+        },
+        {
+          "start": 96,
+          "end": 101,
+          "text": "Nginx",
+          "label": "S"
+        },
+        {
+          "start": 102,
+          "end": 105,
+          "text": "PHP",
+          "label": "S"
+        },
+        {
+          "start": 106,
+          "end": 111,
+          "text": "MySQL",
+          "label": "S"
+        },
+        {
+          "start": 112,
+          "end": 117,
+          "text": "Redis",
+          "label": "S"
+        },
+        {
+          "start": 118,
+          "end": 127,
+          "text": "ZooKeeper",
+          "label": "S"
+        },
+        {
+          "start": 128,
+          "end": 134,
+          "text": "Hadoop",
+          "label": "S"
+        },
+        {
+          "start": 135,
+          "end": 138,
+          "text": "ELK",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装配置等动作共享软件对象；后列具体工具处于明确运用语境，逐项标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04486",
+      "spans": [
+        {
+          "start": 30,
+          "end": 36,
+          "text": "现场安装指导",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "系统调试",
+          "label": "S"
+        },
+        {
+          "start": 42,
+          "end": 44,
+          "text": "验收",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 49,
+          "text": "培训服务",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分可独立执行的安装指导、调试、验收及培训职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04487",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "项目资料、验收交付文档的收集整理",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "移交项目",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "项目交付",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "资料与文档共享收集整理动作；项目移交、交付独立标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04488",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "内容为到校安排及免费学习项目开放说明，不是候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04489",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求提交资格证明材料，未给出具体资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04490",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为应聘证明材料要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04491",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "专科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 24,
+          "text": "系统集成项目的销售",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历标K；具体销售活动去除经验与年限后标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04492",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "squid",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 13,
+          "text": "nginx",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 21,
+          "text": "ssh端口转发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "代理转发语境中的具体工具与可执行技术方法标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04493",
+      "spans": [
+        {
+          "start": 2,
+          "end": 33,
+          "text": "编暖通系统设备的标准操作SOP、维护指导MOP和应急预案EOP",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "三类文档共享编制动作，保留连续完整职责及原文用字。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04494",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘事项的解释主体。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04495",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名信息及材料真实性责任，不抽取为职业素质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04496",
+      "spans": [
+        {
+          "start": 2,
+          "end": 23,
+          "text": "对景区易发生的意外摔伤、擦伤等外伤进行治疗",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "治疗职责保留其具体外伤对象及连续动作结构。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04497",
+      "spans": [
+        {
+          "start": 2,
+          "end": 31,
+          "text": "视频会议系统、电话交换机、IT终端设备日常配置、管理及维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备列表共享配置、管理及维护动作，保留完整活动短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04498",
+      "spans": [
+        {
+          "start": 10,
+          "end": 24,
+          "text": "服务端搭建、优化、维护、管理",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "数据备份",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "前组动作共享服务端对象；数据备份为独立完整职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04499",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为留学归国人员报名时的证明材料替代安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04500",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "泛指岗位专业、学历及资格条件，未提供可抽取的具体名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04501",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅泛指报考资格条件，无具体能力或资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04502",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "认真负责",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "积极主动",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用工作态度及责任特质标T，程度修饰不纳入。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04503",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "内容为未取得资格后的聘用合同处理规定，未列具体资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04505",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "电子商务整体的规划和运营",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "电商店铺搭建",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "规划与运营共享电子商务对象；店铺搭建独立标S，纯效果目标不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04506",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "ups、机密空调等设备的安装流程",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "设备安装流程属于要求范围且边界完整；K/S未决，S仅为占位，保留原文机密空调。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "ups、机密空调等设备的安装流程",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指安装流程知识，也可指可执行安装方法；熟悉及对环节有见解尚不足以明确要求的是知识理解还是实施能力。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04507",
+      "spans": [
+        {
+          "start": 2,
+          "end": 31,
+          "text": "服务器、存储、操作系统、云平台的设计、建设、监控和运维管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "多类技术对象共享设计、建设、监控及运维动作；业务可用性保证为纯结果要求，不标。",
+      "issues": []
+    }
+  ]
+}

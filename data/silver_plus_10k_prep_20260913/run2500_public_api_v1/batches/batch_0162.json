@@ -1,0 +1,619 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 58.361,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5007,
+    "completion_tokens": 1810,
+    "total_tokens": 6817,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 796
+    },
+    "input_tokens": 5007,
+    "output_tokens": 1810,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01611",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            12
+          ],
+          "to": [
+            10,
+            16
+          ],
+          "text": "学术创新成果"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            24
+          ],
+          "to": [
+            22,
+            29
+          ],
+          "text": "中英文写作能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01612",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            18,
+            24
+          ],
+          "to": [
+            18,
+            26
+          ],
+          "text": "IT硬件故障维修"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            24,
+            33
+          ],
+          "to": [
+            27,
+            36
+          ],
+          "text": "IT软件安装和维护"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01614",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "ESB监控平台"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            24
+          ],
+          "to": [
+            26,
+            28
+          ],
+          "text": "解决"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            27,
+            33
+          ],
+          "to": [
+            29,
+            35
+          ],
+          "text": "优化监控体系"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01616",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            17
+          ],
+          "to": [
+            6,
+            17
+          ],
+          "text": "自动化运维的设计与建设"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01617",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            9
+          ],
+          "to": [
+            2,
+            10
+          ],
+          "text": "仓库专业知识技能"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            20
+          ],
+          "to": [
+            13,
+            19
+          ],
+          "text": "仓储运维流程"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01618",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            7
+          ],
+          "to": [
+            2,
+            6
+          ],
+          "text": "化纤行业"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            11
+          ],
+          "to": [
+            6,
+            11
+          ],
+          "text": "机电仪工作"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            21,
+            27
+          ],
+          "to": [
+            18,
+            22
+          ],
+          "text": "聚酯设备"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            28,
+            30
+          ],
+          "to": [
+            23,
+            25
+          ],
+          "text": "选型"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            31,
+            33
+          ],
+          "to": [
+            26,
+            28
+          ],
+          "text": "安装"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            34,
+            36
+          ],
+          "to": [
+            29,
+            31
+          ],
+          "text": "调试"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            37,
+            39
+          ],
+          "to": [
+            32,
+            34
+          ],
+          "text": "运维"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01619",
+      "repairs": [
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            19,
+            25
+          ],
+          "to": [
+            21,
+            27
+          ],
+          "text": "团队配合意识"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            26,
+            30
+          ],
+          "to": [
+            28,
+            32
+          ],
+          "text": "利他思维"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            32,
+            38
+          ],
+          "to": [
+            37,
+            41
+          ],
+          "text": "抗压能力"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            39,
+            45
+          ],
+          "to": [
+            42,
+            46
+          ],
+          "text": "应变能力"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01611\",\"spans\":[{\"start\":6,\"end\":12,\"text\":\"学术创新成果\",\"label\":\"K\"},{\"start\":17,\"end\":24,\"text\":\"中英文写作能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学术成果资格及中英文写作能力。\",\"issues\":[]},{\"id\":\"sp10k-01612\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"Windows\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"PC硬件\",\"label\":\"K\"},{\"start\":18,\"end\":24,\"text\":\"IT硬件故障维修\",\"label\":\"S\"},{\"start\":24,\"end\":33,\"text\":\"IT软件安装和维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"Windows为岗位使用工具，PC硬件为领域知识，故障维修及软件安装维护为可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01613\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"年龄及年龄上限属于一般任职条件，不在能力、知识或资格提及范围内。\",\"issues\":[]},{\"id\":\"sp10k-01614\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"ESB监控平台\",\"label\":\"S\"},{\"start\":10,\"end\":16,\"text\":\"日常运维管理\",\"label\":\"S\"},{\"start\":22,\"end\":24,\"text\":\"解决\",\"label\":\"S\"},{\"start\":27,\"end\":33,\"text\":\"优化监控体系\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取监控平台运用、运维管理、接口异常处理及监控体系优化等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01615\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"常用的安全协议\",\"label\":\"K\"},{\"start\":12,\"end\":16,\"text\":\"组件服务\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"安全协议和组件服务在掌握语境下作为专业知识提及。\",\"issues\":[]},{\"id\":\"sp10k-01616\",\"spans\":[{\"start\":7,\"end\":17,\"text\":\"自动化运维的设计与建设\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"自动化运维的设计与建设是明确的职业技术活动。\",\"issues\":[]},{\"id\":\"sp10k-01617\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"仓库专业知识技能\",\"label\":\"K\"},{\"start\":14,\"end\":20,\"text\":\"仓储运维流程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取仓库领域专业知识技能及仓储运维流程知识。\",\"issues\":[]},{\"id\":\"sp10k-01618\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"化纤行业\",\"label\":\"K\"},{\"start\":7,\"end\":11,\"text\":\"机电仪工作\",\"label\":\"S\"},{\"start\":21,\"end\":27,\"text\":\"聚酯设备\",\"label\":\"K\"},{\"start\":28,\"end\":30,\"text\":\"选型\",\"label\":\"S\"},{\"start\":31,\"end\":33,\"text\":\"安装\",\"label\":\"S\"},{\"start\":34,\"end\":36,\"text\":\"调试\",\"label\":\"S\"},{\"start\":37,\"end\":39,\"text\":\"运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"化纤行业为行业背景，机电仪工作及聚酯设备相关选型、安装、调试、运维为实践活动；设备本身作为领域对象知识提及。\",\"issues\":[]},{\"id\":\"sp10k-01619\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"工作积极主动\",\"label\":\"T\"},{\"start\":7,\"end\":11,\"text\":\"品行端正\",\"label\":\"T\"},{\"start\":12,\"end\":16,\"text\":\"责任心强\",\"label\":\"T\"},{\"start\":19,\"end\":25,\"text\":\"团队配合意识\",\"label\":\"T\"},{\"start\":26,\"end\":30,\"text\":\"利他思维\",\"label\":\"T\"},{\"start\":32,\"end\":38,\"text\":\"抗压能力\",\"label\":\"T\"},{\"start\":39,\"end\":45,\"text\":\"应变能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为候选人的通用特质、责任意识或团队协作能力。\",\"issues\":[]},{\"id\":\"sp10k-01620\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"其它工作任务属于泛化职责表述，未明确具体能力、知识或资格要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01611",
+        "spans": [
+          {
+            "start": 10,
+            "end": 16,
+            "text": "学术创新成果",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 29,
+            "text": "中英文写作能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学术成果资格及中英文写作能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01612",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "Windows",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "PC硬件",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "text": "IT硬件故障维修",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 36,
+            "text": "IT软件安装和维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Windows为岗位使用工具，PC硬件为领域知识，故障维修及软件安装维护为可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01613",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "年龄及年龄上限属于一般任职条件，不在能力、知识或资格提及范围内。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01614",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "ESB监控平台",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "日常运维管理",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "text": "解决",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "优化监控体系",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取监控平台运用、运维管理、接口异常处理及监控体系优化等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01615",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "常用的安全协议",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "组件服务",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "安全协议和组件服务在掌握语境下作为专业知识提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01616",
+        "spans": [
+          {
+            "start": 6,
+            "end": 17,
+            "text": "自动化运维的设计与建设",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "自动化运维的设计与建设是明确的职业技术活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01617",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "仓库专业知识技能",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "仓储运维流程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取仓库领域专业知识技能及仓储运维流程知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01618",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "化纤行业",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 11,
+            "text": "机电仪工作",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "聚酯设备",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "选型",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "text": "安装",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 31,
+            "text": "调试",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 34,
+            "text": "运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "化纤行业为行业背景，机电仪工作及聚酯设备相关选型、安装、调试、运维为实践活动；设备本身作为领域对象知识提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01619",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "工作积极主动",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "品行端正",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "责任心强",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "text": "团队配合意识",
+            "label": "T"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "利他思维",
+            "label": "T"
+          },
+          {
+            "start": 37,
+            "end": 41,
+            "text": "抗压能力",
+            "label": "T"
+          },
+          {
+            "start": 42,
+            "end": 46,
+            "text": "应变能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为候选人的通用特质、责任意识或团队协作能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01620",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "其它工作任务属于泛化职责表述，未明确具体能力、知识或资格要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 162,
+  "ids": [
+    "sp10k-01611",
+    "sp10k-01612",
+    "sp10k-01613",
+    "sp10k-01614",
+    "sp10k-01615",
+    "sp10k-01616",
+    "sp10k-01617",
+    "sp10k-01618",
+    "sp10k-01619",
+    "sp10k-01620"
+  ],
+  "at": "2026-09-13T16:23:42.424105+00:00"
+}

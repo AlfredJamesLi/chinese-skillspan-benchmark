@@ -1,0 +1,505 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04088",
+      "spans": [
+        {
+          "start": 2,
+          "end": 23,
+          "text": "Nginx、PHP、MSQL等的配置及优化",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "常用报务配置",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 38,
+          "text": "部署",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 41,
+          "text": "配置",
+          "label": "S"
+        },
+        {
+          "start": 42,
+          "end": 44,
+          "text": "排错",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取配置、优化及部署排错活动；保留共享对象及原文错字。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04089",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅指引查阅招聘岗位附件，未列出具体能力或资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04090",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于招聘考试方式和计分程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04091",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明绩效待遇及发放条件，未提出具体资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04092",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于应聘心理测试程序，未明确具体职业能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04093",
+      "spans": [
+        {
+          "start": 7,
+          "end": 15,
+          "text": "Java后端开发",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 26,
+          "text": "springboot",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 34,
+          "text": "mybatis",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 41,
+          "text": "oracle",
+          "label": "S"
+        },
+        {
+          "start": 42,
+          "end": 47,
+          "text": "Redis",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 57,
+          "text": "zookeeper",
+          "label": "S"
+        },
+        {
+          "start": 58,
+          "end": 63,
+          "text": "maven",
+          "label": "S"
+        },
+        {
+          "start": 64,
+          "end": 70,
+          "text": "docker",
+          "label": "S"
+        },
+        {
+          "start": 73,
+          "end": 77,
+          "text": "网络编程",
+          "label": "S"
+        },
+        {
+          "start": 78,
+          "end": 83,
+          "text": "高并发技术",
+          "label": "S"
+        },
+        {
+          "start": 84,
+          "end": 89,
+          "text": "多线程应用",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "开发活动及其工具栈标S；高并发技术的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "高并发技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指高并发知识体系或可执行技术；局部未明确理论学习还是实际运用，熟悉不足以单独定类。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04094",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "认真负责",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "text": "学习和沟通能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工作态度和通用能力标T；保留共享的能力中心词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04095",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "orcl数据库",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 25,
+          "text": "Tomcat的安装部署",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 46,
+          "text": "Windows服务器相关操作以及配置",
+          "label": "S"
+        },
+        {
+          "start": 49,
+          "end": 55,
+          "text": "网络相关知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工具使用及安装配置标S，明确知识要求标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04096",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于报考纪律和取消考试资格的规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04097",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "网络设备的安装配置",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "硬件维护",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "office",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装配置、维护和办公工具运用标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04098",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "与其它部门协调",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "制定接口规范",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "部门协调属通用协作能力，制定规范属职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04099",
+      "spans": [
+        {
+          "start": 2,
+          "end": 22,
+          "text": "220kV及以下电压等级变电站项目的开发",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "运行管理",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 30,
+          "text": "维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分开发、运行管理和维护职责，后两项承接同一项目对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04100",
+      "spans": [
+        {
+          "start": 8,
+          "end": 13,
+          "text": "教师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "解除聘用条件明确要求取得该非语言资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04101",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 19,
+          "text": "独立处理日常工作",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通及无特定业务对象的独立工作能力标T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04102",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "ETL的开发流程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "要求熟悉开发流程，属于流程知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04103",
+      "spans": [
+        {
+          "start": 7,
+          "end": 17,
+          "text": "网络、PC机技术支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "技术支持为职业活动，并列对象共享技术支持中心词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04104",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "文字功底",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 32,
+          "text": "机房整体运维计划的实施管理",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 51,
+          "text": "技术文档和日常报告的编写",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用沟通写作素质标T；运维计划实施管理及文档编写标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04105",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报到、签约和到岗时限规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04106",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "领导力",
+          "label": "T"
+        },
+        {
+          "start": 6,
+          "end": 17,
+          "text": "不断挑战自我的创业激情",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "创新精神",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 39,
+          "text": "搭建科学的管理流程和激励分配机制",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "领导力和精神特质标T；搭建流程机制为完整职业活动，去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04107",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "文档书写",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "沟通表达",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "自我学习能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "文档书写是职业活动，沟通表达和自我学习为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04108",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于资格复审的时间地点及参加程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04109",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确专业领域；泛化相关专业和毕业生评价不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04110",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "描述入职后的职业发展路线，属于就职后展望。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04112",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名表和证件照片提交要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04113",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "text": "产品经理工作经验",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "支付",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历标K；特定职能经历保留经验整体标S；行业背景抽取领域核心名。",
+      "issues": []
+    }
+  ]
+}

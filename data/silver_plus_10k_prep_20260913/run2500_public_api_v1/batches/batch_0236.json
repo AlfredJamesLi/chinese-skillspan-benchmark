@@ -1,0 +1,658 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 46.551,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5083,
+    "completion_tokens": 1893,
+    "total_tokens": 6976,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 843
+    },
+    "input_tokens": 5083,
+    "output_tokens": 1893,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06156",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            26
+          ],
+          "to": [
+            19,
+            27
+          ],
+          "text": "建立成本管理架构"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06157",
+      "repairs": [
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            55,
+            59
+          ],
+          "to": [
+            47,
+            51
+          ],
+          "text": "团队管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06158",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            9
+          ],
+          "to": [
+            7,
+            14
+          ],
+          "text": "日常运营和管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06159",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            17
+          ],
+          "to": [
+            9,
+            16
+          ],
+          "text": "minitab"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            18,
+            24
+          ],
+          "to": [
+            17,
+            25
+          ],
+          "text": "Python工具"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            34,
+            38
+          ],
+          "to": [
+            31,
+            36
+          ],
+          "text": "数据做处理"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            39,
+            43
+          ],
+          "to": [
+            37,
+            39
+          ],
+          "text": "分析"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            40,
+            44
+          ],
+          "text": "逻辑能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06162",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            13
+          ],
+          "to": [
+            0,
+            10
+          ],
+          "text": "与项目对接方紧密合作"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            39,
+            45
+          ],
+          "to": [
+            34,
+            39
+          ],
+          "text": "材料的编写"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            46,
+            48
+          ],
+          "to": [
+            40,
+            42
+          ],
+          "text": "提交"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06163",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            18
+          ],
+          "to": [
+            2,
+            17
+          ],
+          "text": "建筑规划、方案及设计要点的制定"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            22,
+            32
+          ],
+          "to": [
+            24,
+            43
+          ],
+          "text": "建筑、结构、暖通、机电、园林、室内设计"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            40,
+            51
+          ],
+          "to": [
+            45,
+            49
+          ],
+          "text": "专业要求"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            52,
+            60
+          ],
+          "to": [
+            50,
+            57
+          ],
+          "text": "各阶段设计协调"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            61,
+            68
+          ],
+          "to": [
+            59,
+            65
+          ],
+          "text": "成果进行审核"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            70,
+            72
+          ],
+          "to": [
+            66,
+            68
+          ],
+          "text": "指导"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            73,
+            87
+          ],
+          "to": [
+            72,
+            94
+          ],
+          "text": "各主管工程质量记录、技术资料、竣工资料的签审"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            88,
+            94
+          ],
+          "to": [
+            97,
+            101
+          ],
+          "text": "工程总结"
+        },
+        {
+          "i": 8,
+          "action": "snapped",
+          "from": [
+            95,
+            102
+          ],
+          "to": [
+            102,
+            108
+          ],
+          "text": "专题技术总结"
+        },
+        {
+          "i": 9,
+          "action": "snapped",
+          "from": [
+            103,
+            107
+          ],
+          "to": [
+            111,
+            116
+          ],
+          "text": "人才的培养"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06164",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            9
+          ],
+          "to": [
+            4,
+            10
+          ],
+          "text": "项目管理能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            20
+          ],
+          "to": [
+            11,
+            20
+          ],
+          "text": "跨部门沟通协调能力"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06156\",\"spans\":[{\"start\":2,\"end\":18,\"text\":\"按品类对应建立商品核价成本数据库\",\"label\":\"S\"},{\"start\":19,\"end\":26,\"text\":\"建立成本管理架构\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确要求执行的数据库和管理架构建立活动。\",\"issues\":[]},{\"id\":\"sp10k-06157\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"硕士学历\",\"label\":\"K\"},{\"start\":5,\"end\":9,\"text\":\"人力资源\",\"label\":\"K\"},{\"start\":10,\"end\":13,\"text\":\"管理学\",\"label\":\"K\"},{\"start\":55,\"end\":59,\"text\":\"团队管理\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"学历、专业领域和团队管理属于候选人资格或能力要求；泛化工作经验及年限不标。\",\"issues\":[]},{\"id\":\"sp10k-06158\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"日常运营和管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取负责执行的运营管理活动；高效运作属于结果要求，不标。\",\"issues\":[]},{\"id\":\"sp10k-06159\",\"spans\":[{\"start\":3,\"end\":8,\"text\":\"概率论理论\",\"label\":\"K\"},{\"start\":10,\"end\":17,\"text\":\"minitab\",\"label\":\"S\"},{\"start\":18,\"end\":24,\"text\":\"Python工具\",\"label\":\"S\"},{\"start\":34,\"end\":38,\"text\":\"数据做处理\",\"label\":\"S\"},{\"start\":39,\"end\":43,\"text\":\"分析\",\"label\":\"S\"},{\"start\":47,\"end\":51,\"text\":\"逻辑能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"概率论为知识，工具及数据处理分析为职业活动，逻辑能力为通用能力。\",\"issues\":[]},{\"id\":\"sp10k-06160\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"英语应用/口语交流水平\",\"label\":\"L\"}],\"status\":\"candidate_complete\",\"note\":\"英语应用和口语交流水平属于语言能力要求。\",\"issues\":[]},{\"id\":\"sp10k-06161\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为公司资质、荣誉及宣传信息，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-06162\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"与项目对接方紧密合作\",\"label\":\"T\"},{\"start\":39,\"end\":45,\"text\":\"材料的编写\",\"label\":\"S\"},{\"start\":46,\"end\":48,\"text\":\"提交\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取合作及材料编写、提交等明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06163\",\"spans\":[{\"start\":2,\"end\":18,\"text\":\"建筑规划、方案及设计要点的制定\",\"label\":\"S\"},{\"start\":22,\"end\":32,\"text\":\"建筑、结构、暖通、机电、园林、室内设计\",\"label\":\"K\"},{\"start\":40,\"end\":51,\"text\":\"专业要求\",\"label\":\"K\"},{\"start\":52,\"end\":60,\"text\":\"各阶段设计协调\",\"label\":\"S\"},{\"start\":61,\"end\":68,\"text\":\"成果进行审核\",\"label\":\"S\"},{\"start\":70,\"end\":72,\"text\":\"指导\",\"label\":\"S\"},{\"start\":73,\"end\":87,\"text\":\"各主管工程质量记录、技术资料、竣工资料的签审\",\"label\":\"S\"},{\"start\":88,\"end\":94,\"text\":\"工程总结\",\"label\":\"S\"},{\"start\":95,\"end\":102,\"text\":\"专题技术总结\",\"label\":\"S\"},{\"start\":103,\"end\":107,\"text\":\"人才的培养\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取建筑设计统筹、协调审核、工程资料签审、总结及人才培养等要求。\",\"issues\":[]},{\"id\":\"sp10k-06164\",\"spans\":[{\"start\":3,\"end\":9,\"text\":\"项目管理能力\",\"label\":\"S\"},{\"start\":10,\"end\":20,\"text\":\"跨部门沟通协调能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"项目管理为职业执行能力，跨部门沟通协调为通用能力。\",\"issues\":[]},{\"id\":\"sp10k-06165\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":17,\"text\":\"电子、电气、自动化\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历资格；相关专业作为领域资格提及。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06156",
+        "spans": [
+          {
+            "start": 2,
+            "end": 18,
+            "text": "按品类对应建立商品核价成本数据库",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 27,
+            "text": "建立成本管理架构",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确要求执行的数据库和管理架构建立活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06157",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "硕士学历",
+            "label": "K"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "人力资源",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "text": "管理学",
+            "label": "K"
+          },
+          {
+            "start": 47,
+            "end": 51,
+            "text": "团队管理",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历、专业领域和团队管理属于候选人资格或能力要求；泛化工作经验及年限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06158",
+        "spans": [
+          {
+            "start": 7,
+            "end": 14,
+            "text": "日常运营和管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取负责执行的运营管理活动；高效运作属于结果要求，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06159",
+        "spans": [
+          {
+            "start": 3,
+            "end": 8,
+            "text": "概率论理论",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 16,
+            "text": "minitab",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 25,
+            "text": "Python工具",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 36,
+            "text": "数据做处理",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 39,
+            "text": "分析",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 44,
+            "text": "逻辑能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "概率论为知识，工具及数据处理分析为职业活动，逻辑能力为通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06160",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "英语应用/口语交流水平",
+            "label": "L"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "英语应用和口语交流水平属于语言能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06161",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为公司资质、荣誉及宣传信息，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06162",
+        "spans": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "与项目对接方紧密合作",
+            "label": "T"
+          },
+          {
+            "start": 34,
+            "end": 39,
+            "text": "材料的编写",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 42,
+            "text": "提交",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取合作及材料编写、提交等明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06163",
+        "spans": [
+          {
+            "start": 2,
+            "end": 17,
+            "text": "建筑规划、方案及设计要点的制定",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 43,
+            "text": "建筑、结构、暖通、机电、园林、室内设计",
+            "label": "K"
+          },
+          {
+            "start": 45,
+            "end": 49,
+            "text": "专业要求",
+            "label": "K"
+          },
+          {
+            "start": 50,
+            "end": 57,
+            "text": "各阶段设计协调",
+            "label": "S"
+          },
+          {
+            "start": 59,
+            "end": 65,
+            "text": "成果进行审核",
+            "label": "S"
+          },
+          {
+            "start": 66,
+            "end": 68,
+            "text": "指导",
+            "label": "S"
+          },
+          {
+            "start": 72,
+            "end": 94,
+            "text": "各主管工程质量记录、技术资料、竣工资料的签审",
+            "label": "S"
+          },
+          {
+            "start": 97,
+            "end": 101,
+            "text": "工程总结",
+            "label": "S"
+          },
+          {
+            "start": 102,
+            "end": 108,
+            "text": "专题技术总结",
+            "label": "S"
+          },
+          {
+            "start": 111,
+            "end": 116,
+            "text": "人才的培养",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取建筑设计统筹、协调审核、工程资料签审、总结及人才培养等要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06164",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "项目管理能力",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 20,
+            "text": "跨部门沟通协调能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "项目管理为职业执行能力，跨部门沟通协调为通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06165",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 17,
+            "text": "电子、电气、自动化",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历资格；相关专业作为领域资格提及。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 236,
+  "ids": [
+    "sp10k-06156",
+    "sp10k-06157",
+    "sp10k-06158",
+    "sp10k-06159",
+    "sp10k-06160",
+    "sp10k-06161",
+    "sp10k-06162",
+    "sp10k-06163",
+    "sp10k-06164",
+    "sp10k-06165"
+  ],
+  "at": "2026-09-13T17:34:07.501284+00:00"
+}

@@ -1,0 +1,492 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03196",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应届毕业生考察及后续招聘程序说明，不抽取行政流程中的证书提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03197",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘方案解释权限及执行规定，不是候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03198",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘机构进行报名资格初审的流程说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03199",
+      "spans": [
+        {
+          "start": 16,
+          "end": 25,
+          "text": "实验动物的常规操作",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "小鼠操作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取实验操作职责及具有明确职业活动的实践背景要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03200",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "用户安全设备策略定制",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "策略定制与优化分别为职业动作，优化对象由前文限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03201",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "听力测试技术",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "听力测试技术为可执行的专项测试技术。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03202",
+      "spans": [
+        {
+          "start": 5,
+          "end": 15,
+          "text": "项目施工管理专业知识",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "安全管理知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项均明确要求专业知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03203",
+      "spans": [
+        {
+          "start": 2,
+          "end": 20,
+          "text": "SAN、NAS存储系统的基本架构组成",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "数据备份",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "容灾方案",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "局部要求侧重架构组成及备份、容灾方案的知识；保留共享架构中心语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03204",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘考试科目及试卷部分名称，不是独立能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03205",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "组织协调能力",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "文件编写能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通与组织协调为通用能力，文件编写为职业活动能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03206",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考专业参考目录标题，未提出候选人资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03207",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "项目管控能力",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "融入团队",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "组织能力",
+          "label": "T"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "开拓创新",
+          "label": "T"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "text": "合作意识",
+          "label": "T"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "通用协作与组织特质标T；项目管控能力的S为类型待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "项目管控能力",
+          "alternatives": [
+            "S",
+            "T"
+          ],
+          "reason": "未说明项目所属专业职能，既可指专业项目管控，也可指通用组织管理能力，缺少具体岗位活动语境。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03208",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘指南文件名、发布机构及日期。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03209",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应届毕业生资格复审材料及办理流程说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03210",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告背景、招聘人数及院校介绍，未包含具体候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03211",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "网络技术知识",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "TCP/IP",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "路由交换",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "网络安全",
+          "label": "K"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "text": "VPN",
+          "label": "K"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "WLAN",
+          "label": "K"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "text": "网络监控管理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "冒号后的各项由明确的网络技术知识要求统摄，按知识语境标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03212",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "DEST",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求使用负荷模拟工具，抽取具体软件名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03213",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "PC设备、网络设备等采购",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "上架",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "安装",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "调试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分设备采购、上架、安装与调试，后续动作共享前述设备对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03214",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "短视频策划",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "编剧",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "摄制",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分短视频制作中的独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03215",
+      "spans": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "系统调试",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "维护",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 32,
+          "text": "售后技术难题的处理",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 35,
+          "text": "攻克",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取系统调试维护及技术难题处理职责，并列动作的对象由局部语境补足。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03216",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "用友ERP",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "MES",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "OA",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "应用系统工具栈要求，保留具体名称，排除末尾杂字符。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03217",
+      "spans": [
+        {
+          "start": 6,
+          "end": 16,
+          "text": "软件项目技术支持服务",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 28,
+          "text": "在线系统的日常监控检测",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "text": "故障排查分析",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 47,
+          "text": "编写及完善相应运维文档",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分技术支持、监控检测、故障排查与文档职责；文档短语保留共享宾语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03218",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "聘用手续期限及资格取消规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03219",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告解释权限说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03220",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "逻辑思维能力",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 22,
+          "text": "分析和解决问题",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "编写技术文档",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "未限定对象的问题分析解决为通用能力，保留共享宾语；技术文档编写为职业动作。",
+      "issues": []
+    }
+  ]
+}

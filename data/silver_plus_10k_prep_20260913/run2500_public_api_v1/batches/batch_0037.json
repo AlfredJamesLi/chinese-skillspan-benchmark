@@ -1,0 +1,234 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 42.714,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5101,
+    "completion_tokens": 1311,
+    "total_tokens": 6412,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5101,
+    "output_tokens": 1311,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00361\",\"spans\":[{\"start\":1,\"end\":7,\"text\":\"电商行业发展\",\"label\":\"K\"},{\"start\":24,\"end\":26,\"text\":\"视角\",\"label\":\"T\"},{\"start\":27,\"end\":32,\"text\":\"市场敏感度\",\"label\":\"T\"},{\"start\":42,\"end\":49,\"text\":\"梳理和调整商品\",\"label\":\"S\"},{\"start\":52,\"end\":58,\"text\":\"市场分析技能\",\"label\":\"S\"},{\"start\":59,\"end\":62,\"text\":\"大数据\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"抽取行业知识、通用特质及商品和市场分析活动；大数据的知识或实践含义待定。\",\"issues\":[{\"kind\":\"type\",\"text\":\"大数据\",\"alternatives\":[\"K\",\"S\"],\"reason\":\"局部仅称掌握大数据，未明确是领域知识还是数据处理实践；暂标S，需补充具体要求。\"}]},{\"id\":\"sp10k-00362\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报考咨询渠道，不构成候选人能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00363\",\"spans\":[{\"start\":8,\"end\":14,\"text\":\"docker\",\"label\":\"S\"},{\"start\":16,\"end\":21,\"text\":\"服务器架构\",\"label\":\"S\"},{\"start\":22,\"end\":28,\"text\":\"安全优化设置\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"docker为实际运用工具；服务器架构与安全优化设置为明确执行活动。\",\"issues\":[]},{\"id\":\"sp10k-00364\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"PC硬件、打印机的安装与维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"保留共享职业对象和动作，整体表示硬件设备安装维护职责。\",\"issues\":[]},{\"id\":\"sp10k-00365\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报送材料及放弃资格的行政流程说明。\",\"issues\":[]},{\"id\":\"sp10k-00366\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅公告岗位表及查询下载渠道，不抽取文件名称中的专业词。\",\"issues\":[]},{\"id\":\"sp10k-00367\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"日语一级\",\"label\":\"L\"},{\"start\":9,\"end\":17,\"text\":\"和客户无障碍沟通\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取日语水平和客户沟通能力；明确不要求的英语不标。\",\"issues\":[]},{\"id\":\"sp10k-00368\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"自我学习\",\"label\":\"T\"},{\"start\":7,\"end\":14,\"text\":\"自我提升的能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求可迁移的学习和自我提升能力，按完整并列提及拆分。\",\"issues\":[]},{\"id\":\"sp10k-00369\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅规定报名与考试证件一致性，属于应聘行政流程。\",\"issues\":[]},{\"id\":\"sp10k-00370\",\"spans\":[{\"start\":2,\"end\":23,\"text\":\"SharePoint网站日常使用问题的解答\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"解答具有明确技术对象的使用问题为职业活动；保留必要对象，不嵌套标注工具。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00361",
+        "spans": [
+          {
+            "start": 1,
+            "end": 7,
+            "text": "电商行业发展",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "text": "视角",
+            "label": "T"
+          },
+          {
+            "start": 27,
+            "end": 32,
+            "text": "市场敏感度",
+            "label": "T"
+          },
+          {
+            "start": 42,
+            "end": 49,
+            "text": "梳理和调整商品",
+            "label": "S"
+          },
+          {
+            "start": 52,
+            "end": 58,
+            "text": "市场分析技能",
+            "label": "S"
+          },
+          {
+            "start": 59,
+            "end": 62,
+            "text": "大数据",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "抽取行业知识、通用特质及商品和市场分析活动；大数据的知识或实践含义待定。",
+        "issues": [
+          {
+            "kind": "type",
+            "text": "大数据",
+            "alternatives": [
+              "K",
+              "S"
+            ],
+            "reason": "局部仅称掌握大数据，未明确是领域知识还是数据处理实践；暂标S，需补充具体要求。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00362",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报考咨询渠道，不构成候选人能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00363",
+        "spans": [
+          {
+            "start": 8,
+            "end": 14,
+            "text": "docker",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "text": "服务器架构",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "安全优化设置",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "docker为实际运用工具；服务器架构与安全优化设置为明确执行活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00364",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "PC硬件、打印机的安装与维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留共享职业对象和动作，整体表示硬件设备安装维护职责。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00365",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报送材料及放弃资格的行政流程说明。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00366",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅公告岗位表及查询下载渠道，不抽取文件名称中的专业词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00367",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "日语一级",
+            "label": "L"
+          },
+          {
+            "start": 9,
+            "end": 17,
+            "text": "和客户无障碍沟通",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取日语水平和客户沟通能力；明确不要求的英语不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00368",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "自我学习",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 14,
+            "text": "自我提升的能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求可迁移的学习和自我提升能力，按完整并列提及拆分。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00369",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅规定报名与考试证件一致性，属于应聘行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00370",
+        "spans": [
+          {
+            "start": 2,
+            "end": 23,
+            "text": "SharePoint网站日常使用问题的解答",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "解答具有明确技术对象的使用问题为职业活动；保留必要对象，不嵌套标注工具。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 37,
+  "ids": [
+    "sp10k-00361",
+    "sp10k-00362",
+    "sp10k-00363",
+    "sp10k-00364",
+    "sp10k-00365",
+    "sp10k-00366",
+    "sp10k-00367",
+    "sp10k-00368",
+    "sp10k-00369",
+    "sp10k-00370"
+  ],
+  "at": "2026-09-13T14:21:18.998334+00:00"
+}

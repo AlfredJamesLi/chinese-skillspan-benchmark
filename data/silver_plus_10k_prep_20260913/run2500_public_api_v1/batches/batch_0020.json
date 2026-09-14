@@ -1,0 +1,260 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 50.314,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5120,
+    "completion_tokens": 1570,
+    "total_tokens": 6690,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 713
+    },
+    "input_tokens": 5120,
+    "output_tokens": 1570,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00191\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"商务洽谈\",\"label\":\"S\"},{\"start\":9,\"end\":16,\"text\":\"协调内外部资源\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"商务洽谈为职业活动，协调资源为通用能力；合作达成及专业度提升属于结果目标。\",\"issues\":[]},{\"id\":\"sp10k-00192\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅要求身体条件，按范围规则不标。\",\"issues\":[]},{\"id\":\"sp10k-00193\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"5G综合试验网性能分析\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"故障排除\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"问题诊断\",\"label\":\"S\"},{\"start\":24,\"end\":32,\"text\":\"无线网络优化优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的网络分析、排障、诊断及优化活动；保留原文重复用词。\",\"issues\":[]},{\"id\":\"sp10k-00194\",\"spans\":[{\"start\":9,\"end\":13,\"text\":\"政治素质\",\"label\":\"T\"},{\"start\":14,\"end\":25,\"text\":\"热爱老干部和老干部工作\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"政治素质及对岗位服务对象和工作的热爱为候选人特质要求。\",\"issues\":[]},{\"id\":\"sp10k-00195\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为引才职位表文件名称，不构成具体候选人资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00196\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于招聘计划核减及取消的行政流程说明。\",\"issues\":[]},{\"id\":\"sp10k-00197\",\"spans\":[{\"start\":109,\"end\":116,\"text\":\"大专及以上学历\",\"label\":\"K\"},{\"start\":116,\"end\":121,\"text\":\"普通全日制\",\"label\":\"K\"},{\"start\":121,\"end\":125,\"text\":\"口腔医学\",\"label\":\"K\"},{\"start\":127,\"end\":137,\"text\":\"执业医师及以上资格证\",\"label\":\"K\"},{\"start\":143,\"end\":145,\"text\":\"口腔\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"依据表格字段提取学历、学历类别、专业、执业资格及执业领域；机构地址、人数和年龄不标。\",\"issues\":[]},{\"id\":\"sp10k-00198\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"独立思考\",\"label\":\"T\"},{\"start\":16,\"end\":19,\"text\":\"内驱力\",\"label\":\"T\"},{\"start\":20,\"end\":23,\"text\":\"主动性\",\"label\":\"T\"},{\"start\":27,\"end\":31,\"text\":\"独当一面\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为可迁移的通用能力或特质，去除程度修饰和要求触发词。\",\"issues\":[]},{\"id\":\"sp10k-00199\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报名材料及照片要求，不涉及岗位能力或资格。\",\"issues\":[]},{\"id\":\"sp10k-00200\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"阳光\",\"label\":\"T\"},{\"start\":3,\"end\":5,\"text\":\"乐观\",\"label\":\"T\"},{\"start\":6,\"end\":12,\"text\":\"沟通协调能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取性格特质及通用沟通协调能力，程度词不入跨度。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00191",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "商务洽谈",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 16,
+            "text": "协调内外部资源",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "商务洽谈为职业活动，协调资源为通用能力；合作达成及专业度提升属于结果目标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00192",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅要求身体条件，按范围规则不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00193",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "5G综合试验网性能分析",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "故障排除",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "问题诊断",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "text": "无线网络优化优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的网络分析、排障、诊断及优化活动；保留原文重复用词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00194",
+        "spans": [
+          {
+            "start": 9,
+            "end": 13,
+            "text": "政治素质",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 25,
+            "text": "热爱老干部和老干部工作",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "政治素质及对岗位服务对象和工作的热爱为候选人特质要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00195",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为引才职位表文件名称，不构成具体候选人资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00196",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于招聘计划核减及取消的行政流程说明。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00197",
+        "spans": [
+          {
+            "start": 109,
+            "end": 116,
+            "text": "大专及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 116,
+            "end": 121,
+            "text": "普通全日制",
+            "label": "K"
+          },
+          {
+            "start": 121,
+            "end": 125,
+            "text": "口腔医学",
+            "label": "K"
+          },
+          {
+            "start": 127,
+            "end": 137,
+            "text": "执业医师及以上资格证",
+            "label": "K"
+          },
+          {
+            "start": 143,
+            "end": 145,
+            "text": "口腔",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "依据表格字段提取学历、学历类别、专业、执业资格及执业领域；机构地址、人数和年龄不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00198",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "独立思考",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "text": "内驱力",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 23,
+            "text": "主动性",
+            "label": "T"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "独当一面",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为可迁移的通用能力或特质，去除程度修饰和要求触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00199",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报名材料及照片要求，不涉及岗位能力或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00200",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "阳光",
+            "label": "T"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "text": "乐观",
+            "label": "T"
+          },
+          {
+            "start": 6,
+            "end": 12,
+            "text": "沟通协调能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取性格特质及通用沟通协调能力，程度词不入跨度。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 20,
+  "ids": [
+    "sp10k-00191",
+    "sp10k-00192",
+    "sp10k-00193",
+    "sp10k-00194",
+    "sp10k-00195",
+    "sp10k-00196",
+    "sp10k-00197",
+    "sp10k-00198",
+    "sp10k-00199",
+    "sp10k-00200"
+  ],
+  "at": "2026-09-13T14:08:23.018503+00:00"
+}

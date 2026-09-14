@@ -1,0 +1,268 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 51.788,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5068,
+    "completion_tokens": 1629,
+    "total_tokens": 6697,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 689
+    },
+    "input_tokens": 5068,
+    "output_tokens": 1629,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01131\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"办公业务设备IT支持\",\"label\":\"S\"},{\"start\":15,\"end\":25,\"text\":\"机房及电脑网络的运维\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"安全管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取IT支持、运维及安全管理职责；安全管理的对象由局部并列语境限定。\",\"issues\":[]},{\"id\":\"sp10k-01132\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"Shell\",\"label\":\"S\"},{\"start\":8,\"end\":14,\"text\":\"python\",\"label\":\"S\"},{\"start\":17,\"end\":24,\"text\":\"linuxos\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"岗位工具与技术栈按S标注，保留原文大小写和拼写。\",\"issues\":[]},{\"id\":\"sp10k-01133\",\"spans\":[{\"start\":11,\"end\":13,\"text\":\"博士\",\"label\":\"K\"},{\"start\":14,\"end\":17,\"text\":\"博士后\",\"label\":\"K\"},{\"start\":22,\"end\":30,\"text\":\"副高级及以上职称\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"招聘对象中的学历及非语言资格属于要求；优秀人才等泛化描述不标。\",\"issues\":[]},{\"id\":\"sp10k-01134\",\"spans\":[{\"start\":0,\"end\":31,\"text\":\"APP信用卡频道、账单、额度、还款、申请办卡等平台相关能力建设\",\"label\":\"S\"},{\"start\":32,\"end\":38,\"text\":\"产品体验规划\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取平台能力建设与产品体验规划两项职责；前项保留共享建设对象，不将平台模块另标知识。\",\"issues\":[]},{\"id\":\"sp10k-01135\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"集团信息化建设的总体规划\",\"label\":\"S\"},{\"start\":15,\"end\":23,\"text\":\"网络体系结构设计\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"总体规划与网络体系结构设计为可独立识别的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01136\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"沟通协调能力\",\"label\":\"T\"},{\"start\":12,\"end\":19,\"text\":\"多项目处理能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"沟通协调及未绑定专业职能的多项目处理为通用能力；弹性工时和出差条件不标。\",\"issues\":[]},{\"id\":\"sp10k-01137\",\"spans\":[{\"start\":25,\"end\":31,\"text\":\"国家通用语言\",\"label\":\"L\"}],\"status\":\"candidate_complete\",\"note\":\"测试及试讲环节本身不标，但明确要求应聘人员使用的语言属于L。\",\"issues\":[]},{\"id\":\"sp10k-01138\",\"spans\":[{\"start\":4,\"end\":13,\"text\":\"移动互联网系统管理\",\"label\":\"S\"},{\"start\":14,\"end\":16,\"text\":\"实施\",\"label\":\"S\"},{\"start\":21,\"end\":30,\"text\":\"信息化系统实施流程\",\"label\":\"K\"},{\"start\":36,\"end\":40,\"text\":\"需求调研\",\"label\":\"S\"},{\"start\":41,\"end\":47,\"text\":\"业务解决方案\",\"label\":\"S\"},{\"start\":51,\"end\":65,\"text\":\"组织项目实施全过程的管理能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"管理及实施为实践活动，实施对象由并列语境限定；实施流程为知识。业务解决方案受完成职责限定，项目实施管理能力为专业职能。\",\"issues\":[]},{\"id\":\"sp10k-01139\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"该段为特殊业绩及证明材料的提交说明，未明确将所列奖项、特长或成果设为候选人必须具备的要求。\",\"issues\":[]},{\"id\":\"sp10k-01140\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅规定年龄及出生日期范围，不含能力、知识或资格提及。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01131",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "办公业务设备IT支持",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 25,
+            "text": "机房及电脑网络的运维",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "安全管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取IT支持、运维及安全管理职责；安全管理的对象由局部并列语境限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01132",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "Shell",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "python",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "text": "linuxos",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "岗位工具与技术栈按S标注，保留原文大小写和拼写。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01133",
+        "spans": [
+          {
+            "start": 11,
+            "end": 13,
+            "text": "博士",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 17,
+            "text": "博士后",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "text": "副高级及以上职称",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "招聘对象中的学历及非语言资格属于要求；优秀人才等泛化描述不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01134",
+        "spans": [
+          {
+            "start": 0,
+            "end": 31,
+            "text": "APP信用卡频道、账单、额度、还款、申请办卡等平台相关能力建设",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "text": "产品体验规划",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取平台能力建设与产品体验规划两项职责；前项保留共享建设对象，不将平台模块另标知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01135",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "集团信息化建设的总体规划",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "text": "网络体系结构设计",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "总体规划与网络体系结构设计为可独立识别的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01136",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "沟通协调能力",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "text": "多项目处理能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通协调及未绑定专业职能的多项目处理为通用能力；弹性工时和出差条件不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01137",
+        "spans": [
+          {
+            "start": 25,
+            "end": 31,
+            "text": "国家通用语言",
+            "label": "L"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "测试及试讲环节本身不标，但明确要求应聘人员使用的语言属于L。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01138",
+        "spans": [
+          {
+            "start": 4,
+            "end": 13,
+            "text": "移动互联网系统管理",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 16,
+            "text": "实施",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 30,
+            "text": "信息化系统实施流程",
+            "label": "K"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "text": "需求调研",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 47,
+            "text": "业务解决方案",
+            "label": "S"
+          },
+          {
+            "start": 51,
+            "end": 65,
+            "text": "组织项目实施全过程的管理能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "管理及实施为实践活动，实施对象由并列语境限定；实施流程为知识。业务解决方案受完成职责限定，项目实施管理能力为专业职能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01139",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "该段为特殊业绩及证明材料的提交说明，未明确将所列奖项、特长或成果设为候选人必须具备的要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01140",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅规定年龄及出生日期范围，不含能力、知识或资格提及。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 114,
+  "ids": [
+    "sp10k-01131",
+    "sp10k-01132",
+    "sp10k-01133",
+    "sp10k-01134",
+    "sp10k-01135",
+    "sp10k-01136",
+    "sp10k-01137",
+    "sp10k-01138",
+    "sp10k-01139",
+    "sp10k-01140"
+  ],
+  "at": "2026-09-13T15:27:23.499517+00:00"
+}

@@ -1,0 +1,366 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06781",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "安防",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "消防",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "防护",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "救治知识",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "相关法律法规",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "系统操作能力",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "工厂消防管理",
+          "label": "K"
+        },
+        {
+          "start": 43,
+          "end": 51,
+          "text": "消防安全检查要点",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取安防、消防、防护、救治等知识，法律法规及消防管理和检查要点；系统操作能力属于可执行操作能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06782",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "大学本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "安全生产管理",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 27,
+          "text": "消防相关法律法规",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历为完整资格名，安全生产管理及消防相关法律法规为领域知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06783",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "CFOGCOF",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "制程改善",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "产品良率提升",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "制程改善和产品良率提升是明确职业动作；CFOGCOF段为岗位制程领域名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06784",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "定期报告审计的协调工作",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "定期报告",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "编制",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 26,
+          "text": "审核",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "披露工作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取审计协调、报告编制审核披露等职业活动；定期报告为活动所涉专业对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06785",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "组织项目原材料方案优化",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "替代材料优化",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 31,
+          "text": "推动设计方案优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为负责组织、优化或推动方案优化的明确职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06786",
+      "spans": [
+        {
+          "start": 7,
+          "end": 11,
+          "text": "中共党员",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 21,
+          "text": "统招本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "人力资源管理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "中共党员和统招本科及以上学历为资格要求，人力资源管理为专业领域要求；重复的中共党员仅标一次。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06787",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "电气档案",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "技术图纸",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "管理",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "完善",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "电气档案和技术图纸为专业对象，管理与完善为明确职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06788",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "重点客户协同营销",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 24,
+          "text": "重点场景/项目营销推动支持",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "方案设计",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "协助营销",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "授信沟通",
+          "label": "T"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "系统需求",
+          "label": "K"
+        },
+        {
+          "start": 46,
+          "end": 53,
+          "text": "全流程专业支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取营销、方案设计、营销支持及专业支持等职业活动；授信沟通为沟通能力，系统需求为专业对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06789",
+      "spans": [
+        {
+          "start": 0,
+          "end": 15,
+          "text": "统筹工程承包商履约评价考核管理",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 28,
+          "text": "组织工程管理有效性后评价",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "text": "工程信息管理",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 48,
+          "text": "小型基建项目管理",
+          "label": "S"
+        },
+        {
+          "start": 55,
+          "end": 58,
+          "text": "新能源",
+          "label": "K"
+        },
+        {
+          "start": 59,
+          "end": 61,
+          "text": "电力",
+          "label": "K"
+        },
+        {
+          "start": 62,
+          "end": 64,
+          "text": "工程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "履约评价、工程后评价、信息管理和项目管理均为职业活动；新能源、电力、工程为专业领域要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06790",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "财务",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "会计",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "审计",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "本科及以上学历为资格要求，财务、会计、审计为专业领域名。",
+      "issues": []
+    }
+  ]
+}

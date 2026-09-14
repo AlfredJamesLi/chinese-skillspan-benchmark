@@ -1,0 +1,370 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 50.432,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5175,
+    "completion_tokens": 1575,
+    "total_tokens": 6750,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5175,
+    "output_tokens": 1575,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01091",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            30
+          ],
+          "to": [
+            16,
+            29
+          ],
+          "text": "阿里云的后台和前端网页开发"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01092",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            11
+          ],
+          "to": [
+            6,
+            10
+          ],
+          "text": "前端开发"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            21,
+            24
+          ],
+          "to": [
+            19,
+            22
+          ],
+          "text": "IOS"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            25,
+            31
+          ],
+          "to": [
+            23,
+            29
+          ],
+          "text": "Adriod"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01099",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            30,
+            38
+          ],
+          "to": [
+            30,
+            37
+          ],
+          "text": "配置（软硬件）"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01091\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"阿里云运维\",\"label\":\"S\"},{\"start\":17,\"end\":30,\"text\":\"阿里云的后台和前端网页开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"运维与网页开发为明确职业活动；开发短语保留共享对象和动作。\",\"issues\":[]},{\"id\":\"sp10k-01092\",\"spans\":[{\"start\":7,\"end\":11,\"text\":\"前端开发\",\"label\":\"S\"},{\"start\":21,\"end\":24,\"text\":\"IOS\",\"label\":\"S\"},{\"start\":25,\"end\":31,\"text\":\"Adriod\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"前端开发及开发平台按职业技能标注，保留原文拼写；末尾截断项暂不纳入。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"H\",\"alternatives\":[\"截断的技术或工具要求\",\"不构成完整能力提及\"],\"reason\":\"文本在单字母处结束，缺少后续内容，无法确认完整要求及合法边界。\"}]},{\"id\":\"sp10k-01093\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"网站运行过程中的技术改造\",\"label\":\"S\"},{\"start\":15,\"end\":24,\"text\":\"SEO搜索引擎优化\",\"label\":\"S\"},{\"start\":25,\"end\":36,\"text\":\"掌握网站运行、访问情况\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"技术改造、搜索引擎优化和运行情况掌握均为岗位活动；最后一项的“掌握”为职责动作而非技能要求触发词。\",\"issues\":[]},{\"id\":\"sp10k-01094\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"服务意识\",\"label\":\"T\"},{\"start\":20,\"end\":26,\"text\":\"团队协作能力\",\"label\":\"T\"},{\"start\":29,\"end\":33,\"text\":\"诚实正直\",\"label\":\"T\"},{\"start\":34,\"end\":38,\"text\":\"踏实肯干\",\"label\":\"T\"},{\"start\":41,\"end\":44,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":48,\"end\":50,\"text\":\"细心\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用沟通协作能力、服务意识及个人特质，去除程度和要求触发词。\",\"issues\":[]},{\"id\":\"sp10k-01095\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明公告解释权归属，不含候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01096\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为公开招聘公告依据、发布渠道及附件指引，未给出具体能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01097\",\"spans\":[{\"start\":5,\"end\":10,\"text\":\"运维联盟链\",\"label\":\"S\"},{\"start\":12,\"end\":23,\"text\":\"开发链码与业务进行对接\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取联盟链运维及链码开发对接活动；后项保留对接所需的共享对象。\",\"issues\":[]},{\"id\":\"sp10k-01098\",\"spans\":[{\"start\":2,\"end\":23,\"text\":\"开展“安全标准工地”、“优质工程”建设活动\",\"label\":\"S\"},{\"start\":33,\"end\":35,\"text\":\"策划\",\"label\":\"S\"},{\"start\":36,\"end\":40,\"text\":\"监督实施\",\"label\":\"S\"},{\"start\":41,\"end\":45,\"text\":\"组织复查\",\"label\":\"S\"},{\"start\":46,\"end\":48,\"text\":\"评审\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"建设活动保留共享动作与对象；后续各项为明确针对优质工程的独立职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01099\",\"spans\":[{\"start\":2,\"end\":29,\"text\":\"思科、华三等主流厂商的路由交换、防火墙、无线产品的特点\",\"label\":\"K\"},{\"start\":30,\"end\":38,\"text\":\"配置（软硬件）\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"产品特点属于知识；软硬件配置属于可执行职业活动，共享产品对象由局部语境限定。\",\"issues\":[]},{\"id\":\"sp10k-01100\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅规定学历学位材料取得时限及入职安排，未明确要求具体学历层级或专业资格，按招聘行政流程排除。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01091",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "阿里云运维",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 29,
+            "text": "阿里云的后台和前端网页开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "运维与网页开发为明确职业活动；开发短语保留共享对象和动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01092",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "前端开发",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 22,
+            "text": "IOS",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "text": "Adriod",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "前端开发及开发平台按职业技能标注，保留原文拼写；末尾截断项暂不纳入。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "H",
+            "alternatives": [
+              "截断的技术或工具要求",
+              "不构成完整能力提及"
+            ],
+            "reason": "文本在单字母处结束，缺少后续内容，无法确认完整要求及合法边界。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-01093",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "网站运行过程中的技术改造",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "text": "SEO搜索引擎优化",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 36,
+            "text": "掌握网站运行、访问情况",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "技术改造、搜索引擎优化和运行情况掌握均为岗位活动；最后一项的“掌握”为职责动作而非技能要求触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01094",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "服务意识",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "团队协作能力",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "诚实正直",
+            "label": "T"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "text": "踏实肯干",
+            "label": "T"
+          },
+          {
+            "start": 41,
+            "end": 44,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 48,
+            "end": 50,
+            "text": "细心",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用沟通协作能力、服务意识及个人特质，去除程度和要求触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01095",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明公告解释权归属，不含候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01096",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为公开招聘公告依据、发布渠道及附件指引，未给出具体能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01097",
+        "spans": [
+          {
+            "start": 5,
+            "end": 10,
+            "text": "运维联盟链",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 23,
+            "text": "开发链码与业务进行对接",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取联盟链运维及链码开发对接活动；后项保留对接所需的共享对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01098",
+        "spans": [
+          {
+            "start": 2,
+            "end": 23,
+            "text": "开展“安全标准工地”、“优质工程”建设活动",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "text": "策划",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "text": "监督实施",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 45,
+            "text": "组织复查",
+            "label": "S"
+          },
+          {
+            "start": 46,
+            "end": 48,
+            "text": "评审",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "建设活动保留共享动作与对象；后续各项为明确针对优质工程的独立职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01099",
+        "spans": [
+          {
+            "start": 2,
+            "end": 29,
+            "text": "思科、华三等主流厂商的路由交换、防火墙、无线产品的特点",
+            "label": "K"
+          },
+          {
+            "start": 30,
+            "end": 37,
+            "text": "配置（软硬件）",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "产品特点属于知识；软硬件配置属于可执行职业活动，共享产品对象由局部语境限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01100",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅规定学历学位材料取得时限及入职安排，未明确要求具体学历层级或专业资格，按招聘行政流程排除。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 110,
+  "ids": [
+    "sp10k-01091",
+    "sp10k-01092",
+    "sp10k-01093",
+    "sp10k-01094",
+    "sp10k-01095",
+    "sp10k-01096",
+    "sp10k-01097",
+    "sp10k-01098",
+    "sp10k-01099",
+    "sp10k-01100"
+  ],
+  "at": "2026-09-13T15:22:53.376865+00:00"
+}

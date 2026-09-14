@@ -1,0 +1,302 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 58.243,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5016,
+    "completion_tokens": 1810,
+    "total_tokens": 6826,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 775
+    },
+    "input_tokens": 5016,
+    "output_tokens": 1810,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00421\",\"spans\":[{\"start\":2,\"end\":21,\"text\":\"独立分系统，或分系统相关模块的开发设计\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"开发设计为职业活动；并列对象共享末尾动作，保留完整连续跨度。\",\"issues\":[]},{\"id\":\"sp10k-00422\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"口语表达能力\",\"label\":\"T\"},{\"start\":15,\"end\":21,\"text\":\"文档编写能力\",\"label\":\"S\"},{\"start\":26,\"end\":32,\"text\":\"组织协调能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"表达及组织协调为通用能力，文档编写为职业技能；排除程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-00423\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"车辆日常保养\",\"label\":\"S\"},{\"start\":13,\"end\":17,\"text\":\"车辆年检\",\"label\":\"S\"},{\"start\":20,\"end\":24,\"text\":\"保险办理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取车辆保养、年检及保险办理职责，排除泛化的工作后缀。\",\"issues\":[]},{\"id\":\"sp10k-00424\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"描述应聘答辩与测评流程，测评维度未明确具体专业知识或技能要求。\",\"issues\":[]},{\"id\":\"sp10k-00425\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"抗压能力\",\"label\":\"T\"},{\"start\":13,\"end\":20,\"text\":\"沟通、协调能力\",\"label\":\"T\"},{\"start\":22,\"end\":26,\"text\":\"创新思维\",\"label\":\"T\"},{\"start\":30,\"end\":34,\"text\":\"学习能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为跨行业通用能力；沟通、协调共享能力后缀，保留完整短语。\",\"issues\":[]},{\"id\":\"sp10k-00426\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"ups电源安装设计\",\"label\":\"S\"},{\"start\":12,\"end\":16,\"text\":\"施工方案\",\"label\":\"S\"},{\"start\":21,\"end\":25,\"text\":\"word\",\"label\":\"S\"},{\"start\":26,\"end\":31,\"text\":\"excel\",\"label\":\"S\"},{\"start\":39,\"end\":47,\"text\":\"word排版技术\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"安装设计与办公工具、排版技术属于职业技能；施工方案的知识或执行语义尚需裁决。\",\"issues\":[{\"kind\":\"type\",\"text\":\"施工方案\",\"alternatives\":[\"K\",\"S\"],\"reason\":\"掌握施工方案可能指了解方案内容，也可能指运用具体施工方法；未说明编制或执行活动，暂以S占位。\"}]},{\"id\":\"sp10k-00427\",\"spans\":[{\"start\":2,\"end\":19,\"text\":\"windowsserver2008\",\"label\":\"S\"},{\"start\":23,\"end\":32,\"text\":\"SQLserver\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"具体操作系统与数据库作为岗位工具列举，按工具名抽取并保留原文拼写。\",\"issues\":[]},{\"id\":\"sp10k-00428\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"文档写作\",\"label\":\"S\"},{\"start\":8,\"end\":12,\"text\":\"表达能力\",\"label\":\"T\"},{\"start\":13,\"end\":17,\"text\":\"条理清楚\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"文档写作为职业技能，表达能力及条理清楚为通用能力与特质。\",\"issues\":[]},{\"id\":\"sp10k-00429\",\"spans\":[{\"start\":6,\"end\":9,\"text\":\"护理学\",\"label\":\"K\"},{\"start\":24,\"end\":27,\"text\":\"会计学\",\"label\":\"K\"},{\"start\":28,\"end\":30,\"text\":\"审计\",\"label\":\"K\"},{\"start\":37,\"end\":41,\"text\":\"财务管理\",\"label\":\"K\"},{\"start\":50,\"end\":58,\"text\":\"计算机科学与技术\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"表格式招聘片段中的专业名按K抽取；专业代码、岗位编号及教学辅助岗位名称不标。\",\"issues\":[]},{\"id\":\"sp10k-00430\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为任职地域经历及人员来源偏好，未包含具体行业、职业活动或能力资格要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00421",
+        "spans": [
+          {
+            "start": 2,
+            "end": 21,
+            "text": "独立分系统，或分系统相关模块的开发设计",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "开发设计为职业活动；并列对象共享末尾动作，保留完整连续跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00422",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "口语表达能力",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "文档编写能力",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "text": "组织协调能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "表达及组织协调为通用能力，文档编写为职业技能；排除程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00423",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "车辆日常保养",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "车辆年检",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "保险办理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取车辆保养、年检及保险办理职责，排除泛化的工作后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00424",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "描述应聘答辩与测评流程，测评维度未明确具体专业知识或技能要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00425",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "抗压能力",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 20,
+            "text": "沟通、协调能力",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "创新思维",
+            "label": "T"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "学习能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为跨行业通用能力；沟通、协调共享能力后缀，保留完整短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00426",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "ups电源安装设计",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "施工方案",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "word",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 31,
+            "text": "excel",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 47,
+            "text": "word排版技术",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "安装设计与办公工具、排版技术属于职业技能；施工方案的知识或执行语义尚需裁决。",
+        "issues": [
+          {
+            "kind": "type",
+            "text": "施工方案",
+            "alternatives": [
+              "K",
+              "S"
+            ],
+            "reason": "掌握施工方案可能指了解方案内容，也可能指运用具体施工方法；未说明编制或执行活动，暂以S占位。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00427",
+        "spans": [
+          {
+            "start": 2,
+            "end": 19,
+            "text": "windowsserver2008",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 32,
+            "text": "SQLserver",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "具体操作系统与数据库作为岗位工具列举，按工具名抽取并保留原文拼写。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00428",
+        "spans": [
+          {
+            "start": 3,
+            "end": 7,
+            "text": "文档写作",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "表达能力",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "条理清楚",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文档写作为职业技能，表达能力及条理清楚为通用能力与特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00429",
+        "spans": [
+          {
+            "start": 6,
+            "end": 9,
+            "text": "护理学",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 27,
+            "text": "会计学",
+            "label": "K"
+          },
+          {
+            "start": 28,
+            "end": 30,
+            "text": "审计",
+            "label": "K"
+          },
+          {
+            "start": 37,
+            "end": 41,
+            "text": "财务管理",
+            "label": "K"
+          },
+          {
+            "start": 50,
+            "end": 58,
+            "text": "计算机科学与技术",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "表格式招聘片段中的专业名按K抽取；专业代码、岗位编号及教学辅助岗位名称不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00430",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为任职地域经历及人员来源偏好，未包含具体行业、职业活动或能力资格要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 43,
+  "ids": [
+    "sp10k-00421",
+    "sp10k-00422",
+    "sp10k-00423",
+    "sp10k-00424",
+    "sp10k-00425",
+    "sp10k-00426",
+    "sp10k-00427",
+    "sp10k-00428",
+    "sp10k-00429",
+    "sp10k-00430"
+  ],
+  "at": "2026-09-13T14:25:53.511252+00:00"
+}

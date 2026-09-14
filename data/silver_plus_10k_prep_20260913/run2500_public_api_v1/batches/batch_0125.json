@@ -1,0 +1,512 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 86.382,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5147,
+    "completion_tokens": 2271,
+    "total_tokens": 7418,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1237
+    },
+    "input_tokens": 5147,
+    "output_tokens": 2271,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01244",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            13
+          ],
+          "to": [
+            8,
+            14
+          ],
+          "text": "Nagios"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01245",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            10
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "吃苦耐劳"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "勤奋踏实"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            21
+          ],
+          "to": [
+            15,
+            20
+          ],
+          "text": "动手能力强"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            22,
+            27
+          ],
+          "to": [
+            21,
+            26
+          ],
+          "text": "服务意识好"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01246",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            27,
+            39
+          ],
+          "to": [
+            27,
+            38
+          ],
+          "text": "瓶颈或风险问题进行识别"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            40,
+            57
+          ],
+          "to": [
+            39,
+            54
+          ],
+          "text": "组织推进相关责任单位运作及产出"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01248",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            12,
+            20
+          ],
+          "to": [
+            12,
+            21
+          ],
+          "text": "熟练部署、配置优化"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            35,
+            40
+          ],
+          "to": [
+            28,
+            33
+          ],
+          "text": "nginx"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            42,
+            47
+          ],
+          "to": [
+            34,
+            39
+          ],
+          "text": "redis"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            49,
+            56
+          ],
+          "to": [
+            40,
+            47
+          ],
+          "text": "jenkins"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            58,
+            60
+          ],
+          "to": [
+            48,
+            50
+          ],
+          "text": "ES"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01250",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            1,
+            23
+          ],
+          "to": [
+            1,
+            18
+          ],
+          "text": "JAVAWEB，PHP系统部署经验"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            27,
+            47
+          ],
+          "to": [
+            21,
+            40
+          ],
+          "text": "Nginx动静分离配置和基于其脚本处理"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01241\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"吃苦耐劳精神\",\"label\":\"T\"},{\"start\":9,\"end\":15,\"text\":\"工作积极热情\",\"label\":\"T\"},{\"start\":16,\"end\":20,\"text\":\"责任感强\",\"label\":\"T\"},{\"start\":21,\"end\":30,\"text\":\"良好的团队合作精神\",\"label\":\"T\"},{\"start\":31,\"end\":37,\"text\":\"沟通表达能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取岗位要求中的通用职业素质与团队沟通能力。\",\"issues\":[]},{\"id\":\"sp10k-01242\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"PHP\",\"label\":\"S\"},{\"start\":5,\"end\":9,\"text\":\"语言开发\",\"label\":\"S\"},{\"start\":12,\"end\":25,\"text\":\"PHP面向对象编程设计思想\",\"label\":\"K\"},{\"start\":28,\"end\":36,\"text\":\"MVC的实现原理\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"PHP语言开发属于技术活动；面向对象编程设计思想及MVC实现原理属于知识原理。\",\"issues\":[]},{\"id\":\"sp10k-01243\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"全文为招聘单位简介及单位职能介绍，未明确提出候选人需具备的能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-01244\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"监控系统\",\"label\":\"S\"},{\"start\":7,\"end\":13,\"text\":\"Nagios\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"Zabbix\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"监控系统及列举的监控工具属于岗位使用工具和技术。\",\"issues\":[]},{\"id\":\"sp10k-01245\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"吃苦耐劳\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"勤奋踏实\",\"label\":\"T\"},{\"start\":16,\"end\":21,\"text\":\"动手能力强\",\"label\":\"T\"},{\"start\":22,\"end\":27,\"text\":\"服务意识好\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用职业素质；身体健康不属于本项目标注范围。\",\"issues\":[]},{\"id\":\"sp10k-01246\",\"spans\":[{\"start\":6,\"end\":16,\"text\":\"新品项目整合开发工作\",\"label\":\"S\"},{\"start\":27,\"end\":39,\"text\":\"瓶颈或风险问题进行识别\",\"label\":\"S\"},{\"start\":40,\"end\":57,\"text\":\"组织推进相关责任单位运作及产出\",\"label\":\"S\"},{\"start\":59,\"end\":63,\"text\":\"客端验证\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取新品项目开发、风险识别、组织推进及客端验证等明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01247\",\"spans\":[{\"start\":1,\"end\":20,\"text\":\"国内知名院校附属医院或知名医院任职经历\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求医院任职经历，按实践经历代理规则标注。\",\"issues\":[]},{\"id\":\"sp10k-01248\",\"spans\":[{\"start\":12,\"end\":20,\"text\":\"熟练部署、配置优化\",\"label\":\"S\"},{\"start\":35,\"end\":40,\"text\":\"nginx\",\"label\":\"S\"},{\"start\":42,\"end\":47,\"text\":\"redis\",\"label\":\"S\"},{\"start\":49,\"end\":56,\"text\":\"jenkins\",\"label\":\"S\"},{\"start\":58,\"end\":60,\"text\":\"ES\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取技术部署、配置优化及列举的岗位使用工具；“熟练”保留在动作语境中但不作为独立跨度。\",\"issues\":[]},{\"id\":\"sp10k-01249\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为资格初审后的报岗限制，属于招聘流程规定，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01250\",\"spans\":[{\"start\":1,\"end\":23,\"text\":\"JAVAWEB，PHP系统部署经验\",\"label\":\"S\"},{\"start\":27,\"end\":47,\"text\":\"Nginx动静分离配置和基于其脚本处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的系统部署实践及Nginx配置、脚本处理技术活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01241",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "吃苦耐劳精神",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "工作积极热情",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "责任感强",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 30,
+            "text": "良好的团队合作精神",
+            "label": "T"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "text": "沟通表达能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取岗位要求中的通用职业素质与团队沟通能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01242",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "PHP",
+            "label": "S"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "语言开发",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 25,
+            "text": "PHP面向对象编程设计思想",
+            "label": "K"
+          },
+          {
+            "start": 28,
+            "end": 36,
+            "text": "MVC的实现原理",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "PHP语言开发属于技术活动；面向对象编程设计思想及MVC实现原理属于知识原理。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01243",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "全文为招聘单位简介及单位职能介绍，未明确提出候选人需具备的能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01244",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "监控系统",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "Nagios",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "Zabbix",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "监控系统及列举的监控工具属于岗位使用工具和技术。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01245",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "吃苦耐劳",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "勤奋踏实",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "text": "动手能力强",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "text": "服务意识好",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用职业素质；身体健康不属于本项目标注范围。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01246",
+        "spans": [
+          {
+            "start": 6,
+            "end": 16,
+            "text": "新品项目整合开发工作",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 38,
+            "text": "瓶颈或风险问题进行识别",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 54,
+            "text": "组织推进相关责任单位运作及产出",
+            "label": "S"
+          },
+          {
+            "start": 59,
+            "end": 63,
+            "text": "客端验证",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取新品项目开发、风险识别、组织推进及客端验证等明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01247",
+        "spans": [
+          {
+            "start": 1,
+            "end": 20,
+            "text": "国内知名院校附属医院或知名医院任职经历",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求医院任职经历，按实践经历代理规则标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01248",
+        "spans": [
+          {
+            "start": 12,
+            "end": 21,
+            "text": "熟练部署、配置优化",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "text": "nginx",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 39,
+            "text": "redis",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 47,
+            "text": "jenkins",
+            "label": "S"
+          },
+          {
+            "start": 48,
+            "end": 50,
+            "text": "ES",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取技术部署、配置优化及列举的岗位使用工具；“熟练”保留在动作语境中但不作为独立跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01249",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为资格初审后的报岗限制，属于招聘流程规定，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01250",
+        "spans": [
+          {
+            "start": 1,
+            "end": 18,
+            "text": "JAVAWEB，PHP系统部署经验",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 40,
+            "text": "Nginx动静分离配置和基于其脚本处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的系统部署实践及Nginx配置、脚本处理技术活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 125,
+  "ids": [
+    "sp10k-01241",
+    "sp10k-01242",
+    "sp10k-01243",
+    "sp10k-01244",
+    "sp10k-01245",
+    "sp10k-01246",
+    "sp10k-01247",
+    "sp10k-01248",
+    "sp10k-01249",
+    "sp10k-01250"
+  ],
+  "at": "2026-09-13T15:38:39.625984+00:00"
+}

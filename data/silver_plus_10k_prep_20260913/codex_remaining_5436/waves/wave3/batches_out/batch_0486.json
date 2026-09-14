@@ -1,0 +1,232 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07351",
+      "spans": [
+        {
+          "start": 0,
+          "end": 11,
+          "text": "培训新进员工的岗位技能",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "跟踪生产品质",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "培训岗位技能和跟踪生产品质均为候选人需执行的职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07352",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "责任心强",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "乐观积极",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "吃苦耐劳",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 23,
+          "text": "适应和学习能力强",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用的个人特质或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07353",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "设备维护",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 49,
+          "text": "五金维修",
+          "label": "S"
+        },
+        {
+          "start": 53,
+          "end": 59,
+          "text": "服务保障工作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取设备维护、五金维修和服务保障等可执行职业活动；设备名称作为活动对象不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07354",
+      "spans": [
+        {
+          "start": 0,
+          "end": 14,
+          "text": "编写整车道路试验项目技术要求",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "整体为编写具体技术要求的职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07355",
+      "spans": [
+        {
+          "start": 0,
+          "end": 12,
+          "text": "负责外来人员来访登记工作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "来访登记是明确的岗位工作活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07356",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "设备PM维护管理",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 22,
+          "text": "设备重大故障的处理",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "效率改善",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取设备维护管理、设备故障处理和效率改善等职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07357",
+      "spans": [
+        {
+          "start": 8,
+          "end": 12,
+          "text": "服务客户",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 22,
+          "text": "客户导入流程支持",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 34,
+          "text": "客户会议或客户接待安排",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 44,
+          "text": "公司内各部门间协调",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "客户服务、流程支持和会议接待安排为职业活动；跨部门协调为通用协调能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07358",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "文本存在疑似错写或截断的资格提及，无法确定其范围和含义。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "HS测任职资格",
+          "alternatives": [
+            "HS测",
+            "任职资格",
+            "HS测任职资格"
+          ],
+          "reason": "原文语句不完整且缺少足够上下文，无法确定具体资格或能力提及。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-07359",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "整车开发流程",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "软件开发流程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项均为需熟悉的领域流程知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07360",
+      "spans": [
+        {
+          "start": 7,
+          "end": 10,
+          "text": "民法典",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "公司法",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 25,
+          "text": "投资业务相关法律法规",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取具体民商事法律法规及投资业务相关法律法规知识；不重复标注后面的概括性类别。",
+      "issues": []
+    }
+  ]
+}

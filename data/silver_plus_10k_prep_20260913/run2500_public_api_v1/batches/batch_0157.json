@@ -1,0 +1,413 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 62.45,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4972,
+    "completion_tokens": 1887,
+    "total_tokens": 6859,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1064
+    },
+    "input_tokens": 4972,
+    "output_tokens": 1887,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01563",
+      "repairs": [
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            35,
+            41
+          ],
+          "to": [
+            36,
+            42
+          ],
+          "text": "JAVA语言"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01565",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            1,
+            9
+          ],
+          "to": [
+            2,
+            10
+          ],
+          "text": "三电系统正向开发"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            12,
+            17
+          ],
+          "to": [
+            13,
+            18
+          ],
+          "text": "电驱桥选型"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            18,
+            23
+          ],
+          "to": [
+            19,
+            24
+          ],
+          "text": "电池包选型"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            27,
+            31
+          ],
+          "to": [
+            28,
+            32
+          ],
+          "text": "性能集成"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            32,
+            37
+          ],
+          "to": [
+            33,
+            38
+          ],
+          "text": "整车总布置"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01570",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            8
+          ],
+          "to": [
+            4,
+            7
+          ],
+          "text": "防火墙"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            12
+          ],
+          "to": [
+            8,
+            11
+          ],
+          "text": "IDS"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            13,
+            16
+          ],
+          "to": [
+            12,
+            15
+          ],
+          "text": "IPS"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            17,
+            19
+          ],
+          "to": [
+            16,
+            18
+          ],
+          "text": "漏扫"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01561\",\"spans\":[{\"start\":7,\"end\":11,\"text\":\"打包编译\",\"label\":\"S\"},{\"start\":11,\"end\":15,\"text\":\"上线部署\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行业务系统的打包编译和上线部署工作。\",\"issues\":[]},{\"id\":\"sp10k-01562\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"严谨求实\",\"label\":\"T\"},{\"start\":5,\"end\":9,\"text\":\"爱岗敬业\",\"label\":\"T\"},{\"start\":12,\"end\":19,\"text\":\"良好的职业素养\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为候选人应具备的通用职业特质。\",\"issues\":[]},{\"id\":\"sp10k-01563\",\"spans\":[{\"start\":7,\"end\":13,\"text\":\"大专以上学历\",\"label\":\"K\"},{\"start\":15,\"end\":21,\"text\":\"操作系统安全\",\"label\":\"K\"},{\"start\":22,\"end\":24,\"text\":\"网络\",\"label\":\"K\"},{\"start\":35,\"end\":41,\"text\":\"JAVA语言\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历资格、操作系统安全和网络领域知识，以及岗位要求使用的JAVA语言。\",\"issues\":[]},{\"id\":\"sp10k-01564\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明招聘条件和基本条件，未给出具体候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01565\",\"spans\":[{\"start\":1,\"end\":9,\"text\":\"三电系统正向开发\",\"label\":\"S\"},{\"start\":12,\"end\":17,\"text\":\"电驱桥选型\",\"label\":\"S\"},{\"start\":18,\"end\":23,\"text\":\"电池包选型\",\"label\":\"S\"},{\"start\":27,\"end\":31,\"text\":\"性能集成\",\"label\":\"S\"},{\"start\":32,\"end\":37,\"text\":\"整车总布置\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确要求负责执行的系统开发、选型、集成和整车布置活动。\",\"issues\":[]},{\"id\":\"sp10k-01566\",\"spans\":[{\"start\":3,\"end\":8,\"text\":\"博士研究生\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01567\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于公告发布部门及解释权说明，不是候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-01568\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于报名材料提交要求，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01569\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"HTTP\",\"label\":\"K\"},{\"start\":7,\"end\":10,\"text\":\"TCP\",\"label\":\"K\"},{\"start\":15,\"end\":23,\"text\":\"Socket编程\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"HTTP和TCP为协议知识，Socket编程为可执行技术活动。\",\"issues\":[]},{\"id\":\"sp10k-01570\",\"spans\":[{\"start\":6,\"end\":8,\"text\":\"防火墙\",\"label\":\"S\"},{\"start\":9,\"end\":12,\"text\":\"IDS\",\"label\":\"S\"},{\"start\":13,\"end\":16,\"text\":\"IPS\",\"label\":\"S\"},{\"start\":17,\"end\":19,\"text\":\"漏扫\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"安全设备名称处于明确的设备配置实践语境中，按岗位工具使用标注。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01561",
+        "spans": [
+          {
+            "start": 7,
+            "end": 11,
+            "text": "打包编译",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "上线部署",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行业务系统的打包编译和上线部署工作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01562",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "严谨求实",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "爱岗敬业",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "text": "良好的职业素养",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为候选人应具备的通用职业特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01563",
+        "spans": [
+          {
+            "start": 7,
+            "end": 13,
+            "text": "大专以上学历",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "操作系统安全",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "text": "网络",
+            "label": "K"
+          },
+          {
+            "start": 36,
+            "end": 42,
+            "text": "JAVA语言",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历资格、操作系统安全和网络领域知识，以及岗位要求使用的JAVA语言。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01564",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明招聘条件和基本条件，未给出具体候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01565",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "三电系统正向开发",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 18,
+            "text": "电驱桥选型",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 24,
+            "text": "电池包选型",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "性能集成",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "text": "整车总布置",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确要求负责执行的系统开发、选型、集成和整车布置活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01566",
+        "spans": [
+          {
+            "start": 3,
+            "end": 8,
+            "text": "博士研究生",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01567",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于公告发布部门及解释权说明，不是候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01568",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于报名材料提交要求，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01569",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "HTTP",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "text": "TCP",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "text": "Socket编程",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "HTTP和TCP为协议知识，Socket编程为可执行技术活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01570",
+        "spans": [
+          {
+            "start": 4,
+            "end": 7,
+            "text": "防火墙",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "text": "IDS",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "text": "IPS",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 18,
+            "text": "漏扫",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "安全设备名称处于明确的设备配置实践语境中，按岗位工具使用标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 157,
+  "ids": [
+    "sp10k-01561",
+    "sp10k-01562",
+    "sp10k-01563",
+    "sp10k-01564",
+    "sp10k-01565",
+    "sp10k-01566",
+    "sp10k-01567",
+    "sp10k-01568",
+    "sp10k-01569",
+    "sp10k-01570"
+  ],
+  "at": "2026-09-13T16:16:02.107512+00:00"
+}

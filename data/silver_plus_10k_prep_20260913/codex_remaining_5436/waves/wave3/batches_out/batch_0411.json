@@ -1,0 +1,228 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06601",
+      "spans": [
+        {
+          "start": 20,
+          "end": 24,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "逻辑思维能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确要求的通用能力；对领域的兴趣不作为能力或资格标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06602",
+      "spans": [
+        {
+          "start": 15,
+          "end": 19,
+          "text": "日常使用",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "维护",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "故障解除",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "text": "稼动率提升",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "text": "良率提升",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取设备使用、维护、故障处理及运营指标改善等职业动作；产能达成率作为结果指标不标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06603",
+      "spans": [
+        {
+          "start": 8,
+          "end": 10,
+          "text": "财务",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "财务为明确领域知识；泛化工作经历及年限不标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06604",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "精益运营",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 18,
+          "text": "年度计划和阶段任务的安排",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "精益运营为领域名，计划与任务安排为明确职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06605",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "客诉处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "去除经验后仍为完整的客诉处理职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06606",
+      "spans": [
+        {
+          "start": 24,
+          "end": 26,
+          "text": "收集",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "text": "整理",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 32,
+          "text": "分析",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取对商户经营状况执行的收集、整理和分析动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06607",
+      "spans": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 29,
+          "text": "质量管理相关背景",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历和明确领域背景属于资格或知识要求；专业不限不标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06608",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "初级会计职称",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 16,
+          "text": "中级及以上证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取会计职称及证书资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06609",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "text": "处理来访者的需求",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通能力和服务意识为通用能力；处理来访者需求为明确职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06610",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "目标管理能力",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "text": "执行力",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 19,
+          "text": "抗压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用能力或个人特质。",
+      "issues": []
+    }
+  ]
+}

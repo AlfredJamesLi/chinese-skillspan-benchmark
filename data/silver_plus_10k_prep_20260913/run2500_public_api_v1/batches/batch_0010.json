@@ -1,0 +1,321 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 59.694,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5162,
+    "completion_tokens": 1854,
+    "total_tokens": 7016,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 811
+    },
+    "input_tokens": 5162,
+    "output_tokens": 1854,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00099",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            12,
+            15
+          ],
+          "to": [
+            13,
+            16
+          ],
+          "text": "研究生"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            20
+          ],
+          "to": [
+            16,
+            21
+          ],
+          "text": "硕士及以上"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            26,
+            31
+          ],
+          "to": [
+            27,
+            32
+          ],
+          "text": "特殊教育学"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00091\",\"spans\":[{\"start\":4,\"end\":23,\"text\":\"公有云计算服务及相关产品解决方案的编撰\",\"label\":\"S\"},{\"start\":30,\"end\":42,\"text\":\"云计算软件产品和方案推广\",\"label\":\"S\"},{\"start\":43,\"end\":60,\"text\":\"完善公司各项技术文档和对外技术资料\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取方案编撰、产品和方案推广、技术资料完善三项职业活动；共享动作与对象保留完整。\",\"issues\":[]},{\"id\":\"sp10k-00092\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为泛化资格证明材料表述，没有具体资格名或能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00093\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为退役士兵及毕业生身份、年份等招录资格条件，未提出具体学历层级、专业或能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00094\",\"spans\":[],\"status\":\"adjudication_required\",\"note\":\"文本在品牌列表处截断；客户行业和渠道介绍不直接构成候选人的知识或技能要求。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"从事华为、新华三（H3C）、思科(CISCO)、中兴、浪潮、惠普、戴尔、深信服、锐捷\",\"alternatives\":[\"业务对象或品牌介绍，不标注\",\"具体产品操作、销售或技术服务要求，结合完整活动抽取\"],\"reason\":\"“从事”后缺少完整职业活动，无法确定品牌是否代表候选人须掌握的岗位工具；需要后续文本。\"}]},{\"id\":\"sp10k-00095\",\"spans\":[{\"start\":0,\"end\":3,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":19,\"end\":26,\"text\":\"专科及以上学历\",\"label\":\"K\"},{\"start\":29,\"end\":33,\"text\":\"保险行业\",\"label\":\"K\"},{\"start\":33,\"end\":37,\"text\":\"项目开发\",\"label\":\"S\"},{\"start\":39,\"end\":41,\"text\":\"管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取专业、学历、行业背景及项目开发和管理活动；管理由局部项目语境限定，泛化工作年限不标。\",\"issues\":[]},{\"id\":\"sp10k-00096\",\"spans\":[{\"start\":9,\"end\":16,\"text\":\"计算机技术基础\",\"label\":\"K\"},{\"start\":19,\"end\":23,\"text\":\"金融行业\",\"label\":\"K\"},{\"start\":23,\"end\":27,\"text\":\"IT运维\",\"label\":\"S\"},{\"start\":30,\"end\":37,\"text\":\"IT自动化运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"技术基础与行业背景标K，明确运维活动标S；经验及优先考虑不进入跨度。\",\"issues\":[]},{\"id\":\"sp10k-00097\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"项目管理\",\"label\":\"S\"},{\"start\":13,\"end\":19,\"text\":\"项目经理证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"项目管理是明确职业职能，证书为非语言资格；不保留年限和经验后缀。\",\"issues\":[]},{\"id\":\"sp10k-00098\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅要求下载打印学历验证材料，属于应聘材料提交流程，不抽取网站、材料名或打印动作。\",\"issues\":[]},{\"id\":\"sp10k-00099\",\"spans\":[{\"start\":12,\"end\":15,\"text\":\"研究生\",\"label\":\"K\"},{\"start\":15,\"end\":20,\"text\":\"硕士及以上\",\"label\":\"K\"},{\"start\":26,\"end\":31,\"text\":\"特殊教育学\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取学历层级、学位要求和专业名；学院、岗位、专业代码、专业一致性及年龄条件不另标。\",\"issues\":[]},{\"id\":\"sp10k-00100\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"MySql\",\"label\":\"S\"},{\"start\":8,\"end\":13,\"text\":\"Redis\",\"label\":\"S\"},{\"start\":14,\"end\":19,\"text\":\"Kafka\",\"label\":\"S\"},{\"start\":20,\"end\":23,\"text\":\"数据库\",\"label\":\"S\"},{\"start\":24,\"end\":27,\"text\":\"中间件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"具体工具及所要求的数据库、中间件工具类别按岗位工具语境标S，保留原文大小写。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00091",
+        "spans": [
+          {
+            "start": 4,
+            "end": 23,
+            "text": "公有云计算服务及相关产品解决方案的编撰",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 42,
+            "text": "云计算软件产品和方案推广",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 60,
+            "text": "完善公司各项技术文档和对外技术资料",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取方案编撰、产品和方案推广、技术资料完善三项职业活动；共享动作与对象保留完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00092",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为泛化资格证明材料表述，没有具体资格名或能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00093",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为退役士兵及毕业生身份、年份等招录资格条件，未提出具体学历层级、专业或能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00094",
+        "spans": [],
+        "status": "adjudication_required",
+        "note": "文本在品牌列表处截断；客户行业和渠道介绍不直接构成候选人的知识或技能要求。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "从事华为、新华三（H3C）、思科(CISCO)、中兴、浪潮、惠普、戴尔、深信服、锐捷",
+            "alternatives": [
+              "业务对象或品牌介绍，不标注",
+              "具体产品操作、销售或技术服务要求，结合完整活动抽取"
+            ],
+            "reason": "“从事”后缺少完整职业活动，无法确定品牌是否代表候选人须掌握的岗位工具；需要后续文本。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00095",
+        "spans": [
+          {
+            "start": 0,
+            "end": 3,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "text": "专科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "保险行业",
+            "label": "K"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "text": "项目开发",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 41,
+            "text": "管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取专业、学历、行业背景及项目开发和管理活动；管理由局部项目语境限定，泛化工作年限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00096",
+        "spans": [
+          {
+            "start": 9,
+            "end": 16,
+            "text": "计算机技术基础",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "金融行业",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "IT运维",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 37,
+            "text": "IT自动化运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "技术基础与行业背景标K，明确运维活动标S；经验及优先考虑不进入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00097",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "项目管理",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "项目经理证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "项目管理是明确职业职能，证书为非语言资格；不保留年限和经验后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00098",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅要求下载打印学历验证材料，属于应聘材料提交流程，不抽取网站、材料名或打印动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00099",
+        "spans": [
+          {
+            "start": 13,
+            "end": 16,
+            "text": "研究生",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "text": "硕士及以上",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 32,
+            "text": "特殊教育学",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取学历层级、学位要求和专业名；学院、岗位、专业代码、专业一致性及年龄条件不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00100",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "MySql",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "text": "Redis",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "text": "Kafka",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 23,
+            "text": "数据库",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 27,
+            "text": "中间件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "具体工具及所要求的数据库、中间件工具类别按岗位工具语境标S，保留原文大小写。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 10,
+  "ids": [
+    "sp10k-00091",
+    "sp10k-00092",
+    "sp10k-00093",
+    "sp10k-00094",
+    "sp10k-00095",
+    "sp10k-00096",
+    "sp10k-00097",
+    "sp10k-00098",
+    "sp10k-00099",
+    "sp10k-00100"
+  ],
+  "at": "2026-09-13T14:00:54.757417+00:00"
+}

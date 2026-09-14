@@ -1,0 +1,12 @@
+{
+  "description": "Positions selected by the parent model before validated output was written. Earlier attempted choices failed validation and were not accepted. No source text or semantic labels changed.",
+  "entries": [
+    {"id":"sp10k-01844","text":"Ansible","old_start":13,"new_start":11,"reason":"Second explicit occurrence in 用Ansible; first is at 2."},
+    {"id":"sp10k-01913","text":"操作","old_start":null,"new_start":29,"reason":"Selected standalone operation in installation list, not substring in 操作系统 at 5."},
+    {"id":"sp10k-01943","text":"安装","old_start":14,"new_start":11,"reason":"First installation activity; other occurrence is at 22."},
+    {"id":"sp10k-01943","text":"配置","old_start":17,"new_start":14,"reason":"First configuration activity; other occurrence is at 25."},
+    {"id":"sp10k-02025","text":"电气","old_start":null,"new_start":0,"reason":"Professional field at start, not substring of maintenance activity at 19."},
+    {"id":"sp10k-02073","text":"媒体","old_start":null,"new_start":11,"reason":"Professional field in list, not substring of later 新媒体运营 at 29."}
+  ],
+  "cli_setup_correction": "Prompt hash guard initially detected Python universal-newline conversion. Changed reader to raw bytes decoded as UTF-8, preserving source CRLF. No model call occurred before guard passed."
+}

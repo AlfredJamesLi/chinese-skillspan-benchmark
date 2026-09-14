@@ -1,0 +1,248 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 42.673,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5105,
+    "completion_tokens": 1294,
+    "total_tokens": 6399,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 453
+    },
+    "input_tokens": 5105,
+    "output_tokens": 1294,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00731\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"Mysql\",\"label\":\"S\"},{\"start\":8,\"end\":14,\"text\":\"Oracle\",\"label\":\"S\"},{\"start\":15,\"end\":23,\"text\":\"SqlServe\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"具体数据库按岗位工具提及标S，保留原文拼写；类别概括不重复标注。\",\"issues\":[]},{\"id\":\"sp10k-00732\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"水处理设备现场维护\",\"label\":\"S\"},{\"start\":12,\"end\":16,\"text\":\"故障排除\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"现场维护与故障排除为独立职业活动，后者对象由局部上下文限定。\",\"issues\":[]},{\"id\":\"sp10k-00733\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"本科学历\",\"label\":\"K\"},{\"start\":9,\"end\":13,\"text\":\"通信工程\",\"label\":\"K\"},{\"start\":14,\"end\":17,\"text\":\"光通信\",\"label\":\"K\"},{\"start\":24,\"end\":28,\"text\":\"项目管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历与明确专业名标K；专业行业语境中的项目管理标S，年限及经验修饰不纳入。\",\"issues\":[]},{\"id\":\"sp10k-00734\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名证明材料及文件格式要求，未提及具体能力或资格名。\",\"issues\":[]},{\"id\":\"sp10k-00735\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于应聘材料真实性及资格处理的行政流程说明。\",\"issues\":[]},{\"id\":\"sp10k-00736\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于招聘公告、资格复审及面试流程通知，不含职业能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00737\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"撰写项目执行书\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注明确文档撰写职责；后续列举是文档内容，不另推导执行流程、算法或程序开发要求。\",\"issues\":[]},{\"id\":\"sp10k-00738\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"网站后端基本构架\",\"label\":\"K\"},{\"start\":16,\"end\":22,\"text\":\"后台维护技能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"后端构架为知识要求，后台维护技能为领域绑定的执行能力。\",\"issues\":[]},{\"id\":\"sp10k-00739\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于报考身份认定及证明材料政策，不是岗位所需的专业资格或能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00740\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"酒店公寓运营\",\"label\":\"S\"},{\"start\":9,\"end\":13,\"text\":\"市场营销\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"活动策划\",\"label\":\"S\"},{\"start\":35,\"end\":37,\"text\":\"拍照\",\"label\":\"S\"},{\"start\":37,\"end\":41,\"text\":\"ps修图\",\"label\":\"S\"},{\"start\":42,\"end\":44,\"text\":\"音乐\",\"label\":\"S\"},{\"start\":44,\"end\":46,\"text\":\"绘画\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"运营、营销、策划为完整职业活动，去除共享经验修饰；拍照、修图、音乐、绘画受明确技能要求限定，分别标S。泛化年轻活跃表述不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00731",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "Mysql",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "Oracle",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "text": "SqlServe",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "具体数据库按岗位工具提及标S，保留原文拼写；类别概括不重复标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00732",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "水处理设备现场维护",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "故障排除",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "现场维护与故障排除为独立职业活动，后者对象由局部上下文限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00733",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "本科学历",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "通信工程",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 17,
+            "text": "光通信",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "项目管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历与明确专业名标K；专业行业语境中的项目管理标S，年限及经验修饰不纳入。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00734",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名证明材料及文件格式要求，未提及具体能力或资格名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00735",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于应聘材料真实性及资格处理的行政流程说明。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00736",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于招聘公告、资格复审及面试流程通知，不含职业能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00737",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "撰写项目执行书",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注明确文档撰写职责；后续列举是文档内容，不另推导执行流程、算法或程序开发要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00738",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "网站后端基本构架",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "后台维护技能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "后端构架为知识要求，后台维护技能为领域绑定的执行能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00739",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于报考身份认定及证明材料政策，不是岗位所需的专业资格或能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00740",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "酒店公寓运营",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "市场营销",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "活动策划",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 37,
+            "text": "拍照",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 41,
+            "text": "ps修图",
+            "label": "S"
+          },
+          {
+            "start": 42,
+            "end": 44,
+            "text": "音乐",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 46,
+            "text": "绘画",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "运营、营销、策划为完整职业活动，去除共享经验修饰；拍照、修图、音乐、绘画受明确技能要求限定，分别标S。泛化年轻活跃表述不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 74,
+  "ids": [
+    "sp10k-00731",
+    "sp10k-00732",
+    "sp10k-00733",
+    "sp10k-00734",
+    "sp10k-00735",
+    "sp10k-00736",
+    "sp10k-00737",
+    "sp10k-00738",
+    "sp10k-00739",
+    "sp10k-00740"
+  ],
+  "at": "2026-09-13T14:51:54.650775+00:00"
+}

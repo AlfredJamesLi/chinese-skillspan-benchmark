@@ -1,0 +1,39 @@
+{
+  "pilot": "pilot10_public_api_v1",
+  "prompt_id": "silver_public_api_v1.0",
+  "model": "gpt-6-astra",
+  "n": 10,
+  "schema_ok": true,
+  "status_counts": {
+    "candidate_complete": 10,
+    "confirmed_empty": 0,
+    "adjudication_required": 0
+  },
+  "span_counts": {
+    "L": 0,
+    "K": 11,
+    "S": 20,
+    "T": 0,
+    "total": 31
+  },
+  "schema_notes": [
+    "JSON 合法，无 Markdown 围栏",
+    "id 顺序一致，偏移与原文切片全部吻合",
+    "无重叠、无嵌套，label 均在 L/K/S/T",
+    "10 条均为 candidate_complete，issues 全空"
+  ],
+  "quality_ok": [
+    "触发词（负责/熟悉/善于/有较强的）未进跨度",
+    "年限、年龄不标",
+    "微信运营经验去“经验”后标 S",
+    "windowsserver 保留原文连写，不另标“操作系统”类别词",
+    "学历完整资格名标 K"
+  ],
+  "quality_watch": [
+    "短动作拆分偏碎：迭代、维护、设计、开发、测试 各成一条 S",
+    "sp10k-00005「从数据中发现并解决问题」标 S；规则默认无对象的解决问题为 T，本句因“从数据中”上抬为 S，可争议",
+    "sp10k-00003 前半整段长 S，未把地产成本/OA 等拆成独立提及",
+    "sp10k-00009「理科」可能偏泛化相关专业",
+    "本批无 T/L、无待裁决，不能据此估计全量 7936 的 status 分布"
+  ]
+}

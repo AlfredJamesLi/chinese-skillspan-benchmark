@@ -1,0 +1,243 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 43.045,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5081,
+    "completion_tokens": 1312,
+    "total_tokens": 6393,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 494
+    },
+    "input_tokens": 5081,
+    "output_tokens": 1312,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00391\",\"spans\":[{\"start\":0,\"end\":9,\"text\":\"全日制大学本科学历\",\"label\":\"K\"},{\"start\":10,\"end\":13,\"text\":\"计算机\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历按完整资格名标注；专业要求抽取明确学科名。\",\"issues\":[]},{\"id\":\"sp10k-00392\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"网络设备厂商认证\",\"label\":\"K\"},{\"start\":15,\"end\":21,\"text\":\"CISP证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"两项均为非语言资格要求，排除要求触发词和优先修饰。\",\"issues\":[]},{\"id\":\"sp10k-00393\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"信息安全技术架构规划和设计\",\"label\":\"S\"},{\"start\":19,\"end\":21,\"text\":\"实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"规划和设计保留共享职业对象；实施承接该对象。后段为成果满足要求的结果描述，不标。\",\"issues\":[]},{\"id\":\"sp10k-00394\",\"spans\":[{\"start\":2,\"end\":19,\"text\":\"数据库（单机、集群）的日常运行维护\",\"label\":\"S\"},{\"start\":20,\"end\":24,\"text\":\"安装配置\",\"label\":\"S\"},{\"start\":25,\"end\":27,\"text\":\"监控\",\"label\":\"S\"},{\"start\":28,\"end\":32,\"text\":\"备份恢复\",\"label\":\"S\"},{\"start\":33,\"end\":35,\"text\":\"管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分数据库运维活动；后续并列动作的数据库对象由局部上下文限定。\",\"issues\":[]},{\"id\":\"sp10k-00395\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅有学校介绍、招聘岗位名称及要求引导语，未给出具体能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00396\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"软件架构规划\",\"label\":\"S\"},{\"start\":7,\"end\":14,\"text\":\"核心算法的设计\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"创新技术开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"三项可独立表达的技术职业活动分别标注。\",\"issues\":[]},{\"id\":\"sp10k-00397\",\"spans\":[{\"start\":6,\"end\":12,\"text\":\"项目经理经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"特定职能经历保留经验后缀，年限不标；项目全委性质是经历限定，不另作能力提及。\",\"issues\":[]},{\"id\":\"sp10k-00398\",\"spans\":[{\"start\":1,\"end\":7,\"text\":\"centos\",\"label\":\"S\"},{\"start\":8,\"end\":15,\"text\":\"Linux系统\",\"label\":\"S\"},{\"start\":21,\"end\":23,\"text\":\"优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"操作系统受同句优化实践经验限定，按岗位工具标S；优化承接系统对象，去除经验仍为完整活动。\",\"issues\":[]},{\"id\":\"sp10k-00399\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为招聘考核通知及联系方式填写提示，属于应聘行政流程。\",\"issues\":[]},{\"id\":\"sp10k-00400\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明招录考核计分与录用流程，不抽取其中的考核项目名称。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00391",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "全日制大学本科学历",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "text": "计算机",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历按完整资格名标注；专业要求抽取明确学科名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00392",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "网络设备厂商认证",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "CISP证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项均为非语言资格要求，排除要求触发词和优先修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00393",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "信息安全技术架构规划和设计",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 21,
+            "text": "实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "规划和设计保留共享职业对象；实施承接该对象。后段为成果满足要求的结果描述，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00394",
+        "spans": [
+          {
+            "start": 2,
+            "end": 19,
+            "text": "数据库（单机、集群）的日常运行维护",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "安装配置",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 27,
+            "text": "监控",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "备份恢复",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "text": "管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分数据库运维活动；后续并列动作的数据库对象由局部上下文限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00395",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅有学校介绍、招聘岗位名称及要求引导语，未给出具体能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00396",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "软件架构规划",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 14,
+            "text": "核心算法的设计",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "创新技术开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "三项可独立表达的技术职业活动分别标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00397",
+        "spans": [
+          {
+            "start": 6,
+            "end": 12,
+            "text": "项目经理经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "特定职能经历保留经验后缀，年限不标；项目全委性质是经历限定，不另作能力提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00398",
+        "spans": [
+          {
+            "start": 1,
+            "end": 7,
+            "text": "centos",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 15,
+            "text": "Linux系统",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 23,
+            "text": "优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "操作系统受同句优化实践经验限定，按岗位工具标S；优化承接系统对象，去除经验仍为完整活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00399",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为招聘考核通知及联系方式填写提示，属于应聘行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00400",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明招录考核计分与录用流程，不抽取其中的考核项目名称。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 40,
+  "ids": [
+    "sp10k-00391",
+    "sp10k-00392",
+    "sp10k-00393",
+    "sp10k-00394",
+    "sp10k-00395",
+    "sp10k-00396",
+    "sp10k-00397",
+    "sp10k-00398",
+    "sp10k-00399",
+    "sp10k-00400"
+  ],
+  "at": "2026-09-13T14:23:31.671187+00:00"
+}

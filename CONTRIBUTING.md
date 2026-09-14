@@ -35,7 +35,7 @@ Use a short, reproducible description. Include file paths relative to this repos
 ### Model-card corrections
 
 - Errors in `release/huggingface-model/README.md` (architecture, licence, intended use).
-- Hub model cards stay `license: other` until job-advertisement text rights are confirmed (see `LICENSE`).
+- Hub model cards stay `license: other` (research-use of training text is confirmed; not CC-BY; see `LICENSE`).
 
 ---
 

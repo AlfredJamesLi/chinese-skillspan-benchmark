@@ -1,0 +1,22 @@
+{
+  "documented_ledger_n": 2451,
+  "documented_ledger_note": "CNSS 2026-09-09 pack: 2451 = A100+QA100+REST. Equivalent reconstruction: v5 2200+169=2369 records + hold82. Full 2451 jsonl is not in this working tree (private REST pack omitted).",
+  "v6a_nocross_records": 2319,
+  "v6a_train": 2150,
+  "v6a_dev": 169,
+  "v6a_unique_ids": 2319,
+  "v6a_unique_nfc": 2075,
+  "v6a_unique_valid_nfc": 2064,
+  "v6a_invalid_by_reason": {
+    "too_short_or_punct": 13,
+    "empty": 1
+  },
+  "hold82_records": 82,
+  "hold82_ids_in_v6a": 0,
+  "punct_or_tiny_in_v6a": 13,
+  "target_unique": 10000,
+  "gap_from_unique_valid": 7936,
+  "gap_if_2451_all_unique_valid": 7549,
+  "accounting_used": "unique_valid_nfc_of_v6a_nocross",
+  "why_not_2451": "2451 is the Silver-plus registry/ledger (records). v6a_nocross unique NFC is lower because of exact-duplicate extras; hold82 is pending and not labeled teacher Silver. Top-up uses unique valid sentences, not extra duplicate records."
+}

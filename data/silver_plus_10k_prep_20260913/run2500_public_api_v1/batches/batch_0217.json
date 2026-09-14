@@ -1,0 +1,385 @@
+{
+  "ok": true,
+  "fallback": "per_record",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05966",
+        "spans": [
+          {
+            "start": 10,
+            "end": 30,
+            "text": "ODMOEM项目（新项目及存量项目）开发",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 56,
+            "text": "从项目开案到项目进入量产的时程、Issue管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取项目开发及项目从开案到量产阶段的时程、Issue管理等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05967",
+        "spans": [
+          {
+            "start": 10,
+            "end": 17,
+            "text": "水电表月度抄表",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 27,
+            "text": "制作水电费月度报表",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抄表与制作报表是两项可独立执行的职业活动，分别标S；排除职责触发词及地点限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05968",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "责任心强",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "作风踏实",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "吃苦耐劳",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "text": "电气工程及自动化",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取责任心、踏实、吃苦耐劳等通用特质，以及明确专业领域名称；“相关专业”不纳入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05969",
+        "spans": [
+          {
+            "start": 6,
+            "end": 12,
+            "text": "市场拓展能力",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "商务谈判技巧",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项均为候选人需具备的可执行商务职业能力，分别标注为 S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05970",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "办公软件",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "text": "AutoCAD",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 28,
+            "text": "Solidworks",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求熟练使用办公软件及制图软件，均按岗位现用工具标注为 S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05971",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "工厂的效率改善",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 23,
+            "text": "制造价值流的细致分析",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 40,
+            "text": "识别生产过程中设备及人力工时浪费",
+            "label": "S"
+          },
+          {
+            "start": 42,
+            "end": 50,
+            "text": "提出精益改善方向",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取制造效率改善、价值流分析、浪费识别及改善方向制定等职业活动；去除职责触发词与连接词，末尾生产效率持续提升为结果目标，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05972",
+        "spans": [
+          {
+            "start": 6,
+            "end": 19,
+            "text": "制定公司品牌与文化传播计划",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "内部文化凝聚",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "外部品牌推广",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取品牌文化传播计划制定、内部文化凝聚及外部品牌推广三项职业活动；计划制定保留共享动作与对象，不拆分为不完整提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05973",
+        "spans": [
+          {
+            "start": 5,
+            "end": 33,
+            "text": "弱电线路、消防控制系统、多媒体设备、门禁设备等检修及保养",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行对多类楼宇设备和线路进行检修及保养，作为一项完整职业活动标注为 S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05974",
+        "spans": [
+          {
+            "start": 0,
+            "end": 11,
+            "text": "处理客户投诉等专业问题",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "text": "跨部门沟通",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "处理客户投诉等专业问题为具体职业活动；跨部门沟通为通用沟通能力。问题得到落实和改善属于结果表述，不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05975",
+        "spans": [
+          {
+            "start": 17,
+            "end": 21,
+            "text": "驾驶工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求候选人执行驾驶这一职业活动；安全、准时、高效属于结果或要求修饰，不单独标注。",
+        "issues": []
+      }
+    ]
+  },
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "parts": [
+    {
+      "id": "sp10k-05966",
+      "ok": true,
+      "n_errors": 0,
+      "repairs": [
+        {
+          "id": "sp10k-05966",
+          "repairs": [
+            {
+              "i": 0,
+              "action": "snapped",
+              "from": [
+                18,
+                31
+              ],
+              "to": [
+                10,
+                30
+              ],
+              "text": "ODMOEM项目（新项目及存量项目）开发"
+            },
+            {
+              "i": 1,
+              "action": "snapped",
+              "from": [
+                32,
+                58
+              ],
+              "to": [
+                33,
+                56
+              ],
+              "text": "从项目开案到项目进入量产的时程、Issue管理"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05967",
+      "ok": true,
+      "n_errors": 0,
+      "repairs": []
+    },
+    {
+      "id": "sp10k-05968",
+      "ok": true,
+      "n_errors": 0,
+      "repairs": []
+    },
+    {
+      "id": "sp10k-05969",
+      "ok": true,
+      "n_errors": 0,
+      "repairs": []
+    },
+    {
+      "id": "sp10k-05970",
+      "ok": true,
+      "n_errors": 0,
+      "repairs": [
+        {
+          "id": "sp10k-05970",
+          "repairs": [
+            {
+              "i": 2,
+              "action": "snapped",
+              "from": [
+                18,
+                27
+              ],
+              "to": [
+                18,
+                28
+              ],
+              "text": "Solidworks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05971",
+      "ok": true,
+      "n_errors": 0,
+      "repairs": []
+    },
+    {
+      "id": "sp10k-05972",
+      "ok": true,
+      "n_errors": 0,
+      "repairs": []
+    },
+    {
+      "id": "sp10k-05973",
+      "ok": true,
+      "n_errors": 0,
+      "repairs": []
+    },
+    {
+      "id": "sp10k-05974",
+      "ok": true,
+      "n_errors": 0,
+      "repairs": []
+    },
+    {
+      "id": "sp10k-05975",
+      "ok": true,
+      "n_errors": 0,
+      "repairs": [
+        {
+          "id": "sp10k-05975",
+          "repairs": [
+            {
+              "i": 0,
+              "action": "snapped",
+              "from": [
+                20,
+                26
+              ],
+              "to": [
+                17,
+                21
+              ],
+              "text": "驾驶工作"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "http_status": 200,
+  "response_model": "gpt-6-astra",
+  "batch": 217,
+  "ids": [
+    "sp10k-05966",
+    "sp10k-05967",
+    "sp10k-05968",
+    "sp10k-05969",
+    "sp10k-05970",
+    "sp10k-05971",
+    "sp10k-05972",
+    "sp10k-05973",
+    "sp10k-05974",
+    "sp10k-05975"
+  ],
+  "at": "2026-09-13T17:18:24.440758+00:00"
+}

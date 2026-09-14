@@ -1,0 +1,531 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 33.414,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4965,
+    "completion_tokens": 1217,
+    "total_tokens": 6182,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 379
+    },
+    "input_tokens": 4965,
+    "output_tokens": 1217,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00151",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            9
+          ],
+          "to": [
+            2,
+            10
+          ],
+          "text": "PSCADA系统"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            15
+          ],
+          "to": [
+            10,
+            17
+          ],
+          "text": "HMI画面开发"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00152",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            6
+          ],
+          "to": [
+            0,
+            4
+          ],
+          "text": "电脑操作"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            24
+          ],
+          "to": [
+            12,
+            20
+          ],
+          "text": "系统故障排障方法"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00154",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            8
+          ],
+          "to": [
+            9,
+            13
+          ],
+          "text": "专业知识"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            14,
+            18
+          ],
+          "text": "工作能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00155",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "研发质量流程和体系"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            12
+          ],
+          "to": [
+            11,
+            13
+          ],
+          "text": "工作"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            21
+          ],
+          "to": [
+            16,
+            22
+          ],
+          "text": "研发项目管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00157",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            16,
+            31
+          ],
+          "to": [
+            16,
+            29
+          ],
+          "text": "梳理IT区域信息化建设制度"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00158",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            24
+          ],
+          "to": [
+            9,
+            23
+          ],
+          "text": "计算机等信息化办公设备的购置"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            25,
+            27
+          ],
+          "to": [
+            24,
+            26
+          ],
+          "text": "管理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            28,
+            30
+          ],
+          "to": [
+            27,
+            29
+          ],
+          "text": "归档"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00159",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            8
+          ],
+          "to": [
+            2,
+            7
+          ],
+          "text": "数据库运维"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            24,
+            32
+          ],
+          "to": [
+            16,
+            24
+          ],
+          "text": "文档的编写及管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00160",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "数据库基础理论"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            10,
+            15
+          ],
+          "text": "数据库管理"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            21,
+            29
+          ],
+          "to": [
+            20,
+            29
+          ],
+          "text": "SQLServer"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00151\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"PSCADA系统\",\"label\":\"S\"},{\"start\":9,\"end\":15,\"text\":\"HMI画面开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"PSCADA系统为岗位使用工具/系统，HMI画面开发为可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00152\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"电脑操作\",\"label\":\"S\"},{\"start\":14,\"end\":24,\"text\":\"系统故障排障方法\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"电脑操作和系统故障排障方法均为可执行的工作技能或方法。\",\"issues\":[]},{\"id\":\"sp10k-00153\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为相关专业要求，泛化专业名称不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00154\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"专业知识\",\"label\":\"K\"},{\"start\":9,\"end\":13,\"text\":\"工作能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"专业知识属于知识要求，工作能力属于泛化能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00155\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"研发质量流程和体系\",\"label\":\"K\"},{\"start\":10,\"end\":12,\"text\":\"工作\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"研发项目管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"研发质量流程和体系为领域流程知识，研发项目管理为明确职业职能；“工作”作为执行要求保留。\",\"issues\":[]},{\"id\":\"sp10k-00156\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为户籍资格和时间条件，不属于能力、知识或标注范围内的资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00157\",\"spans\":[{\"start\":0,\"end\":13,\"text\":\"梳理IT区域信息化管理体系\",\"label\":\"S\"},{\"start\":16,\"end\":31,\"text\":\"梳理IT区域信息化建设制度\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"两处“梳理”分别对应明确的信息化管理体系和建设制度处理活动。\",\"issues\":[]},{\"id\":\"sp10k-00158\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"规划公司网络环境\",\"label\":\"S\"},{\"start\":9,\"end\":24,\"text\":\"计算机等信息化办公设备的购置\",\"label\":\"S\"},{\"start\":25,\"end\":27,\"text\":\"管理\",\"label\":\"S\"},{\"start\":28,\"end\":30,\"text\":\"归档\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"规划、购置、管理和归档均为明确的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00159\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"数据库运维\",\"label\":\"S\"},{\"start\":24,\"end\":32,\"text\":\"文档的编写及管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库运维及文档编写管理均为岗位执行活动；标准化、规范化为活动限定。\",\"issues\":[]},{\"id\":\"sp10k-00160\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"数据库基础理论\",\"label\":\"K\"},{\"start\":11,\"end\":15,\"text\":\"数据库管理\",\"label\":\"S\"},{\"start\":21,\"end\":29,\"text\":\"SQLServer\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库基础理论属于知识，数据库管理和SQLServer属于实践运用技能。\",\"issues\":[]}] }",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00151",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "PSCADA系统",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "text": "HMI画面开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "PSCADA系统为岗位使用工具/系统，HMI画面开发为可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00152",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "电脑操作",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "text": "系统故障排障方法",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "电脑操作和系统故障排障方法均为可执行的工作技能或方法。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00153",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为相关专业要求，泛化专业名称不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00154",
+        "spans": [
+          {
+            "start": 9,
+            "end": 13,
+            "text": "专业知识",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "工作能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业知识属于知识要求，工作能力属于泛化能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00155",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "研发质量流程和体系",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 13,
+            "text": "工作",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "研发项目管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "研发质量流程和体系为领域流程知识，研发项目管理为明确职业职能；“工作”作为执行要求保留。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00156",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为户籍资格和时间条件，不属于能力、知识或标注范围内的资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00157",
+        "spans": [
+          {
+            "start": 0,
+            "end": 13,
+            "text": "梳理IT区域信息化管理体系",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 29,
+            "text": "梳理IT区域信息化建设制度",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两处“梳理”分别对应明确的信息化管理体系和建设制度处理活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00158",
+        "spans": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "规划公司网络环境",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 23,
+            "text": "计算机等信息化办公设备的购置",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "text": "管理",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "text": "归档",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "规划、购置、管理和归档均为明确的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00159",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "数据库运维",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "text": "文档的编写及管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库运维及文档编写管理均为岗位执行活动；标准化、规范化为活动限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00160",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "数据库基础理论",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 15,
+            "text": "数据库管理",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 29,
+            "text": "SQLServer",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库基础理论属于知识，数据库管理和SQLServer属于实践运用技能。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 16,
+  "ids": [
+    "sp10k-00151",
+    "sp10k-00152",
+    "sp10k-00153",
+    "sp10k-00154",
+    "sp10k-00155",
+    "sp10k-00156",
+    "sp10k-00157",
+    "sp10k-00158",
+    "sp10k-00159",
+    "sp10k-00160"
+  ],
+  "at": "2026-09-13T14:05:31.901887+00:00"
+}

@@ -1,0 +1,21 @@
+# Codex 调用 gpt-6-astra — 剩余 Silver（不含已抽的 2500）
+
+系统消息：整份粘贴 `PROMPT_silver_public_api_v1.0.txt`（即公开版 silver_public_api_v1.0）。
+用户消息：只贴一个 `batches/batch_XXXX.json`（顶层 `records`，每项仅 `id`+`text`）。
+模型：gpt-6-astra。每批最多 10 条（最后一批 6 条）。不要用 20 条一批。
+
+只输出一个 JSON 对象，顶层字段 records。不要 Markdown 围栏，不要 JSONL。
+records 的数量、顺序、id 必须与输入一致。
+每条恰好：id, spans, status, note, issues。
+spans[].start/end 为 Unicode 码点、0 起始、左闭右开；输入 text[start:end] 必须等于 spans[].text。
+
+把模型输出存成 `batches_out/batch_XXXX.json`（与输入同名）。
+不要标注 `ids_held_2500.txt` 里的 2500 条。不要改 Gold150 / V4 / v6a。
+
+实验室通道（若 Codex 走同一代理）：
+POST https://claudeed.ysaikeji.cn/v1/chat/completions
+temperature=0, max_tokens=8192。
+
+合并（全部 544 批齐后，在仓库 scripts 目录）：
+
+python3 merge_codex_remaining_silver.py

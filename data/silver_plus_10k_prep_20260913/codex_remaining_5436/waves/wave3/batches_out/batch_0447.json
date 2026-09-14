@@ -1,0 +1,249 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06961",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "驾龄年限和事故记录不单独抽取；驾驶证是否属于岗位资格要求需要岗位语境。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "C1及以上驾驶证",
+          "alternatives": [
+            "司机岗位资格要求，标K",
+            "非司机岗驾照，不标"
+          ],
+          "reason": "原文未说明岗位是否为司机岗，无法确认是否适用非司机岗驾照排除规则。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06962",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "团队协作意识",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "严谨踏实",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "耐心沉稳",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 30,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 35,
+          "text": "执行力",
+          "label": "T"
+        },
+        {
+          "start": 38,
+          "end": 49,
+          "text": "承受一定程度的工作压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用沟通协作能力、个人特质和抗压能力，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06963",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "项目安全专项方案编制及报审",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "编制与报审共享方案对象，保留完整职业活动短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06964",
+      "spans": [
+        {
+          "start": 2,
+          "end": 20,
+          "text": "商用车及新能源产业链上下游的行业研究",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "投资分析",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "行业研究和投资分析为明确职业职责，行业对象不另作嵌套标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06965",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "日常办公软件",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "text": "Excel",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "word",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 30,
+          "text": "Powerpoint",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "办公软件及列举的具体软件属于岗位工具要求，保留原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06966",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "产品开发",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "平台开发",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 33,
+          "text": "锂电池设计和生产的全流程管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发活动去除经验后意义完整；全流程管理保留共享的专业对象，年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06967",
+      "spans": [
+        {
+          "start": 1,
+          "end": 25,
+          "text": "ISO13485或者IATF16949内审员资格",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项标准共享内审员资格中心语，保留完整非语言资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06968",
+      "spans": [
+        {
+          "start": 6,
+          "end": 12,
+          "text": "行业相关证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确提出持证资格要求，抽取原文证书短语，不推断具体证书名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06969",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 31,
+          "text": "与内部产品、研发、市场及外部卡厂等多方高效沟通",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用沟通协调及跨团队、外部人员沟通均标T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06970",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "设备电气部分的维保和检修的计划",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "组织",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "技术指导",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 28,
+          "text": "监督",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 31,
+          "text": "验收",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分专业维保检修管理中的并列职责；后续动作的专业对象由局部共享语境限定。",
+      "issues": []
+    }
+  ]
+}

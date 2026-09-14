@@ -1,0 +1,493 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02207",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "专业目录设置说明，未提出具体专业或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02208",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "Windows操作系统的管理",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "配置",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "系统调优",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统管理、配置和调优为职业活动，共享对象由局部语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02209",
+      "spans": [
+        {
+          "start": 15,
+          "end": 20,
+          "text": "教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "text": "普通话证书",
+          "label": "L"
+        },
+        {
+          "start": 27,
+          "end": 30,
+          "text": "普通话",
+          "label": "L"
+        },
+        {
+          "start": 31,
+          "end": 38,
+          "text": "二级乙等及以上",
+          "label": "L"
+        },
+        {
+          "start": 46,
+          "end": 53,
+          "text": "二级甲等及以上",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "教师资格证为非语言资格；普通话及其证书、等级为语言要求，排除要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02210",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考信息填写和材料上传属于应聘行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02211",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "面试通知、资格复审及联系方式要求属于应聘流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02212",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅规定报名证明材料的取得期限，未明确具体学历层次或资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02213",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "选调证明材料清单，未给出具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02214",
+      "spans": [
+        {
+          "start": 1,
+          "end": 10,
+          "text": "OpenStack",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 16,
+          "text": "VXLan",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "VMWare",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "技术提及的范围和边界明确，知识掌握与实际运用的类型尚待裁决；S为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "OpenStack、VXLan、VMWare",
+          "alternatives": [
+            "K：相关技术知识",
+            "S：平台工具运用及技术实施"
+          ],
+          "reason": "仅说明熟练掌握主流技术，缺少原理知识或实际操作、实施的明确语境，触发词不足以消除类型歧义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02215",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "个人成果及证明材料清单，不构成研究或写作能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02216",
+      "spans": [
+        {
+          "start": 13,
+          "end": 32,
+          "text": "编制IT基础平台及IT桌面平台总体方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "方案编制为明确职责，保留共享动作和总体方案对象；前置规划为依据。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02217",
+      "spans": [
+        {
+          "start": 4,
+          "end": 14,
+          "text": "python开发语言",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "业务理解能力",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "业务理解能力按领域绑定能力标S；python提及的类型未决，S为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "python开发语言",
+          "alternatives": [
+            "K：编程语言知识",
+            "S：编程语言运用"
+          ],
+          "reason": "深入理解未进一步说明语言原理、语法知识或实际开发运用，无法仅凭要求触发词确定类型。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02218",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "小程序后台系统需求分析",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "任务模块开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "需求分析和模块开发为可独立识别的职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02219",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "专业目录附件名称，不是候选人的学历或专业要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02220",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "运营管理类需求分析",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "整理",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "提炼产品需求",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "推动产品优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取需求分析、整理、提炼和优化推动活动；整理共享需求对象，按时落地为结果承诺。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02221",
+      "spans": [
+        {
+          "start": 0,
+          "end": 13,
+          "text": "对技术市场具有一定的敏锐度",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "国际视野",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 31,
+          "text": "全球技术发展动向",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 50,
+          "text": "从客户和业务的角度来进行技术实现",
+          "label": "S"
+        },
+        {
+          "start": 57,
+          "end": 63,
+          "text": "市场发展动态",
+          "label": "K"
+        },
+        {
+          "start": 64,
+          "end": 80,
+          "text": "对公司技术发展能提供决策性的建议",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "敏锐度和视野为特质，发展动态为知识；技术实现和技术发展决策建议为职业活动，保留必要对象及方法限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02222",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格取消规定，不是候选人职业能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02223",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名材料真实性及违规处理规定，属于应聘行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02224",
+      "spans": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 22,
+          "text": "学士及以上学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别保留完整学历与学位资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02225",
+      "spans": [
+        {
+          "start": 4,
+          "end": 21,
+          "text": "科研试验网络网络操作系统的日常维护",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "数据配置",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "业务保障",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "故障定位",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统维护及列明的运维职能为S，保留原文重复的网络字样。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02226",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考专业匹配的条件性示例，未直接规定本岗位的具体学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02227",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "redis",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "text": "mongodb",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "text": "NoSQL技术",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "text": "高并发开发",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "高并发开发为明确实践活动，去除经验后意义完整；前列技术的K/S类型待决，S为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "redis、mongodb等NoSQL技术",
+          "alternatives": [
+            "K：数据库及NoSQL技术知识",
+            "S：数据库工具运用及NoSQL技术实践"
+          ],
+          "reason": "熟悉未明确指向知识还是运用；高并发开发经验未明确关联这些数据库技术，尚不足以确认局部实践许可。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02228",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "能吃苦",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "适应出差",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "吃苦、沟通及出差适应性为通用特质或能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02229",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "在读人员报考资格限制，未提出具体学历或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02230",
+      "spans": [
+        {
+          "start": 1,
+          "end": 4,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 11,
+          "text": "数据逻辑能力",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "沟通能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "特质列表中的数据逻辑能力按数据思维类通用能力处理，未出现具体分析或建模方法。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02231",
+      "spans": [
+        {
+          "start": 3,
+          "end": 8,
+          "text": "信息敏感度",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 20,
+          "text": "学习和运用新技术的能力",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "主流技术的动态",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "信息敏感度及未限定具体技术的学习运用能力为通用能力；技术动态为知识要求。",
+      "issues": []
+    }
+  ]
+}

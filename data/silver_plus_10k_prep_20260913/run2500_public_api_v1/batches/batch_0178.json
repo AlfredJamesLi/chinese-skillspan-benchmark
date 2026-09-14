@@ -1,0 +1,135 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 19.91,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5158,
+    "completion_tokens": 548,
+    "total_tokens": 5706,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 75
+    },
+    "input_tokens": 5158,
+    "output_tokens": 548,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01816\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅泛指岗位资格及证书材料，未提及具体能力或资格名称。\",\"issues\":[]},{\"id\":\"sp10k-01819\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于聘用合同、服务期限及违约责任规定，不涉及候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01826\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明资格条件问题的解答单位，未列出具体专业或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01827\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于政治面貌证明材料的提交要求，不涉及职业能力、知识或专业资格。\",\"issues\":[]},{\"id\":\"sp10k-01832\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅要求身体健康及履职身体条件，按规则不标。\",\"issues\":[]},{\"id\":\"sp10k-01836\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅规定业绩及获奖材料的提交方式，没有具体技能或资格名称。\",\"issues\":[]},{\"id\":\"sp10k-01843\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于招聘工作组织安排，并非招聘专员岗位职责要求。\",\"issues\":[]},{\"id\":\"sp10k-01845\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报考年龄的计算规则，不属于能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01846\",\"spans\":[{\"start\":9,\"end\":18,\"text\":\"办公自动化操作技能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求办公自动化操作技能，属于职业操作能力；排除要求触发词“掌握”。\",\"issues\":[]},{\"id\":\"sp10k-01848\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于应届毕业生报考身份及毕业时间的界定；其中考试和教育机构等为解释性内容，未提出独立技能或学历资格要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01816",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅泛指岗位资格及证书材料，未提及具体能力或资格名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01819",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于聘用合同、服务期限及违约责任规定，不涉及候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01826",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明资格条件问题的解答单位，未列出具体专业或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01827",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于政治面貌证明材料的提交要求，不涉及职业能力、知识或专业资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01832",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅要求身体健康及履职身体条件，按规则不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01836",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅规定业绩及获奖材料的提交方式，没有具体技能或资格名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01843",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于招聘工作组织安排，并非招聘专员岗位职责要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01845",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报考年龄的计算规则，不属于能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01846",
+        "spans": [
+          {
+            "start": 9,
+            "end": 18,
+            "text": "办公自动化操作技能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求办公自动化操作技能，属于职业操作能力；排除要求触发词“掌握”。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01848",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于应届毕业生报考身份及毕业时间的界定；其中考试和教育机构等为解释性内容，未提出独立技能或学历资格要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 178,
+  "ids": [
+    "sp10k-01816",
+    "sp10k-01819",
+    "sp10k-01826",
+    "sp10k-01827",
+    "sp10k-01832",
+    "sp10k-01836",
+    "sp10k-01843",
+    "sp10k-01845",
+    "sp10k-01846",
+    "sp10k-01848"
+  ],
+  "at": "2026-09-13T16:35:44.954045+00:00"
+}

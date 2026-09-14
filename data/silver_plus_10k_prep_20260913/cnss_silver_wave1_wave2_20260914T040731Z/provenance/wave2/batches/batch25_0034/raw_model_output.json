@@ -1,0 +1,503 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04562",
+      "spans": [
+        {
+          "start": 3,
+          "end": 10,
+          "text": "计算机硬件设备",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "应用软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "硬件设备与软件均处于明确应用语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04563",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为轮班、节假日轮休及夜班安排要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04564",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "博士研究生学历和学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留共享博士研究生限定的完整资格；年龄及出生日期不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04565",
+      "spans": [
+        {
+          "start": 6,
+          "end": 15,
+          "text": "后台服务器日常运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确的服务器运维活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04566",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为选调资格条件的引导标题，未列具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04567",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "生产设备的维保计划并落实",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "维保计划与落实共享设备及计划对象，保留完整活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04568",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅泛指学历、专业等条件并指向附件，未提供具体资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04569",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "定性和定量的分析",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 21,
+          "text": "目标客户群的特征",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "产品需求",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "市场容量",
+          "label": "K"
+        },
+        {
+          "start": 36,
+          "end": 47,
+          "text": "目标客户群的分类和定位",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 54,
+          "text": "营销",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "区分分析、客户分类定位及营销活动与须掌握的业务事实；纯增长目标不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04570",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "组织管理能力",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "人际关系协调",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "沟通能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用组织、人际协调及沟通能力，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04571",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明未取得证书者提交报考承诺书的行政流程，未明确要求持证。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04572",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "WMS系统的应用",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "规划",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "应用与规划为可拆分活动，规划对象由本句WMS系统承接。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04573",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "PC软硬件",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 23,
+          "text": "Windows操作系统知识",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "办公软件",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "常用软件",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "操作系统知识明确为K，办公及常用软件按工具要求标S；PC软硬件类型待决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "PC软硬件",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可能指软硬件知识，也可能指实际操作维护能力；本句未明确其知识或运用语境，S为占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04574",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "国家信息安全等级保护相关标准",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 31,
+          "text": "信息安全管理体系（ISMS）",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 46,
+          "text": "ISO27001信息安全标准",
+          "label": "K"
+        },
+        {
+          "start": 49,
+          "end": 54,
+          "text": "CISSP",
+          "label": "K"
+        },
+        {
+          "start": 55,
+          "end": 59,
+          "text": "CISA",
+          "label": "K"
+        },
+        {
+          "start": 60,
+          "end": 63,
+          "text": "CIW",
+          "label": "K"
+        },
+        {
+          "start": 64,
+          "end": 68,
+          "text": "CISP",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安全标准、管理体系及非语言专业证书均为K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04575",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明应聘人员考核与资格复查程序，未提出具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04576",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "IDC人才梯队建设",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "能力培养",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 34,
+          "text": "IDC现场运维外包团队的管理",
+          "label": "T"
+        },
+        {
+          "start": 35,
+          "end": 37,
+          "text": "考核",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "人才梯队建设、培养及考核为职业活动；团队管理按通用组织管理标T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04577",
+      "spans": [
+        {
+          "start": 0,
+          "end": 10,
+          "text": "硕士研究生及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取户籍豁免条件中的明确学历资格；毕业年份、人员身份及户籍规定不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04578",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为资格复审时间、地点、方式及通知查询说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04579",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于配偶安置福利，学历条件针对配偶，不是当前候选人的资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04580",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅泛指其他资格条件，未给出可抽取的具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04581",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "团队意识",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "利用经营要素",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "协调各方关系",
+          "label": "T"
+        },
+        {
+          "start": 34,
+          "end": 43,
+          "text": "建立团队的团队精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "经营要素利用为业务活动，其余为团队及人际通用能力；发挥潜力的结果表述不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04582",
+      "spans": [
+        {
+          "start": 16,
+          "end": 21,
+          "text": "文档的收集",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "整理",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "text": "归档",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分文档收集、整理和归档，后两项共享文档对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04583",
+      "spans": [
+        {
+          "start": 44,
+          "end": 52,
+          "text": "研究生及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 53,
+          "end": 60,
+          "text": "硕士及以上学位",
+          "label": "K"
+        },
+        {
+          "start": 60,
+          "end": 67,
+          "text": "皮肤病与性病学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取表格文本中的学历、学位和专业；招聘科室名称不作为资格标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04584",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "操作系统",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 24,
+          "text": "WINDOWS各种版本操作系统",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "text": "AD域管理",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 47,
+          "text": "DHCP,DNS等服务维护与架设",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "具体系统及服务处于运维工具与活动语境；泛称操作系统的知识或工具含义待决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "操作系统",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "泛称可能要求操作系统知识，也可能要求系统使用能力；了解不能单独定类，后列服务运维未明确限定此项，S为占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04585",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明泛化工作经历年限的计算截止时间，无具体领域或活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04586",
+      "spans": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "运维服务",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取运维职业活动，项目现场及质保期为工作情境限定。",
+      "issues": []
+    }
+  ]
+}

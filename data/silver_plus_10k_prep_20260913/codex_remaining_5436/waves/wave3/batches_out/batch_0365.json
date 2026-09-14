@@ -1,0 +1,131 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05615",
+      "spans": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "学位",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "资格证",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 30,
+          "text": "规范化培训合格证",
+          "label": "K"
+        },
+        {
+          "start": 39,
+          "end": 43,
+          "text": "发表论文",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取应聘人员需具备或提供的学历、学位、资格及论文等资格提及；时间要求和证明材料表述不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05616",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明考试成绩计算方式，不构成候选人需具备的能力、知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05617",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明笔试成绩相同时的资格复审安排，不构成候选人资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05618",
+      "spans": [
+        {
+          "start": 40,
+          "end": 50,
+          "text": "本科及以上学历、学位",
+          "label": "K"
+        },
+        {
+          "start": 62,
+          "end": 71,
+          "text": "临床医学类专业方向",
+          "label": "K"
+        },
+        {
+          "start": 72,
+          "end": 78,
+          "text": "医疗卫生人员",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确的学历资格、专业方向及医疗卫生职业领域要求；“从事临床工作”在该句中作为人员工作背景描述，未单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05619",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘岗位要求的标题，未包含具体能力、知识或资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05620",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名信息填写真实性和责任说明，不构成候选人能力、知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05621",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "统招本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确学历资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05622",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列举相关人员需提交的证明、考核材料、合同和服务证书，未明确形成当前候选人的能力、知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05623",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明聘用人员的岗位安排和入职后锻炼安排，不构成候选人需具备的能力、知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05624",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明资格初审和报名缴费流程，不构成候选人需具备的能力、知识或资格要求。",
+      "issues": []
+    }
+  ]
+}

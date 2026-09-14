@@ -1,0 +1,914 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 63.21,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5032,
+    "completion_tokens": 1810,
+    "total_tokens": 6842,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5032,
+    "output_tokens": 1810,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01331",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            12
+          ],
+          "to": [
+            7,
+            14
+          ],
+          "text": "售前、售中技术"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            19
+          ],
+          "to": [
+            16,
+            22
+          ],
+          "text": "方案咨询服务"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            25,
+            31
+          ],
+          "to": [
+            30,
+            36
+          ],
+          "text": "技术支持响应"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01333",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            1,
+            6
+          ],
+          "to": [
+            1,
+            11
+          ],
+          "text": "自主独立完成各项工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01334",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            7
+          ],
+          "to": [
+            4,
+            8
+          ],
+          "text": "财务制度"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            12,
+            19
+          ],
+          "to": [
+            13,
+            20
+          ],
+          "text": "业务的具体流程"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            29
+          ],
+          "to": [
+            23,
+            30
+          ],
+          "text": "税法的相关规定"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            32,
+            36
+          ],
+          "to": [
+            33,
+            37
+          ],
+          "text": "财务软件"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01335",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            14
+          ],
+          "to": [
+            7,
+            15
+          ],
+          "text": "会议音响设备维护"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            22
+          ],
+          "to": [
+            16,
+            23
+          ],
+          "text": "监控系统的维护"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            23,
+            29
+          ],
+          "to": [
+            24,
+            33
+          ],
+          "text": "电脑、打印机等设备"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            29,
+            31
+          ],
+          "to": [
+            35,
+            37
+          ],
+          "text": "安装"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            32,
+            34
+          ],
+          "to": [
+            38,
+            40
+          ],
+          "text": "配置"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            35,
+            37
+          ],
+          "to": [
+            41,
+            43
+          ],
+          "text": "调试"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            38,
+            42
+          ],
+          "to": [
+            44,
+            48
+          ],
+          "text": "故障排查"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01336",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            14
+          ],
+          "text": "各类软件故障的排除和恢复"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            17
+          ],
+          "to": [
+            15,
+            21
+          ],
+          "text": "系统软件升级"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            18,
+            20
+          ],
+          "to": [
+            22,
+            24
+          ],
+          "text": "优化"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01337",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            13
+          ],
+          "to": [
+            5,
+            14
+          ],
+          "text": "shell脚本编写"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01338",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            10
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "绩效管理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "团队激励"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            20
+          ],
+          "to": [
+            15,
+            19
+          ],
+          "text": "培养能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            21,
+            27
+          ],
+          "to": [
+            23,
+            30
+          ],
+          "text": "判断和决策能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01339",
+      "repairs": [
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            63,
+            65
+          ],
+          "to": [
+            61,
+            63
+          ],
+          "text": "安装"
+        },
+        {
+          "i": 8,
+          "action": "snapped",
+          "from": [
+            66,
+            68
+          ],
+          "to": [
+            64,
+            66
+          ],
+          "text": "配置"
+        },
+        {
+          "i": 9,
+          "action": "snapped",
+          "from": [
+            69,
+            71
+          ],
+          "to": [
+            67,
+            69
+          ],
+          "text": "管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01340",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            19
+          ],
+          "to": [
+            8,
+            17
+          ],
+          "text": "SpringMVC"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            20,
+            26
+          ],
+          "to": [
+            18,
+            24
+          ],
+          "text": "Spring"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            27,
+            36
+          ],
+          "to": [
+            25,
+            34
+          ],
+          "text": "Hibernate"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            37,
+            44
+          ],
+          "to": [
+            35,
+            42
+          ],
+          "text": "MyBatis"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            45,
+            55
+          ],
+          "to": [
+            43,
+            53
+          ],
+          "text": "SpringBoot"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            56,
+            67
+          ],
+          "to": [
+            54,
+            65
+          ],
+          "text": "SpringCloud"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            71,
+            75
+          ],
+          "to": [
+            70,
+            74
+          ],
+          "text": "缓存技术"
+        },
+        {
+          "i": 8,
+          "action": "snapped",
+          "from": [
+            76,
+            80
+          ],
+          "to": [
+            75,
+            79
+          ],
+          "text": "并发控制"
+        },
+        {
+          "i": 9,
+          "action": "snapped",
+          "from": [
+            81,
+            85
+          ],
+          "to": [
+            80,
+            84
+          ],
+          "text": "消息通讯"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01331\",\"spans\":[{\"start\":6,\"end\":12,\"text\":\"售前、售中技术\",\"label\":\"S\"},{\"start\":13,\"end\":19,\"text\":\"方案咨询服务\",\"label\":\"S\"},{\"start\":25,\"end\":31,\"text\":\"技术支持响应\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取售前售中技术支持、方案咨询及技术支持响应等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01332\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为平台活跃度和下载量考核指标，属于结果或绩效考核内容，不抽取。\",\"issues\":[]},{\"id\":\"sp10k-01333\",\"spans\":[{\"start\":1,\"end\":6,\"text\":\"自主独立完成各项工作\",\"label\":\"T\"},{\"start\":12,\"end\":16,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":17,\"end\":21,\"text\":\"协调能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取独立工作、沟通和协调等通用能力。\",\"issues\":[]},{\"id\":\"sp10k-01334\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"财务制度\",\"label\":\"K\"},{\"start\":12,\"end\":19,\"text\":\"业务的具体流程\",\"label\":\"K\"},{\"start\":22,\"end\":29,\"text\":\"税法的相关规定\",\"label\":\"K\"},{\"start\":32,\"end\":36,\"text\":\"财务软件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"财务制度、业务流程和税法规定属于领域知识，财务软件属于岗位工具。\",\"issues\":[]},{\"id\":\"sp10k-01335\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"电话维修\",\"label\":\"S\"},{\"start\":7,\"end\":14,\"text\":\"会议音响设备维护\",\"label\":\"S\"},{\"start\":15,\"end\":22,\"text\":\"监控系统的维护\",\"label\":\"S\"},{\"start\":23,\"end\":29,\"text\":\"电脑、打印机等设备\",\"label\":\"K\"},{\"start\":29,\"end\":31,\"text\":\"安装\",\"label\":\"S\"},{\"start\":32,\"end\":34,\"text\":\"配置\",\"label\":\"S\"},{\"start\":35,\"end\":37,\"text\":\"调试\",\"label\":\"S\"},{\"start\":38,\"end\":42,\"text\":\"故障排查\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取设备维修维护、设备安装配置调试及故障排查等职业活动；设备对象单独作为领域实体。\",\"issues\":[]},{\"id\":\"sp10k-01336\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"各类软件故障的排除和恢复\",\"label\":\"S\"},{\"start\":11,\"end\":17,\"text\":\"系统软件升级\",\"label\":\"S\"},{\"start\":18,\"end\":20,\"text\":\"优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取软件故障排除恢复、软件升级和优化等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01337\",\"spans\":[{\"start\":5,\"end\":13,\"text\":\"shell脚本编写\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"Shell脚本编写是可执行技术活动。\",\"issues\":[]},{\"id\":\"sp10k-01338\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"绩效管理\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"团队激励\",\"label\":\"T\"},{\"start\":16,\"end\":20,\"text\":\"培养能力\",\"label\":\"T\"},{\"start\":21,\"end\":27,\"text\":\"判断和决策能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取绩效管理、团队激励培养以及判断决策等管理与通用能力。\",\"issues\":[]},{\"id\":\"sp10k-01339\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"Nginx\",\"label\":\"S\"},{\"start\":8,\"end\":13,\"text\":\"Redis\",\"label\":\"S\"},{\"start\":14,\"end\":23,\"text\":\"Memcached\",\"label\":\"S\"},{\"start\":24,\"end\":28,\"text\":\"Solr\",\"label\":\"S\"},{\"start\":29,\"end\":42,\"text\":\"ElasticSearch\",\"label\":\"S\"},{\"start\":43,\"end\":49,\"text\":\"Oracle\",\"label\":\"S\"},{\"start\":50,\"end\":55,\"text\":\"Mysql\",\"label\":\"S\"},{\"start\":63,\"end\":65,\"text\":\"安装\",\"label\":\"S\"},{\"start\":66,\"end\":68,\"text\":\"配置\",\"label\":\"S\"},{\"start\":69,\"end\":71,\"text\":\"管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"列举的应用和数据库均处于安装、配置及管理的岗位运用语境，标为S。\",\"issues\":[]},{\"id\":\"sp10k-01340\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"Java\",\"label\":\"S\"},{\"start\":10,\"end\":19,\"text\":\"SpringMVC\",\"label\":\"S\"},{\"start\":20,\"end\":26,\"text\":\"Spring\",\"label\":\"S\"},{\"start\":27,\"end\":36,\"text\":\"Hibernate\",\"label\":\"S\"},{\"start\":37,\"end\":44,\"text\":\"MyBatis\",\"label\":\"S\"},{\"start\":45,\"end\":55,\"text\":\"SpringBoot\",\"label\":\"S\"},{\"start\":56,\"end\":67,\"text\":\"SpringCloud\",\"label\":\"S\"},{\"start\":71,\"end\":75,\"text\":\"缓存技术\",\"label\":\"K\"},{\"start\":76,\"end\":80,\"text\":\"并发控制\",\"label\":\"S\"},{\"start\":81,\"end\":85,\"text\":\"消息通讯\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"Java及框架处于开发工具运用语境；缓存技术为概括技术知识，并发控制和消息通讯为可执行技术活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01331",
+        "spans": [
+          {
+            "start": 7,
+            "end": 14,
+            "text": "售前、售中技术",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "方案咨询服务",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "text": "技术支持响应",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取售前售中技术支持、方案咨询及技术支持响应等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01332",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为平台活跃度和下载量考核指标，属于结果或绩效考核内容，不抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01333",
+        "spans": [
+          {
+            "start": 1,
+            "end": 11,
+            "text": "自主独立完成各项工作",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "协调能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取独立工作、沟通和协调等通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01334",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "财务制度",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 20,
+            "text": "业务的具体流程",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 30,
+            "text": "税法的相关规定",
+            "label": "K"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "text": "财务软件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "财务制度、业务流程和税法规定属于领域知识，财务软件属于岗位工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01335",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "电话维修",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 15,
+            "text": "会议音响设备维护",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "text": "监控系统的维护",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 33,
+            "text": "电脑、打印机等设备",
+            "label": "K"
+          },
+          {
+            "start": 35,
+            "end": 37,
+            "text": "安装",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 40,
+            "text": "配置",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 43,
+            "text": "调试",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 48,
+            "text": "故障排查",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取设备维修维护、设备安装配置调试及故障排查等职业活动；设备对象单独作为领域实体。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01336",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "各类软件故障的排除和恢复",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "系统软件升级",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "text": "优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取软件故障排除恢复、软件升级和优化等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01337",
+        "spans": [
+          {
+            "start": 5,
+            "end": 14,
+            "text": "shell脚本编写",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Shell脚本编写是可执行技术活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01338",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "绩效管理",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "团队激励",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "培养能力",
+            "label": "T"
+          },
+          {
+            "start": 23,
+            "end": 30,
+            "text": "判断和决策能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取绩效管理、团队激励培养以及判断决策等管理与通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01339",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "Nginx",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "text": "Redis",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 23,
+            "text": "Memcached",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "Solr",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 42,
+            "text": "ElasticSearch",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 49,
+            "text": "Oracle",
+            "label": "S"
+          },
+          {
+            "start": 50,
+            "end": 55,
+            "text": "Mysql",
+            "label": "S"
+          },
+          {
+            "start": 61,
+            "end": 63,
+            "text": "安装",
+            "label": "S"
+          },
+          {
+            "start": 64,
+            "end": 66,
+            "text": "配置",
+            "label": "S"
+          },
+          {
+            "start": 67,
+            "end": 69,
+            "text": "管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "列举的应用和数据库均处于安装、配置及管理的岗位运用语境，标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01340",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "Java",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 17,
+            "text": "SpringMVC",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "text": "Spring",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 34,
+            "text": "Hibernate",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 42,
+            "text": "MyBatis",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 53,
+            "text": "SpringBoot",
+            "label": "S"
+          },
+          {
+            "start": 54,
+            "end": 65,
+            "text": "SpringCloud",
+            "label": "S"
+          },
+          {
+            "start": 70,
+            "end": 74,
+            "text": "缓存技术",
+            "label": "K"
+          },
+          {
+            "start": 75,
+            "end": 79,
+            "text": "并发控制",
+            "label": "S"
+          },
+          {
+            "start": 80,
+            "end": 84,
+            "text": "消息通讯",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Java及框架处于开发工具运用语境；缓存技术为概括技术知识，并发控制和消息通讯为可执行技术活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 134,
+  "ids": [
+    "sp10k-01331",
+    "sp10k-01332",
+    "sp10k-01333",
+    "sp10k-01334",
+    "sp10k-01335",
+    "sp10k-01336",
+    "sp10k-01337",
+    "sp10k-01338",
+    "sp10k-01339",
+    "sp10k-01340"
+  ],
+  "at": "2026-09-13T15:48:14.642939+00:00"
+}

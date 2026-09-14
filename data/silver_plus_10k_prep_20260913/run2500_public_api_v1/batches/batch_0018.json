@@ -1,0 +1,424 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 35.64,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5073,
+    "completion_tokens": 1315,
+    "total_tokens": 6388,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5073,
+    "output_tokens": 1315,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00171",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            4,
+            8
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "品行端正"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            8,
+            14
+          ],
+          "to": [
+            10,
+            16
+          ],
+          "text": "热爱教育事业"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            14,
+            22
+          ],
+          "to": [
+            19,
+            26
+          ],
+          "text": "良好的职业道德"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00173",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            5,
+            16
+          ],
+          "to": [
+            5,
+            15
+          ],
+          "text": "Kubernetes"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            21
+          ],
+          "to": [
+            16,
+            20
+          ],
+          "text": "CICD"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            22,
+            31
+          ],
+          "to": [
+            21,
+            31
+          ],
+          "text": "Serverless"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            34,
+            36
+          ],
+          "to": [
+            35,
+            37
+          ],
+          "text": "架构"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00175",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            8
+          ],
+          "to": [
+            4,
+            6
+          ],
+          "text": "帆软"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            16
+          ],
+          "to": [
+            7,
+            14
+          ],
+          "text": "Tableau"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00176",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            17,
+            21
+          ],
+          "to": [
+            21,
+            25
+          ],
+          "text": "从业资格"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00178",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            17
+          ],
+          "to": [
+            4,
+            12
+          ],
+          "text": "应用系统日常运维"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00179",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            13,
+            17
+          ],
+          "to": [
+            7,
+            11
+          ],
+          "text": "学生干部"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            18,
+            30
+          ],
+          "to": [
+            12,
+            23
+          ],
+          "text": "熟练使用AutoCAD"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00171\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"遵纪守法\",\"label\":\"T\"},{\"start\":4,\"end\":8,\"text\":\"品行端正\",\"label\":\"T\"},{\"start\":8,\"end\":14,\"text\":\"热爱教育事业\",\"label\":\"T\"},{\"start\":14,\"end\":22,\"text\":\"良好的职业道德\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"候选人应具备守法、品行、职业热情和职业道德等通用素质。\",\"issues\":[]},{\"id\":\"sp10k-00172\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为户籍、落户、就业手续及留学回国时间和学历学位等报考程序或资格条件，未形成可标注的能力、知识或具体资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00173\",\"spans\":[{\"start\":2,\"end\":4,\"text\":\"容器\",\"label\":\"S\"},{\"start\":5,\"end\":16,\"text\":\"Kubernetes\",\"label\":\"S\"},{\"start\":17,\"end\":21,\"text\":\"CICD\",\"label\":\"S\"},{\"start\":22,\"end\":31,\"text\":\"Serverless\",\"label\":\"S\"},{\"start\":34,\"end\":36,\"text\":\"架构\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"列举候选人应熟悉的容器及相关技术工具；“架构”为领域架构知识概念。\",\"issues\":[]},{\"id\":\"sp10k-00174\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为综合素质评价的考核方式、评价要素和考核对象说明，不是直接提出候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00175\",\"spans\":[{\"start\":6,\"end\":8,\"text\":\"帆软\",\"label\":\"S\"},{\"start\":9,\"end\":16,\"text\":\"Tableau\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"帆软和Tableau在报表开发工具语境中作为岗位工具使用。\",\"issues\":[]},{\"id\":\"sp10k-00176\",\"spans\":[{\"start\":17,\"end\":21,\"text\":\"从业资格\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"“从业资格”为候选人资格要求；学历、学位和专业在此处仅作泛化报考条件，未具体化。\",\"issues\":[]},{\"id\":\"sp10k-00177\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为复审材料验证的应聘程序及放弃后果，不是能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00178\",\"spans\":[{\"start\":9,\"end\":17,\"text\":\"应用系统日常运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"日常运维是候选人负责执行的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00179\",\"spans\":[{\"start\":13,\"end\":17,\"text\":\"学生干部\",\"label\":\"K\"},{\"start\":18,\"end\":30,\"text\":\"熟练使用AutoCAD\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学生干部作为经历或资格背景提及；AutoCAD为岗位工具使用要求。管理经验泛化且驾照属于非司机岗驾照，不标。\",\"issues\":[]},{\"id\":\"sp10k-00180\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为公司支持合作及生态系统宣传，不是候选人能力、知识或资格要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00171",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "遵纪守法",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "品行端正",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "热爱教育事业",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "text": "良好的职业道德",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "候选人应具备守法、品行、职业热情和职业道德等通用素质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00172",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为户籍、落户、就业手续及留学回国时间和学历学位等报考程序或资格条件，未形成可标注的能力、知识或具体资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00173",
+        "spans": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "容器",
+            "label": "S"
+          },
+          {
+            "start": 5,
+            "end": 15,
+            "text": "Kubernetes",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "CICD",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 31,
+            "text": "Serverless",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 37,
+            "text": "架构",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "列举候选人应熟悉的容器及相关技术工具；“架构”为领域架构知识概念。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00174",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为综合素质评价的考核方式、评价要素和考核对象说明，不是直接提出候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00175",
+        "spans": [
+          {
+            "start": 4,
+            "end": 6,
+            "text": "帆软",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 14,
+            "text": "Tableau",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "帆软和Tableau在报表开发工具语境中作为岗位工具使用。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00176",
+        "spans": [
+          {
+            "start": 21,
+            "end": 25,
+            "text": "从业资格",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "“从业资格”为候选人资格要求；学历、学位和专业在此处仅作泛化报考条件，未具体化。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00177",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为复审材料验证的应聘程序及放弃后果，不是能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00178",
+        "spans": [
+          {
+            "start": 4,
+            "end": 12,
+            "text": "应用系统日常运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "日常运维是候选人负责执行的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00179",
+        "spans": [
+          {
+            "start": 7,
+            "end": 11,
+            "text": "学生干部",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 23,
+            "text": "熟练使用AutoCAD",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学生干部作为经历或资格背景提及；AutoCAD为岗位工具使用要求。管理经验泛化且驾照属于非司机岗驾照，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00180",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为公司支持合作及生态系统宣传，不是候选人能力、知识或资格要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 18,
+  "ids": [
+    "sp10k-00171",
+    "sp10k-00172",
+    "sp10k-00173",
+    "sp10k-00174",
+    "sp10k-00175",
+    "sp10k-00176",
+    "sp10k-00177",
+    "sp10k-00178",
+    "sp10k-00179",
+    "sp10k-00180"
+  ],
+  "at": "2026-09-13T14:06:49.457287+00:00"
+}

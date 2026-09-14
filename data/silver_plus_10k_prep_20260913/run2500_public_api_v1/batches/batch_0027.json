@@ -1,0 +1,428 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 52.855,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5070,
+    "completion_tokens": 2211,
+    "total_tokens": 7281,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1274
+    },
+    "input_tokens": 5070,
+    "output_tokens": 2211,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00261",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            9,
+            14
+          ],
+          "text": "工作主动性"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            21,
+            25
+          ],
+          "to": [
+            21,
+            24
+          ],
+          "text": "责任心"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00263",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            24,
+            29
+          ],
+          "to": [
+            25,
+            30
+          ],
+          "text": "Azure"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            30,
+            33
+          ],
+          "to": [
+            31,
+            34
+          ],
+          "text": "阿里云"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            40,
+            48
+          ],
+          "to": [
+            41,
+            49
+          ],
+          "text": "1线运维技术支持"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00264",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            38,
+            43
+          ],
+          "to": [
+            38,
+            45
+          ],
+          "text": "硕士研究生学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00266",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            19,
+            24
+          ],
+          "to": [
+            19,
+            25
+          ],
+          "text": "团队合作精神"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            40,
+            43
+          ],
+          "to": [
+            40,
+            44
+          ],
+          "text": "自学能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00267",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            21
+          ],
+          "to": [
+            4,
+            21
+          ],
+          "text": "特气输送系统／化学品供液的更换作业"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00269",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            19
+          ],
+          "to": [
+            11,
+            20
+          ],
+          "text": "基本的开发测试流程"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00261\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"工作主动性\",\"label\":\"T\"},{\"start\":16,\"end\":20,\"text\":\"耐心细致\",\"label\":\"T\"},{\"start\":21,\"end\":25,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":28,\"end\":37,\"text\":\"独立解决问题的能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学习、主动性、耐心细致、责任心及独立解决问题等通用能力与特质。\",\"issues\":[]},{\"id\":\"sp10k-00262\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"新型运维技术调研\",\"label\":\"S\"},{\"start\":11,\"end\":13,\"text\":\"引进\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行运维技术调研和引进活动；提升团队技术水平属于结果表述，不标。\",\"issues\":[]},{\"id\":\"sp10k-00263\",\"spans\":[{\"start\":1,\"end\":12,\"text\":\"计算机相关专业本科以上\",\"label\":\"K\"},{\"start\":24,\"end\":29,\"text\":\"Azure\",\"label\":\"S\"},{\"start\":30,\"end\":33,\"text\":\"阿里云\",\"label\":\"S\"},{\"start\":40,\"end\":48,\"text\":\"1线运维技术支持\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历资格、公有云工具及一线运维技术支持活动；年限和经验后缀不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00264\",\"spans\":[{\"start\":27,\"end\":37,\"text\":\"烹饪类本科及以上学历\",\"label\":\"K\"},{\"start\":38,\"end\":43,\"text\":\"硕士研究生学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确学历资格；相关从业经验为泛化经验且无具体活动或领域，不标。\",\"issues\":[]},{\"id\":\"sp10k-00265\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为聘用资格放弃、取消及递补等招聘行政流程，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00266\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"服务意识\",\"label\":\"T\"},{\"start\":12,\"end\":15,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":19,\"end\":24,\"text\":\"团队合作精神\",\"label\":\"T\"},{\"start\":26,\"end\":36,\"text\":\"能够在一定压力下工作\",\"label\":\"T\"},{\"start\":40,\"end\":43,\"text\":\"自学能力\",\"label\":\"T\"},{\"start\":45,\"end\":54,\"text\":\"独立解决问题的能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取服务意识、责任心、团队合作、抗压工作、自学及独立解决问题等通用能力与特质。\",\"issues\":[]},{\"id\":\"sp10k-00267\",\"spans\":[{\"start\":2,\"end\":21,\"text\":\"特气输送系统／化学品供液的更换作业\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行特气输送系统或化学品供液的更换作业；稳压供应为作业目标，不标。\",\"issues\":[]},{\"id\":\"sp10k-00268\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为医院招聘公告及招聘人数说明，不含候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00269\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"软件测试相关知识\",\"label\":\"K\"},{\"start\":11,\"end\":19,\"text\":\"基本的开发测试流程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取软件测试知识及开发测试流程知识要求。\",\"issues\":[]},{\"id\":\"sp10k-00270\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为考试与资格复审流程标题，不含具体候选人能力、知识或资格要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00261",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 14,
+            "text": "工作主动性",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "耐心细致",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 24,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 28,
+            "end": 37,
+            "text": "独立解决问题的能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学习、主动性、耐心细致、责任心及独立解决问题等通用能力与特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00262",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "新型运维技术调研",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 13,
+            "text": "引进",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行运维技术调研和引进活动；提升团队技术水平属于结果表述，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00263",
+        "spans": [
+          {
+            "start": 1,
+            "end": 12,
+            "text": "计算机相关专业本科以上",
+            "label": "K"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "text": "Azure",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 34,
+            "text": "阿里云",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 49,
+            "text": "1线运维技术支持",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历资格、公有云工具及一线运维技术支持活动；年限和经验后缀不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00264",
+        "spans": [
+          {
+            "start": 27,
+            "end": 37,
+            "text": "烹饪类本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 38,
+            "end": 45,
+            "text": "硕士研究生学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确学历资格；相关从业经验为泛化经验且无具体活动或领域，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00265",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为聘用资格放弃、取消及递补等招聘行政流程，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00266",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "服务意识",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "团队合作精神",
+            "label": "T"
+          },
+          {
+            "start": 26,
+            "end": 36,
+            "text": "能够在一定压力下工作",
+            "label": "T"
+          },
+          {
+            "start": 40,
+            "end": 44,
+            "text": "自学能力",
+            "label": "T"
+          },
+          {
+            "start": 45,
+            "end": 54,
+            "text": "独立解决问题的能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取服务意识、责任心、团队合作、抗压工作、自学及独立解决问题等通用能力与特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00267",
+        "spans": [
+          {
+            "start": 4,
+            "end": 21,
+            "text": "特气输送系统／化学品供液的更换作业",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行特气输送系统或化学品供液的更换作业；稳压供应为作业目标，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00268",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为医院招聘公告及招聘人数说明，不含候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00269",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "软件测试相关知识",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 20,
+            "text": "基本的开发测试流程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取软件测试知识及开发测试流程知识要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00270",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为考试与资格复审流程标题，不含具体候选人能力、知识或资格要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 27,
+  "ids": [
+    "sp10k-00261",
+    "sp10k-00262",
+    "sp10k-00263",
+    "sp10k-00264",
+    "sp10k-00265",
+    "sp10k-00266",
+    "sp10k-00267",
+    "sp10k-00268",
+    "sp10k-00269",
+    "sp10k-00270"
+  ],
+  "at": "2026-09-13T14:13:43.926690+00:00"
+}

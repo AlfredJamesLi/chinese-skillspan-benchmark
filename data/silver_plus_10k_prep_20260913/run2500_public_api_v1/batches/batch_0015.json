@@ -1,0 +1,330 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 60.632,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5019,
+    "completion_tokens": 1922,
+    "total_tokens": 6941,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 730
+    },
+    "input_tokens": 5019,
+    "output_tokens": 1922,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00141\",\"spans\":[{\"start\":2,\"end\":4,\"text\":\"策划\",\"label\":\"S\"},{\"start\":5,\"end\":9,\"text\":\"写作能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"策划与写作是可独立识别的职业能力，共享能力限定可由局部语境理解。\",\"issues\":[]},{\"id\":\"sp10k-00142\",\"spans\":[{\"start\":24,\"end\":38,\"text\":\"挖掘较有实力的科技公司或平台\",\"label\":\"S\"},{\"start\":38,\"end\":44,\"text\":\"达成生态合作\",\"label\":\"S\"},{\"start\":52,\"end\":56,\"text\":\"共建产品\",\"label\":\"S\"},{\"start\":57,\"end\":61,\"text\":\"联合营销\",\"label\":\"S\"},{\"start\":62,\"end\":66,\"text\":\"市场共享\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取合作拓展及其具体职业活动；行业名称仅限定拓展对象，并非独立的行业知识或背景要求。\",\"issues\":[]},{\"id\":\"sp10k-00143\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"敏捷开发相关理念\",\"label\":\"K\"},{\"start\":13,\"end\":22,\"text\":\"Scrum开发过程\",\"label\":\"K\"},{\"start\":23,\"end\":27,\"text\":\"主要活动\",\"label\":\"K\"}],\"status\":\"adjudication_required\",\"note\":\"理念、开发过程及其主要活动处于概括性知识要求语境；遮蔽片段暂不进入主层。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"***实践\",\"alternatives\":[\"属于敏捷开发实践知识要求\",\"信息缺失，无法确认完整能力提及\"],\"reason\":\"星号遮蔽了实践的限定内容，缺少确认完整知识或方法要求所需的原文。\"}]},{\"id\":\"sp10k-00144\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":8,\"end\":12,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":15,\"end\":19,\"text\":\"积极主动\",\"label\":\"T\"},{\"start\":25,\"end\":28,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":29,\"end\":35,\"text\":\"团队合作精神\",\"label\":\"T\"},{\"start\":40,\"end\":44,\"text\":\"抗压能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用能力及工作特质，去除程度修饰；出差适应要求属于工作安排，不作为技能提及。\",\"issues\":[]},{\"id\":\"sp10k-00145\",\"spans\":[{\"start\":5,\"end\":7,\"text\":\"软件\",\"label\":\"K\"},{\"start\":8,\"end\":10,\"text\":\"硬件\",\"label\":\"K\"},{\"start\":11,\"end\":19,\"text\":\"网络系统专业知识\",\"label\":\"K\"},{\"start\":23,\"end\":29,\"text\":\"实际动手能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"专业知识限定并列的软件、硬件和网络系统；相应的实际动手能力明确绑定这些技术领域。\",\"issues\":[]},{\"id\":\"sp10k-00146\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"网站架构\",\"label\":\"K\"},{\"start\":11,\"end\":15,\"text\":\"负载均衡\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"双机热备\",\"label\":\"S\"},{\"start\":21,\"end\":25,\"text\":\"系统部署\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"故障转移\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"网站架构为知识要求；负载均衡、双机热备及部署、故障转移受局部实践经验要求限定，标为S。\",\"issues\":[]},{\"id\":\"sp10k-00147\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅泛指应满足岗位学历条件，未提供可抽取的具体学历或完整资格名称。\",\"issues\":[]},{\"id\":\"sp10k-00148\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"系统性能监控\",\"label\":\"S\"},{\"start\":9,\"end\":15,\"text\":\"性能诊断能力\",\"label\":\"S\"},{\"start\":24,\"end\":31,\"text\":\"监控和诊断工具\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"性能监控和诊断是领域绑定能力；工具处于明确运用语境，保留共享中心词形成完整提及。\",\"issues\":[]},{\"id\":\"sp10k-00149\",\"spans\":[{\"start\":16,\"end\":24,\"text\":\"语文教师资格证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"语文教师资格证书为非语言考试类职业资格，不因包含语文学科名称而标为L。\",\"issues\":[]},{\"id\":\"sp10k-00150\",\"spans\":[],\"status\":\"adjudication_required\",\"note\":\"仅有测试标题，尚不能确认是招聘考核流程还是候选人能力要求。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"课堂教学能力测试\",\"alternatives\":[\"招聘考核流程，不标\",\"明确要求课堂教学能力时抽取该能力\"],\"reason\":\"缺少测试标题的上下文，无法判断其是否仅描述应聘考核环节。\"}]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00141",
+        "spans": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "策划",
+            "label": "S"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "写作能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "策划与写作是可独立识别的职业能力，共享能力限定可由局部语境理解。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00142",
+        "spans": [
+          {
+            "start": 24,
+            "end": 38,
+            "text": "挖掘较有实力的科技公司或平台",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "text": "达成生态合作",
+            "label": "S"
+          },
+          {
+            "start": 52,
+            "end": 56,
+            "text": "共建产品",
+            "label": "S"
+          },
+          {
+            "start": 57,
+            "end": 61,
+            "text": "联合营销",
+            "label": "S"
+          },
+          {
+            "start": 62,
+            "end": 66,
+            "text": "市场共享",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取合作拓展及其具体职业活动；行业名称仅限定拓展对象，并非独立的行业知识或背景要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00143",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "敏捷开发相关理念",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 22,
+            "text": "Scrum开发过程",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "主要活动",
+            "label": "K"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "理念、开发过程及其主要活动处于概括性知识要求语境；遮蔽片段暂不进入主层。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "***实践",
+            "alternatives": [
+              "属于敏捷开发实践知识要求",
+              "信息缺失，无法确认完整能力提及"
+            ],
+            "reason": "星号遮蔽了实践的限定内容，缺少确认完整知识或方法要求所需的原文。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00144",
+        "spans": [
+          {
+            "start": 3,
+            "end": 7,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "积极主动",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 28,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "团队合作精神",
+            "label": "T"
+          },
+          {
+            "start": 40,
+            "end": 44,
+            "text": "抗压能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用能力及工作特质，去除程度修饰；出差适应要求属于工作安排，不作为技能提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00145",
+        "spans": [
+          {
+            "start": 5,
+            "end": 7,
+            "text": "软件",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "硬件",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 19,
+            "text": "网络系统专业知识",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "text": "实际动手能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业知识限定并列的软件、硬件和网络系统；相应的实际动手能力明确绑定这些技术领域。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00146",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "网站架构",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "负载均衡",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "双机热备",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "系统部署",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "故障转移",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "网站架构为知识要求；负载均衡、双机热备及部署、故障转移受局部实践经验要求限定，标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00147",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅泛指应满足岗位学历条件，未提供可抽取的具体学历或完整资格名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00148",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "系统性能监控",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "性能诊断能力",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 31,
+            "text": "监控和诊断工具",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "性能监控和诊断是领域绑定能力；工具处于明确运用语境，保留共享中心词形成完整提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00149",
+        "spans": [
+          {
+            "start": 16,
+            "end": 24,
+            "text": "语文教师资格证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "语文教师资格证书为非语言考试类职业资格，不因包含语文学科名称而标为L。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00150",
+        "spans": [],
+        "status": "adjudication_required",
+        "note": "仅有测试标题，尚不能确认是招聘考核流程还是候选人能力要求。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "课堂教学能力测试",
+            "alternatives": [
+              "招聘考核流程，不标",
+              "明确要求课堂教学能力时抽取该能力"
+            ],
+            "reason": "缺少测试标题的上下文，无法判断其是否仅描述应聘考核环节。"
+          }
+        ]
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 15,
+  "ids": [
+    "sp10k-00141",
+    "sp10k-00142",
+    "sp10k-00143",
+    "sp10k-00144",
+    "sp10k-00145",
+    "sp10k-00146",
+    "sp10k-00147",
+    "sp10k-00148",
+    "sp10k-00149",
+    "sp10k-00150"
+  ],
+  "at": "2026-09-13T14:04:58.068575+00:00"
+}

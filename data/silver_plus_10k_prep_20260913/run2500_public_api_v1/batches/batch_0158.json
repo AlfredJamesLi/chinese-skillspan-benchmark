@@ -1,0 +1,266 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 44.035,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5100,
+    "completion_tokens": 1380,
+    "total_tokens": 6480,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5100,
+    "output_tokens": 1380,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01580",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            41,
+            70
+          ],
+          "to": [
+            41,
+            71
+          ],
+          "text": "撰写各类稿件、策划方案，对外使用的PPT方案，软文，新闻材料"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01571\",\"spans\":[{\"start\":21,\"end\":26,\"text\":\"本科及以上\",\"label\":\"K\"},{\"start\":28,\"end\":33,\"text\":\"分子生物学\",\"label\":\"K\"},{\"start\":34,\"end\":37,\"text\":\"免疫学\",\"label\":\"K\"},{\"start\":38,\"end\":42,\"text\":\"分析化学\",\"label\":\"K\"},{\"start\":43,\"end\":45,\"text\":\"环境\",\"label\":\"K\"},{\"start\":46,\"end\":48,\"text\":\"药学\",\"label\":\"K\"},{\"start\":77,\"end\":82,\"text\":\"本科及以上\",\"label\":\"K\"},{\"start\":82,\"end\":87,\"text\":\"分子生物学\",\"label\":\"K\"},{\"start\":88,\"end\":91,\"text\":\"免疫学\",\"label\":\"K\"},{\"start\":92,\"end\":96,\"text\":\"分析化学\",\"label\":\"K\"},{\"start\":97,\"end\":99,\"text\":\"环境\",\"label\":\"K\"},{\"start\":100,\"end\":102,\"text\":\"药学\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历及明确列出的专业要求标K；重复出现的要求分别保留。职位、科室、地点与招聘人数不标。\",\"issues\":[]},{\"id\":\"sp10k-01572\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名材料提交及受理要求，不属于能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01573\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"生产数据库在线运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库运维为职业活动；保证稳定高效运行是结果要求，不另标。\",\"issues\":[]},{\"id\":\"sp10k-01574\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"医院现有人员与职称构成介绍，不是候选人资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01575\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"数据库的性能优化\",\"label\":\"S\"},{\"start\":11,\"end\":20,\"text\":\"使用新技术和新架构\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"性能优化及技术架构使用为明确职业动作；满足业务需求为目的，不另标。\",\"issues\":[]},{\"id\":\"sp10k-01576\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名流程及材料真实性要求，没有具体资格或职业能力提及。\",\"issues\":[]},{\"id\":\"sp10k-01577\",\"spans\":[{\"start\":9,\"end\":23,\"text\":\"主机、网络及服务器的日常运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"并列对象共享日常运维动作，保留完整职业活动跨度。\",\"issues\":[]},{\"id\":\"sp10k-01578\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"描述应聘考试与面试流程，并未提出具体技能要求。\",\"issues\":[]},{\"id\":\"sp10k-01579\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅要求提供证明材料原件，未指明具体资格。\",\"issues\":[]},{\"id\":\"sp10k-01580\",\"spans\":[{\"start\":6,\"end\":25,\"text\":\"宣传资料、业务案例、VI资料的设计美化\",\"label\":\"S\"},{\"start\":30,\"end\":37,\"text\":\"文稿文案的编写\",\"label\":\"S\"},{\"start\":41,\"end\":70,\"text\":\"撰写各类稿件、策划方案，对外使用的PPT方案，软文，新闻材料\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"设计美化与文案编写为独立职业活动，分别标注；撰写的并列对象共享动作，保留完整跨度。PPT方案是撰写对象，不另嵌工具标签。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01571",
+        "spans": [
+          {
+            "start": 21,
+            "end": 26,
+            "text": "本科及以上",
+            "label": "K"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "text": "分子生物学",
+            "label": "K"
+          },
+          {
+            "start": 34,
+            "end": 37,
+            "text": "免疫学",
+            "label": "K"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "text": "分析化学",
+            "label": "K"
+          },
+          {
+            "start": 43,
+            "end": 45,
+            "text": "环境",
+            "label": "K"
+          },
+          {
+            "start": 46,
+            "end": 48,
+            "text": "药学",
+            "label": "K"
+          },
+          {
+            "start": 77,
+            "end": 82,
+            "text": "本科及以上",
+            "label": "K"
+          },
+          {
+            "start": 82,
+            "end": 87,
+            "text": "分子生物学",
+            "label": "K"
+          },
+          {
+            "start": 88,
+            "end": 91,
+            "text": "免疫学",
+            "label": "K"
+          },
+          {
+            "start": 92,
+            "end": 96,
+            "text": "分析化学",
+            "label": "K"
+          },
+          {
+            "start": 97,
+            "end": 99,
+            "text": "环境",
+            "label": "K"
+          },
+          {
+            "start": 100,
+            "end": 102,
+            "text": "药学",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历及明确列出的专业要求标K；重复出现的要求分别保留。职位、科室、地点与招聘人数不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01572",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名材料提交及受理要求，不属于能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01573",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "生产数据库在线运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库运维为职业活动；保证稳定高效运行是结果要求，不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01574",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "医院现有人员与职称构成介绍，不是候选人资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01575",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "数据库的性能优化",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 20,
+            "text": "使用新技术和新架构",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "性能优化及技术架构使用为明确职业动作；满足业务需求为目的，不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01576",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名流程及材料真实性要求，没有具体资格或职业能力提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01577",
+        "spans": [
+          {
+            "start": 9,
+            "end": 23,
+            "text": "主机、网络及服务器的日常运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列对象共享日常运维动作，保留完整职业活动跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01578",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "描述应聘考试与面试流程，并未提出具体技能要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01579",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅要求提供证明材料原件，未指明具体资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01580",
+        "spans": [
+          {
+            "start": 6,
+            "end": 25,
+            "text": "宣传资料、业务案例、VI资料的设计美化",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 37,
+            "text": "文稿文案的编写",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 71,
+            "text": "撰写各类稿件、策划方案，对外使用的PPT方案，软文，新闻材料",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设计美化与文案编写为独立职业活动，分别标注；撰写的并列对象共享动作，保留完整跨度。PPT方案是撰写对象，不另嵌工具标签。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 158,
+  "ids": [
+    "sp10k-01571",
+    "sp10k-01572",
+    "sp10k-01573",
+    "sp10k-01574",
+    "sp10k-01575",
+    "sp10k-01576",
+    "sp10k-01577",
+    "sp10k-01578",
+    "sp10k-01579",
+    "sp10k-01580"
+  ],
+  "at": "2026-09-13T16:16:46.624180+00:00"
+}

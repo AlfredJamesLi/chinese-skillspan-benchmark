@@ -1,0 +1,348 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 70.199,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5075,
+    "completion_tokens": 2210,
+    "total_tokens": 7285,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1034
+    },
+    "input_tokens": 5075,
+    "output_tokens": 2210,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05946\",\"spans\":[{\"start\":0,\"end\":9,\"text\":\"设备参数、程序管理\",\"label\":\"S\"},{\"start\":10,\"end\":16,\"text\":\"设备参数设定\",\"label\":\"S\"},{\"start\":18,\"end\":21,\"text\":\"SOP\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"共享管理动作的首项保留完整跨度；参数设定为职业动作，SOP为规范。末段为程序属性保证，不标。\",\"issues\":[]},{\"id\":\"sp10k-05947\",\"spans\":[{\"start\":16,\"end\":21,\"text\":\"半挂车焊接\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确执行的焊接活动；实践阶段及工序位置不另标。\",\"issues\":[]},{\"id\":\"sp10k-05948\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"工业厂房机电项目施工工艺\",\"label\":\"K\"},{\"start\":15,\"end\":17,\"text\":\"流程\",\"label\":\"K\"},{\"start\":18,\"end\":20,\"text\":\"规范\",\"label\":\"K\"},{\"start\":21,\"end\":27,\"text\":\"法律法规文件\",\"label\":\"K\"},{\"start\":28,\"end\":34,\"text\":\"监督指导施工\",\"label\":\"S\"},{\"start\":38,\"end\":48,\"text\":\"解决处理施工技术问题\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"施工工艺、流程及规范文件为知识要求；施工指导和解决明确施工技术问题为职业活动。\",\"issues\":[]},{\"id\":\"sp10k-05949\",\"spans\":[{\"start\":8,\"end\":12,\"text\":\"现场收方\",\"label\":\"S\"},{\"start\":13,\"end\":17,\"text\":\"现场签证\",\"label\":\"S\"},{\"start\":18,\"end\":26,\"text\":\"新增材料价格认价\",\"label\":\"S\"},{\"start\":27,\"end\":34,\"text\":\"进度款支付审核\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"按独立职业活动拆分；项目对下分包为共享业务语境。\",\"issues\":[]},{\"id\":\"sp10k-05950\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"系统设计能力\",\"label\":\"S\"},{\"start\":12,\"end\":18,\"text\":\"问题排查能力\",\"label\":\"T\"},{\"start\":19,\"end\":25,\"text\":\"团队协作能力\",\"label\":\"T\"},{\"start\":30,\"end\":33,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":34,\"end\":37,\"text\":\"自驱力\",\"label\":\"T\"},{\"start\":41,\"end\":45,\"text\":\"迭代交付\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"系统设计和迭代交付为职业能力；问题排查未限定具体技术或业务对象，按通用能力标注。\",\"issues\":[]},{\"id\":\"sp10k-05951\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"部门年度预算\",\"label\":\"S\"},{\"start\":18,\"end\":22,\"text\":\"成本控制\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"预算和成本控制均为明确承担的职业职能。\",\"issues\":[]},{\"id\":\"sp10k-05952\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"套料软件\",\"label\":\"S\"},{\"start\":24,\"end\":33,\"text\":\"自动+手动套料排样\",\"label\":\"S\"},{\"start\":38,\"end\":42,\"text\":\"割缝补偿\",\"label\":\"K\"},{\"start\":43,\"end\":47,\"text\":\"共边切割\",\"label\":\"K\"},{\"start\":48,\"end\":54,\"text\":\"嵌套优化原则\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"软件运用和套料排样为S；并列原则在明确规范语境下标K。下料精度、利用率及损耗目标不标。\",\"issues\":[]},{\"id\":\"sp10k-05953\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"绩效考核结果的应用\",\"label\":\"S\"},{\"start\":14,\"end\":26,\"text\":\"员工激励与晋升机制的设计\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取绩效结果应用与机制设计；后项保留共享设计动作的完整对象。\",\"issues\":[]},{\"id\":\"sp10k-05954\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"沟通表达能力\",\"label\":\"T\"},{\"start\":12,\"end\":16,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":17,\"end\":22,\"text\":\"工作责任心\",\"label\":\"T\"},{\"start\":24,\"end\":27,\"text\":\"原则性\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为通用能力或工作特质，去除程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-05955\",\"spans\":[{\"start\":3,\"end\":16,\"text\":\"绩效管理信息系统的功能优化\",\"label\":\"S\"},{\"start\":17,\"end\":21,\"text\":\"运维管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"功能优化与运维管理为独立职业活动；运维对象由局部语境承接，开头零宽字符计入索引。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05946",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "设备参数、程序管理",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "设备参数设定",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 21,
+            "text": "SOP",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "共享管理动作的首项保留完整跨度；参数设定为职业动作，SOP为规范。末段为程序属性保证，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05947",
+        "spans": [
+          {
+            "start": 16,
+            "end": 21,
+            "text": "半挂车焊接",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确执行的焊接活动；实践阶段及工序位置不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05948",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "工业厂房机电项目施工工艺",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "流程",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 20,
+            "text": "规范",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "text": "法律法规文件",
+            "label": "K"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "text": "监督指导施工",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 48,
+            "text": "解决处理施工技术问题",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "施工工艺、流程及规范文件为知识要求；施工指导和解决明确施工技术问题为职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05949",
+        "spans": [
+          {
+            "start": 8,
+            "end": 12,
+            "text": "现场收方",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "现场签证",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "text": "新增材料价格认价",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 34,
+            "text": "进度款支付审核",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "按独立职业活动拆分；项目对下分包为共享业务语境。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05950",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "系统设计能力",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "text": "问题排查能力",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "团队协作能力",
+            "label": "T"
+          },
+          {
+            "start": 30,
+            "end": 33,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 34,
+            "end": 37,
+            "text": "自驱力",
+            "label": "T"
+          },
+          {
+            "start": 41,
+            "end": 45,
+            "text": "迭代交付",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统设计和迭代交付为职业能力；问题排查未限定具体技术或业务对象，按通用能力标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05951",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "部门年度预算",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "成本控制",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "预算和成本控制均为明确承担的职业职能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05952",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "套料软件",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 33,
+            "text": "自动+手动套料排样",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "text": "割缝补偿",
+            "label": "K"
+          },
+          {
+            "start": 43,
+            "end": 47,
+            "text": "共边切割",
+            "label": "K"
+          },
+          {
+            "start": 48,
+            "end": 54,
+            "text": "嵌套优化原则",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "软件运用和套料排样为S；并列原则在明确规范语境下标K。下料精度、利用率及损耗目标不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05953",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "绩效考核结果的应用",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 26,
+            "text": "员工激励与晋升机制的设计",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取绩效结果应用与机制设计；后项保留共享设计动作的完整对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05954",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "沟通表达能力",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "text": "工作责任心",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 27,
+            "text": "原则性",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为通用能力或工作特质，去除程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05955",
+        "spans": [
+          {
+            "start": 3,
+            "end": 16,
+            "text": "绩效管理信息系统的功能优化",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "运维管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "功能优化与运维管理为独立职业活动；运维对象由局部语境承接，开头零宽字符计入索引。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 215,
+  "ids": [
+    "sp10k-05946",
+    "sp10k-05947",
+    "sp10k-05948",
+    "sp10k-05949",
+    "sp10k-05950",
+    "sp10k-05951",
+    "sp10k-05952",
+    "sp10k-05953",
+    "sp10k-05954",
+    "sp10k-05955"
+  ],
+  "at": "2026-09-13T17:13:24.116909+00:00"
+}

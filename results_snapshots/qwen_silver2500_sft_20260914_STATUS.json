@@ -1,0 +1,33 @@
+{
+  "status": "in_progress",
+  "checked_at": "2026-09-14T14:37:00Z",
+  "not_paper_main": true,
+  "not_confirmed_results": true,
+  "not_comparable_to_0.4331": true,
+  "not_comparable_to_0.5536": true,
+  "not_shared_prompt_0.5403": true,
+  "protocol": "silver_public_api_v1.0_qwen_lora_sft",
+  "metric": "silver_dev_typed_exact_f1",
+  "n_dev": 182,
+  "gold150_not_used": true,
+  "jobs": {
+    "51056": "TIMEOUT 12h (original 2-seed job)",
+    "51067": "COMPLETED seed42 resume epoch 6",
+    "51068": "RUNNING seed44 as of check",
+    "51069": "PENDING summarize after 51068"
+  },
+  "seed42": {
+    "selected_epoch": 6,
+    "silver_dev_typed_exact_f1": 0.3860869565217392,
+    "slurm": 51067
+  },
+  "seed43": {
+    "selected_epoch": 6,
+    "silver_dev_typed_exact_f1": 0.34690265486725663,
+    "slurm": 51056
+  },
+  "seed44": {
+    "status": "running",
+    "slurm": 51068
+  }
+}

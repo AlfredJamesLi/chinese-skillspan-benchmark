@@ -1,0 +1,211 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 35.801,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5065,
+    "completion_tokens": 1108,
+    "total_tokens": 6173,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 384
+    },
+    "input_tokens": 5065,
+    "output_tokens": 1108,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00331\",\"spans\":[{\"start\":3,\"end\":6,\"text\":\"责任感\",\"label\":\"T\"},{\"start\":10,\"end\":19,\"text\":\"故障分析及排除能力\",\"label\":\"S\"},{\"start\":20,\"end\":28,\"text\":\"善于在工作中学习\",\"label\":\"T\"},{\"start\":31,\"end\":37,\"text\":\"承受工作压力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"故障分析及排除为具体职业能力，保留共享对象和能力中心；责任感、工作中学习及承压为通用特质。\",\"issues\":[]},{\"id\":\"sp10k-00332\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明劳动合同、试用期薪酬及聘用考核流程，不含具体能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00333\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"政务产品研发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确要求执行的产品研发活动，去除职责触发词及泛化的工作后缀。\",\"issues\":[]},{\"id\":\"sp10k-00334\",\"spans\":[{\"start\":17,\"end\":21,\"text\":\"质量监控\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"现场检查\",\"label\":\"S\"},{\"start\":31,\"end\":36,\"text\":\"GMP规范\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"质量监控与现场检查是独立职业活动；GMP规范为岗位明确遵循的专业规范，不标确保符合这一结果性表述。\",\"issues\":[]},{\"id\":\"sp10k-00335\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为聘用考核结果处理规定，不含具体要求。\",\"issues\":[]},{\"id\":\"sp10k-00336\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"服务器\",\"label\":\"K\"},{\"start\":6,\"end\":8,\"text\":\"网络\",\"label\":\"K\"},{\"start\":9,\"end\":11,\"text\":\"存储\",\"label\":\"K\"},{\"start\":12,\"end\":15,\"text\":\"虚拟化\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"并列项处于相关技术知识要求语境，未明确工具操作或实施实践，按领域知识抽取。\",\"issues\":[]},{\"id\":\"sp10k-00337\",\"spans\":[{\"start\":7,\"end\":17,\"text\":\"硕士研究生及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"引进对象明确限定完整学历资格，去除人才等外围措辞。\",\"issues\":[]},{\"id\":\"sp10k-00338\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名信息真实性审核及取消应聘资格的行政规定。\",\"issues\":[]},{\"id\":\"sp10k-00339\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"全句说明博士研究生招聘的考试方式及成绩计算，属于应聘考试流程。\",\"issues\":[]},{\"id\":\"sp10k-00340\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅介绍招聘工作领导小组的组织构成，不是候选人能力要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00331",
+        "spans": [
+          {
+            "start": 3,
+            "end": 6,
+            "text": "责任感",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 19,
+            "text": "故障分析及排除能力",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 28,
+            "text": "善于在工作中学习",
+            "label": "T"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "text": "承受工作压力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "故障分析及排除为具体职业能力，保留共享对象和能力中心；责任感、工作中学习及承压为通用特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00332",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明劳动合同、试用期薪酬及聘用考核流程，不含具体能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00333",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "政务产品研发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确要求执行的产品研发活动，去除职责触发词及泛化的工作后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00334",
+        "spans": [
+          {
+            "start": 17,
+            "end": 21,
+            "text": "质量监控",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "现场检查",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 36,
+            "text": "GMP规范",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "质量监控与现场检查是独立职业活动；GMP规范为岗位明确遵循的专业规范，不标确保符合这一结果性表述。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00335",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为聘用考核结果处理规定，不含具体要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00336",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "服务器",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "text": "网络",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "存储",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "text": "虚拟化",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列项处于相关技术知识要求语境，未明确工具操作或实施实践，按领域知识抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00337",
+        "spans": [
+          {
+            "start": 7,
+            "end": 17,
+            "text": "硕士研究生及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "引进对象明确限定完整学历资格，去除人才等外围措辞。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00338",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名信息真实性审核及取消应聘资格的行政规定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00339",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "全句说明博士研究生招聘的考试方式及成绩计算，属于应聘考试流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00340",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅介绍招聘工作领导小组的组织构成，不是候选人能力要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 34,
+  "ids": [
+    "sp10k-00331",
+    "sp10k-00332",
+    "sp10k-00333",
+    "sp10k-00334",
+    "sp10k-00335",
+    "sp10k-00336",
+    "sp10k-00337",
+    "sp10k-00338",
+    "sp10k-00339",
+    "sp10k-00340"
+  ],
+  "at": "2026-09-13T14:19:24.642881+00:00"
+}

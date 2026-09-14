@@ -1,0 +1,215 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07871",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "策划",
+          "label": "S"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "优化",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 30,
+          "text": "产品来料、生产过程、成品检验质量提升活动的推进",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确要求执行的质量提升活动策划、优化和推进职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07872",
+      "spans": [
+        {
+          "start": 3,
+          "end": 16,
+          "text": "中英文写作、表达、阅读能力",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "中英文语言能力要求整体标注为语种能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07873",
+      "spans": [
+        {
+          "start": 23,
+          "end": 25,
+          "text": "预测",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 33,
+          "text": "制定损耗年度预算",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取预测及制定年度预算两项职业动作；产能、材料损耗实绩和材料单价为业务对象或依据。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07874",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历为明确资格要求；相关专业属于泛化专业要求，不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07875",
+      "spans": [
+        {
+          "start": 0,
+          "end": 8,
+          "text": "统招本科学历以上",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "统招本科学历以上为完整学历资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07876",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "办公软件",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "客观",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "严谨负责",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "踏实",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "敬业",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "办公软件为岗位工具使用要求；客观、严谨负责、踏实、敬业为通用特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07877",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "明确为培训赋能内容，属于公司提供的培训或发展支持，不是候选人须具备的要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07878",
+      "spans": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "本科及以上学历为完整学历资格要求；车辆、机械、自动化等相关专业背景不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07879",
+      "spans": [
+        {
+          "start": 5,
+          "end": 44,
+          "text": "至少一种实时操作系统（如FreeRTOS，μC/OS-II/III）的应用开发",
+          "label": "S"
+        },
+        {
+          "start": 47,
+          "end": 51,
+          "text": "任务调度",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "text": "中断管理",
+          "label": "S"
+        },
+        {
+          "start": 57,
+          "end": 61,
+          "text": "内存管理",
+          "label": "S"
+        },
+        {
+          "start": 62,
+          "end": 67,
+          "text": "进程间通信",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "实时操作系统应用开发及任务调度、中断管理、内存管理、进程间通信均为明确技术实践要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07880",
+      "spans": [
+        {
+          "start": 18,
+          "end": 29,
+          "text": "产品设计方案可行性分析",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "产品调研",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 43,
+          "text": "结构过程设计开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取产品预研阶段要求执行的可行性分析、产品调研和结构过程设计开发活动。",
+      "issues": []
+    }
+  ]
+}

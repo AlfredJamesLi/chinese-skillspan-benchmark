@@ -1,0 +1,187 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 34.691,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4978,
+    "completion_tokens": 1058,
+    "total_tokens": 6036,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 407
+    },
+    "input_tokens": 4978,
+    "output_tokens": 1058,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01721\",\"spans\":[{\"start\":2,\"end\":21,\"text\":\"车联网业务运营运维具体工作的组织和推进\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确的车联网运营运维组织推进职责；保留共享职业对象的完整活动短语。\",\"issues\":[]},{\"id\":\"sp10k-01722\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"系统集成项目的组织与实施\",\"label\":\"S\"},{\"start\":15,\"end\":23,\"text\":\"设备的安装、配置\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"技术支持\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取项目实施、设备操作与技术支持职责；组织与实施、安装与配置分别保留必要共享对象。\",\"issues\":[]},{\"id\":\"sp10k-01723\",\"spans\":[{\"start\":1,\"end\":9,\"text\":\"费用成本管理意识\",\"label\":\"T\"},{\"start\":13,\"end\":19,\"text\":\"成本优化能力\",\"label\":\"S\"},{\"start\":22,\"end\":30,\"text\":\"控制整体运维成本\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"管理意识为通用特质；成本优化能力与运维成本控制为明确职业能力或活动。\",\"issues\":[]},{\"id\":\"sp10k-01724\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明应聘资格复审与考核流程，不是候选人的职业能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01725\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明笔试考核安排，专业知识未指明具体领域，不构成独立能力提及。\",\"issues\":[]},{\"id\":\"sp10k-01726\",\"spans\":[{\"start\":13,\"end\":21,\"text\":\"建新的实时数据库\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的数据库建设职责；市场组要求及国家范围为任务背景。\",\"issues\":[]},{\"id\":\"sp10k-01727\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名材料准备及资格复审查验流程。\",\"issues\":[]},{\"id\":\"sp10k-01728\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明考察不合格的聘用处理结果，未提出具体能力或资格。\",\"issues\":[]},{\"id\":\"sp10k-01729\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明资格复审时间、地点和名单的公示渠道。\",\"issues\":[]},{\"id\":\"sp10k-01730\",\"spans\":[{\"start\":13,\"end\":30,\"text\":\"中等职业学校或高级中学教师资格证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求非语言职业资格；并列资格共享教师资格证书中心语，保留完整连续提及。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01721",
+        "spans": [
+          {
+            "start": 2,
+            "end": 21,
+            "text": "车联网业务运营运维具体工作的组织和推进",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确的车联网运营运维组织推进职责；保留共享职业对象的完整活动短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01722",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "系统集成项目的组织与实施",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "text": "设备的安装、配置",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "技术支持",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取项目实施、设备操作与技术支持职责；组织与实施、安装与配置分别保留必要共享对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01723",
+        "spans": [
+          {
+            "start": 1,
+            "end": 9,
+            "text": "费用成本管理意识",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "成本优化能力",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "text": "控制整体运维成本",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "管理意识为通用特质；成本优化能力与运维成本控制为明确职业能力或活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01724",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明应聘资格复审与考核流程，不是候选人的职业能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01725",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明笔试考核安排，专业知识未指明具体领域，不构成独立能力提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01726",
+        "spans": [
+          {
+            "start": 13,
+            "end": 21,
+            "text": "建新的实时数据库",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的数据库建设职责；市场组要求及国家范围为任务背景。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01727",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名材料准备及资格复审查验流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01728",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明考察不合格的聘用处理结果，未提出具体能力或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01729",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明资格复审时间、地点和名单的公示渠道。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01730",
+        "spans": [
+          {
+            "start": 13,
+            "end": 30,
+            "text": "中等职业学校或高级中学教师资格证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求非语言职业资格；并列资格共享教师资格证书中心语，保留完整连续提及。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 173,
+  "ids": [
+    "sp10k-01721",
+    "sp10k-01722",
+    "sp10k-01723",
+    "sp10k-01724",
+    "sp10k-01725",
+    "sp10k-01726",
+    "sp10k-01727",
+    "sp10k-01728",
+    "sp10k-01729",
+    "sp10k-01730"
+  ],
+  "at": "2026-09-13T16:32:53.121869+00:00"
+}

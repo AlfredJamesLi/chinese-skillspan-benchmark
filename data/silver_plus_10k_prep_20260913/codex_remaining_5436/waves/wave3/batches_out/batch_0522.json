@@ -1,0 +1,234 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07711",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "团队协作能力",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "适应能力",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "抗压能力",
+          "label": "T"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "学习能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取服务意识及多项通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07712",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "STM32芯片",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 19,
+          "text": "驱动开发的能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "STM32芯片为领域知识，驱动开发为可执行技术活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07713",
+      "spans": [
+        {
+          "start": 1,
+          "end": 4,
+          "text": "房地产",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 10,
+          "text": "土地估价师",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 16,
+          "text": "资产评估师",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确行业背景及专业资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07714",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "TP/Lens主要不良",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取局部语境中的专业术语提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07715",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格名；相关专业不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07716",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "统招本科及以上",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "安全工程",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "机械工程",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 33,
+          "text": "注册安全工程师证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历、专业领域及非语言职业资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07717",
+      "spans": [
+        {
+          "start": 11,
+          "end": 19,
+          "text": "资金管理体系优化",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "制度建设",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取负责执行的体系优化与制度建设活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07718",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "模具前期结构评审",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 20,
+          "text": "DFM评审分析讨论",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "优化模具结构",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取模具评审、分析讨论及结构优化等职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07719",
+      "spans": [
+        {
+          "start": 4,
+          "end": 15,
+          "text": "科技项目材料的申报工作",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 29,
+          "text": "协调相关部门的对口联系工作",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "材料申报为职业动作，协调部门联系为通用协作能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07720",
+      "spans": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "PC",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 12,
+          "text": "SAP系统",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取岗位要求操作的工具和系统。",
+      "issues": []
+    }
+  ]
+}

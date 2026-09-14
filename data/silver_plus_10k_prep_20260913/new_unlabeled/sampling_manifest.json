@@ -1,0 +1,43 @@
+{
+  "seed": 20260913,
+  "salt": "CNSS_SP_10K_TOPUP",
+  "method": "Within each source, rank by (not skillish, sha256(salt|seed|nfc)); take Hamilton-allocated n; then fill remainder from global rank. Not conditioned on model errors or label difficulty.",
+  "stratum_frac": {
+    "阿里云公开数据集": 0.4,
+    "事业单位招聘": 0.3,
+    "上市公司招聘": 0.3
+  },
+  "stratum_report": {
+    "阿里云公开数据集": {
+      "pool": 134386,
+      "pool_skillish": 83317,
+      "allocated": 3174,
+      "taken": 3174
+    },
+    "事业单位招聘": {
+      "pool": 153864,
+      "pool_skillish": 56691,
+      "allocated": 2381,
+      "taken": 2381
+    },
+    "上市公司招聘": {
+      "pool": 10023,
+      "pool_skillish": 5531,
+      "allocated": 2381,
+      "taken": 2381
+    }
+  },
+  "need": 7936,
+  "actual_new": 7936,
+  "shortfall": 0,
+  "lo_hi": [
+    8,
+    400
+  ],
+  "skillish_in_selected": 7936,
+  "source_counts": {
+    "阿里云公开数据集": 3174,
+    "事业单位招聘": 2381,
+    "上市公司招聘": 2381
+  }
+}

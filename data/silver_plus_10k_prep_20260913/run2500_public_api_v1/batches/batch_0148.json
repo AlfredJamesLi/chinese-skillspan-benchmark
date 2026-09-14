@@ -1,0 +1,267 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 50.33,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5074,
+    "completion_tokens": 1808,
+    "total_tokens": 6882,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1034
+    },
+    "input_tokens": 5074,
+    "output_tokens": 1808,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01476",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            10,
+            15
+          ],
+          "to": [
+            9,
+            14
+          ],
+          "text": "物业的维护"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01478",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            11
+          ],
+          "to": [
+            4,
+            11
+          ],
+          "text": "现有系统的维护"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            28,
+            35
+          ],
+          "to": [
+            30,
+            37
+          ],
+          "text": "系统的二次开发"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01471\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"资格复审异议及陈述申辩安排，属于行政流程信息，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01472\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"ArcGIS\",\"label\":\"S\"},{\"start\":11,\"end\":15,\"text\":\"安装部署\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"服务发布\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"ArcGIS为岗位使用软件；安装部署和服务发布为可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01473\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"各种计算机软件\",\"label\":\"S\"},{\"start\":14,\"end\":27,\"text\":\"MicrosoftWord\",\"label\":\"S\"},{\"start\":28,\"end\":33,\"text\":\"Excel\",\"label\":\"S\"},{\"start\":34,\"end\":44,\"text\":\"Powerpoint\",\"label\":\"S\"},{\"start\":45,\"end\":52,\"text\":\"Autocad\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"计算机软件及所列办公、制图软件均处于熟练运用语境，标为岗位现用工具。\",\"issues\":[]},{\"id\":\"sp10k-01474\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"公告中对年龄条件表述的解释，属于规则说明，不是具体候选人能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01475\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"提供资格证明材料及列举材料类型，属于报名材料要求，不是候选人能力、知识或资格本身。\",\"issues\":[]},{\"id\":\"sp10k-01476\",\"spans\":[{\"start\":10,\"end\":15,\"text\":\"物业的维护\",\"label\":\"S\"},{\"start\":15,\"end\":17,\"text\":\"管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"物业维护和管理是岗位职责中的可执行职业活动；安全和环境卫生属于结果或工作对象属性，未单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01477\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"新媒体\",\"label\":\"K\"},{\"start\":7,\"end\":21,\"text\":\"官方微博、微信公众号运维经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"新媒体为领域知识；官方微博和微信公众号的运维经验构成明确实践活动提及，保留必要的经验后缀。\",\"issues\":[]},{\"id\":\"sp10k-01478\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"现有系统的维护\",\"label\":\"S\"},{\"start\":28,\"end\":35,\"text\":\"系统的二次开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"系统维护和二次开发均为明确的职业活动；数据安全属于保障结果，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01479\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"该记录为人员名单及学历、考试待遇等结果信息，未出现可标注的候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01480\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"专业技能测试和“一专多能”测试属于招聘考试方式说明，不是候选人能力要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01471",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "资格复审异议及陈述申辩安排，属于行政流程信息，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01472",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "ArcGIS",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "安装部署",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "服务发布",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "ArcGIS为岗位使用软件；安装部署和服务发布为可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01473",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "各种计算机软件",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 27,
+            "text": "MicrosoftWord",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "text": "Excel",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 44,
+            "text": "Powerpoint",
+            "label": "S"
+          },
+          {
+            "start": 45,
+            "end": 52,
+            "text": "Autocad",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "计算机软件及所列办公、制图软件均处于熟练运用语境，标为岗位现用工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01474",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "公告中对年龄条件表述的解释，属于规则说明，不是具体候选人能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01475",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "提供资格证明材料及列举材料类型，属于报名材料要求，不是候选人能力、知识或资格本身。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01476",
+        "spans": [
+          {
+            "start": 9,
+            "end": 14,
+            "text": "物业的维护",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "物业维护和管理是岗位职责中的可执行职业活动；安全和环境卫生属于结果或工作对象属性，未单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01477",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "新媒体",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 21,
+            "text": "官方微博、微信公众号运维经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "新媒体为领域知识；官方微博和微信公众号的运维经验构成明确实践活动提及，保留必要的经验后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01478",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "现有系统的维护",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 37,
+            "text": "系统的二次开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统维护和二次开发均为明确的职业活动；数据安全属于保障结果，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01479",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "该记录为人员名单及学历、考试待遇等结果信息，未出现可标注的候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01480",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "专业技能测试和“一专多能”测试属于招聘考试方式说明，不是候选人能力要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 148,
+  "ids": [
+    "sp10k-01471",
+    "sp10k-01472",
+    "sp10k-01473",
+    "sp10k-01474",
+    "sp10k-01475",
+    "sp10k-01476",
+    "sp10k-01477",
+    "sp10k-01478",
+    "sp10k-01479",
+    "sp10k-01480"
+  ],
+  "at": "2026-09-13T16:04:53.571535+00:00"
+}

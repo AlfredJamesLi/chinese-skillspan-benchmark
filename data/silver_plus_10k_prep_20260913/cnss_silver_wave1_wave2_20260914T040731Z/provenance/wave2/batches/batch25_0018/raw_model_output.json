@@ -1,0 +1,534 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04139",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "shell",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "python",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 28,
+          "text": "运维自动动化脚本的编写",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "流程优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工具运用、脚本编写和流程优化为职业技能；保留原文错字。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04140",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "保险项目运维",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "销售拓展能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分两项完整职业能力，不嵌套抽取保险领域名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04141",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "介绍笔试科目、试卷构成、分值和时间，属于考试安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04142",
+      "spans": [
+        {
+          "start": 10,
+          "end": 14,
+          "text": "系统原理",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "数据结构",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "算法",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 26,
+          "text": "数据库",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "机器学习",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "各项处于深入理解的知识要求语境；泛化专业基础不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04143",
+      "spans": [
+        {
+          "start": 2,
+          "end": 24,
+          "text": "网站、服务器、Web业务、API接口状态监控",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列对象共享状态监控，保留完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04144",
+      "spans": [
+        {
+          "start": 2,
+          "end": 19,
+          "text": "工业互联网平台的解决方案及产品规划",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 50,
+          "text": "综合智能制造技术的发展前沿及客户需求",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 65,
+          "text": "打造有竞争力的解决方案及产品",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取规划、综合技术动态与客户需求、打造方案产品三项职业活动；区域行业特点为条件。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04145",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "列举学历学位证明材料，没有具体学历门槛或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04146",
+      "spans": [
+        {
+          "start": 1,
+          "end": 4,
+          "text": "普通话",
+          "label": "L"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "交流顺畅",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "安排行程",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别标注语种、交流与服务素质，以及具体行程安排活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04147",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "对新技术感兴趣",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 18,
+          "text": "快速学习的能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "技术兴趣和学习能力为通用特质，不嵌套技术知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04148",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "去层服务器系统的日常运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整系统运维活动，保留原文去层表述。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04149",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "本科毕业",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "自动化",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历及具体专业名为K；泛化工作经验和年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04150",
+      "spans": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "教师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求限期取得教师资格证；时间及违约处理不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04151",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "公文审核",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "印章管理",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "信件收发",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "网站更新",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "保留四项明确职业活动；仅列工作对象的片段暂不进入主层。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "会议室",
+          "alternatives": [
+            "作为省略动作的职业职责纳入",
+            "仅为工作对象，不标"
+          ],
+          "reason": "未说明会议室对应的管理、预约或其他活动，无法确定完整能力提及。"
+        },
+        {
+          "kind": "scope",
+          "text": "校友、基金会等工作",
+          "alternatives": [
+            "作为概括职业职能纳入",
+            "仅为工作对象，不标"
+          ],
+          "reason": "缺少具体联络、运营或管理内容，无法确定所要求的能力范围。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04152",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "学习经历填表说明，所列学历学位不是任职门槛。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04153",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格初审后的报考岗位变更规则。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04154",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "IDC国家标准",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "行业标准",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 37,
+          "text": "制定和快速执行各项规章制度和应急预案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标准为规范知识；制定和执行共享制度与预案对象，保留完整活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04155",
+      "spans": [
+        {
+          "start": 1,
+          "end": 4,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "刻苦",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "敬业",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "text": "上进心",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 34,
+          "end": 43,
+          "text": "承受一定的工作压力",
+          "label": "T"
+        },
+        {
+          "start": 45,
+          "end": 51,
+          "text": "适应短期出差",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取责任、沟通、工作态度、合作、抗压及适应特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04156",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "指向附件岗位表，当前文本未给出具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04159",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "MSSQL技术",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 15,
+          "text": "NoSQL",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "DB结构编写",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "DB结构编写是明确活动；前两项缺少知识或应用限定，S仅为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "MSSQL技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可能要求技术知识，也可能要求数据库工具运用；熟悉及相邻编写活动不足以明确该项语境。"
+        },
+        {
+          "kind": "type",
+          "text": "NoSQL",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可能指数据库类别知识或实际使用能力，未明确理论理解或操作实践。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04160",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "沟通技巧",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 19,
+          "text": "语言及文字表达能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项为通用沟通表达能力；语言和文字共享表达能力中心。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04161",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "运维相关技术",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 18,
+          "text": "构建自动化运维平台",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确技术运用和平台构建为S；提升水平和效率为结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04164",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明招聘监督安排，不是候选人职责或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04165",
+      "spans": [
+        {
+          "start": 3,
+          "end": 5,
+          "text": "英语",
+          "label": "L"
+        },
+        {
+          "start": 16,
+          "end": 31,
+          "text": "大学英语四级成绩425分及以上",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注明确语种及包含成绩门槛的完整语言考试要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04166",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明通过实操考察技能的选拔方式，没有具体技能提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04167",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "材料与身份核验及取消考试资格的行政规定。",
+      "issues": []
+    }
+  ]
+}

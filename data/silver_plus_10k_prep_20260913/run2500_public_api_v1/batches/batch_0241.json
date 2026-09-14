@@ -1,0 +1,748 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 48.353,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5023,
+    "completion_tokens": 2101,
+    "total_tokens": 7124,
+    "prompt_tokens_details": {
+      "cached_tokens": 4864,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1034
+    },
+    "input_tokens": 5023,
+    "output_tokens": 2101,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06206",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            27,
+            35
+          ],
+          "to": [
+            28,
+            39
+          ],
+          "text": "对接主机厂及Tier1"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            39,
+            43
+          ],
+          "to": [
+            44,
+            48
+          ],
+          "text": "产品选型"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            44,
+            48
+          ],
+          "to": [
+            49,
+            53
+          ],
+          "text": "方案设计"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            54,
+            58
+          ],
+          "text": "技术答疑"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06207",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            5,
+            11
+          ],
+          "text": "组织协调能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            16
+          ],
+          "to": [
+            15,
+            18
+          ],
+          "text": "执行力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            22
+          ],
+          "to": [
+            19,
+            25
+          ],
+          "text": "工作积极主动"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            24,
+            27
+          ],
+          "to": [
+            27,
+            30
+          ],
+          "text": "责任心"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            28,
+            32
+          ],
+          "to": [
+            31,
+            35
+          ],
+          "text": "协作意识"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06208",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            16,
+            23
+          ],
+          "to": [
+            15,
+            22
+          ],
+          "text": "需求收集与整理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            26,
+            38
+          ],
+          "to": [
+            25,
+            36
+          ],
+          "text": "可视化报表/看板的规划"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            39,
+            41
+          ],
+          "to": [
+            37,
+            39
+          ],
+          "text": "设计"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            42,
+            44
+          ],
+          "to": [
+            40,
+            42
+          ],
+          "text": "开发"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            45,
+            47
+          ],
+          "to": [
+            43,
+            45
+          ],
+          "text": "测试"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            48,
+            50
+          ],
+          "to": [
+            46,
+            48
+          ],
+          "text": "维护"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06210",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            21
+          ],
+          "to": [
+            4,
+            22
+          ],
+          "text": "MESMarking/Label规则"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            22,
+            33
+          ],
+          "to": [
+            23,
+            34
+          ],
+          "text": "评估其合理性和可执行性"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06213",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            14
+          ],
+          "to": [
+            4,
+            11
+          ],
+          "text": "账务及资金清算"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            19
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "中台建设"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06214",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            12
+          ],
+          "to": [
+            7,
+            11
+          ],
+          "text": "安全对标"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            17
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "改善工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06215",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            8,
+            12
+          ],
+          "text": "轨道交通"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            23,
+            27
+          ],
+          "to": [
+            13,
+            17
+          ],
+          "text": "工业质检"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            28,
+            32
+          ],
+          "to": [
+            18,
+            22
+          ],
+          "text": "高端制造"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            44,
+            57
+          ],
+          "to": [
+            30,
+            43
+          ],
+          "text": "大模型（ViT、多模态等）"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            57,
+            63
+          ],
+          "to": [
+            43,
+            49
+          ],
+          "text": "实际项目经验"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            69,
+            73
+          ],
+          "to": [
+            52,
+            56
+          ],
+          "text": "异常检测"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            74,
+            78
+          ],
+          "to": [
+            57,
+            62
+          ],
+          "text": "小样本学习"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            84,
+            88
+          ],
+          "to": [
+            66,
+            70
+          ],
+          "text": "深入研究"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06206\",\"spans\":[{\"start\":20,\"end\":27,\"text\":\"客户端技术支持\",\"label\":\"S\"},{\"start\":27,\"end\":35,\"text\":\"对接主机厂及Tier1\",\"label\":\"T\"},{\"start\":39,\"end\":43,\"text\":\"产品选型\",\"label\":\"S\"},{\"start\":44,\"end\":48,\"text\":\"方案设计\",\"label\":\"S\"},{\"start\":49,\"end\":53,\"text\":\"技术答疑\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的客户端技术支持、客户对接及技术方案相关职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06207\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"组织协调能力\",\"label\":\"T\"},{\"start\":13,\"end\":16,\"text\":\"执行力\",\"label\":\"T\"},{\"start\":17,\"end\":22,\"text\":\"工作积极主动\",\"label\":\"T\"},{\"start\":24,\"end\":27,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":28,\"end\":32,\"text\":\"协作意识\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为跨行业通用能力或工作特质，去除程度修饰后保留完整提及。\",\"issues\":[]},{\"id\":\"sp10k-06208\",\"spans\":[{\"start\":16,\"end\":23,\"text\":\"需求收集与整理\",\"label\":\"S\"},{\"start\":26,\"end\":38,\"text\":\"可视化报表/看板的规划\",\"label\":\"S\"},{\"start\":39,\"end\":41,\"text\":\"设计\",\"label\":\"S\"},{\"start\":42,\"end\":44,\"text\":\"开发\",\"label\":\"S\"},{\"start\":45,\"end\":47,\"text\":\"测试\",\"label\":\"S\"},{\"start\":48,\"end\":50,\"text\":\"维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取可视化报表或看板相关的需求处理、规划、设计、开发、测试和维护活动。\",\"issues\":[]},{\"id\":\"sp10k-06209\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"招聘效果的分析与总结\",\"label\":\"S\"},{\"start\":18,\"end\":22,\"text\":\"工作改善\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"均为招聘工作中的明确分析、总结和改善活动。\",\"issues\":[]},{\"id\":\"sp10k-06210\",\"spans\":[{\"start\":4,\"end\":21,\"text\":\"MESMarking/Label规则\",\"label\":\"K\"},{\"start\":22,\"end\":33,\"text\":\"评估其合理性和可执行性\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"前者为MES标记规则知识，后者为对规则进行评估的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06211\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为项目名称和任职资格标题，未包含具体候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-06212\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"MES\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"MES作为岗位使用的数字信息化系统工具标注为S。\",\"issues\":[]},{\"id\":\"sp10k-06213\",\"spans\":[{\"start\":8,\"end\":14,\"text\":\"账务及资金清算\",\"label\":\"K\"},{\"start\":15,\"end\":19,\"text\":\"中台建设\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"账务及资金清算为领域知识，中台建设为明确建设活动。\",\"issues\":[]},{\"id\":\"sp10k-06214\",\"spans\":[{\"start\":8,\"end\":12,\"text\":\"安全对标\",\"label\":\"S\"},{\"start\":13,\"end\":17,\"text\":\"改善工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取设备安全对标和改善两项明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06215\",\"spans\":[{\"start\":18,\"end\":22,\"text\":\"轨道交通\",\"label\":\"K\"},{\"start\":23,\"end\":27,\"text\":\"工业质检\",\"label\":\"K\"},{\"start\":28,\"end\":32,\"text\":\"高端制造\",\"label\":\"K\"},{\"start\":44,\"end\":57,\"text\":\"大模型（ViT、多模态等）\",\"label\":\"K\"},{\"start\":57,\"end\":63,\"text\":\"实际项目经验\",\"label\":\"S\"},{\"start\":69,\"end\":73,\"text\":\"异常检测\",\"label\":\"K\"},{\"start\":74,\"end\":78,\"text\":\"小样本学习\",\"label\":\"K\"},{\"start\":84,\"end\":88,\"text\":\"深入研究\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确行业领域、模型及技术领域知识，并标注实际项目经验和深入研究活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06206",
+        "spans": [
+          {
+            "start": 20,
+            "end": 27,
+            "text": "客户端技术支持",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 39,
+            "text": "对接主机厂及Tier1",
+            "label": "T"
+          },
+          {
+            "start": 44,
+            "end": 48,
+            "text": "产品选型",
+            "label": "S"
+          },
+          {
+            "start": 49,
+            "end": 53,
+            "text": "方案设计",
+            "label": "S"
+          },
+          {
+            "start": 54,
+            "end": 58,
+            "text": "技术答疑",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的客户端技术支持、客户对接及技术方案相关职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06207",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "组织协调能力",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 18,
+            "text": "执行力",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "工作积极主动",
+            "label": "T"
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "text": "协作意识",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为跨行业通用能力或工作特质，去除程度修饰后保留完整提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06208",
+        "spans": [
+          {
+            "start": 15,
+            "end": 22,
+            "text": "需求收集与整理",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 36,
+            "text": "可视化报表/看板的规划",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 39,
+            "text": "设计",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 42,
+            "text": "开发",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 45,
+            "text": "测试",
+            "label": "S"
+          },
+          {
+            "start": 46,
+            "end": 48,
+            "text": "维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取可视化报表或看板相关的需求处理、规划、设计、开发、测试和维护活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06209",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "招聘效果的分析与总结",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "工作改善",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为招聘工作中的明确分析、总结和改善活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06210",
+        "spans": [
+          {
+            "start": 4,
+            "end": 22,
+            "text": "MESMarking/Label规则",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 34,
+            "text": "评估其合理性和可执行性",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "前者为MES标记规则知识，后者为对规则进行评估的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06211",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为项目名称和任职资格标题，未包含具体候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06212",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "MES",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "MES作为岗位使用的数字信息化系统工具标注为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06213",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "账务及资金清算",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "中台建设",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "账务及资金清算为领域知识，中台建设为明确建设活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06214",
+        "spans": [
+          {
+            "start": 7,
+            "end": 11,
+            "text": "安全对标",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "改善工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取设备安全对标和改善两项明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06215",
+        "spans": [
+          {
+            "start": 8,
+            "end": 12,
+            "text": "轨道交通",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "工业质检",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "高端制造",
+            "label": "K"
+          },
+          {
+            "start": 30,
+            "end": 43,
+            "text": "大模型（ViT、多模态等）",
+            "label": "K"
+          },
+          {
+            "start": 43,
+            "end": 49,
+            "text": "实际项目经验",
+            "label": "S"
+          },
+          {
+            "start": 52,
+            "end": 56,
+            "text": "异常检测",
+            "label": "K"
+          },
+          {
+            "start": 57,
+            "end": 62,
+            "text": "小样本学习",
+            "label": "K"
+          },
+          {
+            "start": 66,
+            "end": 70,
+            "text": "深入研究",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确行业领域、模型及技术领域知识，并标注实际项目经验和深入研究活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 241,
+  "ids": [
+    "sp10k-06206",
+    "sp10k-06207",
+    "sp10k-06208",
+    "sp10k-06209",
+    "sp10k-06210",
+    "sp10k-06211",
+    "sp10k-06212",
+    "sp10k-06213",
+    "sp10k-06214",
+    "sp10k-06215"
+  ],
+  "at": "2026-09-13T17:38:33.926416+00:00"
+}

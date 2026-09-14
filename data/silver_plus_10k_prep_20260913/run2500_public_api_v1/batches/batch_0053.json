@@ -1,0 +1,292 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 48.827,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5136,
+    "completion_tokens": 1542,
+    "total_tokens": 6678,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5136,
+    "output_tokens": 1542,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00521\",\"spans\":[{\"start\":0,\"end\":9,\"text\":\"统招本科及以上学历\",\"label\":\"K\"},{\"start\":10,\"end\":19,\"text\":\"计算机软件相关专业\",\"label\":\"K\"},{\"start\":25,\"end\":30,\"text\":\"MES运维\",\"label\":\"S\"},{\"start\":33,\"end\":44,\"text\":\"愿意从事MES运维工作\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"学历与具体专业标K；运维活动去除经验后意义完整；岗位从业意愿整体标T。\",\"issues\":[]},{\"id\":\"sp10k-00522\",\"spans\":[{\"start\":7,\"end\":11,\"text\":\"脚本语言\",\"label\":\"S\"},{\"start\":12,\"end\":17,\"text\":\"Shell\",\"label\":\"S\"},{\"start\":18,\"end\":24,\"text\":\"Python\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"脚本语言及所列具体工具属于岗位工具掌握要求，无理论或语法知识限定。\",\"issues\":[]},{\"id\":\"sp10k-00523\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明招聘人数、岗位及附件索引，未直接陈述候选人能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00524\",\"spans\":[{\"start\":2,\"end\":37,\"text\":\"牵头组织运营商4GEPC、5GC、欧拉系统、IP承载变更方案评审和执行\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确的变更方案评审与执行职责；并列系统共享职业动作和对象中心，保留完整跨度。\",\"issues\":[]},{\"id\":\"sp10k-00525\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"Linux\",\"label\":\"S\"},{\"start\":11,\"end\":16,\"text\":\"常用的服务\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"提及范围明确，但缺少操作实践或原理知识的具体语境，类型暂以S占位。\",\"issues\":[{\"kind\":\"type\",\"text\":\"Linux\",\"alternatives\":[\"S\",\"K\"],\"reason\":\"仅有熟悉要求，无法确定是操作系统运用还是操作系统知识。\"},{\"kind\":\"type\",\"text\":\"常用的服务\",\"alternatives\":[\"S\",\"K\"],\"reason\":\"局部回指Linux服务，但未说明配置运维等实际操作或服务原理知识。\"}]},{\"id\":\"sp10k-00526\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于招聘递补、岗位取消及比例审批流程，不是候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00527\",\"spans\":[{\"start\":3,\"end\":5,\"text\":\"严谨\",\"label\":\"T\"},{\"start\":5,\"end\":7,\"text\":\"踏实\",\"label\":\"T\"},{\"start\":9,\"end\":12,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":13,\"end\":19,\"text\":\"团队协作能力\",\"label\":\"T\"},{\"start\":22,\"end\":31,\"text\":\"承受较强的工作压力\",\"label\":\"T\"},{\"start\":33,\"end\":37,\"text\":\"服务意识\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为可迁移的工作特质、协作能力及抗压要求，去除要求触发词。\",\"issues\":[]},{\"id\":\"sp10k-00528\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"计算机相关专业\",\"label\":\"K\"},{\"start\":8,\"end\":14,\"text\":\"大专以上学历\",\"label\":\"K\"},{\"start\":21,\"end\":27,\"text\":\"Java开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"具体专业和学历标K；Java开发为完整职业活动，不保留年限及工作经验后缀。\",\"issues\":[]},{\"id\":\"sp10k-00529\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"楼宇自控系统\",\"label\":\"K\"},{\"start\":9,\"end\":15,\"text\":\"综合布线系统\",\"label\":\"K\"},{\"start\":16,\"end\":24,\"text\":\"电子信息显示系统\",\"label\":\"K\"},{\"start\":25,\"end\":30,\"text\":\"一卡通系统\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"所列为需熟悉的专业领域系统知识，未提出具体操作、设计或实施活动。\",\"issues\":[]},{\"id\":\"sp10k-00530\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"列举服务期内的人员身份及项目类别，不构成能力、知识或资格名要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00521",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "统招本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 19,
+            "text": "计算机软件相关专业",
+            "label": "K"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "text": "MES运维",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 44,
+            "text": "愿意从事MES运维工作",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历与具体专业标K；运维活动去除经验后意义完整；岗位从业意愿整体标T。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00522",
+        "spans": [
+          {
+            "start": 7,
+            "end": 11,
+            "text": "脚本语言",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "text": "Shell",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "text": "Python",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "脚本语言及所列具体工具属于岗位工具掌握要求，无理论或语法知识限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00523",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明招聘人数、岗位及附件索引，未直接陈述候选人能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00524",
+        "spans": [
+          {
+            "start": 2,
+            "end": 37,
+            "text": "牵头组织运营商4GEPC、5GC、欧拉系统、IP承载变更方案评审和执行",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确的变更方案评审与执行职责；并列系统共享职业动作和对象中心，保留完整跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00525",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "Linux",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "text": "常用的服务",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "提及范围明确，但缺少操作实践或原理知识的具体语境，类型暂以S占位。",
+        "issues": [
+          {
+            "kind": "type",
+            "text": "Linux",
+            "alternatives": [
+              "S",
+              "K"
+            ],
+            "reason": "仅有熟悉要求，无法确定是操作系统运用还是操作系统知识。"
+          },
+          {
+            "kind": "type",
+            "text": "常用的服务",
+            "alternatives": [
+              "S",
+              "K"
+            ],
+            "reason": "局部回指Linux服务，但未说明配置运维等实际操作或服务原理知识。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00526",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于招聘递补、岗位取消及比例审批流程，不是候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00527",
+        "spans": [
+          {
+            "start": 3,
+            "end": 5,
+            "text": "严谨",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "text": "踏实",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "团队协作能力",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 31,
+            "text": "承受较强的工作压力",
+            "label": "T"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "text": "服务意识",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为可迁移的工作特质、协作能力及抗压要求，去除要求触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00528",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "计算机相关专业",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "大专以上学历",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "text": "Java开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "具体专业和学历标K；Java开发为完整职业活动，不保留年限及工作经验后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00529",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "楼宇自控系统",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "综合布线系统",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "text": "电子信息显示系统",
+            "label": "K"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "text": "一卡通系统",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "所列为需熟悉的专业领域系统知识，未提出具体操作、设计或实施活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00530",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "列举服务期内的人员身份及项目类别，不构成能力、知识或资格名要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 53,
+  "ids": [
+    "sp10k-00521",
+    "sp10k-00522",
+    "sp10k-00523",
+    "sp10k-00524",
+    "sp10k-00525",
+    "sp10k-00526",
+    "sp10k-00527",
+    "sp10k-00528",
+    "sp10k-00529",
+    "sp10k-00530"
+  ],
+  "at": "2026-09-13T14:35:06.942313+00:00"
+}

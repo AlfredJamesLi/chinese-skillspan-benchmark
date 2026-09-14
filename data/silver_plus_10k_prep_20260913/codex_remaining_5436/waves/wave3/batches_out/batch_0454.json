@@ -1,0 +1,281 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07031",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "“液晶、机械等相关理工科专业”属于泛化专业背景，未形成可标注的具体学历、知识、技能或资格提及；“毕业优先”为招聘倾向表述。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07032",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "智慧城市",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "智慧园区",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "智能安防",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "物联网",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "text": "销售",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "售前支持",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 47,
+          "text": "行业综合解决方案",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确行业背景的领域核心名标K；销售与售前支持为完整职业活动，去除工作经验及年限；行业综合解决方案按知识要求标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07033",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确的学历资格；相关专业背景及复合专业偏好不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07034",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "基础战略规划",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "数据分析能力",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "思维活跃",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 30,
+          "text": "有跨部门协调意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "战略规划和数据分析能力属于可执行职业活动；思维活跃及跨部门协调意识属于通用特质或软技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07035",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "PCB板焊接",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "text": "电子元器件",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求PCB板焊接实践，标为S；电子元器件属于领域知识，标为K。年限及优先考虑等修饰不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07036",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "搭建ESD设施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求候选人执行搭建设施的职业活动，标注为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07037",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "SMT设备",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "印刷机",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "GKG",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "text": "贴片机",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "三星系列",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 30,
+          "text": "回流焊",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 41,
+          "text": "劲拓TEA-1000",
+          "label": "S"
+        },
+        {
+          "start": 62,
+          "end": 67,
+          "text": "等编程调试",
+          "label": "S"
+        },
+        {
+          "start": 68,
+          "end": 72,
+          "text": "维护保养",
+          "label": "S"
+        },
+        {
+          "start": 73,
+          "end": 77,
+          "text": "异常处理",
+          "label": "S"
+        },
+        {
+          "start": 80,
+          "end": 89,
+          "text": "SMT生产工艺流程",
+          "label": "K"
+        },
+        {
+          "start": 92,
+          "end": 97,
+          "text": "电子元器件",
+          "label": "K"
+        },
+        {
+          "start": 98,
+          "end": 106,
+          "text": "PCB电路板知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取SMT设备及其具体设备、编程调试、维护保养、异常处理等职业操作，以及SMT生产工艺流程和电子元器件、PCB电路板知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07038",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "集团和区域平台策划统筹",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "项目前策",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 26,
+          "text": "筹开",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求具备平台策划统筹、项目前策及筹开等职业活动经验，去除经验/经历后活动语义仍完整，分别标注为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07039",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "医院科室的保洁",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确要求执行的保洁职业活动，保留工作对象；“负责”和兼职安排不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07040",
+      "spans": [
+        {
+          "start": 6,
+          "end": 18,
+          "text": "产品规格书、BOM的评审",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "评审为明确职业活动；并列对象共享“的评审”，保留完整跨度。“确保设计与生产要求匹配”为结果要求，不单独标注。",
+      "issues": []
+    }
+  ]
+}

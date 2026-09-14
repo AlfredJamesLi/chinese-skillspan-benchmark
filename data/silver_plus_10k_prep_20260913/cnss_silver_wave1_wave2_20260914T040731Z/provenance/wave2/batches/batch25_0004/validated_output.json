@@ -1,0 +1,528 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03776",
+      "spans": [
+        {
+          "start": 5,
+          "end": 14,
+          "text": "计算机科学与技术类",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业类别按K标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03777",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "吃苦耐劳",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "勤奋",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "表率性",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "执行能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用特质与能力分别标注，排除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03778",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名证明材料清单，未提出具体学历或学位要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03779",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "物联网系统日常运维",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 31,
+          "text": "排查解决设备故障和数据采集问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维与故障处理为职业活动；保留共享动作及对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03780",
+      "spans": [
+        {
+          "start": 2,
+          "end": 19,
+          "text": "所服小区域及相关终端设备的日常维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留维护活动的共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03781",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "网络信息安全",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 38,
+          "text": "提供安全稳定可靠的网络服务",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络信息安全按岗位安全职能标注；数据资产安全的结果保证不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03782",
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "互联网",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 21,
+          "text": "企业局域网网络调试、维护",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 39,
+          "text": "主流数据库的配置与优化",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 47,
+          "text": "数据备份与恢复",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 52,
+          "text": "数据安全",
+          "label": "S"
+        },
+        {
+          "start": 53,
+          "end": 60,
+          "text": "数据迁移与归档",
+          "label": "S"
+        },
+        {
+          "start": 61,
+          "end": 71,
+          "text": "数据库日常监控与管理",
+          "label": "S"
+        },
+        {
+          "start": 74,
+          "end": 84,
+          "text": "主流数据库的安装调试",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "行业核心名为K，明确数据库操作为S；数据安全暂用S占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "数据安全",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指数据安全知识，也可指数据保护实践；并列操作语境未明确其具体含义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03783",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "面试内容的泛化说明，没有具体能力或知识提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03784",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明录用人员的编制和待遇，括号中的学历是待遇对象描述。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03785",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考材料真实性及违规处理规定，不是能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03786",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "安装各类办公软件",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "制图软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装为职业操作，制图软件由局部共享安装语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03787",
+      "spans": [
+        {
+          "start": 17,
+          "end": 21,
+          "text": "行业知识",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "方案设计",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 31,
+          "text": "安装",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 34,
+          "text": "调试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "知识要求为K，明确实践活动为S；泛化工作经验及年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03788",
+      "spans": [
+        {
+          "start": 21,
+          "end": 29,
+          "text": "大专以上文化程度",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历要求为K；年龄和国籍不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03789",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "泛化报考资格说明，具体要求需另见职位表，不能推造。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03790",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "内部局域网络维护",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 18,
+          "text": "车间流水线测试",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 29,
+          "text": "设备电脑的维护和支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络维护、流水线测试和设备支持为独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03791",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "平台的后台管理",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "数据维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "后台管理和数据维护分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03792",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "平台运营能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学习能力为通用能力，平台运营能力绑定岗位；此处为个人要求而非培训福利。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03793",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公开招聘工作的纪律与程序规定，不要求候选人掌握这些法规。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03794",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "客户需求洞察",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "text": "方案规划引导能力",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "技术知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "客户需求及方案能力绑定业务职能；技术知识为K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03795",
+      "spans": [
+        {
+          "start": 12,
+          "end": 25,
+          "text": "处理各类安全问题和安全事件",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 41,
+          "text": "引导各系统维护人员修复安全问题",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 55,
+          "text": "支持各系统日常安全运行",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取安全事件处理、修复指导和运行支持；系统安全的状态目标不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03796",
+      "spans": [
+        {
+          "start": 5,
+          "end": 28,
+          "text": "GIS产品、GIS数据、GIS地图的运维与优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "多个对象共享运维与优化，保留完整活动跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03797",
+      "spans": [
+        {
+          "start": 21,
+          "end": 27,
+          "text": "热爱教育事业",
+          "label": "T"
+        },
+        {
+          "start": 67,
+          "end": 72,
+          "text": "普通话水平",
+          "label": "L"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "职业热情为T，普通话水平为L；法规引用及身心健康条件不标，政治条件范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "热爱社会主义祖国，拥护党的各项方针、政策",
+          "alternatives": [
+            "作为政治资格条件排除",
+            "作为候选人通用特质纳入T"
+          ],
+          "reason": "协议未明确政治态度条件是否属于所抽取的资格或特质，局部语境不足以消除范围歧义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03798",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "运维工具",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 14,
+          "text": "Ansible",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "zabbix",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "jenkins",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位运维工具类别及具体工具按S标注，保留原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03799",
+      "spans": [
+        {
+          "start": 4,
+          "end": 15,
+          "text": "OA&HR平台运维管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "平台运维管理为S；平稳、高效运行属于结果保证。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03800",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "应用业务系统实施上线后期系统维护",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 27,
+          "text": "新功能的优化调整",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "保守保留实施上线与后期维护的连续跨度；新功能优化独立标注。",
+      "issues": [
+        {
+          "kind": "boundary",
+          "text": "应用业务系统实施上线后期系统维护",
+          "alternatives": [
+            "应用业务系统实施上线后期系统维护",
+            "应用业务系统实施上线；后期系统维护"
+          ],
+          "reason": "缺少分隔标记，实施上线可能是独立职责，也可能仅限定系统维护的阶段。"
+        }
+      ]
+    }
+  ]
+}

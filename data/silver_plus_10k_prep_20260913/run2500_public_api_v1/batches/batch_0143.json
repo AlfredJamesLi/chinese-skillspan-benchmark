@@ -1,0 +1,293 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 40.18,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5034,
+    "completion_tokens": 1243,
+    "total_tokens": 6277,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 514
+    },
+    "input_tokens": 5034,
+    "output_tokens": 1243,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01423",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            12
+          ],
+          "to": [
+            7,
+            16
+          ],
+          "text": "具备一定的抗压能力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            13,
+            17
+          ],
+          "to": [
+            17,
+            21
+          ],
+          "text": "善于学习"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            18,
+            20
+          ],
+          "to": [
+            22,
+            24
+          ],
+          "text": "分析"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            21,
+            25
+          ],
+          "to": [
+            25,
+            29
+          ],
+          "text": "思考问题"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01425",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            18
+          ],
+          "to": [
+            8,
+            22
+          ],
+          "text": "生产网络及办公网络的运行维护"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01428",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            29
+          ],
+          "to": [
+            17,
+            28
+          ],
+          "text": "保险项目或报表项目经验"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01421\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"大专及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历资格要求标注为K；泛化培训工作经验不标。\",\"issues\":[]},{\"id\":\"sp10k-01422\",\"spans\":[{\"start\":15,\"end\":21,\"text\":\"日语读写熟练\",\"label\":\"L\"},{\"start\":22,\"end\":29,\"text\":\"口语能简单沟通\",\"label\":\"L\"}],\"status\":\"candidate_complete\",\"note\":\"日语读写和口语沟通均为语言能力要求，标注为L；IT系统运维工作经验属于泛化年限经验，不标。\",\"issues\":[]},{\"id\":\"sp10k-01423\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"工作主动性强\",\"label\":\"T\"},{\"start\":7,\"end\":12,\"text\":\"具备一定的抗压能力\",\"label\":\"T\"},{\"start\":13,\"end\":17,\"text\":\"善于学习\",\"label\":\"T\"},{\"start\":18,\"end\":20,\"text\":\"分析\",\"label\":\"T\"},{\"start\":21,\"end\":25,\"text\":\"思考问题\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"主动性、抗压、学习以及无明确专业对象的分析和思考均属于通用能力或特质。\",\"issues\":[]},{\"id\":\"sp10k-01424\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为招聘方对人员考察和选任标准的表述，不是候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01425\",\"spans\":[{\"start\":3,\"end\":18,\"text\":\"生产网络及办公网络的运行维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行网络运行维护职业活动，标注为S。\",\"issues\":[]},{\"id\":\"sp10k-01426\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"学历证书及验证报告属于报名材料或资格审查材料，不是能力、知识或资格要求本身。\",\"issues\":[]},{\"id\":\"sp10k-01427\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容说明考试中专业知识的计分比例，未形成候选人须具备的具体能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01428\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"统招本科\",\"label\":\"K\"},{\"start\":19,\"end\":29,\"text\":\"保险项目或报表项目经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"统招本科为学历资格；保险项目或报表项目经验属于特定项目实践经历，标注为S；年限经验泛化部分不标。\",\"issues\":[]},{\"id\":\"sp10k-01429\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为证件核验及考试资格取消规则，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01430\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报名信息填写及资格取消规则，不是候选人能力、知识或资格要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01421",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "大专及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历资格要求标注为K；泛化培训工作经验不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01422",
+        "spans": [
+          {
+            "start": 15,
+            "end": 21,
+            "text": "日语读写熟练",
+            "label": "L"
+          },
+          {
+            "start": 22,
+            "end": 29,
+            "text": "口语能简单沟通",
+            "label": "L"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "日语读写和口语沟通均为语言能力要求，标注为L；IT系统运维工作经验属于泛化年限经验，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01423",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "工作主动性强",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 16,
+            "text": "具备一定的抗压能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "善于学习",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "text": "分析",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "思考问题",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "主动性、抗压、学习以及无明确专业对象的分析和思考均属于通用能力或特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01424",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为招聘方对人员考察和选任标准的表述，不是候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01425",
+        "spans": [
+          {
+            "start": 8,
+            "end": 22,
+            "text": "生产网络及办公网络的运行维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行网络运行维护职业活动，标注为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01426",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "学历证书及验证报告属于报名材料或资格审查材料，不是能力、知识或资格要求本身。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01427",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容说明考试中专业知识的计分比例，未形成候选人须具备的具体能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01428",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "统招本科",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 28,
+            "text": "保险项目或报表项目经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "统招本科为学历资格；保险项目或报表项目经验属于特定项目实践经历，标注为S；年限经验泛化部分不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01429",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为证件核验及考试资格取消规则，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01430",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报名信息填写及资格取消规则，不是候选人能力、知识或资格要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 143,
+  "ids": [
+    "sp10k-01421",
+    "sp10k-01422",
+    "sp10k-01423",
+    "sp10k-01424",
+    "sp10k-01425",
+    "sp10k-01426",
+    "sp10k-01427",
+    "sp10k-01428",
+    "sp10k-01429",
+    "sp10k-01430"
+  ],
+  "at": "2026-09-13T15:59:22.264950+00:00"
+}

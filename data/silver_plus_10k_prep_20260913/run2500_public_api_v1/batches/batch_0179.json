@@ -1,0 +1,317 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 39.307,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5188,
+    "completion_tokens": 1243,
+    "total_tokens": 6431,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5188,
+    "output_tokens": 1243,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01858",
+      "repairs": [
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            45,
+            48
+          ],
+          "to": [
+            45,
+            47
+          ],
+          "text": "林学"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            49,
+            52
+          ],
+          "to": [
+            48,
+            50
+          ],
+          "text": "农学"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            53,
+            58
+          ],
+          "to": [
+            51,
+            56
+          ],
+          "text": "分子生物学"
+        },
+        {
+          "i": 8,
+          "action": "snapped",
+          "from": [
+            59,
+            64
+          ],
+          "to": [
+            57,
+            62
+          ],
+          "text": "植物病理学"
+        },
+        {
+          "i": 9,
+          "action": "snapped",
+          "from": [
+            65,
+            70
+          ],
+          "to": [
+            62,
+            67
+          ],
+          "text": "博士研究生"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01869",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "沟通能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "创新意识"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01853\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为询价采购公告及对机构资质的泛化要求，未明确具体候选人能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01854\",\"spans\":[{\"start\":8,\"end\":16,\"text\":\"对外沟通交流能力\",\"label\":\"T\"},{\"start\":22,\"end\":26,\"text\":\"文字功底\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求候选人的通用沟通能力和文字表达能力。\",\"issues\":[]},{\"id\":\"sp10k-01855\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为岗位招聘计划及开考比例的行政安排，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01857\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报名及考试收费标准，所列科目不是候选人资格或能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01858\",\"spans\":[{\"start\":19,\"end\":22,\"text\":\"蔬菜学\",\"label\":\"K\"},{\"start\":23,\"end\":26,\"text\":\"植物学\",\"label\":\"K\"},{\"start\":27,\"end\":34,\"text\":\"作物遗传育种学\",\"label\":\"K\"},{\"start\":35,\"end\":40,\"text\":\"生物信息学\",\"label\":\"K\"},{\"start\":41,\"end\":44,\"text\":\"园艺学\",\"label\":\"K\"},{\"start\":45,\"end\":48,\"text\":\"林学\",\"label\":\"K\"},{\"start\":49,\"end\":52,\"text\":\"农学\",\"label\":\"K\"},{\"start\":53,\"end\":58,\"text\":\"分子生物学\",\"label\":\"K\"},{\"start\":59,\"end\":64,\"text\":\"植物病理学\",\"label\":\"K\"},{\"start\":65,\"end\":70,\"text\":\"博士研究生\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"列出岗位要求的具体专业领域知识及博士研究生学历资格。\",\"issues\":[]},{\"id\":\"sp10k-01866\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为应聘材料的自愿提交说明，未形成候选人必须具备的具体能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01867\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报考专业与学历的报名规则，未明确具体学历或专业资格名称。\",\"issues\":[]},{\"id\":\"sp10k-01868\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为网上报名资格初审查询流程，不属于候选人能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01869\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"创新意识\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求通用沟通能力及创新特质。\",\"issues\":[]},{\"id\":\"sp10k-01871\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅概括提及学历、专业、技能及其他条件，未给出可具体标注的要求内容。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01853",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为询价采购公告及对机构资质的泛化要求，未明确具体候选人能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01854",
+        "spans": [
+          {
+            "start": 8,
+            "end": 16,
+            "text": "对外沟通交流能力",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "文字功底",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求候选人的通用沟通能力和文字表达能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01855",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为岗位招聘计划及开考比例的行政安排，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01857",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报名及考试收费标准，所列科目不是候选人资格或能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01858",
+        "spans": [
+          {
+            "start": 19,
+            "end": 22,
+            "text": "蔬菜学",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 26,
+            "text": "植物学",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 34,
+            "text": "作物遗传育种学",
+            "label": "K"
+          },
+          {
+            "start": 35,
+            "end": 40,
+            "text": "生物信息学",
+            "label": "K"
+          },
+          {
+            "start": 41,
+            "end": 44,
+            "text": "园艺学",
+            "label": "K"
+          },
+          {
+            "start": 45,
+            "end": 47,
+            "text": "林学",
+            "label": "K"
+          },
+          {
+            "start": 48,
+            "end": 50,
+            "text": "农学",
+            "label": "K"
+          },
+          {
+            "start": 51,
+            "end": 56,
+            "text": "分子生物学",
+            "label": "K"
+          },
+          {
+            "start": 57,
+            "end": 62,
+            "text": "植物病理学",
+            "label": "K"
+          },
+          {
+            "start": 62,
+            "end": 67,
+            "text": "博士研究生",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "列出岗位要求的具体专业领域知识及博士研究生学历资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01866",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为应聘材料的自愿提交说明，未形成候选人必须具备的具体能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01867",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报考专业与学历的报名规则，未明确具体学历或专业资格名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01868",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为网上报名资格初审查询流程，不属于候选人能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01869",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "创新意识",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求通用沟通能力及创新特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01871",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅概括提及学历、专业、技能及其他条件，未给出可具体标注的要求内容。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 179,
+  "ids": [
+    "sp10k-01853",
+    "sp10k-01854",
+    "sp10k-01855",
+    "sp10k-01857",
+    "sp10k-01858",
+    "sp10k-01866",
+    "sp10k-01867",
+    "sp10k-01868",
+    "sp10k-01869",
+    "sp10k-01871"
+  ],
+  "at": "2026-09-13T16:36:24.749631+00:00"
+}

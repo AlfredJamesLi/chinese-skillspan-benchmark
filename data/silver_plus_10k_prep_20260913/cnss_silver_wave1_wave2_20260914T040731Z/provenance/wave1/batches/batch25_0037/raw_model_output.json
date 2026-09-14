@@ -1,0 +1,405 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02757",
+      "spans": [
+        {
+          "start": 4,
+          "end": 24,
+          "text": "计算机网络相关（含计算机网络安全）的技能",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 39,
+          "text": "操作系统的使用和运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "领域技能按S；保留括注及使用、运维的共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02758",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格初审及考试流程，不含能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02759",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "思维敏捷",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "数据分析能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用特质和学习能力按T，数据分析能力按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02760",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公司地址、岗位信息、年龄及待遇；学历和专业不限不构成具体资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02761",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "科研工作",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "开展试验",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "数值仿真",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "论文撰写",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "概括性科研要求按T，具体试验、仿真和论文撰写活动按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02762",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "缺少“内容”所指事项，无法确认是否为候选人要求。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "各专业理论知识和实践操作",
+          "alternatives": [
+            "属于候选人知识与操作要求，纳入标注",
+            "属于考试内容或培训介绍，不纳入标注"
+          ],
+          "reason": "孤立片段未说明内容所属环节，需补充其对应的要求、考试或培训语境。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02763",
+      "spans": [
+        {
+          "start": 7,
+          "end": 9,
+          "text": "脚本",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "text": "shell",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "Python",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "脚本及所列语言处于岗位工具掌握语境，按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02764",
+      "spans": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "SQL",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "text": "mysql",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "Oracle",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 27,
+          "text": "数据库操作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库操作及其工具按S，保留原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02765",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "休息休假福利，不含候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02766",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考试通讯工具管理规定，不属于职业能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02767",
+      "spans": [
+        {
+          "start": 14,
+          "end": 20,
+          "text": "常务工作对接",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "服务响应",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 41,
+          "text": "回款",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "单位间工作联络按T，服务响应和回款为职业活动S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02768",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "攻防",
+          "label": "S"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "渗透技术",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "系统渗透",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "分析溯源",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安全攻防及渗透、溯源活动按S；去除经验后活动意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02769",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "杜特系统",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 13,
+          "text": "后台数据的维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位系统工具及数据维护活动按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02770",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应届毕业生身份认定及应聘资格流程，未提出具体学历层次或专业能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02771",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告解释权说明，不是候选人职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02772",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应聘材料真实性及资格处理规定，不抽取为职业特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02773",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "IT运维管理",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "文字表述能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维管理为完整职业活动，文字表述为通用表达能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02774",
+      "spans": [
+        {
+          "start": 4,
+          "end": 46,
+          "text": "设备（包括工业机器人生产线、加工中心、数控设备及自动化装配线）的故障维修（软、硬件）",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留维修动作、共享设备对象及软硬件限定；被维修设备不另作工具提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02775",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "岗位类别标题，未提出具体能力、知识或资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02776",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名证明材料清单，不含明确学历层次或专业资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02777",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Java服务端开发",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "性能优化",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "服务优化",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "迭代开发",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 35,
+          "text": "重构",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分独立开发和优化活动；上线后为阶段限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02778",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "描述应聘人员报名后的资格初审流程，不是招聘专员岗位职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02779",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名证书复印件清单，未要求具体职称或学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02780",
+      "spans": [
+        {
+          "start": 1,
+          "end": 13,
+          "text": "信息化软件方面的需求调研",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "需求调研为职业活动，保留软件对象限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02781",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "学习经历填写说明，所列学历阶段和学位为表单内容。",
+      "issues": []
+    }
+  ]
+}

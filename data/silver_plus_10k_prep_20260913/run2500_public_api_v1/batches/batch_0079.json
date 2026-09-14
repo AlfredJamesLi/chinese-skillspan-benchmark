@@ -1,0 +1,371 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 69.984,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5040,
+    "completion_tokens": 2208,
+    "total_tokens": 7248,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1034
+    },
+    "input_tokens": 5040,
+    "output_tokens": 2208,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00781\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"Web\",\"label\":\"S\"},{\"start\":6,\"end\":15,\"text\":\"winForm编程\",\"label\":\"S\"},{\"start\":18,\"end\":22,\"text\":\"html\",\"label\":\"S\"},{\"start\":23,\"end\":27,\"text\":\"ajax\",\"label\":\"S\"},{\"start\":28,\"end\":31,\"text\":\"css\",\"label\":\"S\"},{\"start\":32,\"end\":34,\"text\":\"js\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"并列编程对象及其局部技术栈按职业技术运用标S，共享编程语义不补写。\",\"issues\":[]},{\"id\":\"sp10k-00782\",\"spans\":[{\"start\":11,\"end\":16,\"text\":\"大项目管理\",\"label\":\"S\"},{\"start\":23,\"end\":25,\"text\":\"督办\",\"label\":\"S\"},{\"start\":26,\"end\":28,\"text\":\"协调\",\"label\":\"T\"},{\"start\":29,\"end\":35,\"text\":\"项目财务管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"专业项目管理、督办和财务管理为职业活动；通用协调标T。\",\"issues\":[]},{\"id\":\"sp10k-00783\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明招聘纪律及违规处理，不含候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00784\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"oracle\",\"label\":\"S\"},{\"start\":9,\"end\":12,\"text\":\"db2\",\"label\":\"S\"},{\"start\":16,\"end\":21,\"text\":\"SQL操作\",\"label\":\"S\"},{\"start\":28,\"end\":32,\"text\":\"JAVA\",\"label\":\"S\"},{\"start\":33,\"end\":38,\"text\":\"shell\",\"label\":\"S\"},{\"start\":45,\"end\":49,\"text\":\"技术证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"数据库与语言处于操作和使用语境，标S；非语言技术证书要求标K。\",\"issues\":[]},{\"id\":\"sp10k-00785\",\"spans\":[{\"start\":2,\"end\":21,\"text\":\"营销领域系统性能、安全、可靠性设计原则\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"并列对象共享设计原则，保留完整知识短语；关联岗位从业经验未明确具体活动，不另标。\",\"issues\":[]},{\"id\":\"sp10k-00786\",\"spans\":[{\"start\":5,\"end\":7,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":8,\"end\":12,\"text\":\"协调能力\",\"label\":\"T\"},{\"start\":14,\"end\":19,\"text\":\"封测厂管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"沟通和协调为通用能力；封测厂管理为明确职业活动，去除经验后意义完整。\",\"issues\":[]},{\"id\":\"sp10k-00787\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"做事细心\",\"label\":\"T\"},{\"start\":18,\"end\":24,\"text\":\"执行任务能力\",\"label\":\"T\"},{\"start\":27,\"end\":29,\"text\":\"积累\",\"label\":\"T\"},{\"start\":30,\"end\":32,\"text\":\"总结\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为无特定专业对象限定的通用能力或工作特质，去除程度及要求触发词。\",\"issues\":[]},{\"id\":\"sp10k-00788\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"Greenplum\",\"label\":\"S\"},{\"start\":12,\"end\":18,\"text\":\"IBMDB2\",\"label\":\"S\"},{\"start\":19,\"end\":24,\"text\":\"mysql\",\"label\":\"S\"},{\"start\":25,\"end\":31,\"text\":\"oracle\",\"label\":\"S\"},{\"start\":37,\"end\":41,\"text\":\"项目实施\",\"label\":\"S\"},{\"start\":46,\"end\":50,\"text\":\"资格证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"数据库受局部项目实施语境限定，按工具运用标S；项目实施去除经验，非语言资格证书标K。\",\"issues\":[]},{\"id\":\"sp10k-00789\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"业务系统程序的部署调测\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"项目验收\",\"label\":\"S\"},{\"start\":19,\"end\":25,\"text\":\"业务系统升级\",\"label\":\"S\"},{\"start\":26,\"end\":28,\"text\":\"维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分独立职业活动；维护的业务系统对象由局部并列语境承接。\",\"issues\":[]},{\"id\":\"sp10k-00790\",\"spans\":[{\"start\":10,\"end\":17,\"text\":\"freeipa\",\"label\":\"S\"},{\"start\":18,\"end\":27,\"text\":\"saltstack\",\"label\":\"S\"},{\"start\":28,\"end\":35,\"text\":\"ansible\",\"label\":\"S\"},{\"start\":36,\"end\":42,\"text\":\"docker\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确生产环境部署实践中的应用工具，逐项标S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00781",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "Web",
+            "label": "S"
+          },
+          {
+            "start": 6,
+            "end": 15,
+            "text": "winForm编程",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "html",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "ajax",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 31,
+            "text": "css",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 34,
+            "text": "js",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列编程对象及其局部技术栈按职业技术运用标S，共享编程语义不补写。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00782",
+        "spans": [
+          {
+            "start": 11,
+            "end": 16,
+            "text": "大项目管理",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "督办",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "text": "协调",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "项目财务管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业项目管理、督办和财务管理为职业活动；通用协调标T。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00783",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明招聘纪律及违规处理，不含候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00784",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "oracle",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "text": "db2",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "text": "SQL操作",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "JAVA",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "text": "shell",
+            "label": "S"
+          },
+          {
+            "start": 45,
+            "end": 49,
+            "text": "技术证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库与语言处于操作和使用语境，标S；非语言技术证书要求标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00785",
+        "spans": [
+          {
+            "start": 2,
+            "end": 21,
+            "text": "营销领域系统性能、安全、可靠性设计原则",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列对象共享设计原则，保留完整知识短语；关联岗位从业经验未明确具体活动，不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00786",
+        "spans": [
+          {
+            "start": 5,
+            "end": 7,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "协调能力",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "text": "封测厂管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通和协调为通用能力；封测厂管理为明确职业活动，去除经验后意义完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00787",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "做事细心",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "text": "执行任务能力",
+            "label": "T"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "text": "积累",
+            "label": "T"
+          },
+          {
+            "start": 30,
+            "end": 32,
+            "text": "总结",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为无特定专业对象限定的通用能力或工作特质，去除程度及要求触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00788",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "Greenplum",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "text": "IBMDB2",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 24,
+            "text": "mysql",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "text": "oracle",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 41,
+            "text": "项目实施",
+            "label": "S"
+          },
+          {
+            "start": 46,
+            "end": 50,
+            "text": "资格证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库受局部项目实施语境限定，按工具运用标S；项目实施去除经验，非语言资格证书标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00789",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "业务系统程序的部署调测",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "项目验收",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "业务系统升级",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "text": "维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分独立职业活动；维护的业务系统对象由局部并列语境承接。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00790",
+        "spans": [
+          {
+            "start": 10,
+            "end": 17,
+            "text": "freeipa",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 27,
+            "text": "saltstack",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "text": "ansible",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 42,
+            "text": "docker",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确生产环境部署实践中的应用工具，逐项标S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 79,
+  "ids": [
+    "sp10k-00781",
+    "sp10k-00782",
+    "sp10k-00783",
+    "sp10k-00784",
+    "sp10k-00785",
+    "sp10k-00786",
+    "sp10k-00787",
+    "sp10k-00788",
+    "sp10k-00789",
+    "sp10k-00790"
+  ],
+  "at": "2026-09-13T14:56:20.163273+00:00"
+}

@@ -1,0 +1,456 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 48.933,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5022,
+    "completion_tokens": 1654,
+    "total_tokens": 6676,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 786
+    },
+    "input_tokens": 5022,
+    "output_tokens": 1654,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00624",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            18,
+            32
+          ],
+          "to": [
+            13,
+            27
+          ],
+          "text": "监督值班人员进行安全规范操作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00627",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            10,
+            15
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "善于沟通"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            16,
+            21
+          ],
+          "to": [
+            15,
+            20
+          ],
+          "text": "工作有耐心"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            22,
+            26
+          ],
+          "to": [
+            21,
+            25
+          ],
+          "text": "稳定性好"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00628",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            6
+          ],
+          "to": [
+            2,
+            7
+          ],
+          "text": "服务器安全"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            9
+          ],
+          "to": [
+            8,
+            10
+          ],
+          "text": "运维"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            12,
+            21
+          ],
+          "to": [
+            13,
+            22
+          ],
+          "text": "服务器应用配置管理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            22,
+            26
+          ],
+          "to": [
+            23,
+            27
+          ],
+          "text": "系统监控"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            27,
+            36
+          ],
+          "to": [
+            28,
+            37
+          ],
+          "text": "系统和组件安装升级"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            37,
+            41
+          ],
+          "to": [
+            38,
+            42
+          ],
+          "text": "系统安全"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            42,
+            46
+          ],
+          "to": [
+            43,
+            47
+          ],
+          "text": "性能优化"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00629",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            7
+          ],
+          "to": [
+            0,
+            6
+          ],
+          "text": "本科以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00630",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            46,
+            60
+          ],
+          "to": [
+            27,
+            39
+          ],
+          "text": "中级以上专业技术任职资格"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00621\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于领取手续及专业测试资格的报考程序说明，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00622\",\"spans\":[{\"start\":6,\"end\":13,\"text\":\"大专及以上学历\",\"label\":\"K\"},{\"start\":19,\"end\":23,\"text\":\"运维经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格名；运维经验对应明确职业活动，年限不纳入跨度。\",\"issues\":[]},{\"id\":\"sp10k-00623\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"大客户运维\",\"label\":\"S\"},{\"start\":8,\"end\":10,\"text\":\"跟进\",\"label\":\"S\"},{\"start\":11,\"end\":17,\"text\":\"解决客户需求\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取客户运维及跟进、解决客户需求等职业活动；提升满意度属于结果目标，不标。\",\"issues\":[]},{\"id\":\"sp10k-00624\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"两票三制\",\"label\":\"K\"},{\"start\":18,\"end\":32,\"text\":\"监督值班人员进行安全规范操作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"两票三制为专业规范知识；监督值班人员进行安全规范操作为职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00625\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于报名提示、简章阅读及岗位选择要求，不是候选人能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00626\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于面试及成绩判定安排，不是候选人资格或能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00627\",\"spans\":[{\"start\":0,\"end\":5,\"text\":\"学习能力强\",\"label\":\"T\"},{\"start\":6,\"end\":9,\"text\":\"性格好\",\"label\":\"T\"},{\"start\":10,\"end\":15,\"text\":\"善于沟通\",\"label\":\"T\"},{\"start\":16,\"end\":21,\"text\":\"工作有耐心\",\"label\":\"T\"},{\"start\":22,\"end\":26,\"text\":\"稳定性好\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为跨行业通用能力或个人特质。\",\"issues\":[]},{\"id\":\"sp10k-00628\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"服务器安全\",\"label\":\"K\"},{\"start\":7,\"end\":9,\"text\":\"运维\",\"label\":\"S\"},{\"start\":12,\"end\":21,\"text\":\"服务器应用配置管理\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"系统监控\",\"label\":\"S\"},{\"start\":27,\"end\":36,\"text\":\"系统和组件安装升级\",\"label\":\"S\"},{\"start\":37,\"end\":41,\"text\":\"系统安全\",\"label\":\"K\"},{\"start\":42,\"end\":46,\"text\":\"性能优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取服务器安全、系统安全等领域知识，以及运维、配置管理、监控、安装升级和性能优化等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00629\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"本科以上学历为完整学历资格名；相关专业为泛化专业要求，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00630\",\"spans\":[{\"start\":46,\"end\":60,\"text\":\"中级以上专业技术任职资格\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的专业技术资格；工作经历内容缺乏具体领域或活动，不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00621",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于领取手续及专业测试资格的报考程序说明，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00622",
+        "spans": [
+          {
+            "start": 6,
+            "end": 13,
+            "text": "大专及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "运维经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格名；运维经验对应明确职业活动，年限不纳入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00623",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "大客户运维",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "跟进",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "解决客户需求",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取客户运维及跟进、解决客户需求等职业活动；提升满意度属于结果目标，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00624",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "两票三制",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 27,
+            "text": "监督值班人员进行安全规范操作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两票三制为专业规范知识；监督值班人员进行安全规范操作为职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00625",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于报名提示、简章阅读及岗位选择要求，不是候选人能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00626",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于面试及成绩判定安排，不是候选人资格或能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00627",
+        "spans": [
+          {
+            "start": 0,
+            "end": 5,
+            "text": "学习能力强",
+            "label": "T"
+          },
+          {
+            "start": 6,
+            "end": 9,
+            "text": "性格好",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "善于沟通",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "text": "工作有耐心",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "稳定性好",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为跨行业通用能力或个人特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00628",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "服务器安全",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "运维",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 22,
+            "text": "服务器应用配置管理",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "系统监控",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 37,
+            "text": "系统和组件安装升级",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "text": "系统安全",
+            "label": "K"
+          },
+          {
+            "start": 43,
+            "end": 47,
+            "text": "性能优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取服务器安全、系统安全等领域知识，以及运维、配置管理、监控、安装升级和性能优化等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00629",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "本科以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "本科以上学历为完整学历资格名；相关专业为泛化专业要求，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00630",
+        "spans": [
+          {
+            "start": 27,
+            "end": 39,
+            "text": "中级以上专业技术任职资格",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的专业技术资格；工作经历内容缺乏具体领域或活动，不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 63,
+  "ids": [
+    "sp10k-00621",
+    "sp10k-00622",
+    "sp10k-00623",
+    "sp10k-00624",
+    "sp10k-00625",
+    "sp10k-00626",
+    "sp10k-00627",
+    "sp10k-00628",
+    "sp10k-00629",
+    "sp10k-00630"
+  ],
+  "at": "2026-09-13T14:42:26.742567+00:00"
+}

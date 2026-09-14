@@ -1,0 +1,760 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 42.397,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5118,
+    "completion_tokens": 1879,
+    "total_tokens": 6997,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 731
+    },
+    "input_tokens": 5118,
+    "output_tokens": 1879,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06117",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            14
+          ],
+          "to": [
+            9,
+            16
+          ],
+          "text": "规划长周期物料"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            25
+          ],
+          "to": [
+            17,
+            29
+          ],
+          "text": "整理长周期物料的备料需求"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            26,
+            30
+          ],
+          "to": [
+            30,
+            34
+          ],
+          "text": "协同销售"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            31,
+            37
+          ],
+          "to": [
+            34,
+            40
+          ],
+          "text": "准备备料报告"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            38,
+            49
+          ],
+          "to": [
+            40,
+            51
+          ],
+          "text": "组织SOP会议决策备料"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            52,
+            60
+          ],
+          "to": [
+            54,
+            62
+          ],
+          "text": "跟进采购备料进展"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06118",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            16
+          ],
+          "to": [
+            6,
+            19
+          ],
+          "text": "备料单/订单的材料交期评审"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            23
+          ],
+          "to": [
+            20,
+            26
+          ],
+          "text": "材料交期跟进"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            24,
+            26
+          ],
+          "to": [
+            27,
+            29
+          ],
+          "text": "反馈"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06119",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            13
+          ],
+          "to": [
+            3,
+            12
+          ],
+          "text": "轻金属铸造工艺流程"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            18
+          ],
+          "to": [
+            13,
+            17
+          ],
+          "text": "设备操作"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            20,
+            31
+          ],
+          "to": [
+            21,
+            31
+          ],
+          "text": "解决生产中的技术问题"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06120",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            8
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "业务部门的产品评审"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            16
+          ],
+          "to": [
+            14,
+            20
+          ],
+          "text": "配置核算办法"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            20,
+            28
+          ],
+          "to": [
+            24,
+            31
+          ],
+          "text": "系统的实施方案"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            29,
+            37
+          ],
+          "to": [
+            32,
+            41
+          ],
+          "text": "推动相关系统的建设"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06121",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            30
+          ],
+          "to": [
+            0,
+            22
+          ],
+          "text": "监督和指导下级机构完成人伤案件的查勘调查工作"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            39,
+            57
+          ],
+          "to": [
+            41,
+            56
+          ],
+          "text": "直接参与重大人伤案件的查勘调查"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06123",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            10,
+            18
+          ],
+          "to": [
+            6,
+            14
+          ],
+          "text": "热能动力工程技术"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            28
+          ],
+          "to": [
+            15,
+            24
+          ],
+          "text": "电力系统自动化技术"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            29,
+            37
+          ],
+          "to": [
+            25,
+            33
+          ],
+          "text": "发电厂及电力系统"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06124",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            14
+          ],
+          "to": [
+            2,
+            10
+          ],
+          "text": "激光熔覆工艺原理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            19
+          ],
+          "to": [
+            11,
+            15
+          ],
+          "text": "材料选型"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            20,
+            32
+          ],
+          "to": [
+            16,
+            25
+          ],
+          "text": "合金粉末、基材匹配"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            33,
+            37
+          ],
+          "to": [
+            27,
+            31
+          ],
+          "text": "参数优化"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            38,
+            55
+          ],
+          "to": [
+            32,
+            43
+          ],
+          "text": "功率、扫描速度、送粉量"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            59,
+            76
+          ],
+          "to": [
+            49,
+            72
+          ],
+          "text": "解决熔覆层裂纹、气孔、结合力不足等常见技术缺陷"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06125",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            24
+          ],
+          "to": [
+            3,
+            20
+          ],
+          "text": "院方后勤管理部门（甲方）的沟通协调"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            25,
+            38
+          ],
+          "to": [
+            21,
+            33
+          ],
+          "text": "建立并维护良好的客情关系"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            39,
+            46
+          ],
+          "to": [
+            34,
+            42
+          ],
+          "text": "及时响应院方需求"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06116\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"提升产品品质\",\"label\":\"S\"},{\"start\":9,\"end\":13,\"text\":\"工艺能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的产品品质提升和工艺能力要求。\",\"issues\":[]},{\"id\":\"sp10k-06117\",\"spans\":[{\"start\":9,\"end\":14,\"text\":\"规划长周期物料\",\"label\":\"S\"},{\"start\":15,\"end\":25,\"text\":\"整理长周期物料的备料需求\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"协同销售\",\"label\":\"T\"},{\"start\":31,\"end\":37,\"text\":\"准备备料报告\",\"label\":\"S\"},{\"start\":38,\"end\":49,\"text\":\"组织SOP会议决策备料\",\"label\":\"S\"},{\"start\":52,\"end\":60,\"text\":\"跟进采购备料进展\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取物料规划、备料整理与报告、会议决策、采购进度跟进及跨部门协同等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06118\",\"spans\":[{\"start\":6,\"end\":16,\"text\":\"备料单/订单的材料交期评审\",\"label\":\"S\"},{\"start\":17,\"end\":23,\"text\":\"材料交期跟进\",\"label\":\"S\"},{\"start\":24,\"end\":26,\"text\":\"反馈\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取材料交期评审、跟进及反馈活动。\",\"issues\":[]},{\"id\":\"sp10k-06119\",\"spans\":[{\"start\":3,\"end\":13,\"text\":\"轻金属铸造工艺流程\",\"label\":\"K\"},{\"start\":14,\"end\":18,\"text\":\"设备操作\",\"label\":\"S\"},{\"start\":20,\"end\":31,\"text\":\"解决生产中的技术问题\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"铸造工艺流程属于领域知识，设备操作和生产技术问题解决属于职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06120\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"业务部门的产品评审\",\"label\":\"S\"},{\"start\":10,\"end\":16,\"text\":\"配置核算办法\",\"label\":\"S\"},{\"start\":20,\"end\":28,\"text\":\"系统的实施方案\",\"label\":\"S\"},{\"start\":29,\"end\":37,\"text\":\"推动相关系统的建设\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取产品评审、配置核算、系统实施方案确定及系统建设推动等活动。\",\"issues\":[]},{\"id\":\"sp10k-06121\",\"spans\":[{\"start\":0,\"end\":30,\"text\":\"监督和指导下级机构完成人伤案件的查勘调查工作\",\"label\":\"S\"},{\"start\":39,\"end\":57,\"text\":\"直接参与重大人伤案件的查勘调查\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取对人伤案件查勘调查工作的监督指导和直接参与。\",\"issues\":[]},{\"id\":\"sp10k-06122\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅提出泛化的同行业工作经验要求，未指明具体行业核心或职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06123\",\"spans\":[{\"start\":10,\"end\":18,\"text\":\"热能动力工程技术\",\"label\":\"K\"},{\"start\":19,\"end\":28,\"text\":\"电力系统自动化技术\",\"label\":\"K\"},{\"start\":29,\"end\":37,\"text\":\"发电厂及电力系统\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取专业要求中的具体领域和专业名称。\",\"issues\":[]},{\"id\":\"sp10k-06124\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"激光熔覆工艺原理\",\"label\":\"K\"},{\"start\":15,\"end\":19,\"text\":\"材料选型\",\"label\":\"S\"},{\"start\":20,\"end\":32,\"text\":\"合金粉末、基材匹配\",\"label\":\"S\"},{\"start\":33,\"end\":37,\"text\":\"参数优化\",\"label\":\"S\"},{\"start\":38,\"end\":55,\"text\":\"功率、扫描速度、送粉量\",\"label\":\"K\"},{\"start\":59,\"end\":76,\"text\":\"解决熔覆层裂纹、气孔、结合力不足等常见技术缺陷\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取激光熔覆原理知识、材料与参数选择优化方法，以及技术缺陷解决活动。\",\"issues\":[]},{\"id\":\"sp10k-06125\",\"spans\":[{\"start\":5,\"end\":24,\"text\":\"院方后勤管理部门（甲方）的沟通协调\",\"label\":\"T\"},{\"start\":25,\"end\":38,\"text\":\"建立并维护良好的客情关系\",\"label\":\"T\"},{\"start\":39,\"end\":46,\"text\":\"及时响应院方需求\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取对甲方的沟通协调、客情关系维护及需求响应活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06116",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "提升产品品质",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "工艺能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的产品品质提升和工艺能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06117",
+        "spans": [
+          {
+            "start": 9,
+            "end": 16,
+            "text": "规划长周期物料",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 29,
+            "text": "整理长周期物料的备料需求",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "协同销售",
+            "label": "T"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "text": "准备备料报告",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 51,
+            "text": "组织SOP会议决策备料",
+            "label": "S"
+          },
+          {
+            "start": 54,
+            "end": 62,
+            "text": "跟进采购备料进展",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取物料规划、备料整理与报告、会议决策、采购进度跟进及跨部门协同等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06118",
+        "spans": [
+          {
+            "start": 6,
+            "end": 19,
+            "text": "备料单/订单的材料交期评审",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "材料交期跟进",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "text": "反馈",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取材料交期评审、跟进及反馈活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06119",
+        "spans": [
+          {
+            "start": 3,
+            "end": 12,
+            "text": "轻金属铸造工艺流程",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "设备操作",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 31,
+            "text": "解决生产中的技术问题",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "铸造工艺流程属于领域知识，设备操作和生产技术问题解决属于职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06120",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "业务部门的产品评审",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "配置核算办法",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 31,
+            "text": "系统的实施方案",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 41,
+            "text": "推动相关系统的建设",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取产品评审、配置核算、系统实施方案确定及系统建设推动等活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06121",
+        "spans": [
+          {
+            "start": 0,
+            "end": 22,
+            "text": "监督和指导下级机构完成人伤案件的查勘调查工作",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 56,
+            "text": "直接参与重大人伤案件的查勘调查",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取对人伤案件查勘调查工作的监督指导和直接参与。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06122",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅提出泛化的同行业工作经验要求，未指明具体行业核心或职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06123",
+        "spans": [
+          {
+            "start": 6,
+            "end": 14,
+            "text": "热能动力工程技术",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "text": "电力系统自动化技术",
+            "label": "K"
+          },
+          {
+            "start": 25,
+            "end": 33,
+            "text": "发电厂及电力系统",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取专业要求中的具体领域和专业名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06124",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "激光熔覆工艺原理",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "材料选型",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "text": "合金粉末、基材匹配",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "参数优化",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 43,
+            "text": "功率、扫描速度、送粉量",
+            "label": "K"
+          },
+          {
+            "start": 49,
+            "end": 72,
+            "text": "解决熔覆层裂纹、气孔、结合力不足等常见技术缺陷",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取激光熔覆原理知识、材料与参数选择优化方法，以及技术缺陷解决活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06125",
+        "spans": [
+          {
+            "start": 3,
+            "end": 20,
+            "text": "院方后勤管理部门（甲方）的沟通协调",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 33,
+            "text": "建立并维护良好的客情关系",
+            "label": "T"
+          },
+          {
+            "start": 34,
+            "end": 42,
+            "text": "及时响应院方需求",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取对甲方的沟通协调、客情关系维护及需求响应活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 232,
+  "ids": [
+    "sp10k-06116",
+    "sp10k-06117",
+    "sp10k-06118",
+    "sp10k-06119",
+    "sp10k-06120",
+    "sp10k-06121",
+    "sp10k-06122",
+    "sp10k-06123",
+    "sp10k-06124",
+    "sp10k-06125"
+  ],
+  "at": "2026-09-13T17:31:19.077945+00:00"
+}

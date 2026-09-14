@@ -1,0 +1,586 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04379",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "面试评分与评委议事规则，不是候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04380",
+      "spans": [
+        {
+          "start": 8,
+          "end": 15,
+          "text": "系统规划及维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "规划与维护共享系统对象；运维安全是结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04381",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "本科",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "机械类",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历层次与专业类别。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04382",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "人员管理考核与培训责任安排，不是候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04383",
+      "spans": [
+        {
+          "start": 6,
+          "end": 17,
+          "text": "软件产品安装部署、调试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装部署与调试共享软件产品对象，保留完整活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04384",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "计算机基本功",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 23,
+          "text": "linux操作系统",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "数据结构",
+          "label": "K"
+        },
+        {
+          "start": 39,
+          "end": 43,
+          "text": "网络知识",
+          "label": "K"
+        },
+        {
+          "start": 46,
+          "end": 49,
+          "text": "阿里云",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "区分计算机基础知识与岗位工具要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04385",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "团队协作精神",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 30,
+          "text": "承受较大的工作压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "协作、沟通协调与抗压均为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04386",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "Linux系统",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 21,
+          "text": "windows系统",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "优化",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 45,
+          "text": "定制linux参数设置",
+          "label": "S"
+        },
+        {
+          "start": 50,
+          "end": 54,
+          "text": "grep",
+          "label": "S"
+        },
+        {
+          "start": 55,
+          "end": 58,
+          "text": "awk",
+          "label": "S"
+        },
+        {
+          "start": 59,
+          "end": 62,
+          "text": "sed",
+          "label": "S"
+        },
+        {
+          "start": 71,
+          "end": 76,
+          "text": "shell",
+          "label": "S"
+        },
+        {
+          "start": 77,
+          "end": 81,
+          "text": "perl",
+          "label": "S"
+        },
+        {
+          "start": 82,
+          "end": 88,
+          "text": "python",
+          "label": "S"
+        },
+        {
+          "start": 89,
+          "end": 95,
+          "text": "脚本语言编程",
+          "label": "S"
+        },
+        {
+          "start": 98,
+          "end": 103,
+          "text": "自动化运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统由局部优化与配置语境限定为岗位工具；抽取编程和运维活动，排除效率质量目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04387",
+      "spans": [
+        {
+          "start": 8,
+          "end": 10,
+          "text": "中医",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 16,
+          "text": "中西医结合",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 36,
+          "text": "硕士研究生及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 39,
+          "end": 45,
+          "text": "相应资格证书",
+          "label": "K"
+        },
+        {
+          "start": 46,
+          "end": 58,
+          "text": "住院医师规范化培训合格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业方向、学历及明确要求取得的资格证书；排除岗位名称和年龄。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04388",
+      "spans": [
+        {
+          "start": 29,
+          "end": 36,
+          "text": "大学本科及以上",
+          "label": "K"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "临床医学",
+          "label": "K"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "急诊医学",
+          "label": "K"
+        },
+        {
+          "start": 46,
+          "end": 50,
+          "text": "全科医学",
+          "label": "K"
+        },
+        {
+          "start": 57,
+          "end": 64,
+          "text": "大学专科及以上",
+          "label": "K"
+        },
+        {
+          "start": 64,
+          "end": 66,
+          "text": "护理",
+          "label": "K"
+        },
+        {
+          "start": 67,
+          "end": 70,
+          "text": "护理学",
+          "label": "K"
+        },
+        {
+          "start": 76,
+          "end": 81,
+          "text": "本科及以上",
+          "label": "K"
+        },
+        {
+          "start": 81,
+          "end": 85,
+          "text": "影像技术",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "依据表头抽取学历与专业要求；岗位名称、人数和国籍不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04389",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "孤立研究短语缺少要求或职责语境，暂不进入主层。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "其他临床医学及相关专业的基础与临床研究",
+          "alternatives": [
+            "候选人研究职责或能力要求，纳入范围",
+            "研究方向或业务范围介绍，排除"
+          ],
+          "reason": "缺少栏目及谓语，无法确认该研究内容是否要求候选人具备或执行。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04390",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "毕业生范围界定及证书取得时限，未提供具体学历层次或资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04391",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "投标文件编制",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 29,
+          "text": "施工组织计划、调试方案、运维方案编制",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "编制为职业活动；后组文档共享编制动作，保留连续完整跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04392",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "Redis",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 15,
+          "text": "kafka",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 25,
+          "text": "软件产品研发设计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取研发所用工具及软件产品研发设计活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04393",
+      "spans": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "内容更新",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "用户疑惑答复",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取平台内容维护与用户答疑职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04394",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "数据库数据查询及修改技术",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体可执行的数据操作技术；保留共享对象与技术中心词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04395",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "面试缴费与通知书领取流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04396",
+      "spans": [
+        {
+          "start": 2,
+          "end": 22,
+          "text": "监控、维护用户在使用过程中的网络使用问题",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 40,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "text": "提出解决方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络问题处理与方案提出为职业活动，团队间沟通为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04397",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "换热器制造工艺",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "焊接",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "装配",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "制造工艺为领域知识；所列工序的知识或操作要求未明，S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "焊接",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "作为制造工艺的列举项，可能要求工序知识，也可能要求实际焊接技能；缺少实践或原理限定。"
+        },
+        {
+          "kind": "type",
+          "text": "装配",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "作为制造工艺的列举项，可能要求工序知识，也可能要求实际装配技能；缺少实践或原理限定。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04398",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "团队协作精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确软技能；专业技能为未指明内容的泛称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04400",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "泛化交办工作，没有具体职业活动或能力内容。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04401",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告解释权归属说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04402",
+      "spans": [
+        {
+          "start": 17,
+          "end": 23,
+          "text": "对外技术联络",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "对外联络属于人际沟通职能；工程建设和运维期只是联络场景限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04403",
+      "spans": [
+        {
+          "start": 6,
+          "end": 12,
+          "text": "线上营销方式",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "数据分析能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "营销方式为可执行职业方法，数据分析能力具有明确业务对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04404",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "大学本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 21,
+          "text": "SAPMM实施",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 46,
+          "text": "MM模块的项目实施、配置及技术支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历按完整资格抽取；实施经验去除年限与经验后意义完整，后段保留共享模块对象的活动。",
+      "issues": []
+    }
+  ]
+}

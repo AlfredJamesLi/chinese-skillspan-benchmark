@@ -1,0 +1,419 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 54.484,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5142,
+    "completion_tokens": 2016,
+    "total_tokens": 7158,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1198
+    },
+    "input_tokens": 5142,
+    "output_tokens": 2016,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01061",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            16,
+            21
+          ],
+          "to": [
+            20,
+            25
+          ],
+          "text": "shell"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            28
+          ],
+          "to": [
+            26,
+            32
+          ],
+          "text": "python"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01062",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            6
+          ],
+          "to": [
+            4,
+            7
+          ],
+          "text": "互联网"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            9
+          ],
+          "to": [
+            8,
+            10
+          ],
+          "text": "电商"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            25,
+            29
+          ],
+          "to": [
+            27,
+            31
+          ],
+          "text": "活动策划"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            36,
+            40
+          ],
+          "to": [
+            38,
+            42
+          ],
+          "text": "活动策划"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            41,
+            43
+          ],
+          "to": [
+            43,
+            45
+          ],
+          "text": "组织"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            44,
+            46
+          ],
+          "to": [
+            46,
+            48
+          ],
+          "text": "执行"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01070",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            8,
+            14
+          ],
+          "to": [
+            9,
+            14
+          ],
+          "text": "结果导向型"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            23
+          ],
+          "to": [
+            21,
+            27
+          ],
+          "text": "逻辑思维能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            24,
+            30
+          ],
+          "to": [
+            28,
+            34
+          ],
+          "text": "敏锐的洞察力"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            31,
+            34
+          ],
+          "to": [
+            35,
+            38
+          ],
+          "text": "理解力"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01061\",\"spans\":[{\"start\":4,\"end\":9,\"text\":\"Linux\",\"label\":\"S\"},{\"start\":16,\"end\":21,\"text\":\"shell\",\"label\":\"S\"},{\"start\":22,\"end\":28,\"text\":\"python\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注岗位要求使用的命令及编程工具。\",\"issues\":[]},{\"id\":\"sp10k-01062\",\"spans\":[{\"start\":3,\"end\":6,\"text\":\"互联网\",\"label\":\"K\"},{\"start\":7,\"end\":9,\"text\":\"电商\",\"label\":\"K\"},{\"start\":25,\"end\":29,\"text\":\"活动策划\",\"label\":\"S\"},{\"start\":36,\"end\":40,\"text\":\"活动策划\",\"label\":\"S\"},{\"start\":41,\"end\":43,\"text\":\"组织\",\"label\":\"S\"},{\"start\":44,\"end\":46,\"text\":\"执行\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"互联网和电商为行业领域知识；活动策划、组织和执行为明确职业活动。泛化年限、部门负责人经历及丰富经验不标。\",\"issues\":[]},{\"id\":\"sp10k-01063\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"政府机关见习公告及遴选信息，不构成候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01064\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"事业单位考核材料、考核资格及放弃后果属于招聘流程公示，不标注。\",\"issues\":[]},{\"id\":\"sp10k-01065\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"资格复审合格后进入面试属于招聘流程，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01066\",\"spans\":[{\"start\":40,\"end\":42,\"text\":\"审核\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"审核为职责中明确要求执行的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01067\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"文字表达\",\"label\":\"T\"},{\"start\":8,\"end\":14,\"text\":\"语言沟通能力\",\"label\":\"T\"},{\"start\":17,\"end\":21,\"text\":\"逻辑清晰\",\"label\":\"T\"},{\"start\":22,\"end\":26,\"text\":\"表达清楚\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"文字表达、语言沟通、逻辑清晰和表达清楚均为通用沟通与表达能力；确保远程沟通没有问题属于结果性表述。\",\"issues\":[]},{\"id\":\"sp10k-01068\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"招聘事项解释责任声明，不含候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-01069\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"领取面试通知单属于招聘流程，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01070\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"商务谈判\",\"label\":\"S\"},{\"start\":8,\"end\":14,\"text\":\"结果导向型\",\"label\":\"T\"},{\"start\":17,\"end\":23,\"text\":\"逻辑思维能力\",\"label\":\"T\"},{\"start\":24,\"end\":30,\"text\":\"敏锐的洞察力\",\"label\":\"T\"},{\"start\":31,\"end\":34,\"text\":\"理解力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"商务谈判为职业活动；结果导向、逻辑思维、洞察力和理解力为通用能力或特质。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01061",
+        "spans": [
+          {
+            "start": 4,
+            "end": 9,
+            "text": "Linux",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "text": "shell",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "text": "python",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注岗位要求使用的命令及编程工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01062",
+        "spans": [
+          {
+            "start": 4,
+            "end": 7,
+            "text": "互联网",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "电商",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "活动策划",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "text": "活动策划",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 45,
+            "text": "组织",
+            "label": "S"
+          },
+          {
+            "start": 46,
+            "end": 48,
+            "text": "执行",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "互联网和电商为行业领域知识；活动策划、组织和执行为明确职业活动。泛化年限、部门负责人经历及丰富经验不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01063",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "政府机关见习公告及遴选信息，不构成候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01064",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "事业单位考核材料、考核资格及放弃后果属于招聘流程公示，不标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01065",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "资格复审合格后进入面试属于招聘流程，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01066",
+        "spans": [
+          {
+            "start": 40,
+            "end": 42,
+            "text": "审核",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "审核为职责中明确要求执行的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01067",
+        "spans": [
+          {
+            "start": 3,
+            "end": 7,
+            "text": "文字表达",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "语言沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "逻辑清晰",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "表达清楚",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文字表达、语言沟通、逻辑清晰和表达清楚均为通用沟通与表达能力；确保远程沟通没有问题属于结果性表述。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01068",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "招聘事项解释责任声明，不含候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01069",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "领取面试通知单属于招聘流程，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01070",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "商务谈判",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 14,
+            "text": "结果导向型",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "text": "逻辑思维能力",
+            "label": "T"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "text": "敏锐的洞察力",
+            "label": "T"
+          },
+          {
+            "start": 35,
+            "end": 38,
+            "text": "理解力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "商务谈判为职业活动；结果导向、逻辑思维、洞察力和理解力为通用能力或特质。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 107,
+  "ids": [
+    "sp10k-01061",
+    "sp10k-01062",
+    "sp10k-01063",
+    "sp10k-01064",
+    "sp10k-01065",
+    "sp10k-01066",
+    "sp10k-01067",
+    "sp10k-01068",
+    "sp10k-01069",
+    "sp10k-01070"
+  ],
+  "at": "2026-09-13T15:20:04.631786+00:00"
+}

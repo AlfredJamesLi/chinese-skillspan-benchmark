@@ -1,0 +1,242 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 49.383,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5041,
+    "completion_tokens": 1554,
+    "total_tokens": 6595,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 707
+    },
+    "input_tokens": 5041,
+    "output_tokens": 1554,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00911\",\"spans\":[{\"start\":1,\"end\":5,\"text\":\"CCIP\",\"label\":\"K\"},{\"start\":15,\"end\":25,\"text\":\"SAPBasis运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"证书名按非语言资格标K；运维为明确职业活动，去除经验及优先修饰。\",\"issues\":[]},{\"id\":\"sp10k-00912\",\"spans\":[{\"start\":8,\"end\":14,\"text\":\"舞蹈表演专业\",\"label\":\"K\"},{\"start\":17,\"end\":23,\"text\":\"大学本科学历\",\"label\":\"K\"},{\"start\":27,\"end\":31,\"text\":\"舞蹈表演\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取专业与完整学历资格；专业代码不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00913\",\"spans\":[{\"start\":27,\"end\":39,\"text\":\"厨师长或助理厨师工作经验\",\"label\":\"S\"},{\"start\":42,\"end\":47,\"text\":\"厨师资格证\",\"label\":\"K\"},{\"start\":49,\"end\":56,\"text\":\"厨房的设备知识\",\"label\":\"K\"},{\"start\":64,\"end\":68,\"text\":\"品行端正\",\"label\":\"T\"},{\"start\":73,\"end\":78,\"text\":\"工作责任感\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"职能经历保留共享的工作经验以避免丢失实践要求；另标职业资格、设备知识与通用特质。岗位名称、人数及性别条件不标。\",\"issues\":[]},{\"id\":\"sp10k-00914\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为留学人员提交学历认证报告的行政材料要求，未明确具体学历资格条件。\",\"issues\":[]},{\"id\":\"sp10k-00915\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"不限学历与经验不构成资格要求；一对一指导属于培训支持。\",\"issues\":[]},{\"id\":\"sp10k-00916\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"公告解释权说明，不涉及候选人能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00917\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"解决方案编制\",\"label\":\"S\"},{\"start\":12,\"end\":18,\"text\":\"交流撰写能力\",\"label\":\"S\"},{\"start\":22,\"end\":28,\"text\":\"客户沟通技巧\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"解决方案语境下的编制、交流撰写按领域绑定能力标S；客户沟通技巧标T。\",\"issues\":[]},{\"id\":\"sp10k-00918\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅要求提交证明材料，未给出可抽取的具体资格条件。\",\"issues\":[]},{\"id\":\"sp10k-00919\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"Linux/Unix操作系统\",\"label\":\"S\"},{\"start\":23,\"end\":37,\"text\":\"Linux/Unix系统管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"同句明确系统管理实践，操作系统按岗位工具运用标S；系统管理去除经验和年限。\",\"issues\":[]},{\"id\":\"sp10k-00920\",\"spans\":[{\"start\":2,\"end\":19,\"text\":\"Windows操作系统的安装和设置\",\"label\":\"S\"},{\"start\":22,\"end\":30,\"text\":\"办公软件安装维护\",\"label\":\"S\"},{\"start\":36,\"end\":44,\"text\":\"网络故障排错能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"均为明确技术活动或领域绑定能力；安装和设置保留共享对象，避免拆分后丢失必要限定。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00911",
+        "spans": [
+          {
+            "start": 1,
+            "end": 5,
+            "text": "CCIP",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 25,
+            "text": "SAPBasis运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "证书名按非语言资格标K；运维为明确职业活动，去除经验及优先修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00912",
+        "spans": [
+          {
+            "start": 8,
+            "end": 14,
+            "text": "舞蹈表演专业",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "大学本科学历",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "舞蹈表演",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取专业与完整学历资格；专业代码不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00913",
+        "spans": [
+          {
+            "start": 27,
+            "end": 39,
+            "text": "厨师长或助理厨师工作经验",
+            "label": "S"
+          },
+          {
+            "start": 42,
+            "end": 47,
+            "text": "厨师资格证",
+            "label": "K"
+          },
+          {
+            "start": 49,
+            "end": 56,
+            "text": "厨房的设备知识",
+            "label": "K"
+          },
+          {
+            "start": 64,
+            "end": 68,
+            "text": "品行端正",
+            "label": "T"
+          },
+          {
+            "start": 73,
+            "end": 78,
+            "text": "工作责任感",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "职能经历保留共享的工作经验以避免丢失实践要求；另标职业资格、设备知识与通用特质。岗位名称、人数及性别条件不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00914",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为留学人员提交学历认证报告的行政材料要求，未明确具体学历资格条件。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00915",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "不限学历与经验不构成资格要求；一对一指导属于培训支持。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00916",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "公告解释权说明，不涉及候选人能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00917",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "解决方案编制",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "text": "交流撰写能力",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "客户沟通技巧",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "解决方案语境下的编制、交流撰写按领域绑定能力标S；客户沟通技巧标T。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00918",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅要求提交证明材料，未给出可抽取的具体资格条件。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00919",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "Linux/Unix操作系统",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 37,
+            "text": "Linux/Unix系统管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "同句明确系统管理实践，操作系统按岗位工具运用标S；系统管理去除经验和年限。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00920",
+        "spans": [
+          {
+            "start": 2,
+            "end": 19,
+            "text": "Windows操作系统的安装和设置",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "text": "办公软件安装维护",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 44,
+            "text": "网络故障排错能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为明确技术活动或领域绑定能力；安装和设置保留共享对象，避免拆分后丢失必要限定。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 92,
+  "ids": [
+    "sp10k-00911",
+    "sp10k-00912",
+    "sp10k-00913",
+    "sp10k-00914",
+    "sp10k-00915",
+    "sp10k-00916",
+    "sp10k-00917",
+    "sp10k-00918",
+    "sp10k-00919",
+    "sp10k-00920"
+  ],
+  "at": "2026-09-13T15:07:29.391383+00:00"
+}

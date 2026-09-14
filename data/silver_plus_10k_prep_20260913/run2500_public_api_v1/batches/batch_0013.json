@@ -1,0 +1,266 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 40.151,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4945,
+    "completion_tokens": 1243,
+    "total_tokens": 6188,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 345
+    },
+    "input_tokens": 4945,
+    "output_tokens": 1243,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00121\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"西门子博图\",\"label\":\"S\"},{\"start\":8,\"end\":15,\"text\":\"AotoCAD\",\"label\":\"S\"},{\"start\":16,\"end\":22,\"text\":\"office\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"设计及办公软件按岗位工具标S，保留原文拼写。\",\"issues\":[]},{\"id\":\"sp10k-00122\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"软件开发原理\",\"label\":\"K\"},{\"start\":9,\"end\":13,\"text\":\"网络知识\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"明确原理与知识要求，分别标K。\",\"issues\":[]},{\"id\":\"sp10k-00123\",\"spans\":[],\"status\":\"adjudication_required\",\"note\":\"培训、提升及证书考评未明确属于候选人要求还是入职后的培养支持。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"定期参加业务培训，提升专业水平，专业技能证书考评\",\"alternatives\":[\"公司培训及成长支持，不标\",\"候选人培训参与及资格考评要求，纳入范围\"],\"reason\":\"缺少职责、任职要求或福利语境，且未给出具体技能或资格名称，无法确认标注范围。\"}]},{\"id\":\"sp10k-00124\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留完整学历资格名，排除触发词。\",\"issues\":[]},{\"id\":\"sp10k-00125\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"技术钻研能力\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"技术攻关\",\"label\":\"S\"},{\"start\":25,\"end\":31,\"text\":\"软件体系结构\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"领域绑定能力与技术活动标S；软件体系结构为知识要求。\",\"issues\":[]},{\"id\":\"sp10k-00126\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅含泛化相关专业及工作经验年限，没有具体专业、领域或职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00127\",\"spans\":[{\"start\":2,\"end\":22,\"text\":\"项目线上到线下的各业务环节运营的推进执行\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"运营推进执行保留必要业务对象；达成目标为纯结果，不标。\",\"issues\":[]},{\"id\":\"sp10k-00128\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"通信\",\"label\":\"K\"},{\"start\":3,\"end\":6,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":7,\"end\":9,\"text\":\"电子\",\"label\":\"K\"},{\"start\":10,\"end\":12,\"text\":\"机电\",\"label\":\"K\"},{\"start\":17,\"end\":23,\"text\":\"大专以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"并列专业名分别标K，学历保留完整资格边界。\",\"issues\":[]},{\"id\":\"sp10k-00129\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"TCP/IP网络通信基本原理\",\"label\":\"K\"},{\"start\":19,\"end\":28,\"text\":\"Linux操作系统\",\"label\":\"S\"},{\"start\":29,\"end\":47,\"text\":\"Openstack云平台相关运维技术\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"网络通信基本原理标K；操作系统与云平台运维技术在局部运维语境下标S。\",\"issues\":[]},{\"id\":\"sp10k-00130\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"软件行业\",\"label\":\"K\"},{\"start\":6,\"end\":10,\"text\":\"项目实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"行业背景标K，项目实施为完整职业活动，去除经验等修饰。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00121",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "西门子博图",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 15,
+            "text": "AotoCAD",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "office",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设计及办公软件按岗位工具标S，保留原文拼写。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00122",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "软件开发原理",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "网络知识",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确原理与知识要求，分别标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00123",
+        "spans": [],
+        "status": "adjudication_required",
+        "note": "培训、提升及证书考评未明确属于候选人要求还是入职后的培养支持。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "定期参加业务培训，提升专业水平，专业技能证书考评",
+            "alternatives": [
+              "公司培训及成长支持，不标",
+              "候选人培训参与及资格考评要求，纳入范围"
+            ],
+            "reason": "缺少职责、任职要求或福利语境，且未给出具体技能或资格名称，无法确认标注范围。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00124",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留完整学历资格名，排除触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00125",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "技术钻研能力",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "技术攻关",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "text": "软件体系结构",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "领域绑定能力与技术活动标S；软件体系结构为知识要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00126",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅含泛化相关专业及工作经验年限，没有具体专业、领域或职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00127",
+        "spans": [
+          {
+            "start": 2,
+            "end": 22,
+            "text": "项目线上到线下的各业务环节运营的推进执行",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "运营推进执行保留必要业务对象；达成目标为纯结果，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00128",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "通信",
+            "label": "K"
+          },
+          {
+            "start": 3,
+            "end": 6,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "text": "电子",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "机电",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "大专以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列专业名分别标K，学历保留完整资格边界。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00129",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "TCP/IP网络通信基本原理",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 28,
+            "text": "Linux操作系统",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 47,
+            "text": "Openstack云平台相关运维技术",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "网络通信基本原理标K；操作系统与云平台运维技术在局部运维语境下标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00130",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "软件行业",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "text": "项目实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "行业背景标K，项目实施为完整职业活动，去除经验等修饰。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 13,
+  "ids": [
+    "sp10k-00121",
+    "sp10k-00122",
+    "sp10k-00123",
+    "sp10k-00124",
+    "sp10k-00125",
+    "sp10k-00126",
+    "sp10k-00127",
+    "sp10k-00128",
+    "sp10k-00129",
+    "sp10k-00130"
+  ],
+  "at": "2026-09-13T14:03:14.133857+00:00"
+}

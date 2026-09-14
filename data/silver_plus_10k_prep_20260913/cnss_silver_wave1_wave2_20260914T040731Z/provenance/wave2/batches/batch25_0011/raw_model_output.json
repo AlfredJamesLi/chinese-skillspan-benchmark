@@ -1,0 +1,461 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03955",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "细心",
+          "label": "T"
+        },
+        {
+          "start": 3,
+          "end": 6,
+          "text": "负责任",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "上进心",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "分享",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "协作",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 31,
+          "text": "自我提升学习驱动意识态度",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取特质及通用协作、学习驱动要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03957",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明特定应聘群体适用的行政规定，未提出具体学历或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03958",
+      "spans": [
+        {
+          "start": 12,
+          "end": 24,
+          "text": "高中及以上层次教师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留教师资格证的层次限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03959",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "表格片段缺少可确定专业要求的列结构。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "中医科",
+          "alternatives": [
+            "作为招聘科室名称，不标",
+            "作为候选人专业要求，标K"
+          ],
+          "reason": "表头与数据粘连，无法确认中医科属于科室岗位还是所需专业。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03960",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于在读人员应聘资格排除条款，未要求候选人具备具体学历或技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03961",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明应聘者参加面试的行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03962",
+      "spans": [
+        {
+          "start": 67,
+          "end": 74,
+          "text": "仪器科学与技术",
+          "label": "K"
+        },
+        {
+          "start": 81,
+          "end": 88,
+          "text": "信息与通信工程",
+          "label": "K"
+        },
+        {
+          "start": 95,
+          "end": 102,
+          "text": "控制科学与工程",
+          "label": "K"
+        },
+        {
+          "start": 109,
+          "end": 115,
+          "text": "交通运输工程",
+          "label": "K"
+        },
+        {
+          "start": 122,
+          "end": 126,
+          "text": "机械工程",
+          "label": "K"
+        },
+        {
+          "start": 135,
+          "end": 140,
+          "text": "研究生学历",
+          "label": "K"
+        },
+        {
+          "start": 141,
+          "end": 145,
+          "text": "博士学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业名与学历学位要求；联系方式、专业代码、岗位名称及年龄不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03963",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘纪律及违规处理规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03964",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "本科以上",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业核心名及学历要求；泛化相关工作经验不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03965",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "学习能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用能力，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03966",
+      "spans": [
+        {
+          "start": 5,
+          "end": 30,
+          "text": "大中型冷水机组设备、中央空调系统、通风系统安装调试",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "text": "项目管理",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "text": "设计规范",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备列表共享安装调试动作，保留完整跨度；项目管理为专业职能，设计规范为知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03967",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "大专以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "给排水",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "暖通",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格及并列专业名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03969",
+      "spans": [
+        {
+          "start": 3,
+          "end": 12,
+          "text": "大学本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历要求；年龄、性别及就业失业登记等政策资格不属于职业能力资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03970",
+      "spans": [
+        {
+          "start": 6,
+          "end": 18,
+          "text": "安全事件的应急响应和处置",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留共享安全事件对象的完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03971",
+      "spans": [
+        {
+          "start": 4,
+          "end": 18,
+          "text": "Oracle数据库配置与维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确数据库配置维护实践，保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03972",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "大学本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "法律",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "新闻",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 29,
+          "text": "计算机",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历与专业要求，放宽条件说明不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03973",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求归国人员提供学历认证材料，属于应聘材料流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03974",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于个人信息及合格结果的公示片段，不是候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03975",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "运营分发",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 21,
+          "text": "对标题、封面、简介有独创能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取运营活动及绑定内容创作对象的能力，保留后者必要对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03976",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "业界同类产品差异化分析",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "抽取明确的产品分析活动；竞争地位和特色属于结果目标。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "及其动态",
+          "alternatives": [
+            "承接分析动作，属于产品动态分析要求",
+            "属于未完整表达的对象信息，不单独标注"
+          ],
+          "reason": "该片段未明确动态所对应的职业动作，无法确认是否构成另一项完整要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03977",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "Oracle",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 18,
+          "text": "SQLServer",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "text": "MySQL",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列数据库工具按岗位工具要求抽取，数据库类别词不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03978",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "WINDOWS平台的服务器管理",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 43,
+          "text": "对ISA代理软件、DNS、DHCP等进行配置管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为明确管理实践；配置管理共享多个对象，保留完整动作短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03979",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "只有年限及未指明领域或活动的泛化工作经验要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03980",
+      "spans": [
+        {
+          "start": 7,
+          "end": 13,
+          "text": "管理项目进度",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "把控项目周期",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取项目管理活动；确保上线交付及保障进度质量为结果承诺。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03981",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列举报名材料及提交方式，证件名称处于应聘行政流程中。",
+      "issues": []
+    }
+  ]
+}

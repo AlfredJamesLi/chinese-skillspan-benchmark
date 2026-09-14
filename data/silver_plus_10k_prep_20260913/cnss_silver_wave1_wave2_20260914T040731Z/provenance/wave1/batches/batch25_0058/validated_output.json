@@ -1,0 +1,465 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03300",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "招聘渠道",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "面试",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "谈offer",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 38,
+          "text": "互联网",
+          "label": "K"
+        },
+        {
+          "start": 47,
+          "end": 50,
+          "text": "互联网",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "招聘渠道为职能知识；面试和谈offer为职业活动；互联网为行业背景。人脉资源不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03301",
+      "spans": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "英语",
+          "label": "L"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "日语基础",
+          "label": "L"
+        },
+        {
+          "start": 13,
+          "end": 20,
+          "text": "日常沟通无障碍",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "语种及局部语境中的语言沟通水平标L。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03302",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于应聘材料真实性及资格取消规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03303",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "解答和处理用户的问题和咨询",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "用户服务职业活动，共享对象保留完整跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03304",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明纪检监察部门的招聘监督安排，并非候选人职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03305",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "项目管理与跟踪",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确项目管理职能，保留跟踪所共享的项目对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03306",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "团队精神",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "认真负责",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "团队精神和工作态度为通用特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03307",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "本科以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "学历要求明确；末尾孤立名词的要求范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "物流器械",
+          "alternatives": [
+            "候选人须具备的领域知识",
+            "非要求内容或残缺片段"
+          ],
+          "reason": "缺少连接关系及后续内容，无法确定是否为候选人知识要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03308",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "沟通技巧",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "团队协作精神",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 28,
+          "end": 34,
+          "text": "数据分析能力",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "创新能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据分析为领域绑定能力，其余为通用能力或特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03309",
+      "spans": [
+        {
+          "start": 16,
+          "end": 31,
+          "text": "普通高等院校大学本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格名；户籍及毕业年份限制不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03310",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明报考学历与专业的认定口径，未给出具体资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03311",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "搭建公司内部与外部网络跟维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络搭建与维护共享职业对象，保留原文措辞。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03312",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "笔试内容和用书说明，未提出具体知识或能力提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03313",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于专业目录匹配及报考条件说明，没有具体专业或学历资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03314",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "市场信息采集、整理、分类",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "数据采集工具",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "编排工具",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "信息处理活动保留共享对象；明确使用的工具类别标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03315",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "Installshield",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 25,
+          "text": "安装包制作工具",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体工具及其替代工具类别均为岗位工具要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03316",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅含面试通知和应聘邮件标题规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03317",
+      "spans": [
+        {
+          "start": 8,
+          "end": 33,
+          "text": "办公电脑软硬件，打印机，复印机与传真机的维护与保养",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备列表共享维护与保养职能，保留完整连续跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03318",
+      "spans": [
+        {
+          "start": 2,
+          "end": 29,
+          "text": "DELL、HP、Lenovo等工作站的安装、维修、维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "品牌限定工作站对象，与共享安装维修维护活动整体标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03319",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "创意能力",
+          "label": "T"
+        },
+        {
+          "start": 6,
+          "end": 10,
+          "text": "逻辑性强",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "协调能力",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "语言表达能力",
+          "label": "T"
+        },
+        {
+          "start": 39,
+          "end": 45,
+          "text": "自我学习能力",
+          "label": "T"
+        },
+        {
+          "start": 47,
+          "end": 53,
+          "text": "工作态度积极",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为可迁移能力或工作特质，去除要求触发词及非必要程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03320",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为考试成绩计算和精度规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03321",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "Vmware服务器集群软件",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "日常巡检",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "问题上报",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件受同句巡检实践语境限定；巡检与问题上报为独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03322",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "语言表达能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "团队协作能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "语言表达及团队协作为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03323",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "网络、域环境的IT运维",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 28,
+          "text": "问题判断及解决能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维为职业职能；问题判断和解决承接同句明确的IT运维对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03324",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "shell脚本的编写",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 23,
+          "text": "Python脚本",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "脚本编写及同句实践语境中的脚本工具标S。",
+      "issues": []
+    }
+  ]
+}

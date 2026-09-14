@@ -1,0 +1,275 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 42.368,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4978,
+    "completion_tokens": 1326,
+    "total_tokens": 6304,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 437
+    },
+    "input_tokens": 4978,
+    "output_tokens": 1326,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05996\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"沟通表达能力\",\"label\":\"T\"},{\"start\":11,\"end\":17,\"text\":\"逻辑思考能力\",\"label\":\"T\"},{\"start\":18,\"end\":24,\"text\":\"团队合作能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"并列通用能力分别标T，去除要求触发及程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-05997\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"质量工具\",\"label\":\"S\"},{\"start\":13,\"end\":15,\"text\":\"8D\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"FMEA\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"质量工具及其具体例项属于岗位工具要求，标S。\",\"issues\":[]},{\"id\":\"sp10k-05998\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":14,\"text\":\"人力资源管理\",\"label\":\"K\"},{\"start\":15,\"end\":19,\"text\":\"工商管理\",\"label\":\"K\"},{\"start\":20,\"end\":24,\"text\":\"行政管理\",\"label\":\"K\"},{\"start\":36,\"end\":44,\"text\":\"人力资源基础工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历与专业名标K；具体职能工作标S，去除经验后缀及年限。\",\"issues\":[]},{\"id\":\"sp10k-05999\",\"spans\":[{\"start\":2,\"end\":23,\"text\":\"机械零部件（设备马达，气缸等）的功能和特点\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"要求了解零部件功能与特点，属于知识；保留连续完整对象及共享限定。\",\"issues\":[]},{\"id\":\"sp10k-06000\",\"spans\":[{\"start\":7,\"end\":10,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":11,\"end\":14,\"text\":\"自动化\",\"label\":\"K\"},{\"start\":15,\"end\":19,\"text\":\"电子工程\",\"label\":\"K\"},{\"start\":24,\"end\":31,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取明确专业名及完整学历资格。\",\"issues\":[]},{\"id\":\"sp10k-06001\",\"spans\":[{\"start\":0,\"end\":9,\"text\":\"产品及服务创新能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"产品及服务限定的创新能力为职业能力；个人素质为泛化标题，不另标。\",\"issues\":[]},{\"id\":\"sp10k-06002\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"思维敏捷\",\"label\":\"T\"},{\"start\":5,\"end\":9,\"text\":\"视野开阔\",\"label\":\"T\"},{\"start\":14,\"end\":21,\"text\":\"创新思路和能力\",\"label\":\"T\"},{\"start\":22,\"end\":25,\"text\":\"自律性\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用思维与个人特质；创新思路和能力保留共享限定，程度修饰不标。\",\"issues\":[]},{\"id\":\"sp10k-06003\",\"spans\":[{\"start\":7,\"end\":14,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历；相关行业未指明具体领域，不抽取泛化经验。\",\"issues\":[]},{\"id\":\"sp10k-06004\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明无需经验及接受的应聘人员群体，不含具体能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-06005\",\"spans\":[{\"start\":4,\"end\":9,\"text\":\"DFMEA\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求运用DFMEA，按岗位工具或方法标S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05996",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "沟通表达能力",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "逻辑思考能力",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "text": "团队合作能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列通用能力分别标T，去除要求触发及程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05997",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "质量工具",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "text": "8D",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "FMEA",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "质量工具及其具体例项属于岗位工具要求，标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05998",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "人力资源管理",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "工商管理",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "行政管理",
+            "label": "K"
+          },
+          {
+            "start": 36,
+            "end": 44,
+            "text": "人力资源基础工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历与专业名标K；具体职能工作标S，去除经验后缀及年限。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05999",
+        "spans": [
+          {
+            "start": 2,
+            "end": 23,
+            "text": "机械零部件（设备马达，气缸等）的功能和特点",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "要求了解零部件功能与特点，属于知识；保留连续完整对象及共享限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06000",
+        "spans": [
+          {
+            "start": 7,
+            "end": 10,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "text": "自动化",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "电子工程",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 31,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取明确专业名及完整学历资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06001",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "产品及服务创新能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "产品及服务限定的创新能力为职业能力；个人素质为泛化标题，不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06002",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "思维敏捷",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "视野开阔",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "text": "创新思路和能力",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "text": "自律性",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用思维与个人特质；创新思路和能力保留共享限定，程度修饰不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06003",
+        "spans": [
+          {
+            "start": 7,
+            "end": 14,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历；相关行业未指明具体领域，不抽取泛化经验。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06004",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明无需经验及接受的应聘人员群体，不含具体能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06005",
+        "spans": [
+          {
+            "start": 4,
+            "end": 9,
+            "text": "DFMEA",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求运用DFMEA，按岗位工具或方法标S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 220,
+  "ids": [
+    "sp10k-05996",
+    "sp10k-05997",
+    "sp10k-05998",
+    "sp10k-05999",
+    "sp10k-06000",
+    "sp10k-06001",
+    "sp10k-06002",
+    "sp10k-06003",
+    "sp10k-06004",
+    "sp10k-06005"
+  ],
+  "at": "2026-09-13T17:21:14.530709+00:00"
+}

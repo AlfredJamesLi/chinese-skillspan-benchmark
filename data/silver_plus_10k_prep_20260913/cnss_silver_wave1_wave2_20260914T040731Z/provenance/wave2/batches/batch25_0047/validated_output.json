@@ -1,0 +1,554 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04899",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "文案写作能力",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 23,
+          "text": "信息采编整合能力",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "数据分析能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "三项能力均绑定具体职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04900",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "机械加工知识",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "材料性能",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 30,
+          "text": "零件的可加工性",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 33,
+          "text": "成本",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为机械设计相关知识要求；成本由局部零件语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04901",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "智能化APP平台运维支持",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "发现问题",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "解决问题",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "平台运维为职业活动；后两项未明确限定技术问题对象，按通用能力处理。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04902",
+      "spans": [
+        {
+          "start": 5,
+          "end": 10,
+          "text": "自动化框架",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "puppet",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 26,
+          "text": "ansibel",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "自动化框架及列举工具按岗位工具要求标注，保留原拼写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04903",
+      "spans": [
+        {
+          "start": 4,
+          "end": 21,
+          "text": "空调制冷系统自动化控制系统（BA）",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "系统提及范围和连续边界确定，知识与操作技能类型未决；S仅为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "空调制冷系统自动化控制系统（BA）",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅有熟练掌握，未说明要求系统知识还是实际操作、配置或维护能力。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04904",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "本科学历",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 34,
+          "text": "BI(数据仓库、ODS)项目的实施",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 47,
+          "text": "数据仓库建模能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "项目实施去除经验仍完整；括号保留为项目限定，泛化经验及年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04905",
+      "spans": [
+        {
+          "start": 2,
+          "end": 25,
+          "text": "编制环保业务的项目建议书、技术方案、经济性分析",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列编制对象共享动作，保留连续完整的编制活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04906",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "制定公司信息安全策略",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 23,
+          "text": "建设信息安全相关体系",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 40,
+          "text": "评估并持续改善落实信息安全的需求",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分独立安全职责；末项保留共享对象及原文表达。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04907",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 23,
+          "text": "计算机网络基本理论知识",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "工作原理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业领域及理论知识；工作原理由局部计算机网络语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04908",
+      "spans": [
+        {
+          "start": 8,
+          "end": 12,
+          "text": "泌尿外科",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "text": "全日制硕士研究生",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 28,
+          "text": "执医证",
+          "label": "K"
+        },
+        {
+          "start": 29,
+          "end": 32,
+          "text": "规培证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业、完整学历及非语言资格；岗位名称、人数和泛化经验不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04909",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "财务共享系统与其他系统间接口维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "接口维护为职责；确保稳定运行属于结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04910",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "认同企业价值观",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "耐性",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "抗压能力",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 36,
+          "text": "在压力下有条不紊的处理事务",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "价值认同、耐性及压力下的事务处理均为通用素质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04911",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "全句为薪资、资助及福利，工作能力仅用于说明薪酬确定依据。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04912",
+      "spans": [
+        {
+          "start": 9,
+          "end": 13,
+          "text": "电脑维护",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 19,
+          "text": "打印机维护",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 34,
+          "text": "操作系统、应用软件的维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取维护活动；末项保留并列对象共享的维护动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04913",
+      "spans": [
+        {
+          "start": 5,
+          "end": 10,
+          "text": "全日制本科",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "财务",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "物流",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "人力资源",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格及并列领域知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04914",
+      "spans": [
+        {
+          "start": 2,
+          "end": 29,
+          "text": "网络交换机、企业路由器、防火墙等网络安全设备的配置连接",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备列表共享配置连接动作，保留完整操作要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04916",
+      "spans": [
+        {
+          "start": 13,
+          "end": 34,
+          "text": "监控、宽带、无线网络账号以及设备的对接维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列技术对象共享对接维护动作，此处对接为技术职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04917",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "数据中心机房基础设施运维管理",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "text": "机房阔迁建",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维管理去除经验仍完整；保留阔迁建原文写法。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04918",
+      "spans": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "巡检",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "输出巡检报告",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分巡检及报告输出两项独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04919",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "暖通专业项目的实施管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确暖通专业项目的实施管理职能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04920",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "Linux系统的管理和优化",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "命令操作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "管理和优化共享Linux系统对象，命令操作为独立实践要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04921",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "对分公司IT人员及公司员工的培训",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "执行员工培训为职业职责，保留培训对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04922",
+      "spans": [
+        {
+          "start": 15,
+          "end": 21,
+          "text": "汉语言文字学",
+          "label": "K"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "text": "新闻传播学类",
+          "label": "K"
+        },
+        {
+          "start": 43,
+          "end": 48,
+          "text": "新闻与传播",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取三个专业名称；岗位名称、专业代码及人数不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04923",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "购书补贴、内部分享会及培训均为公司提供的学习福利。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04924",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "docker",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "k8s",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "项目环境搭建",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "常见问题解决",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工具受实际项目实践限定；搭建及问题解决为该技术环境中的职业活动，去除经验仍完整。",
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 34.262,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5085,
+    "completion_tokens": 1002,
+    "total_tokens": 6087,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 276
+    },
+    "input_tokens": 5085,
+    "output_tokens": 1002,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01651\",\"spans\":[{\"start\":0,\"end\":13,\"text\":\"统招本科及以上的理工科学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留含学历层级、统招及学科限定的完整资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01652\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报考、报名及考试程序要求，不属于职业能力或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01653\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"性格稳重\",\"label\":\"T\"},{\"start\":8,\"end\":12,\"text\":\"职业道德\",\"label\":\"T\"},{\"start\":13,\"end\":17,\"text\":\"抗压能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"性格、职业道德及抗压能力均为通用特质，程度修饰不纳入跨度。\",\"issues\":[]},{\"id\":\"sp10k-01654\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报名范围，未给出具体能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01655\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"部门的日常管理\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"部门日常管理属于通用组织管理能力；去除职责触发词及泛化工作后缀。\",\"issues\":[]},{\"id\":\"sp10k-01656\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"大专及以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":12,\"text\":\"安全工程\",\"label\":\"K\"},{\"start\":13,\"end\":17,\"text\":\"工程管理\",\"label\":\"K\"},{\"start\":27,\"end\":31,\"text\":\"安全管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历与明确专业名标K；安全管理为职业活动，去除年限及经验后仍完整。\",\"issues\":[]},{\"id\":\"sp10k-01657\",\"spans\":[{\"start\":5,\"end\":18,\"text\":\"分布并发及负载均衡实现方案\",\"label\":\"S\"},{\"start\":28,\"end\":38,\"text\":\"负载压力及并发量控制\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"实现方案受明确实际实施经验限定，标S；保留并列对象共享的实现方案及控制成分，不纳入经验后缀。\",\"issues\":[]},{\"id\":\"sp10k-01658\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅指引岗位条件附件及专业目录设置依据，未直接列出候选人所需的具体专业或学历。\",\"issues\":[]},{\"id\":\"sp10k-01659\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明解聘空缺后的递补程序与资格保留期限。\",\"issues\":[]},{\"id\":\"sp10k-01660\",\"spans\":[{\"start\":2,\"end\":17,\"text\":\"信息系统软硬件和网络运维与管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确技术运维管理职责，保留共享对象与动作的完整连续提及。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01651",
+        "spans": [
+          {
+            "start": 0,
+            "end": 13,
+            "text": "统招本科及以上的理工科学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留含学历层级、统招及学科限定的完整资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01652",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报考、报名及考试程序要求，不属于职业能力或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01653",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "性格稳重",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "职业道德",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "抗压能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "性格、职业道德及抗压能力均为通用特质，程度修饰不纳入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01654",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报名范围，未给出具体能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01655",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "部门的日常管理",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "部门日常管理属于通用组织管理能力；去除职责触发词及泛化工作后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01656",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "大专及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "安全工程",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "工程管理",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "安全管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历与明确专业名标K；安全管理为职业活动，去除年限及经验后仍完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01657",
+        "spans": [
+          {
+            "start": 5,
+            "end": 18,
+            "text": "分布并发及负载均衡实现方案",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 38,
+            "text": "负载压力及并发量控制",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "实现方案受明确实际实施经验限定，标S；保留并列对象共享的实现方案及控制成分，不纳入经验后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01658",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅指引岗位条件附件及专业目录设置依据，未直接列出候选人所需的具体专业或学历。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01659",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明解聘空缺后的递补程序与资格保留期限。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01660",
+        "spans": [
+          {
+            "start": 2,
+            "end": 17,
+            "text": "信息系统软硬件和网络运维与管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确技术运维管理职责，保留共享对象与动作的完整连续提及。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 166,
+  "ids": [
+    "sp10k-01651",
+    "sp10k-01652",
+    "sp10k-01653",
+    "sp10k-01654",
+    "sp10k-01655",
+    "sp10k-01656",
+    "sp10k-01657",
+    "sp10k-01658",
+    "sp10k-01659",
+    "sp10k-01660"
+  ],
+  "at": "2026-09-13T16:27:44.509313+00:00"
+}

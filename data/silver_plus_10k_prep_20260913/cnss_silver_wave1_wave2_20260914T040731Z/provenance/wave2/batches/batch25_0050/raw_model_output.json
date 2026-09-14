@@ -1,0 +1,566 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04976",
+      "spans": [
+        {
+          "start": 3,
+          "end": 8,
+          "text": "研究生学历",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "博士学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取学历与学位资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04977",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "DB2",
+          "label": "S"
+        },
+        {
+          "start": 6,
+          "end": 11,
+          "text": "mysql",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 21,
+          "text": "Greenplum",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 35,
+          "text": "数据库运维管理",
+          "label": "S"
+        },
+        {
+          "start": 42,
+          "end": 44,
+          "text": "安装",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 47,
+          "text": "配置",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 50,
+          "text": "管理",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 53,
+          "text": "维护",
+          "label": "S"
+        },
+        {
+          "start": 54,
+          "end": 58,
+          "text": "性能调优",
+          "label": "S"
+        },
+        {
+          "start": 59,
+          "end": 63,
+          "text": "故障诊断",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库工具处于明确运维语境；并列动作共享数据库对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04978",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "笔试成绩单打印属于应聘行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04979",
+      "spans": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "吃苦耐劳",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用特质；专业、学历不限不构成资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04980",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "text": "网络",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "通讯",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "本科以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分专业领域并保留完整学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04981",
+      "spans": [
+        {
+          "start": 1,
+          "end": 4,
+          "text": "互联网",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 18,
+          "text": "软件产品助理工作岗位经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "行业背景标K；具体职能经历保留经验，按经验代理规则标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04983",
+      "spans": [
+        {
+          "start": 9,
+          "end": 22,
+          "text": "组织和策划各类线上活动方案",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 48,
+          "text": "媒体和多种新媒体平台(微信公众号等)的运营",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 55,
+          "text": "运营推广",
+          "label": "S"
+        },
+        {
+          "start": 56,
+          "end": 66,
+          "text": "运营策略的制定与实施",
+          "label": "S"
+        },
+        {
+          "start": 67,
+          "end": 73,
+          "text": "文案方案设计",
+          "label": "S"
+        },
+        {
+          "start": 74,
+          "end": 78,
+          "text": "资源整合",
+          "label": "T"
+        },
+        {
+          "start": 79,
+          "end": 83,
+          "text": "内容编辑",
+          "label": "S"
+        },
+        {
+          "start": 84,
+          "end": 93,
+          "text": "推广和传播公司品牌",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "独立运营活动分别抽取，共享必要对象的动作保留；泛化资源整合标T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04984",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "积极",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "严谨",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "抗压能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学习能力、工作特质与抗压能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04985",
+      "spans": [
+        {
+          "start": 3,
+          "end": 16,
+          "text": "运动员、裁判员等级资格证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列资格共享等级资格证书，保留完整连续跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04986",
+      "spans": [
+        {
+          "start": 4,
+          "end": 24,
+          "text": "设备/基础设施（水、电、气/汽）的的维护",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "text": "保养",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 30,
+          "text": "维修",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取设备维护等职业动作，保留原文重复字；后两项共享设备对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04987",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "宣传资料的编制",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "技术交流",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "参加展会",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "资料编制及参展为职业活动，人与人的技术交流标T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04990",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "学历认证材料的打印及形式说明，未提出具体学历要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04991",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "无法确认考核招聘工作是候选人职责还是招聘组织程序。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "做好考核招聘工作",
+          "alternatives": [
+            "候选人执行考核招聘的职业职责，纳入S",
+            "公告对招聘组织工作的程序要求，不纳入"
+          ],
+          "reason": "未说明执行主体或招聘岗位，缺少候选人职责与公告程序的区分依据。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04992",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "门户网站的开发建设",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "维护",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "迭代升级",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发建设、维护及迭代升级均为明确网站职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04993",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "高中以上文化程度",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整教育程度要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04994",
+      "spans": [
+        {
+          "start": 2,
+          "end": 38,
+          "text": "ERP系统各模块的新增需求、系统变更、问题与故障处理、权限变更的初步审核",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 45,
+          "text": "制定初步方案",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 48,
+          "text": "实施",
+          "label": "S"
+        },
+        {
+          "start": 49,
+          "end": 51,
+          "text": "测试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "初步审核保留并列对象及共享中心；方案制定、实施和测试分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04995",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告解释权说明，不含候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04996",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅泛化协助完成部门工作，未指明具体职业活动或能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04997",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "试用期及其资格条件对应的期限规定，未直接提出候选人资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04998",
+      "spans": [
+        {
+          "start": 3,
+          "end": 44,
+          "text": "业务技能达到国家综合性消防救援队伍相应职级队员水平和《灭火救援员国家职业技能标准》",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "消防业务技能要求保留必要水平限定；标准作为技能达标依据，不另嵌套知识标签。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04999",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格初审时间安排，属于应聘行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05000",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "严谨",
+          "label": "T"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "text": "稳健",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "创业精神",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "开拓意识",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "精力充沛",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "团队组织能力",
+          "label": "T"
+        },
+        {
+          "start": 36,
+          "end": 45,
+          "text": "承受较大的工作压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取工作特质、组织能力与抗压要求；精力充沛在本句作为工作特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05001",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "大型企业运维支撑系统开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体系统开发活动去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05002",
+      "spans": [
+        {
+          "start": 1,
+          "end": 4,
+          "text": "阿里云",
+          "label": "S"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "腾讯云",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "text": "linux系统",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 29,
+          "text": "ubuntu",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "text": "centos",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "云平台及操作系统按岗位工具要求抽取，保留原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05003",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求确保设备及系统正常运行，属于结果承诺，未给出具体动作或方法。",
+      "issues": []
+    }
+  ]
+}

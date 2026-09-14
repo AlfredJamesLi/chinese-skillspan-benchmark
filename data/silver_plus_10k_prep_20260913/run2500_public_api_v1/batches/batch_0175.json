@@ -1,0 +1,183 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 35.563,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5037,
+    "completion_tokens": 1038,
+    "total_tokens": 6075,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 357
+    },
+    "input_tokens": 5037,
+    "output_tokens": 1038,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01742\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"学校学科、学位授权及招生情况介绍，不属于候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-01743\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"品行端正\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"品行端正为通用个人特质；身体健康及身体条件不标，未具体说明的工作能力不单独抽取。\",\"issues\":[]},{\"id\":\"sp10k-01745\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"应聘资格复审流程，不含具体能力、知识或资格名称。\",\"issues\":[]},{\"id\":\"sp10k-01746\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"说明招聘考核方式及成绩计算，未提出具体职业能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01752\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"泛化工作经历及年限计算说明，无具体领域或职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01758\",\"spans\":[{\"start\":10,\"end\":12,\"text\":\"博士\",\"label\":\"K\"},{\"start\":12,\"end\":16,\"text\":\"急诊医学\",\"label\":\"K\"},{\"start\":17,\"end\":21,\"text\":\"重症医学\",\"label\":\"K\"},{\"start\":23,\"end\":31,\"text\":\"执业医师资格证书\",\"label\":\"K\"},{\"start\":38,\"end\":42,\"text\":\"科研能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历、专业及执业资格；科研能力按通用能力标T。科室名称为岗位信息，泛化胜任岗位要求不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01759\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅含年龄限制，不属于能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01763\",\"spans\":[],\"status\":\"adjudication_required\",\"note\":\"论文作者身份为明确应聘条件，但是否属于本项目资格标注范围尚需裁决。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"第一作者或通讯作者\",\"alternatives\":[\"作为论文成果资格要求纳入标注范围\",\"作为成果署名身份条件不纳入标注范围\"],\"reason\":\"现有规则未明确论文作者身份是否属于资格提及；原文也未提供具体论文要求，需确认此类成果身份的范围口径。\"}]},{\"id\":\"sp10k-01764\",\"spans\":[{\"start\":20,\"end\":27,\"text\":\"安排人员和时间\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"人员与时间安排为通用组织协调能力，保留共享动作；项目名称仅限定情境，按时完成属于结果承诺。\",\"issues\":[]},{\"id\":\"sp10k-01765\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"资格复审材料及附件指引，属于应聘行政流程。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01742",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "学校学科、学位授权及招生情况介绍，不属于候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01743",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "品行端正",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "品行端正为通用个人特质；身体健康及身体条件不标，未具体说明的工作能力不单独抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01745",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "应聘资格复审流程，不含具体能力、知识或资格名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01746",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "说明招聘考核方式及成绩计算，未提出具体职业能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01752",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "泛化工作经历及年限计算说明，无具体领域或职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01758",
+        "spans": [
+          {
+            "start": 10,
+            "end": 12,
+            "text": "博士",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "急诊医学",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "重症医学",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 31,
+            "text": "执业医师资格证书",
+            "label": "K"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "text": "科研能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历、专业及执业资格；科研能力按通用能力标T。科室名称为岗位信息，泛化胜任岗位要求不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01759",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅含年龄限制，不属于能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01763",
+        "spans": [],
+        "status": "adjudication_required",
+        "note": "论文作者身份为明确应聘条件，但是否属于本项目资格标注范围尚需裁决。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "第一作者或通讯作者",
+            "alternatives": [
+              "作为论文成果资格要求纳入标注范围",
+              "作为成果署名身份条件不纳入标注范围"
+            ],
+            "reason": "现有规则未明确论文作者身份是否属于资格提及；原文也未提供具体论文要求，需确认此类成果身份的范围口径。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-01764",
+        "spans": [
+          {
+            "start": 20,
+            "end": 27,
+            "text": "安排人员和时间",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "人员与时间安排为通用组织协调能力，保留共享动作；项目名称仅限定情境，按时完成属于结果承诺。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01765",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "资格复审材料及附件指引，属于应聘行政流程。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 175,
+  "ids": [
+    "sp10k-01742",
+    "sp10k-01743",
+    "sp10k-01745",
+    "sp10k-01746",
+    "sp10k-01752",
+    "sp10k-01758",
+    "sp10k-01759",
+    "sp10k-01763",
+    "sp10k-01764",
+    "sp10k-01765"
+  ],
+  "at": "2026-09-13T16:34:13.846948+00:00"
+}

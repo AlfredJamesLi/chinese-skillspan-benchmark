@@ -1,0 +1,304 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 63.031,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5006,
+    "completion_tokens": 1993,
+    "total_tokens": 6999,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 930
+    },
+    "input_tokens": 5006,
+    "output_tokens": 1993,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05906\",\"spans\":[{\"start\":9,\"end\":18,\"text\":\"办公楼的招商及租赁\",\"label\":\"S\"},{\"start\":21,\"end\":29,\"text\":\"拓展潜在客户资源\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取招商租赁及客户拓展活动；完成租赁目标为结果要求，不标。\",\"issues\":[]},{\"id\":\"sp10k-05907\",\"spans\":[{\"start\":2,\"end\":25,\"text\":\"拓展及维护政府、设计院、工程协会等相关机构关系\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确的机构关系拓展维护职能，保留共享动作及对象。\",\"issues\":[]},{\"id\":\"sp10k-05908\",\"spans\":[{\"start\":1,\"end\":15,\"text\":\"组织并参与安全培训及应急演练\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"组织培训与演练为职业活动，保留共享动作；后段为预期提升效果。\",\"issues\":[]},{\"id\":\"sp10k-05909\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"项目的统筹与管控\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"沟通协调能力\",\"label\":\"T\"},{\"start\":25,\"end\":29,\"text\":\"团队精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"项目统筹管控为职业职能；沟通协调及团队精神为通用能力与特质。\",\"issues\":[]},{\"id\":\"sp10k-05910\",\"spans\":[{\"start\":9,\"end\":15,\"text\":\"拓展招商业态\",\"label\":\"S\"},{\"start\":18,\"end\":22,\"text\":\"品牌引进\",\"label\":\"S\"},{\"start\":23,\"end\":29,\"text\":\"意向商户储备\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分独立招商活动；公司招商策略是工作依据，不另标为候选人知识要求。\",\"issues\":[]},{\"id\":\"sp10k-05911\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"分行重点客户协同营销\",\"label\":\"S\"},{\"start\":13,\"end\":24,\"text\":\"重点场景/项目营销推动\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"方案设计\",\"label\":\"S\"},{\"start\":31,\"end\":35,\"text\":\"协助营销\",\"label\":\"S\"},{\"start\":36,\"end\":40,\"text\":\"授信沟通\",\"label\":\"T\"}],\"status\":\"adjudication_required\",\"note\":\"抽取明确营销和方案设计活动，授信沟通按通用沟通活动标注；系统需求片段范围待决。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"系统需求\",\"alternatives\":[\"作为系统需求相关专业支持职责纳入\",\"仅为支持事项或对象，不独立标注\"],\"reason\":\"原文未说明系统需求对应收集、分析、设计还是其他支持活动，无法确定该名词是否构成独立能力提及。\"}]},{\"id\":\"sp10k-05912\",\"spans\":[{\"start\":13,\"end\":22,\"text\":\"处理产线上品质异常\",\"label\":\"S\"},{\"start\":23,\"end\":25,\"text\":\"稽核\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取异常处理及稽核职责；工程师指示属于工作安排。\",\"issues\":[]},{\"id\":\"sp10k-05913\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"软件测试理论\",\"label\":\"K\"},{\"start\":9,\"end\":13,\"text\":\"测试方法\",\"label\":\"K\"},{\"start\":14,\"end\":18,\"text\":\"测试流程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"理论、概括性方法与流程属于知识体系，未出现具体执行或实践限定。\",\"issues\":[]},{\"id\":\"sp10k-05914\",\"spans\":[{\"start\":3,\"end\":5,\"text\":\"IE\",\"label\":\"K\"},{\"start\":6,\"end\":10,\"text\":\"精益知识\",\"label\":\"K\"},{\"start\":14,\"end\":18,\"text\":\"过程开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"IE与精益知识由并列知识语境限定；过程开发为明确运用知识的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-05915\",\"spans\":[{\"start\":7,\"end\":14,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":15,\"end\":19,\"text\":\"市场营销\",\"label\":\"K\"},{\"start\":20,\"end\":24,\"text\":\"食品科学\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格及明确专业名；泛化相关专业与优先修饰不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05906",
+        "spans": [
+          {
+            "start": 9,
+            "end": 18,
+            "text": "办公楼的招商及租赁",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 29,
+            "text": "拓展潜在客户资源",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取招商租赁及客户拓展活动；完成租赁目标为结果要求，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05907",
+        "spans": [
+          {
+            "start": 2,
+            "end": 25,
+            "text": "拓展及维护政府、设计院、工程协会等相关机构关系",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确的机构关系拓展维护职能，保留共享动作及对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05908",
+        "spans": [
+          {
+            "start": 1,
+            "end": 15,
+            "text": "组织并参与安全培训及应急演练",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "组织培训与演练为职业活动，保留共享动作；后段为预期提升效果。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05909",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "项目的统筹与管控",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "沟通协调能力",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "团队精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "项目统筹管控为职业职能；沟通协调及团队精神为通用能力与特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05910",
+        "spans": [
+          {
+            "start": 9,
+            "end": 15,
+            "text": "拓展招商业态",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "品牌引进",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "text": "意向商户储备",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分独立招商活动；公司招商策略是工作依据，不另标为候选人知识要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05911",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "分行重点客户协同营销",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 24,
+            "text": "重点场景/项目营销推动",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "方案设计",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "text": "协助营销",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "text": "授信沟通",
+            "label": "T"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "抽取明确营销和方案设计活动，授信沟通按通用沟通活动标注；系统需求片段范围待决。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "系统需求",
+            "alternatives": [
+              "作为系统需求相关专业支持职责纳入",
+              "仅为支持事项或对象，不独立标注"
+            ],
+            "reason": "原文未说明系统需求对应收集、分析、设计还是其他支持活动，无法确定该名词是否构成独立能力提及。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-05912",
+        "spans": [
+          {
+            "start": 13,
+            "end": 22,
+            "text": "处理产线上品质异常",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "稽核",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取异常处理及稽核职责；工程师指示属于工作安排。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05913",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "软件测试理论",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "测试方法",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "测试流程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "理论、概括性方法与流程属于知识体系，未出现具体执行或实践限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05914",
+        "spans": [
+          {
+            "start": 3,
+            "end": 5,
+            "text": "IE",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "text": "精益知识",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "过程开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "IE与精益知识由并列知识语境限定；过程开发为明确运用知识的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05915",
+        "spans": [
+          {
+            "start": 7,
+            "end": 14,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "市场营销",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "食品科学",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格及明确专业名；泛化相关专业与优先修饰不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 211,
+  "ids": [
+    "sp10k-05906",
+    "sp10k-05907",
+    "sp10k-05908",
+    "sp10k-05909",
+    "sp10k-05910",
+    "sp10k-05911",
+    "sp10k-05912",
+    "sp10k-05913",
+    "sp10k-05914",
+    "sp10k-05915"
+  ],
+  "at": "2026-09-13T17:09:04.842730+00:00"
+}

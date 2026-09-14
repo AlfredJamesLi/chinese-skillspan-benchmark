@@ -1,0 +1,496 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 44.82,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5072,
+    "completion_tokens": 1649,
+    "total_tokens": 6721,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 710
+    },
+    "input_tokens": 5072,
+    "output_tokens": 1649,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00576",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            31,
+            53
+          ],
+          "to": [
+            23,
+            39
+          ],
+          "text": "《教育部学历证书电子注册备案表》"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            54,
+            73
+          ],
+          "to": [
+            40,
+            53
+          ],
+          "text": "《教育部学籍在线验证报告》"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            74,
+            91
+          ],
+          "to": [
+            54,
+            70
+          ],
+          "text": "《中国高等教育学位在线验证报告》"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00578",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            19,
+            25
+          ],
+          "to": [
+            10,
+            16
+          ],
+          "text": "逻辑分析能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            26,
+            32
+          ],
+          "to": [
+            17,
+            23
+          ],
+          "text": "沟通协调能力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            33,
+            39
+          ],
+          "to": [
+            24,
+            30
+          ],
+          "text": "文档编写能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            40,
+            45
+          ],
+          "to": [
+            31,
+            37
+          ],
+          "text": "工作严谨细致"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            46,
+            49
+          ],
+          "to": [
+            38,
+            41
+          ],
+          "text": "责任心"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            50,
+            63
+          ],
+          "to": [
+            43,
+            54
+          ],
+          "text": "能适应项目现场工作环境"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00579",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            1,
+            16
+          ],
+          "to": [
+            3,
+            18
+          ],
+          "text": "为会员和水土保持科技工作者服务"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            27
+          ],
+          "to": [
+            19,
+            28
+          ],
+          "text": "反映会员的正当要求"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            28,
+            38
+          ],
+          "to": [
+            29,
+            38
+          ],
+          "text": "维护会员的合法权益"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00580",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            9
+          ],
+          "to": [
+            2,
+            6
+          ],
+          "text": "项目验收"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            12
+          ],
+          "to": [
+            7,
+            9
+          ],
+          "text": "交接"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            13,
+            17
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "运维管理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            15,
+            19
+          ],
+          "text": "收费管理"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00571\",\"spans\":[{\"start\":6,\"end\":14,\"text\":\"收银设备管理登记\",\"label\":\"S\"},{\"start\":15,\"end\":17,\"text\":\"维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取收银设备的管理登记和维护职业活动，去除职责触发词及“工作”。\",\"issues\":[]},{\"id\":\"sp10k-00572\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为接受无经验人员及公司提供培训的招聘条件和福利，不构成候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00573\",\"spans\":[{\"start\":7,\"end\":13,\"text\":\"新增设备导入\",\"label\":\"S\"},{\"start\":14,\"end\":20,\"text\":\"对接方案实施\",\"label\":\"S\"},{\"start\":21,\"end\":37,\"text\":\"SCADA系统功能模块的二次开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取设备导入、方案实施和SCADA功能模块二次开发等明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00574\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"开发平台\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"开发平台作为岗位使用的平台类别，按工具或平台运用语境标注为S。\",\"issues\":[]},{\"id\":\"sp10k-00575\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为公告解释事项，不含候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00576\",\"spans\":[{\"start\":31,\"end\":53,\"text\":\"《教育部学历证书电子注册备案表》\",\"label\":\"K\"},{\"start\":54,\"end\":73,\"text\":\"《教育部学籍在线验证报告》\",\"label\":\"K\"},{\"start\":74,\"end\":91,\"text\":\"《中国高等教育学位在线验证报告》\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取招聘核验所需的学历、学籍及学位验证资格文件名称。\",\"issues\":[]},{\"id\":\"sp10k-00577\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容描述招聘方组织考察和聘用前考察流程，不是候选人须具备的能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-00578\",\"spans\":[{\"start\":19,\"end\":25,\"text\":\"逻辑分析能力\",\"label\":\"T\"},{\"start\":26,\"end\":32,\"text\":\"沟通协调能力\",\"label\":\"T\"},{\"start\":33,\"end\":39,\"text\":\"文档编写能力\",\"label\":\"S\"},{\"start\":40,\"end\":45,\"text\":\"工作严谨细致\",\"label\":\"T\"},{\"start\":46,\"end\":49,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":50,\"end\":63,\"text\":\"能适应项目现场工作环境\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用分析、沟通协调、严谨细致、责任心及环境适应特质；文档编写为可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00579\",\"spans\":[{\"start\":1,\"end\":16,\"text\":\"为会员和水土保持科技工作者服务\",\"label\":\"S\"},{\"start\":17,\"end\":27,\"text\":\"反映会员的正当要求\",\"label\":\"S\"},{\"start\":28,\"end\":38,\"text\":\"维护会员的合法权益\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取为服务对象提供服务、反映诉求和维护权益等明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00580\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"项目验收\",\"label\":\"S\"},{\"start\":10,\"end\":12,\"text\":\"交接\",\"label\":\"S\"},{\"start\":13,\"end\":17,\"text\":\"运维管理\",\"label\":\"S\"},{\"start\":18,\"end\":22,\"text\":\"收费管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取项目验收、交接、运维管理和收费管理等职业活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00571",
+        "spans": [
+          {
+            "start": 6,
+            "end": 14,
+            "text": "收银设备管理登记",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取收银设备的管理登记和维护职业活动，去除职责触发词及“工作”。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00572",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为接受无经验人员及公司提供培训的招聘条件和福利，不构成候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00573",
+        "spans": [
+          {
+            "start": 7,
+            "end": 13,
+            "text": "新增设备导入",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "对接方案实施",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 37,
+            "text": "SCADA系统功能模块的二次开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取设备导入、方案实施和SCADA功能模块二次开发等明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00574",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "开发平台",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "开发平台作为岗位使用的平台类别，按工具或平台运用语境标注为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00575",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为公告解释事项，不含候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00576",
+        "spans": [
+          {
+            "start": 23,
+            "end": 39,
+            "text": "《教育部学历证书电子注册备案表》",
+            "label": "K"
+          },
+          {
+            "start": 40,
+            "end": 53,
+            "text": "《教育部学籍在线验证报告》",
+            "label": "K"
+          },
+          {
+            "start": 54,
+            "end": 70,
+            "text": "《中国高等教育学位在线验证报告》",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取招聘核验所需的学历、学籍及学位验证资格文件名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00577",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容描述招聘方组织考察和聘用前考察流程，不是候选人须具备的能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00578",
+        "spans": [
+          {
+            "start": 10,
+            "end": 16,
+            "text": "逻辑分析能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "沟通协调能力",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "文档编写能力",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "text": "工作严谨细致",
+            "label": "T"
+          },
+          {
+            "start": 38,
+            "end": 41,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 43,
+            "end": 54,
+            "text": "能适应项目现场工作环境",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用分析、沟通协调、严谨细致、责任心及环境适应特质；文档编写为可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00579",
+        "spans": [
+          {
+            "start": 3,
+            "end": 18,
+            "text": "为会员和水土保持科技工作者服务",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 28,
+            "text": "反映会员的正当要求",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 38,
+            "text": "维护会员的合法权益",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取为服务对象提供服务、反映诉求和维护权益等明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00580",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "项目验收",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "text": "交接",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "运维管理",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "收费管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取项目验收、交接、运维管理和收费管理等职业活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 58,
+  "ids": [
+    "sp10k-00571",
+    "sp10k-00572",
+    "sp10k-00573",
+    "sp10k-00574",
+    "sp10k-00575",
+    "sp10k-00576",
+    "sp10k-00577",
+    "sp10k-00578",
+    "sp10k-00579",
+    "sp10k-00580"
+  ],
+  "at": "2026-09-13T14:39:20.785285+00:00"
+}

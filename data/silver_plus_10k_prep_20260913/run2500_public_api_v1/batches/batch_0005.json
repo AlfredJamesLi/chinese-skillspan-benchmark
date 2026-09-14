@@ -1,0 +1,238 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 40.993,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5001,
+    "completion_tokens": 1578,
+    "total_tokens": 6579,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 879
+    },
+    "input_tokens": 5001,
+    "output_tokens": 1578,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00047",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            11,
+            24
+          ],
+          "to": [
+            11,
+            23
+          ],
+          "text": "内部各岗位工作绩效的考评"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            25,
+            29
+          ],
+          "to": [
+            24,
+            29
+          ],
+          "text": "编制考核表"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00041\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"责任担当\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"执行能力\",\"label\":\"T\"},{\"start\":14,\"end\":18,\"text\":\"专业能力\",\"label\":\"T\"},{\"start\":19,\"end\":23,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":24,\"end\":30,\"text\":\"沟通表达能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取责任、执行、专业、学习及沟通表达等通用能力，均标为T。\",\"issues\":[]},{\"id\":\"sp10k-00042\",\"spans\":[{\"start\":5,\"end\":14,\"text\":\"工程管理的基本理论\",\"label\":\"K\"},{\"start\":15,\"end\":17,\"text\":\"方法\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"工程管理理论及方法属于领域知识，分别标为K。\",\"issues\":[]},{\"id\":\"sp10k-00043\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"编制最优化控制计算机软件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"编制软件是候选人需执行的职业活动，标为S。\",\"issues\":[]},{\"id\":\"sp10k-00044\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于应聘材料真实性及资格取消等报名注意事项，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00045\",\"spans\":[{\"start\":5,\"end\":20,\"text\":\".NET/C++/C#开发工具\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"开发工具属于岗位使用工具，标为S。\",\"issues\":[]},{\"id\":\"sp10k-00046\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于报名时提交证书和证明材料的行政要求，不抽取为候选人资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00047\",\"spans\":[{\"start\":11,\"end\":24,\"text\":\"内部各岗位工作绩效的考评\",\"label\":\"S\"},{\"start\":25,\"end\":29,\"text\":\"编制考核表\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"绩效考评和考核表编制是岗位职责中的可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00048\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于聘用关系、人事档案管理及工资福利待遇说明，不是候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-00049\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于现场报名和资格初审流程说明，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00050\",\"spans\":[{\"start\":3,\"end\":19,\"text\":\"系统、网络故障判断经验及解决能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"针对系统和网络故障的判断与解决属于明确技术问题处理活动，保留共享对象及经验语义，标为S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00041",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "责任担当",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "执行能力",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "专业能力",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "沟通表达能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取责任、执行、专业、学习及沟通表达等通用能力，均标为T。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00042",
+        "spans": [
+          {
+            "start": 5,
+            "end": 14,
+            "text": "工程管理的基本理论",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "方法",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "工程管理理论及方法属于领域知识，分别标为K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00043",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "编制最优化控制计算机软件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "编制软件是候选人需执行的职业活动，标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00044",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于应聘材料真实性及资格取消等报名注意事项，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00045",
+        "spans": [
+          {
+            "start": 5,
+            "end": 20,
+            "text": ".NET/C++/C#开发工具",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "开发工具属于岗位使用工具，标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00046",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于报名时提交证书和证明材料的行政要求，不抽取为候选人资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00047",
+        "spans": [
+          {
+            "start": 11,
+            "end": 23,
+            "text": "内部各岗位工作绩效的考评",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 29,
+            "text": "编制考核表",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "绩效考评和考核表编制是岗位职责中的可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00048",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于聘用关系、人事档案管理及工资福利待遇说明，不是候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00049",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于现场报名和资格初审流程说明，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00050",
+        "spans": [
+          {
+            "start": 3,
+            "end": 19,
+            "text": "系统、网络故障判断经验及解决能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "针对系统和网络故障的判断与解决属于明确技术问题处理活动，保留共享对象及经验语义，标为S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 5,
+  "ids": [
+    "sp10k-00041",
+    "sp10k-00042",
+    "sp10k-00043",
+    "sp10k-00044",
+    "sp10k-00045",
+    "sp10k-00046",
+    "sp10k-00047",
+    "sp10k-00048",
+    "sp10k-00049",
+    "sp10k-00050"
+  ],
+  "at": "2026-09-13T13:57:05.239041+00:00"
+}

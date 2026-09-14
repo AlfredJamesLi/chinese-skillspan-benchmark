@@ -1,0 +1,456 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 39.092,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5088,
+    "completion_tokens": 1354,
+    "total_tokens": 6442,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 537
+    },
+    "input_tokens": 5088,
+    "output_tokens": 1354,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00441",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            4,
+            11
+          ],
+          "text": "非关系型数据库"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            21
+          ],
+          "to": [
+            13,
+            17
+          ],
+          "text": "实际开发"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            24
+          ],
+          "to": [
+            18,
+            20
+          ],
+          "text": "运维"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00443",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "计算机网络基础知识"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            20
+          ],
+          "to": [
+            14,
+            19
+          ],
+          "text": "华为路由器"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            21,
+            26
+          ],
+          "to": [
+            20,
+            25
+          ],
+          "text": "交换机配置"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            30,
+            39
+          ],
+          "to": [
+            28,
+            36
+          ],
+          "text": "TCP/IP模型"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            43,
+            46
+          ],
+          "to": [
+            39,
+            42
+          ],
+          "text": "ARP"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            47,
+            51
+          ],
+          "to": [
+            43,
+            47
+          ],
+          "text": "DHCP"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            52,
+            54
+          ],
+          "to": [
+            48,
+            50
+          ],
+          "text": "路由"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            55,
+            57
+          ],
+          "to": [
+            51,
+            53
+          ],
+          "text": "组播"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00444",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            15,
+            21
+          ],
+          "to": [
+            20,
+            26
+          ],
+          "text": "教师资格证书"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00448",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            5,
+            18
+          ],
+          "to": [
+            5,
+            16
+          ],
+          "text": "VMware虚拟化环境"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            19,
+            23
+          ],
+          "to": [
+            17,
+            22
+          ],
+          "text": "服务器运维"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00450",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            16,
+            24
+          ],
+          "to": [
+            15,
+            24
+          ],
+          "text": "linux常用命令"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00441\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"非关系型数据库\",\"label\":\"S\"},{\"start\":17,\"end\":21,\"text\":\"实际开发\",\"label\":\"S\"},{\"start\":22,\"end\":24,\"text\":\"运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取数据库运用及明确的开发、运维活动；经验为活动要求的局部限定，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00442\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为应试人员报名及考试操作提示，不属于候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00443\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"计算机网络基础知识\",\"label\":\"K\"},{\"start\":14,\"end\":20,\"text\":\"华为路由器\",\"label\":\"S\"},{\"start\":21,\"end\":26,\"text\":\"交换机配置\",\"label\":\"S\"},{\"start\":30,\"end\":39,\"text\":\"TCP/IP模型\",\"label\":\"K\"},{\"start\":43,\"end\":46,\"text\":\"ARP\",\"label\":\"K\"},{\"start\":47,\"end\":51,\"text\":\"DHCP\",\"label\":\"K\"},{\"start\":52,\"end\":54,\"text\":\"路由\",\"label\":\"K\"},{\"start\":55,\"end\":57,\"text\":\"组播\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"基础知识、模型及协议为领域知识；路由器和交换机配置属于可执行技术活动。\",\"issues\":[]},{\"id\":\"sp10k-00444\",\"spans\":[{\"start\":15,\"end\":21,\"text\":\"教师资格证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"教师资格证书是明确的非语言资格名；其余内容主要为报名材料及提交方式。\",\"issues\":[]},{\"id\":\"sp10k-00445\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为递补人员考试成绩并列时的确定规则，不是候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00446\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为应聘材料提交要求，学历学位证书在此处作为材料，不构成明确的资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00447\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为招聘考试安排及资格审核流程，属于招聘方执行的行政事项。\",\"issues\":[]},{\"id\":\"sp10k-00448\",\"spans\":[{\"start\":2,\"end\":4,\"text\":\"存储\",\"label\":\"K\"},{\"start\":5,\"end\":18,\"text\":\"VMware虚拟化环境\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"服务器运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"存储为领域知识；VMware虚拟化环境及服务器运维处于岗位运用和执行语境，标为S。\",\"issues\":[]},{\"id\":\"sp10k-00449\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为应聘资格审核未通过后的通知流程，不是候选人须具备的要求。\",\"issues\":[]},{\"id\":\"sp10k-00450\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"linux服务器\",\"label\":\"K\"},{\"start\":16,\"end\":24,\"text\":\"linux常用命令\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"Linux服务器作为了解对象标为领域知识；Linux常用命令处于熟练使用语境，标为S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00441",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "非关系型数据库",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "实际开发",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 20,
+            "text": "运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取数据库运用及明确的开发、运维活动；经验为活动要求的局部限定，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00442",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为应试人员报名及考试操作提示，不属于候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00443",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "计算机网络基础知识",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "text": "华为路由器",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "text": "交换机配置",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 36,
+            "text": "TCP/IP模型",
+            "label": "K"
+          },
+          {
+            "start": 39,
+            "end": 42,
+            "text": "ARP",
+            "label": "K"
+          },
+          {
+            "start": 43,
+            "end": 47,
+            "text": "DHCP",
+            "label": "K"
+          },
+          {
+            "start": 48,
+            "end": 50,
+            "text": "路由",
+            "label": "K"
+          },
+          {
+            "start": 51,
+            "end": 53,
+            "text": "组播",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "基础知识、模型及协议为领域知识；路由器和交换机配置属于可执行技术活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00444",
+        "spans": [
+          {
+            "start": 20,
+            "end": 26,
+            "text": "教师资格证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "教师资格证书是明确的非语言资格名；其余内容主要为报名材料及提交方式。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00445",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为递补人员考试成绩并列时的确定规则，不是候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00446",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为应聘材料提交要求，学历学位证书在此处作为材料，不构成明确的资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00447",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为招聘考试安排及资格审核流程，属于招聘方执行的行政事项。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00448",
+        "spans": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "存储",
+            "label": "K"
+          },
+          {
+            "start": 5,
+            "end": 16,
+            "text": "VMware虚拟化环境",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "text": "服务器运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "存储为领域知识；VMware虚拟化环境及服务器运维处于岗位运用和执行语境，标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00449",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为应聘资格审核未通过后的通知流程，不是候选人须具备的要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00450",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "linux服务器",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "text": "linux常用命令",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Linux服务器作为了解对象标为领域知识；Linux常用命令处于熟练使用语境，标为S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 45,
+  "ids": [
+    "sp10k-00441",
+    "sp10k-00442",
+    "sp10k-00443",
+    "sp10k-00444",
+    "sp10k-00445",
+    "sp10k-00446",
+    "sp10k-00447",
+    "sp10k-00448",
+    "sp10k-00449",
+    "sp10k-00450"
+  ],
+  "at": "2026-09-13T14:27:22.175340+00:00"
+}

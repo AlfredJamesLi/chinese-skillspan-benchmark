@@ -116,4 +116,4 @@ The paper class is `BertCRF` in `scripts/train_cn_roberta_crf.py`.
 
 ## Licence
 
-`license: other` until job-advertisement text rights are confirmed. GitHub `LICENSE` Apache-2.0 is for repository software, not these weights. Same authors and funding (NSSFC 21BGL142) as JobBERT-zh.
+`license: other`. Academic research use of the advertisement text is confirmed (`DATA_AVAILABILITY.md`); that is not a CC-BY grant on these weights. GitHub `LICENSE` Apache-2.0 is for repository software. Same authors and funding (NSSFC 21BGL142) as JobBERT-zh.

@@ -1,0 +1,603 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04612",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "运维",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 35,
+          "end": 38,
+          "text": "责任心",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业、运维活动及通用素质；排除年限和经验修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04613",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "维护公司电话系统",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "维护职责保留动作及对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04614",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "linux",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 17,
+          "text": "windows系统",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 26,
+          "text": "数据库编程能力",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 40,
+          "text": "数据库维护相关脚本工具",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作系统和脚本工具按岗位工具标注；数据库编程为领域绑定能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04615",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "播控技术",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确工作实践经验限定播控技术，按实践技能标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04616",
+      "spans": [
+        {
+          "start": 7,
+          "end": 12,
+          "text": "中西医结合",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "全科医学",
+          "label": "K"
+        },
+        {
+          "start": 45,
+          "end": 50,
+          "text": "本科及以上",
+          "label": "K"
+        },
+        {
+          "start": 50,
+          "end": 57,
+          "text": "学士及以上学位",
+          "label": "K"
+        },
+        {
+          "start": 60,
+          "end": 63,
+          "text": "中医学",
+          "label": "K"
+        },
+        {
+          "start": 71,
+          "end": 78,
+          "text": "中西医临床医学",
+          "label": "K"
+        },
+        {
+          "start": 86,
+          "end": 91,
+          "text": "针灸推拿学",
+          "label": "K"
+        },
+        {
+          "start": 99,
+          "end": 105,
+          "text": "中医骨伤科学",
+          "label": "K"
+        },
+        {
+          "start": 113,
+          "end": 118,
+          "text": "中医康复学",
+          "label": "K"
+        },
+        {
+          "start": 130,
+          "end": 132,
+          "text": "中医",
+          "label": "K"
+        },
+        {
+          "start": 140,
+          "end": 143,
+          "text": "中医学",
+          "label": "K"
+        },
+        {
+          "start": 151,
+          "end": 156,
+          "text": "中医内科学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整可见的专业及学历学位要求；排除代码、年龄、岗位信息和学历分组标题。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04617",
+      "spans": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "运维",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "阿里云",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "text": "互联网运维",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "运维活动和云平台工具明确；大型Java项目参与经历的范围待裁决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "参与过大型Java项目",
+          "alternatives": [
+            "作为特定技术项目实践要求纳入",
+            "作为未明确职业活动的泛化项目经历排除"
+          ],
+          "reason": "项目具有技术限定，但未交代候选人承担的活动；无法确定是否构成具体技能或适用经验代理规则的实践要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04618",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "管理类",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "本科以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业类别及完整学历要求；泛化工作经验不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04619",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "明确为入职后提供的培训福利，不是候选人现有能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04620",
+      "spans": [
+        {
+          "start": 12,
+          "end": 16,
+          "text": "沟通协调",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "与技术人员及客服的人际沟通协调属于通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04621",
+      "spans": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "协调能力",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "团队合作意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列通用能力可独立拆分，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04622",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报考资格处置及责任说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04623",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确专业核心；泛化相关专业及工作经验不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04624",
+      "spans": [
+        {
+          "start": 8,
+          "end": 14,
+          "text": "系统权限开通",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统权限开通是明确可执行的职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04625",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "临床医学",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "基础医学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分两个完整专业名，排除相关专业备注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04626",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告解释权说明，不含候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04627",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为栏目标题，没有具体职责或任职要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04628",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "linux系统",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "脚本",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 36,
+          "text": "处理各种系统问题、网络问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统及脚本用于运维；问题处理具有明确技术对象，并列对象保留共享动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04629",
+      "spans": [
+        {
+          "start": 15,
+          "end": 21,
+          "text": "初中以上学历",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "工作认真",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 32,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "吃苦耐劳",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历和工作特质；岗位名称及性别说明不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04630",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "设备的故障处理",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "设备巡检",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "状态监控",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "质量反馈",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "设备运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "各项设备维护活动及运维职能均为明确职业要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04631",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "售后产品的安装",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "调试",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "日常运维",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "检修",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分完整职业活动，后续活动的产品对象由局部语境承接。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04632",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "提供专业培训和认证属于培养支持，不是现有资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04633",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明报考时任职信息的认定口径。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04634",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "Kubernetes",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 21,
+          "text": "kube-dns",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "coredns",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 44,
+          "text": "ingresstraffic",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 55,
+          "text": "deployment",
+          "label": "S"
+        },
+        {
+          "start": 56,
+          "end": 65,
+          "text": "configmap",
+          "label": "S"
+        },
+        {
+          "start": 66,
+          "end": 70,
+          "text": "etcd",
+          "label": "S"
+        },
+        {
+          "start": 71,
+          "end": 77,
+          "text": "calico",
+          "label": "S"
+        },
+        {
+          "start": 78,
+          "end": 88,
+          "text": "Federation",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体平台及组件按岗位技术工具标注，保留原文拼写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04635",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为留学报考人员提交学历认证材料的行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04636",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Linux操作系统",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 25,
+          "text": "开源组件的部署与优化",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "text": "Nginx",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "Tomcat",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 46,
+          "text": "Redis",
+          "label": "S"
+        },
+        {
+          "start": 47,
+          "end": 52,
+          "text": "MySQL",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "部署与优化保留共享对象；操作系统及列举组件处于明确实践语境。",
+      "issues": []
+    }
+  ]
+}

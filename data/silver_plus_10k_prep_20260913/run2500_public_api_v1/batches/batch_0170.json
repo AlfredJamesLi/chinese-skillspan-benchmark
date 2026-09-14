@@ -1,0 +1,292 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 50.97,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5042,
+    "completion_tokens": 1593,
+    "total_tokens": 6635,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 606
+    },
+    "input_tokens": 5042,
+    "output_tokens": 1593,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01691\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为招聘公告及附件指引，未直接陈述具体能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01692\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"专科或以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":12,\"text\":\"软件开发\",\"label\":\"K\"},{\"start\":13,\"end\":21,\"text\":\"计算机类相关专业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历与专业要求标K；软件开发由并列专业语境限定。泛化工作经验及年限不标。\",\"issues\":[]},{\"id\":\"sp10k-01693\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"冰热水\",\"label\":\"K\"},{\"start\":6,\"end\":8,\"text\":\"暖通\",\"label\":\"K\"},{\"start\":9,\"end\":12,\"text\":\"洁净室\",\"label\":\"K\"},{\"start\":13,\"end\":21,\"text\":\"工艺废气系统架构\",\"label\":\"K\"},{\"start\":22,\"end\":24,\"text\":\"原理\",\"label\":\"K\"},{\"start\":27,\"end\":31,\"text\":\"设备操作\",\"label\":\"S\"},{\"start\":32,\"end\":36,\"text\":\"参数设置\",\"label\":\"S\"},{\"start\":37,\"end\":45,\"text\":\"异常分析排除能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"并列系统领域受架构及原理知识语境限定，标K；设备操作、参数设置和设备异常分析排除为职业技能。\",\"issues\":[]},{\"id\":\"sp10k-01694\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明面试当天携带证件材料的行政流程，不将证件清单视为独立资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01695\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"幼儿园及以上的教师资格\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求教师资格，保留资格适用层级。\",\"issues\":[]},{\"id\":\"sp10k-01696\",\"spans\":[{\"start\":1,\"end\":5,\"text\":\"文字编写\",\"label\":\"S\"},{\"start\":6,\"end\":11,\"text\":\"PPT设计\",\"label\":\"S\"},{\"start\":16,\"end\":18,\"text\":\"PS\",\"label\":\"S\"},{\"start\":19,\"end\":21,\"text\":\"AI\",\"label\":\"S\"},{\"start\":22,\"end\":25,\"text\":\"CAD\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"文字编写和PPT设计为职业活动；PS、AI、CAD处于明确操作语境，标工具技能S。\",\"issues\":[]},{\"id\":\"sp10k-01697\",\"spans\":[{\"start\":20,\"end\":24,\"text\":\"综合素质\",\"label\":\"T\"},{\"start\":25,\"end\":31,\"text\":\"应急处置能力\",\"label\":\"S\"},{\"start\":40,\"end\":46,\"text\":\"医学基础知识\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"面试测试内容明确指向候选人素质与知识；医学岗位的应急处置能力按领域技能标S，医学基础知识标K。\",\"issues\":[]},{\"id\":\"sp10k-01698\",\"spans\":[{\"start\":14,\"end\":18,\"text\":\"售后服务\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"售后服务为明确职业职责；客户类别和泛化工作后缀不进入最短跨度。\",\"issues\":[]},{\"id\":\"sp10k-01699\",\"spans\":[{\"start\":7,\"end\":16,\"text\":\"与其他专业人员配合\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"要求跨专业人员协作，标T；项目实施工程中为该协作的情境限定。\",\"issues\":[]},{\"id\":\"sp10k-01700\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"工作积极\",\"label\":\"T\"},{\"start\":5,\"end\":7,\"text\":\"主动\",\"label\":\"T\"},{\"start\":13,\"end\":16,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":17,\"end\":21,\"text\":\"抗压能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"工作态度、责任心和抗压能力均为通用特质；程度修饰及末尾杂字符不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01691",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为招聘公告及附件指引，未直接陈述具体能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01692",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "专科或以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "软件开发",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 21,
+            "text": "计算机类相关专业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历与专业要求标K；软件开发由并列专业语境限定。泛化工作经验及年限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01693",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "冰热水",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "text": "暖通",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "text": "洁净室",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 21,
+            "text": "工艺废气系统架构",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "text": "原理",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "设备操作",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "text": "参数设置",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 45,
+            "text": "异常分析排除能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列系统领域受架构及原理知识语境限定，标K；设备操作、参数设置和设备异常分析排除为职业技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01694",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明面试当天携带证件材料的行政流程，不将证件清单视为独立资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01695",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "幼儿园及以上的教师资格",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求教师资格，保留资格适用层级。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01696",
+        "spans": [
+          {
+            "start": 1,
+            "end": 5,
+            "text": "文字编写",
+            "label": "S"
+          },
+          {
+            "start": 6,
+            "end": 11,
+            "text": "PPT设计",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 18,
+            "text": "PS",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 21,
+            "text": "AI",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "text": "CAD",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文字编写和PPT设计为职业活动；PS、AI、CAD处于明确操作语境，标工具技能S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01697",
+        "spans": [
+          {
+            "start": 20,
+            "end": 24,
+            "text": "综合素质",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "text": "应急处置能力",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 46,
+            "text": "医学基础知识",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "面试测试内容明确指向候选人素质与知识；医学岗位的应急处置能力按领域技能标S，医学基础知识标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01698",
+        "spans": [
+          {
+            "start": 14,
+            "end": 18,
+            "text": "售后服务",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "售后服务为明确职业职责；客户类别和泛化工作后缀不进入最短跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01699",
+        "spans": [
+          {
+            "start": 7,
+            "end": 16,
+            "text": "与其他专业人员配合",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "要求跨专业人员协作，标T；项目实施工程中为该协作的情境限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01700",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "工作积极",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "text": "主动",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "抗压能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "工作态度、责任心和抗压能力均为通用特质；程度修饰及末尾杂字符不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 170,
+  "ids": [
+    "sp10k-01691",
+    "sp10k-01692",
+    "sp10k-01693",
+    "sp10k-01694",
+    "sp10k-01695",
+    "sp10k-01696",
+    "sp10k-01697",
+    "sp10k-01698",
+    "sp10k-01699",
+    "sp10k-01700"
+  ],
+  "at": "2026-09-13T16:30:49.069232+00:00"
+}

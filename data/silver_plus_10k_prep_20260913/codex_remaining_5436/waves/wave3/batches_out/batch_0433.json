@@ -1,0 +1,282 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06821",
+      "spans": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "检测分析",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "汇总实验数据",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注明确要求执行的检测分析和实验数据汇总活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06822",
+      "spans": [
+        {
+          "start": 7,
+          "end": 11,
+          "text": "数据分析",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "数据治理",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "数据架构",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 33,
+          "text": "数据标准化流程",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "泛化年限经验不标；具体数据活动、领域知识和流程分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06823",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "中级会计师",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 15,
+          "text": "CPA资格",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "会计职称和CPA资格属于非语言专业资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06824",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "保洁用品的领用",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "发放",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 20,
+          "text": "采购计划的编制",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注岗位要求执行的领用、发放和采购计划编制活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06825",
+      "spans": [
+        {
+          "start": 7,
+          "end": 19,
+          "text": "全日制统招本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格名标注为K；相关专业名称不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06826",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "柴油发动机原理",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 18,
+          "text": "发电机组结构组成",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 31,
+          "text": "SolidWorks",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 34,
+          "text": "UG",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "creo",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "发动机原理和机组结构属于知识；三维建模工具属于岗位工具运用。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06827",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "VCU实车功能调试",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "编写测试用例",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注实车功能调试和测试用例编写两项职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06828",
+      "spans": [
+        {
+          "start": 10,
+          "end": 14,
+          "text": "工作受理",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "方案审核",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "预算审核",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 33,
+          "text": "施工质量安全监管",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "施工验收",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 43,
+          "text": "费用结算",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注整改工程中明确要求负责的受理、审核、监管、验收和结算活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06829",
+      "spans": [
+        {
+          "start": 9,
+          "end": 13,
+          "text": "行业报告",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 21,
+          "text": "大数据分析工具",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 32,
+          "text": "深度剖析国内市场趋势",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "竞争格局",
+          "label": "K"
+        },
+        {
+          "start": 37,
+          "end": 45,
+          "text": "挖掘潜在业务机会",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 56,
+          "text": "精准定位目标客户群体",
+          "label": "S"
+        },
+        {
+          "start": 57,
+          "end": 70,
+          "text": "制定具有前瞻性的市场拓展略",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注市场分析所要求的报告或工具运用及具体分析、挖掘、定位和制定活动；保留原文错写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06830",
+      "spans": [
+        {
+          "start": 17,
+          "end": 21,
+          "text": "合作开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注与供应商或高校开展材料性能提升合作开发的职业活动。",
+      "issues": []
+    }
+  ]
+}

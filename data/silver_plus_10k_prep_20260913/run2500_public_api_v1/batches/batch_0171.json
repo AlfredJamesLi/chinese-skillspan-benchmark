@@ -1,0 +1,380 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 44.305,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5020,
+    "completion_tokens": 1511,
+    "total_tokens": 6531,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 704
+    },
+    "input_tokens": 5020,
+    "output_tokens": 1511,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01702",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            8
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "应变能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "谈判能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01703",
+      "repairs": [
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            20,
+            26
+          ],
+          "to": [
+            22,
+            28
+          ],
+          "text": "渗透测试工具"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01708",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            8
+          ],
+          "to": [
+            2,
+            6
+          ],
+          "text": "项目管理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            15
+          ],
+          "to": [
+            7,
+            11
+          ],
+          "text": "理论知识"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            24
+          ],
+          "to": [
+            14,
+            19
+          ],
+          "text": "PMP认证"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01710",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            10,
+            16
+          ],
+          "to": [
+            6,
+            12
+          ],
+          "text": "机械设备维护"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            25
+          ],
+          "to": [
+            13,
+            22
+          ],
+          "text": "自动化产线技术支持"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01701\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"Java语言\",\"label\":\"S\"},{\"start\":9,\"end\":17,\"text\":\"Python语言\",\"label\":\"S\"},{\"start\":20,\"end\":26,\"text\":\"Spring\",\"label\":\"S\"},{\"start\":27,\"end\":31,\"text\":\"WSGI\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"编程语言和框架作为岗位使用工具标注为S。\",\"issues\":[]},{\"id\":\"sp10k-01702\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"应变能力\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"谈判能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"应变能力和谈判能力属于跨行业通用能力。\",\"issues\":[]},{\"id\":\"sp10k-01703\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"渗透测试步骤\",\"label\":\"S\"},{\"start\":9,\"end\":11,\"text\":\"方法\",\"label\":\"S\"},{\"start\":12,\"end\":14,\"text\":\"流程\",\"label\":\"S\"},{\"start\":20,\"end\":26,\"text\":\"渗透测试工具\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"渗透测试的步骤、方法、流程及工具使用均为可执行职业活动或方法。\",\"issues\":[]},{\"id\":\"sp10k-01704\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"文本描述培训申请、审核和测评流程，并非候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01705\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"文本描述报名资格初审流程，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01706\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"C#开发语言\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"开发语言作为岗位使用工具标注为S。\",\"issues\":[]},{\"id\":\"sp10k-01707\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"文本规定面试答题语言和资格复审说明流程，不构成候选人所需语种资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01708\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"项目管理\",\"label\":\"K\"},{\"start\":9,\"end\":15,\"text\":\"理论知识\",\"label\":\"K\"},{\"start\":17,\"end\":24,\"text\":\"PMP认证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"项目管理理论知识属于领域知识，PMP认证属于非语言资格。\",\"issues\":[]},{\"id\":\"sp10k-01709\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"ASP.net\",\"label\":\"S\"},{\"start\":10,\"end\":13,\"text\":\"CSS\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"HTML\",\"label\":\"S\"},{\"start\":19,\"end\":29,\"text\":\"Javascript\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"网站开发中的具体语言、标记语言和工具名作为可执行开发技能标注为S。\",\"issues\":[]},{\"id\":\"sp10k-01710\",\"spans\":[{\"start\":10,\"end\":16,\"text\":\"机械设备维护\",\"label\":\"S\"},{\"start\":17,\"end\":25,\"text\":\"自动化产线技术支持\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"具体设备维护和产线技术支持活动可去除经验后仍保留完整职业活动意义，标注为S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01701",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "Java语言",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 17,
+            "text": "Python语言",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "Spring",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "WSGI",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "编程语言和框架作为岗位使用工具标注为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01702",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "应变能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "谈判能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "应变能力和谈判能力属于跨行业通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01703",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "渗透测试步骤",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "方法",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "流程",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "渗透测试工具",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "渗透测试的步骤、方法、流程及工具使用均为可执行职业活动或方法。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01704",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "文本描述培训申请、审核和测评流程，并非候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01705",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "文本描述报名资格初审流程，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01706",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "C#开发语言",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "开发语言作为岗位使用工具标注为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01707",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "文本规定面试答题语言和资格复审说明流程，不构成候选人所需语种资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01708",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "项目管理",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "理论知识",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "text": "PMP认证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "项目管理理论知识属于领域知识，PMP认证属于非语言资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01709",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "ASP.net",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "text": "CSS",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "HTML",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 29,
+            "text": "Javascript",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "网站开发中的具体语言、标记语言和工具名作为可执行开发技能标注为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01710",
+        "spans": [
+          {
+            "start": 6,
+            "end": 12,
+            "text": "机械设备维护",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 22,
+            "text": "自动化产线技术支持",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "具体设备维护和产线技术支持活动可去除经验后仍保留完整职业活动意义，标注为S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 171,
+  "ids": [
+    "sp10k-01701",
+    "sp10k-01702",
+    "sp10k-01703",
+    "sp10k-01704",
+    "sp10k-01705",
+    "sp10k-01706",
+    "sp10k-01707",
+    "sp10k-01708",
+    "sp10k-01709",
+    "sp10k-01710"
+  ],
+  "at": "2026-09-13T16:31:33.864836+00:00"
+}

@@ -1,0 +1,404 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02935",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "系统集成",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "网络技术技能",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 27,
+          "text": "接收新技术和新业务能力",
+          "label": "T"
+        },
+        {
+          "start": 35,
+          "end": 43,
+          "text": "独立处理紧急任务",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业技能、学习适应能力和独立应急能力；泛化的技术过硬不单标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02936",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "排查系统故障",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "安全补丁升级",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "基线配置",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "安全漏洞加固",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "独立的故障排查与安全运维活动分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02937",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅泛指其他公告要求，没有具体能力、知识或资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02939",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "Linux系统的安装和维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装和维护共享系统对象，保留完整活动短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02940",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格复审人选确定流程，不含具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02941",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "Labview",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 15,
+          "text": "C/C++",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 31,
+          "text": "编写、调试项目程序",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发工具和编程语言处于程序开发语境；编写与调试共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02942",
+      "spans": [
+        {
+          "start": 12,
+          "end": 37,
+          "text": "监控、停车场、人员门禁以及其他相关弱电系统售后维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列系统共享售后维护职能，保留完整对象列表，排除地点与工作尾词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02943",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "计算机组网",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "集成应用技术",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "计算机硬件",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "组网为职业技术活动，硬件为知识对象；集成应用技术的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "集成应用技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "未明确指概括性技术知识还是可执行的集成应用方法；掌握这一触发词不足以消除歧义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02944",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应聘资格复审及面试资格取消流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02945",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "软件开发",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "系统运维",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "工作态度",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "团队合作意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体活动去除经验后意义完整；学习能力、态度和合作意识为通用素质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02946",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "软件开发文档书写能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具有明确专业对象的文档书写能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02947",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告、发布渠道及附件索引，未列出具体候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02948",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "技术问题分析、定位、反馈和跟进",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "提出改进建议",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "前段动作共享技术问题对象；改进建议承接同一技术问题语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02949",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "明确暂不要求执业医师证，不抽取被豁免的资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02950",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "学术条件在优秀课处截断，无法识别完整的成果或资格要求。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "获得省级及以上优秀课",
+          "alternatives": [
+            "补全后作为学术成果或资格要求标注",
+            "当前残句不足以形成完整提及，暂不纳入主层"
+          ],
+          "reason": "缺少优秀课之后的原文，不能确定要求的具体成果、资格及完整名称。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02951",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "在职人员报名证明材料提交清单，未独立规定具体能力或资格取得要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02952",
+      "spans": [
+        {
+          "start": 3,
+          "end": 17,
+          "text": "填写、记录、整理相关运行数据",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "三项操作共享运行数据对象，保留完整活动短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02953",
+      "spans": [
+        {
+          "start": 18,
+          "end": 22,
+          "text": "毕业证书",
+          "label": "K"
+        },
+        {
+          "start": 43,
+          "end": 47,
+          "text": "学位证书",
+          "label": "K"
+        },
+        {
+          "start": 48,
+          "end": 52,
+          "text": "职称证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求报名日前取得的非语言资格；就业推荐表属于提交材料，不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02955",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "针对特定毕业生的补贴待遇，不是应聘学历要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02956",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "加试展示与面试计分说明，专业名称仅限定报考岗位。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02957",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "入围考生选岗流程及放弃资格规则。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02958",
+      "spans": [
+        {
+          "start": 7,
+          "end": 19,
+          "text": "全日制统招本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "text": "计算机",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格名与明确专业核心名；年龄和泛化相关专业不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02959",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "同等对待与平等就业政策说明，未独立提出候选人必须具备的资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02960",
+      "spans": [
+        {
+          "start": 2,
+          "end": 25,
+          "text": "对打印机、复印机、传真机等常见硬件故障进行定位",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 35,
+          "text": "软件故障定位和修复",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取硬件与软件故障处理；括号内故障示例不另作知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02961",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考试科目及泛化相关知识说明，没有具体知识领域提及。",
+      "issues": []
+    }
+  ]
+}

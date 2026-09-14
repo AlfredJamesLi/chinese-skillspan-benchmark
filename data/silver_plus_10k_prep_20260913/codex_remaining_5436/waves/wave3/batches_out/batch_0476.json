@@ -1,0 +1,190 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07251",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为岗位要求和专业技能标题，未列出具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07252",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "气表测试方法",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 18,
+          "text": "国际/国内标准",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 34,
+          "text": "英文技术文档的阅读能力",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "测试方法为可执行方法，标准为规范知识，英文技术文档阅读为语言能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07253",
+      "spans": [
+        {
+          "start": 13,
+          "end": 25,
+          "text": "写字楼或类似场所安全管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取有明确场所限定的安全管理职业活动，去除年限及工作经验修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07254",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "电子",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "材料",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "物理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历资格完整保留，具体专业分别标注；泛化的相关专业不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07255",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "撰写项目营销报告",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "报告撰写为明确职责；确保工作与整体目标协调属于结果要求，不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07256",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科或以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格；专业不限及无经验者亦可不构成具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07257",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "行车操作流程",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "吊具使用",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "安全规范",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作流程与安全规范为知识要求，吊具使用为工具操作技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07258",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明岗位及待遇确定方式，无具体能力、知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07259",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "日常维修",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "计划检修",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "保养",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分三项独立维护职责；确保设施正常运转为结果承诺，不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07260",
+      "spans": [
+        {
+          "start": 7,
+          "end": 13,
+          "text": "医院运作流程",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 23,
+          "text": "院感防控的基本要求",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "要求熟悉医院流程及院感防控要求，均为领域知识。",
+      "issues": []
+    }
+  ]
+}

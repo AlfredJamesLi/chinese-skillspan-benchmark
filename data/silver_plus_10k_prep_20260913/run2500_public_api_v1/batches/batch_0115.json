@@ -1,0 +1,260 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 64.963,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5119,
+    "completion_tokens": 2014,
+    "total_tokens": 7133,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1034
+    },
+    "input_tokens": 5119,
+    "output_tokens": 2014,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01141\",\"spans\":[{\"start\":2,\"end\":33,\"text\":\"weblogic，tomcat及apache中间件的配置及调优\",\"label\":\"S\"},{\"start\":34,\"end\":38,\"text\":\"项目部署\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"中间件配置及调优保留共享动作和对象；项目部署为独立职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01142\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为资格初审时间安排，不含能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01143\",\"spans\":[{\"start\":4,\"end\":22,\"text\":\"计算机操作系统及应用软件的安装、诊断\",\"label\":\"S\"},{\"start\":23,\"end\":29,\"text\":\"提供技术支持\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"安装、诊断共享职业对象，保留完整跨度；技术支持单独抽取。\",\"issues\":[]},{\"id\":\"sp10k-01144\",\"spans\":[{\"start\":2,\"end\":26,\"text\":\"金融大数据、金融人工智能、互联网金融前沿课题研究\",\"label\":\"S\"},{\"start\":27,\"end\":33,\"text\":\"撰写研究报告\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确前沿课题研究及研究报告产出，按职业研究活动标注；并列领域共享课题研究中心语。\",\"issues\":[]},{\"id\":\"sp10k-01145\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"SqlServer\",\"label\":\"S\"},{\"start\":15,\"end\":30,\"text\":\"编写存储过程、自定义涵义、视图\",\"label\":\"S\"},{\"start\":31,\"end\":40,\"text\":\"SQL语句性能调优\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库工具及明确编写、调优活动标S；保留原文“自定义涵义”，不修正措辞。\",\"issues\":[]},{\"id\":\"sp10k-01146\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"文物展览交流政策理论研究\",\"label\":\"S\"},{\"start\":17,\"end\":28,\"text\":\"大型博物馆展览组织策划\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"展览组织策划是完整职业活动，去除经验后意义不变；政策理论研究的知识与研究能力解释待决。\",\"issues\":[{\"kind\":\"type\",\"text\":\"文物展览交流政策理论研究\",\"alternatives\":[\"K\",\"T\",\"S\"],\"reason\":\"“熟悉”未说明是掌握政策理论研究知识、具备一般学术研究能力，还是执行具体政策研究方法；缺少研究任务或方法说明，暂标S。\"}]},{\"id\":\"sp10k-01147\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报考资格条件标题，没有具体要求。\",\"issues\":[]},{\"id\":\"sp10k-01148\",\"spans\":[{\"start\":53,\"end\":60,\"text\":\"大专及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格；政治身份、年龄、任职年限及考核条件不作为职业能力或专业资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01149\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"现场生产设备效率提升\",\"label\":\"S\"},{\"start\":13,\"end\":18,\"text\":\"OEE改进\",\"label\":\"S\"},{\"start\":19,\"end\":30,\"text\":\"设备相关的产品良率改进\",\"label\":\"S\"},{\"start\":31,\"end\":37,\"text\":\"设备参数优化\",\"label\":\"S\"},{\"start\":38,\"end\":44,\"text\":\"设备安全改进\",\"label\":\"S\"},{\"start\":45,\"end\":51,\"text\":\"设备故障维修\",\"label\":\"S\"},{\"start\":52,\"end\":56,\"text\":\"设备保养\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"并列项为明确承担的设备改善、指标优化和维护职能，分别标注，不合并独立职责。\",\"issues\":[]},{\"id\":\"sp10k-01150\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"说明不同教育形式毕业生的报考身份认定，并非要求候选人具备相应学历资格。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01141",
+        "spans": [
+          {
+            "start": 2,
+            "end": 33,
+            "text": "weblogic，tomcat及apache中间件的配置及调优",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "text": "项目部署",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "中间件配置及调优保留共享动作和对象；项目部署为独立职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01142",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为资格初审时间安排，不含能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01143",
+        "spans": [
+          {
+            "start": 4,
+            "end": 22,
+            "text": "计算机操作系统及应用软件的安装、诊断",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "text": "提供技术支持",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "安装、诊断共享职业对象，保留完整跨度；技术支持单独抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01144",
+        "spans": [
+          {
+            "start": 2,
+            "end": 26,
+            "text": "金融大数据、金融人工智能、互联网金融前沿课题研究",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "text": "撰写研究报告",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确前沿课题研究及研究报告产出，按职业研究活动标注；并列领域共享课题研究中心语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01145",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "SqlServer",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 30,
+            "text": "编写存储过程、自定义涵义、视图",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 40,
+            "text": "SQL语句性能调优",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库工具及明确编写、调优活动标S；保留原文“自定义涵义”，不修正措辞。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01146",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "文物展览交流政策理论研究",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 28,
+            "text": "大型博物馆展览组织策划",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "展览组织策划是完整职业活动，去除经验后意义不变；政策理论研究的知识与研究能力解释待决。",
+        "issues": [
+          {
+            "kind": "type",
+            "text": "文物展览交流政策理论研究",
+            "alternatives": [
+              "K",
+              "T",
+              "S"
+            ],
+            "reason": "“熟悉”未说明是掌握政策理论研究知识、具备一般学术研究能力，还是执行具体政策研究方法；缺少研究任务或方法说明，暂标S。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-01147",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报考资格条件标题，没有具体要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01148",
+        "spans": [
+          {
+            "start": 53,
+            "end": 60,
+            "text": "大专及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格；政治身份、年龄、任职年限及考核条件不作为职业能力或专业资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01149",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "现场生产设备效率提升",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 18,
+            "text": "OEE改进",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 30,
+            "text": "设备相关的产品良率改进",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "text": "设备参数优化",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "text": "设备安全改进",
+            "label": "S"
+          },
+          {
+            "start": 45,
+            "end": 51,
+            "text": "设备故障维修",
+            "label": "S"
+          },
+          {
+            "start": 52,
+            "end": 56,
+            "text": "设备保养",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列项为明确承担的设备改善、指标优化和维护职能，分别标注，不合并独立职责。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01150",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "说明不同教育形式毕业生的报考身份认定，并非要求候选人具备相应学历资格。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 115,
+  "ids": [
+    "sp10k-01141",
+    "sp10k-01142",
+    "sp10k-01143",
+    "sp10k-01144",
+    "sp10k-01145",
+    "sp10k-01146",
+    "sp10k-01147",
+    "sp10k-01148",
+    "sp10k-01149",
+    "sp10k-01150"
+  ],
+  "at": "2026-09-13T15:28:28.929703+00:00"
+}

@@ -1,0 +1,452 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02679",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名阅读及条件核对流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02680",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "指导平台运营组工作",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "商城日常运营",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "商品运维",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "商品政策呈现",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "团队指导为通用管理能力；各项运营活动独立抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02681",
+      "spans": [
+        {
+          "start": 2,
+          "end": 36,
+          "text": "公司运营管理系统（ERP、钉钉、内网监控系统、产品技术数据库）的运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留运维动作及其完整系统对象，括号内不嵌套工具标签。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02682",
+      "spans": [
+        {
+          "start": 4,
+          "end": 19,
+          "text": "跟踪定位产品软件中的缺陷或问题",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "推动修复",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取软件缺陷定位及推动修复两项职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02683",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "文字写作能力",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "组织观念",
+          "label": "T"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "纪律观念",
+          "label": "T"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "保密意识",
+          "label": "T"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "吃苦耐劳",
+          "label": "T"
+        },
+        {
+          "start": 48,
+          "end": 50,
+          "text": "学习",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "新闻宣传语境中的写作能力为S；观念、意识及通用特质为T，去除要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02684",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Linux系统运维",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "TCP/IP",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 29,
+          "text": "HTTP协议原理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统运维为职业活动；并列协议受原理语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02685",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "文本可能为住培准入条件，资格要求是否属于招聘标注范围待定。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "中级及以上专业技术资格",
+          "alternatives": [
+            "属于招聘候选人资格要求，标K",
+            "仅为住培报名准入条件，不标"
+          ],
+          "reason": "局部语境涉及住培及单位委派，缺少其与招聘任职要求关系的说明。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02686",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅公告岗位名称、岗位等级及招聘人数。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02687",
+      "spans": [
+        {
+          "start": 2,
+          "end": 22,
+          "text": "Linux、AIX操作系统的基本操作命令",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作命令为可执行技术内容；保留并列系统共享的命令限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02688",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明急救站设立背景及人员配置，无具体候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02689",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "钳工中级证书",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "电焊证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取非语言职业资格，去除要求及优先修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02690",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "理解能力",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "接受能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项均为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02691",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报考条件标题，未列具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02692",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "大专及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格；年龄和出生日期不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02693",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "oracle过程编写、调试和优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "三个动作共享oracle过程对象，保留完整活动短语及原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02694",
+      "spans": [
+        {
+          "start": 5,
+          "end": 16,
+          "text": "大学本科或本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "信息管理",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 28,
+          "text": "通信",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历保留完整资格名，具体专业分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02695",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明应聘试讲、备课及面试内容，属于招聘考核流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02696",
+      "spans": [
+        {
+          "start": 10,
+          "end": 22,
+          "text": "图书文献资源的管理与服务",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "管理与服务共享图书文献资源对象，整体保留。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02698",
+      "spans": [
+        {
+          "start": 0,
+          "end": 31,
+          "text": "全日制普通高等院校医学系、中西医专业或中医学专业大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 39,
+          "end": 44,
+          "text": "执业医师证",
+          "label": "K"
+        },
+        {
+          "start": 45,
+          "end": 52,
+          "text": "执业助理医生证",
+          "label": "K"
+        },
+        {
+          "start": 53,
+          "end": 58,
+          "text": "护师执业证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历前置限定、并列专业及共享学历后缀整体保留；执业证书分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02699",
+      "spans": [
+        {
+          "start": 2,
+          "end": 24,
+          "text": "Onestratigraphy数据库的数字化",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 46,
+          "text": "书籍、文献的扫描、处理、录入、勘误",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取数据库数字化及具体文献处理活动；后者保留多个动作共享的对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02700",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘要求及操作方法标题。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02701",
+      "spans": [
+        {
+          "start": 88,
+          "end": 95,
+          "text": "担任班主任工作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确附加的班主任职责；联系方式、岗位名称及报名信息不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02702",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "网络安全知识",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "动手能力",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 36,
+          "text": "主流网络安全设备的配置和使用",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 48,
+          "text": "处理常见的网络故障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "区分领域知识、通用动手能力及设备操作和故障处理活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02703",
+      "spans": [
+        {
+          "start": 4,
+          "end": 16,
+          "text": "工程项目电气自控专业工作",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 25,
+          "text": "在线监测运维支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项均为明确的专业岗位职能，分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02704",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为资格复审到场及身份证材料提交要求。",
+      "issues": []
+    }
+  ]
+}

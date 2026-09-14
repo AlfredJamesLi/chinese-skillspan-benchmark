@@ -1,0 +1,222 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07071",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "创新意识",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 28,
+          "text": "快速掌握新技术和新方法",
+          "label": "T"
+        },
+        {
+          "start": 31,
+          "end": 45,
+          "text": "优化和改进数据治理流程和方法",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学习与创新要求为通用能力；数据治理流程改进为职业活动，保留共享对象；末尾提升水平为结果目标，不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07072",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "抗压能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抗压能力为通用特质；接受出差、外勤属于工作安排，不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07073",
+      "spans": [
+        {
+          "start": 9,
+          "end": 19,
+          "text": "建立工程设施设备台账",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 36,
+          "text": "检查台账的编制、更新和录入",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取台账建立和维护活动；编制、更新、录入共享台账对象，保留连续完整短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07074",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "认真负责",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "团队合作精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工作态度和团队合作精神均为通用特质，去除程度及要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07075",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "市场营销",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "工商管理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格及具体专业名称；毕业届别、应届身份与优先修饰不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07076",
+      "spans": [
+        {
+          "start": 8,
+          "end": 17,
+          "text": "理赔业务的运营分析",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 36,
+          "text": "提出承保政策建议",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运营分析和承保政策建议为两项独立职业活动，分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07077",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "化工",
+          "label": "K"
+        },
+        {
+          "start": 3,
+          "end": 5,
+          "text": "分析",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "化工、分析在本句中均受专业语境限定，按专业名称标K；不补写具体专业全称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07078",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "合并财务报表",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "职责语境中的合并财务报表为财务职业活动；泛化相关事项不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07079",
+      "spans": [
+        {
+          "start": 0,
+          "end": 27,
+          "text": "安全相关的消防，设施设备及人员环境健康等专业分包商管理",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 40,
+          "text": "监督专业维保实施情况",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 48,
+          "text": "供应商绩效考核",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业分包商管理、维保监督和供应商考核分别为职业活动；首项共享分包商管理中心语，保留完整跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07080",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "BA段机型切换",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "换线",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "备线",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "机型切换、换线和备线可独立表达职业活动，逐项抽取；共享岗位限定由局部语境提供。",
+      "issues": []
+    }
+  ]
+}

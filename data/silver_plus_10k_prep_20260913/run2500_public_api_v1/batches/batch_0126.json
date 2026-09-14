@@ -1,0 +1,284 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 65.697,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5067,
+    "completion_tokens": 2062,
+    "total_tokens": 7129,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1021
+    },
+    "input_tokens": 5067,
+    "output_tokens": 2062,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01251\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"0到1搭建数据运营体系的能力\",\"label\":\"S\"},{\"start\":17,\"end\":22,\"text\":\"对数据敏感\",\"label\":\"T\"},{\"start\":25,\"end\":35,\"text\":\"通过数据洞察业务本质\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取领域绑定能力、数据敏感特质及数据洞察活动；为决策提供支撑属于概括性结果。\",\"issues\":[]},{\"id\":\"sp10k-01252\",\"spans\":[{\"start\":5,\"end\":12,\"text\":\"中国语言文学类\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"专业类别为知识资格要求，专业代码不另标。\",\"issues\":[]},{\"id\":\"sp10k-01253\",\"spans\":[{\"start\":5,\"end\":8,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":9,\"end\":11,\"text\":\"通信\",\"label\":\"K\"},{\"start\":12,\"end\":14,\"text\":\"电子\",\"label\":\"K\"},{\"start\":16,\"end\":23,\"text\":\"本科或以上学历\",\"label\":\"K\"},{\"start\":25,\"end\":33,\"text\":\"大型网络项目实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"专业与完整学历资格分别标K；项目实施为明确职业活动，去除经验后意义完整。\",\"issues\":[]},{\"id\":\"sp10k-01254\",\"spans\":[{\"start\":5,\"end\":10,\"text\":\"CI/CD\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"持续集成\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"持续部署\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"局部经验要求明确指向持续集成及部署实践，按可执行技术方法标S。\",\"issues\":[]},{\"id\":\"sp10k-01255\",\"spans\":[{\"start\":8,\"end\":12,\"text\":\"政治素质\",\"label\":\"T\"},{\"start\":13,\"end\":17,\"text\":\"道德品行\",\"label\":\"T\"},{\"start\":20,\"end\":30,\"text\":\"坚决捍卫“两个确立”\",\"label\":\"T\"},{\"start\":31,\"end\":41,\"text\":\"自觉增强“四个意识”\",\"label\":\"T\"},{\"start\":42,\"end\":50,\"text\":\"坚定“四个自信”\",\"label\":\"T\"},{\"start\":51,\"end\":59,\"text\":\"做到“两个维护”\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求候选人的政治素质、道德品行及政治态度，作为个人特质标T，不嵌套抽取口号中的概念。\",\"issues\":[]},{\"id\":\"sp10k-01256\",\"spans\":[{\"start\":8,\"end\":14,\"text\":\"搭建测试环境\",\"label\":\"S\"},{\"start\":17,\"end\":21,\"text\":\"开发设计\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"测试环境搭建与开发设计为明确职业活动；后续动作缺少清晰对象，暂不纳入主层。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"推行、实施和持续改进\",\"alternatives\":[\"作为承接开发设计对象的职业活动纳入\",\"作为对象不明的泛化活动不纳入\"],\"reason\":\"未说明推行、实施和持续改进的具体对象，无法确定是否承接开发设计或另有所指，需要补充职责上下文。\"}]},{\"id\":\"sp10k-01257\",\"spans\":[{\"start\":44,\"end\":49,\"text\":\"博士毕业生\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"公告中明确限定招聘对象的博士学历资格，予以保留；年份、应届及在职状态不标。\",\"issues\":[]},{\"id\":\"sp10k-01258\",\"spans\":[{\"start\":0,\"end\":16,\"text\":\"协调公司、三化委和软件公司的工作\",\"label\":\"T\"},{\"start\":25,\"end\":37,\"text\":\"汇报内部两化融合工作情况\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"跨组织工作协调与工作汇报属于通用沟通协调能力；频率及汇报接收方不进入汇报跨度。\",\"issues\":[]},{\"id\":\"sp10k-01259\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅泛指其他资格条件及胜任要求，没有具体能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01260\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报考材料上传及资格审查流程，不属于候选人的职业能力要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01251",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "0到1搭建数据运营体系的能力",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "text": "对数据敏感",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 35,
+            "text": "通过数据洞察业务本质",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取领域绑定能力、数据敏感特质及数据洞察活动；为决策提供支撑属于概括性结果。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01252",
+        "spans": [
+          {
+            "start": 5,
+            "end": 12,
+            "text": "中国语言文学类",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业类别为知识资格要求，专业代码不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01253",
+        "spans": [
+          {
+            "start": 5,
+            "end": 8,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "通信",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "电子",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "text": "本科或以上学历",
+            "label": "K"
+          },
+          {
+            "start": 25,
+            "end": 33,
+            "text": "大型网络项目实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业与完整学历资格分别标K；项目实施为明确职业活动，去除经验后意义完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01254",
+        "spans": [
+          {
+            "start": 5,
+            "end": 10,
+            "text": "CI/CD",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "持续集成",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "持续部署",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "局部经验要求明确指向持续集成及部署实践，按可执行技术方法标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01255",
+        "spans": [
+          {
+            "start": 8,
+            "end": 12,
+            "text": "政治素质",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "道德品行",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 30,
+            "text": "坚决捍卫“两个确立”",
+            "label": "T"
+          },
+          {
+            "start": 31,
+            "end": 41,
+            "text": "自觉增强“四个意识”",
+            "label": "T"
+          },
+          {
+            "start": 42,
+            "end": 50,
+            "text": "坚定“四个自信”",
+            "label": "T"
+          },
+          {
+            "start": 51,
+            "end": 59,
+            "text": "做到“两个维护”",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求候选人的政治素质、道德品行及政治态度，作为个人特质标T，不嵌套抽取口号中的概念。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01256",
+        "spans": [
+          {
+            "start": 8,
+            "end": 14,
+            "text": "搭建测试环境",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "开发设计",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "测试环境搭建与开发设计为明确职业活动；后续动作缺少清晰对象，暂不纳入主层。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "推行、实施和持续改进",
+            "alternatives": [
+              "作为承接开发设计对象的职业活动纳入",
+              "作为对象不明的泛化活动不纳入"
+            ],
+            "reason": "未说明推行、实施和持续改进的具体对象，无法确定是否承接开发设计或另有所指，需要补充职责上下文。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-01257",
+        "spans": [
+          {
+            "start": 44,
+            "end": 49,
+            "text": "博士毕业生",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "公告中明确限定招聘对象的博士学历资格，予以保留；年份、应届及在职状态不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01258",
+        "spans": [
+          {
+            "start": 0,
+            "end": 16,
+            "text": "协调公司、三化委和软件公司的工作",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 37,
+            "text": "汇报内部两化融合工作情况",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "跨组织工作协调与工作汇报属于通用沟通协调能力；频率及汇报接收方不进入汇报跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01259",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅泛指其他资格条件及胜任要求，没有具体能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01260",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报考材料上传及资格审查流程，不属于候选人的职业能力要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 126,
+  "ids": [
+    "sp10k-01251",
+    "sp10k-01252",
+    "sp10k-01253",
+    "sp10k-01254",
+    "sp10k-01255",
+    "sp10k-01256",
+    "sp10k-01257",
+    "sp10k-01258",
+    "sp10k-01259",
+    "sp10k-01260"
+  ],
+  "at": "2026-09-13T15:39:45.794846+00:00"
+}

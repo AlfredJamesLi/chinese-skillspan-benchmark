@@ -1,0 +1,17 @@
+# 如何跑新增 Silver 的 AI 标注（授权后）
+
+1. 系统消息：整份粘贴 `PROMPT_silver_plus_v4212_rev2.txt`。
+2. 用户消息：只贴一个 `batches/batch_XXXX.jsonl`（JSONL 原文）。
+3. 只填写每行的 `gpt6_label`、`gpt6_why`、`model`、`gpt6_remark`。其它字段原样保留。
+4. `gpt6_label`：`[[start,end,"S"], ...]`，Unicode 码点、0 起始、左闭右开。无跨度为 `[]`。
+5. 输出仍是 JSONL，行数与输入相同，不要 Markdown 围栏。
+6. 存成 `batches_out/batch_XXXX.jsonl`。
+7. 全部完成后按 `id` 合并为 `annotation_input/work.labeled.jsonl`（7,936 行）。
+8. 然后：
+
+```bash
+python3 scripts/sample_silver_plus_new150_qa.py \
+  --labeled data/silver_plus_10k_prep_20260913/annotation_input/work.labeled.jsonl
+```
+
+抽中的 150 条称为「新增 Silver 的人工质量检查样本」。不因检查结果不好而换样。不是独立盲标 Gold。

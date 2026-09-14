@@ -1,0 +1,211 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 38.953,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5106,
+    "completion_tokens": 1214,
+    "total_tokens": 6320,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 479
+    },
+    "input_tokens": 5106,
+    "output_tokens": 1214,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00611\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为笔试科目、时间和地点安排，不是岗位能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00612\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明诚信报名及填报信息的行政要求和责任。\",\"issues\":[]},{\"id\":\"sp10k-00613\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名信息填报及承诺要求，未明确具体岗位能力或资格。\",\"issues\":[]},{\"id\":\"sp10k-00614\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为人事关系转移及保留聘用资格的行政规定。\",\"issues\":[]},{\"id\":\"sp10k-00615\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"动手能力\",\"label\":\"T\"},{\"start\":6,\"end\":10,\"text\":\"思路清晰\",\"label\":\"T\"},{\"start\":15,\"end\":19,\"text\":\"沟通技巧\",\"label\":\"T\"},{\"start\":20,\"end\":26,\"text\":\"语言表达能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用能力与特质；去除程度修饰和要求触发词。\",\"issues\":[]},{\"id\":\"sp10k-00616\",\"spans\":[{\"start\":2,\"end\":20,\"text\":\"电脑硬件及周边外设安装维护和维修技能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"硬件及外设为各项操作的共享对象，保留完整职业技能短语。\",\"issues\":[]},{\"id\":\"sp10k-00617\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于在读人员报考限制，并非要求候选人具备文中学历，学历词不单独抽取。\",\"issues\":[]},{\"id\":\"sp10k-00618\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"数据库操作\",\"label\":\"S\"},{\"start\":9,\"end\":40,\"text\":\"mysql、Oracle、sqlserver数据库的安装和调试\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求数据库操作及安装调试；后项保留共享数据库对象的完整活动短语。\",\"issues\":[]},{\"id\":\"sp10k-00619\",\"spans\":[{\"start\":0,\"end\":9,\"text\":\"统招本科及以上学历\",\"label\":\"K\"},{\"start\":10,\"end\":13,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":14,\"end\":16,\"text\":\"通信\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历保留完整资格名；并列专业分别标注，泛化的相关专业不标。\",\"issues\":[]},{\"id\":\"sp10k-00620\",\"spans\":[{\"start\":6,\"end\":31,\"text\":\"服务器（域、邮箱、防火墙、路由）的配置、维护、巡检\",\"label\":\"S\"},{\"start\":33,\"end\":40,\"text\":\"提交相关的报告\",\"label\":\"S\"},{\"start\":46,\"end\":53,\"text\":\"软件、上网管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确执行的运维、报告提交及管理职责；共享对象或管理中心词的并列活动保留完整跨度。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00611",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为笔试科目、时间和地点安排，不是岗位能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00612",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明诚信报名及填报信息的行政要求和责任。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00613",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名信息填报及承诺要求，未明确具体岗位能力或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00614",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为人事关系转移及保留聘用资格的行政规定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00615",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "动手能力",
+            "label": "T"
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "text": "思路清晰",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "沟通技巧",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "语言表达能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用能力与特质；去除程度修饰和要求触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00616",
+        "spans": [
+          {
+            "start": 2,
+            "end": 20,
+            "text": "电脑硬件及周边外设安装维护和维修技能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "硬件及外设为各项操作的共享对象，保留完整职业技能短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00617",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于在读人员报考限制，并非要求候选人具备文中学历，学历词不单独抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00618",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "数据库操作",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 40,
+            "text": "mysql、Oracle、sqlserver数据库的安装和调试",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求数据库操作及安装调试；后项保留共享数据库对象的完整活动短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00619",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "统招本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 16,
+            "text": "通信",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历保留完整资格名；并列专业分别标注，泛化的相关专业不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00620",
+        "spans": [
+          {
+            "start": 6,
+            "end": 31,
+            "text": "服务器（域、邮箱、防火墙、路由）的配置、维护、巡检",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "text": "提交相关的报告",
+            "label": "S"
+          },
+          {
+            "start": 46,
+            "end": 53,
+            "text": "软件、上网管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确执行的运维、报告提交及管理职责；共享对象或管理中心词的并列活动保留完整跨度。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 62,
+  "ids": [
+    "sp10k-00611",
+    "sp10k-00612",
+    "sp10k-00613",
+    "sp10k-00614",
+    "sp10k-00615",
+    "sp10k-00616",
+    "sp10k-00617",
+    "sp10k-00618",
+    "sp10k-00619",
+    "sp10k-00620"
+  ],
+  "at": "2026-09-13T14:41:37.358607+00:00"
+}

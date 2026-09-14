@@ -1,0 +1,243 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 47.6,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5013,
+    "completion_tokens": 1446,
+    "total_tokens": 6459,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 594
+    },
+    "input_tokens": 5013,
+    "output_tokens": 1446,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01011\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报名材料格式与文件大小，属于报名行政流程，不标注PDF工具名。\",\"issues\":[]},{\"id\":\"sp10k-01012\",\"spans\":[{\"start\":3,\"end\":8,\"text\":\"教师资格证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"材料核查要求中明确提及候选人须持有的非语言资格；核查及复印件要求不标。\",\"issues\":[]},{\"id\":\"sp10k-01013\",\"spans\":[{\"start\":0,\"end\":3,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":9,\"end\":15,\"text\":\"大专以上学历\",\"label\":\"K\"},{\"start\":49,\"end\":55,\"text\":\"信息安全行业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注专业、完整学历要求及明确行业背景；泛化相关专业、工作年限与泛化工作经验不标。\",\"issues\":[]},{\"id\":\"sp10k-01014\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明资格复审的入围流程，不含能力、知识或资格名称要求。\",\"issues\":[]},{\"id\":\"sp10k-01015\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"运维人员的工作安排\",\"label\":\"T\"},{\"start\":12,\"end\":24,\"text\":\"运营团队及研发团队的衔接\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"人员工作安排及团队间衔接属于组织协调能力，保留各自必要对象。\",\"issues\":[]},{\"id\":\"sp10k-01016\",\"spans\":[{\"start\":3,\"end\":17,\"text\":\"汇总系统运维过程中的技术问题\",\"label\":\"S\"},{\"start\":18,\"end\":26,\"text\":\"提出持续优化需求\",\"label\":\"S\"},{\"start\":27,\"end\":35,\"text\":\"跟踪问题解决进度\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分三项独立职业活动；后两项承接局部系统运维技术问题语境。\",\"issues\":[]},{\"id\":\"sp10k-01017\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明取消聘用资格后的责任归属，不构成候选人责任心要求。\",\"issues\":[]},{\"id\":\"sp10k-01018\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"对接用户业务需求\",\"label\":\"S\"},{\"start\":13,\"end\":26,\"text\":\"支持IT业务解决方案及实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"业务需求对接属于明确业务活动而非泛化人员联络；解决方案及实施保留共享对象。\",\"issues\":[]},{\"id\":\"sp10k-01019\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"团队管理\",\"label\":\"T\"},{\"start\":5,\"end\":10,\"text\":\"跨部门协作\",\"label\":\"T\"},{\"start\":11,\"end\":23,\"text\":\"培养并提升整个工程组能力\",\"label\":\"T\"},{\"start\":24,\"end\":30,\"text\":\"实施绩效考核\",\"label\":\"S\"},{\"start\":31,\"end\":37,\"text\":\"人员成长规划\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"团队管理、协作、人员培养及成长规划按通用人员管理能力标注；实施绩效考核为明确职业职能。\",\"issues\":[]},{\"id\":\"sp10k-01020\",\"spans\":[{\"start\":10,\"end\":17,\"text\":\"大学本科毕业生\",\"label\":\"K\"},{\"start\":20,\"end\":24,\"text\":\"学士学位\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注本科毕业资格及学位要求；年份与应届身份限定不进入跨度。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01011",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报名材料格式与文件大小，属于报名行政流程，不标注PDF工具名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01012",
+        "spans": [
+          {
+            "start": 3,
+            "end": 8,
+            "text": "教师资格证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "材料核查要求中明确提及候选人须持有的非语言资格；核查及复印件要求不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01013",
+        "spans": [
+          {
+            "start": 0,
+            "end": 3,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "大专以上学历",
+            "label": "K"
+          },
+          {
+            "start": 49,
+            "end": 55,
+            "text": "信息安全行业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注专业、完整学历要求及明确行业背景；泛化相关专业、工作年限与泛化工作经验不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01014",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明资格复审的入围流程，不含能力、知识或资格名称要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01015",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "运维人员的工作安排",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 24,
+            "text": "运营团队及研发团队的衔接",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "人员工作安排及团队间衔接属于组织协调能力，保留各自必要对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01016",
+        "spans": [
+          {
+            "start": 3,
+            "end": 17,
+            "text": "汇总系统运维过程中的技术问题",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "text": "提出持续优化需求",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 35,
+            "text": "跟踪问题解决进度",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分三项独立职业活动；后两项承接局部系统运维技术问题语境。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01017",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明取消聘用资格后的责任归属，不构成候选人责任心要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01018",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "对接用户业务需求",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 26,
+            "text": "支持IT业务解决方案及实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "业务需求对接属于明确业务活动而非泛化人员联络；解决方案及实施保留共享对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01019",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "团队管理",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 10,
+            "text": "跨部门协作",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 23,
+            "text": "培养并提升整个工程组能力",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "实施绩效考核",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "text": "人员成长规划",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "团队管理、协作、人员培养及成长规划按通用人员管理能力标注；实施绩效考核为明确职业职能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01020",
+        "spans": [
+          {
+            "start": 10,
+            "end": 17,
+            "text": "大学本科毕业生",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "学士学位",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注本科毕业资格及学位要求；年份与应届身份限定不进入跨度。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 102,
+  "ids": [
+    "sp10k-01011",
+    "sp10k-01012",
+    "sp10k-01013",
+    "sp10k-01014",
+    "sp10k-01015",
+    "sp10k-01016",
+    "sp10k-01017",
+    "sp10k-01018",
+    "sp10k-01019",
+    "sp10k-01020"
+  ],
+  "at": "2026-09-13T15:16:01.048203+00:00"
+}

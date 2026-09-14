@@ -1,0 +1,262 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 57.65,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5186,
+    "completion_tokens": 1802,
+    "total_tokens": 6988,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 930
+    },
+    "input_tokens": 5186,
+    "output_tokens": 1802,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00791\",\"spans\":[{\"start\":72,\"end\":84,\"text\":\"国（境）外学历学位认证书\",\"label\":\"K\"},{\"start\":96,\"end\":99,\"text\":\"毕业证\",\"label\":\"K\"},{\"start\":100,\"end\":103,\"text\":\"学位证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注明确要求取得的学历认证及资格证书；泛指学历、专业、技能条件和取得期限不标。\",\"issues\":[]},{\"id\":\"sp10k-00792\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"描述招聘考察及资格核查流程，未具体提出候选人应具备的能力或资格名称要求。\",\"issues\":[]},{\"id\":\"sp10k-00793\",\"spans\":[{\"start\":51,\"end\":65,\"text\":\"普通高等教育大学专科以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"岗位条件定义中明确包含学历资格要求；入伍地域及退役身份不标。\",\"issues\":[]},{\"id\":\"sp10k-00794\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"博士研究生出现在聘期待遇分类语境中，不作为候选人资格要求抽取。\",\"issues\":[]},{\"id\":\"sp10k-00795\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"考勤管理\",\"label\":\"S\"},{\"start\":13,\"end\":20,\"text\":\"考勤系统的维护\",\"label\":\"S\"},{\"start\":21,\"end\":25,\"text\":\"加班管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"分别标注明确执行的管理及系统维护职责，去除职责触发词。\",\"issues\":[]},{\"id\":\"sp10k-00796\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"专科或以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":13,\"text\":\"计算机应用\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"完整学历资格和明确专业名标K，泛化相关专业不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00797\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"大学本科\",\"label\":\"K\"},{\"start\":16,\"end\":21,\"text\":\"硕士研究生\",\"label\":\"K\"},{\"start\":22,\"end\":27,\"text\":\"副高级职称\",\"label\":\"K\"},{\"start\":39,\"end\":44,\"text\":\"博士研究生\",\"label\":\"K\"},{\"start\":45,\"end\":50,\"text\":\"正高级职称\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注人才条件中的学历及职称资格，年龄限制不标。\",\"issues\":[]},{\"id\":\"sp10k-00798\",\"spans\":[{\"start\":50,\"end\":54,\"text\":\"语言表达\",\"label\":\"T\"},{\"start\":55,\"end\":59,\"text\":\"反应能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"测试内容明确指向候选人必备的表达和反应能力；考试流程及未具体化的专业知识、工作技能不标。\",\"issues\":[]},{\"id\":\"sp10k-00799\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"认真负责\",\"label\":\"T\"},{\"start\":12,\"end\":15,\"text\":\"事业心\",\"label\":\"T\"},{\"start\":16,\"end\":19,\"text\":\"责任感\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"标注通用工作态度与个人特质，去除程度和要求修饰语。\",\"issues\":[]},{\"id\":\"sp10k-00800\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":6,\"end\":12,\"text\":\"心态积极向上\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"学习能力与积极心态均为跨行业通用能力或特质。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00791",
+        "spans": [
+          {
+            "start": 72,
+            "end": 84,
+            "text": "国（境）外学历学位认证书",
+            "label": "K"
+          },
+          {
+            "start": 96,
+            "end": 99,
+            "text": "毕业证",
+            "label": "K"
+          },
+          {
+            "start": 100,
+            "end": 103,
+            "text": "学位证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注明确要求取得的学历认证及资格证书；泛指学历、专业、技能条件和取得期限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00792",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "描述招聘考察及资格核查流程，未具体提出候选人应具备的能力或资格名称要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00793",
+        "spans": [
+          {
+            "start": 51,
+            "end": 65,
+            "text": "普通高等教育大学专科以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "岗位条件定义中明确包含学历资格要求；入伍地域及退役身份不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00794",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "博士研究生出现在聘期待遇分类语境中，不作为候选人资格要求抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00795",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "考勤管理",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 20,
+            "text": "考勤系统的维护",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "加班管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别标注明确执行的管理及系统维护职责，去除职责触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00796",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "专科或以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "text": "计算机应用",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "完整学历资格和明确专业名标K，泛化相关专业不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00797",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "大学本科",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "text": "硕士研究生",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "text": "副高级职称",
+            "label": "K"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "text": "博士研究生",
+            "label": "K"
+          },
+          {
+            "start": 45,
+            "end": 50,
+            "text": "正高级职称",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注人才条件中的学历及职称资格，年龄限制不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00798",
+        "spans": [
+          {
+            "start": 50,
+            "end": 54,
+            "text": "语言表达",
+            "label": "T"
+          },
+          {
+            "start": 55,
+            "end": 59,
+            "text": "反应能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "测试内容明确指向候选人必备的表达和反应能力；考试流程及未具体化的专业知识、工作技能不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00799",
+        "spans": [
+          {
+            "start": 3,
+            "end": 7,
+            "text": "认真负责",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "text": "事业心",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "text": "责任感",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注通用工作态度与个人特质，去除程度和要求修饰语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00800",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 6,
+            "end": 12,
+            "text": "心态积极向上",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学习能力与积极心态均为跨行业通用能力或特质。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 80,
+  "ids": [
+    "sp10k-00791",
+    "sp10k-00792",
+    "sp10k-00793",
+    "sp10k-00794",
+    "sp10k-00795",
+    "sp10k-00796",
+    "sp10k-00797",
+    "sp10k-00798",
+    "sp10k-00799",
+    "sp10k-00800"
+  ],
+  "at": "2026-09-13T14:57:18.270779+00:00"
+}

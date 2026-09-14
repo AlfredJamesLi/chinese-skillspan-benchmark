@@ -1,0 +1,607 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02443",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "研发设计图文档",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "研发项目业务",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "PLM系统",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "营销业务",
+          "label": "K"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "text": "DRP",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 39,
+          "text": "CRM系统",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "业务及专业文档按知识标注，岗位系统按工具标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02444",
+      "spans": [
+        {
+          "start": 1,
+          "end": 5,
+          "text": "吃苦耐劳",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "上进心",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整特质，末尾孤立的“积”不纳入。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02445",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "学习",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 11,
+          "text": "勇于承担责任",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "理智",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "果断",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 28,
+          "text": "积极性",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 32,
+          "text": "主动性",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 36,
+          "text": "独立性",
+          "label": "T"
+        },
+        {
+          "start": 42,
+          "end": 48,
+          "text": "沟通表达能力",
+          "label": "T"
+        },
+        {
+          "start": 49,
+          "end": 55,
+          "text": "团队协作能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用能力与特质分别抽取，承担责任的意愿保留完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02446",
+      "spans": [
+        {
+          "start": 10,
+          "end": 14,
+          "text": "容量管理",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "分析总结",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项动作共享项目地用电这一具体业务对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02447",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘背景、队伍建设目标及公告引导，未提出具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02449",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "专业或技能未具体化，目录仅作为招考专业认定依据。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02450",
+      "spans": [
+        {
+          "start": 6,
+          "end": 9,
+          "text": "给排水",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "排水管道检测",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "测绘技术",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 31,
+          "text": "测绘",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 34,
+          "text": "物探",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "检测活动及专业名明确；给排水、测绘技术的S为类型待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "给排水",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "工作经验语境支持领域背景或具体实践两种解释，未明确给排水职能。"
+        },
+        {
+          "kind": "type",
+          "text": "测绘技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "技术类相关工作经验可指领域履历或技术运用，缺少具体实践说明。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02451",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "IT相关知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确知识要求；基础程度修饰和泛化经验年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02452",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "服务器及系统部署",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "监控",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "备份",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "维护",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分独立运维活动，后续动作共享服务器及系统对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02453",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "踏实",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "严谨",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "细心",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "认真负责",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为工作态度和通用特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02454",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明专业认定所参照的目录，书名中的学历词不构成资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02455",
+      "spans": [
+        {
+          "start": 6,
+          "end": 18,
+          "text": "网站、平台及应用等的开发",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "维护",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发保留并列对象，维护与管理共享该技术对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02456",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "学历认证和报告打印均为应聘报名流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02457",
+      "spans": [
+        {
+          "start": 16,
+          "end": 18,
+          "text": "汇报",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "汇报为通用沟通活动，校园网运维服务仅为汇报内容。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02458",
+      "spans": [
+        {
+          "start": 2,
+          "end": 31,
+          "text": "对平台公司重大设备、设施更新、改造及新技术应用方案进行审核",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "控制成本",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "效果评估",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "方案审核保留共享审核动作及对象，不把方案内容另造为执行职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02459",
+      "spans": [
+        {
+          "start": 9,
+          "end": 18,
+          "text": "普通高校硕士研究生",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确学历资格，后续取得证书时间说明不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02460",
+      "spans": [
+        {
+          "start": 23,
+          "end": 31,
+          "text": "系统运行趋势分析",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 58,
+          "text": "提交相关的故障、运行、流量、数据等情况的分析报告",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取系统分析与技术报告提交职责，前置领域限定不另列知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02461",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "协调沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "团队协作意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用能力、意识及特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02462",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "休假、培训、学习渠道及晋升机会属于福利与发展支持。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02463",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "技术方案、文档的编写",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "软件单元测试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "编写保留共享动作及并列对象，单元测试独立抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02464",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "text": "专科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "开发运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业和完整学历资格按K，开发运维为职业活动，去除经验年限。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02465",
+      "spans": [
+        {
+          "start": 0,
+          "end": 10,
+          "text": "全日制大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "电子技术",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 28,
+          "text": "运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格及具体专业名，运维活动去除工作经验修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02466",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "客户沟通",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "需求调研",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "分析咨询",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "产品宣讲能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "客户沟通为通用能力，其余为明确业务职能；共享能力限定可分项理解。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02467",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为薪资及五险一金待遇说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02468",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "生产型企业基本生产环境",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "通用流程",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 32,
+          "text": "ERP管理系统",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "生产环境与流程属于业务知识，ERP管理系统为岗位工具。",
+      "issues": []
+    }
+  ]
+}

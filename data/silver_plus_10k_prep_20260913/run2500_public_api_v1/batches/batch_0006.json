@@ -1,0 +1,455 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 28.93,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5017,
+    "completion_tokens": 1160,
+    "total_tokens": 6177,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 403
+    },
+    "input_tokens": 5017,
+    "output_tokens": 1160,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00051",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            16
+          ],
+          "to": [
+            9,
+            14
+          ],
+          "text": "主流ERP"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00052",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "沟通能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "合作意识"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            25
+          ],
+          "to": [
+            15,
+            24
+          ],
+          "text": "与客户顺利进行沟通"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00055",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            14
+          ],
+          "to": [
+            11,
+            18
+          ],
+          "text": "高中及以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00056",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            18
+          ],
+          "to": [
+            2,
+            16
+          ],
+          "text": "护理专业全日制本科及以上学历"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            31
+          ],
+          "to": [
+            17,
+            30
+          ],
+          "text": "资深主管护师及以上技术职称"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00058",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            9
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "高级工职业资格"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            35,
+            39
+          ],
+          "to": [
+            33,
+            37
+          ],
+          "text": "大专学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00059",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            71,
+            77
+          ],
+          "to": [
+            63,
+            69
+          ],
+          "text": "科研能力水平"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00060",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            12
+          ],
+          "to": [
+            2,
+            10
+          ],
+          "text": "数据库MySQL"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            19
+          ],
+          "to": [
+            11,
+            16
+          ],
+          "text": "redis"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            24,
+            30
+          ],
+          "to": [
+            17,
+            22
+          ],
+          "text": "数据库设计"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            32,
+            39
+          ],
+          "to": [
+            23,
+            28
+          ],
+          "text": "Sql优化"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00051\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"SAP\",\"label\":\"S\"},{\"start\":10,\"end\":16,\"text\":\"主流ERP\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"SAP为岗位使用产品工具；主流ERP表示明确行业背景。\",\"issues\":[]},{\"id\":\"sp10k-00052\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"合作意识\",\"label\":\"T\"},{\"start\":17,\"end\":25,\"text\":\"与客户顺利进行沟通\",\"label\":\"T\"},{\"start\":27,\"end\":33,\"text\":\"处理人际关系\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"提及沟通、合作及人际关系处理等通用能力；服务有效为结果表述，不标。\",\"issues\":[]},{\"id\":\"sp10k-00053\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为资料投递要求及方式标题，不构成候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00054\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于报名材料提交要求，不是候选人能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00055\",\"spans\":[{\"start\":7,\"end\":14,\"text\":\"高中及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"高中及以上学历为明确学历资格。\",\"issues\":[]},{\"id\":\"sp10k-00056\",\"spans\":[{\"start\":4,\"end\":18,\"text\":\"护理专业全日制本科及以上学历\",\"label\":\"K\"},{\"start\":19,\"end\":31,\"text\":\"资深主管护师及以上技术职称\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"分别标注专业学历资格和技术职称资格。\",\"issues\":[]},{\"id\":\"sp10k-00057\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为资格复审结果公示信息，不是候选人资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00058\",\"spans\":[{\"start\":3,\"end\":9,\"text\":\"高级工职业资格\",\"label\":\"K\"},{\"start\":10,\"end\":29,\"text\":\"高级技校、技师学院全日制高级工班毕业生\",\"label\":\"K\"},{\"start\":35,\"end\":39,\"text\":\"大专学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"包含职业资格、相应毕业资格及可视同的大专学历资格。\",\"issues\":[]},{\"id\":\"sp10k-00059\",\"spans\":[{\"start\":71,\"end\":77,\"text\":\"科研能力水平\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"资料要求中明确指向候选人的科研能力水平。\",\"issues\":[]},{\"id\":\"sp10k-00060\",\"spans\":[{\"start\":4,\"end\":12,\"text\":\"数据库MySQL\",\"label\":\"S\"},{\"start\":14,\"end\":19,\"text\":\"redis\",\"label\":\"S\"},{\"start\":24,\"end\":30,\"text\":\"数据库设计\",\"label\":\"S\"},{\"start\":32,\"end\":39,\"text\":\"Sql优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库产品及数据库设计、SQL优化均处于实际运用和技术执行语境。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00051",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "SAP",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 14,
+            "text": "主流ERP",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "SAP为岗位使用产品工具；主流ERP表示明确行业背景。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00052",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "合作意识",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "text": "与客户顺利进行沟通",
+            "label": "T"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "text": "处理人际关系",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "提及沟通、合作及人际关系处理等通用能力；服务有效为结果表述，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00053",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为资料投递要求及方式标题，不构成候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00054",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于报名材料提交要求，不是候选人能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00055",
+        "spans": [
+          {
+            "start": 11,
+            "end": 18,
+            "text": "高中及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "高中及以上学历为明确学历资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00056",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "护理专业全日制本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 30,
+            "text": "资深主管护师及以上技术职称",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别标注专业学历资格和技术职称资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00057",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为资格复审结果公示信息，不是候选人资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00058",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "高级工职业资格",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 29,
+            "text": "高级技校、技师学院全日制高级工班毕业生",
+            "label": "K"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "text": "大专学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "包含职业资格、相应毕业资格及可视同的大专学历资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00059",
+        "spans": [
+          {
+            "start": 63,
+            "end": 69,
+            "text": "科研能力水平",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "资料要求中明确指向候选人的科研能力水平。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00060",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "数据库MySQL",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "text": "redis",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "text": "数据库设计",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "text": "Sql优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库产品及数据库设计、SQL优化均处于实际运用和技术执行语境。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 6,
+  "ids": [
+    "sp10k-00051",
+    "sp10k-00052",
+    "sp10k-00053",
+    "sp10k-00054",
+    "sp10k-00055",
+    "sp10k-00056",
+    "sp10k-00057",
+    "sp10k-00058",
+    "sp10k-00059",
+    "sp10k-00060"
+  ],
+  "at": "2026-09-13T13:57:12.976373+00:00"
+}

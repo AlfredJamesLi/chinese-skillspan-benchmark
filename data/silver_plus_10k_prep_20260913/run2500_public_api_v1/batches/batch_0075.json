@@ -1,0 +1,223 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 42.464,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5112,
+    "completion_tokens": 1234,
+    "total_tokens": 6346,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 461
+    },
+    "input_tokens": 5112,
+    "output_tokens": 1234,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00741\",\"spans\":[{\"start\":4,\"end\":9,\"text\":\"Linux\",\"label\":\"K\"},{\"start\":12,\"end\":25,\"text\":\"Linux操作系统常用命令\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"前项要求对Linux的理解，按知识标注；后项为操作系统命令的岗位运用。\",\"issues\":[]},{\"id\":\"sp10k-00742\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明资格复审的到场流程，不属于能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00743\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"计算机基础知识\",\"label\":\"K\"},{\"start\":11,\"end\":15,\"text\":\"java\",\"label\":\"S\"},{\"start\":16,\"end\":21,\"text\":\"c++编程\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"基础知识标K；java与c++均受局部编程经验语境限定，按实践技能标S，不补写共享词语。\",\"issues\":[]},{\"id\":\"sp10k-00744\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"公告解释权说明，不含候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-00745\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"IDC常用技术以及产品\",\"label\":\"K\"},{\"start\":15,\"end\":21,\"text\":\"4-7层交换\",\"label\":\"K\"},{\"start\":22,\"end\":28,\"text\":\"负载均衡技术\",\"label\":\"K\"},{\"start\":29,\"end\":35,\"text\":\"内容发布网络\",\"label\":\"K\"},{\"start\":36,\"end\":41,\"text\":\"DNS技术\",\"label\":\"K\"},{\"start\":42,\"end\":47,\"text\":\"虚拟化技术\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"要求掌握IDC领域技术及产品知识，未明确实施或工具操作；列举的技术概念按K标注。\",\"issues\":[]},{\"id\":\"sp10k-00746\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报考条件栏目标题，没有具体要求。\",\"issues\":[]},{\"id\":\"sp10k-00747\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"python\",\"label\":\"S\"},{\"start\":11,\"end\":16,\"text\":\"shell\",\"label\":\"S\"},{\"start\":27,\"end\":36,\"text\":\"编写维护及监控脚本\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"语言由编写脚本的实际运用语境限定，标S；脚本编写活动保留共享对象的完整跨度。\",\"issues\":[]},{\"id\":\"sp10k-00748\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅列资格复审需携带的证明材料，未提出具体学历或资格门槛。\",\"issues\":[]},{\"id\":\"sp10k-00749\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报名方式及提交材料清单，不将行政材料中的证书名称视为候选人资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00750\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"系统技术架构\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"系统技术架构处于明确负责的职业职能语境，标S；对整体技术平台负责仅为泛化责任表述，不另标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00741",
+        "spans": [
+          {
+            "start": 4,
+            "end": 9,
+            "text": "Linux",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 25,
+            "text": "Linux操作系统常用命令",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "前项要求对Linux的理解，按知识标注；后项为操作系统命令的岗位运用。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00742",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明资格复审的到场流程，不属于能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00743",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "计算机基础知识",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "java",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "text": "c++编程",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "基础知识标K；java与c++均受局部编程经验语境限定，按实践技能标S，不补写共享词语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00744",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "公告解释权说明，不含候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00745",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "IDC常用技术以及产品",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "4-7层交换",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "负载均衡技术",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "内容发布网络",
+            "label": "K"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "text": "DNS技术",
+            "label": "K"
+          },
+          {
+            "start": 42,
+            "end": 47,
+            "text": "虚拟化技术",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "要求掌握IDC领域技术及产品知识，未明确实施或工具操作；列举的技术概念按K标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00746",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报考条件栏目标题，没有具体要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00747",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "python",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "text": "shell",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 36,
+            "text": "编写维护及监控脚本",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "语言由编写脚本的实际运用语境限定，标S；脚本编写活动保留共享对象的完整跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00748",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅列资格复审需携带的证明材料，未提出具体学历或资格门槛。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00749",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报名方式及提交材料清单，不将行政材料中的证书名称视为候选人资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00750",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "系统技术架构",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统技术架构处于明确负责的职业职能语境，标S；对整体技术平台负责仅为泛化责任表述，不另标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 75,
+  "ids": [
+    "sp10k-00741",
+    "sp10k-00742",
+    "sp10k-00743",
+    "sp10k-00744",
+    "sp10k-00745",
+    "sp10k-00746",
+    "sp10k-00747",
+    "sp10k-00748",
+    "sp10k-00749",
+    "sp10k-00750"
+  ],
+  "at": "2026-09-13T14:52:37.570286+00:00"
+}

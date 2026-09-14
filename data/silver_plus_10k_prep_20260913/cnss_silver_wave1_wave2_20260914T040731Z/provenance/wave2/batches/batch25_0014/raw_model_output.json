@@ -1,0 +1,603 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04037",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅泛指资格和技能要求，未提供具体能力或资格名；身体条件不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04038",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "操作系统",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 16,
+          "text": "Windows",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "Linux",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 27,
+          "text": "数据库",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 34,
+          "text": "Oracle",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 40,
+          "text": "MySQL",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 48,
+          "text": "VERTICA",
+          "label": "S"
+        },
+        {
+          "start": 49,
+          "end": 55,
+          "text": "HADOOP",
+          "label": "S"
+        },
+        {
+          "start": 58,
+          "end": 61,
+          "text": "中间件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "所列系统和工具明确用于使用与维护，标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04039",
+      "spans": [
+        {
+          "start": 5,
+          "end": 13,
+          "text": "研究生及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留明确的学历条件，其余为面试及资格复审程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04040",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "应急演练",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "应急演练是明确执行的职业活动；接受考核和培训不构成具体能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04041",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明资格复审须提交的报考证明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04042",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "线上产品信息",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "课程推荐",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "行业峰会招生",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "直播招生",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "区分产品信息知识与课程推荐、招生活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04043",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "外电网系统的“用电申请”",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "text": "变电所验收",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "送电",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 30,
+          "text": "供电合同的签订",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取申请、验收、送电和签订合同等独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04044",
+      "spans": [
+        {
+          "start": 2,
+          "end": 19,
+          "text": "数据中心服务器与存储资源的资产管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留资产管理的共享动作及其技术对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04045",
+      "spans": [
+        {
+          "start": 3,
+          "end": 6,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 19,
+          "text": "分析和解决问题的能力",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "协作精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用能力或特质；分析与解决共享问题对象，保留完整短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04046",
+      "spans": [
+        {
+          "start": 19,
+          "end": 23,
+          "text": "道德品质",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确考察的个人特质；政治表现、工作实绩和匹配度不是能力提及，业务能力未具体化。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04047",
+      "spans": [
+        {
+          "start": 34,
+          "end": 38,
+          "text": "道德品质",
+          "label": "T"
+        },
+        {
+          "start": 44,
+          "end": 48,
+          "text": "理论素养",
+          "label": "K"
+        },
+        {
+          "start": 49,
+          "end": 53,
+          "text": "教学技能",
+          "label": "S"
+        },
+        {
+          "start": 54,
+          "end": 58,
+          "text": "教态教风",
+          "label": "S"
+        },
+        {
+          "start": 59,
+          "end": 63,
+          "text": "语言表达",
+          "label": "T"
+        },
+        {
+          "start": 72,
+          "end": 78,
+          "text": "科研学术水平",
+          "label": "T"
+        },
+        {
+          "start": 84,
+          "end": 88,
+          "text": "思维能力",
+          "label": "T"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "抽取考核中明确的知识、职业技能和通用素质；教态教风的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "教态教风",
+          "alternatives": [
+            "S",
+            "T"
+          ],
+          "reason": "可能指课堂教学表现技能，也可能指职业作风及个人特质；未说明具体考察内容。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04048",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "物业管理相关法律法规",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "行业标准",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "物业前介",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "法规和标准为K；物业前介为完整职业活动，去除经验后意义保留。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04049",
+      "spans": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "细致",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "严谨",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 28,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 37,
+          "end": 44,
+          "text": "理解行业的需求",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 54,
+          "text": "政府行业数据应用",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "区分通用特质和行业需求理解、数据应用活动；保留原文表述。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04050",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅介绍评估考核方式，未给出具体技能要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04051",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "运维流程标准制定与持续优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "制定和优化共享运维流程标准这一对象，保留完整活动短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04052",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "客户日常网络的维护",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "text": "售前售后技术支持",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "客户问题处理",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "需求沟通",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "方案提供",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分独立业务活动；需求沟通为人际沟通能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04053",
+      "spans": [
+        {
+          "start": 4,
+          "end": 17,
+          "text": "对计算机网络的效能进行评价",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 39,
+          "text": "提出网络结构、网络技术和网络管理的改进措施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "评价和提出改进措施为两项活动；后项保留共享动作及并列对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04054",
+      "spans": [
+        {
+          "start": 9,
+          "end": 23,
+          "text": "高中及以上日语学科教师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整教师资格证属于非语言职业资格，不嵌套标注日语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04055",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名材料上传及研究生院审核属于招聘行政程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04056",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "Linux",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "C#",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "HTML",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "范围和边界明确，但仅凭精通不能确定知识或实际运用；S为待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "Linux",
+          "alternatives": [
+            "S",
+            "K"
+          ],
+          "reason": "未说明要求系统操作运用还是系统知识。"
+        },
+        {
+          "kind": "type",
+          "text": "C#",
+          "alternatives": [
+            "S",
+            "K"
+          ],
+          "reason": "未说明要求编程运用还是语言语法知识。"
+        },
+        {
+          "kind": "type",
+          "text": "HTML",
+          "alternatives": [
+            "S",
+            "K"
+          ],
+          "reason": "未说明要求实际开发运用还是标记语言知识。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04057",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "docker",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "kvm",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "抽取具体技术名；虚拟化技术为列表类别。缺少运用或知识语境，S为待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "docker",
+          "alternatives": [
+            "S",
+            "K"
+          ],
+          "reason": "熟练掌握未说明具体操作实践或技术原理知识。"
+        },
+        {
+          "kind": "type",
+          "text": "kvm",
+          "alternatives": [
+            "S",
+            "K"
+          ],
+          "reason": "熟练掌握未说明具体操作实践或技术原理知识。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04058",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "描述招聘违规行为，不是候选人所需能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04059",
+      "spans": [
+        {
+          "start": 13,
+          "end": 17,
+          "text": "车辆工程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "车辆工程为完整专业名；前段为岗位名称，末尾括号不纳入。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04060",
+      "spans": [
+        {
+          "start": 5,
+          "end": 13,
+          "text": "大专以上文化程度",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历要求；工作能力仅为未具体化的概括要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04061",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明年龄放宽条件，未提供具体职称资格名。",
+      "issues": []
+    }
+  ]
+}

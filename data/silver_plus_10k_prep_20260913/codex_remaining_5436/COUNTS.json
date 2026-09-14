@@ -1,0 +1,28 @@
+{
+  "created": "2026-09-13T14:12:27.524270+00:00",
+  "prompt_id": "silver_public_api_v1.0",
+  "model": "gpt-6-astra",
+  "batch_size": 10,
+  "n_work": 7936,
+  "n_held_2500": 2500,
+  "n_remaining": 5436,
+  "n_batches": 544,
+  "last_batch_n": 6,
+  "remaining_domains": {
+    "阿里云公开数据集": 2174,
+    "事业单位招聘": 1631,
+    "上市公司招聘": 1631
+  },
+  "held_domains": {
+    "阿里云公开数据集": 1000,
+    "事业单位招聘": 750,
+    "上市公司招聘": 750
+  },
+  "held_manifest": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/silver_plus_10k_prep_20260913/run2500_public_api_v1/sample_manifest.json",
+  "sha256_work": "7fbe9223a739c67ef254c2bd17bf04d9879b2d84acd039a04b138fef75809638",
+  "sha256_prompt": "b6223e9a2e9b02afa19cba79ba908766d9240acb233723fbe6f53b40e6b04fd6",
+  "sha256_ids_remaining": "5a606fdc05da0257d41b04ffa5fec4eade9314b68e0aafa906987329cd538216",
+  "overlap_with_2500": 0,
+  "not_gold150": true,
+  "do_not_relabel_2500": true
+}

@@ -1,0 +1,618 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04689",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考试科目及时间安排，不是候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04690",
+      "spans": [
+        {
+          "start": 4,
+          "end": 18,
+          "text": "ERP及相关信息化项目的实施",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "运维支持",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "项目调研",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "方案编写",
+          "label": "S"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "text": "流程制定",
+          "label": "S"
+        },
+        {
+          "start": 47,
+          "end": 51,
+          "text": "实施推广",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "text": "用户培训",
+          "label": "S"
+        },
+        {
+          "start": 57,
+          "end": 61,
+          "text": "系统运维",
+          "label": "S"
+        },
+        {
+          "start": 64,
+          "end": 82,
+          "text": "制定所负责模块的实施策略、方法和计划",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确职业活动；末项保留共享动作及对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04691",
+      "spans": [
+        {
+          "start": 3,
+          "end": 19,
+          "text": "高级中学或中等职业学校教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 25,
+          "text": "教师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确教师资格要求；并列资格保留共享中心词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04692",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "优化方案",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "工程实施",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "网络维护",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 27,
+          "text": "设备安装和调试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "按职责语境抽取专业职能；安装和调试共享设备对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04693",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应聘材料描述，未给出具体学历资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04694",
+      "spans": [
+        {
+          "start": 1,
+          "end": 10,
+          "text": "承受较大的工作压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抗压要求为通用能力；相关证书未指明资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04695",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "管理思维",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "沟通理解能力",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "团队合作能力",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 36,
+          "text": "项目推动和管理能力",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 47,
+          "text": "与多部门良好协作",
+          "label": "T"
+        },
+        {
+          "start": 48,
+          "end": 54,
+          "text": "推动项目落地",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "沟通协作和管理思维为通用素质；项目管理能力的类型暂待裁决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "项目推动和管理能力",
+          "alternatives": [
+            "S",
+            "T"
+          ],
+          "reason": "可理解为项目执行管理职能，也可理解为素质列表中的通用组织推动能力；缺少具体项目职能语境，S仅为占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04696",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "Spring",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 21,
+          "text": "SpringBoot",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 32,
+          "text": "SpringData",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 47,
+          "text": "SpringSecurity",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 59,
+          "text": "SpringCloud",
+          "label": "S"
+        },
+        {
+          "start": 61,
+          "end": 71,
+          "text": "J2EE开源框架技术",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "框架及其具体组件按岗位工具技术要求标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04697",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "党员身份的报考证明材料要求，属于报名审核流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04698",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "热爱科研工作",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "爱岗敬业",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "团队精神",
+          "label": "T"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "text": "独立工作能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取职业意愿、责任特质及通用工作能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04699",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "海外学历认证材料提交要求，属于应聘行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04700",
+      "spans": [
+        {
+          "start": 10,
+          "end": 16,
+          "text": "项目调试配合",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "text": "培训",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "运行维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "调试配合、移交培训及运行维护均为明确职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04701",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "docker容器技术的日常操作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确工具操作要求，保留操作对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04702",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名申请材料真实性及审核条件，不含能力或具体资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04703",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "SOP",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 10,
+          "text": "审计要求",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 29,
+          "text": "监察和跟进JDE操作流程和数据的准确性",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作规范和审计要求为知识；监察跟进保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04704",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "微服务自动化容器部署",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 25,
+          "text": "jenkins",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "docker",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 43,
+          "text": "kubernetes",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 47,
+          "text": "git",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取部署技术活动及所列岗位工具。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04706",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "linux系统性能调化",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 23,
+          "text": "web应用性能优化",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "网络性能优化",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 47,
+          "text": "网络安全，系统安全意识",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "性能优化为职业技能，保留原文“调化”；安全意识的类型待决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "网络安全，系统安全意识",
+          "alternatives": [
+            "K",
+            "T"
+          ],
+          "reason": "共享“意识”的安全要求可指领域安全认知，也可指风险防范特质；局部语境不足以区分，S仅为占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04707",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘计划附件索引，标题中的学历字样不是独立候选人资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04708",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "专业目录设置及报考专业匹配说明，未列具体专业或学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04709",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "测试顺序抽签安排，属于应聘流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04710",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "数通类技术",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "VLAN",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "text": "Trunk",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 25,
+          "text": "STP",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "OSPF",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 53,
+          "text": "对思科、华为、华三等数通产品进行常规配置",
+          "label": "S"
+        },
+        {
+          "start": 56,
+          "end": 70,
+          "text": "思科或华为NA、NP级别证书",
+          "label": "K"
+        },
+        {
+          "start": 82,
+          "end": 86,
+          "text": "网络安全",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数通技术受具体配置实践限定；证书保留共享资格中心，网络安全为知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04711",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "Unix",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 12,
+          "text": "linux",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 22,
+          "text": "Windows系统",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "IT系统维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作系统按局部系统维护实践语境标S；维护活动去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04712",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "线上业务系统的监控",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "text": "工具的开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分系统监控与工具开发两项独立职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04713",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "文档编写能力",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "故障排查能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "文档编写与故障排查均为职业活动能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04714",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "各支付平台的接入流程",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "技术规范",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "要求熟悉流程与规范，属于领域知识。",
+      "issues": []
+    }
+  ]
+}

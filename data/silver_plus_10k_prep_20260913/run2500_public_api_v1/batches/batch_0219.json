@@ -1,0 +1,357 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 69.057,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5058,
+    "completion_tokens": 2161,
+    "total_tokens": 7219,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 900
+    },
+    "input_tokens": 5058,
+    "output_tokens": 2161,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05986\",\"spans\":[{\"start\":2,\"end\":17,\"text\":\"公司工程重大突发事故的抢修组织\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抢修组织为明确的工程职业活动，保留事故对象。\",\"issues\":[]},{\"id\":\"sp10k-05987\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"办公软件\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"汇报能力\",\"label\":\"T\"},{\"start\":29,\"end\":35,\"text\":\"梳理工作内容\",\"label\":\"T\"},{\"start\":36,\"end\":44,\"text\":\"撰写专业汇报材料\",\"label\":\"S\"},{\"start\":49,\"end\":53,\"text\":\"汇报演示\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"办公软件为岗位工具；汇报和工作梳理为通用能力，汇报材料撰写为具体文档活动。\",\"issues\":[]},{\"id\":\"sp10k-05988\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"大专及以上学历\",\"label\":\"K\"},{\"start\":12,\"end\":14,\"text\":\"电子\",\"label\":\"K\"},{\"start\":15,\"end\":18,\"text\":\"自动化\",\"label\":\"K\"},{\"start\":19,\"end\":21,\"text\":\"通信\",\"label\":\"K\"},{\"start\":22,\"end\":25,\"text\":\"计算机\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格及明确专业名，不标泛化相关领域。\",\"issues\":[]},{\"id\":\"sp10k-05989\",\"spans\":[{\"start\":2,\"end\":20,\"text\":\"切割、偏贴、组装、贴合等模组相关工艺\",\"label\":\"K\"},{\"start\":22,\"end\":28,\"text\":\"改善优化方向\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"此处要求熟悉工艺及其优化方向，未明确执行或实践；工艺列表保留共享知识中心。\",\"issues\":[]},{\"id\":\"sp10k-05990\",\"spans\":[{\"start\":0,\"end\":13,\"text\":\"指导项目各专业施工技术工作\",\"label\":\"S\"},{\"start\":14,\"end\":30,\"text\":\"审核施工图纸、技术资料及施工方案\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取技术指导及审核活动；审核对象共享动作，保留连续完整跨度。确保符合规范要求为结果承诺。\",\"issues\":[]},{\"id\":\"sp10k-05991\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"组织协调\",\"label\":\"T\"},{\"start\":11,\"end\":17,\"text\":\"统筹规划能力\",\"label\":\"T\"},{\"start\":19,\"end\":27,\"text\":\"搭建基础运营体系\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"组织协调、统筹规划为通用能力；搭建运营体系为具体职业活动。\",\"issues\":[]},{\"id\":\"sp10k-05992\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"工艺技术的改进\",\"label\":\"S\"},{\"start\":12,\"end\":16,\"text\":\"工艺技改\",\"label\":\"S\"},{\"start\":17,\"end\":21,\"text\":\"设备技改\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"流程再造\",\"label\":\"S\"},{\"start\":27,\"end\":31,\"text\":\"管理方法\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取工艺改进及独立技改活动，概括性管理方法按知识标注；效率、成本和质量表述为结果目标。\",\"issues\":[]},{\"id\":\"sp10k-05993\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"酒店行业\",\"label\":\"K\"},{\"start\":9,\"end\":13,\"text\":\"客房服务\",\"label\":\"S\"},{\"start\":20,\"end\":26,\"text\":\"客房服务流程\",\"label\":\"K\"},{\"start\":33,\"end\":35,\"text\":\"清洁\",\"label\":\"S\"},{\"start\":36,\"end\":38,\"text\":\"服务\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"行业背景标K，客房服务经历去除经验后活动意义完整；清洁与服务由局部客房语境限定。\",\"issues\":[]},{\"id\":\"sp10k-05994\",\"spans\":[{\"start\":4,\"end\":6,\"text\":\"PS\",\"label\":\"S\"},{\"start\":7,\"end\":9,\"text\":\"AI\",\"label\":\"S\"},{\"start\":10,\"end\":12,\"text\":\"PR\",\"label\":\"S\"},{\"start\":13,\"end\":16,\"text\":\"CDR\",\"label\":\"S\"},{\"start\":25,\"end\":27,\"text\":\"手绘\",\"label\":\"S\"},{\"start\":28,\"end\":30,\"text\":\"AE\",\"label\":\"S\"},{\"start\":31,\"end\":34,\"text\":\"C4D\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"设计软件为实际技能工具，手绘为可执行技能；不重复标注软件类别概括。\",\"issues\":[]},{\"id\":\"sp10k-05995\",\"spans\":[],\"status\":\"adjudication_required\",\"note\":\"内部项目描述缺少明确执行活动，暂不从泛化项目负责或销售支持中推造技能。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"负责市场部内部相关项目，如系统化或CIP等项目、以更好的支持销售工作\",\"alternatives\":[\"属于具体项目实施或管理要求，应抽取相应职业活动\",\"仅为泛化项目职责与支持目标，不形成完整技能提及\"],\"reason\":\"未说明系统化、CIP项目的具体内容及候选人执行的方法或活动，无法确定合法的职业技能提及。\"}]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05986",
+        "spans": [
+          {
+            "start": 2,
+            "end": 17,
+            "text": "公司工程重大突发事故的抢修组织",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抢修组织为明确的工程职业活动，保留事故对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05987",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "办公软件",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "汇报能力",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "梳理工作内容",
+            "label": "T"
+          },
+          {
+            "start": 36,
+            "end": 44,
+            "text": "撰写专业汇报材料",
+            "label": "S"
+          },
+          {
+            "start": 49,
+            "end": 53,
+            "text": "汇报演示",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "办公软件为岗位工具；汇报和工作梳理为通用能力，汇报材料撰写为具体文档活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05988",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "大专及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "电子",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 18,
+            "text": "自动化",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 21,
+            "text": "通信",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "text": "计算机",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格及明确专业名，不标泛化相关领域。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05989",
+        "spans": [
+          {
+            "start": 2,
+            "end": 20,
+            "text": "切割、偏贴、组装、贴合等模组相关工艺",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "改善优化方向",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "此处要求熟悉工艺及其优化方向，未明确执行或实践；工艺列表保留共享知识中心。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05990",
+        "spans": [
+          {
+            "start": 0,
+            "end": 13,
+            "text": "指导项目各专业施工技术工作",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 30,
+            "text": "审核施工图纸、技术资料及施工方案",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取技术指导及审核活动；审核对象共享动作，保留连续完整跨度。确保符合规范要求为结果承诺。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05991",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "组织协调",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "统筹规划能力",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 27,
+            "text": "搭建基础运营体系",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "组织协调、统筹规划为通用能力；搭建运营体系为具体职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05992",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "工艺技术的改进",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "工艺技改",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "设备技改",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "流程再造",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "管理方法",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取工艺改进及独立技改活动，概括性管理方法按知识标注；效率、成本和质量表述为结果目标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05993",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "酒店行业",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "客房服务",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "客房服务流程",
+            "label": "K"
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "text": "清洁",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 38,
+            "text": "服务",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "行业背景标K，客房服务经历去除经验后活动意义完整；清洁与服务由局部客房语境限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05994",
+        "spans": [
+          {
+            "start": 4,
+            "end": 6,
+            "text": "PS",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "text": "AI",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "PR",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "text": "CDR",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 27,
+            "text": "手绘",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 30,
+            "text": "AE",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 34,
+            "text": "C4D",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设计软件为实际技能工具，手绘为可执行技能；不重复标注软件类别概括。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05995",
+        "spans": [],
+        "status": "adjudication_required",
+        "note": "内部项目描述缺少明确执行活动，暂不从泛化项目负责或销售支持中推造技能。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "负责市场部内部相关项目，如系统化或CIP等项目、以更好的支持销售工作",
+            "alternatives": [
+              "属于具体项目实施或管理要求，应抽取相应职业活动",
+              "仅为泛化项目职责与支持目标，不形成完整技能提及"
+            ],
+            "reason": "未说明系统化、CIP项目的具体内容及候选人执行的方法或活动，无法确定合法的职业技能提及。"
+          }
+        ]
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 219,
+  "ids": [
+    "sp10k-05986",
+    "sp10k-05987",
+    "sp10k-05988",
+    "sp10k-05989",
+    "sp10k-05990",
+    "sp10k-05991",
+    "sp10k-05992",
+    "sp10k-05993",
+    "sp10k-05994",
+    "sp10k-05995"
+  ],
+  "at": "2026-09-13T17:20:31.657837+00:00"
+}

@@ -1,0 +1,67 @@
+{
+  "local_block_files": {
+    "v6a_train": 2150,
+    "v6a_dev": 168,
+    "gold150": 150,
+    "human200": 200,
+    "hold82": 82,
+    "gold_v2": 2600,
+    "hybrid_v4": 2600,
+    "corpus_train": 17441,
+    "corpus_dev": 2142,
+    "corpus_test": 3235,
+    "pilot100": 100
+  },
+  "local_blocked_unique_nfc": 20540,
+  "paper_main_3m_check": {
+    "files": [
+      {
+        "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/jobbert_3m_sents.jsonl",
+        "exists": true,
+        "n_lines_with_text": 3200000,
+        "bytes": 466794854,
+        "size_bytes": 466794854,
+        "file_sha256": "omitted_large_dapt_dump"
+      }
+    ],
+    "unique_digests": 3199958
+  },
+  "paper_main_3m_hard_exclusion": true,
+  "other_local_dapt_overlap_on_selected": [
+    {
+      "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/jobbert_1m_sents.jsonl",
+      "n_texts": 1000000,
+      "n_selected_nfc_also_in_dump": 0,
+      "used_as_hard_exclusion": false,
+      "note": "Reported only. These dumps are not the paper-main 3M list."
+    },
+    {
+      "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/jobbert_listed_mix_1m_sents.jsonl",
+      "n_texts": 1000000,
+      "n_selected_nfc_also_in_dump": 143,
+      "used_as_hard_exclusion": false,
+      "note": "Reported only. These dumps are not the paper-main 3M list."
+    },
+    {
+      "path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/data/jobbert_domain_mix_1m_sents.jsonl",
+      "n_texts": 1000000,
+      "n_selected_nfc_also_in_dump": 4919,
+      "used_as_hard_exclusion": false,
+      "note": "Reported only. These dumps are not the paper-main 3M list."
+    }
+  ],
+  "dapt_scope_note": "Hard-excluded exact NFC matches in data/jobbert_3m_sents.jsonl (paper-main 3.2M DAPT: 应届生招聘 + 人工智能招聘). Also blocked existing Silver, Gold150, A100, QA100, human200, hold82, Gold v2, V4 hybrid, corpus_splits, and pilot100. Other local DAPT dumps (1M / listed-mix / domain-mix) are reported on the selected set only and were NOT used to drop Aliyun or listed candidates. This does not claim exclusion from unpublished dumps, near-duplicates, or whitespace/tokenization variants beyond NFC.",
+  "new_vs_human350_id_overlap": 0,
+  "new_vs_human350_nfc_overlap": 0,
+  "new_vs_old_valid_nfc_overlap": 0,
+  "sources_used": {
+    "阿里云公开数据集": 3174,
+    "事业单位招聘": 2381,
+    "上市公司招聘": 2381
+  },
+  "not_used": [
+    "synthetic job sentences",
+    "duplicate records of the same NFC text",
+    "corpus_splits train/dev/test sentences (blocked; includes eval test 阿里云/事业单位)"
+  ]
+}

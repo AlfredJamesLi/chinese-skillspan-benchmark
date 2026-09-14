@@ -1,0 +1,41 @@
+{
+  "result": "passed",
+  "records": 25,
+  "unique_ids": 25,
+  "spans": 72,
+  "label_counts": {
+    "T": 19,
+    "K": 9,
+    "S": 44
+  },
+  "status_counts": {
+    "candidate_complete": 21,
+    "adjudication_required": 3,
+    "confirmed_empty": 1
+  },
+  "issue_counts": {
+    "type": 3,
+    "scope": 2
+  },
+  "issue_total": 5,
+  "schema_pass": true,
+  "id_count_order_pass": true,
+  "held_exclusion_pass": true,
+  "unicode_codepoint_offsets_pass": true,
+  "exact_slices_pass": true,
+  "sorted_nonoverlap_pass": true,
+  "status_consistency_pass": true,
+  "source_mapping_pass": true,
+  "source_file_hashes_unchanged": true,
+  "source_git_status": "",
+  "errors": [],
+  "human_accuracy": "not evaluated; format validation is not a human accuracy estimate",
+  "adjudication_required_ids": [
+    "sp10k-01754",
+    "sp10k-01761",
+    "sp10k-01772"
+  ],
+  "confirmed_empty_ids": [
+    "sp10k-01760"
+  ]
+}

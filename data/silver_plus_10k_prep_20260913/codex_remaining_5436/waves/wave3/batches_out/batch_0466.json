@@ -1,0 +1,252 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07151",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "高中或以上学历",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 28,
+          "text": "叉车驾驶资格证",
+          "label": "K"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "柴油叉车",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历和职业资格证属于K；明确使用的叉车工具属于S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07152",
+      "spans": [
+        {
+          "start": 5,
+          "end": 10,
+          "text": "统计学基础",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "数据分析方法",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "模型",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "统计学基础属于领域知识；数据分析方法和模型处于实际分析方法语境，标为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07153",
+      "spans": [
+        {
+          "start": 13,
+          "end": 19,
+          "text": "安全管理工作",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "安全制度",
+          "label": "K"
+        },
+        {
+          "start": 29,
+          "end": 31,
+          "text": "流程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安全管理工作是职业活动；安全制度和流程是需执行的规范性知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07154",
+      "spans": [
+        {
+          "start": 3,
+          "end": 6,
+          "text": "电工证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "电工资格证属于非语言职业资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07155",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "问题分析",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "执行跟进能力",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "抗压能力",
+          "label": "T"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "text": "团队合作精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用能力或个人特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07156",
+      "spans": [
+        {
+          "start": 1,
+          "end": 10,
+          "text": "大型项目招投标经验",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "text": "招投标流程",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "大型项目招投标经验按明确职业活动经验标S；招投标流程处于实践流程语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07157",
+      "spans": [
+        {
+          "start": 3,
+          "end": 10,
+          "text": "协作与学习能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "协作与学习能力属于跨行业通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07158",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "学习能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学习能力属于通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07159",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "新品开发",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "样品交付",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "时程规划",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "治具请购",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "text": "生产计划安排",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 47,
+          "text": "组织投产试做策划和总结",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取职责中明确的开发、交付、规划、请购、生产安排及投产试做策划活动；材料为孤立类别词，未单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07160",
+      "spans": [
+        {
+          "start": 8,
+          "end": 14,
+          "text": "荣誉称号评比",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "对外联络",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 29,
+          "text": "公关协调工作",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "荣誉称号评比是职业活动；对外联络和公关协调属于对外协作与联络能力。",
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 37.558,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5104,
+    "completion_tokens": 1178,
+    "total_tokens": 6282,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 390
+    },
+    "input_tokens": 5104,
+    "output_tokens": 1178,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01793\",\"spans\":[{\"start\":5,\"end\":10,\"text\":\"高中及以上\",\"label\":\"K\"},{\"start\":10,\"end\":16,\"text\":\"服从工作安排\",\"label\":\"T\"},{\"start\":18,\"end\":22,\"text\":\"吃苦耐劳\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历要求及工作态度特质；要求触发词“能”和身心健康要求不标。\",\"issues\":[]},{\"id\":\"sp10k-01794\",\"spans\":[{\"start\":10,\"end\":23,\"text\":\"国民教育序列本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留学历资格的教育序列限定；泛指本专业及毕业生身份不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01796\",\"spans\":[{\"start\":0,\"end\":3,\"text\":\"会计学\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"明确专业名标K，泛化相关专业不标。\",\"issues\":[]},{\"id\":\"sp10k-01799\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报考户籍材料提交要求，不涉及能力、知识或职业资格。\",\"issues\":[]},{\"id\":\"sp10k-01801\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅介绍招聘背景、人数及岗位计划附件，未给出具体候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01802\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报考岗位数量限制和重复报考处理规定。\",\"issues\":[]},{\"id\":\"sp10k-01803\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于入职准入查询和不予聘用情形说明，非独立的能力、知识或正向资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01806\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"积极主动\",\"label\":\"T\"},{\"start\":8,\"end\":10,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"协作能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用特质及沟通、协作能力；共享能力语境可支持拆分。\",\"issues\":[]},{\"id\":\"sp10k-01808\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"规培合格\",\"label\":\"K\"},{\"start\":11,\"end\":21,\"text\":\"硕士研究生及以上学历\",\"label\":\"K\"},{\"start\":23,\"end\":29,\"text\":\"学历相应学位\",\"label\":\"K\"},{\"start\":29,\"end\":34,\"text\":\"中医外科学\",\"label\":\"K\"},{\"start\":34,\"end\":41,\"text\":\"初级及以上职称\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取规培资格、学历学位、专业及职称要求；岗位名称和人数不标。\",\"issues\":[]},{\"id\":\"sp10k-01810\",\"spans\":[{\"start\":5,\"end\":12,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":13,\"end\":16,\"text\":\"会计学\",\"label\":\"K\"},{\"start\":17,\"end\":21,\"text\":\"财务管理\",\"label\":\"K\"},{\"start\":22,\"end\":25,\"text\":\"审计学\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历资格和并列专业名分别标K，泛化相关专业不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01793",
+        "spans": [
+          {
+            "start": 5,
+            "end": 10,
+            "text": "高中及以上",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "服从工作安排",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "吃苦耐劳",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历要求及工作态度特质；要求触发词“能”和身心健康要求不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01794",
+        "spans": [
+          {
+            "start": 10,
+            "end": 23,
+            "text": "国民教育序列本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留学历资格的教育序列限定；泛指本专业及毕业生身份不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01796",
+        "spans": [
+          {
+            "start": 0,
+            "end": 3,
+            "text": "会计学",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确专业名标K，泛化相关专业不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01799",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报考户籍材料提交要求，不涉及能力、知识或职业资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01801",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅介绍招聘背景、人数及岗位计划附件，未给出具体候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01802",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报考岗位数量限制和重复报考处理规定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01803",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于入职准入查询和不予聘用情形说明，非独立的能力、知识或正向资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01806",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "积极主动",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "协作能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用特质及沟通、协作能力；共享能力语境可支持拆分。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01808",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "规培合格",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 21,
+            "text": "硕士研究生及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "text": "学历相应学位",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 34,
+            "text": "中医外科学",
+            "label": "K"
+          },
+          {
+            "start": 34,
+            "end": 41,
+            "text": "初级及以上职称",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取规培资格、学历学位、专业及职称要求；岗位名称和人数不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01810",
+        "spans": [
+          {
+            "start": 5,
+            "end": 12,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "text": "会计学",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "财务管理",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "text": "审计学",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历资格和并列专业名分别标K，泛化相关专业不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 177,
+  "ids": [
+    "sp10k-01793",
+    "sp10k-01794",
+    "sp10k-01796",
+    "sp10k-01799",
+    "sp10k-01801",
+    "sp10k-01802",
+    "sp10k-01803",
+    "sp10k-01806",
+    "sp10k-01808",
+    "sp10k-01810"
+  ],
+  "at": "2026-09-13T16:35:24.555987+00:00"
+}

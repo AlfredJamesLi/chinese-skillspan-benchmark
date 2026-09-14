@@ -1,0 +1,449 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 64.172,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5034,
+    "completion_tokens": 2287,
+    "total_tokens": 7321,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1253
+    },
+    "input_tokens": 5034,
+    "output_tokens": 2287,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-02975",
+      "repairs": [
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            33,
+            40
+          ],
+          "to": [
+            34,
+            40
+          ],
+          "text": "控制药品库存"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02998",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            21
+          ],
+          "to": [
+            14,
+            20
+          ],
+          "text": "商务谈判知识"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            25,
+            29
+          ],
+          "to": [
+            24,
+            28
+          ],
+          "text": "谈判技巧"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03013",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            15,
+            19
+          ],
+          "to": [
+            14,
+            18
+          ],
+          "text": "安全巡逻"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            20,
+            24
+          ],
+          "to": [
+            19,
+            23
+          ],
+          "text": "秩序维护"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03068",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            14
+          ],
+          "to": [
+            7,
+            13
+          ],
+          "text": "沟通表达能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            26
+          ],
+          "to": [
+            17,
+            25
+          ],
+          "text": "对接员工与各部门"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            30,
+            40
+          ],
+          "to": [
+            28,
+            39
+          ],
+          "text": "处理基础咨询与事务对接"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03104",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            18
+          ],
+          "to": [
+            14,
+            20
+          ],
+          "text": "商务接待经验"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-02954\",\"spans\":[{\"start\":5,\"end\":15,\"text\":\"处理和分析生产线异常\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求处理和分析生产线异常，属于可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-02965\",\"spans\":[{\"start\":0,\"end\":13,\"text\":\"收集并整理市场部的日常文件\",\"label\":\"S\"},{\"start\":27,\"end\":31,\"text\":\"分类整理\",\"label\":\"S\"},{\"start\":34,\"end\":40,\"text\":\"工作相关流程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取文件整理、分类整理等职业动作，以及工作相关流程这一知识提及。\",\"issues\":[]},{\"id\":\"sp10k-02975\",\"spans\":[{\"start\":1,\"end\":4,\"text\":\"GSP\",\"label\":\"K\"},{\"start\":8,\"end\":14,\"text\":\"药品分类陈列\",\"label\":\"S\"},{\"start\":17,\"end\":31,\"text\":\"贵重商品及冷链商品的专门管理\",\"label\":\"S\"},{\"start\":33,\"end\":40,\"text\":\"控制药品库存\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"GSP为规范知识；药品陈列、特殊商品管理和库存控制为职业动作，排除单纯结果性表述。\",\"issues\":[]},{\"id\":\"sp10k-02998\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"销售管理\",\"label\":\"K\"},{\"start\":7,\"end\":11,\"text\":\"产品知识\",\"label\":\"K\"},{\"start\":15,\"end\":21,\"text\":\"商务谈判知识\",\"label\":\"K\"},{\"start\":25,\"end\":29,\"text\":\"谈判技巧\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"销售管理、产品知识及商务谈判知识属于领域知识，谈判技巧属于可迁移通用能力。\",\"issues\":[]},{\"id\":\"sp10k-03013\",\"spans\":[{\"start\":15,\"end\":19,\"text\":\"安全巡逻\",\"label\":\"S\"},{\"start\":20,\"end\":24,\"text\":\"秩序维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"安全巡逻和秩序维护均为明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-03025\",\"spans\":[{\"start\":12,\"end\":15,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":16,\"end\":22,\"text\":\"团队协作精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"责任心和团队协作精神属于通用素质。\",\"issues\":[]},{\"id\":\"sp10k-03068\",\"spans\":[{\"start\":6,\"end\":14,\"text\":\"沟通表达能力\",\"label\":\"T\"},{\"start\":19,\"end\":26,\"text\":\"对接员工与各部门\",\"label\":\"T\"},{\"start\":30,\"end\":40,\"text\":\"处理基础咨询与事务对接\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"沟通表达及人员、部门对接属于通用沟通能力；处理咨询和事务对接属于可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-03093\",\"spans\":[{\"start\":2,\"end\":22,\"text\":\"纸箱、塑料箱、磊塑箱（钙塑箱）等包装材料\",\"label\":\"K\"},{\"start\":23,\"end\":27,\"text\":\"设计标准\",\"label\":\"K\"},{\"start\":28,\"end\":32,\"text\":\"制造工艺\",\"label\":\"K\"},{\"start\":33,\"end\":41,\"text\":\"有成功的项目经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"包装材料、设计标准和制造工艺为领域知识；项目经验对应明确实践经历，按S标注。\",\"issues\":[]},{\"id\":\"sp10k-03104\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"沟通协调能力\",\"label\":\"T\"},{\"start\":13,\"end\":18,\"text\":\"商务接待经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"沟通协调能力为通用能力；商务接待经验对应明确职业活动实践。\",\"issues\":[]},{\"id\":\"sp10k-03151\",\"spans\":[{\"start\":5,\"end\":14,\"text\":\"2D、3D绘图软件\",\"label\":\"S\"},{\"start\":17,\"end\":20,\"text\":\"电烙铁\",\"label\":\"S\"},{\"start\":21,\"end\":25,\"text\":\"电气装配\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"绘图软件、电烙铁及电气装配均处于岗位运用或操作语境，标为S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-02954",
+        "spans": [
+          {
+            "start": 5,
+            "end": 15,
+            "text": "处理和分析生产线异常",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求处理和分析生产线异常，属于可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02965",
+        "spans": [
+          {
+            "start": 0,
+            "end": 13,
+            "text": "收集并整理市场部的日常文件",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "分类整理",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "text": "工作相关流程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取文件整理、分类整理等职业动作，以及工作相关流程这一知识提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02975",
+        "spans": [
+          {
+            "start": 1,
+            "end": 4,
+            "text": "GSP",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "药品分类陈列",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 31,
+            "text": "贵重商品及冷链商品的专门管理",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "text": "控制药品库存",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "GSP为规范知识；药品陈列、特殊商品管理和库存控制为职业动作，排除单纯结果性表述。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-02998",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "销售管理",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "产品知识",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "商务谈判知识",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "谈判技巧",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "销售管理、产品知识及商务谈判知识属于领域知识，谈判技巧属于可迁移通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03013",
+        "spans": [
+          {
+            "start": 14,
+            "end": 18,
+            "text": "安全巡逻",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "秩序维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "安全巡逻和秩序维护均为明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03025",
+        "spans": [
+          {
+            "start": 12,
+            "end": 15,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "团队协作精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "责任心和团队协作精神属于通用素质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03068",
+        "spans": [
+          {
+            "start": 7,
+            "end": 13,
+            "text": "沟通表达能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 25,
+            "text": "对接员工与各部门",
+            "label": "T"
+          },
+          {
+            "start": 28,
+            "end": 39,
+            "text": "处理基础咨询与事务对接",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通表达及人员、部门对接属于通用沟通能力；处理咨询和事务对接属于可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03093",
+        "spans": [
+          {
+            "start": 2,
+            "end": 22,
+            "text": "纸箱、塑料箱、磊塑箱（钙塑箱）等包装材料",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "设计标准",
+            "label": "K"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "制造工艺",
+            "label": "K"
+          },
+          {
+            "start": 33,
+            "end": 41,
+            "text": "有成功的项目经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "包装材料、设计标准和制造工艺为领域知识；项目经验对应明确实践经历，按S标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03104",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "沟通协调能力",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "商务接待经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通协调能力为通用能力；商务接待经验对应明确职业活动实践。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03151",
+        "spans": [
+          {
+            "start": 5,
+            "end": 14,
+            "text": "2D、3D绘图软件",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 20,
+            "text": "电烙铁",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "电气装配",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "绘图软件、电烙铁及电气装配均处于岗位运用或操作语境，标为S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 187,
+  "ids": [
+    "sp10k-02954",
+    "sp10k-02965",
+    "sp10k-02975",
+    "sp10k-02998",
+    "sp10k-03013",
+    "sp10k-03025",
+    "sp10k-03068",
+    "sp10k-03093",
+    "sp10k-03104",
+    "sp10k-03151"
+  ],
+  "at": "2026-09-13T16:43:33.186643+00:00"
+}

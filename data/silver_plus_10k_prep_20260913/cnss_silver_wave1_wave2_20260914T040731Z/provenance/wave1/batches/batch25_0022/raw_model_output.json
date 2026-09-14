@@ -1,0 +1,503 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02364",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "SQL语言",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 33,
+          "text": "查询语句、存储过程、自定义函数的分析和编写",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "SQL为岗位工具；分析和编写保留并列对象及共享动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02365",
+      "spans": [
+        {
+          "start": 13,
+          "end": 19,
+          "text": "大专以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历资格，年龄和性别条件不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02366",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "任教",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "text": "教师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "任教为明确职业活动；教师资格证为非语言资格。年限及任职身份不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02367",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明报考材料及资格审核失败的处理流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02368",
+      "spans": [
+        {
+          "start": 5,
+          "end": 14,
+          "text": "省级KB类进场谈判",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 24,
+          "text": "地级KB类进场谈判",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 35,
+          "text": "全国级便利店进场谈判",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 45,
+          "text": "省级便利店进场谈判",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 54,
+          "text": "棉店系统合作谈判",
+          "label": "S"
+        },
+        {
+          "start": 55,
+          "end": 63,
+          "text": "新零售业进场谈判",
+          "label": "S"
+        },
+        {
+          "start": 64,
+          "end": 73,
+          "text": "区域KA类进场谈判",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "逐项抽取具有明确销售业务对象的谈判职责，保留原文用词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02369",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "国家注册安全工程师证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整非语言职业资格名，去除持有及优先修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02370",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "未列出具体专业要求；招聘文件名称不构成候选人知识或资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02371",
+      "spans": [
+        {
+          "start": 18,
+          "end": 23,
+          "text": "数据库原理",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 26,
+          "text": "管理",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "text": "优化",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "数据库原理为K；管理、优化受数据库语境限定，类型暂以S占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "管理",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "专业知识标题支持知识解释，数据库管理也可指实际操作，缺少进一步语境。"
+        },
+        {
+          "kind": "type",
+          "text": "优化",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "专业知识标题支持优化知识解释，也可指可执行的数据库优化活动，缺少进一步语境。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02372",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "集群环境搭建及监控",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留搭建与监控共享的集群环境对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02373",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘方案的解释主体。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02374",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "电池",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 15,
+          "text": "超级电容器自动化设备",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "电池为领域知识；设备提及在范围内，但知识对象与岗位工具两种解释未决，S为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "超级电容器自动化设备",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅要求熟悉，未说明是设备产品知识还是操作运用能力。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02375",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "大中型项目管理",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "项目交付管理",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 53,
+          "text": "软件、信息化项目实施及管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取具体项目管理活动；末项明确要求实际运作经验，保留共享项目对象和动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02376",
+      "spans": [
+        {
+          "start": 1,
+          "end": 7,
+          "text": "项目经理证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "非语言职业资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02377",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "区域传统销售业务的日常工作规划",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 26,
+          "text": "指标分解达成计划",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "日常运维管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取业务规划、指标计划和运维管理职责，去除完成及时性修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02378",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "日常运维文档的编写",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "测试用例设计",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "编写测试文档",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "text": "客户服务意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "文档编写与测试设计为职业活动，客户服务意识为通用特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02379",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明公告的解释主体。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02381",
+      "spans": [
+        {
+          "start": 3,
+          "end": 8,
+          "text": "硕士研究生",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历层次；年龄和出生日期限制不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02382",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "身体健康及泛化岗位符合性要求不在标注范围。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02383",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "运维工具操作手册和技术规范的编写",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两类文档共享编写动作，整体为职业活动，不嵌套工具或规范知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02384",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为证明材料提交规则，未提出具体学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02385",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "监控理念",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 20,
+          "text": "Prometheus",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 32,
+          "text": "open-falcon",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "zabbix",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "监控理念为知识；明确使用过的具体监控工具为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02386",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "收集各项目信息",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "后勤保障",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "文件收发",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 31,
+          "text": "归档",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 44,
+          "text": "整理项目日常汇报资料",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "逐项抽取信息收集、后勤及文档处理职责；归档对象由局部语境确定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02387",
+      "spans": [
+        {
+          "start": 7,
+          "end": 30,
+          "text": "Ansible、Saltstack的部署和使用",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留两项工具共享的部署和使用动作；自动化运维为用途限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02388",
+      "spans": [
+        {
+          "start": 2,
+          "end": 19,
+          "text": "大型高性能/高可用/高并发应用方案",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 53,
+          "text": "应用多活方案、灰度发布方案、统一接入网关等架构开发、设计或实施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "前项为应用方案知识；后项明确要求架构实践，保留共享对象与动作，去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02389",
+      "spans": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "技能培训",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "团队建设",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "实施技能培训为职业活动，团队建设为通用团队管理能力。",
+      "issues": []
+    }
+  ]
+}

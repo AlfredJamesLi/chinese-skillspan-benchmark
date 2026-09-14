@@ -1,0 +1,268 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 52.66,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5105,
+    "completion_tokens": 1671,
+    "total_tokens": 6776,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 750
+    },
+    "input_tokens": 5105,
+    "output_tokens": 1671,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00891\",\"spans\":[{\"start\":10,\"end\":20,\"text\":\"维护大客户的IT设施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取设施维护职责；驻场地点不标，设备举例不另列。\",\"issues\":[]},{\"id\":\"sp10k-00892\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"桌面环境实际支持\",\"label\":\"S\"},{\"start\":15,\"end\":27,\"text\":\"Windows安装/升级\",\"label\":\"S\"},{\"start\":28,\"end\":35,\"text\":\"软件安装/升级\",\"label\":\"S\"},{\"start\":36,\"end\":40,\"text\":\"邮件设置\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确支持实践及具体操作按S；去除经验后活动意义完整。\",\"issues\":[]},{\"id\":\"sp10k-00893\",\"spans\":[{\"start\":7,\"end\":17,\"text\":\"信息系统日常管理维护\",\"label\":\"S\"},{\"start\":22,\"end\":40,\"text\":\"系统主管部门协调对接各类技术操作问题\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"系统管理维护为职业活动；与主管部门协调对接属于人员联络协调能力。\",\"issues\":[]},{\"id\":\"sp10k-00894\",\"spans\":[{\"start\":0,\"end\":10,\"text\":\"全日制本科及以上学历\",\"label\":\"K\"},{\"start\":11,\"end\":16,\"text\":\"理工类专业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"完整学历资格及明确专业类别按K。\",\"issues\":[]},{\"id\":\"sp10k-00895\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"维护客户关系\",\"label\":\"T\"},{\"start\":7,\"end\":9,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":10,\"end\":30,\"text\":\"反馈及跟踪客户软件使用中的疑难问题和需求\",\"label\":\"S\"},{\"start\":34,\"end\":46,\"text\":\"提供合理化建议及解决方案\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"客户关系与沟通为通用人际能力；软件问题反馈跟踪及提供方案为职业活动，共享对象保留；末尾使用效果属于目标。\",\"issues\":[]},{\"id\":\"sp10k-00896\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明应届毕业生证书取得期限及资格取消流程，未给出具体学历资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00897\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"招聘公告、岗位名称和用工单位信息，无具体能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00898\",\"spans\":[{\"start\":4,\"end\":22,\"text\":\"MySQL数据库的工程实施及运维支撑\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库实施和运维共享必要对象，保留完整职业活动跨度。\",\"issues\":[]},{\"id\":\"sp10k-00899\",\"spans\":[{\"start\":2,\"end\":4,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":5,\"end\":11,\"text\":\"逻辑思维灵活\",\"label\":\"T\"},{\"start\":12,\"end\":16,\"text\":\"表达能力\",\"label\":\"T\"},{\"start\":20,\"end\":24,\"text\":\"主动思考\",\"label\":\"T\"},{\"start\":25,\"end\":43,\"text\":\"跟相关人员讨论需求能提出部分更优意见\",\"label\":\"T\"},{\"start\":44,\"end\":54,\"text\":\"团队协作时能灵活补位\",\"label\":\"T\"},{\"start\":60,\"end\":66,\"text\":\"协调推动能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为跨行业沟通、思维与协作能力；保留表达完整行为特质所需的限定语。\",\"issues\":[]},{\"id\":\"sp10k-00900\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"基础运维脚本的编写\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确脚本编写职责，排除负责触发词。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00891",
+        "spans": [
+          {
+            "start": 10,
+            "end": 20,
+            "text": "维护大客户的IT设施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取设施维护职责；驻场地点不标，设备举例不另列。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00892",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "桌面环境实际支持",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 27,
+            "text": "Windows安装/升级",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 35,
+            "text": "软件安装/升级",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "text": "邮件设置",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确支持实践及具体操作按S；去除经验后活动意义完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00893",
+        "spans": [
+          {
+            "start": 7,
+            "end": 17,
+            "text": "信息系统日常管理维护",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 40,
+            "text": "系统主管部门协调对接各类技术操作问题",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统管理维护为职业活动；与主管部门协调对接属于人员联络协调能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00894",
+        "spans": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "全日制本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "text": "理工类专业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "完整学历资格及明确专业类别按K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00895",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "维护客户关系",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 30,
+            "text": "反馈及跟踪客户软件使用中的疑难问题和需求",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 46,
+            "text": "提供合理化建议及解决方案",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "客户关系与沟通为通用人际能力；软件问题反馈跟踪及提供方案为职业活动，共享对象保留；末尾使用效果属于目标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00896",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明应届毕业生证书取得期限及资格取消流程，未给出具体学历资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00897",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "招聘公告、岗位名称和用工单位信息，无具体能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00898",
+        "spans": [
+          {
+            "start": 4,
+            "end": 22,
+            "text": "MySQL数据库的工程实施及运维支撑",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库实施和运维共享必要对象，保留完整职业活动跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00899",
+        "spans": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 11,
+            "text": "逻辑思维灵活",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "表达能力",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "主动思考",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 43,
+            "text": "跟相关人员讨论需求能提出部分更优意见",
+            "label": "T"
+          },
+          {
+            "start": 44,
+            "end": 54,
+            "text": "团队协作时能灵活补位",
+            "label": "T"
+          },
+          {
+            "start": 60,
+            "end": 66,
+            "text": "协调推动能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为跨行业沟通、思维与协作能力；保留表达完整行为特质所需的限定语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00900",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "基础运维脚本的编写",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确脚本编写职责，排除负责触发词。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 90,
+  "ids": [
+    "sp10k-00891",
+    "sp10k-00892",
+    "sp10k-00893",
+    "sp10k-00894",
+    "sp10k-00895",
+    "sp10k-00896",
+    "sp10k-00897",
+    "sp10k-00898",
+    "sp10k-00899",
+    "sp10k-00900"
+  ],
+  "at": "2026-09-13T15:05:39.416167+00:00"
+}

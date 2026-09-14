@@ -1,0 +1,264 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 33.021,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5070,
+    "completion_tokens": 1369,
+    "total_tokens": 6439,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 722
+    },
+    "input_tokens": 5070,
+    "output_tokens": 1369,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00210",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            6
+          ],
+          "to": [
+            2,
+            7
+          ],
+          "text": "物联网系统"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            12
+          ],
+          "to": [
+            8,
+            13
+          ],
+          "text": "TCP协议"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            13,
+            19
+          ],
+          "to": [
+            14,
+            20
+          ],
+          "text": "MQTT协议"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            20,
+            26
+          ],
+          "to": [
+            21,
+            27
+          ],
+          "text": "http协议"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            27,
+            35
+          ],
+          "to": [
+            28,
+            36
+          ],
+          "text": "Modbus协议"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00201\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为应聘资格处理结果说明，不属于候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00202\",\"spans\":[{\"start\":7,\"end\":16,\"text\":\"处理复杂问题的能力\",\"label\":\"T\"},{\"start\":19,\"end\":25,\"text\":\"生态伙伴运营\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"处理复杂问题的能力为通用能力；生态伙伴运营为明确职业活动，去除经验后语义仍完整。\",\"issues\":[]},{\"id\":\"sp10k-00203\",\"spans\":[{\"start\":8,\"end\":12,\"text\":\"软件实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"软件实施为明确职业活动；大型集成项目及经验为语境限定，不进入最短完整跨度。\",\"issues\":[]},{\"id\":\"sp10k-00204\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报名资格限制和在读身份说明，不属于候选人须具备的能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00205\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明专业认定所参照的目录及目录结构，不构成候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-00206\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"美术\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"美术为专业领域提及；“相关专业”属于泛化专业表述，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00207\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为聘用审核及资格取得流程说明，不属于候选人须具备的资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00208\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为人员履历及任职信息，不含候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-00209\",\"spans\":[{\"start\":0,\"end\":5,\"text\":\"博士研究生\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"博士研究生为完整学历资格名。\",\"issues\":[]},{\"id\":\"sp10k-00210\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"物联网系统\",\"label\":\"K\"},{\"start\":7,\"end\":12,\"text\":\"TCP协议\",\"label\":\"K\"},{\"start\":13,\"end\":19,\"text\":\"MQTT协议\",\"label\":\"K\"},{\"start\":20,\"end\":26,\"text\":\"http协议\",\"label\":\"K\"},{\"start\":27,\"end\":35,\"text\":\"Modbus协议\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"物联网系统及各协议均在熟悉语境中作为领域知识提及。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00201",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为应聘资格处理结果说明，不属于候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00202",
+        "spans": [
+          {
+            "start": 7,
+            "end": 16,
+            "text": "处理复杂问题的能力",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "生态伙伴运营",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "处理复杂问题的能力为通用能力；生态伙伴运营为明确职业活动，去除经验后语义仍完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00203",
+        "spans": [
+          {
+            "start": 8,
+            "end": 12,
+            "text": "软件实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "软件实施为明确职业活动；大型集成项目及经验为语境限定，不进入最短完整跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00204",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报名资格限制和在读身份说明，不属于候选人须具备的能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00205",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明专业认定所参照的目录及目录结构，不构成候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00206",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "美术",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "美术为专业领域提及；“相关专业”属于泛化专业表述，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00207",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为聘用审核及资格取得流程说明，不属于候选人须具备的资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00208",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为人员履历及任职信息，不含候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00209",
+        "spans": [
+          {
+            "start": 0,
+            "end": 5,
+            "text": "博士研究生",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "博士研究生为完整学历资格名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00210",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "物联网系统",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "text": "TCP协议",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "MQTT协议",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "text": "http协议",
+            "label": "K"
+          },
+          {
+            "start": 28,
+            "end": 36,
+            "text": "Modbus协议",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "物联网系统及各协议均在熟悉语境中作为领域知识提及。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 21,
+  "ids": [
+    "sp10k-00201",
+    "sp10k-00202",
+    "sp10k-00203",
+    "sp10k-00204",
+    "sp10k-00205",
+    "sp10k-00206",
+    "sp10k-00207",
+    "sp10k-00208",
+    "sp10k-00209",
+    "sp10k-00210"
+  ],
+  "at": "2026-09-13T14:08:56.460791+00:00"
+}

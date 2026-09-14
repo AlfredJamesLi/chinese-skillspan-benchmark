@@ -1,0 +1,276 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06941",
+      "spans": [
+        {
+          "start": 1,
+          "end": 7,
+          "text": "工作认真细致",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "专业素养",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取工作态度、服务意识和职业素养等通用特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06942",
+      "spans": [
+        {
+          "start": 17,
+          "end": 24,
+          "text": "本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "相关专业本身不单独标注，保留完整学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06943",
+      "spans": [
+        {
+          "start": 20,
+          "end": 35,
+          "text": "制定详细的《模具制造总进度表》",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取根据项目要求制定制造进度表的职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06944",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "财务预算及核算",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "税务",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "日常管理",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "年度预算编制",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "text": "月度滚动利润预测",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "text": "日常财务核算",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 54,
+          "text": "月度财务报告",
+          "label": "S"
+        },
+        {
+          "start": 55,
+          "end": 59,
+          "text": "税务管理",
+          "label": "S"
+        },
+        {
+          "start": 60,
+          "end": 66,
+          "text": "年终会计决算",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取财务管理、预算、预测、核算、报告、税务及会计决算等明确职业活动；开头的“税务”作为领域资格知识提及保留。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06945",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "车险定价模型",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "更新迭代",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 25,
+          "text": "挖掘并细化车险定价因子",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "text": "风险识别能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取车险定价领域实体及模型迭代、定价因子挖掘细化和风险识别能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06946",
+      "spans": [
+        {
+          "start": 15,
+          "end": 19,
+          "text": "资料管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确的资料管理职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06947",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "安卓原生开发能力",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 23,
+          "text": "AndroidSDK",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 33,
+          "text": "Jetpack组件",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 44,
+          "text": "APP开发",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 47,
+          "text": "优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取安卓开发能力、岗位工具及应用开发和优化活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06948",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "保险生态融入",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "专业风控",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "科技运营",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "前沿研究",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取保险、风控、科技运营及前沿研究等行业职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06949",
+      "spans": [
+        {
+          "start": 6,
+          "end": 9,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "抗压能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取责任心和抗压能力等通用特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06950",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "团队管理经验",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "独立开展业务",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "团队管理经验作为通用管理能力标注，独立开展业务作为职业动作标注；业绩目标属于结果要求，不标。",
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 40.581,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5153,
+    "completion_tokens": 1196,
+    "total_tokens": 6349,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5153,
+    "output_tokens": 1196,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01451",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            28,
+            31
+          ],
+          "to": [
+            31,
+            36
+          ],
+          "text": "SQL语言"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01453",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            11
+          ],
+          "to": [
+            8,
+            14
+          ],
+          "text": "在线客服运营"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            24
+          ],
+          "to": [
+            18,
+            29
+          ],
+          "text": "朋友圈的运营发布及维护"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            27,
+            32
+          ],
+          "to": [
+            30,
+            37
+          ],
+          "text": "虚拟IP的运维"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01451\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"数据库相关知识\",\"label\":\"K\"},{\"start\":12,\"end\":22,\"text\":\"PostgreSQL\",\"label\":\"S\"},{\"start\":28,\"end\":31,\"text\":\"SQL语言\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取数据库知识及数据库工具、语言的运用要求。\",\"issues\":[]},{\"id\":\"sp10k-01452\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"学历证书取得时间属于材料提交及时间要求，未形成可标注的学历资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01453\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"在线客服运营\",\"label\":\"S\"},{\"start\":14,\"end\":24,\"text\":\"朋友圈的运营发布及维护\",\"label\":\"S\"},{\"start\":27,\"end\":32,\"text\":\"虚拟IP的运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取在线客服、朋友圈内容运营维护及虚拟IP运维等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01454\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为资格复审及证件材料提交事项，未形成候选人能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01455\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为学历与薪酬待遇信息，未形成可标注的学历完整资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01456\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为毕业证及学历认证材料提交要求，未形成可标注的学历资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01457\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为事业单位应聘回避及亲属关系限制，不属于能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01458\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"店务管理能力\",\"label\":\"S\"},{\"start\":13,\"end\":19,\"text\":\"店内人员管理\",\"label\":\"S\"},{\"start\":20,\"end\":24,\"text\":\"货品管理\",\"label\":\"S\"},{\"start\":25,\"end\":29,\"text\":\"客户运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"店务管理及其所列人员、货品和客户管理均为岗位领域绑定的可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01459\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为面试安排及通知事项，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01460\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"表达能力\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"书写能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"表达和书写属于跨行业通用能力。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01451",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "数据库相关知识",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 22,
+            "text": "PostgreSQL",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 36,
+            "text": "SQL语言",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取数据库知识及数据库工具、语言的运用要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01452",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "学历证书取得时间属于材料提交及时间要求，未形成可标注的学历资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01453",
+        "spans": [
+          {
+            "start": 8,
+            "end": 14,
+            "text": "在线客服运营",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 29,
+            "text": "朋友圈的运营发布及维护",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 37,
+            "text": "虚拟IP的运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取在线客服、朋友圈内容运营维护及虚拟IP运维等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01454",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为资格复审及证件材料提交事项，未形成候选人能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01455",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为学历与薪酬待遇信息，未形成可标注的学历完整资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01456",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为毕业证及学历认证材料提交要求，未形成可标注的学历资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01457",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为事业单位应聘回避及亲属关系限制，不属于能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01458",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "店务管理能力",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "店内人员管理",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "货品管理",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "客户运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "店务管理及其所列人员、货品和客户管理均为岗位领域绑定的可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01459",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为面试安排及通知事项，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01460",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "表达能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "书写能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "表达和书写属于跨行业通用能力。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 146,
+  "ids": [
+    "sp10k-01451",
+    "sp10k-01452",
+    "sp10k-01453",
+    "sp10k-01454",
+    "sp10k-01455",
+    "sp10k-01456",
+    "sp10k-01457",
+    "sp10k-01458",
+    "sp10k-01459",
+    "sp10k-01460"
+  ],
+  "at": "2026-09-13T16:03:18.826274+00:00"
+}

@@ -1,0 +1,521 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03429",
+      "spans": [
+        {
+          "start": 6,
+          "end": 21,
+          "text": "弱电相关设备/硬件的维护、操作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留共享设备对象的维护、操作活动；保证安全运行和正常使用为结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03430",
+      "spans": [
+        {
+          "start": 5,
+          "end": 15,
+          "text": "操作系统的安装，维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装与维护共享操作系统对象，保留连续完整活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03431",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "安全技术",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 18,
+          "text": "WEB入侵检测",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "远程漏洞检测",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 33,
+          "text": "抗拒绝服务攻击",
+          "label": "K"
+        },
+        {
+          "start": 39,
+          "end": 47,
+          "text": "owasptop",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安全技术及并列检测、防御事项处于原理知识语境；保留安全规范名原文。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03432",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "技术架构思想",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "相关框架",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 23,
+          "text": "SOA架构",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 31,
+          "text": "微服务架构设计",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "架构思想及其框架按知识标注；微服务架构设计的知识或实践含义待裁决，S为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "微服务架构设计",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指架构设计知识，也可指可执行设计活动；当前仅有熟悉及架构思想语境，未明确设计实践。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03433",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "ERP、OA等企业软件管理",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 32,
+          "text": "MySQL和Oracle性能调优",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 38,
+          "text": "服务器优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件管理、性能调优及服务器优化为职业活动；保留必要共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03434",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "计算机",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格及具体专业名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03435",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "遴选条件解释权限说明，不含具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03436",
+      "spans": [
+        {
+          "start": 12,
+          "end": 16,
+          "text": "软件开发",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "自我测试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发和测试为独立职业活动；公司质量要求不构成具体知识提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03437",
+      "spans": [
+        {
+          "start": 10,
+          "end": 14,
+          "text": "渠道拓展",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "关键客户支撑",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取渠道拓展及客户业务支撑职能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03438",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "分析问题",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "解决问题",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "沟通协调能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "问题未限定技术或业务对象，均为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03439",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于招聘考察程序及考察内容说明，不抽取行政流程中的泛化评价项目。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03440",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "oracle",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 16,
+          "text": "mtsql",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "redis",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确使用数据库工具，保留原文拼写；泛称相关技术及工具不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03441",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "伦理审查管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "伦理审查管理为明确专业职能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03442",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明笔试内容，且学科专业知识未指明具体领域。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03443",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "宝贝类目、搜索排名的提升",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "text": "获取平台免费流量",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "排名提升和平台流量获取为电商运营活动；前项保留共享动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03444",
+      "spans": [
+        {
+          "start": 2,
+          "end": 29,
+          "text": "研究测试能够实现系统功能拓展和性能优化的主流软件和工具",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "研究测试共享带限定语的软件工具对象；功能拓展和性能优化是对象属性，不嵌套抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03445",
+      "spans": [
+        {
+          "start": 2,
+          "end": 23,
+          "text": "阿里平台数据相关工具（例数据银行）等的运维",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 49,
+          "text": "提供相关数据支撑",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取工具运维和数据支撑职责；品牌分析、推广人群属于其他模块，不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03446",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "PythonWeb框架",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "Django",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 29,
+          "text": "Flask",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 37,
+          "text": "Tornado",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体开发框架构成岗位工具要求，类别及实例按工具语境标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03447",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "试用期资格取消规定，未提及具体能力或资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03448",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 6,
+          "end": 19,
+          "text": "对IT系统的应用有较强兴趣",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学习能力及对岗位应用活动的兴趣，后者保留完整态度表达。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03449",
+      "spans": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "互联网营销",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 10,
+          "text": "信息技术",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "电子商务",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列项目均为明确专业名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03450",
+      "spans": [
+        {
+          "start": 9,
+          "end": 14,
+          "text": "项目的调研",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 27,
+          "text": "对用户需求进行整理和分析",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "产品规划",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取项目调研、需求整理分析及产品规划；需求对象由两个动作共享。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03451",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "积极主动",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "认真负责",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 27,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 28,
+          "end": 31,
+          "text": "事业心",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "团队精神",
+          "label": "T"
+        },
+        {
+          "start": 38,
+          "end": 42,
+          "text": "专研精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用软技能或工作特质，保留专研精神原文。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03452",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘专业归类及名称衔接的行政认定规则，不是候选人知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03453",
+      "spans": [
+        {
+          "start": 5,
+          "end": 15,
+          "text": "投影音响设备调试维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备调试维护为职业活动，保留共享设备对象。",
+      "issues": []
+    }
+  ]
+}

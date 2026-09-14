@@ -1,0 +1,153 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07541",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为任职资格要求标题，不含具体候选人能力、知识或资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07542",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅含泛化工作经验及应届毕业生投递信息，不构成具体能力、知识或资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07543",
+      "spans": [
+        {
+          "start": 0,
+          "end": 8,
+          "text": "全日制本科及以上",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历为完整资格名，相关专业为泛化专业要求，不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07544",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "物业综合维修",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "水电",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "会泥瓦",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "油漆工",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "维修、水电、泥瓦和油漆相关内容表示候选人须具备的可执行职业技能；身体健康和年龄要求不在标注范围内。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07545",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅含岗位、发展方向、培训体系及任职要求标题，培训属于公司提供内容，未出现具体候选人能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07546",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "高中、中专学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历为候选人资格要求；年龄不在标注范围内。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07547",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "与NPM工程师配合",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 47,
+          "text": "组织及参与项目团队进行各类Issue（设计、工艺、材料）的解析、改善、追踪",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "与工程师配合属于协作能力；组织、参与并对项目问题进行解析、改善和追踪属于职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07548",
+      "spans": [
+        {
+          "start": 7,
+          "end": 18,
+          "text": "办公室家具等的维修处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "维修处理是明确的职业动作，去除职责触发词后保留其对象和动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07549",
+      "spans": [
+        {
+          "start": 6,
+          "end": 13,
+          "text": "本科或以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历为完整资格名；所列相关专业为泛化专业要求，不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07550",
+      "spans": [
+        {
+          "start": 6,
+          "end": 17,
+          "text": "供配电系统相关技术规范",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "工程项目管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "技术规范属于领域规范知识；工程项目管理在明确项目经验语境下表示职业活动。",
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,938 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 59.359,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5185,
+    "completion_tokens": 2319,
+    "total_tokens": 7504,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 928
+    },
+    "input_tokens": 5185,
+    "output_tokens": 2319,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01161",
+      "repairs": [
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            42,
+            47
+          ],
+          "to": [
+            41,
+            46
+          ],
+          "text": "汇报给领导"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01162",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            23
+          ],
+          "to": [
+            16,
+            22
+          ],
+          "text": "语言表达能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            24,
+            30
+          ],
+          "to": [
+            23,
+            29
+          ],
+          "text": "团队管理能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01163",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            14
+          ],
+          "to": [
+            9,
+            12
+          ],
+          "text": "服务器"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            22
+          ],
+          "to": [
+            13,
+            20
+          ],
+          "text": "运行监控与管理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            25,
+            29
+          ],
+          "to": [
+            23,
+            27
+          ],
+          "text": "网络配置"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01165",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            16,
+            22
+          ],
+          "to": [
+            39,
+            46
+          ],
+          "text": "马克思主义理论"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            22,
+            27
+          ],
+          "to": [
+            46,
+            51
+          ],
+          "text": "博士研究生"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            89,
+            95
+          ],
+          "to": [
+            105,
+            112
+          ],
+          "text": "马克思主义理论"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            96,
+            100
+          ],
+          "to": [
+            113,
+            117
+          ],
+          "text": "中国哲学"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            101,
+            105
+          ],
+          "to": [
+            118,
+            122
+          ],
+          "text": "外国哲学"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            106,
+            109
+          ],
+          "to": [
+            123,
+            126
+          ],
+          "text": "政治学"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            110,
+            113
+          ],
+          "to": [
+            127,
+            130
+          ],
+          "text": "历史学"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            113,
+            119
+          ],
+          "to": [
+            130,
+            135
+          ],
+          "text": "博士研究生"
+        },
+        {
+          "i": 8,
+          "action": "snapped",
+          "from": [
+            181,
+            183
+          ],
+          "to": [
+            188,
+            191
+          ],
+          "text": "心理学"
+        },
+        {
+          "i": 9,
+          "action": "snapped",
+          "from": [
+            183,
+            189
+          ],
+          "to": [
+            191,
+            196
+          ],
+          "text": "博士研究生"
+        },
+        {
+          "i": 10,
+          "action": "snapped",
+          "from": [
+            233,
+            236
+          ],
+          "to": [
+            249,
+            252
+          ],
+          "text": "教育学"
+        },
+        {
+          "i": 11,
+          "action": "snapped",
+          "from": [
+            237,
+            240
+          ],
+          "to": [
+            253,
+            256
+          ],
+          "text": "心理学"
+        },
+        {
+          "i": 12,
+          "action": "snapped",
+          "from": [
+            240,
+            246
+          ],
+          "to": [
+            257,
+            263
+          ],
+          "text": "课程与教学论"
+        },
+        {
+          "i": 13,
+          "action": "snapped",
+          "from": [
+            246,
+            252
+          ],
+          "to": [
+            263,
+            268
+          ],
+          "text": "博士研究生"
+        },
+        {
+          "i": 14,
+          "action": "snapped",
+          "from": [
+            296,
+            299
+          ],
+          "to": [
+            317,
+            320
+          ],
+          "text": "教育学"
+        },
+        {
+          "i": 15,
+          "action": "snapped",
+          "from": [
+            300,
+            303
+          ],
+          "to": [
+            325,
+            328
+          ],
+          "text": "心理学"
+        },
+        {
+          "i": 16,
+          "action": "snapped",
+          "from": [
+            303,
+            309
+          ],
+          "to": [
+            328,
+            333
+          ],
+          "text": "博士研究生"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01166",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            16,
+            22
+          ],
+          "to": [
+            14,
+            20
+          ],
+          "text": "网络拓扑结构"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            28,
+            34
+          ],
+          "to": [
+            26,
+            30
+          ],
+          "text": "网络设备"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            38,
+            44
+          ],
+          "to": [
+            34,
+            38
+          ],
+          "text": "设置管理"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            44,
+            48
+          ],
+          "text": "排除故障"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01167",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            19
+          ],
+          "to": [
+            11,
+            17
+          ],
+          "text": "报表数据需求"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01168",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            13
+          ],
+          "to": [
+            4,
+            11
+          ],
+          "text": "Web/移动端"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            21
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "安全漏洞"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            24
+          ],
+          "to": [
+            17,
+            19
+          ],
+          "text": "原理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            25,
+            27
+          ],
+          "to": [
+            20,
+            22
+          ],
+          "text": "危害"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            28,
+            32
+          ],
+          "to": [
+            23,
+            27
+          ],
+          "text": "利用方式"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            33,
+            37
+          ],
+          "to": [
+            28,
+            32
+          ],
+          "text": "修复方案"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01169",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            5,
+            11
+          ],
+          "text": "逻辑分析能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            17
+          ],
+          "to": [
+            12,
+            18
+          ],
+          "text": "沟通表达能力"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01161\",\"spans\":[{\"start\":3,\"end\":12,\"text\":\"门店系统平台的管理\",\"label\":\"S\"},{\"start\":13,\"end\":21,\"text\":\"后台数据维护更新\",\"label\":\"S\"},{\"start\":22,\"end\":24,\"text\":\"培训\",\"label\":\"S\"},{\"start\":25,\"end\":36,\"text\":\"解答系统操作人员的问题\",\"label\":\"S\"},{\"start\":37,\"end\":41,\"text\":\"统计数据\",\"label\":\"S\"},{\"start\":42,\"end\":47,\"text\":\"汇报给领导\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取系统管理、数据维护、培训、问题解答、数据统计及汇报等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01162\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":7,\"end\":11,\"text\":\"服从管理\",\"label\":\"T\"},{\"start\":17,\"end\":23,\"text\":\"语言表达能力\",\"label\":\"T\"},{\"start\":24,\"end\":30,\"text\":\"团队管理能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取责任特质、服从管理及表达和团队管理能力。\",\"issues\":[]},{\"id\":\"sp10k-01163\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"网络设备\",\"label\":\"S\"},{\"start\":11,\"end\":14,\"text\":\"服务器\",\"label\":\"S\"},{\"start\":15,\"end\":22,\"text\":\"运行监控与管理\",\"label\":\"S\"},{\"start\":25,\"end\":29,\"text\":\"网络配置\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取网络设备和服务器运维、运行监控管理及网络配置活动。\",\"issues\":[]},{\"id\":\"sp10k-01164\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"专科以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"全日制院校毕业不是明确的完整学历资格名；标注专科以上学历。\",\"issues\":[]},{\"id\":\"sp10k-01165\",\"spans\":[{\"start\":16,\"end\":22,\"text\":\"马克思主义理论\",\"label\":\"K\"},{\"start\":22,\"end\":27,\"text\":\"博士研究生\",\"label\":\"K\"},{\"start\":89,\"end\":95,\"text\":\"马克思主义理论\",\"label\":\"K\"},{\"start\":96,\"end\":100,\"text\":\"中国哲学\",\"label\":\"K\"},{\"start\":101,\"end\":105,\"text\":\"外国哲学\",\"label\":\"K\"},{\"start\":106,\"end\":109,\"text\":\"政治学\",\"label\":\"K\"},{\"start\":110,\"end\":113,\"text\":\"历史学\",\"label\":\"K\"},{\"start\":113,\"end\":119,\"text\":\"博士研究生\",\"label\":\"K\"},{\"start\":181,\"end\":183,\"text\":\"心理学\",\"label\":\"K\"},{\"start\":183,\"end\":189,\"text\":\"博士研究生\",\"label\":\"K\"},{\"start\":233,\"end\":236,\"text\":\"教育学\",\"label\":\"K\"},{\"start\":237,\"end\":240,\"text\":\"心理学\",\"label\":\"K\"},{\"start\":240,\"end\":246,\"text\":\"课程与教学论\",\"label\":\"K\"},{\"start\":246,\"end\":252,\"text\":\"博士研究生\",\"label\":\"K\"},{\"start\":296,\"end\":299,\"text\":\"教育学\",\"label\":\"K\"},{\"start\":300,\"end\":303,\"text\":\"心理学\",\"label\":\"K\"},{\"start\":303,\"end\":309,\"text\":\"博士研究生\",\"label\":\"K\"}],\"status\":\"adjudication_required\",\"note\":\"抽取招聘表中的专业领域和学历资格；部分长文本表格边界及最后一行因原文截断存在索引核验需求。\",\"issues\":[{\"kind\":\"boundary\",\"text\":\"设岗学院岗位所需专业学历学位招聘人数岗位类别学院联系人电话及邮箱\",\"alternatives\":[\"按表格字段逐项抽取\",\"将字段与相邻单元格合并判断\"],\"reason\":\"原文缺少结构化分隔符，表格单元格边界主要依赖局部格式。\"}]},{\"id\":\"sp10k-01166\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"网络系统基础\",\"label\":\"K\"},{\"start\":16,\"end\":22,\"text\":\"网络拓扑结构\",\"label\":\"K\"},{\"start\":28,\"end\":34,\"text\":\"网络设备\",\"label\":\"S\"},{\"start\":38,\"end\":44,\"text\":\"设置管理\",\"label\":\"S\"},{\"start\":49,\"end\":53,\"text\":\"排除故障\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取网络基础和拓扑知识，以及网络设备配置管理、故障排除活动。\",\"issues\":[]},{\"id\":\"sp10k-01167\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"业务数据开发\",\"label\":\"S\"},{\"start\":11,\"end\":19,\"text\":\"报表数据需求\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取业务数据开发活动及报表数据需求知识。\",\"issues\":[]},{\"id\":\"sp10k-01168\",\"spans\":[{\"start\":4,\"end\":13,\"text\":\"Web/移动端\",\"label\":\"K\"},{\"start\":15,\"end\":21,\"text\":\"安全漏洞\",\"label\":\"K\"},{\"start\":22,\"end\":24,\"text\":\"原理\",\"label\":\"K\"},{\"start\":25,\"end\":27,\"text\":\"危害\",\"label\":\"K\"},{\"start\":28,\"end\":32,\"text\":\"利用方式\",\"label\":\"S\"},{\"start\":33,\"end\":37,\"text\":\"修复方案\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取Web及移动端安全漏洞相关知识，以及漏洞利用和修复方法。\",\"issues\":[]},{\"id\":\"sp10k-01169\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"逻辑分析能力\",\"label\":\"T\"},{\"start\":11,\"end\":17,\"text\":\"沟通表达能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取逻辑分析和沟通表达两项通用能力。\",\"issues\":[]},{\"id\":\"sp10k-01170\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报考流程、报名限制及材料真实性要求，不属于候选人职业能力、知识或资格提及。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01161",
+        "spans": [
+          {
+            "start": 3,
+            "end": 12,
+            "text": "门店系统平台的管理",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 21,
+            "text": "后台数据维护更新",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "text": "培训",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 36,
+            "text": "解答系统操作人员的问题",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 41,
+            "text": "统计数据",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 46,
+            "text": "汇报给领导",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取系统管理、数据维护、培训、问题解答、数据统计及汇报等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01162",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "服从管理",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "语言表达能力",
+            "label": "T"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "text": "团队管理能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取责任特质、服从管理及表达和团队管理能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01163",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "网络设备",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "text": "服务器",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 20,
+            "text": "运行监控与管理",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "网络配置",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取网络设备和服务器运维、运行监控管理及网络配置活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01164",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "专科以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "全日制院校毕业不是明确的完整学历资格名；标注专科以上学历。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01165",
+        "spans": [
+          {
+            "start": 39,
+            "end": 46,
+            "text": "马克思主义理论",
+            "label": "K"
+          },
+          {
+            "start": 46,
+            "end": 51,
+            "text": "博士研究生",
+            "label": "K"
+          },
+          {
+            "start": 105,
+            "end": 112,
+            "text": "马克思主义理论",
+            "label": "K"
+          },
+          {
+            "start": 113,
+            "end": 117,
+            "text": "中国哲学",
+            "label": "K"
+          },
+          {
+            "start": 118,
+            "end": 122,
+            "text": "外国哲学",
+            "label": "K"
+          },
+          {
+            "start": 123,
+            "end": 126,
+            "text": "政治学",
+            "label": "K"
+          },
+          {
+            "start": 127,
+            "end": 130,
+            "text": "历史学",
+            "label": "K"
+          },
+          {
+            "start": 130,
+            "end": 135,
+            "text": "博士研究生",
+            "label": "K"
+          },
+          {
+            "start": 188,
+            "end": 191,
+            "text": "心理学",
+            "label": "K"
+          },
+          {
+            "start": 191,
+            "end": 196,
+            "text": "博士研究生",
+            "label": "K"
+          },
+          {
+            "start": 249,
+            "end": 252,
+            "text": "教育学",
+            "label": "K"
+          },
+          {
+            "start": 253,
+            "end": 256,
+            "text": "心理学",
+            "label": "K"
+          },
+          {
+            "start": 257,
+            "end": 263,
+            "text": "课程与教学论",
+            "label": "K"
+          },
+          {
+            "start": 263,
+            "end": 268,
+            "text": "博士研究生",
+            "label": "K"
+          },
+          {
+            "start": 317,
+            "end": 320,
+            "text": "教育学",
+            "label": "K"
+          },
+          {
+            "start": 325,
+            "end": 328,
+            "text": "心理学",
+            "label": "K"
+          },
+          {
+            "start": 328,
+            "end": 333,
+            "text": "博士研究生",
+            "label": "K"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "抽取招聘表中的专业领域和学历资格；部分长文本表格边界及最后一行因原文截断存在索引核验需求。",
+        "issues": [
+          {
+            "kind": "boundary",
+            "text": "设岗学院岗位所需专业学历学位招聘人数岗位类别学院联系人电话及邮箱",
+            "alternatives": [
+              "按表格字段逐项抽取",
+              "将字段与相邻单元格合并判断"
+            ],
+            "reason": "原文缺少结构化分隔符，表格单元格边界主要依赖局部格式。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-01166",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "网络系统基础",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "网络拓扑结构",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "网络设备",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "text": "设置管理",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 48,
+            "text": "排除故障",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取网络基础和拓扑知识，以及网络设备配置管理、故障排除活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01167",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "业务数据开发",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "报表数据需求",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取业务数据开发活动及报表数据需求知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01168",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "Web/移动端",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "安全漏洞",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 19,
+            "text": "原理",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "危害",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "利用方式",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "修复方案",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取Web及移动端安全漏洞相关知识，以及漏洞利用和修复方法。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01169",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "逻辑分析能力",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "text": "沟通表达能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取逻辑分析和沟通表达两项通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01170",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报考流程、报名限制及材料真实性要求，不属于候选人职业能力、知识或资格提及。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 117,
+  "ids": [
+    "sp10k-01161",
+    "sp10k-01162",
+    "sp10k-01163",
+    "sp10k-01164",
+    "sp10k-01165",
+    "sp10k-01166",
+    "sp10k-01167",
+    "sp10k-01168",
+    "sp10k-01169",
+    "sp10k-01170"
+  ],
+  "at": "2026-09-13T15:31:39.161530+00:00"
+}

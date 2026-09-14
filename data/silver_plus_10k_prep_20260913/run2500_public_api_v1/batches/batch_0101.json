@@ -1,0 +1,255 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 47.353,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5013,
+    "completion_tokens": 1525,
+    "total_tokens": 6538,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 785
+    },
+    "input_tokens": 5013,
+    "output_tokens": 1525,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01004",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            13
+          ],
+          "to": [
+            5,
+            11
+          ],
+          "text": "物流仓储知识"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01009",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            6,
+            14
+          ],
+          "to": [
+            6,
+            13
+          ],
+          "text": "销售电子元器件"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01001\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅涉及资格审查确认、面试通知及时间地点安排，属于报考行政流程。\",\"issues\":[]},{\"id\":\"sp10k-01002\",\"spans\":[{\"start\":18,\"end\":22,\"text\":\"语言表达\",\"label\":\"T\"},{\"start\":23,\"end\":27,\"text\":\"综合分析\",\"label\":\"T\"},{\"start\":28,\"end\":32,\"text\":\"应急处理\",\"label\":\"T\"},{\"start\":33,\"end\":39,\"text\":\"沟通交往能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取面试所测试的语言表达、综合分析、应急处理和沟通交往等通用能力；仪表气质及综合素质不作为能力跨度标注。\",\"issues\":[]},{\"id\":\"sp10k-01003\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅列举报名或资格审查所需证明材料，不属于候选人能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01004\",\"spans\":[{\"start\":5,\"end\":13,\"text\":\"物流仓储知识\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求具备物流仓储领域知识。\",\"issues\":[]},{\"id\":\"sp10k-01005\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"医学门类\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"专业要求中的医学领域类别，按领域知识或专业资格相关提及标注。\",\"issues\":[]},{\"id\":\"sp10k-01006\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅涉及现场资格复审的时间、地点通知，属于报考行政流程。\",\"issues\":[]},{\"id\":\"sp10k-01007\",\"spans\":[{\"start\":2,\"end\":27,\"text\":\"终端设备（PC、笔记本、复印机、打印机、扫描仪等）\",\"label\":\"S\"},{\"start\":28,\"end\":30,\"text\":\"维护\",\"label\":\"S\"},{\"start\":31,\"end\":33,\"text\":\"管理\",\"label\":\"S\"},{\"start\":34,\"end\":38,\"text\":\"故障排除\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"终端设备及其列举的岗位现用设备构成职业工具语境，维护、管理和故障排除为明确职业动作。\",\"issues\":[]},{\"id\":\"sp10k-01008\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅涉及违规行为、考试或聘用资格取消及责任承担，不属于候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01009\",\"spans\":[{\"start\":4,\"end\":6,\"text\":\"推广\",\"label\":\"S\"},{\"start\":6,\"end\":14,\"text\":\"销售电子元器件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"推广和销售电子元器件是明确的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01010\",\"spans\":[{\"start\":11,\"end\":15,\"text\":\"文化程度\",\"label\":\"K\"},{\"start\":16,\"end\":20,\"text\":\"工作能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"文化程度属于资格要求，工作能力属于泛化可迁移能力。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01001",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅涉及资格审查确认、面试通知及时间地点安排，属于报考行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01002",
+        "spans": [
+          {
+            "start": 18,
+            "end": 22,
+            "text": "语言表达",
+            "label": "T"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "综合分析",
+            "label": "T"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "应急处理",
+            "label": "T"
+          },
+          {
+            "start": 33,
+            "end": 39,
+            "text": "沟通交往能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取面试所测试的语言表达、综合分析、应急处理和沟通交往等通用能力；仪表气质及综合素质不作为能力跨度标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01003",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅列举报名或资格审查所需证明材料，不属于候选人能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01004",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "物流仓储知识",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求具备物流仓储领域知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01005",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "医学门类",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业要求中的医学领域类别，按领域知识或专业资格相关提及标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01006",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅涉及现场资格复审的时间、地点通知，属于报考行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01007",
+        "spans": [
+          {
+            "start": 2,
+            "end": 27,
+            "text": "终端设备（PC、笔记本、复印机、打印机、扫描仪等）",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 30,
+            "text": "维护",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 33,
+            "text": "管理",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "text": "故障排除",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "终端设备及其列举的岗位现用设备构成职业工具语境，维护、管理和故障排除为明确职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01008",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅涉及违规行为、考试或聘用资格取消及责任承担，不属于候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01009",
+        "spans": [
+          {
+            "start": 4,
+            "end": 6,
+            "text": "推广",
+            "label": "S"
+          },
+          {
+            "start": 6,
+            "end": 13,
+            "text": "销售电子元器件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "推广和销售电子元器件是明确的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01010",
+        "spans": [
+          {
+            "start": 11,
+            "end": 15,
+            "text": "文化程度",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "工作能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文化程度属于资格要求，工作能力属于泛化可迁移能力。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 101,
+  "ids": [
+    "sp10k-01001",
+    "sp10k-01002",
+    "sp10k-01003",
+    "sp10k-01004",
+    "sp10k-01005",
+    "sp10k-01006",
+    "sp10k-01007",
+    "sp10k-01008",
+    "sp10k-01009",
+    "sp10k-01010"
+  ],
+  "at": "2026-09-13T15:15:12.979952+00:00"
+}

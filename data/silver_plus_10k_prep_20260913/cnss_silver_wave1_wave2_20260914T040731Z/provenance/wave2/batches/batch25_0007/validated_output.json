@@ -1,0 +1,468 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03853",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "用友",
+          "label": "S"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "金蝶",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "浪潮",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "财务软件实施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件名受实施经验限定；实施活动去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03854",
+      "spans": [
+        {
+          "start": 24,
+          "end": 31,
+          "text": "中专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 37,
+          "text": "艺术类专业",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历和专业要求；性别、年龄及住宿要求不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03855",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "专业对照表标题，未提出候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03856",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应聘资格审查及违规处理程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03857",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名填报及材料真实性要求，不属于职业能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03858",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "排除网络故障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确网络故障处理职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03859",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "同等对待报考者的材料提供与资格核验程序，未独立提出岗位能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03860",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "PC机硬件维护",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "故障维修",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分硬件维护与故障维修；不改写原文中间的“机”字。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03861",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "Linux系统",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "sed",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "text": "awk",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 36,
+          "text": "shell",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 43,
+          "text": "Python",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作系统、脚本工具及编程语言处于岗位工具栈语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03862",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "人才引进程序调整及公告发布安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03863",
+      "spans": [
+        {
+          "start": 33,
+          "end": 37,
+          "text": "综合分析",
+          "label": "T"
+        },
+        {
+          "start": 38,
+          "end": 42,
+          "text": "团结协作",
+          "label": "T"
+        },
+        {
+          "start": 43,
+          "end": 47,
+          "text": "组织协调",
+          "label": "T"
+        },
+        {
+          "start": 48,
+          "end": 52,
+          "text": "职业道德",
+          "label": "T"
+        },
+        {
+          "start": 53,
+          "end": 57,
+          "text": "应变能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "面试安排中明确列出对候选人考核的通用能力与职业素质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03864",
+      "spans": [
+        {
+          "start": 4,
+          "end": 18,
+          "text": "docker/k8s平台部署",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "监控",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "维护",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 41,
+          "text": "应用容器化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "平台部署、监控、维护和应用容器化为可独立拆分的职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03865",
+      "spans": [
+        {
+          "start": 2,
+          "end": 21,
+          "text": "处理公司OA系统在使用中出现的各类问题",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "分类汇总",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "问题处理保留必要系统对象；分类汇总由局部语境限定对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03866",
+      "spans": [
+        {
+          "start": 14,
+          "end": 16,
+          "text": "巡检",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 34,
+          "text": "解决项目运维遇到的各类技术问题",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 50,
+          "text": "反馈",
+          "label": "T"
+        },
+        {
+          "start": 51,
+          "end": 53,
+          "text": "沟通",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "巡检及技术问题解决为职业技能；向公司和厂商反馈、沟通为通用协作能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03867",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名表填写及证明材料提交程序，未给出具体职业资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03868",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名专业名称与证书一致性的行政核验要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03869",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "身体条件排除；泛称工作能力的标注范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "符合职位要求的工作能力",
+          "alternatives": [
+            "纳入：工作能力作为通用能力要求",
+            "排除：未具体说明能力内容的资格套语"
+          ],
+          "reason": "未提供职位或具体能力内容，协议未明确泛称工作能力是否构成独立提及。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03870",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "门店监控及其他设备的维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列设备共享维护动作，保留完整职责跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03871",
+      "spans": [
+        {
+          "start": 3,
+          "end": 8,
+          "text": "数据库技术",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 19,
+          "text": "MySQL",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 29,
+          "text": "SqlServer",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 35,
+          "text": "Redis",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "具体数据库明确要求运用；数据库技术的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "数据库技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指数据库知识体系，也可指实践技术；后接工具运用，但未明确该概括提及的知识或操作属性。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03872",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅指向未提供的职位表，未列明学历或专业要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03873",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "任职年限及核验安排不标；特定在岗身份的范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "在岗城市社区党组织书记",
+          "alternatives": [
+            "纳入：特定任职资格或职业经历要求",
+            "排除：招聘对象的在岗身份限制"
+          ],
+          "reason": "该片段限定招聘对象身份，未明确能力或知识；协议未规定此类在岗职务身份是否作为资格提及。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03874",
+      "spans": [
+        {
+          "start": 14,
+          "end": 16,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 37,
+          "text": "办理集团和集团客户的政策补贴",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 45,
+          "text": "孵化园资质认定",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "政府渠道沟通为T；补贴办理及资质认定为具体职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03875",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘人数及计划表索引，未列出具体候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03876",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求身体健康及身体条件，不从其引用条例抽取知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03877",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "Hbase",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 19,
+          "text": "Cassandra",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 42,
+          "text": "大规模时序数据的存储技术",
+          "label": "S"
+        },
+        {
+          "start": 47,
+          "end": 51,
+          "text": "项目开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "存储工具与技术受实际开发实践语境限定；项目开发去除经验后活动意义完整。",
+      "issues": []
+    }
+  ]
+}

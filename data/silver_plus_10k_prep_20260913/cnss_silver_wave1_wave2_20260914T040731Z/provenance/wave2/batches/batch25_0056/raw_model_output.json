@@ -1,0 +1,563 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05134",
+      "spans": [
+        {
+          "start": 13,
+          "end": 17,
+          "text": "政治素质",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "道德品行",
+          "label": "T"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "心理素质",
+          "label": "T"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "遵纪守法",
+          "label": "T"
+        },
+        {
+          "start": 46,
+          "end": 50,
+          "text": "廉洁自律",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取考察人选的具体素质要求；泛化能力、表现及匹配度不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05135",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "大数据组件",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "hadoop",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "text": "spark",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "hive",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "组件类别及具体工具按岗位工具要求标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05136",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "大数据开发环境的运维",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "性能调优",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 25,
+          "text": "spark",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 31,
+          "text": "HBase",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 37,
+          "text": "kafka",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分运维、调优及其使用的工具。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05137",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "IT设备日常维护",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "异常处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "异常处理承接IT设备维护对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05138",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 13,
+          "text": "电子商务专业",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "市场营销专业",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 35,
+          "text": "互联网平台产品站运营",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历与专业为K；运营活动去除年限及经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05139",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "团队培训",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "管理",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 23,
+          "text": "激励和协调项目成员",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 32,
+          "text": "执行力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "培训为职业活动；团队管理、激励协调和执行力为通用能力；完成质量为结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05140",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "网络管理",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "信息管理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历及并列专业名为K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05141",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "低压配电产品",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 24,
+          "text": "开关电源、逆变器的工作原理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "产品知识及工作原理为K；保留两类设备共享的原理中心语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05142",
+      "spans": [
+        {
+          "start": 12,
+          "end": 14,
+          "text": "运维",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 36,
+          "text": "维护公司各平台软件在客户单位的正常运行",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 47,
+          "text": "解决客户各种突发问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "驻场地点不标；抽取软件运维、维护及承接该业务对象的问题处理。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05143",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘考试豁免和面试流程，学历用于区分流程对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05144",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "公司产品",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "客服工作要求",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确要求掌握的产品知识和客服工作要求；掌握等触发词不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05145",
+      "spans": [
+        {
+          "start": 0,
+          "end": 10,
+          "text": "全日制本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "数学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格，拆分专业名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05146",
+      "spans": [
+        {
+          "start": 9,
+          "end": 11,
+          "text": "部署",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "测试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "部署和测试分别为职业动作，共享系统更新包对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05147",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "软件开发",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件开发处于专业学历语境，按专业名标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05148",
+      "spans": [
+        {
+          "start": 28,
+          "end": 41,
+          "text": "教学实验室的日常及安全管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "实验室管理为明确职业职能；保留共享管理中心语，机构名称不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05150",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列招聘栏目与岗位名称，未表达具体能力或执行职责要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05151",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘资格审查及通知程序，未明确为候选人的招聘执行职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05152",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "思科或华为设备配置",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备配置为职业操作；保留品牌并列项共享的设备配置成分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05153",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "数据处理工具",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确使用语境中的工具类别为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05154",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明报名、打印及资格复审手续。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05155",
+      "spans": [
+        {
+          "start": 6,
+          "end": 17,
+          "text": "服务器和存储的硬件架构",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "基本管理方法",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 36,
+          "text": "服务器存储的拆装",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "动手能力",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "硬件架构为知识；拆装及其限定的动手能力为S；管理方法类型暂待裁决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "基本管理方法",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指概括性管理知识体系，也可指可执行的设备管理方法；熟悉及后续拆装要求不足以确定此处语义，S仅为占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05156",
+      "spans": [
+        {
+          "start": 11,
+          "end": 19,
+          "text": "后台业务接口开发",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "Python",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "JAVA",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取接口开发及明确用于开发的编程工具。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05157",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "SQL",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "text": "数据库产品",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "svn",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 24,
+          "text": "git",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "配置管理工具",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库与配置管理工具处于岗位工具要求语境，去除主流等非核心修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05158",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "集团内部系统的日常运营",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统运营为职业活动；确保安全、合规和稳定为结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05159",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告解释权限及联系方式说明，不含候选人要求。",
+      "issues": []
+    }
+  ]
+}

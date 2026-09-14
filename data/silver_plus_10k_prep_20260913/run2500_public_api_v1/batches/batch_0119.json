@@ -1,0 +1,211 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 32.087,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5049,
+    "completion_tokens": 977,
+    "total_tokens": 6026,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 275
+    },
+    "input_tokens": 5049,
+    "output_tokens": 977,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01181\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"本科\",\"label\":\"K\"},{\"start\":3,\"end\":10,\"text\":\"计算机相关专业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历与明确专业要求标K；泛化工作经验及年限不标。\",\"issues\":[]},{\"id\":\"sp10k-01182\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"工作细致\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"认真负责\",\"label\":\"T\"},{\"start\":19,\"end\":23,\"text\":\"服务意识\",\"label\":\"T\"},{\"start\":24,\"end\":30,\"text\":\"服从工作安排\",\"label\":\"T\"},{\"start\":31,\"end\":35,\"text\":\"顾全大局\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"工作态度、服务意识及协作特质标T；身体健康不标。\",\"issues\":[]},{\"id\":\"sp10k-01183\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明面试考查安排，未给出具体能力或知识要求。\",\"issues\":[]},{\"id\":\"sp10k-01184\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅有招聘人数、岗位名称及附件指引，无具体能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01185\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于报考材料提交与学历核验程序，未明确具体学历资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01186\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为章节引导及岗位名称，未展开职业活动或任职要求。\",\"issues\":[]},{\"id\":\"sp10k-01187\",\"spans\":[{\"start\":7,\"end\":27,\"text\":\"软件系统、硬件系统、机房、网络的正常运转\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"负责正常运转在此表达系统与基础设施运行职责；并列对象共享运行职能，保留完整跨度。\",\"issues\":[]},{\"id\":\"sp10k-01188\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"人员培训\",\"label\":\"S\"},{\"start\":11,\"end\":24,\"text\":\"项目的知识、技术和技能培训\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"人员培训及其具体项目培训活动均为职业职责；后项共享培训中心词，保留完整短语。\",\"issues\":[]},{\"id\":\"sp10k-01189\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅列报考学历核验材料及打印来源，不属于候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01190\",\"spans\":[{\"start\":3,\"end\":5,\"text\":\"高中\",\"label\":\"K\"},{\"start\":6,\"end\":8,\"text\":\"中专\",\"label\":\"K\"},{\"start\":9,\"end\":11,\"text\":\"大专\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"报考条件中明确列出的学历层次标K；生源地和户籍限制不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01181",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "本科",
+            "label": "K"
+          },
+          {
+            "start": 3,
+            "end": 10,
+            "text": "计算机相关专业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历与明确专业要求标K；泛化工作经验及年限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01182",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "工作细致",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "认真负责",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "服务意识",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "服从工作安排",
+            "label": "T"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "text": "顾全大局",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "工作态度、服务意识及协作特质标T；身体健康不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01183",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明面试考查安排，未给出具体能力或知识要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01184",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅有招聘人数、岗位名称及附件指引，无具体能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01185",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于报考材料提交与学历核验程序，未明确具体学历资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01186",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为章节引导及岗位名称，未展开职业活动或任职要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01187",
+        "spans": [
+          {
+            "start": 7,
+            "end": 27,
+            "text": "软件系统、硬件系统、机房、网络的正常运转",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "负责正常运转在此表达系统与基础设施运行职责；并列对象共享运行职能，保留完整跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01188",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "人员培训",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 24,
+            "text": "项目的知识、技术和技能培训",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "人员培训及其具体项目培训活动均为职业职责；后项共享培训中心词，保留完整短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01189",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅列报考学历核验材料及打印来源，不属于候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01190",
+        "spans": [
+          {
+            "start": 3,
+            "end": 5,
+            "text": "高中",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "text": "中专",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "大专",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "报考条件中明确列出的学历层次标K；生源地和户籍限制不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 119,
+  "ids": [
+    "sp10k-01181",
+    "sp10k-01182",
+    "sp10k-01183",
+    "sp10k-01184",
+    "sp10k-01185",
+    "sp10k-01186",
+    "sp10k-01187",
+    "sp10k-01188",
+    "sp10k-01189",
+    "sp10k-01190"
+  ],
+  "at": "2026-09-13T15:33:01.193724+00:00"
+}

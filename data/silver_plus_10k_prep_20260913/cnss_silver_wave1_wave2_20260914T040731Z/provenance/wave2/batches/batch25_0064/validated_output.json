@@ -1,0 +1,520 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05342",
+      "spans": [
+        {
+          "start": 10,
+          "end": 18,
+          "text": "Helpdesk",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "Helpdesk为内部支持职业职能，去除工作等泛化后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05343",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "社群的日常运维",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "挖掘客户需求",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 28,
+          "text": "与客户进行高效互动",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "社群运维和需求挖掘为职业动作，客户互动为人际沟通能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05344",
+      "spans": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "责任感",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "敬业精神",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "公平公正",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "做事严谨",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "抗压能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用职业特质，排除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05345",
+      "spans": [
+        {
+          "start": 7,
+          "end": 13,
+          "text": "现场业务支持",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "电话业务支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取两类业务支持活动；保障系统稳定运行为结果承诺。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05346",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "zabbix",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "监控服务配置",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "管理",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "维护",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 31,
+          "text": "mysql",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 39,
+          "text": "mangodb",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 45,
+          "text": "redis",
+          "label": "S"
+        },
+        {
+          "start": 54,
+          "end": 58,
+          "text": "部署搭建",
+          "label": "S"
+        },
+        {
+          "start": 59,
+          "end": 61,
+          "text": "优化",
+          "label": "S"
+        },
+        {
+          "start": 66,
+          "end": 71,
+          "text": "shell",
+          "label": "S"
+        },
+        {
+          "start": 72,
+          "end": 78,
+          "text": "python",
+          "label": "S"
+        },
+        {
+          "start": 81,
+          "end": 102,
+          "text": "使用python开发过至少一个工具或者项目",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工具与配置、维护、部署、开发均有明确实践语境；并列动作承接局部对象，保留原文拼写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05347",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "中心业务人员的培训",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "业务人员培训为明确职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05348",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明考察空缺的递补程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05349",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明报名信息修改和重新审核程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05350",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明面试资格空缺的递补规则。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05351",
+      "spans": [
+        {
+          "start": 1,
+          "end": 4,
+          "text": "MES",
+          "label": "S"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "ERP",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "实施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件名受明确实施经验限定；实施承接软件对象，去除经验后活动意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05352",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明考察不合格后的聘用处理程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05353",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为违法违纪等报考排除条件，不含能力、知识或资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05354",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "组织、督导工厂周/月存货盘点",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 26,
+          "text": "生产运营管理诊断",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "盘点组织督导保留共享职业对象，另拆运营管理诊断。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05355",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "大专及本科以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留原文学历资格表述；年限及泛化相关工作经验不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05356",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明取消聘用资格的处理结果。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05357",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "计算机应用",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "操作能力",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 27,
+          "text": "Office系统",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "text": "办公网络系统",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 43,
+          "text": "基础统计软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作能力承接计算机对象；各系统和软件处于办公应用语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05358",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "全文为生活补助标准，其中学历和院校仅用于福利分档。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05359",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "word",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 12,
+          "text": "excel",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取办公工具名，保留原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05360",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名证件照格式和文件大小要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05361",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "绩效结果分析",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 29,
+          "text": "组织各部门开展绩效指标检讨",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 32,
+          "text": "修订",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为绩效管理职业活动；修订承接绩效指标对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05362",
+      "spans": [
+        {
+          "start": 6,
+          "end": 15,
+          "text": "后台服务器需求分析",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 25,
+          "text": "设计搭建后台服务器",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "需求分析为独立职责；设计搭建保留共享服务器对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05363",
+      "spans": [
+        {
+          "start": 13,
+          "end": 23,
+          "text": "综合分析解决问题能力",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "组织协调能力",
+          "label": "T"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "text": "情景应变能力",
+          "label": "T"
+        },
+        {
+          "start": 38,
+          "end": 44,
+          "text": "言语表达能力",
+          "label": "T"
+        },
+        {
+          "start": 55,
+          "end": 59,
+          "text": "适岗能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "面试考察明确列出候选人通用能力；仪态仪表排除，综合素质为概括语不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05364",
+      "spans": [
+        {
+          "start": 0,
+          "end": 11,
+          "text": "健全、完善相关制度体系",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 36,
+          "text": "接待、差旅、外事、信息发布等制度制订",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 39,
+          "text": "执行",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "制度建设、制订和执行为职业活动；并列制度类别保留共享中心，执行承接制度对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05365",
+      "spans": [
+        {
+          "start": 0,
+          "end": 13,
+          "text": "制定团队专业经理人打造计划",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "人员培养计划制定为职业动作；提升成员专业技能仅为目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05366",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "思考能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 15,
+          "text": "业务企图心",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用能力或职业动机特质，去除程度词。",
+      "issues": []
+    }
+  ]
+}

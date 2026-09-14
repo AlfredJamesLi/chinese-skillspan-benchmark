@@ -1,0 +1,258 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 49.617,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5019,
+    "completion_tokens": 1558,
+    "total_tokens": 6577,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 614
+    },
+    "input_tokens": 5019,
+    "output_tokens": 1558,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00021\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"环保局业务\",\"label\":\"K\"},{\"start\":10,\"end\":14,\"text\":\"C#语言\",\"label\":\"S\"},{\"start\":16,\"end\":26,\"text\":\".Net平台项目开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"业务知识标K，编程语言及平台项目开发标S；去除要求触发词、经验与优先修饰。\",\"issues\":[]},{\"id\":\"sp10k-00022\",\"spans\":[{\"start\":0,\"end\":10,\"text\":\"全日制本科及以上学历\",\"label\":\"K\"},{\"start\":11,\"end\":14,\"text\":\"计算机\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格与明确专业名；泛化工作经验及年限不标。\",\"issues\":[]},{\"id\":\"sp10k-00023\",\"spans\":[{\"start\":9,\"end\":15,\"text\":\"本科以上学历\",\"label\":\"K\"},{\"start\":16,\"end\":19,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":20,\"end\":22,\"text\":\"通信\",\"label\":\"K\"},{\"start\":23,\"end\":25,\"text\":\"控制\",\"label\":\"K\"},{\"start\":26,\"end\":30,\"text\":\"机械电子\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历及并列专业名标K；毕业届别和应届身份不作为能力、知识或资格名抽取。\",\"issues\":[]},{\"id\":\"sp10k-00024\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报考信息真实性及资格复审材料一致性的行政流程要求。\",\"issues\":[]},{\"id\":\"sp10k-00025\",\"spans\":[],\"status\":\"adjudication_required\",\"note\":\"仅列出内容主题，无法确定是候选人知识要求还是考试、培训等内容介绍。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"内容主要为教育学、专业知识、心理学等\",\"alternatives\":[\"候选人知识要求，抽取明确知识名称\",\"考试或培训内容介绍，不抽取\"],\"reason\":\"缺少“内容”所指对象及要求语境，不能确认这些主题属于候选人须具备的知识。\"}]},{\"id\":\"sp10k-00026\",\"spans\":[{\"start\":5,\"end\":10,\"text\":\"数据库优化\",\"label\":\"S\"},{\"start\":11,\"end\":13,\"text\":\"维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库优化与维护为可拆分的职业动作；维护的对象由局部上下文承接。\",\"issues\":[]},{\"id\":\"sp10k-00027\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅泛指其他资格条件，未出现可抽取的具体资格或能力提及。\",\"issues\":[]},{\"id\":\"sp10k-00028\",\"spans\":[{\"start\":4,\"end\":22,\"text\":\"编写运维体系文档以及各类总结汇报文件\",\"label\":\"S\"},{\"start\":26,\"end\":51,\"text\":\"制定电气专业（含弱电）的各类制度、流程、标准、规范\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"文档编写和专业制度制定为独立职业活动；各活动内部保留共享动作及必要对象，不嵌套抽取专业知识。\",\"issues\":[]},{\"id\":\"sp10k-00029\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明选拔测试成绩的组成与比例，不是候选人能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00030\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"电脑软硬件询价\",\"label\":\"S\"},{\"start\":10,\"end\":12,\"text\":\"安装\",\"label\":\"S\"},{\"start\":13,\"end\":17,\"text\":\"领用登记\",\"label\":\"S\"},{\"start\":18,\"end\":23,\"text\":\"资产出入库\",\"label\":\"S\"},{\"start\":24,\"end\":30,\"text\":\"资产盘点管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分可独立理解的资产管理职业活动；安装与领用登记的对象由局部电脑软硬件语境限定。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00021",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "环保局业务",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "C#语言",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 26,
+            "text": ".Net平台项目开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "业务知识标K，编程语言及平台项目开发标S；去除要求触发词、经验与优先修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00022",
+        "spans": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "全日制本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "text": "计算机",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格与明确专业名；泛化工作经验及年限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00023",
+        "spans": [
+          {
+            "start": 9,
+            "end": 15,
+            "text": "本科以上学历",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "通信",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "控制",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "机械电子",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历及并列专业名标K；毕业届别和应届身份不作为能力、知识或资格名抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00024",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报考信息真实性及资格复审材料一致性的行政流程要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00025",
+        "spans": [],
+        "status": "adjudication_required",
+        "note": "仅列出内容主题，无法确定是候选人知识要求还是考试、培训等内容介绍。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "内容主要为教育学、专业知识、心理学等",
+            "alternatives": [
+              "候选人知识要求，抽取明确知识名称",
+              "考试或培训内容介绍，不抽取"
+            ],
+            "reason": "缺少“内容”所指对象及要求语境，不能确认这些主题属于候选人须具备的知识。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00026",
+        "spans": [
+          {
+            "start": 5,
+            "end": 10,
+            "text": "数据库优化",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 13,
+            "text": "维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库优化与维护为可拆分的职业动作；维护的对象由局部上下文承接。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00027",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅泛指其他资格条件，未出现可抽取的具体资格或能力提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00028",
+        "spans": [
+          {
+            "start": 4,
+            "end": 22,
+            "text": "编写运维体系文档以及各类总结汇报文件",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 51,
+            "text": "制定电气专业（含弱电）的各类制度、流程、标准、规范",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文档编写和专业制度制定为独立职业活动；各活动内部保留共享动作及必要对象，不嵌套抽取专业知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00029",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明选拔测试成绩的组成与比例，不是候选人能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00030",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "电脑软硬件询价",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "安装",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "领用登记",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 23,
+            "text": "资产出入库",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "资产盘点管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分可独立理解的资产管理职业活动；安装与领用登记的对象由局部电脑软硬件语境限定。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 3,
+  "ids": [
+    "sp10k-00021",
+    "sp10k-00022",
+    "sp10k-00023",
+    "sp10k-00024",
+    "sp10k-00025",
+    "sp10k-00026",
+    "sp10k-00027",
+    "sp10k-00028",
+    "sp10k-00029",
+    "sp10k-00030"
+  ],
+  "at": "2026-09-13T13:56:23.832966+00:00"
+}

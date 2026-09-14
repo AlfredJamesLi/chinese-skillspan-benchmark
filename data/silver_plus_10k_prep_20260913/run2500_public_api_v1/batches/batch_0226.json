@@ -1,0 +1,1011 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 40.703,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5030,
+    "completion_tokens": 1733,
+    "total_tokens": 6763,
+    "prompt_tokens_details": {
+      "cached_tokens": 4864,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 411
+    },
+    "input_tokens": 5030,
+    "output_tokens": 1733,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06056",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            6
+          ],
+          "to": [
+            4,
+            7
+          ],
+          "text": "制造业"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            6,
+            10
+          ],
+          "to": [
+            7,
+            11
+          ],
+          "text": "成本会计"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "成本分析"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            21,
+            26
+          ],
+          "to": [
+            23,
+            28
+          ],
+          "text": "消费类电子"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            27,
+            31
+          ],
+          "to": [
+            29,
+            33
+          ],
+          "text": "精密加工"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            32,
+            36
+          ],
+          "to": [
+            34,
+            38
+          ],
+          "text": "特种材料"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            41,
+            45
+          ],
+          "to": [
+            42,
+            46
+          ],
+          "text": "项目运营"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            51,
+            55
+          ],
+          "to": [
+            52,
+            56
+          ],
+          "text": "生产模式"
+        },
+        {
+          "i": 8,
+          "action": "snapped",
+          "from": [
+            56,
+            60
+          ],
+          "to": [
+            57,
+            61
+          ],
+          "text": "成本特点"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06057",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            7
+          ],
+          "to": [
+            2,
+            10
+          ],
+          "text": "敏锐的数据洞察力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            16
+          ],
+          "to": [
+            14,
+            17
+          ],
+          "text": "责任心"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            20
+          ],
+          "to": [
+            18,
+            21
+          ],
+          "text": "自驱力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            21,
+            24
+          ],
+          "to": [
+            22,
+            25
+          ],
+          "text": "执行力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06058",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            12
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "解决机器人硬件故障"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            25
+          ],
+          "to": [
+            12,
+            22
+          ],
+          "text": "软件BUG、运动异常"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            26,
+            32
+          ],
+          "to": [
+            23,
+            27
+          ],
+          "text": "通讯故障"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            35,
+            43
+          ],
+          "to": [
+            28,
+            34
+          ],
+          "text": "复杂技术问题"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06059",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            15
+          ],
+          "to": [
+            7,
+            16
+          ],
+          "text": "提高下属的管理能力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            20
+          ],
+          "to": [
+            17,
+            21
+          ],
+          "text": "操作技能"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            21,
+            25
+          ],
+          "to": [
+            22,
+            26
+          ],
+          "text": "品质意识"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            26,
+            28
+          ],
+          "to": [
+            27,
+            29
+          ],
+          "text": "素养"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06060",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            12
+          ],
+          "to": [
+            0,
+            14
+          ],
+          "text": "依据产品要求制订封装工艺流程"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            21
+          ],
+          "to": [
+            15,
+            25
+          ],
+          "text": "制定规范标准作业文件"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06061",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            8
+          ],
+          "to": [
+            0,
+            11
+          ],
+          "text": "贯彻合规及风控制度要求"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            16,
+            20
+          ],
+          "to": [
+            14,
+            18
+          ],
+          "text": "业务品质"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            21,
+            23
+          ],
+          "to": [
+            19,
+            21
+          ],
+          "text": "合规"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06062",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            8
+          ],
+          "text": "企业会计准则"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            9,
+            13
+          ],
+          "text": "税务法规"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            19,
+            21
+          ],
+          "to": [
+            18,
+            20
+          ],
+          "text": "金蝶"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            22,
+            24
+          ],
+          "to": [
+            21,
+            23
+          ],
+          "text": "用友"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            27,
+            30
+          ],
+          "to": [
+            24,
+            29
+          ],
+          "text": "ERP系统"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            31,
+            39
+          ],
+          "to": [
+            30,
+            38
+          ],
+          "text": "高级数据分析功能"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06063",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            23
+          ],
+          "to": [
+            2,
+            16
+          ],
+          "text": "OLED薄膜封装量产技术迭代"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            24,
+            26
+          ],
+          "to": [
+            17,
+            19
+          ],
+          "text": "导入"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06064",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            5,
+            11
+          ],
+          "text": "项目管理能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            19
+          ],
+          "to": [
+            12,
+            20
+          ],
+          "text": "需求资源协调能力"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            44,
+            51
+          ],
+          "to": [
+            44,
+            50
+          ],
+          "text": "确保项目进度"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06065",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            4
+          ],
+          "to": [
+            2,
+            6
+          ],
+          "text": "Mask"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            4,
+            6
+          ],
+          "to": [
+            6,
+            8
+          ],
+          "text": "排版"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            7,
+            11
+          ],
+          "to": [
+            9,
+            15
+          ],
+          "text": "Mark设计"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            12,
+            20
+          ],
+          "to": [
+            16,
+            25
+          ],
+          "text": "测试治工具设计发包"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            22,
+            34
+          ],
+          "to": [
+            28,
+            39
+          ],
+          "text": "PHTMask设计发包"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06056\",\"spans\":[{\"start\":3,\"end\":6,\"text\":\"制造业\",\"label\":\"K\"},{\"start\":6,\"end\":10,\"text\":\"成本会计\",\"label\":\"S\"},{\"start\":11,\"end\":15,\"text\":\"成本分析\",\"label\":\"S\"},{\"start\":21,\"end\":26,\"text\":\"消费类电子\",\"label\":\"K\"},{\"start\":27,\"end\":31,\"text\":\"精密加工\",\"label\":\"K\"},{\"start\":32,\"end\":36,\"text\":\"特种材料\",\"label\":\"K\"},{\"start\":41,\"end\":45,\"text\":\"项目运营\",\"label\":\"S\"},{\"start\":51,\"end\":55,\"text\":\"生产模式\",\"label\":\"K\"},{\"start\":56,\"end\":60,\"text\":\"成本特点\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确行业、职业活动及生产和成本领域知识；年限和经验后缀不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-06057\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"敏锐的数据洞察力\",\"label\":\"T\"},{\"start\":13,\"end\":16,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":17,\"end\":20,\"text\":\"自驱力\",\"label\":\"T\"},{\"start\":21,\"end\":24,\"text\":\"执行力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为候选人的通用能力或个人特质。\",\"issues\":[]},{\"id\":\"sp10k-06058\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"解决机器人硬件故障\",\"label\":\"S\"},{\"start\":13,\"end\":25,\"text\":\"软件BUG、运动异常\",\"label\":\"S\"},{\"start\":26,\"end\":32,\"text\":\"通讯故障\",\"label\":\"S\"},{\"start\":35,\"end\":43,\"text\":\"复杂技术问题\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"现场解决各类机器人技术问题属于明确职业动作；按独立问题提及拆分。\",\"issues\":[]},{\"id\":\"sp10k-06059\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"制定培训计划\",\"label\":\"S\"},{\"start\":7,\"end\":15,\"text\":\"提高下属的管理能力\",\"label\":\"T\"},{\"start\":16,\"end\":20,\"text\":\"操作技能\",\"label\":\"S\"},{\"start\":21,\"end\":25,\"text\":\"品质意识\",\"label\":\"T\"},{\"start\":26,\"end\":28,\"text\":\"素养\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取培训计划制定及培养下属能力、技能和意识的职业活动或通用能力。\",\"issues\":[]},{\"id\":\"sp10k-06060\",\"spans\":[{\"start\":0,\"end\":12,\"text\":\"依据产品要求制订封装工艺流程\",\"label\":\"S\"},{\"start\":13,\"end\":21,\"text\":\"制定规范标准作业文件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"均为明确的工艺和作业文件制定活动。\",\"issues\":[]},{\"id\":\"sp10k-06061\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"贯彻合规及风控制度要求\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"业务品质\",\"label\":\"K\"},{\"start\":21,\"end\":23,\"text\":\"合规\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"制度贯彻属于职业动作；业务品质和合规属于领域规范或要求。确保结果本身不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-06062\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"企业会计准则\",\"label\":\"K\"},{\"start\":11,\"end\":15,\"text\":\"税务法规\",\"label\":\"K\"},{\"start\":19,\"end\":21,\"text\":\"金蝶\",\"label\":\"S\"},{\"start\":22,\"end\":24,\"text\":\"用友\",\"label\":\"S\"},{\"start\":27,\"end\":30,\"text\":\"ERP系统\",\"label\":\"S\"},{\"start\":31,\"end\":39,\"text\":\"高级数据分析功能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"会计准则和税务法规为领域知识；金蝶、用友、ERP及数据分析功能为岗位使用工具或执行能力。\",\"issues\":[]},{\"id\":\"sp10k-06063\",\"spans\":[{\"start\":2,\"end\":23,\"text\":\"OLED薄膜封装量产技术迭代\",\"label\":\"S\"},{\"start\":24,\"end\":26,\"text\":\"导入\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"均为明确的量产技术实施与改进活动。\",\"issues\":[]},{\"id\":\"sp10k-06064\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"项目管理能力\",\"label\":\"S\"},{\"start\":11,\"end\":19,\"text\":\"需求资源协调能力\",\"label\":\"T\"},{\"start\":25,\"end\":29,\"text\":\"工时评估\",\"label\":\"S\"},{\"start\":30,\"end\":34,\"text\":\"任务分配\",\"label\":\"S\"},{\"start\":35,\"end\":43,\"text\":\"提高团队工作效率\",\"label\":\"T\"},{\"start\":44,\"end\":51,\"text\":\"确保项目进度\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"项目管理、工时评估和任务分配为职业活动；资源协调及团队效率为通用能力。\",\"issues\":[]},{\"id\":\"sp10k-06065\",\"spans\":[{\"start\":2,\"end\":4,\"text\":\"Mask\",\"label\":\"S\"},{\"start\":4,\"end\":6,\"text\":\"排版\",\"label\":\"S\"},{\"start\":7,\"end\":11,\"text\":\"Mark设计\",\"label\":\"S\"},{\"start\":12,\"end\":20,\"text\":\"测试治工具设计发包\",\"label\":\"S\"},{\"start\":22,\"end\":34,\"text\":\"PHTMask设计发包\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"均为明确的排版、设计及发包职业活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06056",
+        "spans": [
+          {
+            "start": 4,
+            "end": 7,
+            "text": "制造业",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "成本会计",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "成本分析",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "text": "消费类电子",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "精密加工",
+            "label": "K"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "text": "特种材料",
+            "label": "K"
+          },
+          {
+            "start": 42,
+            "end": 46,
+            "text": "项目运营",
+            "label": "S"
+          },
+          {
+            "start": 52,
+            "end": 56,
+            "text": "生产模式",
+            "label": "K"
+          },
+          {
+            "start": 57,
+            "end": 61,
+            "text": "成本特点",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确行业、职业活动及生产和成本领域知识；年限和经验后缀不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06057",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "敏锐的数据洞察力",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 17,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 21,
+            "text": "自驱力",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "text": "执行力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为候选人的通用能力或个人特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06058",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "解决机器人硬件故障",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 22,
+            "text": "软件BUG、运动异常",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "通讯故障",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "text": "复杂技术问题",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "现场解决各类机器人技术问题属于明确职业动作；按独立问题提及拆分。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06059",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "制定培训计划",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 16,
+            "text": "提高下属的管理能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "操作技能",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "品质意识",
+            "label": "T"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "text": "素养",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取培训计划制定及培养下属能力、技能和意识的职业活动或通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06060",
+        "spans": [
+          {
+            "start": 0,
+            "end": 14,
+            "text": "依据产品要求制订封装工艺流程",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 25,
+            "text": "制定规范标准作业文件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为明确的工艺和作业文件制定活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06061",
+        "spans": [
+          {
+            "start": 0,
+            "end": 11,
+            "text": "贯彻合规及风控制度要求",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "业务品质",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 21,
+            "text": "合规",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "制度贯彻属于职业动作；业务品质和合规属于领域规范或要求。确保结果本身不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06062",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "企业会计准则",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "税务法规",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 20,
+            "text": "金蝶",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 23,
+            "text": "用友",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 29,
+            "text": "ERP系统",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 38,
+            "text": "高级数据分析功能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "会计准则和税务法规为领域知识；金蝶、用友、ERP及数据分析功能为岗位使用工具或执行能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06063",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "OLED薄膜封装量产技术迭代",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 19,
+            "text": "导入",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为明确的量产技术实施与改进活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06064",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "项目管理能力",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "text": "需求资源协调能力",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "工时评估",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "任务分配",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 43,
+            "text": "提高团队工作效率",
+            "label": "T"
+          },
+          {
+            "start": 44,
+            "end": 50,
+            "text": "确保项目进度",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "项目管理、工时评估和任务分配为职业活动；资源协调及团队效率为通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06065",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "Mask",
+            "label": "S"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "text": "排版",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "Mark设计",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "text": "测试治工具设计发包",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 39,
+            "text": "PHTMask设计发包",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为明确的排版、设计及发包职业活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 226,
+  "ids": [
+    "sp10k-06056",
+    "sp10k-06057",
+    "sp10k-06058",
+    "sp10k-06059",
+    "sp10k-06060",
+    "sp10k-06061",
+    "sp10k-06062",
+    "sp10k-06063",
+    "sp10k-06064",
+    "sp10k-06065"
+  ],
+  "at": "2026-09-13T17:26:52.504674+00:00"
+}

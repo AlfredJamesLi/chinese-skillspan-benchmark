@@ -1,0 +1,676 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03696",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "前端开发技术",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "HTML",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "前端开发技术及其具体工具按职业技术要求标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03697",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "证件清单是否表达任职资格要求，局部语境不足。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "本人有效身份证、学历证、学位证、教师资格证",
+          "alternatives": [
+            "仅为报名材料清单，不标注",
+            "教师资格证表达候选人资格要求，标K"
+          ],
+          "reason": "未说明该清单属于材料提交流程还是任职资格要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03698",
+      "spans": [
+        {
+          "start": 8,
+          "end": 17,
+          "text": "大学本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 25,
+          "text": "学士及以上学位",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "水利工程",
+          "label": "K"
+        },
+        {
+          "start": 36,
+          "end": 42,
+          "text": "水利水电工程",
+          "label": "K"
+        },
+        {
+          "start": 43,
+          "end": 47,
+          "text": "市政工程",
+          "label": "K"
+        },
+        {
+          "start": 48,
+          "end": 56,
+          "text": "给排水科学与工程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历、学位及各专业要求；毕业生身份不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03699",
+      "spans": [
+        {
+          "start": 2,
+          "end": 20,
+          "text": "各专业网络、业务平台等系统的维护管理",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "运维",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "质量管控",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "维护管理、运维和质量管控为职业活动；功能提升仅表述系统目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03700",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "windows",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 19,
+          "text": "linux操作系统",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "网络原理知识",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 41,
+          "text": "oracle基础操作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作系统及数据库操作按S；明确网络原理知识按K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03702",
+      "spans": [
+        {
+          "start": 16,
+          "end": 23,
+          "text": "硕士及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历为年龄放宽的资格条件；年龄不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03703",
+      "spans": [
+        {
+          "start": 4,
+          "end": 16,
+          "text": "员工入职/离职电脑的检测",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "软件安装",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "信息备份",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分电脑检测、软件安装与信息备份三项职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03704",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "CRM、钉钉系统的维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留并列系统共享的维护动作，不嵌套工具名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03705",
+      "spans": [
+        {
+          "start": 2,
+          "end": 23,
+          "text": "组织协调行业业务需求与客户软件功能需求调研",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "组织协调限定具体需求调研职能，保留共享调研动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03706",
+      "spans": [
+        {
+          "start": 4,
+          "end": 12,
+          "text": "信息安全专业知识",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 36,
+          "text": "网站安全监测及反馈平台",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 49,
+          "text": "统计分析",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业知识按K；明确使用的平台和数据统计分析按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03707",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "仅列考试题型与分值，是否投影为候选人能力要求待裁决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "班级管理案例分析",
+          "alternatives": [
+            "考试题型说明，不进入标注范围",
+            "体现候选人须执行的专业案例分析，标S"
+          ],
+          "reason": "局部文本只说明考试内容，未明确其与岗位能力要求的关系。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03708",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅含年龄及出生日期限制。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03709",
+      "spans": [
+        {
+          "start": 10,
+          "end": 14,
+          "text": "监控系统",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "原理",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 31,
+          "text": "根据实际场景灵活选择",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "监控系统有明确场景选用语境；原理独立按K，选择动作承接监控系统。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03710",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "CDH",
+          "label": "S"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": "PDH",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "Hadoop",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "HBase",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "Hive",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "text": "Spark",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 48,
+          "text": "SparkStreaming",
+          "label": "S"
+        },
+        {
+          "start": 49,
+          "end": 54,
+          "text": "Kylin",
+          "label": "S"
+        },
+        {
+          "start": 55,
+          "end": 60,
+          "text": "Kafka",
+          "label": "S"
+        },
+        {
+          "start": 61,
+          "end": 69,
+          "text": "RabbitMQ",
+          "label": "S"
+        },
+        {
+          "start": 70,
+          "end": 72,
+          "text": "安装",
+          "label": "S"
+        },
+        {
+          "start": 73,
+          "end": 75,
+          "text": "配置",
+          "label": "S"
+        },
+        {
+          "start": 76,
+          "end": 78,
+          "text": "启停",
+          "label": "S"
+        },
+        {
+          "start": 79,
+          "end": 83,
+          "text": "数据备份",
+          "label": "S"
+        },
+        {
+          "start": 84,
+          "end": 88,
+          "text": "数据迁移",
+          "label": "S"
+        },
+        {
+          "start": 89,
+          "end": 93,
+          "text": "运行监控",
+          "label": "S"
+        },
+        {
+          "start": 94,
+          "end": 102,
+          "text": "数据处理脚本开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体工具均受安装运维语境限定；各项操作可独立拆分，保留原文拼写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03711",
+      "spans": [
+        {
+          "start": 16,
+          "end": 22,
+          "text": "思想政治素质",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "道德品行",
+          "label": "T"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "语言表达",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "组织协调",
+          "label": "T"
+        },
+        {
+          "start": 38,
+          "end": 44,
+          "text": "综合分析能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确考察候选人的特质及通用能力；泛化岗位匹配度不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03712",
+      "spans": [
+        {
+          "start": 22,
+          "end": 26,
+          "text": "逻辑思维",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "语言表达能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确考察的通用能力；模拟上课为面试形式，适岗能力未指明具体能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03713",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "网络知识体系",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 30,
+          "text": "华为网络技术认证",
+          "label": "K"
+        },
+        {
+          "start": 38,
+          "end": 42,
+          "text": "HCNA",
+          "label": "K"
+        },
+        {
+          "start": 43,
+          "end": 47,
+          "text": "HCNP",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学习要求中的知识体系和明确技术认证按K；岗位称谓不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03714",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告的政策依据及组织实施背景，不含候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03715",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "阿里云",
+          "label": "S"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": "腾讯云",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "亚马逊",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "名称在云服务产品语境中指岗位工具；类别说明不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03716",
+      "spans": [
+        {
+          "start": 6,
+          "end": 17,
+          "text": "Devops规划和落地",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "规划和落地共享Devops对象，保留完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03717",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "开发",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 14,
+          "text": "软件开发全过程",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "oracle",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 31,
+          "text": "mysql",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 42,
+          "text": "存储过程编写",
+          "label": "S"
+        },
+        {
+          "start": 43,
+          "end": 52,
+          "text": "shell脚本编写",
+          "label": "S"
+        },
+        {
+          "start": 55,
+          "end": 62,
+          "text": "sql语句调优",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发实践、工具使用、编写与调优按S；全过程认知按K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03718",
+      "spans": [
+        {
+          "start": 2,
+          "end": 20,
+          "text": "质量、环境、职业健康安全管理体系要求",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "物业法律法规",
+          "label": "K"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "体系运维能力",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "text": "工作协调能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "体系要求保留必要共享中心；运维为专业能力，工作协调为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03719",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "组织检查设备安全隐患",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 24,
+          "text": "建立和完善安全应急预案",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "检查汇总",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取隐患检查、预案建立完善及检查汇总，去除频率修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03720",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "测试相关的工具",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工具类别有明确使用语境，按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03722",
+      "spans": [
+        {
+          "start": 0,
+          "end": 10,
+          "text": "本科学历（高中起点）",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "药学专业",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历保留高中起点限定；被排除的中药学不标。",
+      "issues": []
+    }
+  ]
+}

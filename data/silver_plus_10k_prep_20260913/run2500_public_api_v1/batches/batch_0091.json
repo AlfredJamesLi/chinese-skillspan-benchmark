@@ -1,0 +1,302 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 59.673,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5060,
+    "completion_tokens": 1849,
+    "total_tokens": 6909,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 806
+    },
+    "input_tokens": 5060,
+    "output_tokens": 1849,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00901\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"自动化运维与监控工具\",\"label\":\"S\"},{\"start\":14,\"end\":21,\"text\":\"ansible\",\"label\":\"S\"},{\"start\":22,\"end\":28,\"text\":\"puppet\",\"label\":\"S\"},{\"start\":29,\"end\":35,\"text\":\"zabbix\",\"label\":\"S\"},{\"start\":40,\"end\":46,\"text\":\"python\",\"label\":\"S\"},{\"start\":47,\"end\":51,\"text\":\"java\",\"label\":\"S\"},{\"start\":52,\"end\":58,\"text\":\"开发编程能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"工具类别及具体工具受使用语境限定，编程语言及开发编程能力按职业技能标注。\",\"issues\":[]},{\"id\":\"sp10k-00902\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"软件产品和项目的运维实施\",\"label\":\"S\"},{\"start\":23,\"end\":27,\"text\":\"运维实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确运维实施职责；按时保质为结果要求，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00903\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅规定现任职务层次及任职年限，未提及具体能力、知识或资格名称。\",\"issues\":[]},{\"id\":\"sp10k-00904\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"专业测试形式与内容属于招考测试说明，未提出候选人技能要求。\",\"issues\":[]},{\"id\":\"sp10k-00905\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"CAD平面图纸\",\"label\":\"K\"},{\"start\":12,\"end\":20,\"text\":\"安防监控技术原理\",\"label\":\"K\"},{\"start\":21,\"end\":27,\"text\":\"安装调试技术\",\"label\":\"S\"},{\"start\":31,\"end\":41,\"text\":\"拟订项目弱电设计方案\",\"label\":\"S\"},{\"start\":42,\"end\":53,\"text\":\"审核电气图纸和施工方案\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"图纸熟悉要求及技术原理按知识标注；安装调试、方案拟订与审核为职业技能。审核的并列对象保留共享动作。\",\"issues\":[]},{\"id\":\"sp10k-00906\",\"spans\":[{\"start\":5,\"end\":7,\"text\":\"品行\",\"label\":\"T\"},{\"start\":8,\"end\":12,\"text\":\"职业道德\",\"label\":\"T\"},{\"start\":13,\"end\":16,\"text\":\"责任感\",\"label\":\"T\"},{\"start\":19,\"end\":23,\"text\":\"团队精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"品行、职业道德及责任与团队特质均为通用素质，去除要求触发词和程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-00907\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"阅读公告、了解报考要求及填写信息均属于应聘行政流程。\",\"issues\":[]},{\"id\":\"sp10k-00908\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"描述尚未取得证书的人员类别，未指明具体专业或学历资格要求，不将泛称证书作为资格名抽取。\",\"issues\":[]},{\"id\":\"sp10k-00909\",\"spans\":[{\"start\":7,\"end\":12,\"text\":\"电工作业证\",\"label\":\"K\"},{\"start\":30,\"end\":34,\"text\":\"道德素养\",\"label\":\"T\"},{\"start\":38,\"end\":41,\"text\":\"责任感\",\"label\":\"T\"},{\"start\":42,\"end\":46,\"text\":\"工作严谨\",\"label\":\"T\"},{\"start\":47,\"end\":51,\"text\":\"敬业爱岗\",\"label\":\"T\"},{\"start\":54,\"end\":60,\"text\":\"团队合作精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"电工作业证为非语言资格；其余为职业素质。相关岗位工作经验未明确具体活动，不标年限及泛化经验。\",\"issues\":[]},{\"id\":\"sp10k-00910\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"财务\",\"label\":\"K\"},{\"start\":3,\"end\":8,\"text\":\"会计电算化\",\"label\":\"K\"},{\"start\":9,\"end\":12,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":16,\"end\":22,\"text\":\"本科以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"并列专业名称分别标注，学历保留完整资格边界；相关专业不单独标注。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00901",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "自动化运维与监控工具",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "text": "ansible",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "puppet",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "zabbix",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 46,
+            "text": "python",
+            "label": "S"
+          },
+          {
+            "start": 47,
+            "end": 51,
+            "text": "java",
+            "label": "S"
+          },
+          {
+            "start": 52,
+            "end": 58,
+            "text": "开发编程能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "工具类别及具体工具受使用语境限定，编程语言及开发编程能力按职业技能标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00902",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "软件产品和项目的运维实施",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "运维实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确运维实施职责；按时保质为结果要求，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00903",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅规定现任职务层次及任职年限，未提及具体能力、知识或资格名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00904",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "专业测试形式与内容属于招考测试说明，未提出候选人技能要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00905",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "CAD平面图纸",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "text": "安防监控技术原理",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "text": "安装调试技术",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 41,
+            "text": "拟订项目弱电设计方案",
+            "label": "S"
+          },
+          {
+            "start": 42,
+            "end": 53,
+            "text": "审核电气图纸和施工方案",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "图纸熟悉要求及技术原理按知识标注；安装调试、方案拟订与审核为职业技能。审核的并列对象保留共享动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00906",
+        "spans": [
+          {
+            "start": 5,
+            "end": 7,
+            "text": "品行",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "职业道德",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "text": "责任感",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "团队精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "品行、职业道德及责任与团队特质均为通用素质，去除要求触发词和程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00907",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "阅读公告、了解报考要求及填写信息均属于应聘行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00908",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "描述尚未取得证书的人员类别，未指明具体专业或学历资格要求，不将泛称证书作为资格名抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00909",
+        "spans": [
+          {
+            "start": 7,
+            "end": 12,
+            "text": "电工作业证",
+            "label": "K"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "道德素养",
+            "label": "T"
+          },
+          {
+            "start": 38,
+            "end": 41,
+            "text": "责任感",
+            "label": "T"
+          },
+          {
+            "start": 42,
+            "end": 46,
+            "text": "工作严谨",
+            "label": "T"
+          },
+          {
+            "start": 47,
+            "end": 51,
+            "text": "敬业爱岗",
+            "label": "T"
+          },
+          {
+            "start": 54,
+            "end": 60,
+            "text": "团队合作精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "电工作业证为非语言资格；其余为职业素质。相关岗位工作经验未明确具体活动，不标年限及泛化经验。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00910",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "财务",
+            "label": "K"
+          },
+          {
+            "start": 3,
+            "end": 8,
+            "text": "会计电算化",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "本科以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列专业名称分别标注，学历保留完整资格边界；相关专业不单独标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 91,
+  "ids": [
+    "sp10k-00901",
+    "sp10k-00902",
+    "sp10k-00903",
+    "sp10k-00904",
+    "sp10k-00905",
+    "sp10k-00906",
+    "sp10k-00907",
+    "sp10k-00908",
+    "sp10k-00909",
+    "sp10k-00910"
+  ],
+  "at": "2026-09-13T15:06:39.548581+00:00"
+}

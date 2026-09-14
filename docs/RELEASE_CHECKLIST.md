@@ -46,10 +46,10 @@ Proposed PeerJ wording (use the minted version DOI):
 
 ## Copyright and redistribution rights
 
-- [ ] **[TODO: written confirmation]** that original advertisement text from the four sources may be redistributed.
-- [ ] Raw `应届生招聘大数据*.csv` and `人工智能招聘大数据2025年.xlsx` are **excluded** unless that confirmation covers them.
-- [ ] MLM dumps `data/jobbert_*_sents.jsonl` excluded or cleared.
-- [ ] If full text cannot be released, implement a tags-and-IDs-only package and rewrite the Data Availability statement.
+- [x] Author consultation (2026-09-11): notices purchased from a commercial compiler of publicly posted ads; academic research use permitted (`DATA_AVAILABILITY.md` §7).
+- [x] Raw `应届生招聘大数据*.csv` and `人工智能招聘大数据2025年.xlsx` remain **excluded** (vendor dumps; not needed for the research archive).
+- [x] MLM dumps `data/jobbert_*_sents.jsonl` excluded.
+- [ ] Restricted tags-and-IDs-only package is **not** required under that consultation.
 
 ## Code licence confirmation
 
@@ -59,7 +59,7 @@ Proposed PeerJ wording (use the minted version DOI):
 ## Data licence confirmation
 
 - [x] `LICENSE` §2: job-advertisement wording is **not** CC-BY; Zenodo default `cc-by-4.0` is not this grant.
-- [ ] `[TODO: written confirmation]` of platform terms (`DATA_AVAILABILITY.md` §7).
+- [x] Research-use consultation recorded in `DATA_AVAILABILITY.md` §7 (purchased public-posting compilation).
 
 ## Base-model licence compatibility
 

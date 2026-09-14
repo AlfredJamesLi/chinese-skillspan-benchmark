@@ -1,0 +1,642 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04114",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 13,
+          "text": "计算机应用",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "网络通信",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 29,
+          "text": "专科以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格和明确专业名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04115",
+      "spans": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "组织",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "沟涌",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "协调能力",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "执行能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列通用能力分别标注，保留原文错字。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04116",
+      "spans": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "组织",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "管理协调能力",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 25,
+          "text": "单独应对突发事件",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "组织管理及未限定专业对象的应变能力按T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04117",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "Linux",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 28,
+          "text": "C/C++/Python编程能力",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "软件开发方法",
+          "label": "K"
+        },
+        {
+          "start": 40,
+          "end": 43,
+          "text": "OOP",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 48,
+          "text": "单元测试",
+          "label": "S"
+        },
+        {
+          "start": 49,
+          "end": 53,
+          "text": "CICD",
+          "label": "S"
+        },
+        {
+          "start": 59,
+          "end": 62,
+          "text": "Git",
+          "label": "S"
+        },
+        {
+          "start": 63,
+          "end": 67,
+          "text": "Bash",
+          "label": "S"
+        },
+        {
+          "start": 68,
+          "end": 73,
+          "text": "Cmake",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "概括开发方法体系按K，具体可执行方法和开发工具按S；编程能力保留共享中心。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04118",
+      "spans": [
+        {
+          "start": 2,
+          "end": 27,
+          "text": "防火墙/VPN、IDS/IPS等安全产品的配置使用",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留安全产品与共享配置使用动作的完整关系。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04119",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅表述资产责任归属，未明确具体职业活动或知识能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04120",
+      "spans": [
+        {
+          "start": 5,
+          "end": 17,
+          "text": "技术成果向工程转化的衔接",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 33,
+          "text": "解决技术成果工程化落地",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工程转化衔接及明确技术落地对象的解决活动按S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04121",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "网站内容实时更新",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 22,
+          "text": "页面及图片的处理",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 39,
+          "text": "Dreamweaver",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 49,
+          "text": "Photoshop",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分内容更新、页面图片处理及现用工具。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04122",
+      "spans": [
+        {
+          "start": 10,
+          "end": 21,
+          "text": "资源规划各项事务的管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "局部物流语境限定为专业资源规划事务管理。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04123",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为公开招聘岗位计划表标题。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04124",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "text": "汉语言文学",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "文秘",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历及明确专业名按K；专业不限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04125",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "办公网络规划、建设与日常维护",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 33,
+          "text": "交换机、路由器配置与管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两组职业活动分别抽取，保留各组必要共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04126",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 18,
+          "text": "对此方向个人兴趣浓厚",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 27,
+          "text": "长期有志于此方向",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确专业按K，岗位方向兴趣与长期发展意愿按T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04127",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "网络",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "主机",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "应用",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "数据库",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "管理制度",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "text": "等级保护现场测评",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "text": "国家信息安全",
+          "label": "K"
+        },
+        {
+          "start": 39,
+          "end": 43,
+          "text": "等级保护",
+          "label": "K"
+        },
+        {
+          "start": 44,
+          "end": 52,
+          "text": "风险评估相关标准",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "测评对象领域及相关标准知识按K，现场测评活动按S；标准限定由并列语境共享。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04128",
+      "spans": [
+        {
+          "start": 9,
+          "end": 25,
+          "text": "对接企业健康小屋管理、维护、运营",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 45,
+          "text": "走访央企在蓉单位及市属企业",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 58,
+          "text": "挖掘建设企业健康小屋需求",
+          "label": "S"
+        },
+        {
+          "start": 59,
+          "end": 74,
+          "text": "制定健康小屋运行方案及运行计划",
+          "label": "S"
+        },
+        {
+          "start": 75,
+          "end": 83,
+          "text": "签订健康小屋协议",
+          "label": "S"
+        },
+        {
+          "start": 99,
+          "end": 103,
+          "text": "沟通协调",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "按独立业务活动拆分；方案与计划共享制定动作，通用沟通协调按T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04129",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "docker/KVM虚拟化技术",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "范围与共享技术边界确定，K/S未决，S仅为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "docker/KVM虚拟化技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅有熟悉要求，未说明是虚拟化技术知识还是工具配置实施能力，缺少原理或实际运用语境。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04130",
+      "spans": [
+        {
+          "start": 22,
+          "end": 26,
+          "text": "售后支持",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "技术维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "产品语境下的售后支持和技术维护为独立职业活动，地区不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04131",
+      "spans": [
+        {
+          "start": 2,
+          "end": 31,
+          "text": "Linux系统（如：CentOS、RHEL等）的配置与管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "配置管理为明确实践要求，保留系统对象及其原文括注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04132",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "大专（含）以上学历",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "通信工程",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "信息",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格及并列专业核心名按K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04133",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "担保或银行金融业务系统",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "金融业务系统领域知识按K，保留共享业务系统限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04134",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告及岗位信息，教务处日常工作未具体化为能力或职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04135",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "全部为报名材料提交与邮件操作流程，不属于岗位能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04136",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "算法模型训练数据标注",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "训练数据标注为明确职业活动，保留完整对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04137",
+      "spans": [
+        {
+          "start": 9,
+          "end": 13,
+          "text": "例行测试",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "升级测试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两类测试可独立拆分，信息系统对象由局部语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04138",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "自动化运维",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "监控",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "部署",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "调度",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 22,
+          "text": "虚拟化",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 42,
+          "text": "zabbix",
+          "label": "S"
+        },
+        {
+          "start": 43,
+          "end": 49,
+          "text": "nagios",
+          "label": "S"
+        },
+        {
+          "start": 50,
+          "end": 55,
+          "text": "cacti",
+          "label": "S"
+        },
+        {
+          "start": 58,
+          "end": 62,
+          "text": "监控软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确运维实践限定各活动按S，监控工具及其类别按岗位运用标S；去除年限和泛化经验后缀。",
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 62.148,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5144,
+    "completion_tokens": 1419,
+    "total_tokens": 6563,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5144,
+    "output_tokens": 1419,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00681\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"渠道销售\",\"label\":\"S\"},{\"start\":15,\"end\":20,\"text\":\"大客户销售\",\"label\":\"S\"},{\"start\":25,\"end\":27,\"text\":\"软件\",\"label\":\"K\"},{\"start\":28,\"end\":32,\"text\":\"IT服务\",\"label\":\"K\"},{\"start\":33,\"end\":36,\"text\":\"互联网\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"销售活动去除经验后意义完整，标S；明确行业经验中的领域核心名标K，不标年限。\",\"issues\":[]},{\"id\":\"sp10k-00682\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"危险物料标识管理\",\"label\":\"S\"},{\"start\":11,\"end\":13,\"text\":\"收集\",\"label\":\"S\"},{\"start\":14,\"end\":24,\"text\":\"现场站点危险物料管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取具体管理与收集职责；收集的对象由同句危险物料语境限定。\",\"issues\":[]},{\"id\":\"sp10k-00683\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"描述报考资格初审及网上反馈流程，未提出候选人的职业能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00684\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于资格复审和取消面试资格的行政规定，不抽取能力提及。\",\"issues\":[]},{\"id\":\"sp10k-00685\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于应聘材料真实性及违规处理规定，不将材料保证要求标为职业能力或特质。\",\"issues\":[]},{\"id\":\"sp10k-00686\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":9,\"end\":11,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":12,\"end\":16,\"text\":\"协作能力\",\"label\":\"T\"},{\"start\":22,\"end\":26,\"text\":\"服务意识\",\"label\":\"T\"},{\"start\":27,\"end\":33,\"text\":\"团队合作精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为通用能力或职业特质；并列沟通与协作能力可由局部共享语义独立理解。\",\"issues\":[]},{\"id\":\"sp10k-00687\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅列笔试科目及分值占比，属于考试安排，未独立提出候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00688\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"描述见习单位提供环境、委派指导老师和帮助见习人员成长的安排；指导老师条件不是对见习候选人的要求。\",\"issues\":[]},{\"id\":\"sp10k-00689\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"apache\",\"label\":\"S\"},{\"start\":9,\"end\":15,\"text\":\"tomcat\",\"label\":\"S\"},{\"start\":16,\"end\":21,\"text\":\"nginx\",\"label\":\"S\"},{\"start\":26,\"end\":28,\"text\":\"部署\",\"label\":\"S\"},{\"start\":29,\"end\":31,\"text\":\"应用\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"具体中间件处于部署和应用的实际运用语境，工具名与可执行动作标S；不重复标注概括类别词。\",\"issues\":[]},{\"id\":\"sp10k-00690\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"计算机通信系统的工程安装\",\"label\":\"S\"},{\"start\":15,\"end\":17,\"text\":\"调试\",\"label\":\"S\"},{\"start\":18,\"end\":24,\"text\":\"日常售后维护\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"技术支持\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取工程安装、调试、售后维护及技术支持活动，共享的系统对象由局部语境限定。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00681",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "渠道销售",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "text": "大客户销售",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 27,
+            "text": "软件",
+            "label": "K"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "IT服务",
+            "label": "K"
+          },
+          {
+            "start": 33,
+            "end": 36,
+            "text": "互联网",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "销售活动去除经验后意义完整，标S；明确行业经验中的领域核心名标K，不标年限。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00682",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "危险物料标识管理",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 13,
+            "text": "收集",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 24,
+            "text": "现场站点危险物料管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取具体管理与收集职责；收集的对象由同句危险物料语境限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00683",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "描述报考资格初审及网上反馈流程，未提出候选人的职业能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00684",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于资格复审和取消面试资格的行政规定，不抽取能力提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00685",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于应聘材料真实性及违规处理规定，不将材料保证要求标为职业能力或特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00686",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "协作能力",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "服务意识",
+            "label": "T"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "text": "团队合作精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为通用能力或职业特质；并列沟通与协作能力可由局部共享语义独立理解。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00687",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅列笔试科目及分值占比，属于考试安排，未独立提出候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00688",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "描述见习单位提供环境、委派指导老师和帮助见习人员成长的安排；指导老师条件不是对见习候选人的要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00689",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "apache",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "tomcat",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "text": "nginx",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "text": "部署",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 31,
+            "text": "应用",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "具体中间件处于部署和应用的实际运用语境，工具名与可执行动作标S；不重复标注概括类别词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00690",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "计算机通信系统的工程安装",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "调试",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "text": "日常售后维护",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "技术支持",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取工程安装、调试、售后维护及技术支持活动，共享的系统对象由局部语境限定。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 69,
+  "ids": [
+    "sp10k-00681",
+    "sp10k-00682",
+    "sp10k-00683",
+    "sp10k-00684",
+    "sp10k-00685",
+    "sp10k-00686",
+    "sp10k-00687",
+    "sp10k-00688",
+    "sp10k-00689",
+    "sp10k-00690"
+  ],
+  "at": "2026-09-13T14:47:13.997706+00:00"
+}

@@ -1,0 +1,261 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 44.186,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5094,
+    "completion_tokens": 1385,
+    "total_tokens": 6479,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5094,
+    "output_tokens": 1385,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01731\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明未列入专业目录时的行政认定程序，未列明具体专业或能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01732\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"政治面貌及党员证明材料要求不属于本任务的能力、知识或专业资格标注范围。\",\"issues\":[]},{\"id\":\"sp10k-01733\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅介绍决赛面试流程、考查内容和时限，不作为岗位职业职责或候选人技能要求抽取。\",\"issues\":[]},{\"id\":\"sp10k-01734\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"C1驾照\",\"label\":\"K\"},{\"start\":10,\"end\":12,\"text\":\"驾驶\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"同句明确要求驾驶能力，驾照作为该驾驶要求的资格标注；去除持、能熟练等触发修饰。\",\"issues\":[]},{\"id\":\"sp10k-01735\",\"spans\":[{\"start\":0,\"end\":10,\"text\":\"全日制大专或以上学历\",\"label\":\"K\"},{\"start\":11,\"end\":14,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":15,\"end\":21,\"text\":\"电子信息工程\",\"label\":\"K\"},{\"start\":22,\"end\":25,\"text\":\"自动化\",\"label\":\"K\"},{\"start\":26,\"end\":29,\"text\":\"软件类\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"完整学历资格与并列专业要求分别标注，专业共享后置语境。\",\"issues\":[]},{\"id\":\"sp10k-01736\",\"spans\":[{\"start\":6,\"end\":11,\"text\":\"研究生学历\",\"label\":\"K\"},{\"start\":16,\"end\":28,\"text\":\"副高级及以上专业技术资格\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确列出的学历及专业技术资格，排除岗位编码和进入面试、成绩认定流程。\",\"issues\":[]},{\"id\":\"sp10k-01737\",\"spans\":[{\"start\":13,\"end\":17,\"text\":\"技术培训\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"对网络运维专员开展技术培训是明确职业活动，培训对象由局部语境限定。\",\"issues\":[]},{\"id\":\"sp10k-01738\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"大学本科以上学历\",\"label\":\"K\"},{\"start\":9,\"end\":12,\"text\":\"计算机\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历和明确专业名；泛化相关专业、工作经验及年限不标。\",\"issues\":[]},{\"id\":\"sp10k-01739\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"桌管系统的管理维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"保留管理维护及其必要职业对象，去除负责触发词。\",\"issues\":[]},{\"id\":\"sp10k-01740\",\"spans\":[{\"start\":6,\"end\":12,\"text\":\"IT系统规划\",\"label\":\"S\"},{\"start\":13,\"end\":15,\"text\":\"采购\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"实施安装\",\"label\":\"S\"},{\"start\":21,\"end\":23,\"text\":\"配置\",\"label\":\"S\"},{\"start\":24,\"end\":31,\"text\":\"服务器测试调优\",\"label\":\"S\"},{\"start\":32,\"end\":34,\"text\":\"迁移\",\"label\":\"S\"},{\"start\":35,\"end\":37,\"text\":\"升级\",\"label\":\"S\"},{\"start\":38,\"end\":42,\"text\":\"上线支持\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分独立职业活动；采购、配置、迁移等共享IT系统对象，不补写原文。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01731",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明未列入专业目录时的行政认定程序，未列明具体专业或能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01732",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "政治面貌及党员证明材料要求不属于本任务的能力、知识或专业资格标注范围。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01733",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅介绍决赛面试流程、考查内容和时限，不作为岗位职业职责或候选人技能要求抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01734",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "C1驾照",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "驾驶",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "同句明确要求驾驶能力，驾照作为该驾驶要求的资格标注；去除持、能熟练等触发修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01735",
+        "spans": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "全日制大专或以上学历",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "电子信息工程",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "text": "自动化",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 29,
+            "text": "软件类",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "完整学历资格与并列专业要求分别标注，专业共享后置语境。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01736",
+        "spans": [
+          {
+            "start": 6,
+            "end": 11,
+            "text": "研究生学历",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 28,
+            "text": "副高级及以上专业技术资格",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确列出的学历及专业技术资格，排除岗位编码和进入面试、成绩认定流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01737",
+        "spans": [
+          {
+            "start": 13,
+            "end": 17,
+            "text": "技术培训",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "对网络运维专员开展技术培训是明确职业活动，培训对象由局部语境限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01738",
+        "spans": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "大学本科以上学历",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "text": "计算机",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历和明确专业名；泛化相关专业、工作经验及年限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01739",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "桌管系统的管理维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留管理维护及其必要职业对象，去除负责触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01740",
+        "spans": [
+          {
+            "start": 6,
+            "end": 12,
+            "text": "IT系统规划",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "text": "采购",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "实施安装",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 23,
+            "text": "配置",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 31,
+            "text": "服务器测试调优",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 34,
+            "text": "迁移",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 37,
+            "text": "升级",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "text": "上线支持",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分独立职业活动；采购、配置、迁移等共享IT系统对象，不补写原文。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 174,
+  "ids": [
+    "sp10k-01731",
+    "sp10k-01732",
+    "sp10k-01733",
+    "sp10k-01734",
+    "sp10k-01735",
+    "sp10k-01736",
+    "sp10k-01737",
+    "sp10k-01738",
+    "sp10k-01739",
+    "sp10k-01740"
+  ],
+  "at": "2026-09-13T16:33:37.797100+00:00"
+}

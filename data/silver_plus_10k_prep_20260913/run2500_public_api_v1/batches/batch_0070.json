@@ -1,0 +1,513 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 32.876,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5181,
+    "completion_tokens": 1384,
+    "total_tokens": 6565,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5181,
+    "output_tokens": 1384,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00691",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            22,
+            26
+          ],
+          "to": [
+            21,
+            25
+          ],
+          "text": "安全管理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            27,
+            31
+          ],
+          "to": [
+            26,
+            30
+          ],
+          "text": "备份工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00693",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            8
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "Linux操作系统"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00695",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            8
+          ],
+          "to": [
+            3,
+            10
+          ],
+          "text": "国外学历、学位"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00696",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            10,
+            16
+          ],
+          "to": [
+            11,
+            17
+          ],
+          "text": "学历学位证书"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            38,
+            48
+          ],
+          "to": [
+            45,
+            51
+          ],
+          "text": "专业方向证明"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            89,
+            99
+          ],
+          "to": [
+            107,
+            119
+          ],
+          "text": "国（境）外学历学位认证函"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00697",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            19,
+            23
+          ],
+          "to": [
+            14,
+            18
+          ],
+          "text": "工作能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            24,
+            28
+          ],
+          "to": [
+            19,
+            23
+          ],
+          "text": "专业知识"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            29,
+            33
+          ],
+          "to": [
+            24,
+            28
+          ],
+          "text": "专业技能"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00698",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            10
+          ],
+          "to": [
+            0,
+            8
+          ],
+          "text": "策划制作企业微博"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            21
+          ],
+          "to": [
+            11,
+            17
+          ],
+          "text": "企业微博运行"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00699",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            6,
+            14
+          ],
+          "to": [
+            6,
+            13
+          ],
+          "text": "分布式服务框架"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            25
+          ],
+          "to": [
+            15,
+            24
+          ],
+          "text": "SpingBoot"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            26,
+            37
+          ],
+          "to": [
+            25,
+            36
+          ],
+          "text": "SpringCloud"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            40,
+            48
+          ],
+          "to": [
+            37,
+            42
+          ],
+          "text": "微服务框架"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00700",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            45,
+            51
+          ],
+          "to": [
+            44,
+            50
+          ],
+          "text": "相关工作经历"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00691\",\"spans\":[{\"start\":22,\"end\":26,\"text\":\"安全管理\",\"label\":\"S\"},{\"start\":27,\"end\":31,\"text\":\"备份工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行平台、软件、数据库的安全管理和备份工作，分别标注为职业动作。\",\"issues\":[]},{\"id\":\"sp10k-00692\",\"spans\":[{\"start\":8,\"end\":14,\"text\":\"提高自身能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"根据工作需求提升自身能力，属于候选人的通用能力发展要求。\",\"issues\":[]},{\"id\":\"sp10k-00693\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"Linux操作系统\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"Linux操作系统属于领域知识或专业名。\",\"issues\":[]},{\"id\":\"sp10k-00694\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为招聘考察程序及考察事项说明，未明确提出候选人须具备的具体能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-00695\",\"spans\":[{\"start\":3,\"end\":8,\"text\":\"国外学历、学位\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"国外学历、学位属于候选人资格要求；认证证明材料属于办理或提交材料，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00696\",\"spans\":[{\"start\":10,\"end\":16,\"text\":\"学历学位证书\",\"label\":\"K\"},{\"start\":38,\"end\":48,\"text\":\"专业方向证明\",\"label\":\"K\"},{\"start\":89,\"end\":99,\"text\":\"国（境）外学历学位认证函\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注学历学位及专业方向等资格凭证；身份证、学生证、就业推荐表及翻译件等材料不作为能力、知识或资格实体标注。\",\"issues\":[]},{\"id\":\"sp10k-00697\",\"spans\":[{\"start\":19,\"end\":23,\"text\":\"工作能力\",\"label\":\"T\"},{\"start\":24,\"end\":28,\"text\":\"专业知识\",\"label\":\"K\"},{\"start\":29,\"end\":33,\"text\":\"专业技能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求工作能力、专业知识和专业技能；分别按通用能力、知识和可执行技能标注。\",\"issues\":[]},{\"id\":\"sp10k-00698\",\"spans\":[{\"start\":0,\"end\":10,\"text\":\"策划制作企业微博\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"企业微博运行\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"策划制作企业微博及负责其运行均为明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00699\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"SOA\",\"label\":\"S\"},{\"start\":6,\"end\":14,\"text\":\"分布式服务框架\",\"label\":\"S\"},{\"start\":16,\"end\":25,\"text\":\"SpingBoot\",\"label\":\"S\"},{\"start\":26,\"end\":37,\"text\":\"SpringCloud\",\"label\":\"S\"},{\"start\":40,\"end\":48,\"text\":\"微服务框架\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"相关框架和技术同时受原理、优缺点及实战经验语境限定，按岗位实践工具或技术方法标注为S；“原理”及“优缺点”不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00700\",\"spans\":[{\"start\":45,\"end\":51,\"text\":\"相关工作经历\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求具有相关工作经历；该经历有职业活动限定，按项目经验规则标注为S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00691",
+        "spans": [
+          {
+            "start": 21,
+            "end": 25,
+            "text": "安全管理",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "备份工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行平台、软件、数据库的安全管理和备份工作，分别标注为职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00692",
+        "spans": [
+          {
+            "start": 8,
+            "end": 14,
+            "text": "提高自身能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "根据工作需求提升自身能力，属于候选人的通用能力发展要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00693",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "Linux操作系统",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Linux操作系统属于领域知识或专业名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00694",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为招聘考察程序及考察事项说明，未明确提出候选人须具备的具体能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00695",
+        "spans": [
+          {
+            "start": 3,
+            "end": 10,
+            "text": "国外学历、学位",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "国外学历、学位属于候选人资格要求；认证证明材料属于办理或提交材料，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00696",
+        "spans": [
+          {
+            "start": 11,
+            "end": 17,
+            "text": "学历学位证书",
+            "label": "K"
+          },
+          {
+            "start": 45,
+            "end": 51,
+            "text": "专业方向证明",
+            "label": "K"
+          },
+          {
+            "start": 107,
+            "end": 119,
+            "text": "国（境）外学历学位认证函",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注学历学位及专业方向等资格凭证；身份证、学生证、就业推荐表及翻译件等材料不作为能力、知识或资格实体标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00697",
+        "spans": [
+          {
+            "start": 14,
+            "end": 18,
+            "text": "工作能力",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "专业知识",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "专业技能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求工作能力、专业知识和专业技能；分别按通用能力、知识和可执行技能标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00698",
+        "spans": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "策划制作企业微博",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "企业微博运行",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "策划制作企业微博及负责其运行均为明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00699",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "SOA",
+            "label": "S"
+          },
+          {
+            "start": 6,
+            "end": 13,
+            "text": "分布式服务框架",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "text": "SpingBoot",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 36,
+            "text": "SpringCloud",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 42,
+            "text": "微服务框架",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "相关框架和技术同时受原理、优缺点及实战经验语境限定，按岗位实践工具或技术方法标注为S；“原理”及“优缺点”不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00700",
+        "spans": [
+          {
+            "start": 44,
+            "end": 50,
+            "text": "相关工作经历",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求具有相关工作经历；该经历有职业活动限定，按项目经验规则标注为S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 70,
+  "ids": [
+    "sp10k-00691",
+    "sp10k-00692",
+    "sp10k-00693",
+    "sp10k-00694",
+    "sp10k-00695",
+    "sp10k-00696",
+    "sp10k-00697",
+    "sp10k-00698",
+    "sp10k-00699",
+    "sp10k-00700"
+  ],
+  "at": "2026-09-13T14:48:44.735384+00:00"
+}

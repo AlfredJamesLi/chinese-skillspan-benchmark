@@ -1,0 +1,637 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03273",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "阿里云的产品",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "运维管理",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "运维管理为职业活动；产品提及的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "阿里云的产品",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "未明确是产品知识要求还是岗位工具运用；并列运维管理不足以消除歧义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03274",
+      "spans": [
+        {
+          "start": 10,
+          "end": 21,
+          "text": "资质、证照的申报、年审",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "相关材料的编制",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取资质办理和材料编制职责，保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03275",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报考报名及照片上传流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03276",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列招聘岗位和人数，没有具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03277",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名材料填写和上传要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03278",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "Python语言",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "text": "多线程编程",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 30,
+          "text": "Linux操作系统",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 43,
+          "text": "Linux命令",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 50,
+          "text": "脚本编程",
+          "label": "S"
+        },
+        {
+          "start": 50,
+          "end": 55,
+          "text": "shell",
+          "label": "S"
+        },
+        {
+          "start": 56,
+          "end": 62,
+          "text": "Python",
+          "label": "S"
+        },
+        {
+          "start": 63,
+          "end": 64,
+          "text": "C",
+          "label": "S"
+        },
+        {
+          "start": 65,
+          "end": 68,
+          "text": "C++",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "局部为编程及系统操作要求，语言、操作系统和命令按岗位工具标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03279",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "网络设备的安装、调试、维护",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 27,
+          "text": "解决相关问题的能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装调试维护共享设备对象；相关问题明确回指网络设备技术问题。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03280",
+      "spans": [
+        {
+          "start": 10,
+          "end": 14,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "吃苦",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "适应经常出差",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取沟通、吃苦和出差适应特质；排除形象气质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03281",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "工作主动意识",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "抗压能力",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 34,
+          "text": "诚实",
+          "label": "T"
+        },
+        {
+          "start": 35,
+          "end": 37,
+          "text": "认真",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取可迁移能力和工作特质，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03282",
+      "spans": [
+        {
+          "start": 6,
+          "end": 20,
+          "text": "系统、网络安全风险评估和检测",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "风险评估与检测共享系统及网络安全对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03283",
+      "spans": [
+        {
+          "start": 30,
+          "end": 45,
+          "text": "高级工程师（道桥）专业技术资格",
+          "label": "K"
+        },
+        {
+          "start": 47,
+          "end": 60,
+          "text": "公路工程二级建造师执业资格",
+          "label": "K"
+        },
+        {
+          "start": 61,
+          "end": 76,
+          "text": "市政公用工程二级建造师执业资格",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整非语言专业资格；排除报考岗位、年龄和出生日期。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03284",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "原文为测试名称及成绩淘汰规则，能力提及的要求范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "科研能力测试科研能力测试成绩满分为100分，不足60分者淘汰",
+          "alternatives": [
+            "科研能力属于候选人能力要求，标T",
+            "仅为招聘考核流程，不标"
+          ],
+          "reason": "仅有测试名称和分数规定，缺少独立能力要求或测试内容，协议未明确此类考核名称是否纳入。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03285",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "统招本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "网络",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格，分别抽取明确专业名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03286",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "测试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业名为K；测试是完整职业活动，去除年限及工作经验修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03287",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "shell",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "python",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确使用语境中的两种脚本语言分别标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03288",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "IT文档、IT类固定资产维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两个对象共享维护动作，保留连续完整职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03289",
+      "spans": [
+        {
+          "start": 4,
+          "end": 31,
+          "text": "网络设备（路由器、交换机、防火墙）的安全运行及日常维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留设备对象及共享运行维护动作，不嵌套标注设备名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03290",
+      "spans": [
+        {
+          "start": 6,
+          "end": 19,
+          "text": "企业信息/网络安全工作经验",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 27,
+          "text": "防火墙",
+          "label": "K"
+        },
+        {
+          "start": 28,
+          "end": 31,
+          "text": "WAF",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 35,
+          "text": "IPS",
+          "label": "K"
+        },
+        {
+          "start": 36,
+          "end": 39,
+          "text": "防病毒",
+          "label": "K"
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "text": "漏洞扫描",
+          "label": "K"
+        },
+        {
+          "start": 45,
+          "end": 49,
+          "text": "身份认证",
+          "label": "K"
+        },
+        {
+          "start": 50,
+          "end": 54,
+          "text": "数据管理",
+          "label": "K"
+        },
+        {
+          "start": 55,
+          "end": 64,
+          "text": "安全产品软硬件知识",
+          "label": "K"
+        },
+        {
+          "start": 65,
+          "end": 67,
+          "text": "设计",
+          "label": "S"
+        },
+        {
+          "start": 68,
+          "end": 70,
+          "text": "安装",
+          "label": "S"
+        },
+        {
+          "start": 71,
+          "end": 73,
+          "text": "配置",
+          "label": "S"
+        },
+        {
+          "start": 74,
+          "end": 78,
+          "text": "故障处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安全职能经历保留经验按代理规则标S；知识列表受软硬件知识限定为K，后续具体操作分别为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03291",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "剪辑视频",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "设计图像",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "办公软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取视频剪辑、图像设计和岗位工具。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03293",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "其他作业未说明实际活动，暂不进入主层。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "软件项目相关其他作业",
+          "alternatives": [
+            "作为软件项目职业活动整体抽取S",
+            "泛化职责，未提供具体能力，不标"
+          ],
+          "reason": "缺少其他作业的具体内容，无法确认是否构成完整的可执行职业活动提及。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03294",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "IT预算",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "资产管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "预算与资产管理为明确岗位职能，大型机构是工作情境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03295",
+      "spans": [
+        {
+          "start": 12,
+          "end": 22,
+          "text": "系统的使用培训和辅导",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取系统使用培训辅导职责，后半员工熟练使用为结果。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03296",
+      "spans": [
+        {
+          "start": 14,
+          "end": 24,
+          "text": "交易规则与流程的培训",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "业务支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "培训和业务支持为独立职责；交易规则与流程是培训对象，不嵌套标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03298",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "JavaSpring",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "H5",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 25,
+          "text": "Android",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 29,
+          "text": "IOS",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "text": "小程序",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 36,
+          "text": "H5",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 48,
+          "text": "移动端和大数据后台开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发语境中的技术及平台标S；移动端和大数据后台共享开发动作，保留原拼写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03299",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "专科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "网络",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格及明确专业名。",
+      "issues": []
+    }
+  ]
+}

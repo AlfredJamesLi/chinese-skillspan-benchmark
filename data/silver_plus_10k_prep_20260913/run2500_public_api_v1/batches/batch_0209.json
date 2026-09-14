@@ -1,0 +1,695 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 41.538,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5032,
+    "completion_tokens": 1585,
+    "total_tokens": 6617,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5032,
+    "output_tokens": 1585,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-05886",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            7
+          ],
+          "to": [
+            2,
+            6
+          ],
+          "text": "工贸行业"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            12,
+            16
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "安全管理"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            29
+          ],
+          "to": [
+            21,
+            26
+          ],
+          "text": "HSE管理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            30,
+            34
+          ],
+          "to": [
+            27,
+            31
+          ],
+          "text": "技术知识"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            39,
+            45
+          ],
+          "to": [
+            34,
+            40
+          ],
+          "text": "机械机械行业"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            45,
+            49
+          ],
+          "to": [
+            40,
+            44
+          ],
+          "text": "现场管理"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            55,
+            61
+          ],
+          "to": [
+            49,
+            55
+          ],
+          "text": "沟通协调能力"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            63,
+            67
+          ],
+          "to": [
+            59,
+            63
+          ],
+          "text": "判断能力"
+        },
+        {
+          "i": 8,
+          "action": "snapped",
+          "from": [
+            68,
+            71
+          ],
+          "to": [
+            64,
+            67
+          ],
+          "text": "执行力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05888",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            24,
+            28
+          ],
+          "to": [
+            25,
+            29
+          ],
+          "text": "客户资源"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05889",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            8
+          ],
+          "to": [
+            0,
+            7
+          ],
+          "text": "本科及以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05890",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            34
+          ],
+          "to": [
+            20,
+            37
+          ],
+          "text": "电子制造类1年以上项目管理工作经验"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05891",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            8
+          ],
+          "to": [
+            2,
+            7
+          ],
+          "text": "农业产业链"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            15
+          ],
+          "to": [
+            8,
+            13
+          ],
+          "text": "农产品流通"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            20
+          ],
+          "to": [
+            14,
+            18
+          ],
+          "text": "农业政策"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            23,
+            27
+          ],
+          "to": [
+            20,
+            23
+          ],
+          "text": "B2B"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            28,
+            32
+          ],
+          "to": [
+            24,
+            28
+          ],
+          "text": "政府项目"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05892",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            18,
+            32
+          ],
+          "to": [
+            17,
+            32
+          ],
+          "text": "国家及地方劳动用工相关法律法规"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05893",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            19
+          ],
+          "to": [
+            4,
+            14
+          ],
+          "text": "OfficeWord"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            20,
+            32
+          ],
+          "to": [
+            15,
+            26
+          ],
+          "text": "OfficeExcel"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            33,
+            50
+          ],
+          "to": [
+            27,
+            43
+          ],
+          "text": "OfficePowerPoint"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            51,
+            63
+          ],
+          "to": [
+            44,
+            56
+          ],
+          "text": "OfficeAccess"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            64,
+            77
+          ],
+          "to": [
+            57,
+            68
+          ],
+          "text": "OfficeVisio"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            78,
+            87
+          ],
+          "to": [
+            69,
+            74
+          ],
+          "text": "ERP系统"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05895",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            28,
+            36
+          ],
+          "to": [
+            23,
+            32
+          ],
+          "text": "预防和消除各种隐患"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05886\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"工贸行业\",\"label\":\"K\"},{\"start\":12,\"end\":16,\"text\":\"安全管理\",\"label\":\"S\"},{\"start\":22,\"end\":29,\"text\":\"HSE管理\",\"label\":\"S\"},{\"start\":30,\"end\":34,\"text\":\"技术知识\",\"label\":\"K\"},{\"start\":39,\"end\":45,\"text\":\"机械机械行业\",\"label\":\"K\"},{\"start\":45,\"end\":49,\"text\":\"现场管理\",\"label\":\"S\"},{\"start\":55,\"end\":61,\"text\":\"沟通协调能力\",\"label\":\"T\"},{\"start\":63,\"end\":67,\"text\":\"判断能力\",\"label\":\"T\"},{\"start\":68,\"end\":71,\"text\":\"执行力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的行业知识、职业活动及通用能力；年限和经验触发词不入跨度。\",\"issues\":[]},{\"id\":\"sp10k-05887\",\"spans\":[{\"start\":5,\"end\":19,\"text\":\"Office办公软件操作技能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"Office办公软件操作技能属于岗位工具使用能力。\",\"issues\":[]},{\"id\":\"sp10k-05888\",\"spans\":[{\"start\":6,\"end\":12,\"text\":\"建筑幕墙行业\",\"label\":\"K\"},{\"start\":24,\"end\":28,\"text\":\"客户资源\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"行业背景和候选人需具备的客户资源属于要求；工作年限及经验不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-05889\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"完整学历资格名按K标注；相关专业为泛化专业要求，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-05890\",\"spans\":[{\"start\":2,\"end\":18,\"text\":\"消费类电子产品设计开发及制造流程\",\"label\":\"S\"},{\"start\":19,\"end\":34,\"text\":\"电子制造类1年以上项目管理工作经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"产品设计开发及制造流程、具有明确领域和活动的项目管理经验属于职业实践能力。\",\"issues\":[]},{\"id\":\"sp10k-05891\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"农业产业链\",\"label\":\"K\"},{\"start\":9,\"end\":15,\"text\":\"农产品流通\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"农业政策\",\"label\":\"K\"},{\"start\":23,\"end\":27,\"text\":\"B2B\",\"label\":\"K\"},{\"start\":28,\"end\":32,\"text\":\"政府项目\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取农业领域知识、农产品流通活动、项目实践及相关领域背景。\",\"issues\":[]},{\"id\":\"sp10k-05892\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"人力资源基础模块工作流程\",\"label\":\"S\"},{\"start\":18,\"end\":32,\"text\":\"国家及地方劳动用工相关法律法规\",\"label\":\"K\"},{\"start\":33,\"end\":36,\"text\":\"劳动法\",\"label\":\"K\"},{\"start\":37,\"end\":40,\"text\":\"社保法\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"人力资源工作流程为职业活动，劳动用工法律法规及具体法律名称为领域知识。\",\"issues\":[]},{\"id\":\"sp10k-05893\",\"spans\":[{\"start\":4,\"end\":19,\"text\":\"OfficeWord\",\"label\":\"S\"},{\"start\":20,\"end\":32,\"text\":\"OfficeExcel\",\"label\":\"S\"},{\"start\":33,\"end\":50,\"text\":\"OfficePowerPoint\",\"label\":\"S\"},{\"start\":51,\"end\":63,\"text\":\"OfficeAccess\",\"label\":\"S\"},{\"start\":64,\"end\":77,\"text\":\"OfficeVisio\",\"label\":\"S\"},{\"start\":78,\"end\":87,\"text\":\"ERP系统\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求熟练使用的办公软件和ERP系统均按工具使用能力标注。\",\"issues\":[]},{\"id\":\"sp10k-05894\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅列出相关专业名称，属于泛化专业要求，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-05895\",\"spans\":[{\"start\":4,\"end\":12,\"text\":\"设备使用安全管理\",\"label\":\"S\"},{\"start\":28,\"end\":36,\"text\":\"预防和消除各种隐患\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"设备安全管理及预防、消除隐患是明确岗位职责；确保安全运行属于结果表述，不单独标注。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05886",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "工贸行业",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "安全管理",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "text": "HSE管理",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "技术知识",
+            "label": "K"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "text": "机械机械行业",
+            "label": "K"
+          },
+          {
+            "start": 40,
+            "end": 44,
+            "text": "现场管理",
+            "label": "S"
+          },
+          {
+            "start": 49,
+            "end": 55,
+            "text": "沟通协调能力",
+            "label": "T"
+          },
+          {
+            "start": 59,
+            "end": 63,
+            "text": "判断能力",
+            "label": "T"
+          },
+          {
+            "start": 64,
+            "end": 67,
+            "text": "执行力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的行业知识、职业活动及通用能力；年限和经验触发词不入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05887",
+        "spans": [
+          {
+            "start": 5,
+            "end": 19,
+            "text": "Office办公软件操作技能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Office办公软件操作技能属于岗位工具使用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05888",
+        "spans": [
+          {
+            "start": 6,
+            "end": 12,
+            "text": "建筑幕墙行业",
+            "label": "K"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "客户资源",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "行业背景和候选人需具备的客户资源属于要求；工作年限及经验不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05889",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "完整学历资格名按K标注；相关专业为泛化专业要求，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05890",
+        "spans": [
+          {
+            "start": 2,
+            "end": 18,
+            "text": "消费类电子产品设计开发及制造流程",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 37,
+            "text": "电子制造类1年以上项目管理工作经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "产品设计开发及制造流程、具有明确领域和活动的项目管理经验属于职业实践能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05891",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "农业产业链",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "text": "农产品流通",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "农业政策",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 23,
+            "text": "B2B",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "政府项目",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取农业领域知识、农产品流通活动、项目实践及相关领域背景。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05892",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "人力资源基础模块工作流程",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 32,
+            "text": "国家及地方劳动用工相关法律法规",
+            "label": "K"
+          },
+          {
+            "start": 33,
+            "end": 36,
+            "text": "劳动法",
+            "label": "K"
+          },
+          {
+            "start": 37,
+            "end": 40,
+            "text": "社保法",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "人力资源工作流程为职业活动，劳动用工法律法规及具体法律名称为领域知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05893",
+        "spans": [
+          {
+            "start": 4,
+            "end": 14,
+            "text": "OfficeWord",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 26,
+            "text": "OfficeExcel",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 43,
+            "text": "OfficePowerPoint",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 56,
+            "text": "OfficeAccess",
+            "label": "S"
+          },
+          {
+            "start": 57,
+            "end": 68,
+            "text": "OfficeVisio",
+            "label": "S"
+          },
+          {
+            "start": 69,
+            "end": 74,
+            "text": "ERP系统",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求熟练使用的办公软件和ERP系统均按工具使用能力标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05894",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅列出相关专业名称，属于泛化专业要求，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05895",
+        "spans": [
+          {
+            "start": 4,
+            "end": 12,
+            "text": "设备使用安全管理",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 32,
+            "text": "预防和消除各种隐患",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设备安全管理及预防、消除隐患是明确岗位职责；确保安全运行属于结果表述，不单独标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 209,
+  "ids": [
+    "sp10k-05886",
+    "sp10k-05887",
+    "sp10k-05888",
+    "sp10k-05889",
+    "sp10k-05890",
+    "sp10k-05891",
+    "sp10k-05892",
+    "sp10k-05893",
+    "sp10k-05894",
+    "sp10k-05895"
+  ],
+  "at": "2026-09-13T17:07:08.629771+00:00"
+}

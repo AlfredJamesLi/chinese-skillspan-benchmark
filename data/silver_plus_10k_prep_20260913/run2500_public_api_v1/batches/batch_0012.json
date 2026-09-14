@@ -1,0 +1,255 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 44.665,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5046,
+    "completion_tokens": 1383,
+    "total_tokens": 6429,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5046,
+    "output_tokens": 1383,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00111\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为留学人员提交认证和证明材料的行政要求，不标注。\",\"issues\":[]},{\"id\":\"sp10k-00112\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"人事管理\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"人才培养\",\"label\":\"S\"},{\"start\":24,\"end\":30,\"text\":\"平台更新维护\",\"label\":\"S\"},{\"start\":31,\"end\":35,\"text\":\"信息统计\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的人事职能及具体执行活动，去除职责触发词。\",\"issues\":[]},{\"id\":\"sp10k-00113\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"网络工程\",\"label\":\"K\"},{\"start\":7,\"end\":9,\"text\":\"运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"网络工程为专业领域知识，运维为职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00114\",\"spans\":[{\"start\":7,\"end\":9,\"text\":\"交流\",\"label\":\"T\"},{\"start\":10,\"end\":12,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":13,\"end\":27,\"text\":\"向客户培训产品相关知识和技能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"客户交流和沟通为通用人际能力；产品知识技能培训为具体职业活动，保留培训对象和内容。\",\"issues\":[]},{\"id\":\"sp10k-00115\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"小型局域网的构建和故障分析\",\"label\":\"S\"},{\"start\":21,\"end\":33,\"text\":\"VLAN等交换机配置技术\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"构建和故障分析共享小型局域网对象；交换机配置技术为可执行技术。\",\"issues\":[]},{\"id\":\"sp10k-00116\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"会员平台维护\",\"label\":\"S\"},{\"start\":11,\"end\":13,\"text\":\"充值\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"会员维系\",\"label\":\"S\"},{\"start\":19,\"end\":25,\"text\":\"红包奖励发放\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"平台维护及括号内列举的独立运营活动均为岗位执行要求。\",\"issues\":[]},{\"id\":\"sp10k-00117\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"项目可行性分析\",\"label\":\"S\"},{\"start\":10,\"end\":16,\"text\":\"整体解决方案\",\"label\":\"S\"},{\"start\":17,\"end\":36,\"text\":\"输出立项建议书、选型建议书与运维SLA\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"职责语境中的分析及解决方案按职业职能标注；各交付物共享输出动作，保留完整短语。\",\"issues\":[]},{\"id\":\"sp10k-00118\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为下载毕业证证明的行政材料流程，不构成能力或资格要求提及。\",\"issues\":[]},{\"id\":\"sp10k-00119\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅规定境外学历人员提供认证材料的行政流程，不标注材料名称。\",\"issues\":[]},{\"id\":\"sp10k-00120\",\"spans\":[{\"start\":4,\"end\":19,\"text\":\"网络系统、OA系统的维护与管理\",\"label\":\"S\"},{\"start\":36,\"end\":45,\"text\":\"提供技术支持和服务\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"系统维护与管理保留共享动作及对象；技术支持和服务为明确职责，保障安全稳定运行属纯结果承诺，不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00111",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为留学人员提交认证和证明材料的行政要求，不标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00112",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "人事管理",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "人才培养",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "平台更新维护",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "text": "信息统计",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的人事职能及具体执行活动，去除职责触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00113",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "网络工程",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "text": "运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "网络工程为专业领域知识，运维为职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00114",
+        "spans": [
+          {
+            "start": 7,
+            "end": 9,
+            "text": "交流",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 27,
+            "text": "向客户培训产品相关知识和技能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "客户交流和沟通为通用人际能力；产品知识技能培训为具体职业活动，保留培训对象和内容。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00115",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "小型局域网的构建和故障分析",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 33,
+            "text": "VLAN等交换机配置技术",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "构建和故障分析共享小型局域网对象；交换机配置技术为可执行技术。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00116",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "会员平台维护",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 13,
+            "text": "充值",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "会员维系",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "红包奖励发放",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "平台维护及括号内列举的独立运营活动均为岗位执行要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00117",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "项目可行性分析",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "整体解决方案",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 36,
+            "text": "输出立项建议书、选型建议书与运维SLA",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "职责语境中的分析及解决方案按职业职能标注；各交付物共享输出动作，保留完整短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00118",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为下载毕业证证明的行政材料流程，不构成能力或资格要求提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00119",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅规定境外学历人员提供认证材料的行政流程，不标注材料名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00120",
+        "spans": [
+          {
+            "start": 4,
+            "end": 19,
+            "text": "网络系统、OA系统的维护与管理",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 45,
+            "text": "提供技术支持和服务",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统维护与管理保留共享动作及对象；技术支持和服务为明确职责，保障安全稳定运行属纯结果承诺，不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 12,
+  "ids": [
+    "sp10k-00111",
+    "sp10k-00112",
+    "sp10k-00113",
+    "sp10k-00114",
+    "sp10k-00115",
+    "sp10k-00116",
+    "sp10k-00117",
+    "sp10k-00118",
+    "sp10k-00119",
+    "sp10k-00120"
+  ],
+  "at": "2026-09-13T14:02:33.567383+00:00"
+}

@@ -1,0 +1,581 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03609",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明学历证明材料的提交时间和手续，未列明具体学历资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03610",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "收集施工现场相关技术问题",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "解决",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 42,
+          "text": "上报工程部经理或技术总工",
+          "label": "S"
+        },
+        {
+          "start": 43,
+          "end": 47,
+          "text": "跟踪处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取技术问题收集、解决、上报和跟踪活动；后续动作承接明确技术问题对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03611",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "句子主要说明证明材料补交期限，具体学历证书是否构成独立资格要求待裁决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "研究生毕业证、硕士学位证书",
+          "alternatives": [
+            "作为具体学历资格要求分别标K",
+            "作为材料补交程序不抽取"
+          ],
+          "reason": "仅有特殊情况下延期提供材料的说明，缺少对应资格条件，无法确定是否应独立抽取证书要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03612",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "康复医学科",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "神经内、外科",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "骨科",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "临床领域工作背景抽取领域核心名；神经内、外科保留共享成分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03613",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "商务处理能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通为通用能力，商务处理为领域绑定能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03614",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "SAP系统各个模块日常运维",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 32,
+          "text": "解决系统操作过程中遇到的问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取系统运维和具体系统问题解决活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03615",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "客户端App部分功能的需求调研",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 31,
+          "text": "业务部门的功能需求",
+          "label": "K"
+        },
+        {
+          "start": 33,
+          "end": 40,
+          "text": "对接开发供应商",
+          "label": "T"
+        },
+        {
+          "start": 42,
+          "end": 48,
+          "text": "跟进开发进度",
+          "label": "S"
+        },
+        {
+          "start": 53,
+          "end": 57,
+          "text": "上线测试",
+          "label": "S"
+        },
+        {
+          "start": 58,
+          "end": 60,
+          "text": "交付",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分调研、需求知识、供应商联络、进度跟进、测试和交付；人员对接按T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03616",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "弱电工程",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "text": "智能化工程",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "信息集成",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "机电工程",
+          "label": "K"
+        },
+        {
+          "start": 35,
+          "end": 41,
+          "text": "大专以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取工作背景领域、明确专业名及完整学历要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03617",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅泛指岗位条件和证件取得期限，没有明确学历等级、专业或具体资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03618",
+      "spans": [
+        {
+          "start": 13,
+          "end": 17,
+          "text": "数据备份",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据备份为具体动作；业务安全稳定为未说明实施方法的结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03619",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅介绍考试科目、专业类别及开考语种，没有候选人能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03620",
+      "spans": [
+        {
+          "start": 2,
+          "end": 29,
+          "text": "Dell、HP、EMC、Netapp等主流存储设备设置",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "拓扑方式",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备设置为职业操作，保留并列设备共享的动作；拓扑方式为知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03621",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "全文为工资、保险及补贴待遇说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03622",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Linux操作系统",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "VMWARE",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 29,
+          "text": "OPENSTACK",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体操作系统和虚拟化平台按岗位工具抽取；概括类别不重复标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03623",
+      "spans": [
+        {
+          "start": 2,
+          "end": 24,
+          "text": "网络设备以及MySQL等数据库的日常运营维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列对象共享运营维护动作，保留完整连续提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03624",
+      "spans": [
+        {
+          "start": 1,
+          "end": 4,
+          "text": "阿里云",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "阿里云",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "EDAS",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 30,
+          "text": "SLB",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 34,
+          "text": "OSS",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 37,
+          "text": "mq",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "局部应用列表支持阿里云平台实践语境，平台及具体应用均按工具标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03625",
+      "spans": [
+        {
+          "start": 5,
+          "end": 14,
+          "text": "全日制本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "会计",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "经济",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "企业管理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历和专业名；泛化工作经验及年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03626",
+      "spans": [
+        {
+          "start": 11,
+          "end": 26,
+          "text": "客户技术方案的前期筹备、中执行",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "筹备与执行共享客户技术方案对象，保留原文不补正。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03627",
+      "spans": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "博士",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 14,
+          "text": "康复医学与理疗学",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "text": "执业医师资格证书",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "科研能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学位、专业、执业资格和科研能力；科室岗位名与泛化胜任要求不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03628",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "TCP",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": "UDP",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "IP",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 41,
+          "text": "对常用的交换机/路由器等网络设备进行配置",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "协议为知识；网络设备配置为具体职业动作，并列设备保留共享动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03629",
+      "spans": [
+        {
+          "start": 2,
+          "end": 57,
+          "text": "防火墙、防**木马系统、抗DDOS、IPS、终端安全、运维审计、VPN、WAF等安全系统策略的制定、实施、优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "多个系统共享策略制定、实施与优化职能，保留完整对象及动作，不嵌套工具标签。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03630",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "学习力",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "积极主动",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 31,
+          "text": "耐心",
+          "label": "T"
+        },
+        {
+          "start": 31,
+          "end": 33,
+          "text": "细致",
+          "label": "T"
+        },
+        {
+          "start": 34,
+          "end": 37,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "吃苦耐劳",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取可独立成立的通用能力和特质，去除程度及要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03631",
+      "spans": [
+        {
+          "start": 7,
+          "end": 22,
+          "text": "组织研究行业最新的技术发展方向",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "组织技术方向研究为具体职责；技术领先和竞争优势为结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03632",
+      "spans": [
+        {
+          "start": 1,
+          "end": 18,
+          "text": "分析总结项目开发与运维过程中的问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分析总结具有明确开发运维问题对象，按S；提高整体水平为结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03633",
+      "spans": [
+        {
+          "start": 22,
+          "end": 26,
+          "text": "语言表达",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "综合分析能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "面试说明中明确列出的候选人通用能力仍在范围内；面试方式和泛化岗位匹配性不标。",
+      "issues": []
+    }
+  ]
+}

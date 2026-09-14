@@ -1,0 +1,458 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05055",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "现场资格确认流程，不是候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05056",
+      "spans": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "计算机软件理论",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 20,
+          "text": "数据库基础知识",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "编码风格",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "理论和基础知识标K，编码风格为领域绑定的职业要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05057",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "人才津贴及发放安排属于待遇。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05058",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "大专以上学历",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 30,
+          "text": "社交运营平台（电商）的玩法",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 34,
+          "text": "化妆品",
+          "label": "K"
+        },
+        {
+          "start": 35,
+          "end": 37,
+          "text": "美妆",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "学历及行业背景标K；平台玩法的类型待裁决，S为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "社交运营平台（电商）的玩法",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "玩法可能指平台规则知识，也可能指可执行运营方法；局部语境未明确其含义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05059",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "组织完成新型换热器样机的试制",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "试验测试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分试制组织与试验测试两项职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05060",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "教育技术",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "本科以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业核心名及完整学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05061",
+      "spans": [
+        {
+          "start": 15,
+          "end": 23,
+          "text": "SAP实施方法论",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "方法论属于概括方法体系；泛化项目经验不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05062",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报到及聘用手续的行政处理规则。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05063",
+      "spans": [
+        {
+          "start": 4,
+          "end": 13,
+          "text": "口头和书面表达能力",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "知识传播能力",
+          "label": "T"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "text": "团队合作精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为可迁移能力或合作特质；表达能力保留共享中心。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05064",
+      "spans": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "协调能力",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "判断能力",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "分析能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "无具体职业对象限定，按通用能力拆分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05065",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告标题与事业单位职能介绍，未明确提出候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05066",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "电力行业相关国家标准",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "法律法规",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "区域情况",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 32,
+          "text": "国家电力政策法规",
+          "label": "K"
+        },
+        {
+          "start": 35,
+          "end": 43,
+          "text": "光伏市场发展动态",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "行业标准、法规、区域情况及市场动态均属知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05067",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "直播平台运营环境",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 19,
+          "text": "研究分析平台政策",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运营环境为知识，研究分析具体平台政策为职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05068",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格复审的递补程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05069",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "专项招聘身份条件是否属于资格或实践经历范围待裁决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "“服务基层项目”专项招聘岗位条件",
+          "alternatives": [
+            "专项招聘身份条件，排除",
+            "作为非语言资格或实践经历要求纳入"
+          ],
+          "reason": "正文要求项目服务期满合格及特定志愿者身份；协议未明确此类身份条件是否纳入，且未指明具体能力或资格名称。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05070",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "服务报告编写",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "汇报",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "文档编写能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "报告和文档编写为职业技能，汇报为通用沟通能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05071",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考试科目及题型说明，不抽取科目标题。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05072",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "面试考查说明，仅含泛化专业水平及履职能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05073",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "同行业未指明具体行业，经验及年限不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05074",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "复杂度较高的系统的分析设计",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "编码",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "测试",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "文档撰写",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分独立技术活动，保留系统分析设计的对象限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05075",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "局域网概念",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确概念知识要求，排除尾部杂字符。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05076",
+      "spans": [
+        {
+          "start": 0,
+          "end": 10,
+          "text": "全日制工科类本科学历",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 16,
+          "text": "自动化专业",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "仪器仪表专业",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 34,
+          "text": "VOC、色谱仪器经验",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "text": "环境工程",
+          "label": "K"
+        },
+        {
+          "start": 45,
+          "end": 49,
+          "text": "环境科学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历及专业标K；实践经历保留共享经验，避免拆分后丢失经历要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05077",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名材料一致性及面试资格处理规则。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05078",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "人才引进公告及公开招聘原则、程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05079",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考条件和证件材料的行政核验规定。",
+      "issues": []
+    }
+  ]
+}

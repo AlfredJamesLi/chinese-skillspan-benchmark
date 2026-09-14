@@ -1,0 +1,640 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04874",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应聘信息查询及考试聘用流程提醒，不含职业能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04875",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "基础理论",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "实际操作能力",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "团结协作能力",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "劳动纪律",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 42,
+          "text": "职业道德",
+          "label": "T"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "抽取明确考核的知识、操作能力和职业素质；劳动纪律的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "劳动纪律",
+          "alternatives": [
+            "K",
+            "T"
+          ],
+          "reason": "考核要素未说明是劳动纪律规范知识，还是遵守纪律的行为特质。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04876",
+      "spans": [
+        {
+          "start": 4,
+          "end": 16,
+          "text": "科研相关会议和活动的组织",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 31,
+          "text": "科研事务的合作交流",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "会议活动组织为职业活动；科研事务合作交流为人际协作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04877",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "负责",
+          "label": "T"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "text": "细心",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 25,
+          "text": "积极端正的工作态度",
+          "label": "T"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "text": "责任心",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用素质；此处负责描述工作态度，不是职责触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04878",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明各岗位考试方式，实际操作能力测试为考试环节名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04879",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "病历书写",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 27,
+          "text": "普外科临床诊疗",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 36,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 36,
+          "end": 43,
+          "text": "医学学士及以上",
+          "label": "K"
+        },
+        {
+          "start": 46,
+          "end": 53,
+          "text": "中西医临床医学",
+          "label": "K"
+        },
+        {
+          "start": 54,
+          "end": 58,
+          "text": "临床医学",
+          "label": "K"
+        },
+        {
+          "start": 62,
+          "end": 69,
+          "text": "中西医结合临床",
+          "label": "K"
+        },
+        {
+          "start": 70,
+          "end": 73,
+          "text": "外科学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取具体考核技能、诊疗职责及学历学位和专业要求，排除岗位名称与考试形式。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04880",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "电商平台的整体推广",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "监控数据分析",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 45,
+          "text": "制定各项运营监控指标",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "推广、数据分析和指标制定为独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04881",
+      "spans": [
+        {
+          "start": 5,
+          "end": 14,
+          "text": "硕士研究生以上学历",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "相应学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历和相应学位为并列资格要求；相应回指硕士研究生层次。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04882",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "职业素养",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用能力或职业素质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04883",
+      "spans": [
+        {
+          "start": 9,
+          "end": 17,
+          "text": "IT系统风险评估",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 31,
+          "text": "实施具体安全解决方案落地",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "风险评估及安全方案实施为独立技术职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04884",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "Windows",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "text": "Linux系统",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 31,
+          "text": "排除服务器硬件及网络故障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作系统处于服务器排障的岗位运用语境；排障保留共享动作及完整对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04885",
+      "spans": [
+        {
+          "start": 6,
+          "end": 14,
+          "text": "环境科学与工程类",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "化学类",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 27,
+          "text": "化工与制药技术类",
+          "label": "K"
+        },
+        {
+          "start": 28,
+          "end": 38,
+          "text": "自然保护与环境生态类",
+          "label": "K"
+        },
+        {
+          "start": 39,
+          "end": 50,
+          "text": "中国汉语言文学及文秘类",
+          "label": "K"
+        },
+        {
+          "start": 64,
+          "end": 70,
+          "text": "机关事业单位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整专业类别名；机关事业单位为明确工作背景的领域核心。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04886",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报到及聘用资格取消规定，不含能力知识资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04887",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘专业审核程序说明，未提出具体专业或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04888",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "分析及定位系统性能瓶颈",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 23,
+          "text": "给出性能优化建议",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分析与定位共享必要技术对象；提出优化建议为另一职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04889",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告背景及医院历史介绍，不含候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04890",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "专科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "软件",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历完整保留，专业核心分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04891",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "产品的安装",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "部署",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "调试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装、部署与调试为独立活动，后两项对象由局部上下文共享。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04892",
+      "spans": [
+        {
+          "start": 38,
+          "end": 42,
+          "text": "业务水平",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 62,
+          "text": "执业助理医师以上资格",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "业务水平由临床医生语境限定为领域能力；抽取医师资格，排除年限、声誉评价及报考手续。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04893",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Go服务端开发语言",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 24,
+          "text": "消息分发处理开发技能",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "Golang",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发语言处于岗位工具运用语境；消息处理开发为明确技术能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04894",
+      "spans": [
+        {
+          "start": 9,
+          "end": 14,
+          "text": "教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 35,
+          "text": "康巴语",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取教师资格和语种；未指明名称的专业、任教学科不单列。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04895",
+      "spans": [
+        {
+          "start": 14,
+          "end": 19,
+          "text": "幼儿教育学",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 25,
+          "text": "幼儿心理学",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 31,
+          "text": "幼儿卫生学",
+          "label": "K"
+        },
+        {
+          "start": 37,
+          "end": 39,
+          "text": "健康",
+          "label": "K"
+        },
+        {
+          "start": 40,
+          "end": 42,
+          "text": "语言",
+          "label": "K"
+        },
+        {
+          "start": 43,
+          "end": 45,
+          "text": "科学",
+          "label": "K"
+        },
+        {
+          "start": 46,
+          "end": 48,
+          "text": "艺术",
+          "label": "K"
+        },
+        {
+          "start": 49,
+          "end": 51,
+          "text": "社会",
+          "label": "K"
+        },
+        {
+          "start": 60,
+          "end": 75,
+          "text": "幼儿教育大纲规定的有关法律法规",
+          "label": "K"
+        },
+        {
+          "start": 76,
+          "end": 82,
+          "text": "公共基础知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体测评内容体现所需知识；语言为幼教领域名称，非语种；排除闭卷等考试形式。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04896",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明考试形式及泛化测评目标，未给出具体能力或知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04897",
+      "spans": [
+        {
+          "start": 31,
+          "end": 36,
+          "text": "本科及以上",
+          "label": "K"
+        },
+        {
+          "start": 38,
+          "end": 50,
+          "text": "初级中学及以上教师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历及教师资格，保留原文省略形式，不补写学历。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04898",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "住院医师规范化培训证书",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "text": "研究生学历",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 34,
+          "text": "硕士及以上学位",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 37,
+          "text": "外科学",
+          "label": "K"
+        },
+        {
+          "start": 38,
+          "end": 42,
+          "text": "临床医学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取培训证书、学历学位及专业要求，排除岗位名称和数量。",
+      "issues": []
+    }
+  ]
+}

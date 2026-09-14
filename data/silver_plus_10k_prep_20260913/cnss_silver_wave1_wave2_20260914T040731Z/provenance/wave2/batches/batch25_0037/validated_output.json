@@ -1,0 +1,545 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04637",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "网络基础知识",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 22,
+          "text": "网络基础故障的判断处理能力",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 33,
+          "text": "网络设备基础配置",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "区分网络知识、故障处理能力与设备配置操作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04638",
+      "spans": [
+        {
+          "start": 10,
+          "end": 22,
+          "text": "国家承认的本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留学历资格的认可限定，岗位名称和毕业生身份不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04639",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "组织实施全国危险废物管理培训",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取培训组织实施职责；后段仅为预期提升目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04640",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "驻场运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业、学历和完整运维活动，去除经验后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04641",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "勤奋",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "认真负责",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "执行力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用工作特质或能力，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04642",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "专科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "text": "新闻广告类专业",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "text": "茶行业",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历、专业和明确行业经验的领域核心均标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04643",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为资格审核和报名结果查询流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04644",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "软件开发",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "研发管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项均为明确职业活动，去除年限与经验后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04645",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "临床医学",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "康复医学",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "text": "医学影像学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列专业分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04646",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅指引查看外部岗位表，未给出具体能力或资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04647",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "text": "网络",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "应用电子",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "电子信息",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "通信",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 45,
+          "end": 51,
+          "text": "技术支持管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业、学历与具体职能；泛化工作经验及年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04648",
+      "spans": [
+        {
+          "start": 4,
+          "end": 14,
+          "text": "计算机、网络设备维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列对象共享维护动作，保留完整连续职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04649",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "服务器",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": "交换机",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "路由器",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "存储",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "备份系统",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "网络安全产品",
+          "label": "K"
+        },
+        {
+          "start": 29,
+          "end": 37,
+          "text": "数据库的基本知识",
+          "label": "K"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "text": "基本配置",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "前列各项受共享基本知识语境限定为K；另抽取配置操作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04650",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "敢于挑战自我",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "抗压能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "挑战意愿与抗压能力均为通用特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04651",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "介绍医院表彰奖励体系及活动，未要求候选人具备相应能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04652",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅泛指应聘材料，未列出具体资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04653",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为加试及排名程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04654",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名证明材料提交要求，未明确学历层次或具体资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04655",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明报名方式和招聘组织单位。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04656",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "text": "云计算相关知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历、专业核心与明确知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04657",
+      "spans": [
+        {
+          "start": 22,
+          "end": 28,
+          "text": "接口规范制定",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发、测试、集成、交付为规范适用过程限定，明确职责是制定接口规范。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04658",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "大专以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "机电",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "电气",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "环境类",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历与并列专业类别，泛化丰富经验不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04659",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "监控工具",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "text": "Cacti",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "Zabbix",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "部署维护能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确部署维护语境支持工具类别、工具名及领域能力标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04660",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "大专以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 15,
+          "text": "计算机科学与技术",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "text": "计算机软件",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "软件工程专业",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格与并列专业分别标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04661",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "乐观",
+          "label": "T"
+        },
+        {
+          "start": 2,
+          "end": 4,
+          "text": "自信",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "积极向上",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "服务意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用特质与服务意识，去除要求触发词和程度修饰。",
+      "issues": []
+    }
+  ]
+}

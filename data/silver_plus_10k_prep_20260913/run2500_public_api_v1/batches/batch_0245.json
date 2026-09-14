@@ -1,0 +1,520 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 41.41,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5013,
+    "completion_tokens": 1696,
+    "total_tokens": 6709,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 796
+    },
+    "input_tokens": 5013,
+    "output_tokens": 1696,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06248",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            19,
+            56
+          ],
+          "to": [
+            20,
+            54
+          ],
+          "text": "参与或主导与产品规划相关的产线、产品平台、技术平台的专项规划策划活动"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06249",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            27,
+            35
+          ],
+          "to": [
+            28,
+            36
+          ],
+          "text": "医药行业销售经验"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06250",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            11,
+            16
+          ],
+          "to": [
+            11,
+            17
+          ],
+          "text": "临场应变能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06251",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            18
+          ],
+          "to": [
+            0,
+            19
+          ],
+          "text": "向生产提供有效有力的技术能力和数据支持"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            27
+          ],
+          "to": [
+            21,
+            29
+          ],
+          "text": "监控生产薄弱环节"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06252",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            12
+          ],
+          "text": "开展风控文件体系建设"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            19
+          ],
+          "to": [
+            15,
+            21
+          ],
+          "text": "精准策划活动"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            20,
+            26
+          ],
+          "to": [
+            22,
+            28
+          ],
+          "text": "分层培训赋能"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            27,
+            34
+          ],
+          "to": [
+            29,
+            35
+          ],
+          "text": "多维宣导推广"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            35,
+            39
+          ],
+          "to": [
+            36,
+            42
+          ],
+          "text": "推动制度落地"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06254",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            1,
+            5
+          ],
+          "to": [
+            1,
+            7
+          ],
+          "text": "工作认真负责"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            6,
+            10
+          ],
+          "to": [
+            8,
+            12
+          ],
+          "text": "注重细节"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            11,
+            17
+          ],
+          "to": [
+            14,
+            21
+          ],
+          "text": "较强的质量意识"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06255",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            15,
+            18
+          ],
+          "to": [
+            6,
+            10
+          ],
+          "text": "财务管理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            27,
+            30
+          ],
+          "to": [
+            17,
+            20
+          ],
+          "text": "SAP"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            31,
+            37
+          ],
+          "to": [
+            21,
+            27
+          ],
+          "text": "蓝科合并报表"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06246\",\"spans\":[{\"start\":2,\"end\":21,\"text\":\"车险线上及线下业务系统的日常维护及优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求对业务系统执行日常维护和优化。\",\"issues\":[]},{\"id\":\"sp10k-06247\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"完整学历资格名。\",\"issues\":[]},{\"id\":\"sp10k-06248\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"产品生命周期管理\",\"label\":\"S\"},{\"start\":11,\"end\":19,\"text\":\"产品生命周期管理\",\"label\":\"S\"},{\"start\":19,\"end\":56,\"text\":\"参与或主导与产品规划相关的产线、产品平台、技术平台的专项规划策划活动\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"产品生命周期管理及专项规划策划均为明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06249\",\"spans\":[{\"start\":27,\"end\":35,\"text\":\"医药行业销售经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确行业背景及销售实践经验；泛化工作经验和应届生条件不标。\",\"issues\":[]},{\"id\":\"sp10k-06250\",\"spans\":[{\"start\":5,\"end\":7,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":8,\"end\":10,\"text\":\"理解\",\"label\":\"T\"},{\"start\":11,\"end\":16,\"text\":\"临场应变能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为跨行业通用能力或个人特质。\",\"issues\":[]},{\"id\":\"sp10k-06251\",\"spans\":[{\"start\":0,\"end\":18,\"text\":\"向生产提供有效有力的技术能力和数据支持\",\"label\":\"S\"},{\"start\":19,\"end\":27,\"text\":\"监控生产薄弱环节\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行生产技术支持和生产环节监控。\",\"issues\":[]},{\"id\":\"sp10k-06252\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"开展风控文件体系建设\",\"label\":\"S\"},{\"start\":11,\"end\":19,\"text\":\"精准策划活动\",\"label\":\"S\"},{\"start\":20,\"end\":26,\"text\":\"分层培训赋能\",\"label\":\"S\"},{\"start\":27,\"end\":34,\"text\":\"多维宣导推广\",\"label\":\"S\"},{\"start\":35,\"end\":39,\"text\":\"推动制度落地\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确要求候选人参与执行的风控建设、活动策划、培训、宣导和制度落地活动；结果性表述不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-06253\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"返修工程内务、考评等工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行返修工程相关工作。\",\"issues\":[]},{\"id\":\"sp10k-06254\",\"spans\":[{\"start\":1,\"end\":5,\"text\":\"工作认真负责\",\"label\":\"T\"},{\"start\":6,\"end\":10,\"text\":\"注重细节\",\"label\":\"T\"},{\"start\":11,\"end\":17,\"text\":\"较强的质量意识\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为通用工作特质。\",\"issues\":[]},{\"id\":\"sp10k-06255\",\"spans\":[{\"start\":15,\"end\":18,\"text\":\"财务管理\",\"label\":\"S\"},{\"start\":27,\"end\":30,\"text\":\"SAP\",\"label\":\"S\"},{\"start\":31,\"end\":37,\"text\":\"蓝科合并报表\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"财务管理为明确职业活动，SAP及蓝科合并报表为岗位使用系统；工作经验年限不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06246",
+        "spans": [
+          {
+            "start": 2,
+            "end": 21,
+            "text": "车险线上及线下业务系统的日常维护及优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求对业务系统执行日常维护和优化。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06247",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "完整学历资格名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06248",
+        "spans": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "产品生命周期管理",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 19,
+            "text": "产品生命周期管理",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 54,
+            "text": "参与或主导与产品规划相关的产线、产品平台、技术平台的专项规划策划活动",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "产品生命周期管理及专项规划策划均为明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06249",
+        "spans": [
+          {
+            "start": 28,
+            "end": 36,
+            "text": "医药行业销售经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确行业背景及销售实践经验；泛化工作经验和应届生条件不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06250",
+        "spans": [
+          {
+            "start": 5,
+            "end": 7,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "理解",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "临场应变能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为跨行业通用能力或个人特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06251",
+        "spans": [
+          {
+            "start": 0,
+            "end": 19,
+            "text": "向生产提供有效有力的技术能力和数据支持",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 29,
+            "text": "监控生产薄弱环节",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行生产技术支持和生产环节监控。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06252",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "开展风控文件体系建设",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "精准策划活动",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "分层培训赋能",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "多维宣导推广",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 42,
+            "text": "推动制度落地",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确要求候选人参与执行的风控建设、活动策划、培训、宣导和制度落地活动；结果性表述不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06253",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "返修工程内务、考评等工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行返修工程相关工作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06254",
+        "spans": [
+          {
+            "start": 1,
+            "end": 7,
+            "text": "工作认真负责",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "注重细节",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "text": "较强的质量意识",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为通用工作特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06255",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "财务管理",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 20,
+            "text": "SAP",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "text": "蓝科合并报表",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "财务管理为明确职业活动，SAP及蓝科合并报表为岗位使用系统；工作经验年限不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 245,
+  "ids": [
+    "sp10k-06246",
+    "sp10k-06247",
+    "sp10k-06248",
+    "sp10k-06249",
+    "sp10k-06250",
+    "sp10k-06251",
+    "sp10k-06252",
+    "sp10k-06253",
+    "sp10k-06254",
+    "sp10k-06255"
+  ],
+  "at": "2026-09-13T17:41:30.012443+00:00"
+}

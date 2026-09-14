@@ -1,0 +1,462 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02834",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告阅读提示，不含能力、知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02835",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考证明材料及行政流程要求，不标泛化工作经历。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02836",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "客户服务意思",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "协助能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "服务意识及沟通协助素质为T；保留原文“意思”。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02837",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "大专及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格；视力条件不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02838",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "现场实施",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "客户培训",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "系统维护",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "项目验收",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "四项独立职业活动分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02839",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "向上反馈",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 17,
+          "text": "按要求执行工作任务",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "向上反馈及依要求执行任务属于通用工作能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02840",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "网络工程",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "text": "计算机科学与技术",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 24,
+          "text": "电子科学与技术",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体专业名分别标K，泛化相关专业不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02841",
+      "spans": [
+        {
+          "start": 5,
+          "end": 15,
+          "text": "系统环境的漏洞的扫描",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 41,
+          "text": "网络、系统、数据库、业务系统的安全风险评估和加固",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "漏洞扫描与安全评估加固为职业活动；保留后项共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02842",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明考试时间安排，不据此抽取临床技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02843",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "SOP等标准化文档编写",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 19,
+          "text": "知识库更新",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取文档编写与知识库更新两项职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02844",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "专业目录核对及报名资格确认流程，不含具体专业要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02845",
+      "spans": [
+        {
+          "start": 11,
+          "end": 18,
+          "text": "系统的运行维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统运行维护为S；驻场地点及可用性、效率结果不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02846",
+      "spans": [
+        {
+          "start": 2,
+          "end": 24,
+          "text": "cisco路由器、防火墙、交换机等设备的配置",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 39,
+          "text": "局域网的组建、管理及维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备配置和局域网操作为S；各自保留必要共享成分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02847",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 31,
+          "text": "资本市场相关实践经验",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "专业名标K；资本市场实践经历保留经验整体标S；海外留学背景范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "海外留学背景",
+          "alternatives": [
+            "纳入教育背景资格要求",
+            "排除非具体能力或资格的经历背景"
+          ],
+          "reason": "明确要求留学背景，但未说明学历资格或相关职业实践，协议未明确此类背景是否纳入。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02848",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "系统管理知识",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 21,
+          "text": "本行业相关知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项均明确以知识为要求，按原文抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02849",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "仅有条件编号引用，无法恢复具体要求。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "具备第（2）至（5）项条件",
+          "alternatives": [
+            "所引条件包含能力、知识或资格要求",
+            "所引条件仅为非标注范围条件"
+          ],
+          "reason": "缺少第（2）至（5）项正文，无法判断被引用条件的标注范围。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02850",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘方资格复审及面试通知流程，不是候选人职业要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02851",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "计算机网络、机房服务器维护",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "数据备份",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "维护项保留共享动作；数据备份独立抽取，稳定运行结果不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02852",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "离散制造业生产制造模式",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 25,
+          "text": "车间现场生产计划管理",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "制造管理",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "生产追踪",
+          "label": "K"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "质量管理",
+          "label": "K"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "生产物流",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "局部要求理解制造模式及相关业务领域知识，未提出实际执行或实践经历。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02853",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "ERP财务和供应链的原理",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "项目管理方法",
+          "label": "K"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "text": "ORACLE",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 40,
+          "text": "SQL",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "原理及概括管理方法为K；明确使用的工具为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02854",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "智慧运维等项目的设计开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设计开发保留共享项目对象，去除职责触发词及泛化工作后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02855",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考材料清单，不含具体资格名称或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02857",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "在读生报考限制，不构成具体学历资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02858",
+      "spans": [
+        {
+          "start": 4,
+          "end": 19,
+          "text": "项目策划、申报、考核及日常管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "项目职能活动共享项目对象，保留连续完整提及；对外要求属于泛化结果。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02859",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 14,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "text": "PHP开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业及学历标K；具体开发活动标S，年限和工作经验后缀不标。",
+      "issues": []
+    }
+  ]
+}

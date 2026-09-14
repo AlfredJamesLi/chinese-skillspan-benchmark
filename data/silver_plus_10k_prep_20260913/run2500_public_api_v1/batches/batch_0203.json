@@ -1,0 +1,276 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 46.378,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5045,
+    "completion_tokens": 1460,
+    "total_tokens": 6505,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5045,
+    "output_tokens": 1460,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05826\",\"spans\":[{\"start\":7,\"end\":11,\"text\":\"技术培训\",\"label\":\"S\"},{\"start\":14,\"end\":22,\"text\":\"跟进执行保险合同\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取技术培训及合同执行活动，去除泛化工作修饰。\",\"issues\":[]},{\"id\":\"sp10k-05827\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"安全意识\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"环保意识\",\"label\":\"T\"},{\"start\":18,\"end\":31,\"text\":\"维护写字楼的安全和环境卫生\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"意识要求为通用素质；维护写字楼安全与卫生为具体职业活动。\",\"issues\":[]},{\"id\":\"sp10k-05828\",\"spans\":[{\"start\":12,\"end\":19,\"text\":\"开展维护性工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确维护活动；负责人身份及对安全质量负责的结果性要求不另标。\",\"issues\":[]},{\"id\":\"sp10k-05829\",\"spans\":[{\"start\":3,\"end\":9,\"text\":\"电镀工艺流程\",\"label\":\"K\"},{\"start\":10,\"end\":16,\"text\":\"相关设备操作\",\"label\":\"S\"},{\"start\":22,\"end\":28,\"text\":\"技术理解能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"工艺流程为知识，设备操作为技能；技术理解能力由局部电镀技术语境限定。\",\"issues\":[]},{\"id\":\"sp10k-05830\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"对接客户\",\"label\":\"T\"},{\"start\":7,\"end\":13,\"text\":\"汇报投产良率\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"客户联络及向客户汇报按通用沟通能力标注；任职资格为标题。\",\"issues\":[]},{\"id\":\"sp10k-05831\",\"spans\":[{\"start\":9,\"end\":24,\"text\":\"写字楼内各类机电设备的日常巡检\",\"label\":\"S\"},{\"start\":25,\"end\":27,\"text\":\"维护\",\"label\":\"S\"},{\"start\":28,\"end\":32,\"text\":\"故障处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分巡检、维护和故障处理，后两项的设备对象由局部共享语境限定。\",\"issues\":[]},{\"id\":\"sp10k-05832\",\"spans\":[{\"start\":7,\"end\":11,\"text\":\"团队搭建\",\"label\":\"T\"},{\"start\":12,\"end\":16,\"text\":\"梯队培养\",\"label\":\"T\"},{\"start\":17,\"end\":21,\"text\":\"激励能力\",\"label\":\"T\"},{\"start\":25,\"end\":29,\"text\":\"目标管理\",\"label\":\"T\"},{\"start\":30,\"end\":34,\"text\":\"教练辅导\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取通用团队组织、培养与管理能力；团队管理为概括标题，效能提升为目标，不另标。\",\"issues\":[]},{\"id\":\"sp10k-05833\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"供应商质量档案的维护更新\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"保留档案对象与维护更新动作构成完整职业活动。\",\"issues\":[]},{\"id\":\"sp10k-05834\",\"spans\":[{\"start\":3,\"end\":12,\"text\":\"数控加工工艺的管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数控加工工艺管理为明确专业职能，去除责任触发词和泛化限定。\",\"issues\":[]},{\"id\":\"sp10k-05835\",\"spans\":[{\"start\":2,\"end\":17,\"text\":\"硅烷气操作规程及操作标准的编制\",\"label\":\"S\"},{\"start\":18,\"end\":20,\"text\":\"培训\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取规程标准编制与培训活动；培训对象由前文共享，规程标准作为编制对象不嵌套标注。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05826",
+        "spans": [
+          {
+            "start": 7,
+            "end": 11,
+            "text": "技术培训",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 22,
+            "text": "跟进执行保险合同",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取技术培训及合同执行活动，去除泛化工作修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05827",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "安全意识",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "环保意识",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 31,
+            "text": "维护写字楼的安全和环境卫生",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "意识要求为通用素质；维护写字楼安全与卫生为具体职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05828",
+        "spans": [
+          {
+            "start": 12,
+            "end": 19,
+            "text": "开展维护性工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确维护活动；负责人身份及对安全质量负责的结果性要求不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05829",
+        "spans": [
+          {
+            "start": 3,
+            "end": 9,
+            "text": "电镀工艺流程",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "相关设备操作",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "技术理解能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "工艺流程为知识，设备操作为技能；技术理解能力由局部电镀技术语境限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05830",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "对接客户",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "text": "汇报投产良率",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "客户联络及向客户汇报按通用沟通能力标注；任职资格为标题。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05831",
+        "spans": [
+          {
+            "start": 9,
+            "end": 24,
+            "text": "写字楼内各类机电设备的日常巡检",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 27,
+            "text": "维护",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "故障处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分巡检、维护和故障处理，后两项的设备对象由局部共享语境限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05832",
+        "spans": [
+          {
+            "start": 7,
+            "end": 11,
+            "text": "团队搭建",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "梯队培养",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "激励能力",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "目标管理",
+            "label": "T"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "教练辅导",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取通用团队组织、培养与管理能力；团队管理为概括标题，效能提升为目标，不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05833",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "供应商质量档案的维护更新",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留档案对象与维护更新动作构成完整职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05834",
+        "spans": [
+          {
+            "start": 3,
+            "end": 12,
+            "text": "数控加工工艺的管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数控加工工艺管理为明确专业职能，去除责任触发词和泛化限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05835",
+        "spans": [
+          {
+            "start": 2,
+            "end": 17,
+            "text": "硅烷气操作规程及操作标准的编制",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 20,
+            "text": "培训",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取规程标准编制与培训活动；培训对象由前文共享，规程标准作为编制对象不嵌套标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 203,
+  "ids": [
+    "sp10k-05826",
+    "sp10k-05827",
+    "sp10k-05828",
+    "sp10k-05829",
+    "sp10k-05830",
+    "sp10k-05831",
+    "sp10k-05832",
+    "sp10k-05833",
+    "sp10k-05834",
+    "sp10k-05835"
+  ],
+  "at": "2026-09-13T17:01:16.156134+00:00"
+}

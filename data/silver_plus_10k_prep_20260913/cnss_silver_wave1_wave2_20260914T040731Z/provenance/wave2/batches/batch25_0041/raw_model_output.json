@@ -1,0 +1,603 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04744",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "人才补助和科研经费属于待遇说明，未具体列出能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04745",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明应聘资格复审流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04746",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "岗位汇总表文件名，不构成具体任职要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04747",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 28,
+          "text": "大中型系统运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历及专业为K；具体运维活动为S，去除年限和经验后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04748",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明材料审查及考试资格取消规则。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04749",
+      "spans": [
+        {
+          "start": 13,
+          "end": 21,
+          "text": "药学专业相关知识",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "公共基础知识",
+          "label": "K"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "专业知识",
+          "label": "K"
+        },
+        {
+          "start": 38,
+          "end": 44,
+          "text": "公共基础知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "笔试明确考查的知识为K；保留后文对同一知识要求的重复提及，分值不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04750",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明资格复审材料提交要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04751",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "空调等同类机电产品",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "品牌",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 26,
+          "text": "对选型进行专业评定",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "产品及品牌认知为K；选型评定为具体职业活动S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04752",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明应聘材料上传和文件命名流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04753",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅含有效期、职位、部门及要求标题，没有具体要求内容。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04754",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考排除条件及禁止行为说明，不包含具体能力、知识或资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04755",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "运维开发能力",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 23,
+          "text": "相关技术专业领域技术认证证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维开发为领域能力S；技术认证资格为K，保留领域限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04756",
+      "spans": [
+        {
+          "start": 8,
+          "end": 14,
+          "text": "语言表达能力",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "综合分析能力",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "解决问题能力",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "自我认知",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确考查的通用能力为T；语言表达不指具体语种，成绩规则不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04757",
+      "spans": [
+        {
+          "start": 10,
+          "end": 22,
+          "text": "设备设施运维管理业务推动",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "指导培训",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "考核监督",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "按设备设施运维业务中的独立职业活动拆分，后两项共享局部业务对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04758",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "配电设备维修",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "日常维护保养",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 30,
+          "text": "预防性维护保养计划的执行",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "维修、维护保养及计划执行分别为S，设备对象由局部语境共享。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04759",
+      "spans": [
+        {
+          "start": 7,
+          "end": 10,
+          "text": "PLC",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "DDC",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "AB",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 24,
+          "text": "西门子",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 28,
+          "text": "施耐德",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 31,
+          "text": "GE",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 34,
+          "text": "江森",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "霍尼韦尔",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 51,
+          "text": "图纸的设计",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "text": "程序编制",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备及括号内代指相应设备的品牌处于岗位运用语境，标S；设计与编程分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04760",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "J2EE技术路线",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "text": "MyBatis",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "SPring",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "技术路线为K；明确应用的框架为S，保留原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04761",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "TCP/IP",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "路由",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "交换",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "text": "VPN",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 25,
+          "text": "QoS",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "网络安全",
+          "label": "K"
+        },
+        {
+          "start": 36,
+          "end": 45,
+          "text": "交换机和路由器配置",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "前段由知识语境限定为K；配置为S，并列设备保留共享动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04762",
+      "spans": [
+        {
+          "start": 5,
+          "end": 14,
+          "text": "软件理解和应用能力",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 36,
+          "text": "MYSQL数据库的操作及维护知识",
+          "label": "K"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "维护能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "领域绑定能力为S；明确以知识为中心的数据库短语为K，维护能力回指该数据库。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04763",
+      "spans": [
+        {
+          "start": 9,
+          "end": 13,
+          "text": "现场维护",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "客户沟通",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "协调",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 35,
+          "text": "响应客户现场需求",
+          "label": "S"
+        },
+        {
+          "start": 43,
+          "end": 47,
+          "text": "应急响应",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 52,
+          "text": "系统扩容",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维维护、需求响应和扩容为S，客户沟通协调为T；故障及需求变更作为响应对象，不另造执行动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04764",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "保险核心业务系统生产问题受理",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "记录",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "分析",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "处理",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 28,
+          "text": "整理",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 44,
+          "text": "系统问题情况汇总",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 47,
+          "text": "报告",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "按独立职业动作拆分；记录、分析、处理、整理共享系统生产问题对象，报告承接系统问题情况。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04765",
+      "spans": [
+        {
+          "start": 0,
+          "end": 10,
+          "text": "全日制硕士研究生学历",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "测绘",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 30,
+          "text": "测绘中级及以上职称",
+          "label": "K"
+        },
+        {
+          "start": 35,
+          "end": 37,
+          "text": "管理",
+          "label": "T"
+        },
+        {
+          "start": 49,
+          "end": 53,
+          "text": "高级职称",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历、专业与职称为K，通用管理为T；保留年龄放宽条件中的资格，年限和年龄不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04766",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅指定专业认定所依据的目录，未列出具体专业要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04767",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明通告适用范围及解释单位。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04768",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "Windows平台的各种策略",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "常规设置",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "范围和连续边界明确；策略与设置缺少知识认知或实际配置语境，S仅为类型待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "Windows平台的各种策略",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可能要求理解平台策略知识，也可能要求运用和配置策略；仅凭熟悉无法确定。"
+        },
+        {
+          "kind": "type",
+          "text": "常规设置",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可能指设置项知识，也可能指执行常规配置；缺少明确知识或操作限定。"
+        }
+      ]
+    }
+  ]
+}

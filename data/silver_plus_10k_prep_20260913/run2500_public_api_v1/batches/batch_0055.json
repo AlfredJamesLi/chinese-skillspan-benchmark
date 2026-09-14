@@ -1,0 +1,251 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 45.04,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4975,
+    "completion_tokens": 1408,
+    "total_tokens": 6383,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 624
+    },
+    "input_tokens": 4975,
+    "output_tokens": 1408,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00541",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            23
+          ],
+          "to": [
+            19,
+            24
+          ],
+          "text": "故障的排除"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00541\",\"spans\":[{\"start\":6,\"end\":18,\"text\":\"局域网与域的日常管理维护\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"故障的排除\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取网络管理维护及故障排除职责，保留共享对象。\",\"issues\":[]},{\"id\":\"sp10k-00542\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"C++语言\",\"label\":\"S\"},{\"start\":14,\"end\":27,\"text\":\"windows平台软件开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"开发语境中的编程语言为工具技能；开发活动去除年限及经验后意义完整。\",\"issues\":[]},{\"id\":\"sp10k-00543\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"办公网络环境的维护\",\"label\":\"S\"},{\"start\":12,\"end\":19,\"text\":\"终端设备的维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取两个具有独立对象的维护活动。\",\"issues\":[]},{\"id\":\"sp10k-00544\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"环保风控\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"环保风控为职业活动；确保项目环保化仅为结果要求，不标。\",\"issues\":[]},{\"id\":\"sp10k-00545\",\"spans\":[{\"start\":4,\"end\":13,\"text\":\"ERP前期需求调研\",\"label\":\"S\"},{\"start\":14,\"end\":26,\"text\":\"ERP系统的产品功能调研\",\"label\":\"S\"},{\"start\":27,\"end\":38,\"text\":\"制定ERP项目实施方案\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取需求调研、产品功能调研及实施方案制定职责。\",\"issues\":[]},{\"id\":\"sp10k-00546\",\"spans\":[{\"start\":15,\"end\":23,\"text\":\"通信设备安装督导\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整的设备安装督导活动，去除泛化修饰及工作后缀。\",\"issues\":[]},{\"id\":\"sp10k-00547\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅泛指岗位所需学历学位、专业技术及其他要求，未给出具体资格或技能。\",\"issues\":[]},{\"id\":\"sp10k-00548\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅笼统要求符合岗位资格条件，没有具体能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00549\",\"spans\":[{\"start\":4,\"end\":16,\"text\":\"运营软硬件设备建设及管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"建设及管理共享运营软硬件设备对象，保留完整活动跨度。\",\"issues\":[]},{\"id\":\"sp10k-00550\",\"spans\":[{\"start\":23,\"end\":35,\"text\":\"临床医学（骨外科学方向）\",\"label\":\"K\"},{\"start\":36,\"end\":46,\"text\":\"外科学（骨外科方向）\",\"label\":\"K\"},{\"start\":46,\"end\":51,\"text\":\"研究生学历\",\"label\":\"K\"},{\"start\":51,\"end\":58,\"text\":\"硕士及以上学位\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取专业及其方向、学历与学位要求；年龄、中心名称、职位及人数不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00541",
+        "spans": [
+          {
+            "start": 6,
+            "end": 18,
+            "text": "局域网与域的日常管理维护",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 24,
+            "text": "故障的排除",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取网络管理维护及故障排除职责，保留共享对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00542",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "C++语言",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 27,
+            "text": "windows平台软件开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "开发语境中的编程语言为工具技能；开发活动去除年限及经验后意义完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00543",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "办公网络环境的维护",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "text": "终端设备的维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取两个具有独立对象的维护活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00544",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "环保风控",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "环保风控为职业活动；确保项目环保化仅为结果要求，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00545",
+        "spans": [
+          {
+            "start": 4,
+            "end": 13,
+            "text": "ERP前期需求调研",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 26,
+            "text": "ERP系统的产品功能调研",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 38,
+            "text": "制定ERP项目实施方案",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取需求调研、产品功能调研及实施方案制定职责。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00546",
+        "spans": [
+          {
+            "start": 15,
+            "end": 23,
+            "text": "通信设备安装督导",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整的设备安装督导活动，去除泛化修饰及工作后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00547",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅泛指岗位所需学历学位、专业技术及其他要求，未给出具体资格或技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00548",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅笼统要求符合岗位资格条件，没有具体能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00549",
+        "spans": [
+          {
+            "start": 4,
+            "end": 16,
+            "text": "运营软硬件设备建设及管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "建设及管理共享运营软硬件设备对象，保留完整活动跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00550",
+        "spans": [
+          {
+            "start": 23,
+            "end": 35,
+            "text": "临床医学（骨外科学方向）",
+            "label": "K"
+          },
+          {
+            "start": 36,
+            "end": 46,
+            "text": "外科学（骨外科方向）",
+            "label": "K"
+          },
+          {
+            "start": 46,
+            "end": 51,
+            "text": "研究生学历",
+            "label": "K"
+          },
+          {
+            "start": 51,
+            "end": 58,
+            "text": "硕士及以上学位",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取专业及其方向、学历与学位要求；年龄、中心名称、职位及人数不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 55,
+  "ids": [
+    "sp10k-00541",
+    "sp10k-00542",
+    "sp10k-00543",
+    "sp10k-00544",
+    "sp10k-00545",
+    "sp10k-00546",
+    "sp10k-00547",
+    "sp10k-00548",
+    "sp10k-00549",
+    "sp10k-00550"
+  ],
+  "at": "2026-09-13T14:37:05.425373+00:00"
+}

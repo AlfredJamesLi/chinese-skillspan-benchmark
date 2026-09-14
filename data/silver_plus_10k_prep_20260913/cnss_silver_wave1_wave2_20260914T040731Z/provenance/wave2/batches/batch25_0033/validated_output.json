@@ -1,0 +1,551 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04537",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅泛指岗位条件，未给出具体学历、专业、资格或技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04538",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘岗位要求表的标题，无具体候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04539",
+      "spans": [
+        {
+          "start": 9,
+          "end": 20,
+          "text": "运维整体解决方案与规划",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 34,
+          "text": "制定运维工作计划及进度目标",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取运维方案规划及工作计划制定职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04540",
+      "spans": [
+        {
+          "start": 7,
+          "end": 9,
+          "text": "AI",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "PS",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "Pr",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "Ae",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 22,
+          "text": "C4D",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件技术要求中的工具名按岗位运用标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04541",
+      "spans": [
+        {
+          "start": 7,
+          "end": 12,
+          "text": "临床医学类",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "text": "本科及以上",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "学士及以上",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 31,
+          "text": "执业医师证",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 44,
+          "text": "住院医师规范化培训证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业、学历、学位及证书；岗位名称和规培豁免描述不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04542",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "产品文档的编写",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "产品意识",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "竞品分析",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "市场预判",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "策划方案能力",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "职业动作分别抽取；产品意识的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "产品意识",
+          "alternatives": [
+            "S",
+            "T"
+          ],
+          "reason": "括注指向产品专业判断，但意识本身也可表示可迁移的思维特质，现有规则未明确两者界限。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04543",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "医院业务",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "运行流程",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "民营医院",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "业务及流程为领域知识；医院背景保留领域核心名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04544",
+      "spans": [
+        {
+          "start": 3,
+          "end": 19,
+          "text": "客户现场突发事件的快速响应和处理",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "排除故障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "响应和处理保留共享事件对象，故障排除独立抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04545",
+      "spans": [
+        {
+          "start": 0,
+          "end": 8,
+          "text": "热爱基础教育事业",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 19,
+          "text": "基础教育教学规律",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "政策法规",
+          "label": "K"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "text": "小学管理能力",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "行政能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取职业热情、教育知识及管理职能能力；末段援引任职条件，未具体展开资格或要求掌握该文件。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04546",
+      "spans": [
+        {
+          "start": 7,
+          "end": 13,
+          "text": "产品技术培训",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "为售后人员开展培训属于执行职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04547",
+      "spans": [
+        {
+          "start": 8,
+          "end": 16,
+          "text": "大型管理软件实施",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "售后运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取具体实践活动；金融、财务限定软件应用领域，不另作行业背景要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04548",
+      "spans": [
+        {
+          "start": 4,
+          "end": 12,
+          "text": "硬件固定资产统计",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "text": "更新",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取资产统计及资料更新，更新对象由局部上下文承接。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04549",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "孤立证书条目不能确认是资格要求还是报名材料。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "国家承认的学历学位证书",
+          "alternatives": [
+            "候选人学历学位资格要求，纳入K",
+            "报名或资格复审材料，不纳入"
+          ],
+          "reason": "缺少条目所属标题和上下文，无法判定证书提及的用途。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04550",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "Windows网络系统",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 34,
+          "text": "安装、配置各种服务器常用的软、硬件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统处于安装配置的运用语境；安装与配置保留共享软硬件对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04551",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格复审名单通知及公布流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04552",
+      "spans": [
+        {
+          "start": 2,
+          "end": 20,
+          "text": "零售流通或餐饮、酒店宾馆企业管理流程",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "超市POS系统",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 41,
+          "text": "餐饮、酒店宾馆管理系统",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 48,
+          "text": "技术支持",
+          "label": "S"
+        },
+        {
+          "start": 49,
+          "end": 51,
+          "text": "实施",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 54,
+          "text": "维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "管理流程为知识；系统与支持、实施、维护受明确实践经验限定。共享中心词保留必要长跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04553",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "JS脚本语言",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "ORACLE",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 35,
+          "text": "SQLSERVER",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 41,
+          "text": "MYSQL",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历及岗位语言、数据库工具；数据库为枚举类别，不重复标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04554",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应聘者进入专业面试的行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04555",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "描述运动员招聘评估程序，未给出具体项目、等级或资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04556",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "住培人员同等对待政策说明，其中学历和住培描述用于界定政策对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04557",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "text": "网络通信",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "信息安全",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "本科以上",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "text": "CISSP",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "CISP",
+          "label": "K"
+        },
+        {
+          "start": 36,
+          "end": 42,
+          "text": "CISA证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业、学历及非语言资格；并列证书不补写共享后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04558",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "资产管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "资产管理为具体职业职能，大区为职责覆盖范围。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04559",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "按成绩确定资格复审及档案审核人选的招聘程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04560",
+      "spans": [
+        {
+          "start": 9,
+          "end": 17,
+          "text": "后端系统架构设计",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "开发",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "架构设计、开发和优化为独立职责，后两项承接后端系统对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04561",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅年龄及出生日期限制，不属于能力、知识或资格提及。",
+      "issues": []
+    }
+  ]
+}

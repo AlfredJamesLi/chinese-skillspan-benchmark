@@ -1,0 +1,614 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 56.382,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5069,
+    "completion_tokens": 2052,
+    "total_tokens": 7121,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 971
+    },
+    "input_tokens": 5069,
+    "output_tokens": 2052,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-05918",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            14
+          ],
+          "to": [
+            10,
+            16
+          ],
+          "text": "大专以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05920",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            25,
+            29
+          ],
+          "to": [
+            17,
+            23
+          ],
+          "text": "岗位的开停车"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            30,
+            36
+          ],
+          "to": [
+            24,
+            30
+          ],
+          "text": "负荷调整工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05922",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            16
+          ],
+          "to": [
+            6,
+            16
+          ],
+          "text": "弱电产品的原理和参数"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            21
+          ],
+          "to": [
+            23,
+            25
+          ],
+          "text": "选型"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            24
+          ],
+          "to": [
+            26,
+            28
+          ],
+          "text": "采购"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            25,
+            27
+          ],
+          "to": [
+            29,
+            31
+          ],
+          "text": "调试"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05923",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            10,
+            16
+          ],
+          "to": [
+            7,
+            14
+          ],
+          "text": "订单开发与维护"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            27
+          ],
+          "to": [
+            15,
+            26
+          ],
+          "text": "建立长期稳定的合作关系"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05924",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            16
+          ],
+          "to": [
+            2,
+            14
+          ],
+          "text": "深入了解客户和各部门需求"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            21,
+            25
+          ],
+          "to": [
+            23,
+            27
+          ],
+          "text": "人工智能"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            26,
+            29
+          ],
+          "to": [
+            28,
+            31
+          ],
+          "text": "大数据"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            30,
+            33
+          ],
+          "to": [
+            32,
+            35
+          ],
+          "text": "物联网"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            34,
+            38
+          ],
+          "to": [
+            36,
+            40
+          ],
+          "text": "数字孪生"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            40,
+            50
+          ],
+          "to": [
+            43,
+            53
+          ],
+          "text": "将业务与技术深度融合"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            54,
+            65
+          ],
+          "to": [
+            59,
+            69
+          ],
+          "text": "改进数字化产品和服务"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            69,
+            79
+          ],
+          "to": [
+            77,
+            85
+          ],
+          "text": "推动传统工艺变革"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05925",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            14
+          ],
+          "to": [
+            2,
+            12
+          ],
+          "text": "监控数据库的运行状况"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            21
+          ],
+          "to": [
+            13,
+            20
+          ],
+          "text": "数据库定期巡检"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            34,
+            46
+          ],
+          "to": [
+            34,
+            43
+          ],
+          "text": "数据库备份恢复演练"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05916\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"判断分析\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"沟通协调\",\"label\":\"T\"},{\"start\":14,\"end\":18,\"text\":\"统筹规划\",\"label\":\"T\"},{\"start\":19,\"end\":26,\"text\":\"逻辑思维能力强\",\"label\":\"T\"},{\"start\":27,\"end\":31,\"text\":\"专业度高\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取判断分析、沟通协调、统筹规划及通用思维和职业特质要求。\",\"issues\":[]},{\"id\":\"sp10k-05917\",\"spans\":[{\"start\":3,\"end\":13,\"text\":\"完成简单项目系统图纸\",\"label\":\"S\"},{\"start\":19,\"end\":29,\"text\":\"单个项目施工图及下料\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取独立完成项目图纸、施工图及下料等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-05918\",\"spans\":[{\"start\":8,\"end\":14,\"text\":\"大专以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"年龄要求不属于能力、知识或资格标注范围；抽取学历资格。\",\"issues\":[]},{\"id\":\"sp10k-05919\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为完成领导布置的其他任务，缺乏具体可执行职业活动或能力内容。\",\"issues\":[]},{\"id\":\"sp10k-05920\",\"spans\":[{\"start\":25,\"end\":29,\"text\":\"岗位的开停车\",\"label\":\"S\"},{\"start\":30,\"end\":36,\"text\":\"负荷调整工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取岗位开停车和负荷调整等明确职业操作；其余为指挥、拒绝违章及权限表述。\",\"issues\":[]},{\"id\":\"sp10k-05921\",\"spans\":[{\"start\":10,\"end\":15,\"text\":\"EXCEL\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"WORD\",\"label\":\"S\"},{\"start\":21,\"end\":24,\"text\":\"PPT\",\"label\":\"S\"},{\"start\":25,\"end\":28,\"text\":\"CAD\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"办公软件及CAD处于岗位操作语境，按工具运用标注。\",\"issues\":[]},{\"id\":\"sp10k-05922\",\"spans\":[{\"start\":8,\"end\":16,\"text\":\"弱电产品的原理和参数\",\"label\":\"K\"},{\"start\":19,\"end\":21,\"text\":\"选型\",\"label\":\"S\"},{\"start\":22,\"end\":24,\"text\":\"采购\",\"label\":\"S\"},{\"start\":25,\"end\":27,\"text\":\"调试\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"产品原理和参数为领域知识；选型、采购、调试为可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-05923\",\"spans\":[{\"start\":10,\"end\":16,\"text\":\"订单开发与维护\",\"label\":\"S\"},{\"start\":17,\"end\":27,\"text\":\"建立长期稳定的合作关系\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取订单开发维护活动及建立客户合作关系这一通用关系维护能力；复购率为结果指标。\",\"issues\":[]},{\"id\":\"sp10k-05924\",\"spans\":[{\"start\":4,\"end\":16,\"text\":\"深入了解客户和各部门需求\",\"label\":\"S\"},{\"start\":21,\"end\":25,\"text\":\"人工智能\",\"label\":\"S\"},{\"start\":26,\"end\":29,\"text\":\"大数据\",\"label\":\"S\"},{\"start\":30,\"end\":33,\"text\":\"物联网\",\"label\":\"S\"},{\"start\":34,\"end\":38,\"text\":\"数字孪生\",\"label\":\"S\"},{\"start\":40,\"end\":50,\"text\":\"将业务与技术深度融合\",\"label\":\"S\"},{\"start\":54,\"end\":65,\"text\":\"改进数字化产品和服务\",\"label\":\"S\"},{\"start\":69,\"end\":79,\"text\":\"推动传统工艺变革\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取需求了解、先进技术运用及业务技术融合、数字化产品服务改进和传统工艺变革等活动。\",\"issues\":[]},{\"id\":\"sp10k-05925\",\"spans\":[{\"start\":4,\"end\":14,\"text\":\"监控数据库的运行状况\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"数据库定期巡检\",\"label\":\"S\"},{\"start\":34,\"end\":46,\"text\":\"数据库备份恢复演练\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取数据库监控、巡检及备份恢复演练；数据完整性保障为结果性表述。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05916",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "判断分析",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "沟通协调",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "统筹规划",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "text": "逻辑思维能力强",
+            "label": "T"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "专业度高",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取判断分析、沟通协调、统筹规划及通用思维和职业特质要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05917",
+        "spans": [
+          {
+            "start": 3,
+            "end": 13,
+            "text": "完成简单项目系统图纸",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 29,
+            "text": "单个项目施工图及下料",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取独立完成项目图纸、施工图及下料等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05918",
+        "spans": [
+          {
+            "start": 10,
+            "end": 16,
+            "text": "大专以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "年龄要求不属于能力、知识或资格标注范围；抽取学历资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05919",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为完成领导布置的其他任务，缺乏具体可执行职业活动或能力内容。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05920",
+        "spans": [
+          {
+            "start": 17,
+            "end": 23,
+            "text": "岗位的开停车",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "负荷调整工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取岗位开停车和负荷调整等明确职业操作；其余为指挥、拒绝违章及权限表述。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05921",
+        "spans": [
+          {
+            "start": 10,
+            "end": 15,
+            "text": "EXCEL",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "WORD",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 24,
+            "text": "PPT",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 28,
+            "text": "CAD",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "办公软件及CAD处于岗位操作语境，按工具运用标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05922",
+        "spans": [
+          {
+            "start": 6,
+            "end": 16,
+            "text": "弱电产品的原理和参数",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "选型",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "text": "采购",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 31,
+            "text": "调试",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "产品原理和参数为领域知识；选型、采购、调试为可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05923",
+        "spans": [
+          {
+            "start": 7,
+            "end": 14,
+            "text": "订单开发与维护",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 26,
+            "text": "建立长期稳定的合作关系",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取订单开发维护活动及建立客户合作关系这一通用关系维护能力；复购率为结果指标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05924",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "深入了解客户和各部门需求",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "人工智能",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 31,
+            "text": "大数据",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 35,
+            "text": "物联网",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "text": "数字孪生",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 53,
+            "text": "将业务与技术深度融合",
+            "label": "S"
+          },
+          {
+            "start": 59,
+            "end": 69,
+            "text": "改进数字化产品和服务",
+            "label": "S"
+          },
+          {
+            "start": 77,
+            "end": 85,
+            "text": "推动传统工艺变革",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取需求了解、先进技术运用及业务技术融合、数字化产品服务改进和传统工艺变革等活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05925",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "监控数据库的运行状况",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 20,
+            "text": "数据库定期巡检",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 43,
+            "text": "数据库备份恢复演练",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取数据库监控、巡检及备份恢复演练；数据完整性保障为结果性表述。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 212,
+  "ids": [
+    "sp10k-05916",
+    "sp10k-05917",
+    "sp10k-05918",
+    "sp10k-05919",
+    "sp10k-05920",
+    "sp10k-05921",
+    "sp10k-05922",
+    "sp10k-05923",
+    "sp10k-05924",
+    "sp10k-05925"
+  ],
+  "at": "2026-09-13T17:10:01.724394+00:00"
+}

@@ -1,0 +1,294 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06351",
+      "spans": [
+        {
+          "start": 9,
+          "end": 19,
+          "text": "Particle管控",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "专业技术支持",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "text": "解答客户疑问",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取管控技术支持及解答客户疑问等职业活动；客户需求属于结果性表述，不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06352",
+      "spans": [
+        {
+          "start": 7,
+          "end": 12,
+          "text": "大模型架构",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 33,
+          "text": "Transformer、GPT、BERT",
+          "label": "K"
+        },
+        {
+          "start": 36,
+          "end": 53,
+          "text": "主流中/英文开源模型特性与适用场景",
+          "label": "K"
+        },
+        {
+          "start": 55,
+          "end": 67,
+          "text": "根据业务需求选择合适模型",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "架构、模型特性及适用场景属于领域知识，按业务需求选择模型属于可执行动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06353",
+      "spans": [
+        {
+          "start": 4,
+          "end": 18,
+          "text": "EPC总承包项目安全管理经验",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "工业厂房",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "洁净工程",
+          "label": "K"
+        },
+        {
+          "start": 33,
+          "end": 36,
+          "text": "半导体",
+          "label": "K"
+        },
+        {
+          "start": 37,
+          "end": 40,
+          "text": "新能源",
+          "label": "K"
+        },
+        {
+          "start": 41,
+          "end": 43,
+          "text": "化工",
+          "label": "K"
+        },
+        {
+          "start": 44,
+          "end": 47,
+          "text": "大健康",
+          "label": "K"
+        },
+        {
+          "start": 48,
+          "end": 52,
+          "text": "数据中心",
+          "label": "K"
+        },
+        {
+          "start": 62,
+          "end": 68,
+          "text": "电气施工流程",
+          "label": "S"
+        },
+        {
+          "start": 69,
+          "end": 80,
+          "text": "全过程项目安全管理经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体项目安全管理经历、行业领域及电气施工流程均为候选人要求；年限和优先等修饰不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06354",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "供应链融资业务营销推动",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "供应链融资为业务对象，营销推动为明确职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06355",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "PLC电气系统",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "维护",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "修理",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "升级",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "PLC电气系统为岗位运用对象，维护、修理和升级为可执行职业动作；运行结果不标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06356",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "责任心强",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "注重细节",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 21,
+          "text": "ISO质量管理体系",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "EHS管理要求",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "责任心和细节意识为通用特质，质量管理体系及EHS要求为专业规范知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06357",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "团队日常管理",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "增员",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 19,
+          "text": "业务员技能提升",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "团队管理为通用组织管理能力，增员及业务员技能提升为明确职业活动；目标达成属于结果表述。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06358",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "服装对客经验",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "协调能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "服装对客为具体客户服务实践经历，沟通和协调能力为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06359",
+      "spans": [
+        {
+          "start": 23,
+          "end": 28,
+          "text": "会议的筹备",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 34,
+          "text": "开展及管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "会议筹备、开展及管理属于明确的会议管理职业活动，会议类型和议题为对象限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06360",
+      "spans": [
+        {
+          "start": 2,
+          "end": 19,
+          "text": "AC/DC,DC/DC项目开发经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "AC/DC、DC/DC项目开发为具体实践经历，保留经验以完整表达经历要求。",
+      "issues": []
+    }
+  ]
+}

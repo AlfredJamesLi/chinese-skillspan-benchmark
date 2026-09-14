@@ -1,0 +1,345 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 55.865,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4992,
+    "completion_tokens": 1981,
+    "total_tokens": 6973,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1127
+    },
+    "input_tokens": 4992,
+    "output_tokens": 1981,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06028",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            19
+          ],
+          "to": [
+            9,
+            21
+          ],
+          "text": "已交付小区的房屋维修工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06034",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            15
+          ],
+          "to": [
+            4,
+            13
+          ],
+          "text": "物业各设备维修技能"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            16,
+            22
+          ],
+          "to": [
+            14,
+            20
+          ],
+          "text": "强电维修技术"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            23,
+            33
+          ],
+          "to": [
+            25,
+            34
+          ],
+          "text": "给排水设备设施维护"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06035",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            6
+          ],
+          "to": [
+            0,
+            7
+          ],
+          "text": "学历大专及以上"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06026\",\"spans\":[{\"start\":2,\"end\":17,\"text\":\"各业态、品牌的市场动态调查分析\",\"label\":\"S\"},{\"start\":18,\"end\":24,\"text\":\"收集信息资料\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注市场调查分析和信息收集两项职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06027\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"大专以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注明确学历资格；泛化相关工作经验不标。\",\"issues\":[]},{\"id\":\"sp10k-06028\",\"spans\":[{\"start\":7,\"end\":19,\"text\":\"已交付小区的房屋维修工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注明确的房屋维修职业活动；确保居住状态为结果表述，不标。\",\"issues\":[]},{\"id\":\"sp10k-06029\",\"spans\":[{\"start\":5,\"end\":17,\"text\":\"与药品经营有关的法律法规\",\"label\":\"K\"},{\"start\":23,\"end\":28,\"text\":\"GSP条款\",\"label\":\"K\"},{\"start\":34,\"end\":40,\"text\":\"质量管理制度\",\"label\":\"K\"},{\"start\":41,\"end\":47,\"text\":\"各项规章制度\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注药品经营相关法规、GSP条款及制度规范知识。\",\"issues\":[]},{\"id\":\"sp10k-06030\",\"spans\":[{\"start\":2,\"end\":20,\"text\":\"建立和修订相关系统设备的操作保养规程\",\"label\":\"S\"},{\"start\":21,\"end\":26,\"text\":\"功能性检查\",\"label\":\"S\"},{\"start\":27,\"end\":29,\"text\":\"检验\",\"label\":\"S\"},{\"start\":30,\"end\":36,\"text\":\"测试技术支持\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注建立修订规程、检查检验及测试支持等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06031\",\"spans\":[{\"start\":2,\"end\":25,\"text\":\"ReportingServices报表开发工具\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注岗位使用的报表开发工具。\",\"issues\":[]},{\"id\":\"sp10k-06032\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"客户服务\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"客户支持\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"客户服务和客户支持属于跨岗位通用服务能力；年限及职位不标。\",\"issues\":[]},{\"id\":\"sp10k-06033\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"油气行业\",\"label\":\"K\"},{\"start\":13,\"end\":21,\"text\":\"详细设计工作经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注明确行业背景及详细设计实践要求，保留经验后缀以完整表达实践经历。\",\"issues\":[]},{\"id\":\"sp10k-06034\",\"spans\":[{\"start\":7,\"end\":15,\"text\":\"物业各设备维修技能\",\"label\":\"S\"},{\"start\":16,\"end\":22,\"text\":\"强电维修技术\",\"label\":\"S\"},{\"start\":23,\"end\":33,\"text\":\"给排水设备设施维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注设备维修、强电维修及给排水设施维护技能。\",\"issues\":[]},{\"id\":\"sp10k-06035\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"学历大专及以上\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注明确学历资格；相关专业属于泛化专业要求，不单独标注。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06026",
+        "spans": [
+          {
+            "start": 2,
+            "end": 17,
+            "text": "各业态、品牌的市场动态调查分析",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "text": "收集信息资料",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注市场调查分析和信息收集两项职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06027",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "大专以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注明确学历资格；泛化相关工作经验不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06028",
+        "spans": [
+          {
+            "start": 9,
+            "end": 21,
+            "text": "已交付小区的房屋维修工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注明确的房屋维修职业活动；确保居住状态为结果表述，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06029",
+        "spans": [
+          {
+            "start": 5,
+            "end": 17,
+            "text": "与药品经营有关的法律法规",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "text": "GSP条款",
+            "label": "K"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "text": "质量管理制度",
+            "label": "K"
+          },
+          {
+            "start": 41,
+            "end": 47,
+            "text": "各项规章制度",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注药品经营相关法规、GSP条款及制度规范知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06030",
+        "spans": [
+          {
+            "start": 2,
+            "end": 20,
+            "text": "建立和修订相关系统设备的操作保养规程",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "text": "功能性检查",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "text": "检验",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "text": "测试技术支持",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注建立修订规程、检查检验及测试支持等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06031",
+        "spans": [
+          {
+            "start": 2,
+            "end": 25,
+            "text": "ReportingServices报表开发工具",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注岗位使用的报表开发工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06032",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "客户服务",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "客户支持",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "客户服务和客户支持属于跨岗位通用服务能力；年限及职位不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06033",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "油气行业",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 21,
+            "text": "详细设计工作经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注明确行业背景及详细设计实践要求，保留经验后缀以完整表达实践经历。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06034",
+        "spans": [
+          {
+            "start": 4,
+            "end": 13,
+            "text": "物业各设备维修技能",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "强电维修技术",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 34,
+            "text": "给排水设备设施维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注设备维修、强电维修及给排水设施维护技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06035",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "学历大专及以上",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注明确学历资格；相关专业属于泛化专业要求，不单独标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 223,
+  "ids": [
+    "sp10k-06026",
+    "sp10k-06027",
+    "sp10k-06028",
+    "sp10k-06029",
+    "sp10k-06030",
+    "sp10k-06031",
+    "sp10k-06032",
+    "sp10k-06033",
+    "sp10k-06034",
+    "sp10k-06035"
+  ],
+  "at": "2026-09-13T17:24:02.477624+00:00"
+}

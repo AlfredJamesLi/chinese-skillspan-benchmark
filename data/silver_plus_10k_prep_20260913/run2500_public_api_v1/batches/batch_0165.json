@@ -1,0 +1,279 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 50.786,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5028,
+    "completion_tokens": 1557,
+    "total_tokens": 6585,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 643
+    },
+    "input_tokens": 5028,
+    "output_tokens": 1557,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01641\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"通信\",\"label\":\"K\"},{\"start\":3,\"end\":7,\"text\":\"电子工程\",\"label\":\"K\"},{\"start\":8,\"end\":11,\"text\":\"自动化\",\"label\":\"K\"},{\"start\":12,\"end\":17,\"text\":\"计算机网络\",\"label\":\"K\"},{\"start\":18,\"end\":22,\"text\":\"网络安全\",\"label\":\"K\"},{\"start\":26,\"end\":32,\"text\":\"专科以上学历\",\"label\":\"K\"},{\"start\":37,\"end\":53,\"text\":\"中型或以上网络安全项目的管理实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"专业及学历标K；项目管理实施为具体职业活动，去除经验后意义完整。\",\"issues\":[]},{\"id\":\"sp10k-01642\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于应聘资格初审及结果反馈流程，不是候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01643\",\"spans\":[{\"start\":14,\"end\":24,\"text\":\"Java实际项目开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取具体项目开发活动，排除经验年限及经验后缀。\",\"issues\":[]},{\"id\":\"sp10k-01644\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"文字功底\",\"label\":\"T\"},{\"start\":10,\"end\":16,\"text\":\"公文写作能力\",\"label\":\"S\"},{\"start\":23,\"end\":27,\"text\":\"办公软件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"文字功底为通用能力；公文写作是职业能力，办公软件处于实际使用语境。\",\"issues\":[]},{\"id\":\"sp10k-01645\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"环保三同时管理\",\"label\":\"S\"},{\"start\":9,\"end\":21,\"text\":\"项目建设“三同时”的要求\",\"label\":\"K\"},{\"start\":37,\"end\":43,\"text\":\"环境影响评价\",\"label\":\"S\"},{\"start\":44,\"end\":50,\"text\":\"环保设施设计\",\"label\":\"S\"},{\"start\":51,\"end\":55,\"text\":\"环保验收\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"区分环保管理职责、遵循的规范要求及可独立拆分的评价、设计、验收活动。\",\"issues\":[]},{\"id\":\"sp10k-01646\",\"spans\":[{\"start\":2,\"end\":17,\"text\":\"公司业务系统服务器的安全与维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"服务器安全与维护为明确职业职责，保留共享对象。\",\"issues\":[]},{\"id\":\"sp10k-01647\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明学历认定程序及公告出处，没有具体学历资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01648\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为招聘监督纪律说明，不涉及候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01649\",\"spans\":[{\"start\":0,\"end\":3,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":6,\"end\":15,\"text\":\"独立解决问题的能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"责任心及无特定职业对象限定的独立解决问题能力均为通用特质或能力。\",\"issues\":[]},{\"id\":\"sp10k-01650\",\"spans\":[{\"start\":13,\"end\":18,\"text\":\"高可用架构\",\"label\":\"K\"},{\"start\":19,\"end\":21,\"text\":\"监控\",\"label\":\"S\"},{\"start\":22,\"end\":29,\"text\":\"数据库性能调优\",\"label\":\"S\"},{\"start\":30,\"end\":34,\"text\":\"备份恢复\",\"label\":\"S\"},{\"start\":35,\"end\":39,\"text\":\"故障诊断\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"高可用架构为架构知识；监控、调优、备份恢复及故障诊断为数据库职业技术活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01641",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "通信",
+            "label": "K"
+          },
+          {
+            "start": 3,
+            "end": 7,
+            "text": "电子工程",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "text": "自动化",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "text": "计算机网络",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "网络安全",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "text": "专科以上学历",
+            "label": "K"
+          },
+          {
+            "start": 37,
+            "end": 53,
+            "text": "中型或以上网络安全项目的管理实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业及学历标K；项目管理实施为具体职业活动，去除经验后意义完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01642",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于应聘资格初审及结果反馈流程，不是候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01643",
+        "spans": [
+          {
+            "start": 14,
+            "end": 24,
+            "text": "Java实际项目开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取具体项目开发活动，排除经验年限及经验后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01644",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "文字功底",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "公文写作能力",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "办公软件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文字功底为通用能力；公文写作是职业能力，办公软件处于实际使用语境。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01645",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "环保三同时管理",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 21,
+            "text": "项目建设“三同时”的要求",
+            "label": "K"
+          },
+          {
+            "start": 37,
+            "end": 43,
+            "text": "环境影响评价",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 50,
+            "text": "环保设施设计",
+            "label": "S"
+          },
+          {
+            "start": 51,
+            "end": 55,
+            "text": "环保验收",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "区分环保管理职责、遵循的规范要求及可独立拆分的评价、设计、验收活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01646",
+        "spans": [
+          {
+            "start": 2,
+            "end": 17,
+            "text": "公司业务系统服务器的安全与维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "服务器安全与维护为明确职业职责，保留共享对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01647",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明学历认定程序及公告出处，没有具体学历资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01648",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为招聘监督纪律说明，不涉及候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01649",
+        "spans": [
+          {
+            "start": 0,
+            "end": 3,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 6,
+            "end": 15,
+            "text": "独立解决问题的能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "责任心及无特定职业对象限定的独立解决问题能力均为通用特质或能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01650",
+        "spans": [
+          {
+            "start": 13,
+            "end": 18,
+            "text": "高可用架构",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 21,
+            "text": "监控",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 29,
+            "text": "数据库性能调优",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "备份恢复",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 39,
+            "text": "故障诊断",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "高可用架构为架构知识；监控、调优、备份恢复及故障诊断为数据库职业技术活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 165,
+  "ids": [
+    "sp10k-01641",
+    "sp10k-01642",
+    "sp10k-01643",
+    "sp10k-01644",
+    "sp10k-01645",
+    "sp10k-01646",
+    "sp10k-01647",
+    "sp10k-01648",
+    "sp10k-01649",
+    "sp10k-01650"
+  ],
+  "at": "2026-09-13T16:27:09.762645+00:00"
+}

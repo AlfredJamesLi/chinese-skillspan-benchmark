@@ -1,0 +1,741 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 42.008,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4992,
+    "completion_tokens": 1395,
+    "total_tokens": 6387,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 394
+    },
+    "input_tokens": 4992,
+    "output_tokens": 1395,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01521",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            19
+          ],
+          "to": [
+            2,
+            17
+          ],
+          "text": "MSSQLServer常用技术"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            23,
+            33
+          ],
+          "to": [
+            20,
+            27
+          ],
+          "text": "T-SQL语言"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            35,
+            41
+          ],
+          "to": [
+            29,
+            34
+          ],
+          "text": "数据库开发"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01522",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            14
+          ],
+          "to": [
+            5,
+            11
+          ],
+          "text": "文档编写能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            20
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "沟通能力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            21,
+            27
+          ],
+          "to": [
+            17,
+            23
+          ],
+          "text": "现场应变能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01523",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            10
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "安卓端应用开发"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "迭代优化"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            22
+          ],
+          "to": [
+            15,
+            20
+          ],
+          "text": "兼容性调试"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            23,
+            27
+          ],
+          "to": [
+            21,
+            25
+          ],
+          "text": "性能优化"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01524",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            14
+          ],
+          "to": [
+            6,
+            12
+          ],
+          "text": "设备安装配置"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            18
+          ],
+          "to": [
+            13,
+            16
+          ],
+          "text": "防火墙"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            19,
+            22
+          ],
+          "to": [
+            17,
+            20
+          ],
+          "text": "交换机"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            23,
+            26
+          ],
+          "to": [
+            21,
+            24
+          ],
+          "text": "路由器"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            27,
+            29
+          ],
+          "to": [
+            25,
+            27
+          ],
+          "text": "无线"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01525",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            20
+          ],
+          "to": [
+            4,
+            23
+          ],
+          "text": ".NETFramework(C#)开发"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            23,
+            34
+          ],
+          "to": [
+            27,
+            41
+          ],
+          "text": "C/S和B/S构架的应用程序"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01526",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            11
+          ],
+          "to": [
+            6,
+            8
+          ],
+          "text": "政府"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            28
+          ],
+          "to": [
+            8,
+            20
+          ],
+          "text": "现场驻场软件运维工作经验"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            32,
+            38
+          ],
+          "to": [
+            25,
+            29
+          ],
+          "text": "软件系统"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            39,
+            43
+          ],
+          "to": [
+            30,
+            34
+          ],
+          "text": "硬件设备"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01527",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            15
+          ],
+          "to": [
+            2,
+            14
+          ],
+          "text": "软件需求与设计审核和评审"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01528",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            11,
+            19
+          ],
+          "to": [
+            5,
+            22
+          ],
+          "text": "数据库(Mysql、Oracle)"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            20,
+            29
+          ],
+          "to": [
+            22,
+            24
+          ],
+          "text": "部署"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            30,
+            36
+          ],
+          "to": [
+            25,
+            31
+          ],
+          "text": "二次封装开发"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            38,
+            42
+          ],
+          "to": [
+            35,
+            41
+          ],
+          "text": "性能优化能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01529",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            8
+          ],
+          "to": [
+            4,
+            7
+          ],
+          "text": "vpn"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            11
+          ],
+          "to": [
+            7,
+            9
+          ],
+          "text": "搭建"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            14,
+            18
+          ],
+          "to": [
+            11,
+            15
+          ],
+          "text": "日常维护"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01521\",\"spans\":[{\"start\":2,\"end\":19,\"text\":\"MSSQLServer常用技术\",\"label\":\"S\"},{\"start\":23,\"end\":33,\"text\":\"T-SQL语言\",\"label\":\"S\"},{\"start\":35,\"end\":41,\"text\":\"数据库开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取数据库工具、开发语言及数据库开发活动。\",\"issues\":[]},{\"id\":\"sp10k-01522\",\"spans\":[{\"start\":6,\"end\":14,\"text\":\"文档编写能力\",\"label\":\"S\"},{\"start\":15,\"end\":20,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":21,\"end\":27,\"text\":\"现场应变能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"文档编写属于职业动作能力，沟通和现场应变属于通用能力。\",\"issues\":[]},{\"id\":\"sp10k-01523\",\"spans\":[{\"start\":3,\"end\":10,\"text\":\"安卓端应用开发\",\"label\":\"S\"},{\"start\":11,\"end\":15,\"text\":\"迭代优化\",\"label\":\"S\"},{\"start\":16,\"end\":22,\"text\":\"兼容性调试\",\"label\":\"S\"},{\"start\":23,\"end\":27,\"text\":\"性能优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的软件开发、调试和优化活动；运行稳定性为结果表述，不标。\",\"issues\":[]},{\"id\":\"sp10k-01524\",\"spans\":[{\"start\":8,\"end\":14,\"text\":\"设备安装配置\",\"label\":\"S\"},{\"start\":15,\"end\":18,\"text\":\"防火墙\",\"label\":\"S\"},{\"start\":19,\"end\":22,\"text\":\"交换机\",\"label\":\"S\"},{\"start\":23,\"end\":26,\"text\":\"路由器\",\"label\":\"S\"},{\"start\":27,\"end\":29,\"text\":\"无线\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取设备安装配置活动及其岗位使用的设备类别。\",\"issues\":[]},{\"id\":\"sp10k-01525\",\"spans\":[{\"start\":5,\"end\":20,\"text\":\".NETFramework(C#)开发\",\"label\":\"S\"},{\"start\":23,\"end\":34,\"text\":\"C/S和B/S构架的应用程序\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取开发技术及开发对象。\",\"issues\":[]},{\"id\":\"sp10k-01526\",\"spans\":[{\"start\":9,\"end\":11,\"text\":\"政府\",\"label\":\"K\"},{\"start\":15,\"end\":28,\"text\":\"现场驻场软件运维工作经验\",\"label\":\"S\"},{\"start\":32,\"end\":38,\"text\":\"软件系统\",\"label\":\"S\"},{\"start\":39,\"end\":43,\"text\":\"硬件设备\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"政府为明确行业背景；软件运维经验保留完整实践语义；软件系统和硬件设备处于应用语境。\",\"issues\":[]},{\"id\":\"sp10k-01527\",\"spans\":[{\"start\":3,\"end\":15,\"text\":\"软件需求与设计审核和评审\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取参与的软件需求、设计审核及评审职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01528\",\"spans\":[{\"start\":11,\"end\":19,\"text\":\"数据库(Mysql、Oracle)\",\"label\":\"S\"},{\"start\":20,\"end\":29,\"text\":\"部署\",\"label\":\"S\"},{\"start\":30,\"end\":36,\"text\":\"二次封装开发\",\"label\":\"S\"},{\"start\":38,\"end\":42,\"text\":\"性能优化能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库处于部署、封装开发和性能优化实践语境；年限及经验触发词不入跨度。\",\"issues\":[]},{\"id\":\"sp10k-01529\",\"spans\":[{\"start\":5,\"end\":8,\"text\":\"vpn\",\"label\":\"S\"},{\"start\":9,\"end\":11,\"text\":\"搭建\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"日常维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取VPN使用对象、搭建和维护活动。\",\"issues\":[]},{\"id\":\"sp10k-01530\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"大专及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格名；相关工作经验属于泛化经验，不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01521",
+        "spans": [
+          {
+            "start": 2,
+            "end": 17,
+            "text": "MSSQLServer常用技术",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 27,
+            "text": "T-SQL语言",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 34,
+            "text": "数据库开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取数据库工具、开发语言及数据库开发活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01522",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "文档编写能力",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "现场应变能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文档编写属于职业动作能力，沟通和现场应变属于通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01523",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "安卓端应用开发",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "迭代优化",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "text": "兼容性调试",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "性能优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的软件开发、调试和优化活动；运行稳定性为结果表述，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01524",
+        "spans": [
+          {
+            "start": 6,
+            "end": 12,
+            "text": "设备安装配置",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "text": "防火墙",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 20,
+            "text": "交换机",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 24,
+            "text": "路由器",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 27,
+            "text": "无线",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取设备安装配置活动及其岗位使用的设备类别。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01525",
+        "spans": [
+          {
+            "start": 4,
+            "end": 23,
+            "text": ".NETFramework(C#)开发",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 41,
+            "text": "C/S和B/S构架的应用程序",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取开发技术及开发对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01526",
+        "spans": [
+          {
+            "start": 6,
+            "end": 8,
+            "text": "政府",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 20,
+            "text": "现场驻场软件运维工作经验",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "软件系统",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "硬件设备",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "政府为明确行业背景；软件运维经验保留完整实践语义；软件系统和硬件设备处于应用语境。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01527",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "软件需求与设计审核和评审",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取参与的软件需求、设计审核及评审职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01528",
+        "spans": [
+          {
+            "start": 5,
+            "end": 22,
+            "text": "数据库(Mysql、Oracle)",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "text": "部署",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "text": "二次封装开发",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 41,
+            "text": "性能优化能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库处于部署、封装开发和性能优化实践语境；年限及经验触发词不入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01529",
+        "spans": [
+          {
+            "start": 4,
+            "end": 7,
+            "text": "vpn",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "text": "搭建",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "日常维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取VPN使用对象、搭建和维护活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01530",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "大专及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格名；相关工作经验属于泛化经验，不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 153,
+  "ids": [
+    "sp10k-01521",
+    "sp10k-01522",
+    "sp10k-01523",
+    "sp10k-01524",
+    "sp10k-01525",
+    "sp10k-01526",
+    "sp10k-01527",
+    "sp10k-01528",
+    "sp10k-01529",
+    "sp10k-01530"
+  ],
+  "at": "2026-09-13T16:12:43.460677+00:00"
+}

@@ -1,0 +1,485 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03506",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "Linux",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 19,
+          "text": "Windows操作系统",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 30,
+          "text": "常用服务的性能优化",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "故障排除能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作系统按岗位工具标注，性能优化及故障排除为技术活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03507",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "博士研究生学历",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 21,
+          "text": "正高级专业技术职称资格",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历及职称资格，年龄放宽条件不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03508",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "Java语言",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 16,
+          "text": "linux",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "Oracle",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "编程语言、操作系统及数据库为岗位工具提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03509",
+      "spans": [
+        {
+          "start": 15,
+          "end": 22,
+          "text": "高中及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "学历要求明确；退役身份是否属于本项目资格范围待裁决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "退役士兵",
+          "alternatives": [
+            "作为报考身份条件排除",
+            "作为非语言资格纳入"
+          ],
+          "reason": "协议未明确退役身份是否属于资格提及；本句仅给出岗位报考人员定义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03510",
+      "spans": [
+        {
+          "start": 116,
+          "end": 130,
+          "text": "重要主题宣传、专题报道的采编",
+          "label": "S"
+        },
+        {
+          "start": 131,
+          "end": 133,
+          "text": "组稿",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确的采编和组稿职责；机构介绍与招聘信息不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03511",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "交/直流充电设备的方案研发和预研",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "研发与预研共享充电设备方案对象，保留完整活动短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03513",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘附件名称、发布单位及日期。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03514",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "平台优化与建设支撑",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "资源管理",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "运行质量分析",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "故障处理",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "升级处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "按平台维护语境抽取各项职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03515",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求提交证书扫描件，未提出具体学历或学位资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03516",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘岗位表文件名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03517",
+      "spans": [
+        {
+          "start": 2,
+          "end": 28,
+          "text": "智能手机、蓝牙打印机、高清摄像头、闸机等产品硬件构成",
+          "label": "K"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "工作原理",
+          "label": "K"
+        },
+        {
+          "start": 39,
+          "end": 53,
+          "text": "软硬件开发、维护、使用及安装",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "硬件构成与工作原理为知识；职业动作保留共享的软硬件对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03518",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名及资格初审查询流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03519",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "数据库",
+          "label": "S"
+        },
+        {
+          "start": 6,
+          "end": 11,
+          "text": "MSSQL",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "text": "MYSQL",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "text": "新环境搭建",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 33,
+          "text": "安装",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 36,
+          "text": "配置",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 39,
+          "text": "部署",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库及具体产品处于明确实施语境；分别抽取搭建、安装、配置和部署活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03520",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明教师岗位面试方式及成绩计算，未明确候选人的专业资格或技能要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03521",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "编写脚本",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 22,
+          "text": "使用脚本来完成日常系统运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别标注脚本编写及使用脚本执行系统运维。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03522",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "linux",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 19,
+          "text": "Windows操作系统",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "日常基本命令",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作系统和命令受明确使用语境限定，按工具标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03523",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅笼统列出招聘技能测试内容，未给出可识别的具体技能或程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03524",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "大专以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 12,
+          "text": "计算机应用",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "IT运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历、专业核心名及运维活动；经验年限与优先修饰不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03525",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为资格复审及递补流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03526",
+      "spans": [
+        {
+          "start": 15,
+          "end": 19,
+          "text": "运营监控",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "营销策划",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "组织实施",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "跟踪推动",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取运营监控、营销策划及承接方案对象的实施推动活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03527",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为资格复审和考核通知流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03528",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘依据、用人单位及招聘岗位数量。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03529",
+      "spans": [
+        {
+          "start": 3,
+          "end": 8,
+          "text": "Redis",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 18,
+          "text": "Memcached",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体缓存组件按岗位工具标注，不重复标注类别词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03530",
+      "spans": [
+        {
+          "start": 19,
+          "end": 28,
+          "text": "大学本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 29,
+          "end": 32,
+          "text": "护理学",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "抽取学历和专业；党员身份是否属于资格范围待裁决，岗位名称及年龄不标。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "中共党员",
+          "alternatives": [
+            "作为政治身份条件排除",
+            "作为非语言资格纳入"
+          ],
+          "reason": "协议未明确政治身份是否属于资格范围；局部语境仅说明优先条件。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03531",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "机房基础设施运维及管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维及管理共享机房设施对象；后段为设备正常运行和环境达标的结果要求。",
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 68.062,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4974,
+    "completion_tokens": 1906,
+    "total_tokens": 6880,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1116
+    },
+    "input_tokens": 4974,
+    "output_tokens": 1906,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-03805",
+      "repairs": [
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            48,
+            54
+          ],
+          "to": [
+            43,
+            49
+          ],
+          "text": "根本原因分析"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            55,
+            59
+          ],
+          "to": [
+            50,
+            54
+          ],
+          "text": "闭环改进"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04011",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            8
+          ],
+          "to": [
+            3,
+            9
+          ],
+          "text": "扬州城市路况"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04032",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            14
+          ],
+          "to": [
+            2,
+            15
+          ],
+          "text": "非诉业务诉讼业务管理和应对"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-03805\",\"spans\":[{\"start\":4,\"end\":6,\"text\":\"8D\",\"label\":\"S\"},{\"start\":7,\"end\":13,\"text\":\"6Sigma\",\"label\":\"S\"},{\"start\":23,\"end\":29,\"text\":\"QC七大手法\",\"label\":\"S\"},{\"start\":48,\"end\":54,\"text\":\"根本原因分析\",\"label\":\"S\"},{\"start\":55,\"end\":59,\"text\":\"闭环改进\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取质量问题分析与改进相关的可执行方法及方法论工具。\",\"issues\":[]},{\"id\":\"sp10k-03833\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"油气建造行业\",\"label\":\"K\"},{\"start\":10,\"end\":18,\"text\":\"仪表专业详细设计\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"行业背景标为领域知识，仪表专业详细设计标为明确职业活动；年限及泛化国际项目经验不标。\",\"issues\":[]},{\"id\":\"sp10k-03906\",\"spans\":[{\"start\":9,\"end\":16,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"完整学历资格名标为K；相关专业为泛化专业要求，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-03942\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"客户审核对接\",\"label\":\"T\"},{\"start\":9,\"end\":19,\"text\":\"客户文件转化落地监控\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"客户对接属于人员联络能力，文件转化落地监控属于可执行职业动作。\",\"issues\":[]},{\"id\":\"sp10k-03956\",\"spans\":[{\"start\":7,\"end\":9,\"text\":\"培训\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"绩效管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"培训和绩效管理均为明确的职业管理活动。\",\"issues\":[]},{\"id\":\"sp10k-03968\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"企业级存储产品行业标准\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"企业级存储产品行业标准属于领域规范知识。\",\"issues\":[]},{\"id\":\"sp10k-03992\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":12,\"end\":19,\"text\":\"模电/数电课程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格名；模电/数电课程属于专业知识背景。\",\"issues\":[]},{\"id\":\"sp10k-03999\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅提出相关专业要求，未出现按规则需单独标注的完整学历资格或明确能力、知识提及。\",\"issues\":[]},{\"id\":\"sp10k-04011\",\"spans\":[{\"start\":3,\"end\":8,\"text\":\"扬州城市路况\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"熟悉特定城市路况属于岗位所需的领域事实知识。\",\"issues\":[]},{\"id\":\"sp10k-04032\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"非诉业务诉讼业务管理和应对\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"非诉及诉讼业务的管理和应对构成明确的职业活动整体。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-03805",
+        "spans": [
+          {
+            "start": 4,
+            "end": 6,
+            "text": "8D",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "text": "6Sigma",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "text": "QC七大手法",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 49,
+            "text": "根本原因分析",
+            "label": "S"
+          },
+          {
+            "start": 50,
+            "end": 54,
+            "text": "闭环改进",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取质量问题分析与改进相关的可执行方法及方法论工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03833",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "油气建造行业",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "text": "仪表专业详细设计",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "行业背景标为领域知识，仪表专业详细设计标为明确职业活动；年限及泛化国际项目经验不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03906",
+        "spans": [
+          {
+            "start": 9,
+            "end": 16,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "完整学历资格名标为K；相关专业为泛化专业要求，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03942",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "客户审核对接",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 19,
+            "text": "客户文件转化落地监控",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "客户对接属于人员联络能力，文件转化落地监控属于可执行职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03956",
+        "spans": [
+          {
+            "start": 7,
+            "end": 9,
+            "text": "培训",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "绩效管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "培训和绩效管理均为明确的职业管理活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03968",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "企业级存储产品行业标准",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "企业级存储产品行业标准属于领域规范知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03992",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "text": "模电/数电课程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格名；模电/数电课程属于专业知识背景。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-03999",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅提出相关专业要求，未出现按规则需单独标注的完整学历资格或明确能力、知识提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04011",
+        "spans": [
+          {
+            "start": 3,
+            "end": 9,
+            "text": "扬州城市路况",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "熟悉特定城市路况属于岗位所需的领域事实知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04032",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "非诉业务诉讼业务管理和应对",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "非诉及诉讼业务的管理和应对构成明确的职业活动整体。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 190,
+  "ids": [
+    "sp10k-03805",
+    "sp10k-03833",
+    "sp10k-03906",
+    "sp10k-03942",
+    "sp10k-03956",
+    "sp10k-03968",
+    "sp10k-03992",
+    "sp10k-03999",
+    "sp10k-04011",
+    "sp10k-04032"
+  ],
+  "at": "2026-09-13T16:46:13.947801+00:00"
+}

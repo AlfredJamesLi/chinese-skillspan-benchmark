@@ -1,0 +1,475 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04849",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明资格认定与证明提交截止时间，不抽取流程中的证书名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04850",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "专科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "text": "制冷与低温技术",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格及专业名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04851",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "通信",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "电子",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "IT运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业并列拆分；运维活动去除年限及经验修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04852",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为资格初审时间安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04853",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列学历证明材料，未指明所需学历层级或专业资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04854",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "Python",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 21,
+          "text": "简单脚本的编写能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "脚本编写语境支持编程工具运用；保留简单脚本的能力限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04855",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Linux操作系统",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "存储相关知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列对象受相关知识语境限定，按知识要求抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04856",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "IT运维",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "信息安全",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维与信息安全为明确负责的职业职能；稳定运行属于结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04857",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求正常履职的身体及心理健康条件。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04858",
+      "spans": [
+        {
+          "start": 15,
+          "end": 19,
+          "text": "IT支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取技术支持职责，地域与办公室范围不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04859",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "网络及安全设备",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "设备配置",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "安装",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "text": "调试",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "故障排除",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备处于明确操作语境；保留共享设备中心词，操作活动分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04860",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "协调沟通能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "团队合作及协调沟通均为通用软技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04861",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名要求标题。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04862",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "本科学历",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "软件测试",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历及专业为K；测试与运维为完整职业活动，去除经验和年限。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04863",
+      "spans": [
+        {
+          "start": 2,
+          "end": 19,
+          "text": "小型机、PC服务器的硬件、系统维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留维护动作及其共享设备、硬件和系统对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04864",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "全日制本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格；泛化优秀及应届身份不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04865",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "项目整体管理",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "管理要求范围与边界明确，类型暂以S占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "项目整体管理",
+          "alternatives": [
+            "S",
+            "T"
+          ],
+          "reason": "未说明项目所属专业职能，无法确定是专业项目管理还是通用组织管理。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04866",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "客户意识",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "语言表达能力",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "沟通能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "客户意识、表达及沟通均属通用能力；语言表达不属于具体语种要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04867",
+      "spans": [
+        {
+          "start": 2,
+          "end": 27,
+          "text": "优化应用系统运维流程、应急流程、应用运维标准和规范",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列对象共享优化动作，保留完整职业活动，避免拆成知识名词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04868",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "理工科",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "现场设备运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业类别及具体运维活动；技术出身未指明领域或活动，不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04869",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "条件性资格年限条款的适用范围待定，争议内容不进入主层。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "取得药学类、中药学类相关专业相应学历或学位的人员，在药学或中药学岗位工作的年限相应增加1年",
+          "alternatives": [
+            "属于候选人资格条件，抽取明确专业及岗位背景要求",
+            "属于资格考试或认定政策说明，不纳入岗位要求"
+          ],
+          "reason": "孤立条款未说明所涉资格及适用对象，无法确认是否构成本次招聘的候选人要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04870",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明应聘面试流程及缺席后果。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04871",
+      "spans": [
+        {
+          "start": 8,
+          "end": 17,
+          "text": "编写数据库技术手册",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 41,
+          "text": "制定并指导开发人员规范并优化SQL语句编写工作",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 51,
+          "text": "数据库架构设计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "独立职责分别抽取；SQL编写指导保留共享对象与动作关系。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04872",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "QT开发",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "QT",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "界面设计",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "应用软件开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取开发经历中的活动、现用工具及两项独立开发任务。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04873",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "线上运维",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 28,
+          "text": "对接线下各类活动的开展及运维活动",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "线上运维与线下活动对接为职业职责；后项保留对接动作及共享活动对象。",
+      "issues": []
+    }
+  ]
+}

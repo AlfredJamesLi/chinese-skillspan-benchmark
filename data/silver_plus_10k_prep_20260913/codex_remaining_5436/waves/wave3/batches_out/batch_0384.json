@@ -1,0 +1,294 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06331",
+      "spans": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "海运采购/运价",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "海运销售",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 39,
+          "text": "广西区域外贸海运市场行情",
+          "label": "K"
+        },
+        {
+          "start": 45,
+          "end": 51,
+          "text": "行业人脉资源",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确的海运采购、运价、海运销售职业活动，外贸海运市场行情知识及行业人脉资源；年限和泛化工作经验不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06332",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "EPC项目",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "管线专业",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "采办支持",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "采办文件编制",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 28,
+          "text": "澄清",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 32,
+          "text": "TBE",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 40,
+          "text": "供应商文件审批",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取EPC项目及管线专业领域知识，以及采办支持、文件编制、澄清、TBE和供应商文件审批等职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06333",
+      "spans": [
+        {
+          "start": 1,
+          "end": 6,
+          "text": "工作责任心",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "抗压能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取责任心和抗压能力等通用特质；轮班工作属于工作安排，不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06334",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "包装新物料各项指标可靠性评估",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "BOM制作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取包装新物料可靠性评估和BOM制作职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06335",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "can总线",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "编程",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "调试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取岗位运用的CAN总线及编程、调试活动，保留原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06336",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "电源",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 10,
+          "text": "DSP行业",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 24,
+          "text": "相关行业FAE经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取电源和DSP行业领域知识，以及需保留实践含义的FAE经验；年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06337",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "严谨的逻辑思维能力",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 21,
+          "text": "良好的文字表达能力",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "较强的沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "text": "工作抗压能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用能力或工作特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06338",
+      "spans": [
+        {
+          "start": 8,
+          "end": 18,
+          "text": "尺寸和角度的精确调整",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取依据图纸执行尺寸和角度调整的职业活动；图纸要求为限定语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06339",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "工厂供给能力",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 16,
+          "text": "业务CRM预测",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 26,
+          "text": "组织M+3资源匹配",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 35,
+          "text": "提前规划材料资源",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 52,
+          "text": "推动模组工厂按时按量完成生产计划",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取供给能力领域知识及CRM预测、资源匹配、材料资源规划和推动生产计划完成等职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06340",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "电工证",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 14,
+          "text": "消防设施操作员证",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "text": "基础图纸解读能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取电工证、消防设施操作员证等非语言资格，以及图纸解读职业能力。",
+      "issues": []
+    }
+  ]
+}

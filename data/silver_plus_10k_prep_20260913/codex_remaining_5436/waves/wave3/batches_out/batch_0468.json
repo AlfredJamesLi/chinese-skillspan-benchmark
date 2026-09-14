@@ -1,0 +1,300 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07171",
+      "spans": [
+        {
+          "start": 0,
+          "end": 8,
+          "text": "大学本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 16,
+          "text": "船舶与海洋工程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格和专业名，排除泛化的相关专业修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07172",
+      "spans": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "逻辑",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "分析判断",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 21,
+          "text": "沟通协调的能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列项均为通用能力，共享的能力语义由局部上下文确定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07173",
+      "spans": [
+        {
+          "start": 3,
+          "end": 10,
+          "text": "电子元器件选型",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "性能评估",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "优化电路设计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分独立职业活动；提升产品性能属于结果目标，不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07174",
+      "spans": [
+        {
+          "start": 6,
+          "end": 13,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "企业管理",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "运营管理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历及专业名称按K标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07175",
+      "spans": [
+        {
+          "start": 2,
+          "end": 21,
+          "text": "组装复杂模组现场设备异常和制程问题解决",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留共享解决动作及必要技术对象；维持生产稳定为结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07176",
+      "spans": [
+        {
+          "start": 2,
+          "end": 19,
+          "text": "实验室仪器设备、工具材料的品种规格",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "性能特点",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "库存情况",
+          "label": "K"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "使用规程",
+          "label": "K"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "保养常识",
+          "label": "K"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "技术规范",
+          "label": "K"
+        },
+        {
+          "start": 47,
+          "end": 56,
+          "text": "实验器材的安全维护",
+          "label": "S"
+        },
+        {
+          "start": 57,
+          "end": 61,
+          "text": "分类管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备属性、规程及规范为知识要求，维护和分类管理为职业活动；完好可用为结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07177",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "语言表达能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "组织管理能力",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "判断问题",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "思路清晰",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "表达、组织管理、无具体职业对象的问题判断及思路特质均为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07178",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "环境卫生管理",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 18,
+          "text": "小区的环境卫生清洁",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确的环境卫生管理与清洁职能按S标注；整洁美观为结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07179",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "电脑操作",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "Word",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "text": "Excel",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 30,
+          "text": "Office软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "电脑操作及明确操作语境下的办公软件均为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07180",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "良率管理",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 19,
+          "text": "整合性质工作经验",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "LTPS",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "text": "蒸镀",
+          "label": "K"
+        },
+        {
+          "start": 30,
+          "end": 32,
+          "text": "模组",
+          "label": "K"
+        },
+        {
+          "start": 33,
+          "end": 35,
+          "text": "贴合",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "良率管理为职业活动；整合性质工作经验保留实践含义。工艺列表明确限定于工艺流程知识角度，按K标注。",
+      "issues": []
+    }
+  ]
+}

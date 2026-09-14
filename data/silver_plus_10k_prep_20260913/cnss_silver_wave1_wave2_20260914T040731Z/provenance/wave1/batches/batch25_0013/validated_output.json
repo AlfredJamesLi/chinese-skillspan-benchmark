@@ -1,0 +1,533 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02126",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "网络安全证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取非语言资格，去除泛化修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02127",
+      "spans": [
+        {
+          "start": 5,
+          "end": 26,
+          "text": "小程序、APP及其他的线上应用平台技术运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留运维的共享对象；保障正常运行属于结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02128",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明考调范围及人员身份条件，无具体能力、知识或资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02129",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "SpringBoot",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 24,
+          "text": "SpringCloud",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 37,
+          "text": "SpringCloud",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 47,
+          "text": "网关",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 50,
+          "text": "认证",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 55,
+          "text": "服务发现",
+          "label": "S"
+        },
+        {
+          "start": 78,
+          "end": 83,
+          "text": "Redis",
+          "label": "S"
+        },
+        {
+          "start": 84,
+          "end": 92,
+          "text": "RabbitMQ",
+          "label": "S"
+        },
+        {
+          "start": 93,
+          "end": 98,
+          "text": "Kafka",
+          "label": "S"
+        },
+        {
+          "start": 99,
+          "end": 102,
+          "text": "ELK",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "按岗位工具栈及框架组件要求抽取；泛化组件类别不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02130",
+      "spans": [
+        {
+          "start": 14,
+          "end": 57,
+          "text": "《工程力学》、《嵌入式软件开发基础》、《AutoCAD》、《汽车电工电子技术》课程教学",
+          "label": "S"
+        },
+        {
+          "start": 58,
+          "end": 72,
+          "text": "《汽车底盘电控系统检修》实训",
+          "label": "S"
+        },
+        {
+          "start": 73,
+          "end": 83,
+          "text": "机械及汽车类课程教学",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取教学和实训职能；并列课程保留共享教学动作，不嵌套课程知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02131",
+      "spans": [
+        {
+          "start": 7,
+          "end": 21,
+          "text": "ERP软件或相似管理软件实施",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "服务",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "实施和服务为明确职业活动，共享软件对象；年限及经验后缀不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02134",
+      "spans": [
+        {
+          "start": 4,
+          "end": 17,
+          "text": "设备、设施等固定资产的调配",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "采购",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "维护管理",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "text": "固定资产定期盘点",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "text": "资产登记监管",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分独立资产管理职责，共享对象由局部语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02135",
+      "spans": [
+        {
+          "start": 11,
+          "end": 17,
+          "text": "Hadoop",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 23,
+          "text": "Druid",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取具体技术工具；泛化技术类别及末尾异常字符不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02136",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅有招聘说明标题及人数，没有实际岗位要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02137",
+      "spans": [
+        {
+          "start": 0,
+          "end": 10,
+          "text": "计算机常用软硬件维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整软硬件维护活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02138",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "公共基础知识",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 31,
+          "text": "图书馆等相关方面知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取笔试明示的知识要求；行政职业能力测试为测试名称，不作为具体能力或资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02139",
+      "spans": [
+        {
+          "start": 4,
+          "end": 12,
+          "text": "音视频系统的使用",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "技术支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统使用和技术支持可独立拆分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02140",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "数据库管理与维护的经验方法",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "指向数据库管理维护的可执行方法，保留共享方法中心。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02141",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "弱电员工的的专业培训",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业培训属于岗位职能，保留对象及原文重复字。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02142",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "计算机硬件原理",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "操作",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "text": "打印机原理",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "使用方法",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "原理为知识，操作及具体设备使用方法为技能；共享对象不补写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02143",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "数据中心建设流程",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "协调",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "组织能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "建设流程为知识要求，协调和组织为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02144",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "Docker",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "K8S",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "ELK",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "Kafka",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体工具受局部实践经验要求限定，逐项抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02145",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明晋升通道，属于就职后发展展望。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02146",
+      "spans": [
+        {
+          "start": 7,
+          "end": 18,
+          "text": "ERP、OA、HR实施",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "text": "制造业运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留实施动作的并列对象；制造业运维为领域限定的职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02147",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅泛指专业、学历、职称等条件，未给出具体要求名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02148",
+      "spans": [
+        {
+          "start": 13,
+          "end": 21,
+          "text": "临床执业医师资格",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "临床医疗",
+          "label": "S"
+        },
+        {
+          "start": 87,
+          "end": 93,
+          "text": "临床执业医师",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "保留明确医师资格和临床医疗经历；未接受的培训不作为已具备能力，拟任工作片段范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "拟从事全科医疗工作",
+          "alternatives": [
+            "候选人岗位发展意愿，整体标T",
+            "仅拟任岗位信息，不标"
+          ],
+          "reason": "培训对象条件中的拟从事工作，未明确是候选人发展意愿要求还是拟任岗位安排。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02149",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "宝利通视频会议系统",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体岗位系统工具要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02150",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "国内网络业务",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "市场",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 29,
+          "text": "大学本科以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取业务市场知识、专业名及完整学历资格；泛化相关专业不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02151",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明报名专业信息一致性及审核依据，无具体专业或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02152",
+      "spans": [
+        {
+          "start": 32,
+          "end": 34,
+          "text": "钢琴",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 37,
+          "text": "声乐",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "技能加试明确要求钢琴和声乐实践能力；学科分类及未具体说明的考试内容不标。",
+      "issues": []
+    }
+  ]
+}

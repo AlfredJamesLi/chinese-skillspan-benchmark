@@ -1,0 +1,246 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07391",
+      "spans": [
+        {
+          "start": 6,
+          "end": 14,
+          "text": "电气工程及自动化",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业名称，排除泛化的相关专业修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07392",
+      "spans": [
+        {
+          "start": 5,
+          "end": 10,
+          "text": "进出口业务",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 32,
+          "text": "向海外代理寻找进口货物运输方案",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "货物接收",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 40,
+          "text": "报价",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "订单处理",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 48,
+          "text": "结算",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确承担的进出口职能及各项可独立执行的业务活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07393",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "国家财税法规",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "相关政策",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 27,
+          "text": "独立处理突发事件的能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "法规政策为知识要求，未限定职业对象的突发事件处理能力为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07394",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "现场抄表",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "录表",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 19,
+          "text": "WIS系统",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抄表、录表为执行活动；WIS系统处于明确使用语境，按工具标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07395",
+      "spans": [
+        {
+          "start": 8,
+          "end": 34,
+          "text": "制定并执行产业园项目的整体市场推广策略和品牌建设计划",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 60,
+          "text": "触达目标客户群体",
+          "label": "S"
+        },
+        {
+          "start": 82,
+          "end": 88,
+          "text": "支持招商工作",
+          "label": "S"
+        },
+        {
+          "start": 103,
+          "end": 111,
+          "text": "创造更多活动内容",
+          "label": "S"
+        },
+        {
+          "start": 115,
+          "end": 121,
+          "text": "优化推广效果",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留共享制定与执行动作的完整对象；抽取具体推广活动，排除知名度、影响力及资产增值等纯结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07396",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "重点大客户的整体对接与关系维护",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "text": "挖掘客户潜在需求",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "客户对接与关系维护属于人际联络；客户需求挖掘为业务活动。长期稳定合作关系作为结果不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07397",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "保密意识",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 22,
+          "text": "公司信息安全与知识产权制度",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保密意识为通用职业特质；须遵守的制度为规范知识，保留共享中心词制度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07398",
+      "spans": [
+        {
+          "start": 2,
+          "end": 23,
+          "text": "投标项目合同的有关商务报价条款的草拟及确认",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "草拟及确认共享具体条款对象，保留完整职业活动跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07399",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "人伤案件的后续跟踪",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 32,
+          "text": "出具估损意见及介入调解的方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取案件跟踪及出具意见、方案的职业活动；后者保留共享动作以避免丢失文书产出含义。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07400",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "客户服务技巧",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通能力为通用能力，客户服务技巧为明确职业职能技能。",
+      "issues": []
+    }
+  ]
+}

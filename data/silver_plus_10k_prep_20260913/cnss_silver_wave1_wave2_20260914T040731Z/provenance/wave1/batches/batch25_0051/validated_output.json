@@ -1,0 +1,568 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03120",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "生产系统的运行维护",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "性能调优",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "故障处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分运行维护、性能调优和故障处理三项职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03121",
+      "spans": [
+        {
+          "start": 2,
+          "end": 21,
+          "text": "分布式系统、高并发、高可靠性系统的设计",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "监控",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "text": "运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设计保留共享对象列表；监控和运维由局部语境限定对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03122",
+      "spans": [
+        {
+          "start": 74,
+          "end": 80,
+          "text": "学历学位证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留明确要求取得的学历资格；招聘流程、毕业生身份及落户条件不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03123",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "调优能力",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 19,
+          "text": "运维管理过大规模数据平台",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "调优及数据平台运维管理均为技术职业能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03124",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "大专以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历要求；泛化工作经验与年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03125",
+      "spans": [
+        {
+          "start": 8,
+          "end": 14,
+          "text": "软件硬件维护",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 24,
+          "text": "服务器设备维护处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取两项设备维护活动，场所限定不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03126",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "Docker常用命令",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 31,
+          "text": "制作镜像Dockerfile",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "镜像仓库",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "命令与镜像制作按职业技能抽取；镜像仓库的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "镜像仓库",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指镜像仓库概念知识，也可指岗位使用的仓库工具；局部仅说了解，未明确原理或实际操作。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03127",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "撰写产品文档",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 37,
+          "text": "对产品需求、产品功能、交互设计、研发验收等环节流程化管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "文档撰写与流程管理分别抽取；管理对象中的各环节不另造执行职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03128",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "排查网络故障",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "分析问题",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "解决问题",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "技术讲解能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络故障排查为技术活动；泛化问题分析、解决及讲解表达为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03129",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "nginx",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "text": "haproxy",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "text": "ansible",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "zabbix",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "逐项抽取岗位工具名，保留原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03130",
+      "spans": [
+        {
+          "start": 13,
+          "end": 19,
+          "text": "应用系统规划",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "实施建设",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体活动去除经验后意义完整；实施建设共享应用系统对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03131",
+      "spans": [
+        {
+          "start": 2,
+          "end": 20,
+          "text": "客户及直播平台对接各类线上、线下活动",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "表述客户与平台间的活动联络对接，按通用沟通协调能力处理。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03132",
+      "spans": [
+        {
+          "start": 0,
+          "end": 12,
+          "text": "解决项目中日常遇到的问题",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 42,
+          "text": "底层数据接入的日常运维保障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "日常问题未明确技术对象，按通用能力处理；运维为S，安全稳定运行属于结果承诺。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03133",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公开招聘回避程序及其依据，不构成候选人职业能力或知识资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03134",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "渗透测试的步骤",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "方法",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "流程",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 34,
+          "text": "渗透测试(黑客入侵)工具",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "步骤、方法及流程为概括性知识体系；测试工具为岗位工具技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03135",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "私有大数据存储平台的需求分析",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "方案设计",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "开发实现",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 35,
+          "text": "用户业务上云支撑",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分需求分析、方案设计、开发实现及上云支撑四项职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03136",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 13,
+          "text": "计算机科学",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "信息管理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历与可识别的专业名；不改写原文连接处的“工”。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03137",
+      "spans": [
+        {
+          "start": 4,
+          "end": 15,
+          "text": "信息系统安全架构的规划",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "建设",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "规划、建设及维护共享安全架构对象；后续安全性提升为纯结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03138",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "面试形式属于行政流程；括号内测试内容是否构成知识要求待裁决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "调解专业知识测试",
+          "alternatives": [
+            "仅为面试测试安排，不标",
+            "将调解专业知识作为候选人知识要求，标K"
+          ],
+          "reason": "原文仅说明面试包含的测试内容，协议未明确此类测试内容是否足以构成知识要求，缺少独立任职要求语境。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03139",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "智能弱电",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "电气",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "自动化",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "通信",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "电子工程",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "text": "计算机",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "逐项抽取专业名，泛化相关专业毕业不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03140",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘实施方案的制定依据及行政说明，不含候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03141",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "电子",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "text": "专科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确专业名及完整学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03142",
+      "spans": [
+        {
+          "start": 12,
+          "end": 17,
+          "text": "ERP实施",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 31,
+          "text": "ERP系统管理原理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "ERP实施为完整职业活动，去除经验及年限；系统管理原理为知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03143",
+      "spans": [
+        {
+          "start": 13,
+          "end": 23,
+          "text": "学术会议和论坛的策划",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 26,
+          "text": "筹备",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "text": "组织",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "会议论坛的策划、筹备和组织为明确活动职能；后两项共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03144",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告引言、岗位名称、人数及条件标题，未给出具体能力或资格要求。",
+      "issues": []
+    }
+  ]
+}

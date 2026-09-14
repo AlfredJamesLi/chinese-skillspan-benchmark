@@ -1,0 +1,282 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06951",
+      "spans": [
+        {
+          "start": 6,
+          "end": 13,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "会计",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "财务管理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历及明确专业名标K，优先等修饰不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06952",
+      "spans": [
+        {
+          "start": 25,
+          "end": 29,
+          "text": "市场调研",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 32,
+          "text": "评估",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 39,
+          "text": "可行性研究",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "投资项目前期的职业活动分别抽取，共享对象由局部语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06953",
+      "spans": [
+        {
+          "start": 2,
+          "end": 25,
+          "text": "电源类、自动控制类设备的控制器等产品的软件开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留软件开发的完整共享产品对象，去除职责触发词和工作后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06954",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "设计开发质量",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "LCD",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 20,
+          "text": "LCM工艺流程",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "质量产品标准",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 39,
+          "text": "解决设计质量问题",
+          "label": "S"
+        },
+        {
+          "start": 42,
+          "end": 52,
+          "text": "质量风险识别控制能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "质量、工艺流程和标准为知识要求；LCD由并列语境共享工艺流程限定。具体质量问题解决及风险识别控制为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06955",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "数控车床的机台维护",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 25,
+          "text": "操作双轴、双刀塔车铣复合机",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "机台维护和设备操作为独立职业活动，保留各自设备对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06956",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "协调能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 18,
+          "text": "组织各部门成员",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 30,
+          "text": "工艺，技术评估及验证",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通协调及人员组织为通用能力；工艺、技术共享评估验证动作，保留连续完整跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06957",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "安全工程",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "环境工程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格及明确专业名标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06958",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "与当地政府科技部门对接",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 26,
+          "text": "科技项目申报流程",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "申报条件",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 47,
+          "text": "地方科技类项目的组织和申报",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "部门对接为人员联络T；申报流程和条件为K；具体项目组织申报为职业活动S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06959",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "成本费用核算",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "分析",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "预警",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "成本控制",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "核算、分析、预警及控制为独立职业活动，分析和预警承接成本费用对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06960",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "配电工程相关标准",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "规范",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "text": "电力系统运行原理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标准、规范与运行原理均属知识要求，规范共享配电工程限定。",
+      "issues": []
+    }
+  ]
+}

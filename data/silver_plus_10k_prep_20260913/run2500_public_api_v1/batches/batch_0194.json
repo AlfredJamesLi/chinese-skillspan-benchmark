@@ -1,0 +1,294 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 58.357,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4994,
+    "completion_tokens": 1821,
+    "total_tokens": 6815,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 804
+    },
+    "input_tokens": 4994,
+    "output_tokens": 1821,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-04727\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"电气、暖通系统运行能耗分析\",\"label\":\"S\"},{\"start\":16,\"end\":22,\"text\":\"优化运行能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"能耗分析保留共享动作及系统对象；优化运行能力为领域绑定能力。\",\"issues\":[]},{\"id\":\"sp10k-04729\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"本科学历\",\"label\":\"K\"},{\"start\":7,\"end\":10,\"text\":\"物流类\",\"label\":\"K\"},{\"start\":11,\"end\":15,\"text\":\"医药学类\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历与明确专业类别，排除优先及泛化相关专业修饰。\",\"issues\":[]},{\"id\":\"sp10k-04742\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"TUV、UL等机构培训证书\",\"label\":\"K\"},{\"start\":16,\"end\":24,\"text\":\"相关行业资格认证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"培训证书和行业资格认证均为非语言资格要求；机构名称共享证书中心语，保留连续整体。\",\"issues\":[]},{\"id\":\"sp10k-04784\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"英文听说读写能力\",\"label\":\"L\"},{\"start\":12,\"end\":19,\"text\":\"与国际客户交流\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"英文综合能力标L，客户交流作为人际沟通能力标T。\",\"issues\":[]},{\"id\":\"sp10k-04793\",\"spans\":[{\"start\":10,\"end\":14,\"text\":\"道路试验\",\"label\":\"S\"},{\"start\":21,\"end\":26,\"text\":\"试车场路试\",\"label\":\"S\"},{\"start\":27,\"end\":33,\"text\":\"封闭场地路试\",\"label\":\"S\"},{\"start\":34,\"end\":44,\"text\":\"气候区域路试(三高)\",\"label\":\"S\"},{\"start\":45,\"end\":51,\"text\":\"用户道路路试\",\"label\":\"S\"},{\"start\":52,\"end\":56,\"text\":\"数据处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"道路试验及各具体路试、数据处理均为明确职业活动，独立拆分；三高保留为路试限定。\",\"issues\":[]},{\"id\":\"sp10k-04815\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"组织协调\",\"label\":\"T\"},{\"start\":10,\"end\":14,\"text\":\"表达能力\",\"label\":\"T\"},{\"start\":18,\"end\":22,\"text\":\"抗压能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"组织协调、表达及抗压均为通用软技能，排除程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-04833\",\"spans\":[{\"start\":2,\"end\":23,\"text\":\"标准作业指导书PFMEA的编制、审核和组织\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"编制、审核和组织共享明确文档对象，保留完整连续职业活动，不改写原文PFMEA。\",\"issues\":[]},{\"id\":\"sp10k-04847\",\"spans\":[{\"start\":7,\"end\":15,\"text\":\"文档的归档与管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取共享文档对象的归档管理活动；信息安全与完整为结果要求，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-04915\",\"spans\":[{\"start\":2,\"end\":17,\"text\":\"消费类电子产品的结构件外观标准\",\"label\":\"K\"},{\"start\":18,\"end\":25,\"text\":\"可靠性测试标准\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"两项均为专业标准知识；后项的产品语境可由局部共享，不补写对象。\",\"issues\":[]},{\"id\":\"sp10k-04956\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"护理人员排班\",\"label\":\"S\"},{\"start\":9,\"end\":13,\"text\":\"绩效考核\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"日常督导\",\"label\":\"S\"},{\"start\":21,\"end\":30,\"text\":\"执行标准化服务流程\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取护理人员管理中的具体职业活动；确保不入跨度，其后执行服务流程为独立动作。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-04727",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "电气、暖通系统运行能耗分析",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "优化运行能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "能耗分析保留共享动作及系统对象；优化运行能力为领域绑定能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04729",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "本科学历",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "text": "物流类",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "医药学类",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历与明确专业类别，排除优先及泛化相关专业修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04742",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "TUV、UL等机构培训证书",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "text": "相关行业资格认证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "培训证书和行业资格认证均为非语言资格要求；机构名称共享证书中心语，保留连续整体。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04784",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "英文听说读写能力",
+            "label": "L"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "text": "与国际客户交流",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "英文综合能力标L，客户交流作为人际沟通能力标T。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04793",
+        "spans": [
+          {
+            "start": 10,
+            "end": 14,
+            "text": "道路试验",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "text": "试车场路试",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "text": "封闭场地路试",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 44,
+            "text": "气候区域路试(三高)",
+            "label": "S"
+          },
+          {
+            "start": 45,
+            "end": 51,
+            "text": "用户道路路试",
+            "label": "S"
+          },
+          {
+            "start": 52,
+            "end": 56,
+            "text": "数据处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "道路试验及各具体路试、数据处理均为明确职业活动，独立拆分；三高保留为路试限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04815",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "组织协调",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "表达能力",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "抗压能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "组织协调、表达及抗压均为通用软技能，排除程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04833",
+        "spans": [
+          {
+            "start": 2,
+            "end": 23,
+            "text": "标准作业指导书PFMEA的编制、审核和组织",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "编制、审核和组织共享明确文档对象，保留完整连续职业活动，不改写原文PFMEA。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04847",
+        "spans": [
+          {
+            "start": 7,
+            "end": 15,
+            "text": "文档的归档与管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取共享文档对象的归档管理活动；信息安全与完整为结果要求，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04915",
+        "spans": [
+          {
+            "start": 2,
+            "end": 17,
+            "text": "消费类电子产品的结构件外观标准",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 25,
+            "text": "可靠性测试标准",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项均为专业标准知识；后项的产品语境可由局部共享，不补写对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04956",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "护理人员排班",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "绩效考核",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "日常督导",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 30,
+            "text": "执行标准化服务流程",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取护理人员管理中的具体职业活动；确保不入跨度，其后执行服务流程为独立动作。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 194,
+  "ids": [
+    "sp10k-04727",
+    "sp10k-04729",
+    "sp10k-04742",
+    "sp10k-04784",
+    "sp10k-04793",
+    "sp10k-04815",
+    "sp10k-04833",
+    "sp10k-04847",
+    "sp10k-04915",
+    "sp10k-04956"
+  ],
+  "at": "2026-09-13T16:51:28.380866+00:00"
+}

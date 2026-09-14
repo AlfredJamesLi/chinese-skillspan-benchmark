@@ -1,0 +1,242 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 42.211,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5030,
+    "completion_tokens": 1278,
+    "total_tokens": 6308,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 484
+    },
+    "input_tokens": 5030,
+    "output_tokens": 1278,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01591\",\"spans\":[{\"start\":4,\"end\":14,\"text\":\"智能化信息化项目建设\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确项目建设职责，去除职责触发词及公司修饰。\",\"issues\":[]},{\"id\":\"sp10k-01592\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报名材料和取得材料的时间要求，未提出具体学历资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01593\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为学员报到程序、期限及培训资格处置说明。\",\"issues\":[]},{\"id\":\"sp10k-01594\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报名确认程序及考试资格后果。\",\"issues\":[]},{\"id\":\"sp10k-01595\",\"spans\":[{\"start\":10,\"end\":16,\"text\":\"餐饮卫生管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"餐饮卫生管理为明确职业活动；配合院方要求为职责背景。\",\"issues\":[]},{\"id\":\"sp10k-01596\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"供应链管理系统线上问题排除\",\"label\":\"S\"},{\"start\":16,\"end\":18,\"text\":\"管理\",\"label\":\"S\"},{\"start\":19,\"end\":21,\"text\":\"维护\",\"label\":\"S\"},{\"start\":22,\"end\":24,\"text\":\"升级\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取系统问题排除及并列管理、维护、升级活动；后续动作共享系统对象。\",\"issues\":[]},{\"id\":\"sp10k-01597\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名证明材料及取得学历学位证书日期的放宽规定。\",\"issues\":[]},{\"id\":\"sp10k-01598\",\"spans\":[{\"start\":4,\"end\":14,\"text\":\"Office办公软件\",\"label\":\"S\"},{\"start\":16,\"end\":26,\"text\":\"看AutoCAD图纸\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"办公软件为岗位工具；看图纸为完整职业动作，不将图纸中的工具名嵌套抽取。\",\"issues\":[]},{\"id\":\"sp10k-01599\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"Linux系统\",\"label\":\"K\"},{\"start\":12,\"end\":21,\"text\":\"windows系统\",\"label\":\"K\"},{\"start\":23,\"end\":25,\"text\":\"优化\",\"label\":\"S\"},{\"start\":28,\"end\":45,\"text\":\"针对业务场景定制linux参数设置\",\"label\":\"S\"},{\"start\":50,\"end\":54,\"text\":\"grep\",\"label\":\"S\"},{\"start\":55,\"end\":58,\"text\":\"awk\",\"label\":\"S\"},{\"start\":59,\"end\":62,\"text\":\"sed\",\"label\":\"S\"},{\"start\":70,\"end\":95,\"text\":\"(shell/perl/python)脚本语言编程\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"系统理解按知识标注，系统优化及参数定制按职业活动标注；具体工具使用为S，脚本编程保留共享动作形成完整跨度。\",\"issues\":[]},{\"id\":\"sp10k-01600\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"系统的日常维护\",\"label\":\"S\"},{\"start\":10,\"end\":16,\"text\":\"故障问题处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分系统维护与故障处理两项独立职业活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01591",
+        "spans": [
+          {
+            "start": 4,
+            "end": 14,
+            "text": "智能化信息化项目建设",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确项目建设职责，去除职责触发词及公司修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01592",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报名材料和取得材料的时间要求，未提出具体学历资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01593",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为学员报到程序、期限及培训资格处置说明。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01594",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报名确认程序及考试资格后果。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01595",
+        "spans": [
+          {
+            "start": 10,
+            "end": 16,
+            "text": "餐饮卫生管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "餐饮卫生管理为明确职业活动；配合院方要求为职责背景。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01596",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "供应链管理系统线上问题排除",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 18,
+            "text": "管理",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 21,
+            "text": "维护",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "text": "升级",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取系统问题排除及并列管理、维护、升级活动；后续动作共享系统对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01597",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名证明材料及取得学历学位证书日期的放宽规定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01598",
+        "spans": [
+          {
+            "start": 4,
+            "end": 14,
+            "text": "Office办公软件",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 26,
+            "text": "看AutoCAD图纸",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "办公软件为岗位工具；看图纸为完整职业动作，不将图纸中的工具名嵌套抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01599",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "Linux系统",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 21,
+            "text": "windows系统",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "优化",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 45,
+            "text": "针对业务场景定制linux参数设置",
+            "label": "S"
+          },
+          {
+            "start": 50,
+            "end": 54,
+            "text": "grep",
+            "label": "S"
+          },
+          {
+            "start": 55,
+            "end": 58,
+            "text": "awk",
+            "label": "S"
+          },
+          {
+            "start": 59,
+            "end": 62,
+            "text": "sed",
+            "label": "S"
+          },
+          {
+            "start": 70,
+            "end": 95,
+            "text": "(shell/perl/python)脚本语言编程",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统理解按知识标注，系统优化及参数定制按职业活动标注；具体工具使用为S，脚本编程保留共享动作形成完整跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01600",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "系统的日常维护",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "故障问题处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分系统维护与故障处理两项独立职业活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 160,
+  "ids": [
+    "sp10k-01591",
+    "sp10k-01592",
+    "sp10k-01593",
+    "sp10k-01594",
+    "sp10k-01595",
+    "sp10k-01596",
+    "sp10k-01597",
+    "sp10k-01598",
+    "sp10k-01599",
+    "sp10k-01600"
+  ],
+  "at": "2026-09-13T16:18:30.106531+00:00"
+}

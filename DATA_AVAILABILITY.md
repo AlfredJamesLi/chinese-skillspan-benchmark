@@ -1,6 +1,6 @@
 # Data availability — Chinese-SkillSpan
 
-This note separates **what this repository contains**, **what is already archived**, and **what must not be described as openly licensed** until the authors confirm rights.
+This note separates **what this repository contains**, **what is already archived**, and **what must not be described as CC-BY**. Author consultation (2026-09-11): recruitment notices were **purchased from a commercial compiler** of publicly posted advertisements and **may be used for academic research**, including the peer-review archive. That is **not** an open-content licence on the original wording.
 
 - **Current Zenodo snapshot (`v0.1.3`, includes the human reference set):** https://doi.org/10.5281/zenodo.22698504
 - **Previous snapshot (`v0.1.2`):** https://doi.org/10.5281/zenodo.22685143
@@ -10,9 +10,9 @@ This note separates **what this repository contains**, **what is already archive
 
 ---
 
-## 1. What can be publicly redistributed (pending author confirmation)
+## 1. What can be publicly redistributed
 
-The following are *candidates* for a public GitHub + Zenodo + Hugging Face release. **Job-advertisement prose is not openly licensed until confirmed** (Section 7).
+The following are in the public GitHub + Zenodo + Hugging Face research archive. **Job-advertisement prose is released for academic research use (Section 7); it is not CC-BY.**
 
 | Material | In this tree | Public redistribution |
 |---|---|---|
@@ -24,10 +24,10 @@ The following are *candidates* for a public GitHub + Zenodo + Hugging Face relea
 | Human reference freeze (artifact Gold150) | `data/gold150_test.jsonl` | In GitHub tag / Zenodo `v0.1.3`; not in `v0.1.1` or `v0.1.2` |
 | Silver-plus B2 `v6a_nocross` train/dev | `data/silver_plus_v6a_nocross/` | Teacher labels only; same `v0.1.3` archive |
 | Committed score CSVs and this documentation | `tables/`, `docs/`, `release/` | Yes |
-| JobBERT-zh weights (3M DAPT + historical V4 CRF) | https://huggingface.co/AlfredJames/jobbert-zh | Public model + card; licence still `other` pending text-rights confirmation |
+| JobBERT-zh weights (3M DAPT + historical V4 CRF) | https://huggingface.co/AlfredJames/jobbert-zh | Public model + card; Hub field stays `license: other` (not CC-BY) |
 | JobBERT-zh 1M weights (different DAPT; not a replacement) | https://huggingface.co/AlfredJames/jobbert-zh-1m | Public contrast checkpoint; not in Zenodo `v0.1.1` |
 | JobBERT-zh v6a weights (current student; human-reference B2) | https://huggingface.co/AlfredJames/jobbert-zh-v6a | Public current checkpoint; do not rank 0.5536 against 0.4331 |
-| Raw recruitment CSV / XLSX | Present in the **working** tree (`应届生招聘大数据*.csv`, `人工智能招聘大数据2025年.xlsx`) | **Do not upload** until platform terms and copyright are confirmed |
+| Raw recruitment CSV / XLSX | Present in the **working** tree (`应届生招聘大数据*.csv`, `人工智能招聘大数据2025年.xlsx`) | **Do not upload** vendor bulk dumps; the research archive uses the processed jsonl |
 | Continued-pretraining sentence dumps | `data/jobbert_*_sents.jsonl` | Same restriction as raw ads |
 | `output/` checkpoints, caches, virtualenvs | Local only | Do not archive |
 
@@ -107,20 +107,27 @@ Do **not** use sister-paper identifiers `2604.21525` or `2604.23009` as this pap
 
 ## 7. Copyright, platform terms, privacy, and redistribution of advertisement text
 
-> **[TODO: authors must confirm redistribution rights for original job-advertisement text before any public upload.]**
+**Author-confirmed (2026-09-11).** Recruitment notices in this corpus were **purchased from a commercial third-party compiler**. That compiler collected the notices from **publicly posted** recruitment pages. After consultation, the authors may use the corpus for **academic research**, including the GitHub / Zenodo / Hugging Face peer-review archive.
+
+This does **not** mean:
+
+- the authors obtained a CC-BY (or any other open-content) licence on the original wording;
+- Zenodo’s default record label `cc-by-4.0` is an author licence decision (it is the GitHub–Zenodo hook default);
+- the four source platforms issued a separate written waiver;
+- vendor bulk CSV / XLSX dumps should be uploaded.
 
 This working tree contains:
 
 - Full sentence strings and job `title` fields (often including employer names) inside gold, silver, corpus splits, frozen predictions, human overlay, the human reference freeze, and Silver-plus files
-- Original bulk exports (`应届生招聘大数据*.csv`, `人工智能招聘大数据2025年.xlsx`)
+- Original bulk exports (`应届生招聘大数据*.csv`, `人工智能招聘大数据2025年.xlsx`) — **keep local; do not add to the public archive**
 
-A proposed repository notice is in `LICENSE` (Apache-2.0 for software; job-advertisement wording is **not** CC-BY). No terms-of-use waiver or written permission from the four recruitment platforms is present. Therefore:
+A proposed repository notice is in `LICENSE` (Apache-2.0 for software; job-advertisement wording is **not** CC-BY). Therefore:
 
 - **Do not claim** that the full raw advertisement text is openly licensed (CC-BY or otherwise).
-- **Do not upload** the CSV / XLSX source dumps with the public archive until counsel or the corresponding author confirms platform terms.
-- A possible restricted release (IDs + BIO tags + hashes, text on request) is **not** implemented; it is listed here only as an option for the authors if full-text rights fail.
+- **Do not upload** the vendor CSV / XLSX source dumps.
+- A restricted release (IDs + BIO tags + hashes, text on request) is **not** required under the research-use consultation above; it remains an option only if a later rights review reverses that consultation.
 
-Privacy: advertisements may include workplace locations and organisational names. They are not a curated personal-data corpus, but they are not demonstrably free of personal data either. `[TODO: complete a personal-data review before PeerJ submission]`.
+Privacy: advertisements may include workplace locations and organisational names. They are not a curated personal-data (CV) corpus. A separate personal-data review of titles and sentences is still recommended before treating the text as free of identifiers.
 
 ---
 
@@ -128,11 +135,11 @@ Privacy: advertisements may include workplace locations and organisational names
 
 Use this wording in the PeerJ form. The clickable “available at” should be **`v0.1.3`** plus the concept DOI. Keep **`v0.1.1`** as the first archival snapshot (do not delete it). Do **not** put SHA-256 values in the running paragraph; they live in `REPRODUCIBILITY.md`.
 
-> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22698504 (version v0.1.3; concept DOI https://doi.org/10.5281/zenodo.22288337). Earlier snapshots are https://doi.org/10.5281/zenodo.22685143 (version v0.1.2) and https://doi.org/10.5281/zenodo.22288338 (version v0.1.1). The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (default branch; portable scoring entry points after 2026-09-11). The paper-main JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh. Two later public model repositories are available at https://huggingface.co/AlfredJames/jobbert-zh-1m (1M DAPT contrast) and https://huggingface.co/AlfredJames/jobbert-zh-v6a (human-reference B2 continuation); they do not replace the paper-main encoder. The 150-sentence human reference set (`data/gold150_test.jsonl`) and Silver-plus B2 train/development files (`data/silver_plus_v6a_nocross/`) are included in v0.1.3 and are not in Zenodo v0.1.1 or v0.1.2. Qwen LoRA adapters are not published. Redistribution of original job-advertisement wording remains subject to the source platforms’ terms.
+> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22698504 (version v0.1.3; concept DOI https://doi.org/10.5281/zenodo.22288337). Earlier snapshots are https://doi.org/10.5281/zenodo.22685143 (version v0.1.2) and https://doi.org/10.5281/zenodo.22288338 (version v0.1.1). The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (default branch; portable scoring entry points after 2026-09-11). The paper-main JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh. Two later public model repositories are available at https://huggingface.co/AlfredJames/jobbert-zh-1m (1M DAPT contrast) and https://huggingface.co/AlfredJames/jobbert-zh-v6a (human-reference B2 continuation); they do not replace the paper-main encoder. The 150-sentence human reference set (`data/gold150_test.jsonl`) and Silver-plus B2 train/development files (`data/silver_plus_v6a_nocross/`) are included in v0.1.3 and are not in Zenodo v0.1.1 or v0.1.2. Qwen LoRA adapters are not published. Recruitment notices were purchased from a commercial compiler of publicly posted advertisements; after consultation, academic research use of this corpus, including the peer-review archive, is permitted. Original advertisement wording is not licensed CC-BY.
 
 Longer form (optional methods paragraph):
 
-> Chinese-SkillSpan (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol) and the official scorer `cnss-lskt-1.2.0` are archived at https://doi.org/10.5281/zenodo.22698504 (v0.1.3). Earlier snapshots are https://doi.org/10.5281/zenodo.22685143 (v0.1.2) and https://doi.org/10.5281/zenodo.22288338 (v0.1.1). The source code is at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The paper-main Chinese JobBERT (JobBERT-zh) is distributed at https://huggingface.co/AlfredJames/jobbert-zh. Later public checkpoints are at https://huggingface.co/AlfredJames/jobbert-zh-1m and https://huggingface.co/AlfredJames/jobbert-zh-v6a; they are not substitutes for the paper-main encoder. Redistribution of original job-advertisement wording remains subject to the source platforms’ terms. This work was supported by the National Social Science Fund of China, Grant No. 21BGL142.
+> Chinese-SkillSpan (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol) and the official scorer `cnss-lskt-1.2.0` are archived at https://doi.org/10.5281/zenodo.22698504 (v0.1.3). Earlier snapshots are https://doi.org/10.5281/zenodo.22685143 (v0.1.2) and https://doi.org/10.5281/zenodo.22288338 (v0.1.1). The source code is at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The paper-main Chinese JobBERT (JobBERT-zh) is distributed at https://huggingface.co/AlfredJames/jobbert-zh. Later public checkpoints are at https://huggingface.co/AlfredJames/jobbert-zh-1m and https://huggingface.co/AlfredJames/jobbert-zh-v6a; they are not substitutes for the paper-main encoder. Recruitment notices were purchased from a commercial compiler of publicly posted advertisements; after consultation, academic research use of this corpus, including the peer-review archive, is permitted. Original advertisement wording is not licensed CC-BY. This work was supported by the National Social Science Fund of China, Grant No. 21BGL142.
 
 Optional human-reference sentence (still **no** SHA-256 in the running paragraph; 0911 PDF names). Use `\url` in TeX:
 

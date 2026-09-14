@@ -1,0 +1,462 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04302",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "沟通协作能力",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "抗压能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用能力，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04303",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格初审异议申辩的行政流程及时间安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04304",
+      "spans": [
+        {
+          "start": 2,
+          "end": 26,
+          "text": "数据中心运维管理平台公共支撑类系统的日常运维支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确运维职责，保留具体系统对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04305",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "团队意识",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "团队合作精神",
+          "label": "T"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "明确通用能力已标；工作稳定的要求性质待裁决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "工作稳定",
+          "alternatives": [
+            "属于候选人的职业稳定性特质要求，标T",
+            "属于就业状态或工作条件描述，不标"
+          ],
+          "reason": "未说明稳定指个人任职倾向还是工作状态，缺少限定语境。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04306",
+      "spans": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "视讯",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "数通",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "服务器",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "存储架构",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "路由",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 28,
+          "text": "交换",
+          "label": "K"
+        },
+        {
+          "start": 29,
+          "end": 31,
+          "text": "安全",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "架构及相关知识语境，按并列领域知识拆分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04307",
+      "spans": [
+        {
+          "start": 2,
+          "end": 37,
+          "text": "电脑及其周边设备（打印机、扫描仪、传真机、复印机、投影仪等）安装与维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装与维护共享设备对象，保留连续完整职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04308",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "内部报表开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确报表开发活动，去除职责触发词及工作后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04309",
+      "spans": [
+        {
+          "start": 6,
+          "end": 12,
+          "text": "独立解决问题",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "文档编写能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "泛化问题解决为T，文档编写为具体职业能力S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04310",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "介绍面试组织及考察流程，未给出具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04311",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "业务系统运行监控",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "问题排查",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "故障处理",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "安全管理",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "性能优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分独立运维活动，后续活动承接业务系统对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04312",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考试原则及范围说明，仅有泛化考察类别。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04313",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "需求分析",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "功能设计",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 34,
+          "text": "叙述业务需求和功能要求",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分析和设计为职业活动，向人员叙述要求为沟通能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04314",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "现有师资及人才构成介绍，不是候选人资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04315",
+      "spans": [
+        {
+          "start": 0,
+          "end": 8,
+          "text": "计算机网络及应用",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整专业核心名，去除相关专业。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04316",
+      "spans": [
+        {
+          "start": 2,
+          "end": 20,
+          "text": "工厂基础架构Helpdesk日常运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确基础架构运维职能，保留原文英文及对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04317",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "专业目录之外的资格认定行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04318",
+      "spans": [
+        {
+          "start": 10,
+          "end": 18,
+          "text": "硕士研究生及以上",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历学位门槛为K，取得证件的截止日期不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04320",
+      "spans": [
+        {
+          "start": 4,
+          "end": 26,
+          "text": "公众号、微信号、QQ群等渠道的内容发布、维护",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "关注用户增长",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取渠道内容运营及用户增长关注职责；提高活跃度和关注度为结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04321",
+      "spans": [
+        {
+          "start": 0,
+          "end": 17,
+          "text": "安装/重装常用软件、教育信息化软件",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 35,
+          "text": "设备/系统使用操作培训",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件安装与重装共享对象；技术操作培训独立抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04322",
+      "spans": [
+        {
+          "start": 2,
+          "end": 24,
+          "text": "监督公司有关政策法规和风险管理制度的落实情况",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 37,
+          "text": "组织相关部门应对监管检查",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 50,
+          "text": "督促监管检查结果的落实",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分制度监督、监管检查应对和整改落实督促三项具体职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04323",
+      "spans": [
+        {
+          "start": 10,
+          "end": 15,
+          "text": "数据库技术",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "范围与边界明确，知识掌握或技术运用未决，S为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "数据库技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅有熟练掌握要求，未明确数据库知识体系还是实际操作运用，不能仅凭熟练判S。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04324",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘背景及机构服务能力建设目标，不是个人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04325",
+      "spans": [
+        {
+          "start": 1,
+          "end": 6,
+          "text": "教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 25,
+          "text": "教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 44,
+          "text": "教师资格考试合格证明",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取非语言资格及应届生可提供的替代证明，保留重复提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04326",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "引进计划、人数及附件指引，未列具体能力或专业要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04327",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告的解释权说明。",
+      "issues": []
+    }
+  ]
+}

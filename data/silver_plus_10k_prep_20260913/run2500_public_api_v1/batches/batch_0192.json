@@ -1,0 +1,685 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 51.017,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5016,
+    "completion_tokens": 1462,
+    "total_tokens": 6478,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 351
+    },
+    "input_tokens": 5016,
+    "output_tokens": 1462,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-04181",
+      "repairs": [
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            30,
+            40
+          ],
+          "to": [
+            29,
+            40
+          ],
+          "text": "相关专业知识及相关规定"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04210",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            18,
+            26
+          ],
+          "to": [
+            16,
+            22
+          ],
+          "text": "营养搭配原则"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            27,
+            35
+          ],
+          "to": [
+            23,
+            31
+          ],
+          "text": "制定食堂每周菜单"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            49,
+            57
+          ],
+          "to": [
+            41,
+            48
+          ],
+          "text": "定期增加新品种"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04227",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            14
+          ],
+          "to": [
+            2,
+            16
+          ],
+          "text": "保障音响、灯光等设备正常运行"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04249",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            12
+          ],
+          "to": [
+            4,
+            10
+          ],
+          "text": "相关专业软件"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            17
+          ],
+          "to": [
+            11,
+            15
+          ],
+          "text": "办公软件"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04257",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "商务谈判"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "人际沟通"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            20
+          ],
+          "to": [
+            15,
+            19
+          ],
+          "text": "关系建立"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            26,
+            39
+          ],
+          "to": [
+            29,
+            38
+          ],
+          "text": "客户拜访与商务应酬"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04285",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            17
+          ],
+          "to": [
+            13,
+            16
+          ],
+          "text": "CAD"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            28,
+            42
+          ],
+          "to": [
+            24,
+            34
+          ],
+          "text": "独立解决复杂技术问题"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04319",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            6,
+            13
+          ],
+          "to": [
+            6,
+            10
+          ],
+          "text": "显示模组"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            14,
+            17
+          ],
+          "to": [
+            11,
+            14
+          ],
+          "text": "SMT"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            14,
+            21
+          ],
+          "text": "制造的工艺流程"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04349",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            7
+          ],
+          "to": [
+            4,
+            8
+          ],
+          "text": "问题分析"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            8,
+            14
+          ],
+          "to": [
+            9,
+            13
+          ],
+          "text": "执行跟进"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04399",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            8
+          ],
+          "to": [
+            2,
+            7
+          ],
+          "text": "新产品导入"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            16
+          ],
+          "to": [
+            8,
+            14
+          ],
+          "text": "制定生产流程"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            21
+          ],
+          "to": [
+            15,
+            19
+          ],
+          "text": "跟进量产"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04457",
+      "repairs": [
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            18,
+            26
+          ],
+          "to": [
+            18,
+            25
+          ],
+          "text": "本科及以上学历"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-04181\",\"spans\":[{\"start\":2,\"end\":4,\"text\":\"金碟\",\"label\":\"S\"},{\"start\":5,\"end\":9,\"text\":\"财务软件\",\"label\":\"S\"},{\"start\":12,\"end\":16,\"text\":\"财务核算\",\"label\":\"S\"},{\"start\":17,\"end\":21,\"text\":\"财务管理\",\"label\":\"S\"},{\"start\":22,\"end\":25,\"text\":\"会计法\",\"label\":\"K\"},{\"start\":26,\"end\":28,\"text\":\"税法\",\"label\":\"K\"},{\"start\":30,\"end\":40,\"text\":\"相关专业知识及相关规定\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取财务软件工具、财务职业活动及会计税法等专业知识和规定。\",\"issues\":[]},{\"id\":\"sp10k-04210\",\"spans\":[{\"start\":18,\"end\":26,\"text\":\"营养搭配原则\",\"label\":\"K\"},{\"start\":27,\"end\":35,\"text\":\"制定食堂每周菜单\",\"label\":\"S\"},{\"start\":49,\"end\":57,\"text\":\"定期增加新品种\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取营养搭配专业原则及菜单制定、新品种增加等明确职业活动；满意度提升属于结果表述。\",\"issues\":[]},{\"id\":\"sp10k-04227\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"保障音响、灯光等设备正常运行\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"保障设备正常运行属于明确的设备运行动作。\",\"issues\":[]},{\"id\":\"sp10k-04249\",\"spans\":[{\"start\":4,\"end\":12,\"text\":\"相关专业软件\",\"label\":\"S\"},{\"start\":13,\"end\":17,\"text\":\"办公软件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"软件操作语境下抽取岗位所用软件类别。\",\"issues\":[]},{\"id\":\"sp10k-04257\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"商务谈判\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"人际沟通\",\"label\":\"T\"},{\"start\":16,\"end\":20,\"text\":\"关系建立\",\"label\":\"T\"},{\"start\":26,\"end\":39,\"text\":\"客户拜访与商务应酬\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取商务谈判、人际沟通、关系建立及客户交往相关通用能力。\",\"issues\":[]},{\"id\":\"sp10k-04285\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"电气设计规范\",\"label\":\"K\"},{\"start\":14,\"end\":17,\"text\":\"CAD\",\"label\":\"S\"},{\"start\":28,\"end\":42,\"text\":\"独立解决复杂技术问题\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"电气设计规范属于专业规范，CAD为设计软件，解决复杂技术问题为明确技术活动。\",\"issues\":[]},{\"id\":\"sp10k-04319\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"LED\",\"label\":\"K\"},{\"start\":6,\"end\":13,\"text\":\"显示模组\",\"label\":\"K\"},{\"start\":14,\"end\":17,\"text\":\"SMT\",\"label\":\"K\"},{\"start\":18,\"end\":22,\"text\":\"制造的工艺流程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取LED、显示模组、SMT制造及其工艺流程等领域知识；并列语义按原文连续提及处理。\",\"issues\":[]},{\"id\":\"sp10k-04349\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"问题分析\",\"label\":\"T\"},{\"start\":8,\"end\":14,\"text\":\"执行跟进\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"问题分析和执行跟进在无明确技术对象时按通用能力标注。\",\"issues\":[]},{\"id\":\"sp10k-04399\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"新产品导入\",\"label\":\"S\"},{\"start\":10,\"end\":16,\"text\":\"制定生产流程\",\"label\":\"S\"},{\"start\":17,\"end\":21,\"text\":\"跟进量产\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取产品导入、生产流程制定和量产跟进等明确生产职业活动。\",\"issues\":[]},{\"id\":\"sp10k-04457\",\"spans\":[{\"start\":0,\"end\":3,\"text\":\"会计学\",\"label\":\"K\"},{\"start\":4,\"end\":6,\"text\":\"数学\",\"label\":\"K\"},{\"start\":7,\"end\":11,\"text\":\"财务管理\",\"label\":\"K\"},{\"start\":12,\"end\":14,\"text\":\"审计\",\"label\":\"K\"},{\"start\":15,\"end\":18,\"text\":\"统计学\",\"label\":\"K\"},{\"start\":18,\"end\":26,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历要求及所列专业领域知识。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-04181",
+        "spans": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "金碟",
+            "label": "S"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "财务软件",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "财务核算",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "财务管理",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "text": "会计法",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "text": "税法",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 40,
+            "text": "相关专业知识及相关规定",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取财务软件工具、财务职业活动及会计税法等专业知识和规定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04210",
+        "spans": [
+          {
+            "start": 16,
+            "end": 22,
+            "text": "营养搭配原则",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 31,
+            "text": "制定食堂每周菜单",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 48,
+            "text": "定期增加新品种",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取营养搭配专业原则及菜单制定、新品种增加等明确职业活动；满意度提升属于结果表述。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04227",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "保障音响、灯光等设备正常运行",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保障设备正常运行属于明确的设备运行动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04249",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "相关专业软件",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "办公软件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "软件操作语境下抽取岗位所用软件类别。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04257",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "商务谈判",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "人际沟通",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "关系建立",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 38,
+            "text": "客户拜访与商务应酬",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取商务谈判、人际沟通、关系建立及客户交往相关通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04285",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "电气设计规范",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "text": "CAD",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 34,
+            "text": "独立解决复杂技术问题",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "电气设计规范属于专业规范，CAD为设计软件，解决复杂技术问题为明确技术活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04319",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "LED",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "text": "显示模组",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "text": "SMT",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "text": "制造的工艺流程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取LED、显示模组、SMT制造及其工艺流程等领域知识；并列语义按原文连续提及处理。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04349",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "问题分析",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "执行跟进",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "问题分析和执行跟进在无明确技术对象时按通用能力标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04399",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "新产品导入",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "制定生产流程",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "跟进量产",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取产品导入、生产流程制定和量产跟进等明确生产职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04457",
+        "spans": [
+          {
+            "start": 0,
+            "end": 3,
+            "text": "会计学",
+            "label": "K"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "text": "数学",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "财务管理",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "审计",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 18,
+            "text": "统计学",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 25,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历要求及所列专业领域知识。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 192,
+  "ids": [
+    "sp10k-04181",
+    "sp10k-04210",
+    "sp10k-04227",
+    "sp10k-04249",
+    "sp10k-04257",
+    "sp10k-04285",
+    "sp10k-04319",
+    "sp10k-04349",
+    "sp10k-04399",
+    "sp10k-04457"
+  ],
+  "at": "2026-09-13T16:48:44.203875+00:00"
+}

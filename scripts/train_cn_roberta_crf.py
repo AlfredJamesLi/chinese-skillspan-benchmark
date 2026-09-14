@@ -275,8 +275,12 @@ def train_one(args) -> dict:
         train_rows = []
     print(json.dumps({"n_train": len(train_rows), "n_dev": len(dev_rows), "n_test": len(test_rows)}), flush=True)
     train_ds = SentDS(train_rows, tok, args.max_len, label2id, keep_type)
-    loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True)
-    opt = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.01)
+    loader = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True) if train_rows else []
+    if bool(getattr(args, "freeze_encoder", False)):
+        for p in model.encoder.parameters():
+            p.requires_grad = False
+        print(json.dumps({"freeze_encoder": True}), flush=True)
+    opt = torch.optim.AdamW([p for p in model.parameters() if p.requires_grad], lr=args.lr, weight_decay=0.01)
     total = max(1, len(loader) * args.epochs)
     sched = get_linear_schedule_with_warmup(opt, int(0.1 * total), total)
     out_dir = Path(args.out_dir)
@@ -428,6 +432,11 @@ def main() -> int:
         "--init_crf",
         default="",
         help="Load a BertCRF state_dict. Path, or 'hub' for <model_dir>/crf/best.pt.",
+    )
+    ap.add_argument(
+        "--freeze_encoder",
+        action="store_true",
+        help="Train CRF/emission only (v6a student recipe). Encoder stays frozen.",
     )
     ap.add_argument("--predict_only", action="store_true", help="Skip the training loop; write test_pred.jsonl.")
     ap.add_argument("--skip_score", action="store_true", help="Do not call the official scorer (smoke / partial test).")

@@ -1,0 +1,217 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 43.221,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5194,
+    "completion_tokens": 1343,
+    "total_tokens": 6537,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 610
+    },
+    "input_tokens": 5194,
+    "output_tokens": 1343,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01938\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报名材料及证明提交要求，未提出具体能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01939\",\"spans\":[{\"start\":5,\"end\":16,\"text\":\"中、英文读写及表达能力\",\"label\":\"L\"}],\"status\":\"candidate_complete\",\"note\":\"语言读写及表达要求按L标注，保留共享能力中心语。\",\"issues\":[]},{\"id\":\"sp10k-01940\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"文字表达能力\",\"label\":\"T\"},{\"start\":18,\"end\":22,\"text\":\"办公软件\",\"label\":\"S\"},{\"start\":23,\"end\":26,\"text\":\"适应力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"文字表达及适应力为通用能力；办公软件为岗位运用工具，去除熟练程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-01941\",\"spans\":[{\"start\":42,\"end\":49,\"text\":\"实验室日常管理\",\"label\":\"S\"},{\"start\":50,\"end\":54,\"text\":\"设备维护\",\"label\":\"S\"},{\"start\":55,\"end\":59,\"text\":\"教学指导\",\"label\":\"S\"},{\"start\":95,\"end\":101,\"text\":\"热爱教育事业\",\"label\":\"T\"},{\"start\":102,\"end\":106,\"text\":\"遵纪守法\",\"label\":\"T\"},{\"start\":107,\"end\":111,\"text\":\"品行端正\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确职业职责及职业态度、品行要求；机构介绍和无不良行为记录不作为能力资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01942\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报考条件阅读及诚信承诺签署流程。\",\"issues\":[]},{\"id\":\"sp10k-01945\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明评估认定信息的公示安排。\",\"issues\":[]},{\"id\":\"sp10k-01946\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"描述招聘机构开展资格初审及通知面试的流程，不是候选人的职业职责。\",\"issues\":[]},{\"id\":\"sp10k-01948\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报名材料下载、填写及发送方式。\",\"issues\":[]},{\"id\":\"sp10k-01955\",\"spans\":[{\"start\":2,\"end\":21,\"text\":\"编辑出版国内外公开发行的《三月三》杂志\",\"label\":\"S\"},{\"start\":31,\"end\":44,\"text\":\"管理编辑发布一个微信公众号\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取编辑出版及公众号管理编辑发布职责，保留共享职业对象；版本名称不单独推断为语言能力要求。\",\"issues\":[]},{\"id\":\"sp10k-01956\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"研究生迎新\",\"label\":\"S\"},{\"start\":8,\"end\":12,\"text\":\"毕业工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"迎新与毕业工作为可独立识别的职业活动，后项研究生限定由局部语境共享。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01938",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报名材料及证明提交要求，未提出具体能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01939",
+        "spans": [
+          {
+            "start": 5,
+            "end": 16,
+            "text": "中、英文读写及表达能力",
+            "label": "L"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "语言读写及表达要求按L标注，保留共享能力中心语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01940",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "文字表达能力",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "办公软件",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 26,
+            "text": "适应力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文字表达及适应力为通用能力；办公软件为岗位运用工具，去除熟练程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01941",
+        "spans": [
+          {
+            "start": 42,
+            "end": 49,
+            "text": "实验室日常管理",
+            "label": "S"
+          },
+          {
+            "start": 50,
+            "end": 54,
+            "text": "设备维护",
+            "label": "S"
+          },
+          {
+            "start": 55,
+            "end": 59,
+            "text": "教学指导",
+            "label": "S"
+          },
+          {
+            "start": 95,
+            "end": 101,
+            "text": "热爱教育事业",
+            "label": "T"
+          },
+          {
+            "start": 102,
+            "end": 106,
+            "text": "遵纪守法",
+            "label": "T"
+          },
+          {
+            "start": 107,
+            "end": 111,
+            "text": "品行端正",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确职业职责及职业态度、品行要求；机构介绍和无不良行为记录不作为能力资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01942",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报考条件阅读及诚信承诺签署流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01945",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明评估认定信息的公示安排。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01946",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "描述招聘机构开展资格初审及通知面试的流程，不是候选人的职业职责。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01948",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报名材料下载、填写及发送方式。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01955",
+        "spans": [
+          {
+            "start": 2,
+            "end": 21,
+            "text": "编辑出版国内外公开发行的《三月三》杂志",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 44,
+            "text": "管理编辑发布一个微信公众号",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取编辑出版及公众号管理编辑发布职责，保留共享职业对象；版本名称不单独推断为语言能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01956",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "研究生迎新",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "毕业工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "迎新与毕业工作为可独立识别的职业活动，后项研究生限定由局部语境共享。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 182,
+  "ids": [
+    "sp10k-01938",
+    "sp10k-01939",
+    "sp10k-01940",
+    "sp10k-01941",
+    "sp10k-01942",
+    "sp10k-01945",
+    "sp10k-01946",
+    "sp10k-01948",
+    "sp10k-01955",
+    "sp10k-01956"
+  ],
+  "at": "2026-09-13T16:38:35.436446+00:00"
+}

@@ -1,0 +1,494 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02654",
+      "spans": [
+        {
+          "start": 263,
+          "end": 270,
+          "text": "中级及以上职称",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取招聘对象的职称资格；公告背景及政策文件不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02655",
+      "spans": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "本科",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "本科为学历要求；毕业年份及应届身份不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02656",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "抗压能力",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "吃苦",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用能力及特质；出差与常驻安排不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02657",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "专科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "text": "信息化",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "财务",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "人力资源",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "物流管理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历与明确列举的专业分别标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02658",
+      "spans": [
+        {
+          "start": 17,
+          "end": 21,
+          "text": "综合素质",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "综合分析",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "语言表达",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "计划组织",
+          "label": "T"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "人际关系",
+          "label": "T"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "text": "应变能力",
+          "label": "T"
+        },
+        {
+          "start": 47,
+          "end": 51,
+          "text": "自我认知",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取面试中明确考查的候选人素质；面试形式本身不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02659",
+      "spans": [
+        {
+          "start": 9,
+          "end": 22,
+          "text": "项目过程文档进行编写和管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "文档编写与管理共享必要对象，保留连续完整跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02660",
+      "spans": [
+        {
+          "start": 14,
+          "end": 18,
+          "text": "政治素质",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "遵纪守法",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "品行端正",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确要求的素质与品行；无违法违纪记录不作为能力提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02661",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘纪律、监督及取消资格的处理规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02662",
+      "spans": [
+        {
+          "start": 2,
+          "end": 20,
+          "text": "计算机、服务器及工作站操作系统的运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "多个对象共享运维动作，整体保留。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02663",
+      "spans": [
+        {
+          "start": 8,
+          "end": 12,
+          "text": "临床医学",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "病理学",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "细胞生物",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "分子生物技术",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 42,
+          "text": "全日制本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业及完整学历资格，保留原文专业写法；岗位名称与面试不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02664",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "专科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "财务",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "信息管理",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "计算机",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历和专业；泛化工作经验及年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02665",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 26,
+          "text": "对用户提出的需求耐心解决",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通与服务意识为T；解决用户需求为有明确业务对象的职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02666",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "客户开发与维护",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 27,
+          "text": "与客户建立良好的业务协作关系",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "客户开发维护为职业活动；建立人际业务协作关系为通用协作能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02667",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为考试科目名称及时间安排，不从科目名称抽取能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02668",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明公告解释单位。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02669",
+      "spans": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "计算机通信",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 40,
+          "text": "大规模场景下的互联网业务系统研发或运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业与学历标K；研发或运维保留共享对象和规模限定，去除工作经验及年限。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02670",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明报考时须提交的学历认证材料，属于报名流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02671",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "网络监控",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "应急反应",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络监控与局部网络语境下的应急反应为职业活动；持续运作能力是系统结果，不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02672",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为资格复审名单附件名称、发布单位及日期。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02673",
+      "spans": [
+        {
+          "start": 3,
+          "end": 20,
+          "text": "客服软件及操作系统的日常检查和维护",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 29,
+          "text": "解决发现问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "检查维护共享技术对象；解决问题承接局部软件与系统故障语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02674",
+      "spans": [
+        {
+          "start": 1,
+          "end": 6,
+          "text": "有限元分析",
+          "label": "S"
+        },
+        {
+          "start": 7,
+          "end": 15,
+          "text": "化工过程模拟优化",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 28,
+          "text": "ANSYS",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取可执行模拟方法与现用软件；后接福利标题不影响前段要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02675",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅有招聘条件标题，无具体能力、知识或资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02676",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "管理公司各项目水处理设施",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "团队培训",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "保留明确的设施管理和团队培训；收入、成本片段缺少完整职责动作。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "对水处理业务收入、成本",
+          "alternatives": [
+            "属于收入与成本管理等职业职责",
+            "仅为未完成的业务对象列举，不入主层"
+          ],
+          "reason": "句子截断，未说明针对收入和成本须执行的动作，不能补写管理或分析。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02677",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明网络资格初审的完成期限。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02678",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明公告未尽事宜的解释单位。",
+      "issues": []
+    }
+  ]
+}

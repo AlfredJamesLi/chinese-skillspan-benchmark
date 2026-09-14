@@ -1,0 +1,73 @@
+{
+  "status": "已准备好",
+  "created_utc": "2026-09-13T15:36:00.458916+00:00",
+  "repository": "https://github.com/AlfredJamesLi/cnss-silver-codex-astra-5436.git",
+  "clone_path": "C:\\Users\\James Lee\\Documents\\Codex\\2026-09-13\\chinese-skillspan-silver-https-github-com\\work\\cnss-silver-codex-astra-5436",
+  "branch": "main",
+  "actual_commit": "e09f608964f3510d5de4a62e5f6d96472904556c",
+  "reference_commit": "e09f608964f3510d5de4a62e5f6d96472904556c",
+  "reference_diff": "",
+  "worktree_status": "",
+  "waves": [
+    {
+      "wave": "wave1",
+      "records": 1810,
+      "original_batches": 181,
+      "derived_batches": 73,
+      "last_derived_n": 10
+    },
+    {
+      "wave": "wave2",
+      "records": 1810,
+      "original_batches": 181,
+      "derived_batches": 73,
+      "last_derived_n": 10
+    },
+    {
+      "wave": "wave3",
+      "records": 1816,
+      "original_batches": 182,
+      "derived_batches": 73,
+      "last_derived_n": 16
+    }
+  ],
+  "records": 5436,
+  "unique_ids": 5436,
+  "held_count": 2500,
+  "held_unique_ids": 2500,
+  "held_intersection": 0,
+  "duplicate_text_groups": 0,
+  "duplicate_text_extra_records": 0,
+  "original_batch_pairs_equal": 544,
+  "derived_batches": 219,
+  "mapping_rows": 5436,
+  "prompt_sha256": "b6223e9a2e9b02afa19cba79ba908766d9240acb233723fbe6f53b40e6b04fd6",
+  "prompt_matches_counts_and_reference": true,
+  "required_prompt_rules_present": true,
+  "ids_remaining_sha256": "5a606fdc05da0257d41b04ffa5fec4eade9314b68e0aafa906987329cd538216",
+  "schema_source": "https://raw.githubusercontent.com/AlfredJamesLi/chinese-skillspan-benchmark/f7113b9e91db073843422cc02c9d49d9383e5e3d/reproduction/silver_prompt_api_v1/output_schema.json",
+  "schema_sha256": "b3e7745a4579f7652135b9295bbafeb2f4934df3896e98034ab4f476dba8b8ec",
+  "input_extra_fields": [],
+  "source_label_status": {
+    "pending_ai": 5436
+  },
+  "source_non_null_annotation_ids": [],
+  "file_hash_notes": [
+    "BATCH_INDEX.jsonl entries contain no file checksums; all counts/IDs/order were checked and fresh SHA256 inventory saved.",
+    "COUNTS.sha256_work refers to upstream 7936 work pool absent here: 未在此包中核验。",
+    "3M之外、上游去重及来源/Gold排除的独立证据：未在此包中核验。包内来源元数据不等于上游审计。"
+  ],
+  "errors": [],
+  "source_progress_unchanged": true,
+  "annotation_started": false,
+  "first_trial": "wave1/batches/batch25_0001.json",
+  "second_trial_not_authorized": "wave1/batches/batch25_0002.json",
+  "held_interpretation": "另行保留，并非已完成标注",
+  "empty_output_directory_placeholders": [
+    "batches_out/.gitkeep",
+    "waves/wave3/batches_out/.gitkeep",
+    "waves/wave2/batches_out/.gitkeep",
+    "waves/wave1/batches_out/.gitkeep"
+  ],
+  "existing_output_files": []
+}

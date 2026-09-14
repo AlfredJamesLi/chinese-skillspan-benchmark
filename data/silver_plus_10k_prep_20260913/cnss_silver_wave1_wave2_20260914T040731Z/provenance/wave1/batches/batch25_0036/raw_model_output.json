@@ -1,0 +1,680 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02732",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "逻辑思维能力",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "团队协助意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用能力与协作意识，去除程度和要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02733",
+      "spans": [
+        {
+          "start": 3,
+          "end": 13,
+          "text": "软件框架基础程序分析",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 35,
+          "text": "发表/申请过相关论文/专利",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体技术分析及论文、专利实践属于职业活动；共享对象保留。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02734",
+      "spans": [
+        {
+          "start": 1,
+          "end": 9,
+          "text": "全日制本科及以上",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "text": "学士及以上",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "护理",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "医学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取学历、学位与专业名，不补写原文缺少的资格后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02735",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "处理故障，服务请求",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "运维环境优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "故障与服务请求共享处理动作，保留连续完整短语；另拆环境优化。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02736",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "帆软报表工具",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "开发",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "后台管理",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工具具有明确开发用途，管理与运维按局部共享对象拆分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02737",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "全文为遴选考察程序，但末段亦明确排除素质不符合要求者，范围需裁决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "坚决杜绝政治素质、道德品行、廉洁操守不符合要求的人员进入市直机关",
+          "alternatives": [
+            "作为遴选考察行政程序排除",
+            "作为嵌入的候选人素质要求抽取"
+          ],
+          "reason": "协议未明确此类考察标准与直接候选人特质要求的界限，前述政治素质考察清单亦受此范围判断影响。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02738",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "基本电脑操作",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "基本办公软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取电脑操作与明确要求使用的办公软件。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02739",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "描述聘用后的培训安排，未提出候选人既有能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02740",
+      "spans": [
+        {
+          "start": 1,
+          "end": 4,
+          "text": "路由器",
+          "label": "S"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "防火墙",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 26,
+          "text": "故障诊断和处理能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备受明确操作要求限定；故障诊断与处理保留共享对象和能力中心。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02741",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "平台后端逻辑设计",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "代码实现",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分逻辑设计与代码实现两项职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02742",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为面试违规的成绩处理规则。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02743",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "Linux原理",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "系统",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "应用知识",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 27,
+          "text": "Linux系统",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "text": "虚拟化技术",
+          "label": "K"
+        },
+        {
+          "start": 35,
+          "end": 38,
+          "text": "Xen",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 42,
+          "text": "KVM",
+          "label": "S"
+        },
+        {
+          "start": 43,
+          "end": 49,
+          "text": "VMware",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "前段为明确知识语境；后段系统与工具的知识或运用解释未决，相关S仅为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "Linux系统",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可能承接前段系统知识，也可能要求系统操作；未提供实际使用语境。"
+        },
+        {
+          "kind": "type",
+          "text": "Xen，KVM，VMware",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "工具作为虚拟化技术举例，既可指技术知识，也可指岗位工具运用；熟悉不足以消除歧义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02744",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "协调运营商处理网络相关事宜",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "核心要求是协调外部运营商，未具体提出独立技术处理方法。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02745",
+      "spans": [
+        {
+          "start": 19,
+          "end": 25,
+          "text": "公共基础知识",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 31,
+          "text": "高等教育学",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "text": "综合分析问题",
+          "label": "T"
+        },
+        {
+          "start": 39,
+          "end": 43,
+          "text": "文字表达",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确测评候选人的知识及通用能力；闭卷等考试安排不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02746",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "微软办公软件",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 18,
+          "text": "windows系统",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "苹果系统",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 29,
+          "text": "服务器架构",
+          "label": "K"
+        },
+        {
+          "start": 30,
+          "end": 40,
+          "text": "计算机硬件的基本构造",
+          "label": "K"
+        },
+        {
+          "start": 41,
+          "end": 43,
+          "text": "理论",
+          "label": "K"
+        },
+        {
+          "start": 47,
+          "end": 55,
+          "text": "oracle系统",
+          "label": "S"
+        },
+        {
+          "start": 56,
+          "end": 58,
+          "text": "PS",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "架构、构造与理论为知识，后段为岗位工具要求；前段三项工具的类型保留待决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "微软办公软件、windows系统、苹果系统",
+          "alternatives": [
+            "S",
+            "K"
+          ],
+          "reason": "可解为岗位工具能力，也可能共享后续基本构造和理论的知识限定；三项S均为类型占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02747",
+      "spans": [
+        {
+          "start": 13,
+          "end": 20,
+          "text": "系统工具的对接",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 34,
+          "text": "合作商家入驻",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "数据准备",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "text": "系统培训",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 49,
+          "text": "后期维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "对接对象为系统工具，具体入驻、数据、培训及维护职责分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02748",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明资格复审与材料提交程序，未列出具体资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02749",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅有资格条件引导语，没有具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02750",
+      "spans": [
+        {
+          "start": 18,
+          "end": 23,
+          "text": "教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 29,
+          "text": "普通话证书",
+          "label": "L"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "text": "普通话",
+          "label": "L"
+        },
+        {
+          "start": 34,
+          "end": 41,
+          "text": "二级乙等及以上",
+          "label": "L"
+        },
+        {
+          "start": 49,
+          "end": 56,
+          "text": "二级甲等及以上",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "教师资格为非语言资格；普通话证书及上下文明确的等级为语言要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02751",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "WindowsServer",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 19,
+          "text": "ERP",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 29,
+          "text": "VMWare私有云",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 32,
+          "text": "AD",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 36,
+          "text": "数据库",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 39,
+          "text": "安装",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 42,
+          "text": "配置",
+          "label": "S"
+        },
+        {
+          "start": 43,
+          "end": 45,
+          "text": "维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工具列表共享明确的安装、配置及维护要求，工具与动作分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02752",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "虚拟化",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 11,
+          "text": "云计算技术",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "vmware",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 30,
+          "text": "openstack",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "text": "docker",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "text": "Docker",
+          "label": "S"
+        },
+        {
+          "start": 57,
+          "end": 61,
+          "text": "文件系统",
+          "label": "K"
+        },
+        {
+          "start": 62,
+          "end": 64,
+          "text": "网络",
+          "label": "K"
+        },
+        {
+          "start": 65,
+          "end": 67,
+          "text": "监控",
+          "label": "K"
+        },
+        {
+          "start": 68,
+          "end": 70,
+          "text": "编排",
+          "label": "K"
+        },
+        {
+          "start": 82,
+          "end": 84,
+          "text": "运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "概括技术及深入理解的技术项为K；具体工具同时有知识与实际运维许可，平坦投影为S，保留其知识解释。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02753",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为特定报考人员的政策加分及审核规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02754",
+      "spans": [
+        {
+          "start": 35,
+          "end": 43,
+          "text": "对应项目基层带队",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确带队活动，去除年限和经历；教师资格证被明确豁免，竞赛名次为经历成果。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02755",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为不符合报名条件时取消资格的行政规则。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02756",
+      "spans": [
+        {
+          "start": 7,
+          "end": 16,
+          "text": "巡检气化站运营状态",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取有明确业务对象的巡检职责，去除频率和公司要求修饰。",
+      "issues": []
+    }
+  ]
+}

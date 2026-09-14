@@ -1,0 +1,677 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 57.092,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5159,
+    "completion_tokens": 1696,
+    "total_tokens": 6855,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 641
+    },
+    "input_tokens": 5159,
+    "output_tokens": 1696,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01511",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            8
+          ],
+          "to": [
+            14,
+            18
+          ],
+          "text": "项目推进"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            25
+          ],
+          "to": [
+            24,
+            28
+          ],
+          "text": "课题管理"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            29,
+            33
+          ],
+          "to": [
+            31,
+            35
+          ],
+          "text": "计划安排"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            34,
+            38
+          ],
+          "to": [
+            36,
+            40
+          ],
+          "text": "进度跟踪"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            39,
+            45
+          ],
+          "to": [
+            41,
+            47
+          ],
+          "text": "项目相关报告"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01512",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            5
+          ],
+          "to": [
+            4,
+            7
+          ],
+          "text": "逻辑性"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            21
+          ],
+          "to": [
+            11,
+            20
+          ],
+          "text": "沟通和团队协作能力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            29
+          ],
+          "to": [
+            21,
+            28
+          ],
+          "text": "独立思考的能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01513",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            19
+          ],
+          "to": [
+            12,
+            20
+          ],
+          "text": "SQL的存储过程"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            24,
+            38
+          ],
+          "to": [
+            23,
+            35
+          ],
+          "text": "运用存储过程、函数等方法"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            38,
+            44
+          ],
+          "to": [
+            35,
+            41
+          ],
+          "text": "批量处理数据"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01514",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            4,
+            8
+          ],
+          "text": "研究项目"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            26,
+            30
+          ],
+          "to": [
+            30,
+            34
+          ],
+          "text": "日常管理"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            32,
+            36
+          ],
+          "to": [
+            39,
+            43
+          ],
+          "text": "组织申报"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            37,
+            43
+          ],
+          "to": [
+            44,
+            50
+          ],
+          "text": "组织专家评审"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            44,
+            50
+          ],
+          "to": [
+            51,
+            57
+          ],
+          "text": "费用报支审核"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            51,
+            59
+          ],
+          "to": [
+            58,
+            66
+          ],
+          "text": "年度执行情况检查"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            60,
+            64
+          ],
+          "to": [
+            67,
+            71
+          ],
+          "text": "中期检查"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            65,
+            69
+          ],
+          "to": [
+            72,
+            76
+          ],
+          "text": "结题验收"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01516",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            13,
+            17
+          ],
+          "to": [
+            9,
+            13
+          ],
+          "text": "职业道德"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            18,
+            22
+          ],
+          "to": [
+            14,
+            18
+          ],
+          "text": "沟通能力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            23,
+            27
+          ],
+          "to": [
+            19,
+            23
+          ],
+          "text": "抗压能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            28,
+            34
+          ],
+          "to": [
+            24,
+            30
+          ],
+          "text": "团队协作精神"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01517",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            23
+          ],
+          "to": [
+            15,
+            22
+          ],
+          "text": "硬件管理及维护"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01511\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"项目推进\",\"label\":\"S\"},{\"start\":19,\"end\":25,\"text\":\"课题管理\",\"label\":\"S\"},{\"start\":29,\"end\":33,\"text\":\"计划安排\",\"label\":\"S\"},{\"start\":34,\"end\":38,\"text\":\"进度跟踪\",\"label\":\"S\"},{\"start\":39,\"end\":45,\"text\":\"项目相关报告\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取项目推进及项目管理相关职业活动，年限等经验修饰不入跨度。\",\"issues\":[]},{\"id\":\"sp10k-01512\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"逻辑性\",\"label\":\"T\"},{\"start\":11,\"end\":21,\"text\":\"沟通和团队协作能力\",\"label\":\"T\"},{\"start\":22,\"end\":29,\"text\":\"独立思考的能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取逻辑、沟通协作和独立思考等通用能力。\",\"issues\":[]},{\"id\":\"sp10k-01513\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"数据库处理能力\",\"label\":\"S\"},{\"start\":13,\"end\":19,\"text\":\"SQL的存储过程\",\"label\":\"S\"},{\"start\":24,\"end\":38,\"text\":\"运用存储过程、函数等方法\",\"label\":\"S\"},{\"start\":38,\"end\":44,\"text\":\"批量处理数据\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库处理及存储过程、函数、批量数据处理均为可执行技术活动。\",\"issues\":[]},{\"id\":\"sp10k-01514\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"研究项目\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"日常管理\",\"label\":\"S\"},{\"start\":32,\"end\":36,\"text\":\"组织申报\",\"label\":\"S\"},{\"start\":37,\"end\":43,\"text\":\"组织专家评审\",\"label\":\"S\"},{\"start\":44,\"end\":50,\"text\":\"费用报支审核\",\"label\":\"S\"},{\"start\":51,\"end\":59,\"text\":\"年度执行情况检查\",\"label\":\"S\"},{\"start\":60,\"end\":64,\"text\":\"中期检查\",\"label\":\"S\"},{\"start\":65,\"end\":69,\"text\":\"结题验收\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取研究项目管理及其列明的申报、评审、审核、检查和验收活动。\",\"issues\":[]},{\"id\":\"sp10k-01515\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"制药机械\",\"label\":\"K\"},{\"start\":5,\"end\":16,\"text\":\"机械自动化工程（机械）\",\"label\":\"K\"},{\"start\":17,\"end\":21,\"text\":\"化工机械\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取相关专业领域知识名称。\",\"issues\":[]},{\"id\":\"sp10k-01516\",\"spans\":[{\"start\":13,\"end\":17,\"text\":\"职业道德\",\"label\":\"T\"},{\"start\":18,\"end\":22,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":23,\"end\":27,\"text\":\"抗压能力\",\"label\":\"T\"},{\"start\":28,\"end\":34,\"text\":\"团队协作精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"身体健康不属于标注范围，抽取职业道德及通用能力。\",\"issues\":[]},{\"id\":\"sp10k-01517\",\"spans\":[{\"start\":5,\"end\":10,\"text\":\"计算机网络\",\"label\":\"K\"},{\"start\":11,\"end\":14,\"text\":\"服务器\",\"label\":\"K\"},{\"start\":15,\"end\":23,\"text\":\"硬件管理及维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取网络、服务器领域知识及硬件管理维护职业活动；年限和经验不入跨度。\",\"issues\":[]},{\"id\":\"sp10k-01518\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"事业单位招聘程序、法规文件及招聘公告信息，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01519\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为工作要求说明标题，缺乏具体候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-01520\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"Tableau\",\"label\":\"S\"},{\"start\":10,\"end\":20,\"text\":\"QlickSense\",\"label\":\"S\"},{\"start\":21,\"end\":25,\"text\":\"BI工具\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取岗位使用的BI工具名称。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01511",
+        "spans": [
+          {
+            "start": 14,
+            "end": 18,
+            "text": "项目推进",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "课题管理",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "text": "计划安排",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "text": "进度跟踪",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 47,
+            "text": "项目相关报告",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取项目推进及项目管理相关职业活动，年限等经验修饰不入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01512",
+        "spans": [
+          {
+            "start": 4,
+            "end": 7,
+            "text": "逻辑性",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 20,
+            "text": "沟通和团队协作能力",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 28,
+            "text": "独立思考的能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取逻辑、沟通协作和独立思考等通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01513",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "数据库处理能力",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "text": "SQL的存储过程",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 35,
+            "text": "运用存储过程、函数等方法",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 41,
+            "text": "批量处理数据",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库处理及存储过程、函数、批量数据处理均为可执行技术活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01514",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "研究项目",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "日常管理",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 43,
+            "text": "组织申报",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 50,
+            "text": "组织专家评审",
+            "label": "S"
+          },
+          {
+            "start": 51,
+            "end": 57,
+            "text": "费用报支审核",
+            "label": "S"
+          },
+          {
+            "start": 58,
+            "end": 66,
+            "text": "年度执行情况检查",
+            "label": "S"
+          },
+          {
+            "start": 67,
+            "end": 71,
+            "text": "中期检查",
+            "label": "S"
+          },
+          {
+            "start": 72,
+            "end": 76,
+            "text": "结题验收",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取研究项目管理及其列明的申报、评审、审核、检查和验收活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01515",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "制药机械",
+            "label": "K"
+          },
+          {
+            "start": 5,
+            "end": 16,
+            "text": "机械自动化工程（机械）",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "化工机械",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取相关专业领域知识名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01516",
+        "spans": [
+          {
+            "start": 9,
+            "end": 13,
+            "text": "职业道德",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "抗压能力",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "团队协作精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "身体健康不属于标注范围，抽取职业道德及通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01517",
+        "spans": [
+          {
+            "start": 5,
+            "end": 10,
+            "text": "计算机网络",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "text": "服务器",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "text": "硬件管理及维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取网络、服务器领域知识及硬件管理维护职业活动；年限和经验不入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01518",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "事业单位招聘程序、法规文件及招聘公告信息，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01519",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为工作要求说明标题，缺乏具体候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01520",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "Tableau",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 20,
+            "text": "QlickSense",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "BI工具",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取岗位使用的BI工具名称。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 152,
+  "ids": [
+    "sp10k-01511",
+    "sp10k-01512",
+    "sp10k-01513",
+    "sp10k-01514",
+    "sp10k-01515",
+    "sp10k-01516",
+    "sp10k-01517",
+    "sp10k-01518",
+    "sp10k-01519",
+    "sp10k-01520"
+  ],
+  "at": "2026-09-13T16:11:01.403760+00:00"
+}

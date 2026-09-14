@@ -1,0 +1,201 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 32.777,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4999,
+    "completion_tokens": 1004,
+    "total_tokens": 6003,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 331
+    },
+    "input_tokens": 4999,
+    "output_tokens": 1004,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01531\",\"spans\":[{\"start\":0,\"end\":10,\"text\":\"全日制本科或以上学历\",\"label\":\"K\"},{\"start\":11,\"end\":14,\"text\":\"计算机\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格及专业名；泛化相关专业、工作年限和泛化工作经验不标。\",\"issues\":[]},{\"id\":\"sp10k-01532\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"中西医结合专业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"执业范围明确限定的专业知识领域标K。\",\"issues\":[]},{\"id\":\"sp10k-01533\",\"spans\":[{\"start\":6,\"end\":8,\"text\":\"维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"维护为明确职业活动，去除工作经验等非核心措辞；年限及放宽条件不标。\",\"issues\":[]},{\"id\":\"sp10k-01534\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"大专及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历资格；年龄、性别条件不在标注范围。\",\"issues\":[]},{\"id\":\"sp10k-01535\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"说明聘任及工资绩效待遇，未提出具体候选人资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01536\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"税收业务经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"要求具体业务实践经历，保留经验以避免退化为领域名称，按经验代理规则标S。\",\"issues\":[]},{\"id\":\"sp10k-01537\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于考试纪律说明，不含职业能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01538\",\"spans\":[{\"start\":7,\"end\":20,\"text\":\"WindowsServer\",\"label\":\"S\"},{\"start\":21,\"end\":26,\"text\":\"Nunix\",\"label\":\"S\"},{\"start\":27,\"end\":31,\"text\":\"Win7\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"具体操作系统作为岗位工具列举，标S；保留原文拼写，概括类别OS不重复标注。\",\"issues\":[]},{\"id\":\"sp10k-01539\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于招聘资格递补流程，不含具体能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01540\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"华为无线设备\",\"label\":\"S\"},{\"start\":15,\"end\":22,\"text\":\"网络设备的调测\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取岗位设备及具体调测活动；调测保留必要对象，排除熟悉、熟练掌握等触发措辞。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01531",
+        "spans": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "全日制本科或以上学历",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "text": "计算机",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格及专业名；泛化相关专业、工作年限和泛化工作经验不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01532",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "中西医结合专业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "执业范围明确限定的专业知识领域标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01533",
+        "spans": [
+          {
+            "start": 6,
+            "end": 8,
+            "text": "维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "维护为明确职业活动，去除工作经验等非核心措辞；年限及放宽条件不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01534",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "大专及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历资格；年龄、性别条件不在标注范围。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01535",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "说明聘任及工资绩效待遇，未提出具体候选人资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01536",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "税收业务经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "要求具体业务实践经历，保留经验以避免退化为领域名称，按经验代理规则标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01537",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于考试纪律说明，不含职业能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01538",
+        "spans": [
+          {
+            "start": 7,
+            "end": 20,
+            "text": "WindowsServer",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "text": "Nunix",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "Win7",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "具体操作系统作为岗位工具列举，标S；保留原文拼写，概括类别OS不重复标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01539",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于招聘资格递补流程，不含具体能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01540",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "华为无线设备",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "text": "网络设备的调测",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取岗位设备及具体调测活动；调测保留必要对象，排除熟悉、熟练掌握等触发措辞。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 154,
+  "ids": [
+    "sp10k-01531",
+    "sp10k-01532",
+    "sp10k-01533",
+    "sp10k-01534",
+    "sp10k-01535",
+    "sp10k-01536",
+    "sp10k-01537",
+    "sp10k-01538",
+    "sp10k-01539",
+    "sp10k-01540"
+  ],
+  "at": "2026-09-13T16:13:16.717942+00:00"
+}

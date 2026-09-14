@@ -1,0 +1,258 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06921",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "英语六级以上",
+          "label": "L"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "英语能力突出",
+          "label": "L"
+        },
+        {
+          "start": 26,
+          "end": 33,
+          "text": "其他小语种能力",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历及语言能力要求，去除优先、更佳等修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06922",
+      "spans": [
+        {
+          "start": 0,
+          "end": 22,
+          "text": "办理员工五险一金的新增、停缴、转移等相关手续",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 35,
+          "text": "昆明本地五险一金政策",
+          "label": "K"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "操作流程",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取社会保险相关手续办理、政策知识及操作流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06923",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "GMP",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 13,
+          "text": "GAMP5规范",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "药企",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "规范名称按领域知识标注，药企为明确行业背景。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06924",
+      "spans": [
+        {
+          "start": 6,
+          "end": 13,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 23,
+          "text": "中级会计师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历和非语言职业资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06925",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "新品转量产评估",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "备料",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "样品交付",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 23,
+          "text": "issue",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 44,
+          "text": "试制开发文件、工艺卡流程相关人员审核移交",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取新品转量产及相关试制、交付、审核移交职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06926",
+      "spans": [
+        {
+          "start": 0,
+          "end": 8,
+          "text": "工程人员技能培训",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "人员日常管理",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别标注工程技能培训活动和人员管理能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06927",
+      "spans": [
+        {
+          "start": 8,
+          "end": 20,
+          "text": "制定物业管理的规范和制度",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取职责中明确要求执行的制度制定活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06928",
+      "spans": [
+        {
+          "start": 10,
+          "end": 21,
+          "text": "全国建设工程造价员证书",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 34,
+          "text": "一级/二级造价工程师证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取两类建设工程造价职业资格证书。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06929",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "穿戴产品全贴合",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "组装",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "新工艺",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "text": "新材料",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 25,
+          "text": "新设备",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "text": "开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取全贴合、组装及新工艺、新材料、新设备开发相关能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06930",
+      "spans": [
+        {
+          "start": 8,
+          "end": 12,
+          "text": "交互设计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "交互设计为可执行的职业技术活动。",
+      "issues": []
+    }
+  ]
+}

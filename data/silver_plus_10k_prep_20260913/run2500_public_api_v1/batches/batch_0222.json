@@ -1,0 +1,1019 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 52.499,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5147,
+    "completion_tokens": 1852,
+    "total_tokens": 6999,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5147,
+    "output_tokens": 1852,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06016",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            1,
+            8
+          ],
+          "text": "touch设计"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            9,
+            13
+          ],
+          "text": "软件调试"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            20
+          ],
+          "to": [
+            14,
+            18
+          ],
+          "text": "验证经验"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            38,
+            40
+          ],
+          "to": [
+            33,
+            35
+          ],
+          "text": "面板"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            42,
+            45
+          ],
+          "to": [
+            37,
+            40
+          ],
+          "text": "触摸屏"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06017",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            12
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "车载电子"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            18
+          ],
+          "to": [
+            10,
+            15
+          ],
+          "text": "LED车灯"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            19,
+            23
+          ],
+          "to": [
+            16,
+            20
+          ],
+          "text": "车载显示"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            31,
+            42
+          ],
+          "to": [
+            20,
+            30
+          ],
+          "text": "FAE或应用工程经验"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            45,
+            51
+          ],
+          "to": [
+            33,
+            42
+          ],
+          "text": "车规级产品开发流程"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06018",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            15
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "供应商提交文件审批"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            16,
+            39
+          ],
+          "to": [
+            12,
+            29
+          ],
+          "text": "汇总EPC、详细设计方、业主的意见"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            40,
+            48
+          ],
+          "to": [
+            30,
+            38
+          ],
+          "text": "给出文件审批状态"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06019",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            13
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "项目危险源辨识"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            18
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "风险评价"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            19,
+            25
+          ],
+          "to": [
+            15,
+            19
+          ],
+          "text": "风险控制"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06020",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            6
+          ],
+          "to": [
+            0,
+            7
+          ],
+          "text": "资料与验收支持"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            18
+          ],
+          "to": [
+            11,
+            17
+          ],
+          "text": "隐蔽工程验收"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            19,
+            23
+          ],
+          "to": [
+            18,
+            23
+          ],
+          "text": "阶段性验收"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            25,
+            35
+          ],
+          "to": [
+            25,
+            39
+          ],
+          "text": "收集施工过程资料、照片、记录"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            35,
+            45
+          ],
+          "to": [
+            39,
+            50
+          ],
+          "text": "支持竣工验收及移交工作"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            111,
+            120
+          ],
+          "to": [
+            85,
+            93
+          ],
+          "text": "工程项目现场经验"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            122,
+            124
+          ],
+          "to": [
+            94,
+            96
+          ],
+          "text": "环保"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            125,
+            127
+          ],
+          "to": [
+            97,
+            99
+          ],
+          "text": "市政"
+        },
+        {
+          "i": 8,
+          "action": "snapped",
+          "from": [
+            128,
+            132
+          ],
+          "to": [
+            100,
+            104
+          ],
+          "text": "工业项目"
+        },
+        {
+          "i": 9,
+          "action": "snapped",
+          "from": [
+            135,
+            144
+          ],
+          "to": [
+            110,
+            118
+          ],
+          "text": "施工现场基本流程"
+        },
+        {
+          "i": 10,
+          "action": "snapped",
+          "from": [
+            148,
+            154
+          ],
+          "to": [
+            122,
+            126
+          ],
+          "text": "施工图纸"
+        },
+        {
+          "i": 11,
+          "action": "snapped",
+          "from": [
+            160,
+            163
+          ],
+          "to": [
+            132,
+            135
+          ],
+          "text": "责任心"
+        },
+        {
+          "i": 12,
+          "action": "snapped",
+          "from": [
+            179,
+            183
+          ],
+          "to": [
+            146,
+            150
+          ],
+          "text": "沟通能力"
+        },
+        {
+          "i": 13,
+          "action": "snapped",
+          "from": [
+            191,
+            208
+          ],
+          "to": [
+            154,
+            170
+          ],
+          "text": "与施工单位进行日常技术和事务沟通"
+        },
+        {
+          "i": 14,
+          "action": "snapped",
+          "from": [
+            224,
+            228
+          ],
+          "to": [
+            180,
+            184
+          ],
+          "text": "环保工程"
+        },
+        {
+          "i": 15,
+          "action": "snapped",
+          "from": [
+            229,
+            234
+          ],
+          "to": [
+            185,
+            190
+          ],
+          "text": "污水处理厂"
+        },
+        {
+          "i": 16,
+          "action": "snapped",
+          "from": [
+            235,
+            239
+          ],
+          "to": [
+            191,
+            195
+          ],
+          "text": "工业项目"
+        },
+        {
+          "i": 17,
+          "action": "snapped",
+          "from": [
+            273,
+            282
+          ],
+          "to": [
+            211,
+            220
+          ],
+          "text": "项目报验、验收流程"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06022",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            11
+          ],
+          "to": [
+            2,
+            6
+          ],
+          "text": "汽车行业"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            12,
+            22
+          ],
+          "to": [
+            6,
+            15
+          ],
+          "text": "供应链业务场景挖掘"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            23,
+            27
+          ],
+          "to": [
+            16,
+            20
+          ],
+          "text": "方案研发"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            28,
+            36
+          ],
+          "to": [
+            21,
+            30
+          ],
+          "text": "推动供应链产品创新"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06023",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            13
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "责任区域内库内盘点"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            22
+          ],
+          "to": [
+            12,
+            19
+          ],
+          "text": "耗材近效期管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06024",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            14,
+            23
+          ],
+          "to": [
+            10,
+            19
+          ],
+          "text": "大学本科及以上学历"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            24,
+            26
+          ],
+          "to": [
+            20,
+            22
+          ],
+          "text": "财务"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            27,
+            29
+          ],
+          "to": [
+            23,
+            25
+          ],
+          "text": "会计"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06025",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            23,
+            27
+          ],
+          "to": [
+            17,
+            20
+          ],
+          "text": "传帮带"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06016\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"touch设计\",\"label\":\"S\"},{\"start\":11,\"end\":15,\"text\":\"软件调试\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"验证经验\",\"label\":\"S\"},{\"start\":38,\"end\":40,\"text\":\"面板\",\"label\":\"K\"},{\"start\":42,\"end\":45,\"text\":\"触摸屏\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的设计、调试和验证实践，以及面板和触摸屏领域背景；泛化工作年限经验不标。\",\"issues\":[]},{\"id\":\"sp10k-06017\",\"spans\":[{\"start\":8,\"end\":12,\"text\":\"车载电子\",\"label\":\"K\"},{\"start\":13,\"end\":18,\"text\":\"LED车灯\",\"label\":\"K\"},{\"start\":19,\"end\":23,\"text\":\"车载显示\",\"label\":\"K\"},{\"start\":31,\"end\":42,\"text\":\"FAE或应用工程经验\",\"label\":\"S\"},{\"start\":45,\"end\":51,\"text\":\"车规级产品开发流程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"行业及产品领域背景标K，明确的FAE或应用工程实践标S，车规级产品开发流程标K；年限不标。\",\"issues\":[]},{\"id\":\"sp10k-06018\",\"spans\":[{\"start\":5,\"end\":15,\"text\":\"供应商提交文件审批\",\"label\":\"S\"},{\"start\":16,\"end\":39,\"text\":\"汇总EPC、详细设计方、业主的意见\",\"label\":\"S\"},{\"start\":40,\"end\":48,\"text\":\"给出文件审批状态\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取文件审批、汇总意见和给出审批状态等明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06019\",\"spans\":[{\"start\":5,\"end\":13,\"text\":\"项目危险源辨识\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"风险评价\",\"label\":\"S\"},{\"start\":19,\"end\":25,\"text\":\"风险控制\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"三个独立的风险管理职业动作分别标注。\",\"issues\":[]},{\"id\":\"sp10k-06020\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"资料与验收支持\",\"label\":\"S\"},{\"start\":10,\"end\":18,\"text\":\"隐蔽工程验收\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"阶段性验收\",\"label\":\"S\"},{\"start\":25,\"end\":35,\"text\":\"收集施工过程资料、照片、记录\",\"label\":\"S\"},{\"start\":35,\"end\":45,\"text\":\"支持竣工验收及移交工作\",\"label\":\"S\"},{\"start\":111,\"end\":120,\"text\":\"工程项目现场经验\",\"label\":\"S\"},{\"start\":122,\"end\":124,\"text\":\"环保\",\"label\":\"K\"},{\"start\":125,\"end\":127,\"text\":\"市政\",\"label\":\"K\"},{\"start\":128,\"end\":132,\"text\":\"工业项目\",\"label\":\"K\"},{\"start\":135,\"end\":144,\"text\":\"施工现场基本流程\",\"label\":\"K\"},{\"start\":148,\"end\":154,\"text\":\"施工图纸\",\"label\":\"S\"},{\"start\":160,\"end\":163,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":179,\"end\":183,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":191,\"end\":208,\"text\":\"与施工单位进行日常技术和事务沟通\",\"label\":\"T\"},{\"start\":224,\"end\":228,\"text\":\"环保工程\",\"label\":\"K\"},{\"start\":229,\"end\":234,\"text\":\"污水处理厂\",\"label\":\"K\"},{\"start\":235,\"end\":239,\"text\":\"工业项目\",\"label\":\"K\"},{\"start\":273,\"end\":282,\"text\":\"项目报验、验收流程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取验收、资料收集等职责，现场工程实践、行业背景、施工流程与图纸阅读，以及责任心和沟通能力；专业、驻场意愿及单位经历不单独标。\",\"issues\":[]},{\"id\":\"sp10k-06021\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明岗位偏制程方向，未提出候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-06022\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"汽车行业\",\"label\":\"K\"},{\"start\":12,\"end\":22,\"text\":\"供应链业务场景挖掘\",\"label\":\"S\"},{\"start\":23,\"end\":27,\"text\":\"方案研发\",\"label\":\"S\"},{\"start\":28,\"end\":36,\"text\":\"推动供应链产品创新\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取汽车行业领域背景及场景挖掘、方案研发、产品创新等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06023\",\"spans\":[{\"start\":5,\"end\":13,\"text\":\"责任区域内库内盘点\",\"label\":\"S\"},{\"start\":14,\"end\":22,\"text\":\"耗材近效期管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取盘点和耗材近效期管理两个明确职业动作。\",\"issues\":[]},{\"id\":\"sp10k-06024\",\"spans\":[{\"start\":14,\"end\":23,\"text\":\"大学本科及以上学历\",\"label\":\"K\"},{\"start\":24,\"end\":26,\"text\":\"财务\",\"label\":\"K\"},{\"start\":27,\"end\":29,\"text\":\"会计\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格名，财务和会计为明确专业领域。\",\"issues\":[]},{\"id\":\"sp10k-06025\",\"spans\":[{\"start\":23,\"end\":27,\"text\":\"传帮带\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"传帮带属于培养和指导他人的通用能力。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06016",
+        "spans": [
+          {
+            "start": 1,
+            "end": 8,
+            "text": "touch设计",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "软件调试",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "验证经验",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "text": "面板",
+            "label": "K"
+          },
+          {
+            "start": 37,
+            "end": 40,
+            "text": "触摸屏",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的设计、调试和验证实践，以及面板和触摸屏领域背景；泛化工作年限经验不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06017",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "车载电子",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 15,
+            "text": "LED车灯",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "车载显示",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 30,
+            "text": "FAE或应用工程经验",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 42,
+            "text": "车规级产品开发流程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "行业及产品领域背景标K，明确的FAE或应用工程实践标S，车规级产品开发流程标K；年限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06018",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "供应商提交文件审批",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 29,
+            "text": "汇总EPC、详细设计方、业主的意见",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 38,
+            "text": "给出文件审批状态",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取文件审批、汇总意见和给出审批状态等明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06019",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "项目危险源辨识",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "风险评价",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "风险控制",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "三个独立的风险管理职业动作分别标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06020",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "资料与验收支持",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "隐蔽工程验收",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 23,
+            "text": "阶段性验收",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 39,
+            "text": "收集施工过程资料、照片、记录",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 50,
+            "text": "支持竣工验收及移交工作",
+            "label": "S"
+          },
+          {
+            "start": 85,
+            "end": 93,
+            "text": "工程项目现场经验",
+            "label": "S"
+          },
+          {
+            "start": 94,
+            "end": 96,
+            "text": "环保",
+            "label": "K"
+          },
+          {
+            "start": 97,
+            "end": 99,
+            "text": "市政",
+            "label": "K"
+          },
+          {
+            "start": 100,
+            "end": 104,
+            "text": "工业项目",
+            "label": "K"
+          },
+          {
+            "start": 110,
+            "end": 118,
+            "text": "施工现场基本流程",
+            "label": "K"
+          },
+          {
+            "start": 122,
+            "end": 126,
+            "text": "施工图纸",
+            "label": "S"
+          },
+          {
+            "start": 132,
+            "end": 135,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 146,
+            "end": 150,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 154,
+            "end": 170,
+            "text": "与施工单位进行日常技术和事务沟通",
+            "label": "T"
+          },
+          {
+            "start": 180,
+            "end": 184,
+            "text": "环保工程",
+            "label": "K"
+          },
+          {
+            "start": 185,
+            "end": 190,
+            "text": "污水处理厂",
+            "label": "K"
+          },
+          {
+            "start": 191,
+            "end": 195,
+            "text": "工业项目",
+            "label": "K"
+          },
+          {
+            "start": 211,
+            "end": 220,
+            "text": "项目报验、验收流程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取验收、资料收集等职责，现场工程实践、行业背景、施工流程与图纸阅读，以及责任心和沟通能力；专业、驻场意愿及单位经历不单独标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06021",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明岗位偏制程方向，未提出候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06022",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "汽车行业",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 15,
+            "text": "供应链业务场景挖掘",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "方案研发",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 30,
+            "text": "推动供应链产品创新",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取汽车行业领域背景及场景挖掘、方案研发、产品创新等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06023",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "责任区域内库内盘点",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "text": "耗材近效期管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取盘点和耗材近效期管理两个明确职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06024",
+        "spans": [
+          {
+            "start": 10,
+            "end": 19,
+            "text": "大学本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "财务",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "会计",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格名，财务和会计为明确专业领域。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06025",
+        "spans": [
+          {
+            "start": 17,
+            "end": 20,
+            "text": "传帮带",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "传帮带属于培养和指导他人的通用能力。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 222,
+  "ids": [
+    "sp10k-06016",
+    "sp10k-06017",
+    "sp10k-06018",
+    "sp10k-06019",
+    "sp10k-06020",
+    "sp10k-06021",
+    "sp10k-06022",
+    "sp10k-06023",
+    "sp10k-06024",
+    "sp10k-06025"
+  ],
+  "at": "2026-09-13T17:23:06.103940+00:00"
+}

@@ -1,0 +1,530 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04430",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "客户沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "逻辑思维能力",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "需求分析能力",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "产品规划能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通与逻辑思维为通用能力；需求分析和产品规划为职业技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04431",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "协调",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 19,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "学习能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "提取通用能力与特质，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04432",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明专业认定所依据的目录，未列出具体专业要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04433",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名信息真实性及资格取消规定，不含能力或具体资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04434",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅规定学历学位证书取得时间，未明确学历层次或资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04435",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "全日制本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "通信工程",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "研究生",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "一本",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "提取完整学历要求、专业及优先考虑的教育层次。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04436",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格复审及证明材料程序，不含具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04437",
+      "spans": [
+        {
+          "start": 13,
+          "end": 20,
+          "text": "windows",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "text": "Linux",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "Unix系统",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 56,
+          "text": "数据库系统的部署、调优、测试和监控",
+          "label": "S"
+        },
+        {
+          "start": 58,
+          "end": 65,
+          "text": "搭建RAC集群",
+          "label": "S"
+        },
+        {
+          "start": 66,
+          "end": 76,
+          "text": "Hadoop集群管理",
+          "label": "S"
+        },
+        {
+          "start": 90,
+          "end": 94,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 95,
+          "end": 99,
+          "text": "团队意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统工具及部署运维活动为S；数据库活动保留共享对象，服务与团队意识为T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04438",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "针对特定任职情形规定证明材料，属于资格核验流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04439",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求提交未具体指明的资格证书材料。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04440",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "办公软件维护管理",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 25,
+          "text": "解决使用过程中出现的问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "维护管理与问题解决均明确指向办公软件。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04441",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "Azure服务自动化部署及运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "部署与运维共享Azure服务对象，保留完整活动短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04442",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考证明材料要求，未明确具体学历学位资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04443",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 16,
+          "text": "本科（含）以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "提取专业领域和完整学历资格；泛化工作经验及年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04444",
+      "spans": [
+        {
+          "start": 2,
+          "end": 38,
+          "text": "邮件系统、监控系统、电话系统、虚拟化、网络系统等基础应用系统的运维、建账",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列系统共享运维、建账职能，保留对象与活动的完整关系。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04445",
+      "spans": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "Linux系统",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 21,
+          "text": "Linux运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确系统使用与运维实践；运维活动去除经验仍完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04446",
+      "spans": [
+        {
+          "start": 31,
+          "end": 35,
+          "text": "响应处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "局部语境明确为客户售后问题响应处理；渠道、响应时间和轮值不单标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04447",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "java语言",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "J2EE技术",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 32,
+          "text": "程序设计基本功",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "学习能力",
+          "label": "T"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "编程语言及程序设计基本功为职业技能，学习能力为T；J2EE技术暂标S待裁决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "J2EE技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指技术体系知识或平台应用技能；熟悉这一触发词及当前局部语境不足以区分。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04448",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "自动化",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "text": "计算机",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "提取学历资格与具体专业领域，年龄不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04449",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为证书原件与复印件材料清单。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04450",
+      "spans": [
+        {
+          "start": 2,
+          "end": 34,
+          "text": "DELL、HP、IBM主流PCServer，小型机的硬件设备维护",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 47,
+          "text": "扩展设备的使用配置",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "硬件维护保留并列设备对象；扩展设备使用配置为另一独立活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04451",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "教育教学",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "学生管理能力",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 25,
+          "text": "初三毕业班教学",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 34,
+          "text": "担任过班主任",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "教学与学生管理为职业技能；保留明确班主任任职实践，教学活动去除经验仍完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04452",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "性格外向",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "协调能力",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "销售思维",
+          "label": "T"
+        },
+        {
+          "start": 36,
+          "end": 43,
+          "text": "挖掘用户新需求",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "性格、沟通协调及意识思维为T；挖掘用户需求为具体职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04453",
+      "spans": [
+        {
+          "start": 0,
+          "end": 24,
+          "text": "贯彻执行国家有关政策、规定和学科评议组的决策部署",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 36,
+          "text": "传达有关文件精神和要求",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "政策与决策执行为岗位活动；传达文件精神和要求为通用沟通活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04454",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "安全评估工具",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "运维审计设备",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "text": "VPN设备",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "text": "防病毒软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列工具和设备均受日常运用限定，逐项标S。",
+      "issues": []
+    }
+  ]
+}

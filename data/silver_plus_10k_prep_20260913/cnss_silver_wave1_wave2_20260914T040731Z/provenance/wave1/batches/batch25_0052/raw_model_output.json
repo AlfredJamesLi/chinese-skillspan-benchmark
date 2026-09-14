@@ -1,0 +1,538 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03145",
+      "spans": [
+        {
+          "start": 4,
+          "end": 33,
+          "text": "办公设备、办公通讯软件、投影仪、多方通话及会议系统等的培训",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 48,
+          "text": "解答相关软硬件的应用问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "培训对象共享中心词，保留完整跨度；应用问题解答为职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03146",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "英语书面能力",
+          "label": "L"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "开拓能力",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 34,
+          "text": "Photoshop",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 40,
+          "text": "Excel",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "Word",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 52,
+          "text": "office",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "语言能力、通用能力及实际应用的软件分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03147",
+      "spans": [
+        {
+          "start": 5,
+          "end": 14,
+          "text": "网络故障排查和解决",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 30,
+          "text": "分析和解决问题的能力",
+          "label": "T"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "CCNA",
+          "label": "K"
+        },
+        {
+          "start": 46,
+          "end": 50,
+          "text": "CCNP",
+          "label": "K"
+        },
+        {
+          "start": 51,
+          "end": 55,
+          "text": "HCNP",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体故障处理去除经验后仍完整；通用问题能力保留共享成分，认证名标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03148",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅有招聘期限、职位及部门信息和要求标题。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03149",
+      "spans": [
+        {
+          "start": 4,
+          "end": 30,
+          "text": "Kubernetes、容器、及其他微服务相关软件开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列对象共享软件开发职能，保留完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03150",
+      "spans": [
+        {
+          "start": 10,
+          "end": 13,
+          "text": "亲和力",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "沟通协调能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "提取人际软技能，排除形象气质要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03152",
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "食品学",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "管理学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确专业知识领域分别标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03153",
+      "spans": [
+        {
+          "start": 5,
+          "end": 10,
+          "text": "心理承受力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "自我调节能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "心理承受与自我调节均为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03154",
+      "spans": [
+        {
+          "start": 2,
+          "end": 31,
+          "text": "设施和建筑管理系统（HVAC、BMS、EMS等）的设计确认",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 34,
+          "text": "安装",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 37,
+          "text": "调试",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 43,
+          "text": "FAT",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 47,
+          "text": "SAT",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 53,
+          "text": "验证",
+          "label": "S"
+        },
+        {
+          "start": 54,
+          "end": 58,
+          "text": "设备验证",
+          "label": "S"
+        },
+        {
+          "start": 59,
+          "end": 67,
+          "text": "计算机化系统验证",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设计确认保留系统对象；安装、调试及验证活动按共享语境拆分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03155",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "实验室配试剂",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "配试剂为明确职业动作；泛称实验室工作不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03156",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 21,
+          "text": "计算机软硬件知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "提取完整学历资格及明确知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03157",
+      "spans": [
+        {
+          "start": 11,
+          "end": 22,
+          "text": "一门式系统现场异常跟进",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 39,
+          "text": "现场网络稳定性、平台运行正常监控",
+          "label": "S"
+        },
+        {
+          "start": 43,
+          "end": 52,
+          "text": "反馈和跟进异常故障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统异常处理和运行监控属于职责；保留共享监控动作及故障对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03158",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "MS-SQL",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "Oracle",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 31,
+          "text": "数据库工作原理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库工具使用与工作原理知识分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03159",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 4,
+          "end": 8,
+          "text": "信息安全",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 21,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "text": "网络基础",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业、学历与基础知识标K；未具体指明领域的行业经验不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03160",
+      "spans": [
+        {
+          "start": 1,
+          "end": 15,
+          "text": "电工、电气、机电专业资格证书",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "上岗证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "资格证书保留并列专业共享成分，上岗证书另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03161",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "视频会议系统的日常运维管理",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "诊断",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "运维管理明确；诊断承接系统故障对象，但原文分隔造成边界疑问。",
+      "issues": [
+        {
+          "kind": "boundary",
+          "text": "故障、诊断",
+          "alternatives": [
+            "诊断",
+            "故障、诊断"
+          ],
+          "reason": "顿号将故障与诊断分开，无法确定是否为误分隔的完整故障诊断短语；暂保留明确动作。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03162",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "境外学历报名认证及专业对应审核属于应聘行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03163",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "泛称领导安排的临时工作，未说明具体能力或职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03164",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅有单位、岗位、招聘范围及人数等元信息。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03165",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "产品的安装部署",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "故障排查",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 34,
+          "text": "提供***的部署方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装部署、故障排查和提供部署方案为独立职责；保留原文遮蔽字符。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03166",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "聘任申请表及打印要求属于行政材料说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03167",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "工作热情",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "责任感",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工作态度与责任特质分别标T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03168",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "积极主动",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "独立工作能力",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "中级职称",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "提取通用特质、独立工作能力及职称资格；未明确行业的背景不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03169",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求提交境外学历学位认证证明，属于应聘材料流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03170",
+      "spans": [
+        {
+          "start": 22,
+          "end": 26,
+          "text": "安全加固",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "应急保障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安全加固和应急保障是具体活动；系统安全稳定性提升为结果目标。",
+      "issues": []
+    }
+  ]
+}

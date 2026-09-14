@@ -1,0 +1,55 @@
+{
+  "at": "2026-09-13T13:01:28.571846+00:00",
+  "endpoint": "https://claudeed.ysaikeji.cn/v1/chat/completions",
+  "requested_model": "gpt-6-astra",
+  "prompt_id": "silver_public_api_v1.0",
+  "prompt_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/silver_prompt.txt",
+  "n": 10,
+  "ids": [
+    "sp10k-00001",
+    "sp10k-00002",
+    "sp10k-00003",
+    "sp10k-00004",
+    "sp10k-00005",
+    "sp10k-00006",
+    "sp10k-00007",
+    "sp10k-00008",
+    "sp10k-00009",
+    "sp10k-00010"
+  ],
+  "http_status": 200,
+  "elapsed_s": 58.622,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4987,
+    "completion_tokens": 1866,
+    "total_tokens": 6853,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 788
+    },
+    "input_tokens": 4987,
+    "output_tokens": 1866,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00001\",\"spans\":[{\"start\":2,\"end\":28,\"text\":\"EMC、DELL等企业级存储及其SAN网络的安装配置\",\"label\":\"S\"},{\"start\":29,\"end\":33,\"text\":\"日常维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"安装配置保留共享的设备及网络对象；日常维护为独立职业活动，排除要求触发词及泛化工作后缀。\",\"issues\":[]},{\"id\":\"sp10k-00002\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"软件业务后台服务端开发\",\"label\":\"S\"},{\"start\":14,\"end\":16,\"text\":\"迭代\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"开发与迭代为独立职业活动，迭代对象由局部上下文限定。\",\"issues\":[]},{\"id\":\"sp10k-00003\",\"spans\":[{\"start\":0,\"end\":30,\"text\":\"地产成本、OA协同办公、物业管理、财务管理等信息系统实施建设\",\"label\":\"S\"},{\"start\":33,\"end\":39,\"text\":\"系统日常管理\",\"label\":\"S\"},{\"start\":40,\"end\":42,\"text\":\"维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"各系统类别共享实施建设动作，保留完整活动短语；日常管理与维护分别抽取。\",\"issues\":[]},{\"id\":\"sp10k-00004\",\"spans\":[{\"start\":0,\"end\":3,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":4,\"end\":6,\"text\":\"财务\",\"label\":\"K\"},{\"start\":9,\"end\":15,\"text\":\"大专以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取专业领域及完整学历资格；年龄不在标注范围。\",\"issues\":[]},{\"id\":\"sp10k-00005\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"数据分析\",\"label\":\"S\"},{\"start\":9,\"end\":16,\"text\":\"精细化运营能力\",\"label\":\"S\"},{\"start\":19,\"end\":30,\"text\":\"从数据中发现并解决问题\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据分析和精细化运营为领域绑定能力；后段明确以数据为方法发现并解决问题，保留共享限定和对象。\",\"issues\":[]},{\"id\":\"sp10k-00006\",\"spans\":[{\"start\":6,\"end\":21,\"text\":\"客户现场业务系统及设备安全巡检\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"安全巡检为明确职业活动，保留共享巡检对象，排除定期开展及工作后缀。\",\"issues\":[]},{\"id\":\"sp10k-00007\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"应用系统的分析\",\"label\":\"S\"},{\"start\":10,\"end\":12,\"text\":\"设计\",\"label\":\"S\"},{\"start\":13,\"end\":15,\"text\":\"开发\",\"label\":\"S\"},{\"start\":16,\"end\":18,\"text\":\"测试\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"上线部署\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"按独立职业活动拆分，各项共享应用系统对象，不补写原文。\",\"issues\":[]},{\"id\":\"sp10k-00008\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"大专及以上学历\",\"label\":\"K\"},{\"start\":13,\"end\":17,\"text\":\"微信运营\",\"label\":\"S\"},{\"start\":22,\"end\":29,\"text\":\"互联网营销模式\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历为资格，微信运营去除经验后仍为完整活动；互联网营销模式为领域知识，年限不标。\",\"issues\":[]},{\"id\":\"sp10k-00009\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"大专及以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":11,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":12,\"end\":14,\"text\":\"电子\",\"label\":\"K\"},{\"start\":15,\"end\":17,\"text\":\"电力\",\"label\":\"K\"},{\"start\":18,\"end\":20,\"text\":\"机电\",\"label\":\"K\"},{\"start\":21,\"end\":23,\"text\":\"理科\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格及并列专业领域；泛化专业修饰不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00010\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"windowsserver\",\"label\":\"S\"},{\"start\":16,\"end\":21,\"text\":\"Linux\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确操作系统使用语境，具体工具名标S；保留原文拼写，类别词不另标。\",\"issues\":[]}]}",
+  "api_error": null,
+  "parse_note": null,
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  }
+}

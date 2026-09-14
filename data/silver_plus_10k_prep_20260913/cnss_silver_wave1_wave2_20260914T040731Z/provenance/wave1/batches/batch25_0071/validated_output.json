@@ -1,0 +1,550 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03634",
+      "spans": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "电气自动化",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "中专以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业与完整学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03636",
+      "spans": [
+        {
+          "start": 2,
+          "end": 28,
+          "text": "HP、华为、浪潮等企业级存储及其SAN网络的安装配置",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "日常维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装配置保留完整对象，日常维护独立抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03637",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "工程管理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历和专业，排除年龄要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03638",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告解释权说明，不含候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03639",
+      "spans": [
+        {
+          "start": 11,
+          "end": 17,
+          "text": "技术文档撰写",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "资料整理",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "技术文档编写",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取文档撰写、资料整理及后段文档编写活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03640",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名人数及资格复审流程说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03641",
+      "spans": [
+        {
+          "start": 10,
+          "end": 16,
+          "text": "现场技术交流",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "技术支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "技术交流属于沟通活动，技术支持属于专业职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03642",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "全日制本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "全日制专科学历",
+          "label": "K"
+        },
+        {
+          "start": 35,
+          "end": 45,
+          "text": "企业管理软件相关经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留两种学历资格；软件产品实践经历保留经验后缀，排除年限。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03643",
+      "spans": [
+        {
+          "start": 6,
+          "end": 31,
+          "text": "制造业MES、WMS、QMS等车间执行信息系统开发",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 53,
+          "text": "与其他系统（ERP、SRM等）对接",
+          "label": "S"
+        },
+        {
+          "start": 59,
+          "end": 70,
+          "text": "离散型制造业MES系统",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发及系统对接保留必要对象；MES系统按局部开发实践中的系统工具要求处理。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03644",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明年龄及出生日期范围。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03645",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "介绍机构检测能力，未提出候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03646",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "小区选择",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "重选",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "切换机制",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 22,
+          "text": "切换测量和报告",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "切换判决",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列项受过程机制语境限定，标为知识；测量和报告保留共享限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03647",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "主动性",
+          "label": "T"
+        },
+        {
+          "start": 6,
+          "end": 10,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "耐心",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "细致",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 27,
+          "text": "压力承受力",
+          "label": "T"
+        },
+        {
+          "start": 30,
+          "end": 36,
+          "text": "快速反应能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "逐项抽取通用特质与能力，去除触发词及程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03648",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "暖通设计及咨询",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留设计与咨询共享的暖通专业限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03649",
+      "spans": [
+        {
+          "start": 11,
+          "end": 18,
+          "text": "jenkins",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 27,
+          "text": "teamcity",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 31,
+          "text": "Git",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体持续集成工具按岗位工具标注，保留原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03650",
+      "spans": [
+        {
+          "start": 1,
+          "end": 5,
+          "text": "网络维护",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "CCNA",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "网络环境搭建",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 50,
+          "text": "技术基础",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取网络职业活动、非语言资格和基础知识；泛化证照类别不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03651",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大学及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "理工科",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "自动化",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "电气工程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历与学科专业核心名称，去除背景和优先修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03652",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "IT行业",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "信息安全",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "服务器",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "网络",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "数据中心",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确行业及领域理解要求，按知识处理。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03653",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "数据库操作",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "编程",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "SQL",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "text": "MySQL",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作和编程为职业技能，SQL与MySQL有明确实操要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03654",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "职业资格考试报名及考务通知，资格名称不是候选人持证要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03655",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅含年龄对应的出生日期范围。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03656",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "生产质量、环境质量的现场管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两类质量对象共享现场管理动作，保留完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03657",
+      "spans": [
+        {
+          "start": 7,
+          "end": 11,
+          "text": "政治素质",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "职业道德",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "专业素养",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "从教潜能",
+          "label": "T"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "考查内容明确指向候选人素质；专业素养类型未决，S仅为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "专业素养",
+          "alternatives": [
+            "K",
+            "S",
+            "T"
+          ],
+          "reason": "未说明考查的是专业知识、专业实践能力还是通用职业素质，局部语境不足以确定类型。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03658",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘考试后的资格复审流程，未明确为候选人的招聘工作职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03659",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "制定整个BIM的计划、执行方案",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 27,
+          "text": "监督项目的具体运作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "计划和执行方案共享制定动作；项目运作监督独立抽取。",
+      "issues": []
+    }
+  ]
+}

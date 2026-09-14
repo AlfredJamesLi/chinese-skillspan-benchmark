@@ -1,0 +1,61 @@
+{
+  "created_utc": "2026-09-14T04:07:45.199561+00:00",
+  "source_commit": "e09f608964f3510d5de4a62e5f6d96472904556c",
+  "waves": {
+    "wave1": {
+      "records": 1810,
+      "batches": 73,
+      "status_counts": {
+        "candidate_complete": 1224,
+        "adjudication_required": 103,
+        "confirmed_empty": 483
+      },
+      "state": "complete",
+      "last_progress_update": "2026-09-13T18:56:39.545492+00:00"
+    },
+    "wave2": {
+      "records": 1810,
+      "batches": 73,
+      "status_counts": {
+        "candidate_complete": 1159,
+        "adjudication_required": 110,
+        "confirmed_empty": 541
+      },
+      "state": "complete",
+      "last_progress_update": "2026-09-13T21:20:14.002419+00:00"
+    }
+  },
+  "completed_records": 3620,
+  "completed_batches": 146,
+  "unique_ids": 3620,
+  "exact_duplicate_text_groups": 0,
+  "held2500_intersection": 0,
+  "train_candidate_records": 3407,
+  "train_candidate_status_counts": {
+    "candidate_complete": 2383,
+    "confirmed_empty": 1024
+  },
+  "adjudication_records": 213,
+  "adjudication_issues": 254,
+  "status_counts": {
+    "candidate_complete": 2383,
+    "adjudication_required": 213,
+    "confirmed_empty": 1024
+  },
+  "span_count_all": 7808,
+  "span_count_train_candidates": 7226,
+  "prompt_sha256": "b6223e9a2e9b02afa19cba79ba908766d9240acb233723fbe6f53b40e6b04fd6",
+  "output_schema_sha256": "b3e7745a4579f7652135b9295bbafeb2f4934df3896e98034ab4f476dba8b8ec",
+  "schema_ids_offsets_text_order_mapping_checks": "passed",
+  "source_files_unchanged": true,
+  "wave3": {
+    "state": "not_started_in_checked_workspaces",
+    "records": 1816
+  },
+  "upstream_gold_and_3m_exclusion": "未在此包中核验",
+  "human_accuracy": "not_evaluated",
+  "training_started": false,
+  "label_semantics_changed": false,
+  "data_split_created": false,
+  "api_or_model_calls_during_packaging": 0
+}

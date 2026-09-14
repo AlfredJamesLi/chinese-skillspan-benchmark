@@ -1,0 +1,569 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 39.015,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5192,
+    "completion_tokens": 1691,
+    "total_tokens": 6883,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 742
+    },
+    "input_tokens": 5192,
+    "output_tokens": 1691,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00661",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            23
+          ],
+          "to": [
+            17,
+            21
+          ],
+          "text": "职业素养"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            31,
+            39
+          ],
+          "to": [
+            29,
+            37
+          ],
+          "text": "初级中学教育工作"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            40,
+            46
+          ],
+          "to": [
+            38,
+            44
+          ],
+          "text": "相关政策法规"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            55,
+            66
+          ],
+          "to": [
+            51,
+            63
+          ],
+          "text": "素质教育的质量观和人才观"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            70,
+            79
+          ],
+          "to": [
+            69,
+            81
+          ],
+          "text": "初级中学学生健康成长规律"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00664",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            11
+          ],
+          "to": [
+            3,
+            13
+          ],
+          "text": "本科学历（学士学位）"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00666",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            12
+          ],
+          "to": [
+            0,
+            13
+          ],
+          "text": "组织下属执行销售政策及策略"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            23
+          ],
+          "to": [
+            14,
+            25
+          ],
+          "text": "指导下属的销售业务技能"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            24,
+            40
+          ],
+          "to": [
+            26,
+            40
+          ],
+          "text": "检查、监督销售计划的完成情况"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            44,
+            50
+          ],
+          "to": [
+            45,
+            49
+          ],
+          "text": "及时纠正"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00667",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            24
+          ],
+          "to": [
+            2,
+            21
+          ],
+          "text": "与相关业务部门、客户进行业务沟通、协调"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            25,
+            29
+          ],
+          "to": [
+            22,
+            26
+          ],
+          "text": "项目验收"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00669",
+      "repairs": [
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            12,
+            16
+          ],
+          "to": [
+            12,
+            15
+          ],
+          "text": "计算机"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            22,
+            29
+          ],
+          "to": [
+            21,
+            28
+          ],
+          "text": "大专或以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00670",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            21,
+            25
+          ],
+          "to": [
+            11,
+            15
+          ],
+          "text": "专业知识"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            26,
+            30
+          ],
+          "to": [
+            16,
+            20
+          ],
+          "text": "工作技能"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            37,
+            44
+          ],
+          "to": [
+            26,
+            32
+          ],
+          "text": "实验技术水平"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            47,
+            57
+          ],
+          "to": [
+            35,
+            46
+          ],
+          "text": "完成实验教学任务的能力"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            61,
+            71
+          ],
+          "to": [
+            51,
+            59
+          ],
+          "text": "使用相关实验器材"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            75,
+            81
+          ],
+          "to": [
+            61,
+            67
+          ],
+          "text": "实际工程经验"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00661\",\"spans\":[{\"start\":12,\"end\":16,\"text\":\"专业知识\",\"label\":\"K\"},{\"start\":19,\"end\":23,\"text\":\"职业素养\",\"label\":\"T\"},{\"start\":31,\"end\":39,\"text\":\"初级中学教育工作\",\"label\":\"K\"},{\"start\":40,\"end\":46,\"text\":\"相关政策法规\",\"label\":\"K\"},{\"start\":55,\"end\":66,\"text\":\"素质教育的质量观和人才观\",\"label\":\"K\"},{\"start\":70,\"end\":79,\"text\":\"初级中学学生健康成长规律\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取专业知识、职业素养及初级中学教育相关领域知识；泛化实践经验和业界声誉不标。\",\"issues\":[]},{\"id\":\"sp10k-00662\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为技能测试地点、时间及通知安排，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00663\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"为运维站点设置及职责范围说明，未明确提出候选人必须具备的能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-00664\",\"spans\":[{\"start\":3,\"end\":11,\"text\":\"本科学历（学士学位）\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"完整学历资格名按K标注。\",\"issues\":[]},{\"id\":\"sp10k-00665\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名材料提交方式、邮箱及有效期安排。\",\"issues\":[]},{\"id\":\"sp10k-00666\",\"spans\":[{\"start\":0,\"end\":12,\"text\":\"组织下属执行销售政策及策略\",\"label\":\"S\"},{\"start\":13,\"end\":23,\"text\":\"指导下属的销售业务技能\",\"label\":\"S\"},{\"start\":24,\"end\":40,\"text\":\"检查、监督销售计划的完成情况\",\"label\":\"S\"},{\"start\":44,\"end\":50,\"text\":\"及时纠正\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取销售管理职责中的组织、指导、检查监督和纠偏等职业动作；销售目标结果不标。\",\"issues\":[]},{\"id\":\"sp10k-00667\",\"spans\":[{\"start\":0,\"end\":24,\"text\":\"与相关业务部门、客户进行业务沟通、协调\",\"label\":\"T\"},{\"start\":25,\"end\":29,\"text\":\"项目验收\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"业务沟通协调属于通用协作能力，项目验收属于明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00668\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为考察资格放弃、递补及排序程序安排。\",\"issues\":[]},{\"id\":\"sp10k-00669\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"通信\",\"label\":\"K\"},{\"start\":3,\"end\":7,\"text\":\"电子工程\",\"label\":\"K\"},{\"start\":8,\"end\":11,\"text\":\"自动化\",\"label\":\"K\"},{\"start\":12,\"end\":16,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":22,\"end\":29,\"text\":\"大专或以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"相关专业领域名及学历资格按K标注；可接受实习生不属于能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00670\",\"spans\":[{\"start\":21,\"end\":25,\"text\":\"专业知识\",\"label\":\"K\"},{\"start\":26,\"end\":30,\"text\":\"工作技能\",\"label\":\"S\"},{\"start\":37,\"end\":44,\"text\":\"实验技术水平\",\"label\":\"S\"},{\"start\":47,\"end\":57,\"text\":\"完成实验教学任务的能力\",\"label\":\"S\"},{\"start\":61,\"end\":71,\"text\":\"使用相关实验器材\",\"label\":\"S\"},{\"start\":75,\"end\":81,\"text\":\"实际工程经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取实验技术、实验教学、实验器材使用及工程实践要求；泛化岗位职责所需表述不单独标注。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00661",
+        "spans": [
+          {
+            "start": 12,
+            "end": 16,
+            "text": "专业知识",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "职业素养",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 37,
+            "text": "初级中学教育工作",
+            "label": "K"
+          },
+          {
+            "start": 38,
+            "end": 44,
+            "text": "相关政策法规",
+            "label": "K"
+          },
+          {
+            "start": 51,
+            "end": 63,
+            "text": "素质教育的质量观和人才观",
+            "label": "K"
+          },
+          {
+            "start": 69,
+            "end": 81,
+            "text": "初级中学学生健康成长规律",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取专业知识、职业素养及初级中学教育相关领域知识；泛化实践经验和业界声誉不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00662",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为技能测试地点、时间及通知安排，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00663",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "为运维站点设置及职责范围说明，未明确提出候选人必须具备的能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00664",
+        "spans": [
+          {
+            "start": 3,
+            "end": 13,
+            "text": "本科学历（学士学位）",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "完整学历资格名按K标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00665",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名材料提交方式、邮箱及有效期安排。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00666",
+        "spans": [
+          {
+            "start": 0,
+            "end": 13,
+            "text": "组织下属执行销售政策及策略",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 25,
+            "text": "指导下属的销售业务技能",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 40,
+            "text": "检查、监督销售计划的完成情况",
+            "label": "S"
+          },
+          {
+            "start": 45,
+            "end": 49,
+            "text": "及时纠正",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取销售管理职责中的组织、指导、检查监督和纠偏等职业动作；销售目标结果不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00667",
+        "spans": [
+          {
+            "start": 2,
+            "end": 21,
+            "text": "与相关业务部门、客户进行业务沟通、协调",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "项目验收",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "业务沟通协调属于通用协作能力，项目验收属于明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00668",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为考察资格放弃、递补及排序程序安排。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00669",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "通信",
+            "label": "K"
+          },
+          {
+            "start": 3,
+            "end": 7,
+            "text": "电子工程",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "text": "自动化",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 28,
+            "text": "大专或以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "相关专业领域名及学历资格按K标注；可接受实习生不属于能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00670",
+        "spans": [
+          {
+            "start": 11,
+            "end": 15,
+            "text": "专业知识",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "工作技能",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "text": "实验技术水平",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 46,
+            "text": "完成实验教学任务的能力",
+            "label": "S"
+          },
+          {
+            "start": 51,
+            "end": 59,
+            "text": "使用相关实验器材",
+            "label": "S"
+          },
+          {
+            "start": 61,
+            "end": 67,
+            "text": "实际工程经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取实验技术、实验教学、实验器材使用及工程实践要求；泛化岗位职责所需表述不单独标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 67,
+  "ids": [
+    "sp10k-00661",
+    "sp10k-00662",
+    "sp10k-00663",
+    "sp10k-00664",
+    "sp10k-00665",
+    "sp10k-00666",
+    "sp10k-00667",
+    "sp10k-00668",
+    "sp10k-00669",
+    "sp10k-00670"
+  ],
+  "at": "2026-09-13T14:45:22.441338+00:00"
+}

@@ -1,0 +1,603 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02232",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "专业目录参照说明，未提出具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02233",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "中专",
+          "label": "K"
+        },
+        {
+          "start": 3,
+          "end": 5,
+          "text": "职高",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "电子专业",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "text": "计算机专业",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历层次及明确专业；应届身份和泛化优秀评价不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02234",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "党建工作",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 17,
+          "text": "担任过党支部书记",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "党建活动及具体任职实践按职业经历处理，年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02235",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "邮件系统",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "防病毒",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 20,
+          "text": "计算机网络相关知识",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "与相关人员配合",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 38,
+          "text": "解决系统及网络问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列知识项受相关知识限定；人员配合与技术问题解决分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02237",
+      "spans": [
+        {
+          "start": 8,
+          "end": 15,
+          "text": "接口和数据管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "接口与数据共享管理动作，保留完整并列短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02238",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "内部局域网络维护",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 23,
+          "text": "设备的日常维护及管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络维护与设备维护管理为两项独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02239",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "需求讨论",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "需求分析",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "原型设计",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "系统概要设计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取独立的需求及设计活动，排除职责触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02240",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告解释权说明，不含候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02241",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "公司各类交易系统的日常运营管理",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "需求管理",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "权限管理",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "参数管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取交易系统运营管理及其明确列出的专业管理活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02242",
+      "spans": [
+        {
+          "start": 4,
+          "end": 12,
+          "text": "视频监控设备维护",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "分配器",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "text": "摄像枪",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 25,
+          "text": "光端机",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 29,
+          "text": "录像机",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 32,
+          "text": "球机",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备维护为职业活动，具体设备处于明确岗位维护语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02243",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "微信公众平台粉丝到微信好友的转化",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "促进转化",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 31,
+          "text": "维护",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 36,
+          "text": "成交",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取获客转化、维护及成交活动；后两项对象由局部客户转化语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02244",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "建筑",
+          "label": "K"
+        },
+        {
+          "start": 3,
+          "end": 5,
+          "text": "电气",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "text": "机电",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "市政",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列工程专业领域分别标K，泛化专业背景措辞不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02245",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘章节标题，没有具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02246",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "法律专业",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "text": "知识产权相关工作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "法律为专业背景；知识产权相关工作为明确职业实践要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02247",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "计量管理系统",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 18,
+          "text": "公路工程相关软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确使用经历限定两项岗位工具。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02248",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "认真细致",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "团队合作精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用工作特质、学习能力及合作精神。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02249",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "客户关系维护",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "客户培训",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "公司价值传递",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "客户培训为职业活动；其余两项范围与边界明确，类型暂以S占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "客户关系维护",
+          "alternatives": [
+            "S",
+            "T"
+          ],
+          "reason": "可指专业客户运营，也可指通用人际联络；局部未说明具体维护活动，难以消除类型歧义。"
+        },
+        {
+          "kind": "type",
+          "text": "公司价值传递",
+          "alternatives": [
+            "S",
+            "T"
+          ],
+          "reason": "可指营销价值传达职能，也可指通用沟通表达；缺少传递对象与具体方式。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02250",
+      "spans": [
+        {
+          "start": 0,
+          "end": 18,
+          "text": "审核相关部门计算机设备购（配）置方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取方案审核动作；确保方案合理性属于结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02251",
+      "spans": [
+        {
+          "start": 4,
+          "end": 30,
+          "text": "平台运行环境的监控、容灾、备份等运维体系的建设与完善",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "监控、容灾、备份限定所建设的运维体系，保留完整活动；可靠性及稳定性为系统结果。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02252",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "思维严谨",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "工作主动",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "学习创新能力",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "思路清晰",
+          "label": "T"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "工作规范",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用能力或工作特质；学习创新能力保留共享中心词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02253",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告解释主体说明，不含候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02254",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "网络",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 11,
+          "text": "操作系统原理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络与操作系统处于并列原理知识语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02255",
+      "spans": [
+        {
+          "start": 2,
+          "end": 34,
+          "text": "办公设备（电脑、打印机、传??真机、扫描仪、投影仪等）维护和保养",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留设备对象、原文括注及共享维护保养动作，不嵌套抽取设备名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02256",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "换位思考",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "团队精神",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "成长思维",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用意识、思维、学习及团队特质，去除程度和要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02257",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "监控游戏业务的运行状况",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 28,
+          "text": "处理游戏运行中出现的故障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "监控与故障处理为独立职业活动；保障服务正常为结果承诺。",
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,428 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 65.101,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5020,
+    "completion_tokens": 1991,
+    "total_tokens": 7011,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1034
+    },
+    "input_tokens": 5020,
+    "output_tokens": 1991,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01152",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            26,
+            32
+          ],
+          "to": [
+            28,
+            34
+          ],
+          "text": "IT项目管理"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            36,
+            40
+          ],
+          "to": [
+            38,
+            42
+          ],
+          "text": "软件开发"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            44,
+            50
+          ],
+          "to": [
+            46,
+            52
+          ],
+          "text": "IT运维行业"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01153",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            12
+          ],
+          "to": [
+            4,
+            11
+          ],
+          "text": "实验室基本管理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            17
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "财务报销"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01155",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            10
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "性格开朗"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01157",
+      "repairs": [
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            30,
+            38
+          ],
+          "to": [
+            30,
+            37
+          ],
+          "text": "linux系统"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01159",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            12
+          ],
+          "to": [
+            2,
+            12
+          ],
+          "text": "配合应用系统投产上线"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01151\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"常用网络设备\",\"label\":\"S\"},{\"start\":9,\"end\":11,\"text\":\"安装\",\"label\":\"S\"},{\"start\":12,\"end\":14,\"text\":\"使用\",\"label\":\"S\"},{\"start\":15,\"end\":17,\"text\":\"配置\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取网络设备相关的安装、使用和配置职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01152\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":26,\"end\":32,\"text\":\"IT项目管理\",\"label\":\"S\"},{\"start\":36,\"end\":40,\"text\":\"软件开发\",\"label\":\"S\"},{\"start\":44,\"end\":50,\"text\":\"IT运维行业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历为资格要求；项目管理和软件开发为职业活动；IT运维行业为明确行业背景。\",\"issues\":[]},{\"id\":\"sp10k-01153\",\"spans\":[{\"start\":6,\"end\":12,\"text\":\"实验室基本管理\",\"label\":\"S\"},{\"start\":13,\"end\":17,\"text\":\"财务报销\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"职责中明确要求执行实验室管理和财务报销。\",\"issues\":[]},{\"id\":\"sp10k-01154\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为幼儿园机构、规模及教职工学历介绍，不含候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-01155\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"性格开朗\",\"label\":\"T\"},{\"start\":10,\"end\":15,\"text\":\"适应能力强\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"性格和适应能力属于通用特质；身体健康不在标注范围内。\",\"issues\":[]},{\"id\":\"sp10k-01156\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为纪律及其他要求标题，缺乏具体能力、知识或资格内容。\",\"issues\":[]},{\"id\":\"sp10k-01157\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"ITIL\",\"label\":\"K\"},{\"start\":7,\"end\":11,\"text\":\"CCNA\",\"label\":\"K\"},{\"start\":12,\"end\":16,\"text\":\"MCSE\",\"label\":\"K\"},{\"start\":17,\"end\":26,\"text\":\"其他IT服务类认证\",\"label\":\"K\"},{\"start\":30,\"end\":38,\"text\":\"linux系统\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"IT服务认证属于非语言资格；Linux系统在熟悉和IT支持语境下作为岗位工具或系统实践标注为S。\",\"issues\":[]},{\"id\":\"sp10k-01158\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"大专或以上学历\",\"label\":\"K\"},{\"start\":10,\"end\":16,\"text\":\"IT支持工作\",\"label\":\"S\"},{\"start\":20,\"end\":30,\"text\":\"正规呼叫中心工作经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历为资格要求；IT支持工作为职业活动，呼叫中心工作经验为具体实践经历。\",\"issues\":[]},{\"id\":\"sp10k-01159\",\"spans\":[{\"start\":4,\"end\":12,\"text\":\"配合应用系统投产上线\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行应用系统投产上线相关职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01160\",\"spans\":[{\"start\":19,\"end\":23,\"text\":\"网络产品\",\"label\":\"S\"},{\"start\":24,\"end\":26,\"text\":\"网闸\",\"label\":\"S\"},{\"start\":27,\"end\":30,\"text\":\"防火墙\",\"label\":\"S\"},{\"start\":31,\"end\":38,\"text\":\"防入侵检测系统\",\"label\":\"S\"},{\"start\":39,\"end\":41,\"text\":\"配置\",\"label\":\"S\"},{\"start\":42,\"end\":44,\"text\":\"维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取网络产品及具体网络安全设备的使用配置和维护活动；认证证书为泛化资格表述，未单独抽取。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01151",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "常用网络设备",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "安装",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "使用",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "配置",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取网络设备相关的安装、使用和配置职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01152",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "text": "IT项目管理",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "text": "软件开发",
+            "label": "S"
+          },
+          {
+            "start": 46,
+            "end": 52,
+            "text": "IT运维行业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为资格要求；项目管理和软件开发为职业活动；IT运维行业为明确行业背景。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01153",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "实验室基本管理",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "财务报销",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "职责中明确要求执行实验室管理和财务报销。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01154",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为幼儿园机构、规模及教职工学历介绍，不含候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01155",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "性格开朗",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 15,
+            "text": "适应能力强",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "性格和适应能力属于通用特质；身体健康不在标注范围内。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01156",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为纪律及其他要求标题，缺乏具体能力、知识或资格内容。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01157",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "ITIL",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "CCNA",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "MCSE",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 26,
+            "text": "其他IT服务类认证",
+            "label": "K"
+          },
+          {
+            "start": 30,
+            "end": 37,
+            "text": "linux系统",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "IT服务认证属于非语言资格；Linux系统在熟悉和IT支持语境下作为岗位工具或系统实践标注为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01158",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "大专或以上学历",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "IT支持工作",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 30,
+            "text": "正规呼叫中心工作经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为资格要求；IT支持工作为职业活动，呼叫中心工作经验为具体实践经历。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01159",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "配合应用系统投产上线",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行应用系统投产上线相关职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01160",
+        "spans": [
+          {
+            "start": 19,
+            "end": 23,
+            "text": "网络产品",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "text": "网闸",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "text": "防火墙",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 38,
+            "text": "防入侵检测系统",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 41,
+            "text": "配置",
+            "label": "S"
+          },
+          {
+            "start": 42,
+            "end": 44,
+            "text": "维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取网络产品及具体网络安全设备的使用配置和维护活动；认证证书为泛化资格表述，未单独抽取。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 116,
+  "ids": [
+    "sp10k-01151",
+    "sp10k-01152",
+    "sp10k-01153",
+    "sp10k-01154",
+    "sp10k-01155",
+    "sp10k-01156",
+    "sp10k-01157",
+    "sp10k-01158",
+    "sp10k-01159",
+    "sp10k-01160"
+  ],
+  "at": "2026-09-13T15:29:34.503344+00:00"
+}

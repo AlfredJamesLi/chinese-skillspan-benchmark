@@ -1,0 +1,482 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03479",
+      "spans": [
+        {
+          "start": 1,
+          "end": 7,
+          "text": "IT项目实施",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "计划管理",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "文档写作能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "实施活动去除经验后缀；计划管理为通用能力，文档写作为职业能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03480",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "列举资格核验所需原件，属于应聘材料提交事项。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03481",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明经历时间的行政计算口径，未独立提出能力或具体资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03482",
+      "spans": [
+        {
+          "start": 8,
+          "end": 17,
+          "text": "IT机房的日常维护",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "技术支持",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "现场支持",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 50,
+          "text": "硬件及软件产品的安装调试",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 55,
+          "text": "故障诊断",
+          "label": "S"
+        },
+        {
+          "start": 56,
+          "end": 60,
+          "text": "系统排错",
+          "label": "S"
+        },
+        {
+          "start": 62,
+          "end": 69,
+          "text": "专项报告的编写",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取维护、支持、安装调试、诊断排错及报告编写；保留安装调试的共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03484",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "泛化能力评价及资格放宽说明，没有具体能力或资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03485",
+      "spans": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "实施",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "人力资源业务",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "开发",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 36,
+          "text": "实施过人力资源系统",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "局部系统实施语境限定实施和开发活动；人力资源业务为领域知识，年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03486",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "网络、设备故障排除与解决",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "机房巡检",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "故障处理保留共享动作和对象；机房巡检独立抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03487",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "关系型数据库",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "text": "NoSql数据库",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库作为岗位工具栈要求，去除数量及泛化修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03488",
+      "spans": [
+        {
+          "start": 2,
+          "end": 28,
+          "text": "基于Docker的容器云平台的设计、部署、配置及维护",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 41,
+          "text": "kubernetes",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 55,
+          "text": "Docker基础应用",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "平台活动保留共享对象及技术限定；工具和明确应用实践标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03489",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "资格初审可能是招聘人员职责，也可能是应聘流程说明，暂不进入主层。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "根据招聘单位设置条件对报考人员的报考资格进行初审",
+          "alternatives": [
+            "候选人承担的招聘资格初审职责，纳入标注",
+            "招聘组织方的应聘流程说明，不纳入标注"
+          ],
+          "reason": "缺少执行主体及职责或招聘程序上下文，无法确认是否为候选人要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03490",
+      "spans": [
+        {
+          "start": 33,
+          "end": 45,
+          "text": "心理健康教育学科教师培训",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 50,
+          "text": "示范教学",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求承担过培训或教学任务，抽取职业活动；级别限定由局部语境保留。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03491",
+      "spans": [
+        {
+          "start": 4,
+          "end": 30,
+          "text": "Windows、Linux操作系统的安装、操作和维护",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 42,
+          "text": "web程序发布、部署",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两组活动分别保留必要共享对象，不嵌套抽取工具名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03492",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "制造企业的生产流程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "要求了解制造企业生产流程，属于领域知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03493",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "响应并处理用户的报修请求",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 38,
+          "text": "联系二线人员提供支持",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "报修处理为职业活动，联系支持人员为人际协作；设备正常运行是结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03494",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "系统运维",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 18,
+          "text": "linux系统",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "网络安全",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 29,
+          "text": "防火墙配置",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "text": "docker",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 49,
+          "text": "kubernetes",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维语境中的系统和容器工具标S；网络安全为知识领域，防火墙配置为具体活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03495",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "信息管理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格和具体专业名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03496",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅泛指职位学历学位条件，未提供具体资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03497",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "TCP",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": "UDP",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确网络通信协议知识要求；概括类别不重复标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03499",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格复审的流程及比例条件，不涉及候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03500",
+      "spans": [
+        {
+          "start": 8,
+          "end": 18,
+          "text": "全日制本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 26,
+          "text": "学士及以上学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历和学位资格；院校排除条件及例外岗位名称不作为能力提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03501",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明招聘计划随面试人数比例调整的行政程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03502",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "电力行业信息化项目的运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取带具体业务对象的运维职责，不嵌套标注对象中的行业名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03503",
+      "spans": [
+        {
+          "start": 8,
+          "end": 11,
+          "text": "制造业",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "text": "ERP运维",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 27,
+          "text": "网络管理员工作经验",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 38,
+          "text": "ERP净需求运算",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "行业背景标K；运维和运算为职业活动，管理员经历保留经验以完整表达职能实践要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03504",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "面向招聘组织部门及工作人员的招考纪律要求，不是对招聘候选人的能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03505",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "工程造价",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确专业要求，专业名标K。",
+      "issues": []
+    }
+  ]
+}

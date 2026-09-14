@@ -1,0 +1,250 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 46.539,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5025,
+    "completion_tokens": 1470,
+    "total_tokens": 6495,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 595
+    },
+    "input_tokens": 5025,
+    "output_tokens": 1470,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00561\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"AD域的配置和使用\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"配置和使用共享AD域这一对象，保留完整职业操作提及。\",\"issues\":[]},{\"id\":\"sp10k-00562\",\"spans\":[{\"start\":3,\"end\":24,\"text\":\"整体IT信息架构安全隐患地挖掘、追踪与消除\",\"label\":\"S\"},{\"start\":25,\"end\":36,\"text\":\"对用户做好安全意识提醒\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"安全隐患处理动作共享必要对象；面向用户的安全意识提醒为明确安全工作职责。保留原文用字。\",\"issues\":[]},{\"id\":\"sp10k-00563\",\"spans\":[{\"start\":3,\"end\":9,\"text\":\"物业管理流程\",\"label\":\"K\"},{\"start\":15,\"end\":21,\"text\":\"电脑操作能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"管理流程为专业知识，电脑操作能力为岗位操作技能。\",\"issues\":[]},{\"id\":\"sp10k-00564\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报考岗位时提交证明材料的行政流程，不抽取其中的证书名称。\",\"issues\":[]},{\"id\":\"sp10k-00565\",\"spans\":[{\"start\":1,\"end\":7,\"text\":\"网络安全体系\",\"label\":\"K\"},{\"start\":14,\"end\":25,\"text\":\"网络安全实践的紧急处置\",\"label\":\"S\"},{\"start\":35,\"end\":41,\"text\":\"网络安全产品\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"安全体系为知识；紧急处置为明确实践活动，去除经验后含义完整；安全产品按岗位工具要求处理。\",\"issues\":[]},{\"id\":\"sp10k-00566\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"网络安全技术\",\"label\":\"K\"},{\"start\":11,\"end\":20,\"text\":\"端口、服务漏洞扫描\",\"label\":\"S\"},{\"start\":21,\"end\":29,\"text\":\"程序漏洞分析检测\",\"label\":\"S\"},{\"start\":30,\"end\":34,\"text\":\"权限管理\",\"label\":\"S\"},{\"start\":35,\"end\":41,\"text\":\"病毒木马防范\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"概括性技术体系为K，列举的可执行安全方法为S；扫描对象共享动作，保留必要连续短语。\",\"issues\":[]},{\"id\":\"sp10k-00567\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"公司网络架构体系的整体规划\",\"label\":\"S\"},{\"start\":16,\"end\":29,\"text\":\"局域网和广域网的通讯和集成\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取网络规划与通讯集成两项职责，保留各自共享对象。\",\"issues\":[]},{\"id\":\"sp10k-00568\",\"spans\":[{\"start\":0,\"end\":17,\"text\":\"网络、计算机等相关硬件设备维护能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"领域绑定的设备维护能力为S，并列对象共享维护能力中心语。\",\"issues\":[]},{\"id\":\"sp10k-00569\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为应聘信息填报及替换规则，不含候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00570\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"计算机日常应用与维护\",\"label\":\"S\"},{\"start\":17,\"end\":23,\"text\":\"office\",\"label\":\"S\"},{\"start\":24,\"end\":30,\"text\":\"基础办公软件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"计算机应用维护为职业操作；office及基础办公软件均处于明确运用语境。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00561",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "AD域的配置和使用",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "配置和使用共享AD域这一对象，保留完整职业操作提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00562",
+        "spans": [
+          {
+            "start": 3,
+            "end": 24,
+            "text": "整体IT信息架构安全隐患地挖掘、追踪与消除",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 36,
+            "text": "对用户做好安全意识提醒",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "安全隐患处理动作共享必要对象；面向用户的安全意识提醒为明确安全工作职责。保留原文用字。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00563",
+        "spans": [
+          {
+            "start": 3,
+            "end": 9,
+            "text": "物业管理流程",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "电脑操作能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "管理流程为专业知识，电脑操作能力为岗位操作技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00564",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报考岗位时提交证明材料的行政流程，不抽取其中的证书名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00565",
+        "spans": [
+          {
+            "start": 1,
+            "end": 7,
+            "text": "网络安全体系",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 25,
+            "text": "网络安全实践的紧急处置",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 41,
+            "text": "网络安全产品",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "安全体系为知识；紧急处置为明确实践活动，去除经验后含义完整；安全产品按岗位工具要求处理。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00566",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "网络安全技术",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 20,
+            "text": "端口、服务漏洞扫描",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 29,
+            "text": "程序漏洞分析检测",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "权限管理",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 41,
+            "text": "病毒木马防范",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "概括性技术体系为K，列举的可执行安全方法为S；扫描对象共享动作，保留必要连续短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00567",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "公司网络架构体系的整体规划",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 29,
+            "text": "局域网和广域网的通讯和集成",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取网络规划与通讯集成两项职责，保留各自共享对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00568",
+        "spans": [
+          {
+            "start": 0,
+            "end": 17,
+            "text": "网络、计算机等相关硬件设备维护能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "领域绑定的设备维护能力为S，并列对象共享维护能力中心语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00569",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为应聘信息填报及替换规则，不含候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00570",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "计算机日常应用与维护",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "office",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "基础办公软件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "计算机应用维护为职业操作；office及基础办公软件均处于明确运用语境。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 57,
+  "ids": [
+    "sp10k-00561",
+    "sp10k-00562",
+    "sp10k-00563",
+    "sp10k-00564",
+    "sp10k-00565",
+    "sp10k-00566",
+    "sp10k-00567",
+    "sp10k-00568",
+    "sp10k-00569",
+    "sp10k-00570"
+  ],
+  "at": "2026-09-13T14:38:35.517988+00:00"
+}

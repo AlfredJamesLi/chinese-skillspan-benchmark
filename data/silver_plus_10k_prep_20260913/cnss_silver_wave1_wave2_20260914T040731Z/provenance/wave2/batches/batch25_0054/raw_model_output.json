@@ -1,0 +1,521 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05080",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "数据库技术",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 24,
+          "text": "oracle等主流数据库的管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库技术为知识要求；管理活动保留完整对象，去除经验后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05081",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "SQL语言",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 17,
+          "text": "Oracle数据库",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "语言和数据库均处于明确操作语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05082",
+      "spans": [
+        {
+          "start": 8,
+          "end": 12,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "实际操作能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用意识与操作能力；身体健康不在范围。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05083",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考违规情形说明，不含候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05084",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "土壤与肥料",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "text": "材料合成与改性",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "肥效评价",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "text": "农业微生物",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "合成改性与肥效评价为技术活动；两个研究领域名的K/S解释待裁决，S为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "土壤与肥料",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "研究经验限定了领域名，但尚不能明确按领域知识还是实践语境投影；未说明具体研究活动。"
+        },
+        {
+          "kind": "type",
+          "text": "农业微生物",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "研究经验限定了领域名，但尚不能明确按领域知识还是实践语境投影；未说明具体研究活动。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05085",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "与用户沟通",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 20,
+          "text": "获取并分析、评估用户需求",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 29,
+          "text": "挖掘用户需求",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 40,
+          "text": "与实施商沟通、协调",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "需求活动为S，共享必要对象保留；人员沟通协调为T，末尾泛化结果不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05086",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "严谨细致的工作态度",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 24,
+          "text": "独立分析解决问题的能力",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "承受工作压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工作态度、无专业对象的问题分析解决能力及承压能力均为T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05087",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告的组织机构与实施安排，不是招聘岗位职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05088",
+      "spans": [
+        {
+          "start": 2,
+          "end": 20,
+          "text": "OA办公软件、金蝶财务软件的日常维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两个软件共享日常维护动作，保留完整维护活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05089",
+      "spans": [
+        {
+          "start": 37,
+          "end": 48,
+          "text": "国家承认的大专学历以上",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "公告明确包含学历要求，保留原文资格限定及顺序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05090",
+      "spans": [
+        {
+          "start": 8,
+          "end": 23,
+          "text": "Hyperion系统的日常维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确系统维护职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05091",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考察与聘用程序说明，未列具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05092",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为应聘条件引导语，未提供实际要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05093",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考察、资格复查与递补程序说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05095",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "逻辑思维能力",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 13,
+          "text": "工作条理性",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "学习精神",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "团队合作意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "独立抽取通用能力与特质，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05096",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "实习企业入库单位申报流程，不是候选人的能力、知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05097",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 14,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "软件开发规范",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "text": "JAVA开发",
+          "label": "S"
+        },
+        {
+          "start": 42,
+          "end": 48,
+          "text": ".net开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业、学历和规范为K；开发活动为S，年限及经验后缀不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05098",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应聘确认程序及资格认定说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05099",
+      "spans": [
+        {
+          "start": 11,
+          "end": 24,
+          "text": "自然人群大队列全基因组分析",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整分析职责；括号内是分析对象举例，不另造知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05100",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "亲和力",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 33,
+          "text": "调动项目组不同成员的工作积极性",
+          "label": "T"
+        },
+        {
+          "start": 34,
+          "end": 40,
+          "text": "活跃团队气氛",
+          "label": "T"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "text": "打造高效团队",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通、亲和力与通用团队组织领导活动均为T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05101",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "应变能力",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 12,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "耐心",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "对人热情",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "text": "团队合作精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取独立通用能力与个人特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05102",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "需求功能的上线验证",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取上线验证职责，保留验证对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05103",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 27,
+          "text": "大数据平台开发",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 45,
+          "text": "大数据项目经验",
+          "label": "S"
+        },
+        {
+          "start": 47,
+          "end": 49,
+          "text": "车企",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发活动去除经验后缀；大数据项目经验保留实践含义；车企为明确行业背景。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05104",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考试大纲版本说明，未要求候选人持有相应资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05105",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "职业素养",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "工作组织",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "承压能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "职业素养、通用工作组织和承压能力分别标T。",
+      "issues": []
+    }
+  ]
+}

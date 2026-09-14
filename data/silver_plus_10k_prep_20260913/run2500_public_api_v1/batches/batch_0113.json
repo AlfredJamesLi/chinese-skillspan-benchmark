@@ -1,0 +1,523 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 52.407,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4961,
+    "completion_tokens": 1509,
+    "total_tokens": 6470,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 672
+    },
+    "input_tokens": 4961,
+    "output_tokens": 1509,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01121",
+      "repairs": [
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            21,
+            27
+          ],
+          "to": [
+            21,
+            28
+          ],
+          "text": "数据库运维工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01122",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            6,
+            8
+          ],
+          "to": [
+            7,
+            9
+          ],
+          "text": "博士"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            8,
+            12
+          ],
+          "to": [
+            9,
+            13
+          ],
+          "text": "中级职称"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            12,
+            19
+          ],
+          "to": [
+            14,
+            21
+          ],
+          "text": "本科、大专学历"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            21,
+            25
+          ],
+          "to": [
+            23,
+            27
+          ],
+          "text": "正高职称"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01123",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            25
+          ],
+          "to": [
+            9,
+            23
+          ],
+          "text": "提升客户的职业素养和服务礼仪"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01124",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            14,
+            21
+          ],
+          "to": [
+            10,
+            17
+          ],
+          "text": "逆向的相关技能"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            24,
+            32
+          ],
+          "to": [
+            22,
+            30
+          ],
+          "text": "逆向分析实践经验"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01125",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            13
+          ],
+          "to": [
+            8,
+            12
+          ],
+          "text": "专业知识"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01127",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            27
+          ],
+          "to": [
+            13,
+            26
+          ],
+          "text": "制定部门工作计划及进度目标"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01128",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            4,
+            11
+          ],
+          "text": "php开发工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01129",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            8
+          ],
+          "to": [
+            2,
+            7
+          ],
+          "text": "计算机终端"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            15
+          ],
+          "to": [
+            8,
+            13
+          ],
+          "text": "笔记本电脑"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            20
+          ],
+          "to": [
+            14,
+            19
+          ],
+          "text": "网络交换机"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            25,
+            29
+          ],
+          "to": [
+            27,
+            31
+          ],
+          "text": "日常维护"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            30,
+            34
+          ],
+          "to": [
+            32,
+            36
+          ],
+          "text": "故障处理"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01121\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"ORACLE\",\"label\":\"S\"},{\"start\":9,\"end\":12,\"text\":\"SQL\",\"label\":\"S\"},{\"start\":13,\"end\":18,\"text\":\"MYSQL\",\"label\":\"S\"},{\"start\":21,\"end\":27,\"text\":\"数据库运维工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库工具及明确的数据库运维活动。\",\"issues\":[]},{\"id\":\"sp10k-01122\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"硕士\",\"label\":\"K\"},{\"start\":2,\"end\":6,\"text\":\"副高职称\",\"label\":\"K\"},{\"start\":6,\"end\":8,\"text\":\"博士\",\"label\":\"K\"},{\"start\":8,\"end\":12,\"text\":\"中级职称\",\"label\":\"K\"},{\"start\":12,\"end\":19,\"text\":\"本科、大专学历\",\"label\":\"K\"},{\"start\":21,\"end\":25,\"text\":\"正高职称\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历及职称资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01123\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"礼仪讲解工作\",\"label\":\"S\"},{\"start\":9,\"end\":25,\"text\":\"提升客户的职业素养和服务礼仪\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确的礼仪讲解及提升客户职业素养和服务礼仪的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01124\",\"spans\":[{\"start\":14,\"end\":21,\"text\":\"逆向的相关技能\",\"label\":\"S\"},{\"start\":24,\"end\":32,\"text\":\"逆向分析实践经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"逆向技能及明确的逆向分析实践经历。\",\"issues\":[]},{\"id\":\"sp10k-01125\",\"spans\":[{\"start\":7,\"end\":13,\"text\":\"专业知识\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"候选人所需的专业知识。\",\"issues\":[]},{\"id\":\"sp10k-01126\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅表示泛化工作经验要求可放宽，无具体领域或职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01127\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"系统运维部门整体工作\",\"label\":\"S\"},{\"start\":13,\"end\":27,\"text\":\"制定部门工作计划及进度目标\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确的系统运维部门工作及计划、进度目标制定活动。\",\"issues\":[]},{\"id\":\"sp10k-01128\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"php开发工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"具体的PHP开发活动；泛化技术能力未单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01129\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"计算机终端\",\"label\":\"S\"},{\"start\":9,\"end\":15,\"text\":\"笔记本电脑\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"网络交换机\",\"label\":\"S\"},{\"start\":25,\"end\":29,\"text\":\"日常维护\",\"label\":\"S\"},{\"start\":30,\"end\":34,\"text\":\"故障处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"办公设备作为岗位现用对象，及其日常维护和故障处理活动。\",\"issues\":[]},{\"id\":\"sp10k-01130\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为泛化相关专业要求，未给出具体领域知识或资格名称。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01121",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "ORACLE",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "text": "SQL",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 18,
+            "text": "MYSQL",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 28,
+            "text": "数据库运维工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库工具及明确的数据库运维活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01122",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "硕士",
+            "label": "K"
+          },
+          {
+            "start": 2,
+            "end": 6,
+            "text": "副高职称",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "text": "博士",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "中级职称",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "text": "本科、大专学历",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "正高职称",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历及职称资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01123",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "礼仪讲解工作",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 23,
+            "text": "提升客户的职业素养和服务礼仪",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确的礼仪讲解及提升客户职业素养和服务礼仪的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01124",
+        "spans": [
+          {
+            "start": 10,
+            "end": 17,
+            "text": "逆向的相关技能",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 30,
+            "text": "逆向分析实践经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "逆向技能及明确的逆向分析实践经历。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01125",
+        "spans": [
+          {
+            "start": 8,
+            "end": 12,
+            "text": "专业知识",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "候选人所需的专业知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01126",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅表示泛化工作经验要求可放宽，无具体领域或职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01127",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "系统运维部门整体工作",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 26,
+            "text": "制定部门工作计划及进度目标",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确的系统运维部门工作及计划、进度目标制定活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01128",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "php开发工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "具体的PHP开发活动；泛化技术能力未单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01129",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "计算机终端",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 13,
+            "text": "笔记本电脑",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "text": "网络交换机",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "日常维护",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "text": "故障处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "办公设备作为岗位现用对象，及其日常维护和故障处理活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01130",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为泛化相关专业要求，未给出具体领域知识或资格名称。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 113,
+  "ids": [
+    "sp10k-01121",
+    "sp10k-01122",
+    "sp10k-01123",
+    "sp10k-01124",
+    "sp10k-01125",
+    "sp10k-01126",
+    "sp10k-01127",
+    "sp10k-01128",
+    "sp10k-01129",
+    "sp10k-01130"
+  ],
+  "at": "2026-09-13T15:26:31.265667+00:00"
+}

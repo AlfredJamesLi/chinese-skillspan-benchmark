@@ -1,0 +1,499 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05447",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "理工科",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 17,
+          "text": "大学本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业领域及完整学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05448",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "期限、提交材料及取消资格属于应聘流程；泛化证书提及的范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "学历、学位证书",
+          "alternatives": [
+            "作为候选人资格要求抽取",
+            "作为泛化应聘证明材料不抽取"
+          ],
+          "reason": "未指定学历等级或学位名称，现有规则未明确此类泛化证明材料与资格提及的界限。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05450",
+      "spans": [
+        {
+          "start": 8,
+          "end": 12,
+          "text": "独立作战",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "团队协作能力",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "接受挑战",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取独立工作、协作和接受挑战的通用特质；泛化成长表述不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05451",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "思维活跃",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "开拓创新",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "文字功底",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "沟通能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用能力或特质，去除要求触发词和程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05452",
+      "spans": [
+        {
+          "start": 12,
+          "end": 18,
+          "text": "Zabbix",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取岗位监控工具；性能调优和业务监控在此限定工具用途。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05453",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明考试环节及成绩公布方式。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05454",
+      "spans": [
+        {
+          "start": 11,
+          "end": 17,
+          "text": "收集客户需求",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "调研",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "确认",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 35,
+          "text": "形成需求报告及实施方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取需求工作中的独立动作；报告与方案保留共享形成动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05456",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "Linux",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "Java",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "Go",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "Python",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "编程环境与编程语言按岗位工具运用标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05457",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名方式说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05458",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "计算机系统数据备份",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取数据备份活动；保障数据安全为结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05459",
+      "spans": [
+        {
+          "start": 39,
+          "end": 44,
+          "text": "教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 65,
+          "end": 80,
+          "text": "硕士研究生及以上学历学位认证书",
+          "label": "K"
+        },
+        {
+          "start": 107,
+          "end": 112,
+          "text": "教师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "保留明确教师资格和学历学位认证；泛化毕业、学位证明材料的范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "毕业证、学位证",
+          "alternatives": [
+            "作为非语言资格名称分别抽取",
+            "作为未指明学历学位等级的证明材料不抽取"
+          ],
+          "reason": "该处同时涉及资格取得与聘用材料期限，规则未明确泛化毕业证、学位证是否属于资格名。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05462",
+      "spans": [
+        {
+          "start": 12,
+          "end": 17,
+          "text": "研究生学历",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "博士学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取明确学历与学位资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05463",
+      "spans": [
+        {
+          "start": 8,
+          "end": 17,
+          "text": "安全策略制定及变更",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "制定与变更共享安全策略对象，保留完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05464",
+      "spans": [
+        {
+          "start": 12,
+          "end": 17,
+          "text": "硕士研究生",
+          "label": "K"
+        },
+        {
+          "start": 42,
+          "end": 44,
+          "text": "本科",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取年龄条款中明确嵌入的岗位学历要求；出生日期和年龄限制不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05465",
+      "spans": [
+        {
+          "start": 6,
+          "end": 16,
+          "text": "短视频项目的整体运营",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 40,
+          "text": "制定相应的运营推广策略",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 50,
+          "text": "完善运营机制和流程",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 62,
+          "text": "组织、调动公司各项资源",
+          "label": "T"
+        },
+        {
+          "start": 62,
+          "end": 68,
+          "text": "落地运营方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取运营职责；组织调动资源属于通用协调能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05466",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "Linux",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 29,
+          "text": "Linux下开源软件的安装配置维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "按明确软件操作语境标S；安装配置维护保留共享环境和对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05467",
+      "spans": [
+        {
+          "start": 5,
+          "end": 10,
+          "text": "环境保护类",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "电子",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "机电",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "自动化",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "计算机信息类",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分专业类别，泛化相关专业不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05468",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明考试成绩计算公式。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05469",
+      "spans": [
+        {
+          "start": 5,
+          "end": 20,
+          "text": "信息管理系统的实施、调试、维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "实施、调试和维护共享系统对象，保留完整活动短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05470",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明招聘组织方的资格初审和公示流程，并非候选人职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05471",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "Windowsserver",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "AD",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "DHCP",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "text": "DNS",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 58,
+          "text": "中大型企业AD、DNS、ERP管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工具有明确应用语境；管理活动去除经验，保留并列对象及企业规模限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05472",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名信息提交及身份证一致性要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05473",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "网络的日常维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取网络维护职责，去除负责及公司归属修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05474",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "业务系统运维支持保障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维支持保障为明确职业职能，去除触发词及工作后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05475",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为身体健康及身体条件要求，按规则排除。",
+      "issues": []
+    }
+  ]
+}

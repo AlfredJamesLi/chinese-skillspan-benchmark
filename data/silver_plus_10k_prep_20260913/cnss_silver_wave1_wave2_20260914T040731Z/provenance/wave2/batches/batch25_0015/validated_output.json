@@ -1,0 +1,542 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04062",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "要求针对参与遴选的药品及其生产经营资质，不是候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04063",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "仅说明知识内容，尚不能确认其为候选人知识要求。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "教育专业基础知识主要包括：教育学基础知识与基本原理、中小学课程理论、教学基本规律、教学方法、学生学习心理、儿童与青少年身心发展、德育、班主任工作、教师心理等内容",
+          "alternatives": [
+            "属于候选人须掌握的知识范围，逐项标K",
+            "属于课程或材料内容介绍，不标"
+          ],
+          "reason": "缺少任职要求或考试考查范围等上下文，无法确定内容清单是否约束候选人。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04064",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求提供工作经历证明，未指明具体领域或职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04065",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "活动推广策划",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 24,
+          "text": "收集行业发展动态，新闻资料",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 36,
+          "text": "制定营销方案、推广计划",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确职业活动；并列对象保留必要共享动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04067",
+      "spans": [
+        {
+          "start": 1,
+          "end": 12,
+          "text": "TCP/IP协议栈原理",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "跟踪优化",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 37,
+          "text": "iptables",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 47,
+          "text": "tun/tap设备",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 59,
+          "text": "LinuxBridge",
+          "label": "S"
+        },
+        {
+          "start": 60,
+          "end": 71,
+          "text": "OpenvSwitch",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "原理为知识；跟踪优化承接协议栈对象，工具按岗位运用标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04068",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为面试报到时间与地点安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04069",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "电子",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "信息类",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历保留完整资格表述，专业方向分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04070",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "管理类",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "text": "物流类",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历和专业类别；未明确领域的行业相关经验不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04071",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "国家承认的大专以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留学历资格的明确认可限定；泛指其他资格条件不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04072",
+      "spans": [
+        {
+          "start": 7,
+          "end": 11,
+          "text": "医疗卫生",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确行业经历抽取领域核心，排除年限和经历后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04073",
+      "spans": [
+        {
+          "start": 2,
+          "end": 21,
+          "text": "机房服务器虚拟化、园区桌面虚拟化的运维",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "巡检",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "故障处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运维保留共享对象结构；巡检和故障处理为独立职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04074",
+      "spans": [
+        {
+          "start": 33,
+          "end": 38,
+          "text": "硕士及以上",
+          "label": "K"
+        },
+        {
+          "start": 57,
+          "end": 63,
+          "text": "遵守劳动纪律",
+          "label": "T"
+        },
+        {
+          "start": 64,
+          "end": 67,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 69,
+          "end": 73,
+          "text": "吃苦耐劳",
+          "label": "T"
+        },
+        {
+          "start": 76,
+          "end": 82,
+          "text": "团队合作精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历及通用职业素质；招聘数量、期限、待遇与地点不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04075",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "收集网络销售线索、电商订单信息",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 28,
+          "text": "录入DMS系统",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "信息收集保留共享动作，系统录入单独标注，不嵌套工具名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04076",
+      "spans": [
+        {
+          "start": 18,
+          "end": 24,
+          "text": "IT技术支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确技术支持职能，排除目的及泛化质量修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04077",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "ERP知识",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "市场特点",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "销售技巧",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "独立销售",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "主导销售",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "知识与市场特点为K；销售技巧及明确销售实践为S，金额不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04078",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "低压电应用常识",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "低压配电电器",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "低压控制电器",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "text": "看懂相关图纸",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "常识为知识，电器处于明确使用语境；相关证书未给出资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04079",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "SQL语言",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 23,
+          "text": "Oracle数据库",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "日常管理",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 45,
+          "text": "Oracle存储过程编写调试",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 60,
+          "text": "大型项目数据迁移割接优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库实践语境下抽取工具与操作；连续技术活动保留必要共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04080",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明弄虚作假的考试聘用处理后果。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04081",
+      "spans": [
+        {
+          "start": 5,
+          "end": 13,
+          "text": "分析解决问题能力",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 23,
+          "text": "独立承担攻关任务",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 34,
+          "text": "项目进度控制能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "未限定对象的问题处理和独立攻关为通用能力；项目进度控制为具体职业能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04082",
+      "spans": [
+        {
+          "start": 4,
+          "end": 12,
+          "text": "大型企业车辆管理",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "快递",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "物流",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "运输",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "车辆管理为完整职业活动；并列行业背景抽取各领域核心。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04083",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明考试收费依据和费用，资格考试名称不构成候选人资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04084",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "75/76标准",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 24,
+          "text": "VOC等国家相应的规范、标准",
+          "label": "K"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "安装规范",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 36,
+          "text": "流程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为规范及流程知识；VOC保留规范标准中心语，流程由局部安装语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04085",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名材料提交、证件查验、照片及缴费要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04086",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明简历填写及审核流程，学历词为经历填报起点。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04087",
+      "spans": [
+        {
+          "start": 0,
+          "end": 12,
+          "text": "Linux系统维护、优化",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 28,
+          "text": "Linux常见命令",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "维护与优化保留共享系统对象并去除经验后缀；命令处于明确操作语境。",
+      "issues": []
+    }
+  ]
+}

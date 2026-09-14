@@ -1,0 +1,181 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05625",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报到、逾期及聘用资格处理属于录用流程和行政事项，不是候选人能力、知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05626",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "幼儿园园长岗位资格合格证书",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 30,
+          "text": "幼儿园二级及以上专业资格证书",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 39,
+          "text": "幼儿园教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 41,
+          "end": 50,
+          "text": "二甲以上普通话证书",
+          "label": "L"
+        },
+        {
+          "start": 53,
+          "end": 60,
+          "text": "幼儿园管理工作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取幼儿园相关资格证书、普通话证书及明确的幼儿园管理工作活动；年限和经历触发词不纳入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05627",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "邮件或电话通知资格复审时间、地点是招聘工作人员执行的流程通知，不是候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05628",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "选岗资格递补属于招聘流程安排，不是候选人能力、知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05629",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "内容为政策背景、任务部署及招聘宣传，未明确提出候选人须具备的能力、知识或资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05630",
+      "spans": [
+        {
+          "start": 23,
+          "end": 28,
+          "text": "教师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "考取相应教师资格证是录用后的明确资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05631",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格初审及网上办理属于招聘单位执行的流程事项。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05632",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "文学功底",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "组织协调",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "思想道德素质",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "敬业精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取文学领域基础及组织协调、沟通、道德素质和敬业等通用能力或特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05633",
+      "spans": [
+        {
+          "start": 15,
+          "end": 20,
+          "text": "学历学位证",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 35,
+          "text": "研究生学籍在线验证报告",
+          "label": "K"
+        },
+        {
+          "start": 45,
+          "end": 50,
+          "text": "就业推荐表",
+          "label": "K"
+        },
+        {
+          "start": 51,
+          "end": 57,
+          "text": "就业推荐证明",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历学位及应届毕业生资格审核所需的证明材料和资格凭证。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05634",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "本科学历",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "学士学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "本科学历和学士学位是明确学历资格要求；后续年限及从业经历表述不形成可连续且不含年限的独立跨度。",
+      "issues": []
+    }
+  ]
+}

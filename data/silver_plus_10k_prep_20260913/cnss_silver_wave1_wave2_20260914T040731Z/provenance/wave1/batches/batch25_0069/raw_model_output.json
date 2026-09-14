@@ -1,0 +1,542 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03584",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "本科学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "学士学位",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 41,
+          "text": "国家“一流大学”建设高校毕业生",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "学历、学位及院校毕业资格标K；荣誉和成绩筛选条件的范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "校级及以上优秀毕业生、优秀学生（党员）、优秀学生（党、团）干部等荣誉，或综合（专业）成绩排名前50%",
+          "alternatives": [
+            "作为非语言资格要求纳入",
+            "作为荣誉及成绩筛选条件排除"
+          ],
+          "reason": "协议未明确荣誉称号及成绩排名是否属于资格标注范围。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03585",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "文档编写能力",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 29,
+          "text": "项目全生命周期相关文档编制",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "文档编写能力及具体文档编制活动标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03586",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "现场项目实施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历标K；项目实施为完整职业活动，去除年限及经验后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03587",
+      "spans": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "医学院校毕业生",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 22,
+          "text": "卫生专业技术职称",
+          "label": "K"
+        },
+        {
+          "start": 48,
+          "end": 50,
+          "text": "大专",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取教育背景、非语言职称及放宽后的学历要求；户籍和报考岗位不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03588",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求提交报考证明材料，指定工作经历未给出具体领域或活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03589",
+      "spans": [
+        {
+          "start": 26,
+          "end": 32,
+          "text": "国家通用语言",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "面试作答明确限定使用语言，抽取语言要求；时间地点和流程不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03590",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "录取入学导致取消聘用的行政条件，不是学历或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03591",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Oracle数据库",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "SQL语言",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "存储过程优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库和SQL处于岗位使用语境，优化为具体技术活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03592",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考违规处理规定，不据此推断候选人特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03593",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "方案解释权说明，不是候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03594",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "教育教学管理",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "组织协调能力",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 30,
+          "text": "贯彻执行民主集中制",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "规划学校发展",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "text": "营造育人文化",
+          "label": "S"
+        },
+        {
+          "start": 47,
+          "end": 53,
+          "text": "领导课程教学",
+          "label": "S"
+        },
+        {
+          "start": 54,
+          "end": 60,
+          "text": "引领教师成长",
+          "label": "S"
+        },
+        {
+          "start": 61,
+          "end": 67,
+          "text": "优化内部管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学校治理及教育管理活动标S，组织协调能力为通用能力T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03595",
+      "spans": [
+        {
+          "start": 4,
+          "end": 22,
+          "text": "ERP，WMS，日常办公等系统的维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "多个系统共享维护动作，保留完整对象及动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03596",
+      "spans": [
+        {
+          "start": 5,
+          "end": 14,
+          "text": "问题分析和解决能力",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "python",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 35,
+          "text": "shell脚本",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 44,
+          "text": "mysql数据库",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 53,
+          "text": "批处理脚本",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "泛化问题分析解决能力标T；实际使用的语言、脚本和数据库标S，保留原文拼写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03597",
+      "spans": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "本科及以上",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "管理学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历和并列专业核心名，不补写原文省略的学历字样。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03598",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "缺席面试的行政处理规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03599",
+      "spans": [
+        {
+          "start": 9,
+          "end": 13,
+          "text": "火力发电",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "电气",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "锅炉",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "text": "水化验",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 33,
+          "text": "专科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 39,
+          "end": 47,
+          "text": "火力发电运行维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业及学历标K，具体运行维护活动标S；年龄和经验年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03600",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "事件工单记录",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "追踪",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "关闭",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分工单处理动作，后两项对象由局部共享语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03601",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名网站、填写报名表和上传材料均为应聘行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03602",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "学历仅用于界定生活补贴受益人，整句为福利说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03603",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "Java数据类型",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "结构",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "性能",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "text": "Socket编程",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 34,
+          "text": "多线程编程",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 51,
+          "text": "编写高性能的Java应用程序",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "语言类型、结构及性能属于知识；编程方法和程序编写属于职业技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03604",
+      "spans": [
+        {
+          "start": 2,
+          "end": 32,
+          "text": "常熟市民卡及云计算中心业务、系统、网络、硬件、基础服务的建设",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 35,
+          "text": "运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "建设保留共享对象列表，运维作为独立动作拆分并承接该对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03605",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘条件标题，没有具体能力、知识或资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03606",
+      "spans": [
+        {
+          "start": 2,
+          "end": 24,
+          "text": "OA系统、ERP系统等大型信息系统的实施运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确系统实施运维实践，保留共享对象，去除经验后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03607",
+      "spans": [
+        {
+          "start": 4,
+          "end": 15,
+          "text": "office办公自动化",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "PS",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "开车",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位软件使用及明确驾驶技能标S；开车是技能要求，不是驾照资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03608",
+      "spans": [
+        {
+          "start": 4,
+          "end": 30,
+          "text": "硬件设备（服务器、工作机、打印机、移动存储设备）安装",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 33,
+          "text": "配置",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 36,
+          "text": "运行",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "解决故障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安装保留完整硬件对象及括注，其余动作承接局部设备对象；故障解决为具体技术活动。",
+      "issues": []
+    }
+  ]
+}

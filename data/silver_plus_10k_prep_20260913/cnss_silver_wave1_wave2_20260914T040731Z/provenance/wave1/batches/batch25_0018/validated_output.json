@@ -1,0 +1,566 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02258",
+      "spans": [
+        {
+          "start": 4,
+          "end": 14,
+          "text": "office办公软件",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 27,
+          "text": "BA类监控平台",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求操作使用的工具标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02259",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "人才类别标题，没有具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02260",
+      "spans": [
+        {
+          "start": 35,
+          "end": 40,
+          "text": "康复科工作",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "康复专业",
+          "label": "K"
+        },
+        {
+          "start": 45,
+          "end": 50,
+          "text": "专科及以上",
+          "label": "K"
+        },
+        {
+          "start": 51,
+          "end": 57,
+          "text": "康复师资格证",
+          "label": "K"
+        },
+        {
+          "start": 59,
+          "end": 63,
+          "text": "临床经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取康复职业活动、专业、学历和资格；临床经验保留实践经历含义。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02261",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明应聘考核流程及终止条件。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02262",
+      "spans": [
+        {
+          "start": 2,
+          "end": 23,
+          "text": "Linux或Windows操作系统管理配置",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 34,
+          "text": "系统软件的安装与配置",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "管理配置和安装配置均为职业动作，保留共享对象及动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02263",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "路由交换技术",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 19,
+          "text": "TCP/IP协议",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 34,
+          "text": "网络、系统等故障排除思路",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "技术与协议为知识；针对网络系统故障的排除思路为可执行技术方法。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02264",
+      "spans": [
+        {
+          "start": 2,
+          "end": 19,
+          "text": "PC硬件、打印机硬件的简单故障排除",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两类硬件共享故障排除动作，保留完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02265",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "抗压能力",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "勇于挑战困难",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "适应出差",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取抗压、挑战意愿及出差适应性要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02266",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "临床医师及以上职称",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 19,
+          "text": "医师执业证",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 25,
+          "text": "医师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "职称及非语言职业资格标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02267",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "博士",
+          "label": "K"
+        },
+        {
+          "start": 3,
+          "end": 7,
+          "text": "生物材料",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "材料化学",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "text": "高分子化学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历和独立专业名标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02268",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "text": "通信",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "电子",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 15,
+          "text": "电气自动化",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 26,
+          "text": "专科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分专业名，保留完整学历要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02269",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "信息化软件方面的设计",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "规划",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "需求分析",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "项目落地实施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分软件设计、规划、需求分析及实施活动；共享软件语境限定各项。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02270",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列报名材料及提交要求，未明确具体学历或资格门槛。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02271",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "操作系统",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "设计模式",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "设计模式为知识；操作系统的知识或工具语境未明，S仅为待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "操作系统",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅有熟悉要求，缺少系统知识理解或实际操作运用的局部证据。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02272",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "WORD",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "text": "EXCEL",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "PPT",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 27,
+          "text": "OFFICE软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确应用语境中的软件及软件套件标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02273",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格要求标题，没有具体要求内容。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02274",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅指向岗位条件附件，未给出具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02275",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "国家卫生专业技术资格考试",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 24,
+          "text": "初级职称及以上",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "非语言资格考试和职称要求标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02276",
+      "spans": [
+        {
+          "start": 2,
+          "end": 32,
+          "text": "MSSQL、Oracle、MYSQL数据库的SQL编写与优化",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 39,
+          "text": "大数据处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库列表共享SQL编写与优化动作，保留完整短语；大数据处理去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02277",
+      "spans": [
+        {
+          "start": 4,
+          "end": 24,
+          "text": "SqlServer，MySql数据库开发",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 36,
+          "text": "SQL语言",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "存储过程",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 50,
+          "text": "SQL优化",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 57,
+          "text": "DB调优能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库开发保留共享动作；实际使用的语言与方法、领域绑定的优化能力标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02278",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "电气工程",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "信息工程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取明确专业名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02279",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "建设项目开工手续办理流程",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "法律法规",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "要求熟悉办理流程及规范知识，未直接要求执行办理。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02280",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明笔试成绩计算办法，测试名称不构成具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02281",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "内容策划",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "文笔流畅",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "策划功底",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "策略思维",
+          "label": "T"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "抽取内容策划及表达、思维要求；互联网时代特征的范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "具备互联网时代特征",
+          "alternatives": [
+            "属于候选人的通用特质要求",
+            "属于泛化描述，不标"
+          ],
+          "reason": "未说明时代特征对应的具体能力或特质，无法确认是否为可标注要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02282",
+      "spans": [
+        {
+          "start": 6,
+          "end": 12,
+          "text": "网络设备运维",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "机房管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分网络设备运维与机房管理两项职业活动。",
+      "issues": []
+    }
+  ]
+}

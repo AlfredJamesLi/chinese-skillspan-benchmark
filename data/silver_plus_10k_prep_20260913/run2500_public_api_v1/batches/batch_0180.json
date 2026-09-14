@@ -1,0 +1,262 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 45.269,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5163,
+    "completion_tokens": 1366,
+    "total_tokens": 6529,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 681
+    },
+    "input_tokens": 5163,
+    "output_tokens": 1366,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01884",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            10,
+            14
+          ],
+          "to": [
+            9,
+            13
+          ],
+          "text": "物理治疗"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            19
+          ],
+          "to": [
+            14,
+            18
+          ],
+          "text": "作业治疗"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            20,
+            24
+          ],
+          "to": [
+            19,
+            23
+          ],
+          "text": "言语治疗"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            25,
+            27
+          ],
+          "to": [
+            24,
+            26
+          ],
+          "text": "理疗"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            35,
+            39
+          ],
+          "to": [
+            34,
+            38
+          ],
+          "text": "专业知识"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            43,
+            49
+          ],
+          "to": [
+            41,
+            47
+          ],
+          "text": "独立工作能力"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01882\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"公司招聘目的及队伍建设表述，不构成候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01883\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"报考资格复审中的专业认定、材料提交及审核流程，不是候选人能力、知识或资格名称本身。\",\"issues\":[]},{\"id\":\"sp10k-01884\",\"spans\":[{\"start\":10,\"end\":14,\"text\":\"物理治疗\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"作业治疗\",\"label\":\"S\"},{\"start\":20,\"end\":24,\"text\":\"言语治疗\",\"label\":\"S\"},{\"start\":25,\"end\":27,\"text\":\"理疗\",\"label\":\"S\"},{\"start\":35,\"end\":39,\"text\":\"专业知识\",\"label\":\"K\"},{\"start\":43,\"end\":49,\"text\":\"独立工作能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"具体治疗工作经验对应可执行职业活动，去除共享的“工作经验”后分别标注；专业知识为领域知识，独立工作能力为通用能力。\",\"issues\":[]},{\"id\":\"sp10k-01890\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"实际操作能力测试是招聘考核环节的安排，不是明确要求候选人具备的能力提及。\",\"issues\":[]},{\"id\":\"sp10k-01898\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"留学回国人员提交学位及学历认证材料属于报考材料流程，未形成应抽取的资格名称要求。\",\"issues\":[]},{\"id\":\"sp10k-01901\",\"spans\":[{\"start\":8,\"end\":16,\"text\":\"各类机械设备维修\",\"label\":\"S\"},{\"start\":22,\"end\":25,\"text\":\"电工证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"机械设备维修是明确的职业活动；电工证为非语言职业资格。年限及熟悉、需要有等触发和限定表述不入跨度。\",\"issues\":[]},{\"id\":\"sp10k-01903\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"网上报名信息填报、资料发送及报名有效性属于报考流程要求，不是候选人能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01904\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"招聘岗位、计划及要求的表格标题，不包含具体候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-01915\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"资格初审结果效力说明及应聘条件审核流程，不包含具体能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01916\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"试用期考察、思想政治和师德师风评价及聘用处理属于用人单位考核安排，不是候选人要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01882",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "公司招聘目的及队伍建设表述，不构成候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01883",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "报考资格复审中的专业认定、材料提交及审核流程，不是候选人能力、知识或资格名称本身。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01884",
+        "spans": [
+          {
+            "start": 9,
+            "end": 13,
+            "text": "物理治疗",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "作业治疗",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "言语治疗",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "text": "理疗",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "text": "专业知识",
+            "label": "K"
+          },
+          {
+            "start": 41,
+            "end": 47,
+            "text": "独立工作能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "具体治疗工作经验对应可执行职业活动，去除共享的“工作经验”后分别标注；专业知识为领域知识，独立工作能力为通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01890",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "实际操作能力测试是招聘考核环节的安排，不是明确要求候选人具备的能力提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01898",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "留学回国人员提交学位及学历认证材料属于报考材料流程，未形成应抽取的资格名称要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01901",
+        "spans": [
+          {
+            "start": 8,
+            "end": 16,
+            "text": "各类机械设备维修",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "text": "电工证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "机械设备维修是明确的职业活动；电工证为非语言职业资格。年限及熟悉、需要有等触发和限定表述不入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01903",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "网上报名信息填报、资料发送及报名有效性属于报考流程要求，不是候选人能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01904",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "招聘岗位、计划及要求的表格标题，不包含具体候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01915",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "资格初审结果效力说明及应聘条件审核流程，不包含具体能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01916",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "试用期考察、思想政治和师德师风评价及聘用处理属于用人单位考核安排，不是候选人要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 180,
+  "ids": [
+    "sp10k-01882",
+    "sp10k-01883",
+    "sp10k-01884",
+    "sp10k-01890",
+    "sp10k-01898",
+    "sp10k-01901",
+    "sp10k-01903",
+    "sp10k-01904",
+    "sp10k-01915",
+    "sp10k-01916"
+  ],
+  "at": "2026-09-13T16:37:10.508135+00:00"
+}

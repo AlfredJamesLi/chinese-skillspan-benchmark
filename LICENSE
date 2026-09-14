@@ -33,7 +33,9 @@ This software grant does **not** re-license third-party code. The JobBERT-zh
 backbone `hfl/chinese-roberta-wwm-ext` is listed as Apache-2.0 on Hugging
 Face. Hugging Face model repositories `AlfredJames/jobbert-zh`,
 `AlfredJames/jobbert-zh-1m`, and `AlfredJames/jobbert-zh-v6a` remain
-`license: other` until advertisement-text rights are confirmed.
+`license: other`. Academic research use of the underlying advertisement
+text is confirmed (see `DATA_AVAILABILITY.md`); that confirmation is not
+a CC-BY grant on the wording or on these weights.
 
 ---------------------------------------------------------------------------
 2. Dataset and job-advertisement wording — not CC-BY
@@ -41,15 +43,17 @@ Face. Hugging Face model repositories `AlfredJames/jobbert-zh`,
 
 Annotation files, predefined splits, frozen predictions, handbooks, and
 accompanying sentence strings under `data/` and `notes/handbooks/` are
-released for research and peer review of the Chinese-SkillSpan paper.
+released for academic research and peer review of the Chinese-SkillSpan
+paper. Recruitment notices were purchased from a commercial compiler of
+publicly posted advertisements; after consultation, that research use is
+permitted.
 
 This is **not** an author grant of CC-BY-4.0 (or any other open content
-licence) on original job-advertisement wording. Redistribution of that
-wording remains subject to the source platforms’ terms. A Zenodo GitHub
-hook may have labelled a record `cc-by-4.0` by platform default; that
-label is not this notice.
+licence) on original job-advertisement wording. A Zenodo GitHub hook may
+have labelled a record `cc-by-4.0` by platform default; that label is not
+this notice.
 
-Do not upload the laboratory CSV / XLSX source dumps with this repository.
+Do not upload the laboratory CSV / XLSX vendor dumps with this repository.
 
 See `DATA_AVAILABILITY.md`.
 

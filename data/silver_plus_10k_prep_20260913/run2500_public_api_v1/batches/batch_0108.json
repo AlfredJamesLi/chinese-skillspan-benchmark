@@ -1,0 +1,570 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 69.766,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5029,
+    "completion_tokens": 1965,
+    "total_tokens": 6994,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 877
+    },
+    "input_tokens": 5029,
+    "output_tokens": 1965,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01076",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            8
+          ],
+          "to": [
+            2,
+            6
+          ],
+          "text": "市场动态"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            16
+          ],
+          "to": [
+            7,
+            15
+          ],
+          "text": "收集市场需求信息"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            20,
+            22
+          ],
+          "to": [
+            23,
+            25
+          ],
+          "text": "地产"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            23,
+            25
+          ],
+          "to": [
+            26,
+            28
+          ],
+          "text": "医院"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            26,
+            28
+          ],
+          "to": [
+            29,
+            31
+          ],
+          "text": "学校"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            29,
+            33
+          ],
+          "to": [
+            32,
+            36
+          ],
+          "text": "工业厂房"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            34,
+            38
+          ],
+          "to": [
+            37,
+            41
+          ],
+          "text": "公共建筑"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            40,
+            44
+          ],
+          "to": [
+            42,
+            48
+          ],
+          "text": "开展市场工作"
+        },
+        {
+          "i": 8,
+          "action": "snapped",
+          "from": [
+            45,
+            51
+          ],
+          "to": [
+            49,
+            55
+          ],
+          "text": "客户关系建立"
+        },
+        {
+          "i": 9,
+          "action": "snapped",
+          "from": [
+            52,
+            59
+          ],
+          "to": [
+            56,
+            64
+          ],
+          "text": "整合行业客户资源"
+        },
+        {
+          "i": 10,
+          "action": "snapped",
+          "from": [
+            60,
+            68
+          ],
+          "to": [
+            65,
+            73
+          ],
+          "text": "推进公司产品销售"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01078",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            8,
+            14
+          ],
+          "to": [
+            8,
+            15
+          ],
+          "text": "数据库环境建设"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            19
+          ],
+          "to": [
+            16,
+            20
+          ],
+          "text": "数据迁移"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            20,
+            24
+          ],
+          "to": [
+            21,
+            25
+          ],
+          "text": "数据备份"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            25,
+            29
+          ],
+          "to": [
+            26,
+            30
+          ],
+          "text": "常规维护"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01079",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            16
+          ],
+          "to": [
+            16,
+            26
+          ],
+          "text": "日常商务出行接送服务"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01071\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":9,\"end\":15,\"text\":\"语言表达能力\",\"label\":\"T\"},{\"start\":17,\"end\":23,\"text\":\"独立解决问题\",\"label\":\"T\"},{\"start\":28,\"end\":34,\"text\":\"团队合作精神\",\"label\":\"T\"},{\"start\":35,\"end\":38,\"text\":\"责任心\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取沟通、表达、独立解决问题、团队合作和责任心等通用能力与特质。\",\"issues\":[]},{\"id\":\"sp10k-01072\",\"spans\":[{\"start\":5,\"end\":10,\"text\":\"生物信息学\",\"label\":\"K\"},{\"start\":11,\"end\":16,\"text\":\"分子生物学\",\"label\":\"K\"},{\"start\":17,\"end\":21,\"text\":\"基因组学\",\"label\":\"K\"},{\"start\":22,\"end\":28,\"text\":\"基因编辑技术\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取生物信息学、分子生物学、基因组学等领域知识，以及基因编辑技术这一可执行技术。\",\"issues\":[]},{\"id\":\"sp10k-01073\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":11,\"end\":17,\"text\":\"协调组织能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取沟通与协调组织等通用能力。\",\"issues\":[]},{\"id\":\"sp10k-01074\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"自媒体账号\",\"label\":\"S\"},{\"start\":14,\"end\":16,\"text\":\"微博\",\"label\":\"S\"},{\"start\":17,\"end\":19,\"text\":\"微信\",\"label\":\"S\"},{\"start\":20,\"end\":22,\"text\":\"快手\",\"label\":\"S\"},{\"start\":23,\"end\":25,\"text\":\"抖音\",\"label\":\"S\"},{\"start\":28,\"end\":30,\"text\":\"运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取自媒体账号及其列举的平台工具和运维活动。\",\"issues\":[]},{\"id\":\"sp10k-01075\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"网络运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"具体网络运维工作经验要求，去除经验后保留职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01076\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"市场动态\",\"label\":\"K\"},{\"start\":9,\"end\":16,\"text\":\"收集市场需求信息\",\"label\":\"S\"},{\"start\":20,\"end\":22,\"text\":\"地产\",\"label\":\"K\"},{\"start\":23,\"end\":25,\"text\":\"医院\",\"label\":\"K\"},{\"start\":26,\"end\":28,\"text\":\"学校\",\"label\":\"K\"},{\"start\":29,\"end\":33,\"text\":\"工业厂房\",\"label\":\"K\"},{\"start\":34,\"end\":38,\"text\":\"公共建筑\",\"label\":\"K\"},{\"start\":40,\"end\":44,\"text\":\"开展市场工作\",\"label\":\"S\"},{\"start\":45,\"end\":51,\"text\":\"客户关系建立\",\"label\":\"T\"},{\"start\":52,\"end\":59,\"text\":\"整合行业客户资源\",\"label\":\"S\"},{\"start\":60,\"end\":68,\"text\":\"推进公司产品销售\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取市场知识、市场信息收集、行业领域、市场工作、客户关系、资源整合及产品销售等要求。\",\"issues\":[]},{\"id\":\"sp10k-01077\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为招聘公告标题，不包含候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01078\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"Oracle\",\"label\":\"S\"},{\"start\":8,\"end\":14,\"text\":\"数据库环境建设\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"数据迁移\",\"label\":\"S\"},{\"start\":20,\"end\":24,\"text\":\"数据备份\",\"label\":\"S\"},{\"start\":25,\"end\":29,\"text\":\"常规维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取Oracle工具及数据库环境建设、数据迁移、备份和维护等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01079\",\"spans\":[{\"start\":8,\"end\":16,\"text\":\"日常商务出行接送服务\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取岗位职责中明确要求执行的商务出行接送服务。\",\"issues\":[]},{\"id\":\"sp10k-01080\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为笔试事项公告，不包含候选人能力、知识或资格要求。\",\"issues\":[]}]}\n",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01071",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "语言表达能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "独立解决问题",
+            "label": "T"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "text": "团队合作精神",
+            "label": "T"
+          },
+          {
+            "start": 35,
+            "end": 38,
+            "text": "责任心",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取沟通、表达、独立解决问题、团队合作和责任心等通用能力与特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01072",
+        "spans": [
+          {
+            "start": 5,
+            "end": 10,
+            "text": "生物信息学",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "text": "分子生物学",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "基因组学",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "基因编辑技术",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取生物信息学、分子生物学、基因组学等领域知识，以及基因编辑技术这一可执行技术。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01073",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "协调组织能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取沟通与协调组织等通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01074",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "自媒体账号",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 16,
+            "text": "微博",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 19,
+            "text": "微信",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "快手",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "抖音",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 30,
+            "text": "运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取自媒体账号及其列举的平台工具和运维活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01075",
+        "spans": [
+          {
+            "start": 6,
+            "end": 10,
+            "text": "网络运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "具体网络运维工作经验要求，去除经验后保留职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01076",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "市场动态",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 15,
+            "text": "收集市场需求信息",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "地产",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "text": "医院",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 31,
+            "text": "学校",
+            "label": "K"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "text": "工业厂房",
+            "label": "K"
+          },
+          {
+            "start": 37,
+            "end": 41,
+            "text": "公共建筑",
+            "label": "K"
+          },
+          {
+            "start": 42,
+            "end": 48,
+            "text": "开展市场工作",
+            "label": "S"
+          },
+          {
+            "start": 49,
+            "end": 55,
+            "text": "客户关系建立",
+            "label": "T"
+          },
+          {
+            "start": 56,
+            "end": 64,
+            "text": "整合行业客户资源",
+            "label": "S"
+          },
+          {
+            "start": 65,
+            "end": 73,
+            "text": "推进公司产品销售",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取市场知识、市场信息收集、行业领域、市场工作、客户关系、资源整合及产品销售等要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01077",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为招聘公告标题，不包含候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01078",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "Oracle",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 15,
+            "text": "数据库环境建设",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "数据迁移",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "数据备份",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "常规维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取Oracle工具及数据库环境建设、数据迁移、备份和维护等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01079",
+        "spans": [
+          {
+            "start": 16,
+            "end": 26,
+            "text": "日常商务出行接送服务",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取岗位职责中明确要求执行的商务出行接送服务。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01080",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为笔试事项公告，不包含候选人能力、知识或资格要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 108,
+  "ids": [
+    "sp10k-01071",
+    "sp10k-01072",
+    "sp10k-01073",
+    "sp10k-01074",
+    "sp10k-01075",
+    "sp10k-01076",
+    "sp10k-01077",
+    "sp10k-01078",
+    "sp10k-01079",
+    "sp10k-01080"
+  ],
+  "at": "2026-09-13T15:21:14.862342+00:00"
+}

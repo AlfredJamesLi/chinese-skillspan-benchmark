@@ -1,0 +1,404 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 48.692,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5044,
+    "completion_tokens": 1855,
+    "total_tokens": 6899,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 972
+    },
+    "input_tokens": 5044,
+    "output_tokens": 1855,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00432",
+      "repairs": [
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            30,
+            38
+          ],
+          "to": [
+            35,
+            43
+          ],
+          "text": "相关服务器的运维"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00434",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            9
+          ],
+          "to": [
+            5,
+            12
+          ],
+          "text": "计算机安全管理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            14
+          ],
+          "to": [
+            13,
+            17
+          ],
+          "text": "系统管理"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            19
+          ],
+          "to": [
+            18,
+            22
+          ],
+          "text": "网络管理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            20,
+            26
+          ],
+          "to": [
+            23,
+            29
+          ],
+          "text": "应用软件管理"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            39,
+            41
+          ],
+          "to": [
+            42,
+            44
+          ],
+          "text": "监督"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            42,
+            44
+          ],
+          "to": [
+            45,
+            47
+          ],
+          "text": "指导"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            45,
+            47
+          ],
+          "to": [
+            48,
+            50
+          ],
+          "text": "服务"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00437",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            12
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "信息技术发展及趋势"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00440",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            20,
+            28
+          ],
+          "to": [
+            11,
+            20
+          ],
+          "text": "相关开发、维护经验"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00431\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为公司培训福利及奖金说明，不属于候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00432\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"TCE分布式存储\",\"label\":\"S\"},{\"start\":10,\"end\":13,\"text\":\"COS\",\"label\":\"S\"},{\"start\":14,\"end\":17,\"text\":\"CFS\",\"label\":\"S\"},{\"start\":18,\"end\":21,\"text\":\"CBS\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"HDFS\",\"label\":\"S\"},{\"start\":27,\"end\":29,\"text\":\"ES\",\"label\":\"S\"},{\"start\":30,\"end\":38,\"text\":\"相关服务器的运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求负责存储组件及服务器运维；组件名称按岗位现用工具或系统操作标为S，服务器运维为职业动作。\",\"issues\":[]},{\"id\":\"sp10k-00433\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"为招聘计划取消及报名改报流程说明，不属于候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00434\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"计算机安全管理\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"系统管理\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"网络管理\",\"label\":\"S\"},{\"start\":20,\"end\":26,\"text\":\"应用软件管理\",\"label\":\"S\"},{\"start\":39,\"end\":41,\"text\":\"监督\",\"label\":\"S\"},{\"start\":42,\"end\":44,\"text\":\"指导\",\"label\":\"S\"},{\"start\":45,\"end\":47,\"text\":\"服务\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"均为岗位明确要求执行的计算机、系统、网络及应用软件管理和相关监督指导服务活动。\",\"issues\":[]},{\"id\":\"sp10k-00435\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"编写培训教材和讲义\",\"label\":\"S\"},{\"start\":12,\"end\":21,\"text\":\"设计更新课程练习题\",\"label\":\"S\"},{\"start\":37,\"end\":48,\"text\":\"制定匹配课程的考试方案\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行教材编写、课程练习题设计更新及考试方案制定等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00436\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容仅表达利用科技提升车险定价工具及系统智能化程度的目标或结果，未形成可抽取的明确能力、知识或职业动作要求。\",\"issues\":[]},{\"id\":\"sp10k-00437\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"信息技术发展及趋势\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"要求熟悉信息技术领域的发展及趋势，属于领域知识。\",\"issues\":[]},{\"id\":\"sp10k-00438\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"为报名材料提交及资格取消的流程规定，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00439\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"为招聘计划及开考比例调整的公示说明，不属于候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00440\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"致远OA系统\",\"label\":\"S\"},{\"start\":20,\"end\":28,\"text\":\"相关开发、维护经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"致远OA系统为岗位现用系统；开发和维护经验对应明确的系统开发、维护实践要求，保留经验以完整表达经历要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00431",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为公司培训福利及奖金说明，不属于候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00432",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "TCE分布式存储",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 13,
+            "text": "COS",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 17,
+            "text": "CFS",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 21,
+            "text": "CBS",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "HDFS",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "text": "ES",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 43,
+            "text": "相关服务器的运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求负责存储组件及服务器运维；组件名称按岗位现用工具或系统操作标为S，服务器运维为职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00433",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "为招聘计划取消及报名改报流程说明，不属于候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00434",
+        "spans": [
+          {
+            "start": 5,
+            "end": 12,
+            "text": "计算机安全管理",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "系统管理",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "网络管理",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "text": "应用软件管理",
+            "label": "S"
+          },
+          {
+            "start": 42,
+            "end": 44,
+            "text": "监督",
+            "label": "S"
+          },
+          {
+            "start": 45,
+            "end": 47,
+            "text": "指导",
+            "label": "S"
+          },
+          {
+            "start": 48,
+            "end": 50,
+            "text": "服务",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为岗位明确要求执行的计算机、系统、网络及应用软件管理和相关监督指导服务活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00435",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "编写培训教材和讲义",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 21,
+            "text": "设计更新课程练习题",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 48,
+            "text": "制定匹配课程的考试方案",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行教材编写、课程练习题设计更新及考试方案制定等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00436",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容仅表达利用科技提升车险定价工具及系统智能化程度的目标或结果，未形成可抽取的明确能力、知识或职业动作要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00437",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "信息技术发展及趋势",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "要求熟悉信息技术领域的发展及趋势，属于领域知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00438",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "为报名材料提交及资格取消的流程规定，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00439",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "为招聘计划及开考比例调整的公示说明，不属于候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00440",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "致远OA系统",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 20,
+            "text": "相关开发、维护经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "致远OA系统为岗位现用系统；开发和维护经验对应明确的系统开发、维护实践要求，保留经验以完整表达经历要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 44,
+  "ids": [
+    "sp10k-00431",
+    "sp10k-00432",
+    "sp10k-00433",
+    "sp10k-00434",
+    "sp10k-00435",
+    "sp10k-00436",
+    "sp10k-00437",
+    "sp10k-00438",
+    "sp10k-00439",
+    "sp10k-00440"
+  ],
+  "at": "2026-09-13T14:26:42.643300+00:00"
+}

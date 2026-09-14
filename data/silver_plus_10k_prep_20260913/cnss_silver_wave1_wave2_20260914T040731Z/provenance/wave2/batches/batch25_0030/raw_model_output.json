@@ -1,0 +1,616 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04455",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "RocketMQ",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 20,
+          "text": "RabbitMQ",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体消息中间件按岗位工具标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04456",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考认证查询程序，不是职业能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04458",
+      "spans": [
+        {
+          "start": 7,
+          "end": 9,
+          "text": "开车",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "电工",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "电子",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "自动化",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 24,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "踏实肯干",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "驾驶动作、专业知识及工作特质分别标注；无司机岗位依据，驾照不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04459",
+      "spans": [
+        {
+          "start": 4,
+          "end": 16,
+          "text": "机房服务器系统、应用维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列对象共享维护动作，保留完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04460",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "亲和力",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "表达沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "工作热情",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "积极主动",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "text": "耐心",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用能力或工作特质，去除程度及要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04461",
+      "spans": [
+        {
+          "start": 6,
+          "end": 14,
+          "text": "信息安全控管技术",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 25,
+          "text": "系统架构风险分析",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "安全规划能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安全控管技术及领域绑定的分析、规划能力按S标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04462",
+      "spans": [
+        {
+          "start": 18,
+          "end": 27,
+          "text": "大專及大專以上學歷",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "網絡維護",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留繁体学历原文；维护活动去除年限及从事触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04463",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "泛化报名资格说明，没有具体能力或资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04464",
+      "spans": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "专业硕士",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 18,
+          "text": "博士",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "学术硕士",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 26,
+          "text": "博士",
+          "label": "K"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "学历学位证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注招聘接受的学历类别及明确要求取得的资格证书。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04465",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "维护公司运维基础设施的正常运行",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确的基础设施维护职责，保留完整动作及对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04466",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "人力资源",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "本科以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业名及完整学历资格标K；泛化相关专业不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04467",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名材料上传及真实性要求，属于应聘行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04469",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "广告学",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "统计学",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "市场营销",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历资格与各项专业名分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04470",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考平台操作与照片上传说明；浏览器仅用于报名流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04471",
+      "spans": [
+        {
+          "start": 4,
+          "end": 21,
+          "text": "Office365国际版的问题咨询",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 29,
+          "text": "请求和故障对应",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件支持职责分项标注；请求与故障共享对应动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04472",
+      "spans": [
+        {
+          "start": 0,
+          "end": 24,
+          "text": "网络、数据库、服务器及IT设备硬件方面的专业技能",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "text": "工作主动性",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "接受能力",
+          "label": "T"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 47,
+          "end": 50,
+          "text": "执行力",
+          "label": "T"
+        },
+        {
+          "start": 55,
+          "end": 61,
+          "text": "独立分析问题",
+          "label": "T"
+        },
+        {
+          "start": 62,
+          "end": 66,
+          "text": "解决问题",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "技术领域列表保留共享的专业技能中心；无具体对象的问题分析与解决按T标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04473",
+      "spans": [
+        {
+          "start": 10,
+          "end": 14,
+          "text": "本科学历",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "学士学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "招聘对象具有的明确学历和学位要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04474",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "淘宝阿里的日常运营",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "直通车",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "text": "网销宝",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "营销推广",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运营、推广工具与营销活动分别标注；流量及转化率提升是结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04475",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "现单位同意报考材料及资格取消规定，属于行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04476",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "linux系统",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "redhat",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "centos",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 34,
+          "text": "rsyslog",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "sshd",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "text": "sftp",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 53,
+          "text": "iptables",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作系统及常用服务按岗位工具标注，保留原文大小写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04477",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明资格复审的负责机构，不是候选人职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04478",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "敬业精神",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "团队协作能力",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 25,
+          "text": "承受一定的压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "敬业、协作及抗压均为通用特质或能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04479",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "编程能力",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "设计能力",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "热爱编程",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "Python",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "java",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 40,
+          "text": "go",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "编程及局部软件设计能力标S，职业热情标T；代码片段表述不完整，范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "代码",
+          "alternatives": [
+            "隐含代码编写能力要求，纳入标注",
+            "仅为不完整的产出描述，不标注"
+          ],
+          "reason": "“优秀的设计能力和代码”未明确代码对应的能力或动作，缺少完整要求表述。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04480",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "PC设备原理",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 37,
+          "text": "windows操作系统和常用办公软件的配置和排错方法",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备原理标K；配置和排错是可执行方法，保留共享对象及方法中心。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04481",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "网络交换设备",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 22,
+          "text": "门禁、视频等设备的使用",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 37,
+          "text": "智慧园区、智慧工厂运维实施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备使用和运维实施按S标注；并列对象保留必要共享动作，去除经验后活动仍完整。",
+      "issues": []
+    }
+  ]
+}

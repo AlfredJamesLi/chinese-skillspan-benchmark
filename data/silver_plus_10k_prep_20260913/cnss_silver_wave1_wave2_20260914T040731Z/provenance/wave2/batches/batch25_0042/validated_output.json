@@ -1,0 +1,553 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04769",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "沟通表达能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 15,
+          "text": "发散性思维",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "前瞻性视野",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取沟通能力及思维、视野特质，排除程度词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04770",
+      "spans": [
+        {
+          "start": 1,
+          "end": 6,
+          "text": "计算机硬件",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 9,
+          "text": "外设",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "硬件与外设为明确了解对象；支持表述未指明具体职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04771",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘递补及公布流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04772",
+      "spans": [
+        {
+          "start": 2,
+          "end": 27,
+          "text": "windows与Linux操作系统部署、优化、安装",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 34,
+          "text": "服务",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 38,
+          "text": "组策略",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 42,
+          "text": "注册表",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "操作活动保留共享系统对象；括号内系统要素的类型待决，S为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "服务",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "明确涉及操作系统服务，但未说明要求服务知识还是具体配置管理操作。"
+        },
+        {
+          "kind": "type",
+          "text": "组策略",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指系统机制知识，也可指部署维护中使用的管理功能，括号未明确。"
+        },
+        {
+          "kind": "type",
+          "text": "注册表",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指系统结构知识，也可指安装优化中操作的系统工具，未明确具体要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04773",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明面试考核形式及分值。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04774",
+      "spans": [
+        {
+          "start": 4,
+          "end": 14,
+          "text": "人力资源相关手续办理",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 35,
+          "text": "提出合理化优化建议",
+          "label": "T"
+        },
+        {
+          "start": 36,
+          "end": 42,
+          "text": "沉淀操作手册",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "手续办理与操作手册沉淀为职业活动；泛化改进建议为T，及时合规的结果要求不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04775",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "基础硬件",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "信号机",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "基础硬件",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "text": "信号机",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "明确理解语境中的硬件及信号机标K；未具名认证的范围待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "相关认证",
+          "alternatives": [
+            "纳入非语言资格要求",
+            "排除未指明名称的资格泛称"
+          ],
+          "reason": "明确提出认证偏好，但未提供资格名称，协议未明确此类泛称是否纳入。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04776",
+      "spans": [
+        {
+          "start": 3,
+          "end": 26,
+          "text": "信息安全技术及相关产品、系统的选型、实施和运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "选型、实施与运维共享必要专业对象，保留完整活动短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04777",
+      "spans": [
+        {
+          "start": 10,
+          "end": 19,
+          "text": "网络与安全设施运维",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "撰写相关报告",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取设施运维与报告撰写；驻场地点不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04778",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "弱电机房等重要设备日常点检及管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "点检与管理共享设备对象，保留完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04779",
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "数据库",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "text": "Mongodb",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 21,
+          "text": "MySQL",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 31,
+          "text": "SQLServer",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 40,
+          "text": "编写sql",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库类别及具体工具处于SQL编写的实际运用语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04780",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "国籍报考条件不属于能力、知识或专业资格提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04781",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "计算机软件日常维护",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "text": "软件安装及更新",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "病毒驱除",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "远程故障排除",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取维护及具体操作活动，安装与更新保留共享软件对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04782",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明根据笔试成绩确定面试人选的行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04783",
+      "spans": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "护士执业资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整非语言执业资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04785",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名承诺、材料真实性及报考咨询流程要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04786",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "LINUX",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "UNIX",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 27,
+          "text": "SHELL脚本编程",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "脚本开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "操作系统处于脚本编程实践语境；职业活动去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04787",
+      "spans": [
+        {
+          "start": 9,
+          "end": 15,
+          "text": "现场调研勘察",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确现场职业活动，保留原文前缀对应偏移。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04788",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "运维意识",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "事务处理能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "责任心、工作意识及未限定专业对象的事务处理能力为通用特质能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04789",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明证书提交期限及取消报考资格后果。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04790",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 25,
+          "text": "计算机等级证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格、专业核心名及非语言证书。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04791",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "ssh",
+          "label": "S"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": "ssm",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "前端开发",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "js",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "html",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 30,
+          "text": "css",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "框架和前端技术为岗位运用工具，前端开发为职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04792",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 4,
+          "end": 6,
+          "text": "网络",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 18,
+          "text": "大专或以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列专业核心名分别抽取，学历保留完整资格边界。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04794",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名附件发送及证件命名示例，未提出学历要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04795",
+      "spans": [
+        {
+          "start": 4,
+          "end": 13,
+          "text": "SpringMVC",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 24,
+          "text": "SpringBoot",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 32,
+          "text": "Mybatis",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取岗位框架工具，保留原文大小写。",
+      "issues": []
+    }
+  ]
+}

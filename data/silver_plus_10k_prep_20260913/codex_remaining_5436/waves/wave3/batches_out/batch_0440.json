@@ -1,0 +1,228 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06891",
+      "spans": [
+        {
+          "start": 15,
+          "end": 19,
+          "text": "日常管理",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "评估",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取对供应商执行的日常管理和评估职责；服务质量符合要求属于结果要求，不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06892",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "专科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历资格按K标注；相关专业为泛化专业要求，不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06893",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "AutoCAD",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "Office",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "办公软件作为岗位使用工具，工具名按S标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06894",
+      "spans": [
+        {
+          "start": 17,
+          "end": 28,
+          "text": "管理项目部安全生产物资",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取岗位职责中的物资管理职业活动；地点、到岗时间不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06895",
+      "spans": [
+        {
+          "start": 6,
+          "end": 12,
+          "text": "逻辑思维能力",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "逆向分析问题",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "提出解决方案",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "逻辑思维、通用问题分析及提出解决方案属于跨行业通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06896",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "电子行业",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "PE经验",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 31,
+          "text": "半导体测试行业",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历和明确行业背景按K标注；具体职能实践经历保留“PE经验”并按S标注。年限及优先修饰不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06897",
+      "spans": [
+        {
+          "start": 9,
+          "end": 13,
+          "text": "博士学位",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "化学",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "材料",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "博士学位及明确专业领域按K标注；“等相关领域”中的泛化限定不纳入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06898",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "风控考核推进",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "协调",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "结果输出",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取风控考核推进和结果输出职业动作；协调作为通用协作能力按T标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06899",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "国际贸易进出口",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "项目管理流程",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "国际贸易进出口为领域知识；项目管理在职业流程语境中按S标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06900",
+      "spans": [
+        {
+          "start": 16,
+          "end": 22,
+          "text": "招商运营业务",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "text": "国家相关政策",
+          "label": "K"
+        },
+        {
+          "start": 38,
+          "end": 44,
+          "text": "行业法律法规",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "招商运营为可执行业务活动；国家政策及行业法律法规为领域规范知识。",
+      "issues": []
+    }
+  ]
+}

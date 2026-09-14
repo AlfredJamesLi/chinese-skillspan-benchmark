@@ -1,0 +1,525 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 36.736,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5099,
+    "completion_tokens": 1347,
+    "total_tokens": 6446,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 506
+    },
+    "input_tokens": 5099,
+    "output_tokens": 1347,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00941",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            28,
+            36
+          ],
+          "to": [
+            17,
+            27
+          ],
+          "text": "省（部）级科技一等奖"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            51,
+            59
+          ],
+          "to": [
+            41,
+            49
+          ],
+          "text": "发明专利2件以上"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            86,
+            93
+          ],
+          "to": [
+            85,
+            91
+          ],
+          "text": "研发工作经历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00942",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            13,
+            21
+          ],
+          "to": [
+            8,
+            15
+          ],
+          "text": "大专或本科毕业"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            32,
+            36
+          ],
+          "to": [
+            24,
+            28
+          ],
+          "text": "运维工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00944",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            10,
+            17
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "实验室日常管理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            24,
+            31
+          ],
+          "to": [
+            14,
+            21
+          ],
+          "text": "科研经费的报销"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            32,
+            41
+          ],
+          "to": [
+            22,
+            31
+          ],
+          "text": "仪器设备的采购入库"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            42,
+            51
+          ],
+          "to": [
+            32,
+            41
+          ],
+          "text": "物品的购买安置管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00945",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            14,
+            26
+          ],
+          "to": [
+            4,
+            15
+          ],
+          "text": "网络设备系统的维护管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00947",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            26,
+            44
+          ],
+          "to": [
+            27,
+            40
+          ],
+          "text": "国(境)外学历学位认证证明"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00949",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            12,
+            16
+          ],
+          "to": [
+            4,
+            11
+          ],
+          "text": "网络软件的安装"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            21
+          ],
+          "to": [
+            12,
+            14
+          ],
+          "text": "维护"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            24
+          ],
+          "to": [
+            15,
+            17
+          ],
+          "text": "调整"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            25,
+            27
+          ],
+          "to": [
+            18,
+            20
+          ],
+          "text": "更新"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00950",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            13,
+            21
+          ],
+          "to": [
+            12,
+            19
+          ],
+          "text": "数据库调优工具"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            27,
+            33
+          ],
+          "to": [
+            23,
+            32
+          ],
+          "text": "数据库性能进行分析"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            34,
+            36
+          ],
+          "to": [
+            33,
+            35
+          ],
+          "text": "优化"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00941\",\"spans\":[{\"start\":28,\"end\":36,\"text\":\"省（部）级科技一等奖\",\"label\":\"K\"},{\"start\":51,\"end\":59,\"text\":\"发明专利2件以上\",\"label\":\"K\"},{\"start\":86,\"end\":93,\"text\":\"研发工作经历\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取科技奖励、发明专利等资格，以及明确的研发工作经历要求。\",\"issues\":[]},{\"id\":\"sp10k-00942\",\"spans\":[{\"start\":13,\"end\":21,\"text\":\"大专或本科毕业\",\"label\":\"K\"},{\"start\":32,\"end\":36,\"text\":\"运维工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格提及；运维工作经验按明确职业活动标注。\",\"issues\":[]},{\"id\":\"sp10k-00943\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明专业目录参考依据，不构成候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00944\",\"spans\":[{\"start\":10,\"end\":17,\"text\":\"实验室日常管理\",\"label\":\"S\"},{\"start\":24,\"end\":31,\"text\":\"科研经费的报销\",\"label\":\"S\"},{\"start\":32,\"end\":41,\"text\":\"仪器设备的采购入库\",\"label\":\"S\"},{\"start\":42,\"end\":51,\"text\":\"物品的购买安置管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"职责中明确列出的实验室管理、经费报销、设备采购入库及物品管理活动。\",\"issues\":[]},{\"id\":\"sp10k-00945\",\"spans\":[{\"start\":14,\"end\":26,\"text\":\"网络设备系统的维护管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行网络设备系统维护管理；保障正常运行属于结果性表述，不标注。\",\"issues\":[]},{\"id\":\"sp10k-00946\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为招聘考试面试分数线及资格处理规则，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00947\",\"spans\":[{\"start\":26,\"end\":44,\"text\":\"国(境)外学历学位认证证明\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"留学回国人员需提供的学历学位认证证明属于资格材料提及。\",\"issues\":[]},{\"id\":\"sp10k-00948\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为招聘公告标题及岗位条件表名称，未包含具体要求。\",\"issues\":[]},{\"id\":\"sp10k-00949\",\"spans\":[{\"start\":12,\"end\":16,\"text\":\"网络软件的安装\",\"label\":\"S\"},{\"start\":17,\"end\":21,\"text\":\"维护\",\"label\":\"S\"},{\"start\":22,\"end\":24,\"text\":\"调整\",\"label\":\"S\"},{\"start\":25,\"end\":27,\"text\":\"更新\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取网络软件安装、维护、调整和更新等明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00950\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"ASH\",\"label\":\"S\"},{\"start\":6,\"end\":9,\"text\":\"AWR\",\"label\":\"S\"},{\"start\":13,\"end\":21,\"text\":\"数据库调优工具\",\"label\":\"S\"},{\"start\":27,\"end\":33,\"text\":\"数据库性能进行分析\",\"label\":\"S\"},{\"start\":34,\"end\":36,\"text\":\"优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库调优工具及数据库性能分析、优化均为明确工具运用或职业技术活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00941",
+        "spans": [
+          {
+            "start": 17,
+            "end": 27,
+            "text": "省（部）级科技一等奖",
+            "label": "K"
+          },
+          {
+            "start": 41,
+            "end": 49,
+            "text": "发明专利2件以上",
+            "label": "K"
+          },
+          {
+            "start": 85,
+            "end": 91,
+            "text": "研发工作经历",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取科技奖励、发明专利等资格，以及明确的研发工作经历要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00942",
+        "spans": [
+          {
+            "start": 8,
+            "end": 15,
+            "text": "大专或本科毕业",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "运维工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格提及；运维工作经验按明确职业活动标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00943",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明专业目录参考依据，不构成候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00944",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "实验室日常管理",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 21,
+            "text": "科研经费的报销",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 31,
+            "text": "仪器设备的采购入库",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 41,
+            "text": "物品的购买安置管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "职责中明确列出的实验室管理、经费报销、设备采购入库及物品管理活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00945",
+        "spans": [
+          {
+            "start": 4,
+            "end": 15,
+            "text": "网络设备系统的维护管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行网络设备系统维护管理；保障正常运行属于结果性表述，不标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00946",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为招聘考试面试分数线及资格处理规则，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00947",
+        "spans": [
+          {
+            "start": 27,
+            "end": 40,
+            "text": "国(境)外学历学位认证证明",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "留学回国人员需提供的学历学位认证证明属于资格材料提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00948",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为招聘公告标题及岗位条件表名称，未包含具体要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00949",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "网络软件的安装",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "维护",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "调整",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 20,
+            "text": "更新",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取网络软件安装、维护、调整和更新等明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00950",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "ASH",
+            "label": "S"
+          },
+          {
+            "start": 6,
+            "end": 9,
+            "text": "AWR",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "text": "数据库调优工具",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 32,
+            "text": "数据库性能进行分析",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "text": "优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库调优工具及数据库性能分析、优化均为明确工具运用或职业技术活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 95,
+  "ids": [
+    "sp10k-00941",
+    "sp10k-00942",
+    "sp10k-00943",
+    "sp10k-00944",
+    "sp10k-00945",
+    "sp10k-00946",
+    "sp10k-00947",
+    "sp10k-00948",
+    "sp10k-00949",
+    "sp10k-00950"
+  ],
+  "at": "2026-09-13T15:09:47.615800+00:00"
+}

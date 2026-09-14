@@ -1,0 +1,293 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 55.553,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5100,
+    "completion_tokens": 1644,
+    "total_tokens": 6744,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 934
+    },
+    "input_tokens": 5100,
+    "output_tokens": 1644,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01311",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            35,
+            58
+          ],
+          "to": [
+            34,
+            57
+          ],
+          "text": "运维自动化平台、日志平台、持续交付平台迭代建设"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01312",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            31,
+            67
+          ],
+          "to": [
+            31,
+            65
+          ],
+          "text": "MySQL、MsSQL、Memcache、Redis等数据应用的优化"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            70,
+            74
+          ],
+          "to": [
+            68,
+            72
+          ],
+          "text": "性能监控"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            77,
+            81
+          ],
+          "to": [
+            73,
+            77
+          ],
+          "text": "备份恢复"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            84,
+            92
+          ],
+          "to": [
+            78,
+            86
+          ],
+          "text": "提升数据应用性能"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01313",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            5
+          ],
+          "to": [
+            0,
+            9
+          ],
+          "text": "全日制本科以上学历"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01311\",\"spans\":[{\"start\":2,\"end\":21,\"text\":\"集团智能化业务相关运维平台的设计、开发\",\"label\":\"S\"},{\"start\":35,\"end\":58,\"text\":\"运维自动化平台、日志平台、持续交付平台迭代建设\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确要求候选人执行的平台设计开发及平台迭代建设活动。\",\"issues\":[]},{\"id\":\"sp10k-01312\",\"spans\":[{\"start\":4,\"end\":28,\"text\":\"linux和Windowsserver等系统操作\",\"label\":\"S\"},{\"start\":31,\"end\":67,\"text\":\"MySQL、MsSQL、Memcache、Redis等数据应用的优化\",\"label\":\"S\"},{\"start\":70,\"end\":74,\"text\":\"性能监控\",\"label\":\"S\"},{\"start\":77,\"end\":81,\"text\":\"备份恢复\",\"label\":\"S\"},{\"start\":84,\"end\":92,\"text\":\"提升数据应用性能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"系统操作、数据应用优化、性能监控、备份恢复及性能提升均为可执行技术活动。\",\"issues\":[]},{\"id\":\"sp10k-01313\",\"spans\":[{\"start\":0,\"end\":5,\"text\":\"全日制本科以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历为明确资格要求；泛化工作经验及本地相关工作经验不抽取。\",\"issues\":[]},{\"id\":\"sp10k-01314\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于资格考试成绩证明预约邮寄公告，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01315\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于资格初审异议申诉流程及时间说明，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01316\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为引进对象要求与条件的标题，未包含具体要求提及。\",\"issues\":[]},{\"id\":\"sp10k-01317\",\"spans\":[{\"start\":0,\"end\":5,\"text\":\"本科及以上\",\"label\":\"K\"},{\"start\":18,\"end\":36,\"text\":\"Windchill项目开发或运维经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历为资格要求；Windchill项目开发或运维经验明确指向具体职业实践活动。\",\"issues\":[]},{\"id\":\"sp10k-01318\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于学历认证材料及办理方式说明，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01319\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为泛化相关专业表述，按规则不单独抽取。\",\"issues\":[]},{\"id\":\"sp10k-01320\",\"spans\":[{\"start\":4,\"end\":13,\"text\":\"软件项目的维护工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"软件项目维护是明确的职业活动；公司提供产品培训属于福利信息，不抽取。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01311",
+        "spans": [
+          {
+            "start": 2,
+            "end": 21,
+            "text": "集团智能化业务相关运维平台的设计、开发",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 57,
+            "text": "运维自动化平台、日志平台、持续交付平台迭代建设",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确要求候选人执行的平台设计开发及平台迭代建设活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01312",
+        "spans": [
+          {
+            "start": 4,
+            "end": 28,
+            "text": "linux和Windowsserver等系统操作",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 65,
+            "text": "MySQL、MsSQL、Memcache、Redis等数据应用的优化",
+            "label": "S"
+          },
+          {
+            "start": 68,
+            "end": 72,
+            "text": "性能监控",
+            "label": "S"
+          },
+          {
+            "start": 73,
+            "end": 77,
+            "text": "备份恢复",
+            "label": "S"
+          },
+          {
+            "start": 78,
+            "end": 86,
+            "text": "提升数据应用性能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统操作、数据应用优化、性能监控、备份恢复及性能提升均为可执行技术活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01313",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "全日制本科以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为明确资格要求；泛化工作经验及本地相关工作经验不抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01314",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于资格考试成绩证明预约邮寄公告，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01315",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于资格初审异议申诉流程及时间说明，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01316",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为引进对象要求与条件的标题，未包含具体要求提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01317",
+        "spans": [
+          {
+            "start": 0,
+            "end": 5,
+            "text": "本科及以上",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 36,
+            "text": "Windchill项目开发或运维经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为资格要求；Windchill项目开发或运维经验明确指向具体职业实践活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01318",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于学历认证材料及办理方式说明，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01319",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为泛化相关专业表述，按规则不单独抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01320",
+        "spans": [
+          {
+            "start": 4,
+            "end": 13,
+            "text": "软件项目的维护工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "软件项目维护是明确的职业活动；公司提供产品培训属于福利信息，不抽取。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 132,
+  "ids": [
+    "sp10k-01311",
+    "sp10k-01312",
+    "sp10k-01313",
+    "sp10k-01314",
+    "sp10k-01315",
+    "sp10k-01316",
+    "sp10k-01317",
+    "sp10k-01318",
+    "sp10k-01319",
+    "sp10k-01320"
+  ],
+  "at": "2026-09-13T15:45:07.444667+00:00"
+}

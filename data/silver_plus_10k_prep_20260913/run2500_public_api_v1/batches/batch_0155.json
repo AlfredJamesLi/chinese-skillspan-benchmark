@@ -1,0 +1,733 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 60.795,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5118,
+    "completion_tokens": 1929,
+    "total_tokens": 7047,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 750
+    },
+    "input_tokens": 5118,
+    "output_tokens": 1929,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01544",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            12,
+            19
+          ],
+          "to": [
+            13,
+            20
+          ],
+          "text": "良好的沟通能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            21,
+            25
+          ],
+          "to": [
+            23,
+            27
+          ],
+          "text": "团队精神"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01545",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            21
+          ],
+          "to": [
+            10,
+            20
+          ],
+          "text": "响应员工IT服务请求"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            29,
+            39
+          ],
+          "to": [
+            37,
+            45
+          ],
+          "text": "一线技术解决方案"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            40,
+            59
+          ],
+          "to": [
+            46,
+            62
+          ],
+          "text": "编写运维手册（SOP）及培训材料"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            60,
+            77
+          ],
+          "to": [
+            63,
+            76
+          ],
+          "text": "提升用户自助解决问题的能力"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            78,
+            86
+          ],
+          "to": [
+            77,
+            85
+          ],
+          "text": "记录高频故障案例"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            87,
+            93
+          ],
+          "to": [
+            86,
+            91
+          ],
+          "text": "建立知识库"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01546",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            14
+          ],
+          "to": [
+            12,
+            15
+          ],
+          "text": "k8s"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            15,
+            19
+          ],
+          "to": [
+            15,
+            17
+          ],
+          "text": "集群"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            20,
+            26
+          ],
+          "to": [
+            18,
+            26
+          ],
+          "text": "docker容器"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            28,
+            30
+          ],
+          "to": [
+            27,
+            29
+          ],
+          "text": "运维"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01547",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            16
+          ],
+          "to": [
+            11,
+            17
+          ],
+          "text": "排水工程设计"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01548",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            64,
+            70
+          ],
+          "to": [
+            65,
+            72
+          ],
+          "text": "博士或高级职称"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            70,
+            76
+          ],
+          "to": [
+            73,
+            78
+          ],
+          "text": "高技能人才"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            76,
+            79
+          ],
+          "to": [
+            78,
+            82
+          ],
+          "text": "会计学类"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01550",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            4,
+            9
+          ],
+          "text": "互联网行业"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            18
+          ],
+          "to": [
+            9,
+            17
+          ],
+          "text": "Java开发经验"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            33,
+            39
+          ],
+          "to": [
+            34,
+            40
+          ],
+          "text": "JavaEE"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            40,
+            45
+          ],
+          "to": [
+            41,
+            46
+          ],
+          "text": "Redis"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            61,
+            67
+          ],
+          "to": [
+            59,
+            65
+          ],
+          "text": "Spring"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            68,
+            77
+          ],
+          "to": [
+            66,
+            75
+          ],
+          "text": "SpringMVC"
+        },
+        {
+          "i": 8,
+          "action": "snapped",
+          "from": [
+            78,
+            85
+          ],
+          "to": [
+            76,
+            83
+          ],
+          "text": "MyBatis"
+        },
+        {
+          "i": 9,
+          "action": "snapped",
+          "from": [
+            86,
+            91
+          ],
+          "to": [
+            84,
+            89
+          ],
+          "text": "Nginx"
+        },
+        {
+          "i": 10,
+          "action": "snapped",
+          "from": [
+            93,
+            96
+          ],
+          "to": [
+            91,
+            94
+          ],
+          "text": "RPC"
+        },
+        {
+          "i": 11,
+          "action": "snapped",
+          "from": [
+            97,
+            104
+          ],
+          "to": [
+            95,
+            102
+          ],
+          "text": "RESTful"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01541\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为笔试成绩查询及资格复审通知，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01542\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为既有人员待遇说明，不属于候选人招聘要求。\",\"issues\":[]},{\"id\":\"sp10k-01543\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"硬件的操作\",\"label\":\"S\"},{\"start\":9,\"end\":13,\"text\":\"ipmi\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"raid\",\"label\":\"S\"},{\"start\":19,\"end\":22,\"text\":\"lvm\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"硬件操作属于可执行职业活动，列举的硬件管理工具按岗位运用语境标为S。\",\"issues\":[]},{\"id\":\"sp10k-01544\",\"spans\":[{\"start\":0,\"end\":5,\"text\":\"工作有计划\",\"label\":\"T\"},{\"start\":6,\"end\":10,\"text\":\"条理清晰\",\"label\":\"T\"},{\"start\":12,\"end\":19,\"text\":\"良好的沟通能力\",\"label\":\"T\"},{\"start\":21,\"end\":25,\"text\":\"团队精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为跨行业通用能力或个人特质。\",\"issues\":[]},{\"id\":\"sp10k-01545\",\"spans\":[{\"start\":8,\"end\":21,\"text\":\"响应员工IT服务请求\",\"label\":\"S\"},{\"start\":29,\"end\":39,\"text\":\"一线技术解决方案\",\"label\":\"S\"},{\"start\":40,\"end\":59,\"text\":\"编写运维手册（SOP）及培训材料\",\"label\":\"S\"},{\"start\":60,\"end\":77,\"text\":\"提升用户自助解决问题的能力\",\"label\":\"S\"},{\"start\":78,\"end\":86,\"text\":\"记录高频故障案例\",\"label\":\"S\"},{\"start\":87,\"end\":93,\"text\":\"建立知识库\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"文本明确描述技术支持、文档编写、用户能力提升、故障记录及知识库建设等岗位活动。\",\"issues\":[]},{\"id\":\"sp10k-01546\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"容器管理能力\",\"label\":\"S\"},{\"start\":11,\"end\":14,\"text\":\"k8s\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"集群\",\"label\":\"K\"},{\"start\":20,\"end\":26,\"text\":\"docker容器\",\"label\":\"S\"},{\"start\":28,\"end\":30,\"text\":\"运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"容器管理和运维为可执行技术活动；k8s及docker在运用语境中标为S，集群为领域知识名。\",\"issues\":[]},{\"id\":\"sp10k-01547\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"排水系统规划设计\",\"label\":\"S\"},{\"start\":10,\"end\":16,\"text\":\"排水工程设计\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"均为明确的工程设计职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01548\",\"spans\":[{\"start\":64,\"end\":70,\"text\":\"博士或高级职称\",\"label\":\"K\"},{\"start\":70,\"end\":76,\"text\":\"高技能人才\",\"label\":\"K\"},{\"start\":76,\"end\":79,\"text\":\"会计学类\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历、非语言资格及专业领域要求；重复和联络信息不标。\",\"issues\":[]},{\"id\":\"sp10k-01549\",\"spans\":[{\"start\":0,\"end\":11,\"text\":\"计算机、网络等相关专业\",\"label\":\"K\"},{\"start\":11,\"end\":18,\"text\":\"大专或以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"分别为领域专业背景和完整学历资格名。\",\"issues\":[]},{\"id\":\"sp10k-01550\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"互联网行业\",\"label\":\"K\"},{\"start\":10,\"end\":18,\"text\":\"Java开发经验\",\"label\":\"S\"},{\"start\":23,\"end\":31,\"text\":\"java知识体系\",\"label\":\"K\"},{\"start\":33,\"end\":39,\"text\":\"JavaEE\",\"label\":\"S\"},{\"start\":40,\"end\":45,\"text\":\"Redis\",\"label\":\"S\"},{\"start\":47,\"end\":49,\"text\":\"MQ\",\"label\":\"S\"},{\"start\":61,\"end\":67,\"text\":\"Spring\",\"label\":\"S\"},{\"start\":68,\"end\":77,\"text\":\"SpringMVC\",\"label\":\"S\"},{\"start\":78,\"end\":85,\"text\":\"MyBatis\",\"label\":\"S\"},{\"start\":86,\"end\":91,\"text\":\"Nginx\",\"label\":\"S\"},{\"start\":93,\"end\":96,\"text\":\"RPC\",\"label\":\"S\"},{\"start\":97,\"end\":104,\"text\":\"RESTful\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"互联网为明确行业背景；Java开发经验为具体开发活动；java知识体系按知识语境标K，框架、数据库及协议等在运用岗位语境中标S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01541",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为笔试成绩查询及资格复审通知，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01542",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为既有人员待遇说明，不属于候选人招聘要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01543",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "硬件的操作",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "ipmi",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "raid",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 22,
+            "text": "lvm",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "硬件操作属于可执行职业活动，列举的硬件管理工具按岗位运用语境标为S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01544",
+        "spans": [
+          {
+            "start": 0,
+            "end": 5,
+            "text": "工作有计划",
+            "label": "T"
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "text": "条理清晰",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 20,
+            "text": "良好的沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "团队精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为跨行业通用能力或个人特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01545",
+        "spans": [
+          {
+            "start": 10,
+            "end": 20,
+            "text": "响应员工IT服务请求",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 45,
+            "text": "一线技术解决方案",
+            "label": "S"
+          },
+          {
+            "start": 46,
+            "end": 62,
+            "text": "编写运维手册（SOP）及培训材料",
+            "label": "S"
+          },
+          {
+            "start": 63,
+            "end": 76,
+            "text": "提升用户自助解决问题的能力",
+            "label": "S"
+          },
+          {
+            "start": 77,
+            "end": 85,
+            "text": "记录高频故障案例",
+            "label": "S"
+          },
+          {
+            "start": 86,
+            "end": 91,
+            "text": "建立知识库",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文本明确描述技术支持、文档编写、用户能力提升、故障记录及知识库建设等岗位活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01546",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "容器管理能力",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 15,
+            "text": "k8s",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "集群",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "text": "docker容器",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "text": "运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "容器管理和运维为可执行技术活动；k8s及docker在运用语境中标为S，集群为领域知识名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01547",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "排水系统规划设计",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "排水工程设计",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为明确的工程设计职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01548",
+        "spans": [
+          {
+            "start": 65,
+            "end": 72,
+            "text": "博士或高级职称",
+            "label": "K"
+          },
+          {
+            "start": 73,
+            "end": 78,
+            "text": "高技能人才",
+            "label": "K"
+          },
+          {
+            "start": 78,
+            "end": 82,
+            "text": "会计学类",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历、非语言资格及专业领域要求；重复和联络信息不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01549",
+        "spans": [
+          {
+            "start": 0,
+            "end": 11,
+            "text": "计算机、网络等相关专业",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "text": "大专或以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别为领域专业背景和完整学历资格名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01550",
+        "spans": [
+          {
+            "start": 4,
+            "end": 9,
+            "text": "互联网行业",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 17,
+            "text": "Java开发经验",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 31,
+            "text": "java知识体系",
+            "label": "K"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "text": "JavaEE",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 46,
+            "text": "Redis",
+            "label": "S"
+          },
+          {
+            "start": 47,
+            "end": 49,
+            "text": "MQ",
+            "label": "S"
+          },
+          {
+            "start": 59,
+            "end": 65,
+            "text": "Spring",
+            "label": "S"
+          },
+          {
+            "start": 66,
+            "end": 75,
+            "text": "SpringMVC",
+            "label": "S"
+          },
+          {
+            "start": 76,
+            "end": 83,
+            "text": "MyBatis",
+            "label": "S"
+          },
+          {
+            "start": 84,
+            "end": 89,
+            "text": "Nginx",
+            "label": "S"
+          },
+          {
+            "start": 91,
+            "end": 94,
+            "text": "RPC",
+            "label": "S"
+          },
+          {
+            "start": 95,
+            "end": 102,
+            "text": "RESTful",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "互联网为明确行业背景；Java开发经验为具体开发活动；java知识体系按知识语境标K，框架、数据库及协议等在运用岗位语境中标S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 155,
+  "ids": [
+    "sp10k-01541",
+    "sp10k-01542",
+    "sp10k-01543",
+    "sp10k-01544",
+    "sp10k-01545",
+    "sp10k-01546",
+    "sp10k-01547",
+    "sp10k-01548",
+    "sp10k-01549",
+    "sp10k-01550"
+  ],
+  "at": "2026-09-13T16:14:18.007737+00:00"
+}

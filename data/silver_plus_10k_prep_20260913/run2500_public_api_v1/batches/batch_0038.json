@@ -1,0 +1,405 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 50.04,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5117,
+    "completion_tokens": 1815,
+    "total_tokens": 6932,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1034
+    },
+    "input_tokens": 5117,
+    "output_tokens": 1815,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00372",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            21,
+            31
+          ],
+          "to": [
+            23,
+            32
+          ],
+          "text": "供应商开发实施工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00374",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            13,
+            17
+          ],
+          "text": "排除故障"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00376",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "网络设备调试及安装"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "网络管理"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            24
+          ],
+          "to": [
+            17,
+            25
+          ],
+          "text": "信息服务平台搭建"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00377",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            10
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "沟通能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            18
+          ],
+          "to": [
+            10,
+            17
+          ],
+          "text": "严谨的逻辑思维"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            19,
+            25
+          ],
+          "to": [
+            18,
+            24
+          ],
+          "text": "工作认真负责"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00379",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            7,
+            15
+          ],
+          "to": [
+            7,
+            13
+          ],
+          "text": "售后业务管理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            48,
+            54
+          ],
+          "to": [
+            23,
+            30
+          ],
+          "text": "第三方检测行业"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            65,
+            77
+          ],
+          "to": [
+            39,
+            52
+          ],
+          "text": "全国性营销管理体系工作经历"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00371\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅表示不符合遴选要求，不含候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00372\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"对业务需求深入理解\",\"label\":\"S\"},{\"start\":12,\"end\":20,\"text\":\"制定解决系统方案\",\"label\":\"S\"},{\"start\":21,\"end\":31,\"text\":\"供应商开发实施工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确要求执行的需求理解、系统方案制定及供应商开发实施活动。\",\"issues\":[]},{\"id\":\"sp10k-00373\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为岗位招聘宣传信息，不含具体能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00374\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"机电设备工作原理\",\"label\":\"K\"},{\"start\":11,\"end\":15,\"text\":\"排除故障\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"设备工作原理属于领域知识，排除故障属于可执行职业动作。\",\"issues\":[]},{\"id\":\"sp10k-00375\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"自有车辆及驾驶熟练属于非司机岗位通常不标的车辆、驾驶要求。\",\"issues\":[]},{\"id\":\"sp10k-00376\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"网络设备调试及安装\",\"label\":\"S\"},{\"start\":11,\"end\":15,\"text\":\"网络管理\",\"label\":\"S\"},{\"start\":16,\"end\":24,\"text\":\"信息服务平台搭建\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"均为明确的网络设备、网络管理及平台建设职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00377\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":11,\"end\":18,\"text\":\"严谨的逻辑思维\",\"label\":\"T\"},{\"start\":19,\"end\":25,\"text\":\"工作认真负责\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取沟通、逻辑思维及认真负责等通用能力和特质。\",\"issues\":[]},{\"id\":\"sp10k-00378\",\"spans\":[{\"start\":19,\"end\":23,\"text\":\"需求对接\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"需求对接属于跨部门或人员间的沟通协调活动。\",\"issues\":[]},{\"id\":\"sp10k-00379\",\"spans\":[{\"start\":1,\"end\":3,\"text\":\"市场\",\"label\":\"K\"},{\"start\":4,\"end\":6,\"text\":\"销售\",\"label\":\"K\"},{\"start\":7,\"end\":15,\"text\":\"售后业务管理\",\"label\":\"K\"},{\"start\":48,\"end\":54,\"text\":\"第三方检测行业\",\"label\":\"K\"},{\"start\":65,\"end\":77,\"text\":\"全国性营销管理体系工作经历\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"市场、销售、售后业务管理及第三方检测行业属于领域知识；全国性营销管理体系工作经历体现特定实践经历。\",\"issues\":[]},{\"id\":\"sp10k-00380\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"为招聘公告背景、政策依据及报考说明，未给出具体候选人能力、知识或资格要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00371",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅表示不符合遴选要求，不含候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00372",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "对业务需求深入理解",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "text": "制定解决系统方案",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 32,
+            "text": "供应商开发实施工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确要求执行的需求理解、系统方案制定及供应商开发实施活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00373",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为岗位招聘宣传信息，不含具体能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00374",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "机电设备工作原理",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "排除故障",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设备工作原理属于领域知识，排除故障属于可执行职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00375",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "自有车辆及驾驶熟练属于非司机岗位通常不标的车辆、驾驶要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00376",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "网络设备调试及安装",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "网络管理",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 25,
+            "text": "信息服务平台搭建",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为明确的网络设备、网络管理及平台建设职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00377",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "text": "严谨的逻辑思维",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "text": "工作认真负责",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取沟通、逻辑思维及认真负责等通用能力和特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00378",
+        "spans": [
+          {
+            "start": 19,
+            "end": 23,
+            "text": "需求对接",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "需求对接属于跨部门或人员间的沟通协调活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00379",
+        "spans": [
+          {
+            "start": 1,
+            "end": 3,
+            "text": "市场",
+            "label": "K"
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "text": "销售",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "text": "售后业务管理",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 30,
+            "text": "第三方检测行业",
+            "label": "K"
+          },
+          {
+            "start": 39,
+            "end": 52,
+            "text": "全国性营销管理体系工作经历",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "市场、销售、售后业务管理及第三方检测行业属于领域知识；全国性营销管理体系工作经历体现特定实践经历。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00380",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "为招聘公告背景、政策依据及报考说明，未给出具体候选人能力、知识或资格要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 38,
+  "ids": [
+    "sp10k-00371",
+    "sp10k-00372",
+    "sp10k-00373",
+    "sp10k-00374",
+    "sp10k-00375",
+    "sp10k-00376",
+    "sp10k-00377",
+    "sp10k-00378",
+    "sp10k-00379",
+    "sp10k-00380"
+  ],
+  "at": "2026-09-13T14:22:09.473554+00:00"
+}

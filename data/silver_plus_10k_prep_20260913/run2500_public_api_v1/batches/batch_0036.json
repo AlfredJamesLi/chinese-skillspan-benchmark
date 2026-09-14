@@ -1,0 +1,569 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 25.764,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5034,
+    "completion_tokens": 1168,
+    "total_tokens": 6202,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 327
+    },
+    "input_tokens": 5034,
+    "output_tokens": 1168,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00351",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            20
+          ],
+          "to": [
+            5,
+            12
+          ],
+          "text": "服务器操作系统"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            22,
+            34
+          ],
+          "to": [
+            13,
+            27
+          ],
+          "text": "Windowsserver等"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            37,
+            39
+          ],
+          "to": [
+            29,
+            31
+          ],
+          "text": "安装"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            40,
+            42
+          ],
+          "to": [
+            32,
+            34
+          ],
+          "text": "操作"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            43,
+            45
+          ],
+          "to": [
+            35,
+            37
+          ],
+          "text": "配置"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            46,
+            50
+          ],
+          "to": [
+            38,
+            42
+          ],
+          "text": "故障处理"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            55,
+            57
+          ],
+          "to": [
+            43,
+            47
+          ],
+          "text": "相关知识"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            58,
+            62
+          ],
+          "to": [
+            48,
+            52
+          ],
+          "text": "操作能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00352",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            31
+          ],
+          "to": [
+            2,
+            45
+          ],
+          "text": "WebSphere/WebLogic/JBoss/Tomcat等主流J2EE应用服务器"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            31,
+            33
+          ],
+          "to": [
+            45,
+            47
+          ],
+          "text": "特性"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            34,
+            36
+          ],
+          "to": [
+            48,
+            50
+          ],
+          "text": "管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00353",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            15
+          ],
+          "to": [
+            0,
+            8
+          ],
+          "text": "计算机等硬件设备"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            16,
+            18
+          ],
+          "to": [
+            9,
+            11
+          ],
+          "text": "维护"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00356",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            18,
+            31
+          ],
+          "to": [
+            16,
+            29
+          ],
+          "text": "全日制师范类本科及以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00357",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            21,
+            27
+          ],
+          "to": [
+            21,
+            25
+          ],
+          "text": "部署安装"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            34,
+            38
+          ],
+          "to": [
+            30,
+            34
+          ],
+          "text": "网络知识"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            39,
+            45
+          ],
+          "to": [
+            35,
+            41
+          ],
+          "text": "相关操作系统"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00358",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            16
+          ],
+          "to": [
+            2,
+            14
+          ],
+          "text": "信息安全保障人员认证证书"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00359",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            7
+          ],
+          "to": [
+            0,
+            6
+          ],
+          "text": "中专以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00360",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            11,
+            15
+          ],
+          "to": [
+            8,
+            12
+          ],
+          "text": "响应处理"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00351\",\"spans\":[{\"start\":8,\"end\":20,\"text\":\"服务器操作系统\",\"label\":\"S\"},{\"start\":22,\"end\":34,\"text\":\"Windowsserver等\",\"label\":\"S\"},{\"start\":37,\"end\":39,\"text\":\"安装\",\"label\":\"S\"},{\"start\":40,\"end\":42,\"text\":\"操作\",\"label\":\"S\"},{\"start\":43,\"end\":45,\"text\":\"配置\",\"label\":\"S\"},{\"start\":46,\"end\":50,\"text\":\"故障处理\",\"label\":\"S\"},{\"start\":55,\"end\":57,\"text\":\"相关知识\",\"label\":\"K\"},{\"start\":58,\"end\":62,\"text\":\"操作能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注服务器操作系统及其安装、操作、配置、故障处理等职业操作；分别标注知识和操作能力。\",\"issues\":[]},{\"id\":\"sp10k-00352\",\"spans\":[{\"start\":2,\"end\":31,\"text\":\"WebSphere/WebLogic/JBoss/Tomcat等主流J2EE应用服务器\",\"label\":\"S\"},{\"start\":31,\"end\":33,\"text\":\"特性\",\"label\":\"K\"},{\"start\":34,\"end\":36,\"text\":\"管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"应用服务器属于岗位使用工具，特性为领域知识，管理为可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00353\",\"spans\":[{\"start\":0,\"end\":15,\"text\":\"计算机等硬件设备\",\"label\":\"K\"},{\"start\":16,\"end\":18,\"text\":\"维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"硬件设备为领域对象，维护为职业动作。\",\"issues\":[]},{\"id\":\"sp10k-00354\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"标题及招聘公告信息，不构成候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00355\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"年龄条件不属于本项目规定的能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00356\",\"spans\":[{\"start\":18,\"end\":31,\"text\":\"全日制师范类本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注完整学历资格名；年龄及专业一致性要求不另标。\",\"issues\":[]},{\"id\":\"sp10k-00357\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"windows\",\"label\":\"S\"},{\"start\":12,\"end\":17,\"text\":\"linux\",\"label\":\"S\"},{\"start\":21,\"end\":27,\"text\":\"部署安装\",\"label\":\"S\"},{\"start\":34,\"end\":38,\"text\":\"网络知识\",\"label\":\"K\"},{\"start\":39,\"end\":45,\"text\":\"相关操作系统\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"操作系统及部署安装属于工具运用，网络知识属于领域知识。\",\"issues\":[]},{\"id\":\"sp10k-00358\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"信息安全保障人员认证证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"认证证书属于非语言资格名。\",\"issues\":[]},{\"id\":\"sp10k-00359\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"中专以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注学历资格名；相关专业类别不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00360\",\"spans\":[{\"start\":11,\"end\":15,\"text\":\"响应处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"响应处理各类主机和系统问题是明确的职业活动；时间要求及问题对象不单独标注。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00351",
+        "spans": [
+          {
+            "start": 5,
+            "end": 12,
+            "text": "服务器操作系统",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 27,
+            "text": "Windowsserver等",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 31,
+            "text": "安装",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 34,
+            "text": "操作",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 37,
+            "text": "配置",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "text": "故障处理",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 47,
+            "text": "相关知识",
+            "label": "K"
+          },
+          {
+            "start": 48,
+            "end": 52,
+            "text": "操作能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注服务器操作系统及其安装、操作、配置、故障处理等职业操作；分别标注知识和操作能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00352",
+        "spans": [
+          {
+            "start": 2,
+            "end": 45,
+            "text": "WebSphere/WebLogic/JBoss/Tomcat等主流J2EE应用服务器",
+            "label": "S"
+          },
+          {
+            "start": 45,
+            "end": 47,
+            "text": "特性",
+            "label": "K"
+          },
+          {
+            "start": 48,
+            "end": 50,
+            "text": "管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "应用服务器属于岗位使用工具，特性为领域知识，管理为可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00353",
+        "spans": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "计算机等硬件设备",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "硬件设备为领域对象，维护为职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00354",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "标题及招聘公告信息，不构成候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00355",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "年龄条件不属于本项目规定的能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00356",
+        "spans": [
+          {
+            "start": 16,
+            "end": 29,
+            "text": "全日制师范类本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注完整学历资格名；年龄及专业一致性要求不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00357",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "windows",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "text": "linux",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "部署安装",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "网络知识",
+            "label": "K"
+          },
+          {
+            "start": 35,
+            "end": 41,
+            "text": "相关操作系统",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "操作系统及部署安装属于工具运用，网络知识属于领域知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00358",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "信息安全保障人员认证证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "认证证书属于非语言资格名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00359",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "中专以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注学历资格名；相关专业类别不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00360",
+        "spans": [
+          {
+            "start": 8,
+            "end": 12,
+            "text": "响应处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "响应处理各类主机和系统问题是明确的职业活动；时间要求及问题对象不单独标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 36,
+  "ids": [
+    "sp10k-00351",
+    "sp10k-00352",
+    "sp10k-00353",
+    "sp10k-00354",
+    "sp10k-00355",
+    "sp10k-00356",
+    "sp10k-00357",
+    "sp10k-00358",
+    "sp10k-00359",
+    "sp10k-00360"
+  ],
+  "at": "2026-09-13T14:20:35.848539+00:00"
+}

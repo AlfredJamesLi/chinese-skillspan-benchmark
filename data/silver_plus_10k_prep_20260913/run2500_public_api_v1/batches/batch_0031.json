@@ -1,0 +1,252 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 71.871,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5169,
+    "completion_tokens": 1528,
+    "total_tokens": 6697,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 615
+    },
+    "input_tokens": 5169,
+    "output_tokens": 1528,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00301\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"事业单位公开招聘公告背景及泛化招聘原则，不含具体候选人能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00302\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"检查服务器系统日志\",\"label\":\"S\"},{\"start\":12,\"end\":18,\"text\":\"性能故障处理\",\"label\":\"S\"},{\"start\":19,\"end\":27,\"text\":\"排查应用系统故障\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取具体运维动作；提升系统服务质量为结果目标，不标。\",\"issues\":[]},{\"id\":\"sp10k-00303\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"描述本次招聘的报名受理和资格初审流程，并非招聘岗位对候选人的职业职责要求。\",\"issues\":[]},{\"id\":\"sp10k-00304\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"环保检测\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确专业领域，排除泛化的相关专业及优先修饰。\",\"issues\":[]},{\"id\":\"sp10k-00305\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"应聘申请时间、照片上传及审核要求属于报名行政流程。\",\"issues\":[]},{\"id\":\"sp10k-00306\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"说明资格复审后确认招聘人数和岗位的行政安排。\",\"issues\":[]},{\"id\":\"sp10k-00307\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"TeraData数据仓库技术\",\"label\":\"S\"},{\"start\":19,\"end\":25,\"text\":\"Hadoop\",\"label\":\"S\"},{\"start\":26,\"end\":31,\"text\":\"spark\",\"label\":\"S\"},{\"start\":32,\"end\":36,\"text\":\"Hive\",\"label\":\"S\"},{\"start\":37,\"end\":42,\"text\":\"大数据架构\",\"label\":\"K\"},{\"start\":43,\"end\":49,\"text\":\"开发运维技术\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"后半句开发运维语境中的工具及可执行技术标S，架构标K；前半句技术提及的知识与实践含义待决。\",\"issues\":[{\"kind\":\"type\",\"text\":\"TeraData数据仓库技术\",\"alternatives\":[\"K\",\"S\"],\"reason\":\"可能指数据仓库技术知识，也可能指产品应用技能；精通不能单独确定类型，局部未明确原理或实际操作，暂标S。\"}]},{\"id\":\"sp10k-00308\",\"spans\":[{\"start\":2,\"end\":27,\"text\":\"Openstack、VSAN等主流超融合产品的架构\",\"label\":\"K\"},{\"start\":28,\"end\":32,\"text\":\"工作原理\",\"label\":\"K\"},{\"start\":35,\"end\":37,\"text\":\"部署\",\"label\":\"S\"},{\"start\":38,\"end\":40,\"text\":\"维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"产品名称处于明确架构知识语境，保留共享中心的完整知识短语；部署和维护为独立职业动作。\",\"issues\":[]},{\"id\":\"sp10k-00309\",\"spans\":[{\"start\":5,\"end\":15,\"text\":\"硕士研究生学历及以上\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留完整学历层级要求；相应学位未提供独立具体资格名。\",\"issues\":[]},{\"id\":\"sp10k-00310\",\"spans\":[{\"start\":2,\"end\":23,\"text\":\"监控店铺的uv、pv、销量、跳失率、转化率\",\"label\":\"S\"},{\"start\":30,\"end\":34,\"text\":\"数据分析\",\"label\":\"S\"},{\"start\":37,\"end\":50,\"text\":\"调整店铺相关内容和运维决策\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"监控指标、数据分析和调整店铺运营事项为职业动作；并列对象保留共享动作，目标销售额属于结果要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00301",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "事业单位公开招聘公告背景及泛化招聘原则，不含具体候选人能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00302",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "检查服务器系统日志",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 18,
+            "text": "性能故障处理",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 27,
+            "text": "排查应用系统故障",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取具体运维动作；提升系统服务质量为结果目标，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00303",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "描述本次招聘的报名受理和资格初审流程，并非招聘岗位对候选人的职业职责要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00304",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "环保检测",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确专业领域，排除泛化的相关专业及优先修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00305",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "应聘申请时间、照片上传及审核要求属于报名行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00306",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "说明资格复审后确认招聘人数和岗位的行政安排。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00307",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "TeraData数据仓库技术",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "Hadoop",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 31,
+            "text": "spark",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "text": "Hive",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 42,
+            "text": "大数据架构",
+            "label": "K"
+          },
+          {
+            "start": 43,
+            "end": 49,
+            "text": "开发运维技术",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "后半句开发运维语境中的工具及可执行技术标S，架构标K；前半句技术提及的知识与实践含义待决。",
+        "issues": [
+          {
+            "kind": "type",
+            "text": "TeraData数据仓库技术",
+            "alternatives": [
+              "K",
+              "S"
+            ],
+            "reason": "可能指数据仓库技术知识，也可能指产品应用技能；精通不能单独确定类型，局部未明确原理或实际操作，暂标S。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00308",
+        "spans": [
+          {
+            "start": 2,
+            "end": 27,
+            "text": "Openstack、VSAN等主流超融合产品的架构",
+            "label": "K"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "工作原理",
+            "label": "K"
+          },
+          {
+            "start": 35,
+            "end": 37,
+            "text": "部署",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 40,
+            "text": "维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "产品名称处于明确架构知识语境，保留共享中心的完整知识短语；部署和维护为独立职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00309",
+        "spans": [
+          {
+            "start": 5,
+            "end": 15,
+            "text": "硕士研究生学历及以上",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留完整学历层级要求；相应学位未提供独立具体资格名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00310",
+        "spans": [
+          {
+            "start": 2,
+            "end": 23,
+            "text": "监控店铺的uv、pv、销量、跳失率、转化率",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "数据分析",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 50,
+            "text": "调整店铺相关内容和运维决策",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "监控指标、数据分析和调整店铺运营事项为职业动作；并列对象保留共享动作，目标销售额属于结果要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 31,
+  "ids": [
+    "sp10k-00301",
+    "sp10k-00302",
+    "sp10k-00303",
+    "sp10k-00304",
+    "sp10k-00305",
+    "sp10k-00306",
+    "sp10k-00307",
+    "sp10k-00308",
+    "sp10k-00309",
+    "sp10k-00310"
+  ],
+  "at": "2026-09-13T14:17:21.419475+00:00"
+}

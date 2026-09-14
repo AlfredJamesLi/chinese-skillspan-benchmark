@@ -1,0 +1,279 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 53.342,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5140,
+    "completion_tokens": 1663,
+    "total_tokens": 6803,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 683
+    },
+    "input_tokens": 5140,
+    "output_tokens": 1663,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00631\",\"spans\":[{\"start\":2,\"end\":19,\"text\":\"解决用户提出有关软件使用的疑难问题\",\"label\":\"S\"},{\"start\":23,\"end\":32,\"text\":\"软件的日常技术维护\",\"label\":\"S\"},{\"start\":34,\"end\":60,\"text\":\"对软件产品BUG问题、版本升级、改进等提出合理化建议\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取技术问题解决、软件维护和产品改进建议等职业活动；保留动作所需对象。\",\"issues\":[]},{\"id\":\"sp10k-00632\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"Linux\",\"label\":\"S\"},{\"start\":8,\"end\":11,\"text\":\"SQL\",\"label\":\"S\"},{\"start\":14,\"end\":30,\"text\":\"常用桌面应用软件的安装及日常维护\",\"label\":\"S\"},{\"start\":33,\"end\":37,\"text\":\"操作系统\",\"label\":\"S\"},{\"start\":38,\"end\":42,\"text\":\"办公软件\",\"label\":\"S\"},{\"start\":43,\"end\":47,\"text\":\"病毒处理\",\"label\":\"S\"},{\"start\":51,\"end\":67,\"text\":\"微软平台相关的应用和服务配置管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"依据安装、维护和配置管理语境，将工具及操作活动标S；共享职业对象的动作保留完整短语。\",\"issues\":[]},{\"id\":\"sp10k-00633\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"ansible\",\"label\":\"S\"},{\"start\":12,\"end\":19,\"text\":\"自动化运维工具\",\"label\":\"S\"},{\"start\":22,\"end\":32,\"text\":\"ceph配置部署运维\",\"label\":\"S\"},{\"start\":33,\"end\":38,\"text\":\"维护云平台\",\"label\":\"S\"},{\"start\":39,\"end\":52,\"text\":\"监控主机和云主机的运行状态\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取岗位工具、部署运维、平台维护及运行监控；ceph为多个操作的共享对象。\",\"issues\":[]},{\"id\":\"sp10k-00634\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"模拟撮合服务的设计和开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"设计和开发共享模拟撮合服务对象，保留完整职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00635\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于人才引进的一般资格与身心履职条件，未给出具体资格名或独立职业能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00636\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于招聘公告的政策依据与招聘人数介绍，不是候选人知识或技能要求。\",\"issues\":[]},{\"id\":\"sp10k-00637\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"热爱学习新的技术\",\"label\":\"T\"},{\"start\":10,\"end\":19,\"text\":\"独立解决问题的能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"技术学习意愿与无具体业务对象的问题解决能力均为通用素质。\",\"issues\":[]},{\"id\":\"sp10k-00638\",\"spans\":[{\"start\":4,\"end\":13,\"text\":\"MES/ERP系统\",\"label\":\"S\"},{\"start\":19,\"end\":36,\"text\":\"企业MES/ERP系统的实施或运维\",\"label\":\"S\"},{\"start\":40,\"end\":42,\"text\":\"实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"同一局部语境明确系统实施运维实践，系统工具及活动标S；末尾实施承接前述系统对象，去除经验仍完整。\",\"issues\":[]},{\"id\":\"sp10k-00639\",\"spans\":[{\"start\":0,\"end\":5,\"text\":\"农业微生物\",\"label\":\"K\"},{\"start\":6,\"end\":8,\"text\":\"土壤\",\"label\":\"K\"},{\"start\":9,\"end\":11,\"text\":\"肥料\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取并列专业领域名，不标泛化的相关专业修饰。\",\"issues\":[]},{\"id\":\"sp10k-00640\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于报考资格初审异议处理流程，不是候选人的职业能力要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00631",
+        "spans": [
+          {
+            "start": 2,
+            "end": 19,
+            "text": "解决用户提出有关软件使用的疑难问题",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 32,
+            "text": "软件的日常技术维护",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 60,
+            "text": "对软件产品BUG问题、版本升级、改进等提出合理化建议",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取技术问题解决、软件维护和产品改进建议等职业活动；保留动作所需对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00632",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "Linux",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "text": "SQL",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 30,
+            "text": "常用桌面应用软件的安装及日常维护",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "text": "操作系统",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "text": "办公软件",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 47,
+            "text": "病毒处理",
+            "label": "S"
+          },
+          {
+            "start": 51,
+            "end": 67,
+            "text": "微软平台相关的应用和服务配置管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "依据安装、维护和配置管理语境，将工具及操作活动标S；共享职业对象的动作保留完整短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00633",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "ansible",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 19,
+            "text": "自动化运维工具",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 32,
+            "text": "ceph配置部署运维",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "text": "维护云平台",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 52,
+            "text": "监控主机和云主机的运行状态",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取岗位工具、部署运维、平台维护及运行监控；ceph为多个操作的共享对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00634",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "模拟撮合服务的设计和开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设计和开发共享模拟撮合服务对象，保留完整职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00635",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于人才引进的一般资格与身心履职条件，未给出具体资格名或独立职业能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00636",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于招聘公告的政策依据与招聘人数介绍，不是候选人知识或技能要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00637",
+        "spans": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "热爱学习新的技术",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 19,
+            "text": "独立解决问题的能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "技术学习意愿与无具体业务对象的问题解决能力均为通用素质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00638",
+        "spans": [
+          {
+            "start": 4,
+            "end": 13,
+            "text": "MES/ERP系统",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 36,
+            "text": "企业MES/ERP系统的实施或运维",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 42,
+            "text": "实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "同一局部语境明确系统实施运维实践，系统工具及活动标S；末尾实施承接前述系统对象，去除经验仍完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00639",
+        "spans": [
+          {
+            "start": 0,
+            "end": 5,
+            "text": "农业微生物",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "text": "土壤",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "肥料",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取并列专业领域名，不标泛化的相关专业修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00640",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于报考资格初审异议处理流程，不是候选人的职业能力要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 64,
+  "ids": [
+    "sp10k-00631",
+    "sp10k-00632",
+    "sp10k-00633",
+    "sp10k-00634",
+    "sp10k-00635",
+    "sp10k-00636",
+    "sp10k-00637",
+    "sp10k-00638",
+    "sp10k-00639",
+    "sp10k-00640"
+  ],
+  "at": "2026-09-13T14:43:20.535380+00:00"
+}

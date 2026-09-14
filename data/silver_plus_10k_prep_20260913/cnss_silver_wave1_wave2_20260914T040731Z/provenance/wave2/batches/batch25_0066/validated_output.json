@@ -1,0 +1,671 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05396",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "城乡规划",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 17,
+          "text": "大学本科学历或学位",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 34,
+          "text": "建筑学学士学位（专业学位）",
+          "label": "K"
+        },
+        {
+          "start": 37,
+          "end": 45,
+          "text": "城乡规划业务工作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业及完整学位资格标K；城乡规划职业活动标S，排除年限。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05397",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 14,
+          "text": "制冷及低温工程",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "热能工程",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "动力工程",
+          "label": "K"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "暖通空调",
+          "label": "K"
+        },
+        {
+          "start": 39,
+          "end": 54,
+          "text": "暖通空调系统设计或工程相关经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历和专业标K；实践要求保留共享领域及经验成分，避免拆分后丢失工程经历含义。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05398",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "CCNA以上",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "CISP",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 19,
+          "text": "CISSP认证",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 31,
+          "text": "Project",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 37,
+          "text": "VISIO",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 41,
+          "text": "PPT",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "非语言认证标K；明确使用的工具分别标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05399",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "指导风机项目现场的检修维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留指导动作及其必要职业对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05400",
+      "spans": [
+        {
+          "start": 3,
+          "end": 8,
+          "text": "教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "教师资格证书",
+          "label": "K"
+        },
+        {
+          "start": 41,
+          "end": 54,
+          "text": "中小学教师资格考试合格证明",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确教师资格及替代考试证明属于非语言资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05401",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列材料原件、学历验证备案及打印流程，未给出具体学历层次或专业资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05402",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "应用系统维护流程",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 23,
+          "text": "应用系统维护技术",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 26,
+          "text": "方法",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "text": "工具",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 39,
+          "text": "解决复杂的疑难故障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "维护流程标K；技术、方法及工具承接系统维护和故障解决的执行语境，分别标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05403",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "设计模式",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 18,
+          "text": "面向对象编程思想",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "局部语境要求设计及编程概念知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05404",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "门店网络信息安全的管理",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "行为管理",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "网络访问管理",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 37,
+          "text": "违规行为的审计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络安全语境下的管理和审计为可独立执行的职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05405",
+      "spans": [
+        {
+          "start": 4,
+          "end": 36,
+          "text": "计算机、笔记本、打印机等设备以及网络系统和电话系统的日常运维管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "多个对象共享日常运维管理动作，保留完整连续跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05406",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "软想",
+          "label": "S"
+        },
+        {
+          "start": 5,
+          "end": 11,
+          "text": "架构设计理念",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "做事踏实",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 37,
+          "end": 43,
+          "text": "团队协作意识",
+          "label": "T"
+        },
+        {
+          "start": 44,
+          "end": 48,
+          "text": "敬业精神",
+          "label": "T"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "设计理念标K，通用能力和特质标T；“软想”的S仅为类型待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "软想",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "该词明确处于掌握要求中，但原文含义不明，无法确定是知识概念还是工具或技术能力，需澄清词义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05407",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "全文介绍招聘单位及其机构职责，未明确要求候选人执行这些活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05408",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "问题解决能力",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "text": "工作主动性",
+          "label": "T"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "耐心细致",
+          "label": "T"
+        },
+        {
+          "start": 40,
+          "end": 43,
+          "text": "责任心",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用能力与工作特质分别标T，排除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05409",
+      "spans": [
+        {
+          "start": 190,
+          "end": 198,
+          "text": "计算机科学与技术",
+          "label": "K"
+        },
+        {
+          "start": 198,
+          "end": 203,
+          "text": "本科及以上",
+          "label": "K"
+        },
+        {
+          "start": 203,
+          "end": 208,
+          "text": "学士及以上",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "依据本条表头和数据抽取专业、学历及学位条件；公告背景和年龄不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05410",
+      "spans": [
+        {
+          "start": 8,
+          "end": 20,
+          "text": "数据库、中间件的使用维护",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 28,
+          "text": "Mysql",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 37,
+          "text": "Influxdb",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 43,
+          "text": "Redis",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 52,
+          "text": "rabbitMQ",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留共享使用维护动作；具体工具分别标S并保留原文拼写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05411",
+      "spans": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "副高级以上职称",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整非语言职称资格标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05412",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "统招本科",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "应用运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "统招学历标K；运维活动去除工作经验及年限后仍完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05413",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Linux系统管理",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "基本配置",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 27,
+          "text": "编写自动化运维脚本",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统管理、配置和脚本编写分别为职业动作；配置对象由局部语境共享。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05414",
+      "spans": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "自动化运维工具",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 22,
+          "text": "ansible",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 32,
+          "text": "saltstack",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "puppet",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位运维工具类别及具体工具分别标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05415",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为公司成立信息及业务技术介绍，无候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05416",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "text": "脚本语言",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 16,
+          "text": "Shell",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "Perl",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "Python",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "puppet",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 47,
+          "text": "ansible",
+          "label": "S"
+        },
+        {
+          "start": 48,
+          "end": 57,
+          "text": "saltstack",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "脚本语言与自动化工具属于岗位工具栈，未出现原理或语法知识限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05417",
+      "spans": [
+        {
+          "start": 1,
+          "end": 7,
+          "text": "思想政治素质",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "道德品质",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求候选人具备的素质和品德标T；考察认定程序不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05418",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "客服系统",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "text": "POS系统",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "小程序",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 30,
+          "text": "提供经营数据分析报告",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "职责中的现用系统与工具标S；提供分析报告作为独立职业活动标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05419",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名材料提交、表格填写和照片要求，未明确具体能力或资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05420",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅有统计残片及报考条件标题，未列出实际要求。",
+      "issues": []
+    }
+  ]
+}

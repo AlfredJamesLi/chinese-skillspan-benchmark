@@ -1,0 +1,508 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05502",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "云平台工作表述缺少明确活动，暂不推补运维职责。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "配合云运维工程师公有和私有云平台工作",
+          "alternatives": [
+            "属于云平台运维协助职责，纳入标注",
+            "仅为泛化配合工作，不构成明确能力提及"
+          ],
+          "reason": "原句未说明候选人具体执行的云平台活动，无法确认是否可按运维职责抽取。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05503",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "文档编写能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "文档编写为明确职业能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05504",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "博士研究生学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留年龄放宽条件中的完整学历资格；年龄和日期不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05505",
+      "spans": [
+        {
+          "start": 9,
+          "end": 19,
+          "text": "中级专业技术职称资格",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整非语言职称资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05506",
+      "spans": [
+        {
+          "start": 20,
+          "end": 24,
+          "text": "临床医学",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "本科学历",
+          "label": "K"
+        },
+        {
+          "start": 48,
+          "end": 55,
+          "text": "执业医师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业、学历和执业资格；岗位名称、人数和年龄不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05507",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "编写产品操作手册或用户说明书",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 30,
+          "text": "组织平台相关的应用操作培训",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 44,
+          "text": "产品市场推广方案的制定",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "三项职业活动分别抽取；文档并列对象保留共享编写动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05508",
+      "spans": [
+        {
+          "start": 8,
+          "end": 21,
+          "text": "华为，华三，锐捷等产品特点",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "要求了解厂商产品特点，按知识标注；保留共享中心语，括号内为产品类别说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05509",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "局域网的维护",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "网络安全知识",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "局域网的搭建",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 42,
+          "text": "网络设备的基本维护和故障处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "区分维护搭建活动与安全知识；网络设备维护和故障处理保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05510",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘笔试政策性加分及身份认定条件，不是岗位能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05511",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格复审时间标题，不含具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05512",
+      "spans": [
+        {
+          "start": 41,
+          "end": 50,
+          "text": "大学专科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历要求；招录身份、备案及户籍条件不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05513",
+      "spans": [
+        {
+          "start": 48,
+          "end": 52,
+          "text": "经济学类",
+          "label": "K"
+        },
+        {
+          "start": 56,
+          "end": 63,
+          "text": "本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业类别和学历；非司机岗驾照、泛化工作经历及人口条件不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05514",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "常用脚本语言",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 23,
+          "text": "BashShell",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "Python",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 40,
+          "text": "自动化开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "局部明确使用脚本语言开发，语言类别及具体工具按职业运用标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05515",
+      "spans": [
+        {
+          "start": 16,
+          "end": 20,
+          "text": "系统对接",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "沟通",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统间技术对接与人际沟通分别标注；系统名称为活动对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05516",
+      "spans": [
+        {
+          "start": 0,
+          "end": 10,
+          "text": "处理各种日常电脑问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "问题处理有明确电脑技术对象；后续列表说明问题范围。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05517",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "学历学位条件标题，未给出具体资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05518",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "能源站电气设备的安全运行",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "技术管理",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "检修",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 29,
+          "text": "日常维护管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备运行、技术管理、检修及维护管理分别为职业职能，共享电气设备语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05519",
+      "spans": [
+        {
+          "start": 5,
+          "end": 14,
+          "text": "分析及决定问题能力",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "工作细致",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "耐心",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 28,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "目标感强",
+          "label": "T"
+        },
+        {
+          "start": 35,
+          "end": 41,
+          "text": "承受工作压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用能力或特质；首项保留共享问题能力及原文措辞。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05520",
+      "spans": [
+        {
+          "start": 0,
+          "end": 11,
+          "text": "全日制统招本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "沟通表达",
+          "label": "T"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "服务意识",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "协作精神",
+          "label": "T"
+        },
+        {
+          "start": 38,
+          "end": 40,
+          "text": "耐心",
+          "label": "T"
+        },
+        {
+          "start": 41,
+          "end": 44,
+          "text": "责任心",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历保留完整限定，专业提取核心名；软技能去除要求和程度词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05521",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "专业基础",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业及回指该专业的基础知识；在校身份和届别不作学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05522",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "数字信息收集管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "信息收集管理为职业活动，保留共享对象；后段为服务效果。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05523",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅有年龄条件。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05524",
+      "spans": [
+        {
+          "start": 1,
+          "end": 4,
+          "text": "互联网",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "软件",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "IT运维管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "行业背景提取领域核心名；运维管理活动去除经验后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05525",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "证书及专业的项目标题，未指定具体资格或专业。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05526",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "应变能力",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 26,
+          "text": "解决日常突发状况",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通、应变及未限定技术业务对象的突发状况处理均为通用能力。",
+      "issues": []
+    }
+  ]
+}

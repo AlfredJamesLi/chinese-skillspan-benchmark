@@ -1,0 +1,487 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05476",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列报名填报、材料上传及审查流程，未提出具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05477",
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "责任感",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "text": "现场管理协调能力",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "执行力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用管理协调能力及个人特质，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05478",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "病理学",
+          "label": "K"
+        },
+        {
+          "start": 4,
+          "end": 7,
+          "text": "儿科学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列专业名分别标K，泛化相关专业不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05479",
+      "spans": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "测绘",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "大学专科学历",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "测绘业务",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业与学历为K；测绘业务为明确职业实践，年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05480",
+      "spans": [
+        {
+          "start": 23,
+          "end": 30,
+          "text": "国家承认的学历",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 33,
+          "text": "学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留明确要求取得的学历、学位资格；日期及未指明名称的相关证书不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05481",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "防火墙",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 12,
+          "text": "行为网关技术",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 27,
+          "text": "防火墙、行为网关配置，调试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "前段共享技术知识语境标K；后段配置调试为实践，保留共享对象并去除经验。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05482",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "生理、心理素质均受身心健康及工作承担条件限定，属于健康要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05483",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "仅有岗位称谓，专业词是否构成候选人要求待定。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "食品质量与安全专业青年教师",
+          "alternatives": [
+            "作为候选人专业或知识要求，抽取食品质量与安全为K",
+            "仅为岗位名称或学科归属，不标注"
+          ],
+          "reason": "缺少任职要求或职责上下文，无法确认专业名称是否直接限定候选人资格。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05484",
+      "spans": [
+        {
+          "start": 9,
+          "end": 16,
+          "text": "大专及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历要求标K，泛化工作经验及年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05485",
+      "spans": [
+        {
+          "start": 16,
+          "end": 26,
+          "text": "大专（含）及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "招聘对象中的完整学历条件标K，保留原文括号。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05486",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为学籍验证报告及材料覆盖范围，不是学历门槛。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05487",
+      "spans": [
+        {
+          "start": 11,
+          "end": 22,
+          "text": "国家承认的学历(学位)",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "国家承认的学历学位为明确资格要求；不符合要求的证书不作正向资格抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05488",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求填报专业与认证材料一致，未指定专业或能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05489",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "排错",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "沟通能力为T；排错暂标S待裁决，人事关系暂不进入主层。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "排错",
+          "alternatives": [
+            "S",
+            "T"
+          ],
+          "reason": "提及属于能力要求，但缺少职业对象，无法确定是技术故障排查还是通用纠错能力；S为占位。"
+        },
+        {
+          "kind": "scope",
+          "text": "人事关系",
+          "alternatives": [
+            "作为人际交往能力要求，纳入",
+            "作为人事或劳动关系知识要求，纳入",
+            "仅指既有人际关系条件或残缺表述，不纳入"
+          ],
+          "reason": "缺少动作或知识限定，不能确认所指是能力、知识还是关系条件。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05490",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列个人自荐材料，未明确要求具体能力或证书资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05491",
+      "spans": [
+        {
+          "start": 2,
+          "end": 25,
+          "text": "ERP/OR/WMS/TMS/OA系统开发架构",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "维护管理",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "数据分析",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统开发架构为知识要求，保留共享系统对象；维护管理和数据分析为职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05492",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 40,
+          "text": "规范性软件研发管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业、学历为K；软件研发管理为明确职业活动，保留规范性限定，去除经验及年限。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05493",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "全文为医院功能、资质及教学合作介绍，没有候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05494",
+      "spans": [
+        {
+          "start": 4,
+          "end": 14,
+          "text": "业主安全管理制度优化",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 32,
+          "text": "组织对业主安全管理制度的编制、修订",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项独立职业职责分别抽取；编制与修订保留共享对象及组织动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05495",
+      "spans": [
+        {
+          "start": 1,
+          "end": 9,
+          "text": "计算机科学与技术",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "软件工程",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 24,
+          "text": "电子信息科学与技术",
+          "label": "K"
+        },
+        {
+          "start": 29,
+          "end": 36,
+          "text": "本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列专业名与完整学历资格分别标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05496",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "综合分析能力",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "项目管理能力",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "前两项为通用能力；项目管理能力的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "项目管理能力",
+          "alternatives": [
+            "S",
+            "T"
+          ],
+          "reason": "未给出项目类型或专业职能语境，无法确定是专业项目管理能力还是泛化组织管理能力。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05498",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅介绍现有人员数量及构成。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05499",
+      "spans": [
+        {
+          "start": 13,
+          "end": 15,
+          "text": "会计",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 19,
+          "text": "会计学",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "财务管理",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 34,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 35,
+          "end": 42,
+          "text": "学士及以上学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业、学历及学位要求；岗位名称、年龄和户口不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05500",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报到、取消资格及补录流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05501",
+      "spans": [
+        {
+          "start": 10,
+          "end": 16,
+          "text": "语言表达能力",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "综合分析能力",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "解决问题能力",
+          "label": "T"
+        },
+        {
+          "start": 31,
+          "end": 37,
+          "text": "临场应变能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "面试明确考查的通用能力均标T；语言表达未指向具体语种，不标L。",
+      "issues": []
+    }
+  ]
+}

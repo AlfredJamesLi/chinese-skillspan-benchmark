@@ -1,0 +1,399 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 44.899,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5057,
+    "completion_tokens": 1598,
+    "total_tokens": 6655,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 776
+    },
+    "input_tokens": 5057,
+    "output_tokens": 1598,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01664",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            60,
+            67
+          ],
+          "to": [
+            49,
+            56
+          ],
+          "text": "境外学历认证书"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01666",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            32,
+            36
+          ],
+          "to": [
+            21,
+            26
+          ],
+          "text": "保管及整理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            58,
+            70
+          ],
+          "to": [
+            32,
+            44
+          ],
+          "text": "合同续约进行时间节点提示"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01668",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            24
+          ],
+          "to": [
+            2,
+            22
+          ],
+          "text": "终端机器状态异常情况的及时跟进及协调处理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            27,
+            31
+          ],
+          "to": [
+            25,
+            29
+          ],
+          "text": "现场维护"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            42,
+            48
+          ],
+          "to": [
+            40,
+            48
+          ],
+          "text": "故障及时排查处理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01669",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            7
+          ],
+          "to": [
+            0,
+            9
+          ],
+          "text": "大学大专及以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01670",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            8
+          ],
+          "to": [
+            6,
+            9
+          ],
+          "text": "责任心"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "沟通能力"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01661\",\"spans\":[{\"start\":5,\"end\":8,\"text\":\"招投标\",\"label\":\"S\"},{\"start\":9,\"end\":13,\"text\":\"合同签订\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行项目招投标和合同签订等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01662\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅指向附件中的岗位信息，未直接包含能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01663\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明报名材料提交要求，属于应聘流程，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01664\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"海外学历\",\"label\":\"K\"},{\"start\":60,\"end\":67,\"text\":\"境外学历认证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"包含学历资格及境外学历认证资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01665\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"大学本科学历\",\"label\":\"K\"},{\"start\":17,\"end\":19,\"text\":\"运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"标注本科以上学历资格和明确的运维职业活动；理工科相关专业不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01666\",\"spans\":[{\"start\":32,\"end\":36,\"text\":\"保管及整理\",\"label\":\"S\"},{\"start\":58,\"end\":70,\"text\":\"合同续约进行时间节点提示\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求保管整理营销资料并对合同续约节点进行提示。\",\"issues\":[]},{\"id\":\"sp10k-01667\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":10,\"end\":16,\"text\":\"人际沟通能力\",\"label\":\"T\"},{\"start\":17,\"end\":23,\"text\":\"团队协作能力\",\"label\":\"T\"},{\"start\":24,\"end\":28,\"text\":\"抗压能力\",\"label\":\"T\"},{\"start\":29,\"end\":35,\"text\":\"工作积极主动\",\"label\":\"T\"},{\"start\":36,\"end\":40,\"text\":\"有责任心\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为跨行业通用能力或职业特质。\",\"issues\":[]},{\"id\":\"sp10k-01668\",\"spans\":[{\"start\":2,\"end\":24,\"text\":\"终端机器状态异常情况的及时跟进及协调处理\",\"label\":\"S\"},{\"start\":27,\"end\":31,\"text\":\"现场维护\",\"label\":\"S\"},{\"start\":42,\"end\":48,\"text\":\"故障及时排查处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求跟进协调终端异常、现场维护及排查处理硬件软件网络故障。\",\"issues\":[]},{\"id\":\"sp10k-01669\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"大学大专及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"标注学历资格；所列相关专业不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01670\",\"spans\":[{\"start\":5,\"end\":8,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"沟通能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"责任心和沟通能力属于通用能力或特质；服从公司安排不单独标注。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01661",
+        "spans": [
+          {
+            "start": 5,
+            "end": 8,
+            "text": "招投标",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "合同签订",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行项目招投标和合同签订等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01662",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅指向附件中的岗位信息，未直接包含能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01663",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明报名材料提交要求，属于应聘流程，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01664",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "海外学历",
+            "label": "K"
+          },
+          {
+            "start": 49,
+            "end": 56,
+            "text": "境外学历认证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "包含学历资格及境外学历认证资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01665",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "大学本科学历",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 19,
+            "text": "运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注本科以上学历资格和明确的运维职业活动；理工科相关专业不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01666",
+        "spans": [
+          {
+            "start": 21,
+            "end": 26,
+            "text": "保管及整理",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 44,
+            "text": "合同续约进行时间节点提示",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求保管整理营销资料并对合同续约节点进行提示。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01667",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "人际沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "团队协作能力",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "抗压能力",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "工作积极主动",
+            "label": "T"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "text": "有责任心",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为跨行业通用能力或职业特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01668",
+        "spans": [
+          {
+            "start": 2,
+            "end": 22,
+            "text": "终端机器状态异常情况的及时跟进及协调处理",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "现场维护",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 48,
+            "text": "故障及时排查处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求跟进协调终端异常、现场维护及排查处理硬件软件网络故障。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01669",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "大学大专及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "标注学历资格；所列相关专业不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01670",
+        "spans": [
+          {
+            "start": 6,
+            "end": 9,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "沟通能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "责任心和沟通能力属于通用能力或特质；服从公司安排不单独标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 167,
+  "ids": [
+    "sp10k-01661",
+    "sp10k-01662",
+    "sp10k-01663",
+    "sp10k-01664",
+    "sp10k-01665",
+    "sp10k-01666",
+    "sp10k-01667",
+    "sp10k-01668",
+    "sp10k-01669",
+    "sp10k-01670"
+  ],
+  "at": "2026-09-13T16:28:29.893012+00:00"
+}

@@ -1,0 +1,486 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 57.045,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4981,
+    "completion_tokens": 1901,
+    "total_tokens": 6882,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 904
+    },
+    "input_tokens": 4981,
+    "output_tokens": 1901,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-05265",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            11
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "职业素养"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            12,
+            16
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "客户思维"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            20,
+            26
+          ],
+          "to": [
+            18,
+            23
+          ],
+          "text": "市场洞察力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            27,
+            33
+          ],
+          "to": [
+            24,
+            30
+          ],
+          "text": "逻辑思维能力"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            34,
+            40
+          ],
+          "to": [
+            31,
+            37
+          ],
+          "text": "组织协调能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05294",
+      "repairs": [
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            26,
+            35
+          ],
+          "to": [
+            25,
+            34
+          ],
+          "text": "测试算法开发与优化"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05374",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            49,
+            61
+          ],
+          "to": [
+            34,
+            47
+          ],
+          "text": "餐饮或烹调专业相关技能证明"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05380",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            13
+          ],
+          "to": [
+            5,
+            12
+          ],
+          "text": "本科及以上学历"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            18
+          ],
+          "to": [
+            13,
+            17
+          ],
+          "text": "法学专业"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-05382",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            14
+          ],
+          "to": [
+            2,
+            11
+          ],
+          "text": "项目营销供应商引入"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            19
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "日常管理"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05259\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为泛化相关专业偏好，未形成可标注的具体学历或领域资格要求。\",\"issues\":[]},{\"id\":\"sp10k-05265\",\"spans\":[{\"start\":7,\"end\":11,\"text\":\"职业素养\",\"label\":\"T\"},{\"start\":12,\"end\":16,\"text\":\"客户思维\",\"label\":\"T\"},{\"start\":20,\"end\":26,\"text\":\"市场洞察力\",\"label\":\"T\"},{\"start\":27,\"end\":33,\"text\":\"逻辑思维能力\",\"label\":\"T\"},{\"start\":34,\"end\":40,\"text\":\"组织协调能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取职业素养、客户思维及通用思维和组织协调能力。\",\"issues\":[]},{\"id\":\"sp10k-05294\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"eMMC/UFS/DDR\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"测试原理\",\"label\":\"K\"},{\"start\":20,\"end\":24,\"text\":\"失效分析\",\"label\":\"S\"},{\"start\":26,\"end\":35,\"text\":\"测试算法开发与优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"存储器相关测试工具及测试原理、失效分析和算法开发优化均为明确技术要求。\",\"issues\":[]},{\"id\":\"sp10k-05304\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"人力资源规划\",\"label\":\"S\"},{\"start\":9,\"end\":11,\"text\":\"招聘\",\"label\":\"S\"},{\"start\":12,\"end\":14,\"text\":\"培训\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"绩效考核\",\"label\":\"S\"},{\"start\":20,\"end\":22,\"text\":\"薪酬\",\"label\":\"S\"},{\"start\":23,\"end\":27,\"text\":\"劳动关系\",\"label\":\"S\"},{\"start\":28,\"end\":32,\"text\":\"人力工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"均为负责人力资源职能中的可执行工作活动。\",\"issues\":[]},{\"id\":\"sp10k-05308\",\"spans\":[{\"start\":6,\"end\":12,\"text\":\"制定营销战略\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"制定营销战略是明确的职业活动。\",\"issues\":[]},{\"id\":\"sp10k-05318\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"党史历史\",\"label\":\"K\"},{\"start\":5,\"end\":11,\"text\":\"思想政治教育\",\"label\":\"K\"},{\"start\":12,\"end\":14,\"text\":\"中文\",\"label\":\"K\"},{\"start\":15,\"end\":17,\"text\":\"新闻\",\"label\":\"K\"},{\"start\":18,\"end\":22,\"text\":\"人力资源\",\"label\":\"K\"},{\"start\":27,\"end\":34,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确专业领域名及完整学历资格名；“相关专业”不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-05374\",\"spans\":[{\"start\":49,\"end\":61,\"text\":\"餐饮或烹调专业相关技能证明\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"同类项目工作经验为泛化经验不标；餐饮或烹调相关技能证明属于非语言资格。健康、年龄、犯罪记录及包吃住不标。\",\"issues\":[]},{\"id\":\"sp10k-05377\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"表达能力\",\"label\":\"T\"},{\"start\":5,\"end\":9,\"text\":\"沟通技巧\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"表达和沟通属于跨行业通用能力。\",\"issues\":[]},{\"id\":\"sp10k-05380\",\"spans\":[{\"start\":6,\"end\":13,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":14,\"end\":18,\"text\":\"法学专业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取完整学历资格及明确专业领域。\",\"issues\":[]},{\"id\":\"sp10k-05382\",\"spans\":[{\"start\":6,\"end\":14,\"text\":\"项目营销供应商引入\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"日常管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"供应商引入和日常管理均为岗位职责中的职业活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05259",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为泛化相关专业偏好，未形成可标注的具体学历或领域资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05265",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "职业素养",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "客户思维",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 23,
+            "text": "市场洞察力",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "逻辑思维能力",
+            "label": "T"
+          },
+          {
+            "start": 31,
+            "end": 37,
+            "text": "组织协调能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取职业素养、客户思维及通用思维和组织协调能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05294",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "eMMC/UFS/DDR",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "测试原理",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "失效分析",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 34,
+            "text": "测试算法开发与优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "存储器相关测试工具及测试原理、失效分析和算法开发优化均为明确技术要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05304",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "人力资源规划",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "招聘",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "培训",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "绩效考核",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "薪酬",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "劳动关系",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "人力工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为负责人力资源职能中的可执行工作活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05308",
+        "spans": [
+          {
+            "start": 6,
+            "end": 12,
+            "text": "制定营销战略",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "制定营销战略是明确的职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05318",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "党史历史",
+            "label": "K"
+          },
+          {
+            "start": 5,
+            "end": 11,
+            "text": "思想政治教育",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "中文",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "新闻",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "人力资源",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 34,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确专业领域名及完整学历资格名；“相关专业”不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05374",
+        "spans": [
+          {
+            "start": 34,
+            "end": 47,
+            "text": "餐饮或烹调专业相关技能证明",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "同类项目工作经验为泛化经验不标；餐饮或烹调相关技能证明属于非语言资格。健康、年龄、犯罪记录及包吃住不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05377",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "表达能力",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "沟通技巧",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "表达和沟通属于跨行业通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05380",
+        "spans": [
+          {
+            "start": 5,
+            "end": 12,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "法学专业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取完整学历资格及明确专业领域。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05382",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "项目营销供应商引入",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "日常管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "供应商引入和日常管理均为岗位职责中的职业活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 196,
+  "ids": [
+    "sp10k-05259",
+    "sp10k-05265",
+    "sp10k-05294",
+    "sp10k-05304",
+    "sp10k-05308",
+    "sp10k-05318",
+    "sp10k-05374",
+    "sp10k-05377",
+    "sp10k-05380",
+    "sp10k-05382"
+  ],
+  "at": "2026-09-13T16:53:36.663029+00:00"
+}

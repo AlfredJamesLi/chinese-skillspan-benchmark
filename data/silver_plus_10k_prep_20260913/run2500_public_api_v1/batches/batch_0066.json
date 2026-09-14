@@ -1,0 +1,205 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 39.146,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5068,
+    "completion_tokens": 1213,
+    "total_tokens": 6281,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 493
+    },
+    "input_tokens": 5068,
+    "output_tokens": 1213,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00651\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"专项招聘对象及报考手续说明，不含具体能力、知识或资格名要求。\",\"issues\":[]},{\"id\":\"sp10k-00652\",\"spans\":[{\"start\":7,\"end\":16,\"text\":\"SQL语句进行审核\",\"label\":\"S\"},{\"start\":17,\"end\":22,\"text\":\"SQL优化\",\"label\":\"S\"},{\"start\":23,\"end\":29,\"text\":\"监控慢SQL\",\"label\":\"S\"},{\"start\":33,\"end\":39,\"text\":\"慢SQL优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取SQL审核、优化及监控活动，去除非必要的职责修饰。\",\"issues\":[]},{\"id\":\"sp10k-00653\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"报名前阅读公告及符合报考条件的行政说明，未明确具体能力或资格。\",\"issues\":[]},{\"id\":\"sp10k-00654\",\"spans\":[{\"start\":16,\"end\":19,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":27,\"end\":31,\"text\":\"沟通能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"责任心和沟通能力为通用素质；外派及驻场属于工作安排，不标。\",\"issues\":[]},{\"id\":\"sp10k-00655\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅列举报名提交材料，属于报名行政流程，不作为候选人资格要求抽取。\",\"issues\":[]},{\"id\":\"sp10k-00656\",\"spans\":[{\"start\":0,\"end\":14,\"text\":\"计算机相关软、硬件的故障诊断\",\"label\":\"S\"},{\"start\":15,\"end\":17,\"text\":\"排错\",\"label\":\"S\"},{\"start\":18,\"end\":20,\"text\":\"升级\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"故障诊断、排错及升级均为职业活动，后两项由局部语境共享计算机软硬件对象。\",\"issues\":[]},{\"id\":\"sp10k-00657\",\"spans\":[{\"start\":2,\"end\":28,\"text\":\"计算机外围设备（打印机、扫描仪等）的接入、管理和维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"保留共享设备对象及其接入、管理和维护活动，设备示例不另行嵌套标注。\",\"issues\":[]},{\"id\":\"sp10k-00658\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"培训专业填报与调剂安排，不属于职业能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00659\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于资格报考条件说明，未给出具体学历层级、专业名或候选人须持有的资格名。\",\"issues\":[]},{\"id\":\"sp10k-00660\",\"spans\":[{\"start\":28,\"end\":30,\"text\":\"测试\",\"label\":\"S\"},{\"start\":31,\"end\":33,\"text\":\"追踪\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"测试和追踪为明确职责活动，游戏软件对象由同句局部语境限定。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00651",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "专项招聘对象及报考手续说明，不含具体能力、知识或资格名要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00652",
+        "spans": [
+          {
+            "start": 7,
+            "end": 16,
+            "text": "SQL语句进行审核",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "text": "SQL优化",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "text": "监控慢SQL",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 39,
+            "text": "慢SQL优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取SQL审核、优化及监控活动，去除非必要的职责修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00653",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "报名前阅读公告及符合报考条件的行政说明，未明确具体能力或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00654",
+        "spans": [
+          {
+            "start": 16,
+            "end": 19,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "沟通能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "责任心和沟通能力为通用素质；外派及驻场属于工作安排，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00655",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅列举报名提交材料，属于报名行政流程，不作为候选人资格要求抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00656",
+        "spans": [
+          {
+            "start": 0,
+            "end": 14,
+            "text": "计算机相关软、硬件的故障诊断",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "排错",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 20,
+            "text": "升级",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "故障诊断、排错及升级均为职业活动，后两项由局部语境共享计算机软硬件对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00657",
+        "spans": [
+          {
+            "start": 2,
+            "end": 28,
+            "text": "计算机外围设备（打印机、扫描仪等）的接入、管理和维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留共享设备对象及其接入、管理和维护活动，设备示例不另行嵌套标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00658",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "培训专业填报与调剂安排，不属于职业能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00659",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于资格报考条件说明，未给出具体学历层级、专业名或候选人须持有的资格名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00660",
+        "spans": [
+          {
+            "start": 28,
+            "end": 30,
+            "text": "测试",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 33,
+            "text": "追踪",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "测试和追踪为明确职责活动，游戏软件对象由同句局部语境限定。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 66,
+  "ids": [
+    "sp10k-00651",
+    "sp10k-00652",
+    "sp10k-00653",
+    "sp10k-00654",
+    "sp10k-00655",
+    "sp10k-00656",
+    "sp10k-00657",
+    "sp10k-00658",
+    "sp10k-00659",
+    "sp10k-00660"
+  ],
+  "at": "2026-09-13T14:44:42.974093+00:00"
+}

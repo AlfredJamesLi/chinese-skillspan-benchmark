@@ -1,0 +1,294 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 41.077,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5099,
+    "completion_tokens": 1288,
+    "total_tokens": 6387,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 397
+    },
+    "input_tokens": 5099,
+    "output_tokens": 1288,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00166",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            23,
+            29
+          ],
+          "to": [
+            22,
+            28
+          ],
+          "text": "团队协作能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            30,
+            34
+          ],
+          "to": [
+            29,
+            33
+          ],
+          "text": "敬业精神"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00161\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"招聘纪律监督及违规处理规定，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00162\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"TCP/IP协议\",\"label\":\"K\"},{\"start\":13,\"end\":19,\"text\":\"网络调试技术\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"协议为专业知识，网络调试技术为可执行技术方法。\",\"issues\":[]},{\"id\":\"sp10k-00163\",\"spans\":[{\"start\":10,\"end\":14,\"text\":\"物流调度\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确执行的物流调度活动，物流计划为工作依据。\",\"issues\":[]},{\"id\":\"sp10k-00164\",\"spans\":[{\"start\":2,\"end\":37,\"text\":\"对项目的范围、质量、进度、成本、风险、人力资源进行有效管理和控制的能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确项目管理职能；多个管理对象共享动作和能力中心，保留完整连续提及。\",\"issues\":[]},{\"id\":\"sp10k-00165\",\"spans\":[{\"start\":14,\"end\":18,\"text\":\"职业道德\",\"label\":\"T\"},{\"start\":19,\"end\":23,\"text\":\"思想品德\",\"label\":\"T\"},{\"start\":24,\"end\":28,\"text\":\"作风正派\",\"label\":\"T\"},{\"start\":29,\"end\":33,\"text\":\"遵纪守法\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"职业操守及品行要求标为通用特质；无犯罪记录为行政背景条件，不标。\",\"issues\":[]},{\"id\":\"sp10k-00166\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"沟通协调能力\",\"label\":\"T\"},{\"start\":12,\"end\":16,\"text\":\"抗压能力\",\"label\":\"T\"},{\"start\":23,\"end\":29,\"text\":\"团队协作能力\",\"label\":\"T\"},{\"start\":30,\"end\":34,\"text\":\"敬业精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取沟通协调、抗压、团队协作及敬业特质，排除程度与要求触发词。\",\"issues\":[]},{\"id\":\"sp10k-00167\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"Java多线程开发\",\"label\":\"S\"},{\"start\":12,\"end\":17,\"text\":\"线程池使用\",\"label\":\"S\"},{\"start\":22,\"end\":25,\"text\":\"分布式\",\"label\":\"K\"},{\"start\":26,\"end\":28,\"text\":\"缓存\",\"label\":\"K\"},{\"start\":29,\"end\":33,\"text\":\"消息队列\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"开发及使用为职业技术动作；后段以技术体系为知识语境，分别抽取并列领域。\",\"issues\":[]},{\"id\":\"sp10k-00168\",\"spans\":[{\"start\":4,\"end\":15,\"text\":\"项目前期流程跟进及办理\",\"label\":\"S\"},{\"start\":16,\"end\":22,\"text\":\"推进申报进展\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取流程跟进办理与申报推进两项职责；跟进及办理共享必要对象。\",\"issues\":[]},{\"id\":\"sp10k-00169\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"常用办公软件操作\",\"label\":\"S\"},{\"start\":16,\"end\":22,\"text\":\"文档编写能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取办公软件操作及文档编写能力；原文开头的“数据”不作为独立能力提及。\",\"issues\":[]},{\"id\":\"sp10k-00170\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"入选资格放弃限制及例外条件，属于招聘行政规定，不含能力要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00161",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "招聘纪律监督及违规处理规定，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00162",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "TCP/IP协议",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "网络调试技术",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "协议为专业知识，网络调试技术为可执行技术方法。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00163",
+        "spans": [
+          {
+            "start": 10,
+            "end": 14,
+            "text": "物流调度",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确执行的物流调度活动，物流计划为工作依据。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00164",
+        "spans": [
+          {
+            "start": 2,
+            "end": 37,
+            "text": "对项目的范围、质量、进度、成本、风险、人力资源进行有效管理和控制的能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确项目管理职能；多个管理对象共享动作和能力中心，保留完整连续提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00165",
+        "spans": [
+          {
+            "start": 14,
+            "end": 18,
+            "text": "职业道德",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "思想品德",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "作风正派",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "遵纪守法",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "职业操守及品行要求标为通用特质；无犯罪记录为行政背景条件，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00166",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "沟通协调能力",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "抗压能力",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "团队协作能力",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "敬业精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取沟通协调、抗压、团队协作及敬业特质，排除程度与要求触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00167",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "Java多线程开发",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "text": "线程池使用",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "text": "分布式",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 28,
+            "text": "缓存",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "消息队列",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "开发及使用为职业技术动作；后段以技术体系为知识语境，分别抽取并列领域。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00168",
+        "spans": [
+          {
+            "start": 4,
+            "end": 15,
+            "text": "项目前期流程跟进及办理",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "推进申报进展",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取流程跟进办理与申报推进两项职责；跟进及办理共享必要对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00169",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "常用办公软件操作",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "文档编写能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取办公软件操作及文档编写能力；原文开头的“数据”不作为独立能力提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00170",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "入选资格放弃限制及例外条件，属于招聘行政规定，不含能力要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 17,
+  "ids": [
+    "sp10k-00161",
+    "sp10k-00162",
+    "sp10k-00163",
+    "sp10k-00164",
+    "sp10k-00165",
+    "sp10k-00166",
+    "sp10k-00167",
+    "sp10k-00168",
+    "sp10k-00169",
+    "sp10k-00170"
+  ],
+  "at": "2026-09-13T14:06:13.397944+00:00"
+}

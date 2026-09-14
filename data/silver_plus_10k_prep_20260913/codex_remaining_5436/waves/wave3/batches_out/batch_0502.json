@@ -1,0 +1,287 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07511",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "垃圾发电厂",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 18,
+          "text": "生产成本（含制造费用）",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "text": "核算与管理",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 35,
+          "text": "成本核算实施细则",
+          "label": "S"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "text": "组织执行",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取垃圾发电厂领域、生产成本知识以及成本核算管理和实施执行活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07512",
+      "spans": [
+        {
+          "start": 8,
+          "end": 20,
+          "text": "车险（含家财险）承保工作",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 30,
+          "text": "超权限业务的上报",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "承保及业务上报属于明确职业活动，车险和家财险作为承保对象纳入完整活动跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07513",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "项目原材料报价",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "原材料报价是明确职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07514",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "组织人员制定",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "text": "物业设备管理维修",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "规章制度",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "技术规程",
+          "label": "K"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "技术标准",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "组织制定设备管理维修制度属于职业活动，规章制度、技术规程和技术标准属于规范或专业知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07515",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列出相关专业名称，未明确完整学历或资格要求；泛化相关专业不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07516",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "战略思维",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "领导力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用能力或领导特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07517",
+      "spans": [
+        {
+          "start": 16,
+          "end": 34,
+          "text": "视觉Transformer（ViT）",
+          "label": "K"
+        },
+        {
+          "start": 35,
+          "end": 38,
+          "text": "SAM",
+          "label": "K"
+        },
+        {
+          "start": 39,
+          "end": 43,
+          "text": "CLIP",
+          "label": "K"
+        },
+        {
+          "start": 44,
+          "end": 48,
+          "text": "DINO",
+          "label": "K"
+        },
+        {
+          "start": 53,
+          "end": 62,
+          "text": "ERNIE-ViL",
+          "label": "S"
+        },
+        {
+          "start": 63,
+          "end": 70,
+          "text": "Qwen-VL",
+          "label": "S"
+        },
+        {
+          "start": 71,
+          "end": 78,
+          "text": "多模态模型应用",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "架构名称按模型技术知识标注，多模态模型应用经验对应实际应用活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07518",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "模组厂CFOG工艺",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 16,
+          "text": "技术员培训",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 30,
+          "text": "指导技术员进行返工方法优化",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 34,
+          "text": "标准化",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 41,
+          "text": "CP",
+          "label": "K"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "text": "FMEA",
+          "label": "K"
+        },
+        {
+          "start": 47,
+          "end": 50,
+          "text": "SOP",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取工艺领域、培训和返工方法优化等职业活动，以及文件中明确的专业规范或方法名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07519",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "AEC-Q100认证",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "text": "全流程",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 29,
+          "text": "IATF16949体系落地",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "AEC-Q100认证属于资格或规范，体系落地属于明确实施活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07520",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "产品线的公司内部销售团队培训",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "面向销售团队开展培训是明确职业活动。",
+      "issues": []
+    }
+  ]
+}

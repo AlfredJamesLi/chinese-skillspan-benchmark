@@ -1,0 +1,70 @@
+{
+  "n_remaining": 5436,
+  "n_waves": 3,
+  "model": "gpt-6-astra",
+  "do_one_wave_per_codex_session": true,
+  "order": [
+    "wave1",
+    "wave2",
+    "wave3"
+  ],
+  "waves": [
+    {
+      "wave": "wave1",
+      "status": "ready",
+      "batch_lo": 1,
+      "batch_hi": 181,
+      "n_batches": 181,
+      "n_sents": 1810,
+      "last_batch_n": 10,
+      "batch_size": 10,
+      "model": "gpt-6-astra",
+      "prompt_id": "silver_public_api_v1.0",
+      "domains": {
+        "阿里云公开数据集": 1135,
+        "事业单位招聘": 675
+      },
+      "created": "2026-09-13T14:35:31.699242+00:00"
+    },
+    {
+      "wave": "wave2",
+      "status": "ready",
+      "batch_lo": 182,
+      "batch_hi": 362,
+      "n_batches": 181,
+      "n_sents": 1810,
+      "last_batch_n": 10,
+      "batch_size": 10,
+      "model": "gpt-6-astra",
+      "prompt_id": "silver_public_api_v1.0",
+      "domains": {
+        "阿里云公开数据集": 1039,
+        "事业单位招聘": 771
+      },
+      "created": "2026-09-13T14:35:31.711779+00:00"
+    },
+    {
+      "wave": "wave3",
+      "status": "done",
+      "batch_lo": 363,
+      "batch_hi": 544,
+      "n_batches": 182,
+      "n_sents": 1816,
+      "last_batch_n": 6,
+      "batch_size": 10,
+      "model": "gpt-6-astra",
+      "prompt_id": "silver_public_api_v1.0",
+      "domains": {
+        "事业单位招聘": 185,
+        "上市公司招聘": 1631
+      },
+      "created": "2026-09-13T14:35:31.724186+00:00",
+      "updated": "2026-09-13T21:10:31.153144+00:00"
+    }
+  ],
+  "how_to_track": "Count files in waves/waveN/batches_out/. Compare to COUNTS.json n_batches.",
+  "merge_when_all_done": [
+    "python3 scripts/sync_codex_wave_outputs.py",
+    "python3 scripts/merge_codex_remaining_silver.py"
+  ]
+}

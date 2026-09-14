@@ -1,0 +1,374 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 70.648,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5189,
+    "completion_tokens": 2264,
+    "total_tokens": 7453,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1008
+    },
+    "input_tokens": 5189,
+    "output_tokens": 2264,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01431\",\"spans\":[{\"start\":4,\"end\":17,\"text\":\"Linux下应用服务的维护\",\"label\":\"S\"},{\"start\":20,\"end\":26,\"text\":\"Apache\",\"label\":\"S\"},{\"start\":27,\"end\":32,\"text\":\"Nginx\",\"label\":\"S\"},{\"start\":33,\"end\":38,\"text\":\"Mysql\",\"label\":\"S\"},{\"start\":39,\"end\":44,\"text\":\"Redis\",\"label\":\"S\"},{\"start\":45,\"end\":48,\"text\":\"PHP\",\"label\":\"S\"},{\"start\":49,\"end\":52,\"text\":\"DNS\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取应用服务维护活动及其明确运用语境中的工具名称。\",\"issues\":[]},{\"id\":\"sp10k-01432\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为招聘报名结束及考试公告、岗位人数信息，无具体能力或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01433\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"处理平台各类故障\",\"label\":\"S\"},{\"start\":11,\"end\":20,\"text\":\"问题快速定位和解决\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"问题定位和解决承接平台故障这一明确技术对象，按职业活动标注。\",\"issues\":[]},{\"id\":\"sp10k-01434\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅要求提交证书扫描件，未规定具体学历或学位资格。\",\"issues\":[]},{\"id\":\"sp10k-01435\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于报到、人事关系转移及聘用资格保留的行政规定。\",\"issues\":[]},{\"id\":\"sp10k-01436\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"电气工程的前期设计规划\",\"label\":\"S\"},{\"start\":18,\"end\":26,\"text\":\"审查电气设计图纸\",\"label\":\"S\"},{\"start\":34,\"end\":38,\"text\":\"协调沟通\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"设计规划、图纸审查为职业活动；与设计单位的协调沟通为通用人际能力。\",\"issues\":[]},{\"id\":\"sp10k-01437\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"自然语言处理的理论\",\"label\":\"K\"},{\"start\":11,\"end\":13,\"text\":\"分词\",\"label\":\"K\"},{\"start\":14,\"end\":18,\"text\":\"词性标注\",\"label\":\"K\"},{\"start\":19,\"end\":25,\"text\":\"命名实体识别\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"按理论及基础算法知识语境标注，并拆出各项完整算法提及。\",\"issues\":[]},{\"id\":\"sp10k-01438\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"泛指证明材料，未说明具体能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-01439\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"遵纪守法\",\"label\":\"T\"},{\"start\":10,\"end\":12,\"text\":\"品行\",\"label\":\"T\"},{\"start\":13,\"end\":17,\"text\":\"职业道德\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取行为品行与职业道德要求；无在案等背景审查条件不标。\",\"issues\":[]},{\"id\":\"sp10k-01440\",\"spans\":[{\"start\":8,\"end\":14,\"text\":\"智能控制技术\",\"label\":\"K\"},{\"start\":15,\"end\":22,\"text\":\"电气自动化技术\",\"label\":\"K\"},{\"start\":23,\"end\":31,\"text\":\"汽车电控相关课程\",\"label\":\"K\"},{\"start\":31,\"end\":41,\"text\":\"硕士研究生及以上学历\",\"label\":\"K\"},{\"start\":42,\"end\":49,\"text\":\"中级及以上职称\",\"label\":\"K\"},{\"start\":63,\"end\":70,\"text\":\"机电一体化技术\",\"label\":\"K\"},{\"start\":71,\"end\":80,\"text\":\"机电一体化相关课程\",\"label\":\"K\"},{\"start\":80,\"end\":90,\"text\":\"硕士研究生及以上学历\",\"label\":\"K\"},{\"start\":91,\"end\":98,\"text\":\"中级及以上职称\",\"label\":\"K\"},{\"start\":112,\"end\":116,\"text\":\"汽车大类\",\"label\":\"K\"},{\"start\":117,\"end\":123,\"text\":\"汽车相关课程\",\"label\":\"K\"},{\"start\":123,\"end\":133,\"text\":\"硕士研究生及以上学历\",\"label\":\"K\"},{\"start\":134,\"end\":141,\"text\":\"中级及以上职称\",\"label\":\"K\"},{\"start\":161,\"end\":165,\"text\":\"工程造价\",\"label\":\"K\"},{\"start\":166,\"end\":170,\"text\":\"工程造价\",\"label\":\"K\"},{\"start\":171,\"end\":180,\"text\":\"安装工程计量与计价\",\"label\":\"K\"},{\"start\":181,\"end\":188,\"text\":\"建筑设备与识图\",\"label\":\"K\"},{\"start\":189,\"end\":196,\"text\":\"BIM技术应用\",\"label\":\"K\"},{\"start\":200,\"end\":210,\"text\":\"硕士研究生及以上学历\",\"label\":\"K\"},{\"start\":211,\"end\":218,\"text\":\"中级及以上职称\",\"label\":\"K\"},{\"start\":220,\"end\":222,\"text\":\"造价\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"教师岗位表中的专业、课程知识、学历及职称按K标注；课程列表共享课程语境。泛化企业工作经验不标，造价企业经验抽取明确领域核心名；学院名称及人数不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01431",
+        "spans": [
+          {
+            "start": 4,
+            "end": 17,
+            "text": "Linux下应用服务的维护",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "Apache",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 32,
+            "text": "Nginx",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "text": "Mysql",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "text": "Redis",
+            "label": "S"
+          },
+          {
+            "start": 45,
+            "end": 48,
+            "text": "PHP",
+            "label": "S"
+          },
+          {
+            "start": 49,
+            "end": 52,
+            "text": "DNS",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取应用服务维护活动及其明确运用语境中的工具名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01432",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为招聘报名结束及考试公告、岗位人数信息，无具体能力或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01433",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "处理平台各类故障",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 20,
+            "text": "问题快速定位和解决",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "问题定位和解决承接平台故障这一明确技术对象，按职业活动标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01434",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅要求提交证书扫描件，未规定具体学历或学位资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01435",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于报到、人事关系转移及聘用资格保留的行政规定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01436",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "电气工程的前期设计规划",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "text": "审查电气设计图纸",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "text": "协调沟通",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设计规划、图纸审查为职业活动；与设计单位的协调沟通为通用人际能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01437",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "自然语言处理的理论",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 13,
+            "text": "分词",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "词性标注",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "命名实体识别",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "按理论及基础算法知识语境标注，并拆出各项完整算法提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01438",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "泛指证明材料，未说明具体能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01439",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "遵纪守法",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "品行",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "职业道德",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取行为品行与职业道德要求；无在案等背景审查条件不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01440",
+        "spans": [
+          {
+            "start": 8,
+            "end": 14,
+            "text": "智能控制技术",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "text": "电气自动化技术",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 31,
+            "text": "汽车电控相关课程",
+            "label": "K"
+          },
+          {
+            "start": 31,
+            "end": 41,
+            "text": "硕士研究生及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 42,
+            "end": 49,
+            "text": "中级及以上职称",
+            "label": "K"
+          },
+          {
+            "start": 63,
+            "end": 70,
+            "text": "机电一体化技术",
+            "label": "K"
+          },
+          {
+            "start": 71,
+            "end": 80,
+            "text": "机电一体化相关课程",
+            "label": "K"
+          },
+          {
+            "start": 80,
+            "end": 90,
+            "text": "硕士研究生及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 91,
+            "end": 98,
+            "text": "中级及以上职称",
+            "label": "K"
+          },
+          {
+            "start": 112,
+            "end": 116,
+            "text": "汽车大类",
+            "label": "K"
+          },
+          {
+            "start": 117,
+            "end": 123,
+            "text": "汽车相关课程",
+            "label": "K"
+          },
+          {
+            "start": 123,
+            "end": 133,
+            "text": "硕士研究生及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 134,
+            "end": 141,
+            "text": "中级及以上职称",
+            "label": "K"
+          },
+          {
+            "start": 161,
+            "end": 165,
+            "text": "工程造价",
+            "label": "K"
+          },
+          {
+            "start": 166,
+            "end": 170,
+            "text": "工程造价",
+            "label": "K"
+          },
+          {
+            "start": 171,
+            "end": 180,
+            "text": "安装工程计量与计价",
+            "label": "K"
+          },
+          {
+            "start": 181,
+            "end": 188,
+            "text": "建筑设备与识图",
+            "label": "K"
+          },
+          {
+            "start": 189,
+            "end": 196,
+            "text": "BIM技术应用",
+            "label": "K"
+          },
+          {
+            "start": 200,
+            "end": 210,
+            "text": "硕士研究生及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 211,
+            "end": 218,
+            "text": "中级及以上职称",
+            "label": "K"
+          },
+          {
+            "start": 220,
+            "end": 222,
+            "text": "造价",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "教师岗位表中的专业、课程知识、学历及职称按K标注；课程列表共享课程语境。泛化企业工作经验不标，造价企业经验抽取明确领域核心名；学院名称及人数不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 144,
+  "ids": [
+    "sp10k-01431",
+    "sp10k-01432",
+    "sp10k-01433",
+    "sp10k-01434",
+    "sp10k-01435",
+    "sp10k-01436",
+    "sp10k-01437",
+    "sp10k-01438",
+    "sp10k-01439",
+    "sp10k-01440"
+  ],
+  "at": "2026-09-13T16:00:33.391369+00:00"
+}

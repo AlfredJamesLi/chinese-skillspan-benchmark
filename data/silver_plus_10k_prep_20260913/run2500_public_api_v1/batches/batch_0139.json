@@ -1,0 +1,329 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 66.243,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5047,
+    "completion_tokens": 1874,
+    "total_tokens": 6921,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 791
+    },
+    "input_tokens": 5047,
+    "output_tokens": 1874,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01381\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为学校资质与组织身份介绍，不含候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-01382\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"中学历史\",\"label\":\"K\"},{\"start\":8,\"end\":11,\"text\":\"历史类\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学科知识领域及明确专业类别标K。\",\"issues\":[]},{\"id\":\"sp10k-01383\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"搜索引擎营销的各种工具\",\"label\":\"S\"},{\"start\":16,\"end\":33,\"text\":\"研究搜索引擎周边各新产品或相关技术\",\"label\":\"S\"},{\"start\":34,\"end\":45,\"text\":\"关注互联网行业最新动态\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取岗位工具及具有明确职业对象的研究、行业动态跟踪活动。\",\"issues\":[]},{\"id\":\"sp10k-01384\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"汉语言文学\",\"label\":\"K\"},{\"start\":8,\"end\":14,\"text\":\"公共事业管理\",\"label\":\"K\"},{\"start\":15,\"end\":21,\"text\":\"公共卫生管理\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"并列专业名称分别标K。\",\"issues\":[]},{\"id\":\"sp10k-01385\",\"spans\":[{\"start\":2,\"end\":4,\"text\":\"细心\",\"label\":\"T\"},{\"start\":5,\"end\":9,\"text\":\"思维敏捷\",\"label\":\"T\"},{\"start\":15,\"end\":18,\"text\":\"执行力\",\"label\":\"T\"},{\"start\":19,\"end\":23,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":24,\"end\":28,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":29,\"end\":33,\"text\":\"团队精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"通用工作特质与可迁移能力标T，去除要求触发词及程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-01386\",\"spans\":[{\"start\":4,\"end\":24,\"text\":\"微软Azure公有云主要产品的操作和维护\",\"label\":\"S\"},{\"start\":27,\"end\":30,\"text\":\"云主机\",\"label\":\"S\"},{\"start\":31,\"end\":34,\"text\":\"云网络\",\"label\":\"S\"},{\"start\":35,\"end\":38,\"text\":\"云安全\",\"label\":\"S\"},{\"start\":39,\"end\":43,\"text\":\"云数据库\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"操作维护保留共享产品对象；列举产品受明确操作维护语境限定，标S。\",\"issues\":[]},{\"id\":\"sp10k-01387\",\"spans\":[{\"start\":1,\"end\":8,\"text\":\"办公室网络搭建\",\"label\":\"S\"},{\"start\":9,\"end\":17,\"text\":\"VPN安装及调试\",\"label\":\"S\"},{\"start\":18,\"end\":22,\"text\":\"网络协议\",\"label\":\"K\"},{\"start\":23,\"end\":33,\"text\":\"思科路由和交接机设置\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"搭建、安装调试及设备设置标S；网络协议标K，保留原文“交接机”。\",\"issues\":[]},{\"id\":\"sp10k-01388\",\"spans\":[{\"start\":9,\"end\":29,\"text\":\"基础网络环境和办公设备的软硬件维护与管理\",\"label\":\"S\"},{\"start\":31,\"end\":45,\"text\":\"推进信息化在日常办公中的应用\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取两项职业职责；维护管理保留共享对象，排除机构范围修饰。\",\"issues\":[]},{\"id\":\"sp10k-01389\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"Oracle\",\"label\":\"S\"},{\"start\":9,\"end\":21,\"text\":\"MySQL数据库日常操作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库名称受日常操作语境限定；拆分并列项，不补写共享成分。\",\"issues\":[]},{\"id\":\"sp10k-01390\",\"spans\":[{\"start\":2,\"end\":30,\"text\":\"Linux和Windows系统及常见服务的配置及使用管理\",\"label\":\"S\"},{\"start\":32,\"end\":38,\"text\":\"Apache\",\"label\":\"S\"},{\"start\":39,\"end\":42,\"text\":\"IIS\",\"label\":\"S\"},{\"start\":43,\"end\":48,\"text\":\"NGINX\",\"label\":\"S\"},{\"start\":56,\"end\":64,\"text\":\"系统故障排查能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"配置与使用管理保留共享动作及对象；列举工具和领域绑定的故障排查能力标S。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01381",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为学校资质与组织身份介绍，不含候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01382",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "中学历史",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 11,
+            "text": "历史类",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学科知识领域及明确专业类别标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01383",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "搜索引擎营销的各种工具",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 33,
+            "text": "研究搜索引擎周边各新产品或相关技术",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 45,
+            "text": "关注互联网行业最新动态",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取岗位工具及具有明确职业对象的研究、行业动态跟踪活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01384",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "汉语言文学",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "公共事业管理",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "公共卫生管理",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列专业名称分别标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01385",
+        "spans": [
+          {
+            "start": 2,
+            "end": 4,
+            "text": "细心",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "思维敏捷",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 18,
+            "text": "执行力",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "团队精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "通用工作特质与可迁移能力标T，去除要求触发词及程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01386",
+        "spans": [
+          {
+            "start": 4,
+            "end": 24,
+            "text": "微软Azure公有云主要产品的操作和维护",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "text": "云主机",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 34,
+            "text": "云网络",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 38,
+            "text": "云安全",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 43,
+            "text": "云数据库",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "操作维护保留共享产品对象；列举产品受明确操作维护语境限定，标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01387",
+        "spans": [
+          {
+            "start": 1,
+            "end": 8,
+            "text": "办公室网络搭建",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 17,
+            "text": "VPN安装及调试",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "网络协议",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 33,
+            "text": "思科路由和交接机设置",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "搭建、安装调试及设备设置标S；网络协议标K，保留原文“交接机”。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01388",
+        "spans": [
+          {
+            "start": 9,
+            "end": 29,
+            "text": "基础网络环境和办公设备的软硬件维护与管理",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 45,
+            "text": "推进信息化在日常办公中的应用",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取两项职业职责；维护管理保留共享对象，排除机构范围修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01389",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "Oracle",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 21,
+            "text": "MySQL数据库日常操作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库名称受日常操作语境限定；拆分并列项，不补写共享成分。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01390",
+        "spans": [
+          {
+            "start": 2,
+            "end": 30,
+            "text": "Linux和Windows系统及常见服务的配置及使用管理",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "text": "Apache",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 42,
+            "text": "IIS",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 48,
+            "text": "NGINX",
+            "label": "S"
+          },
+          {
+            "start": 56,
+            "end": 64,
+            "text": "系统故障排查能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "配置与使用管理保留共享动作及对象；列举工具和领域绑定的故障排查能力标S。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 139,
+  "ids": [
+    "sp10k-01381",
+    "sp10k-01382",
+    "sp10k-01383",
+    "sp10k-01384",
+    "sp10k-01385",
+    "sp10k-01386",
+    "sp10k-01387",
+    "sp10k-01388",
+    "sp10k-01389",
+    "sp10k-01390"
+  ],
+  "at": "2026-09-13T15:55:39.006532+00:00"
+}

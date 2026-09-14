@@ -1,0 +1,220 @@
+{
+  "records": [
+    {
+      "id": "sp10k-06701",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "人力资源规划",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "招聘",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "text": "培训与发展",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "绩效",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "薪酬",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "员工关系",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 34,
+          "text": "企业文化建",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "列举的人力资源职能均为负责人需执行的职业活动；按原文保留“企业文化建”。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06702",
+      "spans": [
+        {
+          "start": 24,
+          "end": 28,
+          "text": "提取数据",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 40,
+          "text": "清洗",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 44,
+          "text": "预处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "提取、清洗和预处理数据是可执行的数据处理活动；一致性和准确性属于结果要求，不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06703",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "英语",
+          "label": "L"
+        },
+        {
+          "start": 12,
+          "end": 17,
+          "text": "中文普通话",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "英语和中文普通话均为工作语言能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06704",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "企业培训体系搭建",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "企业文化建设",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 33,
+          "text": "HR专业知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "培训体系搭建和企业文化建设是职业活动，HR专业知识为领域知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06705",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "统招本科学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "统招本科学历是完整学历资格；工作年限和泛化专业优先不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06706",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "吃苦耐劳",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "认真负责",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 20,
+          "text": "适应焊接车间工作环境",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "吃苦耐劳、认真负责及适应特定工作环境属于候选人的通用特质或适应能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06707",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "AutoCAD",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 20,
+          "text": "Solidworks",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "AutoCAD和Solidworks是岗位使用的设计软件工具，标为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06708",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "实验室工作的管理规程",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 30,
+          "text": "按制度行使管理员职权和履行管理义务",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "实验室管理规程属于规范知识，按制度行使职权并履行管理义务属于职业活动；规范化为结果要求不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06709",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为完成领导安排的相关工作，未明确具体能力、知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06710",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "为公司介绍、负责地区、上班地点及岗位职责标题等非候选人能力要求内容。",
+      "issues": []
+    }
+  ]
+}

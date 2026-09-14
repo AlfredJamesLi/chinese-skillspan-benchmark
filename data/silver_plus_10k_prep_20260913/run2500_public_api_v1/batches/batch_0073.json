@@ -1,0 +1,275 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 55.695,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5030,
+    "completion_tokens": 1774,
+    "total_tokens": 6804,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 818
+    },
+    "input_tokens": 5030,
+    "output_tokens": 1774,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00721\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"传输、网络安全产品运营维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取具体产品运营维护活动；保留共享职业动作及对象，去除经验和优先修饰。\",\"issues\":[]},{\"id\":\"sp10k-00722\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为缴款时间及行政流程要求，不涉及职业能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-00723\",\"spans\":[{\"start\":0,\"end\":5,\"text\":\"博士研究生\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留适用年龄放宽条件的学历资格，年龄和出生日期不标。\",\"issues\":[]},{\"id\":\"sp10k-00724\",\"spans\":[{\"start\":2,\"end\":18,\"text\":\"规划、分析、优化定制拆单信息系统\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"各动作共享必要的系统对象，保留完整职业活动跨度。\",\"issues\":[]},{\"id\":\"sp10k-00725\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"商业管理系统的组成\",\"label\":\"K\"},{\"start\":12,\"end\":17,\"text\":\"实施与维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"系统组成属于知识，实施与维护属于职业活动；括号内容是对象范围说明。\",\"issues\":[]},{\"id\":\"sp10k-00726\",\"spans\":[{\"start\":4,\"end\":7,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":10,\"end\":16,\"text\":\"团队合作精神\",\"label\":\"T\"},{\"start\":17,\"end\":21,\"text\":\"自学能力\",\"label\":\"T\"},{\"start\":24,\"end\":30,\"text\":\"创新探索能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为可迁移的通用能力或特质，去除程度和要求触发词。\",\"issues\":[]},{\"id\":\"sp10k-00727\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"软件及系统测试原理\",\"label\":\"K\"},{\"start\":12,\"end\":14,\"text\":\"方法\",\"label\":\"K\"},{\"start\":21,\"end\":25,\"text\":\"测试仪器\",\"label\":\"S\"},{\"start\":27,\"end\":40,\"text\":\"smartbitsixia\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"测试原理和概括方法体系标K；明确使用的测试仪器及其示例标S，保留原文拼写。\",\"issues\":[]},{\"id\":\"sp10k-00728\",\"spans\":[{\"start\":13,\"end\":23,\"text\":\"国家网络安全相关法规\",\"label\":\"K\"},{\"start\":24,\"end\":37,\"text\":\"医药行业计算机安全相关规定\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"法规及行业安全规定为知识要求；泛化工作经验及年限不标。\",\"issues\":[]},{\"id\":\"sp10k-00729\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"python\",\"label\":\"S\"},{\"start\":12,\"end\":22,\"text\":\"golang开发编程\",\"label\":\"S\"},{\"start\":27,\"end\":42,\"text\":\"python/Golang开发\",\"label\":\"S\"},{\"start\":45,\"end\":49,\"text\":\"后台开发\",\"label\":\"S\"},{\"start\":50,\"end\":55,\"text\":\"分布式框架\",\"label\":\"S\"},{\"start\":56,\"end\":61,\"text\":\"消息中间件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"开发编程、后台开发及岗位工具栈标S；具体开发经历去除经验后意义完整，年限不标。\",\"issues\":[]},{\"id\":\"sp10k-00730\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"动环/IDC相关设施数据采集\",\"label\":\"S\"},{\"start\":20,\"end\":49,\"text\":\"FSU、视频、门禁、空调、UPS、开关电源、电池等控制接口\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"设施数据采集为职业活动；所列设施的控制接口为专业知识对象，保留共享中心语以避免退化为设备名称列表。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00721",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "传输、网络安全产品运营维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取具体产品运营维护活动；保留共享职业动作及对象，去除经验和优先修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00722",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为缴款时间及行政流程要求，不涉及职业能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00723",
+        "spans": [
+          {
+            "start": 0,
+            "end": 5,
+            "text": "博士研究生",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留适用年龄放宽条件的学历资格，年龄和出生日期不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00724",
+        "spans": [
+          {
+            "start": 2,
+            "end": 18,
+            "text": "规划、分析、优化定制拆单信息系统",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "各动作共享必要的系统对象，保留完整职业活动跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00725",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "商业管理系统的组成",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 17,
+            "text": "实施与维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统组成属于知识，实施与维护属于职业活动；括号内容是对象范围说明。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00726",
+        "spans": [
+          {
+            "start": 4,
+            "end": 7,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "团队合作精神",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "自学能力",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "创新探索能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为可迁移的通用能力或特质，去除程度和要求触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00727",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "软件及系统测试原理",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "方法",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "测试仪器",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 40,
+            "text": "smartbitsixia",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "测试原理和概括方法体系标K；明确使用的测试仪器及其示例标S，保留原文拼写。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00728",
+        "spans": [
+          {
+            "start": 13,
+            "end": 23,
+            "text": "国家网络安全相关法规",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 37,
+            "text": "医药行业计算机安全相关规定",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "法规及行业安全规定为知识要求；泛化工作经验及年限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00729",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "python",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 22,
+            "text": "golang开发编程",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 42,
+            "text": "python/Golang开发",
+            "label": "S"
+          },
+          {
+            "start": 45,
+            "end": 49,
+            "text": "后台开发",
+            "label": "S"
+          },
+          {
+            "start": 50,
+            "end": 55,
+            "text": "分布式框架",
+            "label": "S"
+          },
+          {
+            "start": 56,
+            "end": 61,
+            "text": "消息中间件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "开发编程、后台开发及岗位工具栈标S；具体开发经历去除经验后意义完整，年限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00730",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "动环/IDC相关设施数据采集",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 49,
+            "text": "FSU、视频、门禁、空调、UPS、开关电源、电池等控制接口",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设施数据采集为职业活动；所列设施的控制接口为专业知识对象，保留共享中心语以避免退化为设备名称列表。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 73,
+  "ids": [
+    "sp10k-00721",
+    "sp10k-00722",
+    "sp10k-00723",
+    "sp10k-00724",
+    "sp10k-00725",
+    "sp10k-00726",
+    "sp10k-00727",
+    "sp10k-00728",
+    "sp10k-00729",
+    "sp10k-00730"
+  ],
+  "at": "2026-09-13T14:51:11.522936+00:00"
+}

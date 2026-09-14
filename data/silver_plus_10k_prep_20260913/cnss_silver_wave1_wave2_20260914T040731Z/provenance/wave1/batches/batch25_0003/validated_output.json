@@ -1,0 +1,729 @@
+{
+  "records": [
+    {
+      "id": "sp10k-01823",
+      "spans": [
+        {
+          "start": 12,
+          "end": 19,
+          "text": "技术文档的编写",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "项目名是文档对象限定，抽取文档编写职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01824",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "单点登录SSO集成方法",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "原理",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 25,
+          "text": "Web应用安全",
+          "label": "K"
+        },
+        {
+          "start": 37,
+          "end": 42,
+          "text": "加解密算法",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "集成为可执行方法，原理与安全算法为知识；共享SSO限定不补写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01825",
+      "spans": [
+        {
+          "start": 7,
+          "end": 13,
+          "text": "客户需求调研",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 24,
+          "text": "提供客户需求解决方案",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 38,
+          "text": "推进商务及订单成交",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "三项独立客户与商务职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01828",
+      "spans": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "本科以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业和完整学历；泛化相关专业不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01829",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "文字功底",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "思维逻辑",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 30,
+          "text": "洞察市场、用户不同层次需求",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用文字逻辑能力与明确市场用户需求洞察分开。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01830",
+      "spans": [
+        {
+          "start": 13,
+          "end": 15,
+          "text": "建设",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "日常运营",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "内容编辑",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 30,
+          "text": "发布",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "活动策划",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "客户互动",
+          "label": "T"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "信息监测",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "建设运营共享具体媒体平台对象，细项职责独立；人际互动为T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01831",
+      "spans": [
+        {
+          "start": 8,
+          "end": 10,
+          "text": "管理",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "运维",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "监控",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "三个动作共享明确数据库对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01833",
+      "spans": [
+        {
+          "start": 7,
+          "end": 9,
+          "text": "收集",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "统计",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "分析",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "三个动作共享客户信息对象，准确完整为结果要求不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01834",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "大专以上学历",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "行政服务",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "行政工作流程",
+          "label": "K"
+        },
+        {
+          "start": 30,
+          "end": 40,
+          "text": "行政工作有娴熟的技巧",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "行政服务经历和行政实践技巧为S，流程为K；技巧保留对象与连续原文。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01835",
+      "spans": [
+        {
+          "start": 11,
+          "end": 14,
+          "text": "主动性",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "语言表达",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "沟通能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "出差安排不标；通用特质与表达沟通能力保留，尾部异常符号不更改。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01837",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "表达能力",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "粤语",
+          "label": "L"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "文档编辑能力",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "Word",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 41,
+          "text": "Excel",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用沟通表达、粤语能力、职业文档编辑及工具分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01838",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "新媒体平台的日常运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确平台运维，粉丝增长与活跃度拉动未说明方法，为效果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01839",
+      "spans": [
+        {
+          "start": 0,
+          "end": 13,
+          "text": "普通高等学校本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 30,
+          "text": "CET-4（425分及以上）证书",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历与语言考试资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01840",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "行政综合类事务由领导指定但未明确执行内容，范围待决而非确认负例。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "行政综合类事务",
+          "alternatives": [
+            "具体行政职业活动，纳入",
+            "泛化其他任务，不标"
+          ],
+          "reason": "没有具体事务或动作，现有片段不足以确定合法技能提及。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01841",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "组织、督导工厂周/月存货盘点",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "组织督导绑定库存盘点专业职能，保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01842",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "微软主流操作系统",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "AD域控",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "常用办公软件",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 28,
+          "text": "防病毒软件",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "IP电话",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "视频会议",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位系统及通信工具列表，无原理课程限定，按工具使用要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01844",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "Ansible",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 18,
+          "text": "Ansible",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 26,
+          "text": "自动化运维",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 29,
+          "text": "编排",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "同条两次工具提及均由明确使用实践限定；分别保留独立出现位置。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01847",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "沟通协调能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "公司认同和服从地区派遣不作为技能要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01849",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "存储运维",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 34,
+          "text": "数据库管理与优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历专业与具体运维管理活动分别处理。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01850",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "安全意识",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "认真",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "细心",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "虚心好学",
+          "label": "T"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "沟通能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用安全意识、工作特质及沟通能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01851",
+      "spans": [
+        {
+          "start": 4,
+          "end": 18,
+          "text": "IT系统基础架构的设计和规划",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设计规划共享明确架构对象，保留完整活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01852",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "逻辑思维能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "沟通协调能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01856",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "特种作业操作证-高压电工作业",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "维修电工",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 27,
+          "text": "登高作业证",
+          "label": "K"
+        },
+        {
+          "start": 28,
+          "end": 34,
+          "text": "继电保护证书",
+          "label": "K"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "电工证件",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确持证语境，维修电工由共享证件要求限定；非语言资格K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01859",
+      "spans": [
+        {
+          "start": 5,
+          "end": 7,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "协作能力",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 24,
+          "text": "执行力",
+          "label": "T"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "积极主动",
+          "label": "T"
+        },
+        {
+          "start": 41,
+          "end": 44,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 48,
+          "end": 50,
+          "text": "耐心",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用能力与特质；服从具体安排不另标技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01860",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "耐心",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "上进心",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 27,
+          "text": "乐于承担工作压力",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 32,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 37,
+          "text": "安全意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用能力特质；承担工作压力的意愿完整保留。",
+      "issues": []
+    }
+  ]
+}

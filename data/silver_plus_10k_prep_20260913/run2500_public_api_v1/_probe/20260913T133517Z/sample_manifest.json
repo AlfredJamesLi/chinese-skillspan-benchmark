@@ -1,0 +1,37 @@
+{
+  "prompt_id": "silver_public_api_v1.0",
+  "prompt_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/silver_prompt.txt",
+  "model": "gpt-6-astra",
+  "n": 20,
+  "batch_size": 20,
+  "n_batches": 1,
+  "ids": [
+    "sp10k-00041",
+    "sp10k-00011",
+    "sp10k-00012",
+    "sp10k-00013",
+    "sp10k-00014",
+    "sp10k-00015",
+    "sp10k-00016",
+    "sp10k-00017",
+    "sp10k-00018",
+    "sp10k-00019",
+    "sp10k-00020",
+    "sp10k-00021",
+    "sp10k-00022",
+    "sp10k-00023",
+    "sp10k-00024",
+    "sp10k-00025",
+    "sp10k-00026",
+    "sp10k-00027",
+    "sp10k-00028",
+    "sp10k-00029"
+  ],
+  "domain_counts": {
+    "上市公司招聘": 1,
+    "阿里云公开数据集": 10,
+    "事业单位招聘": 9
+  },
+  "created": "2026-09-13T13:35:17.842095+00:00",
+  "probe": true
+}

@@ -1,0 +1,343 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 67.223,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5048,
+    "completion_tokens": 2160,
+    "total_tokens": 7208,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1034
+    },
+    "input_tokens": 5048,
+    "output_tokens": 2160,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-05569",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            26
+          ],
+          "to": [
+            11,
+            24
+          ],
+          "text": "形成LessonLearn"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05430\",\"spans\":[{\"start\":19,\"end\":29,\"text\":\"全日制本科及以上学历\",\"label\":\"K\"},{\"start\":30,\"end\":34,\"text\":\"电气工程\",\"label\":\"K\"},{\"start\":35,\"end\":39,\"text\":\"暖通空调\",\"label\":\"K\"},{\"start\":40,\"end\":44,\"text\":\"土木工程\",\"label\":\"K\"},{\"start\":45,\"end\":49,\"text\":\"建筑工程\",\"label\":\"K\"},{\"start\":50,\"end\":54,\"text\":\"物业管理\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"完整学历资格及各专业名标K；不标泛化的相关专业修饰。\",\"issues\":[]},{\"id\":\"sp10k-05449\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"与原厂进行沟通\",\"label\":\"T\"},{\"start\":10,\"end\":28,\"text\":\"争取相关技术支持、价格支持及客户支持\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"原厂沟通及争取外部支持属于通用沟通与资源协调能力；后项保留共享动作。\",\"issues\":[]},{\"id\":\"sp10k-05455\",\"spans\":[{\"start\":5,\"end\":13,\"text\":\"住户主的日常起居\",\"label\":\"S\"},{\"start\":21,\"end\":29,\"text\":\"使用适应性的设备\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"日常起居在协助或负责的职责语境中表示照护职能；设备使用为具体职业动作。\",\"issues\":[]},{\"id\":\"sp10k-05460\",\"spans\":[{\"start\":2,\"end\":22,\"text\":\"电气系统（低压配电、照明、动力等）的设计\",\"label\":\"S\"},{\"start\":22,\"end\":24,\"text\":\"安装\",\"label\":\"S\"},{\"start\":25,\"end\":27,\"text\":\"调试\",\"label\":\"S\"},{\"start\":28,\"end\":30,\"text\":\"维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分设计、安装、调试和维护动作；后续动作的电气系统对象由局部共享语境限定。\",\"issues\":[]},{\"id\":\"sp10k-05461\",\"spans\":[{\"start\":5,\"end\":10,\"text\":\"PLC编程\",\"label\":\"S\"},{\"start\":10,\"end\":12,\"text\":\"调试\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"PLC编程与调试为可执行技术活动；不更正或补写原文修饰语。\",\"issues\":[]},{\"id\":\"sp10k-05497\",\"spans\":[{\"start\":7,\"end\":30,\"text\":\"制定并完善财务管理制度、内控流程及财务核算体系\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"并列对象共享制定并完善动作，保留完整跨度；后续规范运行和监管契合为结果要求。\",\"issues\":[]},{\"id\":\"sp10k-05542\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"业务数据需求的调研\",\"label\":\"S\"},{\"start\":12,\"end\":14,\"text\":\"分析\",\"label\":\"S\"},{\"start\":15,\"end\":17,\"text\":\"评审\",\"label\":\"S\"},{\"start\":18,\"end\":26,\"text\":\"设计数据解决方案\",\"label\":\"S\"},{\"start\":27,\"end\":33,\"text\":\"组织方案评审\",\"label\":\"S\"},{\"start\":34,\"end\":38,\"text\":\"推动落地\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"独立业务动作分别标注；分析、评审及落地均有局部明确的业务对象。\",\"issues\":[]},{\"id\":\"sp10k-05553\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"海外项目采购\",\"label\":\"S\"},{\"start\":16,\"end\":24,\"text\":\"国外当地材料采购\",\"label\":\"S\"},{\"start\":25,\"end\":39,\"text\":\"对接措施、货代等业务合同签订\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"采购与业务合同签订为职业活动，保留原文对象表述；交付进度与质量保障为纯结果要求。\",\"issues\":[]},{\"id\":\"sp10k-05566\",\"spans\":[{\"start\":1,\"end\":5,\"text\":\"产品创新\",\"label\":\"S\"},{\"start\":6,\"end\":12,\"text\":\"用户私域运营\",\"label\":\"S\"},{\"start\":17,\"end\":24,\"text\":\"多渠道营销逻辑\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"两项经验去除经验后仍为完整职业活动；营销逻辑为领域知识。\",\"issues\":[]},{\"id\":\"sp10k-05569\",\"spans\":[{\"start\":0,\"end\":10,\"text\":\"总结项目过程经验教训\",\"label\":\"T\"},{\"start\":11,\"end\":26,\"text\":\"形成LessonLearn\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"总结项目经验及形成经验教训属于泛化工作反思能力；任职要求标题不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05430",
+        "spans": [
+          {
+            "start": 19,
+            "end": 29,
+            "text": "全日制本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "电气工程",
+            "label": "K"
+          },
+          {
+            "start": 35,
+            "end": 39,
+            "text": "暖通空调",
+            "label": "K"
+          },
+          {
+            "start": 40,
+            "end": 44,
+            "text": "土木工程",
+            "label": "K"
+          },
+          {
+            "start": 45,
+            "end": 49,
+            "text": "建筑工程",
+            "label": "K"
+          },
+          {
+            "start": 50,
+            "end": 54,
+            "text": "物业管理",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "完整学历资格及各专业名标K；不标泛化的相关专业修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05449",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "与原厂进行沟通",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 28,
+            "text": "争取相关技术支持、价格支持及客户支持",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "原厂沟通及争取外部支持属于通用沟通与资源协调能力；后项保留共享动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05455",
+        "spans": [
+          {
+            "start": 5,
+            "end": 13,
+            "text": "住户主的日常起居",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 29,
+            "text": "使用适应性的设备",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "日常起居在协助或负责的职责语境中表示照护职能；设备使用为具体职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05460",
+        "spans": [
+          {
+            "start": 2,
+            "end": 22,
+            "text": "电气系统（低压配电、照明、动力等）的设计",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 24,
+            "text": "安装",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 27,
+            "text": "调试",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 30,
+            "text": "维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分设计、安装、调试和维护动作；后续动作的电气系统对象由局部共享语境限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05461",
+        "spans": [
+          {
+            "start": 5,
+            "end": 10,
+            "text": "PLC编程",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "调试",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "PLC编程与调试为可执行技术活动；不更正或补写原文修饰语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05497",
+        "spans": [
+          {
+            "start": 7,
+            "end": 30,
+            "text": "制定并完善财务管理制度、内控流程及财务核算体系",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列对象共享制定并完善动作，保留完整跨度；后续规范运行和监管契合为结果要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05542",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "业务数据需求的调研",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "分析",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "评审",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "text": "设计数据解决方案",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "text": "组织方案评审",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "text": "推动落地",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "独立业务动作分别标注；分析、评审及落地均有局部明确的业务对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05553",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "海外项目采购",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "text": "国外当地材料采购",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 39,
+            "text": "对接措施、货代等业务合同签订",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "采购与业务合同签订为职业活动，保留原文对象表述；交付进度与质量保障为纯结果要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05566",
+        "spans": [
+          {
+            "start": 1,
+            "end": 5,
+            "text": "产品创新",
+            "label": "S"
+          },
+          {
+            "start": 6,
+            "end": 12,
+            "text": "用户私域运营",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "text": "多渠道营销逻辑",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项经验去除经验后仍为完整职业活动；营销逻辑为领域知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05569",
+        "spans": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "总结项目过程经验教训",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 24,
+            "text": "形成LessonLearn",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "总结项目经验及形成经验教训属于泛化工作反思能力；任职要求标题不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 197,
+  "ids": [
+    "sp10k-05430",
+    "sp10k-05449",
+    "sp10k-05455",
+    "sp10k-05460",
+    "sp10k-05461",
+    "sp10k-05497",
+    "sp10k-05542",
+    "sp10k-05553",
+    "sp10k-05566",
+    "sp10k-05569"
+  ],
+  "at": "2026-09-13T16:54:44.379726+00:00"
+}

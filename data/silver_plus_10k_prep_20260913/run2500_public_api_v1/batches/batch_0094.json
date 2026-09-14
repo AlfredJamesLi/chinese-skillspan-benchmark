@@ -1,0 +1,370 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 56.934,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5053,
+    "completion_tokens": 1810,
+    "total_tokens": 6863,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 681
+    },
+    "input_tokens": 5053,
+    "output_tokens": 1810,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00940",
+      "repairs": [
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            42,
+            45
+          ],
+          "to": [
+            42,
+            46
+          ],
+          "text": "项目投资"
+        },
+        {
+          "i": 8,
+          "action": "snapped",
+          "from": [
+            46,
+            50
+          ],
+          "to": [
+            47,
+            51
+          ],
+          "text": "市场营销"
+        },
+        {
+          "i": 9,
+          "action": "snapped",
+          "from": [
+            51,
+            55
+          ],
+          "to": [
+            52,
+            56
+          ],
+          "text": "投资分析"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00931\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"HTML\",\"label\":\"S\"},{\"start\":7,\"end\":10,\"text\":\"DIV\",\"label\":\"S\"},{\"start\":11,\"end\":14,\"text\":\"CSS\",\"label\":\"S\"},{\"start\":15,\"end\":25,\"text\":\"Javascript\",\"label\":\"S\"},{\"start\":29,\"end\":41,\"text\":\"制作pc端手机端网站单页\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"技术名按实际制作网站的运用语境标S；制作活动保留完整对象。\",\"issues\":[]},{\"id\":\"sp10k-00932\",\"spans\":[{\"start\":1,\"end\":4,\"text\":\"责任心\",\"label\":\"T\"},{\"start\":8,\"end\":14,\"text\":\"沟通协调能力\",\"label\":\"T\"},{\"start\":16,\"end\":22,\"text\":\"团队合作精神\",\"label\":\"T\"},{\"start\":23,\"end\":27,\"text\":\"创新精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为通用能力或特质，去除要求触发词和程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-00933\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"应用系统软件的现场咨询和培训\",\"label\":\"S\"},{\"start\":19,\"end\":25,\"text\":\"解决系统异常\",\"label\":\"S\"},{\"start\":26,\"end\":37,\"text\":\"对现场专项问题进行分析\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确职业活动；咨询和培训共享必要对象，保留连续完整短语。\",\"issues\":[]},{\"id\":\"sp10k-00934\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"描述招聘单位提供实验室、团队组建支持及科研经费，属于就职支持待遇，非候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00935\",\"spans\":[],\"status\":\"adjudication_required\",\"note\":\"片段缺少上下文，无法确认是候选人学历要求还是其他条件说明。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"取得较高学历\",\"alternatives\":[\"候选人学历资格要求，纳入标注\",\"待遇或其他行政条件，不纳入标注\"],\"reason\":\"未说明所指学历层次及该条款用途，需要前后文确认是否属于招聘资格要求。\"}]},{\"id\":\"sp10k-00936\",\"spans\":[{\"start\":2,\"end\":19,\"text\":\"组织、指导、审核各分区运维工作开展\",\"label\":\"S\"},{\"start\":20,\"end\":26,\"text\":\"协调解决问题\",\"label\":\"T\"},{\"start\":29,\"end\":47,\"text\":\"跟踪、评价各分区设备运维计划完成情况\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"运维组织审核及计划跟踪评价为职业活动，共享必要对象而保留；未限定具体问题对象的协调解决问题标T。\",\"issues\":[]},{\"id\":\"sp10k-00937\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"智能化各子系统的工程设计\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"运维组织\",\"label\":\"S\"},{\"start\":21,\"end\":37,\"text\":\"完成大中型智能化系统项目设计方案\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"工程设计、运维组织及完成项目设计方案均为明确职业活动；共享领域限定由局部语境理解。\",\"issues\":[]},{\"id\":\"sp10k-00938\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明选调报名职位数量限制，属于报名行政流程。\",\"issues\":[]},{\"id\":\"sp10k-00939\",\"spans\":[{\"start\":9,\"end\":16,\"text\":\"Linux运维\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"常用命令\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"Linux运维及其常用命令处于实际运维技能语境，标S；标题和要求触发词不标。\",\"issues\":[]},{\"id\":\"sp10k-00940\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"工商管理\",\"label\":\"K\"},{\"start\":5,\"end\":9,\"text\":\"市场营销\",\"label\":\"K\"},{\"start\":10,\"end\":14,\"text\":\"新闻传播\",\"label\":\"K\"},{\"start\":15,\"end\":18,\"text\":\"广告学\",\"label\":\"K\"},{\"start\":19,\"end\":22,\"text\":\"经济学\",\"label\":\"K\"},{\"start\":29,\"end\":33,\"text\":\"城市规划\",\"label\":\"K\"},{\"start\":34,\"end\":41,\"text\":\"房地产经营管理\",\"label\":\"K\"},{\"start\":42,\"end\":45,\"text\":\"项目投资\",\"label\":\"K\"},{\"start\":46,\"end\":50,\"text\":\"市场营销\",\"label\":\"K\"},{\"start\":51,\"end\":55,\"text\":\"投资分析\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"前段为专业名，后段明确要求相关知识培训，均标K；来源信息不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00931",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "HTML",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "text": "DIV",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "text": "CSS",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 25,
+            "text": "Javascript",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 41,
+            "text": "制作pc端手机端网站单页",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "技术名按实际制作网站的运用语境标S；制作活动保留完整对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00932",
+        "spans": [
+          {
+            "start": 1,
+            "end": 4,
+            "text": "责任心",
+            "label": "T"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "沟通协调能力",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "团队合作精神",
+            "label": "T"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "创新精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为通用能力或特质，去除要求触发词和程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00933",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "应用系统软件的现场咨询和培训",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "解决系统异常",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 37,
+            "text": "对现场专项问题进行分析",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确职业活动；咨询和培训共享必要对象，保留连续完整短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00934",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "描述招聘单位提供实验室、团队组建支持及科研经费，属于就职支持待遇，非候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00935",
+        "spans": [],
+        "status": "adjudication_required",
+        "note": "片段缺少上下文，无法确认是候选人学历要求还是其他条件说明。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "取得较高学历",
+            "alternatives": [
+              "候选人学历资格要求，纳入标注",
+              "待遇或其他行政条件，不纳入标注"
+            ],
+            "reason": "未说明所指学历层次及该条款用途，需要前后文确认是否属于招聘资格要求。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00936",
+        "spans": [
+          {
+            "start": 2,
+            "end": 19,
+            "text": "组织、指导、审核各分区运维工作开展",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "协调解决问题",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 47,
+            "text": "跟踪、评价各分区设备运维计划完成情况",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "运维组织审核及计划跟踪评价为职业活动，共享必要对象而保留；未限定具体问题对象的协调解决问题标T。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00937",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "智能化各子系统的工程设计",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "运维组织",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 37,
+            "text": "完成大中型智能化系统项目设计方案",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "工程设计、运维组织及完成项目设计方案均为明确职业活动；共享领域限定由局部语境理解。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00938",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明选调报名职位数量限制，属于报名行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00939",
+        "spans": [
+          {
+            "start": 9,
+            "end": 16,
+            "text": "Linux运维",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "常用命令",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Linux运维及其常用命令处于实际运维技能语境，标S；标题和要求触发词不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00940",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "工商管理",
+            "label": "K"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "市场营销",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "新闻传播",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 18,
+            "text": "广告学",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 22,
+            "text": "经济学",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "城市规划",
+            "label": "K"
+          },
+          {
+            "start": 34,
+            "end": 41,
+            "text": "房地产经营管理",
+            "label": "K"
+          },
+          {
+            "start": 42,
+            "end": 46,
+            "text": "项目投资",
+            "label": "K"
+          },
+          {
+            "start": 47,
+            "end": 51,
+            "text": "市场营销",
+            "label": "K"
+          },
+          {
+            "start": 52,
+            "end": 56,
+            "text": "投资分析",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "前段为专业名，后段明确要求相关知识培训，均标K；来源信息不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 94,
+  "ids": [
+    "sp10k-00931",
+    "sp10k-00932",
+    "sp10k-00933",
+    "sp10k-00934",
+    "sp10k-00935",
+    "sp10k-00936",
+    "sp10k-00937",
+    "sp10k-00938",
+    "sp10k-00939",
+    "sp10k-00940"
+  ],
+  "at": "2026-09-13T15:09:10.416071+00:00"
+}

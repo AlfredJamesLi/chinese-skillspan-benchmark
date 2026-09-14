@@ -1,0 +1,523 @@
+{
+  "attempt": 3,
+  "http_status": 200,
+  "elapsed_s": 88.314,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5479,
+    "completion_tokens": 2827,
+    "total_tokens": 8306,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1034
+    },
+    "input_tokens": 5479,
+    "output_tokens": 2827,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "validation": {
+    "ok": false,
+    "n_errors": 3,
+    "errors": [
+      {
+        "kind": "offset_mismatch",
+        "id": "sp10k-00026",
+        "i": 0,
+        "msg": {
+          "got": "数据库优化和维护",
+          "slice": "据库优化和维护工"
+        }
+      },
+      {
+        "kind": "offset_mismatch",
+        "id": "sp10k-00028",
+        "i": 0,
+        "msg": {
+          "got": "编写运维体系文档以及各类总结汇报文件",
+          "slice": "写运维体系文档以及各类总结汇报文件能力"
+        }
+      },
+      {
+        "kind": "offset_mismatch",
+        "id": "sp10k-00028",
+        "i": 1,
+        "msg": {
+          "got": "制定电气专业（含弱电）的各类制度、流程、标准、规范",
+          "slice": "电气专业（含弱电）的各类制度、流程、标准、规范"
+        }
+      }
+    ]
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00041\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"责任担当\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"执行能力\",\"label\":\"T\"},{\"start\":14,\"end\":18,\"text\":\"专业能力\",\"label\":\"T\"},{\"start\":19,\"end\":23,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":24,\"end\":30,\"text\":\"沟通表达能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取特质与通用能力；专业能力未绑定具体职业领域。\",\"issues\":[]},{\"id\":\"sp10k-00011\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"理解客户需求\",\"label\":\"S\"},{\"start\":9,\"end\":19,\"text\":\"提供行业最优解决方案\",\"label\":\"S\"},{\"start\":20,\"end\":35,\"text\":\"对接开发部门的极速协同沟通能力\",\"label\":\"T\"},{\"start\":36,\"end\":44,\"text\":\"导入项目具体业务\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分业务活动与人员协同能力；承接顺畅为结果描述。\",\"issues\":[]},{\"id\":\"sp10k-00012\",\"spans\":[{\"start\":5,\"end\":8,\"text\":\"数据库\",\"label\":\"S\"},{\"start\":11,\"end\":20,\"text\":\"SQLServer\",\"label\":\"S\"},{\"start\":21,\"end\":26,\"text\":\"MySQL\",\"label\":\"S\"},{\"start\":27,\"end\":33,\"text\":\"Oracle\",\"label\":\"S\"},{\"start\":38,\"end\":50,\"text\":\"编写复杂的函数、存储过程\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库及具体工具受编写实践语境限定；编写动作保留共享对象。\",\"issues\":[]},{\"id\":\"sp10k-00013\",\"spans\":[{\"start\":41,\"end\":47,\"text\":\"开放共享服务\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取仪器开放共享服务职责；仪器资产信息和预计服务机时不标。\",\"issues\":[]},{\"id\":\"sp10k-00014\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"VOIP网络架构\",\"label\":\"K\"},{\"start\":11,\"end\":20,\"text\":\"SIP语音网络架构\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"网络架构为领域知识要求。\",\"issues\":[]},{\"id\":\"sp10k-00015\",\"spans\":[{\"start\":2,\"end\":22,\"text\":\"信息安全相关系统与服务器的维护与日常巡检\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"维护与巡检共享必要对象，保留完整职业活动短语。\",\"issues\":[]},{\"id\":\"sp10k-00016\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"文字功底\",\"label\":\"T\"},{\"start\":7,\"end\":11,\"text\":\"专业素养\",\"label\":\"T\"},{\"start\":17,\"end\":23,\"text\":\"开拓创新意识\",\"label\":\"T\"},{\"start\":24,\"end\":33,\"text\":\"解决实际问题的能力\",\"label\":\"T\"},{\"start\":34,\"end\":38,\"text\":\"服务意识\",\"label\":\"T\"},{\"start\":42,\"end\":48,\"text\":\"团结协作共事\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为通用素养与能力；解决问题没有具体技术或业务对象。\",\"issues\":[]},{\"id\":\"sp10k-00017\",\"spans\":[{\"start\":3,\"end\":18,\"text\":\"汇报日志、周报、月度总结等文档\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确文档汇报职责，保留共享动作与并列文档对象。\",\"issues\":[]},{\"id\":\"sp10k-00018\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明证明材料的扫描和邮件提交流程，示例证件不是独立任职资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00019\",\"spans\":[{\"start\":14,\"end\":20,\"text\":\"中国古代文学\",\"label\":\"K\"},{\"start\":21,\"end\":28,\"text\":\"中国现当代文学\",\"label\":\"K\"},{\"start\":29,\"end\":38,\"text\":\"比较文学与世界文学\",\"label\":\"K\"},{\"start\":39,\"end\":42,\"text\":\"文艺学\",\"label\":\"K\"},{\"start\":43,\"end\":48,\"text\":\"汉语言文学\",\"label\":\"K\"},{\"start\":49,\"end\":53,\"text\":\"学前教育\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确要求的专业名称，不标岗位名称和报名标题。\",\"issues\":[]},{\"id\":\"sp10k-00020\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"报考信息真实性及资格取消规定属于应聘行政流程。\",\"issues\":[]},{\"id\":\"sp10k-00021\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"环保局业务\",\"label\":\"K\"},{\"start\":10,\"end\":14,\"text\":\"C#语言\",\"label\":\"S\"},{\"start\":16,\"end\":26,\"text\":\".Net平台项目开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"业务知识标K；编程语言和平台项目开发按局部开发实践标S，去除经验后活动完整。\",\"issues\":[]},{\"id\":\"sp10k-00022\",\"spans\":[{\"start\":0,\"end\":10,\"text\":\"全日制本科及以上学历\",\"label\":\"K\"},{\"start\":11,\"end\":14,\"text\":\"计算机\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留完整学历资格和具体专业名；泛化工作经验及年限不标。\",\"issues\":[]},{\"id\":\"sp10k-00023\",\"spans\":[{\"start\":9,\"end\":15,\"text\":\"本科以上学历\",\"label\":\"K\"},{\"start\":16,\"end\":19,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":20,\"end\":22,\"text\":\"通信\",\"label\":\"K\"},{\"start\":23,\"end\":25,\"text\":\"控制\",\"label\":\"K\"},{\"start\":26,\"end\":30,\"text\":\"机械电子\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历和专业要求；毕业届别及应届身份不作为能力知识提及。\",\"issues\":[]},{\"id\":\"sp10k-00024\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报考信息填写及资格复审材料一致性要求。\",\"issues\":[]},{\"id\":\"sp10k-00025\",\"spans\":[],\"status\":\"adjudication_required\",\"note\":\"仅有内容列表，无法确认是候选人知识要求还是培训、考试等内容介绍。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"内容主要为教育学、专业知识、心理学等\",\"alternatives\":[\"作为候选人知识要求抽取\",\"作为内容介绍不抽取\"],\"reason\":\"缺少“内容”所指及要求对象，不能确认标注范围。\"}]},{\"id\":\"sp10k-00026\",\"spans\":[{\"start\":6,\"end\":14,\"text\":\"数据库优化和维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"优化和维护共享数据库对象，保留完整活动短语。\",\"issues\":[]},{\"id\":\"sp10k-00027\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"泛指其他资格条件，未提供具体能力、知识或资格名称。\",\"issues\":[]},{\"id\":\"sp10k-00028\",\"spans\":[{\"start\":5,\"end\":24,\"text\":\"编写运维体系文档以及各类总结汇报文件\",\"label\":\"S\"},{\"start\":28,\"end\":51,\"text\":\"制定电气专业（含弱电）的各类制度、流程、标准、规范\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"拆分文档编写和专业制度制定两项职责，各自保留共享动作及对象。\",\"issues\":[]},{\"id\":\"sp10k-00029\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅介绍专业测试成绩组成及权重，不构成具体能力要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00041",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "责任担当",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "执行能力",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "专业能力",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "text": "沟通表达能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取特质与通用能力；专业能力未绑定具体职业领域。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00011",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "理解客户需求",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 19,
+            "text": "提供行业最优解决方案",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 35,
+            "text": "对接开发部门的极速协同沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 36,
+            "end": 44,
+            "text": "导入项目具体业务",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分业务活动与人员协同能力；承接顺畅为结果描述。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00012",
+        "spans": [
+          {
+            "start": 5,
+            "end": 8,
+            "text": "数据库",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 20,
+            "text": "SQLServer",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "text": "MySQL",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "text": "Oracle",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 50,
+            "text": "编写复杂的函数、存储过程",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库及具体工具受编写实践语境限定；编写动作保留共享对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00013",
+        "spans": [
+          {
+            "start": 41,
+            "end": 47,
+            "text": "开放共享服务",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取仪器开放共享服务职责；仪器资产信息和预计服务机时不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00014",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "VOIP网络架构",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 20,
+            "text": "SIP语音网络架构",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "网络架构为领域知识要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00015",
+        "spans": [
+          {
+            "start": 2,
+            "end": 22,
+            "text": "信息安全相关系统与服务器的维护与日常巡检",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "维护与巡检共享必要对象，保留完整职业活动短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00016",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "文字功底",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "专业素养",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "开拓创新意识",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 33,
+            "text": "解决实际问题的能力",
+            "label": "T"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "text": "服务意识",
+            "label": "T"
+          },
+          {
+            "start": 42,
+            "end": 48,
+            "text": "团结协作共事",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为通用素养与能力；解决问题没有具体技术或业务对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00017",
+        "spans": [
+          {
+            "start": 3,
+            "end": 18,
+            "text": "汇报日志、周报、月度总结等文档",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确文档汇报职责，保留共享动作与并列文档对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00018",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明证明材料的扫描和邮件提交流程，示例证件不是独立任职资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00019",
+        "spans": [
+          {
+            "start": 14,
+            "end": 20,
+            "text": "中国古代文学",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 28,
+            "text": "中国现当代文学",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 38,
+            "text": "比较文学与世界文学",
+            "label": "K"
+          },
+          {
+            "start": 39,
+            "end": 42,
+            "text": "文艺学",
+            "label": "K"
+          },
+          {
+            "start": 43,
+            "end": 48,
+            "text": "汉语言文学",
+            "label": "K"
+          },
+          {
+            "start": 49,
+            "end": 53,
+            "text": "学前教育",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确要求的专业名称，不标岗位名称和报名标题。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00020",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "报考信息真实性及资格取消规定属于应聘行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00021",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "环保局业务",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "C#语言",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 26,
+            "text": ".Net平台项目开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "业务知识标K；编程语言和平台项目开发按局部开发实践标S，去除经验后活动完整。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00022",
+        "spans": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "全日制本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "text": "计算机",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留完整学历资格和具体专业名；泛化工作经验及年限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00023",
+        "spans": [
+          {
+            "start": 9,
+            "end": 15,
+            "text": "本科以上学历",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "通信",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "控制",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "机械电子",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历和专业要求；毕业届别及应届身份不作为能力知识提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00024",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报考信息填写及资格复审材料一致性要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00025",
+        "spans": [],
+        "status": "adjudication_required",
+        "note": "仅有内容列表，无法确认是候选人知识要求还是培训、考试等内容介绍。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "内容主要为教育学、专业知识、心理学等",
+            "alternatives": [
+              "作为候选人知识要求抽取",
+              "作为内容介绍不抽取"
+            ],
+            "reason": "缺少“内容”所指及要求对象，不能确认标注范围。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00026",
+        "spans": [
+          {
+            "start": 6,
+            "end": 14,
+            "text": "数据库优化和维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "优化和维护共享数据库对象，保留完整活动短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00027",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "泛指其他资格条件，未提供具体能力、知识或资格名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00028",
+        "spans": [
+          {
+            "start": 5,
+            "end": 24,
+            "text": "编写运维体系文档以及各类总结汇报文件",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 51,
+            "text": "制定电气专业（含弱电）的各类制度、流程、标准、规范",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "拆分文档编写和专业制度制定两项职责，各自保留共享动作及对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00029",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅介绍专业测试成绩组成及权重，不构成具体能力要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": false,
+  "batch": 1,
+  "ids": [
+    "sp10k-00041",
+    "sp10k-00011",
+    "sp10k-00012",
+    "sp10k-00013",
+    "sp10k-00014",
+    "sp10k-00015",
+    "sp10k-00016",
+    "sp10k-00017",
+    "sp10k-00018",
+    "sp10k-00019",
+    "sp10k-00020",
+    "sp10k-00021",
+    "sp10k-00022",
+    "sp10k-00023",
+    "sp10k-00024",
+    "sp10k-00025",
+    "sp10k-00026",
+    "sp10k-00027",
+    "sp10k-00028",
+    "sp10k-00029"
+  ],
+  "at": "2026-09-13T13:38:36.880117+00:00"
+}

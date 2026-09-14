@@ -1,0 +1,289 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 59.273,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5129,
+    "completion_tokens": 1881,
+    "total_tokens": 7010,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 846
+    },
+    "input_tokens": 5129,
+    "output_tokens": 1881,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00491\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"招聘组织方的资格复审安排，不是候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00492\",\"spans\":[{\"start\":15,\"end\":24,\"text\":\"与工厂提前取得联系\",\"label\":\"T\"},{\"start\":25,\"end\":33,\"text\":\"确定好验货的时间\",\"label\":\"S\"},{\"start\":36,\"end\":45,\"text\":\"每个订单的质量要求\",\"label\":\"K\"},{\"start\":46,\"end\":67,\"text\":\"按照验货计划到工厂或者仓库实地进行验货工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取工厂联络、验货安排、质量要求知识及按计划实地验货职责；订单来源不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00493\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"常用办公软件\",\"label\":\"S\"},{\"start\":14,\"end\":17,\"text\":\"PPT\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"办公软件及PPT均为岗位使用工具，要求触发词不入跨度。\",\"issues\":[]},{\"id\":\"sp10k-00494\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"爆款打造思路\",\"label\":\"K\"},{\"start\":18,\"end\":26,\"text\":\"打造上万月销爆款\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"打造思路为专业知识；实战经验中的打造活动去除经验后意义完整，保留具体业绩对象限定。\",\"issues\":[]},{\"id\":\"sp10k-00495\",\"spans\":[{\"start\":8,\"end\":16,\"text\":\"结构化的思维能力\",\"label\":\"T\"},{\"start\":19,\"end\":25,\"text\":\"基础分析方法\",\"label\":\"S\"},{\"start\":26,\"end\":29,\"text\":\"洞察力\",\"label\":\"T\"}],\"status\":\"adjudication_required\",\"note\":\"结构化思维和洞察力属于通用能力；基础分析方法的知识或通用能力属性待裁决。\",\"issues\":[{\"kind\":\"type\",\"text\":\"基础分析方法\",\"alternatives\":[\"K\",\"T\"],\"reason\":\"可理解为概括性分析方法知识，也可理解为核心能力列表中的通用分析能力；缺少方法内容或使用情境，暂以S占位。\"}]},{\"id\":\"sp10k-00496\",\"spans\":[{\"start\":7,\"end\":11,\"text\":\"技术支持\",\"label\":\"S\"},{\"start\":16,\"end\":19,\"text\":\"微信群\",\"label\":\"S\"},{\"start\":20,\"end\":22,\"text\":\"QQ\",\"label\":\"S\"},{\"start\":33,\"end\":37,\"text\":\"技术支持\",\"label\":\"S\"},{\"start\":40,\"end\":52,\"text\":\"在线及时答复客户技术问题\",\"label\":\"S\"},{\"start\":53,\"end\":61,\"text\":\"客户项目对接调试\",\"label\":\"S\"},{\"start\":64,\"end\":79,\"text\":\"对所支持客户的项目信息进行归档\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取技术支持、技术答疑、项目调试和信息归档职责；微信群和QQ为明确使用的工作工具。\",\"issues\":[]},{\"id\":\"sp10k-00497\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"泛化履职身体和心理条件，不是具体职业能力或软技能提及。\",\"issues\":[]},{\"id\":\"sp10k-00498\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"资格复审及面试人选确定流程，不含候选人能力、知识或资格名称要求。\",\"issues\":[]},{\"id\":\"sp10k-00499\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"内部业务系统上线后运维答疑\",\"label\":\"S\"},{\"start\":16,\"end\":24,\"text\":\"版本持续迭代升级\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"系统运维答疑与版本迭代升级是两项独立职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00500\",\"spans\":[{\"start\":6,\"end\":13,\"text\":\"PHP开发语言\",\"label\":\"S\"},{\"start\":14,\"end\":20,\"text\":\"LNMP开发\",\"label\":\"S\"},{\"start\":21,\"end\":26,\"text\":\"OOP开发\",\"label\":\"S\"},{\"start\":29,\"end\":35,\"text\":\"yii2框架\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"开发语言、开发活动与框架均处于岗位开发运用语境，分别标注。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00491",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "招聘组织方的资格复审安排，不是候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00492",
+        "spans": [
+          {
+            "start": 15,
+            "end": 24,
+            "text": "与工厂提前取得联系",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 33,
+            "text": "确定好验货的时间",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 45,
+            "text": "每个订单的质量要求",
+            "label": "K"
+          },
+          {
+            "start": 46,
+            "end": 67,
+            "text": "按照验货计划到工厂或者仓库实地进行验货工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取工厂联络、验货安排、质量要求知识及按计划实地验货职责；订单来源不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00493",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "常用办公软件",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 17,
+            "text": "PPT",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "办公软件及PPT均为岗位使用工具，要求触发词不入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00494",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "爆款打造思路",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 26,
+            "text": "打造上万月销爆款",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "打造思路为专业知识；实战经验中的打造活动去除经验后意义完整，保留具体业绩对象限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00495",
+        "spans": [
+          {
+            "start": 8,
+            "end": 16,
+            "text": "结构化的思维能力",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "基础分析方法",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 29,
+            "text": "洞察力",
+            "label": "T"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "结构化思维和洞察力属于通用能力；基础分析方法的知识或通用能力属性待裁决。",
+        "issues": [
+          {
+            "kind": "type",
+            "text": "基础分析方法",
+            "alternatives": [
+              "K",
+              "T"
+            ],
+            "reason": "可理解为概括性分析方法知识，也可理解为核心能力列表中的通用分析能力；缺少方法内容或使用情境，暂以S占位。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00496",
+        "spans": [
+          {
+            "start": 7,
+            "end": 11,
+            "text": "技术支持",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "text": "微信群",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "QQ",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "text": "技术支持",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 52,
+            "text": "在线及时答复客户技术问题",
+            "label": "S"
+          },
+          {
+            "start": 53,
+            "end": 61,
+            "text": "客户项目对接调试",
+            "label": "S"
+          },
+          {
+            "start": 64,
+            "end": 79,
+            "text": "对所支持客户的项目信息进行归档",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取技术支持、技术答疑、项目调试和信息归档职责；微信群和QQ为明确使用的工作工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00497",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "泛化履职身体和心理条件，不是具体职业能力或软技能提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00498",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "资格复审及面试人选确定流程，不含候选人能力、知识或资格名称要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00499",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "内部业务系统上线后运维答疑",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 24,
+            "text": "版本持续迭代升级",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "系统运维答疑与版本迭代升级是两项独立职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00500",
+        "spans": [
+          {
+            "start": 6,
+            "end": 13,
+            "text": "PHP开发语言",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "LNMP开发",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "text": "OOP开发",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "yii2框架",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "开发语言、开发活动与框架均处于岗位开发运用语境，分别标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 50,
+  "ids": [
+    "sp10k-00491",
+    "sp10k-00492",
+    "sp10k-00493",
+    "sp10k-00494",
+    "sp10k-00495",
+    "sp10k-00496",
+    "sp10k-00497",
+    "sp10k-00498",
+    "sp10k-00499",
+    "sp10k-00500"
+  ],
+  "at": "2026-09-13T14:32:14.433429+00:00"
+}

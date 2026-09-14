@@ -1,0 +1,456 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 50.821,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5020,
+    "completion_tokens": 1506,
+    "total_tokens": 6526,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 624
+    },
+    "input_tokens": 5020,
+    "output_tokens": 1506,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01274",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            12,
+            20
+          ],
+          "to": [
+            15,
+            21
+          ],
+          "text": "客户服务意识"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01275",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            11
+          ],
+          "to": [
+            4,
+            13
+          ],
+          "text": "Linux体系结构"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            21
+          ],
+          "to": [
+            16,
+            21
+          ],
+          "text": "网络协议栈"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01277",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            20
+          ],
+          "to": [
+            14,
+            23
+          ],
+          "text": "Oracle数据库"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            24,
+            33
+          ],
+          "to": [
+            27,
+            36
+          ],
+          "text": "SQL报表语句编写"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            36,
+            38
+          ],
+          "to": [
+            39,
+            41
+          ],
+          "text": "C#"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            39,
+            43
+          ],
+          "to": [
+            42,
+            50
+          ],
+          "text": "JAVA开发语言"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            48,
+            61
+          ],
+          "to": [
+            53,
+            70
+          ],
+          "text": "MES软件供应商协助下进行二次开发"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01279",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            31,
+            38
+          ],
+          "to": [
+            19,
+            26
+          ],
+          "text": "本科及以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01280",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            13
+          ],
+          "to": [
+            7,
+            12
+          ],
+          "text": "供应商洽谈"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            14,
+            19
+          ],
+          "to": [
+            13,
+            18
+          ],
+          "text": "学习新技术"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            23,
+            29
+          ],
+          "to": [
+            24,
+            28
+          ],
+          "text": "组织培训"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01271\",\"spans\":[{\"start\":5,\"end\":12,\"text\":\"计算机应用能力\",\"label\":\"T\"},{\"start\":15,\"end\":25,\"text\":\"办公自动化软件的应用\",\"label\":\"S\"},{\"start\":28,\"end\":34,\"text\":\"TOMCAT\",\"label\":\"S\"},{\"start\":40,\"end\":43,\"text\":\"SQL\",\"label\":\"S\"},{\"start\":44,\"end\":52,\"text\":\"UNIX常用指令\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取计算机应用通用能力，以及办公软件、中间件和指令的应用能力。\",\"issues\":[]},{\"id\":\"sp10k-01272\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为技能操作考试的栏目或考试名称，未明确提出候选人所需能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-01273\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"全日本科学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"全日本科学历属于非语言学历资格；人力资源相关专业为泛化专业表述，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01274\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"分析及判断力\",\"label\":\"T\"},{\"start\":12,\"end\":20,\"text\":\"客户服务意识\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"两项均为跨行业通用能力或职业特质。\",\"issues\":[]},{\"id\":\"sp10k-01275\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"Linux体系结构\",\"label\":\"K\"},{\"start\":15,\"end\":21,\"text\":\"网络协议栈\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"Linux体系结构和网络协议栈为领域知识；泛化实战经验不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01276\",\"spans\":[{\"start\":14,\"end\":18,\"text\":\"沟通技巧\",\"label\":\"T\"},{\"start\":19,\"end\":25,\"text\":\"团队合作精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"沟通技巧和团队合作精神属于通用软技能。\",\"issues\":[]},{\"id\":\"sp10k-01277\",\"spans\":[{\"start\":4,\"end\":13,\"text\":\"SQLSERVER\",\"label\":\"S\"},{\"start\":14,\"end\":20,\"text\":\"Oracle数据库\",\"label\":\"S\"},{\"start\":24,\"end\":33,\"text\":\"SQL报表语句编写\",\"label\":\"S\"},{\"start\":36,\"end\":38,\"text\":\"C#\",\"label\":\"S\"},{\"start\":39,\"end\":43,\"text\":\"JAVA开发语言\",\"label\":\"S\"},{\"start\":48,\"end\":61,\"text\":\"MES软件供应商协助下进行二次开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取数据库工具、报表语句编写、开发语言及二次开发活动。\",\"issues\":[]},{\"id\":\"sp10k-01278\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"为招聘考察程序及考察事项说明，未提出候选人须具备的具体能力、知识或资格。\",\"issues\":[]},{\"id\":\"sp10k-01279\",\"spans\":[{\"start\":31,\"end\":38,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"本科及以上学历为明确学历资格。\",\"issues\":[]},{\"id\":\"sp10k-01280\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"产品选型\",\"label\":\"S\"},{\"start\":7,\"end\":13,\"text\":\"供应商洽谈\",\"label\":\"S\"},{\"start\":14,\"end\":19,\"text\":\"学习新技术\",\"label\":\"S\"},{\"start\":23,\"end\":29,\"text\":\"组织培训\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"均为职责中明确要求执行的职业活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01271",
+        "spans": [
+          {
+            "start": 5,
+            "end": 12,
+            "text": "计算机应用能力",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 25,
+            "text": "办公自动化软件的应用",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "text": "TOMCAT",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 43,
+            "text": "SQL",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 52,
+            "text": "UNIX常用指令",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取计算机应用通用能力，以及办公软件、中间件和指令的应用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01272",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为技能操作考试的栏目或考试名称，未明确提出候选人所需能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01273",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "全日本科学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "全日本科学历属于非语言学历资格；人力资源相关专业为泛化专业表述，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01274",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "分析及判断力",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "客户服务意识",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项均为跨行业通用能力或职业特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01275",
+        "spans": [
+          {
+            "start": 4,
+            "end": 13,
+            "text": "Linux体系结构",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "text": "网络协议栈",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Linux体系结构和网络协议栈为领域知识；泛化实战经验不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01276",
+        "spans": [
+          {
+            "start": 14,
+            "end": 18,
+            "text": "沟通技巧",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 25,
+            "text": "团队合作精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通技巧和团队合作精神属于通用软技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01277",
+        "spans": [
+          {
+            "start": 4,
+            "end": 13,
+            "text": "SQLSERVER",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 23,
+            "text": "Oracle数据库",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 36,
+            "text": "SQL报表语句编写",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 41,
+            "text": "C#",
+            "label": "S"
+          },
+          {
+            "start": 42,
+            "end": 50,
+            "text": "JAVA开发语言",
+            "label": "S"
+          },
+          {
+            "start": 53,
+            "end": 70,
+            "text": "MES软件供应商协助下进行二次开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取数据库工具、报表语句编写、开发语言及二次开发活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01278",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "为招聘考察程序及考察事项说明，未提出候选人须具备的具体能力、知识或资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01279",
+        "spans": [
+          {
+            "start": 19,
+            "end": 26,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "本科及以上学历为明确学历资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01280",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "产品选型",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 12,
+            "text": "供应商洽谈",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 18,
+            "text": "学习新技术",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "组织培训",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为职责中明确要求执行的职业活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 128,
+  "ids": [
+    "sp10k-01271",
+    "sp10k-01272",
+    "sp10k-01273",
+    "sp10k-01274",
+    "sp10k-01275",
+    "sp10k-01276",
+    "sp10k-01277",
+    "sp10k-01278",
+    "sp10k-01279",
+    "sp10k-01280"
+  ],
+  "at": "2026-09-13T15:41:15.607510+00:00"
+}

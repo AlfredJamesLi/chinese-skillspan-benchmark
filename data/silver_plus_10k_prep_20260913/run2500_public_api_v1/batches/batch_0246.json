@@ -1,0 +1,784 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 33.7,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5058,
+    "completion_tokens": 1628,
+    "total_tokens": 6686,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 466
+    },
+    "input_tokens": 5058,
+    "output_tokens": 1628,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06256",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            10
+          ],
+          "to": [
+            7,
+            13
+          ],
+          "text": "日常运营事务"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            21
+          ],
+          "to": [
+            16,
+            22
+          ],
+          "text": "商品陈列布置"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            26
+          ],
+          "to": [
+            23,
+            27
+          ],
+          "text": "库存管控"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            36,
+            42
+          ],
+          "to": [
+            36,
+            41
+          ],
+          "text": "滞销品处理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06259",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            16,
+            22
+          ],
+          "to": [
+            16,
+            20
+          ],
+          "text": "团队建设"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            23,
+            29
+          ],
+          "to": [
+            21,
+            25
+          ],
+          "text": "发展规划"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            30,
+            36
+          ],
+          "to": [
+            26,
+            32
+          ],
+          "text": "人才梯队引入"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            37,
+            43
+          ],
+          "to": [
+            33,
+            39
+          ],
+          "text": "日常绩效考核"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            44,
+            48
+          ],
+          "to": [
+            40,
+            44
+          ],
+          "text": "能力培训"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            45,
+            47
+          ],
+          "text": "提升"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06260",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            10
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "协调能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            12,
+            20
+          ],
+          "to": [
+            13,
+            19
+          ],
+          "text": "沟通表达能力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            28
+          ],
+          "to": [
+            23,
+            28
+          ],
+          "text": "工作责任心"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            29,
+            39
+          ],
+          "to": [
+            30,
+            39
+          ],
+          "text": "承受较大的工作压力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06261",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            14
+          ],
+          "to": [
+            4,
+            10
+          ],
+          "text": "财务管理软件"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            21
+          ],
+          "to": [
+            11,
+            17
+          ],
+          "text": "常用办公软件"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06262",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            29,
+            35
+          ],
+          "to": [
+            14,
+            20
+          ],
+          "text": "竞品软件调研"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            44,
+            54
+          ],
+          "to": [
+            25,
+            35
+          ],
+          "text": "上位机软件功能的实现"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06263",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            12
+          ],
+          "to": [
+            5,
+            11
+          ],
+          "text": "口头表达能力"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            18
+          ],
+          "to": [
+            12,
+            16
+          ],
+          "text": "写作能力"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            24,
+            28
+          ],
+          "to": [
+            22,
+            26
+          ],
+          "text": "组织能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            29,
+            35
+          ],
+          "to": [
+            27,
+            33
+          ],
+          "text": "沟通协调能力"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            36,
+            40
+          ],
+          "to": [
+            34,
+            38
+          ],
+          "text": "学习能力"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            41,
+            47
+          ],
+          "to": [
+            39,
+            45
+          ],
+          "text": "快速适应能力"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            48,
+            51
+          ],
+          "to": [
+            46,
+            50
+          ],
+          "text": "责任心强"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06264",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            10,
+            12
+          ],
+          "text": "沟通"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            25
+          ],
+          "to": [
+            18,
+            27
+          ],
+          "text": "项目计划及执行能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            26,
+            32
+          ],
+          "to": [
+            28,
+            34
+          ],
+          "text": "热爱销售工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06265",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            15
+          ],
+          "to": [
+            5,
+            14
+          ],
+          "text": "英语能作为工作语言"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06256\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"日常运营事务\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"商品陈列布置\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"库存管控\",\"label\":\"S\"},{\"start\":30,\"end\":32,\"text\":\"补货\",\"label\":\"S\"},{\"start\":33,\"end\":35,\"text\":\"盘点\",\"label\":\"S\"},{\"start\":36,\"end\":42,\"text\":\"滞销品处理\",\"label\":\"S\"},{\"start\":43,\"end\":47,\"text\":\"收银核对\",\"label\":\"S\"},{\"start\":48,\"end\":52,\"text\":\"设备保养\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取门店运营中的具体职业活动；“确保门店运作井然有序”为结果性表述，不标注。\",\"issues\":[]},{\"id\":\"sp10k-06257\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"图控软件的开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求开发图控软件，标注为可执行职业动作。\",\"issues\":[]},{\"id\":\"sp10k-06258\",\"spans\":[{\"start\":1,\"end\":10,\"text\":\"注册电气工程师证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"注册电气工程师证书属于非语言资格。\",\"issues\":[]},{\"id\":\"sp10k-06259\",\"spans\":[{\"start\":16,\"end\":22,\"text\":\"团队建设\",\"label\":\"T\"},{\"start\":23,\"end\":29,\"text\":\"发展规划\",\"label\":\"S\"},{\"start\":30,\"end\":36,\"text\":\"人才梯队引入\",\"label\":\"S\"},{\"start\":37,\"end\":43,\"text\":\"日常绩效考核\",\"label\":\"S\"},{\"start\":44,\"end\":48,\"text\":\"能力培训\",\"label\":\"S\"},{\"start\":49,\"end\":53,\"text\":\"提升\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取物业管理职责中的团队管理能力及具体管理、规划、引入、考核和培训活动。\",\"issues\":[]},{\"id\":\"sp10k-06260\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"协调能力\",\"label\":\"T\"},{\"start\":12,\"end\":20,\"text\":\"沟通表达能力\",\"label\":\"T\"},{\"start\":22,\"end\":28,\"text\":\"工作责任心\",\"label\":\"T\"},{\"start\":29,\"end\":39,\"text\":\"承受较大的工作压力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为跨行业通用能力或个人特质。\",\"issues\":[]},{\"id\":\"sp10k-06261\",\"spans\":[{\"start\":6,\"end\":14,\"text\":\"财务管理软件\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"常用办公软件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求熟练掌握岗位使用的软件工具。\",\"issues\":[]},{\"id\":\"sp10k-06262\",\"spans\":[{\"start\":29,\"end\":35,\"text\":\"竞品软件调研\",\"label\":\"S\"},{\"start\":44,\"end\":54,\"text\":\"上位机软件功能的实现\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取软件调研和功能实现等明确职业活动；文档名称不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-06263\",\"spans\":[{\"start\":6,\"end\":12,\"text\":\"口头表达能力\",\"label\":\"T\"},{\"start\":13,\"end\":18,\"text\":\"写作能力\",\"label\":\"T\"},{\"start\":24,\"end\":28,\"text\":\"组织能力\",\"label\":\"T\"},{\"start\":29,\"end\":35,\"text\":\"沟通协调能力\",\"label\":\"T\"},{\"start\":36,\"end\":40,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":41,\"end\":47,\"text\":\"快速适应能力\",\"label\":\"T\"},{\"start\":48,\"end\":51,\"text\":\"责任心强\",\"label\":\"T\"},{\"start\":52,\"end\":55,\"text\":\"亲和力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为通用沟通、组织、学习适应及个人特质。\",\"issues\":[]},{\"id\":\"sp10k-06264\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"逻辑思维能力\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"沟通\",\"label\":\"T\"},{\"start\":17,\"end\":25,\"text\":\"项目计划及执行能力\",\"label\":\"T\"},{\"start\":26,\"end\":32,\"text\":\"热爱销售工作\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取逻辑思维、沟通、项目执行及销售意愿等通用能力或特质。\",\"issues\":[]},{\"id\":\"sp10k-06265\",\"spans\":[{\"start\":6,\"end\":15,\"text\":\"英语能作为工作语言\",\"label\":\"L\"},{\"start\":16,\"end\":22,\"text\":\"出海意愿动机\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"英语工作语言属于语言要求；出海意愿动机属于职业意愿特质。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06256",
+        "spans": [
+          {
+            "start": 7,
+            "end": 13,
+            "text": "日常运营事务",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "商品陈列布置",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "库存管控",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 32,
+            "text": "补货",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "text": "盘点",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "text": "滞销品处理",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 47,
+            "text": "收银核对",
+            "label": "S"
+          },
+          {
+            "start": 48,
+            "end": 52,
+            "text": "设备保养",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取门店运营中的具体职业活动；“确保门店运作井然有序”为结果性表述，不标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06257",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "图控软件的开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求开发图控软件，标注为可执行职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06258",
+        "spans": [
+          {
+            "start": 1,
+            "end": 10,
+            "text": "注册电气工程师证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "注册电气工程师证书属于非语言资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06259",
+        "spans": [
+          {
+            "start": 16,
+            "end": 20,
+            "text": "团队建设",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "发展规划",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "text": "人才梯队引入",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 39,
+            "text": "日常绩效考核",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 44,
+            "text": "能力培训",
+            "label": "S"
+          },
+          {
+            "start": 45,
+            "end": 47,
+            "text": "提升",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取物业管理职责中的团队管理能力及具体管理、规划、引入、考核和培训活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06260",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "协调能力",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "沟通表达能力",
+            "label": "T"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "text": "工作责任心",
+            "label": "T"
+          },
+          {
+            "start": 30,
+            "end": 39,
+            "text": "承受较大的工作压力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为跨行业通用能力或个人特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06261",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "财务管理软件",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "常用办公软件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求熟练掌握岗位使用的软件工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06262",
+        "spans": [
+          {
+            "start": 14,
+            "end": 20,
+            "text": "竞品软件调研",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 35,
+            "text": "上位机软件功能的实现",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取软件调研和功能实现等明确职业活动；文档名称不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06263",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "口头表达能力",
+            "label": "T"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "写作能力",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "组织能力",
+            "label": "T"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "text": "沟通协调能力",
+            "label": "T"
+          },
+          {
+            "start": 34,
+            "end": 38,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 39,
+            "end": 45,
+            "text": "快速适应能力",
+            "label": "T"
+          },
+          {
+            "start": 46,
+            "end": 50,
+            "text": "责任心强",
+            "label": "T"
+          },
+          {
+            "start": 52,
+            "end": 55,
+            "text": "亲和力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为通用沟通、组织、学习适应及个人特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06264",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "逻辑思维能力",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "沟通",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 27,
+            "text": "项目计划及执行能力",
+            "label": "T"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "text": "热爱销售工作",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取逻辑思维、沟通、项目执行及销售意愿等通用能力或特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06265",
+        "spans": [
+          {
+            "start": 5,
+            "end": 14,
+            "text": "英语能作为工作语言",
+            "label": "L"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "出海意愿动机",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "英语工作语言属于语言要求；出海意愿动机属于职业意愿特质。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 246,
+  "ids": [
+    "sp10k-06256",
+    "sp10k-06257",
+    "sp10k-06258",
+    "sp10k-06259",
+    "sp10k-06260",
+    "sp10k-06261",
+    "sp10k-06262",
+    "sp10k-06263",
+    "sp10k-06264",
+    "sp10k-06265"
+  ],
+  "at": "2026-09-13T17:42:04.223115+00:00"
+}

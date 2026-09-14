@@ -1,0 +1,565 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 36.168,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4994,
+    "completion_tokens": 1523,
+    "total_tokens": 6517,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 598
+    },
+    "input_tokens": 4994,
+    "output_tokens": 1523,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06099",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            14
+          ],
+          "to": [
+            9,
+            15
+          ],
+          "text": "电子电路解析"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06100",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            8
+          ],
+          "to": [
+            2,
+            9
+          ],
+          "text": "SMT线体换线"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            10,
+            14
+          ],
+          "text": "轨道调试"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            14,
+            20
+          ],
+          "to": [
+            15,
+            21
+          ],
+          "text": "简单异常处理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06101",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            7
+          ],
+          "to": [
+            2,
+            8
+          ],
+          "text": "office"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            8,
+            15
+          ],
+          "to": [
+            9,
+            16
+          ],
+          "text": "Minitab"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            23
+          ],
+          "to": [
+            17,
+            24
+          ],
+          "text": "Autocad"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            24,
+            34
+          ],
+          "to": [
+            25,
+            35
+          ],
+          "text": "Solidworks"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06102",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            10
+          ],
+          "to": [
+            0,
+            9
+          ],
+          "text": "梳理客户个性化需求"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            12,
+            22
+          ],
+          "to": [
+            10,
+            19
+          ],
+          "text": "将要求反馈至生产线"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            23,
+            29
+          ],
+          "to": [
+            20,
+            26
+          ],
+          "text": "跟踪落实情况"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            30,
+            38
+          ],
+          "to": [
+            27,
+            35
+          ],
+          "text": "建立完善客户档案"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06103",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            20
+          ],
+          "to": [
+            2,
+            20
+          ],
+          "text": "审核仪表，通讯专业详细设计图纸及文件"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06104",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            19
+          ],
+          "to": [
+            0,
+            8
+          ],
+          "text": "制程有害物质管理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            20,
+            43
+          ],
+          "to": [
+            9,
+            27
+          ],
+          "text": "协助产品环境关联物质（有害物质）管制"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            49,
+            64
+          ],
+          "to": [
+            31,
+            52
+          ],
+          "text": "对内部过程、产品HSF控制能力进行风险分析"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06105",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            15
+          ],
+          "to": [
+            5,
+            12
+          ],
+          "text": "大专及以上学历"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            21,
+            31
+          ],
+          "to": [
+            18,
+            27
+          ],
+          "text": "LCD液晶显示行业"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            31,
+            44
+          ],
+          "to": [
+            27,
+            40
+          ],
+          "text": "组装全贴合管理相关工作经验"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06096\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"办公软件\",\"label\":\"S\"},{\"start\":15,\"end\":21,\"text\":\"数据处理能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"办公软件为岗位使用工具，数据处理能力为可执行能力。\",\"issues\":[]},{\"id\":\"sp10k-06097\",\"spans\":[{\"start\":16,\"end\":18,\"text\":\"排查\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"紧急处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"排查和紧急处理是针对运行设备故障的职业动作。\",\"issues\":[]},{\"id\":\"sp10k-06098\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"完整学历资格名按K标注；相关专业过于泛化，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-06099\",\"spans\":[{\"start\":9,\"end\":14,\"text\":\"电子电路解析\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"电子电路解析是明确的技术分析活动。\",\"issues\":[]},{\"id\":\"sp10k-06100\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"SMT线体换线\",\"label\":\"S\"},{\"start\":9,\"end\":13,\"text\":\"轨道调试\",\"label\":\"S\"},{\"start\":14,\"end\":20,\"text\":\"简单异常处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"换线、调试和异常处理均为明确职业动作。\",\"issues\":[]},{\"id\":\"sp10k-06101\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"office\",\"label\":\"S\"},{\"start\":8,\"end\":15,\"text\":\"Minitab\",\"label\":\"S\"},{\"start\":16,\"end\":23,\"text\":\"Autocad\",\"label\":\"S\"},{\"start\":24,\"end\":34,\"text\":\"Solidworks\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"列举的软件属于岗位使用工具。\",\"issues\":[]},{\"id\":\"sp10k-06102\",\"spans\":[{\"start\":0,\"end\":10,\"text\":\"梳理客户个性化需求\",\"label\":\"S\"},{\"start\":12,\"end\":22,\"text\":\"将要求反馈至生产线\",\"label\":\"S\"},{\"start\":23,\"end\":29,\"text\":\"跟踪落实情况\",\"label\":\"S\"},{\"start\":30,\"end\":38,\"text\":\"建立完善客户档案\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"需求梳理、反馈、跟踪及档案建立均为明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06103\",\"spans\":[{\"start\":0,\"end\":20,\"text\":\"审核仪表，通讯专业详细设计图纸及文件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"审核专业详细设计图纸及文件是明确的职业活动，保留必要对象和限定语。\",\"issues\":[]},{\"id\":\"sp10k-06104\",\"spans\":[{\"start\":0,\"end\":19,\"text\":\"制程有害物质管理\",\"label\":\"S\"},{\"start\":20,\"end\":43,\"text\":\"协助产品环境关联物质（有害物质）管制\",\"label\":\"S\"},{\"start\":49,\"end\":64,\"text\":\"对内部过程、产品HSF控制能力进行风险分析\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"有害物质管理、管制和HSF控制能力风险分析均为岗位职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06105\",\"spans\":[{\"start\":8,\"end\":15,\"text\":\"大专及以上学历\",\"label\":\"K\"},{\"start\":21,\"end\":31,\"text\":\"LCD液晶显示行业\",\"label\":\"K\"},{\"start\":31,\"end\":44,\"text\":\"组装全贴合管理相关工作经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历为K，LCD液晶显示行业为明确行业背景K，具体组装全贴合管理实践经验按S标注。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06096",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "办公软件",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "数据处理能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "办公软件为岗位使用工具，数据处理能力为可执行能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06097",
+        "spans": [
+          {
+            "start": 16,
+            "end": 18,
+            "text": "排查",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "紧急处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "排查和紧急处理是针对运行设备故障的职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06098",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "完整学历资格名按K标注；相关专业过于泛化，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06099",
+        "spans": [
+          {
+            "start": 9,
+            "end": 15,
+            "text": "电子电路解析",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "电子电路解析是明确的技术分析活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06100",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "SMT线体换线",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "轨道调试",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "简单异常处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "换线、调试和异常处理均为明确职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06101",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "office",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 16,
+            "text": "Minitab",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "text": "Autocad",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 35,
+            "text": "Solidworks",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "列举的软件属于岗位使用工具。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06102",
+        "spans": [
+          {
+            "start": 0,
+            "end": 9,
+            "text": "梳理客户个性化需求",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 19,
+            "text": "将要求反馈至生产线",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "跟踪落实情况",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 35,
+            "text": "建立完善客户档案",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "需求梳理、反馈、跟踪及档案建立均为明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06103",
+        "spans": [
+          {
+            "start": 2,
+            "end": 20,
+            "text": "审核仪表，通讯专业详细设计图纸及文件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "审核专业详细设计图纸及文件是明确的职业活动，保留必要对象和限定语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06104",
+        "spans": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "制程有害物质管理",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 27,
+            "text": "协助产品环境关联物质（有害物质）管制",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 52,
+            "text": "对内部过程、产品HSF控制能力进行风险分析",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "有害物质管理、管制和HSF控制能力风险分析均为岗位职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06105",
+        "spans": [
+          {
+            "start": 5,
+            "end": 12,
+            "text": "大专及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 27,
+            "text": "LCD液晶显示行业",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 40,
+            "text": "组装全贴合管理相关工作经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为K，LCD液晶显示行业为明确行业背景K，具体组装全贴合管理实践经验按S标注。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 230,
+  "ids": [
+    "sp10k-06096",
+    "sp10k-06097",
+    "sp10k-06098",
+    "sp10k-06099",
+    "sp10k-06100",
+    "sp10k-06101",
+    "sp10k-06102",
+    "sp10k-06103",
+    "sp10k-06104",
+    "sp10k-06105"
+  ],
+  "at": "2026-09-13T17:29:56.016754+00:00"
+}

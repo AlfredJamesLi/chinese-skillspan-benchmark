@@ -1,0 +1,517 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04328",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名信息填写要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04329",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "信息化战略规划",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "事业计划",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "预算管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分三项独立职业职能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04330",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅指引专业匹配规则，未列出具体专业或完整学历资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04331",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅含招聘单位、岗位名称和人数，未展开职责要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04332",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅解释考生身份分类，不构成学历资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04333",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 23,
+          "text": "工作执行力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用协作与执行能力标T；按时高质量完成任务属于泛化结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04334",
+      "spans": [
+        {
+          "start": 4,
+          "end": 15,
+          "text": "雷达系统及配套设备装调",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "网络搭建",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "项目现场实施",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 34,
+          "text": "售后服务保障",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取装调、网络搭建、现场实施及售后保障职能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04335",
+      "spans": [
+        {
+          "start": 4,
+          "end": 18,
+          "text": "Linux下的服务器管理技术",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 32,
+          "text": "linux下的各种服务",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 39,
+          "text": "储存技术",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "text": "性能技术",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "服务器管理及服务按岗位运用标S；两项概括技术的S为类型待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "储存技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指储存知识体系或可执行技术；局部未明确该项的原理或实施要求。"
+        },
+        {
+          "kind": "type",
+          "text": "性能技术",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "技术名称较概括，无法确定要求技术知识还是具体性能操作方法。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04336",
+      "spans": [
+        {
+          "start": 5,
+          "end": 10,
+          "text": "职业道德感",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "团队合作意识",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 26,
+          "text": "组织沟通协调能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "职业道德、合作意识和通用组织沟通能力标T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04337",
+      "spans": [
+        {
+          "start": 8,
+          "end": 14,
+          "text": "业务技术水平",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "科研创新能力",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 25,
+          "text": "影响力",
+          "label": "T"
+        },
+        {
+          "start": 39,
+          "end": 64,
+          "text": "以排名第一的第一作者或通讯作者发表本专业SCI论文",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "业务技术水平为职业能力；科研创新能力默认T；论文发表保留必要作者身份限定，不抽取残缺影响因子指标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04338",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅提供职位要求的附件索引。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04339",
+      "spans": [
+        {
+          "start": 19,
+          "end": 23,
+          "text": "融合评估",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "切换实施",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "系统运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分系统融合、切换和运维活动，共享系统对象由局部语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04340",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "设备Linux平台维护",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "补丁升级",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "安全加固",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "故障处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "四项技术维护活动分别标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04341",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "Kubernetes",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 24,
+          "text": "Docker部属及管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工具及部署管理活动标S；保留原文“部属”及共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04342",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "text": "计算机科学与技术",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "软件开发",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "信息管理",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 37,
+          "text": "金蝶K",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历与专业名标K；金蝶K按岗位工具标S，保留原文名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04343",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "笔试科目名称不作为资格名；泛化测评目标是否构成独立能力要求待裁决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "教师素质和职业能力",
+          "alternatives": [
+            "仅为测评内容说明，不纳入",
+            "作为候选人须具备的能力要求纳入"
+          ],
+          "reason": "该片段处于笔试说明中，又表述为本岗所需；缺少具体能力内容及独立任职要求语境。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04344",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "注重细节",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "工作细心",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 23,
+          "text": "规范化文档书写能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "细节意识与细心标T；具体文档书写能力标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04345",
+      "spans": [
+        {
+          "start": 4,
+          "end": 27,
+          "text": "检查主机房温湿度、蓄电池放电测试、设备运行状态",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 36,
+          "text": "记录各项异常情况",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 46,
+          "text": "排除潜在的安全隐患",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "检查项共享检查动作，保留连续完整跨度；异常记录和隐患排除分别抽取。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04346",
+      "spans": [
+        {
+          "start": 2,
+          "end": 41,
+          "text": "各平台系统、网络设备（三层交换机、监测系统、应用系统、安全系统等）的管理与维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列系统设备共享管理与维护，保留必要对象及括号内容形成完整活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04347",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报到、岗位安排及取消聘用的行政规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04348",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明成绩并列人员的资格复审程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04350",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明岗位入围资格复审的程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04351",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为学院性质、建设资质及基地情况介绍。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04352",
+      "spans": [
+        {
+          "start": 45,
+          "end": 53,
+          "text": "硕士研究生及以上",
+          "label": "K"
+        },
+        {
+          "start": 56,
+          "end": 59,
+          "text": "眼科学",
+          "label": "K"
+        },
+        {
+          "start": 78,
+          "end": 80,
+          "text": "专硕",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历层级、专业和学位类型；岗位等级与应届身份不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04353",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "网络",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "通信",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历要求及并列专业名标K。",
+      "issues": []
+    }
+  ]
+}

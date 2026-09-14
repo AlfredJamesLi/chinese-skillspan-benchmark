@@ -1,0 +1,430 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02283",
+      "spans": [
+        {
+          "start": 27,
+          "end": 40,
+          "text": "办公器材的管理、配置及维修",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注器材管理维护活动，保留并列动作的共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02284",
+      "spans": [
+        {
+          "start": 8,
+          "end": 12,
+          "text": "客户维系",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "客户关系维系属于人际联络能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02285",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "分布式",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 10,
+          "text": "负载均衡",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 32,
+          "text": "提供高性能的web和数据库架构解决方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "前段为架构技术知识，后段为提供解决方案的职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02286",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "海洋防污防腐材料的研发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注明确材料对象的研发活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02287",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅介绍招聘背景、招聘主体及人数，没有具体候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02288",
+      "spans": [
+        {
+          "start": 11,
+          "end": 21,
+          "text": "web界面开发和维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发与维护共享界面对象，保留完整活动短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02289",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为值班及晚班安排要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02290",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "在线新媒体矩阵管理",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 28,
+          "text": "公众号/视频号的运维管理",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 35,
+          "text": "微信服务号",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 39,
+          "text": "订阅号",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 43,
+          "text": "企鹅号",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注新媒体运营管理活动及明确承担运维的具体平台账号。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02291",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "协助完成计划的内容过于概括，暂不纳入主层。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "协助工程师完成既定计划",
+          "alternatives": [
+            "属于候选人的协作能力或职业活动要求",
+            "仅为泛化任务及结果表述，不标"
+          ],
+          "reason": "未说明计划内容或具体协助行为，无法确定是否构成可抽取的能力要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02292",
+      "spans": [
+        {
+          "start": 4,
+          "end": 19,
+          "text": "阿里云Linux服务器应用部署",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 31,
+          "text": "服务器集群的规划和部署",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "运行维护",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "应急响应",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分独立运维职责；运行维护与应急响应承接服务器语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02293",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "政治身份及其证明材料要求不属于职业能力、知识或专业资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02294",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅规定体能测评的参加程序及缺席后果。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02295",
+      "spans": [
+        {
+          "start": 1,
+          "end": 10,
+          "text": "分布式系统设计开发",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "框架",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "设计开发为完整职业活动；框架类型暂用S占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "框架",
+          "alternatives": [
+            "S",
+            "K"
+          ],
+          "reason": "框架是独立要求，但未说明具体工具运用还是架构知识；相邻设计开发经验不足以消除歧义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02296",
+      "spans": [
+        {
+          "start": 7,
+          "end": 20,
+          "text": "运营策略的制定、检核及闭环",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列动作共享运营策略对象，保留完整职能短语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02297",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于招聘开考比例例外政策，学历表述用于限定政策适用岗位。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02298",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名资格初审程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02299",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅有资格条件标题，没有实际要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02300",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "实验室管理系统功能培训",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 28,
+          "text": "解决业务人员日常使用中的问题",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 40,
+          "text": "收集系统需求及优化建议",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分培训、系统使用问题处理和需求收集三项职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02301",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "本科以上学历",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 21,
+          "text": "Java实际项?开发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注学历和开发活动，保留原文错字与问号，排除年限及经验后缀。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02302",
+      "spans": [
+        {
+          "start": 19,
+          "end": 24,
+          "text": "教师资格证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整非语言资格名，学段学科对应关系由局部上下文限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02303",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名材料准备及确认安排。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02304",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "沟通协调",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "客户服务意识",
+          "label": "T"
+        },
+        {
+          "start": 27,
+          "end": 30,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 35,
+          "text": "激情",
+          "label": "T"
+        },
+        {
+          "start": 39,
+          "end": 45,
+          "text": "自我驱动能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别标注通用沟通、合作、服务意识及个人特质，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02305",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "工作负责",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "工作态度",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "服务意识",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "标注工作责任特质、态度及服务意识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02306",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明招聘中的学历同等对待政策，没有独立提出候选人资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02307",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "管理开发团队",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 18,
+          "text": "对软件开发进行质量控制",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "团队管理为通用管理能力，软件开发质量控制为专业职能。",
+      "issues": []
+    }
+  ]
+}

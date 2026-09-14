@@ -1,0 +1,250 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 50.346,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5029,
+    "completion_tokens": 1548,
+    "total_tokens": 6577,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 675
+    },
+    "input_tokens": 5029,
+    "output_tokens": 1548,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01231\",\"spans\":[{\"start\":8,\"end\":20,\"text\":\"硕士研究生及以上学历学位\",\"label\":\"K\"},{\"start\":49,\"end\":56,\"text\":\"学历学位认证书\",\"label\":\"K\"},{\"start\":62,\"end\":67,\"text\":\"教师资格证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确学历学位及资格证明要求；取得时间和出具机构不纳入跨度。\",\"issues\":[]},{\"id\":\"sp10k-01232\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":16,\"end\":20,\"text\":\"科研管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历为K；科研管理为明确职业活动，优先条件仍属候选人要求。专业不限不标。\",\"issues\":[]},{\"id\":\"sp10k-01233\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"内科专业规范化培训合格证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留完整非语言资格证书名称。\",\"issues\":[]},{\"id\":\"sp10k-01234\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"行业先进技术收集\",\"label\":\"S\"},{\"start\":11,\"end\":18,\"text\":\"剖析其核心技术\",\"label\":\"S\"},{\"start\":19,\"end\":35,\"text\":\"制作具有凤凰公证特色的信息化产品\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"分别抽取技术收集、技术剖析和产品制作职责，保留各活动必要对象。\",\"issues\":[]},{\"id\":\"sp10k-01235\",\"spans\":[{\"start\":8,\"end\":14,\"text\":\"优化财务流程\",\"label\":\"S\"},{\"start\":15,\"end\":23,\"text\":\"设计系统解决方案\",\"label\":\"S\"},{\"start\":34,\"end\":40,\"text\":\"新需求的开发\",\"label\":\"S\"},{\"start\":41,\"end\":43,\"text\":\"测试\",\"label\":\"S\"},{\"start\":44,\"end\":46,\"text\":\"上线\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取独立流程优化、方案设计及开发测试上线活动；并列活动的共享对象由局部语境限定。\",\"issues\":[]},{\"id\":\"sp10k-01236\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报考资格初审结果查询及改报限制，属于应聘行政流程。\",\"issues\":[]},{\"id\":\"sp10k-01237\",\"spans\":[{\"start\":2,\"end\":26,\"text\":\"物业单位、合作单位以及集团客户及部门之间协同跟踪\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"属于单位、客户及部门之间的通用协同联络；保留共享协同动作及其对象。\",\"issues\":[]},{\"id\":\"sp10k-01238\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅笼统要求岗位所需学历、专业知识或技能，未给出具体学历资格或能力知识提及。\",\"issues\":[]},{\"id\":\"sp10k-01239\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"电信行业软件系统的现场实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确软件系统现场实施职责，行业限定为活动对象的一部分，不嵌套标注。\",\"issues\":[]},{\"id\":\"sp10k-01240\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"订单的具体落实\",\"label\":\"S\"},{\"start\":11,\"end\":18,\"text\":\"货款的及时收回\",\"label\":\"S\"},{\"start\":19,\"end\":21,\"text\":\"催收\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取订单落实、货款收回及催收职责；催收对象可由局部上下文确定。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01231",
+        "spans": [
+          {
+            "start": 8,
+            "end": 20,
+            "text": "硕士研究生及以上学历学位",
+            "label": "K"
+          },
+          {
+            "start": 49,
+            "end": 56,
+            "text": "学历学位认证书",
+            "label": "K"
+          },
+          {
+            "start": 62,
+            "end": 67,
+            "text": "教师资格证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确学历学位及资格证明要求；取得时间和出具机构不纳入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01232",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "科研管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为K；科研管理为明确职业活动，优先条件仍属候选人要求。专业不限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01233",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "内科专业规范化培训合格证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留完整非语言资格证书名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01234",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "行业先进技术收集",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "text": "剖析其核心技术",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 35,
+            "text": "制作具有凤凰公证特色的信息化产品",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别抽取技术收集、技术剖析和产品制作职责，保留各活动必要对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01235",
+        "spans": [
+          {
+            "start": 8,
+            "end": 14,
+            "text": "优化财务流程",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "text": "设计系统解决方案",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "text": "新需求的开发",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 43,
+            "text": "测试",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 46,
+            "text": "上线",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取独立流程优化、方案设计及开发测试上线活动；并列活动的共享对象由局部语境限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01236",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报考资格初审结果查询及改报限制，属于应聘行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01237",
+        "spans": [
+          {
+            "start": 2,
+            "end": 26,
+            "text": "物业单位、合作单位以及集团客户及部门之间协同跟踪",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "属于单位、客户及部门之间的通用协同联络；保留共享协同动作及其对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01238",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅笼统要求岗位所需学历、专业知识或技能，未给出具体学历资格或能力知识提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01239",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "电信行业软件系统的现场实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确软件系统现场实施职责，行业限定为活动对象的一部分，不嵌套标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01240",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "订单的具体落实",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "text": "货款的及时收回",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 21,
+            "text": "催收",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取订单落实、货款收回及催收职责；催收对象可由局部上下文确定。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 124,
+  "ids": [
+    "sp10k-01231",
+    "sp10k-01232",
+    "sp10k-01233",
+    "sp10k-01234",
+    "sp10k-01235",
+    "sp10k-01236",
+    "sp10k-01237",
+    "sp10k-01238",
+    "sp10k-01239",
+    "sp10k-01240"
+  ],
+  "at": "2026-09-13T15:37:12.772021+00:00"
+}

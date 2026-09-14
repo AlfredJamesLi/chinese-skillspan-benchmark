@@ -1,0 +1,212 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 50.447,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5034,
+    "completion_tokens": 1359,
+    "total_tokens": 6393,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 704
+    },
+    "input_tokens": 5034,
+    "output_tokens": 1359,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01102",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            13
+          ],
+          "to": [
+            2,
+            14
+          ],
+          "text": "用户现场系统运维技术支持"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01101\",\"spans\":[{\"start\":0,\"end\":10,\"text\":\"全日制本科及以上学历\",\"label\":\"K\"},{\"start\":23,\"end\":28,\"text\":\"互联网运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格名；互联网运维为明确职业活动，年限和“工作经验”不纳入跨度。\",\"issues\":[]},{\"id\":\"sp10k-01102\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"用户现场系统运维技术支持\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求候选人执行现场系统运维技术支持活动。\",\"issues\":[]},{\"id\":\"sp10k-01103\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报名资格确认所需材料及行政流程，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01104\",\"spans\":[{\"start\":0,\"end\":10,\"text\":\"全日制本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格名；“专业对口”未指明具体领域，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-01105\",\"spans\":[{\"start\":8,\"end\":13,\"text\":\"excel\",\"label\":\"S\"},{\"start\":14,\"end\":20,\"text\":\"中专以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"Excel为岗位使用工具；中专以上学历为资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01106\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为岗位资格初审时间及结果查询安排，属于行政流程信息。\",\"issues\":[]},{\"id\":\"sp10k-01107\",\"spans\":[{\"start\":2,\"end\":7,\"text\":\"云平台架构\",\"label\":\"K\"},{\"start\":8,\"end\":12,\"text\":\"应用特点\",\"label\":\"K\"},{\"start\":14,\"end\":18,\"text\":\"网站运维\",\"label\":\"S\"},{\"start\":19,\"end\":26,\"text\":\"集群设计和实施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"云平台架构和应用特点属于领域知识；网站运维、集群设计和实施为明确职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01108\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为笔试排名及资格复审人员确定规则，属于招聘行政流程。\",\"issues\":[]},{\"id\":\"sp10k-01109\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报名资格复核流程，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01110\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为报名时提交的材料清单，属于行政报名要求，不抽取为本项目能力、知识或资格候选。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01101",
+        "spans": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "全日制本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "text": "互联网运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格名；互联网运维为明确职业活动，年限和“工作经验”不纳入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01102",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "用户现场系统运维技术支持",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求候选人执行现场系统运维技术支持活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01103",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报名资格确认所需材料及行政流程，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01104",
+        "spans": [
+          {
+            "start": 0,
+            "end": 10,
+            "text": "全日制本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格名；“专业对口”未指明具体领域，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01105",
+        "spans": [
+          {
+            "start": 8,
+            "end": 13,
+            "text": "excel",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 20,
+            "text": "中专以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Excel为岗位使用工具；中专以上学历为资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01106",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为岗位资格初审时间及结果查询安排，属于行政流程信息。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01107",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "云平台架构",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "text": "应用特点",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "网站运维",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "text": "集群设计和实施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "云平台架构和应用特点属于领域知识；网站运维、集群设计和实施为明确职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01108",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为笔试排名及资格复审人员确定规则，属于招聘行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01109",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报名资格复核流程，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01110",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为报名时提交的材料清单，属于行政报名要求，不抽取为本项目能力、知识或资格候选。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 111,
+  "ids": [
+    "sp10k-01101",
+    "sp10k-01102",
+    "sp10k-01103",
+    "sp10k-01104",
+    "sp10k-01105",
+    "sp10k-01106",
+    "sp10k-01107",
+    "sp10k-01108",
+    "sp10k-01109",
+    "sp10k-01110"
+  ],
+  "at": "2026-09-13T15:23:44.357361+00:00"
+}

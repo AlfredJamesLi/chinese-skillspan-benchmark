@@ -1,0 +1,499 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02705",
+      "spans": [
+        {
+          "start": 11,
+          "end": 16,
+          "text": "系统的学习",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "用户培训",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "公司明确要求完成的活动在范围内；学习提及的类型待裁决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "系统的学习",
+          "alternatives": [
+            "S",
+            "T"
+          ],
+          "reason": "“系统”可能指业务系统，也可能表示系统性学习；缺少学习对象，S仅为占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02706",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "ⅥLAN",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 10,
+          "text": "VRP",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 20,
+          "text": "HSRPTrunk",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "LACP",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 29,
+          "text": "ACL",
+          "label": "K"
+        },
+        {
+          "start": 30,
+          "end": 33,
+          "text": "NAT",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "策略路由",
+          "label": "K"
+        },
+        {
+          "start": 41,
+          "end": 45,
+          "text": "静态路由",
+          "label": "K"
+        },
+        {
+          "start": 46,
+          "end": 50,
+          "text": "OSPF",
+          "label": "K"
+        },
+        {
+          "start": 53,
+          "end": 56,
+          "text": "VPN",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "网络协议和路由概念按知识提及；保留原文拼写，VRP类型待决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "VRP",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "局部仅列熟悉对象，未明确是平台知识还是工具运用；S仅为占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02707",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "SQL",
+          "label": "S"
+        },
+        {
+          "start": 6,
+          "end": 24,
+          "text": "Linux操作系统的安装、配置、维护",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "安装、配置和维护共享操作系统对象，保留完整活动；SQL类型待决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "SQL",
+          "alternatives": [
+            "S",
+            "K"
+          ],
+          "reason": "未明确SQL实际运用或语法知识语境，后续安装维护明确修饰Linux；S仅为占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02708",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告解释主体说明，不含候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02709",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "通信",
+          "label": "K"
+        },
+        {
+          "start": 3,
+          "end": 8,
+          "text": "计算机专业",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 22,
+          "text": "全日制硕士研究生及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业与完整学历资格；院校类别限制不另列能力提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02710",
+      "spans": [
+        {
+          "start": 12,
+          "end": 16,
+          "text": "RHCE",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "VCP",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "CCNP",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确非语言证书要求，抽取具体资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02711",
+      "spans": [
+        {
+          "start": 11,
+          "end": 14,
+          "text": "房地产",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "信息系统管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "行业核心名为K，信息系统管理为职业活动；排除年限及经验套语。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02712",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "医院规模、技术水平及排名介绍，不含候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02713",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告解释权限说明，不含能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02714",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "交流沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 19,
+          "text": "自我解决问题能力",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "自我管理能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通、通用问题解决及自我管理均为可迁移能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02715",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "沟通表达能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 22,
+          "text": "责任感",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 34,
+          "text": "承受较大的工作压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取沟通、合作、责任及抗压特质，去除程度和要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02716",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘程序中的违规处理规定，不抽取隐含品德要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02717",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名邮件及材料上传说明，未提出具体资格名称或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02718",
+      "spans": [
+        {
+          "start": 1,
+          "end": 6,
+          "text": "低压电工证",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 12,
+          "text": "高压进网证",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "text": "制冷操作证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "三项明确非语言职业资格分别标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02719",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "需求分析",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "开发对接",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "需求分析为职业活动；与开发部门的对接为人员沟通联络。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02720",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考试前资格复审属于应聘行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02722",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "学历学位证书复印件属于报名材料，未给出具体资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02723",
+      "spans": [
+        {
+          "start": 2,
+          "end": 26,
+          "text": "Wisers全球骨干网、数据中心等网络规划、设计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "网络规划和设计共享具体网络对象，保留完整职业活动跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02724",
+      "spans": [
+        {
+          "start": 12,
+          "end": 31,
+          "text": "智能建筑工程或运维项目管理相关工作经验",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "明确要求专业实践经历；共享项目管理成分的覆盖范围待裁决，暂保留完整连续候选。",
+      "issues": [
+        {
+          "kind": "boundary",
+          "text": "智能建筑工程或运维项目管理相关工作经验",
+          "alternatives": [
+            "智能建筑工程或运维项目管理相关工作经验",
+            "智能建筑工程或运维项目管理",
+            "智能建筑工程；运维项目管理"
+          ],
+          "reason": "“项目管理”是否同时修饰智能建筑工程不明确；拆分及去除经验可能丢失首项实践含义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02725",
+      "spans": [
+        {
+          "start": 7,
+          "end": 20,
+          "text": "制定所负责产品线的规划发展",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "制定产品线规划为明确职业活动，保留原文表述。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02726",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告署名、日期及附件下载信息，不含具体候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02727",
+      "spans": [
+        {
+          "start": 1,
+          "end": 23,
+          "text": "省级师范生基本功大赛（技能竞赛）三等奖及以上",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 43,
+          "text": "校级师范生基本功大赛（技能竞赛）一等奖",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确竞赛获奖资格要求，保留赛事层级与奖项门槛。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02728",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "供配电系统原理",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "常见故障处理",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "系统分析",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "节能管理",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 52,
+          "text": "电气工程改造方案制订、设计、预算、施工管理能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "原理为K，故障处理及领域绑定活动为S；末项保留共享电气工程改造对象和能力中心。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02729",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "身份及资格证明材料清单，未明确学历层级或具体职业资格名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02731",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "泛化工作经历的年限计算规则，不含具体领域或职业活动要求。",
+      "issues": []
+    }
+  ]
+}

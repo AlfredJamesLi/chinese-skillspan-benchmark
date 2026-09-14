@@ -1,0 +1,199 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 36.003,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4963,
+    "completion_tokens": 1081,
+    "total_tokens": 6044,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 411
+    },
+    "input_tokens": 4963,
+    "output_tokens": 1081,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01201\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"生源条件及类推说明不属于能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01202\",\"spans\":[{\"start\":2,\"end\":11,\"text\":\"网站的附加功能开发\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"技术支持\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取网站功能开发与技术支持两项职业活动，排除职责触发词。\",\"issues\":[]},{\"id\":\"sp10k-01203\",\"spans\":[{\"start\":11,\"end\":16,\"text\":\"问题的处理\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"仅限定问题发生于技术部门内外，未明确技术或业务问题对象，按通用问题处理能力标注。\",\"issues\":[]},{\"id\":\"sp10k-01204\",\"spans\":[{\"start\":3,\"end\":6,\"text\":\"毕业证\",\"label\":\"K\"},{\"start\":7,\"end\":10,\"text\":\"学位证\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"两项明确要求的非语言资格凭证分别标注。\",\"issues\":[]},{\"id\":\"sp10k-01205\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于专业目录未覆盖情形的招聘审核程序，未提及具体专业要求或候选人能力。\",\"issues\":[]},{\"id\":\"sp10k-01206\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于报考报名表填写要求，不是岗位职业活动。\",\"issues\":[]},{\"id\":\"sp10k-01207\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"基础类库、核心代码开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"两类开发对象共享动作“开发”，保留连续完整短语以避免拆分后丢失职业动作。\",\"issues\":[]},{\"id\":\"sp10k-01208\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"身心健康、寄宿制工作适应条件及性别限制不构成具体能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-01209\",\"spans\":[{\"start\":4,\"end\":15,\"text\":\"linux运维体系架构\",\"label\":\"K\"},{\"start\":20,\"end\":26,\"text\":\"oracle\",\"label\":\"S\"},{\"start\":27,\"end\":32,\"text\":\"mysql\",\"label\":\"S\"},{\"start\":33,\"end\":38,\"text\":\"linux\",\"label\":\"S\"},{\"start\":39,\"end\":43,\"text\":\"组件运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"体系架构为知识要求；后段明确要求组件运维，工具名及运维活动按S标注。\",\"issues\":[]},{\"id\":\"sp10k-01210\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"属于违反选聘纪律的处理规定，不含候选人能力、知识或资格要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01201",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "生源条件及类推说明不属于能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01202",
+        "spans": [
+          {
+            "start": 2,
+            "end": 11,
+            "text": "网站的附加功能开发",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "技术支持",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取网站功能开发与技术支持两项职业活动，排除职责触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01203",
+        "spans": [
+          {
+            "start": 11,
+            "end": 16,
+            "text": "问题的处理",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "仅限定问题发生于技术部门内外，未明确技术或业务问题对象，按通用问题处理能力标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01204",
+        "spans": [
+          {
+            "start": 3,
+            "end": 6,
+            "text": "毕业证",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "text": "学位证",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两项明确要求的非语言资格凭证分别标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01205",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于专业目录未覆盖情形的招聘审核程序，未提及具体专业要求或候选人能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01206",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于报考报名表填写要求，不是岗位职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01207",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "基础类库、核心代码开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两类开发对象共享动作“开发”，保留连续完整短语以避免拆分后丢失职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01208",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "身心健康、寄宿制工作适应条件及性别限制不构成具体能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01209",
+        "spans": [
+          {
+            "start": 4,
+            "end": 15,
+            "text": "linux运维体系架构",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "oracle",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 32,
+            "text": "mysql",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "text": "linux",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 43,
+            "text": "组件运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "体系架构为知识要求；后段明确要求组件运维，工具名及运维活动按S标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01210",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "属于违反选聘纪律的处理规定，不含候选人能力、知识或资格要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 121,
+  "ids": [
+    "sp10k-01201",
+    "sp10k-01202",
+    "sp10k-01203",
+    "sp10k-01204",
+    "sp10k-01205",
+    "sp10k-01206",
+    "sp10k-01207",
+    "sp10k-01208",
+    "sp10k-01209",
+    "sp10k-01210"
+  ],
+  "at": "2026-09-13T15:34:38.947274+00:00"
+}

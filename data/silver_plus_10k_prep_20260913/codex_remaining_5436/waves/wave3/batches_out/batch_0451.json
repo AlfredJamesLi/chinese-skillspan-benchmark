@@ -1,0 +1,399 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07001",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "机电专业",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "施工安装",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "验收规范",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 25,
+          "text": "项目招投标流程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取机电领域知识、施工安装职业动作及验收规范和招投标流程知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07002",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "资料原件的保管",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "资料原件保管属于明确职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07003",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "审美能力",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "text": "抗压能力",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 27,
+          "text": "应急事件的快速处理能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用能力或个人特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07004",
+      "spans": [
+        {
+          "start": 5,
+          "end": 15,
+          "text": "车载软件项目管理经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确的车载软件项目管理实践经历，保留经验以维持经历要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07005",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "EPLAN",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "text": "AutoCAD",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 24,
+          "text": "电气原理图绘图",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "EPLAN和AutoCAD为岗位使用工具，电气原理图绘图为可执行技术活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07006",
+      "spans": [
+        {
+          "start": 6,
+          "end": 8,
+          "text": "日语",
+          "label": "L"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "沟通表达能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "日语为语种要求，沟通表达能力为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07007",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "文本包含多项明确的财务、成本核算及产品工艺要求，但长文本中的连续边界和逐项拆分需要进一步裁决。",
+      "issues": [
+        {
+          "kind": "boundary",
+          "text": "业财融合与决策支持：深入理解产品工艺、BOM、路由、成本动因，建立与优化产品全生命周期成本模型，负责消费电子新产品从研发（NPI）、试产到量产全过程的成本核算、建模与跟踪，制定和完善符合行业特点及公司管理需求的成本核算流程、标准与方法（标准成本/实际成本）",
+          "alternatives": [
+            "按产品工艺、BOM、路由、成本动因、成本模型、成本核算、成本建模、成本跟踪、成本核算流程、标准与方法分别标注",
+            "保留部分共享限定语形成较长的完整职业活动跨度"
+          ],
+          "reason": "多个知识提及与成本管理职业活动连续交织，需裁定最短无损边界。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-07008",
+      "spans": [
+        {
+          "start": 1,
+          "end": 8,
+          "text": "食堂大锅菜经验",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 16,
+          "text": "老年餐特点",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "食堂大锅菜为明确烹饪实践经历，老年餐特点为领域知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07009",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "邦定设备文件编写或修改",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 22,
+          "text": "员工培训作业检查",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别为设备文件编写或修改、员工培训及作业检查等职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07010",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "支持",
+          "label": "S"
+        },
+        {
+          "start": 2,
+          "end": 9,
+          "text": "潜在供应商评审",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "text": "负责供应商",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "的QTR评审",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "支持SSOW",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 34,
+          "text": "支持供应商启动会",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 46,
+          "text": "负责供应商的质量提升工作",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 55,
+          "text": "负责供应商APQP",
+          "label": "S"
+        },
+        {
+          "start": 55,
+          "end": 77,
+          "text": "负责供应商的Lessonslearned总结",
+          "label": "S"
+        },
+        {
+          "start": 77,
+          "end": 86,
+          "text": "供应商质量目标定义",
+          "label": "S"
+        },
+        {
+          "start": 86,
+          "end": 103,
+          "text": "负责供应商的图纸特殊特性评审及批准",
+          "label": "S"
+        },
+        {
+          "start": 103,
+          "end": 116,
+          "text": "负责APQP定期会议的召开",
+          "label": "S"
+        },
+        {
+          "start": 116,
+          "end": 134,
+          "text": "供应商DFMEAPFMEA评审及批准",
+          "label": "S"
+        },
+        {
+          "start": 134,
+          "end": 143,
+          "text": "供应商试验计划评审",
+          "label": "S"
+        },
+        {
+          "start": 143,
+          "end": 158,
+          "text": "供应商控制计划评审的评审及批准",
+          "label": "S"
+        },
+        {
+          "start": 158,
+          "end": 171,
+          "text": "负责供应商生产准备情况评审",
+          "label": "S"
+        },
+        {
+          "start": 171,
+          "end": 180,
+          "text": "同项目团队沟通合作",
+          "label": "T"
+        },
+        {
+          "start": 181,
+          "end": 197,
+          "text": "确保供应商提供的合格零件按时到达",
+          "label": "S"
+        },
+        {
+          "start": 197,
+          "end": 207,
+          "text": "供应商检具评审和批准",
+          "label": "S"
+        },
+        {
+          "start": 207,
+          "end": 214,
+          "text": "供应商过程审核",
+          "label": "S"
+        },
+        {
+          "start": 214,
+          "end": 222,
+          "text": "供应商小批量审核",
+          "label": "S"
+        },
+        {
+          "start": 222,
+          "end": 233,
+          "text": "供应商PV验证结果评审",
+          "label": "S"
+        },
+        {
+          "start": 233,
+          "end": 244,
+          "text": "支持对供应商包装的认可",
+          "label": "S"
+        },
+        {
+          "start": 244,
+          "end": 250,
+          "text": "供应商的接口",
+          "label": "T"
+        },
+        {
+          "start": 251,
+          "end": 261,
+          "text": "支持零部件问题的解决",
+          "label": "S"
+        },
+        {
+          "start": 261,
+          "end": 274,
+          "text": "供应商PPAP的收集和批准",
+          "label": "S"
+        },
+        {
+          "start": 274,
+          "end": 277,
+          "text": "PSW",
+          "label": "S"
+        },
+        {
+          "start": 277,
+          "end": 284,
+          "text": "零部件批量认可",
+          "label": "S"
+        },
+        {
+          "start": 284,
+          "end": 295,
+          "text": "制作零部件来料检查计划",
+          "label": "S"
+        },
+        {
+          "start": 295,
+          "end": 304,
+          "text": "供应商SOP后评价",
+          "label": "S"
+        },
+        {
+          "start": 304,
+          "end": 313,
+          "text": "负责供应商更改批准",
+          "label": "S"
+        },
+        {
+          "start": 313,
+          "end": 324,
+          "text": "负责高风险供应商的管理",
+          "label": "S"
+        },
+        {
+          "start": 329,
+          "end": 336,
+          "text": "大学本科及以上",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取供应商质量管理、评审审核、问题解决、计划制定等职业活动，以及沟通合作、供应商接口和本科资格。",
+      "issues": []
+    }
+  ]
+}

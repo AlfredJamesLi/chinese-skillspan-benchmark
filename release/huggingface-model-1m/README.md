@@ -92,6 +92,6 @@ model.load_state_dict(torch.load(crf_path, map_location="cpu"))
 
 ## Licence
 
-`license: other` until job-advertisement text rights are confirmed. The backbone `hfl/chinese-roberta-wwm-ext` is listed as Apache-2.0 on Hugging Face. Do not treat this checkpoint as Apache-2.0.
+`license: other`. Academic research use of the advertisement text is confirmed (`DATA_AVAILABILITY.md`); that is not a CC-BY grant on these weights. The backbone `hfl/chinese-roberta-wwm-ext` is listed as Apache-2.0 on Hugging Face. Do not treat this checkpoint as Apache-2.0.
 
 Funding: National Social Science Fund of China, Grant No. **21BGL142**. Authors: same as JobBERT-zh (corresponding author Xiangyu Zhao, `xianzhao@cityu.edu.hk`).

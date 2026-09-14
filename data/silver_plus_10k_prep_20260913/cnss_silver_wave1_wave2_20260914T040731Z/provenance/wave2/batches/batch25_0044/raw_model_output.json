@@ -1,0 +1,377 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04822",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "录用人员处理原单位劳动争议的行政责任，不属岗位能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04823",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "团队协作能力",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "学习能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用协作及学习能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04824",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "大专以上全日制学历",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 18,
+          "text": "计算机软件工程",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 31,
+          "text": "医院信息化项目",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历及专业为K；项目提及由“从事过”明确限定为实践经历，按经验代理规则标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04825",
+      "spans": [
+        {
+          "start": 2,
+          "end": 20,
+          "text": "工程设备管理的规章制度编制及监督执行",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "编制与监督执行共享规章制度对象，保留完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04826",
+      "spans": [
+        {
+          "start": 9,
+          "end": 13,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 25,
+          "text": "独立解决各类故障的能力",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "学习能力为通用能力，故障解决为职业能力；“工作认证”含义待核。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "工作认证",
+          "alternatives": [
+            "作为工作态度要求纳入",
+            "含义不明，暂不纳入"
+          ],
+          "reason": "可能是“工作认真”的误写，但原文不足以确认，也未明确具体认证资格，需核实措辞。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04827",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "学历证明材料的提交及查询打印流程，不是候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04828",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应聘材料提交要求，不抽取材料中的学历证件名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04829",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考点交通与出行提示。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04830",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "考试组织及形式说明，未提出候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04831",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名表填写和照片上传流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04832",
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "git",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "svn",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确用于代码管理的具体工具；不重复抽取概括类别。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04834",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格复审的委托办理流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04835",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "选调报到时间及资格取消规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04836",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘面试分数与淘汰规则，不属能力或资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04837",
+      "spans": [
+        {
+          "start": 4,
+          "end": 26,
+          "text": "服务器（原IBM、DELL、HP）配置及维护",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "服务器配置及维护共享对象，整体抽取；句末X所指不明。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "X",
+          "alternatives": [
+            "具体工具或技能要求，纳入",
+            "截断或占位内容，不纳入"
+          ],
+          "reason": "“擅长X”未说明X的实际含义，无法确认具体能力提及，需补足原文。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04838",
+      "spans": [
+        {
+          "start": 2,
+          "end": 4,
+          "text": "耐心",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 7,
+          "text": "细心",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "正直",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "执行力",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "text": "集体荣誉感",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取通用特质，去除要求触发词和程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04839",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "办公软件",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 16,
+          "text": "AutoCAD",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "办公及设计软件属于岗位工具要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04840",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "传统网络",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 14,
+          "text": "SDN网络架构",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "NFV",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 34,
+          "text": "SDN方案的应用场景及范围",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "要求了解网络架构及方案适用知识；并列项共享局部限定，不推定实际实施。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04841",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名材料真实性规定，不据此推导诚信特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04842",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "列举个人学历证件及认证报告，未提出候选人学历要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04843",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "域账号、云平台账号及权限的管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列账号及权限共享管理动作，保留完整跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04844",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "现场资格确认的材料核验流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04845",
+      "spans": [
+        {
+          "start": 2,
+          "end": 49,
+          "text": "系统安调试多媒体、音视频、监控、网络、弱电、广播、机房、安防等常见系统集成基础设施的支持及维护",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "职业活动范围明确；因开头措辞异常，暂保留连续完整职责段，排除后面的运行结果承诺。",
+      "issues": [
+        {
+          "kind": "boundary",
+          "text": "系统安调试多媒体、音视频、监控、网络、弱电、广播、机房、安防等常见系统集成基础设施的支持及维护",
+          "alternatives": [
+            "整体保留为一个职责跨度",
+            "拆为“系统安调试”与“多媒体、音视频、监控、网络、弱电、广播、机房、安防等常见系统集成基础设施的支持及维护”"
+          ],
+          "reason": "“系统安调试”疑似缺字或缺少分隔，无法确认是否为独立职责；需核实原文后确定边界。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04846",
+      "spans": [
+        {
+          "start": 0,
+          "end": 5,
+          "text": "普通话流利",
+          "label": "L"
+        },
+        {
+          "start": 6,
+          "end": 10,
+          "text": "表达能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "语种及流利水平整体标L，通用表达能力标T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04848",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "现场资格确认及材料携带流程。",
+      "issues": []
+    }
+  ]
+}

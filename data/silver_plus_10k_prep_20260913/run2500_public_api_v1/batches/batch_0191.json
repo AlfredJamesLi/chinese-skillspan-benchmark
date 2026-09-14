@@ -1,0 +1,492 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 98.252,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5182,
+    "completion_tokens": 3159,
+    "total_tokens": 8341,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1544
+    },
+    "input_tokens": 5182,
+    "output_tokens": 3159,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-04034\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"产品规划\",\"label\":\"S\"},{\"start\":7,\"end\":11,\"text\":\"项目跟进\",\"label\":\"S\"},{\"start\":12,\"end\":16,\"text\":\"数据复盘\",\"label\":\"S\"},{\"start\":17,\"end\":23,\"text\":\"活动策划能力\",\"label\":\"S\"},{\"start\":24,\"end\":28,\"text\":\"逻辑清晰\",\"label\":\"T\"},{\"start\":29,\"end\":32,\"text\":\"执行力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"职业活动及领域绑定能力标S，逻辑与执行素质标T。\",\"issues\":[]},{\"id\":\"sp10k-04066\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"本科以上学历\",\"label\":\"K\"},{\"start\":11,\"end\":14,\"text\":\"LED\",\"label\":\"K\"},{\"start\":19,\"end\":23,\"text\":\"汽车电子\",\"label\":\"K\"},{\"start\":31,\"end\":35,\"text\":\"市场开拓\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历及明确行业背景核心名标K；市场开拓为完整职业活动，去除经验与优先修饰。\",\"issues\":[]},{\"id\":\"sp10k-04111\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"沟通技巧\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"工作热情\",\"label\":\"T\"},{\"start\":19,\"end\":23,\"text\":\"观察能力\",\"label\":\"T\"},{\"start\":24,\"end\":28,\"text\":\"应变能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为通用软技能或工作特质，程度修饰不入跨度。\",\"issues\":[]},{\"id\":\"sp10k-04157\",\"spans\":[{\"start\":23,\"end\":35,\"text\":\"库房及电子文件的安全管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"安全管理为明确职业职责，保留共享管理动作及对象，排除公司名称。\",\"issues\":[]},{\"id\":\"sp10k-04158\",\"spans\":[{\"start\":2,\"end\":18,\"text\":\"车险系统流程优化需求的统筹、提交\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"测试跟进\",\"label\":\"S\"},{\"start\":24,\"end\":26,\"text\":\"上线\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"统筹、提交保留共享需求对象；测试跟进和上线可独立提及，按职业动作拆分。\",\"issues\":[]},{\"id\":\"sp10k-04162\",\"spans\":[{\"start\":5,\"end\":11,\"text\":\"财务基础知识\",\"label\":\"K\"},{\"start\":18,\"end\":22,\"text\":\"办公软件\",\"label\":\"S\"},{\"start\":23,\"end\":29,\"text\":\"门店管理系统\",\"label\":\"S\"},{\"start\":33,\"end\":39,\"text\":\"数据分析能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"财务基础知识标K，明确操作的工具和数据分析能力标S。\",\"issues\":[]},{\"id\":\"sp10k-04163\",\"spans\":[{\"start\":7,\"end\":16,\"text\":\"基础数据建立、分析\",\"label\":\"S\"},{\"start\":19,\"end\":27,\"text\":\"HMDM数据维护\",\"label\":\"S\"},{\"start\":31,\"end\":44,\"text\":\"标签、合格证及防伪贴的管理\",\"label\":\"S\"},{\"start\":50,\"end\":57,\"text\":\"开发经销商渠道\",\"label\":\"S\"},{\"start\":58,\"end\":65,\"text\":\"经销商合同签订\",\"label\":\"S\"},{\"start\":68,\"end\":78,\"text\":\"提交并确认经销商订单\",\"label\":\"S\"},{\"start\":82,\"end\":103,\"text\":\"解决在渠道开发或者渠道销售过程中的突发问题\",\"label\":\"S\"},{\"start\":107,\"end\":116,\"text\":\"建立、管理销售渠道\",\"label\":\"S\"},{\"start\":117,\"end\":125,\"text\":\"全年销售任务分析\",\"label\":\"S\"},{\"start\":126,\"end\":133,\"text\":\"建立经销商台账\",\"label\":\"S\"},{\"start\":137,\"end\":142,\"text\":\"供应商管理\",\"label\":\"S\"},{\"start\":143,\"end\":149,\"text\":\"下达生产计划\",\"label\":\"S\"},{\"start\":150,\"end\":159,\"text\":\"跟踪货款及产品交付\",\"label\":\"S\"},{\"start\":163,\"end\":170,\"text\":\"供应商发票报账\",\"label\":\"S\"},{\"start\":171,\"end\":178,\"text\":\"经销商发票开具\",\"label\":\"S\"},{\"start\":190,\"end\":193,\"text\":\"SAP\",\"label\":\"S\"},{\"start\":193,\"end\":200,\"text\":\"本科及以上学历\",\"label\":\"K\"},{\"start\":206,\"end\":210,\"text\":\"市场营销\",\"label\":\"K\"},{\"start\":211,\"end\":215,\"text\":\"工商管理\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"独立职业职责逐项拆分，共享动作或对象的短语保留；明确业务问题解决标S，学历与专业名标K。\",\"issues\":[]},{\"id\":\"sp10k-04170\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"ISO9001质量管理体系\",\"label\":\"K\"},{\"start\":19,\"end\":23,\"text\":\"环保要求\",\"label\":\"K\"},{\"start\":26,\"end\":30,\"text\":\"QC手法\",\"label\":\"S\"},{\"start\":31,\"end\":35,\"text\":\"5Why\",\"label\":\"S\"},{\"start\":36,\"end\":38,\"text\":\"8D\",\"label\":\"S\"},{\"start\":39,\"end\":43,\"text\":\"APQP\",\"label\":\"S\"},{\"start\":44,\"end\":48,\"text\":\"FMEA\",\"label\":\"S\"},{\"start\":49,\"end\":52,\"text\":\"SPC\",\"label\":\"S\"},{\"start\":53,\"end\":57,\"text\":\"PPAP\",\"label\":\"S\"},{\"start\":58,\"end\":61,\"text\":\"MSA\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"管理体系和环保规范要求标K，明确质量管理方法及工具逐项标S，概括性总称不重复标注。\",\"issues\":[]},{\"id\":\"sp10k-04175\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"市场营销\",\"label\":\"K\"},{\"start\":10,\"end\":14,\"text\":\"酒店管理\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"优先条件中的明确专业名标K，专业不限及泛化相关专业不标。\",\"issues\":[]},{\"id\":\"sp10k-04177\",\"spans\":[{\"start\":1,\"end\":5,\"text\":\"深度学习\",\"label\":\"S\"},{\"start\":6,\"end\":12,\"text\":\"基础算法开发\",\"label\":\"S\"},{\"start\":14,\"end\":18,\"text\":\"机器视觉\",\"label\":\"S\"},{\"start\":22,\"end\":28,\"text\":\"大型项目开发\",\"label\":\"S\"},{\"start\":36,\"end\":40,\"text\":\"数学基础\",\"label\":\"K\"},{\"start\":41,\"end\":50,\"text\":\"对算法研究兴趣浓厚\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"并列领域受同句明确项目开发实践限定，标S；数学基础标K，岗位研究兴趣保留完整特质表达标T。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-04034",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "产品规划",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "项目跟进",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "数据复盘",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "活动策划能力",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "逻辑清晰",
+            "label": "T"
+          },
+          {
+            "start": 29,
+            "end": 32,
+            "text": "执行力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "职业活动及领域绑定能力标S，逻辑与执行素质标T。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04066",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "本科以上学历",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "text": "LED",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "汽车电子",
+            "label": "K"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "text": "市场开拓",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历及明确行业背景核心名标K；市场开拓为完整职业活动，去除经验与优先修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04111",
+        "spans": [
+          {
+            "start": 3,
+            "end": 7,
+            "text": "沟通技巧",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "工作热情",
+            "label": "T"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "观察能力",
+            "label": "T"
+          },
+          {
+            "start": 24,
+            "end": 28,
+            "text": "应变能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为通用软技能或工作特质，程度修饰不入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04157",
+        "spans": [
+          {
+            "start": 23,
+            "end": 35,
+            "text": "库房及电子文件的安全管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "安全管理为明确职业职责，保留共享管理动作及对象，排除公司名称。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04158",
+        "spans": [
+          {
+            "start": 2,
+            "end": 18,
+            "text": "车险系统流程优化需求的统筹、提交",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "测试跟进",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "text": "上线",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "统筹、提交保留共享需求对象；测试跟进和上线可独立提及，按职业动作拆分。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04162",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "财务基础知识",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "办公软件",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "text": "门店管理系统",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 39,
+            "text": "数据分析能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "财务基础知识标K，明确操作的工具和数据分析能力标S。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04163",
+        "spans": [
+          {
+            "start": 7,
+            "end": 16,
+            "text": "基础数据建立、分析",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 27,
+            "text": "HMDM数据维护",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 44,
+            "text": "标签、合格证及防伪贴的管理",
+            "label": "S"
+          },
+          {
+            "start": 50,
+            "end": 57,
+            "text": "开发经销商渠道",
+            "label": "S"
+          },
+          {
+            "start": 58,
+            "end": 65,
+            "text": "经销商合同签订",
+            "label": "S"
+          },
+          {
+            "start": 68,
+            "end": 78,
+            "text": "提交并确认经销商订单",
+            "label": "S"
+          },
+          {
+            "start": 82,
+            "end": 103,
+            "text": "解决在渠道开发或者渠道销售过程中的突发问题",
+            "label": "S"
+          },
+          {
+            "start": 107,
+            "end": 116,
+            "text": "建立、管理销售渠道",
+            "label": "S"
+          },
+          {
+            "start": 117,
+            "end": 125,
+            "text": "全年销售任务分析",
+            "label": "S"
+          },
+          {
+            "start": 126,
+            "end": 133,
+            "text": "建立经销商台账",
+            "label": "S"
+          },
+          {
+            "start": 137,
+            "end": 142,
+            "text": "供应商管理",
+            "label": "S"
+          },
+          {
+            "start": 143,
+            "end": 149,
+            "text": "下达生产计划",
+            "label": "S"
+          },
+          {
+            "start": 150,
+            "end": 159,
+            "text": "跟踪货款及产品交付",
+            "label": "S"
+          },
+          {
+            "start": 163,
+            "end": 170,
+            "text": "供应商发票报账",
+            "label": "S"
+          },
+          {
+            "start": 171,
+            "end": 178,
+            "text": "经销商发票开具",
+            "label": "S"
+          },
+          {
+            "start": 190,
+            "end": 193,
+            "text": "SAP",
+            "label": "S"
+          },
+          {
+            "start": 193,
+            "end": 200,
+            "text": "本科及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 206,
+            "end": 210,
+            "text": "市场营销",
+            "label": "K"
+          },
+          {
+            "start": 211,
+            "end": 215,
+            "text": "工商管理",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "独立职业职责逐项拆分，共享动作或对象的短语保留；明确业务问题解决标S，学历与专业名标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04170",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "ISO9001质量管理体系",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "环保要求",
+            "label": "K"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "QC手法",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "text": "5Why",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 38,
+            "text": "8D",
+            "label": "S"
+          },
+          {
+            "start": 39,
+            "end": 43,
+            "text": "APQP",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 48,
+            "text": "FMEA",
+            "label": "S"
+          },
+          {
+            "start": 49,
+            "end": 52,
+            "text": "SPC",
+            "label": "S"
+          },
+          {
+            "start": 53,
+            "end": 57,
+            "text": "PPAP",
+            "label": "S"
+          },
+          {
+            "start": 58,
+            "end": 61,
+            "text": "MSA",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "管理体系和环保规范要求标K，明确质量管理方法及工具逐项标S，概括性总称不重复标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04175",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "市场营销",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "酒店管理",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "优先条件中的明确专业名标K，专业不限及泛化相关专业不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-04177",
+        "spans": [
+          {
+            "start": 1,
+            "end": 5,
+            "text": "深度学习",
+            "label": "S"
+          },
+          {
+            "start": 6,
+            "end": 12,
+            "text": "基础算法开发",
+            "label": "S"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "机器视觉",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "大型项目开发",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 40,
+            "text": "数学基础",
+            "label": "K"
+          },
+          {
+            "start": 41,
+            "end": 50,
+            "text": "对算法研究兴趣浓厚",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列领域受同句明确项目开发实践限定，标S；数学基础标K，岗位研究兴趣保留完整特质表达标T。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 191,
+  "ids": [
+    "sp10k-04034",
+    "sp10k-04066",
+    "sp10k-04111",
+    "sp10k-04157",
+    "sp10k-04158",
+    "sp10k-04162",
+    "sp10k-04163",
+    "sp10k-04170",
+    "sp10k-04175",
+    "sp10k-04177"
+  ],
+  "at": "2026-09-13T16:47:52.690880+00:00"
+}

@@ -1,0 +1,789 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 44.079,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5066,
+    "completion_tokens": 1923,
+    "total_tokens": 6989,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 727
+    },
+    "input_tokens": 5066,
+    "output_tokens": 1923,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06187",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            11
+          ],
+          "to": [
+            8,
+            10
+          ],
+          "text": "液晶"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            12,
+            14
+          ],
+          "to": [
+            11,
+            13
+          ],
+          "text": "机械"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            15,
+            19
+          ],
+          "to": [
+            14,
+            18
+          ],
+          "text": "材料开发"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06188",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            11
+          ],
+          "to": [
+            3,
+            12
+          ],
+          "text": "药品供应链管理流程"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            16,
+            20
+          ],
+          "to": [
+            15,
+            19
+          ],
+          "text": "药品生产"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            21,
+            25
+          ],
+          "to": [
+            20,
+            22
+          ],
+          "text": "销售"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06189",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            14
+          ],
+          "to": [
+            11,
+            18
+          ],
+          "text": "HSE法规政策"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            23,
+            27
+          ],
+          "to": [
+            22,
+            25
+          ],
+          "text": "敏感性"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            28,
+            31
+          ],
+          "to": [
+            26,
+            29
+          ],
+          "text": "理解力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            38,
+            42
+          ],
+          "to": [
+            35,
+            39
+          ],
+          "text": "文字功底"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            44,
+            48
+          ],
+          "to": [
+            43,
+            47
+          ],
+          "text": "表达能力"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            50,
+            56
+          ],
+          "to": [
+            51,
+            57
+          ],
+          "text": "公文写作能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06190",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            11,
+            22
+          ],
+          "to": [
+            6,
+            18
+          ],
+          "text": "专业知识（空调暖通系统）"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            26,
+            36
+          ],
+          "to": [
+            21,
+            30
+          ],
+          "text": "甲级写字楼空调设备"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06191",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            17
+          ],
+          "to": [
+            9,
+            16
+          ],
+          "text": "促进团队的合作"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            18,
+            23
+          ],
+          "to": [
+            17,
+            21
+          ],
+          "text": "高效工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06192",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            5,
+            13
+          ],
+          "to": [
+            6,
+            12
+          ],
+          "text": "专业技术标准"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            14,
+            16
+          ],
+          "to": [
+            13,
+            15
+          ],
+          "text": "规章"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            17,
+            31
+          ],
+          "to": [
+            18,
+            34
+          ],
+          "text": "独立承担部门级较为复杂技术性工作"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            37,
+            49
+          ],
+          "to": [
+            38,
+            56
+          ],
+          "text": "针对存在的隐患或技术问题提出解决方案"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            50,
+            54
+          ],
+          "to": [
+            58,
+            62
+          ],
+          "text": "有效解决"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06194",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            20,
+            28
+          ],
+          "to": [
+            14,
+            20
+          ],
+          "text": "物业管理流程"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            29,
+            33
+          ],
+          "to": [
+            21,
+            25
+          ],
+          "text": "人员管理"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06195",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            14,
+            20
+          ],
+          "to": [
+            15,
+            19
+          ],
+          "text": "沟通能力"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            21,
+            25
+          ],
+          "to": [
+            20,
+            24
+          ],
+          "text": "学习能力"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            26,
+            32
+          ],
+          "to": [
+            25,
+            31
+          ],
+          "text": "沟通协调能力"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            34,
+            41
+          ],
+          "to": [
+            33,
+            40
+          ],
+          "text": "对数据高度敏感"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            42,
+            48
+          ],
+          "to": [
+            41,
+            47
+          ],
+          "text": "沟通协调能力"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            50,
+            54
+          ],
+          "text": "奉献精神"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06186\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"系统分析\",\"label\":\"S\"},{\"start\":7,\"end\":15,\"text\":\"节能改造方案制定\",\"label\":\"S\"},{\"start\":20,\"end\":22,\"text\":\"设计\",\"label\":\"S\"},{\"start\":23,\"end\":25,\"text\":\"预算\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"施工管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确要求具备的分析、方案制定、设计、预算和施工管理能力。\",\"issues\":[]},{\"id\":\"sp10k-06187\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"大专及以上学历\",\"label\":\"K\"},{\"start\":9,\"end\":11,\"text\":\"液晶\",\"label\":\"K\"},{\"start\":12,\"end\":14,\"text\":\"机械\",\"label\":\"K\"},{\"start\":15,\"end\":19,\"text\":\"材料开发\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格名；液晶、机械和材料开发为相关专业领域提及。\",\"issues\":[]},{\"id\":\"sp10k-06188\",\"spans\":[{\"start\":3,\"end\":11,\"text\":\"药品供应链管理流程\",\"label\":\"K\"},{\"start\":16,\"end\":20,\"text\":\"药品生产\",\"label\":\"K\"},{\"start\":21,\"end\":25,\"text\":\"销售\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取供应链流程及药品生产、销售环节的领域知识。\",\"issues\":[]},{\"id\":\"sp10k-06189\",\"spans\":[{\"start\":6,\"end\":14,\"text\":\"HSE法规政策\",\"label\":\"K\"},{\"start\":23,\"end\":27,\"text\":\"敏感性\",\"label\":\"T\"},{\"start\":28,\"end\":31,\"text\":\"理解力\",\"label\":\"T\"},{\"start\":38,\"end\":42,\"text\":\"文字功底\",\"label\":\"T\"},{\"start\":44,\"end\":48,\"text\":\"表达能力\",\"label\":\"T\"},{\"start\":50,\"end\":56,\"text\":\"公文写作能力\",\"label\":\"S\"},{\"start\":58,\"end\":64,\"text\":\"活动组织能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"法规政策为领域知识；敏感、表达、文字及组织等为通用能力，公文写作为职业动作。\",\"issues\":[]},{\"id\":\"sp10k-06190\",\"spans\":[{\"start\":11,\"end\":22,\"text\":\"专业知识（空调暖通系统）\",\"label\":\"K\"},{\"start\":26,\"end\":36,\"text\":\"甲级写字楼空调设备\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取空调暖通系统专业知识及相关设备知识。\",\"issues\":[]},{\"id\":\"sp10k-06191\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"领导能力\",\"label\":\"T\"},{\"start\":9,\"end\":17,\"text\":\"促进团队的合作\",\"label\":\"T\"},{\"start\":18,\"end\":23,\"text\":\"高效工作\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取领导、促进团队合作及高效工作的通用能力要求。\",\"issues\":[]},{\"id\":\"sp10k-06192\",\"spans\":[{\"start\":5,\"end\":13,\"text\":\"专业技术标准\",\"label\":\"K\"},{\"start\":14,\"end\":16,\"text\":\"规章\",\"label\":\"K\"},{\"start\":17,\"end\":31,\"text\":\"独立承担部门级较为复杂技术性工作\",\"label\":\"S\"},{\"start\":37,\"end\":49,\"text\":\"针对存在的隐患或技术问题提出解决方案\",\"label\":\"S\"},{\"start\":50,\"end\":54,\"text\":\"有效解决\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"技术标准和规章为知识；承担技术工作、提出解决方案及解决问题为职业动作。经济效益为结果，不标。\",\"issues\":[]},{\"id\":\"sp10k-06193\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明应届毕业生身份，没有明确能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-06194\",\"spans\":[{\"start\":20,\"end\":28,\"text\":\"物业管理流程\",\"label\":\"K\"},{\"start\":29,\"end\":33,\"text\":\"人员管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"泛化工作经验及年限不标；物业管理流程为知识，人员管理为职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06195\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"性格开朗\",\"label\":\"T\"},{\"start\":5,\"end\":9,\"text\":\"勇于表达\",\"label\":\"T\"},{\"start\":14,\"end\":20,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":21,\"end\":25,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":26,\"end\":32,\"text\":\"沟通协调能力\",\"label\":\"T\"},{\"start\":34,\"end\":41,\"text\":\"对数据高度敏感\",\"label\":\"T\"},{\"start\":42,\"end\":48,\"text\":\"沟通协调能力\",\"label\":\"T\"},{\"start\":49,\"end\":53,\"text\":\"奉献精神\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取性格、表达、沟通、学习、数据敏感和奉献等通用能力与特质。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06186",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "系统分析",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 15,
+            "text": "节能改造方案制定",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "设计",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 25,
+            "text": "预算",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "施工管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确要求具备的分析、方案制定、设计、预算和施工管理能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06187",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "大专及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "液晶",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 13,
+            "text": "机械",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "材料开发",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格名；液晶、机械和材料开发为相关专业领域提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06188",
+        "spans": [
+          {
+            "start": 3,
+            "end": 12,
+            "text": "药品供应链管理流程",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "药品生产",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 22,
+            "text": "销售",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取供应链流程及药品生产、销售环节的领域知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06189",
+        "spans": [
+          {
+            "start": 11,
+            "end": 18,
+            "text": "HSE法规政策",
+            "label": "K"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "text": "敏感性",
+            "label": "T"
+          },
+          {
+            "start": 26,
+            "end": 29,
+            "text": "理解力",
+            "label": "T"
+          },
+          {
+            "start": 35,
+            "end": 39,
+            "text": "文字功底",
+            "label": "T"
+          },
+          {
+            "start": 43,
+            "end": 47,
+            "text": "表达能力",
+            "label": "T"
+          },
+          {
+            "start": 51,
+            "end": 57,
+            "text": "公文写作能力",
+            "label": "S"
+          },
+          {
+            "start": 58,
+            "end": 64,
+            "text": "活动组织能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "法规政策为领域知识；敏感、表达、文字及组织等为通用能力，公文写作为职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06190",
+        "spans": [
+          {
+            "start": 6,
+            "end": 18,
+            "text": "专业知识（空调暖通系统）",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 30,
+            "text": "甲级写字楼空调设备",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取空调暖通系统专业知识及相关设备知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06191",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "领导能力",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 16,
+            "text": "促进团队的合作",
+            "label": "T"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "text": "高效工作",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取领导、促进团队合作及高效工作的通用能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06192",
+        "spans": [
+          {
+            "start": 6,
+            "end": 12,
+            "text": "专业技术标准",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "text": "规章",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 34,
+            "text": "独立承担部门级较为复杂技术性工作",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 56,
+            "text": "针对存在的隐患或技术问题提出解决方案",
+            "label": "S"
+          },
+          {
+            "start": 58,
+            "end": 62,
+            "text": "有效解决",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "技术标准和规章为知识；承担技术工作、提出解决方案及解决问题为职业动作。经济效益为结果，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06193",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明应届毕业生身份，没有明确能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06194",
+        "spans": [
+          {
+            "start": 14,
+            "end": 20,
+            "text": "物业管理流程",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "text": "人员管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "泛化工作经验及年限不标；物业管理流程为知识，人员管理为职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06195",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "性格开朗",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "勇于表达",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 31,
+            "text": "沟通协调能力",
+            "label": "T"
+          },
+          {
+            "start": 33,
+            "end": 40,
+            "text": "对数据高度敏感",
+            "label": "T"
+          },
+          {
+            "start": 41,
+            "end": 47,
+            "text": "沟通协调能力",
+            "label": "T"
+          },
+          {
+            "start": 50,
+            "end": 54,
+            "text": "奉献精神",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取性格、表达、沟通、学习、数据敏感和奉献等通用能力与特质。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 239,
+  "ids": [
+    "sp10k-06186",
+    "sp10k-06187",
+    "sp10k-06188",
+    "sp10k-06189",
+    "sp10k-06190",
+    "sp10k-06191",
+    "sp10k-06192",
+    "sp10k-06193",
+    "sp10k-06194",
+    "sp10k-06195"
+  ],
+  "at": "2026-09-13T17:36:09.954630+00:00"
+}

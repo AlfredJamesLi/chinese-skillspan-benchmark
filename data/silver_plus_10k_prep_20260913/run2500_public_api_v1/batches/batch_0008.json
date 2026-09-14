@@ -1,0 +1,230 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 42.957,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5059,
+    "completion_tokens": 1352,
+    "total_tokens": 6411,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5059,
+    "output_tokens": 1352,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00071\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为笔试要求与注意事项的查阅指引，不含具体能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00072\",\"spans\":[{\"start\":5,\"end\":17,\"text\":\"系统设计相关文档编写能力\",\"label\":\"S\"},{\"start\":18,\"end\":22,\"text\":\"条理清晰\",\"label\":\"T\"},{\"start\":23,\"end\":27,\"text\":\"逻辑严密\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"文档编写能力为职业技能；系统设计是文档限定，不另拆执行职责。条理和逻辑特质标T。\",\"issues\":[]},{\"id\":\"sp10k-00073\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"现场踏勘\",\"label\":\"S\"},{\"start\":9,\"end\":18,\"text\":\"编制水处理运行方案\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取现场踏勘与方案编制两项职业活动；后续方案及报告列表说明编制内容，不另作独立技能。\",\"issues\":[]},{\"id\":\"sp10k-00074\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅规定留学人员提供学历学位认证材料的行政手续，未提出具体学历层次或专业资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00075\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为报名时阅读条件和填写承诺书的行政流程。\",\"issues\":[]},{\"id\":\"sp10k-00076\",\"spans\":[{\"start\":0,\"end\":15,\"text\":\"电商系统、物业管理软件系统维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"两个系统对象共享维护动作，保留连续完整跨度，避免拆分后丢失职业活动含义。\",\"issues\":[]},{\"id\":\"sp10k-00077\",\"spans\":[{\"start\":13,\"end\":17,\"text\":\"师资培训\",\"label\":\"S\"},{\"start\":18,\"end\":34,\"text\":\"把课程教学能力转移给内部讲师团队\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"此处为候选人执行培训与教学能力转移的职责，不是公司提供的培训福利。\",\"issues\":[]},{\"id\":\"sp10k-00078\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"安保管理\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"安全保卫\",\"label\":\"S\"},{\"start\":15,\"end\":19,\"text\":\"消防监控\",\"label\":\"S\"},{\"start\":20,\"end\":24,\"text\":\"车辆疏导\",\"label\":\"S\"},{\"start\":25,\"end\":45,\"text\":\"突发事件（医闹、火灾、急救等）的应急处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的安保职能及具体职业活动；应急处理保留必要对象，确保医患安全为结果承诺不标。\",\"issues\":[]},{\"id\":\"sp10k-00079\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"动力\",\"label\":\"K\"},{\"start\":3,\"end\":7,\"text\":\"给水排水\",\"label\":\"K\"},{\"start\":18,\"end\":22,\"text\":\"专业英语\",\"label\":\"L\"}],\"status\":\"candidate_complete\",\"note\":\"专业名称标K；专业英语在借助工具读写的语言要求中标L，泛称工具不作为具体工具技能。\",\"issues\":[]},{\"id\":\"sp10k-00080\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅介绍拟定公司名称和经营范围，不构成候选人能力或知识要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00071",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为笔试要求与注意事项的查阅指引，不含具体能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00072",
+        "spans": [
+          {
+            "start": 5,
+            "end": 17,
+            "text": "系统设计相关文档编写能力",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "条理清晰",
+            "label": "T"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "逻辑严密",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文档编写能力为职业技能；系统设计是文档限定，不另拆执行职责。条理和逻辑特质标T。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00073",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "现场踏勘",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 18,
+            "text": "编制水处理运行方案",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取现场踏勘与方案编制两项职业活动；后续方案及报告列表说明编制内容，不另作独立技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00074",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅规定留学人员提供学历学位认证材料的行政手续，未提出具体学历层次或专业资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00075",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为报名时阅读条件和填写承诺书的行政流程。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00076",
+        "spans": [
+          {
+            "start": 0,
+            "end": 15,
+            "text": "电商系统、物业管理软件系统维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两个系统对象共享维护动作，保留连续完整跨度，避免拆分后丢失职业活动含义。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00077",
+        "spans": [
+          {
+            "start": 13,
+            "end": 17,
+            "text": "师资培训",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 34,
+            "text": "把课程教学能力转移给内部讲师团队",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "此处为候选人执行培训与教学能力转移的职责，不是公司提供的培训福利。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00078",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "安保管理",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "安全保卫",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "消防监控",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "车辆疏导",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 45,
+            "text": "突发事件（医闹、火灾、急救等）的应急处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的安保职能及具体职业活动；应急处理保留必要对象，确保医患安全为结果承诺不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00079",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "动力",
+            "label": "K"
+          },
+          {
+            "start": 3,
+            "end": 7,
+            "text": "给水排水",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "专业英语",
+            "label": "L"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业名称标K；专业英语在借助工具读写的语言要求中标L，泛称工具不作为具体工具技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00080",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅介绍拟定公司名称和经营范围，不构成候选人能力或知识要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 8,
+  "ids": [
+    "sp10k-00071",
+    "sp10k-00072",
+    "sp10k-00073",
+    "sp10k-00074",
+    "sp10k-00075",
+    "sp10k-00076",
+    "sp10k-00077",
+    "sp10k-00078",
+    "sp10k-00079",
+    "sp10k-00080"
+  ],
+  "at": "2026-09-13T13:58:37.781741+00:00"
+}

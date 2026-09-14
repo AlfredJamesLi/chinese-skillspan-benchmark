@@ -1,0 +1,515 @@
+{
+  "records": [
+    {
+      "id": "sp10k-03982",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "动手能力",
+          "label": "T"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": "肯吃苦",
+          "label": "T"
+        },
+        {
+          "start": 34,
+          "end": 36,
+          "text": "开车",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用素质和明确驾驶动作；加班、值班及出差条件不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03983",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "电子信息",
+          "label": "K"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 11,
+          "text": "网络",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "text": "自动化",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列专业名分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03984",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "明确了负责的问题范围，但具体职业活动表述不完整。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "负责各产品线提出的、当前系统亟待解决的性能问题",
+          "alternatives": [
+            "作为性能问题解决职责纳入S",
+            "仅说明问题归属，不抽取"
+          ],
+          "reason": "缺少明确执行动作，无法确定负责是指定位、解决还是协调处理；争议片段暂不入主层。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-03985",
+      "spans": [
+        {
+          "start": 4,
+          "end": 39,
+          "text": "电脑及周边硬件设备、电脑操作系统及办公、应用软件的安装、维护和故障解决",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "多个操作共享完整设备及软件对象，保留连续完整职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03986",
+      "spans": [
+        {
+          "start": 7,
+          "end": 21,
+          "text": "执行IDC机房相关制度、流程",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 29,
+          "text": "客户的接待",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 37,
+          "text": "客户行为的管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "制度执行、客户接待及现场客户行为管理为独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03987",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "计划能力",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 28,
+          "text": "制定项目工作计划、进度计划和施工预算",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用计划能力与具体计划、预算制定职责分别标注；保留共享动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03988",
+      "spans": [
+        {
+          "start": 29,
+          "end": 37,
+          "text": "完成活动策划方案",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确的策划方案完成职责；一般活动参与及合作背景不单列。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03989",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为岗位名称和招聘人数，没有具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03990",
+      "spans": [
+        {
+          "start": 2,
+          "end": 23,
+          "text": "数据中心、机房的设计、建设、监控和运维管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "职业操作共享数据中心、机房对象；后段可用性结果要求不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03991",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "工程师证",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 15,
+          "text": "物业经理上岗证书",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 25,
+          "text": "高、低压电工操作证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "非语言资格名标K；高低压证书保留必要共享成分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03993",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘条件标题，没有具体要求内容。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03994",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "大专以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "电气行业",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格及明确行业背景领域标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03995",
+      "spans": [
+        {
+          "start": 2,
+          "end": 26,
+          "text": "微软操作系统及常见办公软件、应用软件的安装与使用",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确安装和使用语境，保留共享软件对象与操作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03996",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "医院信息系统",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 37,
+          "text": "his、lis、hrp、crm等专业系统的实施与基本运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "局部实施、运维语境明确系统实践要求；系统列表共享操作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03997",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "独立解决题的能力",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "学习",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "创新能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用问题解决、学习及创新能力标T；保留原文缺字。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03998",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "抗压能力",
+          "label": "T"
+        },
+        {
+          "start": 6,
+          "end": 10,
+          "text": "团队协作",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "沟通协调能力",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "解决问题能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用能力，去除程度评价。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04000",
+      "spans": [
+        {
+          "start": 111,
+          "end": 121,
+          "text": "全日制本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 121,
+          "end": 125,
+          "text": "临床医学",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取表格正文中的学历和专业要求；岗位名称、部门及人数不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04001",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "大专以上学历",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 12,
+          "text": "电子类专业",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历及明确专业类别要求标K，优先修饰不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04002",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅有岗位名称、人数及要求标题，没有具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04003",
+      "spans": [
+        {
+          "start": 73,
+          "end": 78,
+          "text": "教师资格证",
+          "label": "K"
+        },
+        {
+          "start": 79,
+          "end": 83,
+          "text": "普通话证",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取作为岗位要求证明明确列出的职业及语言资格；报名流程和泛化学历证明不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04004",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "文案能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "文案能力绑定具体职业产出，标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04005",
+      "spans": [
+        {
+          "start": 5,
+          "end": 10,
+          "text": "工作责任心",
+          "label": "T"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "严谨",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 15,
+          "text": "细致",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 23,
+          "text": "勤奋",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "诚实",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 31,
+          "text": "工作责任心",
+          "label": "T"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "职业道德",
+          "label": "T"
+        },
+        {
+          "start": 45,
+          "end": 51,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 52,
+          "end": 58,
+          "text": "沟通协调能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "独立素质分别抽取；责任心的两处原文提及分别保留。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04006",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为人员类别、岗位及任职要求标题。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04007",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "维护公司机房的网络设备",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 49,
+          "text": "内网Windows服务器运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取网络设备维护及服务器运维；安全、稳定畅通为结果要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04008",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "商务沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 21,
+          "text": "与客户进行有效沟通",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "协调解决问题",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "客户沟通及无具体技术、业务对象的问题协调解决均为通用能力。",
+      "issues": []
+    }
+  ]
+}

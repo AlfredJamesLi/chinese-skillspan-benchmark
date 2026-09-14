@@ -1,0 +1,528 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04223",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "计算机系统网络以及数据的安全管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "安全管理的并列对象共享职能，保留完整跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04224",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "构建各类运维系统",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "代码发布",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 25,
+          "text": "自动化配置管理",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "监控报警系统",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "集群部署系统",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 44,
+          "text": "异地灾备",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取系统构建职责及明确列出的运维活动、系统。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04225",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "oracle",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 14,
+          "text": "mysql",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "text": "国产数据库",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "数据库要求的范围和边界明确，知识与工具运用语境未明；S为待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "oracle、mysql及国产数据库",
+          "alternatives": [
+            "S",
+            "K"
+          ],
+          "reason": "仅要求熟悉，未说明实际操作运用还是数据库知识；三项均存在相同类型歧义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04226",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "运维监控与管理",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "text": "项目执行与实施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分两项职业活动，各项保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04228",
+      "spans": [
+        {
+          "start": 14,
+          "end": 20,
+          "text": "业务需求评估",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "技术分析",
+          "label": "S"
+        },
+        {
+          "start": 42,
+          "end": 46,
+          "text": "方案设计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取明确执行的评估、分析和设计；上线计划及变更申请为工作依据。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04229",
+      "spans": [
+        {
+          "start": 3,
+          "end": 18,
+          "text": "生产运维环境的规划、搭建和维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列动作共享生产运维环境对象，保留完整提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04230",
+      "spans": [
+        {
+          "start": 5,
+          "end": 19,
+          "text": "汉语及中国文化课程的教学管理",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 27,
+          "text": "相关活动的组织",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "教学管理与教学相关活动组织为职业职责；课程对象不另嵌语言或知识标签。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04231",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "数据仓库建模",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 24,
+          "text": "ETL工具的开发",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "Kettle",
+          "label": "S"
+        },
+        {
+          "start": 33,
+          "end": 44,
+          "text": "Informatica",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 54,
+          "text": "Datastage",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "建模及工具开发为实践要求，所列工具受同一开发语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04232",
+      "spans": [
+        {
+          "start": 16,
+          "end": 28,
+          "text": "全日制大学本科或以上学历",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 40,
+          "text": "学士学位或以上证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历和学位资格；年龄及仅限定企业性质、规模的泛化工作经历不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04233",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "属于报考材料提交及单位证明手续，不是候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04234",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "处理客户端电脑软硬件异常",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取具有明确技术对象的异常处理活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04235",
+      "spans": [
+        {
+          "start": 14,
+          "end": 18,
+          "text": "技术沟通",
+          "label": "T"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "运行维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "与开发商的人际沟通为T，应用运行维护为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04236",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "就业见习政策背景及岗位募集情况介绍，无候选人能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04237",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "ECS",
+          "label": "S"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": "SLB",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "OSS",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "RDS",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "ODPS",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "云产品要求范围及边界明确，运用与知识语境未明；S为待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "ECS/SLB/OSS/RDS/ODPS",
+          "alternatives": [
+            "S",
+            "K"
+          ],
+          "reason": "仅要求熟悉云产品，缺少操作实施或知识原理方面的局部限定，五项类型均待裁决。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04238",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "整句为报名材料提交清单，证件名称出现在应聘行政流程中。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04239",
+      "spans": [
+        {
+          "start": 2,
+          "end": 14,
+          "text": "整理、归档电子版设计文件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "整理与归档共享文件对象，保留连续完整活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04240",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "无法确定是招聘岗位的资格审查职责，还是招聘公告中的行政流程说明。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "对报名人员报考资格进行审查",
+          "alternatives": [
+            "纳入：候选人须执行的招聘资格审查职责",
+            "排除：招聘公告中的报考资格审查流程"
+          ],
+          "reason": "缺少岗位职责或公告流程的上下文，不能确定执行主体是否为所招聘候选人。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04241",
+      "spans": [
+        {
+          "start": 4,
+          "end": 42,
+          "text": "组织对网络及网络设备、POS收款机、商业管理信息系统软件检查、保养和性能评估",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "组织设备检查、保养和评估为明确运维职责；并列对象与动作共享，保留完整连续跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04242",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 17,
+          "text": "对新技术的追求精神",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "积极主动",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "团队协作能力",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "乐于接受挑战",
+          "label": "T"
+        },
+        {
+          "start": 41,
+          "end": 47,
+          "text": "承受工作压力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用能力、发展意愿和个人特质，去除程度修饰及要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04243",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "行业和市场调研",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "竞品研究",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "调研与竞品研究为职业活动；行业和市场共享调研中心词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04244",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "软件系统实施和维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "去除经验后活动含义完整，实施和维护共享软件系统对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04245",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅要求专业对应，未提供具体专业名；泛化专业要求不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04246",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名登记表名称及提交份数，标题中的学历不是独立资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04247",
+      "spans": [
+        {
+          "start": 2,
+          "end": 19,
+          "text": "编制项目暖通系统设备应急预案EOP",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 27,
+          "text": "预防性维护计划",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 37,
+          "text": "维护保养内容MOP",
+          "label": "S"
+        },
+        {
+          "start": 40,
+          "end": 52,
+          "text": "设备维保合约的履行和落实",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "编制限定前三项文档活动，后两项编制对象由局部共享动词解释；合约履行为独立职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04248",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "英文优秀",
+          "label": "L"
+        },
+        {
+          "start": 5,
+          "end": 9,
+          "text": "口语熟练",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取英文及口语水平要求。",
+      "issues": []
+    }
+  ]
+}

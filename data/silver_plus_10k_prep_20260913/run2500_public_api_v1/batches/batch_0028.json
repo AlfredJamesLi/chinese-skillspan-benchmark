@@ -1,0 +1,518 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 39.065,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5047,
+    "completion_tokens": 1696,
+    "total_tokens": 6743,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 807
+    },
+    "input_tokens": 5047,
+    "output_tokens": 1696,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00271",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            19
+          ],
+          "to": [
+            2,
+            13
+          ],
+          "text": "分布式下的开发运维架构"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            25,
+            39
+          ],
+          "to": [
+            18,
+            30
+          ],
+          "text": "分布式系统设计、开发经验"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00272",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            24
+          ],
+          "to": [
+            2,
+            28
+          ],
+          "text": "DynamicsCRM系统部分业务功能的技术开发实现"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00273",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            12
+          ],
+          "text": "数据库及操作系统知识"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00275",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            7,
+            13
+          ],
+          "to": [
+            5,
+            11
+          ],
+          "text": "良好沟通能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00276",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            17
+          ],
+          "to": [
+            1,
+            16
+          ],
+          "text": "较强的动手和独立解决问题的能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00277",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            21,
+            25
+          ],
+          "to": [
+            21,
+            24
+          ],
+          "text": "虚拟机"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            26,
+            30
+          ],
+          "to": [
+            25,
+            29
+          ],
+          "text": "容器技术"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            31,
+            34
+          ],
+          "to": [
+            32,
+            35
+          ],
+          "text": "云计算"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            34,
+            37
+          ],
+          "to": [
+            36,
+            39
+          ],
+          "text": "云存储"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            39,
+            44
+          ],
+          "to": [
+            41,
+            47
+          ],
+          "text": "运维管理技术"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            49,
+            53
+          ],
+          "to": [
+            52,
+            56
+          ],
+          "text": "运维操作"
+        },
+        {
+          "i": 7,
+          "action": "snapped",
+          "from": [
+            54,
+            58
+          ],
+          "to": [
+            57,
+            61
+          ],
+          "text": "故障排除"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00278",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            7
+          ],
+          "to": [
+            4,
+            8
+          ],
+          "text": "设计工作"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00280",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            28
+          ],
+          "to": [
+            2,
+            24
+          ],
+          "text": "按各类服务、维修、改造等合同节点要求进行付款"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            29,
+            39
+          ],
+          "to": [
+            25,
+            40
+          ],
+          "text": "物业相关业务类费用的控制及核对"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            40,
+            48
+          ],
+          "to": [
+            41,
+            51
+          ],
+          "text": "每周定期更新费用台账"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00271\",\"spans\":[{\"start\":8,\"end\":19,\"text\":\"分布式下的开发运维架构\",\"label\":\"K\"},{\"start\":25,\"end\":39,\"text\":\"分布式系统设计、开发经验\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取分布式开发运维架构知识及明确的分布式系统设计、开发实践经验。\",\"issues\":[]},{\"id\":\"sp10k-00272\",\"spans\":[{\"start\":2,\"end\":24,\"text\":\"DynamicsCRM系统部分业务功能的技术开发实现\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行系统业务功能的技术开发实现。\",\"issues\":[]},{\"id\":\"sp10k-00273\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"数据库及操作系统知识\",\"label\":\"K\"},{\"start\":19,\"end\":28,\"text\":\"SQLServer\",\"label\":\"S\"},{\"start\":29,\"end\":35,\"text\":\"Oracle\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库及操作系统知识按领域知识标注，具体数据库工具按掌握和运用语境标注。\",\"issues\":[]},{\"id\":\"sp10k-00274\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为对应聘人员进行考核和资格复查的招聘流程说明，不是候选人须具备的能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00275\",\"spans\":[{\"start\":7,\"end\":13,\"text\":\"良好沟通能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"沟通能力属于通用软技能；身体健康不在标注范围内。\",\"issues\":[]},{\"id\":\"sp10k-00276\",\"spans\":[{\"start\":0,\"end\":17,\"text\":\"较强的动手和独立解决问题的能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"整体表达要求动手及独立解决问题的通用能力。\",\"issues\":[]},{\"id\":\"sp10k-00277\",\"spans\":[{\"start\":2,\"end\":20,\"text\":\"Windows与Linux服务器技术\",\"label\":\"S\"},{\"start\":21,\"end\":25,\"text\":\"虚拟机\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"容器技术\",\"label\":\"S\"},{\"start\":31,\"end\":34,\"text\":\"云计算\",\"label\":\"K\"},{\"start\":34,\"end\":37,\"text\":\"云存储\",\"label\":\"K\"},{\"start\":39,\"end\":44,\"text\":\"运维管理技术\",\"label\":\"S\"},{\"start\":49,\"end\":53,\"text\":\"运维操作\",\"label\":\"S\"},{\"start\":54,\"end\":58,\"text\":\"故障排除\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"服务器、虚拟机和容器为岗位技术运用；云计算和云存储为领域知识；运维管理、操作及故障排除为职业动作。\",\"issues\":[]},{\"id\":\"sp10k-00278\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"设计工作\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行设计工作。\",\"issues\":[]},{\"id\":\"sp10k-00279\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容为岗位招聘公告的组织、岗位和招聘范围信息，未出现具体候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00280\",\"spans\":[{\"start\":2,\"end\":28,\"text\":\"按各类服务、维修、改造等合同节点要求进行付款\",\"label\":\"S\"},{\"start\":29,\"end\":39,\"text\":\"物业相关业务类费用的控制及核对\",\"label\":\"S\"},{\"start\":40,\"end\":48,\"text\":\"每周定期更新费用台账\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取付款、费用控制及核对、费用台账更新等明确职业活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00271",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "分布式下的开发运维架构",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 30,
+            "text": "分布式系统设计、开发经验",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取分布式开发运维架构知识及明确的分布式系统设计、开发实践经验。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00272",
+        "spans": [
+          {
+            "start": 2,
+            "end": 28,
+            "text": "DynamicsCRM系统部分业务功能的技术开发实现",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行系统业务功能的技术开发实现。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00273",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "数据库及操作系统知识",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 28,
+            "text": "SQLServer",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "Oracle",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库及操作系统知识按领域知识标注，具体数据库工具按掌握和运用语境标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00274",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为对应聘人员进行考核和资格复查的招聘流程说明，不是候选人须具备的能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00275",
+        "spans": [
+          {
+            "start": 5,
+            "end": 11,
+            "text": "良好沟通能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "沟通能力属于通用软技能；身体健康不在标注范围内。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00276",
+        "spans": [
+          {
+            "start": 1,
+            "end": 16,
+            "text": "较强的动手和独立解决问题的能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "整体表达要求动手及独立解决问题的通用能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00277",
+        "spans": [
+          {
+            "start": 2,
+            "end": 20,
+            "text": "Windows与Linux服务器技术",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 24,
+            "text": "虚拟机",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "容器技术",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 35,
+            "text": "云计算",
+            "label": "K"
+          },
+          {
+            "start": 36,
+            "end": 39,
+            "text": "云存储",
+            "label": "K"
+          },
+          {
+            "start": 41,
+            "end": 47,
+            "text": "运维管理技术",
+            "label": "S"
+          },
+          {
+            "start": 52,
+            "end": 56,
+            "text": "运维操作",
+            "label": "S"
+          },
+          {
+            "start": 57,
+            "end": 61,
+            "text": "故障排除",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "服务器、虚拟机和容器为岗位技术运用；云计算和云存储为领域知识；运维管理、操作及故障排除为职业动作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00278",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "设计工作",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行设计工作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00279",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容为岗位招聘公告的组织、岗位和招聘范围信息，未出现具体候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00280",
+        "spans": [
+          {
+            "start": 2,
+            "end": 24,
+            "text": "按各类服务、维修、改造等合同节点要求进行付款",
+            "label": "S"
+          },
+          {
+            "start": 25,
+            "end": 40,
+            "text": "物业相关业务类费用的控制及核对",
+            "label": "S"
+          },
+          {
+            "start": 41,
+            "end": 51,
+            "text": "每周定期更新费用台账",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取付款、费用控制及核对、费用台账更新等明确职业活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 28,
+  "ids": [
+    "sp10k-00271",
+    "sp10k-00272",
+    "sp10k-00273",
+    "sp10k-00274",
+    "sp10k-00275",
+    "sp10k-00276",
+    "sp10k-00277",
+    "sp10k-00278",
+    "sp10k-00279",
+    "sp10k-00280"
+  ],
+  "at": "2026-09-13T14:14:23.419841+00:00"
+}

@@ -1,0 +1,458 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 35.124,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5002,
+    "completion_tokens": 1272,
+    "total_tokens": 6274,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 488
+    },
+    "input_tokens": 5002,
+    "output_tokens": 1272,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00844",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            6
+          ],
+          "to": [
+            5,
+            9
+          ],
+          "text": "资质管理"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            15
+          ],
+          "to": [
+            10,
+            16
+          ],
+          "text": "科研平台申报"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00845",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            8,
+            16
+          ],
+          "to": [
+            6,
+            14
+          ],
+          "text": "电气工程及自动化"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            24
+          ],
+          "to": [
+            15,
+            22
+          ],
+          "text": "热能与动力工程"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            25,
+            30
+          ],
+          "to": [
+            23,
+            28
+          ],
+          "text": "热工自动化"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            31,
+            40
+          ],
+          "to": [
+            29,
+            38
+          ],
+          "text": "机械设计及其自动化"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            42,
+            45
+          ],
+          "to": [
+            39,
+            42
+          ],
+          "text": "电力类"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00846",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            1,
+            13
+          ],
+          "to": [
+            1,
+            11
+          ],
+          "text": "Java和数据库开发"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            21,
+            24
+          ],
+          "to": [
+            19,
+            22
+          ],
+          "text": "SQL"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            25,
+            42
+          ],
+          "to": [
+            23,
+            38
+          ],
+          "text": "Java语言实现对数据库的运维"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00847",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            37
+          ],
+          "to": [
+            2,
+            30
+          ],
+          "text": "公司信息化网络和服务器等硬件设施和软件应用系统的正常运行"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00850",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            16,
+            30
+          ],
+          "to": [
+            13,
+            22
+          ],
+          "text": "变配电系统日常运维"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            30,
+            38
+          ],
+          "to": [
+            22,
+            28
+          ],
+          "text": "专业技能知识"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            39,
+            47
+          ],
+          "to": [
+            29,
+            38
+          ],
+          "text": "变配电安全防护知识"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            51,
+            59
+          ],
+          "to": [
+            43,
+            53
+          ],
+          "text": "设备的使用和维护要求"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00841\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历资格要求；“经验不限”和应届生考虑不标。\",\"issues\":[]},{\"id\":\"sp10k-00842\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"公告解释事项，不属于候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00843\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"报名时间及报名要求标题，不含可确认的具体能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00844\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"资质管理\",\"label\":\"S\"},{\"start\":9,\"end\":15,\"text\":\"科研平台申报\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行的资质管理和科研平台申报活动。\",\"issues\":[]},{\"id\":\"sp10k-00845\",\"spans\":[{\"start\":8,\"end\":16,\"text\":\"电气工程及自动化\",\"label\":\"K\"},{\"start\":17,\"end\":24,\"text\":\"热能与动力工程\",\"label\":\"K\"},{\"start\":25,\"end\":30,\"text\":\"热工自动化\",\"label\":\"K\"},{\"start\":31,\"end\":40,\"text\":\"机械设计及其自动化\",\"label\":\"K\"},{\"start\":42,\"end\":45,\"text\":\"电力类\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"专业要求中的领域和专业名称按知识类资格提及标注。\",\"issues\":[]},{\"id\":\"sp10k-00846\",\"spans\":[{\"start\":1,\"end\":13,\"text\":\"Java和数据库开发\",\"label\":\"S\"},{\"start\":21,\"end\":24,\"text\":\"SQL\",\"label\":\"S\"},{\"start\":25,\"end\":42,\"text\":\"Java语言实现对数据库的运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确的开发、SQL使用及数据库运维活动；经验后缀不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-00847\",\"spans\":[{\"start\":2,\"end\":37,\"text\":\"公司信息化网络和服务器等硬件设施和软件应用系统的正常运行\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"负责信息化网络、服务器及软件应用系统运行维护相关工作。\",\"issues\":[]},{\"id\":\"sp10k-00848\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为无具体活动的计算机系统工作经验及年限要求，按泛化经验规则不标。\",\"issues\":[]},{\"id\":\"sp10k-00849\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"Oracle\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库工具名，处于岗位使用语境。\",\"issues\":[]},{\"id\":\"sp10k-00850\",\"spans\":[{\"start\":16,\"end\":30,\"text\":\"变配电系统日常运维\",\"label\":\"S\"},{\"start\":30,\"end\":38,\"text\":\"专业技能知识\",\"label\":\"K\"},{\"start\":39,\"end\":47,\"text\":\"变配电安全防护知识\",\"label\":\"K\"},{\"start\":51,\"end\":59,\"text\":\"设备的使用和维护要求\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"分别标注变配电运维活动、安全防护知识及设备使用维护要求；年限和泛化工作经验不标。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00841",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历资格要求；“经验不限”和应届生考虑不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00842",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "公告解释事项，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00843",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "报名时间及报名要求标题，不含可确认的具体能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00844",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "资质管理",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 16,
+            "text": "科研平台申报",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行的资质管理和科研平台申报活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00845",
+        "spans": [
+          {
+            "start": 6,
+            "end": 14,
+            "text": "电气工程及自动化",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "text": "热能与动力工程",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "text": "热工自动化",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 38,
+            "text": "机械设计及其自动化",
+            "label": "K"
+          },
+          {
+            "start": 39,
+            "end": 42,
+            "text": "电力类",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业要求中的领域和专业名称按知识类资格提及标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00846",
+        "spans": [
+          {
+            "start": 1,
+            "end": 11,
+            "text": "Java和数据库开发",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 22,
+            "text": "SQL",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 38,
+            "text": "Java语言实现对数据库的运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确的开发、SQL使用及数据库运维活动；经验后缀不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00847",
+        "spans": [
+          {
+            "start": 2,
+            "end": 30,
+            "text": "公司信息化网络和服务器等硬件设施和软件应用系统的正常运行",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "负责信息化网络、服务器及软件应用系统运行维护相关工作。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00848",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为无具体活动的计算机系统工作经验及年限要求，按泛化经验规则不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00849",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "Oracle",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库工具名，处于岗位使用语境。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00850",
+        "spans": [
+          {
+            "start": 13,
+            "end": 22,
+            "text": "变配电系统日常运维",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "专业技能知识",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 38,
+            "text": "变配电安全防护知识",
+            "label": "K"
+          },
+          {
+            "start": 43,
+            "end": 53,
+            "text": "设备的使用和维护要求",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分别标注变配电运维活动、安全防护知识及设备使用维护要求；年限和泛化工作经验不标。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 85,
+  "ids": [
+    "sp10k-00841",
+    "sp10k-00842",
+    "sp10k-00843",
+    "sp10k-00844",
+    "sp10k-00845",
+    "sp10k-00846",
+    "sp10k-00847",
+    "sp10k-00848",
+    "sp10k-00849",
+    "sp10k-00850"
+  ],
+  "at": "2026-09-13T15:01:44.646742+00:00"
+}

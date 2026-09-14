@@ -1,0 +1,257 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07401",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅表示满足客户其他要求，未明确具体能力、知识或资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07402",
+      "spans": [
+        {
+          "start": 12,
+          "end": 16,
+          "text": "理解能力",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 23,
+          "text": "责任心",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "身体健康不属于标注范围，理解能力和责任心属于通用能力或特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07403",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "热爱学习",
+          "label": "T"
+        },
+        {
+          "start": 5,
+          "end": 11,
+          "text": "自我更新能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学习意愿、自我更新能力属于通用能力或特质。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07404",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "协调组织资源",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "text": "解决项目复杂问题",
+          "label": "T"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "沟通协调能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "协调资源、解决问题和沟通协调均为跨行业通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07405",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "税务政策",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "财务法规",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "公司业务流程",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学习能力为通用能力；税务政策、财务法规和公司业务流程为领域知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07406",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "问题解决能力",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "应急处理能力",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 33,
+          "text": "响应突发故障与意外情况",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 42,
+          "text": "推动问题妥善解决",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "问题解决和应急处理属于通用能力；响应故障及推动问题解决属于明确职业动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07407",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "大学本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "银行",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "金融行业",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "text": "互联网公司",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 31,
+          "text": "平台设计类经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历和行业背景属于K；平台设计类经验保留经验语义并按职业实践标为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07408",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "汇报能力",
+          "label": "T"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "办公软件",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "Word",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 31,
+          "text": "PPT",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 37,
+          "text": "Excel",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "汇报能力为通用能力；办公软件及列举的办公工具属于岗位使用工具。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07409",
+      "spans": [
+        {
+          "start": 5,
+          "end": 14,
+          "text": "大学本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格名按K标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07410",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "GLM",
+          "label": "S"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": "决策树",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "机器学习",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "在模型语境下，GLM、决策树和机器学习均作为需熟悉的技术模型或方法标为S。",
+      "issues": []
+    }
+  ]
+}

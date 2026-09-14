@@ -1,0 +1,394 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 59.165,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5033,
+    "completion_tokens": 1893,
+    "total_tokens": 6926,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 772
+    },
+    "input_tokens": 5033,
+    "output_tokens": 1893,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-05928",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            12,
+            19
+          ],
+          "to": [
+            13,
+            20
+          ],
+          "text": "药房药品的采购"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            20,
+            22
+          ],
+          "to": [
+            21,
+            23
+          ],
+          "text": "验收"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            23,
+            25
+          ],
+          "to": [
+            24,
+            26
+          ],
+          "text": "配药"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            26,
+            28
+          ],
+          "to": [
+            27,
+            29
+          ],
+          "text": "库管"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-05926\",\"spans\":[{\"start\":16,\"end\":30,\"text\":\"跟进所负责工程项目合同的执行\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"合同执行跟进为职业活动；对指标和应收账款负责未明确具体动作，不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-05927\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"专科以上学历\",\"label\":\"K\"},{\"start\":7,\"end\":15,\"text\":\"电气工程及自动化\",\"label\":\"K\"},{\"start\":16,\"end\":20,\"text\":\"电力电子\",\"label\":\"K\"},{\"start\":21,\"end\":26,\"text\":\"机电一体化\",\"label\":\"K\"},{\"start\":27,\"end\":31,\"text\":\"机电工程\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历资格及明确专业名标K，排除泛化相关专业修饰。\",\"issues\":[]},{\"id\":\"sp10k-05928\",\"spans\":[{\"start\":12,\"end\":19,\"text\":\"药房药品的采购\",\"label\":\"S\"},{\"start\":20,\"end\":22,\"text\":\"验收\",\"label\":\"S\"},{\"start\":23,\"end\":25,\"text\":\"配药\",\"label\":\"S\"},{\"start\":26,\"end\":28,\"text\":\"库管\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"药房具体职业活动分别标S，共享药品对象由上下文限定；确保质量和数量准确为结果要求，不标。\",\"issues\":[]},{\"id\":\"sp10k-05929\",\"spans\":[{\"start\":4,\"end\":9,\"text\":\"Linux\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"Unix\",\"label\":\"S\"},{\"start\":15,\"end\":22,\"text\":\"Windows\",\"label\":\"S\"},{\"start\":29,\"end\":33,\"text\":\"日常运维\",\"label\":\"S\"},{\"start\":34,\"end\":40,\"text\":\"配置管理能力\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"操作系统处于明确操作语境，标工具S；运维和配置管理为领域绑定的职业能力。\",\"issues\":[]},{\"id\":\"sp10k-05930\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"文字组织能力\",\"label\":\"T\"},{\"start\":13,\"end\":20,\"text\":\"方案，资料编写\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"文字组织为通用能力；方案与资料共享编写动作，保留连续完整跨度，避免将方案单独解释为知识名。\",\"issues\":[]},{\"id\":\"sp10k-05931\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"中专及以上学历\",\"label\":\"K\"},{\"start\":8,\"end\":10,\"text\":\"数控\",\"label\":\"K\"},{\"start\":11,\"end\":13,\"text\":\"机械\",\"label\":\"K\"},{\"start\":14,\"end\":19,\"text\":\"机电类专业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历及并列专业要求标K；优先和接受应届生不纳入跨度。\",\"issues\":[]},{\"id\":\"sp10k-05932\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"C++\",\"label\":\"S\"},{\"start\":8,\"end\":9,\"text\":\"C\",\"label\":\"S\"},{\"start\":10,\"end\":12,\"text\":\"VB\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"编程语言作为岗位技术工具标S，无理论、语法或课程知识限定。\",\"issues\":[]},{\"id\":\"sp10k-05933\",\"spans\":[{\"start\":14,\"end\":26,\"text\":\"组织、指挥、负责生产运行\",\"label\":\"S\"},{\"start\":29,\"end\":45,\"text\":\"储能电站计算机监控系统的信息输入\",\"label\":\"S\"},{\"start\":46,\"end\":68,\"text\":\"对故障信号及设备、设施的异常、故障检查和处理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"生产运行组织指挥、监控系统信息输入及故障检查处理为具体职业活动；共享对象和动作保留为完整连续提及。\",\"issues\":[]},{\"id\":\"sp10k-05934\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"积极主动\",\"label\":\"T\"},{\"start\":5,\"end\":9,\"text\":\"认真负责\",\"label\":\"T\"},{\"start\":15,\"end\":21,\"text\":\"团队合作意识\",\"label\":\"T\"},{\"start\":22,\"end\":25,\"text\":\"执行力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"通用工作特质、团队合作意识及执行力分别标T。\",\"issues\":[]},{\"id\":\"sp10k-05935\",\"spans\":[{\"start\":4,\"end\":11,\"text\":\"AUTOCAD\",\"label\":\"S\"},{\"start\":12,\"end\":16,\"text\":\"办公软件\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确应用语境下的设计工具和办公软件标S，保留原文大小写。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-05926",
+        "spans": [
+          {
+            "start": 16,
+            "end": 30,
+            "text": "跟进所负责工程项目合同的执行",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "合同执行跟进为职业活动；对指标和应收账款负责未明确具体动作，不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05927",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "专科以上学历",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 15,
+            "text": "电气工程及自动化",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "电力电子",
+            "label": "K"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "text": "机电一体化",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "机电工程",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历资格及明确专业名标K，排除泛化相关专业修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05928",
+        "spans": [
+          {
+            "start": 13,
+            "end": 20,
+            "text": "药房药品的采购",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 23,
+            "text": "验收",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "text": "配药",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "text": "库管",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "药房具体职业活动分别标S，共享药品对象由上下文限定；确保质量和数量准确为结果要求，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05929",
+        "spans": [
+          {
+            "start": 4,
+            "end": 9,
+            "text": "Linux",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "Unix",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "text": "Windows",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "日常运维",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "text": "配置管理能力",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "操作系统处于明确操作语境，标工具S；运维和配置管理为领域绑定的职业能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05930",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "文字组织能力",
+            "label": "T"
+          },
+          {
+            "start": 13,
+            "end": 20,
+            "text": "方案，资料编写",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文字组织为通用能力；方案与资料共享编写动作，保留连续完整跨度，避免将方案单独解释为知识名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05931",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "中专及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 8,
+            "end": 10,
+            "text": "数控",
+            "label": "K"
+          },
+          {
+            "start": 11,
+            "end": 13,
+            "text": "机械",
+            "label": "K"
+          },
+          {
+            "start": 14,
+            "end": 19,
+            "text": "机电类专业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历及并列专业要求标K；优先和接受应届生不纳入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05932",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "C++",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 9,
+            "text": "C",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "VB",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "编程语言作为岗位技术工具标S，无理论、语法或课程知识限定。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05933",
+        "spans": [
+          {
+            "start": 14,
+            "end": 26,
+            "text": "组织、指挥、负责生产运行",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 45,
+            "text": "储能电站计算机监控系统的信息输入",
+            "label": "S"
+          },
+          {
+            "start": 46,
+            "end": 68,
+            "text": "对故障信号及设备、设施的异常、故障检查和处理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "生产运行组织指挥、监控系统信息输入及故障检查处理为具体职业活动；共享对象和动作保留为完整连续提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05934",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "积极主动",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "认真负责",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "团队合作意识",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 25,
+            "text": "执行力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "通用工作特质、团队合作意识及执行力分别标T。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-05935",
+        "spans": [
+          {
+            "start": 4,
+            "end": 11,
+            "text": "AUTOCAD",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "办公软件",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确应用语境下的设计工具和办公软件标S，保留原文大小写。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 213,
+  "ids": [
+    "sp10k-05926",
+    "sp10k-05927",
+    "sp10k-05928",
+    "sp10k-05929",
+    "sp10k-05930",
+    "sp10k-05931",
+    "sp10k-05932",
+    "sp10k-05933",
+    "sp10k-05934",
+    "sp10k-05935"
+  ],
+  "at": "2026-09-13T17:11:01.389432+00:00"
+}

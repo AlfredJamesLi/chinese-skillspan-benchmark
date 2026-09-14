@@ -1,0 +1,293 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 53.316,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5014,
+    "completion_tokens": 1623,
+    "total_tokens": 6637,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 659
+    },
+    "input_tokens": 5014,
+    "output_tokens": 1623,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00101\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"推动项目组日常工作执行\",\"label\":\"S\"},{\"start\":16,\"end\":23,\"text\":\"进度跟踪和控制\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取项目执行与进度管理活动；确保按计划完成属于结果承诺，不标。\",\"issues\":[]},{\"id\":\"sp10k-00102\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"网络配置调整修改\",\"label\":\"S\"},{\"start\":11,\"end\":17,\"text\":\"网络升级维护\",\"label\":\"S\"},{\"start\":20,\"end\":26,\"text\":\"应用升级发布\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"按独立网络及应用运维活动拆分，保留各活动的必要对象。\",\"issues\":[]},{\"id\":\"sp10k-00103\",\"spans\":[{\"start\":2,\"end\":15,\"text\":\"CDN平台系统的自动化部署\",\"label\":\"S\"},{\"start\":16,\"end\":22,\"text\":\"监控系统建设\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"自动化部署与监控系统建设为两项独立职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00104\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明招考资格条件的时间计算口径及截止日期，不含能力、知识或资格名称要求。\",\"issues\":[]},{\"id\":\"sp10k-00105\",\"spans\":[{\"start\":13,\"end\":26,\"text\":\"天猫、京东等平台的运营规则\",\"label\":\"K\"},{\"start\":27,\"end\":29,\"text\":\"逻辑\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取平台运营规则及共享平台限定的逻辑知识；泛化相关工作经验不标。\",\"issues\":[]},{\"id\":\"sp10k-00106\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"亲和力\",\"label\":\"T\"},{\"start\":6,\"end\":10,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"文字功底\",\"label\":\"T\"},{\"start\":16,\"end\":20,\"text\":\"学习能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"各项均为可迁移的通用能力或个人特质，独立拆分。\",\"issues\":[]},{\"id\":\"sp10k-00107\",\"spans\":[{\"start\":0,\"end\":2,\"text\":\"通讯\",\"label\":\"K\"},{\"start\":3,\"end\":5,\"text\":\"电子\",\"label\":\"K\"},{\"start\":6,\"end\":9,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":10,\"end\":12,\"text\":\"机电\",\"label\":\"K\"},{\"start\":17,\"end\":22,\"text\":\"大专及以上\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确专业名称及学历要求，不补写原文省略的学历二字。\",\"issues\":[]},{\"id\":\"sp10k-00108\",\"spans\":[{\"start\":2,\"end\":27,\"text\":\"基础组件/中间件应用/ceph分布式存储的故障维护\",\"label\":\"S\"},{\"start\":28,\"end\":32,\"text\":\"日志分析\",\"label\":\"S\"},{\"start\":33,\"end\":35,\"text\":\"巡检\",\"label\":\"S\"},{\"start\":36,\"end\":38,\"text\":\"优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"故障维护保留共享对象；日志分析、巡检、优化可由局部上下文承接对象，分别标注。\",\"issues\":[]},{\"id\":\"sp10k-00109\",\"spans\":[{\"start\":3,\"end\":13,\"text\":\"全日制本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"保留完整学历资格名，排除条目序号。\",\"issues\":[]},{\"id\":\"sp10k-00110\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"本科以上学历\",\"label\":\"K\"},{\"start\":24,\"end\":27,\"text\":\"互联网\",\"label\":\"K\"},{\"start\":29,\"end\":33,\"text\":\"技术管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取学历、明确行业背景及技术管理活动；排除年限和泛化工作经验。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00101",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "推动项目组日常工作执行",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "text": "进度跟踪和控制",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取项目执行与进度管理活动；确保按计划完成属于结果承诺，不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00102",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "网络配置调整修改",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "网络升级维护",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "text": "应用升级发布",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "按独立网络及应用运维活动拆分，保留各活动的必要对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00103",
+        "spans": [
+          {
+            "start": 2,
+            "end": 15,
+            "text": "CDN平台系统的自动化部署",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 22,
+            "text": "监控系统建设",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "自动化部署与监控系统建设为两项独立职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00104",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明招考资格条件的时间计算口径及截止日期，不含能力、知识或资格名称要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00105",
+        "spans": [
+          {
+            "start": 13,
+            "end": 26,
+            "text": "天猫、京东等平台的运营规则",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 29,
+            "text": "逻辑",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取平台运营规则及共享平台限定的逻辑知识；泛化相关工作经验不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00106",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "亲和力",
+            "label": "T"
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "文字功底",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "学习能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "各项均为可迁移的通用能力或个人特质，独立拆分。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00107",
+        "spans": [
+          {
+            "start": 0,
+            "end": 2,
+            "text": "通讯",
+            "label": "K"
+          },
+          {
+            "start": 3,
+            "end": 5,
+            "text": "电子",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 9,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "机电",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "text": "大专及以上",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确专业名称及学历要求，不补写原文省略的学历二字。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00108",
+        "spans": [
+          {
+            "start": 2,
+            "end": 27,
+            "text": "基础组件/中间件应用/ceph分布式存储的故障维护",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "日志分析",
+            "label": "S"
+          },
+          {
+            "start": 33,
+            "end": 35,
+            "text": "巡检",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 38,
+            "text": "优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "故障维护保留共享对象；日志分析、巡检、优化可由局部上下文承接对象，分别标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00109",
+        "spans": [
+          {
+            "start": 3,
+            "end": 13,
+            "text": "全日制本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "保留完整学历资格名，排除条目序号。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00110",
+        "spans": [
+          {
+            "start": 0,
+            "end": 6,
+            "text": "本科以上学历",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 27,
+            "text": "互联网",
+            "label": "K"
+          },
+          {
+            "start": 29,
+            "end": 33,
+            "text": "技术管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取学历、明确行业背景及技术管理活动；排除年限和泛化工作经验。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 11,
+  "ids": [
+    "sp10k-00101",
+    "sp10k-00102",
+    "sp10k-00103",
+    "sp10k-00104",
+    "sp10k-00105",
+    "sp10k-00106",
+    "sp10k-00107",
+    "sp10k-00108",
+    "sp10k-00109",
+    "sp10k-00110"
+  ],
+  "at": "2026-09-13T14:01:48.487585+00:00"
+}

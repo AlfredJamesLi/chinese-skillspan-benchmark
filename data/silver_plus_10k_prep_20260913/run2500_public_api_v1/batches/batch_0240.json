@@ -1,0 +1,758 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 54.904,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4999,
+    "completion_tokens": 1746,
+    "total_tokens": 6745,
+    "prompt_tokens_details": {
+      "cached_tokens": 4864,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 651
+    },
+    "input_tokens": 4999,
+    "output_tokens": 1746,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06197",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            8
+          ],
+          "to": [
+            2,
+            7
+          ],
+          "text": "直播间引流"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            14
+          ],
+          "to": [
+            9,
+            13
+          ],
+          "text": "客户接待"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06198",
+      "repairs": [
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            20,
+            24
+          ],
+          "to": [
+            22,
+            26
+          ],
+          "text": "服务意识"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06199",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            15
+          ],
+          "to": [
+            6,
+            12
+          ],
+          "text": "愿意深入行业"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            18,
+            20
+          ],
+          "to": [
+            14,
+            16
+          ],
+          "text": "制冷"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            21,
+            23
+          ],
+          "to": [
+            17,
+            19
+          ],
+          "text": "机械"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06200",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            4,
+            6
+          ],
+          "to": [
+            2,
+            5
+          ],
+          "text": "新材料"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            11
+          ],
+          "to": [
+            6,
+            10
+          ],
+          "text": "逆向分析"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            12,
+            26
+          ],
+          "to": [
+            11,
+            23
+          ],
+          "text": "材料改性性能提升原理分析"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            27,
+            33
+          ],
+          "to": [
+            24,
+            29
+          ],
+          "text": "数据库积累"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06201",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            26,
+            33
+          ],
+          "to": [
+            21,
+            29
+          ],
+          "text": "反馈给代班工程师"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            43,
+            45
+          ],
+          "to": [
+            36,
+            38
+          ],
+          "text": "处理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            52,
+            59
+          ],
+          "to": [
+            40,
+            48
+          ],
+          "text": "反馈给部门负责人"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06202",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            14,
+            21
+          ],
+          "to": [
+            13,
+            20
+          ],
+          "text": "智能化平台运用"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            22,
+            26
+          ],
+          "to": [
+            20,
+            24
+          ],
+          "text": "专项培训"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06203",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            10
+          ],
+          "to": [
+            2,
+            6
+          ],
+          "text": "财务会计"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            16
+          ],
+          "to": [
+            6,
+            10
+          ],
+          "text": "操作流程"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            20,
+            23
+          ],
+          "to": [
+            13,
+            16
+          ],
+          "text": "SAP"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            31,
+            37
+          ],
+          "to": [
+            18,
+            22
+          ],
+          "text": "操作流程"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            43,
+            48
+          ],
+          "to": [
+            29,
+            35
+          ],
+          "text": "office"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06204",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            13
+          ],
+          "to": [
+            5,
+            12
+          ],
+          "text": "C/C++语言"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            19,
+            27
+          ],
+          "to": [
+            15,
+            23
+          ],
+          "text": "makefile"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            28,
+            36
+          ],
+          "to": [
+            24,
+            31
+          ],
+          "text": "shell脚本"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            37,
+            47
+          ],
+          "to": [
+            32,
+            38
+          ],
+          "text": "perl脚本"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06205",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            6
+          ],
+          "to": [
+            0,
+            4
+          ],
+          "text": "进度追踪"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            7,
+            9
+          ],
+          "to": [
+            5,
+            7
+          ],
+          "text": "协调"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            14,
+            32
+          ],
+          "to": [
+            10,
+            28
+          ],
+          "text": "跟踪模具所有零件的加工进度与组装状态"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            33,
+            39
+          ],
+          "to": [
+            29,
+            37
+          ],
+          "text": "精准掌握在制情况"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06196\",\"spans\":[{\"start\":2,\"end\":9,\"text\":\"写字楼工程管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求开展写字楼工程管理职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06197\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"直播间引流\",\"label\":\"S\"},{\"start\":10,\"end\":14,\"text\":\"客户接待\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"销售促单\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取引流、客户接待和促成销售等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06198\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"坚忍不拔\",\"label\":\"T\"},{\"start\":5,\"end\":9,\"text\":\"敬业奉献\",\"label\":\"T\"},{\"start\":11,\"end\":17,\"text\":\"持续学习能力\",\"label\":\"T\"},{\"start\":20,\"end\":24,\"text\":\"服务意识\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为候选人通用特质或可迁移能力。\",\"issues\":[]},{\"id\":\"sp10k-06199\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"学习能力\",\"label\":\"T\"},{\"start\":9,\"end\":15,\"text\":\"愿意深入行业\",\"label\":\"T\"},{\"start\":18,\"end\":20,\"text\":\"制冷\",\"label\":\"K\"},{\"start\":21,\"end\":23,\"text\":\"机械\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学习能力和行业深入意愿为通用能力/意愿，括号内为领域名。\",\"issues\":[]},{\"id\":\"sp10k-06200\",\"spans\":[{\"start\":4,\"end\":6,\"text\":\"新材料\",\"label\":\"K\"},{\"start\":7,\"end\":11,\"text\":\"逆向分析\",\"label\":\"S\"},{\"start\":12,\"end\":26,\"text\":\"材料改性性能提升原理分析\",\"label\":\"S\"},{\"start\":27,\"end\":33,\"text\":\"数据库积累\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取材料领域知识及逆向分析、原理分析和数据库积累活动。\",\"issues\":[]},{\"id\":\"sp10k-06201\",\"spans\":[{\"start\":17,\"end\":19,\"text\":\"处理\",\"label\":\"S\"},{\"start\":26,\"end\":33,\"text\":\"反馈给代班工程师\",\"label\":\"T\"},{\"start\":43,\"end\":45,\"text\":\"处理\",\"label\":\"S\"},{\"start\":52,\"end\":59,\"text\":\"反馈给部门负责人\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"异常处理属于职业动作，向指定人员反馈属于沟通协作能力。\",\"issues\":[]},{\"id\":\"sp10k-06202\",\"spans\":[{\"start\":14,\"end\":21,\"text\":\"智能化平台运用\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"专项培训\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求运用平台并开展专项培训。\",\"issues\":[]},{\"id\":\"sp10k-06203\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"财务会计\",\"label\":\"K\"},{\"start\":10,\"end\":16,\"text\":\"操作流程\",\"label\":\"S\"},{\"start\":20,\"end\":23,\"text\":\"SAP\",\"label\":\"S\"},{\"start\":31,\"end\":37,\"text\":\"操作流程\",\"label\":\"S\"},{\"start\":43,\"end\":48,\"text\":\"office\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"财务会计为领域知识，流程操作及SAP、office使用为职业工具或操作能力。\",\"issues\":[]},{\"id\":\"sp10k-06204\",\"spans\":[{\"start\":6,\"end\":13,\"text\":\"C/C++语言\",\"label\":\"L\"},{\"start\":19,\"end\":27,\"text\":\"makefile\",\"label\":\"S\"},{\"start\":28,\"end\":36,\"text\":\"shell脚本\",\"label\":\"S\"},{\"start\":37,\"end\":47,\"text\":\"perl脚本\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"C/C++语言为语言/编程语言提及，脚本及makefile为岗位工具或可执行技术对象。\",\"issues\":[]},{\"id\":\"sp10k-06205\",\"spans\":[{\"start\":0,\"end\":6,\"text\":\"进度追踪\",\"label\":\"S\"},{\"start\":7,\"end\":9,\"text\":\"协调\",\"label\":\"T\"},{\"start\":14,\"end\":32,\"text\":\"跟踪模具所有零件的加工进度与组装状态\",\"label\":\"S\"},{\"start\":33,\"end\":39,\"text\":\"精准掌握在制情况\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"进度追踪、加工与组装状态跟踪及掌握在制情况为职业动作，协调为通用协作能力。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06196",
+        "spans": [
+          {
+            "start": 2,
+            "end": 9,
+            "text": "写字楼工程管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求开展写字楼工程管理职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06197",
+        "spans": [
+          {
+            "start": 2,
+            "end": 7,
+            "text": "直播间引流",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 13,
+            "text": "客户接待",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "销售促单",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取引流、客户接待和促成销售等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06198",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "坚忍不拔",
+            "label": "T"
+          },
+          {
+            "start": 5,
+            "end": 9,
+            "text": "敬业奉献",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "持续学习能力",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "服务意识",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为候选人通用特质或可迁移能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06199",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "学习能力",
+            "label": "T"
+          },
+          {
+            "start": 6,
+            "end": 12,
+            "text": "愿意深入行业",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 16,
+            "text": "制冷",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 19,
+            "text": "机械",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学习能力和行业深入意愿为通用能力/意愿，括号内为领域名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06200",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "新材料",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "text": "逆向分析",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 23,
+            "text": "材料改性性能提升原理分析",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 29,
+            "text": "数据库积累",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取材料领域知识及逆向分析、原理分析和数据库积累活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06201",
+        "spans": [
+          {
+            "start": 17,
+            "end": 19,
+            "text": "处理",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 29,
+            "text": "反馈给代班工程师",
+            "label": "T"
+          },
+          {
+            "start": 36,
+            "end": 38,
+            "text": "处理",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 48,
+            "text": "反馈给部门负责人",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "异常处理属于职业动作，向指定人员反馈属于沟通协作能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06202",
+        "spans": [
+          {
+            "start": 13,
+            "end": 20,
+            "text": "智能化平台运用",
+            "label": "S"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "专项培训",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求运用平台并开展专项培训。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06203",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "财务会计",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 10,
+            "text": "操作流程",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "text": "SAP",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "操作流程",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "text": "office",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "财务会计为领域知识，流程操作及SAP、office使用为职业工具或操作能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06204",
+        "spans": [
+          {
+            "start": 5,
+            "end": 12,
+            "text": "C/C++语言",
+            "label": "L"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "text": "makefile",
+            "label": "S"
+          },
+          {
+            "start": 24,
+            "end": 31,
+            "text": "shell脚本",
+            "label": "S"
+          },
+          {
+            "start": 32,
+            "end": 38,
+            "text": "perl脚本",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "C/C++语言为语言/编程语言提及，脚本及makefile为岗位工具或可执行技术对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06205",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "进度追踪",
+            "label": "S"
+          },
+          {
+            "start": 5,
+            "end": 7,
+            "text": "协调",
+            "label": "T"
+          },
+          {
+            "start": 10,
+            "end": 28,
+            "text": "跟踪模具所有零件的加工进度与组装状态",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 37,
+            "text": "精准掌握在制情况",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "进度追踪、加工与组装状态跟踪及掌握在制情况为职业动作，协调为通用协作能力。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 240,
+  "ids": [
+    "sp10k-06196",
+    "sp10k-06197",
+    "sp10k-06198",
+    "sp10k-06199",
+    "sp10k-06200",
+    "sp10k-06201",
+    "sp10k-06202",
+    "sp10k-06203",
+    "sp10k-06204",
+    "sp10k-06205"
+  ],
+  "at": "2026-09-13T17:37:05.368235+00:00"
+}

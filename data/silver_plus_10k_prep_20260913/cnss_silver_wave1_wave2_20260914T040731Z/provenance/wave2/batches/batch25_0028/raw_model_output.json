@@ -1,0 +1,550 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04405",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "编程基础",
+          "label": "K"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": ".net",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 28,
+          "text": "C#",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 33,
+          "text": "JS",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "编程基础为知识；具体语言的S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": ".net、C#和熟悉JS",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "学习、熟悉的表述未明确区分语言知识与实际编程运用能力。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04406",
+      "spans": [
+        {
+          "start": 3,
+          "end": 29,
+          "text": "windows、office等软件的安装、配置和使用",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确的软件操作要求；保留共享对象及并列动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04407",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "Linux操作系统",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "RedHat",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "CentOS",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "系统及发行版属于要求范围，S为类型待决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "Linux操作系统，熟悉RedHat/CentOS",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅有精通、熟悉要求，缺少系统知识或实际操作运维的局部限定。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04408",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "通信网络",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "软件应用",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "物联网",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "通信网络、物联网为领域认知；软件应用类型待决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "软件应用",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指软件应用领域知识，也可指实际应用软件的能力，缺少具体对象或动作说明。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04409",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "text": "学士及以上学位",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 30,
+          "text": "中国语言文学类",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 36,
+          "text": "公共管理类",
+          "label": "K"
+        },
+        {
+          "start": 37,
+          "end": 40,
+          "text": "法学类",
+          "label": "K"
+        },
+        {
+          "start": 41,
+          "end": 48,
+          "text": "档案（学）专业",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历、学位资格及明确专业名。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04410",
+      "spans": [
+        {
+          "start": 8,
+          "end": 25,
+          "text": "芯片原子钟及法拉第激光器的产线组装",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "产线组装为职业动作，保留共享组装对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04411",
+      "spans": [
+        {
+          "start": 4,
+          "end": 6,
+          "text": "算法",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "数据结构",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "网络程序设计",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 30,
+          "text": "多线程程序设计技术",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "算法和数据结构为知识，程序设计及其技术为可执行能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04412",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "应用故障的排忧",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 21,
+          "text": "高并发架构搭建",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 37,
+          "text": "lvsnginxhaproxy",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "故障处理保留原文错词；连续工具串保守保留，边界待决。",
+      "issues": [
+        {
+          "kind": "boundary",
+          "text": "lvsnginxhaproxy",
+          "alternatives": [
+            "lvsnginxhaproxy",
+            "lvs；nginx；haproxy"
+          ],
+          "reason": "疑为三个工具名连写，但原文没有分隔，需确认是否拆为相邻工具跨度。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04413",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "面试方式、评分与录用流程说明，不是具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04414",
+      "spans": [
+        {
+          "start": 2,
+          "end": 40,
+          "text": "监督电镀园区内的给排水系统、电力系统、消防系统、电梯系统、蒸汽管网的运行管理",
+          "label": "S"
+        },
+        {
+          "start": 43,
+          "end": 47,
+          "text": "形成报表",
+          "label": "S"
+        },
+        {
+          "start": 47,
+          "end": 51,
+          "text": "上报总监",
+          "label": "T"
+        },
+        {
+          "start": 52,
+          "end": 68,
+          "text": "督促设备设施的维护保养和故障检修",
+          "label": "S"
+        },
+        {
+          "start": 74,
+          "end": 82,
+          "text": "提出提升改造意见",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "区分技术监督、报表编制、人员汇报和设备改造建议；保留监督动作及共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04415",
+      "spans": [
+        {
+          "start": 4,
+          "end": 18,
+          "text": "信息化系统优化设计与改进设计",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 23,
+          "text": "系统部署",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "日常运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设计、部署和运维分别抽取；设计保留共享系统对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04416",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "服务验收条款是否构成候选人职责无法由本条确认。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "需向我局提交服务内容完成情况报告，按照项目内容要求及提交的方案逐项报告项目完成情况",
+          "alternatives": [
+            "候选人的项目报告职责，纳入标注",
+            "面向服务承接单位的履约验收要求，不标"
+          ],
+          "reason": "缺少服务执行主体及招聘岗位关联信息，无法确认是否要求候选人执行。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04417",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "学历不限，没有具体学历资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04418",
+      "spans": [
+        {
+          "start": 42,
+          "end": 48,
+          "text": "建设规范制定",
+          "label": "S"
+        },
+        {
+          "start": 49,
+          "end": 51,
+          "text": "建设",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 54,
+          "text": "运维",
+          "label": "S"
+        },
+        {
+          "start": 55,
+          "end": 59,
+          "text": "故障处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "各动作共享前述机房基础设施对象；设施清单不另标知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04419",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "设备管理",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "设备采购",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "维修",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 25,
+          "text": "报废",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备管理及具体处置活动为职业技能；维修、报废共享设备对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04420",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "学历证明材料提交及验证码有效期说明，属于应聘行政流程。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04421",
+      "spans": [
+        {
+          "start": 4,
+          "end": 17,
+          "text": "业务系统的设计、实现与维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留业务系统这一共享对象及完整并列动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04422",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘依据、招聘单位与人数公告，未提出具体能力知识要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04423",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "LINUX操作系统",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 23,
+          "text": "编写SHELL脚本",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "脚本编写提供实际技术操作语境，操作系统按岗位工具标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04424",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "服务器、PC等硬件基本结构",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "系统日常维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "硬件基本结构为知识，系统维护为执行能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04425",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "泛指其他证书和材料，未给出具体资格名，属于材料清单。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04426",
+      "spans": [
+        {
+          "start": 2,
+          "end": 18,
+          "text": "系统、软件的安装、管理及技术支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "职业动作共享系统、软件对象，保留完整连续提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04427",
+      "spans": [
+        {
+          "start": 4,
+          "end": 23,
+          "text": "mysql数据库的管理、维护及性能优化",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 33,
+          "text": "SQL语句",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据库管理动作保留共享对象；SQL语句处于明确使用语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04428",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "学校开设专业的机构介绍，不是候选人的专业要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04429",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "表格串含个人姓名、性别，学历专业字段的要求属性待确认。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "硕士研究生马克思主义发展史",
+          "alternatives": [
+            "岗位要求：硕士研究生、马克思主义发展史，分别标K",
+            "应聘或公示人员的学历与专业信息，不标"
+          ],
+          "reason": "缺少表头，无法区分招聘资格条件与具体人员的已有学历专业。"
+        }
+      ]
+    }
+  ]
+}

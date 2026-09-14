@@ -1,0 +1,526 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02574",
+      "spans": [
+        {
+          "start": 6,
+          "end": 13,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 25,
+          "text": "公共建筑项目建设",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 38,
+          "text": "工程施工现场的组织管理",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 43,
+          "text": "计划管理",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 51,
+          "text": "施工及技术管理",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 56,
+          "text": "质量管理",
+          "label": "S"
+        },
+        {
+          "start": 57,
+          "end": 63,
+          "text": "外联协调管理",
+          "label": "T"
+        },
+        {
+          "start": 64,
+          "end": 70,
+          "text": "竣工交验管理",
+          "label": "S"
+        },
+        {
+          "start": 83,
+          "end": 86,
+          "text": "工程师",
+          "label": "K"
+        },
+        {
+          "start": 87,
+          "end": 92,
+          "text": "二级建造师",
+          "label": "K"
+        },
+        {
+          "start": 93,
+          "end": 98,
+          "text": "二级造价师",
+          "label": "K"
+        },
+        {
+          "start": 99,
+          "end": 111,
+          "text": "二级建筑师及以上资质证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历、专业资格及施工管理活动；外联协调属通用人际能力，活动经验去除经验后仍完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02575",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "虚拟化",
+          "label": "S"
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "text": "容器化",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "k8s",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "kvm",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "Vmware",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 31,
+          "text": "Xen",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "具体工具标S；两项技术类别的知识或实践含义未决，S为占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "虚拟化",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅列技术类别及工具示例，未明确要求原理知识还是虚拟化实施。"
+        },
+        {
+          "kind": "type",
+          "text": "容器化",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "仅列技术类别及工具示例，未明确要求概念知识还是容器化实践。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02577",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "大学本科以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02578",
+      "spans": [
+        {
+          "start": 4,
+          "end": 14,
+          "text": "office办公软件",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "PS",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "办公与图像处理工具的岗位使用要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02579",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明应聘面试人选的确定程序与比例。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02580",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "通信",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "电子",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "网络",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历及明确专业名，排除泛化相关专业和优先修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02581",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "分布式系统的设计和应用",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "text": "Dubbo",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 30,
+          "text": "Zookeeper",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 36,
+          "text": "分布式缓存",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 41,
+          "text": "消息队列",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设计和应用保留共享对象；后列工具与技术受明确开发经验限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02582",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘专业分类所依据的目录。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02584",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘附件名称与文件格式。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02585",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名材料真实性及资格取消规定，不抽取责任心。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02586",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "办公环境软硬件日常维护",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "数据中心维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分两个对象明确、各自完整的维护活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02587",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "信息化系统软硬件的实施、开发",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "培训交底",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "实施与开发保留共享技术对象，培训交底为独立职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02588",
+      "spans": [
+        {
+          "start": 1,
+          "end": 5,
+          "text": "电信行业",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 14,
+          "text": "网管软件技术支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "行业经历抽取领域名，技术支持经历抽取完整活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02590",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅规定应聘材料真实有效及提交义务。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02591",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "网站新闻的日常更新",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "运营维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取新闻更新及运营维护两项职业活动，共享网站语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02592",
+      "spans": [
+        {
+          "start": 0,
+          "end": 16,
+          "text": "英语水平不低于四级（CET-4）",
+          "label": "L"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "外语知识",
+          "label": "L"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "英语等级要求与其他外语知识偏好均属语言要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02594",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明报名步骤、材料提交及放弃资格的认定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02595",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "水冷离心机机组运行原理",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确运行原理知识；年限及泛化相关工作经验不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02596",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为招聘考核附件指引和评分计算规则。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02597",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅说明招聘考察组织程序，执行主体为招聘管理部门。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02598",
+      "spans": [
+        {
+          "start": 6,
+          "end": 16,
+          "text": "统筹规划软件研发方向",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 27,
+          "text": "制定软件产品解决方案",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 40,
+          "text": "软件产品全面管理",
+          "label": "S"
+        },
+        {
+          "start": 52,
+          "end": 69,
+          "text": "软件和硬件产品线关联开发及关键迭代",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "拆分研发规划、方案制定、产品管理及开发迭代职责；末项保留共享产品线对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02599",
+      "spans": [
+        {
+          "start": 4,
+          "end": 12,
+          "text": "系统的运行、维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "运行维护保留共享系统对象，保障正常运作为结果承诺。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02600",
+      "spans": [
+        {
+          "start": 12,
+          "end": 16,
+          "text": "信息采集",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "编辑",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "播发",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "三项媒体职业活动可独立识别，共享平台与信息语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02601",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "大学本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 18,
+          "text": "学士以上学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取完整学历和学位资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02602",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报考岗位选择、资格审查及后果承担规定。",
+      "issues": []
+    }
+  ]
+}

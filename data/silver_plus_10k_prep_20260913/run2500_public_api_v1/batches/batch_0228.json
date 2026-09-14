@@ -1,0 +1,392 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 41.509,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4971,
+    "completion_tokens": 1692,
+    "total_tokens": 6663,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 787
+    },
+    "input_tokens": 4971,
+    "output_tokens": 1692,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-06079",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            8
+          ],
+          "to": [
+            0,
+            7
+          ],
+          "text": "本科及以上学历"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06080",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            21
+          ],
+          "to": [
+            7,
+            17
+          ],
+          "text": "电子技术相关专业知识"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06082",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            5,
+            16
+          ],
+          "to": [
+            5,
+            19
+          ],
+          "text": "以及产线基板相关异常处置跟进"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06083",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            2,
+            8
+          ],
+          "to": [
+            2,
+            6
+          ],
+          "text": "长期外派"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            9,
+            13
+          ],
+          "to": [
+            7,
+            11
+          ],
+          "text": "抗压能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-06084",
+      "repairs": [
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            22,
+            31
+          ],
+          "to": [
+            21,
+            29
+          ],
+          "text": "解决各类现场问题"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-06076\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"焊接操作工艺\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求掌握可执行的焊接工艺。\",\"issues\":[]},{\"id\":\"sp10k-06077\",\"spans\":[{\"start\":4,\"end\":10,\"text\":\"处理工程实施\",\"label\":\"S\"},{\"start\":11,\"end\":13,\"text\":\"检查\",\"label\":\"S\"},{\"start\":23,\"end\":31,\"text\":\"制订纠正预防措施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取工程实施、检查及制定纠正预防措施等职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06078\",\"spans\":[{\"start\":9,\"end\":11,\"text\":\"空调\",\"label\":\"K\"},{\"start\":12,\"end\":14,\"text\":\"电梯\",\"label\":\"K\"},{\"start\":15,\"end\":19,\"text\":\"供电系统\",\"label\":\"K\"},{\"start\":20,\"end\":23,\"text\":\"给排水\",\"label\":\"K\"},{\"start\":24,\"end\":26,\"text\":\"暖通\",\"label\":\"K\"},{\"start\":27,\"end\":31,\"text\":\"消防系统\",\"label\":\"K\"},{\"start\":37,\"end\":39,\"text\":\"运行\",\"label\":\"S\"},{\"start\":40,\"end\":42,\"text\":\"维护\",\"label\":\"S\"},{\"start\":43,\"end\":45,\"text\":\"保养\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"设施设备名称作为领域知识，运行、维护和保养作为可执行职业活动。\",\"issues\":[]},{\"id\":\"sp10k-06079\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"本科及以上学历\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"学历为完整资格提及；相关专业和年龄不单独标注。\",\"issues\":[]},{\"id\":\"sp10k-06080\",\"spans\":[{\"start\":9,\"end\":21,\"text\":\"电子技术相关专业知识\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求电子技术专业知识。\",\"issues\":[]},{\"id\":\"sp10k-06081\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"量产良率管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"良率管理属于明确职业活动；目标达成属于结果表述。\",\"issues\":[]},{\"id\":\"sp10k-06082\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"IQC\",\"label\":\"S\"},{\"start\":5,\"end\":16,\"text\":\"以及产线基板相关异常处置跟进\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取IQC相关工作及产线基板异常处置跟进活动。\",\"issues\":[]},{\"id\":\"sp10k-06083\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"长期外派\",\"label\":\"T\"},{\"start\":9,\"end\":13,\"text\":\"抗压能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"长期外派体现任职意愿/适应要求，抗压能力为通用特质。\",\"issues\":[]},{\"id\":\"sp10k-06084\",\"spans\":[{\"start\":0,\"end\":8,\"text\":\"工作作风严谨踏实\",\"label\":\"T\"},{\"start\":14,\"end\":18,\"text\":\"抗压能力\",\"label\":\"T\"},{\"start\":22,\"end\":31,\"text\":\"解决各类现场问题\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"抽取严谨踏实、抗压能力及解决现场问题等通用能力或特质。\",\"issues\":[]},{\"id\":\"sp10k-06085\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"书面英语\",\"label\":\"L\"},{\"start\":19,\"end\":27,\"text\":\"行业专业英语术语\",\"label\":\"L\"}],\"status\":\"candidate_complete\",\"note\":\"书面英语及行业专业英语术语属于语言能力/语言知识要求；愿意学习为意愿触发语。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-06076",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "焊接操作工艺",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求掌握可执行的焊接工艺。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06077",
+        "spans": [
+          {
+            "start": 4,
+            "end": 10,
+            "text": "处理工程实施",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 13,
+            "text": "检查",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 31,
+            "text": "制订纠正预防措施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取工程实施、检查及制定纠正预防措施等职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06078",
+        "spans": [
+          {
+            "start": 9,
+            "end": 11,
+            "text": "空调",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 14,
+            "text": "电梯",
+            "label": "K"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "text": "供电系统",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 23,
+            "text": "给排水",
+            "label": "K"
+          },
+          {
+            "start": 24,
+            "end": 26,
+            "text": "暖通",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "text": "消防系统",
+            "label": "K"
+          },
+          {
+            "start": 37,
+            "end": 39,
+            "text": "运行",
+            "label": "S"
+          },
+          {
+            "start": 40,
+            "end": 42,
+            "text": "维护",
+            "label": "S"
+          },
+          {
+            "start": 43,
+            "end": 45,
+            "text": "保养",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "设施设备名称作为领域知识，运行、维护和保养作为可执行职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06079",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "本科及以上学历",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历为完整资格提及；相关专业和年龄不单独标注。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06080",
+        "spans": [
+          {
+            "start": 7,
+            "end": 17,
+            "text": "电子技术相关专业知识",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求电子技术专业知识。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06081",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "量产良率管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "良率管理属于明确职业活动；目标达成属于结果表述。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06082",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "IQC",
+            "label": "S"
+          },
+          {
+            "start": 5,
+            "end": 19,
+            "text": "以及产线基板相关异常处置跟进",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取IQC相关工作及产线基板异常处置跟进活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06083",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "长期外派",
+            "label": "T"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "text": "抗压能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "长期外派体现任职意愿/适应要求，抗压能力为通用特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06084",
+        "spans": [
+          {
+            "start": 0,
+            "end": 8,
+            "text": "工作作风严谨踏实",
+            "label": "T"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "text": "抗压能力",
+            "label": "T"
+          },
+          {
+            "start": 21,
+            "end": 29,
+            "text": "解决各类现场问题",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取严谨踏实、抗压能力及解决现场问题等通用能力或特质。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-06085",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "书面英语",
+            "label": "L"
+          },
+          {
+            "start": 19,
+            "end": 27,
+            "text": "行业专业英语术语",
+            "label": "L"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "书面英语及行业专业英语术语属于语言能力/语言知识要求；愿意学习为意愿触发语。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 228,
+  "ids": [
+    "sp10k-06076",
+    "sp10k-06077",
+    "sp10k-06078",
+    "sp10k-06079",
+    "sp10k-06080",
+    "sp10k-06081",
+    "sp10k-06082",
+    "sp10k-06083",
+    "sp10k-06084",
+    "sp10k-06085"
+  ],
+  "at": "2026-09-13T17:28:28.345862+00:00"
+}

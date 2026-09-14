@@ -1,0 +1,54 @@
+{
+  "n": 150,
+  "prompt_id": "silver_public_api_v1.0",
+  "prompt_file": "silver_prompt.txt",
+  "prompt_sha256": "b6223e9a2e9b02afa19cba79ba908766d9240acb233723fbe6f53b40e6b04fd6",
+  "astra": "gpt-6-astra",
+  "aux": "cursor-grok-6.0",
+  "human_layer": "L/K/S/T empty at import",
+  "canvas": "L/K/S/T=human empty; L1=Astra; L2=Grok; DIFF=red",
+  "not_majority_vote": true,
+  "validate_records_ok": true,
+  "n_span_exact_agree": 138,
+  "n_span_exact_disagree": 12,
+  "astra_empty": 32,
+  "grok_empty": 33,
+  "n_human_lkst_on_canvas": 0,
+  "grok_status": {
+    "candidate_complete": 114,
+    "confirmed_empty": 31,
+    "adjudication_required": 5
+  },
+  "span_types_astra": {
+    "S": 229,
+    "K": 85,
+    "T": 66,
+    "L": 3
+  },
+  "span_types_grok": {
+    "S": 229,
+    "K": 84,
+    "T": 66,
+    "L": 3
+  },
+  "span_types_canvas": {
+    "S1": 229,
+    "S2": 229,
+    "K1": 85,
+    "K2": 84,
+    "T1": 66,
+    "T2": 66,
+    "DIFF": 18,
+    "L1": 3,
+    "L2": 3
+  },
+  "n_sentences_with_diff_highlight": 12,
+  "n_diff_spans": 18,
+  "sha256_qa150": "2f66192daa993a9579df6a4ae2edb6e055cff1e658ab2f31441aaafdab47424f",
+  "sha256_dual": "2f66192daa993a9579df6a4ae2edb6e055cff1e658ab2f31441aaafdab47424f",
+  "sha256_astra": "e1cc449c5f46f8bf34dd49734eca4265c2987b892241ce33facf5128d046d5c8",
+  "sha256_grok_prelabel": "9af6afd9f46ba8242f819025b007d5c0152e068e7f43d2841f38e31bfe54a3f4",
+  "sha256_grok_labels": "6cf6f344078634e3a3175b0a046775fea420d6e1c7ac94019f80beb36d942659",
+  "not_paper_main": true,
+  "not_independent_blind_gold": true
+}

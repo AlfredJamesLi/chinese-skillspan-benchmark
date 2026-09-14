@@ -1,0 +1,210 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07051",
+      "spans": [
+        {
+          "start": 6,
+          "end": 29,
+          "text": "非标自动化相关产品、设备、工装或生产线结构设计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "结构设计为明确职业活动，去除经验；并列对象共享结构设计，保留完整跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07052",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "text": "电子料",
+          "label": "K"
+        },
+        {
+          "start": 6,
+          "end": 9,
+          "text": "元器件",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "要求熟悉电子物料及元器件，按专业领域知识标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07053",
+      "spans": [
+        {
+          "start": 0,
+          "end": 11,
+          "text": "管理负责项目的包装资产",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 33,
+          "text": "制定维护计划、盘点计划、回收计划、增补计划",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "安排实施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取资产管理、计划制定及实施安排；计划列表共享制定动作，末尾纯结果承诺不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07054",
+      "spans": [
+        {
+          "start": 3,
+          "end": 16,
+          "text": "与微粒产生及控制相关的材料",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "工艺",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 28,
+          "text": "环境控制基础理论",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "基础理论语境中的并列知识要求；共享限定由局部上下文承接，不补写原文。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07055",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "试做后的不良初步解析",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 22,
+          "text": "跟进不良解析的改善",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取针对试做不良的解析及改善跟进，均为明确职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07056",
+      "spans": [
+        {
+          "start": 2,
+          "end": 13,
+          "text": "外部政府部门的各类统计",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "职责明确要求执行统计工作，保留其业务对象限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07057",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "公司产品的海外销售",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 21,
+          "text": "开发并维护客户关系",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "海外销售及客户关系开发维护属于明确销售职能，并非泛化人际联络。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07058",
+      "spans": [
+        {
+          "start": 8,
+          "end": 18,
+          "text": "制定公司营销战略规划",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 30,
+          "text": "拓展核心客户与业务资源",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取营销战略规划制定及客户、业务资源拓展。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07059",
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "电烙铁",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "示波器",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "电路测试",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "仪器有明确岗位使用语境，工具名与电路测试活动分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07060",
+      "spans": [
+        {
+          "start": 13,
+          "end": 24,
+          "text": "主导资本项目全周期管理",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 41,
+          "text": "统筹并购/分拆/证券化项目全流程",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "部门归属不标；资本项目管理及并购等项目统筹为明确专业职能，并列项目共享统筹动作。",
+      "issues": []
+    }
+  ]
+}

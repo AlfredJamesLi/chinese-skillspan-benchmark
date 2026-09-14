@@ -1,0 +1,172 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07831",
+      "spans": [
+        {
+          "start": 0,
+          "end": 12,
+          "text": "审核各专业预防性维保计划",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "text": "监督执行",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求执行计划审核和监督执行两项职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07832",
+      "spans": [
+        {
+          "start": 2,
+          "end": 15,
+          "text": "项目台账与发票台账管理工作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "台账管理属于明确的岗位执行活动，去除职责触发词“负责”。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07833",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅表达泛化的技术能力提升目标，未提及具体可抽取的能力、知识或资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07834",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "与客户沟通",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 20,
+          "text": "拟定技术协议等技术类文件",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "技术支持",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分别抽取客户沟通通用能力、技术文件拟定和技术支持职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07835",
+      "spans": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "本科及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格名；相关专业属于泛化专业要求，不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07836",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "显示行业",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 22,
+          "text": "偏光片产品",
+          "label": "K"
+        },
+        {
+          "start": 23,
+          "end": 32,
+          "text": "光学膜材料相关知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "行业背景及明确产品、材料知识均属于领域知识提及；年限和经验触发词不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07837",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "大学以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取学历资格名；物流管理专业优先不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07838",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列举专业类别，未形成明确的学历、知识或能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07839",
+      "spans": [
+        {
+          "start": 7,
+          "end": 16,
+          "text": "TFT-LCD行业",
+          "label": "K"
+        },
+        {
+          "start": 28,
+          "end": 39,
+          "text": "TS体系工程师岗位经验",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "行业背景标为K；明确岗位实践经历保留经验并按项目规则标为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07840",
+      "spans": [
+        {
+          "start": 3,
+          "end": 6,
+          "text": "电工证",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 13,
+          "text": "相关技能证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "电工证及技能证书属于非语言资格名。",
+      "issues": []
+    }
+  ]
+}

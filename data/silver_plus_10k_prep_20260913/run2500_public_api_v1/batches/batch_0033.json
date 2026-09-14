@@ -1,0 +1,627 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 34.271,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 4981,
+    "completion_tokens": 1448,
+    "total_tokens": 6429,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 4981,
+    "output_tokens": 1448,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-00321",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            14
+          ],
+          "to": [
+            4,
+            12
+          ],
+          "text": "服务器管理与维护"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            17,
+            19
+          ],
+          "to": [
+            15,
+            17
+          ],
+          "text": "AD"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            20,
+            23
+          ],
+          "to": [
+            18,
+            21
+          ],
+          "text": "DNS"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            24,
+            28
+          ],
+          "to": [
+            22,
+            26
+          ],
+          "text": "DHCP"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            29,
+            35
+          ],
+          "to": [
+            27,
+            34
+          ],
+          "text": "NAS备份设备"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            39,
+            56
+          ],
+          "to": [
+            37,
+            58
+          ],
+          "text": "VMWARE-vctenter的管理与维护"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00322",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            18
+          ],
+          "to": [
+            0,
+            16
+          ],
+          "text": "大专及本科以上计算机相关专业毕业"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00323",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            12
+          ],
+          "to": [
+            4,
+            7
+          ],
+          "text": "数据库"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            13,
+            19
+          ],
+          "to": [
+            8,
+            14
+          ],
+          "text": "oracle"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            20,
+            25
+          ],
+          "to": [
+            15,
+            20
+          ],
+          "text": "mysql"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            26,
+            32
+          ],
+          "to": [
+            21,
+            27
+          ],
+          "text": "mongdb"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00324",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            3,
+            14
+          ],
+          "to": [
+            2,
+            12
+          ],
+          "text": "维护局内电脑和打印机"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            26
+          ],
+          "to": [
+            13,
+            22
+          ],
+          "text": "计算机辅助硬件设施"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00325",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            10,
+            14
+          ],
+          "to": [
+            7,
+            11
+          ],
+          "text": "通信行业"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            30,
+            39
+          ],
+          "to": [
+            20,
+            28
+          ],
+          "text": "通信相关技术知识"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00327",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            0,
+            14
+          ],
+          "to": [
+            0,
+            11
+          ],
+          "text": "本科以上学历计算机专业"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-00328",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            6,
+            10
+          ],
+          "to": [
+            2,
+            6
+          ],
+          "text": "运维流程"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            11,
+            13
+          ],
+          "to": [
+            7,
+            9
+          ],
+          "text": "工具"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            16,
+            18
+          ],
+          "to": [
+            10,
+            12
+          ],
+          "text": "原理"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            19,
+            21
+          ],
+          "to": [
+            13,
+            15
+          ],
+          "text": "使用"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            23,
+            29
+          ],
+          "to": [
+            17,
+            23
+          ],
+          "text": "二次开发经验"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            35,
+            41
+          ],
+          "to": [
+            28,
+            34
+          ],
+          "text": "信息自动同步"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            42,
+            49
+          ],
+          "to": [
+            35,
+            43
+          ],
+          "text": "运维工具流程触发"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00321\",\"spans\":[{\"start\":6,\"end\":14,\"text\":\"服务器管理与维护\",\"label\":\"S\"},{\"start\":17,\"end\":19,\"text\":\"AD\",\"label\":\"S\"},{\"start\":20,\"end\":23,\"text\":\"DNS\",\"label\":\"S\"},{\"start\":24,\"end\":28,\"text\":\"DHCP\",\"label\":\"S\"},{\"start\":29,\"end\":35,\"text\":\"NAS备份设备\",\"label\":\"S\"},{\"start\":39,\"end\":56,\"text\":\"VMWARE-vctenter的管理与维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取服务器管理维护及相关运维设备、系统的使用维护能力；年限和触发词不入跨度。\",\"issues\":[]},{\"id\":\"sp10k-00322\",\"spans\":[{\"start\":0,\"end\":18,\"text\":\"大专及本科以上计算机相关专业毕业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"完整学历及专业资格要求标为K。\",\"issues\":[]},{\"id\":\"sp10k-00323\",\"spans\":[{\"start\":6,\"end\":12,\"text\":\"数据库\",\"label\":\"S\"},{\"start\":13,\"end\":19,\"text\":\"oracle\",\"label\":\"S\"},{\"start\":20,\"end\":25,\"text\":\"mysql\",\"label\":\"S\"},{\"start\":26,\"end\":32,\"text\":\"mongdb\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库基本运用及列举的数据库工具均属于岗位使用能力；“熟悉”和“基本”不入跨度。\",\"issues\":[]},{\"id\":\"sp10k-00324\",\"spans\":[{\"start\":3,\"end\":14,\"text\":\"维护局内电脑和打印机\",\"label\":\"S\"},{\"start\":15,\"end\":26,\"text\":\"计算机辅助硬件设施\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取明确的设备维护职业活动及其硬件对象。\",\"issues\":[]},{\"id\":\"sp10k-00325\",\"spans\":[{\"start\":10,\"end\":14,\"text\":\"通信行业\",\"label\":\"K\"},{\"start\":30,\"end\":39,\"text\":\"通信相关技术知识\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"通信行业为明确行业背景，通信相关技术知识为领域知识；工作年限不标。\",\"issues\":[]},{\"id\":\"sp10k-00326\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"信息管理\",\"label\":\"K\"},{\"start\":5,\"end\":8,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":9,\"end\":12,\"text\":\"管理类\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"列举的相关专业领域作为知识或资格背景标为K。\",\"issues\":[]},{\"id\":\"sp10k-00327\",\"spans\":[{\"start\":0,\"end\":14,\"text\":\"本科以上学历计算机专业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"完整学历及专业资格要求标为K。\",\"issues\":[]},{\"id\":\"sp10k-00328\",\"spans\":[{\"start\":6,\"end\":10,\"text\":\"运维流程\",\"label\":\"K\"},{\"start\":11,\"end\":13,\"text\":\"工具\",\"label\":\"S\"},{\"start\":16,\"end\":18,\"text\":\"原理\",\"label\":\"K\"},{\"start\":19,\"end\":21,\"text\":\"使用\",\"label\":\"S\"},{\"start\":23,\"end\":29,\"text\":\"二次开发经验\",\"label\":\"S\"},{\"start\":35,\"end\":41,\"text\":\"信息自动同步\",\"label\":\"S\"},{\"start\":42,\"end\":49,\"text\":\"运维工具流程触发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"运维流程及原理属于知识语境，工具使用和二次开发及其示例属于可执行技术活动。\",\"issues\":[]},{\"id\":\"sp10k-00329\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为年龄条件，不属于本项目抽取的能力、知识或资格提及。\",\"issues\":[]},{\"id\":\"sp10k-00330\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为应聘材料提交及放弃资格的行政流程说明，不属于候选人能力、知识或资格要求。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00321",
+        "spans": [
+          {
+            "start": 4,
+            "end": 12,
+            "text": "服务器管理与维护",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 17,
+            "text": "AD",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 21,
+            "text": "DNS",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "DHCP",
+            "label": "S"
+          },
+          {
+            "start": 27,
+            "end": 34,
+            "text": "NAS备份设备",
+            "label": "S"
+          },
+          {
+            "start": 37,
+            "end": 58,
+            "text": "VMWARE-vctenter的管理与维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取服务器管理维护及相关运维设备、系统的使用维护能力；年限和触发词不入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00322",
+        "spans": [
+          {
+            "start": 0,
+            "end": 16,
+            "text": "大专及本科以上计算机相关专业毕业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "完整学历及专业资格要求标为K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00323",
+        "spans": [
+          {
+            "start": 4,
+            "end": 7,
+            "text": "数据库",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "oracle",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 20,
+            "text": "mysql",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 27,
+            "text": "mongdb",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库基本运用及列举的数据库工具均属于岗位使用能力；“熟悉”和“基本”不入跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00324",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "维护局内电脑和打印机",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 22,
+            "text": "计算机辅助硬件设施",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取明确的设备维护职业活动及其硬件对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00325",
+        "spans": [
+          {
+            "start": 7,
+            "end": 11,
+            "text": "通信行业",
+            "label": "K"
+          },
+          {
+            "start": 20,
+            "end": 28,
+            "text": "通信相关技术知识",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "通信行业为明确行业背景，通信相关技术知识为领域知识；工作年限不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00326",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "信息管理",
+            "label": "K"
+          },
+          {
+            "start": 5,
+            "end": 8,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "text": "管理类",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "列举的相关专业领域作为知识或资格背景标为K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00327",
+        "spans": [
+          {
+            "start": 0,
+            "end": 11,
+            "text": "本科以上学历计算机专业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "完整学历及专业资格要求标为K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00328",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "运维流程",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "text": "工具",
+            "label": "S"
+          },
+          {
+            "start": 10,
+            "end": 12,
+            "text": "原理",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 15,
+            "text": "使用",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "二次开发经验",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 34,
+            "text": "信息自动同步",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 43,
+            "text": "运维工具流程触发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "运维流程及原理属于知识语境，工具使用和二次开发及其示例属于可执行技术活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00329",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为年龄条件，不属于本项目抽取的能力、知识或资格提及。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00330",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为应聘材料提交及放弃资格的行政流程说明，不属于候选人能力、知识或资格要求。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 33,
+  "ids": [
+    "sp10k-00321",
+    "sp10k-00322",
+    "sp10k-00323",
+    "sp10k-00324",
+    "sp10k-00325",
+    "sp10k-00326",
+    "sp10k-00327",
+    "sp10k-00328",
+    "sp10k-00329",
+    "sp10k-00330"
+  ],
+  "at": "2026-09-13T14:18:48.408547+00:00"
+}

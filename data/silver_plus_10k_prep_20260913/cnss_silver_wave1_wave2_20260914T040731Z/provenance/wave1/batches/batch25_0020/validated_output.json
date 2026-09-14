@@ -1,0 +1,446 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02308",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "低保证提交属于报考办理材料要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02309",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘笔试参加情况及入围成绩条件，不属于职业资格或能力提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02310",
+      "spans": [
+        {
+          "start": 23,
+          "end": 25,
+          "text": "本科",
+          "label": "K"
+        },
+        {
+          "start": 26,
+          "end": 28,
+          "text": "硕士",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求本科和硕士阶段取得学历学位；泛化专业或技能要求不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02312",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "全文为报名材料提交及邮件、照片格式要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02313",
+      "spans": [
+        {
+          "start": 26,
+          "end": 33,
+          "text": "学历学位认证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求境外院校毕业者具有学历学位认证资格凭证。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02314",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名信息与毕业证记载一致的核验要求，未指定专业。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02315",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "介绍招聘组织方的考察程序，不是候选人职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02316",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "认真细致",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "协调能力",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "学习能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工作特质和通用能力；共享能力语义可拆分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02317",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "Weblogic",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "Tomcat",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "Apache",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 30,
+          "text": "Nginx",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 33,
+          "text": "MQ",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 39,
+          "text": "redis",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体中间件产品作为岗位工具逐项标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02322",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名表填写、证明材料扫描及发送流程，不是职业活动要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02323",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "泛指其他招聘条件，没有具体能力、知识或资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02324",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考时提供境外学历认证材料的行政核验要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02325",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 3,
+          "end": 5,
+          "text": "组织",
+          "label": "T"
+        },
+        {
+          "start": 6,
+          "end": 8,
+          "text": "协调",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "表达能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列通用能力可依共享语境独立拆分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02326",
+      "spans": [
+        {
+          "start": 8,
+          "end": 32,
+          "text": "计算机及周边设备、网络设备和办公设备的维护及管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设备对象共享维护及管理职能，保留完整活动跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02327",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅列报名材料，未提出具体学历层次或专业能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02328",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格复审及面试入围程序。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02329",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "电工操作证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确非语言职业资格证书。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02330",
+      "spans": [
+        {
+          "start": 2,
+          "end": 21,
+          "text": "工业控制网络整体安全防护架构设计、制订",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 32,
+          "text": "指导部署与实施",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "架构设计与制订共享对象；指导部署与实施为另一完整职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02331",
+      "spans": [
+        {
+          "start": 2,
+          "end": 17,
+          "text": "响应中心相关系统输出报告的编制",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "报告编制",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两处报告编制职责分别标注，排除泛化工作修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02332",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "Linux系统",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 13,
+          "text": "中间件",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 17,
+          "text": "数据库",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "应用系统",
+          "label": "S"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "日常运维",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 30,
+          "text": "监控",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "性能分析",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 38,
+          "text": "优化",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 43,
+          "text": "故障处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "系统和工具受明确运维实践限定；并列技术活动依局部共享对象拆分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02333",
+      "spans": [
+        {
+          "start": 0,
+          "end": 9,
+          "text": "全日制大专以上学历",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 15,
+          "text": "电气自动化",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格名，专业提取具体领域核心。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02334",
+      "spans": [
+        {
+          "start": 2,
+          "end": 10,
+          "text": "基金从业资格考试",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "基金从业资格",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "非语言资格考试及从业资格分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02335",
+      "spans": [
+        {
+          "start": 7,
+          "end": 10,
+          "text": "住培证",
+          "label": "K"
+        },
+        {
+          "start": 41,
+          "end": 44,
+          "text": "住培证",
+          "label": "K"
+        },
+        {
+          "start": 45,
+          "end": 51,
+          "text": "成绩合格证明",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确岗位资格及其替代合格凭证；办理方式、期限和取消聘用结果不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02336",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "text": "弱电系统",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 31,
+          "text": "对相关工程安装工艺、材料、设备选型有预测规划能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "弱电系统为领域知识；预测规划能力绑定明确工程对象，保留共享对象构成的完整提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02337",
+      "spans": [
+        {
+          "start": 1,
+          "end": 14,
+          "text": "程序员、网络工程师资格证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列资格共享证书中心词，整体保留以明确资格含义。",
+      "issues": []
+    }
+  ]
+}

@@ -1,0 +1,683 @@
+{
+  "records": [
+    {
+      "id": "sp10k-01741",
+      "spans": [
+        {
+          "start": 3,
+          "end": 9,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "团队服务意识",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 22,
+          "text": "沟通",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "学习能力",
+          "label": "T"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "问题分析",
+          "label": "T"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "解决能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用合作、服务、沟通、学习及问题处理能力；共享能力后缀按局部语境理解，程度词不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01744",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历保留完整资格名，专业取计算机；泛化相关工作经验和年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01747",
+      "spans": [
+        {
+          "start": 2,
+          "end": 21,
+          "text": "对系统测试和验收测试报告的问题进行修复",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "要求修复测试报告所指问题；测试及验收测试是问题来源限定，不另造独立测试职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01748",
+      "spans": [
+        {
+          "start": 4,
+          "end": 19,
+          "text": "运维系统的重大问题的跟踪与处理",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 37,
+          "text": "建立规范化的运维方案和运维知识库",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "分开问题处理与方案/知识库建立两项职责；各自保留必要职业对象及共享动作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01749",
+      "spans": [
+        {
+          "start": 6,
+          "end": 20,
+          "text": "软件系统的版权和知识产权管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件版权与知识产权管理是明确职业活动；共享管理中心，不嵌套抽取知识词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01750",
+      "spans": [
+        {
+          "start": 5,
+          "end": 27,
+          "text": "windows服务器或Linux服务器的操作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "服务器实际操作语境；保留共享操作中心，原文大小写不改。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01751",
+      "spans": [
+        {
+          "start": 41,
+          "end": 43,
+          "text": "安装",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 46,
+          "text": "维护",
+          "label": "S"
+        },
+        {
+          "start": 47,
+          "end": 49,
+          "text": "管理",
+          "label": "S"
+        },
+        {
+          "start": 50,
+          "end": 54,
+          "text": "故障排除",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列职业动作共享前文网络及软硬件对象；括注为对象举例，不另造独立知识要求；确保正常运作为结果承诺。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01753",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "text": "认真细致",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "积极主动",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "沟通协调能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "责任心、工作特质与通用沟通协调能力；程度修饰不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01754",
+      "spans": [
+        {
+          "start": 4,
+          "end": 15,
+          "text": "TCP/IP的通讯原理",
+          "label": "K"
+        },
+        {
+          "start": 20,
+          "end": 29,
+          "text": "路由协议的技术原理",
+          "label": "K"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "部署方式",
+          "label": "K"
+        },
+        {
+          "start": 37,
+          "end": 40,
+          "text": "VPN",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 44,
+          "text": "防火墙",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 48,
+          "text": "NAT",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "原理及并列概括部署方式按知识要求；后三项同时由技术和应用限定，缺少明确实践信息，S仅为类型待裁决占位。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "VPN",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "网络技术知识与应用技能均有局部依据；未明确实际运用，不能直接套用明确实战经验的平坦投影示例。"
+        },
+        {
+          "kind": "type",
+          "text": "防火墙",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "既可指安全技术知识，也可指岗位工具运用；技术和应用的并列要求未消除两种解释。"
+        },
+        {
+          "kind": "type",
+          "text": "NAT",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "既可指地址转换技术知识，也可指配置运用方法；需明确此处知识掌握与实际操作的要求。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01755",
+      "spans": [
+        {
+          "start": 8,
+          "end": 16,
+          "text": "分析仪表日常巡检",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "维护保养",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "检定",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 27,
+          "text": "维修",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "仪表巡检及并列维护、检定、维修均为明确职业动作；后项对象由局部语境共享。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01756",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "JAVA语法",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确语法知识语境；不是自然语言能力，也不据掌握判为工具操作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01757",
+      "spans": [
+        {
+          "start": 12,
+          "end": 17,
+          "text": "Shell",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 24,
+          "text": "Golang",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "Python",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "Java",
+          "label": "S"
+        },
+        {
+          "start": 37,
+          "end": 38,
+          "text": "C",
+          "label": "S"
+        },
+        {
+          "start": 39,
+          "end": 42,
+          "text": "C++",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位程序语言工具列表；C与C++为两个可独立识别的完整名称，斜杠不入跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01760",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅涉及工作稳定后的省内短期出差安排，未指明能力、知识、资格或具体职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01761",
+      "spans": [
+        {
+          "start": 15,
+          "end": 19,
+          "text": "性能调优",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 30,
+          "text": "系统突发事件管理",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 38,
+          "text": "问题跟踪与管理",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "抽取明确系统调优及事件/问题管理活动；系统性能参数单独由负责引出但缺少动作，暂不入主层。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "系统性能参数",
+          "alternatives": [
+            "具体参数管理或调节职责，纳入范围",
+            "仅指负责对象或指标，不单独标注"
+          ],
+          "reason": "原文未说明对参数执行何种操作，也未明确要求相关知识；需要补充此处职责含义。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01762",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "思维灵活",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "责任心",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为跨行业通用特质及沟通能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01768",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "AutoCAD",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 22,
+          "text": "弱电设计规范",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "AutoCAD为岗位绘图工具；设计规范是明确规范知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01769",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "text": "办公电脑",
+          "label": "K"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "网络设备知识",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "知识后缀共享限定两个设备领域；常规为非核心修饰，不补写办公电脑知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01770",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "推进及落实信息化建设",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 20,
+          "text": "信息化安全工作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "建设和安全工作为并列职业活动；后项由推进落实限定，保留工作以维持活动含义。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01771",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "网络设备的硬件与软件故障处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确网络设备故障处理技能；保留共享故障处理中心及软硬件对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01772",
+      "spans": [
+        {
+          "start": 9,
+          "end": 11,
+          "text": "调试",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "安装",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "维护",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "三个操作共享基础网络设备对象；括注厂商品牌的独立标注范围未被公开规则明确覆盖，暂不入主层。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "思科、华为、H3C",
+          "alternatives": [
+            "仅为前述设备厂商举例，不额外标注",
+            "作为厂商设备/平台能力的简称分别纳入"
+          ],
+          "reason": "原文只有厂商品牌，没有具体设备或平台名；需裁决此类品牌指代是否构成独立工具提及，不能仅凭名称推造设备。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01773",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "办公自动化软件",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 15,
+          "text": "CAD",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 20,
+          "text": "广联达",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "兴安得力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "使用方法明确限定办公、绘图与具名预算软件；共享类别及使用方法不重复另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01776",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "系统扩缩容",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 10,
+          "text": "限流",
+          "label": "S"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "升降级",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "容错",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "技术选型",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设计技巧语境下的可执行系统技术方法及技术选型；设计技巧为共享方法限定，不重复标注；尾部异常符号原样保留于输入。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01778",
+      "spans": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "亲和力",
+          "label": "T"
+        },
+        {
+          "start": 9,
+          "end": 15,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "分析能力",
+          "label": "T"
+        },
+        {
+          "start": 26,
+          "end": 32,
+          "text": "沟通表达能力",
+          "label": "T"
+        },
+        {
+          "start": 33,
+          "end": 39,
+          "text": "概括总结能力",
+          "label": "T"
+        },
+        {
+          "start": 40,
+          "end": 46,
+          "text": "综合协调能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用软技能，分析能力没有明确技术或业务对象，不提升为职业S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01780",
+      "spans": [
+        {
+          "start": 7,
+          "end": 13,
+          "text": "解决运维问题",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 19,
+          "text": "软硬件升级",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "解决问题有明确运维对象，与软硬件升级分别构成职业活动；人员协助表述不另标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-01781",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "数据库安装",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确数据库安装动作，熟悉及常用修饰不入跨度。",
+      "issues": []
+    }
+  ]
+}

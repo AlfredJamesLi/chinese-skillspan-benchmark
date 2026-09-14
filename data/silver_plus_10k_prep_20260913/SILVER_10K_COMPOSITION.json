@@ -1,0 +1,58 @@
+{
+  "as_of": "2026-09-13",
+  "paper_numbers_updated": false,
+  "unit": "unique_valid_sentences_NFC",
+  "n_10k": 10000,
+  "includes_all_human_labels": false,
+  "why": "10,000 is unique valid Silver teacher sentences = old v6a unique valid 2,064 + new 7,936. Gold150 is evaluation gold and is sentence-isolated from this pool. Two QA100 texts are also outside the unique-valid 2,064.",
+  "sentences": {
+    "old_unique_valid_v6a": 2064,
+    "new_unlabeled_topup": 7936,
+    "sum": 10000,
+    "old_v6a_records_not_the_10k_unit": 2319,
+    "hold82_not_in_10k": 82
+  },
+  "new_by_source": {
+    "阿里云公开数据集": 3174,
+    "事业单位招聘": 2381,
+    "上市公司招聘": 2381
+  },
+  "old_unique_valid_by_cohort": {
+    "A100": 100,
+    "H730": 689,
+    "E1621": 1275
+  },
+  "old_unique_valid_spans": {
+    "n_sents": 2064,
+    "empty_sents": 734,
+    "n_spans": 3929,
+    "L": 24,
+    "K": 692,
+    "S": 2394,
+    "T": 819
+  },
+  "human350": {
+    "gold150": {
+      "n": 150,
+      "in_10k_id": 0,
+      "in_10k_nfc": 0,
+      "role": "evaluation gold / human reference set; not Silver teacher"
+    },
+    "a100": {
+      "n": 100,
+      "in_10k_id": 100,
+      "in_10k_nfc": 100,
+      "role": "human-coded Silver teacher; cohort A100"
+    },
+    "qa100": {
+      "n": 100,
+      "in_10k_id": 88,
+      "in_10k_nfc": 98,
+      "ids_not_in_v6a": ["1803-s0005", "1952-s0009", "1989-s0013", "1991-s0019"],
+      "role": "human quality check of Silver; 8 extra IDs are exact-dup of kept texts; 2 unique texts / 4 IDs outside v6a"
+    }
+  },
+  "human_touched_unique_texts_inside_10k": 198,
+  "planned_new_qa150": "inside the 7,936 / 10,000 after AI labels; not drawn yet",
+  "new_7936_ai_labels": "in progress (2500 local + 5436 Codex); not complete"
+}

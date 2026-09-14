@@ -1,0 +1,286 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 61.446,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5022,
+    "completion_tokens": 1947,
+    "total_tokens": 6969,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 967
+    },
+    "input_tokens": 5022,
+    "output_tokens": 1947,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00291\",\"spans\":[{\"start\":4,\"end\":6,\"text\":\"英语\",\"label\":\"L\"},{\"start\":7,\"end\":9,\"text\":\"日语\",\"label\":\"L\"}],\"status\":\"candidate_complete\",\"note\":\"并列语种分别标L，排除掌握程度和优先条件。\",\"issues\":[]},{\"id\":\"sp10k-00292\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"项目实施流程\",\"label\":\"K\"},{\"start\":12,\"end\":16,\"text\":\"实施工作\",\"label\":\"S\"},{\"start\":23,\"end\":27,\"text\":\"项目管理\",\"label\":\"S\"},{\"start\":28,\"end\":32,\"text\":\"技术服务\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"流程知识标K；实施、项目管理及技术服务为明确职业活动，去除经验等修饰。\",\"issues\":[]},{\"id\":\"sp10k-00293\",\"spans\":[{\"start\":19,\"end\":23,\"text\":\"售后服务\",\"label\":\"S\"},{\"start\":26,\"end\":30,\"text\":\"设备安装\",\"label\":\"S\"},{\"start\":31,\"end\":33,\"text\":\"调试\",\"label\":\"S\"},{\"start\":34,\"end\":43,\"text\":\"设备故障诊断和排除\",\"label\":\"S\"},{\"start\":44,\"end\":48,\"text\":\"维护设备\",\"label\":\"S\"},{\"start\":48,\"end\":54,\"text\":\"现场技术咨询\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取售后服务及各项具体职业活动；故障诊断和排除保留共享对象。产品品牌不另作工具能力抽取。\",\"issues\":[]},{\"id\":\"sp10k-00294\",\"spans\":[{\"start\":24,\"end\":41,\"text\":\"SMT设备及备品耗材的售后维护服务\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"维护服务及其共享对象保留为完整职业活动，排除公司客户和地点信息。\",\"issues\":[]},{\"id\":\"sp10k-00295\",\"spans\":[{\"start\":2,\"end\":14,\"text\":\"对现场的安全设备进行巡检\",\"label\":\"S\"},{\"start\":15,\"end\":26,\"text\":\"针对策略进行调整和优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"巡检与策略调整优化分别为具体职业动作，保留各自必要对象。\",\"issues\":[]},{\"id\":\"sp10k-00296\",\"spans\":[{\"start\":2,\"end\":5,\"text\":\"计算机\",\"label\":\"K\"},{\"start\":6,\"end\":8,\"text\":\"电子\",\"label\":\"K\"},{\"start\":9,\"end\":11,\"text\":\"通信\",\"label\":\"K\"},{\"start\":17,\"end\":23,\"text\":\"大专以上学历\",\"label\":\"K\"},{\"start\":36,\"end\":41,\"text\":\"工科类专业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"专业名称、明确的专业类别及完整学历要求标K；泛化相关专业不另标。\",\"issues\":[]},{\"id\":\"sp10k-00297\",\"spans\":[{\"start\":11,\"end\":17,\"text\":\"逻辑思维能力\",\"label\":\"T\"},{\"start\":18,\"end\":24,\"text\":\"语言表达能力\",\"label\":\"T\"},{\"start\":25,\"end\":29,\"text\":\"应变能力\",\"label\":\"T\"},{\"start\":30,\"end\":34,\"text\":\"专业知识\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"面试考察内容明确体现候选人能力要求，非单纯行政流程；通用能力标T，专业知识标K。\",\"issues\":[]},{\"id\":\"sp10k-00298\",\"spans\":[{\"start\":8,\"end\":20,\"text\":\"强化学习与机器人相关研究\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"按学术研究默认T处理；虽有课题和研究领域，未明确强调具体研究方法，保留共享研究中心。\",\"issues\":[]},{\"id\":\"sp10k-00299\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明要求的满足数量和学历要求的硬性性质，未给出具体学历或能力提及；不补用外部上下文。\",\"issues\":[]},{\"id\":\"sp10k-00300\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅泛指学历、专业、工作经历并引导查看附件，没有可抽取的具体资格、领域或职业活动。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00291",
+        "spans": [
+          {
+            "start": 4,
+            "end": 6,
+            "text": "英语",
+            "label": "L"
+          },
+          {
+            "start": 7,
+            "end": 9,
+            "text": "日语",
+            "label": "L"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "并列语种分别标L，排除掌握程度和优先条件。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00292",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "项目实施流程",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "实施工作",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "项目管理",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "技术服务",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "流程知识标K；实施、项目管理及技术服务为明确职业活动，去除经验等修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00293",
+        "spans": [
+          {
+            "start": 19,
+            "end": 23,
+            "text": "售后服务",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 30,
+            "text": "设备安装",
+            "label": "S"
+          },
+          {
+            "start": 31,
+            "end": 33,
+            "text": "调试",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 43,
+            "text": "设备故障诊断和排除",
+            "label": "S"
+          },
+          {
+            "start": 44,
+            "end": 48,
+            "text": "维护设备",
+            "label": "S"
+          },
+          {
+            "start": 48,
+            "end": 54,
+            "text": "现场技术咨询",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取售后服务及各项具体职业活动；故障诊断和排除保留共享对象。产品品牌不另作工具能力抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00294",
+        "spans": [
+          {
+            "start": 24,
+            "end": 41,
+            "text": "SMT设备及备品耗材的售后维护服务",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "维护服务及其共享对象保留为完整职业活动，排除公司客户和地点信息。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00295",
+        "spans": [
+          {
+            "start": 2,
+            "end": 14,
+            "text": "对现场的安全设备进行巡检",
+            "label": "S"
+          },
+          {
+            "start": 15,
+            "end": 26,
+            "text": "针对策略进行调整和优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "巡检与策略调整优化分别为具体职业动作，保留各自必要对象。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00296",
+        "spans": [
+          {
+            "start": 2,
+            "end": 5,
+            "text": "计算机",
+            "label": "K"
+          },
+          {
+            "start": 6,
+            "end": 8,
+            "text": "电子",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "text": "通信",
+            "label": "K"
+          },
+          {
+            "start": 17,
+            "end": 23,
+            "text": "大专以上学历",
+            "label": "K"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "text": "工科类专业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "专业名称、明确的专业类别及完整学历要求标K；泛化相关专业不另标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00297",
+        "spans": [
+          {
+            "start": 11,
+            "end": 17,
+            "text": "逻辑思维能力",
+            "label": "T"
+          },
+          {
+            "start": 18,
+            "end": 24,
+            "text": "语言表达能力",
+            "label": "T"
+          },
+          {
+            "start": 25,
+            "end": 29,
+            "text": "应变能力",
+            "label": "T"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "text": "专业知识",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "面试考察内容明确体现候选人能力要求，非单纯行政流程；通用能力标T，专业知识标K。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00298",
+        "spans": [
+          {
+            "start": 8,
+            "end": 20,
+            "text": "强化学习与机器人相关研究",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "按学术研究默认T处理；虽有课题和研究领域，未明确强调具体研究方法，保留共享研究中心。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00299",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明要求的满足数量和学历要求的硬性性质，未给出具体学历或能力提及；不补用外部上下文。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00300",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅泛指学历、专业、工作经历并引导查看附件，没有可抽取的具体资格、领域或职业活动。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 30,
+  "ids": [
+    "sp10k-00291",
+    "sp10k-00292",
+    "sp10k-00293",
+    "sp10k-00294",
+    "sp10k-00295",
+    "sp10k-00296",
+    "sp10k-00297",
+    "sp10k-00298",
+    "sp10k-00299",
+    "sp10k-00300"
+  ],
+  "at": "2026-09-13T14:16:09.117452+00:00"
+}

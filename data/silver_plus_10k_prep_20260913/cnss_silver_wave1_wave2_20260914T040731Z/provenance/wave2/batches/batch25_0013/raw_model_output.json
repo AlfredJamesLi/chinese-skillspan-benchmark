@@ -1,0 +1,469 @@
+{
+  "records": [
+    {
+      "id": "sp10k-04009",
+      "spans": [
+        {
+          "start": 13,
+          "end": 17,
+          "text": "资格证书",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求厨师岗位相关非语言资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04010",
+      "spans": [],
+      "status": "adjudication_required",
+      "note": "仅有岗位名称，专业是否构成候选人要求待决。",
+      "issues": [
+        {
+          "kind": "scope",
+          "text": "电子商务专业",
+          "alternatives": [
+            "作为候选人专业知识要求标K",
+            "作为岗位或教学单位名称不标"
+          ],
+          "reason": "缺少任职要求语境，无法确认该专业名是在限定候选人还是描述岗位归属。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-04012",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "vagrant",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "docker",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "搭建环境",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工具与环境搭建处于明确实践语境。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04013",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "自我学习",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 16,
+          "text": "独立处理问题能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学习及无具体职业对象的问题处理能力为通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04014",
+      "spans": [
+        {
+          "start": 10,
+          "end": 14,
+          "text": "JAVA",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 18,
+          "text": "php",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 25,
+          "text": "python",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 29,
+          "text": "c++",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "编辑语言",
+          "label": "S"
+        },
+        {
+          "start": 43,
+          "end": 48,
+          "text": "mssql",
+          "label": "S"
+        },
+        {
+          "start": 49,
+          "end": 54,
+          "text": "mysql",
+          "label": "S"
+        },
+        {
+          "start": 55,
+          "end": 61,
+          "text": "oracle",
+          "label": "S"
+        },
+        {
+          "start": 64,
+          "end": 67,
+          "text": "数据库",
+          "label": "S"
+        },
+        {
+          "start": 72,
+          "end": 79,
+          "text": "写程序解决问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "语言、数据库及其类别均为使用要求；保留原文“编辑语言”。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04015",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名流程标题，不含候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04016",
+      "spans": [
+        {
+          "start": 9,
+          "end": 15,
+          "text": "软、硬件维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "维护为职业动作，并列对象共享必要成分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04017",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘报名时间、开考比例及费用说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04018",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "text": "客户服务意识",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 21,
+          "text": "组织协调能力",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "团队合作精神",
+          "label": "T"
+        },
+        {
+          "start": 34,
+          "end": 37,
+          "text": "执行力",
+          "label": "T"
+        },
+        {
+          "start": 38,
+          "end": 44,
+          "text": "客户维护能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "通用意识与协作特质标T，客户维护职能能力标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04019",
+      "spans": [
+        {
+          "start": 4,
+          "end": 25,
+          "text": "存储设备(特别是EMC)的常用命令使用方法",
+          "label": "S"
+        },
+        {
+          "start": 29,
+          "end": 33,
+          "text": "配置优化",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "故障排除",
+          "label": "S"
+        },
+        {
+          "start": 43,
+          "end": 45,
+          "text": "实施",
+          "label": "S"
+        },
+        {
+          "start": 46,
+          "end": 50,
+          "text": "维护能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "可执行方法保留设备对象；其余动作由局部存储设备语境限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04020",
+      "spans": [
+        {
+          "start": 7,
+          "end": 14,
+          "text": "实验室操作技能",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求实验室职业操作技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04021",
+      "spans": [
+        {
+          "start": 5,
+          "end": 18,
+          "text": "国民教育系列本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 19,
+          "end": 21,
+          "text": "学位",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留完整学历资格；学位承接前文层次限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04022",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "工资待遇标准及财政承担说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04023",
+      "spans": [
+        {
+          "start": 6,
+          "end": 11,
+          "text": "老客户运维",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "服务经营",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确职业活动可去除工作经验及年限后分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04024",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "岗位附件与专业目录设置依据，未列出具体候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04025",
+      "spans": [
+        {
+          "start": 2,
+          "end": 12,
+          "text": "协调其他团队实施项目",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 19,
+          "text": "跟踪项目进展",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "解决项目问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "团队协调为T，具体项目跟踪及问题解决为S；交付结果承诺不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04026",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告解释责任机关说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04027",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "压力容器证",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 13,
+          "text": "电网调度证",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项明确的非语言职业资格。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04028",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名材料提交与报名有效性规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04029",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "jenkins",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 16,
+          "text": "gitlab",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体岗位工具名，无原理或课程限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04030",
+      "spans": [
+        {
+          "start": 0,
+          "end": 15,
+          "text": "邮件、硬件、各类软件维护及处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列对象共享维护及处理动作，保留完整跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04031",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘机关组织面试的行政流程说明。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04033",
+      "spans": [
+        {
+          "start": 2,
+          "end": 19,
+          "text": "海洋照明工程相关机械/工业设计出图",
+          "label": "S"
+        },
+        {
+          "start": 20,
+          "end": 26,
+          "text": "指导加工制造",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "设计出图保留共享工程对象；加工制造指导为独立职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04035",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "面试资格核验与取消资格规定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-04036",
+      "spans": [
+        {
+          "start": 4,
+          "end": 9,
+          "text": "水处理工艺",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 19,
+          "text": "现场管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "工艺为领域知识；现场管理为具体职业活动，去除经验后意义完整。",
+      "issues": []
+    }
+  ]
+}

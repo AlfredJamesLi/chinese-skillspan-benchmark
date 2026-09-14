@@ -1,0 +1,531 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02989",
+      "spans": [
+        {
+          "start": 5,
+          "end": 13,
+          "text": "与用户沟通的能力",
+          "label": "T"
+        },
+        {
+          "start": 14,
+          "end": 20,
+          "text": "编写文档能力",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "数据分析能力",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "沟通为通用能力；文档编写和数据分析为职业能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02990",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "公司业务系统的日常监控及运维",
+          "label": "S"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "需求沟通",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 24,
+          "text": "汇总",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 31,
+          "text": "流程优化提报",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "监控及运维保留共享对象；汇总承接需求对象，沟通按T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02991",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "mysql",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 14,
+          "text": "oracle",
+          "label": "S"
+        },
+        {
+          "start": 15,
+          "end": 24,
+          "text": "数据库的管理及调优",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确数据库管理及调优语境，工具与操作均为S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02992",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报考材料文件名、机构及日期，不含具体能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02993",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘考察实施安排，不是候选人职业职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02994",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 7,
+          "end": 14,
+          "text": "大专及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取专业及完整学历；同行业未指明具体行业，经验年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02995",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "全日制本科学历",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 11,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "text": "网络",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历资格及具体专业分别标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02996",
+      "spans": [
+        {
+          "start": 0,
+          "end": 7,
+          "text": "本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 30,
+          "text": "企业管理软件销售",
+          "label": "S"
+        },
+        {
+          "start": 35,
+          "end": 37,
+          "text": "通信",
+          "label": "K"
+        },
+        {
+          "start": 38,
+          "end": 41,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 42,
+          "end": 44,
+          "text": "电子",
+          "label": "K"
+        },
+        {
+          "start": 45,
+          "end": 47,
+          "text": "信息",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "销售活动去除工作经验后意义完整；专业及学历为K，年龄和年限不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02997",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "资格复审通知安排，不含具体资格或能力提及。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02999",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "大专及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 10,
+          "end": 12,
+          "text": "机电",
+          "label": "K"
+        },
+        {
+          "start": 13,
+          "end": 16,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 19,
+          "text": "汽修",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历及并列专业，排除要求触发词。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03000",
+      "spans": [
+        {
+          "start": 2,
+          "end": 26,
+          "text": "分体式空调（VRV机组）、螺杆压缩机组等工作原理",
+          "label": "K"
+        },
+        {
+          "start": 32,
+          "end": 46,
+          "text": "制冷，供暖设备，及冷却塔维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "原理知识为K；设备维护为S，保留并列项必要共享成分。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03001",
+      "spans": [
+        {
+          "start": 11,
+          "end": 17,
+          "text": "日常维保培训",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "向客户运维人员实施培训属于职业活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03002",
+      "spans": [
+        {
+          "start": 2,
+          "end": 19,
+          "text": "TCP/IP、交换和路由等基本原理",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 31,
+          "text": "网络与安全设备",
+          "label": "S"
+        },
+        {
+          "start": 34,
+          "end": 38,
+          "text": "判断故障",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 43,
+          "text": "处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "共享基本原理的知识短语为K；设备处于故障判断及处理的实际工作语境，处理回指故障。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03003",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "报名材料填写及审核责任说明，不含职业能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03004",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "泛指不符合资格或条件的人员，未指明可抽取要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03005",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "资讯设备监管",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "具体监管活动去除实务工作经验修饰后意义完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03006",
+      "spans": [
+        {
+          "start": 3,
+          "end": 7,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "合作精神",
+          "label": "T"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "text": "工作主动性",
+          "label": "T"
+        },
+        {
+          "start": 20,
+          "end": 24,
+          "text": "耐心细致",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 28,
+          "text": "责任心",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 38,
+          "text": "吃苦耐劳精神",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "并列通用能力和工作特质分别标T，去除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03007",
+      "spans": [
+        {
+          "start": 0,
+          "end": 10,
+          "text": "全日制本科及以上学历",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 14,
+          "text": "计算机",
+          "label": "K"
+        },
+        {
+          "start": 15,
+          "end": 17,
+          "text": "财会",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "text": "人力资源",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "完整学历及具体专业分别标K。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03008",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应聘证明材料提交清单，未明确具体学历层级或资格名称。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03009",
+      "spans": [
+        {
+          "start": 2,
+          "end": 23,
+          "text": "淘系直播、KOL等新的内容营销的策划及执行",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "内容营销策划及执行为职业活动，保留共享的渠道和营销对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03010",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "办公软件操作",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 17,
+          "text": "写作能力",
+          "label": "T"
+        },
+        {
+          "start": 18,
+          "end": 21,
+          "text": "逻辑性",
+          "label": "T"
+        },
+        {
+          "start": 25,
+          "end": 29,
+          "text": "认真细致",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件操作为S；未限定专业对象的写作、逻辑及工作特质为T。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03011",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘专业条件设置依据，不是候选人须掌握的规范要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03012",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "办公室、教学点拓展",
+          "label": "S"
+        },
+        {
+          "start": 14,
+          "end": 39,
+          "text": "对接工程、消防、硬件、网络等乙方公司和总部拓展老师",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "场所拓展为职业活动，人员联络为T；末段仅陈述项目结果责任。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03014",
+      "spans": [
+        {
+          "start": 19,
+          "end": 30,
+          "text": "全日制大学专科以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取完整学历资格；参加入学考试的经历不另作能力或资格名标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-03015",
+      "spans": [
+        {
+          "start": 2,
+          "end": 24,
+          "text": "华为、H3C、锐捷、Cisco等主流厂家产品",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "CCNA",
+          "label": "K"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "HCIA",
+          "label": "K"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "认证为K；厂家产品保留共享中心词，类型暂以S占位，尚未裁决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "华为、H3C、锐捷、Cisco等主流厂家产品",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "熟悉产品可指产品知识，也可指设备工具运用；原文未提供原理学习或实际操作语境，认证要求不足以消除歧义。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 43.394,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5069,
+    "completion_tokens": 1309,
+    "total_tokens": 6378,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 407
+    },
+    "input_tokens": 5069,
+    "output_tokens": 1309,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00281\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"报名资格初审流程，不属于候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00282\",\"spans\":[{\"start\":4,\"end\":18,\"text\":\"广场信息系统及设备运行和维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"运行和维护为明确职业活动，保留共享对象，不包含职责触发词。\",\"issues\":[]},{\"id\":\"sp10k-00283\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"公告解释权说明，不含候选人能力要求。\",\"issues\":[]},{\"id\":\"sp10k-00284\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"身份证及学历学位证书材料清单，属于应聘行政材料而非明确资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00285\",\"spans\":[{\"start\":7,\"end\":9,\"text\":\"机械\",\"label\":\"K\"},{\"start\":10,\"end\":14,\"text\":\"工业工程\",\"label\":\"K\"},{\"start\":19,\"end\":26,\"text\":\"大专或以上学历\",\"label\":\"K\"},{\"start\":27,\"end\":34,\"text\":\"LED封装行业\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"抽取专业、完整学历资格及行业背景；年龄和优先修饰不标。\",\"issues\":[]},{\"id\":\"sp10k-00286\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"员工绩效、福利等综合人事管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"综合人事管理为职业职能，绩效和福利共享管理中心，保留完整跨度。\",\"issues\":[]},{\"id\":\"sp10k-00287\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"HTML\",\"label\":\"S\"},{\"start\":7,\"end\":17,\"text\":\"JavaScript\",\"label\":\"S\"},{\"start\":18,\"end\":22,\"text\":\"AJAX\",\"label\":\"S\"},{\"start\":23,\"end\":29,\"text\":\"jQuery\",\"label\":\"S\"},{\"start\":30,\"end\":33,\"text\":\"CSS\",\"label\":\"S\"},{\"start\":34,\"end\":37,\"text\":\"XML\",\"label\":\"S\"},{\"start\":48,\"end\":53,\"text\":\"Web标准\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"Web技术栈按岗位工具运用标S，Web标准为规范知识；概括性回指不重复抽取。\",\"issues\":[]},{\"id\":\"sp10k-00288\",\"spans\":[],\"status\":\"adjudication_required\",\"note\":\"仅有证件及资格类别列表，无法确认是材料清单还是候选人资格要求。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"（3）学历、学位、职称、教师资格证书\",\"alternatives\":[\"应聘材料清单，不标\",\"候选人资格要求，抽取教师资格证书为K\"],\"reason\":\"缺少列表标题及要求语境，无法判断教师资格证书是否为必须具备的资格。\"}]},{\"id\":\"sp10k-00289\",\"spans\":[{\"start\":3,\"end\":7,\"text\":\"文字处理\",\"label\":\"S\"},{\"start\":8,\"end\":14,\"text\":\"语言表达能力\",\"label\":\"T\"},{\"start\":16,\"end\":19,\"text\":\"亲和力\",\"label\":\"T\"},{\"start\":20,\"end\":24,\"text\":\"服务意识\",\"label\":\"T\"},{\"start\":28,\"end\":32,\"text\":\"沟通能力\",\"label\":\"T\"},{\"start\":33,\"end\":36,\"text\":\"执行力\",\"label\":\"T\"},{\"start\":41,\"end\":45,\"text\":\"学习能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"文字处理为可执行活动，其余为通用能力或特质；去除程度及要求修饰。\",\"issues\":[]},{\"id\":\"sp10k-00290\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"报名网站、表格填写及证件提交说明属于应聘行政流程，不抽取其中的材料或专业词。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00281",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "报名资格初审流程，不属于候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00282",
+        "spans": [
+          {
+            "start": 4,
+            "end": 18,
+            "text": "广场信息系统及设备运行和维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "运行和维护为明确职业活动，保留共享对象，不包含职责触发词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00283",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "公告解释权说明，不含候选人能力要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00284",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "身份证及学历学位证书材料清单，属于应聘行政材料而非明确资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00285",
+        "spans": [
+          {
+            "start": 7,
+            "end": 9,
+            "text": "机械",
+            "label": "K"
+          },
+          {
+            "start": 10,
+            "end": 14,
+            "text": "工业工程",
+            "label": "K"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "text": "大专或以上学历",
+            "label": "K"
+          },
+          {
+            "start": 27,
+            "end": 34,
+            "text": "LED封装行业",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取专业、完整学历资格及行业背景；年龄和优先修饰不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00286",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "员工绩效、福利等综合人事管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "综合人事管理为职业职能，绩效和福利共享管理中心，保留完整跨度。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00287",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "HTML",
+            "label": "S"
+          },
+          {
+            "start": 7,
+            "end": 17,
+            "text": "JavaScript",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "AJAX",
+            "label": "S"
+          },
+          {
+            "start": 23,
+            "end": 29,
+            "text": "jQuery",
+            "label": "S"
+          },
+          {
+            "start": 30,
+            "end": 33,
+            "text": "CSS",
+            "label": "S"
+          },
+          {
+            "start": 34,
+            "end": 37,
+            "text": "XML",
+            "label": "S"
+          },
+          {
+            "start": 48,
+            "end": 53,
+            "text": "Web标准",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "Web技术栈按岗位工具运用标S，Web标准为规范知识；概括性回指不重复抽取。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00288",
+        "spans": [],
+        "status": "adjudication_required",
+        "note": "仅有证件及资格类别列表，无法确认是材料清单还是候选人资格要求。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "（3）学历、学位、职称、教师资格证书",
+            "alternatives": [
+              "应聘材料清单，不标",
+              "候选人资格要求，抽取教师资格证书为K"
+            ],
+            "reason": "缺少列表标题及要求语境，无法判断教师资格证书是否为必须具备的资格。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00289",
+        "spans": [
+          {
+            "start": 3,
+            "end": 7,
+            "text": "文字处理",
+            "label": "S"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "text": "语言表达能力",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 19,
+            "text": "亲和力",
+            "label": "T"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "text": "服务意识",
+            "label": "T"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "沟通能力",
+            "label": "T"
+          },
+          {
+            "start": 33,
+            "end": 36,
+            "text": "执行力",
+            "label": "T"
+          },
+          {
+            "start": 41,
+            "end": 45,
+            "text": "学习能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文字处理为可执行活动，其余为通用能力或特质；去除程度及要求修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00290",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "报名网站、表格填写及证件提交说明属于应聘行政流程，不抽取其中的材料或专业词。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 29,
+  "ids": [
+    "sp10k-00281",
+    "sp10k-00282",
+    "sp10k-00283",
+    "sp10k-00284",
+    "sp10k-00285",
+    "sp10k-00286",
+    "sp10k-00287",
+    "sp10k-00288",
+    "sp10k-00289",
+    "sp10k-00290"
+  ],
+  "at": "2026-09-13T14:15:07.242335+00:00"
+}

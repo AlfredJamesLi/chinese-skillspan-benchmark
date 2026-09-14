@@ -1,0 +1,412 @@
+{
+  "attempt": 2,
+  "http_status": 200,
+  "elapsed_s": 65.539,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5094,
+    "completion_tokens": 2009,
+    "total_tokens": 7103,
+    "prompt_tokens_details": {
+      "cached_tokens": 3840,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1191
+    },
+    "input_tokens": 5094,
+    "output_tokens": 2009,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [
+    {
+      "id": "sp10k-01623",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            10,
+            14
+          ],
+          "to": [
+            11,
+            15
+          ],
+          "text": "资格证书"
+        },
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            15,
+            20
+          ],
+          "to": [
+            18,
+            22
+          ],
+          "text": "荣誉证书"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01625",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            32,
+            36
+          ],
+          "to": [
+            39,
+            43
+          ],
+          "text": "硕士学位"
+        },
+        {
+          "i": 2,
+          "action": "snapped",
+          "from": [
+            43,
+            48
+          ],
+          "to": [
+            45,
+            50
+          ],
+          "text": "主观能动性"
+        },
+        {
+          "i": 3,
+          "action": "snapped",
+          "from": [
+            51,
+            57
+          ],
+          "to": [
+            55,
+            61
+          ],
+          "text": "团队协作精神"
+        },
+        {
+          "i": 4,
+          "action": "snapped",
+          "from": [
+            61,
+            65
+          ],
+          "to": [
+            63,
+            67
+          ],
+          "text": "协助完成"
+        },
+        {
+          "i": 5,
+          "action": "snapped",
+          "from": [
+            65,
+            67
+          ],
+          "to": [
+            67,
+            69
+          ],
+          "text": "采购"
+        },
+        {
+          "i": 6,
+          "action": "snapped",
+          "from": [
+            68,
+            70
+          ],
+          "to": [
+            70,
+            72
+          ],
+          "text": "报账"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01627",
+      "repairs": [
+        {
+          "i": 1,
+          "action": "snapped",
+          "from": [
+            10,
+            16
+          ],
+          "to": [
+            9,
+            15
+          ],
+          "text": "沟通交流能力"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-01629",
+      "repairs": [
+        {
+          "i": 0,
+          "action": "snapped",
+          "from": [
+            9,
+            21
+          ],
+          "to": [
+            9,
+            22
+          ],
+          "text": "副高职称及以上专业技术资格"
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-01621\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为公告解释职责，不属于候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-01622\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为招聘单位组织实施考察工作的职责，不属于候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-01623\",\"spans\":[{\"start\":10,\"end\":14,\"text\":\"资格证书\",\"label\":\"K\"},{\"start\":15,\"end\":20,\"text\":\"荣誉证书\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"明确提及候选人材料中的资格及证书类资格。\",\"issues\":[]},{\"id\":\"sp10k-01624\",\"spans\":[{\"start\":11,\"end\":15,\"text\":\"定期巡检\",\"label\":\"S\"},{\"start\":16,\"end\":20,\"text\":\"检测维修\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求执行设备巡检和维修活动。\",\"issues\":[]},{\"id\":\"sp10k-01625\",\"spans\":[{\"start\":10,\"end\":18,\"text\":\"遵守全国法律法规\",\"label\":\"K\"},{\"start\":32,\"end\":36,\"text\":\"硕士学位\",\"label\":\"K\"},{\"start\":43,\"end\":48,\"text\":\"主观能动性\",\"label\":\"T\"},{\"start\":51,\"end\":57,\"text\":\"团队协作精神\",\"label\":\"T\"},{\"start\":61,\"end\":65,\"text\":\"协助完成\",\"label\":\"S\"},{\"start\":65,\"end\":67,\"text\":\"采购\",\"label\":\"S\"},{\"start\":68,\"end\":70,\"text\":\"报账\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取法律法规知识、学历资格、通用特质及明确事务活动；待遇部分不标。\",\"issues\":[]},{\"id\":\"sp10k-01626\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"内容规定招聘单位人员的回避义务，不是候选人能力、知识或资格要求。\",\"issues\":[]},{\"id\":\"sp10k-01627\",\"spans\":[{\"start\":0,\"end\":4,\"text\":\"性格开朗\",\"label\":\"T\"},{\"start\":10,\"end\":16,\"text\":\"沟通交流能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为候选人的通用特质或沟通能力。\",\"issues\":[]},{\"id\":\"sp10k-01628\",\"spans\":[{\"start\":7,\"end\":15,\"text\":\"临床基础理论水平\",\"label\":\"K\"},{\"start\":16,\"end\":25,\"text\":\"系统的专业技术知识\",\"label\":\"K\"},{\"start\":30,\"end\":37,\"text\":\"计算机应用技能\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"临床理论和专业知识属于领域知识，计算机应用属于可执行技能。\",\"issues\":[]},{\"id\":\"sp10k-01629\",\"spans\":[{\"start\":9,\"end\":21,\"text\":\"副高职称及以上专业技术资格\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"明确要求非语言专业技术资格。年龄条件不标。\",\"issues\":[]},{\"id\":\"sp10k-01630\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"Word\",\"label\":\"S\"},{\"start\":9,\"end\":12,\"text\":\"PPT\",\"label\":\"S\"},{\"start\":13,\"end\":18,\"text\":\"Excel\",\"label\":\"S\"},{\"start\":29,\"end\":38,\"text\":\"书面和口头讲述能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"文档软件为岗位工具，书面及口头讲述为通用沟通能力。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-01621",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为公告解释职责，不属于候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01622",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为招聘单位组织实施考察工作的职责，不属于候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01623",
+        "spans": [
+          {
+            "start": 11,
+            "end": 15,
+            "text": "资格证书",
+            "label": "K"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "text": "荣誉证书",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确提及候选人材料中的资格及证书类资格。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01624",
+        "spans": [
+          {
+            "start": 11,
+            "end": 15,
+            "text": "定期巡检",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "检测维修",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求执行设备巡检和维修活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01625",
+        "spans": [
+          {
+            "start": 10,
+            "end": 18,
+            "text": "遵守全国法律法规",
+            "label": "K"
+          },
+          {
+            "start": 39,
+            "end": 43,
+            "text": "硕士学位",
+            "label": "K"
+          },
+          {
+            "start": 45,
+            "end": 50,
+            "text": "主观能动性",
+            "label": "T"
+          },
+          {
+            "start": 55,
+            "end": 61,
+            "text": "团队协作精神",
+            "label": "T"
+          },
+          {
+            "start": 63,
+            "end": 67,
+            "text": "协助完成",
+            "label": "S"
+          },
+          {
+            "start": 67,
+            "end": 69,
+            "text": "采购",
+            "label": "S"
+          },
+          {
+            "start": 70,
+            "end": 72,
+            "text": "报账",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取法律法规知识、学历资格、通用特质及明确事务活动；待遇部分不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01626",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "内容规定招聘单位人员的回避义务，不是候选人能力、知识或资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01627",
+        "spans": [
+          {
+            "start": 0,
+            "end": 4,
+            "text": "性格开朗",
+            "label": "T"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": "沟通交流能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为候选人的通用特质或沟通能力。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01628",
+        "spans": [
+          {
+            "start": 7,
+            "end": 15,
+            "text": "临床基础理论水平",
+            "label": "K"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "text": "系统的专业技术知识",
+            "label": "K"
+          },
+          {
+            "start": 30,
+            "end": 37,
+            "text": "计算机应用技能",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "临床理论和专业知识属于领域知识，计算机应用属于可执行技能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01629",
+        "spans": [
+          {
+            "start": 9,
+            "end": 22,
+            "text": "副高职称及以上专业技术资格",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "明确要求非语言专业技术资格。年龄条件不标。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-01630",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "Word",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 12,
+            "text": "PPT",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 18,
+            "text": "Excel",
+            "label": "S"
+          },
+          {
+            "start": 29,
+            "end": 38,
+            "text": "书面和口头讲述能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "文档软件为岗位工具，书面及口头讲述为通用沟通能力。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 163,
+  "ids": [
+    "sp10k-01621",
+    "sp10k-01622",
+    "sp10k-01623",
+    "sp10k-01624",
+    "sp10k-01625",
+    "sp10k-01626",
+    "sp10k-01627",
+    "sp10k-01628",
+    "sp10k-01629",
+    "sp10k-01630"
+  ],
+  "at": "2026-09-13T16:25:29.442850+00:00"
+}

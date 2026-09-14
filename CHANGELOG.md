@@ -12,6 +12,15 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-14 new-silver QA150 / Qwen SFT)
+
+- Private backup: `data/silver_plus_10k_prep_20260913/` (QA150 Doccano export; human L/K/S/T empty; L1=Astra, L2=Grok, DIFF). Qwen Silver-2500 LoRA SFT seed 42/43 silver-dev typed exact snapshots under `results_snapshots/qwen_silver2500_sft_20260914_*.json`. JobBERT new-silver student snapshots under `results_snapshots/jobbert_*silver*.json`. **待验证；do not write into confirmed-results.md. Do not rank against 0.4331 / 0.5536 / 0.5403.**
+- Does **not** retag `v0.1.3`. Does **not** change V4 hybrid JobBERT 3M **0.4331**.
+
+## Unreleased notes (2026-09-11 research-use of purchased ads)
+
+- Author consultation: recruitment notices were purchased from a commercial compiler of publicly posted advertisements and may be used for academic research, including the public archive. `DATA_AVAILABILITY.md` §7 and `LICENSE` §2 record this. Original wording is **not** CC-BY. Vendor CSV / XLSX dumps stay unpublished. Does **not** retag `v0.1.3`. Does **not** change any F1.
+
 ## Unreleased notes (2026-09-11 shared-guidelines GPT n=150)
 
 - Appendix shared-guidelines scores (not the current JobBERT evaluation): [`tables/gold150_shared_guidelines_rev2_patch1.csv`](tables/gold150_shared_guidelines_rev2_patch1.csv) and Qwen B2 LoRA [`tables/gold150_shared_guidelines_qwen_sft.csv`](tables/gold150_shared_guidelines_qwen_sft.csv). **gpt-5.6-terra** typed exact **0.6667** on all 150 IDs after filling `1908-s0003` on 2026-09-11 (Gold150 HTTP 200: 152/152 returned that id). Qwen SFT remains **0.5403±0.0354**. Do **not** rank these cells against V4 JobBERT **0.4331** or JobBERT-zh v6a **0.5536**. Do **not** rename SOP extract **0.2132**.

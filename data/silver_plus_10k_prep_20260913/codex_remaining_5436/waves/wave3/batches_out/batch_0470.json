@@ -1,0 +1,264 @@
+{
+  "records": [
+    {
+      "id": "sp10k-07191",
+      "spans": [
+        {
+          "start": 5,
+          "end": 12,
+          "text": "AutoCAD",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 23,
+          "text": "SolidWroks",
+          "label": "S"
+        },
+        {
+          "start": 24,
+          "end": 30,
+          "text": "Office",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 42,
+          "text": "三维软件应用",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "软件名按实际使用工具标S，三维软件应用为职业操作。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07192",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "电子",
+          "label": "K"
+        },
+        {
+          "start": 3,
+          "end": 7,
+          "text": "信息管理",
+          "label": "K"
+        },
+        {
+          "start": 8,
+          "end": 12,
+          "text": "自动控制",
+          "label": "K"
+        },
+        {
+          "start": 16,
+          "end": 23,
+          "text": "学士或以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "专业名及完整学历资格标K，泛化相关修饰不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07193",
+      "spans": [
+        {
+          "start": 0,
+          "end": 6,
+          "text": "大专以上学历",
+          "label": "K"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "销售工作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "学历标K；销售工作为明确职业活动，去除年限和经验后保留。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07194",
+      "spans": [
+        {
+          "start": 2,
+          "end": 16,
+          "text": "工程维修类突发事件的应急处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "保留应急处理的具体职业对象，整体标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07195",
+      "spans": [
+        {
+          "start": 9,
+          "end": 21,
+          "text": "单元/单板、整机全面测试",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "型式实验",
+          "label": "S"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "系统实验",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 37,
+          "text": "可靠性实验",
+          "label": "S"
+        },
+        {
+          "start": 38,
+          "end": 42,
+          "text": "认证测试",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 56,
+          "text": "收集并统计所有的实验数据",
+          "label": "S"
+        },
+        {
+          "start": 58,
+          "end": 64,
+          "text": "出具测试报告",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "测试、实验、实验数据处理及报告出具均为职业活动；共享测试中心词及数据对象的短语保留完整。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07196",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "B/S架构开发",
+          "label": "S"
+        },
+        {
+          "start": 12,
+          "end": 27,
+          "text": "Web端视频监控系统的基本原理",
+          "label": "K"
+        },
+        {
+          "start": 28,
+          "end": 32,
+          "text": "技术实现",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "开发及技术实现标S，明确基本原理语境标K；共享系统对象由局部上下文限定。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07197",
+      "spans": [
+        {
+          "start": 2,
+          "end": 7,
+          "text": "SAP系统",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 20,
+          "text": "ERP系统操作",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "局部同类型系统操作经验明确工具使用语境，SAP系统及ERP系统操作标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07198",
+      "spans": [
+        {
+          "start": 2,
+          "end": 21,
+          "text": "组织厂内存量项目转外协厂的样品评估确认",
+          "label": "S"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "转厂时程管理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "样品评估确认与转厂时程管理为两项明确职业职责，分别标S。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07199",
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "CAD",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 17,
+          "text": "SOLIWORKS",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "绘图软件按实际使用工具标S，保留原文拼写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-07200",
+      "spans": [
+        {
+          "start": 5,
+          "end": 22,
+          "text": "解读国家、省市区各级政府的相关政策",
+          "label": "S"
+        },
+        {
+          "start": 32,
+          "end": 50,
+          "text": "国家省市区各级政府项目、荣誉资质申报",
+          "label": "S"
+        },
+        {
+          "start": 51,
+          "end": 55,
+          "text": "年度规划",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "政策解读、项目与资质申报及年度规划为职业活动；申报保留必要共享中心词。",
+      "issues": []
+    }
+  ]
+}

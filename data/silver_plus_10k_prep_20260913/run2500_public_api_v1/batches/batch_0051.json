@@ -1,0 +1,316 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 67.403,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5041,
+    "completion_tokens": 2159,
+    "total_tokens": 7200,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 1034
+    },
+    "input_tokens": 5041,
+    "output_tokens": 2159,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00501\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"平台运维\",\"label\":\"S\"},{\"start\":17,\"end\":22,\"text\":\"完善知识库\",\"label\":\"S\"}],\"status\":\"adjudication_required\",\"note\":\"提取明确的运维和知识库完善活动；前接表述的动作对象不明。\",\"issues\":[{\"kind\":\"scope\",\"text\":\"固定化并执行\",\"alternatives\":[\"属于独立职业活动要求\",\"仅为完善知识库的含混修饰，不另标\"],\"reason\":\"原文未明确固定化和执行的对象，无法确定是否另有完整职业活动提及。\"}]},{\"id\":\"sp10k-00502\",\"spans\":[{\"start\":0,\"end\":7,\"text\":\"大专及以上学历\",\"label\":\"K\"},{\"start\":12,\"end\":16,\"text\":\"市场营销\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"学历保留完整资格名；市场营销为职业活动，去除年限及经验后缀。\",\"issues\":[]},{\"id\":\"sp10k-00503\",\"spans\":[{\"start\":20,\"end\":30,\"text\":\"领导中医科的发展建设\",\"label\":\"S\"},{\"start\":38,\"end\":46,\"text\":\"提供特色中医服务\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取科室发展建设和中医服务职责；重复岗位名称不标，打造特色专科及提高水平、知名度和影响力按目标表述排除。\",\"issues\":[]},{\"id\":\"sp10k-00504\",\"spans\":[{\"start\":2,\"end\":6,\"text\":\"http\",\"label\":\"K\"},{\"start\":7,\"end\":12,\"text\":\"https\",\"label\":\"K\"},{\"start\":13,\"end\":19,\"text\":\"TCP/IP\",\"label\":\"K\"},{\"start\":23,\"end\":31,\"text\":\"网络通信协议原理\",\"label\":\"K\"},{\"start\":37,\"end\":44,\"text\":\"Restful\",\"label\":\"K\"},{\"start\":45,\"end\":53,\"text\":\"SOAP接口规则\",\"label\":\"K\"}],\"status\":\"candidate_complete\",\"note\":\"协议提及受原理语境限定，接口提及受规则语境限定，均标知识；并列共享限定不补写。\",\"issues\":[]},{\"id\":\"sp10k-00505\",\"spans\":[{\"start\":4,\"end\":8,\"text\":\"Java\",\"label\":\"S\"},{\"start\":9,\"end\":15,\"text\":\".NET开发\",\"label\":\"S\"},{\"start\":22,\"end\":26,\"text\":\"前端开发\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"均为明确开发实践要求；Java由并列结构共享开发语境。\",\"issues\":[]},{\"id\":\"sp10k-00506\",\"spans\":[{\"start\":2,\"end\":28,\"text\":\"应用系统日常时间、问题或故障的受理、分析、处理和维护\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"共享应用系统问题或故障对象的完整处置活动保留连续跨度；原文“时间”不改写。\",\"issues\":[]},{\"id\":\"sp10k-00507\",\"spans\":[{\"start\":2,\"end\":12,\"text\":\"数据中心运营成本控制\",\"label\":\"S\"},{\"start\":13,\"end\":17,\"text\":\"能耗管理\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"成本控制与能耗管理是可独立拆分的运营职能。\",\"issues\":[]},{\"id\":\"sp10k-00508\",\"spans\":[{\"start\":0,\"end\":13,\"text\":\"指导客户部署公司的软件产品\",\"label\":\"S\"},{\"start\":16,\"end\":25,\"text\":\"安装操作系统，驱动\",\"label\":\"S\"},{\"start\":26,\"end\":32,\"text\":\"部署应用程序\",\"label\":\"S\"},{\"start\":35,\"end\":50,\"text\":\"对软件进行性能和功能相关的测试\",\"label\":\"S\"},{\"start\":51,\"end\":68,\"text\":\"解决客户在使用过程中遇到的各种问题\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"分拆部署指导、安装、应用部署、软件测试和使用问题解决；操作系统与驱动共享安装动作，保留必要连续短语。\",\"issues\":[]},{\"id\":\"sp10k-00509\",\"spans\":[{\"start\":2,\"end\":10,\"text\":\"weblogic\",\"label\":\"S\"},{\"start\":11,\"end\":17,\"text\":\"tomcat\",\"label\":\"S\"},{\"start\":18,\"end\":27,\"text\":\"websphere\",\"label\":\"S\"},{\"start\":36,\"end\":54,\"text\":\"windows系统上的安装部署和配置\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"应用服务器按岗位工具运用标注；安装部署和配置保留共享系统对象，不另标泛化类别词。\",\"issues\":[]},{\"id\":\"sp10k-00510\",\"spans\":[{\"start\":2,\"end\":13,\"text\":\"技术员设备能力提升培训\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"负责培训是明确职业职责，不是候选人享受的培训福利。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00501",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "平台运维",
+            "label": "S"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "text": "完善知识库",
+            "label": "S"
+          }
+        ],
+        "status": "adjudication_required",
+        "note": "提取明确的运维和知识库完善活动；前接表述的动作对象不明。",
+        "issues": [
+          {
+            "kind": "scope",
+            "text": "固定化并执行",
+            "alternatives": [
+              "属于独立职业活动要求",
+              "仅为完善知识库的含混修饰，不另标"
+            ],
+            "reason": "原文未明确固定化和执行的对象，无法确定是否另有完整职业活动提及。"
+          }
+        ]
+      },
+      {
+        "id": "sp10k-00502",
+        "spans": [
+          {
+            "start": 0,
+            "end": 7,
+            "text": "大专及以上学历",
+            "label": "K"
+          },
+          {
+            "start": 12,
+            "end": 16,
+            "text": "市场营销",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "学历保留完整资格名；市场营销为职业活动，去除年限及经验后缀。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00503",
+        "spans": [
+          {
+            "start": 20,
+            "end": 30,
+            "text": "领导中医科的发展建设",
+            "label": "S"
+          },
+          {
+            "start": 38,
+            "end": 46,
+            "text": "提供特色中医服务",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取科室发展建设和中医服务职责；重复岗位名称不标，打造特色专科及提高水平、知名度和影响力按目标表述排除。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00504",
+        "spans": [
+          {
+            "start": 2,
+            "end": 6,
+            "text": "http",
+            "label": "K"
+          },
+          {
+            "start": 7,
+            "end": 12,
+            "text": "https",
+            "label": "K"
+          },
+          {
+            "start": 13,
+            "end": 19,
+            "text": "TCP/IP",
+            "label": "K"
+          },
+          {
+            "start": 23,
+            "end": 31,
+            "text": "网络通信协议原理",
+            "label": "K"
+          },
+          {
+            "start": 37,
+            "end": 44,
+            "text": "Restful",
+            "label": "K"
+          },
+          {
+            "start": 45,
+            "end": 53,
+            "text": "SOAP接口规则",
+            "label": "K"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "协议提及受原理语境限定，接口提及受规则语境限定，均标知识；并列共享限定不补写。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00505",
+        "spans": [
+          {
+            "start": 4,
+            "end": 8,
+            "text": "Java",
+            "label": "S"
+          },
+          {
+            "start": 9,
+            "end": 15,
+            "text": ".NET开发",
+            "label": "S"
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "text": "前端开发",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为明确开发实践要求；Java由并列结构共享开发语境。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00506",
+        "spans": [
+          {
+            "start": 2,
+            "end": 28,
+            "text": "应用系统日常时间、问题或故障的受理、分析、处理和维护",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "共享应用系统问题或故障对象的完整处置活动保留连续跨度；原文“时间”不改写。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00507",
+        "spans": [
+          {
+            "start": 2,
+            "end": 12,
+            "text": "数据中心运营成本控制",
+            "label": "S"
+          },
+          {
+            "start": 13,
+            "end": 17,
+            "text": "能耗管理",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "成本控制与能耗管理是可独立拆分的运营职能。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00508",
+        "spans": [
+          {
+            "start": 0,
+            "end": 13,
+            "text": "指导客户部署公司的软件产品",
+            "label": "S"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "text": "安装操作系统，驱动",
+            "label": "S"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "text": "部署应用程序",
+            "label": "S"
+          },
+          {
+            "start": 35,
+            "end": 50,
+            "text": "对软件进行性能和功能相关的测试",
+            "label": "S"
+          },
+          {
+            "start": 51,
+            "end": 68,
+            "text": "解决客户在使用过程中遇到的各种问题",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "分拆部署指导、安装、应用部署、软件测试和使用问题解决；操作系统与驱动共享安装动作，保留必要连续短语。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00509",
+        "spans": [
+          {
+            "start": 2,
+            "end": 10,
+            "text": "weblogic",
+            "label": "S"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "text": "tomcat",
+            "label": "S"
+          },
+          {
+            "start": 18,
+            "end": 27,
+            "text": "websphere",
+            "label": "S"
+          },
+          {
+            "start": 36,
+            "end": 54,
+            "text": "windows系统上的安装部署和配置",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "应用服务器按岗位工具运用标注；安装部署和配置保留共享系统对象，不另标泛化类别词。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00510",
+        "spans": [
+          {
+            "start": 2,
+            "end": 13,
+            "text": "技术员设备能力提升培训",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "负责培训是明确职业职责，不是候选人享受的培训福利。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 51,
+  "ids": [
+    "sp10k-00501",
+    "sp10k-00502",
+    "sp10k-00503",
+    "sp10k-00504",
+    "sp10k-00505",
+    "sp10k-00506",
+    "sp10k-00507",
+    "sp10k-00508",
+    "sp10k-00509",
+    "sp10k-00510"
+  ],
+  "at": "2026-09-13T14:33:22.280245+00:00"
+}

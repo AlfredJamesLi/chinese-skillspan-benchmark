@@ -1,0 +1,529 @@
+{
+  "records": [
+    {
+      "id": "sp10k-02153",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "公告解释权说明，不含候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02154",
+      "spans": [
+        {
+          "start": 11,
+          "end": 15,
+          "text": "清晰思维",
+          "label": "T"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "排错能力",
+          "label": "T"
+        },
+        {
+          "start": 23,
+          "end": 27,
+          "text": "分析问题",
+          "label": "T"
+        },
+        {
+          "start": 32,
+          "end": 36,
+          "text": "逻辑思维",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取通用思维与问题处理能力；排错未限定具体技术对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02155",
+      "spans": [
+        {
+          "start": 5,
+          "end": 8,
+          "text": "责任感",
+          "label": "T"
+        },
+        {
+          "start": 12,
+          "end": 16,
+          "text": "沟通能力",
+          "label": "T"
+        },
+        {
+          "start": 22,
+          "end": 28,
+          "text": "逻辑分析能力",
+          "label": "T"
+        },
+        {
+          "start": 29,
+          "end": 35,
+          "text": "组织协调能力",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "均为通用能力或特质，排除程度修饰。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02157",
+      "spans": [
+        {
+          "start": 9,
+          "end": 22,
+          "text": "应急通信系统的日常运维管理",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 58,
+          "text": "公共广播系统、声响警报系统、同步时钟系统和WIFI的移交接产",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取系统运维和移交接产职责；并列系统共享移交接产动作，保留完整跨度。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02159",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "参会注册与资料提交流程，不是职业能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02160",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "材料清单，未明确要求具体资格或能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02161",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "说明特定报考群体的学校类别豁免，未提出学历门槛要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02162",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "软件性能分析",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 13,
+          "text": "系统优化",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "两项独立技术活动分别抽取；运行效率提升属于结果目标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02163",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "网络基础知识",
+          "label": "K"
+        },
+        {
+          "start": 11,
+          "end": 17,
+          "text": "网络安全技术",
+          "label": "K"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "应用",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "基础知识与概括性安全技术按K；应用回指网络安全技术，类型待决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "应用",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可能指技术应用方面的知识，也可能要求实际运用；缺少具体实施或知识体系语境，S仅作占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02164",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "人才引进公告的发布程序及渠道，不含候选人能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02165",
+      "spans": [
+        {
+          "start": 6,
+          "end": 18,
+          "text": "软件系统的管理和日常维护",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 25,
+          "text": "安装配置",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 30,
+          "text": "运行监控",
+          "label": "S"
+        },
+        {
+          "start": 31,
+          "end": 35,
+          "text": "数据备份",
+          "label": "S"
+        },
+        {
+          "start": 36,
+          "end": 40,
+          "text": "故障处理",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取软件系统管理维护及列举的独立操作；管理和维护保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02166",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘公告背景、政策依据及招聘人数，不含具体能力或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02167",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "docker",
+          "label": "S"
+        },
+        {
+          "start": 13,
+          "end": 18,
+          "text": "Mysql",
+          "label": "S"
+        },
+        {
+          "start": 19,
+          "end": 24,
+          "text": "Redis",
+          "label": "S"
+        },
+        {
+          "start": 25,
+          "end": 35,
+          "text": "PostGreSQL",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位工具使用语境，保留原文大小写与拼写。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02168",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "计算机网络基础知识",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 23,
+          "text": "网络通信协议",
+          "label": "K"
+        },
+        {
+          "start": 24,
+          "end": 28,
+          "text": "网络设备",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "基础知识和通信协议按K；网络设备缺少明确的知识或操作限定。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "网络设备",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可能要求设备领域知识，也可能要求设备运用；仅凭了解及类别名称无法定类，S仅作占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02169",
+      "spans": [
+        {
+          "start": 7,
+          "end": 12,
+          "text": "普通话流利",
+          "label": "L"
+        },
+        {
+          "start": 13,
+          "end": 20,
+          "text": "大专及以上学历",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取语言水平和完整学历资格；年龄描述不标。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02170",
+      "spans": [
+        {
+          "start": 2,
+          "end": 23,
+          "text": "windows,linux平台的管理和优化",
+          "label": "S"
+        },
+        {
+          "start": 26,
+          "end": 31,
+          "text": "shell",
+          "label": "S"
+        },
+        {
+          "start": 41,
+          "end": 46,
+          "text": "自动化运维",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "平台管理优化保留共享动作与对象；脚本工具和自动化运维属于职业技能。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02171",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "附件文件名、发布单位与日期，不含具体要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02172",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "招聘考试组织程序，非候选人执行的职业职责。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02173",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "应聘邮件标题格式，不构成资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02174",
+      "spans": [
+        {
+          "start": 4,
+          "end": 7,
+          "text": "Vue",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 15,
+          "text": "Webpack",
+          "label": "S"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "text": "SCSS",
+          "label": "S"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "text": "Lodash",
+          "label": "S"
+        },
+        {
+          "start": 28,
+          "end": 34,
+          "text": "eslint",
+          "label": "S"
+        },
+        {
+          "start": 45,
+          "end": 50,
+          "text": "前后端分离",
+          "label": "K"
+        },
+        {
+          "start": 51,
+          "end": 56,
+          "text": "前端工程化",
+          "label": "S"
+        }
+      ],
+      "status": "adjudication_required",
+      "note": "具体框架工具按S，前后端分离按架构知识K；前端工程化的知识或实施含义待决。",
+      "issues": [
+        {
+          "kind": "type",
+          "text": "前端工程化",
+          "alternatives": [
+            "K",
+            "S"
+          ],
+          "reason": "可指概括性工程化知识体系，也可指工程化实施方法；本句未明确具体实践，S仅作占位。"
+        }
+      ]
+    },
+    {
+      "id": "sp10k-02175",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "年龄条件及出生日期界定，不在能力、知识和资格标注范围内。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02176",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "证明与成果材料清单，未给出具体学历资格或研究能力要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02177",
+      "spans": [
+        {
+          "start": 2,
+          "end": 8,
+          "text": "电脑终端安全",
+          "label": "S"
+        },
+        {
+          "start": 9,
+          "end": 19,
+          "text": "防病毒软件安装及维护",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "终端安全属于明确承担的职业职能；安装维护保留共享软件对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02178",
+      "spans": [
+        {
+          "start": 4,
+          "end": 11,
+          "text": "Linux内核",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 16,
+          "text": "网络",
+          "label": "K"
+        },
+        {
+          "start": 17,
+          "end": 21,
+          "text": "文件系统",
+          "label": "K"
+        },
+        {
+          "start": 22,
+          "end": 26,
+          "text": "内存管理",
+          "label": "K"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "text": "内存调度",
+          "label": "K"
+        },
+        {
+          "start": 34,
+          "end": 41,
+          "text": "shell脚本",
+          "label": "S"
+        },
+        {
+          "start": 44,
+          "end": 55,
+          "text": "大数据收集、管理和分析",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "内核及其相关机制按知识理解；脚本按工具技能，大数据活动保留共享对象。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-02179",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "text": "设备维护",
+          "label": "S"
+        },
+        {
+          "start": 8,
+          "end": 29,
+          "text": "解决设备出现的相关硬件问题，及部分软件问题",
+          "label": "S"
+        },
+        {
+          "start": 30,
+          "end": 34,
+          "text": "规避问题",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取设备维护和具体故障处理；规避问题承接设备故障对象，不复现属于结果目标。",
+      "issues": []
+    }
+  ]
+}

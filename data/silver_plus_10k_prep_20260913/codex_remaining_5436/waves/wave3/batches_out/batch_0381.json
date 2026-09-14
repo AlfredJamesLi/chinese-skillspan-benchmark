@@ -1,0 +1,158 @@
+{
+  "records": [
+    {
+      "id": "sp10k-05788",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为报名资格条件解释主体公告，不包含候选人能力、知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05789",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为单位简介及管理关系说明，不包含候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05790",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅包含招聘信息、职位名称、所属部门及“工作内容与要求”标题，未提供具体候选人要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05791",
+      "spans": [],
+      "status": "confirmed_empty",
+      "note": "仅为公告解释主体说明，不包含候选人能力、知识或资格要求。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-05792",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "text": "执业医师及以上资格",
+          "label": "K"
+        },
+        {
+          "start": 14,
+          "end": 25,
+          "text": "住院医师规范化培训证书",
+          "label": "K"
+        },
+        {
+          "start": 36,
+          "end": 42,
+          "text": "外科工作经历",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取执业资格、规范化培训证书及明确的外科实践经历；医院等级和年限不单独标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06306",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "植球",
+          "label": "S"
+        },
+        {
+          "start": 3,
+          "end": 5,
+          "text": "切割",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "岗位职责中的具体职业活动分别标注。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06307",
+      "spans": [
+        {
+          "start": 2,
+          "end": 9,
+          "text": "施工队伍的管理",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "text": "施工任务的安排",
+          "label": "S"
+        },
+        {
+          "start": 18,
+          "end": 20,
+          "text": "协调",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "抽取施工队伍管理、施工任务安排及协调等明确岗位活动。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06308",
+      "spans": [
+        {
+          "start": 5,
+          "end": 9,
+          "text": "数据分析",
+          "label": "S"
+        },
+        {
+          "start": 10,
+          "end": 14,
+          "text": "系统思考",
+          "label": "T"
+        },
+        {
+          "start": 15,
+          "end": 20,
+          "text": "跨部门推动",
+          "label": "T"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "数据分析为具体职业动作，系统思考和跨部门推动属于通用能力。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06309",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "TCP/IP",
+          "label": "K"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "TCP/IP等基本通信协议属于领域知识。",
+      "issues": []
+    },
+    {
+      "id": "sp10k-06310",
+      "spans": [
+        {
+          "start": 4,
+          "end": 10,
+          "text": "日常办公软件",
+          "label": "S"
+        }
+      ],
+      "status": "candidate_complete",
+      "note": "明确要求运用办公软件，标注工具使用能力。",
+      "issues": []
+    }
+  ]
+}

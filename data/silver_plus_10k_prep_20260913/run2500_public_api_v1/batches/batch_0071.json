@@ -1,0 +1,255 @@
+{
+  "attempt": 1,
+  "http_status": 200,
+  "elapsed_s": 44.014,
+  "error_tag": null,
+  "response_model": "gpt-6-astra",
+  "usage": {
+    "prompt_tokens": 5064,
+    "completion_tokens": 1357,
+    "total_tokens": 6421,
+    "prompt_tokens_details": {
+      "cached_tokens": 4480,
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0
+    },
+    "completion_tokens_details": {
+      "text_tokens": 0,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "reasoning_tokens": 516
+    },
+    "input_tokens": 5064,
+    "output_tokens": 1357,
+    "input_tokens_details": null,
+    "claude_cache_creation_5_m_tokens": 0,
+    "claude_cache_creation_1_h_tokens": 0
+  },
+  "finish_reason": "stop",
+  "parse_note": null,
+  "repairs": [],
+  "validation": {
+    "ok": true,
+    "n_errors": 0,
+    "errors": []
+  },
+  "api_error": null,
+  "assistant_content": "{\"records\":[{\"id\":\"sp10k-00701\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为证件材料齐全要求，未指明具体学历或专业资格要求。\",\"issues\":[]},{\"id\":\"sp10k-00702\",\"spans\":[{\"start\":8,\"end\":14,\"text\":\"组织协调能力\",\"label\":\"T\"},{\"start\":15,\"end\":21,\"text\":\"社会活动能力\",\"label\":\"T\"},{\"start\":22,\"end\":28,\"text\":\"团队协作精神\",\"label\":\"T\"},{\"start\":34,\"end\":42,\"text\":\"语言文字表达能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"均为通用能力或协作特质，排除要求触发词及程度修饰。\",\"issues\":[]},{\"id\":\"sp10k-00703\",\"spans\":[{\"start\":10,\"end\":17,\"text\":\"工单的进度跟踪\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取具有明确职业对象的进度跟踪活动。\",\"issues\":[]},{\"id\":\"sp10k-00704\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅说明考试通过期限及取得证书的行政规则，无具体候选人能力或资格名。\",\"issues\":[]},{\"id\":\"sp10k-00705\",\"spans\":[{\"start\":2,\"end\":8,\"text\":\"软件测试流程\",\"label\":\"K\"},{\"start\":9,\"end\":17,\"text\":\"测试用例设计方法\",\"label\":\"S\"},{\"start\":19,\"end\":23,\"text\":\"压力测试\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"测试流程为专业知识；测试用例设计方法及压力测试为可执行职业方法。\",\"issues\":[]},{\"id\":\"sp10k-00706\",\"spans\":[{\"start\":5,\"end\":9,\"text\":\"储存过程\",\"label\":\"S\"},{\"start\":12,\"end\":20,\"text\":\"数据库的性能优化\",\"label\":\"S\"},{\"start\":21,\"end\":29,\"text\":\"SQL语句的优化\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"数据库操作及优化语境下抽取技术运用与职业活动，保留原文“储存过程”。\",\"issues\":[]},{\"id\":\"sp10k-00707\",\"spans\":[{\"start\":10,\"end\":22,\"text\":\"数据库的日常基础数据运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"抽取数据库数据运维活动，排除公司及业务系统归属修饰。\",\"issues\":[]},{\"id\":\"sp10k-00708\",\"spans\":[],\"status\":\"confirmed_empty\",\"note\":\"仅为资格初审材料文件名、发布机构及日期，不构成候选人要求。\",\"issues\":[]},{\"id\":\"sp10k-00709\",\"spans\":[{\"start\":2,\"end\":16,\"text\":\"本地机房基础设施及服务器运维\",\"label\":\"S\"}],\"status\":\"candidate_complete\",\"note\":\"两个运维对象共享动作中心，保留连续完整职业活动。\",\"issues\":[]},{\"id\":\"sp10k-00710\",\"spans\":[{\"start\":5,\"end\":10,\"text\":\"工作责任心\",\"label\":\"T\"},{\"start\":11,\"end\":15,\"text\":\"团队意识\",\"label\":\"T\"},{\"start\":16,\"end\":20,\"text\":\"合作精神\",\"label\":\"T\"},{\"start\":23,\"end\":27,\"text\":\"科研管理\",\"label\":\"S\"},{\"start\":28,\"end\":32,\"text\":\"组织协调\",\"label\":\"T\"},{\"start\":33,\"end\":37,\"text\":\"团队协作\",\"label\":\"T\"},{\"start\":38,\"end\":42,\"text\":\"创新能力\",\"label\":\"T\"}],\"status\":\"candidate_complete\",\"note\":\"科研管理为领域绑定职业职能；其余为通用能力与特质，共享能力限定可由局部语境理解。\",\"issues\":[]}]}",
+  "parsed": {
+    "records": [
+      {
+        "id": "sp10k-00701",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为证件材料齐全要求，未指明具体学历或专业资格要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00702",
+        "spans": [
+          {
+            "start": 8,
+            "end": 14,
+            "text": "组织协调能力",
+            "label": "T"
+          },
+          {
+            "start": 15,
+            "end": 21,
+            "text": "社会活动能力",
+            "label": "T"
+          },
+          {
+            "start": 22,
+            "end": 28,
+            "text": "团队协作精神",
+            "label": "T"
+          },
+          {
+            "start": 34,
+            "end": 42,
+            "text": "语言文字表达能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "均为通用能力或协作特质，排除要求触发词及程度修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00703",
+        "spans": [
+          {
+            "start": 10,
+            "end": 17,
+            "text": "工单的进度跟踪",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取具有明确职业对象的进度跟踪活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00704",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅说明考试通过期限及取得证书的行政规则，无具体候选人能力或资格名。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00705",
+        "spans": [
+          {
+            "start": 2,
+            "end": 8,
+            "text": "软件测试流程",
+            "label": "K"
+          },
+          {
+            "start": 9,
+            "end": 17,
+            "text": "测试用例设计方法",
+            "label": "S"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "text": "压力测试",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "测试流程为专业知识；测试用例设计方法及压力测试为可执行职业方法。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00706",
+        "spans": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "储存过程",
+            "label": "S"
+          },
+          {
+            "start": 12,
+            "end": 20,
+            "text": "数据库的性能优化",
+            "label": "S"
+          },
+          {
+            "start": 21,
+            "end": 29,
+            "text": "SQL语句的优化",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "数据库操作及优化语境下抽取技术运用与职业活动，保留原文“储存过程”。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00707",
+        "spans": [
+          {
+            "start": 10,
+            "end": 22,
+            "text": "数据库的日常基础数据运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "抽取数据库数据运维活动，排除公司及业务系统归属修饰。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00708",
+        "spans": [],
+        "status": "confirmed_empty",
+        "note": "仅为资格初审材料文件名、发布机构及日期，不构成候选人要求。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00709",
+        "spans": [
+          {
+            "start": 2,
+            "end": 16,
+            "text": "本地机房基础设施及服务器运维",
+            "label": "S"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "两个运维对象共享动作中心，保留连续完整职业活动。",
+        "issues": []
+      },
+      {
+        "id": "sp10k-00710",
+        "spans": [
+          {
+            "start": 5,
+            "end": 10,
+            "text": "工作责任心",
+            "label": "T"
+          },
+          {
+            "start": 11,
+            "end": 15,
+            "text": "团队意识",
+            "label": "T"
+          },
+          {
+            "start": 16,
+            "end": 20,
+            "text": "合作精神",
+            "label": "T"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "text": "科研管理",
+            "label": "S"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "text": "组织协调",
+            "label": "T"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "text": "团队协作",
+            "label": "T"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "text": "创新能力",
+            "label": "T"
+          }
+        ],
+        "status": "candidate_complete",
+        "note": "科研管理为领域绑定职业职能；其余为通用能力与特质，共享能力限定可由局部语境理解。",
+        "issues": []
+      }
+    ]
+  },
+  "ok": true,
+  "batch": 71,
+  "ids": [
+    "sp10k-00701",
+    "sp10k-00702",
+    "sp10k-00703",
+    "sp10k-00704",
+    "sp10k-00705",
+    "sp10k-00706",
+    "sp10k-00707",
+    "sp10k-00708",
+    "sp10k-00709",
+    "sp10k-00710"
+  ],
+  "at": "2026-09-13T14:49:29.207753+00:00"
+}
