@@ -15,3 +15,5 @@ Allowed wording for the volume contrast: the observed B2-versus-B1 difference on
 **P1 (appendix only).** Same LoRA budget and `v6a_nocross` list; only the instruction changes (system role + JSON-wrapped sentence). Select on frozen-dev $k=0$. Same checkpoint decoded at $k=0$, random $k=3$, and $k$NN $k=3$. Gold150 is not used for gradients, neighbours, or selection.
 
 **Watermark peel (appendix only).** About 1% of Silver-plus train sentences carry `macrodatas.cn` / 马克数据网. Gold150 has none. A new 2,138 / 168 list was stripped and retrained; official v6a and v6a_nocross files were not overwritten.
+
+**Public-API silver (appendix Table H only).** Additional Qwen occurrence LoRA baselines on later silver subsets (Wave3 proxy vs Codex; Wave1+2; 7,117-sentence keep set; pooled 9,646 keep with unique v6a_nocross). Seed 42. Gold150 typed exact for the pooled Qwen student is 0.5966 (relaxed 0.7126). These do **not** replace Table C 0.1215 or JobBERT v6a 0.5536. Do not write 10,000. Not GPT distillation. Codex relabel of the 2,500-sentence subset is pending and must not be invented.

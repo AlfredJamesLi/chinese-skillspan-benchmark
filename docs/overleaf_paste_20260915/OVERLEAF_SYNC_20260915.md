@@ -1,16 +1,17 @@
-# Overleaf paste sync (2026-09-15)
+# Overleaf paste sync (2026-09-15 night)
 
-Public GitHub `main` is already at tag/docs for **Zenodo v0.1.3** and the Qwen protocol split. This folder was still on the 2026-09-09 “Gold150 pending S1” wording. Files below were updated locally so you can paste into Overleaf **now**, without waiting for Codex Wave3 training.
+Use this folder **now**. Tables A–D and Abstract Results stay frozen. Public-API / pooled-silver numbers go only in **appendix Table H**.
 
-Do **not** paste public-API Silver 7117, Wave3-proxy, Codex wave1/2, or Codex-relabel Wave3 F1 into the manuscript. Those runs are not paper-main.
+A copy-paste prompt for Codex is `CODEX_OVERLEAF_PROMPT.md` (one message; do not invent F1).
 
 ## Paste order
 
-1. `DATA_AVAILABILITY.md` — short paragraph (Gold150 is in v0.1.3, not S1-pending).
-2. `tables_ABCD.tex` — Tables A–D unchanged as cells; Table C footnote now names shared-handbook **0.5403±0.0354** as a **different protocol** that does not replace **0.1215±0.0092**.
-3. `tables_EFG_appendix.tex` — already the 09-09 appendix; paste if Overleaf still has the “kNN is running” footnote.
-4. `METHODS_SNIPPET.md` — sentence-level isolation; JSON-offset vs shared-handbook.
-5. `ABSTRACT.md` — Results **unchanged** (still 0.4331 / 0.2854 / 0.1724 / 0.5536±0.0054 / 0.1215±0.0092).
+1. `DATA_AVAILABILITY.md` — Zenodo v0.1.3 for Gold150 / v6a_nocross.
+2. `tables_ABCD.tex` — cells unchanged; Table C footnote already has shared-handbook 0.5403 as a **different protocol**.
+3. `tables_EFG_appendix.tex` — P1 / SOP-on-Gold150 / peel (unchanged).
+4. `tables_H_public_api_silver.tex` — **new**; seed-42 occurrence LoRA + pooled 9,646 Gold150.
+5. `METHODS_SNIPPET.md` — plus the pooled-silver sentences in `MIXED_STUDENT.md`.
+6. `ABSTRACT.md` — Results **unchanged**.
 
 ## Leave frozen
 
@@ -21,18 +22,10 @@ Do **not** paste public-API Silver 7117, Wave3-proxy, Codex wave1/2, or Codex-re
 | Table C JSON-offset P0 | 0.1215±0.0092 |
 | SOP extract (hybrid, no LoRA) | 0.1724 |
 
-## GitHub
+## In this paste (appendix only; all Gold150 unless noted)
 
-- Public repo https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. This paste pack lives in `docs/overleaf_paste_20260915/`.
-- Do **not** push `WAVE3_VALIDATED.jsonl`, run2500 Codex labels, or the pooled-silver training jsonl to the public repo.
+Wave3 proxy 0.5870 vs Codex 0.5853; Wave1+2 0.5745; public-API 7117 0.5883 / 0.5732; pooled 9,646 Qwen **0.5966 / 0.7126**; JobBERT 7117 $0.2367\pm0.0015$; JobBERT pooled 0.2416. Do not write 10,000.
 
-## After Codex Wave3 job 8108/8109
+## Later replacements (do not invent)
 
-Report Gold150 internally only. Still not Abstract / Tables A–D.
-
-## Pooled-silver additional baseline (queued 2026-09-15 19:30 HKT)
-
-Queued, not finished: v6a B2 unique + public-API keep (Wave3 Codex; run2500 still proxy). This is a **benchmark baseline** on pooled silver, not GPT distillation.  
-`MIXED_STUDENT.md` is the paste draft. **Do not paste F1 until JobBERT 42 and Qwen 42 Gold150 exist.** Do not write 10,000 or “dual teacher”. Codex run2500 (~23:30) will replace the proxy 2500 and we will retrain that second mix.
-
-Public GitHub: still do not push this Silver mix.
+- Codex run2500 labels → swap the 2,459 proxy keep rows and retrain a second pooled student.

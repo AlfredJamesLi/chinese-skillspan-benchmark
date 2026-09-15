@@ -14,6 +14,8 @@ Frozen SOP-extract outputs already exist for the 150 Gold IDs (they sit inside h
 
 Stripping the watermark and retraining did not raise the official cells (JobBERT B2 0.5509±0.0054; Qwen P0 0.1071±0.0102). The cleaned list also dropped empty-ad rows and five punctuation NFC collisions, so this is not a pure watermark ablation.
 
+Public-API silver appendix rows are seed-42 occurrence LoRA on later subsets. They are extra baselines, not a replacement for Table B or Table C, and not a GPT-distillation result. The pooled 9,646-sentence Qwen student is Gold150 exact 0.5966 (relaxed 0.7126); JobBERT on the same train is 0.2416. Codex relabel of the 2,500-sentence subset is still pending.
+
 ## Abstract Conclusions (optional extra sentence; do not add numbers to Results)
 
 Encoder continuation is insensitive to the rare crawler watermark in this expansion. JSON-offset LoRA remains localisation-limited: a longer prompt does not justify replacing the official P0 row, and in-context demonstrations hurt exact span F1.
