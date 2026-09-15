@@ -12,6 +12,10 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-15 Overleaf paste)
+
+- Overleaf paste pack: `docs/overleaf_paste_20260915/`. DAS short paragraph cites Zenodo v0.1.3 for Gold150 / v6a_nocross. Table C footnote records shared-handbook LoRA 0.5403±0.0354 as a different protocol from JSON-offset 0.1215±0.0092. Pooled-silver additional baseline is drafted as a benchmark baseline, not GPT distillation. Does **not** replace Table A 0.4331, Table B 0.5536±0.0054, or Table C 0.1215±0.0092. Does not add new silver jsonl.
+
 ## Unreleased notes (2026-09-14 new-silver QA150 / Qwen SFT)
 
 - Private backup: `data/silver_plus_10k_prep_20260913/` (QA150 Doccano export; human L/K/S/T empty; L1=Astra, L2=Grok, DIFF). Qwen Silver-2500 LoRA SFT seed 42/43 silver-dev typed exact snapshots under `results_snapshots/qwen_silver2500_sft_20260914_*.json`. JobBERT new-silver student snapshots under `results_snapshots/jobbert_*silver*.json`. **待验证；do not write into confirmed-results.md. Do not rank against 0.4331 / 0.5536 / 0.5403.**
