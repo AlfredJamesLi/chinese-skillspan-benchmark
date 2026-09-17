@@ -1,24 +1,14 @@
-# Companion reproduction materials
+# Supporting analyses
 
-These materials accompany the current Chinese-SkillSpan manuscript. This directory contains the Round 2 companion documentation. The Git commit containing it fixes this documentation snapshot; it does not create a new Zenodo release or publish missing model artifacts.
+Start with the [reproduction guide](../REPRODUCIBILITY.md) or [paper-to-file index](PAPER_INDEX.md). This directory holds the evidence behind the paper's tables and figures.
 
-- [Experimental details and reproduction reminders](experimental_notes/README.md): protocols, failed outputs, version differences, implementation gaps, and the exact relocation map for condensed manuscript passages.
-- [Supplementary tables](supplementary_tables/): complete historical and sensitivity results with their original context.
-- [Output outcomes](output_outcomes/README.md): detailed output-status counts and interpretation.
-- [Qwen diagnostics](qwen_diagnostics/README.md): full-precision data for the diagnostic figure and the former table.
+| Topic | Materials |
+|---|---|
+| Model comparisons | [Current results](current_results/README.md), [expanded Silver](expanded_silver/README.md) |
+| Coding quality | [Agreement calculations](agreement/README.md) |
+| Prediction diagnostics | [Qwen diagnostics](qwen_diagnostics/README.md), [output outcomes](output_outcomes/README.md) |
+| Additional experiments | [Supplementary tables](supplementary_tables/README.md), [historical results](historical_results/README.md) |
+| Reproduction details | [Evaluation instructions](EVALUATION_ENTRY.md), [experimental notes](experimental_notes/README.md) |
+| Annotation protocol | [Silver prompt package](silver_prompt_api_v1/README.md) |
 
-Original labels, predictions, manifests, parsers, and scorers are unchanged by these presentation revisions.
-
-- [Paper naming guide](../PAPER_NAMES.md): readable manuscript names mapped to exact model, dataset, protocol, and example identifiers; [CSV](paper_names.csv).
-
-## Start here
-
-- [Silver annotation API prompt package](silver_prompt_api_v1/README.md): public system prompt, structured output schema, configuration, API/proxy guidance and historical originals; [complete ZIP](silver_prompt_api_v1.zip). No new annotations or tested API runner are included.
-- [Paper index and table relocation map](PAPER_INDEX.md)
-- [Evaluation entry and verified file bindings](EVALUATION_ENTRY.md)
-- [Round 2 changes and open items](ROUND2_CHANGES.md)
-- [Coding agreement calculation](agreement/README.md)
-- [Earlier retained results](historical_results/README.md)
-- [Current result display tables](current_results/README.md)
-
-The original LaTeX passages, historical table numbers and model identifiers are archival evidence. The current naming guide applies to reader-facing explanations, not to those archived bytes.
+Supporting results remain available regardless of whether they improve performance. Historical document names identify archived versions; the current [resource naming guide](../PAPER_NAMES.md) provides readable aliases.

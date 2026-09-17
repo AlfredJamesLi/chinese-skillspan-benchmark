@@ -1,11 +1,11 @@
-# Figures aligned with the 13 September manuscript
+# Paper figures
 
-| Current figure | Asset | Current PDF page |
-|---|---|---:|
-| Figure 1: workflow | [workflow.png](workflow.png) | 3 |
-| Figure 2: coding/review paths | [coding.svg](coding.svg) | 6 |
-| Figure 3: length distributions | [length_distributions.pdf](length_distributions.pdf), [source counts](length_bins.csv) | 7 |
-| Figure 4: boundary/context examples | [examples.svg](examples.svg) | 8 |
-| Figure 5: Qwen diagnostics | [qwen_diagnostics.svg](qwen_diagnostics.svg) and [data](../../reproduction/qwen_diagnostics/) | 19 |
+| Figure | Topic | Current asset |
+|---|---|---|
+| 1 | Benchmark workflow | [Workflow](workflow.png) |
+| 2 | Annotation and review paths | [Coding paths](coding.pdf) |
+| 3 | Input length, span length, and type composition | [Annotation profile](benchmark_profile.pdf) |
+| 4 | Boundary and contextual-type examples | [Examples](boundary_examples.pdf) |
+| 5 | Matched Qwen prediction diagnostics | [Diagnostics](qwen_diagnostics.pdf), [supporting counts](../../reproduction/qwen_diagnostics/README.md) |
 
-Figure 1 retains the author-selected illustrated design, the regular-script 文 character and visible arrow shafts. Figure 2 retains its illustrated layout with readable review names. Superseded schematic redraws are not the final manuscript figures. Figure 5 restores the previous grouped/horizontal bar-chart design at the author's request; its statistics are unchanged.
+These assets match the September 18 manuscript. Earlier SVG/PDF files retain their original paths for historical references; they should not be substituted for the current assets above. Figure 3 describes the original Qwen B2 splits, Gold150, and the two QA150 reviewer layers, not the complete 9,540-record expanded pool. Its source-data bundle is not included here. Chinese character lengths and English SkillSpan token lengths have different units.

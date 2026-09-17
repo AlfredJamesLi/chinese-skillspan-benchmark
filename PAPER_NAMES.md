@@ -1,4 +1,20 @@
-# Paper naming guide
+# Resource names used in the paper
+
+Use these names when reading the manuscript. Exact paths stay unchanged for reproducibility.
+
+| Paper name | Resource |
+|---|---|
+| Human reference | [150-sentence evaluation set](data/gold150/README.md) |
+| Qwen B2 supervision | [2,150/169 training/development split](data/silver_plus_v6a_nocross/README.md) |
+| Expanded Silver | [Later Codex/proxy experiments](reproduction/expanded_silver/README.md) |
+| JobBERT initialization / B2 continuation | [Model guide](docs/models.md) |
+| Shared-guideline protocol | [Evaluation instructions](reproduction/EVALUATION_ENTRY.md) |
+| Coding and review agreement | [Agreement guide](reproduction/agreement/README.md) |
+
+<details>
+<summary>Exact model IDs, original file names, and historical aliases</summary>
+
+## Detailed mapping
 
 Short names in the manuscript are display aliases. Original file paths, experiment keys, model identifiers, hashes and archived labels remain authoritative. This guide records the mapping without changing data or model identities.
 
@@ -19,7 +35,7 @@ Short names in the manuscript are display aliases. Original file paths, experime
 | dataset | human reference | `Gold150; gold150_test.jsonl` | 150 sentences; 663 spans. Keep canonical file, hashes and scripts; add a descriptive README alias. |
 | dataset | initial review | `A100` | 100 teacher-label records reviewed before bulk generation. Keep A100 IDs; distinguish later independent exercise claim and later review versions. |
 | dataset | post-generation review | `QA100` | 100 records in the later stratified review. Keep QA100 IDs and sampled membership. |
-| dataset | nested review subset | `Dual15` | 15 machine-prefilled records nested in QA100. Never conflate with the author-reported earlier independent 15-sentence exercise. |
+| dataset | nested review subset | `Dual15` | 15-sentence QA100 auditor subset; September 17 export verifies separate coder queues and confirmations. It is distinct from IAA-50 blind calibration. |
 | dataset | further conflict-origin records | `H730` | 730 Silver-plus records from the conflict queue beyond the initial review. Keep H730 IDs and membership. |
 | dataset | other Silver-plus records | `E1621` | 1621 non-conflict-origin historical extraction records. Keep E1621 and historical SOP--CWS provenance. |
 | protocol | shared protocol | `rev2 patch1` | Frozen system instruction and user template. Keep original prompt filenames, bytes and hashes. |
@@ -39,8 +55,11 @@ Short names in the manuscript are display aliases. Original file paths, experime
 - Preserve model versions and modes in configuration documentation. A short display name does not authorize changing an API request or checkpoint.
 - Keep the primary data, frozen metadata, source IDs, experiment keys and public model URLs unchanged. Prefer readable documentation links and aliases over renaming these files.
 - The illustrated workflow retains the full Qwen label as a self-contained model identification. Its name maps to the same Qwen alias.
-- The nested review subset is machine-prefilled QA100 material, not the unverified earlier independent exercise.
+- The Dual15 export supports independent submissions within the QA100 review design; it does not establish blind raw-text coding.
 - GPT proxy and the teacher configuration are recorded identifiers, not independently verified official model identities.
 - Existing historical notes may use canonical identifiers; preserve those records and link to this guide instead of mass replacement.
 
-The CSV mapping is in `reproduction/paper_names.csv`. This documentation snapshot accompanies the Round 2 paper alignment; the containing Git commit identifies its version.
+The CSV mapping is in `reproduction/paper_names.csv`. The containing Git commit identifies this documentation version.
+
+
+</details>

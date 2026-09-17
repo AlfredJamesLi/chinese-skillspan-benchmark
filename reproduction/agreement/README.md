@@ -11,4 +11,18 @@ The available later exports contain 50 paired sentences and 2,571 Unicode code p
 
 [Calculation data](calculation.json) includes the confusion matrix, marginal counts, input hashes and the optional collapsed-category projection (kappa 0.5916). Matrix orientation is Coder B followed by Coder A. Names in this public summary are display aliases; original input files are unchanged and are not newly published here.
 
-The 2,571 characters are nested in 50 sentences. They are not 2,571 independent sampling units. Byte identity with the initial pre-adjudication freeze remains unresolved. QA100 and its machine-prefilled Dual15 subset are different review designs and receive no independent-coder kappa. This update does not invent Krippendorff's alpha or replace the original category system with the more favorable collapsed score.
+
+The 2,571 characters are nested within 50 sentences, not independent sample units. Original freeze byte identity remains unresolved.
+
+## Additional coder and review comparisons
+
+| Sample | Design | Character kappa | Exact span F1 |
+|---|---|---:|---:|
+| Dual15 auditor subset | Separate coder queues within QA100 | 1.0000 | 1.0000 |
+| New QA150 | Two reviewers with machine suggestions visible | 0.8827 | 0.8160 |
+
+The author-supplied September 17 Dual15 export records both coders' 15/15 confirmations. Its seven manifest file hashes were checked and the coefficients independently recalculated over 719 characters and 27 matching spans. The administrative seed layer equals both human layers. Separate submissions are documented; blind raw-text coding is not established by those files.
+
+QA150 nominal Krippendorff alpha is 0.8826, calculated over 5,990 unambiguous positions. Exact span sets agree on 101/150 sentences. Two conflicting-type positions are excluded from the character calculation, while all original spans remain in span F1. Raw human exports for these recent checks were supplied to the authors' revision workspace; this documentation update publishes the summary, not those private exports.
+
+The nested 15 records add no unique sentences. Human reference construction and the two original review samples cover 350 sentences; the new non-overlapping QA150 raises coverage to 500. These designs do not form a common before/after reliability experiment.

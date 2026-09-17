@@ -1,19 +1,34 @@
-# Reproducibility guide — current paper
+# Reproduce Chinese-SkillSpan results
 
-The current manuscript has 22 pages, 11 tables and 5 figures. Its primary student results use the 150-sentence human reference. Start with the following entries; historical commands remain available with their original experimental scope.
+Choose the task below. Each guide uses the same descriptive names as the manuscript; exact file names are listed only where needed to run a command or identify a result.
 
-1. [Current evaluation entry](reproduction/EVALUATION_ENTRY.md): comparison, files, hashes, scoring directions and missing rerun requirements.
-2. [Paper/table/figure map](reproduction/PAPER_INDEX.md): exact destinations for removed tables and current body results.
-3. [Companion notes](reproduction/README.md): archived tables, failed outputs, detailed implementation reminders and naming map.
-4. [58-item material inventory](reproduction/evaluation/materials_inventory.json) and [frozen contract](reproduction/evaluation/contract.json): repository matches versus local-only evidence.
-5. [Full historical reproduction guide](docs/archive/REPRODUCIBILITY_0911.md): original environment pins, checksums and commands for historical V4/Gold v2/JSON-offset studies.
+| Task | Start here | What it establishes |
+|---|---|---|
+| Inspect paper results | [Paper-to-file index](reproduction/PAPER_INDEX.md) | Published values and their experimental context |
+| Check companion files | Command below | File checksums, counts, arithmetic, and links |
+| Score saved predictions | [Evaluation guide](reproduction/EVALUATION_ENTRY.md) | Scores from compatible prediction files |
+| Rerun training or inference | [Model guide](docs/models.md), [access matrix](DATA_AVAILABILITY.md) | Requires the corresponding data, model artifacts, and configuration |
+
+From the repository root:
 
 ```bash
 python reproduction/verify_companion.py
 ```
 
-This standard-library check validates transferred-file hashes, output row totals, documented aggregate counts, numeric display consistency and local link paths. It makes no model call and does not rescore predictions.
+This check uses Python's standard library. It makes no model call, performs no training, and does not regenerate predictions.
 
-Current Qwen no adapter is 0.3612; matched B2 LoRA is 0.5403 ± 0.0354. JobBERT B1/B2 are 0.1422 ± 0.0138 and 0.5536 ± 0.0054. Sample SD uses seeds 42/43/44, not independent test replications. These are different studies from the historical V4 2,601-row and JSON-offset results.
+## Match the experiment
 
-The repository scorer and evaluation wrapper exist. Complete historical run replay additionally requires correctly bound predictions, prompts, parser/scorer bytes and model artifacts. Do not treat a documentation synchronization, stored aggregate CSV or a matching version string as proof of complete retraining or provider-model identity. See [open evidence items](reproduction/ROUND2_CHANGES.md).
+- **Shared-guideline inference:** six configurations evaluated on the 150-sentence human reference.
+- **Matched Qwen adaptation:** 2,150/169 B2 training/development records; no adapter versus three LoRA seeds under the same inference protocol.
+- **JobBERT supervision and selection:** 2,156/169 matched texts with different training and development labels. The publicly released 2,150-row Qwen file is not that 2,156-row manifest.
+- **Expanded Silver:** later Codex and proxy pools, with separate Qwen Silver testing and an additional human-reference check. See [expanded experiments](reproduction/expanded_silver/README.md).
+- **Historical protocols:** [historical results](reproduction/historical_results/README.md) retain the earlier JSON-offset and hybrid-reference studies.
+
+The [resource naming guide](PAPER_NAMES.md) and [file inventory](reproduction/evaluation/materials_inventory.json) resolve original identifiers. The inventory records an earlier audit, not a complete inventory of subsequent releases. The [access matrix](DATA_AVAILABILITY.md) states the current release scope.
+
+## Supporting analyses
+
+[Coding agreement](reproduction/agreement/README.md) · [Qwen diagnostics](reproduction/qwen_diagnostics/README.md) · [Output outcomes](reproduction/output_outcomes/README.md) · [Supplementary tables](reproduction/supplementary_tables/README.md) · [Experimental details](reproduction/experimental_notes/README.md)
+
+Frozen data, prediction, parser, and scorer paths retain their original names. This keeps existing commands and archived checksums usable.

@@ -1,34 +1,23 @@
-**Current 13 September mapping:** [paper names](../../PAPER_NAMES.md), [evaluation entry](../../reproduction/EVALUATION_ENTRY.md), and [current paper index](../../reproduction/PAPER_INDEX.md). The command below illustrates the historical JSON-offset path; the current shared-prompt and JobBERT paths are distinguished in the evaluation entry. Canonical files are unchanged.
+# Human reference set
 
-# Human reference set (artifact Gold150)
+The human reference contains **150 sentences and 663 competency spans**: a 50-sentence calibration cohort and a 100-sentence challenge cohort. Adjudicated annotations are frozen for evaluation.
 
-Manuscript name (PeerJ CS under review, after Related Work): **human reference set** — 150 frozen evaluation sentences (challenge cohort + calibration cohort).
+**[Download the reference](../gold150_test.jsonl) · [Versioned archive](https://doi.org/10.5281/zenodo.22698504) · [Score predictions](../../reproduction/EVALUATION_ENTRY.md)**
 
-Repository identifier **Gold150** and filename `gold150_test.jsonl` are unchanged. Do not rename these files. Appendix D of the manuscript maps the two vocabularies.
+| Component | Sentences | File |
+|---|---:|---|
+| Complete reference | 150 | [gold150_test.jsonl](../gold150_test.jsonl) |
+| Challenge cohort | 100 | [gold100_locked.jsonl](gold100_locked.jsonl) |
+| Calibration cohort | 50 | [iaa50_gold_locked.copied.jsonl](iaa50_gold_locked.copied.jsonl) |
 
-Canonical scoring path: [`../gold150_test.jsonl`](../gold150_test.jsonl) (same bytes as `gold150_test.jsonl` in this folder).
+Records use `source_id` and Doccano `label` triples: start, end, type. Offsets refer to original Unicode code points, start at zero, and exclude the end. The complete reference SHA-256 is `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`.
 
-| Paper name | n | File | SHA-256 | Laboratory alias |
-|---|---:|---|---|---|
-| Human reference set | 150 | `gold150_test.jsonl` | `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0` | Gold150 |
-| Challenge cohort | 100 | `gold100_locked.jsonl` | `a9fe43b79f58631876f00515f6a60649d8d2ceb57ebee111fe471cc70766864c` | Challenge-100 (`split=gold100_page1`) |
-| Calibration cohort | 50 | `iaa50_gold_locked.copied.jsonl` | `68b47bdbad1622ca39d89a2dceaf8117ee44a2227272e901a7673bc676531686` | Audit-50 / IAA-50 (`split=iaa50`) |
-
-Fields use `source_id` and Doccano `label` triples. This freeze is the **current manuscript evaluation**. It is **not** V4 hybrid 2,601 and **not** Gold v2. It is also **not** the historical 200-sentence analysis (`data/human_gold_page1_200.jsonl`). Do not overwrite `gold_canonical_v2.jsonl` or `test_lskt_v4_cws_simhuman980_hybrid.jsonl`.
-
-Convert Doccano types to scorer BIO without rewriting the freeze:
+For saved predictions from the shared-guideline protocol:
 
 ```bash
-python3 scripts/convert_gold150_to_bio.py
-python3 scripts/eval_gold150_ext.py \
-  --protocol json_offset \
-  --pred path/to/predictions.jsonl \
-  --out output/human_reference_score.json
+python scripts/eval_gold150_ext.py --protocol shared_prompt --gold_eval data/gold150_test.jsonl --pred path/to/accepted_predictions.jsonl --out output/human_reference_score.json
 ```
 
-JSON from `eval_gold150_ext.py` keeps the old keys (`gold150`, `challenge100`, `audit50`) and adds paper-name aliases (`human_reference`, `challenge_cohort`, `calibration_cohort`).
+Replace the prediction path with an existing, compatible file. This scores saved predictions; it does not call a model. Other protocols have separate instructions in the [evaluation guide](../../reproduction/EVALUATION_ENTRY.md).
 
-These files are the **current manuscript evaluation freeze** (0911 PeerJ draft). They are in GitHub Release / Zenodo **`v0.1.3`** (DOI `10.5281/zenodo.22698504`). They are **not** in Zenodo `v0.1.1` or `v0.1.2`. Teacher Silver-plus B2: [`../silver_plus_v6a_nocross/`](../silver_plus_v6a_nocross/). JobBERT-zh v6a B2 typed exact on this freeze is **0.5536±0.0054**. Do not rank that cell against V4 hybrid 2,601 JobBERT **0.4331**.
-
-Appendix shared-guidelines LLM scores on this freeze (not the JobBERT current-eval cell): [`../../tables/gold150_shared_guidelines_rev2_patch1.csv`](../../tables/gold150_shared_guidelines_rev2_patch1.csv) and Qwen B2 LoRA [`../../tables/gold150_shared_guidelines_qwen_sft.csv`](../../tables/gold150_shared_guidelines_qwen_sft.csv). **gpt-5.6-terra** typed exact **0.6667** (n=150). Do not rank those cells against **0.5536** or **0.4331**. Do not rename SOP extract 0.2132.
-
+This set is included in **v0.1.3**, not v0.1.1/v0.1.2. It differs from the historical 2,601-record hybrid reference and the 200-sentence analysis set. Its calibration/challenge selection history is described in the manuscript. Human-reviewed Silver records remain supervision or quality checks unless separately designated for evaluation.

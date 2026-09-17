@@ -4,30 +4,16 @@ title: "Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chine
 version: 0.1.3
 type: dataset
 abstract: >-
-  Online job advertisements can reveal changing skill demand only when
-  competency mentions are recoverable as auditable text spans. Chinese lacks a
-  large resource that combines explicit span-boundary rules with coverage of
-  different recruitment genres. We present Chinese-SkillSpan, a corpus of 22,840
-  sentences from four Chinese recruitment sources. It uses a flat, ESCO-derived
-  inventory of language skills and knowledge, knowledge, skills, and transversal
-  skills and competences (LSKT), with Chinese-specific rules for
-  minimal-complete, non-overlapping spans. Language models propose annotation
-  drafts, but human reviewers retain authority over accepted offsets and types
-  under a shared handbook. The benchmark uses identifier-strict scoring, exact
-  and overlap-tolerant metrics, and source- and length-based analyses. The
-  paper-main evaluation file is a frozen V4 hybrid of 2,601 identifier-aligned
-  records (derived SimHuman and SOP–CWS labels, not a completed human gold).
-  A later 150-sentence human reference set is archived separately and must not
-  be ranked against the paper-main encoder row. Exact extraction changes with
-  Chinese boundary conventions, and accuracy varies across recruitment sources.
-  Chinese-SkillSpan contributes a multi-source span resource, a Chinese-specific
-  annotation and evaluation protocol, and a reproducible baseline and diagnostic
-  suite that exposes category, source, and boundary effects. Internal artifact
-  names are confined to the supplementary reproducibility record. Project
-  materials are maintained at
-  https://github.com/AlfredJamesLi/chinese-skillspan-benchmark.
-  The pretrained JobBERT-zh model is available at
-  https://huggingface.co/AlfredJames/jobbert-zh.
+  Chinese-SkillSpan provides competency-span annotations for Chinese job
+  advertisements, annotation guidelines, and evaluation tools. The original
+  corpus contains 22,840 sentences from four recruitment collections. Version
+  v0.1.3 includes a 150-sentence human reference and released Silver-plus B2
+  training and development files. The flat, ESCO-informed label inventory
+  distinguishes language, knowledge, occupational skills, and transversal
+  competences. Historical evaluation protocols and later expanded-Silver
+  experiments are documented separately in the project repository.
+doi: 10.5281/zenodo.22698504
+url: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
 authors:
   - given-names: Guojing
     family-names: Li
@@ -63,3 +49,4 @@ keywords:
   - domain-adaptive pretraining
   - large language models
   - ESCO-informed taxonomy
+

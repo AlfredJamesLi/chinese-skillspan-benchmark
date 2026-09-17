@@ -1,6 +1,6 @@
 # Evaluation entry for the current manuscript
 
-Use this entry for current Tables 5/6/11 and Figure 5. The [paper index](PAPER_INDEX.md) distinguishes historical tables. Read [paper names](../PAPER_NAMES.md) and [experimental notes](experimental_notes/README.md) before selecting artifacts.
+Use this entry for shared-guideline inference, student comparisons, and Qwen diagnostics (Tables 5, 6, 13 and Figure 5). Expanded-pool results are documented in [their study guide](expanded_silver/README.md). The [paper index](PAPER_INDEX.md) distinguishes historical tables. Read [paper names](../PAPER_NAMES.md) and [experimental notes](experimental_notes/README.md) before selecting artifacts.
 
 ## 1. Select the comparison
 
@@ -38,7 +38,7 @@ python scripts/eval_gold150_ext.py --protocol shared_prompt --gold_eval data/gol
 python scripts/eval_gold150_ext.py --protocol jobbert_v6a --gold_eval data/gold150_test.jsonl --pred PATH_TO_JOBBERT_PREDICTIONS --out output/jobbert_score.json
 ```
 
-`PATH_TO_*` denotes an input the reader must provide; it is not a shipped file or runnable placeholder. The wrapper's legacy parse-status summary is not a replacement for the [mutually exclusive outcome table](output_outcomes/README.md). The current task did not execute these scoring commands. Resolve the original scorer binding before claiming exact historical replay, especially for relaxed matching.
+`PATH_TO_*` denotes an input the reader must provide; it is not a shipped file or runnable placeholder. The wrapper's legacy parse-status summary is not a replacement for the [mutually exclusive outcome table](output_outcomes/README.md). These commands require the corresponding prediction files. Resolve the original scorer binding before claiming exact historical replay, especially for relaxed matching.
 
 Typed exact matching requires equal boundaries and type. Relaxed matching uses same-type one-to-one greedy matching with character IoU >= 0.5. Micro-F1 pools TP/FP/FN; 150 is sentence coverage, not its numerical denominator. Three seeds yield sample SD on the same reference, not a test-set confidence interval. Missing/extra/duplicate IDs require inspection, not silent deletion.
 

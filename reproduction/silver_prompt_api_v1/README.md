@@ -1,6 +1,6 @@
 # Chinese-SkillSpan Silver 标注：公开 API 提示词包
 
-版本：silver_public_api_v1.0（2026-09-13）。文档与离线格式检查已完成；尚未调用模型、进行标注质量试验或验证代理兼容性。
+版本：silver_public_api_v1.0（2026-09-13）。本目录保存提示词、接口格式和运行记录规范。后续扩展实验通过 Codex CLI 和第三方代理使用相关公开提示词；具体已执行协议以各批次运行记录为准，不能仅凭本目录的拟定配置推断。
 
 ## 文件与使用顺序
 1. silver_prompt.txt：完整中文系统提示词。用于新 API 标注，不是原始冻结提示词。
@@ -23,7 +23,7 @@
 
 ## 正式生成与人工检查
 先用拟固定配置开展小批试运行，核验输出格式、偏移、标签及实际 token 用量。配置确定后冻结提示词、schema、程序与输入批次的校验值，再运行正式批次。
-现有 Silver 总量以实际去重有效数为准；若保留 2,451 条，补 7,549 条后共 10,000 条。原 Gold150、历史标签、实验 manifest、预测和评分器保持原样，本包不包含新数据划分。
+10,000 是扩展目标。最终论文报告的 Codex 池为 9,540 条、proxy 池为 9,646 条；实际数量按准入清单统计，见 [扩展实验](../expanded_silver/README.md)。原 Gold150、历史标签、实验 manifest、预测和评分器保持原样，本包不包含新数据划分。
 新增数据生成完成后，从新增 Silver 中按预先记录的随机方法抽取 150 条人工检查。先冻结抽样名单，不按已知错误或质量好坏替换；保留 AI 原始结果和人工修改结果。该样本评价新增部分，不能直接代表全池，也不自动成为独立盲标 Gold。用于提示词调试的样本须单独标记；若最终质量样本将其排除，应报告实际抽样框。
 adjudication_required 与格式/传输失败分开记录。前者不能自动作为最终训练监督，后者不能伪装成 confirmed_empty。需要复核时保留输入记录并单独追踪状态，不静默丢弃以凑足有效样本量。
 有效空标可以保留。最终公开句子数、人审覆盖量及监督准入数量按完成后的清单报告，不提前写成已完成。
@@ -39,4 +39,4 @@ adjudication_required 与格式/传输失败分开记录。前者不能自动作
 - Model guidance：https://developers.openai.com/api/docs/guides/latest-model
 - ESCO skill：https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/skill
 - ESCO competence：https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/competence
-OpenAI 文档核对日期：2026-09-13；无真实 API 执行。
+以上链接记录原提示词包的参考来源；不作为具体运行通过官方 API 执行的证据。实际访问渠道见扩展实验记录。

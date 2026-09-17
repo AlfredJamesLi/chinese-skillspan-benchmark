@@ -1,21 +1,27 @@
-# Current paper and companion-material index
+# Paper-to-file index
 
-Aligned to the 22-page manuscript prepared on 2026-09-13. PDF SHA-256: `6a8a45d8b025f707351957a67e1c1f141462275e5c8d0030aae10e4ad815b182`. The source manuscript remains on Overleaf; no draft paper PDF is uploaded by this synchronization. PDF page references below identify this exact local revision, not an older screenshot. Stable topic names and LaTeX labels should be preferred if pagination changes.
+This index follows the September 18 manuscript. Topic names and stable LaTeX labels identify the results even when pagination changes. The manuscript source is maintained on Overleaf.
 
-## Current paper
-
-| Paper location | Topic | Repository entry |
+| Paper item | Topic | Supporting material |
 |---|---|---|
-| Abstract, p.1 | Background / Methods / Results / Conclusion; current resource and matched Qwen result | [Current results](current_results/README.md) |
-| Tables 1–2, pp.4/6 | Related resources; data layers | [Round 2 change record](ROUND2_CHANGES.md) |
-| Table 3, p.9; Eq.(4)/Table 10, pp.16/17 | Independent coding agreement and distinct review designs | [Agreement](agreement/README.md) |
-| Eqs.(1)–(3), p.10; Table 4, p.11 | IoU, micro metrics, sample SD; training settings | [Evaluation entry](EVALUATION_ENTRY.md), [selection records](supplementary_tables/table_19.md) |
-| Table 5, p.11 | Six shared-guideline inference configurations | [Display CSV](current_results/inference.csv) |
-| Table 6, p.12 | Qwen adaptation and JobBERT supervision/selection panels | [Current results](current_results/README.md) |
-| Tables 7–9, pp.14–16 | Current handbook rules and examples | [Chinese handbook](../notes/handbooks/handbook_B_sop_v4.md), [version applicability](evaluation/version_applicability.json) |
-| Table 11, p.18 | Current Qwen per-seed results | [Per-seed CSV](current_results/qwen_runs.csv) |
-| Figure 5, p.19 | Frozen Qwen diagnostics | [Full diagnostic data](qwen_diagnostics/README.md) |
-| Appendix D, p.19 | Reproduction and versioned materials | [Evaluation entry](EVALUATION_ENTRY.md), [paper names](../PAPER_NAMES.md) |
+| Tables 1–2 | Related datasets; annotation layers | [Dataset access](../DATA_AVAILABILITY.md), [resource names](../PAPER_NAMES.md) |
+| Table 3; Appendix B, Tables 11–12 | Coding and review agreement | [Agreement guide](agreement/README.md) |
+| Table 4; Eqs. 1–3 | Training settings and scoring | [Evaluation guide](EVALUATION_ENTRY.md), [selection records](supplementary_tables/table_19.md) |
+| Table 5 | Shared-guideline inference | [Configuration results](current_results/inference.csv) |
+| Table 6 | Matched Qwen; JobBERT supervision/selection | [Current results](current_results/README.md) |
+| Table 7; Table 14 | Expanded pools and subsets | [Expanded-study guide](expanded_silver/README.md) |
+| Tables 8–10 | Annotation rules and examples | [Handbook](../notes/handbooks/handbook_B_sop_v4.md) |
+| Table 13 | Qwen per-seed results | [Per-seed CSV](current_results/qwen_runs.csv) |
+| Figures 1–2 | Workflow and annotation paths | [Figure assets](../figures/round2/README.md) |
+| Figure 3 | Annotation length and type distributions | [Current figure](../figures/round2/benchmark_profile.pdf); its source-data bundle is not included |
+| Figure 4 | Boundary and type examples | [Figure assets](../figures/round2/README.md) |
+| Figure 5 | Qwen prediction diagnostics | [Diagnostic counts](qwen_diagnostics/README.md) |
+| Appendix D | Versions, access, and reproduction | [Reproduction guide](../REPRODUCIBILITY.md) |
+
+The [agreement guide](agreement/README.md) reports which recent human-export summaries are available locally versus publicly. The expanded-study guide identifies the release limits for the final partitions and adapters.
+
+<details>
+<summary>Earlier table numbers and their retained supplementary locations</summary>
 
 ## Transferred tables: original numbers belong to different snapshots
 
@@ -34,6 +40,5 @@ Aligned to the 22-page manuscript prepared on 2026-09-13. PDF SHA-256: `6a8a45d8
 
 The seven pruned tables retain Markdown, CSV block(s) and exact TeX. All favorable and unfavorable results remain attached to their original conditions. No table number alone identifies an experiment across revisions.
 
-## Detailed prose and names
 
-[Experimental notes](experimental_notes/README.md) collect the reproduction reminders. [Detailed passages](experimental_notes/DETAILED_PASSAGES.md) and [81-entry relocation map](experimental_notes/RELOCATION_MAP.json) preserve the old and shortened wording. Complete manuscript source backups remain local. The public passage and table archives provide the transferred context. [28 name mappings](../PAPER_NAMES.md) connect reader-facing names with original model, file, sample and example identifiers.
+</details>

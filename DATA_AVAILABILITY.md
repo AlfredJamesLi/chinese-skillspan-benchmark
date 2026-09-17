@@ -1,158 +1,31 @@
-# Data availability — Chinese-SkillSpan
+# Data access and licensing
 
-This note separates **what this repository contains**, **what is already archived**, and **what must not be described as CC-BY**. Author consultation (2026-09-11): recruitment notices were **purchased from a commercial compiler** of publicly posted advertisements and **may be used for academic research**, including the peer-review archive. That is **not** an open-content licence on the original wording.
+## Available materials
 
-- **Current Zenodo snapshot (`v0.1.3`, includes the human reference set):** https://doi.org/10.5281/zenodo.22698504
-- **Previous snapshot (`v0.1.2`):** https://doi.org/10.5281/zenodo.22685143
-- **First archival snapshot (`v0.1.1`, PDF-cited, immutable):** https://doi.org/10.5281/zenodo.22288338
-- **Concept DOI (all versions):** https://doi.org/10.5281/zenodo.22288337
-- **GitHub:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark — tag `v0.1.3` matches this Zenodo **data** snapshot. Clone the **default branch** (`main`) for portable scoring and the paper-name map; do not retag `v0.1.3`.
-
----
-
-## 1. What can be publicly redistributed
-
-The following are in the public GitHub + Zenodo + Hugging Face research archive. **Job-advertisement prose is released for academic research use (Section 7); it is not CC-BY.**
-
-| Material | In this tree | Public redistribution |
+| Resource | Access | Scope |
 |---|---|---|
-| Annotation guidelines (Handbook B v4.2.14 and English summary) | `notes/handbooks/` | Yes, if authors own the text (laboratory-authored) |
-| Official scorer and evaluation scripts | `scorer/`, `scripts/` | Proposed Apache-2.0 in `LICENSE` (corresponding author to confirm). Advertised P0–P2 entry points are clone-relative; other `scripts/` may still contain laboratory paths |
-| Predefined Table 1 split *indices* / `id` lists | Embedded in `data/corpus_splits/` and gold files | IDs and split membership: yes |
-| BIO annotations (`list_of_selection_bio4`) aligned to `id` | Gold, silver, and hybrid files | Derived labels: intended for release |
-| Frozen encoder predictions (tags only + sentence text) | `data/frozen_preds/` | Predictions: yes; accompanying sentence text: same restriction as the corpus |
-| Human reference freeze (artifact Gold150) | `data/gold150_test.jsonl` | In GitHub tag / Zenodo `v0.1.3`; not in `v0.1.1` or `v0.1.2` |
-| Silver-plus B2 `v6a_nocross` train/dev | `data/silver_plus_v6a_nocross/` | Teacher labels only; same `v0.1.3` archive |
-| Committed score CSVs and this documentation | `tables/`, `docs/`, `release/` | Yes |
-| JobBERT-zh weights (3M DAPT + historical V4 CRF) | https://huggingface.co/AlfredJames/jobbert-zh | Public model + card; Hub field stays `license: other` (not CC-BY) |
-| JobBERT-zh 1M weights (different DAPT; not a replacement) | https://huggingface.co/AlfredJames/jobbert-zh-1m | Public contrast checkpoint; not in Zenodo `v0.1.1` |
-| JobBERT-zh v6a weights (current student; human-reference B2) | https://huggingface.co/AlfredJames/jobbert-zh-v6a | Public current checkpoint; do not rank 0.5536 against 0.4331 |
-| Raw recruitment CSV / XLSX | Present in the **working** tree (`应届生招聘大数据*.csv`, `人工智能招聘大数据2025年.xlsx`) | **Do not upload** vendor bulk dumps; the research archive uses the processed jsonl |
-| Continued-pretraining sentence dumps | `data/jobbert_*_sents.jsonl` | Same restriction as raw ads |
-| `output/` checkpoints, caches, virtualenvs | Local only | Do not archive |
+| Core dataset and guidelines | [Zenodo v0.1.3](https://doi.org/10.5281/zenodo.22698504) | Original corpus, human reference, and released B2 files |
+| Human reference | [Dataset guide](data/gold150/README.md) | 150 sentences, 663 spans |
+| Qwen B2 supervision | [Training/development files](data/silver_plus_v6a_nocross/README.md) | 2,150 / 169 records |
+| Evaluation code and saved results | [Reproduction guide](REPRODUCIBILITY.md) | Protocol-specific scoring and supporting analyses |
+| JobBERT checkpoints | [Model guide](docs/models.md) | Initialization and B2 continuation; default continuation is seed 42 |
+| Expanded Silver | [Study guide](reproduction/expanded_silver/README.md) | Partial annotations, source-selection records, and result snapshots; complete final 9,540/9,646 partitions are not released |
+| Qwen LoRA adapters | Not publicly released | Needed for a complete inference rerun |
 
----
+The 500-sentence human coverage reported in the current manuscript combines distinct coding and review cohorts. It is not a single 500-sentence Gold dataset. [Agreement documentation](reproduction/agreement/README.md) separates the designs and identifies the supplied export evidence.
 
-## 2. Annotations, IDs, splits, statistics, and derived data
+## Which archive version?
 
-Included in the candidate public dataset:
+Use **v0.1.3** for the human reference and B2 files. Earlier [v0.1.1](https://doi.org/10.5281/zenodo.22288338) and [v0.1.2](https://doi.org/10.5281/zenodo.22685143) do not include those additions. The [concept DOI](https://doi.org/10.5281/zenodo.22288337) groups the versions. Later expanded-Silver experiments on GitHub are outside the immutable v0.1.3 archive.
 
-- Sentence `id` (e.g. `1802-s0004`) and optional `global_id` / `sentence_order`
-- Character-level `tokens` and `list_of_selection_bio4` (tags `O`, `B-L`, `I-L`, `B-K`, `I-K`, `B-S`, `I-S`, `B-T`, `I-T`)
-- Auxiliary fields present on Gold v2: `skill_spans`, `tags_skill`, `list_of_selection` (untyped B/I), `source_domain`, `title`, `_canon`
-- Split membership: train / dev / test for the 22,840-sentence Table 1 corpus
-- V4 hybrid metadata (`hybrid_source`: `simhuman980_cws` or `sop_cws`)
-- Silver train/dev for V4 CRF
-- Frozen prediction tag sequences for Chinese JobBERT 1M/3M v4
-- Human reference freeze (`source_id` + Doccano `label`; artifact Gold150) and Silver-plus B2 BIO teacher files
-- Score tables with SHA-256-backed gold
+## Reuse conditions
 
-**Not included:** ESCO concept IDs, applicant CVs, annotator identities beyond Doccano display names already in internal packs, API keys, Qwen LoRA adapters.
+The authors report research-use permission for recruitment notices purchased from a commercial compiler of publicly posted advertisements. This permission is distinct from an open-content licence for the original wording. Source text, software, and model weights have different terms:
 
-**Statistics that must be stated together, not collapsed:**
+- **Software and original documentation:** consult [LICENSE](LICENSE) for the repository's proposed Apache-2.0 notice and its scope.
+- **Advertisement wording:** no general CC-BY grant is made by the authors. Do not treat public download access as unrestricted redistribution permission.
+- **Model weights:** the Hugging Face cards currently use `license: other`.
 
-| Quantity | Value | Source |
-|---|---:|---|
-| Corpus sentences (Table 1) | 22,840 = 17,460 + 2,143 + 3,237 | `data/corpus_splits/` |
-| Same *N*, other assignment | 16,350 + 2,268 + 4,222 | `data/repartition_v1` (not main gold) |
-| Evaluation unique IDs (historical V4 hybrid / Gold v2) | 2,601 | derived / historical protocol |
-| Raw Doccano Gold rows | 2,676 | Freeze protocol |
-| Human overlay (page 1) | 200 | `data/human_gold_page1_200.jsonl` |
-| Human reference set (current eval) | 150 = challenge cohort + calibration cohort | `data/gold150_test.jsonl` (Zenodo `v0.1.3`) |
-| Silver-plus B2 `v6a_nocross` | 2,150 / 169 | `data/silver_plus_v6a_nocross/` (teacher; Zenodo `v0.1.3`) |
+**Metadata discrepancy:** Zenodo v0.1.3 currently displays `cc-by-4.0`, while the repository's source-text notice does not grant that licence. This discrepancy requires author clarification. This documentation update does not change or grant data rights.
 
-Source labels in the files: `人工智能招聘`, `应届生招聘`, `阿里云公开数据集`, `事业单位招聘`.
-
----
-
-## 3. Where the code will be hosted
-
-- **Public GitHub:** https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (visibility **public**, verified 2026-09-11). Reviewers who need clone-relative scoring (`scripts/cnss_paths.py`, human-reference `convert_gold150_to_bio.py`, historical `eval_hybrid_cws_simhuman.py --paper-main-only --use-frozen`) should clone **default branch `main`**, not only Release `v0.1.3`.
-- **Versioned GitHub Release tag:** `v0.1.0` (first public snapshot); `v0.1.1` (Zenodo citation-metadata fix); `v0.1.2` (2026-09-10 snapshot); `v0.1.3` (2026-09-11; human reference freeze + Silver-plus B2; commit `4e200bf`). Tag `v0.1.3` does **not** contain the later portable P0–P2 scripts, `LICENSE`, or the stripped laboratory-notes tree. Do **not** retag it. Mint **`v0.1.4`** when PeerJ must reproduce from a frozen zip that includes those scripts (checklist: `docs/V0.1.4_CHECKLIST.md`).
-
----
-
-## 4. Where the archived dataset version will be hosted
-
-- **Zenodo version DOI (`v0.1.3`, current archive; includes the human reference set):** https://doi.org/10.5281/zenodo.22698504 (record https://zenodo.org/records/22698504). Related identifier: `…/tree/v0.1.3`.
-- **Zenodo version DOI (`v0.1.2`):** https://doi.org/10.5281/zenodo.22685143 (record https://zenodo.org/records/22685143). Does **not** contain the human reference freeze.
-- **Zenodo version DOI (`v0.1.1`, first archival snapshot; PDF-cited):** https://doi.org/10.5281/zenodo.22288338 (record https://zenodo.org/records/22288338). This DOI is **immutable** and will always show `…/tree/v0.1.1`.
-- **Zenodo concept DOI (all versions / latest):** https://doi.org/10.5281/zenodo.22288337
-- **Hugging Face dataset mirror:** not published. Reviewers who want the human reference set should use GitHub Release `v0.1.3` or DOI `10.5281/zenodo.22698504`, not only `v0.1.1` / `v0.1.2`.
-- Reviewers should use **GitHub**, **Hugging Face (model)**, and **Zenodo** only. Do not list a Google Sites or Drive page in the PeerJ form.
-- Do not describe the human reference set as part of DOI `10.5281/zenodo.22288338` or `10.5281/zenodo.22685143`. See `notes/SILVER_PLUS_EXTENSION_PROVENANCE.md` and `data/gold150/README.md`.
-
----
-
-## 5. Where the model will be hosted
-
-Three public Hugging Face repositories. Do **not** rank the human-reference v6a score against the paper-main V4 hybrid 2601 encoder row in one sentence.
-
-- **Paper-main JobBERT-zh (3M V4):** https://huggingface.co/AlfredJames/jobbert-zh (**public**, verified 2026-09-04). Encoder (`model.safetensors`) and V4 CRF (`crf/best.pt`). This is the manuscript encoder URL.
-- **JobBERT-zh 1M (different DAPT, same V4 protocol):** https://huggingface.co/AlfredJames/jobbert-zh-1m (**public**, verified 2026-09-07). Contrast / ablation encoder. Not a replacement for the 3M paper-main row. Not in Zenodo `v0.1.1`.
-- **JobBERT-zh v6a (human-reference B2 CRF on the same 3M encoder):** https://huggingface.co/AlfredJames/jobbert-zh-v6a (**public**, verified 2026-09-09). Later human-reference continuation. Not a replacement for the paper-main encoder. Not in Zenodo `v0.1.1`.
-- Git still does not store weights. Packaging notes: `release/huggingface-model/` (3M) and `release/huggingface-model-v6a/`. There is no `release/huggingface-model-1m/` tree in this repository; the 1M card lives on the Hub.
-- Base initialisation: `hfl/chinese-roberta-wwm-ext` (Hugging Face card metadata: Apache-2.0). JobBERT-zh family cards remain `other` until job-ad text rights are confirmed.
-- **Qwen2.5-14B-Instruct** (local laboratory weights) and any shared-guidelines LoRA are **not** published on those Hub repos. Do not add human-reference LLM scores to the JobBERT cards.
-
----
-
-## 6. Manuscript preprint versus data/code/model
-
-This paper does not yet have a public preprint identifier. **An arXiv URL is not a substitute for the dataset, code, or model repository.**
-
-Do **not** use sister-paper identifiers `2604.21525` or `2604.23009` as this paper’s preprint.
-
----
-
-## 7. Copyright, platform terms, privacy, and redistribution of advertisement text
-
-**Author-confirmed (2026-09-11).** Recruitment notices in this corpus were **purchased from a commercial third-party compiler**. That compiler collected the notices from **publicly posted** recruitment pages. After consultation, the authors may use the corpus for **academic research**, including the GitHub / Zenodo / Hugging Face peer-review archive.
-
-This does **not** mean:
-
-- the authors obtained a CC-BY (or any other open-content) licence on the original wording;
-- Zenodo’s default record label `cc-by-4.0` is an author licence decision (it is the GitHub–Zenodo hook default);
-- the four source platforms issued a separate written waiver;
-- vendor bulk CSV / XLSX dumps should be uploaded.
-
-This working tree contains:
-
-- Full sentence strings and job `title` fields (often including employer names) inside gold, silver, corpus splits, frozen predictions, human overlay, the human reference freeze, and Silver-plus files
-- Original bulk exports (`应届生招聘大数据*.csv`, `人工智能招聘大数据2025年.xlsx`) — **keep local; do not add to the public archive**
-
-A proposed repository notice is in `LICENSE` (Apache-2.0 for software; job-advertisement wording is **not** CC-BY). Therefore:
-
-- **Do not claim** that the full raw advertisement text is openly licensed (CC-BY or otherwise).
-- **Do not upload** the vendor CSV / XLSX source dumps.
-- A restricted release (IDs + BIO tags + hashes, text on request) is **not** required under the research-use consultation above; it remains an option only if a later rights review reverses that consultation.
-
-Privacy: advertisements may include workplace locations and organisational names. They are not a curated personal-data (CV) corpus. A separate personal-data review of titles and sentences is still recommended before treating the text as free of identifiers.
-
----
-
-## 8. Proposed PeerJ Data Availability Statement
-
-Use this wording in the PeerJ form. The clickable “available at” should be **`v0.1.3`** plus the concept DOI. Keep **`v0.1.1`** as the first archival snapshot (do not delete it). Do **not** put SHA-256 values in the running paragraph; they live in `REPRODUCIBILITY.md`.
-
-> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22698504 (version v0.1.3; concept DOI https://doi.org/10.5281/zenodo.22288337). Earlier snapshots are https://doi.org/10.5281/zenodo.22685143 (version v0.1.2) and https://doi.org/10.5281/zenodo.22288338 (version v0.1.1). The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark (default branch; portable scoring entry points after 2026-09-11). The paper-main JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh. Two later public model repositories are available at https://huggingface.co/AlfredJames/jobbert-zh-1m (1M DAPT contrast) and https://huggingface.co/AlfredJames/jobbert-zh-v6a (human-reference B2 continuation); they do not replace the paper-main encoder. The 150-sentence human reference set (`data/gold150_test.jsonl`) and Silver-plus B2 train/development files (`data/silver_plus_v6a_nocross/`) are included in v0.1.3 and are not in Zenodo v0.1.1 or v0.1.2. Qwen LoRA adapters are not published. Recruitment notices were purchased from a commercial compiler of publicly posted advertisements; after consultation, academic research use of this corpus, including the peer-review archive, is permitted. Original advertisement wording is not licensed CC-BY.
-
-Longer form (optional methods paragraph):
-
-> Chinese-SkillSpan (22,840 sentences; evaluation gold: 2,601 unique IDs under the V4 hybrid protocol) and the official scorer `cnss-lskt-1.2.0` are archived at https://doi.org/10.5281/zenodo.22698504 (v0.1.3). Earlier snapshots are https://doi.org/10.5281/zenodo.22685143 (v0.1.2) and https://doi.org/10.5281/zenodo.22288338 (v0.1.1). The source code is at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The paper-main Chinese JobBERT (JobBERT-zh) is distributed at https://huggingface.co/AlfredJames/jobbert-zh. Later public checkpoints are at https://huggingface.co/AlfredJames/jobbert-zh-1m and https://huggingface.co/AlfredJames/jobbert-zh-v6a; they are not substitutes for the paper-main encoder. Recruitment notices were purchased from a commercial compiler of publicly posted advertisements; after consultation, academic research use of this corpus, including the peer-review archive, is permitted. Original advertisement wording is not licensed CC-BY. This work was supported by the National Social Science Fund of China, Grant No. 21BGL142.
-
-Optional human-reference sentence (still **no** SHA-256 in the running paragraph; 0911 PDF names). Use `\url` in TeX:
-
-> The historical first 200-sentence human analysis set, `data/human_gold_page1_200.jsonl`, is distinct from the 150-sentence human reference set. The supervision study uses `gold150_test.jsonl` and versioned Silver-plus train/development manifests; its artifact identifiers, checksums, reporting scope, and release status are listed in Appendix D and the repository inventory. Silver-plus records, including those reviewed by humans, retain their role as teacher supervision rather than additional human-reference evaluation labels. The historical Zenodo v0.1.1 release did not include the human reference set.
-
----
-
-## 9. Authors, corresponding author, and funding
-
-Author order: Guojing Li, Zichuan Fu, Junyi Li, Wenlin Zhang, Kaifeng Guo, Jinning Yang, Jingtong Gao, Xiangyu Zhao.
-
-- Guojing Li: Renmin University of China and City University of Hong Kong (equal contribution with Zichuan Fu).
-- Zichuan Fu, Junyi Li, Wenlin Zhang, Kaifeng Guo, Jinning Yang, Jingtong Gao, Xiangyu Zhao: City University of Hong Kong.
-- Corresponding author: Xiangyu Zhao (`xianzhao@cityu.edu.hk`).
-
-National Social Science Fund of China, Grant No. **21BGL142**.
+Original vendor CSV/XLSX exports are not part of the public data package. Questions about additional artifacts or permitted reuse should be directed to the corresponding author identified in the project citation metadata. Availability on request is not promised for artifacts that have no documented access arrangement.

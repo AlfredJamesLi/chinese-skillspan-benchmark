@@ -1,120 +1,59 @@
 # Chinese-SkillSpan
 
-Chinese-SkillSpan is a benchmark for competency span extraction from Chinese job advertisements. It combines an operational Chinese annotation guide, a frozen human reference, teacher supervision and companion evaluation studies. The manuscript is under review at PeerJ Computer Science; its source is maintained on Overleaf. This repository does not host a draft PDF.
+A benchmark for extracting competency spans from Chinese job advertisements, with annotation guidelines, Silver supervision, a human reference set, and evaluation tools.
 
-**13 September 2026 paper alignment:** [paper/companion index](reproduction/PAPER_INDEX.md) · [reproduction entry](REPRODUCIBILITY.md) · [names and original identifiers](PAPER_NAMES.md) · [Round 2 changes](reproduction/ROUND2_CHANGES.md).
+**[Data and access](DATA_AVAILABILITY.md) · [Reproduce results](REPRODUCIBILITY.md) · [Models](docs/models.md) · [Paper-to-file index](reproduction/PAPER_INDEX.md)**
 
 ![Chinese-SkillSpan workflow](figures/round2/workflow.png)
 
-The author-selected workflow distinguishes corpus/annotation and model/evaluation stages. See [final figure assets](figures/round2/README.md).
+## What is included?
 
-## Resource and current results
+| Component | Size | Use |
+|---|---:|---|
+| Original corpus | 22,840 sentences | Four recruitment collections |
+| Human reference | 150 sentences, 663 spans | Evaluation against human annotations |
+| Original Silver-plus pool | 2,451 records | Teacher-generated supervision |
+| Released Qwen B2 split | 2,150 training / 169 development | Matched Qwen adaptation study |
+| Expanded Codex pool | 9,540 admitted sentences | Later experiment; final partitions are not fully released |
+| Human coding and review | 500 unique sentences | Reference construction and quality checks; not 500 Gold test sentences |
 
-| Layer | Scope | Purpose |
-|---|---|---|
-| Original corpus | 22,840 sentences; original split 17,460/2,143/3,237 | Four recruitment collections; corpus annotations are not 22,840 current human gold sentences |
-| Human reference | 150 sentences, 663 spans; 50 calibration + 100 challenge | Frozen evaluation targets, separately adjudicated |
-| Silver-plus pool | 2,451 teacher-supervision records | Initial review and later teacher annotation; manifest-specific admission |
-| Qwen B2 supervision | 2,150 train / 169 dev | Released teacher labels for the matched adaptation study |
-| Primary JobBERT comparison | 2,156 train / 169 dev | Matched B1/B2 texts, different training/development labels |
+The task uses flat character spans with four types: language (L), knowledge (K), occupational skills (S), and transversal competences (T). The categories are ESCO-informed; the task does not assign ESCO concept IDs.
 
-| Current comparison | Typed exact micro-F1 |
-|---|---:|
-| Qwen without adapter | 0.3612 |
-| Qwen B2 LoRA | 0.5403 ± 0.0354 |
-| JobBERT earlier labels (B1) | 0.1422 ± 0.0138 |
-| JobBERT revised labels (B2) | 0.5536 ± 0.0054 |
+## Get started
 
-Student summaries use seeds 42/43/44 and sample SD. Qwen compares adaptation under a fixed inference protocol; JobBERT compares supervision and development-based checkpoint selection. Six shared-guideline inference configurations now appear in the paper's main Table 5; [their values](reproduction/current_results/inference.csv) and [Qwen per-seed values](reproduction/current_results/qwen_runs.csv) are available separately. The human reference was used during guideline development; it is not a newly collected blind test.
+1. **Use the data:** download the [v0.1.3 archive](https://doi.org/10.5281/zenodo.22698504), then read the [human-reference guide](data/gold150/README.md) and [annotation handbook](notes/handbooks/handbook_B_sop_v4.md).
+2. **Inspect results:** open the [paper-to-file index](reproduction/PAPER_INDEX.md). It separates shared-guideline inference, student adaptation, and expanded-Silver experiments.
+3. **Reproduce a score:** follow the [evaluation guide](reproduction/EVALUATION_ENTRY.md) with the matching protocol and saved predictions.
+4. **Use a model:** see the [JobBERT model guide](docs/models.md). The encoder and CRF checkpoint have separate loading requirements.
 
-## Task and materials
+## Main student comparisons
 
-Recover flat character spans with types L (language), K (knowledge), S (occupational skills), and T (transversal competences). The inventory is ESCO-informed at type level; it does not assign ESCO concept IDs. Typed exact F1 is primary; relaxed F1 permits same-type span overlap at IoU >= 0.5.
+| Study | Comparison | Typed exact F1 on the human reference |
+|---|---|---:|
+| Qwen adaptation | No adapter → B2 LoRA | 0.3612 → 0.5403 ± 0.0354 |
+| JobBERT supervision and selection | Earlier labels → revised labels | 0.1422 ± 0.0138 → 0.5536 ± 0.0054 |
 
-- [Human reference and names](data/gold150/README.md)
-- [Released Qwen supervision](data/silver_plus_v6a_nocross/README.md)
-- [Silver annotation API prompt and configuration](reproduction/silver_prompt_api_v1/README.md) | [Download ZIP](reproduction/silver_prompt_api_v1.zip): new public protocol with original prompt archives; API/proxy execution has not yet been tested.
-- [Current Chinese handbook](notes/handbooks/handbook_B_sop_v4.md)
-- [Seven transferred supplementary tables](reproduction/supplementary_tables/README.md)
-- [Detailed output outcomes](reproduction/output_outcomes/README.md)
-- [Qwen diagnostic figure data](reproduction/qwen_diagnostics/README.md)
-- [Coding agreement](reproduction/agreement/README.md)
-- [Experimental notes and 81 passage mappings](reproduction/experimental_notes/README.md)
-- [Earlier historical results](reproduction/historical_results/README.md)
+Training summaries are means and sample standard deviations across seeds 42, 43, and 44. These are two different experimental designs. Expanded-pool results and their access requirements are listed in the [expanded-study guide](reproduction/expanded_silver/README.md).
 
-The full model names and recorded API/file identifiers remain in [PAPER_NAMES.md](PAPER_NAMES.md). DeepSeek non-thinking and thinking are distinct configurations of the same recorded model. GPT proxy is a display name for the recorded proxy configuration, not independent verification of provider routing.
+## Downloads and models
 
-## Reproduction
-
-Start with [REPRODUCIBILITY.md](REPRODUCIBILITY.md). The current entry separates reading committed results, scoring compatible frozen predictions, and rerunning inference/training. The [file inventory](reproduction/evaluation/materials_inventory.json) distinguishes files actually found in the public tree from local revision evidence. Qwen adapters and some historical implementation bindings remain unavailable.
-
-```bash
-python reproduction/verify_companion.py
-```
-
-This checks the companion package without model calls or rescoring. Existing historical commands and their complete context are preserved in [the 0911 reproduction guide](docs/archive/REPRODUCIBILITY_0911.md); command names containing `paper-main` there refer to the earlier 2,601-record study. Frozen data, predictions and scorer files retain their original paths and contents.
-
-## Public access
-
-| Resource | Link |
+| Resource | Entry |
 |---|---|
-| Current data archive (v0.1.3) | https://doi.org/10.5281/zenodo.22698504 |
-| Concept DOI | https://doi.org/10.5281/zenodo.22288337 |
-| JobBERT initialization: domain-adapted encoder + historical CRF | https://huggingface.co/AlfredJames/jobbert-zh |
-| JobBERT B2 continuation; default seed 42 | https://huggingface.co/AlfredJames/jobbert-zh-v6a |
-| Availability, licensing and prior snapshots | [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md) |
+| Versioned data archive | [Zenodo v0.1.3](https://doi.org/10.5281/zenodo.22698504) |
+| All archive versions | [Zenodo concept DOI](https://doi.org/10.5281/zenodo.22288337) |
+| JobBERT-zh initialization | [Hugging Face model](https://huggingface.co/AlfredJames/jobbert-zh) |
+| JobBERT-zh B2 continuation | [Hugging Face model](https://huggingface.co/AlfredJames/jobbert-zh-v6a) |
 
-The default seed-42 checkpoint is not the three-seed mean. This documentation commit does not retag v0.1.3 or create a Zenodo deposit. Existing source-text redistribution and privacy requirements remain in [LICENSE](LICENSE) and [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md).
+The archive covers the earlier released benchmark components. Later expansion materials on GitHub are partial; complete expanded partitions and Qwen adapters are not supplied. [Availability and licensing](DATA_AVAILABILITY.md) describes what readers can obtain and reuse.
 
----
+## Citation
 
-## Dataset citation (v0.1.3)
+Use the metadata in [CITATION.cff](CITATION.cff) and cite [Zenodo v0.1.3](https://doi.org/10.5281/zenodo.22698504) for that archived dataset version. The manuscript is maintained separately on Overleaf; this repository does not distribute a draft PDF.
 
-```bibtex
-@misc{li2026chineseskillspan,
-  title        = {Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements},
-  author       = {Li, Guojing and Fu, Zichuan and Li, Junyi and Zhang, Wenlin and Guo, Kaifeng and Yang, Jinning and Gao, Jingtong and Zhao, Xiangyu},
-  year         = {2026},
-  howpublished = {Zenodo},
-  doi          = {10.5281/zenodo.22698504},
-  url          = {https://github.com/AlfredJamesLi/chinese-skillspan-benchmark}
-}
-```
+Related English resource: Zhang et al. (2022), [SkillSpan](https://aclanthology.org/2022.naacl-main.366/).
 
-The dataset citation metadata above is retained for the existing archive. Current manuscript author metadata is maintained on Overleaf; this synchronization does not alter release authorship.
+## Responsible use
 
-Related English dataset (cite, do not host the PDF here): Zhang et al., 2022, *SkillSpan: Hard and Soft Skill Extraction from English Job Postings*, NAACL-HLT, https://aclanthology.org/2022.naacl-main.366/.
+This resource supports analysis of recruitment text, not measurement or profiling of individual applicants. The selected human reference is not a random population sample. Source wording has separate reuse conditions from the software; see [LICENSE](LICENSE) and [data access](DATA_AVAILABILITY.md).
 
-Machine-readable metadata: [`CITATION.cff`](CITATION.cff).
-
-**Existing dataset citation authors (v0.1.3).** Guojing Li<sup>1,2,†</sup>, Zichuan Fu<sup>2,†</sup>, Junyi Li<sup>2</sup>, Wenlin Zhang<sup>2</sup>, Kaifeng Guo<sup>2</sup>, Jinning Yang<sup>2</sup>, Jingtong Gao<sup>2</sup>, Xiangyu Zhao<sup>2</sup>.
-
-1. Renmin University of China  
-2. City University of Hong Kong  
-† Equal contribution.
-
-Corresponding author: Xiangyu Zhao (`xianzhao@cityu.edu.hk`).
-
----
-
-## Licence
-
-A proposed split notice is in [`LICENSE`](LICENSE): **Apache-2.0** for the official scorer, clone-relative scripts, and original documentation; **not CC-BY** for job-advertisement wording. Corresponding author confirmation is still required. JobBERT-zh remains `other` on Hugging Face until text rights are confirmed. A Zenodo GitHub hook may label a record `cc-by-4.0` by platform default; that is not this grant. See [DATA_AVAILABILITY.md](DATA_AVAILABILITY.md).
-
----
-
-## Limitations
-
-- Labels are flat and non-overlapping. Nested or crossing spans are out of scope.
-- The current evaluation is a frozen 150-sentence human reference set, not a random draw from all 3,237 test sentences.
-- The V4 hybrid 2,601 file is a derived / historical protocol, not a completed human Doccano gold.
-- Job advertisements can contain employer names and workplace locations. Do not scrape, republish, or re-identify individuals.
-- Domain shift across the four sources is large.
-- Do not use the resource to profile applicants, infer protected attributes, or claim ESCO concept-ID accuracy.
-
----
-
-## Acknowledgements
-
-This work was supported by the National Social Science Fund of China, Grant No. **21BGL142**.
-
+Supported by the National Social Science Fund of China, Grant No. 21BGL142.
