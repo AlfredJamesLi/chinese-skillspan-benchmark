@@ -12,6 +12,10 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ---
 
+## Unreleased notes (2026-09-17 Codex-2500 Table H)
+
+- Overleaf paste pack `docs/overleaf_paste_20260915/` now includes the Codex-swap pooled Qwen Gold150 cell **0.5854 / 0.7032** (train 8,842; \(n_{\mathrm{keep}}=9{,}540\); seed 42; epoch 1). Proxy pool 9,646 remains **0.5966 / 0.7126**. JobBERT Codex-swap footnote **0.2317**. Snapshots: `results_snapshots/qwen_pooled_9540_codex2500_gold150_20260916.json` and `results_snapshots/jobbert_pooled_9540_codex2500_gold150_20260916.json`. Appendix only; not GPT distillation. Does **not** replace Table A 0.4331, Table B 0.5536±0.0054, or Table C 0.1215±0.0092. Does not add new silver jsonl.
+
 ## Unreleased notes (2026-09-15 Overleaf paste)
 
 - Overleaf paste pack: `docs/overleaf_paste_20260915/`. DAS short paragraph cites Zenodo v0.1.3 for Gold150 / v6a_nocross. Table C footnote records shared-handbook LoRA 0.5403±0.0354 as a different protocol from JSON-offset 0.1215±0.0092. Pooled-silver additional baseline is drafted as a benchmark baseline, not GPT distillation. Does **not** replace Table A 0.4331, Table B 0.5536±0.0054, or Table C 0.1215±0.0092. Does not add new silver jsonl.

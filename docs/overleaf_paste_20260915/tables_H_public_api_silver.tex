@@ -15,7 +15,8 @@ Wave3 only & 1579 & Codex CLI & 0.5853 & 0.6991 \\
 Wave1+2 only & 3159 & Codex CLI & 0.5745 & 0.6951 \\
 Public-API keep, full-dev select & 7117 & mixed channel & 0.5883 & 0.7099 \\
 Public-API keep, TVT & 7117 & mixed channel & 0.5732 & 0.7087 \\
-Pooled keep (v6a unique + public-API) & 8943 & two protocols & 0.5966 & 0.7126 \\
+Pooled keep, run2500 proxy & 8943 & two protocols & 0.5966 & 0.7126 \\
+Pooled keep, run2500 Codex & 8842 & two protocols & 0.5854 & 0.7032 \\
 \hline
 \end{tabular}
 
@@ -23,6 +24,6 @@ Pooled keep (v6a unique + public-API) & 8943 & two protocols & 0.5966 & 0.7126 \
 {\small Protocol: frozen shared handbook, occurrence schema, $k{=}0$. Gold150 SHA-256 \texttt{ca8db0bc\ldots} was not used for gradients or selection.
 Wave3 Codex vs proxy is a labelling-channel contrast on the same 1,816 IDs, not a new test set.
 Public-API keep $N{=}7{,}676$ labelled sentences after dropping \texttt{adjudication\_required} (7,117 / 559).
-The pooled baseline concatenates unique v6a\_nocross B2 sentences with that keep set ($n_{\mathrm{keep}}{=}9{,}646$; train/val/test $8{,}943/351/352$). Checkpoint = epoch 1 on silver val (patience 2). Do not write ``10,000''. Codex relabel of the 2,500-sentence subset is still pending; do not replace the pooled row with a second number yet.
-JobBERT-zh 3M CRF on the 7,117 public-API keep set is Gold150 exact $0.2367\pm0.0015$ (seeds 42/43/44); on the pooled 8,943-sentence train it is $0.2416$ (seed 42). Neither replaces Table~\ref{tab:gold150-jobbert}.}
+The first pooled row concatenates unique v6a\_nocross B2 with public-API keep while run2500 still uses website-proxy labels ($n_{\mathrm{keep}}{=}9{,}646$; train 8,943). The Codex swap replaces those 2,459 proxy keep rows with 2,353 Codex-CLI keep rows ($n_{\mathrm{keep}}{=}9{,}540$; train 8,842). Both Qwen checkpoints are epoch 1 (patience 2). Do not write ``10,000''.
+JobBERT-zh 3M CRF on the 7,117 public-API keep set is Gold150 exact $0.2367\pm0.0015$ (seeds 42/43/44); on the proxy pooled 8,943-sentence train it is $0.2416$ (seed 42); on the Codex-swap 8,842-sentence train it is $0.2317$ (seed 42). None of these replace Table~\ref{tab:gold150-jobbert}.}
 \end{table}

@@ -14,7 +14,7 @@ Frozen SOP-extract outputs already exist for the 150 Gold IDs (they sit inside h
 
 Stripping the watermark and retraining did not raise the official cells (JobBERT B2 0.5509±0.0054; Qwen P0 0.1071±0.0102). The cleaned list also dropped empty-ad rows and five punctuation NFC collisions, so this is not a pure watermark ablation.
 
-Public-API silver appendix rows are seed-42 occurrence LoRA on later subsets. They are extra baselines, not a replacement for Table B or Table C, and not a GPT-distillation result. The pooled 9,646-sentence Qwen student is Gold150 exact 0.5966 (relaxed 0.7126); JobBERT on the same train is 0.2416. Codex relabel of the 2,500-sentence subset is still pending.
+Public-API silver appendix rows are seed-42 occurrence LoRA on later subsets. They are extra baselines, not a replacement for Table B or Table C, and not a GPT-distillation result. The proxy pooled 9,646-sentence Qwen student is Gold150 exact 0.5966 (relaxed 0.7126); JobBERT on the same train is 0.2416. The Codex-2500 swap (\(n_{\mathrm{keep}}=9{,}540\); train 8,842) is Gold150 exact 0.5854 (relaxed 0.7032); JobBERT on that train is 0.2317. The swap does not raise the pooled Qwen cell.
 
 ## Abstract Conclusions (optional extra sentence; do not add numbers to Results)
 

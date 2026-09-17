@@ -17,4 +17,4 @@ Subheadings must be bold, followed by a period.
 
 ---
 
-**Do not add to Results:** Concept Accuracy, Time-OOD, “label quality far exceeds data size”, P1/kNN F1, peel-rerun F1, SOP-on-Gold150 teacher F1, shared-handbook 0.5403, public-API Silver Wave3 / Wave1–2 / 7117 / pooled-9646 F1, or a single SOTA ranking of 0.5536 vs 0.4331 vs 0.6365 vs 0.5403 vs 0.58. P1 / SOP-on-Gold150 / peel / public-API silver go in the appendix only. Shared-handbook 0.5403 belongs in Methods / Reproducibility as a separate protocol, not in Abstract Results.
+**Do not add to Results:** Concept Accuracy, Time-OOD, “label quality far exceeds data size”, P1/kNN F1, peel-rerun F1, SOP-on-Gold150 teacher F1, shared-handbook 0.5403, public-API Silver Wave3 / Wave1–2 / 7117 / pooled-9646 / pooled-9540 F1, or a single SOTA ranking of 0.5536 vs 0.4331 vs 0.6365 vs 0.5403 vs 0.58. P1 / SOP-on-Gold150 / peel / public-API silver go in the appendix only. Shared-handbook 0.5403 belongs in Methods / Reproducibility as a separate protocol, not in Abstract Results.
