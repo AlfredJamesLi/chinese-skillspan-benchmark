@@ -1,6 +1,6 @@
 # Evaluation entry for the current manuscript
 
-Use this entry for shared-guideline inference, student comparisons, and Qwen diagnostics (Tables 5, 6, 13 and Figure 5). Expanded-pool results are documented in [their study guide](expanded_silver/README.md). The [paper index](PAPER_INDEX.md) distinguishes historical tables. Read [paper names](../PAPER_NAMES.md) and [experimental notes](experimental_notes/README.md) before selecting artifacts.
+Use this entry for shared-guideline inference, fine-tuning comparisons, and Qwen diagnostics (Tables 5, 6, 13 and Figure 5). Expanded-pool results are documented in [their study guide](expanded_silver/README.md). The [paper index](PAPER_INDEX.md) distinguishes historical tables. Read [paper names](../PAPER_NAMES.md) and [experimental notes](experimental_notes/README.md) before selecting artifacts.
 
 ## 1. Select the comparison
 

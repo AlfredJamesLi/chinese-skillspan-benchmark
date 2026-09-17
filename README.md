@@ -12,21 +12,23 @@ A benchmark for extracting competency spans from Chinese job advertisements, wit
 |---|---:|---|
 | Original corpus | 22,840 sentences | Four recruitment collections |
 | Human reference | 150 sentences, 663 spans | Evaluation against human annotations |
-| Original Silver-plus pool | 2,451 records | Teacher-generated supervision |
+| Original Silver-plus pool | 2,451 records | LLM-generated labels |
 | Released Qwen B2 split | 2,150 training / 169 development | Matched Qwen adaptation study |
-| Expanded Codex pool | 9,540 admitted sentences | Later experiment; final partitions are not fully released |
+| Expanded Codex pool | 9,540 retained sentences | Later experiment; final partitions are not fully released |
 | Human coding and review | 500 unique sentences | Reference construction and quality checks; not 500 Gold test sentences |
+
+Terminology follows the [annotation and training guide](docs/terminology.md).
 
 The task uses flat character spans with four types: language (L), knowledge (K), occupational skills (S), and transversal competences (T). The categories are ESCO-informed; the task does not assign ESCO concept IDs.
 
 ## Get started
 
 1. **Use the data:** download the [v0.1.3 archive](https://doi.org/10.5281/zenodo.22698504), then read the [human-reference guide](data/gold150/README.md) and [annotation handbook](notes/handbooks/handbook_B_sop_v4.md).
-2. **Inspect results:** open the [paper-to-file index](reproduction/PAPER_INDEX.md). It separates shared-guideline inference, student adaptation, and expanded-Silver experiments.
+2. **Inspect results:** open the [paper-to-file index](reproduction/PAPER_INDEX.md). It separates shared-guideline inference, supervised adaptation, and expanded-Silver experiments.
 3. **Reproduce a score:** follow the [evaluation guide](reproduction/EVALUATION_ENTRY.md) with the matching protocol and saved predictions.
 4. **Use a model:** see the [JobBERT model guide](docs/models.md). The encoder and CRF checkpoint have separate loading requirements.
 
-## Main student comparisons
+## Main fine-tuning comparisons
 
 | Study | Comparison | Typed exact F1 on the human reference |
 |---|---|---:|

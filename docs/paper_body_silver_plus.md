@@ -8,13 +8,13 @@ Human reference freeze (artifact Gold150) SHA-256: `ca8db0bc386c24543fec845d42ea
 
 **Names (0911 PDF).** Write **human reference set**, **challenge cohort**, and **calibration cohort** in manuscript body. Keep file `gold150_test.jsonl` and Appendix D aliases Gold150 / Challenge-100 / Audit-50. Current JobBERT evaluation on this freeze is v6a B2 **0.5536±0.0054**. V4 hybrid 2601 JobBERT-zh 3M **0.4331** is a derived / historical protocol.
 
-These numbers **must not** be subtracted from, or ranked in the same main table as, V4 hybrid 2601 JobBERT-zh 3M **0.4331** or official zero-shot Qwen SOP extract **0.1724**. Human-reference IDs sit inside hybrid 2601; scoring the same student again on full 2601 is not an independent test.
+These numbers **must not** be subtracted from, or ranked in the same main table as, V4 hybrid 2601 JobBERT-zh 3M **0.4331** or official zero-shot Qwen SOP extract **0.1724**. Human-reference IDs sit inside hybrid 2601; scoring the same trained model again on full 2601 is not an independent test.
 
 Isolation wording: **sentence-level isolation (extended)**. Do not call it document isolation after v4.
 
 ---
 
-## 1. Two students, two fine-tuning regimes
+## 1. Two trained models, two fine-tuning regimes
 
 JobBERT-zh and Qwen2.5-14B-Instruct are **not** the same fine-tuning recipe. They do not share a prompt, a loss, or a decoder.
 
@@ -27,13 +27,13 @@ JobBERT-zh and Qwen2.5-14B-Instruct are **not** the same fine-tuning recipe. The
 | Official SOP extract 0.1724 | Not this protocol | **Not this protocol** (0.1724 is zero-shot SOP, no LoRA) |
 | B1 vs B2 | Same characters, different BIO | Same instruction, different target JSON |
 
-B1/B2 is a **label-scheme** contrast on identical sentences (old SOP-style vs teacher Silver-plus), not two prompts and not a teacher-architecture ablation. Gains should be read as the package “handbook + teacher + adjudication”.
+B1/B2 is a **label-scheme** contrast on identical sentences (old SOP-style vs LLM-generated Silver-plus labels), not two prompts and not a annotation-model architecture ablation. Gains should be read as the package “handbook + LLM annotation + adjudication”.
 
 ---
 
 ## 2. JobBERT-zh — sequence labelling, no prompt
 
-**Initialisation (v3–v6a main runs).** Encoder + CRF from the public `AlfredJames/jobbert-zh` checkpoint, including released `crf/best.pt`. A new independence claim **cannot** inherit that CRF: the original 3M selection `history.json` is missing. HEM (below) re-initialises the CRF and is a different student.
+**Initialisation (v3–v6a main runs).** Encoder + CRF from the public `AlfredJames/jobbert-zh` checkpoint, including released `crf/best.pt`. A new independence claim **cannot** inherit that CRF: the original 3M selection `history.json` is missing. HEM (below) re-initialises the CRF and is a different trained model.
 
 **Input.** Characters (`tokens = list(sentence)`), WordPiece with `is_split_into_words=True`, `max_len=256`. Nine-way joint LSKT BIO. No handbook text, no system message, no few-shot.
 
@@ -167,7 +167,7 @@ P1 $k=0$ seeds: 0.1293 / 0.1399 / 0.1673. Mean +0.024 versus P0, but the n=3 sam
 
 ### Table F — frozen V4/SOP predictions on Gold150 (not a new API)
 
-The 150 Gold IDs sit inside hybrid 2601. Same frozen SOP-extract v4 predictions, new human gold, raw spans, no jieba. Official `gpt-4o`+SOP was never run. Do not rank against JobBERT student 0.5536 or mix with the older ChatGPT `@@span##` dump.
+The 150 Gold IDs sit inside hybrid 2601. Same frozen SOP-extract v4 predictions, new human gold, raw spans, no jieba. Official `gpt-4o`+SOP was never run. Do not rank against fine-tuned JobBERT 0.5536 or mix with the older ChatGPT `@@span##` dump.
 
 | System (SOP extract v4) | exact | relaxed |
 |---|---:|---:|

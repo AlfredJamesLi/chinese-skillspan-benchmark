@@ -1,6 +1,6 @@
 # Silver-plus B2 (`v6a_nocross`, 2026-09-08)
 
-Teacher supervision for student runs scored on the **human reference set**. **Not** additional human-reference evaluation labels, even where rows were human-reviewed.
+LLM-generated labels for supervised training runs scored on the **human reference set**. **Not** additional human-reference evaluation labels, even where rows were human-reviewed.
 
 | File | n | Bytes | SHA-256 |
 |---|---:|---:|---|

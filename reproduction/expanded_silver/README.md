@@ -7,7 +7,7 @@ These later experiments combine earlier B2 supervision with new annotations. The
 | Proxy variant | 8,943 / 351 / 352 | 0.7585 | 0.5966 |
 | Codex variant | 8,842 / 348 / 350 | 0.8092 | 0.5854 |
 
-Both Qwen runs use seed 42. The variants replace labels for a 2,500-sentence candidate subset and differ in admission; they are not a controlled comparison of annotation channels alone. The complete admitted pools contain 9,646 and 9,540 records, respectively, rather than the initial target of 10,000.
+Both Qwen runs use seed 42. The variants replace labels for a 2,500-sentence candidate subset and differ in which records are retained; they are not a controlled comparison of annotation channels alone. The complete retained pools contain 9,646 and 9,540 records, respectively, rather than the initial target of 10,000.
 
 ## Files and access
 

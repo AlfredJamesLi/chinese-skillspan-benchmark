@@ -1,6 +1,6 @@
 # Resource names used in the paper
 
-Use these names when reading the manuscript. Exact paths stay unchanged for reproducibility.
+Use these names when reading the manuscript. Exact paths stay unchanged for reproducibility. See the [annotation and training terminology](docs/terminology.md) for the current role names and historical aliases.
 
 | Paper name | Resource |
 |---|---|
@@ -27,13 +27,13 @@ Short names in the manuscript are display aliases. Original file paths, experime
 | model | DeepSeek | `DeepSeek-V4-Pro; deepseek-v4-pro` | Non-thinking/thinking are configurations of the same model. Preserve API model ID, mode, and output cap; never merge the two rows. |
 | model | Kimi | `Kimi k2.6` | Version retained at first use. Display alias; preserve recorded configuration. |
 | model | GPT proxy | `gpt-5.6-terra` | Proxy-returned identifier; provider routing/checkpoint not independently verified. Never rename this to an asserted official GPT model; preserve raw metadata. |
-| model | teacher configuration | `gpt-6-astra` | Recorded teacher identifier, distinct from the GPT proxy evaluated configuration. Keep original teacher metadata; do not infer model equivalence. |
+| model | annotation-model configuration | `gpt-6-astra` | Recorded annotation-model identifier, distinct from the GPT proxy evaluated configuration. Keep original annotation-model metadata; do not infer model equivalence. |
 | model | JobBERT-zh initialization | `https://huggingface.co/AlfredJames/jobbert-zh` | Released 3M domain-adapted encoder with inherited V4 CRF. Keep published URL and model repository ID. |
 | model | JobBERT-zh continuation | `https://huggingface.co/AlfredJames/jobbert-zh-v6a` | Current B2 continuation; default released checkpoint is seed 42. Keep published URL and repository ID; do not replace initialization. |
 | experiment | primary JobBERT configuration | `v6a` | 2156 train / 169 dev; earlier versus revised labels. Documentation alias only; preserve manifest names. |
 | experiment | Qwen training split | `v6a_nocross` | 2150 train / 169 dev; train/dev exact NFC text matches removed. Keep exact manifest and membership. |
 | dataset | human reference | `Gold150; gold150_test.jsonl` | 150 sentences; 663 spans. Keep canonical file, hashes and scripts; add a descriptive README alias. |
-| dataset | initial review | `A100` | 100 teacher-label records reviewed before bulk generation. Keep A100 IDs; distinguish later independent exercise claim and later review versions. |
+| dataset | initial review | `A100` | 100 records with LLM-generated labels reviewed before bulk generation. Keep A100 IDs; distinguish later independent exercise claim and later review versions. |
 | dataset | post-generation review | `QA100` | 100 records in the later stratified review. Keep QA100 IDs and sampled membership. |
 | dataset | nested review subset | `Dual15` | 15-sentence QA100 auditor subset; September 17 export verifies separate coder queues and confirmations. It is distinct from IAA-50 blind calibration. |
 | dataset | further conflict-origin records | `H730` | 730 Silver-plus records from the conflict queue beyond the initial review. Keep H730 IDs and membership. |
@@ -56,7 +56,7 @@ Short names in the manuscript are display aliases. Original file paths, experime
 - Keep the primary data, frozen metadata, source IDs, experiment keys and public model URLs unchanged. Prefer readable documentation links and aliases over renaming these files.
 - The illustrated workflow retains the full Qwen label as a self-contained model identification. Its name maps to the same Qwen alias.
 - The Dual15 export supports independent submissions within the QA100 review design; it does not establish blind raw-text coding.
-- GPT proxy and the teacher configuration are recorded identifiers, not independently verified official model identities.
+- GPT proxy and the annotation-model configuration are recorded identifiers, not independently verified official model identities.
 - Existing historical notes may use canonical identifiers; preserve those records and link to this guide instead of mass replacement.
 
 The CSV mapping is in `reproduction/paper_names.csv`. The containing Git commit identifies this documentation version.

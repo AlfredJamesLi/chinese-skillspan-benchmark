@@ -17,7 +17,7 @@ These notes accompany the Round 2 repository synchronization. Historical availab
 |---|---|---|
 | Six shared-guideline inference configurations | Extraction with common instructions and output schema | Access paths, models, and inference budgets differ; this is a descriptive comparison of recorded configurations. |
 | Qwen without adapter versus B2 LoRA | Task adaptation under a fixed inference protocol | Use the same base model, messages, examples, occurrence schema, parser, decoding, and reference. There is no B1 Qwen fine-tuning condition. |
-| JobBERT B1 versus B2 | Revised training supervision together with development-based checkpoint selection | Both training and development labels change. This does not isolate teacher identity, an individual rule, or label quality alone. |
+| JobBERT B1 versus B2 | Revised training supervision together with development-based checkpoint selection | Both training and development labels change. This does not isolate annotation-model identity, an individual rule, or label quality alone. |
 | Historical SOP or JSON-offset experiments | Earlier extraction and supervision settings | Keep their original inputs, output contracts, labels, and selection conditions. Do not substitute them for the current Qwen no-adapter baseline. |
 | Historical training-source, pool-extension, and cleaning studies | Supplementary sensitivity observations | These studies also change composition, initialization, or selection; they are not controlled sample-size or single-factor effects. |
 
@@ -33,7 +33,7 @@ The human reference includes a 50-sentence calibration cohort and a 100-sentence
 
 The reference contains 663 spans, including only two L spans; its micro scores are dominated by S. Identifier prefixes provide 61 document groupings, not independently reconstructed advertisements. Original wording redistribution and implemented privacy treatment require collection-record confirmation; public webpage access alone does not establish redistribution rights.
 
-## 3. Student manifests and duplicate handling
+## 3. Training manifests and duplicate handling
 
 The primary JobBERT v6a uses 2,156 training and 169 development records, including six training records that match three development texts under NFC. Removing these yields the Qwen `v6a_nocross` split of 2,150/169. Both are sentence-level extensions rather than document-isolated splits. JobBERT and Qwen retain 1,913 and 1,910 distinct NFC training texts, respectively. No human-reference identifier or full NFC reference text occurs in these train/development splits. NFC comparisons do not change the original scored strings or character offsets.
 
@@ -51,7 +51,7 @@ The later QA100 review has 140 exact matches between 144 machine and 148 reviewe
 
 The pre-generation A100 has historical 419-span supervision and a later 432-span review layer. These versions do not overwrite labels used in completed runs. The authors report an earlier independent 15-sentence A100 exercise without exposure to machine predictions or the other coder's spans. Its original exports, mapping, chronology, and metric have not been reconciled with the retained files. Archived Dual15 instead belongs to machine-prefilled QA100, with 27 identical spans in each layer. It cannot supply an independent agreement coefficient for the earlier exercise or a matched pre/post reliability result.
 
-Human-coding diagnostics record 21 Coder B typing disagreements involving job-use tools labeled K rather than adjudicated S, Coder A K recall of 0.29, and missed T mentions. Both coders missed the single L span in the calibration cohort. These are human-coding observations and cannot be reinterpreted as student-model error frequencies. The existing historical rounding discrepancy for Coder A recall is retained with its explanation in Appendix B.
+Human-coding diagnostics record 21 Coder B typing disagreements involving job-use tools labeled K rather than adjudicated S, Coder A K recall of 0.29, and missed T mentions. Both coders missed the single L span in the calibration cohort. These are human-coding observations and cannot be reinterpreted as trained-model error frequencies. The existing historical rounding discrepancy for Coder A recall is retained with its explanation in Appendix B.
 
 ## 5. JobBERT implementation and checkpoint recovery
 
@@ -85,7 +85,7 @@ Figure 5 preserves all four runs' accepted-span results. The eight empty-referen
 
 ## 9. Version compatibility and admission decisions
 
-The reference, V4.2.12-based teacher prompt, shared `rev2 patch1` protocol, and V4.2.14 handbook have separate identities. Later amendments did not regenerate earlier labels or execution protocols. Case `1838-s0008` changes from S `[9,25)` to `[9,16)` and `[17,19)`, retaining S `[26,37)`. It is present in the teacher layer and absent from the 150-sentence reference by ID and exact text. This targeted check does not establish full compatibility of later rules with all frozen annotations.
+The reference, V4.2.12-based annotation prompt, shared `rev2 patch1` protocol, and V4.2.14 handbook have separate identities. Later amendments did not regenerate earlier labels or execution protocols. Case `1838-s0008` changes from S `[9,25)` to `[9,16)` and `[17,19)`, retaining S `[26,37)`. It is present in the LLM-annotation layer and absent from the 150-sentence reference by ID and exact text. This targeted check does not establish full compatibility of later rules with all frozen annotations.
 
 The historical 82-record adjudication queue is not a permanent exclusion set. Its later registry has 53 resolved, three confirmed-empty, and 26 undetermined records. The Qwen manifest admits 51 resolved and three confirmed-empty records to training and one resolved record to development, with none of the 26 undetermined records. These are Qwen membership counts, not a replacement JobBERT manifest.
 
