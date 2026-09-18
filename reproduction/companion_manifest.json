@@ -1,7 +1,7 @@
 {
-  "aligned_pdf_sha256": "4d67ee770c8b6b1260482fcca76892c755f0b99cb59537bae4dc0ca6067b496b",
-  "base_commit": "6c14c14e01966dd9e41104d0c8426075c7f7728e",
-  "scope": "Terminology alignment in current narrative and figures; frozen prompts, experimental manifests, annotations, predictions and scorer unchanged",
+  "aligned_pdf_sha256": "d3fd2127a0ddffe7b45d20315201af91d1131f2021fc370e4b6852b63179ab1f",
+  "base_commit": "f72883e828313f61b18d996614bc29b4a73101a2",
+  "scope": "Document manuscript display precision; raw results, labels, prompts, manifests and scorer remain unchanged",
   "historical_link_context": [
     "docs/archive/README_0911.md",
     "docs/archive/REPRODUCIBILITY_0911.md",
@@ -35,9 +35,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 4143,
-      "sha256": "6572347a49313777025c8f764122d1ec570f59dba7c819429779497825de1e99",
-      "git_blob_sha": "61a8415bc8c0f946ac3bd51468402a6e24a3ce79"
+      "bytes": 4283,
+      "sha256": "a68ee9ae9258a085c8ba03ef1872ff5c1d4213bc218fc1f7874db6bc1ab20c06",
+      "git_blob_sha": "f2f8a48a44357c38eae5088dd3e4e722fb1600be"
     },
     {
       "path": "REPRODUCIBILITY.md",
@@ -80,6 +80,12 @@
       "bytes": 1896,
       "sha256": "f837fd59854ea3663efcb721d779a83ff808e635e6b009cfde3ed537f050285d",
       "git_blob_sha": "276eef3219ad5fe865ccdb8b52580f97d2c76592"
+    },
+    {
+      "path": "docs/numerical_precision.md",
+      "bytes": 2004,
+      "sha256": "d7061ba58d12b15ef4d0e2782be66536d1a2e10173f79cc5a679d46a2e2ae839",
+      "git_blob_sha": "0d9f7312c963aa0ada1657f4e5cc853c62191aa0"
     },
     {
       "path": "docs/overleaf_paste_20260915/CODEX_OVERLEAF_PROMPT.md",
@@ -550,5 +556,5 @@
       "git_blob_sha": "5bdfb057da26a986d6dd5613e4b127c5e65b3ac9"
     }
   ],
-  "previous_manifest_git_blob": "c72ab4dc87632ce57061a880c2d7a14b8b431196"
+  "previous_manifest_git_blob": "2d1bffd1d4f59cbba41744914a18a48b8ee18245"
 }

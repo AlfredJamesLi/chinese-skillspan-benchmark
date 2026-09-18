@@ -17,7 +17,7 @@ A benchmark for extracting competency spans from Chinese job advertisements, wit
 | Expanded Codex pool | 9,540 retained sentences | Later experiment; final partitions are not fully released |
 | Human coding and review | 500 unique sentences | Reference construction and quality checks; not 500 Gold test sentences |
 
-Terminology follows the [annotation and training guide](docs/terminology.md).
+Terminology follows the [annotation and training guide](docs/terminology.md). Manuscript numbers follow the [display-precision policy](docs/numerical_precision.md); source result files retain their original precision.
 
 The task uses flat character spans with four types: language (L), knowledge (K), occupational skills (S), and transversal competences (T). The categories are ESCO-informed; the task does not assign ESCO concept IDs.
 
