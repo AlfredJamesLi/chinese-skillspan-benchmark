@@ -16,16 +16,17 @@ The 500-sentence human coverage reported in the current manuscript combines dist
 
 ## Which archive version?
 
-Use **v0.1.3** for the human reference and B2 files. Earlier [v0.1.1](https://doi.org/10.5281/zenodo.22288338) and [v0.1.2](https://doi.org/10.5281/zenodo.22685143) do not include those additions. The [concept DOI](https://doi.org/10.5281/zenodo.22288337) groups the versions. Later expanded-Silver experiments on GitHub are outside the immutable v0.1.3 archive.
+Use **v0.1.3** for the human reference and B2 files. The PeerJ Data Availability statement should cite this version DOI. Earlier [v0.1.2](https://doi.org/10.5281/zenodo.22685143) and the first Zenodo snapshot [v0.1.1](https://doi.org/10.5281/zenodo.22288338) do not include those additions. The [concept DOI](https://doi.org/10.5281/zenodo.22288337) groups the versions. Later expanded-Silver experiments on GitHub are outside the immutable v0.1.3 archive.
+
+Do not use GitHub tags `v0.1.0` or `v0.1.1`: those snapshots contain a rejected conference draft PDF and are scheduled for deletion. The Zenodo `v0.1.1` record remains as an immutable first snapshot; reviewers should still use **v0.1.3**. No `v0.1.4` has been minted.
 
 ## Reuse conditions
 
-The authors report research-use permission for recruitment notices purchased from a commercial compiler of publicly posted advertisements. This permission is distinct from an open-content licence for the original wording. Source text, software, and model weights have different terms:
+Author decision (2026-09-18): the archived corpus, labels, guidelines, and released checkpoints may be used for **academic research and peer review**. Recruitment notices were purchased from a commercial compiler of publicly posted advertisements. That permission is **not** a general open-content or commercial-redistribution licence on the original wording.
 
 - **Software and original documentation:** consult [LICENSE](LICENSE) for the repository's proposed Apache-2.0 notice and its scope.
-- **Advertisement wording:** no general CC-BY grant is made by the authors. Do not treat public download access as unrestricted redistribution permission.
-- **Model weights:** the Hugging Face cards currently use `license: other`.
-
-**Metadata discrepancy:** Zenodo v0.1.3 currently displays `cc-by-4.0`, while the repository's source-text notice does not grant that licence. This discrepancy requires author clarification. This documentation update does not change or grant data rights.
+- **Advertisement wording:** academic research use is permitted. The authors do not grant CC-BY on the original wording. Do not treat public download access as permission to republish the advertisements commercially.
+- **Model weights:** the Hugging Face cards currently use `license: other` and follow the same academic-research scope.
+- **Zenodo page label:** the GitHub–Zenodo hook still displays `cc-by-4.0` on the record. That platform default is **not** the author grant. The author grant is academic research use, as stated here.
 
 Original vendor CSV/XLSX exports are not part of the public data package. Questions about additional artifacts or permitted reuse should be directed to the corresponding author identified in the project citation metadata. Availability on request is not promised for artifacts that have no documented access arrangement.

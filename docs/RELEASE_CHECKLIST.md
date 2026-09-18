@@ -2,9 +2,9 @@
 
 Complete every item before a public upload. This document does **not** authorise GitHub, Hugging Face, Zenodo, or PeerJ publication. No remote action has been taken.
 
-Proposed PeerJ wording (use the minted version DOI):
+Proposed PeerJ wording (use the minted version DOI). Copy the short paragraph in `docs/PEERJ_CS_MATERIALS.md`.
 
-> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22698504 (version v0.1.3; concept DOI https://doi.org/10.5281/zenodo.22288337). Earlier snapshots are https://doi.org/10.5281/zenodo.22685143 (version v0.1.2) and https://doi.org/10.5281/zenodo.22288338 (version v0.1.1). The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The pretrained JobBERT-zh model, tokenizer, configuration files, and model card are available at https://huggingface.co/AlfredJames/jobbert-zh. The 150-sentence human reference set (`data/gold150_test.jsonl`) and Silver-plus B2 train/development files are included in v0.1.3 and are not in Zenodo v0.1.1 or v0.1.2.
+> The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22698504 (version v0.1.3; concept DOI https://doi.org/10.5281/zenodo.22288337). An earlier snapshot is https://doi.org/10.5281/zenodo.22685143 (version v0.1.2). The first archival snapshot remains at https://doi.org/10.5281/zenodo.22288338 (version v0.1.1) on Zenodo. Do not use GitHub tags v0.1.0 or v0.1.1. The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The JobBERT-zh initialization encoder and inherited CRF are available at https://huggingface.co/AlfredJames/jobbert-zh. The JobBERT-zh B2 continuation is available at https://huggingface.co/AlfredJames/jobbert-zh-v6a (default checkpoint is seed 42). The 150-sentence human reference set and Silver-plus B2 training/development files are included in v0.1.3 and are not in Zenodo v0.1.1 or v0.1.2. Qwen LoRA adapters are not published. These materials are released for academic research and peer review. Original job-advertisement wording is not licensed as CC-BY.
 
 ---
 
@@ -58,8 +58,7 @@ Proposed PeerJ wording (use the minted version DOI):
 
 ## Data licence confirmation
 
-- [x] `LICENSE` §2: job-advertisement wording is **not** CC-BY; Zenodo default `cc-by-4.0` is not this grant.
-- [x] Research-use consultation recorded in `DATA_AVAILABILITY.md` §7 (purchased public-posting compilation).
+- [x] `LICENSE` §2 and `DATA_AVAILABILITY.md`: academic research use permitted; original wording is **not** CC-BY; Zenodo page label `cc-by-4.0` is the hook default, not the author grant.
 
 ## Base-model licence compatibility
 
@@ -116,10 +115,10 @@ Replace every `[TODO: … URL]` / DOI in:
 
 Use the **same** GitHub URL, the **same** Zenodo DOI, and the **same** Hugging Face dataset/model URLs everywhere. Do not paste the arXiv abstract URL into the dataset or model fields.
 
-## Do not use Google Sites or Drive
+## Public URLs only
 
-- [x] Public docs list GitHub, Hugging Face, and Zenodo version DOI `10.5281/zenodo.22288338` (concept `10.5281/zenodo.22288337`).
-- [ ] Overleaf / PeerJ form must use the same three URLs. Do **not** put https://sites.google.com/view/cn-skillspan-resources or any Drive / Sites URL in the Data Availability Statement.
+- [x] Public docs list GitHub, Hugging Face model pages, and Zenodo version DOI `10.5281/zenodo.22698504` (concept `10.5281/zenodo.22288337`).
+- [ ] Overleaf / PeerJ form must use those same URLs only.
 
 ## Reviewer download test
 
@@ -148,4 +147,4 @@ Use the **same** GitHub URL, the **same** Zenodo DOI, and the **same** Hugging F
 6. Update every GitHub / Hugging Face / Zenodo link listed above.
 7. Enter those permanent links in the **PeerJ** form.
 
-Do not invert steps 4–7 (PeerJ must not receive a private GitHub URL or a Google Sites / Drive page as the archive).
+Do not invert steps 4–7 (PeerJ must not receive a private GitHub URL as the archive).
