@@ -23,7 +23,7 @@ Checksums stay in `REPRODUCIBILITY.md`, not in the running DAS paragraph.
 | **B. Public code** | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark | current default branch; GitHub Release `v0.1.3` | Human reference / B2 from `v0.1.3` |
 | **C. Still laboratory-only** | Qwen2.5-14B LoRA adapters | no public Hub repo | adapters not released |
 
-Do not send reviewers to GitHub tags `v0.1.0` or `v0.1.1` (rejected conference draft PDF; scheduled for deletion). No `v0.1.4` has been minted.
+GitHub tags `v0.1.0` and `v0.1.1` have been withdrawn. Do not send reviewers to those tags. No `v0.1.4` has been minted.
 
 JobBERT-zh initialization: https://huggingface.co/AlfredJames/jobbert-zh  
 JobBERT-zh B2 continuation: https://huggingface.co/AlfredJames/jobbert-zh-v6a
@@ -34,7 +34,7 @@ JobBERT-zh B2 continuation: https://huggingface.co/AlfredJames/jobbert-zh-v6a
 
 Use `\url{...}` in TeX so long DOIs do not collapse word spaces.
 
-The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22698504 (version v0.1.3; concept DOI https://doi.org/10.5281/zenodo.22288337). An earlier snapshot is https://doi.org/10.5281/zenodo.22685143 (version v0.1.2). The first archival snapshot remains at https://doi.org/10.5281/zenodo.22288338 (version v0.1.1) on Zenodo. Do not use GitHub tags v0.1.0 or v0.1.1. The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The JobBERT-zh initialization encoder and inherited CRF are available at https://huggingface.co/AlfredJames/jobbert-zh. The JobBERT-zh B2 continuation is available at https://huggingface.co/AlfredJames/jobbert-zh-v6a (default checkpoint is seed 42). The 150-sentence human reference set and Silver-plus B2 training/development files are included in v0.1.3 and are not in Zenodo v0.1.1 or v0.1.2. Qwen LoRA adapters are not published. These materials are released for academic research and peer review. Original job-advertisement wording is not licensed as CC-BY.
+The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22698504 (version v0.1.3; concept DOI https://doi.org/10.5281/zenodo.22288337). An earlier snapshot is https://doi.org/10.5281/zenodo.22685143 (version v0.1.2). The first archival snapshot remains at https://doi.org/10.5281/zenodo.22288338 (version v0.1.1) on Zenodo; the corresponding GitHub tags v0.1.0 and v0.1.1 have been withdrawn. The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The JobBERT-zh initialization encoder and inherited CRF are available at https://huggingface.co/AlfredJames/jobbert-zh. The JobBERT-zh B2 continuation is available at https://huggingface.co/AlfredJames/jobbert-zh-v6a (default checkpoint is seed 42). The 150-sentence human reference set and Silver-plus B2 training/development files are included in v0.1.3 and are not in Zenodo v0.1.1 or v0.1.2. Qwen LoRA adapters are not published. These materials are released for academic research and peer review. Original job-advertisement wording is not licensed as CC-BY.
 
 Companion files: `DATA_AVAILABILITY.md`, `REPRODUCIBILITY.md`, `docs/models.md`.
 

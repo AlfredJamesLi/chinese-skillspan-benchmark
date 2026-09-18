@@ -15,7 +15,7 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 ## Unreleased notes (2026-09-18 academic-use / PeerJ DAS)
 
 - Author decision: the public archive may be used for academic research and peer review; original advertisement wording is not CC-BY. Zenodo's displayed `cc-by-4.0` label remains the GitHub-hook default, not that grant.
-- PeerJ Data Availability paste now names JobBERT-zh initialization / B2 continuation and cites Zenodo `v0.1.3`. GitHub tags `v0.1.0` and `v0.1.1` must not be used and are scheduled for deletion. No `v0.1.4`. Frozen F1 cells are unchanged.
+- PeerJ Data Availability paste now names JobBERT-zh initialization / B2 continuation and cites Zenodo `v0.1.3`. GitHub tags `v0.1.0` and `v0.1.1` have been withdrawn. No `v0.1.4`. Frozen F1 cells are unchanged.
 
 ## Unreleased notes (2026-09-17 Codex-2500 Table H)
 

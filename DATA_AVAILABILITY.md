@@ -18,7 +18,7 @@ The 500-sentence human coverage reported in the current manuscript combines dist
 
 Use **v0.1.3** for the human reference and B2 files. The PeerJ Data Availability statement should cite this version DOI. Earlier [v0.1.2](https://doi.org/10.5281/zenodo.22685143) and the first Zenodo snapshot [v0.1.1](https://doi.org/10.5281/zenodo.22288338) do not include those additions. The [concept DOI](https://doi.org/10.5281/zenodo.22288337) groups the versions. Later expanded-Silver experiments on GitHub are outside the immutable v0.1.3 archive.
 
-Do not use GitHub tags `v0.1.0` or `v0.1.1`: those snapshots contain a rejected conference draft PDF and are scheduled for deletion. The Zenodo `v0.1.1` record remains as an immutable first snapshot; reviewers should still use **v0.1.3**. No `v0.1.4` has been minted.
+GitHub tags `v0.1.0` and `v0.1.1` have been withdrawn because those snapshots contained a rejected conference draft PDF. The Zenodo `v0.1.1` record remains as an immutable first snapshot; reviewers should still use **v0.1.3**. No `v0.1.4` has been minted.
 
 ## Reuse conditions
 
