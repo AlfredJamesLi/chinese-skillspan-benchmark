@@ -1,0 +1,216 @@
+{
+  "created_utc": "2026-09-19T13:07:06.015115+00:00",
+  "method": "offline score of frozen pred_for_score.jsonl; no re-inference; predictions not edited",
+  "script": "/home/guojingli3/chinese-skillspan-benchmark/scripts/eval_gold150_ext.py",
+  "protocol_flag": "shared_prompt",
+  "gold_test": "/home/guojingli3/chinese-skillspan-benchmark/data/gold150_test.jsonl",
+  "gold_eval": "same freeze, converted in memory by convert_gold150_to_bio",
+  "hash_pass_is_not_re_inference_verification": true,
+  "json_offset_0.1215_not_used": true,
+  "rows": [
+    {
+      "key": "b2_42",
+      "pred": "shared_guidelines_b2/seed42/gold150/pred_for_score.jsonl",
+      "expected_typed_exact_f1": 0.4995663486556808,
+      "offline_typed_exact_f1": 0.4995663486556808,
+      "offline_typed_relaxed_f1": 0.6244579358196011,
+      "match": true,
+      "coverage": {
+        "n_pred": 150,
+        "missing_ids": [],
+        "extra_ids": [],
+        "complete_150": true
+      },
+      "n_empty_pred_rows": 9,
+      "protocol": "shared_prompt",
+      "scorer_version": "cnss-lskt-1.2.0",
+      "script": "chinese-skillspan-benchmark/scripts/eval_gold150_ext.py --protocol shared_prompt",
+      "gold_test_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "re_inference": false,
+      "predictions_unmodified": true,
+      "verified": true
+    },
+    {
+      "key": "b2_43",
+      "pred": "shared_guidelines_b2/seed43/gold150/pred_for_score.jsonl",
+      "expected_typed_exact_f1": 0.5632858340318525,
+      "offline_typed_exact_f1": 0.5632858340318525,
+      "offline_typed_relaxed_f1": 0.685666387259011,
+      "match": true,
+      "coverage": {
+        "n_pred": 150,
+        "missing_ids": [],
+        "extra_ids": [],
+        "complete_150": true
+      },
+      "n_empty_pred_rows": 10,
+      "protocol": "shared_prompt",
+      "scorer_version": "cnss-lskt-1.2.0",
+      "script": "chinese-skillspan-benchmark/scripts/eval_gold150_ext.py --protocol shared_prompt",
+      "gold_test_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "re_inference": false,
+      "predictions_unmodified": true,
+      "verified": true
+    },
+    {
+      "key": "b2_44",
+      "pred": "shared_guidelines_b2/seed44/gold150/pred_for_score.jsonl",
+      "expected_typed_exact_f1": 0.5581787521079258,
+      "offline_typed_exact_f1": 0.5581787521079258,
+      "offline_typed_relaxed_f1": 0.6762225969645868,
+      "match": true,
+      "coverage": {
+        "n_pred": 150,
+        "missing_ids": [],
+        "extra_ids": [],
+        "complete_150": true
+      },
+      "n_empty_pred_rows": 11,
+      "protocol": "shared_prompt",
+      "scorer_version": "cnss-lskt-1.2.0",
+      "script": "chinese-skillspan-benchmark/scripts/eval_gold150_ext.py --protocol shared_prompt",
+      "gold_test_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "re_inference": false,
+      "predictions_unmodified": true,
+      "verified": true
+    },
+    {
+      "key": "proxy",
+      "pred": "expanded_silver/proxy_seed42/gold150/pred_for_score.jsonl",
+      "expected_typed_exact_f1": 0.5966386554621848,
+      "offline_typed_exact_f1": 0.5966386554621848,
+      "offline_typed_relaxed_f1": 0.7126050420168066,
+      "match": true,
+      "coverage": {
+        "n_pred": 150,
+        "missing_ids": [],
+        "extra_ids": [],
+        "complete_150": true
+      },
+      "n_empty_pred_rows": 11,
+      "protocol": "shared_prompt",
+      "scorer_version": "cnss-lskt-1.2.0",
+      "script": "chinese-skillspan-benchmark/scripts/eval_gold150_ext.py --protocol shared_prompt",
+      "gold_test_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "re_inference": false,
+      "predictions_unmodified": true,
+      "verified": true
+    },
+    {
+      "key": "codex",
+      "pred": "expanded_silver/codex_seed42/gold150/pred_for_score.jsonl",
+      "expected_typed_exact_f1": 0.5854063018242122,
+      "offline_typed_exact_f1": 0.5854063018242122,
+      "offline_typed_relaxed_f1": 0.7031509121061359,
+      "match": true,
+      "coverage": {
+        "n_pred": 150,
+        "missing_ids": [],
+        "extra_ids": [],
+        "complete_150": true
+      },
+      "n_empty_pred_rows": 8,
+      "protocol": "shared_prompt",
+      "scorer_version": "cnss-lskt-1.2.0",
+      "script": "chinese-skillspan-benchmark/scripts/eval_gold150_ext.py --protocol shared_prompt",
+      "gold_test_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "re_inference": false,
+      "predictions_unmodified": true,
+      "verified": true
+    },
+    {
+      "key": "opt_7117",
+      "pred": "expanded_silver/optional_table_h/silver7117_fulldev_seed42/gold150/pred_for_score.jsonl",
+      "expected_typed_exact_f1": 0.5883306320907618,
+      "offline_typed_exact_f1": 0.5883306320907618,
+      "offline_typed_relaxed_f1": 0.7098865478119935,
+      "match": true,
+      "coverage": {
+        "n_pred": 150,
+        "missing_ids": [],
+        "extra_ids": [],
+        "complete_150": true
+      },
+      "n_empty_pred_rows": 8,
+      "protocol": "shared_prompt",
+      "scorer_version": "cnss-lskt-1.2.0",
+      "script": "chinese-skillspan-benchmark/scripts/eval_gold150_ext.py --protocol shared_prompt",
+      "gold_test_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "re_inference": false,
+      "predictions_unmodified": true,
+      "verified": true
+    },
+    {
+      "key": "opt_wave12",
+      "pred": "expanded_silver/optional_table_h/wave12_seed42/gold150/pred_for_score.jsonl",
+      "expected_typed_exact_f1": 0.5745393634840871,
+      "offline_typed_exact_f1": 0.5745393634840871,
+      "offline_typed_relaxed_f1": 0.695142378559464,
+      "match": true,
+      "coverage": {
+        "n_pred": 150,
+        "missing_ids": [],
+        "extra_ids": [],
+        "complete_150": true
+      },
+      "n_empty_pred_rows": 9,
+      "protocol": "shared_prompt",
+      "scorer_version": "cnss-lskt-1.2.0",
+      "script": "chinese-skillspan-benchmark/scripts/eval_gold150_ext.py --protocol shared_prompt",
+      "gold_test_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "re_inference": false,
+      "predictions_unmodified": true,
+      "verified": true
+    },
+    {
+      "key": "opt_wave3_proxy",
+      "pred": "expanded_silver/optional_table_h/wave3_proxy_seed42/gold150/pred_for_score.jsonl",
+      "expected_typed_exact_f1": 0.58700882117081,
+      "offline_typed_exact_f1": 0.58700882117081,
+      "offline_typed_relaxed_f1": 0.7169206094627105,
+      "match": true,
+      "coverage": {
+        "n_pred": 150,
+        "missing_ids": [],
+        "extra_ids": [],
+        "complete_150": true
+      },
+      "n_empty_pred_rows": 9,
+      "protocol": "shared_prompt",
+      "scorer_version": "cnss-lskt-1.2.0",
+      "script": "chinese-skillspan-benchmark/scripts/eval_gold150_ext.py --protocol shared_prompt",
+      "gold_test_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "re_inference": false,
+      "predictions_unmodified": true,
+      "verified": true
+    },
+    {
+      "key": "opt_wave3_codex",
+      "pred": "expanded_silver/optional_table_h/wave3_codex_seed42/gold150/pred_for_score.jsonl",
+      "expected_typed_exact_f1": 0.585325638911789,
+      "offline_typed_exact_f1": 0.585325638911789,
+      "offline_typed_relaxed_f1": 0.6990931574608408,
+      "match": true,
+      "coverage": {
+        "n_pred": 150,
+        "missing_ids": [],
+        "extra_ids": [],
+        "complete_150": true
+      },
+      "n_empty_pred_rows": 6,
+      "protocol": "shared_prompt",
+      "scorer_version": "cnss-lskt-1.2.0",
+      "script": "chinese-skillspan-benchmark/scripts/eval_gold150_ext.py --protocol shared_prompt",
+      "gold_test_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "re_inference": false,
+      "predictions_unmodified": true,
+      "verified": true
+    }
+  ],
+  "b2_three_seed": {
+    "mean_typed_exact_f1": 0.5403436449318197,
+    "sample_sd_typed_exact_f1": 0.03540637640508322,
+    "paper_mean_sd": "0.5403 ± 0.0354"
+  },
+  "all_listed_cells_matched": true
+}

@@ -1,0 +1,166 @@
+{
+  "ok": 19,
+  "missing": 0,
+  "mismatch": 0,
+  "rows": [
+    {
+      "artifact_key": "02_sft/configs/BASELINE_COMPATIBILITY.md",
+      "expected": "29630e625859ea6d2b7cb635e6884361a977f1153178f5903d2310715286ad0f",
+      "role": "Qwen training/inference settings",
+      "got": "29630e625859ea6d2b7cb635e6884361a977f1153178f5903d2310715286ad0f",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/configs/DATA_MANIFEST.json",
+      "expected": "28db210b08123a370ca6a006cd7e405befc993acd4c69dac184542d16caa9ce9",
+      "role": "Qwen training/inference settings",
+      "got": "28db210b08123a370ca6a006cd7e405befc993acd4c69dac184542d16caa9ce9",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/configs/LOSS_MASK_AND_LENGTH_REPORT.md",
+      "expected": "3a3efddf61259f2f0e1f21100959b86cb797d3dafec55606efd92c8598609189",
+      "role": "Qwen training/inference settings",
+      "got": "3a3efddf61259f2f0e1f21100959b86cb797d3dafec55606efd92c8598609189",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/configs/MODEL_PROVENANCE.json",
+      "expected": "95f378faf9004f8e878c5606d69160931e1a0ba3d2fe29008835230a786b75f0",
+      "role": "Qwen training/inference settings",
+      "got": "95f378faf9004f8e878c5606d69160931e1a0ba3d2fe29008835230a786b75f0",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/configs/PROMPT_MANIFEST.json",
+      "expected": "f2c2275bb68df775924af1cc0caf351e8d90ead749b04683db63eede2af188e6",
+      "role": "Qwen training/inference settings",
+      "got": "f2c2275bb68df775924af1cc0caf351e8d90ead749b04683db63eede2af188e6",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/configs/TRAIN_CONFIG.json",
+      "expected": "0f54bc7fc30853d813fb46c67da8eb533ecc967ee7755dec41180a387c943000",
+      "role": "Qwen training/inference settings",
+      "got": "0f54bc7fc30853d813fb46c67da8eb533ecc967ee7755dec41180a387c943000",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/configs/TRAIN_DEV_CONVERSION_REPORT.json",
+      "expected": "5eb38d39cd7cc6dfbd432332e73021a7bbd674fe4f8dc100b8305af01e2f3fbb",
+      "role": "Qwen training/inference settings",
+      "got": "5eb38d39cd7cc6dfbd432332e73021a7bbd674fe4f8dc100b8305af01e2f3fbb",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/infer/seed42/pred_for_score.jsonl",
+      "expected": "22033c2f102143f786d29c09ccb1f99d91da6ec0f97eb977e228444869be6a24",
+      "role": "accepted prediction seed 42",
+      "got": "22033c2f102143f786d29c09ccb1f99d91da6ec0f97eb977e228444869be6a24",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/selection/seed42/epoch_history.json",
+      "expected": "c4697eca6da0b4d78b21bc7e10d59504c6091784686e5918f318cd88b8f0783b",
+      "role": "Qwen selection",
+      "got": "c4697eca6da0b4d78b21bc7e10d59504c6091784686e5918f318cd88b8f0783b",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/selection/seed42/run_config.json",
+      "expected": "c620bec9fcbb54e3cebec20bbb1c4653ca4289282cfccf7160e4f983bd413cdf",
+      "role": "Qwen selection",
+      "got": "c620bec9fcbb54e3cebec20bbb1c4653ca4289282cfccf7160e4f983bd413cdf",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/selection/seed42/selected_checkpoint.json",
+      "expected": "dc7a16f551e4c0157dffba4eaf39e5ffbf3539164b3777f8be8bf482a7c9c633",
+      "role": "Qwen selection",
+      "got": "dc7a16f551e4c0157dffba4eaf39e5ffbf3539164b3777f8be8bf482a7c9c633",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/infer/seed43/pred_for_score.jsonl",
+      "expected": "c14f34e0a23e463500cbca1e9747be28fec74ac58495f3a2de338d4bd6dbe564",
+      "role": "accepted prediction seed 43",
+      "got": "c14f34e0a23e463500cbca1e9747be28fec74ac58495f3a2de338d4bd6dbe564",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/selection/seed43/epoch_history.json",
+      "expected": "1e1fc20a38331caf8ba385a4737d9fb78d268b98317f638436f727b69a8b915d",
+      "role": "Qwen selection",
+      "got": "1e1fc20a38331caf8ba385a4737d9fb78d268b98317f638436f727b69a8b915d",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/selection/seed43/run_config.json",
+      "expected": "beb845e0d68fdd3b43e38f398d2d6b88b3d6e831a066ba3c79e6fb45ca957f19",
+      "role": "Qwen selection",
+      "got": "beb845e0d68fdd3b43e38f398d2d6b88b3d6e831a066ba3c79e6fb45ca957f19",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/selection/seed43/selected_checkpoint.json",
+      "expected": "cf9bb287be0955b05956bd790653ae4480db88b20a8aace16966660dfb8f6011",
+      "role": "Qwen selection",
+      "got": "cf9bb287be0955b05956bd790653ae4480db88b20a8aace16966660dfb8f6011",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/infer/seed44/pred_for_score.jsonl",
+      "expected": "a90efd6a2704d9ecfb9d7b3fa95534851358db402c6dcbe24bc78d6bc25b9953",
+      "role": "accepted prediction seed 44",
+      "got": "a90efd6a2704d9ecfb9d7b3fa95534851358db402c6dcbe24bc78d6bc25b9953",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/selection/seed44/epoch_history.json",
+      "expected": "73fac2600532d3003958c7c44fcc94111cb179076734aa12cecc12d5a9e40548",
+      "role": "Qwen selection",
+      "got": "73fac2600532d3003958c7c44fcc94111cb179076734aa12cecc12d5a9e40548",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/selection/seed44/run_config.json",
+      "expected": "a8e81f25737525e74c00524fe2db9f5bfb83f4d722b1ec2c301daa4a312c983c",
+      "role": "Qwen selection",
+      "got": "a8e81f25737525e74c00524fe2db9f5bfb83f4d722b1ec2c301daa4a312c983c",
+      "status": "ok"
+    },
+    {
+      "artifact_key": "02_sft/selection/seed44/selected_checkpoint.json",
+      "expected": "d314c9c11e4e7f76518ec68eee0b14f071d0bb113baa26ba4ddb07125b18cc73",
+      "role": "Qwen selection",
+      "got": "d314c9c11e4e7f76518ec68eee0b14f071d0bb113baa26ba4ddb07125b18cc73",
+      "status": "ok"
+    }
+  ],
+  "protocol": [
+    {
+      "file": "protocol/PROMPT_gold150_shared_guidelines_v2_rev2_patch1.DRAFT.system.txt",
+      "expected": "a1ed48a2d0fc96539e7a107e77077eee05c33b48e1b9e21632bf82e0e88af6bc",
+      "got": "a1ed48a2d0fc96539e7a107e77077eee05c33b48e1b9e21632bf82e0e88af6bc",
+      "ok": true
+    },
+    {
+      "file": "protocol/USER_TEMPLATE_v2_rev2_patch1.DRAFT.txt",
+      "expected": "d18908d65f3f714d0968a0857ff0dd1b293b16bfcec70392aea92384bf8c8165",
+      "got": "d18908d65f3f714d0968a0857ff0dd1b293b16bfcec70392aea92384bf8c8165",
+      "ok": true
+    },
+    {
+      "file": "protocol/parser_occurrence_v1_1.py",
+      "expected": "a88e8bd740ac560cacdf777ae95119de34e573dee07a15ba2a52b84ac9e65d05",
+      "got": "a88e8bd740ac560cacdf777ae95119de34e573dee07a15ba2a52b84ac9e65d05",
+      "ok": true
+    },
+    {
+      "file": "protocol/gold150_test.jsonl",
+      "expected": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "got": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "ok": true
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "hf_repo_id": "Qwen/Qwen2.5-14B-Instruct",
+  "hf_git_revision_not_recorded_in_original_provenance": true,
+  "do_not_use_todays_hub_main_as_experiment_version": true,
+  "b2_train_local_path": "/home/guojingli3/SCESC-LLM-skill-extraction/Qwen2.5-14B-Instruct",
+  "b2_train_host": "DS209213",
+  "pool_train_local_path": "/home/guojingli3/IEEE_Access_project/models/Qwen2.5-14B-Instruct",
+  "pool_train_host": "DS210039",
+  "original_file_sha256": {
+    "config.json": {
+      "sha256": "0f2085dbbe2ee251bd6a6a0797d84a6ce34436044d629aa3cba793b43d311a9e",
+      "bytes": 663
+    },
+    "generation_config.json": {
+      "sha256": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9",
+      "bytes": 242
+    },
+    "tokenizer.json": {
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "bytes": 7031645
+    },
+    "tokenizer_config.json": {
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "bytes": 7305
+    },
+    "model.safetensors.index.json": {
+      "sha256": "46627f7a9e851d9cede6a7a4c49999082148ced9c22d2b9cfaaa5ba8b65dc68f",
+      "bytes": 47472
+    },
+    "vocab.json": {
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "bytes": 2776833
+    },
+    "merges.txt": {
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "bytes": 1671839
+    },
+    "README.md": {
+      "sha256": "7ea9d73d5e0a0381121db8bfb04dee739c7b8d3c6cb25af7121e75c9d7cac94c",
+      "bytes": 6010
+    },
+    "model-00001-of-00008.safetensors": {
+      "sha256": "b477be7572f0ab3ae3cbba38d508cc33e70600b2045669c4ad848051c3432094",
+      "bytes": 3885154816
+    },
+    "model-00002-of-00008.safetensors": {
+      "sha256": "eb356aacae443e30f52712b1e98fadf206976365e2f5ee886321b0bb38c7cea8",
+      "bytes": 3995327992
+    },
+    "model-00003-of-00008.safetensors": {
+      "sha256": "cee9dbdf738ce61adb21c70ad5c5585747caaab6457c9ffc3bfa20d73127c2c6",
+      "bytes": 3995328080
+    },
+    "model-00004-of-00008.safetensors": {
+      "sha256": "b1201a6edcac8ef96a37040524fe37a5a84e446513ed40491e764a37302385fa",
+      "bytes": 3995338432
+    },
+    "model-00005-of-00008.safetensors": {
+      "sha256": "fbbda3cdee31895d0c57d617449af5579d219df34f3d63f7a23acbfe7fb0a647",
+      "bytes": 3979624824
+    },
+    "model-00006-of-00008.safetensors": {
+      "sha256": "f7ac652aa101717c97cfeccf5109985cca5b04529b57d3f4d2ec7a802266296b",
+      "bytes": 3995328080
+    },
+    "model-00007-of-00008.safetensors": {
+      "sha256": "e9115e615b575acb6e8b3a06524b32cbf7f680f07517125e4334f62c3f4acb0d",
+      "bytes": 3995328080
+    },
+    "model-00008-of-00008.safetensors": {
+      "sha256": "a77f603d8368749c19d3ac9cf2a300e476edcc794ea41af8e473ee12935eadb8",
+      "bytes": 1698703696
+    }
+  },
+  "b_ieee_copy_matched_those_file_sha256_on_20260919": true,
+  "weights_not_copied_into_this_pack": true,
+  "license_file": "third_party/Qwen2.5-14B-Instruct.LICENSE",
+  "license_as_recorded_on_local_snapshot": "Apache License 2.0"
+}
