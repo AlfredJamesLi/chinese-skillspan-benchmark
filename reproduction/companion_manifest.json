@@ -47,9 +47,9 @@
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "bytes": 3164,
-      "sha256": "37553ec10afd147043cba19efcdcf74dbf4a526f2002b5f7014c76f886ce7b98",
-      "git_blob_sha": "b28a0094fd9875d20ec51fc4bb75822c2c14ecf2"
+      "bytes": 3513,
+      "sha256": "cd8a8d40182bda5e598a53e741471aa7bdb4c4c9adbf619b574f13e5f067b8c0",
+      "git_blob_sha": "706d6775237e78aa6757eaab81023d8692aaa9b9"
     },
     {
       "path": "data/gold150/README.md",
@@ -245,9 +245,9 @@
     },
     {
       "path": "reproduction/PAPER_INDEX.md",
-      "bytes": 3671,
-      "sha256": "56ad5a375a21325c823161aca95f3895fc95f8c9a3346f0dc2ef277ae039e2b6",
-      "git_blob_sha": "68baeb594bf280a9cce413b2c381ef5cb98bb5c2"
+      "bytes": 3758,
+      "sha256": "c5a6179447e1709b8e272da8f1143c945d5f434ff1755a847c5f03d74bbc3a43",
+      "git_blob_sha": "1156f432c7fcd5d3d0ce6ced1aa3e6234f2d662b"
     },
     {
       "path": "reproduction/README.md",
@@ -272,6 +272,36 @@
       "bytes": 1848,
       "sha256": "53d1544758ba72257547e2c526fe896aea884f7b3b9bed36fdebccd82aac6379",
       "git_blob_sha": "2288c9db3358e3b563c71439bd395522a73178b3"
+    },
+    {
+      "path": "reproduction/benchmark_profile/README.md",
+      "bytes": 3976,
+      "sha256": "4a7dd951d05db1c508bb1e27ce7b4db2eb1cc9b0cdd65bac6c7f0d86a7a48c16",
+      "git_blob_sha": "812000f519c9cb538fb086c6b629fd7b8d2caf53"
+    },
+    {
+      "path": "reproduction/benchmark_profile/benchmark_profile.py",
+      "bytes": 10055,
+      "sha256": "5a05783e1df587d8834f46461548b7f123c338e4602326dbbf3276291906e9be",
+      "git_blob_sha": "e5a584253b4920da1849099da599aeac97119e78"
+    },
+    {
+      "path": "reproduction/benchmark_profile/benchmark_profile_data.json",
+      "bytes": 14127,
+      "sha256": "d013fd4a0399d9623b6512deed01e5cc26f50d5030e7d85ae723bf023bdb635c",
+      "git_blob_sha": "1d11a3644f78ae499298113f32e33d761a5c7341"
+    },
+    {
+      "path": "reproduction/benchmark_profile/benchmark_profile_summary.csv",
+      "bytes": 999,
+      "sha256": "5505f8eb16f5994eac443f96d63eb16017a9e0c1e9910f6d0b90e1146f7f20e9",
+      "git_blob_sha": "55de33346b92a658cdb93765dc1d93ab89493ff9"
+    },
+    {
+      "path": "reproduction/benchmark_profile/requirements.txt",
+      "bytes": 65,
+      "sha256": "791d5144a9003c8c3e8a1372a48266ef14b176316269ade24629adb1954b3d4a",
+      "git_blob_sha": "e93bc6704910a25a9bd192cdbf35ed81e33c0592"
     },
     {
       "path": "reproduction/current_results/README.md",
@@ -601,7 +631,7 @@
   "previous_manifest_git_blob": "2d1bffd1d4f59cbba41744914a18a48b8ee18245",
   "documentation_update": {
     "date": "2026-09-20",
-    "base_commit": "c2fcb572db070b892cf89936c6e8923eab237788",
-    "scope": "Align component-specific reuse terms and nine-author notice with Zenodo; clarify archive roles. Experimental materials and Apache-2.0 text unchanged. aligned_pdf_sha256 remains a historical reference."
+    "base_commit": "f1380af7280abf5ece7e378187d0bf50a48c6e34",
+    "scope": "Publish Figure 3 exact aggregate data and plotting code; frozen experimental predictions, scores, labels and model weights unchanged. aligned_pdf_sha256 remains a historical reference."
   }
 }

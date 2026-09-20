@@ -36,3 +36,7 @@ The [resource naming guide](PAPER_NAMES.md) and [file inventory](reproduction/ev
 [Coding agreement](reproduction/agreement/README.md) · [Qwen diagnostics](reproduction/qwen_diagnostics/README.md) · [Output outcomes](reproduction/output_outcomes/README.md) · [Supplementary tables](reproduction/supplementary_tables/README.md) · [Experimental details](reproduction/experimental_notes/README.md)
 
 Frozen data, prediction, parser, and scorer paths retain their original names. This keeps existing commands and archived checksums usable.
+
+## Recreate Figure 3
+
+The [annotation-profile reproduction guide](reproduction/benchmark_profile/README.md) provides exact aggregate counts, source-file hashes, the plotting script, and a pinned plotting environment. No recruitment text or model inference is needed to reconstruct this descriptive figure.

@@ -13,7 +13,7 @@ This index follows the September 18 manuscript. Topic names and stable LaTeX lab
 | Tables 8–10 | Annotation rules and examples | [Handbook](../notes/handbooks/handbook_B_sop_v4.md) |
 | Table 13 | Qwen per-seed results | [Per-seed CSV](current_results/qwen_runs.csv) |
 | Figures 1–2 | Workflow and annotation paths | [Figure assets](../figures/round2/README.md) |
-| Figure 3 | Annotation length and type distributions | [Current figure](../figures/round2/benchmark_profile.pdf); its source-data bundle is not included |
+| Figure 3 | Annotation length and type distributions | [Figure and reproduction files](benchmark_profile/README.md): exact length-frequency counts, type counts, source hashes, and plotting script |
 | Figure 4 | Boundary and type examples | [Figure assets](../figures/round2/README.md) |
 | Figure 5 | Qwen prediction diagnostics | [Diagnostic counts](qwen_diagnostics/README.md) |
 | Appendix D | Versions, access, and reproduction | [Reproduction guide](../REPRODUCIBILITY.md) |
