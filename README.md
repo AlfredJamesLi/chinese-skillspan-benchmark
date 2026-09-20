@@ -26,7 +26,7 @@ The task uses flat character spans with four types: language (L), knowledge (K),
 1. **Use the data:** download the [v0.1.3 archive](https://doi.org/10.5281/zenodo.22698504), then read the [human-reference guide](data/gold150/README.md) and [annotation handbook](notes/handbooks/handbook_B_sop_v4.md).
 2. **Inspect results:** open the [paper-to-file index](reproduction/PAPER_INDEX.md). It separates shared-guideline inference, supervised adaptation, and expanded-Silver experiments.
 3. **Reproduce a score:** follow the [evaluation guide](reproduction/EVALUATION_ENTRY.md) with the matching protocol and saved predictions.
-4. **Use a model:** see the [JobBERT model guide](docs/models.md). The encoder and CRF checkpoint have separate loading requirements.
+4. **Use a model:** see the [model guide](docs/models.md). The encoder and CRF checkpoint have separate loading requirements.
 
 ## Main fine-tuning comparisons
 
@@ -42,11 +42,12 @@ Training summaries are means and sample standard deviations across seeds 42, 43,
 | Resource | Entry |
 |---|---|
 | Versioned data archive | [Zenodo v0.1.3](https://doi.org/10.5281/zenodo.22698504) |
-| All archive versions | [Zenodo concept DOI](https://doi.org/10.5281/zenodo.22288337) |
+| Qwen LoRA adapters and frozen predictions | [Qwen model-reproduction archive](https://doi.org/10.5281/zenodo.22851581) |
+| All dataset archive versions | [Zenodo concept DOI](https://doi.org/10.5281/zenodo.22288337) |
 | JobBERT-zh initialization | [Hugging Face model](https://huggingface.co/AlfredJames/jobbert-zh) |
 | JobBERT-zh B2 continuation | [Hugging Face model](https://huggingface.co/AlfredJames/jobbert-zh-v6a) |
 
-The archive covers the earlier released benchmark components. Later expansion materials on GitHub are partial; complete expanded partitions and Qwen adapters are not supplied. [Availability and licensing](DATA_AVAILABILITY.md) describes what readers can obtain and reuse.
+The archive covers the earlier released benchmark components. Later expansion materials on GitHub are partial; complete expanded training partitions are not supplied. Qwen adapters and frozen predictions are available in the separate model-reproduction archive. [Availability and licensing](DATA_AVAILABILITY.md) describes what readers can obtain and reuse.
 
 ## Citation
 

@@ -17,6 +17,10 @@ python reproduction/verify_companion.py
 
 This check uses Python's standard library. It makes no model call, performs no training, and does not regenerate predictions.
 
+## Qwen adapters and frozen predictions
+
+Download the [Qwen model-reproduction archive](https://doi.org/10.5281/zenodo.22851581) and follow the included `README.md`. `MODEL_INDEX.csv` maps the three B2 seeds and the selected expanded-pool adapters to checkpoints and predictions. The archive includes loading configurations, frozen prompts, the occurrence parser, Gold150, scoring tools and an offline-scoring receipt. It excludes base-model weights and complete expanded training texts. The shared-guideline package does not replace the historical JSON-offset experiment.
+
 ## Match the experiment
 
 - **Shared-guideline inference:** six configurations evaluated on the 150-sentence human reference.
