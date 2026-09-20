@@ -18,7 +18,7 @@ This index follows the September 18 manuscript. Topic names and stable LaTeX lab
 | Figure 5 | Qwen prediction diagnostics | [Diagnostic counts](qwen_diagnostics/README.md) |
 | Appendix D | Versions, access, and reproduction | [Reproduction guide](../REPRODUCIBILITY.md) |
 
-The [agreement guide](agreement/README.md) reports which recent human-export summaries are available locally versus publicly. The expanded-study guide identifies the release limits for the final partitions and adapters.
+The [agreement guide](agreement/README.md) reports which recent human-export summaries are available locally versus publicly. The expanded-study guide links the published adapters and frozen predictions and identifies the remaining access limits for the complete final training partitions.
 
 <details>
 <summary>Earlier table numbers and their retained supplementary locations</summary>

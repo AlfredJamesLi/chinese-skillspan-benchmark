@@ -166,7 +166,7 @@ Funding: National Social Science Fund of China, Grant No. **21BGL142**.
 
 ## Authors
 
-Guojing Li (Renmin University of China; City University of Hong Kong) and Zichuan Fu (City University of Hong Kong) contributed equally. Junyi Li, Wenlin Zhang, Kaifeng Guo, Jinning Yang, Jingtong Gao, and Xiangyu Zhao are with City University of Hong Kong. Corresponding author: Xiangyu Zhao (`xianzhao@cityu.edu.hk`).
+Guojing Li (Renmin University of China; City University of Hong Kong) and Zichuan Fu (City University of Hong Kong) contributed equally. Junyi Li, Wenlin Zhang, Kaifeng Guo, Jinning Yang, Jingtong Gao, and Xiangyu Zhao are with City University of Hong Kong. Xinyang Wu is with Wuhan University. Author order follows the [project citation](../../CITATION.cff). Corresponding author: Xiangyu Zhao (`xianzhao@cityu.edu.hk`).
 
 ---
 

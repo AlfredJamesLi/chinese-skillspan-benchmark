@@ -248,7 +248,7 @@ Token-length statistics for publication should be computed from `data/corpus_spl
 
 ## Citation
 
-Guojing Li, Zichuan Fu, Junyi Li, Wenlin Zhang, Kaifeng Guo, Jinning Yang, Jingtong Gao, Xiangyu Zhao. *Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements*. 2026. https://doi.org/10.5281/zenodo.22288338.
+Guojing Li, Zichuan Fu, Junyi Li, Wenlin Zhang, Kaifeng Guo, Jinning Yang, Xinyang Wu, Jingtong Gao, Xiangyu Zhao. *Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements*. 2026. https://doi.org/10.5281/zenodo.22288338.
 
 Funding: National Social Science Fund of China, Grant No. **21BGL142**.
 

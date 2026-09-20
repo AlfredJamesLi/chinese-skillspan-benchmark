@@ -22,6 +22,8 @@ GitHub tags `v0.1.0` and `v0.1.1` have been withdrawn because those snapshots co
 
 The Qwen archive is a separate model record, not a new version of the dataset. It includes Gold150 for scoring and split identifiers, but excludes base-model weights and complete B2/expanded-Silver training texts. Its `README.md` and `MODEL_INDEX.csv` provide loading instructions and checkpoint-to-experiment mappings.
 
+For the corrected nine-author citation and notes on wording retained inside the ZIP files, see [archive notes](docs/archive_notes.md). The published record metadata and current [CITATION.cff](CITATION.cff) supersede older embedded author lists.
+
 ## Reuse conditions
 
 Author decision (2026-09-18): the archived corpus, labels, guidelines, and released checkpoints may be used for **academic research and peer review**. Recruitment notices were purchased from a commercial compiler of publicly posted advertisements. That permission is **not** a general open-content or commercial-redistribution licence on the original wording.
