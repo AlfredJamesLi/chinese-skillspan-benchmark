@@ -26,12 +26,16 @@ For the corrected nine-author citation and notes on wording retained inside the 
 
 ## Reuse conditions
 
-Author decision (2026-09-18): the archived corpus, labels, guidelines, and released checkpoints may be used for **academic research and peer review**. The commercially acquired portion was purchased from MacroData (马克数据网); other portions were collected by the research team from public recruitment pages or obtained from Alibaba Cloud Tianchi dataset 163746. See [data sources and collection](docs/data_sources.md) for the acquisition routes. That permission is **not** a general open-content or commercial-redistribution licence on the original wording.
+Reuse terms vary by component; see [LICENSE](LICENSE) for the applicable scope.
 
-- **Software and original documentation:** consult [LICENSE](LICENSE) for the repository's proposed Apache-2.0 notice and its scope.
-- **Advertisement wording:** academic research use is permitted. The authors do not grant CC-BY on the original wording. Do not treat public download access as permission to republish the advertisements commercially.
-- **JobBERT weights:** the Hugging Face cards currently use `license: other` and follow the academic-research scope.
-- **Qwen reproduction package:** consult its `LICENSE_NOTICE.md` and component notices. The new record uses component-specific terms; it does not grant a blanket licence over the package or adapter weights.
-- **Earlier dataset Zenodo page label:** the GitHub–Zenodo hook still displays `cc-by-4.0` on the record. That platform default is **not** the author grant. The author grant is academic research use, as stated here.
+- **Software and documentation explicitly covered by the repository's Apache-2.0 notice:** retain that licence.
+- **Original annotations and research materials:** the authors permit academic research and peer review, with appropriate attribution, to the extent that they hold the necessary rights.
+- **Third-party recruitment text:** excluded from this author-granted permission. Its reuse remains subject to applicable source terms, permissions, and statutory exceptions. Inclusion in an archive does not transfer ownership or grant additional redistribution rights.
+- **Model weights and adapters:** follow the notices accompanying their respective releases and the applicable base-model licences. For Qwen, consult the reproduction package's `LICENSE_NOTICE.md` and component notices.
+- **Zenodo record metadata:** the [v0.1.3 dataset record](https://doi.org/10.5281/zenodo.22698504) uses component-specific reuse terms. The [repository snapshot tagged qwen-repro-pack-20260919](https://doi.org/10.5281/zenodo.22846011) belongs to the same dataset/project version series; it is distinct from the [complete Qwen model-reproduction archive](https://doi.org/10.5281/zenodo.22851581).
+
+The authors confirm that recruitment texts were obtained through lawful channels and that academic research use has been confirmed. The acquisition routes comprise purchased MacroData collections, public recruitment pages collected by the research team, and Alibaba Cloud Tianchi dataset 163746. See [data sources and collection](docs/data_sources.md).
+
+Existing valid licences are unaffected by this clarification.
 
 Original vendor CSV/XLSX exports are not part of the public data package. Questions about additional artifacts or permitted reuse should be directed to the corresponding author identified in the project citation metadata. Availability on request is not promised for artifacts that have no documented access arrangement.

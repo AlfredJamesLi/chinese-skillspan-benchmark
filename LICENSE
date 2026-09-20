@@ -1,12 +1,11 @@
-Status: proposed PeerJ repository notice (2026-09-11). Corresponding author
-Xiangyu Zhao should confirm before this is treated as the final grant. Do not
-describe job-advertisement wording as CC-BY.
+Chinese-SkillSpan — component-specific reuse terms
+Updated 2026-09-20 to align with the published Zenodo record metadata.
 
 Copyright 2026 Guojing Li, Zichuan Fu, Junyi Li, Wenlin Zhang, Kaifeng Guo,
-Jinning Yang, Jingtong Gao, and Xiangyu Zhao.
+Jinning Yang, Xinyang Wu, Jingtong Gao, and Xiangyu Zhao.
 
-This repository contains software and a research dataset. They are licensed
-separately.
+Reuse terms vary by component. The permissions below apply only to rights
+held by the authors. Existing valid licences are unaffected by this clarification.
 
 ---------------------------------------------------------------------------
 1. Software — Apache License 2.0
@@ -29,33 +28,39 @@ under the License.
 
 The full Apache License 2.0 text is included below.
 
-This software grant does **not** re-license third-party code. The JobBERT-zh
-backbone `hfl/chinese-roberta-wwm-ext` is listed as Apache-2.0 on Hugging
-Face. Hugging Face model repositories `AlfredJames/jobbert-zh`,
-`AlfredJames/jobbert-zh-1m`, and `AlfredJames/jobbert-zh-v6a` remain
-`license: other`. Academic research use of the underlying advertisement
-text is confirmed (see `DATA_AVAILABILITY.md`); that confirmation is not
-a CC-BY grant on the wording or on these weights.
+This software grant does not re-license third-party code. Third-party
+components retain their respective licences. Model weights and adapters
+are governed by the notices accompanying their respective releases and
+the applicable base-model licences. See docs/models.md for the model guide.
 
 ---------------------------------------------------------------------------
-2. Dataset and job-advertisement wording — not CC-BY
+2. Annotations, research materials, and recruitment text
 ---------------------------------------------------------------------------
 
-Annotation files, predefined splits, frozen predictions, handbooks, and
-accompanying sentence strings under `data/` and `notes/handbooks/` are
-released for academic research and peer review of the Chinese-SkillSpan
-paper. Recruitment notices were purchased from a commercial compiler of
-publicly posted advertisements. Author decision (2026-09-18): academic
-research use of the public archive is permitted.
+For original annotations and research materials over which the authors hold
+the necessary rights, the authors permit use for academic research and peer
+review, with appropriate attribution. This includes the author-controlled
+contributions to annotation files, predefined splits, frozen predictions,
+and handbooks. Software and documentation covered by section 1 retain
+their Apache-2.0 licence.
 
-This is **not** an author grant of CC-BY-4.0 (or any other open content
-licence) on original job-advertisement wording, and it is not a grant of
-commercial redistribution rights. A Zenodo GitHub hook may still display
-`cc-by-4.0` as the platform default; that label is not this notice.
+Third-party recruitment text is excluded from this author-granted permission.
+Its reuse remains subject to applicable source terms, permissions, and
+statutory exceptions. Inclusion in this repository or an archive does not
+transfer ownership of that text or grant additional redistribution rights.
 
-Do not upload the laboratory CSV / XLSX vendor dumps with this repository.
+The authors confirm that the recruitment texts were obtained through lawful
+channels and that academic research use has been confirmed. The three
+acquisition routes are purchased MacroData collections, public recruitment
+pages collected by the research team, and Alibaba Cloud Tianchi dataset
+163746. See docs/data_sources.md for the source and collection details.
 
-See `DATA_AVAILABILITY.md`.
+The dataset archive (doi:10.5281/zenodo.22698504) and repository snapshot
+(doi:10.5281/zenodo.22846011) use component-specific reuse terms. The separate
+Qwen reproduction archive (doi:10.5281/zenodo.22851581) provides its own
+LICENSE_NOTICE.md and third-party notices.
+
+See DATA_AVAILABILITY.md for available materials and access information.
 
 ---------------------------------------------------------------------------
 3. Apache License 2.0 (software, section 1)
