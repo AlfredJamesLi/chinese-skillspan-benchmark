@@ -60,3 +60,5 @@ Related English resource: Zhang et al. (2022), [SkillSpan](https://aclanthology.
 This resource supports analysis of recruitment text, not measurement or profiling of individual applicants. The selected human reference is not a random population sample. Source wording has separate reuse conditions from the software; see [LICENSE](LICENSE) and [data access](DATA_AVAILABILITY.md).
 
 Supported by the National Social Science Fund of China, Grant No. 21BGL142.
+
+Data provenance: [data sources and collection](docs/data_sources.md).

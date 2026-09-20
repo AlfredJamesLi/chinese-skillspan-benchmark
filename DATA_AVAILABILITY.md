@@ -26,7 +26,7 @@ For the corrected nine-author citation and notes on wording retained inside the 
 
 ## Reuse conditions
 
-Author decision (2026-09-18): the archived corpus, labels, guidelines, and released checkpoints may be used for **academic research and peer review**. Recruitment notices were purchased from a commercial compiler of publicly posted advertisements. That permission is **not** a general open-content or commercial-redistribution licence on the original wording.
+Author decision (2026-09-18): the archived corpus, labels, guidelines, and released checkpoints may be used for **academic research and peer review**. The commercially acquired portion was purchased from MacroData (马克数据网); other portions were collected by the research team from public recruitment pages or obtained from Alibaba Cloud Tianchi dataset 163746. See [data sources and collection](docs/data_sources.md) for the acquisition routes. That permission is **not** a general open-content or commercial-redistribution licence on the original wording.
 
 - **Software and original documentation:** consult [LICENSE](LICENSE) for the repository's proposed Apache-2.0 notice and its scope.
 - **Advertisement wording:** academic research use is permitted. The authors do not grant CC-BY on the original wording. Do not treat public download access as permission to republish the advertisements commercially.
