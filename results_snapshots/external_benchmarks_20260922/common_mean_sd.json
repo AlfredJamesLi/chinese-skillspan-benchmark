@@ -1,0 +1,210 @@
+[
+  {
+    "dataset": "skillspan",
+    "task": "tags_skill",
+    "model": "FacebookAI/xlm-roberta-large",
+    "n": 3,
+    "mean": 0.5673634038480249,
+    "sd": 0.012056481978527706,
+    "seeds": [
+      0.5664044423877834,
+      0.5558150397010743,
+      0.579870729455217
+    ]
+  },
+  {
+    "dataset": "skillspan",
+    "task": "tags_skill",
+    "model": "jjzha/esco-xlm-roberta-large",
+    "n": 3,
+    "mean": 0.5772883811702446,
+    "sd": 0.005596175855796052,
+    "seeds": [
+      0.5714285714285714,
+      0.5825771324863884,
+      0.577859439595774
+    ]
+  },
+  {
+    "dataset": "skillspan",
+    "task": "tags_knowledge",
+    "model": "FacebookAI/xlm-roberta-large",
+    "n": 3,
+    "mean": 0.6984502935403122,
+    "sd": 0.021376996293419645,
+    "seeds": [
+      0.7133497133497133,
+      0.708044099632503,
+      0.6739570676387201
+    ]
+  },
+  {
+    "dataset": "skillspan",
+    "task": "tags_knowledge",
+    "model": "jjzha/esco-xlm-roberta-large",
+    "n": 3,
+    "mean": 0.6717080782643002,
+    "sd": 0.05169562961609347,
+    "seeds": [
+      0.6972694895132568,
+      0.6122112211221122,
+      0.7056435241575315
+    ]
+  },
+  {
+    "dataset": "kompetencer",
+    "task": "tags_skill",
+    "model": "FacebookAI/xlm-roberta-large",
+    "n": 3,
+    "mean": 0.5447360039683126,
+    "sd": 0.027622235957850315,
+    "seeds": [
+      0.5271966527196653,
+      0.5765765765765766,
+      0.5304347826086957
+    ]
+  },
+  {
+    "dataset": "kompetencer",
+    "task": "tags_skill",
+    "model": "jjzha/esco-xlm-roberta-large",
+    "n": 3,
+    "mean": 0.5272157173676294,
+    "sd": 0.00444248310163523,
+    "seeds": [
+      0.5220883534136547,
+      0.5296442687747036,
+      0.5299145299145299
+    ]
+  },
+  {
+    "dataset": "kompetencer",
+    "task": "tags_knowledge",
+    "model": "FacebookAI/xlm-roberta-large",
+    "n": 3,
+    "mean": 0.618094178717093,
+    "sd": 0.03477456162460024,
+    "seeds": [
+      0.6129032258064516,
+      0.5862068965517241,
+      0.6551724137931034
+    ]
+  },
+  {
+    "dataset": "kompetencer",
+    "task": "tags_knowledge",
+    "model": "jjzha/esco-xlm-roberta-large",
+    "n": 3,
+    "mean": 0.5934026986658565,
+    "sd": 0.04388588314653975,
+    "seeds": [
+      0.6031746031746031,
+      0.5454545454545454,
+      0.631578947368421
+    ]
+  },
+  {
+    "dataset": "gnehm",
+    "task": "tags_skill",
+    "model": "FacebookAI/xlm-roberta-large",
+    "n": 3,
+    "mean": 0.8907319921573773,
+    "sd": 0.005092187078166928,
+    "seeds": [
+      0.8919694072657743,
+      0.8950914340712224,
+      0.8851351351351351
+    ]
+  },
+  {
+    "dataset": "gnehm",
+    "task": "tags_skill",
+    "model": "jjzha/esco-xlm-roberta-large",
+    "n": 3,
+    "mean": 0.8674376649920128,
+    "sd": 0.03211509999895748,
+    "seeds": [
+      0.8303870043000477,
+      0.8846153846153846,
+      0.8873106060606061
+    ]
+  },
+  {
+    "dataset": "green",
+    "task": "tags_skill",
+    "model": "FacebookAI/xlm-roberta-large",
+    "n": 3,
+    "mean": 0.49284104230448206,
+    "sd": 0.009424837709137043,
+    "seeds": [
+      0.500875656742557,
+      0.48246674727932287,
+      0.4951807228915663
+    ]
+  },
+  {
+    "dataset": "green",
+    "task": "tags_skill",
+    "model": "jjzha/esco-xlm-roberta-large",
+    "n": 3,
+    "mean": 0.4915005854639464,
+    "sd": 0.007451544690188391,
+    "seeds": [
+      0.4829239065308568,
+      0.4963855421686747,
+      0.4951923076923077
+    ]
+  },
+  {
+    "dataset": "sayfullina",
+    "task": "tags_skill",
+    "model": "FacebookAI/xlm-roberta-large",
+    "n": 3,
+    "mean": 0.9196570870218019,
+    "sd": 0.0036056573441503484,
+    "seeds": [
+      0.916554869868527,
+      0.9188034188034188,
+      0.9236129723934602
+    ]
+  },
+  {
+    "dataset": "sayfullina",
+    "task": "tags_skill",
+    "model": "jjzha/esco-xlm-roberta-large",
+    "n": 3,
+    "mean": 0.9253373884925828,
+    "sd": 0.004818049529457065,
+    "seeds": [
+      0.9202684563758389,
+      0.9258861439312567,
+      0.9298575651706531
+    ]
+  },
+  {
+    "dataset": "fijo",
+    "task": "tags_skill",
+    "model": "FacebookAI/xlm-roberta-large",
+    "n": 3,
+    "mean": 0.34294878349656477,
+    "sd": 0.018938912630678817,
+    "seeds": [
+      0.3279742765273312,
+      0.33663366336633666,
+      0.36423841059602646
+    ]
+  },
+  {
+    "dataset": "fijo",
+    "task": "tags_skill",
+    "model": "jjzha/esco-xlm-roberta-large",
+    "n": 3,
+    "mean": 0.3387037181733219,
+    "sd": 0.007332225718421524,
+    "seeds": [
+      0.33112582781456956,
+      0.34576271186440677,
+      0.3392226148409894
+    ]
+  }
+]
