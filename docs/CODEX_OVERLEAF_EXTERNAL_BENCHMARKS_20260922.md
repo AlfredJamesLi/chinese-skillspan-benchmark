@@ -2,11 +2,12 @@
 
 把下面整段交给 **Codex（论文/Overleaf 维护者）**。Cursor 不改 Overleaf。只填已验收数字。禁止脑补、禁止把未跑格子写成完成、禁止把 IEEE 10-epoch 填进本表。
 
-机器可读备份（GitHub 即将推送的快照，以及服务器路径）：
+机器可读备份（已推 GitHub `results/external-benchmarks-20260922`，commit `166b882`）：
 
+- https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/results/external-benchmarks-20260922/results_snapshots/external_benchmarks_20260922
+- 提示词：https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/results/external-benchmarks-20260922/docs/CODEX_OVERLEAF_EXTERNAL_BENCHMARKS_20260922.md
 - 服务器：`/home/guojingli3/cnss_external_benchmarks_20260921/receipts/paper_ready_tables_20260922.json`
 - `results.jsonl`（逐 seed）、`comparisons.jsonl`（句级配对 bootstrap 2000，seed 20260921）
-- 仓库快照目录名：`results_snapshots/external_benchmarks_20260922/`
 
 **B 上本批次 GPU 矩阵已跑完。** 队列空。下面“unavailable”的项从未在 B 上得到原协议结果。
 
