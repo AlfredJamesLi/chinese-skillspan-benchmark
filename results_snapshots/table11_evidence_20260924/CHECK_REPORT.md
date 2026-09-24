@@ -1,4 +1,4 @@
-# Table 11 check report (2026-09-24, server B / DS210039)
+# Table 11 check report (2026-09-24)
 
 ## 1. Recovered execution
 
@@ -87,11 +87,6 @@ Re-inference from the six checkpoints on 2026-09-24 (GPU 1, same venv): **0/150 
 
 Empty-gold false positives (8 gold sentences with zero spans): XLM-R 42 predicted spans on 3 of them (`1804-s0005`, `1815-s0008`, `1816-s0012`). Other seeds differ; see `cell_reports.json`. These are scored as FP in typed exact, not hidden.
 
-## 4. What was not done / not claimed
+## 4. Scope
 
-- No retraining.
-- No overwrite of original `gold150_official.json` or `results.jsonl`.
-- Canonical weights are on Hugging Face (six public repos; see `HF_RELEASE.md`).
-- Additional Zenodo archive https://doi.org/10.5281/zenodo.22937245 (concept https://doi.org/10.5281/zenodo.22937244) holds the audit pack, tokenizer/config sidecars, model cards, and weight SHA-256. The 2.1 GiB `model.safetensors` files are not on that record.
-- Dataset DOIs v0.1.1 / v0.1.2 / v0.1.3, Qwen LoRA 22851581, and corpus record 22846011 were not modified.
-- Base-encoder URLs, JobBERT-zh, and Qwen Zenodo packs are **not** release locations for these six models.
+This check does not retrain models and does not replace the original `gold150_official.json` or `results.jsonl` files. The six weight files are on Hugging Face (`HF_RELEASE.md`). The Zenodo archive https://zenodo.org/records/22937244 stores this audit pack, tokenizer/config sidecars, and SHA-256 checksums; the 2.1 GiB `model.safetensors` files are served from Hugging Face. The Chinese-SkillSpan corpus snapshots (v0.1.1–v0.1.3) are separate records.

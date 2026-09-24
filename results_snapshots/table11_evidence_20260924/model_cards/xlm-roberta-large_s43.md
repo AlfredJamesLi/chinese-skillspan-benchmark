@@ -23,7 +23,7 @@ base_model_revision: c23d21b0620b635a76227c604d44e43a9f0ee389
 
 Hub: [`AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s43`](https://huggingface.co/AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s43)
 
-This is **not** JobBERT-zh CRF, **not** [`AlfredJames/jobbert-zh`](https://huggingface.co/AlfredJames/jobbert-zh) / [`jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a), and **not** the fill-mask checkpoint [`FacebookAI/xlm-roberta-large`](https://huggingface.co/FacebookAI/xlm-roberta-large). It is a **new** `XLMRobertaForTokenClassification` linear head trained on Silver-plus B2 (2,150 / 169) with `run_chinese_encoder.py`.
+`XLMRobertaForTokenClassification` fine-tuned on Silver-plus B2 (2,150 train / 169 development sentences) with `run_chinese_encoder.py`. Separate from the JobBERT-zh CRF models ([`AlfredJames/jobbert-zh`](https://huggingface.co/AlfredJames/jobbert-zh), [`jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a)) and from the original fill-mask checkpoint [`FacebookAI/xlm-roberta-large`](https://huggingface.co/FacebookAI/xlm-roberta-large).
 
 Paper cell (three-seed mean ± sample SD, this encoder): **0.522 ± 0.022** typed exact micro-F1 on Gold150. This repository is **seed 43 only**.
 
@@ -44,7 +44,7 @@ Gold150 is a 150-sentence **human reference freeze** (663 spans, L=2), not a new
 | `config.json` | `XLMRobertaForTokenClassification`, labels B-/I- K,L,S,T and O | |
 | tokenizer files | Copied from `FacebookAI/xlm-roberta-large@c23d21b0620b635a76227c604d44e43a9f0ee389` | |
 
-Do not load this URL as a masked-LM. The original `FacebookAI/xlm-roberta-large` `lm_head` was discarded; `classifier.weight/bias` were randomly initialized, then **all parameters** (encoder not frozen) were trained in float32.
+This checkpoint is a token classifier, not a masked language model. The `FacebookAI/xlm-roberta-large` `lm_head` was dropped; `classifier.weight` and `classifier.bias` were randomly initialized. The encoder was then trained together with the head in float32.
 
 ## Load
 
@@ -69,7 +69,6 @@ Matching inference: `https://github.com/AlfredJamesLi/chinese-skillspan-benchmar
 
 ## Limitations
 
-- Hub `license: other` (same as other Chinese-SkillSpan model cards). GitHub Apache-2.0 is for repository software, not these weights.
-- Do not mix with JobBERT-zh CRF ~0.55.
-- Do not treat Gold150 as an independent blind test.
-- Character-offset LSKT F1 is not an absolute difficulty ranking against English token-span F1.
+- Hub `license: other`. GitHub Apache-2.0 covers repository software, not these weights.
+- Gold150 is a frozen human reference, not a new blind test.
+- Character-offset LSKT F1 is not a single difficulty ranking against English token-span F1.

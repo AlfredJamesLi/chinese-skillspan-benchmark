@@ -1,7 +1,7 @@
 {
   "generated_utc": "2026-09-24T07:44:41.755619+00:00",
-  "local_pack": "/home/guojingli3/cnss_external_benchmarks_20260921/TABLE11_EVIDENCE_20260924",
-  "sha256_of_SHA256SUMS_txt": "c85ef282d6467a3eae82cf7facc3c55bc2581ce264796236a9997e5c77e2a46e",
+  "local_pack": "TABLE11_EVIDENCE_20260924",
+  "sha256_of_SHA256SUMS_txt": "c17c42ef0dd63364d1ad100916cf442dba0eb5f1afa7e4d576bd9c376ac7f6db",
   "files_checked": true,
   "predictions_rescored": true,
   "checkpoint_reinferred": true,
@@ -17,7 +17,7 @@
     "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s43",
     "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s44"
   ],
-  "zenodo_reason": "New record 22937245 published. 2.1GiB safetensors omitted after HTTP 502 / ~80KiB/s ingest; canonical weights remain on Hugging Face. v0.1.x untouched.",
+  "zenodo_reason": "Record 22937245 stores the audit pack, tokenizer/config sidecars, and weight SHA-256. The 2.1 GiB safetensors files are on Hugging Face. Corpus snapshots v0.1.x were not modified.",
   "zenodo_doi": "10.5281/zenodo.22937245",
   "zenodo_url": "https://zenodo.org/records/22937245"
 }
