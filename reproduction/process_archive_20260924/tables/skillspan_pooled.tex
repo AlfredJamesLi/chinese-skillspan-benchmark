@@ -1,0 +1,16 @@
+\begin{table}[H]
+\centering\small
+\caption{SkillSpan pooled HOUSE+TECH BIO rescoring of the same native runs.}
+\label{tab:external-native-pooled}
+\begin{tabularx}{\linewidth}{@{}Lrr@{}}
+\toprule
+Model & Skills & Knowledge \\
+\midrule
+BERT & $0.495\pm0.011$ & $0.639\pm0.005$ \\
+SpanBERT & $0.511\pm0.012$ & $0.632\pm0.009$ \\
+JobBERT & $0.525\pm0.008$ & $0.654\pm0.003$ \\
+JobSpanBERT & $0.522\pm0.008$ & $0.628\pm0.008$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight\footnotesize Mean $\pm$ sample SD across five seeds, on a 0--1 scale. Predictions were rescored using the correct BIO task column and pooled across HOUSE+TECH. These scores differ from averaging site F1 or applying the per-site MaChAmp scorer above. The native runs contain 3,570 sentences, compared with 3,569 in the common-protocol release; the one-record difference remains unresolved at the ID level.
+\end{table}

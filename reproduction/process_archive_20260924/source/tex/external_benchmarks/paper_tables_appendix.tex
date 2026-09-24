@@ -1,0 +1,74 @@
+\begin{table}[H]
+\centering\small
+\caption{Paired differences under the common protocol (ESCOXLM-R minus XLM-R).}
+\label{tab:external-common-ci}
+\begin{tabularx}{\linewidth}{@{}L P{.19\linewidth}rr@{}}
+\toprule
+Dataset & Stream & Mean difference & 95\% interval \\
+\midrule
+SkillSpan & Skill & $+0.010$ & $[-0.003, 0.023]$ \\
+SkillSpan & Knowledge & $-0.027$ & $[-0.041, -0.013]$ \\
+Kompetencer & Skill & $-0.018$ & $[-0.063, 0.022]$ \\
+Kompetencer & Knowledge & $-0.025$ & $[-0.102, 0.056]$ \\
+Gnehm ICT & ICT & $-0.023$ & $[-0.034, -0.013]$ \\
+Green & Native types & $-0.001$ & $[-0.021, 0.017]$ \\
+Sayfullina & Skill & $+0.006$ & $[-1.47\times10^{-5}, 0.011]$ \\
+FIJO & Native types & $-0.004$ & $[-0.043, 0.038]$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight\footnotesize Pointwise sentence-bootstrap intervals (2,000 resamples; seed 20260921), conditional on seeds 42/43/44. No advertisement clustering or multiple-comparison adjustment. Values are rounded after computing differences and intervals. Three decimal places are used except for Sayfullina's near-zero lower endpoint, shown with three significant digits in scientific notation to preserve its negative sign. Its interval includes zero.
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\caption{SkillSpan: published single-task TEST references and public-subset MaChAmp reruns (0--1; five seeds).}
+\label{tab:external-native}
+\begin{tabularx}{\linewidth}{@{}L P{.15\linewidth}rrr@{}}
+\toprule
+Model & Task & Published TEST & Rerun HOUSE & Rerun TECH \\
+\midrule
+BERT & Skills & $0.543\pm0.007$ & $0.496\pm0.013$ & $0.514\pm0.012$ \\
+BERT & Knowledge & $0.624\pm0.004$ & $0.550\pm0.004$ & $0.700\pm0.008$ \\
+SpanBERT & Skills & --- & $0.516\pm0.014$ & $0.526\pm0.014$ \\
+SpanBERT & Knowledge & --- & $0.536\pm0.017$ & $0.691\pm0.015$ \\
+JobBERT & Skills & $0.561\pm0.005$ & $0.534\pm0.014$ & $0.538\pm0.013$ \\
+JobBERT & Knowledge & $0.639\pm0.003$ & $0.577\pm0.004$ & $0.708\pm0.005$ \\
+JobSpanBERT & Skills & $0.566\pm0.008$ & $0.543\pm0.013$ & $0.519\pm0.010$ \\
+JobSpanBERT & Knowledge & $0.611\pm0.010$ & $0.546\pm0.018$ & $0.687\pm0.014$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight\footnotesize Published values are the TEST/STL results in Table 5 of \citet{zhang2022skillspan}, converted from percent and rounded to three decimal places; their HOUSE/TECH rows report development results. Our reruns use MaChAmp per-site span-F1 on public HOUSE+TECH, excluding BIG. The evaluation samples differ, so score differences cannot be interpreted as matched replication gaps. The source table gives no SpanBERT TEST score. Multi-task training was not rerun.
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\caption{SkillSpan pooled HOUSE+TECH BIO rescoring of the same native runs.}
+\label{tab:external-native-pooled}
+\begin{tabularx}{\linewidth}{@{}Lrr@{}}
+\toprule
+Model & Skills & Knowledge \\
+\midrule
+BERT & $0.495\pm0.011$ & $0.639\pm0.005$ \\
+SpanBERT & $0.511\pm0.012$ & $0.632\pm0.009$ \\
+JobBERT & $0.525\pm0.008$ & $0.654\pm0.003$ \\
+JobSpanBERT & $0.522\pm0.008$ & $0.628\pm0.008$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight\footnotesize Mean $\pm$ sample SD across five seeds, on a 0--1 scale. Predictions were rescored using the correct BIO task column and pooled across HOUSE+TECH. These scores differ from averaging site F1 or applying the per-site MaChAmp scorer above. The native runs contain 3,570 sentences, compared with 3,569 in the common-protocol release; the one-record difference remains unresolved at the ID level.
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\caption{German public ICT extraction: native-task recipes (0--1; five seeds).}
+\label{tab:external-gnehm}
+\begin{tabularx}{\linewidth}{@{}L P{.25\linewidth}rr@{}}
+\toprule
+Task/model & Recipe & Published & Rerun \\
+\midrule
+Public ICT: jobBERT-de & 20-epoch MaChAmp & --- & $0.885\pm0.010$ \\
+Public ICT: ESCOXLM-R & 5-epoch released recipe & $0.884\pm0.005$ & $0.891\pm0.005$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight\footnotesize Reruns use 2,557 test sentences. The published ESCOXLM-R score comes from Table 2 of \citet{zhang2023escoxlmr}, whose Table 1 reports 2,943 test sentences. These different releases prevent a matched comparison with the published score. No corresponding published jobBERT-de score is supplied. Epoch budgets differ between the two models here, unlike in the common-protocol comparison.
+\end{table}
+

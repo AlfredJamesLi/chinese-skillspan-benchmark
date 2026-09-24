@@ -1,0 +1,37 @@
+\FloatBarrier
+\section{Appendix E. External Benchmark Details}
+\phantomsection\label{app:e}
+\subsection{Original-task Reruns and Scoring}
+We reran BERT~\citep{devlin2019bert}, SpanBERT~\citep{joshi2020spanbert}, JobBERT, and JobSpanBERT~\citep{zhang2022skillspan} separately for skills and knowledge on SkillSpan's public HOUSE and TECH subsets. The MaChAmp~\citep{vandergoot2021machamp} \texttt{seq\_bio} CRF runs used 20 epochs, development-set checkpoint selection, and seeds 3477689, 4213916, 8749520, 6828303, and 9364029. BIG was unavailable, and we did not rerun the multi-task configuration. Table~\ref{tab:external-native} gives MaChAmp per-site span-F1. Table~\ref{tab:external-native-pooled} gives pooled HOUSE and TECH scores after BIO rescoring with the correct task column. These scoring procedures yield different results. The native runs contain 3,570 test sentences, compared with 3,569 in the common-protocol release; the one-record difference has not been resolved by matching IDs. For published test references, we use only the original paper's TEST/STL rows. Its HOUSE/TECH rows report development results.
+
+For German public ICT, jobBERT-de used a 20-epoch MaChAmp configuration and ESCOXLM-R used its released five-epoch configuration~\citep{zhang2023escoxlmr}. Both used seeds 276800, 381552, 497646, 624189, and 884832. To run ESCOXLM-R with newer MaChAmp, we added the required \texttt{shuffle}, \texttt{diverse}, and \texttt{reset\_transformer\_model} fields without changing the learning rate or epoch limit. The runs therefore use the public releases with compatibility changes, rather than recreating every original environment. They contain 2,557 test sentences, whereas the ESCOXLM-R paper reports 2,943. They cover ICT extraction, not the complete German EDU/EXP/LNG pipeline~\citep{gnehm2022skills}.
+
+\subsection{Data and Implementation Sources}
+We obtained the common-protocol data from the public Hugging Face releases of
+\href{https://huggingface.co/datasets/jjzha/skillspan}{SkillSpan},
+\href{https://huggingface.co/datasets/jjzha/kompetencer}{Kompetencer},
+\href{https://huggingface.co/datasets/jjzha/gnehm}{Gnehm ICT},
+\href{https://huggingface.co/datasets/jjzha/green}{Green},
+\href{https://huggingface.co/datasets/jjzha/sayfullina}{Sayfullina}, and
+\href{https://huggingface.co/datasets/jjzha/fijo}{FIJO}.
+The corresponding papers are cited in the evaluation protocol; preprocessing and splits in these releases may differ from the original studies. Code is available from the
+\href{https://github.com/kris927b/SkillSpan}{SkillSpan},
+\href{https://github.com/jjzha/kompetencer}{Kompetencer},
+\href{https://github.com/mainlp/escoxlmr}{ESCOXLM-R}, and
+\href{https://github.com/machamp-nlp/machamp}{MaChAmp} repositories.
+The \href{https://github.com/jjzha/nnose}{NNOSE repository} supplies the retrieval-augmented implementation used in the subsequent A100 experiments.
+Our linear-head protocol and compatibility changes are described above. Recorded revisions are listed in the experiment records below.
+
+\subsection{Uncertainty and Experiment Records}
+Table~\ref{tab:external-common-ci} gives the paired sentence-bootstrap intervals. Sayfullina's interval includes zero, although its lower endpoint is close to zero. Because the intervals are pointwise, exclusions of zero do not constitute significance tests adjusted for multiple comparisons. The intervals capture sentence sampling uncertainty conditional on the trained seeds; seed SD describes variation across runs. Neither accounts for dependence between sentences from the same advertisement.
+
+The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/46d1166f8e11dd52d473f645536074bb8dd0a53c/results_snapshots/external_benchmarks_20260922}{server-B experiment records} contain 104 completed training runs: 48 under the common protocol, six for Chinese transfer, 40 for SkillSpan, and ten for German ICT. We used XLM-R-large and ESCOXLM-R at repository revisions identified by the abbreviated commit hashes \texttt{c23d21b0} and \texttt{8093cc37}, respectively. The archive records the base-model revisions, but some dataset and executed-code identifiers remain unresolved. We recomputed means and sample SD from per-seed metrics and checked the paired differences and interval records for consistency. Table summaries use the unrounded per-seed metrics. These checks used the reported outputs; they did not independently rerun training, rescore predictions, or regenerate intervals. The common-protocol and Chinese records list prediction and configuration paths and hashes, but those entries alone do not provide the underlying files for independent verification. The linked audit documents missing execution and environment records; the archive is not a complete training package.
+
+All seeds remain in the encoder summaries. ESCOXLM-R selected epoch 1 for SkillSpan knowledge at seed 43 and epoch 2 for German ICT at seed 42. The largest mean decreases in the common-protocol comparison were 0.027 on SkillSpan knowledge and 0.023 on German ICT.
+
+The subsequent \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/b84f218b7142c97ab03a60499a9b30e7ec332cab/results_snapshots/a_native_20260924}{server-A archive} adds 30 Kompetencer classification training runs and six NNOSE training runs. Its 72 metric rows include two evaluation outputs per trained model; they are not 72 separate training runs. Classification means and sample SD were recomputed from the five-seed records, and NNOSE values and prediction hashes were checked for agreement between the summary and the result ledger. These checks establish consistency among the reported summaries; they do not independently rescore the predictions. The archive lists model revisions, software versions, and per-seed results.
+
+\input{tex/external_benchmarks/paper_tables_appendix}
+\FloatBarrier
+\input{tex/external_benchmarks/paper_A_native}
+\FloatBarrier

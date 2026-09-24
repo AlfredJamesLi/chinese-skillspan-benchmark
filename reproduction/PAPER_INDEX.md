@@ -42,3 +42,8 @@ The seven pruned tables retain Markdown, CSV block(s) and exact TeX. All favorab
 
 
 </details>
+
+
+## Exploratory and process records moved out of the manuscript (2026-09-24)
+
+The [supporting process archive](process_archive_20260924/README.md) preserves former Tables 13, 20 and 25 (numbering from the 43-page draft), including all Qwen subset rows, the execution-version ledger, alternate pooled SkillSpan scores and detailed audit histories. Primary results, scientific limitations and data-access status remain in the paper. The archive index explains scoring and comparability limits.

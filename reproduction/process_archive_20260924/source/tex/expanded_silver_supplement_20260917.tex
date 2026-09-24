@@ -1,0 +1,19 @@
+\subsection{Expanded Silver Subset Comparisons}
+Table~\ref{tab:expanded-silver-subsets} supplies the five subset runs that precede the pooled results in Table~\ref{tab:expanded-silver-main}. All use Qwen with occurrence-based output, the shared guidelines, and seed 42. The two Wave3 rows use the same candidate identifiers but different annotation channels and retained training sets. Full-development and train/validation/test (TVT) denote different checkpoint-selection arrangements.
+
+\begin{table}[htbp]
+\caption{Qwen subset results on Gold150. Together with Table~\ref{tab:expanded-silver-main}, these are the seven Qwen rows archived as Table H in the reproduction materials.}
+\label{tab:expanded-silver-subsets}
+\centering\small
+\begin{tabularx}{\linewidth}{@{}Lrcc@{}}
+\toprule
+Supervision subset & Training sentences & Exact F1 & Relaxed F1 \\
+\midrule
+Wave3, proxy labels & 1,678 & 0.587 & 0.717 \\
+Wave3, Codex labels & 1,579 & 0.585 & 0.699 \\
+Waves1--2, Codex labels & 3,159 & 0.575 & 0.695 \\
+New Silver, full-development selection & 7,117 & 0.588 & 0.710 \\
+New Silver, TVT selection & 7,117 & 0.573 & 0.709 \\
+\bottomrule
+\end{tabularx}
+\end{table}

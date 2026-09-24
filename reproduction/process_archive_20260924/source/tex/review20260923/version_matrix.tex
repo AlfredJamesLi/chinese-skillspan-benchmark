@@ -1,0 +1,20 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Execution versions and target roles. Version tracking does not establish label compatibility. Full identifiers and recorded freeze dates are listed in the accompanying revision audit.}
+\label{tab:execution-version-matrix}
+\begin{tabularx}{\linewidth}{@{}P{.18\linewidth}P{.26\linewidth}L@{}}
+\toprule
+Component & Recorded rule/protocol & Target and verification boundary \\
+\midrule
+Gold150 & Metadata: v4.2.10 & Frozen 150-sentence diagnostic reference; no complete v4.2.14 relabeling audit. \\
+B1 & Earlier extraction labels & Historical 2,156/169 manifests; a single executed handbook binding is not established. \\
+B2 & Reviewed initial layer plus v4.2.12-based bulk prompt & Revised supervision; 2,156/169 for JobBERT and 2,150/169 for Qwen. Later amendments are not retroactive. \\
+QA150 & Public-Silver review sample & Two machine-assisted human layers; final-guide blind reliability and per-record guide binding are not established. \\
+Proxy / Codex pools & Retained B2 plus public Silver prompt & Distinct 9,646/9,540 targets; channel and inclusion differ. Whole-pool rule compatibility is not established. \\
+Shared inference / Qwen & rev2 patch1; five examples & Occurrence parser v1.1; scorer cnss-lskt-1.2.0. Frozen separately from the teacher prompt and historical JSON-offset protocol. \\
+Current handbook & v4.2.14 & Reader-facing rules; not a replacement target for completed experiments. \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+Gold150: SHA-256 prefix \texttt{ca8db0bc386c}; teacher prompt: \texttt{a4505a51ebfe}; shared system prompt: \texttt{a1ed48a2d0fc}; parser: \texttt{a88e8bd740ac}. The prefixes identify files, not guide equivalence. Missing execution bindings must be resolved before a final-rule compatibility claim.
+\end{table}

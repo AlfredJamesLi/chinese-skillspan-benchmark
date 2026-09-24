@@ -1,0 +1,121 @@
+% [R19] Source-attributed presentation derivative of the bilingual V4.2.14 handbooks.
+% Source markers only: rules, examples, labels, and execution versions remain unchanged.
+% G1--G15 are display identifiers, not new normative rule IDs or a relabelled V4.2.9 image.
+% Crosswalk and source hashes: handbooks/ALIGNMENT_R18.md. No annotations are changed.
+\definecolor{guideL}{HTML}{DED9F7}
+\definecolor{guideK}{HTML}{C6ECEE}
+\definecolor{guideS}{HTML}{FFF0B0}
+\definecolor{guideT}{HTML}{CDEACF}
+\newcommand{\gspan}[2]{{\setlength{\fboxsep}{1.4pt}\colorbox{guide#1}{\strut [#2]\,\textsf{[#1]}}}}
+\newcommand{\gcontext}[1]{\textcolor{black!75}{#1}}
+\newcommand{\gsource}[1]{\,\textsuperscript{\textsf{[#1]}}}
+
+\section{Appendix A. Coding Guide and Examples}
+\phantomsection
+\label{app:a}
+\label{sec:handbook-current}
+This quick-reference guide follows the Chinese and English full handbooks, Handbook v4.2.14. It pairs operational decisions with highlighted Chinese examples, complementing Figure~\ref{fig:sktl-sample}. We adapt ESCO categories into the LSKT scheme for Chinese spans. The complete bilingual manuals and rule crosswalk accompany the manuscript source package. The version history and execution map appear in Section A.4.
+% Public v4.2.14 release is prepared separately; add its URL only after remote publication is verified.
+
+\subsection{A.1 Label definitions and context tests}
+Square brackets mark selected source substrings, with a separate type code after each span. Brackets, colours, and type codes are display aids and are not source characters; boundaries remain identifiable in grayscale. Examples illustrate the handbook, not an additional evaluation sample.
+
+\noindent\textit{Source key.} E: ESCO's \href{https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/skills-pillar}{skills hierarchy} and \href{https://esco.ec.europa.eu/en/about-esco/escopedia/escopedia/transversal-knowledge-skills-and-competences}{transversal concepts} \citep{ESCOv1_2_2024}; Q: EQF definitions \citep{council2017eqf}; Z: related annotation guidance in SkillSpan, Appendix B \citep{zhang2022skillspan}; I: unitization and categorization in agreement analysis \citep{artstein2008agreement}; P: our V4.2.14 operational decision. Combined marks indicate adaptation, not a verbatim source rule. Chinese examples and their exact boundaries are project illustrations.
+
+\begingroup
+\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.16}
+\begin{table}[H]
+\small
+\caption{Current LSKT decisions: definitions, examples, and contextual contrasts.}\label{tab:guide-types}
+\begin{tabular}{@{}P{0.18\linewidth}P{0.43\linewidth}P{\dimexpr0.39\linewidth-16pt\relax}@{}}
+\toprule
+\textbf{Label} & \textbf{Operational definition} & \textbf{Chinese example} \\
+\midrule
+
+L: Language & Natural-language proficiency, language names, levels, examinations, and certificates.\gsource{E,P} & \gspan{L}{英语六级}; \gspan{L}{日语N2} \\[4pt]
+K: Knowledge & Facts, principles, theory, and fields of knowledge.\gsource{Q} Education and non-language qualifications map to K by project convention.\gsource{P} & \gspan{K}{计算机专业};\par\smallskip\gspan{K}{本科及以上学历} \\[4pt]
+S: Occupational skill & Application of a tool or method, or an occupational activity indicated by the context.\gsource{Q,P} & \gcontext{使用}\gspan{S}{SQL};\par\smallskip\gspan{S}{数据分析} \\[4pt]
+T: Transversal competence & General communication, cooperation, cognition, self-management, and dispositions. Duties may also express T.\gsource{E,P} & \gspan{T}{客户汇报};\par\smallskip\gspan{T}{责任心} \\[4pt]
+Context test & Use versus principles distinguishes S from K; general coordination differs from a technical operation. No fixed label priority applies.\gsource{Q,E,P} & \gcontext{了解}\gspan{K}{SQL原理};\par\smallskip\gspan{T}{协调外部资源};\par\smallskip\gspan{S}{接口对接} \\
+\bottomrule
+\end{tabular}
+\end{table}
+\endgroup
+
+\Needspace{8\baselineskip}
+\subsection{A.2 General annotation decisions}
+G1--G15 are quick-reference identifiers. Their source sections and amendment IDs (R08--R23) are mapped in the release; they do not replace the handbook's rule numbering.
+
+\begingroup
+\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.13}
+\begin{table}[H]
+\small
+\caption{Annotation principles for target identity and complete source boundaries.}\label{tab:guide-boundaries}
+\begin{tabular}{@{}P{0.07\linewidth}P{0.49\linewidth}P{\dimexpr0.44\linewidth-16pt\relax}@{}}
+\toprule\textbf{Rule} & \textbf{Annotation principle} & \textbf{Chinese example}\\\midrule
+
+G1 & The annotation scheme distinguishes L, K, S, and T. Collapsed categories are used only in secondary evaluation.\gsource{E,P} & \gspan{L}{英语六级};\par\smallskip\gspan{K}{计算机专业};\par\smallskip\gspan{S}{数据分析}; \gspan{T}{责任心} \\[5pt]
+G2 & Final annotations contain non-overlapping spans. A sentence may contain several independent mentions, with each character assigned to at most one span.\gsource{P} & \gcontext{熟悉使用}\gspan{S}{Word}\gcontext{，}\gspan{S}{Excel}\gcontext{，}\gspan{S}{PPT}\gcontext{等办公软件}\par\smallskip No additional covering list span. \\[5pt]
+G3 & Each mention is a contiguous source substring that preserves spelling and internal spaces. Any normalization is stored separately.\gsource{Z,P} & \gcontext{熟悉 }\gspan{S}{Jekins}\par\smallskip Keep the source spelling, not \texttt{Jenkins}. \\[5pt]
+G4 & Annotators select the shortest span that expresses a complete requirement. Words and identifiers remain intact; completeness takes priority over length, with no fixed length cap.\gsource{Z,P} & \gspan{S}{支持服务}\par\smallskip Not the fragment \zh{支持服}. \\[5pt]
+G5 & Generic proficiency triggers usually remain outside the span, while heads needed to express the requirement remain inside. Excluded triggers can still inform type assignment.\gsource{Z,P} & \gcontext{会使用}\gspan{S}{Excel};\par\smallskip\gspan{T}{会聊天};\par\smallskip\gcontext{有}\gspan{T}{服务意识} \\[5pt]
+G6 & Coordinated items are separated when each remains meaningful in context. Shared qualifiers may stay outside the spans, and implied words are not added.\gsource{Z,P} & \gcontext{熟悉使用}\gspan{S}{Word}\gcontext{，}\gspan{S}{Excel}\gcontext{，}\gspan{S}{PPT}\gcontext{等办公软件}\par\smallskip Shared-experience case: see A.3. \\[5pt]
+G7 & A necessary action, object, or shared head remains within the span when splitting would change its meaning. Span length alone does not determine type.\gsource{Z,P} & \gspan{S}{优化曝光与转化率}\par\smallskip Isolated metric names would lose the optimization activity. \\
+\bottomrule
+\end{tabular}
+\end{table}
+\endgroup
+
+\begingroup
+\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.13}
+\begin{table}[H]
+\small
+\caption{Annotation principles for scope, experience, type, and unresolved records.}\label{tab:guide-scope}
+\begin{tabular}{@{}P{0.07\linewidth}P{0.49\linewidth}P{\dimexpr0.44\linewidth-16pt\relax}@{}}
+\toprule\textbf{Rule} & \textbf{Annotation principle} & \textbf{Chinese example}\\\midrule
+
+G8 & Benefits, company promotion, administrative instructions, experience durations, and pure outcomes are outside competency scope on their own. Mixed clauses are assessed separately.\gsource{Z,P} & \zh{五险一金，带薪年假} $\rightarrow$ \texttt{[]};\par\smallskip\gspan{S}{分析推广效果}\gcontext{，保证流量/用户增长} \\[5pt]
+G9 & Experience wording is omitted only when the remaining activity preserves the requirement. Necessary practical-experience wording is retained. Explicit industry background follows the handbook's broad-K convention. Experience wording is never added to the source.\gsource{P} & \gspan{S}{机器人竞赛经验}\par\smallskip Retain the suffix if a bare competition name changes the requirement; do not label generic \zh{经验} alone. \\[5pt]
+G10 & Education qualifications include their threshold wording. Language examinations and certificates receive L; non-language qualifications receive K.\gsource{Z,P} & \gspan{K}{本科及以上学历};\par\smallskip\gspan{L}{大学英语6级};\par\smallskip\gcontext{了解}\gspan{K}{ISO 27001}\par\smallskip Standard familiarity, not a claim of personal certification. \\[5pt]
+G11 & Tool and method mentions are typed from their predicate context. Occupational use supports S; principles or theory support a complete K phrase. Familiarity alone does not determine type.\gsource{Q,P} & \gcontext{使用}\gspan{S}{SQL};\par\smallskip\gcontext{了解}\gspan{K}{SQL原理} \\[5pt]
+G12 & Occupational functions are distinguished from general cognition, communication, and coordination. A duty clause may contain T; usefulness across industries alone does not establish T.\gsource{E,P} & \gspan{S}{编码能力};\par\smallskip\gspan{T}{沟通能力};\par\smallskip\gspan{T}{协调外部资源} \\[5pt]
+G13 & Scope, boundaries, and type are resolved separately, without a total label priority. Once scope and boundaries are valid, type-only uncertainty may receive provisional S with alternatives logged; this is excluded from final training targets.\gsource{I,P} & Heading alone: \zh{能力提升}\par\smallskip Insufficient scope evidence: record as unresolved, not a confirmed empty negative. \\[5pt]
+G14 & Offsets count original Unicode code points, beginning at zero and excluding the end position. The indexed substring must reproduce the mention exactly; segmentation is a derived view. It does not replace the fixed human-reference offsets.\gsource{P} & \texttt{text[start:end] == span}\par\smallskip \zh{句子原文、内部空格与偏移保持一致。} \\[5pt]
+G15 & Alternatives and overlaps are recorded separately from the final flat layer. An unresolved record is excluded in full from training, with confirmed empty, missing, and unresolved annotations distinguished.\gsource{P} & \zh{五险一金} $\rightarrow$ confirmed \texttt{[]};\par\smallskip\zh{能力提升} without context $\rightarrow$ unresolved.\par\smallskip Known partial spans do not make an unresolved record training-ready. \\
+\bottomrule
+\end{tabular}
+\end{table}
+\endgroup
+
+\subsection{A.3 Shared experience: split only when meaning survives}
+The V4.2.14 amendment (R23) clarifies a shared-experience construction.\gsource{P} Each occupational item below remains identifiable in context; the shared experience qualifier stays outside. Do not retain a covering span as well.
+
+\smallskip\noindent
+\begin{minipage}{\linewidth}\small\RaggedRight
+\gcontext{4、三年以上大中型}\gspan{S}{互联网公司经营}\gcontext{或}\gspan{S}{BI}\gcontext{相关工作经验，}\gspan{S}{互联网公司广告运营分析}\gcontext{优先；}
+\par\smallskip
+\textit{Three or more years of operations or BI experience in large or medium-sized internet companies; internet-company advertising operations analysis preferred.}
+\par\smallskip
+Selected offsets: $[9,16)$, $[17,19)$, and $[26,37)$. BI is S in this context, not by a universal dictionary rule. In contrast, G7 retains the shared action in \zh{优化曝光与转化率}; splitting must not leave bare outcomes. The earlier long span in the initial reviewed LLM-annotation dataset remains historical rather than being silently overwritten.
+\end{minipage}
+
+\subsection{A.4 Version boundaries and audit trail}
+\label{sec:guide-version-history}
+
+The human-reference metadata identify v4.2.10, while the original bulk-generation prompt follows v4.2.12. The current handbook is v4.2.14. Later amendments do not retrospectively change completed annotations. Table~\ref{tab:execution-version-matrix} identifies the labels and protocols used by each experiment, together with incomplete compatibility checks. Figure~\ref{fig:sktl-sample} and Tables~\ref{tab:guide-types}--\ref{tab:guide-scope} illustrate the current handbook; they are teaching materials rather than a relabeling of historical data.
+
+\input{tex/review20260923/version_matrix}
+
+\FloatBarrier
+\Needspace{4\baselineskip}
+
+The full manuals retain original text, old and new spans, rationale, rule, review method, and version. Human-reviewed Silver-plus remains supervision unless separately designated and isolated for evaluation. Historical V4.2.9 panels remain in the repository with their original agreement-study context; these current tables are separately identified.
+
+% [Stage 1] Keep execution binding distinct from later human guidance.
+
+
+
+The reproduction notes record version-specific changes to type conventions, scope eligibility, inclusion criteria, and shared-experience boundaries. They include the original and revised spans for the shared-experience example in A.3.
+
+\paragraph{Using the frozen reference.}
+For current evaluation, use the frozen human reference, shared protocol, occurrence schema, span parser, and span scorer. The naming guide maps these terms to exact files and versions; compatibility checks accompany the reproduction notes (\hyperref[app:d]{Appendix D}).
