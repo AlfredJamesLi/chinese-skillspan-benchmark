@@ -199,10 +199,10 @@
           ]
         },
         "paper_table11_rounded": {
-          "exact": "0.522 ± 0.022",
-          "relaxed": "0.65 ± 0.021",
-          "boundary": "0.571 ± 0.022",
-          "macro": "0.607 ± 0.016"
+          "exact": "0.522 \u00b1 0.022",
+          "relaxed": "0.65 \u00b1 0.021",
+          "boundary": "0.571 \u00b1 0.022",
+          "macro": "0.607 \u00b1 0.016"
         }
       },
       "esco-xlm-roberta-large": {
@@ -247,10 +247,10 @@
           ]
         },
         "paper_table11_rounded": {
-          "exact": "0.538 ± 0.021",
-          "relaxed": "0.662 ± 0.022",
-          "boundary": "0.582 ± 0.024",
-          "macro": "0.622 ± 0.01"
+          "exact": "0.538 \u00b1 0.021",
+          "relaxed": "0.662 \u00b1 0.022",
+          "boundary": "0.582 \u00b1 0.024",
+          "macro": "0.622 \u00b1 0.01"
         }
       }
     }
@@ -258,9 +258,16 @@
   "5_platforms": {
     "local_pack": "/home/guojingli3/cnss_external_benchmarks_20260921/TABLE11_EVIDENCE_20260924",
     "github_results_commit_preserved": "46d1166f8e11dd52d473f645536074bb8dd0a53c",
-    "github_audit_commit": "pending_push",
-    "hf_models": "not_published",
-    "zenodo_models": "not_published"
+    "github_audit_commit": "audit/table11-evidence-20260924 (will refresh after this receipt)",
+    "hf_models": [
+      "https://huggingface.co/AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s42",
+      "https://huggingface.co/AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s43",
+      "https://huggingface.co/AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s44",
+      "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s42",
+      "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s43",
+      "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s44"
+    ],
+    "zenodo_models": "not_published_no_token_on_this_host"
   },
   "delivery_status": {
     "files_checked": true,

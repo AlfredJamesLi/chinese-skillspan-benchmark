@@ -1,5 +1,5 @@
 {
-  "not_yet_public": true,
+  "not_yet_public": false,
   "local_pack": "/home/guojingli3/cnss_external_benchmarks_20260921/TABLE11_EVIDENCE_20260924",
   "preserve_github_results_commit": "46d1166f8e11dd52d473f645536074bb8dd0a53c",
   "include_in_github_audit_commit": [
@@ -26,5 +26,14 @@
     "https://huggingface.co/AlfredJames/jobbert-zh",
     "existing Qwen adapter Zenodo packages"
   ],
-  "authorization_needed_before_upload": "Hugging Face / Zenodo write access was not used in this audit; weights remain on the lab disk."
+  "authorization_needed_before_upload": "Hugging Face write succeeded as AlfredJames. Zenodo token is not present on this host.",
+  "huggingface_public": [
+    "https://huggingface.co/AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s42",
+    "https://huggingface.co/AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s43",
+    "https://huggingface.co/AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s44",
+    "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s42",
+    "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s43",
+    "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s44"
+  ],
+  "zenodo_models": "not_published_no_ZENODO_TOKEN_on_DS210039"
 }

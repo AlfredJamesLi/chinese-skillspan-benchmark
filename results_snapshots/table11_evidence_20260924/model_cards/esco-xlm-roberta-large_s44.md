@@ -1,59 +1,75 @@
 ---
-language: zh
+language:
+  - zh
+pretty_name: Table 11 LSKT linear head (esco-xlm-roberta-large, seed 44)
+library_name: transformers
+pipeline_tag: token-classification
+inference: false
+widget:
+  - text: "任职要求：熟练掌握Python和SQL，英语CET-6，具备良好的沟通与团队合作能力。"
+    example_title: "Chinese job advertisement"
+tags:
+  - chinese-skillspan
+  - lskt
+  - token-classification
+  - table11
+  - xlm-roberta
 license: other
 base_model: jjzha/esco-xlm-roberta-large
 base_model_revision: 8093cc37ac619a25c5166355acba7be878eb6402
-library_name: transformers
-pipeline_tag: token-classification
-tags:
-  - named-entity-recognition
-  - skill-extraction
-  - chinese-skillspan
-  - lskt
-  - table11
 ---
 
-# Table 11 Chinese LSKT linear head (esco-xlm-roberta-large, seed 44)
+# Table 11 Chinese LSKT linear head (`esco-xlm-roberta-large`, seed 44)
 
-This is **not** JobBERT-zh CRF and **not** the masked-LM checkpoint `jjzha/esco-xlm-roberta-large`.
-It is a new token-classification head trained on Silver-plus B2 (2,150 train / 169 dev) with `run_chinese_encoder.py`.
+Hub: [`AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s44`](https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s44)
+
+This is **not** JobBERT-zh CRF, **not** [`AlfredJames/jobbert-zh`](https://huggingface.co/AlfredJames/jobbert-zh) / [`jobbert-zh-v6a`](https://huggingface.co/AlfredJames/jobbert-zh-v6a), and **not** the fill-mask checkpoint [`jjzha/esco-xlm-roberta-large`](https://huggingface.co/jjzha/esco-xlm-roberta-large). It is a **new** `XLMRobertaForTokenClassification` linear head trained on Silver-plus B2 (2,150 / 169) with `run_chinese_encoder.py`.
+
+Paper cell (three-seed mean ± sample SD, this encoder): **0.538 ± 0.021** typed exact micro-F1 on Gold150. This repository is **seed 44 only**.
+
+| Seed | Selected epoch | Gold150 typed exact |
+|---:|---:|---:|
+| 44 | 10 | 0.557676 |
+
+Gold150 is a 150-sentence **human reference freeze** (663 spans, L=2), not a new blind test. Freeze SHA-256 `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0` ([`data/gold150_test.jsonl`](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/data/gold150_test.jsonl)).
+
+- Evidence pack: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/audit/table11-evidence-20260924/results_snapshots/table11_evidence_20260924
+- Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark
+
+## Files
+
+| File | Role | SHA-256 |
+|---|---|---|
+| `model.safetensors` | Fine-tuned encoder + 9-label linear head | `98ce01afc2a13fad9cd7db1458c55332df23651d4ce84f6a4d9c653d5b9c9524` |
+| `config.json` | `XLMRobertaForTokenClassification`, labels B-/I- K,L,S,T and O | |
+| tokenizer files | Copied from `jjzha/esco-xlm-roberta-large@8093cc37ac619a25c5166355acba7be878eb6402` | |
+
+Do not load this URL as a masked-LM. The original `jjzha/esco-xlm-roberta-large` `lm_head` was discarded; `classifier.weight/bias` were randomly initialized, then **all parameters** (encoder not frozen) were trained in float32.
 
 ## Load
 
 ```python
 from transformers import AutoModelForTokenClassification, AutoTokenizer
-tok = AutoTokenizer.from_pretrained(LOCAL_BEST_DIR, use_fast=True)
-model = AutoModelForTokenClassification.from_pretrained(LOCAL_BEST_DIR)
+repo = "AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s44"
+tok = AutoTokenizer.from_pretrained(repo, use_fast=True)
+model = AutoModelForTokenClassification.from_pretrained(repo)
 # labels: B-K B-L B-S B-T I-K I-L I-S I-T O
-# inputs: list(chinese_text) as words; score first subword of each character
+# inputs: list(chinese_text) as words; score the first subword of each character
 ```
 
-Local checkpoint (not a public URL until upload is approved):
+Matching inference: `https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/audit/table11-evidence-20260924/results_snapshots/table11_evidence_20260924/scripts/reinfer_gold150.py` (uses the original on-disk `best/` which is byte-identical to this Hub snapshot).
 
-`/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/44/best`
-
-SHA-256 of `model.safetensors`: `98ce01afc2a13fad9cd7db1458c55332df23651d4ce84f6a4d9c653d5b9c9524`
-
-Inference that matches the paper cell: `TABLE11_EVIDENCE_20260924/scripts/reinfer_gold150.py`.
-
-## Training data
+## Training
 
 - Train: `data/silver_plus_v6a_nocross/train_b2.jsonl` SHA-256 `8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e` (2,150)
-- Dev (model selection): `dev_b2.jsonl` SHA-256 `e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef` (169)
-- Gold150 is **eval-only**. It was not in the gradient and not in epoch selection.
-
-## Metrics (Gold150, official cnss-lskt-1.2.0 typed exact micro-F1)
-
-- seed 44, selected epoch 10: **0.557676**
-- Gold150 is a 150-sentence human reference freeze (663 spans, L=2), not a new blind test.
-
-## Head vs MLM
-
-`jjzha/esco-xlm-roberta-large@8093cc37ac619a25c5166355acba7be878eb6402` is fill-mask (`XLMRobertaForMaskedLM` or `RobertaForCustomMaskedLM`).
-Loading `AutoModelForTokenClassification` discards `lm_head` and randomly initializes `classifier.weight/bias` (1024×9). All encoder + classifier parameters were then fine-tuned in float32 (AdamW 2e-5, 20 epochs, batch 8).
+- Dev (epoch selection only): `dev_b2.jsonl` SHA-256 `e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef` (169)
+- Gold150 never entered the gradient or `history.json`
+- AdamW \(2\times10^{-5}\), batch 8, 20 epochs, seed 44, character BIO, first-subword, chunk 128
+- Scorer: `cnss-lskt-1.2.0` typed exact micro-F1
 
 ## Limitations
 
+- Hub `license: other` (same as other Chinese-SkillSpan model cards). GitHub Apache-2.0 is for repository software, not these weights.
 - Do not mix with JobBERT-zh CRF ~0.55.
-- Do not treat Gold150 as independent blind test.
-- Character-offset LSKT F1 is not comparable as absolute difficulty against English token-span F1.
+- Do not treat Gold150 as an independent blind test.
+- Character-offset LSKT F1 is not an absolute difficulty ranking against English token-span F1.

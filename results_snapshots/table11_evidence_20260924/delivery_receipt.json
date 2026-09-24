@@ -6,7 +6,16 @@
   "predictions_rescored": true,
   "checkpoint_reinferred": true,
   "full_training_rerun": false,
-  "huggingface_published": false,
+  "huggingface_published": true,
   "zenodo_models_published": false,
-  "github_results_commit_left_intact": "46d1166f8e11dd52d473f645536074bb8dd0a53c"
+  "github_results_commit_left_intact": "46d1166f8e11dd52d473f645536074bb8dd0a53c",
+  "huggingface_repos": [
+    "https://huggingface.co/AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s42",
+    "https://huggingface.co/AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s43",
+    "https://huggingface.co/AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s44",
+    "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s42",
+    "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s43",
+    "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s44"
+  ],
+  "zenodo_reason": "No ZENODO_TOKEN on DS210039; previous lab notes also recorded that this host cannot deposit to Zenodo."
 }
