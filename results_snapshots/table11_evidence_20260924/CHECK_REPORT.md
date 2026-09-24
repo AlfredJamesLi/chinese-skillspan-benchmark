@@ -91,5 +91,7 @@ Empty-gold false positives (8 gold sentences with zero spans): XLM-R 42 predicte
 
 - No retraining.
 - No overwrite of original `gold150_official.json` or `results.jsonl`.
-- Weights not uploaded to Hugging Face or Zenodo.
+- Canonical weights are on Hugging Face (six public repos; see `HF_RELEASE.md`).
+- Additional Zenodo archive https://doi.org/10.5281/zenodo.22937245 (concept https://doi.org/10.5281/zenodo.22937244) holds the audit pack, tokenizer/config sidecars, model cards, and weight SHA-256. The 2.1 GiB `model.safetensors` files are not on that record.
+- Dataset DOIs v0.1.1 / v0.1.2 / v0.1.3, Qwen LoRA 22851581, and corpus record 22846011 were not modified.
 - Base-encoder URLs, JobBERT-zh, and Qwen Zenodo packs are **not** release locations for these six models.
