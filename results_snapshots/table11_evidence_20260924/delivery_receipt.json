@@ -7,7 +7,7 @@
   "checkpoint_reinferred": true,
   "full_training_rerun": false,
   "huggingface_published": true,
-  "zenodo_models_published": false,
+  "zenodo_models_published": true,
   "github_results_commit_left_intact": "46d1166f8e11dd52d473f645536074bb8dd0a53c",
   "huggingface_repos": [
     "https://huggingface.co/AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s42",
@@ -17,5 +17,7 @@
     "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s43",
     "https://huggingface.co/AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s44"
   ],
-  "zenodo_reason": "No ZENODO_TOKEN on DS210039; previous lab notes also recorded that this host cannot deposit to Zenodo."
+  "zenodo_reason": "New record 22937245 published. 2.1GiB safetensors omitted after HTTP 502 / ~80KiB/s ingest; canonical weights remain on Hugging Face. v0.1.x untouched.",
+  "zenodo_doi": "10.5281/zenodo.22937245",
+  "zenodo_url": "https://zenodo.org/records/22937245"
 }
