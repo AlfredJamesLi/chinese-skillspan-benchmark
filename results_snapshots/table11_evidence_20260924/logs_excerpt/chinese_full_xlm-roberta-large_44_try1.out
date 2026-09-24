@@ -1,0 +1,29 @@
+
+# CMD /home/guojingli3/cnss_external_benchmarks_20260921/env/bin/python /home/guojingli3/cnss_external_benchmarks_20260921/run_chinese_encoder.py --model FacebookAI/xlm-roberta-large --revision c23d21b0620b635a76227c604d44e43a9f0ee389 --seed 44 --output /home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/44
+/home/guojingli3/cnss_external_benchmarks_20260921/env/lib/python3.10/site-packages/transformers/utils/hub.py:124: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/home/guojingli3/cnss_external_benchmarks_20260921/env/lib/python3.10/site-packages/huggingface_hub/file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+Some weights of XLMRobertaForTokenClassification were not initialized from the model checkpoint at FacebookAI/xlm-roberta-large and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+{"epoch": 1, "train_loss": 0.9357060983428638, "dev": {"tp": 110, "gold": 345, "pred": 434, "precision": 0.2534562211981567, "recall": 0.3188405797101449, "f1": 0.28241335044929394}}
+{"epoch": 2, "train_loss": 0.36680913025097883, "dev": {"tp": 198, "gold": 345, "pred": 494, "precision": 0.4008097165991903, "recall": 0.5739130434782609, "f1": 0.4719904648390942}}
+{"epoch": 3, "train_loss": 0.2547355890409098, "dev": {"tp": 218, "gold": 345, "pred": 417, "precision": 0.5227817745803357, "recall": 0.6318840579710145, "f1": 0.5721784776902887}}
+{"epoch": 4, "train_loss": 0.17367110964498758, "dev": {"tp": 216, "gold": 345, "pred": 392, "precision": 0.5510204081632653, "recall": 0.6260869565217392, "f1": 0.5861601085481682}}
+{"epoch": 5, "train_loss": 0.11716838979594436, "dev": {"tp": 243, "gold": 345, "pred": 435, "precision": 0.5586206896551724, "recall": 0.7043478260869566, "f1": 0.6230769230769231}}
+{"epoch": 6, "train_loss": 0.08074210999217789, "dev": {"tp": 265, "gold": 345, "pred": 411, "precision": 0.6447688564476886, "recall": 0.7681159420289855, "f1": 0.701058201058201}}
+{"epoch": 7, "train_loss": 0.06199297278362792, "dev": {"tp": 244, "gold": 345, "pred": 391, "precision": 0.6240409207161125, "recall": 0.7072463768115942, "f1": 0.6630434782608695}}
+{"epoch": 8, "train_loss": 0.043917870065656936, "dev": {"tp": 256, "gold": 345, "pred": 379, "precision": 0.6754617414248021, "recall": 0.7420289855072464, "f1": 0.7071823204419889}}
+{"epoch": 9, "train_loss": 0.027712429659397145, "dev": {"tp": 258, "gold": 345, "pred": 387, "precision": 0.6666666666666666, "recall": 0.7478260869565218, "f1": 0.7049180327868853}}
+{"epoch": 10, "train_loss": 0.022555338394975335, "dev": {"tp": 260, "gold": 345, "pred": 400, "precision": 0.65, "recall": 0.7536231884057971, "f1": 0.697986577181208}}
+{"epoch": 11, "train_loss": 0.014914178794393109, "dev": {"tp": 265, "gold": 345, "pred": 409, "precision": 0.6479217603911981, "recall": 0.7681159420289855, "f1": 0.7029177718832891}}
+{"epoch": 12, "train_loss": 0.008998674007703785, "dev": {"tp": 261, "gold": 345, "pred": 373, "precision": 0.6997319034852547, "recall": 0.7565217391304347, "f1": 0.7270194986072424}}
+{"epoch": 13, "train_loss": 0.006924369983333092, "dev": {"tp": 264, "gold": 345, "pred": 377, "precision": 0.7002652519893899, "recall": 0.7652173913043478, "f1": 0.7313019390581718}}
+{"epoch": 14, "train_loss": 0.005479262923380957, "dev": {"tp": 266, "gold": 345, "pred": 378, "precision": 0.7037037037037037, "recall": 0.7710144927536232, "f1": 0.73582295988935}}
+{"epoch": 15, "train_loss": 0.004602502001976947, "dev": {"tp": 265, "gold": 345, "pred": 384, "precision": 0.6901041666666666, "recall": 0.7681159420289855, "f1": 0.7270233196159122}}
+{"epoch": 16, "train_loss": 0.0016151667705147858, "dev": {"tp": 267, "gold": 345, "pred": 386, "precision": 0.6917098445595855, "recall": 0.7739130434782608, "f1": 0.7305061559507524}}
+{"epoch": 17, "train_loss": 0.0012392718864320284, "dev": {"tp": 256, "gold": 345, "pred": 375, "precision": 0.6826666666666666, "recall": 0.7420289855072464, "f1": 0.7111111111111111}}
+{"epoch": 18, "train_loss": 0.0012134554286970232, "dev": {"tp": 266, "gold": 345, "pred": 398, "precision": 0.6683417085427136, "recall": 0.7710144927536232, "f1": 0.7160161507402423}}
+{"epoch": 19, "train_loss": 0.00043505762132325075, "dev": {"tp": 264, "gold": 345, "pred": 383, "precision": 0.6892950391644909, "recall": 0.7652173913043478, "f1": 0.7252747252747253}}
+{"epoch": 20, "train_loss": 0.000610801251602863, "dev": {"tp": 266, "gold": 345, "pred": 388, "precision": 0.6855670103092784, "recall": 0.7710144927536232, "f1": 0.7257844474761255}}
+{"status": "completed", "best_epoch": 14, "dev_selection_f1": 0.73582295988935, "dev": {"tp": 266, "gold": 345, "pred": 378, "precision": 0.7037037037037037, "recall": 0.7710144927536232, "f1": 0.73582295988935}}

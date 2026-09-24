@@ -1,0 +1,144 @@
+{
+  "generated_utc": "2026-09-24T07:43:31.222169+00:00",
+  "n": 6,
+  "models": [
+    {
+      "local_id": "xlm-roberta-large/42",
+      "local_checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/42/best",
+      "weights_sha256": "c894df3762a57fd8c10af65a2745db33d94f8aa4476fb4077a9615b1de6ef1f5",
+      "weights_bytes": 2235448756,
+      "tokenizer_sha256": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20",
+      "base_model": "FacebookAI/xlm-roberta-large",
+      "base_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+      "task_head": "XLMRobertaForTokenClassification linear classifier, 9 LSKT BIO labels, first-subword of each Unicode character",
+      "encoder_frozen": false,
+      "selected_epoch": 11,
+      "gold150_typed_exact_f1": 0.49957662997459773,
+      "gold150_role": "frozen diagnostic human reference; not a fresh blind test; not used for epoch/seed/hyperparameter selection",
+      "proposed_hf_repo": "AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s42",
+      "proposed_zenodo_filename": "cnss_table11_xlm-roberta-large_seed42_best.tar",
+      "do_not_cite_as_release": [
+        "https://huggingface.co/FacebookAI/xlm-roberta-large",
+        "https://huggingface.co/AlfredJames/jobbert-zh",
+        "existing Qwen Zenodo packages",
+        "hash-only records without weights"
+      ],
+      "status": "local_only_not_uploaded"
+    },
+    {
+      "local_id": "xlm-roberta-large/43",
+      "local_checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/43/best",
+      "weights_sha256": "be3caa3ed3a7ebf5a6ffe3d698440bc15c0b4fb8dd856157e74a47ee45fded49",
+      "weights_bytes": 2235448756,
+      "tokenizer_sha256": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20",
+      "base_model": "FacebookAI/xlm-roberta-large",
+      "base_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+      "task_head": "XLMRobertaForTokenClassification linear classifier, 9 LSKT BIO labels, first-subword of each Unicode character",
+      "encoder_frozen": false,
+      "selected_epoch": 14,
+      "gold150_typed_exact_f1": 0.5224489795918368,
+      "gold150_role": "frozen diagnostic human reference; not a fresh blind test; not used for epoch/seed/hyperparameter selection",
+      "proposed_hf_repo": "AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s43",
+      "proposed_zenodo_filename": "cnss_table11_xlm-roberta-large_seed43_best.tar",
+      "do_not_cite_as_release": [
+        "https://huggingface.co/FacebookAI/xlm-roberta-large",
+        "https://huggingface.co/AlfredJames/jobbert-zh",
+        "existing Qwen Zenodo packages",
+        "hash-only records without weights"
+      ],
+      "status": "local_only_not_uploaded"
+    },
+    {
+      "local_id": "xlm-roberta-large/44",
+      "local_checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/44/best",
+      "weights_sha256": "8946f8cfe5ed772da6d9d97886f2bd1b86be748dc6209d3c9bd1d98d6121b6e3",
+      "weights_bytes": 2235448756,
+      "tokenizer_sha256": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20",
+      "base_model": "FacebookAI/xlm-roberta-large",
+      "base_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+      "task_head": "XLMRobertaForTokenClassification linear classifier, 9 LSKT BIO labels, first-subword of each Unicode character",
+      "encoder_frozen": false,
+      "selected_epoch": 14,
+      "gold150_typed_exact_f1": 0.5445705024311183,
+      "gold150_role": "frozen diagnostic human reference; not a fresh blind test; not used for epoch/seed/hyperparameter selection",
+      "proposed_hf_repo": "AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s44",
+      "proposed_zenodo_filename": "cnss_table11_xlm-roberta-large_seed44_best.tar",
+      "do_not_cite_as_release": [
+        "https://huggingface.co/FacebookAI/xlm-roberta-large",
+        "https://huggingface.co/AlfredJames/jobbert-zh",
+        "existing Qwen Zenodo packages",
+        "hash-only records without weights"
+      ],
+      "status": "local_only_not_uploaded"
+    },
+    {
+      "local_id": "esco-xlm-roberta-large/42",
+      "local_checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/42/best",
+      "weights_sha256": "8d44b7f25de2cebe33a273a6caaf1aebc3076032d3d0fb0eceadb552bf9bc05f",
+      "weights_bytes": 2235448756,
+      "tokenizer_sha256": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20",
+      "base_model": "jjzha/esco-xlm-roberta-large",
+      "base_revision": "8093cc37ac619a25c5166355acba7be878eb6402",
+      "task_head": "XLMRobertaForTokenClassification linear classifier, 9 LSKT BIO labels, first-subword of each Unicode character",
+      "encoder_frozen": false,
+      "selected_epoch": 19,
+      "gold150_typed_exact_f1": 0.5160758450123661,
+      "gold150_role": "frozen diagnostic human reference; not a fresh blind test; not used for epoch/seed/hyperparameter selection",
+      "proposed_hf_repo": "AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s42",
+      "proposed_zenodo_filename": "cnss_table11_esco-xlm-roberta-large_seed42_best.tar",
+      "do_not_cite_as_release": [
+        "https://huggingface.co/jjzha/esco-xlm-roberta-large",
+        "https://huggingface.co/AlfredJames/jobbert-zh",
+        "existing Qwen Zenodo packages",
+        "hash-only records without weights"
+      ],
+      "status": "local_only_not_uploaded"
+    },
+    {
+      "local_id": "esco-xlm-roberta-large/43",
+      "local_checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/43/best",
+      "weights_sha256": "2efb6f69def4211a07a9ad30ee4563fe0dd83569d7e3687676b9077be6acc3aa",
+      "weights_bytes": 2235448756,
+      "tokenizer_sha256": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20",
+      "base_model": "jjzha/esco-xlm-roberta-large",
+      "base_revision": "8093cc37ac619a25c5166355acba7be878eb6402",
+      "task_head": "XLMRobertaForTokenClassification linear classifier, 9 LSKT BIO labels, first-subword of each Unicode character",
+      "encoder_frozen": false,
+      "selected_epoch": 15,
+      "gold150_typed_exact_f1": 0.5401459854014599,
+      "gold150_role": "frozen diagnostic human reference; not a fresh blind test; not used for epoch/seed/hyperparameter selection",
+      "proposed_hf_repo": "AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s43",
+      "proposed_zenodo_filename": "cnss_table11_esco-xlm-roberta-large_seed43_best.tar",
+      "do_not_cite_as_release": [
+        "https://huggingface.co/jjzha/esco-xlm-roberta-large",
+        "https://huggingface.co/AlfredJames/jobbert-zh",
+        "existing Qwen Zenodo packages",
+        "hash-only records without weights"
+      ],
+      "status": "local_only_not_uploaded"
+    },
+    {
+      "local_id": "esco-xlm-roberta-large/44",
+      "local_checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/44/best",
+      "weights_sha256": "98ce01afc2a13fad9cd7db1458c55332df23651d4ce84f6a4d9c653d5b9c9524",
+      "weights_bytes": 2235448756,
+      "tokenizer_sha256": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20",
+      "base_model": "jjzha/esco-xlm-roberta-large",
+      "base_revision": "8093cc37ac619a25c5166355acba7be878eb6402",
+      "task_head": "XLMRobertaForTokenClassification linear classifier, 9 LSKT BIO labels, first-subword of each Unicode character",
+      "encoder_frozen": false,
+      "selected_epoch": 10,
+      "gold150_typed_exact_f1": 0.5576763485477179,
+      "gold150_role": "frozen diagnostic human reference; not a fresh blind test; not used for epoch/seed/hyperparameter selection",
+      "proposed_hf_repo": "AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s44",
+      "proposed_zenodo_filename": "cnss_table11_esco-xlm-roberta-large_seed44_best.tar",
+      "do_not_cite_as_release": [
+        "https://huggingface.co/jjzha/esco-xlm-roberta-large",
+        "https://huggingface.co/AlfredJames/jobbert-zh",
+        "existing Qwen Zenodo packages",
+        "hash-only records without weights"
+      ],
+      "status": "local_only_not_uploaded"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "encoder": "esco-xlm-roberta-large",
+  "seed": 43,
+  "checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/43/best",
+  "n_sentences": 150,
+  "n_rows_with_tag_diff_vs_frozen_pred": 0,
+  "n_id_order_diff": 0,
+  "typed_exact_f1_reinfer": 0.5401459854014599,
+  "typed_exact_f1_old": 0.5401459854014599,
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "torch": "2.14.0+cu130",
+  "exact_f1_equal": true
+}

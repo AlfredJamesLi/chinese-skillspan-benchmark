@@ -1,0 +1,272 @@
+{
+  "1_no_translation_chinese_adaptation": {
+    "verdict": "yes_from_executed_code_and_inputs",
+    "evidence": "run_chinese_encoder.py reads Chinese character tokens; Gold150 freeze SHA matches published Chinese Doccano file; no translation call in the training/eval path."
+  },
+  "2_original_gold150": {
+    "verdict": true,
+    "n": 150,
+    "n_spans": 663,
+    "n_L": 2
+  },
+  "3_six_checkpoints_and_preds_exist": {
+    "verdict": true,
+    "per_cell": {
+      "xlm-roberta-large/42": {
+        "config.json": true,
+        "gold150_predictions.jsonl": true,
+        "gold150_official.json": true,
+        "gold150_gold.bio.jsonl": true,
+        "history.json": true,
+        "result.json": true,
+        "best/config.json": true,
+        "best/tokenizer.json": true,
+        "best/model.safetensors": true
+      },
+      "xlm-roberta-large/43": {
+        "config.json": true,
+        "gold150_predictions.jsonl": true,
+        "gold150_official.json": true,
+        "gold150_gold.bio.jsonl": true,
+        "history.json": true,
+        "result.json": true,
+        "best/config.json": true,
+        "best/tokenizer.json": true,
+        "best/model.safetensors": true
+      },
+      "xlm-roberta-large/44": {
+        "config.json": true,
+        "gold150_predictions.jsonl": true,
+        "gold150_official.json": true,
+        "gold150_gold.bio.jsonl": true,
+        "history.json": true,
+        "result.json": true,
+        "best/config.json": true,
+        "best/tokenizer.json": true,
+        "best/model.safetensors": true
+      },
+      "esco-xlm-roberta-large/42": {
+        "config.json": true,
+        "gold150_predictions.jsonl": true,
+        "gold150_official.json": true,
+        "gold150_gold.bio.jsonl": true,
+        "history.json": true,
+        "result.json": true,
+        "best/config.json": true,
+        "best/tokenizer.json": true,
+        "best/model.safetensors": true
+      },
+      "esco-xlm-roberta-large/43": {
+        "config.json": true,
+        "gold150_predictions.jsonl": true,
+        "gold150_official.json": true,
+        "gold150_gold.bio.jsonl": true,
+        "history.json": true,
+        "result.json": true,
+        "best/config.json": true,
+        "best/tokenizer.json": true,
+        "best/model.safetensors": true
+      },
+      "esco-xlm-roberta-large/44": {
+        "config.json": true,
+        "gold150_predictions.jsonl": true,
+        "gold150_official.json": true,
+        "gold150_gold.bio.jsonl": true,
+        "history.json": true,
+        "result.json": true,
+        "best/config.json": true,
+        "best/tokenizer.json": true,
+        "best/model.safetensors": true
+      }
+    }
+  },
+  "4_old_table_rescores_identically": {
+    "verdict": true,
+    "diff": [
+      {
+        "encoder": "xlm-roberta-large",
+        "seed": 42,
+        "old_typed_exact_f1": 0.49957662997459773,
+        "new_typed_exact_f1": 0.49957662997459773,
+        "receipt_typed_exact_f1": 0.49957662997459773,
+        "old_equals_new": true,
+        "new_equals_receipt": true,
+        "best_epoch_result_json": 11,
+        "best_epoch_expected": 11,
+        "best_epoch_from_history": 11
+      },
+      {
+        "encoder": "xlm-roberta-large",
+        "seed": 43,
+        "old_typed_exact_f1": 0.5224489795918368,
+        "new_typed_exact_f1": 0.5224489795918368,
+        "receipt_typed_exact_f1": 0.5224489795918368,
+        "old_equals_new": true,
+        "new_equals_receipt": true,
+        "best_epoch_result_json": 14,
+        "best_epoch_expected": 14,
+        "best_epoch_from_history": 14
+      },
+      {
+        "encoder": "xlm-roberta-large",
+        "seed": 44,
+        "old_typed_exact_f1": 0.5445705024311183,
+        "new_typed_exact_f1": 0.5445705024311183,
+        "receipt_typed_exact_f1": 0.5445705024311183,
+        "old_equals_new": true,
+        "new_equals_receipt": true,
+        "best_epoch_result_json": 14,
+        "best_epoch_expected": 14,
+        "best_epoch_from_history": 14
+      },
+      {
+        "encoder": "esco-xlm-roberta-large",
+        "seed": 42,
+        "old_typed_exact_f1": 0.5160758450123661,
+        "new_typed_exact_f1": 0.5160758450123661,
+        "receipt_typed_exact_f1": 0.5160758450123661,
+        "old_equals_new": true,
+        "new_equals_receipt": true,
+        "best_epoch_result_json": 19,
+        "best_epoch_expected": 19,
+        "best_epoch_from_history": 19
+      },
+      {
+        "encoder": "esco-xlm-roberta-large",
+        "seed": 43,
+        "old_typed_exact_f1": 0.5401459854014599,
+        "new_typed_exact_f1": 0.5401459854014599,
+        "receipt_typed_exact_f1": 0.5401459854014599,
+        "old_equals_new": true,
+        "new_equals_receipt": true,
+        "best_epoch_result_json": 15,
+        "best_epoch_expected": 15,
+        "best_epoch_from_history": 15
+      },
+      {
+        "encoder": "esco-xlm-roberta-large",
+        "seed": 44,
+        "old_typed_exact_f1": 0.5576763485477179,
+        "new_typed_exact_f1": 0.5576763485477179,
+        "receipt_typed_exact_f1": 0.5576763485477179,
+        "old_equals_new": true,
+        "new_equals_receipt": true,
+        "best_epoch_result_json": 10,
+        "best_epoch_expected": 10,
+        "best_epoch_from_history": 10
+      }
+    ],
+    "mean_sd": {
+      "xlm-roberta-large": {
+        "typed_exact": {
+          "n": 3,
+          "mean": 0.5221987039991842,
+          "sd_sample": 0.02249798031074384,
+          "values": [
+            0.49957662997459773,
+            0.5224489795918368,
+            0.5445705024311183
+          ]
+        },
+        "typed_relaxed": {
+          "n": 3,
+          "mean": 0.6496762262805262,
+          "sd_sample": 0.021033527174471198,
+          "values": [
+            0.6265876375952584,
+            0.6546938775510205,
+            0.6677471636952999
+          ]
+        },
+        "boundary_collapsed_exact": {
+          "n": 3,
+          "mean": 0.5711395798773098,
+          "sd_sample": 0.021739126672901024,
+          "values": [
+            0.5520745131244708,
+            0.5665306122448979,
+            0.5948136142625607
+          ]
+        },
+        "macro_f1_LKST": {
+          "n": 3,
+          "mean": 0.6068335531537764,
+          "sd_sample": 0.015565333019786015,
+          "values": [
+            0.591162319850845,
+            0.6070475605860115,
+            0.6222907790244727
+          ]
+        },
+        "paper_table11_rounded": {
+          "exact": "0.522 ± 0.022",
+          "relaxed": "0.65 ± 0.021",
+          "boundary": "0.571 ± 0.022",
+          "macro": "0.607 ± 0.016"
+        }
+      },
+      "esco-xlm-roberta-large": {
+        "typed_exact": {
+          "n": 3,
+          "mean": 0.5379660596538479,
+          "sd_sample": 0.020885749466981754,
+          "values": [
+            0.5160758450123661,
+            0.5401459854014599,
+            0.5576763485477179
+          ]
+        },
+        "typed_relaxed": {
+          "n": 3,
+          "mean": 0.6617506595408509,
+          "sd_sample": 0.02162842555624235,
+          "values": [
+            0.6380873866446826,
+            0.6666666666666666,
+            0.6804979253112033
+          ]
+        },
+        "boundary_collapsed_exact": {
+          "n": 3,
+          "mean": 0.582379291706933,
+          "sd_sample": 0.0236116564335288,
+          "values": [
+            0.560593569661995,
+            0.5790754257907542,
+            0.6074688796680499
+          ]
+        },
+        "macro_f1_LKST": {
+          "n": 3,
+          "mean": 0.6215322462476238,
+          "sd_sample": 0.009980993107518578,
+          "values": [
+            0.6114547553353229,
+            0.6217281251872676,
+            0.6314138582202811
+          ]
+        },
+        "paper_table11_rounded": {
+          "exact": "0.538 ± 0.021",
+          "relaxed": "0.662 ± 0.022",
+          "boundary": "0.582 ± 0.024",
+          "macro": "0.622 ± 0.01"
+        }
+      }
+    }
+  },
+  "5_platforms": {
+    "local_pack": "/home/guojingli3/cnss_external_benchmarks_20260921/TABLE11_EVIDENCE_20260924",
+    "github_results_commit_preserved": "46d1166f8e11dd52d473f645536074bb8dd0a53c",
+    "github_audit_commit": "pending_push",
+    "hf_models": "not_published",
+    "zenodo_models": "not_published"
+  },
+  "delivery_status": {
+    "files_checked": true,
+    "predictions_rescored": true,
+    "checkpoint_reinferred": true,
+    "checkpoint_reinfer_tag_diffs": 0,
+    "full_training_rerun": false
+  }
+}

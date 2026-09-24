@@ -1,0 +1,39 @@
+{
+  "xlm-roberta-large/42": {
+    "log": "logs/chinese_full.out + logs/chinese_full_xlm-roberta-large_42.out",
+    "launcher": "scripts/chinese_full_2gpu.sbatch job path (GPU0, started 2026-09-22T04:51:14+08:00)",
+    "command": "/home/guojingli3/cnss_external_benchmarks_20260921/env/bin/python /home/guojingli3/cnss_external_benchmarks_20260921/run_chinese_encoder.py --model FacebookAI/xlm-roberta-large --revision c23d21b0620b635a76227c604d44e43a9f0ee389 --seed 42 --output /home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/42",
+    "note": "Default train/dev/gold150 paths. Full command line not prefixed with # CMD in this log; reconstructed from sbatch + models.json + config.json."
+  },
+  "xlm-roberta-large/43": {
+    "log": "logs/chinese_full.out + logs/chinese_full_xlm-roberta-large_43.out",
+    "launcher": "scripts/chinese_full_2gpu.sbatch (GPU1, same start timestamp)",
+    "command": "/home/guojingli3/cnss_external_benchmarks_20260921/env/bin/python /home/guojingli3/cnss_external_benchmarks_20260921/run_chinese_encoder.py --model FacebookAI/xlm-roberta-large --revision c23d21b0620b635a76227c604d44e43a9f0ee389 --seed 43 --output /home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/43",
+    "note": "Same reconstruction as seed 42."
+  },
+  "xlm-roberta-large/44": {
+    "log": "logs/chinese_full_xlm-roberta-large_44_try1.out",
+    "launcher": "scripts/run_remaining_today.py",
+    "command_from_log": "# CMD /home/guojingli3/cnss_external_benchmarks_20260921/env/bin/python /home/guojingli3/cnss_external_benchmarks_20260921/run_chinese_encoder.py --model FacebookAI/xlm-roberta-large --revision c23d21b0620b635a76227c604d44e43a9f0ee389 --seed 44 --output /home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/44"
+  },
+  "esco-xlm-roberta-large/42": {
+    "log": "logs/chinese_full_esco-xlm-roberta-large_42_try1.out",
+    "command_from_log": "# CMD /home/guojingli3/cnss_external_benchmarks_20260921/env/bin/python /home/guojingli3/cnss_external_benchmarks_20260921/run_chinese_encoder.py --model jjzha/esco-xlm-roberta-large --revision 8093cc37ac619a25c5166355acba7be878eb6402 --seed 42 --output /home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/42"
+  },
+  "esco-xlm-roberta-large/43": {
+    "log": "logs/chinese_full_esco-xlm-roberta-large_43_try1.out",
+    "command_from_log": "# CMD /home/guojingli3/cnss_external_benchmarks_20260921/env/bin/python /home/guojingli3/cnss_external_benchmarks_20260921/run_chinese_encoder.py --model jjzha/esco-xlm-roberta-large --revision 8093cc37ac619a25c5166355acba7be878eb6402 --seed 43 --output /home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/43"
+  },
+  "esco-xlm-roberta-large/44": {
+    "log": "logs/chinese_full_esco-xlm-roberta-large_44_try1.out",
+    "command_from_log": "# CMD /home/guojingli3/cnss_external_benchmarks_20260921/env/bin/python /home/guojingli3/cnss_external_benchmarks_20260921/run_chinese_encoder.py --model jjzha/esco-xlm-roberta-large --revision 8093cc37ac619a25c5166355acba7be878eb6402 --seed 44 --output /home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/44"
+  },
+  "defaults_not_overridden": {
+    "epochs": 20,
+    "batch_size": 8,
+    "lr": 2e-05,
+    "train": "/home/guojingli3/cnss_external_benchmarks_20260921/chinese_data/train_b2.jsonl",
+    "dev": "/home/guojingli3/cnss_external_benchmarks_20260921/chinese_data/dev_b2.jsonl",
+    "gold150": "/home/guojingli3/cnss_external_benchmarks_20260921/chinese_data/gold150_test.jsonl"
+  }
+}

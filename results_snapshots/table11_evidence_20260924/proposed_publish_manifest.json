@@ -1,0 +1,30 @@
+{
+  "not_yet_public": true,
+  "local_pack": "/home/guojingli3/cnss_external_benchmarks_20260921/TABLE11_EVIDENCE_20260924",
+  "preserve_github_results_commit": "46d1166f8e11dd52d473f645536074bb8dd0a53c",
+  "include_in_github_audit_commit": [
+    "this lightweight TABLE11_EVIDENCE_20260924 tree (code, configs, preds, scores, reports, model cards)",
+    "do not commit 2.1GiB model.safetensors or HF cache"
+  ],
+  "proposed_huggingface_repos": [
+    "AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s42",
+    "AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s43",
+    "AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s44",
+    "AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s42",
+    "AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s43",
+    "AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s44"
+  ],
+  "proposed_zenodo": "one community record containing six best/ directories plus this evidence pack; not a substitute for the public Gold150 freeze already at 10.5281/zenodo.22698504",
+  "gold150_download": {
+    "github": "https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/data/gold150_test.jsonl",
+    "sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "zenodo_v0.1.3": "https://doi.org/10.5281/zenodo.22698504"
+  },
+  "do_not_use_as_these_model_urls": [
+    "https://huggingface.co/FacebookAI/xlm-roberta-large",
+    "https://huggingface.co/jjzha/esco-xlm-roberta-large",
+    "https://huggingface.co/AlfredJames/jobbert-zh",
+    "existing Qwen adapter Zenodo packages"
+  ],
+  "authorization_needed_before_upload": "Hugging Face / Zenodo write access was not used in this audit; weights remain on the lab disk."
+}

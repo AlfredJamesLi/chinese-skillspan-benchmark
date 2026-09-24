@@ -1,0 +1,80 @@
+[
+  {
+    "encoder": "xlm-roberta-large",
+    "seed": 42,
+    "checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/42/best",
+    "n_sentences": 150,
+    "n_rows_with_tag_diff_vs_frozen_pred": 0,
+    "n_id_order_diff": 0,
+    "typed_exact_f1_reinfer": 0.49957662997459773,
+    "typed_exact_f1_old": 0.49957662997459773,
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "torch": "2.14.0+cu130",
+    "exact_f1_equal": true
+  },
+  {
+    "encoder": "xlm-roberta-large",
+    "seed": 43,
+    "checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/43/best",
+    "n_sentences": 150,
+    "n_rows_with_tag_diff_vs_frozen_pred": 0,
+    "n_id_order_diff": 0,
+    "typed_exact_f1_reinfer": 0.5224489795918368,
+    "typed_exact_f1_old": 0.5224489795918368,
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "torch": "2.14.0+cu130",
+    "exact_f1_equal": true
+  },
+  {
+    "encoder": "xlm-roberta-large",
+    "seed": 44,
+    "checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/44/best",
+    "n_sentences": 150,
+    "n_rows_with_tag_diff_vs_frozen_pred": 0,
+    "n_id_order_diff": 0,
+    "typed_exact_f1_reinfer": 0.5445705024311183,
+    "typed_exact_f1_old": 0.5445705024311183,
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "torch": "2.14.0+cu130",
+    "exact_f1_equal": true
+  },
+  {
+    "encoder": "esco-xlm-roberta-large",
+    "seed": 42,
+    "checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/42/best",
+    "n_sentences": 150,
+    "n_rows_with_tag_diff_vs_frozen_pred": 0,
+    "n_id_order_diff": 0,
+    "typed_exact_f1_reinfer": 0.5160758450123661,
+    "typed_exact_f1_old": 0.5160758450123661,
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "torch": "2.14.0+cu130",
+    "exact_f1_equal": true
+  },
+  {
+    "encoder": "esco-xlm-roberta-large",
+    "seed": 43,
+    "checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/43/best",
+    "n_sentences": 150,
+    "n_rows_with_tag_diff_vs_frozen_pred": 0,
+    "n_id_order_diff": 0,
+    "typed_exact_f1_reinfer": 0.5401459854014599,
+    "typed_exact_f1_old": 0.5401459854014599,
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "torch": "2.14.0+cu130",
+    "exact_f1_equal": true
+  },
+  {
+    "encoder": "esco-xlm-roberta-large",
+    "seed": 44,
+    "checkpoint": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/44/best",
+    "n_sentences": 150,
+    "n_rows_with_tag_diff_vs_frozen_pred": 0,
+    "n_id_order_diff": 0,
+    "typed_exact_f1_reinfer": 0.5576763485477179,
+    "typed_exact_f1_old": 0.5576763485477179,
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "torch": "2.14.0+cu130",
+    "exact_f1_equal": true
+  }
+]

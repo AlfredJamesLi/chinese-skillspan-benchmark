@@ -1,0 +1,12 @@
+{
+  "training_script_translation_hits": [],
+  "convert_script_translation_hits": [],
+  "direct_chinese_read_sites": {
+    "normalize_b2": "run_chinese_encoder.py:normalize_b2 asserts list(sentence)==tokens and uses those characters as the encoder words",
+    "gold150_convert": "convert_gold150_to_bio.py:convert_record uses rec['text'] and list(text) as tokens; spans are integer Unicode-code-point offsets into that string",
+    "no_translate_import": "run_chinese_encoder.py imports only stdlib + torch/numpy/transformers + local convert/score adapters"
+  },
+  "gold_tags_in_model_input": "Gold150 rows are encoded with all-O tags; gold BIO is written only for the scorer after prediction",
+  "post_hoc_human_edit_in_code": false,
+  "boundary_correction_in_code": false
+}

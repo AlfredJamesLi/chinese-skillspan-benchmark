@@ -1,0 +1,38 @@
+{
+  "tab_external_chinese_from_prompt_20260922": {
+    "XLM-R-large": {
+      "exact": "0.522 ± 0.022",
+      "relaxed": "0.650 ± 0.021",
+      "boundary": "0.571 ± 0.022",
+      "macro": "0.607 ± 0.016"
+    },
+    "ESCOXLM-R": {
+      "exact": "0.538 ± 0.021",
+      "relaxed": "0.662 ± 0.022",
+      "boundary": "0.582 ± 0.024",
+      "macro": "0.622 ± 0.010"
+    }
+  },
+  "rescore_rounded": {
+    "xlm-roberta-large": {
+      "exact": "0.522 ± 0.022",
+      "relaxed": "0.65 ± 0.021",
+      "boundary": "0.571 ± 0.022",
+      "macro": "0.607 ± 0.016"
+    },
+    "esco-xlm-roberta-large": {
+      "exact": "0.538 ± 0.021",
+      "relaxed": "0.662 ± 0.022",
+      "boundary": "0.582 ± 0.024",
+      "macro": "0.622 ± 0.01"
+    }
+  },
+  "seed_exact_rescore": {
+    "xlm-roberta-large/42": 0.49957662997459773,
+    "xlm-roberta-large/43": 0.5224489795918368,
+    "xlm-roberta-large/44": 0.5445705024311183,
+    "esco-xlm-roberta-large/42": 0.5160758450123661,
+    "esco-xlm-roberta-large/43": 0.5401459854014599,
+    "esco-xlm-roberta-large/44": 0.5576763485477179
+  }
+}

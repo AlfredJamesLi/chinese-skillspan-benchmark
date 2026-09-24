@@ -1,0 +1,50 @@
+{
+  "status": "completed",
+  "best_epoch": 15,
+  "dev_selection_f1": 0.7524204702627939,
+  "dev": {
+    "tp": 272,
+    "gold": 345,
+    "pred": 378,
+    "precision": 0.7195767195767195,
+    "recall": 0.7884057971014493,
+    "f1": 0.7524204702627939
+  },
+  "gold150_official": {
+    "typed_exact_f1": 0.5401459854014599,
+    "raw_keys": [
+      "align_mode",
+      "alignment_ok",
+      "bootstrap_95ci",
+      "collapsed_exact",
+      "collapsed_relaxed",
+      "config",
+      "coverage",
+      "created_utc",
+      "eligible_for_main_table",
+      "error",
+      "git_commit",
+      "gold",
+      "gold_n_rows",
+      "gold_n_unique_ids",
+      "gold_path",
+      "gold_sha256",
+      "id_sets",
+      "n_duplicate_gold_preds",
+      "n_extra",
+      "n_matched",
+      "n_missing",
+      "per_type_exact",
+      "per_type_relaxed",
+      "pred",
+      "pred_n_rows",
+      "pred_n_unique_ids",
+      "pred_path",
+      "pred_sha256",
+      "primary_metric",
+      "scorer_version",
+      "typed_exact",
+      "typed_relaxed"
+    ]
+  }
+}

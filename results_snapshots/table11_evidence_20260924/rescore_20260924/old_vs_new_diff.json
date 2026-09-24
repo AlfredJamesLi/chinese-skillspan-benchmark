@@ -1,0 +1,74 @@
+[
+  {
+    "encoder": "xlm-roberta-large",
+    "seed": 42,
+    "old_typed_exact_f1": 0.49957662997459773,
+    "new_typed_exact_f1": 0.49957662997459773,
+    "receipt_typed_exact_f1": 0.49957662997459773,
+    "old_equals_new": true,
+    "new_equals_receipt": true,
+    "best_epoch_result_json": 11,
+    "best_epoch_expected": 11,
+    "best_epoch_from_history": 11
+  },
+  {
+    "encoder": "xlm-roberta-large",
+    "seed": 43,
+    "old_typed_exact_f1": 0.5224489795918368,
+    "new_typed_exact_f1": 0.5224489795918368,
+    "receipt_typed_exact_f1": 0.5224489795918368,
+    "old_equals_new": true,
+    "new_equals_receipt": true,
+    "best_epoch_result_json": 14,
+    "best_epoch_expected": 14,
+    "best_epoch_from_history": 14
+  },
+  {
+    "encoder": "xlm-roberta-large",
+    "seed": 44,
+    "old_typed_exact_f1": 0.5445705024311183,
+    "new_typed_exact_f1": 0.5445705024311183,
+    "receipt_typed_exact_f1": 0.5445705024311183,
+    "old_equals_new": true,
+    "new_equals_receipt": true,
+    "best_epoch_result_json": 14,
+    "best_epoch_expected": 14,
+    "best_epoch_from_history": 14
+  },
+  {
+    "encoder": "esco-xlm-roberta-large",
+    "seed": 42,
+    "old_typed_exact_f1": 0.5160758450123661,
+    "new_typed_exact_f1": 0.5160758450123661,
+    "receipt_typed_exact_f1": 0.5160758450123661,
+    "old_equals_new": true,
+    "new_equals_receipt": true,
+    "best_epoch_result_json": 19,
+    "best_epoch_expected": 19,
+    "best_epoch_from_history": 19
+  },
+  {
+    "encoder": "esco-xlm-roberta-large",
+    "seed": 43,
+    "old_typed_exact_f1": 0.5401459854014599,
+    "new_typed_exact_f1": 0.5401459854014599,
+    "receipt_typed_exact_f1": 0.5401459854014599,
+    "old_equals_new": true,
+    "new_equals_receipt": true,
+    "best_epoch_result_json": 15,
+    "best_epoch_expected": 15,
+    "best_epoch_from_history": 15
+  },
+  {
+    "encoder": "esco-xlm-roberta-large",
+    "seed": 44,
+    "old_typed_exact_f1": 0.5576763485477179,
+    "new_typed_exact_f1": 0.5576763485477179,
+    "receipt_typed_exact_f1": 0.5576763485477179,
+    "old_equals_new": true,
+    "new_equals_receipt": true,
+    "best_epoch_result_json": 10,
+    "best_epoch_expected": 10,
+    "best_epoch_from_history": 10
+  }
+]

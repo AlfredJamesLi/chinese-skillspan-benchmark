@@ -1,0 +1,1926 @@
+[
+  {
+    "encoder_short": "xlm-roberta-large",
+    "hf_id": "FacebookAI/xlm-roberta-large",
+    "declared_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+    "config_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+    "revision_match": true,
+    "seed": 42,
+    "run_dir": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/42",
+    "files_exist": {
+      "config.json": true,
+      "gold150_predictions.jsonl": true,
+      "gold150_official.json": true,
+      "gold150_gold.bio.jsonl": true,
+      "history.json": true,
+      "result.json": true,
+      "best/config.json": true,
+      "best/tokenizer.json": true,
+      "best/model.safetensors": true
+    },
+    "file_sha256": {
+      "config.json": "6a2f542df07d658a6568cf18a2453cf04c78ff841094c8cc931d46ca68b6975a",
+      "gold150_predictions.jsonl": "4a676e9bcf518d67e44792d15990109b636dc81f0176f6502a713f86966095d0",
+      "gold150_official.json": "9c847442f4869bf482811ce2fc959f759884739d1c7625c62187c3273b545f05",
+      "gold150_gold.bio.jsonl": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+      "history.json": "d2ad89adc2041a61681a0dc2816880c6930a8c3345a8de6a12fe68b5565f69ea",
+      "result.json": "70079d039baaab131e336d39643d2f1bd875370365269a6e98e7cc0de2499044",
+      "best/config.json": "90a0696f519b6214e71c5bc9b349a24ae86161389b396805b46e3afb437348f8",
+      "best/tokenizer.json": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20"
+    },
+    "checkpoint": {
+      "path": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/42/best/model.safetensors",
+      "bytes": 2235448756,
+      "mtime": 1790024195.6612859,
+      "exists": true
+    },
+    "hash_vs_receipt": {},
+    "config": {
+      "model": "FacebookAI/xlm-roberta-large",
+      "revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+      "seed": 42,
+      "epochs": 20,
+      "batch_size": 8,
+      "lr": 2e-05,
+      "method": "chinese_lskt_linear_head_char_BIO_first_subword",
+      "labels": [
+        "B-K",
+        "B-L",
+        "B-S",
+        "B-T",
+        "I-K",
+        "I-L",
+        "I-S",
+        "I-T",
+        "O"
+      ],
+      "chunk_word_limit": 128,
+      "selection": "highest dev typed exact micro-F1; earliest epoch wins ties",
+      "gold150_in_gradient": false,
+      "gold150_in_selection": false,
+      "gold150_id_overlap_in_used_splits": [],
+      "train_sha256": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+      "dev_sha256": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+      "gold150_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "split_counts": {
+        "train": 2150,
+        "dev": 169
+      },
+      "chunk_counts": {
+        "train": 2220,
+        "dev": 181
+      },
+      "python": "3.10.21",
+      "torch": "2.14.0+cu130",
+      "transformers": "4.40.2",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "cuda": "13.0",
+      "started_unix": 1790023877.797577
+    },
+    "head_vs_mlm": {
+      "base_cache_architecture_xlm": "XLMRobertaForMaskedLM",
+      "base_cache_architecture_esco": "RobertaForCustomMaskedLM",
+      "saved_run_architecture": [
+        "XLMRobertaForTokenClassification"
+      ],
+      "saved_id2label": {
+        "0": "B-K",
+        "1": "B-L",
+        "2": "B-S",
+        "3": "B-T",
+        "4": "I-K",
+        "5": "I-L",
+        "6": "I-S",
+        "7": "I-T",
+        "8": "O"
+      },
+      "log_warning": "Some weights of XLMRobertaForTokenClassification were not initialized ... ['classifier.bias', 'classifier.weight']",
+      "explanation": "AutoModelForTokenClassification drops the masked-LM lm_head and randomly initializes a linear classifier (hidden_size x 9 LSKT BIO labels). Task head is not the MLM softmax."
+    },
+    "finetune_scope": {
+      "optimizer_from_source": "AdamW(model.parameters(), lr=2e-5, weight_decay=0.01)",
+      "encoder_frozen": false,
+      "all_parameters_updated": true,
+      "extra_training_data": false,
+      "init_from_another_task_head": false,
+      "precision": "float32; no autocast/AMP in run_chinese_encoder.py"
+    },
+    "selection": {
+      "n_epochs_logged": 20,
+      "epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "argmax_dev_f1_earliest_tie": 11,
+      "argmax_dev_f1_value": 0.7353361945636624,
+      "matches_claimed_best_epoch": true,
+      "gold150_or_test_keys_in_history": [],
+      "history_contains_gold150_metric": false
+    },
+    "pred_alignment": {
+      "n_gold": 150,
+      "n_pred": 150,
+      "n_unique_pred_ids": 150,
+      "duplicate_pred_ids": [],
+      "missing_ids": [],
+      "extra_ids": [],
+      "id_order_equal": true,
+      "n_text_mismatch": [],
+      "n_tag_len_mismatch": [],
+      "n_pred_with_placeholder_token": 0
+    },
+    "empty_sentence_fp": {
+      "n_gold_sents_with_zero_spans": 8,
+      "n_empty_gold_with_pred_span": 3,
+      "ids": [
+        "1804-s0005",
+        "1815-s0008",
+        "1816-s0012"
+      ]
+    },
+    "logs": [
+      {
+        "path": "/home/guojingli3/cnss_external_benchmarks_20260921/logs/chinese_full_xlm-roberta-large_42.out",
+        "sha256": "221626f15c5fc2fc665c6e3f624462890d6bd328f2d705ce0fed7ace983b564e",
+        "n_lines": 26
+      }
+    ],
+    "old_metrics": {
+      "typed_exact": {
+        "precision": 0.5694980694980695,
+        "recall": 0.444947209653092,
+        "f1": 0.49957662997459773,
+        "tp": 295,
+        "fp": 223,
+        "fn": 368,
+        "pred": 518,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7142857142857143,
+        "recall": 0.5580693815987934,
+        "f1": 0.6265876375952584,
+        "tp": 370,
+        "fp": 148,
+        "fn": 293,
+        "pred": 518,
+        "gold": 663
+      },
+      "collapsed_exact_boundary": {
+        "precision": 0.6293436293436293,
+        "recall": 0.4917043740573152,
+        "f1": 0.5520745131244708,
+        "tp": 326,
+        "fp": 192,
+        "fn": 337,
+        "pred": 518,
+        "gold": 663
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.5974025974025974,
+          "recall": 0.368,
+          "f1": 0.45544554455445546,
+          "tp": 46,
+          "fp": 31,
+          "fn": 79,
+          "pred": 77,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5451977401129944,
+          "recall": 0.43080357142857145,
+          "f1": 0.4812967581047382,
+          "tp": 193,
+          "fp": 161,
+          "fn": 255,
+          "pred": 354,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6428571428571429,
+          "recall": 0.6136363636363636,
+          "f1": 0.6279069767441862,
+          "tp": 54,
+          "fp": 30,
+          "fn": 34,
+          "pred": 84,
+          "gold": 88
+        }
+      },
+      "macro_f1_LKST": 0.591162319850845,
+      "scorer_version": "cnss-lskt-1.2.0",
+      "alignment_ok": true
+    },
+    "new_metrics": {
+      "typed_exact": {
+        "precision": 0.5694980694980695,
+        "recall": 0.444947209653092,
+        "f1": 0.49957662997459773,
+        "tp": 295,
+        "fp": 223,
+        "fn": 368,
+        "pred": 518,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7142857142857143,
+        "recall": 0.5580693815987934,
+        "f1": 0.6265876375952584,
+        "tp": 370,
+        "fp": 148,
+        "fn": 293,
+        "pred": 518,
+        "gold": 663
+      },
+      "collapsed_exact_boundary": {
+        "precision": 0.6293436293436293,
+        "recall": 0.4917043740573152,
+        "f1": 0.5520745131244708,
+        "tp": 326,
+        "fp": 192,
+        "fn": 337,
+        "pred": 518,
+        "gold": 663
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.5974025974025974,
+          "recall": 0.368,
+          "f1": 0.45544554455445546,
+          "tp": 46,
+          "fp": 31,
+          "fn": 79,
+          "pred": 77,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5451977401129944,
+          "recall": 0.43080357142857145,
+          "f1": 0.4812967581047382,
+          "tp": 193,
+          "fp": 161,
+          "fn": 255,
+          "pred": 354,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6428571428571429,
+          "recall": 0.6136363636363636,
+          "f1": 0.6279069767441862,
+          "tp": 54,
+          "fp": 30,
+          "fn": 34,
+          "pred": 84,
+          "gold": 88
+        }
+      },
+      "macro_f1_LKST": 0.591162319850845,
+      "scorer_version": "cnss-lskt-1.2.0",
+      "alignment_ok": true
+    }
+  },
+  {
+    "encoder_short": "xlm-roberta-large",
+    "hf_id": "FacebookAI/xlm-roberta-large",
+    "declared_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+    "config_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+    "revision_match": true,
+    "seed": 43,
+    "run_dir": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/43",
+    "files_exist": {
+      "config.json": true,
+      "gold150_predictions.jsonl": true,
+      "gold150_official.json": true,
+      "gold150_gold.bio.jsonl": true,
+      "history.json": true,
+      "result.json": true,
+      "best/config.json": true,
+      "best/tokenizer.json": true,
+      "best/model.safetensors": true
+    },
+    "file_sha256": {
+      "config.json": "0fcd43c21434487224046c65a4927a6d7b6f355872e55733f99872f0132f6a89",
+      "gold150_predictions.jsonl": "30e2ae5e3cd9eb30a46fd4320914276f3e40715c09fbb2bc9e5173698d6939a9",
+      "gold150_official.json": "856e3502536461889486f2f7725280ad90cb1b046b6bcc210359d4fef426ddf8",
+      "gold150_gold.bio.jsonl": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+      "history.json": "66dd288d8ed24042bdd6bb6c1ac6c10775d55bb87fff3b6d373069f095f104a1",
+      "result.json": "78c563fd94f729b01755da35fd4da77dadf7aaf17f209431ebca9fd9a0027963",
+      "best/config.json": "90a0696f519b6214e71c5bc9b349a24ae86161389b396805b46e3afb437348f8",
+      "best/tokenizer.json": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20"
+    },
+    "checkpoint": {
+      "path": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/43/best/model.safetensors",
+      "bytes": 2235448756,
+      "mtime": 1790024282.1322846,
+      "exists": true
+    },
+    "hash_vs_receipt": {},
+    "config": {
+      "model": "FacebookAI/xlm-roberta-large",
+      "revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+      "seed": 43,
+      "epochs": 20,
+      "batch_size": 8,
+      "lr": 2e-05,
+      "method": "chinese_lskt_linear_head_char_BIO_first_subword",
+      "labels": [
+        "B-K",
+        "B-L",
+        "B-S",
+        "B-T",
+        "I-K",
+        "I-L",
+        "I-S",
+        "I-T",
+        "O"
+      ],
+      "chunk_word_limit": 128,
+      "selection": "highest dev typed exact micro-F1; earliest epoch wins ties",
+      "gold150_in_gradient": false,
+      "gold150_in_selection": false,
+      "gold150_id_overlap_in_used_splits": [],
+      "train_sha256": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+      "dev_sha256": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+      "gold150_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "split_counts": {
+        "train": 2150,
+        "dev": 169
+      },
+      "chunk_counts": {
+        "train": 2220,
+        "dev": 181
+      },
+      "python": "3.10.21",
+      "torch": "2.14.0+cu130",
+      "transformers": "4.40.2",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "cuda": "13.0",
+      "started_unix": 1790023877.8694096
+    },
+    "head_vs_mlm": {
+      "base_cache_architecture_xlm": "XLMRobertaForMaskedLM",
+      "base_cache_architecture_esco": "RobertaForCustomMaskedLM",
+      "saved_run_architecture": [
+        "XLMRobertaForTokenClassification"
+      ],
+      "saved_id2label": {
+        "0": "B-K",
+        "1": "B-L",
+        "2": "B-S",
+        "3": "B-T",
+        "4": "I-K",
+        "5": "I-L",
+        "6": "I-S",
+        "7": "I-T",
+        "8": "O"
+      },
+      "log_warning": "Some weights of XLMRobertaForTokenClassification were not initialized ... ['classifier.bias', 'classifier.weight']",
+      "explanation": "AutoModelForTokenClassification drops the masked-LM lm_head and randomly initializes a linear classifier (hidden_size x 9 LSKT BIO labels). Task head is not the MLM softmax."
+    },
+    "finetune_scope": {
+      "optimizer_from_source": "AdamW(model.parameters(), lr=2e-5, weight_decay=0.01)",
+      "encoder_frozen": false,
+      "all_parameters_updated": true,
+      "extra_training_data": false,
+      "init_from_another_task_head": false,
+      "precision": "float32; no autocast/AMP in run_chinese_encoder.py"
+    },
+    "selection": {
+      "n_epochs_logged": 20,
+      "epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "argmax_dev_f1_earliest_tie": 14,
+      "argmax_dev_f1_value": 0.7280453257790368,
+      "matches_claimed_best_epoch": true,
+      "gold150_or_test_keys_in_history": [],
+      "history_contains_gold150_metric": false
+    },
+    "pred_alignment": {
+      "n_gold": 150,
+      "n_pred": 150,
+      "n_unique_pred_ids": 150,
+      "duplicate_pred_ids": [],
+      "missing_ids": [],
+      "extra_ids": [],
+      "id_order_equal": true,
+      "n_text_mismatch": [],
+      "n_tag_len_mismatch": [],
+      "n_pred_with_placeholder_token": 0
+    },
+    "empty_sentence_fp": {
+      "n_gold_sents_with_zero_spans": 8,
+      "n_empty_gold_with_pred_span": 6,
+      "ids": [
+        "1802-s0017",
+        "1804-s0003",
+        "1804-s0005",
+        "1815-s0008",
+        "1816-s0011",
+        "1816-s0012"
+      ]
+    },
+    "logs": [
+      {
+        "path": "/home/guojingli3/cnss_external_benchmarks_20260921/logs/chinese_full_xlm-roberta-large_43.out",
+        "sha256": "e1413123fba8dc60606f0c513daf18b6ac800d34a173fb8f4dc1f3a70f18332f",
+        "n_lines": 26
+      }
+    ],
+    "old_metrics": {
+      "typed_exact": {
+        "precision": 0.5693950177935944,
+        "recall": 0.48265460030165913,
+        "f1": 0.5224489795918368,
+        "tp": 320,
+        "fp": 242,
+        "fn": 343,
+        "pred": 562,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7135231316725978,
+        "recall": 0.6048265460030166,
+        "f1": 0.6546938775510205,
+        "tp": 401,
+        "fp": 161,
+        "fn": 262,
+        "pred": 562,
+        "gold": 663
+      },
+      "collapsed_exact_boundary": {
+        "precision": 0.6174377224199288,
+        "recall": 0.5233785822021116,
+        "f1": 0.5665306122448979,
+        "tp": 347,
+        "fp": 215,
+        "fn": 316,
+        "pred": 562,
+        "gold": 663
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.5851063829787234,
+          "recall": 0.44,
+          "f1": 0.502283105022831,
+          "tp": 55,
+          "fp": 39,
+          "fn": 70,
+          "pred": 94,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5497382198952879,
+          "recall": 0.46875,
+          "f1": 0.5060240963855422,
+          "tp": 210,
+          "fp": 172,
+          "fn": 238,
+          "pred": 382,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6385542168674698,
+          "recall": 0.6022727272727273,
+          "f1": 0.6198830409356725,
+          "tp": 53,
+          "fp": 30,
+          "fn": 35,
+          "pred": 83,
+          "gold": 88
+        }
+      },
+      "macro_f1_LKST": 0.6070475605860115,
+      "scorer_version": "cnss-lskt-1.2.0",
+      "alignment_ok": true
+    },
+    "new_metrics": {
+      "typed_exact": {
+        "precision": 0.5693950177935944,
+        "recall": 0.48265460030165913,
+        "f1": 0.5224489795918368,
+        "tp": 320,
+        "fp": 242,
+        "fn": 343,
+        "pred": 562,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7135231316725978,
+        "recall": 0.6048265460030166,
+        "f1": 0.6546938775510205,
+        "tp": 401,
+        "fp": 161,
+        "fn": 262,
+        "pred": 562,
+        "gold": 663
+      },
+      "collapsed_exact_boundary": {
+        "precision": 0.6174377224199288,
+        "recall": 0.5233785822021116,
+        "f1": 0.5665306122448979,
+        "tp": 347,
+        "fp": 215,
+        "fn": 316,
+        "pred": 562,
+        "gold": 663
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.5851063829787234,
+          "recall": 0.44,
+          "f1": 0.502283105022831,
+          "tp": 55,
+          "fp": 39,
+          "fn": 70,
+          "pred": 94,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5497382198952879,
+          "recall": 0.46875,
+          "f1": 0.5060240963855422,
+          "tp": 210,
+          "fp": 172,
+          "fn": 238,
+          "pred": 382,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6385542168674698,
+          "recall": 0.6022727272727273,
+          "f1": 0.6198830409356725,
+          "tp": 53,
+          "fp": 30,
+          "fn": 35,
+          "pred": 83,
+          "gold": 88
+        }
+      },
+      "macro_f1_LKST": 0.6070475605860115,
+      "scorer_version": "cnss-lskt-1.2.0",
+      "alignment_ok": true
+    }
+  },
+  {
+    "encoder_short": "xlm-roberta-large",
+    "hf_id": "FacebookAI/xlm-roberta-large",
+    "declared_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+    "config_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+    "revision_match": true,
+    "seed": 44,
+    "run_dir": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/44",
+    "files_exist": {
+      "config.json": true,
+      "gold150_predictions.jsonl": true,
+      "gold150_official.json": true,
+      "gold150_gold.bio.jsonl": true,
+      "history.json": true,
+      "result.json": true,
+      "best/config.json": true,
+      "best/tokenizer.json": true,
+      "best/model.safetensors": true
+    },
+    "file_sha256": {
+      "config.json": "794b541715b9a4717855496a5ebfcd7a45b188dd0fc6e1f3624972e9b53d5689",
+      "gold150_predictions.jsonl": "6174141656f1a55d8957bc4dd2b9113503421871dbb279c66423c68a89f89bfd",
+      "gold150_official.json": "4e2cf7066dd71e545556d11687efcb30a3e85fe736a70c4f4a9648d0a1509acb",
+      "gold150_gold.bio.jsonl": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+      "history.json": "e5a64fd7f5d8a9eb9858a03b4d81f1bfa42547e98cc43167cdb1036b9029a565",
+      "result.json": "e450032fa91f374bd1b3aaad03f0615fa1f75fe9edbe3545aaa24759956c681a",
+      "best/config.json": "90a0696f519b6214e71c5bc9b349a24ae86161389b396805b46e3afb437348f8",
+      "best/tokenizer.json": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20"
+    },
+    "checkpoint": {
+      "path": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/44/best/model.safetensors",
+      "bytes": 2235448756,
+      "mtime": 1790055097.1848426,
+      "exists": true
+    },
+    "hash_vs_receipt": {},
+    "config": {
+      "model": "FacebookAI/xlm-roberta-large",
+      "revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+      "seed": 44,
+      "epochs": 20,
+      "batch_size": 8,
+      "lr": 2e-05,
+      "method": "chinese_lskt_linear_head_char_BIO_first_subword",
+      "labels": [
+        "B-K",
+        "B-L",
+        "B-S",
+        "B-T",
+        "I-K",
+        "I-L",
+        "I-S",
+        "I-T",
+        "O"
+      ],
+      "chunk_word_limit": 128,
+      "selection": "highest dev typed exact micro-F1; earliest epoch wins ties",
+      "gold150_in_gradient": false,
+      "gold150_in_selection": false,
+      "gold150_id_overlap_in_used_splits": [],
+      "train_sha256": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+      "dev_sha256": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+      "gold150_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "split_counts": {
+        "train": 2150,
+        "dev": 169
+      },
+      "chunk_counts": {
+        "train": 2220,
+        "dev": 181
+      },
+      "python": "3.10.21",
+      "torch": "2.14.0+cu130",
+      "transformers": "4.40.2",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "cuda": "13.0",
+      "started_unix": 1790054678.7183752
+    },
+    "head_vs_mlm": {
+      "base_cache_architecture_xlm": "XLMRobertaForMaskedLM",
+      "base_cache_architecture_esco": "RobertaForCustomMaskedLM",
+      "saved_run_architecture": [
+        "XLMRobertaForTokenClassification"
+      ],
+      "saved_id2label": {
+        "0": "B-K",
+        "1": "B-L",
+        "2": "B-S",
+        "3": "B-T",
+        "4": "I-K",
+        "5": "I-L",
+        "6": "I-S",
+        "7": "I-T",
+        "8": "O"
+      },
+      "log_warning": "Some weights of XLMRobertaForTokenClassification were not initialized ... ['classifier.bias', 'classifier.weight']",
+      "explanation": "AutoModelForTokenClassification drops the masked-LM lm_head and randomly initializes a linear classifier (hidden_size x 9 LSKT BIO labels). Task head is not the MLM softmax."
+    },
+    "finetune_scope": {
+      "optimizer_from_source": "AdamW(model.parameters(), lr=2e-5, weight_decay=0.01)",
+      "encoder_frozen": false,
+      "all_parameters_updated": true,
+      "extra_training_data": false,
+      "init_from_another_task_head": false,
+      "precision": "float32; no autocast/AMP in run_chinese_encoder.py"
+    },
+    "selection": {
+      "n_epochs_logged": 20,
+      "epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "argmax_dev_f1_earliest_tie": 14,
+      "argmax_dev_f1_value": 0.73582295988935,
+      "matches_claimed_best_epoch": true,
+      "gold150_or_test_keys_in_history": [],
+      "history_contains_gold150_metric": false
+    },
+    "pred_alignment": {
+      "n_gold": 150,
+      "n_pred": 150,
+      "n_unique_pred_ids": 150,
+      "duplicate_pred_ids": [],
+      "missing_ids": [],
+      "extra_ids": [],
+      "id_order_equal": true,
+      "n_text_mismatch": [],
+      "n_tag_len_mismatch": [],
+      "n_pred_with_placeholder_token": 0
+    },
+    "empty_sentence_fp": {
+      "n_gold_sents_with_zero_spans": 8,
+      "n_empty_gold_with_pred_span": 5,
+      "ids": [
+        "1804-s0003",
+        "1804-s0005",
+        "1815-s0008",
+        "1816-s0011",
+        "1816-s0012"
+      ]
+    },
+    "logs": [
+      {
+        "path": "/home/guojingli3/cnss_external_benchmarks_20260921/logs/chinese_full_xlm-roberta-large_44_try1.out",
+        "sha256": "7009871fb408b570bee4d5173c3cbecac4fe843c92b20f7062d60f135726b8a1",
+        "n_lines": 30
+      }
+    ],
+    "old_metrics": {
+      "typed_exact": {
+        "precision": 0.5884413309982487,
+        "recall": 0.5067873303167421,
+        "f1": 0.5445705024311183,
+        "tp": 336,
+        "fp": 235,
+        "fn": 327,
+        "pred": 571,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7215411558669002,
+        "recall": 0.6214177978883861,
+        "f1": 0.6677471636952999,
+        "tp": 412,
+        "fp": 159,
+        "fn": 251,
+        "pred": 571,
+        "gold": 663
+      },
+      "collapsed_exact_boundary": {
+        "precision": 0.6427320490367776,
+        "recall": 0.5535444947209653,
+        "f1": 0.5948136142625607,
+        "tp": 367,
+        "fp": 204,
+        "fn": 296,
+        "pred": 571,
+        "gold": 663
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.6263736263736264,
+          "recall": 0.456,
+          "f1": 0.5277777777777778,
+          "tp": 57,
+          "fp": 34,
+          "fn": 68,
+          "pred": 91,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5677749360613811,
+          "recall": 0.4955357142857143,
+          "f1": 0.529201430274136,
+          "tp": 222,
+          "fp": 169,
+          "fn": 226,
+          "pred": 391,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6395348837209303,
+          "recall": 0.625,
+          "f1": 0.632183908045977,
+          "tp": 55,
+          "fp": 31,
+          "fn": 33,
+          "pred": 86,
+          "gold": 88
+        }
+      },
+      "macro_f1_LKST": 0.6222907790244727,
+      "scorer_version": "cnss-lskt-1.2.0",
+      "alignment_ok": true
+    },
+    "new_metrics": {
+      "typed_exact": {
+        "precision": 0.5884413309982487,
+        "recall": 0.5067873303167421,
+        "f1": 0.5445705024311183,
+        "tp": 336,
+        "fp": 235,
+        "fn": 327,
+        "pred": 571,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7215411558669002,
+        "recall": 0.6214177978883861,
+        "f1": 0.6677471636952999,
+        "tp": 412,
+        "fp": 159,
+        "fn": 251,
+        "pred": 571,
+        "gold": 663
+      },
+      "collapsed_exact_boundary": {
+        "precision": 0.6427320490367776,
+        "recall": 0.5535444947209653,
+        "f1": 0.5948136142625607,
+        "tp": 367,
+        "fp": 204,
+        "fn": 296,
+        "pred": 571,
+        "gold": 663
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.6263736263736264,
+          "recall": 0.456,
+          "f1": 0.5277777777777778,
+          "tp": 57,
+          "fp": 34,
+          "fn": 68,
+          "pred": 91,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5677749360613811,
+          "recall": 0.4955357142857143,
+          "f1": 0.529201430274136,
+          "tp": 222,
+          "fp": 169,
+          "fn": 226,
+          "pred": 391,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6395348837209303,
+          "recall": 0.625,
+          "f1": 0.632183908045977,
+          "tp": 55,
+          "fp": 31,
+          "fn": 33,
+          "pred": 86,
+          "gold": 88
+        }
+      },
+      "macro_f1_LKST": 0.6222907790244727,
+      "scorer_version": "cnss-lskt-1.2.0",
+      "alignment_ok": true
+    }
+  },
+  {
+    "encoder_short": "esco-xlm-roberta-large",
+    "hf_id": "jjzha/esco-xlm-roberta-large",
+    "declared_revision": "8093cc37ac619a25c5166355acba7be878eb6402",
+    "config_revision": "8093cc37ac619a25c5166355acba7be878eb6402",
+    "revision_match": true,
+    "seed": 42,
+    "run_dir": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/42",
+    "files_exist": {
+      "config.json": true,
+      "gold150_predictions.jsonl": true,
+      "gold150_official.json": true,
+      "gold150_gold.bio.jsonl": true,
+      "history.json": true,
+      "result.json": true,
+      "best/config.json": true,
+      "best/tokenizer.json": true,
+      "best/model.safetensors": true
+    },
+    "file_sha256": {
+      "config.json": "2b1b1eb378c6eb688ca0c10c418a600ae5042ae18d4b5a8c4fb671d3a0970265",
+      "gold150_predictions.jsonl": "2accb721edde8f001a9bc2ee77dbe5d63dba074f6ec8b4922eb2f4bb012fa12a",
+      "gold150_official.json": "de7cdc3c76f5780e11bf4702781a47d54a0ffc50831e6bfcea648473186a76ba",
+      "gold150_gold.bio.jsonl": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+      "history.json": "826403b5aeb85a08e0c1fa5af267396d84651136e3299c2317dd872c8d2118fd",
+      "result.json": "6acb64e41f46a12d23bf7d5031cc4d6015619b7443a050e8da71863d678fa98e",
+      "best/config.json": "3f2860bc773f102f9903ac0c0abc4185a66b61e7defd0e0e872402d852ffbbbe",
+      "best/tokenizer.json": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20"
+    },
+    "checkpoint": {
+      "path": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/42/best/model.safetensors",
+      "bytes": 2235448756,
+      "mtime": 1790055226.145841,
+      "exists": true
+    },
+    "hash_vs_receipt": {},
+    "config": {
+      "model": "jjzha/esco-xlm-roberta-large",
+      "revision": "8093cc37ac619a25c5166355acba7be878eb6402",
+      "seed": 42,
+      "epochs": 20,
+      "batch_size": 8,
+      "lr": 2e-05,
+      "method": "chinese_lskt_linear_head_char_BIO_first_subword",
+      "labels": [
+        "B-K",
+        "B-L",
+        "B-S",
+        "B-T",
+        "I-K",
+        "I-L",
+        "I-S",
+        "I-T",
+        "O"
+      ],
+      "chunk_word_limit": 128,
+      "selection": "highest dev typed exact micro-F1; earliest epoch wins ties",
+      "gold150_in_gradient": false,
+      "gold150_in_selection": false,
+      "gold150_id_overlap_in_used_splits": [],
+      "train_sha256": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+      "dev_sha256": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+      "gold150_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "split_counts": {
+        "train": 2150,
+        "dev": 169
+      },
+      "chunk_counts": {
+        "train": 2220,
+        "dev": 181
+      },
+      "python": "3.10.21",
+      "torch": "2.14.0+cu130",
+      "transformers": "4.40.2",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "cuda": "13.0",
+      "started_unix": 1790054679.0021377
+    },
+    "head_vs_mlm": {
+      "base_cache_architecture_xlm": "XLMRobertaForMaskedLM",
+      "base_cache_architecture_esco": "RobertaForCustomMaskedLM",
+      "saved_run_architecture": [
+        "XLMRobertaForTokenClassification"
+      ],
+      "saved_id2label": {
+        "0": "B-K",
+        "1": "B-L",
+        "2": "B-S",
+        "3": "B-T",
+        "4": "I-K",
+        "5": "I-L",
+        "6": "I-S",
+        "7": "I-T",
+        "8": "O"
+      },
+      "log_warning": "Some weights of XLMRobertaForTokenClassification were not initialized ... ['classifier.bias', 'classifier.weight']",
+      "explanation": "AutoModelForTokenClassification drops the masked-LM lm_head and randomly initializes a linear classifier (hidden_size x 9 LSKT BIO labels). Task head is not the MLM softmax."
+    },
+    "finetune_scope": {
+      "optimizer_from_source": "AdamW(model.parameters(), lr=2e-5, weight_decay=0.01)",
+      "encoder_frozen": false,
+      "all_parameters_updated": true,
+      "extra_training_data": false,
+      "init_from_another_task_head": false,
+      "precision": "float32; no autocast/AMP in run_chinese_encoder.py"
+    },
+    "selection": {
+      "n_epochs_logged": 20,
+      "epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "argmax_dev_f1_earliest_tie": 19,
+      "argmax_dev_f1_value": 0.7307692307692307,
+      "matches_claimed_best_epoch": true,
+      "gold150_or_test_keys_in_history": [],
+      "history_contains_gold150_metric": false
+    },
+    "pred_alignment": {
+      "n_gold": 150,
+      "n_pred": 150,
+      "n_unique_pred_ids": 150,
+      "duplicate_pred_ids": [],
+      "missing_ids": [],
+      "extra_ids": [],
+      "id_order_equal": true,
+      "n_text_mismatch": [],
+      "n_tag_len_mismatch": [],
+      "n_pred_with_placeholder_token": 0
+    },
+    "empty_sentence_fp": {
+      "n_gold_sents_with_zero_spans": 8,
+      "n_empty_gold_with_pred_span": 5,
+      "ids": [
+        "1804-s0003",
+        "1804-s0005",
+        "1815-s0008",
+        "1816-s0011",
+        "1816-s0012"
+      ]
+    },
+    "logs": [
+      {
+        "path": "/home/guojingli3/cnss_external_benchmarks_20260921/logs/chinese_full_esco-xlm-roberta-large_42_try1.out",
+        "sha256": "4740d43ef82860e227c9a2729db212ac75079734991d143751b7fc56ded11fb4",
+        "n_lines": 30
+      }
+    ],
+    "old_metrics": {
+      "typed_exact": {
+        "precision": 0.5690909090909091,
+        "recall": 0.4720965309200603,
+        "f1": 0.5160758450123661,
+        "tp": 313,
+        "fp": 237,
+        "fn": 350,
+        "pred": 550,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7036363636363636,
+        "recall": 0.583710407239819,
+        "f1": 0.6380873866446826,
+        "tp": 387,
+        "fp": 163,
+        "fn": 276,
+        "pred": 550,
+        "gold": 663
+      },
+      "collapsed_exact_boundary": {
+        "precision": 0.6181818181818182,
+        "recall": 0.5128205128205128,
+        "f1": 0.560593569661995,
+        "tp": 340,
+        "fp": 210,
+        "fn": 323,
+        "pred": 550,
+        "gold": 663
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.6705882352941176,
+          "recall": 0.456,
+          "f1": 0.5428571428571428,
+          "tp": 57,
+          "fp": 28,
+          "fn": 68,
+          "pred": 85,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5317460317460317,
+          "recall": 0.4486607142857143,
+          "f1": 0.48668280871670705,
+          "tp": 201,
+          "fp": 177,
+          "fn": 247,
+          "pred": 378,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6309523809523809,
+          "recall": 0.6022727272727273,
+          "f1": 0.6162790697674418,
+          "tp": 53,
+          "fp": 31,
+          "fn": 35,
+          "pred": 84,
+          "gold": 88
+        }
+      },
+      "macro_f1_LKST": 0.6114547553353229,
+      "scorer_version": "cnss-lskt-1.2.0",
+      "alignment_ok": true
+    },
+    "new_metrics": {
+      "typed_exact": {
+        "precision": 0.5690909090909091,
+        "recall": 0.4720965309200603,
+        "f1": 0.5160758450123661,
+        "tp": 313,
+        "fp": 237,
+        "fn": 350,
+        "pred": 550,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7036363636363636,
+        "recall": 0.583710407239819,
+        "f1": 0.6380873866446826,
+        "tp": 387,
+        "fp": 163,
+        "fn": 276,
+        "pred": 550,
+        "gold": 663
+      },
+      "collapsed_exact_boundary": {
+        "precision": 0.6181818181818182,
+        "recall": 0.5128205128205128,
+        "f1": 0.560593569661995,
+        "tp": 340,
+        "fp": 210,
+        "fn": 323,
+        "pred": 550,
+        "gold": 663
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.6705882352941176,
+          "recall": 0.456,
+          "f1": 0.5428571428571428,
+          "tp": 57,
+          "fp": 28,
+          "fn": 68,
+          "pred": 85,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5317460317460317,
+          "recall": 0.4486607142857143,
+          "f1": 0.48668280871670705,
+          "tp": 201,
+          "fp": 177,
+          "fn": 247,
+          "pred": 378,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6309523809523809,
+          "recall": 0.6022727272727273,
+          "f1": 0.6162790697674418,
+          "tp": 53,
+          "fp": 31,
+          "fn": 35,
+          "pred": 84,
+          "gold": 88
+        }
+      },
+      "macro_f1_LKST": 0.6114547553353229,
+      "scorer_version": "cnss-lskt-1.2.0",
+      "alignment_ok": true
+    }
+  },
+  {
+    "encoder_short": "esco-xlm-roberta-large",
+    "hf_id": "jjzha/esco-xlm-roberta-large",
+    "declared_revision": "8093cc37ac619a25c5166355acba7be878eb6402",
+    "config_revision": "8093cc37ac619a25c5166355acba7be878eb6402",
+    "revision_match": true,
+    "seed": 43,
+    "run_dir": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/43",
+    "files_exist": {
+      "config.json": true,
+      "gold150_predictions.jsonl": true,
+      "gold150_official.json": true,
+      "gold150_gold.bio.jsonl": true,
+      "history.json": true,
+      "result.json": true,
+      "best/config.json": true,
+      "best/tokenizer.json": true,
+      "best/model.safetensors": true
+    },
+    "file_sha256": {
+      "config.json": "3129cafba2a95c91743b5f7f438bf097262f960f48be388d74e51cafc3d79aa1",
+      "gold150_predictions.jsonl": "dc81fbdcf177c32e8ffe2ae38601deefdac5cd231ad29264a5e1853f79b0dcb0",
+      "gold150_official.json": "0e798381836d9cbfb447856f5e080ec9da43dd9dcdde4333296166d5ea36a2b4",
+      "gold150_gold.bio.jsonl": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+      "history.json": "88f8ecb2ed62400eb0f117313153f4dcbdf6f90f72fe5c8fc01d7af0c12fa8fc",
+      "result.json": "a8fb4e2a219cf6b0156d0b509167335399059c1d6a0f2f4849f582f53cd53d68",
+      "best/config.json": "3f2860bc773f102f9903ac0c0abc4185a66b61e7defd0e0e872402d852ffbbbe",
+      "best/tokenizer.json": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20"
+    },
+    "checkpoint": {
+      "path": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/43/best/model.safetensors",
+      "bytes": 2235448756,
+      "mtime": 1790055689.8498342,
+      "exists": true
+    },
+    "hash_vs_receipt": {},
+    "config": {
+      "model": "jjzha/esco-xlm-roberta-large",
+      "revision": "8093cc37ac619a25c5166355acba7be878eb6402",
+      "seed": 43,
+      "epochs": 20,
+      "batch_size": 8,
+      "lr": 2e-05,
+      "method": "chinese_lskt_linear_head_char_BIO_first_subword",
+      "labels": [
+        "B-K",
+        "B-L",
+        "B-S",
+        "B-T",
+        "I-K",
+        "I-L",
+        "I-S",
+        "I-T",
+        "O"
+      ],
+      "chunk_word_limit": 128,
+      "selection": "highest dev typed exact micro-F1; earliest epoch wins ties",
+      "gold150_in_gradient": false,
+      "gold150_in_selection": false,
+      "gold150_id_overlap_in_used_splits": [],
+      "train_sha256": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+      "dev_sha256": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+      "gold150_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "split_counts": {
+        "train": 2150,
+        "dev": 169
+      },
+      "chunk_counts": {
+        "train": 2220,
+        "dev": 181
+      },
+      "python": "3.10.21",
+      "torch": "2.14.0+cu130",
+      "transformers": "4.40.2",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "cuda": "13.0",
+      "started_unix": 1790055262.9616902
+    },
+    "head_vs_mlm": {
+      "base_cache_architecture_xlm": "XLMRobertaForMaskedLM",
+      "base_cache_architecture_esco": "RobertaForCustomMaskedLM",
+      "saved_run_architecture": [
+        "XLMRobertaForTokenClassification"
+      ],
+      "saved_id2label": {
+        "0": "B-K",
+        "1": "B-L",
+        "2": "B-S",
+        "3": "B-T",
+        "4": "I-K",
+        "5": "I-L",
+        "6": "I-S",
+        "7": "I-T",
+        "8": "O"
+      },
+      "log_warning": "Some weights of XLMRobertaForTokenClassification were not initialized ... ['classifier.bias', 'classifier.weight']",
+      "explanation": "AutoModelForTokenClassification drops the masked-LM lm_head and randomly initializes a linear classifier (hidden_size x 9 LSKT BIO labels). Task head is not the MLM softmax."
+    },
+    "finetune_scope": {
+      "optimizer_from_source": "AdamW(model.parameters(), lr=2e-5, weight_decay=0.01)",
+      "encoder_frozen": false,
+      "all_parameters_updated": true,
+      "extra_training_data": false,
+      "init_from_another_task_head": false,
+      "precision": "float32; no autocast/AMP in run_chinese_encoder.py"
+    },
+    "selection": {
+      "n_epochs_logged": 20,
+      "epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "argmax_dev_f1_earliest_tie": 15,
+      "argmax_dev_f1_value": 0.7524204702627939,
+      "matches_claimed_best_epoch": true,
+      "gold150_or_test_keys_in_history": [],
+      "history_contains_gold150_metric": false
+    },
+    "pred_alignment": {
+      "n_gold": 150,
+      "n_pred": 150,
+      "n_unique_pred_ids": 150,
+      "duplicate_pred_ids": [],
+      "missing_ids": [],
+      "extra_ids": [],
+      "id_order_equal": true,
+      "n_text_mismatch": [],
+      "n_tag_len_mismatch": [],
+      "n_pred_with_placeholder_token": 0
+    },
+    "empty_sentence_fp": {
+      "n_gold_sents_with_zero_spans": 8,
+      "n_empty_gold_with_pred_span": 6,
+      "ids": [
+        "1802-s0017",
+        "1804-s0003",
+        "1804-s0005",
+        "1815-s0008",
+        "1816-s0011",
+        "1816-s0012"
+      ]
+    },
+    "logs": [
+      {
+        "path": "/home/guojingli3/cnss_external_benchmarks_20260921/logs/chinese_full_esco-xlm-roberta-large_43_try1.out",
+        "sha256": "171607d10ae0e482980f66ddd913abf0557576aefee9e93d1e61b480a4cf4227",
+        "n_lines": 30
+      }
+    ],
+    "old_metrics": {
+      "typed_exact": {
+        "precision": 0.5842105263157895,
+        "recall": 0.502262443438914,
+        "f1": 0.5401459854014599,
+        "tp": 333,
+        "fp": 237,
+        "fn": 330,
+        "pred": 570,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7210526315789474,
+        "recall": 0.6199095022624435,
+        "f1": 0.6666666666666666,
+        "tp": 411,
+        "fp": 159,
+        "fn": 252,
+        "pred": 570,
+        "gold": 663
+      },
+      "collapsed_exact_boundary": {
+        "precision": 0.6263157894736842,
+        "recall": 0.5384615384615384,
+        "f1": 0.5790754257907542,
+        "tp": 357,
+        "fp": 213,
+        "fn": 306,
+        "pred": 570,
+        "gold": 663
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.651685393258427,
+          "recall": 0.464,
+          "f1": 0.5420560747663552,
+          "tp": 58,
+          "fp": 31,
+          "fn": 67,
+          "pred": 89,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5555555555555556,
+          "recall": 0.49107142857142855,
+          "f1": 0.5213270142180094,
+          "tp": 220,
+          "fp": 176,
+          "fn": 228,
+          "pred": 396,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6463414634146342,
+          "recall": 0.6022727272727273,
+          "f1": 0.6235294117647059,
+          "tp": 53,
+          "fp": 29,
+          "fn": 35,
+          "pred": 82,
+          "gold": 88
+        }
+      },
+      "macro_f1_LKST": 0.6217281251872676,
+      "scorer_version": "cnss-lskt-1.2.0",
+      "alignment_ok": true
+    },
+    "new_metrics": {
+      "typed_exact": {
+        "precision": 0.5842105263157895,
+        "recall": 0.502262443438914,
+        "f1": 0.5401459854014599,
+        "tp": 333,
+        "fp": 237,
+        "fn": 330,
+        "pred": 570,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7210526315789474,
+        "recall": 0.6199095022624435,
+        "f1": 0.6666666666666666,
+        "tp": 411,
+        "fp": 159,
+        "fn": 252,
+        "pred": 570,
+        "gold": 663
+      },
+      "collapsed_exact_boundary": {
+        "precision": 0.6263157894736842,
+        "recall": 0.5384615384615384,
+        "f1": 0.5790754257907542,
+        "tp": 357,
+        "fp": 213,
+        "fn": 306,
+        "pred": 570,
+        "gold": 663
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.651685393258427,
+          "recall": 0.464,
+          "f1": 0.5420560747663552,
+          "tp": 58,
+          "fp": 31,
+          "fn": 67,
+          "pred": 89,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5555555555555556,
+          "recall": 0.49107142857142855,
+          "f1": 0.5213270142180094,
+          "tp": 220,
+          "fp": 176,
+          "fn": 228,
+          "pred": 396,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.6463414634146342,
+          "recall": 0.6022727272727273,
+          "f1": 0.6235294117647059,
+          "tp": 53,
+          "fp": 29,
+          "fn": 35,
+          "pred": 82,
+          "gold": 88
+        }
+      },
+      "macro_f1_LKST": 0.6217281251872676,
+      "scorer_version": "cnss-lskt-1.2.0",
+      "alignment_ok": true
+    }
+  },
+  {
+    "encoder_short": "esco-xlm-roberta-large",
+    "hf_id": "jjzha/esco-xlm-roberta-large",
+    "declared_revision": "8093cc37ac619a25c5166355acba7be878eb6402",
+    "config_revision": "8093cc37ac619a25c5166355acba7be878eb6402",
+    "revision_match": true,
+    "seed": 44,
+    "run_dir": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/44",
+    "files_exist": {
+      "config.json": true,
+      "gold150_predictions.jsonl": true,
+      "gold150_official.json": true,
+      "gold150_gold.bio.jsonl": true,
+      "history.json": true,
+      "result.json": true,
+      "best/config.json": true,
+      "best/tokenizer.json": true,
+      "best/model.safetensors": true
+    },
+    "file_sha256": {
+      "config.json": "dc432648c3fed8e571c0e5727e06855d35d5e4bd91e25e6e07a5721160cde4bb",
+      "gold150_predictions.jsonl": "906c7a79a614afcff010b1a09518185c3827e32c556a8bca258d5b83a7c6606d",
+      "gold150_official.json": "e3df1a271a1207e9c7f1351b458389d01e10a93764dc8d9e1d2ae722194f43ea",
+      "gold150_gold.bio.jsonl": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+      "history.json": "e9ad72194791dc2006a8854a88b48ffedb982078749a3eaa57d1d07a641781ed",
+      "result.json": "40068e4b1d63850a77fcd09bd03b29cc5ae323e7693c86c0b8c4680ddd1c291d",
+      "best/config.json": "3f2860bc773f102f9903ac0c0abc4185a66b61e7defd0e0e872402d852ffbbbe",
+      "best/tokenizer.json": "3a56def25aa40facc030ea8b0b87f3688e4b3c39eb8b45d5702b3a1300fe2a20"
+    },
+    "checkpoint": {
+      "path": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/esco-xlm-roberta-large/44/best/model.safetensors",
+      "bytes": 2235448756,
+      "mtime": 1790055565.9128358,
+      "exists": true
+    },
+    "hash_vs_receipt": {},
+    "config": {
+      "model": "jjzha/esco-xlm-roberta-large",
+      "revision": "8093cc37ac619a25c5166355acba7be878eb6402",
+      "seed": 44,
+      "epochs": 20,
+      "batch_size": 8,
+      "lr": 2e-05,
+      "method": "chinese_lskt_linear_head_char_BIO_first_subword",
+      "labels": [
+        "B-K",
+        "B-L",
+        "B-S",
+        "B-T",
+        "I-K",
+        "I-L",
+        "I-S",
+        "I-T",
+        "O"
+      ],
+      "chunk_word_limit": 128,
+      "selection": "highest dev typed exact micro-F1; earliest epoch wins ties",
+      "gold150_in_gradient": false,
+      "gold150_in_selection": false,
+      "gold150_id_overlap_in_used_splits": [],
+      "train_sha256": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+      "dev_sha256": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+      "gold150_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "split_counts": {
+        "train": 2150,
+        "dev": 169
+      },
+      "chunk_counts": {
+        "train": 2220,
+        "dev": 181
+      },
+      "python": "3.10.21",
+      "torch": "2.14.0+cu130",
+      "transformers": "4.40.2",
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "cuda": "13.0",
+      "started_unix": 1790055271.1279619
+    },
+    "head_vs_mlm": {
+      "base_cache_architecture_xlm": "XLMRobertaForMaskedLM",
+      "base_cache_architecture_esco": "RobertaForCustomMaskedLM",
+      "saved_run_architecture": [
+        "XLMRobertaForTokenClassification"
+      ],
+      "saved_id2label": {
+        "0": "B-K",
+        "1": "B-L",
+        "2": "B-S",
+        "3": "B-T",
+        "4": "I-K",
+        "5": "I-L",
+        "6": "I-S",
+        "7": "I-T",
+        "8": "O"
+      },
+      "log_warning": "Some weights of XLMRobertaForTokenClassification were not initialized ... ['classifier.bias', 'classifier.weight']",
+      "explanation": "AutoModelForTokenClassification drops the masked-LM lm_head and randomly initializes a linear classifier (hidden_size x 9 LSKT BIO labels). Task head is not the MLM softmax."
+    },
+    "finetune_scope": {
+      "optimizer_from_source": "AdamW(model.parameters(), lr=2e-5, weight_decay=0.01)",
+      "encoder_frozen": false,
+      "all_parameters_updated": true,
+      "extra_training_data": false,
+      "init_from_another_task_head": false,
+      "precision": "float32; no autocast/AMP in run_chinese_encoder.py"
+    },
+    "selection": {
+      "n_epochs_logged": 20,
+      "epochs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "argmax_dev_f1_earliest_tie": 10,
+      "argmax_dev_f1_value": 0.7300275482093664,
+      "matches_claimed_best_epoch": true,
+      "gold150_or_test_keys_in_history": [],
+      "history_contains_gold150_metric": false
+    },
+    "pred_alignment": {
+      "n_gold": 150,
+      "n_pred": 150,
+      "n_unique_pred_ids": 150,
+      "duplicate_pred_ids": [],
+      "missing_ids": [],
+      "extra_ids": [],
+      "id_order_equal": true,
+      "n_text_mismatch": [],
+      "n_tag_len_mismatch": [],
+      "n_pred_with_placeholder_token": 0
+    },
+    "empty_sentence_fp": {
+      "n_gold_sents_with_zero_spans": 8,
+      "n_empty_gold_with_pred_span": 3,
+      "ids": [
+        "1804-s0005",
+        "1815-s0008",
+        "1816-s0012"
+      ]
+    },
+    "logs": [
+      {
+        "path": "/home/guojingli3/cnss_external_benchmarks_20260921/logs/chinese_full_esco-xlm-roberta-large_44_try1.out",
+        "sha256": "2f46ed7af29288483a60522a226664a85d43eb2893e9c023fd727cd6d8613038",
+        "n_lines": 30
+      }
+    ],
+    "old_metrics": {
+      "typed_exact": {
+        "precision": 0.6199261992619927,
+        "recall": 0.5067873303167421,
+        "f1": 0.5576763485477179,
+        "tp": 336,
+        "fp": 206,
+        "fn": 327,
+        "pred": 542,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7564575645756457,
+        "recall": 0.6184012066365008,
+        "f1": 0.6804979253112033,
+        "tp": 410,
+        "fp": 132,
+        "fn": 253,
+        "pred": 542,
+        "gold": 663
+      },
+      "collapsed_exact_boundary": {
+        "precision": 0.6752767527675276,
+        "recall": 0.5520361990950227,
+        "f1": 0.6074688796680499,
+        "tp": 366,
+        "fp": 176,
+        "fn": 297,
+        "pred": 542,
+        "gold": 663
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.6547619047619048,
+          "recall": 0.44,
+          "f1": 0.5263157894736843,
+          "tp": 55,
+          "fp": 29,
+          "fn": 70,
+          "pred": 84,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5952380952380952,
+          "recall": 0.5022321428571429,
+          "f1": 0.5447941888619855,
+          "tp": 225,
+          "fp": 153,
+          "fn": 223,
+          "pred": 378,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.7012987012987013,
+          "recall": 0.6136363636363636,
+          "f1": 0.6545454545454544,
+          "tp": 54,
+          "fp": 23,
+          "fn": 34,
+          "pred": 77,
+          "gold": 88
+        }
+      },
+      "macro_f1_LKST": 0.6314138582202811,
+      "scorer_version": "cnss-lskt-1.2.0",
+      "alignment_ok": true
+    },
+    "new_metrics": {
+      "typed_exact": {
+        "precision": 0.6199261992619927,
+        "recall": 0.5067873303167421,
+        "f1": 0.5576763485477179,
+        "tp": 336,
+        "fp": 206,
+        "fn": 327,
+        "pred": 542,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7564575645756457,
+        "recall": 0.6184012066365008,
+        "f1": 0.6804979253112033,
+        "tp": 410,
+        "fp": 132,
+        "fn": 253,
+        "pred": 542,
+        "gold": 663
+      },
+      "collapsed_exact_boundary": {
+        "precision": 0.6752767527675276,
+        "recall": 0.5520361990950227,
+        "f1": 0.6074688796680499,
+        "tp": 366,
+        "fp": 176,
+        "fn": 297,
+        "pred": 542,
+        "gold": 663
+      },
+      "per_type_exact": {
+        "L": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "tp": 2,
+          "fp": 1,
+          "fn": 0,
+          "pred": 3,
+          "gold": 2
+        },
+        "K": {
+          "precision": 0.6547619047619048,
+          "recall": 0.44,
+          "f1": 0.5263157894736843,
+          "tp": 55,
+          "fp": 29,
+          "fn": 70,
+          "pred": 84,
+          "gold": 125
+        },
+        "S": {
+          "precision": 0.5952380952380952,
+          "recall": 0.5022321428571429,
+          "f1": 0.5447941888619855,
+          "tp": 225,
+          "fp": 153,
+          "fn": 223,
+          "pred": 378,
+          "gold": 448
+        },
+        "T": {
+          "precision": 0.7012987012987013,
+          "recall": 0.6136363636363636,
+          "f1": 0.6545454545454544,
+          "tp": 54,
+          "fp": 23,
+          "fn": 34,
+          "pred": 77,
+          "gold": 88
+        }
+      },
+      "macro_f1_LKST": 0.6314138582202811,
+      "scorer_version": "cnss-lskt-1.2.0",
+      "alignment_ok": true
+    }
+  }
+]

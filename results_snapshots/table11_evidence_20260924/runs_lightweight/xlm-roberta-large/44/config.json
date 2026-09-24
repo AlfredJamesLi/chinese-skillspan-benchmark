@@ -1,0 +1,48 @@
+{
+  "model": "FacebookAI/xlm-roberta-large",
+  "revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+  "seed": 44,
+  "epochs": 20,
+  "batch_size": 8,
+  "lr": 2e-05,
+  "output": "/home/guojingli3/cnss_external_benchmarks_20260921/runs/chinese/full/xlm-roberta-large/44",
+  "smoke": false,
+  "train": "/home/guojingli3/cnss_external_benchmarks_20260921/chinese_data/train_b2.jsonl",
+  "dev": "/home/guojingli3/cnss_external_benchmarks_20260921/chinese_data/dev_b2.jsonl",
+  "gold150": "/home/guojingli3/cnss_external_benchmarks_20260921/chinese_data/gold150_test.jsonl",
+  "method": "chinese_lskt_linear_head_char_BIO_first_subword",
+  "claim": "new LSKT head from fill-mask encoder; not JobBERT-zh CRF; not English-head map",
+  "labels": [
+    "B-K",
+    "B-L",
+    "B-S",
+    "B-T",
+    "I-K",
+    "I-L",
+    "I-S",
+    "I-T",
+    "O"
+  ],
+  "chunk_word_limit": 128,
+  "selection": "highest dev typed exact micro-F1; earliest epoch wins ties",
+  "gold150_in_gradient": false,
+  "gold150_in_selection": false,
+  "gold150_id_overlap_in_used_splits": [],
+  "train_sha256": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+  "dev_sha256": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+  "gold150_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+  "split_counts": {
+    "train": 2150,
+    "dev": 169
+  },
+  "chunk_counts": {
+    "train": 2220,
+    "dev": 181
+  },
+  "python": "3.10.21",
+  "torch": "2.14.0+cu130",
+  "transformers": "4.40.2",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "cuda": "13.0",
+  "started_unix": 1790054678.7183752
+}

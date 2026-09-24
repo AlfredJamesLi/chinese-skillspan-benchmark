@@ -1,0 +1,266 @@
+{
+  "train_b2": {
+    "path": "/home/guojingli3/cnss_external_benchmarks_20260921/chinese_data/train_b2.jsonl",
+    "sha256": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+    "n_rows": 2150,
+    "n_unique_ids": 2150,
+    "duplicate_ids": [],
+    "n_spans": 3646,
+    "span_types": {
+      "S": 2218,
+      "T": 763,
+      "K": 641,
+      "L": 24
+    },
+    "n_empty_span_sents": 869,
+    "n_empty_text": [],
+    "n_chars_gt_128": 54,
+    "n_sents_with_han": 2141,
+    "n_latin_without_han": 5,
+    "n_sents_with_cjk_punct": 2071,
+    "n_text_not_already_nfc": 0,
+    "out_of_range_spans": [],
+    "overlapping_spans": [],
+    "illegal": [],
+    "fields_present": {
+      "id": 2150,
+      "sentence": 2150,
+      "tokens": 2150,
+      "list_of_selection_bio4": 2150,
+      "spans": 2150,
+      "cohort": 2150,
+      "condition": 2150,
+      "v5_added_exact_dup": 2150
+    },
+    "samples": [
+      {
+        "id": "1821-s0000",
+        "text_prefix": "工作职责：1.负责AI项目的系统设计和开发工作，和算法工程师、研发、交付等合作，将AI能力应用到实际客户应用中2.深入理解公司的AI平台及产品框架，并对平台进行",
+        "n_chars": 763,
+        "n_spans": 63
+      },
+      {
+        "id": "1822-s0000",
+        "text_prefix": "岗位职责：1.参与设计下一代的人工智能开发和应用平台，负责结合人工智能和垂直行业场景的产品的探索、机会发现、商务洽谈与方案及产品设计，协调各方资源推动产品上线;",
+        "n_chars": 80,
+        "n_spans": 7
+      },
+      {
+        "id": "1822-s0001",
+        "text_prefix": "2.对以数据展示为核心的演示性产品的设计；",
+        "n_chars": 21,
+        "n_spans": 1
+      }
+    ],
+    "id_prefix_examples": [
+      "1801-s0001",
+      "1801-s0002",
+      "1801-s0003",
+      "1802-s0001",
+      "1802-s0002",
+      "1802-s0003",
+      "1802-s0004",
+      "1802-s0009"
+    ]
+  },
+  "dev_b2": {
+    "path": "/home/guojingli3/cnss_external_benchmarks_20260921/chinese_data/dev_b2.jsonl",
+    "sha256": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+    "n_rows": 169,
+    "n_unique_ids": 169,
+    "duplicate_ids": [],
+    "n_spans": 345,
+    "span_types": {
+      "S": 207,
+      "K": 61,
+      "T": 77
+    },
+    "n_empty_span_sents": 82,
+    "n_empty_text": [],
+    "n_chars_gt_128": 7,
+    "n_sents_with_han": 166,
+    "n_latin_without_han": 0,
+    "n_sents_with_cjk_punct": 158,
+    "n_text_not_already_nfc": 0,
+    "out_of_range_spans": [],
+    "overlapping_spans": [],
+    "illegal": [],
+    "fields_present": {
+      "id": 169,
+      "sentence": 169,
+      "tokens": 169,
+      "list_of_selection_bio4": 169,
+      "spans": 169,
+      "cohort": 169,
+      "condition": 169,
+      "v5_added_exact_dup": 169
+    },
+    "samples": [
+      {
+        "id": "1833-s0000",
+        "text_prefix": "阿里巴巴达摩院 机器智能技术 云小蜜智能对话组，面向在校生提供实习机会。",
+        "n_chars": 36,
+        "n_spans": 0
+      },
+      {
+        "id": "1833-s0001",
+        "text_prefix": "工作职责: 在mentor指导下，负责对话领域的先进模型技术优化及探索，形成专利或发表顶会论文。",
+        "n_chars": 48,
+        "n_spans": 1
+      },
+      {
+        "id": "1833-s0002",
+        "text_prefix": "要求: 1.熟悉nlp领域基本知识，了解nlp领域某一方面先进技术，对分类、匹配、生成模型、强化学习等有深入理解优先，具备相关学术研究经验或竞赛经验优先。",
+        "n_chars": 77,
+        "n_spans": 7
+      }
+    ],
+    "id_prefix_examples": [
+      "1833-s0000",
+      "1833-s0001",
+      "1833-s0002",
+      "1833-s0003",
+      "1833-s0004",
+      "1833-s0005",
+      "1843-s0000",
+      "1843-s0001"
+    ]
+  },
+  "gold150_doccano": {
+    "path": "/home/guojingli3/cnss_external_benchmarks_20260921/chinese_data/gold150_test.jsonl",
+    "sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "n_rows": 150,
+    "n_unique_ids": 150,
+    "duplicate_ids": [],
+    "n_spans": 663,
+    "span_types": {
+      "K": 125,
+      "S": 448,
+      "T": 88,
+      "L": 2
+    },
+    "n_empty_span_sents": 8,
+    "n_empty_text": [],
+    "n_chars_gt_128": 8,
+    "n_sents_with_han": 150,
+    "n_latin_without_han": 0,
+    "n_sents_with_cjk_punct": 150,
+    "n_text_not_already_nfc": 0,
+    "out_of_range_spans": [],
+    "overlapping_spans": [],
+    "illegal": [],
+    "fields_present": {
+      "split": 150,
+      "handbook": 150,
+      "seq": 150,
+      "source_id": 150,
+      "example_id": 150,
+      "text": 150,
+      "label": 150,
+      "n_spans": 150,
+      "annotators": 150,
+      "p22_example_id": 50,
+      "iaa50_locked": 50
+    },
+    "samples": [
+      {
+        "id": "1801-s0004",
+        "text_prefix": "（4）负责参与公司无人机飞控系统技术项目开发策划、总体方案论证、技术设计",
+        "n_chars": 36,
+        "n_spans": 4
+      },
+      {
+        "id": "1802-s0000",
+        "text_prefix": "工作职责：1、监控和管理当前服务器、存储和备份基础设施的性能和容量。",
+        "n_chars": 34,
+        "n_spans": 5
+      },
+      {
+        "id": "1802-s0005",
+        "text_prefix": "6、培训其他方法、工具和技术支持多个应用。",
+        "n_chars": 21,
+        "n_spans": 4
+      }
+    ],
+    "id_prefix_examples": [
+      "1801-s0004",
+      "1802-s0000",
+      "1802-s0005",
+      "1802-s0006",
+      "1802-s0007",
+      "1802-s0008",
+      "1802-s0017",
+      "1803-s0000"
+    ]
+  },
+  "sha_match_published_b2": {
+    "train": true,
+    "dev": true,
+    "published_train": "/home/guojingli3/chinese-skillspan-benchmark/data/silver_plus_v6a_nocross/train_b2.jsonl",
+    "published_dev": "/home/guojingli3/chinese-skillspan-benchmark/data/silver_plus_v6a_nocross/dev_b2.jsonl"
+  },
+  "gold150_vs_published": {
+    "local_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "published_data_gold150_test_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "published_data_gold150_dir_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "expected_freeze_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "bytes_equal_published": true,
+    "n_rows_local": 150,
+    "n_rows_published": 150,
+    "n_record_diffs_in_order": 0,
+    "record_diffs_head": [],
+    "n_spans_from_doccano_labels": 663,
+    "n_L_spans": 2,
+    "public_urls": [
+      "https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/data/gold150_test.jsonl",
+      "https://doi.org/10.5281/zenodo.22698504 (v0.1.3 includes this freeze)"
+    ]
+  },
+  "overlap": {
+    "id_overlap": {
+      "rule": "string equality on record id / source_id after strip",
+      "train_dev": [],
+      "train_gold150": [],
+      "dev_gold150": [],
+      "n_train_dev": 0,
+      "n_train_gold150": 0,
+      "n_dev_gold150": 0
+    },
+    "exact_text_overlap": {
+      "train_dev": {
+        "n_shared_strings": 0,
+        "rule": "exact Unicode string equality on sentence/text (raw)"
+      },
+      "train_gold150": {
+        "n_shared_strings": 0,
+        "rule": "exact Unicode string equality on sentence/text (raw)"
+      },
+      "dev_gold150": {
+        "n_shared_strings": 0,
+        "rule": "exact Unicode string equality on sentence/text (raw)"
+      }
+    },
+    "nfc_text_overlap": {
+      "train_dev": {
+        "n_shared_strings": 0,
+        "rule": "exact Unicode string equality on sentence/text after NFC"
+      },
+      "train_gold150": {
+        "n_shared_strings": 0,
+        "rule": "exact Unicode string equality on sentence/text after NFC"
+      },
+      "dev_gold150": {
+        "n_shared_strings": 0,
+        "rule": "exact Unicode string equality on sentence/text after NFC"
+      }
+    },
+    "ad_level_isolation": {
+      "status": "cannot_prove",
+      "reason": "IDs are handbook-sentence keys like 1801-s0004; files have no advertisement/job-posting parent ID field for clustering near-duplicates across ads."
+    }
+  },
+  "label_versions": {
+    "b2": "list_of_selection_bio4 on character tokens; Silver-plus v6a_nocross teacher labels",
+    "gold150": "Doccano label triples with freeze spelling Tranversial SKills / Language_Skills&Knowledge / knowledge / skills"
+  }
+}
