@@ -2,10 +2,10 @@
 
 把下面整段交给 **Codex（论文/Overleaf 维护者）**。Cursor 不改 Overleaf。只填已验收数字。禁止脑补、禁止把未跑格子写成完成、禁止把共同协议线性头填进 native 分类/NNOSE 栏。
 
-机器可读备份（推 GitHub `results/a-native-20260924`）：
+机器可读备份（已推 GitHub `results/a-native-20260924`，commit `b8a7ae5`）：
 
-- 快照：`results_snapshots/a_native_20260924/`
-- 提示词：`docs/CODEX_OVERLEAF_A_NATIVE_20260924.md`
+- https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/results/a-native-20260924/results_snapshots/a_native_20260924
+- 提示词：https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/results/a-native-20260924/docs/CODEX_OVERLEAF_A_NATIVE_20260924.md
 - 服务器 A：`/home/guojingli3/cnss_a_native_20260922/A_NATIVE_RECEIPT.md`
 - `paper_ready_a_native_20260924.json`、逐 seed `results.jsonl`
 
