@@ -1,0 +1,12 @@
+hostname=DS209213
+gpu=3
+start=2026-09-22T23:41:55+08:00
+nnose_sources_revision=afc785b664a5cbec445f6ac5cac45cd97c76b3d7
+jobbert_pin=jjzha/jobbert-base-cased@eee1c8da6200fbaf2e2dcba53d54f6363f7a16dd
+data=nnose/data/skillspan/*.json (in-tree; not B HF common-protocol json)
+CKPT=tmp-5e-5/skillspan/jobbert/epoch_17
+FROZEN_FROM_DEV k=16 lambda=0.25 T=3.0
+[2026-09-23T02:55:33+08:00] NNOSE SkillSpan JobBERT pipeline done (STAGE4 first pass failed: missing write_output dir)
+[2026-09-23T03:10:06+08:00] STAGE4 retry after mkdir; test.json; frozen k=16 lambda=0.25 T=3.0
+test_base span_f1=0.6129447063866267 sha256=d1845568964a5e14a1048532ae212483638f7f51ad2b6774f5733d86cef508fa
+test_knn span_f1=0.6122536418166239 sha256=719061b71e69f97c7fc7c980c8c2cf903e0f4171c2b2ff7f2c901eef9083306f

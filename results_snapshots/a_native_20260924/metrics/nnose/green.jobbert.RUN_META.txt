@@ -1,0 +1,13 @@
+hostname=DS209213
+gpu=3
+start=2026-09-23T15:42:02+08:00
+nnose_sources_revision=afc785b664a5cbec445f6ac5cac45cd97c76b3d7
+jobbert_pin=jjzha/jobbert-base-cased@eee1c8da6200fbaf2e2dcba53d54f6363f7a16dd
+dataset=green
+data=nnose/data/green/*.json (in-tree; not B HF common-protocol json)
+CKPT=tmp-5e-5/green/jobbert/epoch_1
+[2026-09-23T16:33:17+08:00] resume green ckpt=tmp-5e-5/green/jobbert/epoch_1 sweep_out=/home/guojingli3/cnss_a_native_20260922/nnose/sweep/2026-09-23_15:42:02/jobbert_green.out visible=3
+FROZEN_FROM_DEV k=128 lambda=0.2 T=2.0
+test_base span_f1=0.4910591471801926 sha256=a1a080d00ea793b27bf83b4bfb3a4863f410bc4e511f7cc5c07287fa0f3cc50a
+test_knn span_f1=0.5003445899379738 sha256=d29b312f9b5e9a347cf7a788ce21f6b755f28c4304ddb72a86f5ae9e0610a723
+[2026-09-23T20:04:35+08:00] NNOSE green JobBERT resume pipeline done

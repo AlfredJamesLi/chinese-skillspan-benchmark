@@ -1,0 +1,42 @@
+hostname: DS209213
+ip: 144.214.209.213
+date: 2026-09-22
+driver: 555.42.06
+cuda_reported_by_driver: 12.5
+gpu_used_for_import_check: 1  NVIDIA A100 80GB PCIe  compute_cap=8.0
+system_python: /usr/bin/python3 3.10.12
+miniconda: /home/guojingli3/cnss_a_native_20260922/miniconda3  (Miniconda3-py38_23.11.0-2)
+env_kompetencer: /home/guojingli3/cnss_a_native_20260922/env_kompetencer
+python: 3.8.20
+torch: 1.8.1+cu111
+torch.cuda.is_available: True
+torch.cuda.get_device_capability: (8, 0)
+allennlp: 2.8.0
+transformers: 4.15.0  (allennlp 2.8.0 metadata asks <4.13; smoke will record if this is a protocol difference)
+HF_HOME: /home/guojingli3/cnss_a_native_20260922/hf_cache
+checklist: NOT installed (allennlp extra; config already has run_confidence_checks=false)
+install_logs: env_install_logs/pip_kompetencer.log env_install_logs/pip_allennlp_nodeps.log
+
+# Active Kompetencer env (Python 3.8 prefix abandoned: cached_path functools.cache)
+env_kompetencer39: /home/guojingli3/cnss_a_native_20260922/env_kompetencer39
+python39: 3.9.25
+torch39: 1.8.1+cu111 cuda=True capability=(8, 0)
+allennlp39: 2.8.0
+transformers39: 4.12.5
+numpy39: 1.23.5
+
+# NNOSE env (verified 2026-09-22 16:38)
+env_nnose: /home/guojingli3/cnss_a_native_20260922/env_nnose
+python_nnose: 3.9.25
+torch_nnose: 1.10.1+cu113 cuda=True
+faiss: 1.7.2
+transformers_nnose: 4.26.1
+adapter_transformers: 3.2.0
+jobbert_pin: jjzha/jobbert-base-cased @ eee1c8da6200fbaf2e2dcba53d54f6363f7a16dd
+# restored 2026-09-22 23:41 to environment.yml pins after drift
+pyarrow_nnose: 11.0.0
+fsspec_nnose: 2023.1.0
+huggingface_hub_nnose: 0.12.1
+numpy_nnose: 1.24.2
+scipy_nnose: 1.10.1
+pandas_nnose: 1.5.3

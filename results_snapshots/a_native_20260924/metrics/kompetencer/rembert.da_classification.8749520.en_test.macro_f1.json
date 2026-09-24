@@ -1,0 +1,186 @@
+{
+  "metric_primary": "macro_f1",
+  "scale": "0-1",
+  "n": 1578,
+  "macro_f1": 0.012498220513885662,
+  "weighted_f1": 0.023851144606537946,
+  "n_gold_labels": 22,
+  "n_pred_labels": 8,
+  "gold_support": {
+    "S1": 313,
+    "S4": 176,
+    "S2": 124,
+    "S3": 56,
+    "S5": 41,
+    "K99": 88,
+    "S6": 39,
+    "S8": 42,
+    "K06": 257,
+    "K07": 132,
+    "K01": 12,
+    "K04": 109,
+    "K02": 20,
+    "A1": 44,
+    "K10": 17,
+    "L1": 30,
+    "K08": 10,
+    "A2": 2,
+    "K05": 23,
+    "S7": 10,
+    "K03": 11,
+    "K09": 22
+  },
+  "pred_counts": {
+    "0000": 890,
+    "S2": 547,
+    "S4": 59,
+    "S5": 7,
+    "S3": 67,
+    "K01": 4,
+    "A1": 3,
+    "K99": 1
+  },
+  "per_label": {
+    "0000": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0
+    },
+    "A1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 44
+    },
+    "A2": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2
+    },
+    "K01": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 12
+    },
+    "K02": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20
+    },
+    "K03": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 11
+    },
+    "K04": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 109
+    },
+    "K05": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 23
+    },
+    "K06": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 257
+    },
+    "K07": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 132
+    },
+    "K08": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10
+    },
+    "K09": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 22
+    },
+    "K10": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 17
+    },
+    "K99": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 88
+    },
+    "L1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 30
+    },
+    "S1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 313
+    },
+    "S2": {
+      "precision": 0.12979890310786105,
+      "recall": 0.5725806451612904,
+      "f1": 0.21162444113263787,
+      "support": 124
+    },
+    "S3": {
+      "precision": 0.014925373134328358,
+      "recall": 0.017857142857142856,
+      "f1": 0.016260162601626015,
+      "support": 56
+    },
+    "S4": {
+      "precision": 0.11864406779661017,
+      "recall": 0.03977272727272727,
+      "f1": 0.05957446808510638,
+      "support": 176
+    },
+    "S5": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 41
+    },
+    "S6": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 39
+    },
+    "S7": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10
+    },
+    "S8": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 42
+    }
+  },
+  "gold": "data/en_test.tsv",
+  "pred": "/home/guojingli3/cnss_a_native_20260922/runs/kompetencer/rembert/da_classification/8749520/en_test.out",
+  "note": "AllenNLP dataset config metric is macro-f1. Do not treat this as span-F1."
+}
