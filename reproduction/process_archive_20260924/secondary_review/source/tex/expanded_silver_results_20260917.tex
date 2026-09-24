@@ -1,0 +1,30 @@
+% Verified against GitHub commit 11355ff and the author-supplied Server A README.
+\subsection{Exploratory Expanded-Silver Experiments}
+\label{sec:expanded-silver}
+\paragraph{Expanded-pool adaptation.}
+The expanded Qwen runs use seed 42, the frozen shared-guideline prompt with five schematic examples, occurrence-based output, and the local span parser. LoRA uses rank 16, scaling 32, dropout 0.05, attention q/k/v/o projections, learning rate $10^{-4}$, batch size one with 16-step gradient accumulation, BF16, and a maximum sequence length of 8,192 tokens. Assistant-only loss is used. Training allows six epochs with patience two; both pooled checkpoints are selected at epoch one using Silver-validation exact F1. Decoding is deterministic with a 2,048-token output cap. The expanded JobBERT runs retain the domain-adapted encoder and inherited CRF. Its latest run uses 8,842 training and 698 development records, so the separate 350-sentence Silver-test interpretation applies to Qwen, not to that JobBERT run.
+
+
+Table~\ref{tab:expanded-silver-main} reports the two pooled Qwen runs. The latest Codex variant attains typed exact micro-F1 of 0.809 against its held-out Silver targets and 0.585 against Gold150. The Silver-test score measures agreement with held-out labels generated under the training annotation protocol; the Gold150 score measures agreement with the selected human reference.
+
+\begin{table}[htbp]
+\caption{Expanded-pool Qwen results (seed 42). All scores are typed exact micro-F1 except the final relaxed-F1 column. Gold150 is used only for the additional human-reference evaluation.}
+\label{tab:expanded-silver-main}
+\centering\small
+\begin{tabularx}{\linewidth}{@{}Lcccc@{}}
+\toprule
+Pool variant & \makecell{Silver\\validation} & \makecell{Silver\\test} & \makecell{Gold150\\exact} & \makecell{Gold150\\relaxed} \\
+\midrule
+Proxy: 8,943 / 351 / 352 & 0.783 & 0.759 & 0.597 & 0.713 \\
+Codex: 8,842 / 348 / 350 & 0.833 & 0.809 & 0.585 & 0.703 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+Counts in the first column are train / validation / test sentences. Both variants combine earlier B2 and public-prompt annotations; their names identify the annotation channel for the replaced 2,500-sentence subset. They contain 9,646 and 9,540 retained sentences, respectively. Both checkpoints were selected at epoch one with patience two. Differences are computed before rounding: the proxy-minus-Codex Gold150 difference rounds to 0.011 even though subtracting the displayed scores gives 0.012.
+\end{table}
+
+The Codex variant has higher agreement with its own Silver test labels but an approximately 0.011 lower exact F1 on Gold150 than the proxy variant. The channel replacement also changes record inclusion: 2,353 of the 2,500 Codex annotations are retained, compared with 2,459 proxy annotations. The contrast therefore describes the two resulting training pools rather than an isolated effect of annotation channel.
+
+The expanded JobBERT runs obtain Gold150 exact F1 of 0.242 for the proxy pool and 0.232 for the Codex pool (seed 42); the latter has relaxed F1 of 0.485. A preceding 7,117-record configuration gives $0.237\pm0.002$ across three seeds. These scores are lower than the historical B2 continuation result, but the expanded runs change the annotation protocol, source composition, and development set alongside training size. The latest JobBERT run selects on 698 development records, whereas Qwen uses 348 validation records and retains 350 for Silver testing. Thus these results do not identify an effect of increasing training size alone. They show that the larger supervision pool does not deliver uniform improvements across the recorded baselines; the matched Qwen comparison remains the direct evidence for adaptation under a fixed inference protocol.
+
+For comparison, the B2 Qwen adapter at seed 42 scores 0.500 on Gold150; its three-seed mean of 0.540 is a different summary. Neither is a matched estimate of an expansion effect because the expanded runs change the supervision pool and selection targets. The cause of the lower expanded JobBERT scores remains unresolved: per-type predictions, truncation/windowing counts, label-version compatibility, and decoding diagnostics must be recovered before attributing the decline to any one factor.

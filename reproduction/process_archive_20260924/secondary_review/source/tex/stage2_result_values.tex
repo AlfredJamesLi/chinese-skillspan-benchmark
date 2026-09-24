@@ -1,0 +1,17 @@
+% [Stage2] Display values generated from frozen R42 full-precision CSV/summary, without rescoring.
+\newcommand{\SharedResultRows}{%
+\SharedResultRow{GPT proxy}{0.676}{0.658}{0.667}{0.766}{0.654}{0.689}%
+\SharedResultRow{\makecell[l]{DeepSeek\\(non-thinking)}}{0.651}{0.643}{0.647}{0.761}{0.643}{0.654}%
+\SharedResultRow{Claude}{0.598}{0.597}{0.598}{0.709}{0.589}{0.614}%
+\SharedResultRow{\makecell[l]{DeepSeek\\(thinking)}}{0.713}{0.505}{0.591}{0.671}{0.572}{0.623}%
+\SharedResultRow{Kimi}{0.581}{0.563}{0.572}{0.714}{0.557}{0.599}%
+\SharedResultRow{Qwen}{0.507}{0.281}{0.361}{0.470}{0.345}{0.390}%
+}
+\newcommand{\QwenResultRows}{%
+\QwenResultRow{No adapter}{0.507}{0.281}{0.361}{0.470}{0.345}{0.390}%
+\QwenResultRow{LoRA, seed 42}{0.588}{0.434}{0.500}{0.624}{0.511}{0.480}%
+\QwenResultRow{LoRA, seed 43}{0.634}{0.507}{0.563}{0.686}{0.571}{0.549}%
+\QwenResultRow{LoRA, seed 44}{0.633}{0.499}{0.558}{0.676}{0.567}{0.543}%
+}
+\newcommand{\QwenBaselineExact}{0.361}
+\newcommand{\QwenLoraExact}{0.540\pm0.035}

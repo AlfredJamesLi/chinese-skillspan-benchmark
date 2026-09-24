@@ -1,0 +1,78 @@
+% [R16-B] Preserve original comparison layers; administrative provenance stays in archived sources.
+\section{Appendix B. Annotation-Quality Evidence}
+\phantomsection
+\label{app:b}
+\label{sec:quality-provenance-r12}
+The comparisons in Table~\ref{tab:quality-main} use different designs. The initial 50-sentence calibration study involved independent raw-text coding before adjudication under the historical handbook. The sentences were sampled from the 980-record conflict queue with seed 20260902. Available exports reproduce 98 exact matches between 211 and 230 spans, giving F1 0.444. Character-level $\kappa$ is 0.567 for L/K/S/T plus O, over all 2,571 source code points, including spaces and punctuation. Reproduction from later exports does not establish byte identity with the original frozen files. Table~\ref{tab:iaa50} summarizes the calculation. Supplementary diagnostics and comparisons with the subsequently adjudicated 248-span reference are retained in the reproduction materials.
+
+The reference's challenge cohort contributes 415 spans (290 S, 83 K, 41 T, one L), and the calibration cohort contributes 248 (158 S, 42 K, 47 T, one L). Seven challenge sentences and one calibration sentence have no annotated span. The identifiers contain 61 document prefixes; these are identifier-based groups rather than independently reconstructed advertisements. The adjudicated reference remains separate from the original coding and assisted-review layers.
+
+% [R37-MOVE] Counting convention formerly repeated in the corpus chapter.
+Character-level Cohen's $\kappa$ adjusts observed agreement for agreement expected from the two coders' marginal label frequencies:
+\begin{equation}
+\kappa=\frac{p_o-p_e}{1-p_e},
+\qquad p_e=\sum_{c\in\mathcal{C}}p_A(c)\,p_B(c).
+\label{eq:character-kappa}
+\end{equation}
+Here, $p_o$ is the fraction of source character positions with identical labels, and $p_A(c)$ and $p_B(c)$ are the two coders' label proportions. The label set $\mathcal{C}$ comprises L/K/S/T and O. For the four-label scheme plus O, the available exports yield $p_o=0.771$ and $p_e=0.471$, giving $\kappa=0.567$. These character-level quantities are distinct from the span counts in Eq.~\eqref{eq:micro-prf}; the 2,571 positions are nested within 50 sentences, not 2,571 independent samples.
+
+Empty--empty sentences contribute no span true positives. Span matching and character-level agreement use different units; optional category projections are documented in the reproduction materials.
+
+The post-generation review sample instead compares a machine-prefilled layer with human review: 140 exact typed matches among 144 machine and 148 reviewed spans give P/R/F1 of 0.972/0.946/0.959. Ninety-five sentences have identical complete span sets. The sample was stratified by historical source, empty/nonempty status, and text length from 2,179 eligible records (seed 20260908); two small strata totalling 11 records were unsampled. The estimate describes this reviewed sample, not an unbiased corpus-wide accuracy estimate.
+
+The initial review and post-generation review retain separate versioned annotation layers. The source of the initial review records and each completed run's label version are documented separately.
+
+The September 17 Dual15 export records two separate annotation queues (collaborative annotation disabled), with both coders confirming all 15 sentences. It includes separate coder layers and their source identifiers, supporting the author-reported independent submission procedure. Across 719 source code points, both coders assign 57 K, 144 S, 4 T, 514 O, and no L labels. Thus $p_o=1.000$, $p_e=0.557$, and Cohen's $\kappa=1.000$; all 27 typed spans also match exactly (F1 1.000). The calculation uses the same character-label convention as the 50-sentence comparison.
+
+The subset is nested within the post-generation Silver review cohort. Its export distinguishes it from the blind 50-sentence calibration study and retains an administrative seed layer identical to both human layers. Separate queues establish separate submissions; the coefficient characterizes this auditor-subset agreement and is not treated as blind raw-text reliability. The human reference and the two original annotation-review cohorts comprise 350 distinct sentences; the archived nested subset adds no new sentences. The additional QA150 sample adds 150 non-overlapping sentences, bringing the full human coding and review coverage to 500. Full comparison-layer provenance and chronology are retained in the reproduction notes.
+
+\begin{table}[htbp]
+\caption{Calculation summary for the 50-sentence human--human coding comparison. Character labels are L/K/S/T/O; exact span matching requires identical boundaries and type.}
+\label{tab:iaa50}
+\centering\small
+\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{@{}LrL@{}}
+\toprule
+Measure & Value & Basis \\
+\midrule
+Observed agreement ($p_o$) & 0.771 & Character labels \\
+Expected agreement ($p_e$) & 0.471 & Coder label frequencies \\
+Cohen's $\kappa$ & 0.567 & Chance-corrected character agreement \\
+Exact typed span F1 & 0.444 & Boundary and type agreement \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+Support: 2,571 characters; 211 Coder A spans and 230 Coder B spans, with 98 exact matches. Values are reproduced from the available coder exports.
+\end{table}
+\FloatBarrier
+
+\subsection{Dual-Reviewer QA on the Expanded Silver Sample}
+The completed export contains both human layers for the 150 preselected sentences, with all confirmations recorded separately for each reviewer. Identifiers exactly match the stratified draw, and normalized sentence texts have no overlap with the original 350. The sample includes 60 cloud, 45 public-sector, and 45 listed-company sentences. Machine suggestions were visible, so separate submissions provide reviewer--reviewer agreement under assisted review rather than blind agreement.
+
+\begin{table}[htbp]
+\caption{Paired agreement in the additional QA150 sample. Exact typed span F1 uses original pre-adjudication span sets. Intervals are percentile 95\% confidence intervals from 10,000 sentence resamples within source strata (seed 20260917). They are conditional on the sampled source quotas.}
+\label{tab:qa150-pairs}
+\centering\small
+\begin{tabularx}{\linewidth}{@{}Lccc@{}}
+\toprule
+Comparison & Exact F1 & 95\% interval & Identical sentences \\
+\midrule
+Reviewer A--Reviewer B & 0.816 & [0.769, 0.860] & 101/150 \\
+Astra--Grok suggestions & 0.962 & [0.937, 0.983] & 138/150 \\
+Reviewer A--Astra & 0.823 & [0.776, 0.866] & 100/150 \\
+Reviewer B--Astra & 0.850 & [0.803, 0.892] & 108/150 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The 49 sentences with differing human span sets remain part of the raw agreement calculation. The exported annotations are not replaced by their intersection or a consensus layer. Character-level calculations assign O/L/K/S/T to original Unicode-code-point positions, including spaces and punctuation. Two positions have conflicting types within one reviewer layer and are excluded from both character sequences, leaving $N=5{,}990$ positions. All original spans remain in span-level F1. The conflicts occur in the raw review layer for \texttt{sp10k-01837}; these layers are not substituted for Gold150. The available records do not establish a final adjudication or record-level propagation into each later training target. This unresolved provenance is separate from the documented raw-layer agreement calculation. The resulting observed agreement is $p_o=0.934$, with $p_e=0.439$ and $\kappa=0.883$.
+
+For nominal Krippendorff's $\alpha$, let $m_c$ count assignments to category $c$ across both reviewers, with $\sum_c m_c=2N$. The observed and expected disagreements are
+\begin{equation}
+\alpha=1-\frac{D_o}{D_e},\qquad
+D_o=1-p_o,\qquad
+D_e=1-\frac{\sum_c m_c(m_c-1)}{2N(2N-1)}.
+\label{eq:qa150-alpha}
+\end{equation}
+Here $D_o=0.066$ and $D_e=0.560$, giving $\alpha=0.883$. The character coefficients and span F1 describe different units of agreement~\citep{artstein2008agreement}; the many O positions contribute to the character calculation. Agreement between two machine suggestion layers likewise measures concordance, not accuracy against an independent human reference. Export hashes, calculation code, and detailed diagnostics accompany the reproduction record.
+\FloatBarrier

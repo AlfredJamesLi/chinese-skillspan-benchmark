@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\caption{Qwen with and without B2 LoRA under shared guidelines. Every row covers 150 sentences. P/R are exact precision/recall; cohort columns are exact F1. The same no-adapter prediction is used throughout.}
+\label{tab:qwen-shared-sft-r42}
+\centering\small\setlength{\tabcolsep}{4pt}
+\newcommand{\QwenResultRow}[7]{#1 & #2 & #3 & #4 & #5 & #6 & #7 \\}
+\begin{tabularx}{\linewidth}{@{}Lrrrrrr@{}}
+\toprule
+Condition & P & R & \makecell{Exact\\F1} & \makecell{Relaxed\\F1} & \makecell{Challenge\\100} & \makecell{Calibration\\50} \\
+\midrule
+\QwenResultRows
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+LoRA typed exact F1: $\QwenLoraExact$ (mean $\pm$ sample SD across three seeds).
+\end{table}

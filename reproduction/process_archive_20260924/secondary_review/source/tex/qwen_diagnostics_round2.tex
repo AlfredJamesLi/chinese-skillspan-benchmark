@@ -1,0 +1,15 @@
+\subsection{Matched Qwen Frozen-Prediction Diagnostics}
+\label{sec:qwen-diagnostics-r2}
+Diagnostics reuse the same 150 reference sentences and each run's frozen accepted spans. Typed exact matching is completed on each full sentence before aggregation by gold-span length. Bins ($\leq4$, 5--8, $\geq9$ Unicode code points) are fixed in advance; they contain 346/243/74 gold spans in 102/110/56 sentences, respectively. A sentence may contribute gold spans to multiple bins. Type-specific unmatched predictions count as FP even in empty-reference sentences. Each seed is evaluated separately on the same test set. Whole-set exact F1 agrees with each archived full-precision result.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/qwen_diagnostics_chart_0913.pdf}
+\caption{Descriptive diagnostics of frozen Qwen predictions on the same 150 reference sentences. (a) Typed exact F1 for K (knowledge), S (occupational skills), and T (transversal competences). (b) Recall by gold-span length; in (a--b), $n$ denotes gold spans. (c--d) Accepted false positives on the eight empty-reference sentences, counted by sentence and by span separately. Colours and patterns identify runs. Each run is shown separately on the shared test set.}
+\label{fig:qwen-diagnostics}
+\end{figure}
+\FloatBarrier
+
+On the eight empty-reference sentences, accepted false-positive spans decrease from 19 without an adapter to 6, 4, and 0 for seeds 42, 43, and 44; the corresponding affected-sentence counts are 2, 2, 1, and 0.
+
+L has two gold spans: the no-adapter run recovers 0/2 and each LoRA run 2/2, with one extra L prediction in every run. Legal empty outputs occur in 6/8, 6/8, 7/8, and 8/8 sentences in the plotted order. Complete TP/FP/FN, precision/recall/F1, and parser-rejection diagnostics are retained in the reproduction materials.

@@ -1,0 +1,65 @@
+% [R42] Final A handoff, independently rescored; old snapshot preserved in before_R42.
+% Separate protocol: no changes to the abstract or historical V4 result.
+\subsection{Shared-Guideline Evaluation against the Human Reference}
+\label{sec:gold150-shared-r7}
+The shared protocol evaluates six configurations on the complete human reference. It uses the frozen human reference with general instructions adapted from the V4.2.12-based annotation prompt and five schematic examples.
+
+\paragraph{Configuration and output records.}
+Table~\ref{tab:model-identity} distinguishes the original annotation teacher, inference baselines, and expansion channels. It lists recorded service identifiers and access routes without independently establishing provider checkpoints.
+
+\input{tex/review20260923/model_identity}
+
+Models return an ID and spans as literal \texttt{text}, zero-based \texttt{occurrence}, and L/K/S/T \texttt{type}. The span parser resolves spans to Unicode offsets for exact and relaxed scoring with the released span scorer. All supplied input texts match the frozen reference.
+
+Qwen runs locally with deterministic decoding. Kimi uses non-thinking mode and temperature 0.6. DeepSeek uses non-thinking and thinking modes with configured output caps of 2,048 and 8,192 tokens. GPT proxy and Claude are accessed through a proxy, while Kimi and DeepSeek use provider endpoints. Configuration and access metadata accompany the reproduction notes.
+
+
+\FloatBarrier
+
+
+
+\input{tex/review20260923/output_outcomes}
+
+\paragraph{Output validity.}
+Qwen without an adapter has 69 partially rejected responses, compared with 2, 4, and 1 for the three adapters. DeepSeek thinking has 18 whole-response format failures. These counts do not separate formatting effects from other contributions to F1. All outcomes remain included in scoring under the parser rules.
+
+\paragraph{Deterministic parser and scorer decisions.}
+Parser v1.1 requires a matching record ID, a span list, a nonempty literal substring, an integer occurrence index, and an exact L/K/S/T label. It resolves candidates to source offsets, sorts by start offset and then original output order, and keeps the first compatible candidate. Later exact duplicates, same-boundary type conflicts, and overlaps are rejected. Accepted spans from partial responses remain in the score; fully rejected and malformed responses become empty predictions.
+
+The cnss-lskt-1.2.0 BIO scoring path starts spans at B-type tags and consumes contiguous I-tags of that same type; unattached I-tags are not promoted to B-tags in this path. Exact matching deduplicates identical span tuples within each sentence. Relaxed matching traverses reference spans in source order, selecting the unused same-type prediction with highest IoU; an equal-IoU tie retains the first candidate in prediction order. A match requires IoU at least 0.5. Matching is greedy, not globally optimized. Empty--empty records contribute no span counts. The official alignment check rejects missing or duplicate reference-ID predictions; the strict reproduction checks also reject extra IDs. The audit registry pins the inspected implementations, and the derived bootstrap counts reproduce the published exact scores before resampling.
+
+\paragraph{Conditional resampling.}
+We jointly resampled the 150 reference sentences across configurations 10,000 times with seed 20260923. Typed exact micro-F1 was recomputed from sentence-level span counts. For the LoRA mean, the same resampled sentences were used for all three fixed training seeds before averaging F1. Table~\ref{tab:core-paired} reports percentile intervals for paired differences. These post hoc intervals condition on the development-used reference and recorded runs. They do not model advertisement-level clustering or adjust for multiple comparisons. Seed SD describes a separate source of variation.
+
+\paragraph{Numerical reporting.}
+Scores, standard deviations, differences, and interval endpoints are displayed to three decimal places. A near-zero endpoint is shown in scientific notation with three significant digits when rounding would hide its sign. Published percentage scores are converted to the 0--1 scale; descriptive percentages use one decimal place. Statistics are computed before display rounding, and result files preserve the available numerical precision. Original-task reruns state their seed counts separately.
+
+\paragraph{Observed mismatch examples.}
+In the frozen no-adapter Qwen output for \texttt{1801-s0004}, the predicted S span $[5,24)$ is \zh{参与公司无人机飞控系统技术项目开发策划}, whereas an overlapping reference S span is $[16,24)$, \zh{技术项目开发策划}. For \texttt{1802-s0005}, both layers select \zh{方法} at $[6,8)$, but the prediction is S and the reference is K. These are actual prediction--reference differences, not handbook teaching examples; they do not establish that either local wording alone resolves the contextual annotation decision. The no-adapter parser record separately reports 167 occurrence-index errors and one overlap conflict. After removing exact matches, deterministic pairing of remaining Qwen predictions finds 27 same-boundary/different-type pairs, 89 same-type/overlapping-boundary pairs, and 65 other unmatched predictions. Same-boundary pairs are assigned first; remaining overlaps use source order and the first unused compatible reference span. These mutually exclusive prediction categories sum to 181 false positives. They describe structural disagreements, not adjudicated scope errors or linguistic causes. A full adjudicated taxonomy of scope, boundary, type, and format errors remains unavailable.
+
+\FloatBarrier
+Offline rescoring reproduces the exact and relaxed results for all six inference configurations and all three Qwen LoRA runs. The reproduction notes distinguish the available scoring artifacts from the requirements for rerunning model inference.
+
+DeepSeek in thinking mode shows higher precision and lower recall than the non-thinking configuration under their respective output budgets.
+
+\subsection{Qwen Fine-Tuning under the Same Inference Protocol}
+\label{sec:qwen-shared-sft-r42}
+Table~\ref{tab:qwen-shared-sft-r42} pairs the no-adapter Qwen checkpoint with B2-trained LoRA adapters. The base checkpoint, frozen messages and examples, occurrence-based schema, parser, decoding settings, and reference remain the same. The three development-selected adapters are evaluated on all 150 sentences. 
+
+\begin{table}[htbp]
+\caption{Qwen with and without B2 LoRA under shared guidelines. Every row covers 150 sentences. P/R are exact precision/recall; cohort columns are exact F1. The same no-adapter prediction is used throughout.}
+\label{tab:qwen-shared-sft-r42}
+\centering\small\setlength{\tabcolsep}{4pt}
+\newcommand{\QwenResultRow}[7]{#1 & #2 & #3 & #4 & #5 & #6 & #7 \\}
+\begin{tabularx}{\linewidth}{@{}Lrrrrrr@{}}
+\toprule
+Condition & P & R & \makecell{Exact\\F1} & \makecell{Relaxed\\F1} & \makecell{Challenge\\100} & \makecell{Calibration\\50} \\
+\midrule
+\QwenResultRows
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+LoRA typed exact F1: $\QwenLoraExact$ (mean $\pm$ sample SD across three seeds).
+\end{table}
+
+All three B2-trained adapters improve exact F1 over the no-adapter checkpoint. With the base model and inference protocol held fixed, the results demonstrate Qwen task adaptation using the supplied Silver-plus supervision. The separate JobBERT study examines revised supervision and development-based selection on matched texts.

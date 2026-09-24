@@ -1,0 +1,36 @@
+\section{Appendix D. Reproduction and Versioned Materials}
+\phantomsection
+\label{app:d}
+\label{sec:extension-provenance}
+\label{sec:display-archive-r14}
+
+The public \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/REPRODUCIBILITY.md}{reproduction guide} separates three tasks: inspecting released results, scoring saved predictions, and rerunning training or inference. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/reproduction/PAPER_INDEX.md}{paper-to-file index} links each table and figure to its supporting materials. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/PAPER_NAMES.md}{resource naming guide} maps manuscript terms to exact file names and model identifiers.
+
+Shared-guideline inference, Qwen adaptation, and the JobBERT supervision comparison retain their own data splits, protocol versions, and selection records. Supplementary tables and experimental notes provide detailed results and reproduction requirements, with Qwen adapters and frozen predictions available in the \href{https://doi.org/10.5281/zenodo.22851581}{model-reproduction archive}. Its model index links each adapter to its selected checkpoint, protocol, and recorded result. The annotation-quality documentation reports independently recomputed agreement statistics and the QA150 nominal-alpha correction; the original recent coder exports are retained by the authors. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/benchmark_profile}{Figure~\ref{fig:length-distributions-r40} reproduction files} provide the measured length-frequency counts, type counts, plotting script, and source-file hashes without recruitment wording.
+
+The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/36f009fab01b8433355cb7ef5af8fad02c6cc519/reproduction/process_archive_20260924/README.md}{supporting process archive} preserves the complete exploratory subset results, execution-version ledger, archive history, and detailed preparation records. It links the earlier result snapshots and distinguishes the shared-guideline protocol from historical JSON-offset scoring. These records support traceability; they do not supply all training inputs or establish full reproduction.
+
+\subsection{Collection and Preparation Records}
+The available public-institution records retain announcement titles, source names, URLs, listed publication dates, and geographic metadata where available. Listed publication dates are not collection dates. A complete source-by-stage census of advertisement counts, crawl windows, exclusions, and sentence-to-document mappings has not been recovered.
+
+\subsection{Audit of Frozen Expanded-Silver Splits}
+A post hoc audit of the complete frozen expanded-Silver files found that their hashes, counts, and identifier order match the archived split manifests. No identifiers or exact/NFC-normalized sentences are shared across partitions or with the 150-sentence human reference. An additional comparison using NFKC normalization, whitespace removal, and case folding identified the same single training--validation pair in both variants, differing only in full-width versus half-width semicolons; both records have empty span annotations. Three additional punctuation-variant pairs occur within each training set. No corresponding normalized-text overlap was found between training or validation and the Silver test partitions, or between any partition and the human reference. The frozen splits and reported results were retained; the audit does not establish that the validation overlap had no effect. These checks do not establish document-level or semantic near-duplicate isolation.
+
+\subsection{Resource Access and Sampling Scope}
+\label{sec:resource-access}
+\input{tex/review20260923/access_matrix}
+The September 21 audit verified the complete expanded files against their recorded hashes. The files remain author-held; these checks establish file identity, but neither public access nor successful retraining.
+
+
+\paragraph{Expansion sampling.}
+Preparation retained 2,064 valid unique sentences from the original supervision files and selected 7,936 new candidates: 3,174 cloud, 2,381 public-sector, and 2,381 listed-company sentences. Selection prioritized requirement-related keywords within each source and used fixed hash ranking with seed 20260913. Processing removed HTML and whitespace, split advertisements into sentence units, and kept normalized lengths of 8--400 characters. Matching sentences were excluded against existing corpus splits, supervision, human-review sets, and the available 3.2-million-sentence dump used for the paper's domain pretraining. The comparison key applies NFC, removes whitespace, and trims specified edge punctuation. Annotations use the prepared strings. These checks concern sentence matches under that key and do not establish advertisement-level or semantic near-duplicate isolation.
+
+The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/36f009fab01b8433355cb7ef5af8fad02c6cc519/reproduction/process_archive_20260924/source/tex/appendix_D_reproduction_R16.tex}{preparation and audit records} document the comparison-key function and checked pretraining dumps. The paper-main dump contains 3.2 million lines, but its content hash was not retained. Two other local dumps, not used for exclusion, contain 143 and 4,919 selected-sentence matches. The checks therefore do not establish exclusion from every possible pretraining source.
+
+\input{tex/review20260923/source_stages}
+
+\subsection{Annotation Channels and Frozen Targets}
+The expansion used Codex CLI and a third-party API-compatible proxy as distinct annotation channels, not independently verified model identities. Replacing annotations for 2,500 candidate sentences and excluding unresolved records produced pools of 9,646 and 9,540 records. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/36f009fab01b8433355cb7ef5af8fad02c6cc519/reproduction/process_archive_20260924/README.md}{version and annotation records} retain the stage-specific prompts, selection history, and original labels. A documented experience-boundary check concerns a single Silver example; it does not establish corpus-wide compatibility. Applying revised rules requires a separately versioned annotation release.
+
+\paragraph{Historical implementation.}
+For some JobBERT runs, the exact tokenizer revision, special-token handling, truncation or windowing counts, and affected reference-span counts have not been recovered. The maximum input of 256 tokens is not a character limit, and input-length distributions alone cannot quantify truncation. The reported reference scores retain the full target sets. Per-seed checkpoint-selection records are stored with the available implementation history, including the inherited checkpoint's unresolved selection history.

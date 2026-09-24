@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering\small
+\caption{NNOSE with an in-dataset training datastore: test span-F1 (0--1).}
+\label{tab:external-nnose}
+\begin{tabularx}{\linewidth}{@{}L P{.15\linewidth}r r r r P{.19\linewidth}@{}}
+\toprule
+Dataset & Encoder & Test $n$ & Epoch & Linear & kNN & $(k,\lambda,T)$ \\
+\midrule
+SkillSpan & JobBERT & 3,569 & 17 & 0.613 & 0.612 & $(16,0.25,3)$ \\
+SkillSpan & JobBERTa & 3,569 & 6 & 0.631 & 0.625 & $(8,0.4,0.5)$ \\
+Green & JobBERT & 335 & 1 & 0.491 & 0.500 & $(128,0.2,2)$ \\
+Green & JobBERTa & 335 & 3 & 0.466 & 0.485 & $(128,0.5,0.5)$ \\
+Sayfullina & JobBERT & 1,851 & 7 & 0.897 & 0.896 & $(16,0.85,0.5)$ \\
+Sayfullina & JobBERTa & 1,851 & 6 & 0.915 & 0.912 & $(128,0.6,0.1)$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight\footnotesize Single seed 113412; no SD is estimated. Epoch identifies the selected checkpoint; $k$, $\lambda$, and $T$ are development-selected retrieval settings. Both columns use the same trained checkpoint within each row. The datastore excludes development and test examples. SkillSpan uses public HOUSE+TECH. The all-dataset datastore was not evaluated, and alignment with an original-paper result cell has not been established.
+\end{table}

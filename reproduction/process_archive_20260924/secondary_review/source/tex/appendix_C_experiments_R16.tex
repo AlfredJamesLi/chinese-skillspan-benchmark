@@ -1,0 +1,13 @@
+% Current evaluation evidence retained; historical studies archived in reproduction/supplementary_tables.
+\section{Appendix C. Supplementary Evaluation}
+\phantomsection
+\label{app:c}
+\paragraph{Scope of supplementary materials.}
+This appendix reports the current shared-guideline configurations, per-seed Qwen results, and frozen-prediction diagnostics. Historical JSON-offset, training-source, demonstration, and cleaning experiments are collected with their complete outcomes in the companion reproduction materials. The archived Qwen JSON-offset study uses a short instruction without demonstrations and reports typed exact micro-F1 of $0.122\pm0.009$. The current shared-guideline study uses five schematic examples and occurrence-based span output, with LoRA reaching $\QwenLoraExact$ against the matched no-adapter baseline of $\QwenBaselineExact$ (Table~\ref{tab:gold150-main}, panel A). The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/REPRODUCIBILITY.md}{reproduction guide} links each result to its corresponding protocol.
+
+\input{tex/appendix_C_shared_R16}
+\FloatBarrier
+\input{tex/qwen_diagnostics_round2}
+\FloatBarrier
+\input{tex/expanded_silver_results_20260917}
+Exploratory supervision-subset runs and their selection arrangements are preserved in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/36f009fab01b8433355cb7ef5af8fad02c6cc519/reproduction/process_archive_20260924/README.md}{supporting experiment records}. These single-seed runs are not controlled estimates of training-size or annotation-channel effects.
