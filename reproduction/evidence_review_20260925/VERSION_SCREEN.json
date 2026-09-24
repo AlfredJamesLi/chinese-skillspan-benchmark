@@ -1,0 +1,65 @@
+{
+  "scope": "All frozen Gold150 and B2 train/dev rows screened; semantic compatibility is not established by regex",
+  "summary": {
+    "gold150": {
+      "records": 150,
+      "candidate_counts_by_family_not_disjoint": {
+        "coordination": 139,
+        "experience": 34,
+        "tool_theory": 19,
+        "transversal": 32,
+        "scope_empty": 1
+      },
+      "guideline_values": {
+        "B.sop_v4.2.10": 150
+      }
+    },
+    "qwen_train": {
+      "records": 2150,
+      "candidate_counts_by_family_not_disjoint": {
+        "experience": 248,
+        "coordination": 1605,
+        "tool_theory": 136,
+        "transversal": 248,
+        "scope_empty": 92
+      },
+      "guideline_values": {
+        "not_recorded_per_row": 2150
+      }
+    },
+    "qwen_dev": {
+      "records": 169,
+      "candidate_counts_by_family_not_disjoint": {
+        "coordination": 125,
+        "experience": 24,
+        "transversal": 20,
+        "tool_theory": 15,
+        "scope_empty": 6
+      },
+      "guideline_values": {
+        "not_recorded_per_row": 169
+      }
+    }
+  },
+  "R23_named_case": [
+    {
+      "dataset": "qwen_train",
+      "id": "1838-s0008",
+      "text": "4、三年以上大中型互联网公司经营或BI相关工作经验，互联网公司广告运营分析优先；",
+      "labels": [
+        [
+          9,
+          25,
+          "S"
+        ],
+        [
+          26,
+          37,
+          "S"
+        ]
+      ]
+    }
+  ],
+  "historical_labels_modified": false,
+  "manual_affected_count": "not_established"
+}

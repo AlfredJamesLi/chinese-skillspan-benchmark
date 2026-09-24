@@ -1,0 +1,129 @@
+{
+  "source_commit": "0c73207c0f9b00fa87f385b78bcb7342bd00bfcb",
+  "scorer_sha256": "90624fa545434ebe0442c3243709f5e64ef2f95f4ccbacdb5f5d0696b65d69a7",
+  "gold150_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+  "checks": {
+    "all_six_predictions_rescored": true,
+    "gold_original_offsets_checked": true,
+    "train_dev_gold_NFC_overlap_zero": true,
+    "best_epochs_reconstructed_from_dev": true,
+    "server_reinfer_tags_equal_archived": true,
+    "local_checkpoint_inference": false,
+    "training_rerun": false,
+    "advertisement_isolation_established": false
+  },
+  "runs": [
+    {
+      "encoder": "xlm-roberta-large",
+      "seed": 42,
+      "best_epoch": 11,
+      "predictions_sha256": "4a676e9bcf518d67e44792d15990109b636dc81f0176f6502a713f86966095d0",
+      "values": [
+        0.49957662997459773,
+        0.6265876375952584,
+        0.5520745131244708,
+        0.591162319850845
+      ]
+    },
+    {
+      "encoder": "xlm-roberta-large",
+      "seed": 43,
+      "best_epoch": 14,
+      "predictions_sha256": "30e2ae5e3cd9eb30a46fd4320914276f3e40715c09fbb2bc9e5173698d6939a9",
+      "values": [
+        0.5224489795918368,
+        0.6546938775510205,
+        0.5665306122448979,
+        0.6070475605860115
+      ]
+    },
+    {
+      "encoder": "xlm-roberta-large",
+      "seed": 44,
+      "best_epoch": 14,
+      "predictions_sha256": "6174141656f1a55d8957bc4dd2b9113503421871dbb279c66423c68a89f89bfd",
+      "values": [
+        0.5445705024311183,
+        0.6677471636952999,
+        0.5948136142625607,
+        0.6222907790244727
+      ]
+    },
+    {
+      "encoder": "esco-xlm-roberta-large",
+      "seed": 42,
+      "best_epoch": 19,
+      "predictions_sha256": "2accb721edde8f001a9bc2ee77dbe5d63dba074f6ec8b4922eb2f4bb012fa12a",
+      "values": [
+        0.5160758450123661,
+        0.6380873866446826,
+        0.560593569661995,
+        0.6114547553353229
+      ]
+    },
+    {
+      "encoder": "esco-xlm-roberta-large",
+      "seed": 43,
+      "best_epoch": 15,
+      "predictions_sha256": "dc81fbdcf177c32e8ffe2ae38601deefdac5cd231ad29264a5e1853f79b0dcb0",
+      "values": [
+        0.5401459854014599,
+        0.6666666666666666,
+        0.5790754257907542,
+        0.6217281251872676
+      ]
+    },
+    {
+      "encoder": "esco-xlm-roberta-large",
+      "seed": 44,
+      "best_epoch": 10,
+      "predictions_sha256": "906c7a79a614afcff010b1a09518185c3827e32c556a8bca258d5b83a7c6606d",
+      "values": [
+        0.5576763485477179,
+        0.6804979253112033,
+        0.6074688796680499,
+        0.6314138582202811
+      ]
+    }
+  ],
+  "summary": {
+    "xlm-roberta-large": {
+      "mean": [
+        0.5221987039991842,
+        0.6496762262805262,
+        0.5711395798773098,
+        0.6068335531537764
+      ],
+      "sample_sd": [
+        0.02249798031074384,
+        0.021033527174471198,
+        0.021739126672901024,
+        0.015565333019786015
+      ]
+    },
+    "esco-xlm-roberta-large": {
+      "mean": [
+        0.5379660596538479,
+        0.6617506595408508,
+        0.582379291706933,
+        0.6215322462476239
+      ],
+      "sample_sd": [
+        0.020885749466981757,
+        0.02162842555624235,
+        0.0236116564335288,
+        0.009980993107518576
+      ]
+    }
+  },
+  "paired_exact_difference": {
+    "mean": 0.015767355654663695,
+    "ci95": [
+      -0.0034206077278422175,
+      0.034171755774768206
+    ],
+    "resamples": 10000,
+    "seed": 20260924,
+    "unit": "sentence; fixed 3 training seeds; no advertisement clustering or multiplicity adjustment"
+  }
+}

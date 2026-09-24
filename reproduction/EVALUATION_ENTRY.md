@@ -47,6 +47,10 @@ Typed exact matching requires equal boundaries and type. Relaxed matching uses s
 - [Qwen counts](qwen_diagnostics/README.md): full-sentence exact matching precedes type/length aggregation; length bins have 346/243/74 gold spans; one sentence can contribute to several bins. No prediction repair.
 - [Output outcomes](output_outcomes/README.md): all nine rows sum to 150; partial responses retain accepted spans, wholly rejected/malformed cases count as empty predictions.
 - [Agreement](agreement/README.md): character kappa and exact span F1 describe different aspects of coding; machine-prefilled review is a separate design.
-- [Selection records](supplementary_tables/table_19.md) and [training details](experimental_notes/README.md): selected epochs and development scores remain separate from reference scores. JobBERT's historical implementation binding and Qwen adapters remain unavailable for complete rerunning.
+- [Selection records](supplementary_tables/table_19.md) and [training details](experimental_notes/README.md): selected epochs and development scores remain separate from reference scores. Qwen adapters and frozen predictions are available in the [model archive](https://doi.org/10.5281/zenodo.22851581). JobBERT's historical implementation binding and complete expanded-pool training inputs retain the stated limitations.
 
 The current handbook v4.2.14, historical calibration guide, frozen reference metadata and executed prompt have separate roles. [The R23 check](evaluation/version_applicability.json) only establishes the documented example's absence from the current reference by ID/text. Never relabel the reference to match a later handbook and reuse old scores.
+
+## Chinese supervised encoder baselines — verified 25 September 2026
+
+The [evidence release](evidence_review_20260925/README.md) links six checkpoints and original predictions. The published [CPU rescoring script](evidence_review_20260925/rescore_chinese.py) reproduces exact/relaxed/boundary/macro summaries, checks Gold150 offsets and development selection, and calculates the paired interval. Install NumPy, obtain the pinned audit folder linked there, and run `python rescore_chinese.py AUDIT_FOLDER OUTPUT_FOLDER`. It does not train or perform model inference. Separate model-loading instructions are supplied with the checkpoints.

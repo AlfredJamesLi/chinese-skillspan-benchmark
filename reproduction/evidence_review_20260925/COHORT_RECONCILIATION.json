@@ -1,0 +1,60 @@
+{
+  "cohort_n": {
+    "blind50_A": 50,
+    "blind50_B": 50,
+    "Gold150": 150,
+    "reviewed100": 100,
+    "QA100": 100,
+    "QA150": 150,
+    "dual15": 15
+  },
+  "intersection_ids": {
+    "blind50_A__blind50_B": 50,
+    "blind50_A__Gold150": 50,
+    "blind50_A__reviewed100": 0,
+    "blind50_A__QA100": 0,
+    "blind50_A__QA150": 0,
+    "blind50_A__dual15": 0,
+    "blind50_B__Gold150": 50,
+    "blind50_B__reviewed100": 0,
+    "blind50_B__QA100": 0,
+    "blind50_B__QA150": 0,
+    "blind50_B__dual15": 0,
+    "Gold150__reviewed100": 0,
+    "Gold150__QA100": 0,
+    "Gold150__QA150": 0,
+    "Gold150__dual15": 0,
+    "reviewed100__QA100": 0,
+    "reviewed100__QA150": 0,
+    "reviewed100__dual15": 0,
+    "QA100__QA150": 0,
+    "QA100__dual15": 15,
+    "QA150__dual15": 0
+  },
+  "union_distinct_texts": 500,
+  "source_sha256": {
+    "blind50_A": "ff2b44d1de1b03146a631b52240158767ca31a5df4eae448f60331546ee3f9e1",
+    "blind50_B": "8c8a3f126189cfe9c97455b346a513da7ad959593732446d944d904c39806637",
+    "Gold150": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "reviewed100": "4e4d26be45657a31b0715a226f3b3d73a48117ba22355b6e3a055f1c809113ce",
+    "QA100": "289a198a2763f0a75436ff782ad08ca05d8d7faa5eb882d02c5490a0a37f3915",
+    "QA150": "e5a9f1ed64bcf28b3518954ccd5d8a1c60bcadf96c3a85fcc25a70da5a83b25f",
+    "dual15": "e796475aed9267dd6ca8ae2aadcc95fbafe79d13f65389c69188c966c8f6ff5a"
+  },
+  "public_files": "Pseudonymized copies preserve sentence text and label offsets. Original administrative metadata retained locally.",
+  "contact_pattern_candidates": [],
+  "contact_scan_scope": "Email and common mainland mobile/landline patterns only; not a comprehensive privacy audit.",
+  "author_recollection": "50 independent + early150 including15 + later150 + another150; correspondence to file cohorts not yet resolved",
+  "do_not_sum_nested_layers": true,
+  "additional_150_review_export_cohorts_verified": 1,
+  "dual15_design": {
+    "author_corrected_on": "2026-09-25",
+    "design": "machine-assisted double review",
+    "model_suggestions_visible": true,
+    "other_coder_labels_visible": "not established by this correction",
+    "independent_blind_design": false,
+    "supersedes": "Earlier same-day strict-blind description withdrawn by author",
+    "nested_in": "QA100",
+    "additional_unique_sentences": 0
+  }
+}

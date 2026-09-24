@@ -7,6 +7,8 @@
 | Core dataset and guidelines | [Zenodo v0.1.3](https://doi.org/10.5281/zenodo.22698504) | Original corpus, human reference, and released B2 files |
 | Human reference | [Dataset guide](data/gold150/README.md) | 150 sentences, 663 spans |
 | Qwen B2 supervision | [Training/development files](data/silver_plus_v6a_nocross/README.md) | 2,150 / 169 records |
+| Historical human annotation layers | [Pseudonymized exports](reproduction/evidence_review_20260925/annotation_layers/README.md) | Early blind50, nested dual15 and QA150 analytical layers; original design/version caveats retained |
+| Chinese encoder checkpoints | [Evidence and model index](reproduction/evidence_review_20260925/README.md) | Six public B2-fine-tuned XLM-R/ESCOXLM-R models; rescored predictions and [audit DOI](https://doi.org/10.5281/zenodo.22937245) |
 | Evaluation code and saved results | [Reproduction guide](REPRODUCIBILITY.md) | Protocol-specific scoring and supporting analyses |
 | JobBERT checkpoints | [Model guide](docs/models.md) | Initialization and B2 continuation; default continuation is seed 42 |
 | Expanded Silver | [Study guide](reproduction/expanded_silver/README.md) | Partial annotations, source-selection records, and result snapshots; complete final 9,540/9,646 partitions are not released |

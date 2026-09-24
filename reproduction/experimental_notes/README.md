@@ -1,4 +1,6 @@
-# Experimental details and reproduction reminders
+# Historical experimental details and reproduction reminders
+
+**Historical snapshot:** availability claims in the sections below describe September 13, 2026. Qwen adapters are now [released](https://doi.org/10.5281/zenodo.22851581); six Chinese encoder models and pseudonymized annotation layers are linked in the [current evidence index](../evidence_review_20260925/README.md). Use the [current evaluation entry](../EVALUATION_ENTRY.md) for access status.
 
 This guide accompanies the reader-focused manuscript revision of 13 September 2026. It consolidates implementation details, unsuccessful outcomes, historical comparisons, and provenance checks previously repeated throughout the paper. The underlying results and their limitations are unchanged. Material restrictions on sampling, comparison design, and generalization remain summarized in the manuscript.
 

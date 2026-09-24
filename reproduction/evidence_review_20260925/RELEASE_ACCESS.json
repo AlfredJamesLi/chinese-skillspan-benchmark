@@ -1,0 +1,110 @@
+{
+  "huggingface": [
+    {
+      "repo": "AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s42",
+      "revision": "0c6cc1999f5dec727eec4d682a04e2da947775a9",
+      "public": true,
+      "weights_lfs_sha256": "c894df3762a57fd8c10af65a2745db33d94f8aa4476fb4077a9615b1de6ef1f5",
+      "weights_bytes": 2235448756,
+      "config_checked": true,
+      "weights_downloaded_or_loaded": false
+    },
+    {
+      "repo": "AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s43",
+      "revision": "ce98c854fc5a367ff36e837c83a94c5afa22b932",
+      "public": true,
+      "weights_lfs_sha256": "be3caa3ed3a7ebf5a6ffe3d698440bc15c0b4fb8dd856157e74a47ee45fded49",
+      "weights_bytes": 2235448756,
+      "config_checked": true,
+      "weights_downloaded_or_loaded": false
+    },
+    {
+      "repo": "AlfredJames/cnss-table11-lskt-xlm-roberta-large-b2-s44",
+      "revision": "d0f29363f644f0e0835f1291d295caf468b368b9",
+      "public": true,
+      "weights_lfs_sha256": "8946f8cfe5ed772da6d9d97886f2bd1b86be748dc6209d3c9bd1d98d6121b6e3",
+      "weights_bytes": 2235448756,
+      "config_checked": true,
+      "weights_downloaded_or_loaded": false
+    },
+    {
+      "repo": "AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s42",
+      "revision": "af5d4716f682f8d53ebda464b301deffa2adee16",
+      "public": true,
+      "weights_lfs_sha256": "8d44b7f25de2cebe33a273a6caaf1aebc3076032d3d0fb0eceadb552bf9bc05f",
+      "weights_bytes": 2235448756,
+      "config_checked": true,
+      "weights_downloaded_or_loaded": false
+    },
+    {
+      "repo": "AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s43",
+      "revision": "45e1fae014a21c738b4f727ba34b2f5c80324bfc",
+      "public": true,
+      "weights_lfs_sha256": "2efb6f69def4211a07a9ad30ee4563fe0dd83569d7e3687676b9077be6acc3aa",
+      "weights_bytes": 2235448756,
+      "config_checked": true,
+      "weights_downloaded_or_loaded": false
+    },
+    {
+      "repo": "AlfredJames/cnss-table11-lskt-esco-xlm-roberta-large-b2-s44",
+      "revision": "55a0149ea5dda2ecafb0564c0c3368d1afa7f07a",
+      "public": true,
+      "weights_lfs_sha256": "98ce01afc2a13fad9cd7db1458c55332df23651d4ce84f6a4d9c653d5b9c9524",
+      "weights_bytes": 2235448756,
+      "config_checked": true,
+      "weights_downloaded_or_loaded": false
+    }
+  ],
+  "zenodo": {
+    "id": 22937245,
+    "doi": "10.5281/zenodo.22937245",
+    "files": [
+      {
+        "key": "cnss_table11_xlm-roberta-large_s42_sidecar.tar",
+        "size": 22179840,
+        "checksum": "md5:2e7d9f0d098ff6f2b0542db20866972b"
+      },
+      {
+        "key": "WEIGHTS_SHA256.txt",
+        "size": 729,
+        "checksum": "md5:2043861a94b3faf3e96885afc2ac0d9e"
+      },
+      {
+        "key": "README.md",
+        "size": 1621,
+        "checksum": "md5:15592e1e9b9514482ae76c63bcac40d9"
+      },
+      {
+        "key": "table11_evidence_20260924.zip",
+        "size": 564236,
+        "checksum": "md5:2601914f78c2c9279dc6b451c3f3cc70"
+      },
+      {
+        "key": "cnss_table11_xlm-roberta-large_s43_sidecar.tar",
+        "size": 22179840,
+        "checksum": "md5:56a555c7951200b7a7e5d909c243e228"
+      },
+      {
+        "key": "cnss_table11_xlm-roberta-large_s44_sidecar.tar",
+        "size": 22179840,
+        "checksum": "md5:e7734656af91dd449aad05c2d06716a8"
+      },
+      {
+        "key": "cnss_table11_esco-xlm-roberta-large_s42_sidecar.tar",
+        "size": 22179840,
+        "checksum": "md5:c94ea80f46bde3fe12000b841fccd142"
+      },
+      {
+        "key": "cnss_table11_esco-xlm-roberta-large_s43_sidecar.tar",
+        "size": 22179840,
+        "checksum": "md5:b00f1f0cea58fe2ef2e50949da4b545d"
+      },
+      {
+        "key": "cnss_table11_esco-xlm-roberta-large_s44_sidecar.tar",
+        "size": 22179840,
+        "checksum": "md5:428a0941541176bef081de23a07b10aa"
+      }
+    ]
+  },
+  "scope": "Live unauthenticated metadata/config access; no multi-gigabyte weight download"
+}

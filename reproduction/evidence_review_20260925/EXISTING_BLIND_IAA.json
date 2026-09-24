@@ -1,0 +1,27 @@
+{
+  "design": "Historical independent raw-text double annotation; not absent",
+  "provenance": "Recovered live exports explicitly identify pre_adjudication_blind_raw but warn that original frozen bytes are not established",
+  "n": 50,
+  "spans_A": 230,
+  "spans_B": 211,
+  "matches": 98,
+  "span_F1": 0.4444444444444444,
+  "character_kappa": 0.5672869865972949,
+  "characters": 2571,
+  "exact_sentence_agreement": 2,
+  "cohort_overlap_ids": {
+    "gold150": 50,
+    "qwen_train": 0,
+    "qwen_dev": 0
+  },
+  "files_sha256": {
+    "coder_A": "ff2b44d1de1b03146a631b52240158767ca31a5df4eae448f60331546ee3f9e1",
+    "coder_B": "8c8a3f126189cfe9c97455b346a513da7ad959593732446d944d904c39806637"
+  },
+  "all_records_layer": [
+    "pre_adjudication_blind_raw"
+  ],
+  "author_confirmation_20260924": "Two real annotators previously worked without seeing model labels; exact cohort confirmation requested",
+  "new_annotation_performed": false,
+  "original_freeze_identity_verified": false
+}
