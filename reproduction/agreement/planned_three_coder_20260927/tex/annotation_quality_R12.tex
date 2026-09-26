@@ -1,0 +1,33 @@
+\subsection{Annotation Quality and Reference Freezing}
+\label{sec:annotation-quality}
+
+Annotation agreement depends on how the labels were obtained (Table~\ref{tab:quality-main}). In the 50-sentence independent raw-text study, available coder exports give character-level Cohen's $\kappa$ of 0.567 and exact typed span F1 of 0.444. A 15-sentence machine-assisted double-review subset nested in the Silver review cohort has complete agreement, while machine--human comparison in the original 100-sentence post-generation review gives F1 of 0.959. These samples follow different annotation procedures.
+
+For the additional 150-sentence Silver quality check, two reviewers worked in separate queues with machine suggestions visible. Their annotations contain 358 and 365 spans, with 295 exact typed matches. Span micro-F1 is 0.816, and complete span sets agree on 101 sentences (67.3\%). Character-level Cohen's $\kappa$ and nominal Krippendorff's $\alpha$ are both 0.883.
+
+\begin{table}[htbp]
+\caption{Annotation-quality evidence from distinct designs and a planned independent check. Pending denotes a study without deposited results, not an observed score. Cohen's $\kappa$ corrects character-label agreement for chance; exact typed span F1 requires matching start, end, and type. The dash denotes an unreported or unplanned $\kappa$. The 15-sentence subset was reviewed with machine coding suggestions available; it does not measure independent raw-text coding agreement. The additional QA150 coefficients use 5,990 unambiguous character positions; projection details and paired comparisons appear in \hyperref[app:b]{Appendix B}. }
+\label{tab:quality-main}
+\centering\small
+\begin{tabularx}{\linewidth}{@{}p{0.23\linewidth}rccL@{}}
+\toprule
+Comparison & Sentences & \makecell{Character\\$\kappa$} & \makecell{Exact span\\F1} & Interpretation \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Human--human coding comparisons}} \\
+Independent raw-text coding & 50 & 0.567 & 0.444 & Reproduced from available coder exports; original freeze identity unresolved \\
+Final-handbook check (planned) & 50 & --- & Pending & Three independent coders; character $\alpha$ and boundary F1 also pending \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Silver quality review}} \\
+\makecell[l]{Machine-assisted review\\(15-sentence subset)} & 15 & 1.000 & 1.000 & 27 matching spans; shared suggestions, not blind agreement \\
+Machine--human review & 100 & --- & 0.959 & Original post-generation review; P=0.972, R=0.946 \\
+Dual-reviewer QA & 150 & 0.883 & 0.816 & New Silver sample; machine-assisted dual review; $\alpha=0.883$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Character agreement compares character labels; exact span F1 requires matching boundaries and type~\citep{artstein2008agreement,zhang2022skillspan}. The historical studies differ in sample, handbook version, and access to machine suggestions, so they do not measure improvement over time. \hyperref[app:b]{Appendix B} gives their calculation units and provenance. They do not establish independent agreement under the final handbook.
+
+\paragraph{Planned final-handbook check.}
+Following guidance on annotator training and pilot feedback~\citep{klie2024annotationquality}, the proposed study uses three coders, five worked examples, 15 practice sentences with discussion, and 50 additional sentences for independent coding. These counts are study-design choices, not literature-mandated minima. The handbook will be frozen after practice. All three coders will receive identical context for the same 50 sentences, without machine suggestions or access to one another's labels. Training items will be excluded, and formal sentences will be sampled from separate advertisements, subject to checks for prior exposure and duplication.
+
+Before adjudication, we will compute typed exact and boundary-only F1 for all three coder pairs, reporting their means and ranges, and nominal Krippendorff's $\alpha$ over character-level L/K/S/T/O assignments. Sentence-bootstrap intervals will retain all three annotations per sampled sentence. We use $\alpha\geq0.80$ as a conventional interpretive reference, not a universal quality guarantee or an F1 threshold~\citep{artstein2008agreement}. Practice consensus will not enter the formal estimates. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/notes/handbooks/training/protocol.md}{study protocol} specifies sampling and analysis. Results remain pending (Table~\ref{tab:quality-main}); no new reliability claim is made.

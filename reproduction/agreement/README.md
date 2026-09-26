@@ -30,6 +30,6 @@ The nested 15 records add no unique sentences. Human reference construction and 
 The author reports four chronological stages (50, early150 including15, later150, another150). [File-level reconciliation](../evidence_review_20260925/COHORT_RECONCILIATION.json) currently reconstructs Gold150 + reviewed100 + QA100 + QA150 as 500 unique texts. These stage names are not yet one-to-one matched; do not commission duplicate annotation or count multiple exports as new samples.
 
 
-## Training materials for the next independent-coding study
+## Planned final-handbook independent-coding study
 
-The [annotator training guide](../../notes/handbooks/training/README.md) supplies the v4.2.14 workflow, 32 handbook examples, and blank recording forms. The materials distinguish the proposed 15-sentence pilot from the historical assisted-review subset. They do not add new agreement results; completed training logs and pre-adjudication annotations are not yet included.
+The [current training protocol](../../notes/handbooks/training/protocol.md) specifies three coders, five worked examples, 15 practice sentences, and 50 further sentences independently annotated by all three coders. It supersedes the earlier two-coder pilot plan. This is a prospective design: no new formal annotations or agreement estimates have been deposited. The [result fields](../../notes/handbooks/training/planned_results.json) are null; interpretive thresholds and project targets are not observations. Historical results above remain unchanged.

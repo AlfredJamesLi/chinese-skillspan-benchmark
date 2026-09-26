@@ -8,10 +8,10 @@ Current main file: `0main.tex`. Table numbers below refer to the compiled eviden
 | Table 2 | 7 | [Data layers](../DATA_AVAILABILITY.md) | `tab:annotation-lineage` |
 | Table 3 | 11 | [Coding and review designs](agreement/README.md) | `tab:quality-main` |
 | Table 5 | 15 | [Shared-guideline inference](current_results/inference.csv) | `tab:gold150-shared-r7` |
-| Table 6 | 15 | [Paired uncertainty](../scorer/score_lskt.py) | `tab:core-paired` |
+| Table 6 | 16 | [Paired uncertainty](../scorer/score_lskt.py) | `tab:core-paired` |
 | Table 7 | 16 | [Qwen and historical JobBERT comparisons](current_results/README.md) | `tab:gold150-main` |
 | Table 8 | 17 | [External common protocol](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/46d1166f8e11dd52d473f645536074bb8dd0a53c/results_snapshots/external_benchmarks_20260922) | `tab:external-common` |
-| Table 9 | 17 | [Chinese-supervised encoders](evidence_review_20260925/README.md) | `tab:external-chinese` |
+| Table 9 | 18 | [Chinese-supervised encoders](evidence_review_20260925/README.md) | `tab:external-chinese` |
 | Table 13 | 25 | [Additional human review](evidence_review_20260925/annotation_layers/README.md) | `tab:qa150-pairs` |
 | Table 15 | 30 | [Exploratory expanded supervision](expanded_silver/README.md) | `tab:expanded-silver-main` |
 | Table 16 | 32 | [Component access](../DATA_AVAILABILITY.md) | `tab:component-access` |
@@ -134,3 +134,6 @@ The [supporting process archive](process_archive_20260924/README.md) preserves f
 The [secondary review archive](process_archive_20260924/secondary_review/README.md) preserves former Tables 13, 16 and 17 from the 41-page draft, complete NNOSE settings, and condensed procedural records. Its [25-table audit](process_archive_20260924/secondary_review/TABLE_AUDIT.md) explains every keep/move decision. Main outcomes, statistical definitions and scientific limitations remain in the manuscript.
 
 </details>
+
+
+The September 27 working draft adds a **planned**, three-coder final-handbook check to Table 3. Its cells remain pending; no hypothetical scores are included. See the [protocol](../notes/handbooks/training/protocol.md).
