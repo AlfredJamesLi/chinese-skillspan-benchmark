@@ -1,0 +1,603 @@
+{
+  "guideline": "B.sop_v4.2.14",
+  "source_commit": "b3194141ae5e5cc8f9530e25ee9c1092342105ce",
+  "source_path": "notes/handbooks/handbook_B_sop_v4.md",
+  "purpose": "Training examples with disclosed answers; not a new evaluation set",
+  "exclusion_rule": "Exclude complete training cases from independent coding. Fragment matches require contextual review, not universal substring exclusion.",
+  "examples": [
+    {
+      "example_id": "T01",
+      "group": "类别与语境",
+      "text": "熟悉使用Word，Excel，PPT等办公软件",
+      "labels": [
+        [
+          4,
+          8,
+          "S"
+        ],
+        [
+          9,
+          14,
+          "S"
+        ],
+        [
+          15,
+          18,
+          "S"
+        ]
+      ],
+      "interpretation": "分别标出三个岗位工具名；熟悉使用是触发语，不进入跨度。",
+      "rule": "对照例／跨度规则",
+      "source_kind": "手册例句",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[Word] S；[Excel] S；[PPT] S"
+    },
+    {
+      "example_id": "T02",
+      "group": "类别与语境",
+      "text": "了解 Python 语言原理",
+      "labels": [
+        [
+          3,
+          14,
+          "K"
+        ]
+      ],
+      "interpretation": "原理是知识对象的一部分，保留完整短语。了解等触发词本身不决定类型。",
+      "rule": "工具名S vs 知识短语K",
+      "source_kind": "手册例句",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[Python 语言原理] K"
+    },
+    {
+      "example_id": "T03",
+      "group": "类别与语境",
+      "text": "本科及以上学历，大学英语6级",
+      "labels": [
+        [
+          0,
+          7,
+          "K"
+        ],
+        [
+          8,
+          14,
+          "L"
+        ]
+      ],
+      "interpretation": "学历资格名按本项目规则归K，语言考试归L；保留及以上学历。",
+      "rule": "学历与资格名／对照例",
+      "source_kind": "手册例句",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[本科及以上学历] K；[大学英语6级] L"
+    },
+    {
+      "example_id": "T04",
+      "group": "类别与语境",
+      "text": "数据结构和算法基础扎实",
+      "labels": [
+        [
+          0,
+          4,
+          "K"
+        ],
+        [
+          5,
+          9,
+          "K"
+        ]
+      ],
+      "interpretation": "两个知识对象分开标注，算法基础保持完整；扎实不进入跨度。",
+      "rule": "R10",
+      "source_kind": "手册例句",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[数据结构] K；[算法基础] K"
+    },
+    {
+      "example_id": "T05",
+      "group": "类别与语境",
+      "text": "Linux内核调试方法",
+      "labels": [
+        [
+          0,
+          11,
+          "S"
+        ]
+      ],
+      "interpretation": "命名可执行技术方法，归S；与概括性理论、方法体系区分。",
+      "rule": "R15",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[Linux内核调试方法] S"
+    },
+    {
+      "example_id": "T06",
+      "group": "类别与语境",
+      "text": "Linux系统原理",
+      "labels": [
+        [
+          0,
+          9,
+          "K"
+        ]
+      ],
+      "interpretation": "明确要求系统原理，归K并保留完整知识短语。",
+      "rule": "2026-09-06复核澄清",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[Linux系统原理] K"
+    },
+    {
+      "example_id": "T07",
+      "group": "职业技能与通用能力",
+      "text": "编码能力",
+      "labels": [
+        [
+          0,
+          4,
+          "S"
+        ]
+      ],
+      "interpretation": "表达职业技能，归S。",
+      "rule": "××能力两步检验",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[编码能力] S"
+    },
+    {
+      "example_id": "T08",
+      "group": "职业技能与通用能力",
+      "text": "沟通管理",
+      "labels": [
+        [
+          0,
+          4,
+          "T"
+        ]
+      ],
+      "interpretation": "表达通用沟通，即使位于负责某项工作的职责句中也归T。",
+      "rule": "沟通／汇报",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[沟通管理] T"
+    },
+    {
+      "example_id": "T09",
+      "group": "职业技能与通用能力",
+      "text": "协调外部资源",
+      "labels": [
+        [
+          0,
+          6,
+          "T"
+        ]
+      ],
+      "interpretation": "协调的对象构成完整要求，保留外部资源。技术接口对接需结合其职业语境另判。",
+      "rule": "2026-09-06复核澄清／R17",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[协调外部资源] T"
+    },
+    {
+      "example_id": "T10",
+      "group": "职业技能与通用能力",
+      "text": "科研能力",
+      "labels": [
+        [
+          0,
+          4,
+          "T"
+        ]
+      ],
+      "interpretation": "手册默认归T；上下文出现论文、实验或课题且强调研究方法时，另检验S。",
+      "rule": "××能力两步检验／R16",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[科研能力] T"
+    },
+    {
+      "example_id": "T11",
+      "group": "职业技能与通用能力",
+      "text": "有意愿在nlp相关领域深入研究",
+      "labels": [
+        [
+          0,
+          15,
+          "T"
+        ]
+      ],
+      "interpretation": "完整要求是研究意愿，保留意愿中心；内部不另标nlp的K。",
+      "rule": "R16／160",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[有意愿在nlp相关领域深入研究] T"
+    },
+    {
+      "example_id": "T12",
+      "group": "职业技能与通用能力",
+      "text": "会聊天",
+      "labels": [
+        [
+          0,
+          3,
+          "T"
+        ]
+      ],
+      "interpretation": "此处会是口语软素质的一部分，随跨度保留。",
+      "rule": "会××口语软素质",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[会聊天] T"
+    },
+    {
+      "example_id": "T13",
+      "group": "职业技能与通用能力",
+      "text": "严谨的工作态度",
+      "labels": [
+        [
+          0,
+          7,
+          "T"
+        ]
+      ],
+      "interpretation": "严谨限定了所要求的态度，随完整短语保留。",
+      "rule": "2026-09-06复核澄清",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[严谨的工作态度] T"
+    },
+    {
+      "example_id": "T14",
+      "group": "职业技能与通用能力",
+      "text": "对商业和业务逻辑敏感",
+      "labels": [
+        [
+          0,
+          10,
+          "T"
+        ]
+      ],
+      "interpretation": "该已裁决案例表达敏感性与思维特质，归T；业务词不单独决定类型。",
+      "rule": "R16／195",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[对商业和业务逻辑敏感] T"
+    },
+    {
+      "example_id": "T15",
+      "group": "经验与背景",
+      "text": "大项目售前经验",
+      "labels": [
+        [
+          0,
+          5,
+          "S"
+        ]
+      ],
+      "interpretation": "去掉经验后，大项目售前仍是完整职业活动。",
+      "rule": "背景／经验／R08",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[大项目售前] S"
+    },
+    {
+      "example_id": "T16",
+      "group": "经验与背景",
+      "text": "内容型产品经验",
+      "labels": [
+        [
+          0,
+          7,
+          "S"
+        ]
+      ],
+      "interpretation": "去掉经验只剩产品类别，不能表达原实践经历要求，因此保留经验。",
+      "rule": "背景／经验／R08",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[内容型产品经验] S"
+    },
+    {
+      "example_id": "T17",
+      "group": "经验与背景",
+      "text": "有银行、咨询、服务行业工作经验优先考虑",
+      "labels": [
+        [
+          1,
+          3,
+          "K"
+        ],
+        [
+          4,
+          6,
+          "K"
+        ],
+        [
+          7,
+          11,
+          "K"
+        ]
+      ],
+      "interpretation": "明确行业背景按本项目规则归广义K；服务行业保持完整。经验与优先条件不标。",
+      "rule": "背景／经验",
+      "source_kind": "手册例句",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[银行] K；[咨询] K；[服务行业] K"
+    },
+    {
+      "example_id": "T18",
+      "group": "经验与背景",
+      "text": "丰富经验",
+      "labels": [],
+      "interpretation": "泛化经历没有提供具体领域或活动，不构成可抽取实体。",
+      "rule": "背景／经验",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "本例无可标实体"
+    },
+    {
+      "example_id": "T19",
+      "group": "边界与并列",
+      "text": "优化曝光与转化率",
+      "labels": [
+        [
+          0,
+          8,
+          "S"
+        ]
+      ],
+      "interpretation": "曝光与转化率是优化活动的对象；单独拆成指标名会丢失原意。",
+      "rule": "关键区分／R14",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[优化曝光与转化率] S"
+    },
+    {
+      "example_id": "T20",
+      "group": "边界与并列",
+      "text": "口头、书面表达能力",
+      "labels": [
+        [
+          0,
+          9,
+          "T"
+        ]
+      ],
+      "interpretation": "口头和书面共享表达能力这一中心；保留连续完整跨度，不补写省略成分。",
+      "rule": "2026-09-06复核澄清",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[口头、书面表达能力] T"
+    },
+    {
+      "example_id": "T21",
+      "group": "边界与并列",
+      "text": "KVM的开发和实施",
+      "labels": [
+        [
+          0,
+          9,
+          "S"
+        ]
+      ],
+      "interpretation": "该手册案例保留共享对象下的完整活动；并列连接词本身不构成拆分依据。",
+      "rule": "2026-09-06复核澄清",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[KVM的开发和实施] S"
+    },
+    {
+      "example_id": "T22",
+      "group": "边界与并列",
+      "text": "5.熟悉Linux基本操作和原理，在云计算、深度学习等领域者有工作实践经验优先；",
+      "labels": [
+        [
+          4,
+          13,
+          "S"
+        ],
+        [
+          14,
+          16,
+          "K"
+        ],
+        [
+          18,
+          21,
+          "S"
+        ],
+        [
+          22,
+          26,
+          "S"
+        ]
+      ],
+      "interpretation": "原理由局部并列回指Linux；工作实践经验限定云计算与深度学习。按原文取跨度，不补写Linux原理。",
+      "rule": "R14／R15／130",
+      "source_kind": "完整历史案例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[Linux基本操作] S；[原理] K；[云计算] S；[深度学习] S"
+    },
+    {
+      "example_id": "T23",
+      "group": "边界与并列",
+      "text": " 任职要求： 1、熟练掌握自然语言处理NLP相关理论与技术方法；",
+      "labels": [
+        [
+          13,
+          26,
+          "K"
+        ],
+        [
+          27,
+          31,
+          "K"
+        ]
+      ],
+      "interpretation": "本例两项指概括性知识体系，均归K；技术方法通过并列回指NLP，不补写为新的词组。",
+      "rule": "R14／R15／134",
+      "source_kind": "完整历史案例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[自然语言处理NLP相关理论] K；[技术方法] K"
+    },
+    {
+      "example_id": "T24",
+      "group": "边界与并列",
+      "text": "4、三年以上大中型互联网公司经营或BI相关工作经验，互联网公司广告运营分析优先；",
+      "labels": [
+        [
+          9,
+          16,
+          "S"
+        ],
+        [
+          17,
+          19,
+          "S"
+        ],
+        [
+          26,
+          37,
+          "S"
+        ]
+      ],
+      "interpretation": "按R23取三条S；前两项共享相关工作经验的局部语境。年限、公司规模和优先条件不标。",
+      "rule": "R23／194",
+      "source_kind": "完整历史案例",
+      "source_id": "1838-s0008",
+      "status": "确定",
+      "answer_display": "[互联网公司经营] S；[BI] S；[互联网公司广告运营分析] S"
+    },
+    {
+      "example_id": "T25",
+      "group": "边界与并列",
+      "text": "将公司技术能力/产品能力转化为商业语言",
+      "labels": [
+        [
+          0,
+          19,
+          "S"
+        ]
+      ],
+      "interpretation": "本例保留完整的转化活动；技术能力和产品能力是内部对象，不另嵌K。",
+      "rule": "R10",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[将公司技术能力/产品能力转化为商业语言] S"
+    },
+    {
+      "example_id": "T26",
+      "group": "范围与空标",
+      "text": "保证系统稳定",
+      "labels": [],
+      "interpretation": "纯结果状态不构成具体执行方法，本片段不标。",
+      "rule": "关键区分原则",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "本例无可标实体"
+    },
+    {
+      "example_id": "T27",
+      "group": "范围与空标",
+      "text": "质量保证",
+      "labels": [
+        [
+          0,
+          4,
+          "S"
+        ]
+      ],
+      "interpretation": "仅限手册124测试和质量保证工作的职业职能语境；与保证质量达标等结果承诺区分。",
+      "rule": "R17／124",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "[质量保证] S"
+    },
+    {
+      "example_id": "T28",
+      "group": "范围与空标",
+      "text": "五险一金，带薪年假",
+      "labels": [],
+      "interpretation": "福利说明不属于候选人的能力要求，本句确认空标。",
+      "rule": "对照例",
+      "source_kind": "手册例句",
+      "source_id": null,
+      "status": "确定",
+      "answer_display": "本例无可标实体"
+    },
+    {
+      "example_id": "T29",
+      "group": "范围与空标",
+      "text": "2.其它职责同上。",
+      "labels": [],
+      "interpretation": "本句只有交叉引用，没有实际出现的技能跨度；不从上一句补写实体。",
+      "rule": "R19",
+      "source_kind": "完整历史案例",
+      "source_id": "1996-s0012/1996-s0013",
+      "status": "确定",
+      "answer_display": "本例无可标实体"
+    },
+    {
+      "example_id": "T30",
+      "group": "范围与空标",
+      "text": "功能解决对应问题；",
+      "labels": [],
+      "interpretation": "只有泛化功能效果，本句确认空标。",
+      "rule": "R19",
+      "source_kind": "完整历史案例",
+      "source_id": "1928-s0005",
+      "status": "确定",
+      "answer_display": "本例无可标实体"
+    },
+    {
+      "example_id": "T31",
+      "group": "范围与空标",
+      "text": "基于分布式及大数据平台的优先考虑。",
+      "labels": null,
+      "interpretation": "存在潜在技术提及但关键活动缺失，登记疑难，不能作为确认空标。",
+      "rule": "R19",
+      "source_kind": "手册例句",
+      "source_id": null,
+      "status": "疑难／待裁决",
+      "answer_display": "疑难／待裁决"
+    },
+    {
+      "example_id": "T32",
+      "group": "范围与空标",
+      "text": "有?",
+      "labels": null,
+      "interpretation": "原文缺失、无法可靠解读，登记疑难。",
+      "rule": "R19",
+      "source_kind": "手册片段／条件示例",
+      "source_id": null,
+      "status": "疑难／待裁决",
+      "answer_display": "疑难／待裁决"
+    }
+  ]
+}

@@ -28,3 +28,8 @@ QA150 nominal Krippendorff alpha is 0.8826, calculated over 5,990 unambiguous po
 The nested 15 records add no unique sentences. Human reference construction and the two original review samples cover 350 sentences; the new non-overlapping QA150 raises coverage to 500. These designs do not form a common before/after reliability experiment.
 
 The author reports four chronological stages (50, early150 including15, later150, another150). [File-level reconciliation](../evidence_review_20260925/COHORT_RECONCILIATION.json) currently reconstructs Gold150 + reviewed100 + QA100 + QA150 as 500 unique texts. These stage names are not yet one-to-one matched; do not commission duplicate annotation or count multiple exports as new samples.
+
+
+## Training materials for the next independent-coding study
+
+The [annotator training guide](../../notes/handbooks/training/README.md) supplies the v4.2.14 workflow, 32 handbook examples, and blank recording forms. The materials distinguish the proposed 15-sentence pilot from the historical assisted-review subset. They do not add new agreement results; completed training logs and pre-adjudication annotations are not yet included.
