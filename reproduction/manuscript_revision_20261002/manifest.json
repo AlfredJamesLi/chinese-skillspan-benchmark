@@ -17,7 +17,7 @@
       25,
       30
     ],
-    "pdf_sha256": "6b138b206bf1ec0f8c9caa76594bbef4f24ccc0f91bc9491051da3de3e8f2ee8",
+    "pdf_sha256": "5428422e68bcc3550959759a37770cb549e9ee8f55c4fe39989edcd1785e4e07",
     "passed": true,
     "examples_checked": 5,
     "source_spans_and_types_unchanged": true,
@@ -37,7 +37,7 @@
   },
   "files_sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "6b138b206bf1ec0f8c9caa76594bbef4f24ccc0f91bc9491051da3de3e8f2ee8",
+    "Chinese_SkillSpan_revised_20261002.pdf": "5428422e68bcc3550959759a37770cb549e9ee8f55c4fe39989edcd1785e4e07",
     "README.md": "80383eab932c29477f76b6c7dd856886ea571e1febe5c714a5906e23ca81df1e",
     "source/0main.tex": "c5c882e7bcc3555c233f928548bb3bab3f1a0dd8024d9b5824ab1d660e23c99b",
     "source/1Introduction.tex": "ee2ad488c1ecb60bbff59c64e913d72bfb64ec0b08103f245f524ea2ea1acf22",
@@ -50,7 +50,7 @@
     "source/tex/appendix_A_guide_R19.tex": "cca8abbdead9fdc663d409241300d3088387dbe9e95694e621a8be63796dc205",
     "source/tex/appendix_B_quality_R16.tex": "b7eec758de65b57e62efeee187d7f2fa43530e9e2fcdd9a6485372b4f19c1f14",
     "source/tex/appendix_C_shared_R16.tex": "cc3ea99a2fa25446fae97dde6f1b1fe59762874fc29786fc42d997b2ee357f80",
-    "source/tex/appendix_D_reproduction_R16.tex": "00097192020e57e7d3f0b391be39f996e6b2ca500ffd0bb8042c46c0333428bb",
+    "source/tex/appendix_D_reproduction_R16.tex": "c2366b5025ba83429773e53541f6a5103d0ab2936ba3e32809f43929f238bea0",
     "source/tex/coding_detail_no_counts.tex": "decb422c82fc01cc83c0759d2846b1f868f05a92ab0188521566c0f5903919b6",
     "source/tex/qwen_diagnostics_round2.tex": "d7d335289150201db864b51c7f05f74d16a02bf9fd898c2161f29a61430f13b4",
     "source/tex/representative_annotations_main.tex": "24cd494d7a021618c5e320d44b7013228463bc8c498fd1c607bf5d3ae55952ec",
@@ -72,7 +72,9 @@
     "source/figures/annotation_examples_corpus_20261003.pdf": "ae2c52e4e12d3740a1854406844e9732054efb37e19037f5f28ea9302fc957bc",
     "source/figures/annotation_examples_corpus_20261003.json": "9d99da294f86f3674c151a2ce0f87f756e1280da8f3d66943e59dce6f5dd62de",
     "corpus_examples_20261003/README.md": "dbc0c82581da6df925eb43bf926c519275830745555b6dd2a7d48e48ff2c7c28",
-    "corpus_examples_20261003/provenance.json": "9d99da294f86f3674c151a2ce0f87f756e1280da8f3d66943e59dce6f5dd62de"
+    "corpus_examples_20261003/provenance.json": "9d99da294f86f3674c151a2ce0f87f756e1280da8f3d66943e59dce6f5dd62de",
+    "source/9Reference.bib": "750d49637635592bb9e656b22374fcd3652cccd593ca112e94e3ce3b80bac1f8",
+    "company_translation_20261003/README.md": "7803fad5811ccd6f33808f41de06aff413b50827608e077934a86267ca6077c6"
   },
   "figure1_arrow_cleanup_validation": {
     "passed": true,
@@ -111,5 +113,18 @@
     "figure_number": "4",
     "figure_page": "10",
     "pdf_sha256": "6b138b206bf1ec0f8c9caa76594bbef4f24ccc0f91bc9491051da3de3e8f2ee8"
+  },
+  "company_name_translation": {
+    "passed": true,
+    "pages": 40,
+    "english_company_name": "Chongqing Maherui Information Technology Co., Ltd.",
+    "occurrences": 2,
+    "occurrence_pages": [
+      30,
+      38
+    ],
+    "chinese_company_name_absent": true,
+    "cross_references_unchanged": true,
+    "pdf_sha256": "5428422e68bcc3550959759a37770cb549e9ee8f55c4fe39989edcd1785e4e07"
   }
 }
