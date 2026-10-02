@@ -17,7 +17,7 @@
       25,
       30
     ],
-    "pdf_sha256": "5428422e68bcc3550959759a37770cb549e9ee8f55c4fe39989edcd1785e4e07",
+    "pdf_sha256": "2a8c2b4c1a1210f117af181769139f59407540523f84b0991b88f7bdb3f3605a",
     "passed": true,
     "examples_checked": 5,
     "source_spans_and_types_unchanged": true,
@@ -37,7 +37,7 @@
   },
   "files_sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "5428422e68bcc3550959759a37770cb549e9ee8f55c4fe39989edcd1785e4e07",
+    "Chinese_SkillSpan_revised_20261002.pdf": "2a8c2b4c1a1210f117af181769139f59407540523f84b0991b88f7bdb3f3605a",
     "README.md": "80383eab932c29477f76b6c7dd856886ea571e1febe5c714a5906e23ca81df1e",
     "source/0main.tex": "c5c882e7bcc3555c233f928548bb3bab3f1a0dd8024d9b5824ab1d660e23c99b",
     "source/1Introduction.tex": "ee2ad488c1ecb60bbff59c64e913d72bfb64ec0b08103f245f524ea2ea1acf22",
@@ -73,8 +73,9 @@
     "source/figures/annotation_examples_corpus_20261003.json": "9d99da294f86f3674c151a2ce0f87f756e1280da8f3d66943e59dce6f5dd62de",
     "corpus_examples_20261003/README.md": "dbc0c82581da6df925eb43bf926c519275830745555b6dd2a7d48e48ff2c7c28",
     "corpus_examples_20261003/provenance.json": "9d99da294f86f3674c151a2ce0f87f756e1280da8f3d66943e59dce6f5dd62de",
-    "source/9Reference.bib": "750d49637635592bb9e656b22374fcd3652cccd593ca112e94e3ce3b80bac1f8",
-    "company_translation_20261003/README.md": "7803fad5811ccd6f33808f41de06aff413b50827608e077934a86267ca6077c6"
+    "source/9Reference.bib": "aa8906e1c694d9dc2a1a8a05ee76e8da607c445debf4192af521e0b9ba13c598",
+    "company_translation_20261003/README.md": "7803fad5811ccd6f33808f41de06aff413b50827608e077934a86267ca6077c6",
+    "chinese_text_audit_20261003/README.md": "6e8bbb7461a57905f5c940ddf3c87177044c0194b048f3055f978f45bc09ea8d"
   },
   "figure1_arrow_cleanup_validation": {
     "passed": true,
@@ -126,5 +127,14 @@
     "chinese_company_name_absent": true,
     "cross_references_unchanged": true,
     "pdf_sha256": "5428422e68bcc3550959759a37770cb549e9ee8f55c4fe39989edcd1785e4e07"
+  },
+  "reference_title_translation": {
+    "passed": true,
+    "pages": 40,
+    "only_bibliography_title_changed": true,
+    "reference_page": 39,
+    "cross_references_unchanged": true,
+    "other_chinese_text_retained_for_author_decision": true,
+    "pdf_sha256": "2a8c2b4c1a1210f117af181769139f59407540523f84b0991b88f7bdb3f3605a"
   }
 }
