@@ -17,7 +17,7 @@
       25,
       30
     ],
-    "pdf_sha256": "fa113db52e99ebf34e342c4f7ef8ff08f523f83948c3d0267745a5b65f39a73f",
+    "pdf_sha256": "d7ccd37dba4a685ee4ee8754499dba3b717b51bad7c13ea1b50b8f2a00a84f23",
     "passed": true,
     "examples_checked": 5,
     "source_spans_and_types_unchanged": true,
@@ -37,8 +37,8 @@
   },
   "files_sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "fa113db52e99ebf34e342c4f7ef8ff08f523f83948c3d0267745a5b65f39a73f",
-    "README.md": "80383eab932c29477f76b6c7dd856886ea571e1febe5c714a5906e23ca81df1e",
+    "Chinese_SkillSpan_revised_20261002.pdf": "d7ccd37dba4a685ee4ee8754499dba3b717b51bad7c13ea1b50b8f2a00a84f23",
+    "README.md": "6eecf5dc03bdbb966b2c38b071da93798e7580da75227a1ca192a0e7a8e64dc7",
     "source/0main.tex": "c5c882e7bcc3555c233f928548bb3bab3f1a0dd8024d9b5824ab1d660e23c99b",
     "source/1Introduction.tex": "ee2ad488c1ecb60bbff59c64e913d72bfb64ec0b08103f245f524ea2ea1acf22",
     "source/2Framework.tex": "9d87c1189db193f5c18e5bc8b7568914684258edb9abafba6c24ddca94afdbeb",
@@ -47,9 +47,9 @@
     "source/figures/Figure2_illustrated.pdf": "5f73125afb6d5e049b736162787a456b19a87e2eb8379e29c3a48313459a743f",
     "source/figures/Figure2_illustrated.svg": "f59f65e1ffe98db05200b7c6daf1f688234b92e33ce38b4370005465668da95a",
     "source/tex/annotation_quality_R12.tex": "837bd406901b3512656855c665d40e1b9682b720ff2f2bfba7960eef39ffbcaf",
-    "source/tex/appendix_A_guide_R19.tex": "0e0895efa1a4ef286ec8780e4d357126ce1f9e657aab87d080d328d66c06eb6a",
+    "source/tex/appendix_A_guide_R19.tex": "453b595d88d2edceac51ea40233d03afb70d102104442ecfc9e34c4a9e602bfd",
     "source/tex/appendix_B_quality_R16.tex": "b7eec758de65b57e62efeee187d7f2fa43530e9e2fcdd9a6485372b4f19c1f14",
-    "source/tex/appendix_C_shared_R16.tex": "cc3ea99a2fa25446fae97dde6f1b1fe59762874fc29786fc42d997b2ee357f80",
+    "source/tex/appendix_C_shared_R16.tex": "d98a92b34e038770bf3a04eef15340a964c3c9149b22662bb0d60b6dcd1422ce",
     "source/tex/appendix_D_reproduction_R16.tex": "97ac66a187254eb70f61d9760966ee02be5b3e7f3cf64303950cca8f2e89946b",
     "source/tex/coding_detail_no_counts.tex": "decb422c82fc01cc83c0759d2846b1f868f05a92ab0188521566c0f5903919b6",
     "source/tex/qwen_diagnostics_round2.tex": "d7d335289150201db864b51c7f05f74d16a02bf9fd898c2161f29a61430f13b4",
@@ -75,7 +75,8 @@
     "corpus_examples_20261003/provenance.json": "9d99da294f86f3674c151a2ce0f87f756e1280da8f3d66943e59dce6f5dd62de",
     "source/9Reference.bib": "6fd6e87fed0e03597a0b64048d27b0b8166f92a8f7070cbd7b7adfe086dc92bf",
     "company_translation_20261003/README.md": "7803fad5811ccd6f33808f41de06aff413b50827608e077934a86267ca6077c6",
-    "chinese_text_audit_20261003/README.md": "6f32943543dfe16acaa2fedcdcd134c0a291af622d2075007113d13cef7d7ef9"
+    "chinese_text_audit_20261003/README.md": "6f32943543dfe16acaa2fedcdcd134c0a291af622d2075007113d13cef7d7ef9",
+    "inline_glosses_20261003/README.md": "4d5443162c9932cbd591eacd5d5084bed6ca79791d040bf8250b3a68f12f55a5"
   },
   "figure1_arrow_cleanup_validation": {
     "passed": true,
@@ -150,5 +151,42 @@
     "only_approved_replacements": true,
     "cross_references_unchanged": true,
     "pdf_sha256": "fa113db52e99ebf34e342c4f7ef8ff08f523f83948c3d0267745a5b65f39a73f"
+  },
+  "inline_example_glosses": {
+    "passed": true,
+    "pages": 40,
+    "glosses": [
+      {
+        "Chinese": "参与公司无人机飞控系统技术项目开发策划",
+        "English": "participate in planning a technical development project for the company's UAV flight-control system",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "Chinese": "技术项目开发策划",
+        "English": "technical project development planning",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "Chinese": "方法",
+        "English": "method",
+        "pages": [
+          27
+        ]
+      },
+      {
+        "Chinese": "优化曝光与转化率",
+        "English": "optimize exposure and conversion rate",
+        "pages": [
+          23
+        ]
+      }
+    ],
+    "source_text_offsets_types_and_numbers_unchanged": true,
+    "only_inline_glosses_added": true,
+    "pdf_sha256": "d7ccd37dba4a685ee4ee8754499dba3b717b51bad7c13ea1b50b8f2a00a84f23"
   }
 }
