@@ -1,0 +1,148 @@
+{
+  "purpose": "Illustrative current-handbook examples, not newly labeled study records",
+  "types_shown": [
+    "K",
+    "S",
+    "T"
+  ],
+  "examples": [
+    {
+      "decision": "Complete boundary",
+      "source": "熟悉支持服务",
+      "spans": [
+        {
+          "start": 2,
+          "end": 6,
+          "type": "S",
+          "text": "支持服务"
+        }
+      ],
+      "english_explanation": "Support services: retain the complete term. Familiarity supplies context."
+    },
+    {
+      "decision": "Separate activities",
+      "source": "维护和支持服务",
+      "spans": [
+        {
+          "start": 0,
+          "end": 2,
+          "type": "S",
+          "text": "维护"
+        },
+        {
+          "start": 3,
+          "end": 7,
+          "type": "S",
+          "text": "支持服务"
+        }
+      ],
+      "english_explanation": "Maintenance and support services: two independently meaningful activities."
+    },
+    {
+      "decision": "Shared action",
+      "source": "优化曝光与转化率",
+      "spans": [
+        {
+          "start": 0,
+          "end": 8,
+          "type": "S",
+          "text": "优化曝光与转化率"
+        }
+      ],
+      "english_explanation": "Optimize exposure and conversion rate: retain one action with both objects."
+    },
+    {
+      "decision": "Contextual type",
+      "source": "使用SQL; SQL原理",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "type": "S",
+          "text": "SQL"
+        },
+        {
+          "start": 7,
+          "end": 12,
+          "type": "K",
+          "text": "SQL原理"
+        }
+      ],
+      "english_explanation": "Using SQL denotes skill; SQL principles denote knowledge."
+    },
+    {
+      "decision": "Omitted referent",
+      "source": "熟悉Linux基本操作和原理",
+      "spans": [
+        {
+          "start": 2,
+          "end": 11,
+          "type": "S",
+          "text": "Linux基本操作"
+        },
+        {
+          "start": 12,
+          "end": 14,
+          "type": "K",
+          "text": "原理"
+        }
+      ],
+      "english_explanation": "Basic Linux operations and principles: the second span refers back to Linux without copying it (case 130)."
+    },
+    {
+      "decision": "Colloquial capability",
+      "source": "会聊天",
+      "spans": [
+        {
+          "start": 0,
+          "end": 3,
+          "type": "T",
+          "text": "会聊天"
+        }
+      ],
+      "english_explanation": "Being good at conversation: retain the modal within the capability expression."
+    },
+    {
+      "decision": "Experience scope",
+      "source": "大项目售前经验; 机器人竞赛经验",
+      "spans": [
+        {
+          "start": 0,
+          "end": 5,
+          "type": "S",
+          "text": "大项目售前"
+        },
+        {
+          "start": 9,
+          "end": 16,
+          "type": "S",
+          "text": "机器人竞赛经验"
+        }
+      ],
+      "english_explanation": "Presales activities stand without the experience qualifier; robotics-competition experience retains it."
+    },
+    {
+      "decision": "Transversal or technical",
+      "source": "客户汇报; 接口对接",
+      "spans": [
+        {
+          "start": 0,
+          "end": 4,
+          "type": "T",
+          "text": "客户汇报"
+        },
+        {
+          "start": 6,
+          "end": 10,
+          "type": "S",
+          "text": "接口对接"
+        }
+      ],
+      "english_explanation": "Client reporting is communication (T); interface integration is a technical operation (S)."
+    }
+  ],
+  "page_size_pt": [
+    510.0,
+    474.0
+  ]
+}
