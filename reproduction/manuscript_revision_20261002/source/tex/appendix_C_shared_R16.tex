@@ -1,0 +1,44 @@
+% [R42] Final A handoff, independently rescored; old snapshot preserved in before_R42.
+% Separate protocol: no changes to the abstract or historical V4 result.
+\subsection{Shared-Guideline Evaluation against the Human Reference}
+\label{sec:gold150-shared-r7}
+The shared protocol evaluates six configurations on all 150 reference sentences, using V4.2.12-based general instructions and five schematic examples.
+
+\paragraph{Configuration and output records.}
+Table~\ref{tab:model-identity} distinguishes the original annotation teacher, inference baselines, and expansion channels. It lists recorded service identifiers and access routes without independently establishing provider checkpoints.
+
+\input{tex/review20260923/model_identity}
+
+Models return an ID and spans as literal \texttt{text}, zero-based \texttt{occurrence}, and L/K/S/T \texttt{type}. The span parser resolves spans to Unicode offsets for exact and relaxed scoring with the released span scorer. All supplied input texts match the frozen reference.
+
+Qwen uses deterministic decoding; Kimi uses non-thinking mode at temperature 0.6. DeepSeek output caps are 2,048 tokens without thinking and 8,192 with thinking. Access routes appear in Table~\ref{tab:model-identity}; full configurations accompany the reproduction notes.
+
+
+
+
+
+
+
+
+\paragraph{Output validity.}
+Qwen without an adapter has 69 partially rejected responses, compared with 2, 4, and 1 for the three adapters. DeepSeek thinking has 18 whole-response format failures. These counts do not separate formatting effects from other contributions to F1. All outcomes remain included in scoring under the parser rules; the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/output_outcomes.tex}{complete output-status ledger} retains every configuration and failure category.
+
+\paragraph{Parser and matching conventions.}
+The parser resolves literal spans to source offsets, sorts candidates by start offset and original output order, and keeps the first compatible candidate. Later duplicates, same-boundary type conflicts, and overlaps are rejected. Partial responses retain accepted spans; fully rejected or malformed responses become empty predictions. Identifier coverage is checked before scoring.
+
+Exact matching deduplicates identical span tuples within each sentence. Relaxed matching traverses reference spans in source order and selects the unused same-type prediction with highest IoU, taking the first prediction on a tie. The threshold is 0.5, and matching is greedy rather than globally optimized. Empty--empty records contribute no span counts. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/source/tex/appendix_C_shared_R16.tex}{scorer specification} preserves schema validation, BIO edge cases, and executable checks. The sentence-level counts reproduce the published exact scores before resampling.
+
+\paragraph{Conditional resampling.}
+We jointly resampled the 150 reference sentences across configurations 10,000 times with seed 20260923. Typed exact micro-F1 was recomputed from sentence-level span counts. For the LoRA mean, the same resampled sentences were used for all three fixed training seeds before averaging F1. Table~\ref{tab:core-paired} reports percentile intervals for paired differences. These post hoc intervals condition on the development-used reference and recorded runs. They do not model advertisement-level clustering or adjust for multiple comparisons. Seed SD describes a separate source of variation.
+
+\paragraph{Observed mismatch examples.}
+In the frozen no-adapter Qwen output for \texttt{1801-s0004}, the predicted S span $[5,24)$ is \zh{参与公司无人机飞控系统技术项目开发策划}, whereas an overlapping reference S span is $[16,24)$, \zh{技术项目开发策划}. For \texttt{1802-s0005}, both layers select \zh{方法} at $[6,8)$, but the prediction is S and the reference is K. These are actual prediction--reference differences, not handbook teaching examples; they do not establish that either local wording alone resolves the contextual annotation decision. After removing exact matches, the recorded pairing procedure identifies 27 same-boundary/different-type pairs, 89 same-type/overlapping-boundary pairs, and 65 other unmatched predictions, totalling 181 false positives. These structural categories do not establish linguistic causes or adjudicated scope errors. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/source/tex/appendix_C_shared_R16.tex}{mismatch ledger} records the pairing order and parser errors; a full adjudicated error taxonomy remains unavailable.
+
+\FloatBarrier
+Offline rescoring reproduces the exact and relaxed results for all six inference configurations and all three Qwen LoRA runs. The reproduction notes distinguish the available scoring artifacts from the requirements for rerunning model inference.
+
+DeepSeek in thinking mode shows higher precision and lower recall than the non-thinking configuration under their respective output budgets.
+
+\paragraph{Per-seed Qwen results.}
+\label{sec:qwen-shared-sft-r42}
+The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/README.md#previous-table-17-qwen-per-seed-and-cohort-scores}{per-seed record} retains precision, recall, exact/relaxed F1, and calibration/challenge scores underlying Tables~\ref{tab:gold150-main} and \ref{tab:core-paired}. Figure~\ref{fig:qwen-diagnostics} diagnoses the same frozen predictions.

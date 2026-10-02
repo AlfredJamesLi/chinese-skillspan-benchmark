@@ -1,0 +1,87 @@
+\section{Evaluation Protocol}
+\label{sec:experiments}
+
+The evaluation asks whether the resource supports informative comparisons of prompted extraction, supervised adaptation, and encoder initialization. We use a shared human reference for diagnostic comparisons and keep Silver-target and external-task results separate.
+
+\subsection{Datasets and Splits}
+
+The original supervision experiments train and select models on Silver data and score them against the fixed human reference. JobBERT uses 2,156 training and 169 development records. Six training records match three development texts after NFC normalization; removing them gives Qwen's 2,150/169 split. Repeated texts remain within training. Neither split contains reference identifiers or complete NFC-normalized reference sentences. Partitioning is at sentence level, so different sentences from one advertisement may occur in different splits. Scoring retains the original sentence strings and character offsets.
+
+The expanded experiments use two sets with 8,842/348/350 and 8,943/351/352 training, validation, and test sentences, respectively. Both combine earlier supervision with additional annotations, but differ in annotation channel and the examples retained after checking. Records retained after the channel replacement keep their split assignments. For Qwen, Silver-validation exact F1 selects the checkpoint, Silver-test F1 measures agreement with held-out generated labels, and the human reference provides an additional evaluation. Reference sentences are excluded from gradients and checkpoint selection. \hyperref[app:c]{Appendix C} identifies the two variants and reports their results; \hyperref[app:d]{Appendix D} documents split checks.
+
+\subsection{Evaluation Metrics}
+
+To distinguish exact extraction from approximate boundary agreement, the primary metric is typed exact-span micro-F1: a prediction matches only when both character boundaries and the LSKT type agree with the reference. Typed relaxed micro-F1 allows boundary differences through one-to-one greedy matching of same-type spans with intersection-over-union (IoU) of at least 0.5:
+
+\begin{equation}
+\mathrm{IoU}(u,v)=\frac{|u\cap v|}{|u\cup v|},
+\qquad \mathrm{IoU}(u,v)\geq 0.5.
+\label{eq:span-iou}
+\end{equation}
+
+Here, $u$ and $v$ are the sets of character positions covered by a predicted and a reference span, and $|\cdot|$ counts positions. For either matching rule, $\mathrm{TP}$ counts matched pairs, $\mathrm{FP}$ unmatched predictions, and $\mathrm{FN}$ unmatched reference spans, summed across sentences:
+
+\begin{equation}
+P_{\mathrm{micro}}=\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FP}},
+\quad R_{\mathrm{micro}}=\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FN}},
+\quad F_{1,\mathrm{micro}}=\frac{2\mathrm{TP}}{2\mathrm{TP}+\mathrm{FP}+\mathrm{FN}}.
+\label{eq:micro-prf}
+\end{equation}
+
+All 150 human-reference sentences are scored. Expanded Qwen experiments also report scores on their Silver validation and test sets. Partially rejected responses retain accepted spans; malformed responses or responses with no accepted spans are scored as empty predictions. Empty--empty sentences add no span counts. \hyperref[app:c]{Appendix C} summarizes parser decisions and matching order and links the full scorer specification. Boundary-only scores with types collapsed are secondary diagnostics.
+
+For experiments with three training seeds, we report the mean and sample standard deviation of the per-seed scores:
+
+\begin{equation}
+\bar f=\frac{1}{n}\sum_{i=1}^{n}f_i,
+\qquad s_f=\sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(f_i-\bar f)^2},
+\qquad n=3.
+\label{eq:seed-summary}
+\end{equation}
+
+Inference-only and expanded-pool results are single runs unless otherwise stated. The original-task reruns report their own seed counts. Scores are computed before display rounding and shown to three decimals; scientific notation preserves the sign of near-zero interval endpoints. \hyperref[app:c]{Appendix C} documents resampling procedures.
+
+\subsection{Models and Baselines}
+
+The baselines cover sequence labeling and generative extraction, so that resource behavior is not inferred from one architecture alone. JobBERT-zh combines a Chinese recruitment-domain-pretrained encoder with a CRF head. Qwen2.5-14B-Instruct (Qwen) is adapted through LoRA, using the model without a project adapter as its baseline.
+
+The shared-guideline inference comparison includes GPT proxy, Claude Sonnet 4.5 (Claude), DeepSeek-V4-Pro (DeepSeek), Kimi k2.6 (Kimi), and Qwen. DeepSeek is evaluated with thinking enabled and disabled, giving six configurations. GPT proxy denotes the configuration accessed through a third-party service. \hyperref[app:c]{Appendix C} records service identifiers, access routes, and inference settings.
+
+\input{tex/student_protocol_R12}
+
+\input{tex/external_benchmarks/paper_methods}
+
+\section{Results and Analysis}
+\label{sec:results-r12}
+
+\subsection{Inference on the Human Reference}
+
+GPT proxy achieved the highest typed exact micro-F1 among the six configurations, followed by DeepSeek with thinking disabled (Table~\ref{tab:gold150-shared-r7}). Their paired difference is 0.020, with a 95\% sentence-bootstrap interval of $[-0.026, 0.064]$ (Table~\ref{tab:core-paired}). The interval includes zero, so the point scores do not establish a stable ordering. These are comparisons of the recorded configurations, which use shared instructions but different inference budgets.
+
+
+
+\input{tex/stage2_shared_main}
+
+\input{tex/review20260923/core_uncertainty}
+
+\input{tex/silver_plus_results}
+
+\subsection{Supplementary Analyses}
+
+The Qwen improvements extend across the three reported span-length bins: every adapter increases exact recall in each bin (Figure~\ref{fig:qwen-diagnostics}). False-positive spans on the eight empty-reference sentences also decrease, although the changes vary by seed. Type-level F1, span support, and separate sentence and span counts are shown in the figure.
+
+Exploratory experiments with expanded supervision appear in \hyperref[app:c]{Appendix C}. Those runs change the source composition, annotation targets, and retained examples together. They do not isolate an expansion effect. The lower expanded JobBERT scores remain unexplained by the available diagnostics.
+
+\input{tex/external_benchmarks/paper_results}
+
+\subsection{Boundary and Type Disagreements in Human Coding}
+
+The three-annotator study shows that character agreement alone understates the difficulty of reproducing complete typed spans (Table~\ref{tab:quality-main}). Boundary-only agreement exceeds typed agreement, so disagreements concern both extent and type. Historical calibration cases explain why the handbook distinguishes job-use tools from knowledge and general communication from technical operations; they do not establish the distribution of errors in the separate blinded sample. These findings support retaining both span-level and character-level agreement measures.
+
+\subsection{Implications for Benchmark Use}
+
+Exact--relaxed F1 gaps make boundary placement a substantive benchmark outcome. A plausible competency phrase may still have the wrong extent. These aggregate scores motivate boundary and type diagnostics but do not identify the most error-prone constructions; that requires adjudicated mismatch analysis.
+
+Agreement with generated labels does not by itself establish agreement with human annotations. The expanded Qwen run achieves 0.809 on its Silver test and 0.585 on the human reference (Table~\ref{tab:expanded-silver-main}). The two sets differ in both texts and targets, so the gap cannot estimate Silver-label error, but it illustrates why both evaluations are needed.
+
+Matched Qwen runs provide the clearest adaptation evidence because inference is fixed. JobBERT and expansion studies jointly change labels, selection, or source composition, so they cannot isolate those effects. Type, length, and empty-sentence diagnostics qualify the aggregate comparisons.

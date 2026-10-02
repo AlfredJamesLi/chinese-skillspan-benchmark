@@ -1,0 +1,15 @@
+\section{Limitations and Responsible Use}
+\label{sec:limitations}
+
+\textbf{Reference design and coverage.} The calibration/challenge reference informed guideline development; exclusion from gradients and checkpoint selection does not remove that dependence. Its small, uneven type distribution and keyword-prioritized expansion limit generalization. Independent blinded coding yields mean typed F1 of 0.663, with only two L spans. The 50-sentence teacher-pool sample does not establish corpus-wide reliability, and historical assisted review is a different design. Annotations describe advertised requirements, not applicants' abilities.
+
+\textbf{Data access and reproducibility.} Public labels and predictions support inspection and rescoring, but the complete expanded-pool training inputs remain unavailable. Collection records, historical implementation details, and label-version compatibility checks are incomplete, limiting retraining and verification. Component-level access and reuse terms are specified below. Further applications require source permissions, privacy safeguards, human oversight, and external validation.
+
+\textbf{Experimental comparisons.} Sentence-level splits, residual JobBERT train/development matches, and incomplete CRF selection history limit independence claims. Expanded-pool studies use single seeds; inference budgets differ, and some proxy model identities remain unverified. External tasks differ in labels, splits, scorers, and selection. Bootstrap intervals condition on trained seeds without advertisement clustering or multiple-comparison adjustment. These results characterize tested settings, not a general ranking of models or languages.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+Chinese-SkillSpan specifies how to delimit and type competency mentions in Chinese recruitment text, with explicit treatment of coordination, contextual types, and negative cases. Its contribution is a versioned resource and an inspectable annotation procedure. Independent coding by three annotators, blinded to machine and peer labels, measures final-handbook consistency separately from historical coding and assisted review. Its remaining boundary and type disagreements show where adjudication and rule clarification are still needed.
+
+On the development-used human reference, Qwen adaptation improved end-to-end extraction under fixed inference rules. The additional Chinese-supervised encoders provide reproducible alternatives, but the paired interval does not establish an ESCO initialization advantage. Boundary-sensitive scores and the type, length, and empty-sentence diagnostics identify where further assessment is needed. These findings support diagnostic use of the released resource. The blinded agreement results provide evidence about the annotation process, but do not establish model generalization to new advertisement documents or resolve all historical label-version differences.

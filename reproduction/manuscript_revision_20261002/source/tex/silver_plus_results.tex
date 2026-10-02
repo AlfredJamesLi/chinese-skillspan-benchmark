@@ -1,0 +1,32 @@
+\subsection{Fine-Tuning with Silver-plus Labels}
+\label{sec:silver-results}
+
+All three Qwen adapters improved exact precision and recall over the no-adapter baseline under the same inference protocol (Table~\ref{tab:gold150-main}, panel A). Mean typed exact micro-F1 increased from 0.361 to $0.540\pm0.035$. Each seed's paired interval against the baseline also excludes zero (Table~\ref{tab:core-paired}), conditional on the recorded runs and reference sentences. This consistency across seeds supports end-to-end task adaptation with the supplied Silver supervision on the selected reference. It does not isolate semantic extraction from output-format learning: partially rejected responses decrease from 69 without an adapter to 2, 4, and 1 in the three adapted runs, under the same parser.
+
+\begin{table}[H]
+\caption{Fine-tuning comparisons on the human reference ($n=150$). Typed exact micro-F1 is reported as mean $\pm$ sample SD over training seeds 42, 43, and 44; the Qwen no-adapter baseline is a single run. }
+\label{tab:gold150-main}
+\centering\small
+\textbf{A. Qwen: fixed inference protocol}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Lcc@{}}
+\toprule
+Condition & Train / dev & Exact F1 \\
+\midrule
+No project adapter & --- & $\QwenBaselineExact$ \\
+B2 LoRA & 2,150 / 169 & $\QwenLoraExact$ \\
+\bottomrule
+\end{tabularx}
+\par\medskip\textbf{B. JobBERT-zh: historical supervision and selection}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Lcc@{}}
+\toprule
+Supervision and selection labels & Train / dev & Exact F1 \\
+\midrule
+Earlier (B1) & 2,156 / 169 & $0.142\pm0.014$ \\
+Revised (B2) & 2,156 / 169 & $0.554\pm0.005$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+A: same base checkpoint, frozen messages, occurrence schema, parser, and decoding settings; B2 development F1 selects each adapter. B: same initial encoder/CRF and matched training/development texts, but both sets of labels change. The split and checkpoint limitations are summarized in \nameref{sec:limitations}. Per-seed Qwen results are retained in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{run ledger}.
+\end{table}
+
+The historical JobBERT configuration achieved higher reference agreement with revised supervision (Table~\ref{tab:gold150-main}, panel B). The two conditions start from the same encoder and CRF and use matched training and development texts, but revise both sets of labels. Their difference therefore reflects changes to supervision and checkpoint selection together.
