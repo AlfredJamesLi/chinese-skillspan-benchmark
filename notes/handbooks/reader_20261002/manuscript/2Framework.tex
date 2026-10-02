@@ -1,0 +1,54 @@
+% [R40] Subsection-by-subsection terminology and handbook alignment; see revisions/REVISION_R40.md.
+\section{Corpus and Annotation}
+\label{sec:framework}
+
+
+
+\subsection{Task Definition and Label Schema}
+
+Given a Chinese job-ad sentence $x$, the task is to predict non-overlapping spans $(s,e,t)$. Here, $s$ and $e$ are zero-based, end-exclusive Unicode-code-point offsets, and $t\in\{L,K,S,T\}$. Each span must reproduce the contiguous substring $x[s:e]$, including its spelling and internal spaces. The annotation describes a requirement in the advertisement; it does not measure an applicant's ability.
+
+\begin{figure}[!htbp]
+  \noindent Figure~\ref{fig:macro-micro} shows how corpus preparation and annotation lead to model training and evaluation.\par\medskip
+  \centering
+  \includegraphics[width=\textwidth,keepaspectratio]{image/chinese-skillspan-workflow-chinese-adaptation-20260924.png}
+  \caption{Chinese-SkillSpan workflow: corpus preparation, annotation, models, and evaluation. Human-reference checks and Silver-target evaluation are distinguished. External comparisons retain separate datasets, labels, and metrics. Figure~\ref{fig:coding-detail} details annotation and review.}
+  \label{fig:macro-micro}
+\end{figure}
+
+The handbook assigns L to language requirements, including language names, proficiency levels, examinations, and certificates. K covers facts, principles, theories, and fields of study. S covers occupational actions, methods, and tool use. T covers transversal capabilities such as communication, cooperation, cognition, and self-management. These categories draw on ESCO and the knowledge--skill distinction in the European Qualifications Framework~\citep{ESCOv1_2_2024,council2017eqf}.
+
+By project convention, educational and non-language qualifications also receive K. They serve as recruitment proxies for knowledge requirements, so K counts combine substantive knowledge mentions with qualification proxies. We have not established separate proxy counts or evaluated the task after excluding them. The rules below explain how context determines type and how experience requirements are handled. Evaluation concerns mention boundaries and LSKT types.
+
+Human annotations provide the diagnostic reference, and Silver labels provide supervision. Figure~\ref{fig:coding-detail} separates independent coding, collaborative annotation, LLM labeling, and sampled review. External classification and retrieval experiments use their own datasets.
+
+\input{tex/coding_detail_no_counts}
+
+\input{tex/silver_plus_methods}
+
+\subsection{Annotation Guidelines and Adjudication}
+\label{sec:annotation-guidelines-r36}
+
+Annotation begins by determining whether a clause expresses a requirement for the candidate. Benefits, applicant-side procedures, company promotion, and pure outcomes do not qualify on their own; recruitment activities performed as occupational duties are assessed separately. Mixed clauses are considered separately. A sentence with no competency mention receives an empty annotation; insufficient context or an unresolved interpretation is recorded as uncertainty.
+
+For an eligible mention, annotators select the shortest source span that preserves the complete requirement, without a fixed length cap~\citep{zhang2022skillspan}. Generic proficiency triggers usually remain outside the span. In the colloquial 会聊天 (being good at conversation), 会 remains part of the T expression. Necessary action heads and complements also remain inside. This distinction also governs coordination. The phrase 维护和支持服务 permits separate S spans for 维护 and 支持服务. In 优化曝光与转化率, the action is shared, so the complete phrase is retained as one S span.
+
+Experience expressions require a separate check. Generic work experience and duration alone are excluded. Explicit industry-background requirements use domain cores as broad-K proxies under the project convention. For occupational activities, 经验 is omitted only if the remaining span preserves the requirement: 大项目售前经验 yields 大项目售前 as S, whereas 机器人竞赛经验 remains complete. A shared experience qualifier can stay outside coordinated items when each item remains interpretable in context. The presence of a conjunction or the word 经验 does not itself determine the boundary.
+
+Type follows the local predicate and referent. SQL receives S in 使用SQL because the clause expresses tool use, while SQL原理 receives K as a complete knowledge phrase. A predicate can thus determine the type without being selected as part of the span. Familiarity alone does not decide type. General communication and coordination, including 客户汇报, remain T inside duty clauses; a technical operation such as 接口对接 receives S. Language examinations receive L, and educational or non-language qualifications receive K. \hyperref[app:a]{Appendix A}, Tables~\ref{tab:guide-types}--\ref{tab:guide-scope}, provides the rule sources and further examples.
+
+Adjudication treats scope, boundaries, and type as separate decisions~\citep{artstein2008agreement}. There is no total priority order among L, K, S, and T. Once scope and boundaries are settled, a mention with unresolved type may receive provisional S with its alternatives logged, but this is not a final training target. Same-boundary alternatives, nested candidates, and unresolved overlaps are kept in the adjudication record rather than duplicated in the flat annotation layer. \hyperref[app:a]{Appendix A} gives the full rules and their history. Each completed experiment retains the labels assigned under its original handbook.
+
+\input{tex/representative_annotations_main}
+
+\subsection{Human Annotation and LLM-Assisted Labeling}
+\label{sec:annotation-workflow-r36}
+
+Independent human coding informed the handbook, while model-assisted review checked the subsequent Silver annotations. For the original Silver set, an initial sample was reviewed before bulk generation. Automated checks then verified source substrings, offsets, labels, and record coverage; human review addressed the interpretation of individual requirements. Each experiment used a documented subset of these labels.
+
+The bulk annotations followed the handbook available at generation time. Later amendments were recorded separately, leaving completed experiments unchanged. The expanded set combined earlier supervision with additional annotations obtained through two access channels. Unresolved records were excluded. Appendices A and D identify the handbook versions, annotation channels, and inclusion decisions.
+
+\input{tex/annotation_quality_R12}
+
+\subsection{Ethics and Data Use}
+The study analyzed recruitment advertisements without recruiting job applicants. Annotation and review were performed by members of the research team. Institutional ethics approval was not sought, and no formal institutional exemption is claimed. The available release documentation does not establish a field-by-field audit of employer-contact names, telephone numbers, or email addresses, and no verified removal rate is reported. The materials are provided for academic research and peer review under the reuse conditions stated in Data Availability.
