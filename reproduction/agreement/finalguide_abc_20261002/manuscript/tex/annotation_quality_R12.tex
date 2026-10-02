@@ -1,0 +1,34 @@
+\subsection{Annotation Quality and Reference Freezing}
+\label{sec:annotation-quality}
+
+The historical independent coding and machine-assisted review studies used different samples and annotation conditions (Table~\ref{tab:quality-main}; \hyperref[app:b]{Appendix B}). The initial 50-sentence study yielded character-level Cohen's $\kappa=0.567$ and typed exact span F1 of 0.444. Later assisted-review scores cannot be interpreted as a longitudinal improvement in independent annotation reliability.
+
+\paragraph{Independent coding under the final handbook.}
+Three coders used handbook B.sop\_v4.2.14 after familiarization and training on sets of five and 15 sentences, following the training-and-feedback approach discussed by \citet{klie2024annotationquality}. They independently annotated the same 50 additional sentences in separate Doccano projects, without machine suggestions or access to one another's labels. The training sets are excluded from formal agreement. The new sample comes from the Silver teacher pool and contains 50 distinct advertisement identifiers: eight listed-company, 16 public-institution, and 26 Tianchi sentences. It is separate from the historical calibration study and is not a new model test set.
+
+We computed agreement from the preserved pre-discussion exports, retaining all 50 sentences and all three coder pairs. Typed exact F1 measures agreement on complete spans without designating a coder as gold~\citep{hripcsak2005agreement}; boundary-only F1 ignores type. Nominal Krippendorff's $\alpha$ uses L/K/S/T/O assignments to all 2,111 source code points. Percentile 95\% intervals use 10,000 source-stratified sentence-bootstrap samples, retaining all three annotations together. These intervals condition on the observed source mixture and coders.
+
+\begin{table}[htbp]
+\caption{Annotation agreement by study design. Character coefficients are Cohen's $\kappa$ unless marked $\alpha$. Brackets give 95\% bootstrap intervals for the new study's typed exact F1. ``Equal'' counts identical sentence-level span sets. Historical rows retain their original protocols; a dash denotes an unreported coefficient.}
+\label{tab:quality-main}
+\centering\small
+\begin{tabularx}{\linewidth}{@{}p{0.22\linewidth}rp{0.09\linewidth}p{0.21\linewidth}L@{}}
+\toprule
+Comparison & $n$ & Character & Typed F1 & Details \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Final-handbook independent coding: new 50-sentence sample}} \\
+A--B & 50 & 0.800 & \makecell[l]{0.657\\{}[0.528, 0.767]} & Boundary F1 0.762; equal 26/50 \\
+A--C & 50 & 0.848 & \makecell[l]{0.739\\{}[0.612, 0.850]} & Boundary F1 0.788; equal 33/50 \\
+B--C & 50 & 0.803 & \makecell[l]{0.594\\{}[0.459, 0.717]} & Boundary F1 0.721; equal 22/50 \\
+Mean / three-rater & 50 & $\alpha$ 0.817 & \makecell[l]{0.663\\{}[0.562, 0.759]} & Mean boundary F1 0.757; all three equal 21/50 \\
+\midrule
+\multicolumn{5}{@{}l}{\textit{Historical independent coding and assisted review}} \\
+Initial raw-text coding & 50 & 0.567 & 0.444 & Original freeze identity unresolved \\
+Assisted review subset & 15 & 1.000 & 1.000 & Shared machine suggestions; 27 matching spans \\
+Machine--human review & 100 & --- & 0.959 & Original post-generation review \\
+Dual-reviewer QA & 150 & 0.883 & 0.816 & Machine-assisted; $\alpha=0.883$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The new mean typed F1 of 0.663 falls below the study plan's 0.80 target; that target is a project criterion, not a universal reliability cutoff. Mean boundary F1 is 0.757 (95\% CI [0.654, 0.846]), indicating additional disagreement about type. All three coders agree on 21/50 complete span sets, including ten empty sentences. Character-level $\alpha=0.817$ (95\% CI [0.755, 0.873]) measures a different unit and does not override the span disagreements~\citep{artstein2008agreement}. Only two L spans occur, both in one sentence. These results identify remaining annotation ambiguity rather than establish uniform reliability across categories. Frozen labels, pairwise diagnostics, and training records are available in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261002}{reproduction materials}; later edited exports are kept separate.

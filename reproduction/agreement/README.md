@@ -30,6 +30,6 @@ The nested 15 records add no unique sentences. Human reference construction and 
 The author reports four chronological stages (50, early150 including15, later150, another150). [File-level reconciliation](../evidence_review_20260925/COHORT_RECONCILIATION.json) currently reconstructs Gold150 + reviewed100 + QA100 + QA150 as 500 unique texts. These stage names are not yet one-to-one matched; do not commission duplicate annotation or count multiple exports as new samples.
 
 
-## Planned final-handbook independent-coding study
+## Final-handbook three-coder study (October 2, 2026)
 
-The [current training protocol](../../notes/handbooks/training/protocol.md) specifies three coders, five worked examples, 15 practice sentences, and 50 further sentences independently annotated by all three coders. It supersedes the earlier two-coder pilot plan. This is a prospective design: no new formal annotations or agreement estimates have been deposited. The [result fields](../../notes/handbooks/training/planned_results.json) are null; interpretive thresholds and project targets are not observations. Historical results above remain unchanged.
+The [completed statistical release](finalguide_abc_20261002/README.md) provides frozen pseudonymized labels for 50 sentences, pairwise agreement, source-stratified confidence intervals, a manifest and executable scoring code. Mean typed exact F1 is 0.663; three-rater character alpha is 0.817. All three coders and all 50 sentences remain in the analysis. Training sets of five and fifteen sentences are excluded. The release records both the original plan and documented execution, and does not turn this teacher-pool reliability sample into an independent Gold test set.

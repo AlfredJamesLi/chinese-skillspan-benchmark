@@ -1,22 +1,34 @@
 {
-  "status": "planned_no_new_observations",
+  "status": "observed_recomputed_20261002",
   "planned_coders": 3,
   "demonstration_sentences": 5,
   "practice_sentences": 15,
   "formal_sentences": 50,
-  "formal_completed_sentences": null,
-  "typed_exact_f1_mean": null,
-  "typed_exact_f1_ci95": null,
-  "boundary_f1_mean": null,
-  "boundary_f1_ci95": null,
-  "character_nominal_alpha": null,
-  "character_nominal_alpha_ci95": null,
+  "formal_completed_sentences": 50,
+  "typed_exact_f1_mean": 0.6632221397455219,
+  "typed_exact_f1_ci95": [
+    0.5616784294000846,
+    0.7591598772406887
+  ],
+  "boundary_f1_mean": 0.7571810963402839,
+  "boundary_f1_ci95": [
+    0.653619993286767,
+    0.8462598330476198
+  ],
+  "character_nominal_alpha": 0.816829196030622,
+  "character_nominal_alpha_ci95": [
+    0.7551414301322312,
+    0.8725738327844641
+  ],
   "pairs": {
-    "A-B": null,
-    "A-C": null,
-    "B-C": null
+    "A-B": 0.6571428571428571,
+    "A-C": 0.7389162561576355,
+    "B-C": 0.593607305936073
   },
   "interpretation_reference_alpha": 0.8,
   "project_target_typed_exact_f1": 0.8,
-  "targets_are_not_results": true
+  "targets_are_not_results": true,
+  "project_f1_target_met": false,
+  "detailed_results": "../../../reproduction/agreement/finalguide_abc_20261002/recomputed_metrics.json",
+  "training_role": "5 and 15 excluded from formal study; actual training dates not in exports"
 }

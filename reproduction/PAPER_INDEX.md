@@ -136,4 +136,4 @@ The [secondary review archive](process_archive_20260924/secondary_review/README.
 </details>
 
 
-The September 27 working draft adds a **planned**, three-coder final-handbook check to Table 3. Its cells remain pending; no hypothetical scores are included. See the [protocol](../notes/handbooks/training/protocol.md).
+The October 2 update replaces the planned Table 3 row with verified three-coder results: mean typed exact F1 0.663 and character alpha 0.817. See the [formal study release](agreement/finalguide_abc_20261002/README.md).

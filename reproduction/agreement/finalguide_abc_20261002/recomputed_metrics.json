@@ -1,0 +1,276 @@
+{
+  "n_sentences": 50,
+  "n_coders": 3,
+  "span_counts": {
+    "A": 97,
+    "B": 113,
+    "C": 106
+  },
+  "n_characters": 2111,
+  "source_counts": {
+    "上市公司招聘": 8,
+    "事业单位招聘": 16,
+    "阿里云公开数据集": 26
+  },
+  "pairs": {
+    "A-B": {
+      "span_counts": [
+        97,
+        113
+      ],
+      "typed_matches": 69,
+      "typed_exact_f1": 0.6571428571428571,
+      "boundary_matches": 80,
+      "boundary_f1": 0.7619047619047619,
+      "exact_sentences": 26,
+      "both_empty": 11,
+      "character_kappa": 0.8003345524534877,
+      "character_kappa_excluding_both_O": 0.5616121967306548,
+      "per_type": {
+        "L": {
+          "n_first": 2,
+          "n_second": 2,
+          "matches": 2,
+          "f1": 1.0
+        },
+        "K": {
+          "n_first": 34,
+          "n_second": 33,
+          "matches": 22,
+          "f1": 0.6567164179104478
+        },
+        "S": {
+          "n_first": 42,
+          "n_second": 61,
+          "matches": 32,
+          "f1": 0.6213592233009708
+        },
+        "T": {
+          "n_first": 19,
+          "n_second": 17,
+          "matches": 13,
+          "f1": 0.7222222222222222
+        }
+      },
+      "same_boundary_type_disagreements": {
+        "K->S": 3,
+        "T->S": 6,
+        "S->K": 2
+      },
+      "typed_ci95": [
+        0.5279152566271856,
+        0.7673551844980415
+      ],
+      "boundary_ci95": [
+        0.6428571428571429,
+        0.8596511074065254
+      ]
+    },
+    "A-C": {
+      "span_counts": [
+        97,
+        106
+      ],
+      "typed_matches": 75,
+      "typed_exact_f1": 0.7389162561576355,
+      "boundary_matches": 80,
+      "boundary_f1": 0.7881773399014779,
+      "exact_sentences": 33,
+      "both_empty": 10,
+      "character_kappa": 0.8476065957732668,
+      "character_kappa_excluding_both_O": 0.6840261745280428,
+      "per_type": {
+        "L": {
+          "n_first": 2,
+          "n_second": 2,
+          "matches": 2,
+          "f1": 1.0
+        },
+        "K": {
+          "n_first": 34,
+          "n_second": 40,
+          "matches": 28,
+          "f1": 0.7567567567567568
+        },
+        "S": {
+          "n_first": 42,
+          "n_second": 40,
+          "matches": 27,
+          "f1": 0.6585365853658537
+        },
+        "T": {
+          "n_first": 19,
+          "n_second": 24,
+          "matches": 18,
+          "f1": 0.8372093023255814
+        }
+      },
+      "same_boundary_type_disagreements": {
+        "T->S": 1,
+        "S->K": 2,
+        "K->S": 1,
+        "S->T": 1
+      },
+      "typed_ci95": [
+        0.6124401913875598,
+        0.8497474093264248
+      ],
+      "boundary_ci95": [
+        0.6632110717207527,
+        0.8950276243093923
+      ]
+    },
+    "B-C": {
+      "span_counts": [
+        113,
+        106
+      ],
+      "typed_matches": 65,
+      "typed_exact_f1": 0.593607305936073,
+      "boundary_matches": 79,
+      "boundary_f1": 0.7214611872146118,
+      "exact_sentences": 22,
+      "both_empty": 10,
+      "character_kappa": 0.8028124974025425,
+      "character_kappa_excluding_both_O": 0.573966333734268,
+      "per_type": {
+        "L": {
+          "n_first": 2,
+          "n_second": 2,
+          "matches": 2,
+          "f1": 1.0
+        },
+        "K": {
+          "n_first": 33,
+          "n_second": 40,
+          "matches": 22,
+          "f1": 0.6027397260273972
+        },
+        "S": {
+          "n_first": 61,
+          "n_second": 40,
+          "matches": 24,
+          "f1": 0.4752475247524752
+        },
+        "T": {
+          "n_first": 17,
+          "n_second": 24,
+          "matches": 17,
+          "f1": 0.8292682926829268
+        }
+      },
+      "same_boundary_type_disagreements": {
+        "S->K": 6,
+        "S->T": 6,
+        "K->S": 2
+      },
+      "typed_ci95": [
+        0.45917949146871867,
+        0.7166703539823008
+      ],
+      "boundary_ci95": [
+        0.5840623279840793,
+        0.8363680069930068
+      ]
+    }
+  },
+  "mean_typed_exact_f1": 0.6632221397455219,
+  "mean_boundary_f1": 0.7571810963402839,
+  "three_rater_character_alpha": 0.816829196030622,
+  "three_rater_fleiss_kappa": 0.8168002682346698,
+  "all_three_exact_sentences": 21,
+  "all_three_empty_sentences": 10,
+  "O_character_fraction": {
+    "A": 0.6451918522027476,
+    "B": 0.6186641402179062,
+    "C": 0.5949786830885836
+  },
+  "intervals": {
+    "typed_AB": {
+      "ci95": [
+        0.5279152566271856,
+        0.7673551844980415
+      ],
+      "undefined_resamples": 0
+    },
+    "typed_AC": {
+      "ci95": [
+        0.6124401913875598,
+        0.8497474093264248
+      ],
+      "undefined_resamples": 0
+    },
+    "typed_BC": {
+      "ci95": [
+        0.45917949146871867,
+        0.7166703539823008
+      ],
+      "undefined_resamples": 0
+    },
+    "boundary_AB": {
+      "ci95": [
+        0.6428571428571429,
+        0.8596511074065254
+      ],
+      "undefined_resamples": 0
+    },
+    "boundary_AC": {
+      "ci95": [
+        0.6632110717207527,
+        0.8950276243093923
+      ],
+      "undefined_resamples": 0
+    },
+    "boundary_BC": {
+      "ci95": [
+        0.5840623279840793,
+        0.8363680069930068
+      ],
+      "undefined_resamples": 0
+    },
+    "mean_typed": {
+      "ci95": [
+        0.5616784294000846,
+        0.7591598772406887
+      ],
+      "undefined_resamples": 0
+    },
+    "mean_boundary": {
+      "ci95": [
+        0.653619993286767,
+        0.8462598330476198
+      ],
+      "undefined_resamples": 0
+    },
+    "alpha": {
+      "ci95": [
+        0.7551414301322312,
+        0.8725738327844641
+      ],
+      "undefined_resamples": 0
+    }
+  },
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 20260927,
+    "rng": "numpy.random.default_rng (PCG64)",
+    "numpy_version": "2.1.3",
+    "unit": "sentence (one per recorded advertisement)",
+    "stratification": "source_domain, fixed observed source counts",
+    "method": "percentile 95%",
+    "conditioned_on": "these three coders and the observed source mixture",
+    "not_design_weighted": true
+  },
+  "training15_AC": {
+    "n": 15,
+    "span_counts": [
+      24,
+      26
+    ],
+    "matches": 9,
+    "typed_f1": 0.36,
+    "boundary_f1": 0.48,
+    "exact_sentences": 3,
+    "role": "training, excluded from formal reliability"
+  }
+}

@@ -1,0 +1,372 @@
+{
+  "zip_sha256": "9b50d9d33d985477656e51010467d952bd2fe6445fda8fc1845a4cfa6b4dbd85",
+  "reported_hashes_verified": true,
+  "valid_nonoverlapping_offsets": true,
+  "frozen_aligned_file_matches_A_C": true,
+  "unique_advertisement_ids": 50,
+  "unique_texts": 50,
+  "source_counts": {
+    "上市公司招聘": 8,
+    "事业单位招聘": 16,
+    "阿里云公开数据集": 26
+  },
+  "NFC_overlap_between_batches": {
+    "five_fifteen": 0,
+    "five_fifty": 0,
+    "fifteen_fifty": 0
+  },
+  "exact_training_case_matches": [],
+  "later50_edits": {
+    "A": [],
+    "B": [],
+    "C": [
+      {
+        "study_id": "FG50-03",
+        "frozen": [
+          [
+            0,
+            13,
+            "K"
+          ],
+          [
+            18,
+            28,
+            "S"
+          ]
+        ],
+        "later": [
+          [
+            4,
+            13,
+            "K"
+          ],
+          [
+            18,
+            21,
+            "S"
+          ],
+          [
+            22,
+            28,
+            "S"
+          ]
+        ]
+      },
+      {
+        "study_id": "FG50-07",
+        "frozen": [
+          [
+            8,
+            18,
+            "K"
+          ],
+          [
+            21,
+            33,
+            "K"
+          ]
+        ],
+        "later": [
+          [
+            8,
+            18,
+            "K"
+          ],
+          [
+            21,
+            26,
+            "K"
+          ],
+          [
+            27,
+            33,
+            "K"
+          ]
+        ]
+      },
+      {
+        "study_id": "FG50-08",
+        "frozen": [
+          [
+            1,
+            4,
+            "K"
+          ],
+          [
+            5,
+            10,
+            "K"
+          ],
+          [
+            11,
+            18,
+            "K"
+          ]
+        ],
+        "later": [
+          [
+            1,
+            4,
+            "K"
+          ],
+          [
+            5,
+            10,
+            "K"
+          ],
+          [
+            11,
+            16,
+            "K"
+          ]
+        ]
+      },
+      {
+        "study_id": "FG50-09",
+        "frozen": [
+          [
+            5,
+            14,
+            "K"
+          ]
+        ],
+        "later": [
+          [
+            5,
+            14,
+            "K"
+          ],
+          [
+            17,
+            21,
+            "K"
+          ]
+        ]
+      },
+      {
+        "study_id": "FG50-15",
+        "frozen": [
+          [
+            6,
+            18,
+            "K"
+          ]
+        ],
+        "later": [
+          [
+            6,
+            11,
+            "K"
+          ],
+          [
+            11,
+            18,
+            "K"
+          ]
+        ]
+      },
+      {
+        "study_id": "FG50-18",
+        "frozen": [
+          [
+            8,
+            13,
+            "K"
+          ]
+        ],
+        "later": []
+      },
+      {
+        "study_id": "FG50-21",
+        "frozen": [
+          [
+            12,
+            19,
+            "K"
+          ],
+          [
+            21,
+            27,
+            "K"
+          ]
+        ],
+        "later": [
+          [
+            12,
+            19,
+            "K"
+          ],
+          [
+            21,
+            25,
+            "S"
+          ]
+        ]
+      },
+      {
+        "study_id": "FG50-25",
+        "frozen": [
+          [
+            2,
+            4,
+            "K"
+          ],
+          [
+            5,
+            7,
+            "K"
+          ],
+          [
+            8,
+            13,
+            "K"
+          ]
+        ],
+        "later": [
+          [
+            2,
+            4,
+            "K"
+          ],
+          [
+            5,
+            7,
+            "K"
+          ],
+          [
+            8,
+            15,
+            "K"
+          ]
+        ]
+      },
+      {
+        "study_id": "FG50-39",
+        "frozen": [
+          [
+            2,
+            16,
+            "K"
+          ],
+          [
+            17,
+            31,
+            "K"
+          ],
+          [
+            32,
+            46,
+            "K"
+          ],
+          [
+            49,
+            54,
+            "K"
+          ],
+          [
+            55,
+            59,
+            "K"
+          ],
+          [
+            60,
+            63,
+            "K"
+          ],
+          [
+            64,
+            68,
+            "K"
+          ],
+          [
+            71,
+            79,
+            "K"
+          ]
+        ],
+        "later": [
+          [
+            2,
+            16,
+            "K"
+          ],
+          [
+            17,
+            31,
+            "K"
+          ],
+          [
+            32,
+            46,
+            "K"
+          ],
+          [
+            49,
+            54,
+            "K"
+          ],
+          [
+            55,
+            59,
+            "K"
+          ],
+          [
+            60,
+            63,
+            "K"
+          ],
+          [
+            64,
+            68,
+            "K"
+          ]
+        ]
+      },
+      {
+        "study_id": "FG50-43",
+        "frozen": [
+          [
+            2,
+            10,
+            "K"
+          ],
+          [
+            13,
+            22,
+            "S"
+          ]
+        ],
+        "later": [
+          [
+            2,
+            6,
+            "K"
+          ],
+          [
+            13,
+            22,
+            "S"
+          ]
+        ]
+      }
+    ]
+  },
+  "provenance_limits": [
+    "Freeze receipts are documentary evidence, not independent server audit logs.",
+    "No full candidate list, inclusion probabilities, historical exposure log or actual training dates supplied.",
+    "Export timestamps are not completion timestamps. Author confirms training preceded independent formal coding; individual dated training logs and server revision history were not supplied."
+  ],
+  "author_clarification_20261002": "The first five and fifteen sentences were for rule familiarization and training; the later fifty were coded independently, separately, with different completion times for each coder.",
+  "historical_text_screen": {
+    "old50": 0,
+    "assisted15": 0,
+    "QA150": 0,
+    "rule": "Exact NFC text matching against locally available historical releases; not an exhaustive exposure audit."
+  },
+  "verified_original_export_hashes": {
+    "A": "bd082f8288d2275a8fb6eb5ea8fca11962392c666680686cd7012cd5c27f1b84",
+    "B": "4a6d7eba17f0236ace39d808bcee8af986bf95693bf0f52e6f2bac74d6dfbad7",
+    "C": "3636a30507922311f192dbf25a1c8eca55c7679df755eb85ef077905c31a6e4a"
+  },
+  "reported_point_estimates_independently_reproduced": true
+}
