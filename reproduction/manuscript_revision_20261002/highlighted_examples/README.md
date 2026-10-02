@@ -1,3 +1,5 @@
+> Superseded by [verified corpus examples](../corpus_examples_20261003/README.md). The eight panels described below were handbook illustrations, not eight complete original sentences.
+
 # Highlighted Chinese annotation examples
 
 The previous Table 3 has been replaced by Figure 4, a vector illustration with eight bilingual panels. The figure appears on PDF page 10. The manuscript remains 40 pages.

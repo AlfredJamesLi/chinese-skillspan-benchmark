@@ -1,0 +1,236 @@
+{
+  "purpose": "Verbatim corpus examples with unchanged frozen human-reference annotations",
+  "source": {
+    "repository": "AlfredJamesLi/chinese-skillspan-benchmark",
+    "revision": "cb1b2e09c0af260c251a57e13add3a23b6e979b9",
+    "path": "data/gold150/gold150_test.jsonl",
+    "blob_sha": "e7e9fcf1e5acb601e931152cecf61ea2fb3b4e3c",
+    "sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "url": "https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/cb1b2e09c0af260c251a57e13add3a23b6e979b9/data/gold150/gold150_test.jsonl"
+  },
+  "canonical_type_mapping": {
+    "skills": "S",
+    "knowledge": "K",
+    "Tranversial SKills": "T",
+    "Language_Skills&Knowledge": "L"
+  },
+  "examples": [
+    {
+      "source_id": "1802-s0008",
+      "handbook": "B.sop_v4.2.10",
+      "title": "Language and transversal requirements",
+      "full_record_text": "nicetohave1、有网络管理或网络工程工作经验者优先2、与AWS工作经验者优先3、有组织性和主动性4、良好的英文读写能力5、优秀的沟通能力和团队合作精神项目简介:我们公司作为跨国企业InternetBrands中国唯一的离岸研发中心，已经合作了5年多，目前团队技术人员40人，随着合作的深入，计划今年新招20人。",
+      "excerpt_start": 52,
+      "excerpt_end": 79,
+      "text": "4、良好的英文读写能力5、优秀的沟通能力和团队合作精神",
+      "extent": "contiguous excerpt",
+      "spans": [
+        {
+          "start": 5,
+          "end": 11,
+          "source_start": 57,
+          "source_end": 63,
+          "type": "L",
+          "text": "英文读写能力"
+        },
+        {
+          "start": 16,
+          "end": 20,
+          "source_start": 68,
+          "source_end": 72,
+          "type": "T",
+          "text": "沟通能力"
+        },
+        {
+          "start": 21,
+          "end": 27,
+          "source_start": 73,
+          "source_end": 79,
+          "type": "T",
+          "text": "团队合作精神"
+        }
+      ],
+      "english_explanation": "Good English reading and writing, communication, and teamwork are distinct requirements."
+    },
+    {
+      "source_id": "1806-s0005",
+      "handbook": "B.sop_v4.2.10",
+      "title": "Knowledge and programming skills",
+      "full_record_text": " 2 深刻理解面向对象、熟悉设计模式、多线程和跨平台编程；",
+      "excerpt_start": 0,
+      "excerpt_end": 29,
+      "text": " 2 深刻理解面向对象、熟悉设计模式、多线程和跨平台编程；",
+      "extent": "complete stored sentence",
+      "spans": [
+        {
+          "start": 7,
+          "end": 11,
+          "source_start": 7,
+          "source_end": 11,
+          "type": "K",
+          "text": "面向对象"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "source_start": 14,
+          "source_end": 18,
+          "type": "K",
+          "text": "设计模式"
+        },
+        {
+          "start": 19,
+          "end": 28,
+          "source_start": 19,
+          "source_end": 28,
+          "type": "S",
+          "text": "多线程和跨平台编程"
+        }
+      ],
+      "english_explanation": "Understanding object orientation and design patterns differs from multithreaded and cross-platform programming."
+    },
+    {
+      "source_id": "1803-s0002",
+      "handbook": "B.sop_v4.2.10",
+      "title": "Coordinated occupational actions",
+      "full_record_text": "3、独立操作竞价，如扩展长尾关键字，调整价格，优化曝光与转化率，并协助完成Listing优化；",
+      "excerpt_start": 0,
+      "excerpt_end": 47,
+      "text": "3、独立操作竞价，如扩展长尾关键字，调整价格，优化曝光与转化率，并协助完成Listing优化；",
+      "extent": "complete stored sentence",
+      "spans": [
+        {
+          "start": 4,
+          "end": 8,
+          "source_start": 4,
+          "source_end": 8,
+          "type": "S",
+          "text": "操作竞价"
+        },
+        {
+          "start": 10,
+          "end": 17,
+          "source_start": 10,
+          "source_end": 17,
+          "type": "S",
+          "text": "扩展长尾关键字"
+        },
+        {
+          "start": 18,
+          "end": 22,
+          "source_start": 18,
+          "source_end": 22,
+          "type": "S",
+          "text": "调整价格"
+        },
+        {
+          "start": 23,
+          "end": 31,
+          "source_start": 23,
+          "source_end": 31,
+          "type": "S",
+          "text": "优化曝光与转化率"
+        },
+        {
+          "start": 37,
+          "end": 46,
+          "source_start": 37,
+          "source_end": 46,
+          "type": "S",
+          "text": "Listing优化"
+        }
+      ],
+      "english_explanation": "Bid management includes keyword expansion, price adjustment, exposure/conversion optimization, and listing optimization."
+    },
+    {
+      "source_id": "1973-s0006",
+      "handbook": "B.sop_v4.2.10",
+      "title": "Colloquial and interpersonal capabilities",
+      "full_record_text": "', '4、会聊天，有服务意识，善于与人沟通，具备较好的协调、沟通能力；",
+      "excerpt_start": 4,
+      "excerpt_end": 36,
+      "text": "4、会聊天，有服务意识，善于与人沟通，具备较好的协调、沟通能力；",
+      "extent": "contiguous excerpt",
+      "spans": [
+        {
+          "start": 2,
+          "end": 5,
+          "source_start": 6,
+          "source_end": 9,
+          "type": "T",
+          "text": "会聊天"
+        },
+        {
+          "start": 7,
+          "end": 11,
+          "source_start": 11,
+          "source_end": 15,
+          "type": "T",
+          "text": "服务意识"
+        },
+        {
+          "start": 14,
+          "end": 18,
+          "source_start": 18,
+          "source_end": 22,
+          "type": "T",
+          "text": "与人沟通"
+        },
+        {
+          "start": 24,
+          "end": 26,
+          "source_start": 28,
+          "source_end": 30,
+          "type": "T",
+          "text": "协调"
+        },
+        {
+          "start": 27,
+          "end": 31,
+          "source_start": 31,
+          "source_end": 35,
+          "type": "T",
+          "text": "沟通能力"
+        }
+      ],
+      "english_explanation": "Conversation, service awareness, interpersonal communication, and coordination express transversal capabilities."
+    },
+    {
+      "source_id": "1896-s0005",
+      "handbook": "B.sop_v4.2.10",
+      "title": "Experience requirements",
+      "full_record_text": "2、5年以上售前顾问或项目管理经验，有一定数量的大项目售前经验；",
+      "excerpt_start": 0,
+      "excerpt_end": 32,
+      "text": "2、5年以上售前顾问或项目管理经验，有一定数量的大项目售前经验；",
+      "extent": "complete stored sentence",
+      "spans": [
+        {
+          "start": 6,
+          "end": 10,
+          "source_start": 6,
+          "source_end": 10,
+          "type": "S",
+          "text": "售前顾问"
+        },
+        {
+          "start": 11,
+          "end": 15,
+          "source_start": 11,
+          "source_end": 15,
+          "type": "S",
+          "text": "项目管理"
+        },
+        {
+          "start": 24,
+          "end": 29,
+          "source_start": 24,
+          "source_end": 29,
+          "type": "S",
+          "text": "大项目售前"
+        }
+      ],
+      "english_explanation": "The record requests presales or project-management experience; generic duration and experience qualifiers lie outside the recorded spans."
+    }
+  ]
+}
