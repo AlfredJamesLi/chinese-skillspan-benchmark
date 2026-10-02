@@ -17,7 +17,7 @@
       25,
       30
     ],
-    "pdf_sha256": "d7ccd37dba4a685ee4ee8754499dba3b717b51bad7c13ea1b50b8f2a00a84f23",
+    "pdf_sha256": "89cc70568596de914990ac2c6c255e0df1f8299f9cd9a42abe85e447de0bc0a5",
     "passed": true,
     "examples_checked": 5,
     "source_spans_and_types_unchanged": true,
@@ -37,9 +37,9 @@
   },
   "files_sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "d7ccd37dba4a685ee4ee8754499dba3b717b51bad7c13ea1b50b8f2a00a84f23",
-    "README.md": "6eecf5dc03bdbb966b2c38b071da93798e7580da75227a1ca192a0e7a8e64dc7",
-    "source/0main.tex": "c5c882e7bcc3555c233f928548bb3bab3f1a0dd8024d9b5824ab1d660e23c99b",
+    "Chinese_SkillSpan_revised_20261002.pdf": "89cc70568596de914990ac2c6c255e0df1f8299f9cd9a42abe85e447de0bc0a5",
+    "README.md": "7f7855ee0bff4379c83c1e4d93bf5e0fa781d54bcc671beb0f7648a6612a24aa",
+    "source/0main.tex": "e2ac0636e32c6d0786f97a6e7c4e8ca61cfaf7b5129b801cf90ce40d271e6b0a",
     "source/1Introduction.tex": "ee2ad488c1ecb60bbff59c64e913d72bfb64ec0b08103f245f524ea2ea1acf22",
     "source/2Framework.tex": "9d87c1189db193f5c18e5bc8b7568914684258edb9abafba6c24ddca94afdbeb",
     "source/3Experiments.tex": "0a6a02b17b1f8ffac09a0390e46639868e22a616f6ec44adeea2f2f390633715",
@@ -76,7 +76,8 @@
     "source/9Reference.bib": "6fd6e87fed0e03597a0b64048d27b0b8166f92a8f7070cbd7b7adfe086dc92bf",
     "company_translation_20261003/README.md": "7803fad5811ccd6f33808f41de06aff413b50827608e077934a86267ca6077c6",
     "chinese_text_audit_20261003/README.md": "6f32943543dfe16acaa2fedcdcd134c0a291af622d2075007113d13cef7d7ef9",
-    "inline_glosses_20261003/README.md": "4d5443162c9932cbd591eacd5d5084bed6ca79791d040bf8250b3a68f12f55a5"
+    "inline_glosses_20261003/README.md": "4d5443162c9932cbd591eacd5d5084bed6ca79791d040bf8250b3a68f12f55a5",
+    "abstract_contributions_20261003/README.md": "196f2263e2f144dbd21dcdc60d629192d35d1ddcbcebf58729b9625733f2b311"
   },
   "figure1_arrow_cleanup_validation": {
     "passed": true,
@@ -188,5 +189,13 @@
     "source_text_offsets_types_and_numbers_unchanged": true,
     "only_inline_glosses_added": true,
     "pdf_sha256": "d7ccd37dba4a685ee4ee8754499dba3b717b51bad7c13ea1b50b8f2a00a84f23"
+  },
+  "abstract_contributions_revision": {
+    "passed": true,
+    "pages": 40,
+    "only_abstract_changed": true,
+    "abstract_word_count": 208,
+    "main_sha256": "e2ac0636e32c6d0786f97a6e7c4e8ca61cfaf7b5129b801cf90ce40d271e6b0a",
+    "pdf_sha256": "89cc70568596de914990ac2c6c255e0df1f8299f9cd9a42abe85e447de0bc0a5"
   }
 }
