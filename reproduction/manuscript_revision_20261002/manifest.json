@@ -37,8 +37,8 @@
   },
   "files_sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "5362ae9ecb3dcb77b7112f07bce54c0623dd2588dd791a6583cf4102e11ef7ae",
-    "README.md": "d5441c6d6b85e583c951f6f434fffc3db4e4f0ccb43c862af0f70a746ab11272",
+    "Chinese_SkillSpan_revised_20261002.pdf": "44e0ecf49951dd690f55d141868b7084109fca60f2c8072d271d5ff394adf317",
+    "README.md": "661aacb80a785841e3353cb79b8c3c079dcce68cbf299e27f11137f4c8dfbd71",
     "source/0main.tex": "d6d2d69a11ca5bf2d57ffbb98d002b4ab113d8b5b32ebb412c8942ff7c918eb4",
     "source/1Introduction.tex": "329ebdc54469adb5da2454b823af2eb7980578ac876b929f76bb82208d4b6b5b",
     "source/2Framework.tex": "b88824363f452603132a2917d3f9f1c71971ce8c444c7618649be31f342ab8b2",
@@ -91,7 +91,7 @@
     "title_benchmark_alignment_20261003/edits.json": "bc66a8e8092632854a76f6802bdfa7f77a630c854b6a0671e70647d37a236c61",
     "title_benchmark_alignment_20261003/README.md": "5ad747549c9a8b5df13251aac4974bdd6cb669b9af00e07422a5bb16c3f201ca",
     "source/tex/external_benchmarks/paper_tables_appendix.tex": "4c077b2b685bfddbe01fcfc53ee23905a0e42d39a7f4f663050277c06017e6ca",
-    "source/tex/review20260923/model_identity.tex": "0732d84364a22c2c8160e93b7658062c7c256d5e7d8fd1863b2a124ca1af2732",
+    "source/tex/review20260923/model_identity.tex": "b56e0146965546136abb1c2652a2cd2babc52a8f8cac164ff957084661a20e82",
     "source/tex/student_protocol_R12.tex": "070cd135433046966c07f6c8cead472ea06e18fab62ea81c909aaf60d2534d3e",
     "short_line_polish_20261003/README.md": "b9c6703ec74295ec3a75987535ee0640da93dcc7cfae74c36427803c155f75c0",
     "short_line_polish_20261003/edits.json": "a3614093badd83e87934589050ecfa2bf34223cf79569b1c96e604162f71db9e",
@@ -1128,5 +1128,18 @@
     },
     "provenance": "Adopted official Codex annotation access is confirmed by the authors. Baseline scoring checks do not authenticate upstream model versions.",
     "retained_layout_corrections": "Page-10 paragraph continuity and page-27 float placement."
+  },
+  "official_endpoint_clarification": {
+    "date": "2026-10-04",
+    "passed": true,
+    "pages": 39,
+    "pdf_sha256": "44e0ecf49951dd690f55d141868b7084109fca60f2c8072d271d5ff394adf317",
+    "experimental_values_unchanged": true,
+    "DeepSeek_endpoint": "https://api.deepseek.com",
+    "DeepSeek_model": "deepseek-v4-pro",
+    "Kimi_endpoint": "https://api.moonshot.cn",
+    "Kimi_model": "kimi-k2.6",
+    "Kimi_thinking": "disabled",
+    "exact_model_snapshot_not_inferred": true
   }
 }

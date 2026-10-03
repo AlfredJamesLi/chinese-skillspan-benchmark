@@ -9,13 +9,13 @@ Role & Recorded identifier & Access and configuration \\
 Original teacher & \texttt{gpt-6-astra} & Official OpenAI Codex; adopted Silver labels. The recorded identifier does not pin an exact provider snapshot. \\
 GPT (API) & \texttt{gpt-5.6-terra} & Third-party API gateway. \\
 Claude (API) & Claude Sonnet 4.5 & Third-party API gateway. \\
-DeepSeek baseline & \texttt{deepseek-v4-pro} & Provider endpoint; non-thinking/thinking, 2,048/8,192-token output caps. \\
-Kimi baseline & Kimi k2.6 & Provider endpoint; non-thinking; temperature 0.6. \\
+DeepSeek (API) & \texttt{deepseek-v4-pro} & Official \href{https://api.deepseek.com}{DeepSeek API}; non-thinking/thinking, 2,048/8,192-token output caps. \\
+Kimi (API) & \texttt{kimi-k2.6} & Official \href{https://api.moonshot.cn}{Moonshot API}; non-thinking; temperature 0.6. \\
 Qwen baseline / LoRA & Qwen2.5-14B-Instruct & Local weights; deterministic decoding; output cap 2,048. Original Hub commit not recorded; archived file hashes identify the supplied artifacts. \\
 JobBERT-zh & Released initialization and B2 continuation & Local encoder and inherited CRF; initialization-selection history incomplete. \\
 Expansion annotation & OpenAI Codex / API gateway & Adopted Codex labels; gateway pool used only for supplementary comparison. \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-Gateway identifiers are service-reported; upstream model versions were not independently verified. The shared protocol was frozen for September 10; GPT includes a September 11 retry. Retained call metadata accompany raw records; missing dates, decoding settings, and checkpoint identities are not inferred.
+DeepSeek and Kimi response model fields match requests. Gateway model versions were not independently verified. The shared protocol was frozen for September 10; GPT includes a September 11 retry. Retained call metadata accompany raw records; missing dates, decoding settings, and checkpoint identities are not inferred.
 \end{table}
