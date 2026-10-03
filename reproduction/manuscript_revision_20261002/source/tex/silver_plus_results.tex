@@ -1,7 +1,7 @@
 \subsection{Fine-Tuning with Silver-plus Labels}
 \label{sec:silver-results}
 
-All three Qwen adapters improved exact precision and recall over the no-adapter baseline under the same inference protocol (Table~\ref{tab:gold150-main}, panel A). Mean typed exact micro-F1 increased from 0.361 to $0.540\pm0.035$. Each seed's paired interval against the baseline also excludes zero (Table~\ref{tab:core-paired}), conditional on the recorded runs and reference sentences. This consistency across seeds supports end-to-end task adaptation with the supplied Silver supervision on the selected reference. It does not isolate semantic extraction from output-format learning: partially rejected responses decrease from 69 without an adapter to 2, 4, and 1 in the three adapted runs, under the same parser.
+All three Qwen adapters improved exact precision and recall over the no-adapter baseline under the same inference protocol (Table~\ref{tab:gold150-main}, panel A). Mean typed exact micro-F1 increased from 0.361 to $0.540\pm0.035$. Each seed's paired interval against the baseline also excludes zero (Table~\ref{tab:core-paired}), conditional on the recorded runs and reference sentences. The improvement includes better output compliance: under the same parser, partially rejected responses decrease from 69 without an adapter to 2, 4, and 1 in the adapted runs. These are end-to-end gains; semantic extraction and output-format learning are not isolated.
 
 \begin{table}[H]
 \caption{Fine-tuning comparisons on the human reference ($n=150$). Typed exact micro-F1 is reported as mean $\pm$ sample SD over training seeds 42, 43, and 44; the Qwen no-adapter baseline is a single run. }

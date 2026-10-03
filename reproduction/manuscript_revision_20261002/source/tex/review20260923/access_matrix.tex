@@ -5,13 +5,13 @@
 \begin{tabularx}{\linewidth}{@{}P{.23\linewidth}P{.30\linewidth}L@{}}
 \toprule Component & Access route / available objects & Scope and limitation \\
 \midrule
-Core v0.1.3 & Dataset DOI in Data Availability: corpus, Gold150 (150), B2 (2,150/169), texts and labels & Download the named version; inspect labels and use its splits. It does not contain the later expanded pools. \\
-Qwen reproduction archive & Model DOI: three B2 adapters, selected expanded adapters, frozen predictions, prompts and scorer & Follow its model index for inference or rescoring; obtain base weights separately. Full training inputs are not bundled. \\
+Core v0.1.3 & \href{https://doi.org/10.5281/zenodo.22698504}{Dataset archive}: corpus, Gold150 (150), B2 (2,150/169), texts and labels & Download the named version; inspect labels and use its splits. It does not contain the later expanded pools. \\
+Qwen reproduction archive & \href{https://doi.org/10.5281/zenodo.22851581}{Model archive}: three B2 adapters, selected expanded adapters, frozen predictions, prompts and scorer & Follow its model index for inference or rescoring; obtain base weights separately. Full training inputs are not bundled. \\
 Final expanded pools & 9,540 / 9,646 records; complete files verified locally against split manifests & IDs and selected outputs are archived; public complete texts and labels, or an executable controlled-access arrangement, remain unavailable. Not publicly retrainable as a complete study. \\
 QA150 and historical coding & Pseudonymized texts and human layers linked in Data Availability; source hashes and cohort membership & Recalculate agreement without account metadata. The release preserves design distinctions and does not establish final-rule blind reliability. \\
-Three-annotator blinded study & Separate GitHub agreement release: 50 sentences, frozen labels, source IDs, scorer and intervals & Recalculate independent agreement; five + 15 training sentences excluded. This is not a model test set. \\
-Chinese encoder baselines & Six public Hugging Face checkpoints; audit DOI 10.5281/zenodo.22937245 & Frozen predictions, code and configurations support rescoring. Local rescoring verified all six runs; server checkpoint re-inference is separately recorded. \\
-External experiments & Appendix E links public data/model sources and pinned result archives for 104 server-B and 36 server-A training runs & Metrics and available predictions support checks; unresolved provenance and environment gaps prevent a complete training-package claim. \\
+Three-annotator blinded study & \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261002}{Agreement release}: 50 sentences, frozen labels, source IDs, scorer and intervals & Recalculate independent agreement; five + 15 training sentences excluded. This is not a model test set. \\
+Chinese encoder baselines & Six public \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/0c73207c0f9b00fa87f385b78bcb7342bd00bfcb/results_snapshots/table11_evidence_20260924/HF_RELEASE.md}{Hugging Face checkpoints}; \href{https://doi.org/10.5281/zenodo.22937245}{audit DOI 10.5281/zenodo.22937245} & Frozen predictions, code and configurations support rescoring. Local rescoring verified all six runs; server checkpoint re-inference is separately recorded. \\
+External experiments & Appendix E links public data/model sources and pinned result archives for 104 extraction and 36 additional classification/retrieval training runs & Metrics and available predictions support checks; unresolved provenance and environment gaps prevent a complete training-package claim. \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight

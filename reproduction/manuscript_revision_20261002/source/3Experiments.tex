@@ -1,7 +1,7 @@
 \section{Evaluation Protocol}
 \label{sec:experiments}
 
-The evaluation asks whether the resource supports informative comparisons of prompted extraction, supervised adaptation, and encoder initialization. We use a shared human reference for diagnostic comparisons and keep Silver-target and external-task results separate.
+The evaluation compares prompted extraction, measures gains from Silver-supervised Qwen adaptation, and tests encoder initialization under shared task-specific settings. Type, span-length, and empty-sentence diagnostics complement aggregate scores. Chinese systems are scored on the shared human reference; Silver-target and external-task evaluations retain their own datasets and protocols.
 
 \subsection{Datasets and Splits}
 
@@ -39,11 +39,11 @@ For experiments with three training seeds, we report the mean and sample standar
 \label{eq:seed-summary}
 \end{equation}
 
-Inference-only and expanded-pool results are single runs unless otherwise stated. The original-task reruns report their own seed counts. Scores are computed before display rounding and shown to three decimals; scientific notation preserves the sign of near-zero interval endpoints. \hyperref[app:c]{Appendix C} documents resampling procedures.
+Inference-only and expanded-pool results are single runs unless otherwise stated. The original-task reruns report their own seed counts. \hyperref[app:c]{Appendix C} documents resampling procedures.
 
 \subsection{Models and Baselines}
 
-The baselines cover sequence labeling and generative extraction, so that resource behavior is not inferred from one architecture alone. JobBERT-zh combines a Chinese recruitment-domain-pretrained encoder with a CRF head. Qwen2.5-14B-Instruct (Qwen) is adapted through LoRA, using the model without a project adapter as its baseline.
+JobBERT-zh provides a sequence-labeling baseline with a Chinese recruitment-domain-pretrained encoder and a CRF head. Qwen2.5-14B-Instruct (Qwen)~\citep{qwen2025report} provides generative extraction, with LoRA adaptation~\citep{hu2022lora} compared against the same model without a project adapter.
 
 The shared-guideline inference comparison includes GPT proxy, Claude Sonnet 4.5 (Claude), DeepSeek-V4-Pro (DeepSeek), Kimi k2.6 (Kimi), and Qwen. DeepSeek is evaluated with thinking enabled and disabled, giving six configurations. GPT proxy denotes the configuration accessed through a third-party service. \hyperref[app:c]{Appendix C} records service identifiers, access routes, and inference settings.
 
@@ -76,11 +76,11 @@ Exploratory experiments with expanded supervision appear in \hyperref[app:c]{App
 
 \subsection{Boundary and Type Disagreements in Human Coding}
 
-The three-annotator study shows that character agreement alone understates the difficulty of reproducing complete typed spans (Table~\ref{tab:quality-main}). Boundary-only agreement exceeds typed agreement, so disagreements concern both extent and type. Historical calibration cases explain why the handbook distinguishes job-use tools from knowledge and general communication from technical operations; they do not establish the distribution of errors in the separate blinded sample. These findings support retaining both span-level and character-level agreement measures.
+The three-annotator study shows that character agreement alone understates the difficulty of reproducing complete typed spans (Table~\ref{tab:quality-main}). Boundary-only agreement exceeds typed agreement, so disagreements concern both extent and type. Historical calibration cases explain why the handbook distinguishes job-use tools from knowledge and general communication from technical operations; they do not establish the distribution of errors in the separate blinded sample.
 
 \subsection{Implications for Benchmark Use}
 
-Exact--relaxed F1 gaps make boundary placement a substantive benchmark outcome. A plausible competency phrase may still have the wrong extent. These aggregate scores motivate boundary and type diagnostics but do not identify the most error-prone constructions; that requires adjudicated mismatch analysis.
+The no-adapter Qwen score rises from 0.361 under exact matching to 0.470 under overlap-tolerant matching (Table~\ref{tab:gold150-shared-r7}). This difference shows how boundary tolerance affects the evaluation. The prediction--reference examples in \hyperref[app:c]{Appendix C} illustrate boundary and type mismatches, but have not been adjudicated into a linguistic error taxonomy.
 
 Agreement with generated labels does not by itself establish agreement with human annotations. The expanded Qwen run achieves 0.809 on its Silver test and 0.585 on the human reference (Table~\ref{tab:expanded-silver-main}). The two sets differ in both texts and targets, so the gap cannot estimate Silver-label error, but it illustrates why both evaluations are needed.
 

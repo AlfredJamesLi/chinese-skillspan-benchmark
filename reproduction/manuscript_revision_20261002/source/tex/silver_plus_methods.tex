@@ -1,7 +1,7 @@
 \subsection{Corpus Construction and Annotation Layers}
 \label{sec:challenge-audit}
 
-To cover varied recruitment settings while keeping evaluation interpretable, we distinguish the source corpus from its supervision, reference, and agreement subsets. The corpus contains 22,840 sentences from the AI, Cloud, public-sector, and graduate-recruitment collections, with an original split of 17,460 training, 2,143 development, and 3,237 test sentences. These collection names describe sources and can overlap in occupational coverage. Table~\ref{tab:annotation-lineage} distinguishes the corpus from the smaller subsets used for annotation, supervision, and evaluation.
+The corpus contains 22,840 sentences from the AI, Cloud, public-sector, and graduate-recruitment collections, with an original split of 17,460 training, 2,143 development, and 3,237 test sentences. These collection names describe sources and can overlap in occupational coverage. Table~\ref{tab:annotation-lineage} distinguishes the corpus from the smaller subsets used for annotation, supervision, and evaluation.
 
 Texts came from three routes: commercial collections purchased from MacroData~\citep{macrodataPlatform}; public-institution recruitment announcements collected by the research team; and the Recruitment Dataset (dataset ID 163746) on Alibaba Cloud Tianchi~\citep{tianchiRecruitment163746}. For public-institution announcements, team members selected pages from government portals, university and hospital websites, and public recruitment platforms across regions of China. A crawler revisited the registered URLs weekly or monthly. Screening and cleaning produced the public-institution subset. \hyperref[app:d]{Appendix D} records the available source metadata and gaps in the original collection history.
 
@@ -19,7 +19,7 @@ The reference contains 663 spans: 448 S, 125 K, 88 T, and two L. Eight sentences
 \toprule
 Layer & Records & Support / composition & Role \\
 \midrule
-Original corpus & 22,840 & Four source collections & Corpus-scale annotations; original split only \\
+Original corpus & 22,840 & Four source collections & Source corpus and original partition \\
 Human reference & 150 & 663 spans; 8 empty; 50 + 100 cohorts & Frozen evaluation targets \\
 Original Silver-plus pool & 2,451 & 100 reviewed; 730 conflict-origin; 1,621 other & Candidate labels; version-specific inclusion \\
 Initial review & 100 & Versioned review layers (\hyperref[app:b]{Appendix B}) & Review of LLM labels; separate from evaluation \\
@@ -34,7 +34,7 @@ Expanded Silver (Codex) & 9,540 & 8,842 / 348 / 350 train / validation / test & 
 \end{table}
 
 \paragraph{Expanded supervision and annotation profile.}
-We expanded supervision toward a target of 10,000 unique sentences by combining 2,064 valid unique sentences from the original files with 7,936 new candidates. The new sentences came from cloud, public-sector, and listed-company collections, with selection prioritizing requirement-related keywords. Annotation checks produced two final sets of 9,646 and 9,540 sentences. The selection and exclusion procedure is documented in \hyperref[app:d]{Appendix D}, and the corresponding experiments appear in \hyperref[app:c]{Appendix C}.
+The expanded Codex Silver pool contains 9,540 sentences drawn from earlier supervision and additional cloud, public-sector, and listed-company collections. Selection prioritized requirement-related keywords. The alternative annotation channel and inclusion decisions produced a separate 9,646-sentence pool. \hyperref[app:d]{Appendix D} records sampling and exclusions; \hyperref[app:c]{Appendix C} reports the two experiment-specific variants.
 
 Two reviewers checked a further stratified sample of 150 newly annotated sentences, called QA150 in the released summaries. The sample contains 60 cloud, 45 public-sector, and 45 listed-company sentences and excludes the original 350 human-coded or reviewed sentences by identifier and normalized text. Both reviewers completed separate submissions with machine annotations visible. Historical human coding and review thus cover 500 unique sentences; the evaluation reference remains the original 150. The separate 50-sentence blinded agreement study is described below and is not added to this historical coverage count.
 
@@ -43,6 +43,6 @@ The supervision and reference subsets differ substantially in composition. Empty
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{figures/benchmark_profile.pdf}
-\caption{Benchmark annotation profile. (a) Empirical cumulative input-length distributions, including records with no spans; the horizontal axis is logarithmic. (b) Span-length violins: the main view enlarges 0--20 characters, covering 96.4--100.0\% of spans in each layer; the upper overview retains the full range and labels the maxima. Both views use the same full-data density and equal maximum widths. White dots and thick lines mark medians and interquartile ranges. (c) Within-layer type percentages and span counts. B2 train/dev are the original 2,150/169-record Qwen manifests; Gold150 is the frozen 150-sentence reference. QA150 A/B are the two assisted-review layers of the same additional 150 sentences, shown once in (a). Lengths include punctuation and spaces; repeated B2 records are retained. These profiles describe historical supervision and review components; the independent three-annotator sample and the full expanded pool are not included.}
+\caption{Benchmark annotation profile. (a) Empirical cumulative input-length distributions, including records with no spans; the horizontal axis is logarithmic. (b) Span-length violins: the main view enlarges 0--20 characters, covering 96.4--100.0\% of spans in each layer; the upper overview retains the full range and labels the maxima. Both views use the same full-data density and equal maximum widths. White dots and thick lines mark medians and interquartile ranges. (c) Within-layer type percentages and span counts. B2 train/dev are the original 2,150/169-record Qwen manifests; Gold150 is the frozen 150-sentence reference. QA150 A/B are the two assisted-review layers of the same additional 150 sentences, shown once in (a). Lengths count source Unicode code points, including punctuation and spaces, and are not directly comparable with English token counts; repeated B2 records are retained. These profiles describe historical supervision and review components; the independent three-annotator sample and the full expanded pool are not included.}
 \label{fig:length-distributions-r40}
 \end{figure}

@@ -1,5 +1,7 @@
 # Manuscript revision: annotation workflow and presentation
 
+The [3 October review integration](review_integration_20261003/README.md) records decisions on 48 references and 58 writing suggestions, including evidence limits.
+
 The abstract now leads with the measured Qwen adaptation result and span-length diagnostics; see the [3 October Results revision](abstract_results_focus_20261003/README.md).
 
 Current title: *Chinese-SkillSpan: a dataset and annotation framework for competency span extraction from Chinese job advertisements*.
@@ -32,13 +34,13 @@ Figure 4 now shows five traceable original corpus records with all four L/K/S/T 
 
 | Figure 2 | 6 | `fig:coding-detail` |
 
-| Figure 3 | 8 | `fig:length-distributions-r40` |
+| Figure 3 | 9 | `fig:length-distributions-r40` |
 
-| Table 2 | 9 | `tab:annotation-lineage` |
+| Table 2 | 7 | `tab:annotation-lineage` |
 
 | Figure 4 | 10 | `fig:illustrative-annotations` |
 
-| Table 3 | 12 | `tab:quality-main` |
+| Table 3 | 11 | `tab:quality-main` |
 
 | Table 4 | 14 | `tab:training-settings` |
 
@@ -74,7 +76,7 @@ Figure 4 now shows five traceable original corpus records with all four L/K/S/T 
 
 | Table 19 | 34 | `tab:external-native` |
 
-| Table 20 | 35 | `tab:external-gnehm` |
+| Table 20 | 34 | `tab:external-gnehm` |
 
 | Table 21 | 35 | `tab:external-kompetencer-classification` |
 

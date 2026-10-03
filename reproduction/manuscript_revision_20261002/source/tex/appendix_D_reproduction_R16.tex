@@ -4,7 +4,7 @@
 \label{sec:extension-provenance}
 \label{sec:display-archive-r14}
 
-The public \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/REPRODUCIBILITY.md}{reproduction guide} separates three tasks: inspecting released results, scoring saved predictions, and rerunning training or inference. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/reproduction/PAPER_INDEX.md}{paper-to-file index} links each table and figure to its supporting materials. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/PAPER_NAMES.md}{resource naming guide} maps manuscript terms to exact file names and model identifiers.
+Table~\ref{tab:component-access} summarizes the available materials and supported checks. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/REPRODUCIBILITY.md}{reproduction guide} provides entry points for inspecting results, rescoring predictions, and rerunning models; its \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/reproduction/PAPER_INDEX.md}{paper-to-file index} maps tables and figures to supporting files.
 
 The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/README.md}{supporting record index} links calculation details, per-run scores, and configurations to their protocols; the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/36f009fab01b8433355cb7ef5af8fad02c6cc519/reproduction/process_archive_20260924/README.md}{earlier process archive} preserves exploratory subsets and version history. Qwen adapters and frozen predictions are available in the model-reproduction archive identified in Data Availability. These records support traceability but do not supply all training inputs or establish full reproduction. Table~\ref{tab:component-access} distinguishes access and verification levels.
 
@@ -19,13 +19,13 @@ A post hoc audit of the complete frozen expanded-Silver files found that their h
 \subsection{Resource Access and Sampling Scope}
 \label{sec:resource-access}
 \input{tex/review20260923/access_matrix}
-The September 21 audit verified the complete expanded files against their recorded hashes. The files remain author-held; these checks establish file identity, but neither public access nor successful retraining.
+
 
 
 \paragraph{Expansion sampling.}
 Preparation retained 2,064 valid unique sentences from the original supervision files and selected 7,936 new candidates: 3,174 cloud, 2,381 public-sector, and 2,381 listed-company sentences. Selection prioritized requirement-related keywords within each source and used fixed hash ranking with seed 20260913. Processing removed HTML and whitespace, split advertisements into sentence units, and kept normalized lengths of 8--400 characters. Matching sentences were excluded against existing corpus splits, supervision, human-review sets, and the available 3.2-million-sentence dump used for the paper's domain pretraining. The comparison key applies NFC, removes whitespace, and trims specified edge punctuation. Annotations use the prepared strings. These checks concern sentence matches under that key and do not establish advertisement-level or semantic near-duplicate isolation.
 
-The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/36f009fab01b8433355cb7ef5af8fad02c6cc519/reproduction/process_archive_20260924/source/tex/appendix_D_reproduction_R16.tex}{preparation and audit records} document the comparison-key function and checked pretraining dumps. The paper-main dump contains 3.2 million lines, but its content hash was not retained. Two other local dumps, not used for exclusion, contain 143 and 4,919 selected-sentence matches. The checks therefore do not establish exclusion from every possible pretraining source.
+The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/36f009fab01b8433355cb7ef5af8fad02c6cc519/reproduction/process_archive_20260924/source/tex/appendix_D_reproduction_R16.tex}{preparation and audit records} document the comparison-key function and checked pretraining dumps. The paper-main dump contains 3.2 million lines, but its content hash was not retained. Two other local dumps, not used for exclusion, contain 143 and 4,919 selected-sentence matches. The retained records do not resolve whether matches in these other dumps entered the reported pretraining run.
 
 \input{tex/review20260923/source_stages}
 

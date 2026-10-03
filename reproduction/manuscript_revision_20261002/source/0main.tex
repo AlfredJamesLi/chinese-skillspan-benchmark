@@ -141,10 +141,10 @@
 %% domain-adaptive pretraining; large language models; ESCO-informed taxonomy.
 
 \begin{abstract}
-\par\noindent\rev{\textbf{Background.} A Chinese competency extraction benchmark must preserve source wording while addressing ambiguous span boundaries, coordination, and context-dependent categories.}
+\par\noindent\rev{\textbf{Background.} Chinese job advertisements express competencies through coordinated phrases and context-dependent terms. Comparing extraction systems requires consistent decisions about their character boundaries and types.}
 \par\noindent\rev{\textbf{Methods.} We developed Chinese-SkillSpan from a corpus of 22,840 sentences across four recruitment collections. Character-level annotations distinguish language, knowledge, occupational skills, and transversal competences. An ESCO-informed handbook was refined through human coding, disagreement analysis, and adjudication to specify annotation scope, boundaries, and types. The resource separates a frozen human reference from LLM-assisted Silver supervision. Silver quality checks combined automated structural validation with human review of selected samples before and after bulk annotation. Three annotators independently applied the final handbook to a separate random sample, blinded to machine suggestions and one another's labels. Prompted models, supervised adaptation, and multilingual encoders provided empirical comparisons.}
 \par\noindent\rev{\textbf{Results.} Silver-supervised Qwen adaptation improved typed exact micro-F1 on the human reference from a no-adapter baseline of 0.361 to $0.540\pm0.035$ (mean $\pm$ sample SD across three training seeds) under fixed inference rules. Each adapted model also improved exact recall across all assessed span-length groups. Independent blinded coding showed higher agreement on boundaries alone than on typed spans, identifying type assignment as an additional source of annotation difficulty.}
-\par\noindent\rev{\textbf{Conclusions.} Original-text spans, a versioned handbook, and distinct human and Silver annotation layers support interpretable model comparisons and analysis of extraction errors. Human-reference results concern data used in guideline development; generalization to unseen advertisements requires independent testing.}
+\par\noindent\rev{\textbf{Conclusions.} Chinese-SkillSpan pairs source-text spans with explicit annotation rules and separate human and Silver labels, enabling model comparisons and inspection of boundary and type errors. Human-reference results concern data used in guideline development; generalization to unseen advertisements requires independent testing.}
 \end{abstract}
 
 % External benchmark results are integrated into the main experiments and Appendix E.
@@ -201,13 +201,13 @@ The funder had no role in study design, data collection and analysis, manuscript
 The authors declare that they have no competing interests.
 
 \section{Acknowledgments}
-OpenAI Codex assisted language polishing, LaTeX formatting, and code preparation; OpenAI's image-generation tool (\texttt{image\_gen}) assisted the schematic artwork in Figure~\ref{fig:macro-micro} and its revision under author direction. These tools were used in September 2026; their model-version identifiers were not retained. The authors take responsibility for the manuscript, references, code, and figures, including verification of AI-assisted content. Language models used in annotation and experiments are documented in the methods and reproduction materials.
+OpenAI Codex assisted language polishing, LaTeX formatting, and code preparation; OpenAI's image-generation tool (\texttt{image\_gen}) assisted the schematic artwork in Figure~\ref{fig:macro-micro} and its revision under author direction. These tools were used in September and October 2026; their model-version identifiers were not retained. The authors take responsibility for the manuscript, references, code, and figures, including verification of AI-assisted content. Language models used in annotation and experiments are documented in the methods and reproduction materials.
 
 % Funding role and competing interests confirmed by the author on 2026-09-18.
 
 %% Keep ordinary widow/club penalties in the reference list.
 \begingroup
-\widowpenalty=3000
+\widowpenalty=10000
 \clubpenalty=3000
 \bibliography{9Reference}
 \endgroup
