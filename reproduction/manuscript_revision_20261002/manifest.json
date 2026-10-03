@@ -37,7 +37,7 @@
   },
   "files_sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "72d1eda9722ceeb69453db34cc25e651bf2f222bcfbd2b310982118bb768515b",
+    "Chinese_SkillSpan_revised_20261002.pdf": "608d6b0bb5c3afbadb2a53992c90eece38e513d61dc504e7301b138604218ae7",
     "README.md": "0a13f5367c09b3f80b9d2cbeb061a5ba46d77ae36d89d687236f4f77948193c1",
     "source/0main.tex": "d6d2d69a11ca5bf2d57ffbb98d002b4ab113d8b5b32ebb412c8942ff7c918eb4",
     "source/1Introduction.tex": "329ebdc54469adb5da2454b823af2eb7980578ac876b929f76bb82208d4b6b5b",
@@ -91,7 +91,7 @@
     "title_benchmark_alignment_20261003/edits.json": "bc66a8e8092632854a76f6802bdfa7f77a630c854b6a0671e70647d37a236c61",
     "title_benchmark_alignment_20261003/README.md": "5ad747549c9a8b5df13251aac4974bdd6cb669b9af00e07422a5bb16c3f201ca",
     "source/tex/external_benchmarks/paper_tables_appendix.tex": "4c077b2b685bfddbe01fcfc53ee23905a0e42d39a7f4f663050277c06017e6ca",
-    "source/tex/review20260923/model_identity.tex": "97843fbabdb35ef25b8c81317ca346b6e3493039037edcacadf0d9e6e005bdb3",
+    "source/tex/review20260923/model_identity.tex": "9260c859b91c629c7473409c61d8f417c62ecb4f09f1cda7f839ef0b4860ff5b",
     "source/tex/student_protocol_R12.tex": "070cd135433046966c07f6c8cead472ea06e18fab62ea81c909aaf60d2534d3e",
     "short_line_polish_20261003/README.md": "b9c6703ec74295ec3a75987535ee0640da93dcc7cfae74c36427803c155f75c0",
     "short_line_polish_20261003/edits.json": "a3614093badd83e87934589050ecfa2bf34223cf79569b1c96e604162f71db9e",
@@ -1167,5 +1167,11 @@
     "pages": 39,
     "pdf_sha256": "72d1eda9722ceeb69453db34cc25e651bf2f222bcfbd2b310982118bb768515b",
     "change": "Recorded the author-confirmed official Grok model used for QA150 suggestions; results unchanged."
+  },
+  "api_note_trim": {
+    "date": "2026-10-04",
+    "pages": 39,
+    "pdf_sha256": "608d6b0bb5c3afbadb2a53992c90eece38e513d61dc504e7301b138604218ae7",
+    "change": "Condensed Table 14 note to service-reported GPT/Claude names; access routes and detailed reproduction notes retained."
   }
 }
