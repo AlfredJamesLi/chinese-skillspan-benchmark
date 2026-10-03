@@ -17,7 +17,7 @@
       25,
       30
     ],
-    "pdf_sha256": "89cc70568596de914990ac2c6c255e0df1f8299f9cd9a42abe85e447de0bc0a5",
+    "pdf_sha256": "ddb12aa723ce63a50945e4b1e71a9e1f1de943b95b4133f5822978ec334f7df1",
     "passed": true,
     "examples_checked": 5,
     "source_spans_and_types_unchanged": true,
@@ -37,10 +37,10 @@
   },
   "files_sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "89cc70568596de914990ac2c6c255e0df1f8299f9cd9a42abe85e447de0bc0a5",
-    "README.md": "7f7855ee0bff4379c83c1e4d93bf5e0fa781d54bcc671beb0f7648a6612a24aa",
-    "source/0main.tex": "e2ac0636e32c6d0786f97a6e7c4e8ca61cfaf7b5129b801cf90ce40d271e6b0a",
-    "source/1Introduction.tex": "ee2ad488c1ecb60bbff59c64e913d72bfb64ec0b08103f245f524ea2ea1acf22",
+    "Chinese_SkillSpan_revised_20261002.pdf": "ddb12aa723ce63a50945e4b1e71a9e1f1de943b95b4133f5822978ec334f7df1",
+    "README.md": "7c03a99832587b42c0ce765dba70952391071b8a7b07fcdc0799f3de6e901af5",
+    "source/0main.tex": "75a542c7a0e24d5088cd5061272c2dcc26a7fc5d3bda540e78a988a6767f40dd",
+    "source/1Introduction.tex": "941e1520a88d6ae8522c35a39dcc439691fba267bce05a39d724a53ea6c94a21",
     "source/2Framework.tex": "9d87c1189db193f5c18e5bc8b7568914684258edb9abafba6c24ddca94afdbeb",
     "source/3Experiments.tex": "0a6a02b17b1f8ffac09a0390e46639868e22a616f6ec44adeea2f2f390633715",
     "source/6Conclusion.tex": "4cf6c47c5b4ffec79604d1f0c6b2c663fd07561a63e2406f29989ef44c97940a",
@@ -77,7 +77,8 @@
     "company_translation_20261003/README.md": "7803fad5811ccd6f33808f41de06aff413b50827608e077934a86267ca6077c6",
     "chinese_text_audit_20261003/README.md": "6f32943543dfe16acaa2fedcdcd134c0a291af622d2075007113d13cef7d7ef9",
     "inline_glosses_20261003/README.md": "4d5443162c9932cbd591eacd5d5084bed6ca79791d040bf8250b3a68f12f55a5",
-    "abstract_contributions_20261003/README.md": "196f2263e2f144dbd21dcdc60d629192d35d1ddcbcebf58729b9625733f2b311"
+    "abstract_contributions_20261003/README.md": "196f2263e2f144dbd21dcdc60d629192d35d1ddcbcebf58729b9625733f2b311",
+    "competency_terminology_20261003/README.md": "9693cb4aa874f5f3536d6deed3a447c2411c5f0cc9ac5649715da1f32b3bcffc"
   },
   "figure1_arrow_cleanup_validation": {
     "passed": true,
@@ -197,5 +198,19 @@
     "abstract_word_count": 208,
     "main_sha256": "e2ac0636e32c6d0786f97a6e7c4e8ca61cfaf7b5129b801cf90ce40d271e6b0a",
     "pdf_sha256": "89cc70568596de914990ac2c6c255e0df1f8299f9cd9a42abe85e447de0bc0a5"
+  },
+  "competency_terminology_revision": {
+    "passed": true,
+    "pages": 40,
+    "terminology_sentence_pages": [
+      2
+    ],
+    "only_one_sentence_added": true,
+    "user_online_title_preserved": true,
+    "pdf_sha256": "ddb12aa723ce63a50945e4b1e71a9e1f1de943b95b4133f5822978ec334f7df1",
+    "source_sha256": {
+      "0main.tex": "75a542c7a0e24d5088cd5061272c2dcc26a7fc5d3bda540e78a988a6767f40dd",
+      "1Introduction.tex": "941e1520a88d6ae8522c35a39dcc439691fba267bce05a39d724a53ea6c94a21"
+    }
   }
 }
