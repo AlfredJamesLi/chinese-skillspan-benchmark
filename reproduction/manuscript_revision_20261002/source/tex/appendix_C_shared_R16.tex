@@ -13,16 +13,6 @@ Models return an ID and spans as literal \texttt{text}, zero-based \texttt{occur
 
 Qwen uses deterministic decoding; Kimi uses non-thinking mode at temperature 0.6. DeepSeek output caps are 2,048 tokens without thinking and 8,192 with thinking. Access routes appear in Table~\ref{tab:model-identity}; full configurations accompany the reproduction notes.
 
-
-
-
-
-
-
-
-\paragraph{Output validity.}
-Qwen without an adapter has 69 partially rejected responses; the three adapters have 2, 4, and 1. DeepSeek thinking has 18 whole-response format failures. These counts do not separate formatting effects from other contributions to F1. All outcomes are scored under the parser rules; the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/output_outcomes.tex}{complete output-status ledger} lists all configurations and failure categories.
-
 \paragraph{Parser and matching conventions.}
 The parser resolves literal spans to source offsets, sorts candidates by start offset and original output order, and keeps the first compatible candidate. Later duplicates, same-boundary type conflicts, and overlaps are rejected. Partial responses retain accepted spans; fully rejected or malformed responses become empty predictions. Identifier coverage is checked across all supplied sentences before scoring.
 

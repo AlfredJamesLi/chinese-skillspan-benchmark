@@ -37,8 +37,8 @@
   },
   "files_sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "20954c5ef4f47ac9a255345d8db1883bff8d7d1a93bd7b873874c8c8055f11f6",
-    "README.md": "f2e4850147daa0ab507e4bf4d78dfcedfef539eb0e81dff40c45e1a7449ed1a6",
+    "Chinese_SkillSpan_revised_20261002.pdf": "3bd8fefa183f1707b24d0074dbed1a4086b70dde0d79bb555bdb5cd650dab957",
+    "README.md": "0a13f5367c09b3f80b9d2cbeb061a5ba46d77ae36d89d687236f4f77948193c1",
     "source/0main.tex": "d6d2d69a11ca5bf2d57ffbb98d002b4ab113d8b5b32ebb412c8942ff7c918eb4",
     "source/1Introduction.tex": "329ebdc54469adb5da2454b823af2eb7980578ac876b929f76bb82208d4b6b5b",
     "source/2Framework.tex": "8a1a51716db45fde7407c6c6216679e7fbfb30b5857573a315d288f7ed76cf6d",
@@ -49,7 +49,7 @@
     "source/tex/annotation_quality_R12.tex": "703f0f7c98f80be7233757e4f5172cb4920ea1f7d856cc167dee9746bb1ad8b1",
     "source/tex/appendix_A_guide_R19.tex": "8257a052a26e36c132830eed2bf82fd6c3d659d5c7610cf1f4d563b71ec2ac0d",
     "source/tex/appendix_B_quality_R16.tex": "dc6fb1d7483f85e52b30467b7108822f02fa486d6ffef30dfa2db88be10c5c91",
-    "source/tex/appendix_C_shared_R16.tex": "0f98f51a4b0f5fdf4370a65358f4e072919005bb17193c55c053c3a938791fa8",
+    "source/tex/appendix_C_shared_R16.tex": "6795d6ff8055603b373433411d83e61fc1ea027417a7fec949d15575d2e90aed",
     "source/tex/appendix_D_reproduction_R16.tex": "94ead686e3aa6d8e75491b8b0ad6e9ef4e175aa223226988d67f9e762ef59b94",
     "source/tex/coding_detail_no_counts.tex": "5ec3aac478e52c70eebcc7de615243207ea2ce61000024b074c69e583c36cefd",
     "source/tex/qwen_diagnostics_round2.tex": "0e9d8e169d0dd264f53689eb789469c4139c2ed88c7a8db1a84f2ba4842baeee",
@@ -1155,5 +1155,11 @@
     "pages": 39,
     "pdf_sha256": "20954c5ef4f47ac9a255345d8db1883bff8d7d1a93bd7b873874c8c8055f11f6",
     "change": "Removed the extra snapshot qualification from the official Codex teacher row; recorded identifier and all results unchanged."
+  },
+  "output_counts_trim": {
+    "date": "2026-10-04",
+    "pages": 39,
+    "pdf_sha256": "3bd8fefa183f1707b24d0074dbed1a4086b70dde0d79bb555bdb5cd650dab957",
+    "change": "Removed the output-validity counts paragraph; archived counts, scoring rules and experimental scores retained."
   }
 }
