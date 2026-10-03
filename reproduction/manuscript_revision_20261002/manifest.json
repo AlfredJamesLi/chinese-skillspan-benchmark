@@ -17,7 +17,7 @@
       25,
       30
     ],
-    "pdf_sha256": "0502e42549b62ac29f7ed897b375c335fcb49ed962badef702ab13ebf69617e4",
+    "pdf_sha256": "70d87fa25c19a86a34ff24bbce582ee9f534a712495c81a3e18fc2f1748b6ced",
     "passed": true,
     "examples_checked": 5,
     "source_spans_and_types_unchanged": true,
@@ -37,7 +37,7 @@
   },
   "files_sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "0502e42549b62ac29f7ed897b375c335fcb49ed962badef702ab13ebf69617e4",
+    "Chinese_SkillSpan_revised_20261002.pdf": "70d87fa25c19a86a34ff24bbce582ee9f534a712495c81a3e18fc2f1748b6ced",
     "README.md": "e120e59bc805722c681ba8a5dd1ad49bd6e9d0da5955b5ceb7e8614997ece88c",
     "source/0main.tex": "90b8d2b74c59843ba6030da3e7369ebb89f576b18d283b7ddc2fbaf9d1f1a900",
     "source/1Introduction.tex": "329ebdc54469adb5da2454b823af2eb7980578ac876b929f76bb82208d4b6b5b",
@@ -73,7 +73,7 @@
     "source/figures/annotation_examples_corpus_20261003.json": "9d99da294f86f3674c151a2ce0f87f756e1280da8f3d66943e59dce6f5dd62de",
     "corpus_examples_20261003/README.md": "dbc0c82581da6df925eb43bf926c519275830745555b6dd2a7d48e48ff2c7c28",
     "corpus_examples_20261003/provenance.json": "9d99da294f86f3674c151a2ce0f87f756e1280da8f3d66943e59dce6f5dd62de",
-    "source/9Reference.bib": "b8157a406ac5066b55bc0a1171ef1243dd22230939189d9d7c158770e9bb8716",
+    "source/9Reference.bib": "fbde25d9aab6a5644bc6f01029eff363fff1c7013b9635b9cc943b2dff978fe7",
     "company_translation_20261003/README.md": "7803fad5811ccd6f33808f41de06aff413b50827608e077934a86267ca6077c6",
     "chinese_text_audit_20261003/README.md": "6f32943543dfe16acaa2fedcdcd134c0a291af622d2075007113d13cef7d7ef9",
     "inline_glosses_20261003/README.md": "4d5443162c9932cbd591eacd5d5084bed6ca79791d040bf8250b3a68f12f55a5",
@@ -94,7 +94,8 @@
     "source/tex/review20260923/model_identity.tex": "cc413d48ecec3c8f7919f92f8cf33f6d75d0b20ab9b3eda6e9bae5d0cd080066",
     "source/tex/student_protocol_R12.tex": "070cd135433046966c07f6c8cead472ea06e18fab62ea81c909aaf60d2534d3e",
     "short_line_polish_20261003/README.md": "b9c6703ec74295ec3a75987535ee0640da93dcc7cfae74c36427803c155f75c0",
-    "short_line_polish_20261003/edits.json": "a3614093badd83e87934589050ecfa2bf34223cf79569b1c96e604162f71db9e"
+    "short_line_polish_20261003/edits.json": "a3614093badd83e87934589050ecfa2bf34223cf79569b1c96e604162f71db9e",
+    "qwen_reference_20261003/README.md": "f3e9be37a90ce544720532c700bc62b799356822f7077bbdbe5922d365c850f2"
   },
   "figure1_arrow_cleanup_validation": {
     "passed": true,
@@ -995,5 +996,19 @@
       ],
       "full_text_line_scan": true
     }
+  },
+  "qwen_reference_revision": {
+    "passed": true,
+    "pages": 39,
+    "only_changed_source": "9Reference.bib",
+    "source_sha256": "fbde25d9aab6a5644bc6f01029eff363fff1c7013b9635b9cc943b2dff978fe7",
+    "pdf_sha256": "70d87fa25c19a86a34ff24bbce582ee9f534a712495c81a3e18fc2f1748b6ced",
+    "citation_pages": [
+      13
+    ],
+    "reference_page": 37,
+    "versioned_arxiv_link_verified": true,
+    "other_50_bibliography_entries_unchanged": true,
+    "cross_references_unchanged": true
   }
 }
