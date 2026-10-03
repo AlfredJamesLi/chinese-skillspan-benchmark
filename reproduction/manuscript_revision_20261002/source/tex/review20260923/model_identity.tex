@@ -7,15 +7,15 @@
 Role & Recorded identifier & Access and configuration \\
 \midrule
 Original teacher & \texttt{gpt-6-astra} & Official OpenAI Codex; adopted Silver labels. \\
-GPT (API) & \texttt{gpt-5.6-terra} & Third-party API gateway. \\
-Claude (API) & Claude Sonnet 4.5 & Third-party API gateway. \\
+GPT (API) & \texttt{gpt-5.6-terra} & API. \\
+Claude (API) & Claude Sonnet 4.5 & API. \\
 DeepSeek (API) & \texttt{deepseek-v4-pro} & Official \href{https://api.deepseek.com}{DeepSeek API}; non-thinking/thinking, 2,048/8,192-token output caps. \\
 Kimi (API) & \texttt{kimi-k2.6} & Official \href{https://api.moonshot.cn}{Moonshot API}; non-thinking; temperature 0.6. \\
 Qwen baseline / LoRA & Qwen2.5-14B-Instruct & Local weights; deterministic decoding; output cap 2,048. Original Hub commit not recorded; archived file hashes identify the supplied artifacts. \\
 JobBERT-zh & Released initialization and B2 continuation & Local encoder and inherited CRF; initialization-selection history incomplete. \\
-Expansion annotation & OpenAI Codex / API gateway & Adopted Codex labels; gateway pool used only for supplementary comparison. \\
+Expansion annotation & OpenAI Codex / API & Adopted Codex labels; alternative pool used only for supplementary comparison. \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-GPT and Claude model names are those reported by the API service.
+GPT and Claude model names are those reported by the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/PAPER_NAMES.md#api-access}{API service}.
 \end{table}

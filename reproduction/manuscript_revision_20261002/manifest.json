@@ -37,8 +37,8 @@
   },
   "files_sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "608d6b0bb5c3afbadb2a53992c90eece38e513d61dc504e7301b138604218ae7",
-    "README.md": "0a13f5367c09b3f80b9d2cbeb061a5ba46d77ae36d89d687236f4f77948193c1",
+    "Chinese_SkillSpan_revised_20261002.pdf": "b39b39d7af6ecf5993ff30fcbbf01cd40d2639a3ff53f9fe256b66dbe20fde8f",
+    "README.md": "cea313a694c5e0c73861df28819464fddd151717b604e05b0f2a8bb10a15e456",
     "source/0main.tex": "d6d2d69a11ca5bf2d57ffbb98d002b4ab113d8b5b32ebb412c8942ff7c918eb4",
     "source/1Introduction.tex": "329ebdc54469adb5da2454b823af2eb7980578ac876b929f76bb82208d4b6b5b",
     "source/2Framework.tex": "8a1a51716db45fde7407c6c6216679e7fbfb30b5857573a315d288f7ed76cf6d",
@@ -50,7 +50,7 @@
     "source/tex/appendix_A_guide_R19.tex": "8257a052a26e36c132830eed2bf82fd6c3d659d5c7610cf1f4d563b71ec2ac0d",
     "source/tex/appendix_B_quality_R16.tex": "301e57135403d5d41d89f50858f723d3b9457e5c1ceb61cc0a62951cbf8349dc",
     "source/tex/appendix_C_shared_R16.tex": "6795d6ff8055603b373433411d83e61fc1ea027417a7fec949d15575d2e90aed",
-    "source/tex/appendix_D_reproduction_R16.tex": "94ead686e3aa6d8e75491b8b0ad6e9ef4e175aa223226988d67f9e762ef59b94",
+    "source/tex/appendix_D_reproduction_R16.tex": "72bc6060a3b33193927bc3f4acb847b43ea30dcdb3aa57e975792f6817a83b9d",
     "source/tex/coding_detail_no_counts.tex": "5ec3aac478e52c70eebcc7de615243207ea2ce61000024b074c69e583c36cefd",
     "source/tex/qwen_diagnostics_round2.tex": "0e9d8e169d0dd264f53689eb789469c4139c2ed88c7a8db1a84f2ba4842baeee",
     "source/tex/representative_annotations_main.tex": "24cd494d7a021618c5e320d44b7013228463bc8c498fd1c607bf5d3ae55952ec",
@@ -91,7 +91,7 @@
     "title_benchmark_alignment_20261003/edits.json": "bc66a8e8092632854a76f6802bdfa7f77a630c854b6a0671e70647d37a236c61",
     "title_benchmark_alignment_20261003/README.md": "5ad747549c9a8b5df13251aac4974bdd6cb669b9af00e07422a5bb16c3f201ca",
     "source/tex/external_benchmarks/paper_tables_appendix.tex": "4c077b2b685bfddbe01fcfc53ee23905a0e42d39a7f4f663050277c06017e6ca",
-    "source/tex/review20260923/model_identity.tex": "9260c859b91c629c7473409c61d8f417c62ecb4f09f1cda7f839ef0b4860ff5b",
+    "source/tex/review20260923/model_identity.tex": "c4ebab3b4e435c07497dbcf5139b29378bc738d36524ae05b540c6dce18c9313",
     "source/tex/student_protocol_R12.tex": "070cd135433046966c07f6c8cead472ea06e18fab62ea81c909aaf60d2534d3e",
     "short_line_polish_20261003/README.md": "b9c6703ec74295ec3a75987535ee0640da93dcc7cfae74c36427803c155f75c0",
     "short_line_polish_20261003/edits.json": "a3614093badd83e87934589050ecfa2bf34223cf79569b1c96e604162f71db9e",
@@ -1173,5 +1173,11 @@
     "pages": 39,
     "pdf_sha256": "608d6b0bb5c3afbadb2a53992c90eece38e513d61dc504e7301b138604218ae7",
     "change": "Condensed Table 14 note to service-reported GPT/Claude names; access routes and detailed reproduction notes retained."
+  },
+  "api_access_consolidation": {
+    "date": "2026-10-04",
+    "pages": 39,
+    "pdf_sha256": "b39b39d7af6ecf5993ff30fcbbf01cd40d2639a3ff53f9fe256b66dbe20fde8f",
+    "change": "Simplified manuscript access wording and centralized API channel and informal manual-check notes in PAPER_NAMES.md."
   }
 }
