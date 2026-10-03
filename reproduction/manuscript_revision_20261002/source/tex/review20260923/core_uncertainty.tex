@@ -1,0 +1,14 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Paired typed exact-F1 differences on Gold150, with conditional 95\% sentence-bootstrap intervals. All failures remain in the scored predictions.}
+\label{tab:core-paired}
+\begin{tabularx}{\linewidth}{@{}Lrr@{}}
+\toprule Comparison & Difference & 95\% interval \\\midrule
+GPT (API) minus DeepSeek non-thinking & $+0.020$ & $[-0.026, 0.064]$ \\
+Qwen LoRA 42 minus no adapter & $+0.138$ & $[0.071, 0.208]$ \\
+Qwen LoRA 43 minus no adapter & $+0.202$ & $[0.132, 0.276]$ \\
+Qwen LoRA 44 minus no adapter & $+0.197$ & $[0.127, 0.271]$ \\
+Qwen LoRA seed mean minus no adapter & $+0.179$ & $[0.113, 0.249]$ \\
+\bottomrule
+\end{tabularx}
+\end{table}

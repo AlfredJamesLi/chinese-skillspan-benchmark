@@ -16,13 +16,15 @@ Current manuscript: **Chinese-SkillSpan: a benchmark for competency span extract
 | Human reference | 150 sentences, 663 spans | Frozen targets used in guideline development; diagnostic model evaluation |
 | Original Silver-plus pool | 2,451 records | LLM-generated labels |
 | Released Qwen B2 split | 2,150 training / 169 development | Matched Qwen adaptation study |
-| Expanded Codex pool | 9,540 retained sentences | Later experiment; final partitions are not fully released |
+| Adopted expanded Codex pool | 9,540 retained sentences | Final adopted expansion; complete partitions are not publicly released |
 | Historical human coding and review | 500 unique sentences | Reference construction and quality checks; not 500 Gold test sentences |
 | Independent blinded agreement study | 50 sentences; three annotators | Final-handbook agreement; separate from historical coverage and not a model test set |
 
 Terminology follows the [annotation and training guide](docs/terminology.md). Manuscript numbers follow the [display-precision policy](docs/numerical_precision.md); source result files retain their original precision.
 
 The task uses flat character spans with four types: language (L), knowledge (K), occupational skills (S), and transversal competences (T). The categories are ESCO-informed; the task does not assign ESCO concept IDs.
+
+The authors confirm that the adopted Silver labels were generated through official OpenAI Codex, with the original teacher recorded as `gpt-6-astra`. The alternative expanded annotation pool is retained only for supplementary comparison. API baseline predictions were evaluated under a frozen protocol and checked by offline rescoring; recorded identifiers and access routes are listed in the [resource naming guide](PAPER_NAMES.md).
 
 ## Get started
 

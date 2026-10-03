@@ -8,7 +8,7 @@ Use these names when reading the manuscript. Exact paths stay unchanged for repr
 |---|---|
 | Human reference | [150-sentence evaluation set](data/gold150/README.md) |
 | Qwen B2 supervision | [2,150/169 training/development split](data/silver_plus_v6a_nocross/README.md) |
-| Expanded Silver | [Later Codex/proxy experiments](reproduction/expanded_silver/README.md) |
+| Expanded Silver | [Adopted Codex and supplementary expansion experiments](reproduction/expanded_silver/README.md) |
 | JobBERT initialization / B2 continuation | [Model guide](docs/models.md) |
 | Shared-guideline protocol | [Evaluation instructions](reproduction/EVALUATION_ENTRY.md) |
 | Historical coding and assisted review | [Agreement guide](reproduction/agreement/README.md) |
@@ -26,11 +26,11 @@ Short names in the manuscript are display aliases. Original file paths, experime
 | model | Qwen | `Qwen2.5-14B-Instruct` | Model full name at first use; Qwen later. Display alias only; do not change model IDs or weight paths. |
 | model | Qwen (no adapter) | `no_adapter; Qwen2.5-14B-Instruct without project adapter` | Same baseline prediction across current Qwen comparisons. Keep prediction keys and files. |
 | model | Qwen LoRA | `Qwen2.5-14B-Instruct with B2 LoRA` | Keep seed 42/43/44 distinct. Keep LoRA_42/LoRA_43/LoRA_44 keys and checkpoints. |
-| model | Claude | `Claude Sonnet 4.5` | Version retained at first use. Display alias; preserve recorded access metadata. |
+| model | Claude (API) | `Claude Sonnet 4.5` | Version retained at first use. Display alias; preserve recorded access metadata. |
 | model | DeepSeek | `DeepSeek-V4-Pro; deepseek-v4-pro` | Non-thinking/thinking are configurations of the same model. Preserve API model ID, mode, and output cap; never merge the two rows. |
 | model | Kimi | `Kimi k2.6` | Version retained at first use. Display alias; preserve recorded configuration. |
-| model | GPT proxy | `gpt-5.6-terra` | Proxy-returned identifier; provider routing/checkpoint not independently verified. Never rename this to an asserted official GPT model; preserve raw metadata. |
-| model | annotation-model configuration | `gpt-6-astra` | Recorded annotation-model identifier, distinct from the GPT proxy evaluated configuration. Keep original annotation-model metadata; do not infer model equivalence. |
+| model | GPT (API) | `gpt-5.6-terra` | Service-reported identifier; see the access note below. Preserve recorded request and response metadata. |
+| model | OpenAI Codex annotation | `gpt-6-astra` | Official Codex access confirmed by the authors for adopted Silver labels. This identifier does not pin an exact provider snapshot; it is distinct from the evaluated GPT (API) configuration. |
 | model | JobBERT-zh initialization | `https://huggingface.co/AlfredJames/jobbert-zh` | Released 3M domain-adapted encoder with inherited V4 CRF. Keep published URL and model repository ID. |
 | model | JobBERT-zh continuation | `https://huggingface.co/AlfredJames/jobbert-zh-v6a` | Current B2 continuation; default released checkpoint is seed 42. Keep published URL and repository ID; do not replace initialization. |
 | experiment | primary JobBERT configuration | `v6a` | 2156 train / 169 dev; earlier versus revised labels. Documentation alias only; preserve manifest names. |
@@ -59,7 +59,7 @@ Short names in the manuscript are display aliases. Original file paths, experime
 - Keep the primary data, frozen metadata, source IDs, experiment keys and public model URLs unchanged. Prefer readable documentation links and aliases over renaming these files.
 - The illustrated workflow retains the full Qwen label as a self-contained model identification. Its name maps to the same Qwen alias.
 - The Dual15 export supports independent submissions within the QA100 review design; it does not establish blind raw-text coding.
-- GPT proxy and the annotation-model configuration are recorded identifiers, not independently verified official model identities.
+- GPT (API) and Claude (API) were accessed through a third-party API gateway; their upstream model versions were not independently verified. Other baselines used their recorded provider endpoints or local weights. Frozen-protocol scoring checks establish reported extraction scores, not upstream identity. Official Codex annotation access is based on author confirmation.
 - Existing historical notes may use canonical identifiers; preserve those records and link to this guide instead of mass replacement.
 
 The CSV mapping is in `reproduction/paper_names.csv`. The containing Git commit identifies this documentation version.

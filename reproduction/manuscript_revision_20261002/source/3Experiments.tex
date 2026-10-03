@@ -7,7 +7,7 @@ The evaluation compares prompted extraction, measures gains from Silver-supervis
 
 The original supervision experiments train and select models on Silver data and score them against the fixed human reference. JobBERT uses 2,156 training and 169 development records. Six training records match three development texts after NFC normalization; removing them gives Qwen's 2,150/169 split. Repeated texts remain within training. Neither split contains reference identifiers or complete NFC-normalized reference sentences. Partitioning is at sentence level, so different sentences from one advertisement may occur in different splits. Scoring preserves the original sentence text and its character offsets for matching predicted and reference spans.
 
-Expanded experiments use sets of 8,842/348/350 and 8,943/351/352 training, validation, and test sentences, respectively. Both combine earlier supervision with additional annotations, but differ in annotation channel and the examples retained after checking. Records retained after the channel replacement keep their split assignments. For Qwen, Silver-validation exact F1 selects the checkpoint, Silver-test F1 measures agreement with held-out generated labels, and the human reference provides an additional evaluation. Reference sentences are excluded from gradients and checkpoint selection. Variants and results are in \hyperref[app:c]{\mbox{Appendix~C}}; split checks are in \hyperref[app:d]{\mbox{Appendix~D}}.
+Supplementary expansion experiments use 8,842/348/350 training, validation, and test sentences from the adopted Codex pool, and 8,943/351/352 from the alternative pool. Both combine earlier supervision with additional annotations, but differ in annotation channel and the examples retained after checking. Records retained after the channel replacement keep their split assignments. For Qwen, Silver-validation exact F1 selects the checkpoint, Silver-test F1 measures agreement with held-out generated labels, and the human reference provides an additional evaluation. Reference sentences are excluded from gradients and checkpoint selection. Variants and results are in \hyperref[app:c]{\mbox{Appendix~C}}; split checks are in \hyperref[app:d]{\mbox{Appendix~D}}.
 
 \subsection{Evaluation Metrics}
 
@@ -45,7 +45,7 @@ Inference-only and expanded-pool results are single runs unless otherwise stated
 
 JobBERT-zh provides a sequence-labeling baseline with a Chinese recruitment-domain-pretrained encoder and a CRF head. We compare Qwen2.5-14B-Instruct (Qwen)~\citep{qwen2025report} with and without a project LoRA adapter~\citep{hu2022lora} for generative extraction.
 
-The shared-guideline inference comparison includes GPT proxy, Claude Sonnet 4.5 (Claude), DeepSeek-V4-Pro (DeepSeek), Kimi k2.6 (Kimi), and Qwen. DeepSeek is evaluated with thinking enabled and disabled, giving six configurations. GPT proxy uses a third-party service. \hyperref[app:c]{Appendix~C} records service identifiers, access routes, and inference settings.
+The shared-guideline inference comparison includes GPT (API), Claude (API; Sonnet 4.5), DeepSeek-V4-Pro (DeepSeek), Kimi k2.6 (Kimi), and Qwen. DeepSeek is evaluated with thinking enabled and disabled, giving six configurations. \hyperref[app:c]{Appendix~C} records service identifiers, access routes, and inference settings.
 
 \input{tex/student_protocol_R12}
 
@@ -56,7 +56,7 @@ The shared-guideline inference comparison includes GPT proxy, Claude Sonnet 4.5 
 
 \subsection{Inference on the Human Reference}
 
-GPT proxy achieved the highest typed exact micro-F1 among the six configurations, followed by DeepSeek with thinking disabled (Table~\ref{tab:gold150-shared-r7}). Their paired difference is 0.020, with a 95\% sentence-bootstrap interval of $[-0.026, 0.064]$ (Table~\ref{tab:core-paired}). The interval includes zero, so the point scores do not establish a stable ordering. These are comparisons of the recorded configurations, which use shared instructions but different inference budgets.
+GPT (API) achieved the highest typed exact micro-F1 among the six configurations, followed by DeepSeek with thinking disabled (Table~\ref{tab:gold150-shared-r7}). Their paired difference is 0.020, with a 95\% sentence-bootstrap interval of $[-0.026, 0.064]$ (Table~\ref{tab:core-paired}). The interval includes zero, so the point scores do not establish a stable ordering. These are comparisons of the recorded configurations, which use shared instructions but different inference budgets.
 
 
 
@@ -82,6 +82,6 @@ The three-annotator study shows that character agreement alone understates the d
 
 The no-adapter Qwen score rises from 0.361 under exact matching to 0.470 under overlap-tolerant matching (Table~\ref{tab:gold150-shared-r7}). This difference shows how boundary tolerance affects the evaluation. The prediction--reference examples in \hyperref[app:c]{Appendix C} illustrate boundary and type mismatches, but have not been adjudicated into a linguistic error taxonomy.
 
-Agreement with generated labels does not by itself establish agreement with human annotations. The expanded Qwen run achieves 0.809 on its Silver test and 0.585 on the human reference (Table~\ref{tab:expanded-silver-main}). The two sets differ in both texts and targets, so the gap cannot estimate Silver-label error, but it illustrates why both evaluations are needed.
+Agreement with generated labels does not by itself establish agreement with human annotations. The Qwen run using the adopted expanded Codex pool achieves 0.809 on its Silver test and 0.585 on the human reference (Table~\ref{tab:expanded-silver-main}). The two sets differ in both texts and targets, so the gap cannot estimate Silver-label error, but it illustrates why both evaluations are needed.
 
 Matched Qwen runs provide the clearest adaptation evidence because inference is fixed. JobBERT and expansion studies jointly change labels, selection, or source composition, so they cannot isolate those effects. Type, length, and empty-sentence diagnostics qualify aggregate scores.

@@ -24,6 +24,8 @@ The [title-alignment update](title_benchmark_alignment_20261003/README.md) align
 
 The [paragraph-layout revision](short_line_polish_20261003/README.md) removes conspicuously short prose endings through wording changes. Experimental values, equations, references, and annotation-rule meanings are retained.
 
+The 4 October update uses GPT (API) and Claude (API) as display names, identifies the adopted Codex expansion and supplementary alternative, and preserves access metadata in Appendix C. Experimental values are unchanged. The current PDF also retains the page-10 paragraph and page-27 float-layout corrections.
+
 ## Current table and figure positions
 
 Figure 4 now shows five traceable original corpus records with all four L/K/S/T types. It replaces the short handbook illustrations. Source IDs, excerpt ranges and preserved historical labels are documented in [the provenance note](corpus_examples_20261003/README.md).
@@ -68,7 +70,7 @@ Figure 4 now shows five traceable original corpus records with all four L/K/S/T 
 
 | Table 14 | 26 | `tab:model-identity` |
 
-| Figure 5 | 27 | `fig:qwen-diagnostics` |
+| Figure 5 | 28 | `fig:qwen-diagnostics` |
 
 | Table 15 | 28 | `tab:expanded-silver-main` |
 
@@ -76,7 +78,7 @@ Figure 4 now shows five traceable original corpus records with all four L/K/S/T 
 
 | Table 17 | 31 | `tab:source-stages` |
 
-| Table 18 | 32 | `tab:external-common-ci` |
+| Table 18 | 33 | `tab:external-common-ci` |
 
 | Table 19 | 33 | `tab:external-native` |
 
@@ -84,5 +86,5 @@ Figure 4 now shows five traceable original corpus records with all four L/K/S/T 
 
 | Table 21 | 34 | `tab:external-kompetencer-classification` |
 
-| Table 22 | 34 | `tab:external-nnose` |
+| Table 22 | 35 | `tab:external-nnose` |
 

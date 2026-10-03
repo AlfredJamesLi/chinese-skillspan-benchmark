@@ -28,13 +28,13 @@ JobBERT train / dev & 2,156 / 169 & Matched B1/B2 texts; different labels & Hist
 Qwen B2 train / dev & 2,150 / 169 & 3,646 / 345 spans; 869 / 82 empty & Earlier adapter fitting and selection \\
 Additional dual-review QA & 150 & Both reviewers complete; 101 identical span sets & Quality check of the new Silver portion \\
 Blinded agreement & 50 & Three independent coders; five + 15 training sentences excluded & Agreement analysis only; not a model test set \\
-Expanded Silver (Codex) & 9,540 & 8,842 / 348 / 350 train / validation / test & Silver-based learning and evaluation; additional Gold150 check \\
+Expanded Silver (Codex) & 9,540 & 8,842 / 348 / 350 train / validation / test & Adopted expanded supervision; additional Gold150 check \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
 \paragraph{Expanded supervision and annotation profile.}
-The expanded Codex Silver pool contains 9,540 sentences drawn from earlier supervision and additional cloud, public-sector, and listed-company collections. Selection prioritized requirement-related keywords. The alternative annotation channel and inclusion decisions produced a separate 9,646-sentence pool. \hyperref[app:d]{Appendix D} records sampling and exclusions; \hyperref[app:c]{Appendix C} reports the two experiment-specific variants.
+The adopted Codex pool contains 9,540 sentences from earlier supervision and additional cloud, public-sector, and listed-company collections. Selection prioritized requirement-related keywords. The supplementary 9,646-sentence pool differs in annotation channel and retained records. \hyperref[app:d]{Appendix D} records sampling and exclusions; \hyperref[app:c]{Appendix C} reports the two experiment-specific variants.
 
 Two reviewers checked a further stratified sample of 150 newly annotated sentences, called QA150 in the released summaries. The sample contains 60 cloud, 45 public-sector, and 45 listed-company sentences and excludes the original 350 human-coded or reviewed sentences by identifier and normalized text. Both reviewers completed separate submissions with machine annotations visible. Historical human coding and review thus cover 500 unique sentences; the evaluation reference remains the original 150. The separate 50-sentence blinded agreement study is described below and is not added to this historical coverage count.
 

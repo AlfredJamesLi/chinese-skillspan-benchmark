@@ -26,7 +26,7 @@ Download the [Qwen model-reproduction archive](https://doi.org/10.5281/zenodo.22
 - **Shared-guideline inference:** six configurations evaluated on the 150-sentence human reference.
 - **Matched Qwen adaptation:** 2,150/169 B2 training/development records; no adapter versus three LoRA seeds under the same inference protocol.
 - **JobBERT supervision and selection:** 2,156/169 matched texts with different training and development labels. The publicly released 2,150-row Qwen file is not that 2,156-row manifest.
-- **Expanded Silver:** later Codex and proxy pools, with separate Qwen Silver testing and an additional human-reference check. See [expanded experiments](reproduction/expanded_silver/README.md).
+- **Expanded Silver:** the adopted Codex pool and a supplementary alternative pool, with separate Qwen Silver testing and an additional human-reference check. See [expanded experiments](reproduction/expanded_silver/README.md).
 - **Historical protocols:** [historical results](reproduction/historical_results/README.md) retain the earlier JSON-offset and hybrid-reference studies.
 
 The [resource naming guide](PAPER_NAMES.md) and [file inventory](reproduction/evaluation/materials_inventory.json) resolve original identifiers. The inventory records an earlier audit, not a complete inventory of subsequent releases. The [access matrix](DATA_AVAILABILITY.md) states the current release scope.

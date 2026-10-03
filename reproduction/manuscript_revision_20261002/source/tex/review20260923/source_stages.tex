@@ -1,0 +1,15 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Recovered sampling-stage counts and missing census information. These are sentence counts, not advertisement counts or mutually exclusive industry totals.}
+\label{tab:source-stages}
+\begin{tabularx}{\linewidth}{@{}P{.25\linewidth}P{.26\linewidth}L@{}}
+\toprule Stage & Available counts & Sampling frame / unavailable detail \\
+\midrule
+Original four collections & 22,840; split 17,460/2,143/3,237 & AI, Cloud, public-sector, graduate recruitment. Per-source ad counts, time windows, attrition and complete document mapping not recovered. \\
+Targeted study lineage & 980 conflict-origin + 1,621 other records & 150 reference + 2,451 Silver-plus. This is a selected lineage, not a probability sample. \\
+New expansion candidates & Cloud 3,174; public-sector 2,381; listed-company 2,381 & Requirement-keyword-positive sentences; fixed hash ranking. Earlier B2 contributes 2,064 retained unique sentences. \\
+Replacement channel subset & 2,500 candidates; alternative retains 2,459; Codex retains 2,353 & Respective exclusions: 41 (1.6\%) and 147 (5.9\%). A reason-coded attrition breakdown is not established. \\
+Additional QA150 & 60 / 45 / 45 source quotas & Sampled from new Silver; machine suggestions visible. Does not extend the independent test population. \\
+\bottomrule
+\end{tabularx}
+\end{table}
