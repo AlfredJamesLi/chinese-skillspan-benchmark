@@ -8,7 +8,7 @@ Current title: *Chinese-SkillSpan: a benchmark for competency span extraction in
 
 The introduction clarifies competency-span terminology across L/K/S/T; see the [3 October terminology update](competency_terminology_20261003/README.md).
 
-This 40-page version implements the supervisor's presentation comments and describes independent blinded annotation by three coders. [Read the revised PDF](Chinese_SkillSpan_revised_20261002.pdf).
+This 39-page version implements the supervisor's presentation comments and describes independent blinded annotation by three coders. [Read the revised PDF](Chinese_SkillSpan_revised_20261002.pdf).
 
 The abstract leads with the measured Qwen adaptation result. Chinese examples are paired with English explanations in the main-text example figure, and section openings state the purpose of each analysis. Figure 2 retains the existing illustration style and adds the separate agreement study. The main agreement table presents the formal 50-sentence results; historical coding and assisted review remain in Appendix B. The data-layer and access tables, conclusions, and cross-references have been updated.
 
@@ -22,6 +22,8 @@ The `source` directory contains changed manuscript files and figure assets, not 
 
 The [title-alignment update](title_benchmark_alignment_20261003/README.md) aligns the abstract, introduction, conclusion, Table 1, PDF metadata, and repository entry points. Table 1 summarizes annotation layers; Table 2 retains the detailed counts and data roles.
 
+The [paragraph-layout revision](short_line_polish_20261003/README.md) removes conspicuously short prose endings through wording changes. Experimental values, equations, references, and annotation-rule meanings are retained.
+
 ## Current table and figure positions
 
 Figure 4 now shows five traceable original corpus records with all four L/K/S/T types. It replaces the short handbook illustrations. Source IDs, excerpt ranges and preserved historical labels are documented in [the provenance note](corpus_examples_20261003/README.md).
@@ -30,7 +32,7 @@ Figure 4 now shows five traceable original corpus records with all four L/K/S/T 
 
 |---|---:|---|
 
-| Table 1 | 4 | `tab:related-span` |
+| Table 1 | 3 | `tab:related-span` |
 
 | Figure 1 | 5 | `fig:macro-micro` |
 
@@ -44,43 +46,43 @@ Figure 4 now shows five traceable original corpus records with all four L/K/S/T 
 
 | Table 3 | 11 | `tab:quality-main` |
 
-| Table 4 | 14 | `tab:training-settings` |
+| Table 4 | 13 | `tab:training-settings` |
 
-| Table 5 | 16 | `tab:gold150-shared-r7` |
+| Table 5 | 15 | `tab:gold150-shared-r7` |
 
-| Table 6 | 16 | `tab:core-paired` |
+| Table 6 | 15 | `tab:core-paired` |
 
-| Table 7 | 17 | `tab:gold150-main` |
+| Table 7 | 16 | `tab:gold150-main` |
 
-| Table 8 | 18 | `tab:external-chinese` |
+| Table 8 | 17 | `tab:external-chinese` |
 
-| Table 9 | 18 | `tab:external-common` |
+| Table 9 | 17 | `tab:external-common` |
 
-| Table 10 | 21 | `tab:guide-types` |
+| Table 10 | 20 | `tab:guide-types` |
 
-| Table 11 | 21 | `tab:guide-boundaries` |
+| Table 11 | 20 | `tab:guide-boundaries` |
 
-| Table 12 | 22 | `tab:guide-scope` |
+| Table 12 | 21 | `tab:guide-scope` |
 
-| Table 13 | 25 | `tab:qa150-pairs` |
+| Table 13 | 24 | `tab:qa150-pairs` |
 
-| Table 14 | 27 | `tab:model-identity` |
+| Table 14 | 26 | `tab:model-identity` |
 
-| Figure 5 | 28 | `fig:qwen-diagnostics` |
+| Figure 5 | 27 | `fig:qwen-diagnostics` |
 
-| Table 15 | 29 | `tab:expanded-silver-main` |
+| Table 15 | 28 | `tab:expanded-silver-main` |
 
-| Table 16 | 31 | `tab:component-access` |
+| Table 16 | 30 | `tab:component-access` |
 
-| Table 17 | 32 | `tab:source-stages` |
+| Table 17 | 31 | `tab:source-stages` |
 
-| Table 18 | 34 | `tab:external-common-ci` |
+| Table 18 | 32 | `tab:external-common-ci` |
 
-| Table 19 | 34 | `tab:external-native` |
+| Table 19 | 33 | `tab:external-native` |
 
-| Table 20 | 34 | `tab:external-gnehm` |
+| Table 20 | 33 | `tab:external-gnehm` |
 
-| Table 21 | 35 | `tab:external-kompetencer-classification` |
+| Table 21 | 34 | `tab:external-kompetencer-classification` |
 
-| Table 22 | 35 | `tab:external-nnose` |
+| Table 22 | 34 | `tab:external-nnose` |
 

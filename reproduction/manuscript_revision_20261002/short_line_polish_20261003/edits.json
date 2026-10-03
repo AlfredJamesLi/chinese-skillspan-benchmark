@@ -1,0 +1,764 @@
+[
+  {
+    "file": "0main.tex",
+    "before": "Comparing extraction systems requires consistent decisions about their character boundaries and types.",
+    "after": "Comparing extraction systems requires consistent decisions about which characters form each mention and which competency type it expresses.",
+    "reason": "p1 id4: clarify the two existing decisions in natural prose, lengthening the short Background ending without adding a claim."
+  },
+  {
+    "file": "0main.tex",
+    "before": "Prompted models, supervised adaptation, and multilingual encoders provided empirical comparisons.",
+    "after": "We compared prompted models, supervised adaptation, and multilingual encoders.",
+    "reason": "p1 id5: concise active wording should absorb the short Methods ending."
+  },
+  {
+    "file": "0main.tex",
+    "before": "identifying type assignment as an additional source of annotation difficulty.",
+    "after": "indicating additional difficulty in type assignment.",
+    "reason": "p1 id6: retain the inference but shorten the Results ending."
+  },
+  {
+    "file": "1Introduction.tex",
+    "before": "Keeping the source wording makes boundary and type assignments available for inspection.",
+    "after": "Preserving source wording makes boundary and type assignments inspectable.",
+    "reason": "p2 id7: eliminate isolated final syllable through equivalent shorter wording."
+  },
+  {
+    "file": "1Introduction.tex",
+    "before": "Chinese text normally lacks spaces between words, so tokenization alone cannot resolve these semantic boundaries~\\citep{peng2015weibo,chen2021boundary}. Similar ambiguities occur in other languages~\\citep{nguyen2024rethinking}, but translating their datasets does not determine which Chinese substrings to select. The task calls for explicit, context-sensitive rules; Figure~\\ref{fig:illustrative-annotations} pairs Chinese examples with English explanations.",
+    "after": "Chinese normally lacks word spaces, so tokenization alone cannot resolve these semantic boundaries~\\citep{peng2015weibo,chen2021boundary}. Similar ambiguities occur in other languages~\\citep{nguyen2024rethinking}, but translating their datasets does not determine which Chinese substrings to select. Explicit context-sensitive rules are needed; Figure~\\ref{fig:illustrative-annotations} pairs Chinese examples with English explanations.",
+    "reason": "p2 id8: remove redundant wording across the paragraph while preserving citations, explicit normally qualification and bilingual-figure description."
+  },
+  {
+    "file": "1Introduction.tex",
+    "before": "Character offsets preserve the wording of each mention.",
+    "after": "Character offsets preserve each mention's wording.",
+    "reason": "p2 id9: avoid isolated final syllable with minimal condensation."
+  },
+  {
+    "file": "1Introduction.tex",
+    "before": "We document the role and availability of each subset following guidance on dataset documentation and annotation agreement",
+    "after": "We document each subset's role and availability following guidance on datasets and annotation agreement",
+    "reason": "p3 id10: preserve all three citations while reducing the sentence before the citation cluster."
+  },
+  {
+    "file": "5Relatedwork.tex",
+    "before": "Kompetencer combines manually identified skill and knowledge spans with ESCO-derived fine-grained labels in Danish and English, with manual correction of the distantly supervised Danish test labels",
+    "after": "Kompetencer combines manual skill and knowledge spans with ESCO-derived fine-grained labels in Danish and English; its distantly supervised Danish test labels were manually corrected",
+    "reason": "p3 id11: condense repetition while preserving manual span annotation and test-label correction."
+  },
+  {
+    "file": "5Relatedwork.tex",
+    "before": "recruitment annotation additionally distinguishes knowledge, occupational actions, and transversal competences within each clause.",
+    "after": "recruitment annotation also distinguishes knowledge, occupational actions, and transversal competences in each clause.",
+    "reason": "p3 id12: trim adverb and preposition; root may need further layout tightening if still short."
+  },
+  {
+    "file": "tex/skillspan_style_related.tex",
+    "before": "Chinese-SkillSpan counts and data roles are detailed in Table~\\ref{tab:annotation-lineage}. Materials refer to the cited publications and releases.",
+    "after": "Table~\\ref{tab:annotation-lineage} details Chinese-SkillSpan counts and data roles. Materials refer to the cited publications and releases.",
+    "reason": "p4 id13: modest natural caption condensation; no material-availability claim is changed."
+  },
+  {
+    "file": "2Framework.tex",
+    "before": "These categories draw on ESCO and the knowledge--skill distinction in the European Qualifications Framework",
+    "after": "These categories draw on ESCO and on the distinction between knowledge and skills in the European Qualifications Framework",
+    "reason": "p5 id27: make the relationship explicit while extending the moderately short citation-ending line."
+  },
+  {
+    "file": "tex/coding_detail_no_counts.tex",
+    "before": "Historical coverage remains 500 unique sentences; the new sample is not added to the 150-sentence reference or used for model testing.",
+    "after": "Historical coverage remains 500 unique sentences. The new sample neither extends the 150-sentence reference nor serves as a model test set.",
+    "reason": "p6 id28: retain both independence/role constraints while slightly expanding the caption ending naturally."
+  },
+  {
+    "file": "tex/silver_plus_methods.tex",
+    "before": "Training sizes refer to actual experiment manifests; the separate agreement sample assesses coding consistency only.",
+    "after": "Training sizes follow experiment manifests; the separate agreement sample measures coding consistency only.",
+    "reason": "p7 id29: remove unnecessary qualifiers in the table caption."
+  },
+  {
+    "file": "2Framework.tex",
+    "before": "Coordinated activities are split only when each remains interpretable; a shared action and its objects stay together. Figure~\\ref{fig:illustrative-annotations} illustrates these distinctions.",
+    "after": "Coordinated activities are split only when each remains interpretable; a shared action and its objects stay together (Figure~\\ref{fig:illustrative-annotations}).",
+    "reason": "p8 id45 screenshot: combine the illustrative cross-reference with the statement it supports; unchanged rule and reference."
+  },
+  {
+    "file": "2Framework.tex",
+    "before": "It can stay outside coordinated items when each item remains interpretable in context. Neither a conjunction nor an experience qualifier alone determines the boundary.",
+    "after": "It can stay outside coordinated items if each remains interpretable in context. Neither conjunctions nor experience qualifiers alone determine boundaries.",
+    "reason": "p8 id46 screenshot: compress two sentences while preserving both conditional tests."
+  },
+  {
+    "file": "tex/silver_plus_methods.tex",
+    "before": "These profiles describe historical supervision and review components; the independent three-annotator sample and the full expanded pool are not included.",
+    "after": "These historical supervision and review profiles exclude the independent three-annotator sample and the full expanded pool.",
+    "reason": "p9 id48: concise caption ending retains the exclusions."
+  },
+  {
+    "file": "2Framework.tex",
+    "before": "Appendices A and D identify the handbook versions, annotation channels, and inclusion decisions.",
+    "after": "Appendices A and D record handbook versions, annotation channels, and inclusion decisions.",
+    "reason": "p11 id49: modest condensation; may require further layout tuning."
+  },
+  {
+    "file": "tex/annotation_quality_R12.tex",
+    "before": "Historical coding and review used different samples and handbook versions (\\hyperref[app:b]{Appendix B}), so their scores do not measure a longitudinal change in independent reliability.",
+    "after": "Historical coding and review used different samples and handbook versions (\\hyperref[app:b]{Appendix B}); their scores cannot track changes in independent reliability over time.",
+    "reason": "p11 id50: preserve the historical-score noncomparability constraint in clearer prose."
+  },
+  {
+    "file": "tex/annotation_quality_R12.tex",
+    "before": "Frozen labels and diagnostics accompany the \\href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261002}{reproduction materials}.",
+    "after": "The \\href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261002}{reproduction materials} include frozen labels and diagnostics.",
+    "reason": "p12 id56: active access statement; same link and materials."
+  },
+  {
+    "file": "2Framework.tex",
+    "before": "The materials are provided for academic research and peer review under the reuse conditions stated in Data Availability.",
+    "after": "The materials support academic research and peer review under the reuse terms in Data Availability.",
+    "reason": "p12 id57: shorten to remove isolated final syllable; reuse scope retained."
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "Chinese systems are scored on the shared human reference; Silver-target and external-task evaluations retain their own datasets and protocols.",
+    "after": "Chinese systems share the human reference; Silver-target and external-task evaluations retain separate datasets and protocols.",
+    "reason": "p12 id58: remove duplication without merging evaluation datasets."
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "Scoring retains the original sentence strings and character offsets.",
+    "after": "Scoring preserves the original sentence text and its character offsets.",
+    "reason": "p12 id59: equivalent clearer wording may slightly extend the borderline ending; root should inspect actual layout."
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "\\hyperref[app:c]{Appendix C} identifies the two variants and reports their results; \\hyperref[app:d]{Appendix D} documents split checks.",
+    "after": "\\hyperref[app:c]{Appendix C} describes both variants and their results; \\hyperref[app:d]{Appendix D} records split checks.",
+    "reason": "p12 id60: retain both links and functions while shortening the end of the paragraph."
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "Typed relaxed micro-F1 allows boundary differences through one-to-one greedy matching of same-type spans with intersection-over-union (IoU) of at least 0.5:",
+    "after": "Typed relaxed micro-F1 uses one-to-one greedy matching of same-type spans with intersection-over-union (IoU) of at least 0.5:",
+    "reason": "P13 ID61, 9.1%末行：删去定义中已由IoU体现的重复铺垫，保留算法与阈值。"
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "Boundary-only scores with types collapsed are secondary diagnostics.",
+    "after": "Boundary-only scores collapse types for secondary analysis.",
+    "reason": "P13 ID62, 7.7%末行：压缩同义表述，保持仅为次要边界诊断。"
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "For experiments with three training seeds, we report the mean and sample standard deviation of the per-seed scores:",
+    "after": "Across three training seeds, we report the mean and sample standard deviation:",
+    "reason": "P13 ID63, 19.9%末行：去掉重复的seed措辞，公式及统计定义不动。"
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "Qwen2.5-14B-Instruct (Qwen)~\\citep{qwen2025report} provides generative extraction, with LoRA adaptation~\\citep{hu2022lora} compared against the same model without a project adapter.",
+    "after": "For generative extraction, we compare Qwen2.5-14B-Instruct (Qwen)~\\citep{qwen2025report} with and without a project LoRA adapter~\\citep{hu2022lora}.",
+    "reason": "P13 ID64,15.7%末行：保留同模型、有无项目adapter对照和两项引用，缩短句式。"
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "GPT proxy denotes the configuration accessed through a third-party service. \\hyperref[app:c]{Appendix C} records service identifiers, access routes, and inference settings.",
+    "after": "GPT proxy uses a third-party service. \\hyperref[app:c]{Appendix~C} records service identifiers, access routes, and inference settings.",
+    "reason": "P13 ID65,18.4%末行：第三方代理含义不变，缩短定义。"
+  },
+  {
+    "file": "tex/student_protocol_R12.tex",
+    "before": "Recorded training settings for the original JobBERT and Qwen training comparisons. Both select checkpoints by development typed exact F1; implementation and selection records accompany the reproduction notes.",
+    "after": "Original JobBERT and Qwen training settings. Both select checkpoints by development typed exact F1; reproduction notes retain implementation and selection records.",
+    "reason": "P14 ID66,35.5%图注末行：保留original范围、选择标准和记录入口，删除冗余training comparisons。"
+  },
+  {
+    "file": "tex/student_protocol_R12.tex",
+    "before": "Full service settings and output checks are given in \\hyperref[app:c]{Appendix C}.",
+    "after": "Service settings and output checks appear in \\hyperref[app:c]{Appendix~C}.",
+    "reason": "P14 ID72,9.9%末行：压缩并将Appendix与C不换行连接。"
+  },
+  {
+    "file": "tex/external_benchmarks/paper_methods.tex",
+    "before": "Macro-F1 gives L, represented by only two reference spans, one quarter of its weight.",
+    "after": "L has only two reference spans but receives one quarter of macro-F1 weight.",
+    "reason": "P15 ID73,7.5%末行：保留稀有L类别等权局限。"
+  },
+  {
+    "file": "tex/external_benchmarks/paper_methods.tex",
+    "before": "For each external task, paired sentence-bootstrap intervals summarize the mean ESCOXLM-R minus XLM-R difference conditional on the three trained seeds. We use 2,000 resamples with seed 20260921 and report training-seed SD separately. The intervals do not account for advertisement clustering or multiple comparisons.",
+    "after": "For each external task, paired sentence-bootstrap intervals estimate the mean ESCOXLM-R minus XLM-R difference conditional on three trained seeds. We use 2,000 resamples (seed 20260921) and report training-seed SD separately. Intervals do not adjust for advertisement clustering or multiple comparisons.",
+    "reason": "P15 ID74,36.1%末行：压缩句式，保留条件区间、seed、重抽样次数、聚类和多重比较局限。"
+  },
+  {
+    "file": "tex/external_benchmarks/paper_methods.tex",
+    "before": "The datasets' languages and annotation schemes also differ, so their absolute scores do not measure relative extraction difficulty across languages.",
+    "after": "Differences in language and annotation scheme prevent interpreting absolute scores as relative extraction difficulty.",
+    "reason": "P15 ID75,46.4%末行：保留跨语言绝对分数不能视为难度的限制。"
+  },
+  {
+    "file": "tex/external_benchmarks/paper_methods.tex",
+    "before": "For the Chinese encoder contrast, we additionally resampled the same 150 sentences jointly across both models and all three fixed seeds, using 10,000 draws (seed 20260924). Each draw recomputes per-seed micro-F1 and then averages the paired differences. This post hoc diagnostic interval describes reference-sentence sampling uncertainty; it does not establish population generalization or account for advertisement clustering.",
+    "after": "For the Chinese encoder contrast, we jointly resampled the same 150 sentences across both models and all three fixed seeds, using 10,000 draws (seed 20260924). Each draw recomputes per-seed micro-F1 and averages the paired differences. This post hoc interval quantifies reference-sentence sampling uncertainty without establishing population generalization or accounting for advertisement clustering.",
+    "reason": "P15 ID76,44.9%末行：精简方法叙述，所有抽样单位、共同抽样、固定seed、次数及限制保留。"
+  },
+  {
+    "file": "tex/silver_plus_results.tex",
+    "before": "These are end-to-end gains; semantic extraction and output-format learning are not isolated.",
+    "after": "These end-to-end gains do not isolate semantic extraction from output-format learning.",
+    "reason": "P16 ID92,39.9%末行：语义相同的主动短句。"
+  },
+  {
+    "file": "tex/silver_plus_results.tex",
+    "before": "Fine-tuning comparisons on the human reference ($n=150$). Typed exact micro-F1 is reported as mean $\\pm$ sample SD over training seeds 42, 43, and 44; the Qwen no-adapter baseline is a single run. ",
+    "after": "Fine-tuning on the human reference ($n=150$): typed exact micro-F1, mean $\\pm$ sample SD over training seeds 42, 43, and 44. The Qwen no-adapter baseline is a single run.",
+    "reason": "P17 ID93,14.9%图注末行：保留150、三seed及单次baseline区别，减少重复词。"
+  },
+  {
+    "file": "tex/silver_plus_results.tex",
+    "before": "Per-seed Qwen results are retained in the \\href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{run ledger}.",
+    "after": "The \\href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{run ledger} retains per-seed Qwen results.",
+    "reason": "P17 ID100,31.0%注释末行：主动句缩短，URL和内容不变。"
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "The lower expanded JobBERT scores remain unexplained by the available diagnostics.",
+    "after": "Available diagnostics do not explain the lower expanded JobBERT scores.",
+    "reason": "P17 ID101,12.0%末行：保留诊断未解决状态。"
+  },
+  {
+    "file": "tex/external_benchmarks/paper_results.tex",
+    "before": "This sensitivity does not replace the stated four-type metric.",
+    "after": "This check does not replace the four-type metric.",
+    "reason": "P17 ID102,3.4%末行：明确四类别正式指标不被三类别敏感性检查替代。"
+  },
+  {
+    "file": "tex/external_benchmarks/paper_results.tex",
+    "before": "All seeds were retained, including runs selected early in training. FIJO's comparison is based on only 50 test sentences.",
+    "after": "All seeds were retained, including early-selected runs. FIJO has only 50 test sentences.",
+    "reason": "P18 ID103,47.3%末行：保留全部seed与FIJO小样本限制。"
+  },
+  {
+    "file": "tex/external_benchmarks/paper_results.tex",
+    "before": "\\hyperref[app:e]{Appendix E} reports these experiments with the public-subset MaChAmp reruns, separating classification, retrieval, and extraction scores according to their protocols.",
+    "after": "\\hyperref[app:e]{Appendix~E} reports these and the public-subset MaChAmp reruns, keeping classification, retrieval, and extraction scores separate by protocol.",
+    "reason": "P18 ID104,44.1%末行：维持不同任务协议不混合的含义。"
+  },
+  {
+    "file": "tex/external_benchmarks/paper_tables_main.tex",
+    "before": "Supervised adaptation of multilingual encoders on Gold150 (0--1), mean $\\pm$ sample SD across three seeds.",
+    "after": "Chinese encoder results on Gold150 (0--1): mean $\\pm$ sample SD across three seeds.",
+    "reason": "P18 ID105,18.8%图注末行：具体监督方法在上文及表注保留，标题简写结果对象。"
+  },
+  {
+    "file": "tex/external_benchmarks/paper_tables_main.tex",
+    "before": "Common-protocol typed exact token-span micro-F1 (0--1), mean $\\pm$ sample SD across three seeds.",
+    "after": "Typed exact token-span micro-F1 (0--1), common protocol: three-seed mean $\\pm$ sample SD.",
+    "reason": "P18 ID109,11.9%图注末行：保留统一协议、完整指标、单位和三seed统计量。"
+  },
+  {
+    "file": "6Conclusion.tex",
+    "before": "The blinded agreement results provide evidence about the annotation process, but do not establish model generalization to new advertisement documents or resolve all historical label-version differences.",
+    "after": "Blinded agreement assesses annotation consistency; it neither establishes model generalization to new advertisements nor resolves all historical label-version differences.",
+    "reason": "P19 ID119,35.7%末行：收紧末句，保留盲编不能替代模型泛化与版本兼容证据。"
+  },
+  {
+    "file": "0main.tex",
+    "before": "distinguishes local rescoring from server-reported checkpoint inference.",
+    "after": "separates local rescoring from server-reported checkpoint inference.",
+    "reason": "P20 ID120,30.9%末行：更短同义词，不改变核验层级；对布局作用较小，由root实测决定。"
+  },
+  {
+    "file": "tex/appendix_A_guide_R19.tex",
+    "before": "The archived bilingual manuals and crosswalk accompany the source package; Section A.4 records version boundaries.",
+    "after": "The source package contains the bilingual manuals and crosswalk; Section~A.4 records version boundaries.",
+    "reason": "P20 ID121,32.4%末行：保留源包、双语手册、crosswalk和A.4入口，压缩句式。"
+  },
+  {
+    "file": "tex/appendix_A_guide_R19.tex",
+    "before": "Combined marks indicate adaptation, not a verbatim source rule. Chinese examples and their exact boundaries are project illustrations.",
+    "after": "Combined marks indicate adaptation, not verbatim rules; Chinese examples and exact boundaries are project illustrations.",
+    "reason": "P20 ID122,12.6%末行：保留原始规则非逐字引用与中文实例属项目演示的双重含义。"
+  },
+  {
+    "file": "tex/appendix_A_guide_R19.tex",
+    "before": "Each occupational item below remains identifiable in context; the shared experience qualifier stays outside. Do not retain a covering span as well.",
+    "after": "Each occupational item is identifiable in context; the shared experience qualifier stays outside. Do not add a covering span.",
+    "reason": "P23 ID145,30.6%末行：保留共享经验限定外置及禁止额外覆盖span的规则；不改中文原句。"
+  },
+  {
+    "file": "tex/appendix_B_quality_R16.tex",
+    "before": "Span matching and character-level agreement use different units; optional category projections are documented in the reproduction materials.",
+    "after": "Span matching and character-level agreement use different units; reproduction materials document optional category projections.",
+    "reason": "p24 candidate148: remove the one-word materials ending without changing the optional status of projections."
+  },
+  {
+    "file": "tex/appendix_B_quality_R16.tex",
+    "before": "The estimate describes this reviewed sample, not an unbiased corpus-wide accuracy estimate.",
+    "after": "The estimate describes this reviewed sample; it does not provide an unbiased estimate of accuracy across the corpus.",
+    "reason": "p24 candidate149: a clearer full sentence modestly extends the 49%-width final line while preserving the sampling limitation."
+  },
+  {
+    "file": "tex/appendix_B_quality_R16.tex",
+    "before": "Machine suggestions were visible, so separate submissions provide reviewer--reviewer agreement under assisted review rather than blind agreement.",
+    "after": "Machine suggestions were visible, so submissions measure assisted reviewer--reviewer agreement rather than blind agreement.",
+    "reason": "p25 candidate150: concise wording removes the isolated ment. ending and retains assisted versus blinded distinction."
+  },
+  {
+    "file": "tex/appendix_B_quality_R16.tex",
+    "before": "They are conditional on the sampled source quotas.",
+    "after": "These intervals condition on the source quotas.",
+    "reason": "p25 candidate151: shorten the caption while retaining conditioning on source quotas; may need further wrapping adjustment."
+  },
+  {
+    "file": "tex/appendix_C_shared_R16.tex",
+    "before": "All outcomes remain included in scoring under the parser rules;",
+    "after": "All outcomes are scored under the parser rules;",
+    "reason": "p26 candidate159, part1: shorten the output-validity paragraph without omitting outcomes."
+  },
+  {
+    "file": "tex/appendix_C_shared_R16.tex",
+    "before": "retains every configuration and failure category.",
+    "after": "lists all configurations and failure categories.",
+    "reason": "p26 candidate159, part2: combine with part1; preserve complete ledger coverage."
+  },
+  {
+    "file": "tex/appendix_C_shared_R16.tex",
+    "before": "Identifier coverage is checked before scoring.",
+    "after": "Identifier coverage is checked across all supplied sentences before scoring.",
+    "reason": "p26 candidate160: specify the existing sentence coverage check, extending the 31%-width ending."
+  },
+  {
+    "file": "tex/appendix_C_shared_R16.tex",
+    "before": "Seed SD describes a separate source of variation.",
+    "after": "Seed SD instead describes variation across the recorded training runs.",
+    "reason": "p27 candidate173: clarify what seed SD measures, extending the 29%-width ending."
+  },
+  {
+    "file": "tex/appendix_C_shared_R16.tex",
+    "before": "The reproduction notes distinguish the available scoring artifacts from the requirements for rerunning model inference.",
+    "after": "The reproduction notes distinguish the scoring artifacts already available from the resources required to rerun model inference.",
+    "reason": "p28 candidate174: extend the borderline short ending while preserving the distinction between available artifacts and inference requirements."
+  },
+  {
+    "file": "tex/appendix_C_shared_R16.tex",
+    "before": "DeepSeek in thinking mode shows higher precision and lower recall than the non-thinking configuration under their respective output budgets.",
+    "after": "Under their respective output budgets, DeepSeek in thinking mode has higher precision and lower recall than the recorded non-thinking configuration.",
+    "reason": "p28 candidate175: modestly expand and clarify the bounded recorded comparison."
+  },
+  {
+    "file": "tex/appendix_C_shared_R16.tex",
+    "before": "Figure~\\ref{fig:qwen-diagnostics} diagnoses the same frozen predictions.",
+    "after": "Figure~\\ref{fig:qwen-diagnostics} examines these frozen predictions.",
+    "reason": "p28 candidate176: remove the isolated tions. ending with less awkward wording."
+  },
+  {
+    "file": "tex/qwen_diagnostics_round2.tex",
+    "before": "Colours and patterns distinguish the runs.",
+    "after": "Colour and pattern identify runs.",
+    "reason": "p28 candidate177: concise figure-caption ending removes the runs. orphan."
+  },
+  {
+    "file": "tex/qwen_diagnostics_round2.tex",
+    "before": "Each seed is evaluated separately on the same test set.",
+    "after": "Results for each training seed are evaluated separately on the same reference sentences.",
+    "reason": "p28 candidate178: clarify evaluation unit and extend the 44%-width ending; the reference remains the same set."
+  },
+  {
+    "file": "tex/qwen_diagnostics_round2.tex",
+    "before": "the corresponding affected-sentence counts are 2, 2, 1, and 0.",
+    "after": "affected sentences number 2, 2, 1, and 0.",
+    "reason": "p29 candidate179: reduce wording around unchanged counts to absorb the isolated numeric line."
+  },
+  {
+    "file": "tex/expanded_silver_results_20260917.tex",
+    "before": "The contrast therefore describes the two resulting training pools rather than an isolated effect of annotation channel.",
+    "after": "The contrast describes the resulting pools rather than an isolated annotation-channel effect.",
+    "reason": "p29 candidate184: compact the same non-causal qualification to absorb a 29%-width last line."
+  },
+  {
+    "file": "tex/appendix_D_reproduction_R16.tex",
+    "before": "Source names in the collection records include MacroData, operated by Chongqing Maherui Information Technology Co., Ltd., and the Recruitment Dataset (ID 163746) on Alibaba Cloud Tianchi.",
+    "after": "Collection records name MacroData, operated by Chongqing Maherui Information Technology Co., Ltd., and the Recruitment Dataset (ID 163746) on Alibaba Cloud Tianchi.",
+    "reason": "p30 candidate185: shorten the lead-in, retaining company and dataset names verbatim and removing the isolated Tianchi."
+  },
+  {
+    "file": "tex/appendix_D_reproduction_R16.tex",
+    "before": "The frozen splits and reported results were retained; the audit does not establish that the validation overlap had no effect. These checks do not establish document-level or semantic near-duplicate isolation.",
+    "after": "The frozen splits and reported results were retained; the audit does not rule out effects of validation overlap. Document-level and semantic near-duplicate isolation remain unestablished.",
+    "reason": "p30 candidate186: concise equivalent caveats remove isolation. orphan, preserving both limitations."
+  },
+  {
+    "file": "tex/review20260923/access_matrix.tex",
+    "before": "No guaranteed access-on-request or exact reconstruction from currently live recruitment pages is asserted.",
+    "after": "Neither access on request nor exact reconstruction from live recruitment pages is guaranteed.",
+    "reason": "p31 candidate199: shorter table note preserves access/reconstruction caveats."
+  },
+  {
+    "file": "tex/appendix_D_reproduction_R16.tex",
+    "before": "The retained records do not resolve whether matches in these other dumps entered the reported pretraining run.",
+    "after": "The records do not resolve whether these other matches entered the reported pretraining run.",
+    "reason": "p31 candidate200: remove redundant words to absorb pretraining run. while retaining uncertainty."
+  },
+  {
+    "file": "tex/appendix_D_reproduction_R16.tex",
+    "before": "Applying revised rules requires a separately versioned annotation release.",
+    "after": "Revised rules require a separately versioned annotation release.",
+    "reason": "p32 candidate208: remove release syllable orphan without changing versioning requirement."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_appendix.tex",
+    "before": "The ICT extraction task differs from the EDU/EXP/LNG extraction and taxonomy-classification pipeline described by \\citet{gnehm2022skills}.",
+    "after": "The ICT task differs from the EDU/EXP/LNG extraction and taxonomy-classification pipeline in \\citet{gnehm2022skills}.",
+    "reason": "p33 candidate209: reduce repetitive extraction/described wording while keeping task distinction and citation."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_appendix.tex",
+    "before": "Our linear-head protocol and compatibility changes are described above. Recorded revisions are listed in the experiment records below.",
+    "after": "The preceding sections describe our linear-head protocol and compatibility changes. The experiment records below list the recorded revisions.",
+    "reason": "p33 candidate210: minor rephrasing extends borderline ending and preserves locations."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_appendix.tex",
+    "before": "preserve code, configurations, predictions, and the detailed checks.",
+    "after": "preserve code, configurations, predictions, and checks.",
+    "reason": "p33 candidate211: remove detailed checks. orphan with minimal compression."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_tables_appendix.tex",
+    "before": "SkillSpan: published single-task TEST references and public-subset MaChAmp reruns (0--1; five seeds).",
+    "after": "SkillSpan test results: published single-task references and MaChAmp reruns on the public HOUSE and TECH subsets (0--1; five seeds).",
+    "reason": "p34 candidate221: specify public subset names to extend short caption ending; all distinctions and seed count retained."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_tables_appendix.tex",
+    "before": "converted from percent and rounded to three decimal places; their HOUSE/TECH rows report development results. Our reruns use MaChAmp",
+    "after": "converted from percent and rounded to three decimals; their HOUSE/TECH rows report development results. Reruns use MaChAmp",
+    "reason": "p34 candidate231: remove ten characters earlier in note to absorb not rerun. without changing results/qualifiers."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_tables_appendix.tex",
+    "before": "Epoch budgets differ between the two models here, unlike in the common-protocol comparison.",
+    "after": "Unlike the common-protocol comparison, these two native-task configurations use different epoch budgets.",
+    "reason": "p34 candidate235: concrete restatement slightly extends 37%-width note ending; may still need layout adjustment."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_A_native.tex",
+    "before": "These experiments retain their task-specific metrics and are separate from the common linear-head protocol.",
+    "after": "These experiments retain task-specific metrics and are reported separately from the experiments using the common linear-head protocol.",
+    "reason": "p35 candidate236: extend borderline short ending while preserving the distinction between experiment families."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_A_native.tex",
+    "before": "NNOSE improved Green but slightly reduced SkillSpan and Sayfullina F1 in these single-seed runs, offering no consistent retrieval benefit.",
+    "after": "NNOSE gave no consistent benefit: these single-seed runs improved Green but slightly reduced SkillSpan and Sayfullina F1.",
+    "reason": "p36 candidate251: condense equivalent conclusion while keeping all dataset directions and single-seed limitation."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_A_native.tex",
+    "before": "identifies uncompleted configurations; no missing result is assigned a zero score.",
+    "after": "lists uncompleted configurations; missing results are not scored as zero.",
+    "reason": "p36 candidate252: shorten sentence to absorb lone score. without changing missingness interpretation."
+  },
+  {
+    "file": "0main.tex",
+    "before": "Silver quality checks combined automated structural validation with human review of selected samples before and after bulk annotation.",
+    "after": "Silver checks combined automated structural validation with human review of samples before and after bulk annotation.",
+    "reason": "p1 id4: reduce by 17 characters to absorb coders.; retain sampled review before and after annotation."
+  },
+  {
+    "file": "1Introduction.tex",
+    "before": "For Chinese advertisements, even a short phrase can require several annotation decisions. A technology name can denote tool use in one clause and knowledge of principles in another. Coordination may express separate activities or share an action that must remain attached to its objects. Chinese normally lacks word spaces, so tokenization alone cannot resolve these semantic boundaries~\\citep{peng2015weibo,chen2021boundary}. Similar ambiguities occur in other languages~\\citep{nguyen2024rethinking}, but translating their datasets does not determine which Chinese substrings to select. Explicit context-sensitive rules are needed; Figure~\\ref{fig:illustrative-annotations} pairs Chinese examples with English explanations.",
+    "after": "Even short Chinese phrases can require several annotation decisions. A technology name can denote tool use in one clause and knowledge of principles in another. Coordination may express separate activities or share an action that must remain attached to its objects. Chinese normally lacks word spaces, so tokenization alone cannot resolve these semantic boundaries~\\citep{peng2015weibo,chen2021boundary}. Similar ambiguities occur in other languages~\\citep{nguyen2024rethinking}, but dataset translation does not determine which Chinese substrings to select. Explicit context-sensitive rules are needed; Figure~\\ref{fig:illustrative-annotations} pairs Chinese examples with English explanations.",
+    "reason": "p2 id5: reduce 33 characters across paragraph, exceeding the 26-character tail."
+  },
+  {
+    "file": "5Relatedwork.tex",
+    "before": "\\paragraph{Skill extraction and recruitment datasets.} Recruitment datasets differ first in what a system must predict. \\citet{sayfullina2018softskills} ask whether a candidate soft-skill phrase refers to an applicant, whereas \\citet{bhola2020retrieving} retrieve skills from a predefined inventory for an entire advertisement. Span extraction locates the words expressing a requirement. Within that task, SkillSpan annotates English SKILL and KNOWLEDGE in two potentially overlapping layers; hard and soft skills describe its coverage rather than its label inventory~\\citep{zhang2022skillspan}. Kompetencer combines manual skill and knowledge spans with ESCO-derived fine-grained labels in Danish and English; its distantly supervised Danish test labels were manually corrected~\\citep{jensen2022kompetencer}. \\citet{gnehm2022skills} extract coarse EDU/EXP/LNG spans before refining skill areas for taxonomy matching.",
+    "after": "\\paragraph{Skill extraction and recruitment datasets.} Recruitment datasets differ in prediction targets. \\citet{sayfullina2018softskills} ask whether a candidate soft-skill phrase refers to an applicant, whereas \\citet{bhola2020retrieving} retrieve skills from a predefined inventory for an entire advertisement. Span extraction locates requirement wording. Within that task, SkillSpan annotates English SKILL and KNOWLEDGE in two potentially overlapping layers; hard and soft skills describe its coverage rather than its label inventory~\\citep{zhang2022skillspan}. Kompetencer combines manual skill and knowledge spans with ESCO-derived fine-grained labels in Danish and English; its distantly supervised Danish test labels were manually corrected~\\citep{jensen2022kompetencer}. \\citet{gnehm2022skills} extract coarse EDU/EXP/LNG spans before refining skill areas for taxonomy matching.",
+    "reason": "p3 id6: reduce 26 characters to absorb taxonomy matching. without removing the German-task description."
+  },
+  {
+    "file": "5Relatedwork.tex",
+    "before": "These tasks provide useful background, but do not specify how recruitment requirements should be divided into LSKT spans.",
+    "after": "These tasks provide background but do not specify how to divide recruitment requirements into LSKT spans.",
+    "reason": "p3 id7: reduce by 15 characters to absorb clause."
+  },
+  {
+    "file": "tex/skillspan_style_related.tex",
+    "before": "Selected recruitment extraction resources: prediction units, annotation layers, and reported materials. Table~\\ref{tab:annotation-lineage} details Chinese-SkillSpan counts and data roles. Materials refer to the cited publications and releases.",
+    "after": "Selected recruitment extraction resources: prediction units, annotation layers, and materials reported in the cited publications and releases. Table~\\ref{tab:annotation-lineage} details Chinese-SkillSpan counts and data roles.",
+    "reason": "p4 id8: expand caption with the existing scope qualification originally stated before the prior title-alignment task; no new access claim."
+  },
+  {
+    "file": "tex/coding_detail_no_counts.tex",
+    "before": "The new sample neither extends the 150-sentence reference nor serves as a model test set.",
+    "after": "The new sample assesses agreement under the final handbook; it neither extends the 150-sentence reference nor serves as a model test set.",
+    "reason": "p6 id22: meaningful expansion clarifies the third branch role, already documented, extending 40% line beyond half width."
+  },
+  {
+    "file": "tex/silver_plus_methods.tex",
+    "before": "Training sizes follow experiment manifests; the separate agreement sample measures coding consistency only.",
+    "after": "Training sizes follow experiment manifests; the separate agreement sample measures coding consistency and does not serve as a model test set.",
+    "reason": "p7 id23: clarify exact limit on the agreement sample with already-established restriction; expand final line beyond half width."
+  },
+  {
+    "file": "2Framework.tex",
+    "before": "Experience expressions require a separate check. Generic work experience and duration alone are excluded.",
+    "after": "Experience requires a separate check; generic work experience and duration alone are excluded.",
+    "reason": "压缩段首以吸收aries残尾，保留后文in context条件。"
+  },
+  {
+    "file": "2Framework.tex",
+    "before": "The bulk annotations followed the handbook available at generation time. Later amendments were recorded separately, leaving completed experiments unchanged.",
+    "after": "Bulk annotation followed the handbook available at generation time. Later amendments were recorded separately; completed experiments remained unchanged.",
+    "reason": "p11 id41: trim 4 characters only insufficient alone; combine with following sentence condensation."
+  },
+  {
+    "file": "2Framework.tex",
+    "before": "The expanded set combined earlier supervision with additional annotations obtained through two access channels.",
+    "after": "The expanded set combined earlier supervision with new annotations from two access channels.",
+    "reason": "p11 id41: alongside preceding edit, remove 24+ characters to absorb inclusion decisions."
+  },
+  {
+    "file": "tex/annotation_quality_R12.tex",
+    "before": "Historical coding and review used different samples and handbook versions (\\hyperref[app:b]{Appendix B}); their scores cannot track changes in independent reliability over time.",
+    "after": "Historical coding and review used different samples and handbook versions (\\hyperref[app:b]{Appendix B}); their scores cannot track independent reliability over time.",
+    "reason": "p11 id42: removes 11 only; pair with preceding sentence condensation."
+  },
+  {
+    "file": "tex/annotation_quality_R12.tex",
+    "before": "Independent coding assesses whether annotators can apply the handbook without machine or peer suggestions; assisted review evaluates proposed labels.",
+    "after": "Independent coding assesses handbook use without machine or peer suggestions; assisted review evaluates proposed labels.",
+    "reason": "p11 id42: combined edits remove 44 characters while preserving distinction between independent coding and assisted review."
+  },
+  {
+    "file": "tex/annotation_quality_R12.tex",
+    "before": "The \\href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261002}{reproduction materials} include frozen labels and diagnostics.",
+    "after": "The \\href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261002}{reproduction materials} include frozen pre-discussion labels and diagnostics for this independent coding study.",
+    "reason": "p12 id48: meaningful access clarification extends 38% ending; does not imply adjudication or new testing."
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "Scoring preserves the original sentence text and its character offsets.",
+    "after": "Scoring preserves the original sentence text and its character offsets for matching predicted and reference spans.",
+    "reason": "p12 id49: expand borderline 47% ending with already-described purpose of offsets, without changing matching rules."
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "\\hyperref[app:c]{Appendix C} describes both variants and their results; \\hyperref[app:d]{Appendix D} records split checks.",
+    "after": "Both variants and their results appear in \\hyperref[app:c]{Appendix C}; split checks are in \\hyperref[app:d]{Appendix D}.",
+    "reason": "p12 id50: only 9-character reduction; also trim redundant introduction below."
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "The expanded experiments use two sets with 8,842/348/350 and 8,943/351/352 training, validation, and test sentences, respectively.",
+    "after": "Expanded experiments use sets of 8,842/348/350 and 8,943/351/352 training, validation, and test sentences, respectively.",
+    "reason": "p12 id50: combined with cross-reference condensation removes 21 characters to absorb records split checks.; digits unchanged."
+  },
+  {
+    "file": "tex/student_protocol_R12.tex",
+    "before": "Service settings and output checks appear in \\hyperref[app:c]{Appendix~C}.",
+    "after": "\\hyperref[app:c]{\\mbox{Appendix~C}} lists service settings and output checks.",
+    "reason": "P14 ID56: move appendix pointer to sentence start and prohibit internal Appendix hyphenation."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_methods.tex",
+    "before": "For each external task, paired sentence-bootstrap intervals estimate the mean ESCOXLM-R minus XLM-R difference conditional on three trained seeds. We use 2,000 resamples (seed 20260921) and report training-seed SD separately. Intervals do not adjust for advertisement clustering or multiple comparisons.",
+    "after": "External-task paired sentence-bootstrap intervals estimate the mean ESCOXLM-R minus XLM-R difference for three fixed trained seeds (2,000 resamples; seed 20260921). We report training-seed SD separately. Intervals omit advertisement clustering and multiple-comparison adjustment.",
+    "reason": "P14 ID57: substantial paragraph reduction; fixed-seed conditionality, unit, resample count, seed and both limits preserved."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_methods.tex",
+    "before": "Differences in language and annotation scheme prevent interpreting absolute scores as relative extraction difficulty.",
+    "after": "Languages and annotation schemes differ, so absolute scores do not rank extraction difficulty.",
+    "reason": "P15 ID58: cut more than the 14%-line ending; same cross-language comparability limit."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_methods.tex",
+    "before": "For the Chinese encoder contrast, we jointly resampled the same 150 sentences across both models and all three fixed seeds, using 10,000 draws (seed 20260924). Each draw recomputes per-seed micro-F1 and averages the paired differences. This post hoc interval quantifies reference-sentence sampling uncertainty without establishing population generalization or accounting for advertisement clustering.",
+    "after": "The Chinese encoder comparison uses 10,000 draws (seed 20260924), jointly resampling the same 150 sentences for both models and all three fixed seeds. Each draw averages paired differences in recomputed per-seed micro-F1. This post hoc interval describes reference-sentence sampling uncertainty, not population generalization, and omits advertisement clustering.",
+    "reason": "P15 ID59: absorb 25% last line via paragraph compression while preserving joint resampling, per-draw micro-F1, fixed seeds and limits."
+  },
+  {
+    "file": "tex/silver_plus_results.tex",
+    "before": "The improvement includes better output compliance: under the same parser, partially rejected responses decrease from 69 without an adapter to 2, 4, and 1 in the adapted runs. These end-to-end gains do not isolate semantic extraction from output-format learning.",
+    "after": "Under the same parser, partially rejected responses fall from 69 without an adapter to 2, 4, and 1 after adaptation. These gains do not separate semantic extraction from output-format learning.",
+    "reason": "P16 ID75: shorten compliance/attribution statements while preserving all counts and unresolved mechanism distinction."
+  },
+  {
+    "file": "tex/silver_plus_results.tex",
+    "before": "A: same base checkpoint, frozen messages, occurrence schema, parser, and decoding settings; B2 development F1 selects each adapter. B: same initial encoder/CRF and matched training/development texts, but both sets of labels change. The split and checkpoint limitations are summarized in \\nameref{sec:limitations}. The \\href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{run ledger} retains per-seed Qwen results.",
+    "after": "A: same base checkpoint, frozen messages, occurrence schema, parser, and decoding; adapters selected by B2 development F1. B: same initial encoder/CRF and matched training/development texts, with both label sets changed. \\nameref{sec:limitations} covers split and checkpoint limitations; the \\href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{run ledger} gives per-seed Qwen scores.",
+    "reason": "P16 ID82: compress whole note sufficiently; all held-fixed conditions and changed training/development labels retained."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_results.tex",
+    "before": "The archived run summaries show mixed effects of domain-pretrained initialization across the external tasks",
+    "after": "Archived runs show mixed effects of domain-pretrained initialization across external tasks",
+    "reason": "P17 ID83: shorten paragraph opening by17 characters to absorb isolated sentences; all50 test sentences and all seeds retained later."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_results.tex",
+    "before": "\\hyperref[app:e]{Appendix~E} reports these and the public-subset MaChAmp reruns, keeping classification, retrieval, and extraction scores separate by protocol.",
+    "after": "\\hyperref[app:e]{Appendix~E} separates classification, retrieval, and extraction protocols for these and public-subset MaChAmp reruns.",
+    "reason": "P17 ID84: compact protocol pointer, preserving all task distinctions and public-subset scope."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_tables_main.tex",
+    "before": "Typed exact token-span micro-F1 (0--1), common protocol: three-seed mean $\\pm$ sample SD.",
+    "after": "Common-protocol typed exact token-span micro-F1 (0--1). Each row reports mean $\\pm$ sample SD across three training seeds for one dataset and annotation stream.",
+    "reason": "P17 ID88: clarify the unit of each row so second caption line is meaningful and substantial; retain full metric, scale, protocol and sample SD."
+  },
+  {
+    "file": "6Conclusion.tex",
+    "before": "Blinded agreement assesses annotation consistency; it neither establishes model generalization to new advertisements nor resolves all historical label-version differences.",
+    "after": "Blinded agreement assesses annotation consistency, not model generalization to new advertisements or compatibility across historical label versions.",
+    "reason": "P19 ID98: cut more than isolated differences; preserve both limitations."
+  },
+  {
+    "file": "0main.tex",
+    "before": "The complete texts and labels for the final 9,540- and 9,646-record pools remain outside the public archives, so the expanded experiments cannot be fully retrained from public inputs alone.",
+    "after": "Complete texts and labels for the final 9,540- and 9,646-record pools remain unavailable for public retraining.",
+    "reason": "P19 ID99: shorten earlier sentence of same paragraph by over60 characters to absorb final 31%-line; preserve full-retraining/public-input limitation and both pool counts."
+  },
+  {
+    "file": "tex/appendix_A_guide_R19.tex",
+    "before": "This later documentation does not replace the handbook versions or labels frozen for the reported studies.",
+    "after": "This documentation does not replace the studies' frozen handbooks or labels.",
+    "reason": "P19 ID100: save over25 characters in same paragraph; exact version/link/crosswalk statement remains."
+  },
+  {
+    "file": "tex/appendix_A_guide_R19.tex",
+    "before": "Each occupational item is identifiable in context; the shared experience qualifier stays outside. Do not add a covering span.",
+    "after": "Each item remains identifiable in context; exclude the shared experience qualifier and do not add a covering span.",
+    "reason": "P22 ID123: remove enough text to absorb span; preserve experience-qualifier and covering-span exclusions."
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "For generative extraction, we compare Qwen2.5-14B-Instruct (Qwen)~\\citep{qwen2025report} with and without a project LoRA adapter~\\citep{hu2022lora}.",
+    "after": "We compare Qwen2.5-14B-Instruct (Qwen)~\\citep{qwen2025report} with and without a project LoRA adapter~\\citep{hu2022lora} for generative extraction.",
+    "reason": "Resolve new model-paragraph overfull by moving the long lead-in behind the cited model comparison; keep generative task, exact model and references."
+  },
+  {
+    "file": "tex/appendix_B_quality_R16.tex",
+    "before": "Character-level Cohen's $\\kappa$ adjusts observed agreement for agreement expected from the two coders' marginal label frequencies:",
+    "after": "Character-level Cohen's $\\kappa$ adjusts observed agreement for agreement expected by chance from the two coders' marginal label frequencies across the source character positions:",
+    "reason": "p23#125: extend equation lead-in with explicit chance agreement and character unit; unchanged definition."
+  },
+  {
+    "file": "tex/appendix_B_quality_R16.tex",
+    "before": "Intervals are percentile 95\\% confidence intervals from 10,000 sentence resamples within source strata (seed 20260917). These intervals condition on the source quotas.",
+    "after": "Percentile 95\\% confidence intervals use 10,000 sentence resamples within source strata (seed 20260917), conditional on the source quotas.",
+    "reason": "p24#126: save 26 characters, retaining percentile intervals, resample count/strata/seed/conditioning."
+  },
+  {
+    "file": "tex/appendix_B_quality_R16.tex",
+    "before": "The resulting observed agreement is",
+    "after": "The resulting observed agreement over retained character positions is",
+    "reason": "p24#132: clarify unit in inline numerical report; no equation or numeric changes."
+  },
+  {
+    "file": "tex/appendix_C_experiments_R16.tex",
+    "before": "Those histories use different output formats and demonstration settings and are not treated as controlled estimates of prompt effects.",
+    "after": "Those histories use different output formats and demonstration settings and therefore do not support controlled estimates of the effects of changing prompts.",
+    "reason": "p25#133: extend 49% ending with the same non-causal qualification."
+  },
+  {
+    "file": "tex/review20260923/model_identity.tex",
+    "before": "Model identity and access roles. Recorded service identifiers do not independently establish a provider's underlying checkpoint.",
+    "after": "Model identity and access roles for the recorded runs. Service identifiers alone do not establish the provider's underlying model checkpoint.",
+    "reason": "p26#134: extend caption to specify recorded runs and model checkpoint, preserving provenance uncertainty."
+  },
+  {
+    "file": "tex/appendix_C_shared_R16.tex",
+    "before": "Qwen without an adapter has 69 partially rejected responses, compared with 2, 4, and 1 for the three adapters.",
+    "after": "Qwen without an adapter has 69 partially rejected responses; the three adapters have 2, 4, and 1.",
+    "reason": "p26#146: remove 11 characters earlier in paragraph to absorb gories.; numerical order and comparison unchanged."
+  },
+  {
+    "file": "tex/expanded_silver_results_20260917.tex",
+    "before": "Differences are calculated before rounding the displayed scores.",
+    "after": "Differences are calculated from unrounded scores; rounding is applied only to the displayed values.",
+    "reason": "p29#150: expand precision explanation without changing convention, filling 49% final line."
+  },
+  {
+    "file": "tex/review20260923/access_matrix.tex",
+    "before": "Component-specific reuse conditions apply. Third-party text is not covered by the authors' annotation permission; model/base-model notices apply separately.",
+    "after": "Reuse conditions vary by component. The authors' annotation permission does not cover third-party text; separate model/base-model notices apply.",
+    "reason": "p31#163: remove 11 characters earlier in note; if insufficient, use alternative below rather than weakening access caveat."
+  },
+  {
+    "file": "tex/review20260923/access_matrix.tex",
+    "before": "Neither access on request nor exact reconstruction from live recruitment pages is guaranteed.",
+    "after": "Access on request and exact reconstruction from live recruitment pages are not guaranteed.",
+    "reason": "p31#163 part2: combine with part1 to shorten further; neither guarantee is introduced."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_appendix.tex",
+    "before": "The ICT task differs from the EDU/EXP/LNG extraction and taxonomy-classification pipeline in \\citet{gnehm2022skills}.",
+    "after": "ICT differs from the EDU/EXP/LNG extraction and taxonomy classification in \\citet{gnehm2022skills}.",
+    "reason": "p32#171: remove 19 characters to bring citation year back onto prior line; retain both task distinctions."
+  },
+  {
+    "file": "tex/external_benchmarks/paper_tables_appendix.tex",
+    "before": "Unlike the common-protocol comparison, these two native-task configurations use different epoch budgets.",
+    "after": "Unlike the common-protocol comparison, these two native-task configurations use different training budgets measured in epochs.",
+    "reason": "p34#193: extend 50% note ending; still explicitly epoch budget, not compute budget."
+  },
+  {
+    "file": "0main.tex",
+    "before": "The funder had no role in study design, data collection and analysis, manuscript preparation, or the decision to submit the article for publication.",
+    "after": "The funder had no role in designing the study, collecting and analysing the data, preparing the manuscript, or deciding whether to submit the article for publication.",
+    "reason": "p35#208: same disclosure in parallel verb forms; grant name and number remain untouched."
+  },
+  {
+    "file": "tex/skillspan_style_related.tex",
+    "before": "Selected recruitment extraction resources: prediction units, annotation layers, and materials reported in the cited publications and releases.",
+    "after": "Selected recruitment resources: prediction units, annotation layers, and reported materials.",
+    "reason": "精简Table1图注，吸收短末行；资料范围仍由表内引用指明。"
+  },
+  {
+    "file": "2Framework.tex",
+    "before": "Bulk annotation followed the handbook available at generation time.",
+    "after": "Bulk annotation used the handbook available at generation time.",
+    "reason": "进一步精简批量标注段，吸收decisions残尾。"
+  },
+  {
+    "file": "2Framework.tex",
+    "before": "The expanded set combined earlier supervision with new annotations from two access channels.",
+    "after": "The expanded set combined earlier supervision with new labels from two access channels.",
+    "reason": "同段精简同义词，保留两条渠道和历史监督。"
+  },
+  {
+    "file": "2Framework.tex",
+    "before": "Appendices A and D record handbook versions, annotation channels, and inclusion decisions.",
+    "after": "Appendices A and D list handbook versions, annotation channels and inclusion decisions.",
+    "reason": "同段精简附录引用句。"
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "Both variants and their results appear in \\hyperref[app:c]{Appendix C}; split checks are in \\hyperref[app:d]{Appendix D}.",
+    "after": "See \\hyperref[app:c]{\\mbox{Appendix~C}} for both variants and results, and \\hyperref[app:d]{\\mbox{Appendix~D}} for split checks.",
+    "reason": "缩短附录指引，同时防止Appendix内部断词。"
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "See \\hyperref[app:c]{\\mbox{Appendix~C}} for both variants and results, and \\hyperref[app:d]{\\mbox{Appendix~D}} for split checks.",
+    "after": "Variants and results are in \\hyperref[app:c]{\\mbox{Appendix~C}}; split checks are in \\hyperref[app:d]{\\mbox{Appendix~D}}.",
+    "reason": "再次精简附录指引，吸收checks残尾并保留链接。"
+  },
+  {
+    "file": "0main.tex",
+    "before": "separates local rescoring from server-reported checkpoint inference.",
+    "after": "separates local rescoring of archived predictions from server-reported checkpoint inference.",
+    "reason": "说明重算对象，适当延长数据可用性末行。"
+  },
+  {
+    "file": "tex/review20260923/access_matrix.tex",
+    "before": "Reuse conditions vary by component. The authors' annotation permission does not cover third-party text; separate model/base-model notices apply.",
+    "after": "Reuse terms vary by component. The authors' annotation permission excludes third-party text; separate model/base-model notices apply.",
+    "reason": "压缩权限说明以吸收guaranteed残尾，保留原限制。"
+  }
+]

@@ -1,0 +1,21 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Model identity and access roles for the recorded runs. Service identifiers alone do not establish the provider's underlying model checkpoint.}
+\label{tab:model-identity}
+\begin{tabularx}{\linewidth}{@{}P{.19\linewidth}P{.32\linewidth}L@{}}
+\toprule
+Role & Recorded identifier & Access and configuration \\
+\midrule
+Original teacher & \texttt{gpt-6-astra} & Recorded annotation identifier; distinct from the evaluated GPT proxy. Exact provider checkpoint unverified. \\
+GPT baseline & \texttt{gpt-5.6-terra} & Third-party proxy; identity unverified. \\
+Claude baseline & Claude Sonnet 4.5 & Proxy access; provider checkpoint unverified. \\
+DeepSeek baseline & \texttt{deepseek-v4-pro} & Provider endpoint; non-thinking/thinking, 2,048/8,192-token output caps. \\
+Kimi baseline & Kimi k2.6 & Provider endpoint; non-thinking; temperature 0.6. \\
+Qwen baseline / LoRA & Qwen2.5-14B-Instruct & Local weights; deterministic decoding; output cap 2,048. Original Hub commit not recorded; archived file hashes identify the supplied artifacts. \\
+JobBERT-zh & Released initialization and B2 continuation & Local encoder and inherited CRF; initialization-selection history incomplete. \\
+Expansion annotation & Codex CLI / API-compatible proxy & Separate access channels; neither denotes a single independently verified model version. \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+The shared protocol was frozen for September 10 execution; the GPT completion record includes a September 11 retry. Per-call metadata, where retained, accompany the raw records. Unspecified dates, decoding fields, and checkpoint identities are not inferred from current service names.
+\end{table}
