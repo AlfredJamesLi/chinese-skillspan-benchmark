@@ -28,7 +28,7 @@ P_{\mathrm{micro}}=\frac{\mathrm{TP}}{\mathrm{TP}+\mathrm{FP}},
 \label{eq:micro-prf}
 \end{equation}
 
-All 150 human-reference sentences are scored. Expanded Qwen experiments also report scores on their Silver validation and test sets. Partially rejected responses retain accepted spans; malformed responses or responses with no accepted spans are scored as empty predictions. Empty--empty sentences add no span counts. \hyperref[app:c]{Appendix C} summarizes parser decisions and matching order and links the full scorer specification. Boundary-only scores collapse types for secondary analysis.
+All 150 human-reference sentences are scored. Expanded Qwen experiments also report scores on their Silver validation and test sets. Partially rejected responses retain accepted spans; malformed responses or responses with no accepted spans are scored as empty predictions. Empty--empty sentences add no span counts. \hyperref[app:c]{Appendix C} summarizes parser decisions and matching order and links the full scorer specification. Boundary exact micro-F1 matches span boundaries after collapsing types. Per-type scores retain the original L/K/S/T labels and include all reference sentences, including sentences without spans of the evaluated type.
 
 Across three training seeds, we report the mean and sample standard deviation:
 
@@ -68,7 +68,7 @@ GPT proxy achieved the highest typed exact micro-F1 among the six configurations
 
 \subsection{Supplementary Analyses}
 
-The Qwen improvements extend across the three reported span-length bins: every adapter increases exact recall in each bin (Figure~\ref{fig:qwen-diagnostics}). False-positive spans on the eight empty-reference sentences also decrease, although the changes vary by seed. Type-level F1, span support, and separate sentence and span counts are shown in the figure.
+The Qwen improvements extend across the three reported span-length bins: every adapter increases exact recall in each bin (Figure~\ref{fig:qwen-diagnostics}). False-positive spans on the eight empty-reference sentences also decrease, although the changes vary by seed. The figure shows individual-seed results; Table~\ref{tab:external-chinese}, panel B, compares aggregated category scores across models.
 
 Exploratory experiments with expanded supervision appear in \hyperref[app:c]{Appendix C}. Those runs change the source composition, annotation targets, and retained examples together. They do not isolate an expansion effect. Available diagnostics do not explain the lower expanded JobBERT scores.
 

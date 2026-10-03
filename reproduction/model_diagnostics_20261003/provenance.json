@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-03",
+  "files": [
+    {
+      "file": "official_scores/xlm-roberta-large/42.json",
+      "source": "reproduction/evidence_review_20260925/rescoring/xlm-roberta-large/42.json",
+      "sha256": "f5cfd711d3ba9c3ea9aae4654cc09fc4c630cb9913642e8de4cf7e65f1ca8580",
+      "kind": "existing official rescoring receipt"
+    },
+    {
+      "file": "official_scores/xlm-roberta-large/43.json",
+      "source": "reproduction/evidence_review_20260925/rescoring/xlm-roberta-large/43.json",
+      "sha256": "83062c6418eff72ee89c0f3656ce9093f6be12eca0a33f1fb90c08a6826d7561",
+      "kind": "existing official rescoring receipt"
+    },
+    {
+      "file": "official_scores/xlm-roberta-large/44.json",
+      "source": "reproduction/evidence_review_20260925/rescoring/xlm-roberta-large/44.json",
+      "sha256": "75778fc8849e4f5d61d049a7a3ec6b54731be785828decc7587835c95c395fdf",
+      "kind": "existing official rescoring receipt"
+    },
+    {
+      "file": "official_scores/esco-xlm-roberta-large/42.json",
+      "source": "reproduction/evidence_review_20260925/rescoring/esco-xlm-roberta-large/42.json",
+      "sha256": "a1cff53f0dd51b00cb9876df6c2c763e7b625cfb4978b89007caf48ee4524684",
+      "kind": "existing official rescoring receipt"
+    },
+    {
+      "file": "official_scores/esco-xlm-roberta-large/43.json",
+      "source": "reproduction/evidence_review_20260925/rescoring/esco-xlm-roberta-large/43.json",
+      "sha256": "eb6ea2b4fdeb282af6c24bbc2a83c19094b86278025ba545cc9bf3d311253654",
+      "kind": "existing official rescoring receipt"
+    },
+    {
+      "file": "official_scores/esco-xlm-roberta-large/44.json",
+      "source": "reproduction/evidence_review_20260925/rescoring/esco-xlm-roberta-large/44.json",
+      "sha256": "7ca20aa19c1ab44d724806fefbf3e4a50091076115cdfe7e70fc72c346d51ea2",
+      "kind": "existing official rescoring receipt"
+    },
+    {
+      "file": "official_scores/qwen_no_adapter/single.json",
+      "sha256": "1a561f3a98811b135ac18d4e803d8864a102bcd029856ffa40c8919386f26e2e",
+      "kind": "new official offline rescoring of frozen Qwen predictions"
+    },
+    {
+      "file": "official_scores/qwen_b2_lora/42.json",
+      "sha256": "4d517af0a0d84a445689dcc8e8eb3840628bc9476b76cad236188c2313b2d9f8",
+      "kind": "new official offline rescoring of frozen Qwen predictions"
+    },
+    {
+      "file": "official_scores/qwen_b2_lora/43.json",
+      "sha256": "3af52e8fdc58f5afc851a8c62f156b4af36fbfaffb79f148d1916c35561b991a",
+      "kind": "new official offline rescoring of frozen Qwen predictions"
+    },
+    {
+      "file": "official_scores/qwen_b2_lora/44.json",
+      "sha256": "61f03acb101ca7c01881e0313ed765c49f942f3b72eea6ea2ff84ab5bfff74c3",
+      "kind": "new official offline rescoring of frozen Qwen predictions"
+    }
+  ],
+  "qwen_archive": "https://doi.org/10.5281/zenodo.22851581",
+  "encoder_archive": "https://doi.org/10.5281/zenodo.22937245",
+  "source_branch_baseline": "ddbbf3d873b59c9f8cb78369f9d0fec9f334db0d"
+}

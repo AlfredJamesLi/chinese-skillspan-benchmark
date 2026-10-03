@@ -1,0 +1,300 @@
+{
+  "kind": "independent offline audit of frozen accepted predictions; no training or model inference",
+  "scorer": {
+    "path": "score_lskt.py",
+    "sha256": "90624fa545434ebe0442c3243709f5e64ef2f95f4ccbacdb5f5d0696b65d69a7",
+    "version": "cnss-lskt-1.2.0",
+    "settings": {
+      "align_mode": "official",
+      "require_exact_id_set": true,
+      "n_boot": 0
+    },
+    "boundary_definition": "Extract typed spans first, then collapse type and exact-match unique coordinates within each sentence; micro-aggregate sentence counts. This is collapsed_exact, not relaxed or token accuracy."
+  },
+  "parser": {
+    "path": "00_freeze/parser_occurrence_v1_1.py",
+    "sha256": "a88e8bd740ac560cacdf777ae95119de34e573dee07a15ba2a52b84ac9e65d05",
+    "matches_freeze_registry": true
+  },
+  "gold": {
+    "path": "00_freeze/gold150_test.jsonl",
+    "sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "n": 150,
+    "spans": 663,
+    "types": {
+      "K": 125,
+      "S": 448,
+      "T": 88,
+      "L": 2
+    },
+    "empty_sentences": 8,
+    "score_format_path": "01_shared_prompt/preds/qwen25-14b-instruct/gold_for_score.jsonl",
+    "score_format_sha256": "5b2e2d8aa2bf2e7df00ca67f2dd7645bfbf963a911eaf62845dae7f5df55c3a7",
+    "original_vs_score_format_id_text_typed_spans_equal": true
+  },
+  "runs": {
+    "no_adapter": {
+      "prediction_path": "01_shared_prompt/preds/qwen25-14b-instruct/pred_for_score.jsonl",
+      "prediction_sha256": "85cfc0ff493cbb97c52c62c6306ad3fc141b9bc9710c667fafe4418f8a8763ea",
+      "sha_matches_new_report": true,
+      "n_scored": 150,
+      "n_missing": 0,
+      "n_extra": 0,
+      "n_duplicate_ids": 0,
+      "text_alignment_ok": true,
+      "no_tag_padding_or_truncation_needed": true,
+      "invalid_bio_continuations": 0,
+      "accepted_duplicate_typed_spans": 0,
+      "accepted_duplicate_coordinates": 0,
+      "parser_replayed_rows": 150,
+      "parser_replay_matches": true,
+      "outcomes": {
+        "ok_nonempty": 69,
+        "partial_rejected": 69,
+        "ok_empty": 11,
+        "all_spans_rejected": 1
+      },
+      "rejected_candidates_by_reason": {
+        "occurrence_oob": 167,
+        "overlap_conflict": 1
+      },
+      "predicted_empty_sentences": 12,
+      "typed_exact": {
+        "tp": 186,
+        "fp": 181,
+        "fn": 477,
+        "f1": 0.3611650485436893
+      },
+      "boundary": {
+        "tp": 213,
+        "fp": 154,
+        "fn": 450,
+        "f1": 0.41359223300970877
+      },
+      "SK_combined_typed_exact": {
+        "tp": 160,
+        "fp": 157,
+        "fn": 413,
+        "f1": 0.3595505617977528
+      },
+      "typed_relaxed": {
+        "precision": 0.659400544959128,
+        "recall": 0.3650075414781297,
+        "f1": 0.4699029126213592,
+        "tp": 242,
+        "fp": 125,
+        "fn": 421,
+        "pred": 367,
+        "gold": 663
+      },
+      "official_and_independent_counts_agree": true,
+      "archived_typed_exact_and_relaxed_reproduced": true
+    },
+    "42": {
+      "prediction_path": "02_sft/infer/seed42/pred_for_score.jsonl",
+      "prediction_sha256": "22033c2f102143f786d29c09ccb1f99d91da6ec0f97eb977e228444869be6a24",
+      "sha_matches_new_report": true,
+      "n_scored": 150,
+      "n_missing": 0,
+      "n_extra": 0,
+      "n_duplicate_ids": 0,
+      "text_alignment_ok": true,
+      "no_tag_padding_or_truncation_needed": true,
+      "invalid_bio_continuations": 0,
+      "accepted_duplicate_typed_spans": 0,
+      "accepted_duplicate_coordinates": 0,
+      "parser_replayed_rows": 150,
+      "parser_replay_matches": true,
+      "outcomes": {
+        "ok_nonempty": 139,
+        "ok_empty": 8,
+        "all_spans_rejected": 1,
+        "partial_rejected": 2
+      },
+      "rejected_candidates_by_reason": {
+        "occurrence_oob": 2,
+        "overlap_conflict": 1
+      },
+      "predicted_empty_sentences": 9,
+      "typed_exact": {
+        "tp": 288,
+        "fp": 202,
+        "fn": 375,
+        "f1": 0.49956634865568084
+      },
+      "boundary": {
+        "tp": 304,
+        "fp": 186,
+        "fn": 359,
+        "f1": 0.5273200346921075
+      },
+      "SK_combined_typed_exact": {
+        "tp": 230,
+        "fp": 172,
+        "fn": 343,
+        "f1": 0.4717948717948718
+      },
+      "typed_relaxed": {
+        "precision": 0.7346938775510204,
+        "recall": 0.5429864253393665,
+        "f1": 0.6244579358196011,
+        "tp": 360,
+        "fp": 130,
+        "fn": 303,
+        "pred": 490,
+        "gold": 663
+      },
+      "official_and_independent_counts_agree": true,
+      "archived_typed_exact_and_relaxed_reproduced": true
+    },
+    "43": {
+      "prediction_path": "02_sft/infer/seed43/pred_for_score.jsonl",
+      "prediction_sha256": "c14f34e0a23e463500cbca1e9747be28fec74ac58495f3a2de338d4bd6dbe564",
+      "sha_matches_new_report": true,
+      "n_scored": 150,
+      "n_missing": 0,
+      "n_extra": 0,
+      "n_duplicate_ids": 0,
+      "text_alignment_ok": true,
+      "no_tag_padding_or_truncation_needed": true,
+      "invalid_bio_continuations": 0,
+      "accepted_duplicate_typed_spans": 0,
+      "accepted_duplicate_coordinates": 0,
+      "parser_replayed_rows": 150,
+      "parser_replay_matches": true,
+      "outcomes": {
+        "ok_nonempty": 136,
+        "ok_empty": 9,
+        "all_spans_rejected": 1,
+        "partial_rejected": 4
+      },
+      "rejected_candidates_by_reason": {
+        "occurrence_oob": 4,
+        "overlap_conflict": 1
+      },
+      "predicted_empty_sentences": 10,
+      "typed_exact": {
+        "tp": 336,
+        "fp": 194,
+        "fn": 327,
+        "f1": 0.5632858340318525
+      },
+      "boundary": {
+        "tp": 356,
+        "fp": 174,
+        "fn": 307,
+        "f1": 0.5968147527242247
+      },
+      "SK_combined_typed_exact": {
+        "tp": 279,
+        "fp": 166,
+        "fn": 294,
+        "f1": 0.5481335952848723
+      },
+      "typed_relaxed": {
+        "precision": 0.7716981132075472,
+        "recall": 0.6168929110105581,
+        "f1": 0.685666387259011,
+        "tp": 409,
+        "fp": 121,
+        "fn": 254,
+        "pred": 530,
+        "gold": 663
+      },
+      "official_and_independent_counts_agree": true,
+      "archived_typed_exact_and_relaxed_reproduced": true
+    },
+    "44": {
+      "prediction_path": "02_sft/infer/seed44/pred_for_score.jsonl",
+      "prediction_sha256": "a90efd6a2704d9ecfb9d7b3fa95534851358db402c6dcbe24bc78d6bc25b9953",
+      "sha_matches_new_report": true,
+      "n_scored": 150,
+      "n_missing": 0,
+      "n_extra": 0,
+      "n_duplicate_ids": 0,
+      "text_alignment_ok": true,
+      "no_tag_padding_or_truncation_needed": true,
+      "invalid_bio_continuations": 0,
+      "accepted_duplicate_typed_spans": 0,
+      "accepted_duplicate_coordinates": 0,
+      "parser_replayed_rows": 150,
+      "parser_replay_matches": true,
+      "outcomes": {
+        "ok_nonempty": 138,
+        "ok_empty": 10,
+        "all_spans_rejected": 1,
+        "partial_rejected": 1
+      },
+      "rejected_candidates_by_reason": {
+        "occurrence_oob": 1,
+        "overlap_conflict": 1
+      },
+      "predicted_empty_sentences": 11,
+      "typed_exact": {
+        "tp": 331,
+        "fp": 192,
+        "fn": 332,
+        "f1": 0.5581787521079258
+      },
+      "boundary": {
+        "tp": 349,
+        "fp": 174,
+        "fn": 314,
+        "f1": 0.5885328836424958
+      },
+      "SK_combined_typed_exact": {
+        "tp": 278,
+        "fp": 165,
+        "fn": 295,
+        "f1": 0.547244094488189
+      },
+      "typed_relaxed": {
+        "precision": 0.7667304015296367,
+        "recall": 0.6048265460030166,
+        "f1": 0.6762225969645868,
+        "tp": 401,
+        "fp": 122,
+        "fn": 262,
+        "pred": 523,
+        "gold": 663
+      },
+      "official_and_independent_counts_agree": true,
+      "archived_typed_exact_and_relaxed_reproduced": true
+    }
+  },
+  "three_seed_summary": {
+    "typed_exact": {
+      "mean": 0.5403436449318197,
+      "sample_sd": 0.035406376405083186
+    },
+    "boundary": {
+      "mean": 0.570889223686276,
+      "sample_sd": 0.037958569665872584
+    },
+    "SK_combined_typed_exact": {
+      "mean": 0.5223908538559777,
+      "sample_sd": 0.043819662863406855
+    },
+    "typed_relaxed": {
+      "mean": 0.6621156400143996,
+      "sample_sd": 0.032952591820651606
+    }
+  },
+  "limits": [
+    "Offline diagnostic rescoring of the same development-used Gold150; no independent blind model test.",
+    "Boundary matching ignores type but preserves exact span coordinates; it is not classification accuracy or a pure boundary-error rate.",
+    "Sample SD describes three training runs, not uncertainty across independently sampled test sets.",
+    "Invalid candidates remain rejected exactly as in the frozen parser outputs; missing sentence coverage would be an error, not silently removed or filled."
+  ],
+  "encoder_gold_comparison": {
+    "path": "gold150_gold.bio.jsonl",
+    "sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+    "n": 150,
+    "same_ids": true,
+    "mismatched_text_or_typed_spans": [],
+    "same_ids_text_and_LSKT_spans": true
+  },
+  "supplied_report_checked": true,
+  "supplied_report_sha256": "76f39d3c6985974c8b1a4be500a6b9a76cfb8d6440cda7c36be6b2c528d4c2a0",
+  "passed": true
+}

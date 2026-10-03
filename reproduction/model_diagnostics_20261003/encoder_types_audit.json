@@ -1,0 +1,701 @@
+{
+  "date": "2026-10-03",
+  "scope": "Independent read-only audit of six archived cnss-lskt-1.2.0 official scoring records. Recomputed typed exact per-type F1 directly from integer TP/FP/FN and sample SD from unrounded seed values. Verified archived gold/prediction bytes, 150-row coverage, unique IDs, totals, and paper-ready receipts. No training, inference, or rerun of the prediction scorer was performed.",
+  "input_review": "Chinese-SkillSpan_中文编码器分类型核查.json",
+  "input_review_sha256": "5550f0732b58ef786e4d070ce644eeba6f676a82728404643dd90e5fcad2d35e",
+  "paper_receipt": "paper_ready_tables_20260922.json",
+  "paper_receipt_sha256": "8602110336e6df8f0b80e7bc2ab7594a63422493e12544d52c27a71f2e145aa6",
+  "formulae": {
+    "f1": "2*TP / (2*TP+FP+FN)",
+    "mean": "arithmetic mean of the three independently trained seed F1 scores",
+    "sample_sd": "sqrt(sum((F1_i-mean)^2)/(3-1))",
+    "exact_arithmetic": "Per-seed F1, means and sample variances calculated with rational arithmetic; square roots evaluated with 60-digit Decimal precision."
+  },
+  "checks": {
+    "all_six_official_mode": true,
+    "same_150_unique_reference_ids_all_runs": true,
+    "all_150_predictions_aligned_each_run": true,
+    "all_raw_gold_and_prediction_hashes_match_score_receipts": true,
+    "all_counts_and_receipt_metrics_match": true,
+    "L_each_model_each_seed_tp_fp_fn": [
+      2,
+      1,
+      0
+    ],
+    "gold_support": {
+      "S": 448,
+      "K": 125,
+      "T": 88,
+      "L": 2
+    },
+    "total_gold_spans": 663,
+    "all_checks_passed": true
+  },
+  "models": {
+    "xlm-roberta-large": {
+      "runs": [
+        {
+          "seed": 42,
+          "best_epoch_from_receipt": 11,
+          "official_score_path": "evidence_review_20260925/rescoring/xlm-roberta-large/42.json",
+          "official_score_sha256": "f5cfd711d3ba9c3ea9aae4654cc09fc4c630cb9913642e8de4cf7e65f1ca8580",
+          "scorer_version": "cnss-lskt-1.2.0",
+          "align_mode": "official",
+          "n_scored": 150,
+          "gold_n_rows": 150,
+          "pred_n_rows": 150,
+          "gold_sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+          "prediction_sha256": "4a676e9bcf518d67e44792d15990109b636dc81f0176f6502a713f86966095d0",
+          "raw_artifact_checks": {
+            "gold": {
+              "path": "gold150_gold.bio.jsonl",
+              "sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+              "rows": 150,
+              "unique_ids": 150
+            },
+            "prediction": {
+              "path": "gold150_predictions.jsonl",
+              "sha256": "4a676e9bcf518d67e44792d15990109b636dc81f0176f6502a713f86966095d0",
+              "rows": 150,
+              "unique_ids": 150
+            }
+          },
+          "per_type_exact": {
+            "S": {
+              "precision": 0.5451977401129944,
+              "recall": 0.43080357142857145,
+              "f1": 0.4812967581047382,
+              "tp": 193,
+              "fp": 161,
+              "fn": 255,
+              "pred": 354,
+              "gold": 448,
+              "f1_recomputed_from_counts": 0.48129675810473815,
+              "f1_exact_fraction": "193/401"
+            },
+            "K": {
+              "precision": 0.5974025974025974,
+              "recall": 0.368,
+              "f1": 0.45544554455445546,
+              "tp": 46,
+              "fp": 31,
+              "fn": 79,
+              "pred": 77,
+              "gold": 125,
+              "f1_recomputed_from_counts": 0.45544554455445546,
+              "f1_exact_fraction": "46/101"
+            },
+            "T": {
+              "precision": 0.6428571428571429,
+              "recall": 0.6136363636363636,
+              "f1": 0.6279069767441862,
+              "tp": 54,
+              "fp": 30,
+              "fn": 34,
+              "pred": 84,
+              "gold": 88,
+              "f1_recomputed_from_counts": 0.627906976744186,
+              "f1_exact_fraction": "27/43"
+            },
+            "L": {
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1": 0.8,
+              "tp": 2,
+              "fp": 1,
+              "fn": 0,
+              "pred": 3,
+              "gold": 2,
+              "f1_recomputed_from_counts": 0.8,
+              "f1_exact_fraction": "4/5"
+            }
+          },
+          "total_exact_counts": {
+            "tp": 295,
+            "fp": 223,
+            "fn": 368,
+            "pred": 518,
+            "gold": 663
+          },
+          "typed_exact_micro_f1_recomputed": 0.4995766299745978,
+          "typed_exact_macro_f1_recomputed": 0.5911623198508449
+        },
+        {
+          "seed": 43,
+          "best_epoch_from_receipt": 14,
+          "official_score_path": "evidence_review_20260925/rescoring/xlm-roberta-large/43.json",
+          "official_score_sha256": "83062c6418eff72ee89c0f3656ce9093f6be12eca0a33f1fb90c08a6826d7561",
+          "scorer_version": "cnss-lskt-1.2.0",
+          "align_mode": "official",
+          "n_scored": 150,
+          "gold_n_rows": 150,
+          "pred_n_rows": 150,
+          "gold_sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+          "prediction_sha256": "30e2ae5e3cd9eb30a46fd4320914276f3e40715c09fbb2bc9e5173698d6939a9",
+          "raw_artifact_checks": {
+            "gold": {
+              "path": "gold150_gold.bio.jsonl",
+              "sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+              "rows": 150,
+              "unique_ids": 150
+            },
+            "prediction": {
+              "path": "gold150_predictions.jsonl",
+              "sha256": "30e2ae5e3cd9eb30a46fd4320914276f3e40715c09fbb2bc9e5173698d6939a9",
+              "rows": 150,
+              "unique_ids": 150
+            }
+          },
+          "per_type_exact": {
+            "S": {
+              "precision": 0.5497382198952879,
+              "recall": 0.46875,
+              "f1": 0.5060240963855422,
+              "tp": 210,
+              "fp": 172,
+              "fn": 238,
+              "pred": 382,
+              "gold": 448,
+              "f1_recomputed_from_counts": 0.5060240963855421,
+              "f1_exact_fraction": "42/83"
+            },
+            "K": {
+              "precision": 0.5851063829787234,
+              "recall": 0.44,
+              "f1": 0.502283105022831,
+              "tp": 55,
+              "fp": 39,
+              "fn": 70,
+              "pred": 94,
+              "gold": 125,
+              "f1_recomputed_from_counts": 0.502283105022831,
+              "f1_exact_fraction": "110/219"
+            },
+            "T": {
+              "precision": 0.6385542168674698,
+              "recall": 0.6022727272727273,
+              "f1": 0.6198830409356725,
+              "tp": 53,
+              "fp": 30,
+              "fn": 35,
+              "pred": 83,
+              "gold": 88,
+              "f1_recomputed_from_counts": 0.6198830409356725,
+              "f1_exact_fraction": "106/171"
+            },
+            "L": {
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1": 0.8,
+              "tp": 2,
+              "fp": 1,
+              "fn": 0,
+              "pred": 3,
+              "gold": 2,
+              "f1_recomputed_from_counts": 0.8,
+              "f1_exact_fraction": "4/5"
+            }
+          },
+          "total_exact_counts": {
+            "tp": 320,
+            "fp": 242,
+            "fn": 343,
+            "pred": 562,
+            "gold": 663
+          },
+          "typed_exact_micro_f1_recomputed": 0.5224489795918368,
+          "typed_exact_macro_f1_recomputed": 0.6070475605860114
+        },
+        {
+          "seed": 44,
+          "best_epoch_from_receipt": 14,
+          "official_score_path": "evidence_review_20260925/rescoring/xlm-roberta-large/44.json",
+          "official_score_sha256": "75778fc8849e4f5d61d049a7a3ec6b54731be785828decc7587835c95c395fdf",
+          "scorer_version": "cnss-lskt-1.2.0",
+          "align_mode": "official",
+          "n_scored": 150,
+          "gold_n_rows": 150,
+          "pred_n_rows": 150,
+          "gold_sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+          "prediction_sha256": "6174141656f1a55d8957bc4dd2b9113503421871dbb279c66423c68a89f89bfd",
+          "raw_artifact_checks": {
+            "gold": {
+              "path": "gold150_gold.bio.jsonl",
+              "sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+              "rows": 150,
+              "unique_ids": 150
+            },
+            "prediction": {
+              "path": "gold150_predictions.jsonl",
+              "sha256": "6174141656f1a55d8957bc4dd2b9113503421871dbb279c66423c68a89f89bfd",
+              "rows": 150,
+              "unique_ids": 150
+            }
+          },
+          "per_type_exact": {
+            "S": {
+              "precision": 0.5677749360613811,
+              "recall": 0.4955357142857143,
+              "f1": 0.529201430274136,
+              "tp": 222,
+              "fp": 169,
+              "fn": 226,
+              "pred": 391,
+              "gold": 448,
+              "f1_recomputed_from_counts": 0.5292014302741359,
+              "f1_exact_fraction": "444/839"
+            },
+            "K": {
+              "precision": 0.6263736263736264,
+              "recall": 0.456,
+              "f1": 0.5277777777777778,
+              "tp": 57,
+              "fp": 34,
+              "fn": 68,
+              "pred": 91,
+              "gold": 125,
+              "f1_recomputed_from_counts": 0.5277777777777778,
+              "f1_exact_fraction": "19/36"
+            },
+            "T": {
+              "precision": 0.6395348837209303,
+              "recall": 0.625,
+              "f1": 0.632183908045977,
+              "tp": 55,
+              "fp": 31,
+              "fn": 33,
+              "pred": 86,
+              "gold": 88,
+              "f1_recomputed_from_counts": 0.632183908045977,
+              "f1_exact_fraction": "55/87"
+            },
+            "L": {
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1": 0.8,
+              "tp": 2,
+              "fp": 1,
+              "fn": 0,
+              "pred": 3,
+              "gold": 2,
+              "f1_recomputed_from_counts": 0.8,
+              "f1_exact_fraction": "4/5"
+            }
+          },
+          "total_exact_counts": {
+            "tp": 336,
+            "fp": 235,
+            "fn": 327,
+            "pred": 571,
+            "gold": 663
+          },
+          "typed_exact_micro_f1_recomputed": 0.5445705024311183,
+          "typed_exact_macro_f1_recomputed": 0.6222907790244727
+        }
+      ],
+      "per_type_exact_summary": {
+        "S": {
+          "support": 448,
+          "n_seeds": 3,
+          "seed_f1_from_counts": [
+            0.48129675810473815,
+            0.5060240963855421,
+            0.5292014302741359
+          ],
+          "mean": 0.5055074282548054,
+          "sample_sd": 0.023956515050865733,
+          "mean_exact_fraction": "42348031/83773311",
+          "sample_variance_exact_fraction": "1342571394163/2339322545300907",
+          "mean_60_digit": "0.505507428254805399777024451140530902497097196027025838813987",
+          "sample_sd_60_digit": "0.0239565150508657335194054533365386405173288075718550186518162",
+          "display_3dp": "0.506 ± 0.024"
+        },
+        "K": {
+          "support": 125,
+          "n_seeds": 3,
+          "seed_f1_from_counts": [
+            0.45544554455445546,
+            0.502283105022831,
+            0.5277777777777778
+          ],
+          "mean": 0.49516880911835476,
+          "sample_sd": 0.03668716254264712,
+          "mean_exact_fraction": "394295/796284",
+          "sample_variance_exact_fraction": "284474257/211356069552",
+          "mean_60_digit": "0.495168809118354757850214245168809118354757850214245168809118",
+          "sample_sd_60_digit": "0.0366871625426471194867136990598977370031962515019702260896161",
+          "display_3dp": "0.495 ± 0.037"
+        },
+        "T": {
+          "support": 88,
+          "n_seeds": 3,
+          "seed_f1_from_counts": [
+            0.627906976744186,
+            0.6198830409356725,
+            0.632183908045977
+          ],
+          "mean": 0.6266579752419452,
+          "sample_sd": 0.006244824775827794,
+          "mean_exact_fraction": "400880/639711",
+          "sample_variance_exact_fraction": "5319697/136410054507",
+          "mean_60_digit": "0.626657975241945190875254607158545030490330789997358182054084",
+          "sample_sd_60_digit": "0.00624482477582779430534873644901186400669504146702840687234636",
+          "display_3dp": "0.627 ± 0.006"
+        },
+        "L": {
+          "support": 2,
+          "n_seeds": 3,
+          "seed_f1_from_counts": [
+            0.8,
+            0.8,
+            0.8
+          ],
+          "mean": 0.8,
+          "sample_sd": 0.0,
+          "mean_exact_fraction": "4/5",
+          "sample_variance_exact_fraction": "0",
+          "mean_60_digit": "0.8",
+          "sample_sd_60_digit": "0",
+          "display_3dp": "0.800 ± 0.000"
+        }
+      },
+      "all_official_receipt_and_review_values_match": true
+    },
+    "esco-xlm-roberta-large": {
+      "runs": [
+        {
+          "seed": 42,
+          "best_epoch_from_receipt": 19,
+          "official_score_path": "evidence_review_20260925/rescoring/esco-xlm-roberta-large/42.json",
+          "official_score_sha256": "a1cff53f0dd51b00cb9876df6c2c763e7b625cfb4978b89007caf48ee4524684",
+          "scorer_version": "cnss-lskt-1.2.0",
+          "align_mode": "official",
+          "n_scored": 150,
+          "gold_n_rows": 150,
+          "pred_n_rows": 150,
+          "gold_sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+          "prediction_sha256": "2accb721edde8f001a9bc2ee77dbe5d63dba074f6ec8b4922eb2f4bb012fa12a",
+          "raw_artifact_checks": {
+            "gold": {
+              "path": "gold150_gold.bio.jsonl",
+              "sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+              "rows": 150,
+              "unique_ids": 150
+            },
+            "prediction": {
+              "path": "gold150_predictions.jsonl",
+              "sha256": "2accb721edde8f001a9bc2ee77dbe5d63dba074f6ec8b4922eb2f4bb012fa12a",
+              "rows": 150,
+              "unique_ids": 150
+            }
+          },
+          "per_type_exact": {
+            "S": {
+              "precision": 0.5317460317460317,
+              "recall": 0.4486607142857143,
+              "f1": 0.48668280871670705,
+              "tp": 201,
+              "fp": 177,
+              "fn": 247,
+              "pred": 378,
+              "gold": 448,
+              "f1_recomputed_from_counts": 0.48668280871670705,
+              "f1_exact_fraction": "201/413"
+            },
+            "K": {
+              "precision": 0.6705882352941176,
+              "recall": 0.456,
+              "f1": 0.5428571428571428,
+              "tp": 57,
+              "fp": 28,
+              "fn": 68,
+              "pred": 85,
+              "gold": 125,
+              "f1_recomputed_from_counts": 0.5428571428571428,
+              "f1_exact_fraction": "19/35"
+            },
+            "T": {
+              "precision": 0.6309523809523809,
+              "recall": 0.6022727272727273,
+              "f1": 0.6162790697674418,
+              "tp": 53,
+              "fp": 31,
+              "fn": 35,
+              "pred": 84,
+              "gold": 88,
+              "f1_recomputed_from_counts": 0.6162790697674418,
+              "f1_exact_fraction": "53/86"
+            },
+            "L": {
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1": 0.8,
+              "tp": 2,
+              "fp": 1,
+              "fn": 0,
+              "pred": 3,
+              "gold": 2,
+              "f1_recomputed_from_counts": 0.8,
+              "f1_exact_fraction": "4/5"
+            }
+          },
+          "total_exact_counts": {
+            "tp": 313,
+            "fp": 237,
+            "fn": 350,
+            "pred": 550,
+            "gold": 663
+          },
+          "typed_exact_micro_f1_recomputed": 0.516075845012366,
+          "typed_exact_macro_f1_recomputed": 0.6114547553353229
+        },
+        {
+          "seed": 43,
+          "best_epoch_from_receipt": 15,
+          "official_score_path": "evidence_review_20260925/rescoring/esco-xlm-roberta-large/43.json",
+          "official_score_sha256": "eb6ea2b4fdeb282af6c24bbc2a83c19094b86278025ba545cc9bf3d311253654",
+          "scorer_version": "cnss-lskt-1.2.0",
+          "align_mode": "official",
+          "n_scored": 150,
+          "gold_n_rows": 150,
+          "pred_n_rows": 150,
+          "gold_sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+          "prediction_sha256": "dc81fbdcf177c32e8ffe2ae38601deefdac5cd231ad29264a5e1853f79b0dcb0",
+          "raw_artifact_checks": {
+            "gold": {
+              "path": "gold150_gold.bio.jsonl",
+              "sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+              "rows": 150,
+              "unique_ids": 150
+            },
+            "prediction": {
+              "path": "gold150_predictions.jsonl",
+              "sha256": "dc81fbdcf177c32e8ffe2ae38601deefdac5cd231ad29264a5e1853f79b0dcb0",
+              "rows": 150,
+              "unique_ids": 150
+            }
+          },
+          "per_type_exact": {
+            "S": {
+              "precision": 0.5555555555555556,
+              "recall": 0.49107142857142855,
+              "f1": 0.5213270142180094,
+              "tp": 220,
+              "fp": 176,
+              "fn": 228,
+              "pred": 396,
+              "gold": 448,
+              "f1_recomputed_from_counts": 0.5213270142180095,
+              "f1_exact_fraction": "110/211"
+            },
+            "K": {
+              "precision": 0.651685393258427,
+              "recall": 0.464,
+              "f1": 0.5420560747663552,
+              "tp": 58,
+              "fp": 31,
+              "fn": 67,
+              "pred": 89,
+              "gold": 125,
+              "f1_recomputed_from_counts": 0.5420560747663551,
+              "f1_exact_fraction": "58/107"
+            },
+            "T": {
+              "precision": 0.6463414634146342,
+              "recall": 0.6022727272727273,
+              "f1": 0.6235294117647059,
+              "tp": 53,
+              "fp": 29,
+              "fn": 35,
+              "pred": 82,
+              "gold": 88,
+              "f1_recomputed_from_counts": 0.6235294117647059,
+              "f1_exact_fraction": "53/85"
+            },
+            "L": {
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1": 0.8,
+              "tp": 2,
+              "fp": 1,
+              "fn": 0,
+              "pred": 3,
+              "gold": 2,
+              "f1_recomputed_from_counts": 0.8,
+              "f1_exact_fraction": "4/5"
+            }
+          },
+          "total_exact_counts": {
+            "tp": 333,
+            "fp": 237,
+            "fn": 330,
+            "pred": 570,
+            "gold": 663
+          },
+          "typed_exact_micro_f1_recomputed": 0.5401459854014599,
+          "typed_exact_macro_f1_recomputed": 0.6217281251872676
+        },
+        {
+          "seed": 44,
+          "best_epoch_from_receipt": 10,
+          "official_score_path": "evidence_review_20260925/rescoring/esco-xlm-roberta-large/44.json",
+          "official_score_sha256": "7ca20aa19c1ab44d724806fefbf3e4a50091076115cdfe7e70fc72c346d51ea2",
+          "scorer_version": "cnss-lskt-1.2.0",
+          "align_mode": "official",
+          "n_scored": 150,
+          "gold_n_rows": 150,
+          "pred_n_rows": 150,
+          "gold_sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+          "prediction_sha256": "906c7a79a614afcff010b1a09518185c3827e32c556a8bca258d5b83a7c6606d",
+          "raw_artifact_checks": {
+            "gold": {
+              "path": "gold150_gold.bio.jsonl",
+              "sha256": "eaef6c0f3bda686b1a2bdd8095dff24901378f8f9c748028a58c800929e76826",
+              "rows": 150,
+              "unique_ids": 150
+            },
+            "prediction": {
+              "path": "gold150_predictions.jsonl",
+              "sha256": "906c7a79a614afcff010b1a09518185c3827e32c556a8bca258d5b83a7c6606d",
+              "rows": 150,
+              "unique_ids": 150
+            }
+          },
+          "per_type_exact": {
+            "S": {
+              "precision": 0.5952380952380952,
+              "recall": 0.5022321428571429,
+              "f1": 0.5447941888619855,
+              "tp": 225,
+              "fp": 153,
+              "fn": 223,
+              "pred": 378,
+              "gold": 448,
+              "f1_recomputed_from_counts": 0.5447941888619855,
+              "f1_exact_fraction": "225/413"
+            },
+            "K": {
+              "precision": 0.6547619047619048,
+              "recall": 0.44,
+              "f1": 0.5263157894736843,
+              "tp": 55,
+              "fp": 29,
+              "fn": 70,
+              "pred": 84,
+              "gold": 125,
+              "f1_recomputed_from_counts": 0.5263157894736842,
+              "f1_exact_fraction": "10/19"
+            },
+            "T": {
+              "precision": 0.7012987012987013,
+              "recall": 0.6136363636363636,
+              "f1": 0.6545454545454544,
+              "tp": 54,
+              "fp": 23,
+              "fn": 34,
+              "pred": 77,
+              "gold": 88,
+              "f1_recomputed_from_counts": 0.6545454545454545,
+              "f1_exact_fraction": "36/55"
+            },
+            "L": {
+              "precision": 0.6666666666666666,
+              "recall": 1.0,
+              "f1": 0.8,
+              "tp": 2,
+              "fp": 1,
+              "fn": 0,
+              "pred": 3,
+              "gold": 2,
+              "f1_recomputed_from_counts": 0.8,
+              "f1_exact_fraction": "4/5"
+            }
+          },
+          "total_exact_counts": {
+            "tp": 336,
+            "fp": 206,
+            "fn": 327,
+            "pred": 542,
+            "gold": 663
+          },
+          "typed_exact_micro_f1_recomputed": 0.5576763485477179,
+          "typed_exact_macro_f1_recomputed": 0.6314138582202811
+        }
+      ],
+      "per_type_exact_summary": {
+        "S": {
+          "support": 448,
+          "n_seeds": 3,
+          "seed_f1_from_counts": [
+            0.48668280871670705,
+            0.5213270142180095,
+            0.5447941888619855
+          ],
+          "mean": 0.5176013372655673,
+          "sample_sd": 0.0292342885523615,
+          "mean_exact_fraction": "135316/261429",
+          "sample_variance_exact_fraction": "2781463/3254529621",
+          "mean_60_digit": "0.517601337265567324206572338952449804727096075798782843525393",
+          "sample_sd_60_digit": "0.0292342885523614994897755371987703808759435661828943141644743",
+          "display_3dp": "0.518 ± 0.029"
+        },
+        "K": {
+          "support": 125,
+          "n_seeds": 3,
+          "seed_f1_from_counts": [
+            0.5428571428571428,
+            0.5420560747663551,
+            0.5263157894736842
+          ],
+          "mean": 0.5370763356990608,
+          "sample_sd": 0.009327510054825367,
+          "mean_exact_fraction": "114647/213465",
+          "sample_variance_exact_fraction": "1321489/15189102075",
+          "mean_60_digit": "0.537076335699060735952029606727098119129599700185042044363245",
+          "sample_sd_60_digit": "0.00932751005482536648683790644806500578748173993722586427128437",
+          "display_3dp": "0.537 ± 0.009"
+        },
+        "T": {
+          "support": 88,
+          "n_seeds": 3,
+          "seed_f1_from_counts": [
+            0.6162790697674418,
+            0.6235294117647059,
+            0.6545454545454545
+          ],
+          "mean": 0.6314513120258675,
+          "sample_sd": 0.02032600375886942,
+          "mean_exact_fraction": "10155/16082",
+          "sample_variance_exact_fraction": "2671309/6465768100",
+          "mean_60_digit": "0.631451312025867429424200970028603407536376072627782614102724",
+          "sample_sd_60_digit": "0.0203260037588694195447855551094991157826960595719821678410742",
+          "display_3dp": "0.631 ± 0.020"
+        },
+        "L": {
+          "support": 2,
+          "n_seeds": 3,
+          "seed_f1_from_counts": [
+            0.8,
+            0.8,
+            0.8
+          ],
+          "mean": 0.8,
+          "sample_sd": 0.0,
+          "mean_exact_fraction": "4/5",
+          "sample_variance_exact_fraction": "0",
+          "mean_60_digit": "0.8",
+          "sample_sd_60_digit": "0",
+          "display_3dp": "0.800 ± 0.000"
+        }
+      },
+      "all_official_receipt_and_review_values_match": true
+    }
+  },
+  "interpretation_limits": [
+    "Per-type F1 evaluates jointly trained LSKT models; it does not represent independently trained single-type models.",
+    "Gold150 is a development-used human reference, not a newly independent model test.",
+    "L F1 0.800 ± 0.000 rests on two gold spans and one false positive in every run; it is not evidence of robust population performance or zero uncertainty.",
+    "S/K are project-specific Chinese labels and are not automatically comparable to native English SkillSpan label streams.",
+    "The SD summarizes three training seeds; it is not a confidence interval and no new per-type significance test was performed."
+  ]
+}

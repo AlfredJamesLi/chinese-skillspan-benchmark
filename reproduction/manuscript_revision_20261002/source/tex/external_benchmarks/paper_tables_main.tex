@@ -1,16 +1,28 @@
 \begin{table}[!htbp]
 \centering\small
-\caption{Chinese encoder results on Gold150 (0--1): mean $\pm$ sample SD across three seeds.}
+\caption{Chinese model diagnostics on Gold150 (0--1). Results across three training seeds are mean $\pm$ sample SD; Qwen without an adapter is a single run.}
 \label{tab:external-chinese}
+\textbf{A. Chinese encoders: overall F1}\par\smallskip
 \begin{tabularx}{\linewidth}{@{}Lrrrr@{}}
 \toprule
-Encoder & Typed exact & Typed relaxed & Boundary & Macro-F1 \\
+Encoder & Typed exact & Typed relaxed & \makecell{Boundary\\exact} & Macro-F1 \\
 \midrule
 XLM-R-large & $0.522\pm0.022$ & $0.650\pm0.021$ & $0.571\pm0.022$ & $0.607\pm0.016$ \\
 ESCOXLM-R & $0.538\pm0.021$ & $0.662\pm0.022$ & $0.582\pm0.024$ & $0.622\pm0.010$ \\
 \bottomrule
 \end{tabularx}
-\par\smallskip\RaggedRight\footnotesize B2 training/development: 2,150/169 records. Fresh linear LSKT head; official \texttt{cnss-lskt-1.2.0} scorer; 150 human-reference records. Boundary is exact span matching with types collapsed; macro-F1 averages L/K/S/T. Gold150 is not a new blind test and contains only two L spans. All three seeds (42/43/44) are included; per-seed scores and selected epochs are retained in the model audit archive.
+\par\medskip\textbf{B. Typed exact F1 by competency type}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Lrrrr@{}}
+\toprule
+Model & S ($n=448$) & K ($n=125$) & T ($n=88$) & L ($n=2$) \\
+\midrule
+Qwen, no adapter & $0.377$ & $0.302$ & $0.380$ & $0.000$ \\
+Qwen B2 LoRA & $0.525\pm0.039$ & $0.512\pm0.063$ & $0.638\pm0.017$ & $0.800$ \\
+XLM-R-large & $0.506\pm0.024$ & $0.495\pm0.037$ & $0.627\pm0.006$ & $0.800$ \\
+ESCOXLM-R & $0.518\pm0.029$ & $0.537\pm0.009$ & $0.631\pm0.020$ & $0.800$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight\footnotesize All adapted models use the B2 split (2,150/169 training/development records) and seeds 42/43/44. Encoders use fresh linear LSKT heads; Qwen uses a LoRA adapter and the fixed inference protocol in Table~\ref{tab:gold150-main}. All four types are predicted jointly. Boundary exact collapses types; macro-F1 weights L/K/S/T equally. For L, each trained run has 2 TP, 1 FP, and 0 FN; Qwen without an adapter has 0 TP, 1 FP, and 2 FN. L seed SD is omitted because two reference spans cannot establish reliability. Gold150 informed guideline development and is not a new blind test.
 \end{table}
 
 \begin{table}[!htbp]
