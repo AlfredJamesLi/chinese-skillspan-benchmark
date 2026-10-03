@@ -1,5 +1,7 @@
 # Manuscript revision: annotation workflow and presentation
 
+The abstract now leads with the measured Qwen adaptation result and span-length diagnostics; see the [3 October Results revision](abstract_results_focus_20261003/README.md).
+
 Current title: *Chinese-SkillSpan: a dataset and annotation framework for competency span extraction from Chinese job advertisements*.
 
 The introduction clarifies competency-span terminology across L/K/S/T; see the [3 October terminology update](competency_terminology_20261003/README.md).
