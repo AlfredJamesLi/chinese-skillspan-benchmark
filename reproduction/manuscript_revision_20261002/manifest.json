@@ -17,7 +17,7 @@
       25,
       30
     ],
-    "pdf_sha256": "5c5a0b6e3cea28b1bf21051df9344d00f62fe4024fb1f773012d9cd51131ff0e",
+    "pdf_sha256": "55087470e27b3575dc9e2426279517cea19703f0aee765b0f022f827d080a6b3",
     "passed": true,
     "examples_checked": 5,
     "source_spans_and_types_unchanged": true,
@@ -37,9 +37,9 @@
   },
   "files_sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "5c5a0b6e3cea28b1bf21051df9344d00f62fe4024fb1f773012d9cd51131ff0e",
+    "Chinese_SkillSpan_revised_20261002.pdf": "55087470e27b3575dc9e2426279517cea19703f0aee765b0f022f827d080a6b3",
     "README.md": "e120e59bc805722c681ba8a5dd1ad49bd6e9d0da5955b5ceb7e8614997ece88c",
-    "source/0main.tex": "70a7ff8746e6d51cff82e6bf240b588e13650b8b1dbf29761b560fbbabd351aa",
+    "source/0main.tex": "adaa316678ca08521457a23c5a99c8a7b3d574c484925c40719e82b434e121f7",
     "source/1Introduction.tex": "329ebdc54469adb5da2454b823af2eb7980578ac876b929f76bb82208d4b6b5b",
     "source/2Framework.tex": "24e92f9789b0023f5d1d16e74070286e7645c15318ff7ac5589de4ec60c3fc8f",
     "source/3Experiments.tex": "db2a0de1be2f7a9985c833818849dcd2a55875686c45245497835b6172a83c2e",
@@ -96,7 +96,8 @@
     "short_line_polish_20261003/README.md": "b9c6703ec74295ec3a75987535ee0640da93dcc7cfae74c36427803c155f75c0",
     "short_line_polish_20261003/edits.json": "a3614093badd83e87934589050ecfa2bf34223cf79569b1c96e604162f71db9e",
     "qwen_reference_20261003/README.md": "f3e9be37a90ce544720532c700bc62b799356822f7077bbdbe5922d365c850f2",
-    "author_led_disclosure_20261003/README.md": "db8834d788af89d58e1c800f94b359c6ede58c97f586a5335a6036884e6389c1"
+    "author_led_disclosure_20261003/README.md": "db8834d788af89d58e1c800f94b359c6ede58c97f586a5335a6036884e6389c1",
+    "peerj_style_disclosure_20261003/README.md": "e216d94fdbdd7d3072f822a2c473e0805f091cb95009c1b41ffaaf1f7f2a8b88"
   },
   "figure1_arrow_cleanup_validation": {
     "passed": true,
@@ -1030,6 +1031,26 @@
       "page": 35,
       "passed": true,
       "notes": "Acknowledgments and following bibliography inspected; no clipping or overlap; final paragraph line fills 93% of text width."
+    }
+  },
+  "peerj_style_disclosure_revision": {
+    "passed": true,
+    "pages": 39,
+    "only_changed_source": "0main.tex",
+    "source_sha256": "adaa316678ca08521457a23c5a99c8a7b3d574c484925c40719e82b434e121f7",
+    "pdf_sha256": "55087470e27b3575dc9e2426279517cea19703f0aee765b0f022f827d080a6b3",
+    "acknowledgments_page": 35,
+    "paragraph_final_line": {
+      "text": "October 2026; their model versions were not retained.",
+      "width_fraction": 0.5476405254685806
+    },
+    "bibliography_unchanged": true,
+    "all_other_sources_unchanged": true,
+    "cross_references_unchanged": true,
+    "visual_inspection": {
+      "page": 35,
+      "passed": true,
+      "notes": "Acknowledgments and following references inspected; no clipping, overlap, or very short final paragraph line."
     }
   }
 }
