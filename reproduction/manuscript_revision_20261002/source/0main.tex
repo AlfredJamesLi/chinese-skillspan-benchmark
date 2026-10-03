@@ -117,7 +117,10 @@
 \input{tex/skillspan_style_figures}
 \input{tex/stage2_result_values}
 
-\title{Chinese-SkillSpan: a dataset and annotation framework for competency span extraction from Chinese job advertisements}
+\title{Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements}
+\makeatletter
+\hypersetup{pdftitle={\@title}}
+\makeatother
 
 \author[1,2]{Guojing Li\textsuperscript{\textdagger}}
 \author[2]{Zichuan Fu\textsuperscript{\textdagger}}
@@ -142,7 +145,7 @@
 
 \begin{abstract}
 \par\noindent\rev{\textbf{Background.} Chinese job advertisements express competencies through coordinated phrases and context-dependent terms. Comparing extraction systems requires consistent decisions about their character boundaries and types.}
-\par\noindent\rev{\textbf{Methods.} We developed Chinese-SkillSpan from a corpus of 22,840 sentences across four recruitment collections. Character-level annotations distinguish language, knowledge, occupational skills, and transversal competences. An ESCO-informed handbook was refined through human coding, disagreement analysis, and adjudication to specify annotation scope, boundaries, and types. The resource separates a frozen human reference from LLM-assisted Silver supervision. Silver quality checks combined automated structural validation with human review of selected samples before and after bulk annotation. Three annotators independently applied the final handbook to a separate random sample, blinded to machine suggestions and one another's labels. Prompted models, supervised adaptation, and multilingual encoders provided empirical comparisons.}
+\par\noindent\rev{\textbf{Methods.} We developed the Chinese-SkillSpan benchmark from a corpus of 22,840 sentences across four recruitment collections. Character-level annotations distinguish language, knowledge, occupational skills, and transversal competences. An ESCO-informed handbook was refined through human coding, disagreement analysis, and adjudication to specify annotation scope, boundaries, and types. The resource separates a frozen human reference from LLM-assisted Silver supervision. Silver quality checks combined automated structural validation with human review of selected samples before and after bulk annotation. Three annotators independently applied the final handbook to a separate random sample, blinded to machine suggestions and one another's labels. Prompted models, supervised adaptation, and multilingual encoders provided empirical comparisons.}
 \par\noindent\rev{\textbf{Results.} Silver-supervised Qwen adaptation improved typed exact micro-F1 on the human reference from a no-adapter baseline of 0.361 to $0.540\pm0.035$ (mean $\pm$ sample SD across three training seeds) under fixed inference rules. Each adapted model also improved exact recall across all assessed span-length groups. Independent blinded coding showed higher agreement on boundaries alone than on typed spans, identifying type assignment as an additional source of annotation difficulty.}
 \par\noindent\rev{\textbf{Conclusions.} Chinese-SkillSpan pairs source-text spans with explicit annotation rules and separate human and Silver labels, enabling model comparisons and inspection of boundary and type errors. Human-reference results concern data used in guideline development; generalization to unseen advertisements requires independent testing.}
 \end{abstract}

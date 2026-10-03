@@ -1,0 +1,68 @@
+[
+  {
+    "file": "0main.tex",
+    "before": "\\title{Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements}",
+    "after": "\\title{Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements}\n\\makeatletter\n\\hypersetup{pdftitle={\\@title}}\n\\makeatother",
+    "reason": "保留用户在线题名；PDF属性从同一title自动取值，防止元数据遗漏。"
+  },
+  {
+    "file": "0main.tex",
+    "before": "We developed Chinese-SkillSpan from a corpus of 22,840 sentences across four recruitment collections.",
+    "after": "We developed the Chinese-SkillSpan benchmark from a corpus of 22,840 sentences across four recruitment collections.",
+    "reason": "摘要Methods明确基准定位；结果、限制和数据规模不变。"
+  },
+  {
+    "file": "1Introduction.tex",
+    "before": "We introduce Chinese-SkillSpan to study these decisions. It combines a corpus of 22,840 sentences from four recruitment collections with a handbook for language (L), knowledge (K), occupational skills (S), and transversal competences (T).",
+    "after": "We introduce Chinese-SkillSpan, a benchmark for competency span extraction in Chinese job advertisements. Built from a corpus of 22,840 sentences across four recruitment collections, it combines annotation guidelines, distinct supervision and reference subsets, scoring protocols, and model baselines. The handbook distinguishes language (L), knowledge (K), occupational skills (S), and transversal competences (T).",
+    "reason": "说明benchmark实际包含数据层、标注规范、评分协议和基线；保留后文四类术语解释。"
+  },
+  {
+    "file": "6Conclusion.tex",
+    "before": "Chinese-SkillSpan specifies how to delimit and type competency mentions in Chinese recruitment text, with explicit treatment of coordination, contextual types, and negative cases.",
+    "after": "Chinese-SkillSpan provides a benchmark for delimiting and typing competency mentions in Chinese job advertisements, with explicit treatment of coordination, contextual types, and negative cases.",
+    "reason": "结论首句与题名及实际任务对应。"
+  },
+  {
+    "file": "6Conclusion.tex",
+    "before": "These findings support diagnostic use of the released resource.",
+    "after": "These findings support diagnostic use of the benchmark and its annotation resources.",
+    "reason": "保留诊断用途，区分整个benchmark与其中的标注资源。"
+  },
+  {
+    "file": "tex/skillspan_style_related.tex",
+    "before": "Selected recruitment extraction resources. Annotation layers and prediction units differ; corpus-scale counts are not compared with human-annotated sample sizes. Material descriptions refer to the cited work, not an exhaustive audit of every later release.",
+    "after": "Selected recruitment extraction resources: prediction units, annotation layers, and reported materials. Chinese-SkillSpan counts and data roles are detailed in Table~\\ref{tab:annotation-lineage}. Materials refer to the cited publications and releases.",
+    "reason": "Table1保持跨资源对照，不把不同历史规模混在标注层列；规模统一引用Table2。"
+  },
+  {
+    "file": "tex/skillspan_style_related.tex",
+    "before": "This work; Chinese & Flat character spans & L/K/S/T; 9,540 Silver records; 500 human-coded/reviewed sentences, including Gold150 & Version-specific reference, prompts, predictions and scoring materials (\\hyperref[app:d]{Appendix D})",
+    "after": "Chinese-SkillSpan; Chinese & Flat character spans & L/K/S/T; frozen human reference and Silver supervision; separate blinded agreement study & Handbook, evaluation protocols, baseline predictions and scorer; independent coding exports (\\hyperref[app:d]{Appendix D})",
+    "reason": "Table1补独立盲编研究及基准材料；500历史覆盖和50独立一致性样本仍在Table2与方法中分别报告，未合计550。"
+  },
+  {
+    "file": "tex/silver_plus_methods.tex",
+    "before": "Cohort-level counts and sampling details appear in Appendices B and D.",
+    "after": "Appendices~B~and~D give cohort counts and sampling details.",
+    "reason": "按用户要求修正附录编号D的孤立段末行；附录组不换行，所有统计信息不变。"
+  },
+  {
+    "file": "3Experiments.tex",
+    "before": "Type, length, and empty-sentence diagnostics qualify the aggregate comparisons.",
+    "after": "Type, length, and empty-sentence diagnostics qualify aggregate scores.",
+    "reason": "精简极短的段末行，保留分层诊断对总体分数的解释作用。"
+  },
+  {
+    "file": "5Relatedwork.tex",
+    "before": "In recruitment, JobSkape generates",
+    "after": "In recruitment, \\mbox{JobSkape} generates",
+    "reason": "保持专名整体，避免跨页断成Job- / Skape。"
+  },
+  {
+    "file": "tex/skillspan_style_related.tex",
+    "before": "Handbook, evaluation protocols, baseline predictions and scorer; independent coding exports (\\hyperref[app:d]{Appendix D})",
+    "after": "Handbook, protocols, baseline predictions, scorer and independent coding exports (\\hyperref[app:d]{Appendix~D})",
+    "reason": "精简Table1材料列，并防止附录编号D独立换行。"
+  }
+]

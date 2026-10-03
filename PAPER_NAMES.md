@@ -1,5 +1,7 @@
 # Resource names used in the paper
 
+Current manuscript title: **Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements**. See the [current manuscript](reproduction/manuscript_revision_20261002/README.md).
+
 Use these names when reading the manuscript. Exact paths stay unchanged for reproducibility. See the [annotation and training terminology](docs/terminology.md) for the current role names and historical aliases.
 
 | Paper name | Resource |
@@ -9,7 +11,8 @@ Use these names when reading the manuscript. Exact paths stay unchanged for repr
 | Expanded Silver | [Later Codex/proxy experiments](reproduction/expanded_silver/README.md) |
 | JobBERT initialization / B2 continuation | [Model guide](docs/models.md) |
 | Shared-guideline protocol | [Evaluation instructions](reproduction/EVALUATION_ENTRY.md) |
-| Coding and review agreement | [Agreement guide](reproduction/agreement/README.md) |
+| Historical coding and assisted review | [Agreement guide](reproduction/agreement/README.md) |
+| Independent blinded agreement study | [Final-handbook three-annotator study](reproduction/agreement/finalguide_abc_20261002/README.md) |
 
 <details>
 <summary>Exact model IDs, original file names, and historical aliases</summary>
@@ -60,6 +63,5 @@ Short names in the manuscript are display aliases. Original file paths, experime
 - Existing historical notes may use canonical identifiers; preserve those records and link to this guide instead of mass replacement.
 
 The CSV mapping is in `reproduction/paper_names.csv`. The containing Git commit identifies this documentation version.
-
 
 </details>

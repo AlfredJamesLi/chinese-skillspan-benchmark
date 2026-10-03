@@ -1,6 +1,8 @@
 # Chinese-SkillSpan
 
-A benchmark for extracting competency spans from Chinese job advertisements, with annotation guidelines, Silver supervision, a human reference set, and evaluation tools.
+A benchmark for competency span extraction in Chinese job advertisements, with annotation guidelines, Silver supervision, a human reference set, and evaluation tools.
+
+Current manuscript: **Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements**. [Read the manuscript and revision notes](reproduction/manuscript_revision_20261002/README.md).
 
 **[Data and access](DATA_AVAILABILITY.md) · [Reproduce results](REPRODUCIBILITY.md) · [Models](docs/models.md) · [Paper-to-file index](reproduction/PAPER_INDEX.md)**
 
@@ -11,11 +13,12 @@ A benchmark for extracting competency spans from Chinese job advertisements, wit
 | Component | Size | Use |
 |---|---:|---|
 | Original corpus | 22,840 sentences | Four recruitment collections |
-| Human reference | 150 sentences, 663 spans | Evaluation against human annotations |
+| Human reference | 150 sentences, 663 spans | Frozen targets used in guideline development; diagnostic model evaluation |
 | Original Silver-plus pool | 2,451 records | LLM-generated labels |
 | Released Qwen B2 split | 2,150 training / 169 development | Matched Qwen adaptation study |
 | Expanded Codex pool | 9,540 retained sentences | Later experiment; final partitions are not fully released |
-| Human coding and review | 500 unique sentences | Reference construction and quality checks; not 500 Gold test sentences |
+| Historical human coding and review | 500 unique sentences | Reference construction and quality checks; not 500 Gold test sentences |
+| Independent blinded agreement study | 50 sentences; three annotators | Final-handbook agreement; separate from historical coverage and not a model test set |
 
 Terminology follows the [annotation and training guide](docs/terminology.md). Manuscript numbers follow the [display-precision policy](docs/numerical_precision.md); source result files retain their original precision.
 
@@ -51,7 +54,7 @@ The archive covers the earlier released benchmark components. Later expansion ma
 
 ## Citation
 
-Use the metadata in [CITATION.cff](CITATION.cff) and cite [Zenodo v0.1.3](https://doi.org/10.5281/zenodo.22698504) for that archived dataset version. The manuscript is maintained separately on Overleaf; this repository does not distribute a draft PDF.
+Use the metadata in [CITATION.cff](CITATION.cff) and cite [Zenodo v0.1.3](https://doi.org/10.5281/zenodo.22698504) for that archived dataset version. This citation identifies the archived dataset version, whose release title is retained. The current manuscript title, PDF, and source revision are available in the [manuscript directory](reproduction/manuscript_revision_20261002/README.md).
 
 Related English resource: Zhang et al. (2022), [SkillSpan](https://aclanthology.org/2022.naacl-main.366/).
 

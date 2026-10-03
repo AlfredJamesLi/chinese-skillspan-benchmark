@@ -4,13 +4,13 @@ The [3 October review integration](review_integration_20261003/README.md) record
 
 The abstract now leads with the measured Qwen adaptation result and span-length diagnostics; see the [3 October Results revision](abstract_results_focus_20261003/README.md).
 
-Current title: *Chinese-SkillSpan: a dataset and annotation framework for competency span extraction from Chinese job advertisements*.
+Current title: *Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements*.
 
 The introduction clarifies competency-span terminology across L/K/S/T; see the [3 October terminology update](competency_terminology_20261003/README.md).
 
 This 40-page version implements the supervisor's presentation comments and describes independent blinded annotation by three coders. [Read the revised PDF](Chinese_SkillSpan_revised_20261002.pdf).
 
-The abstract summarizes findings before numbers. Chinese examples are paired with English explanations in the main-text example figure, and section openings state the purpose of each analysis. Figure 2 retains the existing illustration style and adds the separate agreement study. The main agreement table presents the formal 50-sentence results; historical coding and assisted review remain in Appendix B. The data-layer and access tables, conclusions, and cross-references have been updated.
+The abstract leads with the measured Qwen adaptation result. Chinese examples are paired with English explanations in the main-text example figure, and section openings state the purpose of each analysis. Figure 2 retains the existing illustration style and adds the separate agreement study. The main agreement table presents the formal 50-sentence results; historical coding and assisted review remain in Appendix B. The data-layer and access tables, conclusions, and cross-references have been updated.
 
 The coders could see neither machine suggestions nor one another's annotations. Five familiarization and 15 training sentences are excluded from the formal 50. Agreement uses the preserved pre-discussion labels. The random draw is confirmed by the authors; the available exports establish sample membership and source counts but do not include the complete candidate frame or execution log. Bootstrap stratification is an analysis procedure, not proof of the original draw method.
 
@@ -19,6 +19,8 @@ The formal 50 are not added to Gold150 and are not a model test set. Historical 
 [Editable Figure 2](source/figures/Figure2_illustrated.svg) · [Vector PDF](source/figures/Figure2_illustrated.pdf) · [Chinese change log](CHANGELOG_zh.md)
 
 The `source` directory contains changed manuscript files and figure assets, not a standalone complete LaTeX project. Full before/after project backups were retained with the local delivery. The hash manifest identifies this PDF and the published files.
+
+The [title-alignment update](title_benchmark_alignment_20261003/README.md) aligns the abstract, introduction, conclusion, Table 1, PDF metadata, and repository entry points. Table 1 summarizes annotation layers; Table 2 retains the detailed counts and data roles.
 
 ## Current table and figure positions
 
@@ -80,5 +82,5 @@ Figure 4 now shows five traceable original corpus records with all four L/K/S/T 
 
 | Table 21 | 35 | `tab:external-kompetencer-classification` |
 
-| Table 22 | 36 | `tab:external-nnose` |
+| Table 22 | 35 | `tab:external-nnose` |
 
