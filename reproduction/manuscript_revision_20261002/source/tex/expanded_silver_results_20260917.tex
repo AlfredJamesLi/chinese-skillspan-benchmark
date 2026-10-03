@@ -20,7 +20,7 @@ Codex: 8,842 / 348 / 350 & 0.833 & 0.809 & 0.585 & 0.703 \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-Alt. is the supplementary gateway pool; Codex is adopted. Counts give train / validation / test sentences. Both retain earlier B2 and public-prompt annotations; names identify the channel for the replaced 2,500-sentence subset. Retained totals are 9,646 (Alt.) and 9,540 (Codex). Checkpoints were selected at epoch one with patience two. Differences use unrounded scores; rounding applies only to displayed values.
+Alt. is the supplementary alternative pool; Codex is adopted. Counts give train / validation / test sentences. Both retain earlier B2 and public-prompt annotations; names identify the channel for the replaced 2,500-sentence subset. Retained totals are 9,646 (Alt.) and 9,540 (Codex). Checkpoints were selected at epoch one with patience two. Differences use unrounded scores; rounding applies only to displayed values.
 \end{table}
 
 The Codex variant has higher agreement with its own Silver test labels but an approximately 0.011 lower exact F1 on Gold150 than the alternative variant. The channel replacement also changes record inclusion: 2,353 of the 2,500 Codex annotations are retained, compared with 2,459 alternative annotations. The contrast describes the resulting pools rather than an isolated annotation-channel effect.

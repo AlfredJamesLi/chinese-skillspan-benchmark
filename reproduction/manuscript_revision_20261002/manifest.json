@@ -37,11 +37,11 @@
   },
   "files_sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "44e0ecf49951dd690f55d141868b7084109fca60f2c8072d271d5ff394adf317",
-    "README.md": "661aacb80a785841e3353cb79b8c3c079dcce68cbf299e27f11137f4c8dfbd71",
+    "Chinese_SkillSpan_revised_20261002.pdf": "49f7086c754ac11109578d78d0d267fdbf875dcdf3584ee6cd43a8a0a8699a73",
+    "README.md": "f2e4850147daa0ab507e4bf4d78dfcedfef539eb0e81dff40c45e1a7449ed1a6",
     "source/0main.tex": "d6d2d69a11ca5bf2d57ffbb98d002b4ab113d8b5b32ebb412c8942ff7c918eb4",
     "source/1Introduction.tex": "329ebdc54469adb5da2454b823af2eb7980578ac876b929f76bb82208d4b6b5b",
-    "source/2Framework.tex": "b88824363f452603132a2917d3f9f1c71971ce8c444c7618649be31f342ab8b2",
+    "source/2Framework.tex": "8a1a51716db45fde7407c6c6216679e7fbfb30b5857573a315d288f7ed76cf6d",
     "source/3Experiments.tex": "f2f1abb872fd8a0012ddbbcfa094cf289b222df69574cadc43fe4654657e061c",
     "source/6Conclusion.tex": "f5d5aa5a81d0025072dfe8a1134275b6d506277f87ff9ce1784f9a158ee429da",
     "source/figures/Figure2_illustrated.pdf": "5f73125afb6d5e049b736162787a456b19a87e2eb8379e29c3a48313459a743f",
@@ -82,7 +82,7 @@
     "abstract_results_focus_20261003/README.md": "3ab3e675c260c82a12b5a1363e6a3a34c6242747f351fb4c6d1d53cdd49df6cc",
     "source/5Relatedwork.tex": "f252fa133a9b6a1e1e58c6342b11596e4d312ca13a06cb82c5d3199800f08936",
     "source/tex/appendix_C_experiments_R16.tex": "02de71fd55a6c372fab5362f9be0343be45d500f38c11ed94adec2c2f3f30ba7",
-    "source/tex/expanded_silver_results_20260917.tex": "b0634615f298d54d06357caf32643a1d2b17e1fb100f531f1db085a9ef804176",
+    "source/tex/expanded_silver_results_20260917.tex": "4b8c2dc7831c7835d9df41aa21eb17a607e9ab687cf2856b256dfb46a8e020ae",
     "review_integration_20261003/README.md": "eda437b790914ca6d94dd9ea098982abb8ef6684ad997d1e006198f076f53923",
     "review_integration_20261003/disposition.json": "50da61202e7741c458b843202eaa53a00a316b1e3babc362761719c57ab13386",
     "review_integration_20261003/disposition.md": "5c66aed24c5e8c8b6b71f0069adc62150752cb2b7146c9bab4355fe99d2e6d1b",
@@ -91,7 +91,7 @@
     "title_benchmark_alignment_20261003/edits.json": "bc66a8e8092632854a76f6802bdfa7f77a630c854b6a0671e70647d37a236c61",
     "title_benchmark_alignment_20261003/README.md": "5ad747549c9a8b5df13251aac4974bdd6cb669b9af00e07422a5bb16c3f201ca",
     "source/tex/external_benchmarks/paper_tables_appendix.tex": "4c077b2b685bfddbe01fcfc53ee23905a0e42d39a7f4f663050277c06017e6ca",
-    "source/tex/review20260923/model_identity.tex": "b56e0146965546136abb1c2652a2cd2babc52a8f8cac164ff957084661a20e82",
+    "source/tex/review20260923/model_identity.tex": "ce58b72d49a9a4f43181646cbccdb08108df60bdeadb929658426550766a7ffd",
     "source/tex/student_protocol_R12.tex": "070cd135433046966c07f6c8cead472ea06e18fab62ea81c909aaf60d2534d3e",
     "short_line_polish_20261003/README.md": "b9c6703ec74295ec3a75987535ee0640da93dcc7cfae74c36427803c155f75c0",
     "short_line_polish_20261003/edits.json": "a3614093badd83e87934589050ecfa2bf34223cf79569b1c96e604162f71db9e",
@@ -1141,5 +1141,13 @@
     "Kimi_model": "kimi-k2.6",
     "Kimi_thinking": "disabled",
     "exact_model_snapshot_not_inferred": true
+  },
+  "gateway_scope_revision": {
+    "date": "2026-10-04",
+    "passed": true,
+    "pages": 39,
+    "pdf_sha256": "49f7086c754ac11109578d78d0d267fdbf875dcdf3584ee6cd43a8a0a8699a73",
+    "scientific_results_unchanged": true,
+    "scope": "GPT/Claude inference, supplementary alternative-pool adaptation, and separately recorded QA150 suggestion layers; no unsupported restriction of LLM use to annotation reference and predictions."
   }
 }
