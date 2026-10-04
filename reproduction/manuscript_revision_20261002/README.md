@@ -1,8 +1,10 @@
 # Chinese-SkillSpan: current manuscript
 
+The [reviewer-supplement revision](../reviewer_supplement_20261004/README.md) clarifies human-reference and Silver-target results and reports IAA50 intersections with the frozen training files. The current PDF contains 37 pages. No labels or model point scores changed.
+
 **Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements**
 
-[Read the revised PDF](Chinese_SkillSpan_revised_20261002.pdf). The current revision is dated 4 October 2026 and contains 36 pages. The directory and PDF filename are retained so existing links continue to work.
+[Read the revised PDF](Chinese_SkillSpan_revised_20261002.pdf). The current revision is dated 4 October 2026 and contains 37 pages. The directory and PDF filename are retained so existing links continue to work.
 
 This revision clarifies the original corpus split and subsequent labeled experimental splits, reconciles the Silver-pool counts, and adds source-group bootstrap intervals and K/S/T macro-F1. It uses the latest independent annotation results (typed F1 0.818), replaces the two workflow illustrations with editable vector diagrams, and moves external-task experiments into [separate supplementary materials](../major_revision_20261004/external_experiments/README.md). The benchmark title is retained; conclusions distinguish diagnostic comparison from new-document generalization.
 

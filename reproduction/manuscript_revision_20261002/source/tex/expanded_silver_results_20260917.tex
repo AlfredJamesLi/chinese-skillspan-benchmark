@@ -8,12 +8,12 @@ The expanded Qwen runs use seed 42 and the shared prompt, occurrence output, par
 Table~\ref{tab:expanded-silver-main} reports the two pooled Qwen runs against their held-out Silver targets and the shared human reference; the main results discuss the distinction between these evaluation targets.
 
 \begin{table}[htbp]
-\caption{Expanded-pool Qwen results (seed 42). All scores are typed exact micro-F1 except the final relaxed-F1 column. Gold150 is used only for the additional human-reference evaluation.}
+\caption{Expanded-pool Qwen results (seed 42). Silver columns measure agreement with generated targets; Gold150 columns use human-finalized labels. Scores are typed exact micro-F1 except the final relaxed-F1 column.}
 \label{tab:expanded-silver-main}
 \centering\small
 \begin{tabularx}{\linewidth}{@{}Lcccc@{}}
 \toprule
-Pool variant & \makecell{Silver\\validation} & \makecell{Silver\\test} & \makecell{Gold150\\exact} & \makecell{Gold150\\relaxed} \\
+Pool variant & \makecell{Silver validation\\agreement} & \makecell{Silver test\\agreement} & \makecell{Gold150\\exact} & \makecell{Gold150\\relaxed} \\
 \midrule
 Alt.: 8,943 / 351 / 352 & 0.783 & 0.759 & 0.597 & 0.713 \\
 Codex: 8,842 / 348 / 350 & 0.833 & 0.809 & 0.585 & 0.703 \\

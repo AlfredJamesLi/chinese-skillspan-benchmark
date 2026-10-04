@@ -1,0 +1,286 @@
+{
+  "schema": 1,
+  "scope": "Read-only audit of existing independent-coder exports against frozen experimental inputs; no labels or model scores created.",
+  "inputs_sha256": {
+    "manifest": "31611f2cf76adb94d8273529c043786dbffd31a9a6aebada3e664444f5e55888",
+    "B2_train": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+    "B2_dev": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+    "Gold150": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "expanded_zip": "53490f44499887a3d1fc9d09f9d84e63013361fbdcb1cfb217a85f6a04b18617",
+    "new_sentences": "7fbe9223a739c67ef254c2bd17bf04d9879b2d84acd039a04b138fef75809638",
+    "coder_A": "9aba771a19ca2455f7fac7c6d490a9fca04438e819bea32320d5bf00a9640049",
+    "coder_B": "9d27391f710cd81fb10427201f7a27560b11a9ebf98479d5463434c04084986a",
+    "coder_C": "1265bd54237fcf959abc6803208a7f7304d2a8e91e763b54989e031e6bafca8c",
+    "prior_data_audit": "e6f05e57c2e7d7d9f85ea8a010df996de0f72f6dbec61e744cc31e8e0cbcd53a",
+    "experiment_identity_recheck": "7b9f3456f7400a37e4db766f9fdefcebf023372d8e51e532832429ad45aa1145",
+    "author_confirmation": "ce061dd102d6a7db177818b03cc0d1d8fba8a534ea7e8c73b4c6a766c9cddb40"
+  },
+  "sample": {
+    "n": 50,
+    "distinct_source_ids": 50,
+    "distinct_exact_texts": 50,
+    "distinct_recorded_advertisements": 50,
+    "source_counts": {
+      "上市公司招聘": 8,
+      "事业单位招聘": 16,
+      "阿里云公开数据集": 26
+    },
+    "all_recorded_advertisements_match_source_file_and_row": true
+  },
+  "B2_and_human_reference": {
+    "B2_train": {
+      "records": 2150,
+      "distinct_shared_sentence_keys": {
+        "id": 0,
+        "exact_text": 0,
+        "NFC_text": 0,
+        "NFKC_no_space_casefold_text": 0
+      },
+      "sample_records_matched": {
+        "id": 0,
+        "exact_text": 0,
+        "NFC_text": 0,
+        "NFKC_no_space_casefold_text": 0
+      },
+      "shared_recorded_expansion_advertisement_groups": 0,
+      "document_scope": "Only expansion source_file+source_row_id keys are comparable here; cross-namespace original-corpus document identity is not inferred."
+    },
+    "B2_dev": {
+      "records": 169,
+      "distinct_shared_sentence_keys": {
+        "id": 0,
+        "exact_text": 0,
+        "NFC_text": 0,
+        "NFKC_no_space_casefold_text": 0
+      },
+      "sample_records_matched": {
+        "id": 0,
+        "exact_text": 0,
+        "NFC_text": 0,
+        "NFKC_no_space_casefold_text": 0
+      },
+      "shared_recorded_expansion_advertisement_groups": 0,
+      "document_scope": "Only expansion source_file+source_row_id keys are comparable here; cross-namespace original-corpus document identity is not inferred."
+    },
+    "Gold150": {
+      "records": 150,
+      "distinct_shared_sentence_keys": {
+        "id": 0,
+        "exact_text": 0,
+        "NFC_text": 0,
+        "NFKC_no_space_casefold_text": 0
+      },
+      "sample_records_matched": {
+        "id": 0,
+        "exact_text": 0,
+        "NFC_text": 0,
+        "NFKC_no_space_casefold_text": 0
+      },
+      "shared_recorded_expansion_advertisement_groups": 0,
+      "document_scope": "Only expansion source_file+source_row_id keys are comparable here; cross-namespace original-corpus document identity is not inferred."
+    }
+  },
+  "expanded": {
+    "adopted_Codex_9540": {
+      "train": {
+        "member_sha256": "2286848c32c08285f49b9b068aa20bce2592c059dc54c37b7221405873e78ba5",
+        "records": 8842,
+        "distinct_shared_sentence_keys": {
+          "id": 46,
+          "exact_text": 46,
+          "NFC_text": 46,
+          "NFKC_no_space_casefold_text": 46
+        },
+        "sample_records_matched": {
+          "id": 46,
+          "exact_text": 46,
+          "NFC_text": 46,
+          "NFKC_no_space_casefold_text": 46
+        },
+        "shared_recorded_expansion_advertisement_groups": 47,
+        "document_scope": "Only expansion source_file+source_row_id keys are comparable here; cross-namespace original-corpus document identity is not inferred."
+      },
+      "val": {
+        "member_sha256": "8874508307688d9c0a764658a82ccb5f0dbf72d8a262e5a5304a8768ef4db1ac",
+        "records": 348,
+        "distinct_shared_sentence_keys": {
+          "id": 2,
+          "exact_text": 2,
+          "NFC_text": 2,
+          "NFKC_no_space_casefold_text": 2
+        },
+        "sample_records_matched": {
+          "id": 2,
+          "exact_text": 2,
+          "NFC_text": 2,
+          "NFKC_no_space_casefold_text": 2
+        },
+        "shared_recorded_expansion_advertisement_groups": 2,
+        "document_scope": "Only expansion source_file+source_row_id keys are comparable here; cross-namespace original-corpus document identity is not inferred."
+      },
+      "test": {
+        "member_sha256": "018cbcfd48d1155e3552527f61597c4bf84f69ca17e60586a10ea908280a0655",
+        "records": 350,
+        "distinct_shared_sentence_keys": {
+          "id": 1,
+          "exact_text": 1,
+          "NFC_text": 1,
+          "NFKC_no_space_casefold_text": 1
+        },
+        "sample_records_matched": {
+          "id": 1,
+          "exact_text": 1,
+          "NFC_text": 1,
+          "NFKC_no_space_casefold_text": 1
+        },
+        "shared_recorded_expansion_advertisement_groups": 1,
+        "document_scope": "Only expansion source_file+source_row_id keys are comparable here; cross-namespace original-corpus document identity is not inferred."
+      },
+      "combined": {
+        "records": 9540,
+        "distinct_shared_sentence_keys": {
+          "id": 49,
+          "exact_text": 49,
+          "NFC_text": 49,
+          "NFKC_no_space_casefold_text": 49
+        },
+        "sample_records_matched": {
+          "id": 49,
+          "exact_text": 49,
+          "NFC_text": 49,
+          "NFKC_no_space_casefold_text": 49
+        },
+        "shared_recorded_expansion_advertisement_groups": 49,
+        "document_scope": "Only expansion source_file+source_row_id keys are comparable here; cross-namespace original-corpus document identity is not inferred."
+      }
+    },
+    "alternative_API_9646": {
+      "train": {
+        "member_sha256": "1770ddc661bd4e3a71ce4ef715809e5a6808b59a9723ab1274152d415680b411",
+        "records": 8943,
+        "distinct_shared_sentence_keys": {
+          "id": 46,
+          "exact_text": 46,
+          "NFC_text": 46,
+          "NFKC_no_space_casefold_text": 46
+        },
+        "sample_records_matched": {
+          "id": 46,
+          "exact_text": 46,
+          "NFC_text": 46,
+          "NFKC_no_space_casefold_text": 46
+        },
+        "shared_recorded_expansion_advertisement_groups": 47,
+        "document_scope": "Only expansion source_file+source_row_id keys are comparable here; cross-namespace original-corpus document identity is not inferred."
+      },
+      "val": {
+        "member_sha256": "dfdbc947ced728642c4af730700050199132f80abe0515e0db795cab64f70aec",
+        "records": 351,
+        "distinct_shared_sentence_keys": {
+          "id": 2,
+          "exact_text": 2,
+          "NFC_text": 2,
+          "NFKC_no_space_casefold_text": 2
+        },
+        "sample_records_matched": {
+          "id": 2,
+          "exact_text": 2,
+          "NFC_text": 2,
+          "NFKC_no_space_casefold_text": 2
+        },
+        "shared_recorded_expansion_advertisement_groups": 2,
+        "document_scope": "Only expansion source_file+source_row_id keys are comparable here; cross-namespace original-corpus document identity is not inferred."
+      },
+      "test": {
+        "member_sha256": "38066599fa94a21bcf0db387e2479c849c2f8e6d95c950b706cbdae4faa7f9fc",
+        "records": 352,
+        "distinct_shared_sentence_keys": {
+          "id": 1,
+          "exact_text": 1,
+          "NFC_text": 1,
+          "NFKC_no_space_casefold_text": 1
+        },
+        "sample_records_matched": {
+          "id": 1,
+          "exact_text": 1,
+          "NFC_text": 1,
+          "NFKC_no_space_casefold_text": 1
+        },
+        "shared_recorded_expansion_advertisement_groups": 1,
+        "document_scope": "Only expansion source_file+source_row_id keys are comparable here; cross-namespace original-corpus document identity is not inferred."
+      },
+      "combined": {
+        "records": 9646,
+        "distinct_shared_sentence_keys": {
+          "id": 49,
+          "exact_text": 49,
+          "NFC_text": 49,
+          "NFKC_no_space_casefold_text": 49
+        },
+        "sample_records_matched": {
+          "id": 49,
+          "exact_text": 49,
+          "NFC_text": 49,
+          "NFKC_no_space_casefold_text": 49
+        },
+        "shared_recorded_expansion_advertisement_groups": 49,
+        "document_scope": "Only expansion source_file+source_row_id keys are comparable here; cross-namespace original-corpus document identity is not inferred."
+      }
+    }
+  },
+  "provenance_verification": {
+    "B2_and_Gold150_hashes_match_prior_frozen_audit": true,
+    "all_six_expanded_member_hashes_match_prior_frozen_audit": true,
+    "prior_audit_verified_expanded_BIO_ids_and_texts_against_Qwen_training_manifest_inputs": true
+  },
+  "agreement_recomputed": {
+    "span_counts": {
+      "A": 104,
+      "B": 123,
+      "C": 113
+    },
+    "mean_pairwise_typed_exact_F1": 0.8181457103884081,
+    "mean_pairwise_boundary_F1": 0.8504091655280407,
+    "all_three_identical_sentences": 34,
+    "all_three_empty_sentences": 11,
+    "L_spans_per_coder": {
+      "A": 2,
+      "B": 2,
+      "C": 2
+    },
+    "label_stage": "Independent annotations with individual self-review, as clarified by the authors; no adjudicated consensus gold created."
+  },
+  "archived_prompt_checks": {
+    "historical_Silver_rev1": {
+      "sha256": "cd70bb89373955d51140f3e83a0d2a03e579f4cf8f8031748b46619c6eed89dc",
+      "sample_complete_text_occurs_verbatim": 0,
+      "sample_complete_text_occurs_NFC": 0,
+      "sample_complete_text_occurs_NFKC_no_space_casefold": 0
+    },
+    "historical_Silver_rev2": {
+      "sha256": "a4505a51ebfe43e56712444d7b8d4671307ad650f67a37de6764cbde5b85c01e",
+      "sample_complete_text_occurs_verbatim": 0,
+      "sample_complete_text_occurs_NFC": 0,
+      "sample_complete_text_occurs_NFKC_no_space_casefold": 0
+    },
+    "public_API_reformulation_v1": {
+      "sha256": "b6223e9a2e9b02afa19cba79ba908766d9240acb233723fbe6f53b40e6b04fd6",
+      "sample_complete_text_occurs_verbatim": 0,
+      "sample_complete_text_occurs_NFC": 0,
+      "sample_complete_text_occurs_NFKC_no_space_casefold": 0
+    },
+    "shared_inference_prompt": {
+      "sha256": "75eeae952fbab44de72442ddd530896d498d63e8b07f1e6b20f0e6a399118557",
+      "sample_complete_text_occurs_verbatim": 0,
+      "sample_complete_text_occurs_NFC": 0,
+      "sample_complete_text_occurs_NFKC_no_space_casefold": 0
+    }
+  },
+  "prompt_scope": "Checks only the listed archived prompt files for complete sample sentences, not every earlier chat/session, partial example, or unarchived teacher context. Zero matches is not proof of universal prompt-example exclusion.",
+  "interpretation": [
+    "This is an annotation-agreement sample, not a scored model test set.",
+    "Adjudication alone cannot make this sample an independent test of the already trained expanded models, because 46 sample sentences occur verbatim in each archived expanded training split and another two occur in validation.",
+    "The observed expanded-training overlap does not invalidate blinded human inter-annotator agreement; human-label independence and model-training isolation are different requirements.",
+    "No complete training/prompt-exposure clearance is claimed for an independent test. No new test or consensus labels are manufactured."
+  ]
+}

@@ -1,7 +1,7 @@
 \section{Evaluation Protocol}
 \label{sec:experiments}
 
-The evaluation compares prompted extraction, measures gains from Silver-supervised Qwen adaptation, and tests encoder initialization under shared task-specific settings. Type, span-length, and empty-sentence diagnostics complement aggregate scores. Chinese systems share the human reference; Silver-target evaluation measures agreement with generated labels on its own held-out partition.
+The evaluation compares prompted extraction, measures gains from Silver-supervised Qwen adaptation, and tests encoder initialization under shared task-specific settings. Type, span-length, and empty-sentence diagnostics complement aggregate scores. Primary Chinese comparisons use the human-finalized reference. Supplementary Silver-validation and Silver-test scores measure agreement with generated labels and remain separate from human-reference results.
 
 \subsection{Datasets and Splits}
 
@@ -49,7 +49,7 @@ Inference-only and expanded-pool results are single runs unless otherwise stated
 
 JobBERT-zh provides a sequence-labeling baseline with a Chinese recruitment-domain-pretrained encoder and a CRF head. We compare Qwen2.5-14B-Instruct (Qwen)~\citep{qwen2025report} with and without a project LoRA adapter~\citep{hu2022lora} for generative extraction.
 
-The shared-guideline inference comparison includes GPT (API), Claude (API; Sonnet 4.5), DeepSeek-V4-Pro (DeepSeek), Kimi k2.6 (Kimi), and Qwen. DeepSeek is evaluated with thinking enabled and disabled, giving six configurations. The teacher and evaluated GPT are different recorded configurations. Gold150 has human-finalized labels, whereas Silver-test targets are model-generated. Shared guidelines and historical assisted review can reinforce the conventions used by the annotation workflow; agreement with those conventions is not independent validation of a teacher model. \hyperref[app:c]{Appendix~C} records service identifiers, access routes, and inference settings.
+The shared-guideline inference comparison includes GPT (API), Claude (API; Sonnet 4.5), DeepSeek-V4-Pro (DeepSeek), Kimi k2.6 (Kimi), and Qwen. DeepSeek is evaluated with thinking enabled and disabled, giving six configurations. The adopted Silver annotation used the recorded Codex selection, whereas the GPT baseline used a separate API configuration (Table~\ref{tab:model-identity}). Their errors need not be independent. Shared guidelines and historical assisted review can reinforce annotation conventions; agreement with these conventions does not independently validate the teacher. \hyperref[app:c]{Appendix~C} records service identifiers, access routes, and inference settings.
 
 \input{tex/student_protocol_R12}
 

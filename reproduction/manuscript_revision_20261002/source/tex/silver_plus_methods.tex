@@ -20,15 +20,15 @@ The reference contains 663 spans: 448 S, 125 K, 88 T, and two L. Eight sentences
 Layer & Records & Support / composition & Role \\
 \midrule
 Original corpus & 22,840 & Four source collections & Source corpus and original partition \\
-Human reference & 150 & 663 spans; 8 empty; 50 + 100 cohorts & Frozen evaluation targets \\
+Human reference & 150 & 663 spans; 8 empty; 50 + 100 cohorts & Primary diagnostic evaluation \\
 Original Silver pool & 2,451 & 100 reviewed; 730 conflict-origin; 1,621 other & Candidate labels; version-specific inclusion \\
 Initial review & 100 & Versioned review layers (\hyperref[app:b]{Appendix B}) & Review of LLM labels; separate from evaluation \\
 Post-generation review & 100 & Machine: 144 spans; reviewed: 148 & Sampled machine--human quality check \\
 JobBERT train / dev & 2,156 / 169 & Earlier/revised labels on matched texts & Historical supervision and selection \\
 Qwen revised-label train / dev & 2,150 / 169 & 3,646 / 345 spans; 869 / 82 empty & Earlier adapter fitting and selection \\
 Additional dual-review QA & 150 & Both reviewers complete; 101 identical span sets & Quality check of the new Silver portion \\
-Blinded agreement & 50 & Three independent coders; five + 15 training sentences excluded & Agreement analysis only; not a model test set \\
-Expanded Silver (Codex) & 9,540 & 8,842 / 348 / 350 train / validation / test & Adopted expanded supervision; additional Gold150 check \\
+Blinded agreement & 50 & Three independent coders; five + 15 training sentences excluded & Handbook agreement; individual labels \\
+Expanded Silver (Codex) & 9,540 & 8,842 / 348 / 350 train / validation / test & Training, selection, and Silver-target checks \\
 \bottomrule
 \end{tabularx}
 \end{table}

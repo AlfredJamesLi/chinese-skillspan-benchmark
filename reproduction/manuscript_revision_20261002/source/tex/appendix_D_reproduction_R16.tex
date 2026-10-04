@@ -19,7 +19,7 @@ The preparatory target combined those 2,064 valid keys with 7,936 new candidates
 
 New-candidate selection used requirement-related keywords, fixed hash ranking, and recorded source quotas. HTML/whitespace cleaning, sentence splitting, and length filters preceded annotation. Exclusion checks used the stored sentence strings and available pretraining dump. The 3.2-million-line dump's content hash was not retained, so the historical pretraining exposure cannot be fully reconstructed. The original frozen labels remain tied to their generation-time handbook; one later rule-compatible example cannot certify an entire historical pool.
 
-\subsection{Document-Level Overlap}
+\subsection{Split Membership and Document Overlap}
 Original records are grouped by their stored source-document identifier; new expansion records use source-file and source-row identifiers. Every inspected record maps within its source namespace. No crosswalk between the old and new namespaces is available, so the observed overlaps are not an exhaustive cross-source duplicate analysis.
 
 \begin{table}[htbp]
@@ -45,6 +45,9 @@ No exact or NFC-normalized sentence is shared between the later B2 training/deve
 The original 22,840-sentence split already enforced source-document separation, as documented by the earlier split audit and reproduced from the frozen corpus. The later B2 manifest explicitly specifies sentence-level isolation, and its training, development, and Gold150 file hashes match the evaluated Qwen package. The additional group analysis concerns those later assembled splits; it does not invalidate the original split or the successful reference-sentence exclusion checks.
 
 B2 training contains 1,910 distinct complete texts among 2,150 records. Repeated records remain weighted in training. No new deduplicated training run is implied by this audit, and shared source documents alone do not quantify any effect on model scores.
+
+\paragraph{Agreement-sample membership.}
+No agreement sentence matches B2 training/development (2,150/169) or Gold150 by ID or normalized complete text. Each expanded variant contains 46 in training, two in validation, and one in its Silver test; one is absent. Human coding remains blinded, but adjudication cannot remove this exposure from already trained models. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/reviewer_supplement_20261004}{membership audit} records the frozen-input hashes and counts.
 
 \subsection{Resource Access and Privacy Screening}
 \label{sec:resource-access}

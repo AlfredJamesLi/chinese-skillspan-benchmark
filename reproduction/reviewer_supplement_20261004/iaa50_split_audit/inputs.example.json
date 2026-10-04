@@ -1,0 +1,23 @@
+{
+  "description": "Illustrative relative paths only. Replace local_inputs placeholders with available original files. Paths resolve against the working directory. Complete expanded inputs are not included in this public package.",
+  "files": {
+    "manifest": "local_inputs/agreement/sample_manifest.json",
+    "coder_A": "local_inputs/agreement/latest50_A.jsonl",
+    "coder_B": "local_inputs/agreement/latest50_B.jsonl",
+    "coder_C": "local_inputs/agreement/latest50_C.jsonl",
+    "B2_train": "local_inputs/silver_plus_v6a_nocross/train_b2.jsonl",
+    "B2_dev": "local_inputs/silver_plus_v6a_nocross/dev_b2.jsonl",
+    "Gold150": "local_inputs/gold150/gold150_test.jsonl",
+    "expanded_zip": "local_inputs/expanded_silver_splits_20260920_docs_20260921.zip",
+    "new_sentences": "local_inputs/silver_plus_10k_prep_20260913/new_unlabeled/new_sentences.jsonl",
+    "prior_data_audit": "reproduction/major_revision_20261004/data_audit/audit.json",
+    "experiment_identity_recheck": "reproduction/major_revision_20261004/data_audit/key_semantics/recheck.json",
+    "author_confirmation": "local_inputs/agreement/author_confirmation.json"
+  },
+  "prompts": {
+    "historical_Silver_rev1": "local_inputs/prompts/silver_rev1_original.txt",
+    "historical_Silver_rev2": "local_inputs/prompts/silver_rev2_original.txt",
+    "public_API_reformulation_v1": "local_inputs/prompts/silver_prompt.txt",
+    "shared_inference_prompt": "local_inputs/prompts/LSKT_V4_ANNOTATION_PROMPT.txt"
+  }
+}

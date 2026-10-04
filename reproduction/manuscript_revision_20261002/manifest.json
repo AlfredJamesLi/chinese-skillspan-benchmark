@@ -1,24 +1,23 @@
 {
   "date": "2026-10-04",
+  "revision": "reviewer supplement: annotation roles and IAA50 membership",
   "title": "Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements",
   "baseline": {
-    "github": "8a2513d7eabb06e055cc029ec882bf6963796ed2",
-    "overleaf": "e0df3b10d9045388178399fa0f93e8b9e8069939"
+    "github": "265dc2faf42cf4b2e8b9480c25c45bfa28742e55",
+    "overleaf": "70cb1ee5e7d04732cf7acf1823cdef40cd8c7783"
   },
   "validation": {
-    "pages": 36,
-    "pdf_sha256": "3afeef91c15da05585320f1b0b02153a2b45bfa8c5ba15821647cd64c83415b9",
+    "pages": 37,
+    "pdf_sha256": "4c140622c87d214059a2f8b755c9a609ea59620395949e93cc1a3fc88800cc69",
     "compile_warnings": [],
     "visual_inspection_complete": true,
-    "core_values_present": true,
-    "external_appendix_removed": true
+    "core_values_present": true
   },
-  "scope": "Manuscript revision and supplementary audits; frozen labels, model outputs and point scores unchanged.",
   "files_sha256": {
-    "source/0main.tex": "ee05d7ec770bcf24e6191af4bbeec61e74884ded0ca6582e6cdd94ed3d1aed1e",
-    "source/1Introduction.tex": "2747ce61150f007fbdbc617099e7f85ce751909a52e3bda157372dd7a67ce1f6",
+    "source/0main.tex": "2383f19908340c686957519b102786389cf50ea0f0fdafd6b0108c087c2b20e4",
+    "source/1Introduction.tex": "c2947dbe8cf4515bfdce69a9358104662c6dee9d04dc6cf955ac309ab9ac7f8b",
     "source/2Framework.tex": "5783a967fcd89fe4ff87131a860756bd0e376cb035036d8878fb877b715b4fd0",
-    "source/3Experiments.tex": "65c3b994c697d875960261f211bce374d31ed5e8ad90a465a1b540b203cf2d3d",
+    "source/3Experiments.tex": "bf719e332dd57acd8f93e4d7ee5589fb5515799c3d93b955d338094a19098332",
     "source/5Relatedwork.tex": "9c5079dc06ab46a608620b78bd30c405d9b766d7d62f74fbd30f65849b2f48cc",
     "source/6Conclusion.tex": "448b60d0ee9ece014dcb50c66fa7886187e5778c810be1afd9d27dde8876f51c",
     "source/9Reference.bib": "d3b5569e17838cd1543e2cf0b025bce7f1f9bffe21c53783adc5208e34d8dee3",
@@ -35,14 +34,14 @@
     "source/figures/workflow_major_revision_20261004.pdf": "b567cae3f1854ffac6880acc8c52ddee77547388b399a0b44c46db1d60899607",
     "source/figures/workflow_major_revision_20261004.svg": "4c9bb29d749e469810e23e631d8ca4dd129e87c5a154407b251585333828be43",
     "source/image/chinese-skillspan-workflow-arrow-cleanup-20261002.png": "0ad86afdd080fc17589caf6b9162c79dee043ba4d30e9d5c51575b113e8392af",
-    "source/tex/annotation_quality_R12.tex": "3e691bf9747ade349ff4a5a630311c62910d423214c465263d4eb29fbb2f54ea",
+    "source/tex/annotation_quality_R12.tex": "d56b3e13c690d51e535ef9d3ee0a0a154e5bde0cb8fd4215d9b53132cc8f3d8f",
     "source/tex/appendix_A_guide_R19.tex": "a993c2532aeaf96020a493b5663108b7cf88c71563c49d6539e89761ab125ee3",
     "source/tex/appendix_B_quality_R16.tex": "57a21e4eee507a9780a932c7d0c4eaf3812a0dcecd0b0bed3a499c5f09e4b5ec",
     "source/tex/appendix_C_experiments_R16.tex": "d8e0d6c97c6810d55503d5bf2fd513704f1ef6e8c15850e47da2425814ff8540",
     "source/tex/appendix_C_shared_R16.tex": "b5b748061408916f6bc36ea3130af54a01b43c042a9437feab7efc9cbf4a0dab",
-    "source/tex/appendix_D_reproduction_R16.tex": "b63f8d6ae6569e53f90939254f286035879b92507b6f9221cd4acd6c7f321d32",
+    "source/tex/appendix_D_reproduction_R16.tex": "30f440902d40d52e8feea8d703f727f8f2f4259a52adc65bfc4deba9cc40f006",
     "source/tex/coding_detail_no_counts.tex": "a7f01632ae4ed03913e9bb40c8e6c7a945cea6a567eb448b34fd968d0fba4974",
-    "source/tex/expanded_silver_results_20260917.tex": "4b8c2dc7831c7835d9df41aa21eb17a607e9ab687cf2856b256dfb46a8e020ae",
+    "source/tex/expanded_silver_results_20260917.tex": "c7e3db502561281d250ec1cf0801da46013d7f09390ed13863a837ad121e3f41",
     "source/tex/external_benchmarks/paper_A_native.tex": "206798e3211a39e897577ebfdb3789075c6fd398bdc8a39cc5e8440f3b1ae917",
     "source/tex/external_benchmarks/paper_appendix.tex": "58e01858ae9eae77e90e143436e0430d3af24387508eaa3dec1dfcdf7d213f98",
     "source/tex/external_benchmarks/paper_methods.tex": "5ba329fc0cd9f697cba5eec5eb4891daa5e3036079797509196766cf1c790369",
@@ -51,17 +50,17 @@
     "source/tex/external_benchmarks/paper_tables_main.tex": "55872e84223aa8c0042873b99f94a45680c0736cdd70348f76e2d8cbc68ce72f",
     "source/tex/qwen_diagnostics_round2.tex": "0e9d8e169d0dd264f53689eb789469c4139c2ed88c7a8db1a84f2ba4842baeee",
     "source/tex/representative_annotations_main.tex": "f40bbc7e611408f713e51dc1519dcea70d9ce18e43ee8e0b0b305aa6f6fc21a8",
-    "source/tex/review20260923/access_matrix.tex": "f736a7ae1607dd1094a38f7ea2c9dbb0b9db7627f00414c9e655fa8d1293e174",
+    "source/tex/review20260923/access_matrix.tex": "bbeca855003e4c06d3a93f7c3d9acad9b669a4a0c1e04f74c312eafb44df6a8c",
     "source/tex/review20260923/core_uncertainty.tex": "1449bf53b978c9087b698deede1575d3964c86bcb661171ccbfb682a381043d8",
     "source/tex/review20260923/model_identity.tex": "da55f1643648db8906e3d9bea6e475507b83359d16e94324d22689176e61d602",
     "source/tex/review20260923/source_stages.tex": "b3e164d1bc25d8f5745fc860aa0a001d68f546cfff354f8b91b8e89a802cc99c",
-    "source/tex/silver_plus_methods.tex": "f50f4ed8c6afdcd25cf04101bb817833c728c4aaf5a75f0cdc690df8618e3b23",
+    "source/tex/silver_plus_methods.tex": "e11b80f93140cae1505591374d03153511263c501700e2bd750270de7c3d6260",
     "source/tex/silver_plus_results.tex": "39fc37918e74a15bf6991c821d1f8f8873c35b7bc2510a7ca1e6b6c3998c5da9",
     "source/tex/skillspan_style_related.tex": "41b41683a204764fdc7acd10f44f4419c02a0aa51e56fb0aa398a43a92bd5bb6",
     "source/tex/stage2_result_values.tex": "4136efd2b5711e1b6f77dc52c78f3afbc63a3ce08f2c4c2a993f2480c1f3e4d1",
     "source/tex/stage2_shared_main.tex": "93bf4b7aaf3b4d07f72212f9a08b14cf9fbcdfe1cfd92c59376ff99defbeefba",
     "source/tex/student_protocol_R12.tex": "070cd135433046966c07f6c8cead472ea06e18fab62ea81c909aaf60d2534d3e",
-    "Chinese_SkillSpan_revised_20261002.pdf": "3afeef91c15da05585320f1b0b02153a2b45bfa8c5ba15821647cd64c83415b9",
-    "README.md": "cd3b4589975d0293b911a9e77081ee9b3483571f805b488049af6525294fbb6d"
+    "Chinese_SkillSpan_revised_20261002.pdf": "4c140622c87d214059a2f8b755c9a609ea59620395949e93cc1a3fc88800cc69",
+    "README.md": "b77a1f9a107e2b8e7291a399b4083e5eee74a9efcc86968ae460811883080daf"
   }
 }

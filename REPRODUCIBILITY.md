@@ -1,5 +1,7 @@
 # Reproduce Chinese-SkillSpan results
 
+[Annotation roles and IAA50 membership](reproduction/reviewer_supplement_20261004/README.md) clarify which results use human references and which use generated targets.
+
 The [4 October revision and checks](reproduction/major_revision_20261004/README.md) update the current manuscript, data accounting, source-document analysis and uncertainty estimates. Earlier experiments remain archived.
 
 Choose the task below. Each guide uses the same descriptive names as the manuscript; exact file names are listed only where needed to run a command or identify a result.
