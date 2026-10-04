@@ -1,7 +1,7 @@
-\subsection{Fine-Tuning with Silver-plus Labels}
+\subsection{Fine-Tuning with Silver Labels}
 \label{sec:silver-results}
 
-All three Qwen adapters improved exact precision and recall over the no-adapter baseline under the same inference protocol (Table~\ref{tab:gold150-main}, panel A). Mean typed exact micro-F1 increased from 0.361 to $0.540\pm0.035$. Each seed's paired interval against the baseline also excludes zero (Table~\ref{tab:core-paired}), conditional on the recorded runs and reference sentences. Under the same parser, partially rejected responses fall from 69 without an adapter to 2, 4, and 1 after adaptation. These gains do not separate semantic extraction from output-format learning.
+All three Qwen adapters improved exact precision and recall over the no-adapter baseline under the same inference protocol (Table~\ref{tab:gold150-main}, panel A). Mean typed exact micro-F1 increased from 0.361 to $0.540\pm0.035$. Each seed's paired interval against the baseline also excludes zero (Table~\ref{tab:core-paired}), conditional on the recorded runs and reference sentences. Partially rejected responses fall from 69 without an adapter to 2, 4, and 1 after adaptation. Valid spans from partially rejected responses remain in scoring; partial rejection differs from a whole-response failure. The measured benefit is end-to-end extraction, combining content prediction and valid output generation. A format-controlled intervention would be needed to separate those effects.
 
 \begin{table}[H]
 \caption{Evaluation of Silver-supervised fine-tuning on Gold150 ($n=150$). F1 scores (0--1) are mean $\pm$ sample SD over seeds 42, 43, and 44; Qwen without an adapter is a single run.}
@@ -26,7 +26,7 @@ Revised (B2) & 2,156 / 169 & $0.554\pm0.005$ \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-A: same base checkpoint, frozen messages, occurrence schema, parser, and decoding; adapters selected by B2 development F1. Boundary exact matches spans with types collapsed. B: same initial encoder/CRF and matched training/development texts, with both label sets changed. \nameref{sec:limitations} covers split and checkpoint limitations; the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{run ledger} gives per-seed Qwen scores for all three training runs.
+A: same base checkpoint, frozen messages, occurrence schema, parser, and decoding; adapters selected by B2 development F1. Boundary exact matches spans with types collapsed. B: same initial encoder/CRF and matched training/development texts, with both label sets changed. \nameref{sec:limitations} covers split and checkpoint limitations; the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{per-seed results} gives per-seed Qwen scores for all three training runs.
 \end{table}
 
 The historical JobBERT configuration achieved higher reference agreement with revised supervision (Table~\ref{tab:gold150-main}, panel B). The two conditions start from the same encoder and CRF and use matched training and development texts, but revise both sets of labels. Their difference therefore reflects changes to supervision and checkpoint selection together.

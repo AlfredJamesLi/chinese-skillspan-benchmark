@@ -1,0 +1,302 @@
+{
+  "public_commit": "8a2513d7eabb06e055cc029ec882bf6963796ed2",
+  "scope": "Source text fields in selected current public JSON/JSONL data and annotation exports; no PII values retained in this report. Download caches are local audit inputs only.",
+  "limitations": "Regex candidate screen, not a human privacy review or proof of de-identification. Names without contact context, obfuscation, international numbers, personal details, and hidden document metadata may be missed. Repeated exports counted in per-file totals; unique-text totals deduplicate exact strings.",
+  "files_scanned": 15,
+  "total_text_fields": 33660,
+  "unique_exact_texts": 28635,
+  "unique_texts_flagged": {
+    "email": 38,
+    "china_mobile": 74,
+    "landline": 50,
+    "contact_marker": 100,
+    "possible_person_contact": 48
+  },
+  "files": [
+    {
+      "path": "data/corpus_splits/dev.json",
+      "blob_sha": "fcdbc2d48ad5160b3c6c664442f61c19da675659",
+      "text_fields_scanned": 2143,
+      "flagged_text_fields": {
+        "email": 0,
+        "china_mobile": 7,
+        "landline": 2,
+        "contact_marker": 6,
+        "possible_person_contact": 4
+      },
+      "pattern_matches": {
+        "email": 0,
+        "china_mobile": 7,
+        "landline": 2,
+        "contact_marker": 9,
+        "possible_person_contact": 4
+      }
+    },
+    {
+      "path": "data/corpus_splits/test.json",
+      "blob_sha": "900159e636f594724d98808db410d0891e67b57e",
+      "text_fields_scanned": 3237,
+      "flagged_text_fields": {
+        "email": 22,
+        "china_mobile": 6,
+        "landline": 32,
+        "contact_marker": 25,
+        "possible_person_contact": 11
+      },
+      "pattern_matches": {
+        "email": 22,
+        "china_mobile": 6,
+        "landline": 41,
+        "contact_marker": 29,
+        "possible_person_contact": 14
+      }
+    },
+    {
+      "path": "data/corpus_splits/train.json",
+      "blob_sha": "6260056e2ae0a44a48147e61a4058f911cf58a12",
+      "text_fields_scanned": 17460,
+      "flagged_text_fields": {
+        "email": 17,
+        "china_mobile": 60,
+        "landline": 26,
+        "contact_marker": 76,
+        "possible_person_contact": 31
+      },
+      "pattern_matches": {
+        "email": 17,
+        "china_mobile": 66,
+        "landline": 27,
+        "contact_marker": 104,
+        "possible_person_contact": 31
+      }
+    },
+    {
+      "path": "data/gold150/gold150_test.jsonl",
+      "blob_sha": "e7e9fcf1e5acb601e931152cecf61ea2fb3b4e3c",
+      "text_fields_scanned": 150,
+      "flagged_text_fields": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 0,
+        "possible_person_contact": 0
+      },
+      "pattern_matches": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 0,
+        "possible_person_contact": 0
+      }
+    },
+    {
+      "path": "data/silver_plus_10k_prep_20260913/new_unlabeled/new_sentences.jsonl",
+      "blob_sha": "c556c3a45b28f6cfe21672161795f7aa3ea57fc2",
+      "text_fields_scanned": 7936,
+      "flagged_text_fields": {
+        "email": 9,
+        "china_mobile": 3,
+        "landline": 3,
+        "contact_marker": 8,
+        "possible_person_contact": 6
+      },
+      "pattern_matches": {
+        "email": 12,
+        "china_mobile": 4,
+        "landline": 4,
+        "contact_marker": 8,
+        "possible_person_contact": 6
+      }
+    },
+    {
+      "path": "data/silver_plus_10k_prep_20260913/old_silver/unique_valid.jsonl",
+      "blob_sha": "6d6bffc5ac592055d0f718cc161945d726e6154e",
+      "text_fields_scanned": 0,
+      "flagged_text_fields": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 0,
+        "possible_person_contact": 0
+      },
+      "pattern_matches": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 0,
+        "possible_person_contact": 0
+      }
+    },
+    {
+      "path": "data/silver_plus_v6a_nocross/dev_b2.jsonl",
+      "blob_sha": "5a206ff4f818ad582323759b0c28f5596915db45",
+      "text_fields_scanned": 169,
+      "flagged_text_fields": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 1,
+        "possible_person_contact": 0
+      },
+      "pattern_matches": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 1,
+        "possible_person_contact": 0
+      }
+    },
+    {
+      "path": "data/silver_plus_v6a_nocross/train_b2.jsonl",
+      "blob_sha": "b0e97532121be0396a8054b4f12ab9ae151c97e8",
+      "text_fields_scanned": 2150,
+      "flagged_text_fields": {
+        "email": 8,
+        "china_mobile": 2,
+        "landline": 9,
+        "contact_marker": 6,
+        "possible_person_contact": 3
+      },
+      "pattern_matches": {
+        "email": 8,
+        "china_mobile": 2,
+        "landline": 11,
+        "contact_marker": 6,
+        "possible_person_contact": 4
+      }
+    },
+    {
+      "path": "reproduction/agreement/finalguide_abc_20261003/data/latest50_A.jsonl",
+      "blob_sha": "3d5326d82e7b6a80939104aa01fedf5bb0de42c5",
+      "text_fields_scanned": 50,
+      "flagged_text_fields": {
+        "email": 0,
+        "china_mobile": 1,
+        "landline": 1,
+        "contact_marker": 1,
+        "possible_person_contact": 1
+      },
+      "pattern_matches": {
+        "email": 0,
+        "china_mobile": 1,
+        "landline": 1,
+        "contact_marker": 1,
+        "possible_person_contact": 1
+      }
+    },
+    {
+      "path": "reproduction/agreement/finalguide_abc_20261003/data/latest50_B.jsonl",
+      "blob_sha": "9bdf487fdb069893b54d577074d828f9ec755890",
+      "text_fields_scanned": 50,
+      "flagged_text_fields": {
+        "email": 0,
+        "china_mobile": 1,
+        "landline": 1,
+        "contact_marker": 1,
+        "possible_person_contact": 1
+      },
+      "pattern_matches": {
+        "email": 0,
+        "china_mobile": 1,
+        "landline": 1,
+        "contact_marker": 1,
+        "possible_person_contact": 1
+      }
+    },
+    {
+      "path": "reproduction/agreement/finalguide_abc_20261003/data/latest50_C.jsonl",
+      "blob_sha": "e4ece53dee918aa41ab0efc73be48d6f2b1cc7a1",
+      "text_fields_scanned": 50,
+      "flagged_text_fields": {
+        "email": 0,
+        "china_mobile": 1,
+        "landline": 1,
+        "contact_marker": 1,
+        "possible_person_contact": 1
+      },
+      "pattern_matches": {
+        "email": 0,
+        "china_mobile": 1,
+        "landline": 1,
+        "contact_marker": 1,
+        "possible_person_contact": 1
+      }
+    },
+    {
+      "path": "reproduction/evidence_review_20260925/annotation_layers/QA150.jsonl",
+      "blob_sha": "f2b583d82d8af786ebe4d6d46f9c619a51b23783",
+      "text_fields_scanned": 150,
+      "flagged_text_fields": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 0,
+        "possible_person_contact": 0
+      },
+      "pattern_matches": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 0,
+        "possible_person_contact": 0
+      }
+    },
+    {
+      "path": "reproduction/evidence_review_20260925/annotation_layers/blind50_A.jsonl",
+      "blob_sha": "2a059530d1af98b7fa113ef771e259a85cfb8d7f",
+      "text_fields_scanned": 50,
+      "flagged_text_fields": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 0,
+        "possible_person_contact": 0
+      },
+      "pattern_matches": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 0,
+        "possible_person_contact": 0
+      }
+    },
+    {
+      "path": "reproduction/evidence_review_20260925/annotation_layers/blind50_B.jsonl",
+      "blob_sha": "b61e7808785fba54fa78a043bfa325f13703fe09",
+      "text_fields_scanned": 50,
+      "flagged_text_fields": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 0,
+        "possible_person_contact": 0
+      },
+      "pattern_matches": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 0,
+        "possible_person_contact": 0
+      }
+    },
+    {
+      "path": "reproduction/evidence_review_20260925/annotation_layers/dual15.jsonl",
+      "blob_sha": "07df884ab5d0e1cde8b73b084234d01635648a5a",
+      "text_fields_scanned": 15,
+      "flagged_text_fields": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 0,
+        "possible_person_contact": 0
+      },
+      "pattern_matches": {
+        "email": 0,
+        "china_mobile": 0,
+        "landline": 0,
+        "contact_marker": 0,
+        "possible_person_contact": 0
+      }
+    }
+  ]
+}

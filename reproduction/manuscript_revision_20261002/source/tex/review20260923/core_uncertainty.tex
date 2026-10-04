@@ -1,14 +1,16 @@
 \begin{table}[!htbp]
 \centering\small
-\caption{Paired typed exact-F1 differences on Gold150, with conditional 95\% sentence-bootstrap intervals. All failures remain in the scored predictions.}
+\caption{Paired typed exact-F1 differences on the human reference, with 95\% intervals from resampling the 61 source-ID groups.}
 \label{tab:core-paired}
 \begin{tabularx}{\linewidth}{@{}Lrr@{}}
 \toprule Comparison & Difference & 95\% interval \\\midrule
-GPT (API) minus DeepSeek non-thinking & $+0.020$ & $[-0.026, 0.064]$ \\
-Qwen LoRA 42 minus no adapter & $+0.138$ & $[0.071, 0.208]$ \\
-Qwen LoRA 43 minus no adapter & $+0.202$ & $[0.132, 0.276]$ \\
-Qwen LoRA 44 minus no adapter & $+0.197$ & $[0.127, 0.271]$ \\
-Qwen LoRA seed mean minus no adapter & $+0.179$ & $[0.113, 0.249]$ \\
+GPT (API) minus DeepSeek non-thinking & ${+0.020}$ & $[-0.027, 0.061]$ \\
+Qwen LoRA 42 minus no adapter & ${+0.138}$ & $[0.069, 0.200]$ \\
+Qwen LoRA 43 minus no adapter & ${+0.202}$ & $[0.133, 0.269]$ \\
+Qwen LoRA 44 minus no adapter & ${+0.197}$ & $[0.123, 0.268]$ \\
+Qwen LoRA seed mean minus no adapter & ${+0.179}$ & $[0.111, 0.242]$ \\
+ESCOXLM-R minus XLM-R-large & ${+0.016}$ & $[-0.005, 0.035]$ \\
 \bottomrule
 \end{tabularx}
+\par\smallskip\RaggedRight\footnotesize Each bootstrap draw resamples complete source-ID groups with replacement and uses the same draw for all models. Intervals condition on the recorded runs and reference; they are pointwise and do not establish independence from guideline development.
 \end{table}

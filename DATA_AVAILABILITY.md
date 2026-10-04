@@ -1,5 +1,7 @@
 # Data access and licensing
 
+Current annotation versions and experimental access limits are summarized in the [4 October manuscript revision](reproduction/major_revision_20261004/README.md). The authors confirm permission for academic research use. This statement does not extend the repository license to third-party recruitment text. Automated contact-pattern screening found candidates requiring human review; it does not certify a fully anonymized release.
+
 ## Available materials
 
 | Resource | Access | Scope |

@@ -1,0 +1,78 @@
+{
+  "independent_aggregation_reproduces_all": true,
+  "comparisons": [
+    {
+      "key": "gpt_vs_deepseek",
+      "difference": 0.01974183750949121,
+      "ci95": [
+        -0.026543156338059957,
+        0.06149234793837466
+      ],
+      "bonferroni_six_comparisons_ci": [
+        -0.04280216184452584,
+        0.07645049215432083
+      ]
+    },
+    {
+      "key": "lora_42",
+      "difference": 0.13840130011199153,
+      "ci95": [
+        0.06889015893696147,
+        0.20001628650883352
+      ],
+      "bonferroni_six_comparisons_ci": [
+        0.04494563691167399,
+        0.22079111662089598
+      ]
+    },
+    {
+      "key": "lora_43",
+      "difference": 0.2021207854881632,
+      "ci95": [
+        0.13279769004682518,
+        0.2692574968166619
+      ],
+      "bonferroni_six_comparisons_ci": [
+        0.11072362765188262,
+        0.29400240792210125
+      ]
+    },
+    {
+      "key": "lora_44",
+      "difference": 0.19701370356423648,
+      "ci95": [
+        0.12320576701565769,
+        0.2676296254050064
+      ],
+      "bonferroni_six_comparisons_ci": [
+        0.09616712787798638,
+        0.2932754388011727
+      ]
+    },
+    {
+      "key": "lora_mean",
+      "difference": 0.17917859638813044,
+      "ci95": [
+        0.11136700701741781,
+        0.24169881369793567
+      ],
+      "bonferroni_six_comparisons_ci": [
+        0.08731161728281212,
+        0.26383975300039686
+      ]
+    },
+    {
+      "key": "encoder_mean",
+      "difference": 0.015767355654663584,
+      "ci95": [
+        -0.005024613655702162,
+        0.03477092893726613
+      ],
+      "bonferroni_six_comparisons_ci": [
+        -0.012122014414895266,
+        0.04067457232959552
+      ]
+    }
+  ],
+  "bonferroni_note": "Exploratory family of six displayed comparisons; widened percentile intervals use alpha/6. These remain bootstrap approximations, conditional on the same fixed runs and reference."
+}

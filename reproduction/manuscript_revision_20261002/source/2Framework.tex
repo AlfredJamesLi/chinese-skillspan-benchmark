@@ -11,18 +11,17 @@
 Given a Chinese job-ad sentence $x$, the task is to predict non-overlapping spans $(s,e,t)$. Here, $s$ and $e$ are zero-based, end-exclusive Unicode-code-point offsets, and $t\in\{L,K,S,T\}$. Each span must reproduce the contiguous substring $x[s:e]$, including its spelling and internal spaces. The annotation describes a requirement in the advertisement; it does not measure an applicant's ability.
 
 \begin{figure}[!htbp]
-  \noindent Figure~\ref{fig:macro-micro} shows how corpus preparation and annotation lead to model training and evaluation.\par\medskip
   \centering
-  \includegraphics[width=\textwidth,keepaspectratio]{image/chinese-skillspan-workflow-arrow-cleanup-20261002.png}
-  \caption{Chinese-SkillSpan workflow: corpus preparation, annotation, models, and evaluation. Human-reference checks and Silver-target evaluation are distinguished. External comparisons retain separate datasets, labels, and metrics. Figure~\ref{fig:coding-detail} separates reference construction, assisted review, and the independent blinded agreement study.}
+  \includegraphics[width=\textwidth]{figures/workflow_major_revision_20261004.pdf}
+  \caption{Chinese-SkillSpan workflow. Human-reference evaluation, Silver-supervised model fitting, and independent annotation agreement use distinct targets. Figure~\ref{fig:coding-detail} details the annotation cohorts.}
   \label{fig:macro-micro}
 \end{figure}
 
-The handbook assigns L to language requirements, including language names, proficiency levels, examinations, and certificates. K covers facts, principles, theories, and fields of study. S covers occupational actions, methods, and tool use. T covers transversal capabilities such as communication, cooperation, cognition, and self-management. These categories draw on ESCO and on the distinction between knowledge and skills in the European Qualifications Framework~\citep{ESCOv1_2_2024,council2017eqf}.
+Figure~\ref{fig:macro-micro} summarizes how annotation supports model comparison and agreement assessment. The handbook assigns L to language requirements, including language names, proficiency levels, examinations, and certificates. K covers facts, principles, theories, and fields of study. S covers occupational actions, methods, and tool use. T covers transversal capabilities such as communication, cooperation, cognition, and self-management. These categories draw on ESCO and on the distinction between knowledge and skills in the European Qualifications Framework~\citep{ESCOv1_2_2024,council2017eqf}.
 
-By project convention, educational and non-language qualifications also receive K. They serve as recruitment proxies for knowledge requirements, so K counts combine substantive knowledge mentions with qualification proxies. We have not established separate proxy counts or evaluated the task after excluding them. The rules below explain how context determines type and how experience requirements are handled. Evaluation concerns mention boundaries and LSKT types.
+The project K label includes substantive knowledge and recruitment proxies: educational qualifications, non-language qualifications, and explicit industry-background requirements. These proxies are an operational extension, not an assertion that credentials or experience measure knowledge under ESCO or the EQF. Accordingly, K scores measure extraction of this combined project category. The frozen labels do not identify these subtypes, so a knowledge-only evaluation requires an additional human review. The boundary and context rules below define the operational task.
 
-Figure~\ref{fig:coding-detail} separates reference construction, Silver annotation and review, and the independent blinded agreement study. Table~\ref{tab:annotation-lineage} lists their sample sizes and intended uses.
+Table~\ref{tab:annotation-lineage} gives the sample sizes and uses of the cohorts in Figure~\ref{fig:coding-detail}.
 
 \input{tex/coding_detail_no_counts}
 
@@ -37,24 +36,24 @@ We adapted SkillSpan's semantic-completeness and coordination principles for Chi
 
 \input{tex/representative_annotations_main}
 
-Experience requires a separate check; generic work experience and duration alone are excluded. Explicit industry-background requirements use domain cores as broad-K proxies under the project convention. For occupational activities, the experience qualifier is omitted only if the remaining span preserves the requirement. It can stay outside coordinated items if each remains interpretable in context. Neither conjunctions nor experience qualifiers alone determine boundaries.
+Experience expressions are assessed in three steps. Annotators first distinguish a named occupational activity from generic tenure or industry background. Generic duration alone is excluded; explicit industry-background requirements receive the project K proxy label. For an activity, the annotator then removes the experience qualifier provisionally and checks whether the remaining words still name the required activity in context. If only an event name or incomplete fragment remains, the qualifier is retained. Finally, coordinated items are split only when each passes the same check. An internet-company operations activity is S; a requirement for an internet-industry background is K. Appendix~A provides contrasting examples.
 
 Type depends on what the clause requires: using SQL supports S, whereas knowledge of SQL principles supports K. A predicate can determine type without being part of the selected span. Familiarity alone does not decide type. General communication and coordination remain T inside duty clauses, whereas technical operations receive S. Language examinations receive L; educational and non-language qualifications receive K. Figure~\ref{fig:illustrative-annotations} shows original corpus examples with their archived annotations, and \hyperref[app:a]{Appendix A} gives further examples and rule sources.
 
-Adjudication treats scope, boundaries, and type as separate decisions~\citep{artstein2008agreement}. There is no total priority order among L, K, S, and T. Under the current handbook, a mention with settled scope and boundaries but unresolved type may receive provisional S in the adjudication record, with alternatives logged. The handbook requires exclusion of the whole unresolved record from final training targets; provisional S is not an accepted target. Same-boundary alternatives, nested candidates, and unresolved overlaps are kept in the adjudication record rather than duplicated in the flat annotation layer. \hyperref[app:a]{Appendix A} gives the full rules and their history. Each completed experiment retains the labels assigned under its original handbook.
+Adjudication treats scope, boundaries, and type as separate decisions~\citep{artstein2008agreement}. There is no total priority order among L, K, S, and T. Type uncertainty is recorded separately from accepted labels. The current handbook permits provisional S in a working adjudication record, but requires the entire unresolved record to be excluded from final training targets. This bookkeeping convention does not license assigning S by default in the accepted data. Same-boundary alternatives, nested candidates, and unresolved overlaps are kept in the adjudication record rather than duplicated in the flat annotation layer. \hyperref[app:a]{Appendix A} gives the full rules and their history. The displayed corpus examples retain historical annotations; they are distinguished from current-handbook illustrations in Appendix~A. Each completed experiment retains its original labels.
 
 \subsection{Human Annotation and LLM-Assisted Labeling}
 \label{sec:annotation-workflow-r36}
 
-Human coding informed the handbook and finalized reference labels. Official OpenAI Codex generated separate Silver labels. Initial sample review preceded bulk annotation. Automated checks verified substrings, offsets, labels, and coverage; human review addressed interpretation.
+Human annotation and adjudication established the reference labels and informed the handbook. The authors used the official OpenAI Codex interface for adopted Silver annotation; Codex names the interface, while Table~\ref{tab:model-identity} identifies recorded model names and roles. Initial sample review preceded bulk annotation. Automated checks verified substrings, offsets, labels, and coverage; human review addressed interpretation.
 
 Bulk annotation used the handbook available at generation time. Later amendments were recorded separately; completed experiments remained unchanged.
 
 \begin{samepage}
-Codex supplied the adopted expanded labels; the alternative pool is supplementary. Unresolved records were excluded. Appendices A and D document versions and inclusion decisions.\par
+Codex supplied labels for the replaced subset in the adopted expanded variant; the alternative variant is supplementary. Earlier supervision components remain in both pools. Unresolved records were excluded. Appendices A and D document versions and inclusion decisions.\par
 \end{samepage}
 
 \input{tex/annotation_quality_R12}
 
 \subsection{Ethics and Data Use}
-The study analyzed recruitment advertisements without recruiting job applicants. Annotation and review were performed by members of the research team. Institutional ethics approval was not sought, and no formal institutional exemption is claimed. We cannot verify from the retained release records whether employer-contact names, telephone numbers, and email addresses were systematically audited or removed. A removal rate is therefore unavailable. The materials support academic research and peer review under the reuse terms in Data Availability.
+The study analyzed recruitment advertisements and did not recruit job applicants or collect applicant responses. Annotation and review were performed by research-team members. Institutional ethics approval was not sought; no formal exemption is claimed. The authors confirm permission to use the source materials for academic research. Permissions to conduct research and rights to redistribute third-party recruitment text are recorded separately in the component-specific access terms. Privacy screening of the released text is reported in Appendix~D.

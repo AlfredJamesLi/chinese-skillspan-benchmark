@@ -64,7 +64,7 @@ Short names in the manuscript are display aliases. Original file paths, experime
 
 | dataset | post-generation review | `QA100` | 100 records in the later stratified review. Keep QA100 IDs and sampled membership. |
 
-| dataset | nested review subset | `Dual15` | 15-sentence QA100 auditor subset; September 17 export verifies separate coder queues and confirmations. It is distinct from IAA-50 blind calibration. |
+| dataset | nested review subset | `Dual15` | 15-sentence QA100 assisted-review subset; September 17 export verifies separate coder queues and confirmations. It is distinct from IAA-50 blind calibration. |
 
 | dataset | further conflict-origin records | `H730` | 730 Silver-plus records from the conflict queue beyond the initial review. Keep H730 IDs and membership. |
 
@@ -102,7 +102,7 @@ Short names in the manuscript are display aliases. Original file paths, experime
 
 The manuscript uses readable display names. These fields identify retained service records. Each configuration has 150 formal prediction records plus two preliminary checks. The shared protocol was frozen for September 10; the GPT run includes a September 11 retry. Retained call metadata accompany raw records; missing dates, decoding settings and checkpoint identities are not inferred.
 
-GPT and Claude provide inference baselines in the Chinese evaluation. The QA150 Astra--Grok comparison concerns archived machine suggestions, not independent human agreement; Grok suggestions used the official Grok model.
+GPT and Claude provide inference baselines in the Chinese evaluation. The QA150 Astra--Grok comparison concerns archived machine suggestions, not independent human agreement; The authors identify Grok as the official model selected in Cursor; the archived suggestion file does not retain its exact version or decoding settings.
 
 The human reference combines independently coded and adjudicated calibration sentences with collaboratively coded and reviewed challenge sentences. Humans determined its final labels. Separate model-generated Silver labels provide supervision and Silver-target evaluation; the independently blinded three-coder sample measures handbook agreement and is not a model test set.
 
@@ -118,7 +118,7 @@ GPT and Claude comparison baselines used third-party API gateways because of acc
 
 - Keep the primary data, frozen metadata, source IDs, experiment keys and public model URLs unchanged. Prefer readable documentation links and aliases over renaming these files.
 
-- The illustrated workflow retains the full Qwen label as a self-contained model identification. Its name maps to the same Qwen alias.
+- The current workflow uses plain vector diagrams; exact model identifiers are listed in the model table and configuration documentation.
 
 - The Dual15 export supports independent submissions within the QA100 review design; it does not establish blind raw-text coding.
 

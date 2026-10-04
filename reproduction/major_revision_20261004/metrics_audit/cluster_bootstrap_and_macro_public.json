@@ -1,0 +1,801 @@
+{
+  "description": "Offline audit of existing accepted predictions; no model training or inference and no gold relabeling.",
+  "gold": {
+    "n_sentences": 150,
+    "n_spans": 663,
+    "n_ID_prefix_groups": 61,
+    "group_sizes": {
+      "1801": 1,
+      "1802": 6,
+      "1803": 8,
+      "1804": 13,
+      "1805": 3,
+      "1806": 2,
+      "1807": 2,
+      "1808": 5,
+      "1809": 5,
+      "1810": 1,
+      "1811": 7,
+      "1812": 6,
+      "1813": 2,
+      "1814": 7,
+      "1815": 5,
+      "1816": 7,
+      "1817": 7,
+      "1818": 5,
+      "1819": 6,
+      "1820": 4,
+      "1838": 1,
+      "1844": 1,
+      "1848": 1,
+      "1853": 1,
+      "1867": 1,
+      "1872": 2,
+      "1877": 1,
+      "1881": 1,
+      "1886": 1,
+      "1896": 2,
+      "1897": 1,
+      "1903": 1,
+      "1905": 2,
+      "1908": 2,
+      "1909": 1,
+      "1914": 1,
+      "1917": 1,
+      "1921": 1,
+      "1924": 2,
+      "1925": 2,
+      "1926": 1,
+      "1935": 1,
+      "1937": 1,
+      "1938": 1,
+      "1941": 1,
+      "1946": 1,
+      "1948": 1,
+      "1951": 1,
+      "1953": 1,
+      "1955": 1,
+      "1956": 1,
+      "1963": 1,
+      "1964": 1,
+      "1967": 2,
+      "1968": 1,
+      "1969": 1,
+      "1972": 1,
+      "1973": 1,
+      "1977": 1,
+      "1983": 1,
+      "1990": 1
+    },
+    "group_size_distribution": {
+      "1": 36,
+      "6": 3,
+      "8": 1,
+      "13": 1,
+      "3": 1,
+      "2": 10,
+      "5": 4,
+      "7": 4,
+      "4": 1
+    }
+  },
+  "bootstrap": {
+    "B": 10000,
+    "seed": 20261004,
+    "unit": "source_id prefix before -s; resample whole groups",
+    "interval": "pointwise paired percentile 95%; fixed training seeds",
+    "limits": "Groups follow recorded source IDs. They do not certify original advertisements or independence across renamed/duplicated advertisements. No multiple-comparison adjustment; does not remove guideline-development or selection dependence."
+  },
+  "comparisons": [
+    {
+      "key": "gpt_vs_deepseek",
+      "label": "GPT (API) minus DeepSeek non-thinking",
+      "difference": 0.01974183750949121,
+      "ci95": [
+        -0.026543156338059957,
+        0.06149234793837466
+      ]
+    },
+    {
+      "key": "lora_42",
+      "label": "Qwen LoRA 42 minus no adapter",
+      "difference": 0.13840130011199153,
+      "ci95": [
+        0.06889015893696147,
+        0.20001628650883352
+      ]
+    },
+    {
+      "key": "lora_43",
+      "label": "Qwen LoRA 43 minus no adapter",
+      "difference": 0.2021207854881632,
+      "ci95": [
+        0.13279769004682518,
+        0.2692574968166619
+      ]
+    },
+    {
+      "key": "lora_44",
+      "label": "Qwen LoRA 44 minus no adapter",
+      "difference": 0.19701370356423648,
+      "ci95": [
+        0.12320576701565769,
+        0.2676296254050064
+      ]
+    },
+    {
+      "key": "lora_mean",
+      "label": "Qwen LoRA seed mean minus no adapter",
+      "difference": 0.17917859638813044,
+      "ci95": [
+        0.11136700701741781,
+        0.24169881369793567
+      ]
+    },
+    {
+      "key": "encoder_mean",
+      "label": "ESCOXLM-R minus XLM-R-large",
+      "difference": 0.015767355654663695,
+      "ci95": [
+        -0.005024613655702162,
+        0.03477092893726613
+      ]
+    }
+  ],
+  "macro_KST": {
+    "Qwen B2 LoRA": {
+      "mean": 0.5582970046652712,
+      "sample_sd": 0.031644813344026454,
+      "seeds": [
+        0.5224662813102119,
+        0.5824183037794964,
+        0.5700064289061053
+      ]
+    },
+    "XLM-R-large": {
+      "mean": 0.5424447375383684,
+      "sample_sd": 0.020753777359714724,
+      "seeds": [
+        0.5215497598011265,
+        0.5427300807813485,
+        0.5630543720326302
+      ]
+    },
+    "ESCOXLM-R": {
+      "mean": 0.5620429949968319,
+      "sample_sd": 0.013307990810024733,
+      "seeds": [
+        0.5486063404470972,
+        0.5623041669163569,
+        0.5752184776270414
+      ]
+    }
+  },
+  "runs": {
+    "gpt-5.6-terra": {
+      "typed_exact_micro_f1": 0.6666666666666666,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 4,
+          "gold": 2,
+          "f1": 0.6666666666666666
+        },
+        "K": {
+          "tp": 62,
+          "pred": 98,
+          "gold": 125,
+          "f1": 0.5560538116591929
+        },
+        "S": {
+          "tp": 301,
+          "pred": 451,
+          "gold": 448,
+          "f1": 0.6696329254727474
+        },
+        "T": {
+          "tp": 71,
+          "pred": 92,
+          "gold": 88,
+          "f1": 0.7888888888888889
+        }
+      },
+      "macro_LKST": 0.6703105731718739,
+      "macro_KST": 0.6715252086736098,
+      "outcomes": {
+        "ok_nonempty": 141,
+        "ok_empty": 7,
+        "partial_rejected": 2
+      }
+    },
+    "deepseek-v4-pro-nothink": {
+      "typed_exact_micro_f1": 0.6469248291571754,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 2,
+          "gold": 2,
+          "f1": 1.0
+        },
+        "K": {
+          "tp": 69,
+          "pred": 110,
+          "gold": 125,
+          "f1": 0.5872340425531914
+        },
+        "S": {
+          "tp": 296,
+          "pred": 452,
+          "gold": 448,
+          "f1": 0.6577777777777778
+        },
+        "T": {
+          "tp": 59,
+          "pred": 90,
+          "gold": 88,
+          "f1": 0.6629213483146067
+        }
+      },
+      "macro_LKST": 0.726983292161394,
+      "macro_KST": 0.6359777228818586,
+      "outcomes": {
+        "ok_nonempty": 142,
+        "ok_empty": 6,
+        "partial_rejected": 2
+      }
+    },
+    "deepseek-v4-pro-think8192": {
+      "typed_exact_micro_f1": 0.5913503971756399,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 2,
+          "gold": 2,
+          "f1": 1.0
+        },
+        "K": {
+          "tp": 51,
+          "pred": 76,
+          "gold": 125,
+          "f1": 0.5074626865671642
+        },
+        "S": {
+          "tp": 223,
+          "pred": 311,
+          "gold": 448,
+          "f1": 0.5876152832674572
+        },
+        "T": {
+          "tp": 59,
+          "pred": 81,
+          "gold": 88,
+          "f1": 0.6982248520710059
+        }
+      },
+      "macro_LKST": 0.6983257054764068,
+      "macro_KST": 0.5977676073018757,
+      "outcomes": {
+        "ok_nonempty": 124,
+        "format_failed": 18,
+        "ok_empty": 8
+      }
+    },
+    "claude-sonnet-4-5": {
+      "typed_exact_micro_f1": 0.5977358490566038,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 2,
+          "gold": 2,
+          "f1": 1.0
+        },
+        "K": {
+          "tp": 69,
+          "pred": 151,
+          "gold": 125,
+          "f1": 0.5
+        },
+        "S": {
+          "tp": 274,
+          "pred": 431,
+          "gold": 448,
+          "f1": 0.6234357224118316
+        },
+        "T": {
+          "tp": 51,
+          "pred": 78,
+          "gold": 88,
+          "f1": 0.6144578313253012
+        }
+      },
+      "macro_LKST": 0.6844733884342832,
+      "macro_KST": 0.579297851245711,
+      "outcomes": {
+        "ok_nonempty": 145,
+        "ok_empty": 4,
+        "partial_rejected": 1
+      }
+    },
+    "kimi-k2.6": {
+      "typed_exact_micro_f1": 0.571647509578544,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 3,
+          "gold": 2,
+          "f1": 0.8
+        },
+        "K": {
+          "tp": 69,
+          "pred": 150,
+          "gold": 125,
+          "f1": 0.5018181818181818
+        },
+        "S": {
+          "tp": 247,
+          "pred": 402,
+          "gold": 448,
+          "f1": 0.5811764705882353
+        },
+        "T": {
+          "tp": 55,
+          "pred": 87,
+          "gold": 88,
+          "f1": 0.6285714285714286
+        }
+      },
+      "macro_LKST": 0.6278915202444615,
+      "macro_KST": 0.5705220269926152,
+      "outcomes": {
+        "ok_nonempty": 142,
+        "ok_empty": 6,
+        "partial_rejected": 2
+      }
+    },
+    "qwen25-14b-instruct": {
+      "typed_exact_micro_f1": 0.3611650485436893,
+      "per_type": {
+        "L": {
+          "tp": 0,
+          "pred": 1,
+          "gold": 2,
+          "f1": 0.0
+        },
+        "K": {
+          "tp": 31,
+          "pred": 80,
+          "gold": 125,
+          "f1": 0.3024390243902439
+        },
+        "S": {
+          "tp": 129,
+          "pred": 237,
+          "gold": 448,
+          "f1": 0.37664233576642336
+        },
+        "T": {
+          "tp": 26,
+          "pred": 49,
+          "gold": 88,
+          "f1": 0.3795620437956204
+        }
+      },
+      "macro_LKST": 0.2646608509880719,
+      "macro_KST": 0.35288113465076254,
+      "outcomes": {
+        "ok_nonempty": 69,
+        "partial_rejected": 69,
+        "ok_empty": 11,
+        "all_spans_rejected": 1
+      }
+    },
+    "LoRA_42": {
+      "typed_exact_micro_f1": 0.49956634865568084,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 3,
+          "gold": 2,
+          "f1": 0.8
+        },
+        "K": {
+          "tp": 44,
+          "pred": 75,
+          "gold": 125,
+          "f1": 0.44
+        },
+        "S": {
+          "tp": 186,
+          "pred": 327,
+          "gold": 448,
+          "f1": 0.48
+        },
+        "T": {
+          "tp": 56,
+          "pred": 85,
+          "gold": 88,
+          "f1": 0.6473988439306358
+        }
+      },
+      "macro_LKST": 0.5918497109826589,
+      "macro_KST": 0.5224662813102119,
+      "outcomes": {
+        "ok_nonempty": 139,
+        "ok_empty": 8,
+        "all_spans_rejected": 1,
+        "partial_rejected": 2
+      }
+    },
+    "LoRA_43": {
+      "typed_exact_micro_f1": 0.5632858340318525,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 3,
+          "gold": 2,
+          "f1": 0.8
+        },
+        "K": {
+          "tp": 57,
+          "pred": 81,
+          "gold": 125,
+          "f1": 0.5533980582524272
+        },
+        "S": {
+          "tp": 222,
+          "pred": 364,
+          "gold": 448,
+          "f1": 0.5467980295566502
+        },
+        "T": {
+          "tp": 55,
+          "pred": 82,
+          "gold": 88,
+          "f1": 0.6470588235294118
+        }
+      },
+      "macro_LKST": 0.6368137278346223,
+      "macro_KST": 0.5824183037794964,
+      "outcomes": {
+        "ok_nonempty": 136,
+        "ok_empty": 9,
+        "all_spans_rejected": 1,
+        "partial_rejected": 4
+      }
+    },
+    "LoRA_44": {
+      "typed_exact_micro_f1": 0.5581787521079258,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 3,
+          "gold": 2,
+          "f1": 0.8
+        },
+        "K": {
+          "tp": 56,
+          "pred": 81,
+          "gold": 125,
+          "f1": 0.5436893203883495
+        },
+        "S": {
+          "tp": 222,
+          "pred": 362,
+          "gold": 448,
+          "f1": 0.5481481481481482
+        },
+        "T": {
+          "tp": 51,
+          "pred": 77,
+          "gold": 88,
+          "f1": 0.6181818181818182
+        }
+      },
+      "macro_LKST": 0.627504821679579,
+      "macro_KST": 0.5700064289061053,
+      "outcomes": {
+        "ok_nonempty": 138,
+        "ok_empty": 10,
+        "all_spans_rejected": 1,
+        "partial_rejected": 1
+      }
+    },
+    "xlm-roberta-large_42": {
+      "typed_exact_micro_f1": 0.4995766299745978,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 3,
+          "gold": 2,
+          "f1": 0.8
+        },
+        "K": {
+          "tp": 46,
+          "pred": 77,
+          "gold": 125,
+          "f1": 0.45544554455445546
+        },
+        "S": {
+          "tp": 193,
+          "pred": 354,
+          "gold": 448,
+          "f1": 0.48129675810473815
+        },
+        "T": {
+          "tp": 54,
+          "pred": 84,
+          "gold": 88,
+          "f1": 0.627906976744186
+        }
+      },
+      "macro_LKST": 0.5911623198508449,
+      "macro_KST": 0.5215497598011265,
+      "outcomes": {
+        "not_recorded": 150
+      }
+    },
+    "xlm-roberta-large_43": {
+      "typed_exact_micro_f1": 0.5224489795918368,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 3,
+          "gold": 2,
+          "f1": 0.8
+        },
+        "K": {
+          "tp": 55,
+          "pred": 94,
+          "gold": 125,
+          "f1": 0.502283105022831
+        },
+        "S": {
+          "tp": 210,
+          "pred": 382,
+          "gold": 448,
+          "f1": 0.5060240963855421
+        },
+        "T": {
+          "tp": 53,
+          "pred": 83,
+          "gold": 88,
+          "f1": 0.6198830409356725
+        }
+      },
+      "macro_LKST": 0.6070475605860114,
+      "macro_KST": 0.5427300807813485,
+      "outcomes": {
+        "not_recorded": 150
+      }
+    },
+    "xlm-roberta-large_44": {
+      "typed_exact_micro_f1": 0.5445705024311183,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 3,
+          "gold": 2,
+          "f1": 0.8
+        },
+        "K": {
+          "tp": 57,
+          "pred": 91,
+          "gold": 125,
+          "f1": 0.5277777777777778
+        },
+        "S": {
+          "tp": 222,
+          "pred": 391,
+          "gold": 448,
+          "f1": 0.5292014302741359
+        },
+        "T": {
+          "tp": 55,
+          "pred": 86,
+          "gold": 88,
+          "f1": 0.632183908045977
+        }
+      },
+      "macro_LKST": 0.6222907790244727,
+      "macro_KST": 0.5630543720326302,
+      "outcomes": {
+        "not_recorded": 150
+      }
+    },
+    "esco-xlm-roberta-large_42": {
+      "typed_exact_micro_f1": 0.516075845012366,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 3,
+          "gold": 2,
+          "f1": 0.8
+        },
+        "K": {
+          "tp": 57,
+          "pred": 85,
+          "gold": 125,
+          "f1": 0.5428571428571428
+        },
+        "S": {
+          "tp": 201,
+          "pred": 378,
+          "gold": 448,
+          "f1": 0.48668280871670705
+        },
+        "T": {
+          "tp": 53,
+          "pred": 84,
+          "gold": 88,
+          "f1": 0.6162790697674418
+        }
+      },
+      "macro_LKST": 0.6114547553353229,
+      "macro_KST": 0.5486063404470972,
+      "outcomes": {
+        "not_recorded": 150
+      }
+    },
+    "esco-xlm-roberta-large_43": {
+      "typed_exact_micro_f1": 0.5401459854014599,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 3,
+          "gold": 2,
+          "f1": 0.8
+        },
+        "K": {
+          "tp": 58,
+          "pred": 89,
+          "gold": 125,
+          "f1": 0.5420560747663551
+        },
+        "S": {
+          "tp": 220,
+          "pred": 396,
+          "gold": 448,
+          "f1": 0.5213270142180095
+        },
+        "T": {
+          "tp": 53,
+          "pred": 82,
+          "gold": 88,
+          "f1": 0.6235294117647059
+        }
+      },
+      "macro_LKST": 0.6217281251872676,
+      "macro_KST": 0.5623041669163569,
+      "outcomes": {
+        "not_recorded": 150
+      }
+    },
+    "esco-xlm-roberta-large_44": {
+      "typed_exact_micro_f1": 0.5576763485477179,
+      "per_type": {
+        "L": {
+          "tp": 2,
+          "pred": 3,
+          "gold": 2,
+          "f1": 0.8
+        },
+        "K": {
+          "tp": 55,
+          "pred": 84,
+          "gold": 125,
+          "f1": 0.5263157894736842
+        },
+        "S": {
+          "tp": 225,
+          "pred": 378,
+          "gold": 448,
+          "f1": 0.5447941888619855
+        },
+        "T": {
+          "tp": 54,
+          "pred": 77,
+          "gold": 88,
+          "f1": 0.6545454545454545
+        }
+      },
+      "macro_LKST": 0.6314138582202811,
+      "macro_KST": 0.5752184776270414,
+      "outcomes": {
+        "not_recorded": 150
+      }
+    }
+  },
+  "inputs": {
+    "gold": {
+      "path": "00_freeze/gold150_test.jsonl",
+      "sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "package": "Qwen shared-guideline frozen experiment pack"
+    },
+    "scorer": {
+      "path": "code/adapters/score_lskt.py",
+      "sha256": "90624fa545434ebe0442c3243709f5e64ef2f95f4ccbacdb5f5d0696b65d69a7",
+      "package": "Chinese encoder evidence package, table11_evidence_20260924"
+    },
+    "gpt-5.6-terra": {
+      "path": "01_shared_prompt/preds/gpt-5.6-terra/pred_for_score.jsonl",
+      "sha256": "babf76cac978404da458306c0051b6fbc47d3a2c237cea77a103a6e5784c8625",
+      "package": "Qwen shared-guideline frozen experiment pack"
+    },
+    "deepseek-v4-pro-nothink": {
+      "path": "01_shared_prompt/preds/deepseek-v4-pro-nothink/pred_for_score.jsonl",
+      "sha256": "29a0bfb0ca9c382d5a3973da00a8f491347e818fdc560083c829149366dc51a7",
+      "package": "Qwen shared-guideline frozen experiment pack"
+    },
+    "deepseek-v4-pro-think8192": {
+      "path": "01_shared_prompt/preds/deepseek-v4-pro-think8192/pred_for_score.jsonl",
+      "sha256": "c37436b95c0fe2709431d1b719f7328c2f2cc19472173a9f70516a9af10ce7eb",
+      "package": "Qwen shared-guideline frozen experiment pack"
+    },
+    "claude-sonnet-4-5": {
+      "path": "01_shared_prompt/preds/claude-sonnet-4-5/pred_for_score.jsonl",
+      "sha256": "ba15cb0eb79ce3987707252955c811c712ea93718642ca9cc0b50413f75ec721",
+      "package": "Qwen shared-guideline frozen experiment pack"
+    },
+    "kimi-k2.6": {
+      "path": "01_shared_prompt/preds/kimi-k2.6/pred_for_score.jsonl",
+      "sha256": "17a0900848ab9d432be08d220b979d444dbae3b786068f2003f53e8d39a5eccc",
+      "package": "Qwen shared-guideline frozen experiment pack"
+    },
+    "qwen25-14b-instruct": {
+      "path": "01_shared_prompt/preds/qwen25-14b-instruct/pred_for_score.jsonl",
+      "sha256": "85cfc0ff493cbb97c52c62c6306ad3fc141b9bc9710c667fafe4418f8a8763ea",
+      "package": "Qwen shared-guideline frozen experiment pack"
+    },
+    "LoRA_42": {
+      "path": "02_sft/infer/seed42/pred_for_score.jsonl",
+      "sha256": "22033c2f102143f786d29c09ccb1f99d91da6ec0f97eb977e228444869be6a24",
+      "package": "Qwen shared-guideline frozen experiment pack"
+    },
+    "LoRA_43": {
+      "path": "02_sft/infer/seed43/pred_for_score.jsonl",
+      "sha256": "c14f34e0a23e463500cbca1e9747be28fec74ac58495f3a2de338d4bd6dbe564",
+      "package": "Qwen shared-guideline frozen experiment pack"
+    },
+    "LoRA_44": {
+      "path": "02_sft/infer/seed44/pred_for_score.jsonl",
+      "sha256": "a90efd6a2704d9ecfb9d7b3fa95534851358db402c6dcbe24bc78d6bc25b9953",
+      "package": "Qwen shared-guideline frozen experiment pack"
+    },
+    "xlm-roberta-large_42": {
+      "path": "runs_lightweight/xlm-roberta-large/42/gold150_predictions.jsonl",
+      "sha256": "4a676e9bcf518d67e44792d15990109b636dc81f0176f6502a713f86966095d0",
+      "package": "Chinese encoder evidence package, table11_evidence_20260924"
+    },
+    "xlm-roberta-large_43": {
+      "path": "runs_lightweight/xlm-roberta-large/43/gold150_predictions.jsonl",
+      "sha256": "30e2ae5e3cd9eb30a46fd4320914276f3e40715c09fbb2bc9e5173698d6939a9",
+      "package": "Chinese encoder evidence package, table11_evidence_20260924"
+    },
+    "xlm-roberta-large_44": {
+      "path": "runs_lightweight/xlm-roberta-large/44/gold150_predictions.jsonl",
+      "sha256": "6174141656f1a55d8957bc4dd2b9113503421871dbb279c66423c68a89f89bfd",
+      "package": "Chinese encoder evidence package, table11_evidence_20260924"
+    },
+    "esco-xlm-roberta-large_42": {
+      "path": "runs_lightweight/esco-xlm-roberta-large/42/gold150_predictions.jsonl",
+      "sha256": "2accb721edde8f001a9bc2ee77dbe5d63dba074f6ec8b4922eb2f4bb012fa12a",
+      "package": "Chinese encoder evidence package, table11_evidence_20260924"
+    },
+    "esco-xlm-roberta-large_43": {
+      "path": "runs_lightweight/esco-xlm-roberta-large/43/gold150_predictions.jsonl",
+      "sha256": "dc81fbdcf177c32e8ffe2ae38601deefdac5cd231ad29264a5e1853f79b0dcb0",
+      "package": "Chinese encoder evidence package, table11_evidence_20260924"
+    },
+    "esco-xlm-roberta-large_44": {
+      "path": "runs_lightweight/esco-xlm-roberta-large/44/gold150_predictions.jsonl",
+      "sha256": "906c7a79a614afcff010b1a09518185c3827e32c556a8bca258d5b83a7c6606d",
+      "package": "Chinese encoder evidence package, table11_evidence_20260924"
+    }
+  },
+  "reproduction": {
+    "script": "reproduce_cluster_bootstrap.py",
+    "aggregated_counts": "sentence_counts.csv",
+    "requires": "Python 3 and NumPy",
+    "scope": "Reproduces exact micro-F1, paired source-group bootstrap intervals and K/S/T macro summaries from accepted-span counts. Does not rerun inference or establish model input provenance. Package-relative paths and SHA-256 values identify the archived prediction artifacts."
+  }
+}

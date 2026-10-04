@@ -35,7 +35,7 @@ Square brackets mark selected source substrings, with a separate type code after
 L: Language & Natural-language proficiency, language names, levels, examinations, and certificates.\gsource{E,P} & \gspan{L}{英语六级}; \gspan{L}{日语N2} \\[4pt]
 K: Knowledge & Facts, principles, theory, and fields of knowledge.\gsource{Q} Education and non-language qualifications map to K by project convention.\gsource{P} & \gspan{K}{计算机专业};\par\smallskip\gspan{K}{本科及以上学历} \\[4pt]
 S: Occupational skill & Application of a tool or method, or an occupational activity indicated by the context.\gsource{Q,P} & \gcontext{使用}\gspan{S}{SQL};\par\smallskip\gspan{S}{数据分析} \\[4pt]
-T: Transversal competence & General communication, cooperation, cognition, self-management, and dispositions. Duties may also express T.\gsource{E,P} & \gspan{T}{客户汇报};\par\smallskip\gspan{T}{责任心} \\[4pt]
+T: Transversal competency & General communication, cooperation, cognition, self-management, and dispositions. Duties may also express T.\gsource{E,P} & \gspan{T}{客户汇报};\par\smallskip\gspan{T}{责任心} \\[4pt]
 Context test & Use versus principles distinguishes S from K; general coordination differs from a technical operation. No fixed label priority applies.\gsource{Q,E,P} & \gcontext{了解}\gspan{K}{SQL原理};\par\smallskip\gspan{T}{协调外部资源};\par\smallskip\gspan{S}{接口对接} \\
 \bottomrule
 \end{tabular}
@@ -91,8 +91,11 @@ G15 & Alternatives and overlaps are recorded separately from the final flat laye
 \end{longtable}
 \endgroup
 
+\paragraph{Interpreting coordinated capabilities.}
+G6--G7 test whether each selected phrase expresses a requirement in context. They do not require every item to repeat an implied capability noun. For example, \zh{协调} (\emph{coordination}) can express a capability independently, whereas \zh{曝光} (\emph{exposure}) alone does not express the optimization action in \zh{优化曝光与转化率} (\emph{optimize exposure and conversion rate}). Figure~\ref{fig:illustrative-annotations} shows the recorded historical boundaries; it is not a relabeling under the final handbook. Any unresolved historical case requires a new human decision before its reference span is changed.
+
 \subsection{A.3 Shared experience: split only when meaning survives}
-The V4.2.14 amendment (R23) clarifies a shared-experience construction.\gsource{P} Each item remains identifiable in context; exclude the shared experience qualifier and do not add a covering span.
+The V4.2.14 amendment (R23) clarifies a shared-experience construction.\gsource{P} Each item remains identifiable in context; exclude the shared experience qualifier and do not add a covering span. The words for internet-company operations denote an occupational activity in this sentence; a bare requirement for experience in the internet industry would instead use the project K proxy rule. The presence of an industry name alone does not determine type.
 
 \smallskip\noindent
 \begin{minipage}{\linewidth}\small\RaggedRight
@@ -107,4 +110,4 @@ Selected offsets: $[9,16)$, $[17,19)$, and $[26,37)$. BI is S in this context, n
 \label{sec:guide-version-history}
 The human-reference metadata identify v4.2.10, while the original bulk-generation prompt follows v4.2.12. The current handbook is v4.2.14. Later amendments do not retrospectively change completed annotations. Inspection confirmed v4.2.10 metadata on all 150 reference records; the B2 rows do not carry individual handbook-version fields. One documented difference is present in B2 training record \texttt{1838-s0008}: its historical two-span annotation retains a shared experience phrase that R23 later splits into three spans. This named record is absent from Gold150 and B2 development. A rule-family screen covers all 2,469 reference, training, and development records, but flags candidates for contextual review rather than proving semantic compatibility. The original targets and scores remain unchanged. Figure~\ref{fig:illustrative-annotations} reproduces frozen v4.2.10 human-reference annotations, whereas Tables~\ref{tab:guide-types}--\ref{tab:guide-scope} illustrate decisions under the current v4.2.14 handbook. Later rule amendments do not retrospectively alter the historical annotations or reported scores.
 
-The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/36f009fab01b8433355cb7ef5af8fad02c6cc519/reproduction/process_archive_20260924/source/tex/review20260923/version_matrix.tex}{version ledger} records experiment-specific protocols, identifiers, hashes, and unresolved bindings. The accompanying manuals preserve original and revised spans and their rationale. Human-reviewed Silver-plus remains supervision unless separately designated and isolated for evaluation. Evaluation uses the frozen reference, shared protocol, occurrence schema, parser, and scorer; the reproduction guide maps these terms to their released files (\hyperref[app:d]{Appendix D}).
+The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/36f009fab01b8433355cb7ef5af8fad02c6cc519/reproduction/process_archive_20260924/source/tex/review20260923/version_matrix.tex}{label-version documentation} specifies the handbook and annotation files used in each experiment. The accompanying manuals preserve original and revised spans and their rationale. Human-reviewed Silver-plus remains supervision unless separately designated and isolated for evaluation. Evaluation uses the frozen reference, shared protocol, occurrence schema, parser, and scorer; the reproduction guide maps these terms to their released files (\hyperref[app:d]{Appendix D}).

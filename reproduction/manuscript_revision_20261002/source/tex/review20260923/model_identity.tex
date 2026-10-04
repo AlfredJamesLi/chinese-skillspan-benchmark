@@ -6,16 +6,17 @@
 \toprule
 Role & Recorded identifier & Access and configuration \\
 \midrule
-Original teacher & \texttt{gpt-6-astra} & Official OpenAI Codex; adopted Silver labels. \\
-GPT (API) & \texttt{gpt-5.6-terra} & API. \\
-Claude (API) & Claude Sonnet 4.5 & API. \\
-DeepSeek (API) & \texttt{deepseek-v4-pro} & Official \href{https://api.deepseek.com}{DeepSeek API}; non-thinking/thinking, 2,048/8,192-token output caps. \\
-Kimi (API) & \texttt{kimi-k2.6} & Official \href{https://api.moonshot.cn}{Moonshot API}; non-thinking; temperature 0.6. \\
+Original Silver annotation & \texttt{gpt-6-astra} & OpenAI Codex interface; recorded model selection for adopted Silver labels. \\
+GPT (API) & Request: \texttt{gpt-5.4}; returned: \texttt{gpt-5.6-terra} & Temperature 0; output cap 2,048. \\
+Claude (API) & \texttt{claude-sonnet-4-5-20250929} & Temperature 0; output cap 2,048. \\
+DeepSeek (API) & \texttt{deepseek-v4-pro} & Official \href{https://api.deepseek.com}{DeepSeek API}; Non-thinking: temperature 0, cap 2,048. Thinking: cap 8,192; temperature not specified. \\
+Kimi (API) & \texttt{kimi-k2.6} & Official \href{https://api.moonshot.cn}{Moonshot API}; Non-thinking; temperature 0.6; cap 2,048. \\
 Qwen baseline / LoRA & Qwen2.5-14B-Instruct & Local weights; deterministic decoding; output cap 2,048. Original Hub commit not recorded; archived file hashes identify the supplied artifacts. \\
 JobBERT-zh & Released initialization and B2 continuation & Local encoder and inherited CRF; initialization-selection history incomplete. \\
-Expansion annotation & OpenAI Codex / API & Adopted Codex labels; alternative pool used only for supplementary comparison. \\
+Expansion comparison & Codex / API-returned \texttt{gpt-6-astra} & Alternative API batch: 2,500 candidates, 13 September 2026, ten records per request. Earlier components are retained in both final pools. \\
+Assisted-review suggestions & \texttt{gpt-6-astra}; Grok & Codex and the Grok selection in Cursor supplied suggestions for QA150. The Grok version and complete decoding settings were not retained. \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-GPT and Claude model names are those reported by the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/PAPER_NAMES.md#api-access}{API service}.
+Baseline calls were completed on 10--11 September 2026. Claude returned the dated identifier shown above to a request for \texttt{claude-sonnet-4-5}. Codex and Cursor identify the annotation interfaces. GPT and Claude were accessed through a third-party API gateway and are named as returned by that service; those identities were not independently verified against vendor APIs. Retained prompts and parameters accompany the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/PAPER_NAMES.md#api-access}{configuration files}.
 \end{table}

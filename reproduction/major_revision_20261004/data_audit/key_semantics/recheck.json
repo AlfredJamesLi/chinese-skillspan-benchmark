@@ -1,0 +1,157 @@
+{
+  "scope": "Recheck of input identity, previous prevention scope, and document-group interpretation.",
+  "not_claimed": [
+    "Previous anti-leakage work was absent or invalid",
+    "143 Gold150 sentence texts occurred in training",
+    "Measured effect size of shared source documents"
+  ],
+  "original_key_checks": {
+    "groups": 2000,
+    "all_prefixes_equal_global_id": true,
+    "title_variation_within_groups": 0,
+    "source_domain_variation_within_groups": 0,
+    "unique_sentence_orders_within_groups": true
+  },
+  "join_checks": {
+    "train_b2": {
+      "records": 2150,
+      "ids_found": 2150,
+      "complete_text_equal_to_original_by_id": 2149,
+      "NFC_text_equal_to_original_by_id": 2149,
+      "nonmatching_text_ids": [
+        "1836-s0000"
+      ],
+      "exact_text_elsewhere_for_mismatched_ids": {
+        "1836-s0000": []
+      }
+    },
+    "dev_b2": {
+      "records": 169,
+      "ids_found": 169,
+      "complete_text_equal_to_original_by_id": 169,
+      "NFC_text_equal_to_original_by_id": 169,
+      "nonmatching_text_ids": [],
+      "exact_text_elsewhere_for_mismatched_ids": {}
+    },
+    "gold150": {
+      "records": 150,
+      "ids_found": 150,
+      "complete_text_equal_to_original_by_id": 148,
+      "NFC_text_equal_to_original_by_id": 148,
+      "nonmatching_text_ids": [
+        "1801-s0004",
+        "1990-s0022"
+      ],
+      "exact_text_elsewhere_for_mismatched_ids": {
+        "1801-s0004": [],
+        "1990-s0022": [
+          {
+            "sentence_id": "1990-s0044",
+            "global_id": "1990"
+          },
+          {
+            "sentence_id": "1990-s0045",
+            "global_id": "1990"
+          }
+        ]
+      }
+    }
+  },
+  "experiment_identity": {
+    "B2": {
+      "archive_member": "CNSS_Qwen_Reproduction/shared_guidelines_b2/configs/DATA_MANIFEST.json",
+      "manifest_sha256": "28db210b08123a370ca6a006cd7e405befc993acd4c69dac184542d16caa9ce9",
+      "recorded_isolation_wording": "句级隔离扩展版；不得改称文档隔离",
+      "recorded_list_name": "v6a_nocross_20260908",
+      "source_files": {
+        "train_b2": {
+          "observed_sha256": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+          "receipt_sha256": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+          "matches": true
+        },
+        "dev_b2": {
+          "observed_sha256": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+          "receipt_sha256": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+          "matches": true
+        }
+      },
+      "Gold150_hash_matches_receipt": true,
+      "prior_gold_checks": {
+        "sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+        "in_train_or_dev_by_id": false,
+        "in_train_or_dev_by_exact_text": false,
+        "in_train_or_dev_by_nfc_sentence": false,
+        "not_used_for_train_dev_earlystop_or_prompt": true
+      },
+      "prior_train_dev_id_overlap": [],
+      "prior_train_dev_NFC_overlap": [],
+      "previously_removed_training_ids": [
+        "1873-s0012",
+        "1898-s0015",
+        "1945-s0010",
+        "1950-s0004",
+        "1959-s0011",
+        "1960-s0025"
+      ]
+    },
+    "codex_9540": {
+      "archive_member": "CNSS_Qwen_Reproduction/expanded_silver/codex_seed42/data/SPLIT_IDS_MANIFEST.json",
+      "partitions": {
+        "train": {
+          "observed_occurrence_sha256": "c5ff5c62aceda82cb997588cfc4a1566750be613c60e385b5e87ecf8c61f926a",
+          "receipt_source_sha256": "c5ff5c62aceda82cb997588cfc4a1566750be613c60e385b5e87ecf8c61f926a",
+          "matches_receipt": true,
+          "n_matches": true,
+          "BIO_and_occurrence_ordered_ids_match": true,
+          "BIO_and_occurrence_ordered_complete_texts_match": true
+        },
+        "val": {
+          "observed_occurrence_sha256": "81fa2f40b70bcbdc594c3aae704b34e62ec4680377932c86e71b22edc16714d5",
+          "receipt_source_sha256": "81fa2f40b70bcbdc594c3aae704b34e62ec4680377932c86e71b22edc16714d5",
+          "matches_receipt": true,
+          "n_matches": true,
+          "BIO_and_occurrence_ordered_ids_match": true,
+          "BIO_and_occurrence_ordered_complete_texts_match": true
+        },
+        "test": {
+          "observed_occurrence_sha256": "b3b58f616773579471ffb40d9f2220ccd0e72b5ca09bd69adf5cdaaf7b6902a7",
+          "receipt_source_sha256": "b3b58f616773579471ffb40d9f2220ccd0e72b5ca09bd69adf5cdaaf7b6902a7",
+          "matches_receipt": true,
+          "n_matches": true,
+          "BIO_and_occurrence_ordered_ids_match": true,
+          "BIO_and_occurrence_ordered_complete_texts_match": true
+        }
+      }
+    },
+    "proxy_9646": {
+      "archive_member": "CNSS_Qwen_Reproduction/expanded_silver/proxy_seed42/data/SPLIT_IDS_MANIFEST.json",
+      "partitions": {
+        "train": {
+          "observed_occurrence_sha256": "a3b80e6f3ce0fabedacbc927543ecbba171ec2c1c161726bd59de945296bc001",
+          "receipt_source_sha256": "a3b80e6f3ce0fabedacbc927543ecbba171ec2c1c161726bd59de945296bc001",
+          "matches_receipt": true,
+          "n_matches": true,
+          "BIO_and_occurrence_ordered_ids_match": true,
+          "BIO_and_occurrence_ordered_complete_texts_match": true
+        },
+        "val": {
+          "observed_occurrence_sha256": "d973f61bcf6e1544722dcb59b5d95e5d4faa8ebca012eb34beca463fa32bb2b5",
+          "receipt_source_sha256": "d973f61bcf6e1544722dcb59b5d95e5d4faa8ebca012eb34beca463fa32bb2b5",
+          "matches_receipt": true,
+          "n_matches": true,
+          "BIO_and_occurrence_ordered_ids_match": true,
+          "BIO_and_occurrence_ordered_complete_texts_match": true
+        },
+        "test": {
+          "observed_occurrence_sha256": "2d1a422c7666561b1f026ae037b1425e1072a93c8187ba6e95710b1e84801aee",
+          "receipt_source_sha256": "2d1a422c7666561b1f026ae037b1425e1072a93c8187ba6e95710b1e84801aee",
+          "matches_receipt": true,
+          "n_matches": true,
+          "BIO_and_occurrence_ordered_ids_match": true,
+          "BIO_and_occurrence_ordered_complete_texts_match": true
+        }
+      }
+    }
+  },
+  "interpretation": "The original corpus posting split and the later sentence-isolated supervised experiments are different versions. Existing prevention checks remain valid within their stated scope. Shared source-document groups in later experimental splits are a separate restriction on unseen-document interpretation; they do not demonstrate identical test sentences in training or quantify score inflation."
+}

@@ -1,15 +1,9 @@
-\subsection{Chinese Model Diagnostics and External Comparisons}
+\subsection{Chinese Encoder and Type Comparisons}
 \label{sec:external-benchmark-results}
 
-The Chinese comparison does not establish a reliable advantage of ESCO initialization. The encoders achieved mean exact F1 of 0.522 (XLM-R-large) and 0.538 (ESCOXLM-R), with all six prediction files independently rescored against the original reference (Table~\ref{tab:external-chinese}, panel A). The mean difference was 0.016; its paired 95\% interval was $[-0.003, 0.034]$. Four-type macro-F1 is 0.607 and 0.622; excluding the two-span L class gives descriptive K/S/T macro values of 0.542 and 0.562, respectively. This check does not replace the four-type metric.
+The Chinese comparison does not establish a reliable advantage of ESCO initialization. The encoders achieved mean exact F1 of 0.522 (XLM-R-large) and 0.538 (ESCOXLM-R), with all six prediction files independently rescored against the original reference (Table~\ref{tab:external-chinese}, panel A). The mean difference was 0.016; its paired 95\% interval was $[-0.005, 0.035]$. Four-type macro-F1 is 0.607 and 0.622; excluding the two-span L class gives descriptive K/S/T macro values of 0.542 and 0.562, respectively. This check does not replace the four-type metric.
 
 Silver-supervised Qwen adaptation improved both S and K extraction: mean typed exact F1 increased by 0.148 and 0.210, respectively (Table~\ref{tab:external-chinese}, panel B). Each adapter improved K, S, and T relative to the no-adapter run (Figure~\ref{fig:qwen-diagnostics}). Qwen has the highest S mean and ESCOXLM-R the highest K mean among these three adapted models. These cross-model comparisons are descriptive because prediction heads, training budgets, and inference procedures differ.
-
-Archived runs show mixed effects of domain-pretrained initialization across external tasks (Table~\ref{tab:external-common}). ESCOXLM-R had a higher mean typed exact F1 on SkillSpan skills and Sayfullina and a lower mean on the other six streams. The largest decreases were on SkillSpan knowledge and German ICT; only these two pointwise bootstrap intervals excluded zero (\hyperref[app:e]{Appendix E}, Table~\ref{tab:external-common-ci}). All seeds were retained, including early-selected runs. FIJO has only 50 test sentences.
-
-The original-task reruns answer related but separate questions. Combining English and Danish training improves Danish classification macro-F1 for both tested encoders. NNOSE retrieval improves the single-seed Green results but not SkillSpan or Sayfullina. \hyperref[app:e]{Appendix~E} separates classification, retrieval, and extraction protocols for these and public-subset MaChAmp reruns.
-
-
 
 \input{tex/external_benchmarks/paper_tables_main}
 \FloatBarrier

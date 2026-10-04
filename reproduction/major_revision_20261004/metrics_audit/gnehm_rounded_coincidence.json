@@ -1,0 +1,69 @@
+{
+  "source": "paper_ready_tables_20260922.json",
+  "sha256": "8602110336e6df8f0b80e7bc2ab7594a63422493e12544d52c27a71f2e145aa6",
+  "common_protocol_XLMR": {
+    "dataset": "gnehm",
+    "task": "tags_skill",
+    "model": "FacebookAI/xlm-roberta-large",
+    "n": 3,
+    "mean": 0.8907319921573773,
+    "sd": 0.005092187078166928,
+    "seeds": [
+      0.8919694072657743,
+      0.8950914340712224,
+      0.8851351351351351
+    ]
+  },
+  "native_recipe_ESCOXLMR": {
+    "mean_sd": {
+      "n": 5,
+      "mean": 0.8910946542053816,
+      "sd": 0.004501996822357593,
+      "seeds": [
+        0.8907801418439716,
+        0.8847441415590627,
+        0.8918532634587899,
+        0.8906844106463878,
+        0.8974113135186961
+      ]
+    },
+    "per_seed": [
+      {
+        "seed": 276800,
+        "f1": 0.8907801418439716,
+        "best_epoch": 5,
+        "dev": 0.9181208053691275,
+        "n": 2557
+      },
+      {
+        "seed": 381552,
+        "f1": 0.8847441415590627,
+        "best_epoch": 5,
+        "dev": 0.9177837354781054,
+        "n": 2557
+      },
+      {
+        "seed": 497646,
+        "f1": 0.8918532634587899,
+        "best_epoch": 5,
+        "dev": 0.9097408400357462,
+        "n": 2557
+      },
+      {
+        "seed": 624189,
+        "f1": 0.8906844106463878,
+        "best_epoch": 5,
+        "dev": 0.9087640449438202,
+        "n": 2557
+      },
+      {
+        "seed": 884832,
+        "f1": 0.8974113135186961,
+        "best_epoch": 5,
+        "dev": 0.9174147217235188,
+        "n": 2557
+      }
+    ]
+  },
+  "finding": "Different seed-level results, means and sample SD; their three-decimal displays coincide. Not a copied value."
+}

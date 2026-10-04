@@ -1,0 +1,1127 @@
+{
+  "schema": 1,
+  "source_hashes": {
+    "train_b2": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+    "dev_b2": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+    "gold150": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+    "expanded_zip": "53490f44499887a3d1fc9d09f9d84e63013361fbdcb1cfb217a85f6a04b18617",
+    "qa100_manifest": "e25eaf8ebc93c571d6f41d335607e767d1092ac3c80177e18e38ce90412f7e16",
+    "prep_composition": "c75bef63ba7071cc62916da9e374d381e2b783b168427eb69a79bedcaedc31b9",
+    "latest50_manifest": "31611f2cf76adb94d8273529c043786dbffd31a9a6aebada3e664444f5e55888"
+  },
+  "scope": "Frozen-file audit only; no new human annotations or model inference.",
+  "original": {
+    "B2_train": {
+      "records": 2150,
+      "unique": {
+        "id": 2150,
+        "exact_text": 1910,
+        "NFC_text": 1910,
+        "NFKC_no_space_casefold": 1908
+      },
+      "excess_duplicate_records": {
+        "id": 0,
+        "exact_text": 240,
+        "NFC_text": 240,
+        "NFKC_no_space_casefold": 242
+      },
+      "numeric_ad_prefix_records": 2150,
+      "numeric_ad_prefix_groups": 179,
+      "without_numeric_ad_prefix": 0
+    },
+    "B2_dev": {
+      "records": 169,
+      "unique": {
+        "id": 169,
+        "exact_text": 169,
+        "NFC_text": 169,
+        "NFKC_no_space_casefold": 169
+      },
+      "excess_duplicate_records": {
+        "id": 0,
+        "exact_text": 0,
+        "NFC_text": 0,
+        "NFKC_no_space_casefold": 0
+      },
+      "numeric_ad_prefix_records": 169,
+      "numeric_ad_prefix_groups": 18,
+      "without_numeric_ad_prefix": 0
+    },
+    "Gold150": {
+      "records": 150,
+      "unique": {
+        "id": 150,
+        "exact_text": 150,
+        "NFC_text": 150,
+        "NFKC_no_space_casefold": 150
+      },
+      "excess_duplicate_records": {
+        "id": 0,
+        "exact_text": 0,
+        "NFC_text": 0,
+        "NFKC_no_space_casefold": 0
+      },
+      "numeric_ad_prefix_records": 150,
+      "numeric_ad_prefix_groups": 61,
+      "without_numeric_ad_prefix": 0
+    }
+  },
+  "original_overlap": {
+    "B2_train__B2_dev": {
+      "sentence_keys": {
+        "id": 0,
+        "exact_text": 0,
+        "NFC_text": 0,
+        "NFKC_no_space_casefold": 2
+      },
+      "numeric_ad_prefix": {
+        "shared_groups": 1,
+        "records_a": 4,
+        "records_b": 27,
+        "shared_ids": [
+          "1991"
+        ]
+      },
+      "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+    },
+    "B2_train__Gold150": {
+      "sentence_keys": {
+        "id": 0,
+        "exact_text": 0,
+        "NFC_text": 0,
+        "NFKC_no_space_casefold": 0
+      },
+      "numeric_ad_prefix": {
+        "shared_groups": 59,
+        "records_a": 531,
+        "records_b": 143,
+        "shared_ids": [
+          "1801",
+          "1802",
+          "1803",
+          "1804",
+          "1805",
+          "1806",
+          "1807",
+          "1808",
+          "1809",
+          "1811",
+          "1813",
+          "1814",
+          "1815",
+          "1816",
+          "1817",
+          "1818",
+          "1819",
+          "1820",
+          "1838",
+          "1844",
+          "1848",
+          "1853",
+          "1867",
+          "1872",
+          "1877",
+          "1881",
+          "1886",
+          "1896",
+          "1897",
+          "1903",
+          "1905",
+          "1908",
+          "1909",
+          "1914",
+          "1917",
+          "1921",
+          "1924",
+          "1925",
+          "1926",
+          "1935",
+          "1937",
+          "1938",
+          "1941",
+          "1946",
+          "1948",
+          "1951",
+          "1953",
+          "1955",
+          "1956",
+          "1963",
+          "1964",
+          "1967",
+          "1968",
+          "1969",
+          "1972",
+          "1973",
+          "1977",
+          "1983",
+          "1990"
+        ]
+      },
+      "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+    },
+    "B2_dev__Gold150": {
+      "sentence_keys": {
+        "id": 0,
+        "exact_text": 0,
+        "NFC_text": 0,
+        "NFKC_no_space_casefold": 0
+      },
+      "numeric_ad_prefix": {
+        "shared_groups": 0,
+        "records_a": 0,
+        "records_b": 0,
+        "shared_ids": []
+      },
+      "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+    }
+  },
+  "B2_preparation": {
+    "records": 2319,
+    "raw_NFC_unique": 2079,
+    "preparation_key_unique": 2075,
+    "valid_preparation_key_unique": 2064,
+    "unique_rejected_by_preparation_filter": 11,
+    "definition": "NFC, remove all whitespace, trim edge space/comma/list-separator/colon/semicolon; then minimum length 6 and punctuation-only exclusion."
+  },
+  "expanded": {
+    "codex_9540": {
+      "member_hashes": {
+        "train": "2286848c32c08285f49b9b068aa20bce2592c059dc54c37b7221405873e78ba5",
+        "val": "8874508307688d9c0a764658a82ccb5f0dbf72d8a262e5a5304a8768ef4db1ac",
+        "test": "018cbcfd48d1155e3552527f61597c4bf84f69ca17e60586a10ea908280a0655"
+      },
+      "actual_mix_source_counts": {
+        "v6a_nocross_b2": 2077,
+        "run2500_codex_cli": 2353,
+        "wave12_codex_cli": 3407,
+        "wave3_codex_cli": 1703
+      },
+      "all": {
+        "records": 9540,
+        "unique": {
+          "id": 9540,
+          "exact_text": 9540,
+          "NFC_text": 9540,
+          "NFKC_no_space_casefold": 9536
+        },
+        "excess_duplicate_records": {
+          "id": 0,
+          "exact_text": 0,
+          "NFC_text": 0,
+          "NFKC_no_space_casefold": 4
+        },
+        "numeric_ad_prefix_records": 2077,
+        "numeric_ad_prefix_groups": 195,
+        "without_numeric_ad_prefix": 7463
+      },
+      "per_split": {
+        "train": {
+          "records": 8842,
+          "unique": {
+            "id": 8842,
+            "exact_text": 8842,
+            "NFC_text": 8842,
+            "NFKC_no_space_casefold": 8839
+          },
+          "excess_duplicate_records": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 3
+          },
+          "numeric_ad_prefix_records": 1926,
+          "numeric_ad_prefix_groups": 194,
+          "without_numeric_ad_prefix": 6916
+        },
+        "val": {
+          "records": 348,
+          "unique": {
+            "id": 348,
+            "exact_text": 348,
+            "NFC_text": 348,
+            "NFKC_no_space_casefold": 348
+          },
+          "excess_duplicate_records": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix_records": 76,
+          "numeric_ad_prefix_groups": 56,
+          "without_numeric_ad_prefix": 272
+        },
+        "test": {
+          "records": 350,
+          "unique": {
+            "id": 350,
+            "exact_text": 350,
+            "NFC_text": 350,
+            "NFKC_no_space_casefold": 350
+          },
+          "excess_duplicate_records": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix_records": 75,
+          "numeric_ad_prefix_groups": 58,
+          "without_numeric_ad_prefix": 275
+        }
+      },
+      "between_splits": {
+        "train__val": {
+          "sentence_keys": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 1
+          },
+          "numeric_ad_prefix": {
+            "shared_groups": 56,
+            "records_a": 803,
+            "records_b": 76,
+            "shared_ids": [
+              "1803",
+              "1804",
+              "1807",
+              "1808",
+              "1809",
+              "1822",
+              "1825",
+              "1827",
+              "1829",
+              "1837",
+              "1840",
+              "1845",
+              "1846",
+              "1847",
+              "1852",
+              "1855",
+              "1858",
+              "1860",
+              "1870",
+              "1872",
+              "1873",
+              "1881",
+              "1885",
+              "1891",
+              "1902",
+              "1910",
+              "1913",
+              "1915",
+              "1931",
+              "1932",
+              "1933",
+              "1936",
+              "1939",
+              "1940",
+              "1944",
+              "1945",
+              "1947",
+              "1950",
+              "1960",
+              "1962",
+              "1965",
+              "1969",
+              "1973",
+              "1974",
+              "1975",
+              "1978",
+              "1981",
+              "1982",
+              "1984",
+              "1987",
+              "1988",
+              "1990",
+              "1991",
+              "1994",
+              "1995",
+              "1999"
+            ]
+          },
+          "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+        },
+        "train__test": {
+          "sentence_keys": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix": {
+            "shared_groups": 57,
+            "records_a": 787,
+            "records_b": 74,
+            "shared_ids": [
+              "1803",
+              "1807",
+              "1814",
+              "1817",
+              "1820",
+              "1822",
+              "1823",
+              "1825",
+              "1827",
+              "1831",
+              "1836",
+              "1837",
+              "1841",
+              "1845",
+              "1846",
+              "1852",
+              "1855",
+              "1858",
+              "1859",
+              "1860",
+              "1862",
+              "1867",
+              "1870",
+              "1874",
+              "1877",
+              "1879",
+              "1881",
+              "1883",
+              "1891",
+              "1905",
+              "1917",
+              "1919",
+              "1922",
+              "1925",
+              "1931",
+              "1932",
+              "1938",
+              "1945",
+              "1960",
+              "1963",
+              "1964",
+              "1966",
+              "1967",
+              "1971",
+              "1972",
+              "1973",
+              "1978",
+              "1979",
+              "1981",
+              "1982",
+              "1984",
+              "1987",
+              "1991",
+              "1995",
+              "1996",
+              "1997",
+              "1999"
+            ]
+          },
+          "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+        },
+        "val__test": {
+          "sentence_keys": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix": {
+            "shared_groups": 28,
+            "records_a": 39,
+            "records_b": 39,
+            "shared_ids": [
+              "1803",
+              "1807",
+              "1822",
+              "1825",
+              "1827",
+              "1837",
+              "1845",
+              "1846",
+              "1852",
+              "1855",
+              "1858",
+              "1860",
+              "1870",
+              "1881",
+              "1891",
+              "1931",
+              "1932",
+              "1945",
+              "1960",
+              "1973",
+              "1978",
+              "1981",
+              "1982",
+              "1984",
+              "1987",
+              "1991",
+              "1995",
+              "1999"
+            ]
+          },
+          "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+        }
+      },
+      "against_Gold150": {
+        "train": {
+          "sentence_keys": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix": {
+            "shared_groups": 59,
+            "records_a": 489,
+            "records_b": 143,
+            "shared_ids": [
+              "1801",
+              "1802",
+              "1803",
+              "1804",
+              "1805",
+              "1806",
+              "1807",
+              "1808",
+              "1809",
+              "1811",
+              "1813",
+              "1814",
+              "1815",
+              "1816",
+              "1817",
+              "1818",
+              "1819",
+              "1820",
+              "1838",
+              "1844",
+              "1848",
+              "1853",
+              "1867",
+              "1872",
+              "1877",
+              "1881",
+              "1886",
+              "1896",
+              "1897",
+              "1903",
+              "1905",
+              "1908",
+              "1909",
+              "1914",
+              "1917",
+              "1921",
+              "1924",
+              "1925",
+              "1926",
+              "1935",
+              "1937",
+              "1938",
+              "1941",
+              "1946",
+              "1948",
+              "1951",
+              "1953",
+              "1955",
+              "1956",
+              "1963",
+              "1964",
+              "1967",
+              "1968",
+              "1969",
+              "1972",
+              "1973",
+              "1977",
+              "1983",
+              "1990"
+            ]
+          },
+          "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+        },
+        "val": {
+          "sentence_keys": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix": {
+            "shared_groups": 10,
+            "records_a": 12,
+            "records_b": 39,
+            "shared_ids": [
+              "1803",
+              "1804",
+              "1807",
+              "1808",
+              "1809",
+              "1872",
+              "1881",
+              "1969",
+              "1973",
+              "1990"
+            ]
+          },
+          "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+        },
+        "test": {
+          "sentence_keys": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix": {
+            "shared_groups": 17,
+            "records_a": 22,
+            "records_b": 43,
+            "shared_ids": [
+              "1803",
+              "1807",
+              "1814",
+              "1817",
+              "1820",
+              "1867",
+              "1877",
+              "1881",
+              "1905",
+              "1917",
+              "1925",
+              "1938",
+              "1963",
+              "1964",
+              "1967",
+              "1972",
+              "1973"
+            ]
+          },
+          "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+        }
+      },
+      "old_rows_outside_preparation_valid_keys": {
+        "n": 11,
+        "ids": [
+          "1843-s0009",
+          "1846-s0002",
+          "1855-s0015",
+          "1883-s0014",
+          "1899-s0002",
+          "1922-s0005",
+          "1924-s0011",
+          "1929-s0004",
+          "1954-s0007",
+          "1984-s0062",
+          "1858-s0016"
+        ],
+        "lengths": [
+          1,
+          3,
+          4,
+          5,
+          1,
+          5,
+          5,
+          0,
+          2,
+          4,
+          2
+        ]
+      }
+    },
+    "proxy_9646": {
+      "member_hashes": {
+        "train": "1770ddc661bd4e3a71ce4ef715809e5a6808b59a9723ab1274152d415680b411",
+        "val": "dfdbc947ced728642c4af730700050199132f80abe0515e0db795cab64f70aec",
+        "test": "38066599fa94a21bcf0db387e2479c849c2f8e6d95c950b706cbdae4faa7f9fc"
+      },
+      "actual_mix_source_counts": {
+        "v6a_nocross_b2": 2077,
+        "run2500_http_proxy": 2459,
+        "wave12_codex_cli": 3407,
+        "wave3_codex_cli": 1703
+      },
+      "all": {
+        "records": 9646,
+        "unique": {
+          "id": 9646,
+          "exact_text": 9646,
+          "NFC_text": 9646,
+          "NFKC_no_space_casefold": 9642
+        },
+        "excess_duplicate_records": {
+          "id": 0,
+          "exact_text": 0,
+          "NFC_text": 0,
+          "NFKC_no_space_casefold": 4
+        },
+        "numeric_ad_prefix_records": 2077,
+        "numeric_ad_prefix_groups": 195,
+        "without_numeric_ad_prefix": 7569
+      },
+      "per_split": {
+        "train": {
+          "records": 8943,
+          "unique": {
+            "id": 8943,
+            "exact_text": 8943,
+            "NFC_text": 8943,
+            "NFKC_no_space_casefold": 8940
+          },
+          "excess_duplicate_records": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 3
+          },
+          "numeric_ad_prefix_records": 1926,
+          "numeric_ad_prefix_groups": 194,
+          "without_numeric_ad_prefix": 7017
+        },
+        "val": {
+          "records": 351,
+          "unique": {
+            "id": 351,
+            "exact_text": 351,
+            "NFC_text": 351,
+            "NFKC_no_space_casefold": 351
+          },
+          "excess_duplicate_records": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix_records": 76,
+          "numeric_ad_prefix_groups": 56,
+          "without_numeric_ad_prefix": 275
+        },
+        "test": {
+          "records": 352,
+          "unique": {
+            "id": 352,
+            "exact_text": 352,
+            "NFC_text": 352,
+            "NFKC_no_space_casefold": 352
+          },
+          "excess_duplicate_records": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix_records": 75,
+          "numeric_ad_prefix_groups": 58,
+          "without_numeric_ad_prefix": 277
+        }
+      },
+      "between_splits": {
+        "train__val": {
+          "sentence_keys": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 1
+          },
+          "numeric_ad_prefix": {
+            "shared_groups": 56,
+            "records_a": 803,
+            "records_b": 76,
+            "shared_ids": [
+              "1803",
+              "1804",
+              "1807",
+              "1808",
+              "1809",
+              "1822",
+              "1825",
+              "1827",
+              "1829",
+              "1837",
+              "1840",
+              "1845",
+              "1846",
+              "1847",
+              "1852",
+              "1855",
+              "1858",
+              "1860",
+              "1870",
+              "1872",
+              "1873",
+              "1881",
+              "1885",
+              "1891",
+              "1902",
+              "1910",
+              "1913",
+              "1915",
+              "1931",
+              "1932",
+              "1933",
+              "1936",
+              "1939",
+              "1940",
+              "1944",
+              "1945",
+              "1947",
+              "1950",
+              "1960",
+              "1962",
+              "1965",
+              "1969",
+              "1973",
+              "1974",
+              "1975",
+              "1978",
+              "1981",
+              "1982",
+              "1984",
+              "1987",
+              "1988",
+              "1990",
+              "1991",
+              "1994",
+              "1995",
+              "1999"
+            ]
+          },
+          "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+        },
+        "train__test": {
+          "sentence_keys": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix": {
+            "shared_groups": 57,
+            "records_a": 787,
+            "records_b": 74,
+            "shared_ids": [
+              "1803",
+              "1807",
+              "1814",
+              "1817",
+              "1820",
+              "1822",
+              "1823",
+              "1825",
+              "1827",
+              "1831",
+              "1836",
+              "1837",
+              "1841",
+              "1845",
+              "1846",
+              "1852",
+              "1855",
+              "1858",
+              "1859",
+              "1860",
+              "1862",
+              "1867",
+              "1870",
+              "1874",
+              "1877",
+              "1879",
+              "1881",
+              "1883",
+              "1891",
+              "1905",
+              "1917",
+              "1919",
+              "1922",
+              "1925",
+              "1931",
+              "1932",
+              "1938",
+              "1945",
+              "1960",
+              "1963",
+              "1964",
+              "1966",
+              "1967",
+              "1971",
+              "1972",
+              "1973",
+              "1978",
+              "1979",
+              "1981",
+              "1982",
+              "1984",
+              "1987",
+              "1991",
+              "1995",
+              "1996",
+              "1997",
+              "1999"
+            ]
+          },
+          "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+        },
+        "val__test": {
+          "sentence_keys": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix": {
+            "shared_groups": 28,
+            "records_a": 39,
+            "records_b": 39,
+            "shared_ids": [
+              "1803",
+              "1807",
+              "1822",
+              "1825",
+              "1827",
+              "1837",
+              "1845",
+              "1846",
+              "1852",
+              "1855",
+              "1858",
+              "1860",
+              "1870",
+              "1881",
+              "1891",
+              "1931",
+              "1932",
+              "1945",
+              "1960",
+              "1973",
+              "1978",
+              "1981",
+              "1982",
+              "1984",
+              "1987",
+              "1991",
+              "1995",
+              "1999"
+            ]
+          },
+          "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+        }
+      },
+      "against_Gold150": {
+        "train": {
+          "sentence_keys": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix": {
+            "shared_groups": 59,
+            "records_a": 489,
+            "records_b": 143,
+            "shared_ids": [
+              "1801",
+              "1802",
+              "1803",
+              "1804",
+              "1805",
+              "1806",
+              "1807",
+              "1808",
+              "1809",
+              "1811",
+              "1813",
+              "1814",
+              "1815",
+              "1816",
+              "1817",
+              "1818",
+              "1819",
+              "1820",
+              "1838",
+              "1844",
+              "1848",
+              "1853",
+              "1867",
+              "1872",
+              "1877",
+              "1881",
+              "1886",
+              "1896",
+              "1897",
+              "1903",
+              "1905",
+              "1908",
+              "1909",
+              "1914",
+              "1917",
+              "1921",
+              "1924",
+              "1925",
+              "1926",
+              "1935",
+              "1937",
+              "1938",
+              "1941",
+              "1946",
+              "1948",
+              "1951",
+              "1953",
+              "1955",
+              "1956",
+              "1963",
+              "1964",
+              "1967",
+              "1968",
+              "1969",
+              "1972",
+              "1973",
+              "1977",
+              "1983",
+              "1990"
+            ]
+          },
+          "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+        },
+        "val": {
+          "sentence_keys": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix": {
+            "shared_groups": 10,
+            "records_a": 12,
+            "records_b": 39,
+            "shared_ids": [
+              "1803",
+              "1804",
+              "1807",
+              "1808",
+              "1809",
+              "1872",
+              "1881",
+              "1969",
+              "1973",
+              "1990"
+            ]
+          },
+          "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+        },
+        "test": {
+          "sentence_keys": {
+            "id": 0,
+            "exact_text": 0,
+            "NFC_text": 0,
+            "NFKC_no_space_casefold": 0
+          },
+          "numeric_ad_prefix": {
+            "shared_groups": 17,
+            "records_a": 22,
+            "records_b": 43,
+            "shared_ids": [
+              "1803",
+              "1807",
+              "1814",
+              "1817",
+              "1820",
+              "1867",
+              "1877",
+              "1881",
+              "1905",
+              "1917",
+              "1925",
+              "1938",
+              "1963",
+              "1964",
+              "1967",
+              "1972",
+              "1973"
+            ]
+          },
+          "scope": "Numeric ID prefixes are grouping evidence, not a verified source-document crosswalk; sp10k IDs are excluded."
+        }
+      },
+      "old_rows_outside_preparation_valid_keys": {
+        "n": 11,
+        "ids": [
+          "1843-s0009",
+          "1846-s0002",
+          "1855-s0015",
+          "1883-s0014",
+          "1899-s0002",
+          "1922-s0005",
+          "1924-s0011",
+          "1929-s0004",
+          "1954-s0007",
+          "1984-s0062",
+          "1858-s0016"
+        ],
+        "lengths": [
+          1,
+          3,
+          4,
+          5,
+          1,
+          5,
+          5,
+          0,
+          2,
+          4,
+          2
+        ]
+      }
+    }
+  },
+  "QA100_sampling": {
+    "registry": 2451,
+    "excluded_A100": 100,
+    "excluded_prior_pilot100": 100,
+    "excluded_pending": 72,
+    "eligible": 2179,
+    "sample": {
+      "n": 100,
+      "design": "stratified simple random sample, proportional allocation (Hamilton largest remainder)",
+      "strata": "cohort × empty/span × Unicode-length bin",
+      "calendar_seed": 20260908,
+      "rng_salt": "CNSS_SP_QA100",
+      "rng_stream": "a78677baf1c6db05",
+      "without_replacement": true,
+      "gold_not_used_to_choose_sample": true,
+      "equal_probability_within_stratum": true,
+      "unequal_probability_across_strata": true,
+      "inclusion_probability_is_n_h_over_N_h": true,
+      "this_is_not_a_new_blind_gold_test": true
+    },
+    "stratum_population_sum": 2179,
+    "sample_size_sum": 100,
+    "zero_probability_population": 11
+  },
+  "latest50_sampling": {
+    "n": 50,
+    "distinct_advertisement_ids": 50,
+    "source_counts": {
+      "上市公司招聘": 8,
+      "事业单位招聘": 16,
+      "阿里云公开数据集": 26
+    },
+    "B2_id_overlap": 0,
+    "Gold150_id_overlap": 0,
+    "complete_candidate_frame_available": false,
+    "note": "Sample manifest alone cannot rerun the selection or verify every exclusion. This is an agreement sample, not a new model test."
+  },
+  "preparation_vs_final": {
+    "planned_old_valid": 2064,
+    "planned_new": 7936,
+    "planned_total": 10000,
+    "final_old": 2077,
+    "wave12_candidates": 3620,
+    "wave12_kept": 3407,
+    "wave3_candidates": 1816,
+    "wave3_kept": 1703,
+    "codex_2500_kept": 2353,
+    "alternative_2500_kept": 2459,
+    "codex_final_arithmetic": 9540,
+    "alternative_final_arithmetic": 9646,
+    "apparent_313_gap": 313,
+    "note": "The 10,000 preparatory target and final pools apply different old-Silver admission criteria. A single subtraction from 10,000 conflates stages."
+  }
+}

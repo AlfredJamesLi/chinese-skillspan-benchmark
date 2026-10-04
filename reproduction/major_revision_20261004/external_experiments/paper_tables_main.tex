@@ -1,0 +1,47 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Chinese model diagnostics on Gold150 (0--1). Results across three training seeds are mean $\pm$ sample SD; Qwen without an adapter is a single run.}
+\label{tab:external-chinese}
+\textbf{A. Chinese encoders: overall F1}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Lrrrr@{}}
+\toprule
+Encoder & Typed exact & Typed relaxed & \makecell{Boundary\\exact} & Macro-F1 \\
+\midrule
+XLM-R-large & $0.522\pm0.022$ & $0.650\pm0.021$ & $0.571\pm0.022$ & $0.607\pm0.016$ \\
+ESCOXLM-R & $0.538\pm0.021$ & $0.662\pm0.022$ & $0.582\pm0.024$ & $0.622\pm0.010$ \\
+\bottomrule
+\end{tabularx}
+\par\medskip\textbf{B. Typed exact F1 by competency type}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Lrrrr@{}}
+\toprule
+Model & S ($n=448$) & K ($n=125$) & T ($n=88$) & L ($n=2$) \\
+\midrule
+Qwen, no adapter & $0.377$ & $0.302$ & $0.380$ & $0.000$ \\
+Qwen B2 LoRA & $0.525\pm0.039$ & $0.512\pm0.063$ & $0.638\pm0.017$ & $0.800$ \\
+XLM-R-large & $0.506\pm0.024$ & $0.495\pm0.037$ & $0.627\pm0.006$ & $0.800$ \\
+ESCOXLM-R & $0.518\pm0.029$ & $0.537\pm0.009$ & $0.631\pm0.020$ & $0.800$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight\footnotesize All adapted models use the B2 split (2,150/169 training/development records) and seeds 42/43/44. Encoders use fresh linear LSKT heads; Qwen uses a LoRA adapter and the fixed inference protocol in Table~\ref{tab:gold150-main}. All four types are predicted jointly. Boundary exact collapses types; macro-F1 weights L/K/S/T equally. For L, each trained run has 2 TP, 1 FP, and 0 FN; Qwen without an adapter has 0 TP, 1 FP, and 2 FN. L seed SD is omitted because two reference spans cannot establish reliability. Gold150 informed guideline development and is not a new blind test.
+\end{table}
+
+\begin{table}[!htbp]
+\centering\small
+\caption{Common-protocol typed exact token-span micro-F1 (0--1). Each row reports mean $\pm$ sample SD across three training seeds for one dataset and annotation stream.}
+\label{tab:external-common}
+\begin{tabularx}{\linewidth}{@{}L P{.14\linewidth}P{.25\linewidth}rr@{}}
+\toprule
+Dataset & Stream & Train/dev/test & XLM-R-large & ESCOXLM-R \\
+\midrule
+SkillSpan & Skill & 4,800/3,174/3,569 & $0.567\pm0.012$ & $0.577\pm0.006$ \\
+SkillSpan & Knowledge & 4,800/3,174/3,569 & $0.698\pm0.021$ & $0.672\pm0.052$ \\
+Kompetencer & Skill & 778/346/262 & $0.545\pm0.028$ & $0.527\pm0.004$ \\
+Kompetencer & Knowledge & 778/346/262 & $0.618\pm0.035$ & $0.593\pm0.044$ \\
+Gnehm ICT & ICT & 19,889/2,332/2,557 & $0.891\pm0.005$ & $0.867\pm0.032$ \\
+Green & Native types & 8,669/964/335 & $0.493\pm0.009$ & $0.492\pm0.007$ \\
+Sayfullina & Skill & 3,705/1,855/1,851 & $0.920\pm0.004$ & $0.925\pm0.005$ \\
+FIJO & Native types & 399/50/50 & $0.343\pm0.019$ & $0.339\pm0.007$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight\footnotesize Both encoders use fresh linear BIO heads, 20 epochs, and development-set checkpoint selection. SkillSpan and Kompetencer have separate skill and knowledge streams; Green and FIJO retain their entity types. German data use the public ICT release. The shared protocol differs from the original CRF and NNOSE methods.
+\end{table}

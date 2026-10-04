@@ -1,0 +1,50 @@
+\subsection{Kompetencer Classification and NNOSE Reruns}
+Kompetencer fine-grained classification~\citep{jensen2022kompetencer} and NNOSE~\citep{zhang2024nnose} were run on an NVIDIA A100 (80 GB). Software versions and compatibility records are provided in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/source/tex/external_benchmarks/paper_A_native.tex}{native-task configurations}. These experiments retain task-specific metrics and are reported separately from the experiments using the common linear-head protocol.
+
+For Kompetencer, we compared DaJobBERT with RemBERT~\citep{chung2021rembert}. MaChAmp used a 20-epoch budget and the five seeds recorded for the SkillSpan native runs. Training used Danish (DA), English (EN), or both (EN+DA), with 138 Danish and 9,472 English training records. All conditions selected checkpoints on the 1,577-record English development set. Table~\ref{tab:external-kompetencer-classification} reports unweighted macro-F1 for classification of supplied spans. The recorded DaJobBERT initialization is \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/b84f218b7142c97ab03a60499a9b30e7ec332cab/results_snapshots/a_native_20260924/A_NATIVE_RECEIPT.md}{\texttt{jjzha/dajobbert-base-uncased}}; the linked receipt retains its full revision. Together with the unweighted metric, this makes the experiment a task-specific rerun rather than a matched reproduction of the original cased setting.
+
+NNOSE used JobBERT and JobBERTa with seed 113412 and development-based early stopping. Each datastore contained only training examples from the evaluated dataset. Neighbour count $k$, interpolation weight $\lambda$, and temperature $T$ were selected on development data and frozen before testing. Table~\ref{tab:external-nnose} compares seqeval span-F1 from the linear head and retrieval-augmented predictions of the same checkpoint. These linear-head results belong to the NNOSE pipeline, not the common-protocol XLM-R comparison. The all-dataset datastore was not run, and the single-seed results do not establish a general retrieval benefit.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Kompetencer fine-grained classification: macro-F1 across five seeds (0--1).}
+\label{tab:external-kompetencer-classification}
+\begin{tabularx}{\linewidth}{@{}L P{.18\linewidth}rr@{}}
+\toprule
+Encoder & Training & Danish test & English test \\
+\midrule
+DaJobBERT & DA & $0.182\pm0.034$ & $0.064\pm0.012$ \\
+DaJobBERT & EN & $0.232\pm0.028$ & $0.539\pm0.010$ \\
+DaJobBERT & EN+DA & $0.340\pm0.017$ & $0.529\pm0.008$ \\
+RemBERT & DA & $0.050\pm0.072$ & $0.034\pm0.041$ \\
+RemBERT & EN & $0.261\pm0.019$ & $0.552\pm0.017$ \\
+RemBERT & EN+DA & $0.316\pm0.019$ & $0.554\pm0.014$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight\footnotesize Mean $\pm$ sample SD; Danish/English test sizes are 784/1,578 classified spans. All conditions use English development data. EN training with Danish testing is the EN-to-DA transfer condition. DaJobBERT resolved to an uncased checkpoint despite the requested cased identifier. Scores are unweighted classification macro-F1, not span-F1 or the source plot's weighted metric. No matched published-score comparison is claimed.
+\end{table}
+
+\begin{table}[htbp]
+\centering\small
+\caption{NNOSE with an in-dataset training datastore: test span-F1 (0--1).}
+\label{tab:external-nnose}
+\begin{tabularx}{\linewidth}{@{}L P{.22\linewidth}rrr@{}}
+\toprule
+Dataset & Encoder & Test $n$ & Linear & kNN \\
+\midrule
+SkillSpan & JobBERT & 3,569 & 0.613 & 0.612 \\
+SkillSpan & JobBERTa & 3,569 & 0.631 & 0.625 \\
+Green & JobBERT & 335 & 0.491 & 0.500 \\
+Green & JobBERTa & 335 & 0.466 & 0.485 \\
+Sayfullina & JobBERT & 1,851 & 0.897 & 0.896 \\
+Sayfullina & JobBERTa & 1,851 & 0.915 & 0.912 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight\footnotesize Single seed 113412; no SD is estimated. Selected epochs and development-selected retrieval settings are preserved in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/nnose_full.tex}{complete run table}. Both columns use the same trained checkpoint within each row. The datastore excludes development and test examples. SkillSpan uses public HOUSE+TECH. The all-dataset datastore was not evaluated, and alignment with an original-paper result cell has not been established.
+\end{table}
+
+\FloatBarrier
+
+Combined English/Danish training improved Danish macro-F1 for both encoders; RemBERT's Danish-only score varied across seeds ($0.050\pm0.072$). English-based selection and the unweighted metric prevent a matched published-score comparison. NNOSE gave no consistent benefit: these single-seed runs improved Green but slightly reduced SkillSpan and Sayfullina F1.
+
+The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/source/tex/external_benchmarks/paper_A_native.tex}{coverage record} lists uncompleted configurations; missing results are not scored as zero.

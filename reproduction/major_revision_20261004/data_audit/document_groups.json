@@ -1,0 +1,281 @@
+{
+  "schema": 1,
+  "input_sha256": {
+    "corpus_train": "0a24841b97416a0b50e80c5e848bc6b232be91c7bc2f81c05ddb937a2924a44b",
+    "corpus_dev": "ea0dabb8dbf295d4edc046fa2ecf9610d33557216095aa54ac9690a77954b1ac",
+    "corpus_test": "263edc8b07db139f078f1023bad7f46dc2c6bf3e7ec1bdfb7cbccded2ded3142",
+    "new_sentences": "7fbe9223a739c67ef254c2bd17bf04d9879b2d84acd039a04b138fef75809638",
+    "expanded_zip": "53490f44499887a3d1fc9d09f9d84e63013361fbdcb1cfb217a85f6a04b18617",
+    "b2_train": "8921e5fc4b89a0fa83bd942f919c3325546b9938e099b6a13e378736b6717d2e",
+    "b2_dev": "e67a3eb5229b94c6c1b552d5f40ece9ad362197236c20cd66b7f2600c9636fef",
+    "gold150": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0"
+  },
+  "document_key": "Original corpus global_id; expansion source_file + source_row_id. Namespaces kept separate.",
+  "limitations": [
+    "The two ID namespaces lack a source-document crosswalk; cross-namespace document non-overlap is not established.",
+    "No manual labels or new test scores were created. This audit does not remove pretraining contamination uncertainty."
+  ],
+  "corpus": {
+    "train": {
+      "n": 17460,
+      "mapped_document_ids": 1600,
+      "unmapped": 0,
+      "source_domains": {
+        "应届生招聘": 10312,
+        "人工智能招聘": 7148
+      }
+    },
+    "dev": {
+      "n": 2143,
+      "mapped_document_ids": 200,
+      "unmapped": 0,
+      "source_domains": {
+        "人工智能招聘": 2143
+      }
+    },
+    "test": {
+      "n": 3237,
+      "mapped_document_ids": 200,
+      "unmapped": 0,
+      "source_domains": {
+        "人工智能招聘": 1423,
+        "阿里云公开数据集": 473,
+        "事业单位招聘": 1341
+      }
+    }
+  },
+  "corpus_between_splits": {
+    "train__dev": {
+      "shared_document_ids": 0,
+      "records_a_from_shared": 0,
+      "records_b_from_shared": 0,
+      "exact_text_shared": 54,
+      "normalized_text_shared": 49
+    },
+    "train__test": {
+      "shared_document_ids": 0,
+      "records_a_from_shared": 0,
+      "records_b_from_shared": 0,
+      "exact_text_shared": 34,
+      "normalized_text_shared": 35
+    },
+    "dev__test": {
+      "shared_document_ids": 0,
+      "records_a_from_shared": 0,
+      "records_b_from_shared": 0,
+      "exact_text_shared": 21,
+      "normalized_text_shared": 23
+    }
+  },
+  "prefix_validation": {
+    "all_original_ids_match_global_id": true,
+    "B2_ids_found_in_original": {
+      "train": 2150,
+      "dev": 169
+    },
+    "Gold150_ids_found": 150
+  },
+  "B2": {
+    "train_vs_dev": {
+      "shared_document_ids": 1,
+      "records_a_from_shared": 4,
+      "records_b_from_shared": 27,
+      "exact_text_shared": 0,
+      "normalized_text_shared": 2
+    },
+    "train_vs_gold150": {
+      "shared_document_ids": 59,
+      "records_a_from_shared": 531,
+      "records_b_from_shared": 143,
+      "exact_text_shared": 0,
+      "normalized_text_shared": 0
+    },
+    "dev_vs_gold150": {
+      "shared_document_ids": 0,
+      "records_a_from_shared": 0,
+      "records_b_from_shared": 0,
+      "exact_text_shared": 0,
+      "normalized_text_shared": 0
+    }
+  },
+  "expanded": {
+    "codex_9540": {
+      "partitions": {
+        "train": {
+          "n": 8842,
+          "mapped_document_ids": 5176,
+          "unmapped": 0,
+          "source_domains": {
+            "E1621": 1194,
+            "A100": 93,
+            "H730": 639,
+            "阿里云公开数据集": 2751,
+            "事业单位招聘": 2096,
+            "上市公司招聘": 2069
+          }
+        },
+        "val": {
+          "n": 348,
+          "mapped_document_ids": 324,
+          "unmapped": 0,
+          "source_domains": {
+            "E1621": 47,
+            "A100": 4,
+            "H730": 25,
+            "阿里云公开数据集": 107,
+            "事业单位招聘": 83,
+            "上市公司招聘": 82
+          }
+        },
+        "test": {
+          "n": 350,
+          "mapped_document_ids": 328,
+          "unmapped": 0,
+          "source_domains": {
+            "E1621": 47,
+            "A100": 3,
+            "H730": 25,
+            "阿里云公开数据集": 109,
+            "事业单位招聘": 83,
+            "上市公司招聘": 83
+          }
+        }
+      },
+      "between_partitions": {
+        "train__val": {
+          "shared_document_ids": 185,
+          "records_a_from_shared": 1060,
+          "records_b_from_shared": 208,
+          "exact_text_shared": 0,
+          "normalized_text_shared": 1
+        },
+        "train__test": {
+          "shared_document_ids": 188,
+          "records_a_from_shared": 1076,
+          "records_b_from_shared": 210,
+          "exact_text_shared": 0,
+          "normalized_text_shared": 0
+        },
+        "val__test": {
+          "shared_document_ids": 42,
+          "records_a_from_shared": 55,
+          "records_b_from_shared": 54,
+          "exact_text_shared": 0,
+          "normalized_text_shared": 0
+        }
+      },
+      "against_Gold150": {
+        "train": {
+          "shared_document_ids": 59,
+          "records_a_from_shared": 489,
+          "records_b_from_shared": 143,
+          "exact_text_shared": 0,
+          "normalized_text_shared": 0
+        },
+        "val": {
+          "shared_document_ids": 10,
+          "records_a_from_shared": 12,
+          "records_b_from_shared": 39,
+          "exact_text_shared": 0,
+          "normalized_text_shared": 0
+        },
+        "test": {
+          "shared_document_ids": 17,
+          "records_a_from_shared": 22,
+          "records_b_from_shared": 43,
+          "exact_text_shared": 0,
+          "normalized_text_shared": 0
+        }
+      }
+    },
+    "proxy_9646": {
+      "partitions": {
+        "train": {
+          "n": 8943,
+          "mapped_document_ids": 5222,
+          "unmapped": 0,
+          "source_domains": {
+            "E1621": 1194,
+            "A100": 93,
+            "H730": 639,
+            "阿里云公开数据集": 2787,
+            "事业单位招聘": 2125,
+            "上市公司招聘": 2105
+          }
+        },
+        "val": {
+          "n": 351,
+          "mapped_document_ids": 326,
+          "unmapped": 0,
+          "source_domains": {
+            "E1621": 47,
+            "A100": 4,
+            "H730": 25,
+            "阿里云公开数据集": 109,
+            "事业单位招聘": 84,
+            "上市公司招聘": 82
+          }
+        },
+        "test": {
+          "n": 352,
+          "mapped_document_ids": 330,
+          "unmapped": 0,
+          "source_domains": {
+            "E1621": 47,
+            "A100": 3,
+            "H730": 25,
+            "阿里云公开数据集": 110,
+            "事业单位招聘": 83,
+            "上市公司招聘": 84
+          }
+        }
+      },
+      "between_partitions": {
+        "train__val": {
+          "shared_document_ids": 186,
+          "records_a_from_shared": 1069,
+          "records_b_from_shared": 210,
+          "exact_text_shared": 0,
+          "normalized_text_shared": 1
+        },
+        "train__test": {
+          "shared_document_ids": 189,
+          "records_a_from_shared": 1079,
+          "records_b_from_shared": 211,
+          "exact_text_shared": 0,
+          "normalized_text_shared": 0
+        },
+        "val__test": {
+          "shared_document_ids": 42,
+          "records_a_from_shared": 55,
+          "records_b_from_shared": 54,
+          "exact_text_shared": 0,
+          "normalized_text_shared": 0
+        }
+      },
+      "against_Gold150": {
+        "train": {
+          "shared_document_ids": 59,
+          "records_a_from_shared": 489,
+          "records_b_from_shared": 143,
+          "exact_text_shared": 0,
+          "normalized_text_shared": 0
+        },
+        "val": {
+          "shared_document_ids": 10,
+          "records_a_from_shared": 12,
+          "records_b_from_shared": 39,
+          "exact_text_shared": 0,
+          "normalized_text_shared": 0
+        },
+        "test": {
+          "shared_document_ids": 17,
+          "records_a_from_shared": 22,
+          "records_b_from_shared": 43,
+          "exact_text_shared": 0,
+          "normalized_text_shared": 0
+        }
+      }
+    }
+  }
+}
