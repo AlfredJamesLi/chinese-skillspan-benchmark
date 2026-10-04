@@ -12,9 +12,9 @@ This 39-page version implements the supervisor's presentation comments and descr
 
 The abstract leads with the measured Qwen adaptation result. Chinese examples are paired with English explanations in the main-text example figure, and section openings state the purpose of each analysis. Figure 2 retains the existing illustration style and adds the separate agreement study. The main agreement table presents the formal 50-sentence results; historical coding and assisted review remain in Appendix B. The data-layer and access tables, conclusions, and cross-references have been updated.
 
-The coders could see neither machine suggestions nor one another's annotations. Five familiarization and 15 training sentences are excluded from the formal 50. Agreement uses the preserved pre-discussion labels. The random draw is confirmed by the authors; the available exports establish sample membership and source counts but do not include the complete candidate frame or execution log. Bootstrap stratification is an analysis procedure, not proof of the original draw method.
+The coders could see neither machine suggestions nor one another's annotations. Five familiarization and 15 training sentences are excluded from the formal 50. Agreement uses the latest separate exports after individual self-review with access to the handbook. The random draw is confirmed by the authors; the available exports establish sample membership and source counts but do not include the complete candidate frame or execution log. Bootstrap stratification is an analysis procedure, not proof of the original draw method.
 
-The formal 50 are not added to Gold150 and are not a model test set. Historical coverage remains 500 sentences; no unverified combined total is reported. Model scores, agreement estimates, equations, and citation keys were retained. The frozen [agreement release](../agreement/finalguide_abc_20261002/README.md) is unchanged.
+The formal 50 are not added to Gold150 and are not a model test set. Historical coverage remains 500 sentences; no unverified combined total is reported. Model scores, equations, and citation keys were retained. Agreement estimates and their corresponding text now use the [latest individual exports](../agreement/finalguide_abc_20261003/README.md): mean typed exact F1 0.818 and character alpha 0.907. The [earlier snapshot](../agreement/finalguide_abc_20261002/README.md) remains archived.
 
 [Editable Figure 2](source/figures/Figure2_illustrated.svg) · [Vector PDF](source/figures/Figure2_illustrated.pdf) · [Chinese change log](CHANGELOG_zh.md)
 
@@ -52,7 +52,7 @@ Figure 4 now shows five traceable original corpus records with all four L/K/S/T 
 
 | Table 3 | 11 | `tab:quality-main` |
 
-| Table 4 | 13 | `tab:training-settings` |
+| Table 4 | 14 | `tab:training-settings` |
 
 | Table 5 | 15 | `tab:gold150-shared-r7` |
 
@@ -62,11 +62,11 @@ Figure 4 now shows five traceable original corpus records with all four L/K/S/T 
 
 | Table 8 | 17 | `tab:external-chinese` |
 
-| Table 9 | 17 | `tab:external-common` |
+| Table 9 | 18 | `tab:external-common` |
 
 | Table 10 | 20 | `tab:guide-types` |
 
-| Table 11 | 20 | `tab:guide-boundaries` |
+| Table 11 | 21 | `tab:guide-boundaries` |
 
 | Table 12 | 21 | `tab:guide-scope` |
 
@@ -74,9 +74,9 @@ Figure 4 now shows five traceable original corpus records with all four L/K/S/T 
 
 | Table 14 | 26 | `tab:model-identity` |
 
-| Figure 5 | 27 | `fig:qwen-diagnostics` |
+| Figure 5 | 28 | `fig:qwen-diagnostics` |
 
-| Table 15 | 28 | `tab:expanded-silver-main` |
+| Table 15 | 29 | `tab:expanded-silver-main` |
 
 | Table 16 | 30 | `tab:component-access` |
 
@@ -86,9 +86,9 @@ Figure 4 now shows five traceable original corpus records with all four L/K/S/T 
 
 | Table 19 | 33 | `tab:external-native` |
 
-| Table 20 | 33 | `tab:external-gnehm` |
+| Table 20 | 34 | `tab:external-gnehm` |
 
 | Table 21 | 34 | `tab:external-kompetencer-classification` |
 
-| Table 22 | 34 | `tab:external-nnose` |
+| Table 22 | 35 | `tab:external-nnose` |
 

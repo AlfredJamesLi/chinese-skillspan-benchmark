@@ -1,0 +1,263 @@
+{
+  "n_sentences": 50,
+  "n_coders": 3,
+  "span_counts": {
+    "A": 104,
+    "B": 123,
+    "C": 113
+  },
+  "n_characters": 2111,
+  "source_counts": {
+    "上市公司招聘": 8,
+    "事业单位招聘": 16,
+    "阿里云公开数据集": 26
+  },
+  "pairs": {
+    "A-B": {
+      "span_counts": [
+        104,
+        123
+      ],
+      "typed_matches": 90,
+      "typed_exact_f1": 0.7929515418502202,
+      "boundary_matches": 94,
+      "boundary_f1": 0.8281938325991189,
+      "exact_sentences": 36,
+      "both_empty": 11,
+      "character_kappa": 0.8804329628133419,
+      "character_kappa_excluding_both_O": 0.738154496360648,
+      "per_type": {
+        "L": {
+          "n_first": 2,
+          "n_second": 2,
+          "matches": 2,
+          "f1": 1.0
+        },
+        "K": {
+          "n_first": 37,
+          "n_second": 44,
+          "matches": 31,
+          "f1": 0.7654320987654321
+        },
+        "S": {
+          "n_first": 48,
+          "n_second": 57,
+          "matches": 41,
+          "f1": 0.780952380952381
+        },
+        "T": {
+          "n_first": 17,
+          "n_second": 20,
+          "matches": 16,
+          "f1": 0.8648648648648649
+        }
+      },
+      "same_boundary_type_disagreements": {
+        "S->K": 3,
+        "T->S": 1
+      },
+      "typed_ci95": [
+        0.6936936936936937,
+        0.8837252852538977
+      ],
+      "boundary_ci95": [
+        0.7252703471826978,
+        0.9177489177489178
+      ]
+    },
+    "A-C": {
+      "span_counts": [
+        104,
+        113
+      ],
+      "typed_matches": 92,
+      "typed_exact_f1": 0.847926267281106,
+      "boundary_matches": 95,
+      "boundary_f1": 0.8755760368663594,
+      "exact_sentences": 39,
+      "both_empty": 11,
+      "character_kappa": 0.92976297916762,
+      "character_kappa_excluding_both_O": 0.8355456846237281,
+      "per_type": {
+        "L": {
+          "n_first": 2,
+          "n_second": 2,
+          "matches": 2,
+          "f1": 1.0
+        },
+        "K": {
+          "n_first": 37,
+          "n_second": 40,
+          "matches": 31,
+          "f1": 0.8051948051948052
+        },
+        "S": {
+          "n_first": 48,
+          "n_second": 51,
+          "matches": 43,
+          "f1": 0.8686868686868687
+        },
+        "T": {
+          "n_first": 17,
+          "n_second": 20,
+          "matches": 16,
+          "f1": 0.8648648648648649
+        }
+      },
+      "same_boundary_type_disagreements": {
+        "S->K": 1,
+        "K->S": 1,
+        "T->S": 1
+      },
+      "typed_ci95": [
+        0.7523809523809524,
+        0.9263157894736842
+      ],
+      "boundary_ci95": [
+        0.7857142857142857,
+        0.9483568075117371
+      ]
+    },
+    "B-C": {
+      "span_counts": [
+        123,
+        113
+      ],
+      "typed_matches": 96,
+      "typed_exact_f1": 0.8135593220338984,
+      "boundary_matches": 100,
+      "boundary_f1": 0.847457627118644,
+      "exact_sentences": 37,
+      "both_empty": 11,
+      "character_kappa": 0.9094448078758566,
+      "character_kappa_excluding_both_O": 0.7939925065091763,
+      "per_type": {
+        "L": {
+          "n_first": 2,
+          "n_second": 2,
+          "matches": 2,
+          "f1": 1.0
+        },
+        "K": {
+          "n_first": 44,
+          "n_second": 40,
+          "matches": 32,
+          "f1": 0.7619047619047619
+        },
+        "S": {
+          "n_first": 57,
+          "n_second": 51,
+          "matches": 42,
+          "f1": 0.7777777777777778
+        },
+        "T": {
+          "n_first": 20,
+          "n_second": 20,
+          "matches": 20,
+          "f1": 1.0
+        }
+      },
+      "same_boundary_type_disagreements": {
+        "K->S": 4
+      },
+      "typed_ci95": [
+        0.7208098961906069,
+        0.8994708994708994
+      ],
+      "boundary_ci95": [
+        0.7603268389364646,
+        0.9236947791164659
+      ]
+    }
+  },
+  "mean_typed_exact_f1": 0.8181457103884081,
+  "mean_boundary_f1": 0.8504091655280407,
+  "three_rater_character_alpha": 0.9065784667755196,
+  "three_rater_fleiss_kappa": 0.9065637129010369,
+  "all_three_exact_sentences": 34,
+  "all_three_empty_sentences": 11,
+  "O_character_fraction": {
+    "A": 0.6414021790620559,
+    "B": 0.6338228327806726,
+    "C": 0.6319279962103269
+  },
+  "intervals": {
+    "typed_AB": {
+      "ci95": [
+        0.6936936936936937,
+        0.8837252852538977
+      ],
+      "undefined_resamples": 0
+    },
+    "typed_AC": {
+      "ci95": [
+        0.7523809523809524,
+        0.9263157894736842
+      ],
+      "undefined_resamples": 0
+    },
+    "typed_BC": {
+      "ci95": [
+        0.7208098961906069,
+        0.8994708994708994
+      ],
+      "undefined_resamples": 0
+    },
+    "boundary_AB": {
+      "ci95": [
+        0.7252703471826978,
+        0.9177489177489178
+      ],
+      "undefined_resamples": 0
+    },
+    "boundary_AC": {
+      "ci95": [
+        0.7857142857142857,
+        0.9483568075117371
+      ],
+      "undefined_resamples": 0
+    },
+    "boundary_BC": {
+      "ci95": [
+        0.7603268389364646,
+        0.9236947791164659
+      ],
+      "undefined_resamples": 0
+    },
+    "mean_typed": {
+      "ci95": [
+        0.7323068546201892,
+        0.8939699877705246
+      ],
+      "undefined_resamples": 0
+    },
+    "mean_boundary": {
+      "ci95": [
+        0.7663226824644012,
+        0.9227517950012549
+      ],
+      "undefined_resamples": 0
+    },
+    "alpha": {
+      "ci95": [
+        0.8511788413254812,
+        0.9536283324073432
+      ],
+      "undefined_resamples": 0
+    }
+  },
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 20260927,
+    "rng": "numpy.random.default_rng (PCG64)",
+    "numpy_version": "2.1.3",
+    "unit": "sentence (one per recorded advertisement)",
+    "stratification": "source_domain, fixed observed source counts",
+    "method": "percentile 95%",
+    "conditioned_on": "these three coders and the observed source mixture",
+    "not_design_weighted": true
+  },
+  "label_export_date": "2026-10-03",
+  "label_stage": "independent coding with individual self-review, as clarified by the authors on 2026-10-04",
+  "provenance_note": "The received folder is named postdiscussion; see README for the author clarification."
+}

@@ -20,7 +20,7 @@ Use these names when reading the manuscript. Exact paths stay unchanged for repr
 
 | Historical coding and assisted review | [Agreement guide](reproduction/agreement/README.md) |
 
-| Independent blinded agreement study | [Final-handbook three-annotator study](reproduction/agreement/finalguide_abc_20261002/README.md) |
+| Independent blinded agreement study | [Final-handbook three-annotator study](reproduction/agreement/finalguide_abc_20261003/README.md) |
 
 <details>
 

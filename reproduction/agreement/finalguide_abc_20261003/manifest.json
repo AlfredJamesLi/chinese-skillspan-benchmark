@@ -1,0 +1,31 @@
+{
+  "release_date": "2026-10-04",
+  "export_date": "2026-10-03",
+  "source_archive": "CNSS_ABC_IAA_Export_20261003.zip",
+  "source_archive_sha256": "62eebd8add74640ae20bdd5a2c97de459f9b32c6f1f0bdcf8daeea1e6a7c3a94",
+  "source_directory": "data/live_doccano_postdiscussion_20261003/blind50",
+  "original_export_sha256": {
+    "A": "01b526750483bfe3a2811feda56161009ba80dea22b0b7b7e1464de21a5184ae",
+    "B": "4626ca797eb0edeceb2c1ee3b60df80ebd1b0bf387de2a519921ea7db153c9fb",
+    "C": "9dd5fe3c1680c42401fa4ee9c3ec60b941af7489ee73369c1adefb8c965dac3a"
+  },
+  "author_clarification": {
+    "date": "2026-10-04",
+    "source": "Direct author clarification in this conversation",
+    "statement_zh": "最新标签是各自独立编码，但允许编码员自行检查和查阅规则进行自行修改。",
+    "interpretation": "The latest separate coder exports include individual self-checking and revisions with access to the annotation rules. The authors identify them as independently produced labels.",
+    "package_naming_discrepancy": "The archive labels its live export folder postdiscussion. The author clarified that the included revisions were individual self-review, not consensus labels. This clarification governs the current manuscript; original package names and hashes are retained in provenance.",
+    "scope": "Only agreement results, their interpretation, data links, and directly related protocol wording are updated. Model results and historical human-review cohorts are unchanged."
+  },
+  "files_sha256": {
+    "disagreements_16.jsonl": "c641b1a9d609756ab6f3209a6d84ed39a7d8e39b36091349c8de7e1c95e0afc2",
+    "README.md": "7d6e83611eee7ec44e08bf88606421b1418059eff98821fcb311353bfd85515c",
+    "recompute.py": "c4e2fd5e8515b2e469add642cc5716f376172d83efca72323388ee209a8fc94e",
+    "recomputed_metrics.json": "2be6122156f966b1e925896005db0180cdf1afb87d51cd90d8a21c092bb22142",
+    "verification.json": "855b741f910d7c0e79d6e3c940285530f0e041a4520c6297913f3b026e45745b",
+    "data/latest50_A.jsonl": "9aba771a19ca2455f7fac7c6d490a9fca04438e819bea32320d5bf00a9640049",
+    "data/latest50_B.jsonl": "9d27391f710cd81fb10427201f7a27560b11a9ebf98479d5463434c04084986a",
+    "data/latest50_C.jsonl": "1265bd54237fcf959abc6803208a7f7304d2a8e91e763b54989e031e6bafca8c",
+    "data/sample_manifest.json": "31611f2cf76adb94d8273529c043786dbffd31a9a6aebada3e664444f5e55888"
+  }
+}

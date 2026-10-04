@@ -1,0 +1,89 @@
+{
+  "n_coders": 3,
+  "n_formal_sentences": 50,
+  "n_characters_per_coder": 2111,
+  "span_counts": {
+    "A": 104,
+    "B": 123,
+    "C": 113
+  },
+  "alignment_key": "meta.study_id; input row order differs",
+  "all_confirmed": true,
+  "valid_nonoverlapping_offsets": true,
+  "same_texts_as_prior_release": true,
+  "NFC_overlap_between_batches": {
+    "practice5_formal15": 0,
+    "practice5_blind50": 0,
+    "formal15_blind50": 0
+  },
+  "changed_sentences_vs_older_freeze": {
+    "A": [
+      "FG50-06",
+      "FG50-09",
+      "FG50-15",
+      "FG50-16",
+      "FG50-21",
+      "FG50-29",
+      "FG50-35",
+      "FG50-36",
+      "FG50-38",
+      "FG50-47"
+    ],
+    "B": [
+      "FG50-02",
+      "FG50-03",
+      "FG50-07",
+      "FG50-09",
+      "FG50-14",
+      "FG50-19",
+      "FG50-28",
+      "FG50-29",
+      "FG50-31",
+      "FG50-34",
+      "FG50-35",
+      "FG50-36",
+      "FG50-39",
+      "FG50-40",
+      "FG50-41",
+      "FG50-43",
+      "FG50-47",
+      "FG50-48",
+      "FG50-50"
+    ],
+    "C": [
+      "FG50-02",
+      "FG50-03",
+      "FG50-06",
+      "FG50-07",
+      "FG50-08",
+      "FG50-09",
+      "FG50-14",
+      "FG50-15",
+      "FG50-16",
+      "FG50-18",
+      "FG50-21",
+      "FG50-25",
+      "FG50-28",
+      "FG50-36",
+      "FG50-39",
+      "FG50-40",
+      "FG50-43",
+      "FG50-46",
+      "FG50-47",
+      "FG50-48",
+      "FG50-49",
+      "FG50-50"
+    ]
+  },
+  "source_counts": {
+    "上市公司招聘": 8,
+    "事业单位招聘": 16,
+    "阿里云公开数据集": 26
+  },
+  "package_stage_label": "postdiscussion",
+  "author_confirmed_stage": "Independent coding with permitted individual self-review and rule consultation; clarified 2026-10-04.",
+  "independent_numeric_recomputation_passed": true,
+  "point_estimate_comparisons": 49,
+  "author_clarification_date": "2026-10-04",
+  "statistical_sample": "Latest formal50 only; all three coders, all sentences; training excluded."
+}
