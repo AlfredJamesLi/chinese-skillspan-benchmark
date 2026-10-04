@@ -118,7 +118,7 @@ GPT and Claude comparison baselines used third-party API gateways because of acc
 
 - Keep the primary data, frozen metadata, source IDs, experiment keys and public model URLs unchanged. Prefer readable documentation links and aliases over renaming these files.
 
-- The current workflow retains model-family names with neutral icons; exact model identifiers are listed in the model table and configuration documentation.
+- The current workflow retains model-family names and uses official OpenAI/Kimi marks alongside neutral icons for other systems; exact model identifiers are listed in the model table and configuration documentation.
 
 - The Dual15 export supports independent submissions within the QA100 review design; it does not establish blind raw-text coding.
 
