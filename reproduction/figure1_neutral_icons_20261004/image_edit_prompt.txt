@@ -1,0 +1,13 @@
+Use case: precise-object-edit.
+Edit target: the attached existing Chinese-SkillSpan workflow figure. This is NOT a redesign. Make only SEVEN small, local icon replacements. Preserve the input canvas size, aspect ratio, framing, exact layout, all wording, all arrows, all panels, all colors outside these icon patches, all fonts, and every other element unchanged. Do not improve, rewrite, reorder, remove or add content.
+
+Replace these model-brand pictograms with neutral generic technical pictograms, within the same icon footprint and using the same dominant color:
+1. The small orange/yellow BERT face badge immediately before "JobBERT-zh + CRF": replace the face and its internal BERT branding with a generic orange outlined microchip icon.
+2. The large purple Qwen brand mark before "Qwen2.5-14B-Instruct + LoRA": replace with a neutral purple interconnected-nodes icon.
+3. The black OpenAI/GPT swirl before the text "GPT" in the lower "LLM inference baselines" row: replace with a neutral black outlined chat bubble containing three dots.
+4. The blue stylized AI/Claude brand mark before the text "Claude": replace with a neutral blue outlined document-with-chat icon.
+5. The blue DeepSeek whale before the text "DeepSeek": replace with a neutral blue outlined microchip icon.
+6. The small purple Qwen mark before the text "Qwen" in the inference row: use the SAME neutral purple interconnected-nodes icon as replacement 2, scaled to this smaller footprint.
+7. The black circular Kimi mark with the letter K, immediately before the text "Kimi": replace with a neutral black outlined network/compute icon, without the K.
+
+Crucial invariants: preserve the adjacent labels "GPT", "Claude", "DeepSeek", "Qwen", "Kimi", "JobBERT-zh + CRF", and "Qwen2.5-14B-Instruct + LoRA" exactly. Preserve the Chinese flag, EU/ESCO flag and L/K/S/T colored circles, all generic pre-existing robot/document/building/database/checkmark/target/globe/gear/package icons, and all other diagrams. Preserve the green Human coding arrow, all three (a)(b)(c) panels including External benchmark comparisons, and their background colors unchanged. Do not change any text at all outside the interior of the BERT and Kimi logo pictograms being removed. Keep all lines sharp and all original text fully legible. No new branding, no watermark.

@@ -10,7 +10,7 @@ Current manuscript: **Chinese-SkillSpan: a benchmark for competency span extract
 
 **[Data and access](DATA_AVAILABILITY.md) · [Reproduce results](REPRODUCIBILITY.md) · [Models](docs/models.md) · [Paper-to-file index](reproduction/PAPER_INDEX.md)**
 
-![Chinese-SkillSpan workflow](reproduction/manuscript_revision_20261002/source/figures/workflow_major_revision_20261004.svg)
+![Chinese-SkillSpan workflow](reproduction/manuscript_revision_20261002/source/image/chinese-skillspan-workflow-neutral-icons-20261004.png)
 
 ## What is included?
 
