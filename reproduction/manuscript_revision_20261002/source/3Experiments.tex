@@ -7,7 +7,7 @@ The evaluation covers prompted extraction, silver-supervised Qwen adaptation, an
 
 The original corpus was partitioned by source document into training, development, and test sets with 1,600, 200, and 200 document identifiers, respectively. These partitions share no document identifiers and differ from the later labeled splits used for Silver supervision and human-reference evaluation.
 
-The frozen Silver training and development package documents sentence-level exclusion checks. JobBERT uses Silver sets of 2,156 training and 169 development records. For Qwen and the encoder comparison, six training records matching three development texts after NFC normalization were removed, leaving 2,150 training and 169 development records. In this split, training and development share no identical or NFC-normalized complete texts, and neither contains a human-reference sentence by identifier or normalized text.
+The frozen Silver training and development package documents sentence-level exclusion checks. JobBERT-zh + CRF uses Silver sets of 2,156 training and 169 development records. For Qwen and the encoder comparison, six training records matching three development texts after NFC normalization were removed, leaving 2,150 training and 169 development records. In this split, training and development share no identical or NFC-normalized complete texts, and neither contains a human-reference sentence by identifier or normalized text.
 
 An audit of stored source-document identifiers found that the 2,150-record Silver training set shared one group with development and 59 groups with the human reference set. The latter contain 143 of the 150 reference sentences. These are different sentences from shared documents, which may contain multiple job postings. The checks establish reference-sentence exclusion from supervised inputs, not source-document isolation. \hyperref[app:d]{Appendix~D} reports repeated training records, normalization checks, and source-group overlap in the expanded pools.
 
@@ -54,7 +54,7 @@ Inference-only configurations and expanded-pool experiments are single runs unle
 
 JobBERT-zh is a sequence-labeling baseline with a Chinese recruitment-domain-pretrained encoder and a CRF head. We compare Qwen2.5-14B-Instruct (Qwen)~\citep{qwen2025report} with and without a project-trained LoRA adapter~\citep{hu2022lora} for generative extraction.
 
-The prompted comparison uses shared annotation instructions across GPT (API), Claude (API; Sonnet 4.5), DeepSeek-V4-Pro (DeepSeek), Kimi k2.6 (Kimi), and Qwen without a project adapter. DeepSeek is evaluated with thinking enabled and disabled, giving six configurations. Table~\ref{tab:model-identity} lists the recorded identifiers, access routes, and key settings; \hyperref[app:c]{Appendix~C} provides the remaining call details.
+The prompted comparison uses shared annotation instructions across GPT-5.6 Terra, Claude Sonnet 4.5, DeepSeek-V4-Pro (DeepSeek), Kimi K2.6 (Kimi), and Qwen without a project adapter. DeepSeek is evaluated with thinking enabled and disabled, giving six configurations. GPT-5.6 Terra and Claude Sonnet 4.5 refer to the recorded gateway configurations. Table~\ref{tab:model-identity} lists the recorded identifiers, access routes, and key settings; \hyperref[app:c]{Appendix~C} provides the remaining call details.
 
 The adopted silver annotation route used the recorded Codex selection, whereas the GPT baseline used a separate API configuration. Their errors need not be independent: shared guidelines and historical assisted review may reinforce common annotation choices. Agreement with these annotations therefore does not independently validate the annotation model.
 
@@ -69,7 +69,7 @@ The adopted silver annotation route used the recorded Codex selection, whereas t
 
 \subsection{Prompted Inference on the Human Reference Set}
 
-GPT (API) achieved the highest observed typed exact-span micro-F1 among the six configurations, scoring 0.667 compared with 0.647 for DeepSeek with thinking disabled (Table~\ref{tab:gold150-shared-r7}). Their paired difference was 0.020, with a 95\% source-group bootstrap interval of $[-0.027, 0.061]$ (Table~\ref{tab:core-paired}). The interval includes zero, so the observed lead is not clearly resolved by this comparison.
+GPT-5.6 Terra achieved the highest observed typed exact-span micro-F1 among the six configurations, scoring 0.667 compared with 0.647 for DeepSeek with thinking disabled (Table~\ref{tab:gold150-shared-r7}). Their paired difference was 0.020, with a 95\% source-group bootstrap interval of $[-0.027, 0.061]$ (Table~\ref{tab:core-paired}). The interval includes zero, so the observed lead is not clearly resolved by this comparison.
 
 The two DeepSeek configurations differed in precision and recall. The thinking configuration had higher precision than the non-thinking configuration (0.713 versus 0.651), but lower recall (0.505 versus 0.643), resulting in lower typed exact-span F1. These results describe the recorded configurations, which use different inference budgets. Qwen without an adapter had the lowest recall at 0.281.
 

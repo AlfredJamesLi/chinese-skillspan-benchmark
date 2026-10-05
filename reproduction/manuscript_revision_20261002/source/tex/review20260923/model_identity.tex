@@ -1,26 +1,26 @@
 \begin{table}[!htbp]
 \centering\small
-\caption{Recorded model identifiers and access routes by study role.}
+\caption{Model names, recorded identifiers, and access routes by study role.}
 \label{tab:model-identity}
-\begin{tabularx}{\linewidth}{@{}P{.19\linewidth}P{.32\linewidth}L@{}}
+\begin{tabularx}{\linewidth}{@{}P{.22\linewidth}P{.32\linewidth}L@{}}
 \toprule
-Configuration / role & Recorded identifier & Access and key settings \\
+Model / role & Recorded identifier / selection & Access and key settings \\
 \midrule
 \multicolumn{3}{@{}l}{\textit{Evaluation configurations}} \\
-GPT (API) & Request: \texttt{gpt-5.4}; returned: \texttt{gpt-5.6-terra} & API gateway; temperature 0; cap 2,048 tokens. \\
-Claude (API) & \texttt{claude-sonnet-4-5-20250929} & API gateway; temperature 0; cap 2,048 tokens. \\
-DeepSeek (API) & \texttt{deepseek-v4-pro} & Official \href{https://api.deepseek.com}{DeepSeek API}; non-thinking: temperature 0, cap 2,048; thinking: cap 8,192, temperature unspecified. \\
-Kimi (API) & \texttt{kimi-k2.6} & Official \href{https://api.moonshot.cn}{Moonshot API}; non-thinking; temperature 0.6; cap 2,048. \\
-Qwen (unadapted / LoRA) & Qwen2.5-14B-Instruct & Local weights; deterministic decoding; cap 2,048. \\
+\href{https://developers.openai.com/api/docs/models/gpt-5.6-terra}{GPT-5.6 Terra} & Request: \texttt{gpt-5.4}; returned: \texttt{gpt-5.6-terra} & API gateway; temperature 0; cap 2,048 tokens. \\
+\href{https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions}{Claude Sonnet 4.5} & \texttt{claude-sonnet-4-5-20250929} & API gateway; temperature 0; cap 2,048. \\
+\href{https://api-docs.deepseek.com/news/news260813/}{DeepSeek-V4-Pro} & \texttt{deepseek-v4-pro} & DeepSeek API; non-thinking: temperature 0, cap 2,048; thinking: cap 8,192, temperature unspecified. \\
+\href{https://platform.kimi.com/docs/guide/kimi-k2-6-quickstart}{Kimi K2.6} & \texttt{kimi-k2.6} & Moonshot API; non-thinking; temperature 0.6; cap 2,048. \\
+Qwen (unadapted / LoRA) & \href{https://huggingface.co/Qwen/Qwen2.5-14B-Instruct}{Qwen2.5-14B-Instruct} & Local weights; deterministic decoding; cap 2,048. \\
 JobBERT-zh + CRF & Released initialization and Silver-trained continuation & Local encoder and inherited CRF. \\
 \midrule
 \multicolumn{3}{@{}l}{\textit{Annotation and assisted review}} \\
-Original silver annotation & \texttt{gpt-6-astra} & Official OpenAI Codex; adopted original silver labels. \\
-Expansion comparison & Codex selection / API-returned \texttt{gpt-6-astra} & Codex / API gateway; 2,500-candidate replacement batch only; earlier components shared. \\
-Additional review & \texttt{gpt-6-astra}; Grok 4.6-high & Codex / Cursor; suggestions visible to reviewers. \\
-Annotation support & Qwen; DeepSeek; Kimi & Machine-generated annotation suggestions. \\
+Original Silver annotation & \href{https://developers.openai.com/api/docs/models/gpt-6-astra}{GPT-6 Astra} (\texttt{gpt-6-astra}) & OpenAI Codex; adopted original Silver labels. \\
+Expansion comparison & GPT-6 Astra (\texttt{gpt-6-astra}) & Codex / API gateway; 2,500-candidate replacement batch; earlier components shared. \\
+Additional review & GPT-6 Astra; \href{https://docs.x.ai/developers/models/grok-4.6}{Grok 4.6} & Codex / Cursor; Grok: high reasoning effort; suggestions visible to reviewers. \\
+Annotation support & Qwen; DeepSeek; Kimi & Machine-generated annotation suggestions; versions incompletely recorded. \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-Caps are output-token limits. Codex and Cursor denote interfaces. GPT and Claude gateway identities were not independently verified against vendor APIs. \hyperref[app:c]{Appendix C} gives available run settings; \hyperref[app:d]{Appendix D} records checkpoint provenance and historical implementation gaps.
+Caps are output-token limits. Codex and Cursor denote interfaces. Gateway model names follow recorded response identifiers; upstream identities were not independently verified. \hyperref[app:c]{Appendix~C} gives run settings; \hyperref[app:d]{Appendix~D} records checkpoint provenance and implementation gaps.
 \end{table}

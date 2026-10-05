@@ -27,11 +27,12 @@ Short names in the manuscript are display aliases. Original file paths, experime
 | model | Qwen | `Qwen2.5-14B-Instruct` | Model full name at first use; Qwen later. Display alias only; do not change model IDs or weight paths. |
 | model | Qwen (no adapter) | `no_adapter; Qwen2.5-14B-Instruct without project adapter` | Same baseline prediction across current Qwen comparisons. Keep prediction keys and files. |
 | model | Qwen + LoRA | `Qwen2.5-14B-Instruct with B2 LoRA` | Keep seed 42/43/44 distinct. Keep LoRA_42/LoRA_43/LoRA_44 keys and checkpoints. |
-| model | Claude (API) | `Claude Sonnet 4.5` | Version retained at first use. Display alias; preserve recorded access metadata. |
-| model | DeepSeek | `DeepSeek-V4-Pro; deepseek-v4-pro` | Official DeepSeek API (`https://api.deepseek.com`), with request and retained response model `deepseek-v4-pro`. Non-thinking/thinking are separate configurations; preserve mode and output cap. |
-| model | Kimi | `kimi-k2.6` | Official Moonshot API (`https://api.moonshot.cn`); thinking disabled. Request and retained response model fields match. |
-| model | GPT (API) | `gpt-5.6-terra` | Service-reported identifier; see the access note below. Preserve recorded request and response metadata. |
-| model | OpenAI Codex annotation | `gpt-6-astra` | Official Codex access for adopted Silver labels; distinct from the GPT (API) comparison baseline. |
+| model | Claude Sonnet 4.5 | `Claude Sonnet 4.5` | API gateway; request `claude-sonnet-4-5`, response `claude-sonnet-4-5-20250929`. Preserve recorded access metadata. |
+| model | DeepSeek-V4-Pro | `DeepSeek-V4-Pro; deepseek-v4-pro` | Official DeepSeek API (`https://api.deepseek.com`), with request and retained response model `deepseek-v4-pro`. Non-thinking/thinking are separate configurations; preserve mode and output cap. |
+| model | Kimi K2.6 | `kimi-k2.6` | Official Moonshot API (`https://api.moonshot.cn`); thinking disabled. Request and retained response model fields match. |
+| model | GPT-5.6 Terra | `gpt-5.6-terra` | API gateway; request `gpt-5.4`, response `gpt-5.6-terra`. Display name follows the response identifier; see the access note below. Preserve both fields. |
+| model | GPT-6 Astra (via Codex) | `gpt-6-astra` | Official Codex access for adopted Silver labels; distinct from the GPT-5.6 Terra comparison baseline. Codex is the interface. |
+| model | Grok 4.6 (high) | `Grok 4.6-high` | Author-confirmed Cursor selection: Grok 4.6 with high reasoning effort. The official model ID is `grok-4.6`; high is a setting. Preserve the historical selection wording and suggestion files. |
 | model | JobBERT-zh initialization | `https://huggingface.co/AlfredJames/jobbert-zh` | Released 3M domain-adapted encoder with inherited V4 CRF. Keep published URL and model repository ID. |
 | model | Silver-trained JobBERT-zh + CRF | `https://huggingface.co/AlfredJames/jobbert-zh-v6a` | Silver-trained continuation; default released checkpoint is seed 42. Keep published URL and repository ID; do not replace initialization. |
 | experiment | Silver training/development sets (JobBERT) | `v6a` | 2156 train / 169 dev; earlier versus revised labels. Documentation alias only; preserve manifest names. |
@@ -57,18 +58,33 @@ Short names in the manuscript are display aliases. Original file paths, experime
 
 | Evaluated baseline | Request model | Response model |
 |---|---|---|
-| GPT (API) | `gpt-5.4` | `gpt-5.6-terra` |
-| Claude (API) | `claude-sonnet-4-5` | `claude-sonnet-4-5-20250929` |
+| GPT-5.6 Terra | `gpt-5.4` | `gpt-5.6-terra` |
+| Claude Sonnet 4.5 | `claude-sonnet-4-5` | `claude-sonnet-4-5-20250929` |
 
 The manuscript uses readable display names. These fields identify retained service records. Each configuration has 150 formal prediction records plus two preliminary checks. The shared protocol was frozen for September 10; the GPT run includes a September 11 retry. Retained call metadata accompany raw records; missing dates, decoding settings and checkpoint identities are not inferred.
 
-GPT and Claude provide inference baselines in the Chinese evaluation. The additional-review Astra--Grok comparison concerns archived machine suggestions, not independent human agreement. The authors identify the Cursor selection as Grok 4.6-high; the archived suggestion file does not independently pin its exact model snapshot or retain complete decoding settings.
+GPT-5.6 Terra and Claude Sonnet 4.5 provide inference baselines in the Chinese evaluation. The additional-review GPT-6 Astra--Grok 4.6 comparison concerns archived machine suggestions, distinct from the blinded human agreement study. The authors identify the Cursor selection as Grok 4.6 with high reasoning effort (historical selection wording: `Grok 4.6-high`). The archived suggestion file does not independently pin its exact model snapshot or retain complete decoding settings.
+
+The earlier display aliases `GPT (API)`, `Claude (API)`, `DeepSeek`, `Kimi`, and `OpenAI Codex annotation` map to the full display names above. Exact run keys and historical files retain their original wording.
+
+## Official model-name references
+
+Official names were checked on October 5, 2026. These references establish model names and documented settings; the retained run records establish which requests, responses, and access routes were recorded for this study.
+
+| Display name | Official reference | Naming detail |
+|---|---|---|
+| GPT-5.6 Terra | [OpenAI model page](https://developers.openai.com/api/docs/models/gpt-5.6-terra) | `gpt-5.6-terra`; the separate requested alias `gpt-5.4` is documented on the [GPT-5.4 page](https://developers.openai.com/api/docs/models/gpt-5.4). |
+| GPT-6 Astra | [OpenAI model page](https://developers.openai.com/api/docs/models/gpt-6-astra) | `gpt-6-astra`; Codex and API-gateway access routes remain distinct. |
+| Claude Sonnet 4.5 | [Anthropic release](https://www.anthropic.com/news/claude-sonnet-4-5) and [model IDs](https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions) | Request alias `claude-sonnet-4-5`; response ID `claude-sonnet-4-5-20250929`. |
+| DeepSeek-V4-Pro | [DeepSeek release](https://api-docs.deepseek.com/news/news260813/) and [API documentation](https://api-docs.deepseek.com/quick_start/pricing/) | `deepseek-v4-pro`; retain the separately recorded non-thinking and thinking configurations. |
+| Kimi K2.6 | [Kimi API guide](https://platform.kimi.com/docs/guide/kimi-k2-6-quickstart) | `kimi-k2.6`; retain the recorded non-thinking setting. |
+| Grok 4.6 (high) | [xAI model documentation](https://docs.x.ai/developers/models/grok-4.6) and [Cursor model documentation](https://prod.cursor.com/docs/models/grok-4-6) | Model ID `grok-4.6`; high reasoning effort. The study used Cursor. |
 
 The human reference combines independently coded and adjudicated calibration sentences with collaboratively coded and reviewed challenge sentences. Humans determined its final labels. Separate model-generated Silver labels provide supervision and Silver-target evaluation; the independently blinded three-coder sample measures handbook agreement and is not a model test set.
 
 ## API access
 
-GPT and Claude comparison baselines used third-party API gateways because of access constraints. The authors report qualitatively similar outputs in informal manual comparisons with the vendors' web interfaces; these checks do not establish model identity or controlled equivalence. Official APIs are recommended for replication where available. Official Codex generated the adopted Silver labels. A separate gateway-labelled pool supplied labels for supplementary Qwen/JobBERT training comparisons and retains the historical name `proxy` in archived files.
+GPT-5.6 Terra and Claude Sonnet 4.5 comparison baselines used third-party API gateways because of access constraints. Their upstream model identities were not independently verified against vendor APIs. The authors report qualitatively similar outputs in informal manual comparisons with the vendors' web interfaces; these checks do not establish model identity or controlled equivalence. Official APIs are recommended for replication where available. Adopted Silver labels were generated through official Codex with the recorded GPT-6 Astra selection. A separate API-gateway route reporting `gpt-6-astra` supplied labels for supplementary Qwen/JobBERT training comparisons and retains the historical name `proxy` in archived files.
 
 ## Naming rules
 
@@ -78,7 +94,7 @@ GPT and Claude comparison baselines used third-party API gateways because of acc
 
 - Keep the primary data, frozen metadata, source IDs, experiment keys and public model URLs unchanged. Prefer readable documentation links and aliases over renaming these files.
 
-- The current workflow retains model-family names and uses official OpenAI/Kimi marks alongside neutral icons for other systems; exact model identifiers are listed in the model table and configuration documentation.
+- Use the full model display names in comparison tables and chart legends, with inference modes where relevant. Model IDs and access routes are listed separately in the model table and configuration documentation.
 
 - The Dual15 export supports independent submissions within the QA100 review design; it does not establish blind raw-text coding.
 

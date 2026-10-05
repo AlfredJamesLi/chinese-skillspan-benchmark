@@ -5,7 +5,7 @@
 The shared protocol evaluates six configurations on all 150 reference sentences, using V4.2.12-based general instructions and five schematic examples. The frozen system prompt, including these examples, and its checksum manifest are included in the \href{https://doi.org/10.5281/zenodo.22851581}{Qwen reproduction archive}.
 
 \paragraph{Configuration and output records.}
-Table~\ref{tab:model-identity} in the main evaluation protocol distinguishes inference configurations from annotation and assisted-review roles. Baseline API calls were completed on 10--11 September 2026. Claude returned the dated identifier shown in that table in response to the request alias \texttt{claude-sonnet-4-5}. The alternative expansion batch comprised 2,500 candidates processed on 13 September 2026, with ten records per request. Grok suggestions used Cursor's default Grok 4.6-high selection; complete decoding settings were not retained.
+Table~\ref{tab:model-identity} in the main evaluation protocol distinguishes inference configurations from annotation and assisted-review roles. Baseline API calls were completed on 10--11 September 2026. Claude returned the dated identifier shown in that table in response to the request alias \texttt{claude-sonnet-4-5}. The alternative expansion batch comprised 2,500 candidates processed on 13 September 2026, with ten records per request. Grok suggestions used Grok 4.6 with high reasoning effort via Cursor; complete decoding settings were not retained.
 
 Models return an ID and spans as literal \texttt{text}, zero-based \texttt{occurrence}, and L/K/S/T \texttt{type}. The span parser resolves spans to Unicode offsets for exact and relaxed scoring with the released span scorer. All supplied input texts match the frozen reference.
 
