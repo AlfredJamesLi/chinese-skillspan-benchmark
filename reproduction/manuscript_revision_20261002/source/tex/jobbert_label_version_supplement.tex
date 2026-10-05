@@ -1,0 +1,22 @@
+\subsection{Historical JobBERT Label-Version Comparison}
+\label{sec:jobbert-label-versions}
+
+\paragraph{Supervision and model selection.} The two JobBERT conditions start from the same released encoder and inherited CRF. Earlier supervision (archived as \texttt{B1}) uses historical extraction labels, whereas revised supervision (archived as \texttt{B2}) incorporates updated guidelines, LLM annotations, and adjudication. The conditions use the same training and development texts, with label changes in 1,440 training records and 107 development records. Checkpoints are selected by typed exact-span F1 against the corresponding development labels. The comparison therefore changes both training supervision and checkpoint-selection targets. Both conditions use the JobBERT training settings in Table~\ref{tab:training-settings}. The revised-label condition is the Silver-trained JobBERT-zh + CRF baseline reported in the main results. The archived revised-label files for Qwen and the encoder comparison use 2,150/169 records, after the exclusions described in the main evaluation protocol; these are distinct from the 2,156/169 JobBERT inputs and the 2,451-record original Silver candidate pool.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Historical JobBERT comparison of training supervision and checkpoint-selection labels on matched texts.}
+\label{tab:jobbert-label-versions}
+\begin{tabularx}{\linewidth}{@{}Lcc@{}}
+\toprule
+Supervision and selection labels & \makecell{Train / dev\\records} & Typed exact \\
+\midrule
+Earlier labels & 2,156 / 169 & $0.142\pm0.014$ \\
+Revised labels & 2,156 / 169 & $0.554\pm0.005$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+Human-reference F1 scores (0--1) are mean $\pm$ sample SD over seeds 42, 43, and 44. Both training and development labels change between conditions.
+\end{table}
+
+The historical JobBERT configuration scored higher with revised labels: mean typed exact-span micro-F1 increased from $0.142\pm0.014$ with earlier labels to $0.554\pm0.005$ with revised labels (Table~\ref{tab:jobbert-label-versions}). Both conditions used the same initial encoder and CRF and the same training and development texts, but both label sets changed. The difference therefore reflects the combined changes in training supervision and checkpoint-selection targets.

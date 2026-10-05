@@ -1,28 +1,61 @@
-\subsection{Annotation Quality and Reference Freezing}
+\subsection{Annotation Quality and Inter-Annotator Agreement}
 \label{sec:annotation-quality}
 
-Independent coding assesses handbook use without machine or peer suggestions; assisted review evaluates proposed labels. We report final-handbook agreement from the separate three-annotator blinded study (Table~\ref{tab:quality-main}). Historical coding and review used different samples and handbook versions (\hyperref[app:b]{Appendix B}); their scores cannot track independent reliability over time.
+Silver-label review and independent annotation assess different aspects of annotation quality. The two assisted-review comparisons below concern generated annotations; the separate blinded study assesses agreement under the final handbook. These designs do not support interpreting their scores as changes in independent agreement over time.
 
-\paragraph{Blinded coding protocol.}
-Three annotators used handbook B.sop\_v4.2.14 after familiarization and training on sets of five and 15 sentences, following the training-and-feedback approach discussed by \citet{klie2024annotationquality}. They then independently coded the same sample of 50 sentences drawn from existing Silver supervision in separate Doccano projects, blinded to both machine suggestions and one another's labels. Training sentences are excluded from formal agreement. The sample contains one sentence from each of 50 recorded advertisement identifiers and assesses handbook agreement. It was not reserved from expanded-model training. Appendix~B gives source counts and sampling limits; Appendix~D reports intersections with model inputs.
+\paragraph{Original Silver post-generation review.}
+A separate sample of 100 sentences was reviewed after bulk annotation, excluding the initial 100 reviewed records. Comparing the machine-prefilled annotations with the human-reviewed layer yielded typed exact-span F1 of 0.959. Machine suggestions were visible, so this score measures agreement with assisted human review. \hyperref[app:b]{Appendix B} reports the sampling frame and supporting counts.
 
-Annotators could consult the handbook and revise their own labels during individual self-review. We computed agreement from their latest separate exports, retaining all 50 sentences and all three coder pairs. These individual layers were not adjudicated into model-test labels. Typed exact F1 measures agreement on complete spans without designating a coder as gold~\citep{hripcsak2005agreement}; boundary-only F1 ignores type. Nominal Krippendorff's $\alpha$ uses L/K/S/T/O assignments to all 2,111 source code points. Percentile 95\% intervals use 10,000 source-stratified sentence-bootstrap samples, retaining all three annotations together. These intervals condition on the observed source mixture and coders.
+\paragraph{Additional review.}
+On the additional 150-sentence sample, two reviewers submitted separate annotations with machine suggestions visible. Their pre-adjudication layers yielded typed exact-span F1 of 0.816 (Table~\ref{tab:qa150-pairs}). These assisted-review layers are not used as a new model-evaluation reference.
 
-\begin{table}[htbp]
-\caption{Independent blinded agreement among three annotators on 50 sentences after individual self-review. Character coefficients are Cohen's $\kappa$ unless marked $\alpha$. Brackets give 95\% bootstrap intervals for typed exact F1. ``Equal'' counts identical sentence-level span sets. Training samples are excluded.}
+\paragraph{Blinded annotation protocol.}
+Three annotators used handbook v4.2.14 after familiarization on five sentences and practice on 15 sentences, following the training-and-feedback approach discussed by \citet{klie2024annotationquality}. They then independently annotated the same 50-sentence sample from existing Silver supervision in separate Doccano projects, without access to machine suggestions or one another's labels. The familiarization and practice sentences were excluded from the agreement calculation. The formal sample contained one sentence from each of 50 recorded advertisement identifiers. It was used to assess annotation agreement, not as a held-out model test set, and was not held out from expanded-model training. Appendix~B reports the source counts and sampling limitations; Appendix~D documents overlap with model inputs.
+
+Annotators could consult the handbook and revise their own annotations during individual self-review. We used their latest separate exports after self-review, retaining all 50 sentences and all three annotator pairs. No consensus labels were produced for model evaluation.
+
+\begin{table}[!b]
+\caption{Inter-annotator agreement on the 50-sentence blinded sample after individual self-review under handbook v4.2.14. Brackets show 95\% bootstrap confidence intervals.}
 \label{tab:quality-main}
 \centering\small
-\begin{tabularx}{\linewidth}{@{}p{0.22\linewidth}rp{0.09\linewidth}p{0.21\linewidth}L@{}}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}P{.19\linewidth}P{.29\linewidth}P{.29\linewidth}L@{}}
 \toprule
-Comparison & $n$ & Character & Typed F1 & Details \\
+\multicolumn{4}{@{}l}{\textit{A. Span-level agreement}} \\
 \midrule
-\multicolumn{5}{@{}l}{\textit{Final-handbook independent blinded coding}} \\
-A--B & 50 & 0.880 & \makecell[l]{0.793\\{}[0.694, 0.884]} & Boundary F1 0.828; equal 36/50 \\
-A--C & 50 & 0.930 & \makecell[l]{0.848\\{}[0.752, 0.926]} & Boundary F1 0.876; equal 39/50 \\
-B--C & 50 & 0.909 & \makecell[l]{0.814\\{}[0.721, 0.899]} & Boundary F1 0.847; equal 37/50 \\
-Mean / three-rater & 50 & $\alpha$ 0.907 & \makecell[l]{0.818\\{}[0.732, 0.894]} & Mean boundary F1 0.850; all three equal 34/50 \\
+Comparison & Typed exact-span F1 & Boundary-only exact-span F1 & Identical typed-span sets \\
+\midrule
+A--B & 0.793 [0.694, 0.884] & 0.828 & 36/50 \\
+A--C & 0.848 [0.752, 0.926] & 0.876 & 39/50 \\
+B--C & 0.814 [0.721, 0.899] & 0.847 & 37/50 \\
+Mean pairwise & 0.818 [0.732, 0.894] & 0.850 [0.766, 0.923] & --- \\
 \bottomrule
 \end{tabularx}
+\par\medskip
+\begin{tabularx}{\linewidth}{@{}P{.26\linewidth}LP{.29\linewidth}@{}}
+\toprule
+\multicolumn{3}{@{}l}{\textit{B. Character-level agreement (2,111 Unicode code points)}} \\
+\midrule
+Comparison & Coefficient & Value \\
+\midrule
+A--B & Cohen's $\kappa$ & 0.880 \\
+A--C & Cohen's $\kappa$ & 0.930 \\
+B--C & Cohen's $\kappa$ & 0.909 \\
+All three annotators & Nominal Krippendorff's $\alpha$ & 0.907 [0.851, 0.954] \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+{\footnotesize\RaggedRight\textit{Notes.} Familiarization (5 sentences) and practice (15) are excluded. Mean pairwise F1 is the arithmetic mean of the three pairwise scores. Identical sets include empty sets; all three annotators agreed on 34/50 sentences, including 11 empty sentences.\par}
 \end{table}
 
-Mean typed F1 is 0.818 (95\% CI [0.732, 0.894]). Boundary F1 is higher at 0.850 (95\% CI [0.766, 0.923]), indicating additional type disagreement. Character-level $\alpha=0.907$ (95\% CI [0.851, 0.954]) measures agreement at a different unit from complete spans~\citep{artstein2008agreement}. Of the 34 fully agreed sentences, 11 are empty. The two L spans occur in one sentence, limiting category-level conclusions. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261003}{reproduction materials} include the latest individual labels and diagnostics for this independent coding study.
+\begin{samepage}
+\paragraph{Agreement measures.}
+We computed typed exact-span F1 for each annotator pair over the full sample and report the mean of the three pairwise scores. A match requires identical boundaries and types, without treating any annotator as the reference~\citep{hripcsak2005agreement}. Boundary-only exact-span F1 ignores type. Character-level agreement was measured using pairwise Cohen's $\kappa$ and three-annotator nominal Krippendorff's $\alpha$, based on L/K/S/T/O assignments to all 2,111 source Unicode code points; O denotes positions outside annotated spans. Reported 95\% percentile intervals were obtained from 10,000 source-stratified sentence-bootstrap samples, retaining all three annotation layers together for each sampled sentence. The intervals are conditional on the observed source composition and the three annotators.\par
+\end{samepage}
+
+\begin{samepage}
+\paragraph{Agreement results.}
+Mean pairwise typed exact-span F1 was 0.818 (95\% CI [0.732, 0.894]), compared with 0.850 for boundary-only exact-span F1 (95\% CI [0.766, 0.923]). The higher boundary-only score indicates additional disagreement over type assignment. Character-level $\alpha$ was 0.907 (95\% CI [0.851, 0.954]). Character-level coefficients and span-level F1 describe different annotation units and should be interpreted separately~\citep{artstein2008agreement}.\par
+\end{samepage}
+
+All three annotators produced identical complete typed-span sets for 34 sentences, including 11 with no annotated spans. They also identified the same two L spans, both in one sentence, providing limited evidence about agreement on this category. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261003}{reproduction materials} include the individual annotation exports used in these calculations and the associated diagnostics.

@@ -1,4 +1,6 @@
-# Silver-plus B2 (`v6a_nocross`, 2026-09-08)
+# Silver training/development sets for Qwen and encoders
+
+Frozen package: `v6a_nocross`, 2026-09-08. The historical label-version identifier is B2; filenames and hashes remain unchanged. This 2,150/169 split differs from the 2,451-record original Silver candidate pool and JobBERT's 2,156/169 split. See the [resource naming guide](../../docs/terminology.md).
 
 LLM-generated labels for supervised training runs scored on the **human reference set**. **Not** additional human-reference evaluation labels, even where rows were human-reviewed.
 
@@ -9,4 +11,4 @@ LLM-generated labels for supervised training runs scored on the **human referenc
 
 Isolation: sentence-level extended (`句级隔离扩展版`). Human-reference IDs (`data/gold150_test.jsonl`) are not in these train/dev lists. Do not call this document isolation.
 
-On GitHub Release / Zenodo **`v0.1.3`**. Not in Zenodo `v0.1.1` or `v0.1.2`. Test gold: [`../gold150_test.jsonl`](../gold150_test.jsonl) (human reference set; artifact Gold150).
+On GitHub Release / Zenodo **`v0.1.3`**. Not in Zenodo `v0.1.1` or `v0.1.2`. Human reference set: [`../gold150_test.jsonl`](../gold150_test.jsonl) (human reference set; artifact Gold150).

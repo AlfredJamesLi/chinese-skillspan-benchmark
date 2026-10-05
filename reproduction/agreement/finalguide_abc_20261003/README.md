@@ -1,6 +1,6 @@
-# Final-handbook agreement: latest individual annotations
+# Blinded agreement sample: latest individual annotations
 
-This release supplies the current Table 3 results for Chinese-SkillSpan. Three coders independently annotated the same 50 sentences under B.sop_v4.2.14, with machine suggestions and one another's labels hidden. They could consult the handbook, check their own work, and revise their own labels. The analysis uses their latest separate exports dated 3 October 2026. The five learning and fifteen practice sentences are excluded.
+This release supplies the current Table 3 results for Chinese-SkillSpan. The blinded agreement sample is reported separately from historical human-reference and review coverage. Its individual layers measure agreement and do not form a consensus model test set; see the [resource relationships](../../../docs/terminology.md). Three coders independently annotated the same 50 sentences under B.sop_v4.2.14, with machine suggestions and one another's labels hidden. They could consult the handbook, check their own work, and revise their own labels. The analysis uses their latest separate exports dated 3 October 2026. The five learning and fifteen practice sentences are excluded.
 
 ## Results
 
@@ -27,6 +27,6 @@ Intervals use 10,000 source-stratified sentence resamples, seed 20260927 and Num
 
 The received archive names the latest export directory `live_doccano_postdiscussion_20261003`. On 4 October 2026, the authors clarified that the labels were produced independently and that revisions consisted of each coder checking their own annotations and consulting the rules. The current analysis follows that clarification. The directory name is retained in the provenance record rather than used to infer a consensus-coding stage.
 
-The [2 October snapshot](../finalguide_abc_20261002/) remains available with its original labels and results. It is superseded for the current manuscript, not overwritten. Both releases contain the same 50 texts and study IDs. This update does not change Gold150, model predictions, training targets, historical assisted-review scores or model-evaluation results.
+The [2 October snapshot](../finalguide_abc_20261002/) remains available with its original labels and results. It is superseded for the current manuscript, not overwritten. Both releases contain the same 50 texts and study IDs. This update does not change the human reference set, model predictions, training targets, historical assisted-review scores or model-evaluation results.
 
 Reuse follows the repository's component-specific terms. The release does not grant additional rights over third-party recruitment text.

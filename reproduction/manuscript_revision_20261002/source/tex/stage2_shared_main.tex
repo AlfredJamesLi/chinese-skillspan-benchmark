@@ -1,6 +1,6 @@
 % [Stage2] Core metrics and cohort appendix share stage2_result_values.tex.
 \begin{table}[H]
-\caption{Shared-guideline inference configurations on the human reference ($n=150$). P/R are typed exact precision/recall. Each configuration is a single run. Inference budgets are configuration-specific. Qwen uses no project adapter.}
+\caption{Prompted extraction on the human reference set (single runs).}
 \label{tab:gold150-shared-r7}
 \centering\small
 \newcommand{\SharedResultRow}[7]{#1 & #2 & #3 & #4 & #5 \\}
@@ -12,5 +12,5 @@ Recorded configuration & P & R & Exact F1 & Relaxed F1 \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-Both DeepSeek rows use the same model. Non-thinking and thinking denote inference modes, with output caps of 2,048 and 8,192 tokens respectively. Table~\ref{tab:model-identity} lists the recorded identifiers, access routes, and settings. Cohort scores and detailed output-status counts accompany the reproduction materials.
+P/R: typed exact precision/recall. Exact and relaxed F1 are typed and micro-averaged. Qwen uses no adapter. Model identifiers and settings appear in Table~\ref{tab:model-identity}.
 \end{table}

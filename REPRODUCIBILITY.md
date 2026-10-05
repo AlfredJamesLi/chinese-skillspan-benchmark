@@ -1,6 +1,6 @@
 # Reproduce Chinese-SkillSpan results
 
-[Annotation roles and IAA50 membership](reproduction/reviewer_supplement_20261004/README.md) clarify which results use human references and which use generated targets.
+[Annotation roles and blinded-sample membership](reproduction/reviewer_supplement_20261004/README.md) clarify which results use human references and which use generated targets.
 
 The [4 October revision and checks](reproduction/major_revision_20261004/README.md) update the current manuscript, data accounting, source-document analysis and uncertainty estimates. Earlier experiments remain archived.
 
@@ -23,14 +23,14 @@ This check uses Python's standard library. It makes no model call, performs no t
 
 ## Qwen adapters and frozen predictions
 
-Download the [Qwen model-reproduction archive](https://doi.org/10.5281/zenodo.22851581) and follow the included `README.md`. `MODEL_INDEX.csv` maps the three B2 seeds and the selected expanded-pool adapters to checkpoints and predictions. The archive includes loading configurations, frozen prompts, the occurrence parser, Gold150, scoring tools and an offline-scoring receipt. It excludes base-model weights and complete expanded training texts. The shared-guideline package does not replace the historical JSON-offset experiment.
+Download the [Qwen model-reproduction archive](https://doi.org/10.5281/zenodo.22851581) and follow the included `README.md`. `MODEL_INDEX.csv` maps the three Qwen LoRA seeds trained on the 2,150/169 Silver sets and the selected expanded-pool adapters to checkpoints and predictions. The archive includes loading configurations, frozen prompts, the occurrence parser, human reference set, scoring tools and an offline-scoring receipt. It excludes base-model weights and complete expanded training texts. The shared-guideline package does not replace the historical JSON-offset experiment.
 
 ## Match the experiment
 
 - **Shared-guideline inference:** six configurations evaluated on the 150-sentence human reference.
-- **Matched Qwen adaptation:** 2,150/169 B2 training/development records; no adapter versus three LoRA seeds under the same inference protocol.
-- **JobBERT supervision and selection:** 2,156/169 matched texts with different training and development labels. The publicly released 2,150-row Qwen file is not that 2,156-row manifest.
-- **Expanded Silver:** the adopted Codex pool and a supplementary alternative pool, with separate Qwen Silver testing and an additional human-reference check. See [expanded experiments](reproduction/expanded_silver/README.md).
+- **Matched Qwen adaptation:** 2,150/169 Silver training/development records; no adapter versus three LoRA seeds under the same inference protocol.
+- **Silver-trained JobBERT-zh + CRF:** 2,156/169 training/development records. The [historical label-version comparison](reproduction/experimental_notes/jobbert_label_versions.md) uses matched texts with different training and development labels. The publicly released 2,150-row Qwen file is not that 2,156-row manifest.
+- **Expanded Silver pools:** the adopted Codex pool and a supplementary alternative pool, with separate Qwen Silver testing and an additional human-reference check. See [expanded experiments](reproduction/expanded_silver/README.md).
 - **Historical protocols:** [historical results](reproduction/historical_results/README.md) retain the earlier JSON-offset and hybrid-reference studies.
 
 The [resource naming guide](PAPER_NAMES.md) and [file inventory](reproduction/evaluation/materials_inventory.json) resolve original identifiers. The inventory records an earlier audit, not a complete inventory of subsequent releases. The [access matrix](DATA_AVAILABILITY.md) states the current release scope.

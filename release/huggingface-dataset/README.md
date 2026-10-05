@@ -19,6 +19,8 @@ license: other
 
 # Dataset card: Chinese-SkillSpan
 
+**Historical template:** the body below describes an earlier hybrid-reference release and is preserved for provenance. It is not the current dataset card or access guide. Use the [current resource names](../../docs/terminology.md), [human reference set guide](../../data/gold150/README.md), and [current data access and reuse terms](../../DATA_AVAILABILITY.md). Existing file names, versions, DOI links, and historical results below remain unchanged.
+
 **Chinese-SkillSpan** is a Chinese job-advertisement corpus for **competency span extraction**. Models such as **JobBERT-zh** are evaluated on this resource.
 
 This file is a **template**. There is no public Hugging Face dataset repository. Use GitHub Release `v0.1.1` or https://doi.org/10.5281/zenodo.22288338. Code: https://github.com/AlfredJamesLi/chinese-skillspan-benchmark

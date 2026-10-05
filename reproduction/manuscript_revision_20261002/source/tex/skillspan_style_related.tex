@@ -1,19 +1,21 @@
-% Round 2: compare actual prediction units, not incomparable corpus sizes.
-\begin{table}[htbp]
+% Compare prediction units, annotation schemes, label sources, and reported materials.
+\begin{table}[!b]
 \centering\small
-\caption{Selected recruitment resources: prediction units, annotation layers, and reported materials. Table~\ref{tab:annotation-lineage} details Chinese-SkillSpan counts and data roles.}
+\caption{Selected recruitment resources: prediction units, annotation schemes, and reported materials. Table~\ref{tab:annotation-lineage} reports the sizes and roles of the Chinese-SkillSpan subsets.}
 \label{tab:related-span}
 \setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.13}
-\begin{tabularx}{\linewidth}{@{}P{.20\linewidth}P{.19\linewidth}P{.30\linewidth}L@{}}
+\begin{tabularx}{\linewidth}{@{}P{.20\linewidth}P{.17\linewidth}P{.34\linewidth}L@{}}
 \toprule
-Work / language & Prediction unit & Actual annotation layers & Material scope \\
+Study / language & Prediction unit & Annotation scheme and label source & Reported materials \\
 \midrule
-\citet{sayfullina2018softskills}; English & Candidate phrase in context & Relevance to an applicant; binary disambiguation, not open-boundary extraction & Annotated soft-skill contexts \\
-\citet{gnehm2022skills}; German & Spans, then finer areas & Coarse EDU/EXP/LNG; finer skill areas and taxonomy matching & Article and released domain-adapted models \\
-\citet{zhang2022skillspan}; English & Source-text spans & SKILL / KNOWLEDGE; overlap permitted between the two layers & Dataset, code, and annotation guidance \\
-\citet{jensen2022kompetencer}; Danish / English & Spans and fine-grained labels & Manual skill/knowledge spans; ESCO API distant labels; Danish test-label correction & Dataset and code \\
-\citet{cao2021occupational}; Chinese & Recruitment entities & Manually annotated skill / specialty entities; BIOES & Article and supporting data files \\
-Chinese-SkillSpan; Chinese & Flat character spans & L/K/S/T; frozen human reference and Silver supervision; separate blinded agreement study & Handbook, protocols, baseline predictions, scorer and independent coding exports (\hyperref[app:d]{Appendix~D}) \\
+\citet{sayfullina2018softskills}; English & Candidate phrases in context & Binary labels indicating whether a soft-skill phrase refers to an applicant; not open-boundary extraction & Annotated soft-skill contexts \\
+\citet{gnehm2022skills}; German & Requirement spans and finer-grained skill areas & Coarse EDU/EXP/LNG labels; finer-grained skill areas and taxonomy matching & Article and released domain-adapted models \\
+SkillSpan~\citep{zhang2022skillspan}; English & Source-text spans & SKILL and KNOWLEDGE in two potentially overlapping annotation layers & Dataset, code, and annotation guidance \\
+Kompetencer~\citep{jensen2022kompetencer}; Danish / English & Spans and fine-grained labels & Manually annotated skill/knowledge spans; distant labels from the ESCO API; manually corrected Danish test labels & Dataset and code \\
+\citet{cao2021occupational}; Chinese & Recruitment entities & Manually annotated skill and specialty entities encoded with BIOES & Article and supporting data files \\
+Chinese-SkillSpan; Chinese & Flat character-level spans & L/K/S/T types; frozen human reference and model-generated Silver supervision & Handbook, protocols, baseline predictions, scoring code, and independent annotation exports \\
 \bottomrule
 \end{tabularx}
+\par\smallskip
+{\footnotesize\RaggedRight\textit{Notes.} EDU, EXP, and LNG denote education, experience, and language requirements, respectively. For Chinese-SkillSpan, the independent annotation exports come from a separate blinded agreement study and do not provide consensus labels for model testing. \hyperref[app:d]{Appendix D} describes component-specific access conditions.\par}
 \end{table}

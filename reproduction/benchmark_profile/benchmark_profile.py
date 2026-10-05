@@ -20,6 +20,13 @@ SPECS = [
  ('Gold150','00_freeze/gold150_test.jsonl',150,663,'ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0')]
 QA_HASH='e5a9f1ed64bcf28b3518954ccd5d8a1c60bcadf96c3a85fcc25a70da5a83b25f'
 COLORS=['#0072B2','#56B4E9','#D55E00','#8064A2','#CC79A7']
+# Keep archived group identifiers unchanged; use role-based names in the figure.
+DISPLAY_NAMES = {
+    'B2 train': 'Silver train', 'B2 dev': 'Silver dev',
+    'Gold150': 'Human reference',
+    'QA150 A': 'Additional review—A',
+    'QA150 B': 'Additional review—B',
+}
 
 def load(p,h):
     assert hashlib.sha256(p.read_bytes()).hexdigest()==h, str(p)
@@ -66,13 +73,15 @@ def draw(data,out):
     groups=data['groups']
     for idx,ls in zip([0,1,2,3],['-','--','-.',':']):
         g=groups[idx]; x=np.sort(expand(g['input_lengths']))
-        name=g['name'] if idx!=3 else 'QA150'
+        name=DISPLAY_NAMES[g['name']] if idx!=3 else 'Additional review'
+        unit='records' if idx<2 else 'sentences'
         ax.step(x,np.arange(1,len(x)+1)/len(x),where='post',color=COLORS[idx],ls=ls,lw=1.7,
-                label=f"{name} (n={len(x):,})")
+                label=f"{name}\n({len(x):,} {unit})")
     ax.set_xscale('log'); ax.set_xticks([1,5,10,20,50,100,200,500,1000])
     ax.xaxis.set_major_formatter(ScalarFormatter()); ax.minorticks_off()
     ax.set_xlim(1,1000); ax.set_ylim(0,1.03); ax.set_yticks([0,.25,.5,.75,1],['0','25','50','75','100'])
-    ax.set_xlabel('Input length (characters; log scale)'); ax.set_ylabel('Cumulative records (%)')
+    ax.set_xlabel('Input length (Unicode code points; log scale)',fontsize=9)
+    ax.set_ylabel('Cumulative share (%)')
     ax.set_title('(a) Input length',loc='left',fontweight='bold',pad=12)
     ax.grid(axis='y',color='#E7EAEE',lw=.7); ax.set_axisbelow(True)
     ax.legend(loc='lower right',frameon=False,fontsize=8.5,labelspacing=.5,handlelength=2.2)
@@ -87,24 +96,27 @@ def draw(data,out):
         full.text(i,max(v)+2,str(max(v)),ha='center',va='bottom',fontsize=8,color=COLORS[i])
         q1,med,q3=np.percentile(v,[25,50,75]); bv.plot([i,i],[q1,q3],lw=3,color=COLORS[i],solid_capstyle='round')
         bv.scatter(i,med,s=24,color='white',edgecolor=COLORS[i],lw=1.3,zorder=4)
-    bv.set_xticks(range(5),['B2\ntrain','B2\ndev','Gold150','QA150\nA','QA150\nB'])
+    bv.set_xticks(range(5),['Silver\ntrain','Silver\ndev','Human\nreference','Additional\nreview—A','Additional\nreview—B'],fontsize=8.2)
     # Zoom the viewport, never trim the data or recompute density on a truncated sample.
-    bv.set_ylim(0,20); bv.set_yticks([0,5,10,15,20]); bv.set_ylabel('Span length (characters)')
+    bv.set_ylim(0,20); bv.set_yticks([0,5,10,15,20]); bv.set_ylabel('Span length (Unicode code points)')
     full.set_ylim(0,60);full.set_yticks([0,50]);full.set_xticks([])
     full.set_xlim(bv.get_xlim());full.spines[['top','right','bottom']].set_visible(False)
     full.set_title('(b) Annotated span length',loc='left',fontweight='bold',pad=15)
     full.text(.5,1.01,'Full range · numbers indicate maxima',transform=full.transAxes,ha='center',va='bottom',fontsize=8.2,color='#66737E')
-    bv.set_title('Detail: 0–20 characters',loc='right',fontsize=8.5,pad=5,color='#66737E')
+    bv.set_title('Detail: 0–20 Unicode code points',loc='right',fontsize=8.5,pad=5,color='#66737E')
     bv.text(.5,-.24,'White dot: median · Thick line: middle 50%',transform=bv.transAxes,ha='center',va='top',fontsize=8.2,color='#66737E')
     bv.grid(axis='y',color='#E7EAEE',lw=.7); bv.set_axisbelow(True); bv.spines[['top','right']].set_visible(False)
     vals=np.array([[g['types'][t]/g['n_spans']*100 for t in 'LSKT'] for g in groups])
-    im=hm.imshow(vals,cmap='Blues',vmin=0,vmax=70,aspect='auto')
+    # Vector cell geometry preserves the heatmap without embedding a raster image.
+    hm.pcolormesh(np.arange(-.5,4,1),np.arange(-.5,5,1),vals,
+                  cmap='Blues',vmin=0,vmax=70,shading='flat',rasterized=False)
+    hm.set_xlim(-.5,3.5); hm.set_ylim(4.5,-.5)
     for i,g in enumerate(groups):
         for j,t in enumerate('LSKT'):
             val=vals[i,j]; hm.text(j,i,f"{val:.1f}%   ({g['types'][t]:,})",ha='center',va='center',fontsize=10,
                                   color='white' if val>44 else '#243443')
-    hm.set_xticks(range(4),['L · Language','S · Occupational skills','K · Knowledge','T · Transversal'])
-    hm.set_yticks(range(5),[f"{g['name']}  (n={g['n_spans']:,})" for g in groups])
+    hm.set_xticks(range(4),['L · Language','S · Occupational skills','K · Knowledge-related','T · Transversal'],fontsize=8.5)
+    hm.set_yticks(range(5),[f"{DISPLAY_NAMES[g['name']]}\n({g['n_spans']:,} spans)" for g in groups])
     hm.set_title('(c) Competency composition',loc='left',fontweight='bold',pad=12)
     hm.set_xticks(np.arange(-.5,4,1),minor=True); hm.set_yticks(np.arange(-.5,5,1),minor=True)
     hm.grid(which='minor',color='white',lw=2.5);hm.tick_params(which='both',length=0)

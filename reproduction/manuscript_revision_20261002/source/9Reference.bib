@@ -1,21 +1,20 @@
 % Use this file for citations not found in the ACL Anthology (contained in "anthology.bib").
-@techreport{ILO_2020_OJVs_BigData,
-  author      = {Podjanin, A. and Strietska-Ilina, O},
+@book{ILO_2020_OJVs_BigData,
   title       = {The feasibility of using big data in anticipating and matching skills needs},
-  institution = {International Labour Organization},
   year        = {2020},
   address     = {Geneva},
   url         = {https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_emp/%40emp_ent/documents/publication/wcms_759330.pdf},
-  note        = {Accessed: 2025-10-28}
+  note        = {Contributions from the ILO workshop held on 19--20 September 2019. Accessed: 2025-10-28},
+  editor = {Podjanin, Ana and Strietska-Ilina, Olga},
+  publisher = {International Labour Office}
 }
 
 @inproceedings{zhang2022skillspan,
   author    = {Zhang, Mike and Jensen, Kristian N{\o}rgaard and Sonniks, Sif Dam and Plank, Barbara},
-  title     = {{SkillSpan}: Hard and Soft Skill Extraction from English Job Postings},
+  title     = {{SkillSpan}: Hard and Soft Skill Extraction from {English} Job Postings},
   booktitle = {Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
   year      = {2022},
   pages     = {4962--4984},
-  address   = {Seattle, United States},
   publisher = {Association for Computational Linguistics},
   doi       = {10.18653/v1/2022.naacl-main.366},
   url       = {https://aclanthology.org/2022.naacl-main.366/}
@@ -23,7 +22,7 @@
 
 @article{smallm,
   author  = {Yang, Jinning and Yang, Zhile and Wu, Chengke and Guo, Yuanjun and Li, Xiao and Lin, Jia-Rui},
-  title   = {{SMALLM}: a local small model augmented a cloud-based large language model for Chinese named entity recognition in low-resource industries},
+  title   = {{SMALLM}: a local small model augmented a cloud-based large language model for {Chinese} named entity recognition in low-resource industries},
   journal = {Complex \& Intelligent Systems},
   year    = {2025},
   volume  = {11},
@@ -58,12 +57,12 @@
   booktitle = {Proceedings of the 23rd Nordic Conference on Computational Linguistics (NoDaLiDa)},
   year      = {2021},
   pages     = {210--221},
-  address   = {Reykjavik, Iceland (Online)},
   publisher = {Link{\"o}ping University Electronic Press, Sweden},
   url       = {https://aclanthology.org/2021.nodalida-main.21/}
 }
 
 
+% TODO_VERIFY [ESCOv1_2_2024]: The classification URL resolves but its browser reports a temporary error; recheck browser access. Version 1.2.0 (May 2024) is verified in the official release announcement.
 @misc{ESCOv1_2_2024,
   author       = {{European Commission}},
   title        = {{ESCO} Skills Pillar: Skills and Competences},
@@ -75,7 +74,7 @@
 
 @misc{council2017eqf,
   author       = {{Council of the European Union}},
-  title        = {Council Recommendation of 22 May 2017 on the European Qualifications Framework for Lifelong Learning},
+  title        = {{Council Recommendation} of 22 {May} 2017 on the {European Qualifications Framework} for lifelong learning and repealing the recommendation of the {European Parliament} and of the {Council} of 23 {April} 2008 on the establishment of the {European Qualifications Framework} for lifelong learning},
   year         = {2017},
   howpublished = {Official Journal of the European Union, C 189, pp. 15--28},
   url          = {https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017H0615(01)},
@@ -84,7 +83,7 @@
 
 @article{levrang2014esco,
   author  = {le Vrang, Martin and Papantoniou, Agis and Pauwels, Erika and Fannes, Pieter and Vandensteen, Dominique and De Smedt, Johan},
-  title   = {{ESCO}: Boosting Job Matching in Europe with Semantic Interoperability},
+  title   = {{ESCO}: Boosting Job Matching in {Europe} with Semantic Interoperability},
   journal = {Computer},
   year    = {2014},
   volume  = {47},
@@ -96,17 +95,18 @@
 % ===== Chinese / multilingual NER datasets =====
 @inproceedings{peng2015weibo,
   author    = {Peng, Nanyun and Dredze, Mark},
-  title     = {Named Entity Recognition for Chinese Social Media with Jointly Trained Embeddings},
+  title     = {Named Entity Recognition for {Chinese} Social Media with Jointly Trained Embeddings},
   booktitle = {Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
   year      = {2015},
   pages     = {548--554}
 }
 
+% TODO_VERIFY [cluener2020]: arXiv lists "Yu tong"; retain the braced literal. Any change to "Tong, Y." requires confirmation of name order.
 @misc{cluener2020,
   author = {Xu, Liang and {Yu tong} and Dong, Qianqian and Liao, Yixuan and Yu, Cong and Tian, Yin and Liu, Weitang and Li, Lu and Liu, Caiquan and Zhang, Xuanwei},
   title = {{CLUENER2020}: Fine-grained Named Entity Recognition Dataset and Benchmark for {Chinese}},
   year = {2020},
-  howpublished = {arXiv:2001.04351},
+  howpublished = {arXiv preprint arXiv:2001.04351},
   eprint = {2001.04351},
   archivePrefix = {arXiv},
   primaryClass = {cs.CL},
@@ -171,7 +171,6 @@
   booktitle = {Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)},
   year      = {2024},
   pages     = {5364--5376},
-  address   = {Mexico City, Mexico},
   publisher = {Association for Computational Linguistics},
   doi       = {10.18653/v1/2024.naacl-long.300},
   url       = {https://aclanthology.org/2024.naacl-long.300/}
@@ -190,13 +189,14 @@
   author    = {Zhou, Wenxuan and Zhang, Sheng and Gu, Yu and Chen, Muhao and Poon, Hoifung},
   title     = {{UniversalNER}: Targeted Distillation from Large Language Models for Open Named Entity Recognition},
   booktitle = {The Twelfth International Conference on Learning Representations},
-  year      = {2024}
+  year      = {2024},
+  url = {https://proceedings.iclr.cc/paper_files/paper/2024/hash/34678d08b36076de986df95c5bbba92f-Abstract-Conference.html}
 }
 
 % ===== Ontology & evaluation protocol =====
 @misc{esco,
   author       = {European Commission},
-  title        = {{ESCO} --- European Skills, Competences, Qualifications and Occupations},
+  title        = {{ESCO} --- {European Skills, Competences, Qualifications and Occupations}},
   howpublished = {\url{https://esco.ec.europa.eu/}},
   year         = {2024},
   note         = {Portal; Accessed: 2025-10-28}
@@ -208,14 +208,13 @@
   booktitle = {Proceedings of the Workshop on Natural Language Processing for Human Resources (NLP4HR)},
   year      = {2024},
   publisher = {Association for Computational Linguistics},
-  address   = {St. Julian's, Malta},
   pages     = {1--15},
   doi       = {10.18653/v1/2024.nlp4hr-1.1},
   url       = {https://aclanthology.org/2024.nlp4hr-1.1}
 }
 
 @article{cmner2024,
-  title   = {{CMNER}: A Chinese Multimodal NER Dataset based on Social Media},
+  title   = {{CMNER}: A {Chinese} Multimodal {NER} Dataset based on Social Media},
   author  = {Ji, Yuanze and Li, Bobo and Zhou, Jun and Li, Fei and Teng, Chong and Ji, Donghong},
   journal = {arXiv preprint arXiv:2402.13693},
   year    = {2024},
@@ -224,18 +223,17 @@
 }
 @inproceedings{jensen2022kompetencer,
   author    = {Zhang, Mike and Jensen, Kristian N{\o}rgaard and Plank, Barbara},
-  title     = {{Kompetencer}: Fine-grained Skill Classification in Danish Job Postings via Distant Supervision and Transfer Learning},
+  title     = {{Kompetencer}: Fine-grained Skill Classification in {Danish} Job Postings via Distant Supervision and Transfer Learning},
   booktitle = {Proceedings of the Thirteenth Language Resources and Evaluation Conference},
   year      = {2022},
   pages     = {436--447},
-  address   = {Marseille, France},
   publisher = {European Language Resources Association},
   url       = {https://aclanthology.org/2022.lrec-1.46/}
 }
 
 @article{mao2024legalner,
   author  = {Mao, Xingliang and Jiang, Jie and Zeng, Yongzhe and Peng, Yinan and Zhang, Shichao and Li, Fangfang},
-  title   = {Generative Named Entity Recognition Framework for Chinese Legal Domain},
+  title   = {Generative Named Entity Recognition Framework for {Chinese} Legal Domain},
   journal = {PeerJ Computer Science},
   volume  = {10},
   pages   = {e2428},
@@ -304,7 +302,7 @@
 % ===== Chinese, multilingual, and domain-adapted NER =====
 @inproceedings{chen2021boundary,
   author    = {Chen, Chun and Kong, Fang},
-  title     = {Enhancing Entity Boundary Detection for Better Chinese Named Entity Recognition},
+  title     = {Enhancing Entity Boundary Detection for Better {Chinese} Named Entity Recognition},
   booktitle = {Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)},
   year      = {2021},
   pages     = {20--25},
@@ -414,7 +412,7 @@
 
 @inproceedings{li2023coannotating,
   author    = {Li, Minzhi and Shi, Taiwei and Ziems, Caleb and Kan, Min-Yen and Chen, Nancy and Liu, Zhengyuan and Yang, Diyi},
-  title     = {CoAnnotating: Uncertainty-Guided Work Allocation between Human and Large Language Models for Data Annotation},
+  title     = {{CoAnnotating}: Uncertainty-Guided Work Allocation between Human and Large Language Models for Data Annotation},
   booktitle = {Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing},
   year      = {2023},
   pages     = {1487--1505},
@@ -511,7 +509,8 @@
   volume    = {37},
   year      = {2024},
   doi       = {10.52202/079017-4109},
-  url       = {https://proceedings.neurips.cc/paper_files/paper/2024/hash/e997325c6f4045aa646c81e674076297-Abstract-Datasets_and_Benchmarks_Track.html}
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2024/hash/e997325c6f4045aa646c81e674076297-Abstract-Datasets_and_Benchmarks_Track.html},
+  note = {Datasets and Benchmarks Track}
 }
 
 @inproceedings{magron2024jobskape,
@@ -527,7 +526,7 @@
 
 @inproceedings{desanto2026skilllens,
   author    = {De Santo, Alessia and Malandri, Lorenzo and Mercorio, Fabio and Mezzanzanica, Mario and Nobani, Navid},
-  title     = {{SkiLLens}: Recognising and Mapping Novel Skills from Millions of Job Ads Across Europe Using Language Models},
+  title     = {{SkiLLens}: Recognising and Mapping Novel Skills from Millions of Job Ads Across {Europe} Using Language Models},
   booktitle = {Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 5: Industry Track)},
   year      = {2026},
   pages     = {877--885},
@@ -553,7 +552,6 @@
   booktitle = {Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing},
   year      = {2009},
   pages     = {141--150},
-  address   = {Singapore},
   publisher = {Association for Computational Linguistics},
   url       = {https://aclanthology.org/D09-1015/}
 }
@@ -564,7 +562,6 @@
   booktitle = {Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
   year      = {2020},
   pages     = {6470--6476},
-  address   = {Online},
   publisher = {Association for Computational Linguistics},
   doi       = {10.18653/v1/2020.acl-main.577},
   url       = {https://aclanthology.org/2020.acl-main.577/}
@@ -577,6 +574,7 @@
  doi = {10.1371/journal.pone.0253308}, url = {https://doi.org/10.1371/journal.pone.0253308}
 }
 
+% TODO_VERIFY [macrodataPlatform]: Confirm direct access before submission: retrieval timed out in this audit, although official pages remain indexed. Original URL and access date retained.
 @misc{macrodataPlatform,
   author = {{MacroData}},
   title = {{MacroData}},
@@ -616,7 +614,6 @@
   booktitle = {Proceedings of the Thirteenth Language Resources and Evaluation Conference},
   year = {2022},
   pages = {1201--1208},
-  address = {Marseille, France},
   publisher = {European Language Resources Association},
   url = {https://aclanthology.org/2022.lrec-1.128/}
 }
@@ -680,7 +677,6 @@
   booktitle = {Proceedings of the Thirteenth Language Resources and Evaluation Conference},
   year = {2022},
   pages = {3892--3901},
-  address = {Marseille, France},
   publisher = {European Language Resources Association},
   url = {https://aclanthology.org/2022.lrec-1.414/}
 }
@@ -697,10 +693,9 @@
   author = {{Qwen Team}},
   title = {{Qwen2.5} Technical Report},
   year = {2025},
-  howpublished = {arXiv preprint arXiv:2412.15115v2},
-  eprint = {2412.15115v2},
+  howpublished = {arXiv preprint arXiv:2412.15115},
+  eprint = {2412.15115},
   archivePrefix = {arXiv},
-  note = {Version 2. Available at \url{https://arxiv.org/abs/2412.15115v2}},
   url = {https://arxiv.org/abs/2412.15115v2}
 }
 

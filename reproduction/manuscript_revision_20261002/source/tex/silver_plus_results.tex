@@ -1,32 +1,33 @@
 \subsection{Fine-Tuning with Silver Labels}
 \label{sec:silver-results}
 
-All three Qwen adapters improved exact precision and recall over the no-adapter baseline under the same inference protocol (Table~\ref{tab:gold150-main}, panel A). Mean typed exact micro-F1 increased from 0.361 to $0.540\pm0.035$. Each seed's paired interval against the baseline also excludes zero (Table~\ref{tab:core-paired}), conditional on the recorded runs and reference sentences. Partially rejected responses fall from 69 without an adapter to 2, 4, and 1 after adaptation. Valid spans from partially rejected responses remain in scoring; partial rejection differs from a whole-response failure. The measured benefit is end-to-end extraction, combining content prediction and valid output generation. A format-controlled intervention would be needed to separate those effects.
+All three Qwen adapters improved typed exact-span micro-F1 over the unadapted baseline under the same inference protocol (Table~\ref{tab:core-paired}; Table~\ref{tab:gold150-main}, panel A). The adapted mean was $0.540\pm0.035$, compared with 0.361 without an adapter. The paired seed-mean difference was 0.179, with a 95\% interval of $[0.111, 0.242]$; the three seed-specific intervals were also above zero. Adaptation also increased the mean scores under relaxed and boundary-only matching.
+
+The comparison measures end-to-end improvement under the output protocol; it does not separate changes in extraction from changes in output validity. Table~\ref{tab:shared-output-quality-r15} reports the response outcomes for each configuration.
 
 \begin{table}[H]
-\caption{Evaluation of Silver-supervised fine-tuning on Gold150 ($n=150$). F1 scores (0--1) are mean $\pm$ sample SD over seeds 42, 43, and 44; Qwen without an adapter is a single run.}
+\caption{Human-reference results for Qwen adaptation and the Silver-trained JobBERT baseline.}
 \label{tab:gold150-main}
 \centering\small
 \textbf{A. Qwen: fixed inference protocol}\par\smallskip
 \begin{tabularx}{\linewidth}{@{}Lcccc@{}}
 \toprule
-Condition & Train / dev & Typed exact & Typed relaxed & Boundary exact \\
+Condition & \makecell{Train / dev\\records} & Typed exact & Typed relaxed & \makecell{Boundary-only\\exact} \\
 \midrule
 No adapter & --- & $\QwenBaselineExact$ & $0.470$ & $0.414$ \\
-B2 LoRA & 2,150 / 169 & $\QwenLoraExact$ & $0.662\pm0.033$ & $0.571\pm0.038$ \\
+Qwen + LoRA & 2,150 / 169 & $\QwenLoraExact$ & $0.662\pm0.033$ & $0.571\pm0.038$ \\
 \bottomrule
 \end{tabularx}
-\par\medskip\textbf{B. JobBERT-zh: historical supervision and selection}\par\smallskip
+\par\medskip\textbf{B. Silver-trained JobBERT baseline}\par\smallskip
 \begin{tabularx}{\linewidth}{@{}Lcc@{}}
 \toprule
-Supervision and selection labels & Train / dev & Typed exact \\
+Model & \makecell{Train / dev\\records} & Typed exact \\
 \midrule
-Earlier (B1) & 2,156 / 169 & $0.142\pm0.014$ \\
-Revised (B2) & 2,156 / 169 & $0.554\pm0.005$ \\
+JobBERT-zh + CRF & 2,156 / 169 & $0.554\pm0.005$ \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-A: same base checkpoint, frozen messages, occurrence schema, parser, and decoding; adapters selected by B2 development F1. Boundary exact matches spans with types collapsed. B: same initial encoder/CRF and matched training/development texts, with both label sets changed. \nameref{sec:limitations} covers split and checkpoint limitations; the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{per-seed results} gives per-seed Qwen scores for all three training runs.
+F1 scores (0--1) are mean $\pm$ sample SD over seeds 42, 43, and 44; Qwen without an adapter is a single run. Boundary-only exact F1 ignores types. A uses a fixed inference protocol. B uses 2,156/169 Silver training/development records and the released encoder with its inherited CRF; the historical label-version comparison is reported in \hyperref[sec:jobbert-label-versions]{Appendix C}. \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{Per-seed Qwen scores} accompany the reproduction materials.
 \end{table}
 
-The historical JobBERT configuration achieved higher reference agreement with revised supervision (Table~\ref{tab:gold150-main}, panel B). The two conditions start from the same encoder and CRF and use matched training and development texts, but revise both sets of labels. Their difference therefore reflects changes to supervision and checkpoint selection together.
+The Silver-trained JobBERT-zh + CRF baseline achieved mean typed exact-span micro-F1 of $0.554\pm0.005$ (Table~\ref{tab:gold150-main}, panel B). Its training and selection protocol differs from Qwen's, so this cross-architecture comparison is descriptive.

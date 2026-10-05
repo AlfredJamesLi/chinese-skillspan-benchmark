@@ -1,19 +1,17 @@
 # Chinese-SkillSpan: current manuscript
 
-[Illustrated vector figures](../fancy_vector_restore_20261004/README.md) restore the earlier layout with editable artwork and official OpenAI/Kimi marks.
-
-The [reviewer-supplement revision](../reviewer_supplement_20261004/README.md) clarifies human-reference and Silver-target results and reports IAA50 intersections with the frozen training files. The current PDF contains 37 pages. No labels or model point scores changed.
-
 **Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements**
 
-[Read the revised PDF](Chinese_SkillSpan_revised_20261002.pdf). The current revision is dated 4 October 2026 and contains 37 pages. The directory and PDF filename are retained so existing links continue to work.
+[Read the current PDF](Chinese_SkillSpan_revised_20261002.pdf). Updated 5 October 2026; 41 pages. Existing directory and PDF filenames remain stable for links.
 
-This revision clarifies the original corpus split and subsequent labeled experimental splits, reconciles the Silver-pool counts, and adds source-group bootstrap intervals and K/S/T macro-F1. It uses the latest independent annotation results (typed F1 0.818), updates the workflow diagrams, and moves external-task experiments into [separate supplementary materials](../major_revision_20261004/external_experiments/README.md). The benchmark title is retained; conclusions distinguish diagnostic comparison from new-document generalization.
+This revision uses descriptive names for the source corpus, human reference, Silver supervision, and review/agreement samples. [The resource naming guide](../../docs/terminology.md) distinguishes the original Silver candidate pool, model-specific training/development sets, and overlapping expanded pools. Archived identifiers and data remain unchanged.
 
-[Data and statistical checks](../major_revision_20261004/README.md) explain the calculations and their scope. The previous leakage checks remain valid: original source-document partitions are disjoint, and later B2 files exclude reference sentences. Different sentences from shared source documents are reported separately.
+The main results retain the current JobBERT baseline and the matched Qwen adaptation comparison. The historical JobBERT label-version comparison, which changes both training and development labels, is retained in Appendix C and [supplementary documentation](../experimental_notes/jobbert_label_versions.md).
 
-The independent three-annotator study permits individual self-review with the handbook while hiding model suggestions and peer labels. Its 5 learning and 15 practice sentences are excluded. The 50 formal sentences are not added to Gold150 or used as a model test set. [Labels and agreement code](../agreement/finalguide_abc_20261003/README.md) retain the original exports and author clarification.
+[Figure 1 SVG](source/figures/Figure1_drawio_restored_20261004.svg) · [Figure 2 SVG](source/figures/Figure2_drawio_restored_20261004.svg) · [Annotation-profile SVG](source/figures/benchmark_profile.svg)
 
-[Workflow SVG](source/figures/Figure1_fancy_vector_20261004.svg) · [Annotation paths SVG](source/figures/Figure2_fancy_vector_20261004.svg) · [Historical revision notes](CHANGELOG_zh.md)
+Figure 3 now labels the Qwen/encoder supervision as Silver train/dev. Its underlying counts, statistical summaries, and graphic layout are unchanged. No dataset labels, predictions, scores, or checkpoints were modified.
 
-The source directory contains the revised manuscript files and figure assets; it is not a complete standalone LaTeX project. Historical files remain archived. The manifest records current file hashes and validation. No labels, model predictions or checkpoint artifacts were changed in this revision.
+The source mirror includes the active LaTeX files, bibliography, class, and figure assets. It requires XeLaTeX and the Noto CJK fonts named in `source/0main.tex`; font binaries are not bundled here. The Overleaf project provides the complete working build. `manifest.json` records this source/PDF revision and local compilation checks; older unused source files and historical revision notes remain archived.
+
+The [reviewer-supplement analysis](../reviewer_supplement_20261004/README.md) and [data/statistical checks](../major_revision_20261004/README.md) document source-document overlaps and the scope of sentence-exclusion checks. The [blinded agreement release](../agreement/finalguide_abc_20261003/README.md) preserves independent individual labels with self-review allowed; these are not consensus model-test labels.

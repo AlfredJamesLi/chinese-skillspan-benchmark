@@ -1,5 +1,7 @@
 # Zenodo archive — Chinese-SkillSpan
 
+**Historical deposit instructions:** retain the body below for the original release record. Current resource names and relationships are in the [terminology guide](../../docs/terminology.md); current downloads and component-specific reuse terms are in [data access](../../DATA_AVAILABILITY.md). This note does not change a published DOI, version, or archived file.
+
 This folder originated with the first deposit. For the current dataset use [v0.1.3](https://doi.org/10.5281/zenodo.22698504); the separate [Qwen reproduction archive](https://doi.org/10.5281/zenodo.22851581) contains the released adapters. The creator list in `.zenodo.json` has been corrected to nine authors. Other historical release instructions below are not a statement of current file availability; use [data access](../../DATA_AVAILABILITY.md) and [archive notes](../../docs/archive_notes.md).
 
 **Version DOI:** https://doi.org/10.5281/zenodo.22288338 (`v0.1.1`, record https://zenodo.org/records/22288338)  

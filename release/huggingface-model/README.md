@@ -19,6 +19,9 @@ license: other
 base_model: hfl/chinese-roberta-wwm-ext
 ---
 
+> Historical model-card template. Current reader-facing names distinguish [JobBERT-zh initialization](https://huggingface.co/AlfredJames/jobbert-zh) from the [Silver-trained continuation](https://huggingface.co/AlfredJames/jobbert-zh-v6a). See the [model guide](../../docs/models.md) and [resource naming guide](../../docs/terminology.md). The archived technical description below is retained.
+
+
 # JobBERT-zh
 
 **JobBERT-zh** is a Chinese job-domain encoder and CRF span head for **Chinese-SkillSpan** (competency span extraction from Chinese job advertisements). It follows the JobBERT / DaJobBERT domain-adaptive pre-training setup of Zhang et al., using a Chinese RoBERTa-wwm backbone.

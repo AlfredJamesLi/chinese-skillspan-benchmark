@@ -5,22 +5,14 @@ Current manuscript title: **Chinese-SkillSpan: a benchmark for competency span e
 Use these names when reading the manuscript. Exact paths stay unchanged for reproducibility. See the [annotation and training terminology](docs/terminology.md) for the current role names and historical aliases.
 
 | Paper name | Resource |
-
 |---|---|
-
-| Human reference | [150-sentence evaluation set](data/gold150/README.md) |
-
-| Qwen B2 supervision | [2,150/169 training/development split](data/silver_plus_v6a_nocross/README.md) |
-
-| Expanded Silver | [Adopted Codex and supplementary expansion experiments](reproduction/expanded_silver/README.md) |
-
-| JobBERT initialization / B2 continuation | [Model guide](docs/models.md) |
-
+| Human reference set | [150-sentence evaluation set](data/gold150/README.md) |
+| Silver training/development sets (Qwen and encoders) | [2,150/169 training/development split](data/silver_plus_v6a_nocross/README.md) |
+| Expanded Silver pool / alternative expanded Silver pool | [Adopted Codex and supplementary expansion experiments](reproduction/expanded_silver/README.md) |
+| JobBERT-zh initialization / Silver-trained JobBERT-zh + CRF | [Model guide](docs/models.md) |
 | Shared-guideline protocol | [Evaluation instructions](reproduction/EVALUATION_ENTRY.md) |
-
 | Historical coding and assisted review | [Agreement guide](reproduction/agreement/README.md) |
-
-| Independent blinded agreement study | [Final-handbook three-annotator study](reproduction/agreement/finalguide_abc_20261003/README.md) |
+| Blinded agreement sample | [Final-handbook three-annotator study](reproduction/agreement/finalguide_abc_20261003/README.md) |
 
 <details>
 
@@ -31,78 +23,46 @@ Use these names when reading the manuscript. Exact paths stay unchanged for repr
 Short names in the manuscript are display aliases. Original file paths, experiment keys, model identifiers, hashes and archived labels remain authoritative. This guide records the mapping without changing data or model identities.
 
 | Category | Paper name | Recorded identifier | Meaning and handling |
-
 |---|---|---|---|
-
 | model | Qwen | `Qwen2.5-14B-Instruct` | Model full name at first use; Qwen later. Display alias only; do not change model IDs or weight paths. |
-
 | model | Qwen (no adapter) | `no_adapter; Qwen2.5-14B-Instruct without project adapter` | Same baseline prediction across current Qwen comparisons. Keep prediction keys and files. |
-
-| model | Qwen LoRA | `Qwen2.5-14B-Instruct with B2 LoRA` | Keep seed 42/43/44 distinct. Keep LoRA_42/LoRA_43/LoRA_44 keys and checkpoints. |
-
+| model | Qwen + LoRA | `Qwen2.5-14B-Instruct with B2 LoRA` | Keep seed 42/43/44 distinct. Keep LoRA_42/LoRA_43/LoRA_44 keys and checkpoints. |
 | model | Claude (API) | `Claude Sonnet 4.5` | Version retained at first use. Display alias; preserve recorded access metadata. |
-
 | model | DeepSeek | `DeepSeek-V4-Pro; deepseek-v4-pro` | Official DeepSeek API (`https://api.deepseek.com`), with request and retained response model `deepseek-v4-pro`. Non-thinking/thinking are separate configurations; preserve mode and output cap. |
-
 | model | Kimi | `kimi-k2.6` | Official Moonshot API (`https://api.moonshot.cn`); thinking disabled. Request and retained response model fields match. |
-
 | model | GPT (API) | `gpt-5.6-terra` | Service-reported identifier; see the access note below. Preserve recorded request and response metadata. |
-
 | model | OpenAI Codex annotation | `gpt-6-astra` | Official Codex access for adopted Silver labels; distinct from the GPT (API) comparison baseline. |
-
 | model | JobBERT-zh initialization | `https://huggingface.co/AlfredJames/jobbert-zh` | Released 3M domain-adapted encoder with inherited V4 CRF. Keep published URL and model repository ID. |
-
-| model | JobBERT-zh continuation | `https://huggingface.co/AlfredJames/jobbert-zh-v6a` | Current B2 continuation; default released checkpoint is seed 42. Keep published URL and repository ID; do not replace initialization. |
-
-| experiment | primary JobBERT configuration | `v6a` | 2156 train / 169 dev; earlier versus revised labels. Documentation alias only; preserve manifest names. |
-
-| experiment | Qwen training split | `v6a_nocross` | 2150 train / 169 dev; train/dev exact NFC text matches removed. Keep exact manifest and membership. |
-
-| dataset | human reference | `Gold150; gold150_test.jsonl` | 150 sentences; 663 spans. Keep canonical file, hashes and scripts; add a descriptive README alias. |
-
-| dataset | initial review | `A100` | 100 records with LLM-generated labels reviewed before bulk generation. Keep A100 IDs; distinguish later independent exercise claim and later review versions. |
-
-| dataset | post-generation review | `QA100` | 100 records in the later stratified review. Keep QA100 IDs and sampled membership. |
-
+| model | Silver-trained JobBERT-zh + CRF | `https://huggingface.co/AlfredJames/jobbert-zh-v6a` | Silver-trained continuation; default released checkpoint is seed 42. Keep published URL and repository ID; do not replace initialization. |
+| experiment | Silver training/development sets (JobBERT) | `v6a` | 2156 train / 169 dev; earlier versus revised labels. Documentation alias only; preserve manifest names. |
+| experiment | Silver training/development sets (Qwen and encoders) | `v6a_nocross` | 2150 train / 169 dev; train/dev exact NFC text matches removed. Keep exact manifest and membership. |
+| dataset | Human reference set | `Gold150; gold150_test.jsonl` | 150 sentences; 663 spans. Keep canonical file, hashes and scripts; add a descriptive README alias. |
+| dataset | Initial Silver review sample | `A100` | 100 records with LLM-generated labels reviewed before bulk generation. Keep A100 IDs; distinguish later independent exercise claim and later review versions. |
+| dataset | Post-generation Silver review sample | `QA100` | 100 records in the later stratified review. Keep QA100 IDs and sampled membership. |
 | dataset | nested review subset | `Dual15` | 15-sentence QA100 assisted-review subset; September 17 export verifies separate coder queues and confirmations. It is distinct from IAA-50 blind calibration. |
-
-| dataset | further conflict-origin records | `H730` | 730 Silver-plus records from the conflict queue beyond the initial review. Keep H730 IDs and membership. |
-
-| dataset | other Silver-plus records | `E1621` | 1621 non-conflict-origin historical extraction records. Keep E1621 and historical SOP--CWS provenance. |
-
+| dataset | further conflict-origin records | `H730` | 730 original Silver records from the conflict queue beyond the initial review. Keep H730 IDs and membership. |
+| dataset | other original Silver records | `E1621` | 1621 non-conflict-origin historical extraction records. Keep E1621 and historical SOP--CWS provenance. |
 | protocol | shared protocol | `rev2 patch1` | Frozen system instruction and user template. Keep original prompt filenames, bytes and hashes. |
-
 | protocol | span parser | `parser v1.1` | Occurrence-based output to original character offsets. Keep parser version, implementation and hash. |
-
 | protocol | span scorer | `cnss-lskt-1.2.0` | Typed exact and relaxed span scoring. Keep scorer identity; do not recalculate or modify scoring. |
-
 | handbook | Handbook v4.2.14 | `B.sop_v4.2.14` | Current guide, distinct from frozen execution protocols. Keep version identity; no relabeling. |
-
 | handbook | Handbook v4.2.9 | `B.sop_v4.2.9` | Historical calibration guide. Keep historical agreement binding. |
-
 | handbook | frozen reference version | `B.sop_v4.2.10` | Reference metadata; not a later handbook revision. Preserve metadata exactly. |
-
 | example | shared-experience example | `1838-s0008; R23` | Appendix A.3 example. Keep source_id, offsets and original Chinese text. |
-
 | documentation | reproduction guide | `REPRODUCIBILITY.md` | Existing GitHub reproduction index. Keep file name and add links to new naming/experimental notes. |
-
 | documentation | experimental notes | `reproduction/experimental_notes/README.md` | Detailed experiments and reproduction reminders. Retain directory; use short link text in documentation. |
-
 | documentation | paper naming guide | `PAPER_NAMES.md; reproduction/paper_names.csv` | New human-readable guide and machine-readable map. Add these documentation files; no canonical data renaming. |
 
 ## Recorded API names and study roles
 
 | Evaluated baseline | Request model | Response model |
-
 |---|---|---|
-
 | GPT (API) | `gpt-5.4` | `gpt-5.6-terra` |
-
 | Claude (API) | `claude-sonnet-4-5` | `claude-sonnet-4-5-20250929` |
 
 The manuscript uses readable display names. These fields identify retained service records. Each configuration has 150 formal prediction records plus two preliminary checks. The shared protocol was frozen for September 10; the GPT run includes a September 11 retry. Retained call metadata accompany raw records; missing dates, decoding settings and checkpoint identities are not inferred.
 
-GPT and Claude provide inference baselines in the Chinese evaluation. The QA150 Astra--Grok comparison concerns archived machine suggestions, not independent human agreement; The authors identify Grok as the official model selected in Cursor; the archived suggestion file does not retain its exact version or decoding settings.
+GPT and Claude provide inference baselines in the Chinese evaluation. The additional-review Astra--Grok comparison concerns archived machine suggestions, not independent human agreement. The authors identify the Cursor selection as Grok 4.6-high; the archived suggestion file does not independently pin its exact model snapshot or retain complete decoding settings.
 
 The human reference combines independently coded and adjudicated calibration sentences with collaboratively coded and reviewed challenge sentences. Humans determined its final labels. Separate model-generated Silver labels provide supervision and Silver-target evaluation; the independently blinded three-coder sample measures handbook agreement and is not a model test set.
 

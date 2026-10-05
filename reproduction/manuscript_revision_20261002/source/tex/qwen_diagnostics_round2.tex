@@ -1,13 +1,7 @@
 \subsection{Matched Qwen Frozen-Prediction Diagnostics}
 \label{sec:qwen-diagnostics-r2}
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{figures/qwen_diagnostics_chart_0913.pdf}
-\caption{Qwen diagnostics on the same 150 reference sentences. (a) Typed exact F1 by competency type. (b) Recall by gold-span length; $n$ counts gold spans. (c--d) False positives on eight empty-reference sentences, counted by sentence and span. Colour and pattern identify runs.}
-\label{fig:qwen-diagnostics}
-\end{figure}
 
-Diagnostics reuse the same 150 reference sentences and each run's frozen accepted spans. Typed exact matching is completed on each full sentence before aggregation by gold-span length. Bins ($\leq4$, 5--8, $\geq9$ Unicode code points) are fixed in advance; they contain 346/243/74 gold spans in 102/110/56 sentences, respectively. A sentence may contribute gold spans to multiple bins. Type-specific unmatched predictions count as FP even in empty-reference sentences. Results for each training seed are evaluated separately on the same reference sentences.
+Figure~\ref{fig:qwen-diagnostics} reuses the same 150 reference sentences and each run's frozen accepted spans. Typed exact matching is completed on each full sentence before aggregation by gold-span length. Bins ($\leq4$, 5--8, $\geq9$ Unicode code points) are fixed in advance; they contain 346/243/74 gold spans in 102/110/56 sentences, respectively. A sentence may contribute gold spans to multiple bins. Type-specific unmatched predictions count as FP even in empty-reference sentences. Results for each training seed are evaluated separately on the same reference sentences.
 
 On the eight empty-reference sentences, accepted false-positive spans decrease from 19 without an adapter to 6, 4, and 0 for seeds 42, 43, and 44; affected sentences number 2, 2, 1, and 0.
 

@@ -7,13 +7,13 @@ Use this entry for shared-guideline inference, fine-tuning comparisons, and Qwen
 | Comparison | Reference and inputs | Output interpretation |
 |---|---|---|
 | Shared-guideline inference, six configurations | Frozen 150-sentence human reference; shared occurrence protocol | Descriptive configuration comparison, with separate reasoning/output settings |
-| Qwen no adapter vs B2 LoRA, seeds 42/43/44 | Same reference, prompts, parser and decoding; 2,150/169 train/dev | Task adaptation under the fixed protocol |
-| JobBERT B1 vs B2, seeds 42/43/44 | Same 150-sentence reference; primary 2,156/169 matched texts, changed train/dev labels | Joint supervision and selection comparison |
+| Qwen no adapter vs Qwen + LoRA, seeds 42/43/44 | Same reference, prompts, parser and decoding; 2,150/169 train/dev | Task adaptation under the fixed protocol |
+| Silver-trained JobBERT-zh + CRF, seeds 42/43/44 | Same 150-sentence human reference set; 2,156/169 Silver training/development records | Current supervised baseline; [historical label-version comparison](experimental_notes/jobbert_label_versions.md) changes both train/dev labels on matched texts |
 | Historical JSON-offset/SOP/V4/Gold v2 | Their original label files and protocols | Supplementary results, not replacements for current cells |
 
 ## 2. Resolve files and check identities
 
-The current reference is [data/gold150_test.jsonl](../data/gold150_test.jsonl), 150 sentences and 663 spans, SHA-256 `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`. Its copy under `data/gold150/` has the same Git blob identity. Released Qwen supervision is [data/silver_plus_v6a_nocross/](../data/silver_plus_v6a_nocross/), 2,150/169 records.
+The current reference is [data/gold150_test.jsonl](../data/gold150_test.jsonl), 150 sentences and 663 spans, SHA-256 `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`. Its copy under `data/gold150/` has the same Git blob identity. The released Silver training/development sets for Qwen and the encoder comparison are [data/silver_plus_v6a_nocross/](../data/silver_plus_v6a_nocross/), 2,150/169 records.
 
 [contract.json](evaluation/contract.json) records exact reference/input/system/user/parser hashes from the earlier local verification. [materials_inventory.json](evaluation/materials_inventory.json) lists all 58 earlier evidence items, with repository paths only where byte identity was found against the pre-sync Git tree. Empty repository paths mean local evidence was available during revision but is not supplied by this documentation update. No machine-specific absolute path is needed to read this inventory.
 
@@ -53,4 +53,4 @@ The current handbook v4.2.14, historical calibration guide, frozen reference met
 
 ## Chinese supervised encoder baselines — verified 25 September 2026
 
-The [evidence release](evidence_review_20260925/README.md) links six checkpoints and original predictions. The published [CPU rescoring script](evidence_review_20260925/rescore_chinese.py) reproduces exact/relaxed/boundary/macro summaries, checks Gold150 offsets and development selection, and calculates the paired interval. Install NumPy, obtain the pinned audit folder linked there, and run `python rescore_chinese.py AUDIT_FOLDER OUTPUT_FOLDER`. It does not train or perform model inference. Separate model-loading instructions are supplied with the checkpoints.
+The [evidence release](evidence_review_20260925/README.md) links six checkpoints and original predictions. The published [CPU rescoring script](evidence_review_20260925/rescore_chinese.py) reproduces exact/relaxed/boundary/macro summaries, checks human-reference offsets and development selection, and calculates the paired interval. Install NumPy, obtain the pinned audit folder linked there, and run `python rescore_chinese.py AUDIT_FOLDER OUTPUT_FOLDER`. It does not train or perform model inference. Separate model-loading instructions are supplied with the checkpoints.

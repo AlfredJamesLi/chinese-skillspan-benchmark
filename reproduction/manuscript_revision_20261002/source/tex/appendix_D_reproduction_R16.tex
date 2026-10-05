@@ -4,16 +4,20 @@
 \label{sec:extension-provenance}
 \label{sec:display-archive-r14}
 
-Table~\ref{tab:component-access} identifies the released data, models, and scoring materials. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/REPRODUCIBILITY.md}{reproduction guide} links their instructions. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/major_revision_20261004}{supplementary audit package} supplies the calculations below, input hashes, and executable checks. Earlier experiment outputs and prompts remain available in the repository; moving the external-task experiments out of this paper does not remove their records.
+Data Availability provides the release locations and reuse terms; Table~\ref{tab:component-access} distinguishes the reproduction tasks supported by each component. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/major_revision_20261004}{supplementary audit package} supplies the calculations below, input hashes, and executable checks. Earlier experiment outputs and prompts remain in the linked supplementary materials.
+
+\begin{samepage}
+In released files and archived summaries, the human reference set and the additional review sample are identified as \texttt{Gold150} and \texttt{QA150}, respectively. The original Silver pool is named \texttt{Silver-plus} in archived files. The Silver supervision labels used by the reported baselines correspond to the revised-label version mapped in \hyperref[sec:jobbert-label-versions]{Appendix C}. The original Silver pool contains candidate records and is not identical to either model-specific training/development split. These identifiers are retained for locating the materials; the descriptive names used here do not denote new data versions.\par
+\end{samepage}
 
 \subsection{Source Categories and Data Preparation}
 The four original collection labels describe acquisition batches; the three acquisition routes identify MacroData, public-institution collection, and Tianchi. They are different classifications. The original training partition contains 10,312 graduate-recruitment and 7,148 AI sentences; development contains 2,143 AI sentences; test contains 1,423 AI, 473 Tianchi/cloud, and 1,341 public-institution sentences. The later expansion uses Tianchi/cloud, public-institution, and listed-company source groups. The blinded agreement sample's 26/16/8 counts refer to these later source groups and cannot be read as proportions of the four original collections.
 
 MacroData's operator is Chongqing Maherui Information Technology Co., Ltd. Public-institution records retain source names, titles, URLs, listed publication dates, and geographic fields where available. Publication dates are not collection dates; a complete crawl-window and source-exclusion history has not been recovered. The authors confirm academic-research use permission. Repository notices separately identify the rights in author-created annotations and the restrictions on third-party text.
 
-B2's 2,319 training/development records contain 2,079 distinct NFC-normalized complete texts. Removing whitespace and trimming edge punctuation gives 2,075 preparation keys; eleven fail the length or punctuation filter, leaving 2,064. Thus the difference of 255 is not entirely duplicated text. These counts describe preparation, not a new deduplicated training experiment.
+The 2,319 records in the Silver training/development sets used by Qwen and the encoder comparison contain 2,079 distinct NFC-normalized complete texts. Removing whitespace and trimming edge punctuation gives 2,075 preparation keys; eleven fail the length or punctuation filter, leaving 2,064. Thus the difference of 255 is not entirely duplicated text. These counts describe preparation, not a new deduplicated training experiment.
 
-The preparatory target combined those 2,064 valid keys with 7,936 new candidates. Final assembly used different admission rules and retained 2,077 earlier B2 sentences. The new candidates were processed as batches of 3,620, 1,816, and 2,500. Table~\ref{tab:source-stages} reconciles the final totals; exclusions of 213 and 113 in the first two listed batches, offset by 13 additional earlier records, explain the previously obscured difference of 313. The supplementary alternative differs in the retained channel-comparison batch. Counts do not establish a semantic explanation for every excluded annotation.
+The preparatory target combined those 2,064 valid keys with 7,936 new candidates. Final assembly used different admission rules and retained 2,077 sentences from the earlier Silver supervision. The new candidates were processed as batches of 3,620, 1,816, and 2,500. Table~\ref{tab:source-stages} reconciles the final totals; exclusions of 213 and 113 in the first two listed batches, offset by 13 additional earlier records, explain the previously obscured difference of 313. The supplementary alternative differs in the retained channel-comparison batch. Counts alone do not explain each annotation exclusion.
 
 \input{tex/review20260923/source_stages}
 
@@ -24,14 +28,14 @@ Original records are grouped by their stored source-document identifier; new exp
 
 \begin{table}[htbp]
 \centering\small
-\caption{Shared source-document groups in the later experimental splits. Counts refer to different sentences within shared groups, not identical sentences across splits.}
+\caption{Shared source-document groups in the later experimental splits. The Silver train/development rows use the 2,150/169 split for Qwen and the encoder comparison. Counts refer to different sentences within shared groups, not identical sentences across splits.}
 \label{tab:document-overlap}
 \begin{tabularx}{\linewidth}{@{}Lrrr@{}}
 \toprule Comparison & Shared groups & Left sentences & Right sentences \\
 \midrule
-B2 train / development & 1 & 4 & 27 \\
-B2 train / Gold150 & 59 & 531 & 143 \\
-B2 development / Gold150 & 0 & 0 & 0 \\
+Silver train / development & 1 & 4 & 27 \\
+Silver train / human reference & 59 & 531 & 143 \\
+Silver development / human reference & 0 & 0 & 0 \\
 Expanded Codex train / validation & 185 & 1,060 & 208 \\
 Expanded Codex train / test & 188 & 1,076 & 210 \\
 Expanded alternative train / validation & 186 & 1,069 & 210 \\
@@ -40,23 +44,27 @@ Expanded alternative train / test & 189 & 1,079 & 211 \\
 \end{tabularx}
 \end{table}
 
-No exact or NFC-normalized sentence is shared between the later B2 training/development splits or between training and Gold150. NFKC normalization with whitespace removal and case folding finds two B2 training/development matches and one training/validation match in each expanded variant. No normalized training/test sentence matches were found in the expanded variants. These sentence checks do not remove the shared source-document groups in Table~\ref{tab:document-overlap}; all original predictions and scores are retained.
+No exact or NFC-normalized sentence is shared between the later Silver training/development sets used by Qwen and the encoder comparison or between training and the human reference set. NFKC normalization with whitespace removal and case folding finds two Silver training/development matches and one training/validation match in each expanded variant. No normalized training/test sentence matches were found in the expanded variants. These sentence checks do not remove the shared source-document groups in Table~\ref{tab:document-overlap}; all original predictions and scores are retained.
 
-The original 22,840-sentence split already enforced source-document separation, as documented by the earlier split audit and reproduced from the frozen corpus. The later B2 manifest explicitly specifies sentence-level isolation, and its training, development, and Gold150 file hashes match the evaluated Qwen package. The additional group analysis concerns those later assembled splits; it does not invalidate the original split or the successful reference-sentence exclusion checks.
+The original 22,840-sentence split already enforced source-document separation, as documented by the earlier split audit and reproduced from the frozen corpus. The later Silver manifest for Qwen and the encoder comparison explicitly specifies sentence-level isolation, and its file hashes for training, development, and the human reference set match the evaluated Qwen package. The additional group analysis concerns those later assembled splits; it does not invalidate the original split or the successful reference-sentence exclusion checks.
 
-B2 training contains 1,910 distinct complete texts among 2,150 records. Repeated records remain weighted in training. No new deduplicated training run is implied by this audit, and shared source documents alone do not quantify any effect on model scores.
+The Silver training set used by Qwen and the encoder comparison contains 1,910 distinct complete texts among 2,150 records. Repeated records remain weighted in training. No new deduplicated training run is implied by this audit, and shared source documents alone do not quantify any effect on model scores.
 
 \paragraph{Agreement-sample membership.}
-No agreement sentence matches B2 training/development (2,150/169) or Gold150 by ID or normalized complete text. Each expanded variant contains 46 in training, two in validation, and one in its Silver test; one is absent. Human coding remains blinded, but adjudication cannot remove this exposure from already trained models. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/reviewer_supplement_20261004}{membership audit} records the frozen-input hashes and counts.
+No sentence in this sample matches a Silver training or development record (2,150/169) or a human-reference sentence by ID or normalized complete text. Each expanded variant contains 46 in training, two in validation, and one in its Silver test; one is absent. Human coding remains blinded, but adjudication cannot remove this exposure from already trained models. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/reviewer_supplement_20261004}{membership audit} records the frozen-input hashes and counts.
 
 \subsection{Resource Access and Privacy Screening}
 \label{sec:resource-access}
 \input{tex/review20260923/access_matrix}
 
-An automated screen examined text fields in 15 public corpus and annotation files, covering 28,635 distinct complete texts. Email, mobile-number, and landline patterns flagged 38, 74, and 50 texts, respectively; categories overlap. No such candidates were found in Gold150 or QA150, but candidates occur in B2 and in the separate agreement sample. These are pattern matches requiring human review, including possible organizational contact details or false positives. The screen does not certify anonymization, cover all names or personal information, or replace review of redistribution permissions. The public audit reports aggregate counts; the masked record-level review list is retained locally for resolution before a privacy-vetted release.
+\begin{samepage}
+An automated screen examined text fields in 15 public corpus and annotation files, covering 28,635 distinct complete texts. Email, mobile-number, and landline patterns flagged 38, 74, and 50 texts, respectively; categories overlap. No such candidates were found in the human reference set or the additional review sample, but candidates occur in the Silver training/development sets and in the separate blinded agreement sample. These are pattern matches requiring human review, including possible organizational contact details or false positives. The screen does not certify anonymization, cover all names or personal information, or replace review of redistribution permissions. The public audit reports aggregate counts; the masked record-level review list is retained locally for resolution before a privacy-vetted release.\par
+\end{samepage}
 
 \paragraph{Historical model implementation.}
-JobBERT-zh is the project's released Chinese recruitment-domain encoder, with an inherited CRF used in the reported continuation runs. The exact original tokenizer revision, some pretraining/selection settings, and truncation or windowing counts were not recovered. Its 256-token limit is not a character limit; the reference retains all target spans. These gaps constrain reconstruction of historical training, although released predictions can be rescored.
+JobBERT-zh is the project's released Chinese recruitment-domain encoder, with an inherited CRF used in the reported continuation runs. The exact original tokenizer revision, some pretraining/selection settings, and truncation or windowing counts were not recovered. Its 256-token limit is not a character limit; the reference retains all target spans. The original Qwen Hub commit was not recorded; archived file hashes identify the supplied artifacts. These gaps limit training reconstruction; released predictions can still be rescored.
 
-\paragraph{Manuscript preparation.}
-OpenAI Codex assisted with manuscript revision, LaTeX formatting, and code preparation and checking under author direction. Preparation tools were used in September--October 2026; their model versions were not retained. Figures~\ref{fig:macro-micro} and~\ref{fig:coding-detail} are editable vector drawings prepared with Codex-assisted code. The earlier Figure~\ref{fig:macro-micro} layout was developed with OpenAI's image-generation tool (\texttt{image\_gen}).
+\paragraph{Manuscript and annotation assistance.}
+OpenAI Codex assisted with manuscript revision, LaTeX formatting, and code preparation and checking under author direction. Claude assisted with sentence-level wording checks, and Grok 4.6-high in Cursor assisted with code preparation and checking. Grok, Qwen, DeepSeek, and Kimi also supplied machine-generated annotation suggestions during assisted annotation. The tools were used in September--October 2026; the preparation records do not retain every model version. Figures~\ref{fig:macro-micro} and~\ref{fig:coding-detail} are editable vector drawings prepared with Codex-assisted code. OpenAI's image-generation tool (\texttt{image\_gen}) assisted the initial layout design for Figure~\ref{fig:macro-micro}.
+
+\FloatBarrier

@@ -4,10 +4,10 @@ Start with the [reproduction guide](../REPRODUCIBILITY.md) or [paper-to-file ind
 
 | Topic | Materials |
 |---|---|
-| Model comparisons | [Current results](current_results/README.md), [expanded Silver](expanded_silver/README.md) |
+| Model comparisons | [Current results](current_results/README.md), [expanded Silver pools](expanded_silver/README.md) |
 | Coding quality | [Agreement calculations](agreement/README.md) |
 | Prediction diagnostics | [Qwen diagnostics](qwen_diagnostics/README.md), [output outcomes](output_outcomes/README.md) |
-| Additional experiments | [Supplementary tables](supplementary_tables/README.md), [historical results](historical_results/README.md) |
+| Additional experiments | [Supplementary tables](supplementary_tables/README.md), [historical results](historical_results/README.md), [JobBERT label versions](experimental_notes/jobbert_label_versions.md) |
 | Reproduction details | [Evaluation instructions](EVALUATION_ENTRY.md), [experimental notes](experimental_notes/README.md) |
 | Annotation protocol | [Silver prompt package](silver_prompt_api_v1/README.md) |
 

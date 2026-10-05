@@ -1,6 +1,6 @@
 # Human reference set
 
-The human reference contains **150 sentences and 663 competency spans**: a 50-sentence calibration cohort and a 100-sentence challenge cohort. Adjudicated annotations are frozen for evaluation.
+The human reference set contains **150 sentences and 663 competency spans**: a 50-sentence calibration cohort and a 100-sentence challenge cohort. Adjudicated annotations are frozen for diagnostic evaluation. Both cohorts informed handbook development. The separate blinded agreement sample supplies individual agreement-study annotations, not replacement model-evaluation labels; see the [resource relationships](../../docs/terminology.md).
 
 **[Download the reference](../gold150_test.jsonl) · [Versioned archive](https://doi.org/10.5281/zenodo.22698504) · [Score predictions](../../reproduction/EVALUATION_ENTRY.md)**
 

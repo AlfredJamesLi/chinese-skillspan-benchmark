@@ -1,10 +1,18 @@
 # Benchmark annotation profile
 
-The figure profiles the original B2 Qwen training/development manifests, Gold150,
-and the two human-review layers of QA150. It does not describe all 9,540 records
-in the expanded Silver experiment. QA150 is one set of 150 sentences, not two
-independent samples; the two human layers are not pooled or adjudicated here.
-Machine suggestions were visible during QA150 review.
+The figure profiles the Silver training/development sets used by Qwen and the
+encoder comparison: 2,150 training records and 169 development records,
+displayed as "Silver train" and "Silver dev". It also profiles the human
+reference set (150 sentences) and two annotation layers of the additional
+review sample (150 sentences). The figure does not describe all 9,540 records
+in the expanded Silver experiment. The additional review sample is one set
+of 150 sentences, not two independent samples; its two human layers are not
+pooled or adjudicated here. Machine suggestions were visible during this review.
+
+For reproducibility, the input aggregates retain the archived identifiers
+`B2 train`, `B2 dev`, `Gold150`, `QA150 A`, and `QA150 B`, along with the
+original source paths and hashes. These identifiers are mapped only to
+display names; counts, distributions, and annotations are unchanged.
 
 ## Reproduce from the included aggregates
 
@@ -26,14 +34,14 @@ python reproduction/benchmark_profile/benchmark_profile.py --evidence /path/to/G
 ```
 
 All four input file hashes are checked, as are expected record/span totals, valid
-offsets and labels, completed QA confirmations, and agreement of histogram totals
-with annotation counts. Source files are read only. QA overlapping spans are
+offsets and labels, completed review confirmations, and agreement of histogram totals
+with annotation counts. Source files are read only. Additional-review overlapping spans are
 retained as span annotations; no character-label projection is performed here.
 
 ## Measurement and plotting
 
 - Length: unmodified Unicode code points, including spaces/punctuation.
-- ECDF: complete input records, including empty-target records; one curve for QA150.
+- ECDF: complete input records, including empty-target records; one curve for the additional review sample.
   A log horizontal axis displays the entire observed tail without discarding data.
 - Violins: all annotated spans; Gaussian KDE with Scott bandwidth evaluated only
   between observed minimum and maximum; maximum width normalized separately.
@@ -45,7 +53,7 @@ retained as span annotations; no character-label projection is performed here.
   visual aid for discrete lengths, not additional data or a confidence interval.
 - Heatmap: percentages of spans within each layer, annotated with exact counts;
   common 0--70% color scale. Displayed percentages may not sum to 100 after rounding.
-- B2 manifest repeats are retained. Group size is not encoded by violin width.
+- Repeated records in the Silver manifests are retained. Group size is not encoded by violin width.
 - Full PDF/SVG vector figures, 300 dpi PNG, and grayscale preview are produced.
 - The components have different sampling and annotation designs; the figure is
   descriptive, without claims about annotation accuracy, significance, or SOTA.
@@ -61,8 +69,5 @@ https://arxiv.org/pdf/2001.04351
 These inform which dataset properties to display. The present figure is newly
 drawn from Chinese-SkillSpan data; no published image or cross-dataset numerical
 comparison is reproduced. English token lengths are not equated to Chinese
-character lengths. The script and aggregates reproduce manuscript Figure 3. Private raw label exports are not included.
-
-## Verified environment
-
-The aggregate reconstruction was checked with Python 3.13, NumPy 2.1.3, SciPy 1.15.3, Matplotlib 3.10.0, and Pillow 11.1.0. Install the pinned dependencies in `requirements.txt`. Arial is the original figure font; another font may change layout. PDF timestamps can change file hashes without changing the rendered figure.
+character lengths. The script and aggregates are ready for repository inclusion;
+private raw label exports are not included.

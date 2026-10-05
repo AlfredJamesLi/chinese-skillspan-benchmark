@@ -1,9 +1,10 @@
-\subsection{Chinese Encoder and Type Comparisons}
+\subsection{Encoder and Competency-Type Comparisons}
 \label{sec:external-benchmark-results}
 
-The Chinese comparison does not establish a reliable advantage of ESCO initialization. The encoders achieved mean exact F1 of 0.522 (XLM-R-large) and 0.538 (ESCOXLM-R), with all six prediction files independently rescored against the original reference (Table~\ref{tab:external-chinese}, panel A). The mean difference was 0.016; its paired 95\% interval was $[-0.005, 0.035]$. Four-type macro-F1 is 0.607 and 0.622; excluding the two-span L class gives descriptive K/S/T macro values of 0.542 and 0.562, respectively. This check does not replace the four-type metric.
+XLM-R-large and ESCOXLM-R achieved mean typed exact-span micro-F1 scores of 0.522 and 0.538, respectively (Table~\ref{tab:external-chinese}, panel A). Scores were recomputed from all six archived prediction files against the same human reference set. The mean difference was 0.016, with a paired 95\% interval of $[-0.005, 0.035]$ (Table~\ref{tab:core-paired}). The interval includes zero and does not establish an advantage for ESCO initialization under this protocol.
 
-Silver-supervised Qwen adaptation improved both S and K extraction: mean typed exact F1 increased by 0.148 and 0.210, respectively (Table~\ref{tab:external-chinese}, panel B). Each adapter improved K, S, and T relative to the no-adapter run (Figure~\ref{fig:qwen-diagnostics}). Qwen has the highest S mean and ESCOXLM-R the highest K mean among these three adapted models. These cross-model comparisons are descriptive because prediction heads, training budgets, and inference procedures differ.
+Four-type macro-F1 was 0.607 for XLM-R-large and 0.622 for ESCOXLM-R. Averaging over K/S/T gave 0.542 and 0.562, respectively. These sensitivity summaries exclude the sparsely represented L category from the macro average without changing the four-type prediction task.
+
+Qwen adaptation improved all three K/S/T categories (Table~\ref{tab:external-chinese}, panel B; Figure~\ref{fig:qwen-diagnostics}). The largest observed increase among these categories was for T, from 0.380 to 0.638. Mean S and K scores increased by 0.148 and 0.210, respectively. Among the three Silver-trained configurations in Table~\ref{tab:external-chinese}, panel B, Qwen had the highest observed mean scores for S and T, while ESCOXLM-R had the highest K score. These rankings are descriptive because prediction heads, training budgets, and inference procedures differ across architectures.
 
 \input{tex/external_benchmarks/paper_tables_main}
-\FloatBarrier

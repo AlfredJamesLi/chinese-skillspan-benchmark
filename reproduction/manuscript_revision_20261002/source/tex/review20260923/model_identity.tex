@@ -1,22 +1,26 @@
 \begin{table}[!htbp]
 \centering\small
-\caption{Recorded model identifiers, access routes, and roles in annotation and evaluation.}
+\caption{Recorded model identifiers and access routes by study role.}
 \label{tab:model-identity}
 \begin{tabularx}{\linewidth}{@{}P{.19\linewidth}P{.32\linewidth}L@{}}
 \toprule
-Role & Recorded identifier & Access and configuration \\
+Configuration / role & Recorded identifier & Access and key settings \\
 \midrule
-Original Silver annotation & \texttt{gpt-6-astra} & OpenAI Codex interface; recorded model selection for adopted Silver labels. \\
-GPT (API) & Request: \texttt{gpt-5.4}; returned: \texttt{gpt-5.6-terra} & Temperature 0; output cap 2,048. \\
-Claude (API) & \texttt{claude-sonnet-4-5-20250929} & Temperature 0; output cap 2,048. \\
-DeepSeek (API) & \texttt{deepseek-v4-pro} & Official \href{https://api.deepseek.com}{DeepSeek API}; Non-thinking: temperature 0, cap 2,048. Thinking: cap 8,192; temperature not specified. \\
-Kimi (API) & \texttt{kimi-k2.6} & Official \href{https://api.moonshot.cn}{Moonshot API}; Non-thinking; temperature 0.6; cap 2,048. \\
-Qwen baseline / LoRA & Qwen2.5-14B-Instruct & Local weights; deterministic decoding; output cap 2,048. Original Hub commit not recorded; archived file hashes identify the supplied artifacts. \\
-JobBERT-zh & Released initialization and B2 continuation & Local encoder and inherited CRF; initialization-selection history incomplete. \\
-Expansion comparison & Codex / API-returned \texttt{gpt-6-astra} & Alternative API batch: 2,500 candidates, 13 September 2026, ten records per request. Earlier components are retained in both final pools. \\
-Assisted-review suggestions & \texttt{gpt-6-astra}; Grok & Codex and the Grok selection in Cursor supplied suggestions for QA150. The Grok version and complete decoding settings were not retained. \\
+\multicolumn{3}{@{}l}{\textit{Evaluation configurations}} \\
+GPT (API) & Request: \texttt{gpt-5.4}; returned: \texttt{gpt-5.6-terra} & API gateway; temperature 0; cap 2,048 tokens. \\
+Claude (API) & \texttt{claude-sonnet-4-5-20250929} & API gateway; temperature 0; cap 2,048 tokens. \\
+DeepSeek (API) & \texttt{deepseek-v4-pro} & Official \href{https://api.deepseek.com}{DeepSeek API}; non-thinking: temperature 0, cap 2,048; thinking: cap 8,192, temperature unspecified. \\
+Kimi (API) & \texttt{kimi-k2.6} & Official \href{https://api.moonshot.cn}{Moonshot API}; non-thinking; temperature 0.6; cap 2,048. \\
+Qwen (unadapted / LoRA) & Qwen2.5-14B-Instruct & Local weights; deterministic decoding; cap 2,048. \\
+JobBERT-zh + CRF & Released initialization and Silver-trained continuation & Local encoder and inherited CRF. \\
+\midrule
+\multicolumn{3}{@{}l}{\textit{Annotation and assisted review}} \\
+Original silver annotation & \texttt{gpt-6-astra} & Official OpenAI Codex; adopted original silver labels. \\
+Expansion comparison & Codex selection / API-returned \texttt{gpt-6-astra} & Codex / API gateway; 2,500-candidate replacement batch only; earlier components shared. \\
+Additional review & \texttt{gpt-6-astra}; Grok 4.6-high & Codex / Cursor; suggestions visible to reviewers. \\
+Annotation support & Qwen; DeepSeek; Kimi & Machine-generated annotation suggestions. \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-Baseline calls were completed on 10--11 September 2026. Claude returned the dated identifier shown above to a request for \texttt{claude-sonnet-4-5}. Codex and Cursor identify the annotation interfaces. GPT and Claude were accessed through a third-party API gateway and are named as returned by that service; those identities were not independently verified against vendor APIs. Retained prompts and parameters accompany the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/PAPER_NAMES.md#api-access}{configuration files}.
+Caps are output-token limits. Codex and Cursor denote interfaces. GPT and Claude gateway identities were not independently verified against vendor APIs. \hyperref[app:c]{Appendix C} gives available run settings; \hyperref[app:d]{Appendix D} records checkpoint provenance and historical implementation gaps.
 \end{table}
