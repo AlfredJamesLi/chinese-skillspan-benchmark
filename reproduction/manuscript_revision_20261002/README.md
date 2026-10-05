@@ -25,3 +25,5 @@ The model-name audit verifies vendor display names against official documentatio
 The October 5 reviewer revision reconciles human annotation and review coverage (550 distinct sentences), adds a post hoc comparison of final Silver labels with three blinded annotation layers on 49 retained sentences, and moves detailed completion diagnostics and preparation history to the [revision evidence](../reviewer_revision_20261005/README.md). Original model predictions and scores are unchanged.
 
 The subsequent prose revision consolidates AI-use disclosure in the methods, shortens repeated qualifications, and reports the main findings in a 192-word abstract. Calculation chronology and a bibliography/DOI audit are provided in the [prose revision documentation](../style_revision_20261005/README.md). The current manuscript has 41 pages, 21 tables and five figures. No experiment scores, labels, predictions or model settings changed.
+
+A follow-up edit removes three redundant table-note explanations; the annotation rules and statistics remain in their corresponding prose sections. Table values and results are unchanged.

@@ -27,7 +27,7 @@ JobBERT-zh + CRF & 2,156 / 169 & $0.554\pm0.005$ \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-F1 scores (0--1) are mean $\pm$ sample SD over seeds 42, 43, and 44; Qwen without an adapter is a single run. Boundary-only exact F1 ignores types. The historical JobBERT label-version comparison appears in \hyperref[sec:jobbert-label-versions]{Appendix C}. \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{Per-seed Qwen scores} accompany the reproduction materials.
+F1 scores (0--1) are mean $\pm$ sample SD over seeds 42, 43, and 44; Qwen without an adapter is a single run. Boundary-only exact F1 ignores types. \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{Per-seed Qwen scores} accompany the reproduction materials.
 \end{table}
 
 The Silver-trained JobBERT-zh + CRF baseline achieved mean typed exact-span micro-F1 of $0.554\pm0.005$ (Table~\ref{tab:gold150-main}, panel B). Its observed mean exceeds Qwen + LoRA (0.540), while both are below prompted GPT-5.6 Terra (0.667). Their training and inference protocols differ, so these cross-architecture comparisons are descriptive.
