@@ -1,19 +1,19 @@
 \begin{table}[!htbp]
 \centering\small
-\caption{Component access and the reproduction level supported by the identified releases. Local possession is distinguished from public access.}
+\caption{Available components and supported reproduction tasks.}
 \label{tab:component-access}
 \begin{tabularx}{\linewidth}{@{}P{.23\linewidth}P{.30\linewidth}L@{}}
-\toprule Component & Access route / available objects & Scope and limitation \\
+\toprule Component & Access route / available objects & Supported use and access conditions \\
 \midrule
-Dataset archive v0.1.3 & \href{https://doi.org/10.5281/zenodo.22698504}{Texts and labels}: source corpus, human reference (150 sentences), and Qwen/encoder Silver train/dev (2,150/169 records) & Download the named version; inspect labels and use its splits. It does not contain the later expanded pools. \\
-Qwen reproduction archive & \href{https://doi.org/10.5281/zenodo.22851581}{Model archive}: three Qwen LoRA adapters trained on the 2,150/169 Silver sets, selected expanded adapters, frozen predictions, prompts and scorer & Follow its model index for inference or rescoring; obtain base weights separately. Full training inputs are not bundled. \\
-Expanded pools & 9,540 adopted / 9,646 supplementary records; complete files verified locally against split manifests & IDs and selected outputs are archived; public complete texts and labels, or an executable controlled-access arrangement, remain unavailable. Not publicly retrainable as a complete study. \\
-Additional review and historical coding & Pseudonymized texts and human layers linked in Data Availability; source hashes and cohort membership & Recalculate agreement without account metadata. The release preserves design distinctions and does not establish final-rule blind reliability. \\
-Three-annotator blinded study & \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261003}{Agreement release}: 50 sentences, three individual label layers, source IDs, scorer and intervals & Recalculate independent agreement; five + 15 training sentences excluded. This is not a model test set. \\
-Chinese encoder baselines & Six public \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/0c73207c0f9b00fa87f385b78bcb7342bd00bfcb/results_snapshots/table11_evidence_20260924/HF_RELEASE.md}{Hugging Face checkpoints}; \href{https://doi.org/10.5281/zenodo.22937245}{audit DOI 10.5281/zenodo.22937245} & Frozen predictions, code and configurations support rescoring. Local rescoring verified all six runs; server checkpoint re-inference is separately recorded. \\
+Dataset archive v0.1.3 & \href{https://doi.org/10.5281/zenodo.22698504}{Texts and labels}: source corpus, human reference (150 sentences), and Qwen/encoder Silver train/dev (2,150/169 records) & Download the named version to inspect the released labels and use the specified splits. \\
+Qwen reproduction archive & \href{https://doi.org/10.5281/zenodo.22851581}{Model archive}: three Qwen LoRA adapters trained on the 2,150/169 Silver sets, selected expanded adapters, frozen predictions, prompts and scorer & Follow its model index for inference or rescoring; obtain base weights and supervision files from their respective sources. \\
+Expanded pools & 9,540 adopted / 9,646 supplementary records; complete files verified locally against split manifests & Published IDs and selected outputs support inspection and rescoring. Retraining requires the locally held complete inputs; a public or controlled-access route has yet to be established. \\
+Additional review and historical coding & Pseudonymized texts and human layers linked in Data Availability; source hashes and cohort membership & Recalculate agreement for the documented historical annotation and assisted-review procedures. \\
+Three-annotator blinded study & \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261003}{Agreement release}: 50 sentences, three individual label layers, source IDs, scorer and intervals & Recalculate agreement among individual annotations on the 50 formal sentences; the five familiarization and 15 practice sentences are documented separately. \\
+Chinese encoder baselines & Six public \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/0c73207c0f9b00fa87f385b78bcb7342bd00bfcb/results_snapshots/table11_evidence_20260924/HF_RELEASE.md}{Hugging Face checkpoints}; \href{https://doi.org/10.5281/zenodo.22942441}{audit DOI 10.5281/zenodo.22942441} & Frozen predictions, code and configurations support rescoring. Local rescoring verified all six runs; server checkpoint re-inference is separately recorded. \\
 
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-Data Availability states the component-specific reuse terms. Access on request and exact reconstruction from live recruitment pages are not guaranteed.
+Data Availability states the component-specific reuse terms. Reproduction scope follows the released materials and access conditions listed above.
 \end{table}

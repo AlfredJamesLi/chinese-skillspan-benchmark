@@ -1,73 +1,84 @@
 # Benchmark annotation profile
 
-The figure profiles the Silver training/development sets used by Qwen and the
-encoder comparison: 2,150 training records and 169 development records,
-displayed as "Silver train" and "Silver dev". It also profiles the human
-reference set (150 sentences) and two annotation layers of the additional
-review sample (150 sentences). The figure does not describe all 9,540 records
-in the expanded Silver experiment. The additional review sample is one set
-of 150 sentences, not two independent samples; its two human layers are not
-pooled or adjudicated here. Machine suggestions were visible during this review.
+Figure 3 preserves the input- and span-length panels (a,b) for the original
+Silver training/development sets used by Qwen and the encoder comparison
+(2,150/169 records), the human reference set (150 sentences), and the two
+annotation layers of the additional review sample (150 sentences).
 
-For reproducibility, the input aggregates retain the archived identifiers
-`B2 train`, `B2 dev`, `Gold150`, `QA150 A`, and `QA150 B`, along with the
-original source paths and hashes. These identifiers are mapped only to
-display names; counts, distributions, and annotations are unchanged.
+Panel (c) compares the Silver training/development sets, human reference set,
+and the **complete adopted Expanded Silver pool**. The expanded pool contains
+9,540 records and 21,101 spans; 2,492 records (26.1%) have no annotated span.
+Its type counts are L = 155, S = 11,528, K = 5,265, and T = 4,153. The two
+additional-review type distributions are reported in Appendix B, alongside
+expanded-pool split counts. A and B are two layers on the same 150 sentences.
 
-## Reproduce from the included aggregates
+The expanded pool includes earlier supervision, so the displayed groups are
+not additive. The alternative 9,646-record pool and blinded agreement sample
+are outside this figure. Original identifiers and frozen annotation files
+remain unchanged; no training or evaluation is rerun.
 
-Python with NumPy, SciPy, Matplotlib, and Pillow:
+## Reproduce the figure from included aggregates
+
+Requires NumPy, SciPy, Matplotlib and Pillow:
 
 ```sh
 python reproduction/benchmark_profile/benchmark_profile.py --aggregate reproduction/benchmark_profile/benchmark_profile_data.json --output output/benchmark_profile
 ```
 
-The JSON contains exact integer-length frequency counts and type counts, with
-input SHA-256 hashes. It includes no sentence wording, identifiers, offsets,
-annotator names, credentials, or model predictions. Expanding a frequency count
-recovers the complete measured length distribution; no random values are generated.
+The aggregate JSON contains the five unchanged historical groups and a separate
+`expanded_silver` object with complete-pool and split-level counts, histograms,
+source-file hashes, and validation results. No sentence texts, record identifiers,
+span offsets, credentials, or model predictions are included. The standalone
+`expanded_silver_profile.json` and `expanded_silver_class_counts.csv` provide the
+same expanded-pool statistics for reuse.
 
-## Rebuild aggregates from the private frozen files
+## Recompute from frozen annotation files
+
+The original five groups can be rebuilt with the existing private inputs:
 
 ```sh
-python reproduction/benchmark_profile/benchmark_profile.py --evidence /path/to/Gold150_shared_prompt_eval_for_Overleaf_20260910 --qa /path/to/QA150_all_layers.jsonl --output output/benchmark_profile
+python reproduction/benchmark_profile/benchmark_profile.py --evidence /path/to/Gold150_shared_prompt_eval_for_Overleaf_20260910 --qa /path/to/QA150_all_layers.jsonl --expanded-profile reproduction/benchmark_profile/expanded_silver_profile.json --output output/benchmark_profile
 ```
 
-All four input file hashes are checked, as are expected record/span totals, valid
-offsets and labels, completed review confirmations, and agreement of histogram totals
-with annotation counts. Source files are read only. Additional-review overlapping spans are
-retained as span annotations; no character-label projection is performed here.
+To recompute expanded-pool statistics from the private frozen split archive and
+cross-check them against the published Qwen reproduction package:
 
-## Measurement and plotting
+```sh
+python reproduction/benchmark_profile/derive_expanded_profile.py --source-zip /path/to/expanded_silver_splits_20260920_docs_20260921.zip --reference-package /path/to/CNSS_Qwen_Reproduction.zip --output output/expanded_profile
+```
 
-- Length: unmodified Unicode code points, including spaces/punctuation.
-- ECDF: complete input records, including empty-target records; one curve for the additional review sample.
-  A log horizontal axis displays the entire observed tail without discarding data.
-- Violins: all annotated spans; Gaussian KDE with Scott bandwidth evaluated only
-  between observed minimum and maximum; maximum width normalized separately.
-  The main viewport is 0--20 characters (96.4--100% of each layer's spans); the
-  upper overview displays all observed lengths and labels maxima 47/39/20/41/42.
-  Both views use identical full-data KDEs. No long spans are removed and no KDE
-  is fitted to a length-truncated subset. Both axes use linear length scales.
-  White dot = median; thick line = 25th--75th percentiles. Density smoothing is a
-  visual aid for discrete lengths, not additional data or a confidence interval.
-- Heatmap: percentages of spans within each layer, annotated with exact counts;
-  common 0--70% color scale. Displayed percentages may not sum to 100 after rounding.
-- Repeated records in the Silver manifests are retained. Group size is not encoded by violin width.
-- Full PDF/SVG vector figures, 300 dpi PNG, and grayscale preview are produced.
-- The components have different sampling and annotation designs; the figure is
-  descriptive, without claims about annotation accuracy, significance, or SOTA.
+The script verifies the frozen archive hash, original Qwen split-file hashes
+and identifier order, Unicode offsets, BIO tags, occurrence targets, assistant
+JSON, and every count and histogram sum. It reads source archives without
+changing them. JobBERT's 698-record development file is the union of Qwen's
+348 validation and 350 test records and is not counted as another partition.
+
+## Measurement and display
+
+- Input lengths: unmodified Unicode code points, including spaces and punctuation;
+  empty-target records remain in the ECDFs. A log axis retains the observed tail.
+- Span-length violins: all observed spans in each of the original five layers;
+  Gaussian KDE with Scott bandwidth and equal maximum widths. The 0--20 detail
+  view and full-range overview use the same full-data densities. White dots mark
+  medians, thick lines the middle 50%, and the upper labels mark maxima.
+- Heatmap: exact type counts and percentages of spans **within each row**, with
+  a shared 0--70% blue scale. Rounded percentages need not sum to exactly 100%.
+- Empty-label proportions use records as the denominator, not spans. Appendix B
+  reports these proportions and counts separately for train/validation/test.
+- Frozen record multiplicities are retained. Duplicate checks and stronger
+  normalization matches are reported in the expanded aggregate; no deduplicated
+  training experiment is implied. Review-layer overlaps are retained as spans.
+- PDF and SVG are vector outputs. A 300 dpi PNG and a grayscale preview are also
+  produced. These descriptive profiles do not measure annotation accuracy.
 
 ## Design references
 
-SkillSpan Figure 2 uses annotated-span-length violins with medians and quartiles:
+SkillSpan Figure 2 motivates the span-length violins with medians and quartiles:
 https://arxiv.org/pdf/2204.12811
 
-CLUENER2020 reports category composition across data splits:
+CLUENER2020 motivates reporting category composition by data split:
 https://arxiv.org/pdf/2001.04351
 
-These inform which dataset properties to display. The present figure is newly
-drawn from Chinese-SkillSpan data; no published image or cross-dataset numerical
-comparison is reproduced. English token lengths are not equated to Chinese
-character lengths. The script and aggregates are ready for repository inclusion;
-private raw label exports are not included.
+The figure is drawn from Chinese-SkillSpan counts; no published image or
+cross-dataset numerical comparison is reproduced. English token counts are
+not equated with Chinese character lengths.

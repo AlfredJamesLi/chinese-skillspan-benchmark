@@ -1,5 +1,7 @@
 # Chinese-SkillSpan evidence review — 25 September 2026
 
+**Current access (5 October 2026):** the manuscript links the [encoder audit and reproduction record](https://doi.org/10.5281/zenodo.22942441). The historical checks below describe the earlier [22937245 deposit](https://doi.org/10.5281/zenodo.22937245) and September analysis. Current display names and the source-document-group bootstrap are documented in the [current manuscript](../manuscript_revision_20261002/README.md) and [reproduction guide](../../REPRODUCIBILITY.md).
+
 This release accompanies the evidence-focused manuscript revision. It separates executed verification from outstanding annotation-history questions. It is not a new training run or a new blind annotation study.
 
 ## Chinese supervised encoder baselines (stable label `tab:external-chinese`)

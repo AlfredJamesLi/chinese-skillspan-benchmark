@@ -58,6 +58,20 @@ def check(data):
     assert data['groups'][2]['types']==dict(L=2,S=448,K=125,T=88)
     assert data['groups'][3]['input_lengths']==data['groups'][4]['input_lengths']
     assert [g['n_spans'] for g in data['groups']]==[3646,345,663,358,365]
+    if 'expanded_silver' in data:
+        expanded=data['expanded_silver']; pool=expanded['full_pool']; splits=expanded['splits']
+        assert [g['n_records'] for g in splits]==[8842,348,350]
+        assert pool['n_records']==9540
+        for g in [pool]+splits:
+            assert sum(g['input_lengths'].values())==g['n_records']
+            assert sum(g['span_lengths'].values())==g['n_spans']==sum(g['types'].values())
+            assert sum(g['spans_per_record'].values())==g['n_records']
+            assert sum(int(k)*v for k,v in g['spans_per_record'].items())==g['n_spans']
+            assert g['spans_per_record'].get('0',0)==g['empty_records']
+        for field in ['n_records','n_spans','empty_records']:
+            assert pool[field]==sum(g[field] for g in splits)
+        for kind in 'LSKT':
+            assert pool['types'][kind]==sum(g['types'][kind] for g in splits)
 
 def draw(data,out):
     check(data)
@@ -106,19 +120,23 @@ def draw(data,out):
     bv.set_title('Detail: 0–20 Unicode code points',loc='right',fontsize=8.5,pad=5,color='#66737E')
     bv.text(.5,-.24,'White dot: median · Thick line: middle 50%',transform=bv.transAxes,ha='center',va='top',fontsize=8.2,color='#66737E')
     bv.grid(axis='y',color='#E7EAEE',lw=.7); bv.set_axisbelow(True); bv.spines[['top','right']].set_visible(False)
-    vals=np.array([[g['types'][t]/g['n_spans']*100 for t in 'LSKT'] for g in groups])
+    # Keep panels (a,b) on their original five groups. Only composition includes
+    # the complete adopted expanded pool; the two review layers are in Appendix B.
+    composition_groups=groups[:3]+[data['expanded_silver']['full_pool']] if 'expanded_silver' in data else groups
+    n_rows=len(composition_groups)
+    vals=np.array([[g['types'][t]/g['n_spans']*100 for t in 'LSKT'] for g in composition_groups])
     # Vector cell geometry preserves the heatmap without embedding a raster image.
-    hm.pcolormesh(np.arange(-.5,4,1),np.arange(-.5,5,1),vals,
+    hm.pcolormesh(np.arange(-.5,4,1),np.arange(-.5,n_rows,1),vals,
                   cmap='Blues',vmin=0,vmax=70,shading='flat',rasterized=False)
-    hm.set_xlim(-.5,3.5); hm.set_ylim(4.5,-.5)
-    for i,g in enumerate(groups):
+    hm.set_xlim(-.5,3.5); hm.set_ylim(n_rows-.5,-.5)
+    for i,g in enumerate(composition_groups):
         for j,t in enumerate('LSKT'):
             val=vals[i,j]; hm.text(j,i,f"{val:.1f}%   ({g['types'][t]:,})",ha='center',va='center',fontsize=10,
                                   color='white' if val>44 else '#243443')
     hm.set_xticks(range(4),['L · Language','S · Occupational skills','K · Knowledge-related','T · Transversal'],fontsize=8.5)
-    hm.set_yticks(range(5),[f"{DISPLAY_NAMES[g['name']]}\n({g['n_spans']:,} spans)" for g in groups])
+    hm.set_yticks(range(n_rows),[f"{DISPLAY_NAMES.get(g['name'],g['name'])}\n({g['n_spans']:,} spans)" for g in composition_groups])
     hm.set_title('(c) Competency composition',loc='left',fontweight='bold',pad=12)
-    hm.set_xticks(np.arange(-.5,4,1),minor=True); hm.set_yticks(np.arange(-.5,5,1),minor=True)
+    hm.set_xticks(np.arange(-.5,4,1),minor=True); hm.set_yticks(np.arange(-.5,n_rows,1),minor=True)
     hm.grid(which='minor',color='white',lw=2.5);hm.tick_params(which='both',length=0)
     for sp in hm.spines.values(): sp.set_visible(False)
     hm.text(1,-.15,'Cells: % of spans within each row (count)',transform=hm.transAxes,ha='right',va='top',fontsize=8.5,color='#66737E')
@@ -134,6 +152,7 @@ def draw(data,out):
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('--evidence',type=Path);p.add_argument('--qa',type=Path)
+    p.add_argument('--expanded-profile',type=Path,help='Verified aggregates of the complete adopted expanded pool')
     p.add_argument('--aggregate',type=Path);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
     a.output.mkdir(parents=True,exist_ok=True)
     if a.aggregate: data=json.loads(a.aggregate.read_text(encoding='utf-8'))
@@ -149,6 +168,10 @@ def main():
         data=dict(schema=1,unit='unmodified Unicode code points',groups=groups,
                   qa_design='Two reviewed label layers of the same 150 sentences; machine suggestions visible.',
                   scope='B2 Qwen manifest, Gold150, and QA150. Not a distribution of the expanded 9540-record pool.')
+    if a.expanded_profile:
+        data['expanded_silver']=json.loads(a.expanded_profile.read_text(encoding='utf-8'))
+        data['schema']=2
+        data['scope']='Panels (a,b): original Silver train/dev, human reference, and additional review. Panel (c): Silver train/dev, human reference, and the complete adopted Expanded Silver pool.'
     check(data)
     (a.output/'benchmark_profile_data.json').write_text(json.dumps(data,indent=2),encoding='utf-8')
     summary=[]

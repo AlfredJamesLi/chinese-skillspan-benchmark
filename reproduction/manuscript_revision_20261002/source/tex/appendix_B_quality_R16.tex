@@ -25,12 +25,50 @@ The 15-sentence assisted-review subset is nested within the post-generation Silv
 
 
 \paragraph{Historical annotation profile.}
-Median input lengths are 33 Unicode code points in each Silver training/development set used by Qwen and the encoder comparison, 41.5 in the reference, and 33.5 in the additional review sample. Median span length is six code points in supervision and both review layers, compared with four in the reference. Counts include spaces and punctuation; Figure~\ref{fig:length-distributions-r40} shows these historical distributions. Input-length distributions include records with no annotated spans. Span-length densities are estimated from all observed spans in each layer and scaled to equal maximum widths. The detailed view covers 0--20 Unicode code points, containing 96.4--100.0\% of spans in each layer; the overview retains the full range. White dots mark medians and thick lines mark interquartile ranges.
+Median input lengths are 33 Unicode code points in each Silver training/development set used by Qwen and the encoder comparison, 41.5 in the reference, and 33.5 in the additional review sample. Median span length is six code points in supervision and both review layers, compared with four in the reference. Counts include spaces and punctuation; Figure~\ref{fig:length-distributions-r40}(a,b) shows these historical distributions. Input-length distributions include records with no annotated spans. Span-length densities are estimated from all observed spans in each layer and scaled to equal maximum widths. The detailed view covers 0--20 Unicode code points, containing 96.4--100.0\% of spans in each layer; the overview retains the full range. White dots mark medians and thick lines mark interquartile ranges.
+
+Table~\ref{tab:expanded-silver-composition} reports counts for the full adopted expanded pool and its Qwen partitions. These frozen records are counted without deduplication or relabeling.
+
+\begin{table}[htbp]
+\caption{Competency-span counts in the adopted expanded Silver pool and its Qwen splits.}
+\label{tab:expanded-silver-composition}
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Split & Records & No spans & L & S & K & T & Total spans \\
+\midrule
+Training & 8,842 & 2,321 (26.2\%) & 149 & 10,653 & 4,887 & 3,851 & 19,540 \\
+Validation & 348 & 91 (26.1\%) & 2 & 403 & 184 & 152 & 741 \\
+Test & 350 & 80 (22.9\%) & 4 & 472 & 194 & 150 & 820 \\
+\midrule
+Full pool & 9,540 & 2,492 (26.1\%) & 155 & 11,528 & 5,265 & 4,153 & 21,101 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize\RaggedRight No spans gives the number and percentage of records with empty annotations.\par}
+\end{table}
 
 \FloatBarrier
 
 \subsection{Additional Review of Newly Generated Silver Labels}
 The completed export contains both human layers for the 150 preselected sentences, with all confirmations recorded separately for each reviewer. Identifiers exactly match the stratified draw, and normalized sentence texts have no overlap with the original 350. The sample includes 60 cloud, 45 public-sector, and 45 listed-company sentences. The recorded Astra selection in Codex and Grok 4.6-high in Cursor supplied visible suggestions (Table~\ref{tab:model-identity}); scores reflect assisted reviewer--reviewer agreement, not blind coding.
+
+Table~\ref{tab:additional-review-composition} summarizes the competency types in the two review layers.
+
+\begin{table}[htbp]
+\caption{Competency composition in the additional review sample: span counts (within-reviewer percentages).}
+\label{tab:additional-review-composition}
+\centering\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Reviewer & L & S & K & T & Total spans \\
+\midrule
+A & 3 (0.8\%) & 217 (60.6\%) & 77 (21.5\%) & 61 (17.0\%) & 358 \\
+B & 3 (0.8\%) & 218 (59.7\%) & 81 (22.2\%) & 63 (17.3\%) & 365 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \begin{table}[htbp]
 \caption{Paired agreement in the additional review sample. Exact typed span F1 uses original pre-adjudication span sets. Percentile 95\% confidence intervals use 10,000 sentence resamples within source strata (seed 20260917), conditional on the source quotas.}

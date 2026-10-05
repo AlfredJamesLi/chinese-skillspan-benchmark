@@ -27,7 +27,7 @@ Human reference & 150 sentences & 50 calibration and 100 challenge sentences; 66
 Original Silver pool & 2,451 records & 100 initially reviewed; 730 additional disagreement-queue records; 1,621 historical extraction records & Candidate supervision; experiment-specific inclusion \\
 JobBERT Silver train / dev & 2,156 / 169 records & Silver supervision; historical label comparison in Appendix C & Training and checkpoint selection \\
 Qwen / encoder Silver train / dev & 2,150 / 169 records & 3,646 / 345 spans; 869 / 82 records with no spans & Adapter / encoder training and checkpoint selection \\
-Expanded Silver (Codex) & 9,540 records & 8,842 / 348 / 350 train/validation/test records & Training, checkpoint selection, and evaluation against Silver targets \\
+Expanded Silver (Codex) & 9,540 records & 21,101 spans; 2,492 records with no spans (26.1\%) & Training, checkpoint selection, and evaluation against Silver targets \\
 \midrule
 \multicolumn{4}{@{}l}{\textit{B. Human review and annotation agreement}} \\
 \addlinespace[2pt]
@@ -46,10 +46,10 @@ The adopted Codex variant contains 9,540 annotation records, combining earlier s
 
 The additional review sample comprises 150 newly annotated sentences, stratified into 60 cloud, 45 public-sector, and 45 listed-company sentences. Checks against identifiers and normalized texts excluded the original 350 human-annotated or reviewed sentences. This sample supplements the original 100-sentence post-generation review shown in Figure~\ref{fig:coding-detail}. Historical human annotation and review therefore cover 500 unique sentences, while the human reference set remains the 150-sentence model-evaluation reference. The separate 50-sentence blinded agreement study is described below and is not included in this historical coverage count.
 
-The human reference set was selected from a model-disagreement queue, and its annotation profile differs from that of the supervision data. In the Silver training and development sets used by Qwen and the encoder comparison, 40.4\% of training records and 48.5\% of development records have no annotated span, compared with 5.3\% of reference sentences (Table~\ref{tab:annotation-lineage}). S accounts for 59.7--67.6\% of spans across the five profiled annotation layers. The median span length is four Unicode code points in the reference set and six in these Silver sets. These differences preclude treating the reference set as representative of recruitment sentences. They motivate type- and length-specific diagnostics, but do not by themselves explain exact-versus-relaxed score gaps.
+The human reference set was selected from a model-disagreement queue, and its annotation profile differs from that of the supervision data. In the Silver training and development sets used by Qwen and the encoder comparison, 40.4\% of training records and 48.5\% of development records have no annotated span, compared with 26.1\% in the full expanded pool and 5.3\% of reference sentences (Table~\ref{tab:annotation-lineage}). Occupational skills account for 54.6\% of spans in the expanded pool and 67.6\% in the reference set. The median span length is four Unicode code points in the reference set and six in the original Silver training/development sets. These differences preclude treating the reference set as representative of recruitment sentences. They motivate type- and length-specific diagnostics, but do not by themselves explain exact-versus-relaxed score gaps.
 
 \begin{samepage}
-Figure~\ref{fig:length-distributions-r40} profiles the Silver training and development records used by Qwen and the encoder comparison, the human reference set, and the two additional-review layers; \hyperref[app:b]{Appendix B} reports the medians. Repeated Silver records retain their record weights. The full expanded pools and the blinded agreement sample are not included. Lengths count Unicode code points, including punctuation and spaces, and are not directly comparable with English token counts.\par
+Figure~\ref{fig:length-distributions-r40}(a,b) compares input and span lengths in the Silver training/development sets, human reference set, and additional review sample. Panel (c) includes the full adopted expanded pool in the competency-type comparison. \hyperref[app:b]{Appendix B} reports split-level counts and the two reviewers' type distributions. Repeated records retain their record weights. Lengths count Unicode code points, including punctuation and spaces, and are not directly comparable with English token counts.\par
 \end{samepage}
 
 \FloatBarrier
@@ -57,6 +57,6 @@ Figure~\ref{fig:length-distributions-r40} profiles the Silver training and devel
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\linewidth]{figures/benchmark_profile.pdf}
-\caption{Annotation profiles: (a) input lengths; (b) span lengths; and (c) competency-type distributions. Silver train/dev denote the Qwen and encoder splits (2,150/169 records); A and B denote reviewers of the same additional review sample.}
+\caption{Annotation profiles: (a) input lengths; (b) span lengths; (c) competency-type distributions, including the full expanded pool. Silver train/dev denote the Qwen and encoder splits; A and B denote reviewers of the same sample.}
 \label{fig:length-distributions-r40}
 \end{figure}
