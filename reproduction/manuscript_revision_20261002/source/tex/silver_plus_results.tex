@@ -3,7 +3,7 @@
 
 All three Qwen adapters improved typed exact-span micro-F1 over the unadapted baseline under the same inference protocol (Table~\ref{tab:core-paired}; Table~\ref{tab:gold150-main}, panel A). The adapted mean was $0.540\pm0.035$, compared with 0.361 without an adapter. The paired seed-mean difference was 0.179, with a 95\% interval of $[0.111, 0.242]$; the three seed-specific intervals were also above zero. Adaptation also increased the mean scores under relaxed and boundary-only matching.
 
-The comparison measures end-to-end improvement under the output protocol; it does not separate changes in extraction from changes in output validity. Table~\ref{tab:shared-output-quality-r15} reports the response outcomes for each configuration.
+The comparison measures end-to-end improvement under the output protocol, including both accepted output generation and span extraction. Detailed parser outcomes accompany the reproduction records.
 
 \begin{table}[H]
 \caption{Human-reference results for Qwen adaptation and the Silver-trained JobBERT baseline.}
@@ -30,4 +30,4 @@ JobBERT-zh + CRF & 2,156 / 169 & $0.554\pm0.005$ \\
 F1 scores (0--1) are mean $\pm$ sample SD over seeds 42, 43, and 44; Qwen without an adapter is a single run. Boundary-only exact F1 ignores types. A uses a fixed inference protocol. B uses 2,156/169 Silver training/development records and the released encoder with its inherited CRF; the historical label-version comparison is reported in \hyperref[sec:jobbert-label-versions]{Appendix C}. \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{Per-seed Qwen scores} accompany the reproduction materials.
 \end{table}
 
-The Silver-trained JobBERT-zh + CRF baseline achieved mean typed exact-span micro-F1 of $0.554\pm0.005$ (Table~\ref{tab:gold150-main}, panel B). Its training and selection protocol differs from Qwen's, so this cross-architecture comparison is descriptive.
+The Silver-trained JobBERT-zh + CRF baseline achieved mean typed exact-span micro-F1 of $0.554\pm0.005$ (Table~\ref{tab:gold150-main}, panel B). Its observed mean exceeds Qwen + LoRA (0.540), while both are below prompted GPT-5.6 Terra (0.667). Their training and inference protocols differ, so these cross-architecture comparisons are descriptive.

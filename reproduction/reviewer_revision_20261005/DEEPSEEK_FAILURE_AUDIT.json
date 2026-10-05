@@ -1,0 +1,159 @@
+{
+  "audit_date": "2026-10-05",
+  "scope": "Offline frozen-response audit, no new inference",
+  "parser_sha256": "a88e8bd740ac560cacdf777ae95119de34e573dee07a15ba2a52b84ac9e65d05",
+  "scorer_sha256": "b94c08b56c851f0ed8987e41bd529c4537f49bd457b9b8e928f647d59981cf89",
+  "reference_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+  "runs": {
+    "deepseek-v4-pro-think8192": {
+      "formal_records": 150,
+      "raw_files": 152,
+      "excluded_non_reference_ids": [
+        "syn-smoke-1",
+        "syn-smoke-2"
+      ],
+      "config": {
+        "request_model": "deepseek-v4-pro",
+        "base": "https://api.deepseek.com",
+        "chat_path": "/chat/completions",
+        "thinking": {
+          "type": "enabled"
+        },
+        "use_temperature": false,
+        "temperature": null,
+        "max_tokens": 8192
+      },
+      "config_sha256": "5f5d533d104509ad239aff75455b10866cbf24fa2195a6b4c813468215f08d48",
+      "prediction_sha256": "c37436b95c0fe2709431d1b719f7328c2f2cc19472173a9f70516a9af10ce7eb",
+      "all_parser_replays_match_frozen_predictions": true,
+      "all_raw_response_fields_match_stored_summary": true,
+      "http_status_counts": {
+        "200": 150
+      },
+      "finish_reason_counts": {
+        "stop": 132,
+        "length": 18
+      },
+      "outcomes": {
+        "ok_nonempty": 124,
+        "format_failed": 18,
+        "ok_empty": 8
+      },
+      "http_or_response_errors": 0,
+      "candidate_rejection_reasons": {},
+      "typed_exact": {
+        "precision": 0.7127659574468085,
+        "recall": 0.5052790346907994,
+        "f1": 0.5913503971756399,
+        "tp": 335,
+        "fp": 135,
+        "fn": 328,
+        "pred": 470,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.8085106382978723,
+        "recall": 0.5731523378582202,
+        "f1": 0.6707855251544572,
+        "tp": 380,
+        "fp": 90,
+        "fn": 283,
+        "pred": 470,
+        "gold": 663
+      },
+      "format_failures": {
+        "n": 18,
+        "all_http_200": true,
+        "all_finish_length": true,
+        "all_final_content_empty": true,
+        "all_reasoning_nonempty": true,
+        "completion_tokens_counts": {
+          "8191": 2,
+          "8192": 14,
+          "8189": 1,
+          "8193": 1
+        },
+        "all_completion_tokens_are_reasoning": true,
+        "parse_error_counts": {
+          "json:Expecting value: line 1 column 1 (char 0)": 18
+        },
+        "reference_spans": 180,
+        "reference_empty_sentences": 1,
+        "accepted_spans": 0,
+        "rejected_candidates": 0
+      }
+    },
+    "deepseek-v4-pro-nothink": {
+      "formal_records": 150,
+      "raw_files": 152,
+      "excluded_non_reference_ids": [
+        "syn-smoke-1",
+        "syn-smoke-2"
+      ],
+      "config": {
+        "request_model": "deepseek-v4-pro",
+        "base": "https://api.deepseek.com",
+        "chat_path": "/chat/completions",
+        "thinking": {
+          "type": "disabled"
+        },
+        "use_temperature": true,
+        "temperature": 0,
+        "max_tokens": 2048
+      },
+      "config_sha256": "2ebd8602164306b4bdafdf8d6ea9c3c30f5a2dee18cd8bf4fc37e491d991a782",
+      "prediction_sha256": "29a0bfb0ca9c382d5a3973da00a8f491347e818fdc560083c829149366dc51a7",
+      "all_parser_replays_match_frozen_predictions": true,
+      "all_raw_response_fields_match_stored_summary": true,
+      "http_status_counts": {
+        "200": 150
+      },
+      "finish_reason_counts": {
+        "stop": 150
+      },
+      "outcomes": {
+        "ok_nonempty": 142,
+        "ok_empty": 6,
+        "partial_rejected": 2
+      },
+      "http_or_response_errors": 0,
+      "candidate_rejection_reasons": {
+        "overlap_conflict": 2
+      },
+      "typed_exact": {
+        "precision": 0.6513761467889908,
+        "recall": 0.6425339366515838,
+        "f1": 0.6469248291571754,
+        "tp": 426,
+        "fp": 228,
+        "fn": 237,
+        "pred": 654,
+        "gold": 663
+      },
+      "typed_relaxed": {
+        "precision": 0.7660550458715596,
+        "recall": 0.755656108597285,
+        "f1": 0.7608200455580866,
+        "tp": 501,
+        "fp": 153,
+        "fn": 162,
+        "pred": 654,
+        "gold": 663
+      },
+      "format_failures": {
+        "n": 0,
+        "all_http_200": true,
+        "all_finish_length": true,
+        "all_final_content_empty": true,
+        "all_reasoning_nonempty": true,
+        "completion_tokens_counts": {},
+        "all_completion_tokens_are_reasoning": true,
+        "parse_error_counts": {},
+        "reference_spans": 0,
+        "reference_empty_sentences": 0,
+        "accepted_spans": 0,
+        "rejected_candidates": 0
+      }
+    }
+  }
+}

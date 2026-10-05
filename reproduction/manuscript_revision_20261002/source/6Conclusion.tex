@@ -3,7 +3,7 @@
 
 Chinese-SkillSpan makes two annotation decisions explicit: which source characters form a competency mention and which type the mention receives. This allows boundary and type errors to be examined alongside aggregate scores. The different results on silver and human targets show why agreement with generated labels cannot replace human-reference evaluation.
 
-The matched Qwen experiments support a benefit from silver supervision relative to the same unadapted model under fixed inference conditions. The prompted GPT configuration nevertheless retained the highest observed human-reference score, including relative to the expanded-pool Qwen runs.
+The matched Qwen experiments support a benefit from silver supervision relative to the same unadapted model under fixed inference conditions. The adapted Qwen mean remained below the observed score of the Silver-trained JobBERT-zh + CRF baseline. Prompted GPT retained the highest observed human-reference score. These cross-architecture observations concern the recorded training and inference configurations.
 
 \subsection{Limitations}
 \label{sec:limitations}
@@ -18,11 +18,11 @@ The matched Qwen experiments support a benefit from silver supervision relative 
 
 \subsection{Responsible Use}
 
-The annotations describe requirements in job advertisements, not applicants' abilities. The reported extraction results do not validate the resource for assessing or ranking individual applicants. \hyperref[app:d]{Appendix D} documents the scope of automated privacy screening and the candidates requiring human review.
+The annotations describe requirements in job advertisements, not applicants' abilities. The reported extraction results do not validate the resource for assessing or ranking individual applicants. Qualification and industry-background labels in K describe employer requirements; treating them as measures of applicants' competence could reproduce credential-based or sector-based selection biases. Applicant screening would require a separate fairness and validity assessment. \hyperref[app:d]{Appendix D} documents the scope of automated privacy screening and the candidates requiring human review.
 
 \section{Conclusions}
 \label{sec:conclusion}
 
 Chinese-SkillSpan provides a benchmark for identifying and typing competency spans in Chinese job advertisements. It combines source-text annotations, separate human reference labels and silver supervision, and an ESCO-informed handbook for span boundaries and context-dependent type assignment. Character offsets, released predictions, and a shared scorer support inspection of boundary and type errors. A separate blinded study assessed independent annotation agreement under the final handbook, distinct from assisted label review.
 
-After individual self-review, the three annotators achieved a mean pairwise typed exact-span F1 of 0.818. Under fixed inference conditions, Qwen adaptation improved end-to-end extraction relative to the same unadapted model, while the prompted GPT configuration had the highest observed typed exact-span micro-F1 on the human reference set. The encoder comparison did not establish an advantage for ESCO initialization under the evaluated protocol. These results support diagnostic use of the benchmark; independent annotation and evaluation on new source documents are needed to assess generalization.
+After individual self-review, the three annotators achieved a mean pairwise typed exact-span F1 of 0.818. Under fixed inference conditions, Qwen adaptation improved end-to-end extraction relative to the same unadapted model, while the adapted mean remained below the Silver-trained JobBERT-zh + CRF result and prompted GPT had the highest observed typed exact-span micro-F1 on the human reference set. The encoder comparison did not establish an advantage for ESCO initialization under the evaluated protocol. These results support diagnostic use of the benchmark; independent annotation and evaluation on new source documents are needed to assess generalization.

@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "analysis": "Post hoc within-sample agreement between frozen expanded Silver labels and three separate final-handbook human annotation layers.",
+  "scope": "Descriptive cross-version comparison; no adjudicated consensus reference and no population-level Silver-quality estimate. Primary human-reference model scores are unchanged.",
+  "scoring": {
+    "typed_exact": "Pool exact boundary-and-type matches across the same retained sentences for each annotator; F1 = 2TP / (2TP + FP + FN).",
+    "mean": "Arithmetic mean of the three per-annotator micro-F1 scores.",
+    "boundary_exact": "Same calculation after dropping type from each span.",
+    "offsets": "Unmodified Unicode-code-point offsets; no text normalization."
+  },
+  "checks": {
+    "formal_sample_sentences": 50,
+    "all_three_human_texts_identical": true,
+    "all_human_annotations_confirmed": true,
+    "all_scored_spans_valid_and_nonoverlapping": true,
+    "same_49_source_ids_in_both_pools": true,
+    "silver_texts_identical_to_all_human_layers": true,
+    "all_retained_statuses_candidate_complete_or_confirmed_empty": true
+  },
+  "human_snapshot": {
+    "export_date": "2026-10-03",
+    "handbook": "B.sop_v4.2.14",
+    "full_50_span_counts": {
+      "A": 104,
+      "B": 123,
+      "C": 113
+    }
+  },
+  "results": {
+    "codex_9540": {
+      "n_compared_sentences": 49,
+      "n_absent_from_final_pool": 1,
+      "absent_records_scored_as_empty": false,
+      "sample_membership_by_split": {
+        "train": 46,
+        "val": 2,
+        "test": 1
+      },
+      "retained_status_counts": {
+        "candidate_complete": 39,
+        "confirmed_empty": 10
+      },
+      "recorded_prompt_id_counts": {
+        "silver_public_api_v1.0": 49
+      },
+      "by_annotator": {
+        "A": {
+          "TP": 76,
+          "FP": 34,
+          "FN": 24,
+          "n_silver_spans": 110,
+          "n_human_spans": 100,
+          "typed_exact_micro_F1": 0.7238095238095238,
+          "boundary_exact_micro_F1": 0.7428571428571429
+        },
+        "B": {
+          "TP": 78,
+          "FP": 32,
+          "FN": 41,
+          "n_silver_spans": 110,
+          "n_human_spans": 119,
+          "typed_exact_micro_F1": 0.6812227074235808,
+          "boundary_exact_micro_F1": 0.7336244541484717
+        },
+        "C": {
+          "TP": 79,
+          "FP": 31,
+          "FN": 30,
+          "n_silver_spans": 110,
+          "n_human_spans": 109,
+          "typed_exact_micro_F1": 0.7214611872146118,
+          "boundary_exact_micro_F1": 0.7579908675799086
+        }
+      },
+      "mean_typed_exact_micro_F1": 0.7088311394825721,
+      "mean_boundary_exact_micro_F1": 0.7448241548618411
+    },
+    "proxy_9646": {
+      "n_compared_sentences": 49,
+      "n_absent_from_final_pool": 1,
+      "absent_records_scored_as_empty": false,
+      "sample_membership_by_split": {
+        "train": 46,
+        "val": 2,
+        "test": 1
+      },
+      "retained_status_counts": {
+        "candidate_complete": 39,
+        "confirmed_empty": 10
+      },
+      "recorded_prompt_id_counts": {
+        "silver_public_api_v1.0": 49
+      },
+      "by_annotator": {
+        "A": {
+          "TP": 77,
+          "FP": 36,
+          "FN": 23,
+          "n_silver_spans": 113,
+          "n_human_spans": 100,
+          "typed_exact_micro_F1": 0.7230046948356808,
+          "boundary_exact_micro_F1": 0.7417840375586855
+        },
+        "B": {
+          "TP": 83,
+          "FP": 30,
+          "FN": 36,
+          "n_silver_spans": 113,
+          "n_human_spans": 119,
+          "typed_exact_micro_F1": 0.7155172413793104,
+          "boundary_exact_micro_F1": 0.7672413793103449
+        },
+        "C": {
+          "TP": 80,
+          "FP": 33,
+          "FN": 29,
+          "n_silver_spans": 113,
+          "n_human_spans": 109,
+          "typed_exact_micro_F1": 0.7207207207207207,
+          "boundary_exact_micro_F1": 0.7567567567567568
+        }
+      },
+      "mean_typed_exact_micro_F1": 0.7197475523119039,
+      "mean_boundary_exact_micro_F1": 0.755260724541929
+    }
+  },
+  "inputs_sha256": {
+    "review_zip": "53490f44499887a3d1fc9d09f9d84e63013361fbdcb1cfb217a85f6a04b18617",
+    "human_files": {
+      "latest50_A.jsonl": "9aba771a19ca2455f7fac7c6d490a9fca04438e819bea32320d5bf00a9640049",
+      "latest50_B.jsonl": "9d27391f710cd81fb10427201f7a27560b11a9ebf98479d5463434c04084986a",
+      "latest50_C.jsonl": "1265bd54237fcf959abc6803208a7f7304d2a8e91e763b54989e031e6bafca8c",
+      "sample_manifest.json": "31611f2cf76adb94d8273529c043786dbffd31a9a6aebada3e664444f5e55888"
+    },
+    "expanded_members": {
+      "expanded_silver_splits_20260920/codex_9540/data/train.jsonl": "2286848c32c08285f49b9b068aa20bce2592c059dc54c37b7221405873e78ba5",
+      "expanded_silver_splits_20260920/codex_9540/data/val.jsonl": "8874508307688d9c0a764658a82ccb5f0dbf72d8a262e5a5304a8768ef4db1ac",
+      "expanded_silver_splits_20260920/codex_9540/data/test.jsonl": "018cbcfd48d1155e3552527f61597c4bf84f69ca17e60586a10ea908280a0655",
+      "expanded_silver_splits_20260920/proxy_9646/data/train.jsonl": "1770ddc661bd4e3a71ce4ef715809e5a6808b59a9723ab1274152d415680b411",
+      "expanded_silver_splits_20260920/proxy_9646/data/val.jsonl": "dfdbc947ced728642c4af730700050199132f80abe0515e0db795cab64f70aec",
+      "expanded_silver_splits_20260920/proxy_9646/data/test.jsonl": "38066599fa94a21bcf0db387e2479c849c2f8e6d95c950b706cbdae4faa7f9fc"
+    }
+  }
+}

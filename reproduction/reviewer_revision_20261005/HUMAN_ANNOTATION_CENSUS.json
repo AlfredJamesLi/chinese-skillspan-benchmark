@@ -1,0 +1,296 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-05",
+  "title": "Human annotation and review coverage",
+  "repository": "AlfredJamesLi/chinese-skillspan-benchmark",
+  "link_base": "repository root",
+  "scope": "Coverage of distinct source texts with recovered human annotation or review. Annotation-layer records and span instances are reported separately.",
+  "coverage": {
+    "historical_source_ids": 500,
+    "historical_exact_texts": 500,
+    "historical_NFC_texts": 500,
+    "new_exact_texts": 50,
+    "new_vs_historical_source_id_intersection": 0,
+    "new_vs_historical_exact_intersection": 0,
+    "new_vs_historical_NFC_intersection": 0,
+    "combined_exact_texts": 550,
+    "combined_NFC_texts": 550
+  },
+  "coverage_groups": [
+    {
+      "name": "Human reference set",
+      "distinct_texts": 150
+    },
+    {
+      "name": "Initial Silver review",
+      "distinct_texts": 100
+    },
+    {
+      "name": "Post-generation Silver review",
+      "distinct_texts": 100
+    },
+    {
+      "name": "Additional review sample",
+      "distinct_texts": 150
+    },
+    {
+      "name": "Final-handbook blinded agreement sample",
+      "distinct_texts": 50
+    }
+  ],
+  "new_sample_overlap_by_historical_cohort": {
+    "reference": {
+      "source_id": 0,
+      "exact": 0,
+      "NFC": 0,
+      "preparation_key": 0
+    },
+    "A100_archived": {
+      "source_id": 0,
+      "exact": 0,
+      "NFC": 0,
+      "preparation_key": 0
+    },
+    "QA100": {
+      "source_id": 0,
+      "exact": 0,
+      "NFC": 0,
+      "preparation_key": 0
+    },
+    "QA150": {
+      "source_id": 0,
+      "exact": 0,
+      "NFC": 0,
+      "preparation_key": 0
+    }
+  },
+  "reference_subsets": {
+    "calibration": {
+      "sentences": 50,
+      "spans": 248
+    },
+    "challenge": {
+      "sentences": 100,
+      "spans": 415
+    }
+  },
+  "nesting": {
+    "old50_A_in_reference": 50,
+    "old50_B_in_reference": 50,
+    "dual15_in_QA100": 15,
+    "new50_ABC_same_text_set": true
+  },
+  "initial_review_versions": {
+    "same_ids": true,
+    "same_text_by_id": 100,
+    "archived_spans": 419,
+    "later_spans": 433,
+    "do_not_sum_versions": true
+  },
+  "files": [
+    {
+      "key": "reference",
+      "description": "Human reference set",
+      "sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+      "records": 150,
+      "distinct_exact_texts": 150,
+      "distinct_NFC_texts": 150,
+      "layers": {
+        "sentence_layer_records": 150,
+        "span_instances": 663,
+        "empty_records": 8
+      },
+      "repository_relative_path": "data/gold150/gold150_test.jsonl"
+    },
+    {
+      "key": "A100_archived",
+      "description": "Initial Silver review, archived layer",
+      "sha256": "4e4d26be45657a31b0715a226f3b3d73a48117ba22355b6e3a055f1c809113ce",
+      "records": 100,
+      "distinct_exact_texts": 100,
+      "distinct_NFC_texts": 100,
+      "layers": {
+        "sentence_layer_records": 100,
+        "span_instances": 419,
+        "empty_records": 1
+      },
+      "availability": "Original export identified by the public cohort reconciliation record; access follows the component terms.",
+      "repository_evidence": {
+        "path": "reproduction/evidence_review_20260925/COHORT_RECONCILIATION.json",
+        "field": "source_sha256.reviewed100"
+      }
+    },
+    {
+      "key": "A100_later",
+      "description": "Initial Silver review, later collaborative export",
+      "sha256": "da3e19cdfa50a2cde20e0a931d4e7ee2b0c5bb6bdbb936d712d8d0f2da25745b",
+      "records": 100,
+      "distinct_exact_texts": 100,
+      "distinct_NFC_texts": 100,
+      "layers": {
+        "sentence_layer_records": 100,
+        "span_instances": 433,
+        "empty_records": 1
+      },
+      "availability": "Recovered export retained by the authors.",
+      "version_relation": "Later version of the same 100 initial-review texts; the archived 419-span layer remains identified separately."
+    },
+    {
+      "key": "QA100",
+      "description": "Post-generation Silver review",
+      "sha256": "289a198a2763f0a75436ff782ad08ca05d8d7faa5eb882d02c5490a0a37f3915",
+      "records": 100,
+      "distinct_exact_texts": 100,
+      "distinct_NFC_texts": 100,
+      "layers": {
+        "sentence_layer_records": 100,
+        "span_instances": 148,
+        "empty_records": 45
+      },
+      "availability": "Original export identified by the public cohort reconciliation record; access follows the component terms.",
+      "repository_evidence": {
+        "path": "reproduction/evidence_review_20260925/COHORT_RECONCILIATION.json",
+        "field": "source_sha256.QA100"
+      }
+    },
+    {
+      "key": "QA150",
+      "description": "Additional review sample",
+      "sha256": "dcf77104becc0e6752a14da24be71daef77cebe6227e1a66aad5b71e55c69c83",
+      "records": 150,
+      "distinct_exact_texts": 150,
+      "distinct_NFC_texts": 150,
+      "layers": {
+        "annotator_A": {
+          "sentence_layer_records": 150,
+          "span_instances": 358,
+          "empty_records": 38
+        },
+        "annotator_B": {
+          "sentence_layer_records": 150,
+          "span_instances": 365,
+          "empty_records": 36
+        }
+      },
+      "repository_relative_path": "reproduction/evidence_review_20260925/annotation_layers/QA150.jsonl"
+    },
+    {
+      "key": "old50_A",
+      "description": "Historical calibration, annotator A",
+      "sha256": "14d3fed9614f19fa713c99ce6823fa916253e3eb41a560c266638d3d4e9fe155",
+      "records": 50,
+      "distinct_exact_texts": 50,
+      "distinct_NFC_texts": 50,
+      "layers": {
+        "sentence_layer_records": 50,
+        "span_instances": 230,
+        "empty_records": 1
+      },
+      "repository_relative_path": "reproduction/evidence_review_20260925/annotation_layers/blind50_A.jsonl"
+    },
+    {
+      "key": "old50_B",
+      "description": "Historical calibration, annotator B",
+      "sha256": "80599acce06d03b43c1adc58b9e5e143f62394bd9302011474dbe221b7a0c61f",
+      "records": 50,
+      "distinct_exact_texts": 50,
+      "distinct_NFC_texts": 50,
+      "layers": {
+        "sentence_layer_records": 50,
+        "span_instances": 211,
+        "empty_records": 3
+      },
+      "repository_relative_path": "reproduction/evidence_review_20260925/annotation_layers/blind50_B.jsonl"
+    },
+    {
+      "key": "dual15",
+      "description": "Nested assisted double-review sample",
+      "sha256": "b7d29d4d576f1dbf55400cf566f2975ba5aaf54ed61ba9bdb5fb04c6e2fe20d1",
+      "records": 15,
+      "distinct_exact_texts": 15,
+      "distinct_NFC_texts": 15,
+      "layers": {
+        "annotator_A": {
+          "sentence_layer_records": 15,
+          "span_instances": 27,
+          "empty_records": 5
+        },
+        "annotator_B": {
+          "sentence_layer_records": 15,
+          "span_instances": 27,
+          "empty_records": 5
+        }
+      },
+      "repository_relative_path": "reproduction/evidence_review_20260925/annotation_layers/dual15.jsonl"
+    },
+    {
+      "key": "new50_A",
+      "description": "Final-handbook blinded agreement, annotator A",
+      "sha256": "9aba771a19ca2455f7fac7c6d490a9fca04438e819bea32320d5bf00a9640049",
+      "records": 50,
+      "distinct_exact_texts": 50,
+      "distinct_NFC_texts": 50,
+      "layers": {
+        "sentence_layer_records": 50,
+        "span_instances": 104,
+        "empty_records": 12
+      },
+      "repository_relative_path": "reproduction/agreement/finalguide_abc_20261003/data/latest50_A.jsonl"
+    },
+    {
+      "key": "new50_B",
+      "description": "Final-handbook blinded agreement, annotator B",
+      "sha256": "9d27391f710cd81fb10427201f7a27560b11a9ebf98479d5463434c04084986a",
+      "records": 50,
+      "distinct_exact_texts": 50,
+      "distinct_NFC_texts": 50,
+      "layers": {
+        "sentence_layer_records": 50,
+        "span_instances": 123,
+        "empty_records": 11
+      },
+      "repository_relative_path": "reproduction/agreement/finalguide_abc_20261003/data/latest50_B.jsonl"
+    },
+    {
+      "key": "new50_C",
+      "description": "Final-handbook blinded agreement, annotator C",
+      "sha256": "1265bd54237fcf959abc6803208a7f7304d2a8e91e763b54989e031e6bafca8c",
+      "records": 50,
+      "distinct_exact_texts": 50,
+      "distinct_NFC_texts": 50,
+      "layers": {
+        "sentence_layer_records": 50,
+        "span_instances": 113,
+        "empty_records": 11
+      },
+      "repository_relative_path": "reproduction/agreement/finalguide_abc_20261003/data/latest50_C.jsonl"
+    }
+  ],
+  "sample_source_mapping": {
+    "repository_relative_path": "reproduction/agreement/finalguide_abc_20261003/data/sample_manifest.json",
+    "sha256": "31611f2cf76adb94d8273529c043786dbffd31a9a6aebada3e664444f5e55888"
+  },
+  "manifest_crosscheck": {
+    "repository_relative_path": "data/silver_plus_10k_prep_20260913/human350/ids.jsonl",
+    "sha256": "76e27f6ac13732ba17bd4a6f12c352dea482d444a5a76aeb4e1ee1fce4fe395d",
+    "role_counts": {
+      "gold150": 150,
+      "a100": 100,
+      "qa100": 100
+    },
+    "all_350_hashes_match_direct_originals": true,
+    "normalizer_repository_path": "scripts/prep_silver_plus_10k_20260913.py",
+    "normalizer_lines": "76-83",
+    "normalization": "NFC normalization, whitespace removal, and trimming of the specified edge punctuation. Separate exact-text and NFC-only comparisons were also performed directly.",
+    "sha1_purpose": "Text equality matching; SHA-256 identifies inspected file versions."
+  },
+  "counting_rules": [
+    "Each distinct source text contributes once to coverage, regardless of annotator count or number of export versions.",
+    "The historical two-coder calibration sample is nested within the human reference set; the 15-sentence double-review sample is nested within post-generation review.",
+    "The three final-handbook exports cover the same 50 texts. Their 340 span instances belong to three individual layers.",
+    "The initial-review exports with 419 and 433 spans describe two versions of the same 100 texts.",
+    "Machine-generated supervision, including the archived H730 component, remains outside the human-coverage count unless supported by a documented human-review cohort.",
+    "Five familiarization and 15 practice sentences are treated as annotator preparation and excluded from the 550 study/review coverage total."
+  ],
+  "interpretation": "The 550-text total combines human-reference construction, assisted review and a blinded agreement study; their study roles and sampling designs remain distinct."
+}

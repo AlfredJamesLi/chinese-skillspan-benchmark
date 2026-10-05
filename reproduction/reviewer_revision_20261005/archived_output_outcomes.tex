@@ -1,0 +1,25 @@
+% Frozen outcome counts; no predictions or parser outcomes changed.
+\begin{table}[!htbp]
+\centering\small
+\caption{Final response outcomes for the prompted configurations and Qwen adapters. Each row contains 150 sentences.}
+\label{tab:shared-output-quality-r15}
+\begin{tabularx}{\linewidth}{@{}Lrrrrr@{}}
+\toprule
+Configuration & \makecell{Valid\\nonempty} & \makecell{Legal\\empty} & \makecell{Partial\\rejection} & \makecell{All spans\\rejected} & \makecell{Format\\failure} \\
+\midrule
+GPT-5.6 Terra & 141 & 7 & 2 & 0 & 0 \\
+DeepSeek-V4-Pro (non-thinking) & 142 & 6 & 2 & 0 & 0 \\
+Claude Sonnet 4.5 & 145 & 4 & 1 & 0 & 0 \\
+DeepSeek-V4-Pro (thinking) & 124 & 8 & 0 & 0 & 18 \\
+Kimi K2.6 & 142 & 6 & 2 & 0 & 0 \\
+Qwen, no adapter & 69 & 11 & 69 & 1 & 0 \\
+\midrule
+Qwen LoRA, seed 42 & 139 & 8 & 2 & 1 & 0 \\
+Qwen LoRA, seed 43 & 136 & 9 & 4 & 1 & 0 \\
+Qwen LoRA, seed 44 & 138 & 10 & 1 & 1 & 0 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+Categories are mutually exclusive; no response records are missing. Legal empty means a valid empty list, not necessarily a correct negative. Partial rejection retains accepted spans; all-spans rejection and whole-response format failure yield empty predictions. Appendix~C specifies the parser rules.
+
+\end{table}

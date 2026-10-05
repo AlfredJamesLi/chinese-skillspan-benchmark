@@ -11,7 +11,7 @@ The frozen Silver training and development package documents sentence-level excl
 
 An audit of stored source-document identifiers found that the 2,150-record Silver training set shared one group with development and 59 groups with the human reference set. The latter contain 143 of the 150 reference sentences. These are different sentences from shared documents, which may contain multiple job postings. The checks establish reference-sentence exclusion from supervised inputs, not source-document isolation. \hyperref[app:d]{Appendix~D} reports repeated training records, normalization checks, and source-group overlap in the expanded pools.
 
-Supplementary expanded-pool Qwen experiments use 8,842/348/350 training/validation/test records from the adopted Codex pool and 8,943/351/352 from the alternative. Both combine earlier supervision with additional annotations, but differ in annotation channel and retained records. Records retained through channel replacement keep their split assignments. Checkpoints are selected by silver-validation typed exact-span F1; silver-test scores measure agreement with held-out generated labels. The human reference set provides additional evaluation, with its sentences excluded from fitting and checkpoint selection under recorded sentence-level checks. \hyperref[app:c]{\mbox{Appendix~C}} reports variant-specific settings and results; \hyperref[app:d]{\mbox{Appendix~D}} documents split checks.
+Supplementary expanded-pool Qwen experiments use 8,842/348/350 training/validation/test records from the adopted Codex pool and 8,943/351/352 from the alternative. Both combine earlier supervision with additional annotations, but differ in annotation channel and retained records. Records retained through channel replacement keep their split assignments. Checkpoints are selected by silver-validation typed exact-span F1; silver-test scores measure agreement with generated labels in a separate sentence split; source-document groups overlap with training. The human reference set provides additional evaluation, with its sentences excluded from fitting and checkpoint selection under recorded sentence-level checks. \hyperref[app:c]{\mbox{Appendix~C}} reports variant-specific settings and results; \hyperref[app:d]{\mbox{Appendix~D}} documents split checks.
 
 \subsection{Evaluation Metrics}
 
@@ -71,7 +71,7 @@ The adopted silver annotation route used the recorded Codex selection, whereas t
 
 GPT-5.6 Terra achieved the highest observed typed exact-span micro-F1 among the six configurations, scoring 0.667 compared with 0.647 for DeepSeek with thinking disabled (Table~\ref{tab:gold150-shared-r7}). Their paired difference was 0.020, with a 95\% source-group bootstrap interval of $[-0.027, 0.061]$ (Table~\ref{tab:core-paired}). The interval includes zero, so the observed lead is not clearly resolved by this comparison.
 
-The two DeepSeek configurations differed in precision and recall. The thinking configuration had higher precision than the non-thinking configuration (0.713 versus 0.651), but lower recall (0.505 versus 0.643), resulting in lower typed exact-span F1. These results describe the recorded configurations, which use different inference budgets. Qwen without an adapter had the lowest recall at 0.281.
+The scores describe end-to-end performance under the recorded prompts, budgets, and output protocol. They therefore compare the evaluated configurations rather than isolate the effect of model family or reasoning mode. Qwen without an adapter had the lowest recall at 0.281.
 
 \input{tex/stage2_shared_main}
 \input{tex/review20260923/core_uncertainty}
@@ -79,9 +79,7 @@ The two DeepSeek configurations differed in precision and recall. The thinking c
 
 \subsection{Supplementary Analyses}
 
-Table~\ref{tab:shared-output-quality-r15} separates response validity from extraction accuracy. Partially rejected responses decreased from 69 for unadapted Qwen to 2, 4, and 1 for the three adapters, while DeepSeek with thinking enabled had 18 whole-response format failures. These counts do not separate formatting effects from other contributions to F1. Accepted spans from partial responses remain in scoring; responses with no accepted spans yield empty predictions.
-
-\input{tex/review20260923/output_outcomes}
+Output validity contributes to the end-to-end scores. The Qwen adapters produced fewer responses containing rejected span candidates than the unadapted model, alongside higher exact-match recall. \hyperref[app:c]{Appendix C} describes the scoring treatment; detailed response and completion diagnostics are retained in the reproduction records.
 
 Each Qwen adapter increased exact-match recall in all three reference-span length bins: $\leq4$, 5--8, and $\geq9$ Unicode code points (Figure~\ref{fig:qwen-diagnostics}). These bins contain 346, 243, and 74 reference spans, respectively.
 
@@ -105,4 +103,4 @@ Two frozen no-adapter Qwen outputs illustrate these distinctions. For \texttt{18
 
 The exploratory expanded-pool Qwen runs illustrate the distinction between evaluation targets. With seed 42, the adopted Codex variant scored 0.809 on its own silver test set and 0.585 on the shared human reference, whereas the alternative scored 0.759 and 0.597, respectively (Table~\ref{tab:expanded-silver-main}). The higher silver-test score therefore did not coincide with a higher human-reference score in these runs. The pool-specific silver tests differ in both texts and labels, so their scores cannot establish silver-label accuracy or annotation-channel quality. Both pools combine earlier supervision with additional annotations; Table~\ref{tab:source-stages} records the assembly batches and retained counts.
 
-Expanded JobBERT runs scored 0.242 and 0.232 on the human reference for the alternative and Codex pools, respectively (seed 42), below the Silver-trained JobBERT-zh + CRF baseline. Relative to the historical experiments, source composition, annotation targets, retained records, and checkpoint-selection data changed together. The expanded JobBERT development arrangement also differs from Qwen's separate silver validation and test sets. These comparisons do not isolate an effect of training-set size, and the available diagnostics do not explain the lower JobBERT scores. Appendix~C preserves the full expanded-pool results and settings.
+Exploratory expanded JobBERT results, including their lower human-reference scores, are reported in Appendix~C. Changes in supervision, source composition, and model selection prevent interpreting them as a controlled training-size comparison.

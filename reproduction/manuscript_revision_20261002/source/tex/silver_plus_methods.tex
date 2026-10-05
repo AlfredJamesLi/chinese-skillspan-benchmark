@@ -23,8 +23,8 @@ Subset & Size & Composition & Use \\
 \multicolumn{4}{@{}l}{\textit{A. Corpus, human reference, and supervision}} \\
 \addlinespace[2pt]
 Original corpus & 22,840 sentences & Four collection batches; original train/development/test partition & Source corpus \\
-Human reference & 150 sentences & 50 calibration and 100 challenge sentences; 663 spans; 8 sentences with no spans & Primary diagnostic model evaluation \\
-Original Silver pool & 2,451 records & 100 initially reviewed; 730 additional disagreement-queue records; 1,621 historical extraction records & Candidate supervision; experiment-specific inclusion \\
+Human reference & 150 sentences & 50 calibration and 100 challenge sentences; 663 spans; handbook v4.2.10 labels & Primary diagnostic model evaluation \\
+Original Silver pool & 2,451 records & 100 initially reviewed; 730 additional disagreement-queue records; 1,621 historical extraction records; bulk prompt v4.2.12 & Candidate supervision; experiment-specific inclusion \\
 JobBERT Silver train / dev & 2,156 / 169 records & Silver supervision; historical label comparison in Appendix C & Training and checkpoint selection \\
 Qwen / encoder Silver train / dev & 2,150 / 169 records & 3,646 / 345 spans; 869 / 82 records with no spans & Adapter / encoder training and checkpoint selection \\
 Expanded Silver (Codex) & 9,540 records & 21,101 spans; 2,492 records with no spans (26.1\%) & Training, checkpoint selection, and evaluation against Silver targets \\
@@ -34,7 +34,7 @@ Expanded Silver (Codex) & 9,540 records & 21,101 spans; 2,492 records with no sp
 Initial Silver review & 100 sentences & Versioned review layers (\hyperref[app:b]{Appendix B}) & Review of generated annotations, separate from model evaluation \\
 Original Silver post-generation review & 100 sentences & 144 machine-proposed spans and 148 reviewed spans & Sampled machine--human quality check \\
 Additional review & 150 sentences & Two complete reviewer submissions; 101 identical sentence-level span sets & Assisted review of newly generated annotations \\
-Blinded agreement & 50 sentences & Three independent annotators; 5 familiarization and 15 practice sentences excluded & Agreement under the final handbook; individual annotation layers \\
+Blinded agreement & 50 sentences & Three annotators using handbook v4.2.14; 5 familiarization and 15 practice sentences excluded & Agreement under the final handbook; individual annotation layers \\
 \bottomrule
 \end{tabularx}
 \par\smallskip
@@ -44,7 +44,7 @@ Blinded agreement & 50 sentences & Three independent annotators; 5 familiarizati
 \paragraph{Expanded supervision and annotation profile.}
 The adopted Codex variant contains 9,540 annotation records, combining earlier supervision with additional cloud, public-sector, and listed-company data. Candidate selection prioritized requirement-related keywords. A supplementary 9,646-record pool differs in both annotation channel and retained records. \hyperref[app:d]{Appendix D} documents sampling and exclusions, and \hyperref[app:c]{Appendix C} reports the experiments using these two variants.
 
-The additional review sample comprises 150 newly annotated sentences, stratified into 60 cloud, 45 public-sector, and 45 listed-company sentences. Checks against identifiers and normalized texts excluded the original 350 human-annotated or reviewed sentences. This sample supplements the original 100-sentence post-generation review shown in Figure~\ref{fig:coding-detail}. Historical human annotation and review therefore cover 500 unique sentences, while the human reference set remains the 150-sentence model-evaluation reference. The separate 50-sentence blinded agreement study is described below and is not included in this historical coverage count.
+The additional review sample comprises 150 newly annotated sentences, stratified into 60 cloud, 45 public-sector, and 45 listed-company sentences. Checks against identifiers and normalized texts excluded the original 350 human-annotated or reviewed sentences. This sample supplements the original 100-sentence post-generation review shown in Figure~\ref{fig:coding-detail}. Historical human annotation and review cover 500 unique sentences. The separate 50-sentence blinded agreement sample has no text overlap with these cohorts, bringing verified human annotation or review coverage to 550 distinct sentences. This total counts each sentence once across annotation layers; the frozen model-evaluation reference remains the 150-sentence human reference set. The reproduction materials provide the cohort reconciliation.
 
 The human reference set was selected from a model-disagreement queue, and its annotation profile differs from that of the supervision data. In the Silver training and development sets used by Qwen and the encoder comparison, 40.4\% of training records and 48.5\% of development records have no annotated span, compared with 26.1\% in the full expanded pool and 5.3\% of reference sentences (Table~\ref{tab:annotation-lineage}). Occupational skills account for 54.6\% of spans in the expanded pool and 67.6\% in the reference set. The median span length is four Unicode code points in the reference set and six in the original Silver training/development sets. These differences preclude treating the reference set as representative of recruitment sentences. They motivate type- and length-specific diagnostics, but do not by themselves explain exact-versus-relaxed score gaps.
 
