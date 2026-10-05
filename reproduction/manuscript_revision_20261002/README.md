@@ -29,3 +29,5 @@ The subsequent prose revision consolidates AI-use disclosure in the methods, sho
 A follow-up edit removes three redundant table-note explanations; the annotation rules and statistics remain in their corresponding prose sections. Table values and results are unchanged.
 
 The abstract follows the author-approved narrative style: it reports qualitative findings without detailed scores, sample sizes, training seeds or model rankings. Numerical evidence remains in the article. This restores the style of the earlier abstract B while retaining the scope of diagnostic evaluation.
+
+Table 1 now permits natural placement within Related Work instead of being restricted to the page bottom. This layout adjustment preserves all manuscript wording and results.
