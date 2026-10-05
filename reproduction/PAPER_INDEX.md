@@ -1,18 +1,19 @@
-# Paper-to-file index — evidence revision, 25 September 2026
+# Chinese-SkillSpan paper-to-file index
 
 The [4 October revision and checks](major_revision_20261004/README.md) update the current manuscript, data accounting, source-document analysis and uncertainty estimates. Earlier experiments remain archived.
 
-## Current manuscript alignment — 2026-10-04
+## Current manuscript — 5 October 2026
 
-The [revised 39-page manuscript and position index](manuscript_revision_20261002/README.md) supersede earlier page/table numbers. It includes the blinded three-annotator study, updated Figure 2, and traceable corpus examples covering L/K/S/T (Figure 4). Stable source labels identify results across versions. Model-evaluation data remain unchanged; the agreement table now uses the latest individual coder exports.
+The [current 42-page manuscript, source, and revision notes](manuscript_revision_20261002/README.md) provide the current figure and table numbering. Figure 3 includes the full Expanded Silver profile, with supporting counts in the [figure reproduction guide](benchmark_profile/README.md). The [model guide](../docs/models.md) groups the current model releases by their roles and separates the historical pretraining contrast. Stable LaTeX labels identify results across revisions.
 
-## Earlier evidence index
+<details>
+<summary>Historical evidence index: 25 September 2026</summary>
 
 The entries below retain their historical release and numbering context. Use the current position index above for the present PDF.
 
-Current main file: `0main.tex`. Table numbers below refer to the compiled evidence revision; stable labels identify the topic across versions. The model repositories named `table11` refer to the older number of the current Chinese encoder Table 9.
+The main source file was `0main.tex`. Page and table numbers below belong to the 25 September evidence revision; stable labels identify the topic across versions. Model repository identifiers containing `table11` preserve the original release numbering for the Chinese encoder comparison.
 
-| Current item | Page | Topic / evidence | Stable label |
+| Item in that revision | Page in that revision | Topic / evidence | Stable label |
 |---|---:|---|---|
 | Table 1 | 4 | [Related resources](../DATA_AVAILABILITY.md) | `tab:related-span` |
 | Table 2 | 7 | [Data layers](../DATA_AVAILABILITY.md) | `tab:annotation-lineage` |
@@ -35,6 +36,8 @@ Current main file: `0main.tex`. Table numbers below refer to the compiled eviden
 Tables 10–12 describe the label definitions and boundary/scope rules in Appendix A; they are teaching rules, not a retrospective rewrite of historical labels. Table 4 records original JobBERT/Qwen settings; Table 14 identifies inference configurations. Figures 1–5 retain their workflow, annotation, profile, examples, and Qwen-diagnostic roles.
 
 The [evidence index](evidence_review_20260925/README.md) records executed checks and remaining annotation provenance. The [process archive](process_archive_20260924/README.md) retains moved tables without suppressing negative results.
+
+</details>
 
 <details>
 <summary>Historical September 18 numbering (superseded)</summary>

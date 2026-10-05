@@ -59,6 +59,7 @@ Training summaries are means and sample standard deviations across seeds 42, 43,
 | Repository archive series | [Zenodo concept DOI](https://doi.org/10.5281/zenodo.22288337) |
 | JobBERT-zh initialization | [Hugging Face model](https://huggingface.co/AlfredJames/jobbert-zh) |
 | Silver-trained JobBERT-zh + CRF | [Hugging Face model](https://huggingface.co/AlfredJames/jobbert-zh-v6a) |
+| Chinese-supervised XLM-R-large and ESCOXLM-R | [Model guide: three seeds per encoder](docs/models.md) · [Current audit archive](https://doi.org/10.5281/zenodo.22942441) |
 
 Use the version-specific dataset DOI above for v0.1.3. The repository concept DOI currently resolves to the `qwen-repro-pack-20260919` snapshot, not the v0.1.3 dataset record. The archive covers the earlier released benchmark components. Later expansion materials on GitHub are partial; complete expanded training partitions are not supplied. Qwen adapters and frozen predictions are available in the separate model-reproduction archive. [Availability and licensing](DATA_AVAILABILITY.md) describes what readers can obtain and reuse.
 
