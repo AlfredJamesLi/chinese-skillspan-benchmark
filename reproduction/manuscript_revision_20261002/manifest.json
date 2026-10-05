@@ -1,7 +1,7 @@
 {
   "revision_date": "2026-10-05",
-  "description": "Reviewed manuscript with concise table notes, consolidated AI disclosure and audited citations",
-  "overleaf_commit": "122eeca609a4c1a9170c18079c8965fc8cdd7166",
+  "description": "Reviewed manuscript with restored narrative abstract, concise table notes and consolidated AI disclosure",
+  "overleaf_commit": "f0529e1b1c5878b87e933215409482c07fd68beb",
   "pdf_pages": 41,
   "checks": {
     "xelatex_exit_code": 0,
@@ -10,7 +10,7 @@
     "figure3_complete_expanded_pool_added": true,
     "data_labels_predictions_checkpoints_unchanged": true,
     "private_expanded_records_included": false,
-    "pdf_source_revision": "122eeca609a4c1a9170c18079c8965fc8cdd7166",
+    "pdf_source_revision": "f0529e1b1c5878b87e933215409482c07fd68beb",
     "source_archive_compiles": true,
     "visual_inspection_complete": true,
     "model_names_official_sources_checked": "2026-10-05",
@@ -19,9 +19,10 @@
     "verified_human_sentence_coverage": 550,
     "original_model_scores_unchanged": true,
     "new_analysis": "None in this prose revision; preceding 49-sentence blinded Silver comparison retained",
-    "abstract_words": 192,
+    "abstract_words": 202,
     "bibliography_entries_audited": 68,
-    "active_citations_audited": 45
+    "active_citations_audited": 45,
+    "abstract_style": "Narrative, qualitative results; detailed numerical evidence in the body"
   },
   "source_files": [
     "0main.tex",
@@ -74,9 +75,9 @@
     "wlpeerj.cls"
   ],
   "sha256": {
-    "Chinese_SkillSpan_revised_20261002.pdf": "2e1de0ef3191d1cf2d2c1ddd59c87ba3e18bbca108714fc1d59faf2b60dcfc68",
-    "README.md": "52bbabc382a75b0a54104ed93cd538b107b03930a65f3c28a46daf5f0ad987c6",
-    "source/0main.tex": "ca2c3304cf982ff576254e919e3a300ada70ad24dc926c0262a4cc22316dbf64",
+    "Chinese_SkillSpan_revised_20261002.pdf": "48dd8635bc615619a7482d65c432175fb055906c923b14fbd9361b46c4beed8b",
+    "README.md": "07f751462b64a0aae83252e121926f82058c1678bb1f6041bcaf6c669dff0b2a",
+    "source/0main.tex": "d834cd6e9a8ee5b13f9ae7e7cef3af00bb7dbd86f7672569cb148738b40a50f2",
     "source/1Introduction.tex": "692534b59d6ce50d5248c928ff1903793c5ce17fcff76e79d83687c5047a25f8",
     "source/2Framework.tex": "1962b79705500687ff6d3201446b87d4a6ca63c06b4043d0cf73298b6a642fb0",
     "source/3Experiments.tex": "4058b94c1bf45cc36e1e92e5eead3ed58423006bbb4de9596f2ee330cef25dd7",
