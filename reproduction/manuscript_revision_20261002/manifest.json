@@ -1,17 +1,18 @@
 {
   "revision_date": "2026-10-05",
-  "description": "Current Overleaf source mirror with complete Expanded Silver profile, current encoder audit DOI, and descriptive resource names",
-  "overleaf_commit": "4849f970bc4f93d3eda3e49ff5f0df57de10555a",
+  "description": "Current manuscript after submission review: verified results, annotator background, confidential expanded-data access and reproducibility details",
+  "overleaf_commit": "b1874fcce6bd81b25ba4dd6f31fc1f922b4e259e",
   "pdf_pages": 42,
   "checks": {
     "xelatex_exit_code": 0,
-    "compile_verification": "Three successful XeLaTeX passes recorded for rendered source revision f7ee910; later comment-only keyword correction does not affect the PDF",
+    "compile_verification": "XeLaTeX, BibTeX and two XeLaTeX passes succeeded; isolated uploaded source compilation produced identical PDF text",
     "figure3_length_panels_unchanged": true,
     "figure3_complete_expanded_pool_added": true,
     "data_labels_predictions_checkpoints_unchanged": true,
     "private_expanded_records_included": false,
-    "pdf_source_revision": "f7ee910746d47b1df6dbf6cfbe49fea2e1a60a9a",
-    "later_source_change": "4849f970bc4f93d3eda3e49ff5f0df57de10555a changes only the submission-keyword comment"
+    "pdf_source_revision": "b1874fcce6bd81b25ba4dd6f31fc1f922b4e259e",
+    "source_archive_compiles": true,
+    "visual_inspection_complete": true
   },
   "source_files": [
     "0main.tex",
@@ -64,11 +65,11 @@
     "wlpeerj.cls"
   ],
   "sha256": {
-    "Chinese_SkillSpan_revised_20261002.pdf": "ea007d7d24848a57e574be39aacae999c701d324dd89f50d652fc5dd7e9daac6",
-    "README.md": "bbd3815789a62916b8ca244969025131de38ee32487ec90c97df23db96c9f863",
-    "source/0main.tex": "20cc2b6a3d47742514397230fb1c441ea81bc8bd00bef672dd1273cf5b83d255",
+    "Chinese_SkillSpan_revised_20261002.pdf": "0d939e0725a42b13cbdc105c42d6c42e810faf8c11442b6640c81f7e41d60e56",
+    "README.md": "40dea3ee103b5c29bda93d031a44f9fb1a4b06e84a773226c9929a7e887db4fe",
+    "source/0main.tex": "b440e9d22394a8f272d357a8580f441b4db18314f12a9c40d8f21d4b442660d1",
     "source/1Introduction.tex": "a530f82bb5e1b11236e2a12bcc91c25800c1919b71e732364fca28dc38c01f96",
-    "source/2Framework.tex": "bbd1c292d8c62ecce787ce93ff58a4a5a8f560dba7c20d7212896274ef85d83c",
+    "source/2Framework.tex": "b741eabd0dff0c7af5b811422ac639c73d4ba23f44d4a2d78068436d0ac5bcd2",
     "source/3Experiments.tex": "bc707f89adca91189e88188fbe54f0b304c7cbc18fc2f4a9b3e883487531a05c",
     "source/5Relatedwork.tex": "cea578949336323b963e771e2baa20c192a1b02b46ff727d9b56941a61d48469",
     "source/6Conclusion.tex": "0e63126b01d46fa1878ff1aff2e1d2cf4e034aad5f0962b11385aec44a6840e1",
@@ -86,12 +87,12 @@
     "source/figures/qwen_diagnostics_chart_0913.svg": "266a26b87d75752dcd48893f47ee4e7189ac37dd37f4c40b863f6f8d071768e1",
     "source/tex/annotation_quality_R12.tex": "9cc3bd6e4b27fa4eaa54a4b200daa4ea73ad6f3c79f75c023cc09ec260982383",
     "source/tex/appendix_A_guide_R19.tex": "4871b4c02fda0fb6438185d93b4fd2d2d9d6d7c6795972202e1c7b3a42b633d7",
-    "source/tex/appendix_B_quality_R16.tex": "040cd94d5e73746e8b8c3b15c09246ba35500414f3360ae692ed7c1fd8472101",
+    "source/tex/appendix_B_quality_R16.tex": "d1b3c9257e57315a7ab24e0a4fe58cb3a24722f656021aa6a8ffa1f391707ed3",
     "source/tex/appendix_C_experiments_R16.tex": "a774c2b28812f97c9976e1296e15d288e446582339279abcfe9efffde0930f84",
-    "source/tex/appendix_C_shared_R16.tex": "02cd6eca731a01cb7b5fdf0858066777728961c49695a3e231edcbb8e8a493a5",
+    "source/tex/appendix_C_shared_R16.tex": "02a8d287b6e25145d3aa912539658fddbe411dd89a29a2f33ae81b52792df0d8",
     "source/tex/appendix_D_reproduction_R16.tex": "51365b90a26af7224b098969905269e9c7a9513ea9831a2cf9f5d6d5421819d5",
     "source/tex/appendix_R16.tex": "4a3762916d5ecf70aee85b4cd9fc4ff5a04e728435861203fe71c7ab47fb8a88",
-    "source/tex/coding_detail_no_counts.tex": "e320d8b013ddd1faa23479c1dded68e7945c2749d8a848ddd76834b5b1513b43",
+    "source/tex/coding_detail_no_counts.tex": "94443b1f6dfd21962f6dd341739034d71b3cf965e06cf19539ecd9ebd41ee33a",
     "source/tex/expanded_silver_results_20260917.tex": "23b94461b83061f00fc0063a548e4f47a5cfaf7b3f1e7d1754ea5fb494e1613b",
     "source/tex/external_benchmarks/paper_methods.tex": "23973bf4c45ea2caeddbe76bcc13d5d42a037ab0ecfea0df3388c514f056a132",
     "source/tex/external_benchmarks/paper_results.tex": "e9087ab4a71e262499795e53845620a2ab108a25f3e78c9e792664726d78e973",
@@ -101,7 +102,7 @@
     "source/tex/qwen_diagnostics_figure.tex": "11cc8350fc15cff503e4adf5ed754bab5e782529e660220d5c2a22c59ac9340b",
     "source/tex/qwen_diagnostics_round2.tex": "89f9a7dc0638306c0d221ac68896bd375ffe9ca43f99d227e378b111edc88489",
     "source/tex/representative_annotations_main.tex": "8e247e57b2a0e76b828d8fa8661559f6c353cdcd143ebefee7c413d0cb245e62",
-    "source/tex/review20260923/access_matrix.tex": "d61dc479f1c2ef988ad1c8c4a2a7262d79c3331ef34e97aa24e36aee9317381a",
+    "source/tex/review20260923/access_matrix.tex": "b875b5dc8c144bdd82cbdb87015de477554a22cc9f9a0e448cfd2cb5698b2582",
     "source/tex/review20260923/core_uncertainty.tex": "69904d64b248425dcc5bbf7d3596f28ef04ba900e90473e527a0fcb726cd2616",
     "source/tex/review20260923/model_identity.tex": "19125dde66e183b6d19deb72318f9816c265bbb1f291e732624cb25f771d3248",
     "source/tex/review20260923/output_outcomes.tex": "a1d942cf84379ccc314a9ae20d55f30e79b7aee37114ebbf6ba89e44925cd302",
@@ -112,7 +113,7 @@
     "source/tex/skillspan_style_related.tex": "7d1460418fff46d7e884279ba7e44ebee8fc5986084209f11a2cf82d92d6ea59",
     "source/tex/stage2_result_values.tex": "4136efd2b5711e1b6f77dc52c78f3afbc63a3ce08f2c4c2a993f2480c1f3e4d1",
     "source/tex/stage2_shared_main.tex": "a17d1e6d67494632ded11cff3b0d177d03784ab178ef852c13b5ae5785342191",
-    "source/tex/student_protocol_R12.tex": "7ee221cf1dcf8043b9e7b1576b54ac9ca90e847d4761df013401c1f68e3befa1",
+    "source/tex/student_protocol_R12.tex": "7f074bc34a4c0d51aba96b8e792e68f2759d5c0ab077ce6fef2465d446c97fec",
     "source/wlpeerj.cls": "1638386b47e360d1a340ea64b87e23b1f5e5dcdc87a7c1309e27fe759383a299"
   },
   "hash_scope": "SHA-256 of committed Git blob bytes, including the stored line endings"

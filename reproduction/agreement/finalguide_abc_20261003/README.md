@@ -1,6 +1,6 @@
 # Blinded agreement sample: latest individual annotations
 
-This release supplies the current Table 3 results for Chinese-SkillSpan. The blinded agreement sample is reported separately from historical human-reference and review coverage. Its individual layers measure agreement and do not form a consensus model test set; see the [resource relationships](../../../docs/terminology.md). Three coders independently annotated the same 50 sentences under B.sop_v4.2.14, with machine suggestions and one another's labels hidden. They could consult the handbook, check their own work, and revise their own labels. The analysis uses their latest separate exports dated 3 October 2026. The five learning and fifteen practice sentences are excluded.
+This release supplies the annotation-agreement results for Chinese-SkillSpan. The blinded agreement sample is reported separately from historical human-reference and review coverage. Its individual layers measure agreement and do not form a consensus model test set; see the [resource relationships](../../../docs/terminology.md). Three coders independently annotated the same 50 sentences under B.sop_v4.2.14, with machine suggestions and one another's labels hidden. They could consult the handbook, check their own work, and revise their own labels. The analysis uses their latest separate exports dated 3 October 2026. The five learning and fifteen practice sentences are excluded.
 
 ## Results
 
