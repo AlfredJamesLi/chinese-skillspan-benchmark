@@ -35,3 +35,5 @@ Table 1 now permits natural placement within Related Work instead of being restr
 Table 5 now presents Claude Sonnet 4.5 with its recorded request alias, claude-sonnet-4-5; Appendix C preserves the returned snapshot identifier, claude-sonnet-4-5-20250929. This presentation change preserves the evaluated configuration and all results.
 
 The Introduction now follows the author-approved six-paragraph outline: research value, Chinese annotation challenges, resource gaps, the proposed resource, research questions and evaluation, and contributions. Dataset-table navigation, detailed subset roles, and the associated documentation citations are explained in the methods sections. The agreed qualitative abstract and all experimental results are unchanged.
+
+Manuscript-preparation AI disclosure is consolidated in the dedicated Use of AI Tools section. Figure captions focus on scientific content, and the repeated acknowledgments disclosure is removed. The methods retain model use in annotation and evaluation; the agreed qualitative abstract and all experimental results are unchanged.
