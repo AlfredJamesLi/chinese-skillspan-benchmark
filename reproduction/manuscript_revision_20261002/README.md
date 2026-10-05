@@ -31,3 +31,5 @@ A follow-up edit removes three redundant table-note explanations; the annotation
 The abstract follows the author-approved narrative style: it reports qualitative findings without detailed scores, sample sizes, training seeds or model rankings. Numerical evidence remains in the article. This restores the style of the earlier abstract B while retaining the scope of diagnostic evaluation.
 
 Table 1 now permits natural placement within Related Work instead of being restricted to the page bottom. This layout adjustment preserves all manuscript wording and results.
+
+Table 5 now presents Claude Sonnet 4.5 with its recorded request alias, claude-sonnet-4-5; Appendix C preserves the returned snapshot identifier, claude-sonnet-4-5-20250929. This presentation change preserves the evaluated configuration and all results.

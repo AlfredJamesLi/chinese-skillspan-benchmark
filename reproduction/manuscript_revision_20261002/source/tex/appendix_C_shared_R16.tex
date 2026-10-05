@@ -4,7 +4,7 @@
 \label{sec:gold150-shared-r7}
 The shared protocol evaluates six configurations on all 150 reference sentences, using V4.2.12-based general instructions and five schematic examples. The system prompt, examples, and checksum manifest are included in the \href{https://doi.org/10.5281/zenodo.22851581}{Qwen reproduction archive}.
 
-Table~\ref{tab:model-identity} lists the model configurations, access routes, and output budgets. Request dates, response identifiers, and completion metadata are available in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/style_revision_20261005}{reproduction notes}.
+Table~\ref{tab:model-identity} lists the model configurations, access routes, and output budgets. For Claude Sonnet 4.5, the gateway request used \texttt{claude-sonnet-4-5}, and the response reported \texttt{claude-sonnet-4-5-\allowbreak20250929}. Request dates, response identifiers, and completion metadata are available in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/style_revision_20261005}{reproduction notes}.
 
 Models return an ID and spans as literal \texttt{text}, zero-based \texttt{occurrence}, and L/K/S/T \texttt{type}. The span parser resolves spans to Unicode offsets for exact and relaxed scoring with the released span scorer. All input texts match the human reference set.
 
