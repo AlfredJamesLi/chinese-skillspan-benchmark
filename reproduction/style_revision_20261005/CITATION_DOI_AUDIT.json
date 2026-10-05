@@ -1,0 +1,1678 @@
+{
+  "verified_at_utc": "2026-10-05T14:26:37.505679+00:00",
+  "scope": {
+    "bib_entries": 68,
+    "active_cited": 45,
+    "active_tex": 34,
+    "zenodo_dois": 4
+  },
+  "bibliography_changes": [
+    {
+      "key": "peng2015weibo",
+      "old": "  pages     = {548--554}",
+      "new": "  pages     = {548--554},\n  publisher = {Association for Computational Linguistics},\n  doi       = {10.18653/v1/D15-1064},\n  url       = {https://aclanthology.org/D15-1064/}",
+      "reason": "Add verified publisher and permanent identifiers.",
+      "source": "https://aclanthology.org/D15-1064/"
+    },
+    {
+      "key": "chen2024jobsdf",
+      "old": "  volume    = {37},",
+      "new": "  volume    = {37},\n  pages     = {129329--129356},\n  publisher = {Curran Associates, Inc.},",
+      "reason": "Complete the official NeurIPS proceedings page range and publisher.",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2024/file/e997325c6f4045aa646c81e674076297-Bibtex-Datasets_and_Benchmarks_Track.bib"
+    },
+    {
+      "key": "spanmarker",
+      "old": "https://github.com/tomaarsen/span-marker",
+      "new": "https://github.com/tomaarsen/SpanMarkerNER",
+      "reason": "Replace the stale URL, which returned HTTP 404, with the author-maintained repository. This entry is not cited in the active manuscript.",
+      "source": "https://github.com/tomaarsen/SpanMarkerNER"
+    },
+    {
+      "key": "spanmarker",
+      "old": "Library and paper resources; Accessed: 2025-10-28",
+      "new": "Library and thesis resources; accessed: 2026-10-05",
+      "reason": "The author-maintained repository links the thesis; record the actual verification date.",
+      "source": "https://github.com/tomaarsen/SpanMarkerNER"
+    },
+    {
+      "key": "gollie2024",
+      "old": "https://openreview.net/forum?id=Y3wpuxd7u9",
+      "new": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/cda04d7ea67ea1376bf8c6962d8541e0-Abstract-Conference.html",
+      "reason": "Use the accessible official proceedings page; preserve the already verified volume, pages, and PDF-supported full author name.",
+      "source": "https://proceedings.iclr.cc/paper_files/paper/4265-/bibtex"
+    },
+    {
+      "key": "universalner",
+      "old": "  year      = {2024},",
+      "new": "  year      = {2024},\n  volume    = {2024},\n  pages     = {12276--12294},",
+      "reason": "Complete page metadata supplied by the official ICLR proceedings, consistently with GoLLIE.",
+      "source": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/34678d08b36076de986df95c5bbba92f-Abstract-Conference.html"
+    },
+    {
+      "key": "landis1977measurement",
+      "old": "  pages   = {159--174}",
+      "new": "  pages   = {159--174},\n  doi     = {10.2307/2529310},\n  url     = {https://doi.org/10.2307/2529310}",
+      "reason": "Add verified DOI to the uncited retained bibliography entry.",
+      "source": "https://www.jstor.org/stable/i323041"
+    },
+    {
+      "key": "liu2022cnership",
+      "old": "  note    = {General NER survey covering Chinese-specific issues among others}",
+      "new": "  doi     = {10.1109/TKDE.2020.2981314},\n  url     = {https://doi.org/10.1109/TKDE.2020.2981314}",
+      "reason": "Replace the internal subject annotation with a verified DOI in this uncited retained entry.",
+      "source": "https://api.crossref.org/works/10.1109%2FTKDE.2020.2981314"
+    }
+  ],
+  "references": [
+    {
+      "key": "ILO_2020_OJVs_BigData",
+      "active_citation": true,
+      "status": "verified",
+      "title": "The feasibility of using big data in anticipating and matching skills needs",
+      "year": "2020",
+      "pages": null,
+      "sources": [
+        "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_emp/%40emp_ent/documents/publication/wcms_759330.pdf",
+        "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_emp/%40emp_ent/documents/publication/wcms_759330.pdf"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official PDF retrieved again; title, 2020 imprint, International Labour Office and volume editors are also verified in the same-day resource audit (resource_evidence/official_resources_audit.md).",
+      "evidence": [
+        {
+          "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_emp/%40emp_ent/documents/publication/wcms_759330.pdf",
+          "final_url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/%40ed_emp/%40emp_ent/documents/publication/wcms_759330.pdf",
+          "status": 200,
+          "content_type": "application/pdf",
+          "evidence_file": "citation_evidence/ILO_2020_OJVs_BigData_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "zhang2022skillspan",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{SkillSpan}: Hard and Soft Skill Extraction from {English} Job Postings",
+      "year": "2022",
+      "pages": "4962--4984",
+      "sources": [
+        "https://aclanthology.org/2022.naacl-main.366.bib",
+        "https://aclanthology.org/2022.naacl-main.366.pdf"
+      ],
+      "metadata_differences_for_manual_review": [
+        {
+          "field": "author",
+          "local": "Zhang, Mike and Jensen, Kristian N{\\o}rgaard and Sonniks, Sif Dam and Plank, Barbara",
+          "official": "Zhang, Mike  and\n      Jensen, Kristian  and\n      Sonniks, Sif  and\n      Plank, Barbara",
+          "resolution": "Resolved against official PDF first-page author list."
+        }
+      ],
+      "note": "ACL-export author metadata omits middle names. The official PDF first page explicitly confirms Kristian Norgaard Jensen and Sif Dam Sonniks; the more complete existing names are retained.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2022.naacl-main.366.bib",
+          "final_url": "https://aclanthology.org/2022.naacl-main.366.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/zhang2022skillspan_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "smallm",
+      "active_citation": false,
+      "status": "verified",
+      "title": "{SMALLM}: a local small model augmented a cloud-based large language model for {Chinese} named entity recognition in low-resource industries",
+      "year": "2025",
+      "pages": "460",
+      "sources": [
+        "https://api.crossref.org/works/10.1007%2Fs40747-025-02074-6"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Crossref confirms2025,11(11),article460; last author deposited as Jiarui Lin while retained entry uses Jia-Rui Lin. Not a different person; full name orthography left unchanged. Uncited.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.1007%2Fs40747-025-02074-6",
+          "final_url": "https://api.crossref.org/works/10.1007%2Fs40747-025-02074-6",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/smallm_0.json"
+        }
+      ]
+    },
+    {
+      "key": "oliveira",
+      "active_citation": false,
+      "status": "verified",
+      "title": "Combining prompt-based language models and weak supervision for labeling named entity recognition on legal documents",
+      "year": "2025",
+      "pages": "361--381",
+      "sources": [
+        "https://api.crossref.org/works/10.1007%2Fs10506-023-09388-1"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Crossref distinguishes online2024 from print2025; current2025/volume33/pages361–381 match the print issue. Uncited.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.1007%2Fs10506-023-09388-1",
+          "final_url": "https://api.crossref.org/works/10.1007%2Fs10506-023-09388-1",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/oliveira_0.json"
+        }
+      ]
+    },
+    {
+      "key": "landis1977measurement",
+      "active_citation": false,
+      "status": "verified; corrected/completed",
+      "title": "The Measurement of Observer Agreement for Categorical Data",
+      "year": "1977",
+      "pages": "159--174",
+      "sources": [
+        "https://api.crossref.org/works/10.2307%2F2529310"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": []
+    },
+    {
+      "key": "jensen2021deidentification",
+      "active_citation": false,
+      "status": "verified",
+      "title": "De-identification of Privacy-related Entities in Job Postings",
+      "year": "2021",
+      "pages": "210--221",
+      "sources": [
+        "https://aclanthology.org/2021.nodalida-main.21.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2021.nodalida-main.21.bib",
+          "final_url": "https://aclanthology.org/2021.nodalida-main.21.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/jensen2021deidentification_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "ESCOv1_2_2024",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{ESCO} Skills Pillar: Skills and Competences",
+      "year": "2024",
+      "pages": null,
+      "sources": [
+        "https://esco.ec.europa.eu/en/classification/skill_main",
+        "https://esco.ec.europa.eu/es/node/188"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official classification page resolves. The official ESCO version-history page confirms May 2024 release of v1.2.0. Its classification application may still display a temporary-error notice; this does not invalidate the bibliographic identity.",
+      "evidence": [
+        {
+          "url": "https://esco.ec.europa.eu/en/classification/skill_main",
+          "final_url": "https://esco.ec.europa.eu/en/classification/skill_main",
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "evidence_file": "citation_evidence/ESCOv1_2_2024_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "council2017eqf",
+      "active_citation": true,
+      "status": "verified in earlier same-day audit; fresh content access unconfirmed",
+      "title": "{Council Recommendation} of 22 {May} 2017 on the {European Qualifications Framework} for lifelong learning and repealing the recommendation of the {European Parliament} and of the {Council} of 23 {April} 2008 on the establishment of the {European Qualifications Framework} for lifelong learning",
+      "year": "2017",
+      "pages": null,
+      "sources": [
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017H0615(01)",
+        "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32017H0615(01)"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "This request returned a JavaScript/202 response. Exact title, OJ C189, pages15–28 and CELEX were verified in the earlier same-day official-resource audit; retain citation. Fresh direct content access remains unconfirmed.",
+      "evidence": [
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017H0615(01)",
+          "final_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32017H0615(01)",
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "evidence_file": "citation_evidence/council2017eqf_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "levrang2014esco",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{ESCO}: Boosting Job Matching in {Europe} with Semantic Interoperability",
+      "year": "2014",
+      "pages": "57--64",
+      "sources": [
+        "https://api.crossref.org/works/10.1109%2FMC.2014.283"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.1109%2FMC.2014.283",
+          "final_url": "https://api.crossref.org/works/10.1109%2FMC.2014.283",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/levrang2014esco_0.json"
+        }
+      ]
+    },
+    {
+      "key": "peng2015weibo",
+      "active_citation": true,
+      "status": "verified; corrected/completed",
+      "title": "Named Entity Recognition for {Chinese} Social Media with Jointly Trained Embeddings",
+      "year": "2015",
+      "pages": "548--554",
+      "sources": [
+        "https://aclanthology.org/D15-1064.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": []
+    },
+    {
+      "key": "cluener2020",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{CLUENER2020}: Fine-grained Named Entity Recognition Dataset and Benchmark for {Chinese}",
+      "year": "2020",
+      "pages": null,
+      "sources": [
+        "https://arxiv.org/abs/2001.04351v4"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "arXiv v4 confirms title and 2020 version. Official author display is Yu tong; retain the literal instead of guessing name order.",
+      "evidence": [
+        {
+          "url": "https://arxiv.org/abs/2001.04351v4",
+          "final_url": "https://arxiv.org/abs/2001.04351v4",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "citation_evidence/cluener2020_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "multiconer2023",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{SemEval}-2023 Task 2: Fine-grained Multilingual Named Entity Recognition ({MultiCoNER} 2)",
+      "year": "2023",
+      "pages": "2247--2265",
+      "sources": [
+        "https://aclanthology.org/2023.semeval-1.310.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2023.semeval-1.310.bib",
+          "final_url": "https://aclanthology.org/2023.semeval-1.310.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/multiconer2023_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "liu2022cnership",
+      "active_citation": false,
+      "status": "verified; corrected/completed",
+      "title": "A Survey on Deep Learning for Named Entity Recognition",
+      "year": "2022",
+      "pages": "50--70",
+      "sources": [
+        "https://api.crossref.org/works/10.1109%2FTKDE.2020.2981314"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": []
+    },
+    {
+      "key": "globalpointer",
+      "active_citation": false,
+      "status": "verified",
+      "title": "{GlobalPointer}: Efficient Span-based Named Entity Recognition",
+      "year": "2021",
+      "pages": null,
+      "sources": [
+        "https://github.com/bojone/GlobalPointer"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://github.com/bojone/GlobalPointer",
+          "final_url": "https://github.com/bojone/GlobalPointer",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "citation_evidence/globalpointer_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "spanmarker",
+      "active_citation": false,
+      "status": "verified; corrected/completed",
+      "title": "{SpanMarker} for Named Entity Recognition",
+      "year": "2023",
+      "pages": null,
+      "sources": [
+        "https://github.com/tomaarsen/span-marker",
+        "https://github.com/tomaarsen/SpanMarkerNER"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://github.com/tomaarsen/span-marker",
+          "error": "HTTP Error 404: Not Found"
+        }
+      ]
+    },
+    {
+      "key": "conneau2020xlmr",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Unsupervised Cross-lingual Representation Learning at Scale",
+      "year": "2020",
+      "pages": "8440--8451",
+      "sources": [
+        "https://aclanthology.org/2020.acl-main.747.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2020.acl-main.747.bib",
+          "final_url": "https://aclanthology.org/2020.acl-main.747.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/conneau2020xlmr_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "gliner-naacl24",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{GLiNER}: Generalist Model for Named Entity Recognition Using Bidirectional Transformer",
+      "year": "2024",
+      "pages": "5364--5376",
+      "sources": [
+        "https://aclanthology.org/2024.naacl-long.300.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2024.naacl-long.300.bib",
+          "final_url": "https://aclanthology.org/2024.naacl-long.300.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/gliner-naacl24_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "instructuie",
+      "active_citation": false,
+      "status": "verified",
+      "title": "{InstructUIE}: Multi-task Instruction Tuning for Unified Information Extraction",
+      "year": "2023",
+      "pages": null,
+      "sources": [
+        "https://arxiv.org/abs/2304.08085"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://arxiv.org/abs/2304.08085",
+          "final_url": "https://arxiv.org/abs/2304.08085",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "citation_evidence/instructuie_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "universalner",
+      "active_citation": true,
+      "status": "verified; corrected/completed",
+      "title": "{UniversalNER}: Targeted Distillation from Large Language Models for Open Named Entity Recognition",
+      "year": "2024",
+      "pages": null,
+      "sources": [
+        "https://proceedings.iclr.cc/paper_files/paper/2024/hash/34678d08b36076de986df95c5bbba92f-Abstract-Conference.html"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official ICLR page confirms five authors,2024,volume2024,pages12276–12294.",
+      "evidence": [
+        {
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/34678d08b36076de986df95c5bbba92f-Abstract-Conference.html",
+          "final_url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/34678d08b36076de986df95c5bbba92f-Abstract-Conference.html",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "citation_evidence/universalner_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "esco",
+      "active_citation": false,
+      "status": "verified",
+      "title": "{ESCO} --- {European Skills, Competences, Qualifications and Occupations}",
+      "year": "2024",
+      "pages": null,
+      "sources": [
+        "https://esco.ec.europa.eu/"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://esco.ec.europa.eu/",
+          "final_url": "https://esco.ec.europa.eu/select-language?destination=/node/1",
+          "status": 200,
+          "content_type": "text/html; charset=UTF-8",
+          "evidence_file": "citation_evidence/esco_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "senger2024survey",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Deep Learning-based Computational Job Market Analysis: A Survey on Skill Extraction and Classification from Job Postings",
+      "year": "2024",
+      "pages": "1--15",
+      "sources": [
+        "https://aclanthology.org/2024.nlp4hr-1.1.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2024.nlp4hr-1.1.bib",
+          "final_url": "https://aclanthology.org/2024.nlp4hr-1.1.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/senger2024survey_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "cmner2024",
+      "active_citation": false,
+      "status": "verified",
+      "title": "{CMNER}: A {Chinese} Multimodal {NER} Dataset based on Social Media",
+      "year": "2024",
+      "pages": null,
+      "sources": [
+        "https://arxiv.org/abs/2402.13693"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://arxiv.org/abs/2402.13693",
+          "final_url": "https://arxiv.org/abs/2402.13693",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "citation_evidence/cmner2024_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "jensen2022kompetencer",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{Kompetencer}: Fine-grained Skill Classification in {Danish} Job Postings via Distant Supervision and Transfer Learning",
+      "year": "2022",
+      "pages": "436--447",
+      "sources": [
+        "https://aclanthology.org/2022.lrec-1.46.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2022.lrec-1.46.bib",
+          "final_url": "https://aclanthology.org/2022.lrec-1.46.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/jensen2022kompetencer_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "mao2024legalner",
+      "active_citation": false,
+      "status": "verified",
+      "title": "Generative Named Entity Recognition Framework for {Chinese} Legal Domain",
+      "year": "2024",
+      "pages": "e2428",
+      "sources": [
+        "https://api.crossref.org/works/10.7717%2Fpeerj-cs.2428"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.7717%2Fpeerj-cs.2428",
+          "final_url": "https://api.crossref.org/works/10.7717%2Fpeerj-cs.2428",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/mao2024legalner_0.json"
+        }
+      ]
+    },
+    {
+      "key": "bhola2020retrieving",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Retrieving Skills from Job Descriptions: A Language Model Based Extreme Multi-label Classification Framework",
+      "year": "2020",
+      "pages": "5832--5842",
+      "sources": [
+        "https://aclanthology.org/2020.coling-main.513.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2020.coling-main.513.bib",
+          "final_url": "https://aclanthology.org/2020.coling-main.513.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/bhola2020retrieving_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "gnehm2022skills",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Fine-Grained Extraction and Classification of Skill Requirements in {German-Speaking} Job Ads",
+      "year": "2022",
+      "pages": "14--24",
+      "sources": [
+        "https://aclanthology.org/2022.nlpcss-1.2.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2022.nlpcss-1.2.bib",
+          "final_url": "https://aclanthology.org/2022.nlpcss-1.2.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/gnehm2022skills_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "sayfullina2018softskills",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Learning Representations for Soft Skill Matching",
+      "year": "2018",
+      "pages": "141--152",
+      "sources": [
+        "https://api.crossref.org/works/10.1007%2F978-3-030-11027-7_15"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.1007%2F978-3-030-11027-7_15",
+          "final_url": "https://api.crossref.org/works/10.1007%2F978-3-030-11027-7_15",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/sayfullina2018softskills_0.json"
+        }
+      ]
+    },
+    {
+      "key": "zhang2022weak",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Skill Extraction from Job Postings using Weak Supervision",
+      "year": "2022",
+      "pages": null,
+      "sources": [
+        "https://ceur-ws.org/Vol-3218/RecSysHR2022-paper_10.pdf",
+        "https://ceur-ws.org/Vol-3218/"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "CEUR official proceedings and PDF confirm author order,title,workshop,year2022,volume3218; PDF is9pages without a printed continuous page range, so none invented.",
+      "evidence": [
+        {
+          "url": "https://ceur-ws.org/Vol-3218/RecSysHR2022-paper_10.pdf",
+          "final_url": "https://ceur-ws.org/Vol-3218/RecSysHR2022-paper_10.pdf",
+          "status": 200,
+          "content_type": "application/pdf",
+          "evidence_file": "citation_evidence/zhang2022weak_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "nguyen2024rethinking",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Rethinking Skill Extraction in the Job Market Domain using Large Language Models",
+      "year": "2024",
+      "pages": "27--42",
+      "sources": [
+        "https://aclanthology.org/2024.nlp4hr-1.3.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2024.nlp4hr-1.3.bib",
+          "final_url": "https://aclanthology.org/2024.nlp4hr-1.3.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/nguyen2024rethinking_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "chen2021boundary",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Enhancing Entity Boundary Detection for Better {Chinese} Named Entity Recognition",
+      "year": "2021",
+      "pages": "20--25",
+      "sources": [
+        "https://aclanthology.org/2021.acl-short.4.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2021.acl-short.4.bib",
+          "final_url": "https://aclanthology.org/2021.acl-short.4.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/chen2021boundary_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "devlin2019bert",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{BERT}: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "year": "2019",
+      "pages": "4171--4186",
+      "sources": [
+        "https://aclanthology.org/N19-1423.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/N19-1423.bib",
+          "final_url": "https://aclanthology.org/N19-1423.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/devlin2019bert_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "lafferty2001crf",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Conditional Random Fields: Probabilistic Models for Segmenting and Labeling Sequence Data",
+      "year": "2001",
+      "pages": "282--289",
+      "sources": [
+        "https://repository.upenn.edu/cis_papers/159"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://repository.upenn.edu/cis_papers/159",
+          "final_url": "https://repository.upenn.edu/items/c9aea099-b5c8-4fdd-901c-15b6f889e4a7",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "citation_evidence/lafferty2001crf_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "gururangan2020dapt",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Don't Stop Pretraining: Adapt Language Models to Domains and Tasks",
+      "year": "2020",
+      "pages": "8342--8360",
+      "sources": [
+        "https://aclanthology.org/2020.acl-main.740.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2020.acl-main.740.bib",
+          "final_url": "https://aclanthology.org/2020.acl-main.740.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/gururangan2020dapt_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "ramponi2020domain",
+      "active_citation": false,
+      "status": "verified",
+      "title": "Neural Unsupervised Domain Adaptation in {NLP}---A Survey",
+      "year": "2020",
+      "pages": "6838--6855",
+      "sources": [
+        "https://aclanthology.org/2020.coling-main.603.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2020.coling-main.603.bib",
+          "final_url": "https://aclanthology.org/2020.coling-main.603.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/ramponi2020domain_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "dynamicner2025",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{DynamicNER}: A Dynamic, Multilingual, and Fine-Grained Dataset for {LLM}-based Named Entity Recognition",
+      "year": "2025",
+      "pages": "16511--16535",
+      "sources": [
+        "https://aclanthology.org/2025.emnlp-main.835.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2025.emnlp-main.835.bib",
+          "final_url": "https://aclanthology.org/2025.emnlp-main.835.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/dynamicner2025_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "uie2022",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Unified Structure Generation for Universal Information Extraction",
+      "year": "2022",
+      "pages": "5755--5772",
+      "sources": [
+        "https://aclanthology.org/2022.acl-long.395.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2022.acl-long.395.bib",
+          "final_url": "https://aclanthology.org/2022.acl-long.395.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/uie2022_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "gollie2024",
+      "active_citation": true,
+      "status": "verified; corrected/completed",
+      "title": "{GoLLIE}: Annotation Guidelines Improve Zero-Shot Information-Extraction",
+      "year": "2024",
+      "pages": "47083--47107",
+      "sources": [
+        "https://openreview.net/forum?id=Y3wpuxd7u9",
+        "https://proceedings.iclr.cc/paper_files/paper/4265-/bibtex"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official ICLR BibTeX confirms volume2024/pages47083–47107. PDF-supported Oier Lopez de Lacalle retained although metadata shortens the name. OpenReview browser challenge is not a missing publication.",
+      "evidence": [
+        {
+          "url": "https://openreview.net/forum?id=Y3wpuxd7u9",
+          "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DY3wpuxd7u9",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "citation_evidence/gollie2024_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "gptner2025",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{GPT-NER}: Named Entity Recognition via Large Language Models",
+      "year": "2025",
+      "pages": "4257--4275",
+      "sources": [
+        "https://aclanthology.org/2025.findings-naacl.239.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2025.findings-naacl.239.bib",
+          "final_url": "https://aclanthology.org/2025.findings-naacl.239.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/gptner2025_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "ding2023annotator",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Is {GPT-3} a Good Data Annotator?",
+      "year": "2023",
+      "pages": "11173--11195",
+      "sources": [
+        "https://aclanthology.org/2023.acl-long.626.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2023.acl-long.626.bib",
+          "final_url": "https://aclanthology.org/2023.acl-long.626.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/ding2023annotator_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "li2023coannotating",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{CoAnnotating}: Uncertainty-Guided Work Allocation between Human and Large Language Models for Data Annotation",
+      "year": "2023",
+      "pages": "1487--1505",
+      "sources": [
+        "https://aclanthology.org/2023.emnlp-main.92.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2023.emnlp-main.92.bib",
+          "final_url": "https://aclanthology.org/2023.emnlp-main.92.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/li2023coannotating_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "tan2024llmannotation",
+      "active_citation": false,
+      "status": "verified",
+      "title": "Large Language Models for Data Annotation and Synthesis: A Survey",
+      "year": "2024",
+      "pages": "930--957",
+      "sources": [
+        "https://aclanthology.org/2024.emnlp-main.54.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2024.emnlp-main.54.bib",
+          "final_url": "https://aclanthology.org/2024.emnlp-main.54.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/tan2024llmannotation_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "gilardi2023chatgpt",
+      "active_citation": false,
+      "status": "verified",
+      "title": "{ChatGPT} Outperforms Crowd Workers for Text-Annotation Tasks",
+      "year": "2023",
+      "pages": "e2305016120",
+      "sources": [
+        "https://api.crossref.org/works/10.1073%2Fpnas.2305016120"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.1073%2Fpnas.2305016120",
+          "final_url": "https://api.crossref.org/works/10.1073%2Fpnas.2305016120",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/gilardi2023chatgpt_0.json"
+        }
+      ]
+    },
+    {
+      "key": "kim2026guidelines",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Refining and Reusing Annotation Guidelines for {LLM} Annotation",
+      "year": "2026",
+      "pages": "37951--37964",
+      "sources": [
+        "https://aclanthology.org/2026.acl-long.1760.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2026.acl-long.1760.bib",
+          "final_url": "https://aclanthology.org/2026.acl-long.1760.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/kim2026guidelines_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "ulhaq2026nerannotation",
+      "active_citation": true,
+      "status": "verified",
+      "title": "A Systematic Comparison of Large Language Models for Data Annotation in {NER} Tasks",
+      "year": "2026",
+      "pages": "524--548",
+      "sources": [
+        "https://aclanthology.org/2026.lrec-1.37.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2026.lrec-1.37.bib",
+          "final_url": "https://aclanthology.org/2026.lrec-1.37.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/ulhaq2026nerannotation_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "bender2018datastatements",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science",
+      "year": "2018",
+      "pages": "587--604",
+      "sources": [
+        "https://api.crossref.org/works/10.1162%2Ftacl_a_00041"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.1162%2Ftacl_a_00041",
+          "final_url": "https://api.crossref.org/works/10.1162%2Ftacl_a_00041",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/bender2018datastatements_0.json"
+        }
+      ]
+    },
+    {
+      "key": "gebru2021datasheets",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Datasheets for Datasets",
+      "year": "2021",
+      "pages": "86--92",
+      "sources": [
+        "https://api.crossref.org/works/10.1145%2F3458723"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.1145%2F3458723",
+          "final_url": "https://api.crossref.org/works/10.1145%2F3458723",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/gebru2021datasheets_0.json"
+        }
+      ]
+    },
+    {
+      "key": "artstein2008agreement",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Inter-Coder Agreement for Computational Linguistics",
+      "year": "2008",
+      "pages": "555--596",
+      "sources": [
+        "https://api.crossref.org/works/10.1162%2Fcoli.07-034-R2"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.1162%2Fcoli.07-034-R2",
+          "final_url": "https://api.crossref.org/works/10.1162%2Fcoli.07-034-R2",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/artstein2008agreement_0.json"
+        }
+      ]
+    },
+    {
+      "key": "chen2024jobsdf",
+      "active_citation": true,
+      "status": "verified; corrected/completed",
+      "title": "{Job-SDF}: A Multi-Granularity Dataset for Job Skill Demand Forecasting and Benchmarking",
+      "year": "2024",
+      "pages": null,
+      "sources": [
+        "https://api.crossref.org/works/10.52202%2F079017-4109",
+        "https://proceedings.neurips.cc/paper_files/paper/2024/file/e997325c6f4045aa646c81e674076297-Bibtex-Datasets_and_Benchmarks_Track.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.52202%2F079017-4109",
+          "final_url": "https://api.crossref.org/works/10.52202%2F079017-4109",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/chen2024jobsdf_0.json"
+        }
+      ]
+    },
+    {
+      "key": "magron2024jobskape",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{JobSkape}: A Framework for Generating Synthetic Job Postings to Enhance Skill Matching",
+      "year": "2024",
+      "pages": "43--58",
+      "sources": [
+        "https://aclanthology.org/2024.nlp4hr-1.4.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2024.nlp4hr-1.4.bib",
+          "final_url": "https://aclanthology.org/2024.nlp4hr-1.4.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/magron2024jobskape_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "desanto2026skilllens",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{SkiLLens}: Recognising and Mapping Novel Skills from Millions of Job Ads Across {Europe} Using Language Models",
+      "year": "2026",
+      "pages": "877--885",
+      "sources": [
+        "https://aclanthology.org/2026.eacl-industry.65.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2026.eacl-industry.65.bib",
+          "final_url": "https://aclanthology.org/2026.eacl-industry.65.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/desanto2026skilllens_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "zhong2023bertspan",
+      "active_citation": false,
+      "status": "verified",
+      "title": "A {BERT-Span} model for {Chinese} named entity recognition in rehabilitation medicine",
+      "year": "2023",
+      "pages": "e1535",
+      "sources": [
+        "https://api.crossref.org/works/10.7717%2Fpeerj-cs.1535"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.7717%2Fpeerj-cs.1535",
+          "final_url": "https://api.crossref.org/works/10.7717%2Fpeerj-cs.1535",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/zhong2023bertspan_0.json"
+        }
+      ]
+    },
+    {
+      "key": "Finkel2009",
+      "active_citation": false,
+      "status": "verified",
+      "title": "Nested Named Entity Recognition",
+      "year": "2009",
+      "pages": "141--150",
+      "sources": [
+        "https://aclanthology.org/D09-1015.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/D09-1015.bib",
+          "final_url": "https://aclanthology.org/D09-1015.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/Finkel2009_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "Yu2020",
+      "active_citation": false,
+      "status": "verified",
+      "title": "Named Entity Recognition as Dependency Parsing",
+      "year": "2020",
+      "pages": "6470--6476",
+      "sources": [
+        "https://aclanthology.org/2020.acl-main.577.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2020.acl-main.577.bib",
+          "final_url": "https://aclanthology.org/2020.acl-main.577.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/Yu2020_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "cao2021occupational",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Occupational profiling driven by online job advertisements: Taking the data analysis and processing engineering technicians as an example",
+      "year": "2021",
+      "pages": "e0253308",
+      "sources": [
+        "https://api.crossref.org/works/10.1371%2Fjournal.pone.0253308"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.1371%2Fjournal.pone.0253308",
+          "final_url": "https://api.crossref.org/works/10.1371%2Fjournal.pone.0253308",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/cao2021occupational_0.json"
+        }
+      ]
+    },
+    {
+      "key": "macrodataPlatform",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{MacroData}",
+      "year": "n.d.",
+      "pages": null,
+      "sources": [
+        "https://www.macrodatas.cn/"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official website returned HTTP200 with Chinese platform title. Its rendered dataset catalogue and source permissions were not audited here.",
+      "evidence": [
+        {
+          "url": "https://www.macrodatas.cn/",
+          "final_url": "https://www.macrodatas.cn/",
+          "status": 200,
+          "content_type": "text/html",
+          "evidence_file": "citation_evidence/macrodataPlatform_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "tianchiRecruitment163746",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{Recruitment Dataset}",
+      "year": "n.d.",
+      "pages": null,
+      "sources": [
+        "https://tianchi.aliyun.com/dataset/163746/"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official page title identifies 招聘数据集 (Recruitment Dataset), ID163746. The translation note is transparent, not evidence of a fabricated title. Dataset licensing/access is outside this bibliographic check.",
+      "evidence": [
+        {
+          "url": "https://tianchi.aliyun.com/dataset/163746/",
+          "final_url": "https://tianchi.aliyun.com/dataset/163746/",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "citation_evidence/tianchiRecruitment163746_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "zhang2023escoxlmr",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{ESCOXLM-R}: Multilingual Taxonomy-driven Pre-training for the Job Market Domain",
+      "year": "2023",
+      "pages": "11871--11890",
+      "sources": [
+        "https://aclanthology.org/2023.acl-long.662.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2023.acl-long.662.bib",
+          "final_url": "https://aclanthology.org/2023.acl-long.662.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/zhang2023escoxlmr_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "zhang2024nnose",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{NNOSE}: Nearest Neighbor Occupational Skill Extraction",
+      "year": "2024",
+      "pages": "589--608",
+      "sources": [
+        "https://aclanthology.org/2024.eacl-long.35.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2024.eacl-long.35.bib",
+          "final_url": "https://aclanthology.org/2024.eacl-long.35.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/zhang2024nnose_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "green2022benchmark",
+      "active_citation": false,
+      "status": "verified",
+      "title": "Development of a Benchmark Corpus to Support Entity Recognition in Job Descriptions",
+      "year": "2022",
+      "pages": "1201--1208",
+      "sources": [
+        "https://aclanthology.org/2022.lrec-1.128.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2022.lrec-1.128.bib",
+          "final_url": "https://aclanthology.org/2022.lrec-1.128.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/green2022benchmark_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "beauchemin2022fijo",
+      "active_citation": false,
+      "status": "verified",
+      "title": "{FIJO}: a {French Insurance Soft Skill Detection Dataset}",
+      "year": "2022",
+      "pages": null,
+      "sources": [
+        "https://api.crossref.org/works/10.21428%2F594757db.858dd91f"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Crossref confirms authors,title,2022 and DOI; official metadata provides no continuous page range. Article identifier2022L34 retained. Uncited.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.21428%2F594757db.858dd91f",
+          "final_url": "https://api.crossref.org/works/10.21428%2F594757db.858dd91f",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/beauchemin2022fijo_0.json"
+        }
+      ]
+    },
+    {
+      "key": "joshi2020spanbert",
+      "active_citation": false,
+      "status": "verified",
+      "title": "{SpanBERT}: Improving Pre-training by Representing and Predicting Spans",
+      "year": "2020",
+      "pages": "64--77",
+      "sources": [
+        "https://aclanthology.org/2020.tacl-1.5.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2020.tacl-1.5.bib",
+          "final_url": "https://aclanthology.org/2020.tacl-1.5.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/joshi2020spanbert_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "vandergoot2021machamp",
+      "active_citation": false,
+      "status": "verified",
+      "title": "Massive Choice, Ample Tasks ({MaChAmp}): A Toolkit for Multi-task Learning in {NLP}",
+      "year": "2021",
+      "pages": "176--197",
+      "sources": [
+        "https://aclanthology.org/2021.eacl-demos.22.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2021.eacl-demos.22.bib",
+          "final_url": "https://aclanthology.org/2021.eacl-demos.22.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/vandergoot2021machamp_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "klie2024annotationquality",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Analyzing Dataset Annotation Quality Management in the Wild",
+      "year": "2024",
+      "pages": "817--866",
+      "sources": [
+        "https://aclanthology.org/2024.cl-3.1.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2024.cl-3.1.bib",
+          "final_url": "https://aclanthology.org/2024.cl-3.1.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/klie2024annotationquality_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "hripcsak2005agreement",
+      "active_citation": true,
+      "status": "verified",
+      "title": "Agreement, the {F}-Measure, and Reliability in Information Retrieval",
+      "year": "2005",
+      "pages": "296--298",
+      "sources": [
+        "https://api.crossref.org/works/10.1197%2Fjamia.M1733",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC1090460/"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Crossref omits the second author; publisher-supplied full text in PMC confirms George Hripcsak and Adam S Rothschild. Retain both authors and pages296–298.",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.1197%2Fjamia.M1733",
+          "final_url": "https://api.crossref.org/works/10.1197%2Fjamia.M1733",
+          "status": 200,
+          "content_type": "application/json",
+          "evidence_file": "citation_evidence/hripcsak2005agreement_0.json"
+        }
+      ]
+    },
+    {
+      "key": "gnehm2022transfer",
+      "active_citation": false,
+      "status": "verified",
+      "title": "Evaluation of Transfer Learning and Domain Adaptation for Analyzing {German-Speaking} Job Advertisements",
+      "year": "2022",
+      "pages": "3892--3901",
+      "sources": [
+        "https://aclanthology.org/2022.lrec-1.414.bib"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official publisher/author metadata supports the bibliographic identity; title, author order, year and available page/DOI fields checked.",
+      "evidence": [
+        {
+          "url": "https://aclanthology.org/2022.lrec-1.414.bib",
+          "final_url": "https://aclanthology.org/2022.lrec-1.414.bib",
+          "status": 200,
+          "content_type": "text/plain; charset=utf-8",
+          "evidence_file": "citation_evidence/gnehm2022transfer_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "hu2022lora",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{LoRA}: Low-Rank Adaptation of Large Language Models",
+      "year": "2022",
+      "pages": null,
+      "sources": [
+        "https://openreview.net/forum?id=nZeVKeeFYf9",
+        "https://raw.githubusercontent.com/microsoft/LoRA/main/README.md"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official Microsoft/LoRA repository citation confirms eight authors,title,ICLR2022 and OpenReview identifier. Browser challenge on the landing page does not invalidate citation.",
+      "evidence": [
+        {
+          "url": "https://openreview.net/forum?id=nZeVKeeFYf9",
+          "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DnZeVKeeFYf9",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "citation_evidence/hu2022lora_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "qwen2025report",
+      "active_citation": true,
+      "status": "verified",
+      "title": "{Qwen2.5} Technical Report",
+      "year": "2025",
+      "pages": null,
+      "sources": [
+        "https://arxiv.org/abs/2412.15115v2"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "arXiv v2 dates2025-01-03 support the cited2025 version; v1 was2024. Retain version-specific URL and established Qwen Team corporate attribution.",
+      "evidence": [
+        {
+          "url": "https://arxiv.org/abs/2412.15115v2",
+          "final_url": "https://arxiv.org/abs/2412.15115v2",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "citation_evidence/qwen2025report_0.txt"
+        }
+      ]
+    },
+    {
+      "key": "chung2021rembert",
+      "active_citation": false,
+      "status": "verified",
+      "title": "Rethinking Embedding Coupling in Pre-trained Language Models",
+      "year": "2021",
+      "pages": null,
+      "sources": [
+        "https://openreview.net/forum?id=xpFFI_NtgpW",
+        "https://api.openreview.net/notes?id=xpFFI_NtgpW",
+        "https://openreview.net/pdf?id=xpFFI_NtgpW"
+      ],
+      "metadata_differences_for_manual_review": [],
+      "note": "Official OpenReview PDF search result confirms five authors,title and ICLR2021. Forum/API returned challenge/403; no DOI or proceedings pages invented. Uncited.",
+      "evidence": [
+        {
+          "url": "https://openreview.net/forum?id=xpFFI_NtgpW",
+          "final_url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DxpFFI_NtgpW",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "evidence_file": "citation_evidence/chung2021rembert_0.txt"
+        }
+      ]
+    }
+  ],
+  "zenodo": [
+    {
+      "doi": "10.5281/zenodo.22288337",
+      "status": "verified",
+      "resolved_record": 22846011,
+      "title": "Chinese-SkillSpan: Repository snapshot for Qwen reproduction (qwen-repro-pack-20260919)",
+      "record_doi": "10.5281/zenodo.22846011",
+      "concept_doi": "10.5281/zenodo.22288337",
+      "url": "https://zenodo.org/records/22846011",
+      "files": [
+        {
+          "key": "AlfredJamesLi/chinese-skillspan-benchmark-qwen-repro-pack-20260919.zip",
+          "size": 83711967
+        }
+      ],
+      "role_match": true
+    },
+    {
+      "doi": "10.5281/zenodo.22698504",
+      "status": "verified",
+      "resolved_record": 22698504,
+      "title": "Chinese-SkillSpan: Corpus, human reference set, and Silver training/development sets (v0.1.3)",
+      "record_doi": "10.5281/zenodo.22698504",
+      "concept_doi": "10.5281/zenodo.22288337",
+      "url": "https://zenodo.org/records/22698504",
+      "files": [
+        {
+          "key": "AlfredJamesLi/chinese-skillspan-benchmark-v0.1.3.zip",
+          "size": 71183567
+        }
+      ],
+      "role_match": true
+    },
+    {
+      "doi": "10.5281/zenodo.22851581",
+      "status": "verified",
+      "resolved_record": 22851581,
+      "title": "Chinese-SkillSpan: Qwen2.5-14B-Instruct LoRA adapters and reproduction materials",
+      "record_doi": "10.5281/zenodo.22851581",
+      "concept_doi": "10.5281/zenodo.22851580",
+      "url": "https://zenodo.org/records/22851581",
+      "files": [
+        {
+          "key": "CNSS_Qwen_Reproduction.zip",
+          "size": 865168457
+        }
+      ],
+      "role_match": true
+    },
+    {
+      "doi": "10.5281/zenodo.22942441",
+      "status": "verified",
+      "resolved_record": 22942441,
+      "title": "Chinese-SkillSpan: Reproduction materials for Silver fine-tuned XLM-R and ESCOXLM-R (three seeds)",
+      "record_doi": "10.5281/zenodo.22942441",
+      "concept_doi": "10.5281/zenodo.22937244",
+      "url": "https://zenodo.org/records/22942441",
+      "files": [
+        {
+          "key": "cnss_table11_xlm-roberta-large_s42_sidecar.tar",
+          "size": 22179840
+        },
+        {
+          "key": "cnss_table11_xlm-roberta-large_s43_sidecar.tar",
+          "size": 22179840
+        },
+        {
+          "key": "cnss_table11_esco-xlm-roberta-large_s42_sidecar.tar",
+          "size": 22179840
+        },
+        {
+          "key": "WEIGHTS_SHA256.txt",
+          "size": 729
+        },
+        {
+          "key": "cnss_table11_esco-xlm-roberta-large_s44_sidecar.tar",
+          "size": 22179840
+        },
+        {
+          "key": "README.md",
+          "size": 1422
+        },
+        {
+          "key": "table11_evidence_20260924.zip",
+          "size": 566583
+        },
+        {
+          "key": "cnss_table11_xlm-roberta-large_s44_sidecar.tar",
+          "size": 22179840
+        },
+        {
+          "key": "cnss_table11_esco-xlm-roberta-large_s43_sidecar.tar",
+          "size": 22179840
+        }
+      ],
+      "role_match": true
+    },
+    {
+      "doi": "10.5281/zenodo.22288338",
+      "status": "verified historical version; not active citation",
+      "title": "Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements",
+      "url": "https://zenodo.org/records/22288338"
+    },
+    {
+      "doi": "10.5281/zenodo.22685143",
+      "status": "verified historical version; not active citation",
+      "title": "Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements",
+      "url": "https://zenodo.org/records/22685143"
+    },
+    {
+      "doi": "10.5281/zenodo.22937245",
+      "status": "verified historical version; not active citation",
+      "title": "Chinese-SkillSpan: Reproduction materials for Silver fine-tuned XLM-R and ESCOXLM-R (three seeds)",
+      "url": "https://zenodo.org/records/22937245"
+    }
+  ],
+  "limits": [
+    "Bibliographic identity and metadata audit, not a re-review of every substantive citation claim.",
+    "HTTP200 alone was not counted as sufficient metadata evidence; challenges distinguished from content.",
+    "No checkpoint or dataset archive payloads were downloaded or revalidated in this DOI check."
+  ]
+}

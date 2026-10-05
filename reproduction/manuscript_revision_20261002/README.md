@@ -2,7 +2,7 @@
 
 **Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements**
 
-[Read the current PDF](Chinese_SkillSpan_revised_20261002.pdf). Updated 5 October 2026; 42 pages. Existing directory and PDF filenames remain stable for links.
+[Read the current PDF](Chinese_SkillSpan_revised_20261002.pdf). Updated 5 October 2026; 41 pages. Existing directory and PDF filenames remain stable for links.
 
 The manuscript uses descriptive names for the source corpus, human reference, Silver supervision, and review/agreement samples. [The resource naming guide](../../docs/terminology.md) distinguishes the original Silver candidate pool, model-specific training/development sets, and overlapping expanded pools. Archived identifiers and data remain unchanged.
 
@@ -22,4 +22,6 @@ The submission revision adds annotator backgrounds and their handbook-developmen
 
 The model-name audit verifies vendor display names against official documentation while preserving recorded request/response identifiers, access routes and frozen experiment results. Figure 5 now uses reference-span terminology and explicit seed labels. Table headings distinguish encoders trained with Chinese supervision and candidate versus retained record counts. All 21 tables and five figures were checked after compilation. See the [model-name mapping](../../PAPER_NAMES.md).
 
-The October 5 reviewer revision reconciles human annotation and review coverage (550 distinct sentences), adds a post hoc comparison of final Silver labels with three blinded annotation layers on 49 retained sentences, and moves detailed completion diagnostics and preparation history to the [revision evidence](../reviewer_revision_20261005/README.md). Original model predictions and scores are unchanged; the manuscript retains 42 pages, 21 tables and five figures.
+The October 5 reviewer revision reconciles human annotation and review coverage (550 distinct sentences), adds a post hoc comparison of final Silver labels with three blinded annotation layers on 49 retained sentences, and moves detailed completion diagnostics and preparation history to the [revision evidence](../reviewer_revision_20261005/README.md). Original model predictions and scores are unchanged.
+
+The subsequent prose revision consolidates AI-use disclosure in the methods, shortens repeated qualifications, and reports the main findings in a 192-word abstract. Calculation chronology and a bibliography/DOI audit are provided in the [prose revision documentation](../style_revision_20261005/README.md). The current manuscript has 41 pages, 21 tables and five figures. No experiment scores, labels, predictions or model settings changed.

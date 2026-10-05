@@ -2,7 +2,7 @@
 
 \paragraph{Supervision and model selection.} The JobBERT-zh + CRF baseline starts from the released encoder and inherited CRF and is trained on 2,156 Silver training records, with 169 Silver development records for checkpoint selection. Its supervision incorporates updated guidelines, LLM annotations, and adjudication. Checkpoints are selected by development typed exact-span F1. \hyperref[sec:jobbert-label-versions]{Appendix C} preserves the historical comparison of earlier and revised supervision.
 
-Qwen starts from pretrained Instruct weights, with a fresh LoRA adapter for each of seeds 42, 43, and 44 on the Silver sets of 2,150 training and 169 development records. Training uses a fixed system instruction, user template, and five schematic examples. Targets contain literal span text, occurrence index, and type. Loss covers the assistant's JSON output and closing turn token. Training uses BF16 precision; development typed exact-span F1 determines checkpoint selection. Table~\ref{tab:training-settings} gives training settings; \hyperref[app:d]{Appendix D} documents historical JobBERT implementation gaps.
+Qwen starts from pretrained Instruct weights, with a fresh LoRA adapter for each of seeds 42, 43, and 44 on the Silver sets of 2,150 training and 169 development records. Training uses a fixed system instruction, user template, and five schematic examples. Targets contain literal span text, occurrence index, and type. Loss covers the assistant's JSON output and closing turn token. Training uses BF16 precision; development typed exact-span F1 determines checkpoint selection. Table~\ref{tab:training-settings} summarizes the training settings.
 
 \begin{table}[htbp]
 \centering
@@ -24,5 +24,5 @@ Patience & 2 & 2 epochs \\
 \end{table}
 
 \begin{samepage}
-\paragraph{Inference.} Each generative request contains one sentence's identifier and text, shared instructions based on handbook v4.2.12, and five fixed examples. A parser maps occurrence-based outputs to source Unicode-code-point spans. Adapted and unadapted Qwen share the base checkpoint, prompts, parser, BF16 precision, deterministic decoding, and a 2,048-token output limit. DeepSeek limits output to 2,048 tokens with thinking disabled and 8,192 with thinking enabled. Prompted configurations share instructions but not a common inference budget. \hyperref[app:c]{\mbox{Appendix~C}} lists service settings and output checks.
+\paragraph{Inference.} Each generative request contains one sentence's identifier and text, shared instructions based on handbook v4.2.12, and five fixed examples. A parser maps occurrence-based outputs to source Unicode-code-point spans. Adapted and unadapted Qwen share the base checkpoint, prompts, parser, BF16 precision, deterministic decoding, and a 2,048-token output limit. DeepSeek limits output to 2,048 tokens with thinking disabled and 8,192 with thinking enabled. The prompted configurations use the same instructions with model-specific output budgets. \hyperref[app:c]{\mbox{Appendix~C}} lists service settings and output checks.
 \par\end{samepage}

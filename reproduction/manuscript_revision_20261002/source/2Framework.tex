@@ -4,22 +4,22 @@
 
 \subsection{Task Definition and Label Schema}
 
-Given a Chinese job-advertisement sentence $x$, the task is to predict non-overlapping spans $(s,e,t)$, where $t\in\{L,K,S,T\}$. Offsets are measured in Unicode code points: $s$ denotes the zero-based start position, and $e$ denotes the exclusive end position. Each annotated mention must match the contiguous substring $x[s:e]$ exactly, including its spelling and internal spaces. The annotations describe requirements stated in the advertisement, not an applicant's actual abilities.
+Given a Chinese job-advertisement sentence $x$, the task is to predict non-overlapping spans $(s,e,t)$, where $t\in\{L,K,S,T\}$. Offsets are measured in Unicode code points: $s$ denotes the zero-based start position, and $e$ denotes the exclusive end position. Each annotated mention must match the contiguous substring $x[s:e]$ exactly, including its spelling and internal spaces. The annotation target is the requirement stated in the advertisement.
 
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=\textwidth]{figures/Figure1_drawio_restored_20261004.pdf}
-\caption{Overview of Chinese-SkillSpan: (a) corpus preparation and annotation; (b) model training and evaluation; and (c) supplementary external-task comparisons. Initial layout assisted by OpenAI image generation; final vector drawing prepared with Codex-assisted code (\hyperref[app:d]{Appendix~D}).}
+\caption{Overview of Chinese-SkillSpan: (a) corpus preparation and annotation; (b) model training and evaluation; and (c) external-task comparisons in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/major_revision_20261004/external_experiments}{online supplement}. Initial layout assisted by OpenAI image generation; final vector drawing prepared with OpenAI Codex-assisted code (\hyperref[sec:ai-use]{Use of AI Tools}).}
   \label{fig:macro-micro}
 \end{figure}
 
 Figure~\ref{fig:macro-micro} summarizes corpus preparation, annotation, and model evaluation. The four categories in Table~\ref{tab:guide-types} draw on ESCO and the knowledge--skill distinction in the European Qualifications Framework~\citep{ESCOv1_2_2024,council2017eqf}.
 
-The definitions and rule examples below illustrate the current handbook, v4.2.14, also used in the blinded agreement study. The human reference retains v4.2.10 labels, whereas the original bulk-generation prompt follows v4.2.12. Current examples do not revise historical annotations; \hyperref[sec:guide-version-history]{Appendix A.4} documents the version boundaries.
+The definitions and rule examples below illustrate the current handbook, v4.2.14, also used in the blinded agreement study. The human reference retains v4.2.10 labels, whereas the original bulk-generation prompt follows v4.2.12. \hyperref[sec:guide-version-history]{Appendix A.4} gives the rules applicable to each label version.
 
 \input{tex/label_schema_main}
 
-K combines substantive knowledge with recruitment proxies by project convention; qualifications and industry background are not treated as measures of knowledge under ESCO or the EQF. Its scores therefore describe this combined category. The frozen labels do not distinguish these subtypes, so a knowledge-only evaluation would require additional human review.
+By project convention, K combines substantive knowledge with qualification and industry-background requirements. This extends the category beyond the ESCO and EQF definitions of knowledge. Scores describe the combined category; evaluating knowledge alone would require human separation of these subtypes.
 
 \input{tex/coding_detail_no_counts}
 
@@ -34,20 +34,26 @@ Boundary selection prioritizes semantic completeness. Following SkillSpan~\citep
 
 Experience wording is assessed by distinguishing occupational activities, generic tenure, and industry background. Generic duration alone is excluded; explicit industry-background requirements receive the project-specific K label. For a named activity, annotators remove the experience qualifier only if the remaining words still express the requirement in context. Thus, \zh{机器人竞赛经验} (robotics competition experience) retains its qualifier when the bare event name would change the requirement. Coordinated items must each pass the same test. \hyperref[app:a]{Appendix A} illustrates how internet-company operations receive S while an industry-background requirement receives K.
 
-Type depends on the requirement in context: \zh{使用SQL} (use SQL) supports S for SQL, whereas \zh{了解SQL原理} (understand SQL principles) supports K for \zh{SQL原理} (SQL principles). A predicate can determine type while remaining outside the span; familiarity alone does not determine type. General communication and coordination receive T even in duty clauses, whereas technical operations receive S. Adjudication resolves scope, boundaries, and type separately, without a global label priority~\citep{artstein2008agreement}. Once scope and boundaries are resolved, type-only uncertainty may receive provisional S in the working record, with alternatives logged. All records with unresolved uncertainty are excluded in full from final training targets; provisional S is not an accepted default. Alternative annotations, nested candidates, and unresolved overlaps remain separate from the final flat layer. Figure~\ref{fig:illustrative-annotations} shows frozen human-reference examples; \hyperref[app:a]{Appendix A} retains the complete G1--G15 rules.
+Type depends on the requirement in context: \zh{使用SQL} (use SQL) supports S for SQL, whereas \zh{了解SQL原理} (understand SQL principles) supports K for \zh{SQL原理} (SQL principles). A predicate can determine type while remaining outside the span; familiarity alone does not determine type. General communication and coordination receive T even in duty clauses, whereas technical operations receive S. Adjudication resolves scope, boundaries, and type separately, without a global label priority~\citep{artstein2008agreement}. Once scope and boundaries are resolved, type-only uncertainty may receive provisional S in the working record, with alternatives logged. Records with unresolved labels, including provisional S, are excluded in full from final training targets. Alternative annotations, nested candidates, and unresolved overlaps remain separate from the final flat layer. Figure~\ref{fig:illustrative-annotations} shows frozen human-reference examples; \hyperref[app:a]{Appendix A} retains the complete G1--G15 rules.
 
 \input{tex/representative_annotations_main}
 
 \subsection{Human Annotation and LLM-Assisted Labeling}
 \label{sec:annotation-workflow-r36}
 
-Human annotation, review, and adjudication established the human reference set and informed handbook development. The LLM-labeling route in Figure~\ref{fig:macro-micro} concerns Silver supervision. The adopted annotation route used the official OpenAI Codex interface. In this paper, Codex identifies the interface; Table~\ref{tab:model-identity} lists the recorded model names and their roles. An initial sample review preceded bulk annotation. Automated checks examined span text, offsets, labels, and record coverage, while sampled human review assessed the interpretation of requirements. Each annotation batch used the handbook version available at the time of generation, with later amendments documented separately.
+Human annotation, review, and adjudication established the human reference set and informed handbook development. The LLM-labeling route in Figure~\ref{fig:macro-micro} concerns Silver supervision. The adopted annotation route used OpenAI Codex; Table~\ref{tab:model-identity} identifies the models and access routes. An initial sample review preceded bulk annotation. Automated checks examined span text, offsets, labels, and record coverage, while sampled human review assessed the interpretation of requirements. Each annotation batch used the handbook version available at the time of generation, with later amendments documented separately.
 
-In the adopted expanded-Silver variant, annotations for the designated replacement subset were generated through Codex. Earlier supervision components were retained in both pools, and the alternative variant is reported as a supplementary comparison. Appendices~A~and~D document the handbook versions, record-inclusion decisions, and exclusion of unresolved records.
+The adopted expanded Silver pool includes a replacement batch annotated through Codex. The alternative pool uses an API gateway for this batch; both pools share the earlier supervision components. Table~\ref{tab:source-stages} summarizes their composition.
 
 \FloatBarrier
 
 \input{tex/annotation_quality_R12}
+
+\subsection{Use of AI Tools}
+\phantomsection\label{sec:ai-use}
+OpenAI Codex assisted with manuscript revision, LaTeX formatting, and code preparation and checking under author direction. Anthropic Claude helped check sentence-level wording. xAI Grok 4.6 with high reasoning effort in Cursor assisted with code preparation and checking. Figures~\ref{fig:macro-micro} and~\ref{fig:coding-detail} are editable vector drawings prepared with OpenAI Codex-assisted code; OpenAI's image-generation tool assisted the initial layout of Figure~\ref{fig:macro-micro}.
+
+The annotation workflow used GPT-6 Astra through OpenAI Codex to generate Silver labels. GPT-6 Astra and Grok, together with Qwen, DeepSeek, and Kimi, also provided suggestions during assisted annotation. Table~\ref{tab:model-identity} separates these roles from the evaluated model configurations. Available model identifiers and settings accompany the reproduction materials; some preparation-tool versions were not retained. The authors reviewed the revisions and take responsibility for the manuscript.
 
 \subsection{Ethics and Data Use}
 The study analyzed recruitment advertisements and did not recruit job applicants or collect applicant responses. Annotation and review were conducted by members of the research team. Institutional ethics approval was not sought, and no formal exemption is claimed. The authors confirm permission to use the source materials for academic research. Research-use permissions and rights to redistribute third-party recruitment texts are documented separately in the access terms for each component. \hyperref[app:d]{Appendix D} reports the automated privacy-screening results and the human review still required before a privacy-vetted release.

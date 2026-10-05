@@ -3,9 +3,9 @@
 \phantomsection
 \label{app:b}
 \label{sec:quality-provenance-r12}
-Historical coding and assisted-review comparisons below use designs distinct from the independent blinded study in Table~\ref{tab:quality-main}. The initial 50-sentence calibration study involved independent raw-text coding before adjudication under the historical handbook. The sentences were sampled from the 980-record conflict queue. Available exports reproduce 98 exact matches between 211 and 230 spans, giving F1 0.444. Character-level $\kappa$ is 0.567 for L/K/S/T plus O, over all 2,571 source code points, including spaces and punctuation. All 50 identifiers belong to the calibration portion of the human reference set and none occurs in the Silver training or development identifiers. Thus, the study supplies independent-coding evidence, but is not an additional test cohort. These calculations use the available later exports; exact correspondence with the original frozen files has not been verified. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/iaa50.tex}{agreement calculations} preserves the arithmetic and supporting counts.
+Historical coding and assisted-review comparisons below use designs distinct from the independent blinded study in Table~\ref{tab:quality-main}. The initial 50-sentence calibration study involved independent raw-text coding before adjudication under the historical handbook. The sentences were sampled from the 980-record conflict queue. Available exports reproduce 98 exact matches between 211 and 230 spans, giving F1 0.444. Character-level $\kappa$ is 0.567 for L/K/S/T plus O, over all 2,571 source code points, including spaces and punctuation. All 50 identifiers belong to the calibration portion of the human reference set and none occurs in the Silver training or development identifiers. This calibration study supplies independent-coding evidence for a subset of the human reference set. These calculations use the available later exports; exact correspondence with the original frozen files has not been verified. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/iaa50.tex}{agreement calculations} provide the supporting counts.
 
-The reference's challenge cohort contributes 415 spans (290 S, 83 K, 41 T, one L), and the calibration cohort contributes 248 (158 S, 42 K, 47 T, one L). Seven challenge sentences and one calibration sentence have no annotated span. The identifiers contain 61 source-document prefixes, verified against the original corpus identifiers. The adjudicated reference remains separate from the original coding and assisted-review layers. A retrospective comparison of the two available individual calibration exports with their adjudicated 50-sentence reference gives typed exact F1 of 0.640 and 0.606 (boundary F1 0.766 and 0.684). These annotators contributed to that reference; the comparison describes adjudication changes and is not independent validation or a human performance ceiling.
+The reference's challenge cohort contributes 415 spans (290 S, 83 K, 41 T, one L), and the calibration cohort contributes 248 (158 S, 42 K, 47 T, one L). Seven challenge sentences and one calibration sentence have no annotated span. The identifiers contain 61 source-document prefixes, verified against the original corpus identifiers. The adjudicated reference remains separate from the original coding and assisted-review layers. A retrospective comparison of the two available individual calibration exports with their adjudicated 50-sentence reference gives typed exact F1 of 0.640 and 0.606 (boundary F1 0.766 and 0.684). Because these annotators contributed to the reference, this comparison measures changes introduced by adjudication.
 
 % [R37-MOVE] Counting convention formerly repeated in the corpus chapter.
 Character-level Cohen's $\kappa$ adjusts observed agreement for agreement expected by chance from the two coders' marginal label frequencies across the source character positions:
@@ -14,20 +14,20 @@ Character-level Cohen's $\kappa$ adjusts observed agreement for agreement expect
 \qquad p_e=\sum_{c\in\mathcal{C}}p_A(c)\,p_B(c).
 \label{eq:character-kappa}
 \end{equation}
-Here, $p_o$ is the fraction of source character positions with identical labels, and $p_A(c)$ and $p_B(c)$ are the two coders' label proportions. The label set $\mathcal{C}$ comprises L/K/S/T and O. For the four-label scheme plus O, the available exports yield $p_o=0.771$ and $p_e=0.471$, giving $\kappa=0.567$. These character-level quantities are distinct from the span counts in Eq.~\eqref{eq:micro-prf}; the 2,571 positions are nested within 50 sentences, not 2,571 independent samples.
+Here, $p_o$ is the fraction of source character positions with identical labels, and $p_A(c)$ and $p_B(c)$ are the two coders' label proportions. The label set $\mathcal{C}$ comprises L/K/S/T and O. For the four-label scheme plus O, the available exports yield $p_o=0.771$ and $p_e=0.471$, giving $\kappa=0.567$. These coefficients use character positions rather than the spans counted in Eq.~\eqref{eq:micro-prf}. The 2,571 positions are nested within the 50 sampled sentences.
 
 Empty--empty sentences contribute no span true positives. Span matching and character-level agreement use different units; reproduction materials document optional category projections.
 
-The post-generation review sample instead compares a machine-prefilled layer with human review: 140 exact typed matches among 144 machine and 148 reviewed spans give P/R/F1 of 0.972/0.946/0.959. Ninety-five sentences have identical complete span sets. The sample was stratified by historical source, empty/nonempty status, and text length from 2,179 eligible records. The frame excludes 100 initially reviewed records, 100 records reserved for an earlier pilot, and 72 pending records from the 2,451-record original Silver pool; two small strata totalling 11 records were unsampled. The estimate describes this reviewed sample; it does not provide an unbiased estimate of accuracy across the corpus.
+The post-generation review compares machine-prefilled annotations with the human-reviewed layer: 140 exact typed matches among 144 machine and 148 reviewed spans give P/R/F1 of 0.972/0.946/0.959. Ninety-five sentences have identical complete span sets. The sample was stratified by historical source, empty/nonempty status, and text length from 2,179 eligible records. The frame excludes 100 initially reviewed records, 100 records reserved for an earlier pilot, and 72 pending records from the 2,451-record original Silver pool; two small strata totalling 11 records were unsampled. The estimate is conditional on this stratified review sample.
 
-The 15-sentence assisted-review subset is nested within the post-generation Silver review cohort. Both annotators had access to machine coding suggestions. Their human layers contain the same 27 spans, yielding exact span F1 and character kappa of 1.000. These values describe agreement under machine-assisted review, where shared suggestions can influence both annotators; they are not evidence of independent blind coding or corpus-wide reliability under the final handbook.
+The 15-sentence assisted-review subset is nested within the post-generation Silver review cohort. Both annotators had access to machine coding suggestions. Their human layers contain the same 27 spans, yielding exact span F1 and character kappa of 1.000. The shared suggestions may contribute to this agreement between assisted reviewers.
 
 
 
-\paragraph{Historical annotation profile.}
+\subsection{Input and Span Distributions}
 Median input lengths are 33 Unicode code points in each Silver training/development set used by Qwen and the encoder comparison, 41.5 in the reference, and 33.5 in the additional review sample. Median span length is six code points in supervision and both review layers, compared with four in the reference. Counts include spaces and punctuation; Figure~\ref{fig:length-distributions-r40}(a,b) shows these historical distributions. Input-length distributions include records with no annotated spans. Span-length densities are estimated from all observed spans in each layer and scaled to equal maximum widths. The detailed view covers 0--20 Unicode code points, containing 96.4--100.0\% of spans in each layer; the overview retains the full range. White dots mark medians and thick lines mark interquartile ranges.
 
-Table~\ref{tab:expanded-silver-composition} reports counts for the full adopted expanded pool and its Qwen partitions. These frozen records are counted without deduplication or relabeling.
+Table~\ref{tab:expanded-silver-composition} reports counts for the full adopted expanded pool and its Qwen partitions. Counts use the experimental files, including repeated records.
 
 \begin{table}[htbp]
 \caption{Competency-span counts in the adopted expanded Silver pool and its Qwen splits.}
@@ -52,9 +52,9 @@ Full pool & 9,540 & 2,492 (26.1\%) & 155 & 11,528 & 5,265 & 4,153 & 21,101 \\
 \FloatBarrier
 
 \subsection{Additional Review of Newly Generated Silver Labels}
-The completed export contains both human layers for the 150 preselected sentences, with all confirmations recorded separately for each reviewer. Identifiers exactly match the stratified draw, and normalized sentence texts have no overlap with the original 350. The sample includes 60 cloud, 45 public-sector, and 45 listed-company sentences. The recorded GPT-6 Astra selection in Codex and Grok 4.6 with high reasoning effort in Cursor supplied visible suggestions (Table~\ref{tab:model-identity}); scores reflect assisted reviewer--reviewer agreement, not blind coding.
+Two reviewers submitted separate annotation layers for the 150 preselected sentences. Their normalized texts have no overlap with the 350 sentences in the human reference and initial and post-generation reviews. The sample includes 60 cloud, 45 public-sector, and 45 listed-company sentences. Both reviewers could see suggestions from the Codex and Cursor configurations in Table~\ref{tab:model-identity}, so their agreement reflects assisted review.
 
-Table~\ref{tab:additional-review-composition} summarizes the competency types in the two review layers.
+Table~\ref{tab:additional-review-composition} summarizes the competency types in the two review layers. Table~\ref{tab:qa150-pairs} compares the pre-adjudication span sets. Its percentile 95\% intervals use 10,000 sentence resamples within source strata, conditional on the source quotas. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/style_revision_20261005}{calculation notes} give the random seed and export checks.
 
 \begin{table}[htbp]
 \caption{Competency composition in the additional review sample: span counts (within-reviewer percentages).}
@@ -71,7 +71,7 @@ B & 3 (0.8\%) & 218 (59.7\%) & 81 (22.2\%) & 63 (17.3\%) & 365 \\
 \end{table}
 
 \begin{table}[htbp]
-\caption{Paired agreement in the additional review sample. Exact typed span F1 uses original pre-adjudication span sets. Percentile 95\% confidence intervals use 10,000 sentence resamples within source strata (seed 20260917), conditional on the source quotas.}
+\caption{Agreement in the additional review sample.}
 \label{tab:qa150-pairs}
 \centering\small
 \begin{tabularx}{\linewidth}{@{}Lccc@{}}
@@ -79,14 +79,14 @@ B & 3 (0.8\%) & 218 (59.7\%) & 81 (22.2\%) & 63 (17.3\%) & 365 \\
 Comparison & Exact F1 & 95\% interval & Identical sentences \\
 \midrule
 Reviewer A--Reviewer B & 0.816 & [0.769, 0.860] & 101/150 \\
-Astra--Grok suggestions & 0.962 & [0.937, 0.983] & 138/150 \\
-Reviewer A--Astra & 0.823 & [0.776, 0.866] & 100/150 \\
-Reviewer B--Astra & 0.850 & [0.803, 0.892] & 108/150 \\
+Codex--Cursor suggestions & 0.962 & [0.937, 0.983] & 138/150 \\
+Reviewer A--Codex suggestions & 0.823 & [0.776, 0.866] & 100/150 \\
+Reviewer B--Codex suggestions & 0.850 & [0.803, 0.892] & 108/150 \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-The 49 sentences with differing human span sets remain part of the raw agreement calculation. The exported annotations are not replaced by their intersection or a consensus layer. Character-level calculations assign O/L/K/S/T to original Unicode-code-point positions, including spaces and punctuation. Two positions have conflicting types within one reviewer layer and are excluded from both character sequences, leaving $N=5{,}990$ positions. All original spans remain in span-level F1. These raw review layers are not substituted for the human reference set; the affected record is identified in the accompanying agreement data. Final adjudication and incorporation into later training targets have not been verified. The reported coefficients therefore describe the preserved raw review layers. The resulting observed agreement over retained character positions is $p_o=0.934$, with $p_e=0.439$ and $\kappa=0.883$.
+Agreement is computed from both submitted layers, including the 49 sentences with differing span sets. Character-level calculations assign O/L/K/S/T to original Unicode-code-point positions, including spaces and punctuation. Two positions have conflicting types within one reviewer layer and are excluded from both character sequences, leaving $N=5{,}990$ positions. All original spans remain in span-level F1. The accompanying agreement data identify the affected record. Later adjudication and incorporation into training targets have not been verified. Observed agreement over the remaining character positions is $p_o=0.934$, with $p_e=0.439$ and $\kappa=0.883$.
 
 For nominal Krippendorff's $\alpha$, let $m_c$ count assignments to category $c$ across both reviewers, with $\sum_c m_c=2N$. The observed and expected disagreements are
 \begin{equation}
@@ -95,14 +95,14 @@ D_o=1-p_o,\qquad
 D_e=1-\frac{\sum_c m_c(m_c-1)}{2N(2N-1)}.
 \label{eq:qa150-alpha}
 \end{equation}
-Here $D_o=0.066$ and $D_e=0.560$, giving $\alpha=0.883$. The character coefficients and span F1 describe different units of agreement~\citep{artstein2008agreement}; the many O positions contribute to the character calculation. Agreement between two machine suggestion layers likewise measures concordance, not accuracy against an independent human reference. Export hashes, calculation code, and detailed diagnostics accompany the reproduction record.
+Here $D_o=0.066$ and $D_e=0.560$, giving $\alpha=0.883$. The character coefficients and span F1 describe different units of agreement~\citep{artstein2008agreement}; the many O positions contribute to the character calculation. The machine--machine comparison measures concordance between the suggestion layers. Export hashes and calculation code are available with the reproduction materials.
 
-\paragraph{Independent blinded coding by three annotators.}
+\subsection{Blinded Coding by Three Annotators}
 The annotators comprised one human resource management specialist with a doctorate and two employed master's students in management. The students had sustained annotation experience and three to five years of professional experience. All three contributed to handbook development; two professors advised on the coding process and handbook preparation.
 
-The formal sample contains eight listed-company, 16 public-institution, and 26 Tianchi sentences. The research team reports random selection, with one sentence per recorded advertisement identifier. Each annotator completed familiarization and training before independent coding. The archived exports establish sample membership and source counts, but the complete candidate frame and sampling execution log were not included in this release. The original draw therefore cannot be independently reproduced from the release; source-stratified bootstrap resampling quantifies agreement uncertainty conditional on this sample. Five- and 15-sentence training sets are excluded from formal agreement. The analysis uses the 3 October exports after individual self-review with access to the handbook, with machine suggestions and other annotators' labels hidden. Mean pairwise typed exact-span F1 was 0.663 in the earlier 2 October snapshot and 0.818 in the final exports; both snapshots are preserved in the reproduction materials. The final-handbook study does not relabel the historical model reference.
+The formal sample contains eight listed-company, 16 public-institution, and 26 Tianchi sentences. The research team reports random selection, with one sentence per advertisement identifier. Each annotator completed familiarization and training before independent coding. The released annotations identify the sampled sentences and sources. The candidate frame and sampling log are unavailable, so the original draw cannot be reproduced. Source-stratified bootstrap intervals quantify agreement uncertainty within this sample. Five- and 15-sentence training sets are excluded from formal agreement. Annotators then individually reviewed their own labels using the handbook, with machine suggestions and other annotators' labels hidden throughout. Mean pairwise typed exact-span F1 was 0.663 before self-review and 0.818 afterward; the analysis uses the latter labels. Both stages are available in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/style_revision_20261005}{reproduction notes}. The historical model reference retains its original labels.
 
-The three coders in Table~\ref{tab:quality-main} produced 104/123/113 spans; exact typed matches numbered 90/92/96 for A--B/A--C/B--C. Pairwise F1 ranges are 0.762--0.805 for K, 0.778--0.869 for S, and 0.865--1.000 for T. All coders identified the same two L spans in one sentence. O accounts for 63.2--64.1\% of character positions. The linked reproduction materials provide the individual annotations, per-type counts, and bootstrap code; none of the 10,000 resamples produced an undefined reported coefficient.
+The three coders in Table~\ref{tab:quality-main} produced 104/123/113 spans; exact typed matches numbered 90/92/96 for A--B/A--C/B--C. Pairwise F1 ranges are 0.762--0.805 for K, 0.778--0.869 for S, and 0.865--1.000 for T. All coders identified the same two L spans in one sentence. O accounts for 63.2--64.1\% of character positions. The reproduction materials include individual annotations, per-type counts, and bootstrap code.
 
 
 \subsection{Silver Labels against Blinded Annotations}
