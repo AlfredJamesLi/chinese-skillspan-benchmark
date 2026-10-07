@@ -6,7 +6,7 @@ The [4 October revision and checks](major_revision_20261004/README.md) update th
 
 The [current manuscript, source, and revision notes](manuscript_revision_20261002/README.md) contain 42 pages, 8 figures, and 24 tables. The [figure index](manuscript_revision_20261002/FIGURE_INDEX.md) links each figure to its assets and generation instructions. Figure 3 shows the annotation process; Figure 4 shows dataset characteristics; Figure 5 compares models. The [model guide](../docs/models.md) identifies the model releases and their study roles.
 
-Current figure and table positions, taken from the compiled Overleaf revision `c252da1`:
+Current figure and table positions, taken from the compiled Overleaf revision `4465283`:
 
 | Current item | Page | Stable source label |
 |---|---:|---|

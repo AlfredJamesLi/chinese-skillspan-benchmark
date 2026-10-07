@@ -2,7 +2,7 @@
 
 **Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements**
 
-[Read the manuscript](Chinese_SkillSpan_revised_20261002.pdf). Updated 7 October 2026: **42 pages, 8 figures, and 24 tables**. The PDF and active sources match Overleaf revision `c252da15016c5ca9658eee26f2cb2625633fad00`. The dated directory and PDF filenames are retained so that existing links continue to work; [manifest.json](manifest.json) identifies the actual source revision and file checksums.
+[Read the manuscript](Chinese_SkillSpan_revised_20261002.pdf). Updated 7 October 2026: **42 pages, 8 figures, and 24 tables**. The PDF and active sources match Overleaf revision `4465283d8b6ef7358d3b0fe08a3194d8ee62e464`. The dated directory and PDF filenames are retained so that existing links continue to work; [manifest.json](manifest.json) identifies the actual source revision and file checksums.
 
 An [earlier preprint](https://arxiv.org/abs/2604.23009v1) describes an earlier stage of this work. The present manuscript substantially revises the resource definitions, annotation procedures, and evaluation.
 

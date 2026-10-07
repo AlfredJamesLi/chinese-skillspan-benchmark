@@ -13,7 +13,7 @@ Supplementary Qwen experiments use the adopted and alternative expanded silver p
 
 \subsection{Models and Comparisons}
 
-Prompted inference compares GPT-5.6 Terra, Claude Sonnet 4.5, DeepSeek-V4-Pro, Kimi K2.6, and Qwen2.5-14B-Instruct (Qwen)~\citep{qwen2025report} under shared annotation instructions. DeepSeek is evaluated with and without thinking, giving six prompted configurations. Table~\ref{tab:model-identity} lists access routes and inference settings. GPT and Claude are accessed through APIs; their names follow the service responses. Request and response identifiers are documented in the reproduction materials linked in \hyperref[app:c]{Appendix C}.
+Prompted inference compares GPT-5.6 Terra, Claude Sonnet 4.5, DeepSeek-V4-Pro, Kimi K2.6, and Qwen2.5-14B-Instruct~\citep{qwen2025report} under shared annotation instructions. DeepSeek is evaluated with and without thinking, giving six prompted configurations. Table~\ref{tab:model-identity} lists access routes and inference settings. GPT and Claude are accessed through APIs; their names follow the service responses. Request and response identifiers are documented in the reproduction materials linked in \hyperref[app:c]{Appendix C}.
 
 To assess silver-supervised adaptation, we compare Qwen with and without a project-trained LoRA adapter~\citep{hu2022lora}, using the same base checkpoint and inference procedure. JobBERT-zh + CRF provides a supervised sequence-labeling baseline that combines an encoder pretrained on Chinese recruitment text with an inherited CRF head.
 

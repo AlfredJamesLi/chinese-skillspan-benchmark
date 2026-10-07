@@ -1,8 +1,8 @@
 {
   "revision_date": "2026-10-07",
   "description": "Current Overleaf manuscript and figure assets, with aligned study and reproduction guides",
-  "overleaf_commit": "c252da15016c5ca9658eee26f2cb2625633fad00",
-  "previous_github_commit": "ebaee1b4a28046aa0263ae2971ba230e1264ed88",
+  "overleaf_commit": "4465283d8b6ef7358d3b0fe08a3194d8ee62e464",
+  "previous_github_commit": "59eb9d959bba009f1806d494867271090a4a6d65",
   "pdf_pages": 42,
   "figure_count": 8,
   "table_count": 24,
@@ -10,7 +10,7 @@
   "filename_note": "The dated path is retained to preserve existing links; revision_date identifies its current contents.",
   "checks": {
     "source_archive_compiles_with_documented_fonts": true,
-    "compile_verification": "The source revision published to Overleaf compiled with XeLaTeX and BibTeX without unresolved references, citations, missing characters or overfull boxes. All 42 pages were visually checked. This mirror contains that verified PDF and the same active source contents, allowing only line-ending normalization.",
+    "compile_verification": "XeLaTeX and BibTeX completed without unresolved references, citations, missing characters or overfull boxes. The edited page 12 was visually checked; extracted text on all other pages is unchanged. The current PDF has 42 pages and unchanged figure/table numbers and page positions. Active source contents retain the verified Overleaf alignment.",
     "active_source_contents_match_overleaf": 51,
     "git_line_ending_normalization_only": [],
     "published_pdf_matches_verified_overleaf_pdf": true,
@@ -27,10 +27,10 @@
       8
     ],
     "font_binaries_bundled": false,
-    "formatting_only_revision": true,
     "body_paragraph_indent": "1 em (12 pt); first paragraph after each heading remains flush left",
     "page_margins": "1 inch (2.54 cm) on all four sides",
-    "body_wording_and_bibliography_unchanged": true
+    "only_redundant_qwen_parenthesis_removed": true,
+    "bibliography_and_experimental_results_unchanged": true
   },
   "source_files": [
     "0main.tex",
@@ -122,9 +122,9 @@
   "source_scope": "source_files are current compiler inputs. other_source_files include editable assets, example-rendering materials and retained earlier files; consult FIGURE_INDEX.md for current figure usage.",
   "sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "8728738d7f0e4fccc75fc5834054fc6abf25e427ec14a3a87f7d3f88830c613c",
+    "Chinese_SkillSpan_revised_20261002.pdf": "89e7731443f3dabb82134275f05e614a77faa3ec5af5102296caaf3a7584fbf3",
     "FIGURE_INDEX.md": "6fc3aba2f7cf7775954687a1ca122debc6c206da58ae15a7de0fb78161109861",
-    "README.md": "311fae3a12ee282efe6256f3b113257be9a7950c10ae210ae714353efc68ed2b",
+    "README.md": "3f8911ddcbbe7b6ad2e80575da3a9e18258cea698f68883adab5d234d68df717",
     "REVISION_HISTORY_20261006.md": "9c794642b4889687bb19b209c4db0324f5a02b0a7cea498e721c6284b71c8300",
     "abstract_contributions_20261003/README.md": "196f2263e2f144dbd21dcdc60d629192d35d1ddcbcebf58729b9625733f2b311",
     "abstract_results_focus_20261003/README.md": "3ab3e675c260c82a12b5a1363e6a3a34c6242747f351fb4c6d1d53cdd49df6cc",
@@ -149,7 +149,7 @@
     "source/0main.tex": "11084af7e97eb4b6fc9ec6494e708b1fd6ec401ac7bb3c73aea958673ddce73e",
     "source/1Introduction.tex": "a074252695c13c8467e7e7dffbca8ed626312807832511e9f566a27c9d9a22c6",
     "source/2Framework.tex": "14ec4ed5846a0c50b7265b27be390b2bce57750387e704127a888be93e21077a",
-    "source/3Experiments.tex": "3e364d7ba85184d770c2d02a04fea110c3054aef900216fcf791067c8ae4cfeb",
+    "source/3Experiments.tex": "38968cf66fc4fb6335bd0bb36af0626d289e86105384c105d567a1005f327c40",
     "source/5Relatedwork.tex": "963c63a452f30285940feba4133512ce1fb65ee78210f0f81c5e2411f6362dfa",
     "source/6Conclusion.tex": "ef2ecdbad228195eaac1ec34c7b733bc4dd1e2b71303ea044857d00301c995a6",
     "source/9Reference.bib": "e81d38439ccc2db1ac8ec405727738ebc88f0ba679751ce63bbf7ac29795f9bb",

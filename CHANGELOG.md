@@ -1,3 +1,7 @@
+# 2026-10-07 — Simplify Qwen model naming
+
+Removed the redundant short-name parenthesis after Qwen2.5-14B-Instruct in Models and Comparisons, retaining the complete model name and its citation. Updated the manuscript PDF and source to Overleaf revision `4465283`. Page count, figure/table positions, bibliography, and experimental results are unchanged.
+
 # 2026-10-07 — Align manuscript paragraph formatting
 
 Updated the manuscript PDF and sources to Overleaf revision `c252da1` (42 pages, 8 figures, 24 tables). Restored ordinary paragraph indentation, set 1-inch page margins, and adjusted two page breaks and two line breaks. Updated the current page index. Manuscript wording, bibliography, figures, tables, and experimental results are unchanged.
