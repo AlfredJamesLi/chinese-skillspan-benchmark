@@ -9,7 +9,7 @@
 
 ## 版本与用途
 
-本手册基于 B.sop_v4.2.14 系列修订，更新日期为 **2026年10月7日**，提供中文和英文版本。两版使用一致的标签标题和术语，包含中文原句、实体高亮、标签、字符区间及案例链接。
+本手册基于 B.sop_v4.2.14 系列修订，更新日期为 **2026年10月8日**，提供中文和英文版本。两版使用一致的标签标题和术语，包含中文原句、实体高亮、标签、字符区间及案例链接。
 
 中文原文是实体边界、标签和字符位置的标注依据；英文译文用于辅助理解。手册案例用于解释标注规则，不作为独立评测集。
 
@@ -21,7 +21,7 @@
 
 ## Version and intended use
 
-This handbook is a revision of the B.sop_v4.2.14 series, updated on **7 October 2026** and available in Chinese and English. Both editions use consistent label headings and terminology and include Chinese source sentences, highlighted entities, labels, character offsets, and links to examples.
+This handbook is a revision of the B.sop_v4.2.14 series, updated on **8 October 2026** and available in Chinese and English. Both editions use consistent label headings and terminology and include Chinese source sentences, highlighted entities, labels, character offsets, and links to examples.
 
 Entity boundaries, labels, and character offsets refer to the Chinese source text. English translations help readers understand the examples. The handbook examples illustrate the annotation rules and are not intended as an independent evaluation set.
 
@@ -30,6 +30,20 @@ To reproduce earlier experiments, use the archived handbook, prompts, labels, an
 Some identity expressions in EX099 and the classification of research-related expressions in EX101 (case 158) under the current rules remain pending review. See the notes accompanying those examples.
 
 The [2 October 2026 edition](../reader_20261002/README.md) remains available. File checksums are listed in [manifest.json](manifest.json).
+
+## 致谢 / Acknowledgements
+
+编写：李国静等（Chinese-SkillSpan Benchmark 研究团队）。
+
+Prepared by Guojing Li and the Chinese-SkillSpan Benchmark research team.
+
+感谢陈思妍和郑彦镔为本手册所做的文字校对工作。
+
+We thank Siyan Chen and Yanbin Zheng for proofreading this handbook.
+
+2026-10-08：更新手册署名与致谢，标注规则和案例内容不变。
+
+8 October 2026: Updated the handbook author list and acknowledgements. Annotation rules and examples are unchanged.
 
 ## 中英文一致性检查 / Bilingual consistency checks
 
