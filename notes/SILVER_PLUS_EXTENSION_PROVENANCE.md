@@ -37,4 +37,4 @@ Human-reference IDs are not in the B2 train/dev lists. Archived under concept `1
 - The human reference set is a **separate protocol**. Do not rank its F1 against 0.4331 in one sentence.
 - Qwen2.5-14B LoRA adapters are **not** a public model release.
 
-Checksums are repeated in `REPRODUCIBILITY.md`. PeerJ Data Availability wording is in `DATA_AVAILABILITY.md`.
+Checksums are repeated in `REPRODUCIBILITY.md`. Manuscript Data Availability wording is in `DATA_AVAILABILITY.md`.

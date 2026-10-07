@@ -1,4 +1,6 @@
-# Overleaf — Abstract draft (PeerJ style)
+# Overleaf — Abstract draft (15 September 2026)
+
+Historical draft retained for reference. Its wording and formatting instructions describe the September 2026 revision; see the [current manuscript](../../reproduction/manuscript_revision_20261002/README.md) for the version used now.
 
 Limit: 500 words / 3,000 characters. No footnotes, no references except a critiqued DOI.  
 Subheadings must be bold, followed by a period.

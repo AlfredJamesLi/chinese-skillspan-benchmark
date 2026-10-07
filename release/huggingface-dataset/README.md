@@ -218,7 +218,7 @@ Verified paper-main cells: Chinese JobBERT 3M typed exact **0.4331**; ChatGPT du
 - Cloud and public-institution sentences occur in test only.
 - Gold v2 notes record much lower encoder F1 on 事业单位招聘 than on 人工智能招聘. Treat source as a shift variable, not as a balanced stratum.
 
-Token-length statistics for publication should be computed from `data/corpus_splits/` if PeerJ requests them.
+Token-length statistics for publication should be computed from `data/corpus_splits/` if requested during review.
 
 ---
 

@@ -1,6 +1,6 @@
-# Data and scoring protocol (PeerJ CS) — Gold uniqueified (v2)
+# Data and scoring protocol — Gold uniqueified (v2)
 
-Date: 2026-08-22. Gold-v2 file hashes are frozen. **Submission venue: PeerJ Computer Science** (Chinese-SkillSpan dataset paper). Do not write DASFAA 2026 as the target venue. Gold v2 sha does **not** change with venue.  
+Date: 2026-08-22. Gold-v2 file hashes are frozen for the Chinese-SkillSpan dataset paper. The choice of submission venue does not change these hashes.  
 18 Gold conflicts are adjudicated. **Do not change PDF Table 3 paper S-F1 cells.** Do not overwrite original LLM dumps. Claude/Kimi fills live in `reports/views/*_filled_v2.jsonl` only.
 
 **Paper main gold (amended 2026-08-27):** authors chose **V4-only** as the reported evaluation protocol. The V4 hybrid uses the **same 2601 IDs** as Gold v2 (derived spans, not a new sample). Do **not** overwrite `gold_canonical_v2.jsonl`. Do **not** call the hybrid “human Doccano Gold”. Main scoring file: `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` (sha256 `2ad6342d…818d99`). Gold v2 typed F1 (ChatGPT 0.6365, encoder 0.1288) is **appendix / construction history** only.

@@ -1,3 +1,7 @@
+# 2026-10-07 — Use publication-neutral repository descriptions
+
+Removed unnecessary target-journal labels from project descriptions, general documentation, and release wording. Historical submission-status text now points readers to the current manuscript. Journal-specific templates, cited sources, archive identifiers, and scientific artifacts are unchanged.
+
 # 2026-10-07 — Align the manuscript and reading guides
 
 Synchronized the manuscript PDF, active sources, and figure assets with Overleaf revision `b84d27e` (41 pages, 8 figures, 24 tables). Updated current figure/table navigation, clarified the 550-sentence human-annotation coverage and the distinction between initial calibration and the later blinded study, and linked current agreement results directly. Historical identifiers, labels, predictions, scores, and released data versions are unchanged. Earlier manuscript revision notes remain available in the manuscript directory.
@@ -20,10 +24,10 @@ This log records changes to the preprint, dataset, code, models, and submission 
 
 ---
 
-## Unreleased notes (2026-09-18 academic-use / PeerJ DAS)
+## Unreleased notes (2026-09-18 academic-use / Data Availability)
 
 - Author decision: the public archive may be used for academic research and peer review; original advertisement wording is not CC-BY. Zenodo's displayed `cc-by-4.0` label remains the GitHub-hook default, not that grant.
-- PeerJ Data Availability paste now names JobBERT-zh initialization / B2 continuation and cites Zenodo `v0.1.3`. GitHub tags `v0.1.0` and `v0.1.1` have been withdrawn. No `v0.1.4`. Frozen F1 cells are unchanged.
+- Data Availability draft now names JobBERT-zh initialization / B2 continuation and cites Zenodo `v0.1.3`. GitHub tags `v0.1.0` and `v0.1.1` have been withdrawn. No `v0.1.4`. Frozen F1 cells are unchanged.
 
 ## Unreleased notes (2026-09-17 Codex-2500 Table H)
 
@@ -70,7 +74,7 @@ This log records changes to the preprint, dataset, code, models, and submission 
 
 ## Unreleased notes (2026-09-11 paper names)
 
-- Align public docs with the 0911 PeerJ draft: the frozen 150-sentence evaluation is the **human reference set** (challenge cohort + calibration cohort). Laboratory identifier Gold150 and files `data/gold150_test.jsonl`, `scripts/convert_gold150_to_bio.py`, `scripts/eval_gold150_ext.py` are unchanged. Score JSON keeps `gold150` / `challenge100` / `audit50` and adds paper-name aliases. Map: `data/gold150/README.md`.
+- Align public docs with the 11 September manuscript draft: the frozen 150-sentence evaluation is the **human reference set** (challenge cohort + calibration cohort). Laboratory identifier Gold150 and files `data/gold150_test.jsonl`, `scripts/convert_gold150_to_bio.py`, `scripts/eval_gold150_ext.py` are unchanged. Score JSON keeps `gold150` / `challenge100` / `audit50` and adds paper-name aliases. Map: `data/gold150/README.md`.
 - Does **not** retag `v0.1.3`. Does **not** change V4 hybrid JobBERT 3M **0.4331**. Does **not** rank 0.1215 / 0.5403 / 0.5536 against 0.4331.
 
 ## Unreleased notes (2026-09-11 P2 + B check)
@@ -110,7 +114,7 @@ This log records changes to the preprint, dataset, code, models, and submission 
 
 ## Unreleased notes (2026-09-09)
 
-- Removed leftover root PDFs: the rejected DASFAA draft, an outdated 0828 PeerJ-named draft, the SkillSpan NAACL 2022 reprint, the unverified `Chinese-SkillSpan-local-preview-optimized.pdf`, and the draft titled *Job Skill Extraction via LLM-Centric Multi-Module Framework*. Cite SkillSpan from the ACL Anthology. Do not host a manuscript PDF until it can be checked against Overleaf.
+- Removed leftover root PDFs: the rejected DASFAA draft, an outdated 28 August submission draft, the SkillSpan NAACL 2022 reprint, the unverified `Chinese-SkillSpan-local-preview-optimized.pdf`, and the draft titled *Job Skill Extraction via LLM-Centric Multi-Module Framework*. Cite SkillSpan from the ACL Anthology. Do not host a manuscript PDF until it can be checked against Overleaf.
 - Manuscript-body draft for Silver-plus methods and Gold150 results: `docs/paper_body_silver_plus.md`. States the JobBERT CRF (no prompt) vs Qwen2.5-14B JSON-offset LoRA (fixed prompt) split. kNN / longer SOP prompts are discussed as **unrun** future conditions, not official rows. Does **not** change V4 hybrid JobBERT 3M **0.4331**.
 
 ## Unreleased notes (2026-09-08)
@@ -145,9 +149,9 @@ GitHub, JobBERT-zh, and Zenodo `v0.1.1` are **public**.
 
 ---
 
-## PeerJ Computer Science submission
+## Submission preparation
 
-- Target venue: **PeerJ Computer Science** (single-anonymized review). Rejected DASFAA drafts are not kept in the public tree.
+- Rejected DASFAA drafts are not kept in the public tree.
 - Proposed Data Availability wording is in `DATA_AVAILABILITY.md` (Zenodo version DOI + GitHub + JobBERT-zh).
 - Submission date and Overleaf revision are not recorded here.
 

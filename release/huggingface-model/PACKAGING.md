@@ -141,9 +141,9 @@ hf upload "$HF_REPO_ID" release/huggingface-model/staging . --repo-type model
 
 After a successful upload:
 
-1. Confirm the repository is **public** (PeerJ reviewers must download without requesting access).
+1. Confirm the repository is **public** (reviewers must be able to download without requesting access).
 2. Replace `[TODO: Hugging Face model URL]` in `README.md`, `CITATION.cff`, `DATA_AVAILABILITY.md`, both cards, and `release/zenodo/.zenodo.json`.
-3. Do not treat the Hugging Face URL as the PeerJ archival DOI; archive the GitHub release on Zenodo as well.
+3. Do not treat the Hugging Face URL as an archival DOI for the research materials; archive the GitHub release on Zenodo as well.
 
 ---
 

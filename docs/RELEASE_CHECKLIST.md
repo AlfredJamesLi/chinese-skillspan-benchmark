@@ -1,4 +1,4 @@
-# Release and PeerJ submission checklist — Chinese-SkillSpan
+# Release and submission checklist — Chinese-SkillSpan
 
 This checklist records the earlier release and submission workflow. Its checked items and draft metadata reflect that stage. For current downloads and reproduction instructions, see [data access](../DATA_AVAILABILITY.md) and the [reproduction guide](../REPRODUCIBILITY.md).
 
@@ -105,7 +105,7 @@ The Data Availability text below is a draft from this workflow. The [current acc
 Replace every `[TODO: … URL]` / DOI in:
 
 - [ ] Manuscript Data Availability paragraph (Overleaf; local prompt `overleaf_cursor_bundle/CODEX_PROMPT_PEERJ_DAS.md`)
-- [ ] PeerJ submission form
+- [ ] Journal submission form
 - [x] `README.md` (Zenodo `v0.1.3` + GitHub + three JobBERT-zh Hub repos)
 - [x] `CITATION.cff` (version `0.1.3`; V4 hybrid frozen, not “undergoing adjudication”)
 - [x] `DATA_AVAILABILITY.md`
@@ -118,13 +118,13 @@ Use the **same** GitHub URL, the **same** Zenodo DOI, and the **same** Hugging F
 ## Public URLs only
 
 - [x] Public docs list GitHub, Hugging Face model pages, and Zenodo version DOI `10.5281/zenodo.22698504` (concept `10.5281/zenodo.22288337`).
-- [ ] Overleaf / PeerJ form must use those same URLs only.
+- [ ] Overleaf / journal submission form must use those same URLs only.
 
 ## Reviewer download test
 
 - [ ] An incognito browser can download dataset, code, and model card **without** requesting access.
 - [ ] GitHub is public (verified 2026-09-04).
-- [ ] Hugging Face repos are public (or have a documented gated-but-automatic licence click that PeerJ accepts).
+- [ ] Hugging Face repos are public (or have a documented automatic licence-acceptance step permitted by the target journal).
 - [ ] Zenodo files match the manifest checksums.
 
 ## Consistency gate
@@ -145,6 +145,6 @@ Use the **same** GitHub URL, the **same** Zenodo DOI, and the **same** Hugging F
 4. Archive that release in **Zenodo** and obtain a DOI.
 5. Publish the Hugging Face **dataset** and **model** repositories.
 6. Update every GitHub / Hugging Face / Zenodo link listed above.
-7. Enter those permanent links in the **PeerJ** form.
+7. Enter those permanent links in the journal submission form.
 
 The submission form should link to the publicly accessible, versioned archive.

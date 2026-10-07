@@ -1,6 +1,8 @@
-# Overleaf / PeerJ — Data Availability (paste)
+# Overleaf — Data Availability draft
 
-Use the **short** paragraph in the PeerJ form and in the manuscript Data Availability section.  
+Historical draft retained for reference. Its wording and formatting instructions describe the September 2026 revision; see the [current manuscript](../../reproduction/manuscript_revision_20261002/README.md) for the version used now.
+
+Use the **short** paragraph in the journal submission form and in the manuscript Data Availability section.  
 Cite the **v0.1.3** version DOI. Do not write that the human reference set is inside v0.1.1.  
 Do not mint or cite `v0.1.4`. Use only GitHub, Hugging Face model pages, and Zenodo.
 

@@ -2,7 +2,7 @@
 
 # Manuscript body — Silver-plus methods and results
 
-English draft for the PeerJ Computer Science **main text** (not the laboratory Chinese notes).  
+English draft for the manuscript **main text** (not the laboratory Chinese notes).  
 Scorer: `cnss-lskt-1.2.0`. Standard deviations are **n=3 sample SD**, not test-set confidence intervals.  
 Human reference freeze (artifact Gold150) SHA-256: `ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0`.
 

@@ -2,7 +2,7 @@
 
 **Chinese-SkillSpan** is a benchmark for competency span extraction from Chinese job advertisements. **JobBERT-zh** is the accompanying Chinese job-domain encoder used as a reproducible baseline.
 
-Manuscript under review at **PeerJ Computer Science** (single-anonymized review: reviewers see author names). The source manuscript is maintained on Overleaf; this repository does not host a draft PDF.
+This archived README reflects the 11 September 2026 project snapshot; it does not state the current submission status. The manuscript source is maintained on Overleaf. See the [current manuscript](../../reproduction/manuscript_revision_20261002/README.md) for the latest public PDF and source mirror.
 
 ![Chinese-SkillSpan workflow](figures/fig_pipeline_overview.jpg)
 
@@ -78,7 +78,7 @@ The historical first **200**-sentence analysis (`data/human_gold_page1_200.jsonl
 
 ## Human reference set and Silver-plus (current manuscript eval)
 
-The 0911 PeerJ draft names the frozen 150-sentence evaluation **human reference set** (challenge cohort + calibration cohort). Laboratory identifier **Gold150** and filename `gold150_test.jsonl` stay in Appendix D / this repository. JobBERT-zh has **no prompt**; Qwen2.5-14B JSON-offset LoRA uses a fixed instruction and **no** demonstrations. Draft methods: [`docs/paper_body_silver_plus.md`](docs/paper_body_silver_plus.md).
+The 11 September manuscript draft names the frozen 150-sentence evaluation **human reference set** (challenge cohort + calibration cohort). Laboratory identifier **Gold150** and filename `gold150_test.jsonl` stay in Appendix D / this repository. JobBERT-zh has **no prompt**; Qwen2.5-14B JSON-offset LoRA uses a fixed instruction and **no** demonstrations. Draft methods: [`docs/paper_body_silver_plus.md`](docs/paper_body_silver_plus.md).
 
 On that freeze, the designated JobBERT student is v6a B2 **0.5536±0.0054**. JSON-offset Qwen **0.1215±0.0092** is a supplement (not shared-handbook SFT **0.5403±0.0354**, not SOP extract **0.1724**). P1 / peel rows do not replace the v6a B2 cell. B1 vs B2 on the **same** 150 sentences is the matched-text handbook contrast (v6a B1 **0.1422±0.0138**).
 

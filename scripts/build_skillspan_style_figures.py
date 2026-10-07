@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""SkillSpan-style tables and figures for Chinese-SkillSpan (PeerJ CS).
+"""SkillSpan-style tables and figures for Chinese-SkillSpan.
 
 Corpus stats and span-length plots are computed from frozen jsonl.
 F1 bars / heatmaps use only numbers already in tables/*.csv (no new F1).
