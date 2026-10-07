@@ -1,3 +1,7 @@
+# 2026-10-07 — Correct early-preprint relationship
+
+Corrected the relationship of arXiv:2604.23009 to the present manuscript following author confirmation. The repository overview, manuscript entry, and historical-results index now distinguish the early preprint from the substantially revised study. Historical data, predictions, scores, release tags, and dataset citation metadata are unchanged.
+
 # 2026-09-13 — Restore Figure 5 bar charts
 
 At the author's request, restore the previous four-panel grouped/horizontal bar-chart design and align the figure notes and current PDF hash. All statistics and other manuscript revisions are retained.
@@ -102,7 +106,7 @@ This file distinguishes preprint, dataset, code, model, and PeerJ submission lin
 
 ## Unreleased notes (2026-09-09)
 
-- Removed leftover root PDFs: the rejected DASFAA draft, an outdated 0828 PeerJ-named draft, the SkillSpan NAACL 2022 reprint, the unverified `Chinese-SkillSpan-local-preview-optimized.pdf`, and the sister-paper IEEE Access PDF. Cite SkillSpan from the ACL Anthology. Do not host a manuscript PDF until it can be checked against Overleaf.
+- Removed leftover root PDFs: the rejected DASFAA draft, an outdated 0828 PeerJ-named draft, the SkillSpan NAACL 2022 reprint, the unverified `Chinese-SkillSpan-local-preview-optimized.pdf`, and the draft titled *Job Skill Extraction via LLM-Centric Multi-Module Framework*. Cite SkillSpan from the ACL Anthology. Do not host a manuscript PDF until it can be checked against Overleaf.
 - Manuscript-body draft for Silver-plus methods and Gold150 results: `docs/paper_body_silver_plus.md`. States the JobBERT CRF (no prompt) vs Qwen2.5-14B JSON-offset LoRA (fixed prompt) split. kNN / longer SOP prompts are discussed as **unrun** future conditions, not official rows. Does **not** change V4 hybrid JobBERT 3M **0.4331**.
 
 ## Unreleased notes (2026-09-08)
@@ -184,5 +188,7 @@ No model weights are versioned in Git.
 
 ## arXiv / preprint versions
 
-This paper does not yet have an arXiv identifier. Do not use sister-paper ids `2604.21525` or `2604.23009`. This repository does not host a manuscript PDF.
+An earlier preprint of this work is available as [arXiv:2604.23009v1](https://arxiv.org/abs/2604.23009v1). The present manuscript substantially revises its resource definitions, annotation procedures, and evaluation. The preprint describes an earlier stage of the study; its results and protocols should be interpreted in that version's context.
+
+**Correction, 7 October 2026:** The author confirmed that `2604.23009` is an early preprint of this work. The previous description of it as a separate paper, and the statement that this work had no arXiv identifier, were incorrect. The repository now links the early preprint separately from the [manuscript snapshot](reproduction/manuscript_revision_20261002/README.md) and versioned dataset archives. Earlier commits retain the original documentation; this correction does not change archived experimental results.
 

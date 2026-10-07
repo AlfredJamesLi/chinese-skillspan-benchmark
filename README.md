@@ -10,6 +10,8 @@ A benchmark for competency span extraction in Chinese job advertisements, with a
 
 Current manuscript: **Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements**. [Read the manuscript and revision notes](reproduction/manuscript_revision_20261002/README.md).
 
+An earlier preprint of this work is available as [arXiv:2604.23009v1](https://arxiv.org/abs/2604.23009v1). The present manuscript substantially revises its resource definitions, annotation procedures, and evaluation. The preprint describes an earlier stage of the study; its results and protocols should be interpreted in that version's context.
+
 **[Data and access](DATA_AVAILABILITY.md) · [Reproduce results](REPRODUCIBILITY.md) · [Models](docs/models.md) · [Paper-to-file index](reproduction/PAPER_INDEX.md)**
 
 ![Chinese-SkillSpan workflow](reproduction/manuscript_revision_20261002/source/figures/Figure1_drawio_restored_20261004.svg)

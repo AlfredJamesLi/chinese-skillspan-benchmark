@@ -1,6 +1,8 @@
-# Paper results index
+# Historical paper results index
 
-Consolidated results for **Chinese-SkillSpan / PeerJ Computer Science**. Numbers in `paper/` come from the manuscript tables. Numbers in `repo/` use **Gold v2** (`gold_canonical_v2.jsonl`) and scorer `cnss-lskt-1.2.0`.
+**Version note (7 October 2026):** This directory preserves results from earlier manuscript and evaluation stages. The files in `paper/` were transcribed from the earlier DASFAA draft and contain tables also reported in [arXiv:2604.23009v1](https://arxiv.org/abs/2604.23009v1), an early preprint of this work. They are retained as historical records. Use the [paper-to-file index](../reproduction/PAPER_INDEX.md) for the revised study; the two sets of results use different protocols and should not be treated as interchangeable.
+
+Historical results for **Chinese-SkillSpan**. Numbers in `paper/` come from the manuscript tables. Numbers in `repo/` use **Gold v2** (`gold_canonical_v2.jsonl`) and scorer `cnss-lskt-1.2.0`.
 
 ## Layout
 

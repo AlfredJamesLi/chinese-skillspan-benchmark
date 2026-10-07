@@ -2,6 +2,8 @@
 
 **Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements**
 
+An earlier preprint of this work is available as [arXiv:2604.23009v1](https://arxiv.org/abs/2604.23009v1). The present manuscript substantially revises its resource definitions, annotation procedures, and evaluation. The preprint describes an earlier stage of the study; its results and protocols should be interpreted in that version's context.
+
 [Read the current PDF](Chinese_SkillSpan_revised_20261002.pdf). Updated 5 October 2026; 41 pages. Existing directory and PDF filenames remain stable for links.
 
 The manuscript uses descriptive names for the source corpus, human reference, Silver supervision, and review/agreement samples. [The resource naming guide](../../docs/terminology.md) distinguishes the original Silver candidate pool, model-specific training/development sets, and overlapping expanded pools. Archived identifiers and data remain unchanged.
