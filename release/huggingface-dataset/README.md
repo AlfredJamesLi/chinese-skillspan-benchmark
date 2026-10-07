@@ -19,7 +19,7 @@ license: other
 
 # Dataset card: Chinese-SkillSpan
 
-**Historical template:** the body below describes an earlier hybrid-reference release and is preserved for provenance. It is not the current dataset card or access guide. Use the [current resource names](../../docs/terminology.md), [human reference set guide](../../data/gold150/README.md), and [current data access and reuse terms](../../DATA_AVAILABILITY.md). Existing file names, versions, DOI links, and historical results below remain unchanged.
+**Historical template:** the body below describes an earlier hybrid-reference release and is preserved for provenance. It is not the current dataset card or access guide. Use the [current resource names](../../docs/terminology.md), [human reference set guide](../../data/gold150/README.md), and [current data access and reuse terms](../../DATA_AVAILABILITY.md). The descriptions below refer to that historical release.
 
 **Chinese-SkillSpan** is a Chinese job-advertisement corpus for **competency span extraction**. Models such as **JobBERT-zh** are evaluated on this resource.
 
@@ -35,7 +35,7 @@ The manuscript title used for this release is:
 
 > Chinese-SkillSpan: A Benchmark for Competency Span Extraction from Chinese Job Advertisements
 
-The public dataset name is **Chinese-SkillSpan**. Do not use older working titles that mentioned “ESCO-Aligned” or DASFAA.
+The public dataset name is **Chinese-SkillSpan**. Earlier working titles have been superseded.
 
 ---
 
@@ -46,7 +46,7 @@ The public dataset name is **Chinese-SkillSpan**. Do not use older working title
 **Types:** L (language), K (knowledge), S (skill / tool), T (trait).  
 **Primary metric:** typed exact micro-F1 (`cnss-lskt-1.2.0`, `--align-mode official`). Relaxed F1 uses IoU ≥ 0.5.
 
-Paper-main test labels are the **V4 hybrid** (derived). Gold v2 is a separately frozen human/Doccano-derived file on the **same 2,601 IDs**. Do not mix the two protocols when reporting a single SOTA number.
+Paper-main test labels are the **V4 hybrid** (derived). Gold v2 is a separately frozen human/Doccano-derived file on the **same 2,601 IDs**. Results from these two label versions require separate reporting.
 
 ---
 
@@ -63,7 +63,7 @@ Paper-main test labels are the **V4 hybrid** (derived). Gold v2 is a separately 
 
 Four Chinese recruitment sources appear in the files. The Table 1 split is source-imbalanced (see [REPRODUCIBILITY.md](../../REPRODUCIBILITY.md)).
 
-**Inconsistency (do not hide):** `data/repartition_v1` also sums to 22,840 but uses `16,350` / `2,268` / `4,222`. That assignment is a draft and is **not** the paper-main gold.
+**Alternative partition:** `data/repartition_v1` also sums to 22,840 but uses `16,350` / `2,268` / `4,222`. That assignment is a draft and is not the evaluation reference used for that release.
 
 **Evaluation gold (2,601 unique IDs), not the full 3,237-row test split:**
 
@@ -99,7 +99,7 @@ Optional evaluation-only Zhang projection (L+K → KNOWLEDGE, S+T → SKILL) is 
 - Job-use tools and programming languages → **S**; course / principle / basics / syntax → full knowledge NP as **K**.
 - CET-6 / 英语六级 → **L** under Handbook B (Gold v2 / Handbook A placed CET-6 in **K**; that file must not be relabelled).
 - Application / medical / notice / benefit boilerplate → empty.
-- No `L > S > K > T` type priority.
+- Assign types from their definitions and the sentence context; the four labels have no fixed priority.
 
 ---
 

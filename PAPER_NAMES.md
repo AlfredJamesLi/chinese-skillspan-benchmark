@@ -20,39 +20,39 @@ Use these names when reading the manuscript. Exact paths stay unchanged for repr
 
 ## Detailed mapping
 
-Short names in the manuscript are display aliases. Original file paths, experiment keys, model identifiers, hashes and archived labels remain authoritative. This guide records the mapping without changing data or model identities.
+Short names in the manuscript are display aliases. Original file paths, experiment keys, model identifiers, hashes and archived labels remain authoritative. This guide maps readable names to the identifiers used in the archived records.
 
-| Category | Paper name | Recorded identifier | Meaning and handling |
+| Category | Paper name | Recorded identifier | Description |
 |---|---|---|---|
-| model | Qwen | `Qwen2.5-14B-Instruct` | Model full name at first use; Qwen later. Display alias only; do not change model IDs or weight paths. |
-| model | Qwen (no adapter) | `no_adapter; Qwen2.5-14B-Instruct without project adapter` | Same baseline prediction across current Qwen comparisons. Keep prediction keys and files. |
-| model | Qwen + LoRA | `Qwen2.5-14B-Instruct with B2 LoRA` | Keep seed 42/43/44 distinct. Keep LoRA_42/LoRA_43/LoRA_44 keys and checkpoints. |
-| model | Claude Sonnet 4.5 | `Claude Sonnet 4.5` | API gateway; request `claude-sonnet-4-5`, response `claude-sonnet-4-5-20250929`. Preserve recorded access metadata. |
-| model | DeepSeek-V4-Pro | `DeepSeek-V4-Pro; deepseek-v4-pro` | Official DeepSeek API (`https://api.deepseek.com`), with request and retained response model `deepseek-v4-pro`. Non-thinking/thinking are separate configurations; preserve mode and output cap. |
+| model | Qwen | `Qwen2.5-14B-Instruct` | Full model name at first use; Qwen in subsequent prose. |
+| model | Qwen (no adapter) | `no_adapter; Qwen2.5-14B-Instruct without project adapter` | Shared baseline prediction across the current Qwen comparisons. |
+| model | Qwen + LoRA | `Qwen2.5-14B-Instruct with B2 LoRA` | Seeds 42, 43, and 44 have separate LoRA_42, LoRA_43, and LoRA_44 keys and checkpoints. |
+| model | Claude Sonnet 4.5 | `Claude Sonnet 4.5` | API gateway; request `claude-sonnet-4-5`, response `claude-sonnet-4-5-20250929`. |
+| model | DeepSeek-V4-Pro | `DeepSeek-V4-Pro; deepseek-v4-pro` | Official DeepSeek API (`https://api.deepseek.com`), with request and retained response model `deepseek-v4-pro`. Non-thinking and thinking runs are separate configurations with recorded modes and output caps. |
 | model | Kimi K2.6 | `kimi-k2.6` | Official Moonshot API (`https://api.moonshot.cn`); thinking disabled. Request and retained response model fields match. |
-| model | GPT-5.6 Terra | `gpt-5.6-terra` | API gateway; request `gpt-5.4`, response `gpt-5.6-terra`. Display name follows the response identifier; see the access note below. Preserve both fields. |
+| model | GPT-5.6 Terra | `gpt-5.6-terra` | API gateway; request `gpt-5.4`, response `gpt-5.6-terra`. Display name follows the response identifier; see the access note below. Both fields are recorded below. |
 | model | GPT-6 Astra (via Codex) | `gpt-6-astra` | Official Codex access for adopted Silver labels; distinct from the GPT-5.6 Terra comparison baseline. Codex is the interface. |
-| model | Grok 4.6 (high) | `Grok 4.6-high` | Author-confirmed Cursor selection: Grok 4.6 with high reasoning effort. The official model ID is `grok-4.6`; high is a setting. Preserve the historical selection wording and suggestion files. |
-| model | JobBERT-zh initialization | `https://huggingface.co/AlfredJames/jobbert-zh` | Released 3M domain-adapted encoder with inherited V4 CRF. Keep published URL and model repository ID. |
-| model | Silver-trained JobBERT-zh + CRF | `https://huggingface.co/AlfredJames/jobbert-zh-v6a` | Silver-trained continuation; default released checkpoint is seed 42. Keep published URL and repository ID; do not replace initialization. |
-| experiment | Silver training/development sets (JobBERT) | `v6a` | 2156 train / 169 dev; earlier versus revised labels. Documentation alias only; preserve manifest names. |
-| experiment | Silver training/development sets (Qwen and encoders) | `v6a_nocross` | 2150 train / 169 dev; train/dev exact NFC text matches removed. Keep exact manifest and membership. |
-| dataset | Human reference set | `Gold150; gold150_test.jsonl` | 150 sentences; 663 spans. Keep canonical file, hashes and scripts; add a descriptive README alias. |
-| dataset | Initial Silver review sample | `A100` | 100 records with LLM-generated labels reviewed before bulk generation. Keep A100 IDs; distinguish later independent exercise claim and later review versions. |
-| dataset | Post-generation Silver review sample | `QA100` | 100 records in the later stratified review. Keep QA100 IDs and sampled membership. |
+| model | Grok 4.6 (high) | `Grok 4.6-high` | Author-confirmed Cursor selection: Grok 4.6 with high reasoning effort. The official model ID is `grok-4.6`; high is a setting. The historical selection wording is retained in the suggestion records. |
+| model | JobBERT-zh initialization | `https://huggingface.co/AlfredJames/jobbert-zh` | Released 3M domain-adapted encoder with inherited V4 CRF. The published URL identifies this initialization release. |
+| model | Silver-trained JobBERT-zh + CRF | `https://huggingface.co/AlfredJames/jobbert-zh-v6a` | Silver-trained continuation; default released checkpoint is seed 42. Published separately from the initialization release. |
+| experiment | Silver training/development sets (JobBERT) | `v6a` | 2156 train / 169 dev; earlier versus revised labels. The split manifests identify the records used. |
+| experiment | Silver training/development sets (Qwen and encoders) | `v6a_nocross` | 2150 train / 169 dev; train/dev exact NFC text matches removed. The split manifests record exact membership. |
+| dataset | Human reference set | `Gold150; gold150_test.jsonl` | 150 sentences; 663 spans. The linked guide documents the canonical file and checksums. |
+| dataset | Initial Silver review sample | `A100` | 100 records with LLM-generated labels reviewed before bulk generation. A100 identifies this review sample; later exercises and revisions have separate records. |
+| dataset | Post-generation Silver review sample | `QA100` | 100 records in the later stratified review. QA100 identifies the sampled records. |
 | dataset | nested review subset | `Dual15` | 15-sentence QA100 assisted-review subset; September 17 export verifies separate coder queues and confirmations. It is distinct from IAA-50 blind calibration. |
-| dataset | further conflict-origin records | `H730` | 730 original Silver records from the conflict queue beyond the initial review. Keep H730 IDs and membership. |
-| dataset | other original Silver records | `E1621` | 1621 non-conflict-origin historical extraction records. Keep E1621 and historical SOP--CWS provenance. |
-| protocol | shared protocol | `rev2 patch1` | Frozen system instruction and user template. Keep original prompt filenames, bytes and hashes. |
-| protocol | span parser | `parser v1.1` | Occurrence-based output to original character offsets. Keep parser version, implementation and hash. |
-| protocol | span scorer | `cnss-lskt-1.2.0` | Typed exact and relaxed span scoring. Keep scorer identity; do not recalculate or modify scoring. |
-| handbook | Handbook v4.2.14 | `B.sop_v4.2.14` | Current guide, distinct from frozen execution protocols. Keep version identity; no relabeling. |
-| handbook | Handbook v4.2.9 | `B.sop_v4.2.9` | Historical calibration guide. Keep historical agreement binding. |
-| handbook | frozen reference version | `B.sop_v4.2.10` | Reference metadata; not a later handbook revision. Preserve metadata exactly. |
-| example | shared-experience example | `1838-s0008; R23` | Appendix A.3 example. Keep source_id, offsets and original Chinese text. |
-| documentation | reproduction guide | `REPRODUCIBILITY.md` | Existing GitHub reproduction index. Keep file name and add links to new naming/experimental notes. |
-| documentation | experimental notes | `reproduction/experimental_notes/README.md` | Detailed experiments and reproduction reminders. Retain directory; use short link text in documentation. |
-| documentation | paper naming guide | `PAPER_NAMES.md; reproduction/paper_names.csv` | New human-readable guide and machine-readable map. Add these documentation files; no canonical data renaming. |
+| dataset | further conflict-origin records | `H730` | 730 original Silver records from the conflict queue beyond the initial review. H730 identifies those records. |
+| dataset | other original Silver records | `E1621` | 1621 non-conflict-origin historical extraction records. E1621 identifies records with historical SOP--CWS provenance. |
+| protocol | shared protocol | `rev2 patch1` | Frozen system instruction and user template. Prompt files and hashes identify the executed instructions. |
+| protocol | span parser | `parser v1.1` | Occurrence-based output to original character offsets. The version and implementation hash identify the parser. |
+| protocol | span scorer | `cnss-lskt-1.2.0` | Typed exact and relaxed span scoring. The version identifies the scoring implementation. |
+| handbook | Handbook v4.2.14 | `B.sop_v4.2.14` | Handbook series; dated reading editions and frozen execution instructions are listed separately. |
+| handbook | Handbook v4.2.9 | `B.sop_v4.2.9` | Guide used for the historical calibration study. |
+| handbook | frozen reference version | `B.sop_v4.2.10` | Handbook version recorded in the frozen reference metadata. |
+| example | shared-experience example | `1838-s0008; R23` | Appendix A.3 example, identified by source_id and Chinese character offsets. |
+| documentation | reproduction guide | `REPRODUCIBILITY.md` | Repository entry point for reproduction instructions. |
+| documentation | experimental notes | `reproduction/experimental_notes/README.md` | Detailed experiments and reproduction instructions. |
+| documentation | paper naming guide | `PAPER_NAMES.md; reproduction/paper_names.csv` | Readable resource names and their machine-readable mapping to original identifiers. |
 
 ## Recorded API names and study roles
 
@@ -90,7 +90,7 @@ GPT-5.6 Terra and Claude Sonnet 4.5 comparison baselines used third-party API ga
 
 - Introduce full model names once; use the short names consistently in narrative, tables and chart legends.
 
-- Preserve model versions and modes in configuration documentation. A short display name does not authorize changing an API request or checkpoint.
+- Preserve model versions and modes in configuration documentation. Configuration records use the original API requests and checkpoint identifiers.
 
 - Keep the primary data, frozen metadata, source IDs, experiment keys and public model URLs unchanged. Prefer readable documentation links and aliases over renaming these files.
 
@@ -98,9 +98,8 @@ GPT-5.6 Terra and Claude Sonnet 4.5 comparison baselines used third-party API ga
 
 - The Dual15 export supports independent submissions within the QA100 review design; it does not establish blind raw-text coding.
 
-- Existing historical notes may use canonical identifiers; preserve those records and link to this guide instead of mass replacement.
+- Historical notes use their original identifiers; this guide provides the corresponding display names.
 
 The CSV mapping is in `reproduction/paper_names.csv`. The containing Git commit identifies this documentation version.
 
 </details>
-

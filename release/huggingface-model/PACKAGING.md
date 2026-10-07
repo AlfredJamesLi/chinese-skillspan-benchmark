@@ -1,6 +1,6 @@
 # Packaging Chinese JobBERT for Hugging Face
 
-Local-only guide. This file does **not** create a Hugging Face repository and does **not** upload weights.
+Historical packaging instructions prepared on 4 September 2026. For current model downloads and loading instructions, see the [model guide](../../docs/models.md).
 
 Public name: **Chinese JobBERT**. Laboratory aliases: JobBERT-zh / 3M v4 (`encoder_ckpt65000` + V4 CRF).
 
@@ -108,9 +108,9 @@ release/huggingface-model/staging/
 
 ---
 
-## 5. Hugging Face upload (ready, not executed here)
+## 5. Upload commands prepared for the initial release
 
-Set the repository id yourself. Do not invent one.
+Replace the repository placeholder with the intended Hugging Face model repository ID before running these commands.
 
 ```bash
 # Still from Chinese_skill_benchmark_Paper/

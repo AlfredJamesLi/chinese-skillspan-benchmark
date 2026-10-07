@@ -1,4 +1,6 @@
-# PeerJ Computer Science — data, code, and model materials
+# PeerJ Computer Science submission materials — September 2026 record
+
+This page records submission preparation on 18 September 2026. Availability statements and draft text below refer to that stage. For current downloads and the later Qwen adapter release, see [data access](../DATA_AVAILABILITY.md) and the [model guide](models.md).
 
 Venue rules (PeerJ CS author instructions / policies, checked 2026-09-18):
 
@@ -6,31 +8,31 @@ Venue rules (PeerJ CS author instructions / policies, checked 2026-09-18):
 - GitHub alone is not enough: a GitHub repo **must** have an archival DOI (Zenodo).
 - Files must be machine-readable (not PDF/screenshots of tables).
 - If a dataset grows after the cited archive, say so: what is in the DOI, what is later, and how it will be versioned.
-- Do not invent a Hugging Face **dataset** URL. JobBERT repositories are model repos only.
+- The listed Hugging Face repositories host JobBERT models. Dataset access is provided through the versioned Zenodo archive.
 - Do not list Google Sites, Google Drive, or a private GitHub URL in the PeerJ form.
 - The manuscript PDF must be PeerJ Computer Science format: US Letter, line numbers, 12 pt, left-justified, 2.5 cm margins. Abstract subheadings are **Background. Methods. Results. Conclusions.**
-- CRediT contributions are entered in the PeerJ form by the authors. This file does not invent them.
+- The authors complete the CRediT contribution statement in the submission form.
 
 Checksums stay in `REPRODUCIBILITY.md`, not in the running DAS paragraph.
 
 ---
 
-## Three layers (do not collapse)
+## Materials recorded at this stage
 
-| Layer | What reviewers download today | Persistent ID | Contains human reference / Silver-plus B2? |
+| Layer | Access recorded in September 2026 | Persistent ID | Contains human reference / Silver-plus B2? |
 |---|---|---|---|
 | **A. Cited archive** | Zenodo `v0.1.3` | version DOI [10.5281/zenodo.22698504](https://doi.org/10.5281/zenodo.22698504); earlier [v0.1.2](https://doi.org/10.5281/zenodo.22685143); first snapshot [v0.1.1](https://doi.org/10.5281/zenodo.22288338) remains on Zenodo; concept [10.5281/zenodo.22288337](https://doi.org/10.5281/zenodo.22288337) | **Yes in `v0.1.3` only** |
 | **B. Public code** | https://github.com/AlfredJamesLi/chinese-skillspan-benchmark | current default branch; GitHub Release `v0.1.3` | Human reference / B2 from `v0.1.3` |
 | **C. Still laboratory-only** | Qwen2.5-14B LoRA adapters | no public Hub repo | adapters not released |
 
-GitHub tags `v0.1.0` and `v0.1.1` have been withdrawn. Do not send reviewers to those tags. No `v0.1.4` has been minted.
+GitHub tags `v0.1.0` and `v0.1.1` have been withdrawn. The cited dataset release at this stage was `v0.1.3`.
 
 JobBERT-zh initialization: https://huggingface.co/AlfredJames/jobbert-zh  
 JobBERT-zh B2 continuation: https://huggingface.co/AlfredJames/jobbert-zh-v6a
 
 ---
 
-## PeerJ form — paste this Data Availability text
+## Draft Data Availability statement at this stage
 
 Use `\url{...}` in TeX so long DOIs do not collapse word spaces.
 
@@ -40,12 +42,12 @@ Companion files: `DATA_AVAILABILITY.md`, `REPRODUCIBILITY.md`, `docs/models.md`.
 
 ---
 
-## PeerJ form — other fields (do not invent)
+## Author-completed submission fields
 
 | Field | Use |
 |---|---|
 | Funding | National Social Science Fund of China, Grant No. 21BGL142 |
-| Competing interests | Authors complete this; do not invent |
+| Competing interests | To be completed by the authors |
 | Ethics | Recruitment advertisements only; not a curated applicant-CV corpus. Authors confirm any remaining title/workplace-name review |
 | CRediT | Authors complete in the PeerJ form |
 | Data / code URLs | The three public URLs above only |

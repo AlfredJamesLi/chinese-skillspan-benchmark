@@ -11,4 +11,4 @@ Start with the [reproduction guide](../REPRODUCIBILITY.md) or [paper-to-file ind
 | Reproduction details | [Evaluation instructions](EVALUATION_ENTRY.md), [experimental notes](experimental_notes/README.md) |
 | Annotation protocol | [Silver prompt package](silver_prompt_api_v1/README.md) |
 
-Supporting results remain available regardless of whether they improve performance. Historical document names identify archived versions; the current [resource naming guide](../PAPER_NAMES.md) provides readable aliases.
+The directory includes primary, supplementary, and historical results. Historical file names identify archived versions; the [resource naming guide](../PAPER_NAMES.md) maps them to the names used in the manuscript.

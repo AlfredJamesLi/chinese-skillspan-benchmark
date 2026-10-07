@@ -1,11 +1,5 @@
 # Chinese-SkillSpan
 
-The [resource naming guide](docs/terminology.md) distinguishes annotation pools, experimental splits, and human review samples. Current names describe their use; archived identifiers remain unchanged.
-
-[Annotation roles and blinded-sample membership](reproduction/reviewer_supplement_20261004/README.md) clarify which results use human references and which use generated targets.
-
-The [4 October revision and checks](reproduction/major_revision_20261004/README.md) update the current manuscript, data accounting, source-document analysis and uncertainty estimates. Earlier experiments remain archived.
-
 A benchmark for competency span extraction in Chinese job advertisements, with annotation guidelines, Silver supervision, a human reference set, and evaluation tools.
 
 Current manuscript: **Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements**. [Read the manuscript and revision notes](reproduction/manuscript_revision_20261002/README.md).
@@ -27,10 +21,10 @@ An earlier preprint of this work is available as [arXiv:2604.23009v1](https://ar
 | Silver training/development sets (JobBERT) | 2,156 training / 169 development | JobBERT-zh + CRF training and checkpoint selection |
 | Expanded Silver pool (adopted Codex) | 9,540 records | Includes earlier supervision; complete partitions are not publicly released |
 | Alternative expanded Silver pool | 9,646 records | Overlapping supplementary configuration; complete partitions are not publicly released |
-| Historical human coding and review | 500 unique sentences | Reference construction and quality checks; not 500 Gold test sentences |
+| Historical human coding and review | 500 unique sentences | Distinct cohorts for reference construction and quality checks |
 | Blinded agreement sample | 50 sentences; three annotators | Final-handbook agreement; separate from historical coverage and not a model test set |
 
-Terminology follows the [annotation and training guide](docs/terminology.md). Manuscript numbers follow the [display-precision policy](docs/numerical_precision.md); source result files retain their original precision.
+The [annotation and training guide](docs/terminology.md) explains the resource names and their relationships. [Annotation roles and sample membership](reproduction/reviewer_supplement_20261004/README.md) describe the human-reference and model-generated annotation layers. Manuscript numbers follow the [display-precision policy](docs/numerical_precision.md); source result files retain their original precision.
 
 The task uses flat character spans with four types: language (L), knowledge-related requirements (K), occupational skills (S), and transversal competencies (T). The categories are ESCO-informed; the task does not assign ESCO concept IDs.
 
@@ -38,7 +32,7 @@ The authors confirm that the adopted Silver labels were generated through offici
 
 ## Get started
 
-1. **Use the data:** download the [v0.1.3 archive](https://doi.org/10.5281/zenodo.22698504), then read the [human-reference guide](data/gold150/README.md) and [Chinese and English annotation handbooks](notes/handbooks/reader_20261007/README.md) (2026-10-07 reading edition; historical experiment inputs remain separately archived).
+1. **Use the data:** download the [v0.1.3 archive](https://doi.org/10.5281/zenodo.22698504), then read the [human-reference guide](data/gold150/README.md) and [Chinese and English annotation handbooks](notes/handbooks/reader_20261007/README.md) (updated 7 October 2026).
 2. **Inspect results:** open the [paper-to-file index](reproduction/PAPER_INDEX.md). It separates shared-guideline inference, supervised adaptation, and expanded-Silver experiments.
 3. **Reproduce a score:** follow the [evaluation guide](reproduction/EVALUATION_ENTRY.md) with the matching protocol and saved predictions.
 4. **Use a model:** see the [model guide](docs/models.md). The encoder and CRF checkpoint have separate loading requirements.
@@ -64,6 +58,8 @@ Training summaries are means and sample standard deviations across seeds 42, 43,
 | Chinese-supervised XLM-R-large and ESCOXLM-R | [Model guide: three seeds per encoder](docs/models.md) · [Current audit archive](https://doi.org/10.5281/zenodo.22942441) |
 
 Use the version-specific dataset DOI above for v0.1.3. The repository concept DOI currently resolves to the `qwen-repro-pack-20260919` snapshot, not the v0.1.3 dataset record. The archive covers the earlier released benchmark components. Later expansion materials on GitHub are partial; complete expanded training partitions are not supplied. Qwen adapters and frozen predictions are available in the separate model-reproduction archive. [Availability and licensing](DATA_AVAILABILITY.md) describes what readers can obtain and reuse.
+
+The [4 October revision notes](reproduction/major_revision_20261004/README.md) document changes to the manuscript, data accounting, source-document analysis, and uncertainty estimates.
 
 ## Citation
 

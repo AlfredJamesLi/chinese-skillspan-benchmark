@@ -1,6 +1,6 @@
 # Zenodo archive — Chinese-SkillSpan
 
-**Historical deposit instructions:** retain the body below for the original release record. Current resource names and relationships are in the [terminology guide](../../docs/terminology.md); current downloads and component-specific reuse terms are in [data access](../../DATA_AVAILABILITY.md). This note does not change a published DOI, version, or archived file.
+**Historical deposit record.** This page describes preparation of the first archive. Current resource names are in the [terminology guide](../../docs/terminology.md); downloads and component-specific reuse terms are in [data access](../../DATA_AVAILABILITY.md).
 
 This folder originated with the first deposit. For the current dataset use [v0.1.3](https://doi.org/10.5281/zenodo.22698504); the separate [Qwen reproduction archive](https://doi.org/10.5281/zenodo.22851581) contains the released adapters. The creator list in `.zenodo.json` has been corrected to nine authors. Other historical release instructions below are not a statement of current file availability; use [data access](../../DATA_AVAILABILITY.md) and [archive notes](../../docs/archive_notes.md).
 
@@ -9,13 +9,13 @@ This folder originated with the first deposit. For the current dataset use [v0.1
 
 ## Purpose
 
-Zenodo is the **primary permanent archive** (DOI) for the version of Chinese-SkillSpan that PeerJ reviewers download without requesting access. Public access otherwise goes through GitHub and Hugging Face. Do not list a Google Sites or Drive page in the PeerJ form.
+Zenodo provides the permanent, versioned dataset archive. GitHub hosts the code and documentation, and Hugging Face hosts the published JobBERT models.
 
 ## Record metadata
 
 Machine-readable metadata: [`.zenodo.json`](.zenodo.json).
 
-Verified fields already filled:
+Metadata fields:
 
 - Title
 - Creator order (Guojing Li … Xiangyu Zhao)
@@ -23,7 +23,7 @@ Verified fields already filled:
 - Keywords
 - Upload type: `dataset`
 - Grant mentioned in the description: National Social Science Fund of China, **21BGL142**
-- Related identifiers that exist today: the public GitHub repository and the JobBERT-zh Hugging Face model
+- Related identifiers recorded for this deposit: the public GitHub repository and the JobBERT-zh Hugging Face model
 
 The GitHub-minted record already carries version DOI `10.5281/zenodo.22288338` and concept DOI `10.5281/zenodo.22288337`. **No Zenodo community id is set.**
 
@@ -45,8 +45,8 @@ Exclude:
 
 ## How this DOI should be cited
 
-The minted DOI is already in `README.md`, `DATA_AVAILABILITY.md`, and the Hugging Face model-card template. The Overleaf Data Availability paragraph still needs the same wording.
+The DOI above identifies the first snapshot. Use the version-specific DOI for the dataset being cited; current archive links are listed in [data access](../../DATA_AVAILABILITY.md).
 
 ## Reviewer access
 
-The Zenodo record https://zenodo.org/records/22288338 is the open archive for PeerJ. Confirm in an incognito window that files download without a request.
+The first snapshot is available at https://zenodo.org/records/22288338. For the human reference set and released Silver training/development files, use [v0.1.3](https://doi.org/10.5281/zenodo.22698504).

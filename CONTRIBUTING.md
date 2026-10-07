@@ -2,7 +2,7 @@
 
 Thank you for helping improve **Chinese-SkillSpan** and **JobBERT-zh**. Please open an issue at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/issues. For matters that should not be public, contact the corresponding author, Xiangyu Zhao (`xianzhao@cityu.edu.hk`).
 
-Please do **not** open a pull request that uploads new job-advertisement text.
+Please use synthetic examples when reporting issues. Requirements for sharing source text are listed below.
 
 ---
 
@@ -12,8 +12,8 @@ Use a short, reproducible description. Include file paths relative to this repos
 
 ### Annotation issues
 
-- Disagreement with Handbook B (`B.sop_v4.2.14`): span boundary, type (L / K / S / T), empty-span cases.
-- State whether you used Gold v2, the V4 hybrid, the 200-sentence human overlay, or the 150-sentence human reference set. Do not mix protocols in one ticket.
+- Questions about span boundaries, types (L / K / S / T), or empty annotations. Cite the handbook version and date you used; the [handbook directory](notes/handbooks/README.md) lists available editions.
+- State whether you used Gold v2, the V4 hybrid, the 200-sentence human overlay, or the 150-sentence human reference set. Report issues for different evaluation protocols separately.
 - Quote only the **minimum** span needed to discuss the label. Prefer `id` + token offsets over pasting a full advertisement.
 
 ### Data-processing bugs
@@ -24,13 +24,13 @@ Use a short, reproducible description. Include file paths relative to this repos
 ### Code bugs
 
 - Scorer alignment, CRF trainer, evaluation scripts.
-- Paper-main scoring, CRF train, and human-reference eval entry points are clone-relative (`scripts/cnss_paths.py`). Other files under `scripts/` may still contain a laboratory absolute root. Human-reference JSON-offset Qwen is not the shared-handbook SFT protocol.
+- Main scoring, CRF training, and human-reference evaluation entry points use paths relative to the cloned repository (`scripts/cnss_paths.py`). Some other scripts still contain laboratory-specific paths. Qwen JSON-offset and shared-guideline SFT are separate evaluation configurations.
 
 ### Reproducibility failures
 
 - You followed `REPRODUCIBILITY.md` and did not obtain the committed CSV cell (for example JobBERT_3M_v4 typed exact **0.433118** after jieba snap).
 - Include OS, Python version, `jieba` version, and whether `output/` or `data/frozen_preds/` was used.
-- Do not file a bug because direct scoring of `jobbert_3m_v4.jsonl` without jieba snap yields ~0.255 — that behaviour is documented.
+- Direct scoring of `jobbert_3m_v4.jsonl` without jieba boundary alignment yields approximately 0.255. To reproduce the hybrid-reference result, follow the corresponding preprocessing steps in the evaluation guide.
 
 ### Model-card corrections
 
@@ -55,8 +55,8 @@ If you need to illustrate a sentence, invent a short synthetic example or use a 
 ## Development notes
 
 - Public-facing prose is English. Laboratory notes may remain Chinese.
-- Do not overwrite `data/gold_canonical_v2.jsonl` or the frozen V4 hybrid with a rebuilt file unless the SHA-256 is unchanged.
-- Do not add Concept Accuracy, Time-OOD, or English six-dataset SRICL tables to this project.
+- Frozen reference files are identified by SHA-256. A rebuilt file must match the archived checksum to serve as the same reference.
+- Concept Accuracy, Time-OOD, and English six-dataset SRICL tables belong to a separate project.
 - A public code of conduct has not been added yet.
 
 ---

@@ -12,7 +12,7 @@ Added the complete table/figure/prose relocation index, naming guide, seven supp
 
 # Changelog — Chinese-SkillSpan / Chinese JobBERT
 
-This file distinguishes preprint, dataset, code, model, and PeerJ submission lines. It does not invent a PeerJ article URL or an arXiv id.
+This log records changes to the preprint, dataset, code, models, and submission materials. Entries describe the project state on their recorded dates.
 
 ---
 
@@ -191,4 +191,3 @@ No model weights are versioned in Git.
 An earlier preprint of this work is available as [arXiv:2604.23009v1](https://arxiv.org/abs/2604.23009v1). The present manuscript substantially revises its resource definitions, annotation procedures, and evaluation. The preprint describes an earlier stage of the study; its results and protocols should be interpreted in that version's context.
 
 **Correction, 7 October 2026:** The author confirmed that `2604.23009` is an early preprint of this work. The previous description of it as a separate paper, and the statement that this work had no arXiv identifier, were incorrect. The repository now links the early preprint separately from the [manuscript snapshot](reproduction/manuscript_revision_20261002/README.md) and versioned dataset archives. Earlier commits retain the original documentation; this correction does not change archived experimental results.
-

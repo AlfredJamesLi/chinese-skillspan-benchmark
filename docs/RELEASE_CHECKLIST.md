@@ -1,8 +1,8 @@
 # Release and PeerJ submission checklist — Chinese-SkillSpan
 
-Complete every item before a public upload. This document does **not** authorise GitHub, Hugging Face, Zenodo, or PeerJ publication. No remote action has been taken.
+This checklist records the earlier release and submission workflow. Its checked items and draft metadata reflect that stage. For current downloads and reproduction instructions, see [data access](../DATA_AVAILABILITY.md) and the [reproduction guide](../REPRODUCIBILITY.md).
 
-Proposed PeerJ wording (use the minted version DOI). Copy the short paragraph in `docs/PEERJ_CS_MATERIALS.md`.
+The Data Availability text below is a draft from this workflow. The [current access guide](../DATA_AVAILABILITY.md) lists released components and version-specific DOIs.
 
 > The Chinese-SkillSpan dataset, annotation guidelines, predefined data splits, and documentation are available at https://doi.org/10.5281/zenodo.22698504 (version v0.1.3; concept DOI https://doi.org/10.5281/zenodo.22288337). An earlier snapshot is https://doi.org/10.5281/zenodo.22685143 (version v0.1.2). The first archival snapshot remains at https://doi.org/10.5281/zenodo.22288338 (version v0.1.1) on Zenodo; the corresponding GitHub tags v0.1.0 and v0.1.1 have been withdrawn. The source code, preprocessing scripts, and evaluation tools are available at https://github.com/AlfredJamesLi/chinese-skillspan-benchmark. The JobBERT-zh initialization encoder and inherited CRF are available at https://huggingface.co/AlfredJames/jobbert-zh. The JobBERT-zh B2 continuation is available at https://huggingface.co/AlfredJames/jobbert-zh-v6a (default checkpoint is seed 42). The 150-sentence human reference set and Silver-plus B2 training/development files are included in v0.1.3 and are not in Zenodo v0.1.1 or v0.1.2. Qwen LoRA adapters, configurations, frozen predictions and scoring tools are published separately at https://doi.org/10.5281/zenodo.22851581; complete expanded-Silver training texts are not in that package. These materials are released for academic research and peer review. Original job-advertisement wording is not licensed as CC-BY.
 
@@ -14,7 +14,7 @@ Proposed PeerJ wording (use the minted version DOI). Copy the short paragraph in
 - [ ] No `openai` / Moonshot / Anthropic keys, cookies, or `.env` files.
 - [ ] Sister-project (IEEE Access / SRICL) code and English six-dataset claims are absent.
 - [ ] Scorer string is `cnss-lskt-1.2.0`.
-- [ ] Trainers match `scripts/train_cn_roberta_crf.py` (do not invent a second entry point).
+- [ ] The documented CRF training entry point is `scripts/train_cn_roberta_crf.py`.
 
 ## Clean installation test
 
@@ -71,7 +71,7 @@ Proposed PeerJ wording (use the minted version DOI). Copy the short paragraph in
 - [ ] YAML front matter parses.
 - [ ] Names: **Chinese JobBERT**, **Chinese-SkillSpan**.
 - [ ] Licence field remains `other` until the item above is done.
-- [ ] Loading example still matches `BertCRF` (not a fake `pipeline`).
+- [ ] The loading example uses the implemented `BertCRF` class.
 
 ## Hugging Face Dataset Card validation
 
@@ -85,7 +85,7 @@ Proposed PeerJ wording (use the minted version DOI). Copy the short paragraph in
 - [ ] `.zenodo.json` is valid JSON.
 - [ ] Creator order matches the paper.
 - [ ] Grant **21BGL142** appears.
-- [ ] No invented community.
+- [ ] Any listed Zenodo community has a verified identifier.
 - [ ] `related_identifiers` placeholders replaced with real URLs/DOIs (invalid placeholder strings will fail Zenodo ingest).
 
 ## DOI creation
@@ -137,7 +137,7 @@ Use the **same** GitHub URL, the **same** Zenodo DOI, and the **same** Hugging F
 - [ ] Funding: National Social Science Fund of China, Grant No. **21BGL142**.
 - [ ] Inconsistencies (22,840 vs. two splits; 3,237 vs. 2,601; V4 vs. Gold v2; draft PDF filenames) remain **reported**, not silently “fixed”.
 
-## Publication sequence (do not skip)
+## Planned publication sequence
 
 1. Finalise local files and licences (this checklist).
 2. Create the **public** GitHub repository.
@@ -147,4 +147,4 @@ Use the **same** GitHub URL, the **same** Zenodo DOI, and the **same** Hugging F
 6. Update every GitHub / Hugging Face / Zenodo link listed above.
 7. Enter those permanent links in the **PeerJ** form.
 
-Do not invert steps 4–7 (PeerJ must not receive a private GitHub URL as the archive).
+The submission form should link to the publicly accessible, versioned archive.

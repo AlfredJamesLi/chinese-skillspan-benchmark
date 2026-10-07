@@ -4,7 +4,7 @@ The authors requested wording closer to the acknowledgments in [PeerJ Computer S
 
 The revised Chinese-SkillSpan paragraph states that the tools were used under author direction and that final decisions on manuscript content, analyses, interpretations, and conclusions remained with the authors. It retains the actual assistance with manuscript revision, language editing, LaTeX formatting, code preparation and checking, and Figure 1 artwork. Research use of models for annotation and experiments remains documented separately.
 
-The paragraph does not claim that AI was used only for grammar, that no AI-generated material contributed to the work, or that every output has already been reviewed by every author. Verification of AI-assisted content is stated as an author responsibility. Dates and the absence of retained model-version identifiers remain disclosed.
+The disclosure covers the listed forms of AI assistance and assigns responsibility for checking AI-assisted content to the authors. It also records the dates and the absence of retained model-version identifiers.
 
 Only the acknowledgments in `source/0main.tex` changed. No experimental results, annotation rules, bibliography entries, figures, or other manuscript text were altered. The full tracked-source backup and previous PDF are retained in the local delivery folder. Compilation and comparison checks, followed by inspection of the rendered acknowledgments page, precede synchronization. The repository manifest records the source and PDF hashes and verification results.
 

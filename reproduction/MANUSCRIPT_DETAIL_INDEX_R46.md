@@ -2,7 +2,7 @@
 
 # Manuscript reproduction details (R46)
 
-Prepared 12 September 2026. This file is not typeset. It preserves identifiers and execution details removed from reader-facing prose; it does not change any data or result. Intended GitHub destination: `notes/manuscript_reproduction_details.md`, linked from `REPRODUCIBILITY.md`. This new index has not yet been published to GitHub.
+Prepared 12 September 2026. This index records identifiers and execution details omitted from the manuscript prose. The original proposed destination was `notes/manuscript_reproduction_details.md`; this file now preserves that preparation record under its R46 identifier.
 
 ## Verified public entries
 
@@ -16,7 +16,7 @@ The following public `main`-branch files returned HTTP 200 on 12 September 2026:
 
 ## Stable artifact mappings
 
-Do not rename files to match manuscript display names.
+The table maps manuscript descriptions to the original file and experiment identifiers.
 
 | Reader-facing description | Existing identifier or path |
 |---|---|
@@ -34,11 +34,11 @@ Do not rename files to match manuscript display names.
 
 Manuscript-project paths and public-repository paths are different namespaces. This table does not imply that every local evidence file has been released. Appendix A retains the handbook-version table and Appendix D retains the core terminology crosswalk.
 
-The GitHub contents API returned HTTP 404 for `notes/manuscript_display_archive_20260910` on `main` on 12 September 2026. The pre-R46 manuscript described 40 tables and 11 figures there. This pass does not claim that directory is publicly accessible: restore or locate and verify the actual public archive before advertising a direct link. Do not delete local display archives or their original conditions.
+The GitHub contents API returned HTTP 404 for `notes/manuscript_display_archive_20260910` on `main` on 12 September 2026. The pre-R46 manuscript described 40 tables and 11 figures there. That directory was unavailable at the time of the check; the corresponding local display archives retained the original experimental conditions.
 
 ## Historical input mismatch
 
-In `tab:appendix-f-sop`, archived inputs for `1801-s0004` and `1990-s0022` differ from the frozen human-reference wording. Complete ID coverage is not identical input text. The manuscript retains this limitation without printing IDs. The IDs were documented in the pre-R46 source; their independent public audit file was not located during this pass. Preserve them here when publishing the index; do not describe such an audit file as already public.
+In `tab:appendix-f-sop`, archived inputs for `1801-s0004` and `1990-s0022` differ from the frozen human-reference wording. Complete ID coverage is not identical input text. The manuscript retains this limitation without printing IDs. The IDs were documented in the pre-R46 source; their independent public audit file was not located during this pass. The IDs are retained here to document the mismatch; availability of a separate public audit file was unverified.
 
 ## Shared-guideline execution details
 
