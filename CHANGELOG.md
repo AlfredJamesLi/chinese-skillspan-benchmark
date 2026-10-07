@@ -1,3 +1,7 @@
+# 2026-10-07 — Align manuscript paragraph formatting
+
+Updated the manuscript PDF and sources to Overleaf revision `c252da1` (42 pages, 8 figures, 24 tables). Restored ordinary paragraph indentation, set 1-inch page margins, and adjusted two page breaks and two line breaks. Updated the current page index. Manuscript wording, bibliography, figures, tables, and experimental results are unchanged.
+
 # 2026-10-07 — Use publication-neutral repository descriptions
 
 Removed unnecessary target-journal labels from project descriptions, general documentation, and release wording. Historical submission-status text now points readers to the current manuscript. Journal-specific templates, cited sources, archive identifiers, and scientific artifacts are unchanged.

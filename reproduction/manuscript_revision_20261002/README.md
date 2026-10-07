@@ -2,7 +2,7 @@
 
 **Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements**
 
-[Read the manuscript](Chinese_SkillSpan_revised_20261002.pdf). Updated 7 October 2026: **41 pages, 8 figures, and 24 tables**. The PDF and active sources match Overleaf revision `b84d27e529c91ba85d4aa95c32799c8cdd4ab76c`. The dated directory and PDF filenames are retained so that existing links continue to work; [manifest.json](manifest.json) identifies the actual source revision and file checksums.
+[Read the manuscript](Chinese_SkillSpan_revised_20261002.pdf). Updated 7 October 2026: **42 pages, 8 figures, and 24 tables**. The PDF and active sources match Overleaf revision `c252da15016c5ca9658eee26f2cb2625633fad00`. The dated directory and PDF filenames are retained so that existing links continue to work; [manifest.json](manifest.json) identifies the actual source revision and file checksums.
 
 An [earlier preprint](https://arxiv.org/abs/2604.23009v1) describes an earlier stage of this work. The present manuscript substantially revises the resource definitions, annotation procedures, and evaluation.
 
@@ -18,4 +18,4 @@ Manuscript-preparation assistance is disclosed in Acknowledgements. Funding is r
 
 The `source/` directory contains the active LaTeX inputs, bibliography, bibliography style, class, and figure assets listed in `manifest.json`. Use XeLaTeX, BibTeX, then XeLaTeX twice from that directory. The Noto CJK fonts named in `source/0main.tex` must be supplied in `source/fonts/noto-cjk/`; font binaries are not bundled in this mirror. The Overleaf project includes the working font files. Other retained source files may describe earlier layouts; the manifest identifies the current inputs.
 
-The mirror is checked by compilation with those font dependencies and by comparison with the Overleaf PDF text. [Earlier revision notes](REVISION_HISTORY_20261006.md) retain the preceding editorial history and its original numbering.
+The current source revision was compiled with those font dependencies and checked across all 42 pages. Ordinary body paragraphs use a 1 em first-line indent; paragraphs immediately after headings remain flush left. Page margins are 1 inch (2.54 cm). The manuscript wording, results, references, and figure/table numbering are unchanged by these formatting adjustments. [Earlier revision notes](REVISION_HISTORY_20261006.md) retain the preceding editorial history and its original numbering.
