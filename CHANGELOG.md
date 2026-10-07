@@ -1,3 +1,7 @@
+# 2026-10-07 — Align the manuscript and reading guides
+
+Synchronized the manuscript PDF, active sources, and figure assets with Overleaf revision `b84d27e` (41 pages, 8 figures, 24 tables). Updated current figure/table navigation, clarified the 550-sentence human-annotation coverage and the distinction between initial calibration and the later blinded study, and linked current agreement results directly. Historical identifiers, labels, predictions, scores, and released data versions are unchanged. Earlier manuscript revision notes remain available in the manuscript directory.
+
 # 2026-10-07 — Correct early-preprint relationship
 
 Corrected the relationship of arXiv:2604.23009 to the present manuscript following author confirmation. The repository overview, manuscript entry, and historical-results index now distinguish the early preprint from the substantially revised study. Historical data, predictions, scores, release tags, and dataset citation metadata are unchanged.

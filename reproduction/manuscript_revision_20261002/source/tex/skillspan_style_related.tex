@@ -1,21 +1,21 @@
 % Compare prediction units, annotation schemes, label sources, and reported materials.
 \begin{table}[!htbp]
 \centering\small
-\caption{Selected recruitment resources: prediction units, annotation schemes, and reported materials. Table~\ref{tab:annotation-lineage} reports the sizes and roles of the Chinese-SkillSpan subsets.}
+\caption{Recruitment resources: prediction units, annotation schemes, and materials.}
 \label{tab:related-span}
 \setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.13}
 \begin{tabularx}{\linewidth}{@{}P{.20\linewidth}P{.17\linewidth}P{.34\linewidth}L@{}}
 \toprule
 Study / language & Prediction unit & Annotation scheme and label source & Reported materials \\
 \midrule
-\citet{sayfullina2018softskills}; English & Candidate phrases in context & Binary labels indicating whether a soft-skill phrase refers to an applicant; not open-boundary extraction & Annotated soft-skill contexts \\
+\citet{sayfullina2018softskills}; English & Candidate phrases in context & Binary labels indicating whether a supplied soft-skill phrase refers to an applicant & Annotated soft-skill contexts \\
 \citet{gnehm2022skills}; German & Requirement spans and finer-grained skill areas & Coarse EDU/EXP/LNG labels; finer-grained skill areas and taxonomy matching & Article and released domain-adapted models \\
 SkillSpan~\citep{zhang2022skillspan}; English & Source-text spans & SKILL and KNOWLEDGE in two potentially overlapping annotation layers & Dataset, code, and annotation guidance \\
 Kompetencer~\citep{jensen2022kompetencer}; Danish / English & Spans and fine-grained labels & Manually annotated skill/knowledge spans; distant labels from the ESCO API; manually corrected Danish test labels & Dataset and code \\
 \citet{cao2021occupational}; Chinese & Recruitment entities & Manually annotated skill and specialty entities encoded with BIOES & Article and supporting data files \\
-Chinese-SkillSpan; Chinese & Flat character-level spans & L/K/S/T types; frozen human reference and model-generated Silver supervision & Handbook, protocols, baseline predictions, scoring code, and independent annotation exports \\
+Chinese-SkillSpan; Chinese & Flat character-level spans & L/K/S/T types; human reference labels and model-generated silver supervision & Core dataset, handbook, protocols, baseline predictions, scoring code, and individual blinded-annotation layers \\
 \bottomrule
 \end{tabularx}
 \par\smallskip
-{\footnotesize\RaggedRight\textit{Notes.} EDU, EXP, and LNG denote education, experience, and language requirements, respectively. For Chinese-SkillSpan, the independent annotation exports contain the individual layers from the blinded agreement study.\par}
+{\footnotesize\RaggedRight\textit{Notes.} EDU, EXP, and LNG denote education, experience, and language requirements, respectively.\par}
 \end{table}

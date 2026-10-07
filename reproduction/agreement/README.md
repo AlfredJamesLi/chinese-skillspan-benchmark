@@ -4,7 +4,7 @@ Current names and sample relationships are defined in the [resource guide](../..
 
 
 
-The historical calibration-study exports contain 50 paired sentences and 2,571 Unicode code points. Original texts are aligned by source ID; spaces and punctuation remain included. The flat character labels are L/K/S/T/O. In this sample both coders have zero L frequency.
+The initial calibration-study exports contain 50 paired sentences and 2,571 Unicode code points. According to the authors' reconstruction, the sentences were coded separately with machine suggestions available and then adjudicated. An earlier protocol describes raw-text-only coding; the available annotations do not resolve this difference. The [annotation-stage documentation](../annotation_documentation_20261007/README.md) preserves these accounts. Original texts are aligned by source ID; spaces and punctuation remain included. The flat character labels are L/K/S/T/O. In this sample both coders have zero L frequency.
 
 
 
@@ -46,7 +46,7 @@ The 2,571 characters are nested within 50 sentences, not independent sample unit
 
 
 
-The author-supplied September 17 Dual15 export records both coders' 15/15 confirmations. Its seven manifest file hashes were checked and the coefficients independently recalculated over 719 characters and 27 matching spans. The administrative seed layer equals both human layers. The author subsequently corrected the design on 25 September: machine coding suggestions were available to the annotators. The earlier strict-blind interpretation is withdrawn. These coefficients describe assisted-review agreement and do not establish independent blind reliability. The 50-sentence historical raw-text study remains a separate design.
+The author-supplied September 17 Dual15 export records both coders' 15/15 confirmations. Its seven manifest file hashes were checked and the coefficients independently recalculated over 719 characters and 27 matching spans. The administrative seed layer equals both human layers. The author subsequently corrected the design on 25 September: machine coding suggestions were available to the annotators. The earlier strict-blind interpretation is withdrawn. These coefficients describe assisted-review agreement and do not establish independent blind reliability. The initial 50-sentence calibration sample is separate; conflicting accounts of machine-suggestion visibility are documented in the annotation-stage notes.
 
 
 
@@ -54,7 +54,7 @@ The additional review sample's nominal Krippendorff alpha is 0.8826, calculated 
 
 
 
-The nested 15 records add no unique sentences. Human reference construction and the two original review samples cover 350 sentences; the non-overlapping additional review sample raises coverage to 500. These designs do not form a common before/after reliability experiment.
+The nested 15 records add no unique sentences. Human reference construction and the two original review samples cover 350 sentences; the non-overlapping additional review sample raises historical coverage to 500. The separate blinded agreement study adds 50 sentences, bringing total human annotation and review coverage to 550. These designs do not form a common before/after reliability experiment.
 
 
 
@@ -68,5 +68,5 @@ The author reports four chronological stages (50, early150 including15, later150
 
 
 
-The [completed statistical release](finalguide_abc_20261003/README.md) provides frozen pseudonymized labels for 50 sentences, pairwise agreement, source-stratified confidence intervals, a manifest and executable scoring code. Mean typed exact F1 is 0.818; three-rater character alpha is 0.907. The latest separate labels include individual self-review with access to the handbook. All three coders and all 50 sentences remain in the analysis. Training sets of five and fifteen sentences are excluded. The release records both the original plan and documented execution, and does not turn this blinded agreement sample into an independent Gold test set.
+The [completed statistical release](finalguide_abc_20261003/README.md) provides frozen pseudonymized labels for 50 sentences, pairwise agreement, source-stratified confidence intervals, a manifest and executable scoring code. Mean typed exact F1 is 0.818; three-rater character alpha is 0.907. The latest separate labels include individual self-review with access to the handbook. Preparation and coding used the v4.2.14 handbook series; the exact files used for formal coding and individual self-review have not been established. All three coders and all 50 sentences remain in the analysis. Training sets of five and fifteen sentences are excluded. The release records both the original plan and documented execution, and does not turn this blinded agreement sample into an independent Gold test set.
 

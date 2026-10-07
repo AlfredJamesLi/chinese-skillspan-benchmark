@@ -1,5 +1,10 @@
 # Frozen Qwen diagnostic counts and chart data
 
+The current manuscript presents these diagnostics as **Figure 6**:
+[PDF](../manuscript_revision_20261002/source/figures/qwen_diagnostics_chart_0913.pdf)
+and [editable SVG](../manuscript_revision_20261002/source/figures/qwen_diagnostics_chart_0913.svg).
+The dated presentation note below retains the figure number used at that time.
+
 The manuscript's former Table 12 is displayed as a four-panel statistical figure. These companion files retain the full counts: type_metrics.csv, length_recall.csv, empty_reference.csv, chart_data.json and the exact archived_table.tex. The chart uses full-precision values from the existing Round2 diagnostic summary; no inference, rescoring, or model API calls are performed. No confidence intervals or significance tests are inferred from three seeds on a shared test set.
 
 K, S and T gold support is 125, 448 and 88; L has only two spans and remains count-based. Length groups contain 346, 243 and 74 spans and may share sentences. Empty-reference sentence errors and span errors are distinct quantities. The four plotted runs are no adapter, LoRA seed 42, seed 43, seed 44. The [paper index](../PAPER_INDEX.md) identifies the final figure and its current page.

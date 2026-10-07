@@ -1,28 +1,28 @@
 % Verified against GitHub commit 11355ff and the author-supplied Server A README.
 \subsection{Exploratory Expanded-Silver Experiments}
 \label{sec:expanded-silver}
-The expanded Qwen runs use seed 42 and the shared prompt, occurrence output, parser, and Qwen training settings in Table~\ref{tab:training-settings}. Loss applies only to assistant output. Both Qwen checkpoints are selected at epoch one using Silver-validation exact F1; decoding is deterministic with a 2,048-token output cap. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/source/tex/expanded_silver_results_20260917.tex}{complete configurations} retain the parameter records. The expanded JobBERT runs retain the domain-adapted encoder and inherited CRF. The adopted-pool JobBERT run uses 8,842 training and 698 development records. Qwen instead uses 348 validation and 350 test records with the same 8,842-record training set.
+The expanded Qwen experiments use 8,842/348/350 training/validation/test records from the adopted silver pool and 8,943/351/352 from the alternative pool. Both combine earlier supervision with additional annotations and differ in annotation channel and included records. Shared records retain their split assignments. Checkpoints are selected by typed exact-span F1 on silver validation labels. The silver tests use separate sentence splits whose source-document groups overlap with training. Fitting and model selection exclude human-reference sentences (\hyperref[app:d]{Appendix D}).
 
+The expanded Qwen runs use seed 42, the shared prompt and parser, the output format based on span text and occurrence indices, and the training settings in Table~\ref{tab:training-settings}. The loss is computed only over the assistant's output. Training uses early stopping with a patience of two epochs. Both Qwen checkpoints are selected at epoch one by exact F1 on the silver validation set; decoding is deterministic with a 2,048-token output cap. Full settings are available in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/source/tex/expanded_silver_results_20260917.tex}{experiment archive}. The expanded JobBERT runs retain the domain-adapted encoder and inherited CRF. The adopted-pool JobBERT run uses 8,842 training and 698 development records. Qwen instead uses 348 validation and 350 test records with the same 8,842-record training set.
 
-Table~\ref{tab:expanded-silver-main} reports the two Qwen runs on their Silver validation and test sets and the human reference set.
 
 \begin{table}[htbp]
-\caption{Expanded-pool Qwen results (seed 42). Silver columns measure agreement with generated targets; human-reference columns use human-finalized labels. Scores are typed exact micro-F1 except the final relaxed-F1 column.}
+\caption{Expanded-pool Qwen results (seed 42).}
 \label{tab:expanded-silver-main}
 \centering\small
 \begin{tabularx}{\linewidth}{@{}Lcccc@{}}
 \toprule
 Pool variant & \makecell{Silver validation\\agreement} & \makecell{Silver test\\agreement} & \makecell{Human reference\\exact} & \makecell{Human reference\\relaxed} \\
 \midrule
-Alternative: 8,943 / 351 / 352 & 0.783 & 0.759 & 0.597 & 0.713 \\
-Adopted: 8,842 / 348 / 350 & 0.833 & 0.809 & 0.585 & 0.703 \\
+Alternative & 0.783 & 0.759 & 0.597 & 0.713 \\
+Adopted & 0.833 & 0.809 & 0.585 & 0.703 \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-Counts give training / validation / test records. The adopted and alternative pools contain 9,540 and 9,646 records, respectively. Both combine earlier Silver supervision and public-prompt annotations; they differ in the annotation channel used for a 2,500-candidate batch and the records retained after checking. Checkpoints were selected at epoch one with patience two.
+Typed span micro-F1 (exact unless marked relaxed). Training/validation/test sizes: alternative, 8,943/351/352; adopted, 8,842/348/350.
 \end{table}
 
-The adopted pool gives higher agreement with its Silver test labels and approximately 0.011 lower exact F1 on the human reference set than the alternative pool. The replaced batch contains 2,353 accepted Codex annotations and 2,459 accepted API-gateway annotations, respectively. The score difference therefore combines changes in annotations and record inclusion.
+The annotation-channel comparison replaces a 2,500-candidate batch (Table~\ref{tab:source-stages}). The adopted-pool configuration has higher agreement with its silver test labels but a lower observed exact F1 on the human reference than the alternative-pool configuration. The replaced batch contains 2,353 accepted Codex annotations and 2,459 accepted annotations obtained through the API, respectively. The score difference thus reflects changes in both labels and included records.
 
 On the human reference set, expanded JobBERT obtains exact F1 of 0.242 with the alternative pool and 0.232 with the adopted pool (seed 42); the latter has relaxed F1 of 0.485. A separate configuration trained on 7,117 newly annotated records gives $0.237\pm0.002$ across three seeds. All are below the original Silver-trained JobBERT-zh + CRF result. Alongside training size, these experiments change the annotation protocol, source composition, and development set.
 

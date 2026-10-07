@@ -1,19 +1,19 @@
 \begin{table}[!htbp]
 \centering\small
-\caption{Available components and supported reproduction tasks.}
+\caption{Research materials and access conditions.}
 \label{tab:component-access}
-\begin{tabularx}{\linewidth}{@{}P{.23\linewidth}P{.30\linewidth}L@{}}
-\toprule Component & Access route / available objects & Supported use and access conditions \\
+\begin{tabularx}{\linewidth}{@{}P{.23\linewidth}L P{.29\linewidth}@{}}
+\toprule
+Resource & Contents & Access \\
 \midrule
-Dataset archive v0.1.3 & \href{https://doi.org/10.5281/zenodo.22698504}{Texts and labels}: source corpus, human reference (150 sentences), and Qwen/encoder Silver train/dev (2,150/169 records) & Download the named version to inspect the released labels and use the specified splits. \\
-Qwen reproduction archive & \href{https://doi.org/10.5281/zenodo.22851581}{Model archive}: three Qwen LoRA adapters trained on the 2,150/169 Silver sets, selected expanded adapters, frozen predictions, prompts and scorer & Follow its model index for inference or rescoring; obtain base weights and supervision files from their respective sources. \\
-Expanded pools & 9,540 adopted / 9,646 supplementary records; complete files verified locally against split manifests & Published IDs and selected outputs support inspection and rescoring. Complete inputs are available through the corresponding author for confidential peer review. \\
-Additional review and historical coding & Pseudonymized texts and human layers linked in Data Availability; source hashes and cohort membership & Recalculate agreement for the documented historical annotation and assisted-review procedures. \\
-Three-annotator blinded study & \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261003}{Agreement release}: 50 sentences, three individual label layers, source IDs, scorer and intervals & Recalculate agreement among individual annotations on the 50 formal sentences; the five familiarization and 15 practice sentences are documented separately. \\
-Encoders with Chinese supervision & Six public \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/0c73207c0f9b00fa87f385b78bcb7342bd00bfcb/results_snapshots/table11_evidence_20260924/HF_RELEASE.md}{Hugging Face checkpoints}; \href{https://doi.org/10.5281/zenodo.22942441}{audit DOI 10.5281/zenodo.22942441} & Frozen predictions, code and configurations support rescoring. Local rescoring verified all six runs; server checkpoint re-inference is separately recorded. \\
-
+Dataset v0.1.3 & Corpus, handbook, 150-sentence human reference, and 2,150/169 silver training/development records & \href{https://doi.org/10.5281/zenodo.22698504}{Dataset archive} \\
+Qwen models & Three LoRA adapters trained on the original silver data, selected adapters trained on expanded data, predictions, prompts, and scoring code & \href{https://doi.org/10.5281/zenodo.22851581}{Model archive}; base weights and supervision obtained separately \\
+Expanded silver pools & 9,540 adopted and 9,646 alternative records & Public split IDs and selected outputs; complete inputs through the corresponding author for confidential peer review \\
+Historical annotation and assisted review & Pseudonymized texts, human annotation layers, source hashes, and sample membership & \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/reproduction/evidence_review_20260925/annotation_layers/README.md}{Annotation archive} \\
+Blinded agreement study & 50 sentences, three individual annotation layers, source IDs, scorer, and intervals & \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261003}{Agreement release} \\
+Chinese-supervised encoders & Six checkpoints, predictions, code, and configurations & \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/0c73207c0f9b00fa87f385b78bcb7342bd00bfcb/results_snapshots/table11_evidence_20260924/HF_RELEASE.md}{Model index} and \href{https://doi.org/10.5281/zenodo.22942441}{evaluation archive} \\
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-Data Availability states the component-specific reuse terms. Reproduction scope follows the released materials and access conditions listed above.
+Scores can be recalculated from the released predictions; rerunning a model also requires its weights and input data. Scores for all six encoder runs were checked locally using saved predictions; results from rerunning inference on the server are documented separately. The five familiarization and 15 practice sentences are documented separately from the blinded study's 50 formal sentences. The expanded-pool files were checked locally against the recorded split membership. Data Availability describes the reuse terms for each resource.
 \end{table}

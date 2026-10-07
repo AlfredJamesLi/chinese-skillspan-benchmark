@@ -1,64 +1,29 @@
-\subsection{Annotation Quality and Inter-Annotator Agreement}
+\phantomsection
 \label{sec:annotation-quality}
 
-We assessed generated labels in two assisted-review comparisons and agreement under the final handbook in a separate blinded annotation study.
+Two assisted-review studies assessed generated labels with machine suggestions visible. In a post-generation sample of 100 sentences, separate from the initial 100 reviewed records, agreement between machine-prefilled and human-reviewed annotations reached typed exact-span F1 of 0.959. Two reviewers separately annotated an additional 150-sentence sample, achieving pre-adjudication typed exact-span F1 of 0.816 (\hyperref[app:b]{Appendix B}).
 
-\paragraph{Original Silver post-generation review.}
-A separate sample of 100 sentences was reviewed after bulk annotation, excluding the initial 100 reviewed records. Comparing the machine-prefilled annotations with the human-reviewed layer yielded typed exact-span F1 of 0.959. Machine suggestions were visible, so this score measures agreement with assisted human review. \hyperref[app:b]{Appendix B} reports the sampling frame and supporting counts.
+Three annotators independently labeled the same 50-sentence sample drawn from sentences considered for silver annotation, with one sentence per advertisement identifier. They worked in separate Doccano projects with familiarization and practice materials~\citep{klie2024annotationquality}; machine suggestions and other annotators' labels were hidden throughout. Each annotator could consult the study handbook and revise their own labels during individual self-review. Agreement was calculated after self-review, excluding familiarization and practice sentences (\hyperref[sec:blinded-agreement-details]{Appendix B}).
 
-\paragraph{Additional review.}
-On the additional 150-sentence sample, two reviewers submitted separate annotations with machine suggestions visible. Their pre-adjudication layers yielded typed exact-span F1 of 0.816 (Table~\ref{tab:qa150-pairs}).
-
-\paragraph{Blinded annotation protocol.}
-Three annotators used handbook v4.2.14 after familiarization on five sentences and practice on 15 sentences, following the training-and-feedback approach discussed by \citet{klie2024annotationquality}. They then independently annotated the same 50-sentence sample from the existing Silver annotation candidates in separate Doccano projects, without access to machine suggestions or one another's labels. The familiarization and practice sentences were excluded from the agreement calculation. The formal sample contained one sentence from each of 50 advertisement identifiers. It was designed for annotation agreement and overlaps with expanded-model training data (Appendix~D). Source counts and sampling details appear in Appendix~B.
-
-Annotators could consult the handbook and revise their own annotations during individual self-review. Agreement was calculated from their separate exports after self-review, using all 50 sentences and all three annotator pairs. The study provides three individual annotation layers without an adjudicated consensus reference.
-
-\begin{table}[!b]
-\caption{Inter-annotator agreement on the 50-sentence blinded sample after individual self-review under handbook v4.2.14. Brackets show 95\% bootstrap confidence intervals.}
+\begin{table}[!htbp]
+\caption{Agreement on the 50-sentence blinded sample after individual self-review.}
 \label{tab:quality-main}
 \centering\small
 \setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\linewidth}{@{}P{.19\linewidth}P{.29\linewidth}P{.29\linewidth}L@{}}
+\begin{tabularx}{\linewidth}{@{}P{.29\linewidth}P{.11\linewidth}P{.22\linewidth}L@{}}
 \toprule
-\multicolumn{4}{@{}l}{\textit{A. Span-level agreement}} \\
+Measure & Estimate & 95\% interval & Agreement assessed \\
 \midrule
-Comparison & Typed exact-span F1 & Boundary-only exact-span F1 & Identical typed-span sets \\
-\midrule
-A--B & 0.793 [0.694, 0.884] & 0.828 & 36/50 \\
-A--C & 0.848 [0.752, 0.926] & 0.876 & 39/50 \\
-B--C & 0.814 [0.721, 0.899] & 0.847 & 37/50 \\
-Mean pairwise & 0.818 [0.732, 0.894] & 0.850 [0.766, 0.923] & --- \\
-\bottomrule
-\end{tabularx}
-\par\medskip
-\begin{tabularx}{\linewidth}{@{}P{.26\linewidth}LP{.29\linewidth}@{}}
-\toprule
-\multicolumn{3}{@{}l}{\textit{B. Character-level agreement (2,111 Unicode code points)}} \\
-\midrule
-Comparison & Coefficient & Value \\
-\midrule
-A--B & Cohen's $\kappa$ & 0.880 \\
-A--C & Cohen's $\kappa$ & 0.930 \\
-B--C & Cohen's $\kappa$ & 0.909 \\
-All three annotators & Nominal Krippendorff's $\alpha$ & 0.907 [0.851, 0.954] \\
+Mean pairwise typed exact-span F1 & 0.818 & [0.732, 0.894] & Complete boundaries and types \\
+Mean pairwise boundary-only exact-span F1 & 0.850 & [0.766, 0.923] & Complete boundaries \\
+Nominal Krippendorff's $\alpha$ & 0.907 & [0.851, 0.954] & L/K/S/T/O assignments across three annotators \\
 \bottomrule
 \end{tabularx}
 \par\smallskip
-{\footnotesize\RaggedRight\textit{Notes.} Familiarization (5 sentences) and practice (15) are excluded. Mean pairwise F1 is the arithmetic mean of the three pairwise scores. Identical sets include empty sets.\par}
+{\footnotesize\RaggedRight\textit{Notes.} Span F1 averages the three annotator-pair scores. Character agreement covers 2,111 Unicode code points. Intervals use a source-stratified sentence bootstrap.\par}
 \end{table}
 
-\begin{samepage}
-\paragraph{Agreement measures.}
-We computed typed exact-span F1 for each annotator pair over the full sample and report the mean of the three pairwise scores. A match requires identical boundaries and types, without treating any annotator as the reference~\citep{hripcsak2005agreement}. Boundary-only exact-span F1 ignores type. Character-level agreement was measured using pairwise Cohen's $\kappa$ and three-annotator nominal Krippendorff's $\alpha$, based on L/K/S/T/O assignments to all 2,111 source Unicode code points; O denotes positions outside annotated spans. Reported 95\% percentile intervals were obtained from 10,000 source-stratified sentence-bootstrap samples, retaining all three annotation layers together for each sampled sentence. The intervals summarize variation within the sampled source strata for these three annotators.\par
-\end{samepage}
+\Needspace{2\baselineskip}
+Mean pairwise typed exact-span F1 was 0.818, compared with 0.850 when matching required only identical boundaries (Table~\ref{tab:quality-main}). The difference indicates additional disagreement over type assignment. Pairwise span F1 compares complete annotations symmetrically~\citep{hripcsak2005agreement}, while character-level coefficients assess agreement at individual source positions~\citep{artstein2008agreement}. Across the three annotators, nominal Krippendorff's $\alpha$ was 0.907. The 0.818 agreement was measured on a separate 50-sentence sample and does not provide an independent estimate of annotation reliability for the 150-sentence reference.
 
-\begin{samepage}
-\paragraph{Agreement results.}
-Mean pairwise typed exact-span F1 was 0.818 (95\% CI [0.732, 0.894]), compared with 0.850 for boundary-only exact-span F1 (95\% CI [0.766, 0.923]). The higher boundary-only score indicates additional disagreement over type assignment. Pairwise typed exact-span F1 ranged from 0.762 to 0.805 for K, 0.778 to 0.869 for S, and 0.865 to 1.000 for T. Character-level $\alpha$ was 0.907 (95\% CI [0.851, 0.954]). Character-level coefficients summarize position-wise label agreement, whereas span-level F1 requires matching complete spans~\citep{artstein2008agreement}.\par
-\end{samepage}
-
-All three annotators produced identical complete typed-span sets for 34 sentences, including 11 with no annotated spans. They also identified the same two L spans, both in one sentence, providing limited evidence about agreement on this category. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261003}{reproduction materials} include the individual annotation exports used in these calculations and the associated diagnostics.
-
-\paragraph{Silver labels against blinded annotations.}
-In a post hoc comparison, the adopted expanded pool retained Silver labels for 49 of the 50 blinded-study sentences. Comparing these labels separately with the three blinded annotation layers yielded a mean typed exact-span micro-F1 of 0.709. This measures agreement between historical Silver labels and final-handbook annotations on these sampled texts. \hyperref[app:b]{Appendix B} reports the per-annotator results and the alternative pool.
+The adopted expanded pool contains silver labels for 49 of the 50 blinded-study sentences. A post hoc comparison with each annotator's labels on these sentences yielded mean typed exact-span micro-F1 of 0.709; \hyperref[app:b]{Appendix B} gives per-annotator results and compares the alternative pool.

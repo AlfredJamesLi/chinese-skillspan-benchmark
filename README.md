@@ -19,10 +19,12 @@ An earlier preprint of this work is available as [arXiv:2604.23009v1](https://ar
 | Original Silver pool | 2,451 records | Candidate supervision; experiment-specific inclusion |
 | Silver training/development sets (Qwen and encoders) | 2,150 training / 169 development | Matched Qwen adaptation and encoder comparison |
 | Silver training/development sets (JobBERT) | 2,156 training / 169 development | JobBERT-zh + CRF training and checkpoint selection |
-| Expanded Silver pool (adopted Codex) | 9,540 records | Includes earlier supervision; complete partitions are not publicly released |
+| Adopted expanded Silver pool | 9,540 records | Includes earlier supervision; complete partitions are not publicly released |
 | Alternative expanded Silver pool | 9,646 records | Overlapping supplementary configuration; complete partitions are not publicly released |
 | Historical human coding and review | 500 unique sentences | Distinct cohorts for reference construction and quality checks |
-| Blinded agreement sample | 50 sentences; three annotators | Final-handbook agreement; separate from historical coverage and not a model test set |
+| Blinded agreement sample | 50 sentences; three annotators | Three-annotator agreement; separate from historical coverage and not a model test set |
+
+Human annotation and review cover 550 distinct sentences: 500 across reference construction and assisted reviews, plus 50 in the separate blinded agreement study. The study used the v4.2.14 handbook series; exact files used for formal coding and individual self-review have not been established (see [annotation-stage documentation](reproduction/annotation_documentation_20261007/README.md)).
 
 The [annotation and training guide](docs/terminology.md) explains the resource names and their relationships. [Annotation roles and sample membership](reproduction/reviewer_supplement_20261004/README.md) describe the human-reference and model-generated annotation layers. Manuscript numbers follow the [display-precision policy](docs/numerical_precision.md); source result files retain their original precision.
 

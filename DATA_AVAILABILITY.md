@@ -9,14 +9,14 @@ Current annotation versions and experimental access limits are summarized in the
 | Dataset archive and guidelines | [Zenodo v0.1.3](https://doi.org/10.5281/zenodo.22698504) | Source corpus, human reference set, and released Silver training/development files |
 | Human reference set | [Dataset guide](data/gold150/README.md) | 150 sentences, 663 spans |
 | Silver training/development sets (Qwen and encoders) | [Training/development files](data/silver_plus_v6a_nocross/README.md) | 2,150 / 169 records |
-| Historical human annotation layers | [Pseudonymized exports](reproduction/evidence_review_20260925/annotation_layers/README.md) | Early blinded-coding, assisted-review, and additional-review annotation layers; historical cohort aliases and procedures documented in the linked guide |
+| Historical human annotation layers | [Pseudonymized exports](reproduction/evidence_review_20260925/annotation_layers/README.md) | Initial calibration, assisted-review, and additional-review annotation layers; historical cohort aliases and procedures documented in the linked guide |
 | Chinese encoder checkpoints | [Evidence and model index](reproduction/evidence_review_20260925/README.md) | Six public Silver-fine-tuned XLM-R/ESCOXLM-R models; rescored predictions and [audit DOI](https://doi.org/10.5281/zenodo.22942441) |
 | Evaluation code and saved results | [Reproduction guide](REPRODUCIBILITY.md) | Protocol-specific scoring and supporting analyses |
 | JobBERT checkpoints | [Model guide](docs/models.md) | Initialization and Silver-trained continuation; default continuation is seed 42 |
 | Expanded Silver pools | [Study guide](reproduction/expanded_silver/README.md) | Partial annotations, source-selection records, and result snapshots; complete final 9,540/9,646 partitions are available through the corresponding author for confidential peer review |
 | Qwen LoRA adapters | [Qwen model-reproduction archive](https://doi.org/10.5281/zenodo.22851581) | Three Qwen LoRA seeds trained on the 2,150/169 Silver sets, two expanded-pool checkpoints, four supplementary adapters, frozen predictions and scoring tools |
 
-The 500-sentence human coverage reported in the current manuscript combines distinct coding and review cohorts, each with its own annotation procedure and purpose. [Agreement documentation](reproduction/agreement/README.md) separates the designs and identifies the supplied export evidence.
+Human annotation and review cover 550 distinct sentences: 500 across reference construction and assisted reviews, plus 50 in the separate blinded agreement study. [Agreement documentation](reproduction/agreement/README.md) separates the designs and identifies the supplied export evidence.
 
 ## Which archive version?
 

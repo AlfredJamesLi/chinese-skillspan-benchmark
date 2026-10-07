@@ -1,16 +1,16 @@
 % [Stage2] Core metrics and cohort appendix share stage2_result_values.tex.
-\begin{table}[H]
+\begin{table}[!htbp]
 \caption{Prompted extraction on the human reference set (single runs).}
 \label{tab:gold150-shared-r7}
 \centering\small
 \newcommand{\SharedResultRow}[7]{#1 & #2 & #3 & #4 & #5 \\}
 \begin{tabularx}{\linewidth}{@{}Lrrrr@{}}
 \toprule
-Recorded configuration & P & R & Exact F1 & Relaxed F1 \\
+Model configuration & P & R & Exact F1 & Relaxed F1 \\
 \midrule
 \SharedResultRows
 \bottomrule
 \end{tabularx}
 \par\smallskip\footnotesize\RaggedRight
-P/R: typed exact precision/recall. Exact and relaxed F1 are typed and micro-averaged. Qwen uses no adapter. Model identifiers and settings appear in Table~\ref{tab:model-identity}.
+P/R: typed exact-span precision/recall; F1: typed span micro-F1. Qwen uses no adapter.
 \end{table}

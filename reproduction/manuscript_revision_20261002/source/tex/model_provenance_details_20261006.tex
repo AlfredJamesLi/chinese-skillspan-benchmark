@@ -1,0 +1,24 @@
+\paragraph{Model initialization and annotation roles.}
+Table~\ref{tab:model-identity} summarizes the evaluated models and their configurations. Exact API identifiers, including the difference between the GPT request and response identifiers, are documented in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/reproduction/style_revision_20261005/MODEL_NAME_RECHECK.md}{model provenance record}. Service-reported model identities were not independently verified against vendor APIs.
+
+Table~\ref{tab:annotation-models} distinguishes silver generation from assisted review. Codex and Cursor are interfaces. Codex annotation and GPT API evaluation use different configurations. Shared guidelines and visible machine suggestions may align annotation choices across configurations.
+
+
+
+\begin{table}[!htbp]
+\centering\small
+\caption{Models and interfaces used for annotation.}
+\label{tab:annotation-models}
+\begin{tabularx}{\linewidth}{@{}P{.30\linewidth}L P{.23\linewidth}@{}}
+\toprule
+Annotation task & Model & Interface \\
+\midrule
+Original silver generation & \href{https://developers.openai.com/api/docs/models/gpt-6-astra}{GPT-6 Astra} & Codex \\
+Expansion comparison & GPT-6 Astra & Codex / API \\
+Additional assisted review & GPT-6 Astra; \href{https://docs.x.ai/developers/models/grok-4.6}{Grok 4.6} & Codex / Cursor \\
+Other annotation support & Qwen; DeepSeek; Kimi & --- \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+The expansion comparison replaces one 2,500-candidate batch while retaining earlier components. Assisted reviewers could see model suggestions; Grok used high reasoning effort. Versions of the other supporting models were incompletely recorded.
+\end{table}

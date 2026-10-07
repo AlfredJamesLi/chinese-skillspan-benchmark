@@ -1,62 +1,27 @@
-\subsection{Corpus Construction and Annotation Layers}
+\subsection{Data Sources and Annotation Layers}
 \label{sec:challenge-audit}
 
-The source corpus contains 22,840 sentences from four collection batches: AI, Cloud, public-sector, and graduate recruitment. These batches can overlap in occupational coverage and acquisition route. Its original partition contains 17,460 training, 2,143 development, and 3,237 test sentences. This partition differs from the smaller labeled splits used in the experiments below; the original test partition is not used as a human-annotated test set in this study. Table~\ref{tab:annotation-lineage} summarizes the corpus and its annotation, supervision, and evaluation subsets, with their roles distinguished following guidance on dataset documentation~\citep{bender2018datastatements,gebru2021datasheets}.
+The source corpus contains 22,840 sentences from four collection batches: AI, Cloud, public-sector, and graduate recruitment. Texts came from commercial collections purchased from MacroData~\citep{macrodataPlatform}, public-institution announcements collected by the research team, and the Recruitment Dataset on Alibaba Cloud Tianchi~\citep{tianchiRecruitment163746}. For the public-institution subset, the team selected government, university, hospital, and public recruitment websites across China, then screened and cleaned the collected texts. The batches can overlap in occupational coverage.
 
-The texts were obtained through three acquisition routes: commercial collections purchased from MacroData~\citep{macrodataPlatform}; public-institution recruitment announcements collected by the research team; and the Recruitment Dataset (ID 163746) on Alibaba Cloud Tianchi~\citep{tianchiRecruitment163746}. For public-institution announcements, team members selected pages from government portals, university and hospital websites, and public recruitment platforms across regions of China. A crawler revisited the selected URLs weekly or monthly. The collected texts were screened and cleaned to form the public-institution subset. \hyperref[app:d]{Appendix D} documents the available source metadata and gaps in the collection history.
+Table~\ref{tab:annotation-lineage} summarizes the principal annotation layers and their uses, following guidance on dataset documentation~\citep{bender2018datastatements,gebru2021datasheets}. The human reference provides evaluation labels, while records selected from the original silver pool provide training and development labels. The adopted expanded silver pool combines earlier supervision with additional cloud, public-sector, and listed-company recruitment texts selected using requirement-related keywords. The model-specific training and development splits are described in \nameref{sec:experiments}.
 
-We use \emph{original Silver} for the initial pool of generated labels and \emph{expanded Silver} for the later training pools. The initial annotation dataset contains 2,601 records: a human reference set of 150 sentences and 2,451 records with LLM-generated Silver labels. The original Silver pool comprises 100 initially reviewed records, 730 additional records from the model-disagreement queue, and 1,621 historical extraction records. The 980-record disagreement queue supplied the human reference set and the first 830 Silver records.
-
-The human reference set combines 50 calibration sentences with a non-overlapping 100-sentence challenge sample. The calibration sentences were independently annotated from raw text and then adjudicated; the challenge sample was collaboratively annotated and reviewed. Both samples informed guideline development. The finalized labels serve as the fixed reference for diagnostic evaluation.
-
-The reference set contains 663 spans: 448 S, 125 K, 88 T, and two L. Eight sentences have no annotated span. All 150 complete sentence texts are distinct after NFC normalization. The initial 100-sentence review and the separate 100-sentence post-generation review do not overlap with the reference set, giving 350 unique sentences with human annotation or review at this stage. The historical 15-sentence assisted-review subset is included in this coverage and is not counted separately. Appendices~B~and~D provide the sample counts and sampling details. Figure~\ref{fig:coding-detail} summarizes reference construction, Silver annotation and review, and the separate agreement study.
-
-\begin{table}[!b]
-\caption{Data subsets and their roles. Counts can overlap across rows, and some records repeat a sentence.}
+\begin{table}[!htbp]
+\caption{Source corpus and principal annotation layers in Chinese-SkillSpan.}
 \label{tab:annotation-lineage}
 \centering\small
 \setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\linewidth}{@{}P{0.20\linewidth}P{0.17\linewidth}P{0.30\linewidth}L@{}}
+\begin{tabularx}{\linewidth}{@{}P{0.20\linewidth}P{0.18\linewidth}P{0.31\linewidth}L@{}}
 \toprule
-Subset & Size & Composition & Use \\
+Subset & Size & Annotation content & Role \\
 \midrule
-\multicolumn{4}{@{}l}{\textit{A. Corpus, human reference, and supervision}} \\
-\addlinespace[2pt]
-Original corpus & 22,840 sentences & Four collection batches; original train/development/test partition & Source corpus \\
-Human reference & 150 sentences & 50 calibration and 100 challenge sentences; 663 spans; handbook v4.2.10 labels & Primary diagnostic model evaluation \\
-Original Silver pool & 2,451 records & 100 initially reviewed; 730 additional disagreement-queue records; 1,621 historical extraction records; bulk prompt v4.2.12 & Candidate supervision; experiment-specific inclusion \\
-JobBERT Silver train / dev & 2,156 / 169 records & Silver supervision; historical label comparison in Appendix C & Training and checkpoint selection \\
-Qwen / encoder Silver train / dev & 2,150 / 169 records & 3,646 / 345 spans; 869 / 82 records with no spans & Adapter / encoder training and checkpoint selection \\
-Adopted expanded Silver & 9,540 records & 21,101 spans; 2,492 records with no spans (26.1\%) & Training, checkpoint selection, and evaluation against Silver targets \\
-\midrule
-\multicolumn{4}{@{}l}{\textit{B. Human review and annotation agreement}} \\
-\addlinespace[2pt]
-Initial Silver review & 100 sentences & Versioned review layers (\hyperref[app:b]{Appendix B}) & Review of generated annotations, separate from model evaluation \\
-Original Silver post-generation review & 100 sentences & 144 machine-proposed spans and 148 reviewed spans & Sampled machine--human quality check \\
-Additional review & 150 sentences & Two complete reviewer submissions; 101 identical sentence-level span sets & Assisted review of newly generated annotations \\
-Blinded agreement & 50 sentences & Three annotators using handbook v4.2.14; 5 familiarization and 15 practice sentences excluded & Agreement under the final handbook; individual annotation layers \\
+Source corpus & 22,840 sentences & Recruitment text from four collection batches & Source material for annotation \\
+Human reference & 150 sentences & 663 spans; 8 sentences with no spans (5.3\%) & Model evaluation \\
+Original silver pool & 2,451 records & Model-generated annotations with sampled human review & Candidate supervision \\
+Adopted expanded silver & 9,540 records & 21,101 spans; 2,492 records with no spans (26.1\%) & Expanded supervision and evaluation against silver targets \\
 \bottomrule
 \end{tabularx}
 \par\smallskip
-{\footnotesize\RaggedRight\textit{Notes.} The alternative expanded Silver pool contains 9,646 records; its experimental splits appear in \hyperref[app:c]{Appendix C}.\par}
+{\footnotesize\RaggedRight Pool sizes count annotation records, which may repeat a sentence. The layers overlap in source material and should not be summed.\par}
 \end{table}
 
-\paragraph{Expanded supervision and annotation profile.}
-The adopted expanded Silver pool contains 9,540 annotation records, combining earlier supervision with additional cloud, public-sector, and listed-company data. Candidate selection prioritized requirement-related keywords. An alternative 9,646-record pool differs in annotation channel and included records. \hyperref[app:d]{Appendix D} gives the sampling and inclusion criteria for both pools.
-
-The additional review sample comprises 150 newly annotated sentences, stratified into 60 cloud, 45 public-sector, and 45 listed-company sentences. Checks against identifiers and normalized texts excluded the original 350 human-annotated or reviewed sentences. This sample supplements the original 100-sentence post-generation review shown in Figure~\ref{fig:coding-detail}. Historical human annotation and review cover 500 unique sentences. The separate 50-sentence blinded agreement sample has no text overlap with these cohorts, bringing verified human annotation or review coverage to 550 distinct sentences. This total counts each sentence once across annotation layers. The 150-sentence human reference set supplies the model-evaluation labels. The reproduction materials provide the cohort reconciliation.
-
-The human reference set was selected from a model-disagreement queue, and its annotation profile differs from that of the supervision data. In the Silver training and development sets used by Qwen and the encoder comparison, 40.4\% of training records and 48.5\% of development records have no annotated span, compared with 26.1\% in the full expanded pool and 5.3\% of reference sentences (Table~\ref{tab:annotation-lineage}). Occupational skills account for 54.6\% of spans in the expanded pool and 67.6\% in the reference set. The median span length is four Unicode code points in the reference set and six in the original Silver training/development sets. We therefore report type- and length-specific diagnostics alongside aggregate scores.
-
-\begin{samepage}
-Figure~\ref{fig:length-distributions-r40}(a,b) compares input and span lengths in the Silver training/development sets, human reference set, and additional review sample. Panel (c) includes the full adopted expanded pool in the competency-type comparison. \hyperref[app:b]{Appendix B} reports split-level counts and the two reviewers' type distributions. Repeated records retain their record weights. Lengths count Unicode code points, including punctuation and spaces, and are not directly comparable with English token counts.\par
-\end{samepage}
-
-\FloatBarrier
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{figures/benchmark_profile.pdf}
-\caption{Annotation profiles: (a) input lengths; (b) span lengths; (c) competency-type distributions, including the full expanded pool. Silver train/dev denote the Qwen and encoder splits; A and B denote reviewers of the same sample.}
-\label{fig:length-distributions-r40}
-\end{figure}
+The human reference contains 663 spans: 448 S, 125 K, 88 T, and two L. The 150 sentences have distinct complete texts after Unicode Normalization Form C (NFC). This operation gives equivalent character sequences a consistent representation for comparison. An alternative expanded pool contains 9,646 records and supports a supplementary annotation-channel comparison. \hyperref[app:d]{Appendix D} details both expanded pools' source partitions, composition, and selection criteria.

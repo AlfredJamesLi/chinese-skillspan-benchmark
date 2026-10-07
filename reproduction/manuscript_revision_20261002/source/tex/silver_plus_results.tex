@@ -1,33 +1,8 @@
-\subsection{Fine-Tuning with Silver Labels}
+\subsection{Silver-Supervised Adaptation}
 \label{sec:silver-results}
 
-All three Qwen adapters improved typed exact-span micro-F1 over the unadapted baseline under the same inference protocol (Table~\ref{tab:core-paired}; Table~\ref{tab:gold150-main}, panel A). The adapted mean was $0.540\pm0.035$, compared with 0.361 without an adapter. The paired seed-mean difference was 0.179, with a 95\% interval of $[0.111, 0.242]$; the three seed-specific intervals were also above zero. Adaptation also increased the mean scores under relaxed and boundary-only matching.
+Silver supervision improved Qwen's typed exact-span micro-F1 under the fixed inference protocol. The adapted mean was $0.540\pm0.035$, compared with 0.361 without an adapter (Figure~\ref{fig:model-comparison}b; Table~\ref{tab:gold150-main}, panel A). The mean gain over the three training seeds was 0.179, with a paired 95\% bootstrap interval of $[0.111, 0.242]$; the intervals for all three individual seeds also lay above zero (Table~\ref{tab:core-paired}). Mean scores also increased under relaxed and boundary-only matching, showing gains across the three matching criteria.
 
-The adapters also produced fewer responses containing rejected span candidates than the unadapted model. These end-to-end scores jointly reflect output validity and span extraction. Detailed parser outcomes accompany the reproduction materials.
+The adapters produced fewer responses with rejected span candidates than the unadapted model. These end-to-end scores reflect both span extraction and output validity. The reproduction materials include \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{per-seed Qwen scores} and parser outcomes.
 
-\begin{table}[H]
-\caption{Human-reference results for Qwen adaptation and the Silver-trained JobBERT baseline.}
-\label{tab:gold150-main}
-\centering\small
-\textbf{A. Qwen: fixed inference protocol}\par\smallskip
-\begin{tabularx}{\linewidth}{@{}Lcccc@{}}
-\toprule
-Condition & \makecell{Train / dev\\records} & Typed exact & Typed relaxed & \makecell{Boundary-only\\exact} \\
-\midrule
-No adapter & --- & $\QwenBaselineExact$ & $0.470$ & $0.414$ \\
-Qwen + LoRA & 2,150 / 169 & $\QwenLoraExact$ & $0.662\pm0.033$ & $0.571\pm0.038$ \\
-\bottomrule
-\end{tabularx}
-\par\medskip\textbf{B. Silver-trained JobBERT baseline}\par\smallskip
-\begin{tabularx}{\linewidth}{@{}Lcc@{}}
-\toprule
-Model & \makecell{Train / dev\\records} & Typed exact \\
-\midrule
-JobBERT-zh + CRF & 2,156 / 169 & $0.554\pm0.005$ \\
-\bottomrule
-\end{tabularx}
-\par\smallskip\footnotesize\RaggedRight
-F1 scores (0--1) are mean $\pm$ sample SD over seeds 42, 43, and 44; Qwen without an adapter is a single run. Boundary-only exact F1 ignores types. \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/tables/qwen_per_seed.csv}{Per-seed Qwen scores} accompany the reproduction materials.
-\end{table}
-
-The Silver-trained JobBERT-zh + CRF baseline achieved mean typed exact-span micro-F1 of $0.554\pm0.005$ (Table~\ref{tab:gold150-main}, panel B). Its observed mean exceeds Qwen + LoRA (0.540), while both are below prompted GPT-5.6 Terra (0.667). Their training and inference protocols differ, so these cross-architecture comparisons are descriptive.
+The silver-trained JobBERT-zh + CRF baseline achieved mean typed exact-span micro-F1 of $0.554\pm0.005$ (Figure~\ref{fig:model-comparison}b; Table~\ref{tab:gold150-main}, panel B). Its mean exceeded Qwen + LoRA (0.540), while both remained below prompted GPT-5.6 Terra (0.667). These rankings describe the evaluated configurations, whose training and inference protocols differ across model families.

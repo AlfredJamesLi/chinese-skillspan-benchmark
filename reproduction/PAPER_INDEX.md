@@ -2,9 +2,48 @@
 
 The [4 October revision and checks](major_revision_20261004/README.md) update the current manuscript, data accounting, source-document analysis and uncertainty estimates. Earlier experiments remain archived.
 
-## Current manuscript — 5 October 2026
+## Current manuscript — 7 October 2026
 
-The [current 42-page manuscript, source, and revision notes](manuscript_revision_20261002/README.md) provide the current figure and table numbering. Figure 3 includes the full Expanded Silver profile, with supporting counts in the [figure reproduction guide](benchmark_profile/README.md). The [model guide](../docs/models.md) groups the current model releases by their roles and separates the historical pretraining contrast. Stable LaTeX labels identify results across revisions.
+The [current manuscript, source, and revision notes](manuscript_revision_20261002/README.md) contain 41 pages, 8 figures, and 24 tables. The [figure index](manuscript_revision_20261002/FIGURE_INDEX.md) links each figure to its assets and generation instructions. Figure 3 shows the annotation process; Figure 4 shows dataset characteristics; Figure 5 compares models. The [model guide](../docs/models.md) identifies the model releases and their study roles.
+
+Current figure and table positions, taken from the compiled Overleaf revision `b84d27e`:
+
+| Current item | Page | Stable source label |
+|---|---:|---|
+| Table 1 | 3 | `tab:related-span` |
+| Figure 1 | 5 | `fig:macro-micro` |
+| Table 2 | 6 | `tab:guide-types` |
+| Table 3 | 7 | `tab:annotation-lineage` |
+| Figure 2 | 8 | `fig:illustrative-annotations` |
+| Figure 3 | 9 | `fig:coding-detail` |
+| Figure 4 | 10 | `fig:length-distributions-r40` |
+| Table 4 | 11 | `tab:quality-main` |
+| Table 5 | 13 | `tab:model-identity` |
+| Table 6 | 13 | `tab:training-settings` |
+| Figure 5 | 15 | `fig:model-comparison` |
+| Table 7 | 15 | `tab:core-paired` |
+| Table 8 | 16 | `tab:external-chinese` |
+| Figure 6 | 17 | `fig:qwen-diagnostics` |
+| Table 9 | 20 | `tab:guide-boundaries` |
+| Table 10 | 21 | `tab:guide-scope` |
+| Table 11 | 23 | `tab:handbook-stage-records` |
+| Figure 7 | 24 | `fig:additional-annotation-examples` |
+| Table 12 | 26 | `tab:expanded-silver-composition` |
+| Figure 8 | 26 | `fig:additional-review-distributions` |
+| Table 13 | 27 | `tab:additional-review-composition` |
+| Table 14 | 27 | `tab:qa150-pairs` |
+| Table 15 | 28 | `tab:blinded-agreement-pairs` |
+| Table 16 | 29 | `tab:silver-blinded` |
+| Table 17 | 29 | `tab:gold150-shared-r7` |
+| Table 18 | 29 | `tab:gold150-main` |
+| Table 19 | 31 | `tab:annotation-models` |
+| Table 20 | 32 | `tab:jobbert-label-versions` |
+| Table 21 | 33 | `tab:expanded-silver-main` |
+| Table 22 | 34 | `tab:source-stages` |
+| Table 23 | 35 | `tab:document-overlap` |
+| Table 24 | 36 | `tab:component-access` |
+
+The historical tables below retain the numbering of their specified revisions.
 
 <details>
 <summary>Historical evidence index: 25 September 2026</summary>

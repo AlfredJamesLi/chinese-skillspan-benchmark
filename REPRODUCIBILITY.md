@@ -41,6 +41,6 @@ The [resource naming guide](PAPER_NAMES.md) and [file inventory](reproduction/ev
 
 Frozen data, prediction, parser, and scorer paths retain their original names. This keeps existing commands and archived checksums usable.
 
-## Recreate Figure 3
+## Recreate the current figures
 
-The [annotation-profile reproduction guide](reproduction/benchmark_profile/README.md) provides exact aggregate counts, source-file hashes, the plotting script, and a pinned plotting environment. No recruitment text or model inference is needed to reconstruct this descriptive figure.
+The [figure index](reproduction/manuscript_revision_20261002/FIGURE_INDEX.md) maps current figures to final assets, editable sources, and generation instructions. The [dataset-profile guide](reproduction/benchmark_profile/README.md) explains the separate layouts for Figure 4 and Appendix Figure 8. The [model-comparison guide](reproduction/model_comparison_20261006/README.md) documents Figure 5. These plots use released aggregate counts or existing reported scores; rebuilding them makes no model call or change to evaluation results.

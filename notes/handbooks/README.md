@@ -4,7 +4,7 @@
 
 当前手册为[2026年10月7日中英文版](reader_20261007/README.md)，基于 B.sop_v4.2.14 系列修订，提供 Word、PDF 和文件校验值。手册供阅读与后续标注参考，尚待复核的案例在相应位置注明。复现历史实验时，请使用对应批次的归档材料。[10月2日论文对齐版](reader_20261002/README.md)、[历史 Markdown](handbook_B_sop_v4.md) 和原 Word 文件继续保留。
 
-[培训目录](training/README.md)记录 5 句＋15 句培训与正式 50 句三人独立编码；研究结果见[一致性分析](../../reproduction/agreement/finalguide_abc_20261002/README.md)。
+[培训目录](training/README.md)记录 5 句＋15 句培训与正式 50 句三人独立编码；研究结果见[10月3日个人自检后一致性分析](../../reproduction/agreement/finalguide_abc_20261003/README.md)（平均严格类型跨度 F1 = 0.818）。[10月2日早期结果快照](../../reproduction/agreement/finalguide_abc_20261002/README.md)继续保留。正式编码和个人自检所用的具体手册文件尚未逐人逐轮建立完整对应，详见[标注阶段与手册版本说明](../../reproduction/annotation_documentation_20261007/README.md)。
 
 ## 历史版本与实验记录
 

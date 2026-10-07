@@ -1,25 +1,49 @@
-# Benchmark annotation profile
+# Benchmark annotation profiles
 
-Figure 3 preserves the input- and span-length panels (a,b) for the original
-Silver training/development sets used by Qwen and the encoder comparison
-(2,150/169 records), the human reference set (150 sentences), and the two
-annotation layers of the additional review sample (150 sentences).
+The current manuscript separates the dataset profile (Figure 4) from the
+additional assisted-review profile (Figure 8). Both use the same archived
+aggregate statistics as the earlier combined layout.
 
-Panel (c) compares the Silver training/development sets, human reference set,
-and the **complete adopted Expanded Silver pool**. The expanded pool contains
-9,540 records and 21,101 spans; 2,492 records (26.1%) have no annotated span.
-Its type counts are L = 155, S = 11,528, K = 5,265, and T = 4,153. The two
-additional-review type distributions are reported in Appendix B, alongside
-expanded-pool split counts. A and B are two layers on the same 150 sentences.
+- **Figure 4** shows input and span lengths for the original silver
+  training/development sets used by Qwen and the encoder comparison
+  (2,150/169 records) and the human reference (150 sentences). Its type-composition
+  panel also includes the complete adopted expanded silver pool.
+- **Figure 8** shows the shared input-length distribution of the additional
+  150-sentence review sample and the two reviewers' span-length distributions
+  (358 spans for A and 365 for B). A and B are annotation layers on the same
+  sentences, not separate samples.
 
-The expanded pool includes earlier supervision, so the displayed groups are
-not additive. The alternative 9,646-record pool and blinded agreement sample
-are outside this figure. Original identifiers and frozen annotation files
-remain unchanged; no training or evaluation is rerun.
+The adopted expanded pool contains 9,540 records and 21,101 spans; 2,492 records
+(26.1%) have no annotated span. Its type counts are L = 155, S = 11,528,
+K = 5,265, and T = 4,153. It includes earlier supervision, so the displayed
+groups are not additive. The alternative 9,646-record pool and the separate
+blinded agreement sample are outside these plots. Record multiplicities,
+identifiers, and frozen annotations are unchanged.
 
-## Reproduce the figure from included aggregates
+See the [current figure index](../manuscript_revision_20261002/FIGURE_INDEX.md)
+for the manuscript assets and editable sources.
 
-Requires NumPy, SciPy, Matplotlib and Pillow:
+## Rebuild the current Figures 4 and 8
+
+From the repository root, with the packages in `requirements.txt` installed:
+
+```sh
+python reproduction/benchmark_profile/benchmark_profile.py --aggregate reproduction/benchmark_profile/benchmark_profile_data.json --output output/benchmark_profile --main-only --stem benchmark_profile_main_20261006
+python reproduction/benchmark_profile/benchmark_profile.py --aggregate reproduction/benchmark_profile/benchmark_profile_data.json --output output/benchmark_profile --review-only --stem additional_review_profile_20261006
+```
+
+The two view options select different panels from the same aggregate JSON. They
+do not resample records, alter annotations, or recompute model performance.
+Each command writes PDF, SVG, PNG, and grayscale previews. Font availability and
+plotting-library versions may affect appearance; use the archived PDF/SVG files
+when the exact submitted artwork is needed.
+
+## Rebuild the earlier combined layout
+
+The command below is retained for compatibility. Without either view option,
+the script includes the additional-review layers together with supervision and
+reference distributions. This is the earlier combined layout, not the exact
+layout of current Figure 4 or Figure 8.
 
 ```sh
 python reproduction/benchmark_profile/benchmark_profile.py --aggregate reproduction/benchmark_profile/benchmark_profile_data.json --output output/benchmark_profile
@@ -34,7 +58,7 @@ same expanded-pool statistics for reuse.
 
 ## Recompute from frozen annotation files
 
-The original five groups can be rebuilt with the existing private inputs:
+The original five groups can be recomputed by researchers with access to the frozen source files:
 
 ```sh
 python reproduction/benchmark_profile/benchmark_profile.py --evidence /path/to/Gold150_shared_prompt_eval_for_Overleaf_20260910 --qa /path/to/QA150_all_layers.jsonl --expanded-profile reproduction/benchmark_profile/expanded_silver_profile.json --output output/benchmark_profile
@@ -53,11 +77,11 @@ JSON, and every count and histogram sum. It reads source archives without
 changing them. JobBERT's 698-record development file is the union of Qwen's
 348 validation and 350 test records and is not counted as another partition.
 
-## Measurement and display
+## Measurement and display conventions
 
 - Input lengths: unmodified Unicode code points, including spaces and punctuation;
   empty-target records remain in the ECDFs. A log axis retains the observed tail.
-- Span-length violins: all observed spans in each of the original five layers;
+- Span-length violins: all observed spans in the selected layers (three in the main view, two in the review view, and five in the earlier combined view);
   Gaussian KDE with Scott bandwidth and equal maximum widths. The 0--20 detail
   view and full-range overview use the same full-data densities. White dots mark
   medians, thick lines the middle 50%, and the upper labels mark maxima.

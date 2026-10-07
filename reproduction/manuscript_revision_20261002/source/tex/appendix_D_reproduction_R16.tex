@@ -4,32 +4,39 @@
 \label{sec:extension-provenance}
 \label{sec:display-archive-r14}
 
-Data Availability provides the release locations and reuse terms; Table~\ref{tab:component-access} distinguishes the reproduction tasks supported by each component. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/major_revision_20261004}{supplementary audit package} supplies the calculations below, input hashes, and executable checks. The linked supplementary materials also contain earlier experiment outputs and prompts.
+Data Availability and Table~\ref{tab:component-access} summarize the released materials and access conditions. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/major_revision_20261004}{supplementary audit package} provides supporting calculations and archived experiment records.
 
 \begin{samepage}
-In released files and archived summaries, the human reference set and the additional review sample are identified as \texttt{Gold150} and \texttt{QA150}, respectively. The original Silver pool is named \texttt{Silver-plus} in archived files. The Silver supervision labels used by the reported baselines correspond to the revised-label version mapped in \hyperref[sec:jobbert-label-versions]{Appendix C}. The original Silver pool contains candidate records from which model-specific training/development sets were formed. The legacy identifiers provide a crosswalk to the descriptive names used in this paper.\par
+The terms \texttt{Gold150}, \texttt{QA150}, and \texttt{Silver-plus} denote the human reference, additional review sample, and original silver candidate pool, respectively. The main silver-supervised baselines use model-specific training/development subsets of this pool with revised labels (\hyperref[sec:jobbert-label-versions]{Appendix C}).\par
 \end{samepage}
 
+\subsection{Relationship to the Earlier Preprint}
+The present article substantially revises the resource definitions, annotation procedures, and evaluations in the earlier preprint~\citep{li2026chineseskillspanpreprint}. The sample list and original annotations for the earlier 100-sample agreement report have not been recovered, so those results are not used to establish reliability for the present reference. The available experiment records do not substantiate the earlier descriptions of linking spans to concepts or evaluating on industries and time periods excluded from training. The current article therefore makes neither claim. Model results use the reference labels, supervision sets, and scoring procedures documented for each experiment.
+
 \subsection{Source Categories and Data Preparation}
-The four original collection labels describe acquisition batches; the three acquisition routes identify MacroData, public-institution collection, and Tianchi. Acquisition batches and routes classify the same material at different levels. The original training partition contains 10,312 graduate-recruitment and 7,148 AI sentences; development contains 2,143 AI sentences; test contains 1,423 AI, 473 Tianchi/cloud, and 1,341 public-institution sentences. The later expansion uses Tianchi/cloud, public-institution, and listed-company source groups. The blinded agreement sample's 26/16/8 counts use these later source groups.
+The source corpus was originally partitioned into 17,460 training, 2,143 development, and 3,237 test sentences, with 1,600, 200, and 200 source-document identifiers, respectively. These document-disjoint partitions describe the source corpus; the original test partition is not a human-annotated evaluation set in this study. Tianchi material came from the Recruitment Dataset (ID 163746). The public-institution crawler revisited selected pages weekly or monthly.
 
-MacroData's operator is Chongqing Maherui Information Technology Co., Ltd. Public-institution records retain source names, titles, URLs, listed publication dates, and geographic fields where available. Publication dates are not collection dates; a complete crawl-window and source-exclusion history has not been recovered. The authors confirm academic-research use permission. Repository notices separately identify the rights in author-created annotations and the restrictions on third-party text.
+The initial annotation collection contains 2,601 records: 150 human-reference sentences and 2,451 original silver records. The silver pool comprises 100 initially reviewed records, 730 additional records from the model-disagreement queue, and 1,621 historical extraction records. The 980-record queue supplied the 150-sentence human reference and the first 830 silver records. Model-specific inclusion rules produce the supervision splits described in \nameref{sec:experiments}.
 
-Table~\ref{tab:source-stages} records the candidate and retained counts for the expanded pools. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/reviewer_revision_20261005}{preparation memo} preserves intermediate normalization counts and assembly reconciliation; the reported experiments use the final splits.
+The corpus combines four batches collected through MacroData, public-institution websites, and Tianchi. The original training partition contains 10,312 graduate-recruitment sentences and 7,148 sentences from the AI collection; development contains 2,143 sentences from the AI collection; test contains 1,423 from the AI collection, 473 from Tianchi/cloud, and 1,341 from public institutions. The expanded data use three source categories: Tianchi/cloud, public institutions, and listed companies. The blinded sample contains 26, 16, and 8 sentences from these respective categories.
+
+MacroData's operator is Chongqing Maherui Information Technology Co., Ltd. Public-institution records retain source names, titles, URLs, listed publication dates, and geographic fields where available. Publication dates are not collection dates; a complete crawl-window and source-exclusion history has not been recovered. The authors confirm academic-research use permission. Repository notices distinguish author-created annotation rights from third-party text restrictions.
+
+Table~\ref{tab:source-stages} gives expanded-pool candidate and retained counts. Intermediate preparation counts are documented in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/reviewer_revision_20261005}{preparation memo}.
 
 \input{tex/review20260923/source_stages}
 
-New-candidate selection used requirement-related keywords, fixed hash ranking, and source quotas. HTML/whitespace cleaning, sentence splitting, and length filters preceded annotation. Exclusion checks used the stored sentence strings and available pretraining dump. The 3.2-million-line dump's content hash was not retained, so the historical pretraining exposure cannot be fully reconstructed. Labels retain the handbook version used when they were generated.
+New sentences were selected using requirement-related keywords, a fixed hash-based order for selecting candidates, and quotas for each source. Before annotation, the texts were cleaned for HTML markup and whitespace, split into sentences, and filtered by length. Checks for excluding previously used texts relied on the stored sentences and available pretraining data. No checksum was retained for the 3.2-million-line pretraining file, so the data seen during pretraining cannot be fully reconstructed. Earlier annotations have been preserved; the available records identify the prompts and handbook versions for each documented batch (\hyperref[sec:guide-version-history]{Appendix A.4}).
 
 \subsection{Split Membership and Document Overlap}
-Original records use source-document identifiers, while expansion records use source-file and source-row identifiers. Overlap checks operate within these namespaces because no crosswalk between them is available.
+The later experiments divide the data by sentence, whereas the original 22,840-sentence corpus was divided so that each source document appeared in only one split. Original records identify source documents; records added during expansion identify source files and rows. The two identifier systems have not been linked, so shared sources can be checked only within each system. Qwen and the encoders use 2,150 original silver records for training and 169 for development.
 
 \begin{table}[htbp]
 \centering\small
-\caption{Shared source-document groups in the later experimental splits. The Silver train/development rows use the 2,150/169 split for Qwen and the encoder comparison. Counts refer to different sentences within shared groups, not identical sentences across splits.}
+\caption{Shared source-document groups in the later experimental splits.}
 \label{tab:document-overlap}
 \begin{tabularx}{\linewidth}{@{}Lrrr@{}}
-\toprule Comparison & Shared groups & Left sentences & Right sentences \\
+\toprule Split comparison & Shared groups & \makecell{Records in\\first split} & \makecell{Records in\\second split} \\
 \midrule
 Silver train / development & 1 & 4 & 27 \\
 Silver train / human reference & 59 & 531 & 143 \\
@@ -40,26 +47,28 @@ Alternative expanded train / validation & 186 & 1,069 & 210 \\
 Alternative expanded train / test & 189 & 1,079 & 211 \\
 \bottomrule
 \end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+Counts refer to sentence records in shared source-document groups; records with different identifiers are counted separately even when their text is identical. Split order follows the first column.
 \end{table}
 
-No exact or NFC-normalized sentence is shared between the later Silver training/development sets used by Qwen and the encoder comparison or between training and the human reference set. NFKC normalization with whitespace removal and case folding finds two Silver training/development matches and one training/validation match in each expanded variant. No normalized training/test sentence matches were found in the expanded variants. The shared source-document groups are listed in Table~\ref{tab:document-overlap}.
+We checked for repeated sentence texts across splits by comparing complete texts as stored and after Unicode NFC normalization, which gives equivalent Unicode character sequences a consistent representation. Neither comparison found matching texts between the original silver training and development sets used by Qwen and the encoders, or between training and the human reference.
 
-The original 22,840-sentence partition is document-disjoint. The later experiments use sentence-level splits with the source-document overlap described above.
+A broader check used Unicode NFKC normalization, which also standardizes forms such as full-width and half-width characters, then removed whitespace and ignored letter case. This check found no matching complete texts between the original silver training set and the human reference. It found two training/development matches in the original silver data and one training/validation match in each expanded pool, with no training/test matches in either expanded pool. These checks compare texts without changing the stored sentences or annotation offsets; details are provided in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/24847748b314b205e9b896c1f30ecc5d7c7bdf1e/reproduction/major_revision_20261004/data_audit/audit.json}{text-overlap analysis}. Table~\ref{tab:document-overlap} reports shared source-document groups separately.
 
-The Silver training set used by Qwen and the encoder comparison contains 1,910 distinct complete texts among 2,150 records. Repeated records remain weighted in training. A deduplicated training comparison and document-disjoint evaluation would be needed to measure the effects of repeated records and source-document overlap.
+The silver training set used by Qwen and the encoders contains 2,150 records representing 1,910 distinct complete texts. Records with identical text were retained as separate training examples. To assess the effects of this repetition and of shared source documents, further experiments would need to compare training with and without repeated texts and evaluate models on sentences from documents excluded from training.
 
 \paragraph{Blinded-sample overlap.}
-The 50-sentence blinded agreement sample has no ID or normalized complete-text match with the original Silver training/development sets (2,150/169) or the human reference set. Each expanded pool contains 46 of these sentences in training, two in validation, and one in testing; one is absent. Thus the independent annotations can support agreement analysis, but these sentences have already been seen by the expanded models. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/reviewer_supplement_20261004}{membership audit} records the frozen-input hashes and counts.
+The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/reviewer_supplement_20261004}{sample-overlap check} found no shared sample IDs or matching complete texts after character normalization between the 50-sentence blinded sample and either the original silver training/development sets (2,150/169) or the human reference set. Of these 50 sentences, each expanded pool contains 46 in training, two in validation, and one in testing; one sentence is absent. The independent annotations support agreement analysis, but these sentences cannot provide an unseen test set for models trained on the expanded pools.
 
 \subsection{Resource Access and Privacy Screening}
 \label{sec:resource-access}
 \input{tex/review20260923/access_matrix}
 
 \begin{samepage}
-An automated screen examined text fields in 15 public corpus and annotation files, covering 28,635 distinct complete texts. Email, mobile-number, and landline patterns flagged 38, 74, and 50 texts, respectively; categories overlap. No such candidates were found in the human reference set or the additional review sample, but candidates occur in the Silver training/development sets and in the separate blinded agreement sample. These are pattern matches requiring human review, including possible organizational contact details or false positives. The screen covers the specified contact-information patterns; broader personal-information and redistribution-permission checks require separate review. The public audit reports aggregate counts; the masked record-level review list is retained locally for resolution before a privacy-vetted release.\par
+An automated screen examined text fields in 15 public corpus and annotation files, covering 28,635 distinct complete texts. Email, mobile-number, and landline patterns flagged 38, 74, and 50 texts, respectively; categories overlap. No such candidates were found in the human reference set or the additional review sample, but candidates occur in the Silver training/development sets and in the separate blinded agreement sample. These pattern matches may include organizational contacts and false positives and require human review. The screen does not establish the absence of other personal information or permission to redistribute texts. Aggregate counts are public; masked record-level findings remain local pending human review for privacy before release.\par
 \end{samepage}
 
-\paragraph{Model reconstruction.}
-JobBERT-zh is the project's released Chinese recruitment-domain encoder, with an inherited CRF used in the reported continuation runs. The exact original tokenizer revision, some pretraining/selection settings, and truncation or windowing counts were not recovered. Its 256-token limit is not a character limit; the reference retains all target spans. The original Qwen Hub commit was not recorded; archived file hashes identify the supplied artifacts. These gaps limit training reconstruction; released predictions can still be rescored.
+\paragraph{Limits to training reproduction.}
+The JobBERT-zh fine-tuning experiments used the released Chinese recruitment encoder and its existing CRF layer. The exact original tokenizer version, some pretraining and model-selection settings, and the numbers of inputs truncated or divided into windows were not recovered. The model's input limit is 256 tokens, rather than characters; all reference spans remain in the evaluation. The exact Qwen model revision on Hugging Face was not recorded, although file checksums identify the archived files. These missing details limit reproduction of training, but the released predictions can still be used to recalculate scores.
 
 \FloatBarrier

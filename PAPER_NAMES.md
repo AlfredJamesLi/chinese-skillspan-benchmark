@@ -8,11 +8,11 @@ Use these names when reading the manuscript. Exact paths stay unchanged for repr
 |---|---|
 | Human reference set | [150-sentence evaluation set](data/gold150/README.md) |
 | Silver training/development sets (Qwen and encoders) | [2,150/169 training/development split](data/silver_plus_v6a_nocross/README.md) |
-| Expanded Silver pool / alternative expanded Silver pool | [Adopted Codex and supplementary expansion experiments](reproduction/expanded_silver/README.md) |
+| Expanded Silver pool / alternative expanded Silver pool | [Adopted and alternative expanded-pool experiments](reproduction/expanded_silver/README.md) |
 | JobBERT-zh initialization / Silver-trained JobBERT-zh + CRF | [Model guide](docs/models.md) |
 | Shared-guideline protocol | [Evaluation instructions](reproduction/EVALUATION_ENTRY.md) |
 | Historical coding and assisted review | [Agreement guide](reproduction/agreement/README.md) |
-| Blinded agreement sample | [Final-handbook three-annotator study](reproduction/agreement/finalguide_abc_20261003/README.md) |
+| Blinded agreement sample | [Blinded three-annotator agreement study](reproduction/agreement/finalguide_abc_20261003/README.md) |
 
 <details>
 
@@ -40,14 +40,14 @@ Short names in the manuscript are display aliases. Original file paths, experime
 | dataset | Human reference set | `Gold150; gold150_test.jsonl` | 150 sentences; 663 spans. The linked guide documents the canonical file and checksums. |
 | dataset | Initial Silver review sample | `A100` | 100 records with LLM-generated labels reviewed before bulk generation. A100 identifies this review sample; later exercises and revisions have separate records. |
 | dataset | Post-generation Silver review sample | `QA100` | 100 records in the later stratified review. QA100 identifies the sampled records. |
-| dataset | nested review subset | `Dual15` | 15-sentence QA100 assisted-review subset; September 17 export verifies separate coder queues and confirmations. It is distinct from IAA-50 blind calibration. |
+| dataset | nested review subset | `Dual15` | 15-sentence QA100 assisted-review subset; September 17 export verifies separate coder queues and confirmations. It is distinct from the initial 50-sentence calibration sample. |
 | dataset | further conflict-origin records | `H730` | 730 original Silver records from the conflict queue beyond the initial review. H730 identifies those records. |
 | dataset | other original Silver records | `E1621` | 1621 non-conflict-origin historical extraction records. E1621 identifies records with historical SOP--CWS provenance. |
 | protocol | shared protocol | `rev2 patch1` | Frozen system instruction and user template. Prompt files and hashes identify the executed instructions. |
 | protocol | span parser | `parser v1.1` | Occurrence-based output to original character offsets. The version and implementation hash identify the parser. |
 | protocol | span scorer | `cnss-lskt-1.2.0` | Typed exact and relaxed span scoring. The version identifies the scoring implementation. |
 | handbook | Handbook v4.2.14 | `B.sop_v4.2.14` | Handbook series; dated reading editions and frozen execution instructions are listed separately. |
-| handbook | Handbook v4.2.9 | `B.sop_v4.2.9` | Guide used for the historical calibration study. |
+| handbook | Handbook v4.2.9 | `B.sop_v4.2.9` | Version cited in historical agreement documentation. |
 | handbook | frozen reference version | `B.sop_v4.2.10` | Handbook version recorded in the frozen reference metadata. |
 | example | shared-experience example | `1838-s0008; R23` | Appendix A.3 example, identified by source_id and Chinese character offsets. |
 | documentation | reproduction guide | `REPRODUCIBILITY.md` | Repository entry point for reproduction instructions. |
@@ -80,7 +80,7 @@ Official names were checked on October 5, 2026. These references establish model
 | Kimi K2.6 | [Kimi API guide](https://platform.kimi.com/docs/guide/kimi-k2-6-quickstart) | `kimi-k2.6`; retain the recorded non-thinking setting. |
 | Grok 4.6 (high) | [xAI model documentation](https://docs.x.ai/developers/models/grok-4.6) and [Cursor model documentation](https://prod.cursor.com/docs/models/grok-4-6) | Model ID `grok-4.6`; high reasoning effort. The study used Cursor. |
 
-The human reference combines independently coded and adjudicated calibration sentences with collaboratively coded and reviewed challenge sentences. Humans determined its final labels. Separate model-generated Silver labels provide supervision and Silver-target evaluation; the independently blinded three-coder sample measures handbook agreement and is not a model test set.
+The human reference combines separately coded and adjudicated calibration sentences with collaboratively coded and reviewed challenge sentences. According to the authors' reconstruction, machine suggestions were available during initial calibration; an earlier protocol describes raw-text-only coding, and the available annotations do not resolve this difference. Humans determined the final reference labels. Separate model-generated Silver labels provide supervision and Silver-target evaluation. The later blinded three-annotator study measures agreement and is not a model test set. It used the v4.2.14 handbook series, but the exact files used for formal coding and individual self-review have not been established. See the [annotation-stage documentation](reproduction/annotation_documentation_20261007/README.md).
 
 ## API access
 

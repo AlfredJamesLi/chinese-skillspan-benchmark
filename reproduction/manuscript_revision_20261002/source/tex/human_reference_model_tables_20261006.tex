@@ -1,0 +1,31 @@
+\subsection{Detailed Human-Reference Model Results}
+Tables~\ref{tab:gold150-shared-r7}, \ref{tab:gold150-main}, and \ref{tab:external-chinese} complement Figure~\ref{fig:model-comparison} with detailed model and type-specific scores.
+
+\input{tex/stage2_shared_main}
+
+\begin{table}[!htbp]
+\caption{Human-reference results for Qwen adaptation and silver-trained JobBERT.}
+\label{tab:gold150-main}
+\centering\small
+\textbf{A. Qwen: fixed inference protocol}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Lcccc@{}}
+\toprule
+Condition & \makecell{Train / dev\\records} & Typed exact & Typed relaxed & \makecell{Boundary-only\\exact} \\
+\midrule
+No adapter & --- & $\QwenBaselineExact$ & $0.470$ & $0.414$ \\
+Qwen + LoRA & 2,150 / 169 & $\QwenLoraExact$ & $0.662\pm0.033$ & $0.571\pm0.038$ \\
+\bottomrule
+\end{tabularx}
+\par\medskip\textbf{B. Silver-trained JobBERT baseline}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Lcc@{}}
+\toprule
+Model & \makecell{Train / dev\\records} & Typed exact \\
+\midrule
+JobBERT-zh + CRF & 2,156 / 169 & $0.554\pm0.005$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+Micro-F1: mean $\pm$ sample SD (seeds 42, 43, 44); unadapted Qwen: single run. Boundary-only F1 ignores type.
+\end{table}
+
+\FloatBarrier

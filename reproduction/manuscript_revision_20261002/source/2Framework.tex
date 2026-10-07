@@ -1,59 +1,67 @@
-% [R40] Subsection-by-subsection terminology and handbook alignment; see revisions/REVISION_R40.md.
-\section{Corpus and Annotation}
+\section{Dataset Construction and Annotation}
 \label{sec:framework}
 
-\subsection{Task Definition and Label Schema}
-
-Given a Chinese job-advertisement sentence $x$, the task is to predict non-overlapping spans $(s,e,t)$, where $t\in\{L,K,S,T\}$. Offsets are measured in Unicode code points: $s$ denotes the zero-based start position, and $e$ denotes the exclusive end position. Each annotated mention must match the contiguous substring $x[s:e]$ exactly, including its spelling and internal spaces. The annotation target is the requirement stated in the advertisement.
+Chinese-SkillSpan combines a Chinese recruitment corpus, an annotation handbook, human reference labels for evaluation, and silver labels for supervision. Figure~\ref{fig:macro-micro} shows how corpus preparation and annotation support the model comparisons.
 
 \begin{figure}[!htbp]
   \centering
   \includegraphics[width=\textwidth]{figures/Figure1_drawio_restored_20261004.pdf}
-\caption{Overview of Chinese-SkillSpan: (a) corpus preparation and annotation; (b) model training and evaluation; and (c) external-task comparisons in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/major_revision_20261004/external_experiments}{online supplement}. }
+\caption{Overview of Chinese-SkillSpan: (a) corpus preparation and annotation; (b) model training and evaluation; and (c) external-task comparisons in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/major_revision_20261004/external_experiments}{online supplement}.}
   \label{fig:macro-micro}
 \end{figure}
 
-Figure~\ref{fig:macro-micro} summarizes corpus preparation, annotation, and model evaluation. The four categories in Table~\ref{tab:guide-types} draw on ESCO and the knowledge--skill distinction in the European Qualifications Framework~\citep{ESCOv1_2_2024,council2017eqf}.
+\subsection{Competency Definitions and Annotation Schema}
 
-The definitions and rule examples below illustrate the current handbook, v4.2.14, also used in the blinded agreement study. The human reference retains v4.2.10 labels, whereas the original bulk-generation prompt follows v4.2.12. \hyperref[sec:guide-version-history]{Appendix A.4} gives the rules applicable to each label version.
+Competency research connects people's capabilities with the activities they perform. \citet{mcclelland1973competence} argued for assessing competence through behavior relevant to meaningful performance criteria. ESCO defines competence in terms of demonstrated use of knowledge, skills, and personal, social, or methodological abilities in work and learning, with responsibility and autonomy~\citep{escopediaCompetence}. Here, we use \emph{competency} as an umbrella term for capabilities and associated requirements expressed in Chinese recruitment text.
+
+ESCO provides a vocabulary for describing these requirements across occupations. Its skills pillar distinguishes knowledge concepts from skill/competence concepts, while grouping skills and competences together~\citep{escopediaSkillsPillar}. The European Qualifications Framework defines knowledge through what is learned about a field, including its facts, principles, theories, and practices. Skills concern putting knowledge and practical know-how to use in performing tasks and addressing problems~\citep{council2017eqf}. This knowledge--application distinction also informs SkillSpan's skill and knowledge annotations~\citep{zhang2022skillspan}.
+
+Chinese-SkillSpan uses ESCO as a conceptual basis for four task-specific annotation categories~\citep{ESCOv1_2_2024}. Language requirements receive L, knowledge-related requirements K, occupational skills S, and transversal competencies T. L separates natural-language requirements, while T covers broadly applicable communication, cooperation, self-management, and related dispositions. The project-specific K category includes qualifications and explicit industry-background requirements alongside substantive knowledge. Table~\ref{tab:guide-types} summarizes the categories with bilingual examples; the handbook guides their application to Chinese spans.
+
+Given a Chinese job-advertisement sentence $x$, the task is to predict a flat set of non-overlapping spans $(s,e,t)$, where $t\in\{L,K,S,T\}$. Offsets are measured in Unicode code points: $s$ denotes the zero-based start position, and $e$ denotes the exclusive end position. Each annotated mention must match the contiguous substring $x[s:e]$ exactly, including its spelling and internal spaces.
 
 \input{tex/label_schema_main}
-
-By project convention, K combines substantive knowledge with qualification and industry-background requirements. This extends the category beyond the ESCO and EQF definitions of knowledge. Scores describe the combined category; evaluating knowledge alone would require human separation of these subtypes.
-
-\input{tex/coding_detail_no_counts}
 
 \input{tex/silver_plus_methods}
 
 \subsection{Annotation Guidelines and Adjudication}
 \label{sec:annotation-guidelines-r36}
 
-Scope is determined clause by clause. Benefits, application procedures, company promotion, and outcomes alone are excluded; recruitment activities may qualify when they are occupational duties. Thus, \zh{五险一金} (social insurance and housing fund benefits) receives an empty annotation, whereas \zh{能力提升} (capability improvement) without sufficient context remains unresolved. Confirmed absence of an in-scope mention is distinguished from missing context or uncertain interpretation, including in mixed clauses.
+The handbook specifies what constitutes a requirement, which source characters belong to its span, and how context determines its type. Scope is assessed clause by clause: benefits, application procedures, company promotion, and outcomes alone are excluded, while recruitment activities can qualify as occupational duties. A confirmed absence of in-scope requirements receives an empty annotation. Missing context or unresolved interpretation is handled separately, including in sentences that mix requirements with other content.
 
-Boundary selection prioritizes semantic completeness. Following SkillSpan~\citep{zhang2022skillspan}, annotators retain the shortest complete source span, with no fixed length limit or added words. Generic proficiency triggers usually remain outside the span, but necessary heads and complements remain inside; \zh{会聊天} (can converse) retains its modal as a complete capability expression. Coordinated items are split only when each remains interpretable in context. For example, \zh{熟悉使用Word，Excel，PPT等办公软件} (familiar with office software such as Word, Excel, and PowerPoint) permits separate Word, Excel, and PPT spans. In contrast, \zh{优化曝光与转化率} (optimize exposure and conversion rate) remains one S span because the objects require the shared optimization action.
+Boundary selection prioritizes semantic completeness. Following SkillSpan~\citep{zhang2022skillspan}, annotators retain the shortest complete source span, with no fixed length limit or added words. Generic proficiency triggers are usually excluded; modal verbs, heads, and complements remain when needed to express the capability. Coordinated items are split only when each remains meaningful in context; shared actions stay with their objects when needed to preserve the requirement.
 
-Experience wording is assessed by distinguishing occupational activities, generic tenure, and industry background. Generic duration alone is excluded; explicit industry-background requirements receive the project-specific K label. For a named activity, annotators remove the experience qualifier only if the remaining words still express the requirement in context. Thus, \zh{机器人竞赛经验} (robotics competition experience) retains its qualifier when the bare event name would change the requirement. Coordinated items must each pass the same test. \hyperref[app:a]{Appendix A} illustrates how internet-company operations receive S while an industry-background requirement receives K.
+Type assignment uses the requirement's context. Using SQL supports S for the tool mention, whereas understanding the principles of SQL supports K for the complete knowledge phrase. General communication and coordination receive T even when stated as duties, while technical operations receive S. Experience expressions follow the same contextual approach: generic duration alone is excluded, explicit industry-background requirements receive K, and an experience qualifier is retained when its removal would change the requirement.
 
-Type depends on the requirement in context: \zh{使用SQL} (use SQL) supports S for SQL, whereas \zh{了解SQL原理} (understand SQL principles) supports K for \zh{SQL原理} (SQL principles). A predicate can determine type while remaining outside the span; familiarity alone does not determine type. General communication and coordination receive T even in duty clauses, whereas technical operations receive S. Adjudication resolves scope, boundaries, and type separately, without a global label priority~\citep{artstein2008agreement}. Once scope and boundaries are resolved, type-only uncertainty may receive provisional S in the working record, with alternatives logged. Records with unresolved labels, including provisional S, are excluded in full from final training targets. Alternative annotations, nested candidates, and unresolved overlaps remain separate from the final flat layer. Figure~\ref{fig:illustrative-annotations} shows frozen human-reference examples; \hyperref[app:a]{Appendix A} retains the complete G1--G15 rules.
+Adjudication resolves scope, boundaries, and type separately~\citep{artstein2008agreement}. Records with unresolved annotation decisions are excluded from labeled training; alternative or overlapping spans remain separate from final non-overlapping annotations. Figure~\ref{fig:illustrative-annotations} pairs human-reference annotations with English translations; \hyperref[app:a]{Appendix A} gives rules G1--G15 and examples.
 
 \input{tex/representative_annotations_main}
 
-\subsection{Human Annotation and LLM-Assisted Labeling}
+The examples illustrate distinct type and boundary decisions. In Figure~\ref{fig:illustrative-annotations}a, English reading and writing receive L, while communication and teamwork receive T. In panel (b), object orientation and design patterns receive K, while multithreaded and cross-platform programming forms one S span. Panel (c) separates occupational actions into S spans and retains exposure and conversion rates together with their shared optimization action. List numbers are omitted from the illustration; the original texts and offsets are preserved in the data.
+
+\subsection{Annotation Process and Quality Assessment}
 \label{sec:annotation-workflow-r36}
 
-Human annotation, review, and adjudication established the human reference set and informed handbook development. The LLM-labeling route in Figure~\ref{fig:macro-micro} concerns Silver supervision. The adopted annotation route used OpenAI Codex; Table~\ref{tab:model-identity} identifies the models and access routes. An initial sample review preceded bulk annotation. Automated checks examined span text, offsets, labels, and record coverage, while sampled human review assessed the interpretation of requirements. Each annotation batch used the handbook version available at the time of generation, with later amendments documented separately.
+The human reference set was selected from sentences flagged for disagreement between model annotations, to examine ambiguous requirements. According to the authors' reconstruction of the initial stage, the 50 calibration sentences were annotated separately with machine suggestions available and subsequently adjudicated. A separate 100-sentence challenge sample was collaboratively annotated and reviewed. Both samples informed handbook development, and their finalized labels form the 150-sentence reference used for model evaluation (Figure~\ref{fig:coding-detail}).
 
-The adopted expanded Silver pool includes a replacement batch annotated through Codex. The alternative pool uses an API gateway for this batch; both pools share the earlier supervision components. Table~\ref{tab:source-stages} summarizes their composition.
+Silver labels were generated with GPT-6 Astra through OpenAI Codex, following the handbook and an initial sample review. Automated checks assessed annotation structure and record coverage, including span text, offsets, and labels; sampled human review assessed whether the annotations captured the requirements. Additional assisted annotation used suggestions from GPT-6 Astra, Grok, Qwen, DeepSeek, and Kimi (\hyperref[tab:annotation-models]{Appendix C}). Human annotation and review cover 550 distinct sentences across the reference, silver-review samples, and blinded study (\hyperref[sec:human-review-coverage]{Appendix B}).
 
-\FloatBarrier
+The handbook was refined across annotation stages; \hyperref[sec:guide-version-history]{Appendix A.4} identifies the versions associated with each study. Reported scores use the preserved labels, prompts, and evaluation inputs. Dated Chinese and English editions are available in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/notes/handbooks/README.md}{handbook index}. The latest reviewed edition is intended for new annotation; reproduction requires the original study materials.
+
+\input{tex/coding_detail_no_counts}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/benchmark_profile_main_20261006.pdf}
+\caption{Dataset characteristics: (a) input lengths; (b) annotated span lengths; and (c) competency-type distributions, including the full adopted expanded pool. Silver train/dev denote the Qwen and encoder splits. Lengths are measured in Unicode code points, including punctuation and spaces. All records contribute, including those with identical text.}
+\label{fig:length-distributions-r40}
+\end{figure}
 
 \input{tex/annotation_quality_R12}
 
-\subsection{Use of AI Tools}
-\phantomsection\label{sec:ai-use}
-OpenAI Codex assisted with manuscript revision, LaTeX formatting, and code preparation and checking under author direction. Anthropic Claude helped check sentence-level wording. xAI Grok 4.6 with high reasoning effort in Cursor assisted with code preparation and checking. Figures~\ref{fig:macro-micro} and~\ref{fig:coding-detail} are editable vector drawings prepared with OpenAI Codex-assisted code; OpenAI's image-generation tool assisted the initial layout of Figure~\ref{fig:macro-micro}.
-
-The annotation workflow used GPT-6 Astra through OpenAI Codex to generate Silver labels. GPT-6 Astra and Grok, together with Qwen, DeepSeek, and Kimi, also provided suggestions during assisted annotation. Table~\ref{tab:model-identity} separates these roles from the evaluated model configurations. Available model identifiers and settings accompany the reproduction materials; some preparation-tool versions were not retained. The authors reviewed the revisions and take responsibility for the manuscript.
+\input{tex/dataset_characteristics_20261006}
 
 \subsection{Ethics and Data Use}
-The study analyzed recruitment advertisements and did not recruit job applicants or collect applicant responses. Annotation and review were conducted by members of the research team. Institutional ethics approval was not sought, and no formal exemption is claimed. The authors confirm permission to use the source materials for academic research. Research-use permissions and rights to redistribute third-party recruitment texts are documented separately in the access terms for each component. \hyperref[app:d]{Appendix D} reports the automated privacy-screening results and the human review still required before a privacy-vetted release.
+The study analyzed recruitment advertisements, with annotation and review conducted by members of the research team. It did not recruit job applicants or collect applicant responses. Institutional ethics approval was not sought, and no formal exemption is claimed. The authors confirm permission to use the source materials for academic research. Component-specific terms distinguish research use from redistribution rights; \hyperref[app:d]{Appendix D} describes automated privacy screening and the human review required before a privacy-vetted release.
+
+\FloatBarrier

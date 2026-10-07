@@ -50,7 +50,46 @@
           "text": "团队合作精神"
         }
       ],
-      "english_explanation": "Good English reading and writing, communication, and teamwork are distinct requirements."
+      "english_explanation": "English reading and writing are labeled L, while communication and teamwork are labeled T.",
+      "english_translation": "Good English reading and writing skills.\nExcellent communication skills and team spirit.",
+      "display_omissions": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "4、",
+          "reason": "Original advertisement list marker; display only"
+        },
+        {
+          "start": 11,
+          "end": 13,
+          "text": "5、",
+          "reason": "Original advertisement list marker; display only",
+          "line_break_after": true
+        }
+      ],
+      "english_spans": [
+        {
+          "cn_span_index": 0,
+          "start": 5,
+          "end": 39,
+          "type": "L",
+          "text": "English reading and writing skills"
+        },
+        {
+          "cn_span_index": 1,
+          "start": 51,
+          "end": 71,
+          "type": "T",
+          "text": "communication skills"
+        },
+        {
+          "cn_span_index": 2,
+          "start": 76,
+          "end": 87,
+          "type": "T",
+          "text": "team spirit"
+        }
+      ]
     },
     {
       "source_id": "1806-s0005",
@@ -87,7 +126,39 @@
           "text": "多线程和跨平台编程"
         }
       ],
-      "english_explanation": "Understanding object orientation and design patterns differs from multithreaded and cross-platform programming."
+      "english_explanation": "Object orientation and design patterns are labeled K; multithreaded and cross-platform programming is retained as one S span.",
+      "english_translation": "A thorough understanding of object orientation and familiarity with design patterns as well as multithreaded and cross-platform programming.",
+      "display_omissions": [
+        {
+          "start": 0,
+          "end": 3,
+          "text": " 2 ",
+          "reason": "Original advertisement list marker; display only"
+        }
+      ],
+      "english_spans": [
+        {
+          "cn_span_index": 0,
+          "start": 28,
+          "end": 46,
+          "type": "K",
+          "text": "object orientation"
+        },
+        {
+          "cn_span_index": 1,
+          "start": 68,
+          "end": 83,
+          "type": "K",
+          "text": "design patterns"
+        },
+        {
+          "cn_span_index": 2,
+          "start": 95,
+          "end": 139,
+          "type": "S",
+          "text": "multithreaded and cross-platform programming"
+        }
+      ]
     },
     {
       "source_id": "1803-s0002",
@@ -140,7 +211,53 @@
           "text": "Listing优化"
         }
       ],
-      "english_explanation": "Bid management includes keyword expansion, price adjustment, exposure/conversion optimization, and listing optimization."
+      "english_explanation": "Bid management, long-tail keyword expansion, price adjustment, exposure and conversion optimization, and listing optimization are all labeled S.",
+      "english_translation": "Independently manage bidding, including expanding the list of long-tail keywords, adjusting prices, and optimizing exposure and conversion rates, and assist with listing optimization.",
+      "display_omissions": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "3、",
+          "reason": "Original advertisement list marker; display only"
+        }
+      ],
+      "english_spans": [
+        {
+          "cn_span_index": 0,
+          "start": 14,
+          "end": 28,
+          "type": "S",
+          "text": "manage bidding"
+        },
+        {
+          "cn_span_index": 1,
+          "start": 40,
+          "end": 80,
+          "type": "S",
+          "text": "expanding the list of long-tail keywords"
+        },
+        {
+          "cn_span_index": 2,
+          "start": 82,
+          "end": 98,
+          "type": "S",
+          "text": "adjusting prices"
+        },
+        {
+          "cn_span_index": 3,
+          "start": 104,
+          "end": 144,
+          "type": "S",
+          "text": "optimizing exposure and conversion rates"
+        },
+        {
+          "cn_span_index": 4,
+          "start": 162,
+          "end": 182,
+          "type": "S",
+          "text": "listing optimization"
+        }
+      ]
     },
     {
       "source_id": "1973-s0006",
@@ -193,7 +310,53 @@
           "text": "沟通能力"
         }
       ],
-      "english_explanation": "Conversation, service awareness, interpersonal communication, and coordination express transversal capabilities."
+      "english_explanation": "Conversation, service awareness, interpersonal communication, and coordination are labeled T.",
+      "english_translation": "Be a good conversationalist, have a service mindset, be good at communicating with others, and have good coordination and communication skills.",
+      "display_omissions": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "4、",
+          "reason": "Original advertisement list marker; display only"
+        }
+      ],
+      "english_spans": [
+        {
+          "cn_span_index": 0,
+          "start": 0,
+          "end": 27,
+          "type": "T",
+          "text": "Be a good conversationalist"
+        },
+        {
+          "cn_span_index": 1,
+          "start": 36,
+          "end": 51,
+          "type": "T",
+          "text": "service mindset"
+        },
+        {
+          "cn_span_index": 2,
+          "start": 64,
+          "end": 89,
+          "type": "T",
+          "text": "communicating with others"
+        },
+        {
+          "cn_span_index": 3,
+          "start": 105,
+          "end": 117,
+          "type": "T",
+          "text": "coordination"
+        },
+        {
+          "cn_span_index": 4,
+          "start": 122,
+          "end": 142,
+          "type": "T",
+          "text": "communication skills"
+        }
+      ]
     },
     {
       "source_id": "1896-s0005",
@@ -230,7 +393,39 @@
           "text": "大项目售前"
         }
       ],
-      "english_explanation": "The record requests presales or project-management experience; generic duration and experience qualifiers lie outside the recorded spans."
+      "english_explanation": "The sentence requests presales or project-management experience; the archived spans exclude the duration and experience qualifiers.",
+      "english_translation": "At least five years of experience in presales consulting or project management, and experience in presales work on large projects across a number of projects.",
+      "display_omissions": [
+        {
+          "start": 0,
+          "end": 2,
+          "text": "2、",
+          "reason": "Original advertisement list marker; display only"
+        }
+      ],
+      "english_spans": [
+        {
+          "cn_span_index": 0,
+          "start": 37,
+          "end": 56,
+          "type": "S",
+          "text": "presales consulting"
+        },
+        {
+          "cn_span_index": 1,
+          "start": 60,
+          "end": 78,
+          "type": "S",
+          "text": "project management"
+        },
+        {
+          "cn_span_index": 2,
+          "start": 98,
+          "end": 129,
+          "type": "S",
+          "text": "presales work on large projects"
+        }
+      ]
     }
   ]
 }

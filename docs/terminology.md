@@ -18,13 +18,13 @@ Use these names in prose, tables, and figures. Historical identifiers locate fro
 | Initial Silver review sample | 100 sentences | Review before bulk annotation | A100 |
 | Post-generation Silver review sample | 100 sentences | Review after original bulk annotation | QA100; Dual15 is a nested review subset |
 | Additional review sample | 150 sentences | Assisted review of new Silver annotations | QA150; A/B are two annotation layers on the same sentences |
-| Blinded agreement sample | 50 sentences | Independent agreement under the final handbook; self-review allowed | Five learning and 15 practice sentences excluded; individual layers, not consensus model-test labels |
+| Blinded agreement sample | 50 sentences | Three-annotator agreement under the v4.2.14 handbook series; self-review allowed | Five learning and 15 practice sentences excluded; individual layers, not consensus model-test labels |
 
 - The initial annotation dataset has **2,601 records = 150 human-reference sentences + 2,451 original Silver candidate records**. The original Silver pool differs from the 2,150/169 Qwen and encoder split and the 2,156/169 JobBERT split. Model-specific admission and duplicate handling determine those inputs.
 - The adopted expanded Silver pool includes earlier supervision. The 9,646-record alternative overlaps with the adopted 9,540-record pool; their counts must not be added as disjoint datasets.
 - Reviewers A and B annotate the **same 150-sentence additional review sample**. Their two annotation layers do not create 300 unique sentences. The initial and post-generation review samples are separate 100-sentence samples.
 - Historical human coverage is **150 reference + 100 initial review + 100 post-generation review + 150 additional review = 500 unique sentences**. The nested 15-sentence review subset adds no unique sentences. The separate 50-sentence blinded agreement study is reported separately from that historical coverage.
-- The blinded agreement sample measures independent annotation agreement under the final handbook. Its individual layers are not consensus labels for model testing; five learning and fifteen practice sentences are excluded.
+- The blinded agreement sample measures agreement between three independent annotators using the v4.2.14 handbook series. Exact files used for formal coding and individual self-review have not been established; see the [annotation-stage documentation](../reproduction/annotation_documentation_20261007/README.md). Its individual layers are not consensus labels for model testing; five learning and fifteen practice sentences are excluded.
 - **B1 and B2 identify historical label versions, not resource proper names.** Use Earlier labels / Revised labels for the supplementary JobBERT comparison and Qwen + LoRA for the adapted Qwen model. Keep `train_b2.jsonl`, `dev_b2.jsonl`, `v6a`, `v6a_nocross`, model repository IDs, hashes, and archived keys unchanged.
 
 See the [historical JobBERT label-version comparison](../reproduction/experimental_notes/jobbert_label_versions.md) for the joint training-label and checkpoint-selection comparison. Frozen handbook versions remain distinct: changing a display name does not relabel a historical annotation layer.
@@ -41,7 +41,7 @@ See the [historical JobBERT label-version comparison](../reproduction/experiment
 | Admitted records | Retained records | Records included after the documented annotation checks |
 | Manifest | Split manifest | Exact record list for a training, validation or test subset |
 
-The original Silver pool (historical identifier `Silver-plus`) contains generated candidate supervision, including documented reviewed subsets; it does not imply that every label has been manually checked. The human-reference set contains 150 sentences. Total human coding or review covers 500 unique sentences with different designs; this is not a 500-sentence Gold test set.
+The original Silver pool (historical identifier `Silver-plus`) contains generated candidate supervision, including documented reviewed subsets; it does not imply that every label has been manually checked. The human-reference set contains 150 sentences. Human annotation and review cover 550 distinct sentences: 500 across reference construction and assisted reviews, plus 50 in the separate blinded agreement study. These samples serve different purposes and do not form a single model test set.
 
 The paper describes the implemented annotation and supervised-training procedure without claiming a separate knowledge-distillation method. Literature uses distillation in different senses, including learning from generated labels. References to distillation in descriptions of other published methods retain their original meaning. `Supervision`, `fine-tuning`, `LoRA`, `CRF`, and `domain-adaptive pretraining` remain appropriate where they describe the actual experiment.
 

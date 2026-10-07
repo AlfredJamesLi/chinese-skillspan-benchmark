@@ -1,0 +1,29 @@
+% Detailed blinded-agreement evidence relocated from the corpus chapter.
+\phantomsection
+\label{sec:blinded-agreement-details}
+
+For typed exact-span F1, a match requires identical boundaries and types, and the two annotators are treated symmetrically~\citep{hripcsak2005agreement}. Boundary-only exact-span F1 ignores type. Character-level agreement uses pairwise Cohen's $\kappa$ and three-annotator nominal Krippendorff's $\alpha$ on L/K/S/T/O assignments to all 2,111 source Unicode code points; O denotes positions outside annotated spans. Character-level coefficients summarize agreement at each position, while span-level F1 requires complete span matches~\citep{artstein2008agreement}.
+
+The 95\% percentile confidence intervals use 10,000 sentence-bootstrap samples drawn within source strata, with all three annotation layers retained together for each sampled sentence. They summarize variation within the sampled strata for these three annotators. Table~\ref{tab:blinded-agreement-pairs} gives the pairwise comparisons underlying Table~\ref{tab:quality-main}.
+
+\begin{table}[!htbp]
+\caption{Pairwise agreement on the 50-sentence blinded sample after individual self-review.}
+\label{tab:blinded-agreement-pairs}
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}P{.14\linewidth}P{.26\linewidth}P{.22\linewidth}P{.16\linewidth}L@{}}
+\toprule
+Pair & Typed exact F1 [95\% CI] & Boundary-only exact F1 & Cohen's $\kappa$ & \makecell[l]{Identical\\span sets\\(sentences)} \\
+\midrule
+A--B & 0.793 [0.694, 0.884] & 0.828 & 0.880 & 36/50 \\
+A--C & 0.848 [0.752, 0.926] & 0.876 & 0.930 & 39/50 \\
+B--C & 0.814 [0.721, 0.899] & 0.847 & 0.909 & 37/50 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+{\footnotesize\RaggedRight F1 compares complete spans; identical span sets include empty sets. Cohen's $\kappa$ uses L/K/S/T/O labels at source character positions. CIs are 95\% percentile confidence intervals.\par}
+\end{table}
+
+Mean pairwise typed exact-span F1 was 0.818 (95\% CI [0.732, 0.894]), and boundary-only exact-span F1 was 0.850 (95\% CI [0.766, 0.923]). By type, pairwise F1 ranges were 0.762--0.805 for K, 0.778--0.869 for S, and 0.865--1.000 for T. Character-level $\alpha$ was 0.907 (95\% CI [0.851, 0.954]).
+
+All three annotators produced identical complete typed-span sets for 34 sentences, including 11 with no annotated spans. They also identified the same two L spans, both in one sentence, providing limited evidence about agreement on this category. Individual annotation exports and diagnostics are available in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261003}{reproduction materials}.

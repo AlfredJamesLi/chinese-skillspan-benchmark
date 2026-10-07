@@ -1,28 +1,28 @@
-\subsection{Implementation Details}
+\subsection{Training and Inference}
 
-\paragraph{Supervision and model selection.} The JobBERT-zh + CRF baseline starts from the released encoder and inherited CRF and is trained on 2,156 Silver training records, with 169 Silver development records for checkpoint selection. Its supervision incorporates updated guidelines, LLM annotations, and adjudication. Checkpoints are selected by development typed exact-span F1. \hyperref[sec:jobbert-label-versions]{Appendix C} preserves the historical comparison of earlier and revised supervision.
+Supervised checkpoints are selected by typed exact-span F1 on their respective silver development sets. JobBERT-zh + CRF continues training the released encoder and inherited CRF, using supervision informed by handbook revisions, model-generated labels, and human adjudication. \hyperref[sec:jobbert-label-versions]{Appendix C} compares the supervision versions.
 
-Qwen starts from pretrained Instruct weights, with a fresh LoRA adapter for each of seeds 42, 43, and 44 on the Silver sets of 2,150 training and 169 development records. Training uses a fixed system instruction, user template, and five schematic examples. Targets contain literal span text, occurrence index, and type. Loss covers the assistant's JSON output and closing turn token. Training uses BF16 precision; development typed exact-span F1 determines checkpoint selection. Table~\ref{tab:training-settings} summarizes the training settings.
+Qwen starts from pretrained Instruct weights with a fresh LoRA adapter for each of seeds 42, 43, and 44. Training uses a fixed system instruction, user template, and five schematic examples. Targets specify the literal span text, its type, and an index identifying which occurrence of that text in the sentence is intended (0 denotes the first occurrence). The loss is computed over the assistant's JSON output and closing turn token. Training uses BF16 precision. JobBERT and Qwen use early stopping with a patience of two epochs; Table~\ref{tab:training-settings} lists the other training settings.
 
-\begin{table}[htbp]
-\centering
-\caption{Training settings for the Silver-supervised JobBERT-zh and Qwen experiments.}
+XLM-R-large and ESCOXLM-R use AdamW and seeds 42, 43, and 44. BIO labels are assigned to each original Chinese character's first subword. Predictions from chunks of at most 128 source characters, including the remainder, cover complete sentences and are scored against the original text and offsets. \hyperref[app:c]{Appendix C} gives the tokenizer handling needed to preserve source positions.
+
+\begin{table}[!htbp]
+\centering\small
+\caption{Training settings for the silver-supervised model comparisons.}
 \label{tab:training-settings}
-\small
-\begin{tabularx}{\linewidth}{@{}P{0.27\linewidth}P{0.27\linewidth}L@{}}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}P{.22\linewidth}P{.20\linewidth}P{.27\linewidth}L@{}}
 \toprule
-Setting & JobBERT-zh + CRF & Qwen + LoRA \\
+Setting & JobBERT-zh + CRF & Qwen + LoRA & XLM-R / ESCOXLM-R \\
 \midrule
-Learning rate & $2\times10^{-5}$ & $10^{-4}$ \\
-Batch size & 16 & 1; gradient accumulation over 16 steps \\
-Maximum input length & 256 tokens & 8,192 tokens \\
-Maximum training epochs & 6 & 6 \\
-Patience & 2 & 2 epochs \\
+Learning rate & $2\times10^{-5}$ & $10^{-4}$ & $2\times10^{-5}$ \\
+Batch size & 16 & 1; accumulation over 16 steps & 8 \\
+Input handling & Up to 256 tokens & Up to 8,192 tokens & Chunks of up to 128 source characters \\
+Maximum epochs & 6 & 6 & 20 \\
 \bottomrule
 \end{tabularx}
-\par\smallskip\RaggedRight\footnotesize Qwen LoRA uses rank 16, scaling 32, and dropout 0.05 on the attention q/k/v/o projections.
+\par\smallskip
+{\footnotesize\RaggedRight Qwen LoRA uses rank 16, scaling 32, and dropout 0.05 on the attention q/k/v/o projections.\par}
 \end{table}
 
-\begin{samepage}
-\paragraph{Inference.} Each generative request contains one sentence's identifier and text, shared instructions based on handbook v4.2.12, and five fixed examples. A parser maps occurrence-based outputs to source Unicode-code-point spans. Adapted and unadapted Qwen share the base checkpoint, prompts, parser, BF16 precision, deterministic decoding, and a 2,048-token output limit. DeepSeek limits output to 2,048 tokens with thinking disabled and 8,192 with thinking enabled. The prompted configurations use the same instructions with model-specific output budgets. \hyperref[app:c]{\mbox{Appendix~C}} lists service settings and output checks.
-\par\end{samepage}
+Each generative request contains one sentence's identifier and text, shared instructions based on handbook v4.2.12, and five fixed examples. A common parser maps the returned literal spans and occurrence indices to Unicode-code-point offsets. Adapted and unadapted Qwen share the base checkpoint, prompts, parser, BF16 precision, deterministic decoding, and a 2,048-token output limit. Other prompted configurations share the instructions and use the inference settings in Table~\ref{tab:model-identity}, including the output budgets used for DeepSeek with and without thinking.
