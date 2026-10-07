@@ -9,24 +9,30 @@
 
 ## 版本与用途
 
-本版以 B.sop_v4.2.14 系列为基础，文档修订日期为 **2026-10-07**，不是新命名的 v4.2.15。中英文版本统一了四类标签标题、术语和阅读格式，保留中文原句、实体高亮、标签、字符区间及案例跳转。公开文件不含内部批注或修订标记。
+本手册基于 B.sop_v4.2.14 系列修订，更新日期为 **2026年10月7日**，提供中文和英文版本。两版使用一致的标签标题和术语，包含中文原句、实体高亮、标签、字符区间及案例链接。
 
-这是一份供阅读与后续标注参考的手册。历史实验仍应使用相应批次实际保存的手册、提示词、标签和评测设置；本次发布不修改历史数据、预测结果或论文指标，也不证明早期批次使用了本版。后期模型辅助与手册系列的关系，以及仍待核实的具体文件对应关系，见手册附录 B。
+中文原文是实体边界、标签和字符位置的标注依据；英文译文用于辅助理解。手册案例用于解释标注规则，不作为独立评测集。
 
-案例用于解释规则，不自动构成独立评测集。EX099 中部分身份称谓的处理及 EX101（案例 158）按当前研究活动判据的重新确认，仍保留原有待复核说明；发布文件不将这些事项改为已确认。历史配套材料的可获取性仍以附录 B 的说明和仓库中实际公开的文件为准。
+复现历史实验时，请使用对应批次的归档手册、提示词、标签和评测设置。版本沿革、批次与文件的对应关系，以及配套材料的获取情况，见附录 B。
+
+尚待复核的案例包括 EX099 中的部分身份称谓，以及 EX101（案例 158）中科研相关表达按现行规则的分类，详见各例说明。
 
 此前的 [2026-10-02 阅读版](../reader_20261002/README.md) 和其他历史文件继续保留。核对文件完整性可使用本目录的 [manifest.json](manifest.json)。
 
 ## Version and intended use
 
-This reading edition belongs to the B.sop_v4.2.14 handbook series and is dated **2026-10-07**; it is not a newly numbered v4.2.15. The two editions have aligned label headings and terminology. Chinese source examples, entity highlights, labels, character intervals, and internal case links are retained. Public files contain no internal comments or tracked-change markup.
+This handbook is a revision of the B.sop_v4.2.14 series, updated on **7 October 2026** and available in Chinese and English. Both editions use consistent label headings and terminology and include Chinese source sentences, highlighted entities, labels, character offsets, and links to examples.
 
-Chinese remains the annotation source. English glosses help readers understand the Chinese examples; they are not independently annotated English examples. Boundaries, labels, and character offsets refer to the Chinese source text.
+Entity boundaries, labels, and character offsets refer to the Chinese source text. English translations help readers understand the examples. The handbook examples illustrate the annotation rules and are not intended as an independent evaluation set.
 
-Use the archived inputs and evaluation settings for the relevant batch when reproducing earlier experiments. This publication does not replace historical inputs, relabel saved data, rerun models, or change reported scores. Appendix B distinguishes later model-assisted review from earlier annotation batches and records remaining provenance limitations.
+To reproduce earlier experiments, use the archived handbook, prompts, labels, and evaluation settings for the relevant batch. Appendix B describes the version history, links between batches and files, and availability of supporting materials.
 
-The cases illustrate annotation guidance; they are not automatically an independent evaluation set. Pending notices remain for the identity expressions discussed in EX099 and for reassessment of case 158 in EX101 under the current research-activity criteria. The availability of historical supporting materials remains subject to Appendix B and the files actually published in this repository.
+Some identity expressions in EX099 and the classification of research-related expressions in EX101 (case 158) under the current rules remain pending review. See the notes accompanying those examples.
 
-## This publication check
+The [2 October 2026 edition](../reader_20261002/README.md) remains available. File checksums are listed in [manifest.json](manifest.json).
 
-Both editions contain 124 EX reference entries and 23 full cases. Across the full-case tables, all 151 Chinese entity spans, labels, and character intervals match between editions and were preserved during this wording/layout pass. These are document-integrity checks, not new estimates of annotation accuracy or agreement. File hashes and PDF page counts are recorded in manifest.json.
+## 中英文一致性检查 / Bilingual consistency checks
+
+两版均包含 124 个 EX 条目和 23 个完整案例。完整案例表中的 151 条中文实体记录已逐项核对，跨度、标签和字符区间一致。文件校验值及 PDF 页数见 [manifest.json](manifest.json)。
+
+Both editions contain 124 EX entries and 23 full cases. All 151 Chinese entity records in the full-case tables were checked across editions; their spans, labels, and character offsets match. File checksums and PDF page counts are listed in [manifest.json](manifest.json).
