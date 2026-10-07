@@ -1,0 +1,48 @@
+{
+  "edition_date": "2026-10-07",
+  "handbook_series": "B.sop_v4.2.14",
+  "edition_role": "Bilingual reading edition; not a replacement for archived experiment inputs",
+  "chinese_is_annotation_source": true,
+  "english_glosses_are_independently_annotated": false,
+  "comments_and_tracked_changes_in_public_files": false,
+  "historical_data_predictions_and_scores_changed": false,
+  "case_checks": {
+    "EX_reference_entries_per_edition": 124,
+    "full_cases_per_edition": 23,
+    "entity_rows_per_edition": 151,
+    "full_case_chinese_text_labels_and_offsets_match": true
+  },
+  "remaining_limitations": [
+    "Pending identity cases noted in EX099",
+    "Case 158 in EX101 requires reassessment before use as a confirmed answer under current criteria",
+    "Batch-to-file provenance and access to some historical supporting materials remain subject to Appendix B"
+  ],
+  "files": [
+    {
+      "name": "Chinese_SkillSpan_中文版编码手册_20261007.docx",
+      "language": "zh",
+      "bytes": 142550,
+      "sha256": "a8c614a06308f6c4e571b87bf4c1606839c7af0a1170ef25c33c2a4b2c91468b"
+    },
+    {
+      "name": "Chinese_SkillSpan_中文版编码手册_20261007.pdf",
+      "language": "zh",
+      "bytes": 1466400,
+      "sha256": "9a00b9fab1aaa7da695442d556fd42b2e0b013d243d348b10707a12cb8df0a70",
+      "pages": 73
+    },
+    {
+      "name": "Chinese_SkillSpan_Annotation_Handbook_English_20261007.docx",
+      "language": "en",
+      "bytes": 158656,
+      "sha256": "60dfcdaf14624aecdc94dc2a861b12532e1288273c49107f47fb2a2c2d921095"
+    },
+    {
+      "name": "Chinese_SkillSpan_Annotation_Handbook_English_20261007.pdf",
+      "language": "en",
+      "bytes": 1355402,
+      "sha256": "24128240907ab6f686438a52e52f4c54874c571361312466d6e388c42d8718b8",
+      "pages": 89
+    }
+  ]
+}
