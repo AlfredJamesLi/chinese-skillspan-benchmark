@@ -41,9 +41,9 @@ Prepared by Guojing Li and the Chinese-SkillSpan Benchmark research team.
 
 We thank Siyan Chen and Yanbin Zheng for proofreading this handbook.
 
-2026-10-08：更新手册署名与致谢，标注规则和案例内容不变。
+2026-10-08：更新手册署名与致谢；核对参考文献的作者、题名及页码，补充可点击链接，合并重复的 ESCO 报告条目，统一参考文献格式，并调整英文标题和中文引号。标注规则、实体跨度、标签和字符区间不变。
 
-8 October 2026: Updated the handbook author list and acknowledgements. Annotation rules and examples are unchanged.
+8 October 2026: Updated authorship and acknowledgements; corrected reference metadata, added clickable links, merged duplicate ESCO report entries, standardized reference formatting, simplified the English title, and corrected Chinese quotation marks. Annotation rules, entity spans, labels, and character offsets are unchanged.
 
 ## 中英文一致性检查 / Bilingual consistency checks
 
