@@ -9,11 +9,13 @@
 
 ## 版本与用途
 
-本手册基于 B.sop_v4.2.14 系列修订，更新日期为 **2026年10月8日**，提供中文和英文版本。两版使用一致的标签标题和术语，包含中文原句、实体高亮、标签、字符区间及案例链接。
+本手册基于 B.sop_v4.2.14 系列修订，更新日期为 **2026年10月9日**，提供中文和英文版本。两版使用一致的标签标题和术语，包含中文原句、实体高亮、标签、字符区间及案例链接。
 
 中文原文是实体边界、标签和字符位置的标注依据；英文译文用于辅助理解。手册案例用于解释标注规则，不作为独立评测集。
 
 复现历史实验时，请使用对应批次的归档手册、提示词、标签和评测设置。版本沿革、批次与文件的对应关系，以及配套材料的获取情况，见附录 B。
+
+150条人工参考标签的元数据记为v4.2.10，操作文档记载v4.2.11；原始银标的批量生成提示词采用v4.2.12 rev2，论文中的生成式模型比较也使用基于v4.2.12的共享指令。三人盲标的准备材料属于v4.2.14系列，但正式编码和个人自查所用的具体文件尚未确定。早期校准阶段是否提供机器建议，现有记录仍有分歧。详见[标注阶段与手册记录](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/211b7b4dc74b8c93a70ff067803b17784d181da4/reproduction/annotation_documentation_20261007/README.md)。
 
 尚待复核的案例包括 EX099 中的部分身份称谓，以及 EX101（案例 158）中科研相关表达按现行规则的分类，详见各例说明。
 
@@ -21,11 +23,13 @@
 
 ## Version and intended use
 
-This handbook is a revision of the B.sop_v4.2.14 series, updated on **8 October 2026** and available in Chinese and English. Both editions use consistent label headings and terminology and include Chinese source sentences, highlighted entities, labels, character offsets, and links to examples.
+This handbook is a revision of the B.sop_v4.2.14 series, updated on **9 October 2026** and available in Chinese and English. Both editions use consistent label headings and terminology and include Chinese source sentences, highlighted entities, labels, character offsets, and links to examples.
 
 Entity boundaries, labels, and character offsets refer to the Chinese source text. English translations help readers understand the examples. The handbook examples illustrate the annotation rules and are not intended as an independent evaluation set.
 
 To reproduce earlier experiments, use the archived handbook, prompts, labels, and evaluation settings for the relevant batch. Appendix B describes the version history, links between batches and files, and availability of supporting materials.
+
+The 150 human-reference labels carry v4.2.10 metadata, while the operating documentation identifies v4.2.11. The original bulk silver-generation prompt uses v4.2.12 rev2, and the paper's generative-model comparison uses shared instructions based on v4.2.12. Preparation materials for the three-annotator blinded study belong to the v4.2.14 series, but the exact files used during formal coding and individual self-review have not been established. Records also disagree about the availability of machine suggestions during early calibration. See [Annotation stages and handbook records](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/211b7b4dc74b8c93a70ff067803b17784d181da4/reproduction/annotation_documentation_20261007/README.md).
 
 Some identity expressions in EX099 and the classification of research-related expressions in EX101 (case 158) under the current rules remain pending review. See the notes accompanying those examples.
 
@@ -44,6 +48,10 @@ We thank Siyan Chen and Yanbin Zheng for proofreading this handbook.
 2026-10-08：更新手册署名与致谢；核对参考文献的作者、题名及页码，补充可点击链接，合并重复的 ESCO 报告条目，统一参考文献格式，并调整英文标题和中文引号。标注规则、实体跨度、标签和字符区间不变。
 
 8 October 2026: Updated authorship and acknowledgements; corrected reference metadata, added clickable links, merged duplicate ESCO report entries, standardized reference formatting, simplified the English title, and corrected Chinese quotation marks. Annotation rules, entity spans, labels, and character offsets are unchanged.
+
+2026-10-09：附录B补充各标注阶段的版本证据、校准记录的分歧、盲标所用具体文件尚未确定的情况，以及评估指令与当前阅读版的区别，并添加固定版本的证据链接。此次修订不改动标注规则、案例答案、数据、实验输入或结果。
+
+9 October 2026: Appendix B now distinguishes the version evidence for each annotation stage, conflicting calibration records, unresolved file provenance for formal blinded coding, and evaluation instructions from the current reader edition. A fixed-version evidence link was added. This revision does not change annotation rules, case answers, data, experiment inputs, or results.
 
 ## 中英文一致性检查 / Bilingual consistency checks
 
