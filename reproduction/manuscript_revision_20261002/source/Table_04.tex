@@ -1,0 +1,26 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{3}
+% BEGIN PRESERVED TABLE
+\begin{table}[!htbp]
+\caption{Agreement on the 50-sentence blinded sample.}
+\label{tab:quality-main}
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}P{.29\linewidth}P{.11\linewidth}P{.22\linewidth}L@{}}
+\toprule
+Measure & Estimate & 95\% interval & Agreement assessed \\
+\midrule
+Mean pairwise typed exact-span F1 & 0.818 & [0.732, 0.894] & Complete boundaries and types \\
+Mean pairwise boundary-only exact-span F1 & 0.850 & [0.766, 0.923] & Complete boundaries \\
+Nominal Krippendorff's $\alpha$ & 0.907 & [0.851, 0.954] & L/K/S/T/O assignments across three annotators \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+{\footnotesize\RaggedRight\textit{Notes.} Span F1 averages the three annotator-pair scores. Character agreement covers 2,111 Unicode code points. Intervals use a source-stratified sentence bootstrap.\par}
+\end{table}
+
+% END PRESERVED TABLE
+\end{document}

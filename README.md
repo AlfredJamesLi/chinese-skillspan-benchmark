@@ -10,6 +10,8 @@ An earlier preprint of this work is available as [arXiv:2604.23009v1](https://ar
 
 ![Chinese-SkillSpan workflow](reproduction/manuscript_revision_20261002/source/figures/Figure1_drawio_restored_20261004.svg)
 
+Overview of Chinese-SkillSpan: (a) benchmark construction; (b) models and evaluation; and (c) external-task comparisons.
+
 ## What is included?
 
 | Component | Size | Use |

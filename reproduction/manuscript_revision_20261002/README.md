@@ -2,7 +2,7 @@
 
 **Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements**
 
-[Read the manuscript](Chinese_SkillSpan_revised_20261002.pdf). Updated 7 October 2026: **42 pages, 8 figures, and 24 tables**. The PDF and active sources match Overleaf revision `4465283d8b6ef7358d3b0fe08a3194d8ee62e464`. The dated directory and PDF filenames are retained so that existing links continue to work; [manifest.json](manifest.json) identifies the actual source revision and file checksums.
+[Read the manuscript](Chinese_SkillSpan_revised_20261002.pdf). Updated 13 October 2026: **42 pages, 8 figures, and 24 tables**. The PDF and source package reproduce the locally verified build of Overleaf revision `5920c65335fe8abbab7f491e9cb9539f97f882a1`. The dated directory and PDF filenames are retained so that existing links continue to work; [manifest.json](manifest.json) identifies the actual source revision and file checksums.
 
 An [earlier preprint](https://arxiv.org/abs/2604.23009v1) describes an earlier stage of this work. The present manuscript substantially revises the resource definitions, annotation procedures, and evaluation.
 
@@ -16,6 +16,6 @@ Manuscript-preparation assistance is disclosed in Acknowledgements. Funding is r
 
 ## Build the manuscript
 
-The `source/` directory contains the active LaTeX inputs, bibliography, bibliography style, class, and figure assets listed in `manifest.json`. Use XeLaTeX, BibTeX, then XeLaTeX twice from that directory. The Noto CJK fonts named in `source/0main.tex` must be supplied in `source/fonts/noto-cjk/`; font binaries are not bundled in this mirror. The Overleaf project includes the working font files. Other retained source files may describe earlier layouts; the manifest identifies the current inputs.
+The `source/` directory contains the submission LaTeX files, compiled bibliography, figures, and licensed CJK font subsets. These files match the submission source ZIP; `manifest.json` identifies them. Compile `0main.tex` with XeLaTeX, BibTeX, then XeLaTeX twice. Editable figure sources are also included. Retained earlier files are listed separately in the manifest.
 
-The current source revision was compiled with those font dependencies and checked across all 42 pages. Ordinary body paragraphs use a 1 em first-line indent; paragraphs immediately after headings remain flush left. Page margins are 1 inch (2.54 cm). The manuscript wording, results, references, and figure/table numbering are unchanged by these formatting adjustments. [Earlier revision notes](REVISION_HISTORY_20261006.md) retain the preceding editorial history and its original numbering.
+The current source revision was compiled with those font dependencies and checked across all 42 pages. Ordinary body paragraphs use a 1 em first-line indent; paragraphs immediately after headings remain flush left. Page margins are 1 inch (2.54 cm). [Earlier revision notes](REVISION_HISTORY_20261006.md) retain the preceding editorial history and its original numbering.

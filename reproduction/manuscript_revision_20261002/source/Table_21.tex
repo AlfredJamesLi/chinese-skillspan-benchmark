@@ -1,0 +1,24 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{20}
+% BEGIN PRESERVED TABLE
+\begin{table}[htbp]
+\caption{Expanded-pool Qwen results (seed 42).}
+\label{tab:expanded-silver-main}
+\centering\small
+\begin{tabularx}{\linewidth}{@{}Lcccc@{}}
+\toprule
+Pool variant & \makecell{Silver validation\\agreement} & \makecell{Silver test\\agreement} & \makecell{Human reference\\exact} & \makecell{Human reference\\relaxed} \\
+\midrule
+Alternative & 0.783 & 0.759 & 0.597 & 0.713 \\
+Adopted & 0.833 & 0.809 & 0.585 & 0.703 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+Typed span micro-F1 (exact unless marked relaxed). Training/validation/test sizes: alternative, 8,943/351/352; adopted, 8,842/348/350.
+\end{table}
+
+% END PRESERVED TABLE
+\end{document}

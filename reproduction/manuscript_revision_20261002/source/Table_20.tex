@@ -1,0 +1,24 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{19}
+% BEGIN PRESERVED TABLE
+\begin{table}[htbp]
+\centering\small
+\caption{JobBERT performance with earlier and revised labels on matched texts.}
+\label{tab:jobbert-label-versions}
+\begin{tabularx}{\linewidth}{@{}Lcc@{}}
+\toprule
+Label version & \makecell{Train / dev\\records} & Typed exact \\
+\midrule
+Earlier labels & 2,156 / 169 & $0.142\pm0.014$ \\
+Revised labels & 2,156 / 169 & $0.554\pm0.005$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+Typed exact-span micro-F1 on the human reference set; mean $\pm$ sample SD over seeds 42, 43, and 44. Both training labels and checkpoint-selection labels differ between conditions.
+\end{table}
+
+% END PRESERVED TABLE
+\end{document}

@@ -1,0 +1,28 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{11}
+% BEGIN PRESERVED TABLE
+\begin{table}[htbp]
+\caption{Competency-span counts in the adopted expanded silver pool and its 8,842/348/350 training/validation/test splits for the supplementary Qwen experiments.}
+\label{tab:expanded-silver-composition}
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Split & Records & \makecell{Empty annotations\\$n$ (\%)} & L & S & K & T & Total spans \\
+\midrule
+Training & 8,842 & 2,321 (26.2\%) & 149 & 10,653 & 4,887 & 3,851 & 19,540 \\
+Validation & 348 & 91 (26.1\%) & 2 & 403 & 184 & 152 & 741 \\
+Test & 350 & 80 (22.9\%) & 4 & 472 & 194 & 150 & 820 \\
+\midrule
+Full pool & 9,540 & 2,492 (26.1\%) & 155 & 11,528 & 5,265 & 4,153 & 21,101 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize\RaggedRight Percentages use the number of records in each split.\par}
+\end{table}
+
+% END PRESERVED TABLE
+\end{document}

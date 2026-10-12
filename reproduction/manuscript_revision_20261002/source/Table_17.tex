@@ -1,0 +1,24 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{16}
+% BEGIN PRESERVED TABLE
+\begin{table}[!htbp]
+\caption{Prompted extraction on the human reference set (single runs).}
+\label{tab:gold150-shared-r7}
+\centering\small
+\newcommand{\SharedResultRow}[7]{#1 & #2 & #3 & #4 & #5 \\}
+\begin{tabularx}{\linewidth}{@{}Lrrrr@{}}
+\toprule
+Model configuration & P & R & Exact F1 & Relaxed F1 \\
+\midrule
+\SharedResultRows
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+P/R: typed exact-span precision/recall; F1: typed span micro-F1. Qwen uses no adapter.
+\end{table}
+
+% END PRESERVED TABLE
+\end{document}

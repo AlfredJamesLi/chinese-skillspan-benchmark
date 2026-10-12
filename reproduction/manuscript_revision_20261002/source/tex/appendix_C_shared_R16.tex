@@ -1,5 +1,3 @@
-% [R42] Final A handoff, independently rescored; old snapshot preserved in before_R42.
-% Separate protocol: no changes to the abstract or historical V4 result.
 \subsection{Shared-Guideline Evaluation against the Human Reference}
 \label{sec:gold150-shared-r7}
 The shared protocol evaluates six configurations on all 150 reference sentences, using V4.2.12-based general instructions and five schematic examples. The system prompt, examples, and checksum manifest are included in the \href{https://doi.org/10.5281/zenodo.22851581}{Qwen reproduction archive}. For this check, we applied Unicode Normalization Form KC (NFKC), which treats compatible forms such as full-width and half-width letters alike, and removed whitespace. None of the five complete examples matched a reference sentence or appeared in full within one. This comparison checks text overlap; it does not establish that earlier protocol choices were made independently of the reference set.
@@ -8,10 +6,10 @@ Each response identifies the sentence and gives each span as its literal text, z
 
 Qwen adaptation uses the fixed settings described under Training and Inference. The API configurations share task instructions but use the output budgets listed in Table~\ref{tab:model-identity}.
 
-For the XLM-R-large and ESCOXLM-R comparison, tokenizer placeholders retain whitespace and other source positions that would otherwise be discarded. Labels are attached to each original character's first subword, and predictions cover all chunks, including the final remainder. Scoring uses the original text and Unicode-code-point offsets.
+For the XLM-R-large and ESCOXLM-R comparison, tokeniser placeholders retain whitespace and other source positions that would otherwise be discarded. Labels are attached to each original character's first subword, and predictions cover all chunks, including the final remainder. Scoring uses the original text and Unicode-code-point offsets.
 
 \paragraph{Span parsing and matching.}
-After mapping spans to source offsets, the parser orders candidates by start offset and original output order. It keeps the first compatible candidate and rejects duplicates, conflicting types at the same boundary, and overlaps. Partial responses retain valid spans; fully rejected or malformed responses yield empty predictions. All input sentences are scored.
+After mapping spans to source offsets, the parser orders candidates by start offset and original output order. It keeps the first compatible candidate and rejects duplicates, conflicting types at the same boundary, and overlaps. Partial responses retain valid spans; fully rejected or malformed responses yield empty predictions. All inputs are scored.
 
 Exact matching deduplicates identical span tuples within each sentence. Relaxed matching traverses reference spans in source order and selects the unused same-type prediction with highest IoU, taking the first prediction on a tie. This greedy matching uses an IoU threshold of 0.5. A sentence contributes no span counts when both its prediction and reference contain no spans. The released \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/e3f0aa87f65cdfcb399b0c9f305bb7666a76d3b6/scorer/score_lskt.py}{scorer}, \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/e3f0aa87f65cdfcb399b0c9f305bb7666a76d3b6/scripts/eval_gold150_ext.py}{evaluation script}, and \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/reviewer_revision_20261005}{output audit} provide the implementation and response counts. In the DeepSeek thinking run, 18 requests exhausted the output budget before a final answer. These responses count as empty predictions; all 150 reference sentences remain. Scores thus include failure to complete within that budget.
 
@@ -30,6 +28,6 @@ The second example (sentence ID: \texttt{1802-s0005}) is \zh{6、培训其他方
 \FloatBarrier
 \paragraph{Per-seed Qwen results.}
 \label{sec:qwen-shared-sft-r42}
-Per-seed and calibration/challenge scores appear in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/README.md#previous-table-17-qwen-per-seed-and-cohort-scores}{per-seed record}, with full-precision type-level results in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/model_diagnostics_20261003}{model-diagnostic records}. Boundary-only exact F1 (Table~\ref{tab:gold150-main}) uses the same accepted spans without types or duplicate coordinates within each sentence.
+Per-seed and calibration/challenge scores appear in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/1d1c24e20ee049fc768034b5baf58fa882e08e2c/reproduction/process_archive_20260924/secondary_review/README.md#previous-table-17-qwen-per-seed-and-cohort-scores}{per-seed record}, with full-precision type-level results in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/model_diagnostics_20261003}{model-diagnostic records}. Boundary-only exact F1 (Table~\ref{tab:gold150-main}) uses the same accepted spans without types or repeated coordinates per sentence.
 
 \input{tex/model_provenance_details_20261006}

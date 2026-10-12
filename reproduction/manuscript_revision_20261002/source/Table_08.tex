@@ -1,0 +1,35 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{7}
+% BEGIN PRESERVED TABLE
+\begin{table}[!htbp]
+\centering\small
+\caption{Overall and per-type results on the human reference set.}
+\label{tab:external-chinese}
+\textbf{A. Encoders with Chinese supervision: overall F1}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Lrrrrr@{}}
+\toprule
+Encoder & Typed exact & Typed relaxed & \makecell{Boundary-only\\exact} & Macro L/K/S/T & Macro K/S/T \\
+\midrule
+XLM-R-large & $0.522\pm0.022$ & $0.650\pm0.021$ & $0.571\pm0.022$ & $0.607\pm0.016$ & $0.542\pm0.021$ \\
+ESCOXLM-R & $0.538\pm0.021$ & $0.662\pm0.022$ & $0.582\pm0.024$ & $0.622\pm0.010$ & $0.562\pm0.013$ \\
+\bottomrule
+\end{tabularx}
+\par\medskip\textbf{B. Typed exact-span F1 by competency type}\par\smallskip
+\begin{tabularx}{\linewidth}{@{}Lrrrr@{}}
+\toprule
+Model & S ($n=448$) & K ($n=125$) & T ($n=88$) & L ($n=2$) \\
+\midrule
+Qwen, no adapter & $0.377$ & $0.302$ & $0.380$ & $0.000$ \\
+Qwen + LoRA & $0.525\pm0.039$ & $0.512\pm0.063$ & $0.638\pm0.017$ & $0.800\pm0.000$ \\
+XLM-R-large & $0.506\pm0.024$ & $0.495\pm0.037$ & $0.627\pm0.006$ & $0.800\pm0.000$ \\
+ESCOXLM-R & $0.518\pm0.029$ & $0.537\pm0.009$ & $0.631\pm0.020$ & $0.800\pm0.000$ \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\RaggedRight\footnotesize Mean $\pm$ sample SD over three training seeds; unadapted Qwen: single run. $n$: reference spans.
+\end{table}
+
+% END PRESERVED TABLE
+\end{document}

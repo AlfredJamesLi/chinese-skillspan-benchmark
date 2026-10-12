@@ -1,0 +1,27 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{2}
+% BEGIN PRESERVED TABLE
+\begin{table}[!htbp]
+\caption{Source corpus and principal annotation layers in Chinese-SkillSpan.}
+\label{tab:annotation-lineage}
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}P{0.20\linewidth}P{0.18\linewidth}P{0.31\linewidth}L@{}}
+\toprule
+Subset & Size & Annotation content & Role \\
+\midrule
+Source corpus & 22,840 sentences & Recruitment text from four collection batches & Source material for annotation \\
+Human reference & 150 sentences & 663 spans; 8 sentences with no spans (5.3\%) & Model evaluation \\
+Original silver pool & 2,451 records & Model-generated annotations with sampled human review & Candidate supervision \\
+Adopted expanded silver & 9,540 records & 21,101 spans; 2,492 records with no spans (26.1\%) & Expanded supervision and evaluation against silver targets \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+{\footnotesize\RaggedRight Pool sizes count annotation records, which may repeat a sentence. The layers overlap in source material and should not be summed.\par}
+\end{table}
+
+% END PRESERVED TABLE
+\end{document}

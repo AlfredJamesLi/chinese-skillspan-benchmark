@@ -1,0 +1,87 @@
+% Shared table support. Compile Table_01.tex--Table_24.tex from the full source-package root.
+% Uses the manuscript class, fonts, frozen display-value macros, and resolved citation labels.
+% No scores or bibliography identities are recalculated here.
+\usepackage{array,ragged2e,tabularx,longtable,makecell,adjustbox}
+\usepackage[hidelinks]{hyperref}
+\usepackage{float,amssymb,colortbl,multirow,fontspec,xeCJK}
+\geometry{letterpaper,left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm,headheight=14pt}
+\setmainfont{TeX Gyre Termes}
+\providecommand{\TableFontPath}{fonts/noto-cjk/}
+\setCJKmainfont[Path=\TableFontPath,BoldFont=CNSSSubmissionSerif-Bold.otf,ItalicFont=CNSSSubmissionSerif-Regular.otf,ItalicFeatures={FakeSlant=0.2}]{CNSSSubmissionSerif-Regular.otf}
+\setCJKsansfont[Path=\TableFontPath]{CNSSSubmissionSans-Regular.otf}
+\setCJKmonofont[Path=\TableFontPath]{CNSSSubmissionSans-Regular.otf}
+\newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{P}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newcommand{\zh}[1]{#1}
+\newcommand{\en}[1]{#1}
+\setlength{\emergencystretch}{2em}
+\widowpenalty=10000
+\clubpenalty=10000
+\brokenpenalty=10000
+\raggedbottom
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\input{tex/stage2_result_values}
+
+\definecolor{guideL}{HTML}{DED9F7}
+\definecolor{guideK}{HTML}{C6ECEE}
+\definecolor{guideS}{HTML}{FFF0B0}
+\definecolor{guideT}{HTML}{CDEACF}
+\newcommand{\gspan}[2]{{\setlength{\fboxsep}{1.4pt}\colorbox{guide#1}{\strut [#2]\,\textsf{[#1]}}}}
+\newcommand{\gcontext}[1]{\textcolor{black!75}{#1}}
+\newcommand{\gsource}[1]{\,\textsuperscript{\textsf{[#1]}}}
+\newcommand{\ggloss}[1]{\par\emph{#1}}
+% Citation labels copied verbatim from the verified manuscript aux.
+\AtBeginDocument{%
+\newlabel{app:c}{{}{30}{Appendix C. Supplementary Evaluation}{section*.70}{}}
+\bibcite{artstein2008agreement}{{1}{2008}{{Artstein and Poesio}}{{}}}
+\bibcite{bender2018datastatements}{{2}{2018}{{Bender and Friedman}}{{}}}
+\bibcite{bhola2020retrieving}{{3}{2020}{{Bhola et~al.}}{{}}}
+\bibcite{cao2021occupational}{{4}{2021}{{Cao et~al.}}{{}}}
+\bibcite{chen2021boundary}{{5}{2021}{{Chen and Kong}}{{}}}
+\bibcite{chen2024jobsdf}{{6}{2024}{{Chen et~al.}}{{}}}
+\bibcite{conneau2020xlmr}{{7}{2020}{{Conneau et~al.}}{{}}}
+\bibcite{council2017eqf}{{8}{2017}{{Council of the European Union}}{{}}}
+\bibcite{desanto2026skilllens}{{9}{2026}{{De~Santo et~al.}}{{}}}
+\bibcite{devlin2019bert}{{10}{2019}{{Devlin et~al.}}{{}}}
+\bibcite{ding2023annotator}{{11}{2023}{{Ding et~al.}}{{}}}
+\bibcite{ESCOv1_2_2024}{{12}{2024}{{European Commission}}{{}}}
+\bibcite{escopediaCompetence}{{13}{nda}{{European Commission}}{{}}}
+\bibcite{escopediaSkillsPillar}{{14}{ndb}{{European Commission}}{{}}}
+\bibcite{multiconer2023}{{15}{2023}{{Fetahu et~al.}}{{}}}
+\bibcite{gebru2021datasheets}{{16}{2021}{{Gebru et~al.}}{{}}}
+\bibcite{gnehm2022skills}{{17}{2022}{{Gnehm et~al.}}{{}}}
+\bibcite{gururangan2020dapt}{{18}{2020}{{Gururangan et~al.}}{{}}}
+\bibcite{hripcsak2005agreement}{{19}{2005}{{Hripcsak and Rothschild}}{{}}}
+\bibcite{hu2022lora}{{20}{2022}{{Hu et~al.}}{{}}}
+\bibcite{kim2026guidelines}{{21}{2026}{{Kim et~al.}}{{}}}
+\bibcite{klie2024annotationquality}{{22}{2024}{{Klie et~al.}}{{}}}
+\bibcite{lafferty2001crf}{{23}{2001}{{Lafferty et~al.}}{{}}}
+\bibcite{levrang2014esco}{{24}{2014}{{le~Vrang et~al.}}{{}}}
+\bibcite{li2026chineseskillspanpreprint}{{25}{2026}{{Li et~al.}}{{}}}
+\bibcite{li2023coannotating}{{26}{2023}{{Li et~al.}}{{}}}
+\bibcite{uie2022}{{27}{2022}{{Lu et~al.}}{{}}}
+\bibcite{dynamicner2025}{{28}{2025}{{Luo et~al.}}{{}}}
+\bibcite{macrodataPlatform}{{29}{nd}{{MacroData}}{{}}}
+\bibcite{magron2024jobskape}{{30}{2024}{{Magron et~al.}}{{}}}
+\bibcite{mcclelland1973competence}{{31}{1973}{{McClelland}}{{}}}
+\bibcite{nguyen2024rethinking}{{32}{2024}{{Nguyen et~al.}}{{}}}
+\bibcite{peng2015weibo}{{33}{2015}{{Peng and Dredze}}{{}}}
+\bibcite{ILO_2020_OJVs_BigData}{{34}{2020}{{Podjanin and Strietska-Ilina}}{{}}}
+\bibcite{qwen2025report}{{35}{2025}{{Qwen Team}}{{}}}
+\bibcite{gollie2024}{{36}{2024}{{Sainz et~al.}}{{}}}
+\bibcite{sayfullina2018softskills}{{37}{2018}{{Sayfullina et~al.}}{{}}}
+\bibcite{senger2024survey}{{38}{2024}{{Senger et~al.}}{{}}}
+\bibcite{tianchiRecruitment163746}{{39}{nd}{{Tianchi}}{{}}}
+\bibcite{ulhaq2026nerannotation}{{40}{2026}{{Ul~Haq et~al.}}{{}}}
+\bibcite{gptner2025}{{41}{2025}{{Wang et~al.}}{{}}}
+\bibcite{cluener2020}{{42}{2020}{{Xu et~al.}}{{}}}
+\bibcite{gliner-naacl24}{{43}{2024}{{Zaratiana et~al.}}{{}}}
+\bibcite{jensen2022kompetencer}{{44}{2022a}{{Zhang et~al.}}{{}}}
+\bibcite{zhang2022skillspan}{{45}{2022b}{{Zhang et~al.}}{{}}}
+\bibcite{zhang2022weak}{{46}{2022c}{{Zhang et~al.}}{{}}}
+\bibcite{zhang2024nnose}{{47}{2024}{{Zhang et~al.}}{{}}}
+\bibcite{zhang2023escoxlmr}{{48}{2023}{{Zhang et~al.}}{{}}}
+\bibcite{universalner}{{49}{2024}{{Zhou et~al.}}{{}}}
+}

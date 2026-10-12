@@ -1,0 +1,32 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{8}
+\begingroup
+\small\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.13}
+% BEGIN PRESERVED TABLE
+\begin{longtable}{@{}P{0.07\linewidth}P{0.49\linewidth}P{\dimexpr0.44\linewidth-16pt\relax}@{}}
+\caption{Annotation principles for competency mentions and span boundaries.}\label{tab:guide-boundaries}\\
+\toprule\textbf{Rule} & \textbf{Annotation principle} & \textbf{Example and English gloss}\\\midrule
+\endfirsthead
+\multicolumn{3}{@{}l}{\textit{Table \thetable\ (continued)}}\\
+\toprule\textbf{Rule} & \textbf{Annotation principle} & \textbf{Example and English gloss}\\\midrule
+\endhead
+
+
+G1 & The annotation scheme distinguishes L, K, S, and T. Collapsed categories are used only in secondary evaluation.\gsource{E,P} & \gspan{L}{英语六级}\ggloss{College English Test Band 6}\par\smallskip\gspan{K}{计算机专业}\ggloss{Computer science major}\par\smallskip\gspan{S}{数据分析}\ggloss{Data analysis}\par\smallskip\gspan{T}{责任心}\ggloss{Sense of responsibility} \\[5pt]
+G2 & Final annotations contain non-overlapping spans. A sentence may contain several independent mentions, with each character assigned to at most one span.\gsource{P} & \gcontext{熟悉使用}\gspan{S}{Word}\gcontext{，}\gspan{S}{Excel}\gcontext{，}\gspan{S}{PPT}\gcontext{等办公软件}\ggloss{Familiar with using Word, Excel, PowerPoint, and other office software}\par\smallskip No additional covering list span. \\[5pt]
+G3 & Each mention is a contiguous source substring that preserves spelling and internal spaces. Any normalisation is stored separately.\gsource{Z,P} & \gcontext{熟悉 }\gspan{S}{Jekins}\ggloss{Familiar with Jekins}\par\smallskip Keep the source spelling, not \texttt{Jenkins}. \\[5pt]
+G4 & Annotators select the shortest span that expresses a complete requirement. Words and identifiers remain intact; semantic completeness takes priority over length, with no fixed length limit.\gsource{Z,P} & \gspan{S}{支持服务}\ggloss{Support services}\par\smallskip The truncated \zh{支持服} is incomplete. \\[5pt]
+G5 & Generic proficiency triggers usually remain outside the span, while heads needed to express the requirement remain inside. Excluded triggers can still inform type assignment.\gsource{Z,P} & \gcontext{会使用}\gspan{S}{Excel}\ggloss{Able to use Excel}\par\smallskip\gspan{T}{会聊天}\ggloss{Can hold a conversation}\par\smallskip\gcontext{有}\gspan{T}{服务意识}\ggloss{Has a service-oriented mindset} \\[5pt]
+G6 & Coordinated items are separated when each remains meaningful in context. Shared qualifiers may stay outside the spans, and implied words are not added.\gsource{Z,P} & \gcontext{熟悉使用}\gspan{S}{Word}\gcontext{，}\gspan{S}{Excel}\gcontext{，}\gspan{S}{PPT}\gcontext{等办公软件}\ggloss{Familiar with using Word, Excel, PowerPoint, and other office software}\par\smallskip Shared-experience case: see A.3. \\*[5pt]
+G7 & A necessary action, object, or shared head remains within the span when splitting would change its meaning. Span length alone does not determine type.\gsource{Z,P} & \gspan{S}{优化曝光与转化率}\ggloss{Optimise exposure and the conversion rate}\par\smallskip Isolated metric names would lose the optimisation activity. \\
+\bottomrule
+\end{longtable}
+
+% END PRESERVED TABLE
+
+% Source-key explanation is retained in the accompanying README_TABLES.md.
+\endgroup
+\end{document}

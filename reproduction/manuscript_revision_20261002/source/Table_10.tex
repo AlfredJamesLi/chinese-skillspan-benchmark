@@ -1,0 +1,34 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{9}
+\begingroup
+\footnotesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.0}
+\setlength{\smallskipamount}{0pt}
+% BEGIN PRESERVED TABLE
+\begin{longtable}{@{}P{0.07\linewidth}P{0.49\linewidth}P{\dimexpr0.44\linewidth-16pt\relax}@{}}
+\caption{Annotation principles for scope, experience, type, and unresolved records.}\label{tab:guide-scope}\\
+\toprule\textbf{Rule} & \textbf{Annotation principle} & \textbf{Example and English gloss}\\\midrule
+\endfirsthead
+\multicolumn{3}{@{}l}{\textit{Table \thetable\ (continued)}}\\
+\toprule\textbf{Rule} & \textbf{Annotation principle} & \textbf{Example and English gloss}\\\midrule
+\endhead
+
+
+G8 & Benefits, company promotion, administrative instructions, experience durations, and pure outcomes are outside competency scope on their own. Mixed clauses are assessed separately.\gsource{Z,P} & \zh{五险一金，带薪年假} $\rightarrow$ \texttt{[]};\ggloss{Five types of social insurance and a housing fund; paid annual leave}\par\smallskip\gspan{S}{分析推广效果}\gcontext{，保证流量/用户增长}\ggloss{Analyse the effectiveness of promotional activities; ensure traffic/user growth} \\[0pt]
+G9 & Experience wording is omitted only when the remaining activity preserves the requirement. Necessary practical-experience wording is retained. Explicit industry background follows the handbook's broad-K convention. Experience wording is never added to the source.\gsource{P} & \gspan{S}{机器人竞赛经验}\ggloss{Experience in robotics competitions}\par\smallskip Retain the suffix if a bare competition name changes the requirement; do not label generic \zh{经验} (experience) alone. \\[0pt]
+G10 & Educational qualifications include their threshold wording. Language examinations and certificates receive L; non-language qualifications receive K.\gsource{Z,P} & \gspan{K}{本科及以上学历}\ggloss{Bachelor's degree or higher}\par\smallskip\gspan{L}{大学英语6级}\ggloss{College English Test Band 6}\par\smallskip\gcontext{了解}\gspan{K}{ISO 27001}\ggloss{Familiar with ISO 27001}\par\smallskip This denotes familiarity with the standard rather than personal certification. \\[0pt]
+G11 & Tool and method mentions are typed from their predicate context. Occupational use supports S; principles or theory support a complete K phrase. Familiarity alone does not determine type.\gsource{Q,P} & \gcontext{使用}\gspan{S}{SQL}\ggloss{Use SQL}\par\smallskip\gcontext{了解}\gspan{K}{SQL原理}\ggloss{Understand the principles of SQL} \\[0pt]
+G12 & Occupational functions are distinguished from general cognition, communication, and coordination. A duty clause may contain T; usefulness across industries alone does not establish T.\gsource{E,P} & \gspan{S}{编码能力}\ggloss{Coding skills}\par\smallskip\gspan{T}{沟通能力}\ggloss{Communication skills}\par\smallskip\gspan{T}{协调外部资源}\ggloss{Coordinate external resources} \\[0pt]
+G13 & Scope, boundaries, and type are resolved separately, without a fixed priority among labels. If only the type remains uncertain, a mention may receive provisional S with alternatives recorded. Such unresolved records are excluded from final training targets.\gsource{I,P} & Heading alone: \zh{能力提升}\ggloss{Developing capabilities}\par\smallskip The heading alone leaves scope unresolved; it does not establish an empty annotation. \\[0pt]
+G14 & Offsets count original Unicode code points, beginning at zero and excluding the end position. The indexed substring must reproduce the mention exactly; segmentation is a derived view. It does not replace the fixed human-reference offsets.\gsource{P} & \texttt{text[start:end] == span}\par\smallskip Keep the original text, internal spaces, and offsets consistent. \\[0pt]
+G15 & Alternatives and overlaps are recorded separately from the final flat layer. An unresolved record is excluded in full from training, with confirmed empty, missing, and unresolved annotations distinguished.\gsource{P} & \zh{五险一金}\ggloss{Five types of social insurance and a housing fund}\par $\rightarrow$ confirmed \texttt{[]};\par\smallskip\zh{能力提升}\ggloss{Developing capabilities}\par Without context $\rightarrow$ unresolved.\par\smallskip Known partial spans do not make an unresolved record training-ready. \\
+\bottomrule
+\end{longtable}
+
+% END PRESERVED TABLE
+
+% Source-key explanation is retained in the accompanying README_TABLES.md.
+\endgroup
+\end{document}

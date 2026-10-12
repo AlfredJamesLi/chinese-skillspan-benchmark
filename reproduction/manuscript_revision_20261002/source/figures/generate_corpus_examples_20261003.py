@@ -75,10 +75,17 @@ def tokens(ex, language):
             pos = span['end']
         else:
             stop = min([s for s in list(span_starts) + list(omissions) if s > pos] + [len(source)])
-            pattern = r'[A-Za-z]+|[^A-Za-z]' if language == 'ZH' else r'\n|[^\S\n]+|[^\s]+'
+            pattern = r'[A-Za-z]+|[^A-Za-z]' if language == 'ZH' else r'\n|as well as|and assist with|[^\S\n]+|[^\s]+'
             result.extend({'text': t, 'type': None, 'span_index': None}
                           for t in re.findall(pattern, source[pos:stop]))
             pos = stop
+    # Ellipses are display-only context markers, outside annotation spans.
+    if ex['source_id'] == '1802-s0008':
+        result.insert(0, {'text': '…', 'type': None, 'span_index': None})
+        if language == 'EN':
+            result.insert(1, {'text': ' ', 'type': None, 'span_index': None})
+            result.append({'text': ' ', 'type': None, 'span_index': None})
+        result.append({'text': '…', 'type': None, 'span_index': None})
     return result
 
 def layout(ex, language):
@@ -164,7 +171,8 @@ def main():
         ex['en_baseline_offset'] = 36 + (ex['zh_lines'] - 1) * CNLEAD + 25
         ex['height'] = ex['en_baseline_offset'] + (ex['en_lines'] - 1) * ENLEAD + 15
     height = sum(e['height'] for e in examples) + 6 * (len(examples) - 1) + 49
-    c = canvas.Canvas(str(output), pagesize=(W, height), pageCompression=1)
+    c = canvas.Canvas(str(output), pagesize=(W, height), pageCompression=1,
+                      initialFontName='EN')
     c.setTitle('Chinese corpus annotations with aligned English translations')
     c.setAuthor('Chinese-SkillSpan authors')
     def text(x, y, value, font='EN', size=ENFS, color='#202C39'):
@@ -189,16 +197,18 @@ def main():
         c.setStrokeColor(HexColor('#CBD7E3'))
         c.setLineWidth(.75)
         c.roundRect(.5, bottom + .5, W - 1, ex['height'] - 1, 5, fill=1, stroke=1)
-        title = chr(97 + index) + ') ' + ex['title']
-        meta = ex['source_id'] + ' | ' + ('excerpt' if ex['extent'] == 'contiguous excerpt' else 'full sentence')
+        display_title = ('Language and transversal competencies'
+                         if ex['source_id'] == '1802-s0008' else ex['title'])
+        title = chr(97 + index) + ') ' + display_title
         text(PAD, top - 16, title, 'ENB', 11.2)
-        meta_width = width(meta, 'EN', 9)
-        assert PAD + width(title, 'ENB', 11.2) + 15 < W - PAD - meta_width
-        text(W - PAD - meta_width, top - 16, meta, 'EN', 9, '#536270')
+        assert PAD + width(title, 'ENB', 11.2) < W - PAD
         for language, baseline, font, size, leading in [
                 ('ZH', top - 36, 'CN', CNFS, CNLEAD),
                 ('EN', top - ex['en_baseline_offset'], 'EN', ENFS, ENLEAD)]:
-            text(PAD, baseline + 1, language, 'ENB', 8.8, '#536270')
+            if language == 'ZH':
+                text(PAD, baseline + 1, 'ZH', 'ENB', 8.8, '#536270')
+            else:
+                text(TEXT_X, baseline + 13, 'English gloss', 'ENB', 8.8, '#536270')
             for item in ex[language.lower() + '_layout']:
                 x, y = TEXT_X + item['x'], baseline - item['row'] * leading
                 tw, code = item['width'], item['type']

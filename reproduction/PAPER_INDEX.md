@@ -2,11 +2,11 @@
 
 The [4 October revision and checks](major_revision_20261004/README.md) update the current manuscript, data accounting, source-document analysis and uncertainty estimates. Earlier experiments remain archived.
 
-## Current manuscript — 7 October 2026
+## Current manuscript — 13 October 2026
 
 The [current manuscript, source, and revision notes](manuscript_revision_20261002/README.md) contain 42 pages, 8 figures, and 24 tables. The [figure index](manuscript_revision_20261002/FIGURE_INDEX.md) links each figure to its assets and generation instructions. Figure 3 shows the annotation process; Figure 4 shows dataset characteristics; Figure 5 compares models. The [model guide](../docs/models.md) identifies the model releases and their study roles.
 
-Current figure and table positions, taken from the compiled Overleaf revision `4465283`:
+Current figure and table positions, taken from the compiled Overleaf revision `5920c65`:
 
 | Current item | Page | Stable source label |
 |---|---:|---|
@@ -15,9 +15,9 @@ Current figure and table positions, taken from the compiled Overleaf revision `4
 | Table 2 | 6 | `tab:guide-types` |
 | Table 3 | 7 | `tab:annotation-lineage` |
 | Figure 2 | 8 | `fig:illustrative-annotations` |
-| Figure 3 | 10 | `fig:coding-detail` |
-| Figure 4 | 11 | `fig:length-distributions-r40` |
-| Table 4 | 9 | `tab:quality-main` |
+| Figure 3 | 9 | `fig:coding-detail` |
+| Figure 4 | 10 | `fig:length-distributions-r40` |
+| Table 4 | 11 | `tab:quality-main` |
 | Table 5 | 13 | `tab:model-identity` |
 | Table 6 | 14 | `tab:training-settings` |
 | Figure 5 | 15 | `fig:model-comparison` |
@@ -38,10 +38,11 @@ Current figure and table positions, taken from the compiled Overleaf revision `4
 | Table 18 | 30 | `tab:gold150-main` |
 | Table 19 | 32 | `tab:annotation-models` |
 | Table 20 | 33 | `tab:jobbert-label-versions` |
-| Table 21 | 34 | `tab:expanded-silver-main` |
+| Table 21 | 33 | `tab:expanded-silver-main` |
 | Table 22 | 35 | `tab:source-stages` |
 | Table 23 | 36 | `tab:document-overlap` |
 | Table 24 | 37 | `tab:component-access` |
+
 
 The historical tables below retain the numbering of their specified revisions.
 

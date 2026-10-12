@@ -1,0 +1,28 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{22}
+% BEGIN PRESERVED TABLE
+\begin{table}[htbp]
+\centering\small
+\caption{Shared source-document groups based on stored identifiers.}
+\label{tab:document-overlap}
+\begin{tabularx}{\linewidth}{@{}Lrrr@{}}
+\toprule Split comparison & Shared groups & \makecell{Records in\\first split} & \makecell{Records in\\second split} \\
+\midrule
+Silver train / development & 1 & 4 & 27 \\
+Silver train / human reference & 59 & 531 & 143 \\
+Silver development / human reference & 0 & 0 & 0 \\
+Adopted expanded train / validation & 185 & 1,060 & 208 \\
+Adopted expanded train / test & 188 & 1,076 & 210 \\
+Alternative expanded train / validation & 186 & 1,069 & 210 \\
+Alternative expanded train / test & 189 & 1,079 & 211 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+Grouping uses numeric record-ID prefixes for original data and source-file/row identifiers for added data; these identify metadata groups, not independently verified original advertisements. The original silver rows use the 2,150/169 split. Counts refer to sentence records in shared groups; records with different identifiers are counted separately even when their text is identical. Split order follows the first column.
+\end{table}
+
+% END PRESERVED TABLE
+\end{document}

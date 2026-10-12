@@ -1,6 +1,6 @@
 # Current manuscript figure index
 
-This index follows the Overleaf manuscript synchronized on 7 October 2026.
+This index follows the Overleaf manuscript synchronized on 13 October 2026.
 The current manuscript contains eight figures. Existing filenames are retained
 to preserve links; their embedded numbers or dates are not the current figure
 numbers. The manuscript version and file checksums are recorded in this
@@ -17,6 +17,8 @@ directory's manifest.
 | 7 | Additional bilingual annotation examples | [PDF](source/figures/annotation_examples_additional_20261006.pdf) | [Renderer](source/figures/generate_corpus_examples_20261003.py), [Chinese spans and English alignments](source/figures/annotation_examples_corpus_20261003.json); use `--selection additional` |
 | 8 | Length distributions in the additional assisted-review sample | [PDF](source/figures/additional_review_profile_20261006.pdf) | [SVG](source/figures/additional_review_profile_20261006.svg), [renderer and aggregate inputs](../benchmark_profile/README.md); use `--review-only` |
 
+Figure 1 caption: Overview of Chinese-SkillSpan: (a) benchmark construction; (b) models and evaluation; and (c) external-task comparisons.
+
 ## Bilingual examples
 
 Figures 2 and 7 pair frozen Chinese annotations with English translation
@@ -24,7 +26,7 @@ alignments. The English highlights correspond one-to-one to Chinese spans and
 preserve their L/K/S/T types; they are display alignments, not independently
 annotated English evaluation labels. Original advertisement list numbers are
 omitted in the illustration, while the source texts and offsets remain in the
-JSON. Only the five already released reference examples are included.
+JSON. Panel sentence IDs are recorded in that metadata rather than displayed in the figures; English translations are labelled as glosses. Ellipses in Figure 2(a) mark omitted context. Only the five already released reference examples are included.
 
 With Python and ReportLab installed, run from the repository root:
 

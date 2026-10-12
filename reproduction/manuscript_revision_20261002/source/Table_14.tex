@@ -1,0 +1,26 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{13}
+% BEGIN PRESERVED TABLE
+\begin{table}[htbp]
+\caption{Pre-adjudication typed exact-span agreement in the additional review sample.}
+\label{tab:qa150-pairs}
+\centering\small
+\begin{tabularx}{\linewidth}{@{}Lccc@{}}
+\toprule
+Comparison & Exact F1 & 95\% CI & \makecell{Sentences with\\identical span sets} \\
+\midrule
+Reviewer A--Reviewer B & 0.816 & [0.769, 0.860] & 101/150 \\
+Codex--Cursor suggestions & 0.962 & [0.937, 0.983] & 138/150 \\
+Reviewer A--Codex suggestions & 0.823 & [0.776, 0.866] & 100/150 \\
+Reviewer B--Codex suggestions & 0.850 & [0.803, 0.892] & 108/150 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+F1 is micro-averaged; CIs are 95\% percentile intervals from a source-stratified sentence bootstrap.
+\end{table}
+
+% END PRESERVED TABLE
+\end{document}

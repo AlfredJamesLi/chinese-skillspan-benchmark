@@ -1,0 +1,26 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{14}
+% BEGIN PRESERVED TABLE
+\begin{table}[!htbp]
+\caption{Pairwise agreement on the 50-sentence blinded sample.}
+\label{tab:blinded-agreement-pairs}
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}P{.14\linewidth}P{.26\linewidth}P{.22\linewidth}P{.16\linewidth}L@{}}
+\toprule
+Pair & Typed exact F1 [95\% CI] & Boundary-only exact F1 & Cohen's $\kappa$ & \makecell[l]{Identical\\span sets\\(sentences)} \\
+\midrule
+A--B & 0.793 [0.694, 0.884] & 0.828 & 0.880 & 36/50 \\
+A--C & 0.848 [0.752, 0.926] & 0.876 & 0.930 & 39/50 \\
+B--C & 0.814 [0.721, 0.899] & 0.847 & 0.909 & 37/50 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+{\footnotesize\RaggedRight F1 compares complete spans; identical span sets include empty sets. Cohen's $\kappa$ uses L/K/S/T/O labels at source character positions. CIs are 95\% percentile confidence intervals.\par}
+\end{table}
+
+% END PRESERVED TABLE
+\end{document}

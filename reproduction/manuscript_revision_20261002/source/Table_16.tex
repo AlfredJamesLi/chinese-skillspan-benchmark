@@ -1,0 +1,24 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{15}
+% BEGIN PRESERVED TABLE
+\begin{table}[!htbp]
+\centering\small
+\caption{Agreement between final expanded Silver labels and individual blinded annotations.}
+\label{tab:silver-blinded}
+\begin{tabularx}{\linewidth}{@{}Lrrrrr@{}}
+\toprule
+Silver pool & Sentences & Annotator A & Annotator B & Annotator C & Mean \\
+\midrule
+Adopted expanded pool & 49 & 0.724 & 0.681 & 0.721 & 0.709 \\
+Alternative expanded pool & 49 & 0.723 & 0.716 & 0.721 & 0.720 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip\footnotesize\RaggedRight
+Values are typed exact-span micro-F1; the mean is taken across annotators A--C.
+\end{table}
+
+% END PRESERVED TABLE
+\end{document}

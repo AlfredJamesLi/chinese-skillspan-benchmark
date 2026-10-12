@@ -1,20 +1,10 @@
-% [R1-BASE] Restored from 5a8b0be (42-page source), then display-only outline migration.
-% Latest earlier prose preserved in revisions/saved_ad78fcd. R2 now revises only the active abstract.
-% See REVISION_STEP1.md for routing reasons and deferred edits. No deletion approved.
-%% PeerJ Computer Science submission manuscript.
-%% The lineno option is required for peer-review submissions; remove it only
-%% for a camera-ready version when requested by PeerJ.
 \documentclass[fleqn,12pt,lineno]{wlpeerj}
-\definecolor{color2}{RGB}{232,244,252} % Light-blue abstract background.
+\definecolor{color2}{RGB}{232,244,252} %
 
-%% Packages needed by the existing manuscript content. The PeerJ class already
-%% loads graphicx, booktabs, xcolor, caption, natbib, and microtype.
 \usepackage{color,xspace}
 \usepackage{array}
 \usepackage{ragged2e}
-% [R12-L01] Ordinary tabularx avoids ltablex incrementing table counters inside floats.
 \usepackage{tabularx}
-% [R18] Breakable handbook tables; ordinary tabularx remains unchanged elsewhere.
 \usepackage{longtable}
 \usepackage{makecell}
 \usepackage{placeins}
@@ -30,7 +20,6 @@
 \usepackage{fontspec}
 \usepackage{xeCJK}
 \usepackage{enumitem}
-% PeerJ CS initial-submission formatting, checked 2026-09-18.
 \geometry{letterpaper,left=2.54cm,right=2.54cm,top=2.54cm,bottom=2.54cm,headheight=14pt}
 \setmainfont{TeX Gyre Termes}
 \usepackage{etoolbox}
@@ -40,29 +29,24 @@
 \hypersetup{pdfsubject={PeerJ Computer Science research article}}
 \lfoot{\footnotesize\textit{PeerJ Computer Science}}
 
-% [R44] Bundled CJK fonts produce embedded Unicode maps with XeLaTeX.
-% Keep Chinese as selectable text; do not depend on a reader's Adobe-GB1 maps.
 \setCJKmainfont[
   Path=fonts/noto-cjk/,
-  BoldFont=NotoSerifCJKsc-Bold.otf,
-  ItalicFont=NotoSerifCJKsc-Regular.otf,
+  BoldFont=CNSSSubmissionSerif-Bold.otf,
+  ItalicFont=CNSSSubmissionSerif-Regular.otf,
   ItalicFeatures={FakeSlant=0.2}
-]{NotoSerifCJKsc-Regular.otf}
-\setCJKsansfont[Path=fonts/noto-cjk/]{NotoSansCJKsc-Regular.otf}
-\setCJKmonofont[Path=fonts/noto-cjk/]{NotoSansCJKsc-Regular.otf}
+]{CNSSSubmissionSerif-Regular.otf}
+\setCJKsansfont[Path=fonts/noto-cjk/]{CNSSSubmissionSans-Regular.otf}
+\setCJKmonofont[Path=fonts/noto-cjk/]{CNSSSubmissionSans-Regular.otf}
 
 \raggedbottom
 \setlength{\emergencystretch}{2em}
 \widowpenalty=10000
 \clubpenalty=10000
 \brokenpenalty=10000
-% [R12-L02] Let readable figures share text pages rather than forming sparse float pages.
 \renewcommand{\topfraction}{0.9}
 \renewcommand{\bottomfraction}{0.8}
 \renewcommand{\textfraction}{0.08}
 \renewcommand{\floatpagefraction}{0.8}
-%% The official PeerJ template uses unnumbered section headings. Keep the
-%% numbered source files unchanged and apply that presentation globally here.
 \setcounter{secnumdepth}{-1}
 
 
@@ -70,53 +54,17 @@
 
 
 
-%% Column types used in the manuscript tables.
 \newcolumntype{L}{>{\RaggedRight\arraybackslash}X}
 \newcolumntype{P}[1]{>{\RaggedRight\arraybackslash}p{#1}}
 
-%% Language helpers retained from the source manuscript.
 \newcommand{\zh}[1]{#1}
 \newcommand{\en}[1]{#1}
 
-%% AML laboratory review mode. Wenlin's comments and all revision wrappers
-%% remain in the editor; keep this false for a clean PeerJ-facing PDF and set
-%% it true only when collaborators need a visible annotated review copy.
-\newif\ifamlreview
-\amlreviewfalse
-
-%% Supervisor comments remain verbatim at their original source locations.
-\newif\ifshowwlcomments
-\ifamlreview
-  \showwlcommentstrue
-\else
-  \showwlcommentsfalse
-\fi
-\ifshowwlcomments
-  \newcommand{\wl}[1]{\textcolor{purple}{\textbf{wl:} #1}}
-\else
-  \newcommand{\wl}[1]{}
-\fi
-
-%% AML-lab revision convention: substantial revised passages can be shown in
-%% blue during internal review.  The master switch above controls both the
-%% revision highlighting and collaborator-comment display.
-\newif\ifshowrevisions
-\ifamlreview
-  \showrevisionstrue
-\else
-  \showrevisionsfalse
-\fi
-\newcommand{\rev}[1]{\ifshowrevisions{\color{blue}#1}\else#1\fi}
-\newcommand{\zxy}[1]{{\color{blue}[#1 -- Xy]}}
-\newcommand{\zc}{{\color{blue}[cite]}\xspace}
 \newcommand{\etal}{\emph{et al.}\xspace}
 \newcommand{\eg}{\emph{e.g.,}\xspace}
 \newcommand{\ie}{\emph{i.e.,}\xspace}
 \newcommand{\etc}{\emph{etc.}\xspace}
 
-%% Reusable figure floats are defined here and invoked only at their
-%% section-specific locations below.
-\input{tex/skillspan_style_figures}
 \input{tex/stage2_result_values}
 
 \title{Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements}
@@ -128,9 +76,7 @@
 \author[2]{Zichuan Fu\textsuperscript{\textdagger}}
 \author[2]{Wenlin Zhang}
 \author[2]{Kaifeng Guo}
-% \author[2]{Jinning Yang}
 \author[3]{Xinyang Wu}
-% \author[2]{Jingtong Gao}
 \author[2]{Junyi Li}
 \author[2]{Xiangyu Zhao}
 
@@ -140,22 +86,14 @@
 
 \corrauthor{Xiangyu Zhao}{xianzhao@cityu.edu.hk}
 
-%% PeerJ submission keywords (enter these in the submission system):
-%% Chinese-SkillSpan; competency span extraction; skill extraction;
-%% Chinese job advertisements; benchmark dataset; span-level annotation;
-%% domain-adaptive pretraining; large language models; ESCO-informed taxonomy.
 
-%% Author-confirmed abstract style: a single narrative paragraph with qualitative
-%% findings; keep detailed scores, sample sizes, seeds and model rankings in the body.
 \begin{abstract}
-\rev{Extracting competency requirements from Chinese job advertisements supports analysis of occupational skill demand. The task requires explicit rules for preserving semantically complete spans and assigning types in context, especially in coordinated expressions. We introduce Chinese-SkillSpan, a benchmark combining source-text spans with character-level offsets, an annotation handbook, and a shared evaluation protocol. Informed by the European Skills, Competences, Qualifications and Occupations (ESCO) classification, the handbook distinguishes language, knowledge-related requirements, occupational skills, and transversal competencies. Human annotation, review of annotation disagreements, and adjudication informed the rules. The resource separates human reference labels for evaluation from machine-generated silver labels for supervision. Structural checks and sampled human review assessed the silver labels, while a separate blinded study examined annotation agreement. We evaluated prompted language models, silver-supervised Qwen adaptation, and multilingual encoders. Under fixed inference settings, adaptation improved Qwen's end-to-end extraction on the human reference set relative to the same unadapted model. Agreement in the blinded study was higher for span boundaries alone than for boundaries and types together. Chinese-SkillSpan provides a common basis for model comparison and analysis of span-boundary and type errors in Chinese recruitment text.}
+Competency spans in Chinese job advertisements are a useful source for labour market research. The problem is annotation: it is hard to do consistently. Chinese has no spaces between words. Annotators therefore have to rely on meaning and context to determine span boundaries. The same term may also work as a skill in one clause and as a knowledge requirement in another. Existing resources also follow different annotation schemes. We present Chinese-SkillSpan, a benchmark of source-text spans with character-level offsets, built from recruitment advertisements from several sources. We also release the handbook behind it, which was produced through human annotation, disagreement review, and adjudication. Inspired by the high-level categories of the European Skills, Competences, Qualifications and Occupations (ESCO) classification, it sorts spans into four categories: language, knowledge-related requirements, occupational skills, and transversal competencies. Supervised training uses machine-generated ``silver'' labels and excludes the human-reference sentences. Silver labels were checked with automated tests, and a sample was reviewed by hand. Prompted language models, the Chinese recruitment model JobBERT-zh + CRF, multilingual encoders and silver-adapted Qwen were evaluated on the same human reference set with shared scoring rules. A prompted GPT model ranked highest among evaluated configurations, without a clear advantage over the next-highest configuration. Qwen adapted with silver labels performed better than the unadapted model under the same inference settings. In a separate small blinded study, boundary-only agreement was slightly higher than typed agreement. Researchers can use Chinese-SkillSpan to compare models and \mbox{analyse boundary and type errors.}
 \end{abstract}
 
-% Chinese experiments form the paper; external-task experiments are archived separately.
 
 \begin{document}
 \RaggedRight
-% Indent ordinary paragraphs; the class keeps heading-following paragraphs flush left.
 \setlength{\parindent}{1em}
 
 \raggedbottom
@@ -167,7 +105,6 @@
 \footnotetext{Guojing Li and Zichuan Fu contributed equally to this work.}
 \endgroup
 
-% [R4-INTRO] Original introduction retained; current narrative follows Outline V2.
 \input{1Introduction}
 \input{5Relatedwork}
 \input{2Framework}
@@ -175,39 +112,31 @@
 \input{6Conclusion}
 
 \section{Acknowledgements}
-We thank AML Lab for providing GPU resources and access to OpenAI Codex. Codex assisted with manuscript editing, typesetting, and code and figure preparation; Anthropic Claude supported language editing, and xAI Grok 4.6 supported code checking. OpenAI's image-generation tool informed the initial layout of Figure~\ref{fig:macro-micro}. Some preparation-tool versions were not retained. The authors reviewed AI-assisted material and take full responsibility for the manuscript.
+We thank AML Lab for providing GPU resources and access to OpenAI Codex. Codex assisted with manuscript editing, typesetting, and code and figure preparation; Anthropic Claude supported language editing, and xAI Grok 4.6 supplied annotation suggestions for the additional assisted review. OpenAI's image-generation tool informed the initial layout of Figure~\ref{fig:macro-micro}. Some preparation-tool versions were not retained. The authors reviewed AI-assisted material and take full responsibility for the manuscript.
 
-% [R4-LAYOUT] Keep each repository URL intact without forcing an extra page.
 \section{Data Availability}
 \begin{sloppypar}
-\RaggedRight % [R4-LAYOUT] Avoid stretched word spacing around intact URLs.
+\RaggedRight %
 \setlength{\parindent}{1em}
-% Resource locations, reproduction scope and reuse terms; detailed inventory in Appendix D.
-The \href{https://doi.org/10.5281/zenodo.22698504}{dataset archive, v0.1.3 (DOI: 10.5281/zenodo.22698504)}, contains the corpus, handbook, 150-sentence human reference, and 2,150/169 silver training/development records used by Qwen and the encoder comparison. This version-specific DOI identifies the dataset used here; the archive series has concept DOI \href{https://doi.org/10.5281/zenodo.22288337}{10.5281/zenodo.22288337}. Later \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/reproduction/evidence_review_20260925/annotation_layers/README.md}{historical annotation and assisted-review materials} and the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261003}{blinded agreement study} are released separately, with pseudonymized annotator identifiers, source texts, offsets, and individual annotation layers.
+The \href{https://doi.org/10.5281/zenodo.22698504}{dataset archive, v0.1.3 (DOI: 10.5281/zenodo.22698504)}, contains the corpus, the Chinese v4.2.14 handbook dated 9 September 2026, the 150-sentence human reference, and 2,150/169 silver training/development records used by Qwen, XLM-R-large, and ESCOXLM-R. The later reader editions are linked in \hyperref[app:a]{Appendix A}. This version-specific DOI identifies the dataset used here; the archive series has concept DOI \href{https://doi.org/10.5281/zenodo.22288337}{10.5281/zenodo.22288337}. Later \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/reproduction/evidence_review_20260925/annotation_layers/README.md}{historical annotation and assisted-review materials} and the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/agreement/finalguide_abc_20261003}{blinded agreement study} are released separately, with pseudonymised annotator identifiers, source texts, offsets, and individual annotation layers.
 
 The \href{https://doi.org/10.5281/zenodo.22851581}{Qwen archive (DOI: 10.5281/zenodo.22851581)} provides three original-silver LoRA adapters, selected expanded-silver checkpoints, predictions, configurations, and scoring tools. For the 9,540-record adopted and 9,646-record alternative expanded pools, split identifiers and selected outputs are public; complete texts and labels are available through the corresponding author for confidential peer review. Six Chinese-supervised XLM-R/ESCOXLM-R checkpoints are linked in the \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/0c73207c0f9b00fa87f385b78bcb7342bd00bfcb/results_snapshots/table11_evidence_20260924/HF_RELEASE.md}{model index}, with code, configurations, and predictions in the \href{https://doi.org/10.5281/zenodo.22942441}{evaluation archive (DOI: 10.5281/zenodo.22942441)}. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/reproduction/evidence_review_20260925/README.md}{reproduction documentation} separately describes local score recalculation from saved predictions and reported results of model reruns on a server.
 
-The \href{https://huggingface.co/AlfredJames/jobbert-zh}{JobBERT-zh model used for initialization} includes the domain-adapted encoder and existing CRF; the \href{https://huggingface.co/AlfredJames/jobbert-zh-v6a}{silver-trained release} provides silver-trained checkpoints (default: seed 42). The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark}{project repository} and \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/REPRODUCIBILITY.md}{reproduction guide} provide code, procedures, and records, including \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/major_revision_20261004/external_experiments}{supplementary external-task experiments}. Table~\ref{tab:component-access} summarizes access and reproduction scope.
+The \href{https://huggingface.co/AlfredJames/jobbert-zh}{\nolinkurl{AlfredJames/jobbert-zh}} repository provides the domain-adapted encoder and existing CRF used for initialisation; \href{https://huggingface.co/AlfredJames/jobbert-zh-v6a}{\nolinkurl{AlfredJames/jobbert-zh-v6a}} provides silver-trained checkpoints for seeds 42, 43, and 44 (default: seed 42). The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark}{project repository} and \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/REPRODUCIBILITY.md}{reproduction guide} provide code, procedures, and records, including \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/main/reproduction/major_revision_20261004/external_experiments}{supplementary external-task experiments}. Table~\ref{tab:component-access} summarises access and reproduction scope.
 
-Reuse follows component-specific terms: Apache-2.0 for explicitly covered software and documentation; academic research and peer review with attribution for author-controlled annotations and research materials; source permissions for third-party recruitment texts; and accompanying notices and base-model licences for checkpoints and adapters. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/DATA_AVAILABILITY.md}{data-access guide} and \hyperref[app:d]{Appendix D} provide the terms and limitations.
+Reuse follows component-specific terms: Apache-2.0 for explicitly covered software and documentation; academic research and peer review with attribution for author-controlled annotations and research materials; source permissions for third-party recruitment texts; and accompanying notices and base-model licences for checkpoints and adapters. The \href{https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/main/DATA_AVAILABILITY.md}{data-access guide} and \hyperref[app:d]{Appendix D} provide the terms, contact-pattern findings, and review limitations.
 \end{sloppypar}
 
-% [R16] Four reader-facing appendices replace chronological/provenance-heavy routing.
-% Original inputs remain in the project and the R15 git snapshot; no assets deleted.
 \input{tex/appendix_R16}
 \FloatBarrier
 
-% Funding and references use the submission-wide geometry.
-% Use the same 2.54 cm margins for declarations and references.
 \section{Funding}
 This work was supported by the National Social Science Fund of China (Grant No.~21BGL142). The funder had no role in study design, data collection and analysis, manuscript preparation, or the decision to submit the article for publication.
 
 \section{Competing Interests}
 The authors declare that they have no competing interests.
 
-% Funding role and competing interests confirmed by the author on 2026-09-18.
 
-%% Keep ordinary widow/club penalties in the reference list.
 \begingroup
 \widowpenalty=10000
 \clubpenalty=3000

@@ -1,0 +1,27 @@
+% Standalone submission table; content retained from the verified manuscript.
+\documentclass[fleqn,12pt]{wlpeerj}
+\input{table_support}
+\begin{document}
+\setcounter{table}{5}
+% BEGIN PRESERVED TABLE
+\begin{table}[!htbp]
+\centering\small
+\caption{Training settings for the silver-supervised model comparisons.}
+\label{tab:training-settings}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}P{.22\linewidth}P{.20\linewidth}P{.27\linewidth}L@{}}
+\toprule
+Setting & JobBERT-zh + CRF & Qwen + LoRA & XLM-R / ESCOXLM-R \\
+\midrule
+Learning rate & $2\times10^{-5}$ & $10^{-4}$ & $2\times10^{-5}$ \\
+Batch size & 16 & 1; accumulation over 16 steps & 8 \\
+Input handling & Up to 256 tokens & Up to 8,192 tokens & Chunks of up to 128 source characters \\
+Maximum epochs & 6 & 6 & 20 \\
+\bottomrule
+\end{tabularx}
+\par\smallskip
+{\footnotesize\RaggedRight Qwen LoRA uses rank 16, scaling 32, and dropout 0.05 on the attention q/k/v/o projections.\par}
+\end{table}
+
+% END PRESERVED TABLE
+\end{document}

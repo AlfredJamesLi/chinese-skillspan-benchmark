@@ -1,13 +1,13 @@
 \phantomsection
 \label{sec:annotation-quality}
 
-\Needspace{2\baselineskip}
+\Needspace{4\baselineskip}
 Two assisted-review studies assessed generated labels with machine suggestions visible. In a post-generation sample of 100 sentences, separate from the initial 100 reviewed records, agreement between machine-prefilled and human-reviewed annotations reached typed exact-span F1 of 0.959. Two reviewers separately annotated an additional 150-sentence sample, achieving pre-adjudication typed exact-span F1 of 0.816 (\hyperref[app:b]{Appendix B}).
 
-Three annotators independently labeled the same 50-sentence sample drawn from sentences considered for silver annotation, with one sentence per advertisement identifier. They worked in separate Doccano projects with familiarization and practice materials~\citep{klie2024annotationquality}; machine suggestions and other annotators' labels were hidden throughout. Each annotator could consult the study handbook and revise their own labels during individual self-review. Agreement was calculated after self-review, excluding familiarization and practice sentences (\hyperref[sec:blinded-agreement-details]{Appendix B}).
+Three annotators independently labelled the same 50-sentence sample drawn from sentences considered for silver annotation, with one sentence per advertisement identifier. They worked in separate Doccano projects with familiarisation and practice materials~\citep{klie2024annotationquality}; machine suggestions and other annotators' labels were hidden throughout. Annotators could consult the handbook and revise their own labels before submission. The exact handbook file used for formal coding has not been established (\hyperref[sec:guide-version-history]{Appendix A.4}). Agreement was calculated from the final independent annotations, excluding familiarisation and practice sentences (\hyperref[sec:blinded-agreement-details]{Appendix B}).
 
 \begin{table}[!htbp]
-\caption{Agreement on the 50-sentence blinded sample after individual self-review.}
+\caption{Agreement on the 50-sentence blinded sample.}
 \label{tab:quality-main}
 \centering\small
 \setlength{\tabcolsep}{4pt}
@@ -25,6 +25,6 @@ Nominal Krippendorff's $\alpha$ & 0.907 & [0.851, 0.954] & L/K/S/T/O assignments
 \end{table}
 
 \Needspace{2\baselineskip}
-Mean pairwise typed exact-span F1 was 0.818, compared with 0.850 when matching required only identical boundaries (Table~\ref{tab:quality-main}). The difference indicates additional disagreement over type assignment. Pairwise span F1 compares complete annotations symmetrically~\citep{hripcsak2005agreement}, while character-level coefficients assess agreement at individual source positions~\citep{artstein2008agreement}. Across the three annotators, nominal Krippendorff's $\alpha$ was 0.907. The 0.818 agreement was measured on a separate 50-sentence sample and does not provide an independent estimate of annotation reliability for the 150-sentence reference.
+Mean pairwise typed exact-span F1 was 0.818, compared with 0.850 when matching required only identical boundaries (Table~\ref{tab:quality-main}). The lower typed score suggests additional disagreement over type assignment, although the confidence intervals overlap. Pairwise span F1 compares complete annotations symmetrically~\citep{hripcsak2005agreement}, while character-level coefficients assess agreement at individual source positions~\citep{artstein2008agreement}. Across the three annotators, nominal Krippendorff's $\alpha$ was 0.907. The separate 50-sentence study does not provide an independent estimate of annotation reliability for the 150-sentence reference.
 
-The adopted expanded pool contains silver labels for 49 of the 50 blinded-study sentences. A post hoc comparison with each annotator's labels on these sentences yielded mean typed exact-span micro-F1 of 0.709; \hyperref[app:b]{Appendix B} gives per-annotator results and compares the alternative pool.
+The adopted expanded silver pool labels 49 of the 50 blinded-study sentences. Of these 49 sentences, 46 are in training, two in validation, and one in test; the alternative pool has the same membership. The sample therefore does not provide an unseen test set for models trained on the expanded pools (\hyperref[app:d]{Appendix D}). A post hoc comparison with each annotator's labels on these sentences yielded mean typed exact-span micro-F1 of 0.709; \hyperref[app:b]{Appendix B} gives per-annotator results and compares the alternative pool.
