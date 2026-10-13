@@ -1,8 +1,8 @@
 {
   "revision_date": "2026-10-13",
-  "overleaf_commit": "5920c65335fe8abbab7f491e9cb9539f97f882a1",
-  "previous_github_commit": "5c12ecd06e37091d8b28a3831738efd1401abdb2",
-  "description": "Author-approved submission manuscript and figure sources",
+  "overleaf_commit": "187c0325bc79bf7010b82a29445be20c55652013",
+  "previous_github_commit": "b9063a1f21fe528d76615a1c2580dbcc1623a6a7",
+  "description": "Current manuscript and source package with the approved Figure 1 panel-c layout",
   "pdf_pages": 42,
   "figure_count": 8,
   "table_count": 24,
@@ -130,9 +130,7 @@
     "tex/review20260923/output_outcomes.tex",
     "tex/skillspan_style_figures.tex"
   ],
-  "source_scope": "source_files match the submitted LaTeX ZIP, allowing repository line-ending normalisation only. Other files include editable figures and retained historical sources.",
-  "submission_pdf_sha256": "6ea9c1e2536c714d0a23a663f9e52c24a82747b0a4d45b6912a0a84709969262",
-  "submission_zip_sha256": "43b6637e8af575e8fdebab6884bc76d660665ba5956549c6a5d7288a1e34842c",
+  "source_scope": "source_files match the current LaTeX source ZIP, allowing repository line-ending normalisation only. Other files include editable figures and retained historical sources.",
   "checks": {
     "source_zip_compiled_with_XeLaTeX": true,
     "submission_and_overleaf_local_build_render_identically": true,
@@ -211,9 +209,9 @@
   },
   "sha256": {
     "CHANGELOG_zh.md": "0030bc0ffe607bc9a1ded69b2d38519bb21a86638b43064156196d6bc6ad7bf2",
-    "Chinese_SkillSpan_revised_20261002.pdf": "6ea9c1e2536c714d0a23a663f9e52c24a82747b0a4d45b6912a0a84709969262",
+    "Chinese_SkillSpan_revised_20261002.pdf": "a3786d252f8051e129993b620ca85f953feed5c4a9732f2f2744df8af57a5c0c",
     "FIGURE_INDEX.md": "ecf5e26ac655cd82e9f87c22e93c684ac7a2d3b251607cb96f308513ee1b9c62",
-    "README.md": "76a40b1d2e63004a95295f0064b2347a89ab3d846a5332f1643ce00edbce864e",
+    "README.md": "bb580b1486e7111ab54d7a009e00f5aea5a6d6489fc251354334fbb52145158b",
     "REVISION_HISTORY_20261006.md": "9c794642b4889687bb19b209c4db0324f5a02b0a7cea498e721c6284b71c8300",
     "abstract_contributions_20261003/README.md": "196f2263e2f144dbd21dcdc60d629192d35d1ddcbcebf58729b9625733f2b311",
     "abstract_results_focus_20261003/README.md": "3ab3e675c260c82a12b5a1363e6a3a34c6242747f351fb4c6d1d53cdd49df6cc",
@@ -270,10 +268,10 @@
     "source/Table_23.tex": "0cd0e9c83959f79ba79bfd01e5c8adcee6d02cbade3db262970b32960176f609",
     "source/Table_24.tex": "f583afad98c7fad5cb4dfa37d21fc7a4aed7abffeb7f6277cfb5375cc8b72967",
     "source/cnss-apalike-doi.bst": "d792676c5c84d24989345f696cc5ddf29ab79377ec2888a4e5fc9e860c1365ab",
-    "source/figures/Chinese_SkillSpan_Figures_1_2.drawio": "3bc385325ee839caa69ce4ad4b5df72040a0f1f763422501c4d3e3c27bec5315",
-    "source/figures/Figure1_drawio_restored_20261004.drawio": "c4cd4bb59783956f68290d35e9b08b223afcb6da5c278f694f025b944652cf0a",
-    "source/figures/Figure1_drawio_restored_20261004.pdf": "40293f7cbb950b5498dd98aca0584e73980ec7b694c644e4a4a07ed51673f14f",
-    "source/figures/Figure1_drawio_restored_20261004.svg": "6cc14ce0aa03bbd2be0177998cf3f2abfd38a2e61f9a5f367b592fbb8892d99c",
+    "source/figures/Chinese_SkillSpan_Figures_1_2.drawio": "bbda04f7c92ea679b61355fc67cae168bf21a910d2f5c08cefd0c842d8ddbabf",
+    "source/figures/Figure1_drawio_restored_20261004.drawio": "91996bceefaab08503f7f85c22c45b206a222f929eb146e199081ddf7fed1d1f",
+    "source/figures/Figure1_drawio_restored_20261004.pdf": "d1285ae6e2d197aceeb2253650a812db209b7507270f3a572dbf5759ede07b80",
+    "source/figures/Figure1_drawio_restored_20261004.svg": "180f0ed0a5813151efcf90eee2047ed5742eed482b91f398f09e750b45f56fc0",
     "source/figures/Figure1_fancy_vector_20261004.pdf": "9f6095642dd7db3684cef1626bf06e0190fe626642f045feb4f75239b0fa87e4",
     "source/figures/Figure1_fancy_vector_20261004.svg": "3cddd709489ce0d976fdd9d0837c955641a2124f1377889e1f769b58d94859ff",
     "source/figures/Figure2_drawio_restored_20261004.drawio": "c7f5fc825d1da34b38737c3eb0954f0ffbd6ee5af3478e7d303709c94aa8f5a2",
@@ -356,5 +354,7 @@
     "title_benchmark_alignment_20261003/README.md": "5ad747549c9a8b5df13251aac4974bdd6cb669b9af00e07422a5bb16c3f201ca",
     "title_benchmark_alignment_20261003/edits.json": "bc66a8e8092632854a76f6802bdfa7f77a630c854b6a0671e70647d37a236c61"
   },
-  "hash_scope": "Published Git blob bytes in the manuscript directory, excluding this manifest."
+  "hash_scope": "Published Git blob bytes in the manuscript directory, excluding this manifest.",
+  "manuscript_pdf_sha256": "a3786d252f8051e129993b620ca85f953feed5c4a9732f2f2744df8af57a5c0c",
+  "source_package_zip_sha256": "dfbcc1fbb712f9980b2900f40e1099bdc1f5c9c61f550b3b6139bc52ba1a4e67"
 }
