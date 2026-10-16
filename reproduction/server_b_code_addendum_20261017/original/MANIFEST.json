@@ -1,0 +1,218 @@
+{
+  "title": "server_b_code_addendum_20261017",
+  "host": "DS210039",
+  "date": "2026-10-17",
+  "method": "cp -a original bytes; no rewritten substitutes",
+  "public_release_commit": "edb45cdebfdcf2fdeb72341abc6f3155a246d7dd",
+  "status": {
+    "jobbert_continuation_five_named_files": "delivered_original_bytes",
+    "jobbert_project_dependencies": "delivered_original_bytes",
+    "qwen_no_adapter_generation_entry": "本次未找到",
+    "native_patches_and_launchers": "delivered_original_bytes_not_in_table11_code_tree",
+    "historical_env_records": "partial",
+    "weights_or_macrodata": "not_included"
+  },
+  "n_files": 40,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3846,
+      "sha256": "f67f015db675d33d92e33d8285981bb5ff5a3f29dda7132dcef8704639c2fc9f"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 4655,
+      "sha256": "276bd2cb8ff9981593b6e7fcd2069207739301efb760636461e2fd06774622d9"
+    },
+    {
+      "path": "env_records/ENV_RECORD.txt",
+      "bytes": 301,
+      "sha256": "2b663dc7123cc693781db9decd74b1e9f7d1def96738fb64ed1efe38f6575dae"
+    },
+    {
+      "path": "env_records/qwen_json_offset_seed42_RESOURCE.json",
+      "bytes": 403,
+      "sha256": "3cee560e896532782e15638cf9c42746a78a4dfdf9d5bb064a8a882218058328"
+    },
+    {
+      "path": "env_records/requirements-common.txt",
+      "bytes": 181,
+      "sha256": "51a8c86f5c05137ab130bcd5d1403732be637706832720e326c12e3ffb75a379"
+    },
+    {
+      "path": "jobbert_continuation/evidence/LOG_CITATIONS.json",
+      "bytes": 1693,
+      "sha256": "f35755eca432e1f85f1e1a7bdb6d8f909d79dd653f6f65534a5e003aa24b867b"
+    },
+    {
+      "path": "jobbert_continuation/evidence/drop44_b2_seed42_run_config.json",
+      "bytes": 836,
+      "sha256": "079d3a498918e64d059b4d1d3e4425c33da39d2999c46cc80405689da6687451"
+    },
+    {
+      "path": "jobbert_continuation/evidence/slurm_7340.head25.txt",
+      "bytes": 756,
+      "sha256": "25a673abcc91ea71bb7e0d55b122da6b1eb91f5debc4fd8bc53357291792c98d"
+    },
+    {
+      "path": "jobbert_continuation/pytorch-crf/torchcrf/__init__.py",
+      "bytes": 14699,
+      "sha256": "3dd1a7f8be203ff3e316e945e5856b87fb7ea6cb4b084024e6b2119cd09fd107"
+    },
+    {
+      "path": "jobbert_continuation/scorer/score_lskt.py",
+      "bytes": 16513,
+      "sha256": "90624fa545434ebe0442c3243709f5e64ef2f95f4ccbacdb5f5d0696b65d69a7"
+    },
+    {
+      "path": "jobbert_continuation/scripts/eval_gold150_phase1.py",
+      "bytes": 1527,
+      "sha256": "5bf78bac792746a4d2b62d968e270c5d2c5fd20123d6339d0361b13b8340c868"
+    },
+    {
+      "path": "jobbert_continuation/scripts/infer_jobbert_phase1.py",
+      "bytes": 1524,
+      "sha256": "899940316ccc47a3adca5114c2851f95aca5b84fae285647dc776563b1ec3b98"
+    },
+    {
+      "path": "jobbert_continuation/scripts/phase4_v6_jobbert.sbatch",
+      "bytes": 1227,
+      "sha256": "8cbf25d707cf62b53c0bd4a4214dd6f1295c661e2da90df5b4f7164e83ec4c8b"
+    },
+    {
+      "path": "jobbert_continuation/scripts/run_phase4_v6_jobbert12.sh",
+      "bytes": 3547,
+      "sha256": "d2a5227d8fcb76c60ef8f49d4bb4c4a1c9d087a09e39b197abb1f47b1d47dc13"
+    },
+    {
+      "path": "jobbert_continuation/scripts/train_cn_roberta_crf.py",
+      "bytes": 15665,
+      "sha256": "31779bc95e9437e3447bd5c62a7a0d89610a04155caa64c618d52d9eb14d77c0"
+    },
+    {
+      "path": "jobbert_continuation/scripts/train_jobbert_phase1.py",
+      "bytes": 5477,
+      "sha256": "004add6d138c9de87c782f5c58958bc4800c060b3fe3770e1f074b8a737fe6ff"
+    },
+    {
+      "path": "jobbert_continuation/scripts/wait_idle_gpu_pair.sh",
+      "bytes": 2032,
+      "sha256": "ab9f24b2e0a196d05f9c36f729a3421eb3b760c4ceb134e8a406f533d12fb1b8"
+    },
+    {
+      "path": "native_patches/patches/COMPATIBILITY.md",
+      "bytes": 1109,
+      "sha256": "9b942245cd45fb25ccecaf20d5575ec56a24eb3b23755e82c9f3dcfca3370894"
+    },
+    {
+      "path": "native_patches/patches/ESCOXLM-R_MODEL_PATH.md",
+      "bytes": 384,
+      "sha256": "70a66462e948675ce6aa810abbeb9a421780f46cf77024948adbfe7ce8cc22b3"
+    },
+    {
+      "path": "native_patches/patches/escoxlmr_configs/bhola/escoxlmr.json",
+      "bytes": 1610,
+      "sha256": "9eb4072fb2104d609a6aba459dd2bfd96ccd58bf6f5920f6e22fbdf9c770edbd"
+    },
+    {
+      "path": "native_patches/patches/escoxlmr_configs/fijo/escoxlmr.json",
+      "bytes": 1609,
+      "sha256": "a0f99152c4e5ad91e4742590ee11401fd6cd4a3d03f775e7f07053bb590d9e8e"
+    },
+    {
+      "path": "native_patches/patches/escoxlmr_configs/gnehm/escoxlmr.json",
+      "bytes": 1692,
+      "sha256": "462b84915a3e1e2f48314f0c9cf6ba3252c6447141040833c493a5d28ff18bfe"
+    },
+    {
+      "path": "native_patches/patches/escoxlmr_configs/green/escoxlmr.json",
+      "bytes": 1612,
+      "sha256": "c9c226336f44b738e82d2a1030cbb3e69d8f65d0017bb4903e568a2cbb5e83d7"
+    },
+    {
+      "path": "native_patches/patches/escoxlmr_configs/jobstack/escoxlmr.json",
+      "bytes": 1610,
+      "sha256": "2bdca54aec537ff372ca2382511d0df6ea4f1e93387ca511881b6303304b5a5b"
+    },
+    {
+      "path": "native_patches/patches/escoxlmr_configs/kompetencer/escoxlmr.json",
+      "bytes": 1610,
+      "sha256": "b86df329c4d629b0408e9671ce07df24307c40fddb1c1aadba424bf090eba290"
+    },
+    {
+      "path": "native_patches/patches/escoxlmr_configs/sayfullina/escoxlmr.json",
+      "bytes": 1610,
+      "sha256": "111b76b7fb4e6d267a8e8267b54eaebbb022ae359b3a191be866baff1aa84a32"
+    },
+    {
+      "path": "native_patches/patches/escoxlmr_configs/skillspan/escoxlmr.json",
+      "bytes": 1611,
+      "sha256": "e8e7584acff62a8fd13cd1a1ab2cb84d7351698c575d0f47d994f93c1d72e2f2"
+    },
+    {
+      "path": "native_patches/patches/extra_model_revisions.json",
+      "bytes": 142,
+      "sha256": "ef0d597c63f0e4fe46b3778fe44e673ad05f0841e49e614ff8dffd6f5ddf9049"
+    },
+    {
+      "path": "native_patches/patches/gnehm_native/ict.json",
+      "bytes": 379,
+      "sha256": "35e3e4dbdf4f0646c61e2d87eda137849c7609da65f31d4fb1f0ed1dc21466ba"
+    },
+    {
+      "path": "native_patches/patches/gnehm_native/jobbert-de.json",
+      "bytes": 1910,
+      "sha256": "142a7e74d2ae667e4428c5ece14b5c01ca42045843ac763746f05a3713837b47"
+    },
+    {
+      "path": "native_patches/patches/machamp_sampler_torch214.patch",
+      "bytes": 1763,
+      "sha256": "cec941c74bc2677b6fdb6190712de5f1b1bb239563eba5a26d3aefeb10d6afec"
+    },
+    {
+      "path": "native_patches/patches/skillspan_smoke/jobbert.1epoch.json",
+      "bytes": 1918,
+      "sha256": "d25c33839d84c28b749500b5c00a02b95ff61592a99cd1b842bebb44be109501"
+    },
+    {
+      "path": "native_patches/scripts/finish_today_2gpu.sbatch",
+      "bytes": 1125,
+      "sha256": "ee296001b42d1c4017c92dc507ca74686a9425d45d0445efa3468b8048755b0f"
+    },
+    {
+      "path": "native_patches/scripts/gnehm_esco_2gpu.sbatch",
+      "bytes": 1057,
+      "sha256": "b6ede5498326928c748871304b2fac4308aa6edc3a8e26503bdfe89aed26a783"
+    },
+    {
+      "path": "native_patches/scripts/native_skillspan_jobbert_smoke.sbatch",
+      "bytes": 1513,
+      "sha256": "550c8ffd1ba3c52d0c6d53a294848961cbae089d190ca6b4442634ea42aa04da"
+    },
+    {
+      "path": "qwen_no_adapter/BASELINE_COMPATIBILITY.md",
+      "bytes": 1405,
+      "sha256": "29630e625859ea6d2b7cb635e6884361a977f1153178f5903d2310715286ad0f"
+    },
+    {
+      "path": "qwen_no_adapter/NOT_FOUND.md",
+      "bytes": 830,
+      "sha256": "fe7f8e5bd6d5d0c5214da01349074e08703f47b08576c4e83d81b7b1bf798f9a"
+    },
+    {
+      "path": "qwen_no_adapter/PROMPT_gold150_shared_guidelines_v2_rev2_patch1.DRAFT.system.txt",
+      "bytes": 8935,
+      "sha256": "a1ed48a2d0fc96539e7a107e77077eee05c33b48e1b9e21632bf82e0e88af6bc"
+    },
+    {
+      "path": "qwen_no_adapter/USER_TEMPLATE_v2_rev2_patch1.DRAFT.txt",
+      "bytes": 275,
+      "sha256": "d18908d65f3f714d0968a0857ff0dd1b293b16bfcec70392aea92384bf8c8165"
+    },
+    {
+      "path": "qwen_no_adapter/parser_occurrence_v1_1.py",
+      "bytes": 6442,
+      "sha256": "a88e8bd740ac560cacdf777ae95119de34e573dee07a15ba2a52b84ac9e65d05"
+    }
+  ]
+}

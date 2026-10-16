@@ -1,0 +1,25 @@
+[host] DS210039 date=2026-09-08T12:35:28+08:00 slurm=7340
+[gpu] CUDA_VISIBLE_DEVICES=2,3
+index, memory.used [MiB], memory.free [MiB], utilization.gpu [%]
+0, 17109 MiB, 80142 MiB, 99 %
+1, 17149 MiB, 80102 MiB, 99 %
+2, 0 MiB, 97251 MiB, 0 %
+3, 0 MiB, 97251 MiB, 0 %
+4, 0 MiB, 97251 MiB, 0 %
+5, 0 MiB, 97251 MiB, 0 %
+6, 3 MiB, 97248 MiB, 0 %
+7, 3 MiB, 97248 MiB, 0 %
+[phase4] host=DS210039 CUDA_VISIBLE_DEVICES=2,3 pair=2,3 date=2026-09-08T12:35:28+08:00
+SKIP drop44 b1 42
+SKIP drop44 b1 44
+SKIP cleandev b1 44
+START drop44 b1 43 gpu2
+START drop44 b2 42 gpu3
+DONE drop44 b1 43 exit:0
+DONE drop44 b2 42 exit:0
+START drop44 b2 43 gpu2
+START drop44 b2 44 gpu3
+DONE drop44 b2 44 exit:0
+DONE drop44 b2 43 exit:0
+START cleandev b1 42 gpu2
+START cleandev b1 43 gpu3

@@ -1,5 +1,7 @@
 # Chinese-SkillSpan code release, 17 October 2026
 
+Historical scope: this document describes the original tag. For subsequently recovered sources and current limitations, see [revision 1](../code_release_20261017_1/README.md).
+
 This version adds the retained external common-protocol implementation and a consolidated README covering code, inputs, requirements, usage, methodology, citations and component-specific licensing. It preserves all reported results and model/prediction files. This is a documented code release, not certification of full end-to-end reproducibility.
 
 ## Entry points and evidence
