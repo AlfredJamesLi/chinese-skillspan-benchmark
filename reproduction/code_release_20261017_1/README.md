@@ -9,3 +9,7 @@ Read the addendum's [AUDIT.json](../server_b_code_addendum_20261017/AUDIT.json) 
 Use [CITATION.cff](CITATION.cff) and the resolved commit of tag `code-materials-20261017.1` for this code snapshot. This creates no new DOI and does not change the contents of existing dataset/model Zenodo records. For PeerJ, an accompanying source ZIP may be supplied as a supplemental Dataset with a legend containing the word "code".
 
 Complete expanded recruitment texts and labels are not distributed. Access to third-party texts remains subject to original-provider terms; current source releases may not reproduce the exact historical pools. See [DATA_AVAILABILITY.md](../../DATA_AVAILABILITY.md).
+
+## Subsequent MaChAmp / aggregation delivery
+
+[Server B follow-up](../server_b_machamp_emit_20261017/README.md) supplies the aggregation entry and helper plus three complete modified SkillSpan MaChAmp files. The earlier patch is still truncated; complete upstream bindings and other historical/native limitations remain. The old tag remains unchanged.

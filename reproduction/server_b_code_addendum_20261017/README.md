@@ -2,6 +2,10 @@
 
 This adds the supplied server-B source files to the previously published code materials. Read this audited integration note before the original server README: the latter describes the exporter’s intent, while local inspection found a stale manifest entry and a truncated patch.
 
+## Follow-up delivery
+
+The [MaChAmp / aggregation follow-up](../server_b_machamp_emit_20261017/README.md) supplies `emit_verified_results.py`, its local helper and three complete modified SkillSpan source files. The old patch remains truncated; a full diff and complete upstream binding were not recovered. The original-ZIP observations below are historical, not current missing-file claims. The [Qwen A recovery](../code_release_20261017/qwen_no_adapter_shared_guidelines/INTEGRATION.md) separately supplies the baseline generator.
+
 ## Delivered and remaining items
 
 | Item | Verified contents | Limit |
@@ -24,7 +28,7 @@ For direct execution, set `JB` to the absolute path of `original/jobbert_continu
 3. Run `infer_jobbert_phase1.py` with `--model_dir`, `--ckpt <out_dir>/best.pt`, `--input <matching-reference.jsonl>`, `--out <new-prediction.jsonl>`, `--batch_size 16`, `--max_len 256`.
 4. Run `eval_gold150_phase1.py` with `--gold`, `--pred` and `--out`; it imports the bundled historical scorer. Existing frozen predictions and the current repository scorer remain unchanged.
 
-The Slurm/wrapper files retain the historical 12-run grid and server GPU/Conda paths. Do not submit them unchanged on another machine. The native launchers additionally require `run_remaining_today.py` from the pinned B-side archive, native upstream trees and datasets. They also call `emit_verified_results.py` for optional post-run aggregation; that helper is absent from this ZIP and the inspected pinned archive, so this part remains unresolved. The call is guarded with `|| true`, but it must not be represented as delivered. The one-epoch SkillSpan launcher is a smoke test, not the full reported run. See the [previous code inventory](../code_release_20261017/README.md) for archive links.
+The Slurm/wrapper files retain the historical 12-run grid and server GPU/Conda paths. Do not submit them unchanged on another machine. The native launchers additionally require `run_remaining_today.py` from the pinned B-side archive, native upstream trees and datasets. They also call `emit_verified_results.py` for optional post-run aggregation; that helper was absent from the original ZIP and inspected pinned archive, and is now delivered in the linked follow-up. The call is guarded with `|| true`; successful completion of a launcher alone does not prove aggregation ran. The one-epoch SkillSpan launcher is a smoke test, not the full reported run. See the [previous code inventory](../code_release_20261017/README.md) for archive links.
 
 ## Integrity, provenance and packaging discrepancy
 
