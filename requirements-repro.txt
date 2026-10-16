@@ -1,9 +1,5 @@
-# Scoring-only extras (no GPU)
-
-The official scorer is stdlib. Jieba is required for SOP CWS snap / hybrid eval.
-
-```
+# Optional historical SOP word-segmentation / hybrid-evaluation dependency.
+# The official scorer and current human-reference wrapper use the standard library.
+# Encoder rescoring additionally requires NumPy; follow its separate guide.
+# Training requirements are in requirements-train.txt (historical CRF recipe only).
 jieba>=0.42.1
-```
-
-CRF fine-tune (GPU) uses `requirements-train.txt` in this repository. Do not install a parent-lab `../requirements.txt`.

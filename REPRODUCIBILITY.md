@@ -4,6 +4,8 @@
 
 The [4 October revision and checks](reproduction/major_revision_20261004/README.md) update the current manuscript, data accounting, source-document analysis and uncertainty estimates. Earlier experiments remain archived.
 
+The [17 October code release](reproduction/code_release_20261017/README.md) identifies actual code entry points, available historical records, and remaining gaps. The [external common-protocol implementation](reproduction/external_common_code_20261017/README.md) includes input manifests and execution instructions.
+
 Choose the task below. Each guide uses the same descriptive names as the manuscript; exact file names are listed only where needed to run a command or identify a result.
 
 | Task | Start here | What it establishes |

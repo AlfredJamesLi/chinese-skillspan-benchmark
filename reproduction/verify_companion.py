@@ -36,7 +36,7 @@ def main():
     require(math.isclose(po,a['p_o']) and math.isclose(pe,a['p_e']) and f'{(po-pe)/(1-pe):.4f}'=='0.5673','Kappa arithmetic')
     relocation=json.loads((ROOT/'reproduction/experimental_notes/RELOCATION_MAP.json').read_text(encoding='utf8'))
     require(len(relocation)==81,'Passage map count')
-    require(len(readcsv('reproduction/paper_names.csv'))==28,'Name map count')
+    require(len(readcsv('reproduction/paper_names.csv'))==35,'Name map count (current 35-row terminology table)')
     # Working documentation only. Historical source snapshots preserve original paths.
     remote_paths=set()
     if len(sys.argv)>1:
@@ -56,7 +56,7 @@ def main():
             key=posixpath.normpath(posixpath.join(posixpath.dirname(rel),target))
             if not p.exists() and key not in remote_paths:broken.append((rel,target))
     require(not broken,f'Broken local paths: {broken}')
-    print(json.dumps({'files_hashed':len(manifest['files']),'output_rows':9,'relocated_passages':81,'name_mappings':28,'local_links_checked':links,'checks':'passed','models_called':False,'predictions_rescored':False},ensure_ascii=False,indent=2))
+    print(json.dumps({'files_hashed':len(manifest['files']),'output_rows':9,'relocated_passages':81,'name_mappings':35,'local_links_checked':links,'checks':'passed','models_called':False,'predictions_rescored':False},ensure_ascii=False,indent=2))
     return 0
 if __name__=='__main__':
     sys.exit(main())

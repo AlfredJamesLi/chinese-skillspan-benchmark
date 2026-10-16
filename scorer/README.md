@@ -1,11 +1,11 @@
 # Unified LSKT scorer (`cnss-lskt-1.2.0`)
 
-**Paper main gold (2026-08-27):** `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` (V4 SOP+jieba; 2601 IDs derived from Gold v2). Same `--align-mode official`. Do **not** call this human Doccano Gold.
+**Historical V4 hybrid reference (2026-08-27; not the current human-reference evaluation):** `data/test_lskt_v4_cws_simhuman980_hybrid.jsonl` (V4 SOP+jieba; 2601 IDs derived from Gold v2). Same `--align-mode official`. Do **not** call this human Doccano Gold.
 
-**Provenance file (do not overwrite):** `data/gold_canonical_v2.jsonl` (2601 unique IDs, sha256 `7a26e32b…504ff6`). Use for appendix / construction-history scores only. Do not score paper main tables against `gold_canonical_v1.jsonl`.
+**Provenance file (do not overwrite):** `data/gold_canonical_v2.jsonl` (2601 unique IDs, sha256 `7a26e32b…504ff6`). Use for appendix / construction-history scores only. Do not substitute `gold_canonical_v1.jsonl`.
 
 ```bash
-# paper main
+# historical V4 hybrid reference
 python score_lskt.py \
   --gold ../data/test_lskt_v4_cws_simhuman980_hybrid.jsonl \
   --pred PRED_jieba_snapped.jsonl \
@@ -25,6 +25,8 @@ python test_regression.py
 `test_regression.py` uses the paper tree next to `scorer/` (or `$CNSS_PAPER_ROOT`). Parent-repo ChatGPT / JobBERT dumps are skipped when those files are absent.
 
 `--require-exact-id-set` only when the dump is supposed to contain Gold IDs and nothing else.
+
+For the current 150-sentence human-reference evaluation, use [the evaluation guide](../reproduction/EVALUATION_ENTRY.md) and `scripts/eval_gold150_ext.py`. The wrapper converts frozen Unicode-character labels in memory. Historical token-index and current character-index protocols must retain their matching input representation.
 
 ## Official alignment
 

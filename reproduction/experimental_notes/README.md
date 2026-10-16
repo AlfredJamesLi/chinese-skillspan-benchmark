@@ -67,7 +67,7 @@ Saved continuation configurations identify the shared model directory and `crf/b
 
 Qwen B2 training uses the unchanged 2,150/169 records with lossless BIO-to-occurrence conversion. Training uses AdamW, linear learning-rate scheduling, zero warmup and weight decay, gradient checkpointing, BF16, and A100 80GB hardware. Loss applies only to assistant JSON and the closing turn token. No sequence exceeds the 8,192-token training limit. Development exact F1 selects checkpoints, preferring the earlier epoch when scores differ by at most 1e-4.
 
-Baseline and adapters share messages, examples, parser, deterministic decoding, and a 2,048-token output cap. The baseline predictions are reused throughout the matched comparisons. Qwen adapters are not publicly released. Its Hub revision was not recorded, and byte identity with the earlier JSON-offset checkpoint is not established. Template/input hashes do not recover outbound requests that were not archived.
+Baseline and adapters share messages, examples, parser, deterministic decoding, and a 2,048-token output cap. The baseline predictions are reused throughout the matched comparisons. Qwen adapters were not publicly released at the time of this historical snapshot; they are now available in the [Qwen model-reproduction archive](https://doi.org/10.5281/zenodo.22851581). Its Hub revision was not recorded, and byte identity with the earlier JSON-offset checkpoint is not established. Template/input hashes do not recover outbound requests that were not archived.
 
 ## 7. Provider access and computation budgets
 

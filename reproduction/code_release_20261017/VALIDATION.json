@@ -1,0 +1,84 @@
+{
+  "release": "code-materials-20261017",
+  "checked_on": "2026-10-17",
+  "scope": "Source/material integrity and protocol checks; no model training, inference, or rescoring.",
+  "syntax_checked": [
+    "reproduction/external_common_code_20261017/audit_and_lexicon.py",
+    "reproduction/external_common_code_20261017/prepare_data.py",
+    "reproduction/external_common_code_20261017/run_common_encoder.py",
+    "reproduction/external_common_code_20261017/run_matrix.py",
+    "reproduction/external_common_code_20261017/test_protocol.py",
+    "reproduction/verify_companion.py"
+  ],
+  "protocol_known_answer_checks": {
+    "status": "passed",
+    "output": "Seven known-answer span, type, BIO, negative-sentence, and lexical matching checks passed."
+  },
+  "runner_help": "passed without GPU or model loading",
+  "retained_input_files_verified": 24,
+  "dataset_manifests": 6,
+  "dry_run_jobs": 48,
+  "unique_dry_run_jobs": 48,
+  "public_result_rows": 48,
+  "original_source_files": {
+    "run_common_encoder.py": "88233c5741c95f3a18cedcc6beb01d721f9b7bf717cf129bd9d7cec200a7fe56",
+    "audit_and_lexicon.py": "da2cb34f1d81c8b8d8991843b0784f4b4912df447169452f1b4197c18e4c122f",
+    "run_matrix.py": "1c697fffbfb24c54ea806e4c8579981a9a99a3568aebe501690db240bcd6f4a5",
+    "models.json": "40adf9c1af87bc3512d1111dcce9a6a69bfa83aea6b6a4cfd03484be6571ada4",
+    "requirements-common.txt": "51a8c86f5c05137ab130bcd5d1403732be637706832720e326c12e3ffb75a379",
+    "test_protocol.py": "c73bdfb1018a86bc19053b6014637ddbf1133fe0efd2041534aa9aabf56322e3"
+  },
+  "matches_retained_handoff_archive": {
+    "archive": "External_Benchmark_Execution_20260921.zip",
+    "members": {
+      "run_common_encoder.py": [
+        "run_common_encoder.py"
+      ],
+      "audit_and_lexicon.py": [
+        "audit_and_lexicon.py"
+      ],
+      "run_matrix.py": [
+        "run_matrix.py"
+      ],
+      "models.json": [
+        "models.json"
+      ],
+      "requirements-common.txt": [
+        "requirements-common.txt"
+      ],
+      "test_protocol.py": [
+        "test_protocol.py"
+      ]
+    }
+  },
+  "server_executed_source_byte_identity": "not established",
+  "models_called": false,
+  "predictions_rescored": false,
+  "matrix_and_model_revisions_match_public_common_records": true,
+  "dataset_revisions_match_public_common_records": true,
+  "public_receipt_source": "https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/blob/46d1166f8e11dd52d473f645536074bb8dd0a53c/results_snapshots/external_benchmarks_20260922/results.jsonl",
+  "input_helper_checks": [
+    "missing input fails without network",
+    "frozen URL and checksum accepted with mocked download",
+    "valid input verifies without network",
+    "existing bad input is not overwritten",
+    "bad download is not written",
+    "unsafe paths rejected"
+  ],
+  "audit_python": "3.12.14",
+  "network_download_test": "mocked; actual upstream downloads not performed in this release audit",
+  "companion_validation": {
+    "files_hashed": 121,
+    "output_rows": 9,
+    "relocated_passages": 81,
+    "name_mappings": 35,
+    "local_links_checked": 301,
+    "checks": "passed",
+    "models_called": false,
+    "predictions_rescored": false
+  },
+  "evaluation_cli_help": [
+    "scorer/score_lskt.py --help",
+    "scripts/eval_gold150_ext.py --help"
+  ]
+}
