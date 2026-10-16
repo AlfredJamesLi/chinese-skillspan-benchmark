@@ -13,7 +13,7 @@ Current annotation versions and experimental access limits are summarized in the
 | Chinese encoder checkpoints | [Evidence and model index](reproduction/evidence_review_20260925/README.md) | Six public Silver-fine-tuned XLM-R/ESCOXLM-R models; rescored predictions and [audit DOI](https://doi.org/10.5281/zenodo.22942441) |
 | Evaluation code and saved results | [Reproduction guide](REPRODUCIBILITY.md) | Protocol-specific scoring and supporting analyses |
 | JobBERT checkpoints | [Model guide](docs/models.md) | Initialization and Silver-trained continuation; default continuation is seed 42 |
-| Expanded Silver pools | [Study guide](reproduction/expanded_silver/README.md) | Partial annotations, source-selection records, and result snapshots; complete final 9,540/9,646 partitions are available through the corresponding author for confidential peer review |
+| Expanded Silver pools | [Study guide](reproduction/expanded_silver/README.md) | Partial annotations, source-selection records, and result snapshots; complete final 9,540/9,646 texts and labels are not distributed; source-provider access and reuse terms apply |
 | Qwen LoRA adapters | [Qwen model-reproduction archive](https://doi.org/10.5281/zenodo.22851581) | Three Qwen LoRA seeds trained on the 2,150/169 Silver sets, two expanded-pool checkpoints, four supplementary adapters, frozen predictions and scoring tools |
 
 Human annotation and review cover 550 distinct sentences: 500 across reference construction and assisted reviews, plus 50 in the separate blinded agreement study. [Agreement documentation](reproduction/agreement/README.md) separates the designs and identifies the supplied export evidence.
@@ -24,7 +24,7 @@ Use **v0.1.3** for the human reference set and released Silver training/developm
 
 GitHub tags `v0.1.0` and `v0.1.1` have been withdrawn because those snapshots contained a rejected conference draft PDF. The Zenodo `v0.1.1` record remains as an immutable first snapshot; reviewers should still use **v0.1.3**. No `v0.1.4` has been minted.
 
-The Qwen model archive provides adapters, the human reference set for scoring, and split identifiers. Base-model weights are obtained from their original releases; the 2,150/169 Silver texts are available through dataset v0.1.3. Complete expanded-pool texts and labels are available through the corresponding author for confidential peer review; public download is currently restricted. Its `README.md` and `MODEL_INDEX.csv` provide loading instructions and checkpoint-to-experiment mappings.
+The Qwen model archive provides adapters, the human reference set for scoring, and split identifiers. Base-model weights are obtained from their original releases; the 2,150/169 Silver texts are available through dataset v0.1.3. Complete expanded-pool texts and labels are not distributed with this release. Access to third-party texts is subject to the original providers' access and reuse terms; current provider releases may not reproduce the exact historical expanded pools. The [17 October access correction](docs/data_access_correction_20261017.md) supersedes earlier on-request access wording. Its `README.md` and `MODEL_INDEX.csv` provide loading instructions and checkpoint-to-experiment mappings.
 
 For the current seven-author citation and notes on wording retained inside the ZIP files, see [archive notes](docs/archive_notes.md). The published record metadata and current [CITATION.cff](CITATION.cff) supersede older embedded author lists.
 

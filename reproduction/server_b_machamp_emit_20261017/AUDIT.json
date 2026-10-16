@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-17",
+  "zip_sha256": "c62e3bf80f3221735322040962f6ac5c9a498faf345de73db822ef8e8e9e36e0",
+  "received_files": [
+    {
+      "path": "audit_and_lexicon.py",
+      "bytes": 4024,
+      "sha256": "da2cb34f1d81c8b8d8991843b0784f4b4912df447169452f1b4197c18e4c122f"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 621,
+      "sha256": "df7947ef28690dc96c822909c0c6ca86fe4c13e4ac961f05fa9d38df2d23a87d"
+    },
+    {
+      "path": "executed_skillspan_machamp/predict.py",
+      "bytes": 2771,
+      "sha256": "8813af2f308b0f4b5d2e4e359daf5f41c25b3436609ad335cd351b214a2daf8d"
+    },
+    {
+      "path": "executed_skillspan_machamp/machamp/model/trainer.py",
+      "bytes": 15641,
+      "sha256": "0af6cacb491765f126be54924edbad43b963029dbef0fbf1441bc063791965a8"
+    },
+    {
+      "path": "executed_skillspan_machamp/machamp/data/machamp_sampler.py",
+      "bytes": 9072,
+      "sha256": "2ab043a9d8d28325e0810d15a2bddd27c3b39a2655563d3791b3fdd3482057ae"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2221,
+      "sha256": "a80fd1f7d9ad6bd6761c913f582cd53867574be4bcbf50c1dc3dc688a23ac779"
+    },
+    {
+      "path": "scripts/emit_verified_results.py",
+      "bytes": 14531,
+      "sha256": "f5e1e9f475d9e445c0170762ffe121f3882e97f965e6ceb63a8e52b2f135cbe2"
+    }
+  ],
+  "sha256sums_passed": 6,
+  "python_ast_passed": 5,
+  "complete_patch_delivered": false,
+  "complete_modified_source_files": 3,
+  "aggregation_entry_delivered": true,
+  "models_run": false,
+  "aggregation_or_rescoring_run": false,
+  "server_provenance": "DS210039, exporter-reported; not independently accessed"
+}

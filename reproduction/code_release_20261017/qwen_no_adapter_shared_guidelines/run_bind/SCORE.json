@@ -1,0 +1,181 @@
+{
+  "note": "Gold150 shared-prompt rev2 patch1. Appendix protocol. Do not replace JobBERT 3M 0.4331. GPT row is gpt-5.6-terra. 1908-s0003 completed 2026-09-11 (retry). n=149 snapshot archived as SCORE_PARTIAL_n149_20260910.json.",
+  "scorer": "cnss-lskt-1.2.0",
+  "gold150_sha256": "ca8db0bc386c24543fec845d42ea8e24883eb67b8ce75129ac1768c5c0310fd0",
+  "gpt_1908_s0003": "got_response 2026-09-11; historical timeouts a1–a3 retained",
+  "rows": {
+    "claude-sonnet-4-5": {
+      "alignment_ok": true,
+      "n_gold": 150,
+      "n_matched": 150,
+      "n_missing": 0,
+      "typed_exact_f1": 0.5977358490566038,
+      "typed_exact_p": 0.5981873111782477,
+      "typed_exact_r": 0.5972850678733032,
+      "typed_relaxed_f1": 0.709433962264151,
+      "eligible_for_main_table": false,
+      "status": "已确认（附录协议；非 V4 主表）",
+      "complete_150": true,
+      "n_scored": 150,
+      "n_pending": 0,
+      "challenge100": {
+        "n": 100,
+        "typed_exact_f1": 0.5889145496535796
+      },
+      "audit50": {
+        "n": 50,
+        "typed_exact_f1": 0.6143790849673203
+      },
+      "outcomes": {
+        "ok_nonempty": 145,
+        "ok_empty": 4,
+        "partial_rejected": 1
+      }
+    },
+    "kimi-k2.6": {
+      "alignment_ok": true,
+      "n_gold": 150,
+      "n_matched": 150,
+      "n_missing": 0,
+      "typed_exact_f1": 0.571647509578544,
+      "typed_exact_p": 0.5809968847352025,
+      "typed_exact_r": 0.5625942684766214,
+      "typed_relaxed_f1": 0.7141762452107279,
+      "eligible_for_main_table": false,
+      "status": "已确认（附录协议；非 V4 主表）",
+      "complete_150": true,
+      "n_scored": 150,
+      "n_pending": 0,
+      "challenge100": {
+        "n": 100,
+        "typed_exact_f1": 0.5569917743830787
+      },
+      "audit50": {
+        "n": 50,
+        "typed_exact_f1": 0.5991189427312775
+      },
+      "outcomes": {
+        "ok_nonempty": 142,
+        "ok_empty": 6,
+        "partial_rejected": 2
+      }
+    },
+    "qwen25-14b-instruct": {
+      "alignment_ok": true,
+      "n_gold": 150,
+      "n_matched": 150,
+      "n_missing": 0,
+      "typed_exact_f1": 0.3611650485436893,
+      "typed_exact_p": 0.5068119891008175,
+      "typed_exact_r": 0.28054298642533937,
+      "typed_relaxed_f1": 0.4699029126213592,
+      "eligible_for_main_table": false,
+      "status": "已确认（附录协议；非 V4 主表）",
+      "complete_150": true,
+      "n_scored": 150,
+      "n_pending": 0,
+      "challenge100": {
+        "n": 100,
+        "typed_exact_f1": 0.3449319213313162
+      },
+      "audit50": {
+        "n": 50,
+        "typed_exact_f1": 0.3902439024390244
+      },
+      "outcomes": {
+        "ok_nonempty": 69,
+        "partial_rejected": 69,
+        "ok_empty": 11,
+        "all_spans_rejected": 1
+      }
+    },
+    "deepseek-v4-pro-nothink": {
+      "alignment_ok": true,
+      "n_gold": 150,
+      "n_matched": 150,
+      "n_missing": 0,
+      "typed_exact_f1": 0.6469248291571754,
+      "typed_exact_p": 0.6513761467889908,
+      "typed_exact_r": 0.6425339366515838,
+      "typed_relaxed_f1": 0.7608200455580866,
+      "eligible_for_main_table": false,
+      "status": "已确认（附录协议；非 V4 主表）",
+      "complete_150": true,
+      "n_scored": 150,
+      "n_pending": 0,
+      "challenge100": {
+        "n": 100,
+        "typed_exact_f1": 0.6429418742586002
+      },
+      "audit50": {
+        "n": 50,
+        "typed_exact_f1": 0.6540084388185653
+      },
+      "outcomes": {
+        "ok_nonempty": 142,
+        "ok_empty": 6,
+        "partial_rejected": 2
+      }
+    },
+    "deepseek-v4-pro-think8192": {
+      "alignment_ok": true,
+      "n_gold": 150,
+      "n_matched": 150,
+      "n_missing": 0,
+      "typed_exact_f1": 0.5913503971756399,
+      "typed_exact_p": 0.7127659574468085,
+      "typed_exact_r": 0.5052790346907994,
+      "typed_relaxed_f1": 0.6707855251544572,
+      "eligible_for_main_table": false,
+      "status": "已确认（附录协议；非 V4 主表）",
+      "complete_150": true,
+      "n_scored": 150,
+      "n_pending": 0,
+      "challenge100": {
+        "n": 100,
+        "typed_exact_f1": 0.5722379603399433
+      },
+      "audit50": {
+        "n": 50,
+        "typed_exact_f1": 0.6229508196721312
+      },
+      "outcomes": {
+        "ok_nonempty": 124,
+        "format_failed": 18,
+        "ok_empty": 8
+      }
+    },
+    "gpt-5.6-terra": {
+      "alignment_ok": true,
+      "n_gold": 150,
+      "n_matched": 150,
+      "n_missing": 0,
+      "typed_exact_f1": 0.6666666666666667,
+      "typed_exact_p": 0.6759689922480621,
+      "typed_exact_r": 0.6576168929110106,
+      "typed_relaxed_f1": 0.7660550458715597,
+      "eligible_for_main_table": false,
+      "status": "已确认（附录协议；非 V4 主表）",
+      "complete_150": true,
+      "n_scored": 150,
+      "n_pending": 0,
+      "challenge100": {
+        "n": 100,
+        "typed_exact_f1": 0.6538461538461539
+      },
+      "audit50": {
+        "n": 50,
+        "typed_exact_f1": 0.689075630252101
+      },
+      "outcomes": {
+        "ok_nonempty": 141,
+        "ok_empty": 7,
+        "partial_rejected": 2
+      },
+      "paper_name": "gpt-5.6-terra",
+      "request_model": "gpt-5.6-terra",
+      "response_model": "gpt-5.6-terra"
+    }
+  },
+  "paper_gpt_name": "gpt-5.6-terra"
+}

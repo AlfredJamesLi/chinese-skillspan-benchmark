@@ -1,0 +1,40 @@
+--- /dev/fd/63	2026-09-21 21:07:16.617689663 +0800
++++ /home/guojingli3/cnss_external_benchmarks_20260921/upstream_full/SkillSpan/machamp/machamp/data/machamp_sampler.py	2026-09-21 21:05:44.762690980 +0800
+@@ -50,7 +50,8 @@
+             Saves whether we are training, so that we know whether to skip
+             extremely long instances or not.
+         """
+-        super().__init__(data_source)
++        # torch>=2: Sampler.__init__ no longer accepts data_source
++        super().__init__()
+ 
+         self.data_source = data_source
+         self.batch_size = batch_size
+@@ -58,3 +59,162 @@
+         self.shuffle = shuffle
+         self.smoothing_factor = smoothing_factor
+         self.sort_by_size = sort_by_size
++        self.diverse = diverse 
++        self.is_training = is_training
++
++        self.dataset_sizes = {}
++        dataset_orig_sizes = [(dataset, len(self.data_source.datasets[dataset])) for dataset in sorted(self.data_source.datasets)]
++        total_size = sum([datasetSize[1] for datasetSize in dataset_orig_sizes])
++        
++        # we do not use lazy batching anymore, as it is hard to get __length__ for that
++        # A batch consists of a list of tuples that hold the dataset and the instance index
++        self.batches = []
++
++        # dev samplers can be empty, then we are done here
++        self.first_filled = True
++        if total_size == 0:
++            return
++
++        total_new_prob = 0.0
++        for dataset, size in dataset_orig_sizes:
++            pi = size / total_size
++            total_new_prob += math.pow(pi, self.smoothing_factor)
++
++        for dataset, size in dataset_orig_sizes:
++            pi = size / total_size
++            prob = (1 / pi) * (math.pow(pi, self.smoothing_factor) / total_new_prob)

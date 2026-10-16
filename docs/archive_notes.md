@@ -31,3 +31,8 @@ The model ZIP has not been replaced. Its MD5 remains `8d4651c2623a4e7ef5b4545212
 The current manuscript links the [encoder audit and reproduction record](https://doi.org/10.5281/zenodo.22942441). The [earlier record](https://doi.org/10.5281/zenodo.22937245) remains part of the release history. Use the current record and its linked model index for the six XLM-R/ESCOXLM-R checkpoints.
 
 Component licences and training-data availability are documented in [data access and licensing](../DATA_AVAILABILITY.md).
+
+
+## Expanded-Silver access correction (17 October 2026)
+
+Earlier promises of complete expanded-pool texts and labels on request for confidential review are superseded by the [current access clarification](data_access_correction_20261017.md). Complete expanded-pool inputs are not distributed with this release. Existing archive bytes and checksums are unchanged.

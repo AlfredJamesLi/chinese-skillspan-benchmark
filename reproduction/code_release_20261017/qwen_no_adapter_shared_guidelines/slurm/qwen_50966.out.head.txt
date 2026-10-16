@@ -1,0 +1,43 @@
+# sanitized log head source=/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/gold150_shared_prompt_rev2_run_20260910/logs/qwen_50966.out
+# newline-lines 1-40 of 40
+# original_bytes=3360
+
+[host] DS209213 date=2026-09-10T06:23:09+08:00 job=50966
+[slurm] JOB_GPUS=1,2 STEP_GPUS= CUDA_VISIBLE_DEVICES=1,2
+[scontrol]
+JobId=50966 JobName=g150qwen
+   UserId=guojingli3(1009) GroupId=ds(1001) MCS_label=N/A
+   Priority=4294850997 Nice=0 Account=student QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:01 TimeLimit=12:00:00 TimeMin=N/A
+   SubmitTime=2026-09-10T06:23:08 EligibleTime=2026-09-10T06:23:08
+   AccrueTime=2026-09-10T06:23:08
+   StartTime=2026-09-10T06:23:08 EndTime=2026-09-10T18:23:08 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-10T06:23:08 Scheduler=Main
+   Partition=LocalQ AllocNode:Sid=ds209213:1437008
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=localhost
+   BatchHost=localhost
+   NumNodes=1 NumCPUs=16 NumTasks=2 CPUs/Task=8 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=16,node=1,billing=16
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=8 MinMemoryNode=64G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/gold150_shared_prompt_rev2_run_20260910/scripts/gold150_qwen.sbatch
+   WorkDir=/home/guojingli3/SCESC-LLM-skill-extraction
+   StdErr=/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/gold150_shared_prompt_rev2_run_20260910/logs/qwen_50966.err
+   StdIn=/dev/null
+   StdOut=/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/gold150_shared_prompt_rev2_run_20260910/logs/qwen_50966.out
+   Power=
+   TresPerNode=gres:gpu:2
+   
+
+index, uuid, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%]
+0, GPU-adfc5d44-9829-ab07-3d62-6640ab57c2f2, NVIDIA A100 80GB PCIe, 48747 MiB, 81920 MiB, 100 %
+1, GPU-0d67a526-df43-32db-3d21-d7cb8b3d3ecd, NVIDIA A100 80GB PCIe, 60709 MiB, 81920 MiB, 99 %
+2, GPU-8da3cc62-d37e-24df-39a9-a434646b0ae5, NVIDIA A100 80GB PCIe, 1621 MiB, 81920 MiB, 0 %
+3, GPU-09947989-ae17-2b78-0f0c-82de786264c0, NVIDIA A100 80GB PCIe, 4 MiB, 81920 MiB, 0 %
+[workers] ec0=0 ec1=1
+{"n_gold": 150, "n_w0": 75, "n_w1": 0, "intersection": [], "intersection_n": 0, "union_n": 75, "missing": ["1816-s0006", "1816-s0011", "1816-s0012", "1817-s0000", "1817-s0001", "1817-s0002", "1817-s0003", "1817-s0004", "1817-s0006", "1817-s0009", "1818-s0002", "1818-s0003", "1818-s0004", "1818-s0005", "1818-s0006", "1819-s0002", "1819-s0004", "1819-s0006", "1819-s0007", "1819-s0008", "1819-s0009", "1820-s0002", "1820-s0003", "1820-s0005", "1820-s0006", "1809-s0006", "1811-s0002", "1838-s0002", "1844-s0002", "1848-s0006", "1853-s0004", "1867-s0004", "1872-s0007", "1872-s0012", "1877-s0009", "1881-s0001", "1886-s0000", "1896-s0005", "1896-s0006", "1897-s0001", "1903-s0000", "1905-s0001", "1905-s0015", "1908-s0003", "1908-s0004", "1909-s0003", "1914-s0004", "1917-s0000", "1921-s0010", "1924-s0000", "1924-s0003", "1925-s0006", "1925-s0012", "1926-s0002", "1935-s0003", "1937-s0006", "1938-s0007", "1941-s0001", "1946-s0001", "1948-s0008", "1951-s0005", "1953-s0002", "1955-s0009", "1956-s0004", "1963-s0007", "1964-s0000", "1967-s0013", "1967-s0014", "1968-s0004", "1969-s0004", "1972-s0004", "1973-s0006", "1977-s0004", "1983-s0001", "1990-s0022"], "complete": false}
