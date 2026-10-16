@@ -1,4 +1,6 @@
-# Chinese-SkillSpan: current manuscript
+# Chinese-SkillSpan: manuscript snapshot (13 October 2026)
+
+**17 October 2026 access correction:** The PDF and source files below preserve the 13 October snapshot. Their promise of complete expanded-Silver inputs for confidential review is superseded by the [current access clarification](../../docs/data_access_correction_20261017.md). The active submission manuscript has been revised accordingly.
 
 **Chinese-SkillSpan: a benchmark for competency span extraction in Chinese job advertisements**
 

@@ -20,9 +20,9 @@
     },
     {
       "path": "DATA_AVAILABILITY.md",
-      "bytes": 6417,
-      "sha256": "d811b06ea382b0f655b8e60318346a8ea092c5dd09527c56001b2e861f439138",
-      "git_blob_sha": "4df0348048c22b8804486fe506d63f5b2048d628"
+      "bytes": 6627,
+      "sha256": "24f145665eb93077180e94cd2ee46933ce8c5266b6a51e448c23f408d26e32cb",
+      "git_blob_sha": "4e98dfd0f188a034051a90de6cab82f6911fe684"
     },
     {
       "path": "LICENSE",
@@ -80,9 +80,15 @@
     },
     {
       "path": "docs/archive_notes.md",
-      "bytes": 2940,
-      "sha256": "76bbefa7e6010fc9a4e4c312c807b6cc980d782626db5e2f9082006a42e492d2",
-      "git_blob_sha": "b4ca83df8aa8638370808b021cfe20b661aeba58"
+      "bytes": 3304,
+      "sha256": "614f7e8c929723a4de07084228df5f7c04adee4ef89a92d63c0a5513abf780c2",
+      "git_blob_sha": "8d9e372758611514f607eafe408a344a3a7c74ea"
+    },
+    {
+      "path": "docs/data_access_correction_20261017.md",
+      "bytes": 1887,
+      "sha256": "0071be95d0407a7be67558d51d512b811f2e1f17884ce32f8497a867edcaac00",
+      "git_blob_sha": "cf5d5b0b51efa3c75f5d58ded57c82fae735d6ae"
     },
     {
       "path": "docs/data_sources.md",
@@ -356,9 +362,9 @@
     },
     {
       "path": "reproduction/expanded_silver/README.md",
-      "bytes": 3384,
-      "sha256": "a6b8a44d714ef06d105ab4130ad3e106868dd387bc7df46dd89d4f8fdaa30df4",
-      "git_blob_sha": "8c997c4ca73757468515d92483f64a10771e9da5"
+      "bytes": 3604,
+      "sha256": "9b9d0e965378b696c319df6ab6415b30d7fcb08c80027bea31929acfeacdd4da",
+      "git_blob_sha": "f7ee3748eb40f1db14dd6fb137364e449e196142"
     },
     {
       "path": "reproduction/expanded_silver/results.csv",
@@ -745,10 +751,15 @@
     "scope": "Document manuscript display precision; raw results, labels, prompts, manifests and scorer remain unchanged"
   },
   "base_commit": "6d7f4b00a411ebe50f5d9ababa9c5f7de6ca1294",
-  "scope": "Candidate companion presentation snapshot derived from base_commit with candidate documentation and validator changes; no manuscript/PDF alignment certification and no frozen scientific artifact changes.",
+  "scope": "Companion file integrity manifest with 17 October 2026 data-access clarification; no experimental artifact changes and no PDF alignment certification.",
   "candidate_audit": {
     "base_commit": "6d7f4b00a411ebe50f5d9ababa9c5f7de6ca1294",
     "scope": "Candidate documentation and validator repair, with published code entry points checked on 2026-10-16. The manifest records canonical archived bytes, not a PDF alignment or a full training reproduction.",
     "date": "2026-10-16"
+  },
+  "data_access_update": {
+    "date": "2026-10-17",
+    "base_commit": "edb45cdebfdcf2fdeb72341abc6f3155a246d7dd",
+    "scope": "Remove unsupported complete-expanded-text distribution promises from current guidance; preserve historical archives with a correction notice."
   }
 }
