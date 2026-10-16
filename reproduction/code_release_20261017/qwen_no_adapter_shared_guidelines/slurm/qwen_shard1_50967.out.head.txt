@@ -1,0 +1,49 @@
+# sanitized log head source=/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/gold150_shared_prompt_rev2_run_20260910/logs/qwen_shard1_50967.out
+# newline-lines 1-45 of 119
+# original_bytes=12202
+
+[host] DS209213 date=2026-09-10T06:28:28+08:00 job=50967 shard=1
+[slurm] JOB_GPUS=1 CUDA_VISIBLE_DEVICES=1
+JobId=50967 JobName=g150qw1
+   UserId=guojingli3(1009) GroupId=ds(1001) MCS_label=N/A
+   Priority=4294850996 Nice=0 Account=student QOS=normal
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=00:00:00 TimeLimit=12:00:00 TimeMin=N/A
+   SubmitTime=2026-09-10T06:28:27 EligibleTime=2026-09-10T06:28:27
+   AccrueTime=2026-09-10T06:28:27
+   StartTime=2026-09-10T06:28:28 EndTime=2026-09-10T18:28:28 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2026-09-10T06:28:28 Scheduler=Main
+   Partition=LocalQ AllocNode:Sid=ds209213:1446883
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=localhost
+   BatchHost=localhost
+   NumNodes=1 NumCPUs=8 NumTasks=1 CPUs/Task=8 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=8,node=1,billing=8
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=8 MinMemoryNode=48G MinTmpDiskNode=0
+   Features=(null) DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/gold150_shared_prompt_rev2_run_20260910/scripts/gold150_qwen_shard1.sbatch
+   WorkDir=/home/guojingli3/SCESC-LLM-skill-extraction
+   StdErr=/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/gold150_shared_prompt_rev2_run_20260910/logs/qwen_shard1_50967.err
+   StdIn=/dev/null
+   StdOut=/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/gold150_shared_prompt_rev2_run_20260910/logs/qwen_shard1_50967.out
+   Power=
+   TresPerNode=gres:gpu:1
+   
+
+index, uuid, memory.used [MiB], memory.total [MiB]
+0, GPU-adfc5d44-9829-ab07-3d62-6640ab57c2f2, 48907 MiB, 81920 MiB
+1, GPU-0d67a526-df43-32db-3d21-d7cb8b3d3ecd, 4 MiB, 81920 MiB
+2, GPU-8da3cc62-d37e-24df-39a9-a434646b0ae5, 1621 MiB, 81920 MiB
+3, GPU-09947989-ae17-2b78-0f0c-82de786264c0, 4 MiB, 81920 MiB
+{"worker": 1, "alloc": {"hostname": "DS209213", "slurm_job_id": "50967", "slurm_job_gpus": "1", "slurm_step_gpus": null, "cuda_visible_devices": "1", "at": "2026-09-09T22:28:28.648275+00:00"}}
+{"worker": 1, "loaded": true, "cuda": "NVIDIA A100 80GB PCIe"}
+{"worker": 1, "phase": "smoke", "n": 2}
+{"worker": 1, "phase": "smoke", "id": "syn-smoke-1", "outcome": "ok_empty", "n_new_tokens": 14, "finish_reason": "stop"}
+{"worker": 1, "phase": "smoke", "id": "syn-smoke-2", "outcome": "partial_rejected", "n_new_tokens": 40, "finish_reason": "stop"}
+{"worker": 1, "phase": "formal", "n": 75}
+{"worker": 1, "phase": "formal", "id": "1816-s0006", "outcome": "partial_rejected", "n_new_tokens": 48, "finish_reason": "stop"}
+{"worker": 1, "phase": "formal", "id": "1816-s0011", "outcome": "ok_empty", "n_new_tokens": 18, "finish_reason": "stop"}
+{"worker": 1, "phase": "formal", "id": "1816-s0012", "outcome": "ok_empty", "n_new_tokens": 18, "finish_reason": "stop"}

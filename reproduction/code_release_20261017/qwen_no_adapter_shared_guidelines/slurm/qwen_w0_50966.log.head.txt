@@ -1,0 +1,24 @@
+# sanitized log head source=/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/gold150_shared_prompt_rev2_run_20260910/logs/qwen_w0_50966.log
+# newline-lines 1-20 of 90
+# original_bytes=11914
+
+srun: cluster configuration lacks support for cpu binding
+{"worker": 0, "alloc": {"hostname": "DS209213", "slurm_job_id": "50966", "slurm_job_gpus": "1,2", "slurm_step_gpus": "2", "cuda_visible_devices": "2", "at": "2026-09-09T22:23:09.616213+00:00"}}
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:01<00:07,  1.05s/it]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:05,  1.18it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:03,  1.26it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:03<00:03,  1.14it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:04<00:02,  1.12it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:05<00:01,  1.12it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:06<00:00,  1.06it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:06<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:06<00:00,  1.14it/s]
+{"worker": 0, "loaded": true, "cuda": "NVIDIA A100 80GB PCIe"}
+{"worker": 0, "phase": "smoke", "n": 2}
+/opt/anaconda3/envs/jpy-qwen25/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:629: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/opt/anaconda3/envs/jpy-qwen25/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:634: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/opt/anaconda3/envs/jpy-qwen25/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:651: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+{"worker": 0, "phase": "smoke", "id": "syn-smoke-1", "outcome": "ok_empty", "n_new_tokens": 14, "finish_reason": "stop"}
+{"worker": 0, "phase": "smoke", "id": "syn-smoke-2", "outcome": "partial_rejected", "n_new_tokens": 40, "finish_reason": "stop"}
+{"worker": 0, "phase": "formal", "n": 75}
+{"worker": 0, "phase": "formal", "id": "1801-s0004", "outcome": "ok_nonempty", "n_new_tokens": 69, "finish_reason": "stop"}
+{"worker": 0, "phase": "formal", "id": "1802-s0000", "outcome": "ok_nonempty", "n_new_tokens": 44, "finish_reason": "stop"}
+{"worker": 0, "phase": "formal", "id": "1802-s0005", "outcome": "partial_rejected", "n_new_tokens": 57, "finish_reason": "stop"}
+{"worker": 0, "phase": "formal", "id": "1802-s0006", "outcome": "ok_nonempty", "n_new_tokens": 36, "finish_reason": "stop"}
+{"worker": 0, "phase": "formal", "id": "1802-s0007", "outcome": "partial_rejected", "n_new_tokens": 106, "finish_reason": "stop"}
+{"worker": 0, "phase": "formal", "id": "1802-s0008", "outcome": "ok_nonempty", "n_new_tokens": 65, "finish_reason": "stop"}

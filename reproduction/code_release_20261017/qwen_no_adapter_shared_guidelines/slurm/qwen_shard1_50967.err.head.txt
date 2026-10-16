@@ -1,0 +1,11 @@
+# sanitized log head source=/home/guojingli3/SCESC-LLM-skill-extraction/Chinese_skill_benchmark_Paper/output/gold150_shared_prompt_rev2_run_20260910/logs/qwen_shard1_50967.err
+# newline-lines 1-8 of 8
+# original_bytes=1795
+
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards:  12%|█▎        | 1/8 [00:00<00:06,  1.03it/s]Loading checkpoint shards:  25%|██▌       | 2/8 [00:01<00:05,  1.13it/s]Loading checkpoint shards:  38%|███▊      | 3/8 [00:02<00:04,  1.14it/s]Loading checkpoint shards:  50%|█████     | 4/8 [00:03<00:03,  1.16it/s]Loading checkpoint shards:  62%|██████▎   | 5/8 [00:04<00:02,  1.16it/s]Loading checkpoint shards:  75%|███████▌  | 6/8 [00:05<00:01,  1.18it/s]Loading checkpoint shards:  88%|████████▊ | 7/8 [00:06<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:06<00:00,  1.33it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:06<00:00,  1.22it/s]
+/opt/anaconda3/envs/jpy-qwen25/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:629: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/opt/anaconda3/envs/jpy-qwen25/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:634: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/opt/anaconda3/envs/jpy-qwen25/lib/python3.9/site-packages/transformers/generation/configuration_utils.py:651: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(

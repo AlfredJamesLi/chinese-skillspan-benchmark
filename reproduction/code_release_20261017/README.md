@@ -1,6 +1,6 @@
 # Chinese-SkillSpan code release, 17 October 2026
 
-Historical scope: this document describes the original tag. For subsequently recovered sources and current limitations, see [revision 1](../code_release_20261017_1/README.md).
+Historical scope: the original tag is unchanged. The Qwen row and item 2 below are updated in this working revision after the server-A delivery; other original scope statements retain their historical context. For subsequently recovered sources and current limitations, see [revision 1](../code_release_20261017_1/README.md).
 
 This version adds the retained external common-protocol implementation and a consolidated README covering code, inputs, requirements, usage, methodology, citations and component-specific licensing. It preserves all reported results and model/prediction files. This is a documented code release, not certification of full end-to-end reproducibility.
 
@@ -11,7 +11,7 @@ This version adds the retained external common-protocol implementation and a con
 | JobBERT domain pretraining | [`train_jobbert_zh_mlm.py`](../../scripts/train_jobbert_zh_mlm.py), [`jobbert_zh_3m.sbatch`](../../scripts/jobbert_zh_3m.sbatch), [`export_jobbert_mlm_encoder.py`](../../scripts/export_jobbert_mlm_encoder.py) | Some original runtime records are missing. |
 | JobBERT CRF and continuation | [`train_cn_roberta_crf.py`](../../scripts/train_cn_roberta_crf.py) is the general CRF implementation; existing checkpoints and predictions remain available. | A laboratory recovery report located the five continuation entry files listed below, but their bytes have not been supplied to this release. The fresh-head extension is not a replacement. |
 | Qwen shared-guideline B2 and expanded pools | [Existing Qwen release](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/releases/tag/qwen-repro-pack-20260919), `CNSS_Qwen_Reproduction.zip`: `shared_guidelines_b2/scripts/` and `expanded_silver/{codex,proxy}_seed42/scripts/` | Actual training/inference/scoring scripts are already published. Some paths require local configuration; full expanded training texts are not public. |
-| Qwen no-adapter paired baseline | Frozen predictions, prompt/parser and configuration fingerprints in the existing reproduction materials | Original generation entry point remains unlocated; the adapter-required B2 script is not presented as the baseline generator. |
+| Qwen no-adapter paired baseline | [Recovered A originals](qwen_no_adapter_shared_guidelines/INTEGRATION.md): `run_qwen_worker.py`, `gold150_qwen.sbatch`, `gold150_qwen_shard1.sbatch`, `merge_qwen_shards.py`, frozen prompt/parser and worker fingerprints | DS209213; Slurm 50966/50967; `adapter: null`; recorded typed exact F1 0.3612. The two fingerprint SHA-256 values and source paths are recorded in the linked audit. `infer_gold150_sft.py` is not this baseline generator. No execution on B or new model run is claimed. |
 | Chinese XLM-R / ESCOXLM-R | [Pinned encoder archive](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/0c73207c0f9b00fa87f385b78bcb7342bd00bfcb/results_snapshots/table11_evidence_20260924): `code/run_chinese_encoder.py`, launch scripts, configurations and environment record | Software and GPU records exist; they are not proof of the environment of other experiments. |
 | External common protocol (48 runs) | [Retained runner, helper, dispatcher, model revisions and six input manifests](../external_common_code_20261017/README.md) | Protocol/matrix/revisions match the reported receipts; final server-source byte identity is unverified. |
 | Native SkillSpan / Gnehm | [B-side code archive](https://github.com/AlfredJamesLi/chinese-skillspan-benchmark/tree/0c73207c0f9b00fa87f385b78bcb7342bd00bfcb/results_snapshots/table11_evidence_20260924/code), including `scripts/run_remaining_today.py` | Referenced upstream/native configurations and compatibility patches remain incomplete. |
@@ -20,7 +20,7 @@ This version adds the retained external common-protocol implementation and a con
 ## Specific unresolved items
 
 1. JobBERT continuation: `phase4_v6_jobbert.sbatch`, `run_phase4_v6_jobbert12.sh`, `train_jobbert_phase1.py`, `infer_jobbert_phase1.py`, `eval_gold150_phase1.py`, and their project-owned dependencies. A report of recovered paths is not delivery of the source files.
-2. Original no-adapter shared-guideline Qwen generation entry point and its run binding.
+2. Resolved by the 17 October server-A delivery: the original no-adapter shared-guideline Qwen generation entry, launch/merge scripts and retained run binding are now supplied; see [the A integration audit](qwen_no_adapter_shared_guidelines/INTEGRATION.md). This closes source recovery, not full environment/input reproducibility.
 3. Historical server-byte binding/configurations for the retained external runner; remaining native-task configuration/patch files.
 4. Historical OS and some JobBERT/Qwen software/GPU records. A present-day server query cannot fill historical fields.
 
