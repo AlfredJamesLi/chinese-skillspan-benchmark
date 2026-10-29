@@ -1,0 +1,2380 @@
+{
+  "analysis_version": "1.0.0",
+  "status": "AI-assisted working draft; not human adjudication",
+  "coder": "Coder C",
+  "baseline_commit": "4c035dbb63d252f3cf0eeb1e6e72f62d2a682b2f",
+  "handbook_series": "B.sop_v4.2.14",
+  "reader_revision": "2026-10-09",
+  "total_files": 46,
+  "file_types": {
+    "PNG": 46
+  },
+  "category_counts": {
+    "B": 22,
+    "A": 23,
+    "C": 1,
+    "D": 0
+  },
+  "source_labels_sha256": "ec35976f3f102bd17fc8956ca4b1f0f9dd5a81833e051b1f04f203a8ef5f4e32",
+  "cases": [
+    {
+      "case_id": "U005",
+      "record_id": "CNSS-B500-402",
+      "excerpt": "新媒体平台",
+      "category": "B",
+      "provisions": "活动与结果;R11",
+      "recommendation": "保留日常运维S；粉丝增长及活跃度拉动可能只是绩效目标，须由作者判断是否有可执行活动证据，不能自动全部保留S。",
+      "current_labels": [
+        [
+          2,
+          12,
+          "S"
+        ],
+        [
+          13,
+          17,
+          "S"
+        ],
+        [
+          18,
+          23,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          12,
+          "S"
+        ],
+        [
+          13,
+          17,
+          "S"
+        ],
+        [
+          18,
+          23,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "保留日常运维S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U007",
+      "record_id": "CNSS-B500-344",
+      "excerpt": "公司网络架构",
+      "category": "B",
+      "provisions": "R14;R17;R11",
+      "recommendation": "整体规划与集成为职业S；局域网和广域网的通讯是独立职业活动还是系统功能需要复核，不将通讯误读为调试，也不补写网络名称。",
+      "current_labels": [
+        [
+          2,
+          15,
+          "S"
+        ],
+        [
+          16,
+          26,
+          "S"
+        ],
+        [
+          27,
+          29,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          15,
+          "S"
+        ],
+        [
+          16,
+          26,
+          "S"
+        ],
+        [
+          27,
+          29,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "整体规划与集成为职业S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U008",
+      "record_id": "CNSS-B500-251",
+      "excerpt": "计算机或相关专业毕业",
+      "category": "A",
+      "provisions": "背景与经验;R08",
+      "recommendation": "保留专业要求K；删除泛指相关工作S候选，该处未明确具体职业活动，不能用专业名称补足经历内容。",
+      "current_labels": [
+        [
+          0,
+          8,
+          "K"
+        ],
+        [
+          16,
+          20,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          0,
+          8,
+          "K"
+        ],
+        [
+          16,
+          20,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "保留专业要求K（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U012",
+      "record_id": "CNSS-B500-226",
+      "excerpt": "公司信息资产",
+      "category": "A",
+      "provisions": "R14",
+      "recommendation": "保留管理、维护、添置、验收、发放、登记归档各S；共享对象在本句明确。",
+      "current_labels": [
+        [
+          4,
+          11,
+          "S"
+        ],
+        [
+          12,
+          14,
+          "S"
+        ],
+        [
+          15,
+          17,
+          "S"
+        ],
+        [
+          18,
+          20,
+          "S"
+        ],
+        [
+          21,
+          23,
+          "S"
+        ],
+        [
+          24,
+          28,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          4,
+          11,
+          "S"
+        ],
+        [
+          12,
+          14,
+          "S"
+        ],
+        [
+          15,
+          17,
+          "S"
+        ],
+        [
+          18,
+          20,
+          "S"
+        ],
+        [
+          21,
+          23,
+          "S"
+        ],
+        [
+          24,
+          28,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "保留管理、维护、添置、验收、发放、登记归档各S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U017",
+      "record_id": "CNSS-B500-459",
+      "excerpt": "主机房温湿度",
+      "category": "B",
+      "provisions": "R14;R11",
+      "recommendation": "检查温湿度与放电测试为S；设备运行状态仅为状态名，不能单独沿用S；评估包含检查及共享宾语的连续候选，记录异常与排除隐患分别S，必要边界交人工复核。",
+      "current_labels": [
+        [
+          2,
+          12,
+          "S"
+        ],
+        [
+          13,
+          20,
+          "S"
+        ],
+        [
+          21,
+          27,
+          "S"
+        ],
+        [
+          28,
+          36,
+          "S"
+        ],
+        [
+          37,
+          46,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          12,
+          "S"
+        ],
+        [
+          13,
+          20,
+          "S"
+        ],
+        [
+          21,
+          27,
+          "S"
+        ],
+        [
+          28,
+          36,
+          "S"
+        ],
+        [
+          37,
+          46,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "检查温湿度与放电测试为S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U018",
+      "record_id": "CNSS-B500-207",
+      "excerpt": "对应业务的数据监控",
+      "category": "A",
+      "provisions": "原文跨度2;R17",
+      "recommendation": "保留数据监控及分析业务指标变化趋势两项S；对应业务限定是否删减按同义删除检查，不能删除分析动作。",
+      "current_labels": [
+        [
+          2,
+          11,
+          "S"
+        ],
+        [
+          12,
+          22,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          11,
+          "S"
+        ],
+        [
+          12,
+          22,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "保留数据监控及分析业务指标变化趋势两项S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U025",
+      "record_id": "CNSS-B500-418",
+      "excerpt": "AOA工程师",
+      "category": "B",
+      "provisions": "R14;R11",
+      "recommendation": "收集和整理均需保留品质监控数据对象；首段含协助对象而缺采集对象，优先审查包含收集、整理及共享数据的连续完整S，不拼接收集数据。",
+      "current_labels": [
+        [
+          0,
+          10,
+          "S"
+        ],
+        [
+          11,
+          21,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          0,
+          10,
+          "S"
+        ],
+        [
+          11,
+          21,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "收集和整理均需保留品质监控数据对象（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U029",
+      "record_id": "CNSS-B500-004",
+      "excerpt": "重点客户协同营销",
+      "category": "B",
+      "provisions": "R14;沟通与汇报;R11",
+      "recommendation": "营销与方案设计S；授信沟通可能为通用沟通T，不能仅因金融场景判S；系统需求若只是支持对象不能单独判S，需人工确定边界。",
+      "current_labels": [
+        [
+          2,
+          10,
+          "S"
+        ],
+        [
+          11,
+          24,
+          "S"
+        ],
+        [
+          26,
+          30,
+          "S"
+        ],
+        [
+          31,
+          35,
+          "S"
+        ],
+        [
+          36,
+          40,
+          "S"
+        ],
+        [
+          41,
+          45,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          10,
+          "S"
+        ],
+        [
+          11,
+          24,
+          "S"
+        ],
+        [
+          26,
+          30,
+          "S"
+        ],
+        [
+          31,
+          35,
+          "S"
+        ],
+        [
+          36,
+          40,
+          "S"
+        ],
+        [
+          41,
+          45,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "营销与方案设计S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U032",
+      "record_id": "CNSS-B500-209",
+      "excerpt": "centos",
+      "category": "B",
+      "provisions": "工具名称S与知识短语K;R14",
+      "recommendation": "centos与Linux须结合系统优化实践判断S；熟悉是引导词，不单标S；优化可为S但保留必要系统对象，独立工具与整体活动两种不重叠方案待复核。",
+      "current_labels": [
+        [
+          1,
+          7,
+          "S"
+        ],
+        [
+          8,
+          13,
+          "S"
+        ],
+        [
+          18,
+          20,
+          "S"
+        ],
+        [
+          21,
+          23,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          1,
+          7,
+          "S"
+        ],
+        [
+          8,
+          13,
+          "S"
+        ],
+        [
+          18,
+          20,
+          "S"
+        ],
+        [
+          21,
+          23,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "centos与Linux须结合系统优化实践判断S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U037",
+      "record_id": "CNSS-B500-439",
+      "excerpt": "客户设备自动化",
+      "category": "B",
+      "provisions": "R14;R21",
+      "recommendation": "客户设备、自动化设备不可直接充当接口开发技能；优先保留自动化设备接口开发S，与机械手整合S；括号内具体开发要求是否另标交人工复核，不能嵌套。",
+      "current_labels": [
+        [
+          2,
+          6,
+          "S"
+        ],
+        [
+          6,
+          11,
+          "S"
+        ],
+        [
+          11,
+          15,
+          "S"
+        ],
+        [
+          41,
+          47,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          6,
+          "S"
+        ],
+        [
+          6,
+          11,
+          "S"
+        ],
+        [
+          11,
+          15,
+          "S"
+        ],
+        [
+          41,
+          47,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "客户设备、自动化设备不可直接充当接口开发技能（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U062",
+      "record_id": "CNSS-B500-468",
+      "excerpt": "商用车整车",
+      "category": "B",
+      "provisions": "背景与经验;R08;R23",
+      "recommendation": "采购流程及配件采购S；制造、贸易若限定行业经历按广义K检验，若是实际职业活动则S，当前句压缩表达需人工确定作用域；商车配件产品知识候选K。",
+      "current_labels": [
+        [
+          2,
+          6,
+          "S"
+        ],
+        [
+          7,
+          19,
+          "S"
+        ],
+        [
+          20,
+          22,
+          "S"
+        ],
+        [
+          25,
+          27,
+          "S"
+        ],
+        [
+          36,
+          42,
+          "K"
+        ],
+        [
+          44,
+          53,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          6,
+          "S"
+        ],
+        [
+          7,
+          19,
+          "S"
+        ],
+        [
+          20,
+          22,
+          "S"
+        ],
+        [
+          25,
+          27,
+          "S"
+        ],
+        [
+          36,
+          42,
+          "K"
+        ],
+        [
+          44,
+          53,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "采购流程及配件采购S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U075",
+      "record_id": "CNSS-B500-285",
+      "excerpt": "公司门禁",
+      "category": "A",
+      "provisions": "R14案例120",
+      "recommendation": "维护S可由同句设备列表明确对象；不需为每个设备补写维护，也不因对象在跨度外强制扩张。",
+      "current_labels": [
+        [
+          17,
+          19,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          17,
+          19,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "维护S可由同句设备列表明确对象（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U084",
+      "record_id": "CNSS-B500-259",
+      "excerpt": "完成中心半年",
+      "category": "B",
+      "provisions": "活动与结果;原文跨度2;R11",
+      "recommendation": "经营分析可能是职业活动，材料也可能只是交付物；现边界含期间却省略完成动作，保留年度经营分析或完整制作任务的连续候选供人工判定，不把交付物自动判S。",
+      "current_labels": [
+        [
+          10,
+          23,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          10,
+          23,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "经营分析可能是职业活动，材料也可能只是交付物（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U141",
+      "record_id": "CNSS-B500-496",
+      "excerpt": "追踪抖音",
+      "category": "B",
+      "provisions": "R16;R14;原文跨度2",
+      "recommendation": "洞察力T；追踪并捕捉亮点为S候选；模仿、创意改变是否为特定内容制作S须结合本句判定，泛认知解释为T，边界不能截断完整能力表达。",
+      "current_labels": [
+        [
+          1,
+          4,
+          "T"
+        ],
+        [
+          5,
+          22,
+          "S"
+        ],
+        [
+          28,
+          30,
+          "S"
+        ],
+        [
+          31,
+          35,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          1,
+          4,
+          "T"
+        ],
+        [
+          5,
+          22,
+          "S"
+        ],
+        [
+          28,
+          30,
+          "S"
+        ],
+        [
+          31,
+          35,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "洞察力T（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U142",
+      "record_id": "CNSS-B500-323",
+      "excerpt": "工作积极主动",
+      "category": "A",
+      "provisions": "T定义;背景与经验",
+      "recommendation": "积极主动及独立工作为T，能力后缀是否保留按语义完整性判断；行业背景无具体领域名不抽取；中级职称作为非语言资格要求可列K候选。",
+      "current_labels": [
+        [
+          2,
+          6,
+          "T"
+        ],
+        [
+          9,
+          13,
+          "T"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          6,
+          "T"
+        ],
+        [
+          9,
+          13,
+          "T"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "积极主动及独立工作为T，能力后缀是否保留按语义完整性判断（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U146",
+      "record_id": "CNSS-B500-119",
+      "excerpt": "智能化各子系统",
+      "category": "A",
+      "provisions": "R14;R17",
+      "recommendation": "工程设计、运维组织、完成项目设计方案为S；共享系统对象在句内，独立职责可拆，不需补词。",
+      "current_labels": [
+        [
+          2,
+          14,
+          "S"
+        ],
+        [
+          15,
+          19,
+          "S"
+        ],
+        [
+          21,
+          37,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          14,
+          "S"
+        ],
+        [
+          15,
+          19,
+          "S"
+        ],
+        [
+          21,
+          37,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "工程设计、运维组织、完成项目设计方案为S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U152",
+      "record_id": "CNSS-B500-056",
+      "excerpt": "各种配置检测工具",
+      "category": "A",
+      "provisions": "口语会字取舍;原文跨度2",
+      "recommendation": "运用工具进行安全检测、配置防火墙、进行防攻击设置为独立S；首项保留动作和对象，不能仅抽工具泛称。",
+      "current_labels": [
+        [
+          2,
+          23,
+          "S"
+        ],
+        [
+          24,
+          29,
+          "S"
+        ],
+        [
+          30,
+          37,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          23,
+          "S"
+        ],
+        [
+          24,
+          29,
+          "S"
+        ],
+        [
+          30,
+          37,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "运用工具进行安全检测、配置防火墙、进行防攻击设置为独立S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U161",
+      "record_id": "CNSS-B500-293",
+      "excerpt": "ISO20000",
+      "category": "A",
+      "provisions": "原文跨度6;R15",
+      "recommendation": "ISO20000及质量管理体系、标准、IT运维标准按规范知识K；标准的限定可由紧邻并列提供，不应机械把IT运维改S。",
+      "current_labels": [
+        [
+          0,
+          8,
+          "K"
+        ],
+        [
+          9,
+          15,
+          "K"
+        ],
+        [
+          16,
+          18,
+          "K"
+        ],
+        [
+          21,
+          27,
+          "K"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          0,
+          8,
+          "K"
+        ],
+        [
+          9,
+          15,
+          "K"
+        ],
+        [
+          16,
+          18,
+          "K"
+        ],
+        [
+          21,
+          27,
+          "K"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "ISO20000及质量管理体系、标准、IT运维标准按规范知识K（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U180",
+      "record_id": "CNSS-B500-182",
+      "excerpt": "运用docker",
+      "category": "A",
+      "provisions": "口语会字取舍;原文跨度3",
+      "recommendation": "运用docker进行服务器架构与安全优化设置为完整S候选；若拆仅保留具有完整职业含义的活动，不嵌套docker。",
+      "current_labels": [
+        [
+          6,
+          28,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          6,
+          28,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "运用docker进行服务器架构与安全优化设置为完整S候选（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U183",
+      "record_id": "CNSS-B500-195",
+      "excerpt": "制造端项目管理者",
+      "category": "B",
+      "provisions": "R17;R21;R11",
+      "recommendation": "制造端项目管理可按职业职能S，身份称谓本身不构成另一个技能；组织协调工厂端资源的T/S需比较一般协调与具体项目资源职责，确保量产若仅目标不标。",
+      "current_labels": [
+        [
+          2,
+          9,
+          "S"
+        ],
+        [
+          22,
+          31,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          9,
+          "S"
+        ],
+        [
+          22,
+          31,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "制造端项目管理可按职业职能S，身份称谓本身不构成另一个技能（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U226",
+      "record_id": "CNSS-B500-498",
+      "excerpt": "3年以上产品经理",
+      "category": "B",
+      "provisions": "背景与经验;R08;R17",
+      "recommendation": "学历K；产品经理实践经历建议保留产品经理工作经验整体S候选，不截成产品经理工作；支付行业背景核心K。身份与实践的边界需复核。",
+      "current_labels": [
+        [
+          0,
+          7,
+          "K"
+        ],
+        [
+          12,
+          18,
+          "S"
+        ],
+        [
+          21,
+          29,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          0,
+          7,
+          "K"
+        ],
+        [
+          12,
+          18,
+          "S"
+        ],
+        [
+          21,
+          29,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "学历K（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U251",
+      "record_id": "CNSS-B500-347",
+      "excerpt": "研究分析同业车险",
+      "category": "A",
+      "provisions": "R17;活动与结果",
+      "recommendation": "研究分析定价策略及提供经营指导是具体职业任务，可各S；不因研究或指导跨行业出现就自动改T。",
+      "current_labels": [
+        [
+          2,
+          14,
+          "S"
+        ],
+        [
+          15,
+          28,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          14,
+          "S"
+        ],
+        [
+          15,
+          28,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "研究分析定价策略及提供经营指导是具体职业任务，可各S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U256",
+      "record_id": "CNSS-B500-302",
+      "excerpt": "流程修订上线",
+      "category": "A",
+      "provisions": "R14;R17",
+      "recommendation": "系统维护、权限管理、流程修订上线为职业S；公司可排除，流程修订上线作为一个连贯任务候选无需机械拆分。",
+      "current_labels": [
+        [
+          2,
+          11,
+          "S"
+        ],
+        [
+          12,
+          16,
+          "S"
+        ],
+        [
+          17,
+          23,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          11,
+          "S"
+        ],
+        [
+          12,
+          16,
+          "S"
+        ],
+        [
+          17,
+          23,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "系统维护、权限管理、流程修订上线为职业S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U257",
+      "record_id": "CNSS-B500-007",
+      "excerpt": "垃圾发电厂生产成本",
+      "category": "B",
+      "provisions": "R14;原文跨度1;R11",
+      "recommendation": "成本核算与管理可保留含制費说明的连续S；拟订细则S；报上级批准是通用汇报或业务审批需复核T/S，组织执行依具体对象判断S。括号含费用属于范围说明，不应自动删。",
+      "current_labels": [
+        [
+          2,
+          24,
+          "S"
+        ],
+        [
+          25,
+          35,
+          "S"
+        ],
+        [
+          36,
+          41,
+          "S"
+        ],
+        [
+          42,
+          46,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          24,
+          "S"
+        ],
+        [
+          25,
+          35,
+          "S"
+        ],
+        [
+          36,
+          41,
+          "S"
+        ],
+        [
+          42,
+          46,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "成本核算与管理可保留含制費说明的连续S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U261",
+      "record_id": "CNSS-B500-068",
+      "excerpt": "业界常用的监控系统",
+      "category": "B",
+      "provisions": "R15;R14;R11",
+      "recommendation": "监控系统与原理需区分使用要求和知识；根据实际场景灵活选择存在职业操作解释，系统S/原理K可为候选，若只是系统知识则整体K；禁止凭掌握默认S。",
+      "current_labels": [
+        [
+          10,
+          14,
+          "S"
+        ],
+        [
+          16,
+          18,
+          "K"
+        ],
+        [
+          21,
+          31,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          10,
+          14,
+          "S"
+        ],
+        [
+          16,
+          18,
+          "K"
+        ],
+        [
+          21,
+          31,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "监控系统与原理需区分使用要求和知识（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U265",
+      "record_id": "CNSS-B500-203",
+      "excerpt": "完成服务器",
+      "category": "B",
+      "provisions": "R14;沟通与汇报;R11",
+      "recommendation": "配置、维护、巡检为S；提交报告按通用汇报T检验；软件单独截取不能表达软件管理，需保留软件、上网管理连续共享核心或经复核的独立活动。",
+      "current_labels": [
+        [
+          23,
+          25,
+          "S"
+        ],
+        [
+          26,
+          28,
+          "S"
+        ],
+        [
+          29,
+          31,
+          "S"
+        ],
+        [
+          33,
+          40,
+          "S"
+        ],
+        [
+          46,
+          48,
+          "S"
+        ],
+        [
+          49,
+          53,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          23,
+          25,
+          "S"
+        ],
+        [
+          26,
+          28,
+          "S"
+        ],
+        [
+          29,
+          31,
+          "S"
+        ],
+        [
+          33,
+          40,
+          "S"
+        ],
+        [
+          46,
+          48,
+          "S"
+        ],
+        [
+          49,
+          53,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "配置、维护、巡检为S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U285",
+      "record_id": "CNSS-B500-317",
+      "excerpt": "EHS相关文件",
+      "category": "B",
+      "provisions": "R14;R15;R11",
+      "recommendation": "掌握EHS文件偏规范知识K；定制修订文件及修订完善规章/操作规程/应急预案为S，必要共享对象保留；不要把文件内部再嵌套K。",
+      "current_labels": [
+        [
+          0,
+          13,
+          "S"
+        ],
+        [
+          22,
+          41,
+          "S"
+        ],
+        [
+          53,
+          77,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          0,
+          13,
+          "S"
+        ],
+        [
+          22,
+          41,
+          "S"
+        ],
+        [
+          53,
+          77,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "掌握EHS文件偏规范知识K（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U288",
+      "record_id": "CNSS-B500-083",
+      "excerpt": "手机控车设备",
+      "category": "A",
+      "provisions": "R14案例117;R17",
+      "recommendation": "评价、制定及持续完善安装方案为S候选；前两项可由同句明确方案对象支持，不补写方案，不把可靠性单独标技能。",
+      "current_labels": [
+        [
+          2,
+          4,
+          "S"
+        ],
+        [
+          5,
+          7,
+          "S"
+        ],
+        [
+          8,
+          25,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          4,
+          "S"
+        ],
+        [
+          5,
+          7,
+          "S"
+        ],
+        [
+          8,
+          25,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "评价、制定及持续完善安装方案为S候选（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U300",
+      "record_id": "CNSS-B500-428",
+      "excerpt": "公司网站及互联网部门",
+      "category": "A",
+      "provisions": "R14;原文跨度2",
+      "recommendation": "开发、运维为可识别S，相关工作是泛称可排除；对象由紧邻原文明确，不把整个泛称尾部纳入。",
+      "current_labels": [
+        [
+          2,
+          22,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          22,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "开发、运维为可识别S，相关工作是泛称可排除（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U306",
+      "record_id": "CNSS-B500-041",
+      "excerpt": "线上应用平台技术运维",
+      "category": "A",
+      "provisions": "活动与结果;原文跨度2",
+      "recommendation": "线上应用平台技术运维S可保留，工作为外部尾词；保障平台正常运行仅结果不另标。",
+      "current_labels": [
+        [
+          16,
+          26,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          16,
+          26,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "线上应用平台技术运维S可保留，工作为外部尾词（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U330",
+      "record_id": "CNSS-B500-311",
+      "excerpt": "IBM主流PCServer",
+      "category": "B",
+      "provisions": "R14;工具名称S与知识短语K",
+      "recommendation": "硬件设备维护与使用配置S；品牌和服务器类型是否独立工具要求需检验局部作用域，不能把品牌列表自动当三个已确认S，记录短项与完整活动候选。",
+      "current_labels": [
+        [
+          2,
+          6,
+          "S"
+        ],
+        [
+          7,
+          9,
+          "S"
+        ],
+        [
+          10,
+          23,
+          "S"
+        ],
+        [
+          28,
+          34,
+          "S"
+        ],
+        [
+          43,
+          47,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          6,
+          "S"
+        ],
+        [
+          7,
+          9,
+          "S"
+        ],
+        [
+          10,
+          23,
+          "S"
+        ],
+        [
+          28,
+          34,
+          "S"
+        ],
+        [
+          43,
+          47,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "硬件设备维护与使用配置S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U345",
+      "record_id": "CNSS-B500-094",
+      "excerpt": "JavaSpring",
+      "category": "B",
+      "provisions": "工具名称S与知识短语K;R14",
+      "recommendation": "移动端和大数据后台开发S；相邻平台列表在开发语境下可S，但首组JavaSpring/H5与后组实践作用域须核定，不能仅凭熟悉确定所有工具类型。",
+      "current_labels": [
+        [
+          2,
+          12,
+          "S"
+        ],
+        [
+          13,
+          15,
+          "S"
+        ],
+        [
+          18,
+          25,
+          "S"
+        ],
+        [
+          26,
+          29,
+          "S"
+        ],
+        [
+          30,
+          33,
+          "S"
+        ],
+        [
+          34,
+          36,
+          "S"
+        ],
+        [
+          37,
+          48,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          12,
+          "S"
+        ],
+        [
+          13,
+          15,
+          "S"
+        ],
+        [
+          18,
+          25,
+          "S"
+        ],
+        [
+          26,
+          29,
+          "S"
+        ],
+        [
+          30,
+          33,
+          "S"
+        ],
+        [
+          34,
+          36,
+          "S"
+        ],
+        [
+          37,
+          48,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "移动端和大数据后台开发S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U355",
+      "record_id": "CNSS-B500-148",
+      "excerpt": "公司业务语音",
+      "category": "A",
+      "provisions": "R14;R17",
+      "recommendation": "语音、短信平台的维护共同依赖维护核心，保留连续完整平台维护S；不能把语音误作自然语言L。",
+      "current_labels": [
+        [
+          2,
+          16,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          16,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "语音、短信平台的维护共同依赖维护核心，保留连续完整平台维护S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U360",
+      "record_id": "CNSS-B500-283",
+      "excerpt": "微信公众号的日常",
+      "category": "A",
+      "provisions": "R14案例120",
+      "recommendation": "运行管理、维护均S；共享公众号对象明确，可保留两段，不必复制对象，工作尾词留外。",
+      "current_labels": [
+        [
+          4,
+          16,
+          "S"
+        ],
+        [
+          17,
+          19,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          4,
+          16,
+          "S"
+        ],
+        [
+          17,
+          19,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "运行管理、维护均S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U361",
+      "record_id": "CNSS-B500-063",
+      "excerpt": "设施设备管理",
+      "category": "B",
+      "provisions": "R15;R14;R11",
+      "recommendation": "设施设备管理S；运行、维护及保养标准可能同属标准知识K，不能机械把运行维护S而只保养标准K；核定知识作用域并记录完整连续K候选。",
+      "current_labels": [
+        [
+          0,
+          6,
+          "S"
+        ],
+        [
+          9,
+          11,
+          "S"
+        ],
+        [
+          12,
+          14,
+          "S"
+        ],
+        [
+          15,
+          19,
+          "S"
+        ],
+        [
+          20,
+          23,
+          "S"
+        ],
+        [
+          24,
+          26,
+          "S"
+        ],
+        [
+          27,
+          31,
+          "S"
+        ],
+        [
+          37,
+          39,
+          "S"
+        ],
+        [
+          40,
+          42,
+          "S"
+        ],
+        [
+          43,
+          47,
+          "K"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          0,
+          6,
+          "S"
+        ],
+        [
+          9,
+          11,
+          "S"
+        ],
+        [
+          12,
+          14,
+          "S"
+        ],
+        [
+          15,
+          19,
+          "S"
+        ],
+        [
+          20,
+          23,
+          "S"
+        ],
+        [
+          24,
+          26,
+          "S"
+        ],
+        [
+          27,
+          31,
+          "S"
+        ],
+        [
+          37,
+          39,
+          "S"
+        ],
+        [
+          40,
+          42,
+          "S"
+        ],
+        [
+          43,
+          47,
+          "K"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "设施设备管理S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U386",
+      "record_id": "CNSS-B500-103",
+      "excerpt": "客户软件使用中",
+      "category": "B",
+      "provisions": "沟通与汇报;R17;活动与结果",
+      "recommendation": "维护客户关系及一般沟通反馈按T检验；技术问题跟踪与解决方案可S；优化使用效果是否具体活动或纯结果未唯一确定，分别记录候选。",
+      "current_labels": [
+        [
+          0,
+          6,
+          "S"
+        ],
+        [
+          7,
+          30,
+          "S"
+        ],
+        [
+          31,
+          46,
+          "S"
+        ],
+        [
+          47,
+          54,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          0,
+          6,
+          "S"
+        ],
+        [
+          7,
+          30,
+          "S"
+        ],
+        [
+          31,
+          46,
+          "S"
+        ],
+        [
+          47,
+          54,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "维护客户关系及一般沟通反馈按T检验（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U387",
+      "record_id": "CNSS-B500-304",
+      "excerpt": "熟练的office技能",
+      "category": "A",
+      "provisions": "工具名称S与知识短语K;R21",
+      "recommendation": "office及括号内word/EXECL/PPT有实际技能及实操证据，具体软件各S；office若只是类别引导不重复标；原拼写EXECL不修正。",
+      "current_labels": [
+        [
+          5,
+          11,
+          "S"
+        ],
+        [
+          14,
+          18,
+          "S"
+        ],
+        [
+          19,
+          24,
+          "S"
+        ],
+        [
+          25,
+          28,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          5,
+          11,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": true,
+      "inferred_question": "office及括号内word/EXECL/PPT有实际技能及实操证据，具体软件各S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U388",
+      "record_id": "CNSS-B500-233",
+      "excerpt": "项目景观设计",
+      "category": "A",
+      "provisions": "R17;活动与结果",
+      "recommendation": "景观设计及全程设计管理为具体S；确保契合与提升溢价/体验仅目标不标，身份核心执行者不另标。",
+      "current_labels": [
+        [
+          2,
+          8,
+          "S"
+        ],
+        [
+          17,
+          34,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          8,
+          "S"
+        ],
+        [
+          17,
+          34,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "景观设计及全程设计管理为具体S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U394",
+      "record_id": "CNSS-B500-066",
+      "excerpt": "400兆核磁共振谱仪",
+      "category": "C",
+      "provisions": "原文跨度1–3;R13;R14",
+      "recommendation": "保留含内部括号元数据的最短连续完整S；删内部元数据后拼接为一条不合法。设备名不是本句独立工具使用要求，不能为跳过元数据强拆为两S。",
+      "current_labels": [
+        [
+          2,
+          47,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          47,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "保留含内部括号元数据的最短连续完整S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "future representation candidate; current continuity rule already sufficient to prohibit concatenation"
+    },
+    {
+      "case_id": "U405",
+      "record_id": "CNSS-B500-009",
+      "excerpt": "宣传专题的策划",
+      "category": "A",
+      "provisions": "R21;原文跨度2",
+      "recommendation": "具体专题策划、专项活动策划、视频栏目策划各S；总括宣传策划若只引出列表，可不重复作为独立实体。",
+      "current_labels": [
+        [
+          2,
+          6,
+          "S"
+        ],
+        [
+          10,
+          17,
+          "S"
+        ],
+        [
+          18,
+          25,
+          "S"
+        ],
+        [
+          26,
+          33,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          6,
+          "S"
+        ],
+        [
+          10,
+          17,
+          "S"
+        ],
+        [
+          18,
+          25,
+          "S"
+        ],
+        [
+          26,
+          33,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "具体专题策划、专项活动策划、视频栏目策划各S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U425",
+      "record_id": "CNSS-B500-420",
+      "excerpt": "个人自荐材料",
+      "category": "A",
+      "provisions": "原文跨度7;R19",
+      "recommendation": "只是申请材料提交清单，不是具体资格/知识要求；各类过级证书及奖励证书不应单凭证书关键词标K，建议确认空候选。",
+      "current_labels": [
+        [
+          31,
+          37,
+          "K"
+        ],
+        [
+          44,
+          48,
+          "K"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          31,
+          37,
+          "K"
+        ],
+        [
+          44,
+          48,
+          "K"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "只是申请材料提交清单，不是具体资格/知识要求（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U426",
+      "record_id": "CNSS-B500-423",
+      "excerpt": "GIS产品、GIS数据",
+      "category": "B",
+      "provisions": "R14;R17;R11",
+      "recommendation": "运维与优化为具体S；GIS产品与数据本身是对象，不能机械各标S；优先保留包含共享运维核心的连续表达，优化可由明确对象支持单列S。",
+      "current_labels": [
+        [
+          5,
+          10,
+          "S"
+        ],
+        [
+          11,
+          16,
+          "S"
+        ],
+        [
+          17,
+          22,
+          "S"
+        ],
+        [
+          23,
+          25,
+          "S"
+        ],
+        [
+          26,
+          28,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          5,
+          10,
+          "S"
+        ],
+        [
+          11,
+          16,
+          "S"
+        ],
+        [
+          17,
+          25,
+          "S"
+        ],
+        [
+          26,
+          28,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": true,
+      "inferred_question": "运维与优化为具体S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    },
+    {
+      "case_id": "U459",
+      "record_id": "CNSS-B500-013",
+      "excerpt": "本科学历（学士学位）",
+      "category": "A",
+      "provisions": "学历与资格;原文跨度3",
+      "recommendation": "本科学历和学士学位分别为可独立识别K；括号是第二项资格内容，不是无关元数据，不应删除其中学位要求。",
+      "current_labels": [
+        [
+          3,
+          13,
+          "K"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          3,
+          13,
+          "K"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "本科学历和学士学位分别为可独立识别K（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U462",
+      "record_id": "CNSS-B500-029",
+      "excerpt": "连年以上相关工作",
+      "category": "A",
+      "provisions": "背景与经验;R15;原文跨度3",
+      "recommendation": "泛相关工作不标；此句要求平台运营规则和逻辑，建议保留平台限定的完整K候选，不凭熟悉把天猫京东另标S；乱码年限不纠写。",
+      "current_labels": [
+        [
+          4,
+          8,
+          "S"
+        ],
+        [
+          13,
+          15,
+          "S"
+        ],
+        [
+          16,
+          18,
+          "S"
+        ],
+        [
+          22,
+          29,
+          "K"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          4,
+          8,
+          "S"
+        ],
+        [
+          13,
+          15,
+          "S"
+        ],
+        [
+          16,
+          18,
+          "S"
+        ],
+        [
+          22,
+          26,
+          "K"
+        ],
+        [
+          27,
+          29,
+          "K"
+        ]
+      ],
+      "screenshot_export_difference": true,
+      "inferred_question": "泛相关工作不标（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U465",
+      "record_id": "CNSS-B500-237",
+      "excerpt": "执行调测工序周计划",
+      "category": "A",
+      "provisions": "活动与结果;R17",
+      "recommendation": "执行调测计划及调测任务指具体操作S，可保留必要活动核心；按工艺/文件/规程是执行条件，不能无独立知识要求就新增K。",
+      "current_labels": [
+        [
+          0,
+          9,
+          "S"
+        ],
+        [
+          34,
+          40,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          0,
+          9,
+          "S"
+        ],
+        [
+          34,
+          40,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": false,
+      "inferred_question": "执行调测计划及调测任务指具体操作S，可保留必要活动核心（分析者归纳，截图未附书面疑问）",
+      "rule_action": "existing-rule explanation only"
+    },
+    {
+      "case_id": "U480",
+      "record_id": "CNSS-B500-368",
+      "excerpt": "因程序问题导致",
+      "category": "B",
+      "provisions": "R09;R14;R11",
+      "recommendation": "程序安全管理S；解决须由本句质量异常/停线限定技术对象，短解决是否足以表达要求待复核；不得拼接出原文不存在的解决程序异常。",
+      "current_labels": [
+        [
+          2,
+          9,
+          "S"
+        ],
+        [
+          18,
+          22,
+          "S"
+        ],
+        [
+          23,
+          25,
+          "S"
+        ],
+        [
+          28,
+          30,
+          "S"
+        ]
+      ],
+      "current_confirmed": true,
+      "new_rule_required": false,
+      "adjudication_status": "candidate_only_pending_independent_second_annotation",
+      "offset_effect": "Any later boundary/type/count change must be versioned; retain original Unicode [start,end) offsets; no current score recalculation.",
+      "screenshot_labels": [
+        [
+          2,
+          9,
+          "S"
+        ],
+        [
+          28,
+          30,
+          "S"
+        ]
+      ],
+      "screenshot_export_difference": true,
+      "inferred_question": "程序安全管理S（分析者归纳，截图未附书面疑问）",
+      "rule_action": "clarify example/application; human review required"
+    }
+  ]
+}
