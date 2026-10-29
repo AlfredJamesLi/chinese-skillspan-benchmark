@@ -1,0 +1,415 @@
+{
+  "n_disagree_sentences": 223,
+  "n_agree_sentences": 127,
+  "sentence_kinds_overlapping": {
+    "同边界不同类型": 26,
+    "Coder C更短": 157,
+    "Coder C独有、无重叠": 38,
+    "Coder B更短": 44,
+    "Coder B空、Coder C有标注": 15,
+    "Coder B独有、无重叠": 27,
+    "Coder C空、Coder B有标注": 3,
+    "部分重叠": 5
+  },
+  "same_bound_type_swap": {
+    "S→T": 10,
+    "S→K": 10,
+    "K→S": 13,
+    "T→S": 2,
+    "L→T": 1,
+    "K→T": 2
+  },
+  "swap_examples": {
+    "S→T": [
+      {
+        "study_id": "CNSS-B350-001",
+        "text": "学习能力",
+        "coder_b": "S",
+        "coder_c": "T"
+      },
+      {
+        "study_id": "CNSS-B350-059",
+        "text": "针对复杂业务场景制定有效改善措施",
+        "coder_b": "S",
+        "coder_c": "T"
+      },
+      {
+        "study_id": "CNSS-B350-072",
+        "text": "数据分析",
+        "coder_b": "S",
+        "coder_c": "T"
+      },
+      {
+        "study_id": "CNSS-B350-090",
+        "text": "解决客户各种突发问题",
+        "coder_b": "S",
+        "coder_c": "T"
+      },
+      {
+        "study_id": "CNSS-B350-164",
+        "text": "控制整体运维成本",
+        "coder_b": "S",
+        "coder_c": "T"
+      },
+      {
+        "study_id": "CNSS-B350-230",
+        "text": "客户的接待",
+        "coder_b": "S",
+        "coder_c": "T"
+      },
+      {
+        "study_id": "CNSS-B350-230",
+        "text": "客户行为的管理",
+        "coder_b": "S",
+        "coder_c": "T"
+      },
+      {
+        "study_id": "CNSS-B350-281",
+        "text": "专业技能",
+        "coder_b": "S",
+        "coder_c": "T"
+      }
+    ],
+    "S→K": [
+      {
+        "study_id": "CNSS-B350-014",
+        "text": "采购管理",
+        "coder_b": "S",
+        "coder_c": "K"
+      },
+      {
+        "study_id": "CNSS-B350-014",
+        "text": "供应商管理",
+        "coder_b": "S",
+        "coder_c": "K"
+      },
+      {
+        "study_id": "CNSS-B350-014",
+        "text": "合同管理",
+        "coder_b": "S",
+        "coder_c": "K"
+      },
+      {
+        "study_id": "CNSS-B350-043",
+        "text": "项目管理方法",
+        "coder_b": "S",
+        "coder_c": "K"
+      },
+      {
+        "study_id": "CNSS-B350-103",
+        "text": "致远OA系统",
+        "coder_b": "S",
+        "coder_c": "K"
+      },
+      {
+        "study_id": "CNSS-B350-172",
+        "text": "优化",
+        "coder_b": "S",
+        "coder_c": "K"
+      },
+      {
+        "study_id": "CNSS-B350-210",
+        "text": "常用设计模式",
+        "coder_b": "S",
+        "coder_c": "K"
+      },
+      {
+        "study_id": "CNSS-B350-232",
+        "text": "大专及以上学历",
+        "coder_b": "S",
+        "coder_c": "K"
+      }
+    ],
+    "K→S": [
+      {
+        "study_id": "CNSS-B350-079",
+        "text": "广电",
+        "coder_b": "K",
+        "coder_c": "S"
+      },
+      {
+        "study_id": "CNSS-B350-104",
+        "text": "主流云平台",
+        "coder_b": "K",
+        "coder_c": "S"
+      },
+      {
+        "study_id": "CNSS-B350-134",
+        "text": "基础教学",
+        "coder_b": "K",
+        "coder_c": "S"
+      },
+      {
+        "study_id": "CNSS-B350-134",
+        "text": "专业教学",
+        "coder_b": "K",
+        "coder_c": "S"
+      },
+      {
+        "study_id": "CNSS-B350-225",
+        "text": "施工图纸",
+        "coder_b": "K",
+        "coder_c": "S"
+      },
+      {
+        "study_id": "CNSS-B350-261",
+        "text": "深度学习",
+        "coder_b": "K",
+        "coder_c": "S"
+      },
+      {
+        "study_id": "CNSS-B350-261",
+        "text": "基础算法开发",
+        "coder_b": "K",
+        "coder_c": "S"
+      },
+      {
+        "study_id": "CNSS-B350-266",
+        "text": "Tomcat项目部署",
+        "coder_b": "K",
+        "coder_c": "S"
+      }
+    ],
+    "T→S": [
+      {
+        "study_id": "CNSS-B350-200",
+        "text": "商务谈判",
+        "coder_b": "T",
+        "coder_c": "S"
+      },
+      {
+        "study_id": "CNSS-B350-312",
+        "text": "公司内各部门间协调",
+        "coder_b": "T",
+        "coder_c": "S"
+      }
+    ],
+    "L→T": [
+      {
+        "study_id": "CNSS-B350-224",
+        "text": "普通话",
+        "coder_b": "L",
+        "coder_c": "T"
+      }
+    ],
+    "K→T": [
+      {
+        "study_id": "CNSS-B350-281",
+        "text": "文化水平",
+        "coder_b": "K",
+        "coder_c": "T"
+      },
+      {
+        "study_id": "CNSS-B350-281",
+        "text": "政策水平",
+        "coder_b": "K",
+        "coder_c": "T"
+      }
+    ]
+  },
+  "nested_span_pairs": {
+    "Coder C较短 T / Coder B较长 S": 8,
+    "Coder C较短 S / Coder B较长 S": 106,
+    "Coder C较短 T / Coder B较长 T": 65,
+    "Coder C较短 K / Coder B较长 K": 24,
+    "Coder B较短 S / Coder C较长 S": 41,
+    "Coder B较短 T / Coder C较长 S": 4,
+    "Coder B较短 T / Coder C较长 T": 12,
+    "Coder C较短 S / Coder B较长 K": 6,
+    "Coder B较短 K / Coder C较长 S": 10,
+    "Coder B较短 K / Coder C较长 K": 7,
+    "Coder C较短 K / Coder B较长 S": 2,
+    "Coder C较短 S / Coder B较长 T": 5,
+    "Coder B较短 S / Coder C较长 T": 3,
+    "Coder B较短 S / Coder C较长 K": 3
+  },
+  "nested_examples": [
+    {
+      "study_id": "CNSS-B350-001",
+      "relation": "coder_c_inside",
+      "coder_b": "S「沟通能力」",
+      "coder_c": "T「沟通」"
+    },
+    {
+      "study_id": "CNSS-B350-002",
+      "relation": "coder_c_inside",
+      "coder_b": "S「气体化学品系统的销售工作」",
+      "coder_c": "S「气体化学品」"
+    },
+    {
+      "study_id": "CNSS-B350-004",
+      "relation": "coder_c_inside",
+      "coder_b": "S「网智能电网D5000平台的维护、升级、消缺」",
+      "coder_c": "S「智能电网D5000平台」"
+    },
+    {
+      "study_id": "CNSS-B350-005",
+      "relation": "coder_c_inside",
+      "coder_b": "S「熟悉工程项目流程」",
+      "coder_c": "S「工程项目流程」"
+    },
+    {
+      "study_id": "CNSS-B350-009",
+      "relation": "coder_c_inside",
+      "coder_b": "T「抗压能力」",
+      "coder_c": "T「抗压」"
+    },
+    {
+      "study_id": "CNSS-B350-009",
+      "relation": "coder_c_inside",
+      "coder_b": "T「项目推动能力」",
+      "coder_c": "T「项目推动」"
+    },
+    {
+      "study_id": "CNSS-B350-011",
+      "relation": "coder_c_inside",
+      "coder_b": "S「公司内部刊物的组稿、编制、出版」",
+      "coder_c": "S「组稿」"
+    },
+    {
+      "study_id": "CNSS-B350-012",
+      "relation": "coder_c_inside",
+      "coder_b": "T「逻辑分析能力」",
+      "coder_c": "T「逻辑分析」"
+    },
+    {
+      "study_id": "CNSS-B350-012",
+      "relation": "coder_c_inside",
+      "coder_b": "T「沟通表达能力」",
+      "coder_c": "T「沟通」"
+    },
+    {
+      "study_id": "CNSS-B350-015",
+      "relation": "coder_c_inside",
+      "coder_b": "K「康复专业专科及以上」",
+      "coder_c": "K「康复专业」"
+    },
+    {
+      "study_id": "CNSS-B350-015",
+      "relation": "coder_c_inside",
+      "coder_b": "S「临床经验」",
+      "coder_c": "S「临床」"
+    },
+    {
+      "study_id": "CNSS-B350-018",
+      "relation": "coder_b_inside",
+      "coder_b": "S「应用系统日常运维」",
+      "coder_c": "S「公司应用系统日常运维」"
+    },
+    {
+      "study_id": "CNSS-B350-021",
+      "relation": "coder_c_inside",
+      "coder_b": "K「本科学历及学士学位」",
+      "coder_c": "K「本科学历」"
+    },
+    {
+      "study_id": "CNSS-B350-022",
+      "relation": "coder_c_inside",
+      "coder_b": "S「所管辖区域商户经营状况的收集、整理、分析」",
+      "coder_c": "S「商户经营状况的收集」"
+    },
+    {
+      "study_id": "CNSS-B350-023",
+      "relation": "coder_c_inside",
+      "coder_b": "T「组织管理能力」",
+      "coder_c": "T「组织管理」"
+    },
+    {
+      "study_id": "CNSS-B350-023",
+      "relation": "coder_c_inside",
+      "coder_b": "T「沟通能力」",
+      "coder_c": "T「沟通」"
+    },
+    {
+      "study_id": "CNSS-B350-024",
+      "relation": "coder_c_inside",
+      "coder_b": "S「公司ERP操作培训」",
+      "coder_c": "S「ERP操作培训」"
+    },
+    {
+      "study_id": "CNSS-B350-026",
+      "relation": "coder_b_inside",
+      "coder_b": "S「Devops规划」",
+      "coder_c": "S「Devops规划和落地」"
+    },
+    {
+      "study_id": "CNSS-B350-026",
+      "relation": "coder_b_inside",
+      "coder_b": "S「落地」",
+      "coder_c": "S「Devops规划和落地」"
+    },
+    {
+      "study_id": "CNSS-B350-028",
+      "relation": "coder_c_inside",
+      "coder_b": "K「机械类相关专业专科及以上学历」",
+      "coder_c": "K「机械类相关专业」"
+    },
+    {
+      "study_id": "CNSS-B350-030",
+      "relation": "coder_c_inside",
+      "coder_b": "S「信息化软件方面的设计、规划、需求分析」",
+      "coder_c": "S「信息化软件」"
+    },
+    {
+      "study_id": "CNSS-B350-031",
+      "relation": "coder_c_inside",
+      "coder_b": "T「沟通能力」",
+      "coder_c": "T「沟通」"
+    },
+    {
+      "study_id": "CNSS-B350-035",
+      "relation": "coder_c_inside",
+      "coder_b": "S「管理经验」",
+      "coder_c": "T「管理」"
+    },
+    {
+      "study_id": "CNSS-B350-037",
+      "relation": "coder_b_inside",
+      "coder_b": "S「云计算和自有机房虚拟服务器」",
+      "coder_c": "S「云计算和自有机房虚拟服务器、业务系统等的安全」"
+    }
+  ],
+  "partial_examples": [
+    {
+      "study_id": "CNSS-B350-105",
+      "coder_b": "S「信息系统的操作培训工作」",
+      "coder_c": "S「公司信息系统的操作培训」"
+    },
+    {
+      "study_id": "CNSS-B350-166",
+      "coder_b": "S「使用电脑」",
+      "coder_c": "S「电脑及办公软件」"
+    },
+    {
+      "study_id": "CNSS-B350-166",
+      "coder_b": "S「办公软件操作」",
+      "coder_c": "S「电脑及办公软件」"
+    },
+    {
+      "study_id": "CNSS-B350-255",
+      "coder_b": "T「追求精神」",
+      "coder_c": "T「对新技术的追求」"
+    },
+    {
+      "study_id": "CNSS-B350-275",
+      "coder_b": "T「工作态度」",
+      "coder_c": "T「态度积极」"
+    },
+    {
+      "study_id": "CNSS-B350-291",
+      "coder_b": "T「协作能力」",
+      "coder_c": "T「团队协作」"
+    }
+  ],
+  "coder_b_only_no_overlap": {
+    "T": 3,
+    "K": 7,
+    "S": 29
+  },
+  "coder_c_only_no_overlap": {
+    "S": 48,
+    "K": 23,
+    "T": 1
+  },
+  "note": "Sentence kinds overlap. These are disagreements, not adjudicated errors."
+}

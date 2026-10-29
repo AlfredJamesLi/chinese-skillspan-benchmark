@@ -1,24 +1,20 @@
 {
   "generated_at_utc": "2026-10-29T04:22:52.827018+00:00",
   "library": "CNSS_BLIND350_V1",
-  "projects": {
-    "Maple": 44,
-    "YanbinZheng": 45
-  },
   "n": 350,
   "both_confirmed": true,
   "text_mismatch": 0,
   "pre_adjudication": true,
   "not_gold": true,
-  "james1_excluded": "0/350 confirmed at export",
-  "primary_metric": "typed exact-match span micro-F1; P = match/Maple, R = match/YanbinZheng",
+  "excluded_coder_excluded": "0/350 confirmed at export",
+  "primary_metric": "typed exact-match span micro-F1; P = match/Coder B, R = match/Coder C",
   "exact_type": {
     "P": 0.530940594059406,
     "R": 0.4886104783599089,
     "F1": 0.5088967971530249,
     "match": 429,
-    "n_maple": 808,
-    "n_zheng": 878,
+    "n_coder_b": 808,
+    "n_coder_c": 878,
     "na": false
   },
   "relax_type_boundary": {
@@ -26,8 +22,8 @@
     "R": 0.5318906605922551,
     "F1": 0.5539739027283511,
     "match": 467,
-    "n_maple": 808,
-    "n_zheng": 878,
+    "n_coder_b": 808,
+    "n_coder_c": 878,
     "na": false
   },
   "type_on_matched_bounds": {
@@ -42,8 +38,8 @@
     0.41565217855853626
   ],
   "empty": {
-    "maple": 84,
-    "yanbin_zheng": 72,
+    "coder_b": 84,
+    "coder_c": 72,
     "both": 69
   },
   "per_type_exact": {
@@ -52,8 +48,8 @@
       "R": 0.0,
       "F1": 0.0,
       "match": 0,
-      "n_maple": 1,
-      "n_zheng": 0,
+      "n_coder_b": 1,
+      "n_coder_c": 0,
       "na": false
     },
     "K": {
@@ -61,8 +57,8 @@
       "R": 0.6063829787234043,
       "F1": 0.6145552560646901,
       "match": 114,
-      "n_maple": 183,
-      "n_zheng": 188,
+      "n_coder_b": 183,
+      "n_coder_c": 188,
       "na": false
     },
     "S": {
@@ -70,8 +66,8 @@
       "R": 0.48927875243664715,
       "F1": 0.5127681307456587,
       "match": 251,
-      "n_maple": 466,
-      "n_zheng": 513,
+      "n_coder_b": 466,
+      "n_coder_c": 513,
       "na": false
     },
     "T": {
@@ -79,8 +75,8 @@
       "R": 0.3615819209039548,
       "F1": 0.382089552238806,
       "match": 64,
-      "n_maple": 158,
-      "n_zheng": 177,
+      "n_coder_b": 158,
+      "n_coder_c": 177,
       "na": false
     }
   },
@@ -102,7 +98,7 @@
     "na": false
   },
   "spans": {
-    "Maple": 808,
-    "YanbinZheng": 878
+    "Coder B": 808,
+    "Coder C": 878
   }
 }
