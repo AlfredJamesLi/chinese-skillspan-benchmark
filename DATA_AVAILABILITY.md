@@ -20,6 +20,8 @@ Human annotation and review cover 550 distinct sentences: 500 across reference c
 
 ## Which archive version?
 
+The [29 October 2026 single-coder addition](data/cnss_blind500_v1_coder_c_provisional_20261029/README.md) is available in this repository: 500 confirmed sentences, 1300 spans, anonymous Coder C. It is a provisional single-coder gold candidate pending independent second annotation, IAA and adjudication, outside v0.1.3. It is separate from both historical annotation coverage and the 350-sentence two-coder package; no combined 850-sentence Gold/IAA set is released.
+
 Use **v0.1.3** for the human reference set and released Silver training/development files. The manuscript's Data Availability statement should cite this version DOI. Earlier [v0.1.2](https://doi.org/10.5281/zenodo.22685143) and the first Zenodo snapshot [v0.1.1](https://doi.org/10.5281/zenodo.22288338) do not include those additions. The [repository archive series concept DOI](https://doi.org/10.5281/zenodo.22288337) groups repository snapshots and currently resolves to record 22846011, version `qwen-repro-pack-20260919`. Use the specific [dataset v0.1.3 DOI](https://doi.org/10.5281/zenodo.22698504) to obtain the human reference and released Silver training/development files. Later expanded-Silver experiments on GitHub are outside the immutable v0.1.3 archive.
 
 GitHub tags `v0.1.0` and `v0.1.1` have been withdrawn because those snapshots contained a rejected conference draft PDF. The Zenodo `v0.1.1` record remains as an immutable first snapshot; reviewers should still use **v0.1.3**. No `v0.1.4` has been minted.

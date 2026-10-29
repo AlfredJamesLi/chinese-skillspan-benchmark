@@ -34,6 +34,10 @@ The task uses flat character spans with four types: language (L), knowledge-rela
 
 The authors confirm that the adopted Silver labels were generated through official OpenAI Codex, with the original annotation model recorded as `gpt-6-astra`. The alternative expanded annotation pool is retained only for supplementary comparison. DeepSeek and Kimi used official provider APIs. API baseline predictions were evaluated under a frozen protocol and checked by offline rescoring; recorded identifiers and access routes are listed in the [resource naming guide](PAPER_NAMES.md).
 
+## 29 October 2026 annotation addition
+
+The [CNSS_BLIND500_V1 package](data/cnss_blind500_v1_coder_c_provisional_20261029/README.md) provides 500 confirmed sentences and 1300 spans from Coder C as a **provisional single-coder gold candidate**. These preliminary Gold labels await independent second annotation, IAA and adjudication before formal Gold release. No 500-sentence IAA or adjudication is available. This cohort is separate from the historical coverage above and from the 350-sentence two-coder cohort; do not combine them into an 850-sentence Gold/IAA set. The v0.1.3 archive and existing manuscript results are unchanged.
+
 ## Get started
 
 1. **Use the data:** download the [v0.1.3 archive](https://doi.org/10.5281/zenodo.22698504), then read the [human-reference guide](data/gold150/README.md) and [Chinese and English annotation handbooks](notes/handbooks/reader_20261007/README.md) (updated 7 October 2026).

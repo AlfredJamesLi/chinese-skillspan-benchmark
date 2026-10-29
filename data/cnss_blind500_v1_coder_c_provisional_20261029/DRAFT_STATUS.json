@@ -1,0 +1,58 @@
+{
+  "generated_at_utc": "2026-10-29T04:45:28.700314+00:00",
+  "library": "CNSS_BLIND500_V1",
+  "role": "provisional single-coder gold candidate; preliminary Gold labels pending independent second annotation and adjudication",
+  "annotator": "Coder C",
+  "project_id": 50,
+  "n_examples": 500,
+  "n_confirmed": 500,
+  "n_spans": 1300,
+  "n_examples_with_spans": 396,
+  "n_confirmed_empty": 104,
+  "type_counts": {
+    "S": 773,
+    "T": 197,
+    "K": 324,
+    "L": 6
+  },
+  "other_coders_not_exported": {
+    "Coder A": {
+      "project_id": 48,
+      "n_examples": 500,
+      "n_confirmed": 0,
+      "n_spans": 0
+    },
+    "Coder B": {
+      "project_id": 49,
+      "n_examples": 500,
+      "n_confirmed": 0,
+      "n_spans": 0
+    }
+  },
+  "handbook": "B.sop_v4.2.14",
+  "label_file": "labels/blind500_C.jsonl",
+  "offset_convention": "zero-based, end-exclusive Unicode code points",
+  "iaa_computed": false,
+  "adjudicated": false,
+  "formal_gold": false,
+  "pending": [
+    "independent second annotation of all 500 sentences",
+    "IAA on independent completed annotations",
+    "adjudication"
+  ],
+  "privacy_redaction": {
+    "method": "one U+2588 FULL BLOCK per original Unicode code point",
+    "authorized_date": "2026-10-29",
+    "affected_records": [
+      "CNSS-B500-067",
+      "CNSS-B500-163",
+      "CNSS-B500-290"
+    ],
+    "url_count": 3,
+    "contact_name_count": 2,
+    "phone_number_count": 2,
+    "all_affected_records_confirmed_empty": true,
+    "text_lengths_preserved": true,
+    "labels_offsets_confirmation_and_order_preserved": true
+  }
+}
