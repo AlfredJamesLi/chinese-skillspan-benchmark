@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "status": "pre-adjudication disagreement",
+  "scope": "double-coded blind subset; analysis-local Coder A/B",
+  "source_sha256": {
+    "A": "40ea756d1da961f149984b30ba61492381ca15991d77c2a6b220094c0ea50e07",
+    "B": "7995ef1603db526341fa610b6bc2ad4def0fad5b8f81f9e3093f9f65a826c401"
+  },
+  "verification": "independently recomputed from both confirmed raw exports",
+  "counts": {
+    "A_empty_B_nonempty": 15,
+    "A_inside_B_sentences": 44,
+    "A_only_no_overlap_sentences": 27,
+    "A_spans": 808,
+    "B_empty_A_nonempty": 3,
+    "B_inside_A_sentences": 157,
+    "B_only_no_overlap_sentences": 38,
+    "B_spans": 878,
+    "agree_sentences": 127,
+    "both_empty": 69,
+    "boundary_matches": 467,
+    "disagree_sentences": 223,
+    "exact_matches": 429,
+    "partial_overlap_pairs": 10,
+    "partial_overlap_sentences": 9,
+    "same_boundary_type_difference_sentences": 26,
+    "sentences": 350
+  },
+  "metrics": {
+    "exact_f1": 0.5088967971530249,
+    "type_ignored_same_boundary_f1": 0.5539739027283511,
+    "character_n": 12378,
+    "character_accuracy": 0.8406850864436904,
+    "character_cohen_kappa": 0.7218387914555585,
+    "character_nominal_krippendorff_alpha": 0.7217264336066279
+  },
+  "same_boundary_type_swaps_A_to_B": {
+    "K->S": 13,
+    "K->T": 2,
+    "L->T": 1,
+    "S->K": 10,
+    "S->T": 10,
+    "T->S": 2
+  },
+  "nested_all_pairs_A_type_B_type": {
+    "A_inside_B:K/K": 7,
+    "A_inside_B:K/S": 10,
+    "A_inside_B:S/K": 3,
+    "A_inside_B:S/S": 41,
+    "A_inside_B:S/T": 3,
+    "A_inside_B:T/S": 4,
+    "A_inside_B:T/T": 12,
+    "B_inside_A:K/K": 31,
+    "B_inside_A:K/S": 7,
+    "B_inside_A:S/K": 3,
+    "B_inside_A:S/S": 148,
+    "B_inside_A:S/T": 9,
+    "B_inside_A:T/S": 9,
+    "B_inside_A:T/T": 73
+  },
+  "no_overlap_spans_by_type": {
+    "A": {
+      "K": 7,
+      "S": 29,
+      "T": 3
+    },
+    "B": {
+      "K": 23,
+      "S": 48,
+      "T": 1
+    }
+  }
+}

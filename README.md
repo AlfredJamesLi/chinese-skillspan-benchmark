@@ -14,6 +14,8 @@ Overview of Chinese-SkillSpan: (a) benchmark construction; (b) models and evalua
 
 ## What is included?
 
+The [Blind-350 pre-adjudication disagreement analysis](docs/annotation_disagreement_analysis_blind350.md) provides an anonymous aggregate summary, explicit counting conventions and reproducible checks for the separate double-coded blind subset. It is not adjudicated Gold.
+
 | Component | Size | Use |
 |---|---:|---|
 | Source corpus | 22,840 sentences | Four recruitment collections |
