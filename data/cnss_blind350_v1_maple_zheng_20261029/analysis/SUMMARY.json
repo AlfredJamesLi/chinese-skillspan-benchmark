@@ -1,0 +1,415 @@
+{
+  "n_disagree_sentences": 223,
+  "n_agree_sentences": 127,
+  "sentence_kinds_overlapping": {
+    "同边界不同类型": 26,
+    "郑更短": 157,
+    "郑独有、无重叠": 38,
+    "Maple更短": 44,
+    "Maple空、郑有标注": 15,
+    "Maple独有、无重叠": 27,
+    "郑空、Maple有标注": 3,
+    "部分重叠": 5
+  },
+  "same_bound_type_swap": {
+    "S→T": 10,
+    "S→K": 10,
+    "K→S": 13,
+    "T→S": 2,
+    "L→T": 1,
+    "K→T": 2
+  },
+  "swap_examples": {
+    "S→T": [
+      {
+        "study_id": "CNSS-B350-001",
+        "text": "学习能力",
+        "maple": "S",
+        "zheng": "T"
+      },
+      {
+        "study_id": "CNSS-B350-059",
+        "text": "针对复杂业务场景制定有效改善措施",
+        "maple": "S",
+        "zheng": "T"
+      },
+      {
+        "study_id": "CNSS-B350-072",
+        "text": "数据分析",
+        "maple": "S",
+        "zheng": "T"
+      },
+      {
+        "study_id": "CNSS-B350-090",
+        "text": "解决客户各种突发问题",
+        "maple": "S",
+        "zheng": "T"
+      },
+      {
+        "study_id": "CNSS-B350-164",
+        "text": "控制整体运维成本",
+        "maple": "S",
+        "zheng": "T"
+      },
+      {
+        "study_id": "CNSS-B350-230",
+        "text": "客户的接待",
+        "maple": "S",
+        "zheng": "T"
+      },
+      {
+        "study_id": "CNSS-B350-230",
+        "text": "客户行为的管理",
+        "maple": "S",
+        "zheng": "T"
+      },
+      {
+        "study_id": "CNSS-B350-281",
+        "text": "专业技能",
+        "maple": "S",
+        "zheng": "T"
+      }
+    ],
+    "S→K": [
+      {
+        "study_id": "CNSS-B350-014",
+        "text": "采购管理",
+        "maple": "S",
+        "zheng": "K"
+      },
+      {
+        "study_id": "CNSS-B350-014",
+        "text": "供应商管理",
+        "maple": "S",
+        "zheng": "K"
+      },
+      {
+        "study_id": "CNSS-B350-014",
+        "text": "合同管理",
+        "maple": "S",
+        "zheng": "K"
+      },
+      {
+        "study_id": "CNSS-B350-043",
+        "text": "项目管理方法",
+        "maple": "S",
+        "zheng": "K"
+      },
+      {
+        "study_id": "CNSS-B350-103",
+        "text": "致远OA系统",
+        "maple": "S",
+        "zheng": "K"
+      },
+      {
+        "study_id": "CNSS-B350-172",
+        "text": "优化",
+        "maple": "S",
+        "zheng": "K"
+      },
+      {
+        "study_id": "CNSS-B350-210",
+        "text": "常用设计模式",
+        "maple": "S",
+        "zheng": "K"
+      },
+      {
+        "study_id": "CNSS-B350-232",
+        "text": "大专及以上学历",
+        "maple": "S",
+        "zheng": "K"
+      }
+    ],
+    "K→S": [
+      {
+        "study_id": "CNSS-B350-079",
+        "text": "广电",
+        "maple": "K",
+        "zheng": "S"
+      },
+      {
+        "study_id": "CNSS-B350-104",
+        "text": "主流云平台",
+        "maple": "K",
+        "zheng": "S"
+      },
+      {
+        "study_id": "CNSS-B350-134",
+        "text": "基础教学",
+        "maple": "K",
+        "zheng": "S"
+      },
+      {
+        "study_id": "CNSS-B350-134",
+        "text": "专业教学",
+        "maple": "K",
+        "zheng": "S"
+      },
+      {
+        "study_id": "CNSS-B350-225",
+        "text": "施工图纸",
+        "maple": "K",
+        "zheng": "S"
+      },
+      {
+        "study_id": "CNSS-B350-261",
+        "text": "深度学习",
+        "maple": "K",
+        "zheng": "S"
+      },
+      {
+        "study_id": "CNSS-B350-261",
+        "text": "基础算法开发",
+        "maple": "K",
+        "zheng": "S"
+      },
+      {
+        "study_id": "CNSS-B350-266",
+        "text": "Tomcat项目部署",
+        "maple": "K",
+        "zheng": "S"
+      }
+    ],
+    "T→S": [
+      {
+        "study_id": "CNSS-B350-200",
+        "text": "商务谈判",
+        "maple": "T",
+        "zheng": "S"
+      },
+      {
+        "study_id": "CNSS-B350-312",
+        "text": "公司内各部门间协调",
+        "maple": "T",
+        "zheng": "S"
+      }
+    ],
+    "L→T": [
+      {
+        "study_id": "CNSS-B350-224",
+        "text": "普通话",
+        "maple": "L",
+        "zheng": "T"
+      }
+    ],
+    "K→T": [
+      {
+        "study_id": "CNSS-B350-281",
+        "text": "文化水平",
+        "maple": "K",
+        "zheng": "T"
+      },
+      {
+        "study_id": "CNSS-B350-281",
+        "text": "政策水平",
+        "maple": "K",
+        "zheng": "T"
+      }
+    ]
+  },
+  "nested_span_pairs": {
+    "郑较短 T / Maple较长 S": 8,
+    "郑较短 S / Maple较长 S": 106,
+    "郑较短 T / Maple较长 T": 65,
+    "郑较短 K / Maple较长 K": 24,
+    "Maple较短 S / 郑较长 S": 41,
+    "Maple较短 T / 郑较长 S": 4,
+    "Maple较短 T / 郑较长 T": 12,
+    "郑较短 S / Maple较长 K": 6,
+    "Maple较短 K / 郑较长 S": 10,
+    "Maple较短 K / 郑较长 K": 7,
+    "郑较短 K / Maple较长 S": 2,
+    "郑较短 S / Maple较长 T": 5,
+    "Maple较短 S / 郑较长 T": 3,
+    "Maple较短 S / 郑较长 K": 3
+  },
+  "nested_examples": [
+    {
+      "study_id": "CNSS-B350-001",
+      "relation": "zheng_inside",
+      "maple": "S「沟通能力」",
+      "zheng": "T「沟通」"
+    },
+    {
+      "study_id": "CNSS-B350-002",
+      "relation": "zheng_inside",
+      "maple": "S「气体化学品系统的销售工作」",
+      "zheng": "S「气体化学品」"
+    },
+    {
+      "study_id": "CNSS-B350-004",
+      "relation": "zheng_inside",
+      "maple": "S「网智能电网D5000平台的维护、升级、消缺」",
+      "zheng": "S「智能电网D5000平台」"
+    },
+    {
+      "study_id": "CNSS-B350-005",
+      "relation": "zheng_inside",
+      "maple": "S「熟悉工程项目流程」",
+      "zheng": "S「工程项目流程」"
+    },
+    {
+      "study_id": "CNSS-B350-009",
+      "relation": "zheng_inside",
+      "maple": "T「抗压能力」",
+      "zheng": "T「抗压」"
+    },
+    {
+      "study_id": "CNSS-B350-009",
+      "relation": "zheng_inside",
+      "maple": "T「项目推动能力」",
+      "zheng": "T「项目推动」"
+    },
+    {
+      "study_id": "CNSS-B350-011",
+      "relation": "zheng_inside",
+      "maple": "S「公司内部刊物的组稿、编制、出版」",
+      "zheng": "S「组稿」"
+    },
+    {
+      "study_id": "CNSS-B350-012",
+      "relation": "zheng_inside",
+      "maple": "T「逻辑分析能力」",
+      "zheng": "T「逻辑分析」"
+    },
+    {
+      "study_id": "CNSS-B350-012",
+      "relation": "zheng_inside",
+      "maple": "T「沟通表达能力」",
+      "zheng": "T「沟通」"
+    },
+    {
+      "study_id": "CNSS-B350-015",
+      "relation": "zheng_inside",
+      "maple": "K「康复专业专科及以上」",
+      "zheng": "K「康复专业」"
+    },
+    {
+      "study_id": "CNSS-B350-015",
+      "relation": "zheng_inside",
+      "maple": "S「临床经验」",
+      "zheng": "S「临床」"
+    },
+    {
+      "study_id": "CNSS-B350-018",
+      "relation": "maple_inside",
+      "maple": "S「应用系统日常运维」",
+      "zheng": "S「公司应用系统日常运维」"
+    },
+    {
+      "study_id": "CNSS-B350-021",
+      "relation": "zheng_inside",
+      "maple": "K「本科学历及学士学位」",
+      "zheng": "K「本科学历」"
+    },
+    {
+      "study_id": "CNSS-B350-022",
+      "relation": "zheng_inside",
+      "maple": "S「所管辖区域商户经营状况的收集、整理、分析」",
+      "zheng": "S「商户经营状况的收集」"
+    },
+    {
+      "study_id": "CNSS-B350-023",
+      "relation": "zheng_inside",
+      "maple": "T「组织管理能力」",
+      "zheng": "T「组织管理」"
+    },
+    {
+      "study_id": "CNSS-B350-023",
+      "relation": "zheng_inside",
+      "maple": "T「沟通能力」",
+      "zheng": "T「沟通」"
+    },
+    {
+      "study_id": "CNSS-B350-024",
+      "relation": "zheng_inside",
+      "maple": "S「公司ERP操作培训」",
+      "zheng": "S「ERP操作培训」"
+    },
+    {
+      "study_id": "CNSS-B350-026",
+      "relation": "maple_inside",
+      "maple": "S「Devops规划」",
+      "zheng": "S「Devops规划和落地」"
+    },
+    {
+      "study_id": "CNSS-B350-026",
+      "relation": "maple_inside",
+      "maple": "S「落地」",
+      "zheng": "S「Devops规划和落地」"
+    },
+    {
+      "study_id": "CNSS-B350-028",
+      "relation": "zheng_inside",
+      "maple": "K「机械类相关专业专科及以上学历」",
+      "zheng": "K「机械类相关专业」"
+    },
+    {
+      "study_id": "CNSS-B350-030",
+      "relation": "zheng_inside",
+      "maple": "S「信息化软件方面的设计、规划、需求分析」",
+      "zheng": "S「信息化软件」"
+    },
+    {
+      "study_id": "CNSS-B350-031",
+      "relation": "zheng_inside",
+      "maple": "T「沟通能力」",
+      "zheng": "T「沟通」"
+    },
+    {
+      "study_id": "CNSS-B350-035",
+      "relation": "zheng_inside",
+      "maple": "S「管理经验」",
+      "zheng": "T「管理」"
+    },
+    {
+      "study_id": "CNSS-B350-037",
+      "relation": "maple_inside",
+      "maple": "S「云计算和自有机房虚拟服务器」",
+      "zheng": "S「云计算和自有机房虚拟服务器、业务系统等的安全」"
+    }
+  ],
+  "partial_examples": [
+    {
+      "study_id": "CNSS-B350-105",
+      "maple": "S「信息系统的操作培训工作」",
+      "zheng": "S「公司信息系统的操作培训」"
+    },
+    {
+      "study_id": "CNSS-B350-166",
+      "maple": "S「使用电脑」",
+      "zheng": "S「电脑及办公软件」"
+    },
+    {
+      "study_id": "CNSS-B350-166",
+      "maple": "S「办公软件操作」",
+      "zheng": "S「电脑及办公软件」"
+    },
+    {
+      "study_id": "CNSS-B350-255",
+      "maple": "T「追求精神」",
+      "zheng": "T「对新技术的追求」"
+    },
+    {
+      "study_id": "CNSS-B350-275",
+      "maple": "T「工作态度」",
+      "zheng": "T「态度积极」"
+    },
+    {
+      "study_id": "CNSS-B350-291",
+      "maple": "T「协作能力」",
+      "zheng": "T「团队协作」"
+    }
+  ],
+  "maple_only_no_overlap": {
+    "T": 3,
+    "K": 7,
+    "S": 29
+  },
+  "zheng_only_no_overlap": {
+    "S": 48,
+    "K": 23,
+    "T": 1
+  },
+  "note": "Sentence kinds overlap. These are disagreements, not adjudicated errors."
+}
