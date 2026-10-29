@@ -1,6 +1,8 @@
 # Blind-500 uncertainty review, v1.0.0
 
-2026-10-29. **AI-assisted analytical working draft, pending author review.** This reviews Coder C's provisional single-coder gold candidate / preliminary Gold labels. It is not final/adjudicated Gold, a second annotation, an IAA study, or evidence that all authors accepted these interpretations. No original labels, types, offsets, confirmation fields, order, data files or existing results were changed.
+These are post-submission repository-maintenance materials. They were not used to train, select, or evaluate models, calculate results, or support claims reported in manuscript 149505. The citable dataset associated with that manuscript remains Chinese-SkillSpan v0.1.3 on Zenodo; these materials do not change the archived dataset, submitted manuscript or reported results.
+
+2026-10-29. **AI-assisted analytical working draft, pending author review.** This reviews Coder C's provisional single-coder annotation draft pending independent second annotation and adjudication. It is not a second annotation, an IAA study, or evidence that all authors accepted these interpretations. No original labels, types, offsets, confirmation fields, order, data files or existing results were changed.
 
 ## Evidence and inventory
 
@@ -23,13 +25,13 @@ Four screenshots differ from the released export: **U387, U426, U462, U480**. Th
 |C|1|Desired discontiguous selection cannot be represented by one continuous span|
 |D|0|No genuinely new normative rule shown necessary by this evidence|
 
-See the [46-case decision table](decision_table.md) and [separate adjudication-candidate JSON](adjudication_candidates.json). JSON offsets are zero-based, end-exclusive Unicode code points in the identified **existing public record**. They record observed labels, not proposed replacements. Proposals are prose because assigning authoritative corrected offsets before human adjudication would overstate certainty. An A classification means the stated issue can be addressed using existing provisions; it does not certify the sentence's entire annotation as final Gold.
+See the [46-case decision table](decision_table.md) and [separate adjudication-candidate JSON](adjudication_candidates.json). JSON offsets are zero-based, end-exclusive Unicode code points in the identified **existing public record**. They record observed labels, not proposed replacements. Proposals are prose because assigning authoritative corrected offsets before human adjudication would overstate certainty. An A classification means the stated issue can be addressed using existing provisions; it does not resolve the sentence's entire annotation.
 
 The main recurring issues are preserving shared objects/actions, generic experience versus specific activity, knowledge versus practical tool use, general communication versus occupational function, and activities versus desired results. R11 already provides an unresolved-candidate process. R14 and R23 do not authorize mechanical splitting at every conjunction. They allow a short activity such as maintenance when its object is unambiguous in the same sentence; a bare state, attribute or unrelated brand does not automatically become a skill.
 
 **No handbook rule is activated or revised by this release.** [Proposal UCP-1.0.0](future_rule_proposal.md) adds a prospective explanatory candidate and future research design. It changes neither L/K/S/T definitions nor current scoring. Examples in this diagnostic set must be disclosed as exposed to rule discussion, not subsequently presented as an untouched independent test of rules developed from them.
 
-After the independent second coder finishes, preserve both original independent versions, compute agreement under the declared frozen protocol, then adjudicate with the authors. Do not expose these candidate answers to a coder whose work is meant to remain blind; if exposure occurs, document it. Version any adjudicated release separately. No retrospective silent relabelling, 500-sentence IAA, or combination into an 850-sentence Gold set is performed here.
+After the independent second coder finishes, preserve both original independent versions, compute agreement under the declared frozen protocol, then adjudicate with the authors. Do not expose these candidate answers to a coder whose work is meant to remain blind; if exposure occurs, document it. Version any adjudicated release separately. No retrospective silent relabelling, 500-sentence IAA, or combination into an 850-sentence annotation set is performed here.
 
 ## Metric boundary
 

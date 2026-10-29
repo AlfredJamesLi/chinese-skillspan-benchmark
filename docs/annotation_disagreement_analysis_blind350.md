@@ -1,6 +1,8 @@
 # Blind-350 pre-adjudication disagreement analysis
 
-This **double-coded blind subset** contains 350 sentences independently confirmed by both coders under handbook B.sop_v4.2.14. There are **127 identical span sets and 223 sentences with pre-adjudication disagreement**. These are not errors against a reference answer. Neither coder is treated as correct; no adjudication or final Gold is produced. This subset is separate from the 500-sentence provisional single-coder addition.
+These are post-submission repository-maintenance materials. They were not used to train, select, or evaluate models, calculate results, or support claims reported in manuscript 149505. The citable dataset associated with that manuscript remains Chinese-SkillSpan v0.1.3 on Zenodo; these materials do not change the archived dataset, submitted manuscript or reported results.
+
+This **double-coded blind subset** contains 350 sentences independently confirmed by both coders under handbook B.sop_v4.2.14. There are **127 identical span sets and 223 sentences with pre-adjudication disagreement**. These are not errors against a reference answer. Neither coder is treated as correct; no adjudication is performed. This subset is separate from the 500-sentence provisional single-coder annotation draft.
 
 ## Scope, aliases and provenance
 

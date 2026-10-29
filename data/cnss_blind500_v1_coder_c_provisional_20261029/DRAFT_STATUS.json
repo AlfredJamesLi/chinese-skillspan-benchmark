@@ -1,7 +1,7 @@
 {
   "generated_at_utc": "2026-10-29T04:45:28.700314+00:00",
   "library": "CNSS_BLIND500_V1",
-  "role": "provisional single-coder gold candidate; preliminary Gold labels pending independent second annotation and adjudication",
+  "role": "provisional single-coder annotation draft pending independent second annotation and adjudication",
   "annotator": "Coder C",
   "project_id": 50,
   "n_examples": 500,
@@ -34,7 +34,6 @@
   "offset_convention": "zero-based, end-exclusive Unicode code points",
   "iaa_computed": false,
   "adjudicated": false,
-  "formal_gold": false,
   "pending": [
     "independent second annotation of all 500 sentences",
     "IAA on independent completed annotations",
@@ -54,5 +53,7 @@
     "all_affected_records_confirmed_empty": true,
     "text_lengths_preserved": true,
     "labels_offsets_confirmation_and_order_preserved": true
-  }
+  },
+  "usage": "post-submission annotation maintenance; not used for training, model selection, evaluation, results or claims in manuscript 149505",
+  "agreement_analysis": "pending independent second annotation"
 }

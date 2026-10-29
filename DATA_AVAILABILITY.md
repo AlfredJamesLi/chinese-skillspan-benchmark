@@ -20,7 +20,7 @@ Human annotation and review cover 550 distinct sentences: 500 across reference c
 
 ## Which archive version?
 
-The [29 October 2026 single-coder addition](data/cnss_blind500_v1_coder_c_provisional_20261029/README.md) is available in this repository: 500 confirmed sentences, 1300 spans, anonymous Coder C. It is a provisional single-coder gold candidate pending independent second annotation, IAA and adjudication, outside v0.1.3. It is separate from both historical annotation coverage and the 350-sentence two-coder package; no combined 850-sentence Gold/IAA set is released.
+The [Blind-350 disagreement materials](docs/annotation_disagreement_analysis_blind350.md) and [Blind-500 draft](data/cnss_blind500_v1_coder_c_provisional_20261029/README.md) are post-submission maintenance additions outside v0.1.3. Blind-500 is a provisional single-coder annotation draft pending independent second annotation and adjudication; agreement analysis is pending. Neither addition was used for model training, selection, evaluation, result calculation or claims in manuscript 149505. Keep these cohorts separate from each other and from historical annotation coverage. The manuscript-associated citable dataset remains v0.1.3; its contents and reported results are unchanged.
 
 Use **v0.1.3** for the human reference set and released Silver training/development files. The manuscript's Data Availability statement should cite this version DOI. Earlier [v0.1.2](https://doi.org/10.5281/zenodo.22685143) and the first Zenodo snapshot [v0.1.1](https://doi.org/10.5281/zenodo.22288338) do not include those additions. The [repository archive series concept DOI](https://doi.org/10.5281/zenodo.22288337) groups repository snapshots and currently resolves to record 22846011, version `qwen-repro-pack-20260919`. Use the specific [dataset v0.1.3 DOI](https://doi.org/10.5281/zenodo.22698504) to obtain the human reference and released Silver training/development files. Later expanded-Silver experiments on GitHub are outside the immutable v0.1.3 archive.
 
@@ -31,6 +31,8 @@ The Qwen model archive provides adapters, the human reference set for scoring, a
 For the current seven-author citation and notes on wording retained inside the ZIP files, see [archive notes](docs/archive_notes.md). The published record metadata and current [CITATION.cff](CITATION.cff) supersede older embedded author lists.
 
 ## Reuse conditions
+
+The Blind-500 package contains full sentence-level recruitment text, with the documented privacy redactions; it does not establish that whole source advertisements are reproduced. Public visibility does not grant permission from the authors to redistribute or relicense the underlying third-party text. Users must follow the original sources' applicable terms. The repository statements establish an academic-research-use claim, not evidence of permission for public redistribution of this package; that permission remains for the authors to verify.
 
 Reuse terms vary by component; see [LICENSE](LICENSE) for the applicable scope.
 

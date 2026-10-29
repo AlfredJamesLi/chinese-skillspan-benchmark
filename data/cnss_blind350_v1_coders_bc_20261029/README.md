@@ -1,6 +1,6 @@
 # CNSS_BLIND350_V1 Coder B × Coder C
 
-Finished independent labels for the 350-sentence Chinese SkillSpan blind set, exported 2026-10-29 from separate annotation projects. Both annotators confirmed every sentence. This is a pre-adjudication reliability pack, not Gold and not a model test set.
+Finished independent labels for the 350-sentence Chinese SkillSpan blind set, exported 2026-10-29 from separate annotation projects. Both annotators confirmed every sentence. This is a pre-adjudication reliability pack, not a model test set; neither coder is a reference standard.
 
 Excluded coder is not included: that project had 0 of 350 sentences confirmed at export.
 
@@ -50,3 +50,5 @@ this package and differ from the exhaustive-pair method documented there.
 Checksums cover the renamed, pseudonymized files with LF line endings. They
 replace the pre-pseudonymization byte hashes, not the underlying annotations.
 Third-party text remains subject to [data access conditions](../../DATA_AVAILABILITY.md).
+
+These are post-submission repository-maintenance materials. They were not used to train, select, or evaluate models, calculate results, or support claims reported in manuscript 149505. The citable dataset associated with that manuscript remains Chinese-SkillSpan v0.1.3 on Zenodo; these materials do not change the archived dataset, submitted manuscript or reported results.

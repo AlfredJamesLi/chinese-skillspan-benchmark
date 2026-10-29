@@ -1,5 +1,7 @@
 # Rule decision table — working draft
 
+Post-submission maintenance working draft; not used for the results or claims in manuscript 149505. See [scope and limitations](README.md).
+
 All recommendations are review candidates, not replacement labels. A = existing provisions sufficient; B = provisions exist but application/examples require clarification; C = desired representation unavailable; D = genuinely new rule required. One primary class per screenshot case. Questions are analyst-inferred: screenshots contain no separate written question. Current/screenshot offsets and labels are in [candidate JSON](adjudication_candidates.json); this table quotes only short locating fragments. All later changes require versioned continuous offsets; current labels and metrics remain unchanged.
 
 |Case / public record|Minimal locating fragment|Class|Existing provisions|Recommendation|

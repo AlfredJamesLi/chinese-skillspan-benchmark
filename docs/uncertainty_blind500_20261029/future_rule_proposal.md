@@ -1,5 +1,7 @@
 # UCP-1.0.0 — internal metadata and continuous spans
 
+Post-submission maintenance working draft; not used for the results or claims in manuscript 149505. See [scope and limitations](README.md).
+
 Status: **prospective / future-version rule clarification candidate**, 2026-10-29. Not an activated handbook revision and not R24. It is a proposed explanation of existing original-span rules 1–3, R13 and R14. Authors should approve wording and examples before integrating it into a separately versioned future reader. No evidence here establishes author consensus. L/K/S/T definitions remain unchanged.
 
 ## Proposed explanation
